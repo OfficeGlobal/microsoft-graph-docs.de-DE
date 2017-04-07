@@ -1,10 +1,9 @@
 # <a name="contribute-to-microsoft-graph-documentation"></a>Mitwirkung an der Microsoft Graph-Dokumentation
 
-Vielen Dank für Ihr Interesse an der Microsoft Graph-Dokumentation! 
+Vielen Dank für Ihr Interesse an der Microsoft Graph-Dokumentation!
 
 * [Möglichkeiten zur Mitwirkung](#ways-to-contribute)
 * [Bevor wir Ihre Pull-Anfrage annehmen können](#before-we-can-accept-your-pull-request)
-* [Repositoryorganisation](#repository-organization)
 * [Verwenden von GitHub, Git und diesem Repository](#use-github-git-and-this-repository)
 * [Verwenden von Markdown zum Formatieren Ihres Themas](#how-to-use-markdown-to-format-your-topic)
 * [Standard-Markdown](#standard-markdown)
@@ -12,9 +11,11 @@ Vielen Dank für Ihr Interesse an der Microsoft Graph-Dokumentation!
 
 ## <a name="ways-to-contribute"></a>Möglichkeiten zur Mitwirkung
 
-Sie können folgendermaßen an der [Microsoft Graph-Dokumentation](http://developer.microsoft.com/en-us/graph/docs) mitwirken:
+Sie können folgendermaßen an der [Microsoft Graph-Dokumentation](http://graph.microsoft.io) mitwirken:
 
 * Wirken Sie an Artikeln über das [öffentliche Microsoft Graph-Entwicklerdokumentationsrepository](https://github.com/microsoftgraph/microsoft-graph-docs) mit
+    * Senden Sie separate Pull-Anfragen in die Verzweigungen /beta und/oder /v1.0. Dieser Schritt ist erforderlich, um sicherzustellen, dass Versionsverzweigungen aktuell sind und die neuesten Änderungen enthalten. 
+    * Senden Sie darüber hinaus separate Pull-Anfragen an die Verzweigung /master. Mit diesem Schritt wird sichergestellt, dass die Microsoft Graph-Dokumentationswebsite mit den neuesten Änderungen aktualisiert wird. 
 * Melden Sie Dokumentationsfehler über [GitHub-Probleme](https://github.com/microsoftgraph/microsoft-graph-docs/issues)
 * Fügen Sie Dokumentationsanfragen zu [UserVoice der Office Developer-Plattform](http://officespdev.uservoice.com) hinzu
 
@@ -39,12 +40,6 @@ Durch das Unterzeichnen des Lizenzvertrags für Mitwirkende (CLA) erhalten Sie k
 Sie können den Lizenzvertrag für Mitwirkende (CLA) [hier](https://github.com/microsoftgraph/microsoft-graph-docs/raw/master/Contribution%20License%20Agreement.pdf) herunterladen. Füllen Sie das Formular aus, und senden Sie es per E-Mail an [officedev@microsoft.com](mailto:officedev@microsoft.com).
 
 Sobald wir Ihren CLA erhalten und verarbeitet haben, versuchen wir, Ihre Pull-Anforderungen innerhalb von 10 Werktagen zu überprüfen.
-
-## <a name="repository-organization"></a>Repositoryorganisation
-
-Der Inhalt des microsoft-graph-docs-Repositorys wird zuerst nach Artikelsprache und dann nach Thema gruppiert. Die Datei README.md auf der Stammebene jedes Themaverzeichnisses gibt die Struktur der Artikel innerhalb des Themas an.
-
-Artikel innerhalb der einzelnen Themen werden nach MSDN-GUID benannt, nicht nach Titel. Das ist ein Nebeneffekt unseres Dokumentenmanagementprozesses und kann zu diesem Zeitpunkt nicht geändert werden. Es wird dringend empfohlen, das Inhaltsverzeichnis innerhalb der einzelnen Themenverzeichnisse zu verwenden, um zu den Dateien, die Sie anzeigen oder bearbeiten möchten zu navigieren. Weitere Informationen finden Sie in [README.md](https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/README.md).
 
 ## <a name="use-github-git-and-this-repository"></a>Verwenden von GitHub, Git und diesem Repository
 
@@ -83,7 +78,7 @@ Begrenzen Sie jede Verzweigung  auf ein einzelnes Konzept bzw. einen einzelnen A
 #### <a name="create-a-new-branch"></a>Erstellen einer neuen Verzweigung.
 
 1.    Öffnen Sie GitBash.
-2.    Geben Sie `git pull upstream master:<new branch name>` an der Eingabeaufforderung ein. Dadurch wird eine neue Verzweigung lokal erstellt, die aus der neuesten Microsoft Graph-Hauptverzweigung kopiert wird. **Hinweis:** Interne Mitwirkende ersetzen `master` im Befehl mit der Verzweigung für das anvisierte Veröffentlichungsdatum.
+2.    Geben Sie `git pull upstream master:<new branch name>` an der Eingabeaufforderung ein. Dadurch wird eine neue Verzweigung lokal erstellt, die aus der neuesten *Microsoft Graph*-Hauptverzweigung kopiert wird. **Hinweis:** Interne Mitwirkende ersetzen `master` im Befehl mit der Verzweigung für das anvisierte Veröffentlichungsdatum.
 3.    Geben Sie `git push origin <new branch name>` an der Eingabeaufforderung ein. Dadurch wird GitHub auf die neue Verzweigung hingewiesen. Die neue Verzweigung sollte nun in Ihrer Verzweigung des Repository auf GitHub angezeigt werden.
 4.    Geben Sie `git checkout <new branch name>` ein, um zur neuen Verzweigung zu wechseln.
 
@@ -141,7 +136,7 @@ Nachdem Ihre Änderungen erfolgreich mit dem zentralen Repository zusammengefüh
 Zum Löschen der Verzweigung gehen Sie folgendermaßen vor:
 
 1.    Geben in GitBash an der Eingabeaufforderung `git checkout master` ein.  Dadurch wird sichergestellt, dass Sie sich nicht in der zu löschenden Verzweigung befinden (das ist nicht zulässig).
-2.    Geben Sie dann `git branch -d <branch name>` in der Befehlszeile ein.  Dadurch wird die Verzweigung auf dem lokalen Computer nur dann gelöscht, wenn sie erfolgreich mit dem übergeordneten Repository zusammengeführt wurde. (Sie können dieses Verhalten mit dem `???D`-Flag außer Kraft setzen, allerdings sollten Sie sich in diesem Falle wirklich sicher sein.)
+2.    Geben Sie dann `git branch -d <branch name>` in der Befehlszeile ein.  Dadurch wird die Verzweigung auf dem lokalen Computer nur dann gelöscht, wenn sie erfolgreich mit dem übergeordneten Repository zusammengeführt wurde. (Sie können dieses Verhalten mit dem `–D`-Flag außer Kraft setzen, allerdings sollten Sie sich in diesem Falle wirklich sicher sein.)
 3.    Geben Sie schließlich `git push origin :<branch name>` an der Befehlszeile ein (ein Leerzeichen vor dem Doppelpunkt, kein Leerzeichen dahinter).  Dadurch wird die Verzweigung in Ihrer Github-Verzweigung gelöscht.  
 
 Herzlichen Glückwunsch, Sie haben erfolgreich am Projekt mitgewirkt.
