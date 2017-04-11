@@ -32,21 +32,25 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/addre
 ### <a name="search"></a>$search
 Um die Ergebnisse einer Anforderung zu beschränken, die einem Suchkriterium entsprechen, verwenden Sie den **$search**-Abfrageparameter. 
 
->  **Hinweis**: Derzeit können Sie Nachrichten, jedoch keine Kontakte oder Ereignisse suchen. Eine **$search**-Anforderung gibt bis zu 250 Ergebnisse zurück. **$filter** oder **$orderby** können in einer Suchabfrage nicht verwendet werden.
+>  **Hinweis**: Sie können derzeit **$search** für Sammlungen von [message](../api-reference/v1.0/resources/message.md) und [person](../api-reference/beta/resources/person.md) verwenden, jedoch nicht von [contact](../api-reference/v1.0/resources/contact.md) oder [event](../api-reference/v1.0/resources/event.md). Eine **$search**-Anforderung gibt bis zu 250 Ergebnisse zurück. **$filter** oder **$orderby** kann in einer **$search**-Abfrage nicht verwendet werden.
 
-Suchkriterien werden mithilfe von Advanced Query Syntax (AQS) ausgedrückt. Die Ergebnisse sind nach Datum und Uhrzeit sortiert, zu dem bzw. der die Nachricht gesendet wurde.
+Suchkriterien werden mithilfe von Advanced Query Syntax (AQS) ausgedrückt. 
+
+**Anwenden von $search auf Nachrichten**
+
+Suchergebnisse werden nach Datum und Uhrzeit sortiert, an dem bzw. zu der die Nachricht gesendet wurde.
 
 Sie können die folgenden Eigenschaften in einem **message**-Objekt in einem **$search**-Kriterium angeben:**attachments**, **bccRecipients**, **body**, **category**, **ccRecipients**, **content**, **from**, **hasAttachments**, **participants**, **receivedDateTime**, **sender**, **subject**, **toRecipients**
 
 Wenn Sie eine Suche nach Nachrichten durchführen und nur einen Wert angeben, wird die Suche anhand der Standardsucheigenschaften**from**, **subject** und **body** ausgeführt.
 
-Im folgenden Beispiel werden alle Nachrichten im Posteingang des angemeldeten Benutzers zurückgegeben, die das Wort „Pizza“ in einer der drei Standardsucheigenschaften enthalten. 
+Im folgenden Beispiel werden alle Nachrichten im Posteingang des angemeldeten Benutzers zurückgegeben, die das Wort „Pizza“ in einer der drei Standardsucheigenschaften enthalten: 
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 ```
 
-Im nächsten Beispiel werden alle Nachrichten im Posteingang des Benutzers, die von einer bestimmten E-Mail-Adresse gesendet wurden:
+Im nächsten Beispiel werden alle Nachrichten im Posteingang des Benutzers gesucht, die von einer bestimmten E-Mail-Adresse gesendet wurden:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"

@@ -11,7 +11,7 @@ PATCH /workbook/names(<name>)
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -20,6 +20,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 | Eigenschaft       | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
 |visible|boolean|Gibt an, ob das Objekt sichtbar ist.|
+|comment|    string    |Stellt den Kommentar dar, der mit diesem Namen verknüpft ist.|
 
 ## <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [NamedItem](../resources/nameditem.md)-Objekt im Antworttext zurückgegeben.
@@ -38,6 +39,8 @@ Content-length: 87
 {
   "name": "name-value",
   "type": "type-value",
+  "scope": "scope-value",
+  "comment": "comment-value",
   "value": {
   },
   "visible": true

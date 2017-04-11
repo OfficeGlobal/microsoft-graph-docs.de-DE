@@ -40,8 +40,8 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 | Eigenschaft       | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|Die Bcc:-Empfänger der Nachricht.|
-|body|[itemBody](itembody.md)|Der Text der Nachricht.|
-|bodyPreview|String|Die ersten 255 Zeichen des Nachrichtentexts.|
+|body|[itemBody](itembody.md)|Der Text der Nachricht. Er kann im HTML- oder Textformat vorliegen.|
+|bodyPreview|String|Die ersten 255 Zeichen des Nachrichtentexts. Sie liegen im Textformat vor.|
 |categories|String collection|Die Kategorien, die mit der Nachricht verknüpft sind.|
 |ccRecipients|[recipient](recipient.md) collection|Die Cc:-Empfänger der Nachricht.|
 |changeKey|String|Die Version der Nachricht.|
@@ -65,22 +65,22 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 |sentDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht gesendet wurde.|
 |Betreff|String|Der Betreff der Nachricht.|
 |toRecipients|[recipient](recipient.md) collection|Die An:-Empfänger der Nachricht.|
-|uniqueBody|[itemBody](itembody.md)|Der Teil des Nachrichtentextes, der nur in der aktuellen Nachricht vorhanden ist. „uniqueBody“ wird standardmäßig nicht zurückgegeben, kann aber für jede Nachricht über die Abfrage „?$select=uniqueBody“ abgerufen werden.|
+|uniqueBody|[itemBody](itembody.md)|Der Teil des Nachrichtentexts, der nur in der aktuellen Nachricht vorhanden ist. **uniqueBody** wird nicht standardmäßig zurückgegeben, kann aber für eine bestimmte Nachricht mithilfe der Abfrage `?$select=uniqueBody` abgerufen werden. Er kann im HTML- oder Textformat vorliegen.|
 |webLink|String|Die URL zum Öffnen der Nachricht in Outlook Web App.<br><br>Sie können am Ende der URL das Argument „ispopout“ anhängen, um zu ändern, wie die Nachricht angezeigt wird. Wenn „ispopout“ nicht vorhanden oder auf 1 festgelegt ist, wird die Nachricht in einem Popout-Fenster angezeigt. Wenn „ispopout“ auf 0 festgelegt ist, zeigt der Browser die Nachricht in Outlook Web App im Prüffensterbereich an.<br><br>Die Nachricht wird im Browser geöffnet, wenn Sie über Outlook Web App bei Ihrem Postfach angemeldet sind. Sie werden aufgefordert, sich anzumelden, wenn Sie noch nicht beim Browser angemeldet sind.<br><br>Auf diese URL kann von einem iFrame aus zugegriffen werden.|
 
-**Entfernen von Skript aus den Body-Eigenschaft**
+**Entfernen von Skript aus den body-Eigenschaft**
 
-Der Nachrichtentext kann HTML oder Text sein. Wenn der Textkörper HTML ist, wird standardmäßig unsichere HTML (z. B. JavaSkript), die in der Body-Eigenschaft eingebettet ist, vor dem Zurückgeben des Textkörperinhalts in einer REST-Antwort entfernt. Um den gesamten ursprünglichen HTML-Inhalt zu erhalten, schließen Sie den folgenden HTTP-Anforderungsheader ein:
+Der Nachrichtentext im HTML- oder Textformat vorliegen. Wenn der Textkörper im HTML-Format vorliegt, werden standardmäßig alle potenziell unsicheren HTML-Elemente (z. B. JavaScript), die in der **body**-Eigenschaft eingebettet sind, vor dem Zurückgeben des Textkörperinhalts in einer REST-Antwort entfernt. Um den gesamten ursprünglichen HTML-Inhalt abzurufen, schließen Sie den folgenden HTTP-Anforderungsheader ein:
 ```
 Prefer: outlook.allow-unsafe-html
 ```
 
-**Festlegen der From- und Sender-Eigenschaften**
+**Festlegen der from- und sender-Eigenschaften**
 
 Beim Schreiben einer Nachricht stellen in den meisten Fällen die From- und Sender-Eigenschaften den gleichen angemeldeten Benutzer dar, es sei denn, eine der beiden Eigenschaften wird wie in den folgenden Szenarien beschrieben aktualisiert:
 
-- Die **From**-Eigenschaft kann geändert werden, wenn der Exchange-Administrator **SendAs**-Rechte des Postfachs anderen Benutzern zugewiesen hat. Der Administrator kann dies tun, indem er **Postfachberechtigungen** des Postfachbesitzers im Azure-Verwaltungsportal auswählt oder das Exchange Admin Center oder ein Windows PowerShell Add-ADPermission-Cmdlet verwendet. Dann können Sie programmgesteuert die **From**-Eigenschaft eines dieser Benutzer festlegen, die **SendAs**-Rechte für das Postfach haben.
-- Die **Sender**-Eigenschaft kann geändert werden, wenn der Postfachbesitzer an einen oder mehrere Benutzer das Recht delegiert hat, Nachrichten von diesem Postfach aus zu senden. Der Postfachbesitzer kann in Outlook an einen Stellvertreter delegieren. Wenn ein Stellvertreter eine Nachricht im Namen des Postfachbesitzers sendet, ist die **Sender**-Eigenschaft auf das Konto des Stellvertreters festgelegt, während die **From**-Eigenschaft weiterhin den Postfachbesitzer angibt. Programmgesteuert können Sie die **Sender**-Eigenschaft auf einen Benutzer festlegen, der Stellvertretungsrechte für dieses Postfach besitzt.
+- Die **from**-Eigenschaft kann geändert werden, wenn der Exchange-Administrator **sendAs**-Rechte des Postfachs anderen Benutzern zugewiesen hat. Der Administrator kann dies tun, indem er **Postfachberechtigungen** des Postfachbesitzers im Azure-Verwaltungsportal auswählt oder das Exchange Admin Center oder ein Windows PowerShell Add-ADPermission-Cmdlet verwendet. Dann können Sie programmgesteuert die **from**-Eigenschaft eines dieser Benutzer festlegen, die **sendAs**-Rechte für das Postfach haben.
+- Die **sender**-Eigenschaft kann geändert werden, wenn der Postfachbesitzer das Recht, Nachrichten von diesem Postfach aus zu senden, an einen oder mehrere Benutzer delegiert hat. Der Postfachbesitzer kann in Outlook an einen Stellvertreter delegieren. Wenn ein Stellvertreter eine Nachricht im Namen des Postfachbesitzers sendet, ist die **sender**-Eigenschaft auf das Konto des Stellvertreters festgelegt, während die **from**-Eigenschaft weiterhin den Postfachbesitzer angibt. Programmgesteuert können Sie die **sender**-Eigenschaft auf einen Benutzer festlegen, der Stellvertretungsrechte für dieses Postfach besitzt.
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ    |Beschreibung|

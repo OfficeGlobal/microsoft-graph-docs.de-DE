@@ -1,6 +1,9 @@
 # <a name="list-messages"></a>Nachrichten auflisten
 
 Mit dieser Methode können Sie die Nachrichten im Postfach des angemeldeten Benutzers abrufen (einschließlich der Nachrichten aus den Ordnern „Gelöschte Elemente“ und „Clutter“).
+
+Zurzeit gibt diesen Vorgang Nachrichtentext nur im HTML-Format zurück.
+
 ## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Mail.Read; Mail.ReadWrite*
 ## <a name="http-request"></a>HTTP-Anforderung
@@ -27,7 +30,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 | Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
-| Content-Type   | application/json  | 
+ 
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

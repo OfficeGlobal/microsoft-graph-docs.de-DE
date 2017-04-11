@@ -4,6 +4,8 @@ Mit dieser Methode können Sie die Eigenschaften und Beziehungen eines [message]
 
 Da die **message**-Ressource [Erweiterungen](../../../concepts/extensibility_overview.md) unterstützt, können Sie über den `GET`-Vorgang auch benutzerdefinierte Eigenschaften und Erweiterungsdaten aus **message**-Instanzen abrufen.
 
+Zurzeit gibt diesen Vorgang Nachrichtentext nur im HTML-Format zurück.
+
 ## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Mail.Read*  
 ## <a name="http-request"></a>HTTP-Anforderung
