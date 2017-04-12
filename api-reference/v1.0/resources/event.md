@@ -35,8 +35,8 @@ Ein Ereignis in einem Kalender
 | Eigenschaft       | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
 |attendees|[attendee](attendee.md) collection|Die Sammlung der Teilnehmer des Ereignisses|
-|body|[itemBody](itembody.md)|Der Text der Nachricht, die dem Ereignis zugeordnet ist|
-|bodyPreview|String|Die Vorschau der Nachricht, die dem Ereignis zugeordnet ist|
+|body|[itemBody](itembody.md)|Der Text der Nachricht, die dem Ereignis zugeordnet ist. Er kann im HTML- oder Textformat vorliegen.|
+|bodyPreview|String|Die Vorschau der Nachricht, die dem Ereignis zugeordnet ist. Liegt im Textformat vor.|
 |categories|String collection|Die Kategorien, die dem Ereignis zugeordnet sind|
 |changeKey|String|Gibt die Version des Ereignisobjekts an. Jedes Mal, wenn das Ereignis geändert wird, wird auch die Eigenschaft „changeKey“ geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
 |createdDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|

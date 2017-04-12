@@ -1,6 +1,9 @@
 # <a name="get-eventmessage"></a>eventMessage abrufen
 
-Dient zum Abrufen der Eigenschaften und der Beziehungen eines eventmessage-Objekts.
+Dient zum Abrufen der Eigenschaften und Beziehungen eines [eventmessage](../resources/eventmessage.md)-Objekts.
+
+Zurzeit gibt dieser Vorgang Ereignisnachrichtentext nur im HTML-Format zurück.
+
 ## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Mail.Read*
 ## <a name="http-request"></a>HTTP-Anforderung
@@ -51,7 +54,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": "",
+    "contentType": "html",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value",
