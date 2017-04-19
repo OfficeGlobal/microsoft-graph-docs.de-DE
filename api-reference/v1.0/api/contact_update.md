@@ -47,7 +47,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |givenName|String|Der Vorname des Kontakts.|
 |homeAddress|[PhysicalAddress](../resources/physicaladdress.md)|Die Privatadresse des Kontakts.|
 |homePhones|String collection|Die privaten Telefonnummern des Kontakts.|
-|imAddresses|String|Instant Messaging (IM)-Adressen des Kontakts.|
+|imAddresses|String|Instant Messaging Chatadressen des Kontakts.|
 |initials|String|Die Initialen des Kontakts.|
 |jobTitle|String|Die Position des Kontakts.|
 |manager|String|Der Name des Vorgesetzten des Kontakts.
