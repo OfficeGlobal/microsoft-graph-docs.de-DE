@@ -40,7 +40,7 @@ Ein Kontakt ist ein Element in Outlook, in dem Sie Informationen über die Perso
 |homeAddress|[PhysicalAddress](physicaladdress.md)|Die Privatadresse des Kontakts.|
 |homePhones|String collection|Die privaten Telefonnummern des Kontakts.|
 |id|String|Eindeutiger Bezeichner für den Kontakt. Schreibgeschützt.|
-|imAddresses|String collection|Instant Messaging (IM)-Adressen des Kontakts.|
+|imAddresses|String collection|Instant Messaging Chatadressen des Kontakts.|
 |initials|String|Die Initialen des Kontakts.|
 |jobTitle|String|Die Position des Kontakts.|
 |lastModifiedDateTime|DateTimeOffset|Der Zeitpunkt, zu dem der Kontakt geändert wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
