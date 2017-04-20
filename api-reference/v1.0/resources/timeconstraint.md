@@ -1,6 +1,6 @@
 # <a name="timeconstraint-resource-type"></a>Ressourcentyp „timeConstraint“
 
-Die Zeitfenster, in denen eine Aktivität der angegebenen Art stattfinden darf
+Schränkt Vorschläge für Besprechungstermine entsprechend der angegebenen Art der Aktivität und der offenen Zeitfenster auf bestimmte Stunden und Tage der Woche ein.
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -24,7 +24,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft       | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
-|activityDomain|String|Die Art der Aktivität. Diese Angabe ist optional. Mögliche Werte sind: `unknown`, `work` und `personal`. Aktuell geht [findMeetingTimes](../api/user_findmeetingtimes.md) grundsätzlich vom Wert `work` aus und gibt nur Besprechungsvorschläge innerhalb der Arbeitszeiten des Organisators oder Teilnehmers zurück.|
+|activityDomain|String|Die Art der Aktivität. Diese Angabe ist optional. Mögliche Werte sind: `work`, `personal`, `unrestricted` oder `unknown`.|
 |timeslots|[timeSlot](timeslot.md) collection|Ein Array von Zeitfenstern|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

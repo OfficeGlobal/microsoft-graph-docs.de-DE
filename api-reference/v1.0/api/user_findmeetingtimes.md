@@ -3,13 +3,6 @@ Mit dieser Methode können Sie Vorschläge für Besprechungstermine abrufen. Die
 
 Wenn **findMeetingTimes** keine Besprechungsvorschläge zurückgeben kann, enthält die Antwort einen Grund, angegeben in der Eigenschaft **emptySuggestionsReason**. Ausgehend von diesem Wert können Sie die Parameter optimieren und **findMeetingTimes** erneut aufrufen.
 
-**Hinweis**
-
-Aktuell geht **findMeetingTimes** von folgenden Voraussetzungen aus:
-
-- Jeder [Teilnehmer](../resources/attendee.md), bei dem es sich um eine Person handelt (nicht um eine Ressource), ist ein erforderlicher Teilnehmer. Geben Sie also für Personen `required` und für Ressourcen `resource` in der entsprechenden Eigenschaft **type** an. Diese Eigenschaft gehört zum Sammlungsparameter **attendees**.
-- Alle Besprechungsvorschläge liegen innerhalb der Arbeitszeiten des Organisators oder der Teilnehmer. Die Eigenschaft **activityDomain** von Ressourcen des Typs [timeConstraint](../resources/timeConstraint.md) muss nicht angegeben werden. 
-
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Calendars.Read.Shared* oder *Calendars.ReadWrite.Shared*.
@@ -22,24 +15,37 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Wert|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
-| Prefer: outlook.timezone | Eine Zeichenfolge, die eine bestimmte Zeitzone für die Antwort festlegt, beispielsweise „Pacific Standard Time“ |
+| Authorization  | Bearer <code>. Required.|
+| Prefer: outlook.timezone | Eine Zeichenfolge, die eine bestimmte Zeitzone für die Antwort darstellt, beispielsweise „Pacific Standard Time“. Optional. Wenn dieser Header nicht angegeben ist, wird UTC verwendet.|
 
 
 ## <a name="request-body"></a>Anforderungstext
-In der Tabelle unten sind alle unterstützten Parameter aufgeführt. Geben Sie abhängig von Ihrem jeweiligen Szenario für jeden notwendigen Parameter ein JSON-Objekt im Anforderungstext an. Ausgehend von den angegebenen Parametern überprüft **findMeetingTimes** den Frei-/Gebucht-Status im Hauptkalender des Organisators und in den Hauptkalendern der Teilnehmer. Die Aktion berechnet die bestmöglichen Besprechungstermine und gibt Besprechungsvorschläge zurück.
+In der Tabelle unten sind alle unterstützten Parameter aufgeführt. Geben Sie abhängig von Ihrem jeweiligen Szenario für jeden notwendigen Parameter im Anforderungstext ein JSON-Objekt an. 
 
 
 | Parameter       | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
-|attendees|[attendeeBase](../resources/attendeebase.md) collection|Eine Sammlung von Teilnehmern oder Ressourcen für die Besprechung. Ist diese Sammlung leer, sucht **findMeetingTimes** nur für den Organisator nach freien Zeitfenstern.|
-|locationConstraint|[locationConstraint](../resources/locationconstraint.md)|Die Anforderungen des Organisators bezüglich des Besprechungsorts, z. B. ob ein Vorschlag für einen Besprechungsort erforderlich ist oder nur bestimmte Besprechungsorte zulässig sind|
-|timeConstraint|[timeConstraint](../resources/timeconstraint.md)|Die Start- und Endzeit des Zeitbereichs, in dem die Besprechung stattfinden soll. In den Eigenschaften **start** und **end** dieses Parameters können Sie eine Zeitzone festlegen. Diese Zeitzone gilt jedoch ausschließlich für den Parameter **timeConstraint**; alle eventuell in der Antwort zurückgegebenen Zeitwerte werden weiterhin standardmäßig als UTC angezeigt. Sie können mithilfe des Anforderungsheaders `Prefer: outlook.timezone` eine spezifische Zeitzone für die Zeitwerte in der Antwort festlegen. |
-|meetingDuration|Edm.Duration|Die Dauer der Besprechung im Format [ISO8601](http://www.iso.org/iso/iso8601). 1 Stunde wird beispielsweise als „PT1H“ angegeben. Dabei ist „P“ der Bezeichner für die Dauer, „T“ der Bezeichner für die Zeit und „H“ der Bezeichner für die Zeiteinheit Stunde. Wenn keine Besprechungsdauer angegeben wird, verwendet **findMeetingTimes** den Standardwert von 30 Minuten. |
-|maxCandidates|Edm.Int32|Die maximale Anzahl an zurückgegebenen Besprechungsterminvorschlägen|
-|isOrganizerOptional|Edm.Boolean|`True`, wenn die Anwesenheit des Organisators nicht erforderlich ist, ansonsten `false`|
-|returnSuggestionReasons|Edm.Boolean|`True`, wenn für jeden Besprechungsvorschlag ein Grund in der Eigenschaft **suggestionReason** zurückgegeben werden soll. Der Standardwert ist `false`, damit diese Eigenschaft nicht zurückgegeben wird.|
-|minimumAttendeePercentage|Edm.Double| Die mindestens erforderliche [Konfidenz](#the-confidence-of-a-meeting-suggestion), damit ein bestimmtes Zeitfenster in der Antwort zurückgegeben wird. Hierbei handelt es sich um einen Prozentwert zwischen 0 und 100. |
+|attendees|[attendeeBase](../resources/attendeebase.md) collection|Eine Sammlung von Teilnehmern oder Ressourcen für die Besprechung. Da findMeetingTimes davon ausgeht, dass jeder Teilnehmer, bei dem es sich um eine Person handelt, immer erforderlich ist, geben Sie `required` für eine Person und `resource` für eine Ressource in der entsprechenden **type**-Eigenschaft an. Ist diese Sammlung leer, sucht **findMeetingTimes** nur für den Organisator nach freien Zeitfenstern. Optional.|
+|isOrganizerOptional|Edm.Boolean|Geben Sie `True` an, wenn der Organisator nicht zwingend teilnehmen muss. Der Standardwert lautet `false`. Optional.|
+|locationConstraint|[locationConstraint](../resources/locationconstraint.md)|Die Anforderungen des Organisators bezüglich des Besprechungsorts, z. B. ob ein Vorschlag für einen Besprechungsort erforderlich ist oder nur bestimmte Besprechungsorte zulässig sind. Optional.|
+|maxCandidates|Edm.Int32|Die maximale Anzahl an zurückgegebenen Besprechungsterminvorschlägen. Optional.|
+|meetingDuration|Edm.Duration|Die Dauer der Besprechung im Format [ISO8601](http://www.iso.org/iso/iso8601). 1 Stunde wird beispielsweise als „PT1H“ angegeben. Dabei ist „P“ der Bezeichner für die Dauer, „T“ der Bezeichner für die Zeit und „H“ der Bezeichner für die Zeiteinheit Stunde. Wenn keine Besprechungsdauer angegeben wird, verwendet **findMeetingTimes** den Standardwert von 30 Minuten. Optional.|
+|minimumAttendeePercentage|Edm.Double| Die mindestens erforderliche [Konfidenz](#the-confidence-of-a-meeting-suggestion), damit ein bestimmtes Zeitfenster in der Antwort zurückgegeben wird. Hierbei handelt es sich um einen Prozentwert zwischen 0 und 100. Optional.|
+|returnSuggestionReasons|Edm.Boolean|Geben Sie `True` an, wenn für jeden Besprechungsvorschlag ein Grund in der Eigenschaft **suggestionReason** zurückgegeben werden soll. Der Standardwert ist `false`, damit diese Eigenschaft nicht zurückgegeben wird. Optional.|
+|timeConstraint|[timeConstraint](../resources/timeconstraint.md)|Alle Zeiteinschränkungen für eine Besprechung, z. B. die Art der Besprechung (Eigenschaft **activityDomain**) und mögliche Besprechungszeiträume (Eigenschaft **timeSlots**). **findMeetingTimes** geht davon aus, dass **activityDomain** auf `work` festgelegt ist, wenn Sie diesen Parameter nicht angeben. Optional.|
+
+In der folgenden Tabelle werden die Einschränkungen beschrieben, die Sie im Parameter **timeConstraint** genauer angeben können.
+
+|**activityDomain-Wert in timeConstraint**|**Vorschläge für Besprechungstermine**|
+|:-----|:-----|
+|work| Vorschläge liegen innerhalb der Arbeitszeit des Benutzers, die in der Kalenderkonfiguration des Benutzers definiert wird, und können vom Benutzer oder Administrator angepasst werden. Die Standardarbeitszeit ist Montag bis Freitag von 08:00 Uhr bis 17:00 Uhr in der Zeitzone, die für das Postfach festgelegt ist. Dies ist der Standardwert, wenn keine **activityDomain** angegeben ist. |
+|personal| Vorschläge liegen innerhalb der Arbeitszeit des Benutzers sowie am Samstag und Sonntag. Der Standardwert ist Montag bis Sonntag von 08:00 Uhr bis 17:00 Uhr in der Zeitzone, die für das Postfach festgelegt ist.|
+|unrestricted | Vorschläge können für jede Zeit des Tages an jedem Tag der Woche gemacht werden.|
+|unknown | Verwenden Sie diesen Wert nicht, da er in Zukunft veraltet sein wird. Aktuell verhält er sich genauso wie `work`. Ändern Sie vorhandenen Code so, dass er `work`, `personal` bzw. `unrestricted` verwendet.
+
+
+Ausgehend von den angegebenen Parametern überprüft **findMeetingTimes** den Frei-/Gebucht-Status im Hauptkalender des Organisators und in den Hauptkalendern der Teilnehmer. Die Aktion berechnet die bestmöglichen Besprechungstermine und gibt Besprechungsvorschläge zurück.
+
 
 ## <a name="response"></a>Antwort
 Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200, OK` und eine Ressource des Typs [meetingTimeSuggestionsResult](../resources/meetingTimeSuggestionsResult.md) im Antworttext zurück. 
@@ -48,16 +54,18 @@ Eine Ressource des Typs **meetingTimeSuggestionsResult** enthält eine Sammlung 
 
 Standardmäßig wird jeder Besprechungsterminvorschlag in UTC zurückgegeben. 
 
+Wenn **findMeetingTimes** keine Besprechungsvorschläge zurückgeben kann, enthält die Antwort einen Grund, angegeben in der Eigenschaft **emptySuggestionsReason**. Ausgehend von diesem Wert können Sie die Parameter optimieren und **findMeetingTimes** erneut aufrufen.
+
 ### <a name="the-confidence-of-a-meeting-suggestion"></a>Die Konfidenz von Besprechungsvorschlägen
 
 Die Eigenschaft **confidence** einer Ressource des Typs **meetingTimeSuggestion** liegt in einem Bereich von 0 % bis 100 %. Sie gibt an, wie wahrscheinlich es ist, dass alle Teilnehmer an der Besprechung teilnehmen können, und basiert auf den Frei-/Gebucht-Status der einzelnen Teilnehmer:
 
 - Für jeden Teilnehmer gilt: Ist der Status für eine Besprechung „Frei“, liegt die Teilnahmewahrscheinlichkeit bei 100 %. Beim Status „Unbekannt“ liegt sie bei 49 %, beim Status „Gebucht“ bei 0 %.
 - Zur Berechnung der Konfidenz eines Besprechungsterminvorschlags wird der Mittelwert aus den individuellen Teilnahmewahrscheinlichkeiten aller Besprechungsteilnehmer für die betreffende Besprechung gebildet.
-- Gibt es mehrere Besprechungsterminvorschläge, ordnet die Aktion **findMeetingTimes** die Vorschläge zunächst nach ihrem berechneten Konfidenzwert, beginnend mit dem Vorschlag mit dem höchsten Wert. Haben mehrere Vorschläge jeweils denselben Konfidenzwert, ordnet die Aktion diese Vorschläge chronologisch.
 - Mithilfe des optionalen Parameters **minimumAttendeePercentage** für **findMeetingTimes** können Sie festlegen, dass nur Besprechungsterminvorschläge mit einem bestimmten Mindestkonfidenzwert zurückgegeben werden. Beispielsweise können Sie eine **minimumAttendeePercentage** von 80 % festlegen, wenn Sie nur Vorschläge erhalten möchten, bei denen die Wahrscheinlichkeit, dass alle Teilnehmer teilnehmen können, bei mindestens 80 % liegt. Wenn Sie keine **minimumAttendeePercentage** festlegen, setzt **findMeetingTimes** einen Wert von 50 % an.
+- Gibt es mehrere Besprechungsterminvorschläge, ordnet die Aktion **findMeetingTimes** die Vorschläge zunächst nach ihrem berechneten Konfidenzwert, beginnend mit dem Vorschlag mit dem höchsten Wert. Haben mehrere Vorschläge jeweils denselben Konfidenzwert, ordnet die Aktion diese Vorschläge chronologisch.
 
-Hier ein Beispiel für einen Besprechungsterminvorschlag für 3 Teilnehmer mit den folgenden Frei-/Gebucht-Status:
+Hier ein Beispiel für einen Besprechungsterminvorschlag für drei Teilnehmer mit folgendem Frei-/Gebucht-Status:
 
 |**Teilnehmer**|**Frei-/Gebucht-Status**|**Teilnahmewahrscheinlichkeit in %**|
 |:-----|:-----|:-----|
