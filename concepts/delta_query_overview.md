@@ -23,17 +23,17 @@ Eine GET-Antwort einer Delta-Abfrage umfasst immer eine URL, die in einem `nextL
 Diese Token sind für den Client nicht transparent. Nachfolgend finden Sie alles, was Sie darüber wissen müssen:
 
 - Jedes Token gibt den Status an und ist eine Momentaufnahme der Ressource in dieser Runde der Änderungsnachverfolgung. 
-- Diese Statustoken codieren zudem weitere Abfrageparameter (wie `$select`, sofern die Ressource ihn unterstützt), die in der ursprünglichen Delta-Abfrageanforderung angegeben sind, und schließt diese ein, sodass Sie sie in nachfolgenden Delta-Abfrageanforderungen nicht wiederholen müssen.
-- Beim Ausführen von Delta-Abfragen können Sie einfach die `nextLink`- oder `deltaLink`-URL unverändert kopieren und auf den nächsten **delta**-Funktionsaufruf anwenden, ohne den Inhalt der URL, einschließlich ihres Statustoken, zu überprüfen.
+- Die Statustoken codieren und umfassen auch andere Abfrageparameter (z. B. `$select`), die in der anfänglichen Delta-Abfrageanforderung angegeben sind. Es ist daher nicht erforderlich, diese in nachfolgenden Delta-Abfrageanforderungen zu wiederholen.
+- Beim Ausführen von Delta-Abfragen können Sie die `nextLink`- oder `deltaLink`-URL kopieren und auf den nächsten **delta**-Funktionsaufruf anwenden, ohne den Inhalt der URL, einschließlich ihres Statustoken, zu überprüfen.
 
 
 ### <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
-Wenn ein Client einen Abfrageparameter verwendet, muss dieser in der ursprünglichen Anforderung angegeben sein. Microsoft Graph codiert automatisch den bzw. die angegebenen Parameter in den in der Antwort enthaltenen `nextLink` oder `deltaLink`. Die aufrufende Anwendung muss die gewünschten Abfrageparameter nur einmal im Vorfeld angeben. Microsoft Graph fügt die angegebenen Parameter automatisch für alle nachfolgenden Anforderungen hinzu.
+Wenn ein Client einen Abfrageparameter verwendet, muss dieser in der ursprünglichen Anforderung angegeben sein. Microsoft Graph codiert automatisch den angegebenen Parameter in den in der Antwort enthaltenen `nextLink` oder `deltaLink`. Die aufrufende Anwendung muss die gewünschten Abfrageparameter nur einmal im Vorfeld angeben. Microsoft Graph fügt die angegebenen Parameter automatisch für alle nachfolgenden Anforderungen hinzu.
 
 Für Benutzer und Gruppen gibt es Einschränkungen im Hinblick auf die Verwendung einiger Abfrageparameter:
 
--   Wenn ein `$select`-Abfrageparameter verwendet wird, bedeutet dies, dass der Kunde nur Änderungen an den Eigenschaften oder Beziehungen nachverfolgen möchte, die in der `$select`-Anweisung angegeben sind. Das heißt, wenn eine Änderung an einer nicht ausgewählten Eigenschaft vorgenommen wird, wird die Ressource, für die diese Eigenschaft geändert wurde, nach einer nachfolgenden Anforderung nicht in der Delta-Antwort angezeigt.
+-   Wenn ein `$select`-Abfrageparameter verwendet wird, bedeutet dies, dass der Kunde nur Änderungen an den Eigenschaften oder Beziehungen nachverfolgen möchte, die in der `$select`-Anweisung angegeben sind. Wenn eine Änderung an einer nicht ausgewählten Eigenschaft vorgenommen wird, wird die Ressource, für die diese Eigenschaft geändert wurde, nach einer nachfolgenden Anforderung nicht in der Delta-Antwort angezeigt.
 -   `$expand` wird nicht unterstützt.
 
 ## <a name="resource-representation-in-the-delta-query-response"></a>Ressourcendarstellung in der Delta-Abfrageantwort
@@ -72,7 +72,7 @@ Dieselben [Berechtigungen](../authorization/permission_scopes.md), die zum Lesen
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 
-Das Nachverfolgen von Änderungen an Beziehungen für Benutzer und Gruppen wird nur innerhalb der spezifischen Ressourcenklasse unterstützt, für die Änderungen nachverfolgt werden. Wenn ein Client beispielsweise Änderungen an *groups* nachverfolgt und die Beziehung **members** ausgewählt ist, erhält der Client nur dann Aktualisierungen an Mitgliedschaften in der Delta-Abfrageantwort, wenn diese Mitglieder auch *groups* sind. In anderen Worten wird das Nachverfolgen der Gruppenmitgliedschaft für Benutzer noch nicht unterstützt. Das Microsoft Graph-Team weiß, dass dieses Szenario hohe Priorität hat, und eine Aktualisierung soll im März 2017 vorgenommen werden.
+Bekannte Einschränkungen bei der Verwendung der Delta-Abfrage finden Sie im Abschnitt [Delta-Abfrage](../overview/release_notes.md#delta-query) im Artikel über bekannte Probleme.
 
 ## <a name="delta-query-request-examples"></a>Beispiele für die Delta-Abfrageanforderung 
 

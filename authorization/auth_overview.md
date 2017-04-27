@@ -35,7 +35,7 @@ In der folgenden Tabelle sind die wichtigsten Features zusammengefasst, die Azur
    </tr>
   <tr>
     <td>Unterstützte Typen hinzufügen</td>
-    <td style="vertical-align: text-top;"><p>Web-Apps</p><p>Web-APIs</p><p>Mobile und native Apps</p><p>Einzelseiten-App (Single Page App, SPA)</p><p>Eigenständige Web-Apps</p><p>Daemons/Serverseitige Apps</p><p><a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/" target="_newtab">Weitere Informationen</a></p></td> 
+    <td style="vertical-align: text-top;"><p>Web-Apps</p><p>Web-APIs</p><p>Mobile und native Apps</p><p>Einzelseiten-App (Single Page App, SPA)</p><p>Eigenständige Web-APIs</p><p>Daemons/Serverseitige Apps</p><p>Apps vom Cloudlösungsanbieter</p><p><a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/" target="_newtab">Weitere Informationen</a></p></td> 
     <td style="vertical-align: text-top;"><p>Web-Apps</p><p>Web-APIs</p><p>Mobile und native Apps</p><p>Einzelseiten-App (Single Page App, SPA)</p><p>Daemons/Serverseitige Apps</p><p><a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-flows/" target="_newtab">Weitere Informationen</a></td>
    </tr>
   <tr>

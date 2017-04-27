@@ -33,6 +33,9 @@ Derzeit gibt es eine teilweise Unterstützung für einen Kalender, der auf einem
 * [Das Auflisten der Kalender des Benutzers](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) ermöglicht Ihnen, die Eigenschaften **Name**, **Farbe** und **ID** jedes [Kalenders](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) in der Standardkalendergruppe oder einer bestimmten Kalendergruppe des Benutzers abzurufen, einschließlich ICS-basierte Kalender. Sie können die ICS-URL in der Kalenderressource nicht speichern und nicht darauf zugreifen.
 * Sie haben auch die Möglichkeit zum [Auflisten der Ereignisse](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) eines ICS-basierten Kalenders.
 
+#### <a name="using-delta-query"></a>Verwenden der Delta-Abfrage
+Bekannte Probleme bei der Verwendung der Delta-Abfrage finden Sie im Abschnitt [ Delta-Abfrage](#delta-query) in diesem Artikel.
+
 ## <a name="groups"></a>Gruppen
 #### <a name="policy"></a>Richtlinie
 Beim Erstellen und Benennen einer Office 365-Gruppe mit Microsoft Graph werden Office 365-Gruppenrichtlinien umgangen, die über Outlook Web App konfiguriert werden. 
@@ -65,6 +68,8 @@ Durch das [Hinzufügen](http://developer.microsoft.com/en-us/graph/docs/api-refe
 #### <a name="setting-the-allowexternalsenders-property"></a>Festlegen der allowExternalSenders-Eigenschaft
 Aktuell liegt ein Problem vor, aufgrund dessen sich die Eigenschaft **allowExternalSenders** einer Gruppe in POST- oder PATCH-Operationen nicht festlegen lässt. Das Problem tritt sowohl in `/v1.0` als auch in `/beta` auf.
 
+#### <a name="using-delta-query"></a>Verwenden der Delta-Abfrage
+Bekannte Probleme bei der Verwendung der Delta-Abfrage finden Sie im Abschnitt [ Delta-Abfrage](#delta-query) in diesem Artikel.
 
 ## <a name="contacts"></a>Kontakte
 
@@ -161,4 +166,6 @@ Darüber hinaus gelten die folgenden `/beta`-Einschränkungen:
 
   >  Ihr Feedback ist uns wichtig. Nehmen Sie auf [Stack Overflow](http://stackoverflow.com/questions/tagged/office365) Kontakt mit uns auf. Taggen Sie Ihre Fragen mit {MicrosoftGraph} und {office365}.
 
+## <a name="delta-query"></a>Delta-Abfrage
 
+Das Nachverfolgen von Änderungen an Beziehungen für Benutzer und Gruppen wird nur innerhalb der spezifischen Ressourcenklasse unterstützt, für die Änderungen nachverfolgt werden. Wenn ein Client beispielsweise Änderungen an *groups* nachverfolgt und die Beziehung *members* ausgewählt ist, erhält der Client nur dann Aktualisierungen an Mitgliedschaften in der Delta-Abfrageantwort, wenn diese Mitglieder auch *groups* sind. In anderen Worten wird das Nachverfolgen der Gruppenmitgliedschaft für Benutzer noch nicht unterstützt. Das Microsoft Graph-Team weiß, dass dieses Szenario hohe Priorität hat, und eine Aktualisierung soll in Kürze vorgenommen werden.

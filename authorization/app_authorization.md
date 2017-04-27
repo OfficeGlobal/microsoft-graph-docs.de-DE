@@ -1,7 +1,7 @@
 
 # <a name="microsoft-graph-app-authentication-using-azure-ad"></a>Microsoft Graph-App-Authentifizierung mit Azure AD
 
-Dieser Artikel werden Authentifizierung und Authorisierungsfluss für eine Microsoft Graph-App an einem Beispiel umfassende erläutert. In diesem Beispiel werden Azure Active Directory (Azure AD) und der Authentifizierungsanbieter sowie der <a href="https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx" target="_newtab">Authorisierungscode-Grant-Fluss</a> als Authentifizierungsfluss verwendet. In diesem Beispiel wird gezeigt, wie Sie Azure AD in einer Microsoft Graph-App verwenden, um einen Benutzer zu authentifizieren, ein Zugriffstoken abzurufen und ein Zugriffstoken mithilfe eines Aktualisierungstokens aktualsieren.
+In diesem Artikel werden Authentifizierung und Authorisierungsfluss für eine Microsoft Graph-App an einem Beispiel umfassend erläutert. In diesem Beispiel werden Azure Active Directory (Azure AD) als Authentifizierungsanbieter sowie der <a href="https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx" target="_newtab">Authorization Code Grant-Datenfluss</a> als Authentifizierungsfluss verwendet. In diesem Beispiel wird gezeigt, wie Sie Azure AD in einer Microsoft Graph-App verwenden, um einen Benutzer zu authentifizieren, ein Zugriffstoken abzurufen und ein Zugriffstoken mithilfe eines Aktualisierungstokens aktualisieren.
 
 Für Code-Grant-Flüsse kann der Authentifizierungsprozesses in zwei grundlegende Schritte unterteilt werden:
 
