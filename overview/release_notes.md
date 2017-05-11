@@ -3,10 +3,10 @@
 Dieser Artikel beschreibt bekannte Probleme in Microsoft Graph. Informationen zu den neuesten Updates finden Sie im [Microsoft Graph Changelog](http://graph.microsoft.io/en-us/changelog).
 
 ## <a name="graph-quick-start"></a>Graph-Schnellstart
-30. April 2017 – Die Schnellstartlinks enthalten einen Fehler: Die Umleitungs-URL für ASP.NET MVC, Node.js, Angular, PHP, Python und Ruby ist nicht ordnungsgemäß konfiguriert. Wir arbeiten daran, die Korrektur für die Produktion bereitzustellen. Eine Problemumgehung finden Sie in unseren [exemplarischen Erste-Schritte-Vorgehensweisen](https://developer.microsoft.com/en-us/graph/docs/get-started/get-started)
+30. April 2017 – Die Schnellstartlinks enthalten einen Fehler: Die Umleitungs-URL für ASP.NET MVC, Node.js, Angular, PHP, Python und Ruby ist nicht ordnungsgemäß konfiguriert. Wir arbeiten daran, die Korrektur für die Produktion bereitzustellen. Eine Problemumgehung finden Sie in unseren [exemplarischen Erste-Schritte-Vorgehensweisen](https://developer.microsoft.com/en-us/graph/docs/get-started/get-started).   Dieses Problem wurde am 3. Mai behoben.
 
 ## <a name="graph-explorer"></a>Graph-Tester
-Die Microsoft-Kontoanmeldungen beim Graph-Tester wurden aufgrund eines Dienstproblems deaktiviert. Wir arbeiten aktiv an einer Lösung und werden diesen Text aktualisieren, wenn wir soweit sind.  
+Die Microsoft-Kontoanmeldungen beim Graph-Tester wurden aufgrund eines Dienstproblems deaktiviert. Wir arbeiten aktiv an einer Lösung und werden diesen Text aktualisieren, wenn wir soweit sind.  Update vom 3. Mai – Dieses Problem ist nun behoben.
 
 Anmeldungen mit Internet Explorer und Microsoft Edge haben nicht funktioniert. Dieses Problem ist seit dem 2. Februar 2017 gelöst.
 

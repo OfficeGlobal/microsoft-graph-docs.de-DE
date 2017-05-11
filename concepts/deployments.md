@@ -14,9 +14,9 @@ Dieser Abschnitt enthält Informationen über Microsoft Graph betrieben von 21Vi
 | https://microsoftgraph.chinacloudapi.cn | https://graph.microsoft.com|
 
 ### <a name="microsoft-graph-explorer"></a>Microsoft Graph-Explorer
-| Microsoft Graph-Explorer in China | Microsoft Graph-Explorer|
+| Microsoft Graph-Explorer in China | Microsoft Graph-Tester|
 |---------------------------|----------------|
-|https://graph.microsoft.io/zh-cn/graph-explorer| https://graph.microsoft.io/en-us/graph-explorer|
+|https://developer.microsoft.com/zh-cn/graph/graph-explorer-china| https://developer.microsoft.com/graph/graph-explorer|
 
 ### <a name="azure-openid-connect-and-oauth20"></a>Azure OpenID Connect und OAuth 2.0
 Die zum Erwerben von Tokens zum Anmelden bei oder Aufrufen von Microsoft Graph, betrieben von 21Vianet, verwendeten Endpunkte weichen von denen bei anderen Angeboten ab. 
