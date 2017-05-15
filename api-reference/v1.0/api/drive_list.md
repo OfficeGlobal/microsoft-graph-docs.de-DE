@@ -1,15 +1,19 @@
 # <a name="list-available-drives"></a>Verfügbare Laufwerke auflisten
 
 Dient zum Abrufen der Liste der [Laufwerk](../resources/drive.md)-Ressourcen für einen Ziel-[Benutzer](../resources/user.md) oder eine Ziel-[Gruppe](../resources/group.md). Ihre App kann auch den Satz von Dokumentbibliotheken auf der SharePoint-Stammwebsite anfordern.
+
 ## <a name="prerequisites"></a>Voraussetzungen
+
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
 
-  * Files.Read
-  * Files.ReadWrite
-  * Sites.Read.All
+* Files.Read
+* Files.ReadWrite
+* Sites.Read.All
 
 ## <a name="http-request"></a>HTTP-Anforderung
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /drives
 GET /me/drives
@@ -20,29 +24,34 @@ GET /groups/{id}/drives
 Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [Drive](../resources/drive.md)-Objekten im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 
 ##### <a name="request"></a>Anforderung
+
 Hier ist ein Beispiel für die Anforderung der Laufwerke des Benutzers.
 
 <!-- {
   "blockType": "request",
   "name": "get_drives"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/drives
 ```
 
 ##### <a name="response"></a>Antwort
+
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.drive",
   "isCollection": true
 } -->
@@ -55,7 +64,7 @@ Content-length: 579
   "value": [
     {
       "id": "b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7",
-      "driveType": "business",    
+      "driveType": "business",
       "owner": {
           "user": {
               "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",

@@ -44,7 +44,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Erforderlich. |
+| Authorization  | string  | Bearer <token>. Required. |
 | Prefer: outlook.timezone | string | Die Standardzeitzone für Ereignisse in der Antwort. Optional. | 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -63,9 +63,8 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung. Es gibt Folgendes an:
   "name": "get_events"
 }-->
 ```http
-Prefer: outlook.timezone="Pacific Standard Time"
-
 GET https://graph.microsoft.com/v1.0/me/events?$select=subject,body,bodyPreview,organizer,attendees,start,end,location
+Prefer: outlook.timezone="Pacific Standard Time"
 ```
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Die **body**-Eigenschaft wird im HTML-Standardformat zurückgegeben.
