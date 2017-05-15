@@ -31,7 +31,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "workbookpivottable_refresh"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
 ```
 
 ##### <a name="response"></a>Antwort
