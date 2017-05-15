@@ -17,7 +17,7 @@ In dieser Vorgehensweise wird beschrieben, wie Anforderungen an die Excel-REST-A
 ## <a name="authorization-and-scopes"></a>Autorisierung und Bereiche
 Sie können den [Azure AD v2.0-Endpunkt](https://graph.microsoft.io/en-us/docs/concepts/converged_auth) verwenden, um Excel-REST-API-Aufrufe zu authentifizieren. Alle APIs benötigen den `Authorization: Bearer {access-token}`-HTTP-Header.   
   
-Einer der folgenden [Berechtigungsbereiche](https://graph.microsoft.io/en-us/docs/concepts/permission_scopes) ist erforderlich, um die Excel-Ressource verwenden:
+Einer der folgenden [Berechtigungsbereiche](https://graph.microsoft.io/en-us/docs/concepts/permissions_reference) ist erforderlich, um die Excel-Ressource verwenden:
 
 * Files.Read 
 * Files.ReadWrite

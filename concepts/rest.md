@@ -11,7 +11,7 @@ Es gibt derzeit zwei Optionen für die Registrierung einer App bei Azure AD.
   - Registrieren Sie eine App für die Verwendung des Azure AD v2.0-Endpunkts, der sowohl für persönliche (Microsoft) Identitäten als auch für Geschäfts- und Schulkonten (Azure AD) geeignet ist.
   - Registrieren Sie eine App für die Verwendung des Azure AD-Endpunkts, der nur Geschäfts- und Schulkonten unterstützt.
 
-In diesem Artikel wird eine v2.0-Registrierung vorausgesetzt, weshalb Sie Ihre App im [App-Registrierungsportal](https://apps.dev.microsoft.com/) registrieren. Folgen Sie den Anweisungen in [Registrieren Ihrer Microsoft Graph-Anwendung mit dem Azure AD-Version 2.0-Endpunkt](../concepts/auth_register_app_v2.md), um Ihre App zu registrieren. Informationen zur Verwendung des Endpunkts Azure AD finden Sie unter [Authentifizieren mit Azure AD](../concepts/auth_overview.md).
+In diesem Artikel wird eine v2.0-Registrierung vorausgesetzt, weshalb Sie Ihre App im [App-Registrierungsportal](https://apps.dev.microsoft.com/) registrieren. Folgen Sie den Anweisungen in [Registrieren Ihrer Microsoft Graph-Anwendung mit dem Azure AD-Version 2.0-Endpunkt](../concepts/auth_register_app_v2.md), um Ihre App zu registrieren. Informationen zur Verwendung des Endpunkts Azure AD finden Sie unter [Authentifizieren mit Azure AD](../concepts/auth_v2_user.md).
 
 > Einige Einschränkungen sind zu beachten, wenn Sie den Endpunkt Version 2.0 verwenden. Damit Sie die für Sie richtige Entscheidung treffen können, informieren Sie sich unter [Sollte ich den v2.0-Endpunkt verwenden?](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/)
 
@@ -44,7 +44,7 @@ Das *Mandanten*-Segment im Pfad bestimmt, wer sich bei der Anwendung anmelden ka
 | client_id | Die beim Registrieren der App generierte Client-ID. Anhand dieser erkennt Azure AD, welche App die Anmeldung anfordert. |
 | redirect_uri | Der Speicherort, zu dem Azure umleitet, nachdem der Benutzer seine Zustimmung für diese App erteilt hat. Dieser Wert muss mit dem Wert des beim Registrieren der App verwendeten **Umleitungs-URI** übereinstimmen. |
 | response_type | Der Antworttyp, den die App erwartet. Dieser Wert ist `code` für den Authorization Code Grant-Datenfluss. |
-| scope | Eine durch Leerzeichen getrennte Liste von [Microsoft Graph Berechtigungsbereichen](../concepts/permissions_reference.md), die die App anfordert. Sie können auch [OpenId Connect-Bereiche](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#openid-connect-scopes) für [die einmalige Anmeldung](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oidc/) angeben.  |
+| scope | Eine durch Leerzeichen getrennte Liste von [Microsoft Graph Berechtigungsbereichen](./permissions_reference.md), die die App anfordert. Sie können auch [OpenId Connect-Bereiche](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#openid-connect-scopes) für [die einmalige Anmeldung](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oidc/) angeben.  |
 | state | Ein Wert, der in der Anforderung enthalten ist, die in der Tokenantwort für die Validierung zurückgegeben wird. |
 
 Die Anforderungs-URL für eine Anwendung, die den Lesezugriff auf E-Mails anfordert, könnte beispielsweise wie folgt aussehen.
@@ -72,7 +72,7 @@ Zum Abrufen eines Zugriffstokens stellt die App fomularcodierte Parameter für d
 | code | Der im vorherigen Schritt abgerufene Autorisierungscode. |
 | redirect_uri | Dieser Wert muss mit dem in der Autorisierungscodeanforderung verwendeten Wert übereinstimmen. |
 | grant_type | Der von der App verwendete Typ des Zugriffs. Dieser Wert ist `code` für den Authorization Code Grant-Datenfluss. |
-| Bereich | Eine durch Leerzeichen getrennte Liste von [Microsoft Graph Berechtigungsbereichen](../concepts/permissions_reference.md), die die App anfordert. |
+| Bereich | Eine durch Leerzeichen getrennte Liste von [Microsoft Graph Berechtigungsbereichen](./permissions_reference.md), die die App anfordert. |
 
 Die Anforderungs-URL für unsere Anwendung sieht unter Verwendung des Codes aus dem vorherigen Schritt wie folgt aus.
 
