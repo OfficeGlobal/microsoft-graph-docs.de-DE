@@ -11,10 +11,11 @@ Stellt eine Azure AD-Verzeichnisrolle dar. Azure AD-Verzeichnisrollen werden auc
 |[directoryRole abrufen](../api/directoryrole_get.md) | [directoryRole](directoryrole.md) | Dient zum Lesen der Eigenschaften und der Beziehungen des directoryRole-Objekts. |
 |[Mitglied erstellen](../api/directoryrole_post_members.md) |[directoryObject](directoryobject.md)| Fügen Sie der Verzeichnisrolle einen Benutzer durch Veröffentlichen in der Mitgliedernavitionseingenschaft hinzu.|
 |[Mitglieder auflisten](../api/directoryrole_list_members.md) |[directoryObject](directoryobject.md)-Sammlung| Ruft die Benutzer, die Mitglieder der Verzeichnisrolle sind, aus der Mitgliedernavigationseigenschaft ab.|
+|[Mitglied entfernen](../api/directoryrole_delete_member.md) |[directoryObject](directoryobject.md)| Dient zum Entfernen eines Benutzers aus der Verzeichnisrolle.|
 |[directoryRole aktivieren](../api/directoryrole_post_directoryroles.md) |[directoryRole](directoryrole.md) | Dient zum Aktivieren einer Verzeichnisrolle.|
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft   | Typ | Beschreibung |
 |:---------------|:--------|:----------|
 |description|String|Die Beschreibung für die Verzeichnisrolle. Schreibgeschützt. |
 |displayName|String|Der Anzeigename für die Verzeichnisrolle. Schreibgeschützt. |
@@ -22,7 +23,7 @@ Stellt eine Azure AD-Verzeichnisrolle dar. Azure AD-Verzeichnisrollen werden auc
 |roleTemplateId|String| Die **id** der [directoryRoleTemplate](directoryroletemplate.md), auf der diese Rolle basiert. Die Eigenschaft muss angegeben werden, wenn eine Verzeichnisrolle mit einer POST-Operation in einem Mandanten aktiviert wird. Nach der Aktivierung der Verzeichnisrolle ist die Eigenschaft schreibgeschützt. |
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ |Beschreibung|
 |:---------------|:--------|:----------|
 |Elemente|[directoryObject](directoryobject.md)-Sammlung|Benutzer, die Mitglieder dieser Verzeichnisrolle sind. HTTP-Methoden: GET, POST, DELETE. Schreibgeschützt. Lässt Nullwerte zu.|
 

@@ -1,6 +1,6 @@
-# <a name="get-incremental-changes-to-messages-in-a-folder-preview"></a>Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen (Vorschau)
+# <a name="get-incremental-changes-to-messages-in-a-folder"></a>Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen 
 
-Mit der Delta-Abfrage können Sie Ergänzungen, Löschungen oder Aktualisierungen an Nachrichten in einem Ordner anhand einer Serie von [Delta](../api-reference/beta/api/message_delta.md)-Funktionsaufrufen abfragen. Mit Delta-Daten können Sie einen lokalen Speicher für Nachrichten eines Benutzers pflegen und synchronisieren, ohne dass Sie jedes Mal den gesamten Nachrichtensatz vom Server abrufen müssen.
+Mit der Delta-Abfrage können Sie Ergänzungen, Löschungen oder Aktualisierungen an Nachrichten in einem Ordner anhand einer Serie von [Delta](../api-reference/v1.0/api/message_delta.md)-Funktionsaufrufen abfragen. Mit Delta-Daten können Sie einen lokalen Speicher für Nachrichten eines Benutzers pflegen und synchronisieren, ohne dass Sie jedes Mal den gesamten Nachrichtensatz vom Server abrufen müssen.
 
 Die Delta-Abfrage unterstützt die vollständige Synchronisierung, die alle Nachrichten in einem Ordner abruft (z. B. im Posteingang des Benutzers), und die inkrementelle Synchronisierung, die alle Nachrichten abruft, die seit der letzten Synchronisierung in diesem Ordner geändert wurden. In der Regel führen Sie erst eine vollständige Synchronisierung aller Nachrichten in einem Ordner durch und rufen anschließend regelmäßig inkrementelle Änderungen an dem Ordner ab. 
 
@@ -8,10 +8,10 @@ Die Delta-Abfrage unterstützt die vollständige Synchronisierung, die alle Nach
 
 Die Delta-Abfrage wird jeweils für einen Ordner durchgeführt. Um die Änderungen der Nachrichten in einer Ordnerhierarchie nachzuverfolgen, müssen Sie jeden Ordner einzeln nachverfolgen. 
 
-Das Nachverfolgen von Nachrichtenänderungen in einem Ordner ist in der Regel eine Runde aus einer oder mehreren GET-Anforderungen mit der **Delta**-Funktion. Die ursprüngliche GET-Anforderung wird ähnlich wie das [Abrufen von Nachrichten](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_messages) durchgeführt, außer dass die folgende **delta**-Funktion eingeschlossen wird:
+Das Nachverfolgen von Nachrichtenänderungen in einem Ordner ist in der Regel eine Runde aus einer oder mehreren GET-Anforderungen mit der **Delta**-Funktion. Die ursprüngliche GET-Anforderung wird ähnlich wie das [Abrufen von Nachrichten](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_messages) durchgeführt, außer dass die folgende **delta**-Funktion eingeschlossen wird:
 
 ```
-GET https://graph.microsoft.com/beta/me/mailFolders/{id}/messages/delta
+GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 ```
 
 Eine GET-Anforderung mit der **delta**-Funktion gibt Folgendes zurück:
@@ -92,7 +92,7 @@ Die erste Anforderung gibt Folgendes an:
   "name": "get_messages_delta_1"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$select=Subject,Sender HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$select=Subject,Sender HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -109,8 +109,8 @@ Die Antwort enthält zwei Nachrichten und einen `@odata.nextLink`-Antwortheader.
 } -->
 ```
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM",
     "value":[
         {
             "@odata.type":"#microsoft.graph.message",
@@ -149,7 +149,7 @@ Die zweite Anforderung gibt die aus der vorherigen Antwort zurückgegebene `next
   "name": "get_messages_delta_2"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -165,8 +165,8 @@ Die zweite Antwort gibt die nächsten 2 Nachrichten in dem Ordner zurück und ei
 } -->
 ```
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU",
     "value":[
         {
             "@odata.type":"#microsoft.graph.message",
@@ -206,7 +206,7 @@ Die dritte Anforderung verwendet weiterhin die neueste aus der letzten Synchroni
   "name": "get_messages_delta_3"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -222,8 +222,8 @@ Die dritte Antwort gibt die einzige in dem Ordner verbleibende Nachricht zurück
 } -->
 ```
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
-    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY",
     "value":[
         {
             "@odata.type":"#microsoft.graph.message",
@@ -251,7 +251,7 @@ Mit dem `deltaLink` aus der [letzten Anforderung](#sample-third-request) in der 
   "name": "get_messages_delta_next"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -260,6 +260,6 @@ Prefer: odata.maxpagesize=2
 ## <a name="see-also"></a>Siehe auch
 
 - [Microsoft Graph-Delta-Abfrage](../Concepts/delta_query_overview.md)
-- [Inkrementelle Änderungen an Ereignissen in einer Kalenderansicht (Vorschau) abrufen](../Concepts/delta_query_events.md)
-- [Inkrementelle Änderungen an Gruppen abrufen (Vorschau)](../Concepts/delta_query_groups.md)
-- [Inkrementelle Änderungen an Benutzern abrufen (Vorschau)](../Concepts/delta_query_users.md)
+- [Inkrementelle Änderungen an Ereignissen in einer Kalenderansicht abrufen](../Concepts/delta_query_events.md)
+- [Inkrementelle Änderungen an Gruppen abrufen](../Concepts/delta_query_groups.md)
+- [Inkrementelle Änderungen an Benutzern abrufen](../Concepts/delta_query_users.md)

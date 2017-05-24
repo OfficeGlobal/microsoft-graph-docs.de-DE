@@ -9,6 +9,8 @@ Sie können auf eine Reihe von Excel-Objekten (wie Tabelle, Bereich oder Diagram
 eine Sammlung von Arbeitsblattobjekten zurück, die Teil der Arbeitsmappe sind.    
 
 
+** Hinweis: Die Excel-REST-API unterstützt nur Arbeitsmappen im Office Open XML-Dateiformat. Arbeitsmappen mit der Erweiterung `.xls` werden nicht unterstützt. 
+
 ## <a name="authorization-and-scopes"></a>Autorisierung und Bereiche
 
 Sie können den [Azure AD v.20-Endpunkt](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth) verwenden, um Excel-APIs zu authentifizieren. Alle APIs benötigen den `Authorization: Bearer {access-token}`-HTTP-Header.   
@@ -146,6 +148,34 @@ content-type: application/json;odata.metadata
 }
 ```
 
+#### <a name="get-a-new-worksheet"></a>Neues Arbeitsblatt abrufen 
+ 
+<!-- { "blockType": "ignored" } -->
+```http
+GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/Sheet32243
+content-type: Application/Json 
+authorization: Bearer {access-token} 
+workbook-session-id: {session-id}
+```
+
+Antwort 
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP code: 200, OK
+content-type: application/json;odata.metadata 
+
+{
+  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets/$entity",
+  "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets(%27%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D%27)",
+  "id": "{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}",
+  "name": "Sheet32243",
+  "position": 5,
+  "visibility": "Visible"
+}
+```
+
+** Hinweis: Arbeitsblätter können auch mit der ID abgerufen werden. Derzeit enthält die ID jedoch die Zeichen `{` und „}“, für die eine URL-Codierung durchgeführt werden muss, damit die API funktioniert. Beispiel: Um ein Arbeitsblatt mit der ID `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}` abzurufen, führen Sie für die ID im Pfad die folgende URL-Codierung durch: `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`. 
+
 #### <a name="delete-a-worksheet"></a>Arbeitsblatt löschen
 
 Anforderung
@@ -168,7 +198,7 @@ HTTP code: 204, No Content
 Anforderung 
 
 ```
-PATCH /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('%7B00000000-0001-0000-0100-000000000000%7D')
+PATCH /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/SheetA
 content-type: Application/Json 
 accept: application/Json 
 authorization: Bearer {access-token} 
@@ -228,6 +258,8 @@ content-type: application/json;odata.metadata
   ]
 }
 ```
+
+** Hinweis: Die Diagramm-ID enthält die Zeichen `{` und `}` (Beispiel: `{00000000-0008-0000-0100-000003000000}`), für die eine URL-Codierung durchgeführt werden muss, damit die API funktioniert. Beispiel: Um ein Diagrammobjekt abzurufen, führen Sie für die ID im Pfad die folgende URL-Codierung durch: `/charts/%7B00000000-0008-0000-0100-000003000000%7D`. 
 
 #### <a name="get-chart-image"></a>Diagrammbild abrufen
 
@@ -1191,7 +1223,7 @@ Sie können auf die Arbeitsmappenfunktionen über eine Sammlung von Funktionen z
 ##### <a name="request"></a>Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/pmt
+https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/pmt
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}

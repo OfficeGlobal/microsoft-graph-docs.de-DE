@@ -3,15 +3,18 @@
 Dient zum Aktualisieren der Eigenschaften des ChartDataLabels-Objekts.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/datalabels
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 ```
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -38,7 +41,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "update_chartdatalabels"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/datalabels
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/datalabels
 Content-type: application/json
 Content-length: 134
 

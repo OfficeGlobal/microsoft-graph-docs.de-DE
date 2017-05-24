@@ -3,18 +3,21 @@
 Ruft die letzte Zeile im Bereich ab. Beispielsweise lautet die letzte Zelle des Bereichs "B2: D5" "B5:D5".
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/LastRow
-POST /workbook/worksheets(<id|name>)/range(<address>)/LastRow
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/LastRow
+GET /workbook/names(<name>)/range/LastRow
+GET /workbook/worksheets/{id|name}/range(<address>)/LastRow
+GET /workbook/tables/{id|name}/columns/{id|name}/range/LastRow
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -31,7 +34,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "range_lastrow"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/LastRow
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/LastRow
 ```
 
 ##### <a name="response"></a>Antwort

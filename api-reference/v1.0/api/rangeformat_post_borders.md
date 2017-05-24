@@ -3,18 +3,21 @@
 Verwenden Sie diese API zum Erstellen eines neuen RangeBorder.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/borders
-POST /workbook/worksheets(<id|name>)/range(<address>)/format/borders
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders
+POST /workbook/worksheets/{id|name}/range(<address>)/format/borders
+POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext

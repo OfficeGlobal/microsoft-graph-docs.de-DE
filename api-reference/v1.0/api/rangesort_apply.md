@@ -3,18 +3,21 @@
 Führt einen Sortiervorgang aus.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/sort/apply
-POST /workbook/worksheets(<id|name>)/range(<address>)/sort/apply
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/sort/apply
+POST /workbook/worksheets/{id|name}/range(<address>)/sort/apply
+POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext

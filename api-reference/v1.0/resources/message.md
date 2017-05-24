@@ -2,8 +2,10 @@
 
 Dieser Ressourcentyp stellt eine Nachricht in einem mailFolder-Objekt dar.
 
-Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe von [Erweiterungen](../../../concepts/extensibility_overview.md) eigene Daten hinzuzufügen.
+Diese Ressource unterstützt Folgendes:
 
+- Hinzufügen Ihrer eigenen Daten zu benutzerdefinierten Eigenschaften mithilfe von [Erweiterungen](../../../concepts/extensibility_overview.md).
+- Verwenden einer [Delta-Abfrage](../../../concepts/delta_query_overview.md) zum Nachverfolgen von inkrementellen Hinzufügungen, Löschungen und Aktualisierungen durch Bereitstellen der [delta](../api/message_delta.md)-Funktion.
 
 ## <a name="methods"></a>Methoden
 
@@ -18,7 +20,8 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 |[createForward](../api/message_createforward.md)|[Nachricht](message.md)|Erstellt einen Entwurf der Weiterleitungsnachricht. Sie können den Entwurf dann [aktualisieren](../api/message_update.md) oder [senden](../api/message_send.md).|
 |[createReply](../api/message_createreply.md)|[Nachricht](message.md)|Erstellt einen Entwurf der Antwortnachricht. Sie können den Entwurf dann [aktualisieren](../api/message_update.md) oder [senden](../api/message_send.md).|
 |[createReplyAll](../api/message_createreplyall.md)|[Nachricht](message.md)|Erstellt einen Entwurf der „Allen Antworten“-Nachricht. Sie können den Entwurf dann [aktualisieren](../api/message_update.md) oder [senden](../api/message_send.md).|
-|[Weiterleiten](../api/message_forward.md)|Keine|Leitet eine Nachricht weiter. Die Nachricht wird dann im Ordner „Gesendete Elemente“ gespeichert.|
+|[delta](../api/message_delta.md)|[message](message.md)-Sammlung| Dient zum Abrufen eines Satzes von Nachrichten, die einem bestimmten Ordner hinzugefügt bzw. daraus gelöscht oder darin aktualisiert wurden.|
+|[forward](../api/message_forward.md)|Keine|Leitet eine Nachricht weiter. Die Nachricht wird dann im Ordner „Gesendete Elemente“ gespeichert.|
 |[Verschieben](../api/message_move.md)|[Nachricht](message.md)|Verschiebt eine Nachricht in einen Ordner. Dadurch wird eine neue Kopie der Nachricht im Zielordner erstellt.|
 |[Antworten](../api/message_reply.md)|Keine|Antwortet auf eine Nachricht des Absenders. Die Nachricht wird dann im Ordner „Gesendete Elemente“ gespeichert.|
 |[replyAll](../api/message_replyall.md)|Keine|Sendet eine Antwort an alle Empfänger einer E-Mail. Die Nachricht wird dann im Ordner „Gesendete Elemente“ gespeichert.|
@@ -29,6 +32,8 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 |**Offene Erweiterungen**| | |
 |[Offene Erweiterung erstellen](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Erstellt eine offene Erweiterung und fügt benutzerdefinierte Eigenschaften in einer neuen oder vorhandenen Instanz einer Ressource hinzu.|
 |[Offene Erweiterung abrufen](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md)-Sammlung| Ruft ein offenes Erweiterungsobjekt oder Objekte basierend auf ihrem Namen oder vollqualifizierten Namen ab.|
+|**Schemaerweiterungen**| | |
+|[Schemaerweiterungswerte hinzufügen](../../../concepts/extensibility_schema_groups.md) || Dient zum Erstellen einer Schemaerweiterungsdefinition und anschließenden Verwenden der Definition zum Hinzufügen benutzerdefinierter typisierter Daten zu einer Ressource.|
 |**Erweiterte Eigenschaften**| | |
 |[Einwertige erweiterte Eigenschaft erstellen](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[Nachricht](message.md)  |Erstellt eine oder mehrere einwertige erweiterte Eigenschaften in einer neuen oder vorhandenen Nachricht.   |
 |[Nachricht mit einwertiger erweiterter Eigenschaft abrufen](../api/singlevaluelegacyextendedproperty_get.md)  | [Nachricht](message.md) | Ruft mithilfe von `$expand` oder `$filter` Nachrichten mit einer einwertigen erweiterten Eigenschaft ab. |
@@ -41,7 +46,7 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|Die Bcc:-Empfänger der Nachricht.|
 |body|[itemBody](itembody.md)|Der Text der Nachricht. Er kann im HTML- oder Textformat vorliegen.|
-|bodyPreview|String|Die ersten 255 Zeichen des Nachrichtentexts. Sie liegen im Textformat vor.|
+|bodyPreview|Zeichenfolge|Die ersten 255 Zeichen des Nachrichtentexts. Liegt im Textformat vor.|
 |categories|String collection|Die Kategorien, die mit der Nachricht verknüpft sind.|
 |ccRecipients|[recipient](recipient.md) collection|Die Cc:-Empfänger der Nachricht.|
 |changeKey|String|Die Version der Nachricht.|
@@ -145,9 +150,11 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 - [Postfacheinstellungen abrufen](../api/user_get_mailboxsettings.md) 
 - [Postfacheinstellungen aktualisieren](../api/user_update_mailboxsettings.md)
+- [Verwenden einer Delta-Abfrage zum Nachverfolgen von Änderungen in Microsoft Graph-Daten](../../../concepts/delta_query_overview.md)
+- [Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen](../../../concepts/delta_query_messages.md)
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](../../../concepts/extensibility_overview.md)
-- [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Preview)](../../../concepts/extensibility_open_users.md)
-- [Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen (Preview)](../../../concepts/extensibility_schema_groups.md)
+- [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](../../../concepts/extensibility_open_users.md)
+- [Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

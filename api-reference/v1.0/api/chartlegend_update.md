@@ -3,15 +3,18 @@
 Dient zum Aktualisieren der Eigenschaften des ChartLegend-Objekts.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/legend
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/legend
 ```
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -33,7 +36,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "update_chartlegend"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/legend
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/legend
 Content-type: application/json
 Content-length: 72
 

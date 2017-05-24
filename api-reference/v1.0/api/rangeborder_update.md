@@ -3,17 +3,20 @@
 Dient zum Aktualisieren der Eigenschaften des rangeborder-Objekts.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names(<name>)/range/format/borders(<sideIndex>)
-PATCH /workbook/worksheets(<id|name>)/range(<address>)/format/borders(<sideIndex>)
-PATCH /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders(<sideIndex>)
+PATCH /workbook/worksheets/{id|name}/range(<address>)/format/borders(<sideIndex>)
+PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideIndex>)
 ```
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -40,7 +43,6 @@ Content-type: application/json
 Content-length: 136
 
 {
-  "id": "id-value",
   "color": "color-value",
   "style": "style-value",
   "sideIndex": "sideIndex-value",

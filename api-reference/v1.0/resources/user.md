@@ -2,8 +2,12 @@
 
 Stellt ein Azure AD-Benutzerkonto dar. Erbt von [directoryObject](directoryobject.md).
 
+Diese Ressource unterstützt Folgendes:
+- Hinzufügen Ihrer eigenen Daten zu benutzerdefinierten Eigenschaften mithilfe von [Erweiterungen](../../../concepts/extensibility_overview.md).
+- Verwenden einer [Delta-Abfrage](../../../concepts/delta_query_overview.md) zum Nachverfolgen von inkrementellen Hinzufügungen, Löschungen und Aktualisierungen durch Bereitstellen der [delta](../api/user_delta.md)-Funktion.
 
 ## <a name="methods"></a>Methoden
+
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
 |[Get user](../api/user_get.md) | [user](user.md) |Liest Eigenschaften und Beziehungen des Benutzerobjekts.|
@@ -32,15 +36,23 @@ Stellt ein Azure AD-Benutzerkonto dar. Erbt von [directoryObject](directoryobjec
 |[List ownedObjects](../api/user_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| Ruft die Verzeichnisobjekte, die dem Benutzer gehören, aus der ownedDevices-Navigationseigenschaft ab.|
 |[List registeredDevices](../api/user_list_registereddevices.md) |[directoryObject](directoryobject.md) collection| Ruft die Geräte, die für den Benutzer registriert sind, aus der registeredDevices-Navigationseigenschaft ab.|
 |[List createdObjects](../api/user_list_createdobjects.md) |[directoryObject](directoryobject.md) collection| Ruft die Verzeichnisobjekte, die von dem Benutzer erstellt wurden, aus der createdObjects-Navigationseigenschaft ab.|
-|[assignLicense](../api/user_assignlicense.md)|[user](user.md)|Fügt Abonnements für den Benutzer hinzu bzw. entfernt sie. Sie können auch bestimmte Pläne aktivieren oder deaktivieren, die mit einem Abonnement verknüpft sind.|
+|[assignLicense](../api/user_assignlicense.md)|[Benutzer](user.md)|Fügt Abonnements für den Benutzer hinzu bzw. entfernt sie. Sie können auch bestimmte Pläne aktivieren oder deaktivieren, die mit einem Abonnement verknüpft sind.|
+|[licenseDetails auflisten](../api/user_list_licensedetails.md) |[licenseDetails](licensedetails.md)-Sammlung| Dient zum Abrufen einer licenseDetails-Objektsammlung.| 
 |[checkMemberGroups](../api/user_checkmembergroups.md)|String collection|Sucht nach einer Mitgliedschaft in einer Liste von Gruppen. Die Überprüfung ist transitiv.|
 |[getMemberGroups](../api/user_getmembergroups.md)|String collection|Gibt alle Gruppen zurück, bei denen der Benutzer Mitglied ist. Die Überprüfung ist transitiv.|
 |[getMemberObjects](../api/user_getmemberobjects.md)|String collection| Gibt alle Gruppen und Verzeichnisrollen zurück, bei denen der Benutzer ein Mitglied ist. Die Überprüfung ist transitiv. |
 |[reminderView](../api/user_reminderview.md)|[Reminder](reminder.md) collection|Gibt eine Liste von Kalendererinnerungen innerhalb der angegebenen Start- und Endzeiten zurück.|
+|[delta](../api/user_delta.md)|Benutzersammlung| Dient zum Abrufen inkrementeller Änderungen für Benutzer. |
+|**Offene Erweiterungen**| | |
+|[Offene Erweiterung erstellen](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Erstellt eine offene Erweiterung und fügt benutzerdefinierte Eigenschaften zu einer neuen oder vorhandenen Ressource hinzu.|
+|[Offene Erweiterung abrufen](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md)-Sammlung| Dient zum Abrufen einer offenen Erweiterung, die durch den Erweiterungsnamen identifiziert wird.|
+|**Schemaerweiterungen**| | |
+|[Schemaerweiterungswerte hinzufügen](../../../concepts/extensibility_schema_groups.md) || Dient zum Erstellen einer Schemaerweiterungsdefinition und anschließenden Verwenden der Definition zum Hinzufügen benutzerdefinierter typisierter Daten zu einer Ressource.|
 
 
 
 ## <a name="properties"></a>Eigenschaften
+
 | Eigenschaft       | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
 |aboutMe|String|Ein Freihandform-Texteingabefeld, in dem der Benutzer sich selbst beschreiben kann.|
@@ -48,6 +60,7 @@ Stellt ein Azure AD-Benutzerkonto dar. Erbt von [directoryObject](directoryobjec
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|Die Lizenzen, die dem Benutzer zugewiesen sind. Lässt keine NULL-Werte zu.            |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|Die Pläne, die dem Benutzer zugewiesen sind. Schreibgeschützt. Lässt keine NULL-Werte zu. |
 |birthday|DateTimeOffset|Der Geburtstag des Benutzers. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
+|businessPhones|String-Sammlung|Die Telefonnummern für den Benutzer. HINWEIS: Obwohl dies eine String-Sammlung ist, kann nur eine Nummer für diese Eigenschaft festgelegt werden.|
 |city|String|Die Stadt, in der sich der Benutzer befindet. Unterstützt $filter.|
 |country|String|Land/Region, in dem/der sich der Benutzer befindet; z. B. „USA“ oder „UK“. Unterstützt $filter.|
 |department
@@ -55,7 +68,8 @@ Stellt ein Azure AD-Benutzerkonto dar. Erbt von [directoryObject](directoryobjec
 |displayName|String|cDer Name, der im Adressbuch für den Benutzer angezeigt wird. Dies ist normalerweise eine Kombination aus dem Vornamen, der Initiale des weiteren Vornamens und des Nachnamens. Diese Eigenschaft ist beim Erstellen eines Benutzers erforderlich und kann nicht bei Updates deaktiviert werden. Unterstützt $Filter und $orderby.|
 |givenName|String|Der Vorname des Benutzers. Unterstützt $filter.|
 |hireDate|DateTimeOffset|Das Einstellungsdatum des Benutzers. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|id|String|Der eindeutige Bezeichner des Benutzers. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
+|id|Zeichenfolge|Der eindeutige Bezeichner des Benutzers. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
+|imAddresses|String-Sammlung|Die VOIP-SIP-Adressen (Voice oder IP; Session Initiation Protocol) der Chatnachricht für den Benutzer. Schreibgeschützt.|
 |interests|String collection|Eine Liste für den Benutzer, um dessen Interessen zu beschreiben.|
 |jobTitle|String|Die Position des Benutzers. Unterstützt $filter.|
 |Mail|String|Die SMTP-Adresse des Benutzers, z. B. „jeff@contoso.onmicrosoft.com“. Schreibgeschützt. Unterstützt $filter.|
@@ -87,6 +101,7 @@ Stellt ein Azure AD-Benutzerkonto dar. Erbt von [directoryObject](directoryobjec
 |userType|String|Ein Zeichenfolgenwert kann zum Klassifizieren der Benutzertypen in Ihrem Verzeichnis verwendet werden, z. B. „Member“ und „Guest“. Unterstützt $filter.          |
 
 ## <a name="relationships"></a>Beziehungen
+
 | Beziehung | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
 |calendar|[Calendar](calendar.md)|Primärer Kalender des Benutzers. Schreibgeschützt.|
@@ -97,18 +112,21 @@ Stellt ein Azure AD-Benutzerkonto dar. Erbt von [directoryObject](directoryobjec
 |contacts|[Contact](contact.md) collection|Die Kontakte des Benutzers. Schreibgeschützt. Lässt NULL-Werte zu.|
 |createdObjects|[directoryObject](directoryobject.md) collection|Verzeichnisobjekte, die vom Benutzer erstellt wurden. Schreibgeschützt. Lässt NULL-Werte zu.|
 |directReports|[directoryObject](directoryobject.md) collection|Die Benutzer und Kontakte, die an den Benutzer berichten. (Die Benutzer und Kontakte, deren manager-Eigenschaft auf diesen Benutzer festgelegt ist.) Schreibgeschützt. Lässt NULL-Werte zu. |
-|drive|[drive](drive.md)|OneDrive eines Benutzers. Schreibgeschützt.|
-|events|[Event](event.md) collection|Die Ereignisse des Benutzers. Standardmäßig werden Ereignisse unter dem Standard-Kalender angezeigt. Schreibgeschützt. Lässt NULL-Werte zu.|
+|drive|[Laufwerk](drive.md)|OneDrive eines Benutzers. Schreibgeschützt.|
+|drives|[drive](drive.md)-Sammlung. | Eine Sammlung von Laufwerken, die für diesen Benutzer zur Verfügung stehen. Schreibgeschützt. |
+|events|[Ereignissammlung](event.md)|Die Ereignisse des Benutzers. Standardmäßig werden Ereignisse unter dem Standard-Kalender angezeigt. Schreibgeschützt. Lässt Nullwerte zu.|
+|extensions|[extension](extension.md)-Sammlung|Die Sammlung der für den Benutzer definierten offenen Erweiterungen. Schreibgeschützt. Lässt NULL-Werte zu.|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | Relevanzklassifizierung von Nachrichten des Benutzers basierend auf expliziten Kennzeichnungen, die die abgeleitete Relevanz oder Wichtigkeit außer Kraft setzen. |
 |mailFolders|[MailFolder](mailfolder.md) collection| Die E-Mail-Ordner des Benutzers. Schreibgeschützt. Lässt NULL-Werte zu.|
 |manager|[directoryObject](directoryobject.md)|Der Benutzer oder Kontakt, der Vorgesetzter dieses Benutzers ist. Schreibgeschützt. (HTTP-Methoden: GET, PUT, DELETE.)|
 |memberOf|[directoryObject](directoryobject.md) collection|Die Gruppen und Verzeichnisrollen, bei denen der Benutzer Mitglied ist. Schreibgeschützt. Lässt NULL-Werte zu.|
-|messages|[Message](message.md) collection|Die Nachrichten in einem Postfach oder Ordner. Schreibgeschützt. Lässt NULL-Werte zu.|
+|messages|[Nachrichten](message.md)-Sammlung|Die Nachrichten in einem Postfach oder Ordner. Schreibgeschützt. Lässt Nullwerte zu.|
+|onenote|[OneNote](onenote.md)| Schreibgeschützt.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Geräte, die der Benutzer besitzt. Schreibgeschützt. Lässt NULL-Werte zu.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Verzeichnisobjekte, die der Benutzer besitzt. Schreibgeschützt. Lässt NULL-Werte zu.|
 |Foto|[profilePhoto](profilephoto.md)| Das Profilfoto des Benutzers. Schreibgeschützt.|
-|registeredDevices|[directoryObject](directoryobject.md) collection|Geräte, die für den Benutzer registriert sind. Schreibgeschützt. Lässt Nullwerte zu.|
-
+|registeredDevices|[directoryObject](directoryobject.md)-Sammlung|Geräte, die für den Benutzer registriert sind. Schreibgeschützt. Lässt Nullwerte zu.|
+|sites|[site](site.md)-Sammlung | Eine Sammlung von Websites, die für diesen Benutzer zur Verfügung stehen. Schreibgeschützt. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -128,15 +146,18 @@ Es folgt eine JSON-Darstellung der Ressource.
     "directReports",
     "drive",
     "events",
+    "extensions",
     "joinedGroups",
     "mailFolders",
     "manager",
     "memberOf",
     "messages",
     "oauth2PermissionGrants",
+    "onenote",
     "ownedDevices",
     "ownedObjects",
     "photo",
+    "sites",
     "registeredDevices"
   ],
   "keyProperty": "id",
@@ -198,6 +219,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "createdObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "directReports": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "drive": { "@odata.type": "microsoft.graph.drive" },
+  "drives": [ { "@odata.type": "microsoft.graph.drive" } ],
   "events": [ { "@odata.type": "microsoft.graph.event" } ],
   "inferenceClassification": { "@odata.type": "microsoft.graph.inferenceClassification" },
   "mailFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
@@ -206,10 +228,17 @@ Es folgt eine JSON-Darstellung der Ressource.
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
   "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
+  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "sites": [ {"@odata.type": "microsoft.graph.site" }]
 }
 
 ```
+
+## <a name="see-also"></a>Weitere Artikel
+
+- [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](../../../concepts/extensibility_overview.md)
+- [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](../../../concepts/extensibility_open_users.md)
+- [Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

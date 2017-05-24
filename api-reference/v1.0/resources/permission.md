@@ -28,39 +28,44 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ## <a name="properties"></a>Eigenschaften
 
-| Eigenschaft      | Typ                                      | Beschreibung                                                                                                                           |
-|:--------------|:------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------|
-| id            | String                                    | Die eindeutige ID der Berechtigung für alle Berechtigungen für das Element. Schreibgeschützt.                                                 |
-| grantedTo     | [IdentitySet](identityset.md)             | Bei Berechtigungen vom Typ „Benutzer“ detaillierte Informationen zu Benutzern und Anwendungen für diese Berechtigung. Schreibgeschützt.                                    |
-| invitation    | [SharingInvitation](sharinginvitation.md) | Details zu verknüpften Einladungen zur Freigabe für diese Berechtigung. Schreibgeschützt.                                                          |
-| inheritedFrom | [ItemReference](itemreference.md)         | Stellt einen Verweis auf das Vorgängerelement der aktuellen Berechtigung bereit, wenn es von einem Vorgängerelement geerbt wurde. Schreibgeschützt.                       |
-| Link          | [SharingLink](sharinglink.md)             | Stellt Linkdetails der aktuellen Berechtigung bereit, wenn es sich um Berechtigungen vom Typ „Link“ handelt. Schreibgeschützt.                                     |
+| Eigenschaft      | Typ                                      | Beschreibung
+|:--------------|:------------------------------------------|:-----------------
+| id            | String                                    | Die eindeutige ID der Berechtigung für alle Berechtigungen für das Element. Schreibgeschützt.
+| grantedTo     | [IdentitySet](identityset.md)             | Bei Berechtigungen vom Typ „Benutzer“ detaillierte Informationen zu Benutzern und Anwendungen für diese Berechtigung. Schreibgeschützt.
+| invitation    | [SharingInvitation][]                     | Details zu verknüpften Einladungen zur Freigabe für diese Berechtigung. Schreibgeschützt.
+| inheritedFrom | [ItemReference](itemreference.md)         | Stellt einen Verweis auf das Vorgängerelement der aktuellen Berechtigung bereit, wenn es von einem Vorgängerelement geerbt wurde. Schreibgeschützt.
+| Link          | [SharingLink][]                           | Stellt Linkdetails der aktuellen Berechtigung bereit, wenn es sich um Berechtigungen vom Typ „Link“ handelt. Schreibgeschützt.
 | role          | Collection of String
-                      | Die Art der Berechtigung z, B. `read` Nachfolgend finden Sie die vollständige Liste von Rollen. Schreibgeschützt.                                                 |
-| shareId       | String                                    | Ein eindeutiges Token für diese Berechtigung. Schreibgeschützt. |
+                      | Die Art der Berechtigung z, B. `read` Nachfolgend finden Sie die vollständige Liste von Rollen. Schreibgeschützt.
+| shareId       | String                                    | Ein eindeutiges Token, das verwendet werden kann, um über die [ **Freigabe**-API](../api/shares_get.md) auf dieses freigegebene Element zuzugreifen. Schreibgeschützt.
 
-Die [Permission](../resources/permission.md)-Ressource verwendet _Facets_ zum Bereitstellen von Informationen über die Art der Berechtigung, die die Ressource dargestellt.
+Die Berechtigungsressource verwendet _Facets_ zum Bereitstellen von Informationen über die Art der Berechtigung, die die Ressource dargestellt.
 
-Berechtigungen für ein [**link**](sharinglink.md)-Facet stellen Freigabe-Links dar, die für das Element erstellt wurden. Freigabelinks enthalten ein eindeutiges Token, mit dem alle Benutzer, die über den Link verfügen, Zugriff auf das Element haben.
+Berechtigungen mit einem [**link**][SharingLink]-Facet stellen Freigabelinks dar, die für das Element erstellt wurden. Freigabelinks enthalten ein eindeutiges Token, mit dem alle Benutzer, die über den Link verfügen, Zugriff auf das Element haben.
 
-Berechtigungen mit einem [**invitation**](sharinginvitation.md)-Facet stellen Berechtigungen dar, die durch Einladung bestimmter Benutzer oder Gruppen für Zugriff auf die Datei hinzugefügt werden.
+Berechtigungen mit einem [**invitation**][SharingInvitation]-Facet stellen Berechtigungen dar, die durch Einladung bestimmter Benutzer oder Gruppen zum Zugreifen auf die Datei hinzugefügt werden.
+
+[SharingInvitation]: sharinginvitation.md
+[SharingLink]: sharinglink.md
 
 ## <a name="roles-enumeration"></a>Rollenaufzählung
 
-| Rolle  | Details                                                                        |
-|:------|:-------------------------------------------------------------------------------|
-| `read`  | Ermöglicht das Lesen der Metadaten und Inhalte des Elements.            |
-| `write` | Ermöglicht das Lesen und Ändern der Metadaten und Inhalte des Elements. |
+| Rolle        | Details                                                                        |
+|:------------|:-------------------------------------------------------------------------------|
+| `read`      | Ermöglicht das Lesen der Metadaten und Inhalte des Elements.            |
+| `write`     | Ermöglicht das Lesen und Ändern der Metadaten und Inhalte des Elements. |
+| `sp.owner`  | Für SharePoint und OneDrive for Business stellt dies die Besitzerrolle dar.       |
+| `sp.member` | Für SharePoint und OneDrive for Business stellt dies die Mitgliedsrolle dar.      |
 
 ## <a name="methods"></a>Methoden
 
-| Method                                              | REST-Pfad                            |
-|:----------------------------------------------------|:---------------------------------------|
-| [List permissions](../api/item_list_permissions.md) | `GET /drive/items/{item-id}/permissions`  |
-| [Get permission](../api/permission_get.md)          | `GET /drive/items/{item-id}/permissions/{id}` |
-| [Add](../api/item_invite.md)                        | `POST /drive/items/{item-id}/invite` |
-| [Update](../api/permission_update.md)               | `PATH /drive/items/{item-id}/permissions/{id}` |
-| [Delete](../api/permission_delete.md)               | `DELETE /drive/items/{item-id}/permissions/{id}` |
+| Method                                              | REST-Pfad
+|:----------------------------------------------------|:-----------------------
+| [List permissions](../api/item_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
+| [Get permission](../api/permission_get.md)          | `GET /drive/items/{item-id}/permissions/{id}`
+| [Add](../api/item_invite.md)                        | `POST /drive/items/{item-id}/invite`
+| [Update](../api/permission_update.md)               | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [Delete](../api/permission_delete.md)               | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
 ## <a name="remarks"></a>Bemerkungen

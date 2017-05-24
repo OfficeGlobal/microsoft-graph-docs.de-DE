@@ -1,6 +1,6 @@
 # <a name="create-mailfolder"></a>MailFolder erstellen
 
-Verwenden Sie diese API zum Erstellen eines neuen E-Mail-Ordners.
+Verwenden Sie diese API, um einen neuen E-Mail-Ordner im Stammordner des Benutzerpostfachs zu erstellen.
 ## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Mail.ReadWrite*
 ## <a name="http-request"></a>HTTP-Anforderung
@@ -19,11 +19,10 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an. *
 
 | Parameter       | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
-|parentFolderId|String|Die Ordn-er-ID des übergeordneten Ordners oder der bekannte Ordnername `Inbox`, `Drafts`, `SentItems` oder `DeletedItems`.|
 |displayName|String|Der Anzeigename für den neuen Ordner.|
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und das [MailFolder](../resources/mailfolder.md)-Objekt im Antworttext zurückgegeben.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und ein [MailFolder](../resources/mailfolder.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
@@ -38,8 +37,7 @@ Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value"
+  "displayName": "displayName-value"
 }
 ```
 

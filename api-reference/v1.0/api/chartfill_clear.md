@@ -3,18 +3,21 @@
 Dient zum Löschen der Füllfarbe eines Diagrammelements.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/format/fill/clear
-POST /workbook/worksheets(<id|name>)/charts(<name>)/title/format/fill/clear
-POST /workbook/worksheets(<id|name>)/charts(<name>)/legend/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts(<name>)/title/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -31,7 +34,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "chartfill_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/format/fill/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
 ```
 
 ##### <a name="response"></a>Antwort

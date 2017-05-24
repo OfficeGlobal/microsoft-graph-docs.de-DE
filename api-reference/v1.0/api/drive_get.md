@@ -3,12 +3,12 @@
 Dient zum Abrufen der Eigenschaften und der Beziehungen einer [Drive](../resources/drive.md)-Ressource. Ein Laufwerk ist der Container auf oberster Ebene für ein Dateisystem. Mit der Graph-API können Sie auf die Drive-Ressource für OneDrive oder OneDrive for Business eines Benutzers oder auf SharePoint-Dokumentbibliotheken zugreifen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
+
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
 
-  * Files.Read
-  * Files.ReadWrite
-  * Sites.Read.All
-
+* Files.Read
+* Files.ReadWrite
+* Sites.Read.All
 
 ## <a name="get-a-users-onedrive"></a>Abrufen von OneDrive eines Benutzers
 
@@ -17,29 +17,35 @@ Damit Sie auf OneDrive oder OneDrive for Business eines Benutzers zugreifen kön
 ### <a name="http-request"></a>HTTP-Anforderung
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/drive
 GET /users/{idOrUserPrincipalName}/drive
 ```
 
-## <a name="get-the-document-library-assocaited-with-a-group"></a>Dient zum Abrufen der Dokumentbibliothek, die mit einer Gruppe verknüpft ist.
+## <a name="get-the-document-library-associated-with-a-group"></a>Dient zum Abrufen der Dokumentbibliothek, die einer Gruppe zugeordnet ist.
 
 Für den Zugriff auf die Standarddokumentbibliothek einer [Gruppe](../resources/group.md) fordert Ihre App die **drive**-Beziehung in der Gruppe an.
 
 ### <a name="http-request"></a>HTTP-Anforderung
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups/{idOrUserPrincipalName}/drive
 ```
 
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
+
 Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und die aktualisierte [Drive](../resources/drive.md)-Ressource im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

@@ -1,18 +1,21 @@
 # <a name="chartpointscollection-itemat"></a>ChartPointsCollection: ItemAt
 
-Abrufen eines Punkts anhand seiner Position in der Datenreihe.
+Dient zum Abrufen eines Punkts anhand seiner Position in der Datenreihe.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/series(<undefined>)/points/ItemAt
+POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points/ItemAt
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -34,7 +37,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "chartpointscollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/series(<undefined>)/points/ItemAt
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points/ItemAt
 Content-type: application/json
 Content-length: 20
 

@@ -2,6 +2,12 @@
 
 Ein Ereignis in einem Kalender
 
+Diese Ressource unterstützt Folgendes:
+
+- Hinzufügen Ihrer eigenen Daten zu benutzerdefinierten Eigenschaften mithilfe von [Erweiterungen](../../../concepts/extensibility_overview.md).
+- Verwenden einer [Delta-Abfrage](../../../concepts/delta_query_overview.md) zum Nachverfolgen von inkrementellen Hinzufügungen, Löschungen und Aktualisierungen durch Bereitstellen der [delta](../api/event_delta.md)-Funktion.
+
+
 ## <a name="methods"></a>Methoden
 
 | Methode       | Rückgabetyp  |Beschreibung|
@@ -14,6 +20,7 @@ Ein Ereignis in einem Kalender
 |[accept](../api/event_accept.md)|Keiner|Nimmt das angegebene Ereignis an.|
 |[tentativelyAccept](../api/event_tentativelyaccept.md)|Keiner|Nimmt das angegebene Ereignis mit Vorbehalt an.|
 |[decline](../api/event_decline.md)|Keiner|Lehnt die Einladung zu dem angegebenen Ereignis ab.|
+|[delta](../api/event_delta.md)|[event](event.md)-Sammlung|Dient zum Abrufen einer Reihe von Ereignissen, die in einer **calendarView** (ein Bereich von Ereignissen) im primären Kalender des Benutzers hinzugefügt, gelöscht oder aktualisiert wurden.|
 |[dismissReminder](../api/event_dismissreminder.md)|Keiner|Schließt die Erinnerung an das angegebene Ereignis.|
 |[snoozeReminder](../api/event_snoozereminder.md)|Keiner|Legt fest, dass erneut an das Ereignis erinnert werden soll.|
 |[List instances](../api/event_list_instances.md) |[Ereignissammlung](event.md)| Ruft alle Instanzen (Vorkommen) eines Ereignisses ab, die innerhalb eines angegebenen Zeitraums existieren. Wenn das Ereignis vom Typ `SeriesMaster` ist, werden hierdurch alle Vorkommen und Ausnahmen des Ereignisses zurückgegeben, die innerhalb des angegebenen Zeitraums existieren.|
@@ -36,7 +43,7 @@ Ein Ereignis in einem Kalender
 |:---------------|:--------|:----------|
 |attendees|[attendee](attendee.md) collection|Die Sammlung der Teilnehmer des Ereignisses|
 |body|[itemBody](itembody.md)|Der Text der Nachricht, die dem Ereignis zugeordnet ist. Er kann im HTML- oder Textformat vorliegen.|
-|bodyPreview|String|Die Vorschau der Nachricht, die dem Ereignis zugeordnet ist. Liegt im Textformat vor.|
+|bodyPreview|Zeichenfolge|Die Vorschau der Nachricht, die dem Ereignis zugeordnet ist. Liegt im Textformat vor.|
 |categories|String collection|Die Kategorien, die dem Ereignis zugeordnet sind|
 |changeKey|String|Gibt die Version des Ereignisobjekts an. Jedes Mal, wenn das Ereignis geändert wird, wird auch die Eigenschaft „changeKey“ geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
 |createdDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
@@ -142,11 +149,13 @@ Es folgt eine JSON-Darstellung der Ressource.
 ```
 
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
+- [Verwenden einer Delta-Abfrage zum Nachverfolgen von Änderungen in Microsoft Graph-Daten](../../../concepts/delta_query_overview.md)
+- [Inkrementelle Änderungen an Ereignissen in einem Ordner abrufen](../../../concepts/delta_query_events.md)
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](../../../concepts/extensibility_overview.md)
-- [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Preview)](../../../concepts/extensibility_open_users.md)
-- [Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen (Preview)](../../../concepts/extensibility_schema_groups.md)
+- [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](../../../concepts/extensibility_open_users.md)
+- [Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

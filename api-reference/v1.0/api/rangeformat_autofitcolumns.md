@@ -3,18 +3,21 @@
 Ändert die Breite der Spalten des aktuellen Bereichs, um basierend auf den aktuellen Daten in den Spalten die optimale Breite zu erzielen.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/autofitColumns
-POST /workbook/worksheets(<id|name>)/range(<address>)/format/autofitColumns
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/format/autofitColumns
+POST /workbook/worksheets/{id|name}/range(<address>)/format/autofitColumns
+POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitColumns
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext

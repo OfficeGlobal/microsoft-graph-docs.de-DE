@@ -2,6 +2,7 @@
 
 Ein mailFolder-Element im Postfach eines Benutzers, wie z. B. Posteingang, Entwürfe und Gesendete Objekte. MailFolders können Nachrichten und untergeordneten mailFolders-Elemente enthalten.
 
+Diese Ressource unterstützt die Verwendung einer [Delta-Abfrage](../../../concepts/delta_query_overview.md) zum Nachverfolgen von inkrementellen Hinzufügungen, Löschungen und Aktualisierungen durch Bereitstellen einer [delta](../api/mailfolder_delta.md)-Funktion.
 
 ## <a name="methods"></a>Methoden
 
@@ -15,6 +16,7 @@ Ein mailFolder-Element im Postfach eines Benutzers, wie z. B. Posteingang, Entw
 |[Update](../api/mailfolder_update.md) | [mailFolder](mailfolder.md)|Dient zum Aktualisieren des angegebenen mailFolder-Objekts. |
 |[Delete](../api/mailfolder_delete.md) | Keine |Dient zum Löschen des angegebenen mailFolder-Objekts. |
 |[copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)|Dient zum Kopieren eines mailFolder-Elements und seiner Inhalte in ein anderes mailFolder-Element.|
+|[delta](../api/mailfolder_delta.md)|[mailFolder](mailfolder.md)-Sammlung|Dient zum Abrufen eines Satzes von E-Mail-Ordnern, die dem Postfach des Benutzers hinzugefügt bzw. daraus gelöscht oder entfernt wurden.|
 |[move](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)|Dient zum Verschieben eines mailFolder-Elements und seiner Inhalte in ein anderes mailFolder-Element.|
 |[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[mailFolder](mailFolder.md)  |Dient zum Erstellen einer oder mehrerer erweiterter einwertiger Eigenschaften in einem neuen oder vorhandenen mailFolder-Element.   |
 |[Get mailFolder with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [mailFolder](mailFolder.md) | Dient zum Abrufen von mailFolders-Elementen mit einer erweiterten einwertigen Eigenschaft mithilfe von `$expand` oder `$filter`. |
@@ -77,6 +79,12 @@ Es folgt eine JSON-Darstellung der Ressource.
 }
 
 ```
+
+## <a name="see-also"></a>Siehe auch
+
+- [Verwenden einer Delta-Abfrage zum Nachverfolgen von Änderungen in Microsoft Graph-Daten](../../../concepts/delta_query_overview.md)
+- [Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen](../../../concepts/delta_query_messages.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

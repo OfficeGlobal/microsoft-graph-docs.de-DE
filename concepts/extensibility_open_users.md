@@ -1,4 +1,4 @@
-# <a name="add-custom-data-to-users-using-open-extensions-preview"></a>Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Vorschau)
+# <a name="add-custom-data-to-users-using-open-extensions"></a>Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen
 Sie werden durch ein Beispiel geführt, um die Verwendung *offener Erweiterungen* zu veranschaulichen. 
 
 Angenommen, Sie erstellen eine Anwendung, die auf vielen verschiedenen Clientplattformen, z. B. Desktop und Mobil, verfügbar ist.  Sie möchten zulassen, dass Benutzer ihre eigene Benutzeroberfläche konfigurieren, damit diese konsistent ist, unabhängig davon, mit welchem Gerät sie sich bei der App anmelden. Dies ist eine allgemeine Anforderung für die meisten Apps. 
@@ -10,14 +10,15 @@ In diesem Szenario erlernen Sie Folgendes:
 3. Ändern der Roamingprofilinformationen des Benutzers (der Wert der offenen Erweiterung).
 4. Löschen der Roamingprofilinformationen des Benutzers.
 
->**Hinweis:** In diesem Thema wird gezeigt, wie offenen Erweiterungen in einer *user*-Ressource hinzugefügt, gelesen, aktualisiert und gelöscht werden.  Diese Methoden werden auch für die Ressourcentypen *administrativeUnit*, *contact*, *device*, *event*, *group*, *group event*, *group post* und *organizaton* unterstützt.  Aktualisieren Sie einfach die Beispielanforderungen unter Verwendung dieser Ressourcentypen. Die in den Beispielen dargestellten Antworten sind aus Platzgründen möglicherweise abgeschnitten. 
+>**Hinweis:** In diesem Thema wird gezeigt, wie offenen Erweiterungen in einer *user*-Ressource hinzugefügt, gelesen, aktualisiert und gelöscht werden.  Diese Methoden werden auch für die Ressourcentypen *administrativeUnit*, *contact*, *device*, *event*, *group*, *group event*, *group post* und *organizaton* unterstützt.  
+Aktualisieren Sie einfach die Beispielanforderungen unter Verwendung dieser Ressourcentypen. Die in den Beispielen dargestellten Antworten sind aus Platzgründen möglicherweise abgeschnitten. 
 
 ## <a name="1-add-roaming-profile-information"></a>1. Hinzufügen von Roamingprofilinformationen
 Der Benutzer meldet sich bei der App an und konfiguriert das Aussehen und Verhalten der App.  Diese App-Einstellungen sind roamingfähig, der Benutzer erhält also dieselbe Oberfläche, ganz gleich, mit welchem Gerät er sich bei der App anmeldet.  Hier sehen Sie, wie die Roamingprofilinformationen zu einer Benutzerressource hinzugefügt werden.
 
 ##### <a name="request"></a>Anforderung
 ```http
-POST https://graph.microsoft.com/beta/me/extensions
+POST https://graph.microsoft.com/v1.0/me/extensions
 Content-type: application/json
 {
     "@odata.type":"microsoft.graph.openTypeExtension",
@@ -48,7 +49,7 @@ Wenn sich der Benutzer von einem anderen Gerät aus bei der App anmeldet, kann d
 
 ##### <a name="request"></a>Anforderung
 ```http
-GET https://graph.microsoft.com/beta/me?$select=id,displayName,mail,mobilePhone&$expand=extensions
+GET https://graph.microsoft.com/v1.0/me?$select=id,displayName,mail,mobilePhone&$expand=extensions
 ```
 ##### <a name="response"></a>Antwort
 ```http
@@ -80,7 +81,7 @@ Der Benutzer kann seine Roamingprofilinformationen ändern.  Diese Aktualisierun
 
 ##### <a name="request"></a>Anforderung
 ```http
-PATCH https://graph.microsoft.com/beta/me/extensions/com.contoso.roamingSettings
+PATCH https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 Content-type: application/json
 {
     "theme":"light",
@@ -99,7 +100,7 @@ Der Benutzer entscheidet, dass er kein Roamingprofil mehr benötigt, und löscht
 
 ##### <a name="request"></a>Anforderung
 ```http
-DELETE https://graph.microsoft.com/beta/me/extensions/com.contoso.roamingSettings
+DELETE https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 ```
 
 ##### <a name="response"></a>Antwort
@@ -110,4 +111,9 @@ HTTP/1.1 204 No content
 ## <a name="see-also"></a>Weitere Artikel
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](extensibility_overview.md)
-- [Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen (Vorschau)](extensibility_schema_groups.md)
+- [Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen](extensibility_schema_groups.md)
+- [openTypeExtension-Ressourcentyp](../api-reference/v1.0/resources/opentypeextension.md)
+- [Offene Erweiterung erstellen](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md)
+- [Offene Erweiterung abrufen](../api-reference/v1.0/api/opentypeextension_get.md)
+- [Offene Erweiterung aktualisieren](../api-reference/v1.0/api/opentypeextension_update.md)
+- [Offene Erweiterung löschen](../api-reference/v1.0/api/opentypeextension_delete.md)

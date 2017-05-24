@@ -3,17 +3,20 @@
 Deaktiviert den Filter für die angegebene Spalte.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/columns(<id|name>)/filter/clear
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns(<id|name>)/filter/clear
+POST /workbook/tables/{id|name}/columns/{id|name}/filter/clear
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/clear
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -30,7 +33,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "filter_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/columns(<id|name>)/filter/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/filter/clear
 ```
 
 ##### <a name="response"></a>Antwort

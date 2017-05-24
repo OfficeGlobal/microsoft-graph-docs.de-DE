@@ -3,17 +3,20 @@
 Wendet die angegebenen Filterkriterien in der angegebenen Spalte an.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/columns(<id|name>)/filter/apply
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns(<id|name>)/filter/apply
+POST /workbook/tables/{id|name}/columns/{id|name}/filter/apply
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/apply
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -35,7 +38,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "filter_apply"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/columns(<id|name>)/filter/apply
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/filter/apply
 Content-type: application/json
 Content-length: 321
 

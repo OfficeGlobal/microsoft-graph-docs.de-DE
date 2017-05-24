@@ -2,6 +2,9 @@
 
 Ein Ordner, der Kontakte enthält.
 
+Diese Ressource unterstützt die Verwendung einer [Delta-Abfrage](../../../concepts/delta_query_overview.md) zum Nachverfolgen von inkrementellen Hinzufügungen, Löschungen und Aktualisierungen durch Bereitstellen einer [delta](../api/contactfolder_delta.md)-Funktion.
+
+
 ## <a name="methods"></a>Methoden
 
 | Methode       | Rückgabetyp  |Beschreibung|
@@ -11,6 +14,7 @@ Ein Ordner, der Kontakte enthält.
 |[Löschen](../api/contactfolder_delete.md) | Keine |Dient zum Löschen des contactFolder-Objekts. |
 |[childFolders auflisten](../api/contactfolder_list_childfolders.md) |[ContactFolder](contactfolder.md)-Sammlung| Dient zum Abrufen einer Sammlung von untergeordneten Ordnern unter dem angegebenen Kontaktordner.|
 |[Untergeordneten contactFolder erstellen](../api/contactfolder_post_childfolders.md) |[ContactFolder](contactfolder.md)| Dient zum Erstellen eines neuen contactFolder als untergeordnetes Element eines bestimmten Ordners.|
+|[delta](../api/contact_delta.md)|[contact](contact.md)-Sammlung| Dient zum Abrufen eines Satzes von Kontaktordnern, die dem Postfach des Benutzers hinzugefügt bzw. daraus gelöscht oder entfernt wurden.|
 |[Kontakte im Ordner auflisten](../api/contactfolder_list_contacts.md) |[Contact](contact.md)-Sammlung| Dient zum Abrufen einer Kontaktsammlung aus dem Standardkontaktordner des angemeldeten Benutzers (`.../me/contacts`) oder aus dem angegebenen Kontaktordner.|
 |[Kontakt in Ordner erstellen](../api/contactfolder_post_contacts.md) |[Kontakt](contact.md)| Dient zum Hinzufügen eines Kontakts zum Stammordner der Kontakte oder zum Endpunkt `contacts` eines anderen Kontaktordners.|
 |[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[contactFolder](contactFolder.md)  |Dient zum Erstellen einer oder mehrerer erweiterter einwertiger Eigenschaften in einem neuen oder vorhandenen contactFolder-Element.   |
@@ -60,6 +64,12 @@ Es folgt eine JSON-Darstellung der Ressource.
 }
 
 ```
+
+## <a name="see-also"></a>Siehe auch
+
+- [Verwenden einer Delta-Abfrage zum Nachverfolgen von Änderungen in Microsoft Graph-Daten](../../../concepts/delta_query_overview.md)
+- [Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen](../../../concepts/delta_query_messages.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

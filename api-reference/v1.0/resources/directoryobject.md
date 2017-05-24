@@ -10,14 +10,17 @@ Stellt ein Azure Active Directory-Objekt dar. Der **directoryObject**-Typ ist de
 |[directoryObject löschen](../api/directoryobject_delete.md) | Keine |Dient zum Löschen eines directory-Objekts. |
 |[checkMemberGroups](../api/directoryobject_checkmembergroups.md)|String collection|Sucht nach einer Mitgliedschaft in einer Liste von Gruppen. Die Überprüfung ist transitiv.|
 |[getMemberGroups](../api/directoryobject_getmembergroups.md)|String collection|Gibt alle Gruppen zurück, in denen das Benutzer-, Gruppen- oder Verzeichnisobjekt Mitglied ist. Die Überprüfung ist transitiv.|
-|[getMemberObjects](../api/directoryobject_getmemberobjects.md)|String collection| Gibt alle Gruppen und Verzeichnisrollen zurück, in denen ein Benutzer-, Gruppen- oder Verzeichnisobjekt Mitglied ist. Die Überprüfung ist transitiv. |
+|[getMemberObjects](../api/directoryobject_getmemberobjects.md)|Zeichenfolgenauflistung| Gibt alle Gruppen und Verzeichnisrollen zurück, in denen ein Benutzer-, Gruppen- oder Verzeichnisobjekt Mitglied ist. Die Überprüfung ist transitiv. |
+|[getByIds](../api/directoryobject_getbyids.md) | [directoryObject](directoryobject.md)-Sammlung | Dient zum Abrufen eines Satzes von Directory-Objekten basierend auf einem Satz angegebener IDs. |
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+
+| Eigenschaft   | Typ |Beschreibung|
 |:---------------|:--------|:----------|
 |id|String|Eine GUID, die der eindeutige Bezeichner für das Objekt ist, z. B. 12345678-9abc-def0-1234-56789abcde. Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen
+
 Keine
 
 

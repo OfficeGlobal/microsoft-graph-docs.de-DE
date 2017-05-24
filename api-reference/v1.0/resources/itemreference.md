@@ -8,7 +8,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [ "path" ],
+  "optionalProperties": [ "path", "shareId", "sharepointIds" ],
   "@odata.type": "microsoft.graph.itemReference"
 }-->
 
@@ -16,22 +16,28 @@ Es folgt eine JSON-Darstellung der Ressource.
 {
   "driveId": "string",
   "id": "string",
-  "path": "string"
+  "name": "string",
+  "path": "string",
+  "shareId": "string",
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" }
 }
 ```
 
 ## <a name="properties"></a>Eigenschaften
 
-| Eigenschaft | Typ   | Beschreibung                                                                   |
-|:---------|:-------|:------------------------------------------------------------------------------|
-| driveId  | String | Eindeutiger Bezeichner der OneDrive-Instanz, die das Element enthält. Schreibgeschützt. |
-| id       | String | Eindeutiger Bezeichner des Elements im Laufwerk. Schreibgeschützt.            |
-| Pfad     | String | Pfad, der verwendet werden kann, um zu dem Element zu navigieren. Schreibgeschützt.                     |
+| Eigenschaft      | Typ                              | Beschreibung                                                                                                |
+| :------------ | :-------------------------------- | :--------------------------------------------------------------------------------------------------------- |
+| driveId       | String                            | Eindeutiger Bezeichner der drive-Instanz, die das Element enthält. Schreibgeschützt.                                 |
+| id            | String                            | Eindeutiger Bezeichner des Elements im Laufwerk. Schreibgeschützt.                                                     |
+| name          | String                            | Der Name des Elements, auf das verwiesen wird. Schreibgeschützt.                                                          |
+| Pfad          | String                            | Pfad, der verwendet werden kann, um zu dem Element zu navigieren. Schreibgeschützt.                                                  |
+| shareId       | String                            | Ein eindeutiger Bezeichner für eine freigegebene Ressource, auf die über [Freigabe](../api/shares_get.md)-API zugegriffen werden kann. |
+| sharepointIds | [sharepointIds](sharepointids.md) | Gibt Bezeichner zurück, die für SharePoint REST-Kompatibilität nützlich sind. Schreibgeschützt.                                   |
 
 
 ## <a name="remarks"></a>Bemerkungen
 
-Um ein Element aus einer **ItemReference**-Ressource zu adressieren, erstellen Sie eine URL im folgenden Format:
+Um ein **driveItem**-Element aus einer **itemReference**-Ressource zu adressieren, erstellen Sie eine URL im folgenden Format:
 
 ```http
 GET https://graph.microsoft.com/v1.0/drives/{driveId}/items/{id}

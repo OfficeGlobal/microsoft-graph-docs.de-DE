@@ -1,4 +1,4 @@
-# <a name="get-incremental-changes-to-events-in-a-calendar-view-preview"></a>Inkrementelle Änderungen an Ereignissen in einer Kalenderansicht (Vorschau) abrufen
+# <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>Inkrementelle Änderungen an Ereignissen in einer Kalenderansicht abrufen 
 
 Eine Kalenderansicht ist eine Sammlung von Ereignissen in einen Datums-/Uhrzeitbereich aus dem Standardkalender (../me/calendarview) oder aus einem anderen Kalender des Benutzers. Durch Verwendung einer Delta-Abfrage können Sie neue, aktualisierte oder gelöschte Ereignisse in einer Kalenderansicht abrufen. Die zurückgegebenen Ereignisse können Vorkommen und Ausnahmen einer Serie und einzelne Instanzen enthalten. Mit Delta-Daten können Sie einen lokalen Speicher für Ereignisse eines Benutzers pflegen und synchronisieren, ohne dass Sie jedes Mal den gesamten Ereignissatz vom Server abrufen müssen.
 
@@ -8,7 +8,7 @@ Die Delta-Abfrage unterstützt die vollständige Synchronisierung, die alle Erei
 
 Delta-Abfragen für Ereignisse sind spezifisch für einen Kalender und Datums-/Uhrzeitbereich, den Sie angeben (d. h. eine Kalenderansicht). Um die Änderungen in mehreren Kalendern nachzuverfolgen, müssen Sie jeden Kalender einzeln verfolgen. 
 
-Das Nachverfolgen von Ereignisänderungen in einer Kalenderansicht ist in der Regel eine Runde aus einer oder mehreren GET-Anforderungen mit der [Delta](../api-reference/beta/api/event_delta.md)-Funktion. Die ursprüngliche GET-Anforderung wird ähnlich wie das [Auflisten einer Kalenderansicht](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/calendar_list_calendarview) durchgeführt, außer dass die folgende **delta**-Funktion eingeschlossen wird:
+Das Nachverfolgen von Ereignisänderungen in einer Kalenderansicht ist in der Regel eine Runde aus einer oder mehreren GET-Anforderungen mit der [Delta](../api-reference/v1.0/api/event_delta.md)-Funktion. Die ursprüngliche GET-Anforderung wird ähnlich wie das [Auflisten einer Kalenderansicht](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_calendarview) durchgeführt, außer dass die folgende **delta**-Funktion eingeschlossen wird:
 
 ```
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -63,7 +63,7 @@ Die erste Anforderung gibt Folgendes an:
   "name": "get_calendarview_delta_1"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -83,8 +83,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -153,7 +153,7 @@ Die zweite Anforderung gibt die aus der vorherigen Antwort zurückgegebene `next
   "name": "get_calendarview_delta_2"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -172,8 +172,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -244,7 +244,7 @@ Die dritte Anforderung verwendet weiterhin das neueste aus der letzten Synchroni
   "name": "get_calendarview_delta_3"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4 HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4 HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -264,8 +264,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -311,7 +311,7 @@ Mit dem `deltaLink` aus der [letzten Anforderung](#step-3-sample-third-request) 
   "name": "get_calendarview_delta_next"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -328,8 +328,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$deltatoken=R0usmcFuQtZdtpk4",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcFuQtZdtpk4",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -380,6 +380,6 @@ Content-type: application/json
 ## <a name="see-also"></a>Siehe auch
 
 - [Microsoft Graph-Delta-Abfrage](../Concepts/delta_query_overview.md)
-- [Inkrementelle Änderungen an Nachrichten abrufen (Vorschau)](../Concepts/delta_query_messages.md)
-- [Inkrementelle Änderungen an Gruppen abrufen (Vorschau)](../Concepts/delta_query_groups.md)
-- [Inkrementelle Änderungen an Benutzern abrufen (Vorschau)](../Concepts/delta_query_users.md)
+- [Inkrementelle Änderungen an Nachrichten abrufen](../Concepts/delta_query_messages.md)
+- [Inkrementelle Änderungen an Gruppen abrufen](../Concepts/delta_query_groups.md)
+- [Inkrementelle Änderungen an Benutzern abrufen](../Concepts/delta_query_users.md)

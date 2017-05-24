@@ -2,6 +2,9 @@
 
 Stellt eine Azure Active Directory-Gruppe dar, bei der es sich um eine Office 365-Gruppe, eine dynamische Gruppe oder eine Sicherheitsgruppe handeln kann. Erbt von [directoryObject](directoryobject.md).
 
+Diese Ressource unterstützt Folgendes:
+- Hinzufügen Ihrer eigenen Daten zu benutzerdefinierten Eigenschaften mithilfe von [Erweiterungen](../../../concepts/extensibility_overview.md).
+- Verwenden einer [Delta-Abfrage](../../../concepts/delta_query_overview.md) zum Nachverfolgen von inkrementellen Hinzufügungen, Löschungen und Aktualisierungen durch Bereitstellen der [delta](../api/user_delta.md)-Funktion.
 
 ## <a name="methods"></a>Methoden
 
@@ -39,6 +42,12 @@ Stellt eine Azure Active Directory-Gruppe dar, bei der es sich um eine Office 36
 |[subscribeByMail](../api/group_subscribebymail.md)|Keine|Legt die Eigenschaft „IsSubscribedByMail“ auf **true** fest. Aktiviert den aktuellen Benutzer für den Erhalt von E-Mail-Unterhaltungen. Wird nur für Office 365-Gruppen unterstützt.|
 |[unsubscribeByMail](../api/group_unsubscribebymail.md)|Keine|Legt die Eigenschaft „isSubscribedByMail“ auf **false** fest. Deaktiviert den aktuellen Benutzer für den Erhalt von E-Mail-Unterhaltungen. Wird nur für Office 365-Gruppen unterstützt.|
 |[resetUnseenCount](../api/group_resetunseencount.md)|Keine|Setzt das unseenCount-Element aller Beiträge, die der aktuelle Benutzer seit dem letzten Besuch noch nicht gesehen hat, auf 0 zurück. Wird nur für Office 365-Gruppen unterstützt.|
+|[delta](../api/group_delta.md)|group-Sammlung| Dient zum Abrufen inkrementeller Änderungen für Gruppen. |
+|**Offene Erweiterungen**| | |
+|[Offene Erweiterung erstellen](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Erstellt eine offene Erweiterung und fügt benutzerdefinierte Eigenschaften zu einer neuen oder vorhandenen Ressource hinzu.|
+|[Offene Erweiterung abrufen](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md)-Sammlung| Dient zum Abrufen einer offenen Erweiterung, die durch den Erweiterungsnamen identifiziert wird.|
+|**Schemaerweiterungen**| | |
+|[Schemaerweiterungswerte hinzufügen](../../../concepts/extensibility_schema_groups.md) || Dient zum Erstellen einer Schemaerweiterungsdefinition und anschließenden Verwenden der Definition zum Hinzufügen benutzerdefinierter typisierter Daten zu einer Ressource.|
 
 
 ## <a name="properties"></a>Eigenschaften
@@ -46,6 +55,7 @@ Stellt eine Azure Active Directory-Gruppe dar, bei der es sich um eine Office 36
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolescher Wert|Der Standardwert ist **false**. Gibt an, ob Personen außerhalb der Organisation Nachrichten an die Gruppe senden können.|
 |autoSubscribeNewMembers|Boolean|Der Standardwert ist **false**. Gibt an, ob neu zur Gruppe hinzugefügte Mitglieder automatisch E-Mail-Benachrichtigungen erhalten. Sie können diese Eigenschaft in einer PATCH-Anforderung für die Gruppe festlegen; legen Sie sie nicht in der anfänglichen POST-Anforderung fest, mit der die Gruppe erstellt wird.|
+|createdDateTime|DateTimeOffset| Das Datum und die Uhrzeit der Erstellung der Gruppe. |
 |description|String|Eine optionale Beschreibung für die Gruppe. |
 |displayName|String|Der Anzeigename der Gruppe. Diese Eigenschaft ist beim Erstellen einer Gruppe erforderlich und kann bei Updates nicht deaktiviert werden. Unterstützt $Filter und $orderby.|
 |groupTypes|String collection| Gibt den Typ der zu erstellenden Gruppe an. Mögliche Werte sind **Unified** zum Erstellen einer Office 365-Gruppe oder **DynamicMembership** für dynamische Gruppen.  Legen Sie für alle anderen Gruppentypen wie Gruppen mit aktivierter Sicherheit und E-Mail-fähige Sicherheitsgruppen diese Eigenschaft nicht fest. Unterstützt $filter.|
@@ -72,12 +82,15 @@ Stellt eine Azure Active Directory-Gruppe dar, bei der es sich um eine Office 36
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Der Benutzer (bzw. die Anwendung), der/die Gruppe erstellt hat. HINWEIS: Dies ist nicht festgelegt, wenn der Benutzer ein Administrator ist. Schreibgeschützt.|
 |Laufwerk|[Laufwerk](drive.md)|Das Laufwerk der Gruppe. Schreibgeschützt.|
 |events|[Ereignissammlung](event.md)|Die Kalenderereignisse der Gruppe.|
+|extensions|[extension](extension.md)-Sammlung|Die Sammlung der für die Gruppe definierten offenen Erweiterungen. Schreibgeschützt. Lässt Nullwerte zu.|
 |memberOf|[directoryObject](directoryobject.md)-Sammlung|Gruppen, bei denen diese Gruppe Mitglied ist. HTTP-Methoden: GET (unterstützt für alle Gruppen). Schreibgeschützt. Lässt NULL-Werte zu.|
 |Elemente|[directoryObject](directoryobject.md)-Sammlung| Benutzer und Gruppen, die Mitglieder dieser Gruppe sind. HTTP-Methoden: GET (unterstützt für alle Gruppen), POST (unterstützt für Office 365-Gruppen, Sicherheitsgruppen und E-Mail-fähige Sicherheitsgruppen), DELETE (unterstützt für Office 365-Gruppen und Sicherheitsgruppen), lässt NULL-Werte zu.|
+|onenote|[OneNote](onenote.md)| Schreibgeschützt.|
 |owners|[directoryObject](directoryobject.md)-Sammlung|Die Besitzer der Gruppe. Bei den Besitzern handelt es sich um eine Reihe von Benutzern, die keine Administratoren sind und die berechtigt sind, dieses Objekt zu ändern. Beschränkt auf 10 Besitzer. HTTP-Methoden: GET (unterstützt für alle Gruppen), POST (unterstützt für Office 365-Gruppen, Sicherheitsgruppen und E-Mail-fähige Sicherheitsgruppen), DELETE (unterstützt für Office 365-Gruppen und Sicherheitsgruppen). Lässt NULL-Werte zu.|
 |Foto|[profilePhoto](profilephoto.md)| Das Profilfoto der Gruppe. |
-|rejectedSenders|[directoryObject](directoryobject.md)-Sammlung|Die Liste der Benutzer oder Gruppen, die nicht berechtigt sind, Beiträge oder Kalenderereignisse in dieser Gruppe zu erstellen. Lässt NULL-Werte zu|
-|Threads|[conversationThread](conversationthread.md)-Sammlung| Die Unterhaltungs-Threads der Gruppe. Lässt NULL-Werte zu.|
+|rejectedSenders|[directoryObject](directoryobject.md)-Sammlung|Die Liste der Benutzer oder Gruppen, die nicht berechtigt sind, Beiträge oder Kalenderereignisse in dieser Gruppe zu erstellen. Lässt Nullwerte zu.|
+|sites|[site](site.md)-Sammlung|Die Liste der SharePoint-Websites in dieser Gruppe. Der Zugriff auf die Standardwebsite erfolgt mit „/sites/root“.
+|threads|[conversationThread](conversationthread.md)-Sammlung| Die Unterhaltungs-Threads der Gruppe. Lässt NULL-Werte zu.|
 
 
 ## <a name="json-representation"></a>JSON-Darstellung
@@ -95,8 +108,10 @@ Es folgt eine JSON-Darstellung der Ressource.
     "createdOnBehalfOf",
     "drive",
     "events",
+    "extensions",
     "memberOf",
     "members",
+    "onenote",
     "owners",
     "photo",
     "rejectedSenders",
@@ -110,6 +125,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 {
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
+  "createdDateTime": "String (timestamp)",
   "description": "string",
   "displayName": "string",
   "groupTypes": ["string"],
@@ -137,10 +153,17 @@ Es folgt eine JSON-Darstellung der Ressource.
   "owners": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
   "rejectedSenders": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "sites": [ { "@odata.type": "microsoft.graph.site" } ],
   "threads": [ { "@odata.type": "microsoft.graph.conversationThread" }]
 }
 
 ```
+
+## <a name="see-also"></a>Weitere Artikel
+
+- [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](../../../concepts/extensibility_overview.md)
+- [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](../../../concepts/extensibility_open_users.md)
+- [Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -3,6 +3,9 @@
 Dient zum Aktualisieren der Eigenschaften des nameditem-Objekts.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -37,7 +40,6 @@ Content-type: application/json
 Content-length: 87
 
 {
-  "name": "name-value",
   "type": "type-value",
   "scope": "scope-value",
   "comment": "comment-value",

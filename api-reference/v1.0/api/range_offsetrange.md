@@ -3,18 +3,21 @@
 Ruft ein Objekt ab, das einen Bereich darstellt, der aus dem angegebenen Bereich versetzt ist. Die Dimension des zurückgegebenen Bereichs entspricht diesem Bereich. Wenn der resultierende Bereich außerhalb des Arbeitsblatt-Rasters erzwungen wird, wird eine Ausnahme ausgelöst.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/OffsetRange
-POST /workbook/worksheets(<id|name>)/range(<address>)/OffsetRange
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/OffsetRange
+GET /workbook/names(<name>)/range/OffsetRange
+GET /workbook/worksheets/{id|name}/range(<address>)/OffsetRange
+GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -37,7 +40,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "range_offsetrange"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/OffsetRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/OffsetRange
 Content-type: application/json
 Content-length: 49
 

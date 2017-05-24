@@ -1,12 +1,12 @@
-# <a name="get-incremental-changes-for-users-preview"></a>Inkrementelle Änderungen für Benutzer abrufen (Vorschau)
+# <a name="get-incremental-changes-for-users"></a>Dient zum Abrufen inkrementeller Änderungen für Benutzer.
 
-Mit der [Delta-Abfrage](./delta_query_overview.md) können Sie Ergänzungen, Löschungen oder Aktualisierungen an Benutzern anhand einer Serie von [Delta](../api-reference/beta/api/user_delta.md)-Funktionsaufrufen abfragen. Mit der Delta-Abfrage können Sie Änderungen an Benutzern ermitteln, ohne den gesamten Satz von Benutzern von Microsoft Graph abrufen und Änderungen vergleichen zu müssen.
+Mit der [Delta-Abfrage](./delta_query_overview.md) können Sie Ergänzungen, Löschungen oder Aktualisierungen an Benutzern anhand einer Serie von [Delta](../api-reference/v1.0/api/user_delta.md)-Funktionsaufrufen abfragen. Mit der Delta-Abfrage können Sie Änderungen an Benutzern ermitteln, ohne den gesamten Satz von Benutzern von Microsoft Graph abrufen und Änderungen vergleichen zu müssen.
 
-Die Delta-Abfrage unterstützt die vollständige Synchronisierung, die alle Benutzer in einem Mandanten abruft, und die inkrementelle Synchronisierung, die nur die Benutzer abruft, die seit der letzten Synchronisierung geändert wurden. In der Regel führen Sie zunächst eine vollständige Synchronisierung aller Benutzer in einem Mandanten durch und rufen anschließend regelmäßig inkrementelle Änderungen an Benutzern ab. 
+Clients, die Benutzer mit einem lokalen Profilspeicher synchronisieren, können Delta Abfragen für die anfängliche vollständige Synchronisierung und für inkrementelle Synchronisierungen in der Zukunft verwenden. In der Regel führt ein Client eine anfängliche vollständige Synchronisierung aller Benutzer in einem Mandanten durch und ruft anschließend regelmäßig inkrementelle Änderungen an Benutzern ab.
 
 ## <a name="tracking-user-changes"></a>Nachverfolgen von Benutzeränderungen
 
-Das Nachverfolgen von Benutzeränderungen ist eine Runde aus einer oder mehreren GET-Anforderungen mit der **Delta**-Funktion. Eine GET-Anforderung wird ähnlich wie das [Auflisten von Benutzern](../api-reference/beta/api/user_list.md) durchgeführt, außer dass Folgendes eingeschlossen wird:
+Das Nachverfolgen von Benutzeränderungen ist eine Runde aus einer oder mehreren GET-Anforderungen mit der **Delta**-Funktion. Eine GET-Anforderung wird ähnlich wie das [Auflisten von Benutzern](../api-reference/v1.0/api/user_list.md) durchgeführt, außer dass Folgendes eingeschlossen wird:
 
 - Die **Delta**-Funktion.
 - Ein [Statustoken](./delta_query_overview.md) (_deltaToken_ oder _skipToken_) aus dem vorherigen GET-**Delta**-Funktionsaufruf.
@@ -22,7 +22,7 @@ Das folgende Beispiel zeigt eine Serienanforderung zum Nachverfolgen von Änderu
 
 ## <a name="initial-request"></a>Ursprüngliche Anforderung
 
-Um Änderungen an der Benutzerressource nachzuverfolgen, nehmen Sie zunächst eine Anforderung einschließlich der Delta-Funktion für die Benutzerressource vor. 
+Um Änderungen an der Benutzerressource nachzuverfolgen, nehmen Sie zunächst eine Anforderung einschließlich der Delta-Funktion für die Benutzerressource vor.
 
 Beachten Sie Folgendes:
 
@@ -30,12 +30,12 @@ Beachten Sie Folgendes:
 - Die ursprüngliche Anforderung enthält kein Statustoken. Statustoken werden in nachfolgenden Anforderungen verwendet.
 
 ``` http
-GET https://graph.microsoft.com/beta/users/delta?$select=displayName,givenName,surname
+GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,surname
 ```
 
-### <a name="initial-response"></a>Ursprüngliche Antwort
+## <a name="initial-response"></a>Ursprüngliche Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das Sammlungsobjekt [user](../api-reference/beta/resources/user.md) im Antworttext zurückgegeben. Wenn der ganze Satz von Benutzern zu groß ist, enthält die Antwort zudem ein nextLink-Statustoken.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das Sammlungsobjekt [user](../api-reference/v1.0/resources/user.md) im Antworttext zurückgegeben. Wenn der ganze Satz von Benutzern zu groß ist, enthält die Antwort zudem ein nextLink-Statustoken.
 
 In diesem Beispiel wird eine nextLink-URL zurückgegeben, die angibt, dass es zusätzliche Seiten mit Daten gibt, die in der Sitzung abgerufen werden müssen. Der Abfrageparameter „$select“ aus der ursprünglichen Anforderung wird in der nextLink-URL codiert.
 
@@ -44,8 +44,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users(displayName,givenName,surname)",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users(displayName,givenName,surname)",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa",
   "value": [
     {
       "displayName":"Testuser1",
@@ -68,7 +68,7 @@ Content-type: application/json
 Die zweite Anforderung gibt das aus der vorherigen Antwort zurückgegebene `skipToken` an. Beachten Sie, dass der Parameter `$select` nicht erforderlich ist, da das `skipToken` ihn codiert und einschließt.
 
 ``` http
-GET https://graph.microsoft.com/beta/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa
+GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa
 ```
 
 ## <a name="nextlink-response"></a>nextLink-Antwort
@@ -80,8 +80,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7",
   "value": [
     {
       "displayName":"Testuser3",
@@ -104,7 +104,7 @@ Content-type: application/json
 Die dritte Anforderung verwendet weiterhin das neueste aus der letzten Synchronisierungsanforderung zurückgegebene `skipToken`. 
 
 ``` http
-GET https://graph.microsoft.com/beta/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhaOYDE2VPA4vxIPA90-P6OzGd6Rvku5fDgBRIGS
+GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhaOYDE2VPA4vxIPA90-P6OzGd6Rvku5fDgBRIGS
 ```
 
 ## <a name="final-nextlink-response"></a>Letzte nextLink-Antwort
@@ -116,8 +116,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
   "value": [
     {
       "displayName":"Testuser5",
@@ -140,7 +140,7 @@ Content-type: application/json
 Mit dem `deltaToken` aus der [letzten Antwort](#final-nextlink-response) können Sie seit der letzten Anforderung geänderte (hinzugefügte, gelöschte oder aktualisierte) Benutzer abrufen.
 
 ``` http
-GET https://graph.microsoft.com/beta/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460
+GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460
 ```
 
 ## <a name="deltalink-response"></a>deltaLink-Antwort
@@ -152,8 +152,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
   "value": []
 }
 ```
@@ -165,8 +165,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
   "value": [
     {
       "displayName":"Testuser7",
@@ -175,9 +175,12 @@ Content-type: application/json
       "id":"25dcffff-959e-4ece-9973-e5d9b800e8cc"
     },
     {
-      "removed":"changed",
-      "id":"8ffff70c-1c63-4860-b963-e34ec660931d"
+      "id":"8ffff70c-1c63-4860-b963-e34ec660931d",
+      "@removed": {
+         "reason": "changed"
+      }
     }
+  ]
 }
 ```
 ## <a name="see-also"></a>Siehe auch

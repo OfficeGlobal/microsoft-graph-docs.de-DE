@@ -3,15 +3,18 @@
 Dient zum Aktualisieren der Eigenschaften des Diagrammobjekts.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)
+PATCH /workbook/worksheets/{id|name}/charts(<name>)
 ```
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -35,12 +38,11 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "update_chart"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)
 Content-type: application/json
 Content-length: 52
 
 {
-  "id": "id-value",
   "height": 99,
   "left": 99
 }

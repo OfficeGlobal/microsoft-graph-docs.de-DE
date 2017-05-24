@@ -3,17 +3,20 @@
 Dient zum Aktualisieren der Eigenschaften des formatprotection-Objekts.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names(<name>)/range/format/protection
-PATCH /workbook/worksheets(<id|name>)/range(<address>)/format/protection
-PATCH /workbook/tables(<id|name>)/columns(<id|name>)/range/format/protection
+PATCH /workbook/worksheets/{id|name}/range(<address>)/format/protection
+PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ```
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext

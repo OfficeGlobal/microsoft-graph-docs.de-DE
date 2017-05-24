@@ -3,18 +3,21 @@
 Gibt den verwendeten Bereich des angegebenen Bereichsobjekts zurück.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/UsedRange
-POST /workbook/worksheets(<id|name>)/range(<address>)/UsedRange
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/UsedRange
+GET /workbook/names(<name>)/range/UsedRange
+GET /workbook/worksheets/{id|name}/range(<address>)/UsedRange
+GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -36,7 +39,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "range_usedrange"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/UsedRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/UsedRange
 Content-type: application/json
 Content-length: 24
 

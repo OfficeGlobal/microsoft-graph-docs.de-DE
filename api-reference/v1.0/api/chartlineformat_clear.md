@@ -3,18 +3,21 @@
 Dient zum Löschen der Linienformatierung eines Diagrammelements.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/format/line/clear
-POST /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis/format/line/clear
-POST /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/majorgridlines/format/line/clear
+POST /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line/clear
+POST /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/line/clear
+POST /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines/format/line/clear
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -31,7 +34,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "chartlineformat_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/format/line/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line/clear
 ```
 
 ##### <a name="response"></a>Antwort

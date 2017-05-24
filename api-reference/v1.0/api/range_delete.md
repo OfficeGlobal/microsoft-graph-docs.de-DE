@@ -3,18 +3,21 @@
 Löscht die einem Bereich zugeordneten Zellen.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/delete
-POST /workbook/worksheets(<id|name>)/range(<address>)/delete
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/delete
+POST /workbook/worksheets/{id|name}/range(<address>)/delete
+POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext

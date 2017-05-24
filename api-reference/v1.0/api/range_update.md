@@ -3,17 +3,20 @@
 Dient zum Aktualisieren der Eigenschaften des Bereichsobjekts.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names(<name>)/range
-PATCH /workbook/worksheets(<id|name>)/range(address=<range-address>)
-PATCH /workbook/tables(<id|name>)/columns(<id|name>)/range
+PATCH /workbook/worksheets/{id|name}/range(address=<range-address>)
+PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 ```
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext

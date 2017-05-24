@@ -3,12 +3,15 @@
 Dient zum Abrufen der Eigenschaften und der Beziehungen des Diagramm-ChartGridlines-Objekts.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/minorgridlines
-GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/majorgridlines
-GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/majorgridlines
+GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
+GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/majorgridlines
+GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
@@ -16,7 +19,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -31,7 +34,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "get_chartgridlines"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/minorgridlines
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
 ```
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.

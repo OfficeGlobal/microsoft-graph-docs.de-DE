@@ -3,17 +3,20 @@
 Dient zum Aktualisieren der Eigenschaften des ChartGridlines-Objekts.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/minorgridlines
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/majorgridlines
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/majorgridlines
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/majorgridlines
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
 ```
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -33,7 +36,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "update_chartgridlines"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/minorgridlines
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
 Content-type: application/json
 Content-length: 21
 

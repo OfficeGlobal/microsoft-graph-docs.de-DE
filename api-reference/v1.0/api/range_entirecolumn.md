@@ -3,18 +3,21 @@
 Ruft ein Objekt ab, das die gesamte Spalte des Bereichs darstellt.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/EntireColumn
-POST /workbook/worksheets(<id|name>)/range(<address>)/EntireColumn
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/EntireColumn
+GET /workbook/names(<name>)/range/EntireColumn
+GET /workbook/worksheets/{id|name}/range(<address>)/EntireColumn
+GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireColumn
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -31,7 +34,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "range_entirecolumn"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/EntireColumn
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/EntireColumn
 ```
 
 ##### <a name="response"></a>Antwort

@@ -2,6 +2,9 @@
 
 Stellt ein Gerät dar, das in der Organisation registriert ist. Geräte können auch mithilfe des Geräteregistrierungsdiensts oder von Intune in der Cloud erstellt werden. Sie werden von Richtlinien für bedingten Zugriff für mehrstufige Authentifizierung verwendet. Diese Geräte können Desktopcomputer, Laptops sowie Mobiltelefone und Tablets umfassen. Erbt von [directoryObject](directoryobject.md).
 
+Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe von [Erweiterungen](../../../concepts/extensibility_overview.md) eigene Daten hinzuzufügen.
+
+
 ## <a name="methods"></a>Methoden
 
 | Methode       | Rückgabetyp  |Beschreibung|
@@ -15,6 +18,11 @@ Stellt ein Gerät dar, das in der Organisation registriert ist. Geräte können 
 |[List registeredOwners](../api/device_list_registeredowners.md) |[directoryObject](directoryobject.md)-Sammlung| Dient zum Abrufen der Benutzer, die registrierte Besitzer des Geräts in der registeredOwners-Navigationseigenschaft sind.|
 |[Create registeredUser](../api/device_post_registeredusers.md) |[directoryObject](directoryobject.md)| Dient zum Hinzufügen eines registrierten Benutzers für das Gerät durch die Veröffentlichung für die registeredUsers-Navigationseigenschaft.|
 |[List registeredUsers](../api/device_list_registeredusers.md) |[directoryObject](directoryobject.md)-Sammlung| Dient zum Abrufen registrierter Benutzer des Geräts aus der registeredUsers-Navigationseigenschaft.|
+|**Offene Erweiterungen**| | |
+|[Offene Erweiterung erstellen](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Erstellt eine offene Erweiterung und fügt benutzerdefinierte Eigenschaften zu einer neuen oder vorhandenen Ressource hinzu.|
+|[Offene Erweiterung abrufen](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md)-Sammlung| Dient zum Abrufen einer offenen Erweiterung, die durch den Erweiterungsnamen identifiziert wird.|
+|**Schemaerweiterungen**| | |
+|[Schemaerweiterungswerte hinzufügen](../../../concepts/extensibility_schema_groups.md) || Dient zum Erstellen einer Schemaerweiterungsdefinition und anschließenden Verwenden der Definition zum Hinzufügen benutzerdefinierter typisierter Daten zu einer Ressource.|
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft       | Typ    |Beschreibung|
@@ -39,6 +47,7 @@ Stellt ein Gerät dar, das in der Organisation registriert ist. Geräte können 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
+|Erweiterungen|[extension](extension.md)-Sammlung|Die Sammlung der für das Gerät definierten offenen Erweiterungen. Schreibgeschützt. Lässt Nullwerte zu.|
 |registeredOwners|[directoryObject](directoryobject.md)-Sammlung|Benutzer, die registrierte Besitzer des Geräts sind. Schreibgeschützt. Lässt Nullwerte zu.|
 |registeredUsers|[directoryObject](directoryobject.md)-Sammlung|Benutzer, die registrierte Benutzer des Geräts sind. Schreibgeschützt. Lässt Nullwerte zu.|
 
@@ -51,6 +60,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "extensions",
     "registeredOwners",
     "registeredUsers"
   ],
@@ -79,6 +89,12 @@ Es folgt eine JSON-Darstellung der Ressource.
 }
 
 ```
+
+## <a name="see-also"></a>Weitere Artikel
+
+- [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](../../../concepts/extensibility_overview.md)
+- [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](../../../concepts/extensibility_open_users.md)
+- [Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
