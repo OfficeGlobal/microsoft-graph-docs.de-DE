@@ -3,15 +3,18 @@
 Dient zum Aktualisieren der Eigenschaften des Arbeitsblattobjekts.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets(<id|name>)
+PATCH /workbook/worksheets/{id|name}
 ```
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -33,12 +36,11 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "update_worksheet"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}
 Content-type: application/json
 Content-length: 100
 
 {
-  "id": "id-value",
   "position": 99,
   "name": "name-value",
   "visibility": "visibility-value"

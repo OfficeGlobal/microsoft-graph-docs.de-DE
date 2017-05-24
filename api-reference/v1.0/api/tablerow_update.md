@@ -3,16 +3,19 @@
 Dient zum Aktualisieren der Eigenschaften des tablerow-Objekts.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables(<id|name>)/rows(<index>)
-PATCH /workbook/worksheets(<id|name>)/tables(<id|name>)/rows(<index>)
+PATCH /workbook/tables/{id|name}/rows(<index>)
+PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)
 ```
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -32,7 +35,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "update_tablerow"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/rows(<index>)
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows(<index>)
 Content-type: application/json
 Content-length: 45
 

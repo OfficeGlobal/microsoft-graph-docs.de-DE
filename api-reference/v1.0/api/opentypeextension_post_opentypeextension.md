@@ -8,9 +8,12 @@ Zur Ausführung dieser API ist eine der folgenden **Berechtigungen** erforderlic
 
 |**Unterstützte Ressource**|**Berechtigung**|**Unterstützte Ressource**|**Berechtigung** |
 |:-----|:-----|:-----|:-----|
-| [event](../resources/event.md) | _Calendars.ReadWrite_ | [group event](../resources/event.md) | _Calendars.ReadWrite_ | 
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ | 
-| [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
+| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
+| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ |
+| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
+
 
  
 ## <a name="http-request"></a>HTTP-Anforderung
@@ -21,11 +24,11 @@ Verwenden Sie die gleiche REST-Anforderung wie zum Erstellen der Instanz.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{id|userPrincipalName}/contacts
 POST /users/{id|userPrincipalName}/events
 POST /users/{id|userPrincipalName}/messages
 POST /groups/{id}/events
 POST /groups/{id}/threads/{id}/posts/{id}/reply
+POST /users/{id|userPrincipalName}/contacts
 ```
 
 >**Hinweis:** Die obige Syntax zeigt mehrere häufig verwendete Möglichkeiten zum Erstellen der unterstützten Ressourceninstanzen. Alle anderen POST-Syntaxen, mit denen Sie diese Ressourceninstanzen erstellen können, unterstützen das Erstellen offener Erweiterungen darin in einer ähnlichen Weise.
@@ -38,11 +41,15 @@ Geben Sie die Ressourceninstanz in der Anforderung an, und wenden Sie den Befehl
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{id|userPrincipalName}/contacts/{id}/extensions
+POST /devices/{id}/extensions
 POST /users/{id|userPrincipalName}/events/{id}/extensions
-POST /users/{id|userPrincipalName}/messages/{id}/extensions
+POST /groups/{id}/extensions
 POST /groups/{id}/events/{id}/extensions
 POST /groups/{id}/threads/{id}/posts/{id}/extensions
+POST /users/{id|userPrincipalName}/messages/{id}/extensions
+POST /organization/{id}/extensions
+POST /users/{id|userPrincipalName}/contacts/{id}/extensions
+POST /users/{id|userPrincipalName}/extensions
 ```
 
 >**Hinweis:** Die obige Syntax zeigt mehrere häufig verwendete Möglichkeiten zum Identifizieren einer Ressourceninstanz, um eine Erweiterung darin zu erstellen. Alle anderen Syntaxen, mit denen Sie diese Ressourceninstanzen identifizieren können, unterstützen das Erstellen offener Erweiterungen darin in einer ähnlichen Weise.

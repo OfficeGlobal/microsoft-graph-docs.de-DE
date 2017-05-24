@@ -3,16 +3,19 @@
 Dient zum Aktualisieren der Eigenschaften des Symbolobjekts.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables(<id|name>)/sort/fields/icon
-PATCH /workbook/worksheets(<id|name>)/tables(<id|name>)/sort/fields/icon
+PATCH /workbook/tables/{id|name}/sort/fields/icon
+PATCH /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 ```
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -33,7 +36,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "update_icon"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/sort/fields/icon
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/sort/fields/icon
 Content-type: application/json
 Content-length: 39
 

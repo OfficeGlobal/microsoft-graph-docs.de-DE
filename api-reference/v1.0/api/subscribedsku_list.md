@@ -15,7 +15,7 @@ Die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/ove
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearertoken. Erforderlich. |
+| Authorization  | string  | Bearer &lt;token&gt;. *Erforderlich* |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

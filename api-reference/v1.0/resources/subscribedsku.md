@@ -2,27 +2,25 @@
 
 Enthält Informationen zu einer Dienst-SKU, die ein Unternehmen abonniert hat.
 
-Für abonnierte SKUs wird nur der Lesevorgang unterstützt. Erstellen, Aktualisieren und Löschen werden nicht unterstützt. Abfragefilterausdrücke werden nicht unterstützt.
-
-Erbt von [directoryObject](directoryobject.md).
-
+Für abonnierte SKUs wird nur der Lesevorgang unterstützt. Erstellen, Aktualisieren und Löschen werden nicht unterstützt. Abfragefilterausdrücke werden nicht unterstützt. Erbt von [directoryObject](directoryobject.md).
 
 ## <a name="methods"></a>Methoden
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[subscribedSku abrufen](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |Liest die Eigenschaften des subscribedSku-Objekts.|
+|[subscribedSku abrufen](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |Dient zum Lesen der Eigenschaften und Beziehungen des subscribedSku-Objekts.|
+|[subscribedSku auflisten](../api/subscribedsku_list.md) | [subscribedSku](subscribedsku.md)-Sammlung |Dienst zum Abrufen der Liste aller kommerziellen Abonnements, die eine Organisation erworben hat.|
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft       | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
-|capabilityStatus|String|Z. B. „Enabled“ (Aktiviert), „LockedOut“ (Gesperrt) und „Suspended“ (Angehalten).|
-|consumedUnits|Int32|Die Anzahl der Lizenzen, die zugewiesen wurden.|
-|id|String|Die eindeutige ID für das subscribedSku-Objekt. Schlüssel. Schreibgeschützt.|
-|prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)|Informationen über die Anzahl und den Status der Prepaidlizenzen.|
-|servicePlans|[servicePlanInfo](serviceplaninfo.md)-Auflistung|Informationen über die Servicepläne, die mit der SKU verfügbar sind.|
-|skuId|Guid|Der eindeutige Bezeichner (GUID) für die Dienst-SKU.|
-|skuPartNumber|Zeichenfolge|Die SKU-Teilenummer, z. B.: „AAD_PREMIUM“ oder „RMSBASIC“.|
-|appliesTo|String|Beispiel: „Benutzer“ oder „Community“.|
+|appliesTo|String| Beispiel: „Benutzer“ oder „Community“. |
+|capabilityStatus|String| Beispiel: „Aktiviert“. |
+|consumedUnits|Int32| Die Anzahl der Lizenzen, die zugewiesen wurden. |
+|id|String| Der eindeutige Bezeichner für das subscribedSku-Objekt. Schlüssel, lässt keine Nullwerte zu. |
+|prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Informationen über die Anzahl und den Status der Prepaidlizenzen. |
+|servicePlans|[servicePlanInfo](serviceplaninfo.md)-Auflistung| Informationen über die Servicepläne, die mit der SKU verfügbar sind. Lässt keine Nullwerte zu. |
+|skuId|Guid| Der eindeutige Bezeichner (GUID) für die Dienst-SKU. |
+|skuPartNumber|String| Die SKU-Teilenummer, z. B.: „AAD_PREMIUM“ oder „RMSBASIC“. |
 
 ## <a name="relationships"></a>Beziehungen
 Keine

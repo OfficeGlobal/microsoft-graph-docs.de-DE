@@ -3,18 +3,21 @@
 Ruft das Bereichsobjekt ab, das die rechteckige Schnittmenge der angegebenen Bereiche darstellt.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/Intersection
-POST /workbook/worksheets(<id|name>)/range(<address>)/Intersection
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Intersection
+GET /workbook/names(<name>)/range/Intersection
+GET /workbook/worksheets/{id|name}/range(<address>)/Intersection
+GET /workbook/tables/{id|name}/columns/{id|name}/range/Intersection
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -36,7 +39,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "range_intersection"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Intersection
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Intersection
 Content-type: application/json
 Content-length: 42
 

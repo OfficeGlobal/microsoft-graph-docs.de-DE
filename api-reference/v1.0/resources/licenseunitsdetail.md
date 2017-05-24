@@ -4,12 +4,10 @@ Die **prepaidUnits**-Eigenschaft der [subscribedSku](subscribedsku.md)-Entität 
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft       | Typ    |Beschreibung|
-|:---------------|:--------|:----------|
-|aktiviert|Int32|            |
-|suspended|Int32|            |
-|warning|Int32|            |
-
-
+|:-------------|:-----|:----------|
+|aktiviert|Int32| Die Anzahl der Einheiten, die aktiviert werden. |
+|suspended|Int32| Die Anzahl der Einheiten, die angehalten werden. |
+|warning|Int32| Die Anzahl der Einheiten, für die eine Warnung vorliegt. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

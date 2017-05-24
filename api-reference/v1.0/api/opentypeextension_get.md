@@ -6,9 +6,9 @@ In der folgenden Tabelle sind die drei Szenarien für den Abruf einer offenen Er
 
 |**GET-Szenario**|**Unterstützte Ressourcen**|**Antworttext**|
 |:-----|:-----|:-----|
-|Abrufen einer spezifischen Erweiterung aus einer bekannten Ressourceninstanz| [contact](../resources/contact.md), [event](../resources/event.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md) | Nur die Datenerweiterung|
-|Abrufen einer bekannten Ressourceninstanz, erweitert um eine spezifische Erweiterung|contact, event, group event, message|Eine um die offene Erweiterung erweiterte Ressourceninstanz|
-|Suchen und Erweitern von Ressourceninstanzen mit einer spezifischen Erweiterung |contact, event, group event, message|Eine um die offene Erweiterung erweiterte Ressourceninstanz|
+|Abrufen einer bestimmen Erweiterung aus einer bekannten Ressourceninstanz| [Device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md) | Nur offene Erweiterung|
+|Abrufen einer bekannten Ressourceninstanz, erweitert um eine bestimmte Erweiterung|Device, event, group, group event, group post, message, organization, personal contact, user |Eine um die offene Erweiterung erweiterte Ressourceninstanz|
+|Suchen und Erweitern von Ressourceninstanzen mit einer bestimmten Erweiterung |Event, group event, group post, message, personal contact|Um die offene Erweiterung erweiterte Ressourceninstanzen|
 
 
 ## <a name="prerequisites"></a>Voraussetzungen
@@ -17,10 +17,14 @@ Zur Ausführung dieser API ist eine der folgenden **Berechtigungen** erforderlic
 
 |**Unterstützte Ressource**|**Berechtigung**|**Unterstützte Ressource**|**Berechtigung** |
 |:-----|:-----|:-----|:-----|
-| [event](../resources/event.md) | _Calendars.Read_ | [group event](../resources/event.md) | _Calendars.Read_ | 
-| [post](../resources/post.md)-Ressourcen für Gruppen | _Group.Read.All_ | [message](../resources/message.md) | _Mail.Read_ | 
-| [Privater Kontakt](../resources/contact.md) | _Contacts.Read_ |
- 
+| [Device](../resources/device.md) | _Directory.Read.All_ | [Event](../resources/event.md) | _Calendars.Read_ | 
+| [Group](../resources/group.md) | _Group.Read.All_ | [Group event](../resources/event.md) | _Group.Read.All_ | 
+| [Group post](../resources/post.md) | _Group.Read.All_ | [Message](../resources/message.md) | _Mail.Read_ | 
+| [Organization](../resources/organization.md) | _Directory.Read.All_ | [Personal contact](../resources/contact.md) | _Contacts.Read_ |
+| [User](../resources/user.md) | _User.Read.All_ | | |
+
+
+
 ## <a name="http-request"></a>HTTP-Anforderung
 
 In diesem Abschnitt finden Sie die Syntax für jedes der drei oben beschriebenen `GET`-Szenarien.
@@ -31,36 +35,53 @@ Verwenden Sie die gleiche REST-Anforderung wie zum Abrufen der Ressourceninstanz
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
+GET /devices/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/events/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
+GET /groups/{Id}/extensions/{extensionId}
 GET /groups/{Id}/events/{Id}/extensions/{extensionId}
 GET /groups/{Id}/threads/{Id}/posts/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
+GET /organization/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/extensions/{extensionId}
 ```
 
 
-### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>Abrufen einer bekannten Ressourceninstanz, erweitert um eine spezifische Erweiterung 
+### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>Abrufen einer bekannten Ressourceninstanz, erweitert um eine übereinstimmende Erweiterung 
 
-Verwenden Sie die gleiche REST-Anforderung wie zum Abrufen der Ressourceninstanz. Suchen Sie zusätzlich per Filter nach einer Erweiterung mit dem gewünschten Wert in der Eigenschaft **id**, und erweitern Sie die Ressourceninstanz um diese Erweiterung.
+Für die Ressourcentypen „event“, „group event“, „group post“, „message“ und „personal contact“ können Sie die gleiche REST-Anforderung wie zum Abrufen der Ressourceninstanz verwenden. Suchen Sie zusätzlich per Filter nach einer Erweiterung mit dem gewünschten Wert in der Eigenschaft **id**, und erweitern Sie die Instanz mit der Erweiterung. Die Antwort enthält die meisten der Ressourceneigenschaften.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 ```
 
-### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a>Filtern nach Ressourceninstanzen mit einer spezifischen Erweiterung 
+
+Für die Ressourcentypen „device“, „group“, „organization“ und „user“ müssen Sie auch einen `$select`-Parameter verwenden, um die Eigenschaft **Id** und alle anderen gewünschten Eigenschaften aus der Ressourceninstanz einzuschließen:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /devices/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /groups/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /organization/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+```
+
+### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a>Filtern nach Ressourceninstanzen, erweitert mit einer übereinstimmenden Erweiterung 
 
 Verwenden Sie die gleiche REST-Anforderung wie zum Abrufen einer Sammlung der unterstützten Ressource. Filtern Sie die Sammlung nach Instanzen mit einer Erweiterung, die den gewünschten Wert in der Eigenschaft **id** aufweist, und erweitern Sie die betreffenden Instanzen um diese Erweiterung.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /groups/{Id}/threads/{Id}/posts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
 >**Hinweis:** Die obige Syntax zeigt mehrere häufig verwendete Möglichkeiten zum Identifizieren einer Ressourceninstanz oder -sammlung, um eine Erweiterung daraus zu löschen. Alle anderen Syntaxen, mit denen Sie diese Ressourceninstanzen oder -sammlungen identifizieren können, unterstützen das Löschen offener Erweiterungen daraus in einer ähnlichen Weise.

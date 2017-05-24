@@ -3,18 +3,21 @@
 Ruft das kleinste Bereichsobjekt ab, das die angegebenen Bereiche umfasst. Beispielsweise das GetBoundingRect von "B2:C5" und "D10:E15" lautet "B2:E16".
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/BoundingRect
-POST /workbook/worksheets(<id|name>)/range(<address>)/BoundingRect
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/BoundingRect
+GET /workbook/names(<name>)/range/BoundingRect
+GET /workbook/worksheets/{id|name}/range(<address>)/BoundingRect
+GET /workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -36,7 +39,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "range_boundingrect"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/BoundingRect
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/BoundingRect
 Content-type: application/json
 Content-length: 42
 

@@ -3,17 +3,20 @@
 Löscht die Zeile aus der Tabelle.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/rows(<index>)/delete
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/rows(<index>)/delete
+POST /workbook/tables/{id|name}/rows(<index>)/delete
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)/delete
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -30,7 +33,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "tablerow_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/rows(<index>)/delete
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows(<index>)/delete
 ```
 
 ##### <a name="response"></a>Antwort
