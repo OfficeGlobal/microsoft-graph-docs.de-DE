@@ -43,7 +43,7 @@ Diese Ressource unterstützt Folgendes:
 |:---------------|:--------|:----------|
 |attendees|[attendee](attendee.md) collection|Die Sammlung der Teilnehmer des Ereignisses|
 |body|[itemBody](itembody.md)|Der Text der Nachricht, die dem Ereignis zugeordnet ist. Er kann im HTML- oder Textformat vorliegen.|
-|bodyPreview|Zeichenfolge|Die Vorschau der Nachricht, die dem Ereignis zugeordnet ist. Liegt im Textformat vor.|
+|bodyPreview|String|Die Vorschau der Nachricht, die dem Ereignis zugeordnet ist. Liegt im Textformat vor.|
 |categories|String collection|Die Kategorien, die dem Ereignis zugeordnet sind|
 |changeKey|String|Gibt die Version des Ereignisobjekts an. Jedes Mal, wenn das Ereignis geändert wird, wird auch die Eigenschaft „changeKey“ geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
 |createdDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
@@ -60,9 +60,9 @@ Diese Ressource unterstützt Folgendes:
 |location|[location](location.md)|Der Ort, an dem das Ereignis stattfindet|
 |onlineMeetingUrl|String|Eine URL für eine Onlinebesprechung|
 |organizer|[recipient](recipient.md)|Der Organisator des Ereignisses|
-|originalEndTimeZone|Zeichenfolge|Die Zeitzone, die bei der Erstellung des Ereignisses für das Ereignisende festgelegt wurde. Der Wert `tzone://Microsoft/Custom` gibt an, dass eine ältere benutzerdefinierte Zeitzone in Outlook Desktop festgelegt wurde.|
+|originalEndTimeZone|String|Die Zeitzone, die bei der Erstellung des Ereignisses für das Ereignisende festgelegt wurde. Der Wert `tzone://Microsoft/Custom` gibt an, dass eine ältere benutzerdefinierte Zeitzone in Outlook Desktop festgelegt wurde.|
 |originalStart|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|originalStartTimeZone|Zeichenfolge|Die Zeitzone, die bei der Erstellung des Ereignisses für den Ereignisbeginn festgelegt wurde. Der Wert `tzone://Microsoft/Custom` gibt an, dass eine ältere benutzerdefinierte Zeitzone in Outlook Desktop festgelegt wurde. |
+|originalStartTimeZone|String|Die Zeitzone, die bei der Erstellung des Ereignisses für den Ereignisbeginn festgelegt wurde. Der Wert `tzone://Microsoft/Custom` gibt an, dass eine ältere benutzerdefinierte Zeitzone in Outlook Desktop festgelegt wurde. |
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|Das Serienmuster für das Ereignis.|
 |reminderMinutesBeforeStart|Int32|Festlegung, wie viele Minuten vor Beginn des Ereignisses die Erinnerung angezeigt werden soll|
 |responseRequested|Boolean|„true“, wenn der Absender eine Antwort erhalten soll, sobald das Ereignis angenommen oder abgelehnt wird|

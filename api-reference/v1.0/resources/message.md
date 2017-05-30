@@ -46,7 +46,7 @@ Diese Ressource unterstützt Folgendes:
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|Die Bcc:-Empfänger der Nachricht.|
 |body|[itemBody](itembody.md)|Der Text der Nachricht. Er kann im HTML- oder Textformat vorliegen.|
-|bodyPreview|Zeichenfolge|Die ersten 255 Zeichen des Nachrichtentexts. Liegt im Textformat vor.|
+|bodyPreview|String|Die ersten 255 Zeichen des Nachrichtentexts. Liegt im Textformat vor.|
 |categories|String collection|Die Kategorien, die mit der Nachricht verknüpft sind.|
 |ccRecipients|[recipient](recipient.md) collection|Die Cc:-Empfänger der Nachricht.|
 |changeKey|String|Die Version der Nachricht.|

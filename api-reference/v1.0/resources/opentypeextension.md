@@ -47,7 +47,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft       | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
-|extensionName|Zeichenfolge|Ein eindeutiger Textbezeichner für eine offene Erweiterung. Erforderlich.|
+|extensionName|String|Ein eindeutiger Textbezeichner für eine offene Erweiterung. Erforderlich.|
 |id|String| Eine vollqualifizierte ID, die den Erweiterungstyp mit dem **extensionName**-Element verkettet. Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen

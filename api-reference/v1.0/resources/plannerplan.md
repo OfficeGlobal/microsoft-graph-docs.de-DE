@@ -19,7 +19,7 @@ Die **plannerPlan**-Ressource stellt einen Plan in Office 365 dar. Ein Plan kann
 |createdDateTime|DateTimeOffset|Schreibgeschützt. Datum und Uhrzeit der Erstellung des Plans. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |id|String| Schreibgeschützt. ID des Plans. Sie ist 28 Zeichen lang, und es wird zwischen Groß-und Kleinschreibung unterschieden. Für den Dienst wird eine [Formatüberprüfung](planner_identifiers_disclaimer.md) durchgeführt.|
 |owner|String|ID der [Gruppe](group.md), die den Plan besitzt. Dieses Feld kann erst festgelegt werden, wenn eine gültige Gruppe vorhanden ist. Nachdem dieses festgelegt wurde, kann es nur noch vom Besitzer aktualisiert werden.|
-|title|Zeichenfolge|Erforderlich.  Der Titel des Plans.|
+|title|String|Erforderlich.  Der Titel des Plans.|
 |createdBy|[identitySet](identityset.md)|Schreibgeschützt. Der Benutzer, der den Plan erstellt hat.|
 
 ### <a name="relationships"></a>Beziehungen

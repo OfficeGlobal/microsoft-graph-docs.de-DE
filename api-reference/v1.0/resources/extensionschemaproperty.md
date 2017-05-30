@@ -18,7 +18,7 @@ Die folgenden Datentypen werden beim Definieren einer Eigenschaft in einer Schem
 | Boolescher Wert | Nicht unterstützt für Nachrichten, Ereignisse und Beiträge. |
 | DateTime | Muss im ISO 8601-Format angegeben werden. Wird in UTC gespeichert. |
 | Ganze Zahl | 32-Bit-Wert. Nicht unterstützt für Nachrichten, Ereignisse und Beiträge. |
-| Zeichenfolge | Maximal 256 Zeichen. |
+| String | Maximal 256 Zeichen. |
 
 ### <a name="json-representation"></a>JSON-Darstellung
 

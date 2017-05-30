@@ -28,7 +28,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 | Eigenschaft       | Typ                          | Beschreibung                                                                                        |
 | :------------- | :---------------------------- | :------------------------------------------------------------------------------------------------- |
 | owner          | [IdentitySet](identityset.md) | Die Identität der der Besitzer des freigegebenen Elements. Schreibgeschützt.                                           |
-| scope          | Zeichenfolge                        | Gibt den Bereich der Freigabe des Elements an: `anonymous`, `organization` oder `users`. Schreibgeschützt. |
+| scope          | String                        | Gibt den Bereich der Freigabe des Elements an: `anonymous`, `organization` oder `users`. Schreibgeschützt. |
 | sharedBy       | [identitySet](identityset.md) | Die Identität des Benutzers, der das Element freigegeben hat. Schreibgeschützt.                                           |
 | sharedDateTime | DateTimeOffset                | UTC-Datum und -Uhrzeit der Elementfreigabe. Schreibgeschützt.                                         |
 
