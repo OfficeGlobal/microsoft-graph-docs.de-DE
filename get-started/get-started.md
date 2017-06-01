@@ -20,7 +20,7 @@ Wenn Sie die fertigen Connect-Beispiele ansehen möchten, besuchen Sie das [Micr
         <a href="https://github.com/microsoftgraph/android-java-connect-sample/tree/last_v1_auth">SDK-Beispiel</a>
     </td> 
         <td>
-                <a href="https://github.com/microsoftgraph/android-java-connect-sample">SDK-Beispiel</a> oder <a href="https://github.com/microsoftgraph/android-java-connect-rest-sample">REST-Beispiel</a>
+                <a href="https://github.com/microsoftgraph/android-java-connect-sample">SDK-Beispiel</a> oder ¶<a href="https://github.com/microsoftgraph/android-java-connect-rest-sample">REST-Beispiel</a>
     </td> 
   </tr>
   <tr>
@@ -29,7 +29,7 @@ Wenn Sie die fertigen Connect-Beispiele ansehen möchten, besuchen Sie das [Micr
         <a href="https://github.com/microsoftgraph/angular-connect-rest-sample/tree/last_v1_auth">REST-Beispiel</a>
     </td> 
         <td>
-        <a href="https://github.com/microsoftgraph/angular-connect-sample">SDK-Beispiel</a> oder <a href="https://github.com/microsoftgraph/angular-connect-rest-sample">REST-Beispiel</a>
+        <a href="https://github.com/microsoftgraph/angular-connect-sample">SDK-Beispiel</a> oder ¶<a href="https://github.com/microsoftgraph/angular-connect-rest-sample">REST-Beispiel</a>
     </td> 
   </tr>
   <tr>
@@ -38,7 +38,7 @@ Wenn Sie die fertigen Connect-Beispiele ansehen möchten, besuchen Sie das [Micr
         <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample/tree/last_v1_auth">REST-Beispiel</a>
     </td>     
     <td>
-        <a href="https://github.com/microsoftgraph/aspnet-connect-sample">SDK-Beispiel</a> oder <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">REST-Beispiel</a>
+        <a href="https://github.com/microsoftgraph/aspnet-connect-sample">SDK-Beispiel</a> oder ¶<a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">REST-Beispiel</a>
     </td> 
   </tr>
   <tr>
@@ -65,7 +65,7 @@ Wenn Sie die fertigen Connect-Beispiele ansehen möchten, besuchen Sie das [Micr
         <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">REST-Beispiel</a>
     </td>     
     <td>    
-        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK-Beispiel</a> oder <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST-Beispiel</a>
+        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK-Beispiel</a> oder ¶<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST-Beispiel</a>
     </td> 
   </tr>
   <tr>
@@ -74,7 +74,7 @@ Wenn Sie die fertigen Connect-Beispiele ansehen möchten, besuchen Sie das [Micr
         <a href="https://github.com/microsoftgraph/php-connect-rest-sample/tree/last_v1_auth">REST-Beispiel</a>
     </td>     
     <td>
-            <a href="https://github.com/microsoftgraph/php-connect-sample">SDK-Beispiel</a> oder <a href="https://github.com/microsoftgraph/php-connect-rest-sample">REST-Beispiel</a>
+            <a href="https://github.com/microsoftgraph/php-connect-sample">SDK-Beispiel</a> oder ¶<a href="https://github.com/microsoftgraph/php-connect-rest-sample">REST-Beispiel</a>
     </td> 
   </tr>
   <tr>
@@ -100,7 +100,7 @@ Wenn Sie die fertigen Connect-Beispiele ansehen möchten, besuchen Sie das [Micr
         <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/last_v1_auth">REST-Beispiel</a>
     </td>     
     <td>
-        <a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">SDK-Beispiel</a> oder <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">REST-Beispiel</a>
+        <a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">SDK-Beispiel</a> oder ¶<a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">REST-Beispiel</a>
     </td> 
   </tr>
   <tr>
