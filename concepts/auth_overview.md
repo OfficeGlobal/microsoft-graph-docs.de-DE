@@ -71,7 +71,7 @@ Sie können Microsoft Graph aus den folgenden Arten von Apps aufrufen:
 - **Web-APIs**: Eine Client-App ruft eine Web-API (von Azure AD gesichert) auf, die daraufhin Microsoft Graph aufruft, alles im Namen eines Benutzers. Wird vom Azure AD-Endpunkt unterstützt. Wird für den Azure AD v2.0-Endpunkt nur unterstützt, wenn der Client und die Web-API die gleiche Anwendungs-ID haben; ein Beispiel ist eine systemeigene App, die ein Web-API-Back-End aufruft. 
 
 ## <a name="how-do-i-get-my-app-talking-to-azure-ad-and-microsoft-graph"></a>Wie bringe ich meine App dazu, mit Azure AD und Microsoft Graph zu kommunizieren?
-Bevor Ihre App ein Token von Azure AD abrufen kann, muss sie registriert werden. Für den Azure AD v2.0-Endpunkt verwenden Sie das [Microsoft-App-Registrierungsportal](https://apps.dev.microsoft.com/), um Ihre App zu registrieren. Für den Azure AD-Endpunkt verwenden das [Azure-Portal](https://azure.portal.com/). Durch die Registrierung wird Ihre App in Azure AD integriert, und es werden die Koordinaten und Bezeichner eingerichtet, die die App zum Abrufen von Token verwendet. Dies sind:
+Bevor Ihre App ein Token von Azure AD abrufen kann, muss sie registriert werden. Für den Azure AD v2.0-Endpunkt verwenden Sie das [Microsoft-App-Registrierungsportal](https://apps.dev.microsoft.com/), um Ihre App zu registrieren. Für den Azure AD-Endpunkt verwenden das [Azure-Portal](https://portal.azure.com/). Durch die Registrierung wird Ihre App in Azure AD integriert, und es werden die Koordinaten und Bezeichner eingerichtet, die die App zum Abrufen von Token verwendet. Dies sind:
 
 - **Anwendungs-ID**: Ein eindeutiger Bezeichner, der von Azure AD zugewiesen wird. 
 - **Umleitungs-URI/-URL**: Ein oder mehrere Endpunkte, an denen Ihre App Antworten von Azure AD empfängt. (Für systemeigene und mobile Apps ist dies ein von Azure AD zugewiesener URI.)
@@ -146,7 +146,7 @@ Weitere Informationen zu den Unterschieden zwischen dem Azure AD v2.0- und dem A
 Sobald Sie Ihre App registriert haben, können Sie loslegen.
 
 - Eine Kurzanleitung zum Abrufen eines Zugriffstokens für Apps, die Microsoft Graph im Namen eines Benutzers aufrufen, finden Sie unter [Im Namen eines Benutzers zugreifen](auth_v2_user.md).
-- Eine Kurzanleitung zum Abrufen eines Zugriffstokens für Apps, die Microsoft Graph ohne Benutzer aufrufen, finden Sie unter [Ohne Benutzer zugreifen](auth_v2_user.md).
+- Eine Kurzanleitung zum Abrufen eines Zugriffstokens für Apps, die Microsoft Graph ohne Benutzer aufrufen, finden Sie unter [Ohne Benutzer zugreifen](auth_v2_service.md).
 - Informationen über die Berechtigungen, die Sie mit Microsoft Graph verwenden können, finden Sie unter [Berechtigungen](permissions_reference.md).
 - Wenn Sie ein Microsoft Cloud-Lösungsanbieter sind, der über Microsoft Graph auf partnerverwaltete Kundendaten zugreifen möchten, finden Sie weitere Informationen unter [App-Zugriff verwalten (CSPs)](auth_cloudsolutionprovider.md).
 

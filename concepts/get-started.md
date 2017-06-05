@@ -4,7 +4,7 @@ Die Artikel in diesem Abschnitt bieten detaillierte Angaben dazu, wie Apps erste
 
 Wählen Sie den Artikel, der sich mit dem Authentifizierungsanbieter und der Entwicklungsplattform Ihrer Wahl befasst, und unternehmen Sie die ersten Schritte zum Herstellen einer Verbindung mit Microsoft Graph.
 
-Sie können die Schritte in diesem Artikel ausführen, der sich mit der Entwicklungsplattform befasst, die Sie auswählen, oder die [Schnellstart](http://dev.office.com/getting-started/office365apis)-Erfahrung ausprobieren und schnell eine funktionsfähige Lösung einrichten und  ausführen.
+Sie können die Schritte in diesem Artikel ausführen, der sich mit der Entwicklungsplattform befasst, die Sie auswählen, oder die [Schnellstart](https://developer.microsoft.com/graph/quick-start)-Erfahrung ausprobieren und schnell eine funktionsfähige Lösung einrichten und  ausführen.
 
 Wenn Sie die fertigen Connect-Beispiele ansehen möchten, besuchen Sie das [Microsoft Graph Repository](https://github.com/microsoftgraph) auf GitHub. In der folgenden Tabelle sind die Beispiele nach Authentifizierungsanbieter und Plattform mit einem Vermerk aufgeführt, ob sie bei der Verbindung mit Microsoft Graph REST oder eine Microsoft Graph-Client-Bibliothek verwenden.
 
@@ -115,5 +115,5 @@ Wenn Sie die fertigen Connect-Beispiele ansehen möchten, besuchen Sie das [Micr
 
 ## <a name="see-also"></a>Siehe auch
 - Testen Sie beispielhafte REST-Aufrufe in unserem [API Explorer](https://graph.microsoft.io/graph-explorer).
-- [Azure AD-Endpunkt-Dokumentation](https://azure.microsoft.com/en-us/documentation/services/active-directory/)
-- [Azure AD v2.0-Endpunkt-Dokumentation](https://azure.microsoft.com/en-us/documentation/articles/?service=active-directory&term=azure+ad+v2.0)
+- [Azure AD-Endpunkt-Dokumentation](https://azure.microsoft.com/documentation/services/active-directory/)
+- [Azure AD v2.0-Endpunkt-Dokumentation](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)

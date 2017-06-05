@@ -32,7 +32,7 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das 
   "name": "get_directoryobject"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directoryObject/{id}
+GET https://graph.microsoft.com/v1.0/directoryObjects/{id}
 ```
 ##### <a name="response"></a>Antwort
 Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
