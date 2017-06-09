@@ -10,7 +10,9 @@ Diese Ressource unterstützt Folgendes:
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-|[Get user](../api/user_get.md) | [user](user.md) |Liest Eigenschaften und Beziehungen des Benutzerobjekts.|
+|[Benutzer auflisten](../api/user_list.md) |[Benutzersammlung](user.md)| Dient zum Abrufen einer Liste von Benutzerobjekten.|
+|[Benutzer erstellen](../api/user_post_users.md) |[Benutzer](user.md)| Dient zum Erstellen eines neuen Benutzerobjekts.|
+|[Benutzer abrufen](../api/user_get.md) | [user](user.md) |Liest Eigenschaften und Beziehungen des Benutzerobjekts.|
 |[Update user](../api/user_update.md) | [user](user.md) |Aktualisiert das Benutzerobjekt. |
 |[Delete user](../api/user_delete.md) | None |Löscht das Benutzerobjekt. |
 |[List messages](../api/user_list_messages.md) |[Message](message.md) collection| Ruft alle Nachrichten im Postfach des angemeldeten Benutzers ab.|
@@ -36,7 +38,7 @@ Diese Ressource unterstützt Folgendes:
 |[List ownedObjects](../api/user_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| Ruft die Verzeichnisobjekte, die dem Benutzer gehören, aus der ownedDevices-Navigationseigenschaft ab.|
 |[List registeredDevices](../api/user_list_registereddevices.md) |[directoryObject](directoryobject.md) collection| Ruft die Geräte, die für den Benutzer registriert sind, aus der registeredDevices-Navigationseigenschaft ab.|
 |[List createdObjects](../api/user_list_createdobjects.md) |[directoryObject](directoryobject.md) collection| Ruft die Verzeichnisobjekte, die von dem Benutzer erstellt wurden, aus der createdObjects-Navigationseigenschaft ab.|
-|[assignLicense](../api/user_assignlicense.md)|[Benutzer](user.md)|Fügt Abonnements für den Benutzer hinzu bzw. entfernt sie. Sie können auch bestimmte Pläne aktivieren oder deaktivieren, die mit einem Abonnement verknüpft sind.|
+|[assignLicense](../api/user_assignlicense.md)|[user](user.md)|Fügt Abonnements für den Benutzer hinzu bzw. entfernt sie. Sie können auch bestimmte Pläne aktivieren oder deaktivieren, die mit einem Abonnement verknüpft sind.|
 |[licenseDetails auflisten](../api/user_list_licensedetails.md) |[licenseDetails](licensedetails.md)-Sammlung| Dient zum Abrufen einer licenseDetails-Objektsammlung.| 
 |[checkMemberGroups](../api/user_checkmembergroups.md)|String collection|Sucht nach einer Mitgliedschaft in einer Liste von Gruppen. Die Überprüfung ist transitiv.|
 |[getMemberGroups](../api/user_getmembergroups.md)|String collection|Gibt alle Gruppen zurück, bei denen der Benutzer Mitglied ist. Die Überprüfung ist transitiv.|
@@ -61,7 +63,8 @@ Diese Ressource unterstützt Folgendes:
 |assignedPlans|[assignedPlan](assignedplan.md) collection|Die Pläne, die dem Benutzer zugewiesen sind. Schreibgeschützt. Lässt keine NULL-Werte zu. |
 |birthday|DateTimeOffset|Der Geburtstag des Benutzers. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |businessPhones|String-Sammlung|Die Telefonnummern für den Benutzer. HINWEIS: Obwohl dies eine String-Sammlung ist, kann nur eine Nummer für diese Eigenschaft festgelegt werden.|
-|city|String|Die Stadt, in der sich der Benutzer befindet. Unterstützt $filter.|
+|Ort|Zeichenfolge|Die Stadt, in der sich der Benutzer befindet. Unterstützt $filter.|
+|companyName|String|Der Unternehmensname, dem der Benutzer zugewiesen ist.|
 |country|String|Land/Region, in dem/der sich der Benutzer befindet; z. B. „USA“ oder „UK“. Unterstützt $filter.|
 |department
 |String|Der Name der Abteilung, in der der Benutzer arbeitet. Unterstützt $filter.|
@@ -112,21 +115,20 @@ Diese Ressource unterstützt Folgendes:
 |contacts|[Contact](contact.md) collection|Die Kontakte des Benutzers. Schreibgeschützt. Lässt NULL-Werte zu.|
 |createdObjects|[directoryObject](directoryobject.md) collection|Verzeichnisobjekte, die vom Benutzer erstellt wurden. Schreibgeschützt. Lässt NULL-Werte zu.|
 |directReports|[directoryObject](directoryobject.md) collection|Die Benutzer und Kontakte, die an den Benutzer berichten. (Die Benutzer und Kontakte, deren manager-Eigenschaft auf diesen Benutzer festgelegt ist.) Schreibgeschützt. Lässt NULL-Werte zu. |
-|drive|[Laufwerk](drive.md)|OneDrive eines Benutzers. Schreibgeschützt.|
+|drive|[drive](drive.md)|OneDrive eines Benutzers. Schreibgeschützt.|
 |drives|[drive](drive.md)-Sammlung. | Eine Sammlung von Laufwerken, die für diesen Benutzer zur Verfügung stehen. Schreibgeschützt. |
-|events|[Ereignissammlung](event.md)|Die Ereignisse des Benutzers. Standardmäßig werden Ereignisse unter dem Standard-Kalender angezeigt. Schreibgeschützt. Lässt Nullwerte zu.|
-|extensions|[extension](extension.md)-Sammlung|Die Sammlung der für den Benutzer definierten offenen Erweiterungen. Schreibgeschützt. Lässt NULL-Werte zu.|
+|events|[Event](event.md) collection|Die Ereignisse des Benutzers. Standardmäßig werden Ereignisse unter dem Standard-Kalender angezeigt. Schreibgeschützt. Lässt NULL-Werte zu.|
+|Erweiterungen|[extension](extension.md)-Sammlung|Die Sammlung der für den Benutzer definierten offenen Erweiterungen. Schreibgeschützt. Lässt NULL-Werte zu.|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | Relevanzklassifizierung von Nachrichten des Benutzers basierend auf expliziten Kennzeichnungen, die die abgeleitete Relevanz oder Wichtigkeit außer Kraft setzen. |
 |mailFolders|[MailFolder](mailfolder.md) collection| Die E-Mail-Ordner des Benutzers. Schreibgeschützt. Lässt NULL-Werte zu.|
 |manager|[directoryObject](directoryobject.md)|Der Benutzer oder Kontakt, der Vorgesetzter dieses Benutzers ist. Schreibgeschützt. (HTTP-Methoden: GET, PUT, DELETE.)|
 |memberOf|[directoryObject](directoryobject.md) collection|Die Gruppen und Verzeichnisrollen, bei denen der Benutzer Mitglied ist. Schreibgeschützt. Lässt NULL-Werte zu.|
-|messages|[Nachrichten](message.md)-Sammlung|Die Nachrichten in einem Postfach oder Ordner. Schreibgeschützt. Lässt Nullwerte zu.|
+|messages|[Message](message.md) collection|Die Nachrichten in einem Postfach oder Ordner. Schreibgeschützt. Lässt NULL-Werte zu.|
 |onenote|[OneNote](onenote.md)| Schreibgeschützt.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Geräte, die der Benutzer besitzt. Schreibgeschützt. Lässt NULL-Werte zu.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Verzeichnisobjekte, die der Benutzer besitzt. Schreibgeschützt. Lässt NULL-Werte zu.|
 |Foto|[profilePhoto](profilephoto.md)| Das Profilfoto des Benutzers. Schreibgeschützt.|
-|registeredDevices|[directoryObject](directoryobject.md)-Sammlung|Geräte, die für den Benutzer registriert sind. Schreibgeschützt. Lässt Nullwerte zu.|
-|sites|[site](site.md)-Sammlung | Eine Sammlung von Websites, die für diesen Benutzer zur Verfügung stehen. Schreibgeschützt. |
+|registeredDevices|[directoryObject](directoryobject.md) collection|Geräte, die für den Benutzer registriert sind. Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -157,7 +159,6 @@ Es folgt eine JSON-Darstellung der Ressource.
     "ownedDevices",
     "ownedObjects",
     "photo",
-    "sites",
     "registeredDevices"
   ],
   "keyProperty": "id",
@@ -227,9 +228,9 @@ Es folgt eine JSON-Darstellung der Ressource.
   "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
   "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "ownedObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "sites": [ {"@odata.type": "microsoft.graph.site" }]
+  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
 }
 
 ```

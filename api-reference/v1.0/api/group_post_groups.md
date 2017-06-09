@@ -1,11 +1,12 @@
 # <a name="create-group"></a>Gruppe erstellen
 
-Verwenden Sie diese API zum Erstellen einer neuen Gruppe gemäß der Angabe im Anforderungstext. Sie können 3 Typen von Gruppen erstellen:
+Verwenden Sie diese API zum Erstellen einer neuen Gruppe gemäß der Angabe im Anforderungstext. Sie können drei Typen von Gruppen erstellen:
 
-* Office 365-Gruppe (auch einheitliche Gruppe genannt)
+* Office 365-Gruppe (einheitliche Gruppe)
 * Dynamische Gruppe
 * Sicherheitsgruppe
 
+> **Hinweis**: Microsoft Teams basiert zwar auf Office 365-Gruppen, über diese API kann derzeit aber kein Team erstellt werden. Sie können die anderen Gruppen-APIs verwenden, um ein Team zu verwalten, das in der Microsoft Teams-Benutzeroberfläche erstellt wurde.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Der folgende **Bereich** ist erforderlich, um diese API auszuführen: _Group.ReadWrite.All_ 

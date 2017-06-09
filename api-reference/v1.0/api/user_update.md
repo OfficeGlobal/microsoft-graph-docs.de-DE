@@ -1,8 +1,11 @@
+
 # <a name="update-user"></a>Benutzer aktualisieren
 
 Dient zum Aktualisieren der Eigenschaften eines Benutzerobjekts.
 ## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *User.ReadWrite; User.ReadWrite.All; Directory.ReadWrite.All*
+
+Beim Aktualisieren der passwordProfile-Eigenschaft ist der folgende Bereich erforderlich: *Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

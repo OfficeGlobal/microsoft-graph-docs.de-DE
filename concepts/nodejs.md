@@ -39,7 +39,7 @@ Registrieren Sie eine App im Microsoft App-Registrierungsportal. Dadurch werden 
 
 6. Wählen Sie unter **Plattformen** die Option **Plattform hinzufügen** > ** Web** aus.
 
-7. Geben Sie *http://localhost:3000/login* als Umleitungs-URI ein. 
+7. Geben Sie *http://localhost:3000/token* als Umleitungs-URI ein. 
 
 8. Wählen Sie **Speichern** aus.
 
@@ -47,7 +47,7 @@ Registrieren Sie eine App im Microsoft App-Registrierungsportal. Dadurch werden 
 ## <a name="configure-the-project"></a>Konfigurieren des Projekts
 1. Öffnen Sie den Ordner **Startprojekt** in den Beispieldateien.
 
-1. Führen Sie den folgenden Befehl in einem Eingabeaufforderungsfenster im Stammverzeichnis des Startprojekts aus. Dadurch werden die Projektabhängigkeiten installiert.
+1. Führen Sie den folgenden Befehl in einem Eingabeaufforderungsfenster im Stammverzeichnis des Startprojekts aus. Dadurch werden die Projekt-Abhängigkeiten installiert.
 
         npm install
 

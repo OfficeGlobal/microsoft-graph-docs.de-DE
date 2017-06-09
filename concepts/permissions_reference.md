@@ -57,7 +57,7 @@ Benutzer- und Gruppensuchfunktionen ermöglichen der App, im Verzeichnis einer O
 | _Calendars.Read_ |    Lesezugriff auf Kalender in allen Postfächern  | Ermöglicht der App, Ereignisse in allen Kalendern ohne einen angemeldeten Benutzer zu lesen.| Ja |
 | _Calendars.ReadWrite_ |    Lese- und Schreibzugriff auf Kalender in allen Postfächern | Ermöglicht der App, Ereignisse in allen Kalendern ohne einen angemeldeten Benutzer zu erstellen, zu lesen, zu aktualisieren und zu löschen.| Ja |
 
-### <a name="remarks"></a>Bemerkungen
+### <a name="remarks"></a>Hinweise
 
 _Calendars.Read.Shared_ und _Calendars.ReadWrite.Shared_ gelten nur für Geschäfts-, Schul- oder Unikonten. Alle anderen Berechtigungen gelten für Microsoft-Konten und Geschäfts-, Schul- oder Unikonten.
 
@@ -166,7 +166,7 @@ Keine.
 | _DeviceManagementManagedDevices.ReadWrite.All_ | Microsoft Intune-Geräte lesen und schreiben (Vorschau) | Ermöglicht der App, die Eigenschaften der von Microsoft Intune verwalteten Geräte zu lesen und zu schreiben. Ermöglicht keine Operationen mit großen Auswirkungen, z. B. Remotezurücksetzen und Kennwortzurücksetzung am Gerät des Besitzers. | Ja |
 | _DeviceManagementManagedDevices.PrivilegedOperations.All_ | Remoteaktionen mit Auswirkungen auf den Benutzer auf Microsoft Intune-Geräten durchführen (Vorschau) | Ermöglicht der App, Remoteaktionen mit großen Auswirkungen durchzuführen, z. B. das Zurücksetzen des Geräts oder der Kennung auf Geräten, die von Microsoft Intune verwaltet werden. | Ja |
 
-### <a name="remarks"></a>Bemerkungen
+### <a name="remarks"></a>Hinweise
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
 Diese Berechtigungen gelten nur für Geschäfts-, Schul- oder Unikonten.
@@ -197,7 +197,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Directory.Read.All_           |     Verzeichnisdaten lesen                     | Ermöglicht der App, Daten im Verzeichnis Ihrer Organisation zu lesen, z. B. Benutzer, Gruppen und Apps. | Ja |
-| _Directory.ReadWrite.All_      |     Verzeichnisdaten lesen und schreiben           | Ermöglicht der App, Daten im Verzeichnis Ihrer Organisation ohne einen angemeldeten Benutzer zu lesen und zu schreiben, z. B. Benutzer und Gruppen.  Ermöglicht der App nicht das Löschen von Benutzern oder Gruppen oder das Zurücksetzen von Benutzerkennwörtern. | Ja |
+| _Directory.ReadWrite.All_      |     Schreib-/Lesezugriff auf Verzeichnisdaten           | Ermöglicht der App, Daten im Verzeichnis Ihrer Organisation ohne einen angemeldeten Benutzer zu lesen und zu schreiben, z. B. Benutzer und Gruppen.  Ermöglicht der App nicht das Löschen von Benutzern oder Gruppen oder das Zurücksetzen von Benutzerkennwörtern. | Ja |
 | _Directory.AccessAsUser.All_   |     Als der angemeldete Benutzer auf das Verzeichnis zugreifen  | Ermöglicht der App den gleichen Zugriff auf Informationen im Verzeichnis wie dem angemeldeten Benutzer.| Ja |
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
@@ -349,7 +349,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 | _IdentityRiskEvent.Read.All_ |   Informationen zu Identitätsrisikoereignissen lesen | Ermöglicht der App, Informationen zu Identitätsrisikoereignissen für alle Benutzer in Ihrer Organisation ohne einen angemeldeten Benutzer zu lesen. | Ja |
 
 
-### <a name="remarks"></a>Bemerkungen
+### <a name="remarks"></a>HinwBemerkungeneise
 
 _IdentityRiskEvent.Read.All_ gilt nur für Geschäfts-, Schul- oder Unikonten. Damit eine App mit delegierten Berechtigungen Informationen zu Identitätsrisiken lesen kann, muss der angemeldete Benutzer ein Mitglied einer der folgenden Administratorrollen sein: Globaler Administrator, Sicherheitsadministrator oder Benutzer mit Leseberechtigung für Sicherheitsfunktionen Weitere Informationen zu Administratorrollen finden Sie unter [Zuweisen von Administratorrollen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 
@@ -372,7 +372,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Mail.Read_ |    Benutzer-E-Mails lesen | Die App kann E-Mails in Benutzerpostfächern lesen. | Nein |
-| _Mail.ReadWrite_ |    Schreib-/Lesezugriff auf Benutzer-E-Mails | Die App kann E-Mails in Benutzerpostfächern erstellen, lesen, aktualisieren und löschen. Umfasst nicht die Berechtigung zum Senden von E-Mails.| Nein |
+| _Mail.ReadWrite_ |    Schreib-/Lesezugriff auf Benutzer-E-Mails | Die App kann E-Mails in Benutzerpostfächern erstellen, lesen, aktualisieren und löschen. Umfasst nicht über die Berechtigung zum Senden von E-Mails.| Nein |
 | _Mail.Read.Shared_ |    Benutzer-E-Mails und freigegebene E-Mails lesen | Die App kann E-Mails lesen, auf die der Benutzer zugreifen kann, einschließlich der eigenen E-Mails des Benutzers und freigegebener E-Mails. | Nein |
 | _Mail.ReadWrite.Shared_ |    Benutzer-E-Mails und freigegebene E-Mails lesen und schreiben | Die App kann E-Mails erstellen, lesen, aktualisieren und löschen, für die der Benutzer über Zugriffsberechtigungen verfügt, einschließlich der eigenen E-Mails des Benutzers und freigegebener E-Mails. Umfasst nicht die Berechtigung zum Senden von E-Mails. | Nein |
 | _Mail.Send_ |    E-Mails als Benutzer senden | Die App kann E-Mails im Namen der Benutzer in der Organisation zu senden. | Nein |
@@ -390,7 +390,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 | _MailboxSettings.Read_ |  Alle Benutzerpostfacheinstellungen lesen | Die App kann Benutzerpostfacheinstellungen ohne einen angemeldeten Benutzer lesen. Umfasst nicht die Berechtigung zum Senden von E-Mails. | Nein |
 | _MailboxSettings.ReadWrite_ | Alle Benutzerpostfacheinstellungen lesen und schreiben  | Die App kann Benutzerpostfacheinstellungen ohne angemeldeten Benutzer erstellen, lesen, aktualisieren und löschen. Umfasst nicht die Berechtigung zum Senden von E-Mails. | Ja |
 
-### <a name="remarks"></a>Bemerkungen
+### <a name="remarks"></a>Hinweise
 
 _Mail.Read.Shared_, _Mail.ReadWrite.Shared_ und _Mail.Send.Shared_ gelten nur für Geschäfts-, Schul- oder Unikonten. Alle anderen Berechtigungen gelten für Microsoft-Konten und Geschäfts-, Schul- oder Unikonten.
 
@@ -430,7 +430,7 @@ Keine.
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Member.Read.Hidden_ | Alle ausgeblendeten Mitgliedschaften lesen | Ermöglicht der App, die Mitgliedschaften ausgeblendeter Gruppen und administrativer Einheiten ohne einen angemeldeten Benutzer zu lesen. | Ja |
 
-### <a name="remarks"></a>Bemerkungen
+### <a name="remarks"></a>Hinweise
 Die Mitgliedschaft in einigen Office 365-Gruppen kann ausgeblendet werden. Dies bedeutet, dass nur die Mitglieder der Gruppe deren Mitglieder anzeigen können. Dieses Feature ist hilfreich zur Einhaltung von Vorschriften, die erfordern, dass eine Organisation Gruppenmitgliedschaften für Außenstehende ausblendet (z. B. eine Office 365-Gruppe, zu der in einem Kurs angemeldete Teilnehmer gehören).
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
@@ -464,7 +464,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 | _Notes.ReadWrite.All_ |    Alle OneNote-Benutzernotizbücher lesen und schreiben | Ermöglicht der App, alle OneNote-Notizbücher in Ihrer Organisation ohne einen angemeldeten Benutzer zu lesen, freizugeben und zu ändern.| Ja |
 
 
-### <a name="remarks"></a>Bemerkungen
+### <a name="remarks"></a>HinwBemerkungeneise
 _Notes.Read.All_ und _Notes.ReadWrite.All_ gelten nur für Geschäfts-, Schul- oder Unikonten. Alle anderen Berechtigungen gelten für Microsoft-Konten und Geschäfts-, Schul- oder Unikonten.
 
 Mit der Berechtigung _Notes.Create_ kann eine App die OneNote-Notizbuchhierarchie des angemeldeten Benutzers anzeigen und OneNote-Inhalte (Notizbücher, Abschnittsgruppen, Abschnitte, Seiten usw.) erstellen.
@@ -498,8 +498,8 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _email_ |    E-Mail-Adresse von Benutzern anzeigen | Ermöglicht der App, die primäre E-Mail-Adresse Ihrer Benutzer zu lesen. | Nein |
-| _offline_access_ |    Jederzeit auf Daten des Benutzers zugreifen (Vorschau) | Ermöglicht der App, Benutzerdaten zu lesen und zu aktualisieren, auch wenn diese die App derzeit nicht verwenden.| Nein |
-| _openid_ |    Benutzer anmelden in (Vorschau) | Damit können Benutzer sich mit Ihren Geschäfts- oder Schulkonten bei der App anmelden, und die App kann grundlegende Benutzerprofilinformationen lesen.| Nein |
+| _offline_access_ |    Jederzeit auf Daten des Benutzers zugreifen | Ermöglicht der App, Benutzerdaten zu lesen und zu aktualisieren, auch wenn diese die App derzeit nicht verwenden.| Nein |
+| _openid_ |    Benutzer anmelden | Damit können Benutzer sich mit Ihren Geschäfts- oder Schulkonten bei der App anmelden, und die App kann grundlegende Benutzerprofilinformationen lesen.| Nein |
 | _profile_ |    Grundlegendes Profil von Benutzern anzeigen | Ermöglicht der App, das grundlegende Profil Ihrer Benutzer (Name, Bild, Benutzername) anzuzeigen.| Nein |
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
@@ -600,7 +600,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 Keine.
 
-### <a name="remarks"></a>Bemerkungen
+### <a name="remarks"></a>HinwBemerkungeneise
 _Aufgaben_berechtigungen werden zum Steuern des Zugriffs für Outlook-Aufgaben verwendet. Der Zugriff auf Microsoft Planner-Aufgaben wird von [ _Gruppen_berechtigungen](#group-permissions) gesteuert.
 
 _Freigegebene_ Berechtigungen werden derzeit nur für Geschäfts-, Schul- oder Unikonten unterstützt. Selbst mit _freigegebenen_ Berechtigungen können Fehler bei Lese- oder Schreibvorgängen auftreten, wenn der Benutzer, dem der freigegebene Inhalt gehört, dem zugreifenden Benutzer keine Berechtigungen zum Ändern von Inhalten im Ordner gewährt hat.
@@ -629,7 +629,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 | _User.ReadWrite_ |    Lese- und Schreibzugriff auf Benutzerprofile | Die App kann Ihr Profil lesen. Darüber hinaus kann die App Ihre Profilinformationen in Ihrem Namen aktualisieren. | Nein |
 | _User.ReadBasic.All_ |    Grundlegende Profile aller Benutzer lesen | Ermöglicht der App, einen grundlegenden Satz von Profileigenschaften anderer Benutzer in Ihrer Organisation im Namen des angemeldeten Benutzers zu lesen. Dazu gehören der Anzeigename, der Vor-und Nachname, die E-Mail-Adresse und das Foto. | Nein |
 | _User.Read.All_  |     Vollständige Profile aller Benutzer lesen           | Ermöglicht der App, den vollständigen Satz von Profileigenschaften, Berichten und Vorgesetzten von anderen Benutzern in Ihrer Organisation im Namen des angemeldeten Benutzers zu lesen. | Ja |
-| _User.ReadWrite.All_ |     Vollständige Profile aller Benutzer lesen und schreiben | Ermöglicht der App, den vollständigen Satz von Profileigenschaften, Berichten und Vorgesetzten von anderen Benutzern in Ihrer Organisation im Namen des angemeldeten Benutzers zu lesen und zu schreiben. Ermöglicht der App außerdem, im Namen des angemeldeten Benutzers Benutzer zu erstellen und zu löschen sowie Benutzerkennwörter zurückzusetzen. | Ja |
+| _User.ReadWrite.All_ |     Lese- und Schreibzugriff auf vollständige Profile aller Benutzer | Ermöglicht der App, den vollständigen Satz von Profileigenschaften, Berichten und Vorgesetzten von anderen Benutzern in Ihrer Organisation im Namen des angemeldeten Benutzers zu lesen und zu schreiben. Ermöglicht der App außerdem, im Namen des angemeldeten Benutzers Benutzer zu erstellen und zu löschen sowie Benutzerkennwörter zurückzusetzen. | Ja |
 | _User.Invite.All_  |     Gastbenutzer zur Organisation einladen | Ermöglicht der App, Gastbenutzer im Namen des angemeldeten Benutzers zu Ihrer Organisation einzuladen. | Ja |
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
@@ -640,7 +640,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 | _User.ReadWrite.All_ |   Lese- und Schreibzugriff auf vollständige Profile aller Benutzer | Ermöglicht der App, den vollständigen Satz von Profileigenschaften, Gruppenmitgliedschaften, Berichten und Vorgesetzten von anderen Benutzern in Ihrer Organisation ohne einen angemeldeten Benutzer zu lesen und zu schreiben.  Ermöglicht der App außerdem, Benutzer zu erstellen, die kein Administrator sind. Ermöglicht nicht das Zurücksetzen von Benutzerkennwörtern. | Ja |
 | _User.Invite.All_  |     Gastbenutzer zur Organisation einladen | Ermöglicht der App, Gastbenutzer ohne einen angemeldeten Benutzer zu Ihrer Organisation einzuladen. | Ja |
 
-### <a name="remarks"></a>Bemerkungen
+### <a name="remarks"></a>HinwBemerkungeneise
 
 Für Microsoft-Konten sind lediglich die Berechtigungen _User.Read_ und _User.ReadWrite_ gültig. Für Geschäfts-, Schul- oder Unikonten sind alle Berechtigungen gültig.
 

@@ -7,7 +7,7 @@ Diese Einstellungen können Sie im Rahmen des [mailboxSettings](../resources/mai
 **Hinweis** Sie können keine Postfacheinstellungen erstellen oder löschen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Der folgende **Bereich** ist erforderlich, um diese API auszuführen: *Mailboxsettings.ReadWrite*  
+Der folgende **Bereich** ist erforderlich, um diese API auszuführen: *MailboxSettings.ReadWrite*  
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http

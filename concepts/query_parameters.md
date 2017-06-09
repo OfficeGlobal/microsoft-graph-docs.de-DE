@@ -1,79 +1,112 @@
-# <a name="microsoft-graph-optional-query-parameters"></a>Optionale Abfrageparameter in Microsoft Graph
-Microsoft Graph stellt mehrere optionale Abfrageparameter bereit, die Sie zum Festlegen und Steuern der in einer Antwort zurückgegebenen Datenmenge verwenden können. Microsoft Graph unterstützt die folgenden Abfrageoptionen. 
+# <a name="customize-responses-optional-query-parameters"></a>Anpassen von Antworten: optionale Abfrageparameter
 
-|Name|Wert|Beschreibung|
+Microsoft Graph stellt optionale Abfrageparameter bereit, die Sie zum Festlegen und Steuern der in einer Antwort zurückgegebenen Datenmenge verwenden können. Die folgenden Abfrageparameter werden unterstützt.
+
+|Name|Beschreibung|Beispiel (klicken Sie auf die Beispiele, um diese im [Graph-Tester][graph-explorer] auszuprobieren)
 |:---------------|:--------|:-------|
-|$search|string|Ein Eigenschaft-/Wertpaar, das durch einen Doppelpunkt getrennt ist. | 
-|$select|string|Durch Trennzeichen getrennte Liste der Eigenschaften, die in der Antwort aufgenommen werden.|
-|$expand|string|Durch Trennzeichen getrennte Liste der Beziehungen, die in der Antwort erweitert und aufgenommen werden.  |
-|$orderby|string|Durch Trennzeichen getrennte Liste von Eigenschaften, die zum Sortieren der Elemente in der Antwortsammlung verwendet werden.|
-|$filter|string|Filtert die Antwort basierend auf einer Reihe von Kriterien.|
-|$top|int|Die Anzahl der Elemente, die in einem Resultset zurückgegeben werden.|
-|$skip|int|Die Anzahl der Elemente, die in einem Resultset übersprungen werden.|
-|$skipToken|string|Pagingtoken, das zum Abrufen des nächsten Resultsets verwendet wird.|
-|$count|Keine|Eine Auflistung, und die Anzahl der Elemente in der Auflistung.|
+|[$filter](#filter)|Dient zum Filtern von Ergebnissen (Zeilen).|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
+|[$select](#select)|Dient zum Filtern von Eigenschaften (Spalten).|[`/users?$select=givenName,surname`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)
+|[$expand](#expand)|Dient zum Abrufen von verwandten Ressourcen.|[`/groups/{id}?$expand=members`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups/22be6ccb-15a5-459f-94ac-d1393bdd9e66?$expand=members&method=GET&version=v1.0)
+|[$orderby](#orderby)|Dient zum Sortieren von Ergebnissen.|[`/users?$orderby=displayName,userPrincipalName desc`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$orderby=displayName,userPrincipalName%20DESC&method=GET&version=v1.0)
+|[$top](#top)|Dient zum Beschränken von Ergebnissen. Wird in der Regel mit `$skipToken` verwendet.|[`/users?$top=2`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)
+|[$skipToken](#skiptoken)|Wird zusammen mit `$top` verwendet, um eine Seite von Ergebnissen abzurufen.|Ein Beispiel finden Sie unter `nextLink` in der $top-Abfrage.
+|[$count](#count)|Dient zum Abrufen der Gesamtzahl übereinstimmender Ressourcen.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
+<!-- TODO: figure out whether $search is actually used
+|[`$search`](#search)|A property and value pair separated by a colon.|
+-->
 
-Diese Parameter sind kompatibel mit der [Abfragesprache OData V4](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356).
+Diese Parameter sind kompatibel mit der [Abfragesprache OData V4][odata-query].
 
->  **Hinweis**: Auf dem Microsoft Graph **Beta**-Endpunkt, kann das Präfix **$** entfallen, um die Erfahrung zu vereinfachen. Anstelle von **$Erweitern**, können Sie z. B. **Erweitern** verwenden. Weitere Informationen und Beispiele finden Sie unter [Abfrageparameter ohne $ Präfixe in Microsoft Graph unterstützen](http://dev.office.com/queryparametersinMicrosoftGraph).  
+> **Hinweis:** Am `beta`-Endpunkt ist das `$`-Präfix optional. Sie können z. B. `filter` anstelle von `$filter` verwenden. Weitere Informationen und Beispiele finden Sie unter [Abfrageparameter ohne $ Präfixe in Microsoft Graph unterstützen](http://dev.office.com/queryparametersinMicrosoftGraph).
 
-**Codieren von Abfrageparametern**
+**Codieren von Abfrageparametern:**
 
-- Wenn Sie Abfrageparameter in [Microsoft Graph Explorer](https://graph.microsoft.io/en-us/graph-explorer#) ausprobieren, können Sie einfach die unten aufgeführten Beispiele kopieren und einfügen, ohne der Abfragezeichenfolge eine URL-Codierung hinzufügen zu müssen. Das folgende Beispiel funktioniert einwandfrei _im Graph Explorer_, ohne die Leerzeichen und Anführungszeichen zu codieren:
+Die Werte von Abfrageparametern sollten als Prozentwert codiert werden. Viele HTTP-Clients, Browser und Tools (z. B. der [Graph-Tester][graph-explorer]) sind Ihnen dabei behilflich. Wenn eine Abfrage fehlschlägt, kann eine der möglichen Ursachen dafür sein, dass die Werte von Abfrageparametern nicht ordnungsgemäß codiert wurden.
+
+Eine nicht codierte URL sieht folgendermaßen aus:
+
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'jon@contoso.com'
-``` 
-- Stellen Sie beim Festlegen von Abfrageparametern _in Ihrer App_ allgemein sicher, dass Sie solche Zeichen angemessen codieren, für die [im URI eine besondere Bedeutung reserviert ist](https://tools.ietf.org/html/rfc3986#section-2.2). Codieren Sie zum Beispiel die Leerzeichen und Anführungszeichen im letzten Beispiel wie dargestellt:
-```http
-GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address%20eq%20%27jon@contoso.com%27
+GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName, 'J')
 ```
 
-
-### <a name="search"></a>$search
-Um die Ergebnisse einer Anforderung zu beschränken, die einem Suchkriterium entsprechen, verwenden Sie den **$search**-Abfrageparameter. 
-
->  **Hinweis**: Sie können derzeit **$search** für Sammlungen von [message](../api-reference/v1.0/resources/message.md) und [person](../api-reference/beta/resources/person.md) verwenden, jedoch nicht von [contact](../api-reference/v1.0/resources/contact.md) oder [event](../api-reference/v1.0/resources/event.md). Eine **$search**-Anforderung gibt bis zu 250 Ergebnisse zurück. **$filter** oder **$orderby** kann in einer **$search**-Abfrage nicht verwendet werden.
-
-Suchkriterien werden mithilfe von Advanced Query Syntax (AQS) ausgedrückt. 
-
-**Anwenden von $search auf Nachrichten**
-
-Suchergebnisse werden nach Datum und Uhrzeit sortiert, an dem bzw. zu der die Nachricht gesendet wurde.
-
-Sie können die folgenden Eigenschaften in einem **message**-Objekt in einem **$search**-Kriterium angeben:**attachments**, **bccRecipients**, **body**, **category**, **ccRecipients**, **content**, **from**, **hasAttachments**, **participants**, **receivedDateTime**, **sender**, **subject**, **toRecipients**
-
-Wenn Sie eine Suche nach Nachrichten durchführen und nur einen Wert angeben, wird die Suche anhand der Standardsucheigenschaften**from**, **subject** und **body** ausgeführt.
-
-Im folgenden Beispiel werden alle Nachrichten im Posteingang des angemeldeten Benutzers zurückgegeben, die das Wort „Pizza“ in einer der drei Standardsucheigenschaften enthalten: 
+Eine korrekt codierte URL sieht folgendermaßen aus:
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
+GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
 
-Im nächsten Beispiel werden alle Nachrichten im Posteingang des Benutzers gesucht, die von einer bestimmten E-Mail-Adresse gesendet wurden:
+## <a name="filter"></a>filter
+
+`$filter` kann verwendet werden, um nur eine Teilmenge einer Auflistung abzurufen. Um beispielsweise Benutzer zu suchen, deren Anzeigename mit `J` beginnt, verwenden Sie `startswith`.
+
+[Ausprobieren im Graph-Tester](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
+
+**Anforderung:**
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
+GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 ```
 
+**Antwort:**
+
+```json
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+    "value": [
+        {
+            "id": "e013b9f3-a1ab-48d1-907b-e716c39d6363",
+            "businessPhones": [
+                "4255550100"
+            ],
+            "displayName": "Jan Madden",
+            "givenName": "Jan",
+            "jobTitle": null,
+            "mail": "demo32@a830edad9050849NDA1.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": null,
+            "preferredLanguage": null,
+            "surname": "Madden",
+            "userPrincipalName": "demo32@a830edad9050849NDA1.onmicrosoft.com"
+        },
+        {
+            "id": "89efe8ed-d141-4151-a3e4-570a70022dff",
+            "businessPhones": [
+                "+1 425 555 0109"
+            ],
+            "displayName": "Janet Schorr",
+            "givenName": "Janet",
+            "jobTitle": "Product Marketing Manager",
+            "mail": "janets@a830edad9050849NDA1.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": "18/2111",
+            "preferredLanguage": null,
+            "surname": "Schorr",
+            "userPrincipalName": "janets@a830edad9050849NDA1.onmicrosoft.com"
+        },
+        ...
+    ]
+}
+```
+
+`$filter` verfügt über eine sehr umfangreiche und aussagekräftige Syntax mit vielen integrierten Operatoren. Logische Operatoren umfassen Gleichheitszeichen (`eq`), Ungleichheitszeichen (`ne`), Zeichen für größer als (`gt`), größer gleich (`gte`), UND (`and`), ODER (`or`), NICHT(`not`) usw. Arithmetische Operatoren umfassen Addieren (`add`), Subtrahieren (`sub`) usw. Zeichenfolgenoperatoren umfassen ENTHÄLT (`contains`), BEGINNT MIT (`startswith`) usw. Lambda-Operatoren umfassen KEINE (`any`) und ALLE (`all`). Weitere Informationen zur `$filter`-Syntax finden Sie im [OData-Protokoll][odata-filter].
 
 
-### <a name="select"></a>$select
-Um für die Rückgabe eine andere Gruppe von Eigenschaften anzugeben als die Standardgruppe von Graph, verwenden Sie die Abfrageoption **$select**. Die **$select**-Option ermöglicht die Auswahl einer Teilmenge oder Obermenge der zurückgegebenen Standardgruppe. Wenn Sie z. B. Ihre Nachrichten abrufen, möchten Sie ggf. festlegen, dass nur die Eigenschaften **Von** und **Betreff** der Nachrichten zurückgegeben werden.
+## <a name="select"></a>select
+
+In einer Sammlung oder einer einzelnen Identität verwenden Sie den `$select`-Abfrageparameter, um anstelle der Standardgruppe eine andere Eigenschaftengruppe zum Zurückgeben anzugeben. Der `$select`-Parameter ermöglicht die Auswahl einer Teilmenge oder Obermenge der zurückgegebenen Standardgruppe. Wenn Sie z. B. Ihre Nachrichten abrufen, möchten Sie ggf. festlegen, dass nur die Eigenschaften `from` und `subject` der Nachrichten zurückgegeben werden.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ```
 
-<!--For example, when retrieving the children of an item on a drive, you want to select that only the **name** and **size** properties of items are returned.
+<!--For example, when retrieving the children of an item on a drive, you want to select that only the `name` and `size` properties of items are returned.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name,size
 ```
 
 By submitting the request with the `$select=name,size` query string, the objects
-in the response will only have those property values included. 
-
+in the response will only have those property values included.
 
 ```json
 {
@@ -90,87 +123,71 @@ in the response will only have those property values included.
     }
   ]
 }
-```--> 
+```-->
 
-## <a name="expand"></a>$expand
+## <a name="expand"></a>expand
 
 In Microsoft Graph-API-Anforderungen wird die Navigation zu einem Objekt oder einer Auflistung des Elements, auf das verwiesen wird, nicht automatisch erweitert. Dies ist beabsichtigt, da der Netzwerkdatenverkehr und die Zeit zum Generieren einer Antwort vom Dienst auf diese Weise reduziert werden. Möglicherweise möchten Sie jedoch in einigen Fällen diese Ergebnisse in eine Antwort einbeziehen.
 
-Sie können den **$expand**-Abfragezeichenfolgen-Parameter verwenden, um die API zum Erweitern eines untergeordneten Objekts oder einer Auflistung und zum Einbeziehen dieser Ergebnisse anzuweisen.
+Sie können den `$expand`-Abfragezeichenfolgen-Parameter verwenden, um die API zum Erweitern eines untergeordneten Objekts oder einer Auflistung und zum Einbeziehen dieser Ergebnisse anzuweisen.
 
-Verwenden Sie beispielsweise zum Abrufen von Stammlaufwerkinformationen und der untergeordneten Elemente auf oberster Ebene in einem Laufwerk den **$expand**-Parameter. In diesem Beispiel wird auch eine **$select**-Anweisung verwendet, um nur die Eigenschaften_ID_ und _Name_ der untergeordneten Elemente zurückzugeben.
+Verwenden Sie beispielsweise zum Abrufen von Stammlaufwerkinformationen und der untergeordneten Elemente auf oberster Ebene in einem Laufwerk den `$expand`-Parameter. In diesem Beispiel wird auch eine [`$select`](#select)-Anweisung verwendet, um nur die Eigenschaften `id` und `name` der untergeordneten Elemente zurückzugeben.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
 ```
 
->  **Hinweis**: Die maximale Anzahl der erweiterten Objekte für eine Anforderung beträgt 20. 
+> **Hinweis:** Die maximale Anzahl der erweiterten Objekte für eine Anforderung beträgt 20. Wenn Sie außerdem eine Abfrage für die [`user`](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user)-Ressource durchführen, können Sie `$expand` zum Abrufen der Eigenschaften von jeweils nur einem untergeordneten Objekt oder einer Auflistung verwenden. Das folgende Beispiel ruft `user`-Objekte ab, jeweils mit bis zu 20 erweiterten `directReport`-Objekten in der `directReports`-Auflistung:
 
-> Wenn Sie außerdem eine Abfrage für die [Benutzer](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user)-Ressource durchführen, können Sie **$expand** zum Abrufen der Eigenschaften von jeweils nur einem untergeordneten Objekt oder einer Auflistung verwenden. 
-
-Das folgende Beispiel ruft **Benutzer**-Objekte ab, jeweils mit bis zu 20 erweiterten **directReport**-Objekten in der **directReports**-Auflistung:
 ```http
 GET https://graph.microsoft.com/v1.0/users?$expand=directReports
 ```
+
 Einige andere Ressourcen haben möglicherweise ebenfalls einen Höchstwert, führen Sie daher immer eine Überprüfung auf mögliche Fehler durch.
 
+## <a name="orderby"></a>orderby
 
-<!---The following shows a sample result that is returned in the response body.-->
-
-
-## <a name="orderby"></a>$orderby
-
-Verwenden Sie zum Festlegen der Sortierreihenfolge der aus der Microsoft Graph-API zurückgegebenen Elemente die **$orderby**-Abfrageoption. 
+Verwenden Sie zum Festlegen der Sortierreihenfolge der aus der Microsoft Graph-API zurückgegebenen Elemente den `$orderby`-Abfrageparameter.
 
 Wenn die zurückgegebenen Benutzer in der Organisation nach dem Anzeigenamen sortiert werden sollen, lautet die Syntax hierfür wie folgt:
 
 ```http
 GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
-``` 
+```
 
-Sie können auch nach komplexen Typentitäten sortieren. Im folgenden Beispiel werden Nachrichten abgerufen und nach dem **Adresse**-Feld der **from**-Eigenschaft sortiert, die vom komplexen Typ **emailAddress** ist:
+Sie können auch nach komplexen Typentitäten sortieren. Im folgenden Beispiel werden Nachrichten abgerufen und nach dem `address`-Feld der `from`-Eigenschaft sortiert, die vom komplexen Typ `emailAddress` ist:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
-``` 
+```
 
 Wenn Sie die Ergebnisse in aufsteigender oder absteigender Reihenfolge sortieren möchten, fügen Sie entweder `asc` oder `desc` an den Namen des Felds getrennt durch ein Leerzeichen an, z. B. `?$orderby=name%20desc`.
 
- >  **Hinweis**: Bei Abfragen zur [user](../api-reference/v1.0/resources/user.md)-Ressource kann **$orderby** nicht zusammen mit Filterausdrücken verwendet werden.
+ > **Hinweis:** Bei Abfragen zur [`user`](../api-reference/v1.0/resources/user.md)-Ressource kann `$orderby` nicht zusammen mit Filterausdrücken verwendet werden.
 
-## <a name="filter"></a>$filter
-Wenn Sie die zurückgegebenen Daten anhand bestimmter Kriterien filtern möchten, verwenden Sie die **$filter**-Abfrageoption. Wenn die zurückgegebenen Benutzer in der Organisation anhand des Anzeigenamens gefiltert werden sollen, der mit „Garth“ beginnt, lautet die Syntax hierfür wie folgt:
+## <a name="top"></a>top
 
-```http
-GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'Garth')
-```
-
-Sie können auch nach komplexen Typentitäten filtern. Das folgende Beispiel gibt Nachrichten zurück, bei denen das Feld **address** der **from**-Eigenschaft gleich „jon@contoso.com“ ist. Die **from**-Eigenschaft hat den komplexen Typ **emailAddress**.
-
-```http
-GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'jon@contoso.com'
-``` 
-
-## <a name="top"></a>$top
-Verwenden Sie zum Festlegen der maximalen Anzahl der in einem Resultset zurückzugebenden Elemente die **$top**-Abfrageoption. Die **$top**-Abfrageoption ermittelt eine Teilmenge in der Sammlung. Diese Teilmenge setzt sich aus den festgelegten ersten N Elementen zusammen, wobei N eine positive ganze Zahl ist, die durch diese Abfrageoption angegeben ist. Wenn beispielsweise die ersten fünf Nachrichten im Postfach des Benutzers zurückgegeben werden sollen, lautet die Syntax wie folgt:
+Verwenden Sie zum Festlegen der maximalen Anzahl der in einem Resultset zurückzugebenden Elemente den `$top`-Abfrageparameter. Der `$top`-Abfrageparameter ermittelt eine Teilmenge in der Sammlung. Diese Teilmenge setzt sich aus den festgelegten ersten N Elementen zusammen, wobei N eine positive ganze Zahl ist, die durch diesen Abfrageparameter angegeben ist. Wenn beispielsweise die ersten fünf Nachrichten im Postfach des Benutzers zurückgegeben werden sollen, lautet die Syntax wie folgt:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
-## <a name="skip"></a>$skip
-Verwenden Sie zum Festlegen der Anzahl der Elemente, die vor dem Abrufen von Elementen in einer Sammlung übersprungen werden sollen, die **$skip**-Abfrageoption. Wenn die zurückgegebenen Ereignisse nach Erstellungsdatum sortiert werden, wobei mit dem 21. Ereignis begonnen wird, lautet die Syntax wie folgt.
+## <a name="skip"></a>skip
+
+Verwenden Sie zum Festlegen der Anzahl der Elemente, die vor dem Abrufen von Elementen in einer Sammlung übersprungen werden sollen, den `$skip`-Abfrageparameter. Wenn die zurückgegebenen Ereignisse nach Erstellungsdatum sortiert werden, wobei mit dem 21. Ereignis begonnen wird, lautet die Syntax wie folgt.
 
 ```http
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
 
-## <a name="skiptoken"></a>$skipToken
-Verwenden Sie zur Anforderung der zweiten und nachfolgender Seiten mit Graph-Daten die Abfrageoption **$skipToken**. Die **$skipToken**-Abfrageoption ist eine Option, die in URLs bereitgestellt wird, die von Graph übergeben werden, wenn Graph, in der Regel aufgrund von serverseitigem Paging, einen Teil einer Teilmenge der Ergebnisse zurückgibt. Sie nennt den Punkt in einer Sammlung, an dem der Server das Senden der Ergebnisse beendet hat, und wird zu Graph zurückgegeben, um anzugeben, von wo aus das Senden der Ergebnisse wieder aufgenommen werden sollte. Der Wert einer **$skipToken**-Abfrageoption könnte z. B. das zehnte Element in einer Sammlung oder das 20. Element in einer Sammlung mit 50 Elementen oder eine andere Position in der Sammlung angeben.
+## <a name="skiptoken"></a>skipToken
 
-In einigen Fällen wird ein `@odata.nextLink`-Wert angezeigt. Manchmal ist ein **$skipToken**-Wert enthalten. Der **$skipToken**-Wert stellt eine Markierung für den Dienst dar, die angibt, an welcher Stelle das nächste Resultset beginnen soll. Nachfolgend ein Beispiel für einen `@odata.nextLink`-Wert aus einer Antwort, in der Benutzer sortiert nach `displayName` angefordert werden: 
+Verwenden Sie zur Anforderung der zweiten und nachfolgender Seiten mit Graph-Daten den `$skipToken`-Abfrageparameter. Der `$skipToken`-Abfrageparameter wird in URLs bereitgestellt, die von Graph übergeben werden, wenn Graph, in der Regel aufgrund von serverseitigem Paging, einen Teil einer Teilmenge der Ergebnisse zurückgibt. Sie nennt den Punkt in einer Sammlung, an dem der Server das Senden der Ergebnisse beendet hat, und wird zu Graph zurückgegeben, um anzugeben, von wo aus das Senden der Ergebnisse wieder aufgenommen werden sollte. Der Wert eines `$skipToken`-Abfrageparameters könnte z. B. das zehnte Element in einer Sammlung oder das 20. Element in einer Sammlung mit 50 Elementen oder eine andere Position in der Sammlung angeben.
 
-```
+In einigen Fällen wird ein `@odata.nextLink`-Wert angezeigt. Manchmal ist ein `$skipToken`-Wert enthalten. Der `$skipToken`-Wert stellt eine Markierung für den Dienst dar, die angibt, an welcher Stelle das nächste Resultset beginnen soll. Nachfolgend ein Beispiel für einen `@odata.nextLink`-Wert aus einer Antwort, in der Benutzer sortiert nach `displayName` angefordert werden:
+
+```json
 "@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$orderby=displayName&$skiptoken=X%2783630372100000000000000000000%27"
 ```
 
@@ -180,12 +197,42 @@ Um die nächste Seite der Benutzer in Ihrer Organisation zurückzugeben, lautet 
 GET  https://graph.microsoft.com/v1.0/users?$orderby=displayName&$skiptoken=X%2783630372100000000000000000000%27
 ```
 
-## <a name="count"></a>$count
-Verwenden Sie **$count** als Abfrageparameter, um die Gesamtzahl der Elemente in einer Sammlung zusammen mit der Seite der Datenwerte anzugeben, die von Graph zurückgegeben werden (siehe folgendes Beispiel):
+## <a name="count"></a>count
+
+Verwenden Sie `$count` als Abfrageparameter, um die Gesamtzahl der Elemente in einer Sammlung zusammen mit der Seite der Datenwerte anzugeben, die von Graph zurückgegeben werden (siehe folgendes Beispiel):
+
 ```http
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
-Zurückgegeben werden sowohl die **Kontakte**-Sammlung als auch die Anzahl der Elemente in der **Kontakte**-Sammlung in der Eigenschaft `@odata.count`.
 
->
-  **Hinweis:** Dies wird für [directoryObject](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/directoryobject)-Sammlungen nicht unterstützt.
+Zurückgegeben werden sowohl die `contacts`-Sammlung als auch die Anzahl der Elemente in der `contacts`-Sammlung in der Eigenschaft `@odata.count`.
+
+>**Hinweis:** Dies wird für [`directoryObject`](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/directoryobject)-Sammlungen nicht unterstützt.
+
+## <a name="search"></a>Suche
+
+Um die Ergebnisse einer Anforderung zu beschränken, die einem Suchkriterium entsprechen, verwenden Sie den `$search`-Abfrageparameter.
+
+> **Hinweis:** Sie können derzeit **nur** [Nachrichten](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message)- und [Personen](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/person)-Sammlungen suchen. Eine `$search`-Anforderung gibt bis zu 250 Ergebnisse zurück. Sie können [ `$filter` ](#filter) oder [ `$orderby` ](#orderby) nicht in einer Suchabfrage verwenden.
+
+Suchkriterien werden mithilfe von Advanced Query Syntax (AQS) ausgedrückt. Die Ergebnisse sind nach Datum und Uhrzeit sortiert, zu dem bzw. der die Nachricht gesendet wurde.
+
+Sie können die folgenden Eigenschaften in einer `message` in einem `$search`-Kriterium angeben: `attachments`, `bccRecipients`, `body`, `category`, `ccRecipients`, `content`, `from`, `hasAttachments`, `participants`, `receivedDateTime`, `sender`, `subject`,`toRecipients`
+
+Wenn Sie eine Suche nach Nachrichten durchführen und nur einen Wert angeben, wird die Suche anhand der Standardsucheigenschaften`from`, `subject` und `body` ausgeführt.
+
+Im folgenden Beispiel werden alle Nachrichten im Posteingang des angemeldeten Benutzers zurückgegeben, die das Wort „Pizza“ in einer der drei Standardsucheigenschaften enthalten:
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
+```
+
+Im nächsten Beispiel werden alle Nachrichten im Posteingang des Benutzers, die von einer bestimmten E-Mail-Adresse gesendet wurden:
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
+```
+
+[graph-explorer]: https://graph.microsoft.io/en-us/graph-explorer
+[odata-filter]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358
+[odata-query]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356

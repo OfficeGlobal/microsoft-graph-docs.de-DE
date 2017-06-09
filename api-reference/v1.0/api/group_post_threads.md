@@ -1,6 +1,6 @@
-# <a name="create-thread"></a>Thread erstellen
+# <a name="create-conversation-thread"></a>Unterhaltungsthread erstellen
 
-Beginnt eine neue Unterhaltung, indem zunächst ein Thread erstellt wird. 
+Beginnt eine neue Gruppenunterhaltung, indem zunächst ein Thread erstellt wird. 
 
 Eine neue Unterhaltung, Unterhaltungsthreads und Beiträge werden in der Gruppe erstellt. Verwenden Sie [Auf Thread antworten](conversationthread_reply.md) oder [Auf Beitrag antworten](post_reply.md), um weitere Beiträge zu diesem Thread hinzuzufügen.
 

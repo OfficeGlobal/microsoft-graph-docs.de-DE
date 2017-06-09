@@ -21,13 +21,6 @@ Benutzerprofilfotos können nur gelesen und aktualisiert werden, wenn der Benutz
     }
 ```
 
-### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>Hinzufügen von und Zugreifen auf ICS-basierte Kalender im Postfach des Benutzers
-
-Derzeit gibt es eine teilweise Unterstützung für einen Kalender, der auf einem Internet-Kalenderabonnement (ICS) basiert:
-
-* Sie können einen ICS-basierten Kalender einem Benutzerpostfach über die Benutzeroberfläche, jedoch nicht über die Microsoft Graph-API hinzufügen.
-* [Das Auflisten der Kalender des Benutzers](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) ermöglicht Ihnen, die Eigenschaften **name**, **color** und **id** jedes [Kalenders](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) in der Standardkalendergruppe des Benutzers oder einer bestimmten Kalendergruppe abzurufen, einschließlich ICS-basierte Kalender. Sie können die ICS-URL in der Kalenderressource nicht speichern und nicht darauf zugreifen.
-* Sie haben auch die Möglichkeit zum [Auflisten der Ereignisse](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) eines ICS-basierten Kalenders.
 
 ### <a name="using-delta-query"></a>Verwenden der Delta-Abfrage
 
@@ -85,6 +78,42 @@ Aktuell liegt ein Problem vor, aufgrund dessen sich die Eigenschaft **allowExter
 ### <a name="using-delta-query"></a>Verwenden der Delta-Abfrage
 
 Bekannte Probleme bei der Verwendung der Delta-Abfrage finden Sie im Abschnitt [ Delta-Abfrage](#delta-query) in diesem Artikel.
+
+
+## <a name="calendars"></a>Kalender
+
+### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>Hinzufügen von und Zugreifen auf ICS-basierte Kalender im Postfach des Benutzers
+
+Derzeit gibt es eine teilweise Unterstützung für einen Kalender, der auf einem Internet-Kalenderabonnement (ICS) basiert:
+
+* Sie können einen ICS-basierten Kalender einem Benutzerpostfach über die Benutzeroberfläche, jedoch nicht über die Microsoft Graph-API hinzufügen.
+* [Das Auflisten der Kalender des Benutzers](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) ermöglicht Ihnen, die Eigenschaften **name**, **color** und **id** jedes [Kalenders](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) in der Standardkalendergruppe des Benutzers oder einer bestimmten Kalendergruppe abzurufen, einschließlich ICS-basierte Kalender. Sie können die ICS-URL in der Kalenderressource nicht speichern und nicht darauf zugreifen.
+* Sie haben auch die Möglichkeit zum [Auflisten der Ereignisse](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) eines ICS-basierten Kalenders.
+
+### <a name="accessing-a-shared-calendar"></a>Zugreifen auf einen freigegebenen Kalender
+
+Beim Versuch, auf Ereignisse in einem Kalender zuzugreifen, der von einem anderen Benutzer mithilfe des folgenden Vorgangs freigegeben wurde:
+
+```http
+GET \users('{id}')\calendars('{id}')\events
+```
+
+Möglicherweise wird HTTP 500 mit dem Fehlercode `ErrorInternalServerTransientError` angezeigt.
+
+Bisher gibt es zwei Methoden zur Implementierung der Kalenderfreigabe, die zur Unterscheidung einmal als die „alte“ Implementierung und einmal als die „neue“ Implementierung bezeichnet werden. Der Fehler tritt aus folgendem Grund auf: 
+
+- Derzeit unterstützen nur Outlook im Web, Outlook unter iOS und Outlook unter Android das Freigeben von Kalendern in Office 365 auf die neue Weise.
+- Sie können die Kalender-REST-API verwenden, um freigegebene Kalender anzuzeigen oder freizugeben, aber nur, wenn die Kalender auf die neue Weise freigegebenen wurden. 
+- Sie können die Kalender-REST-API nicht verwenden, um Kalender (oder deren Ereignisse) anzuzeigen oder zu bearbeiten, die auf die alte Weise freigegeben wurden.
+
+Zur Umgehung dieses Problems sollte der Besitzer des Kalenders den Kalender in Outlook im Web, in Outlook für iOS oder in Outlook für Android erneut freigeben, und Sie sollten den Kalender erneut mithilfe von Outlook im Web akzeptieren. Nach dem erneuten Akzeptieren besteht eine Möglichkeit zum Überprüfen, ob der Kalender mithilfe des neuen Modells freigegeben wurde, darin, den freigegebenen Kalender in Outlook für iOS oder Outlook für Android anzuzeigen.
+
+Ein für Sie mit dem neuen Modell freigegebener Kalender wird genau wie jeder andere Kalender in Ihrem Postfach angezeigt. Sie können die Kalender-REST-API verwenden, um Ereignisse im freigegebenen Kalender so anzuzeigen oder zu bearbeiten, als wäre es Ihr eigener Kalender. Beispiel:
+
+```http
+GET \me\calendars('{id}')\events
+```
+
 
 ## <a name="contacts"></a>Kontakte
 
@@ -162,6 +191,29 @@ Der comment-Parameter für das Erstellen eines Antwort- oder Weiterleitungsentwu
 * Schemaerweiterungen (Legacy) werden nicht mit $select-Anweisung, sondern ohne $select zurückgegeben.
 * Clients können keine Änderungen an offenen Erweiterungen oder registrierten Schemaerweiterungen nachverfolgen.
 
+## <a name="application-and-serviceprincipal-api-changes"></a>Änderungen an der application- und servicePrincipal-API
+
+Es gibt Änderungen an den [application](../api-reference/beta/resources/application.md)- und [servicePrincipal](../api-reference/beta/resources/serviceprincipal.md)-Entitäten, die derzeit entwickelt werden. Nachfolgend finden Sie eine Zusammenfassung aktueller Einschränkungen und API-Features, die derzeit entwickelt werden.
+
+Aktuelle Einschränkungen:
+
+* Einige Anwendungseigenschaften (z. B. appRoles und addIns) sind erst verfügbar, wenn alle Änderungen abgeschlossen sind.
+* Es können nur Apps mit mehreren Mandanten registriert werden.
+* Das Aktualisieren von Apps ist auf Apps beschränkt, die nach dem anfänglichen Beta-Update registriert wurden.
+* Azure Active Directory-Benutzer können Apps registrieren und weitere Besitzer hinzufügen.
+* Unterstützung für OpenID Connect und OAuth-Protokolle.
+* Richtlinienzuweisungen zu einer App schlagen fehl. 
+* Vorgänge mit ownedObjects, die die appId erfordern, schlagen fehl (z. B. users/{id|userPrincipalName}/ownedObjects/{id}/...).
+
+In der Entwicklung:
+
+* Die Möglichkeit, Apps mit nur einem Mandanten zu registrieren.
+* Updates für servicePrincipal.
+* Migration von vorhandenen Azure AD-Apps zum aktualisierten Modell.
+* Unterstützung für appRoles, vorab autorisierte Clients, optionale Ansprüche, Gruppenmitgliedschaftsansprüche und Branding
+* Benutzer eines Microsoft-Kontos (MSA-Benutzer) können Apps registrieren.
+* Unterstützung für SAML und WsFed-Protokolle.
+
 ## <a name="extensions"></a>Erweiterungen
 
 ### <a name="change-tracking-is-not-supported"></a>Die Änderungsnachverfolgung wird nicht unterstützt.
@@ -208,14 +260,41 @@ Einzelne Anforderungen können von anderen einzelnen Anforderungen abhängen. De
 
 In der weiteren Entwicklung der JSON-Batchverarbeitung werden diese Einschränkungen entfernt.
 
-## <a name="cloud-solution-provider-apps-must-use-azure-ad-endpoint"></a>Apps von Cloud-Lösungsanbietern müssen den Azure AD-Endpunkt verwenden
+## <a name="cloud-solution-provider-apps"></a>Apps vom Cloudlösungsanbieter
+
+### <a name="csp-apps-must-use-azure-ad-endpoint"></a>Apps vom Cloudlösungsanbieter müssen den Azure AD-Endpunkt verwenden
 
 CSP-Apps (Cloud-Lösungsanbieter) müssen Token von den Azure AD (v1)-Endpunkten erwerben, um Microsoft Graph erfolgreich in ihren partnerverwalteten Kunden aufrufen zu können. Derzeit wird der Erwerb eines Tokens über den neueren Azure AD v2.0-Endpunkt nicht unterstützt.
+
+### <a name="pre-consent-for-csp-apps-doesnt-work-in-some-customer-tenants"></a>Eine Vorabgenehmigung für Apps vom Cloudlösungsanbieter funktioniert bei einigen Kundenmandanten nicht
+
+Unter bestimmten Umständen funktioniert die Vorabgenehmigung für Apps vom Cloudlösungsanbieter bei einigen Kundenmandanten nicht.
+
+- Für Apps, die delegierte Berechtigungen verwenden, wird bei der ersten Verwendung der App mit einem neuen Kundenmandanten möglicherweise der folgende Fehler nach der Anmeldung angezeigt: `AADSTS50000: There was an error issuing a token`.
+- Für Apps, die Anwendungsberechtigungen verwenden, kann Ihre App ein Token erfassen, beim Aufrufen von Microsoft Graph wird jedoch unerwartet die Meldung angezeigt, dass der Zugriff verweigert wurde.
+
+Wir arbeiten daran, dieses Problem so schnell wie möglich zu lösen, damit die Vorabgenehmigung für alle Kundenmandanten funktioniert.
+
+In der Zwischenzeit können Sie die folgende Problemumgehung verwenden, um die Entwicklung und das Testen nicht zu blockieren.
+
+>**HINWEIS:** Dies ist keine dauerhafte Lösung und soll nur dazu dienen, die Entwicklung nicht zu blockieren.  Diese Problemumgehung ist nicht mehr erforderlich, nachdem das zuvor erwähnte Problem behoben wurde.  Diese Problemumgehung muss nicht rückgängig gemacht werden, nachdem die Korrektur vorhanden ist.
+
+1. Öffnen Sie eine Azure AD v2-PowerShell-Sitzung, und stellen Sie eine Verbindung mit Ihrem `customer`-Mandanten her, indem Sie Ihre Administrator-Anmeldeinformationen in das Anmeldefenster eingeben. Sie können Azure AD PowerShell V2 [hier](https://www.powershellgallery.com/packages/AzureAD) herunterladen und installieren.
+
+    ```PowerShell
+    Connect-AzureAd -TenantId {customerTenantIdOrDomainName}
+    ```
+
+2. Erstellen Sie den Microsoft Graph-Dienstprinzipal.
+
+    ```PowerShell
+    New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
+    ```
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>Nur in Office 365-REST- oder Azure AD-Graph-APIs verfügbare Funktionen
 
 Einige Funktionen sind in Microsoft Graph noch nicht verfügbar. Wenn Sie die gesuchte Funktion nicht finden, können Sie die endpunktspezifischen [Office 365-REST-APIs](https://msdn.microsoft.com/en-us/office/office365/api/api-catalog) verwenden. Für Azure Active Directory finden Sie im Blogbeitrag [Microsoft Graph oder Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) Informationen über die Features, die nur über die Azure AD-Graph-API verfügbar sind.
 
-### <a name="feedback"></a>Feedback
+## <a name="feedback"></a>Feedback
 
 > Ihr Feedback ist uns wichtig. Nehmen Sie unter [Stack Overflow](http://stackoverflow.com/questions/tagged/microsoftgraph) Kontakt mit uns auf.

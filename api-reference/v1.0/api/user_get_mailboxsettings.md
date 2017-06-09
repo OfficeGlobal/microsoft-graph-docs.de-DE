@@ -5,7 +5,7 @@ Rufen Sie die [mailboxSettings](../resources/mailboxsettings.md) des Benutzers a
 Sie können alle Postfacheinstellungen anzeigen oder bestimmte Einstellungen abrufen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Der folgende **Bereich** ist erforderlich, um diese API auszuführen: *Mailboxsettings.ReadWrite*  
+Der folgende **Bereich** ist erforderlich, um diese API auszuführen: *MailboxSettings.Read*  
 
 ## <a name="http-request"></a>HTTP-Anforderung
 Verwenden Sie die folgende Anforderung, um alle Postfacheinstellungen einschließlich Einstellungen für automatische Antworten abzurufen:

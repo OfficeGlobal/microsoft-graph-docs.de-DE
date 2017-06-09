@@ -12,18 +12,19 @@ Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen:
 GET /workbook/worksheets/{id|name}/UsedRange
 
 ```
+
+## <a name="optional-request-parameter"></a>Optionaler Anforderungsparameter
+Stellen Sie in der Anforderungs-URL einen optionalen Abfrageparameter bereit.
+
+| Parameter       | Typ    |Beschreibung|
+|:---------------|:--------|:----------|
+|valuesOnly|Boolescher Wert|Optional. Betrachtet nur Zellen mit Werten als verwendet (ignoriert die Formatierung).|
+
+
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
-
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
-
-| Parameter       | Typ    |Beschreibung|
-|:---------------|:--------|:----------|
-|valuesOnly|boolean|Optional. Betrachtet nur Zellen mit Werten als verwendet (ignoriert die Formatierung).|
 
 ## <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [Range](../resources/range.md)-Objekt im Antworttext zurückgegeben.
@@ -37,13 +38,9 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "worksheet_usedrange"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange(valuesOnly=true)
 Content-type: application/json
-Content-length: 24
 
-{
-  "valuesOnly": true
-}
 ```
 
 ##### <a name="response"></a>Antwort
