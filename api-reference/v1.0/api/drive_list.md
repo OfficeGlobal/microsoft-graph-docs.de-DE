@@ -17,10 +17,11 @@ Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
 ```http
 GET /drives
 GET /me/drives
-GET /groups/{id}/drives
+GET /sites/{site-id}/drives
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
+
 Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-body"></a>Anforderungstext

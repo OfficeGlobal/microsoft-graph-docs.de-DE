@@ -24,7 +24,7 @@ POST /workbook/worksheets({id|name})/names/add
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
-| Parameter       | Typ    |Beschreibung|
+| Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |name|string|Der Name des benannten Elements.|
 |Referenz|Zeichenfolge|Die Formel oder der Bereich, auf die bzw. den der Name verweist.|
@@ -33,8 +33,10 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 ## <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das aktualisierte [NamedItem](../resources/NamedItem.md)-Objekt im Antworttext zurückgegeben.
 
+
 ## <a name="example"></a>Beispiel
 Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
+
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
@@ -47,10 +49,12 @@ Content-type: application/json
 Content-length: 54
 
 {
-  "name": "myRange",
-  "reference": "=A10+B10",
+  "name": "test5",
+  "reference": "=Sheet1!$F$15:$N$27",
   "comment": "Comment for the named item"
 }
+
+
 ```
 
 ##### <a name="response"></a>Antwort
@@ -66,12 +70,15 @@ Content-type: application/json
 Content-length: 109
 
 {
-  "name": "myRange",
-  "comment": "Sample range",
-  "scope": "Workbook",
-  "type": "String",
-  "visible": true,
-  "value": "=A10+B10"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookNamedItem",
+    "@odata.type": "#microsoft.graph.workbookNamedItem",
+    "@odata.id": "/users('ca41eb6e-5828-486b-ab52-c3bd1f7a4047')/drive/root/workbook/names(%27test5%27)",
+    "comment": "Comment for the named item",
+    "name": "test5",
+    "scope": "Workbook",
+    "type": "Range",
+    "value": "Sheet1!$F$15:$N$27",
+    "visible": true
 }
 ```
 
