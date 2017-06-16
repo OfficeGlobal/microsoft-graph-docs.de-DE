@@ -12,7 +12,7 @@ Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
 
 ## <a name="get-a-users-onedrive"></a>Abrufen von OneDrive eines Benutzers
 
-Damit Sie auf OneDrive oder OneDrive for Business eines Benutzers zugreifen können, sollte Ihre App die **drive**-Beziehung in der [User](../resources/user.md)-Ressource anfordern.
+Damit Sie auf OneDrive oder OneDrive for Business eines Benutzers zugreifen können, muss Ihre App die **drive**-Beziehung in der [User](../resources/user.md)-Ressource anfordern.
 
 ### <a name="http-request"></a>HTTP-Anforderung
 

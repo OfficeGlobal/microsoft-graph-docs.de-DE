@@ -10,9 +10,7 @@ Microsoft Graph verfügt über zwei Arten von Berechtigungen: **Delegierte Berec
 
 _Effektive Berechtigungen_ sind die Berechtigungen, über die Ihre App verfügt, wenn sie Aufrufe an Microsoft Graph sendet. Es ist wichtig, den Unterschied zwischen den delegierten und Anwendungsberechtigungen zu verstehen, die Ihren Apps gewährt werden, und ihren effektiven Berechtigungen beim Senden von Aufrufen an Microsoft Graph.
 
-- Bei delegierten Berechtigungen sind die _effektiven Berechtigungen_ der App die Schnittmenge mit den geringsten Rechten aus den delegierten Berechtigungen, die der App (per Zustimmung) gewährt wurden und den Rechten des derzeit angemeldeten Benutzers. Ihre App kann nie mehr Rechte als der angemeldete Benutzer haben. In Organisationen werden die Rechte des angemeldeten Benutzers ggf. durch eine Richtlinie oder die Mitgliedschaft in einer oder mehreren Administratorrollen bestimmt. Weitere Informationen zu Administratorrollen finden Sie unter [Zuweisen von Administratorrollen in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
-   
-  Nehmen wir beispielsweise an, Ihrer App wurde die delegierte Berechtigung _User.ReadWrite.All_ gewährt. Diese Berechtigung gewährt Ihrer App nominell die Berechtigung zum Lesen und Aktualisieren des Profils aller Benutzer in einer Organisation. Wenn der angemeldete Benutzer ein globaler Administrator ist, kann Ihre App das Profil aller Benutzer in der Organisation aktualisieren. Wenn der angemeldete Benutzer jedoch kein Mitglied einer Administratorrolle ist, kann Ihre App nur das Profil des angemeldeten Benutzers aktualisieren. Die Profile anderer Benutzer in der Organisation können nicht von der App aktualisiert werden, da der Benutzer, in dessen Namen die App agieren darf, nicht über diese Rechte verfügt.
+- Bei delegierten Berechtigungen sind die _effektiven Berechtigungen_ der App die Schnittmenge mit den geringsten Rechten aus den delegierten Berechtigungen, die der App (per Zustimmung) gewährt wurden und den Rechten des derzeit angemeldeten Benutzers. Ihre App kann nie mehr Rechte als der angemeldete Benutzer haben. In Organisationen werden die Rechte des angemeldeten Benutzers ggf. durch eine Richtlinie oder die Mitgliedschaft in einer oder mehreren Administratorrollen bestimmt. Weitere Informationen zu Administratorrollen finden Sie unter [Zuweisen von Administratorrollen in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).<br/><br/>Nehmen wir beispielsweise an, Ihrer App wurde die delegierte Berechtigung _User.ReadWrite.All_ gewährt. Diese Berechtigung gewährt Ihrer App nominell die Berechtigung zum Lesen und Aktualisieren des Profils aller Benutzer in einer Organisation. Wenn der angemeldete Benutzer ein globaler Administrator ist, kann Ihre App das Profil aller Benutzer in der Organisation aktualisieren. Wenn der angemeldete Benutzer jedoch kein Mitglied einer Administratorrolle ist, kann Ihre App nur das Profil des angemeldeten Benutzers aktualisieren. Die Profile anderer Benutzer in der Organisation können nicht von der App aktualisiert werden, da der Benutzer, in dessen Namen die App agieren darf, nicht über diese Rechte verfügt.
   
 - Bei Anwendungsberechtigungen sind die _effektiven Berechtigungen_ der App sämtliche Rechte, die die Berechtigung impliziert. Eine App mit der Anwendungsberechtigung _User.ReadWrite.All_ kann beispielsweise das Profil aller Benutzer in der Organisation aktualisieren. 
 
@@ -210,7 +208,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 ### <a name="remarks"></a>Bemerkungen
 Verzeichnisberechtigungen werden für Microsoft-Konten nicht unterstützt. 
 
- Verzeichnisberechtigungen stellen die höchste Stufe von Rechten für den Zugriff auf Verzeichnisressourcen wie [Benutzer](../api-reference/v1.0/resources/user.md), [Gruppen](../api-reference/v1.0/resources/group.md), und [Geräte](../api-reference/v1.0/resources/device.md) in einer Organisation bereit. Sie steuern zudem exklusiv den Zugriff auf andere Verzeichnisressourcen wie [Organisationskontakte](../api-reference/beta/resources/orgcontact.md), [Schemaerweiterungs-APIs](../api-reference/beta/resources/schemaextension.md), [Privileged Identity Management (PIM)-APIs](../api-reference/beta/resources/privilegedidentitymanagement_root.md) sowie viele der Ressourcen und APIs, die unter dem Knoten **Verzeichnis** in der API-Referenzdokumentation der Versionen 1.0 und Beta aufgeführt sind. Hierzu zählen administrative Einheiten, Verzeichnisrollen, Verzeichniseinstellungen, Richtlinien und viele weitere. 
+ Verzeichnisberechtigungen stellen die höchste Stufe von Rechten für den Zugriff auf Verzeichnisressourcen wie [Benutzer](../api-reference/v1.0/resources/user.md), [Gruppen](../api-reference/v1.0/resources/group.md), und [Geräte](../api-reference/v1.0/resources/device.md) in einer Organisation bereit. Sie steuern zudem exklusiv den Zugriff auf andere Verzeichnisressourcen wie [Organisationskontakte](../api-reference/beta/resources/orgcontact.md), [Schemaerweiterungs-APIs](../api-reference/beta/resources/schemaextension.md), [Privileged Identity Management (PIM)-APIs](../api-reference/beta/resources/privilegedidentitymanagement_root.md) sowie viele der Ressourcen und APIs, die unter dem Knoten **Azure Active Directory** in der API-Referenzdokumentation der Versionen 1.0 und Beta aufgeführt sind. Hierzu zählen administrative Einheiten, Verzeichnisrollen, Verzeichniseinstellungen, Richtlinien und viele weitere. 
 
 Die Berechtigung _Directory.ReadWrite.All_ gewährt die folgenden Rechte:
 
@@ -506,6 +504,16 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 Keine.
 
+### <a name="remarks"></a>Hinweise
+Sie können diese Berechtigungen verwenden, um Artefakte anzugeben, die in Azure AD-Autorisierungs- und Tokenanforderungen zurückgegeben werden sollen. Sie werden von den Azure AD v1.0- und v2.0-Endpunkten unterschiedlich unterstützt.
+
+Beim Azure AD (v1.0)-Endpunkt wird nur die Berechtigung _openid_ verwendet. Sie wird im *scope*-Parameter in einer Autorisierungsanforderung angegeben, um ein ID-Token zurückzugeben, wenn Sie das OpenID Connect-Protokoll zum Anmelden eines Benutzers bei Ihrer App verwenden. Weitere Informationen finden Sie unter [Autorisieren des Zugriffs auf Webanwendungen mithilfe von Open ID Connect und Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code). Damit ein ID-Token erfolgreich zurückgegeben wird, müssen Sie auch sicherstellen, dass die Berechtigung _User.Read_ konfiguriert wird, wenn Sie Ihre App registrieren. 
+
+Beim Azure AD v2.0-Endpunkt geben Sie die Berechtigung _offline\_access_ im _scope_-Parameter an, um explizit ein Aktualisierungstoken anzufordern, wenn Sie das OAuth 2.0- oder OpenID-Protokoll verwenden. Bei OpenID Connect geben Sie die Berechtigung _openid_ zum Anfordern eines ID-Tokens an. Sie können auch die Berechtigung _email_, die Berechtigung _profile_ oder beide angeben, um zusätzliche Ansprüche im ID-Token zurückzugeben. Sie müssen nicht _User.Read_ angeben, um ein ID-Token mit dem v2.0-Endpunkt zurückzugeben. Weitere Informationen finden Sie unter [OpenID Connect -Bereiche](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes).
+
+> **Wichtig** In der MSAL (Microsoft Authentication Library) werden derzeit standardmäßig _offline\_access_, _openid_, _profile_, und _email_  in Autorisierungs- und Tokenanforderungen angegeben. Wenn Sie diese Berechtigungen explizit angeben, bedeutet dies im Standardfall, dass Azure AD möglicherweise einen Fehler zurückgibt.
+>  
+
 ---
 
 ## <a name="people-permissions"></a>Personenberechtigungen
@@ -712,24 +720,24 @@ In diesem Abschnitt werden einige gängige Szenarios für [user](../api-referenc
 
 ### <a name="access-scenarios-on-the-user-resource"></a>Zugriffsszenarios für die User-Ressource
 
-| **App-Aufgaben, die den Benutzer betreffen**     |  **Erforderliche Berechtigungen** | **Berechtigungszeichenfolgen** |
+| **App-Aufgaben, die den Benutzer betreffen**   |  **Erforderliche Berechtigungen** | **Berechtigungszeichenfolgen** |
 |:-------------------------------|:---------------------|:---------------|
-| Die App möchte die grundlegenden Informationen von anderen Benutzern lesen (nur Anzeigename und Bild), beispielsweise um diese in einer Personenauswahl anzuzeigen.     | _User.ReadBasic.All_  |  Grundlegende Profile aller Benutzer lesen |
+| Die App möchte die grundlegenden Informationen von anderen Benutzern lesen (nur Anzeigename und Bild), beispielsweise um diese in einer Personenauswahl anzuzeigen.   | _User.ReadBasic.All_  |  Grundlegende Profile aller Benutzer lesen |
 | Die App möchte das vollständige Benutzerprofil des angemeldeten Benutzers lesen (direkte Mitarbeiter, Vorgesetzte usw.).     | _User.Read_ | Anmelden und Lesen von Benutzerprofilen zulassen|
-| Die App möchte das vollständige Benutzerprofil aller Benutzer lesen.     | _User.Read.All_ |  Lesezugriff auf vollständige Profile aller Benutzer   |
-| Die App möchte Dateien, E-Mails und Kalenderinformationen für den angemeldeten Benutzer lesen.     | _User.Read_, _Files.Read_, _Mail.Read_, _Calendars.Read_ | Anmeldung aktivieren und Lesezugriff auf Benutzerprofil, Lesezugriff auf Benutzerdateien, Lesezugriff auf Benutzer-E-Mails, Lesezugriff auf Benutzerkalender |
+| Die App möchte das vollständige Benutzerprofil aller Benutzer lesen.  | _User.Read.All_ |  Lesezugriff auf vollständige Profile aller Benutzer   |
+| Die App möchte Dateien, E-Mails und Kalenderinformationen für den angemeldeten Benutzer lesen.  | _User.Read_, _Files.Read_, _Mail.Read_, _Calendars.Read_ | Anmeldung aktivieren und Lesezugriff auf Benutzerprofil, Lesezugriff auf Benutzerdateien, Lesezugriff auf Benutzer-E-Mails, Lesezugriff auf Benutzerkalender |
 | Die App möchte die Dateien des angemeldeten Benutzers (eigene) Dateien und Dateien, die andere Benutzer für den angemeldeten Benutzer (mich) freigegeben haben, lesen. | _User.Read_, _Files.Read_, _Sites.Read.All_ | Anmeldung aktivieren und Benutzerprofile lesen, Dateien von Benutzern lesen, Artikel in allen Websitesammlungen lesen |
-| Die App möchte das vollständige Benutzerprofil für den angemeldeten Benutzer lesen und schreiben.     | _User.ReadWrite_ | Lese- und Schreibzugriff auf Benutzerprofile |
-| Die App möchte das vollständige Benutzerprofil aller Benutzer lesen und schreiben.     | _User.ReadWrite.All_ | Lese- und Schreibzugriff auf vollständige Profile aller Benutzer |
-| Die App möchte Dateien, E-Mails und Kalenderinformationen für den angemeldeten Benutzer lesen und schreiben.     | _User.ReadWrite_, _Files.ReadWrite_, _Mail.ReadWrite_, _Calendars.ReadWrite_  |  Lese- und Schreibzugriff auf Benutzerprofil, Lese- und Schreibzugriff auf Benutzerprofil, Lese- und Schreibzugriff auf Benutzer-E-Mails, Vollzugriff auf Benutzerkalender |
+| Die App möchte das vollständige Benutzerprofil für den angemeldeten Benutzer lesen und schreiben.   | _User.ReadWrite_ | Lese- und Schreibzugriff auf Benutzerprofile |
+| Die App möchte das vollständige Benutzerprofil aller Benutzer lesen und schreiben.    | _User.ReadWrite.All_ | Lese- und Schreibzugriff auf vollständige Profile aller Benutzer |
+| Die App möchte Dateien, E-Mails und Kalenderinformationen für den angemeldeten Benutzer lesen und schreiben.    | _User.ReadWrite_, _Files.ReadWrite_, _Mail.ReadWrite_, _Calendars.ReadWrite_  |  Lese- und Schreibzugriff auf Benutzerprofil, Lese- und Schreibzugriff auf Benutzerprofil, Lese- und Schreibzugriff auf Benutzer-E-Mails, Vollzugriff auf Benutzerkalender |
    
 
 ### <a name="access-scenarios-on-the-group-resource"></a>Zugriffsszenarios für die Group-Ressource
     
-| **App-Aufgaben, die die Gruppe betreffen**     |  **Erforderliche Berechtigungen** |  **Berechtigungszeichenfolgen** |
+| **App-Aufgaben, die die Gruppe betreffen**  |  **Erforderliche Berechtigungen** |  **Berechtigungszeichenfolgen** |
 |:-------------------------------|:---------------------|:---------------|
-| Die App möchte die grundlegenden Gruppeninformationen (nur Anzeigename und Bild) lesen, beispielsweise um diese in einer Gruppenauswahl anzuzeigen.     | _Group.Read.All_  | Lesezugriff auf alle Gruppen|
+| Die App möchte die grundlegenden Gruppeninformationen (nur Anzeigename und Bild) lesen, beispielsweise um diese in einer Gruppenauswahl anzuzeigen.  | _Group.Read.All_  | Lesezugriff auf alle Gruppen|
 | Die App möchte alle Inhalte in allen Office 365-Gruppen lesen, einschließlich Dateien und Unterhaltungen.  Außerdem muss die App Gruppenmitgliedschaften anzeigen und in der Lage sein, Gruppenmitgliedschaften zu aktualisieren (wenn Besitzer).  |  _Group.Read.All_ | Lesezugriff auf Elemente in allen Websitesammlungen, Lesezugriff auf alle Gruppen|
-| Die App möchte alle Inhalte in allen Office 365-Gruppen lesen und schreiben, einschließlich Dateien und Unterhaltungen.  Außerdem muss die App Gruppenmitgliedschaften anzeigen und in der Lage sein, Gruppenmitgliedschaften zu aktualisieren (wenn Besitzer).  |     _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Lese- und Schreibzugriff auf alle Gruppen, Bearbeiten oder Löschen von Artikeln in allen Websitesammlungen |
+| Die App möchte alle Inhalte in allen Office 365-Gruppen lesen und schreiben, einschließlich Dateien und Unterhaltungen.  Außerdem muss die App Gruppenmitgliedschaften anzeigen und in der Lage sein, Gruppenmitgliedschaften zu aktualisieren (wenn Besitzer).  |   _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Lese- und Schreibzugriff auf alle Gruppen, Bearbeiten oder Löschen von Artikeln in allen Websitesammlungen |
 | Die App möchte eine Office 365-Gruppe ermitteln (suchen). Der Benutzer kann eine bestimmte Gruppe suchen und aus der Aufzählungsliste eine Gruppe auswählen, damit der Benutzer der Gruppe beitreten kann.     | _Group.ReadWrite.All_ | Schreib-/Lesezugriff auf alle Gruppen|
-| Die App möchte über AAD Graph eine Gruppe erstellen. |     _Group.ReadWrite.All_ | Schreib-/Lesezugriff auf alle Gruppen|
+| Die App möchte über AAD Graph eine Gruppe erstellen. |   _Group.ReadWrite.All_ | Schreib-/Lesezugriff auf alle Gruppen|

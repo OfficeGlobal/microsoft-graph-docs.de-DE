@@ -2,6 +2,8 @@
 
 Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschließlich der Version 1.0 und des Beta-Endpunkts von Microsoft Graph-APIs.  
 
+Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs finden Sie unter [Bekannte Probleme](known_issues.md).
+
 ## <a name="may-2017"></a>Mai 2017
 
 ### <a name="application-api-changes"></a>Änderungen der Anwendungs-API

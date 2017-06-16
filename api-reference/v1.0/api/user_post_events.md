@@ -1,6 +1,6 @@
 # <a name="create-event"></a>Ereignis erstellen
 
-Erstellen eines [Ereignisses](../resources/event.md) im Standardkalender des Benutzers. 
+Erstellen eines [Ereignisses](../resources/event.md) im Standardkalender des Benutzers oder in einem angegebenen Kalender.
 
 Sie können die Zeitzone für alle Start- und Endzeiten des Ereignisses als Teil dieser Werte angeben, da die **start**- und **end**-Eigenschaft vom Typ [dateTimeTimeZone](../resources/datetimetimezone.md) sind. 
 

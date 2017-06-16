@@ -11,7 +11,7 @@ Microsoft Graph bietet zwei Arten von Erweiterungen. Wählen Sie den Erweiterun
 
 ## <a name="supported-resources"></a>Unterstützte Ressourcen
 
-In der folgenden Tabelle wird die aktuelle Unterstützung für offene Erweiterungen und Schemaerweiterungen aufgeführt und angegeben, ob diese allgemein (in /v1.0- und /beta-Endpunkten) oder nur in der Vorschau (im /beta-Endpunkt) verfügbar sind. 
+In der folgenden Tabelle sind die Ressourcen aufgeführt, die offene Erweiterungen und Schemaerweiterungen unterstützen und angeben, ob sie die allgemeine Verfügbarkeit (GA) erreicht haben (verfügbar sowohl in v1.0- und Beta-Endpunkten) oder sich in der Vorschau befinden (nur im Beta-Endpunkt verfügbar).  
 
 | Ressource | Offene Erweiterungen | Schemaerweiterungen |
 |---------------|-------|-------|
@@ -121,6 +121,7 @@ Bekannte Einschränkungen bei der Verwendung von Erweiterungen finden Sie im [Ab
 
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365-Domänen](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+
+  [Office 365-Domänen](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 
 [Hinzufügen und Überprüfen einer Domäne für einen Office 365-Mandanten](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

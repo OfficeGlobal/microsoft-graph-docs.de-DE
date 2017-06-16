@@ -11,10 +11,12 @@ Alle Beispiele unten beziehen sich auf `https://graph.microsoft.com/v1.0`.
 | [Stammwebsite abrufen][]    | GET /sites/root                                   |
 | [Website abrufen][]         | GET /sites/{site-id}                              |
 | [Website nach Pfad abrufen][] | GET /sites/{hostname}:/{site-path}                |
+| [Website für eine Gruppe abrufen][] | GET /groups/{group-id}/sites/root             |
 
 [Website abrufen]: ../api/site_get.md
 [Stammwebsite abrufen]: ../api/site_get.md
 [Website nach Pfad abrufen]: ../api/site_get.md
+[Website für eine Gruppe abrufen]: ../api/site_get.md
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

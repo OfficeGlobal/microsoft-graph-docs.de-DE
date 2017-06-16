@@ -1,6 +1,6 @@
 # <a name="known-issues-with-microsoft-graph"></a>Bekannte Probleme in Microsoft Graph
 
-Dieser Artikel beschreibt bekannte Probleme in Microsoft Graph. Informationen zu den neuesten Updates finden Sie im [Microsoft Graph Changelog](changelog.md).
+Dieser Artikel beschreibt bekannte Probleme in Microsoft Graph. Informationen zu den neuesten Updates finden Sie im [Microsoft Graph-Änderungsprotokoll](changelog.md).
 
 ## <a name="users"></a>Benutzer
 
@@ -28,7 +28,7 @@ Bekannte Probleme bei der Verwendung der Delta-Abfrage finden Sie im Abschnitt [
 
 ## <a name="groups-and-microsoft-teams"></a>Gruppen und Microsoft Teams
 
->**Hinweis** Microsoft Teams ist jetzt nur im Beta-Endpunkt von Microsoft Graph als Vorschauversion verfügbar.
+>**Hinweis** Microsoft Teams ist derzeit nur im Beta-Endpunkt von Microsoft Graph als Vorschauversion verfügbar.
 
 ### <a name="policy"></a>Richtlinie
 
@@ -56,7 +56,7 @@ Beispiele für Gruppenfeatures, die nur delegierte Berechtigungen unterstützen:
 
 ### <a name="teams-in-microsoft-teams-preview"></a>Teams in Microsoft Teams (Vorschau)
 
-Microsoft Teams bauen auf Office 365-Gruppen auf.  Alle Gruppen-APIs können auch für Teams verwendet werden, mit der Ausnahme, dass mit „Gruppe erstellen“ derzeit kein Team erstellt werden kann.  In zukünftigen API-Versionen wird dies unterstützt.
+Microsoft Teams und Office 365-Gruppen haben eine ähnliche Funktionalität. Alle Gruppen-APIs können für Teams verwendet werden, mit der Ausnahme, dass mit der API „Gruppe erstellen“ derzeit kein Team erstellt werden kann.  In zukünftigen API-Versionen wird dies unterstützt.
 
 ### <a name="microsoft-teams-channels-preview"></a>Microsoft Teams-Kanäle (Vorschau)
 
@@ -64,7 +64,7 @@ Zurzeit können Sie Kanäle lesen und erstellen, aber nicht aktualisieren oder l
 
 ### <a name="microsoft-teams-chat-threads-and-chat-messages-preview"></a>Microsoft Teams-Chatthreads und -Chatnachrichten (Vorschau)
 
-Zurzeit können Sie Chatthreads in Kanälen erstellen, aber keine vorhandenen Chatthreads lesen und keine Antworten auf diese hinzufügen.  Außerdem können Sie keine direkten Chats zwischen Benutzern lesen oder schreiben, die sich außerhalb des Bereichs eines Teams oder Kanals befinden.  Zukünftige API-Versionen werden über zusätzliche Funktionen in diesem Bereich verfügen.
+Zurzeit können Sie Chatthreads in Kanälen erstellen, aber keine vorhandenen Chatthreads lesen und keine Antworten auf diese hinzufügen. Außerdem können Sie keine direkten Chats zwischen Benutzern lesen oder schreiben, die sich außerhalb des Bereichs eines Teams oder Kanals befinden.  Zukünftige API-Versionen werden über zusätzliche Funktionen in diesem Bereich verfügen.
 
 
 ### <a name="adding-and-getting-attachments-of-group-posts"></a>Hinzufügen und Abrufen von Anlagen von Gruppenbeiträgen
@@ -176,8 +176,8 @@ Der comment-Parameter für das Erstellen eines Antwort- oder Weiterleitungsentwu
 
 * **$expand**-Einschränkungen:
     * Keine Unterstützung für `nextLink`.
-     * Keine Unterstützung für mehr als eine Erweiterungsebene.
-     * Keine Unterstützung mit zusätzlichen Parametern (**$filter**, **$select**).
+    * Keine Unterstützung für mehr als eine Erweiterungsebene.
+    * Keine Unterstützung mit zusätzlichen Parametern (**$filter**, **$select**).
 * Mehrere Namespaces werden nicht unterstützt.
 * GET-Anforderungen für `$ref` und Umwandlung wird für Benutzer, Gruppen, Geräte, Dienstprinzipale und Anwendungen nicht unterstützt.
 * `@odata.bind` wird nicht unterstützt.  Ein Entwickler kann daher `Accepted` oder `RejectedSenders` für eine Gruppe nicht ordnungsgemäß festlegen.
