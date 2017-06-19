@@ -3,6 +3,7 @@
 Stellt ein Azure AD-Benutzerkonto dar. Erbt von [directoryObject](directoryobject.md).
 
 Diese Ressource unterstützt Folgendes:
+
 - Hinzufügen Ihrer eigenen Daten zu benutzerdefinierten Eigenschaften mithilfe von [Erweiterungen](../../../concepts/extensibility_overview.md).
 - Verwenden einer [Delta-Abfrage](../../../concepts/delta_query_overview.md) zum Nachverfolgen von inkrementellen Hinzufügungen, Löschungen und Aktualisierungen durch Bereitstellen der [delta](../api/user_delta.md)-Funktion.
 
@@ -63,7 +64,7 @@ Diese Ressource unterstützt Folgendes:
 |assignedPlans|[assignedPlan](assignedplan.md) collection|Die Pläne, die dem Benutzer zugewiesen sind. Schreibgeschützt. Lässt keine NULL-Werte zu. |
 |birthday|DateTimeOffset|Der Geburtstag des Benutzers. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |businessPhones|String-Sammlung|Die Telefonnummern für den Benutzer. HINWEIS: Obwohl dies eine String-Sammlung ist, kann nur eine Nummer für diese Eigenschaft festgelegt werden.|
-|Ort|Zeichenfolge|Die Stadt, in der sich der Benutzer befindet. Unterstützt $filter.|
+|Ort|String|Die Stadt, in der sich der Benutzer befindet. Unterstützt $filter.|
 |companyName|String|Der Unternehmensname, dem der Benutzer zugewiesen ist.|
 |country|String|Land/Region, in dem/der sich der Benutzer befindet; z. B. „USA“ oder „UK“. Unterstützt $filter.|
 |department
@@ -105,7 +106,7 @@ Diese Ressource unterstützt Folgendes:
 
 ## <a name="relationships"></a>Beziehungen
 
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |calendar|[Calendar](calendar.md)|Primärer Kalender des Benutzers. Schreibgeschützt.|
 |calendarGroups|[CalendarGroup](calendargroup.md) collection|Die Kalendergruppen des Benutzers. Schreibgeschützt. Lässt NULL-Werte zu.|
