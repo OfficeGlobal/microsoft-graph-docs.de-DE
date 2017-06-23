@@ -153,7 +153,7 @@ Nachdem Ihre Änderungen erfolgreich mit dem zentralen Repository zusammengefüh
 Zum Löschen der Verzweigung gehen Sie folgendermaßen vor:
 
 1. Geben in GitBash an der Eingabeaufforderung `git checkout master` ein.  Dadurch wird sichergestellt, dass Sie sich nicht in der zu löschenden Verzweigung befinden (das ist nicht zulässig).
-2. Geben Sie dann `git branch -d <branch name>` in der Befehlszeile ein.  Dadurch wird die Verzweigung auf dem lokalen Computer nur dann gelöscht, wenn sie erfolgreich mit dem übergeordneten Repository zusammengeführt wurde. (Sie können dieses Verhalten mit dem `�D`-Flag außer Kraft setzen, allerdings sollten Sie sich in diesem Falle wirklich sicher sein.)
+2. Geben Sie dann `git branch -d <branch name>` in der Befehlszeile ein.  Dadurch wird die Verzweigung auf dem lokalen Computer nur dann gelöscht, wenn sie erfolgreich mit dem übergeordneten Repository zusammengeführt wurde. (Sie können dieses Verhalten mit dem `D`-Flag außer Kraft setzen, allerdings sollten Sie sich in diesem Falle wirklich sicher sein.)
 3. Geben Sie schließlich `git push origin :<branch name>` an der Befehlszeile ein (ein Leerzeichen vor dem Doppelpunkt, kein Leerzeichen dahinter).  Dadurch wird die Verzweigung in Ihrer Github-Verzweigung gelöscht.
 
 Herzlichen Glückwunsch, Sie haben erfolgreich am Projekt mitgewirkt.
@@ -183,7 +183,7 @@ Dies ist eine Liste der am häufigsten verwendeten Markdown-Syntax:
 
 * **Aufzählungen:** Aufzählungen (nicht sortiert) sind fast identisch mit sortierten Listen, abgesehen davon, dass `1. ` durch `* `, `- ` oder `+ ` ersetzt wird.  Mehrere Elementlisten funktionieren genauso wie sortierte Listen.
 * **Links:** Die grundlegende Syntax für einen Link ist `[visible link text](link url)`. Links können auch Verweise enthalten, was im Abschnitt **Link- und Bildverweise** weiter unten erläutert wird.
-* **Bilder:** Die grundlegende Syntax für ein Bild ist `![alt text for the image](image url)`. Bilder können auch Verweise enthalten, was im Abschnitt **- und Bildverweise** weiter unten erläutert wird.
+* **Bilder:** Die grundlegende Syntax für ein Bild ist `![alt text for the image](image url)`. Bilder können auch Verweise enthalten, was im Abschnitt **Link- und Bildverweise** weiter unten erläutert wird.
 * **Inline-HTML:** Mit Markdown können Sie HTML inline einschließen, dies sollte jedoch vermieden werden.
 
 ### <a name="link-and-image-references"></a>Link- und Bildverweise
@@ -213,3 +213,5 @@ Mithilfe von Verweisen, die am Ende Ihrer Datei gruppiert werden, können Sie Li
 [Markdown-Homepage]: http://daringfireball.net/projects/markdown/
 [Markdown Pad]: http://markdownpad.com/
 [microsoftgraph/microsoft-graph-docs issues]: https://github.com/microsoftgraph/microsoft-graph-docs/issues
+
+In diesem Projekt wurden die [Microsoft Open Source-Verhaltensregeln](https://opensource.microsoft.com/codeofconduct/) übernommen. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zu Verhaltensregeln](https://opensource.microsoft.com/codeofconduct/faq/), oder richten Sie Ihre Fragen oder Kommentare an [opencode@microsoft.com](mailto:opencode@microsoft.com).
