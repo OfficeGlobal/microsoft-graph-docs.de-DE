@@ -13,13 +13,13 @@ PATCH /planner/plans/<id>
 ### <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Erforderlich. |
 | If-Match  | Letzter bekannter ETag-Wert für den zu aktualisierenden plannerPlan. Erforderlich.|
 
 ### <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.
 
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |owner|String|[Gruppe](../resources/group.md) `id`, in deren Besitz der Plan ist. Dieses Feld kann erst festgelegt werden, wenn eine gültige Gruppe vorhanden ist. Nachdem dieses festgelegt wurde, kann es nur noch vom Besitzer aktualisiert werden.|
 |title|String|Der Titel des Plans.|

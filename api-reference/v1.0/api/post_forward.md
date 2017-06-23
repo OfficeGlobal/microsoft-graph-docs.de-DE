@@ -17,12 +17,12 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
-| Parameter       | Typ    |Beschreibung|
+| Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |comment|String|Optionaler Kommentar, der zusammen mit dem Beitrag weitergeleitet wird.|
 |toRecipients|[recipient](../resources/recipient.md) collection|Die Empfänger, an die der Thread weitergeleitet wird.|

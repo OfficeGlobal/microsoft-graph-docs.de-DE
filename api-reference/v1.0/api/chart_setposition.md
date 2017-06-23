@@ -15,13 +15,13 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setPosition
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Erforderlich. |
 
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
-| Parameter       | Typ    |Beschreibung|
+| Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |startCell|string|Die Startzelle. An diese Position wird das Diagramm verschoben. Die Startzelle ist die obere linke oder die obere rechte Zelle, abhängig davon, ob die eingestellte Textrichtung des Benutzers von links nach rechts oder von rechts nach links ist.|
 |endCell|string|Optional. Die Endzelle. Wenn angegeben, werden Breite und Höhe des Diagramms so eingestellt, dass diese Zelle/dieser Bereich vollständig bedeckt ist.|

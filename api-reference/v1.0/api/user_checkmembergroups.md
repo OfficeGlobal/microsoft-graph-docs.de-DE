@@ -13,13 +13,13 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
-| Parameter       | Typ    |Beschreibung|
+| Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |groupIds|String|Ein Array von Gruppen-IDs|
 

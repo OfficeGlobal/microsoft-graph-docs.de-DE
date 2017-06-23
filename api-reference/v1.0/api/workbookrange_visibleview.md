@@ -11,7 +11,7 @@ GET /me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView
 ### <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ### <a name="request-body"></a>Anforderungstext

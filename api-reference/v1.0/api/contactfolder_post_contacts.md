@@ -16,7 +16,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json. Erforderlich.   |
 
 ## <a name="request-body"></a>Anforderungstext

@@ -17,13 +17,13 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Erforderlich. |
 
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
-| Parameter       | Typ    |Beschreibung|
+| Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |row|number|Zeilenanzahl des abzurufenden Bereichs. Nullindiziert.|
 

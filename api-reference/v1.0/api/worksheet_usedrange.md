@@ -16,15 +16,15 @@ GET /workbook/worksheets/{id|name}/UsedRange
 ## <a name="optional-request-parameter"></a>Optionaler Anforderungsparameter
 Stellen Sie in der Anforderungs-URL einen optionalen Abfrageparameter bereit.
 
-| Parameter       | Typ    |Beschreibung|
+| Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|valuesOnly|Boolescher Wert|Optional. Betrachtet nur Zellen mit Werten als verwendet (ignoriert die Formatierung).|
+|valuesOnly|Boolesch|Optional. Betrachtet nur Zellen mit Werten als verwendet (ignoriert die Formatierung).|
 
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Erforderlich. |
 
 ## <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [Range](../resources/range.md)-Objekt im Antworttext zurückgegeben.

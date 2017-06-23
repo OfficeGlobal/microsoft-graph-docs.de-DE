@@ -18,7 +18,7 @@ DELETE /drive/root/createdByUser/photo
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
 | if-match  | string  | Wenn dieser Anforderungsheader enthalten ist und das angegebene Etag (oder CTag) nicht mit dem aktuellen Etag des Elements übereinstimmt, wird die Antwort `412 Precondition Failed` zurückgegeben, und das Element wird nicht gelöscht.|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 
 ## <a name="request-body"></a>Anforderungstext

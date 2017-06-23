@@ -11,13 +11,13 @@ POST /users/{id | userPrincipalName}/assignLicense
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
-| Parameter       | Typ    |Beschreibung|
+| Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |addLicenses|AssignedLicense|Eine Sammlung von [assignedLicense](../resources/assignedlicense.md)-Objekten, die die hinzuzufügenden Lizenzen angeben. Sie können Pläne deaktivieren, die einer Lizenz zugeordnet sind, indem Sie die **disabledPlans**-Eigenschaft für ein [assignedLicense](../resources/assignedlicense.md)-Objekt festlegen.|
 |removeLicenses|Guid|Eine Auflistung von GUIDs, die die zu entfernenden Lizenzen identifizieren.|

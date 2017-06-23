@@ -12,13 +12,13 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/i
 ### <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ### <a name="request-body"></a>Anforderungstext
 Stellen Sie in der URL der Anforderung die folgenden Abfrageparameter mit Werten bereit.
 
-| Parameter       | Typ    |Beschreibung|
+| Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Index|Int32|Index des Elements, das zurückgegeben werden soll.|
 

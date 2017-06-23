@@ -18,7 +18,7 @@ POST /groups
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Die folgende Tabelle zeigt die Eigenschaften der [Gruppe](../resources/group.md) Ressource, die Sie zumindest angeben müssen, wenn Sie eine Gruppe erstellen. 

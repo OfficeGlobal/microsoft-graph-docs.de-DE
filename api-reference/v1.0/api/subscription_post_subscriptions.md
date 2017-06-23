@@ -15,7 +15,7 @@ POST /subscriptions
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 
 ## <a name="response"></a>Antwort

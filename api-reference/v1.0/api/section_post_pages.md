@@ -16,7 +16,7 @@ POST /groups/{id}/onenote/sections/{id}/pages
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | `Bearer <token>` Ein gültiges OAuth-Token, das der App basierend auf den Anmeldeinformationen des Benutzers und unter der Voraussetzung, dass der Benutzer autorisierten Zugriff hat, bereitgestellt wird. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string | `text/html` oder `application/xhtml+xml` für den HTML-Inhalt, auch für den erforderlichen Teil „Präsentation“ von mehrteiligen Anforderungen. Mehrteilige Anforderungen verwenden den Inhaltstyp `multipart/form-data; boundary=your-boundary`. |
 
 ## <a name="request-body"></a>Anforderungstext

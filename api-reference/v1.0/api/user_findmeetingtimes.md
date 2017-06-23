@@ -15,7 +15,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Wert|
 |:---------------|:----------|
-| Authorization  | Bearer <code>. Required.|
+| Authorization  | Bearer {token}. Erforderlich. |
 | Prefer: outlook.timezone | Eine Zeichenfolge, die eine bestimmte Zeitzone für die Antwort darstellt, beispielsweise „Pacific Standard Time“. Optional. Wenn dieser Header nicht angegeben ist, wird UTC verwendet.|
 
 
@@ -23,7 +23,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 In der Tabelle unten sind alle unterstützten Parameter aufgeführt. Geben Sie abhängig von Ihrem jeweiligen Szenario für jeden notwendigen Parameter im Anforderungstext ein JSON-Objekt an. 
 
 
-| Parameter       | Typ    |Beschreibung|
+| Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |attendees|[attendeeBase](../resources/attendeebase.md) collection|Eine Sammlung von Teilnehmern oder Ressourcen für die Besprechung. Da findMeetingTimes davon ausgeht, dass jeder Teilnehmer, bei dem es sich um eine Person handelt, immer erforderlich ist, geben Sie `required` für eine Person und `resource` für eine Ressource in der entsprechenden **type**-Eigenschaft an. Ist diese Sammlung leer, sucht **findMeetingTimes** nur für den Organisator nach freien Zeitfenstern. Optional.|
 |isOrganizerOptional|Edm.Boolean|Geben Sie `True` an, wenn der Organisator nicht zwingend teilnehmen muss. Der Standardwert lautet `false`. Optional.|

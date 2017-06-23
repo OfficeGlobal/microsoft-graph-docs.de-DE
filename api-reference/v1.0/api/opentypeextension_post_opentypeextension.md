@@ -66,7 +66,7 @@ Im Abschnitt [Anforderungstext](#request-body) wird beschrieben, wie Sie _die Er
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Wert |
 |:---------------|:----------|
-| Authorization | Bearer %token%|
+| Authorization | Bearer {token}. Erforderlich. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Anforderungstext

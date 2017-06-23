@@ -17,18 +17,18 @@ PATCH /schemaExtensions/{id}
 ### <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
-| Authorization  | Bearer &lt;token&gt;. Erforderlich. |
+| Authorization  | Bearer {token}. Erforderlich. |
 | Content-Type   | application/json | 
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.
 
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |description|String|Beschreibung für die Schemaerweiterung.|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md)-Sammlung|Die Sammlung von Eigenschaftennamen und Typen, die die Schemaerweiterungsdefinition bilden. Nur additive Änderungen sind zulässig. |
 |status|String|Der Lebenszyklusstatus der Schemaerweiterung. Bei der Erstellung ist der anfängliche Status **InDevelopment**. Mögliche Statusübergänge sind von **InDevelopment** zu **Available**, von **Available** zu **Deprecated** und von **Deprecated** zu **Available**.|
-|targetTypes|String-Sammlung|Satz von Microsoft Graph-Typen (die Erweiterungen unterstützen können), auf die die Schemaerweiterung angewendet werden kann.  Nur additive Änderungen sind zulässig.|
+|targetTypes|String collection|Satz von Microsoft Graph-Typen (die Erweiterungen unterstützen können), auf die die Schemaerweiterung angewendet werden kann.  Nur additive Änderungen sind zulässig.|
 
 ## <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [schemaExtension](../resources/schemaextension.md)-Objekt im Antworttext zurückgegeben.

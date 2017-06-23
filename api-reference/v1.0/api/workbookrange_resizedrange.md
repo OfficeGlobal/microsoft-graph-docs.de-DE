@@ -12,12 +12,12 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 ### <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ### <a name="parameters"></a>Parameter
 
-| Parameter       | Typ    |Beschreibung|
+| Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |deltarows|Int32|Die Anzahl von Zeilen, um die die untere rechte Ecke relativ zum aktuellen Bereich zu erweitern ist. Verwenden Sie eine positive Zahl, um den Bereich zu erweitern, oder eine negative Zahl, um ihn zu verkleinern.|
 |deltaColumns|Int32|Die Anzahl von Spalten, um die die untere rechte Ecke relativ zum aktuellen Bereich zu erweitern ist. Verwenden Sie eine positive Zahl, um den Bereich zu erweitern, oder eine negative Zahl, um ihn zu verkleinern.|
@@ -25,7 +25,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 ### <a name="request-body"></a>Anforderungstext
 Stellen Sie in der URL der Anforderung die folgenden Abfrageparameter mit Werten bereit.
 
-| Parameter       | Typ    |Beschreibung|
+| Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |deltaRows|Int32||
 |deltaColumns|Int32||

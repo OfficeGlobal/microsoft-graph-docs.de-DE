@@ -13,7 +13,7 @@ DELETE /planner/tasks/<id>
 ### <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Erforderlich. |
 | If-Match  | Letzter bekannter ETag-Wert für die zu löschende **plannerTask**. Erforderlich.|
 
 ### <a name="request-body"></a>Anforderungstext

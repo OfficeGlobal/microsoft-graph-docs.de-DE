@@ -14,7 +14,7 @@ DELETE /planner/plans/<id>
 ### <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Erforderlich. |
 | If-Match  | Letzter bekannter ETag-Wert für den zu löschenden **plannerPlan**. Erforderlich.|
 
 ### <a name="request-body"></a>Anforderungstext

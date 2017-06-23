@@ -9,8 +9,8 @@ Ein GET-Vorgang sucht nach dem angegebenen Foto im Postfach des Benutzers in Exc
 ## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
 
-*    Profilfotos aller Benutzer im Mandanten einschließlich des angemeldeten Benutzers – *User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
-*    Profilfoto des angemeldeten Benutzers – *User.Read, User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
+*   Profilfotos aller Benutzer im Mandanten einschließlich des angemeldeten Benutzers – *User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
+*   Profilfoto des angemeldeten Benutzers – *User.Read, User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
 * Profilfoto einer **Gruppe** - *Group.Read.All; Group.ReadWrite.All*
 * Foto eines **Kontakts** - *Contacts.Read; Contacts.ReadWrite*
 
@@ -43,7 +43,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer \<token\>. Required. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

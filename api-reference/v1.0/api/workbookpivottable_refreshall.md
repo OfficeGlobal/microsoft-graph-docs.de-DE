@@ -13,7 +13,7 @@ POST /me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
 ### <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ### <a name="request-body"></a>Anforderungstext

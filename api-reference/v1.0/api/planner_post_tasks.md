@@ -15,7 +15,7 @@ POST /planner/tasks
 ### <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Erforderlich. |
 
 ### <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [plannerTask](../resources/plannertask.md)-Objekts an. Die Eigenschaft „planId“ des **plannerTask**-Objekts muss auf die ID eines vorhandenen [plannerPlan](../resources/plannerplan.md)-Objekts festgelegt werden.

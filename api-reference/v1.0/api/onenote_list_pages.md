@@ -23,7 +23,7 @@ Die Standardantwort erweitert `parentSection` und wählt die Eigenschaften `id`,
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | `Bearer <token>` Ein gültiges OAuth-Token, das der App basierend auf den Anmeldeinformationen des Benutzers und unter der Voraussetzung, dass der Benutzer autorisierten Zugriff hat, bereitgestellt wird. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Accept | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext

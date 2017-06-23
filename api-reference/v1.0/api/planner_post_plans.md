@@ -16,7 +16,7 @@ POST /planner/plans
 ### <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Erforderlich. |
 
 ### <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [plannerPlan](../resources/plannerplan.md)-Objekts an. Die Eigenschaft „owner“ des **plannerPlan**-Objekts muss auf die ID eines [group](../resources/group.md)-Objekts festgelegt werden.

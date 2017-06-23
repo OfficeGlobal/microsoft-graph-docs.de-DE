@@ -13,13 +13,13 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json. Erforderlich.   |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
-| Parameter       | Typ    |Beschreibung|
+| Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |destinationId|String|Die Ordner-ID oder der bekannte Ordnername *Posteingang*, *Entwürfe*, *Gesendete Elemente* oder *Gelöschte Elemente*.|
 

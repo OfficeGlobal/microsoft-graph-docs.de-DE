@@ -44,7 +44,7 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Wert |
 |:---------------|:----------|
-| Authorization | Bearer %token%|
+| Authorization | Bearer {token}. Erforderlich. |
 
 
 ## <a name="request-body"></a>Anforderungstext

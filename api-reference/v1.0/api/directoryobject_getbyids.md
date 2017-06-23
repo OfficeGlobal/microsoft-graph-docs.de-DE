@@ -23,7 +23,7 @@ POST /directoryObjects/getById
 
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer &lt;token&gt;. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -32,8 +32,8 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter   | Typ |Beschreibung|
 |:---------------|:--------|:----------|
-|ids|String-Sammlung| Eine Sammlung von IDs, für die Objekte zurückgegeben werden sollen. Sie können bis zu 1000 IDs angeben. |
-|types|String-Sammlung| Eine Sammlung von Ressourcentypen, die den Satz von zu durchsuchenden Ressourcensammlungen angibt. Wenn keine Angabe erfolgt, wird [directoryObject](../resources/directoryobject.md) als Standardwert verwendet; dieser enthält alle im Verzeichnis definierten Ressourcentypen. Jedes Objekt, das von `directoryObject` abgeleitet wird, kann in der Sammlung angegeben werden; Beispiel: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md) usw. Bei den Werten wird nicht zwischen Groß- und Kleinschreibung unterschieden.|
+|ids|String collection| Eine Sammlung von IDs, für die Objekte zurückgegeben werden sollen. Sie können bis zu 1000 IDs angeben. |
+|types|String collection| Eine Sammlung von Ressourcentypen, die den Satz von zu durchsuchenden Ressourcensammlungen angibt. Wenn keine Angabe erfolgt, wird [directoryObject](../resources/directoryobject.md) als Standardwert verwendet; dieser enthält alle im Verzeichnis definierten Ressourcentypen. Jedes Objekt, das von `directoryObject` abgeleitet wird, kann in der Sammlung angegeben werden; Beispiel: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md) usw. Bei den Werten wird nicht zwischen Groß- und Kleinschreibung unterschieden.|
 
 ## <a name="response"></a>Antwort
 

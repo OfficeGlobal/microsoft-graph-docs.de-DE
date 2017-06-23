@@ -18,7 +18,7 @@ DELETE /directoryroles/{id}/members/{id}/$ref
 
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer &lt;token&gt;. *Erforderlich* |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 

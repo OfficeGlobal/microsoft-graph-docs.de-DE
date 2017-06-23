@@ -13,7 +13,7 @@ POST /directoryRoles/{id}/members/$ref
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext

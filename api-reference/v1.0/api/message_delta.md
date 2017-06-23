@@ -17,7 +17,7 @@ GET /users/<id>/mailFolders/{id}/messages/delta
 
 Beim Nachverfolgen von Änderungen in Nachrichten wird eine Runde von einem oder mehreren **delta**-Funktionsaufrufen ausgeführt. Wenn Sie Abfrageparameter (außer `$deltatoken` und `$skiptoken`) verwenden, müssen Sie sie in der ursprünglichen **delta**-Anforderung angeben. Microsoft Graph codiert automatisch alle angegebenen Parameter in den Tokenteil der in der Antwort enthaltenen `nextLink`- oder `deltaLink`-URL. Sie müssen alle gewünschten Abfrageparameter nur einmal im Vorfeld angeben. In nachfolgenden Anforderungen können Sie die `nextLink`- oder `deltaLink`-URL einfach aus der vorherigen Antwort kopieren und anwenden, da diese URL bereits die codierten gewünschten Parameter enthält.
 
-| Abfrageparameter       | Typ    |Beschreibung|
+| Abfrageparameter      | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 | $deltatoken | string | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `deltaLink`-URL des vorhergehenden **delta**-Funktionsaufrufs für dieselbe Nachrichtensammlung zurückgegeben wird und den Abschluss dieser Runde der Änderungsnachverfolgung anzeigt. Speichern Sie die gesamte `deltaLink`-URL einschließlich dieses Tokens, und wenden Sie sie in der ersten Anforderung der nächsten Änderungsnachverfolgungsrunde für diese Sammlung an.|
 | $skiptoken | string | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `nextLink`-URL des vorhergehenden **delta**-Funktionsaufrufs zurückgegeben wird und anzeigt, dass in derselben Nachrichtensammlung weitere Änderungen zum Nachverfolgen vorliegen. |
@@ -35,8 +35,8 @@ Beim Nachverfolgen von Änderungen in Nachrichten wird eine Runde von einem oder
 ### <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {code}. Erforderlich.|
-| Content-Type  | string  | application/json. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Content-Type  | string  | application/json. Erforderlich.  |
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 
 

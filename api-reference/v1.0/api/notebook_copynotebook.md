@@ -18,15 +18,15 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | `Bearer <token>` Ein gültiges OAuth-Token, das der App basierend auf den Anmeldeinformationen des Benutzers und unter der Voraussetzung, dass der Benutzer autorisierten Zugriff hat, bereitgestellt wird. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext ein JSON-Objekt an, das die vom Vorgang benötigten Parameter bereitstellt. Es ist in Ordnung, senden Sie einen leeren Text senden, wenn keine erforderlich sind.
 
-| Parameter       | Typ    |Beschreibung|
+| Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|groupId|String|Die ID der Gruppe, in die kopiert werden soll. Verwenden Sie diesen Parameter nur beim Kopieren in eine Office 365-Gruppe.|
+|groupId|Zeichenfolge|Die ID der Gruppe, in die kopiert werden soll. Verwenden Sie diesen Parameter nur beim Kopieren in eine Office 365-Gruppe.|
 |renameAs|String|Der Name der Kopie. Standardmäßig der Name des vorhandenen Elements. |
 
 

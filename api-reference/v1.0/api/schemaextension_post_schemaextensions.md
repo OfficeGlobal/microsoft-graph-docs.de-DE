@@ -18,7 +18,7 @@ POST /schemaExtensions
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt;. Erforderlich. |
+| Authorization  | Bearer {token}. Erforderlich. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext

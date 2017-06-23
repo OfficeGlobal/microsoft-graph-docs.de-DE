@@ -15,13 +15,13 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
-| Parameter       | Typ    |Beschreibung|
+| Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |comment|String|Ein Kommentar, der eingefügt werden kann. Kann eine leere Zeichenfolge sein.|
 

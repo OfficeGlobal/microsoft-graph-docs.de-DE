@@ -14,7 +14,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json. Erforderlich.   |
 
 ## <a name="request-body"></a>Anforderungstext

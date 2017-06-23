@@ -44,7 +44,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Prefer: outlook.timezone | string | Die Standardzeitzone für Ereignisse in der Antwort. Optional. | 
 
 ## <a name="request-body"></a>Anforderungstext

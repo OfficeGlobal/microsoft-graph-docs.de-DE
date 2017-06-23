@@ -18,7 +18,7 @@ POST /invitations
 ### <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |
 
 ### <a name="request-body"></a>Anforderungstext

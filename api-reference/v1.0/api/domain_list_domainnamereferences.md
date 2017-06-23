@@ -22,7 +22,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.i
 
 | Name      |Beschreibung|
 |:----------|:----------|
-| Authorization  | Bearer &lt;token&gt;. *Erforderlich* |
+| Authorization  | Bearer {token}. Erforderlich. |
 
 ### <a name="request-body"></a>Anforderungstext
 

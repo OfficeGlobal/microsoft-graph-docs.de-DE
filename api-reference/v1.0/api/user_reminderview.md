@@ -12,7 +12,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 ## <a name="function-parameters"></a>Funktionsparameter
 Stellen Sie in der URL der Anforderung die folgenden Funktionsparameter mit Werten bereit.
 
-| Parameter       | Typ    |Beschreibung|
+| Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |startDateTime|String|Das Startdatum und die Uhrzeit des Ereignisses, für das die Erinnerung eingerichtet ist. Der Wert wird im ISO 8601-Format dargestellt, z. B. „2015-11-08T19:00:00.0000000“.|
 |endDateTime|String|Das Enddatum und die Uhrzeit des Ereignisses, für das die Erinnerung eingerichtet ist. Der Wert wird im ISO 8601-Format dargestellt, z. B. „2015-11-08T20:00:00.0000000“.|
@@ -21,9 +21,9 @@ Stellen Sie in der URL der Anforderung die folgenden Funktionsparameter mit Wert
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert|
 |:-----------|:------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type   | application/json |
-| Prefer | <Zeitzone>. Optional. Falls kein Wert vorhanden, wird UTC angenommen.| 
+| Prefer | {Time-zone}. Optional. Falls kein Wert vorhanden, wird UTC angenommen.| 
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -40,7 +40,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "user_reminderview"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/reminderView?startDateTime=startDateTime-value&endDateTime=endDateTime-value
+GET https://graph.microsoft.com/v1.0/me/reminderView(startDateTime='2017-06-05T10:00:00.0000000',endDateTime='2017-06-11T11:00:00.0000000')
 ```
 
 ##### <a name="response"></a>Antwort
@@ -57,31 +57,30 @@ Content-type: application/json
 Content-length: 673
 
 {
-  "value": [
-    {
-      "eventId": "eventId-value",
-      "eventStartTime": {
-        "dateTime": "dateTime-value",
-        "timeZone": "timeZone-value"
-      },
-      "eventEndTime": {
-        "dateTime": "dateTime-value",
-        "timeZone": "timeZone-value"
-      },
-      "changeKey": "changeKey-value",
-      "eventSubject": "eventSubject-value",
-      "eventLocation": {
-        "displayName": "displayName-value",
-        "address": {
-          "street": "street-value",
-          "city": "city-value",
-          "state": "state-value",
-          "countryOrRegion": "countryOrRegion-value",
-          "postalCode": "postalCode-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.reminder)",
+    "value": [
+        {
+            "eventId": "AAMkADNsvAAA=",
+            "changeKey": "SuFHwDRP1EeXJUopWbSLlgAAmBvk2g==",
+            "eventSubject": "Plan summer company picnic",
+            "eventWebLink": "https://outlook.office365.com/owa/?itemid=AAMkADNsvAAA%3D&exvsurl=1&path=/calendar/item",
+            "eventStartTime": {
+                "dateTime": "2017-06-09T18:00:00.0000000",
+                "timeZone": "UTC"
+            },
+            "eventEndTime": {
+                "dateTime": "2017-06-09T19:00:00.0000000",
+                "timeZone": "UTC"
+            },
+            "eventLocation": {
+                "displayName": "Conf Room 3"
+            },
+            "reminderFireTime": {
+                "dateTime": "2017-06-09T17:45:00.0000000",
+                "timeZone": "UTC"
+            }
         }
-      }
-    }
-  ]
+    ]
 }
 ```
 

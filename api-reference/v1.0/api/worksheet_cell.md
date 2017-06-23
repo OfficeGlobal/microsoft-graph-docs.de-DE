@@ -15,7 +15,7 @@ GET /workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Erforderlich. |
 
 
 ## <a name="response"></a>Antwort

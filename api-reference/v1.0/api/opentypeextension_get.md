@@ -108,7 +108,7 @@ Stellen Sie sicher, dass Sie für die Leerzeichen in der `$filter`-Zeichenfolge 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Wert |
 |:---------------|:----------|
-| Authorization | Bearer %token%|
+| Authorization | Bearer {token}. Erforderlich. |
 
 
 ## <a name="request-body"></a>Anforderungstext

@@ -18,17 +18,17 @@ POST /groups/{id}/onenote/sections/{id}/copyToSectionGroup
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | `Bearer <token>` Ein gültiges OAuth-Token, das der App basierend auf den Anmeldeinformationen des Benutzers und unter der Voraussetzung, dass der Benutzer autorisierten Zugriff hat, bereitgestellt wird. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext ein JSON-Objekt an, das die vom Vorgang benötigten Parameter bereitstellt.
 
-| Parameter       | Typ    |Beschreibung|
+| Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|groupId|String|Die ID der Gruppe, in die kopiert werden soll. Verwenden Sie diesen Parameter nur beim Kopieren in eine Office 365-Gruppe.|
+|groupId|Zeichenfolge|Die ID der Gruppe, in die kopiert werden soll. Verwenden Sie diesen Parameter nur beim Kopieren in eine Office 365-Gruppe.|
 |id|String|Erforderlich. Die ID der Zielabschnittsgruppe. |
-|renameAs|String|Der Name der Kopie. Standardmäßig der Name des vorhandenen Elements. |
+|renameAs|Zeichenfolge|Der Name der Kopie. Standardmäßig der Name des vorhandenen Elements. |
 
 <!--groupId missing-->
 <!--|siteCollectionId|String||

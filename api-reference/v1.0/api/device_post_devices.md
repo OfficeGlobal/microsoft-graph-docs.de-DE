@@ -14,7 +14,7 @@ POST /devices
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Content-type | string | application/json |
 
 ## <a name="request-body"></a>Anforderungstext
