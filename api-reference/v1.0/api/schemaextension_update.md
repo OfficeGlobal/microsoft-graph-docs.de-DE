@@ -7,23 +7,28 @@ Die Aktualisierung gilt für alle Ressourcen, die in der Eigenschaft **targetTyp
 Nur die App, mit der eine Schemaerweiterung erstellt wurde (Besitzer-App), kann additive Aktualisierungen an der Erweiterung vornehmen, wenn die Erweiterung den Status **InDevelopment** oder **Available** aufweist. Dies bedeutet, dass die App keine benutzerdefinierten Eigenschaften oder Zielressourcentypen aus der Definition entfernen kann. Die App kann jedoch die Beschreibung der Erweiterung ändern.
 
 ## <a name="prerequisites"></a>Voraussetzungen
+
 Der folgende **Bereich** ist erforderlich, um diese API auszuführen: *Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>HTTP-Anforderung
+
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /schemaExtensions/{id}
 ```
+
 ### <a name="optional-request-headers"></a>Optionale Anforderungsheader
+
 | Name      |Beschreibung|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Erforderlich. |
 | Content-Type   | application/json | 
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.
 
-| Eigenschaft     | Typ   |Beschreibung|
+| Eigenschaft   | Typ |Beschreibung|
 |:---------------|:--------|:----------|
 |description|String|Beschreibung für die Schemaerweiterung.|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md)-Sammlung|Die Sammlung von Eigenschaftennamen und Typen, die die Schemaerweiterungsdefinition bilden. Nur additive Änderungen sind zulässig. |
@@ -31,9 +36,13 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |targetTypes|String collection|Satz von Microsoft Graph-Typen (die Erweiterungen unterstützen können), auf die die Schemaerweiterung angewendet werden kann.  Nur additive Änderungen sind zulässig.|
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [schemaExtension](../resources/schemaextension.md)-Objekt im Antworttext zurückgegeben.
+
+Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.
+
 ## <a name="example"></a>Beispiel
+
 ##### <a name="request"></a>Anforderung
+
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
@@ -57,41 +66,16 @@ Content-length: 201
   ],
 }
 ```
+
 ##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.schemaExtension"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 201
-
-{
-  "id": "id-value",
-  "description": "description-value",
-  "targetTypes": [
-    "targetTypes-value"
-  ],
-  "properties": [
-    {
-      "name":"name-value",
-      "type":"type-value"
-    },
-    {
-      "name":"new-name-value",
-      "type":"new-type-value"
-    },
-    {
-      "name":"additional-name-value",
-      "type":"additional-type-value"
-    }  
-  ],
-  "status": "status-value",
-  "owner": "owner-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 ## <a name="see-also"></a>Weitere Artikel

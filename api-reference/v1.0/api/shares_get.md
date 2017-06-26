@@ -8,7 +8,9 @@ Um eine Freigabe-URL mit dieser API zu verwenden, muss die App [die URL in ein F
 
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Shares.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-Anforderung
 

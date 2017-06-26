@@ -13,8 +13,12 @@ Gelöschte Elemente werden mit dem [`deleted`Facet](../resources/deleted.md) zur
 ## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
 
-  * Files.Read
-  * Files.Readwrite
+* Files.Read
+* Files.ReadWrite
+* Files.Read.All
+* Files.ReadWrite.All
+* Sites.Read.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -103,7 +107,7 @@ Hier sehen Sie ein Beispiel für eine Anforderung nach der ursprünglichen Anfor
   "name": "get_item_delta"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='123123901209310923!23alksjd')
+GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
 ```
 
 ##### <a name="response"></a>Antwort

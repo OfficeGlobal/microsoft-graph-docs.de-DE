@@ -22,7 +22,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 | Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
-| Prefer | string | <Time zone>. Optional. Falls kein Wert vorhanden, wird UTC angenommen.|
+| Prefer | string | outlook.timezone="Eastern Standard Time". Optional.  Verwenden Sie dies, um die Zeitzone für die Anfangs- und Endzeiten in der Antwort anzugeben. Wenn nicht angegeben, wird die Antwort in UTC zurückgegeben. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

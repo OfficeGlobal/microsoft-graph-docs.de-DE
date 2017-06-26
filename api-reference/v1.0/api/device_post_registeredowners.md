@@ -2,8 +2,7 @@
 
 Dient zum Hinzufügen eines Benutzers als registrierter Besitzer des Geräts.
 ## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:  
-*Directory.ReadWrite.All* oder *Directory.AccessAsUser.All*
+Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Directory.ReadWrite.All* oder *Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

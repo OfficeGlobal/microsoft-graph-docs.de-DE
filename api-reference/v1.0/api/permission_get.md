@@ -5,7 +5,12 @@ Dient zum Abrufen der Eigenschaften und der Beziehungen des Berechtigungsobjekts
 ## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
 
-  * Files.Read
+* Files.Read
+* Files.ReadWrite
+* Files.Read.All
+* Files.ReadWrite.All
+* Shares.Read.All
+* Shares.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-Anforderung
 

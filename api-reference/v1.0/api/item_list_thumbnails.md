@@ -18,8 +18,12 @@ Es gibt viele Möglichkeiten, auf OneDrive mit Miniaturansichten zu arbeiten. Di
 ## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
 
-  * Files.Read
-  * Files.ReadWrite
+* Files.Read
+* Files.ReadWrite
+* Files.Read.All
+* Files.ReadWrite.All
+* Sites.Read.All
+* Sites.ReadWrite.All
 
 
 ## <a name="http-request"></a>HTTP-Anforderung

@@ -50,12 +50,9 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/calendar
 Content-type: application/json
-Content-length: 48
 
 {
-  "name": "name-value",
-  "color": {
-  }
+  "name": "Social events"
 }
 ```
 ##### <a name="response"></a>Antwort
@@ -68,14 +65,21 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 98
 
 {
-  "name": "name-value",
-  "color": {
-  },
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#me/calendars/$entity",
+    "@odata.id":"https://graph.microsoft.com/v1.0/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/calendars('AAMkADJmMVAAA=')",
+    "id":"AAMkADJmMVAAA=",
+    "name":"Social events",
+    "color":"auto",
+    "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
+    "canShare":true,
+    "canViewPrivateItems":true,
+    "canEdit":true,
+    "owner":{
+        "name":"Fanny Downs",
+        "address":"fannyd@adatum.onmicrosoft.com"
+    }
 }
 ```
 

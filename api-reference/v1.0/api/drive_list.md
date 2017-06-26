@@ -8,7 +8,10 @@ Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
 
 * Files.Read
 * Files.ReadWrite
+* Files.Read.All
+* Files.ReadWrite.All
 * Sites.Read.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-Anforderung
 

@@ -5,8 +5,11 @@ Dient zum Abrufen einer Auflistung von [DriveItem](../resources/driveitem.md)-Re
 ## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
 
-  * Files.Read.All
-  * Files.ReadWrite.All
+* Files.Read.All
+* Files.ReadWrite.All
+* Sites.Read.All
+* Sites.ReadWrite.All
+
 
 **Hinweis:** Die /sharedWithMe-Anforderung funktioniert zwar mit Files.Read- oder Files.ReadWrite-Bereichen, es kann jedoch sein, dass einige Eigenschaften fehlen. Außerdem kann ohne einen der **All**-Bereiche nicht auf freigegebene Elemente zugegriffen werden, die von dieser AP zurückgegeben werden.
 

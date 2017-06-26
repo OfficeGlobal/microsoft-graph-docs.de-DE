@@ -6,7 +6,9 @@ Aktualisiert die Eigenschaften einer Berechtigung, indem die Ressource gepatcht 
 
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Shares.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
