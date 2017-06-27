@@ -16,7 +16,7 @@ Microsoft Graph verfügt über die unterschiedlichen Versionen hinweg über ein 
 
 Nachfolgend finden Sie Beispiele für nicht abwärtskompatible Änderungen:
 
- - Änderungen an der URL oder an grundlegenden Anforderungen/Antwort im Zusammenhang mit einer Ressource    
+ - Änderungen an der URL oder an grundlegenden Anforderungen/Antworten im Zusammenhang mit einer Ressource    
  - Entfernen, Umbenennen oder Ändern des Typs einer deklarierten Eigenschaft
  - Entfernen oder Umbenennen von APIs oder API-Parametern
  - Hinzufügen eines erforderlichen Anforderungsheaders
@@ -27,21 +27,21 @@ Nachfolgend finden Sie Beispiele für abwärtskompatible Änderungen:
  - Hinzufügen eines Elements zu einer Aufzählung
  - Entfernen, Umbenennen oder Ändern des Typs einer offenen Erweiterung
  - Entfernen, Umbenennen oder Ändern des Typs einer Anmerkung
- - Einführung der Auslagerung in vorhandenen Sammlungen
+ - Einführung der Auslagerung in vorhandene Sammlungen
  - Änderungen an Fehlercodes
  - Änderungen an der Reihenfolge von Eigenschaften
  - Änderungen an der Länge oder am Format von verschlüsselten Zeichenfolgen, z. B. Ressourcen-IDs.
 
->**Hinweis:** Die Liste von abwärtskompatiblen Änderungen wird im Laufe der Zeit aktualisiert. Wenn Sie Ihre eigenen Clientproxys (z. B. WCF-Clients) generieren, wird empfohlen, dass Ihre Clientanwendungen auf das Empfangen von Eigenschaften und abgeleiteten Typen vorbereitet sein sollten, die zuvor nicht vom Microsoft Graph-API-Dienst definiert wurden. Die Microsoft Graph-API befolgt die im Abschnitt [Modellversionsverwaltung](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) der [Microsoft REST-API Richtlinien](https://github.com/microsoft/api-guidelines/) beschriebene Anleitung. 
+>**Hinweis:** Die Liste von abwärtskompatiblen Änderungen wird im Laufe der Zeit aktualisiert. Wenn Sie Ihre eigenen Clientproxys (z. B. WCF-Clients) generieren, wird empfohlen, dass Ihre Clientanwendungen auf das Empfangen von Eigenschaften und abgeleiteten Typen vorbereitet sein sollten, die zuvor nicht vom Microsoft Graph-API-Dienst definiert wurden. Die Microsoft Graph-API befolgt die im Abschnitt [Modellversionsverwaltung](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) der [Microsoft REST-API-Richtlinien](https://github.com/microsoft/api-guidelines/) beschriebene Anleitung. 
 
-## <a name="versions"></a>Versions
+## <a name="versions"></a>Versionen
 
 Die folgenden Versionen der Microsoft Graph-API stehen derzeit zur Verfügung.
 
 ### <a name="beta-version"></a>Betaversion
-Die Microsoft Graph-API-Betaversion, die unter `https://graph.microsoft.com/beta` verfügbar gemacht werden, enthält Features, die sich derzeit in der Vorschau befinden. Dokumentation zur Beta-API finden Sie in der [Microsoft Graph-Beta-Endpunktreferenz](../api-reference/beta/beta-overview.md). Von Zeit zu Zeit ist mit wesentlichen Änderungen an der Betaversion zu rechnen. Verwenden Sie keine Produktionsabhängigkeit in Beta-APIs.
+Die Microsoft Graph-API-Betaversion, die unter `https://graph.microsoft.com/beta` verfügbar gemacht wird, enthält Features, die sich derzeit in der Vorschau befinden. Dokumentation zur Beta-API finden Sie in der [Microsoft Graph-Beta-Endpunktreferenz](../api-reference/beta/beta-overview.md). Von Zeit zu Zeit ist mit wesentlichen Änderungen an der Betaversion zu rechnen. Verwenden Sie keine Produktionsabhängigkeit in Beta-APIs.
 
-Wir übernehmen keine Garantie dafür, dass eine Betafunktion für die aktuelle Version höher gestuft wird. Wenn das Microsoft Graph-API-Team der Meinung ist, dass eine Betafunktion für die allgemeine Verfügbarkeit (GA) bereit ist, wird diese Funktion der neueste aktuellen Version hinzugefügt. Wenn die Höherstufung der Funktion zu einer wesentlichen Änderung an der aktuellen Version führen würde, wird die Versionsnummer erhöht, und die neue Version wird die aktuelle Version. Unsere Entwickler-Community kann unter [UserVoice](https://officespdev.uservoice.com/) Featureanforderungen veröffentlichen, einschließlich Anforderungen für neue Features sowie Anforderungen zur Höherstufung vorhandener Beta-APIs in die aktuelle Version. 
+Wir übernehmen keine Garantie dafür, dass eine Betafunktion für die aktuelle Version höher gestuft wird. Wenn das Microsoft Graph-API-Team der Meinung ist, dass eine Betafunktion für die allgemeine Verfügbarkeit (GA) bereit ist, wird diese Funktion der neuesten aktuellen Version hinzugefügt. Wenn die Höherstufung der Funktion zu einer wesentlichen Änderung an der aktuellen Version führen würde, wird die Versionsnummer erhöht, und die neue Version wird die aktuelle Version. Unsere Entwickler-Community kann unter [UserVoice](https://officespdev.uservoice.com/) Featureanforderungen veröffentlichen, einschließlich Anforderungen für neue Features sowie Anforderungen zur Höherstufung vorhandener Beta-APIs in die aktuelle Version. 
 
 ### <a name="current-version"></a>Aktuelle Version
 

@@ -6,7 +6,7 @@ Die JSON-Batchverarbeitung ermöglicht es Ihnen, Ihre Anwendung durch Kombiniere
 2. Eine Liste von Planner-Aufgaben
 3. Der Kalender für eine Gruppe
 
-Indem Sie diese drei einzelnen Anforderungen in einer einzigen Batchanforderung kombinieren, können Sie der Anwendung erhebliche Netzwerklatenz ersparen.
+Indem Sie diese drei einzelnen Anforderungen in einer einzigen Batchanforderung kombinieren, können Sie die Netzwerklatenz der Anwendung erheblich reduzieren.
 
 ## <a name="first-json-batch-request"></a>Erste JSON-Batchanforderung
 
@@ -83,7 +83,7 @@ Content-Type: application/json
 
 Batchanforderungen werden immer mithilfe von `POST` an den Endpunkt `/$batch` gesendet.
 
-Der Textkörper eine JSON-Batchanforderung besteht aus einem einzelnen JSON-Objekt mit einer erforderlichen Eigenschaft: `requests`. Die `requests`-Eigenschaft ist ein Array von einzelnen Anforderungen. Für jede einzelne Anforderung sind die Eigenschaften `id`, `method` und `url` erforderlich.
+Der Textkörper einer JSON-Batchanforderung besteht aus einem einzelnen JSON-Objekt mit einer erforderlichen Eigenschaft: `requests`. Die `requests`-Eigenschaft ist ein Array von einzelnen Anforderungen. Für jede einzelne Anforderung sind die Eigenschaften `id`, `method` und `url` erforderlich.
 
 Die `id`-Eigenschaft dient in erster Linie als Korrelationswert zum Zuordnen einzelner Antworten zu Anforderungen. Dadurch kann der Server Anforderungen im Batch in der effizientesten Reihenfolge verarbeiten.
 
@@ -101,7 +101,7 @@ Das Antwortformat für JSON-Batchanforderungen ähnelt dem Anforderungsformat. D
 
 Der Statuscode einer Batchantwort lautet in der Regel `200` oder `400`. Wenn die Batchanforderung selbst falsch formatiert ist, lautet der Statuscode `400`. Wenn die Batchanforderung analysierbar ist, lautet der Statuscode `200`. Ein Statuscode `200` in der Batchantwort besagt nicht, dass die einzelnen Anforderungen innerhalb des Batches erfolgreich waren. Aus diesem Grund hat jede einzelne Antwort in der `responses`-Eigenschaft einen Statuscode.
 
-Zusätzlich zur `responses`-Eigenschaft kann auch eine `nextLink`-Eigenschaft in der Batchantwort enthalten sein. Diese ermöglicht es Microsoft Graph, eine Batchantwort zurückzugeben, sobald eine der einzelnen Anforderungen abgeschlossen ist. Um sicherzustellen, dass alle einzelnen Antworten empfangen wurden, folgen weiterhin dem `nextLink`, solange er vorhanden ist.
+Zusätzlich zur `responses`-Eigenschaft kann auch eine `nextLink`-Eigenschaft in der Batchantwort enthalten sein. Diese ermöglicht es Microsoft Graph, eine Batchantwort zurückzugeben, sobald eine der einzelnen Anforderungen abgeschlossen ist. Um sicherzustellen, dass alle einzelnen Antworten empfangen wurden, folgen Sie weiterhin dem `nextLink`, solange er vorhanden ist.
 
 ## <a name="sequencing-requests-with-the-dependson-property"></a>Sequenzieren von Anforderungen mit der dependsOn-Eigenschaft
 
@@ -140,11 +140,11 @@ Wenn beim Ausführen einer einzelnen Anforderung ein Fehler auftritt, tritt bei 
 
 ## <a name="bypassing-url-length-limitations-with-batching"></a>Umgehen von URL-Längenbeschränkungen durch Batchverarbeitung
 
-Eine weiterer Anwendungsfall für die JSON-Batchverarbeitung ist die Umgehung von URL-Längenbeschränkungen. Im Fall einer komplexen Filterklausel kann es passieren, dass die URL-Länge Beschränkungen übersteigt, die in Browsern oder anderen HTTP-Clients integriert sind. Sie können die JSON-Batchverarbeitung als Problemumgehung zum Ausführen dieser Anforderungen verwenden, da die lange URL einfach Teil der Anforderungsnutzlast wird.
+Ein weiterer Anwendungsfall für die JSON-Batchverarbeitung ist die Umgehung von URL-Längenbeschränkungen. Im Fall einer komplexen Filterklausel kann es passieren, dass die URL die in Browsern oder anderen HTTP-Clients integrierten Längenbeschränkungen nicht einhält. Sie können die JSON-Batchverarbeitung als Problemumgehung zum Ausführen dieser Anforderungen verwenden, da die lange URL einfach Teil der Anforderungsnutzlast wird.
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-Eine Liste von aktuellen Beschränkungen im Zusammenhang mit der Batchverarbeitung finden unter [bekannte Probleme][batching-known-issues].
+Eine Liste von aktuellen Beschränkungen im Zusammenhang mit der Batchverarbeitung finden Sie unter [bekannte Probleme][batching-known-issues].
 
 [batching-known-issues]: https://developer.microsoft.com/en-us/graph/docs/concepts/known_issues#json-batching
 [odata-4.01-json]: https://www.oasis-open.org/committees/download.php/60365/odata-json-format-v4.01-wd02-2017-03-24.docx

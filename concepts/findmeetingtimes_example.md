@@ -1,8 +1,8 @@
 # <a name="find-possible-meeting-times-on-the-outlook-calendar"></a>Suchen nach möglichen Besprechungszeiten im Outlook-Kalender
 
-In einem Unternehmen oder einer Schule oder Universität ist die Suche nach einer gemeinsamen Zeit und einem Ort für eine Besprechung häufig mit Mehraufwand verbunden. Microsoft Graph-Anwendungen können [findMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) verwenden, um alle mögliche Besprechungszeiten zu identifizieren, die Einschränkungen bzgl. Uhrzeit, Ort und anderen Aspekten erfüllen.   
+In einem Unternehmen oder einer Schule oder Universität ist die Suche nach einer gemeinsamen Zeit und einem Ort für eine Besprechung häufig mit Mehraufwand verbunden. Microsoft Graph-Anwendungen können [findMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) verwenden, um alle möglichen Besprechungszeiten zu ermitteln, die Einschränkungen bzgl. Uhrzeit, Ort und anderen Aspekten erfüllen.   
 
-Mit der Aktion **findMeetingTimes** können Sie Bedingungen wie z. B. den Datums-/Uhrzeitbereich, die Dauer, optionale oder erforderliche Teilnehmer für die Besprechung und die Art der Aktivität (**activityDomain**) angeben. Die Aktion berücksichtigt die normalen Arbeitszeitpläne und den Frei-/Gebucht-Status der Teilnehmer und des Organisators und schlägt Zeiten vor, die für die Teilnehmer und den Typ der Aktivität geeignet sind. So beziehen sich Vorschläge für eine arbeitsbezogene Aktivität immer auf die Arbeitszeiten des Organisators und der Teilnehmer; außerdem werden vorgeschlagene Zeiten, zu denen die erforderlichen Teilnehmer verfügbar sind, werden weiter oben in der Liste mit Vorschlägen einsortiert.
+Mit der Aktion **findMeetingTimes** können Sie Bedingungen wie z. B. den Datums-/Uhrzeitbereich, die Dauer, optionale oder erforderliche Teilnehmer für die Besprechung und die Art der Aktivität (**activityDomain**) angeben. Die Aktion berücksichtigt die normalen Arbeitszeitpläne und den Frei-/Gebucht-Status der Teilnehmer und des Organisators und schlägt Zeiten vor, die für die Teilnehmer und den Typ der Aktivität geeignet sind. So beziehen sich Vorschläge für eine arbeitsbezogene Aktivität immer auf die Arbeitszeiten des Organisators und der Teilnehmer; außerdem werden vorgeschlagene Zeiten, zu denen die erforderlichen Teilnehmer verfügbar sind, weiter oben in der Liste mit Vorschlägen einsortiert.
 
 In Office 365 können Arbeitszeiten und Zeitzonen für jedes Postfach konfiguriert werden. Die Aktion **findMeetingTimes** berücksichtigt auch Zeitzonenunterschiede zwischen Organisator und Teilnehmern. Standardmäßig gibt **findMeetingTimes** Vorschläge in UTC zurück. Sie können den folgenden Anforderungsheader verwenden, damit **findMeetingTimes** Vorschläge in einer bestimmten Zeitzone ausgedrückt zurückgibt.
 ```
@@ -13,7 +13,7 @@ Besonders hilfreich für größere Besprechungen ist, dass Sie einen Prozentsatz
 
 Wenn **findMeetingTimes** keine Besprechungszeiten vorgeschlagen kann, wird ein bestimmter Grund (**emptySuggestionsReason**) angegeben, z. B. dass der Organisator oder ein erforderlicher Teilnehmer nicht verfügbar ist. Ausgehend von diesem Wert können Sie die Parameter optimieren und **findMeetingTimes** erneut aufrufen.
 
->**Hinweis** Die Aktion **findMeetingTimes** ist derzeit für Office 365-Geschäfts-, Schul- oder Unipostfächer, aber nicht für persönliche outlook.com-Postfächer verfügbar.
+>**Hinweis** Die Aktion **findMeetingTimes** ist derzeit für Office 365-Geschäfts-, -Schul- oder -Unipostfächer, aber nicht für persönliche outlook.com-Postfächer verfügbar.
 
 ## <a name="example"></a>Beispiel
 
@@ -29,7 +29,7 @@ Das folgende Beispiel zeigt, wie Sie **findMeetingTimes** verwenden, um möglich
 
 Im Beispiel wird **findMeetingTimes** zwei Mal aufgerufen:
 
-1. Der erste Aufruf sucht im Datumsbereich vom 18. bis 20. April. Da der Teilnehmer am 18. und 19. April abwesend ist und es keine allgemein verfügbare Zeit am 20. April gibt, gibt der erste Aufruf keine Vorschläge mit den Grund (**emptySuggestionsReason**) zurück, dass die Teilnehmer nicht verfügbar sind.
+1. Der erste Aufruf sucht im Datumsbereich vom 18. bis 20. April. Da der Teilnehmer am 18. und 19. April abwesend ist und es keine gemeinsame verfügbare Zeit am 20. April gibt, gibt der erste Aufruf keine Vorschläge zurück und begründet es damit, dass die Teilnehmer nicht verfügbar sind (**emptySuggestionsReason**).
 2. Der zweite Aufruf sucht nach Verfügbarkeit am 21. April und gibt als Vorschlag den Zeitraum zwischen 14:00 und 16:00 Uhr zurück.
 
 Die beiden Aufrufe von **findMeetingTimes** enthalten die folgenden Parameter. Alle [Parameter](../api-reference/v1.0/api/user_findmeetingtimes.md#request-body) für **findMeetingTimes** sind optional.

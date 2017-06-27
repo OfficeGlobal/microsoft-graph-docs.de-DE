@@ -22,7 +22,7 @@ Im Folgenden finden Sie bewährte Methoden für den Umgang mit Einschränkungen:
 
 * Verringern Sie die Anzahl der Vorgänge pro Anforderung.
 * Verringern Sie die Häufigkeit von Aufrufen.
-* Vermeiden Sie sofort Wiederholungsversuche, da alle Anforderungen auf Ihre Nutzungsgrenzwerte angerechnet werden.
+* Vermeiden Sie sofortige Wiederholungsversuche, da alle Anforderungen auf Ihre Nutzungsgrenzwerte angerechnet werden.
 
 Wenn Sie Fehlerbehandlung implementieren, verwenden Sie den HTTP-Fehlercode 429 zur Erkennung von Einschränkungen. Im Antwortheader der Fehlerantwort ist das Feld *Retry-After* enthalten. Das Zurückhalten von Anforderungen unter Anwendung der *Retry-After*-Verzögerung ist die schnellste Methode der Wiederherstellung nach Auftreten einer Einschränkung, da Microsoft Graph den Ressourceneinsatz weiterhin protokolliert, während ein Client eingeschränkt ist.
 
