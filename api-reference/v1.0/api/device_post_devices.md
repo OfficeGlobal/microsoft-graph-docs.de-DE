@@ -3,7 +3,7 @@
 Dient zum Erstellen und Registrieren eines neuen Geräts in der Organisation.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Directory.AccessAsUser.All*, *Device.ReadWrite.All*
+Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Device.ReadWrite.All* oder *Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

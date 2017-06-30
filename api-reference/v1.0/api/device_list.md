@@ -3,7 +3,7 @@
 Dient zum Abrufen einer Liste von Geräteobjekten, die in der Organisation registriert sind.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: Device.ReadWrite.All, Directory.AccessAsUser.All
+Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Device.ReadWrite.All* oder *Directory.Read.All* oder *Directory.ReadWrite.All* oder *Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

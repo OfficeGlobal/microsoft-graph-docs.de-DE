@@ -80,9 +80,9 @@ Content-Type: application/json
 }
 ```
 
-Die Eigenschaften „changeType“, „notificationUrl“, „resource und „expirationDateTime“ sind erforderlich. Unter [subscription-Ressourcentyp](subscription.md) finden Sie die Eigenschaftsdefinitionen und Werte. „clientState“ ist zwar nicht erforderlich, muss aber eingeschlossen werden, um unserem empfohlenen Prozess zum Umgang mit Benachrichtigungen zu entsprechen.
+Die Eigenschaften `changeType`, `notificationUrl`, `resource` und `expirationDateTime` sind erforderlich. Unter [subscription-Ressourcentyp](subscription.md) finden Sie die Eigenschaftsdefinitionen und Werte. `clientState` ist zwar nicht erforderlich, muss aber eingeschlossen werden, um unserem empfohlenen Prozess zum Umgang mit Benachrichtigungen zu entsprechen.
 
-Wenn der Vorgang erfolgreich war, gibt Microsoft Graph einen `200 OK`-Code und ein [subscription](subscription.md)-Objekt im Textkörper zurück.
+Wenn der Vorgang erfolgreich war, gibt Microsoft Graph einen `201 Created`-Code und ein [subscription](subscription.md)-Objekt im Textkörper zurück.
 
 # <a name="renewing-a-subscription"></a>Verlängern eines Abonnements
 
@@ -118,8 +118,8 @@ Der Client beginnt, Benachrichtigungen zu erhalten, nachdem das Abonnement erste
 
 Das Benachrichtigungsobjekt verfügt über die folgenden Eigenschaften.
 
-* id: Die ID für das Abonnement, zu dem diese Benachrichtigung gehört.
-* expirationDateTime: Die Ablaufzeit für das Abonnement.
+* subscriptionId: Die ID für das Abonnement, zu dem diese Benachrichtigung gehört.
+* subscriptionExpirationDateTime: Die Ablaufzeit für das Abonnement.
 * clientState: Die clientState-Eigenschaft, die in der Abonnementanfrage angegeben wurde.
 * changeType: Der Ereignistyp, der die Benachrichtigung ausgelöst hat. Z. B. *created* bei Erhalt einer E-Mail oder *updated*, wenn eine Nachricht als gelesen markiert wird.
 * resource: Der URI der Ressource relativ zu `https://graph.microsoft.com`. 
@@ -140,8 +140,8 @@ Wenn der Benutzer eine E-Mail empfängt, sendet Microsoft Graph eine Benachricht
 {
   "value":[
   {
-    "id":"<subscription_guid>",
-    "expirationDateTime":"\"2016-03-19T22:11:09.952Z\"",
+    "subscriptionId":"<subscription_guid>",
+    "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
     "clientState":"SecretClientState",
     "changeType":"Created",
     "resource":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
@@ -150,7 +150,7 @@ Wenn der Benutzer eine E-Mail empfängt, sendet Microsoft Graph eine Benachricht
       "@odata.type":"#Microsoft.Graph.Message",
       "@odata.id":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
       "@odata.etag":"W/\"CQAAABYAAADkrWGo7bouTKlsgTZMr9KwAAAUWRHf\"",
-      "Id":"<long_id_string>"
+      "id":"<long_id_string>"
     }
   }
   ]

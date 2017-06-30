@@ -10,7 +10,11 @@ Sie müssen zwei Schritte durchführen, um eine Datei mit einer Uploadsitzung ho
 ## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
+
+> **Hinweis**: Die Anwendungsberechtigung „Files.ReadWrite.All“ wird für diese API noch nicht unterstützt. Vollständige Unterstützung soll in Kürze folgen. 
 
 ## <a name="create-an-upload-session"></a>Erstellen einer Uploadsitzung
 

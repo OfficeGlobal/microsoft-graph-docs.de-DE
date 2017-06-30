@@ -18,19 +18,19 @@ Durch Erstellen einer Einladung wird eine URL für die Einlösung in der Antwort
 |[Einladung erstellen](../api/invitation_post.md) | invitation | Dient zum Schreiben der Eigenschaften und der Beziehungen des Einladungsobjekts.|
 
 ### <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|invitedUserDisplayName|Zeichenfolge|Der Anzeigename des eingeladenen Benutzers.|
-|invitedUserEmailAddress|Zeichenfolge|Die E-Mail-Adresse des eingeladenen Benutzers. Erforderlich. |
+|invitedUserDisplayName|String|Der Anzeigename des eingeladenen Benutzers.|
+|invitedUserEmailAddress|String|Die E-Mail-Adresse des eingeladenen Benutzers. Erforderlich. |
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Zusätzliche Konfiguration für die an den eingeladenen Benutzer gesendete Nachricht, einschließlich des Anpassens des Nachrichtentexts, der Sprache und der Empfängerliste in CC.|
-|sendInvitationMessage|Boolesch|Gibt an, ob eine E-Mail-Nachricht an den eingeladenen Benutzer gesendet werden soll oder nicht. Der Standardwert ist „false“.|
+|sendInvitationMessage|Boolean|Gibt an, ob eine E-Mail-Nachricht an den eingeladenen Benutzer gesendet werden soll oder nicht. Der Standardwert ist „false“.|
 |inviteRedirectUrl|String|Die URL, an die der eingeladene Benutzer umgeleitet werden sollte, nachdem die Einladung eingelöst wurde. Erforderlich. |
-|inviteRedeemUrl|Zeichenfolge|Die URL, die der Benutzer zum Einlösen seiner Einladung verwenden kann. Schreibgeschützt|
-|invitedUserType|Zeichenfolge|Der userType des eingeladenen Benutzers. Standardmäßig ist dieser Wert auf „Gast“ festgelegt. Wenn Sie der Unternehmensadministrator sind, können Sie ihn als „Mitglied“ einladen. |
-|status|String|Der Status der Einladung. Mögliche Werte: Completed, InProgress und Error|
+|inviteRedeemUrl|String|Die URL, die der Benutzer zum Einlösen seiner Einladung verwenden kann. Schreibgeschützt|
+|invitedUserType|String|Der userType des eingeladenen Benutzers. Standardmäßig ist dieser Wert auf „Gast“ festgelegt. Wenn Sie der Unternehmensadministrator sind, können Sie ihn als „Mitglied“ einladen. |
+|status|String|Der Status der Einladung. Mögliche Werte: PendingAcceptance, Completed, InProgress und Error|
 
 ### <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |invitedUser|[Benutzer](user.md)|Der Benutzer, der im Rahmen der Einladungserstellung erstellt wurde. Schreibgeschützt|
 

@@ -129,9 +129,9 @@ Keine.
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Device.ReadWrite.All_ | Geräteeigenschaften lesen und schreiben | Die App kann alle Geräteeigenschaften ohne angemeldeten Benutzer lesen und schreiben. Ermöglicht nicht das Erstellen oder  Löschen von Geräten oder das Aktualisieren von alternativen Sicherheits-IDs von Geräten. | Ja |
 
-### <a name="remarks"></a>Bemerkungen
+### <a name="remarks"></a>Hinweise
 
-Diese Berechtigung gilt für Apps, die für Organisationen entwickelt werden.
+Diese Berechtigung gilt nur für Apps, die für Organisationen entwickelt werden.
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
 #### <a name="application"></a>Anwendung
@@ -247,9 +247,9 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Files.Read_ |    Lesezugriff auf Benutzerdateien und Dateien, die für den Benutzer freigegeben wurden | Ermöglicht der App, die Dateien des angemeldeten Benutzers sowie für den Benutzer freigegebene Dateien zu lesen.| Nein |
+| _Files.Read_ |    Lesezugriff auf Benutzerdateien | Ermöglicht der App, die Dateien des angemeldeten Benutzers zu lesen.| Nein |
 | _Files.Read.All_ | Alle Dateien lesen, auf die der Benutzer zugreifen kann | Ermöglicht der App, alle Dateien zu lesen, auf die der angemeldete Benutzer zugreifen kann. | Nein |
-| _Files.ReadWrite_ |   Vollzugriff auf Benutzerdateien und Dateien, die für den Benutzer freigegeben wurden | Ermöglicht der App, die Dateien des angemeldeten Benutzers sowie für den Benutzer freigegebene Dateien zu lesen, zu erstellen, zu aktualisieren und zu löschen. | Nein |
+| _Files.ReadWrite_ |   Vollzugriff auf Benutzerdateien | Ermöglicht der App, Dateien des angemeldeten Benutzers zu lesen, zu erstellen, zu aktualisieren und zu löschen. | Nein |
 | _Files.ReadWrite.All_ | Vollzugriff auf alle Dateien, auf die Benutzer zugreifen können | Ermöglicht der App, alle Dateien zu lesen, zu erstellen, zu aktualisieren und zu löschen, auf die der angemeldete Benutzer zugreifen kann. | Nein |
 | _Files.ReadWrite.AppFolder_ | Vollzugriff auf den Anwendungsordner (Vorschau) | (Vorschau) Ermöglicht der App, Dateien im Anwendungsordner zu lesen, zu erstellen, zu aktualisieren und zu löschen. | Nein |
 | _Files.Read.Selected_ |    Dateien lesen, die der Benutzer auswählt (Vorschau) | **Eingeschränkte Unterstützung in Microsoft Graph – siehe Anmerkungen** <br/> (Vorschau) Ermöglicht der App, Dateien zu lesen, die der Benutzer auswählt. Sobald der Benutzer eine Datei auswählt, erhält die App mehrere Stunden Zugriff auf diese Datei. | Nein |
@@ -259,21 +259,18 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Files.Read.All_ | Alle Dateien lesen, auf die der Benutzer zugreifen kann (Vorschau) | **Eingeschränkte Unterstützung in Microsoft Graph** <br/> (Vorschau) Ermöglicht der App, alle Dateien in allen Websitesammlungen ohne einen angemeldeten Benutzer zu lesen. | Ja |
-| _Files.ReadWrite.All_ | Vollzugriff auf alle Dateien, auf die Benutzer zugreifen können (Vorschau) | **Eingeschränkte Unterstützung in Microsoft Graph** <br/> (Vorschau) Ermöglicht der App, alle Dateien in allen Websitesammlungen ohne einen angemeldeten Benutzer zu lesen, zu erstellen, zu aktualisieren und zu löschen. | Ja |
+| _Files.Read.All_ | Lesen von Dateien in allen Websitesammlungen (Vorschau) | (Vorschau) Ermöglicht der App, alle Dateien in allen Websitesammlungen ohne einen angemeldeten Benutzer zu lesen. | Ja |
+| _Files.ReadWrite.All_ | Lesen und Schreiben von Dateien in allen Websitesammlungen (Vorschau) | **Eingeschränkte Unterstützung in Microsoft Graph** <br/> (Vorschau) Ermöglicht der App, alle Dateien in allen Websitesammlungen ohne einen angemeldeten Benutzer zu lesen, zu erstellen, zu aktualisieren und zu löschen. | Ja |
 
-### <a name="remarks"></a>Bemerkungen
+### <a name="remarks"></a>Hinweise
 
-#### <a name="support-for-permissions-in-preview"></a>Unterstützung für Berechtigungen in der Vorschau
-**Delegierte Berechtigungen**: 
+Die delegierten Berechtigungen „Files.Read“, „Files.ReadWrite“, „Files.Read.All“ und „Files.ReadWrite.All“ sind sowohl für persönliche Microsoft-Konten als auch Geschäfts-, Schul- oder Unikonten gültig. Beachten Sie, dass bei persönlichen Konten „Files.Read“ und „Files.ReadWrite“ auch Zugriff auf Dateien gewähren, die für den angemeldeten Benutzer freigegeben sind. 
 
-- _Files.Read.Selected_ und _Files.ReadWrite.Selected_ werden von Microsoft Graph noch nicht unterstützt. Aus Gründen der Abwärtskompatibilität können diese Berechtigungen konfiguriert und in Autorisierungsanforderungen eingeschlossen werden, es werden jedoch keine Rechte von Microsoft Graph gewährt. Unterstützung für diese Berechtigungen ist für einen späteren Zeitpunkt geplant. 
-- „Files.ReadWrite.AppFolder“ wird nur für Microsoft-Konten unterstützt. 
+Die delegierten Berechtigungen „Files.Read.Selected“ und „Files.ReadWrite.Selected“ sind nur für Geschäfts-, Schul- oder Unikonten gültig und werden nur für Arbeit mit [Office 365-Dateihandlern (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps) bereitgestellt. Sie dürfen nicht verwendet werden, um Microsoft Graph-APIs direkt aufzurufen. 
 
-**Anwendungsberechtigungen**. 
+Die delegierte Berechtigung „Files.ReadWrite.AppFolder“ ist nur für persönliche Konten gültig und wird zum Zugreifen auf den [speziellen Anwendungsstammordner](https://dev.onedrive.com/items/special_folders.htm) mit der Microsoft Graph-API [Speziellen Ordner abrufen](../api-reference/v1.0/api/drive_special.md) für OneDrive verwendet.
 
-- _Files.Read.All_ und _Files.ReadWrite.All_ werden derzeit nicht vollständig von Microsoft Graph unterstützt; allerdings werden einige Rechte mit diesen Berechtigungen gewährt. Vollständige Unterstützung soll in Kürze folgen. 
-
+Die Berechtigung „Files.ReadWrite.All“ unterstützt noch nicht die Microsoft Graph-API [Wiederaufnehmbare Uploadsitzung erstellen](../api-reference/v1.0/api/item_createuploadsession.md) für OneDrive. Vollständige Unterstützung wird in Kürze bereitgestellt. 
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
 #### <a name="delegated"></a>Delegiert
@@ -504,7 +501,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 Keine.
 
-### <a name="remarks"></a>Hinweise
+### <a name="remarks"></a>HinwBemerkungeneise
 Sie können diese Berechtigungen verwenden, um Artefakte anzugeben, die in Azure AD-Autorisierungs- und Tokenanforderungen zurückgegeben werden sollen. Sie werden von den Azure AD v1.0- und v2.0-Endpunkten unterschiedlich unterstützt.
 
 Beim Azure AD (v1.0)-Endpunkt wird nur die Berechtigung _openid_ verwendet. Sie wird im *scope*-Parameter in einer Autorisierungsanforderung angegeben, um ein ID-Token zurückzugeben, wenn Sie das OpenID Connect-Protokoll zum Anmelden eines Benutzers bei Ihrer App verwenden. Weitere Informationen finden Sie unter [Autorisieren des Zugriffs auf Webanwendungen mithilfe von Open ID Connect und Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code). Damit ein ID-Token erfolgreich zurückgegeben wird, müssen Sie auch sicherstellen, dass die Berechtigung _User.Read_ konfiguriert wird, wenn Sie Ihre App registrieren. 

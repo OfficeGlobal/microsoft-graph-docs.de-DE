@@ -3,7 +3,7 @@
 Dient zum Aktualisieren der Eigenschaften eines registrierten Geräts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Directory.AccessAsUser.All* oder *Device.ReadWrite.All*
+Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Device.ReadWrite.All* oder *Directory.AccessAsUser.All* 
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

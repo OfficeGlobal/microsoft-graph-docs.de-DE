@@ -2,40 +2,45 @@
 
 Dient zum Abrufen einer Liste von Benutzerobjekten.
 
-> Hinweis: Durch das Auflisten von Benutzern wird nur ein standardmäßiger Satz von Eigenschaften zurückgegeben (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Verwenden Sie `$select`, um die anderen Eigenschaften und Beziehungen für das [user](../resources/user.md)-Objekt abzurufen. Es können jedoch nur die folgenden Eigenschaften für einzelne Benutzer, z. B. „/v1.0/me?$select=aboutMe“, und nicht für Sammlungen von Benutzern wie z. B. „/v1.0/users?$select=aboutMe“ ausgewählt werden.
->* aboutMe
->* birthday
->* hireDate
->* interests
->* mySite
->* pastProjects
->* preferredName
->* responsibilities
->* schools
->* skills
->* mailboxSettings
-
 ## <a name="prerequisites"></a>Voraussetzungen
+
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users
 ```
+
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
+
 Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+
+Standardmäßig wird nur ein begrenzter Satz von Eigenschaften zurückgegeben (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
+
+Um einen alternativen Eigenschaftensatz zurückzugeben, müssen Sie den gewünschten Satz von [user](../resources/user.md)-Eigenschaften mithilfe des ODATA-Abfrageparameters `$select` angeben. Um zum Beispiel _displayName_, _givenName_, _id_ und _postalCode_ zurückzugeben, fügen Sie Folgendes zur Abfrage hinzu: `$select=displayName,givenName,postalCode`.
+
+> Hinweis: Bestimmte Eigenschaften können innerhalb einer Benutzersammlung nicht zurückgegeben werden. Die folgenden Eigenschaften werden nur unterstützt, wenn [ein einzelner Benutzer abgerufen wird](./user_get.md): _aboutMe, birthday, hireDate, interests, mySite, pastProjects, preferredName, responsibilities, schools, skills, mailboxSettings_
+
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert|
-|:-----------|:------|
-| Authorization  | Bearer {token}. Erforderlich.  |
-| Content-Type   | application/json | 
+
+| Kopfzeile        | Wert                      |
+|:--------------|:---------------------------|
+| Authorization | Bearer {token} (erforderlich)  |
+| Content-Type  | application/json           | 
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie für diese Methode keinen Anforderungstext an.
+
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [user](../resources/user.md)-Objekten im Antworttext zurückgegeben.
+
 ## <a name="example"></a>Beispiel
+
 ##### <a name="request"></a>Anforderung
+
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
@@ -44,7 +49,9 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 GET https://graph.microsoft.com/v1.0/users
 ```
+
 ##### <a name="response"></a>Antwort
+
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",

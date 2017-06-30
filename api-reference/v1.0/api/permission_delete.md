@@ -7,7 +7,9 @@ Nur die Berechtigungen, die nicht geerbt werden, können gelöscht werden. Die *
 ## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Shares.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
