@@ -83,6 +83,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:-------------|
 |Ergänzungen|Beta|Zusätzliche Unterstützung für Projekt Rom, einschließlich [Abrufen einer Liste der Geräte](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_devices), [Senden eines Befehls an ein Gerät](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/send_device_command), und [Überprüfen des Status eines Befehls](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/get_device_command_status).|
+|Ergänzungen|Beta|Zusätzliche Unterstützung für Benutzer[aktivitäten](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_activity) und [historyItems](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_historyitem), einschließlich [upsert-Vorgängen für eine Aktivität](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_activity) und [upsert-Vorgängen für ein historyItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_historyitem).|
 
 ### <a name="administrative-units-property-changes"></a>Eigenschaftsänderungen für administrative Einheiten
 

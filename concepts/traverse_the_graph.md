@@ -6,12 +6,12 @@ Zusätzlich zur Verwendung der Microsoft Graph-API zum Lesen und Schreiben von D
 
 Das Metadatendokument ($metadata) wird im Dienststamm veröffentlicht. Über die folgenden URLs können Sie das Dienstdokument für v1.0 und die Betaversionen der Microsoft Graph-API anzeigen.
 
-**Microsoft Graph-API`v1.0`-Metadaten**
+**Metadaten für Microsoft Graph-API v1.0**
 ```
     https://graph.microsoft.com/v1.0/$metadata
 ```
 
-**Microsoft Graph-API`beta`-Metadaten**
+**Metadaten für Microsoft Graph-API Beta**
 
 ```
     https://graph.microsoft.com/beta/$metadata
@@ -21,15 +21,116 @@ Mithilfe der Metadaten können Sie das Datenmodell von Microsoft Graph sehen und
 
 Die Metadaten können Sie verwenden, um die Beziehungen zwischen Entitäten in Microsoft Graph zu verstehen und URLs einzurichten, die zwischen diesen Entitäten navigieren.
 
-Bei den Pfad-URL-Ressourcennamen, Abfrageparametern sowie den Aktionsparametern und -werten wird nicht nach Groß-/Kleinschreibung unterschieden. Bei zugewiesenen Werten, Entitäts-IDs und anderen base64-codierte Werten wird nach Groß-/Kleinschreibung unterschieden.
+Bei den Pfad-URL-Ressourcennamen, Abfrageparametern sowie den Aktionsparametern und -werten wird nicht nach Groß-/Kleinschreibung unterschieden. Bei zugewiesenen Werten, Entitäts-IDs und anderen base64-codierten Werten wird nach Groß-/Kleinschreibung unterschieden.
+
+## <a name="view-a-collection-of-resources"></a>Anzeigen einer Sammlung von Ressourcen
+
+Mit Microsoft Graph können Sie Ressourcen in einem Mandanten mithilfe von HTTP-GET-Abfragen anzeigen. Die Abfrageantwort umfasst Eigenschaften jeder Ressource, wobei jede Ressource von ihrer ID identifiziert wird. Das Format einer Ressourcen-ID kann eine GUID sein und ist in der Regel je nach Ressourcentyp unterschiedlich. 
+
+Sie können die Sammlung von in einem Mandanten definierten Benutzern beispielsweise folgendermaßen abrufen:
+
+```no-highlight 
+GET https://graph.microsoft.com/v1.0/users HTTP/1.1
+Authorization : Bearer {access_token}
+```
+
+Wenn der Vorgang erfolgreich ist, erhalten Sie die Antwort 200 OK mit der Auflistung der [user](..\api-reference\v1.0\resources\user.md)-Ressourcen in der Nutzlast. Jeder Benutzer wird anhand der **id**-Eigenschaft und seinen Standardeigenschaften identifiziert. Die nachfolgend dargestellte Arbeitslast ist aus Platzgründen abgeschnitten.
+
+```no-highlight 
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "value":[
+    {
+      "id":"f71f1f74-bf1f-4e6b-b266-c777ea76e2c7",
+      "businessPhones":[
+
+      ],
+      "displayName":"CIE Administrator",
+      "givenName":"CIE",
+      "jobTitle":null,
+      "mail":"admin@contoso.onmicrosoft.com",
+      "mobilePhone":"+1 3528700812",
+      "officeLocation":null,
+      "preferredLanguage":"en-US",
+      "surname":"Administrator",
+      "userPrincipalName":"admin@contoso.onmicrosoft.com"
+    },
+    {
+      "id":"d66f2902-9d12-4ff8-ab01-21ec6706079f",
+      "businessPhones":[
+
+      ],
+      "displayName":"Alan Steiner",
+      "givenName":"Alan",
+      "jobTitle":"VP Corporate Marketing",
+      "mail":"alans@contoso.onmicrosoft.com",
+      "mobilePhone":null,
+      "officeLocation":null,
+      "preferredLanguage":"en-US",
+      "surname":"Steiner",
+      "userPrincipalName":"alans@contoso.onmicrosoft.com"
+    }
+  ]
+}
+```
+
+Mit Microsoft Graph können Sie auch Websitesammlungen anzeigen, indem Sie in den Beziehungen von einer Ressource zu einer anderen navigieren. Über die **mailFolders**-Navigationseigenschaft eines Benutzers können Sie beispielsweise die Auflistung von [mailFolder](..\api-reference\v1.0\resources\mailfolder.md)-Ressourcen im Benutzerpostfach abfragen:
+
+```no-highlight 
+GET https://graph.microsoft.com/v1.0/me/mailfolders HTTP/1.1
+Authorization : Bearer {access_token}
+```
+
+Wenn der Vorgang erfolgreich ist, erhalten Sie die Antwort 200 OK mit der Auflistung der [mailFolder](..\api-reference\v1.0\resources\user.md)-Ressourcen in der Nutzlast. Jeder **mailFolder** wird anhand der **id**-Eigenschaft und seinen Eigenschaften identifiziert. Die nachfolgend dargestellte Arbeitslast ist aus Platzgründen abgeschnitten.
+
+```no-highlight 
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('16f5a7b6-5a15-4568-aa5a-31bb117e9967')/mailFolders",
+  "value":[
+    {
+      "id":"AAMkADRm9AABDGisXAAA=",
+      "displayName":"Archive",
+      "parentFolderId":"AQMkADRmZWj0AAAIBCAAAAA==",
+      "childFolderCount":0,
+      "unreadItemCount":0,
+      "totalItemCount":0
+    },
+    {
+      "id":"AQMkADRm0AAAIBXAAAAA==",
+      "displayName":"Sales reports",
+      "parentFolderId":"AQMkADRmZWj0AAAIBCAAAAA==",
+      "childFolderCount":0,
+      "unreadItemCount":0,
+      "totalItemCount":0
+    },
+    {
+      "id":"AAMkADRCxI9AAAT6CAIAAA=",
+      "displayName":"Conversation History",
+      "parentFolderId":"AQMkADRmZWj0AAAIBCAAAAA==",
+      "childFolderCount":1,
+      "unreadItemCount":0,
+      "totalItemCount":0
+    }
+  ]
+}
+```
+
+
+
 
 ## <a name="view-a-specific-resource-from-a-collection-by-id"></a>Anzeigen einer bestimmten Ressource aus einer Sammlung nach ID
 
-Zum Anzeigen der Informationen zu einem Benutzer rufen Sie die Sammlung aller Benutzer ab und verwenden eine HTTPS GET-Anforderung, um einen bestimmten Benutzer anhand der Benutzer-ID abzurufen. Für eine `User`-Entität kann entweder die `id`- oder `userPrincipalName`-Eigenschaft als Bezeichner verwendet werden. Im folgenden Anforderungsbeispiel wird der `userPrincipalName`-Wert als Benutzer-ID verwendet. 
+Wir verwenden weiterhin **user** als Beispiel. Zum Anzeigen der Informationen zu einem Benutzer verwenden Sie eine HTTPS GET-Anforderung, um einen bestimmten Benutzer anhand der Benutzer-ID abzurufen. Für eine **user**-Entität können Sie entweder die **id**- oder die **userPrincipalName**-Eigenschaft als Bezeichner verwenden. Im folgenden Anforderungsbeispiel wird der **userPrincipalName**-Wert als Benutzer-ID verwendet. 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com HTTP/1.1
-Authorization : Bearer <access_token>
+Authorization : Bearer {access_token}
 ```
 
 Wenn der Vorgang erfolgreich ist, erhalten Sie den Statuscode 200 OK mit der Benutzerressourcendarstellung in der Nutzlast, wie im Folgenden dargestellt.
@@ -58,7 +159,7 @@ Um nur biographische Daten des Benutzers abzurufen, z. B. die vom Benutzer berei
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$select=displayName,aboutMe,skills HTTP/1.1
-Authorization : Bearer <access_token>
+Authorization : Bearer {access_token}
 ```
 
 Bei erfolgreicher Antwort wird der Statuscode 200 OK und eine Nutzlast zurückgegeben, wie dargestellt. 
@@ -79,14 +180,14 @@ content-length: 169
     ]
 }
 ```
-Statt aller Eigenschaftensätze für die `user`-Entität werden hier nur die grundlegenden `aboutMe`-, `displayName`- und `skills`-Eigenschaften zurückgegeben.
+Statt aller Eigenschaftensätze für die **user**-Entität werden hier nur die grundlegenden **aboutMe**-, **displayName**- und **skills**-Eigenschaften zurückgegeben.
 
 ## <a name="read-specific-properties-of-the-resources-in-a-collection"></a>Lesen der spezifischen Eigenschaften der Ressourcen in einer Sammlung
 Zusätzlich zum Lesen spezifischer Eigenschaften einer einzelnen Ressource können Sie auch den ähnlichen Abfrageparameter [$select](query_parameters.md) auf eine Sammlung anwenden, um alle Ressourcen in der Sammlung mit nur den spezifischen Eigenschaften zurückzugeben, die jeweils zurückgegeben werden. Senden Sie zum Abfragen des Namens der Laufwerkelemente vom angemeldeten Benutzer die folgende HTTPS-GET-Anforderung:
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name HTTP/1.1
-Authorization : Bearer <access_token>
+Authorization : Bearer {access_token}
 ```
 
 Bei einer erfolgreichen Antwort werden der Statuscode 200 OK und eine Nutzlast mit den Namen der freigegebenen Dateien zurückgegeben, wie im folgenden Beispiel dargestellt:
@@ -112,11 +213,11 @@ Bei einer erfolgreichen Antwort werden der Statuscode 200 OK und eine Nutzlast m
 ```
 
 ## <a name="traverse-from-one-resource-to-another-via-relationship"></a>Durchqueren von einer Ressource zu einer anderen anhand der Beziehung
-Ein Vorgesetzter enthält eine `directReports`-Beziehung zu anderen Benutzern, die diesem unterstellt sind. Zum Abfragen der Liste der direkten Mitarbeiter eines Benutzers können Sie die folgende HTTPS-GET-Anforderung zum Navigieren zum gewünschten Ziel über das Durchlaufen von Beziehungen verwenden. 
+Ein Vorgesetzter enthält eine **directReports**-Beziehung zu anderen Benutzern, die diesem unterstellt sind. Zum Abfragen der Liste der direkten Mitarbeiter eines Benutzers können Sie die folgende HTTPS-GET-Anforderung zum Navigieren zum gewünschten Ziel über das Durchlaufen von Beziehungen verwenden. 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/directReports HTTP/1.1
-Authorization : Bearer <access_token>
+Authorization : Bearer {access_token}
 ```
 
 Bei erfolgreicher Antwort wird der Statuscode 200 OK und eine Nutzlast zurückgegeben, wie dargestellt. 
@@ -137,12 +238,12 @@ content-length: 152
 }
 ```
 
-Ebenso können Sie anhand einer Beziehung zu verwandten Ressourcen navigieren. Die `user => messages`-Beziehung ermöglicht beispielsweise eine Durchquerung von einem Azure Active Directory-Benutzer zu einer Gruppe von Outlook-E-Mail-Nachrichten. Im nachstehenden Beispiel wird gezeigt, wie dies in einem REST-API-Aufruf funktioniert:
+Ebenso können Sie anhand einer Beziehung zu verwandten Ressourcen navigieren. Die user-messages-Beziehung ermöglicht beispielsweise eine Durchquerung von einem Azure Active Directory-Benutzer zu einer Gruppe von Outlook-E-Mail-Nachrichten. Im nachstehenden Beispiel wird gezeigt, wie dies in einem REST-API-Aufruf funktioniert:
 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/me/messages HTTP/1.1
-Authorization : Bearer <access_token>
+Authorization : Bearer {access_token}
 ```
 
     
@@ -189,7 +290,7 @@ Microsoft Graph unterstützt auch _Funktionen_ zum Bearbeiten von Ressourcen auf
 
 ```no-highlight 
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
-authorization: bearer <access_token>
+authorization: bearer {access_token}
 content-type: application/json
 content-length: 96
 

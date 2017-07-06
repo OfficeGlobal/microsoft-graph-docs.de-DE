@@ -97,7 +97,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 | _Contacts.Read_ |    Lesezugriff auf Kontakte in allen Postfächern | Ermöglicht der App, alle Kontakte in allen Postfächern ohne einen angemeldeten Benutzer zu lesen. | Ja |
 | _Contacts.ReadWrite_ |    Lese- und Schreibzugriff auf Kontakte in allen Postfächern  |Ermöglicht der App, alle Kontakte in allen Postfächern ohne einen angemeldeten Benutzer zu erstellen, zu lesen, zu aktualisieren und zu löschen.| Ja |
 
-### <a name="remarks"></a>Bemerkungen
+### <a name="remarks"></a>Hinweise
 Für Microsoft-Konten sind nur die delegierten Berechtigungen _Contacts.Read_ und _Contacts.ReadWrite_ gültig. 
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
@@ -121,7 +121,11 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
-Keine.
+|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Device.Read_ | Benutzergeräte lesen | Ermöglicht der App, eine Benutzerliste mit Geräten im Auftrag des angemeldeten Benutzers zu lesen. | Nein |
+| _Device.Command_ | Kommunikation mit Benutzergeräten | Ermöglicht der App, im Auftrag des angemeldeten Benutzers auf einem Benutzergerät eine andere App zu starten oder mit einer anderen App zu kommunizieren. | Nein |
+
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
@@ -131,7 +135,7 @@ Keine.
 
 ### <a name="remarks"></a>Hinweise
 
-Diese Berechtigung gilt nur für Apps, die für Organisationen entwickelt werden.
+Die delegierten Berechtigungen _Device.Read_ und _Device.Command_ gelten nur für persönlichen Microsoft-Konten.
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
 #### <a name="application"></a>Anwendung
@@ -262,7 +266,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 | _Files.Read.All_ | Lesen von Dateien in allen Websitesammlungen (Vorschau) | (Vorschau) Ermöglicht der App, alle Dateien in allen Websitesammlungen ohne einen angemeldeten Benutzer zu lesen. | Ja |
 | _Files.ReadWrite.All_ | Lesen und Schreiben von Dateien in allen Websitesammlungen (Vorschau) | **Eingeschränkte Unterstützung in Microsoft Graph** <br/> (Vorschau) Ermöglicht der App, alle Dateien in allen Websitesammlungen ohne einen angemeldeten Benutzer zu lesen, zu erstellen, zu aktualisieren und zu löschen. | Ja |
 
-### <a name="remarks"></a>Hinweise
+### <a name="remarks"></a>HinwBemerkungeneise
 
 Die delegierten Berechtigungen „Files.Read“, „Files.ReadWrite“, „Files.Read.All“ und „Files.ReadWrite.All“ sind sowohl für persönliche Microsoft-Konten als auch Geschäfts-, Schul- oder Unikonten gültig. Beachten Sie, dass bei persönlichen Konten „Files.Read“ und „Files.ReadWrite“ auch Zugriff auf Dateien gewähren, die für den angemeldeten Benutzer freigegeben sind. 
 
@@ -349,7 +353,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 _IdentityRiskEvent.Read.All_ gilt nur für Geschäfts-, Schul- oder Unikonten. Damit eine App mit delegierten Berechtigungen Informationen zu Identitätsrisiken lesen kann, muss der angemeldete Benutzer ein Mitglied einer der folgenden Administratorrollen sein: Globaler Administrator, Sicherheitsadministrator oder Benutzer mit Leseberechtigung für Sicherheitsfunktionen Weitere Informationen zu Administratorrollen finden Sie unter [Zuweisen von Administratorrollen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
-#### <a name="delegated-and-application"></a>Delegierte und Anwendung
+#### <a name="delegated-and-application"></a>Delegiert und Anwendung
 Die folgenden Verwendungen sind für delegierte und Anwendungsberechtigungen gültig:
 
 * Alle Risikoereignisse lesen, die für alle Benutzer im Mandanten generiert werden (`GET /beta/identityRiskEvents`)

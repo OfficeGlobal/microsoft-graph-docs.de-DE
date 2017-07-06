@@ -10,9 +10,11 @@ In Version 1.0 können Sie PATCH oder PUT für diesen Vorgang verwenden.
 ## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
 
-- Profilfoto des angemeldeten **Benutzers** - *User.ReadWrite*
+- Profilfoto des angemeldeten **Benutzers** - *User.ReadWrite*, *User.ReadWrite.All*
 - Profilfoto einer **Gruppe** - *Group.ReadWrite.All*
 - Foto von einem **Kontakt** - *Contacts.ReadWrite*
+
+> **Hinweis** Um das Foto eines Benutzers in der Organisation zu aktualisieren, muss Ihre App über die User.ReadWrite.All-Anwendungsberechtigung verfügen und diese API unter ihrer eigenen Identität und nicht im Auftrag eines Benutzers aufrufen. Weitere Informationen hierzu finden Sie unter [Zugriff ohne einen angemeldeten Benutzer erlangen](../../../concepts/auth_v2_service.md).
 
 ## <a name="http-request-to-update-the-photo"></a>HTTP-Anforderung zum Aktualisieren des Fotos
 <!-- { "blockType": "ignored" } -->

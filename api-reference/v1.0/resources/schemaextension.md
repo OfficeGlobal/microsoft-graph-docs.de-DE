@@ -22,18 +22,18 @@ Im [Beispiel für Schemaerweiterungen](../../../concepts/extensibility_schema_gr
 |[Create](../api/schemaextension_post_schemaextensions.md) | schemaExtension |Dient zum Erstellen einer Schemaerweiterungsdefinition.|
 |[List](../api/schemaextension_list.md) | schemaExtension |Dient zum Auflisten der verfügbaren schemaExtension-Definitionen und ihrer Eigenschaften.|
 |[Get](../api/schemaextension_get.md) | schemaExtension |Dient zum Lesen der Eigenschaften einer bestimmten schemaExtension-Definition.|
-|[Update](../api/schemaextension_update.md) | schemaExtension    |Dient zum Aktualisieren einer schemaExtension-Definition. |
+|[Update](../api/schemaextension_update.md) | schemaExtension   |Dient zum Aktualisieren einer schemaExtension-Definition. |
 |[Delete](../api/schemaextension_delete.md) | Keine |Dient zum Löschen einer schemaExtension-Definition. |
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |description|String|Beschreibung für die Schemaerweiterung.|
-|id|String|Der eindeutige Bezeichner für die Schemaerweiterungsdefinition. Der Wert muss eine Verkettung einer Ihrer überprüften Domänen (z. B. contoso.com) und eines Namen für die Schemaerweiterung sein; Beispiel: *contoso_mySchema*. |
+|id|String|Der eindeutige Bezeichner für die Schemaerweiterungsdefinition. <br>Sie können einen Wert mit einer von zwei Methoden zuweisen: <ul><li>Verketten Sie den Namen einer Ihrer überprüften Domänen mit einem Namen für die Schemaerweiterung, um eine eindeutige Zeichenfolge in diesem Format zu bilden: \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. Beispiel: `contoso_mySchema`. </li><li>Geben Sie einen Schemanamen an, und verwenden Sie diesen Schemanamen in Microsoft Graph zum Vervollständigen der **id**-Zuweisung in diesem Format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Zum Beispiel: `extkvbmkofy_mySchema`.</li></ul>Diese Eigenschaft kann nach dem Erstellen nicht mehr geändert werden. |
 |owner|String|Die appId der Anwendung, mit der die Schemaerweiterung erstellt wurde. Schreibgeschützt.|
 |properties|[extensionSchemaProperty](extensionschemaproperty.md)-Sammlung|Die Sammlung von Eigenschaftennamen und Typen, die die Schemaerweiterungsdefinition bilden.|
-|status|String|Der Lebenszyklusstatus der Schemaerweiterung. Mögliche Statuswerte sind: **InDevelopment**, **Available** und **Deprecated**. Wird bei der Erstellung automatisch auf **InDevelopment** festgelegt. Unter [Schemaerweiterungen](../../../concepts/extensibility_overview.md#schema-extensions) finden Sie weitere Informationen zu den möglichen Statusübergängen und Verhaltensweisen.|
-|targetTypes|String-Sammlung|Satz von Microsoft Graph-Typen (die Erweiterungen unterstützen können), auf die die Schemaerweiterung angewendet werden kann. Zur Auswahl stehen **contact**, **device**, **event**, **group**, **message**, **organization**, **post** und **user**.|
+|status|Zeichenfolge|Der Lebenszyklusstatus der Schemaerweiterung. Mögliche Statuswerte sind: **InDevelopment**, **Available** und **Deprecated**. Wird bei der Erstellung automatisch auf **InDevelopment** festgelegt. Unter [Schemaerweiterungen](../../../concepts/extensibility_overview.md#schema-extensions) finden Sie weitere Informationen zu den möglichen Statusübergängen und Verhaltensweisen.|
+|targetTypes|String collection|Satz von Microsoft Graph-Typen (die Erweiterungen unterstützen können), auf die die Schemaerweiterung angewendet werden kann. Zur Auswahl stehen **contact**, **device**, **event**, **group**, **message**, **organization**, **post** und **user**.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

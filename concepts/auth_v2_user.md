@@ -45,15 +45,15 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 ```
 | Parameter |  | Beschreibung |
 | --- | --- | --- |
-| tenant |erforderlich |Mit dem Wert `{tenant}` im Pfad der Anforderung kann gesteuert werden, wer sich bei der Anwendung anmelden kann.  Die zulässigen Werte sind `common` für Microsoft-Konten und Geschäfts-, Schul- oder Unikonten, `organizations` nur für Geschäfts-, Schul- oder Unikonten, `consumers` nur für Microsoft-Konten und Mandantenbezeichner wie z. B. Mandanten-ID oder Domänenname.  Weitere Informationen finden Sie unter [Grundlagen zu Protokollen](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols#endpoints). |
+| tenant |Erforderlich |Mit dem Wert `{tenant}` im Pfad der Anforderung kann gesteuert werden, wer sich bei der Anwendung anmelden kann.  Die zulässigen Werte sind `common` für Microsoft-Konten und Geschäfts-, Schul- oder Unikonten, `organizations` nur für Geschäfts-, Schul- oder Unikonten, `consumers` nur für Microsoft-Konten und Mandantenbezeichner wie z. B. Mandanten-ID oder Domänenname.  Weitere Informationen finden Sie unter [Grundlagen zu Protokollen](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols#endpoints). |
 | client_id |erforderlich |Die Anwendungs-ID, die Ihrer App vom Registrierungsportal ([apps.dev.microsoft.com](https://apps.dev.microsoft.com/?referrer=https://azure.microsoft.com/documentation/articles&deeplink=/appList)) zugewiesen wurde. |
 | response_type |erforderlich |Muss `code` für den Autorisierungscodefluss enthalten. |
 | redirect_uri |empfohlen |Der Umleitungs-URI Ihrer API, an den Authentifizierungsantworten gesendet und von Ihrer App empfangen werden können.  Er muss genau mit einem der Umleitungs-URIs übereinstimmen, die Sie im App-Registrierungsportal registriert haben, mit der Ausnahme, dass er URL-codiert sein muss.  Für systemeigene und mobile Apps sollten Sie den Standardwert `https://login.microsoftonline.com/common/oauth2/nativeclient` verwenden. |
-| scope |erforderlich |Eine mit Leerzeichen getrennte Liste von Microsoft Graph-Berechtigungen, denen der Benutzer zustimmen soll. Hierzu können auch OpenID-Bereiche gehören. |
+| Umfang |Erforderlich |Eine mit Leerzeichen getrennte Liste von Microsoft Graph-Berechtigungen, denen der Benutzer zustimmen soll. Hierzu können auch OpenID-Bereiche gehören. |
 | response_mode |empfohlen |Gibt die Methode an, die verwendet werden soll, um das resultierende Token an die App zurückzusenden.  Kann `query` oder `form_post` sein. |
-| state |empfohlen |Ein Wert, der in der Anforderung enthalten ist und ebenfalls in der Tokenantwort zurückgegeben wird.  Es kann eine Zeichenfolge beliebigen Inhalts sein.  In der Regel wird ein zufällig generierter eindeutiger Wert verwendet, um [websiteübergreifende Anforderungsfälschungsangriffe zu verhindern ](http://tools.ietf.org/html/rfc6749#section-10.12).  Der Status wird auch verwendet, um Informationen über den Status des Benutzers in der App vor dem Versand der Authentifizierungsanforderung zu codieren, z. B. die Seite oder die Ansicht, auf bzw. in der sich der Benutzer befunden hat. |
+| Zustand |empfohlen |Ein Wert, der in der Anforderung enthalten ist und ebenfalls in der Tokenantwort zurückgegeben wird.  Es kann eine Zeichenfolge beliebigen Inhalts sein.  In der Regel wird ein zufällig generierter eindeutiger Wert verwendet, um [websiteübergreifende Anforderungsfälschungsangriffe zu verhindern ](http://tools.ietf.org/html/rfc6749#section-10.12).  Der Status wird auch verwendet, um Informationen über den Status des Benutzers in der App vor dem Versand der Authentifizierungsanforderung zu codieren, z. B. die Seite oder die Ansicht, auf bzw. in der sich der Benutzer befunden hat. |
 
-> **Wichtig**: Microsoft Graph stellt zwei Arten von Berechtigungen zur Verfügung: Anwendung und delegiert. Für Apps, die mit einem angemeldeten Benutzer ausgeführt werden, fordern Sie delegierte Berechtigungen im `scope`-Parameter an. Diese Berechtigungen delegieren die Rechte des angemeldeten Benutzers an Ihre Anwendung und ermöglichen es ihr, als der angemeldete Benutzer zu agieren, wenn Aufrufe an Microsoft Graph gesendet werden. Ausführliche Informationen zu den in Microsoft Graph verfügbaren Berechtigungen finden Sie in der [Berechtigungsreferenz](./permissions_reference.md).
+> **Wichtig**: Microsoft Graph stellt zwei Arten von Berechtigungen zur Verfügung: Anwendungsberechtigungen und delegierte Berechtigungen. Für Apps, die mit einem angemeldeten Benutzer ausgeführt werden, fordern Sie delegierte Berechtigungen im `scope`-Parameter an. Diese Berechtigungen delegieren die Rechte des angemeldeten Benutzers an Ihre Anwendung und ermöglichen es ihr, als der angemeldete Benutzer zu agieren, wenn Aufrufe an Microsoft Graph gesendet werden. Ausführliche Informationen zu den in Microsoft Graph verfügbaren Berechtigungen finden Sie in der [Berechtigungsreferenz](./permissions_reference.md).
  
 ### <a name="consent-experience"></a>Zustimmungsfunktionalität
 
@@ -78,7 +78,7 @@ code=M0ab92efe-b6fd-df08-87dc-2c6500a7f84d
 | Parameter | Beschreibung |
 | --- | --- |
 | code |Der von der App angeforderte Autorisierungscode. Mit diesem Autorisierungscode kann die App ein Zugriffstoken für die Zielressource anfordern.  Autorisierungscodes haben nur eine sehr kurze Gültigkeit, normalerweise laufen sie nach ca. 10 Minuten ab. |
-| state |Wenn ein Statusparameter in der Anforderung enthalten ist, sollte der gleiche Wert in der Antwort angezeigt werden. Die App sollte überprüfen, ob die Statuswerte in Anforderung und Antwort identisch sind. |
+| Zustand |Wenn ein Statusparameter in der Anforderung enthalten ist, sollte der gleiche Wert in der Antwort angezeigt werden. Die App sollte überprüfen, ob die Statuswerte in Anforderung und Antwort identisch sind. |
 
 ## <a name="3-get-a-token"></a>3. Abrufen eines Tokens
 Ihre App verwendet den im vorherigen Schritt empfangenen Autorisierungs-`code` zum Anfordern eines Zugriffstokens; hierzu wird eine `POST`-Anforderung an den `/token`-Endpunkt gesendet.
@@ -101,10 +101,10 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 | Parameter |  | Beschreibung |
 | --- | --- | --- |
-| tenant |erforderlich |Mit dem Wert `{tenant}` im Pfad der Anforderung kann gesteuert werden, wer sich bei der Anwendung anmelden kann.  Die zulässigen Werte sind `common` für Microsoft-Konten und Geschäfts-, Schul- oder Unikonten, `organizations` nur für Geschäfts-, Schul- oder Unikonten, `consumers` nur für Microsoft-Konten und Mandantenbezeichner wie z. B. Mandanten-ID oder Domänenname.  Weitere Informationen finden Sie unter [Grundlagen zu Protokollen](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols#endpoints). |
+| tenant |Erforderlich |Mit dem Wert `{tenant}` im Pfad der Anforderung kann gesteuert werden, wer sich bei der Anwendung anmelden kann.  Die zulässigen Werte sind `common` für Microsoft-Konten und Geschäfts-, Schul- oder Unikonten, `organizations` nur für Geschäfts-, Schul- oder Unikonten, `consumers` nur für Microsoft-Konten und Mandantenbezeichner wie z. B. Mandanten-ID oder Domänenname.  Weitere Informationen finden Sie unter [Grundlagen zu Protokollen](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols#endpoints). |
 | client_id |erforderlich |Die Anwendungs-ID, die Ihrer App vom Registrierungsportal ([apps.dev.microsoft.com](https://apps.dev.microsoft.com/?referrer=https://azure.microsoft.com/documentation/articles&deeplink=/appList)) zugewiesen wurde. |
 | grant_type |erforderlich |Muss `authorization_code` für den Autorisierungscodefluss sein. |
-| scope |erforderlich |Eine mit Leerzeichen getrennte Liste von Bereichen.  Die Bereiche, die in diesem Zweig angefordert werden, müssen den im ersten Zweig (Autorisierung) angeforderten Bereichen entsprechen oder eine Teilmenge davon sein.  Wenn die in dieser Anforderung angegebenen Bereiche sich über mehrere Ressourcenserver erstrecken, gibt der v2.0-Endpunkt ein Token für die im ersten Bereich angegebene Ressource zurück. |
+| scope |Erforderlich |Eine mit Leerzeichen getrennte Liste von Bereichen.  Die Bereiche, die in diesem Zweig angefordert werden, müssen den im ersten Zweig (Autorisierung) angeforderten Bereichen entsprechen oder eine Teilmenge davon sein.  Wenn die in dieser Anforderung angegebenen Bereiche sich über mehrere Ressourcenserver erstrecken, gibt der v2.0-Endpunkt ein Token für die im ersten Bereich angegebene Ressource zurück. |
 | code |erforderlich |Der Autorisierungscode, den Sie im ersten Zweig des Flusses abgerufen haben. |
 | redirect_uri |erforderlich |Die gleiche Umleitungs-URI-Wert, der zum Abrufen des Autorisierungscodes verwendet wurde. |
 | client_secret |erforderlich für Web-Apps |Das Anwendungsgeheimnis, das Sie im App-Registrierungsportal für Ihre App erstellt haben.  Es sollte nicht in einer systemeigenen App verwendet werden, da Anwendungsgeheimnisse nicht zuverlässig auf Geräten gespeichert werden können.  Es ist für Web-Apps und Web-APIs erforderlich, die die Möglichkeit haben, das Anwendungsgeheimnis sicher auf dem Server zu speichern. |
@@ -124,7 +124,7 @@ Obwohl das Zugriffstoken für Ihre App undurchsichtig ist, enthält die Antwort 
 | Parameter | Beschreibung |
 | --- | --- |
 | token_type |Gibt den Tokentypwert an. Der einzige von Azure AD unterstützte Typ ist „Bearer“. |
-| scope |Eine mit Leerzeichen getrennte Liste der Microsoft Graph-Berechtigungen, für die das Zugriffstoken gültig ist. |
+| Umfang |Eine mit Leerzeichen getrennte Liste der Microsoft Graph-Berechtigungen, für die das Zugriffstoken gültig ist. |
 | expires_in |Gültigkeit des Zugriffstokens (in Sekunden). |
 | access_token |Das angeforderte Zugriffstoken. Mit diesem Token kann Ihre App Microsoft Graph aufrufen. |
 | refresh_token |Ein OAuth 2.0-Aktualisierungstoken. Mit diesem Token kann Ihre App zusätzliche Zugriffstoken anfordern, nachdem das aktuelle Zugriffstoken abgelaufen ist.  Aktualisierungstoken haben eine lange Lebensdauer und können verwendet werden, um für längere Zeit Zugriff auf Ressourcen zu behalten.  Ausführliche Informationen finden Sie in der [v2.0-Tokenreferenz](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens). |
@@ -193,7 +193,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | --- | --- | --- |
 | client_id |erforderlich |Die Anwendungs-ID, die Ihrer App vom Registrierungsportal ([apps.dev.microsoft.com](https://apps.dev.microsoft.com/?referrer=https://azure.microsoft.com/documentation/articles&deeplink=/appList)) zugewiesen wurde. |
 | grant_type |erforderlich |Muss `refresh_token` sein. |
-| scope |erforderlich |Eine mit Leerzeichen getrennte Liste von Berechtigungen (Bereichen).  Die angeforderten Berechtigungen müssen den im ursprünglichen Autorisierungscode angeforderten Berechtigungen entsprechen oder eine Teilmenge davon sein. |
+| scope |Erforderlich |Eine mit Leerzeichen getrennte Liste von Berechtigungen (Bereichen).  Die angeforderten Berechtigungen müssen den im ursprünglichen Autorisierungscode angeforderten Berechtigungen entsprechen oder eine Teilmenge davon sein. |
 | refresh_token |erforderlich |Das während der Tokenanforderung abgerufene Aktualisierungstoken. |
 | redirect_uri |erforderlich |Die gleiche Umleitungs-URI-Wert, der zum Abrufen des Autorisierungscodes verwendet wurde. |
 | client_secret |erforderlich für Web-Apps |Das Anwendungsgeheimnis, das Sie im App-Registrierungsportal für Ihre App erstellt haben.  Es sollte nicht in einer systemeigenen App verwendet werden, da Anwendungsgeheimnisse nicht zuverlässig auf Geräten gespeichert werden können.  Es ist für Web-Apps und Web-APIs erforderlich, die die Möglichkeit haben, das Anwendungsgeheimnis sicher auf dem Server zu speichern. |

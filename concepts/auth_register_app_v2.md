@@ -41,7 +41,7 @@ Führen Sie die folgenden Schritte aus, um Ihre App zu registrieren; denken Sie 
 
     1. Klicken Sie auf **Web**.
 
-    2. Abhängig vom verwendeten Authentifizierungsflusstyp müssen Sie möglicherweise sicherstellen, dass das Kontrollkästchen ** 	Impliziten Fluss zulassen** aktiviert ist. 
+    2. Abhängig vom verwendeten Authentifizierungsflusstyp müssen Sie möglicherweise sicherstellen, dass das Kontrollkästchen **Impliziten Fluss zulassen** aktiviert ist. 
         
         Die Option **Impliziten Fluss zulassen** aktiviert den hybriden und den impliziten OpenID Connect-Fluss. Der hybride Fluss ermöglicht es der App, sowohl Anmeldeinformationen (das ID-Token) als auch Artefakte (in diesem Fall einen Autorisierungscode) zu erhalten, die die App zum Abrufen eines Zugriffstokens verwendet. Der hybride Fluss ist der von der Middleware OWIN OpenID Connect verwendete Standardfluss. Für Einzelseiten-Apps (SPA) ermöglicht der implizite Fluss der App, Anmeldeinformationen und das Zugriffstoken zu erhalten. 
 
