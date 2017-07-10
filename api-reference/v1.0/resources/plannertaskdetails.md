@@ -1,9 +1,11 @@
-# <a name="plannertaskdetails-resource-type"></a>plannerTaskDetails-Ressourcentyp
+<a id="plannertaskdetails-resource-type" class="xliff"></a>
+# plannerTaskDetails-Ressourcentyp
 
 Die **plannerTaskDetails**-Ressource stellt die zusätzlichen Informationen zu einer Aufgabe dar. Jedes [task](plannertask.md)-Objekt hat ein Detailobjekt.
 
 
-### <a name="methods"></a>Methoden
+<a id="methods" class="xliff"></a>
+## Methoden
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
@@ -11,8 +13,9 @@ Die **plannerTaskDetails**-Ressource stellt die zusätzlichen Informationen zu e
 |[Update](../api/plannertaskdetails_update.md) | [plannerTaskDetails](plannertaskdetails.md)    |Dient zum Aktualisieren des **plannerTaskDetails**-Objekts. |
 
 
-### <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+<a id="properties" class="xliff"></a>
+## Eigenschaften
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|Die Sammlung von Checklistenelementen für die Aufgabe.|
 |description|String|Beschreibung der Aufgabe.|
@@ -20,12 +23,13 @@ Die **plannerTaskDetails**-Ressource stellt die zusätzlichen Informationen zu e
 |previewType|string|Hierdurch wird der Typ der Vorschau festgelegt, die für die Aufgabe angezeigt wird. Mögliche Werte: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Bei Festlegung auf `automatic` wird die angezeigte Vorschau von der App ausgewählt, mit der die Aufgabe angezeigt wird.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|Die Sammlung der Verweise für die Aufgabe.|
 
-### <a name="relationships"></a>Beziehungen
+<a id="relationships" class="xliff"></a>
+## Beziehungen
 Keine
 
 
-### <a name="json-representation"></a>JSON-Darstellung
-
+<a id="json-representation" class="xliff"></a>
+## JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {

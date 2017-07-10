@@ -1,28 +1,32 @@
-# <a name="pivottable-resource-type"></a>Ressourcentyp pivotTable
+<a id="pivottable-resource-type" class="xliff"></a>
+# Ressourcentyp pivotTable
 
 Stellt eine Excel-PivotTable dar.
 
-### <a name="methods"></a>Methoden
+<a id="methods" class="xliff"></a>
+## Methoden
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
 |[workbookPivotTable abrufen](../api/workbookpivottable_get.md) | [workbookPivotTable](workbookpivottable.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des workbookPivotTable-Objekts.|
-|[Aktualisieren](../api/workbookpivottable_refresh.md)|Keine|Aktualisiert die PivotTable.    |
+|[Aktualisieren](../api/workbookpivottable_refresh.md)|Keine|Aktualisiert die PivotTable. |
 |[Refreshall](../api/workbookpivottable_refreshall.md)|Keine|Aktualisiert alle Tabellen im gegebenen Arbeitsblatt. Beachten Sie, dass diese Aktion nur für die PivotTable-Sammlung verfügbar ist.|
 
-### <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+<a id="properties" class="xliff"></a>
+## Eigenschaften
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|Zeichenfolge| Die ID der PivotTable.    Schreibgeschützt.|
+|id|String| Die ID der PivotTable.   Schreibgeschützt.|
 |name|String|Der Name der PivotTable.    |
 
-### <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+<a id="relationships" class="xliff"></a>
+## Beziehungen
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Arbeitsblatt|[Arbeitsblatt](worksheet.md)| Das Arbeitsblatt, das die aktuelle PivotTable enthält. Schreibgeschützt.    |
+|Arbeitsblatt|[Arbeitsblatt](worksheet.md)| Das Arbeitsblatt, das die aktuelle PivotTable enthält. Schreibgeschützt.   |
 
-### <a name="json-representation"></a>JSON-Darstellung
-
+<a id="json-representation" class="xliff"></a>
+## JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
