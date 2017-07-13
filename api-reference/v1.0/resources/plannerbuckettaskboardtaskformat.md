@@ -1,27 +1,31 @@
-# <a name="plannerbuckettaskboardtaskformat-resource-type"></a>plannerBucketTaskBoardTaskFormat-Ressourcentyp
+# plannerBucketTaskBoardTaskFormat-Ressourcentyp
+<a id="plannerbuckettaskboardtaskformat-resource-type" class="xliff"></a>
 
 Die **plannerBucketTaskBoardTaskFormat**-Ressource stellt die Informationen dar, die zum korrekten Rendern einer Aufgabe in der Ansicht „Buckets“ des Task Board verwendet werden (eine Ansicht, die nach den Aufgaben in den Buckets organisiert ist, denen sie zugewiesen sind). Jeder [Aufgabe](plannertask.md) ist ein **plannerBucketTaskBoardTaskFormat**-Objekt zugeordnet.
 
 
-### <a name="methods"></a>Methoden
+## Methoden
+<a id="methods" class="xliff"></a>
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
 |[plannerBucketTaskBoardTaskFormat abrufen](../api/plannerbuckettaskboardtaskformat_get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |Dient zum Lesen der Eigenschaften und Beziehungen eines **plannerBucketTaskBoardTaskFormat**-Objekts.|
-|[Update](../api/plannerbuckettaskboardtaskformat_update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)    |Dient zum Aktualisieren des **plannerBucketTaskBoardTaskFormat**-Objekts. |
+|[Update](../api/plannerbuckettaskboardtaskformat_update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)  |Dient zum Aktualisieren des **plannerBucketTaskBoardTaskFormat**-Objekts. |
 
-### <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+## Eigenschaften
+<a id="properties" class="xliff"></a>
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |id|String| Schreibgeschützt. ID der Ressource. Sie ist 28 Zeichen lang, und es wird zwischen Groß-und Kleinschreibung unterschieden. Für den Dienst wird eine [Formatüberprüfung](planner_identifiers_disclaimer.md) durchgeführt.|
 |orderHint|String|Hinweis, der zum Anordnen von Aufgaben in der Ansicht „Buckets“ des Task Board verwendet wird. Das Format ist wie [hier](planner_order_hint_format.md) beschrieben definiert.|
 
-### <a name="relationships"></a>Beziehungen
+## Beziehungen
+<a id="relationships" class="xliff"></a>
 Keine
 
 
-### <a name="json-representation"></a>JSON-Darstellung
-
+## JSON-Darstellung
+<a id="json-representation" class="xliff"></a>
 Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {

@@ -1,12 +1,15 @@
-# <a name="plannerappliedcategories-resource-type"></a>plannerAppliedCategories-Ressourcentyp
+# plannerAppliedCategories-Ressourcentyp
+<a id="plannerappliedcategories-resource-type" class="xliff"></a>
 
 
 Die **AppliedCategoriesCollection**-Ressource stellt die Sammlung von Kategorien (oder Bezeichnungen) dar, die auf eine Aufgabe angewendet wurden. Sie ist Teil des [plannerTask](plannertask.md)-Objekts. Auf eine Aufgabe können bis zu 6 Kategorien angewendet werden. Kategoriebeschreibungen wie `category1`, `category2` usw. sind Teil des [planDetails ](plannerplandetails.md)-Objekts. Es handelt sich um einen offenen Typ.
 
-### <a name="properties"></a>Eigenschaften
+## Eigenschaften
+<a id="properties" class="xliff"></a>
 Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall muss der Client jedoch `category1`, `category2`, `category3`, `category4`, `category5` und/oder `category6` als Eigenschaften angeben, deren Wert das boolesche `true` ist, wenn die entsprechenden Kategorien auf die Aufgabe angewendet werden. Nachfolgend ein Beispiel. Wenn sie nicht zutreffen, werden Eigenschaften automatisch entfernt, indem ihre Werte auf das boolesche `false` festgelegt werden. 
 
-## <a name="json-representation"></a>JSON-Darstellung
+## JSON-Darstellung
+<a id="json-representation" class="xliff"></a>
 
 Es folgt eine JSON-Darstellung der Ressource.
 

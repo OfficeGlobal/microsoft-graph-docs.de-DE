@@ -1,4 +1,5 @@
-# <a name="customize-responses-optional-query-parameters"></a>Anpassen von Antworten: optionale Abfrageparameter
+# Verwenden von Abfrageparametern zum Anpassen von Antworten
+<a id="use-query-parameters-to-customize-responses" class="xliff"></a>
 
 Microsoft Graph stellt optionale Abfrageparameter bereit, die Sie zum Festlegen und Steuern der in einer Antwort zurückgegebenen Datenmenge verwenden können. Die folgenden Abfrageparameter werden unterstützt.
 
@@ -35,7 +36,8 @@ Eine korrekt codierte URL sieht folgendermaßen aus:
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
 
-## <a name="filter"></a>filter
+## filter
+<a id="filter" class="xliff"></a>
 
 `$filter` kann verwendet werden, um nur eine Teilmenge einer Auflistung abzurufen. Um beispielsweise Benutzer zu suchen, deren Anzeigename mit `J` beginnt, verwenden Sie `startswith`.
 
@@ -91,7 +93,8 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 `$filter` verfügt über eine sehr umfangreiche und aussagekräftige Syntax mit vielen integrierten Operatoren. Logische Operatoren umfassen Gleichheitszeichen (`eq`), Ungleichheitszeichen (`ne`), Zeichen für größer als (`gt`), größer gleich (`gte`), UND (`and`), ODER (`or`), NICHT(`not`) usw. Arithmetische Operatoren umfassen Addieren (`add`), Subtrahieren (`sub`) usw. Zeichenfolgenoperatoren umfassen ENTHÄLT (`contains`), BEGINNT MIT (`startswith`) usw. Lambda-Operatoren umfassen KEINE (`any`) und ALLE (`all`). Weitere Informationen zur `$filter`-Syntax finden Sie im [OData-Protokoll][odata-filter].
 
 
-## <a name="select"></a>select
+## select
+<a id="select" class="xliff"></a>
 
 In einer Sammlung oder einer einzelnen Identität verwenden Sie den `$select`-Abfrageparameter, um anstelle der Standardgruppe eine andere Eigenschaftengruppe zum Zurückgeben anzugeben. Der `$select`-Parameter ermöglicht die Auswahl einer Teilmenge oder Obermenge der zurückgegebenen Standardgruppe. Wenn Sie z. B. Ihre Nachrichten abrufen, möchten Sie ggf. festlegen, dass nur die Eigenschaften `from` und `subject` der Nachrichten zurückgegeben werden.
 
@@ -125,7 +128,8 @@ in the response will only have those property values included.
 }
 ```-->
 
-## <a name="expand"></a>expand
+## expand
+<a id="expand" class="xliff"></a>
 
 In Microsoft Graph-API-Anforderungen wird die Navigation zu einem Objekt oder einer Auflistung des Elements, auf das verwiesen wird, nicht automatisch erweitert. Dies ist beabsichtigt, da der Netzwerkdatenverkehr und die Zeit zum Generieren einer Antwort vom Dienst auf diese Weise reduziert werden. Möglicherweise möchten Sie jedoch in einigen Fällen diese Ergebnisse in eine Antwort einbeziehen.
 
@@ -145,7 +149,8 @@ GET https://graph.microsoft.com/v1.0/users?$expand=directReports
 
 Einige andere Ressourcen haben möglicherweise ebenfalls einen Höchstwert, führen Sie daher immer eine Überprüfung auf mögliche Fehler durch.
 
-## <a name="orderby"></a>orderby
+## orderby
+<a id="orderby" class="xliff"></a>
 
 Verwenden Sie zum Festlegen der Sortierreihenfolge der aus der Microsoft Graph-API zurückgegebenen Elemente den `$orderby`-Abfrageparameter.
 
@@ -165,7 +170,8 @@ Wenn Sie die Ergebnisse in aufsteigender oder absteigender Reihenfolge sortieren
 
  > **Hinweis:** Bei Abfragen zur [`user`](../api-reference/v1.0/resources/user.md)-Ressource kann `$orderby` nicht zusammen mit Filterausdrücken verwendet werden.
 
-## <a name="top"></a>top
+## top
+<a id="top" class="xliff"></a>
 
 Verwenden Sie zum Festlegen der maximalen Anzahl der in einem Resultset zurückzugebenden Elemente den `$top`-Abfrageparameter. Der `$top`-Abfrageparameter ermittelt eine Teilmenge in der Sammlung. Diese Teilmenge setzt sich aus den festgelegten ersten N Elementen zusammen, wobei N eine positive ganze Zahl ist, die durch diesen Abfrageparameter angegeben ist. Wenn beispielsweise die ersten fünf Nachrichten im Postfach des Benutzers zurückgegeben werden sollen, lautet die Syntax wie folgt:
 
@@ -173,7 +179,8 @@ Verwenden Sie zum Festlegen der maximalen Anzahl der in einem Resultset zurückz
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
-## <a name="skip"></a>skip
+## skip
+<a id="skip" class="xliff"></a>
 
 Verwenden Sie zum Festlegen der Anzahl der Elemente, die vor dem Abrufen von Elementen in einer Sammlung übersprungen werden sollen, den `$skip`-Abfrageparameter. Wenn die zurückgegebenen Ereignisse nach Erstellungsdatum sortiert werden, wobei mit dem 21. Ereignis begonnen wird, lautet die Syntax wie folgt.
 
@@ -181,7 +188,8 @@ Verwenden Sie zum Festlegen der Anzahl der Elemente, die vor dem Abrufen von Ele
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
 
-## <a name="skiptoken"></a>skipToken
+## skipToken
+<a id="skiptoken" class="xliff"></a>
 
 Verwenden Sie zur Anforderung der zweiten und nachfolgender Seiten mit Graph-Daten den `$skipToken`-Abfrageparameter. Der `$skipToken`-Abfrageparameter wird in URLs bereitgestellt, die von Graph übergeben werden, wenn Graph, in der Regel aufgrund von serverseitigem Paging, einen Teil einer Teilmenge der Ergebnisse zurückgibt. Sie nennt den Punkt in einer Sammlung, an dem der Server das Senden der Ergebnisse beendet hat, und wird zu Graph zurückgegeben, um anzugeben, von wo aus das Senden der Ergebnisse wieder aufgenommen werden sollte. Der Wert eines `$skipToken`-Abfrageparameters könnte z. B. das zehnte Element in einer Sammlung oder das 20. Element in einer Sammlung mit 50 Elementen oder eine andere Position in der Sammlung angeben.
 
@@ -197,7 +205,8 @@ Um die nächste Seite der Benutzer in Ihrer Organisation zurückzugeben, lautet 
 GET  https://graph.microsoft.com/v1.0/users?$orderby=displayName&$skiptoken=X%2783630372100000000000000000000%27
 ```
 
-## <a name="count"></a>count
+## count
+<a id="count" class="xliff"></a>
 
 Verwenden Sie `$count` als Abfrageparameter, um die Gesamtzahl der Elemente in einer Sammlung zusammen mit der Seite der Datenwerte anzugeben, die von Graph zurückgegeben werden (siehe folgendes Beispiel):
 
@@ -209,7 +218,8 @@ Zurückgegeben werden sowohl die `contacts`-Sammlung als auch die Anzahl der Ele
 
 >**Hinweis:** Dies wird für [`directoryObject`](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/directoryobject)-Sammlungen nicht unterstützt.
 
-## <a name="search"></a>Suche
+## Suche
+<a id="search" class="xliff"></a>
 
 Um die Ergebnisse einer Anforderung zu beschränken, die einem Suchkriterium entsprechen, verwenden Sie den `$search`-Abfrageparameter.
 

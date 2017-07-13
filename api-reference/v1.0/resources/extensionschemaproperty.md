@@ -1,15 +1,18 @@
-# <a name="extensionschemaproperty-resource-type"></a>extensionSchemaProperty-Ressourcentyp
+# extensionSchemaProperty-Ressourcentyp
+<a id="extensionschemaproperty-resource-type" class="xliff"></a>
 
 Verwenden Sie die **extensionSchemaProperty**-Ressource, um den Namen und den Typ einer Eigenschaft im Rahmen einer [schemaExtension](schemaextension.md)-Definition zu definieren.
 
 
-### <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+## Eigenschaften
+<a id="properties" class="xliff"></a>
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |name|String| Der Name der stark typisierten Eigenschaft, die im Rahmen der Schemaerweiterung definiert wird.|
 |type|String| Der Typ der Eigenschaft, die im Rahmen der Schemaerweiterung definiert wird.  Zulässige Werte sind *Binary, Boolean, DateTime, Integer* oder *String*.  Weitere Einzelheiten finden Sie in der Tabelle unten.|
 
-#### <a name="supported-property-data-types"></a>Unterstützte Datentypen für Eigenschaften 
+#### Unterstützte Datentypen für Eigenschaften
+<a id="supported-property-data-types" class="xliff"></a> 
 Die folgenden Datentypen werden beim Definieren einer Eigenschaft in einer Schemaerweiterung unterstützt:
 
 | Eigenschaftentyp | Bemerkungen |
@@ -18,10 +21,10 @@ Die folgenden Datentypen werden beim Definieren einer Eigenschaft in einer Schem
 | Boolescher Wert | Nicht unterstützt für Nachrichten, Ereignisse und Beiträge. |
 | DateTime | Muss im ISO 8601-Format angegeben werden. Wird in UTC gespeichert. |
 | Ganze Zahl | 32-Bit-Wert. Nicht unterstützt für Nachrichten, Ereignisse und Beiträge. |
-| String | Maximal 256 Zeichen. |
+| Zeichenfolge | Maximal 256 Zeichen. |
 
-### <a name="json-representation"></a>JSON-Darstellung
-
+## JSON-Darstellung
+<a id="json-representation" class="xliff"></a>
 Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {

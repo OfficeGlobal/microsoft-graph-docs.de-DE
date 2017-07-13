@@ -1,10 +1,12 @@
-# <a name="plannerplandetails-resource-type"></a>plannerPlanDetails-Ressourcentyp
+# plannerPlanDetails-Ressourcentyp
+<a id="plannerplandetails-resource-type" class="xliff"></a>
 
 
 Die **plannerPlanDetails**-Ressource stellt die zusätzlichen Informationen zu einem Plan dar. Jedes [plan](plannerplan.md)-Objekt hat ein Detailobjekt.
 
 
-### <a name="methods"></a>Methoden
+## Methoden
+<a id="methods" class="xliff"></a>
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
@@ -12,19 +14,21 @@ Die **plannerPlanDetails**-Ressource stellt die zusätzlichen Informationen zu e
 |[Update](../api/plannerplandetails_update.md) | [plannerPlanDetails](plannerplandetails.md)    |Dient zum Aktualisieren des **plannerPlanDetails**-Objekts. |
 
 
-### <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+## Eigenschaften
+<a id="properties" class="xliff"></a>
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|Ein Objekt, das die Beschreibungen der sechs Kategorien angibt, die den Aufgaben im Plan zugeordnet werden können.|
 |id|String| Schreibgeschützt. ID der Plandetails. Sie ist 28 Zeichen lang, und es wird zwischen Groß-und Kleinschreibung unterschieden. Für den Dienst wird eine [Formatüberprüfung](planner_identifiers_disclaimer.md) durchgeführt.|
 |sharedWith|[plannerUserIds](planneruserids.md)|Der Satz von Benutzer-IDs, für die dieser Plan freigegeben ist. Wenn Sie Office 365 Gruppen nutzen, verwenden Sie die Gruppen-API zum Verwalten von Gruppenmitgliedschaften, um den Plan der [Gruppe](group.md) freizugeben. Sie können auch vorhandene Mitglieder der Gruppe zu dieser Sammlung hinzufügen, dies ist jedoch nicht erforderlich, damit sie auf den im Besitz der Gruppe befindlichen Plan zugreifen können. |
 
-### <a name="relationships"></a>Beziehungen
+## Beziehungen
+<a id="relationships" class="xliff"></a>
 Keine
 
 
-### <a name="json-representation"></a>JSON-Darstellung
-
+## JSON-Darstellung
+<a id="json-representation" class="xliff"></a>
 Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {

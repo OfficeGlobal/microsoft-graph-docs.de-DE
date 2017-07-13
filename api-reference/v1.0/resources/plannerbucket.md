@@ -1,34 +1,38 @@
-# <a name="plannerbucket-resource-type"></a>plannerBucket-Ressourcentyp
+# plannerBucket-Ressourcentyp
+<a id="plannerbucket-resource-type" class="xliff"></a>
 
 Die **plannerBucket**-Ressource stellt einen Bucket (bzw. eine „benutzerdefinierte Spalte“) für Aufgaben in einem Plan in Office 365 dar. Sie ist in einem [plannerPlan](plannerPlan.md) enthalten und kann eine Sammlung von [plannerTasks](plannerTask.md) haben.
 
 
 
-### <a name="methods"></a>Methoden
+## Methoden
+<a id="methods" class="xliff"></a>
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
 |[plannerBucket abrufen](../api/plannerbucket_get.md) | [plannerBucket](plannerbucket.md) |Dient zum Lesen der Eigenschaften und Beziehungen des **plannerBucket**-Objekts.|
 |[plannerTasks auflisten](../api/plannerbucket_list_tasks.md) |[plannerTask](plannertask.md)-Sammlung| Dient zum Abrufen einer **plannerTask**-Objektsammlung.|
-|[Create](../api/planner_post_buckets.md) | [plannerBucket](plannerbucket.md)    | Dient zum Erstellen eines neuen **plannerBucket**-Objekts. |
-|[Update](../api/plannerbucket_update.md) | [plannerBucket](plannerbucket.md)    |Dient zum Aktualisieren eines **plannerBucket**-Objekts. |
+|[Create](../api/planner_post_buckets.md) | [plannerBucket](plannerbucket.md)   | Dient zum Erstellen eines neuen **plannerBucket**-Objekts. |
+|[Update](../api/plannerbucket_update.md) | [plannerBucket](plannerbucket.md)   |Dient zum Aktualisieren eines **plannerBucket**-Objekts. |
 |[Delete](../api/plannerbucket_delete.md) | Keine |Dient zum Löschen eines **plannerBucket**-Objekts. |
 
-### <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+## Eigenschaften
+<a id="properties" class="xliff"></a>
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |id|String| Schreibgeschützt. ID des Buckets. Sie ist 28 Zeichen lang, und es wird zwischen Groß-und Kleinschreibung unterschieden. Für den Dienst wird eine [Formatüberprüfung](planner_identifiers_disclaimer.md) durchgeführt.|
 |name|String|Name des Buckets.|
 |orderHint|String|Hinweis, der zum Anordnen von Elementen dieses Typs in einer Listenansicht verwendet wird. Das Format ist wie [hier](planner_order_hint_format.md) beschrieben definiert.|
 |planId|String|Plan-ID, zu der der Bucket gehört.|
 
-### <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+## Beziehungen
+<a id="relationships" class="xliff"></a>
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |tasks|[plannerTask](plannertask.md)-Sammlung| Schreibgeschützt. Lässt Nullwerte zu. Die Sammlung von Aufgaben im Bucket.|
 
-### <a name="json-representation"></a>JSON-Darstellung
-
+## JSON-Darstellung
+<a id="json-representation" class="xliff"></a>
 Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {

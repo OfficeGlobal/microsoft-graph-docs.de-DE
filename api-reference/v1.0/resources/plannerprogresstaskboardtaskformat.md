@@ -1,27 +1,31 @@
-# <a name="plannerprogresstaskboardtaskformat-resource-type"></a>plannerProgressTaskBoardTaskFormat-Ressourcentyp
+# plannerProgressTaskBoardTaskFormat-Ressourcentyp
+<a id="plannerprogresstaskboardtaskformat-resource-type" class="xliff"></a>
 
 Die **plannerProgressTaskBoardTaskFormat**-Ressource stellt die Informationen dar, die zum korrekten Rendern einer Aufgabe in der Ansicht „Fortschritt“ des Task Board verwendet werden (eine Ansicht, die nach dem Status des Felds „ProzentAbgeschlossen“ für das Aufgabenobjekt sortiert ist und Spalten für „Nicht gestartet“, „In Bearbeitung“ und „Abgeschlossen“ enthält). Jeder [Aufgabe](plannertask.md) ist ein **plannerProgressTaskBoardTaskFormat**-Objekt zugeordnet.
 
 
-### <a name="methods"></a>Methoden
+## Methoden
+<a id="methods" class="xliff"></a>
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
 |[plannerProgressTaskBoardTaskFormat abrufen](../api/plannerprogresstaskboardtaskformat_get.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md) |Dient zum Lesen der Eigenschaften und Beziehungen eines **plannerProgressTaskBoardTaskFormat**-Objekts.|
 |[Update](../api/plannerprogresstaskboardtaskformat_update.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)    |Dient zum Aktualisieren des **plannerProgressTaskBoardTaskFormat**-Objekts. |
 
-### <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+## Eigenschaften
+<a id="properties" class="xliff"></a>
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |id|String| Schreibgeschützt. ID der Ressource. Sie ist 28 Zeichen lang, und es wird zwischen Groß-und Kleinschreibung unterschieden. Für den Dienst wird eine [Formatüberprüfung](planner_identifiers_disclaimer.md) durchgeführt.|
 |orderHint|String|Hinweiswert, der verwendet wird, um die Aufgaben in der Ansicht „Fortschritt“ des Task Board anzuordnen. Das Format ist wie [hier](planner_order_hint_format.md) beschrieben definiert.|
 
-### <a name="relationships"></a>Beziehungen
+## Beziehungen
+<a id="relationships" class="xliff"></a>
 Keine
 
 
-### <a name="json-representation"></a>JSON-Darstellung
-
+## JSON-Darstellung
+<a id="json-representation" class="xliff"></a>
 Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {

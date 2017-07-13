@@ -1,18 +1,21 @@
-# <a name="plannertask-resource-type"></a>plannerTask-Ressourcentyp
+# plannerTask-Ressourcentyp
+<a id="plannertask-resource-type" class="xliff"></a>
 
 Die **plannerTask**-Ressource stellt eine Planer-Aufgabe in Office 365 dar. Eine Planner-Aufgabe ist in einem [Plan](plannerplan.md) enthalten und kann einem [Bucket](plannerbucket.md) in einem Plan zugewiesen werden. Jedes Aufgabenobjekt verfügt über ein [details](plannertaskdetails.md)-Objekt, das weitere Informationen über die Aufgabe enthalten kann. Weitere Informationen zu Beziehungen zwischen Gruppe, Plan und Aufgabe finden Sie in der [Übersicht](planner_overview.md).
 
 
-### <a name="methods"></a>Methoden
+## Methoden
+<a id="methods" class="xliff"></a>
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
 |[plannerTask abrufen](../api/plannertask_get.md) | [plannerTask](plannertask.md) |Dient zum Lesen der Eigenschaften und Beziehungen eines **plannerTask**-Objekts.|
-|[Aktualisieren](../api/plannertask_update.md) | [plannerTask](plannertask.md)    |Dient zum Aktualisieren des **plannerTask**-Objekts. |
+|[Aktualisieren](../api/plannertask_update.md) | [plannerTask](plannertask.md) |Dient zum Aktualisieren des **plannerTask**-Objekts. |
 |[Löschen](../api/plannertask_delete.md) | Keine |Dient zum Löschen des **plannerTask**-Objekts. |
 
-### <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+## Eigenschaften
+<a id="properties" class="xliff"></a>
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |activeChecklistItemCount|Int32|Anzahl Prüflistenelemente, deren Wert auf „false“ festgelegt ist, was unvollständige Elemente darstellt.|
 |appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|Die Kategorien, auf die die Aufgabe angewendet wurde. Mögliche Werte finden Sie unter [angewendete Kategorien](plannerappliedcategories.md).|
@@ -22,10 +25,10 @@ Die **plannerTask**-Ressource stellt eine Planer-Aufgabe in Office 365 dar. Eine
 |checklistItemCount|Int32|Anzahl der Prüflistenelemente, die für die Aufgabe vorhanden sind.|
 |completedBy|[identitySet](identityset.md)|Die Identität des Benutzers, der die Aufgabe abgeschlossen hat.|
 |completedDateTime|DateTimeOffset|Schreibgeschützt. Datum und Uhrzeit, zu dem bzw. der die `'percentComplete'` der Aufgabe auf `'100'` festgelegt ist. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|conversationThreadId|String|Thread-ID der Unterhaltung zur Aufgabe. Dies ist die ID des Unterhaltungsthreadobjekts, das in der Gruppe erstellt wurde.|
+|conversationThreadId|Zeichenfolge|Thread-ID der Unterhaltung zur Aufgabe. Dies ist die ID des Unterhaltungsthreadobjekts, das in der Gruppe erstellt wurde.|
 |createdBy|[identitySet](identityset.md)|Die Identität des Benutzers, der die Aufgabe erstellt hat.|
 |createdDateTime|DateTimeOffset|Schreibgeschützt. Datum und Uhrzeit der Erstellung der Aufgabe. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|dueDateTime|DateTimeOffset|Datum und Uhrzeit der Fälligkeit der Aufgabe. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
+|dueDateTime|DateTimeOffset|Datum und Uhrzeit der Fälligkeit der Aufgabe. Der Zeitstempeltyp stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |hasDescription|Boolescher Wert|Schreibgeschützt. Der Wert ist `true`, wenn das Detailobjekt der Aufgabe eine nicht leere Beschreibung und aufweist, andernfalls `false`.|
 |id|String|Schreibgeschützt. ID der Aufgabe. Sie ist 28 Zeichen lang und es wird zwischen Groß-und Kleinschreibung unterschieden. Für den Dienst wird eine [Formatüberprüfung](planner_identifiers_disclaimer.md) durchgeführt.|
 |orderHint|String|Hinweis, der zum Anordnen von Elementen dieses Typs in einer Listenansicht verwendet wird. Das Format ist wie [hier](planner_order_hint_format.md) beschrieben definiert.|
@@ -36,16 +39,17 @@ Die **plannerTask**-Ressource stellt eine Planer-Aufgabe in Office 365 dar. Eine
 |startDateTime|DateTimeOffset|Datum und Uhrzeit des Aufgabenbeginns. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |title|String|Titel der Aufgabe.|
 
-### <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+## Beziehungen
+<a id="relationships" class="xliff"></a>
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |assignedToTaskBoardFormat|[plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)| Schreibgeschützt. Lässt Nullwerte zu. Wird zum korrekten Rendern der Task Board-Ansicht bei Gruppierung nach assignedTo verwendet.|
 |bucketTaskBoardFormat|[plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)| Schreibgeschützt. Lässt Nullwerte zu. Wird zum korrekten Rendern der Task Board-Ansicht bei Gruppierung nach Bucket verwendet.|
 |Details|[plannerTaskDetails](plannertaskdetails.md)| Schreibgeschützt. Lässt Nullwerte zu. Weitere Details über die Aufgabe.|
 |progressTaskBoardFormat|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)| Schreibgeschützt. Lässt Nullwerte zu. Wird zum korrekten Rendern der Task Board-Ansicht bei Gruppierung nach Fortschritt verwendet.|
 
-### <a name="json-representation"></a>JSON-Darstellung
-
+## JSON-Darstellung
+<a id="json-representation" class="xliff"></a>
 Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
