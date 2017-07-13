@@ -1,50 +1,12 @@
-# <a name="event-decline"></a>event: decline
-
-Dient zum Ablehnen einer Einladung für das angegebene Ereignis.
-
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Calendars.ReadWrite*
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/events/{id}/decline
-POST /users/{id | userPrincipalName}/events/{id}/decline
-POST /groups/{id}/events/{id}/decline
-
-POST /me/calendar/events/{id}/decline
-POST /users/{id | userPrincipalName}/calendar/events/{id}/decline
-POST /groups/{id}/calendar/events/{id}/decline
-
-POST /me/calendars/{id}/events/{id}/decline
-POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/decline
-
-POST /me/calendargroup/calendars/{id}/events/{id}/decline
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/decline
-
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/decline
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/decline
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
-
-| Parameter    | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|comment|String|In der Antwort enthaltener Text. Optional.|
-|sendResponse|Boolean|`true`,wenn eine Antwort an den Organisator gesendet werden soll; andernfalls `false`. Optional. Der Standardwert lautet `true`.|
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="e29c4-p105">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202, Accepted` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="e29c4-p105">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202, Accepted` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="e29c4-135">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e29c4-135">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="e29c4-136">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="e29c4-136">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="e29c4-137">Anforderung</span><span class="sxs-lookup"><span data-stu-id="e29c4-137">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="e29c4-138">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="e29c4-138">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "event_decline"
@@ -60,9 +22,11 @@ Content-length: 56
 }
 ```
 
-##### <a name="response"></a>Antwort
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="e29c4-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="e29c4-139">Response</span></span>
+<a id="response" class="xliff"></a>
+##### <span data-ttu-id="e29c4-140">Antwort</span><span class="sxs-lookup"><span data-stu-id="e29c4-140">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="e29c4-141">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="e29c4-141">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

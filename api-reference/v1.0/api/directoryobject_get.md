@@ -1,40 +1,4 @@
-# <a name="get-directoryobject"></a>directoryObject abrufen
-
-Dient zum Abrufen der Eigenschaften und der Beziehungen des directoryObject-Objekts.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: 
-- _Directory.Read.All_ 
-- _Directory.AccessAsUser.All_
-
-> Hinweis: Berechtigungsbereiche werden in der Reihenfolge der geringsten erforderlichen Rechte aufgelistet.
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-GET /directoryObjects/{id}
-```
-## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [directoryObject](../resources/directoryobject.md)-Objekt im Antworttext zurückgegeben.
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-
-<!-- {
-  "blockType": "request",
-  "name": "get_directoryobject"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/directoryObjects/{id}
-```
-##### <a name="response"></a>Antwort
+<span data-ttu-id="2d2e6-p102">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2d2e6-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",

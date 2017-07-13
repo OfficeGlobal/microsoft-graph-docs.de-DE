@@ -1,35 +1,13 @@
-# plannerPlanDetails-Ressourcentyp
-<a id="plannerplandetails-resource-type" class="xliff"></a>
+<span data-ttu-id="d8dde-p103">Der Satz von Benutzer-IDs, für die dieser Plan freigegeben ist. Wenn Sie Office 365 Gruppen nutzen, verwenden Sie die Gruppen-API zum Verwalten von Gruppenmitgliedschaften, um den Plan der [Gruppe](group.md) freizugeben. Sie können auch vorhandene Mitglieder der Gruppe zu dieser Sammlung hinzufügen, dies ist jedoch nicht erforderlich, damit sie auf den im Besitz der Gruppe befindlichen Plan zugreifen können.</span><span class="sxs-lookup"><span data-stu-id="d8dde-p103">Set of user ids that this plan is shared with. If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](group.md) plan. You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.</span></span>|Der Satz von Benutzer-IDs, für die dieser Plan freigegeben ist. Wenn Sie Office 365 Gruppen nutzen, verwenden Sie die Gruppen-API zum Verwalten von Gruppenmitgliedschaften, um den Plan der [Gruppe](group.md) freizugeben. Sie können auch vorhandene Mitglieder der Gruppe zu dieser Sammlung hinzufügen, dies ist jedoch nicht erforderlich, damit sie auf den im Besitz der Gruppe befindlichen Plan zugreifen können. |
 
-
-Die **plannerPlanDetails**-Ressource stellt die zusätzlichen Informationen zu einem Plan dar. Jedes [plan](plannerplan.md)-Objekt hat ein Detailobjekt.
-
-
-## Methoden
-<a id="methods" class="xliff"></a>
-
-| Methode           | Rückgabetyp    |Beschreibung|
-|:---------------|:--------|:----------|
-|[plannerPlanDetails abrufen](../api/plannerplandetails_get.md) | [plannerPlanDetails](plannerplandetails.md) |Dient zum Lesen der Eigenschaften und Beziehungen eines **plannerPlanDetails**-Objekts.|
-|[Update](../api/plannerplandetails_update.md) | [plannerPlanDetails](plannerplandetails.md)    |Dient zum Aktualisieren des **plannerPlanDetails**-Objekts. |
-
-
-## Eigenschaften
-<a id="properties" class="xliff"></a>
-| Eigenschaft     | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|Ein Objekt, das die Beschreibungen der sechs Kategorien angibt, die den Aufgaben im Plan zugeordnet werden können.|
-|id|String| Schreibgeschützt. ID der Plandetails. Sie ist 28 Zeichen lang, und es wird zwischen Groß-und Kleinschreibung unterschieden. Für den Dienst wird eine [Formatüberprüfung](planner_identifiers_disclaimer.md) durchgeführt.|
-|sharedWith|[plannerUserIds](planneruserids.md)|Der Satz von Benutzer-IDs, für die dieser Plan freigegeben ist. Wenn Sie Office 365 Gruppen nutzen, verwenden Sie die Gruppen-API zum Verwalten von Gruppenmitgliedschaften, um den Plan der [Gruppe](group.md) freizugeben. Sie können auch vorhandene Mitglieder der Gruppe zu dieser Sammlung hinzufügen, dies ist jedoch nicht erforderlich, damit sie auf den im Besitz der Gruppe befindlichen Plan zugreifen können. |
-
-## Beziehungen
+## <span data-ttu-id="d8dde-132">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="d8dde-132">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-Keine
+<span data-ttu-id="d8dde-133">Keine</span><span class="sxs-lookup"><span data-stu-id="d8dde-133">None</span></span>
 
 
-## JSON-Darstellung
+## <span data-ttu-id="d8dde-134">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="d8dde-134">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="d8dde-135">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="d8dde-135">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

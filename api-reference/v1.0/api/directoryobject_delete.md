@@ -1,31 +1,10 @@
-# <a name="delete-directoryobject"></a>directoryObject löschen
-
-Dient zum Löschen eines directoryObject.
-
-## <a name="prerequisites"></a>Voraussetzungen
-Der folgende **Bereich** ist erforderlich, um diese API auszuführen: _Directory.AccessAsUser.All_
-
-**HINWEIS:** Benutzer, Gruppen und Kontakte sind Typen von Verzeichnisobjekten. Wenn Sie Benutzer löschen müssen, kann und sollte daher der folgende **Bereich** verwendet werden: _User.ReadWrite.All_
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /directoryObjects/{id}
-
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="062ed-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="062ed-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
+## <span data-ttu-id="062ed-121">Beispiel</span><span class="sxs-lookup"><span data-stu-id="062ed-121">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="062ed-122">Anforderung</span><span class="sxs-lookup"><span data-stu-id="062ed-122">Request</span></span>
+<a id="request" class="xliff"></a>
 
 <!-- {
   "blockType": "request",
@@ -34,7 +13,8 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` z
 ```http
 DELETE https://graph.microsoft.com/v1.0/directoryObject/{id}
 ```
-##### <a name="response"></a>Antwort
+##### <span data-ttu-id="062ed-123">Antwort</span><span class="sxs-lookup"><span data-stu-id="062ed-123">Response</span></span>
+<a id="response" class="xliff"></a>
 
 <!-- {
   "blockType": "response",

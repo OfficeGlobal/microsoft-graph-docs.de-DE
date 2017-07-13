@@ -1,13 +1,7 @@
-# plannerOrderHintsByAssignee-Ressourcentyp
-<a id="plannerorderhintsbyassignee-resource-type" class="xliff"></a>
-
-Die **plannerOrderHintsByAssignee**-Ressource enthält [Anordnungshinweise](planner_order_hint_format.md) für zugewiesene Personen in einer [plannerTask](plannerTask.md)-Ressource, um die Anordnung der Aufgabe in der Ansicht „ZugewiesenAn“ des Task Board anzugeben. Es handelt sich um einen offenen Typ. Die Eigenschaften sind die IDs der Benutzer, die der Aufgabe zugewiesen sind, und die Werte sind Anordnungshinweise.
-
-## Eigenschaften
-<a id="properties" class="xliff"></a>
+<span data-ttu-id="2442a-p102">Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall muss der Client IDs von Benutzern, die der Aufgabe zugewiesen sind, als Eigenschaftennamen und einen gültigen [Anordnungshinweis](planner_order_hint_format.md) als Wert angeben. Von diesem Typ können keine Eigenschaften entfernt werden. Der Dienst entfernt automatisch Werte, wenn die Zuweisungen in der enthaltenden [plannerTask](plannerTask.md)-Ressource aktualisiert werden.</span><span class="sxs-lookup"><span data-stu-id="2442a-p102">Properties of an Open Type can be defined by the client. In this case, the client must provide ids of users assigned to the task as property names, and a valid [order hint](planner_order_hint_format.md) as the value. Properties cannot be removed from this type. The service will automatically remove values as the assignments on the containing [plannerTask](plannerTask.md) are updated.</span></span>
 Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall muss der Client IDs von Benutzern, die der Aufgabe zugewiesen sind, als Eigenschaftennamen und einen gültigen [Anordnungshinweis](planner_order_hint_format.md) als Wert angeben. Von diesem Typ können keine Eigenschaften entfernt werden. Der Dienst entfernt automatisch Werte, wenn die Zuweisungen in der enthaltenden [plannerTask](plannerTask.md)-Ressource aktualisiert werden.
 
-Beispiel:
+<span data-ttu-id="2442a-110">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="2442a-110">Example:</span></span>
 
 <!-- {
   "blockType": "resource",

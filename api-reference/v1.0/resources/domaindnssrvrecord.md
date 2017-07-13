@@ -1,37 +1,14 @@
-<a id="domaindnssrvrecord-resource-type" class="xliff"></a>
-# domainDnsSrvRecord-Ressourcentyp
+<span data-ttu-id="a614a-p105">Wert, der beim Konfigurieren der Eigenschaft für die Gültigkeitsdauer (*time-to-live (ttl)*) des SRV-Eintrags auf dem DNS-Host verwendet werden soll. Lässt keine Nullwerte zu.</span><span class="sxs-lookup"><span data-stu-id="a614a-p105">Value to use when configuring the *time-to-live (ttl)* property of the SRV record at the DNS host. Not nullable</span></span>| Wert, der beim Konfigurieren der Eigenschaft für die Gültigkeitsdauer (*time-to-live (ttl)*) des SRV-Eintrags auf dem DNS-Host verwendet werden soll. Lässt keine Nullwerte zu. |
+|<span data-ttu-id="a614a-149">weight</span><span class="sxs-lookup"><span data-stu-id="a614a-149">weight</span></span>|<span data-ttu-id="a614a-150">Int32</span><span class="sxs-lookup"><span data-stu-id="a614a-150">Int32</span></span>| <span data-ttu-id="a614a-151">Wert, der beim Konfigurieren der *weight*-Eigenschaft des SRV-Eintrags auf dem DNS-Host verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="a614a-151">Value to use when configuring the *weight* property of the SRV record at the DNS host.</span></span> |
 
-Stellt einen SRV-Eintrag dar, der der DNS-Zonendatei einer bestimmten Domäne im Mandanten hinzugefügt wird. Geerbt von der Entität [DomainDnsRecord](domaindnsrecord.md).
-
-<a id="methods" class="xliff"></a>
-## Methoden
-Direkte Abfragen dieser Ressource werden nicht unterstützt. Informationen zum Abfragen von Domänendiensteinträgen finden Sie im Thema [Domäne](domain.md).
-
-<a id="properties" class="xliff"></a>
-## Eigenschaften
-| Eigenschaft     | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|id|Zeichenfolge| Eindeutiger Bezeichner, der dieser Entität zugewiesen ist. Lässt keine Nullwerte zu, schreibgeschützt.|
-|isOptional|Boolean| Wenn „false“, muss der SRV-Eintrag vom Kunden auf dem DNS-Host konfiguriert werden, damit Microsoft-Onlinedienste ordnungsgemäß mit der Domäne funktionieren. |
-|label|String| Wert, der beim Konfigurieren der *name*-Eigenschaft des SRV-Eintrags auf dem DNS-Host verwendet wird. |
-|nameTarget|String| Wert, der beim Konfigurieren der *target*-Eigenschaft des SRV-Eintrags auf dem DNS-Host verwendet werden soll. |
-|port|Int32| Wert, der beim Konfigurieren der *port*-Eigenschaft des SRV-Eintrags auf dem DNS-Host verwendet werden soll. |
-|priority|Int32| Wert, der beim Konfigurieren der *priority*-Eigenschaft des SRV-Eintrags auf dem DNS-Host verwendet werden soll. |
-|protocol|String| Wert, der beim Konfigurieren der *protocol*-Eigenschaft des SRV-Eintrags auf dem DNS-Host verwendet werden soll. |
-|recordType|String|  Typ des DNS-Eintrags. Der Wert ist immer *Srv*. Schlüssel |
-|service|String| Wert, der beim Konfigurieren der *service*-Eigenschaft des SRV-Eintrags auf dem DNS-Host verwendet werden soll. |
-|supportedService|String| Microsoft-Onlinedienst oder Feature mit Abhängigkeit von diesem SRV-Eintrag.</br></br>Kann einer der folgenden Werte sein: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
-|ttl|Int32| Wert, der beim Konfigurieren der Eigenschaft für die Gültigkeitsdauer (*time-to-live (ttl)*) des SRV-Eintrags auf dem DNS-Host verwendet werden soll. Lässt keine Nullwerte zu. |
-|weight|Int32| Wert, der beim Konfigurieren der *weight*-Eigenschaft des SRV-Eintrags auf dem DNS-Host verwendet werden soll. |
-
+## <span data-ttu-id="a614a-152">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="a614a-152">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-## Beziehungen
-Keine
+<span data-ttu-id="a614a-153">Keine</span><span class="sxs-lookup"><span data-stu-id="a614a-153">None</span></span>
 
 
+## <span data-ttu-id="a614a-154">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="a614a-154">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## JSON-Darstellung
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="a614a-155">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="a614a-155">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

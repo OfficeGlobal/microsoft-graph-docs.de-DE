@@ -1,33 +1,8 @@
-<a id="pivottable-resource-type" class="xliff"></a>
-# Ressourcentyp pivotTable
+<span data-ttu-id="3cc51-p103">Das Arbeitsblatt, das die aktuelle PivotTable enthält. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="3cc51-p103">The worksheet containing the current PivotTable. Read-only.</span></span>| Das Arbeitsblatt, das die aktuelle PivotTable enthält. Schreibgeschützt.   |
 
-Stellt eine Excel-PivotTable dar.
-
-<a id="methods" class="xliff"></a>
-## Methoden
-
-| Methode           | Rückgabetyp    |Beschreibung|
-|:---------------|:--------|:----------|
-|[workbookPivotTable abrufen](../api/workbookpivottable_get.md) | [workbookPivotTable](workbookpivottable.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des workbookPivotTable-Objekts.|
-|[Aktualisieren](../api/workbookpivottable_refresh.md)|Keine|Aktualisiert die PivotTable. |
-|[Refreshall](../api/workbookpivottable_refreshall.md)|Keine|Aktualisiert alle Tabellen im gegebenen Arbeitsblatt. Beachten Sie, dass diese Aktion nur für die PivotTable-Sammlung verfügbar ist.|
-
-<a id="properties" class="xliff"></a>
-## Eigenschaften
-| Eigenschaft     | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|id|String| Die ID der PivotTable.   Schreibgeschützt.|
-|name|String|Der Name der PivotTable.    |
-
-<a id="relationships" class="xliff"></a>
-## Beziehungen
-| Beziehung | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|Arbeitsblatt|[Arbeitsblatt](worksheet.md)| Das Arbeitsblatt, das die aktuelle PivotTable enthält. Schreibgeschützt.   |
-
+## <span data-ttu-id="3cc51-136">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="3cc51-136">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## JSON-Darstellung
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="3cc51-137">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="3cc51-137">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

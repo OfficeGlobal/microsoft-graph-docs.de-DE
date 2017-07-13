@@ -1,29 +1,12 @@
-# <a name="message-send"></a>message: send
-
-Sendet eine Nachricht im Ordner „Entwürfe“. Der Entwurf kann ein Entwurf für eine neue Nachricht, eine Antwort, eine Antwort an alle oder eine Weiterleitung sein. Die Nachricht wird dann im Ordner „Gesendete Elemente“ gespeichert.
-
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Mail.Send*
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/messages/{id}/send
-POST /users/{id | userPrincipalName}/messages/{id}/send
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-
-## <a name="request-body"></a>Anforderungstext
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="6b417-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202, Accepted` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="6b417-p103">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202, Accepted` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="6b417-120">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6b417-120">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="6b417-121">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="6b417-121">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="6b417-122">Anforderung</span><span class="sxs-lookup"><span data-stu-id="6b417-122">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="6b417-123">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="6b417-123">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "message_send"
@@ -32,9 +15,11 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 ```
 
-##### <a name="response"></a>Antwort
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="6b417-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="6b417-124">Response</span></span>
+<a id="response" class="xliff"></a>
+##### <span data-ttu-id="6b417-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="6b417-125">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="6b417-126">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="6b417-126">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

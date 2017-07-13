@@ -1,119 +1,154 @@
-# <a name="getting-started-building-microsoft-graph-apps"></a>Erste Schritte zum Entwickeln von Microsoft Graph-Apps
-
-Die Artikel in diesem Abschnitt bieten detaillierte Angaben dazu, wie Apps erstellt werden, die aus einer Palette von Sprachen und Entwicklungsplattformen mit Microsoft Graph verbunden werden. Jeder Artikel beginnt mit einem Beispiel eines Startprojekts für die entsprechende Plattform und führt Sie schrittweise durch das Hinzufügen von Funktionen, die den Benutzer authentifizieren, und stellt eine Beispielanforderung an Microsoft Graph, aus ihrem Konto eine E-Mail zu senden. Das fertige Projekt ist identisch mit dem [Connect-Beispiel im Microsoft Graph-Repository](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect) für die betreffende Plattform.
-
-Wählen Sie den Artikel, der sich mit dem Authentifizierungsanbieter und der Entwicklungsplattform Ihrer Wahl befasst, und unternehmen Sie die ersten Schritte zum Herstellen einer Verbindung mit Microsoft Graph.
-
-Sie können die Schritte in diesem Artikel ausführen, der sich mit der Entwicklungsplattform befasst, die Sie auswählen, oder die [Schnellstart](https://developer.microsoft.com/graph/quick-start)-Erfahrung ausprobieren und schnell eine funktionsfähige Lösung einrichten und  ausführen.
+<span data-ttu-id="600b7-p102">Wenn Sie die fertigen Connect-Beispiele ansehen möchten, besuchen Sie das [Microsoft Graph Repository](https://github.com/microsoftgraph) auf GitHub. In der folgenden Tabelle sind die Beispiele nach Authentifizierungsanbieter und Plattform mit einem Vermerk aufgeführt, ob sie bei der Verbindung mit Microsoft Graph REST oder eine Microsoft Graph-Client-Bibliothek verwenden.</span><span class="sxs-lookup"><span data-stu-id="600b7-p102">To explore the finished Connect samples, see [Microsoft Graph](https://github.com/microsoftgraph) in GitHub. The following table lists the samples by authentication provider and platform, and notes whether they connect to Microsoft Graph using REST or a Microsoft Graph client library.</span></span>
 
 Wenn Sie die fertigen Connect-Beispiele ansehen möchten, besuchen Sie das [Microsoft Graph Repository](https://github.com/microsoftgraph) auf GitHub. In der folgenden Tabelle sind die Beispiele nach Authentifizierungsanbieter und Plattform mit einem Vermerk aufgeführt, ob sie bei der Verbindung mit Microsoft Graph REST oder eine Microsoft Graph-Client-Bibliothek verwenden.
 
 <table>
   <tr>
-    <th>Plattform</th>
-    <th>Dem Azure AD-Endpunkt</th> 
-    <th>Dem Azure AD v2.0-Endpunkt</th>
+    <th><span data-ttu-id="600b7-109">Plattform</span><span class="sxs-lookup"><span data-stu-id="600b7-109">Platform</span></span></th>
+    <th><span data-ttu-id="600b7-110">Dem Azure AD-Endpunkt</span><span class="sxs-lookup"><span data-stu-id="600b7-110">Azure AD endpoint</span></span></th> 
+    <th><span data-ttu-id="600b7-111">Dem Azure AD v2.0-Endpunkt</span><span class="sxs-lookup"><span data-stu-id="600b7-111">Azure AD v2.0 endpoint</span></span></th>
   </tr>
   <tr>
-    <td>Android</td>
-    <td>
+    <td><span data-ttu-id="600b7-112">Android</span><span class="sxs-lookup"><span data-stu-id="600b7-112">Android</span></span></td>
+    <td><span data-ttu-id="600b7-113">
         <a href="https://github.com/microsoftgraph/android-java-connect-sample/tree/last_v1_auth">SDK-Beispiel</a>
-    </td> 
-        <td>
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-113">
+        <a href="https://github.com/microsoftgraph/android-java-connect-sample/tree/last_v1_auth">SDK sample</a>
+    </span></span></td> 
+        <td><span data-ttu-id="600b7-114">
                 <a href="https://github.com/microsoftgraph/android-java-connect-sample">SDK-Beispiel</a> oder ¶<a href="https://github.com/microsoftgraph/android-java-connect-rest-sample">REST-Beispiel</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-114">
+                <a href="https://github.com/microsoftgraph/android-java-connect-sample">SDK sample</a> or <a href="https://github.com/microsoftgraph/android-java-connect-rest-sample">REST sample</a>
+    </span></span></td> 
   </tr>
   <tr>
-    <td>AngularJS</td>
-    <td>
+    <td><span data-ttu-id="600b7-115">AngularJS</span><span class="sxs-lookup"><span data-stu-id="600b7-115">AngularJS</span></span></td>
+    <td><span data-ttu-id="600b7-116">
         <a href="https://github.com/microsoftgraph/angular-connect-rest-sample/tree/last_v1_auth">REST-Beispiel</a>
-    </td> 
-        <td>
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-116">
+        <a href="https://github.com/microsoftgraph/angular-connect-rest-sample/tree/last_v1_auth">REST sample</a>
+    </span></span></td> 
+        <td><span data-ttu-id="600b7-117">
         <a href="https://github.com/microsoftgraph/angular-connect-sample">SDK-Beispiel</a> oder ¶<a href="https://github.com/microsoftgraph/angular-connect-rest-sample">REST-Beispiel</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-117">
+        <a href="https://github.com/microsoftgraph/angular-connect-sample">SDK sample</a> or <a href="https://github.com/microsoftgraph/angular-connect-rest-sample">REST sample</a>
+    </span></span></td> 
   </tr>
   <tr>
-    <td>ASP.NET</td>
-    <td>
+    <td><span data-ttu-id="600b7-118">ASP.NET</span><span class="sxs-lookup"><span data-stu-id="600b7-118">ASP.NET</span></span></td>
+    <td><span data-ttu-id="600b7-119">
         <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample/tree/last_v1_auth">REST-Beispiel</a>
-    </td>     
-    <td>
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-119">
+        <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample/tree/last_v1_auth">REST sample</a>
+    </span></span></td>     
+    <td><span data-ttu-id="600b7-120">
         <a href="https://github.com/microsoftgraph/aspnet-connect-sample">SDK-Beispiel</a> oder ¶<a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">REST-Beispiel</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-120">
+        <a href="https://github.com/microsoftgraph/aspnet-connect-sample">SDK sample</a> or <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">REST sample</a>
+    </span></span></td> 
   </tr>
   <tr>
-    <td>iOS (Obj-C)</td>
-    <td>
+    <td><span data-ttu-id="600b7-121">iOS (Obj-C)</span><span class="sxs-lookup"><span data-stu-id="600b7-121">iOS (Obj-C)</span></span></td>
+    <td><span data-ttu-id="600b7-122">
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">REST-Beispiel</a>
-    </td>     
-     <td>
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-122">
+        <a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">REST sample</a>
+    </span></span></td>     
+     <td><span data-ttu-id="600b7-123">
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">SDK-Beispiel</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-123">
+        <a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">SDK sample</a>
+    </span></span></td> 
   </tr>
   <tr>
-    <td>iOS (Swift)</td>
-    <td>
+    <td><span data-ttu-id="600b7-124">iOS (Swift)</span><span class="sxs-lookup"><span data-stu-id="600b7-124">iOS (Swift)</span></span></td>
+    <td><span data-ttu-id="600b7-125">
         <a href="https://github.com/microsoftgraph/ios-swift-connect-rest-sample">REST-Beispiel</a>
-    </td>     
-    <td>
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-125">
+        <a href="https://github.com/microsoftgraph/ios-swift-connect-rest-sample">REST sample</a>
+    </span></span></td>     
+    <td><span data-ttu-id="600b7-126">
         <a href="https://github.com/microsoftgraph/ios-swift-connect-sample">SDK-Beispiel</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-126">
+        <a href="https://github.com/microsoftgraph/ios-swift-connect-sample">SDK sample</a>
+    </span></span></td> 
   </tr>
   <tr>
-    <td>NodeJS</td>
-    <td>
+    <td><span data-ttu-id="600b7-127">NodeJS</span><span class="sxs-lookup"><span data-stu-id="600b7-127">NodeJS</span></span></td>
+    <td><span data-ttu-id="600b7-128">
         <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">REST-Beispiel</a>
-    </td>     
-    <td>    
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-128">
+        <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">REST sample</a>
+    </span></span></td>     
+    <td><span data-ttu-id="600b7-129">    
         <a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK-Beispiel</a> oder ¶<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST-Beispiel</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-129">    
+        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK sample</a> or <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST sample</a>
+    </span></span></td> 
   </tr>
   <tr>
-    <td>PHP</td>
-    <td>
+    <td><span data-ttu-id="600b7-130">PHP</span><span class="sxs-lookup"><span data-stu-id="600b7-130">PHP</span></span></td>
+    <td><span data-ttu-id="600b7-131">
         <a href="https://github.com/microsoftgraph/php-connect-rest-sample/tree/last_v1_auth">REST-Beispiel</a>
-    </td>     
-    <td>
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-131">
+        <a href="https://github.com/microsoftgraph/php-connect-rest-sample/tree/last_v1_auth">REST sample</a>
+    </span></span></td>     
+    <td><span data-ttu-id="600b7-132">
             <a href="https://github.com/microsoftgraph/php-connect-sample">SDK-Beispiel</a> oder ¶<a href="https://github.com/microsoftgraph/php-connect-rest-sample">REST-Beispiel</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-132">
+            <a href="https://github.com/microsoftgraph/php-connect-sample">SDK sample</a> or <a href="https://github.com/microsoftgraph/php-connect-rest-sample">REST sample</a>
+    </span></span></td> 
   </tr>
   <tr>
-    <td>Python</td>
-    <td>
+    <td><span data-ttu-id="600b7-133">Python</span><span class="sxs-lookup"><span data-stu-id="600b7-133">Python</span></span></td>
+    <td><span data-ttu-id="600b7-134">
         <a href="https://github.com/microsoftgraph/python3-connect-rest-sample">REST-Beispiel</a>
-    </td>     
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-134">
+        <a href="https://github.com/microsoftgraph/python3-connect-rest-sample">REST sample</a>
+    </span></span></td>     
     <td>
     </td> 
   </tr>
   <tr>
-    <td>Ruby</td>
-    <td>
+    <td><span data-ttu-id="600b7-135">Ruby</span><span class="sxs-lookup"><span data-stu-id="600b7-135">Ruby</span></span></td>
+    <td><span data-ttu-id="600b7-136">
         <a href="https://github.com/microsoftgraph/ruby-connect-rest-sample/tree/last_v1_auth">REST-Beispiel</a>
-    </td>     
-    <td>
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-136">
+        <a href="https://github.com/microsoftgraph/ruby-connect-rest-sample/tree/last_v1_auth">REST sample</a>
+    </span></span></td>     
+    <td><span data-ttu-id="600b7-137">
         <a href="https://github.com/microsoftgraph/ruby-connect-rest-sample">REST-Beispiel</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-137">
+        <a href="https://github.com/microsoftgraph/ruby-connect-rest-sample">REST sample</a>
+    </span></span></td> 
   </tr>
   <tr>
-    <td>UWP</td>
-    <td>
+    <td><span data-ttu-id="600b7-138">UWP</span><span class="sxs-lookup"><span data-stu-id="600b7-138">UWP</span></span></td>
+    <td><span data-ttu-id="600b7-139">
         <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/last_v1_auth">REST-Beispiel</a>
-    </td>     
-    <td>
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-139">
+        <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/last_v1_auth">REST sample</a>
+    </span></span></td>     
+    <td><span data-ttu-id="600b7-140">
         <a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">SDK-Beispiel</a> oder ¶<a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">REST-Beispiel</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-140">
+        <a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">SDK sample</a> or <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">REST sample</a>
+    </span></span></td> 
   </tr>
   <tr>
-    <td>Xamarin</td>
+    <td><span data-ttu-id="600b7-141">Xamarin</span><span class="sxs-lookup"><span data-stu-id="600b7-141">Xamarin</span></span></td>
     <td>
     </td>     
-    <td>
+    <td><span data-ttu-id="600b7-142">
         <a href="https://github.com/microsoftgraph/xamarin-csharp-connect-sample">SDK-Beispiel</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="600b7-142">
+        <a href="https://github.com/microsoftgraph/xamarin-csharp-connect-sample">SDK sample</a>
+    </span></span></td> 
   </tr>
 </table>
 
-## <a name="see-also"></a>Siehe auch
-- Testen Sie beispielhafte REST-Aufrufe in unserem [API Explorer](https://graph.microsoft.io/graph-explorer).
-- [Azure AD-Endpunkt-Dokumentation](https://azure.microsoft.com/documentation/services/active-directory/)
-- [Azure AD v2.0-Endpunkt-Dokumentation](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)
+## <span data-ttu-id="600b7-143">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="600b7-143">See also</span></span>
+<a id="see-also" class="xliff"></a>
+- <span data-ttu-id="600b7-144">Testen Sie beispielhafte REST-Aufrufe in unserem [API Explorer](https://graph.microsoft.io/graph-explorer).</span><span class="sxs-lookup"><span data-stu-id="600b7-144">Try out sample REST calls in our [API Explorer](https://graph.microsoft.io/graph-explorer).</span></span>
+- [<span data-ttu-id="600b7-145">Azure AD-Endpunkt-Dokumentation</span><span class="sxs-lookup"><span data-stu-id="600b7-145">Azure AD endpoint documentation</span></span>](https://azure.microsoft.com/documentation/services/active-directory/)
+- [<span data-ttu-id="600b7-146">Azure AD v2.0-Endpunkt-Dokumentation</span><span class="sxs-lookup"><span data-stu-id="600b7-146">Azure AD v2.0 endpoint documentation</span></span>](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)

@@ -1,23 +1,8 @@
-# plannerExternalReference-Ressourcentyp
-<a id="plannerexternalreference-resource-type" class="xliff"></a>
+<span data-ttu-id="5d800-p104">Wird verwendet, um den Verweis zu beschreiben. Zu den Typen gehören: `PowerPoint`, `Word`, `Excel`, `Other`.</span><span class="sxs-lookup"><span data-stu-id="5d800-p104">Used to describe the type of the reference. Types include: `PowerPoint`, `Word`, `Excel`, `Other`.</span></span>|Wird verwendet, um den Verweis zu beschreiben. Zu den Typen gehören: `PowerPoint`, `Word`, `Excel`, `Other`.|
 
-Die **plannerExternalReference**-Ressource stellt die Metadaten eines Verweises dar (Anlagen wie z. B. Datei, URL). Es ist der Wert von Eigenschaft-Wert-Paaren im [externalReferences](plannerexternalreferences.md)-Objekt.
-
-
-
-## Eigenschaften
-<a id="properties" class="xliff"></a>
-| Eigenschaft     | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|alias|String|Ein Namensalias zur Beschreibung des Verweises.|
-|lastModifiedBy|[identitySet](identityset.md)|Schreibgeschützt. Benutzer-ID, von der das Objekt zuletzt geändert wurde.|
-|lastModifiedDateTime|DateTimeOffset|Schreibgeschützt. Datum und Uhrzeit der letzten Änderung des Objekts. Der Zeitstempeltyp stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|previewPriority|String|Wird verwendet, um die relative Prioritätsreihenfolge festzulegen, in der der Verweis als Vorschau für die Aufgaben angezeigt wirdd.|
-|type|String|Wird verwendet, um den Verweis zu beschreiben. Zu den Typen gehören: `PowerPoint`, `Word`, `Excel`, `Other`.|
-
-## JSON-Darstellung
+## <span data-ttu-id="5d800-128">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="5d800-128">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="5d800-129">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="5d800-129">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,39 +1,12 @@
-# <a name="range-delete"></a>Range: delete
-
-Löscht die einem Bereich zugeordneten Zellen.
-## <a name="prerequisites"></a>Voraussetzungen
-Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
-
-    * Files.ReadWrite
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/names(<name>)/range/delete
-POST /workbook/worksheets/{id|name}/range(<address>)/delete
-POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
-
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Beschreibung|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
-
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
-
-| Parameter    | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|Shift|string|Gibt an, wohin die Zellen verschoben werden.  Mögliche Werte: `Up`, `Left`.|
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="03f2b-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="03f2b-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="03f2b-125">Beispiel</span><span class="sxs-lookup"><span data-stu-id="03f2b-125">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="03f2b-126">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="03f2b-126">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="03f2b-127">Anforderung</span><span class="sxs-lookup"><span data-stu-id="03f2b-127">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="03f2b-128">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="03f2b-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_delete"
@@ -48,8 +21,9 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. 
+##### <span data-ttu-id="03f2b-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="03f2b-129">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="03f2b-130">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="03f2b-130">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

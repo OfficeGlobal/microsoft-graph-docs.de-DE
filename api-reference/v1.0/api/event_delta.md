@@ -1,68 +1,4 @@
-# <a name="event-delta"></a>event: delta
-
-Dient zum Abrufen einer Reihe von Ereignissen, die in einer **calendarView** (ein Bereich von Ereignissen) im Hauptkalender des Benutzers hinzugefügt, gelöscht oder aktualisiert wurden.
-
-Ein **delta**-Funktionsaufruf für Ereignisse ähnelt einer `GET /calendarview`-Anforderung für einen Datumsbereich im Hauptkalender des Benutzers, mit der Ausnahme, dass durch entsprechende Anwendung von [Statustoken](../../../concepts/delta_query_overview.md) in einem oder mehreren dieser Aufrufe inkrementelle Änderungen in der betreffenden Kalenderansicht abgefragt werden können. Dies ermöglicht es Ihnen, einen lokalen Speicher der Ereignisse im Hauptkalender eines Benutzers zu pflegen und zu synchronisieren, ohne dass Sie jedes Mal alle Ereignisse des betreffenden Kalenders vom Server abrufen müssen.
-
-### <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: _Calendars.Read_; _Calendars.ReadWrite_ 
-
-### <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
-GET /users/<id>/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
-
-```
-
-### <a name="query-parameters"></a>Abfrageparameter
-
-Beim Nachverfolgen von Änderungen in Ereignissen wird eine Runde von einem oder mehreren **delta**-Funktionsaufrufen ausgeführt. Wenn Sie Abfrageparameter (außer `$deltatoken` und `$skiptoken`) verwenden, müssen Sie sie in der ursprünglichen **delta**-Anforderung angeben. Microsoft Graph codiert automatisch alle angegebenen Parameter in den Tokenteil der in der Antwort enthaltenen `nextLink`- oder `deltaLink`-URL. Sie müssen alle gewünschten Abfrageparameter nur einmal im Vorfeld angeben. In nachfolgenden Anforderungen können Sie die `nextLink`- oder `deltaLink`-URL einfach aus der vorherigen Antwort kopieren und anwenden, da diese URL bereits die codierten gewünschten Parameter enthält.
-
-
-| Abfrageparameter      | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|startDateTime|String|Startdatum und -uhrzeit des Zeitraums, dargestellt im ISO 8601-Format. Beispielsweise „2015-11-08T19:00:00.0000000“.|
-|endDateTime|String|Enddatum und -uhrzeit des Zeitraums, dargestellt im ISO 8601-Format. Z. B. „2015-11-08T20:00:00.0000000“.|
-| $deltatoken | string | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `deltaLink`-URL des vorhergehenden **delta**-Funktionsaufrufs für dieselbe Kalenderansicht zurückgegeben wird und den Abschluss dieser Runde der Änderungsnachverfolgung anzeigt. Speichern Sie die gesamte `deltaLink`-URL einschließlich dieses Tokens, und wenden Sie sie in der ersten Anforderung der nächsten Änderungsnachverfolgungsrunde für diese Kalenderansicht an.|
-| $skiptoken | string | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `nextLink`-URL des vorhergehenden **delta**-Funktionsaufrufs zurückgegeben wird und anzeigt, dass in derselben Kalenderansicht weitere Änderungen zum Nachverfolgen vorliegen. |
-
-Wenn Sie eine Delta-Abfrage für eine Kalenderansicht ausführen, gehen Sie davon aus, dass alle Eigenschaften abgerufen werden, die normalerweise von einer `GET /calendarview`-Anforderung abgerufen werden. `$select` wird in diesem Fall nicht unterstützt. 
-
-
-### <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung |
-|:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type  | string  | application/json. Erforderlich.  |
-| Prefer | string  | odata.maxpagesize={x}. Optional. |
-| Prefer | string | {Time zone}. Optional. Falls kein Wert vorhanden, wird UTC angenommen.|
-
-
-### <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [event](../resources/event.md)-Sammlungsobjekt im Antworttext zurückgegeben.
-
-### <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-
-Das folgende Beispiel zeigt, wie Sie einen einzelnen **delta**-Funktionsaufruf ausführen und die maximale Anzahl von Ereignissen im Antworttext auf 2 beschränken.
-
-Zum Nachverfolgen von Änderungen in einer Kalenderansicht führen Sie einen oder mehrere **delta**-Funktionsaufrufe mit entsprechenden [Statustoken](../../../concepts/delta_query_overview.md) aus, um den Satz der inkrementellen Änderungen seit der letzten Delta-Abfrage abzurufen. 
-
-<!-- {
-  "blockType": "request",
-  "name": "event_delta"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/calendarview/delta?startdatetime={start_datetime}&enddatetime={end_datetime}
-
-Prefer: odata.maxpagesize=2
-```
-
-##### <a name="response"></a>Antwort
-Wenn die Anforderung erfolgreich ist, enthält die Antwort ein Statustoken, entweder ein _skipToken_ (in einem _@odata.nextLink_-Antwortheader) oder ein _deltaToken_ (in einem _@odata.deltaLink_-Antwortheader). Diese geben an, ob Sie mit der Runde fortfahren sollten oder ob alle Änderungen für diese Runde abgerufen wurden.
-
-Die Antwort unten zeigt ein _skipToken_ in einem _@odata.nextLink_-Antwortheader.
+<span data-ttu-id="034b6-p112">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="034b6-p112">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
@@ -94,10 +30,11 @@ Content-length: 359
 }
 ```
 
-### <a name="see-also"></a>Siehe auch
+### <span data-ttu-id="034b6-166">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="034b6-166">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [Verwenden einer Delta-Abfrage zum Nachverfolgen von Änderungen in Microsoft Graph-Daten](../../../concepts/delta_query_overview.md)
-- [Inkrementelle Änderungen an Ereignissen in einer Kalenderansicht abrufen](../../../concepts/delta_query_events.md)
+- [<span data-ttu-id="034b6-167">Verwenden einer Delta-Abfrage zum Nachverfolgen von Änderungen in Microsoft Graph-Daten</span><span class="sxs-lookup"><span data-stu-id="034b6-167">Use delta query to track changes in Microsoft Graph data</span></span>](../../../concepts/delta_query_overview.md)
+- [<span data-ttu-id="034b6-168">Inkrementelle Änderungen an Ereignissen in einer Kalenderansicht abrufen</span><span class="sxs-lookup"><span data-stu-id="034b6-168">Get incremental changes to events in a calendar</span></span>](../../../concepts/delta_query_events.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

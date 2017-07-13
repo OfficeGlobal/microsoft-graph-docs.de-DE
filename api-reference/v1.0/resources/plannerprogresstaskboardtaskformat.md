@@ -1,32 +1,13 @@
-# plannerProgressTaskBoardTaskFormat-Ressourcentyp
-<a id="plannerprogresstaskboardtaskformat-resource-type" class="xliff"></a>
+<span data-ttu-id="c8185-p103">Hinweiswert, der verwendet wird, um die Aufgaben in der Ansicht „Fortschritt“ des Task Board anzuordnen. Das Format ist wie [hier](planner_order_hint_format.md) beschrieben definiert.</span><span class="sxs-lookup"><span data-stu-id="c8185-p103">Hint value used to order the task on the Progress view of the Task Board. The format is defined as outlined [here](planner_order_hint_format.md).</span></span>|Hinweiswert, der verwendet wird, um die Aufgaben in der Ansicht „Fortschritt“ des Task Board anzuordnen. Das Format ist wie [hier](planner_order_hint_format.md) beschrieben definiert.|
 
-Die **plannerProgressTaskBoardTaskFormat**-Ressource stellt die Informationen dar, die zum korrekten Rendern einer Aufgabe in der Ansicht „Fortschritt“ des Task Board verwendet werden (eine Ansicht, die nach dem Status des Felds „ProzentAbgeschlossen“ für das Aufgabenobjekt sortiert ist und Spalten für „Nicht gestartet“, „In Bearbeitung“ und „Abgeschlossen“ enthält). Jeder [Aufgabe](plannertask.md) ist ein **plannerProgressTaskBoardTaskFormat**-Objekt zugeordnet.
-
-
-## Methoden
-<a id="methods" class="xliff"></a>
-
-| Methode           | Rückgabetyp    |Beschreibung|
-|:---------------|:--------|:----------|
-|[plannerProgressTaskBoardTaskFormat abrufen](../api/plannerprogresstaskboardtaskformat_get.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md) |Dient zum Lesen der Eigenschaften und Beziehungen eines **plannerProgressTaskBoardTaskFormat**-Objekts.|
-|[Update](../api/plannerprogresstaskboardtaskformat_update.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)    |Dient zum Aktualisieren des **plannerProgressTaskBoardTaskFormat**-Objekts. |
-
-## Eigenschaften
-<a id="properties" class="xliff"></a>
-| Eigenschaft     | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|id|String| Schreibgeschützt. ID der Ressource. Sie ist 28 Zeichen lang, und es wird zwischen Groß-und Kleinschreibung unterschieden. Für den Dienst wird eine [Formatüberprüfung](planner_identifiers_disclaimer.md) durchgeführt.|
-|orderHint|String|Hinweiswert, der verwendet wird, um die Aufgaben in der Ansicht „Fortschritt“ des Task Board anzuordnen. Das Format ist wie [hier](planner_order_hint_format.md) beschrieben definiert.|
-
-## Beziehungen
+## <span data-ttu-id="c8185-128">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="c8185-128">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-Keine
+<span data-ttu-id="c8185-129">Keine</span><span class="sxs-lookup"><span data-stu-id="c8185-129">None</span></span>
 
 
-## JSON-Darstellung
+## <span data-ttu-id="c8185-130">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="c8185-130">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="c8185-131">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="c8185-131">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

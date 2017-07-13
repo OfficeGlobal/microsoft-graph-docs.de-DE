@@ -1,39 +1,12 @@
-# <a name="post-forward"></a>post: forward
-
-Dient zum Weiterleiten eines Beitrags an einen Empfänger. Sie können sowohl die übergeordnete Unterhaltung als auch den Thread in der Anforderung angeben, oder Sie können nur den übergeordneten Thread ohne die übergeordnete Unterhaltung angeben. 
-
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
-
-*Group.ReadWrite*, *Group.Readwrite.All*
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /groups/{id}/threads/{id}/posts/{id}/forward
-POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
-
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Erforderlich.  |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
-
-| Parameter    | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|comment|String|Optionaler Kommentar, der zusammen mit dem Beitrag weitergeleitet wird.|
-|toRecipients|[recipient](../resources/recipient.md) collection|Die Empfänger, an die der Thread weitergeleitet wird.|
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="7b31e-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="7b31e-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="7b31e-128">Beispiel</span><span class="sxs-lookup"><span data-stu-id="7b31e-128">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="7b31e-129">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="7b31e-129">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="7b31e-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="7b31e-130">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="7b31e-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="7b31e-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "post_forward"
@@ -56,8 +29,9 @@ Content-length: 166
 }
 ```
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="7b31e-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="7b31e-132">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="7b31e-133">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="7b31e-133">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

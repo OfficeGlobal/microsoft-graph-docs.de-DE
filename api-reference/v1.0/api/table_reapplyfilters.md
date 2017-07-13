@@ -1,33 +1,12 @@
-# <a name="table-reapplyfilters"></a>Tabelle: reapplyFilters
-
-Wendet alle Filter erneut an, die derzeit in der Tabelle vorhanden sind.
-## <a name="prerequisites"></a>Voraussetzungen
-Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
-
-    * Files.ReadWrite
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/tables/{id|name}/reapplyFilters
-POST /workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
-
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Beschreibung|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
-
-
-## <a name="request-body"></a>Anforderungstext
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="eb1a9-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="eb1a9-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="eb1a9-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="eb1a9-117">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="eb1a9-118">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="eb1a9-118">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="eb1a9-119">Anforderung</span><span class="sxs-lookup"><span data-stu-id="eb1a9-119">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="eb1a9-120">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="eb1a9-120">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "table_reapplyfilters"
@@ -36,8 +15,9 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/reapplyFilters
 ```
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. 
+##### <span data-ttu-id="eb1a9-121">Antwort</span><span class="sxs-lookup"><span data-stu-id="eb1a9-121">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="eb1a9-122">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="eb1a9-122">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

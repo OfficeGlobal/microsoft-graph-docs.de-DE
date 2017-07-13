@@ -1,37 +1,4 @@
-# <a name="list-overrides"></a>Außerkraftsetzungen auflisten
-
-Dient zum Abrufen der Außerkraftsetzungen, die ein Benutzer eingerichtet hat, um Nachrichten von bestimmten Absendern immer auf eine bestimmte Art und Weise zu klassifizieren.
-
-Jede Außerkraftsetzung entspricht einer SMTP-Adresse eines Absenders. Zu Beginn hat ein Benutzer keine Außerkraftsetzungen.
-## <a name="prerequisites"></a>Voraussetzungen
-Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: *Mail.Read*
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/inferenceClassification/overrides
-GET /users/{id}/inferenceClassification/overrides
-```
-
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md)-Objekten im Antworttext zurückgegeben. Wenn der Benutzer keine Außerkraftsetzungen eingerichtet hat, wird eine leere Sammlung zurückgegeben.
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
-<!-- {
-  "blockType": "request",
-  "name": "get_overrides"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
-```
-##### <a name="response"></a>Antwort
+<span data-ttu-id="42735-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="42735-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",

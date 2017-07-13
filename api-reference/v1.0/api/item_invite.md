@@ -1,42 +1,19 @@
-# <a name="send-a-sharing-invitation"></a>Freigabeeinladung senden
+<span data-ttu-id="e061f-p102">Eine formatierte Nur-Text-Nachricht, die in der Freigabeeinladung enthalten ist. Die maximale Länge beträgt 2000 Zeichen.</span><span class="sxs-lookup"><span data-stu-id="e061f-p102">A plain text formatted message that is included in the sharing invitation. Maximum length 2000 characters.</span></span>                                          | Eine formatierte Nur-Text-Nachricht, die in der Freigabeeinladung enthalten ist. Die maximale Länge beträgt 2000 Zeichen. |
+| <span data-ttu-id="e061f-122">requireSignIn</span><span class="sxs-lookup"><span data-stu-id="e061f-122">requireSignIn</span></span>    | <span data-ttu-id="e061f-123">Boolean</span><span class="sxs-lookup"><span data-stu-id="e061f-123">Boolean</span></span>                                         | <span data-ttu-id="e061f-124">Gibt an, ob der Empfänger der Einladung sich anmelden muss, um auf das freigegebene Element zuzugreifen.</span><span class="sxs-lookup"><span data-stu-id="e061f-124">Specifies where the recipient of the invitation is required to sign-in to view the shared item.</span></span>            |
+| <span data-ttu-id="e061f-125">sendInvitation</span><span class="sxs-lookup"><span data-stu-id="e061f-125">sendInvitation</span></span>   | <span data-ttu-id="e061f-126">Boolean</span><span class="sxs-lookup"><span data-stu-id="e061f-126">Boolean</span></span>                                         | <span data-ttu-id="e061f-127">Gibt an, ob eine E-Mail oder ein Beitrag generiert (falsch) oder ob nur die Berechtigung erstellt (true) wurde.</span><span class="sxs-lookup"><span data-stu-id="e061f-127">Specifies if an email or post is generated (false) or if the permission is just created (true).</span></span>            |
+| <span data-ttu-id="e061f-128">roles</span><span class="sxs-lookup"><span data-stu-id="e061f-128">roles</span></span>            | <span data-ttu-id="e061f-129">Collection(String)</span><span class="sxs-lookup"><span data-stu-id="e061f-129">Collection(String)</span></span>                              | <span data-ttu-id="e061f-130">Gibt die Rollen an, die den Empfängern der Freigabeeinladung erteilt werden.</span><span class="sxs-lookup"><span data-stu-id="e061f-130">Specify the roles that are be granted to the recipients of the sharing invitation.</span></span>                         |
 
-Sendet eine Freigabeeinladung für ein **DriveItem**-Element. Eine Freigabeeinladung stellt Berechtigungen für Empfänger bereit und sendet optional eine E-Mail-Nachricht an den Empfänger, um diesen über die Freigabe in Kenntnis zu setzen.
+## <span data-ttu-id="e061f-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="e061f-131">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="e061f-132">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [permission](../resources/permission.md)-Sammlungsobjekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="e061f-132">If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.</span></span>
 
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
+## <span data-ttu-id="e061f-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e061f-133">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="e061f-134">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="e061f-134">Here is an example of how to call this API.</span></span>
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/drive/items/{item-id}/invite
-POST /drive/items/{item-id}/invite
-POST /drives/{drive-id}/items/{item-id}/invite
-POST /groups/{group-id}/drive/items/{item-id}/invite
-```
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
-
-| Parameter        | Typ                                            | Beschreibung                                                                                                |
-|:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| recipients       | Collection([DriveRecipient](driverecipient.md)) | Eine Sammlung der Empfänger, die Zugriff und die Freigabeeinladung erhalten.                                            |
-| message          | String                                          | Eine formatierte Nur-Text-Nachricht, die in der Freigabeeinladung enthalten ist. Die maximale Länge beträgt 2000 Zeichen. |
-| requireSignIn    | Boolean                                         | Gibt an, ob der Empfänger der Einladung sich anmelden muss, um auf das freigegebene Element zuzugreifen.            |
-| sendInvitation   | Boolean                                         | Gibt an, ob eine E-Mail oder ein Beitrag generiert (falsch) oder ob nur die Berechtigung erstellt (true) wurde.            |
-| roles            | Collection(String)                              | Gibt die Rollen an, die den Empfängern der Freigabeeinladung erteilt werden.                         |
-
-## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [permission](../resources/permission.md)-Sammlungsobjekt im Antworttext zurückgegeben.
-
-## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+##### <span data-ttu-id="e061f-135">Anforderung</span><span class="sxs-lookup"><span data-stu-id="e061f-135">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="e061f-136">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="e061f-136">Here is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -59,8 +36,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="e061f-137">Antwort</span><span class="sxs-lookup"><span data-stu-id="e061f-137">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="e061f-138">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="e061f-138">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,10 +69,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <span data-ttu-id="e061f-139">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e061f-139">Remarks</span></span>
+<a id="remarks" class="xliff"></a>
 
-* [Laufwerke](../resources/drive.md) mit dem**driveType** `personal` (OneDrive Personal) können keine Berechtigungen am Stamm-DriveItem erstellen oder ändern. 
-* Eine Liste der verfügbaren Rollen finden Sie unter [Rollenaufzählung](../resources/permission.md#roles-enumeration).
+* <span data-ttu-id="e061f-140">[Laufwerke](../resources/drive.md) mit dem**driveType** `personal` (OneDrive Personal) können keine Berechtigungen am Stamm-DriveItem erstellen oder ändern.</span><span class="sxs-lookup"><span data-stu-id="e061f-140">[Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) cannot create or modify permissions on the root DriveItem.</span></span> 
+* <span data-ttu-id="e061f-141">Eine Liste der verfügbaren Rollen finden Sie unter [Rollenaufzählung](../resources/permission.md#roles-enumeration).</span><span class="sxs-lookup"><span data-stu-id="e061f-141">For a list of available roles, see [Roles enumeration](../resources/permission.md#roles-enumeration).</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

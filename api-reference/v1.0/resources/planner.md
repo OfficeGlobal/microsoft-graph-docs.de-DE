@@ -1,35 +1,8 @@
-# planner-Ressourcentyp
-<a id="planner-resource-type" class="xliff"></a>
+<span data-ttu-id="d5e28-p105">Schreibgeschützt. Lässt Nullwerte zu. Gibt eine Sammlung der angegebenen Aufgaben zurück.</span><span class="sxs-lookup"><span data-stu-id="d5e28-p105">Read-only. Nullable. Returns a collection of the specified tasks</span></span>| Schreibgeschützt. Lässt Nullwerte zu. Gibt eine Sammlung der angegebenen Aufgaben zurück.|
 
-Die **planner**-Ressource ist der Einstiegspunkt für das Planner-Objektmodell. Sie gibt eine Singleton **planner**-Ressource zurück.  Sie enthält keine verwendbaren Eigenschaften.
-
-
-## Methoden
-<a id="methods" class="xliff"></a>
-
-| Methode           | Rückgabetyp    |Beschreibung|
-|:---------------|:--------|:----------|
-|[plannerBucket erstellen](../api/planner_post_buckets.md) |[plannerBucket](plannerbucket.md)| Dient zum Erstellen eines neuen **plannerBucket** durch Veröffentlichung in der buckets-Sammlung.|
-|[plannerPlan erstellen](../api/planner_post_plans.md) |[plannerPlan](plannerplan.md)| Dient zum Erstellen eines neuen **plannerPlan** durch Veröffentlichung in der plans-Sammlung.|
-|[plannerTask erstellen](../api/planner_post_tasks.md) |[plannerTask](plannertask.md)| Dient zum Erstellen einer neuen **plannerTask** durch Veröffentlichung in der tasks-Sammlung.|
-
-## Eigenschaften
-<a id="properties" class="xliff"></a>
-| Eigenschaft     | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|id|String| Schreibgeschützt. Bezeichner der **planner**-Ressource.|
-
-## Beziehungen
-<a id="relationships" class="xliff"></a>
-| Beziehung | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|buckets|[plannerBucket](plannerbucket.md)-Sammlung| Schreibgeschützt. Lässt Nullwerte zu. Gibt eine Sammlung der angegebenen einfaches zurück.|
-|plans|[plannerPlan](plannerplan.md)-Sammlung| Schreibgeschützt. Lässt Nullwerte zu. Gibt eine Sammlung der angegebenen Pläne zurück.|
-|tasks|[plannerTask](plannertask.md)-Sammlung| Schreibgeschützt. Lässt Nullwerte zu. Gibt eine Sammlung der angegebenen Aufgaben zurück.|
-
-## JSON-Darstellung
+## <span data-ttu-id="d5e28-145">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="d5e28-145">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="d5e28-146">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="d5e28-146">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

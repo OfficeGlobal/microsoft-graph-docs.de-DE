@@ -1,43 +1,4 @@
-# <a name="create-calendar"></a>Kalender erstellen
-
-Verwenden Sie diese API zum Erstellen eines neuen Kalenders.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Calendars.ReadWrite*
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /users/{id | userPrincipalName}/calendars
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Erforderlich.  |
-| Content-Type  | application/json  |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext eine JSON-Darstellung des [calendar](../resources/calendar.md)-Objekts an.
-
-
-## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und ein [calendar](../resources/calendar.md)-Objekt im Antworttext zurückgegeben.
-
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
-<!-- {
-  "blockType": "request",
-  "name": "create_calendar_from_user"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/calendars
-Content-type: application/json
-
-{
-  "name": "Volunteer"
-}
-```
-Geben Sie im Anforderungstext eine JSON-Darstellung des [calendar](../resources/calendar.md)-Objekts an.
-##### <a name="response"></a>Antwort
+<span data-ttu-id="01209-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="01209-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",

@@ -1,30 +1,8 @@
-<a id="plannergroup-resource-type" class="xliff"></a>
-# plannerGroup-Ressourcentyp
+<span data-ttu-id="eecd9-p103">Schreibgeschützt. Lässt Nullwerte zu. Gibt die [plannerPlans](plannerplan.md) im Besitz der Gruppe zurück.</span><span class="sxs-lookup"><span data-stu-id="eecd9-p103">Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) owned by the group.</span></span>| Schreibgeschützt. Lässt Nullwerte zu. Gibt die [plannerPlans](plannerplan.md) im Besitz der Gruppe zurück.|
 
-Die **plannerGroup**-Ressource bietet einer [Gruppe](group.md) Zugriff auf Planner-Ressourcen. Sie enthält keine verwendbaren Eigenschaften.
-
-<a id="methods" class="xliff"></a>
-## Methoden
-
-| Methode           | Rückgabetyp    |Beschreibung|
-|:---------------|:--------|:----------|
-|[Pläne auflisten](../api/plannergroup_list_plans.md) |[plannerPlan](plannerplan.md)-Sammlung| Dient zum Abrufen einer **plannerPlan**-Objektsammlung.|
-
-<a id="properties" class="xliff"></a>
-## Eigenschaften
-| Eigenschaft     | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|id|String| Schreibgeschützt. Bezeichner der **plannerGroup**-Ressource.|
-
-<a id="relationships" class="xliff"></a>
-## Beziehungen
-| Beziehung | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|plans|[plannerPlan](plannerplan.md)-Sammlung| Schreibgeschützt. Lässt Nullwerte zu. Gibt die [plannerPlans](plannerplan.md) im Besitz der Gruppe zurück.|
-
+## <span data-ttu-id="eecd9-128">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="eecd9-128">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## JSON-Darstellung
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="eecd9-129">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="eecd9-129">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

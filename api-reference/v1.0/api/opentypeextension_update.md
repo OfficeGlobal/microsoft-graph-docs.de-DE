@@ -1,153 +1,4 @@
-# <a name="update-open-extension"></a>Datenerweiterung aktualisieren
-
-Aktualisieren Sie eine offene Erweiterung ([openTypeExtension](../resources/openTypeExtension.md)-Objekt) mit den Eigenschaften im Anforderungsheader:
-
-- Wenn eine Eigenschaft im Anforderungsheader mit dem Name einer vorhandenen Eigenschaft in der Erweiterung übereinstimmt, werden die Daten in die Erweiterung aktualisiert.
-- Andernfalls werden die Eigenschaft und die entsprechenden Daten zur Erweiterung hinzugefügt. 
-
-Die Daten in einer Erweiterung können Grundtypen oder Arrays von Grundtypen sein.
-
-
-## <a name="prerequisites"></a>Voraussetzungen
-
-Zur Ausführung dieser API ist eine der folgenden **Berechtigungen** erforderlich (je nach Typ der Ressource, in der die Erweiterung erstellt wurde):
-
-|**Unterstützte Ressource**|**Berechtigung**|**Unterstützte Ressource**|**Berechtigung** |
-|:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
-| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ |
-| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
-| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
- 
-## <a name="http-request"></a>HTTP-Anforderung
-In der Anforderung geben Sie die Ressourceninstanz an, spezifizieren in der Navigationseigenschaft **extensions** dieser Instanz die Erweiterung und wenden anschließend den Befehl `PATCH` auf diese Erweiterungsinstanz an.
-
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /devices/{Id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-PATCH /groups/{id}/extensions/{extensionId}
-PATCH /groups/{id}/events/{id}/extensions/{extensionId}
-PATCH /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
-PATCH /organization/{Id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
-```
-
->**Hinweis:** Die obige Syntax zeigt mehrere häufig verwendete Möglichkeiten zum Identifizieren einer Ressourceninstanz, um eine Erweiterung darin zu aktualisieren. Alle anderen Syntaxen, mit denen Sie diese Ressourceninstanzen identifizieren können, unterstützen das Aktualisieren offener Erweiterungen darin in einer ähnlichen Weise.
-
-Im Abschnitt [Anforderungstext](#request-body) wird beschrieben, wie Sie benutzerdefinierte Daten zur Änderung oder Ergänzung der Erweiterung in den Anforderungstext einschließen können.
-
-
-## <a name="parameters"></a>Parameter
-|**Parameter**|**Typ**|**Beschreibung**|
-|:-----|:-----|:-----|
-|_URL parameters_|
-|id|string|Ein eindeutiger Bezeichner für eine Instanz der entsprechenden Sammlung. Erforderlich. |
-|extensionId|string|Dies kann ein Erweiterungsname sein. Der Erweiterungsname ist ein eindeutiger Textbezeichner einer Erweiterung oder ein vollqualifizierter Name, der den Erweiterungstyp und den eindeutigen Textbezeichner verkettet. Der vollqualifizierte Name wird beim Erstellen der Erweiterung in der `id`-Eigenschaft zurückgegeben. Erforderlich. |
-
-
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Wert |
-|:---------------|:----------|
-| Authorization | Bearer {token}. Erforderlich. |
-| Content-Type | application/json |
-
-## <a name="request-body"></a>Anforderungstext
-
-Stellen Sie den JSON-Text eines [openTypeExtension](../resources/openTypeExtension.md)-Objekts mit den folgenden erforderlichen Name-Wert-Paaren und allen benutzerdefinierten Daten bereit, die geändert oder zu dieser Erweiterung hinzugefügt werden sollen. Die Daten in der JSON-Nutzlast können Grundtypen oder Arrays von Grundtypen sein.
-
-| Name       | Wert |
-|:---------------|:----------|
-| @odata.type | Microsoft.Graph.OpenTypeExtension |
-| extensionName | %unique_string% |
-
-
-## <a name="response"></a>Antwort
-
-Bei Erfolg gibt diese Methode den Antwortcode `200 OK` und das aktualisierte [openTypeExtension](../resources/openTypeExtension.md)-Objekt zurück.
-
-
-## <a name="example"></a>Beispiel
-#### <a name="request-1"></a>Anforderung 1
-
-Im ersten Beispiel wird gezeigt, wie eine Erweiterung in einer Nachricht aktualisiert wird. Die Erweiterung wird anfänglich durch die folgende JSON-Nutzlast dargestellt:
-
-<!-- { "blockType": "ignored" } -->
-```http
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
-    "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
-('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
-    "extensionName": "Com.Contoso.Referral",
-    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
-    "companyName": "Wingtip Toys",
-    "dealValue": 500050,
-    "expirationDate": "2015-12-03T10:00:00Z"
-}
-```
-
-Sie können anhand des Namens auf die Erweiterung verweisen:
-
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Com.Contoso.Referral')
-```
-
-Sie können auch anhand des vollqualifizierten Namens auf die Erweiterung verweisen:
-
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
-```
-
-Sie können die Beispielanforderung und den folgenden Anforderungstext verwenden, um die oben genannte Erweiterung auf folgende Weise zu aktualisieren:
-- Durch Ändern des `companyName` von `Wingtip Toys` zu `Wingtip Toys (USA)`
-- Durch Ändern des `dealValue` von `500050` zu `500100`
-- Durch Hinzufügen neuer Daten als die benutzerdefinierte `updated`-Eigenschaft
-
-<!-- { "blockType": "ignored" } -->
-```http
-{
-    "@odata.type": "Microsoft.Graph.OpenTypeExtension",
-    "extensionName": "Com.Contoso.Referral",
-    "companyName": "Wingtip Toys (USA)",
-    "dealValue": "500100",
-    "expirationDate": "2015-12-03T10:00:00.000Z",
-    "updated": "2015-10-29T11:00:00.000Z"
-} 
-```
-
-
-#### <a name="response-1"></a>Antwort 1
-
-Es wird unabhängig von der zur Referenzierung der Erweiterung verwendeten Methode jeweils die gleiche Antwort zurückgegeben.
-
-<!-- { "blockType": "ignored" } -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
-    "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
-('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
-    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
-    "extensionName": "Com.Contoso.Referral",
-    "companyName": "Wingtip Toys (USA)",
-    "dealValue": 500100,
-    "expirationDate": "2015-12-03T10:00:00Z",
-    "updated": "2015-10-29T11:00:00.000Z"
-}
-```
-
-****
-
-#### <a name="request-2"></a>Anforderung 2
+<span data-ttu-id="e97e5-p107">Im zweiten Beispiel wird gezeigt, wie eine Erweiterung in einem Gruppenbeitrag aktualisiert wird. Die Erweiterung wird anfänglich durch die folgende JSON-Nutzlast mit einem `expirationDate`-Wert von `2015-07-03T13:04:00Z` dargestellt:</span><span class="sxs-lookup"><span data-stu-id="e97e5-p107">The second example shows how to update an extension in a group post. The extension is initially represented by the following JSON payload, with an `expirationDate` value of `2015-07-03T13:04:00Z`:</span></span>
 
 Im zweiten Beispiel wird gezeigt, wie eine Erweiterung in einem Gruppenbeitrag aktualisiert wird. Die Erweiterung wird anfänglich durch die folgende JSON-Nutzlast mit einem `expirationDate`-Wert von `2015-07-03T13:04:00Z` dargestellt:
 
@@ -170,7 +21,7 @@ Im zweiten Beispiel wird gezeigt, wie eine Erweiterung in einem Gruppenbeitrag a
 }
 ```
 
-Im Folgenden werden die Anforderung und Anforderungstext zum Ändern von `expirationDate` zu `2016-07-30T11:00:00Z` dargestellt:
+<span data-ttu-id="e97e5-183">Im Folgenden werden die Anforderung und Anforderungstext zum Ändern von `expirationDate` zu `2016-07-30T11:00:00Z` dargestellt:</span><span class="sxs-lookup"><span data-stu-id="e97e5-183">The following is the request and request body to change the `expirationDate` to `2016-07-30T11:00:00Z`:</span></span>
 
 <!-- {
   "blockType": "request",
@@ -194,9 +45,10 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response-2"></a>Antwort 2
+#### <span data-ttu-id="e97e5-184">Antwort 2</span><span class="sxs-lookup"><span data-stu-id="e97e5-184">Response 2</span></span>
+<a id="response-2" class="xliff"></a>
 
-Im Folgenden wird die Antwort des zweiten Beispiels dargestellt, welche das aktualisierte `expirationDate`-Element in die Erweiterung zeigt.
+<span data-ttu-id="e97e5-185">Im Folgenden wird die Antwort des zweiten Beispiels dargestellt, welche das aktualisierte `expirationDate`-Element in die Erweiterung zeigt.</span><span class="sxs-lookup"><span data-stu-id="e97e5-185">Here is the response of the second example which shows the updated `expirationDate` in the extension.</span></span>
 
 <!-- {  
   "blockType": "response",  

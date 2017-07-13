@@ -1,30 +1,19 @@
-# <a name="create-acceptedsender"></a>acceptedSender erstellen
+<span data-ttu-id="2f8dc-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="2f8dc-p102">Bearer token. Required.</span></span>  | Bearer {token}. Erforderlich.  |
 
-Fügt einen neuen Benutzer oder eine neue Gruppe zur acceptedSender-Liste hinzu.
-
-Geben Sie den Benutzer oder die Gruppe in `@odata.id` im Anforderungstext an. Benutzer in der Liste der zulässigen Absender können Beiträge für Unterhaltungen der Gruppe bereitstellen. Stellen Sie sicher, dass Sie nicht den gleichen Benutzer oder die gleiche Gruppe in den Listen für zulässige und abgelehnte Absender angeben, sonst wird ein Fehler angezeigt.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Group.ReadWrite.All*
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /groups/{id}/acceptedSenders/$ref
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Erforderlich.  |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext die ID eines Benutzer- oder Gruppenobjekts an.
+## <span data-ttu-id="2f8dc-115">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="2f8dc-115">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="2f8dc-116">Geben Sie im Anforderungstext die ID eines Benutzer- oder Gruppenobjekts an.</span><span class="sxs-lookup"><span data-stu-id="2f8dc-116">In the request body, supply the id of a user or group object.</span></span>
 
 
-## <a name="response"></a>Antwort
-Diese Methode gibt den Antwortcode `204, No Content` ohne Antworttext zurück.
+## <span data-ttu-id="2f8dc-117">Antwort</span><span class="sxs-lookup"><span data-stu-id="2f8dc-117">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="2f8dc-118">Diese Methode gibt den Antwortcode `204, No Content` ohne Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="2f8dc-118">This method returns `204, No Content` response code and no response body.</span></span>
 
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="2f8dc-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="2f8dc-119">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="2f8dc-120">Anforderung</span><span class="sxs-lookup"><span data-stu-id="2f8dc-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="2f8dc-121">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="2f8dc-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
@@ -38,8 +27,9 @@ Content-length: 30
   "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 ```
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="2f8dc-122">Antwort</span><span class="sxs-lookup"><span data-stu-id="2f8dc-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="2f8dc-123">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="2f8dc-123">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

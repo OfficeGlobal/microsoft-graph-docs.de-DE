@@ -1,38 +1,16 @@
-# <a name="update-domain"></a>Domäne aktualisieren
-
-Dient zum Aktualisieren der Eigenschaften eines Domänenobjekts.
-
-> **Wichtig:** Nur überprüfte Domänen können aktualisiert werden.
-
-### <a name="prerequisites"></a>Voraussetzungen
-
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Domain.ReadWrite.All* oder *Directory.AccessAsUser.All*
-
-### <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /domains/{id}
-```
-
-> Geben Sie für {id} die Domäne mit ihrem vollqualifizierten Domänennamen an.
-
-### <a name="request-headers"></a>Anforderungsheader
-
-| Name       | Beschreibung|
-|:-----------|:-----------|
-| Authorization  | Bearer {token}. Erforderlich. |
-| Content-Type  | application/json |
-
-### <a name="request-body"></a>Anforderungstext
+<span data-ttu-id="d0230-p102">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Für optimale Leistung sollten Sie nur geänderte Werte einschließen.</span><span class="sxs-lookup"><span data-stu-id="d0230-p102">In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.</span></span>
 
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Für optimale Leistung sollten Sie nur geänderte Werte einschließen.
 
-### <a name="response"></a>Antwort
+### <span data-ttu-id="d0230-120">Antwort</span><span class="sxs-lookup"><span data-stu-id="d0230-120">Response</span></span>
+<a id="response" class="xliff"></a>
 
-Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben, aber kein Antworttext.
+<span data-ttu-id="d0230-121">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben, aber kein Antworttext.</span><span class="sxs-lookup"><span data-stu-id="d0230-121">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
 
-### <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
+### <span data-ttu-id="d0230-122">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d0230-122">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="d0230-123">Anforderung</span><span class="sxs-lookup"><span data-stu-id="d0230-123">Request</span></span>
+<a id="request" class="xliff"></a>
 
 <!-- {
   "blockType": "request",
@@ -51,7 +29,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Antwort
+##### <span data-ttu-id="d0230-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="d0230-124">Response</span></span>
+<a id="response" class="xliff"></a>
 
 <!-- {
   "blockType": "response",

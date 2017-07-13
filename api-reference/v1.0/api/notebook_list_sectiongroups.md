@@ -1,46 +1,4 @@
-# <a name="list-sectiongroups"></a>sectionGroups auflisten
-
-Dient zum Abrufen einer Liste von [sectionGroup](../resources/sectiongroup.md)-Objekten aus dem angegebenen Notizbuch.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:  
-
-Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All oder Notes.ReadWrite.All
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/onenote/notebooks/{id}/sectionGroups
-GET /users/{id | userPrincipalName}/onenote/notebooks/{id}/sectionGroups
-GET /groups/{id}/onenote/notebooks/{id}/sectionGroups
-```
-## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
-
-Die Standardsortierreihenfolge ist `name asc`.
-
-Die Standardabfrage erweitert `parentNotebook` und wählt die zugehörigen Eigenschaften `id`, `displayName` und `self` aus. Gültige `expand`-Werte für Abschnittsgruppen sind `sections`, `sectionGroups`, `parentNotebook` und `parentSectionGroup`.
-
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Accept | string | `application/json` |  
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [sectionGroup](../resources/sectiongroup.md)-Objekten im Antworttext zurückgegeben.
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
-<!-- {
-  "blockType": "request",
-  "name": "get_sectiongroups"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}/sectionGroups
-```
-##### <a name="response"></a>Antwort
+<span data-ttu-id="a052a-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="a052a-p103">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",

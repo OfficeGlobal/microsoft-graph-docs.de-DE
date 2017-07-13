@@ -1,77 +1,4 @@
-# <a name="get-event"></a>Ereignis abrufen
-
-Dient zum Abrufen der Eigenschaften und Beziehungen des angegebenen [event](../resources/event.md)-Objekts.
-
-Zurzeit gibt dieser Vorgang Ereignistext nur im HTML-Format zurück.
-
-Da die **event**-Ressource [Erweiterungen](../../../concepts/extensibility_overview.md) unterstützt, können Sie über den `GET`-Vorgang auch benutzerdefinierte Eigenschaften und Erweiterungsdaten aus **event**-Instanzen abrufen.
-
-### <a name="support-various-time-zones"></a>Unterstützen verschiedener Zeitzonen
-
-Für alle GET-Vorgänge, die Ereignisse zurückgeben, können Sie den `Prefer: outlook.timezone`-Header zum Angeben der Zeitzone für die Anfangs- und Endzeit des Ereignisses in der Antwort verwenden. 
-
-Mit dem folgenden `Prefer: outlook.timezone`-Header werden zum Beispiel die Anfangs- und Endzeiten in der Antwort auf EST festgelegt.
-```http
-Prefer: outlook.timezone="Eastern Standard Time"
-```
-
-Wenn das Ereignis in einer anderen Zeitzone erstellt wurde, werden die Anfangs- und Endzeiten an die in diesem `Prefer`-Header angegebene Zeitzone angepasst. Die unterstützten Zeitzonen finden Sie in dieser [Liste](../resources/datetimetimezone.md). Wenn der `Prefer: outlook.timezone`-Header nicht angegeben ist, werden die Anfangs- und Endzeiten in UTC zurückgegeben.
-
-Sie können die **OriginalStartTimeZone**- und **OriginalEndTimeZone**-Eigenschaften für die **event**-Ressource verwenden, um die beim Erstellen des Ereignisses verwendete Zeitzone abzurufen.
-
-
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Calendars.Read*
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/events/{id}
-GET /users/{id | userPrincipalName}/events/{id}
-GET /groups/{id}/events/{id}
-
-GET /me/calendar/events/{id}
-GET /users/{id | userPrincipalName}/calendar/events/{id}
-GET /groups/{id}/calendar/events/{id}
-
-GET /me/calendars/{id}/events/{id}
-GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}
-
-GET /me/calendargroup/calendars/{id}/events/{id}
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
-
-GET /me/calendargroups/{id}/calendars/{id}/events/{id}
-GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
-```
-## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Prefer: outlook.timezone | string | Die Standardzeitzone für Ereignisse in der Antwort. |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [event](../resources/event.md)-Objekt im Antworttext zurückgegeben.
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-Im erste Beispiel wird das angegebene Ereignis abgerufen. Es gibt Folgendes an:
-
-- Einen `Prefer: outlook.timezone`-Header zum Abrufen von Datums- und Uhrzeitwerten in 	Pacific Normalzeit. 
-- Einen `$select`-Abfrageparameter zum Zurückgeben bestimmter Eigenschaften. Ohne `$select`-Parameter werden alle Ereigniseigenschaften zurückgegeben.
-
-<!-- {
-  "blockType": "request",
-  "name": "get_event"
-}-->
-
-```http
-GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
-Prefer: outlook.timezone="Pacific Standard Time"
-```
-
-##### <a name="response"></a>Antwort
+<span data-ttu-id="88e9a-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Die **body**-Eigenschaft wird im HTML-Standardformat zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="88e9a-p105">Here is an example of the response. The **body** property is returned in the default format of HTML.</span></span>
 
 Nachfolgend sehen Sie ein Beispiel der Antwort. Die **body**-Eigenschaft wird im HTML-Standardformat zurückgegeben.
 
@@ -141,10 +68,11 @@ Content-length: 1928
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <span data-ttu-id="88e9a-142">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="88e9a-142">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](../../../concepts/extensibility_overview.md)
-- [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Preview)](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="88e9a-143">Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen</span><span class="sxs-lookup"><span data-stu-id="88e9a-143">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="88e9a-144">Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Preview)</span><span class="sxs-lookup"><span data-stu-id="88e9a-144">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->

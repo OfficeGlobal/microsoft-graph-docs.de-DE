@@ -1,29 +1,11 @@
-# <a name="remove-rejectedsender"></a>rejectedSender entfernen
-
-Dient zum Entfernen eines Benutzers oder einer Gruppe aus der Liste „rejectedSenders“.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Group.ReadWrite.All*
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /groups/{id}/rejectedSenders/$ref?$id=<id>
-
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Erforderlich.  |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="6191d-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="6191d-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-Im Folgenden finden Sie ein paar Beispiele für die Themenbereiche, an denen wir arbeiten:
+## <span data-ttu-id="6191d-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6191d-117">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="6191d-118">Anforderung</span><span class="sxs-lookup"><span data-stu-id="6191d-118">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="6191d-119">Im Folgenden finden Sie ein paar Beispiele für die Themenbereiche, an denen wir arbeiten:</span><span class="sxs-lookup"><span data-stu-id="6191d-119">Here are a couple of examples of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
@@ -34,8 +16,9 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id="us
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id="groups/{id}"
 ```
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. 
+##### <span data-ttu-id="6191d-120">Antwort</span><span class="sxs-lookup"><span data-stu-id="6191d-120">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="6191d-121">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="6191d-121">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,23 +1,26 @@
-# <a name="get-drive"></a>Laufwerk abrufen
+<span data-ttu-id="71be8-p101">Dient zum Abrufen der Eigenschaften und der Beziehungen einer [Drive](../resources/drive.md)-Ressource. Ein Laufwerk ist der Container auf oberster Ebene für ein Dateisystem. Mit der Graph-API können Sie auf die Drive-Ressource für OneDrive oder OneDrive for Business eines Benutzers oder auf SharePoint-Dokumentbibliotheken zugreifen.</span><span class="sxs-lookup"><span data-stu-id="71be8-p101">Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource. A Drive is the top-level container for a file system. Graph API allows access to the Drive resource for a user's OneDrive or OneDrive for Business, or SharePoint document libraries.</span></span>
 
 Dient zum Abrufen der Eigenschaften und der Beziehungen einer [Drive](../resources/drive.md)-Ressource. Ein Laufwerk ist der Container auf oberster Ebene für ein Dateisystem. Mit der Graph-API können Sie auf die Drive-Ressource für OneDrive oder OneDrive for Business eines Benutzers oder auf SharePoint-Dokumentbibliotheken zugreifen.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <span data-ttu-id="71be8-105">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="71be8-105">Prerequisites</span></span>
+<a id="prerequisites" class="xliff"></a>
 
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
+<span data-ttu-id="71be8-106">Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:</span><span class="sxs-lookup"><span data-stu-id="71be8-106">One of the following **scopes** is required to execute this API:</span></span>
 
-* Files.Read
-* Files.ReadWrite
-* Files.Read.All
-* Files.ReadWrite.All
-* Sites.Read.All
-* Sites.ReadWrite.All
+* <span data-ttu-id="71be8-107">Files.Read</span><span class="sxs-lookup"><span data-stu-id="71be8-107">Files.Read</span></span>
+* <span data-ttu-id="71be8-108">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="71be8-108">Files.ReadWrite</span></span>
+* <span data-ttu-id="71be8-109">Files.Read.All</span><span class="sxs-lookup"><span data-stu-id="71be8-109">Files.Read.All</span></span>
+* <span data-ttu-id="71be8-110">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="71be8-110">Files.ReadWrite.All</span></span>
+* <span data-ttu-id="71be8-111">Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="71be8-111">Sites.Read.All</span></span>
+* <span data-ttu-id="71be8-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="71be8-112">Sites.ReadWrite.All</span></span>
 
-## <a name="get-a-users-onedrive"></a>Abrufen von OneDrive eines Benutzers
+## <span data-ttu-id="71be8-113">Abrufen von OneDrive eines Benutzers</span><span class="sxs-lookup"><span data-stu-id="71be8-113">Get a user's OneDrive</span></span>
+<a id="get-a-users-onedrive" class="xliff"></a>
 
-Damit Sie auf OneDrive oder OneDrive for Business eines Benutzers zugreifen können, muss Ihre App die **drive**-Beziehung in der [User](../resources/user.md)-Ressource anfordern.
+<span data-ttu-id="71be8-114">Damit Sie auf OneDrive oder OneDrive for Business eines Benutzers zugreifen können, muss Ihre App die **drive**-Beziehung in der [User](../resources/user.md)-Ressource anfordern.</span><span class="sxs-lookup"><span data-stu-id="71be8-114">To access a user's OneDrive or OneDrive for Business, your app must request the **drive** relationship on the [User](../resources/user.md) resource.</span></span>
 
-### <a name="http-request"></a>HTTP-Anforderung
+### <span data-ttu-id="71be8-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="71be8-115">HTTP request</span></span>
+<a id="http-request" class="xliff"></a>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -26,11 +29,13 @@ GET /me/drive
 GET /users/{idOrUserPrincipalName}/drive
 ```
 
-## <a name="get-the-document-library-associated-with-a-group"></a>Dient zum Abrufen der Dokumentbibliothek, die einer Gruppe zugeordnet ist.
+## <span data-ttu-id="71be8-116">Dient zum Abrufen der Dokumentbibliothek, die einer Gruppe zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="71be8-116">Get the document library associated with a group</span></span>
+<a id="get-the-document-library-associated-with-a-group" class="xliff"></a>
 
-Für den Zugriff auf die Standarddokumentbibliothek einer [Gruppe](../resources/group.md) fordert Ihre App die **drive**-Beziehung in der Gruppe an.
+<span data-ttu-id="71be8-117">Für den Zugriff auf die Standarddokumentbibliothek einer [Gruppe](../resources/group.md) fordert Ihre App die **drive**-Beziehung in der Gruppe an.</span><span class="sxs-lookup"><span data-stu-id="71be8-117">To access a [Group's](../resources/group.md) default document library, your app requests the **drive** relationship on the Group.</span></span>
 
-### <a name="http-request"></a>HTTP-Anforderung
+### <span data-ttu-id="71be8-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="71be8-118">HTTP request</span></span>
+<a id="http-request" class="xliff"></a>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,23 +44,28 @@ GET /groups/{idOrUserPrincipalName}/drive
 ```
 
 
-## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
+## <span data-ttu-id="71be8-119">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="71be8-119">Optional query parameters</span></span>
+<a id="optional-query-parameters" class="xliff"></a>
 
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+<span data-ttu-id="71be8-120">Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="71be8-120">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-body"></a>Anforderungstext
+## <span data-ttu-id="71be8-121">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="71be8-121">Request body</span></span>
+<a id="request-body" class="xliff"></a>
 
-Geben Sie für diese Methode keinen Anforderungstext an.
+<span data-ttu-id="71be8-122">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="71be8-122">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a>Antwort
+## <span data-ttu-id="71be8-123">Antwort</span><span class="sxs-lookup"><span data-stu-id="71be8-123">Response</span></span>
+<a id="response" class="xliff"></a>
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und die aktualisierte [Drive](../resources/drive.md)-Ressource im Antworttext zurückgegeben.
+<span data-ttu-id="71be8-124">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und die aktualisierte [Drive](../resources/drive.md)-Ressource im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="71be8-124">If successful, this method returns a `200 OK` response code and [Drive](../resources/drive.md) resource in the response body.</span></span>
 
-## <a name="example"></a>Beispiel
+## <span data-ttu-id="71be8-125">Beispiel</span><span class="sxs-lookup"><span data-stu-id="71be8-125">Example</span></span>
+<a id="example" class="xliff"></a>
 
-##### <a name="request"></a>Anforderung
+##### <span data-ttu-id="71be8-126">Anforderung</span><span class="sxs-lookup"><span data-stu-id="71be8-126">Request</span></span>
+<a id="request" class="xliff"></a>
 
-Nachfolgend finden Sie ein Beispiel für die Anforderung zum Abrufen  von OneDrive oder OneDrive for Business des angemeldeten Benutzers.
+<span data-ttu-id="71be8-127">Nachfolgend finden Sie ein Beispiel für die Anforderung zum Abrufen  von OneDrive oder OneDrive for Business des angemeldeten Benutzers.</span><span class="sxs-lookup"><span data-stu-id="71be8-127">Here is an example of the request to get the sign-in user's OneDrive or OneDrive for Business.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -65,9 +75,10 @@ Nachfolgend finden Sie ein Beispiel für die Anforderung zum Abrufen  von OneDri
 GET https://graph.microsoft.com/v1.0/me/drive
 ```
 
-##### <a name="response"></a>Antwort
+##### <span data-ttu-id="71be8-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="71be8-128">Response</span></span>
+<a id="response" class="xliff"></a>
 
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+<span data-ttu-id="71be8-129">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="71be8-129">Here is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

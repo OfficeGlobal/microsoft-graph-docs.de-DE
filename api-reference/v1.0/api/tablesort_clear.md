@@ -1,33 +1,12 @@
-# <a name="tablesort-clear"></a>TableSort: clear
-
-Löscht die Sortierung, die derzeit in der Tabelle enthalten ist. Dies ändert nicht die Sortierung der Tabelle, löscht jedoch den Zustand der Kopfzeilen-Schaltflächen.
-## <a name="prerequisites"></a>Voraussetzungen
-Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
-
-    * Files.ReadWrite
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/tables/{id|name}/sort/clear
-POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/clear
-
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Beschreibung|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
-
-
-## <a name="request-body"></a>Anforderungstext
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="68ced-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="68ced-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="68ced-118">Beispiel</span><span class="sxs-lookup"><span data-stu-id="68ced-118">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="68ced-119">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="68ced-119">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="68ced-120">Anforderung</span><span class="sxs-lookup"><span data-stu-id="68ced-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="68ced-121">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="68ced-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "tablesort_clear"
@@ -36,8 +15,9 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/sort/clear
 ```
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. 
+##### <span data-ttu-id="68ced-122">Antwort</span><span class="sxs-lookup"><span data-stu-id="68ced-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="68ced-123">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="68ced-123">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

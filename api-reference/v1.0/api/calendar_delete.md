@@ -1,38 +1,11 @@
-# <a name="delete-calendar"></a>Kalender löschen
-
-Dient zum Löschen eines anderen Kalenders als des Standardkalenders.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Calendars.ReadWrite*
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-Ein anderer [Kalender](../resources/calendar.md) des Benutzers als der Standardkalender in der standardmäßigen [CalendarGroup](../resources/calendargroup.md).
-```http
-DELETE /me/calendars/{id}
-DELETE /users/{id | userPrincipalName}/calendars/{id}
-
-DELETE /me/calendarGroup/calendars/{id}
-DELETE /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
-```
-Ein anderer [Kalender](../resources/calendar.md) als der Standardkalender in einer bestimmten [CalendarGroup](../resources/calendargroup.md).
-```http
-DELETE /me/calendarGroups/{id}/calendars/{id}
-DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Name           |  Typ    | Beschreibung|
-|:---------------|:---------|:----------|
-| Authorization  |  string  | Bearer {token}. Erforderlich. |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="94d41-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="94d41-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="94d41-121">Beispiel</span><span class="sxs-lookup"><span data-stu-id="94d41-121">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="94d41-122">Anforderung</span><span class="sxs-lookup"><span data-stu-id="94d41-122">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="94d41-123">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="94d41-123">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_calendar"
@@ -40,8 +13,9 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/calendar
 ```
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. 
+##### <span data-ttu-id="94d41-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="94d41-124">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="94d41-125">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="94d41-125">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,33 +1,12 @@
-# licenseDetails-Ressourcentyp
-<a id="licensedetails-resource-type" class="xliff"></a>
+<span data-ttu-id="a3d66-p104">Eindeutiger SKU-Anzeigename. Entspricht der skuPartNumber des zugehörigen [SubscribedSku](subscribedsku.md)-Objekts, z. B.: „AAD_Premium“. Schreibgeschützt</span><span class="sxs-lookup"><span data-stu-id="a3d66-p104">Unique SKU display name. Equal to the skuPartNumber on the related [SubscribedSku](subscribedsku.md) object; for example: "AAD_Premium". Read-only</span></span>| Eindeutiger SKU-Anzeigename. Entspricht der skuPartNumber des zugehörigen [SubscribedSku](subscribedsku.md)-Objekts, z. B.: „AAD_Premium“. Schreibgeschützt |
 
-Enthält Informationen über eine Lizenz, die einem Benutzer zugewiesen ist.
-
-## Methoden
-<a id="methods" class="xliff"></a>
-
-| Methode           | Rückgabetyp    |Beschreibung|
-|:---------------|:--------|:----------|
-|[licenseDetails auflisten](../api/user_list_licensedetails.md) | licenseDetails-Sammlung |Dient zum Abrufen einer Liste von licenseDetails-Objekten für einen Benutzer.|
-
-<!--|[Get licenseDetails](../api/licensedetails_get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
-
-## Eigenschaften
-<a id="properties" class="xliff"></a>
-| Eigenschaft     | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|id|String| Der eindeutige Bezeichner für das licenseDetails-Objekt. Schreibgeschützt, Schlüssel, lässt keine Nullwerte zu. |
-|servicePlans|[servicePlanInfo](serviceplaninfo.md)-Sammlung| Informationen über die Servicepläne, die mit der Lizenz zugewiesen werden. Schreibgeschützt, lässt keine Nullwerte zu. |
-|skuId|Guid| Der eindeutige Bezeichner (GUID) für die Dienst-SKU. Entspricht der skuId-Eigenschaft des zugehörigen [SubscribedSku](subscribedsku.md)-Objekts. Schreibgeschützt |
-|skuPartNumber|String| Eindeutiger SKU-Anzeigename. Entspricht der skuPartNumber des zugehörigen [SubscribedSku](subscribedsku.md)-Objekts, z. B.: „AAD_Premium“. Schreibgeschützt |
-
-## Beziehungen
+## <span data-ttu-id="a3d66-132">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="a3d66-132">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-Keine
+<span data-ttu-id="a3d66-133">Keine</span><span class="sxs-lookup"><span data-stu-id="a3d66-133">None</span></span>
 
-## JSON-Darstellung
+## <span data-ttu-id="a3d66-134">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="a3d66-134">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="a3d66-135">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="a3d66-135">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

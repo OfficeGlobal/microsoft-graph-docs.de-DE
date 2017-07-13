@@ -1,29 +1,17 @@
-# <a name="list-manager"></a>Manager auflisten
+<span data-ttu-id="b630f-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="b630f-p102">Bearer token. Required.</span></span>  | Bearer {token}. Erforderlich.  |
+| <span data-ttu-id="b630f-115">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b630f-115">Content-Type</span></span>   | <span data-ttu-id="b630f-116">application/json</span><span class="sxs-lookup"><span data-stu-id="b630f-116">application/json</span></span>  | 
 
-Ruft den Vorgesetzten des Benutzers ab. Gibt den Benutzer oder Kontakt zurück, der als Vorgesetzter des Benutzers zugewiesen ist.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id | userPrincipalName}/manager
-```
-## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
-## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert|
-|:-----------|:------|
-| Authorization  | Bearer {token}. Erforderlich.  |
-| Content-Type   | application/json  | 
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [directoryObject](../resources/directoryobject.md)-Objekt im Antworttext zurückgegeben.
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="b630f-117">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="b630f-117">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="b630f-118">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="b630f-118">Do not supply a request body for this method.</span></span>
+## <span data-ttu-id="b630f-119">Antwort</span><span class="sxs-lookup"><span data-stu-id="b630f-119">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="b630f-120">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [directoryObject](../resources/directoryobject.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="b630f-120">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+## <span data-ttu-id="b630f-121">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b630f-121">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="b630f-122">Anforderung</span><span class="sxs-lookup"><span data-stu-id="b630f-122">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="b630f-123">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="b630f-123">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_manager"
@@ -31,8 +19,9 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 ```
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="b630f-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="b630f-124">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="b630f-125">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="b630f-125">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

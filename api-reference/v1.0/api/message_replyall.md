@@ -1,37 +1,12 @@
-# <a name="message-replyall"></a>message: replyAll
-
-Sendet eine Antwort an alle Empfänger einer E-Mail. Die Nachricht wird dann im Ordner „Gesendete Elemente“ gespeichert.
-
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Mail.Send*
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /users/me/messages/{id}/replyAll
-POST /users/{id | userPrincipalName}/messages/{id}/replyAll
-POST /me/mailFolders/{id}/messages/{id}/replyAll
-POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
-
-| Parameter    | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|comment|String|Ein Kommentar, der eingefügt werden kann. Kann eine leere Zeichenfolge sein.|
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="f80dd-p105">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202, Accepted` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="f80dd-p105">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202, Accepted` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="f80dd-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f80dd-131">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="f80dd-132">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="f80dd-132">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="f80dd-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="f80dd-133">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="f80dd-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="f80dd-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "message_replyall"
@@ -47,8 +22,9 @@ Content-length: 32
 ```
 
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="f80dd-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="f80dd-135">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="f80dd-136">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="f80dd-136">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

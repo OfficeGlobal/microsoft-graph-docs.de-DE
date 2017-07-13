@@ -1,38 +1,12 @@
-# <a name="chart-setdata"></a>Chart: setData
-
-Setzt die Quelldaten für das Diagramm zurück.
-## <a name="prerequisites"></a>Voraussetzungen
-Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
-
-    * Files.ReadWrite
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/setData
-
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Beschreibung|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
-
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
-
-| Parameter    | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|sourceData|string|Das den Quelldaten entsprechende Range-Objekt.|
-|seriesBy|string|Optional. Gibt an, wie Spalten oder Zeilen als Datenreihen im Diagramm verwendet werden. Folgende Ergebnisse sind möglich: Auto (Standard), Rows, Columns.  Mögliche Werte: `Auto`, `Columns`, `Rows`.|
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="9f900-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="9f900-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="9f900-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="9f900-130">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="9f900-131">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="9f900-131">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="9f900-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="9f900-132">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="9f900-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="9f900-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chart_setdata"
@@ -48,8 +22,9 @@ Content-length: 70
 }
 ```
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. 
+##### <span data-ttu-id="9f900-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="9f900-134">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="9f900-135">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="9f900-135">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

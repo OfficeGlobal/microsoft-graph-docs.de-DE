@@ -1,34 +1,12 @@
-# <a name="rangeformat-autofitcolumns"></a>RangeFormat: autofitColumns
-
-Ändert die Breite der Spalten des aktuellen Bereichs, um basierend auf den aktuellen Daten in den Spalten die optimale Breite zu erzielen.
-## <a name="prerequisites"></a>Voraussetzungen
-Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
-
-    * Files.ReadWrite
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/names(<name>)/range/format/autofitColumns
-POST /workbook/worksheets/{id|name}/range(<address>)/format/autofitColumns
-POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitColumns
-
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Beschreibung|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
-
-
-## <a name="request-body"></a>Anforderungstext
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="32f65-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="32f65-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="32f65-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="32f65-117">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="32f65-118">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="32f65-118">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="32f65-119">Anforderung</span><span class="sxs-lookup"><span data-stu-id="32f65-119">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="32f65-120">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="32f65-120">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "rangeformat_autofitcolumns"
@@ -37,8 +15,9 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/autofitColumns
 ```
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. 
+##### <span data-ttu-id="32f65-121">Antwort</span><span class="sxs-lookup"><span data-stu-id="32f65-121">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="32f65-122">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="32f65-122">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,17 +1,10 @@
-# plannerChecklistItems-Ressourcentyp
-<a id="plannerchecklistitems-resource-type" class="xliff"></a>
-
-Die **plannerChecklistItemCollection**-Ressource stellt die Sammlung der Checklistenelemente für einen Vorgang dar. Es handelt sich um einen offenen Typ. Sie ist Bestandteil des [taskDetails](plannertaskdetails.md)-Objekts. Der Wert im Eigenschaft-Wert-Paar ist das [checklistItem](plannerchecklistitem.md)-Objekt.
-
-
-## Eigenschaften
-<a id="properties" class="xliff"></a>
+<span data-ttu-id="4dcf4-p102">Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall sollte der Client **GUIDs** als Eigenschaften bereitstellen, und ihre Werte müssen [checklistItem](plannerchecklistitem.md)-Objekte sein. Nachfolgend ein Beispiel. Um ein Element in der Checkliste zu entfernen, legen Sie den Wert der Eigenschaft auf `null` fest.</span><span class="sxs-lookup"><span data-stu-id="4dcf4-p102">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
 Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall sollte der Client **GUIDs** als Eigenschaften bereitstellen, und ihre Werte müssen [checklistItem](plannerchecklistitem.md)-Objekte sein. Nachfolgend ein Beispiel. Um ein Element in der Checkliste zu entfernen, legen Sie den Wert der Eigenschaft auf `null` fest.
 
-## JSON-Darstellung
+## <span data-ttu-id="4dcf4-111">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="4dcf4-111">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
 
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="4dcf4-112">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="4dcf4-112">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -33,7 +26,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   }
 }
 ```
-// Beispiel
+<span data-ttu-id="4dcf4-113">// Beispiel</span><span class="sxs-lookup"><span data-stu-id="4dcf4-113">// Example</span></span>
 
 ```json
 {

@@ -1,17 +1,10 @@
-# plannerAppliedCategories-Ressourcentyp
-<a id="plannerappliedcategories-resource-type" class="xliff"></a>
-
-
-Die **AppliedCategoriesCollection**-Ressource stellt die Sammlung von Kategorien (oder Bezeichnungen) dar, die auf eine Aufgabe angewendet wurden. Sie ist Teil des [plannerTask](plannertask.md)-Objekts. Auf eine Aufgabe können bis zu 6 Kategorien angewendet werden. Kategoriebeschreibungen wie `category1`, `category2` usw. sind Teil des [planDetails ](plannerplandetails.md)-Objekts. Es handelt sich um einen offenen Typ.
-
-## Eigenschaften
-<a id="properties" class="xliff"></a>
+<span data-ttu-id="b9038-p102">Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall muss der Client jedoch `category1`, `category2`, `category3`, `category4`, `category5` und/oder `category6` als Eigenschaften angeben, deren Wert das boolesche `true` ist, wenn die entsprechenden Kategorien auf die Aufgabe angewendet werden. Nachfolgend ein Beispiel. Wenn sie nicht zutreffen, werden Eigenschaften automatisch entfernt, indem ihre Werte auf das boolesche `false` festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="b9038-p102">Properties of an Open Type can be defined by the client. In this case though, the client must provide `category1`, `category2`, `category3`, `category4`, `category5` and/or `category6` as properties with their values being the `true` boolean when the corresponding categories are applied on the task. Example is shown below. When they do not apply, properties are automatically removed by setting their values to the `false` boolean.</span></span>
 Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall muss der Client jedoch `category1`, `category2`, `category3`, `category4`, `category5` und/oder `category6` als Eigenschaften angeben, deren Wert das boolesche `true` ist, wenn die entsprechenden Kategorien auf die Aufgabe angewendet werden. Nachfolgend ein Beispiel. Wenn sie nicht zutreffen, werden Eigenschaften automatisch entfernt, indem ihre Werte auf das boolesche `false` festgelegt werden. 
 
-## JSON-Darstellung
+## <span data-ttu-id="b9038-112">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="b9038-112">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
 
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="b9038-113">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="b9038-113">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -27,7 +20,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 }
 ```
 
-Beispiel: 
+<span data-ttu-id="b9038-114">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="b9038-114">Example:</span></span> 
 
 ```json
 {

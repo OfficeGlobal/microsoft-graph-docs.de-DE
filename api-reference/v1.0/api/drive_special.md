@@ -1,49 +1,20 @@
-# <a name="get-a-special-folder-by-name"></a>Speziellen Ordner nach Name abrufen
-
-Verwenden Sie spezielle Auflistung, um auf einen speziellen Ordner basierend auf dem Namen zuzugreifen.
-
-Spezielle Ordner bieten einfache Aliase für den Zugriff auf bekannte Ordner in OneDrive, ohne dass der Ordner anhand des Pfads nachgeschlagen werden muss (wofür eine Lokalisierung erforderlich wäre) oder anhand einer ID auf den Ordner verwiesen werden muss. Wenn ein spezieller Ordner umbenannt oder an eine andere Position innerhalb des Laufwerks verschoben wird, kann mit dieser Syntax weiterhin nach diesem Ordner gesucht werden.
-
-Spezielle Ordner werden automatisch erstellt, wenn eine Anwendung das erste Mal versucht, einen Ordner zu schreiben, wenn noch keiner vorhanden ist. Wenn ein Benutzer einen speziellen Ordner löscht, wird dieser neu erstellt, wenn erneut in den Ordner geschrieben wird.
-
-**Hinweis:**  Wenn Sie nur über Leseberechtigungen verfügen und einen speziellen Ordner anfordern, der nicht vorhanden ist, wird ein `403 Forbidden`-Fehler angezeigt.
-
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
-
-* Files.Read
-* Files.ReadWrite
-* Files.Read.All
-* Files.ReadWrite.All
-* Files.ReadWrite.AppFolder
-* Sites.Read.All
-* Sites.ReadWrite.All
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/drive/special/{name}
-```
-## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
-
-## <a name="request-headers"></a>Anforderungsheader
-
-| Name          | Typ   | Beschreibung               |
-|:--------------|:-------|:--------------------------|
-| Authorization | string | Bearer {token}. Erforderlich. |
+<span data-ttu-id="c40ba-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c40ba-p103">Bearer {token}. Required.</span></span> | Bearer {token}. Erforderlich. |
 
 
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
+## <span data-ttu-id="c40ba-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c40ba-128">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="c40ba-129">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="c40ba-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [driveItem](../resources/driveitem.md)-Objekt im Antworttext zurückgegeben.
+## <span data-ttu-id="c40ba-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="c40ba-130">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="c40ba-131">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [driveItem](../resources/driveitem.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c40ba-131">If successful, this method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.</span></span>
 
-## <a name="example"></a>Beispiel
+## <span data-ttu-id="c40ba-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c40ba-132">Example</span></span>
+<a id="example" class="xliff"></a>
 
-##### <a name="request"></a>Anforderung
-Hier ist ein Beispiel für die Anforderung der Laufwerke des Benutzers.
+##### <span data-ttu-id="c40ba-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c40ba-133">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="c40ba-134">Hier ist ein Beispiel für die Anforderung der Laufwerke des Benutzers.</span><span class="sxs-lookup"><span data-stu-id="c40ba-134">Here is an example of the request for the user's drives.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -53,8 +24,9 @@ Hier ist ein Beispiel für die Anforderung der Laufwerke des Benutzers.
 GET https://graph.microsoft.com/v1.0/me/drive/special/{name}
 ```
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="c40ba-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="c40ba-135">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="c40ba-136">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c40ba-136">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -73,9 +45,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <span data-ttu-id="c40ba-137">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="c40ba-137">Remarks</span></span>
+<a id="remarks" class="xliff"></a>
 
-Um die untergeordneten Elemente eines speziellen Ordners anzufordern, können Sie die `children`-Sammlung anfordern oder die Option [expand](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) verwenden, um die Sammlung untergeordneter Elemente zu erweitern.
+<span data-ttu-id="c40ba-138">Um die untergeordneten Elemente eines speziellen Ordners anzufordern, können Sie die `children`-Sammlung anfordern oder die Option [expand](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) verwenden, um die Sammlung untergeordneter Elemente zu erweitern.</span><span class="sxs-lookup"><span data-stu-id="c40ba-138">To request the children of a special folder, you can request the `children` collection or use the [expand](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) option to expand the children collection.</span></span>
 
 
 <!-- {

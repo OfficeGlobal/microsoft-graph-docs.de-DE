@@ -1,21 +1,9 @@
-<a id="configuring-the-invitation-message" class="xliff"></a>
-# Konfigurieren der Einladungsnachricht
-
-Mit dem invitedUserMessageInfo-Objekt können Sie die [invitation](invitation.md)-Nachricht konfigurieren.
+<span data-ttu-id="67326-p102">Die Sprache, in der Sie die Standardnachricht senden möchten. Wenn customizedMessageBody angegeben ist, wird diese Eigenschaft ignoriert und die Nachricht wird mithilfe von customizedMessageBody gesendet. Das Sprachformat sollte ISO 639 sein. Der Standardwert ist en-US.</span><span class="sxs-lookup"><span data-stu-id="67326-p102">The language you want to send the default message in. If the customizedMessageBody is specified, this property is ignored, and the message is sent using the customizedMessageBody. The language format should be in ISO 639. The default is en-US.</span></span>|Die Sprache, in der Sie die Standardnachricht senden möchten. Wenn customizedMessageBody angegeben ist, wird diese Eigenschaft ignoriert und die Nachricht wird mithilfe von customizedMessageBody gesendet. Das Sprachformat sollte ISO 639 sein. Der Standardwert ist en-US.|
 
 
-<a id="properties" class="xliff"></a>
-## Eigenschaften
-| Eigenschaft     | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|ccRecipients|[Empfänger](recipient.md)|Weitere Empfänger, an die die Einladungsnachricht gesendet werden soll. Derzeit wird nur 1 zusätzlicher Empfänger unterstützt.|
-|customizedMessageBody|Zeichenfolge|Angepasster Nachrichtentext, den Sie senden möchten, wenn Sie nicht die Standardnachricht senden.|
-|messageLanguage|Zeichenfolge|Die Sprache, in der Sie die Standardnachricht senden möchten. Wenn customizedMessageBody angegeben ist, wird diese Eigenschaft ignoriert und die Nachricht wird mithilfe von customizedMessageBody gesendet. Das Sprachformat sollte ISO 639 sein. Der Standardwert ist en-US.|
-
-
+## <span data-ttu-id="67326-120">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="67326-120">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## JSON-Darstellung
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="67326-121">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="67326-121">Here is a JSON representation of the resource</span></span>
 
 <!-- {"blockType": "resource", "@odata.type": "microsoft.graph.invitedUserMessageInfo"} -->
 ```json

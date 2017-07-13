@@ -1,42 +1,12 @@
-# <a name="notebook-copynotebook"></a>notebook: copyNotebook
-Kopiert ein Notizbuch in den Ordner „Notizbücher“ in der Dokumentzielbibliothek. Der Ordner wird erstellt, falls er nicht vorhanden ist.
-
-Für Kopiervorgänge gilt ein asynchrones Aufrufmuster:  Rufen Sie zunächst die Kopieraktion auf, und fragen Sie dann den Vorgangsendpunkt nach dem Ergebnis ab.
-
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:   
-
-Notes.Create, Notes.ReadWrite oder Notes.ReadWrite.All 
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/onenote/notebooks/{id}/copyNotebook
-POST /users/{id | userPrincipalName}/onenote/notebooks/{id}/copyNotebook
-POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type | string | `application/json` |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext ein JSON-Objekt an, das die vom Vorgang benötigten Parameter bereitstellt. Es ist in Ordnung, senden Sie einen leeren Text senden, wenn keine erforderlich sind.
-
-| Parameter    | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|groupId|Zeichenfolge|Die ID der Gruppe, in die kopiert werden soll. Verwenden Sie diesen Parameter nur beim Kopieren in eine Office 365-Gruppe.|
-|renameAs|String|Der Name der Kopie. Standardmäßig der Name des vorhandenen Elements. |
-
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="452ad-p106">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `202 Accepted` und der Header `Operation-Location` zurückgegeben. Fragen Sie den Operation-Location-Endpunkt ab, um [den Status des Kopiervorgangs abzurufen](onenoteOperation_get.md).</span><span class="sxs-lookup"><span data-stu-id="452ad-p106">If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteOperation_get.md).</span></span>
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `202 Accepted` und der Header `Operation-Location` zurückgegeben. Fragen Sie den Operation-Location-Endpunkt ab, um [den Status des Kopiervorgangs abzurufen](onenoteOperation_get.md).
 
-## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="452ad-136">Beispiel</span><span class="sxs-lookup"><span data-stu-id="452ad-136">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="452ad-137">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="452ad-137">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="452ad-138">Anforderung</span><span class="sxs-lookup"><span data-stu-id="452ad-138">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="452ad-139">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="452ad-139">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "notebook_copynotebook"
@@ -52,8 +22,9 @@ Content-length: 108
 }
 ```
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="452ad-140">Antwort</span><span class="sxs-lookup"><span data-stu-id="452ad-140">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="452ad-141">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="452ad-141">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

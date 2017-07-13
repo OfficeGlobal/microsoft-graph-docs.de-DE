@@ -1,163 +1,23 @@
-# <a name="list-thumbnails-for-a-driveitem"></a>Miniaturansichten für ein DriveItem auflisten
-
-Hier erklären wir Ihnen, wie Sie eine Liste der [ThumbnailSet](../resources/thumbnailset.md)-Ressourcen einer [DriveItem](../resources/driveitem.md)-Ressource abrufen können.
-
-Ein DriveItem kann durch 0 oder mehr [ThumbnailSet](../resources/thumbnailset.md)-Ressourcen repräsentiert werden. Jedes **thumbnailSet** kann ein oder mehrere [**thumbnail**](../resources/thumbnail.md)-Objekte haben. Dabei handelt es sich um Bilder, die das jeweilige Element darstellen. Beispielsweise könnte ein **thumbnailSet** gängige **thumbnail**-Objekte wie `small`, `medium` oder `large` enthalten.
-
-Es gibt viele Möglichkeiten, auf OneDrive mit Miniaturansichten zu arbeiten. Die häufigsten:
-
-* Enumerieren der für ein Element verfügbaren Miniaturansichten
-* Abrufen einer einzelnen Miniaturansicht für ein Element
-* Abrufen von Miniaturansichtinhalten
-* Abrufen von Miniaturansichten für mehrere Elemente in einer einzigen Anforderung
-* Abrufen von benutzerdefinierten Miniaturansichtgrößen
-* Hochladen einer benutzerdefinierten Miniaturansicht für ein Element
-* Ermitteln, ob eine benutzerdefinierte Miniaturansicht hochgeladen wurde
-
-
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
-
-* Files.Read
-* Files.ReadWrite
-* Files.Read.All
-* Files.ReadWrite.All
-* Sites.Read.All
-* Sites.ReadWrite.All
-
-
-## <a name="http-request"></a>HTTP-Anforderung
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/drive/root:/{item-path}:/thumbnails
-GET /me/drive/items/{item-id}/thumbnails
-GET /groups/{group-id}/drive/items/{item-id}/thumbnails
-```
-
-## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-
-## <a name="response"></a>Antwort
-Bei Erfolg gibt diese Methode einen Antwortcode des Typs `200 OK` und eine Sammlung von [ThumbnailSet](../resources/thumbnailset.md)-Objekten im Antworttext zurück.
-
-## <a name="example"></a>Beispiel
-
-##### <a name="request"></a>Anforderung
-
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
-
-<!-- {
-  "blockType": "request",
-  "name": "get_thumbnails"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/thumbnails
-```
-
-
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
-
-<!-- {
-  "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.thumbnailSet",
-  "isCollection": true
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "value": [
-    {
-      "id": "0",
-      "small": { "height": 64, "width": 96, "url": "https://sn3302files..."},
-      "medium": { "height": 117, "width": 176, "url": "https://sn3302files..."},
-      "large": { "height": 533, "width": 800, "url": "https://sn3302files..."}
-    }
-  ]
-}
-```
-
-## <a name="retrieve-a-single-thumbnail"></a>Abrufen einer einzelnen Miniaturansicht
-
-Sie können die Metadaten einer einzelnen Miniaturansicht sowie ihre Größe abrufen, indem Sie sie in einer Anforderung direkt adressieren.
-
-## <a name="http-request"></a>HTTP-Anforderung
-
-<!-- { "blockType": "request", "name": "get-one-thumbnail" } -->
-```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
-```
-
-## <a name="path-parameters"></a>Pfadparameter
-
-| Name         | Typ   | Beschreibung                                                                         |
-|:-------------|:-------|:------------------------------------------------------------------------------------|
-| **item-id**  | string | Der eindeutige Bezeichner für das referenzierte Element                                      |
-| **thumb-id** | number | Der Index der Miniaturansicht, in der Regel 0 bis 4                                            |
-| **size**     | string | Die Größe der angeforderten Miniaturansicht. Dabei muss es sich um eine der aufgeführten Standardgrößen handeln. |
-
-
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "width": 100,
-  "height": 100,
-  "url": "http://onedrive.com/asd123a/asdjlkasjdkasdjlk.jpg"
-}
-```
-
-## <a name="retrieve-thumbnail-content"></a>Abrufen von Miniaturansichtinhalten
-
-Sie können den Inhalt einer Miniaturansicht direkt abrufen, indem Sie die Eigenschaft **content** der Miniaturansicht anfordern.
-
-## <a name="http-request"></a>HTTP-Anforderung
-
-<!-- { "blockType": "request", "name":"get-thumbnail-content" } -->
-```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
-```
-
-## <a name="response"></a>Antwort
-
-Der Dienst antwortet mit einer Umleitung auf die Miniaturansicht-URL.
-
-<!-- { "blockType": "response" } -->
-```http
-HTTP/1.1 302 Found
-Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
-```
-
-URLs zu Miniaturansichtinhalten sind vorab authentifiziert. Der Download eines Autorisierungsheaders ist nicht erforderlich. Diese URLs sind kurzlebig und nur für wenige Stunden gültig. Sie sollten nicht von Apps zwischengespeichert werden.
-
-
-## <a name="size-values"></a>Größenwerte
+<span data-ttu-id="31238-p105">In dieser Tabelle sind die möglichen Miniaturansichtgrößen definiert. Zwar können Sie jede beliebige Miniaturansichtgröße anfordern; bei den definierten Werten ist es jedoch wahrscheinlich, dass sie existieren und dass schnell ein Wert zurückgegeben wird:</span><span class="sxs-lookup"><span data-stu-id="31238-p105">This table defines the possible thumbnail sizes. While you can request any arbitrary thumbnail size, the defined values are likely to exist and return a value quickly:</span></span>
 
 In dieser Tabelle sind die möglichen Miniaturansichtgrößen definiert. Zwar können Sie jede beliebige Miniaturansichtgröße anfordern; bei den definierten Werten ist es jedoch wahrscheinlich, dass sie existieren und dass schnell ein Wert zurückgegeben wird:
 
-| Name           | Auflösung  | Seitenverhältnis | Beschreibung                                                          |
+| <span data-ttu-id="31238-162">Name</span><span class="sxs-lookup"><span data-stu-id="31238-162">Name</span></span>           | <span data-ttu-id="31238-163">Auflösung</span><span class="sxs-lookup"><span data-stu-id="31238-163">Resolution</span></span>  | <span data-ttu-id="31238-164">Seitenverhältnis</span><span class="sxs-lookup"><span data-stu-id="31238-164">Aspect Ratio</span></span> | <span data-ttu-id="31238-165">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="31238-165">Description</span></span>                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
-| `small`        | 96 longest
-  | Original     | Kleine, stark komprimierte Miniaturansicht, zugeschnitten auf ein quadratisches Seitenverhältnis |
-| `medium`       | 176 longest | Original     | Zugeschnitten auf die standardmäßige Elementgröße für die OneDrive-Webansicht         |
-| `large`        | 800 longest
- | Original     | Miniaturansicht, bei der die längste Kante auf 800 Pixel skaliert wurde               |
+| `small`        | <span data-ttu-id="31238-166">96 longest
+</span><span class="sxs-lookup"><span data-stu-id="31238-166">96 longest</span></span>  | <span data-ttu-id="31238-167">Original</span><span class="sxs-lookup"><span data-stu-id="31238-167">Original</span></span>     | <span data-ttu-id="31238-168">Kleine, stark komprimierte Miniaturansicht, zugeschnitten auf ein quadratisches Seitenverhältnis</span><span class="sxs-lookup"><span data-stu-id="31238-168">Small, highly compressed thumbnail cropped to a square aspect ratio.</span></span> |
+| `medium`       | <span data-ttu-id="31238-169">176 longest</span><span class="sxs-lookup"><span data-stu-id="31238-169">176 longest</span></span> | <span data-ttu-id="31238-170">Original</span><span class="sxs-lookup"><span data-stu-id="31238-170">Original</span></span>     | <span data-ttu-id="31238-171">Zugeschnitten auf die standardmäßige Elementgröße für die OneDrive-Webansicht</span><span class="sxs-lookup"><span data-stu-id="31238-171">Cropped to the standard item size for the OneDrive web view.</span></span>         |
+| `large`        | <span data-ttu-id="31238-172">800 longest
+</span><span class="sxs-lookup"><span data-stu-id="31238-172">800 longest</span></span> | <span data-ttu-id="31238-173">Original</span><span class="sxs-lookup"><span data-stu-id="31238-173">Original</span></span>     | <span data-ttu-id="31238-174">Miniaturansicht, bei der die längste Kante auf 800 Pixel skaliert wurde</span><span class="sxs-lookup"><span data-stu-id="31238-174">Thumbnail with the longest edge resized to 800 pixels.</span></span>               |
 
-## <a name="remarks"></a>Bemerkungen
+## <span data-ttu-id="31238-175">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="31238-175">Remarks</span></span>
+<a id="remarks" class="xliff"></a>
 
-**Hinweis:** Für OneDrive for Business und SharePoint gilt:
+<span data-ttu-id="31238-176">**Hinweis:** Für OneDrive for Business und SharePoint gilt:</span><span class="sxs-lookup"><span data-stu-id="31238-176">**Note** In OneDrive for Business and SharePoint:</span></span>
 
-* Die folgenden Aufrufe können nicht zur Erweiterung der Miniaturansichtsammlung verwendet werden: `GET /drive/root:/{item-path}?expand=children(expand=thumbnails)`
-  `GET /drive/items/{item-id}/children?expand=thumbnails`
+* <span data-ttu-id="31238-177">Die folgenden Aufrufe können nicht zur Erweiterung der Miniaturansichtsammlung verwendet werden: `GET /drive/root:/{item-path}?expand=children(expand=thumbnails)`
+  `GET /drive/items/{item-id}/children?expand=thumbnails`</span><span class="sxs-lookup"><span data-stu-id="31238-177">Using these calls to expand the thumbnails collection will not work: `GET /drive/root:/{item-path}?expand=children(expand=thumbnails)`
+  `GET /drive/items/{item-id}/children?expand=thumbnails`</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,38 +1,4 @@
-# <a name="list-directoryroletemplates"></a>directoryRoleTemplates auflisten
-
-Dient zum Abrufen einer Liste von directoryRoleTemplate-Objekten.
-
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Directory.Read.All* ODER *Directory.ReadWrite.All* ODER *Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-GET /directoryRoleTemplates
-```
-## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort werden von dieser Methode **nicht** unterstützt (d. h. „$filter“ wird nicht unterstützt).
-
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [directoryRoleTemplate](../resources/directoryroletemplate.md)-Objekten im Antworttext zurückgegeben.
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-
-<!-- {
-  "blockType": "request",
-  "name": "get_directoryroletemplates"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/directoryRoleTemplates
-```
-##### <a name="response"></a>Antwort
+<span data-ttu-id="0190e-p102">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="0190e-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",

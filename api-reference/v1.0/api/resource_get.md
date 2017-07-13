@@ -1,33 +1,18 @@
-# <a name="get-resource"></a>Ressource abrufen
+<span data-ttu-id="365a4-p101">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="365a4-p101">Bearer token. Required.</span></span>  | Bearer {token}. Erforderlich. |
 
-Dient zum Abrufen der Binärdaten eines [resource](../resources/resource.md)-Objekts für eine Datei oder ein Bild.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:  
+## <span data-ttu-id="365a4-115">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="365a4-115">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="365a4-116">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="365a4-116">Do not supply a request body for this method.</span></span>
+## <span data-ttu-id="365a4-117">Antwort</span><span class="sxs-lookup"><span data-stu-id="365a4-117">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="365a4-118">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und die Binärdaten des Bilds oder der Datei im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="365a4-118">If successful, this method returns a `200 OK` response code and the image or file binary data in the response body.</span></span>
 
-Notes.Read, Notes.ReadWrite, Notes.Read.All oder Notes.ReadWrite.All
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/onenote/resources/{id}/content
-GET /users/{id | userPrincipalName}/onenote/resources/{id}/content
-GET /groups/{id}/onenote/resources/{id}/content
-```
-
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und die Binärdaten des Bilds oder der Datei im Antworttext zurückgegeben.
-
-Hinweis: Bilder werden nicht direkt in einem Browser gerendert, da zum Abrufen eine Autorisierung erforderlich ist, ebenso wie für den Rest des Seiteninhalts.
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+<span data-ttu-id="365a4-119">Hinweis: Bilder werden nicht direkt in einem Browser gerendert, da zum Abrufen eine Autorisierung erforderlich ist, ebenso wie für den Rest des Seiteninhalts.</span><span class="sxs-lookup"><span data-stu-id="365a4-119">Note: Images won't render directly in a browser because they require authorization to retrieve them, like the rest of the page content.</span></span>
+## <span data-ttu-id="365a4-120">Beispiel</span><span class="sxs-lookup"><span data-stu-id="365a4-120">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="365a4-121">Anforderung</span><span class="sxs-lookup"><span data-stu-id="365a4-121">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="365a4-122">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="365a4-122">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_resource"
@@ -35,8 +20,9 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/resources/{id}/content
 ```
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="365a4-123">Antwort</span><span class="sxs-lookup"><span data-stu-id="365a4-123">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="365a4-124">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="365a4-124">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,31 +1,11 @@
-# <a name="delete-device"></a>Gerät löschen
-
-Dient zum Löschen eines registrierten Geräts.
-
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Directory.AccessAsUser.All*, *Device.ReadWrite.All*
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /devices/{id}
-```
-> Hinweis: Die „id“ in der Anforderung entspricht der „id“-Eigenschaft des Geräts, nicht der „deviceId“-Eigenschaft.
-
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="11076-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="11076-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="11076-120">Beispiel</span><span class="sxs-lookup"><span data-stu-id="11076-120">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="11076-121">Anforderung</span><span class="sxs-lookup"><span data-stu-id="11076-121">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="11076-122">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="11076-122">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_device"
@@ -33,8 +13,9 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 DELETE https://graph.microsoft.com/v1.0/devices/{id}
 ```
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="11076-123">Antwort</span><span class="sxs-lookup"><span data-stu-id="11076-123">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="11076-124">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="11076-124">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

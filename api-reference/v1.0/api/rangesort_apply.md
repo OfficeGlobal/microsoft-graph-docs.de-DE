@@ -1,43 +1,12 @@
-# <a name="rangesort-apply"></a>RangeSort: apply
-
-Führt einen Sortiervorgang aus.
-## <a name="prerequisites"></a>Voraussetzungen
-Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
-
-    * Files.ReadWrite
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/names(<name>)/range/sort/apply
-POST /workbook/worksheets/{id|name}/range(<address>)/sort/apply
-POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
-
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Beschreibung|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
-
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
-
-| Parameter    | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|fields|SortField|Die Liste der Bedingungen, nach denen sortiert werden soll.|
-|matchCase|boolean|Optional. Gibt an, ob sich die Groß-/Kleinschreibung auf die Zeichenfolgensortierung auswirkt.|
-|hasHeaders|boolean|Optional. Gibt an, ob der Bereich eine Kopfzeile aufweist.|
-|orientation|string|Optional. Gibt an, ob der Vorgang Zeilen oder Spalten sortiert.  Die folgenden Werte sind möglich: `Rows`, `Columns`.|
-|Methode|string|Optional. Die Sortiermethode für chinesische Zeichen.  Die folgenden Werte sind möglich: `PinYin`, `StrokeCount`.|
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="1dc9b-p106">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1dc9b-p106">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="1dc9b-142">Beispiel</span><span class="sxs-lookup"><span data-stu-id="1dc9b-142">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="1dc9b-143">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="1dc9b-143">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="1dc9b-144">Anforderung</span><span class="sxs-lookup"><span data-stu-id="1dc9b-144">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="1dc9b-145">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="1dc9b-145">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "rangesort_apply"
@@ -68,8 +37,9 @@ Content-length: 358
 }
 ```
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. 
+##### <span data-ttu-id="1dc9b-146">Antwort</span><span class="sxs-lookup"><span data-stu-id="1dc9b-146">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="1dc9b-147">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="1dc9b-147">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

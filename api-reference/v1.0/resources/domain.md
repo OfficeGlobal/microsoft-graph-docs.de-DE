@@ -1,66 +1,16 @@
-# domain-Ressourcentyp
-<a id="domain-resource-type" class="xliff"></a>
-
-Stellt eine Domäne dar, die einem Mandanten zugewiesen ist.
-
-Verwenden Sie Domänenvorgänge, um Domänen einem Mandanten zuzuweisen, den Besitz von Domänen zu überprüfen und unterstützte Dienste zu konfigurieren.  Mithilfe von Domänenvorgängen können Registrierungsstellen die Domänenzuweisung für Dienste wie Office 365 automatisieren. Im Rahmen der Domänenanmeldung kann eine Registrierungsstelle beispielsweise eine Vanity-Domäne für E-Mails, Websites, Authentifizierung usw. aktivieren.
-
-So ordnen Sie eine Domäne einem Mandanten zu:
-
-1. [Ordnen Sie](../api/domain_post_domains.md) dem Mandanten eine Domäne zu.
-
-2. [Rufen Sie](../api/domain_list_verificationdnsrecords.md) die Domänenüberprüfungseinträge ab. Fügen Sie die Details des Überprüfungsdatensatzes mithilfe der Domänenregistrierungsstelle oder der DNS-Serverkonfiguration der Zonendatei der Domäne hinzu.
-
-3. [Überprüfen Sie](../api/domain_verify.md) den Besitz der Domäne. Dadurch wird die Domäne überprüft und die *IsVerified*-Eigenschaft auf *true* festgelegt.
-
-4. [Geben Sie](../api/domain_update.md) die unterstützten Dienste an, die Sie mit der Domäne verwenden möchten.
-
-5. [Konfigurieren Sie](../api/domain_list_serviceconfigurationrecords.md) unterstützte Dienste, indem Sie eine Liste von Datensätzen abrufen, die zum Aktivieren von Diensten für die Domäne erforderlich sind. Fügen Sie die Details des Konfigurationsdatensatzes mithilfe der Domänenregistrierungsstelle oder der DNS-Serverkonfiguration der Zonendatei der Domäne hinzu.
-
-## Methoden
-<a id="methods" class="xliff"></a>
-
-| Methode   | Rückgabetyp |Beschreibung|
-|:---------------|:--------|:----------|
-|[Domäne abrufen](../api/domain_get.md) | [Domäne](domain.md) | Dient zum Lesen der Eigenschaften und der Beziehungen eines Domänenobjekts.|
-|[Domäne erstellen](../api/domain_post_domains.md) | [Domäne](domain.md) | Fügt eine Domäne zum Mandanten hinzu. |
-|[domainNameReference auflisten](../api/domain_list_domainnamereferences.md) |[directoryObject](directoryobject.md)-Sammlung| Dient zum Abrufen einer Liste von Verzeichnisobjekten mit einem Verweis auf die Domäne.|
-|[serviceConfigurationRecords auflisten](../api/domain_list_serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md)-Sammlung|  Dient zum Abrufen einer von Domänen-DNS-Einträgen für die Domänenkonfiguration.|
-|[verificationDnsRecords auflisten](../api/domain_list_verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md)-Sammlung|  Dient zum Abrufen einer von Domänen-DNS-Einträgen für die Domänenüberprüfung.|
-|[Domäne aktualisieren](../api/domain_update.md) | [Domäne](domain.md) |Dient zum Aktualisieren einer Domäne.|
-|[Domäne löschen](../api/domain_delete.md) | Keine |Dient zum Löschen einer Domäne.|
-|[Domäne überprüfen](../api/domain_verify.md)|[Domäne](domain.md)|Überprüft den Besitz der Domäne.|
-
-## Eigenschaften
-<a id="properties" class="xliff"></a>
-
-| Eigenschaft   | Typ | Beschreibung |
-|:---------------|:--------|:----------|
-|authenticationType|String| Gibt den konfigurierten Authentifizierungstyp für die Domäne an. Der Wert ist entweder *Verwaltet* oder *Verbund*.<br> *Verwaltet* gibt eine cloudverwaltete Domäne an, bei der Azure AD die Benutzerauthentifizierung ausführt.<br>*Verbund* gibt an, dass die Authentifizierung im Verbund mit einem Identitätsanbieter steht, z. B. das lokale Active Directory des Mandanten über Active Directory-Verbunddienste. Lässt keine Nullwerte zu. |
-|availabilityStatus|String| Diese Eigenschaft ist immer null, außer wenn die Aktion [verify](../api/domain_verify.md) verwendet wird. Wenn die Aktion [verify](../api/domain_verify.md) verwendet wird, wird in der Antwort eine **Domänen**entität zurückgegeben. Die Eigenschaft **availabilityStatus** der **Domänen**entität in der Antwort ist entweder *AvailableImmediately* oder *EmailVerifiedDomainTakeoverScheduled*.|
-|id|Zeichenfolge| Der vollqualifizierte Name der Domäne. Schlüssel, unveränderlich, lässt keine Nullwerte zu, eindeutig |
-|isAdminManaged|Boolean| Der Wert der Eigenschaft ist „false“, wenn die DNS-Datensatzverwaltung der Domäne an Office 365 delegiert wurde. Andernfalls ist der Wert „true“. Lässt keine Nullwerte zu. |
-|isDefault|Boolescher Wert| „True“, wenn dies die Standarddomäne ist, die für die Benutzererstellung verwendet wird. Es gibt nur eine Standarddomäne pro Unternehmen. Lässt keine Nullwerte zu. |
-|isInitial|Boolean| „True“, wenn dies die erste Domäne ist, die von Microsoft Online Services (companyname.onmicrosoft.com) erstellt wird. Es gibt nur eine anfängliche Domäne pro Unternehmen. Lässt keine Nullwerte zu. |
-|isRoot|Boolean| „True“, wenn die Domäne eine überprüfte Stammdomäne ist. Andernfalls „false“, wenn die Domäne eine Unterdomäne oder ungeprüft ist. Lässt keine Nullwerte zu. |
-|isVerified|Boolean| „True“, wenn die Domänenbesitzüberprüfung für die Domäne abgeschlossen ist. Lässt keine Nullwerte zu. |
-|supportedServices|String-Sammlung| Die der Domäne zugewiesenen Funktionen.<br><br>Kann 0, 1 oder mehrere der folgenden Werte umfassen: *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> Zu den Werten, die Sie mithilfe der Graph-API hinzufügen/entfernen können, gehören: *Email*, *OfficeCommunicationsOnline*, *Yammer*<br>Lässt keine Nullwerte zu.|
-|Status|[domainState](domainstate.md)| Status von asynchronen Vorgängen, die für die Domäne geplant sind. |
-
-## Beziehungen
-<a id="relationships" class="xliff"></a>
+<span data-ttu-id="d32c2-p114">Beziehungen zwischen einer Domäne und anderen Objekten im Verzeichnis, z. B. die Überprüfungsdatensätze und Dienstkonfigurationsdatensätze, die über Navigationseigenschaften verfügbar gemacht werden. Sie können diese Beziehungen lesen, indem Sie auf diese Navigationseigenschaften in Ihren Anforderungen abzielen.</span><span class="sxs-lookup"><span data-stu-id="d32c2-p114">Relationships between a domain and other objects in the directory such as its verification records and service configuration records are exposed through navigation properties. You can read these relationships by targeting these navigation properties in your requests.</span></span>
 
 Beziehungen zwischen einer Domäne und anderen Objekten im Verzeichnis, z. B. die Überprüfungsdatensätze und Dienstkonfigurationsdatensätze, die über Navigationseigenschaften verfügbar gemacht werden. Sie können diese Beziehungen lesen, indem Sie auf diese Navigationseigenschaften in Ihren Anforderungen abzielen.
 
-| Beziehung | Typ |Beschreibung|
+| <span data-ttu-id="d32c2-199">Beziehung</span><span class="sxs-lookup"><span data-stu-id="d32c2-199">Relationship</span></span> | <span data-ttu-id="d32c2-200">Typ</span><span class="sxs-lookup"><span data-stu-id="d32c2-200">Type</span></span> |<span data-ttu-id="d32c2-201">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d32c2-201">Description</span></span>|
 |:---------------|:--------|:----------|
-|domainNameReferences|[directoryObject](directoryobject.md)-Sammlung| Schreibgeschützt. Lässt Nullwerte zu.|
-|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md)-Sammlung| DNS-Einträge, die der Kunde der Zonendatei der Domäne hinzufügt, bevor die Domäne von Microsoft-Onlinediensten verwendet werden kann.<br>Schreibgeschützt. Lässt Nullwerte zu. |
-|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md)-Sammlung| DNS-Einträge, die der Kunde der DNS-Zonendatei der Domäne hinzufügt, bevor die Domänenbesitzüberprüfung mit Azure AD abgeschlossen werden kann.<br>Schreibgeschützt. Lässt Nullwerte zu.|
+|<span data-ttu-id="d32c2-202">domainNameReferences</span><span class="sxs-lookup"><span data-stu-id="d32c2-202">domainNameReferences</span></span>|<span data-ttu-id="d32c2-203">[directoryObject](directoryobject.md)-Sammlung</span><span class="sxs-lookup"><span data-stu-id="d32c2-203">[directoryObject](directoryobject.md) collection</span></span>| <span data-ttu-id="d32c2-204">Schreibgeschützt. Lässt Nullwerte zu.</span><span class="sxs-lookup"><span data-stu-id="d32c2-204">Read-only, Nullable</span></span>|
+|<span data-ttu-id="d32c2-205">serviceConfigurationRecords</span><span class="sxs-lookup"><span data-stu-id="d32c2-205">serviceConfigurationRecords</span></span>|<span data-ttu-id="d32c2-206">[domainDnsRecord](domaindnsrecord.md)-Sammlung</span><span class="sxs-lookup"><span data-stu-id="d32c2-206">[domainDnsRecord](domaindnsrecord.md) collection</span></span>| <span data-ttu-id="d32c2-207">DNS-Einträge, die der Kunde der Zonendatei der Domäne hinzufügt, bevor die Domäne von Microsoft-Onlinediensten verwendet werden kann.</span><span class="sxs-lookup"><span data-stu-id="d32c2-207">DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.</span></span><br><span data-ttu-id="d32c2-208">Schreibgeschützt. Lässt Nullwerte zu.</span><span class="sxs-lookup"><span data-stu-id="d32c2-208">Read-only, Nullable</span></span> |
+|<span data-ttu-id="d32c2-209">verificationDnsRecords</span><span class="sxs-lookup"><span data-stu-id="d32c2-209">verificationDnsRecords</span></span>|<span data-ttu-id="d32c2-210">[domainDnsRecord](domaindnsrecord.md)-Sammlung</span><span class="sxs-lookup"><span data-stu-id="d32c2-210">[domainDnsRecord](domaindnsrecord.md) collection</span></span>| <span data-ttu-id="d32c2-211">DNS-Einträge, die der Kunde der DNS-Zonendatei der Domäne hinzufügt, bevor die Domänenbesitzüberprüfung mit Azure AD abgeschlossen werden kann.</span><span class="sxs-lookup"><span data-stu-id="d32c2-211">DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.</span></span><br><span data-ttu-id="d32c2-212">Schreibgeschützt. Lässt Nullwerte zu.</span><span class="sxs-lookup"><span data-stu-id="d32c2-212">Read-only, Nullable</span></span>|
 
-## JSON-Darstellung
+## <span data-ttu-id="d32c2-213">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="d32c2-213">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="d32c2-214">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="d32c2-214">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

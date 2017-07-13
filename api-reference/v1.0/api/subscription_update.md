@@ -1,26 +1,13 @@
-# <a name="update-subscription"></a>Abonnement aktualisieren
+<span data-ttu-id="29826-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="29826-p102">Bearer token. Required.</span></span>  | Bearer {token}. Erforderlich. |
 
-Erneuert ein Abonnement durch Verlängern seiner Ablaufzeit.
-
-Abonnements für Ressourcen laufen an Tagen ab, die von den einzelnen Ressourcentypen vorgegeben werden.  Um keine Benachrichtigungen zu verpassen, sollten Abonnements weit vor ihrem Ablaufdatum verlängert werden.  Informationen zu den einzelnen Ablaufdaten finden Sie unter [Abonnement](../resources/subscription.md).
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist, abhängig von der Zielressource, erforderlich, um diese API ausführen: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All*, *Files.ReadWrite* oder *Files.ReadWrite.All*
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /subscriptions/{subscriptionId}
-```
-
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-
-## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [subscription](../resources/subscription.md)-Objekt im Antworttext zurückgegeben.
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="29826-117">Antwort</span><span class="sxs-lookup"><span data-stu-id="29826-117">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="29826-118">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [subscription](../resources/subscription.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="29826-118">If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.</span></span>
+## <span data-ttu-id="29826-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="29826-119">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="29826-120">Anforderung</span><span class="sxs-lookup"><span data-stu-id="29826-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="29826-121">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="29826-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_subscription"
@@ -34,8 +21,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="29826-122">Antwort</span><span class="sxs-lookup"><span data-stu-id="29826-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="29826-123">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="29826-123">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

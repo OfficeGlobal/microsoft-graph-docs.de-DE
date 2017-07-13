@@ -1,62 +1,11 @@
-# <a name="delete-open-extension"></a>Offene Erweiterung löschen
-
-Dient zum Löschen einer offenen Erweiterung ([openTypeExtension](../resources/openTypeExtension.md)-Objekt) aus der angegebenen Instanz einer Ressource. 
-
-## <a name="prerequisites"></a>Voraussetzungen
-
-Zur Ausführung dieser API ist eine der folgenden **Berechtigungen** erforderlich (je nachdem, aus welcher Ressource Sie die Erweiterung löschen):
-
-|**Unterstützte Ressource**|**Berechtigung**|**Unterstützte Ressource**|**Berechtigung** |
-|:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
-| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ |
-| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
-| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
-
- 
-## <a name="http-request"></a>HTTP-Anforderung
-In der Anforderung geben Sie die Ressourceninstanz an, spezifizieren in der Navigationseigenschaft **extensions** dieser Instanz die Erweiterung und wenden anschließend den Befehl `DELETE` auf diese Erweiterungsinstanz an.
-
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /devices/{Id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-DELETE /groups/{id}/extensions/{extensionId}
-DELETE /groups/{id}/events/{id}/extensions/{extensionId}
-DELETE /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
-DELETE /organization/{Id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
-```
-
->**Hinweis:** Die obige Syntax zeigt mehrere häufig verwendete Möglichkeiten zum Identifizieren einer Ressourceninstanz, um eine Erweiterung daraus zu löschen. Alle anderen Syntaxen, mit denen Sie diese Ressourceninstanzen identifizieren können, unterstützen das Löschen offener Erweiterungen daraus in einer ähnlichen Weise.
-
-## <a name="parameters"></a>Parameter
-|**Parameter**|**Typ**|**Beschreibung**|
-|:-----|:-----|:-----|
-|_URL parameters_|
-|id|string|Ein eindeutiger Bezeichner für eine Instanz in der entsprechenden Sammlung. Erforderlich.|
-|extensionId|string|Dies kann ein Erweiterungsname sein. Der Erweiterungsname ist ein eindeutiger Textbezeichner der Erweiterung oder ein vollqualifizierter Name, der den Erweiterungstyp und den eindeutigen Textbezeichner verkettet. Der vollqualifizierte Name wird beim Erstellen der Erweiterung in der `id`-Eigenschaft zurückgegeben. Erforderlich.|
-
-
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Wert |
-|:---------------|:----------|
-| Authorization | Bearer {token}. Erforderlich. |
-
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="771c7-p105">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="771c7-p105">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-Das erste Beispiel referenziert eine Erweiterung über ihren Namen und löscht die Erweiterung in der angegebenen Nachricht.
+## <span data-ttu-id="771c7-156">Beispiel</span><span class="sxs-lookup"><span data-stu-id="771c7-156">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="771c7-157">Anforderung</span><span class="sxs-lookup"><span data-stu-id="771c7-157">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="771c7-158">Das erste Beispiel referenziert eine Erweiterung über ihren Namen und löscht die Erweiterung in der angegebenen Nachricht.</span><span class="sxs-lookup"><span data-stu-id="771c7-158">The first example references an extension by its name and deletes the extension in the specified message.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_opentypeextension"
@@ -65,7 +14,7 @@ Das erste Beispiel referenziert eine Erweiterung über ihren Namen und löscht d
 DELETE https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Com.Contoso.Referral')
 ```
 
-Das zweite Beispiel löscht eine Erweiterung in dem angegebenen Gruppenereignis.
+<span data-ttu-id="771c7-159">Das zweite Beispiel löscht eine Erweiterung in dem angegebenen Gruppenereignis.</span><span class="sxs-lookup"><span data-stu-id="771c7-159">The second example deletes an extension in the specified group event.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -74,8 +23,9 @@ DELETE https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953c
 
  
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="771c7-160">Antwort</span><span class="sxs-lookup"><span data-stu-id="771c7-160">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="771c7-161">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="771c7-161">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false

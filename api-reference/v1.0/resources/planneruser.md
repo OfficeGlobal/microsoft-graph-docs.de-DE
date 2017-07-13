@@ -1,33 +1,8 @@
-<a id="planneruser-resource-type" class="xliff"></a>
-# plannerUser-Ressourcentyp
+<span data-ttu-id="4420b-p104">Schreibgeschützt. Lässt Nullwerte zu. Gibt die für den Benutzer freigegebenen [plannerPlans](plannerplan.md) zurück.</span><span class="sxs-lookup"><span data-stu-id="4420b-p104">Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) shared with the user.</span></span>| Schreibgeschützt. Lässt Nullwerte zu. Gibt die für den Benutzer freigegebenen [plannerPlans](plannerplan.md) zurück.|
 
-Die **plannerUser**-Ressource bietet einem [Benutzer](user.md) Zugriff auf Planner-Ressourcen. Sie enthält keine verwendbaren Eigenschaften.
-
-
-<a id="methods" class="xliff"></a>
-## Methoden
-
-| Methode           | Rückgabetyp    |Beschreibung|
-|:---------------|:--------|:----------|
-|[Pläne auflisten](../api/planneruser_list_plans.md) |[plannerPlan](plannerplan.md)-Sammlung| Dient zum Abrufen einer **plannerPlan**-Objektsammlung.|
-|[Aufgaben auflisten](../api/planneruser_list_tasks.md) |[plannerTask](plannertask.md)-Sammlung| Dient zum Abrufen einer **plannerTask**-Objektsammlung.|
-
-<a id="properties" class="xliff"></a>
-## Eigenschaften
-| Eigenschaft     | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|id|Zeichenfolge| Schreibgeschützt. Bezeichner der plannerUser-Ressource.|
-
-<a id="relationships" class="xliff"></a>
-## Beziehungen
-| Beziehung | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|plans|[plannerPlan](plannerplan.md)-Sammlung| Schreibgeschützt. Lässt Nullwerte zu. Gibt die dem Benutzer zugewiesenen [plannerTasks](plannertask.md) zurück.|
-|tasks|[plannerTask](plannertask.md)-Sammlung| Schreibgeschützt. Lässt Nullwerte zu. Gibt die für den Benutzer freigegebenen [plannerPlans](plannerplan.md) zurück.|
-
+## <span data-ttu-id="4420b-136">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="4420b-136">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## JSON-Darstellung
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="4420b-137">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="4420b-137">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

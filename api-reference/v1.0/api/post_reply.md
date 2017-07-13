@@ -1,38 +1,12 @@
-# <a name="post-reply"></a>post: reply
-
-Dient zum Antworten auf einen Beitrag und zum Hinzufügen eines neuen Beitrags zum angegebenen Thread in einer Gruppenunterhaltung. Sie können sowohl die übergeordnete Unterhaltung als auch den Thread in der Anforderung angeben, oder Sie können nur den übergeordneten Thread ohne die übergeordnete Unterhaltung angeben.
-
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
-
-*Group.Readwrite.All*
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /groups/{id}/threads/{id}/posts/{id}/reply
-POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
-
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Erforderlich.  |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
-
-| Parameter    | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|Beitrag|[post](../resources/post.md)|Der neue Beitrag, mit dem geantwortet wird.|
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="08866-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="08866-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="08866-125">Beispiel</span><span class="sxs-lookup"><span data-stu-id="08866-125">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="08866-126">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="08866-126">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="08866-127">Anforderung</span><span class="sxs-lookup"><span data-stu-id="08866-127">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="08866-128">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="08866-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "post_reply"
@@ -95,9 +69,11 @@ Content-length: 1131
 }
 ```
 
-##### <a name="response"></a>Antwort
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="08866-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="08866-129">Response</span></span>
+<a id="response" class="xliff"></a>
+##### <span data-ttu-id="08866-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="08866-130">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="08866-131">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="08866-131">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

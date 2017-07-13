@@ -1,30 +1,11 @@
-# <a name="delete-page"></a>Seite löschen
-
-Dient zum Löschen einer OneNote-Seite.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:   
-
-Notes.ReadWrite oder Notes.ReadWrite.All 
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /me/onenote/pages/{id}
-DELETE /users/{id | userPrincipalName}/onenote/pages/{id}
-DELETE /groups/{id}/oennote/pages/{id}
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="40be5-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="40be5-p102">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="40be5-118">Beispiel</span><span class="sxs-lookup"><span data-stu-id="40be5-118">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="40be5-119">Anforderung</span><span class="sxs-lookup"><span data-stu-id="40be5-119">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="40be5-120">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="40be5-120">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_page"
@@ -32,8 +13,9 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ```
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="40be5-121">Antwort</span><span class="sxs-lookup"><span data-stu-id="40be5-121">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="40be5-122">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="40be5-122">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,25 +1,19 @@
-# domainDnsUnavailableRecord-Ressourcentyp
-<a id="domaindnsunavailablerecord-resource-type" class="xliff"></a>
-
-Wenn Sie die Navigationseigenschaft **serviceConfigurationRecords** für eine [Domain](domain.md)-Entität abfragen, werden möglicherweise eine oder mehrere [DomainDnsCnameRecord](domaindnscnamerecord.md)-, [DomainDnsMxRecord](domaindnsmxrecord.md)-, [DomainDnsSrvRecord](domaindnssrvrecord.md)- und/oder [DomainDnsTxtRecord](domaindnstxtrecord.md)-Entitäten zurückgegeben. Diese Entitäten geben die DNS-Einträge an, die Sie der Zonendatei der Domäne hinzufügen müssen, bevor die Domäne von Microsoft-Onlinediensten verwendet werden kann. Wenn es nicht möglich ist, solche Entitäten zu generieren, wird stattdessen eine DomainDnsUnavailableRecord-Entität zurückgegeben. Geerbt von der Entität [DomainDnsRecord](domaindnsrecord.md).
-
-## Methoden
-<a id="methods" class="xliff"></a>
+<span data-ttu-id="7353c-p102">Direkte Abfragen dieser Ressource werden nicht unterstützt. Informationen zum Abfragen von Domänendiensteinträgen finden Sie im Thema [Domäne](domain.md).</span><span class="sxs-lookup"><span data-stu-id="7353c-p102">Direct queries to this resource are not supported. Please see the [domain](domain.md) topic for information on how to query for domain service records.</span></span>
 Direkte Abfragen dieser Ressource werden nicht unterstützt. Informationen zum Abfragen von Domänendiensteinträgen finden Sie im Thema [Domäne](domain.md).
 
-## Eigenschaften
+## <span data-ttu-id="7353c-109">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="7353c-109">Properties</span></span>
 <a id="properties" class="xliff"></a>
-| Eigenschaft     | Typ   |Beschreibung|
+| <span data-ttu-id="7353c-110">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="7353c-110">Property</span></span>     | <span data-ttu-id="7353c-111">Typ</span><span class="sxs-lookup"><span data-stu-id="7353c-111">Type</span></span>   |<span data-ttu-id="7353c-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7353c-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|description|String|Gibt den Grund an, warum die **DomainDnsUnavailableRecord**-Entität zurückgegeben wird. |
+|<span data-ttu-id="7353c-113">description</span><span class="sxs-lookup"><span data-stu-id="7353c-113">description</span></span>|<span data-ttu-id="7353c-114">String</span><span class="sxs-lookup"><span data-stu-id="7353c-114">String</span></span>|<span data-ttu-id="7353c-115">Gibt den Grund an, warum die **DomainDnsUnavailableRecord**-Entität zurückgegeben wird.</span><span class="sxs-lookup"><span data-stu-id="7353c-115">Provides the reason why the **DomainDnsUnavailableRecord** entity is returned.</span></span> |
 
-## Beziehungen
+## <span data-ttu-id="7353c-116">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="7353c-116">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-Keine
+<span data-ttu-id="7353c-117">Keine</span><span class="sxs-lookup"><span data-stu-id="7353c-117">None</span></span>
 
-## JSON-Darstellung
+## <span data-ttu-id="7353c-118">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="7353c-118">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="7353c-119">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="7353c-119">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

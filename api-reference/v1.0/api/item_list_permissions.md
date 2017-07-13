@@ -1,62 +1,12 @@
-# <a name="list-permissions-on-a-driveitem"></a>Auflisten von Berechtigungen für DriveItem
-
-Listen Sie geltende Berechtigungen für ein [DriveItem](../resources/driveitem.md)-Objekt auf.
-
-Die **permissions**-Beziehungen eines DriveItem-Elements können nicht im Rahmen eines Aufrufs von [get DriveItem](item_get.md) oder einer Sammlung von DriveItems erweitert werden. Sie müssen direkt auf die permissions-Eigenschaft zugreifen.
-
-## <a name="access-to-permissions"></a>Zugriff auf Berechtigungen
-
-Die Berechtigungssammlung umfasst potenziell vertrauliche Informationen und ist möglicherweise nicht für alle Aufrufer verfügbar.
-
-* Für den Besitzer des Elements werden alle Berechtigungen zurückgegeben. Dies umfasst Mitbesitzer.
-* Für Aufrufer, die keine Besitzer sind, werden nur die Berechtigungen zurückgegeben, die für den Aufrufer gelten.
-* Berechtigungseigenschaften, die Geheimnisse enthalten (z. B. `shareId` und `webUrl`), werden nur für Aufrufer zurückgegeben, die Permission-Elemente erstellen können.
-
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
-
-* Files.Read
-* Files.ReadWrite
-* Files.Read.All
-* Files.ReadWrite.All
-* Sites.Read.All
-* Sites.ReadWrite.All
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/drive/items/{item-id}/permissions
-GET /me/drive/root:/{path}:/permissions
-GET /drives/{drive-id}/items/{item-id}/permissions
-GET /groups/{group-id}/drive/items/{item-id}/permissions
-```
-
-## <a name="request-headers"></a>Anforderungsheader
-
-| Name          | Typ   | Beschreibung                                                                                                                                     |
-|:--------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | string | Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag mit dem aktuellen eTag in dem Element übereinstimmt, wird die Antwort `HTTP 304 Not Modified` zurückgegeben. |
-
-
-## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-
-## <a name="response"></a>Antwort
-Bei Erfolg gibt diese Methode den Antwortcode `200 OK` und eine Sammlung von [Permission](../resources/permission.md)-Ressourcen im Antworttext zurück.
-
-Geltende Berechtigungen eines Elements können aus zwei Quellen stammen:
-
-* Berechtigungen, die direkt für das Element selbst gelten
-* Berechtigungen, die von Vorgängerelementen geerbt werden
+<span data-ttu-id="3f8d1-p103">Aufrufer können prüfen, ob die Berechtigung geerbt wurde, indem sie die **inheritedFrom**-Eigenschaft prüfen. Diese Eigenschaft ist eine [**itemReference**](../resources/itemreference.md)-Ressource, die auf das Vorgängerelement verweist, von dem die Berechtigung vererbt wurde.</span><span class="sxs-lookup"><span data-stu-id="3f8d1-p103">Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property. This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.</span></span>
 
 Aufrufer können prüfen, ob die Berechtigung geerbt wurde, indem sie die **inheritedFrom**-Eigenschaft prüfen. Diese Eigenschaft ist eine [**itemReference**](../resources/itemreference.md)-Ressource, die auf das Vorgängerelement verweist, von dem die Berechtigung vererbt wurde.
 
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="3f8d1-138">Beispiel</span><span class="sxs-lookup"><span data-stu-id="3f8d1-138">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="3f8d1-139">Anforderung</span><span class="sxs-lookup"><span data-stu-id="3f8d1-139">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="3f8d1-140">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="3f8d1-140">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_permissions"
@@ -66,8 +16,9 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/permissions
 ```
 
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="3f8d1-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="3f8d1-141">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="3f8d1-142">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="3f8d1-142">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -118,7 +69,7 @@ Content-Type: application/json
 }
 ```
 
-Weitere Informationen zum Abrufen einer einzelnen Berechtigungsressource finden Sie unter [Abrufen von Berechtigungen](permission_get.md).
+<span data-ttu-id="3f8d1-143">Weitere Informationen zum Abrufen einer einzelnen Berechtigungsressource finden Sie unter [Abrufen von Berechtigungen](permission_get.md).</span><span class="sxs-lookup"><span data-stu-id="3f8d1-143">See [Get permission](permission_get.md) for more details on retrieving a single permission resource.</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

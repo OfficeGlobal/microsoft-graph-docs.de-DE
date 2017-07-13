@@ -1,82 +1,21 @@
-# <a name="accessing-shared-driveitems"></a>Zugriff auf freigegebene DriveItems
-
-Verwenden Sie für den Zugriff auf ein freigegebenes [DriveItem](../resources/driveitem.md)-Element oder eine Sammlung freigegebener Elemente eine **shareId** oder Freigabe-URL.
-
-Um eine Freigabe-URL mit dieser API zu verwenden, muss die App [die URL in ein Freigabetoken konvertieren](#transform-a-sharing-url).
-
-## <a name="prerequisites"></a>Voraussetzungen
-
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
-
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Shares.ReadWrite.All
-
-## <a name="http-request"></a>HTTP-Anforderung
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /shares/{sharingIdOrUrl}
-```
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-
-## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine [sharedDriveItem](../resources/shareddriveitem.md)-Ressource im Antworttext zurückgegeben.
-
-## <a name="example"></a>Beispiel
-
-##### <a name="request"></a>Anforderung
-
-Im Folgenden finden Sie ein Beispiel für die Anforderung zum Abrufen eines freigegebenen Elements:
-
-<!-- {
-  "blockType": "request",
-  "name": "get_shares_by_url"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}
-```
-##### <a name="response"></a>Antwort
-
-Nachfolgend sehen Sie ein Beispiel der Antwort.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.sharedDriveItem"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "id": "B64397C8-07AE-43E4-920E-32BFB4331A5B",
-  "name": "contoso project.docx",
-  "owner": {
-    "user": {
-      "id": "98E88F1C-F8DC-47CC-A406-C090248B30E5",
-      "displayName": "Ryan Gregg"
-    }
-  }
-}
-```
-
-## <a name="access-the-shared-item-directly"></a>Direkter Zugriff auf das freigegebene Element
+<span data-ttu-id="f3d3a-p101">Obwohl das [**SharedDriveItem**](../resources/shareddriveitem.md)-Element nützliche Informationen enthält, möchten die meisten Apps direkt auf das freigegebene [DriveItem](../resources/driveitem.md)-Element zugreifen. Die **SharedDriveItem**-Ressource umfasst **root**- und **items**-Beziehungen, die innerhalb des Bereichs des freigegebenen Elements auf die Inhalte zugreifen können.</span><span class="sxs-lookup"><span data-stu-id="f3d3a-p101">While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md). The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.</span></span>
 
 Obwohl das [**SharedDriveItem**](../resources/shareddriveitem.md)-Element nützliche Informationen enthält, möchten die meisten Apps direkt auf das freigegebene [DriveItem](../resources/driveitem.md)-Element zugreifen. Die **SharedDriveItem**-Ressource umfasst **root**- und **items**-Beziehungen, die innerhalb des Bereichs des freigegebenen Elements auf die Inhalte zugreifen können.
 
-### <a name="example-single-file"></a>Beispiel (einzelne Datei)
+### <span data-ttu-id="f3d3a-122">Beispiel (einzelne Datei)</span><span class="sxs-lookup"><span data-stu-id="f3d3a-122">Example (single file)</span></span>
+<a id="example-single-file" class="xliff"></a>
 
-##### <a name="request"></a>Anforderung
+##### <span data-ttu-id="f3d3a-123">Anforderung</span><span class="sxs-lookup"><span data-stu-id="f3d3a-123">Request</span></span>
+<a id="request" class="xliff"></a>
 
-Durch das Anfordern der **root**-Beziehung wird das **DriveItem**-Element zurückgegeben, das freigegeben wurde.
+<span data-ttu-id="f3d3a-124">Durch das Anfordern der **root**-Beziehung wird das **DriveItem**-Element zurückgegeben, das freigegeben wurde.</span><span class="sxs-lookup"><span data-stu-id="f3d3a-124">By requesting the **root** relationship, the **DriveItem** that was shared will be returned.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root
 ```
 
-##### <a name="response"></a>Antwort
+##### <span data-ttu-id="f3d3a-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="f3d3a-125">Response</span></span>
+<a id="response" class="xliff"></a>
 
 ```http
 HTTP/1.1 200 OK
@@ -91,17 +30,20 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-shared-folder"></a>Beispiel (freigegebener Ordner)
+### <span data-ttu-id="f3d3a-126">Beispiel (freigegebener Ordner)</span><span class="sxs-lookup"><span data-stu-id="f3d3a-126">Example (shared folder)</span></span>
+<a id="example-shared-folder" class="xliff"></a>
 
-##### <a name="request"></a>Anforderung
+##### <span data-ttu-id="f3d3a-127">Anforderung</span><span class="sxs-lookup"><span data-stu-id="f3d3a-127">Request</span></span>
+<a id="request" class="xliff"></a>
 
-Durch das Anfordern der **root**-Beziehung und das Erweitern der **children**-Sammlung wird das freigegebene **DriveItem**-Element mit Dateien im freigegebenen Ordner zurückgegeben.
+<span data-ttu-id="f3d3a-128">Durch das Anfordern der **root**-Beziehung und das Erweitern der **children**-Sammlung wird das freigegebene **DriveItem**-Element mit Dateien im freigegebenen Ordner zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="f3d3a-128">By requesting the **root** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root?$expand=children
 ```
 
-##### <a name="response"></a>Antwort
+##### <span data-ttu-id="f3d3a-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="f3d3a-129">Response</span></span>
+<a id="response" class="xliff"></a>
 
 ```http
 HTTP/1.1 200 OK
@@ -130,19 +72,20 @@ Content-Type: application/json
 }
 ```
 
-## <a name="transform-a-sharing-url"></a>Konvertieren einer Freigabe-URL
+## <span data-ttu-id="f3d3a-130">Konvertieren einer Freigabe-URL</span><span class="sxs-lookup"><span data-stu-id="f3d3a-130">Transform a sharing URL</span></span>
+<a id="transform-a-sharing-url" class="xliff"></a>
 
-Um auf eine Freigabe-URL unter Verwendung der **shares**-API zuzugreifen, muss die URL in ein Freigabetoken umgewandelt werden.
+<span data-ttu-id="f3d3a-131">Um auf eine Freigabe-URL unter Verwendung der **shares**-API zuzugreifen, muss die URL in ein Freigabetoken umgewandelt werden.</span><span class="sxs-lookup"><span data-stu-id="f3d3a-131">To access a sharing URL using the **shares** API, the URL needs to be transformed into a sharing token.</span></span>
 
-So wandeln Sie eine URL in ein Freigabetoken um:
+<span data-ttu-id="f3d3a-132">So wandeln Sie eine URL in ein Freigabetoken um:</span><span class="sxs-lookup"><span data-stu-id="f3d3a-132">To transform a URL into a sharing token:</span></span>
 
-1. Codieren Sie die URL-Freigabe mithilfe von Base64.
-2. Konvertieren Sie die Base64-codierten Daten in das [base64url-Format ohne Füllzeichen](https://en.wikipedia.org/wiki/Base64), indem Sie folgende Aktionen durchführen:
-  1. Kürzen Sie nachgestellte `=`-Zeichen in der Zeichenfolge
-  2. Ersetzen Sie unsichere URL-Zeichen mit einem entsprechenden Zeichen; ersetzen Sie `/` mit `_` und `+` mit `-`.
-3. Fügen Sie `u!` an den Anfang der Zeichenfolge an.
+1. <span data-ttu-id="f3d3a-133">Codieren Sie die URL-Freigabe mithilfe von Base64.</span><span class="sxs-lookup"><span data-stu-id="f3d3a-133">Base64 encode the sharing URL.</span></span>
+2. <span data-ttu-id="f3d3a-134">Konvertieren Sie die Base64-codierten Daten in das [base64url-Format ohne Füllzeichen](https://en.wikipedia.org/wiki/Base64), indem Sie folgende Aktionen durchführen:</span><span class="sxs-lookup"><span data-stu-id="f3d3a-134">Convert the base64 encoded data to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by:</span></span>
+  1. <span data-ttu-id="f3d3a-135">Kürzen Sie nachgestellte `=`-Zeichen in der Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="f3d3a-135">Trim trailing `=` characters from the string</span></span>
+  2. <span data-ttu-id="f3d3a-136">Ersetzen Sie unsichere URL-Zeichen mit einem entsprechenden Zeichen; ersetzen Sie `/` mit `_` und `+` mit `-`.</span><span class="sxs-lookup"><span data-stu-id="f3d3a-136">Replace unsafe URL characters with an equivalent character; replace `/` with `_` and `+` with `-`.</span></span>
+3. <span data-ttu-id="f3d3a-137">Fügen Sie `u!` an den Anfang der Zeichenfolge an.</span><span class="sxs-lookup"><span data-stu-id="f3d3a-137">Append `u!` to the beginning of the string.</span></span>
 
-Mit der folgenden C#-Methode wird beispielsweise eine Eingabezeichenfolge in eine Freigabetoken konvertiert:
+<span data-ttu-id="f3d3a-138">Mit der folgenden C#-Methode wird beispielsweise eine Eingabezeichenfolge in eine Freigabetoken konvertiert:</span><span class="sxs-lookup"><span data-stu-id="f3d3a-138">For example, the following C# method transforms an input string into a sharing token:</span></span>
 
 ```csharp
 string UrlToSharingToken(string inputUrl) {

@@ -1,39 +1,12 @@
-# <a name="range-merge"></a>Range: merge
-
-Führt die Zellen des Bereichs in einen Bereich im Arbeitsblatt zusammen.
-## <a name="prerequisites"></a>Voraussetzungen
-Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
-
-    * Files.ReadWrite
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/names(<name>)/range/merge
-POST /workbook/worksheets/{id|name}/range(<address>)/merge
-POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
-
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Beschreibung|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
-
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
-
-| Parameter    | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|across|boolean|Optional. Mit „true“ werden Zellen in allen Zeilen des angegebenen Bereichs als einzelne zusammengeführte Zellen zusammengeführt. Der Standardwert lautet „false“.|
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="f119e-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="f119e-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="f119e-126">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f119e-126">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="f119e-127">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="f119e-127">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="f119e-128">Anforderung</span><span class="sxs-lookup"><span data-stu-id="f119e-128">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="f119e-129">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="f119e-129">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_merge"
@@ -48,8 +21,9 @@ Content-length: 20
 }
 ```
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. 
+##### <span data-ttu-id="f119e-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="f119e-130">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="f119e-131">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="f119e-131">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

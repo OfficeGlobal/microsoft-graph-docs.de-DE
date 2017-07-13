@@ -1,43 +1,13 @@
-# <a name="delete-permission"></a>Berechtigung löschen
-
-Entfernt den Zugriffs auf ein [DriveItem](../resources/driveitem.md).
-
-Nur die Berechtigungen, die nicht geerbt werden, können gelöscht werden. Die **inheritedFrom**-Eigenschaft muss `null` sein.
-
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
-
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Shares.ReadWrite.All
-
-## <a name="http-request"></a>HTTP-Anforderung
-
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /me/drive/items/{item-id}/permissions/{perm-id}
-DELETE /me/drive/root:/{path}:/permissions/{perm-id}
-DELETE /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
-DELETE /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
-```
-
-## <a name="request-headers"></a>Anforderungsheader
-
-| Name          | Typ   | Beschreibung                                                                                                                                                                                       |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | string | Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag (oder cTag) nicht mit dem aktuellen Tag des Elements übereinstimmt, wird die Antwort `412 Precondition Failed` zurückgegeben, und das Element wird nicht gelöscht. |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="c8fdf-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c8fdf-p102">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
+## <span data-ttu-id="c8fdf-123">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c8fdf-123">Example</span></span>
+<a id="example" class="xliff"></a>
 
-##### <a name="request"></a>Anforderung
+##### <span data-ttu-id="c8fdf-124">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c8fdf-124">Request</span></span>
+<a id="request" class="xliff"></a>
 
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+<span data-ttu-id="c8fdf-125">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="c8fdf-125">Here is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -47,9 +17,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 DELETE https://graph.microsoft.com/v1.0/me/drive/root/items/{item-id}/permissions/{perm-id}
 ```
 
-##### <a name="response"></a>Antwort
+##### <span data-ttu-id="c8fdf-126">Antwort</span><span class="sxs-lookup"><span data-stu-id="c8fdf-126">Response</span></span>
+<a id="response" class="xliff"></a>
 
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+<span data-ttu-id="c8fdf-127">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c8fdf-127">Here is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -59,9 +30,10 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 HTTP/1.1 204 No Content
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <span data-ttu-id="c8fdf-128">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="c8fdf-128">Remarks</span></span>
+<a id="remarks" class="xliff"></a>
 
-* [Laufwerke](../resources/drive.md) mit dem**driveType** `personal` (OneDrive Personal) können keine Berechtigungen am Stamm-DriveItem erstellen oder ändern. 
+* <span data-ttu-id="c8fdf-129">[Laufwerke](../resources/drive.md) mit dem**driveType** `personal` (OneDrive Personal) können keine Berechtigungen am Stamm-DriveItem erstellen oder ändern.</span><span class="sxs-lookup"><span data-stu-id="c8fdf-129">[Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) cannot create or modify permissions on the root DriveItem.</span></span> 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

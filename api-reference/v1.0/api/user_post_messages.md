@@ -1,60 +1,4 @@
-# <a name="create-message"></a>Nachricht erstellen
-
-Verwenden Sie diese API zum Erstellen eines Entwurfs einer neuen Nachricht. Entwürfe können in einem beliebigen Ordner erstellt und optional vor dem Senden aktualisiert werden. Verwenden Sie die Verknüpfung „/messages“, um den Entwurf im Ordner „Entwürfe“ zu speichern.
-
-Beim Erstellen des Entwurfs im selben **POST**-Aufruf können Sie eine [Anlage](../resources/attachment.md) hinzufügen.
-
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Mail.ReadWrite*
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/messages
-POST /users/{id|userPrincipalName}/messages
-POST /me/mailFolders/{id}/messages
-POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Erforderlich.  |
-| Content-Type  | application/json  |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext eine JSON-Darstellung des [message](../resources/message.md)-Objekts an.
-
-Da die **message**-Ressource [Erweiterungen](../../../concepts/extensibility_overview.md) unterstützt, können Sie den `POST`-Vorgang verwenden und während der Erstellung der Nachricht benutzerdefinierte Eigenschaften mit Ihren eigenen Daten hinzufügen.
-
-
-## <a name="response"></a>Antwort
-Bei erfolgreicher Ausführung der Methode werden der Antwortcode `201, Created` und das [message](../resources/message.md)-Objekt im Antworttext zurückgegeben.
-
-## <a name="example"></a>Beispiel
-##### <a name="request-1"></a>Anforderung 1
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
-<!-- {
-  "blockType": "request",
-  "name": "create_message_from_user"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/messages
-Content-type: application/json
-Content-length: 248
-
-{
-  "receivedDateTime": "datetime-value",
-  "sentDateTime": "datetime-value",
-  "hasAttachments": true,
-  "subject": "subject-value",
-  "body": {
-    "contentType": "",
-    "content": "content-value"
-  },
-  "bodyPreview": "bodyPreview-value"
-}
-```
-Geben Sie im Anforderungstext eine JSON-Darstellung des [message](../resources/message.md)-Objekts an.
-##### <a name="response-1"></a>Antwort 1
+<span data-ttu-id="524cd-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="524cd-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
@@ -79,10 +23,11 @@ Content-length: 248
 }
 ```
 
-## <a name="see-also"></a>Weitere Artikel
+## <span data-ttu-id="524cd-130">Weitere Artikel</span><span class="sxs-lookup"><span data-stu-id="524cd-130">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](../../../concepts/extensibility_overview.md)
-- [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Preview)](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="524cd-131">Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen</span><span class="sxs-lookup"><span data-stu-id="524cd-131">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="524cd-132">Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Preview)</span><span class="sxs-lookup"><span data-stu-id="524cd-132">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->

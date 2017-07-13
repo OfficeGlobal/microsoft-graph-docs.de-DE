@@ -1,23 +1,9 @@
-# plannerChecklistItem-Ressourcentyp
-<a id="plannerchecklistitem-resource-type" class="xliff"></a>
+<span data-ttu-id="6bd18-p104">Wird verwendet, um die relative Reihenfolge der Elemente in der Checkliste festzulegen. Das Format ist wie [hier](planner_order_hint_format.md) beschrieben definiert.</span><span class="sxs-lookup"><span data-stu-id="6bd18-p104">Used to set the relative order of items in the checklist. The format is defined as outlined [here](planner_order_hint_format.md).</span></span>|Wird verwendet, um die relative Reihenfolge der Elemente in der Checkliste festzulegen. Das Format ist wie [hier](planner_order_hint_format.md) beschrieben definiert.|
+|<span data-ttu-id="6bd18-125">title</span><span class="sxs-lookup"><span data-stu-id="6bd18-125">title</span></span>|<span data-ttu-id="6bd18-126">String</span><span class="sxs-lookup"><span data-stu-id="6bd18-126">String</span></span>|<span data-ttu-id="6bd18-127">Titel des Checklistenelements.</span><span class="sxs-lookup"><span data-stu-id="6bd18-127">Title of the checklist item</span></span>|
 
-
-Die **plannerChecklistItem**-Ressource stellt ein Element in der Checkliste einer Aufgabe dar. Die Checkliste für eine Aufgabe wird durch das [checklistItems-Objekt](plannerchecklistitems.md) dargestellt.
-
-
-## Eigenschaften
-<a id="properties" class="xliff"></a>
-| Eigenschaft     | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|isChecked|Boolean|Der Wert ist `true`, wenn das Element geprüft wurde, andernfalls `false`.|
-|lastModifiedBy|[identitySet](identityset.md)| Schreibgeschützt. Benutzer-ID, von der das Objekt zuletzt geändert wurde.|
-|lastModifiedDateTime|DateTimeOffset|Schreibgeschützt. Datum und Uhrzeit der letzten Änderung des Objekts. Der Zeitstempeltyp stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|orderHint|String|Wird verwendet, um die relative Reihenfolge der Elemente in der Checkliste festzulegen. Das Format ist wie [hier](planner_order_hint_format.md) beschrieben definiert.|
-|title|String|Titel des Checklistenelements.|
-
-## JSON-Darstellung
+## <span data-ttu-id="6bd18-128">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="6bd18-128">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="6bd18-129">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="6bd18-129">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

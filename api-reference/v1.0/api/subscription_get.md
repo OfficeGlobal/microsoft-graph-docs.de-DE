@@ -1,28 +1,16 @@
-# <a name="get-subscription"></a>Abonnement abrufen
+<span data-ttu-id="606b5-p101">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="606b5-p101">Bearer token. Required.</span></span>  | Bearer {token}. Erforderlich. |
 
-Dient zum Abrufen der Eigenschaften und der Beziehungen eines Abonnements.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist, abhängig von der Zielressource, erforderlich, um diese API ausführen: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All*, *Files.ReadWrite* oder *Files.ReadWrite.All*
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-GET /subscriptions/{subscriptionId}
-```
-## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
-
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [subscription](../resources/subscription.md)-Objekt im Antworttext zurückgegeben.
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="606b5-116">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="606b5-116">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="606b5-117">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="606b5-117">Do not supply a request body for this method.</span></span>
+## <span data-ttu-id="606b5-118">Antwort</span><span class="sxs-lookup"><span data-stu-id="606b5-118">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="606b5-119">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [subscription](../resources/subscription.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="606b5-119">If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.</span></span>
+## <span data-ttu-id="606b5-120">Beispiel</span><span class="sxs-lookup"><span data-stu-id="606b5-120">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="606b5-121">Anforderung</span><span class="sxs-lookup"><span data-stu-id="606b5-121">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="606b5-122">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="606b5-122">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_subscription"
@@ -30,8 +18,9 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 GET https://graph.microsoft.com/v1.0/subscriptions/{subscriptionId}
 ```
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="606b5-123">Antwort</span><span class="sxs-lookup"><span data-stu-id="606b5-123">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="606b5-124">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="606b5-124">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

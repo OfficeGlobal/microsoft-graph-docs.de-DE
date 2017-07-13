@@ -1,43 +1,12 @@
-# <a name="event-dismissreminder"></a>event: dismissReminder
-
-Dient zum Ausblenden einer Erinnerung, die getriggert wurde.
-
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Calendars.ReadWrite*
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/events/{id}/dismissReminder
-POST /users/{id | userPrincipalName}/events/{id}/dismissReminder
-POST /groups/{id}/events/{id}/dismissReminder
-
-POST /me/calendar/events/{id}/dismissReminder
-POST /users/{id | userPrincipalName}/calendar/events/{id}/dismissReminder
-POST /groups/{id}/calendar/events/{id}/dismissReminder
-
-POST /me/calendars/{id}/events/{id}/dismissReminder
-POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/dismissReminder
-
-POST /me/calendargroup/calendars/{id}/events/{id}/dismissReminder
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/dismissReminder
-
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-
-## <a name="request-body"></a>Anforderungstext
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="8afa1-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="8afa1-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="8afa1-118">Beispiel</span><span class="sxs-lookup"><span data-stu-id="8afa1-118">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="8afa1-119">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="8afa1-119">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="8afa1-120">Anforderung</span><span class="sxs-lookup"><span data-stu-id="8afa1-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="8afa1-121">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="8afa1-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "event_dismissreminder"
@@ -46,9 +15,11 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 ```
 
-##### <a name="response"></a>Antwort
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="8afa1-122">Antwort</span><span class="sxs-lookup"><span data-stu-id="8afa1-122">Response</span></span>
+<a id="response" class="xliff"></a>
+##### <span data-ttu-id="8afa1-123">Antwort</span><span class="sxs-lookup"><span data-stu-id="8afa1-123">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="8afa1-124">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="8afa1-124">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

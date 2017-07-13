@@ -1,49 +1,15 @@
-# <a name="update-group"></a>Gruppe aktualisieren
-
-Aktualisieren Sie die Eigenschaften eines Gruppenobjekts.
-
-## <a name="prerequisites"></a>Voraussetzungen
-Der folgende **Bereich** ist erforderlich, um diese API auszuführen: *Group.ReadWrite.All*
-
-## <a name="http-request"></a>HTTP-Anforderung
-
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /groups/{id}
-```
-
-## <a name="request-headers"></a>Anforderungsheader
-
-| Name       | Typ | Beschreibung|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-
-## <a name="request-body"></a>Anforderungstext
-
-Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.
-
-| Eigenschaft     | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|autoSubscribeNewMembers|Boolean|Der Standardwert ist **false**. Zeigt an, ob neu zur Gruppe hinzugefügte Mitglieder automatisch E-Mail-Benachrichtigungen erhalten.|
-|description|String|Eine optionale Beschreibung für die Gruppe. |
-|displayName|String|Der Anzeigename der Gruppe. Diese Eigenschaft ist beim Erstellen einer Gruppe erforderlich und kann bei Updates nicht deaktiviert werden. Unterstützt $Filter und $orderby.|
-|groupTypes|String collection|Gibt den Typ der zu erstellenden Gruppe an. Mögliche Werte sind **Unified** zum Erstellen einer Office 365-Gruppe oder **DynamicMembership** für dynamische Gruppen.  Legen Sie für alle anderen Gruppentypen wie Gruppen mit aktivierter Sicherheit und E-Mail-aktivierte Sicherheitsgruppen diese Eigenschaft nicht fest.|
-|mailEnabled|Boolean|Gibt an, ob es sich bei der Gruppe um eine E-Mail-fähige Gruppe handelt. Wenn die **securityEnabled**-Eigenschaft auch auf **true** festgelegt ist, handelt es sich bei der Gruppe um eine E-Mail-fähige Sicherheitsgruppe; andernfalls handelt es sich bei der Gruppe um eine Microsoft Exchange-Verteilergruppe.|
-|mailNickname|String|Der E-Mail-Alias für die Gruppe. Diese Eigenschaft muss beim Erstellen einer Gruppe angegeben werden. Unterstützt $filter.|
-|securityEnabled|Boolean|Gibt an, ob es sich bei der Gruppe um eine Sicherheitsgruppe handelt. Wenn die **mailEnabled**-Eigenschaft auch auf „true“ festgelegt ist, handelt es sich bei der Gruppe um eine E-Mail-aktivierte Sicherheitsgruppe; andernfalls ist die Gruppe eine Sicherheitsgruppe. Muss für Office 365-Gruppen auf **false** festgelegt sein. Unterstützt $filter.|
-|visibility|Boolean|Gibt die Sichtbarkeit einer Office 365-Gruppe an. Die folgenden Werte sind möglich: **Private**, **Public** oder leer (als **öffentlich** interpretiert).|
-
-**Hinweis**
-
-- Sie können **autoSubscribeNewMembers** aktualisieren, indem Sie diese Eigenschaft in ihrer eigenen PATCH-Anforderung angeben, ohne die anderen Eigenschaften in der Tabelle oben einzuschließen.
+<span data-ttu-id="71a64-p110">Nur eine Teilmenge der Gruppen-API, die zur Hauptgruppenadministration und -verwaltung gehören, unterstützen Anwendungs- und delegierte Berechtigungen. Alle anderen Mitglieder der Gruppen-API, einschließlich des Aktualisierens von **autoSubscribeNewMembers**, unterstützen nur delegierte Berechtigungen. Beispiele finden Sie unter [Bekannte Probleme](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes).</span><span class="sxs-lookup"><span data-stu-id="71a64-p110">Only a subset of the group API pertaining to core group administration and management support application and delegated permissions. All other members of the group API, including updating  **autoSubscribeNewMembers**, support only delegated permissions. See [known issues](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes) for examples.</span></span>
 - Nur eine Teilmenge der Gruppen-API, die zur Hauptgruppenadministration und -verwaltung gehören, unterstützen Anwendungs- und delegierte Berechtigungen. Alle anderen Mitglieder der Gruppen-API, einschließlich des Aktualisierens von **autoSubscribeNewMembers**, unterstützen nur delegierte Berechtigungen. Beispiele finden Sie unter [Bekannte Probleme](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes).
 
-## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.
+## <span data-ttu-id="71a64-162">Antwort</span><span class="sxs-lookup"><span data-stu-id="71a64-162">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="71a64-163">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="71a64-163">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a>Beispiel
+## <span data-ttu-id="71a64-164">Beispiel</span><span class="sxs-lookup"><span data-stu-id="71a64-164">Example</span></span>
+<a id="example" class="xliff"></a>
 
-##### <a name="request"></a>Anforderung
+##### <span data-ttu-id="71a64-165">Anforderung</span><span class="sxs-lookup"><span data-stu-id="71a64-165">Request</span></span>
+<a id="request" class="xliff"></a>
 
 <!-- {
   "blockType": "request",
@@ -66,7 +32,8 @@ Content-length: 211
 }
 ```
 
-##### <a name="response"></a>Antwort
+##### <span data-ttu-id="71a64-166">Antwort</span><span class="sxs-lookup"><span data-stu-id="71a64-166">Response</span></span>
+<a id="response" class="xliff"></a>
 
 <!-- {
   "blockType": "response",

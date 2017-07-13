@@ -1,20 +1,9 @@
-<a id="domainstate-resource-type" class="xliff"></a>
-# domainState-Ressourcentyp
+<span data-ttu-id="06a8a-p102">Typ des asynchronen Vorgangs. Mögliche Werte sind *ForceDelete* und *Verification*</span><span class="sxs-lookup"><span data-stu-id="06a8a-p102">Type of asynchronous operation. The values can be *ForceDelete* or *Verification*</span></span> | Typ des asynchronen Vorgangs. Mögliche Werte sind *ForceDelete* und *Verification* |
+| <span data-ttu-id="06a8a-115">status</span><span class="sxs-lookup"><span data-stu-id="06a8a-115">status</span></span> | <span data-ttu-id="06a8a-116">String</span><span class="sxs-lookup"><span data-stu-id="06a8a-116">String</span></span> | <span data-ttu-id="06a8a-117">Der aktuellen Status des Vorgangs.</span><span class="sxs-lookup"><span data-stu-id="06a8a-117">Current status of the operation.</span></span> <br> <span data-ttu-id="06a8a-118">*Scheduled*: Der Vorgang wurde geplant, aber noch nicht gestartet.</span><span class="sxs-lookup"><span data-stu-id="06a8a-118">*Scheduled* - Operation has been scheduled but has not started.</span></span> <br> <span data-ttu-id="06a8a-119">*InProgress*: Der Vorgang wurde gestartet und wird ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="06a8a-119">*InProgress* - Task has started and is in progress.</span></span> <br> <span data-ttu-id="06a8a-120">*Failed*: Ein Fehler ist im Vorgang aufgetreten.</span><span class="sxs-lookup"><span data-stu-id="06a8a-120">*Failed* - Operation has failed.</span></span> |
 
-Stellt den Status asynchroner Vorgänge dar, die in einer Domäne geplant sind.
-
-<a id="properties" class="xliff"></a>
-## Eigenschaften
-
-| Eigenschaft   | Typ | Beschreibung |
-|:---------------|:--------|:----------|
-| lastActionDateTime | DateTimeOffset | Zeitstempel der letzten Aktivität. Der Wert wird aktualisiert, wenn ein Vorgang geplant, die asynchrone Aufgabe gestartet und der Vorgang abgeschlossen wird. |
-| Operation | String | Typ des asynchronen Vorgangs. Mögliche Werte sind *ForceDelete* und *Verification* |
-| status | String | Der aktuellen Status des Vorgangs. <br> *Scheduled*: Der Vorgang wurde geplant, aber noch nicht gestartet. <br> *InProgress*: Der Vorgang wurde gestartet und wird ausgeführt. <br> *Failed*: Ein Fehler ist im Vorgang aufgetreten. |
-
+## <span data-ttu-id="06a8a-121">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="06a8a-121">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## JSON-Darstellung
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="06a8a-122">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="06a8a-122">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

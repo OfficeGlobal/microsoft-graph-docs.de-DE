@@ -1,36 +1,11 @@
-# <a name="delete-photo"></a>Foto löschen
-
-Löscht ein Foto.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
-
-  * File.ReadWrite
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /users/{id | userPrincipalName}/photo
-DELETE /groups/{id}/photo
-DELETE /drive/root/createdByUser/photo
-
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:---------------|:--------|:----------|
-| if-match  | string  | Wenn dieser Anforderungsheader enthalten ist und das angegebene Etag (oder CTag) nicht mit dem aktuellen Etag des Elements übereinstimmt, wird die Antwort `412 Precondition Failed` zurückgegeben, und das Element wird nicht gelöscht.|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="90c9b-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="90c9b-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="90c9b-123">Beispiel</span><span class="sxs-lookup"><span data-stu-id="90c9b-123">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="90c9b-124">Anforderung</span><span class="sxs-lookup"><span data-stu-id="90c9b-124">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="90c9b-125">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="90c9b-125">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
 "name": "delete_photo"
@@ -38,8 +13,9 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 ```
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="90c9b-126">Antwort</span><span class="sxs-lookup"><span data-stu-id="90c9b-126">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="90c9b-127">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="90c9b-127">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false

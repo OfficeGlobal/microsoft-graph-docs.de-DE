@@ -1,39 +1,4 @@
-# <a name="get-schemaextension"></a>schemaExtension abrufen
-Dient zum Abrufen der Eigenschaften der angegebenen [schemaExtension](../resources/schemaextension.md)-Definition.
-
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Directory.Read.All* oder *Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-GET /schemaExtensions/{id}
-```
-## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
-
-## <a name="request-headers"></a>Anforderungsheader
-| Name      |Beschreibung|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
-| Content-Type   | application/json | 
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-
-## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [schemaExtension](../resources/schemaextension.md)-Objekt im Antworttext zurückgegeben.
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
-<!-- {
-  "blockType": "request",
-  "name": "get_schemaextension"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
-```
-##### <a name="response"></a>Antwort
+<span data-ttu-id="bc0be-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="bc0be-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
@@ -62,10 +27,11 @@ Content-length: 201
 }
 ```
 
-## <a name="see-also"></a>Weitere Artikel
+## <span data-ttu-id="bc0be-127">Weitere Artikel</span><span class="sxs-lookup"><span data-stu-id="bc0be-127">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](../../../concepts/extensibility_overview.md)
-- [Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen](../../../concepts/extensibility_schema_groups.md)
+- [<span data-ttu-id="bc0be-128">Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen</span><span class="sxs-lookup"><span data-stu-id="bc0be-128">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="bc0be-129">Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen</span><span class="sxs-lookup"><span data-stu-id="bc0be-129">Add custom data to groups using schema extensions</span></span>](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

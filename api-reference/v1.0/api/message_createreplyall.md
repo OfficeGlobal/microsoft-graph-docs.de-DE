@@ -1,47 +1,4 @@
-# <a name="message-createreplyall"></a>message: createReplyAll
-
-Erstellt einen Entwurf der „Allen Antworten“-Nachricht. Sie können den Entwurf dann [aktualisieren](../api/message_update.md) oder [senden](../api/message_send.md).
-
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Mail.ReadWrite*
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/messages/{id}/createReplyAll
-POST /users/{id | userPrincipalName}/messages/{id}/createReplyAll
-POST /me/mailFolders/{id}/messages/{id}/createReplyAll
-POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyAll
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
-
-## <a name="request-body"></a>Anforderungstext
-
-## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und das [Message](../resources/message.md)-Objekt im Antworttext zurückgegeben.
-
-## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
-<!-- {
-  "blockType": "request",
-  "name": "message_createreplyall"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReplyAll
-Content-type: application/json
-Content-length: 248
-
-{
-  "comment": "comment-value"
-}
-```
-
-##### <a name="response"></a>Antwort
+<span data-ttu-id="0fdb3-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="0fdb3-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",

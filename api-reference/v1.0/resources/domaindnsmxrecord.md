@@ -1,32 +1,12 @@
-<a id="domaindnsmxrecord-resource-type" class="xliff"></a>
-# domainDnsMxRecord-Ressourcentyp
+<span data-ttu-id="aa192-p105">Wert, der beim Konfigurieren der Eigenschaft für die Gültigkeitsdauer (*time-to-live (ttl)*) des DNS-Eintrags auf dem DNS-Host verwendet werden soll. Lässt keine Nullwerte zu.</span><span class="sxs-lookup"><span data-stu-id="aa192-p105">Value to use when configuring the *time-to-live (ttl)* property of the MX record at the DNS host. Not nullable</span></span>| Wert, der beim Konfigurieren der Eigenschaft für die Gültigkeitsdauer (*time-to-live (ttl)*) des DNS-Eintrags auf dem DNS-Host verwendet werden soll. Lässt keine Nullwerte zu. |
 
-Stellt einen MX-Eintrag dar, der der DNS-Zonendatei einer bestimmten Domäne im Mandanten hinzugefügt wird. Geerbt von der Entität [DomainDnsRecord](domaindnsrecord.md).
-
-<a id="methods" class="xliff"></a>
-## Methoden
-Direkte Abfragen dieser Ressource werden nicht unterstützt. Informationen zum Abfragen von Domänendiensteinträgen finden Sie im Thema [Domäne](domain.md).
-
-<a id="properties" class="xliff"></a>
-## Eigenschaften
-| Eigenschaft     | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|id|Zeichenfolge| Eindeutiger Bezeichner, der dieser Entität zugewiesen ist. Lässt keine Nullwerte zu, schreibgeschützt.|
-|isOptional|Boolean| Wenn „false“, muss der MX-Eintrag vom Kunden auf dem DNS-Host konfiguriert werden, damit Microsoft-Onlinedienste ordnungsgemäß mit der Domäne funktionieren. |
-|label|String| Wert, der beim Konfigurieren der *alias/host/name*-Eigenschaft des MX-Eintrags auf dem DNS-Host verwendet wird. |
-|mailExchange|String| Wert, der beim Konfigurieren der *answer/destination/value*-Eigenschaft des MX-Eintrags auf dem DNS-Host verwendet wird.|
-|preference|Int32| Wert, der beim Konfigurieren der *Preference/Priority*-Eigenschaft des MX-Eintrags auf dem DNS-Host verwendet wird. |
-|recordType|String| Typ des DNS-Eintrags. Der Wert ist immer *MX*. Schlüssel |
-|supportedService|String| Microsoft-Onlinedienst oder Feature mit Abhängigkeit von diesem MX-Eintrag.</br></br>Kann einer der folgenden Werte sein: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
-|ttl|Int32| Wert, der beim Konfigurieren der Eigenschaft für die Gültigkeitsdauer (*time-to-live (ttl)*) des DNS-Eintrags auf dem DNS-Host verwendet werden soll. Lässt keine Nullwerte zu. |
-
+## <span data-ttu-id="aa192-140">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="aa192-140">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-## Beziehungen
-Keine
+<span data-ttu-id="aa192-141">Keine</span><span class="sxs-lookup"><span data-stu-id="aa192-141">None</span></span>
 
+## <span data-ttu-id="aa192-142">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="aa192-142">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## JSON-Darstellung
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="aa192-143">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="aa192-143">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

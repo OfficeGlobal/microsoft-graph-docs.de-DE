@@ -1,32 +1,13 @@
-<a id="domaindnstxtrecord-resource-type" class="xliff"></a>
-# domainDnsTxtRecord-Ressourcentyp
+<span data-ttu-id="b4abb-p105">Wert, der beim Konfigurieren der Eigenschaft für die Gültigkeitsdauer (*time-to-live (ttl)*) des DNS-Eintrags auf dem DNS-Host verwendet werden soll. Lässt keine Nullwerte zu.</span><span class="sxs-lookup"><span data-stu-id="b4abb-p105">Value to use when configuring the *time-to-live (ttl)* property of the MX record at the DNS host. Not nullable</span></span>| Wert, der beim Konfigurieren der Eigenschaft für die Gültigkeitsdauer (*time-to-live (ttl)*) des DNS-Eintrags auf dem DNS-Host verwendet werden soll. Lässt keine Nullwerte zu. |
 
-Stellt einen TXT-Eintrag dar, der der DNS-Zonendatei einer bestimmten Domäne im Mandanten hinzugefügt wird. Geerbt von der Entität [DomainDnsRecord](domaindnsrecord.md).
-
-<a id="methods" class="xliff"></a>
-## Methoden
-Direkte Abfragen dieser Ressource werden nicht unterstützt. Informationen zum Abfragen von Domänendiensteinträgen finden Sie im Thema [Domäne](domain.md).
-
-<a id="properties" class="xliff"></a>
-## Eigenschaften
-| Eigenschaft     | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|id|String| Eindeutiger Bezeichner, der dieser Entität zugewiesen ist. Lässt keine Nullwerte zu, schreibgeschützt. |
-|isOptional|Boolean| Wenn „false“, muss der TXT-Eintrag vom Kunden auf dem DNS-Host konfiguriert werden, damit Microsoft-Onlinedienste ordnungsgemäß mit der Domäne funktionieren. |
-|label|String| Wert, der beim Konfigurieren der *name*-Eigenschaft des TXT-Eintrags auf dem DNS-Host verwendet werden soll.|
-|recordType|String| Typ des DNS-Eintrags. Der Wert ist immer *Txt*. Schlüssel |
-|supportedService|String| Microsoft-Onlinedienst oder Feature mit Abhängigkeit von diesem TXT-Eintrag.</br></br>Kann einer der folgenden Werte sein: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
-|text|String| Wert, der beim Konfigurieren der *text*-Eigenschaft auf dem DNS-Host verwendet wird. |
-|ttl|Int32| Wert, der beim Konfigurieren der Eigenschaft für die Gültigkeitsdauer (*time-to-live (ttl)*) des DNS-Eintrags auf dem DNS-Host verwendet werden soll. Lässt keine Nullwerte zu. |
-
+## <span data-ttu-id="b4abb-137">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="b4abb-137">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-## Beziehungen
-Keine
+<span data-ttu-id="b4abb-138">Keine</span><span class="sxs-lookup"><span data-stu-id="b4abb-138">None</span></span>
 
 
+## <span data-ttu-id="b4abb-139">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="b4abb-139">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## JSON-Darstellung
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="b4abb-140">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="b4abb-140">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

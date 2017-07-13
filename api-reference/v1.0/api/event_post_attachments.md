@@ -1,50 +1,20 @@
-# <a name="add-attachment"></a>Anlage hinzufügen
+<span data-ttu-id="ab55a-p103">Die Art der Daten im Textkörper einer Entität. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="ab55a-p103">Nature of the data in the body of an entity. Required.</span></span>  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 
-Verwenden Sie diese API zum Hinzufügen einer [Anlage](../resources/attachment.md) zu einem Ereignis. Da es derzeit eine Beschränkung von 4 MB für die Gesamtgröße jeder REST-Anforderung gibt, wird hierdurch die Größe der Anlage, die Sie hinzufügen können, auf unter 4 MB beschränkt.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Calendars.ReadWrite*
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-Anlagen für ein [Ereignis](../resources/event.md) im Standard[kalender](../resources/calendar.md) des Benutzers oder der Gruppe.
-```http
-POST /me/events/{id}/attachments
-POST /users/{id | userPrincipalName}/events/{id}/attachments
-POST /groups/{id}/events/{id}/attachments
-
-POST /me/calendar/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendar/events/{id}/attachments
-POST /groups/{id}/calendar/events/{id}/attachments
-```
-Anlagen für ein [Ereignis](../resources/event.md) in einem [Kalender](../resources/calendar.md) aus der standardmäßigen [calendarGroup](../resources/calendargroup.md) des Benutzers.
-```http
-POST /me/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
-
-POST /me/calendargroup/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
-```
-Anlagen für ein [Ereignis](../resources/event.md) in einem [Kalender](../resources/calendar.md) aus der [calendarGroup](../resources/calendargroup.md) eines Benutzers.
-```http
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext eine JSON-Darstellung des [attachment](../resources/attachment.md)-Objekts an.
+## <span data-ttu-id="ab55a-122">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="ab55a-122">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="ab55a-123">Geben Sie im Anforderungstext eine JSON-Darstellung des [attachment](../resources/attachment.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="ab55a-123">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
 
 
-## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und ein [attachment](../resources/attachment.md)-Objekt im Antworttext zurückgegeben.
+## <span data-ttu-id="ab55a-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="ab55a-124">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="ab55a-125">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und ein [attachment](../resources/attachment.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="ab55a-125">If successful, this method returns `201, Created` response code and [attachment](../resources/attachment.md) object in the response body.</span></span>
 
-## <a name="example-file-attachment"></a>Beispiel (Dateianlage)
+## <span data-ttu-id="ab55a-126">Beispiel (Dateianlage)</span><span class="sxs-lookup"><span data-stu-id="ab55a-126">Example (file attachment)</span></span>
+<a id="example-file-attachment" class="xliff"></a>
 
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+##### <span data-ttu-id="ab55a-127">Anforderung</span><span class="sxs-lookup"><span data-stu-id="ab55a-127">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="ab55a-128">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="ab55a-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_event"
@@ -61,10 +31,11 @@ Content-length: 151
 }
 ```
 
-Geben Sie im Anforderungstext eine JSON-Darstellung des [attachment](../resources/attachment.md)-Objekts an.
+<span data-ttu-id="ab55a-129">Geben Sie im Anforderungstext eine JSON-Darstellung des [attachment](../resources/attachment.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="ab55a-129">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="ab55a-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="ab55a-130">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="ab55a-131">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="ab55a-131">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,11 +60,13 @@ Content-Length: 735
 }
 ```
 
-## <a name="example-item-attachment"></a>Beispiel (Elementanlage)
+## <span data-ttu-id="ab55a-132">Beispiel (Elementanlage)</span><span class="sxs-lookup"><span data-stu-id="ab55a-132">Example (item attachment)</span></span>
+<a id="example-item-attachment" class="xliff"></a>
 
-##### <a name="request"></a>Anforderung
+##### <span data-ttu-id="ab55a-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="ab55a-133">Request</span></span>
+<a id="request" class="xliff"></a>
 
-Nachfolgend finden Sie ein Beispiel, in dem ein Ereignis als Elementanlage an ein anderes Element angefügt wird.
+<span data-ttu-id="ab55a-134">Nachfolgend finden Sie ein Beispiel, in dem ein Ereignis als Elementanlage an ein anderes Element angefügt wird.</span><span class="sxs-lookup"><span data-stu-id="ab55a-134">Here is an example which attaches an event with another event as an item attachment.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -126,8 +99,9 @@ Content-length: 600
 }
 ```
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="ab55a-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="ab55a-135">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="ab55a-136">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="ab55a-136">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

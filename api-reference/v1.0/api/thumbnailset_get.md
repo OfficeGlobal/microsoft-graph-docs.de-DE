@@ -1,37 +1,17 @@
-# <a name="get-thumbnailset"></a>thumbnailSet abrufen
-
-Dient zum Abrufen der Eigenschaften und der Beziehungen eines [thumbnailSet](../resources/thumbnailset.md)-Objekts.
-
-Weitere Informationen finden Sie unter [Miniaturansichten auflisten](item_list_thumbnails.md).
-
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
-
-  * Files.Read
-
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-GET /drive/root/thumbnails/{id}
-GET /drive/items/{id}/thumbnails/{id}
-GET /drives/{id}/root/thumbnails/{id}
-```
-## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
-
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+<span data-ttu-id="baa9b-p101">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="baa9b-p101">Bearer token. Required.</span></span>  | Bearer {token}. Erforderlich. |
 
 
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [thumbnailSet](../resources/thumbnailset.md)-Objekt im Antworttext zurückgegeben.
-## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <span data-ttu-id="baa9b-118">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="baa9b-118">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="baa9b-119">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="baa9b-119">Do not supply a request body for this method.</span></span>
+## <span data-ttu-id="baa9b-120">Antwort</span><span class="sxs-lookup"><span data-stu-id="baa9b-120">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="baa9b-121">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [thumbnailSet](../resources/thumbnailset.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="baa9b-121">If successful, this method returns a `200 OK` response code and [thumbnailSet](../resources/thumbnailset.md) object in the response body.</span></span>
+## <span data-ttu-id="baa9b-122">Beispiel</span><span class="sxs-lookup"><span data-stu-id="baa9b-122">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="baa9b-123">Anforderung</span><span class="sxs-lookup"><span data-stu-id="baa9b-123">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="baa9b-124">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="baa9b-124">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_thumbnailset"
@@ -39,8 +19,9 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 GET https://graph.microsoft.com/v1.0/drive/root/thumbnails/{id}
 ```
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <span data-ttu-id="baa9b-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="baa9b-125">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="baa9b-126">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="baa9b-126">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
