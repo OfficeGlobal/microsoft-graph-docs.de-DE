@@ -10,42 +10,49 @@ Verwenden Sie diese API zum Erstellen einer neuen Gruppe gemäß der Angabe im A
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Der folgende **Bereich** ist erforderlich, um diese API auszuführen: _Group.ReadWrite.All_ 
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:---------------|:--------|:----------|
+
+| Name           | Typ    | Beschreibung               |
+|:---------------|:--------|:--------------------------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
+
 Die folgende Tabelle zeigt die Eigenschaften der [Gruppe](../resources/group.md) Ressource, die Sie zumindest angeben müssen, wenn Sie eine Gruppe erstellen. 
 
-| Eigenschaft | Typ | Beschreibung|
-|:---------------|:--------|:----------|
-| displayName | string | Der Name der Gruppe, der im Adressbuch angezeigt wird. |
-| mailEnabled | Boolescher Wert | **true** für E-Mail-aktivierte Gruppen. **true**, wenn eine Office 365-Gruppe erstellt wird. **false**, wenn dynamische oder Sicherheitsgruppe erstellt wird.|
-| mailNickname | string | Der E-Mail-Alias für die Gruppe. |
+| Eigenschaft        | Typ    | Beschreibung                                            |
+|:----------------|:--------|:-------------------------------------------------------|
+| displayName     | string  | Der Name der Gruppe, der im Adressbuch angezeigt wird. |
+| mailEnabled     | Boolescher Wert | **true** für E-Mail-aktivierte Gruppen. **true**, wenn eine Office 365-Gruppe erstellt wird. **false**, wenn dynamische oder Sicherheitsgruppe erstellt wird.|
+| mailNickname    | string  | Der E-Mail-Alias für die Gruppe. Dieser Wert muss in der Organisation eindeutig sein.  |
 | securityEnabled | Boolescher Wert | **true** für Gruppen mit aktivierter Sicherheit. **true**, wenn dynamische oder eine Sicherheitsgruppe erstellt wird. **false**, wenn eine Office 365-Gruppe erstellt wird. |
 
 Geben Sie die **groupTypes** Eigenschaft an, wenn Sie eine Office 365 oder eine dynamische Gruppe erstellen, wie unten beschrieben.
 
-| Art der Gruppe | **groupTypes**-Eigenschaft |
-|:--------------|:------------------------|
-| Office 365 (auch einheitliche Gruppe genannt)| „Unified“ | 
-| Dynamisch | "DynamicMembership" | 
-| Sicherheit | Nicht festlegen. | 
+| Art der Gruppe                   | **groupTypes**-Eigenschaft |
+|:--------------------------------|:------------------------|
+| Office 365 (auch einheitliche Gruppe genannt)  | „Unified“               |
+| Dynamisch                         | "DynamicMembership"     | 
+| Sicherheit                        | Nicht festlegen.             |
 
 Geben Sie bei Bedarf andere beschreibbare Eigenschaften für Ihre Gruppe an. Weitere Informationen finden Sie in Themen zu Eigenschaften der [group](../resources/group.md)-Ressource.
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und das [group](../resources/group.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
+
 ##### <a name="request"></a>Anforderung
+
 Hier ist ein Beispiel für eine Anforderung, die eine Office 365-Gruppe erstellt.
+
 <!-- {
   "blockType": "request",
   "name": "create_group_from_groups"
@@ -56,19 +63,21 @@ Content-type: application/json
 Content-length: 244
 
 {
-  "description": "Self help community for library",
-  "displayName": "Library Assist",
-  "groupTypes": [
-    "Unified"
-  ],
-  "mailEnabled": true,
-  "mailNickname": "library",
-  "securityEnabled": false
+    "description": "Self help community for library",
+    "displayName": "Library Assist",
+    "groupTypes": [
+        "Unified"
+    ],
+    "mailEnabled": true,
+    "mailNickname": "library",
+    "securityEnabled": false
 }
 ```
 
 ##### <a name="response"></a>Antwort
+
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden mehr Eigenschaften zurückgegeben.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -80,15 +89,15 @@ Content-type: application/json
 Content-length: 244
 
 {
-  "description": "Self help community for library",
-  "displayName": "Library Assist",
-  "groupTypes": [
-    "Unified"
-  ],
-  "mail": "library@contoso.onmicrosoft.com",
-  "mailEnabled": true,
-  "mailNickname": "library",
-  "securityEnabled": false
+    "description": "Self help community for library",
+    "displayName": "Library Assist",
+    "groupTypes": [
+        "Unified"
+    ],
+    "mail": "library@contoso.onmicrosoft.com",
+    "mailEnabled": true,
+    "mailNickname": "library",
+    "securityEnabled": false
 }
 ```
 

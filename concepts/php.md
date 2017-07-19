@@ -48,7 +48,7 @@ Starten Sie ein neues Projekt mithilfe von Composer. Um ein neues PHP-Projekt mi
 composer create-project --prefer-dist laravel/laravel getstarted
 ```
  
-Auf diese Weise wird ein **getstarted**-Ordner erstellt, den Sie für dieses Projekt verwenden können.
+Auf diese Weise wird ein Ordner **getstarted** erstellt, den Sie für dieses Projekt verwenden können.
 
 > Hinweis: Sie können auch das [Startprojekt](https://github.com/microsoftgraph/php-connect-rest-sample/tree/master/starter-project) verwenden, das die Konfiguration des Projekts übernimmt, sodass Sie sich auf die Codierungsabschnitte dieser Vorgehensweise konzentrieren können.
 
@@ -120,7 +120,7 @@ if (!$request->has('code')) {
 }
 ```
     
-Beachten Sie, dass in dieser Zeile `exit($accessToken->getToken());` ein Zugriffstoken vorhanden ist. Sie können nun Code hinzufügen, um Microsoft Graph aufzurufen. 
+Beachten Sie, dass in dieser Zeile  ein Zugriffstoken vorhanden ist: `exit($accessToken->getToken());`. Sie können nun Code hinzufügen, um Microsoft Graph aufzurufen. 
 
 ## <a name="call-microsoft-graph-using-rest"></a>Aufrufen von Microsoft Graph mithilfe von REST
 Sie können Microsoft Graph mithilfe von REST aufrufen. Ersetzen Sie die Zeile `exit($accessToken->getToken());` durch den folgenden Code. Fügen Sie Ihre E-Mail-Adresse in den Platzhalter ein, der mit **\<YOUR_EMAIL_ADDRESS\>** markiert ist.
@@ -177,5 +177,7 @@ Sie können Ihre PHP-App nun testen.
 
 
 ## <a name="see-also"></a>Siehe auch
-* [Azure AD v2.0-Protokolle](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-* [Azure AD v2.0-Tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- Testen von REST-Beispielaufrufen in unserem [API-Tester](https://graph.microsoft.io/graph-explorer).
+- [Abrufen von Zugriffstoken zum Aufrufen von Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [Im Namen eines Benutzers zugreifen](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [Ohne Benutzer zugreifen](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

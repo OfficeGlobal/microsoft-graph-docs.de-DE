@@ -34,7 +34,7 @@ Registrieren Sie eine App im Microsoft App-Registrierungsportal. Dadurch werden 
 
 4. Kopieren Sie die Anwendungs-ID: Hierbei handelt es sich um einen eindeutigen Bezeichner, die Sie für die Konfiguration der App verwenden werden.
 
-5. Wählen Sie unter **Plattformen** die Option **Plattform hinzufügen** > **Web** aus.
+5. Wählen Sie unter **Plattformen** die Optionen **Plattform hinzufügen** > **Web** aus.
 
 6. Stellen Sie sicher, dass das Kontrollkästchen **Impliziten Fluss zulassen** aktiviert ist, und geben Sie *http://localhost:8080/* als Umleitungs-URI ein. 
 
@@ -43,12 +43,12 @@ Registrieren Sie eine App im Microsoft App-Registrierungsportal. Dadurch werden 
 
 ## <a name="configure-the-project"></a>Konfigurieren des Projekts
 1. Öffnen Sie den Ordner **Startprojekt** in den Beispieldateien.
-2. Führen Sie die folgenden Befehle in einem Eingabeaufforderungsfenster im Stammverzeichnis des Startprojekts aus. Dadurch werden die Projekt-Abhängigkeiten installiert.
+2. Führen Sie die folgenden Befehle in einem Eingabeaufforderungsfenster im Stammverzeichnis des Startprojekts aus. Dadurch werden die Projektabhängigkeiten installiert.
 
         npm install  
         bower install
     
-3. Öffnen Sie in den Startprojektdateien im Ordner **Öffentlich/Skripts** config.js.
+3. Öffnen Sie in den Startprojektdateien im Ordner **public/scripts** die Datei „config.js“.
 4. Ersetzen Sie im Feld **Client-ID** den Platzhalterwert **ENTER_YOUR_CLIENT_ID** durch die Anwendungs-ID, die Sie gerade kopiert haben.
 
 ## <a name="call-microsoft-graph-with-the-sdk"></a>Aufrufen von Microsoft Graph mit dem SDK
@@ -67,7 +67,7 @@ Die App ruft Microsoft Graph auf, um Benutzerinformationen abzurufen und eine E-
         }
     });
 
-### <a name="using-the-sdk"></a>Verwenden des SDKs
+### <a name="using-the-sdk"></a>Verwenden des SDK
 1. Ersetzen Sie in „graphHelper.js“ *//Profil des aktuellen Benutzers abrufen* durch folgenden Code. Dadurch wird die GET-Anforderung konfiguriert und an den Endpunkt */me* gesendet und die Antwort verarbeitet.
 
         // Get the profile of the current user.
@@ -172,5 +172,7 @@ Die App ruft Microsoft Graph auf, um Benutzerinformationen abzurufen und eine E-
 
 
 ## <a name="see-also"></a>Siehe auch
-- [Azure AD v2.0-Protokolle](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0-Tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- Testen von REST-Beispielaufrufen in unserem [API-Tester](https://graph.microsoft.io/graph-explorer).
+- [Abrufen von Zugriffstoken zum Aufrufen von Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [Im Namen eines Benutzers zugreifen](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [Ohne Benutzer zugreifen](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

@@ -73,16 +73,16 @@ Für den Zugriff auf den Benutzeroberflächenworkflow muss die App den Benutzer 
 
 1. Öffnen Sie den Projektarbeitsbereich Xcode (**O365-iOS-Microsoft-Graph-SDK.xcworkspace**) im Ordner **Startprojekt** und navigieren Sie zum Ordner **Authentifizierung** und öffnen Sie die Datei **AuthenticationProvider.m.** Fügen Sie dieser Klasse den folgenden Code hinzu.
 
-        -(void) connectToGraphWithClientId:(NSString *)clientId scopes:(NSArray *)scopes completion:(void (^)    (NSError *))completion{
+        -(void) connectToGraphWithClientId:(NSString *)clientId scopes:(NSArray *)scopes completion:(void (^)   (NSError *))completion{
             [NXOAuth2AuthenticationProvider setClientId:kClientId
                                               scopes:scopes];
     
     
             /**
-             Obtains access token by performing login with UI, where viewController specifies the parent view controller.
-             @param viewController The view controller to present the UI on.
+            Obtains access token by performing login with UI, where viewController specifies the parent view controller.
+            @param viewController The view controller to present the UI on.
              @param completionHandler The completion handler to be called when the authentication has completed.
-             error should be non nil if there was no error, and should contain any error(s) that occurred.
+            error should be non nil if there was no error, and should contain any error(s) that occurred.
              */
 
                 if ([[NXOAuth2AuthenticationProvider sharedAuthProvider] loginSilent]) {
@@ -94,16 +94,16 @@ Für den Zugriff auf den Benutzeroberflächenworkflow muss die App den Benutzer 
                     NSLog(@"Authentication successful.");
                     completion(nil);
                     }
-                    else {
-                        NSLog(@"Authentication failed - %@", error.localizedDescription);
+                 else {
+                     NSLog(@"Authentication failed - %@", error.localizedDescription);
                     completion(error);
                     }
-                    }];
+                }];
             }
     
         }
 
-2. Als Nächstes fügen Sie die Methode in der Header-Datei hinzu. Öffnen Sie die Datei **AuthenticationProvider.h** und fügen Sie dieser Klasse den folgenden Code hinzu.
+2. Als Nächstes fügen Sie die Methode der Header-Datei hinzu. Öffnen Sie die Datei **AuthenticationProvider.h**, und fügen Sie dieser Klasse den folgenden Code hinzu.
 
         -(void) connectToGraphWithClientId:(NSString *)clientId
                             scopes:(NSArray *)scopes
@@ -133,7 +133,7 @@ Für den Zugriff auf den Benutzeroberflächenworkflow muss die App den Benutzer 
 
 Nach dem Konfigurieren des Projekts für die Authentifizierung wird in den nächsten Aufgaben mithilfe der Microsoft Graph-API eine E-Mail an einen Benutzer gesendet. Standardmäßig ist der angemeldete Benutzer der Empfänger, aber Sie haben die Möglichkeit, einen beliebigen anderen Empfänger anzugeben. Der Code, mit dem wir hier arbeiten, befindet sich im Ordner **Controller** und in der Klasse **SendMailViewController.m.** Sie werden sehen, dass es hier noch anderen Code für die Benutzeroberfläche und eine Hilfsmethode zum Abrufen von Benutzerprofildaten aus dem Microsoft Graph-Dienst gibt. Wir werden uns auf die Methoden zum Erstellen einer E-Mail-Nachricht und das Senden dieser Nachricht konzentrieren.
 
-1. Öffnen Sie **SendMailViewController.m.** im Ordner „Controller“ und fügen Sie die folgende Hilfsmethode zu der Klasse hinzu:
+1. Öffnen Sie **SendMailViewController.m.** im Ordner „Controllers“, und fügen Sie der Klasse die folgende Hilfsmethode hinzu:
 
         // Create a sample test message to send to specified user account
         -(MSGraphMessage*) getSampleMessage{
@@ -164,7 +164,7 @@ Nach dem Konfigurieren des Projekts für die Authentifizierung wird in den näch
         }
 
 
-2. Öffnen Sie **SendMailViewController.m.** Fügen Sie die folgende Methode für das Senden von E-Mails zu der Klasse hinzu.  
+2. Öffnen Sie **SendMailViewController.m.** Fügen Sie der Klasse die folgende Methode für das Senden von E-Mails hinzu.  
 
         //Send mail to the specified user in the email text field
         -(void) sendMail {   
@@ -183,7 +183,7 @@ Nach dem Konfigurieren des Projekts für die Authentifizierung wird in den näch
             }
             else {
                 NSLog(NSLocalizedString(@"ERROR", ""), error.localizedDescription);
-                    self.statusTextView.text = NSLocalizedString(@"SEND_FAILURE", comment: "");
+                self.statusTextView.text = NSLocalizedString(@"SEND_FAILURE", comment: "");
                 }
             }];
     
@@ -200,7 +200,7 @@ Nach dem Konfigurieren des Projekts für die Authentifizierung wird in den näch
         NSString * const kScopes = @"https://graph.microsoft.com/Mail.Send, https://graph.microsoft.com/User.Read, offline_access";
 Hinweis: Sie sehen, dass die folgenden Berechtigungsbereiche für dieses Projekt konfiguriert wurden: **"https://graph.microsoft.com/Mail.Send", "https://graph.microsoft.com/User.Read", "Offline_access"**. Die in diesem Projekt verwendeten Dienstaufrufe, also das Senden einer E-Mail an Ihr E-Mail-Konto und das Abrufen einiger Profilinformationen (Anzeigename, E-Mail-Adresse), benötigen diese Berechtigungen, damit die App ordnungsgemäß ausgeführt wird.
 
-2. Führen Sie das Beispiel aus, tippen Sie auf **Verbinden**, melden Sie sich mit Ihrem persönlichen Konto oder mit Ihrem Geschäfts- oder Schulkonto an und gewähren Sie die erforderlichen Berechtigungen.
+2. Führen Sie das Beispiel aus, tippen Sie auf **Verbinden**, melden Sie sich mit Ihrem persönlichen Konto oder mit Ihrem Geschäfts-, Schul- oder Unikonto an, und gewähren Sie die angeforderten Berechtigungen.
 
 3. Klicken Sie auf die Schaltfläche **E-Mail senden**.
  Nachdem die E-Mail gesendet wurde, wird unter der Schaltfläche eine Erfolgsmeldung angezeigt.
@@ -210,6 +210,7 @@ Hinweis: Sie sehen, dass die folgenden Berechtigungsbereiche für dieses Projekt
 - Beispiele allgemeiner Vorgänge sowohl für REST- als auch für SDK-Operationen finden Sie in dem Beispiel [Microsoft Graph iOS Objective C Code Snippets](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample).
 
 ## <a name="see-also"></a>Siehe auch
-- [Microsoft Graph SDK für iOS](https://github.com/microsoftgraph/msgraph-sdk-ios)
-- [Protokolle für Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0-Tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Microsoft Graph-SDK für iOS](https://github.com/microsoftgraph/msgraph-sdk-ios)
+- [Abrufen von Zugriffstoken zum Aufrufen von Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [Im Namen eines Benutzers zugreifen](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [Ohne Benutzer zugreifen](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

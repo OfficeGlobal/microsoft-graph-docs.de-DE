@@ -3,10 +3,11 @@
 Dient zum Abrufen der Eigenschaften und der Beziehungen des directoryObject-Objekts.
 ## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: 
+
 - _Directory.Read.All_ 
 - _Directory.AccessAsUser.All_
 
-> Hinweis: Berechtigungsbereiche werden in der Reihenfolge der geringsten erforderlichen Rechte aufgelistet.
+> **Hinweis:** Berechtigungsbereiche werden in der Reihenfolge von den geringsten zu den höchsten erforderlichen Rechten aufgelistet.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

@@ -17,7 +17,7 @@ Zum Herunterladen einer Version des Connect-Beispiels, das den Endpunkt Azure AD
 Für die ersten Schritte benötigen Sie: 
 
 - Ein [Microsoft-Konto](https://www.outlook.com/) oder ein [Geschäfts- oder Schulkonto](http://dev.office.com/devprogram)
-- [Node.js with npm](https://nodejs.org/en/download/) 
+- [Node.js mit npm](https://nodejs.org/en/download/) 
 - Das [Microsoft Connect-Beispiel für Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample). Für diese exemplarische Vorgehensweise verwenden Sie den Ordner **Startprojekt** in den Beispieldateien.
 
 ## <a name="register-the-application"></a>Registrieren der App
@@ -47,7 +47,7 @@ Registrieren Sie eine App im Microsoft App-Registrierungsportal. Dadurch werden 
 ## <a name="configure-the-project"></a>Konfigurieren des Projekts
 1. Öffnen Sie den Ordner **Startprojekt** in den Beispieldateien.
 
-1. Führen Sie den folgenden Befehl in einem Eingabeaufforderungsfenster im Stammverzeichnis des Startprojekts aus. Dadurch werden die Projekt-Abhängigkeiten installiert.
+1. Führen Sie den folgenden Befehl in einem Eingabeaufforderungsfenster im Stammverzeichnis des Startprojekts aus. Dadurch werden die Projektabhängigkeiten installiert.
 
         npm install
 
@@ -205,5 +205,7 @@ Die App ruft Microsoft Graph auf, um Benutzerinformationen abzurufen und eine E-
 
 
 ## <a name="see-also"></a>Siehe auch
-- [Azure AD v2.0-Protokolle](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0-Tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- Testen von REST-Beispielaufrufen in unserem [API-Tester](https://graph.microsoft.io/graph-explorer).
+- [Abrufen von Zugriffstoken zum Aufrufen von Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [Im Namen eines Benutzers zugreifen](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [Ohne Benutzer zugreifen](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
