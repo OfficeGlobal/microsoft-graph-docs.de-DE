@@ -2,7 +2,7 @@
 
 Microsoft Graph stellt einen zentralen API-Endpunkt bereit, der Ihnen über verschiedene Ressourcen wie [user](../api-reference/v1.0/resources/user.md) und [message](../api-reference/v1.0/resources/message.md) Zugriff auf umfassende personenzentrierte Daten und Erkenntnisse ermöglicht. Jetzt können Sie Microsoft Graph um eigene Anwendungsdaten _**erweitern**_. Sie können Microsoft Graph-Ressourcen benutzerdefinierte Eigenschaften hinzufügen, ohne dass dafür ein externer Datenspeicher nötig wäre. So könnten Sie sich beispielsweise entscheiden, Ihre App schlank zu halten und App-spezifische Benutzerprofildaten in Microsoft Graph zu speichern, indem Sie die Ressource **user** erweitern. Alternativ könnten Sie den vorhandenen Benutzerprofilspeicher Ihrer App auch beibehalten und der Ressource **user** einfach einen App-spezifischen Speicherbezeichner hinzufügen.
 
-Microsoft Graph bietet zwei Typen von Erweiterungen. Wählen Sie den Erweiterungstyp aus, der Ihren Anwendungsanforderungen am besten entspricht:
+Microsoft Graph bietet zwei Arten von Erweiterungen. Wählen Sie den Erweiterungstyp aus, der Ihren Anwendungsanforderungen am besten entspricht:
 
 *  **Offene Erweiterungen**: Dieser Erweiterungstyp ist ideal für die ersten Schritte mit Erweiterungen.
 *  **Schemaerweiterungen**: Bei diesem Erweiterungstyp handelt es sich um einen flexibleren Mechanismus für Entwickler, die typisierte Daten speichern, ihr Schema erkennbar und gemeinsam nutzbar machen, Filteroptionen nutzen und später auch Autorisierung und die Überprüfung von Eingabedaten implementieren möchten.
@@ -56,7 +56,7 @@ Da Schemaerweiterungen als komplexe Typen in Instanzen der Zielressourcen zugän
 - Sie können die `POST`-Methode der Ressource verwenden, um bei der Erstellung einer neuen Ressourceninstanz benutzerdefinierte Daten anzugeben.
 - Sie können die `GET`-Methode der Ressource verwenden, um die benutzerdefinierten Daten zu lesen.
 - Sie können die `PATCH`-Methode der Ressource verwenden, um einer vorhandenen Ressourceninstanz benutzerdefinierte Daten hinzuzufügen oder benutzerdefinierte Daten aus einer vorhandenen Ressourceninstanz zu löschen.
-- Sie können die `PATCH`-Methode der Ressource verwenden, um den komplexen Typ auf NULL festzulegen und so die benutzerdefinierten Daten in der Ressourceninstanz zu löschen. 
+- Sie können die `PATCH`-Methode der Ressource verwenden, um den komplexen Typ auf „null“ festzulegen und so die benutzerdefinierten Daten in der Ressourceninstanz zu löschen. 
 
 Beispiel für eine Schemaerweiterung: [Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen](extensibility_schema_groups.md)
 
@@ -113,20 +113,15 @@ Eine Anwendung kann nicht mehr als fünf **Schemaerweiterungs**definitionen erst
 
 Bekannte Einschränkungen bei der Verwendung von Erweiterungen finden Sie im [Abschnitt zu Erweiterungen](known_issues.md#extensions) im Artikel über bekannte Probleme.
 
-## <a name="see-also"></a>Siehe auch
-
-[Office 365-Domänen](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
-
-[Hinzufügen und Überprüfen einer Domäne für einen Office 365-Mandanten](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
-
-
-## <a name="next-steps"></a>Nächste Schritte
-
-Sehen Sie sich ein Beispiel an, in dem die **user**-Ressource mithilfe einer offenen Erweiterung um benutzerdefinierte Roamingprofildaten erweitert wird:
+## <a name="extension-examples"></a>Erweiterungsbeispiele
 
 [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](extensibility_open_users.md)
 
-Sehen Sie sich ein Beispiel an, in dem die **group**-Ressource mithilfe einer Schemaerweiterung um Schulungskursdaten erweitert wird:
-
 [Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen](extensibility_schema_groups.md)
 
+## <a name="see-also"></a>Siehe auch
+
+
+  [Office 365-Domänen](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+
+[Hinzufügen und Überprüfen einer Domäne für einen Office 365-Mandanten](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

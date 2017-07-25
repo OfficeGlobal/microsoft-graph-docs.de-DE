@@ -46,7 +46,7 @@ Wenn Sie die fertigen Connect-Beispiele ansehen möchten, besuchen Sie das [Micr
     <td>
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">REST-Beispiel</a>
     </td>     
-    <td>
+     <td>
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">SDK-Beispiel</a>
     </td> 
   </tr>
@@ -65,7 +65,7 @@ Wenn Sie die fertigen Connect-Beispiele ansehen möchten, besuchen Sie das [Micr
         <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">REST-Beispiel</a>
     </td>     
     <td>    
-        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK-Beispiel</a> oder <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST-Beispiel</a>
+        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK-Beispiel</a> oder ¶<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST-Beispiel</a>
     </td> 
   </tr>
   <tr>
@@ -114,7 +114,6 @@ Wenn Sie die fertigen Connect-Beispiele ansehen möchten, besuchen Sie das [Micr
 </table>
 
 ## <a name="see-also"></a>Siehe auch
-- Testen von REST-Beispielaufrufen in unserem [API-Tester](https://graph.microsoft.io/graph-explorer).
-- [Abrufen von Zugriffstoken zum Aufrufen von Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Im Namen eines Benutzers zugreifen](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Ohne Benutzer zugreifen](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- Testen Sie beispielhafte REST-Aufrufe in unserem [API Explorer](https://graph.microsoft.io/graph-explorer).
+- [Azure AD-Endpunkt-Dokumentation](https://azure.microsoft.com/documentation/services/active-directory/)
+- [Azure AD v2.0-Endpunkt-Dokumentation](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)

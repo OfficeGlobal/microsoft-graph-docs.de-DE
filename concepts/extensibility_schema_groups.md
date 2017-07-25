@@ -1,4 +1,4 @@
-# <a name="add-custom-data-to-groups-using-schema-extensions-example"></a>Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen (Beispiel)
+# <a name="add-custom-data-to-groups-using-schema-extensions"></a>Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen 
 
 Sie werden durch ein Beispiel geführt, um die Verwendung von *Schemaerweiterungen* zu veranschaulichen. 
 
@@ -227,8 +227,9 @@ Content-length: 326
 ## <a name="see-also"></a>Weitere Artikel
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](extensibility_overview.md)
-- [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Beispiel)](extensibility_open_users.md)
-- [Office 365-Domänen](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+- [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Preview)](extensibility_open_users.md)
+- 
+  [Office 365-Domänen](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 - [Hinzufügen und Überprüfen einer Domäne für das NEUE Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [schemaExtension-Ressourcentyp](../api-reference/v1.0/resources/schemaextension.md)
 - [schemaExtensions aufführen](../api-reference/v1.0/api/schemaextension_list.md)

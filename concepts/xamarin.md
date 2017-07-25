@@ -445,7 +445,6 @@ Sie haben nun die drei erforderlichen Schritte für die Interaktion mit Microsof
 - Beispiele für allgemeine Vorgänge finden Sie in der [Microsoft Graph SDK Snippets-Bibliothek für Xamarin.Forms](https://github.com/microsoftgraph/xamarin-csharp-snippets-sample), oder erforschen Sie unsere anderen [Xamarin-Beispiele](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=xamarin) auf GitHub.
 
 ## <a name="see-also"></a>Siehe auch
-- [Microsoft Graph .NET-Clientbibliothek](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
-- [Abrufen von Zugriffstoken zum Aufrufen von Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Im Namen eines Benutzers zugreifen](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Ohne Benutzer zugreifen](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- [Microsoft Graph .NET Clientbibliothek](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
+- [Protokolle für Azure AD v2.0](https://azure.microsoft.com/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0-Tokens](https://azure.microsoft.com/documentation/articles/active-directory-v2-tokens/)

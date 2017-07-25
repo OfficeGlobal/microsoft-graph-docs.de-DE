@@ -53,7 +53,7 @@ Registrieren Sie eine App im Microsoft App-Registrierungsportal. Dadurch werden 
 
 ## <a name="configure-the-project"></a>Konfigurieren des Projekts
 
-1. Laden Sie das [Microsoft Graph Ruby on Rails Connect-Beispiel](https://github.com/microsoftgraph/ruby-connect-rest-sample) herunter, oder klonen Sie es. Öffnen Sie den _Start_ordner im Editor Ihrer Wahl.
+1. Laden Sie das [Microsoft Graph Ruby on Rails Connect-Beispiel](https://github.com/microsoftgraph/ruby-connect-rest-sample) herunter, oder klonen Sie es. Öffnen Sie den Startordner im Editor Ihrer Wahl.
 1. Wenn Sie weder über einen Bundler noch über ein Rack verfügen, können Sie sie mithilfe des folgenden Befehls installieren.
 
     ```
@@ -125,9 +125,9 @@ Dadurch werden Anmeldeanfragen an die `login`-Methode des Pages-Controllers gele
 
     def login
         redirect_to '/auth/microsoft_v2_auth'
-    end
+      end
 
-Als Nächstes müssen wir angeben, wohin in der App OmniAuth umleiten soll, nachdem die Authentifizierung erfolgt ist. Heben Sie die Auskommentierung folgender Route auf.
+Als Nächstes müssen wir angeben, wohin in der App OmniAuth umleiten soll, nachdem die Authentifizierung erfolgt ist. Entfernen Sie die Auskommentierung folgender Route.
 
     match '/auth/:provider/callback', to: 'pages#callback', via: [:get, :post]
 
@@ -150,7 +150,7 @@ Nun fügen wir Code zur Behandlung des OmniAuth-Rückrufs und zum Abrufen von In
 Ersetzen Sie in `app/controllers/pages_controller.rb` die leere `callback`-Methode durch den folgenden Code.
 
     ```
-    def callback
+      def callback
         # Access the authentication hash for omniauth
         # and extract the auth token, user name, and email
         data = request.env['omniauth.auth']
@@ -286,9 +286,6 @@ Schließlich verwendet der Code, den zurückgegebenen HTTP-Antwortcode, um den B
 
 ## <a name="see-also"></a>Siehe auch
 - Testen Sie die REST-API mithilfe des [Graph-Explorers](https://graph.microsoft.io/graph-explorer).
-- Schauen Sie sich weitere [Microsoft Graph-Beispiele](https://github.com/microsoftgraph) auf GitHub an.
-- [Abrufen von Zugriffstoken zum Aufrufen von Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Im Namen eines Benutzers zugreifen](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Ohne Benutzer zugreifen](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- Schauen Sie sich weitere [Microsoft Graph-Beispiele](https://github.com/microsoftgraph) unter GitHub an.
 
 

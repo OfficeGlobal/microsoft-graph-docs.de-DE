@@ -15,7 +15,7 @@ In diesem Artikel wird eine v2.0-Registrierung vorausgesetzt, weshalb Sie Ihre A
 
 > Einige Einschränkungen sind zu beachten, wenn Sie den Endpunkt Version 2.0 verwenden. Damit Sie die für Sie richtige Entscheidung treffen können, informieren Sie sich unter [Sollte ich den v2.0-Endpunkt verwenden?](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/)
 
-## <a name="authenticate-the-user-and-get-an-access-token"></a>Authentifizieren des Benutzers und Abrufen eines Zugriffstokens
+## <a name="authenticate-the-user-and-get-an-access-token"></a>Authentifizierung des Benutzers und Abrufen eines Zugriffstokens
 
 Die in diesem Artikel beschriebene App implementiert den [Authorization Code Grant-Datenfluss](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-code/) zum Abrufen der Zugriffstoken von dem Azure AD v2.0-Endpunkt gemäß standardmäßiger[ OAuth 2.0-Protokolle](http://tools.ietf.org/html/rfc6749). Eine vollständige Anleitung zu den im Azure AD v2.0-Endpunkt unterstützten Datenflüssen finden Sie unter [v2.0-Endpunkt-Typen](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-flows/).
 
@@ -44,7 +44,7 @@ Das *Mandanten*-Segment im Pfad bestimmt, wer sich bei der Anwendung anmelden ka
 | client_id | Die beim Registrieren der App generierte Client-ID. Anhand dieser erkennt Azure AD, welche App die Anmeldung anfordert. |
 | redirect_uri | Der Speicherort, zu dem Azure umleitet, nachdem der Benutzer seine Zustimmung für diese App erteilt hat. Dieser Wert muss mit dem Wert des beim Registrieren der App verwendeten **Umleitungs-URI** übereinstimmen. |
 | response_type | Der Antworttyp, den die App erwartet. Dieser Wert ist `code` für den Authorization Code Grant-Datenfluss. |
-| scope | Eine durch Leerzeichen getrennte Liste von [Microsoft Graph-Berechtigungsbereichen](./permissions_reference.md), die die App anfordert. Sie können auch [OpenId Connect-Bereiche](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#openid-connect-scopes) für [die einmalige Anmeldung](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oidc/) angeben.  |
+| scope | Eine durch Leerzeichen getrennte Liste von [Microsoft Graph Berechtigungsbereichen](./permissions_reference.md), die die App anfordert. Sie können auch [OpenId Connect-Bereiche](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#openid-connect-scopes) für [die einmalige Anmeldung](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oidc/) angeben.  |
 | state | Ein Wert, der in der Anforderung enthalten ist, die in der Tokenantwort für die Validierung zurückgegeben wird. |
 
 Die Anforderungs-URL für eine Anwendung, die den Lesezugriff auf E-Mails anfordert, könnte beispielsweise wie folgt aussehen.
@@ -72,7 +72,7 @@ Zum Abrufen eines Zugriffstokens stellt die App fomularcodierte Parameter für d
 | code | Der im vorherigen Schritt abgerufene Autorisierungscode. |
 | redirect_uri | Dieser Wert muss mit dem in der Autorisierungscodeanforderung verwendeten Wert übereinstimmen. |
 | grant_type | Der von der App verwendete Typ des Zugriffs. Dieser Wert ist `code` für den Authorization Code Grant-Datenfluss. |
-| scope | Eine durch Leerzeichen getrennte Liste von [Microsoft Graph Berechtigungsbereichen](./permissions_reference.md), die die App anfordert. |
+| Bereich | Eine durch Leerzeichen getrennte Liste von [Microsoft Graph Berechtigungsbereichen](./permissions_reference.md), die die App anfordert. |
 
 Die Anforderungs-URL für unsere Anwendung sieht unter Verwendung des Codes aus dem vorherigen Schritt wie folgt aus.
 
@@ -136,6 +136,5 @@ Da Sie nun gelernt haben, wie Aufrufe für Microsoft Graph getätigt werden, kö
 - Testen Sie die Möglichkeiten der REST-API mithilfe des [Graph-Explorers](https://graph.microsoft.io/graph-explorer).
 
 ## <a name="see-also"></a>Siehe auch
-- [Abrufen von Zugriffstoken zum Aufrufen von Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Im Namen eines Benutzers zugreifen](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Ohne Benutzer zugreifen](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- [Azure AD v2.0-Protokolle](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0-Tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)

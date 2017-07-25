@@ -1,4 +1,4 @@
-# <a name="add-custom-data-to-users-using-open-extensions-example"></a>Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Beispiel)
+# <a name="add-custom-data-to-users-using-open-extensions"></a>Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen
 Sie werden durch ein Beispiel geführt, um die Verwendung *offener Erweiterungen* zu veranschaulichen. 
 
 Angenommen, Sie erstellen eine Anwendung, die auf vielen verschiedenen Clientplattformen, z. B. Desktop und Mobil, verfügbar ist.  Sie möchten zulassen, dass Benutzer ihre eigene Benutzeroberfläche konfigurieren, damit diese konsistent ist, unabhängig davon, mit welchem Gerät sie sich bei der App anmelden. Dies ist eine allgemeine Anforderung für die meisten Apps. 
@@ -111,7 +111,7 @@ HTTP/1.1 204 No content
 ## <a name="see-also"></a>Weitere Artikel
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](extensibility_overview.md)
-- [Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen (Beispiel)](extensibility_schema_groups.md)
+- [Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen](extensibility_schema_groups.md)
 - [openTypeExtension-Ressourcentyp](../api-reference/v1.0/resources/opentypeextension.md)
 - [Offene Erweiterung erstellen](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md)
 - [Offene Erweiterung abrufen](../api-reference/v1.0/api/opentypeextension_get.md)

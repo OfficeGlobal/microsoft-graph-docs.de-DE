@@ -2,7 +2,7 @@
 Fügt Abonnements für den Benutzer hinzu bzw. entfernt sie. Sie können auch bestimmte Pläne aktivieren oder deaktivieren, die mit einem Abonnement verknüpft sind.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Directory.ReadWrite.All; Directory.AccessAsUser.All*
+Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *User.ReadWrite.All; Directory.ReadWrite.All*
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http

@@ -106,9 +106,3 @@ Im Connect-Beispiel wird eine E-Mail mithilfe des ```me/microsoft.graph.sendMail
 > **Hinweis** Die Anforderung muss auch einen Header des Typs **Content-Type** mit einem Wert senden, der von der Graph-API akzeptiert wird, z. B. `application/json`.
 
 Die Microsoft Graph-API ist eine leistungsfähige einheitliche API, die für die Interaktion mit beliebigen Microsoft-Daten verwendet werden kann. Informationen zu weiteren Möglichkeiten mit Microsoft Graph finden Sie in der API-Referenz.
-
-## <a name="see-also"></a>Siehe auch
-- Testen von REST-Beispielaufrufen in unserem [API-Tester](https://graph.microsoft.io/graph-explorer).
-- [Abrufen von Zugriffstoken zum Aufrufen von Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Im Namen eines Benutzers zugreifen](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Ohne Benutzer zugreifen](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
