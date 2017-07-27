@@ -1,11 +1,13 @@
 # <a name="get-access-without-a-user"></a>Ohne Benutzer zugreifen
-Einige Apps werden auf einem Server ausgeführt, ohne dass ein Benutzer angemeldet ist. Diese App-Typen werden häufig als Hintergrunddienste oder Daemons bezeichnet. Ein Beispiel für eine solche App ist ein E-Mail-Archivierungsdienst, der nachts reaktiviert und ausgeführt wird. Hintergrunddienste verwenden in der Regel den Fluss zur Gewährung von OAuth 2.0-Clientanmeldeinformationen, um Zugriffstoken von Azure AD abzurufen. In diesem Thema werden Sie schrittweise durch das grundlegende Verfahren zum Konfigurieren eines Hintergrunddiensts und zum Verwenden des Flusses zur Gewährung von OAuth 2.0-Clientanmeldeinformationen geführt, um ein Zugriffstoken zum Aufrufen von Microsoft Graph von Azure AD abzurufen. 
+Einige Apps rufen Microsoft Graph mit ihrer eigenen Identität und nicht im Namen eines Benutzers auf. In vielen Fällen handelt es sich dabei um Hintergrunddienste oder Daemons, die auf einem Server ausgeführt werden, ohne dass ein Benutzer angemeldet ist. Ein Beispiel für eine solche App ist ein E-Mail-Archivierungsdienst, der nachts reaktiviert und ausgeführt wird. In einigen Fällen rufen Apps, bei deren Ausführung ein Benutzer angemeldet ist, Microsoft Graph auch unter ihrer eigenen Identität auf. Beispiel: Eine App muss Funktionen verwenden, die höhere Rechte in einer Organisation erfordern als diejenigen, die dem angemeldeten Benutzer zugewiesen sind.  
+
+Apps, die Microsoft Graph mit ihrer eigenen Identität aufrufen, verwenden den Fluss zur Gewährung von OAuth 2.0-Clientanmeldeinformationen, um Zugriffstoken von Azure AD abzurufen. In diesem Thema werden Sie schrittweise durch das grundlegende Verfahren zum Konfigurieren eines Diensts und zum Verwenden des Flusses zur Gewährung von OAuth 2.0-Clientanmeldeinformationen geführt, um ein Zugriffstoken abzurufen. 
 
 ## <a name="authentication-and-authorization-steps"></a>Authentifizierungs- und Autorisierungsschritte
-Die grundlegenden Schritte zum Authentifizieren eines Hintergrunddiensts und Abrufen eines Tokens vom Azure AD v2.0-Endpunkt für den Aufruf von Microsoft Graph sind folgende:
+Die grundlegenden Schritte zum Konfigurieren eines Diensts und zum Abrufen eines Tokens vom Azure AD v2.0-Endpunkt, mit dem Ihr Dienst Microsoft Graph unter seiner eigenen Identität aufrufen kann, sind folgende:
 
 1. Registrieren der App
-2. Konfigurieren von Berechtigungen für Microsoft Graph
+2. Konfigurieren von Berechtigungen für Microsoft Graph in der App
 3. Einholen der Administratorzustimmung
 4. Abrufen eines Zugriffstokens
 5. Aufrufen von Microsoft Graph unter Verwendung des Zugriffstokens
@@ -15,7 +17,7 @@ Für die Authentifizierung beim Azure AD v2.0-Endpunkt müssen Sie Ihre App zun�
 
 Der folgende Screenshot zeigt die Registrierung einer Web-App, die für einen Hintergrunddienst konfiguriert wurde. ![Registrierung einer Dienst-App](./images/v2-service-registration.png)
 
-Für einen Hintergrunddienst müssen Sie Ihre App für die Webplattform registrieren und die folgenden Werte kopieren:
+Für einen Dienst, der Microsoft Graph unter seiner eigenen Identität aufrufen soll, müssen Sie Ihre App für die Webplattform registrieren und die folgenden Werte kopieren:
 
 - Die Anwendung-ID, die vom App-Registrierungsportal zugewiesen wurde.
 - Ein Anwendungsgeheimnis, entweder ein Kennwort oder ein öffentliches/privates Schlüsselpaar (Zertifikat).
@@ -27,7 +29,7 @@ Schritte zum Konfigurieren einer App mit dem Microsoft-App-Registrierungsportal 
 Mit dem Fluss zur Gewährung von OAuth 2.0-Clientanmeldeinformationen authentifiziert sich Ihre App direkt beim Azure AD v2.0 `/token`-Endpunkt, und zwar unter Verwendung der von Azure AD zugewiesenen Anwendungs-ID und des mit dem Portal erstellten Anwendungsgeheimnisses. 
 
 ## <a name="2-configure-permissions-for-microsoft-graph"></a>2. Konfigurieren von Berechtigungen für Microsoft Graph
-Für Apps, die ohne Benutzer ausgeführt werden, stellt Microsoft Graph Anwendungsberechtigungen zur Verfügung. (Microsoft Graph macht auch delegierte Berechtigungen für Apps verfügbar, die im Auftrag eines Benutzers ausgeführt werden.) Die Anwendungsberechtigungen, die Ihre App benötigt, werden beim Registrieren der App vorkonfiguriert. Anwendungsberechtigungen erfordern immer die Zustimmung eines Administrators. Ein Administrator kann diesen Berechtigungen entweder im [Azure-Portal](https://portal.azure.com) zustimmen, wenn die App in seiner Organisation installiert wird, oder Sie können eine Anmeldefunktionalität in der App bereitstellen, über die Administratoren den von Ihnen konfigurierten Berechtigungen zustimmen können. Sobald die Administratorzustimmung von Azure AD aufgezeichnet wurde, kann Ihre App Token anfordern, ohne dass eine erneute Zustimmung erforderlich ist. Ausführliche Informationen zu den in Microsoft Graph verfügbaren Berechtigungen finden Sie in der [Berechtigungsreferenz](./permissions_reference.md).
+Für Apps, die Microsoft Graph unter ihrer eigenen Identität aufrufen, stellt Microsoft Graph Anwendungsberechtigungen zur Verfügung. (Microsoft Graph macht auch delegierte Berechtigungen für Apps verfügbar, die Microsoft Graph im Namen eines Benutzers aufrufen.) Die Anwendungsberechtigungen, die Ihre App benötigt, werden beim Registrieren der App vorkonfiguriert. Anwendungsberechtigungen erfordern immer die Zustimmung eines Administrators. Ein Administrator kann diesen Berechtigungen entweder im [Azure-Portal](https://portal.azure.com) zustimmen, wenn die App in seiner Organisation installiert wird, oder Sie können eine Anmeldefunktionalität in der App bereitstellen, über die Administratoren den von Ihnen konfigurierten Berechtigungen zustimmen können. Sobald die Administratorzustimmung von Azure AD aufgezeichnet wurde, kann Ihre App Token anfordern, ohne dass eine erneute Zustimmung erforderlich ist. Ausführliche Informationen zu den in Microsoft Graph verfügbaren Berechtigungen finden Sie in der [Berechtigungsreferenz](./permissions_reference.md).
 
 Um Anwendungsberechtigungen für Ihre App im [Microsoft-App-Registrierungsportal](https://apps.dev.microsoft.com/) zu konfigurieren, wählen Sie unter **Microsoft Graph**, die Option **Hinzufügen** neben **Anwendungsberechtigungen**, und wählen Sie dann die von Ihrer App benötigten Berechtigungen im Dialogfeld **Berechtigungen auswählen** aus.
 
@@ -58,8 +60,8 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | redirect_uri |Erforderlich |Der Umleitungs-URI, an den die Antwort für die Weiterarbeitung durch Ihre App gesendet werden soll. Er muss genau mit einem der Umleitung-URIs übereinstimmen, die Sie im Portal registriert haben, mit der Ausnahme, dass er URL-codiert sein muss und zusätzliche Pfadsegmente enthalten kann. |
 | state |Empfohlen |Ein Wert, der in der Anforderung enthalten ist und ebenfalls in der Tokenantwort zurückgegeben wird. Es kann eine Zeichenfolge beliebigen Inhalts sein. Der Status wird verwendet, um Informationen über den Status des Benutzers in der App vor dem Versand der Authentifizierungsanforderung zu codieren, z. B. die Seite oder die Ansicht, auf bzw. in der sich der Benutzer befunden hat. |
 
-### <a name="consent-experience"></a>Zustimmungsfunktionalität
-Azure AD erzwingt, dass sich nur ein Mandantenadministrator anmelden kann, um die Anforderung auszuführen. Der Administrator wird aufgefordert, alle Anwendungsberechtigungen zu genehmigen, die Sie für Ihre App im App-Registrierungsportal angefordert haben. Nachfolgend finden Sie ein Beispiel für das Zustimmungsdialogfeld, das dem Administrator von Azure AD angezeigt wird:
+### <a name="administrator-consent-experience"></a>Oberfläche zur Administratorzustimmung
+Bei an den `/adminconsent`-Endpunkt gesendeten Anforderungen erzwingt Azure AD, dass sich nur ein Mandantenadministrator anmelden kann, um die Anforderung auszuführen. Der Administrator wird aufgefordert, alle Anwendungsberechtigungen zu genehmigen, die Sie für Ihre App im App-Registrierungsportal angefordert haben. Nachfolgend finden Sie ein Beispiel für das Zustimmungsdialogfeld, das dem Administrator von Azure AD angezeigt wird:
 
 ![Dialogfeld zur Administratorzustimmung](./images/admin-consent.png)
 
@@ -166,7 +168,12 @@ Content-Length: 407
 ```
 
 ## <a name="supported-app-scenarios-and-resources"></a>Unterstützte App-Szenarios und Ressourcen
-Hintergrunddienste werden auf einem Server ausgeführt, ohne dass ein Benutzer angemeldet ist, und verwenden den Fluss zur Gewährung von OAuth 2.0-Clientanmeldeinformationen, um sich bei Azure AD zu authentifizieren und ein Token abzurufen. Für den v2.0-Endpunkt können Sie dieses Szenario mit den folgenden Ressourcen weiter untersuchen:
+Es gibt zwei Kategorien von Apps, die Microsoft Graph unter ihrer eigenen Identität aufrufen:
+
+- Hintergrunddienste (Daemons), die auf einem Server ausgeführt werden, ohne dass ein Benutzer angemeldet ist.
+- Apps, bei deren Ausführung ein Benutzer angemeldet ist, die Microsoft Graph aber auch unter ihrer eigenen Identität aufrufen, z. B. um Funktionen zu verwenden, die höhere Rechte erfordern als die des Benutzers.
+
+Apps, die Microsoft Graph mit ihrer eigenen Identität aufrufen, verwenden den Fluss zur Gewährung von OAuth 2.0-Clientanmeldeinformationen, um sich bei Azure AD zu authentifizieren und ein Token abzurufen. Für den v2.0-Endpunkt können Sie dieses Szenario mit den folgenden Ressourcen weiter untersuchen:
 
 - Eine ausführlichere Beschreibung des Flusses zur Gewährung von Clientanmeldeinformationen, die auch Fehlerantworten enthält, finden Sie unter [Azure Active Directory v2.0 und der OAuth 2.0-Clientanmeldeinformations-Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds). 
 - Ein Beispiel, das Microsoft Graph von einem Dienst aus aufruft, finden Sie im [v2.0-Daemonbeispiel](https://github.com/Azure-Samples/active-directory-dotnet-daemon-v2) auf GitHub.

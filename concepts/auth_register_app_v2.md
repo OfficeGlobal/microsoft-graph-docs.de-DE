@@ -71,7 +71,7 @@ Weitere Details zum App-Registrierungsportal und zu den Eigenschaften, die Sie f
 
 ## <a name="azure-ad-endpoint-considerations"></a>Überlegungen zum Azure AD-Endpunkt
 
-Sie verwenden das [Azure-Portal](https://aka.ms/aadapplist), um ihre App beim Azure AD-Endpunkt zu registrieren. Sie konfigurieren die gleichen grundlegenden Eigenschaften wie z. B. Anwendungs-ID, Anwendungsgeheimmis und Umleitungs-URI/-URL, die Sie auch für den v2.0-Endpunkt angeben; es sind jedoch einige wichtige Unterschiede zu beachten: 
+Sie verwenden das [Azure-Portal](https://aka.ms/aadapplist), um Ihre App beim Azure AD-Endpunkt zu registrieren. Sie konfigurieren die gleichen grundlegenden Eigenschaften wie z. B. Anwendungs-ID, Anwendungsgeheimmis und Umleitungs-URI/-URL, die Sie auch für den v2.0-Endpunkt angeben; es sind jedoch einige wichtige Unterschiede zu beachten: 
 
 - Sie können zum Registrieren einer App nur ein Geschäfts-, Schul- oder Unikonto verwenden.
 - Ihre App erfordert für jede Plattform eine andere Anwendungs-ID.

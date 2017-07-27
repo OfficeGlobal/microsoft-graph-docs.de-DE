@@ -73,7 +73,7 @@ Sie können Microsoft Graph aus den folgenden Arten von Apps aufrufen:
 ## <a name="how-do-i-get-my-app-talking-to-azure-ad-and-microsoft-graph"></a>Wie bringe ich meine App dazu, mit Azure AD und Microsoft Graph zu kommunizieren?
 Bevor Ihre App ein Token von Azure AD abrufen kann, muss sie registriert werden. Für den Azure AD v2.0-Endpunkt verwenden Sie das [Microsoft-App-Registrierungsportal](https://apps.dev.microsoft.com/), um Ihre App zu registrieren. Für den Azure AD-Endpunkt verwenden das [Azure-Portal](https://portal.azure.com/). Durch die Registrierung wird Ihre App in Azure AD integriert, und es werden die Koordinaten und Bezeichner eingerichtet, die die App zum Abrufen von Token verwendet. Dies sind:
 
-- **Anwendungs-ID**: Ein eindeutiger Bezeichner, der von Azure AD zugewiesen wird. 
+- **Anwendungs-ID**. Ein eindeutiger Bezeichner, der von Azure AD zugewiesen wird. 
 - **Umleitungs-URI/-URL**: Ein oder mehrere Endpunkte, an denen Ihre App Antworten von Azure AD empfängt. (Für systemeigene und mobile Apps ist dies ein von Azure AD zugewiesener URI.)
 - **Anwendungsgeheimnis**: Ein Kennwort oder ein öffentliches/privates Schlüsselpaar, mit dem sich Ihre App bei Azure AD authentifiziert. (Für systemeigene oder mobile Apps nicht erforderlich.)
 
