@@ -1,30 +1,57 @@
-# Änderungsprotokoll für Microsoft Graph
-<a id="changelog-for-microsoft-graph" class="xliff"></a>
+# <a name="changelog-for-microsoft-graph"></a>Änderungsprotokoll für Microsoft Graph
 
 Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschließlich der Version 1.0 und des Beta-Endpunkts von Microsoft Graph-APIs.  
 
 Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs finden Sie unter [Bekannte Probleme](known_issues.md).
 
-## Juni 2017
-<a id="june-2017" class="xliff"></a>
+## <a name="july-2017"></a>Juli 2017
 
-### Projekt Rom
-<a id="project-rome" class="xliff"></a>
+### <a name="intune-apis"></a>Intune-APIs
+
+|Typ&nbsp;ändern|Version|Beschreibung|
+|:---|:---|:---|
+|Ergänzungen|Beta|Die [assign](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_apps_iosmobileappconfiguration_assign.md)-Aktion wurde zu [iosMobileAppConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_iosmobileappconfiguration) hinzugefügt. |
+|Ergänzungen|Beta|Die [syncDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devices_manageddevice_syncdevice.md)-Aktion wurde zu [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) hinzugefügt. |
+|Änderung|Beta|Die Eigenschaften **appsInstallAllowList**, **appsLaunchBlockList** und **appsHideList** wurden zur Entität [androidGeneralDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaft **disableAppEncryptionIfDeviceEncryptionIsEnabled** wurde zur Entität [androidManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_androidmanagedappprotection) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaft **disableAppEncryptionIfDeviceEncryptionIsEnabled** wurde zur Entität [defaultManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_defaultmanagedappprotection) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaft **complianceGracePeriodExpirationDateTime** wurde zur Entität [deviceComplianceDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancedevicestatus) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaft **complianceGracePeriodExpirationDateTime** wurde zur Entität [deviceComplianceSettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancesettingstate) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaft **complianceGracePeriodExpirationDateTime** wurde zur Entität [deviceConfigurationDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationdevicestatus) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaft **subscriptions** wurde zur Entität [deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_devicemanagement) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaft **version** wurde zur Entität [deviceManagementExchangeConnector](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnector) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaft **utcTimeOffsetInMinutes** wurde zur Entität [iosUpdateConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosupdateconfiguration) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaft **complianceGracePeriodExpirationDateTime** wurde zur Entität [iosUpdateDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosupdatedevicestatus) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaft **preSharedKey** wurde zur Entität [macOSWiFiConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_macoswificonfiguration) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaften **phoneNumber**, **androidSecurityPatchLevel** und **userDisplayName** wurden zur Entität [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaften **userName**, **deviceModel**, **platform** und **complianceGracePeriodExpirationDateTime** wurden zur Entität [managedDeviceMobileAppConfigurationDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicestatus) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaft **userPrincipalName** wurde zur Entität [mobileAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappinstallstatus) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaft **overrideDefaultRule** wurde zur Entität [onPremisesConditionalAccessSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_onpremisesconditionalaccesssettings) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaft **userPrincipalName** wurde zur Entität [userAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_userappinstallstatus) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaften **connectAppBlockAutoLaunch**, **deviceAccountBlockExchangeServices**, **deviceAccountEmailAddress**, **deviceAccountExchangeServerAddress**, **deviceAccountRequirePasswordRotation**, **deviceAccountSessionInitiationProtocolAddress**, **settingsBlockMyMeetingsAndFiles**, **settingsBlockSessionResume**, **settingsBlockSigninSuggestions**, **settingsDefaultVolume**, **settingsScreenTimeoutInMinutes**, **settingsSessionTimeoutInMinutes** und **settingsSleepTimeoutInMinutes** wurden zur Entität [windows10TeamGeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10teamgeneralconfiguration) hinzugefügt.|
+|Änderung|Beta|Die Navigationseigenschaft **deploymentSummary** wurde zur Entität [defaultManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_defaultmanagedappprotection) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaften **settingName**, **userId**, **userName**, **userEmail** und **currentValue** wurden zum komplexen Typ [deviceCompliancePolicySettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicysettingstate) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaften **settingName**, **userId**, **userName**, **userEmail** und **currentValue** wurden dem komplexen Typ [deviceConfigurationSettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationsettingstate) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaft **unknownCount** wurde zum komplexen Typ [deviceOperatingSystemSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_deviceoperatingsystemsummary) hinzugefügt.|
+
+
+
+## <a name="june-2017"></a>Juni 2017
+
+### <a name="project-rome"></a>Projekt Rom
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Ergänzungen|Beta|Folgende Ressourcen und APIs wurden hinzugefügt:<br/>[Aktivität](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_activity)<br/>[Aktivität erstellen oder ersetzen](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_activity)<br/>[Aktivität löschen](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_delete_activity)<br/>[Verlaufselement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_historyitem)<br/>[Verlaufselement erstellen oder ersetzen](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_historyitem)<br/>[Verlaufselement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_delete_historyitem) löschen|
 
-### Outlook-Kalender
-<a id="outlook-calendar" class="xliff"></a>
+### <a name="outlook-calendar"></a>Outlook-Kalender
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Ergänzungen|v1.0|Die folgenden vier [calendar](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/calendar)-Eigenschaften wurden auf v1.0 heraufgestuft: **canEdit**, **canShare**, **canViewPrivateItems** und **owner**.|
 
 
-### Intune APIs
-<a id="intune-apis" class="xliff"></a>
+### <a name="intune-apis"></a>Intune APIs
 
 |Änderungstyp|Version|Beschreibung|
 |:---|:---|:---|
@@ -77,32 +104,27 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Änderung|Beta|Die Eigenschaft **address** wurde dem komplexen Typ [vpnServer](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_vpnserver) hinzugefügt.|
 
 
-## Mai 2017
-<a id="may-2017" class="xliff"></a>
+## <a name="may-2017"></a>Mai 2017
 
-### Änderungen der Anwendungs-API
-<a id="application-api-changes" class="xliff"></a>
+### <a name="application-api-changes"></a>Änderungen der Anwendungs-API
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Änderung|Beta| Update der Anwendungs-API. Dies ist der erste Satz von Änderungen, einschließlich Umbenennung von Eigenschaften und Umstrukturierung der [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application)-Entität.<br/>**Neue Entitäten:** [api](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/api]), [informationalUrl](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/informationalUrl), [installedClient](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/installedclient), [permissionScope](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/permissionscope), [preauthorizedApplication](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/preauthorizedapplication), [web](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/web).<br/>**Entfernte Eigenschaften:** addIns, appRoles, availableToOtherOrganizations, knownClientApplications, oauth2AllowUrlPathMatching, recordConsentConditions.<br/>**Umbenannte Eigenschaften:** appId in id, identifierUris in applicationAliases, availableToOtherTenants in orgRestrictions, mainLogo in logo, oauth2Permissions in publishedPermissionsScopes, publicClient in allowPublicClient, replyUrls in redirectUrls.<br/>**Neue Eigenschaften:** tags. |
 
-### Entfernung der veralteten Planner-API
-<a id="remove-deprecated-planner-api" class="xliff"></a>
+### <a name="remove-deprecated-planner-api"></a>Entfernung der veralteten Planner-API
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:-------------|
 |Löschung|Beta|Die folgenden Entitäten wurden entfernt:<br/>**task**<br/>**plan**<br/>**bucket**<br/>**taskDetails**<br/>**planDetails**<br/>**taskBoardTaskFormat**<br/>**planTaskBoard**|
 
-### Projekt Rom
-<a id="project-rome" class="xliff"></a>
+### <a name="project-rome"></a>Projekt Rom
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:-------------|
 |Ergänzungen|Beta|Zusätzliche Unterstützung für Projekt Rom, einschließlich [Abrufen einer Liste der Geräte](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_devices), [Senden eines Befehls an ein Gerät](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/send_device_command), und [Überprüfen des Status eines Befehls](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/get_device_command_status).|
 |Ergänzungen|Beta|Zusätzliche Unterstützung für Benutzer[aktivitäten](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_activity) und [historyItems](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_historyitem), einschließlich [upsert-Vorgängen für eine Aktivität](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_activity) und [upsert-Vorgängen für ein historyItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_historyitem).|
 
-### Eigenschaftsänderungen für administrative Einheiten
-<a id="administrative-units-property-changes" class="xliff"></a>
+### <a name="administrative-units-property-changes"></a>Eigenschaftsänderungen für administrative Einheiten
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
@@ -111,38 +133,33 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 | Änderung        | Beta       | Geänderte Navigationseigenschaft  scopedAdministrators in scopedRoleMembers für die [administrativeUnit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/administrativeunit)-Entität |
 | Änderung        | Beta       | Geänderte Navigationseigenschaft  scopedAdministrators in scopedMembers für die [directoryRole](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/directoryrole)-Entität |
 
-### Hinzufügen von Benutzern und Gruppen-Webhook-Unterstützung in der Vorschau
-<a id="add-users-and-groups-webhook-support-in-preview" class="xliff"></a>
+### <a name="add-users-and-groups-webhook-support-in-preview"></a>Hinzufügen von Benutzern und Gruppen-Webhook-Unterstützung in der Vorschau
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 | Änderung        | Beta       | Zusätzliche Unterstützung zu [Webhooks](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/webhooks) für Benutzer und Gruppen.
 
-### Delta-Abfrage zu v1.0 hinzufügen
-<a id="add-delta-query-to-v10" class="xliff"></a>
+### <a name="add-delta-query-to-v10"></a>Delta-Abfrage zu v1.0 hinzufügen
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
-| Ergänzungen      | v1.0       | Delta-Funktion-Support zu V1.0 hinzufügen Zu folgenden Entitäten hinzufügen, um [Delta-Abfrage](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview) auszuführen:<br/>Kontakt<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Beispiele finden Sie unter Folgendem:<br/>[Inkrementelle Änderungen an Gruppen abrufen](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_groups)<br/>[Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_messages)<br/>[Inkrementelle Änderungen an Benutzern abrufen](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users)|
+| Ergänzungen      | v1.0       | Delta-Funktion-Support zu V1.0 hinzufügen Zu folgenden Entitäten hinzufügen, um [Delta-Abfrage](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview) auszuführen:<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Beispiele finden Sie unter Folgendem:<br/>[Inkrementelle Änderungen an Gruppen abrufen](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_groups)<br/>[Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_messages)<br/>[Inkrementelle Änderungen an Benutzern abrufen](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users)|
 | Änderung        | Beta       | Hinzufügen von zusätzlicher optionaler Abfrage-Filterfunktion (anhand der Id) zu [Benutzer](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_delta) und [Gruppen](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_delta). |
 
-### Unterstützung von hinzugefügte Benutzer Ressourcen für gelöschte Elemente
-<a id="added-user-resource-support-for-deleted-items" class="xliff"></a>
+### <a name="added-user-resource-support-for-deleted-items"></a>Unterstützung von hinzugefügte Benutzer Ressourcen für gelöschte Elemente
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 | Ergänzungen      | Beta       | Es wurde Unterstützung zum [Wiederherstellen und endgültigen Löschen von Benutzern](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/directory) hinzugefügt. |
 
-### Hinzugefügter OnPremisesProvisioningError
-<a id="added-onpremisesprovisioningerror" class="xliff"></a>
+### <a name="added-onpremisesprovisioningerror"></a>Hinzugefügter OnPremisesProvisioningError
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 | Ergänzungen      | Beta       | Neue Entität: [OnPremisesProvisioningError](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/onpremisesprovisioningerror) |
 | Änderung        | Beta       | Hinzugefügte OnPremisesProvisioningError-Eigenschaft zu [Benutzer](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user), [Gruppe](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group), und [Organisationskontakt](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/orgcontact) |
 
-### Hinzugefügte DeletedDateTime-Eigenschaft
-<a id="added-deleteddatetime-property" class="xliff"></a>
+### <a name="added-deleteddatetime-property"></a>Hinzugefügte DeletedDateTime-Eigenschaft
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
@@ -150,22 +167,19 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Änderung|Beta|Hinzugefügte DeletedDateTime-Eigenschaft zu [Gruppen](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group)-Entität.
 |Änderung|Beta|Hinzugefügte DeletedDateTime-Eigenschaft zu [App](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application)-Entität.
 
-### Hinzufügte Domänenvorgängen zu v1.0
-<a id="added-domain-operations-to-v10" class="xliff"></a>
+### <a name="added-domain-operations-to-v10"></a>Hinzufügte Domänenvorgängen zu v1.0
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Ergänzungen|V1.0|Hinzugefügte Vorgänge in [Domänen](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain)<br/>Neue Entitäten:</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>Neue Aktionen:</br>[überprüfen](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/domain_verify) |
 
-### Hinzugefügte Verträge zu v1.0
-<a id="added-contracts-to-v10" class="xliff"></a>
+### <a name="added-contracts-to-v10"></a>Hinzugefügte Verträge zu v1.0
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Ergänzungen|V1.0|Neue Entität:</br>[Vertrag](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contract) |
 
-### Hinzugefügte licenseDetails zu v1.0
-<a id="added-licensedetails-to-v10" class="xliff"></a>
+### <a name="added-licensedetails-to-v10"></a>Hinzugefügte licenseDetails zu v1.0
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
@@ -173,8 +187,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Änderung  |v1.0|Neue [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/user_list_licensedetails)-Nagivationseigenschaft für [Benutzer](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) |
 
 
-### Laufwerk-API
-<a id="drive-api" class="xliff"></a>
+### <a name="drive-api"></a>Laufwerk-API
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:----------|:--------------|
@@ -184,8 +197,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 | Änderung | Beta | **configuratorUrl**- und **webHtml**-Eigenschaften zu **sharingLink** hinzugefügt. <br/> **folderView**-Ressourcentyp und die **Ansicht**-Eigenschaft zu **Ordner**-Ressourcentyp hinzugefügt. <br/> **listItem**-Navigationseigenschaft zu **driveItem** hinzugefügt. <br/> **list**-Navigationseigenschaft zu **drive** hinzugefügt.
 
 
-### Erweiterungen (Offene Erweiterungen)
-<a id="extensions-open-extensions" class="xliff"></a>
+### <a name="extensions-open-extensions"></a>Erweiterungen (Offene Erweiterungen)
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
@@ -195,8 +207,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Ergänzungen|Beta|Unterstützung für `$expand` um [offene Erweiterungen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/opentypeextension_get) in [administrativeUnit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/administrativeunit) zu erhalten.|
 
 
-### Erweiterungen (Schemaerweiterungen)
-<a id="extensions-schema-extensions" class="xliff"></a> 
+### <a name="extensions-schema-extensions"></a>Erweiterungen (Schemaerweiterungen) 
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
@@ -207,15 +218,13 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Änderung|v1.0 und Beta| Sie können nun einen Schema-Erweiterungskomplextyp auf Null setzen, um eine Schemaerweiterung aus einer Ressourceninstanz zu entfernen. |
 
 
-### Gruppe
-<a id="group" class="xliff"></a>
+### <a name="group"></a>Gruppe
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:----------|:--------------|
 | Ergänzungen | v1.0 und Beta | Die Navigationseigenschaften**drives** und **sites** wurden zu **group** hinzugefügt.
 
-### Insights-APIs
-<a id="insights-apis" class="xliff"></a>
+### <a name="insights-apis"></a>Insights-APIs
 
 |**Änderungstyp**|**Version**|**Beschreibung**| 
 |:-------------|:-----------|:--------------|
@@ -224,8 +233,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Änderung|Beta|Neue **Type**-Eigenschaft in der:<br />[resourceVisualization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/insights_resourcevisualization)-Ressource. <br />
 |Löschung|Beta|Die folgenden Entitäten wurden entfernt:<br/>**workingWith**<br/>**trendingAround**<br/>|
 
-### Intune-APIs
-<a id="intune-apis" class="xliff"></a>
+### <a name="intune-apis"></a>Intune-APIs
 
 |Änderungstyp|Version|Beschreibung|
 |:---|:---|:---|
@@ -287,24 +295,21 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Änderung|Beta|Die Eigenschaft **archiveFolder** wurde vom komplexen Typ [mailboxSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailboxSettings) entfernt.|
 
 
-### Outlook-Kalender
-<a id="outlook-calendar" class="xliff"></a>
+### <a name="outlook-calendar"></a>Outlook-Kalender
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Ergänzungen|v1.0 und Beta|Für **findMeetingTimes**, neuen Aufzählungswert **uneingeschränkt** hinzugefügt, den Sie als **activityDomain**-Eigenschaft, Teil des **TimeConstraint**- Parameters, spezifizieren. Dies lässt **findMeetingTimes** nach Zeiten suchen, die für die Art der Aktivität geeignet sind, für die Sie planen. Weitere Details im Abschnitt [request body](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_findmeetingtimes#request-body).|
 |Ergänzungen|Beta|Unterstützung, die einen **event**-Text im Klartext erhält, als Alternative zum Standard-HTML-Format. Siehe [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/event_get)- und [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_events)-Ereignisse für Details.|
 
-### Outlook-Mail
-<a id="outlook-mail" class="xliff"></a>
+### <a name="outlook-mail"></a>Outlook-Mail
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Änderung|Beta|Unterstützung, die einen **message**-Text im Klartext erhält, als Alternative zum Standard-HTML-Format. Siehe [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/message_get)- und [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_messages)-Ereignisse für Details.|
 
 
-### Outlook-Aufgaben
-<a id="outlook-tasks" class="xliff"></a>
+### <a name="outlook-tasks"></a>Outlook-Aufgaben
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
@@ -313,15 +318,13 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Ergänzungen|Beta|Outlook-Aufgaben unterstützen Anhänge ([attachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/attachment), [fileAttachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/fileattachment), [itemAttachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemattachment) und [referenceAttachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/referenceattachment)-Ressourcen). |
 |Ergänzungen|Beta|Outlook-Aufgaben unterstützen [extended properties](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/extended-properties-overview) ([singleValueLegacyExtendedProperty](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/singlevaluelegacyextendedproperty) und [multiValueLegacyExtendedProperty](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/multivaluelegacyextendedproperty)-Ressourcen). |
 
-### Planner-APIs
-<a id="planner-apis" class="xliff"></a>
+### <a name="planner-apis"></a>Planner-APIs
 
 |**Änderungstyp**|**Version**|**Beschreibung**| 
 |:-------------|:-----------|:--------------|
 |Ergänzungen|v1.0|[Planner-APIs](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/planner_overview) hinzugefügt<br />Neue Ressourcen:<br />[plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerPlan) <br />[plannerTask](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerTask) <br />[plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerPlanDetails) <br />[plannerTaskDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerTaskDetails) <br />[plannerBucket](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerBucket) <br />[plannerAssignedToTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerassignedtotaskboardtaskformat) <br />[plannerBucketTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerbuckettaskboardtaskformat) <br />[plannerProgressTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerprogresstaskboardtaskformat) | 
 
-### SharePoint-Websites
-<a id="sharepoint-sites" class="xliff"></a>
+### <a name="sharepoint-sites"></a>SharePoint-Websites
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:----------|:--------------|
@@ -329,8 +332,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 | Änderung        | Beta      | Das Format des Bezeichners für die **site**-Ressource hat sich geändert. Dies ist eine wichtige Änderung in der Beta-API.
 | Entfernt       | Beta      | Die **sharePoint**-Entität aus der Beta-API wurde entfernt. Diese Funktion ist nun über die **sites**-Sammlung erhältlich.
 
-### SharePoint-Listen
-<a id="sharepoint-lists" class="xliff"></a>
+### <a name="sharepoint-lists"></a>SharePoint-Listen
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:----------|:--------------|
@@ -340,47 +342,40 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 
 
-## April 2017
-<a id="april-2017" class="xliff"></a>
+## <a name="april-2017"></a>April 2017
 
-### Eigenschaftsänderungen für administrative Einheiten
-<a id="administrative-units-property-changes" class="xliff"></a>
+### <a name="administrative-units-property-changes"></a>Eigenschaftsänderungen für administrative Einheiten
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Änderung|Beta| APIs für administrative Einheiten werden in der Vorschau (Beta) aktualisiert. Die erste Gruppe von Änderungen wird am 3. Mai 2017 angewendet. Im Rahmen der Änderungen werden die folgenden Eigenschaften umbenannt:<br />- Komplexer Typ **roleMemberInfo** in komplexen Typ **identity** für die scopedRoleMembership-Entität<br />- Navigationseigenschaft **scopedAdministratorOf** in **scopedRoleMemberOf** für die user-Entität<br />- Navigationseigenschaft **scopedAdministrators** in **scopedRoleMembers** für die administrativeUnit-Entität<br />- Navigationseigenschaft **scopedAdministrators** in **scopedMembers** für die directoryRole-Entität |
 
-### Änderungen an der application- und servicePrincipal-API
-<a id="application-and-serviceprincipal-api-changes" class="xliff"></a>
+### <a name="application-and-serviceprincipal-api-changes"></a>Änderungen an der application- und servicePrincipal-API
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Änderung|Beta| Die [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application)- und [servicePrincipal](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/serviceprincipal)-APIs werden in der Vorschau (Beta) aktualisiert. Die erste Gruppe von Änderungen wird am 15. Mai 2017 angewendet. Die Änderungen umfassen Umbenennungen und Umstrukturierungen von Eigenschaften. Einige Eigenschaften (z. B. appRoles und addIns) sind erst verfügbar, wenn die Änderungen abgeschlossen sind. Die Änderungen werden in der Vorschau (Beta) vor der Veröffentlichung in v1.0 veröffentlicht. |
 
-### Es wurde Vorschauunterstützung für Entwickler von Cloudlösungsanbietern hinzugefügt.
-<a id="added-preview-support-for-cloud-solution-provider-developers" class="xliff"></a>
+### <a name="added-preview-support-for-cloud-solution-provider-developers"></a>Es wurde Vorschauunterstützung für Entwickler von Cloudlösungsanbietern hinzugefügt.
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Ergänzungen|Beta|Es wurden neue Vorschaufunktionen hinzugefügt, damit bereits genehmigte Anwendungen von Cloudlösungsanbieter Microsoft Graph aufrufen. Diese werden in einem neuen [Autorisierungsthema](https://graph.microsoft.io/en-us/docs/concepts/auth_cloudsolutionprovider) beschrieben. |
 
-### Der Benutzerentität wurden onPremises-Eigenschaften hinzugefügt.
-<a id="added-onpremises-properties-to-user-entity" class="xliff"></a>
+### <a name="added-onpremises-properties-to-user-entity"></a>Der Benutzerentität wurden onPremises-Eigenschaften hinzugefügt.
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Ergänzungen|Beta|Der [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user)-Entität wurden die neuen Eigenschaften onPremises, onPremisesDomainName, OnPremisesSamAccountName und onPremisesUserPrincipalName hinzugefügt. |
 
-### Neue Planner-APIs und ein Update der Eigenschaft für Gruppensichtbarkeit.
-<a id="new-planner-apis-and-an-update-to-the-group-visibility-property" class="xliff"></a>
+### <a name="new-planner-apis-and-an-update-to-the-group-visibility-property"></a>Neue Planner-APIs und ein Update der Eigenschaft für Gruppensichtbarkeit.
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Änderung|Beta|**HiddenMembership** wurde als zusätzlicher Wert für die Sichtbarkeitseigenschaft, der [Group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group)-Entität hinzugefügt. |
 |Ergänzungen|Beta|Es wurde eine neue [Planner-API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/planner_overview) hinzugefügt.<br />Neue Ressourcen:<br />[plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlan) <br />[plannerTask](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerTask) <br />[plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanDetails) <br />[plannerTaskDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerTaskDetails) <br />[plannerBucket](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerBucket) <br />[plannerAssignedToTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerassignedtotaskboardtaskformat) <br />[plannerBucketTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerbuckettaskboardtaskformat) <br />[plannerProgressTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerprogresstaskboardtaskformat) | 
 
-### Intune APIs
-<a id="intune-apis" class="xliff"></a>
+### <a name="intune-apis"></a>Intune APIs
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:---|:---|:---|
 |Ergänzungen|Beta|Hinzugefügte neue Entitäten:<br/>[androidForWorkCompliancePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy)<br/>[deviceComplianceSettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancesettingstate)<br/>[deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_deviceinstallstate)<br/>[deviceManagementScript](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementscript)<br/>[deviceManagementScriptGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementscriptgroupassignment)<br/>[deviceManagementScriptState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementscriptstate)<br/>[eBookGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_ebookgroupassignment)<br/>[iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_iosvppebook)<br/>[managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_managedebook)<br/>[userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_userinstallstatesummary)<br/>[windowsManagementApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsmanagementapp)<br/>[windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsmanagementapphealthstate)<br/>|
@@ -429,11 +424,9 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Änderung|Beta|Die folgenden Eigenschaften im komplexen Typ [omaSettingBase64](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_omasettingbase64) wurden geändert:<br/>**fileName** von „Erforderlich“ in „Optional“<br/>|
 |Änderung|Beta|Die folgenden Eigenschaften im komplexen Typ [omaSettingStringXml](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_omasettingstringxml) wurden geändert:<br/>**fileName** von „Erforderlich“ in „Optional“<br/>|
 
-## März 2017
-<a id="march-2017" class="xliff"></a>
+## <a name="march-2017"></a>März 2017
 
-### Intune APIs
-<a id="intune-apis" class="xliff"></a>
+### <a name="intune-apis"></a>Intune APIs
 
 |Änderungstyp|Version|Beschreibung|
 |:---|:---|:---|
@@ -524,38 +517,33 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Änderung|Beta|Der Typ der folgenden Eigenschaften im komplexen Typ [windowsPackageInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowspackageinformation) wurde geändert:<br/>**applicableArchitecture** von [windowsArchitecture](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/windowsArchitecture) in „Zeichenfolge“<br/>|
 |Änderung|Beta|Die folgenden Eigenschaften im komplexen Typ  [windowsPackageInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowspackageinformation) wurden geändert:<br/>**applicableArchitecture** von „Optional“ in „Erforderlich“<br/>|
 
-### Hinzufügen von Verträgen zu Microsoft Graph
-<a id="add-contracts-to-microsoft-graph" class="xliff"></a>
+### <a name="add-contracts-to-microsoft-graph"></a>Hinzufügen von Verträgen zu Microsoft Graph
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Ergänzungen|Beta|Neue Ressource</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
 
-### Hinzufügen von Domänenvorgängen zu Microsoft Graph
-<a id="add-domain-operations-to-microsoft-graph" class="xliff"></a>
+### <a name="add-domain-operations-to-microsoft-graph"></a>Hinzufügen von Domänenvorgängen zu Microsoft Graph
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Ergänzungen|Beta|Funktionen wurden zu [Domänen](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain) hinzugefügt.<br/>Neue Entitäten:</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsUnavailableRecord)<br/>Neue Aktionen:</br>[forceDelete](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_forcedelete)</br>[verify](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_verify) |
 
-### Hinzufügen von benutzerdefinierten Daten zu Microsoft Graph unter Verwendung von Schemaerweiterungen
-<a id="add-custom-data-to-microsoft-graph-using-schema-extensions" class="xliff"></a>
+### <a name="add-custom-data-to-microsoft-graph-using-schema-extensions"></a>Hinzufügen von benutzerdefinierten Daten zu Microsoft Graph unter Verwendung von Schemaerweiterungen
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Ergänzungen|Beta|Erweitern von Microsoft Graph mit Anwendungsdaten unter Verwendung von [Schemaerweiterungen](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview).  Dies wird in den folgenden Ressourcen unterstützt:<br/>Administrative Einheit<br/>Kalenderereignis<br/>Gerät<br/>Gruppe<br/>Nachricht<br/>Organisation<br/>Privater Kontakt<br/>Beitrag<br/>Benutzer<br/>Sehen Sie sich das folgende Beispiel an:<br/>[Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen (Preview)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_schema_groups)|
 |Ergänzungen|Beta|Es wurde eine alternative Möglichkeit zum Erstellen einer Schemaerweiterungsdefinition bereitgestellt, ohne dass eine überprüfte Vanity-.com-Domäne erforderlich ist. Weitere Informationen finden Sie unter [Schemaerweiterungen](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview).|
 
-### Hinzufügen von benutzerdefinierten Daten zu Microsoft Graph unter Verwendung von offenen Erweiterungen
-<a id="add-custom-data-to-microsoft-graph-using-open-extensions" class="xliff"></a>
+### <a name="add-custom-data-to-microsoft-graph-using-open-extensions"></a>Hinzufügen von benutzerdefinierten Daten zu Microsoft Graph unter Verwendung von offenen Erweiterungen
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Änderung| v1.0 und Beta | Die bisherigen „Office 365-Datenerweiterungen“ wurden in „offene Erweiterungen“ umbenannt. |
 |Ergänzungen|Beta|Es wurden Ressourcen hinzugefügt, die [offene Erweiterungen](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#open-extensions) unterstützen: <br/>Administrative Einheit<br/>Gerät<br/>Gruppe<br/>Organisation<br/>Benutzer<br/>Sehen Sie sich das folgende Beispiel an:<br/>[Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Preview)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_open_users)|
 
-### Verzeichnis-APIs
-<a id="directory-apis" class="xliff"></a>
+### <a name="directory-apis"></a>Verzeichnis-APIs
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
@@ -565,25 +553,21 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Ergänzungen|Beta|Neue Entität:</br>[licenseDetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/licensedetails) |
 |Änderung  |Beta|Neue [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/user_list_licensedetails)-Nagivationseigenschaft für [Benutzer](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) |
 
-### Bericht-APIs
-<a id="reports-apis" class="xliff"></a>
+### <a name="reports-apis"></a>Bericht-APIs
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Ergänzungen|Beta|Die neue Vorschau-API für Office 365-Berichte wurde eingeführt. Sie können sie zum Abrufen von Verwendungsberichten darüber verwenden, wie Personen in Ihrem Unternehmen Office 365-Dienste nutzen. Sie können zum Beispiel identifizieren, wer einen Dienst häufig verwendet und Kontingente erreicht oder wer vielleicht gar keine Office 365-Lizenz benötigt. Weitere Informationen finden Sie unter [Bericht](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/report).|
 
-### Verzeichnis-APIs
-<a id="directory-apis" class="xliff"></a>
+### <a name="directory-apis"></a>Verzeichnis-APIs
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Ergänzungen|Beta|Neue Entität:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
 
-## Februar 2017
-<a id="february-2017" class="xliff"></a>
+## <a name="february-2017"></a>Februar 2017
 
-### Intune APIs
-<a id="intune-apis" class="xliff"></a>
+### <a name="intune-apis"></a>Intune APIs
 
 |Änderungstyp|Version|Beschreibung|
 |:---|:---|:---|
@@ -624,11 +608,9 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 
 
-## Januar 2017
-<a id="january-2017" class="xliff"></a>
+## <a name="january-2017"></a>Januar 2017
 
-### Outlook-Kalender
-<a id="outlook-calendar" class="xliff"></a>
+### <a name="outlook-calendar"></a>Outlook-Kalender
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
@@ -638,8 +620,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Änderung|v1.0|Der komplexe Typ des [Teilnehmers](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/attendee) wird jetzt von AttendeeBase abgeleitet, der wiederum vom [Empfänger](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/recipient) abgeleitet wird. Einschließlich die vererbten Eigenschaften besteht es aus denselben **Status**-, **Typ**- und **E-Mail-Adresse**-Eigenschaften wie zuvor.|
 |Ergänzungen|Beta|hexColor zur [Kalender](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/calendar)-Ressource hinzugefügt.|
 
-### Intune APIs
-<a id="intune-apis" class="xliff"></a>
+### <a name="intune-apis"></a>Intune APIs
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
@@ -662,11 +643,9 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Änderung|Beta|Die Eigenschaften **brandingOptions**, **defaultLocale**, **displayName**, **fromEmailAddress**, **lastModifiedDateTime** und **localizedNotificationMessages** wurden der [notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_notification_notificationmessagetemplate)-Entität hinzugefügt.|
 |Änderung|Beta|Die Eigenschaften **appsAllowTrustedAppsSideloading**, **appsBlockWindowsStoreOriginatedApps**, **developerUnlockSetting**, **edgeBlockAccessToAboutFlags**, **edgeBlockDeveloperTools**, **edgeBlockExtensions**, **edgeBlockInPrivateBrowsing**, **edgeFirstRunUrl**, **edgeHomepageUrls**, **gameDvrBlocked**, **settingsBlockAddProvisioningPackage**, **settingsBlockChangeLanguage**, **settingsBlockChangePowerSleep**, **settingsBlockChangeRegion**, **settingsBlockChangeSystemTime**, **settingsBlockEditDeviceName**, **settingsBlockRemoveProvisioningPackage**, **sharedUserAppDataAllowed**, **smartScreenBlockPromptOverride**, **smartScreenBlockPromptOverrideForFiles**, **storageRestrictAppDataToSystemVolume**, **storageRestrictAppInstallToSystemVolume**, **webRtcBlockLocalhostIpAddress**, **windowsStoreBlockAutoUpdate** und **windowsStoreEnablePrivateStoreOnly** wurden der [windows10GeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration)-Entität hinzugefügt.|
 
-## Dezember 2016
-<a id="december-2016" class="xliff"></a>
+## <a name="december-2016"></a>Dezember 2016
 
-### Delta-Abfrage
-<a id="delta-query" class="xliff"></a>
+### <a name="delta-query"></a>Delta-Abfrage
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
@@ -675,25 +654,21 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
   [Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen (Vorschau)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_messages)<br/>
   [Inkrementelle Änderungen an Benutzern abrufen (Vorschau)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users)|
 
-### Excel-APIs
-<a id="excel-apis" class="xliff"></a>
+### <a name="excel-apis"></a>Excel-APIs
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Ergänzungen|v1.0|workbookPivotTable-Ressource, refresh- und refreshAll-Aktion für pivotTables, workbookRangeView-Ressource, visibleView-Aktion für den gefilterten Bereich zum Zurückgeben von workbookRangeView an den Benutzer, Abrufen der Sammlung rows und range-Ressource deaktiviert für visibleView, Funktionen columnsAfter, columnsBefore, resizedRange, rowsAbove und rowsBelow deaktiviert für range-Ressource und neue Tabelleneigenschaften hinzugefügt.|
 
-### Intune APIs
-<a id="intune-apis" class="xliff"></a>
+### <a name="intune-apis"></a>Intune APIs
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Ergänzungen|Beta|Ressourcen und Methode-APIs für Microsoft Intune hinzugefügt. Dies ist eine große Gruppe von Ressourcen und Methoden, um die öffentliche Vorschau von Intune auf Azure-Portal zu unterstützen. Informationen über den Dienst Intune finden Sie unter der [Intune Dokumentation](https://go.microsoft.com/fwlink/?linkid=836405). Informationen zu den Intune Ressourcen und APIs finden Sie unter [Arbeiten mit Intune in Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview).|
 
-## Oktober 2016
-<a id="october-2016" class="xliff"></a>
+## <a name="october-2016"></a>Oktober 2016
 
-### Autorisierungsanbieter
-<a id="authorization-provider" class="xliff"></a>
+### <a name="authorization-provider"></a>Autorisierungsanbieter
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
@@ -701,26 +676,22 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Ergänzungen|v1.0 und Beta|Der v2-Authentifizierungsendpunkt unterstützt jetzt [Berechtigungsbereiche, die die Zustimmung des Administrators erfordern](http://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference), über den [Administratorzustimmungs-Endpunkt](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes).|
 |Ergänzungen|v1.0 und Beta|Der v2-Authentifizierungsendpunkt unterstützt jetzt die Administratorzustimmung für alle Benutzer in einem Mandanten über die [Administratorzustimmungs-Endpunkt](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes).|
 
-### Einladungs-APIs
-<a id="invitation-apis" class="xliff"></a>
+### <a name="invitation-apis"></a>Einladungs-APIs
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
 |Ergänzungen|Beta|Die invitedUserType-Eigenschaft wurde dem Einladungsentitätstyp hinzugefügt, der den Typ von Benutzer definiert (**Gast** oder **Mitglied**), der eingeladen wird.|
 |Löschung|Beta|Die invitedToGroups-Eigenschaft wird am 11.11.2016 aus dem Einladungsentitätstyp entfernt. Dies bedeutet, dass Sie mithilfe dieser API keinen eingeladenen Benutzer mehr zu einer Gruppe hinzufügen können. Verwenden von [API zum Hinzufügen von Mitglieder](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_post_members) zum Hinzufügen eines Benutzers zu einer Gruppe.|
 
-## September 2016
-<a id="september-2016" class="xliff"></a>
+## <a name="september-2016"></a>September 2016
 
-### Azure AD-Anwendungsproxy
-<a id="azure-ad-application-proxy" class="xliff"></a>
+### <a name="azure-ad-application-proxy"></a>Azure AD-Anwendungsproxy
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|Beta|Azure AD-Anwendungsproxy-APIs sind jetzt im Beta-Endpunkt von Microsoft Graph verfügbar. Diese APIs ermöglichen die sichere Veröffentlichung von lokalen Anwendungen für Benutzer außerhalb des Organisationsnetzwerks unter Verwendung von Azure AD als allgemeine Zugriffssteuerebene. Mit den veröffentlichten APIs können Sie Anwendungen schreiben, die verschiedene Aspekte vom Anwendungsproxy abrufen und aktualisieren können, u. a. _Connectors_, _connectorGroups_ und _onPremisesPublishing_-Einstellungen einer Anwendung.|
 
-### Laufwerk
-<a id="drive" class="xliff"></a>
+### <a name="drive"></a>Laufwerk
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
@@ -728,8 +699,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Ergänzungen|Beta|Die _search_-Funktion wurde zu einem Laufwerk hinzugefügt, um mehr Elemente als nur die im Stammordner des Laufwerks durchsuchen zu können.|
 
 
-### DriveItem
-<a id="driveitem" class="xliff"></a>
+### <a name="driveitem"></a>DriveItem
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
@@ -739,16 +709,14 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Ergänzungen|Beta|_quickXorHash_-Wert für Dateien in OneDrive for Business hinzugefügt.|
 |Ergänzungen|Beta|Bereich für _createSharingLink_ hinzugefügt, mit dem Unternehmen freizugebende Links oder anonyme freizugebende Links erstellen können.|
 
-### Erweiterte Eigenschaften
-<a id="extended-properties" class="xliff"></a>
+### <a name="extended-properties"></a>Erweiterte Eigenschaften
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|v1.0|
   [Erweiterte Eigenschaften](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/extended-properties-overview) werden jetzt von folgenden Ressourcen unterstützt: Nachricht, mailFolder, Ereignis, Kalender, Kontakt, contactFolder, Gruppenereignis, Gruppenkalender, Gruppenbeitrag.|
 
-### Gruppen
-<a id="groups" class="xliff"></a>
+### <a name="groups"></a>Gruppen
 
 Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vorschau-API hinzugefügt, einschließlich der aufgelisteten Zusätze in der folgenden Tabelle:
 
@@ -760,29 +728,25 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 |Ergänzungen|Beta|Die **preferredLanguage**-Eigenschaft wurde hinzugefügt, um die bevorzugte Sprache für eine Office 365-Gruppe anzugeben.|
 |Ergänzungen|Beta|Die **theme**-Eigenschaft wurde hinzugefügt, um ein Farbschema für eine Office 365-Gruppe anzugeben.|
 
-### Unterstützung für Hybridbereitstellung
-<a id="hybrid-deployment-support" class="xliff"></a>
+### <a name="hybrid-deployment-support"></a>Unterstützung für Hybridbereitstellung
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|v1.0|Apps können Version 1.0 von Outlook-Mail, -Kalender und Kontakte-APIs für den Zugriff auf lokale Postfächer in einer Hybridbereitstellung mit Exchange 2016 mit kumulativem Update 3 (KU3) verwenden. Erfahren Sie mehr über die REST-API-Unterstützung in [Hybridbereitstellungen](https://developer.microsoft.com/en-us/graph/docs/overview/hybrid_rest_support). **Hinweis:** Wenn Sie diese API-Sets in Version 1.0 verwenden, können Sie jetzt Ihre Apps, einschließlich Produktions-Apps für lokale Postfächer verwenden, die den spezifischen Anforderungen für Hybridbereitstellung entsprechen. Diese Funktion ist derzeit in der Vorschau.|
 
-### IdentityRiskEvents
-<a id="identityriskevents" class="xliff"></a>
+### <a name="identityriskevents"></a>IdentityRiskEvents
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Änderung|Beta|Im Rahmen der Schemaänderungen, bei denen der Typ der zwei location-Eigenschaften durch einen neuen komplexen Typ in dem identityRiskEvents-Endpunkt ersetzt wird, werden die folgenden Eigenschaften für den identityRiskEvents-Endpunkt geändert/hinzugefügt:</br>**location** – geändert von Edm.String zu ComplexType signInLocation.<br/>**previousLocation** – geändert von Edm.String zu ComplexType signInLocation.<br/>**signInLocation** – neuer ComplexType, der Ort, Bundesland, countryOrRegion und geoCoordinates-Eigenschaften enthält.<br/>**geoCoordinates** – neuer ComplexType, der Breiten- und Längengradeigenschaften enthält.|
 
-### Einladungs-Manager
-<a id="invitation-manager" class="xliff"></a>
+### <a name="invitation-manager"></a>Einladungs-Manager
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|Beta|Einladungs-Manager-APIs sind jetzt im Beta-Endpunkt von Microsoft Graph verfügbar. Verwenden Sie Einladungs-Manager-APIs, um eine Einladung zum Hinzufügen eines externen Benutzers zu der Organisation zu erstellen. Im Rahmen der Einladung können Sie auch angeben, ob der eingeladene Benutzer zu einer Office 365-Gruppe hinzugefügt werden soll. Weitere Informationen finden Sie im [Einladungs-Manager](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/invitation).|
 
-### OneDrive
-<a id="onedrive" class="xliff"></a>
+### <a name="onedrive"></a>OneDrive
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
@@ -794,8 +758,7 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 |Ergänzungen|v1.0|**processingMetadata**-Eigenschaft für quickXorHash-Eigenschaft mit komplexem Dateityp für Hashes mit komplexem Typ hinzugefügt. |
 |Ergänzungen|v1.0|**quickXorHash**-Eigenschaft für Hashes mit komplexem Typ hinzugefügt |
 
-### Outlook-Kalender
-<a id="outlook-calendar" class="xliff"></a>
+### <a name="outlook-calendar"></a>Outlook-Kalender
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
@@ -804,8 +767,7 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 |Ergänzungen|Beta|Die [forward](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/event_forward)-Aktion wurde zur Ereignisressource hinzugefügt.|
 |Ergänzungen|Beta|Die folgenden Eigenschaften wurden zur [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/calendar)-Ressource zur Unterstützung der Freigabe von Kalendern hinzugefügt: **canEdit**, **canShare**, **canViewPrivateItems**, **isShared**, **isShareWithMe** und **Besitzer**.|
 
-### Outlook-Mail
-<a id="outlook-mail" class="xliff"></a>
+### <a name="outlook-mail"></a>Outlook-Mail
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
@@ -814,25 +776,22 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 |Ergänzungen|v1.0|
   **mailboxSettings**-Eigenschaft zur [Benutzer](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user)-Ressource hinzugefügt.|
 |Ergänzungen|Beta|Unterstützung für das Erstellen, Auflisten, Abrufen und Löschen einer oder mehrerer Instanzen von [Erwähnungen](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mention) in einer Nachricht hinzugefügt. Erwähnungen unterstützen Aufrufe, um die Aufmerksamkeit anderer Benutzer in einer Nachricht zu erhalten.|
-|Ergänzungen|Beta|Unterstützung für die [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_getmailtips)-Aktion, um beliebige MailTips für bestimmte Empfänger zu erhalten, wurde hinzugefügt. Folgende Ressourcen wurden hinzugefügt: automaticRepliesMailTips, mailTips, mailTipsError.|
+|Ergänzungen|Beta|Unterstützung für die [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_getmailtips)-Aktion, um beliebige MailTips für bestimmte Empfänger zu erhalten hinzugefügt. Folgende Ressourcen wurden hinzugefügt: automaticRepliesMailTips, mailTips, mailTipsError.|
 
-### Abfrageparameter
-<a id="query-parameters" class="xliff"></a>
+### <a name="query-parameters"></a>Abfrageparameter
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Änderung|Beta|Abfrageparameter ohne '$' Präfixe sind ab dem 26.09.2016 unterstützt. Das Präfix '$' in der Abfrageparameter ist optional. Beispiele finden Sie unter [Abfrageparameter ohne $ Präfixe in Microsoft Graph unterstützen](http://dev.office.com/queryparametersinMicrosoftGraph).|
 
-### SharePoint
-<a id="sharepoint" class="xliff"></a>
+### <a name="sharepoint"></a>SharePoint
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|Beta|Zugriff auf SharePoint-Websites und [-listen nach ID](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/list_get) oder [Pfad/URL](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/baseitem_getbyurl).|
 |Ergänzungen|Beta|Unterstützung für das [Auflisten, Erstellen, Abrufen und Löschen von Instanzen des listItem-Elements](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/listitem).|
 
-### Benutzer
-<a id="users" class="xliff"></a>
+### <a name="users"></a>Benutzer
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
@@ -841,128 +800,108 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 |Ergänzungen|Beta|Die **invalidateAllRefreshTokens**-Dienstaktion wurde hinzugefügt, mit der alle Aktualisierungs- und Sitzungstoken des Benutzers, die für Anwendungen ausgestellt wurden, ungültig werden, indem die **refreshTokensValidFromDateTime**-Benutzereigenschaft auf aktuelles Datum und aktuelle Uhrzeit zurückgesetzt wird.|
 
 
-### Webhooks
-<a id="webhooks" class="xliff"></a>
+### <a name="webhooks"></a>Webhooks
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|Beta|Laufwerkstammelemente zu Webhooks als Ressource hinzugefügt, die abonniert werden kann.|
 
-## August 2016
-<a id="august-2016" class="xliff"></a>
+## <a name="august-2016"></a>August 2016
 
-### Kontakte
-<a id="contacts" class="xliff"></a>
+### <a name="contacts"></a>Kontakte
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|Beta|Im Rahmen der Schemaänderungen, bei denen einige Eigenschaften entfernt und entsprechende Sammlungen zu Kontaktendpunkten hinzugefügt wurden, wurden die folgenden Eigenschaften zu Kontaktendpunkten hinzugefügt: _Websites – Collection(ComplexType: Website)_,_Phones – Collection (ComplexType: Phone)_, _PostalAddress – Collection(ComplexType: PhysicalAddress)_. Weitere Informationen finden Sie unter dem Blogeintrag: [Upcoming changes to Contacts and People APIs](https://blogs.msdn.microsoft.com/exchangedev/2016/06/09/upcoming-changes-to-contacts-and-people-apis/).|
 |Löschung|Beta|Im Rahmen der Schemaänderungen, bei denen einige Eigenschaften entfernt und entsprechende Sammlungen zu Kontaktendpunkten hinzugefügt wurden, wurden die folgenden Eigenschaften von Kontaktendpunkten entfernt: _BusinessHomePage_,_HomePhones_, _MobilePhone1_, _BusinessPhones_, _HomeAddress_, _BusinessAddress_, _OtherAddress_. Weitere Informationen finden Sie unter dem Blogeintrag: [Upcoming changes to Contacts and People APIs](https://blogs.msdn.microsoft.com/exchangedev/2016/06/09/upcoming-changes-to-contacts-and-people-apis/).|
 
-### Excel-APIs
-<a id="excel-apis" class="xliff"></a>
+### <a name="excel-apis"></a>Excel-APIs
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|v1.0|Excel REST-API für Microsoft Graph ist nun allgemein verfügbar. Sie können jetzt umfassende und genaue Integrationen mit Excel-Arbeitsmappen in Office 365 erstellen. Weitere Informationen finden Sie unter dem Blogeintrag [Power your apps with the new Excel REST API on the Microsoft Graph](http://dev.office.com/blogs/power-your-apps-with-the-new-excel-rest-api).|
 
-### Kontakte
-<a id="people" class="xliff"></a>
+### <a name="people"></a>Kontakte
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Änderung|Beta|_WebSite_-Eigenschaft wurde in _Websites_ umbenannt. Weitere Informationen finden Sie unter [Upcoming changes to Contacts and People APIs](https://blogs.msdn.microsoft.com/exchangedev/2016/06/09/upcoming-changes-to-contacts-and-people-apis/).|
 
-### Privileged Identity Management
-<a id="privileged-identity-management" class="xliff"></a>
+### <a name="privileged-identity-management"></a>Privileged Identity Management
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|Beta|REST-APIs für Privileged Identity Management (PIM) sind jetzt im Beta-Endpunkt von Microsoft Graph verfügbar. [Privileged Identity Management](https://azure.microsoft.com/en-us/documentation/articles/active-directory-privileged-identity-management-configure/) ermöglicht eine Just-In-Time-Aktivierung für privilegierte Azure AD-Rollen wie globaler Administrator, Abrechnungsadministrator usw. Mit den veröffentlichten APIs können Sie Anwendungen schreiben, die privilegierte Rollenzuweisungen abrufen und aktualisieren und Benutzer in Rollen aktivieren. Weitere Informationen finden Sie unter [Microsoft Graph: Azure AD Privileged Identity Management Vorschau-APIs sind verfügbar in Beta](http://dev.office.com/blogs/microsoft-graph-azure-ad-privileged-identity-management-apis-beta) und [Azure AD Privileged Identity Management](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/privilegedidentitymanagement_root).|
 
-## Juli 2016
-<a id="july-2016" class="xliff"></a>
+## <a name="july-2016"></a>Juli 2016
 
-### Administrative Einheiten
-<a id="administrative-units" class="xliff"></a>
+### <a name="administrative-units"></a>Administrative Einheiten
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|Beta|Die neue Administrative Unites preview API wurde eingeführt. Mit administrativen Einheiten können Organisationen ihre Azure Active Directory-Umgebung aufteilen und administrative Aufgaben auf diese Unterteilungen weitergeben. Unterteilungen können Regionen, Abteilungen, Kostenstellen usw. darstellen. Dies kann jetzt über die Microsoft Graph-API verwaltet werden.|
 
-## Juni 2016
-<a id="june-2016" class="xliff"></a>
+## <a name="june-2016"></a>Juni 2016
 
-### IdentityRiskEvents
-<a id="identityriskevents" class="xliff"></a>
+### <a name="identityriskevents"></a>IdentityRiskEvents
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|Beta|Die neue  IdentityRiskEvents Vorschau-API wurde eingeführt. Diese API funktioniert in Verbindung mit Azure Active Directory Identity Protection. Sie können Abfrage-Risiko-Ereignissen abfragen, die durch Identity Protection generiert wurden. Weitere Informationen finden Sie unter [Einführung einer neuen Vorschau-API für Microsoft Graph: IdentityRiskEvents](http://dev.office.com/blogs/identityriskevents-api-preview)-Blogeintrag.
 
-### Abonnements
-<a id="subscriptions" class="xliff"></a>
+### <a name="subscriptions"></a>Abonnements
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|Beta|Nur App-Bereiche werden jetzt für _Mail_- und _Kontakte_-Abonnements unterstützt.|
 
-## Mai 2016
-<a id="may-2016" class="xliff"></a>
+## <a name="may-2016"></a>Mai 2016
 
-### Kalender
-<a id="calendar" class="xliff"></a>
+### <a name="calendar"></a>Kalender
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Änderungen|Beta|Ändert sich zur findmeetingtimes-API. Weitere Informationen finden Sie unter dem Blogeintrag [Microsoft Graph findMeetingTimes API update](http://dev.office.com/microsoft-graph-findmeetingtimes-api-update) Blogbeitrag. Diese Änderung ist seit dem 19. Mai 2016 wirksam.
 
-### Kontakt
-<a id="contact" class="xliff"></a>
+### <a name="contact"></a>Kontakt
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|v1.0|_Erweiterungen_ hinzugefügt, die einen abstrakten Typ für die Unterstützung des offenen Typs openTypeExtension von OData v4 darstellen.|
 
-### Verzeichnis
-<a id="directory" class="xliff"></a>
+### <a name="directory"></a>Verzeichnis
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Änderungen|Beta|_settingTemplateId_ in _templateId_ umbenannt. Diese Änderung wird ab dem 19. Mai 2016 wirksam.|
 
-### Ereignis
-<a id="event" class="xliff"></a>
+### <a name="event"></a>Ereignis
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|v1.0|_Erweiterungen_ hinzugefügt, die einen abstrakten Typ für die Unterstützung des offenen Typs openTypeExtension von OData v4 darstellen.|
 
-### EventMessages
-<a id="eventmessages" class="xliff"></a>
+### <a name="eventmessages"></a>EventMessages
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|v1.0|_inferenceClassification_ und _Erweiterungen_ zu _eventMessages_ hinzugefügt.|
 |Ergänzungen|Beta|_responseRequested_ zu _eventMessageRequest_ hinzugefügt.|
 
-### Nachrichten
-<a id="messages" class="xliff"></a>
+### <a name="messages"></a>Nachrichten
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|v1.0|_inferenceClassification_ und _extensions_ zu _Nachrichten_ hinzugefügt.|
 |Ergänzungen|Beta|_wellknownname_ zu _contactFolder_ hinzugefügt.|Ändert sich zu _findmeetingtimes_-API. Weitere Informationen finden Sie unter dem Blogeintrag [Microsoft Graph findMeetingTimes API update](http://dev.office.com/microsoft-graph-findmeetingtimes-api-update) Blogbeitrag. Diese Änderung wird ab dem 19. Mai 2016 wirksam.|
 
-### Beitrag
-<a id="post" class="xliff"></a>
+### <a name="post"></a>Beitrag
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|v1.0|_Erweiterungen_ hinzugefügt, die einen abstrakten Typ für die Unterstützung des offenen Typs openTypeExtension von OData v4 darstellen.|
 
-### Benutzer
-<a id="user" class="xliff"></a>
+### <a name="user"></a>Benutzer
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
@@ -970,11 +909,9 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 |Ergänzungen|Beta|_timeZone_ zu _mailboxsettings_ hinzugefügt.|
 |Ergänzungen|Beta|API _findMeetingTimes _ zu _Benutzer_ hinzugefügt.|
 
-## April 2016
-<a id="april-2016" class="xliff"></a>
+## <a name="april-2016"></a>April 2016
 
-### Allgemein
-<a id="general" class="xliff"></a>
+### <a name="general"></a>Allgemein
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
@@ -984,18 +921,15 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 |Ergänzungen|Beta|Azure Active Directory dient nun als Alternative für /beta/users/id/photo-Anforderungen, wenn Outlook die Anforderung nicht verarbeiten kann, beispielsweise wenn der Benutzer über keine Postfachlizenz oder der Mandant über kein Exchange Online-Abonnement verfügt. HINWEIS: Diese Alternative steht für GET und PATCH zur Verfügung.|
 |Ergänzungen|Beta|Unterstützung für Castsegment im erweiterten Pfad hinzugefügt. Beispiel: https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event|
 
-### OneDrive
-<a id="onedrive" class="xliff"></a>
+### <a name="onedrive"></a>OneDrive
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Behebung|v1.0|Behebung eines Problems, aufgrund dessen bei createLink-Anforderungen OneDrive den 500-Fehler mit der Meldung „Nicht unterstützter Erweiterungseigenschaftentyp.“ zurückgab.|
 
-## März 2016
-<a id="march-2016" class="xliff"></a>
+## <a name="march-2016"></a>März 2016
 
-### Kalender
-<a id="calendar" class="xliff"></a>
+### <a name="calendar"></a>Kalender
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
@@ -1006,16 +940,14 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 |Änderung|Beta|_findMeetingTimes_ verwendet jetzt den neuen _ReturnSuggestionHints_-Parameter.|
 |Änderung|Beta|_findMeetingTimes_ gibt jetzt eine Sammlung von _meetingTimeCandidate_ zurück.|
 
-### Laufwerk
-<a id="drive" class="xliff"></a>
+### <a name="drive"></a>Laufwerk
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|v1.0 und Beta|_recent_-Funktion zum Auflisten eines Satzes von Elementen hinzugefügt, die zuletzt von dem angemeldeten Benutzer verwendet wurden. Diese Liste enthält Elemente, die sich in dem Laufwerk des Benutzers befinden sowie Elemente in anderen Laufwerken, auf die dieser Zugriff hat. Beispiel: GET /me/drive/recent.|
 |Ergänzungen|v1.0 und Beta|_sharedWithMe_-Funktion zum Auflisten des Satzes von Elementen hinzugefügt, die für den aktuellen Benutzer freigegeben sind. Beispiel: GET /me/drive/sharedWithMe.|
 
-### DriveItem
-<a id="driveitem" class="xliff"></a>
+### <a name="driveitem"></a>DriveItem
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
@@ -1026,15 +958,13 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 |Ergänzungen|v1.0 und Beta|_conflictBehavior_-Instanzattribute sind nun auf _driveItem_ anwendbar.|
 |Ergänzungen|Beta|_invite_-Funktion zum Senden einer Einladung zur Freigabe für ein vorhandenes Element hinzugefügt. Mit einer Einladung zur Freigabe werden ein Freigabelink erstellt und eine E-Mail-Nachricht an den Empfänger die Einladung mit dem Freigabelink gesendet. Beispiel: POST /drive/items/{item-id}/invite
 
-### Ereignis
-<a id="event" class="xliff"></a>
+### <a name="event"></a>Ereignis
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|Beta|Neue _onlineMeetingUrl_-Eigenschaft und neue _cancel_-Methode hinzugefügt.|
 
-### Ereignismeldungen
-<a id="event-messages" class="xliff"></a>
+### <a name="event-messages"></a>Ereignismeldungen
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
@@ -1042,15 +972,13 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 |Ergänzungen|Beta|_singleValueExtendedProperties_ und _multiValueExtendedProperties_-Eigenschaften hinzugefügt.|
 |Ergänzungen|Beta|Neue _unsubscribe_-Methode hinzugefügt.|
 
-### Excel
-<a id="excel" class="xliff"></a>
+### <a name="excel"></a>Excel
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|Beta|Es wurden neue REST-APIs für Excel hinzugefügt, mit denen Sie Daten in einer Excel-Arbeitsmappe lesen und ändern können. Sie können nun intelligente Apps erstellen, mit denen Benutzer die in Excel-Arbeitsmappen gespeicherten Inhalte nutzen können, indem Einblicke in die Daten bereitgestellt werden. Profitieren Sie von den Vorteilen der Analysefunktionen von Excel, erstellen Sie Tabellen und Diagramme und extrahieren Sie optisch ansprechende Diagramme, und das alles von Ihrer App aus. Weitere Informationen finden Sie unter [Arbeiten mit Excel in Microsoft Graph](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/excel).|
 
-### Allgemein
-<a id="general" class="xliff"></a>
+### <a name="general"></a>Allgemein
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
@@ -1060,43 +988,38 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 |Ändern|Beta|Abonnement-Eigenschaftennamen bereinigt.|
 |Ergänzungen|Beta|Wir haben die Möglichkeit zum Ermitteln von (über _directorySettingTemplates_) und Außerkraftsetzen des Standardverhaltens (durch Erstellen einer _Einstellung_ aus der Vorlage) für Entitäten und die zugehörigen Funktionen hinzugefügt. Anfangs konnten die Verhaltensweisen für Office-Gruppen nur über die Vorlage gesteuert werden.|
 
-### Mail-Ordner
-<a id="mail-folder" class="xliff"></a>
+### <a name="mail-folder"></a>Mail-Ordner
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|Beta|_wellKnownName_- und _userConfigurations_-Eigenschaften hinzugefügt.|
 |Ergänzungen|Beta|_singleValueExtendedProperties_- und _multiValueExtendedProperties_-Eigenschaften hinzugefügt|
 
-### Nachrichten
-<a id="messages" class="xliff"></a>
+### <a name="messages"></a>Nachrichten
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|v1.0|_mobilePhone_-Eigenschaft hinzugefügt.|
 |Ergänzungen|v1.0 und Beta|_internetMessageId_-Eigenschaft hinzugefügt. Die Nachrichten-ID im von [RFC2822](http://www.ietf.org/rfc/rfc2822.txt) angegebenen Format.|
-|Änderung|Beta|_mobilePhone1_-Eigenschaft in _mobilePhone_ umgenannt.|
+|Ändern|Beta|_mobilePhone1_-Eigenschaft in _mobilePhone_ umgenannt.|
 |Änderung|Beta|_createReply_ und _createReplyAll _ verwenden neue _Message_- und _comment_-Parameter.|
 |Änderung|Beta|_createForward_ verwendet neue _Message_-, _ToRecipients_- und _comment_-Parameter.|
 |Änderung|Beta|_reply_, _replyAll_ und _forward_ verwenden neue _Message_-Parameter.|
 
-### Berechtigung
-<a id="permission" class="xliff"></a>
+### <a name="permission"></a>Berechtigung
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|v1.0 und Beta|_sharingInvitation_-Eigenschaft hinzugefügt, um Details zu verknüpften Einladungen zur Freigabe für diese Berechtigung bereitzustellen.|
 
-### Person
-<a id="person" class="xliff"></a>
+### <a name="person"></a>Person
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|Beta|- Neue _birthday_-, _personNotes_-, _isFavorite_-, _phones_-, _permission_-, _postalAddresses_-,_websites_-,_yomiCompany_-, _department_-, _profession_-, _mailboxType_- und _personType_-Eigenschaften hinzugefügt.|
 |Ergänzungen|Beta|Neue Enumerationstypen hinzugefügt: _physicalAddressType_, _webSite_, _phone_ und _webSiteType_.|
 
-### Verweisanlage
-<a id="reference-attachment" class="xliff"></a>
+### <a name="reference-attachment"></a>Verweisanlage
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
@@ -1104,32 +1027,27 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 |Ergänzungen|Beta|_singleValueExtendedProperties_ und _multiValueExtendedProperties_-Eigenschaften hinzugefügt.|
 |Ergänzungen|Beta|Neue Enumerationstypen _referenceAttachmentProvider_ und _referenceAttachmentPermission_. hinzugefügt.|
 
-### Abonnements
-<a id="subscriptions" class="xliff"></a>
+### <a name="subscriptions"></a>Abonnements
 
 |**Änderungstyp**|**Endpunkt**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|v1.0|Webhooks sind jetzt allgemein für Version 1.0 von Endpunkt über die _/Subscriptions_-Ressource verfügbar. Erstellen, Lesen, Aktualisieren und Löschen Sie Abonnements, um Benachrichtigungen zu Daten aus Outlook und Office 365-Gruppenunterhaltungen zu erhalten.|
 
-### Benutzer
-<a id="user" class="xliff"></a>
+### <a name="user"></a>Benutzer
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|Beta|_mailboxSettings_-Eigenschaft sowie die entsprechenden Typen hinzugefügt.|
 
-## Februar 2016
-<a id="february-2016" class="xliff"></a>
+## <a name="february-2016"></a>Februar 2016
 
-### DriveItem
-<a id="driveitem" class="xliff"></a>
+### <a name="driveitem"></a>DriveItem
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|v1.0 und Beta|Neue _remoteItem_-Eigenschaft für driveItem für Microsoft-Konten.|
 
-### Allgemein
-<a id="general" class="xliff"></a>
+### <a name="general"></a>Allgemein
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
@@ -1137,50 +1055,42 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 |Änderung|v1.0 und Beta|Laufwerkanforderungen für Konten, deren OneDrive-Speicher bei Bedarf bereitgestellt wurde, funktionieren zuverlässig und können in mehr Szenarien verwendet werden, in denen die SharePoint-Standardwebsites des Mandanten nicht standardmäßige Namen verwenden.|
 |Löschung|Beta|Verschiedene nicht implementierte Typen aus dem Betaschema zur Anpassung an 1.0 Schema entfernt.|
 
-### Abonnements
-<a id="subscriptions" class="xliff"></a>
+### <a name="subscriptions"></a>Abonnements
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|Beta|notificationUrl-Validierung bei Abonnement-Erstellung. Weitere Informationen finden Sie unter [Microsoft Graph WebHooks Update - January 2016](http://dev.office.com/blogs/Microsoft-Graph-WebHooks-Update-January-2016).|
 |Ergänzungen|Beta|Abonnemententitäten können jetzt gelöscht werden: LÖSCHEN https://graph.microsoft.com/beta/subscriptions/|
 
-### Benutzer
-<a id="users" class="xliff"></a>
+### <a name="users"></a>Benutzer
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Änderung|v1.0 und Beta|_displayName_ wird jetzt für Microsoft-Konten zurückgegeben.|
 
-## Januar 2016
-<a id="january-2016" class="xliff"></a>
+## <a name="january-2016"></a>Januar 2016
 
-### Kontakte
-<a id="contacts" class="xliff"></a>
+### <a name="contacts"></a>Kontakte
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|v1.0|mobilePhone-Eigenschaft zum Entitätssatz für persönliche Kontakte hinzugefügt.|
 
-### directoryObjects
-<a id="directoryobjects" class="xliff"></a>
+### <a name="directoryobjects"></a>directoryObjects
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Behebung|v1.0 und Beta|Behebung eines Problems mit Aufrufaktionen, die mit directoryObjects verknüpft sind und zu dem folgenden Fehler führten:  „Der Rückgabetyp des Vorgangs ist mit dem vorgegebenen Entitätssatz nicht möglich“. Dies gilt für die folgenden Aktionen: _microsoft.graph.checkMemberObjects_, _microsoft.graph.getMemberObjects_, _microsoft.graph.checkMemberGroups_, _microsoft.graph.assignLicense_, _microsoft.graph.changePassword_.|
 
-## Dezember 2015
-<a id="december-2015" class="xliff"></a>
+## <a name="december-2015"></a>Dezember 2015
 
-### Kontakte
-<a id="contacts" class="xliff"></a>
+### <a name="contacts"></a>Kontakte
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|Beta|mobilePhone-Eigenschaft zum Entitätssatz für persönliche Kontakte hinzugefügt.|
 
-### Allgemein
-<a id="general" class="xliff"></a>
+### <a name="general"></a>Allgemein
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
@@ -1191,22 +1101,19 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 |Ergänzungen|v1.0 und Beta|authorization_uri-Eigenschaft in dem www-authenticate-Header einer 401-Antwort hinzugefügt. Dieser URI kann verwendet werden, um den Tokenerwerbfluss zu starten.|
 |Ergänzungen|v1.0 und Beta|Verbesserte Fehlermeldungen für Benutzer und Gruppen.|
 
-### Gruppen
-<a id="groups" class="xliff"></a>
+### <a name="groups"></a>Gruppen
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Behebung|v1.0 und Beta|Behebung eines Problems mit dem Aufruf folgender Gruppenaktionen: _microsoft.graph.addFavorite_, _microsoft.graph.removeFavorite_ and _microsoft.graph.resetUnseenCount_.|
 
-### Nachrichten
-<a id="messages" class="xliff"></a>
+### <a name="messages"></a>Nachrichten
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
 |Ergänzungen|Beta|eventMessageRequest-Untertyp der eventMessage- und startDateTime-, endDateTime-, location-, type-, recurrence- und IsOutOfDate-Eigenschaften zum eventMessag-Typ hinzugefügt.|
 
-### Benutzer
-<a id="users" class="xliff"></a>
+### <a name="users"></a>Benutzer
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:-----------|:--------------|
