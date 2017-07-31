@@ -228,8 +228,7 @@ Content-length: 326
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](extensibility_overview.md)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Preview)](extensibility_open_users.md)
-- 
-  [Office 365-Domänen](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+- [Office 365-Domänen](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 - [Hinzufügen und Überprüfen einer Domäne für das NEUE Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [schemaExtension-Ressourcentyp](../api-reference/v1.0/resources/schemaextension.md)
 - [schemaExtensions aufführen](../api-reference/v1.0/api/schemaextension_list.md)

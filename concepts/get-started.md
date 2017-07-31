@@ -46,7 +46,7 @@ Wenn Sie die fertigen Connect-Beispiele ansehen möchten, besuchen Sie das [Micr
     <td>
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">REST-Beispiel</a>
     </td>     
-     <td>
+    <td>
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">SDK-Beispiel</a>
     </td> 
   </tr>
@@ -65,7 +65,7 @@ Wenn Sie die fertigen Connect-Beispiele ansehen möchten, besuchen Sie das [Micr
         <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">REST-Beispiel</a>
     </td>     
     <td>    
-        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK-Beispiel</a> oder ¶<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST-Beispiel</a>
+        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK-Beispiel</a> oder <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST-Beispiel</a>
     </td> 
   </tr>
   <tr>

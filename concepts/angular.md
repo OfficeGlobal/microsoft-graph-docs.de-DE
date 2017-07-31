@@ -67,7 +67,7 @@ Die App ruft Microsoft Graph auf, um Benutzerinformationen abzurufen und eine E-
         }
     });
 
-### <a name="using-the-sdk"></a>Verwenden des SDKs
+### <a name="using-the-sdk"></a>Verwenden des SDK
 1. Ersetzen Sie in „graphHelper.js“ *//Profil des aktuellen Benutzers abrufen* durch folgenden Code. Dadurch wird die GET-Anforderung konfiguriert und an den Endpunkt */me* gesendet und die Antwort verarbeitet.
 
         // Get the profile of the current user.

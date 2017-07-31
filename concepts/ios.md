@@ -73,16 +73,16 @@ Für den Zugriff auf den Benutzeroberflächenworkflow muss die App den Benutzer 
 
 1. Öffnen Sie den Projektarbeitsbereich Xcode (**O365-iOS-Microsoft-Graph-SDK.xcworkspace**) im Ordner **Startprojekt** und navigieren Sie zum Ordner **Authentifizierung** und öffnen Sie die Datei **AuthenticationProvider.m.** Fügen Sie dieser Klasse den folgenden Code hinzu.
 
-        -(void) connectToGraphWithClientId:(NSString *)clientId scopes:(NSArray *)scopes completion:(void (^)    (NSError *))completion{
+        -(void) connectToGraphWithClientId:(NSString *)clientId scopes:(NSArray *)scopes completion:(void (^)   (NSError *))completion{
             [NXOAuth2AuthenticationProvider setClientId:kClientId
                                               scopes:scopes];
     
     
             /**
-             Obtains access token by performing login with UI, where viewController specifies the parent view controller.
-             @param viewController The view controller to present the UI on.
+            Obtains access token by performing login with UI, where viewController specifies the parent view controller.
+            @param viewController The view controller to present the UI on.
              @param completionHandler The completion handler to be called when the authentication has completed.
-             error should be non nil if there was no error, and should contain any error(s) that occurred.
+            error should be non nil if there was no error, and should contain any error(s) that occurred.
              */
 
                 if ([[NXOAuth2AuthenticationProvider sharedAuthProvider] loginSilent]) {
@@ -94,11 +94,11 @@ Für den Zugriff auf den Benutzeroberflächenworkflow muss die App den Benutzer 
                     NSLog(@"Authentication successful.");
                     completion(nil);
                     }
-                    else {
-                        NSLog(@"Authentication failed - %@", error.localizedDescription);
+                 else {
+                     NSLog(@"Authentication failed - %@", error.localizedDescription);
                     completion(error);
                     }
-                    }];
+                }];
             }
     
         }
@@ -183,7 +183,7 @@ Nach dem Konfigurieren des Projekts für die Authentifizierung wird in den näch
             }
             else {
                 NSLog(NSLocalizedString(@"ERROR", ""), error.localizedDescription);
-                    self.statusTextView.text = NSLocalizedString(@"SEND_FAILURE", comment: "");
+                self.statusTextView.text = NSLocalizedString(@"SEND_FAILURE", comment: "");
                 }
             }];
     

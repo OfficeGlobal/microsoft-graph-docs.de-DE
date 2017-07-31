@@ -54,7 +54,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 ```
 
 | Parameter | Bedingung | Beschreibung |
-| --- | --- | --- |
+|:----------|:----------|:------------|
 | tenant |Erforderlich |Der Verzeichnismandant, von dem Sie eine Berechtigung anfordern möchten. Dieser kann im GUID- oder Anzeigenamenformat angegeben werden. Wenn Sie nicht wissen, zu welchem Mandanten der Benutzer gehört, und Sie eine Anmeldung mit jedem Mandanten ermöglichen möchten, verwenden Sie `common`. |
 | client_id |Erforderlich |Die Anwendungs-ID, die Ihrer App vom [App-Registrierungsportal](https://apps.dev.microsoft.com/) zugewiesen wurde. |
 | redirect_uri |Erforderlich |Der Umleitungs-URI, an den die Antwort für die Weiterarbeitung durch Ihre App gesendet werden soll. Er muss genau mit einem der Umleitung-URIs übereinstimmen, die Sie im Portal registriert haben, mit der Ausnahme, dass er URL-codiert sein muss und zusätzliche Pfadsegmente enthalten kann. |
@@ -73,7 +73,7 @@ GET http://localhost/myapp/permissions?tenant=a8990e1f-ff32-408a-9f8e-78d3b9139b
 ```
 
 | Parameter | Beschreibung |
-| --- | --- |
+|:----------|:------------|
 | tenant |Der Verzeichnismandant, der Ihrer Anwendung die angeforderten Berechtigungen gewährt hat, im GUID-Format. |
 | state |Ein Wert, der in der Anforderung enthalten ist und ebenfalls in der Tokenantwort zurückgegeben wird. Es kann eine Zeichenfolge beliebigen Inhalts sein. Der Status wird verwendet, um Informationen über den Status des Benutzers in der App vor dem Versand der Authentifizierungsanforderung zu codieren, z. B. die Seite oder die Ansicht, auf bzw. in der sich der Benutzer befunden hat. |
 | admin_consent |Auf **true** festgelegt. |
@@ -103,7 +103,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865&scope=https%3A%2F%2Fgraph.microso
 ```
 
 | Parameter | Bedingung | Beschreibung |
-| --- | --- | --- |
+|:----------|:----------|:------------|
 | tenant |Erforderlich |Der Verzeichnismandant, von dem Sie eine Berechtigung anfordern möchten. Dieser kann im GUID- oder Anzeigenamenformat angegeben werden. |
 | client_id |Erforderlich |Die Anwendungs-ID, die beim Registrieren der App vom [Microsoft-App-Registrierungsportal](https://apps.dev.microsoft.com) zugewiesen wurde. |
 | scope |Erforderlich |Der Wert, der für den `scope`-Parameter in dieser Anforderung übergeben wird, sollte der Ressourcenbezeichner (Anwendungs-ID-URI) der gewünschten Ressource mit dem angehängten Suffix `.default` sein. Für Microsoft Graph lautet der Wert `https://graph.microsoft.com/.default`. Mit diesem Wert wird der v2.0-Endpunkt darüber informiert, dass er unter allen Anwendungsberechtigungen, die Sie für Ihre App konfiguriert haben, ein Token für die Berechtigungen ausstellen soll, die der gewünschten Ressource zugeordnet sind. |
@@ -122,7 +122,7 @@ Eine erfolgreiche Antwort sieht wie folgt aus:
 ```
 
 | Parameter | Beschreibung |
-| --- | --- |
+|:----------|:------------|
 | access_token |Das angeforderte Zugriffstoken. Dieses Token kann die App in Aufrufen verwenden, die an Microsoft Graph gesendet werden. |
 | token_type |Gibt den Tokentypwert an. Der einzige von Azure AD unterstützte Typ ist `bearer`. |
 | expires_in |Gültigkeit des Zugriffstokens (in Sekunden). |

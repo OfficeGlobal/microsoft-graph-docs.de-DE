@@ -125,7 +125,7 @@ Dadurch werden Anmeldeanfragen an die `login`-Methode des Pages-Controllers gele
 
     def login
         redirect_to '/auth/microsoft_v2_auth'
-      end
+    end
 
 Als Nächstes müssen wir angeben, wohin in der App OmniAuth umleiten soll, nachdem die Authentifizierung erfolgt ist. Entfernen Sie die Auskommentierung folgender Route.
 
@@ -150,7 +150,7 @@ Nun fügen wir Code zur Behandlung des OmniAuth-Rückrufs und zum Abrufen von In
 Ersetzen Sie in `app/controllers/pages_controller.rb` die leere `callback`-Methode durch den folgenden Code.
 
     ```
-      def callback
+    def callback
         # Access the authentication hash for omniauth
         # and extract the auth token, user name, and email
         data = request.env['omniauth.auth']
