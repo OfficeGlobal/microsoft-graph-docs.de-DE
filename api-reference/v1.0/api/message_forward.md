@@ -1,38 +1,10 @@
-# <a name="message-forward"></a>message: forward
-
-Leitet eine Nachricht weiter. Die Nachricht wird dann im Ordner „Gesendete Elemente“ gespeichert.
-
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Mail.Send*
-## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/messages/{id}/forward
-POST /users/{id | userPrincipalName}/messages/{id}/forward
-POST /me/mailFolders/{id}/messages/{id}/forward
-POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
-```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
-
-## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
-
-| Parameter    | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|comment|String|Ein Kommentar, der eingefügt werden kann. Kann eine leere Zeichenfolge sein.|
-|toRecipients|[Recipient collection](../resources/recipient.md)|Die Liste der Empfänger.|
-
-## <a name="response"></a>Antwort
+<span data-ttu-id="f5f4c-p105">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202, Accepted` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="f5f4c-p105">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202, Accepted` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <a name="example"></a><span data-ttu-id="f5f4c-134">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f5f4c-134">Example</span></span>
+<span data-ttu-id="f5f4c-135">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="f5f4c-135">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="f5f4c-136">Anforderung</span><span class="sxs-lookup"><span data-stu-id="f5f4c-136">Request</span></span>
+<span data-ttu-id="f5f4c-137">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="f5f4c-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "message_forward"
@@ -55,9 +27,9 @@ Content-length: 166
 }
 ```
 
-##### <a name="response"></a>Antwort
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <a name="response"></a><span data-ttu-id="f5f4c-138">Antwort</span><span class="sxs-lookup"><span data-stu-id="f5f4c-138">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="f5f4c-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="f5f4c-139">Response</span></span>
+<span data-ttu-id="f5f4c-140">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="f5f4c-140">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
