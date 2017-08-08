@@ -1,17 +1,17 @@
-# <a name="enumerate-subsites-of-a-site"></a>Unterwebsites einer Website aufzählen
+# <a name="enumerate-subsites-of-a-site"></a><span data-ttu-id="df202-101">Unterwebsites einer Website aufzählen</span><span class="sxs-lookup"><span data-stu-id="df202-101">Enumerate subsites of a site</span></span>
 
-Dient zum Abrufen einer Sammlung von Unterwebsites, die für ein [site][]-Objekt definiert sind.
+<span data-ttu-id="df202-102">Dient zum Abrufen einer Sammlung von Unterwebsites, die für ein [site][]-Objekt definiert sind.</span><span class="sxs-lookup"><span data-stu-id="df202-102">Get a collection of subsites defined for a [site][].</span></span>
 
-[site]: ../resources/site.md
+<span data-ttu-id="df202-103">[site]: ../resources/site.md</span><span class="sxs-lookup"><span data-stu-id="df202-103">[site]: ../resources/site.md</span></span>
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a><span data-ttu-id="df202-104">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="df202-104">Prerequisites</span></span>
 
-Einer der folgenden Bereiche ist erforderlich, um diese Anforderung auszuführen:
+<span data-ttu-id="df202-105">Einer der folgenden Bereiche ist erforderlich, um diese Anforderung auszuführen:</span><span class="sxs-lookup"><span data-stu-id="df202-105">One of the following scopes is required to execute this request:</span></span>
 
-* Sites.Read.All
-* Sites.ReadWrite.All
+* <span data-ttu-id="df202-106">Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="df202-106">Sites.Read.All</span></span>
+* <span data-ttu-id="df202-107">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="df202-107">Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a>HTTP-Anforderung
+## <a name="http-request"></a><span data-ttu-id="df202-108">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="df202-108">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -19,9 +19,9 @@ Einer der folgenden Bereiche ist erforderlich, um diese Anforderung auszuführen
 GET /sites/{site-id}/sites
 ```
 
-### <a name="example"></a>Beispiel
+## <a name="example"></a><span data-ttu-id="df202-109">Beispiel</span><span class="sxs-lookup"><span data-stu-id="df202-109">Example</span></span>
 
-#### <a name="request"></a>Anforderung
+#### <a name="request"></a><span data-ttu-id="df202-110">Anforderung</span><span class="sxs-lookup"><span data-stu-id="df202-110">Request</span></span>
 
 <!-- { "blockType": "request", "name": "list-subsites" } -->
 
@@ -29,7 +29,7 @@ GET /sites/{site-id}/sites
 GET /sites/{site-id}/sites
 ```
 
-#### <a name="response"></a>Antwort
+#### <a name="response"></a><span data-ttu-id="df202-111">Antwort</span><span class="sxs-lookup"><span data-stu-id="df202-111">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
