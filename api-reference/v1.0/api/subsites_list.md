@@ -19,7 +19,7 @@ Einer der folgenden Bereiche ist erforderlich, um diese Anforderung auszuführen
 GET /sites/{site-id}/sites
 ```
 
-### <a name="example"></a>Beispiel
+## <a name="example"></a>Beispiel
 
 #### <a name="request"></a>Anforderung
 

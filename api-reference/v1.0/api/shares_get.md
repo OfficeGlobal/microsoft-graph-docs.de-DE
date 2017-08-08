@@ -66,7 +66,7 @@ Content-type: application/json
 
 Obwohl das [**SharedDriveItem**](../resources/shareddriveitem.md)-Element nützliche Informationen enthält, möchten die meisten Apps direkt auf das freigegebene [DriveItem](../resources/driveitem.md)-Element zugreifen. Die **SharedDriveItem**-Ressource umfasst **root**- und **items**-Beziehungen, die innerhalb des Bereichs des freigegebenen Elements auf die Inhalte zugreifen können.
 
-### <a name="example-single-file"></a>Beispiel (einzelne Datei)
+## <a name="example-single-file"></a>Beispiel (einzelne Datei)
 
 ##### <a name="request"></a>Anforderung
 
@@ -91,7 +91,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-shared-folder"></a>Beispiel (freigegebener Ordner)
+## <a name="example-shared-folder"></a>Beispiel (freigegebener Ordner)
 
 ##### <a name="request"></a>Anforderung
 

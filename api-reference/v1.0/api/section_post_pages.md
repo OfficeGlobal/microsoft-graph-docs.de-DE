@@ -9,9 +9,10 @@ Notes.Create, Notes.ReadWrite oder Notes.ReadWrite.All
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/oennote/sections/{id}/pages
+POST /me/onenote/sections/{id}/pages
 POST /users/{id | userPrincipalName}/onenote/sections/{id}/pages
 POST /groups/{id}/onenote/sections/{id}/pages
+POST /sites/{id}/onenote/sections/{id}/pages
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|

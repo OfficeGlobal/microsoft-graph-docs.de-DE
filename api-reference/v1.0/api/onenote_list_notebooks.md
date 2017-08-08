@@ -12,6 +12,7 @@ Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All oder Notes.ReadWrite.A
 GET /me/onenote/notebooks
 GET /users/{id | userPrincipalName}/onenote/notebooks
 GET /groups/{id}/onenote/notebooks
+GET /sites/{id}/onenote/notebooks
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
@@ -24,7 +25,7 @@ Gültige `expand`-Werte für Notizbücher sind `sections` und `sectionGroups`.
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
-| Accept | string | `application/json` |  
+| Annehmen | string | `application/json` |  
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

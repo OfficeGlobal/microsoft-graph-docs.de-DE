@@ -32,6 +32,7 @@ Notes.Read, Notes.ReadWrite, Notes.Read.All oder Notes.ReadWrite.All
 GET /me/onenote/pages/{id}
 GET /users/{id | userPrincipalName}/onenote/pages/{id}
 GET /groups/{id}/onenote/pages/{id}
+GET /sites/{id}/onenote/pages/{id}
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) `select` und `expand` zur Anpassung der Antwort.
@@ -42,7 +43,7 @@ Die Standardantwort erweitert `parentSection` und wählt die Eigenschaften `id`,
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
-| Accept | string | `application/json` |
+| Annehmen | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

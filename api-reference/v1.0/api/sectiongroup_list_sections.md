@@ -12,6 +12,7 @@ Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All oder Notes.ReadWrite.A
 GET /me/onenote/sectionGroups/{id}/sections
 GET /users/{id | userPrincipalName}/onenote/sectionGroups/{id}/sections
 GET /groups/{id}/onenote/sectionGroups/{id}/sections
+GET /sites/{id}/onenote/sectionGroups/{id}/sections
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
@@ -25,7 +26,7 @@ Die Standardabfrage erweitert `parentNotebook` und wählt die zugehörigen Eigen
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
-| Accept | string | `application/json` |  
+| Annehmen | string | `application/json` |  
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -39,7 +40,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "get_sections"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/oennote/sectionGroups/{id}/sections
+GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}/sections
 ```
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
