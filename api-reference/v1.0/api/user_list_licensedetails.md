@@ -1,39 +1,4 @@
-# <a name="list-licensedetails"></a>licenseDetails auflisten
-
-Dient zum Abrufen einer Liste von licenseDetails-Objekten.
-
-### <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *User.Read*; *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
-
-### <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/licenseDetails
-GET /users/{id}/licenseDetails
-```
-### <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode bietet **keine** Unterstützung für [OData Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters).
-
-### <a name="request-headers"></a>Anforderungsheader
-| Name      |Beschreibung|
-|:----------|:----------|
-| Authorization  | Bearer &lt;code&gt;|
-
-### <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-### <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [licenseDetails](../resources/licensedetails.md)-Objekten im Antworttext zurückgegeben.
-### <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-
-<!-- {
-  "blockType": "request",
-  "name": "get_licensedetails"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/licenseDetails
-```
-##### <a name="response"></a>Antwort
+<span data-ttu-id="bdb4b-p101">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="bdb4b-p101">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
