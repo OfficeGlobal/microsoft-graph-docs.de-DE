@@ -4,10 +4,10 @@ Dient zum Abrufen einer Reihe von Ereignissen, die in einer **calendarView** (ei
 
 Ein **delta**-Funktionsaufruf für Ereignisse ähnelt einer `GET /calendarview`-Anforderung für einen Datumsbereich im Hauptkalender des Benutzers, mit der Ausnahme, dass durch entsprechende Anwendung von [Statustoken](../../../concepts/delta_query_overview.md) in einem oder mehreren dieser Aufrufe inkrementelle Änderungen in der betreffenden Kalenderansicht abgefragt werden können. Dies ermöglicht es Ihnen, einen lokalen Speicher der Ereignisse im Hauptkalender eines Benutzers zu pflegen und zu synchronisieren, ohne dass Sie jedes Mal alle Ereignisse des betreffenden Kalenders vom Server abrufen müssen.
 
-### <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: _Calendars.Read_; _Calendars.ReadWrite_ 
 
-### <a name="http-request"></a>HTTP-Anforderung
+## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -30,7 +30,7 @@ Beim Nachverfolgen von Änderungen in Ereignissen wird eine Runde von einem oder
 Wenn Sie eine Delta-Abfrage für eine Kalenderansicht ausführen, gehen Sie davon aus, dass alle Eigenschaften abgerufen werden, die normalerweise von einer `GET /calendarview`-Anforderung abgerufen werden. `$select` wird in diesem Fall nicht unterstützt. 
 
 
-### <a name="request-headers"></a>Anforderungsheader
+## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
@@ -42,7 +42,7 @@ Wenn Sie eine Delta-Abfrage für eine Kalenderansicht ausführen, gehen Sie davo
 ### <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [event](../resources/event.md)-Sammlungsobjekt im Antworttext zurückgegeben.
 
-### <a name="example"></a>Beispiel
+## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 
 Das folgende Beispiel zeigt, wie Sie einen einzelnen **delta**-Funktionsaufruf ausführen und die maximale Anzahl von Ereignissen im Antworttext auf 2 beschränken.

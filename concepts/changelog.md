@@ -4,9 +4,26 @@ Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschl
 
 Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs finden Sie unter [Bekannte Probleme](known_issues.md).
 
+## <a name="august-2017"></a>August 2017
+
+### <a name="onenote"></a>OneNote
+
+|**Änderungstyp**|**Version**|**Beschreibung**|
+|:-------------|:-----------|:--------------|
+| Ergänzungen | v1.0 und Beta | Die Navigationseigenschaft [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote.md) wurde zu **site** hinzugefügt.  |
+| Ergänzungen | Beta | Die Zielparameter *siteCollectionId* und *siteId* für Kopiervorgänge. Beispiel: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook.md). |
+
+
 ## <a name="july-2017"></a>Juli 2017
 
-### <a name="intune-apis"></a>Intune-APIs
+### <a name="group-settings"></a>Gruppeneinstellungen
+
+|**Änderungstyp**|**Version**|**Beschreibung**|
+|:-------------|:-----------|:--------------|
+| Ergänzungen     | v1.0       | Unterstützung für Gruppeneinstellungen wurde hinzugefügt.<br/>Neue Ressourcentypen: [groupSetting](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/groupsetting.md), [groupSettingTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/groupsettingtemplate.md), [settingValue](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/settingvalue.md) und [settingTemplateValue](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/settingtemplatevalue.md) |
+| Änderung       | v1.0       | Eigenschaft **classification** und Navigationseigenschaft **settings** wurden zu [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group.md) hinzugefügt. |
+
+### <a name="intune-apis"></a>Intune APIs
 
 |Typ&nbsp;ändern|Version|Beschreibung|
 |:---|:---|:---|

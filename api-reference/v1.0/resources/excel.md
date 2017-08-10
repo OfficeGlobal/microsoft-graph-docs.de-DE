@@ -9,7 +9,7 @@ Sie können auf eine Reihe von Excel-Objekten (wie Tabelle, Bereich oder Diagram
 eine Sammlung von Arbeitsblattobjekten zurück, die Teil der Arbeitsmappe sind.    
 
 
-** Hinweis: Die Excel-REST-API unterstützt nur Arbeitsmappen im Office Open XML-Dateiformat. Arbeitsmappen mit der Erweiterung `.xls` werden nicht unterstützt. 
+**Hinweis:** Die Excel-REST-API unterstützt nur Arbeitsmappen im Office Open XML-Dateiformat. Arbeitsmappen mit der Erweiterung `.xls` werden nicht unterstützt. 
 
 ## <a name="authorization-and-scopes"></a>Autorisierung und Bereiche
 

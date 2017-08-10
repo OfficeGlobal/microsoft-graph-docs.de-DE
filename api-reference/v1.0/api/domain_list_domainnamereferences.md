@@ -2,11 +2,11 @@
 
 Dient zum Abrufen einer Liste von [directoryObject](../resources/directoryobject.md)-Objekten mit einem Verweis auf die Domäne. Die zurückgegebene Liste enthält alle Directory-Objekte, die von der Domäne abhängig sind.
 
-### <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Directory.Read.All* oder *Domain.ReadWrite.All*
 
-### <a name="http-request"></a>HTTP-Anforderung
+## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /domains/{id}/domainNameReferences
@@ -14,17 +14,17 @@ GET /domains/{id}/domainNameReferences
 
 > Geben Sie für {id} die Domäne mit ihrem vollqualifizierten Domänennamen an.
 
-### <a name="optional-query-parameters"></a>Optionale Abfrageparameter
+## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
 Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.io/docs/overview/query_parameters) zur Anpassung der Antwort.
 
-### <a name="request-headers"></a>Anforderungsheader
+## <a name="request-headers"></a>Anforderungsheader
 
 | Name      |Beschreibung|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Erforderlich. |
 
-### <a name="request-body"></a>Anforderungstext
+## <a name="request-body"></a>Anforderungstext
 
 Geben Sie für diese Methode keinen Anforderungstext an.
 
@@ -32,7 +32,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [directoryObject](../resources/directoryobject.md)-Objekten im Antworttext zurückgegeben.
 
-### <a name="example"></a>Beispiel
+## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 
 <!-- {

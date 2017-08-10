@@ -4,23 +4,23 @@ Fügt eine Domäne zum Mandanten hinzu.
 
 **Wichtig**: Sie können eine zugeordnete Domäne erst dann mit Ihrem Azure AD-Mandanten verwenden, nachdem der Besitz überprüft wurde. Weitere Informationen finden Sie unter [verificationDnsRecords auflisten](domain_list_verificationdnsrecords.md). Stammdomänen erfordern eine Überprüfung. Beispielsweise muss „contoso.com“ überprüft werden. Wenn eine Stammdomäne überprüft wird, werden Unterdomänen der Stammdomäne automatisch überprüft. Beispielsweise wird „subdomain.contoso.com“ automatisch überprüft, wenn „contoso.com“ überprüft wurde.
 
-### <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Domain.ReadWrite.All* oder *Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>HTTP-Anforderung
+## <a name="http-request"></a>HTTP-Anforderung
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /domains
 ```
-### <a name="request-headers"></a>Anforderungsheader
+## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Erforderlich.|
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>Anforderungstext
+## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [domain](../resources/domain.md)-Objekts an.
 
 > Der Anforderungstext enthält die id-Eigenschaft für die neue Domäne. Die id-Eigenschaft ist die einzige Eigenschaft, die angegeben werden kann, und sie ist erforderlich. Der Wert der id-Eigenschaft ist der vollqualifizierte Domänenname, der erstellt werden soll.
@@ -28,7 +28,7 @@ Geben Sie im Anforderungstext eine JSON-Darstellung des [domain](../resources/do
 ### <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und das [domain](../resources/domain.md)-Objekt im Antworttext zurückgegeben.
 
-### <a name="example"></a>Beispiel
+## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 
 Geben Sie im Anforderungstext eine JSON-Darstellung des [domain](../resources/domain.md)-Objekts an.

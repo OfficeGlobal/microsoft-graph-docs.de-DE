@@ -4,9 +4,9 @@ Dient zum Abrufen eines Satzes von Nachrichten, die einem bestimmten Ordner hinz
 
 Ein **delta**-Funktionsaufruf für Nachrichten in einem Ordner ähnelt einer GET-Anforderung, mit der Ausnahme, dass durch entsprechende Anwendung von [Statustoken](../../../concepts/delta_query_overview.md) in einem oder mehreren dieser Aufrufe [inkrementelle Änderungen an den Nachrichten im betreffenden Ordner abgefragt](../../../concepts/delta_query_messages.md) werden können. Dies ermöglicht es Ihnen, einen lokalen Speicher der Nachrichten eines Benutzers zu pflegen und zu synchronisieren, ohne dass Sie jedes Mal den gesamten Satz Nachrichten vom Server abrufen müssen.  
 
-### <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: _Mail.Read_; _Mail.ReadWrite_
-### <a name="http-request"></a>HTTP-Anforderung
+## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/delta
@@ -32,7 +32,7 @@ Beim Nachverfolgen von Änderungen in Nachrichten wird eine Runde von einem oder
   * Es wird nur der `$orderby`-Ausdruck `$orderby=receivedDateTime+desc` unterstützt. Wenn Sie keinen `$orderby`-Ausdruck einschließen, ist die Rückgabereihenfolge nicht gewährleistet. 
 - `$search` wird nicht unterstützt.
 
-### <a name="request-headers"></a>Anforderungsheader
+## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
@@ -43,7 +43,7 @@ Beim Nachverfolgen von Änderungen in Nachrichten wird eine Runde von einem oder
 ### <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [message](../resources/message.md)-Sammlungsobjekt im Antworttext zurückgegeben.
 
-### <a name="example"></a>Beispiel
+## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Das folgende Beispiel zeigt, wie Sie einen einzelnen **delta**-Funktionsaufruf ausführen und die maximale Anzahl von Nachrichten im Textkörper der Antwort auf 2 beschränken.
 

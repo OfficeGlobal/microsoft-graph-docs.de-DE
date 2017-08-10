@@ -6,11 +6,11 @@ Sie können eine zugeordnete Domäne erst dann mit Ihrem Azure AD-Mandanten verw
 
 Stammdomänen erfordern eine Überprüfung. Beispielsweise muss „contoso.com“ überprüft werden. Wenn eine Stammdomäne überprüft wird, werden Unterdomänen der Stammdomäne automatisch überprüft. Beispielsweise wird „subdomain.contoso.com“ automatisch überprüft, wenn „contoso.com“ überprüft wurde.
 
-### <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Directory.Read.All* oder *Domain.ReadWrite.All*
 
-### <a name="http-request"></a>HTTP-Anforderung
+## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /domains/{id}/verificationDnsRecords
@@ -18,18 +18,18 @@ GET /domains/{id}/verificationDnsRecords
 
 > Geben Sie für {id} die Domäne mit ihrem vollqualifizierten Domänennamen an.
 
-### <a name="optional-query-parameters"></a>Optionale Abfrageparameter
+## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
 Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.io/docs/overview/query_parameters) zur Anpassung der Antwort.
 
-### <a name="request-headers"></a>Anforderungsheader
+## <a name="request-headers"></a>Anforderungsheader
 
 | Name      |Beschreibung|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Erforderlich. |
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>Anforderungstext
+## <a name="request-body"></a>Anforderungstext
 
 Geben Sie für diese Methode keinen Anforderungstext an.
 
@@ -37,7 +37,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [domainDnsRecord](../resources/domaindnsrecord.md)-Objekten im Antworttext zurückgegeben.
 
-### <a name="example"></a>Beispiel
+## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 
 <!-- {

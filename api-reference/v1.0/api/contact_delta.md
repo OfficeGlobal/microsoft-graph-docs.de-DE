@@ -4,9 +4,9 @@ Dient zum Abrufen eines Satzes von Kontakten, die einem bestimmten Ordner hinzug
 
 Ein **delta**-Funktionsaufruf für Kontakte in einem Ordner ähnelt einer GET-Anforderung, mit der Ausnahme, dass durch entsprechende Anwendung von [Statustoken](../../../concepts/delta_query_overview.md) in einem oder mehreren dieser Aufrufe inkrementelle Änderungen an den Kontakten im betreffenden Ordner abgefragt werden können. Dies ermöglicht es Ihnen, einen lokalen Speicher der Kontakte eines Benutzers zu pflegen und zu synchronisieren, ohne dass Sie jedes Mal den gesamten Satz Kontakte vom Server abrufen müssen.  
 
-### <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: _Contacts.Read_; _Contacts.ReadWrite_
-### <a name="http-request"></a>HTTP-Anforderung
+## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/{id}/contacts/delta
@@ -28,7 +28,7 @@ Beim Nachverfolgen von Änderungen an Kontakten wird eine Runde von einem oder m
 - Sie können wie bei jeder GET-Anforderung den Abfrageparameter `$select` verwenden, um zwecks Leistungsoptimierung nur die benötigten Eigenschaften anzugeben. Die Eigenschaft _id_ wird immer zurückgegeben. 
 
 
-### <a name="request-headers"></a>Anforderungsheader
+## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
@@ -39,7 +39,7 @@ Beim Nachverfolgen von Änderungen an Kontakten wird eine Runde von einem oder m
 ### <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [contact](../resources/contact.md)-Sammlungsobjekt im Antworttext zurückgegeben.
 
-### <a name="example"></a>Beispiel
+## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Das folgende Beispiel zeigt, wie Sie einen einzelnen **delta**-Funktionsaufruf ausführen, den `$select`-Parameter verwenden, um nur die Eigenschaft **displayName** jedes Kontakts abzurufen, und die maximale Anzahl von Kontakten im Antworttext auf 2 beschränken.
 

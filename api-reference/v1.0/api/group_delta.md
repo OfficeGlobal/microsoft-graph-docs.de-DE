@@ -6,7 +6,7 @@ Mit einer [Delta-Abfrage](../../../concepts/delta_query_overview.md) können Anw
 
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Group.Read.All* oder *Group.ReadWrite.All*
 
-### <a name="http-request"></a>HTTP-Anforderung
+## <a name="http-request"></a>HTTP-Anforderung
 
 Um Änderungen nachzuverfolgen, führe Sie zunächst eine Anforderung einschließlich der delta-Funktion für die Gruppenressource aus. 
 
@@ -19,12 +19,12 @@ GET /groups/delta
 
 Beim Nachverfolgen von Änderungen in Gruppen wird eine Runde von einem oder mehreren **delta**-Funktionsaufrufen ausgeführt. Wenn Sie Abfrageparameter (außer `$deltatoken` und `$skiptoken`) verwenden, müssen Sie sie in der ursprünglichen **delta**-Anforderung angeben. Microsoft Graph codiert automatisch alle angegebenen Parameter in den Tokenteil der in der Antwort enthaltenen `nextLink`- oder `deltaLink`-URL. Sie müssen alle gewünschten Abfrageparameter nur einmal im Vorfeld angeben. In nachfolgenden Anforderungen können Sie die `nextLink`- oder `deltaLink`-URL aus der vorherigen Antwort kopieren und anwenden, da diese URL bereits die codierten gewünschten Parameter enthält.
 
-| Abfrageparameter       | Typ    |Beschreibung|
+| Abfrageparameter      | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 | $deltatoken | string | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `deltaLink`-URL des vorhergehenden **delta**-Funktionsaufrufs für dieselbe Gruppensammlung zurückgegeben wird und den Abschluss dieser Runde der Änderungsnachverfolgung anzeigt. Speichern Sie die gesamte `deltaLink`-URL einschließlich dieses Tokens, und wenden Sie sie in der ersten Anforderung der nächsten Änderungsnachverfolgungsrunde für diese Sammlung an.|
 | $skiptoken | string | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `nextLink`-URL des vorhergehenden **delta**-Funktionsaufrufs zurückgegeben wird und anzeigt, dass in derselben Gruppensammlung weitere Änderungen zum Nachverfolgen vorliegen. |
 
-### <a name="optional-query-parameters"></a>Optionale Abfrageparameter
+## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
 Diese Methode unterstützt OData-Abfrageparameter zur Anpassung der Antwort.
 
@@ -33,13 +33,13 @@ Diese Methode unterstützt OData-Abfrageparameter zur Anpassung der Antwort.
 - Es besteht eingeschränkte Unterstützung für `$orderby`: Der einzige unterstützte `$orderby`-Ausdruck ist `$orderby=receivedDateTime+desc`. Wenn Sie keinen `$orderby`-Ausdruck einschließen, ist die Rückgabereihenfolge nicht gewährleistet. 
 - `$search` wird nicht unterstützt.
 
-### <a name="request-headers"></a>Anforderungsheader
+## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>Anforderungstext
+## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ### <a name="response"></a>Antwort
@@ -54,7 +54,7 @@ Siehe:</br>
 - Weitere Informationen finden Sie unter [Verwenden einer Delta-Abfrage](../../../concepts/delta_query_overview.md).</br>
 - Beispielanforderungen finden Sie unter [Inkrementelle Änderungen für Gruppen abrufen](../../../concepts/delta_query_groups.md).</br>
     
-### <a name="example"></a>Beispiel
+## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 <!-- {
   "blockType": "request",

@@ -26,11 +26,11 @@ Mit der Microsoft Graph-API können Sie all dies und mehr erledigen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Sehen Sie sich [ausgewählte Szenarios](featured_scenarios.md) an.
+- Sehen Sie sich [ausgewählte Szenarios](../concepts/featured_scenarios.md) an.
 - Starten Sie eine Beispielanforderung im [Graph-Tester](https://developer.microsoft.com/graph/graph-explorer).
 - Nutzen Sie den [Schnellstart](https://developer.microsoft.com/graph/quick-start), um eine sofort ausführbare Beispiel-App einzurichten.
-- Erfahren Sie, wie Sie [ein Authentifizierungstoken](auth_overview.md) in Ihrer App erhalten.
-- Beginnen Sie damit, die [API zu verwenden](use_the_api.md).
+- Erfahren Sie, wie Sie [ein Authentifizierungstoken](../concepts/auth_overview.md) in Ihrer App erhalten.
+- Beginnen Sie damit, die [API zu verwenden](../concepts/use_the_api.md).
 
 ## <a name="feedback"></a>Feedback?
 

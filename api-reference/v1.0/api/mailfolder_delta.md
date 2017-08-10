@@ -4,17 +4,17 @@ Dient zum Abrufen eines Satzes von E-Mail-Ordnern, die dem Postfach des Benutzer
 
 Ein **delta**-Funktionsaufruf für E-Mail-Ordner in einem Postfach ähnelt einer GET-Anforderung, mit der Ausnahme, dass durch entsprechende Anwendung von [Statustoken](../../../concepts/delta_query_overview.md) in einem oder mehreren dieser Aufrufe inkrementelle Änderungen in den E-Mail-Ordnern abgefragt werden können. Dies ermöglicht es Ihnen, einen lokalen Speicher der E-Mail-Ordner eines Benutzers zu pflegen und zu synchronisieren, ohne dass Sie jedes Mal alle E-Mail-Ordner des betreffenden Postfachs vom Server abrufen müssen.
 
-### <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: _Mail.Read_; _Mail.ReadWrite_
 
-### <a name="http-request"></a>HTTP-Anforderung
+## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/delta
 GET /users/<id>/mailFolders/delta
 ```
 
-### <a name="optional-query-parameters"></a>Optionale Abfrageparameter
+## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
 Beim Nachverfolgen von Änderungen in E-Mail-Ordnern wird eine Runde von einem oder mehreren **delta**-Funktionsaufrufen ausgeführt. Wenn Sie Abfrageparameter (außer `$deltatoken` und `$skiptoken`) verwenden, müssen Sie sie in der ursprünglichen **delta**-Anforderung angeben. Microsoft Graph codiert automatisch alle angegebenen Parameter in den Tokenteil der in der Antwort enthaltenen `nextLink`- oder `deltaLink`-URL. Sie müssen alle gewünschten Abfrageparameter nur einmal im Vorfeld angeben. In nachfolgenden Anforderungen können Sie die `nextLink`- oder `deltaLink`-URL einfach aus der vorherigen Antwort kopieren und anwenden, da diese URL bereits die codierten gewünschten Parameter enthält.
 
@@ -28,7 +28,7 @@ Beim Nachverfolgen von Änderungen in E-Mail-Ordnern wird eine Runde von einem o
 
 Sie können wie bei jeder GET-Anforderung den Abfrageparameter `$select` verwenden, um zwecks Leistungsoptimierung nur die benötigten Eigenschaften anzugeben. Die Eigenschaft _id_ wird immer zurückgegeben. 
 
-### <a name="request-headers"></a>Anforderungsheader
+## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
@@ -39,7 +39,7 @@ Sie können wie bei jeder GET-Anforderung den Abfrageparameter `$select` verwend
 ### <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [mailFolder](../resources/mailfolder.md)-Sammlungsobjekt im Antworttext zurückgegeben.
 
-### <a name="example"></a>Beispiel
+## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Das folgende Beispiel zeigt, wie Sie einen einzelnen **delta**-Funktionsaufruf ausführen und die maximale Anzahl von E-Mail-Ordnern im Textkörper der Antwort auf 2 beschränken.
 

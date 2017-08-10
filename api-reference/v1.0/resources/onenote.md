@@ -8,7 +8,7 @@ Alle Aufrufe des OneNote-Diensts über die Microsoft Graph-API verwenden diese D
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
 
-Der Speicherort können Benutzernotizbücher in Office 365 oder im OneDrive-Consumerdienst sowie Gruppennotizbüchern in Office 365 sein. Auf der SharePoint-Website gehostete Notizbücher werden derzeit nicht unterstützt. 
+Speicherort können Benutzernotizbücher in Office 365 oder dem Verbraucher-OneDrive, Gruppennotizbücher oder auf einer SharePoint-Website gehostete Teamnotizbücher in Office 365 sein. 
 
 **Benutzernotizbücher** Verwenden Sie einen der folgenden URLs, um auf persönliche Notizbücher im OneDrive-Consumerdienst oder in OneDrive for Business zuzugreifen:
 
@@ -23,40 +23,18 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 ```
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
+**SharePoint-Websiten-Notizbücher** VerwendenSie die folgende Dienststamm-URL, um auf Notizbücher zuzugreifen, die einer SharePoint-Teamwebsite gehören:
 
-Die folgenden Berechtigungsbereiche bieten verschiedene Zugriffsstufen auf OneNote-Notizbücher. Das Auswählen von Berechtigungsbereichen ist sowohl vom Speicherort der gewünschten Notizbücher als auch von der Funktionalität Ihrer App abhängig. 
+```
+https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
+```
+## <a name="authorization"></a>Authorization
 
-**Bereiche für persönliche Notizbücher im OneDrive-Consumerdienst oder in OneDrive for Business, die im Besitz des aktuellen Benutzers sind**
+Informationen über die erforderlichen Berechtigungen zum Arbeiten mit OneNote-APIs finden Sie unter [Notizenberechtigungen](../../../concepts/permissions_reference.md#notes-permissions).
 
-| Bereich | Berechtigung im Azure-Portal | Beschreibung |
-|:-------|:------|:------|
-| Notes.Create | Erstellen von OneNote-Notizbüchern von Benutzern | Die Titel Ihrer OneNote-Notizbücher und -Abschnitte können angezeigt werden; es werden neue Notizbücher, Abschnitte und Seiten erstellt. |
-| Notes.Read | Lesezugriff auf OneNote-Notizbücher von Benutzern | Ihre OneNote-Notizbücher können gelesen werden. |
-| Notes.ReadWrite | Lese- und Schreibzugriff auf OneNote-Notizbücher von Benutzern | Ihre OneNote-Notizbücher können gelesen, freigegeben und geändert werden. |
-
-**Bereiche für persönliche Notizbücher, die von anderen Benutzern freigegeben werden, und Gruppennotizbücher, auf die der aktuelle Benutzer zugreifen kann**
-
-| Bereich | Berechtigung im Azure-Portal | Beschreibung |
-|:-------|:------|:------|
-| Notes.Read.All | Lesezugriff auf alle OneNote-Notizbücher, auf die der Benutzer Zugriff hat | Alle OneNote-Notizbücher, auf die der angemeldete Benutzer Zugriff hat, können gelesen werden. |
-| Notes.ReadWrite.All | Lese- und Schreibzugriff auf alle OneNote-Notizbücher, auf die der Benutzer Zugriff hat | Alle OneNote-Notizbücher, auf die der angemeldete Benutzer Zugriff hat, können gelesen, freigegeben und geändert werden. |
-
-**Hinweis:** Das Zugreifen auf SharePoint-Website-Notizbücher über die Graph-API wird derzeit nicht unterstützt.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "notebooks",
-    "pages",
-    "resources",
-    "sectionGroups",
-    "sections"
-  ],
-  "@odata.type": "microsoft.graph.onenote"
-}-->
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Notizbücher|[Notebook](notebook.md)-Sammlung|Die Sammlung von OneNote-Notizbüchern, die im Besitz des Benutzers oder der Gruppe sind. Schreibgeschützt. Lässt Nullwerte zu.|
 |Vorgänge|[Operation](onenoteoperation.md)-Sammlung |Der Status von OneNote-Vorgängen. Das Abrufen einer operations-Sammlung wird nicht unterstützt, Sie können aber den Status von lange dauernden Vorgängen abrufen, wenn der `Operation-Location`-Header in der Antwort zurückgegeben wird. Schreibgeschützt. Lässt Nullwerte zu.|

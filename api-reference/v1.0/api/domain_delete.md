@@ -6,11 +6,11 @@ Dient zum Löschen einer Domäne aus einem Mandanten.
 > - Gelöschte Domänen können nicht wiederhergestellt werden.<br />
 > - Bei Löschversuchen tritt ein Fehler auf, wenn noch Ressourcen oder Objekte von der Domäne abhängig sind. Mithilfe der API [domainNameReferences auflisten](domain_list_domainnamereferences.md) können Sie alle abhängige Ressourcen ermitteln.
 
-### <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Domain.ReadWrite.All* oder *Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>HTTP-Anforderung
+## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /domains/{id}
@@ -18,14 +18,14 @@ DELETE /domains/{id}
 
 > Geben Sie für {id} die Domäne mit ihrem vollqualifizierten Domänennamen an.
 
-### <a name="request-headers"></a>Anforderungsheader
+## <a name="request-headers"></a>Anforderungsheader
 
 | Name       | Beschreibung|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Erforderlich. |
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>Anforderungstext
+## <a name="request-body"></a>Anforderungstext
 
 Geben Sie für diese Methode keinen Anforderungstext an.
 
@@ -33,7 +33,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Es wird keine Antworttext zurückgegeben.
 
-### <a name="example"></a>Beispiel
+## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 
 <!-- {

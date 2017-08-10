@@ -2,28 +2,28 @@
 
 Dient zum Abrufen einer Liste von licenseDetails-Objekten.
 
-### <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *User.Read*; *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>HTTP-Anforderung
+## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
-### <a name="optional-query-parameters"></a>Optionale Abfrageparameter
+## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode bietet **keine** Unterstützung für [OData Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters).
 
-### <a name="request-headers"></a>Anforderungsheader
+## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
 | Authorization  | Bearer &lt;code&gt;|
 
-### <a name="request-body"></a>Anforderungstext
+## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
 ### <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [licenseDetails](../resources/licensedetails.md)-Objekten im Antworttext zurückgegeben.
-### <a name="example"></a>Beispiel
+## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 
 <!-- {

@@ -17,7 +17,7 @@ Der folgende **Bereich** ist erforderlich, um diese API auszuführen: *Directory
 PATCH /schemaExtensions/{id}
 ```
 
-### <a name="optional-request-headers"></a>Optionale Anforderungsheader
+## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 
 | Name      |Beschreibung|
 |:----------|:----------|

@@ -1,4 +1,4 @@
-Besitzer auflisten
+# <a name="list-owners"></a>Besitzer auflisten
 
 Dient zum Abrufen einer Liste der Besitzer der Gruppe. Bei den Besitzern handelt es sich um eine Reihe von Benutzern, die keine Administratoren sind, die das Gruppenobjekt ändern können. 
 

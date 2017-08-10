@@ -42,6 +42,7 @@ Die **driveItem**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet un
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
+  "onenote": [ { "@odata.type": "microsoft.graph.onenote"} ],
 
   /* inherited from baseItem */
   "name": "string",
@@ -66,7 +67,7 @@ Die **driveItem**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet un
 | **root**                 | [root](root.md)                     | Falls vorhanden, gibt diese Eigenschaft an, dass es sich um die Stammwebsite in der Websitesammlung handelt. Schreibgeschützt.            |
 | **sharepointIds**        | [sharepointIds](sharepointids.md)   | Gibt Bezeichner zurück, die für SharePoint REST-Kompatibilität nützlich sind. Schreibgeschützt.                       |
 | **siteCollection**       | [siteCollection](sitecollection.md) | Stellt Details über die Websitesammlung der Website bereit. Nur für die Stammwebsite verfügbar. Schreibgeschützt. |
-| **webUrl**               | string (URL)                        | URL, über die das Element im Browser angezeigt werden kann. Schreibgeschützt.                                          |
+| **webUrl**               | String (URL)                        | URL, über die das Element im Browser angezeigt werden kann. Schreibgeschützt.                                          |
 
 ## <a name="relationships"></a>Beziehungen
 
@@ -76,11 +77,13 @@ Die **driveItem**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet un
 | **drives**        | Sammlung ([drive][])    | Die Sammlung von Laufwerken (Dokumentbibliotheken) unter dieser Website.
 | **items**         | Sammlung ([baseItem][]) | Wird verwendet, um ein beliebiges in dieser Website enthaltenes Element zu adressieren. Diese Sammlung kann nicht aufgezählt werden.
 | **sites**         | Sammlung ([site][])     | Die Sammlung der Unterwebsites unter dieser Website.
+| **onenote**       | [onenote][]              | Ruft den OneNote-Dienst für Notizbuchvorgänge auf.
 
 [baseItem]: baseitem.md
 [drive]: drive.md
 [identitySet]: identityset.md
 [site]: site.md
+[onenote]: onenote.md
 
 <!-- {
   "type": "#page.annotation",
