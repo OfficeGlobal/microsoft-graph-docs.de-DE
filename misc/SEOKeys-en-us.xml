@@ -3,6 +3,7 @@
   <Item text="Übersicht" url="/en-us/concepts/overview" SEOKeyword="Übersicht, Microsoft Graph-API, Übersicht" SEODescription="Microsoft Graph ermöglicht Anwendungen, auf digitale Arbeit und digitale Lebensdaten in der gesamten intelligenten Microsoft Cloud zuzugreifen. Große Vorteile für Entwickler: Ein einheitlicher Microsoft-API-Endpunkt für den Zugriff auf Daten, Informationen und Einblicke aus der Microsoft Cloud." />    
   <Item text="Ausgewählte Szenarios" url="/en-us/concepts/featured_scenarios"> 
 	  <Item text="Besprechungszeiten suchen" url="/en-us/concepts/findmeetingtimes_example" />
+	  <Item text="Abrufen von Informationen über die entsprechenden Personen" url="/en-us/concepts/people_example" SEODescription="Verwenden Sie die Personen-API zum Abrufen von Personen, die für einen Benutzer am relevantesten sind." />
   </Item>
   <Item text="Die erste App erstellen" url="/en-us/concepts/get-started">
     <Item text="Android" url="/en-us/concepts/android" SEOKeyword="Android, Microsoft Graph-API, Vorgehensweisen" SEODescription="Erste Schritte mit Microsoft Graph zum Zugreifen auf Microsoft Cloud-Daten in einer Android-App" />
@@ -547,6 +548,12 @@
       </Item>
     </Item>
   </Item>
+  <Item text="Kontakte" url="/en-us/api-reference/v1.0/resources/social_overview">
+	<Item text="Person" url="/en-us/api-reference/v1.0/resources/person">
+		<Item text="Personen auflisten" url="/en-us/api-reference/v1.0/api/user_list_people" />
+		<Item text="Person abrufen" url="/en-us/api-reference/v1.0/api/person_get" />
+	</Item>
+  </Item>
   <Item text="Privater Kontakt" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="Benutzerkontakt, Microsoft Graph-API, Benutzer-API" SEODescription="Persönliche Kontakte-API">
     <Item text="Kontakt" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="Benutzerkontakt, Microsoft Graph-API, Benutzer-API" SEODescription="Kontakt">
       <Item text="Kontakte auflisten" url="/en-us/api-reference/v1.0/api/user_list_contacts" SEOKeyword="Kontakte auflisten, Microsoft Graph-API, Benutzer-API" SEODescription="Dient zum Abrufen einer Liste von Kontaktobjekten." />
@@ -751,7 +758,8 @@
         <Item text="Gelöschte Gruppen auflisten" url="/en-us/api-reference/beta/api/directory_deleteditems_list" />
         <Item text="Gruppen auflisten" url="/en-us/api-reference/beta/api/group_list" SEOKeyword="Gruppen auflisten, Microsoft Graph-API, Gruppen-API" SEODescription="Ruft eine Liste von Gruppenobjekten ab." />
         <Item text="Verknüpfte Teams auflisten" url="/en-us/api-reference/beta/api/user_list_joinedteams" SEOKeyword="joinedTeams auflisten, Microsoft Graph-API, Benutzer-API" SEODescription="Dient zum Abrufen einer Liste von Microsoft Teams, denen der Benutzer angehört." />
-        <Item text="memberof auflisten" url="/en-us/api-reference/beta/api/group_list_memberof" SEOKeyword="memberOf auflisten, Microsoft Graph-API, Gruppen-API" SEODescription="Dient zum Abrufen einer Liste von directoryobject-Objekten." />
+        <Item text="Lebenszyklus-Richtlinien" url="/en-us/api-reference/beta/api/group_list_grouplifecyclepolicies" />
+		<Item text="memberOf auflisten" url="/en-us/api-reference/beta/api/group_list_memberof" SEOKeyword="memberOf auflisten, Microsoft Graph-API, Gruppen-API" SEODescription="Dient zum Abrufen einer Liste von directoryobject-Objekten." />
         <Item text="Mitglieder auflisten" url="/en-us/api-reference/beta/api/group_list_members" SEOKeyword="Mitglieder auflisten, Microsoft Graph-API, Gruppen-API" SEODescription="Dient zum Abrufen einer Liste von directoryobject-Objekten." />
         <Item text="Besitzer auflisten" url="/en-us/api-reference/beta/api/group_list_owners" SEOKeyword="Besitzer auflisten, Microsoft Graph-API, Gruppen-API" SEODescription="Dient zum Abrufen einer Liste von directoryobject-Objekten." />
         <Item text="Gruppe dauerhaft löschen" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
@@ -814,7 +822,17 @@
           <Item text="Erweiterte mehrwertige Eigenschaft abrufen" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
         </Item>
       </Item>
-      <Item text="Hinweise" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="Benutzernotizen, Microsoft Graph-API, Benutzer-API" SEODescription="">
+      <Item text="Lebenszyklusrichtlinie" url="/en-us/api-reference/beta/resources/grouplifecyclepolicy">
+		<Item text="Richtlinie erstellen" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies" />
+		<Item text="Richtlinien aufführen" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_list" />
+		<Item text="Richtlinie abrufen" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_get" />
+		<Item text="Richtlinie aktualisieren" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_update" />
+		<Item text="Richtlinie löschen" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_delete" />
+		<Item text="Gruppe hinzufügen" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_addgroup" />
+		<Item text="Gruppe entfernen" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_removegroup" />
+		<Item text="Gruppe erneuern" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_renewgroup" />	  
+	  </Item>
+	  <Item text="Anmerkungen" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="Benutzernotizen, Microsoft Graph-API, Benutzer-API" SEODescription="">
         <Item text="Notizbücher auflisten" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="Notizbücher auflisten, Microsoft Graph-API, Notizen-API" SEODescription="Dient zum Abrufen einer Liste von Notizbuchobjekten (../resources/notebook.md)." />
         <Item text="Notizbuch erstellen" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Notizbuch erstellen, Microsoft Graph-API, Notizen-API" SEODescription="Dient zum Erstellen eines neuen OneNote-Notizbuchs (../resources/notebook.md)." />
       </Item>
