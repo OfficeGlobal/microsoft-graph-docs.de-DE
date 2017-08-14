@@ -1,12 +1,11 @@
-<span data-ttu-id="bc6a0-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="bc6a0-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="d25c2-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="d25c2-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <span data-ttu-id="bc6a0-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="bc6a0-129">Example</span></span>
-<a id="example" class="xliff"></a>
-<span data-ttu-id="bc6a0-130">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="bc6a0-130">Here is an example of how to call this API.</span></span>
-##### <span data-ttu-id="bc6a0-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="bc6a0-131">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="bc6a0-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="bc6a0-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d25c2-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d25c2-129">Example</span></span>
+<span data-ttu-id="d25c2-130">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="d25c2-130">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="d25c2-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="d25c2-131">Request</span></span>
+<span data-ttu-id="d25c2-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="d25c2-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "event_snoozereminder"
@@ -24,9 +23,8 @@ Content-length: 97
 }
 ```
 
-##### <span data-ttu-id="bc6a0-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="bc6a0-133">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="bc6a0-134">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="bc6a0-134">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="d25c2-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="d25c2-133">Response</span></span>
+<span data-ttu-id="d25c2-134">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="d25c2-134">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

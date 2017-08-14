@@ -1,12 +1,10 @@
-<span data-ttu-id="3f8d1-p103">Aufrufer können prüfen, ob die Berechtigung geerbt wurde, indem sie die **inheritedFrom**-Eigenschaft prüfen. Diese Eigenschaft ist eine [**itemReference**](../resources/itemreference.md)-Ressource, die auf das Vorgängerelement verweist, von dem die Berechtigung vererbt wurde.</span><span class="sxs-lookup"><span data-stu-id="3f8d1-p103">Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property. This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.</span></span>
+<span data-ttu-id="de357-p103">Aufrufer können prüfen, ob die Berechtigung geerbt wurde, indem sie die **inheritedFrom**-Eigenschaft prüfen. Diese Eigenschaft ist eine [**itemReference**](../resources/itemreference.md)-Ressource, die auf das Vorgängerelement verweist, von dem die Berechtigung vererbt wurde.</span><span class="sxs-lookup"><span data-stu-id="de357-p103">Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property. This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.</span></span>
 
 Aufrufer können prüfen, ob die Berechtigung geerbt wurde, indem sie die **inheritedFrom**-Eigenschaft prüfen. Diese Eigenschaft ist eine [**itemReference**](../resources/itemreference.md)-Ressource, die auf das Vorgängerelement verweist, von dem die Berechtigung vererbt wurde.
 
-## <span data-ttu-id="3f8d1-138">Beispiel</span><span class="sxs-lookup"><span data-stu-id="3f8d1-138">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="3f8d1-139">Anforderung</span><span class="sxs-lookup"><span data-stu-id="3f8d1-139">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="3f8d1-140">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="3f8d1-140">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="de357-138">Beispiel</span><span class="sxs-lookup"><span data-stu-id="de357-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="de357-139">Anforderung</span><span class="sxs-lookup"><span data-stu-id="de357-139">Request</span></span>
+<span data-ttu-id="de357-140">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="de357-140">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_permissions"
@@ -16,9 +14,8 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/permissions
 ```
 
 
-##### <span data-ttu-id="3f8d1-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="3f8d1-141">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="3f8d1-142">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="3f8d1-142">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="de357-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="de357-141">Response</span></span>
+<span data-ttu-id="de357-142">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="de357-142">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -69,7 +66,7 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="3f8d1-143">Weitere Informationen zum Abrufen einer einzelnen Berechtigungsressource finden Sie unter [Abrufen von Berechtigungen](permission_get.md).</span><span class="sxs-lookup"><span data-stu-id="3f8d1-143">See [Get permission](permission_get.md) for more details on retrieving a single permission resource.</span></span>
+<span data-ttu-id="de357-143">Weitere Informationen zum Abrufen einer einzelnen Berechtigungsressource finden Sie unter [Abrufen von Berechtigungen](permission_get.md).</span><span class="sxs-lookup"><span data-stu-id="de357-143">See [Get permission](permission_get.md) for more details on retrieving a single permission resource.</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

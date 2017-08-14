@@ -1,19 +1,16 @@
-# <span data-ttu-id="e7e53-101">Einen neuen Ordner erstellen</span><span class="sxs-lookup"><span data-stu-id="e7e53-101">Create a new folder</span></span>
-<a id="create-a-new-folder" class="xliff"></a>
+# <a name="create-a-new-folder"></a><span data-ttu-id="d0879-101">Einen neuen Ordner erstellen</span><span class="sxs-lookup"><span data-stu-id="d0879-101">Create a new folder</span></span>
 
-<span data-ttu-id="e7e53-102">Erstellt einen neuen Ordner oder ein [DriveItem](../resources/driveitem.md)-Element in einem [Laufwerk](../resources/drive.md) mit einem angegebenen übergeordneten Element oder Pfad.</span><span class="sxs-lookup"><span data-stu-id="e7e53-102">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
+<span data-ttu-id="d0879-102">Erstellt einen neuen Ordner oder ein [DriveItem](../resources/driveitem.md)-Element in einem [Laufwerk](../resources/drive.md) mit einem angegebenen übergeordneten Element oder Pfad.</span><span class="sxs-lookup"><span data-stu-id="d0879-102">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
 
-## <span data-ttu-id="e7e53-103">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="e7e53-103">Prerequisites</span></span>
-<a id="prerequisites" class="xliff"></a>
-<span data-ttu-id="e7e53-104">Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:</span><span class="sxs-lookup"><span data-stu-id="e7e53-104">One of the following **scopes** is required to execute this API:</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="d0879-103">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="d0879-103">Prerequisites</span></span>
+<span data-ttu-id="d0879-104">Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:</span><span class="sxs-lookup"><span data-stu-id="d0879-104">One of the following **scopes** is required to execute this API:</span></span>
 
-* <span data-ttu-id="e7e53-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e7e53-105">Files.ReadWrite</span></span>
-* <span data-ttu-id="e7e53-106">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e7e53-106">Files.ReadWrite.All</span></span>
-* <span data-ttu-id="e7e53-107">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e7e53-107">Sites.ReadWrite.All</span></span>
+* <span data-ttu-id="d0879-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d0879-105">Files.ReadWrite</span></span>
+* <span data-ttu-id="d0879-106">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d0879-106">Files.ReadWrite.All</span></span>
+* <span data-ttu-id="d0879-107">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d0879-107">Sites.ReadWrite.All</span></span>
 
 
-## <span data-ttu-id="e7e53-108">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="e7e53-108">HTTP request</span></span>
-<a id="http-request" class="xliff"></a>
+## <a name="http-request"></a><span data-ttu-id="d0879-108">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="d0879-108">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/children
@@ -22,21 +19,17 @@ POST /drives/{drive-id}/items/{parent-item-id}/children
 POST /groups/{group-id}/drive/items/{parent-item-id}/children
 ```
 
-## <span data-ttu-id="e7e53-109">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="e7e53-109">Request body</span></span>
-<a id="request-body" class="xliff"></a>
-<span data-ttu-id="e7e53-110">Geben Sie im Anforderungstext eine JSON-Darstellung der zu erstellenden [DriveItem](../resources/driveitem.md)-Ressource an.</span><span class="sxs-lookup"><span data-stu-id="e7e53-110">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d0879-109">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="d0879-109">Request body</span></span>
+<span data-ttu-id="d0879-110">Geben Sie im Anforderungstext eine JSON-Darstellung der zu erstellenden [DriveItem](../resources/driveitem.md)-Ressource an.</span><span class="sxs-lookup"><span data-stu-id="d0879-110">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
 
+## <a name="response"></a><span data-ttu-id="d0879-111">Antwort</span><span class="sxs-lookup"><span data-stu-id="d0879-111">Response</span></span>
 
-## <span data-ttu-id="e7e53-111">Antwort</span><span class="sxs-lookup"><span data-stu-id="e7e53-111">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="e7e53-112">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und die [DriveItem](../resources/driveitem.md)-Ressource im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="e7e53-112">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="d0879-112">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und die [DriveItem](../resources/driveitem.md)-Ressource im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="d0879-112">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <span data-ttu-id="e7e53-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e7e53-113">Example</span></span>
-<a id="example" class="xliff"></a>
+## <a name="example"></a><span data-ttu-id="d0879-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d0879-113">Example</span></span>
 
-##### <span data-ttu-id="e7e53-114">Anforderung</span><span class="sxs-lookup"><span data-stu-id="e7e53-114">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="e7e53-115">Nachfolgend finden Sie ein Beispiel der Anforderung zum Erstellen eines neues Ordners am OneDrive-Stamm des Benutzers.</span><span class="sxs-lookup"><span data-stu-id="e7e53-115">Here is an example of the request to create a new folder in the user's OneDrive root.</span></span>
+##### <a name="request"></a><span data-ttu-id="d0879-114">Anforderung</span><span class="sxs-lookup"><span data-stu-id="d0879-114">Request</span></span>
+<span data-ttu-id="d0879-115">Nachfolgend finden Sie ein Beispiel der Anforderung zum Erstellen eines neues Ordners am OneDrive-Stamm des Benutzers.</span><span class="sxs-lookup"><span data-stu-id="d0879-115">Here is an example of the request to create a new folder in the user's OneDrive root.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -52,10 +45,9 @@ Content-Type: application/json
 }
 ```
 
-##### <span data-ttu-id="e7e53-116">Antwort</span><span class="sxs-lookup"><span data-stu-id="e7e53-116">Response</span></span>
-<a id="response" class="xliff"></a>
+##### <a name="response"></a><span data-ttu-id="d0879-116">Antwort</span><span class="sxs-lookup"><span data-stu-id="d0879-116">Response</span></span>
 
-<span data-ttu-id="e7e53-117">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="e7e53-117">Here is an example of the response.</span></span>
+<span data-ttu-id="d0879-117">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="d0879-117">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,11 +1,10 @@
-<span data-ttu-id="83430-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="83430-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="0f29c-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="0f29c-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <span data-ttu-id="83430-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="83430-119">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="83430-120">Anforderung</span><span class="sxs-lookup"><span data-stu-id="83430-120">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="83430-121">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="83430-121">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="0f29c-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="0f29c-119">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0f29c-120">Anforderung</span><span class="sxs-lookup"><span data-stu-id="0f29c-120">Request</span></span>
+<span data-ttu-id="0f29c-121">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="0f29c-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "delete_entity"
@@ -13,9 +12,8 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` z
 ```http
 
 ```
-##### <span data-ttu-id="83430-122">Antwort</span><span class="sxs-lookup"><span data-stu-id="83430-122">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="83430-123">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="83430-123">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="0f29c-122">Antwort</span><span class="sxs-lookup"><span data-stu-id="0f29c-122">Response</span></span>
+<span data-ttu-id="0f29c-123">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="0f29c-123">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "ignored",
   "truncated": true

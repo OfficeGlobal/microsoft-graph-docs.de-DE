@@ -1,11 +1,10 @@
-<span data-ttu-id="e2dd8-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="e2dd8-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="f7a34-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="f7a34-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <span data-ttu-id="e2dd8-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e2dd8-130">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="e2dd8-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="e2dd8-131">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="e2dd8-132">Hier finden Sie ein Beispiel für die Anforderung zum Löschen einer Anlage für ein Ereignis.</span><span class="sxs-lookup"><span data-stu-id="e2dd8-132">Here is an example of the request to delete an attachment on an event.</span></span>
+## <a name="example"></a><span data-ttu-id="f7a34-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f7a34-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f7a34-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="f7a34-131">Request</span></span>
+<span data-ttu-id="f7a34-132">Hier finden Sie ein Beispiel für die Anforderung zum Löschen einer Anlage für ein Ereignis.</span><span class="sxs-lookup"><span data-stu-id="f7a34-132">Here is an example of the request to delete an attachment on an event.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_attachment"
@@ -13,9 +12,8 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` z
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
 ```
-##### <span data-ttu-id="e2dd8-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="e2dd8-133">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="e2dd8-134">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="e2dd8-134">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="f7a34-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="f7a34-133">Response</span></span>
+<span data-ttu-id="f7a34-134">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="f7a34-134">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

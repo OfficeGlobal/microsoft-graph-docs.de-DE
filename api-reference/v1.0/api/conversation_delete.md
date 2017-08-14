@@ -1,11 +1,10 @@
-<span data-ttu-id="193c6-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="193c6-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="632d8-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="632d8-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <span data-ttu-id="193c6-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="193c6-117">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="193c6-118">Anforderung</span><span class="sxs-lookup"><span data-stu-id="193c6-118">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="193c6-119">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="193c6-119">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="632d8-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="632d8-117">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="632d8-118">Anforderung</span><span class="sxs-lookup"><span data-stu-id="632d8-118">Request</span></span>
+<span data-ttu-id="632d8-119">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="632d8-119">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_conversation"
@@ -13,9 +12,8 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` z
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}
 ```
-##### <span data-ttu-id="193c6-120">Antwort</span><span class="sxs-lookup"><span data-stu-id="193c6-120">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="193c6-121">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="193c6-121">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="632d8-120">Antwort</span><span class="sxs-lookup"><span data-stu-id="632d8-120">Response</span></span>
+<span data-ttu-id="632d8-121">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="632d8-121">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

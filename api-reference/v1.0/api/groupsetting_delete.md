@@ -1,9 +1,9 @@
-<span data-ttu-id="2cd94-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2cd94-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="00d26-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="00d26-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <a name="example"></a><span data-ttu-id="2cd94-120">Beispiel</span><span class="sxs-lookup"><span data-stu-id="2cd94-120">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="2cd94-121">Anforderung</span><span class="sxs-lookup"><span data-stu-id="2cd94-121">Request</span></span>
+## <a name="example"></a><span data-ttu-id="00d26-120">Beispiel</span><span class="sxs-lookup"><span data-stu-id="00d26-120">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="00d26-121">Anforderung</span><span class="sxs-lookup"><span data-stu-id="00d26-121">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_groupsetting"
@@ -11,7 +11,7 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` z
 ```http
 DELETE https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="2cd94-122">Antwort</span><span class="sxs-lookup"><span data-stu-id="2cd94-122">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="00d26-122">Antwort</span><span class="sxs-lookup"><span data-stu-id="00d26-122">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

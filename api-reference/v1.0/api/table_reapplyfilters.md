@@ -1,12 +1,11 @@
-<span data-ttu-id="eb1a9-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="eb1a9-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="707bf-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="707bf-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <span data-ttu-id="eb1a9-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="eb1a9-117">Example</span></span>
-<a id="example" class="xliff"></a>
-<span data-ttu-id="eb1a9-118">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="eb1a9-118">Here is an example of how to call this API.</span></span>
-##### <span data-ttu-id="eb1a9-119">Anforderung</span><span class="sxs-lookup"><span data-stu-id="eb1a9-119">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="eb1a9-120">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="eb1a9-120">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="707bf-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="707bf-117">Example</span></span>
+<span data-ttu-id="707bf-118">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="707bf-118">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="707bf-119">Anforderung</span><span class="sxs-lookup"><span data-stu-id="707bf-119">Request</span></span>
+<span data-ttu-id="707bf-120">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="707bf-120">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "table_reapplyfilters"
@@ -15,9 +14,8 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückge
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/reapplyFilters
 ```
 
-##### <span data-ttu-id="eb1a9-121">Antwort</span><span class="sxs-lookup"><span data-stu-id="eb1a9-121">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="eb1a9-122">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="eb1a9-122">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="707bf-121">Antwort</span><span class="sxs-lookup"><span data-stu-id="707bf-121">Response</span></span>
+<span data-ttu-id="707bf-122">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="707bf-122">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

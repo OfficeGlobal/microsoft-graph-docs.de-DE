@@ -1,11 +1,10 @@
-<span data-ttu-id="6191d-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="6191d-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="d75b0-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="d75b0-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <span data-ttu-id="6191d-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6191d-117">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="6191d-118">Anforderung</span><span class="sxs-lookup"><span data-stu-id="6191d-118">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="6191d-119">Im Folgenden finden Sie ein paar Beispiele für die Themenbereiche, an denen wir arbeiten:</span><span class="sxs-lookup"><span data-stu-id="6191d-119">Here are a couple of examples of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d75b0-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d75b0-117">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d75b0-118">Anforderung</span><span class="sxs-lookup"><span data-stu-id="d75b0-118">Request</span></span>
+<span data-ttu-id="d75b0-119">Im Folgenden finden Sie ein paar Beispiele für die Themenbereiche, an denen wir arbeiten:</span><span class="sxs-lookup"><span data-stu-id="d75b0-119">Here are a couple of examples of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
@@ -16,9 +15,8 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id="us
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id="groups/{id}"
 ```
 
-##### <span data-ttu-id="6191d-120">Antwort</span><span class="sxs-lookup"><span data-stu-id="6191d-120">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="6191d-121">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="6191d-121">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="d75b0-120">Antwort</span><span class="sxs-lookup"><span data-stu-id="d75b0-120">Response</span></span>
+<span data-ttu-id="d75b0-121">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="d75b0-121">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

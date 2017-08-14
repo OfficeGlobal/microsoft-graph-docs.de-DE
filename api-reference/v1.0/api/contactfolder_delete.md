@@ -1,11 +1,10 @@
-<span data-ttu-id="c9b60-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c9b60-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="0ddab-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="0ddab-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
-## <span data-ttu-id="c9b60-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c9b60-119">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="c9b60-120">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c9b60-120">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="c9b60-121">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="c9b60-121">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="0ddab-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="0ddab-119">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0ddab-120">Anforderung</span><span class="sxs-lookup"><span data-stu-id="0ddab-120">Request</span></span>
+<span data-ttu-id="0ddab-121">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="0ddab-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_contactfolder"
@@ -13,9 +12,8 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` z
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/contactFolders/{id}
 ```
-##### <span data-ttu-id="c9b60-122">Antwort</span><span class="sxs-lookup"><span data-stu-id="c9b60-122">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="c9b60-123">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c9b60-123">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="0ddab-122">Antwort</span><span class="sxs-lookup"><span data-stu-id="0ddab-122">Response</span></span>
+<span data-ttu-id="0ddab-123">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="0ddab-123">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

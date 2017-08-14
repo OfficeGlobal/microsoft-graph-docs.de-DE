@@ -1,13 +1,13 @@
-<span data-ttu-id="ad0d2-p102">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Für optimale Leistung sollten Sie nur geänderte Werte einschließen.</span><span class="sxs-lookup"><span data-stu-id="ad0d2-p102">In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.</span></span>
+<span data-ttu-id="f66bc-p102">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Für optimale Leistung sollten Sie nur geänderte Werte einschließen.</span><span class="sxs-lookup"><span data-stu-id="f66bc-p102">In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.</span></span>
 
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Für optimale Leistung sollten Sie nur geänderte Werte einschließen.
 
-### <a name="response"></a><span data-ttu-id="ad0d2-120">Antwort</span><span class="sxs-lookup"><span data-stu-id="ad0d2-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f66bc-120">Antwort</span><span class="sxs-lookup"><span data-stu-id="f66bc-120">Response</span></span>
 
-<span data-ttu-id="ad0d2-121">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben, aber kein Antworttext.</span><span class="sxs-lookup"><span data-stu-id="ad0d2-121">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
+<span data-ttu-id="f66bc-121">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben, aber kein Antworttext.</span><span class="sxs-lookup"><span data-stu-id="f66bc-121">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ad0d2-122">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ad0d2-122">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ad0d2-123">Anforderung</span><span class="sxs-lookup"><span data-stu-id="ad0d2-123">Request</span></span>
+## <a name="example"></a><span data-ttu-id="f66bc-122">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f66bc-122">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f66bc-123">Anforderung</span><span class="sxs-lookup"><span data-stu-id="f66bc-123">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -26,7 +26,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="ad0d2-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="ad0d2-124">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="f66bc-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="f66bc-124">Response</span></span>
 
 <!-- {
   "blockType": "response",
