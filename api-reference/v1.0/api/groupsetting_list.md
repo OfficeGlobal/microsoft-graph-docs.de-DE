@@ -2,7 +2,7 @@
 
 Ruft eine Liste der Gruppeneinstellungsobjekte ab.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Anforderungen
 
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Directory.Read.All* oder *Directory.ReadWrite.All* oder *Directory.AccessAsUser.All*
 
@@ -27,7 +27,9 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.i
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
+
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [groupSetting](../resources/groupsetting.md)-Objekten im Antworttext zurückgegeben.
 ## <a name="example"></a>Beispiel
 

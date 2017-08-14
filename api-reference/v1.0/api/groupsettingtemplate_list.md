@@ -2,7 +2,7 @@
 
 Gruppeneinstellungsvorlagen stellen einen Satz von Vorlagen dar, aus dem Gruppeneinstellungen erstellt und in einem Mandanten verwendet werden können.  Dieser Vorgang ruft die Liste der verfügbaren groupSettingTemplates-Objekte ab.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Anforderungen
 
 Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: *Directory.Read.All* oder *Directory.ReadWrite.All* oder *Directory.AccessAsUser.All*
 
@@ -23,7 +23,9 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.i
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
+
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [groupSettingTemplate](../resources/groupsettingtemplate.md)-Objekten im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

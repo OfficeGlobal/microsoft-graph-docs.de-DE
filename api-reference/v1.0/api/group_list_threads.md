@@ -5,7 +5,7 @@ Ruft alle Threads einer Gruppe ab.
 Hinweis: Sie können auch [Alle Threads einer Unterhaltung abrufen](conversation_list_threads.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:  *Group.Read.All* or *Group.ReadWrite.All*
+Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:  *Group.Read.All* oder *Group.ReadWrite.All*
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -20,7 +20,9 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
+
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [conversationThread](../resources/conversationthread.md)-Objekten im Antworttext zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung

@@ -23,6 +23,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitColumns
 ## <a name="request-body"></a>Anforderungstext
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
 ## <a name="example"></a>Beispiel

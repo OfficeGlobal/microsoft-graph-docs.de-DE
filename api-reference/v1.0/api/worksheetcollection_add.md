@@ -26,6 +26,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 |name|string|Optional. Der Name des hinzuzufügenden Arbeitsblatts. Falls angegeben, sollte der Name eindeutig sein. Falls nicht angegeben, bestimmt Excel den Namen des neuen Arbeitsblatts.|
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [Worksheet](../resources/worksheet.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

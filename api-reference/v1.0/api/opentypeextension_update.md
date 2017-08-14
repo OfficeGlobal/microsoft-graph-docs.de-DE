@@ -64,7 +64,6 @@ Stellen Sie den JSON-Text eines [openTypeExtension](../resources/openTypeExtensi
 | @odata.type | Microsoft.Graph.OpenTypeExtension |
 | extensionName | %unique_string% |
 
-
 ## <a name="response"></a>Antwort
 
 Bei Erfolg gibt diese Methode den Antwortcode `200 OK` und das aktualisierte [openTypeExtension](../resources/openTypeExtension.md)-Objekt zurück.

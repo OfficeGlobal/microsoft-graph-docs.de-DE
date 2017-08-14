@@ -2,7 +2,7 @@
 
 Löscht eine Gruppeneinstellung.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Anforderungen
 
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Directory.ReadWrite.All* oder *Directory.AccessAsUser.All*
 
@@ -25,7 +25,6 @@ DELETE /groups/{id}/settings/{id}
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
-
 
 ## <a name="response"></a>Antwort
 

@@ -28,6 +28,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 |values|(boolean or string or number)|Optional. Ein 2-dimensionales Array von unformatierten Werten der Tabellenzeile.|
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [TableRow](../resources/tablerow.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

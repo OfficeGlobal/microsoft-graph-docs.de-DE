@@ -26,6 +26,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 |Index|number|Index-Wert des abzurufenden Objekts. Nullindiziert.|
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [Chart](../resources/chart.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

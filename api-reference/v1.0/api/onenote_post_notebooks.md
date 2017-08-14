@@ -25,8 +25,8 @@ Geben Sie im Anforderungstext einen Namen für das Notizbuch an.
 
 Notizbuchnamen müssen eindeutig sein. Der Name darf nicht mehr als 128 Zeichen und keines der folgenden Zeichen enthalten: ?*\/:<>|'"
 
-
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und das neue [notebook](../resources/notebook.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

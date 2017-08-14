@@ -22,7 +22,8 @@ Stellen Sie in der URL der Anforderung die folgenden Abfrageparameter mit Werten
 |:---------------|:--------|:----------|
 |Index|Int32|Index des Elements, das zurückgegeben werden soll.|
 
-### <a name="response"></a>Antwort
+## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [workbookRangeView](../resources/workbookrangeview.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

@@ -35,8 +35,8 @@ Beim Nachverfolgen von Änderungen an Kontakten wird eine Runde von einem oder m
 | Content-Type  | string  | application/json. Erforderlich.  |
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 
+## <a name="response"></a>Antwort
 
-### <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [contact](../resources/contact.md)-Sammlungsobjekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

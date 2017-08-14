@@ -29,9 +29,10 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |italic|boolean|Stellt den Kursiv-Status der Schriftart dar.|
 |name|string|Schriftartname (z. B. "Calibri")|
 |size|double|Der Schriftgrad (z. B. 11)|
-|underline|string|Art der auf die Schriftart angewendeten Unterstreichung. Mögliche Werte: `None`, `Single`.|
+|underline|string|Art der auf die Schriftart angewendete Unterstreichung. Mögliche Werte: `None`, `Single`.|
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [ChartFont](../resources/chartfont.md)-Objekt im Antworttext zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung

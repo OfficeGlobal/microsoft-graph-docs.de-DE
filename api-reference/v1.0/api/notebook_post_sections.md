@@ -26,6 +26,7 @@ Geben Sie im Anforderungstext einen Namen für den Abschnitt an.
 Innerhalb der gleichen Hierarchieebene müssen Abschnittsnamen eindeutig sein. Der Name darf nicht mehr als 50 Zeichen und keines der folgenden Zeichen enthalten: ?*\/:<>|&#''%~
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und ein [section](../resources/section.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

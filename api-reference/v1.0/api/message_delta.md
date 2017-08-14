@@ -39,8 +39,8 @@ Beim Nachverfolgen von Änderungen in Nachrichten wird eine Runde von einem oder
 | Content-Type  | string  | application/json. Erforderlich.  |
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 
+## <a name="response"></a>Antwort
 
-### <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [message](../resources/message.md)-Sammlungsobjekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

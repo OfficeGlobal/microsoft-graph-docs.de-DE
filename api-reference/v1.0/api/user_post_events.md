@@ -33,6 +33,7 @@ Geben Sie im Anforderungstext eine JSON-Darstellung des [event](../resources/eve
 Da die **event**-Ressource [Erweiterungen](../../../concepts/extensibility_overview.md) unterstützt, können Sie den `POST`-Vorgang verwenden und während der Erstellung des Ereignisses benutzerdefinierte Eigenschaften mit Ihren eigenen Daten hinzufügen.
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und ein [event](../resources/event.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

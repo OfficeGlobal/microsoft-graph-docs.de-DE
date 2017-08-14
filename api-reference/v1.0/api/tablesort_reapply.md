@@ -22,6 +22,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/reapply
 ## <a name="request-body"></a>Anforderungstext
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
 ## <a name="example"></a>Beispiel

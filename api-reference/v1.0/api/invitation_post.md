@@ -31,8 +31,8 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen e
 |invitedUserEmailAddress |string | Die E-Mail-Adresse des Benutzers, den Sie einladen.|
 |inviteRedirectUrl |string |Die URL, zu der der Benutzer nach der Einlösung umgeleitet wird.|
 
+## <a name="response"></a>Antwort
 
-### <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und ein [invitation](../resources/invitation.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

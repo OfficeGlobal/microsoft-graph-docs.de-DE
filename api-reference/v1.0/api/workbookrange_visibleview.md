@@ -16,7 +16,8 @@ GET /me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView
 
 ## <a name="request-body"></a>Anforderungstext
 
-### <a name="response"></a>Antwort
+## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [workbookRangeView](../resources/workbookrangeview.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

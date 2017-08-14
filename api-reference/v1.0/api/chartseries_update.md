@@ -25,6 +25,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |name|string|Gibt den Namen einer Datenreihe in einem Diagramm an.|
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [ChartSeries](../resources/chartseries.md)-Objekt im Antworttext zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung

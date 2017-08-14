@@ -34,10 +34,13 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen e
 |targetTypes|String-Sammlung|Ein Satz von Microsoft Graph-Ressourcentypen (die Erweiterungen unterstützen), auf die diese Schemaerweiterungsdefinition angewendet werden kann.|
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und ein [schemaExtension](../resources/schemaextension.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-### <a name="request-1"></a>Anforderung 1
+
+##### <a name="request-1"></a>Anforderung 1
+
 Im ersten Beispiel wird veranschaulicht, wie aus einem überprüften Domänennamen, `graphlearn`, und einem Schemanamen, `courses`, eine eindeutige Zeichenfolge für die **id**-Eigenschaft der Schemaerweiterungsdefinition gebildet wird. Die eindeutige Zeichenfolge basiert auf diesem Format: \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
 
 Geben Sie im Anforderungstext eine JSON-Darstellung des [schemaExtension](../resources/schemaextension.md)-Objekts an.
@@ -72,7 +75,8 @@ Content-type: application/json
 }
 ```
 
-### <a name="response-1"></a>Antwort 1
+##### <a name="response-1"></a>Antwort 1
+
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
@@ -109,7 +113,8 @@ Content-length: 420
 }
 ```
 
-### <a name="request-2"></a>Anforderung 2
+##### <a name="request-2"></a>Anforderung 2
+
 Im zweiten Beispiel wird lediglich ein Schemaname, `courses`, in der **id**-Eigenschaft in der Anforderung angegeben, zusammen mit der JSON-Darstellung der restlichen Eigenschaften im [schemaExtension](../resources/schemaextension.md)-Objekt. Microsoft Graph weist einen eindeutigen Zeichenfolgenwert zu und gibt ihn in der Antwort zurück.
 
 <!-- {
@@ -143,7 +148,8 @@ Content-type: application/json
 }
 ```
 
-### <a name="response-2"></a>Antwort 2
+##### <a name="response-2"></a>Antwort 2
+
 Die Antwort enthält eine eindeutige Zeichenfolge in der **id**-Eigenschaft, die auf dem in der Anforderung angegebenen Schemanamen zusammen mit dem Rest der neu erstellten Schemadefinition basiert. Der Wert der **id**-Eigenschaft der Antwort basiert auf diesem Format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",

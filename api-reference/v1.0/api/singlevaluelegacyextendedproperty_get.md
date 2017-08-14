@@ -162,7 +162,9 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
+
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200 OK` zurückgegeben.
 
 #### <a name="get-resource-instance-using-expand"></a>Abrufen von Ressourceninstanzen mithilfe von `$expand`

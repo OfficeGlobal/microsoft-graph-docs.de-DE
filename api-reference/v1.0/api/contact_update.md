@@ -67,6 +67,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |yomiSurname|String|Der phonetische japanische Nachname des Kontakts. Diese Eigenschaft ist optional.|
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [contact](../resources/contact.md)-Objekt im Antworttext zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung

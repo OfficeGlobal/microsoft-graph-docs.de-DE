@@ -9,8 +9,8 @@ Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
 * Files.ReadWrite
 * Files.Read.All
 * Files.ReadWrite.All
-* Shares.Read.All
-* Shares.ReadWrite.All
+* Sites.Read.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -28,6 +28,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und die aktualisierte [Berechtigungs](../resources/permission.md)-Ressource im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

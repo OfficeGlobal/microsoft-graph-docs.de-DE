@@ -72,7 +72,9 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
+
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein **attachment**-Objekt im Antworttext zurückgegeben. Die Eigenschaften des jeweiligen Anlagentyps werden zurückgegeben: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) oder [referenceAttachment](../resources/referenceAttachment.md).
 
 ## <a name="example-file-attachment"></a>Beispiel (Dateianlage)

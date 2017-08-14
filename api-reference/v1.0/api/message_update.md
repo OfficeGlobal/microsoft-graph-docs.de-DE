@@ -25,7 +25,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |categories|String collection|Die Kategorien, die mit der Nachricht verknüpft sind.|
 |ccRecipients|Recipient collection|Die Cc:-Empfänger der Nachricht. Kann nur aktualisiert werden, wenn IsDraft = True.|
 |Von|Recipient|Der Postfachbesitzer und der Absender der Nachricht. Kann nur aktualisiert werden, wenn IsDraft = True.|
-|Wichtigkeit|String|Wichtigkeit der Nachricht Mögliche Werte: `Low`, `Normal`, `High`.|
+|Wichtigkeit|Zeichenfolge|Wichtigkeit der Nachricht Mögliche Werte: `Low`, `Normal`, `High`.|
 |inferenceClassification | String | Die Klassifizierung der Nachricht für den Benutzer, basierend auf der abgeleiteten Relevanz oder Wichtigkeit oder auf einer expliziten Außerkraftsetzung. Mögliche Werte sind: `focused` oder `other`. |
 |internetMessageId |String |Die Nachrichten-ID im von [RFC2822](http://www.ietf.org/rfc/rfc2822.txt) angegebenen Format. Kann nur aktualisiert werden, wenn IsDraft = True.|
 |isRead|Boolean|Gibt an, ob die Nachricht gelesen wurde.|
@@ -40,6 +40,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 Da die **message**-Ressource [Erweiterungen](../../../concepts/extensibility_overview.md) unterstützt, erlaubt der `PATCH`-Vorgang das Hinzufügen, Aktualisieren oder Löschen eigener App-spezifischer Daten in den benutzerdefinierten Eigenschaften von Erweiterungen in vorhandenen **message**-Instanzen.
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [message](../resources/message.md)-Objekt im Antworttext zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung

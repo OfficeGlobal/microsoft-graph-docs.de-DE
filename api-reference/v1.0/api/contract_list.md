@@ -29,7 +29,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.i
 
 Geben Sie für diese Methode keinen Anforderungstext an.
 
-### <a name="response"></a>Antwort
+## <a name="response"></a>Antwort
 
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [Contract](../resources/contract.md)-Objekten im Antworttext zurückgegeben.
 

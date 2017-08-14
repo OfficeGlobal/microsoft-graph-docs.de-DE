@@ -42,7 +42,7 @@ Diese Methode unterstützt OData-Abfrageparameter zur Anpassung der Antwort.
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
 
-### <a name="response"></a>Antwort
+## <a name="response"></a>Antwort
 
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [user](../resources/user.md)-Sammlungsobjekt im Antworttext zurückgegeben. Die Antwort enthält zudem eine nextLink- oder eine deltaLink-URL. 
 

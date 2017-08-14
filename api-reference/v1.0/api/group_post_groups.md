@@ -41,6 +41,7 @@ Geben Sie die **groupTypes** Eigenschaft an, wenn Sie eine Office 365 oder eine 
 Geben Sie bei Bedarf andere beschreibbare Eigenschaften für Ihre Gruppe an. Weitere Informationen finden Sie in Themen zu Eigenschaften der [group](../resources/group.md)-Ressource.
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und das [group](../resources/group.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

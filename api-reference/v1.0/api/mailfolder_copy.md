@@ -24,6 +24,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 |destinationId|String|Die Ordner-ID oder der bekannte Ordnername *Posteingang*, *Entwürfe*, *Gesendete Elemente* oder *Gelöschte Elemente*.|
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [MailFolder](../resources/mailfolder.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

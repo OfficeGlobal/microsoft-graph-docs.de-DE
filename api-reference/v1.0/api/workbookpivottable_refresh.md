@@ -19,7 +19,8 @@ POST /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
 
 ## <a name="request-body"></a>Anforderungstext
 
-### <a name="response"></a>Antwort
+## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
 ## <a name="example"></a>Beispiel

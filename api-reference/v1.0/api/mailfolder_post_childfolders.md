@@ -27,6 +27,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an. *
 |displayName|String|Der Anzeigename für den neuen Ordner.|
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und das [MailFolder](../resources/mailfolder.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

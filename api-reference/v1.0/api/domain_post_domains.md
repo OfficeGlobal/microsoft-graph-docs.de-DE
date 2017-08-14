@@ -25,7 +25,8 @@ Geben Sie im Anforderungstext eine JSON-Darstellung des [domain](../resources/do
 
 > Der Anforderungstext enthält die id-Eigenschaft für die neue Domäne. Die id-Eigenschaft ist die einzige Eigenschaft, die angegeben werden kann, und sie ist erforderlich. Der Wert der id-Eigenschaft ist der vollqualifizierte Domänenname, der erstellt werden soll.
 
-### <a name="response"></a>Antwort
+## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und das [domain](../resources/domain.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

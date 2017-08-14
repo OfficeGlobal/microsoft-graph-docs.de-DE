@@ -9,7 +9,7 @@ Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
 
 * Files.ReadWrite
 * Files.ReadWrite.All
-* Shares.ReadWrite.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -31,6 +31,7 @@ DELETE /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
 ## <a name="example"></a>Beispiel

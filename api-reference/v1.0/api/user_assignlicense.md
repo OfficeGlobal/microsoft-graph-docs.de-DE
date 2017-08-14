@@ -23,6 +23,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 |removeLicenses|Guid|Eine Auflistung von GUIDs, die die zu entfernenden Lizenzen identifizieren.|
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und ein [user](../resources/user.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

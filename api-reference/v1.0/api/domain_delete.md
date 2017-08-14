@@ -29,7 +29,7 @@ DELETE /domains/{id}
 
 Geben Sie für diese Methode keinen Anforderungstext an.
 
-### <a name="response"></a>Antwort
+## <a name="response"></a>Antwort
 
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Es wird keine Antworttext zurückgegeben.
 

@@ -20,7 +20,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |assignedPlans|AssignedPlan|Die Sammlung von Serviceplänen, die dem Mandanten zugeordnet sind.                            **Hinweis:** Lässt keine Nullwerte zu.            |
-|city|String|            |
+|Ort|String|            |
 |companyLastDirSyncTime|DateTimeOffset|Uhrzeit und Datum der letzten Synchronisierung des Mandanten mit dem lokalen Verzeichnis.|
 |country|String|            |
 |countryLetterCode|String|            |
@@ -28,7 +28,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |dirSyncEnabled|Boolean|**true**, wenn das Objekt aus einem lokalen Verzeichnis synchronisiert wird; **false**, wenn das Objekt ursprünglich aus einem lokalen Verzeichnis synchronisiert wurde, aber nicht mehr synchronisiert wird; **NULL**, wenn dieses Objekt nie aus einem lokalen Verzeichnis synchronisiert wurde (Standard).|
 |displayName|String|Der Anzeigename für den Mandanten.|
 |marketingNotificationEmails|String|                                        **Hinweis:** Lässt keine Nullwerte zu.            |
-|objectType|String|Eine Zeichenfolge, die den Objekttyp identifiziert. Für Mandanten ist der Wert immer „Unternehmen“. Geerbt von [directoryObject](../resources/directoryobject.md).|
+|objectType|Zeichenfolge|Eine Zeichenfolge, die den Objekttyp identifiziert. Für Mandanten ist der Wert immer „Unternehmen“. Geerbt von [directoryObject](../resources/directoryobject.md).|
 |postalCode|String|            |
 |preferredLanguage|String|            |
 |provisionedPlans|ProvisionedPlan|                                        **Hinweis:** Lässt keine Nullwerte zu.            |
@@ -42,6 +42,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |verifiedDomains|VerifiedDomain|Die Sammlung von Domänen, die diesem Mandanten zugeordnet sind.                            **Hinweis:** Lässt keine Nullwerte zu.            |
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein aktualisiertes [organization](../resources/organization.md)-Objekt im Antworttext zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung

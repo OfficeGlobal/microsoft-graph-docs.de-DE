@@ -35,8 +35,8 @@ Sie können wie bei jeder GET-Anforderung den Abfrageparameter `$select` verwend
 | Content-Type  | string  | application/json. Erforderlich.  |
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 
+## <a name="response"></a>Antwort
 
-### <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [contactFolder](../resources/contactfolder.md)-Sammlungsobjekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

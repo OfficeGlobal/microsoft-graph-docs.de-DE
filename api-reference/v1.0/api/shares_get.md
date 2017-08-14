@@ -10,7 +10,7 @@ Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
 
 * Files.ReadWrite
 * Files.ReadWrite.All
-* Shares.ReadWrite.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -23,6 +23,7 @@ GET /shares/{sharingIdOrUrl}
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine [sharedDriveItem](../resources/shareddriveitem.md)-Ressource im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

@@ -21,6 +21,7 @@ POST /workbook/names(<name>)/Range
 ## <a name="request-body"></a>Anforderungstext
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [Range](../resources/range.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

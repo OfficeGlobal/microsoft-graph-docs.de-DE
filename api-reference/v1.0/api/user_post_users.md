@@ -29,6 +29,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen e
 |userPrincipalName |string |Der Benutzerprinzipalname (someuser@contoso.com).|
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und ein [user](../resources/user.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

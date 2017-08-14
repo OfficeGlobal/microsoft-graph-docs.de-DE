@@ -2,7 +2,7 @@
 
 Verwenden Sie diese API, um eine neue Anlage zu erstellen.
 ## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:  _Mail.ReadWrite_
+Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen:  _Mail.ReadWrite_
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,8 +18,8 @@ POST /users/{id | userPrincipalName}/messages/{id}/attachments
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [Attachment](../resources/attachment.md)-Objekts an.
 
-
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und ein [Attachment](../resources/attachment.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example-file-attachment"></a>Beispiel (Dateianlage)
