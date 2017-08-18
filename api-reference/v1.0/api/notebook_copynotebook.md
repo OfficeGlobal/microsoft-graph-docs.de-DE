@@ -26,11 +26,11 @@ Geben Sie im Anforderungstext ein JSON-Objekt an, das die vom Vorgang benötigte
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|groupId|Zeichenfolge|Die ID der Gruppe, in die kopiert werden soll. Verwenden Sie diesen Parameter nur beim Kopieren in eine Office 365-Gruppe.|
-|renameAs|String|Der Name der Kopie. Standardmäßig der Name des vorhandenen Elements. |
-
+|groupId|String|Die ID der Gruppe, in die kopiert werden soll. Verwenden Sie diesen Parameter nur beim Kopieren in eine Office 365-Gruppe.|
+|renameAs|Zeichenfolge|Der Name der Kopie. Standardmäßig der Name des vorhandenen Elements. |
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `202 Accepted` und der Header `Operation-Location` zurückgegeben. Fragen Sie den Operation-Location-Endpunkt ab, um [den Status des Kopiervorgangs abzurufen](onenoteOperation_get.md).
 
 ## <a name="example"></a>Beispiel

@@ -156,8 +156,8 @@ Keine.
 
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _DeviceManagementServiceConfiguration.Read.All_ | Microsoft Intune-Konfiguration lesen (Vorschau) | Ermöglicht der App, Microsoft Intune-Diensteigenschaften zu lesen, einschließlich der Geräteregistrierung und der Drittanbieter-Dienstverbindungskonfiguration. | Ja |
-| _DeviceManagementServiceConfiguration.ReadWrite.All_ | Microsoft Intune-Konfiguration lesen und schreiben (Vorschau) | Ermöglicht der App, Microsoft Intune-Diensteigenschaften zu lesen und zu schreiben, einschließlich der Geräteregistrierung und der Drittanbieter-Dienstverbindungskonfiguration. | Ja |
+| _DeviceManagementServiceConfig.Read.All_ | Microsoft Intune-Konfiguration lesen (Vorschau) | Ermöglicht der App, Microsoft Intune-Diensteigenschaften zu lesen, einschließlich der Geräteregistrierung und der Drittanbieter-Dienstverbindungskonfiguration. | Ja |
+| _DeviceManagementServiceConfig.ReadWrite.All_ | Microsoft Intune-Konfiguration lesen und schreiben (Vorschau) | Ermöglicht der App, Microsoft Intune-Diensteigenschaften zu lesen und zu schreiben, einschließlich der Geräteregistrierung und der Drittanbieter-Dienstverbindungskonfiguration. | Ja |
 | _DeviceManagementConfiguration.Read.All_ | Microsoft Intune-Gerätekonfiguration und -Richtlinien lesen (Vorschau) | Ermöglicht der App, Eigenschaften der von Microsoft Intune verwalteten Gerätekonfiguration und Richtlinien zur Gerätekompatibilität sowie deren Zuweisung zu Gruppen zu lesen. | Ja |
 | _DeviceManagementConfiguration.ReadWrite.All_ | Microsoft Intune-Gerätekonfiguration und -Richtlinien lesen und schreiben (Vorschau) | Ermöglicht der App, Eigenschaften der von Microsoft Intune verwalteten Gerätekonfiguration und Richtlinien zur Gerätekompatibilität sowie deren Zuweisung zu Gruppen zu lesen und zu schreiben. | Ja |
 | _DeviceManagementApps.Read.All_ | Microsoft Intune-Apps lesen (Vorschau) | Ermöglicht der App, die Eigenschaften, Gruppenzuweisungen und Status von Apps, App-Konfigurationen sowie von Microsoft Intune verwaltete Richtlinien zum Schutz von Apps zu lesen. | Ja |
@@ -523,18 +523,23 @@ Beim Azure AD v2.0-Endpunkt geben Sie die Berechtigung _offline\_access_ im _sco
 
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _People.Read_ |    Lesezugriff auf Listen mit für den Benutzer relevanten Personen (Vorschau) | Die App kann eine bewertete Liste relevanter Personen des angemeldeten Benutzers lesen. Die Liste enthält lokale Kontakte, Kontakte aus sozialen Netzwerken, aus dem Verzeichnis Ihrer Organisation und Personen aus kürzlichen Unterhaltungen (z. B. E-Mail und Skype).| Nein |
+| _People.Read_ |    Lesezugriff auf Listen mit für den Benutzer relevanten Personen | Die App kann eine bewertete Liste relevanter Personen des angemeldeten Benutzers lesen. Die Liste kann lokale Kontakte, Kontakte aus sozialen Netzwerken oder aus dem Verzeichnis Ihrer Organisation und Personen aus kürzlichen Unterhaltungen (z. B. E-Mail und Skype) enthalten. | Nein |
+| _People.Read.All_ | Lesezugriff auf alle Listen mit für den Benutzer relevanten Personen | Ermöglicht es der App, eine bewertete Liste der Personen zu lesen, die für den angemeldeten Benutzer oder andere Benutzer in der Organisation des angemeldeten Benutzers relevant sind. Die Liste kann lokale Kontakte, Kontakte aus sozialen Netzwerken oder aus dem Verzeichnis Ihrer Organisation und Personen aus kürzlichen Unterhaltungen (z. B. E-Mail und Skype) enthalten. Ermöglicht der App das Durchsuchen des gesamten Verzeichnisses der Organisation des angemeldeten Benutzers. | Ja |
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
-Keine.
+|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _People.Read.All_ | Lesezugriff auf alle Listen mit für den Benutzer relevanten Personen | Ermöglicht es der App, eine bewertete Liste der Personen zu lesen, die für den angemeldeten Benutzer oder andere Benutzer in der Organisation des angemeldeten Benutzers relevant sind. Die Liste kann lokale Kontakte, Kontakte aus sozialen Netzwerken oder aus dem Verzeichnis Ihrer Organisation und Personen aus kürzlichen Unterhaltungen (z. B. E-Mail und Skype) enthalten. Ermöglicht der App das Durchsuchen des gesamten Verzeichnisses der Organisation des angemeldeten Benutzers. | Ja |
 
-### <a name="remarks"></a>Bemerkungen
+### <a name="remarks"></a>Hinweise
 
+Die People.Read.All-Berechtigung gilt nur für Arbeits- und Schul- sowie Unikonten. 
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
 #### <a name="delegated"></a>Delegiert
-
+* _People.Read_ : Lesezugriff auf eine Liste der relevanten Personen (`GET /me/people`)
+* _People.Read.All_ : Lesezugriff auf eine Liste der relevanten Personen für einen anderen Benutzer in der gleichen Organisation (`GET /users('{id})/people`)
 
 Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 
@@ -640,7 +645,6 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 | _User.Read.All_  |     Vollständige Profile aller Benutzer lesen           | Ermöglicht der App, den vollständigen Satz von Profileigenschaften, Berichten und Vorgesetzten von anderen Benutzern in Ihrer Organisation im Namen des angemeldeten Benutzers zu lesen. | Ja |
 | _User.ReadWrite.All_ |     Lese- und Schreibzugriff auf vollständige Profile aller Benutzer | Ermöglicht der App, den vollständigen Satz von Profileigenschaften, Berichten und Vorgesetzten von anderen Benutzern in Ihrer Organisation im Namen des angemeldeten Benutzers zu lesen und zu schreiben. Ermöglicht der App außerdem, im Namen des angemeldeten Benutzers Benutzer zu erstellen und zu löschen sowie Benutzerkennwörter zurückzusetzen. | Ja |
 | _User.Invite.All_  |     Gastbenutzer zur Organisation einladen | Ermöglicht der App, Gastbenutzer im Namen des angemeldeten Benutzers zu Ihrer Organisation einzuladen. | Ja |
-| _UserTimelineActivity.Write.CreatedByApp_  |     App-Aktivität in die Zeitachse der Benutzer schreiben | Ermöglicht der App das Melden der App-Aktivität des angemeldeten Benutzers an Microsoft-Zeitachse. | Nein |
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
@@ -650,9 +654,9 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 | _User.ReadWrite.All_ |   Lese- und Schreibzugriff auf vollständige Profile aller Benutzer | Ermöglicht der App, den vollständigen Satz von Profileigenschaften, Gruppenmitgliedschaften, Berichten und Vorgesetzten von anderen Benutzern in Ihrer Organisation ohne einen angemeldeten Benutzer zu lesen und zu schreiben.  Ermöglicht der App außerdem, Benutzer zu erstellen, die kein Administrator sind. Ermöglicht nicht das Zurücksetzen von Benutzerkennwörtern. | Ja |
 | _User.Invite.All_  |     Gastbenutzer zur Organisation einladen | Ermöglicht der App, Gastbenutzer ohne einen angemeldeten Benutzer zu Ihrer Organisation einzuladen. | Ja |
 
-### <a name="remarks"></a>HinwBemerkungeneise
+### <a name="remarks"></a>Bemerkungen
 
-Für Microsoft-Konten sind lediglich die Berechtigungen _User.Read_, _User.ReadWrite_ und _UserTimelineActivity.Write.CreatedByApp_ gültig. Für Geschäfts-, Schul- oder Unikonten sind alle Berechtigungen mit Ausnahme von _UserTimelineActivity.Write.CreatedByApp_ gültig.
+Für Microsoft-Konten sind lediglich die Berechtigungen _User.Read_ und _User.ReadWrite_ gültig. Für Geschäfts-, Schul- oder Unikonten sind alle Berechtigungen gültig.
 
 Mit der Berechtigung _User.Read_ kann eine App auch die grundlegenden Unternehmensinformationen des angemeldeten Benutzers für ein Geschäfts-, Schul- oder Unikonto über die [organization](../api-reference/v1.0/resources/organization.md)-Ressource lesen. Die folgenden Eigenschaften sind verfügbar: id, displayName und verifiedDomains.
 
@@ -738,8 +742,8 @@ In diesem Abschnitt werden einige gängige Szenarios für [user](../api-referenc
     
 | **App-Aufgaben, die die Gruppe betreffen**  |  **Erforderliche Berechtigungen** |  **Berechtigungszeichenfolgen** |
 |:-------------------------------|:---------------------|:---------------|
-| Die App möchte die grundlegenden Gruppeninformationen wie Anzeigename und Bild lesen, beispielsweise um diese in einer Gruppenauswahl anzuzeigen.  | _Group.Read.All_  | Lesezugriff auf alle Gruppen|
-| Die App möchte alle Inhalte in allen öffentlichen Office 365-Gruppen lesen, einschließlich Dateien und Unterhaltungen.  Sie muss auch Gruppenmitglieder anzeigen.  |  _Group.Read.All_, _User.ReadBasic.All_ | Lesezugriff auf alle Gruppen, Grundlegende Profile aller Benutzer lesen |
-| Die App möchte alle Inhalte in allen öffentlichen Office 365-Gruppen lesen und schreiben, einschließlich Dateien und Unterhaltungen.  Sie muss auch Gruppenmitglieder anzeigen und Gruppenmitglieder aktualisieren können (sofern der angemeldete Benutzer ein Gruppenbesitzer ist).  |     _Group.ReadWrite.All_, _User.ReadBasic.All_ |  Schreib-/Lesezugriff auf alle Gruppen, Grundlegende Profile aller Benutzer lesen |
-| Die App möchte dem Benutzer den Beitritt zu öffentlichen Office 365-Gruppen gestatten. Der Benutzer kann nach einer bestimmten Gruppe suchen und eine Gruppe, der er beitreten möchte, in einer Aufzählungsliste auswählen. Der Benutzer wird der Gruppe hinzugefügt, die er auswählt.    |   _Group.ReadWrite.All_, _User.Read_ | Schreib-/Lesezugriff auf alle Gruppen, Anmelden und Benutzerprofil lesen |
-| Die App möchte eine Gruppe über Micrsoft Graph erstellen. |    _Group.ReadWrite.All_ | Schreib-/Lesezugriff auf alle Gruppen|
+| Die App möchte die grundlegenden Gruppeninformationen (nur Anzeigename und Bild) lesen, beispielsweise um diese in einer Gruppenauswahl anzuzeigen.  | _Group.Read.All_  | Lesezugriff auf alle Gruppen|
+| Die App möchte alle Inhalte in allen Office 365-Gruppen lesen, einschließlich Dateien und Unterhaltungen.  Außerdem muss die App Gruppenmitgliedschaften anzeigen und in der Lage sein, Gruppenmitgliedschaften zu aktualisieren (wenn Besitzer).  |  _Group.Read.All_ | Lesezugriff auf Elemente in allen Websitesammlungen, Lesezugriff auf alle Gruppen|
+| Die App möchte alle Inhalte in allen Office 365-Gruppen lesen und schreiben, einschließlich Dateien und Unterhaltungen.  Außerdem muss die App Gruppenmitgliedschaften anzeigen und in der Lage sein, Gruppenmitgliedschaften zu aktualisieren (wenn Besitzer).  |   _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Lese- und Schreibzugriff auf alle Gruppen, Bearbeiten oder Löschen von Artikeln in allen Websitesammlungen |
+| Die App möchte eine Office 365-Gruppe ermitteln (suchen). Der Benutzer kann eine bestimmte Gruppe suchen und aus der Aufzählungsliste eine Gruppe auswählen, damit der Benutzer der Gruppe beitreten kann.     | _Group.ReadWrite.All_ | Schreib-/Lesezugriff auf alle Gruppen|
+| Die App möchte über AAD Graph eine Gruppe erstellen. |   _Group.ReadWrite.All_ | Schreib-/Lesezugriff auf alle Gruppen|

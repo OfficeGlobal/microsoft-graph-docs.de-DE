@@ -4,7 +4,7 @@ Dient zum Abrufen der Eigenschaften und Beziehungen eines [eventmessage](../reso
 
 Zurzeit gibt dieser Vorgang Ereignisnachrichtentext nur im HTML-Format zurück.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Anforderungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Mail.Read*
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -24,7 +24,9 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
+
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [eventMessage](../resources/eventmessage.md)-Objekt im Antworttext zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung

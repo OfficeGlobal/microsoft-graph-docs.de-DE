@@ -8,18 +8,38 @@ Mithilfe der Microsoft Graph-REST-API kann eine App Änderungen an den folgenden
 * Ereignisse
 * Kontakte
 * Gruppenunterhaltungen
-* Laufwerkstammelemente
+* Inhalten, die in OneDrive freigegeben werden, einschließlich der diesen SharePoint-Websites zugeordneten Laufwerke
+* Persönlichen OneDrive-Ordnern des Benutzers
+
+Sie können zum Beispiel ein Abonnement für einen bestimmten Ordner erstellen: `me/mailfolders('inbox')/messages`
+
+Oder für eine Ressource der obersten Ebene: `me/messages`, `me/contacts`, `me/events`
+
+Oder ein Sharepoint Online/OneDrive for Business-Laufwerk: `/drive/root`
+
+Oder persönliche OneDrive-Umgebung eines Benutzers:`/drives/{id}/root`
+`/drives/{id}/root/subfolder`
 
 Nachdem Microsoft Graph die Abonnementsanfrage akzeptiert hat, werden Pushbenachrichtigungen an die im Abonnement angegebene URL gesendet. Die App führt dann Aktionen gemäß der Geschäftslogik aus. Sie ruft z. B. weitere Daten ab, aktualisiert Zwischenspeicher für Dokumente und Ansichten usw.
 
-Apps sollten ihre Abonnements verlängern, bevor diese ablaufen. Abonnements können auch jederzeit gekündigt werden, um keine weiteren Benachrichtigungen zu erhalten.
+Apps sollten ihre Abonnements verlängern, bevor diese ablaufen. Derzeit beträgt die längste Ablaufzeit drei Tage, abzüglich 90 Minuten ab der Erstellungszeit. Apps müssen ihre Abonnements vor dem Ablaufzeitpunkt verlängern. Andernfalls müssen sie ein neues Abonnement erstellen.
+
+Apps können auch jederzeit gekündigt werden, um keine weiteren Benachrichtigungen zu erhalten.
+
+In der Regel sind für Abonnementvorgänge Leseberechtigungen für die Ressource erforderlich. Beispiel: um Benachrichtigungen zu Nachrichten zu erhalten, benötigt Ihre App die `Mail.Read`-Berechtigung. Unter [Abonnement erstellen](../api/subscription_post_subscriptions.md) werden die Berechtigungen aufgeführt, die für den jeweiligen Ressourcentyp erforderlich sind. Die folgende Tabelle enthält die Typen von Berechtigungen, die Ihre App für die Verwendung von Webhooks für bestimmte Ressourcentypen anfordern kann. 
+
+| Berechtigungstyp | Unterstützte Ressourcentypen in v1.0 |
+|:----------------|:---------------------------------|
+| Delegiert – Geschäfts-, Schul- oder Unikonto | [Kontakt](contact.md), [Unterhaltung](conversation.md), [Laufwerk](drive.md), [Ereignis](event.md), [Nachricht](message.md) |
+| Delegiert – persönliches Microsoft-Konto | Keine |
+| Anwendung | [Kontakt](contact.md), [Unterhaltung](conversation.md), [Ereignis](event.md), [Nachricht](message.md) |
+
+## <a name="code-samples"></a>Codebeispiele
 
 Es folgen einige Codebeispiele in GitHub.
 
 * [Microsoft Graph Webhooks-Beispiel für Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
 * [Microsoft Graph Webhooks-Beispiel für ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
-
-Im Folgenden wird der Abonnementprozess beschrieben.
 
 # <a name="creating-a-subscription"></a>Erstellen eines Abonnements
 
@@ -32,20 +52,6 @@ Um Benachrichtigungen für eine Ressource zu erhalten, muss in einem ersten Schr
 3. Der Client sendet das Überprüfungstoken zurück an Microsoft Graph.
 
 Der Client muss die Abonnement-ID speichern, um eine Benachrichtigung mit dem entsprechenden Abonnement korrelieren zu können.
-
-## <a name="characteristics-of-subscriptions"></a>Merkmale von Abonnements
-
-Sie können Abonnements für Ressourcen wie Nachrichten, Ereignisse, Kontakte und Laufwerkstammelemente erstellen.
-
-Sie können ein Abonnement für einen bestimmten Ordner erstellen: `https://graph.microsoft.com/v1.0/me/mailfolders('inbox')/messages`
-
-Oder für eine Ressource der obersten Ebene: `https://graph.microsoft.com/v1.0/me/messages`
-
-Oder ein Laufwerkstammelement: `https://graph.microsoft.com/v1.0/me/drive/root`
-
-Für das Erstellen eines Abonnements ist in den meisten Fällen Lesezugriff auf die Ressource erforderlich. Beispiel: um Benachrichtigungsnachrichten zu erhalten, benötigt Ihre App die `mail.read`-Berechtigung. Bitte beachten Sie, das zurzeit die `Files.ReadWrite`-Berechtigung für OneDrive-Stammlaufwerkelemente erforderlich ist, während SharePoint-Websites zugeordnete Laufwerke `Files.ReadWrite.All` erfordern.
-
-Abonnements laufen ab. Derzeit beträgt die längste Ablaufzeit drei Tage, abzüglich 90 Minuten (4230 insgesamt) ab der Erstellungszeit. Apps müssen ihre Abonnements vor dem Ablaufzeitpunkt verlängern. Andernfalls müssen sie ein neues Abonnement erstellen.
 
 ## <a name="notification-url-validation"></a>Überprüfung der Benachrichtigungs-URL
 

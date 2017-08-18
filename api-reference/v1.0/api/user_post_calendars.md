@@ -1,7 +1,7 @@
 # <a name="create-calendar"></a>Kalender erstellen
 
 Verwenden Sie diese API zum Erstellen eines neuen Kalenders.
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Anforderungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Calendars.ReadWrite*
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -17,8 +17,8 @@ POST /users/{id | userPrincipalName}/calendars
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [calendar](../resources/calendar.md)-Objekts an.
 
-
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und ein [calendar](../resources/calendar.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

@@ -1,8 +1,19 @@
 # <a name="create-subscription"></a>Abonnement erstellen
 
 Abonniert eine Listener-Anwendung zum Empfangen von Benachrichtigungen, wenn Daten in Microsoft Graph geändert werden.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist, abhängig von der Zielressource, erforderlich, um diese API ausführen: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All*, *Files.ReadWrite* oder *Files.ReadWrite.All*. ***Hinweis:*** Der Endpunkt „/v1.0“ unterstützt Anwendungsberechtigungen für die meisten Ressourcentypen. Für Unterhaltungen in einer Gruppe und Elemente des Typs „OneDrive-Stammlaufwerk“ werden Anwendungsberechtigungen nicht unterstützt.
+## <a name="prerequisites"></a>Anforderungen
+Für das Erstellen eines Abonnements ist Lesezugriff auf die Ressource erforderlich. Beispiel: um Benachrichtigungsnachrichten zu erhalten, benötigt Ihre App die `Mail.Read`-Berechtigung. Die folgende Tabelle listet die vorgeschlagenen Berechtigungen, die für die jeweilige Ressource erforderlich sind.
+
+| Ressourcentyp/Element        | Bereich               |
+|-----------------------------|---------------------|
+| Kontakte                    | Contacts.Read       |
+| Unterhaltungen               | Group.Read.All      |
+| Ereignisse                      | Calendars.Read      |
+| Nachrichten                    | Mail.Read           |
+| Laufwerk (OneDrive eines Benutzers)    | Files.ReadWrite     |
+| Laufwerke (freigegebene SharePoint-Inhalte und Laufwerke) | Files.ReadWrite.All |
+
+ ***Hinweis:*** Der Endpunkt „/v1.0“ unterstützt Anwendungsberechtigungen für die meisten Ressourcentypen. Für Unterhaltungen in einer Gruppe und Elemente des Typs „OneDrive-Stammlaufwerk“ werden Anwendungsberechtigungen nicht unterstützt.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -17,8 +28,8 @@ POST /subscriptions
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
 
-
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und ein [subscription](../resources/subscription.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
@@ -84,7 +95,7 @@ Content-type: text/plain
 Content-length: 7
 <token>
 ```
-##### <a name="notification-payload"></a>Nutzdaten der Benachrichtigung
+## <a name="notification-payload"></a>Nutzdaten der Benachrichtigung
 Wenn die abonnierten Ressource sich ändert, sendet die Webhooks-Funktion eine Benachrichtigung mit den folgenden Nutzdaten an Ihre Benachrichtigungs-URL.  Der Benachrichtigungsendpunkt muss eine Antwort von 200 oder 204 ohne Antworttext innerhalb von 30 Sekunden senden. Anderenfalls wird der Benachrichtigungsversuch in immer größer werdenden Intervallen wiederholt.  Für Dienste, die immer mindestens 30 Sekunden dauern, kann eine Begrenzung oder ein längeres Benachrichtigungsintervall eingerichtet werden.
 
 Dienste können auch eine 422-Antwort von einer Benachrichtigung zurückgeben. In diesem Fall wird das Abonnement automatisch gelöscht und die Benachrichtigungen werden eingestellt.

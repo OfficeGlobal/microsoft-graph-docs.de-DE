@@ -34,6 +34,7 @@ Geben Sie im Anforderungstext den neuen Wert für die **parentReference**-Eigens
 **Hinweis:** Die `"id:" "root"`-Syntax kann nicht beim Verschieben von Elementen in den Stammordner einer OneDrive-Umgebung verwendet werden. Sie müssen entweder die echte ID des Stammordners oder `{"path": "/drive/root"}` für die übergeordnete Referenz verwenden.
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und die aktualisierte [DriveItem](../resources/driveitem.md)-Ressource im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
@@ -53,8 +54,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <a name="response"></a>Antwort
+
+Das folgende Beispiel zeigt die Antwort.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -23,8 +23,8 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [RangeBorder](../resources/rangeborder.md)-Objekts an.
 
-
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und das [RangeBorder](../resources/rangeborder.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

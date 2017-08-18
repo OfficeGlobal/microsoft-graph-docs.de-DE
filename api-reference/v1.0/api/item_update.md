@@ -30,6 +30,7 @@ PATCH /groups/{group-id}/drive/items/{item-id}
 Geben Sie im Anforderungstext die Werte für die Eigenschaften an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Um eine optimale Leistung zu erzielen, sollte Ihre App keine Eigenschaften umfassen, die sich nicht geändert haben.
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und die aktualisierte [DriveItem](../resources/driveitem.md)-Ressource im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
@@ -48,8 +49,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. Diese Antwort wird zur besseren Lesbarkeit gekürzt.
+##### <a name="response"></a>Antwort
+
+Das folgende Beispiel zeigt die Antwort. Diese Antwort wird zur besseren Lesbarkeit gekürzt.
 
 <!-- {
   "blockType": "response",

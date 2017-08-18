@@ -45,6 +45,7 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 Fügen Sie in den Anforderungstext die Binärdaten des Fotos ein.
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200 OK` zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung

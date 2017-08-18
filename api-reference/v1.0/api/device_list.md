@@ -2,7 +2,7 @@
 
 Dient zum Abrufen einer Liste von Geräteobjekten, die in der Organisation registriert sind.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Anforderungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Device.ReadWrite.All* oder *Directory.Read.All* oder *Directory.ReadWrite.All* oder *Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>HTTP-Anforderung
@@ -19,7 +19,9 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
+
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [device](../resources/device.md)-Objekten im Antworttext zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung

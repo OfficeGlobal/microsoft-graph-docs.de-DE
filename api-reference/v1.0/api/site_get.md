@@ -15,7 +15,7 @@ Es gibt auch einen reservierten Websitebezeichner, `root`, der immer auf die Sta
 * `/sites/root`: Der Stammwebsite des Mandanten.
 * `/groups/{group-id}/sites/root`: Die Teamwebsite der Gruppe.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Anforderungen
 
 Einer der folgenden Bereiche ist erforderlich, um diese Anforderung auszuführen:
 
@@ -49,7 +49,7 @@ GET /groups/{group-id}/sites/root
 
 ## <a name="example"></a>Beispiel
 
-### <a name="request"></a>Anforderung
+##### <a name="request"></a>Anforderung
 
 <!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all service.sharepoint" } -->
 
@@ -57,7 +57,7 @@ GET /groups/{group-id}/sites/root
 GET https://graph.microsoft.com/v1.0/sites/{site-id}
 ```
 
-### <a name="response"></a>Antwort
+##### <a name="response"></a>Antwort
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 

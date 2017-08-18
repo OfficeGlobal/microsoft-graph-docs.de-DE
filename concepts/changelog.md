@@ -6,12 +6,26 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 ## <a name="august-2017"></a>August 2017
 
+### <a name="people"></a>Personen 
+
+|**Änderungstyp**|**Version**|**Beschreibung**|
+|:-------------|:-----------|:--------------|
+| Ergänzungen | v1.0 | [People APIs](../api-reference/v1.0/resources/person.md) zu v1.0 hinzugefügt. Weitere Informationen zu der People API finden Sie unter [Abrufen von relevanten Informationen über Personen](people_example.md).|
+
+### <a name="group-lifecycle-policy"></a>Gruppenlebenszyklusrichtlinie
+
+|**Änderungstyp**|**Version**|**Beschreibung**|
+|:-------------|:-----------|:--------------|
+| Ergänzungen | Beta | [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/grouplifecyclepolicy)-Entität hinzugefügt. |
+| Ergänzungen | Beta | Folgende APIs wurden für Gruppenlebenszyklusrichtlinie hinzugefügt: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_list), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_update), [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_delete), [add group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_addgroup), [remove group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_removegroup) und [renew a group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_renewgroup). |
+| Ergänzungen | Beta | [List groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md)-Funktion zur [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group)-Entität hinzugefügt. |
+
 ### <a name="onenote"></a>OneNote
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
-| Ergänzungen | v1.0 und Beta | Die Navigationseigenschaft [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote.md) wurde zu **site** hinzugefügt.  |
-| Ergänzungen | Beta | Die Zielparameter *siteCollectionId* und *siteId* für Kopiervorgänge. Beispiel: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook.md). |
+| Ergänzungen | v1.0 und Beta | Die Navigationseigenschaft [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote) wurde zu **site** hinzugefügt.  |
+| Ergänzungen | Beta | Die Zielparameter *siteCollectionId* und *siteId* für Kopiervorgänge. Beispiel: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook). |
 
 
 ## <a name="july-2017"></a>Juli 2017

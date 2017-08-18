@@ -21,8 +21,8 @@ POST /workbook/worksheets/{id|name}/charts/
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [Chart](../resources/chart.md)-Objekts an.
 
-
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und das [Chart](../resources/chart.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

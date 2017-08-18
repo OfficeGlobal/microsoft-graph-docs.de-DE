@@ -30,6 +30,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt an, das die vom Vorgang benötigte
 |renameAs|Zeichenfolge|Der Name der Kopie. Standardmäßig der Name des vorhandenen Elements. |
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `202 Accepted` und der Header `Operation-Location` zurückgegeben. Fragen Sie den Operation-Location-Endpunkt ab, um [den Status des Kopiervorgangs abzurufen](onenoteoperation_get.md).
 
 ## <a name="example"></a>Beispiel

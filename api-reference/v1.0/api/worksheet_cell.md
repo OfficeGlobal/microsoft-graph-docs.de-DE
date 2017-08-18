@@ -17,8 +17,8 @@ GET /workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Erforderlich. |
 
-
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [Range](../resources/range.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

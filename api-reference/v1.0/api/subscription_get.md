@@ -1,8 +1,19 @@
 # <a name="get-subscription"></a>Abonnement abrufen
 
 Dient zum Abrufen der Eigenschaften und der Beziehungen eines Abonnements.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist, abhängig von der Zielressource, erforderlich, um diese API ausführen: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All*, *Files.ReadWrite* oder *Files.ReadWrite.All*
+## <a name="prerequisites"></a>Anforderungen
+
+Die folgende Tabelle listet die vorgeschlagenen Berechtigungen, die für die jeweilige Ressource erforderlich sind.
+
+| Ressourcentyp/Element        | Bereich               |
+|-----------------------------|---------------------|
+| Kontakte                    | Contacts.Read       |
+| Unterhaltungen               | Group.Read.All      |
+| Ereignisse                      | Calendars.Read      |
+| Nachrichten                    | Mail.Read           |
+| Laufwerk (OneDrive eines Benutzers)    | Files.ReadWrite     |
+| Laufwerke (freigegebene SharePoint-Inhalte und Laufwerke) | Files.ReadWrite.All |
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,7 +29,9 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
+
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [subscription](../resources/subscription.md)-Objekt im Antworttext zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung

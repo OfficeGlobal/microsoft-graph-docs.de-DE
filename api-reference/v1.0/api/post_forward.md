@@ -5,7 +5,7 @@ Dient zum Weiterleiten eines Beitrags an einen Empfänger. Sie können sowohl di
 ## <a name="prerequisites"></a>Voraussetzungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
 
-*Group.ReadWrite*, *Group.Readwrite.All*
+*Group.ReadWrite.All*
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -28,6 +28,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 |toRecipients|[recipient](../resources/recipient.md) collection|Die Empfänger, an die der Thread weitergeleitet wird.|
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
 ## <a name="example"></a>Beispiel

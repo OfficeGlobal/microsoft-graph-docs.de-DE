@@ -29,9 +29,10 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 |matchCase|boolean|Optional. Gibt an, ob sich die Groß-/Kleinschreibung auf die Zeichenfolgensortierung auswirkt.|
 |hasHeaders|boolean|Optional. Gibt an, ob der Bereich eine Kopfzeile aufweist.|
 |orientation|string|Optional. Gibt an, ob der Vorgang Zeilen oder Spalten sortiert.  Die folgenden Werte sind möglich: `Rows`, `Columns`.|
-|Methode|string|Optional. Die Sortiermethode für chinesische Zeichen.  Die folgenden Werte sind möglich: `PinYin`, `StrokeCount`.|
+|method|string|Optional. Die Sortiermethode für chinesische Zeichen.  Die folgenden Werte sind möglich: `PinYin`, `StrokeCount`.|
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
 ## <a name="example"></a>Beispiel

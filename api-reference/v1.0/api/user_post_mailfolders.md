@@ -1,7 +1,7 @@
 # <a name="create-mailfolder"></a>MailFolder erstellen
 
 Verwenden Sie diese API, um einen neuen E-Mail-Ordner im Stammordner des Benutzerpostfachs zu erstellen.
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Anforderungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Mail.ReadWrite*
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -22,6 +22,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an. *
 |displayName|String|Der Anzeigename für den neuen Ordner.|
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und ein [MailFolder](../resources/mailfolder.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

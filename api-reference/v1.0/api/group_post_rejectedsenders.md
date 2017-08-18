@@ -3,7 +3,7 @@
 Fügt einen neuen Benutzer oder eine neue Gruppe zur rejectedSender-Liste hinzu.
 
 Geben Sie den Benutzer oder die Gruppe in `@odata.id` im Anforderungstext an. Benutzer in der Liste der abgelehnten Absender können keine Beiträge in Unterhaltungen der Gruppe (im POST-Anforderungs-URL identifiziert) bereitstellen. Stellen Sie sicher, dass Sie nicht den gleichen Benutzer oder die gleiche Gruppe in den Listen für abgelehnte und zulässige Absender angeben, sonst wird ein Fehler angezeigt.
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Anforderungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Group.ReadWrite.All*
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -18,8 +18,8 @@ POST /groups/{id}/rejectedSenders/$ref
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die ID eines Benutzer- oder Gruppenobjekts an.
 
-
 ## <a name="response"></a>Antwort
+
 Diese Methode gibt den Antwortcode `204, No Content` ohne Antworttext zurück.
 
 ## <a name="example"></a>Beispiel

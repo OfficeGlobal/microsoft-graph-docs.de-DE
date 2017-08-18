@@ -21,8 +21,8 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [ChartSeries](../resources/chartseries.md)-Objekts an.
 
-
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und ein [ChartSeries](../resources/chartseries.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

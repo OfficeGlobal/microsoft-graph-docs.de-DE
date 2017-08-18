@@ -22,8 +22,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [TableColumn](../resources/tablecolumn.md)-Objekts an.
 
-
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und das [TableColumn](../resources/tablecolumn.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel

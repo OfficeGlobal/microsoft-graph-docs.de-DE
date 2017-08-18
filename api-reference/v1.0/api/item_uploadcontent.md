@@ -25,6 +25,7 @@ PUT /groups/{id}/drive/items/{parent-id}/children/{filename}/content
 Der Inhalt des Anforderungstexts sollte den binären Stream der hochzuladenden Datei sein.
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, wird ein [driveItem](../resources/driveitem.md)-Objekt im Antworttext der neu erstellten Datei zurückgegeben.
 
 ## <a name="example"></a>Beispiel
@@ -41,8 +42,10 @@ Content-type: text/plain
 The contents of the file goes here.
 ```
 
-## <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <a name="response"></a>Antwort
+
+Das folgende Beispiel zeigt die Antwort.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

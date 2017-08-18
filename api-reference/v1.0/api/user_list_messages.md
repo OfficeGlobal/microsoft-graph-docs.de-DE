@@ -4,7 +4,7 @@ Mit dieser Methode können Sie die Nachrichten im Postfach des angemeldeten Benu
 
 Zurzeit gibt diesen Vorgang Nachrichtentext nur im HTML-Format zurück.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Anforderungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Mail.Read; Mail.ReadWrite*
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -34,7 +34,9 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
+
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [Message](../resources/message.md)-Objekten im Antworttext zurückgegeben.
 
 Die Standardseitengröße für diese Anforderung liegt bei 10 Nachrichten.

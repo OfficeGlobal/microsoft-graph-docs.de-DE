@@ -60,8 +60,9 @@ Die Antwort auf diese Anforderung enthält die Details der neu erstellten Ressou
 POST https://graph.microsoft.com/v1.0/me/drive/root:/{item-path}:/createUploadSession
 ```
 
-#### <a name="response-example"></a>Antwortbeispiel
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+##### <a name="response"></a>Antwort 
+
+Das folgende Beispiel zeigt die Antwort.
 
 <!-- {
   "blockType": "response",
@@ -100,7 +101,10 @@ Content-Range: bytes 0-25/128
 
 **Wichtig:** Die App muss sicherstellen, dass die im Header **Content-Range** angegebene Gesamtdateigröße bei allen Anforderungen identisch ist. Wird für ein Fragment eine andere Dateigröße deklariert, schlägt die betreffende Anforderung fehl.
 
-#### <a name="response-example"></a>Antwortbeispiel
+##### <a name="response"></a>Antwort
+
+Das folgende Beispiel zeigt die Antwort.
+
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -166,7 +170,9 @@ Die DELETE-Anforderung führt zum sofortigen Ablauf der Uploadsitzung und entfer
 DELETE https://tenant-my.sharepoint.com/alkjl1kjklna
 ```
 
-#### <a name="response-example"></a>Antwortbeispiel
+##### <a name="response"></a>Antwort 
+
+Das folgende Beispiel zeigt die Antwort.
 
 <!-- { "blockType": "response" } -->
 ```http

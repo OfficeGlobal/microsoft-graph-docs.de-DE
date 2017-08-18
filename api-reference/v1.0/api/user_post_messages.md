@@ -4,7 +4,7 @@ Verwenden Sie diese API zum Erstellen eines Entwurfs einer neuen Nachricht. Entw
 
 Beim Erstellen des Entwurfs im selben **POST**-Aufruf können Sie eine [Anlage](../resources/attachment.md) hinzufügen.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Anforderungen
 Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Mail.ReadWrite*
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -25,8 +25,8 @@ Geben Sie im Anforderungstext eine JSON-Darstellung des [message](../resources/m
 
 Da die **message**-Ressource [Erweiterungen](../../../concepts/extensibility_overview.md) unterstützt, können Sie den `POST`-Vorgang verwenden und während der Erstellung der Nachricht benutzerdefinierte Eigenschaften mit Ihren eigenen Daten hinzufügen.
 
-
 ## <a name="response"></a>Antwort
+
 Bei erfolgreicher Ausführung der Methode werden der Antwortcode `201, Created` und das [message](../resources/message.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
