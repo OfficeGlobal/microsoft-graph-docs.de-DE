@@ -1,17 +1,31 @@
-<span data-ttu-id="b630f-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="b630f-p102">Bearer token. Required.</span></span>  | Bearer {token}. Erforderlich.  |
-| <span data-ttu-id="b630f-115">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b630f-115">Content-Type</span></span>   | <span data-ttu-id="b630f-116">application/json</span><span class="sxs-lookup"><span data-stu-id="b630f-116">application/json</span></span>  | 
+# <a name="list-manager"></a><span data-ttu-id="2df81-101">Manager auflisten</span><span class="sxs-lookup"><span data-stu-id="2df81-101">List manager</span></span>
 
-## <span data-ttu-id="b630f-117">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="b630f-117">Request body</span></span>
-<a id="request-body" class="xliff"></a>
-<span data-ttu-id="b630f-118">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="b630f-118">Do not supply a request body for this method.</span></span>
-## <span data-ttu-id="b630f-119">Antwort</span><span class="sxs-lookup"><span data-stu-id="b630f-119">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="b630f-120">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [directoryObject](../resources/directoryobject.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="b630f-120">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
-## <span data-ttu-id="b630f-121">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b630f-121">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="b630f-122">Anforderung</span><span class="sxs-lookup"><span data-stu-id="b630f-122">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="b630f-123">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="b630f-123">Here is an example of the request.</span></span>
+<span data-ttu-id="2df81-p101">Ruft den Vorgesetzten des Benutzers ab. Gibt den Benutzer oder Kontakt zurück, der als Vorgesetzter des Benutzers zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="2df81-p101">Get user's manager. Returns the user or contact assigned as the user's manager.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="2df81-104">Anforderungen</span><span class="sxs-lookup"><span data-stu-id="2df81-104">Prerequisites</span></span>
+<span data-ttu-id="2df81-105">Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*</span><span class="sxs-lookup"><span data-stu-id="2df81-105">One of the following **scopes** is required to execute this API: *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="2df81-106">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="2df81-106">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{id | userPrincipalName}/manager
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="2df81-107">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="2df81-107">Optional query parameters</span></span>
+<span data-ttu-id="2df81-108">Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="2df81-108">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="2df81-109">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="2df81-109">Request headers</span></span>
+| <span data-ttu-id="2df81-110">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="2df81-110">Header</span></span>       | <span data-ttu-id="2df81-111">Wert</span><span class="sxs-lookup"><span data-stu-id="2df81-111">Value</span></span>|
+|:-----------|:------|
+| <span data-ttu-id="2df81-112">Authorization</span><span class="sxs-lookup"><span data-stu-id="2df81-112">Authorization</span></span>  | <span data-ttu-id="2df81-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="2df81-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="2df81-115">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2df81-115">Content-Type</span></span>   | <span data-ttu-id="2df81-116">application/json</span><span class="sxs-lookup"><span data-stu-id="2df81-116">application/json</span></span>  | 
+
+## <a name="request-body"></a><span data-ttu-id="2df81-117">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="2df81-117">Request body</span></span>
+<span data-ttu-id="2df81-118">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="2df81-118">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="2df81-119">Antwort</span><span class="sxs-lookup"><span data-stu-id="2df81-119">Response</span></span>
+
+<span data-ttu-id="2df81-120">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [directoryObject](../resources/directoryobject.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2df81-120">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="2df81-121">Beispiel</span><span class="sxs-lookup"><span data-stu-id="2df81-121">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2df81-122">Anforderung</span><span class="sxs-lookup"><span data-stu-id="2df81-122">Request</span></span>
+<span data-ttu-id="2df81-123">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="2df81-123">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_manager"
@@ -19,9 +33,8 @@
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 ```
-##### <span data-ttu-id="b630f-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="b630f-124">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="b630f-125">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="b630f-125">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="2df81-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="2df81-124">Response</span></span>
+<span data-ttu-id="2df81-125">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="2df81-125">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
