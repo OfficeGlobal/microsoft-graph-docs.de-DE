@@ -421,7 +421,9 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
-Keine.
+|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Member.Read.Hidden_ | Ausgeblendete Mitgliedschaften lesen | Erlaubt es der App, im Namen des angemeldeten Benutzers die Mitgliedschaften aller ausgeblendeten Gruppen und administrativen Einheiten zu lesen, auf die der angemeldete Benutzer Zugriff hat. | Ja |
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
@@ -430,9 +432,16 @@ Keine.
 | _Member.Read.Hidden_ | Alle ausgeblendeten Mitgliedschaften lesen | Ermöglicht der App, die Mitgliedschaften ausgeblendeter Gruppen und administrativer Einheiten ohne einen angemeldeten Benutzer zu lesen. | Ja |
 
 ### <a name="remarks"></a>Hinweise
+_Member.Read.Hidden_ gilt nur für Geschäfts-, Schul- oder Unikonten.
+
 Die Mitgliedschaft in einigen Office 365-Gruppen kann ausgeblendet werden. Dies bedeutet, dass nur die Mitglieder der Gruppe deren Mitglieder anzeigen können. Dieses Feature ist hilfreich zur Einhaltung von Vorschriften, die erfordern, dass eine Organisation Gruppenmitgliedschaften für Außenstehende ausblendet (z. B. eine Office 365-Gruppe, zu der in einem Kurs angemeldete Teilnehmer gehören).
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
+
+#### <a name="delegated"></a>Delegiert
+
+* _Member.Read.Hidden_: Lesen aller Mitglieder einer administrativen Einheit mit ausgeblendeter Mitgliedschaft im Namen des angemeldeten Benutzers (`GET /administrativeUnits/{id}/members`)
+* _Member.Read.Hidden_: Lesen aller Mitglieder einer Gruppe mit ausgeblendeter Mitgliedschaft im Namen des angemeldeten Benutzers (`GET /groups/{id}/members`)
 
 #### <a name="application"></a>Anwendung
 
@@ -654,7 +663,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 | _User.ReadWrite.All_ |   Lese- und Schreibzugriff auf vollständige Profile aller Benutzer | Ermöglicht der App, den vollständigen Satz von Profileigenschaften, Gruppenmitgliedschaften, Berichten und Vorgesetzten von anderen Benutzern in Ihrer Organisation ohne einen angemeldeten Benutzer zu lesen und zu schreiben.  Ermöglicht der App außerdem, Benutzer zu erstellen, die kein Administrator sind. Ermöglicht nicht das Zurücksetzen von Benutzerkennwörtern. | Ja |
 | _User.Invite.All_  |     Gastbenutzer zur Organisation einladen | Ermöglicht der App, Gastbenutzer ohne einen angemeldeten Benutzer zu Ihrer Organisation einzuladen. | Ja |
 
-### <a name="remarks"></a>Bemerkungen
+### <a name="remarks"></a>HinwBemerkungeneise
 
 Für Microsoft-Konten sind lediglich die Berechtigungen _User.Read_ und _User.ReadWrite_ gültig. Für Geschäfts-, Schul- oder Unikonten sind alle Berechtigungen gültig.
 

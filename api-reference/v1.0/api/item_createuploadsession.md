@@ -125,7 +125,7 @@ Halten Sie sich bei der Festlegung der Fragmentgröße immer an die unten beschr
 * Die Eigenschaft `nextExpectedRanges` listet nicht immer alle fehlenden Bereiche auf.
 * Wird ein Segment geschrieben, gibt sie den nächsten Bereich zurück, ab dem begonnen wird (z. B. „523-“).
 * Schlägt der Schreibvorgang fehl, weil der Client ein Fragment gesendet hat, das der Server bereits empfangen hat, antwortet der Server mit `HTTP 416 Requested Range Not Satisfiable`. Sie können den [Uploadstatus anfordern](#resuming-an-in-progress-upload), um eine detailliertere Liste der fehlenden Bereiche zu erhalten.
-* Einschließlich des Autorisierungsheaders bei der Ausgabe von `PUT` kann der Aufruf zu einer `HTTP 401 Unauthoized`-Antwort führen. Der Autorisierungsheader und das Bearertoken sollten nur gesendet werden, wenn `POST` während des ersten Schritts ausgegeben wird. Beim Ausgeben von `PUT` sollte es nicht eingeschlossen werden.   
+* Wenn Sie den Autorisierungsheader in den `PUT`-Aufruf einschließen, wird möglicherweise eine Antwort des Typs `HTTP 401 Unauthorized` zurückgegeben. Der Autorisierungsheader und das Bearertoken sollten nur mit dem `POST`-Aufruf im Rahmen von Schritt 1 gesendet werden. Der Autorisierungsheader sollte nicht in den `PUT`-Aufruf eingeschlossen werden.   
 
 
 ## <a name="completing-a-file"></a>Vervollständigen einer Datei
