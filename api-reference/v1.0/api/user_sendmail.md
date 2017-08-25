@@ -1,11 +1,46 @@
-<span data-ttu-id="7dfca-p105">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202, Accepted` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="7dfca-p105">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
+# <a name="send-mail"></a><span data-ttu-id="2a91d-101">Nachrichten senden</span><span class="sxs-lookup"><span data-stu-id="2a91d-101">Send mail</span></span>
 
-Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202, Accepted` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
+<span data-ttu-id="2a91d-p101">Sendet die im Anforderungstext angegebene Nachricht. Die Nachricht wird dann automatisch im Ordner „Gesendete Elemente“ gespeichert.</span><span class="sxs-lookup"><span data-stu-id="2a91d-p101">Send the message specified in the request body. The message is saved in the Sent Items folder by default.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7dfca-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="7dfca-133">Example</span></span>
-<span data-ttu-id="7dfca-134">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="7dfca-134">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="7dfca-135">Anforderung</span><span class="sxs-lookup"><span data-stu-id="7dfca-135">Request</span></span>
-<span data-ttu-id="7dfca-136">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="7dfca-136">Here is an example of the request.</span></span>
+<span data-ttu-id="2a91d-104">Sie können in denselben Aktionsaufruf des Typs **sendMail** auch eine [Dateianlage](../resources/fileattachment.md) einschließen.</span><span class="sxs-lookup"><span data-stu-id="2a91d-104">You can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="2a91d-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="2a91d-105">Permissions</span></span>
+<span data-ttu-id="2a91d-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="2a91d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+
+|<span data-ttu-id="2a91d-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="2a91d-108">Permission type</span></span>      | <span data-ttu-id="2a91d-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="2a91d-109">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="2a91d-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="2a91d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2a91d-111">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="2a91d-111">Mail.Send</span></span>    | 
+|<span data-ttu-id="2a91d-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="2a91d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2a91d-113">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="2a91d-113">Mail.Send</span></span>    | 
+|<span data-ttu-id="2a91d-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="2a91d-114">Application</span></span> | <span data-ttu-id="2a91d-115">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="2a91d-115">Mail.Send</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="2a91d-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="2a91d-116">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /users/{id | userPrincipalName}/sendMail
+```
+## <a name="request-headers"></a><span data-ttu-id="2a91d-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="2a91d-117">Request headers</span></span>
+| <span data-ttu-id="2a91d-118">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="2a91d-118">Header</span></span>       | <span data-ttu-id="2a91d-119">Wert</span><span class="sxs-lookup"><span data-stu-id="2a91d-119">Value</span></span> |
+|:---------------|:--------|
+| <span data-ttu-id="2a91d-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="2a91d-120">Authorization</span></span>  | <span data-ttu-id="2a91d-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="2a91d-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="2a91d-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2a91d-123">Content-Type</span></span>  | <span data-ttu-id="2a91d-124">application/json</span><span class="sxs-lookup"><span data-stu-id="2a91d-124">application/json</span></span>  |
+
+## <a name="request-body"></a><span data-ttu-id="2a91d-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="2a91d-125">Request body</span></span>
+<span data-ttu-id="2a91d-126">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="2a91d-126">In the request body, provide a JSON object with the following parameters.</span></span>
+
+| <span data-ttu-id="2a91d-127">Parameter</span><span class="sxs-lookup"><span data-stu-id="2a91d-127">Parameter</span></span>    | <span data-ttu-id="2a91d-128">Typ</span><span class="sxs-lookup"><span data-stu-id="2a91d-128">Type</span></span>   |<span data-ttu-id="2a91d-129">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2a91d-129">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="2a91d-130">Nachricht</span><span class="sxs-lookup"><span data-stu-id="2a91d-130">Message</span></span>|[<span data-ttu-id="2a91d-131">message</span><span class="sxs-lookup"><span data-stu-id="2a91d-131">Message</span></span>](../resources/message.md)|<span data-ttu-id="2a91d-p104">Die zu sendende Nachricht. Erforderlich. </span><span class="sxs-lookup"><span data-stu-id="2a91d-p104">The message to send. Required.</span></span>|
+|<span data-ttu-id="2a91d-134">SaveToSentItems</span><span class="sxs-lookup"><span data-stu-id="2a91d-134">SaveToSentItems</span></span>|<span data-ttu-id="2a91d-135">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="2a91d-135">Boolean</span></span>|<span data-ttu-id="2a91d-p105">,Gibt an, ob die Nachricht im Ordner „Gesendete Elemente“ gespeichert werden soll. Geben Sie es nur an, wenn der Parameter false ist; der Standardwert true ist.  Optional.</span><span class="sxs-lookup"><span data-stu-id="2a91d-p105">Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional.</span></span> |
+
+## <a name="response"></a><span data-ttu-id="2a91d-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="2a91d-139">Response</span></span>
+
+<span data-ttu-id="2a91d-p106">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202, Accepted` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2a91d-p106">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="2a91d-142">Beispiel</span><span class="sxs-lookup"><span data-stu-id="2a91d-142">Example</span></span>
+<span data-ttu-id="2a91d-143">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="2a91d-143">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="2a91d-144">Anforderung</span><span class="sxs-lookup"><span data-stu-id="2a91d-144">Request</span></span>
+<span data-ttu-id="2a91d-145">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="2a91d-145">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "user_sendmail"
@@ -41,8 +76,8 @@ Content-length: 512
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="7dfca-137">Antwort</span><span class="sxs-lookup"><span data-stu-id="7dfca-137">Response</span></span>
-<span data-ttu-id="7dfca-138">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="7dfca-138">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="2a91d-146">Antwort</span><span class="sxs-lookup"><span data-stu-id="2a91d-146">Response</span></span>
+<span data-ttu-id="2a91d-147">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="2a91d-147">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

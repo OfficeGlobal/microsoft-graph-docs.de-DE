@@ -1,41 +1,41 @@
-# <a name="get-subscription"></a><span data-ttu-id="e0b84-101">Abonnement abrufen</span><span class="sxs-lookup"><span data-stu-id="e0b84-101">Get subscription</span></span>
+# <a name="get-subscription"></a><span data-ttu-id="98d42-101">Abonnement abrufen</span><span class="sxs-lookup"><span data-stu-id="98d42-101">Get subscription</span></span>
 
-<span data-ttu-id="e0b84-102">Dient zum Abrufen der Eigenschaften und der Beziehungen eines Abonnements.</span><span class="sxs-lookup"><span data-stu-id="e0b84-102">Retrieve the properties and relationships of a subscription.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="e0b84-103">Anforderungen</span><span class="sxs-lookup"><span data-stu-id="e0b84-103">Prerequisites</span></span>
+<span data-ttu-id="98d42-102">Mit dieser API können Sie die Eigenschaften und Beziehungen eines Abonnements abrufen.</span><span class="sxs-lookup"><span data-stu-id="98d42-102">Retrieve the properties and relationships of a subscription.</span></span>
+## <a name="permissions"></a><span data-ttu-id="98d42-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="98d42-103">Permissions</span></span>
 
-<span data-ttu-id="e0b84-104">Die folgende Tabelle listet die vorgeschlagenen Berechtigungen, die für die jeweilige Ressource erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="e0b84-104">The following table lists the suggested permission needed for each resource.</span></span>
+<span data-ttu-id="98d42-p101">In der folgenden Tabelle ist für jede Ressource die entsprechende vorgeschlagene erforderliche Berechtigung aufgeführt. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="98d42-p101">The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-| <span data-ttu-id="e0b84-105">Ressourcentyp/Element</span><span class="sxs-lookup"><span data-stu-id="e0b84-105">Resource type / Item</span></span>        | <span data-ttu-id="e0b84-106">Bereich</span><span class="sxs-lookup"><span data-stu-id="e0b84-106">Scope</span></span>               |
+| <span data-ttu-id="98d42-106">Ressourcentyp/Element</span><span class="sxs-lookup"><span data-stu-id="98d42-106">Resource type / Item</span></span>        | <span data-ttu-id="98d42-107">Berechtigung</span><span class="sxs-lookup"><span data-stu-id="98d42-107">Permission</span></span>          |
 |-----------------------------|---------------------|
-| <span data-ttu-id="e0b84-107">Kontakte</span><span class="sxs-lookup"><span data-stu-id="e0b84-107">Contacts</span></span>                    | <span data-ttu-id="e0b84-108">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="e0b84-108">Contacts.Read</span></span>       |
-| <span data-ttu-id="e0b84-109">Unterhaltungen</span><span class="sxs-lookup"><span data-stu-id="e0b84-109">Conversations</span></span>               | <span data-ttu-id="e0b84-110">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="e0b84-110">Group.Read.All</span></span>      |
-| <span data-ttu-id="e0b84-111">Ereignisse</span><span class="sxs-lookup"><span data-stu-id="e0b84-111">Events</span></span>                      | <span data-ttu-id="e0b84-112">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="e0b84-112">Calendars.Read</span></span>      |
-| <span data-ttu-id="e0b84-113">Nachrichten</span><span class="sxs-lookup"><span data-stu-id="e0b84-113">Messages</span></span>                    | <span data-ttu-id="e0b84-114">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="e0b84-114">Mail.Read</span></span>           |
-| <span data-ttu-id="e0b84-115">Laufwerk (OneDrive eines Benutzers)</span><span class="sxs-lookup"><span data-stu-id="e0b84-115">Drive  (User's OneDrive)</span></span>    | <span data-ttu-id="e0b84-116">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e0b84-116">Files.ReadWrite</span></span>     |
-| <span data-ttu-id="e0b84-117">Laufwerke (freigegebene SharePoint-Inhalte und Laufwerke)</span><span class="sxs-lookup"><span data-stu-id="e0b84-117">Drives (Sharepoint shared content and drives)</span></span> | <span data-ttu-id="e0b84-118">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e0b84-118">Files.ReadWrite.All</span></span> |
+| <span data-ttu-id="98d42-108">Kontakte</span><span class="sxs-lookup"><span data-stu-id="98d42-108">Contacts</span></span>                    | <span data-ttu-id="98d42-109">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="98d42-109">Contacts.Read</span></span>       |
+| <span data-ttu-id="98d42-110">Unterhaltungen</span><span class="sxs-lookup"><span data-stu-id="98d42-110">Conversations</span></span>               | <span data-ttu-id="98d42-111">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="98d42-111">Group.Read.All</span></span>      |
+| <span data-ttu-id="98d42-112">Ereignisse</span><span class="sxs-lookup"><span data-stu-id="98d42-112">Events</span></span>                      | <span data-ttu-id="98d42-113">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="98d42-113">Calendars.Read</span></span>      |
+| <span data-ttu-id="98d42-114">Nachrichten</span><span class="sxs-lookup"><span data-stu-id="98d42-114">Messages</span></span>                    | <span data-ttu-id="98d42-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="98d42-115">Mail.Read</span></span>           |
+| <span data-ttu-id="98d42-116">Laufwerk (OneDrive eines Benutzers)</span><span class="sxs-lookup"><span data-stu-id="98d42-116">Drive  (User's OneDrive)</span></span>    | <span data-ttu-id="98d42-117">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="98d42-117">Files.ReadWrite</span></span>     |
+| <span data-ttu-id="98d42-118">Laufwerke (freigegebene SharePoint-Inhalte und Laufwerke)</span><span class="sxs-lookup"><span data-stu-id="98d42-118">Drives (Sharepoint shared content and drives)</span></span> | <span data-ttu-id="98d42-119">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="98d42-119">Files.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e0b84-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="e0b84-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="98d42-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="98d42-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /subscriptions/{subscriptionId}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="e0b84-120">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="e0b84-120">Optional query parameters</span></span>
-<span data-ttu-id="e0b84-121">Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="e0b84-121">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="98d42-121">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="98d42-121">Optional query parameters</span></span>
+<span data-ttu-id="98d42-122">Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="98d42-122">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="e0b84-122">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="e0b84-122">Request headers</span></span>
-| <span data-ttu-id="e0b84-123">Name</span><span class="sxs-lookup"><span data-stu-id="e0b84-123">Name</span></span>       | <span data-ttu-id="e0b84-124">Typ</span><span class="sxs-lookup"><span data-stu-id="e0b84-124">Type</span></span> | <span data-ttu-id="e0b84-125">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e0b84-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="98d42-123">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="98d42-123">Request headers</span></span>
+| <span data-ttu-id="98d42-124">Name</span><span class="sxs-lookup"><span data-stu-id="98d42-124">Name</span></span>       | <span data-ttu-id="98d42-125">Typ</span><span class="sxs-lookup"><span data-stu-id="98d42-125">Type</span></span> | <span data-ttu-id="98d42-126">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="98d42-126">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="e0b84-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="e0b84-126">Authorization</span></span>  | <span data-ttu-id="e0b84-127">string</span><span class="sxs-lookup"><span data-stu-id="e0b84-127">string</span></span>  | <span data-ttu-id="e0b84-p101">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="e0b84-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="98d42-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="98d42-127">Authorization</span></span>  | <span data-ttu-id="98d42-128">string</span><span class="sxs-lookup"><span data-stu-id="98d42-128">string</span></span>  | <span data-ttu-id="98d42-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="98d42-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e0b84-130">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="e0b84-130">Request body</span></span>
-<span data-ttu-id="e0b84-131">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="e0b84-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="98d42-131">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="98d42-131">Request body</span></span>
+<span data-ttu-id="98d42-132">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="98d42-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e0b84-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="e0b84-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="98d42-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="98d42-133">Response</span></span>
 
-<span data-ttu-id="e0b84-133">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [subscription](../resources/subscription.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="e0b84-133">If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="e0b84-134">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e0b84-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e0b84-135">Anforderung</span><span class="sxs-lookup"><span data-stu-id="e0b84-135">Request</span></span>
-<span data-ttu-id="e0b84-136">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="e0b84-136">Here is an example of the request.</span></span>
+<span data-ttu-id="98d42-134">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [subscription](../resources/subscription.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="98d42-134">If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="98d42-135">Beispiel</span><span class="sxs-lookup"><span data-stu-id="98d42-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="98d42-136">Anforderung</span><span class="sxs-lookup"><span data-stu-id="98d42-136">Request</span></span>
+<span data-ttu-id="98d42-137">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="98d42-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_subscription"
@@ -43,8 +43,8 @@ GET /subscriptions/{subscriptionId}
 ```http
 GET https://graph.microsoft.com/v1.0/subscriptions/{subscriptionId}
 ```
-##### <a name="response"></a><span data-ttu-id="e0b84-137">Antwort</span><span class="sxs-lookup"><span data-stu-id="e0b84-137">Response</span></span>
-<span data-ttu-id="e0b84-138">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="e0b84-138">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="98d42-138">Antwort</span><span class="sxs-lookup"><span data-stu-id="98d42-138">Response</span></span>
+<span data-ttu-id="98d42-139">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="98d42-139">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

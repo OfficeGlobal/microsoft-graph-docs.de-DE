@@ -1,33 +1,39 @@
-# <a name="list-posts"></a><span data-ttu-id="6f6c0-101">Beiträge auflisten</span><span class="sxs-lookup"><span data-stu-id="6f6c0-101">List posts</span></span>
+# <a name="list-posts"></a><span data-ttu-id="f17a3-101">Beiträge auflisten</span><span class="sxs-lookup"><span data-stu-id="f17a3-101">List posts</span></span>
 
-<span data-ttu-id="6f6c0-p101">Dient zum Abrufen der Beiträge des angegebenen Threads. Sie können entweder die übergeordnete Unterhaltung und den Thread oder nur den Thread ohne Verweis auf die übergeordnete Unterhaltung angeben.</span><span class="sxs-lookup"><span data-stu-id="6f6c0-p101">Get the posts of the specified thread. You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.</span></span>
+<span data-ttu-id="f17a3-p101">Dient zum Abrufen der Beiträge des angegebenen Threads. Sie können entweder die übergeordnete Unterhaltung und den Thread oder nur den Thread ohne Verweis auf die übergeordnete Unterhaltung angeben.</span><span class="sxs-lookup"><span data-stu-id="f17a3-p101">Get the posts of the specified thread. You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="6f6c0-104">Anforderungen</span><span class="sxs-lookup"><span data-stu-id="6f6c0-104">Prerequisites</span></span>
-<span data-ttu-id="6f6c0-105">Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Group.ReadWrite.All; Group.Read.All*</span><span class="sxs-lookup"><span data-stu-id="6f6c0-105">One of the following **scopes** is required to execute this API: *Group.ReadWrite.All; Group.Read.All*</span></span>
+## <a name="permissions"></a><span data-ttu-id="f17a3-104">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="f17a3-104">Permissions</span></span>
+<span data-ttu-id="f17a3-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="f17a3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="6f6c0-106">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="6f6c0-106">HTTP request</span></span>
+|<span data-ttu-id="f17a3-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="f17a3-107">Permission type</span></span>      | <span data-ttu-id="f17a3-108">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="f17a3-108">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="f17a3-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="f17a3-109">Delegated (work or school account)</span></span> | <span data-ttu-id="f17a3-110">Group.ReadWrite.All, Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="f17a3-110">Group.ReadWrite.All, Group.Read.All</span></span>    | 
+|<span data-ttu-id="f17a3-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="f17a3-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f17a3-112">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="f17a3-112">Not supported.</span></span>    | 
+|<span data-ttu-id="f17a3-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="f17a3-113">Application</span></span> | <span data-ttu-id="f17a3-114">Group.ReadWrite.All, Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="f17a3-114">Group.ReadWrite.All, Group.Read.All</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="f17a3-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="f17a3-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts
 GET /groups/{id}/conversations/{id}/threads/{id}/posts
 
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="6f6c0-107">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="6f6c0-107">Optional query parameters</span></span>
-<span data-ttu-id="6f6c0-108">Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="6f6c0-108">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="6f6c0-109">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="6f6c0-109">Request headers</span></span>
-| <span data-ttu-id="6f6c0-110">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="6f6c0-110">Header</span></span>       | <span data-ttu-id="6f6c0-111">Wert</span><span class="sxs-lookup"><span data-stu-id="6f6c0-111">Value</span></span> |
+## <a name="optional-query-parameters"></a><span data-ttu-id="f17a3-116">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="f17a3-116">Optional query parameters</span></span>
+<span data-ttu-id="f17a3-117">Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="f17a3-117">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f17a3-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="f17a3-118">Request headers</span></span>
+| <span data-ttu-id="f17a3-119">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="f17a3-119">Header</span></span>       | <span data-ttu-id="f17a3-120">Wert</span><span class="sxs-lookup"><span data-stu-id="f17a3-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="6f6c0-112">Authorization</span><span class="sxs-lookup"><span data-stu-id="6f6c0-112">Authorization</span></span>  | <span data-ttu-id="6f6c0-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="6f6c0-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="f17a3-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="f17a3-121">Authorization</span></span>  | <span data-ttu-id="f17a3-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="f17a3-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="6f6c0-115">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="6f6c0-115">Request body</span></span>
-<span data-ttu-id="6f6c0-116">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="6f6c0-116">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f17a3-124">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="f17a3-124">Request body</span></span>
+<span data-ttu-id="f17a3-125">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="f17a3-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6f6c0-117">Antwort</span><span class="sxs-lookup"><span data-stu-id="6f6c0-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f17a3-126">Antwort</span><span class="sxs-lookup"><span data-stu-id="f17a3-126">Response</span></span>
 
-<span data-ttu-id="6f6c0-118">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [Post](../resources/post.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="6f6c0-118">If successful, this method returns a `200 OK` response code and collection of [Post](../resources/post.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="6f6c0-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6f6c0-119">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6f6c0-120">Anforderung</span><span class="sxs-lookup"><span data-stu-id="6f6c0-120">Request</span></span>
-<span data-ttu-id="6f6c0-121">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="6f6c0-121">Here is an example of the request.</span></span>
+<span data-ttu-id="f17a3-127">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [Post](../resources/post.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="f17a3-127">If successful, this method returns a `200 OK` response code and collection of [Post](../resources/post.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="f17a3-128">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f17a3-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f17a3-129">Anforderung</span><span class="sxs-lookup"><span data-stu-id="f17a3-129">Request</span></span>
+<span data-ttu-id="f17a3-130">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="f17a3-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_posts"
@@ -35,8 +41,8 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts
 ```
-##### <a name="response"></a><span data-ttu-id="6f6c0-122">Antwort</span><span class="sxs-lookup"><span data-stu-id="6f6c0-122">Response</span></span>
-<span data-ttu-id="6f6c0-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="6f6c0-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f17a3-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="f17a3-131">Response</span></span>
+<span data-ttu-id="f17a3-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="f17a3-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

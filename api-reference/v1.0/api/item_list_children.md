@@ -1,24 +1,20 @@
-# <span data-ttu-id="fa2c9-101">Untergeordnete Elemente eines DriveItem auflisten</span><span class="sxs-lookup"><span data-stu-id="fa2c9-101">List children of a driveItem</span></span>
-<a id="list-children-of-a-driveitem" class="xliff"></a>
+# <a name="list-children-of-a-driveitem"></a><span data-ttu-id="856d6-101">Untergeordnete Elemente eines DriveItem auflisten</span><span class="sxs-lookup"><span data-stu-id="856d6-101">List children of a driveItem</span></span>
 
-<span data-ttu-id="fa2c9-102">Eine Auflistung von [DriveItems](../resources/driveitem.md) im **untergeordneten** Verhältnis eines DriveItem zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="fa2c9-102">Return a collection of [DriveItems](../resources/driveitem.md) in the **children** relationship of a DriveItem.</span></span>
+<span data-ttu-id="856d6-102">Eine Auflistung von [DriveItems](../resources/driveitem.md) im **untergeordneten** Verhältnis eines DriveItem zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="856d6-102">Return a collection of [DriveItems](../resources/driveitem.md) in the **children** relationship of a DriveItem.</span></span>
 
-<span data-ttu-id="fa2c9-103">DriveItems mit einem nicht-NULL-Werte-**Ordner oder einer Paket**-Facette können ein oder mehrere untergeordnete DriveItems haben.</span><span class="sxs-lookup"><span data-stu-id="fa2c9-103">DriveItems with a non-null **folder** or **package** facet can have one or more child DriveItems.</span></span>
+<span data-ttu-id="856d6-103">Ressourcen des Typs „DriveItems“ mit einer Facette des Typs **folder** oder **package**, die einen anderen Wert als „null“ hat, können eine oder mehrere untergeordnete Ressourcen des Typs „DriveItems“ haben.</span><span class="sxs-lookup"><span data-stu-id="856d6-103">DriveItems with a non-null **folder** or **package** facet can have one or more child DriveItems.</span></span>
 
 
-## <span data-ttu-id="fa2c9-104">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="fa2c9-104">Prerequisites</span></span>
-<a id="prerequisites" class="xliff"></a>
-<span data-ttu-id="fa2c9-105">Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:</span><span class="sxs-lookup"><span data-stu-id="fa2c9-105">One of the following **scopes** is required to execute this API:</span></span>
+## <a name="permissions"></a><span data-ttu-id="856d6-104">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="856d6-104">Permissions</span></span>
+<span data-ttu-id="856d6-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="856d6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-* <span data-ttu-id="fa2c9-106">Files.Read</span><span class="sxs-lookup"><span data-stu-id="fa2c9-106">Files.Read</span></span>
-* <span data-ttu-id="fa2c9-107">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fa2c9-107">Files.ReadWrite</span></span>
-* <span data-ttu-id="fa2c9-108">Files.Read.All</span><span class="sxs-lookup"><span data-stu-id="fa2c9-108">Files.Read.All</span></span>
-* <span data-ttu-id="fa2c9-109">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fa2c9-109">Files.ReadWrite.All</span></span>
-* <span data-ttu-id="fa2c9-110">Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="fa2c9-110">Sites.Read.All</span></span>
-* <span data-ttu-id="fa2c9-111">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fa2c9-111">Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="856d6-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="856d6-107">Permission type</span></span>      | <span data-ttu-id="856d6-108">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="856d6-108">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="856d6-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="856d6-109">Delegated (work or school account)</span></span> | <span data-ttu-id="856d6-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="856d6-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    | 
+|<span data-ttu-id="856d6-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="856d6-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="856d6-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="856d6-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    | 
+|<span data-ttu-id="856d6-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="856d6-113">Application</span></span> | <span data-ttu-id="856d6-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="856d6-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> | 
 
-## <span data-ttu-id="fa2c9-112">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="fa2c9-112">HTTP request</span></span>
-<a id="http-request" class="xliff"></a>
+## <a name="http-request"></a><span data-ttu-id="856d6-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="856d6-115">HTTP request</span></span>
 ```http
 GET /me/drive/root/children
 GET /me/drive/items/{item-id}/children
@@ -28,27 +24,22 @@ GET /groups/{group-id}/drive/root/children
 GET /groups/{group-id}/drive/items/{item-id}
 ```
 
-## <span data-ttu-id="fa2c9-113">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="fa2c9-113">Optional query parameters</span></span>
-<a id="optional-query-parameters" class="xliff"></a>
-<span data-ttu-id="fa2c9-114">Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="fa2c9-114">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="856d6-116">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="856d6-116">Optional query parameters</span></span>
+<span data-ttu-id="856d6-117">Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="856d6-117">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
 
-## <span data-ttu-id="fa2c9-115">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="fa2c9-115">Request headers</span></span>
-<a id="request-headers" class="xliff"></a>
+## <a name="request-headers"></a><span data-ttu-id="856d6-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="856d6-118">Request headers</span></span>
 
-| <span data-ttu-id="fa2c9-116">Name</span><span class="sxs-lookup"><span data-stu-id="fa2c9-116">Name</span></span>          | <span data-ttu-id="fa2c9-117">Typ</span><span class="sxs-lookup"><span data-stu-id="fa2c9-117">Type</span></span>   | <span data-ttu-id="fa2c9-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="fa2c9-118">Description</span></span>                                                                                                                                              |
+| <span data-ttu-id="856d6-119">Name</span><span class="sxs-lookup"><span data-stu-id="856d6-119">Name</span></span>          | <span data-ttu-id="856d6-120">Typ</span><span class="sxs-lookup"><span data-stu-id="856d6-120">Type</span></span>   | <span data-ttu-id="856d6-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="856d6-121">Description</span></span>                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="fa2c9-119">if-none-match</span><span class="sxs-lookup"><span data-stu-id="fa2c9-119">if-none-match</span></span> | <span data-ttu-id="fa2c9-120">String</span><span class="sxs-lookup"><span data-stu-id="fa2c9-120">String</span></span> | <span data-ttu-id="fa2c9-121">Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag (oder cTag) mit dem aktuellen Tag in der Datei übereinstimmt, wird die Antwort `HTTP 304 Not Modified` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="fa2c9-121">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
+| <span data-ttu-id="856d6-122">if-none-match</span><span class="sxs-lookup"><span data-stu-id="856d6-122">if-none-match</span></span> | <span data-ttu-id="856d6-123">String</span><span class="sxs-lookup"><span data-stu-id="856d6-123">String</span></span> | <span data-ttu-id="856d6-124">Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag (oder cTag) mit dem aktuellen Tag in der Datei übereinstimmt, wird die Antwort `HTTP 304 Not Modified` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="856d6-124">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
 
-## <span data-ttu-id="fa2c9-122">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="fa2c9-122">Request body</span></span>
-<a id="request-body" class="xliff"></a>
-<span data-ttu-id="fa2c9-123">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="fa2c9-123">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="856d6-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="856d6-125">Request body</span></span>
+<span data-ttu-id="856d6-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="856d6-126">Do not supply a request body for this method.</span></span>
 
-## <span data-ttu-id="fa2c9-124">Beispiel</span><span class="sxs-lookup"><span data-stu-id="fa2c9-124">Example</span></span>
-<a id="example" class="xliff"></a>
+## <a name="example"></a><span data-ttu-id="856d6-127">Beispiel</span><span class="sxs-lookup"><span data-stu-id="856d6-127">Example</span></span>
 
-##### <span data-ttu-id="fa2c9-125">Anforderung</span><span class="sxs-lookup"><span data-stu-id="fa2c9-125">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="fa2c9-126">Es folgt eine Beispiel für eine Anforderung, die DriveItems in den Stammordner des aktuellen Benutzers in OneDrive zurückgibt.zugeben.</span><span class="sxs-lookup"><span data-stu-id="fa2c9-126">Here is an example request to return the DriveItems in the root folder of the current user's OneDrive.</span></span>
+##### <a name="request"></a><span data-ttu-id="856d6-128">Anforderung</span><span class="sxs-lookup"><span data-stu-id="856d6-128">Request</span></span>
+<span data-ttu-id="856d6-129">Es folgt eine Beispiel für eine Anforderung, die DriveItems in den Stammordner des aktuellen Benutzers in OneDrive zurückgibt.zugeben.</span><span class="sxs-lookup"><span data-stu-id="856d6-129">Here is an example request to return the DriveItems in the root folder of the current user's OneDrive.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -58,10 +49,9 @@ GET /groups/{group-id}/drive/items/{item-id}
 GET https://graph.microsoft.com/v1.0/me/drive/root/children
 ```
 
-## <span data-ttu-id="fa2c9-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="fa2c9-127">Response</span></span>
-<a id="response" class="xliff"></a>
+## <a name="response"></a><span data-ttu-id="856d6-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="856d6-130">Response</span></span>
 
-<span data-ttu-id="fa2c9-128">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="fa2c9-128">Here is an example of the response.</span></span>
+<span data-ttu-id="856d6-131">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="856d6-131">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,9 +73,9 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="fa2c9-129">**Hinweis:** Wenn eine Auflistung die Standardseitengröße (200 Artikel) überschreitet, wird die Eigenschaft **@odata.nextLink** in der Antwort zurückgegeben, damit angezeigt wird, dass mehr Elemente zur Verfügung, und die Anfrage-URL für die nächste Seite von Elementen zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="fa2c9-129">**Note:** If a collection exceeds the default page size (200 items), the **@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.</span></span>
+<span data-ttu-id="856d6-132">**Hinweis:** Wenn eine Auflistung die Standardseitengröße (200 Artikel) überschreitet, wird die Eigenschaft **@odata.nextLink** in der Antwort zurückgegeben, damit angezeigt wird, dass mehr Elemente zur Verfügung, und die Anfrage-URL für die nächste Seite von Elementen zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="856d6-132">**Note:** If a collection exceeds the default page size (200 items), the **@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.</span></span>
 
-<span data-ttu-id="fa2c9-130">Sie können die Seitengröße über [Optionale Abfragezeichenfolge-Parameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) steuern.</span><span class="sxs-lookup"><span data-stu-id="fa2c9-130">You can control the page size through [optional query string parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)</span></span>
+<span data-ttu-id="856d6-133">Sie können die Seitengröße über [Optionale Abfragezeichenfolge-Parameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) steuern.</span><span class="sxs-lookup"><span data-stu-id="856d6-133">You can control the page size through [optional query string parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

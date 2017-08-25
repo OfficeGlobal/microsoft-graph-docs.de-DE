@@ -1,5 +1,49 @@
-<span data-ttu-id="1d66c-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1d66c-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+# <a name="list-contacts"></a><span data-ttu-id="bcdef-101">Kontakte auflisten</span><span class="sxs-lookup"><span data-stu-id="bcdef-101">List contacts</span></span>
+
+<span data-ttu-id="bcdef-102">Mit dieser API können Sie eine Kontaktsammlung aus dem Standardkontaktordner des angemeldeten Benutzers (`.../me/contacts`) oder dem jeweils angegebenen Kontaktordner abrufen.</span><span class="sxs-lookup"><span data-stu-id="bcdef-102">Get a contact collection from the default Contacts folder of the signed-in user (`.../me/contacts`), or from the specified contact folder.</span></span>
+## <a name="permissions"></a><span data-ttu-id="bcdef-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="bcdef-103">Permissions</span></span>
+<span data-ttu-id="bcdef-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="bcdef-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="bcdef-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="bcdef-106">Permission type</span></span>      | <span data-ttu-id="bcdef-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="bcdef-107">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="bcdef-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="bcdef-108">Delegated (work or school account)</span></span> | <span data-ttu-id="bcdef-109">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bcdef-109">Contacts.Read, Contacts.ReadWrite</span></span>    | 
+|<span data-ttu-id="bcdef-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="bcdef-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bcdef-111">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bcdef-111">Contacts.Read, Contacts.ReadWrite</span></span>    | 
+|<span data-ttu-id="bcdef-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="bcdef-112">Application</span></span> | <span data-ttu-id="bcdef-113">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bcdef-113">Contacts.Read, Contacts.ReadWrite</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="bcdef-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="bcdef-114">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/contacts
+GET /users/{id | userPrincipalName}/contacts
+
+GET /me/contactFolders/{id}/contacts
+GET /users/{id | userPrincipalName}/contactFolders/{id}/contacts
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="bcdef-115">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="bcdef-115">Optional query parameters</span></span>
+<span data-ttu-id="bcdef-116">Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="bcdef-116">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="bcdef-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="bcdef-117">Request headers</span></span>
+| <span data-ttu-id="bcdef-118">Name</span><span class="sxs-lookup"><span data-stu-id="bcdef-118">Name</span></span>       | <span data-ttu-id="bcdef-119">Typ</span><span class="sxs-lookup"><span data-stu-id="bcdef-119">Type</span></span> | <span data-ttu-id="bcdef-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="bcdef-120">Description</span></span>|
+|:-----------|:------|:----------|
+| <span data-ttu-id="bcdef-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="bcdef-121">Authorization</span></span>  | <span data-ttu-id="bcdef-122">string</span><span class="sxs-lookup"><span data-stu-id="bcdef-122">string</span></span>  | <span data-ttu-id="bcdef-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="bcdef-p102">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="bcdef-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="bcdef-125">Request body</span></span>
+<span data-ttu-id="bcdef-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="bcdef-126">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="bcdef-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="bcdef-127">Response</span></span>
+
+<span data-ttu-id="bcdef-128">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [Contact](../resources/contact.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="bcdef-128">If successful, this method returns a `200 OK` response code and collection of [Contact](../resources/contact.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="bcdef-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="bcdef-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="bcdef-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="bcdef-130">Request</span></span>
+<span data-ttu-id="bcdef-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="bcdef-131">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "get_contacts"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts
+```
+##### <a name="response"></a><span data-ttu-id="bcdef-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="bcdef-132">Response</span></span>
+<span data-ttu-id="bcdef-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="bcdef-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

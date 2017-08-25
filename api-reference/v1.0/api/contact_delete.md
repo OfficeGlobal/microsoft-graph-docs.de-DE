@@ -1,5 +1,56 @@
-<span data-ttu-id="c1afb-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c1afb-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+# <a name="delete-contact"></a><span data-ttu-id="bec03-101">Kontakt löschen</span><span class="sxs-lookup"><span data-stu-id="bec03-101">Delete contact</span></span>
+
+<span data-ttu-id="bec03-102">Mit dieser API können Sie Kontakte löschen.</span><span class="sxs-lookup"><span data-stu-id="bec03-102">Delete a contact.</span></span>
+## <a name="permissions"></a><span data-ttu-id="bec03-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="bec03-103">Permissions</span></span>
+<span data-ttu-id="bec03-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="bec03-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="bec03-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="bec03-106">Permission type</span></span>      | <span data-ttu-id="bec03-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="bec03-107">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="bec03-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="bec03-108">Delegated (work or school account)</span></span> | <span data-ttu-id="bec03-109">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bec03-109">Contacts.ReadWrite</span></span>    | 
+|<span data-ttu-id="bec03-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="bec03-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bec03-111">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bec03-111">Contacts.ReadWrite</span></span>    | 
+|<span data-ttu-id="bec03-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="bec03-112">Application</span></span> | <span data-ttu-id="bec03-113">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bec03-113">Contacts.ReadWrite</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="bec03-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="bec03-114">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+<span data-ttu-id="bec03-115">Ein [Kontakt](../resources/contact.md) aus dem standardmäßigen [contactFolder](../resources/contactfolder.md) eines Benutzers.</span><span class="sxs-lookup"><span data-stu-id="bec03-115">A [contact](../resources/contact.md) from a user's default [contactFolder](../resources/contactfolder.md).</span></span>
+```http
+DELETE /me/contacts/{id}
+DELETE /users/{id | userPrincipalName}/contacts/{id}
+```
+<span data-ttu-id="bec03-116">Ein [Kontakt](../resources/contact.md) aus dem [contactFolder](../resources/contactfolder.md) oberster Ebene eines Benutzers.</span><span class="sxs-lookup"><span data-stu-id="bec03-116">A [contact](../resources/contact.md) from a user's top level [contactFolder](../resources/contactfolder.md).</span></span>
+```http
+DELETE /me/contactFolders/{id}/contacts/{id}
+DELETE /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
+```
+<span data-ttu-id="bec03-p102">Ein [Kontakt](../resources/contact.md) in einem untergeordneten Ordner eines [contactFolder](../resources/mailfolder.md). Das Beispiel unten zeigt eine einzige Schachtelungsebene, aber ein Kontakt kann sich auch in einem untergeordneten Element eines untergeordneten Elements usw. befinden.</span><span class="sxs-lookup"><span data-stu-id="bec03-p102">A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md). The example below shows one level of nesting, but a contact can be located in a child of a child and so on.</span></span>
+```http
+DELETE /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+DELETE /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
+```
+## <a name="request-headers"></a><span data-ttu-id="bec03-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="bec03-119">Request headers</span></span>
+| <span data-ttu-id="bec03-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="bec03-120">Header</span></span>       | <span data-ttu-id="bec03-121">Wert</span><span class="sxs-lookup"><span data-stu-id="bec03-121">Value</span></span> |
+|:---------------|:--------|
+| <span data-ttu-id="bec03-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="bec03-122">Authorization</span></span>  | <span data-ttu-id="bec03-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="bec03-p103">Bearer {token}. Required.</span></span>  |
+
+## <a name="request-body"></a><span data-ttu-id="bec03-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="bec03-125">Request body</span></span>
+<span data-ttu-id="bec03-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="bec03-126">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="bec03-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="bec03-127">Response</span></span>
+
+<span data-ttu-id="bec03-p104">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="bec03-p104">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="bec03-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="bec03-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="bec03-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="bec03-131">Request</span></span>
+<span data-ttu-id="bec03-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="bec03-132">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "delete_contact"
+}-->
+```http
+DELETE https://graph.microsoft.com/v1.0/me/contacts/{id}
+```
+##### <a name="response"></a><span data-ttu-id="bec03-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="bec03-133">Response</span></span>
+<span data-ttu-id="bec03-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="bec03-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,32 +1,39 @@
-# <a name="delete-device"></a><span data-ttu-id="aa195-101">Gerät löschen</span><span class="sxs-lookup"><span data-stu-id="aa195-101">Delete device</span></span>
+# <a name="delete-device"></a><span data-ttu-id="5caf6-101">Gerät löschen</span><span class="sxs-lookup"><span data-stu-id="5caf6-101">Delete device</span></span>
 
-<span data-ttu-id="aa195-102">Dient zum Löschen eines registrierten Geräts.</span><span class="sxs-lookup"><span data-stu-id="aa195-102">Delete a registered device.</span></span>
+<span data-ttu-id="5caf6-102">Mit dieser API können Sie registrierte Geräte löschen.</span><span class="sxs-lookup"><span data-stu-id="5caf6-102">Delete a registered device.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="aa195-103">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="aa195-103">Prerequisites</span></span>
-<span data-ttu-id="aa195-104">Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Directory.AccessAsUser.All*, *Device.ReadWrite.All*</span><span class="sxs-lookup"><span data-stu-id="aa195-104">One of the following **scopes** is required to execute this API: *Directory.AccessAsUser.All*, *Device.ReadWrite.All*</span></span>
+## <a name="permissions"></a><span data-ttu-id="5caf6-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="5caf6-103">Permissions</span></span>
+<span data-ttu-id="5caf6-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="5caf6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="aa195-105">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="aa195-105">HTTP request</span></span>
+
+|<span data-ttu-id="5caf6-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="5caf6-106">Permission type</span></span>      | <span data-ttu-id="5caf6-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="5caf6-107">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="5caf6-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="5caf6-108">Delegated (work or school account)</span></span> | <span data-ttu-id="5caf6-109">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="5caf6-109">Directory.AccessAsUser.All</span></span>    | 
+|<span data-ttu-id="5caf6-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="5caf6-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5caf6-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="5caf6-111">Not supported.</span></span>    | 
+|<span data-ttu-id="5caf6-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="5caf6-112">Application</span></span> | <span data-ttu-id="5caf6-113">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5caf6-113">Device.ReadWrite.All</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="5caf6-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="5caf6-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /devices/{id}
 ```
-> <span data-ttu-id="aa195-106">Hinweis: Die „id“ in der Anforderung entspricht der „id“-Eigenschaft des Geräts, nicht der „deviceId“-Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="aa195-106">Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.</span></span>
+> <span data-ttu-id="5caf6-115">Hinweis: Die „id“ in der Anforderung entspricht der „id“-Eigenschaft des Geräts, nicht der „deviceId“-Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="5caf6-115">Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="aa195-107">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="aa195-107">Request headers</span></span>
-| <span data-ttu-id="aa195-108">Name</span><span class="sxs-lookup"><span data-stu-id="aa195-108">Name</span></span>       | <span data-ttu-id="aa195-109">Typ</span><span class="sxs-lookup"><span data-stu-id="aa195-109">Type</span></span> | <span data-ttu-id="aa195-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="aa195-110">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5caf6-116">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="5caf6-116">Request headers</span></span>
+| <span data-ttu-id="5caf6-117">Name</span><span class="sxs-lookup"><span data-stu-id="5caf6-117">Name</span></span>       | <span data-ttu-id="5caf6-118">Typ</span><span class="sxs-lookup"><span data-stu-id="5caf6-118">Type</span></span> | <span data-ttu-id="5caf6-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="5caf6-119">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="aa195-111">Authorization</span><span class="sxs-lookup"><span data-stu-id="aa195-111">Authorization</span></span>  | <span data-ttu-id="aa195-112">string</span><span class="sxs-lookup"><span data-stu-id="aa195-112">string</span></span>  | <span data-ttu-id="aa195-p101">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="aa195-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5caf6-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="5caf6-120">Authorization</span></span>  | <span data-ttu-id="5caf6-121">string</span><span class="sxs-lookup"><span data-stu-id="5caf6-121">string</span></span>  | <span data-ttu-id="5caf6-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="5caf6-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="aa195-115">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="aa195-115">Request body</span></span>
-<span data-ttu-id="aa195-116">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="aa195-116">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5caf6-124">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="5caf6-124">Request body</span></span>
+<span data-ttu-id="5caf6-125">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="5caf6-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="aa195-117">Antwort</span><span class="sxs-lookup"><span data-stu-id="aa195-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5caf6-126">Antwort</span><span class="sxs-lookup"><span data-stu-id="5caf6-126">Response</span></span>
 
-<span data-ttu-id="aa195-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="aa195-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="5caf6-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5caf6-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="aa195-120">Beispiel</span><span class="sxs-lookup"><span data-stu-id="aa195-120">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="aa195-121">Anforderung</span><span class="sxs-lookup"><span data-stu-id="aa195-121">Request</span></span>
-<span data-ttu-id="aa195-122">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="aa195-122">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="5caf6-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="5caf6-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="5caf6-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="5caf6-130">Request</span></span>
+<span data-ttu-id="5caf6-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="5caf6-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_device"
@@ -34,8 +41,8 @@ DELETE /devices/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/devices/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="aa195-123">Antwort</span><span class="sxs-lookup"><span data-stu-id="aa195-123">Response</span></span>
-<span data-ttu-id="aa195-124">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="aa195-124">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="5caf6-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="5caf6-132">Response</span></span>
+<span data-ttu-id="5caf6-133">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="5caf6-133">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
