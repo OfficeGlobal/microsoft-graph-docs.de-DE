@@ -1,8 +1,15 @@
 # <a name="delete-eventmessage"></a>eventMessage löschen
 
-Dient zum Löschen von eventMessage.
-## <a name="prerequisites"></a>Voraussetzungen
-Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: _Mail.ReadWrite_ 
+Mit dieser API können Sie Ressourcen des Typs „eventMessage“ löschen.
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Mail.ReadWrite    | 
+|Delegiert (persönliches Microsoft-Konto) | Mail.ReadWrite    | 
+|Anwendung | Mail.ReadWrite | 
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http

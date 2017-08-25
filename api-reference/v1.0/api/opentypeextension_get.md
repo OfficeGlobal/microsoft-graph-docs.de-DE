@@ -11,17 +11,17 @@ In der folgenden Tabelle sind die drei Szenarien für den Abruf einer offenen Er
 |Suchen und Erweitern von Ressourceninstanzen mit einer bestimmten Erweiterung |Event, group event, group post, message, personal contact|Um die offene Erweiterung erweiterte Ressourceninstanzen|
 
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="permissions"></a>Berechtigungen
 
-Zur Ausführung dieser API ist eine der folgenden **Berechtigungen** erforderlich (je nach Typ der Ressource, die die Erweiterung enthält):
+Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich (je nach Typ der Ressource, die die Erweiterung enthält): Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
 |**Unterstützte Ressource**|**Berechtigung**|**Unterstützte Ressource**|**Berechtigung** |
 |:-----|:-----|:-----|:-----|
-| [Device](../resources/device.md) | _Directory.Read.All_ | [Event](../resources/event.md) | _Calendars.Read_ | 
-| [Group](../resources/group.md) | _Group.Read.All_ | [Group event](../resources/event.md) | _Group.Read.All_ | 
-| [Group post](../resources/post.md) | _Group.Read.All_ | [Message](../resources/message.md) | _Mail.Read_ | 
-| [Organization](../resources/organization.md) | _Directory.Read.All_ | [Personal contact](../resources/contact.md) | _Contacts.Read_ |
-| [User](../resources/user.md) | _User.Read.All_ | | |
+| [Gerät](../resources/device.md) | Directory.Read.All | [Ereignis](../resources/event.md) | Calendars.Read | 
+| [Gruppe](../resources/group.md) | Group.Read.All | [Gruppenereignis](../resources/event.md) | Group.Read.All | 
+| [Gruppenbeitrag](../resources/post.md) | Group.Read.All | [Nachricht](../resources/message.md) | Mail.Read | 
+| [Organisation](../resources/organization.md) | Directory.Read.All | [Privater Kontakt](../resources/contact.md) | Contacts.Read |
+| [Benutzer](../resources/user.md) | User.Read.All | | |
 
 
 

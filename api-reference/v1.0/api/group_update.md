@@ -1,9 +1,16 @@
 # <a name="update-group"></a>Gruppe aktualisieren
 
-Aktualisieren Sie die Eigenschaften eines Gruppenobjekts.
+Mit dieser API können Sie die Eigenschaften eines Gruppenobjekts aktualisieren.
 
-## <a name="prerequisites"></a>Voraussetzungen
-Der folgende **Bereich** ist erforderlich, um diese API auszuführen: *Group.ReadWrite.All*
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Group.ReadWrite.All    | 
+|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    | 
+|Anwendung | Group.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -31,7 +38,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |mailEnabled|Boolean|Gibt an, ob es sich bei der Gruppe um eine E-Mail-fähige Gruppe handelt. Wenn die **securityEnabled**-Eigenschaft auch auf **true** festgelegt ist, handelt es sich bei der Gruppe um eine E-Mail-fähige Sicherheitsgruppe; andernfalls handelt es sich bei der Gruppe um eine Microsoft Exchange-Verteilergruppe.|
 |mailNickname|String|Der E-Mail-Alias für die Gruppe. Diese Eigenschaft muss beim Erstellen einer Gruppe angegeben werden. Unterstützt $filter.|
 |securityEnabled|Boolean|Gibt an, ob es sich bei der Gruppe um eine Sicherheitsgruppe handelt. Wenn die **mailEnabled**-Eigenschaft auch auf „true“ festgelegt ist, handelt es sich bei der Gruppe um eine E-Mail-aktivierte Sicherheitsgruppe; andernfalls ist die Gruppe eine Sicherheitsgruppe. Muss für Office 365-Gruppen auf **false** festgelegt sein. Unterstützt $filter.|
-|visibility|Boolean|Gibt die Sichtbarkeit einer Office 365-Gruppe an. Die folgenden Werte sind möglich: **Private**, **Public** oder leer (als **Public** interpretiert).|
+|visibility|Boolean|Gibt die Sichtbarkeit einer Office 365-Gruppe an. Die folgenden Werte sind möglich: **Private**, **Public** oder leer (als **öffentlich** interpretiert).|
 
 **Hinweis**
 

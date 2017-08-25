@@ -6,9 +6,16 @@ Sie können eine zugeordnete Domäne erst dann mit Ihrem Azure AD-Mandanten verw
 
 Stammdomänen erfordern eine Überprüfung. Beispielsweise muss „contoso.com“ überprüft werden. Wenn eine Stammdomäne überprüft wird, werden Unterdomänen der Stammdomäne automatisch überprüft. Beispielsweise wird „subdomain.contoso.com“ automatisch überprüft, wenn „contoso.com“ überprüft wurde.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="permissions"></a>Berechtigungen
 
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Directory.Read.All* oder *Domain.ReadWrite.All*
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.Read.All    | 
+|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    | 
+|Anwendung | Directory.Read.All, Domain.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

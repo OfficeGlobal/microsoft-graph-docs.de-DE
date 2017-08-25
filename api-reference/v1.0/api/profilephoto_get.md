@@ -4,15 +4,15 @@ Rufen Sie das angegebene [profilePhoto](../resources/profilephoto.md) oder die M
 
 Ein GET-Vorgang sucht nach dem angegebenen Foto im Postfach des Benutzers in Exchange Online.
 
-> **Hinweis** Dieser Vorgang in Version 1.0 unterstützt nur Geschäfts- oder Schulpostfächer eines Benutzers, keine persönlichen Postfächer.
+> **Hinweis:** Dieser Vorgang in Version 1.0 unterstützt ausschließlich Postfächer in Geschäfts-, Schul- oder Unikonten des Benutzers. Persönliche Postfächer werden nicht unterstützt.
 
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-*   Profilfotos aller Benutzer im Mandanten einschließlich des angemeldeten Benutzers – *User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
-*   Profilfoto des angemeldeten Benutzers – *User.Read, User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
-* Profilfoto einer **Gruppe** - *Group.Read.All; Group.ReadWrite.All*
-* Foto eines **Kontakts** - *Contacts.Read; Contacts.ReadWrite*
+*   Profilfotos aller Benutzer im Mandanten, einschließlich des angemeldeten Benutzers: User.ReadBasic.All, User.Read.All, User.ReadWrite.All
+*   Profilfoto des angemeldeten Benutzers: User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All
+* Profilfoto einer **Gruppe**: Group.Read.All, Group.ReadWrite.All
+* Foto eines **Kontakts**: Contacts.Read, Contacts.ReadWrite
 
 ## <a name="http-request-to-get-the-photo"></a>HTTP-Anforderung zum Abrufen des Fotos
 <!-- { "blockType": "ignored" } -->

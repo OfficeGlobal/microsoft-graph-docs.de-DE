@@ -2,16 +2,15 @@
 
 Dient zum Abrufen der Liste der [Laufwerk](../resources/drive.md)-Ressourcen für einen Ziel-[Benutzer](../resources/user.md) oder eine Ziel-[Gruppe](../resources/group.md). Ihre App kann auch den Satz von Dokumentbibliotheken auf der SharePoint-Stammwebsite anfordern.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="permissions"></a>Berechtigungen
 
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-* Files.Read
-* Files.ReadWrite
-* Files.Read.All
-* Files.ReadWrite.All
-* Sites.Read.All
-* Sites.ReadWrite.All
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    | 
+|Delegiert (persönliches Microsoft-Konto) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    | 
+|Anwendung | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-Anforderung
 

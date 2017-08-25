@@ -1,12 +1,18 @@
 # <a name="delete-a-group-setting"></a>Löschen einer Gruppeneinstellung
 
-Löscht eine Gruppeneinstellung.
+Mit dieser API können Sie Gruppeneinstellungen löschen.
 
-## <a name="prerequisites"></a>Anforderungen
+## <a name="permissions"></a>Berechtigungen
 
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Directory.ReadWrite.All* oder *Directory.AccessAsUser.All*
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-> Hinweis: Nur Mandantenadministratoren haben die Berechtigungen zum Erstellen, Aktualisieren und Löschen.
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.ReadWrite.All, Directory.AccessAsUser.All    | 
+|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    | 
+|Anwendung | Directory.ReadWrite.All | 
+
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

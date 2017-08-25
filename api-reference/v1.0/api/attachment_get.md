@@ -8,15 +8,15 @@ Eine Anlage weist einen der folgenden Typen auf:
 * Element (Kontakt, Ereignis oder Nachricht, dargestellt durch eine [itemAttachment](../resources/itemattachment.md)-Ressource) Mithilfe von `$expand` können Sie die Eigenschaften des betreffenden Elements abrufen. Unten finden Sie ein [Beispiel](#request-2).
 * Link zu einer Datei ([referenceAttachment](../resources/referenceAttachment.md)-Ressource)
 
-All diese Typen von Anlagenressourcen werden von der [attachment](../resources/attachment.md)-Ressource abgeleitet. 
+All diese Typen von Anlagenressourcen werden von der Ressource [attachment](../resources/attachment.md) abgeleitet. 
 
 
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-* Beim Zugriff auf Anlagen in Nachrichten: *Mail.Read*
-* Beim Zugriff auf Anlagen in Ereignissen: *Calendars.Read*
-* Beim Zugriff auf Anlagen in Gruppenereignissen oder Beiträgen: *Group.Read.All*
+* Beim Zugriff auf Anlagen in Nachrichten: Mail.Read
+* Beim Zugriff auf Anlagen in Ereignissen: Calendars.Read
+* Beim Zugriff auf Anlagen in Gruppenereignissen oder -beiträgen: Group.Read.All
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

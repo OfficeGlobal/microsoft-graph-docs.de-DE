@@ -1,11 +1,17 @@
 
 # <a name="update-user"></a>Benutzer aktualisieren
 
-Dient zum Aktualisieren der Eigenschaften eines Benutzerobjekts.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *User.ReadWrite; User.ReadWrite.All; Directory.ReadWrite.All*
+Mit dieser API können Sie die Eigenschaften eines Benutzerobjekts aktualisieren.
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-Beim Aktualisieren der passwordProfile-Eigenschaft ist der folgende Bereich erforderlich: *Directory.AccessAsUser.All*
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | User.ReadWrite, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    | 
+|Delegiert (persönliches Microsoft-Konto) | User.ReadWrite    | 
+|Anwendung | User.ReadWrite.All, Directory.ReadWrite.All | 
+
+Zum Aktualisieren der Eigenschaft „passwordProfile“ ist der folgende Bereich erforderlich: Directory.AccessAsUser.All.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -25,7 +31,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |:---------------|:--------|:----------|
 |aboutMe|String|Ein Freihandform-Texteingabefeld, in dem der Benutzer sich selbst beschreiben kann.|
 |accountEnabled|Boolean| **true**, wenn das Konto aktiviert ist; andernfalls **false**. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Unterstützt $filter.    |
-|assignedLicenses|[assignedLicense](../resources/assignedlicense.md)-Sammlung|Die Lizenzen, die dem Benutzer zugewiesen sind. Lässt keine Nullwerte zu.            |
+|assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|Die Lizenzen, die dem Benutzer zugewiesen sind. Lässt keine NULL-Werte zu.            |
 |birthday|DateTimeOffset|Der Geburtstag des Benutzers. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |city|String|Die Stadt, in der sich der Benutzer befindet. Unterstützt $filter.|
 |country|String|Land/Region, in dem/der sich der Benutzer befindet; z. B. „USA“ oder „UK“. Unterstützt $filter.|

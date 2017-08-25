@@ -1,8 +1,15 @@
 # <a name="list-attachments"></a>Anlagen auflisten
 
-Dient zum Abrufen einer Liste von [attachment](../resources/attachment.md)-Objekten, die an eine Nachricht angefügt sind.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Mail.Read* 
+Mit dieser API können Sie eine Liste der einer Nachricht angefügten Objekte des Typs [attachment](../resources/attachment.md) abrufen.
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Mail.Read    | 
+|Delegiert (persönliches Microsoft-Konto) | Mail.Read    | 
+|Anwendung | Mail.Read | 
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 Anlagen für eine [Nachricht](../resources/message.md) im Postfach eines Benutzers.

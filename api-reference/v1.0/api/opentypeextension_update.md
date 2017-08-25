@@ -7,18 +7,17 @@ Aktualisieren Sie eine offene Erweiterung ([openTypeExtension](../resources/open
 
 Die Daten in einer Erweiterung können Grundtypen oder Arrays von Grundtypen sein.
 
+## <a name="permissions"></a>Berechtigungen
 
-## <a name="prerequisites"></a>Voraussetzungen
-
-Zur Ausführung dieser API ist eine der folgenden **Berechtigungen** erforderlich (je nach Typ der Ressource, in der die Erweiterung erstellt wurde):
+Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich (je nach dem Typ der Ressource, in der die Erweiterung erstellt wurde): Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
 |**Unterstützte Ressource**|**Berechtigung**|**Unterstützte Ressource**|**Berechtigung** |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
-| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ |
-| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
-| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
+| [device](../resources/device.md) | Device.ReadWrite.All | [event](../resources/event.md) | Calendars.ReadWrite |
+| [group](../resources/group.md) | Group.ReadWrite.All | [group event](../resources/event.md) | Group.ReadWrite.All |
+| [group post](../resources/post.md) | Group.ReadWrite.All | [message](../resources/message.md) | Mail.ReadWrite |
+| [organization](../resources/organization.md) | Directory.AccessAsUser.All | [personal contact](../resources/contact.md) | Contacts.ReadWrite |
+| [user](../resources/user.md) | Directory.AccessAsUser.All | | |
  
 ## <a name="http-request"></a>HTTP-Anforderung
 In der Anforderung geben Sie die Ressourceninstanz an, spezifizieren in der Navigationseigenschaft **extensions** dieser Instanz die Erweiterung und wenden anschließend den Befehl `PATCH` auf diese Erweiterungsinstanz an.

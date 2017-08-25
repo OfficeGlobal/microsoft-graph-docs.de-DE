@@ -15,14 +15,17 @@ Es gibt auch einen reservierten Websitebezeichner, `root`, der immer auf die Sta
 * `/sites/root`: Der Stammwebsite des Mandanten.
 * `/groups/{group-id}/sites/root`: Die Teamwebsite der Gruppe.
 
-## <a name="prerequisites"></a>Anforderungen
+## <a name="permissions"></a>Berechtigungen
 
-Einer der folgenden Bereiche ist erforderlich, um diese Anforderung auszuführen:
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-* Sites.Read.All
-* Sites.ReadWrite.All
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Sites.Read.All, Sites.ReadWrite.All    | 
+|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    | 
+|Anwendung | Sites.Read.All, Sites.ReadWrite.All | 
 
-## <a name="get-the-tenants-root-site"></a>Stammwebsite des Mandanten abrufen
+## <a name="get-the-tenants-root-site"></a>Abrufen der Stammwebsite eines Mandanten
 
 So greifen Sie innerhalb eines Mandanten auf die SharePoint-Stammwebsite zu:
 

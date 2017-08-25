@@ -2,9 +2,16 @@
 
 Gruppeneinstellungsvorlagen stellen einen Satz von Vorlagen dar, aus dem Gruppeneinstellungen erstellt und in einem Mandanten verwendet werden können.  Dieser Vorgang ruft die Liste der verfügbaren groupSettingTemplates-Objekte ab.
 
-## <a name="prerequisites"></a>Anforderungen
+## <a name="permissions"></a>Berechtigungen
 
-Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: *Directory.Read.All* oder *Directory.ReadWrite.All* oder *Directory.AccessAsUser.All*
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    | 
+|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    | 
+|Anwendung | Directory.Read.All, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

@@ -1,11 +1,17 @@
 # <a name="delete-directoryobject"></a>directoryObject löschen
 
-Dient zum Löschen eines directoryObject.
+Mit dieser API können Sie eine Ressource des Typs „directoryObject“ löschen.
 
-## <a name="prerequisites"></a>Voraussetzungen
-Der folgende **Bereich** ist erforderlich, um diese API auszuführen: _Directory.AccessAsUser.All_
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-**HINWEIS:** Benutzer, Gruppen und Kontakte sind Typen von Verzeichnisobjekten. Wenn Sie Benutzer löschen müssen, kann und sollte daher der folgende **Bereich** verwendet werden: _User.ReadWrite.All_
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.AccessAsUser.All    | 
+|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    | 
+|Anwendung | Nicht unterstützt | 
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http

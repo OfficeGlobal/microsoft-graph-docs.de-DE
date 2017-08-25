@@ -4,8 +4,15 @@ Dient zum Abrufen eines Satzes von Kontakten, die einem bestimmten Ordner hinzug
 
 Ein **delta**-Funktionsaufruf für Kontakte in einem Ordner ähnelt einer GET-Anforderung, mit der Ausnahme, dass durch entsprechende Anwendung von [Statustoken](../../../concepts/delta_query_overview.md) in einem oder mehreren dieser Aufrufe inkrementelle Änderungen an den Kontakten im betreffenden Ordner abgefragt werden können. Dies ermöglicht es Ihnen, einen lokalen Speicher der Kontakte eines Benutzers zu pflegen und zu synchronisieren, ohne dass Sie jedes Mal den gesamten Satz Kontakte vom Server abrufen müssen.  
 
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: _Contacts.Read_; _Contacts.ReadWrite_
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Contacts.Read, Contacts.ReadWrite    | 
+|Delegiert (persönliches Microsoft-Konto) | Contacts.Read, Contacts.ReadWrite    | 
+|Anwendung | Contacts.Read, Contacts.ReadWrite | 
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http

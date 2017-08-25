@@ -1,8 +1,15 @@
 # <a name="list-calendars"></a>Kalender auflisten
 
-Dient zum Abrufen der Kalender aller Benutzer (`/calendars`-Navigationseigenschaft) sowie zum Abrufen der Kalender aus der Standardkalendergruppe oder von einer bestimmten Kalendergruppe. 
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Calendars.Read; Calendars.ReadWrite*
+Mit dieser API können Sie alle Kalender eines Benutzers (Navigationseigenschaft `/calendars`), alle Kalender aus der Standardkalendergruppe oder alle Kalender aus einer bestimmten Kalendergruppe abrufen. 
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Calendars.Read, Calendars.ReadWrite    | 
+|Delegiert (persönliches Microsoft-Konto) | Calendars.Read, Calendars.ReadWrite    | 
+|Anwendung | Calendars.Read, Calendars.ReadWrite | 
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 

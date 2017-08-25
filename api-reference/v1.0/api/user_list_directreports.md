@@ -1,8 +1,14 @@
 # <a name="list-directreports"></a>directReports auflisten
 
-Dient zum Abrufen des direkten Vorgesetzten des Benutzers. Gibt die Benutzer und Kontakte zurück, für die dieser Benutzer als Vorgesetzter zugewiesen ist.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+Dient zum Abrufen des direkten Vorgesetzten des Benutzers. Zurückgegeben werden die Benutzer und Kontakte, denen der betreffende Benutzer als Manager zugewiesen ist.
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    | 
+|Delegiert (persönliches Microsoft-Konto) | User.Read, User.ReadWrite    | 
+|Anwendung | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

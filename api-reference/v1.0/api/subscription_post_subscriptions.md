@@ -1,10 +1,10 @@
 # <a name="create-subscription"></a>Abonnement erstellen
 
-Abonniert eine Listener-Anwendung zum Empfangen von Benachrichtigungen, wenn Daten in Microsoft Graph geändert werden.
-## <a name="prerequisites"></a>Anforderungen
-Für das Erstellen eines Abonnements ist Lesezugriff auf die Ressource erforderlich. Beispiel: um Benachrichtigungsnachrichten zu erhalten, benötigt Ihre App die `Mail.Read`-Berechtigung. Die folgende Tabelle listet die vorgeschlagenen Berechtigungen, die für die jeweilige Ressource erforderlich sind.
+Diese API abonniert eine Listeneranwendung, über die sie Benachrichtigungen erhält, sobald Daten in Microsoft Graph geändert werden
+## <a name="permissions"></a>Berechtigungen
+Zur Abonnementerstellung ist Lesezugriff auf die Ressource erforderlich. Beispiel: um Benachrichtigungsnachrichten zu erhalten, benötigt Ihre App die `Mail.Read`-Berechtigung. In der folgenden Tabelle ist für jede Ressource die entsprechende vorgeschlagene erforderliche Berechtigung aufgeführt. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-| Ressourcentyp/Element        | Bereich               |
+| Ressourcentyp/Element        | Berechtigung          |
 |-----------------------------|---------------------|
 | Kontakte                    | Contacts.Read       |
 | Unterhaltungen               | Group.Read.All      |

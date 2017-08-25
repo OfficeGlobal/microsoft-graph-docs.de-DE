@@ -1,17 +1,17 @@
 # <a name="list-items-shared-with-the-signed-in-user"></a>Elemente auflisten, die für den angemeldeten Benutzer freigegeben sind
 
-Dient zum Abrufen einer Auflistung von [DriveItem](../resources/driveitem.md)-Ressourcen, die für den Besitzer des [Laufwerks](../resources/drive.md) freigegeben wurden.
+Mit dieser API können Sie eine Sammlung von Ressourcen des Typs [DriveItem](../resources/driveitem.md) abrufen, die für den Besitzer der Ressource des Typs [Drive](../resources/drive.md) freigegeben wurden.
 
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-* Files.Read.All
-* Files.ReadWrite.All
-* Sites.Read.All
-* Sites.ReadWrite.All
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    | 
+|Delegiert (persönliches Microsoft-Konto) | Files.Read.All, Files.ReadWrite.All    | 
+|Anwendung | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | 
 
-
-**Hinweis:** Die /sharedWithMe-Anforderung funktioniert zwar mit Files.Read- oder Files.ReadWrite-Bereichen, es kann jedoch sein, dass einige Eigenschaften fehlen. Außerdem kann ohne einen der **All**-Bereiche nicht auf freigegebene Elemente zugegriffen werden, die von dieser AP zurückgegeben werden.
+Zusätzlich gilt: Ohne einen der Bereiche des Typs **All** ist kein Zugriff auf die von dieser API zurückgegebenen freigegebenen Elemente möglich.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 

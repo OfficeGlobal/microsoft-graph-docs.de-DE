@@ -1,8 +1,15 @@
 # <a name="update-organization"></a>Organisation aktualisieren
 
-Aktualisieren Sie die Eigenschaften der gerade authentifizierten Organisation.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
+Mit dieser API können Sie die Eigenschaften der aktuell authentifizierten Organisation aktualisieren.
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Nicht unterstützt    | 
+|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    | 
+|Anwendung | Nicht unterstützt | 
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -20,7 +27,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |assignedPlans|AssignedPlan|Die Sammlung von Serviceplänen, die dem Mandanten zugeordnet sind.                            **Hinweis:** Lässt keine Nullwerte zu.            |
-|Ort|String|            |
+|city|String|            |
 |companyLastDirSyncTime|DateTimeOffset|Uhrzeit und Datum der letzten Synchronisierung des Mandanten mit dem lokalen Verzeichnis.|
 |country|String|            |
 |countryLetterCode|String|            |
@@ -28,7 +35,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |dirSyncEnabled|Boolean|**true**, wenn das Objekt aus einem lokalen Verzeichnis synchronisiert wird; **false**, wenn das Objekt ursprünglich aus einem lokalen Verzeichnis synchronisiert wurde, aber nicht mehr synchronisiert wird; **NULL**, wenn dieses Objekt nie aus einem lokalen Verzeichnis synchronisiert wurde (Standard).|
 |displayName|String|Der Anzeigename für den Mandanten.|
 |marketingNotificationEmails|String|                                        **Hinweis:** Lässt keine Nullwerte zu.            |
-|objectType|Zeichenfolge|Eine Zeichenfolge, die den Objekttyp identifiziert. Für Mandanten ist der Wert immer „Unternehmen“. Geerbt von [directoryObject](../resources/directoryobject.md).|
+|objectType|String|Eine Zeichenfolge, die den Objekttyp identifiziert. Für Mandanten ist der Wert immer „Unternehmen“. Geerbt von [directoryObject](../resources/directoryobject.md).|
 |postalCode|String|            |
 |preferredLanguage|String|            |
 |provisionedPlans|ProvisionedPlan|                                        **Hinweis:** Lässt keine Nullwerte zu.            |

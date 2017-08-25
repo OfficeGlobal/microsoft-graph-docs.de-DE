@@ -1,8 +1,15 @@
 # <a name="update-message"></a>Nachricht aktualisieren
 
-Dient zum Aktualisieren der Eigenschaften des Nachrichtenobjekts.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Mail.ReadWrite*
+Mit dieser API können Sie die Eigenschaften eines Nachrichtenobjekts aktualisieren.
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Mail.ReadWrite    | 
+|Delegiert (persönliches Microsoft-Konto) | Mail.ReadWrite    | 
+|Anwendung | Mail.ReadWrite | 
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -25,7 +32,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |categories|String collection|Die Kategorien, die mit der Nachricht verknüpft sind.|
 |ccRecipients|Recipient collection|Die Cc:-Empfänger der Nachricht. Kann nur aktualisiert werden, wenn IsDraft = True.|
 |Von|Recipient|Der Postfachbesitzer und der Absender der Nachricht. Kann nur aktualisiert werden, wenn IsDraft = True.|
-|Wichtigkeit|Zeichenfolge|Wichtigkeit der Nachricht Mögliche Werte: `Low`, `Normal`, `High`.|
+|Wichtigkeit|String|Wichtigkeit der Nachricht Mögliche Werte: `Low`, `Normal`, `High`.|
 |inferenceClassification | String | Die Klassifizierung der Nachricht für den Benutzer, basierend auf der abgeleiteten Relevanz oder Wichtigkeit oder auf einer expliziten Außerkraftsetzung. Mögliche Werte sind: `focused` oder `other`. |
 |internetMessageId |String |Die Nachrichten-ID im von [RFC2822](http://www.ietf.org/rfc/rfc2822.txt) angegebenen Format. Kann nur aktualisiert werden, wenn IsDraft = True.|
 |isRead|Boolean|Gibt an, ob die Nachricht gelesen wurde.|

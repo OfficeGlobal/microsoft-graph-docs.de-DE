@@ -1,12 +1,12 @@
 # <a name="delete-attachment"></a>Anlage löschen
 
-Dient zum Löschen einer Anlage aus einem Kalenderereignis, einer E-Mail-Nachricht oder einem Gruppenbeitrag.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
+Mit dieser API können Sie Anlagen aus Kalenderereignissen, E-Mail-Nachrichten oder Gruppenbeiträgen löschen.
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-* Beim Zugriff auf Anlagen in Nachrichten: *Mail.ReadWrite*
-* Beim Zugriff auf Anlagen in Ereignissen: *Calendars.ReadWrite*
-* Beim Zugriff auf Anlagen in Gruppenereignissen oder Beiträgen: *Group.ReadWrite.All*
+* Beim Zugriff auf Anlagen in Nachrichten: Mail.ReadWrite
+* Beim Zugriff auf Anlagen in Ereignissen: Calendars.ReadWrite
+* Beim Zugriff auf Anlagen in Gruppenereignissen oder -beiträgen: Group.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

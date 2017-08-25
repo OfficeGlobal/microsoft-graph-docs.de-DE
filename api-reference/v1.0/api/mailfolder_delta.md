@@ -4,8 +4,15 @@ Dient zum Abrufen eines Satzes von E-Mail-Ordnern, die dem Postfach des Benutzer
 
 Ein **delta**-Funktionsaufruf für E-Mail-Ordner in einem Postfach ähnelt einer GET-Anforderung, mit der Ausnahme, dass durch entsprechende Anwendung von [Statustoken](../../../concepts/delta_query_overview.md) in einem oder mehreren dieser Aufrufe inkrementelle Änderungen in den E-Mail-Ordnern abgefragt werden können. Dies ermöglicht es Ihnen, einen lokalen Speicher der E-Mail-Ordner eines Benutzers zu pflegen und zu synchronisieren, ohne dass Sie jedes Mal alle E-Mail-Ordner des betreffenden Postfachs vom Server abrufen müssen.
 
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: _Mail.Read_; _Mail.ReadWrite_
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Mail.Read, Mail.ReadWrite    | 
+|Delegiert (persönliches Microsoft-Konto) | Mail.Read, Mail.ReadWrite    | 
+|Anwendung | Mail.Read, Mail.ReadWrite | 
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

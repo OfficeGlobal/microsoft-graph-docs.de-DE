@@ -1,9 +1,16 @@
 # <a name="event-accept"></a>event: accept
 
-Dient zum Annehmen des angegebenen Ereignisses.
+Mit dieser API können Sie das angegebene Ereignis akzeptieren.
 
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Calendars.ReadWrite*
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Calendars.ReadWrite    | 
+|Delegiert (persönliches Microsoft-Konto) | Calendars.ReadWrite    | 
+|Anwendung | Calendars.ReadWrite | 
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -36,7 +43,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |comment|String|In der Antwort enthaltener Text. Optional.|
-|sendResponse|Boolescher Wert|`true`, wenn eine Antwort an den Organisator gesendet werden soll; andernfalls `false`. Optional. Der Standardwert lautet `true`.|
+|sendResponse|Boolean|`true`,wenn eine Antwort an den Organisator gesendet werden soll; andernfalls `false`. Optional. Der Standardwert lautet `true`.|
 
 ## <a name="response"></a>Antwort
 

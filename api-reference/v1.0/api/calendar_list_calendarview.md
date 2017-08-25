@@ -2,11 +2,11 @@
 
 Mit dieser API können Sie Vorkommen, Ausnahmen und einzelnen Instanzen von Ereignissen in einer durch einen Zeitbereich definierten Kalenderansicht aus dem Standardkalender `(../me/calendarview)` eines Benutzers oder einer Gruppe oder aus einem anderen Kalender des Benutzers abrufen.
 
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-* Ereignisse im Kalender eines Benutzers: _Calendars.Read_ oder _Calendars.ReadWrite_
-* Ereignisse in einem Gruppenkalender: _Group.Read.All_ oder _Group.ReadWrite.All_
+* Ereignisse im Kalender eines Benutzers: Calendars.Read or Calendars.ReadWrite
+* Ereignisse in einem Gruppenkalender: Group.Read.All or Group.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-Anforderung
 

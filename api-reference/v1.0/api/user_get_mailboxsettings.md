@@ -4,8 +4,14 @@ Rufen Sie die [mailboxSettings](../resources/mailboxsettings.md) des Benutzers a
 
 Sie können alle Postfacheinstellungen anzeigen oder bestimmte Einstellungen abrufen.
 
-## <a name="prerequisites"></a>Voraussetzungen
-Der folgende **Bereich** ist erforderlich, um diese API auszuführen: *MailboxSettings.Read*  
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | MailboxSettings.Read, MailboxSettings.ReadWrite    | 
+|Delegiert (persönliches Microsoft-Konto) | MailboxSettings.Read, MailboxSettings.ReadWrite    | 
+|Anwendung | MailboxSettings.Read, MailboxSettings.ReadWrite | 
 
 ## <a name="http-request"></a>HTTP-Anforderung
 Verwenden Sie die folgende Anforderung, um alle Postfacheinstellungen einschließlich Einstellungen für automatische Antworten abzurufen:

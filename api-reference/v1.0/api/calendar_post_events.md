@@ -1,8 +1,15 @@
 # <a name="create-event"></a>Ereignis erstellen
 
-Verwenden Sie diese API, um ein neues Ereignis im Standardkalender oder im angegebenen Kalender zu erstellen.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Calendars.ReadWrite*
+Mit dieser API können Sie neue Ereignisse im Standardkalender oder dem jeweils angegebenen Kalender erstellen.
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Calendars.ReadWrite    | 
+|Delegiert (persönliches Microsoft-Konto) | Calendars.ReadWrite    | 
+|Anwendung | Calendars.ReadWrite | 
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 Der Standard[kalender](../resources/calendar.md) eines Benutzers oder einer Gruppe.

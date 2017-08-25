@@ -1,14 +1,15 @@
 # <a name="create-a-new-folder"></a>Einen neuen Ordner erstellen
 
-Erstellt einen neuen Ordner oder ein [DriveItem](../resources/driveitem.md)-Element in einem [Laufwerk](../resources/drive.md) mit einem angegebenen übergeordneten Element oder Pfad.
+Mit dieser API können Sie einen neuen Ordner oder eine neue Ressource des Typs [DriveItem](../resources/driveitem.md) in der Ressource des Typs [Drive](../resources/drive.md) mit dem jeweils angegebenen übergeordneten Element oder Pfad erstellen.
 
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
-
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    | 
+|Delegiert (persönliches Microsoft-Konto) | Files.ReadWrite, Files.ReadWrite.All    | 
+|Anwendung | Files.ReadWrite.All, Sites.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

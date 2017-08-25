@@ -6,8 +6,15 @@ Mit Schemaerweiterungen können Sie stark typisierte benutzerdefinierte Daten zu
 
 Erfahren Sie anhand von Beispielen, wie Sie [eine Schemaerweiterung definieren, die einen Schulungskurs beschreibt](../../../concepts/extensibility_schema_groups.md#2-register-a-schema-extension-definition-that-describes-a-training-course), die Schemaerweiterungsdefinition zum [Erstellen einer neuen Gruppe mit Schulungskursdaten](../../../concepts/extensibility_schema_groups.md#3-create-a-new-group-with-extended-data) verwenden und [Schulungskursdaten zu einer vorhandenen Gruppe hinzufügen](../../../concepts/extensibility_schema_groups.md#4-add-update-or-remove-custom-data-in-an-existing-group).
 
-## <a name="prerequisites"></a>Voraussetzungen
-Der folgende **Bereich** ist erforderlich, um diese API auszuführen: *Directory.AccessAsUser.All*
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.AccessAsUser.All    | 
+|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    | 
+|Anwendung | Nicht unterstützt | 
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

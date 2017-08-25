@@ -1,8 +1,15 @@
 # <a name="create-calendargroup"></a>CalendarGroup erstellen
 
-Verwenden Sie diese API zum Erstellen einer neuen CalendarGroup.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Calendars.ReadWrite*
+Mit dieser API können Sie eine neue Ressource des Typs „CalendarGroup“ erstellen.
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Calendars.ReadWrite    | 
+|Delegiert (persönliches Microsoft-Konto) | Calendars.ReadWrite    | 
+|Anwendung | Calendars.ReadWrite | 
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http

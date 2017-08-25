@@ -4,10 +4,17 @@ Dient zum Aktualisieren von Einstellungen für das Postfach des Benutzers. Dies 
 
 Diese Einstellungen können Sie im Rahmen des [mailboxSettings](../resources/mailboxsettings.md)-Elements aktivieren, konfigurieren oder deaktivieren.
 
-**Hinweis** Sie können keine Postfacheinstellungen erstellen oder löschen.
+**Hinweis:** Sie können keine Postfacheinstellungen erstellen oder löschen.
 
-## <a name="prerequisites"></a>Voraussetzungen
-Der folgende **Bereich** ist erforderlich, um diese API auszuführen: *MailboxSettings.ReadWrite*  
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | MailboxSettings.ReadWrite    | 
+|Delegiert (persönliches Microsoft-Konto) | MailboxSettings.ReadWrite    | 
+|Anwendung | MailboxSettings.ReadWrite | 
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http

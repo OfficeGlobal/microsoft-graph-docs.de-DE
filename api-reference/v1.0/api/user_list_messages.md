@@ -2,10 +2,17 @@
 
 Mit dieser Methode können Sie die Nachrichten im Postfach des angemeldeten Benutzers abrufen (einschließlich der Nachrichten aus den Ordnern „Gelöschte Elemente“ und „Clutter“).
 
-Zurzeit gibt diesen Vorgang Nachrichtentext nur im HTML-Format zurück.
+Zurzeit gibt dieser Vorgang Nachrichtentext ausschließlich im HTML-Format zurück.
 
-## <a name="prerequisites"></a>Anforderungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Mail.Read; Mail.ReadWrite*
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Mail.Read, Mail.ReadWrite    | 
+|Delegiert (persönliches Microsoft-Konto) | Mail.Read, Mail.ReadWrite    | 
+|Anwendung | Mail.Read, Mail.ReadWrite | 
+
 ## <a name="http-request"></a>HTTP-Anforderung
 
 So rufen Sie alle Nachrichten in einem Benutzerpostfach ab:

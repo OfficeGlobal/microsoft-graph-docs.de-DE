@@ -4,15 +4,14 @@ Aktualisieren Sie das Foto für den angemeldeten **Benutzer**, die angegebene **
 
 In Version 1.0 können Sie PATCH oder PUT für diesen Vorgang verwenden.
 
-> **Hinweis** Dieser Vorgang in Version 1.0 unterstützt nur Geschäfts- oder Schulpostfächer eines Benutzers, keine persönlichen Postfächer.
+> **Hinweis:** Dieser Vorgang in Version 1.0 unterstützt ausschließlich Postfächer in Geschäfts-, Schul- oder Unikonten des Benutzers. Persönliche Postfächer werden nicht unterstützt.
 
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
-
-- Profilfoto des angemeldeten **Benutzers** - *User.ReadWrite*, *User.ReadWrite.All*
-- Profilfoto einer **Gruppe** - *Group.ReadWrite.All*
-- Foto von einem **Kontakt** - *Contacts.ReadWrite*
+- Profilfoto des angemeldeten **Benutzers**: User.ReadWrite, User.ReadWrite.All
+- Profilfoto einer **Gruppe**: Group.ReadWrite.All
+- Foto eines **Kontakts**: Contacts.ReadWrite
 
 > **Hinweis** Um das Foto eines Benutzers in der Organisation zu aktualisieren, muss Ihre App über die User.ReadWrite.All-Anwendungsberechtigung verfügen und diese API unter ihrer eigenen Identität und nicht im Auftrag eines Benutzers aufrufen. Weitere Informationen hierzu finden Sie unter [Zugriff ohne einen angemeldeten Benutzer erlangen](../../../concepts/auth_v2_service.md).
 

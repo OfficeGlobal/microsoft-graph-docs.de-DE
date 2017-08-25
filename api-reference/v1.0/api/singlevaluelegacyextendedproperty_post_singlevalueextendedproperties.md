@@ -17,16 +17,15 @@ Darüber hinaus werden die folgenden Gruppenressourcen unterstützt:
 - [calendar](../resources/calendar.md)-Ressourcen für Gruppen
 - [post](../resources/post.md)-Ressourcen für Gruppen 
 
-Unter [Überblick über erweiterte Eigenschaften](../resources/extended-properties-overview.md) finden Sie weitere Informationen dazu, wann Datenerweiterungen oder erweiterte Eigenschaften verwendet werden sollten und wie erweiterte Eigenschaften angegeben werden.
+Im [Übersichtsartikel zu erweiterten Eigenschaften](../resources/extended-properties-overview.md) finden Sie weitere Informationen dazu, wann Sie offene Erweiterungen verwenden sollten und wann erweiterte Eigenschaften. Außerdem erfahren Sie dort, wie erweiterte Eigenschaften angegeben werden.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="permissions"></a>Berechtigungen
+Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich (je nachdem, in welchem Typ von Ressource Sie die erweiterte Eigenschaft erstellen möchten): Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-Zur Ausführung dieser API ist einer der folgenden **Bereiche** erforderlich (je nachdem, in welcher Ressource Sie die erweiterte Eigenschaft erstellen):
-
-- _Mail.ReadWrite_
-- _Calendars.ReadWrite_
-- _Contacts.ReadWrite_
-- _Group.ReadWrite.All_
+- Mail.ReadWrite
+- Calendars.ReadWrite
+- Contacts.ReadWrite
+- Group.ReadWrite.All
  
 ## <a name="http-request"></a>HTTP-Anforderung
 Sie können erweiterte Eigenschaften in einer neuen oder vorhandenen Ressourceninstanz erstellen.
@@ -99,11 +98,11 @@ PATCH /groups/{id}/events/{id}
 |**Parameter**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
 |_URL parameters_|
-|id|string|Eine eindeutige ID für ein Objekt in der entsprechenden Sammlung. Erforderlich.|
+|id|string|Ein eindeutiger Bezeichner für ein Objekt in der entsprechenden Sammlung. Erforderlich.|
 |_Body parameters_|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md)-Sammlung| Ein Array aus erweiterten mehrwertigen Eigenschaften. |
 |id|String|Geben Sie diese für jede Eigenschaft in der **singleValueExtendedProperties**-Sammlung an, um die Eigenschaft zu identifizieren. Sie muss eins der unterstützten Formate aufweisen. Weitere Informationen finden Sie unter [Überblick über erweiterte Eigenschaften in Outlook](../resources/extended-properties-overview.md). Erforderlich.|
-|value|string|Geben Sie für jede Eigenschaft in der **singleValueExtendedProperties**-Sammlung den Eigenschaftswert an. Erforderlich.|
+|value|Zeichenfolge|Geben Sie für jede Eigenschaft in der **singleValueExtendedProperties**-Sammlung den Eigenschaftswert an. Erforderlich.|
 
 
 ## <a name="request-headers"></a>Anforderungsheader

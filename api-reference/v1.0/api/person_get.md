@@ -2,11 +2,18 @@
 
 Dient zum Abrufen der Eigenschaften und der Beziehungen des [person](../resources/person.md)-Objekts.
 
-Sie können diese Informationen über die People API abrufen. Beispiele finden Sie in dem Abschnitt [Beispiele](#examples) und im Artikel [Abrufen von relevanten Informationen über Personen](../../../concepts/people_example.md).
+Sie können diese Informationen über die People API abrufen. Beispiele finden Sie in dem Abschnitt [Beispiele](#examples) sowie im Artikel zum Thema [Abrufen relevanter Informationen über Personen](../../../concepts/people_example.md).
 
-## <a name="prerequisites"></a>Voraussetzungen
-Die folgenden **Berechtigungen** sind erforderlich, um Teile dieses APIs auszuführen: *People.Read*; *People.Read.All*
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
  
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | People.Read, People.Read.All    | 
+|Delegiert (persönliches Microsoft-Konto) | People.Read    | 
+|Anwendung | People.Read.All | 
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 
@@ -19,8 +26,8 @@ GET /me/people/?$filter={person_property} eq '{property_value}'
 |Name|Wert|Beschreibung|
 |:---------------|:--------|:-------|
 |$filter|Zeichenfolge|Dient zum Einschränken der Antwort auf diejenigen Personen, deren Datensätze die angegebenen Kriterien enthalten.|
-|$orderby|Zeichenfolge|Standardmäßig werden die Personen in der Antwort nach ihrer Relevanz für die Abfrage sortiert. Sie können die Reihenfolge der Personen in der Antwort mit dem *$orderby*-Parameter ändern.|
-|$search|Zeichenfolge|Dient für die Suche nach Personen anhand des Namens oder des Alias. Unterstützt Fuzzyübereinstimmung.|
+|$orderby|string|Standardmäßig werden die Personen in der Antwort nach ihrer Relevanz für die Abfrage sortiert. Sie können die Reihenfolge der Personen in der Antwort mit dem *$orderby*-Parameter ändern.|
+|$search|string|Dient für die Suche nach Personen anhand des Namens oder des Alias. Unterstützt Fuzzyübereinstimmung.|
 |$select|string|Durch Trennzeichen getrennte Liste der Eigenschaften, die in die Antwort eingeschlossen werden sollen. Wählen Sie für optimale Leistung nur eine Teilmenge der benötigten Eigenschaften.|
 |$skip|int|Die ersten n Ergebnisse werden übersprungen. Hilfreich für Paging. Wird bei Verwendung von *$search* nicht unterstützt.|
 |$top|int|Anzahl der Ergebnisse, die zurückgegeben werden.|
@@ -28,7 +35,7 @@ GET /me/people/?$filter={person_property} eq '{property_value}'
 ## <a name="parameters"></a>Parameter
 | Parameter |Typ       |Beschreibung|
 |:----------|:----------|:----------|
-|property_value|String     |Der Wert der erweiterten Eigenschaft, nach der gefiltert wird. Erforderlich, wo im Abschnitt **HTTP-Anforderung** aufgeführt.|
+|property_value|Zeichenfolge     |Der Wert der erweiterten Eigenschaft, nach der gefiltert wird. Erforderlich, wo im Abschnitt **HTTP-Anforderung** aufgeführt.|
 |person_property|Zeichenfolge    |Die Eigenschaft der Person, die übereinstimmen muss. Erforderlich, wo im Abschnitt **HTTP-Anforderung** aufgeführt.|
 
 ## <a name="request-headers"></a>Anforderungsheader
