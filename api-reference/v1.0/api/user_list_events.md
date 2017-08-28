@@ -22,11 +22,11 @@ Sie können die **OriginalStartTimeZone**- und **OriginalEndTimeZone**-Eigenscha
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | Calendars.Read, Calendars.ReadWrite    | 
-|Delegiert (persönliches Microsoft-Konto) | Calendars.Read, Calendars.ReadWrite    | 
-|Anwendung | Calendars.Read, Calendars.ReadWrite | 
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Calendars.Read, Calendars.ReadWrite    |
+|Delegiert (persönliches Microsoft-Konto) | Calendars.Read, Calendars.ReadWrite    |
+|Anwendung | Calendars.Read, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +52,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
-| Prefer: outlook.timezone | string | Die Standardzeitzone für Ereignisse in der Antwort. Optional. | 
+| Prefer: outlook.timezone | string | Die Standardzeitzone für Ereignisse in der Antwort. Optional. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

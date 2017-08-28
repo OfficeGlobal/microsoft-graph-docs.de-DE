@@ -24,7 +24,6 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
 
-
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
 

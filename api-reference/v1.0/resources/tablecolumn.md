@@ -8,7 +8,7 @@ Stellt eine Spalte in einer Tabelle dar.
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
 |[TableColumn abrufen](../api/tablecolumn_get.md) | [TableColumn](tablecolumn.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des tableColumn-Objekts.|
-|[Update](../api/tablecolumn_update.md) | [TableColumn](tablecolumn.md)    |Dient zum Aktualisieren des TableColumn-Objekts. |
+|[Update](../api/tablecolumn_update.md) | [TableColumn](tablecolumn.md) |Dient zum Aktualisieren des TableColumn-Objekts. |
 |[Databodyrange](../api/tablecolumn_databodyrange.md)|[Range](range.md)|Ruft das Bereichsobjekt ab, das mit dem Datenteil der Spalte verknüpft ist.|
 |[Headerrowrange](../api/tablecolumn_headerrowrange.md)|[Range](range.md)|Ruft das Bereichsobjekt ab, das mit der Überschriftenzeile der Spalte verknüpft ist.|
 |[Range](../api/tablecolumn_range.md)|[Range](range.md)|Ruft das Bereichsobjekt ab, das mit der gesamten Spalte verknüpft ist.|
@@ -18,9 +18,8 @@ Stellt eine Spalte in einer Tabelle dar.
 |[Itemat](../api/tablecolumncollection_itemat.md)|[TableColumn](tablecolumn.md)|Ruft eine Spalte anhand ihrer Position in der Auflistung ab.|
 |[Add](../api/tablecolumncollection_add.md)|[TableColumn](tablecolumn.md)|Fügt der Tabelle eine neue Spalte hinzu.|
 
-
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |id|int|Gibt einen eindeutigen Schlüssel an, der die Spalte in der Tabelle angibt. Schreibgeschützt.|
 |Index|int|Gibt die Indexnummer der Spalte in der Spaltenauflistung der Tabelle zurück. Nullindiziert. Schreibgeschützt.|
@@ -28,9 +27,9 @@ Stellt eine Spalte in einer Tabelle dar.
 |values|json|Stellt die Rohwerte des angegebenen Bereichs dar. Die zurückgegebenen Daten können den Typ Zeichenfolge, Zahl oder ein boolescher Wert sein. Zelle, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück.|
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Filter|[Filter](filter.md)|Ruft den auf die Salte angewendeten Filter ab. Schreibgeschützt.|
+|Filter|[Filter](filter.md)|Ruft den auf die Spalte angewendeten Filter ab. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

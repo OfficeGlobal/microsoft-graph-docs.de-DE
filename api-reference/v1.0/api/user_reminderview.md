@@ -4,11 +4,11 @@ Diese API gibt eine Liste von Kalendererinnerungen zurück, die im Zeitraum zwis
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | Calendars.Read, Calendars.ReadWrite    | 
-|Delegiert (persönliches Microsoft-Konto) | Calendars.Read, Calendars.ReadWrite    | 
-|Anwendung | Calendars.Read, Calendars.ReadWrite | 
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Calendars.Read, Calendars.ReadWrite    |
+|Delegiert (persönliches Microsoft-Konto) | Calendars.Read, Calendars.ReadWrite    |
+|Anwendung | Calendars.Read, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -24,13 +24,12 @@ Stellen Sie in der URL der Anforderung die folgenden Funktionsparameter mit Wert
 |startDateTime|String|Das Startdatum und die Uhrzeit des Ereignisses, für das die Erinnerung eingerichtet ist. Der Wert wird im ISO 8601-Format dargestellt, z. B. „2015-11-08T19:00:00.0000000“.|
 |endDateTime|String|Das Enddatum und die Uhrzeit des Ereignisses, für das die Erinnerung eingerichtet ist. Der Wert wird im ISO 8601-Format dargestellt, z. B. „2015-11-08T20:00:00.0000000“.|
 
-
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type   | application/json |
-| Prefer | {Time-zone}. Optional. Falls kein Wert vorhanden, wird UTC angenommen.| 
+| Prefer | {Time-zone}. Optional. Falls kein Wert vorhanden, wird UTC angenommen.|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

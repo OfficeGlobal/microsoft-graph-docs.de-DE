@@ -3,10 +3,9 @@
 Stellt Informationen zu einem Benutzer am sendenden oder empfangenden Ende eines Ereignisses, einer Nachricht oder einer Gruppenveröffentlichung dar. 
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |emailAddress|[EmailAddress](emailaddress.md)|Die E-Mail-Adresse des Empfängers.|
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

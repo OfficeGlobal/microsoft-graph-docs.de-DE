@@ -3,11 +3,10 @@
 Serienmuster und -bereich.
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Muster|[RecurrencePattern](recurrencepattern.md)|Die Häufigkeit eines Ereignisses.|
 |Bereich|[RecurrenceRange](recurrencerange.md)|Die Dauer eines Ereignisses.|
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

@@ -16,9 +16,8 @@ Abgeleitet von [attachment](attachment.md).
 |[Abrufen](../api/attachment_get.md) | [fileAttachment](fileattachment.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des fileAttachment-Objekts.|
 |[Delete](../api/attachment_delete.md) | Keine |Löscht das fileAttachment-Objekt. |
 
-
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |contentBytes|Binär|Der binäre Inhalt der Datei.|
 |contentId|String|Die ID der Anlage im Exchange-Speicher.|

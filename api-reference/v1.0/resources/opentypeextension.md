@@ -19,7 +19,6 @@ Offene Erweiterungen werden von den folgenden Ressourcen in den entsprechenden V
 | [Personal contact](contact.md) | Allgemein verfügbar |
 | [user](user.md) | Allgemein verfügbar |
 
-
 ### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>Sollen offene Erweiterungen (für Outlook-Ressourcen) oder erweiterte Eigenschaften verwendet werden?
 
 Offene Erweiterungen sind die empfohlene Lösung für die meisten Szenarios, bei denen benutzerdefinierte Daten gespeichert und aufgerufen werden sollen. Wenn Sie auf benutzerdefinierte Daten für Outlook-MAPI-Eigenschaften zugreifen müssen, die nicht bereits in den [Microsoft Graph-API-Metadaten](http://developer.microsoft.com/en-us/graph/docs/overview/call_api) verfügbar gemacht wurden, können Sie [erweiterte Eigenschaften und deren REST-API](extended-properties-overview.md) verwenden. Unter https://graph.microsoft.com/v1.0/$metadata können Sie überprüfen, welche Eigenschaften die Metadaten verfügbar machen.
@@ -45,10 +44,10 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |extensionName|String|Ein eindeutiger Textbezeichner für eine offene Erweiterung. Erforderlich.|
-|id|String| Eine vollqualifizierte ID, die den Erweiterungstyp mit dem **extensionName**-Element verkettet. Schreibgeschützt.|
+|id|Zeichenfolge| Eine vollqualifizierte ID, die den Erweiterungstyp mit dem **extensionName**-Element verkettet. Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -58,9 +57,9 @@ Keine
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Post](../api/opentypeextension_post_opentypeextension.md) | [openTypeExtension](opentypeextension.md) (in einer vorhandenen Ressourceninstanz) oder ein neues [contact](../resources/contact.md)-, [event](../resources/event.md)- oder [message](../resources/message.md)-Objekt, das ein openTypeExtension-Objekt enthält. | Dient zum Erstellen eines openTypeExtension-Objekts in einer vorhandenen oder neuen Ressourceninstanz.| 
+|[Post](../api/opentypeextension_post_opentypeextension.md) | [openTypeExtension](opentypeextension.md) (in einer vorhandenen Ressourceninstanz) oder ein neues [contact](../resources/contact.md)-, [event](../resources/event.md)- oder [message](../resources/message.md)-Objekt, das ein openTypeExtension-Objekt enthält. | Dient zum Erstellen eines openTypeExtension-Objekts in einer vorhandenen oder neuen Ressourceninstanz.|
 |[Get](../api/opentypeextension_get.md) | [openTypeExtension](opentypeextension.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des openTypeExtension-Objekts.|
-|[Update](../api/opentypeextension_update.md) | [openTypeExtension](opentypeextension.md)    |Dient zum Aktualisieren des openTypeExtension-Objekts. |
+|[Update](../api/opentypeextension_update.md) | [openTypeExtension](opentypeextension.md)   |Dient zum Aktualisieren des openTypeExtension-Objekts. |
 |[Delete](../api/opentypeextension_delete.md) | Keine |Dient zum Löschen des openTypeExtension-Objekts. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

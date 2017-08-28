@@ -48,7 +48,6 @@ In dieser Tabelle werden zulässige Werte für die **type**-Eigenschaft aufgefü
 | `anonymous`    | Der Freigabelink steht für alle Benutzer zur Verfügung.                                                                            |
 | `organization` | Der Freigabelink steht für Benutzer in derselben Organisation (Mandant) zur Verfügung. Nicht für OneDrive Personal verfügbar. |
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

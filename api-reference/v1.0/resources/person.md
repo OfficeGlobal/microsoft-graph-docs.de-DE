@@ -9,7 +9,6 @@ Eine Ansammlung von Informationen über eine Person aus E-Mails, Kontakten und s
 |[List people](../api/user_list_people.md) | **Person** |Dient zum Abrufen einer Sammlung von person-Objekten, sortiert nach ihrer Relevanz für den [Benutzer](../resources/user.md).|
 |[Get person](../api/person_get.md) | **Person** |Dient zum Abrufen der Eigenschaften und der Beziehungen eines person-Objekts.|
 
-
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
@@ -20,7 +19,7 @@ Eine Ansammlung von Informationen über eine Person aus E-Mails, Kontakten und s
 |scoredEmailAddresses|[scoredEmailAddress](scoredemailaddress.md)-Sammlung|Die E-Mail-Adressen der Person.|
 |givenName|Zeichenfolge|Der Vorname der Person.|
 |id|Zeichenfolge|Eindeutiger Bezeichner für die Person. Schreibgeschützt.|
-|imAddress|Zeichenfolgenauflistung|Die VOIP-SIP-Adresse (Voice oder IP; Session Initiation Protocol) der Chatnachricht für den Benutzer. Schreibgeschützt.|
+|imAddress|String collection|Die VOIP-SIP-Adresse (Voice oder IP; Session Initiation Protocol) der Chatnachricht für den Benutzer. Schreibgeschützt.|
 |isFavorite|Boolesch|`true`, wenn der Benutzer diese Person als Favorit gekennzeichnet hat.|
 |jobTitle|Zeichenfolge|Die Position der Person.|
 |officeLocation|Zeichenfolge|Der Bürostandort der Person.|

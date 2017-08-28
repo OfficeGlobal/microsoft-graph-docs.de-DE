@@ -13,9 +13,8 @@ Eine Unterhaltung ist eine Sammlung von [Threads](conversationthread.md), und ei
 |[Unterhaltungsthreads auflisten](../api/conversation_list_threads.md) |[conversationThread](conversationthread.md)-Sammlung| Dient zum Abrufen aller Threads in einer Gruppenunterhaltung.|
 |[Unterhaltungsthread erstellen](../api/conversation_post_threads.md) |[conversationThread](conversationthread.md)-Sammlung| Dient zum Erstellen eines Threads in einer bestimmten Unterhaltung.|
 
-
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |hasAttachments|Boolean|Gibt an, ob einer der Beiträge innerhalb dieser Unterhaltung über mindestens eine Anlage verfügt.|
 |id|String|Die eindeutigen Bezeichner der Unterhaltungen. Schreibgeschützt.|
@@ -25,10 +24,9 @@ Eine Unterhaltung ist eine Sammlung von [Threads](conversationthread.md), und ei
 |uniqueSenders|String collection|Alle Benutzer, die eine Nachricht an diese Unterhaltung gesendet haben.|
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Threads|[conversationThread](conversationthread.md)-Sammlung|Eine Auflistung aller Unterhaltungsthreads in der Unterhaltung. Eine Navigationseigenschaft. Schreibgeschützt. Lässt Nullwerte zu.|
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

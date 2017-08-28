@@ -18,7 +18,7 @@ Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich (je n
 | [group post](../resources/post.md) | Group.ReadWrite.All | [message](../resources/message.md) | Mail.ReadWrite |
 | [organization](../resources/organization.md) | Directory.AccessAsUser.All | [personal contact](../resources/contact.md) | Contacts.ReadWrite |
 | [user](../resources/user.md) | Directory.AccessAsUser.All | | |
- 
+
 ## <a name="http-request"></a>HTTP-Anforderung
 In der Anforderung geben Sie die Ressourceninstanz an, spezifizieren in der Navigationseigenschaft **extensions** dieser Instanz die Erweiterung und wenden anschließend den Befehl `PATCH` auf diese Erweiterungsinstanz an.
 
@@ -46,7 +46,6 @@ Im Abschnitt [Anforderungstext](#request-body) wird beschrieben, wie Sie benutze
 |_URL parameters_|
 |id|string|Ein eindeutiger Bezeichner für eine Instanz der entsprechenden Sammlung. Erforderlich. |
 |extensionId|string|Dies kann ein Erweiterungsname sein. Der Erweiterungsname ist ein eindeutiger Textbezeichner einer Erweiterung oder ein vollqualifizierter Name, der den Erweiterungstyp und den eindeutigen Textbezeichner verkettet. Der vollqualifizierte Name wird beim Erstellen der Erweiterung in der `id`-Eigenschaft zurückgegeben. Erforderlich. |
-
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Wert |

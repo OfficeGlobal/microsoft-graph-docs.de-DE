@@ -3,12 +3,10 @@
 Name und E-Mail-Adresse eines Kontakts oder eines Empfängers der Nachricht.
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |address|String|Die E-Mail-Adresse der Person oder Organisation.|
 |name|String|Der Anzeigename der Person oder Entität.|
-
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

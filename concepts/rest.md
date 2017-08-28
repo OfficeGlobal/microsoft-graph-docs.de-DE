@@ -133,7 +133,7 @@ Authorization: Bearer eyJ0eXAi...b66LoPVA
 Da Sie nun gelernt haben, wie Aufrufe für Microsoft Graph getätigt werden, können Sie anhand der API-Referenz beliebige Arten von Aufrufen erstellen, die für Ihre App erforderlich sind. Denken Sie daran, dass entsprechende Berechtigungen für die App bei der App-Registrierung für die Aufrufe konfiguriert sein müssen.
 
 ## <a name="next-steps"></a>Nächste Schritte
-- Testen Sie die Möglichkeiten der REST-API mithilfe des [Graph-Explorers](https://graph.microsoft.io/graph-explorer).
+- Testen Sie die Möglichkeiten der REST-API mithilfe des [Graph-Explorers](https://developer.microsoft.com/graph/graph-explorer).
 
 ## <a name="see-also"></a>Siehe auch
 - [Azure AD v2.0-Protokolle](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)

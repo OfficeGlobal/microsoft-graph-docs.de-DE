@@ -2,9 +2,16 @@
 
 Erstellt einen neuen contactFolder unter dem Standardkontaktordner des Benutzers.
 
-Sie können auch [einen neuen contactfolder als untergeordnetes Element eines angegebenen Kontaktordners erstellen](contactfolder_post_childfolders.md).
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Contacts.ReadWrite*
+Sie können auch [eine neue Ressource des Typs „contactfolder“ als untergeordnetes Element eines anderen Kontaktordners erstellen](contactfolder_post_childfolders.md).
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Contacts.ReadWrite    |
+|Delegiert (persönliches Microsoft-Konto) | Contacts.ReadWrite    |
+|Anwendung | Contacts.ReadWrite |
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http

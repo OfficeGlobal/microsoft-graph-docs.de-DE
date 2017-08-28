@@ -18,14 +18,13 @@ Stellt eine Azure AD-Verzeichnisrolle dar. Azure AD-Verzeichnisrollen werden auc
 |:---------------|:--------|:----------|
 |description|String|Die Beschreibung für die Verzeichnisrolle. Schreibgeschützt. |
 |displayName|String|Der Anzeigename für die Verzeichnisrolle. Schreibgeschützt. |
-|id|String|Die eindeutige ID für die Verzeichnisrolle. Geerbt von [directoryObject](directoryobject.md). Schlüssel, lässt keine Nullwerte zu, schreibgeschützt.|
+|id|Zeichenfolge|Die eindeutige ID für die Verzeichnisrolle. Geerbt von [directoryObject](directoryobject.md). Schlüssel, lässt keine Nullwerte zu, schreibgeschützt.|
 |roleTemplateId|String| Die **id** der [directoryRoleTemplate](directoryroletemplate.md), auf der diese Rolle basiert. Die Eigenschaft muss angegeben werden, wenn eine Verzeichnisrolle mit einer POST-Operation in einem Mandanten aktiviert wird. Nach der Aktivierung der Verzeichnisrolle ist die Eigenschaft schreibgeschützt. |
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ |Beschreibung|
 |:---------------|:--------|:----------|
 |Elemente|[directoryObject](directoryobject.md)-Sammlung|Benutzer, die Mitglieder dieser Verzeichnisrolle sind. HTTP-Methoden: GET, POST, DELETE. Schreibgeschützt. Lässt Nullwerte zu.|
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

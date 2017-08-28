@@ -5,12 +5,11 @@ Ein Teilnehmer eines Ereignisses.
 Abgeleitet von [attendeeBase](attendeebase.md).
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|Die Antwort des Teilnehmers (keine, akzeptiert, abgelehnt, usw.) für das Ereignis und das Datum und die Uhrzeit, an dem/der die Antwort gesendet wurde.|
 |Typ|String|Der Teilnehmertyp: `Required`, `Optional`, `Resource`.|
 |emailAddress|[emailAddress](emailAddress.md)|Enthält den Namen und die SMTP-Adresse des Teilnehmers.|
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

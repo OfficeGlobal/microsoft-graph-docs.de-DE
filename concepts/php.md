@@ -173,7 +173,7 @@ Sie können Ihre PHP-App nun testen.
 Überprüfen Sie den Posteingang der E-Mail-Adresse, die Sie im Abschnitt [Aufrufen von Microsoft Graph mithilfe von REST](#call-microsoft-graph-using-rest) konfiguriert haben. Dort sollten Sie eine E-Mail von dem Konto vorfinden, das Sie zum Anmelden bei der App verwendet haben.
 
 ## <a name="next-steps"></a>Nächste Schritte
-- Testen Sie den [Microsoft Graph-Explorer](https://graph.microsoft.io/graph-explorer).
+- Testen Sie den [Microsoft Graph-Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 
 ## <a name="see-also"></a>Siehe auch

@@ -3,12 +3,11 @@
 Enthält eine alternative Sicherheits-ID, die mit einem Gerät verknüpft ist. Die **alternativeSecurityIds**-Eigenschaft der [Device](device.md)-Entität ist eine Sammlung von **alternativeSecurityId**.
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |identityProvider|String|            |
 |Key|Binär|            |
 |Typ|Int32|            |
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

@@ -16,9 +16,8 @@ Eine Gruppe von Kalendern.
 |[Kalender auflisten](../api/calendargroup_list_calendars.md) |[Kalendersammlung](calendar.md)| Listet Kalender in einer Kalendergruppe auf.|
 |[Kalender erstellen](../api/calendargroup_post_calendars.md) |[Kalender](calendar.md)| Erstellt einen neuen Kalender in einer Kalendergruppe.|
 
-
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |name|String|Der Gruppenname.|
 |changeKey|String|Gibt die Version der Kalendergruppe an. Jedes Mal, wenn die Kalendergruppe geändert wird, wird auch ChangeKey geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen. Schreibgeschützt.|
@@ -26,10 +25,9 @@ Eine Gruppe von Kalendern.
 |id|String|Eindeutiger Bezeichner für die Gruppe. Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Kalender|[Kalendersammlung](calendar.md)|Die Kalender in Kalendergruppe. Navigation-Eigenschaft Schreibgeschützt. Lässt Nullwerte zu.|
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

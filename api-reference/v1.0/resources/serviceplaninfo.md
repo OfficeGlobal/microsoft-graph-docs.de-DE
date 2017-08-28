@@ -8,9 +8,8 @@ Enthält Informationen zu einem Serviceplan, der einer abonnierten SKU zugeordne
 |:---------------|:--------|:----------|
 |servicePlanId|Guid|Der eindeutige Bezeichner des Serviceplans.|
 |servicePlanName|String|Der Name des Serviceplans.|
-|provisioningStatus|String|Der Bereitstellungsstatus des Serviceplans. Mögliche Werte:<br/>„Success“ - Der Dienst wurde vollständig bereitgestellt.<br/>„Disabled“ - Der Dienst wurde deaktiviert.<br/>„PendingInput“ - Der Dienst wurde noch nicht bereitgestellt, es wird auf die Dienstbestätigung gewartet.<br/>„PendingActivation“ - Der Dienst wurde bereitgestellt, erfordert aber die explizite Aktivierung durch einen Administrator (z. B. Intune_O365-Serviceplan)<br/>„PendingProvisioning“ - Microsoft hat einen neuen Dienst zur Produkt-SKU hinzugefügt, der noch nicht im Mandanten aktiviert wurde.|
+|provisioningStatus|Zeichenfolge|Der Bereitstellungsstatus des Serviceplans. Mögliche Werte:<br/>„Success“ - Der Dienst wurde vollständig bereitgestellt.<br/>„Disabled“ - Der Dienst wurde deaktiviert.<br/>„PendingInput“ - Der Dienst wurde noch nicht bereitgestellt, es wird auf die Dienstbestätigung gewartet.<br/>„PendingActivation“ - Der Dienst wurde bereitgestellt, erfordert aber die explizite Aktivierung durch einen Administrator (z. B. Intune_O365-Serviceplan)<br/>„PendingProvisioning“ - Microsoft hat einen neuen Dienst zur Produkt-SKU hinzugefügt, der noch nicht im Mandanten aktiviert wurde.|
 |appliesTo|Zeichenfolge|Das Objekt, dem der Serviceplan zugewiesen werden kann. Mögliche Werte:<br/>„User“ - Der Serviceplan kann einzelnen Benutzern zugewiesen werden.<br/>„Company“ - Der Serviceplan kann dem gesamten Mandanten zugewiesen werden.|
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

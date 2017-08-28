@@ -1,9 +1,7 @@
-<a id="rangeview-resource-type" class="xliff"></a>
-# Ressourcentyp rangeView
+# <a name="rangeview-resource-type"></a>Ressourcentyp rangeView
 RangeView stellt einen Satz von sichtbaren Zellen des übergeordneten Bereichs dar.
 
-<a id="methods" class="xliff"></a>
-## Methoden
+## <a name="methods"></a>Methoden
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
@@ -11,9 +9,7 @@ RangeView stellt einen Satz von sichtbaren Zellen des übergeordneten Bereichs d
 |[Itemat](../api/workbookrangeview_itemat.md)|[workbookRangeView](workbookrangeview.md)|Rufen Sie ein im Index basiertes RangeView-Element ab.|
 |[Range](../api/workbookrangeview_range.md)|[workbookRange](range.md)|Rufen Sie das Range-Objekt ab, das mit der Bereichsansicht verknüpft ist.|
 
-
-<a id="properties" class="xliff"></a>
-## Eigenschaften
+## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |columnCount|Int32|Gibt die Anzahl der sichtbaren Spalten zurück. Schreibgeschützt.|
@@ -27,14 +23,12 @@ RangeView stellt einen Satz von sichtbaren Zellen des übergeordneten Bereichs d
 |valueTypes|Json|Stellt den Datentyp in jeder Zelle dar. Schreibgeschützt. Die folgenden Werte sind möglich: Unbekannt, leer, Zeichenfolge, Ganzzahl, Doppelwort, Boolesch, Fehler. |
 |values|Json|Stellt die Rohwerte der angegebenen Bereichsansicht dar. Die zurückgegebenen Daten können vom Typ Zeichenfolge, Zahl oder ein boolescher Wert sein. Zellen, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück.   |
 
-<a id="relationships" class="xliff"></a>
-## Beziehungen
+## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Rows|[workbookRangeView](workbookrangeview.md)-Sammlung| Stellt eine Sammlung der mit dem Bereich verknüpften Bereichsansichten dar. Schreibgeschützt.    Schreibgeschützt.|
 
-<a id="json-representation" class="xliff"></a>
-## JSON-Darstellung
+## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",

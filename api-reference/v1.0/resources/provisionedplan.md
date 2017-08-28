@@ -4,12 +4,11 @@ Die **ProvisionedPlans**-Eigenschaft der [user](user.md)-Entität und der [ogani
 
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |capabilityStatus|String|Z. B. „Aktiviert“.|
 |provisioningStatus|String|Z. B. „Erfolgreich“.|
 |service|String|Der Name des Diensts. z. B. „AccessControlS2S“|
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

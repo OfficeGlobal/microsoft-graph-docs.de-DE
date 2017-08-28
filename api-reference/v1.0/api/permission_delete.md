@@ -2,16 +2,16 @@
 
 Entfernt den Zugriffs auf ein [DriveItem](../resources/driveitem.md).
 
-Nur die Berechtigungen, die nicht geerbt werden, können gelöscht werden. Die Eigenschaft **inheritedFrom** muss auf `null` gesetzt sein.
+Nur die Berechtigungen, die nicht geerbt werden, können gelöscht werden. Die **inheritedFrom**-Eigenschaft muss `null` sein.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    | 
-|Delegiert (persönliches Microsoft-Konto) | Files.ReadWrite, Files.ReadWrite.All    | 
-|Anwendung | Files.ReadWrite.All, Sites.ReadWrite.All | 
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
+|Delegiert (persönliches Microsoft-Konto) | Files.ReadWrite, Files.ReadWrite.All    |
+|Anwendung | Files.ReadWrite.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 

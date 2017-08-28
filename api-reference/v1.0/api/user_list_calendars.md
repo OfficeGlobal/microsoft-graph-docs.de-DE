@@ -4,11 +4,11 @@ Mit dieser API können Sie alle Kalender eines Benutzers (Navigationseigenschaft
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | Calendars.Read, Calendars.ReadWrite    | 
-|Delegiert (persönliches Microsoft-Konto) | Calendars.Read, Calendars.ReadWrite    | 
-|Anwendung | Calendars.Read, Calendars.ReadWrite | 
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Calendars.Read, Calendars.ReadWrite    |
+|Delegiert (persönliches Microsoft-Konto) | Calendars.Read, Calendars.ReadWrite    |
+|Anwendung | Calendars.Read, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 | Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
-| Content-Type   | application/json | 
+| Content-Type   | application/json |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

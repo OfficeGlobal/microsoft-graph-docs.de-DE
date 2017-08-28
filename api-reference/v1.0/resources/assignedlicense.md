@@ -3,11 +3,10 @@
 Stellt eine Lizenz dar, die einem Benutzer zugewiesen ist. Die **assignedLicenses**-Eigenschaft der [user](user.md)-Entität ist eine Sammlung von **assignedLicense**.
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |disabledPlans|GUID-Sammlung|Eine Auflistung der eindeutigen Bezeichner für Pläne, die deaktiviert wurden.|
 |skuId|Guid|Die eindeutige ID der SKU.|
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

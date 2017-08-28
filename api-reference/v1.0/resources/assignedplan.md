@@ -4,13 +4,12 @@ Die **assignedPlans**-Eigenschaft der [user](user.md)-Entität und der [oganizat
 
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |assignedDateTime|DateTimeOffset|Datum und Uhrzeit der Zuweisung des Plans, z. B.: 2013-01-02T19:32:30Z. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |capabilityStatus|String|Z. B. „Aktiviert“.|
 |service|String|Der Name des Diensts. z. B. „Exchange“.|
 |servicePlanId|Guid|Eine GUID, die den Serviceplan identifiziert.|
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

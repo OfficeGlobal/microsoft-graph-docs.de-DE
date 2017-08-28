@@ -98,12 +98,11 @@ PATCH /groups/{id}/events/{id}
 |**Parameter**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
 |_URL parameters_|
-|id|string|Ein eindeutiger Bezeichner für ein Objekt in der entsprechenden Sammlung. Erforderlich.|
+|id|string|Eine eindeutige ID für ein Objekt in der entsprechenden Sammlung. Erforderlich.|
 |_Body parameters_|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md)-Sammlung| Ein Array aus erweiterten mehrwertigen Eigenschaften. |
 |id|String|Geben Sie diese für jede Eigenschaft in der **singleValueExtendedProperties**-Sammlung an, um die Eigenschaft zu identifizieren. Sie muss eins der unterstützten Formate aufweisen. Weitere Informationen finden Sie unter [Überblick über erweiterte Eigenschaften in Outlook](../resources/extended-properties-overview.md). Erforderlich.|
-|value|Zeichenfolge|Geben Sie für jede Eigenschaft in der **singleValueExtendedProperties**-Sammlung den Eigenschaftswert an. Erforderlich.|
-
+|value|string|Geben Sie für jede Eigenschaft in der **singleValueExtendedProperties**-Sammlung den Eigenschaftswert an. Erforderlich.|
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Wert |

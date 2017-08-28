@@ -10,20 +10,17 @@ In der folgenden Tabelle sind die drei Szenarien für den Abruf einer offenen Er
 |Abrufen einer bekannten Ressourceninstanz, erweitert um eine bestimmte Erweiterung|Device, event, group, group event, group post, message, organization, personal contact, user |Eine um die offene Erweiterung erweiterte Ressourceninstanz|
 |Suchen und Erweitern von Ressourceninstanzen mit einer bestimmten Erweiterung |Event, group event, group post, message, personal contact|Um die offene Erweiterung erweiterte Ressourceninstanzen|
 
-
 ## <a name="permissions"></a>Berechtigungen
 
 Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich (je nach Typ der Ressource, die die Erweiterung enthält): Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
 |**Unterstützte Ressource**|**Berechtigung**|**Unterstützte Ressource**|**Berechtigung** |
 |:-----|:-----|:-----|:-----|
-| [Gerät](../resources/device.md) | Directory.Read.All | [Ereignis](../resources/event.md) | Calendars.Read | 
-| [Gruppe](../resources/group.md) | Group.Read.All | [Gruppenereignis](../resources/event.md) | Group.Read.All | 
-| [Gruppenbeitrag](../resources/post.md) | Group.Read.All | [Nachricht](../resources/message.md) | Mail.Read | 
+| [Gerät](../resources/device.md) | Directory.Read.All | [Ereignis](../resources/event.md) | Calendars.Read |
+| [Gruppe](../resources/group.md) | Group.Read.All | [Gruppenereignis](../resources/event.md) | Group.Read.All |
+| [Gruppenbeitrag](../resources/post.md) | Group.Read.All | [Nachricht](../resources/message.md) | Mail.Read |
 | [Organisation](../resources/organization.md) | Directory.Read.All | [Privater Kontakt](../resources/contact.md) | Contacts.Read |
 | [Benutzer](../resources/user.md) | User.Read.All | | |
-
-
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -93,7 +90,6 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 |Id|string|Platzhalter für einen eindeutigen Bezeichner eines Objekts in der entsprechenden Sammlung, z. B. einer Nachricht, eines Ereignisses oder eines Kontakts. Erforderlich. Nicht zu verwechseln mit der **id**-Eigenschaft einer **openTypeExtension**.|
 |extensionId|string|Platzhalter für einen Erweiterungsnamen. Ein Erweiterungsname ist der eindeutige Textbezeichner einer Erweiterung oder ein vollqualifizierter Name, der den Erweiterungstyp und den eindeutigen Textbezeichner verkettet. Der vollqualifizierte Name wird beim Erstellen der Erweiterung in der Eigenschaft **id** zurückgegeben. Erforderlich.|
 
-
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
 Stellen Sie sicher, dass Sie für die Leerzeichen in der `$filter`-Zeichenfolge die [URL-Codierung](http://www.w3schools.com/tags/ref_urlencode.asp) verwenden.
@@ -101,15 +97,13 @@ Stellen Sie sicher, dass Sie für die Leerzeichen in der `$filter`-Zeichenfolge 
 |**Name**|**Wert**|**Beschreibung**|
 |:---------------|:--------|:-------|
 |$filter|string|Gibt Erweiterungen zurück, deren **id** dem Wert des Parameters `extensionId` entspricht.|
-|$filter with **any** operator|string|Gibt Instanzen einer Ressourcensammlung zurück, die eine Erweiterung enthalten, deren **id** dem Wert des Parameters `extensionId` entspricht.| 
+|$filter with **any** operator|string|Gibt Instanzen einer Ressourcensammlung zurück, die eine Erweiterung enthalten, deren **id** dem Wert des Parameters `extensionId` entspricht.|
 |$expand|string|Erweitert eine Ressourceninstanz um eine Erweiterung. |
-
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Wert |
 |:---------------|:----------|
 | Authorization | Bearer {token}. Erforderlich. |
-
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

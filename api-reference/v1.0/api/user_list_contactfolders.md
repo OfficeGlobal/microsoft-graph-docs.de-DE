@@ -1,8 +1,15 @@
 # <a name="list-contactfolders"></a>contactFolders auflisten
 
-Dient zum Abrufen der Kontaktsammlung im Standardkontaktordner des angemeldeten Benutzers.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Contacts.Read; Contacts.ReadWrite*
+Mit dieser API können Sie die Kontaktordnersammlung aus dem Standardkontaktordner des angemeldeten Benutzers abrufen.
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Contacts.Read, Contacts.ReadWrite    |
+|Delegiert (persönliches Microsoft-Konto) | Contacts.Read, Contacts.ReadWrite    |
+|Anwendung | Contacts.Read, Contacts.ReadWrite |
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -14,7 +21,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 | Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
-| Content-Type   | application/json  | 
+| Content-Type   | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

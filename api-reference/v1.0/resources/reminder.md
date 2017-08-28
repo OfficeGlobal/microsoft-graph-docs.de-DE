@@ -3,7 +3,7 @@
 
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |changeKey|String|Gibt die Version der Erinnerung an. Jedes Mal, wenn die Erinnerung geändert wird, wird auch **changeKey** geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
 |eventEndTime|[DateTimeTimeZone](datetimetimezone.md)|Datum, Uhrzeit und Zeitzone für das Ende des Ereignisses.|
@@ -13,7 +13,6 @@
 |eventSubject|String|Der Text der Betreffzeile des Ereignisses.|
 |eventWebLink|String|Die URL zum Öfnen des Ereignisses in Outlook im Web.<br/><br/>Das Ereignis wird im Browser geöffnet, wenn Sie über Outlook im Web bei Ihrem Postfach angemeldet sind. Sie werden aufgefordert, sich anzumelden, wenn Sie noch nicht beim Browser angemeldet sind.<br/><br/>Auf diese URL kann von einem iFrame aus zugegriffen werden.|
 |reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|Datum, Uhrzeit und Zeitzone für das Ausführen der Erinnerung.|
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

@@ -10,8 +10,6 @@ Stellt Standortinformationen eines Ereignisses dar.
 | displayName  | String | Der Name, der mit dem Ort verknüpft ist                       |
 | locationEmailAddress | String | Optionale E-Mail-Adresse des Orts              |
 
-
-
 ## <a name="json-representation"></a>JSON-Darstellung
 
 <!-- {

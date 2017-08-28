@@ -8,11 +8,11 @@ Ein **delta**-Funktionsaufruf für E-Mail-Ordner in einem Postfach ähnelt einer
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
 
-|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | Mail.Read, Mail.ReadWrite    | 
-|Delegiert (persönliches Microsoft-Konto) | Mail.Read, Mail.ReadWrite    | 
-|Anwendung | Mail.Read, Mail.ReadWrite | 
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Mail.Read, Mail.ReadWrite    |
+|Delegiert (persönliches Microsoft-Konto) | Mail.Read, Mail.ReadWrite    |
+|Anwendung | Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -29,7 +29,6 @@ Beim Nachverfolgen von Änderungen in E-Mail-Ordnern wird eine Runde von einem o
 |:---------------|:--------|:----------|
 | $deltatoken | string | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `deltaLink`-URL des vorhergehenden **delta**-Funktionsaufrufs für dieselbe Sammlung von E-Mail-Ordnern zurückgegeben wird und den Abschluss dieser Runde der Änderungsnachverfolgung anzeigt. Speichern Sie die gesamte `deltaLink`-URL einschließlich dieses Tokens, und wenden Sie sie in der ersten Anforderung der nächsten Änderungsnachverfolgungsrunde für diese Sammlung an.|
 | $skiptoken | string | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `nextLink`-URL des vorhergehenden **delta**-Funktionsaufrufs zurückgegeben wird und anzeigt, dass in derselben Sammlung von E-Mail-Ordnern weitere Änderungen zum Nachverfolgen vorliegen. |
-
 
 #### <a name="odata-query-parameters"></a>OData-Abfrageparameter
 

@@ -4,11 +4,11 @@ Mit dieser API können Sie Vorkommen, Ausnahmen und einzelnen Instanzen von Erei
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | Calendars.Read, Calendars.ReadWrite    | 
-|Delegiert (persönliches Microsoft-Konto) | Calendars.Read, Calendars.ReadWrite    | 
-|Anwendung | Calendars.Read, Calendars.ReadWrite | 
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Calendars.Read, Calendars.ReadWrite    |
+|Delegiert (persönliches Microsoft-Konto) | Calendars.Read, Calendars.ReadWrite    |
+|Anwendung | Calendars.Read, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -50,7 +50,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type   | string  | application/json | 
+| Content-Type   | string  | application/json |
 | Prefer | string | outlook.timezone="Eastern Standard Time". Optional.  Verwenden Sie dies, um die Zeitzone für die Anfangs- und Endzeiten in der Antwort anzugeben. Wenn nicht angegeben, wird die Antwort in UTC zurückgegeben. |
 
 ## <a name="request-body"></a>Anforderungstext

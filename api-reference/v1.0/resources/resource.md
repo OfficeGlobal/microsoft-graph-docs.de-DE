@@ -54,7 +54,6 @@ Keine.
 |:---------------|:--------|:----------|
 |[Binärdaten von Ressource abrufen](../api/resource_get.md) | Stream |Dient zum Abrufen der Binärdaten einer Datei- oder Bildressource.|
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

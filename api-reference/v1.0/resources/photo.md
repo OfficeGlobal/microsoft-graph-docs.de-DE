@@ -26,14 +26,13 @@ Die **photo**-Ressource stellt Foto- und Kameraeigenschaften auf einem [DriveIte
 | Eigenschaft                | Typ                      | Beschreibung                                                     |
 |:------------------------|:--------------------------|:----------------------------------------------------------------|
 | **takenDateTime**       | DateTimeOffset            | Stellt das Datum und die Uhrzeit für die Aufnahme des Fotos dar. Schreibgeschützt.               |
-| **cameraMake**          | String                    | Kamerahersteller Schreibgeschützt.                                            |
-| **cameraModel**         | String                    | Kameramodell. Schreibgeschützt.                                                   |
-| **fNumber**             | Gleitkommawert mit doppelter Genauigkeit                    | Die Blendenzahl der Kamera. Schreibgeschützt.                               |
+| **cameraMake**          | Zeichenfolge                    | Kamerahersteller Schreibgeschützt.                                            |
+| **cameraModel**         | Zeichenfolge                    | Kameramodell. Schreibgeschützt.                                                   |
+| **fNumber**             | Double                    | Die Blendenzahl der Kamera. Schreibgeschützt.                               |
 | **exposureDenominator** | Int32                     | Der Nenner der Bruchzahl für die Belichtungszeit der Kamera. Schreibgeschützt. |
 | **exposureNumerator**   | Int32                     | Der Zähler der Bruchzahl für die Belichtungszeit der Kamera. Schreibgeschützt.   |
-| **focalLength**         | Gleitkommawert mit doppelter Genauigkeit                    | Die Brennweite der Kamera. Schreibgeschützt.                               |
+| **focalLength**         | Double                    | Die Brennweite der Kamera. Schreibgeschützt.                               |
 | **iso**                 | Int32                     | Der ISO-Wert der Kamera. Schreibgeschützt.                                  |
-
 
 ## <a name="remarks"></a>Bemerkungen
 Von OneDrive for Business und SharePoint wird nur die **TakenDateTime**-Eigenschaft zurückgegeben.

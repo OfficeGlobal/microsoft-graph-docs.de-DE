@@ -30,7 +30,6 @@ Es folgt eine JSON-Darstellung der Ressource.
 | latitude  | Gleitkommawert mit doppelter Genauigkeit | Optional. Der Breitengrad für das Element als Kommazahl. Schreibgeschützt.   |
 | longitude | Gleitkommawert mit doppelter Genauigkeit | Optional. Der Längengrad für das Element als Kommazahl. Schreibgeschützt.  |
 
-
 ## <a name="remarks"></a>Bemerkungen
 
 Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).

@@ -13,7 +13,7 @@ Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich (je n
 | [group post](../resources/post.md) | Group.ReadWrite.All | [message](../resources/message.md) | Mail.ReadWrite |
 | [organization](../resources/organization.md) | Directory.AccessAsUser.All | [personal contact](../resources/contact.md) | Contacts.ReadWrite |
 | [user](../resources/user.md) | Directory.AccessAsUser.All | | |
- 
+
 ## <a name="http-request"></a>HTTP-Anforderung
 
 ### <a name="create-an-extension-in-a-new-resource-instance"></a>Erstellen einer Erweiterung in einer neuen Ressourceninstanz
@@ -60,7 +60,6 @@ Im Abschnitt [Anforderungstext](#request-body) wird beschrieben, wie Sie _die Er
 |_URL parameters_|
 |id|string|Ein eindeutiger Bezeichner für ein Objekt in der entsprechenden Sammlung. Erforderlich.|
 
-
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Wert |
 |:---------------|:----------|
@@ -91,8 +90,6 @@ Wenn Sie eine Erweiterung und eine Ressourceninstanz in ein und demselben Vorgan
 | Erstellen einer Erweiterung bei gleichzeitiger expliziter Erstellung einer _neuen_ Ressourceninstanz | [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) | Enthält die neue Instanz, erweitert um das [openTypeExtension](../resources/openTypeExtension.md)-Objekt. |
 | Erstellen einer Erweiterung bei gleichzeitiger impliziter Erstellung einer Ressourceninstanz | [post](../resources/post.md) | Die Antwort enthält nur einen Antwortcode, keinen Antworttext. |
 | Erstellen einer Erweiterung in einer _vorhandenen_ Ressourceninstanz | Alle unterstützten Ressourcen | Enthält das **openTypeExtension**-Objekt. |
- 
-
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request-1"></a>Anforderung 1
@@ -430,7 +427,7 @@ POST https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364ae
 
 Unten sehen Sie die Antwort für das fünfte Beispiel mit der neuen Unterhaltung und einer Thread-ID. Dieser neue Thread enthält einen automatisch erstellten Beitrag, der wiederum die neue Erweiterung enthält. 
 
-Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 
 Zum Abrufen der neuen Erweiterung [rufen Sie zunächst alle Beiträge](../api/conversationthread_list_posts.md) in diesem Thread ab. Anfangs sollte es nur einen Beitrag geben. Wenden Sie dann die Beitrags-ID und den Erweiterungsnamen `Com.Contoso.Benefits` an, um [die Erweiterung abzurufen](../api/opentypeextension_get.md).
 

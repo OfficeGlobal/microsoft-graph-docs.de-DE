@@ -200,7 +200,7 @@ Die App ruft Microsoft Graph auf, um Benutzerinformationen abzurufen und eine E-
 1. Optional können Sie die E-Mail-Adresse des Empfängers bearbeiten. Klicken Sie dann auf die Schaltfläche **E-Mail senden**. Nachdem die E-Mail gesendet wurde, wird unter der Schaltfläche eine Erfolgsmeldung angezeigt. 
 
 ## <a name="next-steps"></a>Nächste Schritte
-- Testen Sie die REST-API mithilfe des [Graph-Explorers](https://graph.microsoft.io/graph-explorer).
+- Testen Sie die REST-API mithilfe des [Graph-Explorers](https://developer.microsoft.com/graph/graph-explorer).
 - Schauen Sie sich weitere [Node.js-Beispiele](https://github.com/search?utf8=%E2%9C%93&q=node+sample+user%3Amicrosoftgraph&type=Repositories&ref=searchresults) unter GitHub an.
 
 

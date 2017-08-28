@@ -285,7 +285,7 @@ Schließlich verwendet der Code, den zurückgegebenen HTTP-Antwortcode, um den B
 3. Navigieren Sie im Webbrowser zu `http://localhost:3000`.
 
 ## <a name="see-also"></a>Siehe auch
-- Testen Sie die REST-API mithilfe des [Graph-Explorers](https://graph.microsoft.io/graph-explorer).
+- Testen Sie die REST-API mithilfe des [Graph-Explorers](https://developer.microsoft.com/graph/graph-explorer).
 - Schauen Sie sich weitere [Microsoft Graph-Beispiele](https://github.com/microsoftgraph) unter GitHub an.
 
 

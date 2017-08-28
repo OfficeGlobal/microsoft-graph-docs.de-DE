@@ -11,9 +11,8 @@ Abgeleitet von [attachment](attachment.md).
 |[Abrufen](../api/attachment_get.md) | [referenceAttachment](referenceattachment.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des referenceAttachment-Objekts.|
 |[Delete](../api/attachment_delete.md) | Keine |Dient zum Löschen des referenceAttachment-Objekts. |
 
-
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |contentType|String|Der Inhaltstyp der Anlage.|
 |id|String|Die Anlagen-ID.  Schreibgeschützt.|
@@ -21,7 +20,6 @@ Abgeleitet von [attachment](attachment.md).
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Anlage. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |name|String|Der Text, der unter dem Symbol angezeigt wird, das die eingebettete Anlage darstellt. Dies muss nicht der tatsächliche Dateiname sein.|
 |size|Int32|Die Größe der Anlage in Byte ab.|
-
 
 ## <a name="relationships"></a>Beziehungen
 Keine

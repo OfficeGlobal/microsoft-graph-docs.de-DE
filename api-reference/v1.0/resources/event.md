@@ -12,8 +12,8 @@ Diese Ressource unterstützt Folgendes:
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-|[List events](../api/user_list_events.md)|[Ereignissammlung](event.md) |Ruft eine Liste der [event](../resources/event.md)-Objekte im Postfach des Benutzers ab. Die Liste enthält einzelne Instanzen von Besprechungen und Serienmaster.|
-|[Ereignis erstellen](../api/user_post_events.md) |[event](event.md)| Erstellt ein neues Ereignis durch Veröffentlichen in der Instanzensammlung.|
+|[List events](../api/user_list_events.md)|[event](event.md) collection |Ruft eine Liste der [event](../resources/event.md)-Objekte im Postfach des Benutzers ab. Die Liste enthält einzelne Instanzen von Besprechungen und Serienmaster.|
+|[Create event](../api/user_post_events.md) |[event](event.md)| Erstellt ein neues Ereignis durch Veröffentlichen in der Instanzensammlung.|
 |[Get event](../api/event_get.md) | [event](event.md) |Liest die Eigenschaften und Beziehungen eines Ereignisobjekts.|
 |[Update](../api/event_update.md) | [event](event.md) |Aktualisiert das Ereignisobjekt. |
 |[Delete](../api/event_delete.md) | Keiner |Löscht das Ereignisobjekt. |
@@ -35,8 +35,6 @@ Diese Ressource unterstützt Folgendes:
 |[Get event with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [event](event.md) | Ruft mithilfe von `$expand` oder `$filter` Ereignisse mit einer bestimmten einwertigen erweiterten Eigenschaft ab. |
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [event](event.md) | Erstellt eine oder mehrere mehrwertige erweiterte Eigenschaften in einem neuen oder vorhandenen Ereignis.  |
 |[Get event with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [event](event.md) | Ruft mithilfe von `$expand` ein Ereignis mit einer bestimmten mehrwertigen erweiterten Eigenschaft ab. |
-
-
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
@@ -78,13 +76,12 @@ Diese Ressource unterstützt Folgendes:
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) collection|Die Sammlung der [FileAttachment](fileAttachment.md)- und [ItemAttachment](itemAttachment.md)-Anlagen des Ereignisses. Navigationseigenschaft. Schreibgeschützt Lässt Nullwerte zu.|
-|Kalender|[Kalender](calendar.md)|Der Kalender, der das Ereignis enthält. Navigationseigenschaft. Schreibgeschützt|
+|attachments|[attachment](attachment.md) collection|Die Sammlung der [FileAttachment](fileAttachment.md)- und [ItemAttachment](itemAttachment.md)-Anlagen des Ereignisses. Navigationseigenschaft. Schreibgeschützt. Lässt Nullwerte zu.|
+|calendar|[calendar](calendar.md)|Der Kalender, der das Ereignis enthält. Navigationseigenschaft. Schreibgeschützt.|
 |Erweiterungen|[Erweiterungssammlung](extension.md)|Die Sammlung der für das Ereignis definierten offenen Erweiterungen. Schreibgeschützt. Lässt Nullwerte zu.|
-|instances|[Ereignissammlung](event.md)|Die Instanzen des Ereignisses. Navigationseigenschaft. Schreibgeschützt Lässt Nullwerte zu.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für das Ereignis definierten mehrwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt Nullwerte zu.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für das Ereignis definierten einwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt Nullwerte zu.|
-
+|instances|[event](event.md) collection|Die Instanzen des Ereignisses. Navigationseigenschaft. Schreibgeschützt. Lässt NULL-Werte zu.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| Die Sammlung der für das Ereignis definierten mehrwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt NULL-Werte zu.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| Die Sammlung der für das Ereignis definierten einwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

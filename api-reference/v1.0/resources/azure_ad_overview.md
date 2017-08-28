@@ -34,8 +34,6 @@ In der folgenden Tabelle werden einige häufige Anwendungsfälle für Azure AD-R
 | Ruft Informationen zu den Dienst-SKUs ab, die ein Unternehmen abonniert hat. | [subscribedSku](../resources/subscribedsku.md) | Nicht zutreffend |
 | Einladen externer (Gast)Benutzer zu einer Organisation. | [invitation](../resources/invitation.md) | [Was ist die Azure AD B2B-Zusammenarbeit?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) |
 
-
-
 ## <a name="next-steps"></a>Nächste Schritte
 Verzeichnisressourcen und APIs können Ihnen neue Möglichkeiten eröffnen, über die Sie mit Benutzer in Kontakt treten und ihre Erfahrungen mit Microsoft Graph verwalten können. So erhalten Sie weitere Informationen: 
 

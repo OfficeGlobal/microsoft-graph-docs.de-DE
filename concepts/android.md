@@ -27,7 +27,7 @@ Wenn Sie das [Connect-Beispiel für Android](https://github.com/microsoftgraph/a
 
 Starten Sie ein neues Projekt in Android Studio. Für den Großteil des Assistenten können Sie die Standardwerte belassen, stellen Sie aber sicher, dass Sie die folgenden Optionen auswählen:
 
-* Android-Zielgeräte - **Smartphone und Tablet**
+* Ziel-Android-Geräte **Telefon und Tablet**
     * Minimales SDK - **API 16: Android 4.1 (Jelly Bean)**
 * Hinzufügen einer Aktivität zu Mobile - **Grundlegende Aktivität**
  
@@ -40,7 +40,7 @@ Sie müssen Ihre App im [Microsoft-App-Registrierungsportal](https://apps.dev.mi
 
 Registrieren Sie eine App im Microsoft-App-Registrierungsportal. Dadurch wird die App-ID generiert, mit der Sie die App konfigurieren.
 
-1. Melden Sie sich beim [Microsoft-App-Registrierungsportal](https://apps.dev.microsoft.com/) entweder mit Ihrem persönlichen oder mit einem Geschäfts-, Schul- oder Unikonto an.
+1. Melden Sie sich beim [Microsoft-App-Registrierungsportal](https://apps.dev.microsoft.com/) entweder mit Ihrem persönlichen oder geschäftlichen Konto oder mit Ihrem Schulkonto an.
 
 2. Klicken Sie auf **App hinzufügen**.
 
@@ -79,7 +79,7 @@ Registrieren Sie eine App im Microsoft-App-Registrierungsportal. Dadurch wird di
     b. Wählen Sie **Speichern** aus.
 
 
-## <a name="authenticate-the-user-and-get-an-access-token"></a>Authentifizieren des Benutzers und Abrufen eines Zugriffstokens
+## <a name="authenticate-the-user-and-get-an-access-token"></a>Authentifizierung des Benutzers und Abrufen eines Zugriffstokens
 
 > **Hinweis:** Wenn Sie die Anweisungen im Fluss **Guided Setup** des App-Registrierungsportals ausgeführt haben, um eine neue Anwendung zu erstellen, können Sie diese Schritte überspringen. Wechseln Sie zu [Aufrufen von Microsoft Graph mit dem Microsoft Graph-SDK](#call-microsoft-graph-using-the-microsoft-graph-sdk), um mehr über die Graph-API zu erfahren.
 
@@ -326,7 +326,7 @@ Zum Aufrufen von Microsoft Graph können Sie [das Microsoft Graph-SDK](#call-mic
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-sdk"></a>Aufrufen von Microsoft Graph mit dem Microsoft Graph-SDK
 Das [Microsoft Graph-SDK für Android](https://github.com/microsoftgraph/msgraph-sdk-android) stellt Klassen bereit, aus denen Anforderungen und Prozessergebnisse aus Microsoft Graph erstellt werden. Führen Sie die folgenden Schritte aus, um das Microsoft Graph-SDK zu verwenden.
 
-1. Gewähren Sie Ihrer App entsprechende Internetberechtigungen. Öffnen Sie die Datei **AndroidManifest**, und fügen Sie das folgende untergeordnete Element zum Manifest hinzu.
+1. Gewähren Sie Ihrer Anwendung entsprechende Internetberechtigungen. Öffnen Sie die Datei **AndroidManifest**, und fügen Sie das folgende untergeordnete Element zum Manifest hinzu.
     ```xml
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -463,7 +463,7 @@ Das [Microsoft Graph-SDK für Android](https://github.com/microsoftgraph/msgraph
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-rest-api"></a>Aufrufen von Microsoft Graph mit der Microsoft Graph-REST-API
 Die [Microsoft Graph-REST-API](http://developer.microsoft.com/en-us/graph/docs) macht mehrere APIs aus Microsoft-Clouddiensten über einen einzelnen REST-API-Endpunkt verfügbar. Gehen Sie folgendermaßen vor, um die REST-API zu verwenden.
 
-1. Gewähren Sie Ihrer App entsprechende Internetberechtigungen. Öffnen Sie die Datei **AndroidManifest**, und fügen Sie das folgende untergeordnete Element zum Manifest hinzu.
+1. Gewähren Sie Ihrer Anwendung entsprechende Internetberechtigungen. Öffnen Sie die Datei **AndroidManifest**, und fügen Sie das folgende untergeordnete Element zum Manifest hinzu.
     ```xml
     <uses-permission android:name="android.permission.INTERNET" />
     ```
@@ -548,7 +548,7 @@ Sie können Ihre Android-App nun testen.
 Überprüfen Sie den Posteingang der E-Mail-Adresse, die Sie im Abschnitt [Aufrufen von Microsoft Graph](#call-microsoft-graph) konfiguriert haben. Dort sollten Sie eine E-Mail von dem Konto vorfinden, das Sie zum Anmelden bei der App verwendet haben.
 
 ## <a name="next-steps"></a>Nächste Schritte
-- Testen Sie den [Microsoft Graph-Explorer](https://graph.microsoft.io/graph-explorer).
+- Testen Sie den [Microsoft Graph-Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Beispiele für allgemeine Vorgänge finden Sie im [Codeausschnittbeispiel für Android](https://github.com/microsoftgraph/android-java-snippets-sample). Sie können auch unsere anderen [Android-Beispiele](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=android) auf GitHub erkunden.
 
 

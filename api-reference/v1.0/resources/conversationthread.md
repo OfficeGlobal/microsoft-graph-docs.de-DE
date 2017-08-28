@@ -16,7 +16,7 @@ Die Empfängersammlung des letzten Beitrags besteht aus den aggregierten Empfän
 |[Beiträge auflisten](../api/conversationthread_list_posts.md) |[post](post.md)-Sammlung| Dient zum Abrufen der Beiträge des angegebenen Threads. |
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |id|String| Schreibgeschützt.|
 |toRecipients|[recipient](recipient.md)-Sammlung|Die An:-Empfänger des Threads.|
@@ -29,10 +29,9 @@ Die Empfängersammlung des letzten Beitrags besteht aus den aggregierten Empfän
 |isLocked|Boolean|Zeigt an, ob der Thread gesperrt ist.|
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |posts|[post](post.md)-Sammlung| Schreibgeschützt. Lässt Nullwerte zu.|
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

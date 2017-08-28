@@ -24,12 +24,11 @@ Die folgenden Methoden gelten für alle abgeleiteten Typen von Anlagen (**fileAt
 |[Anlagen eines Beitrags auflisten](../api/post_list_attachments.md) | [attachment](attachment.md) collection | Liste der Anlagen für einen Beitrag abrufen |
 |[Löschen](../api/attachment_delete.md) | Keine |Eine Anlage für ein Ereignis, eine Nachricht oder einen Beitrag löschen |
 
-
 ## <a name="properties"></a>Eigenschaften
 
 Nachfolgend finden Sie die grundlegenden Eigenschaften von attachment-Ressourcen. Zusätzliche Eigenschaften finden Sie bei dem jeweiligen Anlagentyp ([fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) oder [referenceAttachment](../resources/referenceAttachment.md)).
 
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |contentType|String|Der MIME-Typ.|
 |id|String| Schreibgeschützt.|

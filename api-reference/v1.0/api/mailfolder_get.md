@@ -1,8 +1,15 @@
 # <a name="get-mailfolder"></a>mailFolder abrufen
 
-Dient zum Abrufen der Eigenschaften und der Beziehungen des mailfolder-Objekts.
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: *Mail.Read; Mail.ReadWrite*
+Mit dieser API können Sie die Eigenschaften und Beziehungen eines Objekts des Typs „mailfolder“ abrufen.
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Mail.Read, Mail.ReadWrite    |
+|Delegiert (persönliches Microsoft-Konto) | Mail.Read, Mail.ReadWrite    |
+|Anwendung | Mail.Read, Mail.ReadWrite |
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http

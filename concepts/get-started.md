@@ -114,6 +114,6 @@ Wenn Sie die fertigen Connect-Beispiele ansehen möchten, besuchen Sie das [Micr
 </table>
 
 ## <a name="see-also"></a>Siehe auch
-- Testen Sie beispielhafte REST-Aufrufe in unserem [API Explorer](https://graph.microsoft.io/graph-explorer).
+- Testen Sie beispielhafte REST-Aufrufe in unserem [API Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - [Azure AD-Endpunkt-Dokumentation](https://azure.microsoft.com/documentation/services/active-directory/)
 - [Azure AD v2.0-Endpunkt-Dokumentation](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)
