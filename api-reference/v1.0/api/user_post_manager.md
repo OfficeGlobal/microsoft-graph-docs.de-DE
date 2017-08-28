@@ -1,37 +1,37 @@
-# <a name="assign-a-manager"></a><span data-ttu-id="23bc1-101">Einen Vorgesetzten zuweisen</span><span class="sxs-lookup"><span data-stu-id="23bc1-101">Assign a manager</span></span>
+# <a name="assign-a-manager"></a><span data-ttu-id="14b6c-101">Einen Vorgesetzten zuweisen</span><span class="sxs-lookup"><span data-stu-id="14b6c-101">Assign a manager</span></span>
 
-<span data-ttu-id="23bc1-102">Verwenden Sie diese API, um den Vorgesetzten eines Benutzers zuzuweisen.</span><span class="sxs-lookup"><span data-stu-id="23bc1-102">Use this API to assign a user's manager.</span></span>
-> <span data-ttu-id="23bc1-103">Hinweis: Eine Zuweisung von direkten Mitarbeitern ist nicht möglich. Verwenden Sie stattdessen diese API.</span><span class="sxs-lookup"><span data-stu-id="23bc1-103">Note: You cannot assign direct reports - instead use this API.</span></span>
+<span data-ttu-id="14b6c-102">Verwenden Sie diese API, um den Vorgesetzten eines Benutzers zuzuweisen.</span><span class="sxs-lookup"><span data-stu-id="14b6c-102">Use this API to assign a user's manager.</span></span>
+> <span data-ttu-id="14b6c-103">Hinweis: Es ist nicht möglich, direkte Unterstellte zuzuweisen, verwenden Sie stattdessen diese API.</span><span class="sxs-lookup"><span data-stu-id="14b6c-103">Note: You cannot assign direct reports - instead use this API.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="23bc1-104">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="23bc1-104">Permissions</span></span>
-<span data-ttu-id="23bc1-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="23bc1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="14b6c-104">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="14b6c-104">Permissions</span></span>
+<span data-ttu-id="14b6c-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="14b6c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="23bc1-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="23bc1-107">Permission type</span></span>      | <span data-ttu-id="23bc1-108">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="23bc1-108">Permissions (from least to most privileged)</span></span>              | 
-|:--------------------|:---------------------------------------------------------| 
-|<span data-ttu-id="23bc1-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="23bc1-109">Delegated (work or school account)</span></span> | <span data-ttu-id="23bc1-110">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="23bc1-110">Directory.ReadWrite.All or Directory.AccessAsUser.All</span></span>    | 
-|<span data-ttu-id="23bc1-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="23bc1-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="23bc1-112">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="23bc1-112">Not supported.</span></span>    | 
-|<span data-ttu-id="23bc1-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="23bc1-113">Application</span></span> | <span data-ttu-id="23bc1-114">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="23bc1-114">Directory.ReadWrite.All</span></span> | 
+|<span data-ttu-id="14b6c-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="14b6c-107">Permission type</span></span>      | <span data-ttu-id="14b6c-108">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="14b6c-108">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="14b6c-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="14b6c-109">Delegated (work or school account)</span></span> | <span data-ttu-id="14b6c-110">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="14b6c-110">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="14b6c-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="14b6c-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="14b6c-112">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="14b6c-112">Not supported.</span></span>    |
+|<span data-ttu-id="14b6c-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="14b6c-113">Application</span></span> | <span data-ttu-id="14b6c-114">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="14b6c-114">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="23bc1-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="23bc1-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="14b6c-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="14b6c-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT /users/{id}/manager/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="23bc1-116">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="23bc1-116">Request headers</span></span>
-| <span data-ttu-id="23bc1-117">Name</span><span class="sxs-lookup"><span data-stu-id="23bc1-117">Name</span></span>       | <span data-ttu-id="23bc1-118">Typ</span><span class="sxs-lookup"><span data-stu-id="23bc1-118">Type</span></span> | <span data-ttu-id="23bc1-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="23bc1-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="14b6c-116">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="14b6c-116">Request headers</span></span>
+| <span data-ttu-id="14b6c-117">Name</span><span class="sxs-lookup"><span data-stu-id="14b6c-117">Name</span></span>       | <span data-ttu-id="14b6c-118">Typ</span><span class="sxs-lookup"><span data-stu-id="14b6c-118">Type</span></span> | <span data-ttu-id="14b6c-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="14b6c-119">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="23bc1-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="23bc1-120">Authorization</span></span>  | <span data-ttu-id="23bc1-121">string</span><span class="sxs-lookup"><span data-stu-id="23bc1-121">string</span></span>  | <span data-ttu-id="23bc1-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="23bc1-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="14b6c-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="14b6c-120">Authorization</span></span>  | <span data-ttu-id="14b6c-121">string</span><span class="sxs-lookup"><span data-stu-id="14b6c-121">string</span></span>  | <span data-ttu-id="14b6c-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="14b6c-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="23bc1-124">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="23bc1-124">Request body</span></span>
-<span data-ttu-id="23bc1-125">Geben Sie im Anforderungstext eine JSON-Darstellung eines [directoryObject](../resources/directoryobject.md)- oder [user](../resources/user.md)-Objekts an, das hinzugefügt werden soll.</span><span class="sxs-lookup"><span data-stu-id="23bc1-125">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.</span></span>
+## <a name="request-body"></a><span data-ttu-id="14b6c-124">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="14b6c-124">Request body</span></span>
+<span data-ttu-id="14b6c-125">Geben Sie im Anforderungstext eine JSON-Darstellung eines [directoryObject](../resources/directoryobject.md)- oder [user](../resources/user.md)-Objekts an, das hinzugefügt werden soll.</span><span class="sxs-lookup"><span data-stu-id="14b6c-125">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.</span></span>
 
-## <a name="response"></a><span data-ttu-id="23bc1-126">Antwort</span><span class="sxs-lookup"><span data-stu-id="23bc1-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="14b6c-126">Antwort</span><span class="sxs-lookup"><span data-stu-id="14b6c-126">Response</span></span>
 
-<span data-ttu-id="23bc1-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="23bc1-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="14b6c-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="14b6c-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="23bc1-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="23bc1-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="23bc1-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="23bc1-130">Request</span></span>
-<span data-ttu-id="23bc1-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="23bc1-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="14b6c-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="14b6c-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="14b6c-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="14b6c-130">Request</span></span>
+<span data-ttu-id="14b6c-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="14b6c-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
@@ -45,9 +45,9 @@ Content-length: xxx
   "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
 }
 ```
-<span data-ttu-id="23bc1-132">Geben Sie im Anforderungstext eine JSON-Darstellung eines [user](../resources/user.md)-Objekts an, das hinzugefügt werden soll.</span><span class="sxs-lookup"><span data-stu-id="23bc1-132">In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.</span></span>
-##### <a name="response"></a><span data-ttu-id="23bc1-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="23bc1-133">Response</span></span>
-<span data-ttu-id="23bc1-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="23bc1-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="14b6c-132">Geben Sie im Anforderungstext eine JSON-Darstellung eines [user](../resources/user.md)-Objekts an, das hinzugefügt werden soll.</span><span class="sxs-lookup"><span data-stu-id="14b6c-132">In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.</span></span>
+##### <a name="response"></a><span data-ttu-id="14b6c-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="14b6c-133">Response</span></span>
+<span data-ttu-id="14b6c-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="14b6c-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

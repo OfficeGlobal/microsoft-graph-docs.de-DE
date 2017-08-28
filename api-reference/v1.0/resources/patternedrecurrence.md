@@ -1,17 +1,16 @@
-# <a name="patternedrecurrence-resource-type"></a>patternedRecurrence-Ressourcentyp
+# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="6df41-101">patternedRecurrence-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="6df41-101">patternedRecurrence resource type</span></span>
 
-Serienmuster und -bereich.
+<span data-ttu-id="6df41-102">Serienmuster und -bereich.</span><span class="sxs-lookup"><span data-stu-id="6df41-102">The recurrence pattern and range.</span></span>
 
-## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+## <a name="properties"></a><span data-ttu-id="6df41-103">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6df41-103">Properties</span></span>
+| <span data-ttu-id="6df41-104">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="6df41-104">Property</span></span>     | <span data-ttu-id="6df41-105">Typ</span><span class="sxs-lookup"><span data-stu-id="6df41-105">Type</span></span>   |<span data-ttu-id="6df41-106">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6df41-106">Description</span></span>|
 |:---------------|:--------|:----------|
-|Muster|[RecurrencePattern](recurrencepattern.md)|Die Häufigkeit eines Ereignisses.|
-|Bereich|[RecurrenceRange](recurrencerange.md)|Die Dauer eines Ereignisses.|
+|<span data-ttu-id="6df41-107">Muster</span><span class="sxs-lookup"><span data-stu-id="6df41-107">pattern</span></span>|[<span data-ttu-id="6df41-108">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="6df41-108">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="6df41-109">Die Häufigkeit eines Ereignisses.</span><span class="sxs-lookup"><span data-stu-id="6df41-109">The frequency of an event.</span></span>|
+|<span data-ttu-id="6df41-110">Bereich</span><span class="sxs-lookup"><span data-stu-id="6df41-110">range</span></span>|[<span data-ttu-id="6df41-111">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="6df41-111">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="6df41-112">Die Dauer eines Ereignisses.</span><span class="sxs-lookup"><span data-stu-id="6df41-112">The duration of an event.</span></span>|
 
+## <a name="json-representation"></a><span data-ttu-id="6df41-113">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="6df41-113">JSON representation</span></span>
 
-## <a name="json-representation"></a>JSON-Darstellung
-
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="6df41-114">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="6df41-114">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

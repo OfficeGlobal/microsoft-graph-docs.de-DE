@@ -1,20 +1,20 @@
-# <a name="enumerate-subsites-of-a-site"></a><span data-ttu-id="c54cf-101">Unterwebsites einer Website aufzählen</span><span class="sxs-lookup"><span data-stu-id="c54cf-101">Enumerate subsites of a site</span></span>
+# <a name="enumerate-subsites-of-a-site"></a><span data-ttu-id="f0027-101">Unterwebsites einer Website aufzählen</span><span class="sxs-lookup"><span data-stu-id="f0027-101">Enumerate subsites of a site</span></span>
 
-<span data-ttu-id="c54cf-102">Dient zum Abrufen einer Sammlung von Unterwebsites, die für ein [site][]-Objekt definiert sind.</span><span class="sxs-lookup"><span data-stu-id="c54cf-102">Get a collection of subsites defined for a [site][].</span></span>
+<span data-ttu-id="f0027-102">Dient zum Abrufen einer Sammlung von Unterwebsites, die für ein [site][]-Objekt definiert sind.</span><span class="sxs-lookup"><span data-stu-id="f0027-102">Get a collection of subsites defined for a [site][].</span></span>
 
-<span data-ttu-id="c54cf-103">[site]: ../resources/site.md</span><span class="sxs-lookup"><span data-stu-id="c54cf-103">[site]: ../resources/site.md</span></span>
+<span data-ttu-id="f0027-103">[site]: ../resources/site.md</span><span class="sxs-lookup"><span data-stu-id="f0027-103">[site]: ../resources/site.md</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c54cf-104">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="c54cf-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f0027-104">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="f0027-104">Permissions</span></span>
 
-<span data-ttu-id="c54cf-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="c54cf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="f0027-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="f0027-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="c54cf-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c54cf-107">Permission type</span></span>      | <span data-ttu-id="c54cf-108">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c54cf-108">Permissions (from least to most privileged)</span></span>              | 
-|:--------------------|:---------------------------------------------------------| 
-|<span data-ttu-id="c54cf-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c54cf-109">Delegated (work or school account)</span></span> | <span data-ttu-id="c54cf-110">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c54cf-110">Sites.Read.All, Sites.ReadWrite.All</span></span>    | 
-|<span data-ttu-id="c54cf-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c54cf-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c54cf-112">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c54cf-112">Not supported.</span></span>    | 
-|<span data-ttu-id="c54cf-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c54cf-113">Application</span></span> | <span data-ttu-id="c54cf-114">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c54cf-114">Sites.Read.All, Sites.ReadWrite.All</span></span> | 
+|<span data-ttu-id="f0027-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="f0027-107">Permission type</span></span>      | <span data-ttu-id="f0027-108">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="f0027-108">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="f0027-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="f0027-109">Delegated (work or school account)</span></span> | <span data-ttu-id="f0027-110">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f0027-110">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f0027-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="f0027-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f0027-112">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="f0027-112">Not supported.</span></span>    |
+|<span data-ttu-id="f0027-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="f0027-113">Application</span></span> | <span data-ttu-id="f0027-114">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f0027-114">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c54cf-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c54cf-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f0027-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="f0027-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -22,9 +22,9 @@
 GET /sites/{site-id}/sites
 ```
 
-## <a name="example"></a><span data-ttu-id="c54cf-116">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c54cf-116">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f0027-116">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f0027-116">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c54cf-117">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c54cf-117">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f0027-117">Anforderung</span><span class="sxs-lookup"><span data-stu-id="f0027-117">Request</span></span>
 
 <!-- { "blockType": "request", "name": "list-subsites" } -->
 
@@ -32,7 +32,7 @@ GET /sites/{site-id}/sites
 GET /sites/{site-id}/sites
 ```
 
-#### <a name="response"></a><span data-ttu-id="c54cf-118">Antwort</span><span class="sxs-lookup"><span data-stu-id="c54cf-118">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="f0027-118">Antwort</span><span class="sxs-lookup"><span data-stu-id="f0027-118">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

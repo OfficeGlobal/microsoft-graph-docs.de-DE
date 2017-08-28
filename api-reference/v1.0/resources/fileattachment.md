@@ -1,42 +1,41 @@
-# <a name="fileattachment-resource-type"></a>fileAttachment-Ressourcentyp
+# <a name="fileattachment-resource-type"></a><span data-ttu-id="c3d03-101">fileAttachment-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="c3d03-101">fileAttachment resource type</span></span>
 
-Eine Datei (z. B. eine Textdatei oder ein Word-Dokument), die an ein Ereignis, eine Nachricht oder einen Beitrag angefügt ist. Die **contentBytes**-Eigenschaft enthält den base64-codierten Inhalt der Datei.  
+<span data-ttu-id="c3d03-p101">Eine Datei (z. B. eine Textdatei oder ein Word-Dokument), die an ein Ereignis, eine Nachricht oder einen Beitrag angefügt ist. Die **contentBytes**-Eigenschaft enthält den base64-codierten Inhalt der Datei.</span><span class="sxs-lookup"><span data-stu-id="c3d03-p101">A file (such as a text file or Word document) attached to an event, message or post. The  **contentBytes** property contains the base64-encoded contents of the file.</span></span>  
 
-Fügen Sie beim Erstellen einer Dateianlage Folgendes zum Anforderungstext hinzu:
+<span data-ttu-id="c3d03-104">Fügen Sie beim Erstellen einer Dateianlage Folgendes zum Anforderungstext hinzu:</span><span class="sxs-lookup"><span data-stu-id="c3d03-104">When creating a file attachment, include the following in the request body:</span></span>
 
 * `"@odata.type": "#microsoft.graph.fileAttachment"`
-* Die erforderlichen Eigenschaften **name** und **contentBytes**.
+* <span data-ttu-id="c3d03-105">Die erforderlichen Eigenschaften **name** und **contentBytes**.</span><span class="sxs-lookup"><span data-stu-id="c3d03-105">The required properties **name** and **contentBytes**.</span></span>
 
-Abgeleitet von [attachment](attachment.md).
+<span data-ttu-id="c3d03-106">Abgeleitet von [attachment](attachment.md).</span><span class="sxs-lookup"><span data-stu-id="c3d03-106">Derived from [attachment](attachment.md).</span></span>
 
-## <a name="methods"></a>Methoden
+## <a name="methods"></a><span data-ttu-id="c3d03-107">Methoden</span><span class="sxs-lookup"><span data-stu-id="c3d03-107">Methods</span></span>
 
-| Methode       | Rückgabetyp  |Beschreibung|
+| <span data-ttu-id="c3d03-108">Methode</span><span class="sxs-lookup"><span data-stu-id="c3d03-108">Method</span></span>       | <span data-ttu-id="c3d03-109">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="c3d03-109">Return Type</span></span>  |<span data-ttu-id="c3d03-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c3d03-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Abrufen](../api/attachment_get.md) | [fileAttachment](fileattachment.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des fileAttachment-Objekts.|
-|[Delete](../api/attachment_delete.md) | Keine |Löscht das fileAttachment-Objekt. |
+|[<span data-ttu-id="c3d03-111">Abrufen</span><span class="sxs-lookup"><span data-stu-id="c3d03-111">Get</span></span>](../api/attachment_get.md) | [<span data-ttu-id="c3d03-112">fileAttachment</span><span class="sxs-lookup"><span data-stu-id="c3d03-112">fileAttachment</span></span>](fileattachment.md) |<span data-ttu-id="c3d03-113">Dient zum Lesen der Eigenschaften und der Beziehungen des fileAttachment-Objekts.</span><span class="sxs-lookup"><span data-stu-id="c3d03-113">Read properties and relationships of fileAttachment object.</span></span>|
+|[<span data-ttu-id="c3d03-114">Delete</span><span class="sxs-lookup"><span data-stu-id="c3d03-114">Delete</span></span>](../api/attachment_delete.md) | <span data-ttu-id="c3d03-115">Keine</span><span class="sxs-lookup"><span data-stu-id="c3d03-115">None</span></span> |<span data-ttu-id="c3d03-116">Löscht das fileAttachment-Objekt.</span><span class="sxs-lookup"><span data-stu-id="c3d03-116">Delete fileAttachment object.</span></span> |
 
-
-## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+## <a name="properties"></a><span data-ttu-id="c3d03-117">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="c3d03-117">Properties</span></span>
+| <span data-ttu-id="c3d03-118">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="c3d03-118">Property</span></span>     | <span data-ttu-id="c3d03-119">Typ</span><span class="sxs-lookup"><span data-stu-id="c3d03-119">Type</span></span>   |<span data-ttu-id="c3d03-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c3d03-120">Description</span></span>|
 |:---------------|:--------|:----------|
-|contentBytes|Binär|Der binäre Inhalt der Datei.|
-|contentId|String|Die ID der Anlage im Exchange-Speicher.|
-|contentLocation|String|Der URI (Uniform Resource Identifier), der dem Speicherort des Anlageninhalts entspricht.|
-|contentType|String|Der Inhaltstyp der Anlage.|
-|id|String|Die Anlagen-ID.|
-|isInline|Boolean|True, wenn es sich um eine Inlineanlage handelt.|
-|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Anlage.|
-|name|String|Der Name, der den Text darstellt, der unter dem Symbol für die eingebettete Anlage angezeigt wird. Dies muss nicht der tatsächliche Dateiname sein.|
-|size|Int32|Die Größe der Anlage in Byte.|
+|<span data-ttu-id="c3d03-121">contentBytes</span><span class="sxs-lookup"><span data-stu-id="c3d03-121">contentBytes</span></span>|<span data-ttu-id="c3d03-122">Binär</span><span class="sxs-lookup"><span data-stu-id="c3d03-122">Binary</span></span>|<span data-ttu-id="c3d03-123">Der binäre Inhalt der Datei.</span><span class="sxs-lookup"><span data-stu-id="c3d03-123">The binary contents of the file.</span></span>|
+|<span data-ttu-id="c3d03-124">contentId</span><span class="sxs-lookup"><span data-stu-id="c3d03-124">contentId</span></span>|<span data-ttu-id="c3d03-125">String</span><span class="sxs-lookup"><span data-stu-id="c3d03-125">String</span></span>|<span data-ttu-id="c3d03-126">Die ID der Anlage im Exchange-Speicher.</span><span class="sxs-lookup"><span data-stu-id="c3d03-126">The ID of the attachment in the Exchange store.</span></span>|
+|<span data-ttu-id="c3d03-127">contentLocation</span><span class="sxs-lookup"><span data-stu-id="c3d03-127">contentLocation</span></span>|<span data-ttu-id="c3d03-128">String</span><span class="sxs-lookup"><span data-stu-id="c3d03-128">String</span></span>|<span data-ttu-id="c3d03-129">Der URI (Uniform Resource Identifier), der dem Speicherort des Anlageninhalts entspricht.</span><span class="sxs-lookup"><span data-stu-id="c3d03-129">The Uniform Resource Identifier (URI) that corresponds to the location of the content of the attachment.</span></span>|
+|<span data-ttu-id="c3d03-130">contentType</span><span class="sxs-lookup"><span data-stu-id="c3d03-130">contentType</span></span>|<span data-ttu-id="c3d03-131">String</span><span class="sxs-lookup"><span data-stu-id="c3d03-131">String</span></span>|<span data-ttu-id="c3d03-132">Der Inhaltstyp der Anlage.</span><span class="sxs-lookup"><span data-stu-id="c3d03-132">The content type of the attachment.</span></span>|
+|<span data-ttu-id="c3d03-133">id</span><span class="sxs-lookup"><span data-stu-id="c3d03-133">id</span></span>|<span data-ttu-id="c3d03-134">String</span><span class="sxs-lookup"><span data-stu-id="c3d03-134">String</span></span>|<span data-ttu-id="c3d03-135">Die Anlagen-ID.</span><span class="sxs-lookup"><span data-stu-id="c3d03-135">The attachment ID.</span></span>|
+|<span data-ttu-id="c3d03-136">isInline</span><span class="sxs-lookup"><span data-stu-id="c3d03-136">isInline</span></span>|<span data-ttu-id="c3d03-137">Boolean</span><span class="sxs-lookup"><span data-stu-id="c3d03-137">Boolean</span></span>|<span data-ttu-id="c3d03-138">True, wenn es sich um eine Inlineanlage handelt.</span><span class="sxs-lookup"><span data-stu-id="c3d03-138">Set to true if this is an inline attachment.</span></span>|
+|<span data-ttu-id="c3d03-139">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="c3d03-139">lastModifiedDateTime</span></span>|<span data-ttu-id="c3d03-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c3d03-140">DateTimeOffset</span></span>|<span data-ttu-id="c3d03-141">Datum und Uhrzeit der letzten Änderung der Anlage.</span><span class="sxs-lookup"><span data-stu-id="c3d03-141">The date and time when the attachment was last modified.</span></span>|
+|<span data-ttu-id="c3d03-142">name</span><span class="sxs-lookup"><span data-stu-id="c3d03-142">name</span></span>|<span data-ttu-id="c3d03-143">String</span><span class="sxs-lookup"><span data-stu-id="c3d03-143">String</span></span>|<span data-ttu-id="c3d03-144">Der Name, der den Text darstellt, der unter dem Symbol für die eingebettete Anlage angezeigt wird. Dies muss nicht der tatsächliche Dateiname sein.</span><span class="sxs-lookup"><span data-stu-id="c3d03-144">The name representing the text that is displayed below the icon representing the embedded attachment.This does not need to be the actual file name.</span></span>|
+|<span data-ttu-id="c3d03-145">size</span><span class="sxs-lookup"><span data-stu-id="c3d03-145">size</span></span>|<span data-ttu-id="c3d03-146">Int32</span><span class="sxs-lookup"><span data-stu-id="c3d03-146">Int32</span></span>|<span data-ttu-id="c3d03-147">Die Größe der Anlage in Byte.</span><span class="sxs-lookup"><span data-stu-id="c3d03-147">The size in bytes of the attachment.</span></span>|
 
-## <a name="relationships"></a>Beziehungen
-Keine
+## <a name="relationships"></a><span data-ttu-id="c3d03-148">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="c3d03-148">Relationships</span></span>
+<span data-ttu-id="c3d03-149">Keine</span><span class="sxs-lookup"><span data-stu-id="c3d03-149">None</span></span>
 
 
-## <a name="json-representation"></a>JSON-Darstellung
+## <a name="json-representation"></a><span data-ttu-id="c3d03-150">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="c3d03-150">JSON representation</span></span>
 
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="c3d03-151">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="c3d03-151">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
