@@ -27,14 +27,14 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 | Eigenschaft         | Typ   | Beschreibung                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | String | SHA1-Hash für den Inhalt der Datei (sofern zutreffend). Schreibgeschützt. |
+| **sha1Hash**     | Zeichenfolge | SHA1-Hash für den Inhalt der Datei (sofern zutreffend). Schreibgeschützt. |
 | **crc32Hash**    | String | Der Wert der CRC32 der Datei (sofern zutreffend). Schreibgeschützt.            |
-| **quickXorHash** | String | Ein proprietärer Hash der Datei, die verwendet werden kann, um festzustellen, ob sich der Inhalt der Datei (sofern zutreffend) geändert hat. Schreibgeschützt. | 
+| **quickXorHash** | String | Ein proprietärer Hash der Datei, die verwendet werden kann, um festzustellen, ob sich der Inhalt der Datei (sofern zutreffend) geändert hat. Schreibgeschützt. |
 
 **Hinweis:** In einigen Fällen stehen möglicherweise keine Hash-Werte zur Verfügung. Wenn dies der Fall ist, werden die Hash-Werte für ein Element nach dem Download des Elements aktualisiert.
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 In OneDrive for Business stehen **sha1Hash** und **crc32Hash** nicht zur Verfügung. In OneDrive Personal steht **QuickXorHash** nicht zur Verfügung.
 

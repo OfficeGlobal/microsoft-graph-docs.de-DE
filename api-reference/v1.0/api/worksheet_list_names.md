@@ -1,12 +1,14 @@
 # <a name="list-names"></a>Namen auflisten
 
 Dient zum Abrufen einer Liste von benannten Elementen, die mit dem Arbeitsblatt verknüpft sind. 
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-  * Files.Read
-  * Files.ReadWrite
-  * Sites.Read.All
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Files.ReadWrite    |
+|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
+|Anwendung | Sites.Read.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -20,7 +22,6 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.i
 | Name      |Beschreibung|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Erforderlich. |
-
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

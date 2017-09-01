@@ -1,10 +1,14 @@
 # <a name="worksheetprotection-protect"></a>WorksheetProtection: Schützen
 
-Schützen ein Arbeitsblatt. Wird ausgelöst, wenn das Arbeitsblatt geschützt ist.
-## <a name="prerequisites"></a>Voraussetzungen
-Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+Schützen eines Arbeitsblatts. Wird ausgelöst, wenn das Arbeitsblatt geschützt ist.
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-    * Files.ReadWrite
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Files.ReadWrite    |
+|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
+|Anwendung | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -16,7 +20,6 @@ POST /workbook/worksheets/{id|name}/protection/protect
 | Name       | Beschreibung|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Erforderlich. |
-
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.

@@ -1,4 +1,4 @@
-# <a name="upload-large-files-with-an-upload-session"></a>Große Dateien mit einer Uploadsitzung hochladen
+# <a name="upload-large-files-with-an-upload-session"></a>Hochladen großer Dateien mit einer Uploadsitzung
 
 Wenn Sie eine Uploadsitzung erstellen, kann Ihre App Dateien bis zur maximal zulässigen Dateigröße hochladen. Eine Uploadsitzung erlaubt es der App, Bereiche einer Datei in sequenziellen API-Anfragen hochzuladen. Bricht die Verbindung während des Uploads ab, kann die Übertragung so anschließend fortgesetzt werden.
 
@@ -7,12 +7,14 @@ Sie müssen zwei Schritte durchführen, um eine Datei mit einer Uploadsitzung ho
 1. [Erstellen einer Uploadsitzung](#create-an-upload-session)
 2. [Hochladen von Bytes in die Uploadsitzung](#upload-bytes-to-the-upload-session)
 
-## <a name="prerequisites"></a>Voraussetzungen
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen:
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
+|Delegiert (persönliches Microsoft-Konto) | Files.ReadWrite, Files.ReadWrite.All    |
+|Anwendung | Sites.ReadWrite.All |
 
 > **Hinweis**: Die Anwendungsberechtigung „Files.ReadWrite.All“ wird für diese API noch nicht unterstützt. Vollständige Unterstützung soll in Kürze folgen. 
 
@@ -45,7 +47,6 @@ Beispielsweise können Sie im Anforderungstext die Eigenschaft „conflictBehavi
 | Name       | Wert | Beschreibung                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | Wenn dieser Anforderungsheader enthalten ist und das angegebene Etag (oder CTag) nicht mit dem aktuellen Etag des Elements übereinstimmt, wird der Fehler `412 Precondition Failed` zurückgegeben. |
-
 
 ### <a name="response"></a>Antwort
 Die Antwort auf diese Anforderung enthält die Details der neu erstellten Ressource des Typs [uploadSession](../resources/uploadsession.md), einschließlich der zum Upload der Dateiteile verwendeten URL. 

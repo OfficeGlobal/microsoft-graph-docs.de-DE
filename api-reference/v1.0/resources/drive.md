@@ -55,7 +55,7 @@ Die **drive**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet und er
 | owner                | [identitySet](identityset.md) | Optional.  Das Benutzerkonto, das das Laufwerk besitzt. Schreibgeschützt.                                                                                                                                                                       |
 | quota                | [quota](quota.md)             | Optional.  Informationen zum Speicherkontingent des Laufwerks. Schreibgeschützt.                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | Gibt Bezeichner zurück, die für SharePoint REST-Kompatibilität nützlich sind. Schreibgeschützt.                                                                                                                                                         |
-| webUrl               | string (URL)                  | URL, über die die Ressource im Browser angezeigt werden kann. Schreibgeschützt.                                                                                                                                                                        |
+| webUrl               | String (URL)                  | URL, über die die Ressource im Browser angezeigt werden kann. Schreibgeschützt.                                                                                                                                                                        |
 
 [identitySet]: identityset.md
 [sharepointIds]: sharepointids.md
@@ -67,7 +67,6 @@ Die **drive**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet und er
 | items        | [driveitem](driveitem.md) collection | Alle im Laufwerk enthaltenen Elemente. Schreibgeschützt. Lässt Nullwerte zu.                   |
 | root         | [driveitem](driveitem.md)            | Der Stammordner des Laufwerks. Schreibgeschützt.                                 |
 | Sonderfall      | [driveitem](driveitem.md) collection | Sammlung gemeinsamer Ordner, die  in OneDrive zur Verfügung stehen. Schreibgeschützt. Lässt Nullwerte zu. |
-
 
 ## <a name="methods"></a>Methoden
 

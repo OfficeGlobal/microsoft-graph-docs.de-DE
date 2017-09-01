@@ -28,7 +28,6 @@ Es folgt eine JSON-Darstellung der Ressource.
 | **height** | Int32 | Optional. Die Höhe des Bilds in Pixel. Schreibgeschützt. |
 | **width**  | Int32 | Optional. Die Breite des Bilds in Pixel. Schreibgeschützt.  |
 
-
 ## <a name="remarks"></a>Bemerkungen
 
 In OneDrive for Business wird diese Ressource für Elemente zurückgegeben, von denen basierend auf der Dateierweiterung davon ausgegangen wird, dass es sich um Bilder handelt. Diese Ressource gibt keine Eigenschaften in OneDrive for Business zurück.

@@ -18,11 +18,11 @@ Es gibt viele Möglichkeiten, auf OneDrive mit Miniaturansichten zu arbeiten. Di
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    | 
-|Delegiert (persönliches Microsoft-Konto) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    | 
-|Anwendung | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | 
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
+|Delegiert (persönliches Microsoft-Konto) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
+|Anwendung | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -34,7 +34,7 @@ GET /groups/{group-id}/drive/items/{item-id}/thumbnails
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](../../../concepts/query_parameters.md) von `$select` zur Anpassung der Antwort.
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/thumbnails/{thumb-
 | **item-id**  | string | Der eindeutige Bezeichner für das referenzierte Element                                      |
 | **thumb-id** | number | Der Index der Miniaturansicht, in der Regel 0 bis 4                                            |
 | **size**     | string | Die Größe der angeforderten Miniaturansicht. Dabei muss es sich um eine der aufgeführten Standardgrößen handeln. |
-
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 ```http

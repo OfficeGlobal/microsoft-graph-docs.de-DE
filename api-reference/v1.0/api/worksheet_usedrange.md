@@ -1,10 +1,14 @@
 # <a name="worksheet-usedrange"></a>Arbeitsblatt: UsedRange
 
 Der verwendete Bereich ist der kleinste Bereich, der mindestens eine der Zellen umfasst, die einen Wert enthalten oder denen eine Formatierung zugewiesen wurde. Wenn das Arbeitsblatt leer ist, gibt diese Funktion die oberste linke Zelle zurück.
-## <a name="prerequisites"></a>Voraussetzungen
-Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen: 
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-    * Files.ReadWrite
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Files.ReadWrite    |
+|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
+|Anwendung | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -19,7 +23,6 @@ Stellen Sie in der Anforderungs-URL einen optionalen Abfrageparameter bereit.
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |valuesOnly|Boolesch|Optional. Betrachtet nur Zellen mit Werten als verwendet (ignoriert die Formatierung).|
-
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|

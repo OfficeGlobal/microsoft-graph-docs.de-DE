@@ -41,17 +41,15 @@ Wenn Sie eine einwertige oder mehrwertige erweiterte Eigenschaft erstellen, kön
 
 |**Format**|**Beispiel**|**Beschreibung**|
 |:---------|:----------|:--------------|
-| "*{Type} {Guid} **Name** {Name}*" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifiziert eine Eigenschaft nach dem Namespace (der GUID), zu dem sie gehört, und einem Namen.         |
-| "*{type} {guid} **ID** {id}*"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifiziert eine Eigenschaft nach dem Namespace (der GUID), zu dem sie gehört, und einem Bezeichner.  |
-
+| "*{type} {guid} **Name** {name}*" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifiziert eine Eigenschaft nach dem Namespace (der GUID), zu dem sie gehört, und einem Namen.         |
+| "*{type} {guid} **Id** {id}*"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifiziert eine Eigenschaft nach dem Namespace (der GUID), zu dem sie gehört, und einem Bezeichner.  |
 
 **Gültige ID-Formate für mehrwertige erweiterte Eigenschaften**
 
 |**Format**|**Beispiel**|**Beschreibung**|
 |:---------|:----------|:--------------|
-| "*{Type} {Guid} **Name** {Name}*" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifiziert eine Eigenschaft nach Namespace (der GUID) und Namen.         |
-| "*{type} {guid} **ID** {id}*"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifiziert eine Eigenschaft nach Namespace (der GUID) und Bezeichner.   |
-
+| "*{type} {guid} **Name** {name}*" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifiziert eine Eigenschaft nach Namespace (der GUID) und Namen.         |
+| "*{type} {guid} **Id** {id}*"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifiziert eine Eigenschaft nach Namespace (der GUID) und Bezeichner.   |
 
 ### <a name="rest-api-operations"></a>REST-API-Vorgänge
  

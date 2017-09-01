@@ -17,5 +17,6 @@ Beachten Sie, dass das Klassifizierungssystem nur für eingehende Nachrichten im
 
 **Verwenden von Außerkraftsetzungen, um einheitlich nach Absender zu klassifizieren**
 
-[Außerkraftsetzung für einen Absender erstellen](../api/inferenceclassification_post_overrides.md) | [Alle Außerkraftsetzungen für einen Benutzer auflisten](../api/inferenceclassification_list_overrides.md) | 
-[Außerkraftsetzung für einen Absender aktualisieren](../api/inferenceclassificationoverride_update.md) | [Außerkraftsetzung eines Absenders löschen](../api/inferenceclassificationoverride_delete.md) 
+[Erstellen einer Außerkraftsetzung für einen Absender](../api/inferenceclassification_post_overrides.md) | [Auflisten aller Außerkraftsetzungen für Benutzer](../api/inferenceclassification_list_overrides.md) |
+
+[Aktualisieren einer Außerkraftsetzung für einen Absender](../api/inferenceclassificationoverride_update.md) | [Löschen einer Außerkraftsetzung für einen Absender](../api/inferenceclassificationoverride_delete.md) 

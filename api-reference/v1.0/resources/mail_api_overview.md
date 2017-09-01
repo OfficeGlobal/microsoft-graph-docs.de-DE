@@ -22,7 +22,7 @@ Die Ressource **message** macht Eigenschaften wie **categories**, **conversation
 
 Die Microsoft Graph-API stellt zudem Methoden und Aktionen bereit, die allgemeine Anwendungsfälle von Nachrichten unterstützen.
 
-| Anwendungsfälle           | REST-Ressourcen    | Siehe auch |
+| Anwendungsfälle        | REST-Ressourcen | Siehe auch |
 |:---------------|:--------|:----------|
 | **Benutzerorientierte Aktionen** | | |
 | Nachrichten entwerfen, lesen, beantworten, weiterleiten, senden, aktualisieren oder löschen | [message](../resources/message.md) | [Methoden von „message“](../resources/message.md#methods) |
@@ -38,9 +38,6 @@ Die Microsoft Graph-API stellt zudem Methoden und Aktionen bereit, die allgemein
 | **App-Entwicklung** | | |
 | Benutzerdefinierte App-Daten mithilfe von Erweiterungen zu einer Nachricht hinzufügen | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](../../../concepts/extensibility_overview.md) |
 | Auf benutzerdefinierte Daten für nicht ausreichend verfügbare Outlook-MAPI-Eigenschaften zugreifen | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Übersicht über erweiterte Outlook-Eigenschaften](../resources/extended-properties-overview.md) |
-
-
-
 
 ## <a name="next-steps"></a>Nächste Schritte
 Die E-Mail-API kann Ihnen neue Möglichkeiten für die Interaktion mit Benutzern eröffnen: 

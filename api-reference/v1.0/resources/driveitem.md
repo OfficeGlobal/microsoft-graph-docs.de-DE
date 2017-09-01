@@ -88,7 +88,7 @@ Die **driveItem**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet un
 | createdDateTime      | DateTimeOffset                      | Datum und Uhrzeit der Elementerstellung. Schreibgeschützt.                                                                                                                                |
 | cTag                 | String                              | Ein ETag für den Inhalt des Elements. Dieses ETag wird nicht geändert, wenn nur die Metadaten geändert werden. **Hinweis:** Diese Eigenschaft wird nicht zurückgegeben, wenn das Element ein Ordner ist. Schreibgeschützt. |
 | gelöscht              | [deleted](deleted.md)               | Informationen zum „gelöscht“-Zustand des Elements. Schreibgeschützt.                                                                                                               |
-| description          | String                              | Stellt eine für den Benutzer sichtbare Beschreibung des Elements bereit. Lese-/Schreibzugriff. Nur auf OneDrive Personal                                                                                    |
+| description          | Zeichenfolge                              | Stellt eine für den Benutzer sichtbare Beschreibung des Elements bereit. Lese-/Schreibzugriff. Nur auf OneDrive Personal                                                                                    |
 | eTag                 | String                              | ETag des gesamten Elements (Metadaten + Inhalt). Schreibgeschützt.                                                                                                                 |
 | file                 | [file](file.md)                     | Dateimetadaten, wenn das Element eine Datei ist. Schreibgeschützt.                                                                                                                          |
 | fileSystemInfo       | [fileSystemInfo](filesysteminfo.md) | Informationen zum Dateisystem des Clients. Lese-/Schreibzugriff.                                                                                                                            |
@@ -105,7 +105,7 @@ Die **driveItem**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet un
 | remoteItem           | [remoteItem](remoteitem.md)         | Daten zum Remoteelement, wenn das Element von einem anderen Laufwerk freigegeben ist als dem, auf das zugegriffen wird. Schreibgeschützt.                                                                        |
 | root                 | [root](root.md)                     | Wenn diese Eigenschaft nicht Null ist, bedeutet dies, dass es sich bei der driveItem-Ressource um die oberste driveItem-Ressource auf dem Laufwerk handelt.                                                                     |
 | searchResult         | [searchResult](searchresult.md)     | Suchmetadaten, wenn das Element aus einem Suchergebnis stammt. Schreibgeschützt.                                                                                                          |
-| freigegeben               | [shared](shared.md)                 | Gibt an, dass das Element für andere freigegeben wurde, und enthält den „freigegeben“-Status des Elements. Schreibgeschützt.                                               |
+| shared               | [shared](shared.md)                 | Gibt an, dass das Element für andere freigegeben wurde, und enthält den „freigegeben“-Status des Elements. Schreibgeschützt.                                               |
 | sharepointIds        | [sharepointIds](sharepointids.md)   | Gibt Bezeichner zurück, die für SharePoint REST-Kompatibilität nützlich sind. Schreibgeschützt.                                                                                                  |
 | size                 | Int64                               | Größe des Elements in Byte. Schreibgeschützt.                                                                                                                                     |
 | specialFolder        | [specialFolder](specialfolder.md)   | Facet, das zurückgegeben wird, wenn das aktuelle Element auch als spezieller Ordner verfügbar ist. Schreibgeschützt.                                                                             |
@@ -121,11 +121,10 @@ Die **driveItem**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet un
 | :----------------- | :----------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Inhalt            | Stream                                     | Der Inhaltsdatenstrom, wenn das Element eine Datei darstellt.                                                                                                                                |
 | children           | [driveitem](driveitem.md) collection       | Sammlung von Elementobjekten der direkten untergeordneten Elemente eines Elements. Nur Elemente, die Ordner repräsentieren, haben untergeordnete Elemente. Schreibgeschützt. Lässt Nullwerte zu.                                        |
-| createdByUser      | [Benutzer](user.md)                            | Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.                                                                                                  |
-| lastModifiedByUser | [Benutzer](user.md)                            | Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element zuletzt geändert wurde. Schreibgeschützt.                                                                                            |
-| Berechtigungen        | [permission](permission.md) collection     | Der Satz von Berechtigungen für das Element. Schreibgeschützt. Lässt Nullwerte zu.                                                                                                                         |
+| createdByUser      | [user](user.md)                            | Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.                                                                                                  |
+| lastModifiedByUser | [user](user.md)                            | Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element zuletzt geändert wurde. Schreibgeschützt.                                                                                            |
+| permissions        | [permission](permission.md) collection     | Der Satz von Berechtigungen für das Element. Schreibgeschützt. Lässt Nullwerte zu.                                                                                                                         |
 | thumbnails         | [thumbnailSet](thumbnailset.md) collection | Sammlung der dem Element zugeordneten [ThumbnailSet](thumbnailSet.md)-Objekte. Weitere Informationen finden Sie im Artikel zum [Abrufen von Miniaturansichten](../api/thumbnailset_get.md). Schreibgeschützt. Lässt Nullwerte zu. |
-
 
 ## <a name="instance-attributes"></a>Instanzenattribute
 
@@ -160,7 +159,6 @@ Instanzenattribute sind Eigenschaften mit speziellem Verhalten. Diese Eigenschaf
 | [Add permissions](../api/item_invite.md)               | `POST /drive/items/{item-id}/invite`     |
 | [List permissions](../api/item_list_permissions.md)    | `GET /drive/items/{item-id}/permissions` |
 | [Delete permission](../api/permission_delete.md)       | `DELETE /drive/items/{item-id}/permissions/{perm-id}` |
-
 
 ## <a name="remarks"></a>Bemerkungen
 

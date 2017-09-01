@@ -146,29 +146,29 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 ---
 
-## <a name="microsoft-intune-device-management-permissions"></a>Berechtigungen für Microsoft Intune-Geräteverwaltung
+## <a name="intune-device-management-permissions"></a>Berechtigungen für Intune-Geräteverwaltung
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
-Keine.
+|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _DeviceManagementApps.Read.All_ | Microsoft Intune-Apps lesen | Ermöglicht der App, die Eigenschaften, Gruppenzuweisungen und Status von Apps, App-Konfigurationen sowie von Microsoft Intune verwaltete Richtlinien zum Schutz von Apps zu lesen. | Ja |
+| _DeviceManagementApps.ReadWrite.All_ | Microsoft Intune-Apps lesen und schreiben | Ermöglicht der App, die Eigenschaften, Gruppenzuweisungen und Status von Apps, App-Konfigurationen sowie von Microsoft Intune verwaltete Richtlinien zum Schutz von Apps zu lesen und zu schreiben. | Ja |
+| _DeviceManagementConfiguration.Read.All_ | Microsoft Intune-Gerätekonfiguration und -Richtlinien lesen | Ermöglicht der App, Eigenschaften der von Microsoft Intune verwalteten Gerätekonfiguration und Richtlinien zur Gerätekompatibilität sowie deren Zuweisung zu Gruppen zu lesen. | Ja |
+| _DeviceManagementConfiguration.ReadWrite.All_ | Microsoft Intune-Gerätekonfiguration und -Richtlinien lesen und schreiben  | Ermöglicht der App, Eigenschaften der von Microsoft Intune verwalteten Gerätekonfiguration und Richtlinien zur Gerätekompatibilität sowie deren Zuweisung zu Gruppen zu lesen und zu schreiben. | Ja |
+| _DeviceManagementManagedDevices.PrivilegedOperations.All_ | Remoteaktionen mit Auswirkungen auf den Benutzer auf Microsoft Intune-Geräten durchführen | Ermöglicht der App, Remoteaktionen mit großen Auswirkungen durchzuführen, z. B. das Zurücksetzen des Geräts oder der Kennung auf Geräten, die von Microsoft Intune verwaltet werden. | Ja |
+| _DeviceManagementManagedDevices.Read.All_ | Microsoft Intune-Geräte lesen | Ermöglicht der App, die Eigenschaften der von Microsoft Intune verwalteten Geräte zu lesen. | Ja |
+| _DeviceManagementManagedDevices.ReadWrite.All_ | Microsoft Intune-Geräte lesen und schreiben | Ermöglicht der App, die Eigenschaften der von Microsoft Intune verwalteten Geräte zu lesen und zu schreiben. Ermöglicht keine Operationen mit großen Auswirkungen, z. B. Remotezurücksetzen und Kennwortzurücksetzung am Gerät des Besitzers. | Ja |
+| _DeviceManagementRBAC.Read.All_ | Microsoft Intune-RBAC-Einstellungen lesen | Ermöglicht der App, die Eigenschaften bezüglich der Einstellungen der rollenbasierten Zugriffssteuerung (RBAC) von Microsoft Intune zu lesen. | Ja |
+| _DeviceManagementRBAC.ReadWrite.All_ | Microsoft Intune-RBAC-Einstellungen lesen und schreiben | Ermöglicht der App, die Eigenschaften bezüglich der Einstellungen der rollenbasierten Zugriffssteuerung (RBAC) von Microsoft Intune zu lesen und zu schreiben. | Ja |
+| _DeviceManagementServiceConfig.Read.All_ | Microsoft Intune-Konfiguration lesen | Ermöglicht der App, Intune-Diensteigenschaften zu lesen, einschließlich der Geräteregistrierung und der Drittanbieter-Dienstverbindungskonfiguration. | Ja |
+| _DeviceManagementServiceConfig.ReadWrite.All_ | Microsoft Intune-Konfiguration lesen und schreiben | Ermöglicht der App, Microsoft Intune-Diensteigenschaften zu lesen und zu schreiben, einschließlich der Geräteregistrierung und der Drittanbieter-Dienstverbindungskonfiguration. | Ja |
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
-|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _DeviceManagementServiceConfig.Read.All_ | Microsoft Intune-Konfiguration lesen (Vorschau) | Ermöglicht der App, Microsoft Intune-Diensteigenschaften zu lesen, einschließlich der Geräteregistrierung und der Drittanbieter-Dienstverbindungskonfiguration. | Ja |
-| _DeviceManagementServiceConfig.ReadWrite.All_ | Microsoft Intune-Konfiguration lesen und schreiben (Vorschau) | Ermöglicht der App, Microsoft Intune-Diensteigenschaften zu lesen und zu schreiben, einschließlich der Geräteregistrierung und der Drittanbieter-Dienstverbindungskonfiguration. | Ja |
-| _DeviceManagementConfiguration.Read.All_ | Microsoft Intune-Gerätekonfiguration und -Richtlinien lesen (Vorschau) | Ermöglicht der App, Eigenschaften der von Microsoft Intune verwalteten Gerätekonfiguration und Richtlinien zur Gerätekompatibilität sowie deren Zuweisung zu Gruppen zu lesen. | Ja |
-| _DeviceManagementConfiguration.ReadWrite.All_ | Microsoft Intune-Gerätekonfiguration und -Richtlinien lesen und schreiben (Vorschau) | Ermöglicht der App, Eigenschaften der von Microsoft Intune verwalteten Gerätekonfiguration und Richtlinien zur Gerätekompatibilität sowie deren Zuweisung zu Gruppen zu lesen und zu schreiben. | Ja |
-| _DeviceManagementApps.Read.All_ | Microsoft Intune-Apps lesen (Vorschau) | Ermöglicht der App, die Eigenschaften, Gruppenzuweisungen und Status von Apps, App-Konfigurationen sowie von Microsoft Intune verwaltete Richtlinien zum Schutz von Apps zu lesen. | Ja |
-| _DeviceManagementApps.ReadWrite.All_ | Microsoft Intune-Apps lesen und schreiben (Vorschau) | Ermöglicht der App, die Eigenschaften, Gruppenzuweisungen und Status von Apps, App-Konfigurationen sowie von Microsoft Intune verwaltete Richtlinien zum Schutz von Apps zu lesen und zu schreiben. | Ja |
-| _DeviceManagementRBAC.Read.All_ | Microsoft Intune-RBAC-Einstellungen lesen (Vorschau) | Ermöglicht der App, die Eigenschaften bezüglich der Einstellungen der rollenbasierten Zugriffssteuerung (RBAC) von Microsoft Intune zu lesen. | Ja |
-| _DeviceManagementRBAC.ReadWrite.All_ | Microsoft Intune-RBAC-Einstellungen lesen und schreiben (Vorschau) | Ermöglicht der App, die Eigenschaften bezüglich der Einstellungen der rollenbasierten Zugriffssteuerung (RBAC) von Microsoft Intune zu lesen und zu schreiben. | Ja |
-| _DeviceManagementManagedDevices.Read.All_ | Microsoft Intune-Geräte lesen (Vorschau) | Ermöglicht der App, die Eigenschaften der von Microsoft Intune verwalteten Geräte zu lesen. | Ja |
-| _DeviceManagementManagedDevices.ReadWrite.All_ | Microsoft Intune-Geräte lesen und schreiben (Vorschau) | Ermöglicht der App, die Eigenschaften der von Microsoft Intune verwalteten Geräte zu lesen und zu schreiben. Ermöglicht keine Operationen mit großen Auswirkungen, z. B. Remotezurücksetzen und Kennwortzurücksetzung am Gerät des Besitzers. | Ja |
-| _DeviceManagementManagedDevices.PrivilegedOperations.All_ | Remoteaktionen mit Auswirkungen auf den Benutzer auf Microsoft Intune-Geräten durchführen (Vorschau) | Ermöglicht der App, Remoteaktionen mit großen Auswirkungen durchzuführen, z. B. das Zurücksetzen des Geräts oder der Kennung auf Geräten, die von Microsoft Intune verwaltet werden. | Ja |
+Keine.
 
-### <a name="remarks"></a>Hinweise
+### <a name="remarks"></a>HinwBemerkungeneise
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
 Diese Berechtigungen gelten nur für Geschäfts-, Schul- oder Unikonten.
@@ -306,15 +306,18 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 | _Group.ReadWrite.All_ | Schreib-/Lesezugriff auf alle Gruppen | Die App kann Gruppen erstellen, Gruppenmitgliedschaften lesen und aktualisieren und Gruppen löschen. Alle diese Vorgänge können von der App ohne angemeldeten Benutzer ausgeführt werden. Beachten Sie, dass nicht alle Gruppen-APIs Zugriff über Nur-App-Berechtigungen unterstützen. Beispiele finden Sie unter [Bekannte Probleme](../concepts/known_issues.md).| Ja |
 
 
-### <a name="remarks"></a>Bemerkungen
+### <a name="remarks"></a>Hinweise
 
-Gruppenfunktionen werden für Microsoft-Konten nicht unterstützt. 
+Gruppenfunktionen werden für persönliche Microsoft-Konten nicht unterstützt. 
 
-Für Office 365-Gruppen gewähren Gruppenberechtigungen der App Zugriff auf den Inhalt der Gruppe, z. B. Unterhaltungen, Dateien, Notizen usw. Gruppenberechtigungen werden auch verwendet, um den Zugriff auf [Microsoft Planner](../api-reference/beta/resources/planner_overview.md)-Ressourcen und -APIs zu steuern.
+Für Office 365-Gruppen gewähren Gruppenberechtigungen der App Zugriff auf den Inhalt der Gruppe, z. B. Unterhaltungen, Dateien, Notizen usw. 
 
 Im Hinblick auf Anwendungsberechtigungen gelten einige Einschränkungen für die unterstützten APIs. Weitere Informationen finden Sie unter [bekannte Probleme](../concepts/known_issues.md).
 
 In einigen Fällen benötigt eine App eventuell [Verzeichnisberechtigungen](#directory-permissions), um einige Gruppeneigenschaften wie `member` und `memberOf` zu lesen. Wenn eine Gruppe z. B. einen oder mehrere [servicePrincipals](../api-reference/beta/resources/serviceprincipal.md) als Mitglieder besitzt, benötigt die App effektive Berechtigungen zum Lesen von Dienstprinzipalen, indem ihr eine der Berechtigungen vom Typ _Directory.\*_ gewährt wird, andernfalls gibt Microsoft Graph einen Fehler zurück. (Im Fall von delegierten Berechtigungen benötigt der angemeldete Benutzer außerdem ausreichende Rechte in der Organisation zum Lesen von Dienstprinzipalen.) Dasselbe gilt für die Eigenschaft `memberOf`, die [administrativeUnits](../api-reference/beta/resources/administrativeunit.md) zurückgeben kann.
+
+Gruppenberechtigungen werden auch verwendet, um den Zugriff auf [Microsoft Planner](../api-reference/beta/resources/planner_overview.md)-Ressourcen und -APIs zu steuern. Nur delegierte Berechtigungen werden für Microsoft Planner-APIs unterstützt; Anwendungsberechtigungen werden nicht unterstützt. Persönliche Microsoft-Konten werden nicht unterstützt.
+
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
 #### <a name="delegated"></a>Delegiert
@@ -592,9 +595,12 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
-Keine.
+|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Sites.Read.All_ |    Elemente in allen Websitesammlungen lesen (Vorschau) | Die App kann Dokumente und Listenelemente in allen Websitesammlungen ohne angemeldeten Benutzer lesen. | Ja |
+| _Sites.ReadWrite.All_ |    Lese-/Schreibzugriff auf Elemente in allen Websitesammlungen (Vorschau) | Die App kann Dokumente und Listenelemente in allen Websitesammlungen ohne angemeldeten Benutzer erstellen, lesen, aktualisieren und löschen. | Ja |
 
-### <a name="remarks"></a>Bemerkungen
+### <a name="remarks"></a>HinwBemerkungeneise
 Websiteberechtigungen gelten nur für Geschäfts-, Schul- oder Unikonten.
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
@@ -602,7 +608,6 @@ Websiteberechtigungen gelten nur für Geschäfts-, Schul- oder Unikonten.
 
 * _Sites.Read.All_: Die Listen auf der SharePoint-Stammwebsite lesen (`GET /beta/sharePoint/site/lists`)
 * _Sites.ReadWrite.All_: Neue Listenelemente in einer SharePoint-Liste erstellen (`POST /beta/sharePoint/site/lists/123/items`)
-
 
 Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 

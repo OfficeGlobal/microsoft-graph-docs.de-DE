@@ -32,21 +32,21 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.|
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit der Erstellung des Abschnitts. Der Zeitstempel stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
-|id|String|Der eindeutige Bezeichner des Abschnitts.  Schreibgeschützt.|
-|isDefault|Boolean|Gibt an, ob dies der Standardabschnitt des Benutzers ist. Schreibgeschützt.|
+|id|Zeichenfolge|Der eindeutige Bezeichner des Abschnitts.  Schreibgeschützt.|
+|isDefault|Boolescher Wert|Gibt an, ob dies der Standardabschnitt des Benutzers ist. Schreibgeschützt.|
 |lastModifiedBy|[identitySet](identityset.md)|Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.|
 |lastModifiedDateTime|DateTimeOffset|Das Datum und die Uhrzeit der letzten Änderung des Abschnitts. Der Zeitstempel stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
 |links|[SectionLinks](sectionlinks.md)|Links zum Öffnen des Abschnitts. Der Link `oneNoteClientURL` öffnet den Abschnitt im systemeigenen OneNote-Client, sofern er installiert ist. Der Link `oneNoteWebURL` öffnet den Abschnitt in OneNote Online.|
 |displayName|String|Der Name des Abschnitts. |
 |pagesUrl|String|Der Endpunkt `pages`, an dem Sie Details für alle Seiten im Abschnitt abrufen können. Schreibgeschützt.|
-|self|String|Der Endpunkt, an dem Sie Details zum Abschnitt abrufen können. Schreibgeschützt.|
+|self|Zeichenfolge|Der Endpunkt, an dem Sie Details zum Abschnitt abrufen können. Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |pages|[Page](page.md)-Sammlung|Ruft die Sammlung von Seiten in dem Abschnitt ab.  Schreibgeschützt. Lässt Nullwerte zu.|
 |parentNotebook|[Notebook](notebook.md)|Das Notizbuch, das den Abschnitt enthält.  Schreibgeschützt.|
@@ -61,7 +61,6 @@ Es folgt eine JSON-Darstellung der Ressource.
 |[Seiten auflisten](../api/section_list_pages.md) |[Page](page.md)-Sammlung| Dient zum Abrufen einer Sammlung von Seiten im angegebenen Abschnitt.|
 |[copyToNotebook](../api/section_copytonotebook.md)|Keine|Dient zum Kopieren des Abschnitts in ein bestimmtes Notizbuch.|
 |[copyToSectionGroup](../api/section_copytosectiongroup.md)|Keine|Dient zum Kopieren des Abschnitts in eine bestimmte Abschnittsgruppe.|
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
