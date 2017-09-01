@@ -1,5 +1,46 @@
-<span data-ttu-id="7a994-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="7a994-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+# <a name="nameditem-range"></a><span data-ttu-id="f6059-101">NamedItem: Range</span><span class="sxs-lookup"><span data-stu-id="f6059-101">NamedItem: Range</span></span>
+
+<span data-ttu-id="f6059-p101">Ruft das Bereichsobjekt ab, das mit dem Namen verknüpft ist. Gibt eine Ausnahme zurück, wenn der Typ des benannten Elements kein Bereich ist.</span><span class="sxs-lookup"><span data-stu-id="f6059-p101">Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.</span></span>
+## <a name="permissions"></a><span data-ttu-id="f6059-104">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="f6059-104">Permissions</span></span>
+<span data-ttu-id="f6059-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="f6059-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="f6059-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="f6059-107">Permission type</span></span>      | <span data-ttu-id="f6059-108">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="f6059-108">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="f6059-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="f6059-109">Delegated (work or school account)</span></span> | <span data-ttu-id="f6059-110">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f6059-110">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="f6059-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="f6059-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f6059-112">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="f6059-112">Not supported.</span></span>    |
+|<span data-ttu-id="f6059-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="f6059-113">Application</span></span> | <span data-ttu-id="f6059-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="f6059-114">Not supported.</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="f6059-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="f6059-115">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /workbook/names(<name>)/Range
+
+```
+## <a name="request-headers"></a><span data-ttu-id="f6059-116">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="f6059-116">Request headers</span></span>
+| <span data-ttu-id="f6059-117">Name</span><span class="sxs-lookup"><span data-stu-id="f6059-117">Name</span></span>       | <span data-ttu-id="f6059-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f6059-118">Description</span></span>|
+|:---------------|:----------|
+| <span data-ttu-id="f6059-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="f6059-119">Authorization</span></span>  | <span data-ttu-id="f6059-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="f6059-p103">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="f6059-122">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="f6059-122">Request body</span></span>
+
+## <a name="response"></a><span data-ttu-id="f6059-123">Antwort</span><span class="sxs-lookup"><span data-stu-id="f6059-123">Response</span></span>
+
+<span data-ttu-id="f6059-124">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [Range](../resources/range.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="f6059-124">If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="f6059-125">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f6059-125">Example</span></span>
+<span data-ttu-id="f6059-126">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="f6059-126">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="f6059-127">Anforderung</span><span class="sxs-lookup"><span data-stu-id="f6059-127">Request</span></span>
+<span data-ttu-id="f6059-128">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="f6059-128">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "nameditem_range"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/Range
+```
+
+##### <a name="response"></a><span data-ttu-id="f6059-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="f6059-129">Response</span></span>
+<span data-ttu-id="f6059-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="f6059-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

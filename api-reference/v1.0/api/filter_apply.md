@@ -1,11 +1,42 @@
-<span data-ttu-id="b879c-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="b879c-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+# <a name="filter-apply"></a><span data-ttu-id="d1026-101">Filter: apply</span><span class="sxs-lookup"><span data-stu-id="d1026-101">Filter: apply</span></span>
 
-Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
+<span data-ttu-id="d1026-102">Wendet die angegebenen Filterkriterien in der angegebenen Spalte an.</span><span class="sxs-lookup"><span data-stu-id="d1026-102">Apply the given filter criteria on the given column.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d1026-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="d1026-103">Permissions</span></span>
+<span data-ttu-id="d1026-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="d1026-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="b879c-124">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b879c-124">Example</span></span>
-<span data-ttu-id="b879c-125">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="b879c-125">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="b879c-126">Anforderung</span><span class="sxs-lookup"><span data-stu-id="b879c-126">Request</span></span>
-<span data-ttu-id="b879c-127">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="b879c-127">Here is an example of the request.</span></span>
+|<span data-ttu-id="d1026-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="d1026-106">Permission type</span></span>      | <span data-ttu-id="d1026-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="d1026-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="d1026-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="d1026-108">Delegated (work or school account)</span></span> | <span data-ttu-id="d1026-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d1026-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="d1026-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="d1026-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d1026-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="d1026-111">Not supported.</span></span>    |
+|<span data-ttu-id="d1026-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="d1026-112">Application</span></span> | <span data-ttu-id="d1026-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="d1026-113">Not supported.</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="d1026-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="d1026-114">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /workbook/tables/{id|name}/columns/{id|name}/filter/apply
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/apply
+
+```
+## <a name="request-headers"></a><span data-ttu-id="d1026-115">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="d1026-115">Request headers</span></span>
+| <span data-ttu-id="d1026-116">Name</span><span class="sxs-lookup"><span data-stu-id="d1026-116">Name</span></span>       | <span data-ttu-id="d1026-117">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d1026-117">Description</span></span>|
+|:---------------|:----------|
+| <span data-ttu-id="d1026-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="d1026-118">Authorization</span></span>  | <span data-ttu-id="d1026-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="d1026-p102">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="d1026-121">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="d1026-121">Request body</span></span>
+<span data-ttu-id="d1026-122">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="d1026-122">In the request body, provide a JSON object with the following parameters.</span></span>
+
+| <span data-ttu-id="d1026-123">Parameter</span><span class="sxs-lookup"><span data-stu-id="d1026-123">Parameter</span></span>    | <span data-ttu-id="d1026-124">Typ</span><span class="sxs-lookup"><span data-stu-id="d1026-124">Type</span></span>   |<span data-ttu-id="d1026-125">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d1026-125">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="d1026-126">criteria</span><span class="sxs-lookup"><span data-stu-id="d1026-126">criteria</span></span>|<span data-ttu-id="d1026-127">FilterCriteria</span><span class="sxs-lookup"><span data-stu-id="d1026-127">FilterCriteria</span></span>|<span data-ttu-id="d1026-128">Die Kriterien, die angewendet werden sollen.</span><span class="sxs-lookup"><span data-stu-id="d1026-128">The criteria to apply.</span></span>|
+
+## <a name="response"></a><span data-ttu-id="d1026-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="d1026-129">Response</span></span>
+
+<span data-ttu-id="d1026-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="d1026-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="d1026-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d1026-132">Example</span></span>
+<span data-ttu-id="d1026-133">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="d1026-133">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="d1026-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="d1026-134">Request</span></span>
+<span data-ttu-id="d1026-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="d1026-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "filter_apply"
@@ -34,8 +65,8 @@ Content-length: 321
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="b879c-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="b879c-128">Response</span></span>
-<span data-ttu-id="b879c-129">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="b879c-129">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="d1026-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="d1026-136">Response</span></span>
+<span data-ttu-id="d1026-137">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="d1026-137">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

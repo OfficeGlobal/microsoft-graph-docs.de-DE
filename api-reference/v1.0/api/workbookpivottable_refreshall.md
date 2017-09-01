@@ -1,11 +1,37 @@
-<span data-ttu-id="a913a-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="a913a-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+# <a name="workbookpivottable-refreshall"></a><span data-ttu-id="3ab6d-101">workbookPivotTable: refreshAll</span><span class="sxs-lookup"><span data-stu-id="3ab6d-101">workbookPivotTable: refreshAll</span></span>
 
-Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
+<span data-ttu-id="3ab6d-102">Aktualisiert das PivotTable-Objekt in einem gegebenen Arbeitsblatt.</span><span class="sxs-lookup"><span data-stu-id="3ab6d-102">Refreshes the PivotTable within a given worksheet.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a913a-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="a913a-119">Example</span></span>
-<span data-ttu-id="a913a-120">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="a913a-120">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="a913a-121">Anforderung</span><span class="sxs-lookup"><span data-stu-id="a913a-121">Request</span></span>
-<span data-ttu-id="a913a-122">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="a913a-122">Here is an example of the request.</span></span>
+## <a name="permissions"></a><span data-ttu-id="3ab6d-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="3ab6d-103">Permissions</span></span>
+<span data-ttu-id="3ab6d-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="3ab6d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="3ab6d-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="3ab6d-106">Permission type</span></span>      | <span data-ttu-id="3ab6d-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="3ab6d-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="3ab6d-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="3ab6d-108">Delegated (work or school account)</span></span> | <span data-ttu-id="3ab6d-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3ab6d-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="3ab6d-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="3ab6d-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3ab6d-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="3ab6d-111">Not supported.</span></span>    |
+|<span data-ttu-id="3ab6d-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="3ab6d-112">Application</span></span> | <span data-ttu-id="3ab6d-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="3ab6d-113">Not supported.</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="3ab6d-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="3ab6d-114">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
+
+```
+## <a name="request-headers"></a><span data-ttu-id="3ab6d-115">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="3ab6d-115">Request headers</span></span>
+| <span data-ttu-id="3ab6d-116">Name</span><span class="sxs-lookup"><span data-stu-id="3ab6d-116">Name</span></span>       | <span data-ttu-id="3ab6d-117">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3ab6d-117">Description</span></span>|
+|:---------------|:----------|
+| <span data-ttu-id="3ab6d-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="3ab6d-118">Authorization</span></span>  | <span data-ttu-id="3ab6d-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="3ab6d-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3ab6d-121">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="3ab6d-121">Workbook-Session-Id</span></span>  | <span data-ttu-id="3ab6d-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="3ab6d-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="3ab6d-124">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="3ab6d-124">Request body</span></span>
+
+### <a name="response"></a><span data-ttu-id="3ab6d-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="3ab6d-125">Response</span></span>
+<span data-ttu-id="3ab6d-p104">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="3ab6d-p104">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="3ab6d-128">Beispiel</span><span class="sxs-lookup"><span data-stu-id="3ab6d-128">Example</span></span>
+<span data-ttu-id="3ab6d-129">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="3ab6d-129">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="3ab6d-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="3ab6d-130">Request</span></span>
+<span data-ttu-id="3ab6d-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="3ab6d-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "workbookpivottable_refreshall"
@@ -14,8 +40,8 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückge
 POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
 ```
 
-##### <a name="response"></a><span data-ttu-id="a913a-123">Antwort</span><span class="sxs-lookup"><span data-stu-id="a913a-123">Response</span></span>
-<span data-ttu-id="a913a-124">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="a913a-124">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="3ab6d-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="3ab6d-132">Response</span></span>
+<span data-ttu-id="3ab6d-133">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="3ab6d-133">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

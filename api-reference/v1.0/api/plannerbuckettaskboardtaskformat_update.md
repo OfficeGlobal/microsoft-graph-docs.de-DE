@@ -1,5 +1,58 @@
-<span data-ttu-id="feb59-p106">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="feb59-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+# <a name="update-plannerbuckettaskboardtaskformat"></a><span data-ttu-id="08ea9-101">plannerBucketTaskBoardTaskFormat aktualisieren</span><span class="sxs-lookup"><span data-stu-id="08ea9-101">Update plannerBucketTaskBoardTaskFormat</span></span>
+
+<span data-ttu-id="08ea9-102">Dient zum Aktualisieren der Eigenschaften eines **plannerBucketTaskBoardTaskFormat**-Objekts.</span><span class="sxs-lookup"><span data-stu-id="08ea9-102">Update the properties of **plannerBucketTaskBoardTaskFormat** object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="08ea9-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="08ea9-103">Permissions</span></span>
+<span data-ttu-id="08ea9-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="08ea9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="08ea9-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="08ea9-106">Permission type</span></span>      | <span data-ttu-id="08ea9-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="08ea9-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="08ea9-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="08ea9-108">Delegated (work or school account)</span></span> | <span data-ttu-id="08ea9-109">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="08ea9-109">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="08ea9-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="08ea9-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="08ea9-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="08ea9-111">Not supported.</span></span>    |
+|<span data-ttu-id="08ea9-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="08ea9-112">Application</span></span> | <span data-ttu-id="08ea9-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="08ea9-113">Not supported.</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="08ea9-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="08ea9-114">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /planner/tasks/<id>/bucketTaskBoardFormat
+```
+## <a name="optional-request-headers"></a><span data-ttu-id="08ea9-115">Optionale Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="08ea9-115">Optional request headers</span></span>
+| <span data-ttu-id="08ea9-116">Name</span><span class="sxs-lookup"><span data-stu-id="08ea9-116">Name</span></span>       | <span data-ttu-id="08ea9-117">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="08ea9-117">Description</span></span>|
+|:-----------|:-----------|
+| <span data-ttu-id="08ea9-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="08ea9-118">Authorization</span></span>  | <span data-ttu-id="08ea9-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="08ea9-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="08ea9-121">If-Match</span><span class="sxs-lookup"><span data-stu-id="08ea9-121">If-Match</span></span>  | <span data-ttu-id="08ea9-p103">Letzter bekannter ETag-Wert für das zu aktualisierende **plannerBucketTaskBoardTaskFormat**-Objekt. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="08ea9-p103">Last known ETag value for the **plannerBucketTaskBoardTaskFormat** to be updated. Required.</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="08ea9-124">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="08ea9-124">Request body</span></span>
+<span data-ttu-id="08ea9-p104">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.</span><span class="sxs-lookup"><span data-stu-id="08ea9-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+
+| <span data-ttu-id="08ea9-128">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="08ea9-128">Property</span></span>     | <span data-ttu-id="08ea9-129">Typ</span><span class="sxs-lookup"><span data-stu-id="08ea9-129">Type</span></span>   |<span data-ttu-id="08ea9-130">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="08ea9-130">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="08ea9-131">orderHint</span><span class="sxs-lookup"><span data-stu-id="08ea9-131">orderHint</span></span>|<span data-ttu-id="08ea9-132">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="08ea9-132">String</span></span>|<span data-ttu-id="08ea9-p105">Hinweis, der zum Anordnen von Aufgaben in der Ansicht „Buckets“ des Task Board verwendet wird. Das Format ist wie [hier](../resources/planner_order_hint_format.md) beschrieben definiert.</span><span class="sxs-lookup"><span data-stu-id="08ea9-p105">Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined [here](../resources/planner_order_hint_format.md).</span></span>|
+
+## <a name="response"></a><span data-ttu-id="08ea9-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="08ea9-135">Response</span></span>
+
+<span data-ttu-id="08ea9-136">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [plannerBucketTaskBoardTaskFormat](../resources/plannerbuckettaskboardtaskformat.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="08ea9-136">If successful, this method returns a `200 OK` response code and updated [plannerBucketTaskBoardTaskFormat](../resources/plannerbuckettaskboardtaskformat.md) object in the response body.</span></span>
+
+<span data-ttu-id="08ea9-p106">Diese Methode kann einen beliebigen [HTTP-Statuscode](../../../concepts/errors.md) zurückgeben. Die häufigsten Fehler, die Apps für diese Methode behandeln sollten, sind die Antworten 400, 403, 404, 409 und 412. Weitere Informationen zu diesen Fehlern finden Sie unter [Häufige Planner-Fehlerbedingungen](../resources/planner_overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="08ea9-p106">This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).</span></span>
+
+## <a name="example"></a><span data-ttu-id="08ea9-140">Beispiel</span><span class="sxs-lookup"><span data-stu-id="08ea9-140">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="08ea9-141">Anforderung</span><span class="sxs-lookup"><span data-stu-id="08ea9-141">Request</span></span>
+<span data-ttu-id="08ea9-142">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="08ea9-142">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "update_plannerbuckettaskboardtaskformat"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/planner/tasks/hsOf2dhOJkqyYYZEtdzDe2QAIUCR/bucketTaskBoardFormat
+Content-type: application/json
+Content-length: 34
+If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
+
+{
+  "orderHint": "A6673H Ejkl!"
+}
+```
+##### <a name="response"></a><span data-ttu-id="08ea9-143">Antwort</span><span class="sxs-lookup"><span data-stu-id="08ea9-143">Response</span></span>
+<span data-ttu-id="08ea9-p107">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="08ea9-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

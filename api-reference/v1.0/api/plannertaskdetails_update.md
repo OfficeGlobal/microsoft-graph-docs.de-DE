@@ -1,5 +1,86 @@
-<span data-ttu-id="bc7d5-p106">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="bc7d5-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+# <a name="update-plannertaskdetails"></a><span data-ttu-id="ed7c9-101">plannertaskdetails aktualisieren</span><span class="sxs-lookup"><span data-stu-id="ed7c9-101">Update plannertaskdetails</span></span>
+
+<span data-ttu-id="ed7c9-102">Dient zum Aktualisieren der Eigenschaften eines **plannertaskdetails**-Objekts.</span><span class="sxs-lookup"><span data-stu-id="ed7c9-102">Update the properties of **plannertaskdetails** object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="ed7c9-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="ed7c9-103">Permissions</span></span>
+<span data-ttu-id="ed7c9-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="ed7c9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="ed7c9-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="ed7c9-106">Permission type</span></span>      | <span data-ttu-id="ed7c9-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="ed7c9-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="ed7c9-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="ed7c9-108">Delegated (work or school account)</span></span> | <span data-ttu-id="ed7c9-109">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ed7c9-109">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ed7c9-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="ed7c9-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ed7c9-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ed7c9-111">Not supported.</span></span>    |
+|<span data-ttu-id="ed7c9-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="ed7c9-112">Application</span></span> | <span data-ttu-id="ed7c9-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ed7c9-113">Not supported.</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="ed7c9-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="ed7c9-114">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /planner/tasks/<id>/details
+```
+## <a name="optional-request-headers"></a><span data-ttu-id="ed7c9-115">Optionale Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="ed7c9-115">Optional request headers</span></span>
+| <span data-ttu-id="ed7c9-116">Name</span><span class="sxs-lookup"><span data-stu-id="ed7c9-116">Name</span></span>       | <span data-ttu-id="ed7c9-117">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ed7c9-117">Description</span></span>|
+|:-----------|:-----------|
+| <span data-ttu-id="ed7c9-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="ed7c9-118">Authorization</span></span>  | <span data-ttu-id="ed7c9-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="ed7c9-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ed7c9-121">If-Match</span><span class="sxs-lookup"><span data-stu-id="ed7c9-121">If-Match</span></span>  | <span data-ttu-id="ed7c9-p103">Letzter bekannter ETag-Wert für das zu aktualisierende **plannerTaskDetails**-Objekt. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="ed7c9-p103">Last known ETag value for the **plannerTaskDetails** to be updated. Required.</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="ed7c9-124">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="ed7c9-124">Request body</span></span>
+<span data-ttu-id="ed7c9-p104">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.</span><span class="sxs-lookup"><span data-stu-id="ed7c9-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+
+| <span data-ttu-id="ed7c9-128">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="ed7c9-128">Property</span></span>     | <span data-ttu-id="ed7c9-129">Typ</span><span class="sxs-lookup"><span data-stu-id="ed7c9-129">Type</span></span>   |<span data-ttu-id="ed7c9-130">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ed7c9-130">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="ed7c9-131">checklist</span><span class="sxs-lookup"><span data-stu-id="ed7c9-131">checklist</span></span>|[<span data-ttu-id="ed7c9-132">plannerChecklistItems</span><span class="sxs-lookup"><span data-stu-id="ed7c9-132">plannerChecklistItems</span></span>](../resources/plannerchecklistitems.md)|<span data-ttu-id="ed7c9-133">Die Sammlung von Checklistenelementen für die Aufgabe.</span><span class="sxs-lookup"><span data-stu-id="ed7c9-133">The collection of checklist items on the task.</span></span>|
+|<span data-ttu-id="ed7c9-134">description</span><span class="sxs-lookup"><span data-stu-id="ed7c9-134">description</span></span>|<span data-ttu-id="ed7c9-135">String</span><span class="sxs-lookup"><span data-stu-id="ed7c9-135">String</span></span>|<span data-ttu-id="ed7c9-136">Beschreibung der Aufgabe.</span><span class="sxs-lookup"><span data-stu-id="ed7c9-136">Description of the task</span></span>|
+|<span data-ttu-id="ed7c9-137">previewType</span><span class="sxs-lookup"><span data-stu-id="ed7c9-137">previewType</span></span>|<span data-ttu-id="ed7c9-138">string</span><span class="sxs-lookup"><span data-stu-id="ed7c9-138">string</span></span>|<span data-ttu-id="ed7c9-p105">Hierdurch wird der Typ der Vorschau festgelegt, die für die Aufgabe angezeigt wird. Mögliche Werte: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Bei Festlegung auf `automatic` wird die angezeigte Vorschau von der App ausgewählt, mit der die Aufgabe angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="ed7c9-p105">This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`. When set to `automatic` the displayed preview is chosen by the app viewing the task.</span></span>|
+|<span data-ttu-id="ed7c9-142">references</span><span class="sxs-lookup"><span data-stu-id="ed7c9-142">references</span></span>|[<span data-ttu-id="ed7c9-143">plannerExternalReferences</span><span class="sxs-lookup"><span data-stu-id="ed7c9-143">plannerExternalReferences</span></span>](../resources/plannerexternalreferences.md)|<span data-ttu-id="ed7c9-144">Die Sammlung der Verweise für die Aufgabe.</span><span class="sxs-lookup"><span data-stu-id="ed7c9-144">The collection of references on the task.</span></span>|
+
+## <a name="response"></a><span data-ttu-id="ed7c9-145">Antwort</span><span class="sxs-lookup"><span data-stu-id="ed7c9-145">Response</span></span>
+
+<span data-ttu-id="ed7c9-146">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [plannerTaskDetails](../resources/plannertaskdetails.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="ed7c9-146">If successful, this method returns a `200 OK` response code and updated [plannerTaskDetails](../resources/plannertaskdetails.md) object in the response body.</span></span>
+
+<span data-ttu-id="ed7c9-p106">Diese Methode kann einen beliebigen [HTTP-Statuscode](../../../concepts/errors.md) zurückgeben. Die häufigsten Fehler, die Apps für diese Methode behandeln sollten, sind die Antworten 400, 403, 404, 409 und 412. Weitere Informationen zu diesen Fehlern finden Sie unter [Häufige Planner-Fehlerbedingungen](../resources/planner_overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="ed7c9-p106">This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).</span></span>
+
+## <a name="example"></a><span data-ttu-id="ed7c9-150">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ed7c9-150">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ed7c9-151">Anforderung</span><span class="sxs-lookup"><span data-stu-id="ed7c9-151">Request</span></span>
+<span data-ttu-id="ed7c9-152">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="ed7c9-152">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "update_plannertaskdetails"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/planner/tasks/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/details
+Content-type: application/json
+Content-length: 857
+If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
+
+{
+  "previewType": "noPreview",
+  "references": {
+    "http%3A//developer%2Emicrosoft%2Ecom":{
+      "@odata.type": "microsoft.graph.plannerExternalReference",
+      "alias": "Documentation",
+      "previewPriority": " !",
+      "type": "Other"
+    },
+    "https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer":{
+      "@odata.type": "microsoft.graph.plannerExternalReference",
+      "previewPriority": "  !!",
+    },
+    "http%3A//www%2Ebing%2Ecom": null
+  },
+  "checklist": {
+    "95e27074-6c4a-447a-aa24-9d718a0b86fa":{
+      "@odata.type": "microsoft.graph.plannerChecklistItem",
+      "title": "Update task details",
+      "ischecked": true
+    },
+    "d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff":{
+      "@odata.type": "microsoft.graph.plannerChecklistItem",
+      "isChecked": true,
+    },
+    "a93c93c5-10a6-4167-9551-8bafa09967a7": null
+  }
+}
+```
+##### <a name="response"></a><span data-ttu-id="ed7c9-153">Antwort</span><span class="sxs-lookup"><span data-stu-id="ed7c9-153">Response</span></span>
+<span data-ttu-id="ed7c9-p107">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="ed7c9-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,10 +1,10 @@
-# <a name="page-resource-type"></a>page-Ressourcentyp
+# <a name="page-resource-type"></a><span data-ttu-id="3fbf6-101">page-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="3fbf6-101">page resource type</span></span>
 
-Eine Seite in einem OneNote-Notizbuch.
+<span data-ttu-id="3fbf6-102">Eine Seite in einem OneNote-Notizbuch.</span><span class="sxs-lookup"><span data-stu-id="3fbf6-102">A page in a OneNote notebook.</span></span>
 
-## <a name="json-representation"></a>JSON-Darstellung
+## <a name="json-representation"></a><span data-ttu-id="3fbf6-103">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="3fbf6-103">JSON representation</span></span>
 
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="3fbf6-104">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="3fbf6-104">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -31,36 +31,35 @@ Es folgt eine JSON-Darstellung der Ressource.
 }
 
 ```
-## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+## <a name="properties"></a><span data-ttu-id="3fbf6-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="3fbf6-105">Properties</span></span>
+| <span data-ttu-id="3fbf6-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="3fbf6-106">Property</span></span>     | <span data-ttu-id="3fbf6-107">Typ</span><span class="sxs-lookup"><span data-stu-id="3fbf6-107">Type</span></span>   |<span data-ttu-id="3fbf6-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3fbf6-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|Inhalt|Stream|Der HTML-Inhalt der Seite.|
-|contentUrl|String|Die URL für die HTML-Inhalt der Seite.  Schreibgeschützt.|
-|createdByAppId|String|Der eindeutige Bezeichner der Anwendung, mit der die Seite erstellt wurde. Schreibgeschützt.|
-|createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit der Erstellung der Seite. Der Zeitstempel stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
-|id|String|Der eindeutige Bezeichner der Seite.  Schreibgeschützt.|
-|lastModifiedDateTime|DateTimeOffset|Das Datum und die Uhrzeit der letzten Änderung der Seite. Der Zeitstempel stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
-|level|Int32|Die Einzugsebene der Seite. Schreibgeschützt.|
-|links|[PageLinks](pagelinks.md)|Links zum Öffnen der Seite. Der Link `oneNoteClientURL` öffnet die Seite im systemeigenen OneNote-Client, sofern er installiert ist. Der Link `oneNoteWebUrl` öffnet die Seite in OneNote Online. Schreibgeschützt.|
-|order|Int32|Die Anordnung der Seite im übergeordneten Abschnitt. Schreibgeschützt.|
-|self|String|Der Endpunkt, an dem Sie Details zur Seite abrufen können. Schreibgeschützt.|
-|title|String|Der Titel der Seite. |
+|<span data-ttu-id="3fbf6-109">Inhalt</span><span class="sxs-lookup"><span data-stu-id="3fbf6-109">content</span></span>|<span data-ttu-id="3fbf6-110">Stream</span><span class="sxs-lookup"><span data-stu-id="3fbf6-110">Stream</span></span>|<span data-ttu-id="3fbf6-111">Der HTML-Inhalt der Seite.</span><span class="sxs-lookup"><span data-stu-id="3fbf6-111">The page's HTML content.</span></span>|
+|<span data-ttu-id="3fbf6-112">contentUrl</span><span class="sxs-lookup"><span data-stu-id="3fbf6-112">contentUrl</span></span>|<span data-ttu-id="3fbf6-113">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="3fbf6-113">String</span></span>|<span data-ttu-id="3fbf6-p101">Die URL für die HTML-Inhalt der Seite.  Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="3fbf6-p101">The URL for the page's HTML content.  Read-only.</span></span>|
+|<span data-ttu-id="3fbf6-116">createdByAppId</span><span class="sxs-lookup"><span data-stu-id="3fbf6-116">createdByAppId</span></span>|<span data-ttu-id="3fbf6-117">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="3fbf6-117">String</span></span>|<span data-ttu-id="3fbf6-p102">Der eindeutige Bezeichner der Anwendung, mit der die Seite erstellt wurde. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="3fbf6-p102">The unique identifier of the application that created the page. Read-only.</span></span>|
+|<span data-ttu-id="3fbf6-120">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="3fbf6-120">createdDateTime</span></span>|<span data-ttu-id="3fbf6-121">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3fbf6-121">DateTimeOffset</span></span>|<span data-ttu-id="3fbf6-p103">Das Datum und die Uhrzeit der Erstellung der Seite. Der Zeitstempel stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="3fbf6-p103">The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.</span></span>|
+|<span data-ttu-id="3fbf6-126">id</span><span class="sxs-lookup"><span data-stu-id="3fbf6-126">id</span></span>|<span data-ttu-id="3fbf6-127">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="3fbf6-127">String</span></span>|<span data-ttu-id="3fbf6-p104">Der eindeutige Bezeichner der Seite.  Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="3fbf6-p104">The unique identifier of the page.  Read-only.</span></span>|
+|<span data-ttu-id="3fbf6-130">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="3fbf6-130">lastModifiedDateTime</span></span>|<span data-ttu-id="3fbf6-131">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3fbf6-131">DateTimeOffset</span></span>|<span data-ttu-id="3fbf6-p105">Das Datum und die Uhrzeit der letzten Änderung der Seite. Der Zeitstempel stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="3fbf6-p105">The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.</span></span>|
+|<span data-ttu-id="3fbf6-136">Ebene</span><span class="sxs-lookup"><span data-stu-id="3fbf6-136">level</span></span>|<span data-ttu-id="3fbf6-137">Int32</span><span class="sxs-lookup"><span data-stu-id="3fbf6-137">Int32</span></span>|<span data-ttu-id="3fbf6-p106">Die Einzugsebene der Seite. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="3fbf6-p106">The indentation level of the page. Read-only.</span></span>|
+|<span data-ttu-id="3fbf6-140">links</span><span class="sxs-lookup"><span data-stu-id="3fbf6-140">links</span></span>|[<span data-ttu-id="3fbf6-141">PageLinks</span><span class="sxs-lookup"><span data-stu-id="3fbf6-141">PageLinks</span></span>](pagelinks.md)|<span data-ttu-id="3fbf6-p107">Links zum Öffnen der Seite. Der Link `oneNoteClientURL` öffnet die Seite im systemeigenen OneNote-Client, sofern er installiert ist. Der Link `oneNoteWebUrl` öffnet die Seite in OneNote Online. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="3fbf6-p107">Links for opening the page. The `oneNoteClientURL` link opens the page in the OneNote native client if it 's installed. The `oneNoteWebUrl` link opens the page in OneNote Online. Read-only.</span></span>|
+|<span data-ttu-id="3fbf6-146">order</span><span class="sxs-lookup"><span data-stu-id="3fbf6-146">order</span></span>|<span data-ttu-id="3fbf6-147">Int32</span><span class="sxs-lookup"><span data-stu-id="3fbf6-147">Int32</span></span>|<span data-ttu-id="3fbf6-p108">Die Anordnung der Seite im übergeordneten Abschnitt. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="3fbf6-p108">The order of the page within its parent section. Read-only.</span></span>|
+|<span data-ttu-id="3fbf6-150">self</span><span class="sxs-lookup"><span data-stu-id="3fbf6-150">self</span></span>|<span data-ttu-id="3fbf6-151">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="3fbf6-151">String</span></span>|<span data-ttu-id="3fbf6-p109">Der Endpunkt, an dem Sie Details zur Seite abrufen können. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="3fbf6-p109">The endpoint where you can get details about the page. Read-only.</span></span>|
+|<span data-ttu-id="3fbf6-154">title</span><span class="sxs-lookup"><span data-stu-id="3fbf6-154">title</span></span>|<span data-ttu-id="3fbf6-155">String</span><span class="sxs-lookup"><span data-stu-id="3fbf6-155">String</span></span>|<span data-ttu-id="3fbf6-156">Der Titel der Seite.</span><span class="sxs-lookup"><span data-stu-id="3fbf6-156">The title of the page.</span></span> |
 
-## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+## <a name="relationships"></a><span data-ttu-id="3fbf6-157">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="3fbf6-157">Relationships</span></span>
+| <span data-ttu-id="3fbf6-158">Beziehung</span><span class="sxs-lookup"><span data-stu-id="3fbf6-158">Relationship</span></span> | <span data-ttu-id="3fbf6-159">Typ</span><span class="sxs-lookup"><span data-stu-id="3fbf6-159">Type</span></span>   |<span data-ttu-id="3fbf6-160">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3fbf6-160">Description</span></span>|
 |:---------------|:--------|:----------|
-|parentNotebook|[Notebook](notebook.md)|Das Notizbuch, das die Seite enthält.  Schreibgeschützt.|
-|parentSection|[Section](section.md)|Der Abschnitt, der die Seite enthält. Schreibgeschützt.|
+|<span data-ttu-id="3fbf6-161">parentNotebook</span><span class="sxs-lookup"><span data-stu-id="3fbf6-161">parentNotebook</span></span>|[<span data-ttu-id="3fbf6-162">Notebook</span><span class="sxs-lookup"><span data-stu-id="3fbf6-162">Notebook</span></span>](notebook.md)|<span data-ttu-id="3fbf6-p110">Das Notizbuch, das die Seite enthält.  Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="3fbf6-p110">The notebook that contains the page.  Read-only.</span></span>|
+|<span data-ttu-id="3fbf6-165">parentSection</span><span class="sxs-lookup"><span data-stu-id="3fbf6-165">parentSection</span></span>|[<span data-ttu-id="3fbf6-166">Section</span><span class="sxs-lookup"><span data-stu-id="3fbf6-166">Section</span></span>](section.md)|<span data-ttu-id="3fbf6-p111">Der Abschnitt, der die Seite enthält. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="3fbf6-p111">The section that contains the page. Read-only.</span></span>|
 
-## <a name="methods"></a>Methoden
+## <a name="methods"></a><span data-ttu-id="3fbf6-169">Methoden</span><span class="sxs-lookup"><span data-stu-id="3fbf6-169">Methods</span></span>
 
-| Methode           | Rückgabetyp    |Beschreibung|
+| <span data-ttu-id="3fbf6-170">Methode</span><span class="sxs-lookup"><span data-stu-id="3fbf6-170">Method</span></span>           | <span data-ttu-id="3fbf6-171">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="3fbf6-171">Return Type</span></span>    |<span data-ttu-id="3fbf6-172">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3fbf6-172">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Seite abrufen](../api/page_get.md) | [Page](page.md) |Dient zum Lesen der Eigenschaften und Beziehungen der Seite.|
-|[Seiteninhalt aktualisieren](../api/page_update.md) | Keine |Dient zum Aktualisieren des HTML-Inhalts der Seite. |
-|[Seite löschen](../api/page_delete.md) | Keine |Dient zum Löschen der Seite. |
-|[copyToSection](../api/page_copytosection.md)| Keine |Kopiert die Seite in einen bestimmten Abschnitt.|
-
+|[<span data-ttu-id="3fbf6-173">Seite abrufen</span><span class="sxs-lookup"><span data-stu-id="3fbf6-173">Get page</span></span>](../api/page_get.md) | [<span data-ttu-id="3fbf6-174">Page</span><span class="sxs-lookup"><span data-stu-id="3fbf6-174">Page</span></span>](page.md) |<span data-ttu-id="3fbf6-175">Dient zum Lesen der Eigenschaften und Beziehungen der Seite.</span><span class="sxs-lookup"><span data-stu-id="3fbf6-175">Read the properties and relationships of the page.</span></span>|
+|[<span data-ttu-id="3fbf6-176">Seiteninhalt aktualisieren</span><span class="sxs-lookup"><span data-stu-id="3fbf6-176">Update page content</span></span>](../api/page_update.md) | <span data-ttu-id="3fbf6-177">Keine</span><span class="sxs-lookup"><span data-stu-id="3fbf6-177">None</span></span> |<span data-ttu-id="3fbf6-178">Dient zum Aktualisieren des HTML-Inhalts der Seite.</span><span class="sxs-lookup"><span data-stu-id="3fbf6-178">Update the HTML content of the page.</span></span> |
+|[<span data-ttu-id="3fbf6-179">Seite löschen</span><span class="sxs-lookup"><span data-stu-id="3fbf6-179">Delete page</span></span>](../api/page_delete.md) | <span data-ttu-id="3fbf6-180">Keine</span><span class="sxs-lookup"><span data-stu-id="3fbf6-180">None</span></span> |<span data-ttu-id="3fbf6-181">Dient zum Löschen der Seite.</span><span class="sxs-lookup"><span data-stu-id="3fbf6-181">Delete the page.</span></span> |
+|[<span data-ttu-id="3fbf6-182">copyToSection</span><span class="sxs-lookup"><span data-stu-id="3fbf6-182">copyToSection</span></span>](../api/page_copytosection.md)| <span data-ttu-id="3fbf6-183">Keine</span><span class="sxs-lookup"><span data-stu-id="3fbf6-183">None</span></span> |<span data-ttu-id="3fbf6-184">Kopiert die Seite in einen bestimmten Abschnitt.</span><span class="sxs-lookup"><span data-stu-id="3fbf6-184">Copies the page to a specific section.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

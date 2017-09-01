@@ -1,12 +1,16 @@
-# <a name="range-clear"></a><span data-ttu-id="f0d93-101">Range: clear</span><span class="sxs-lookup"><span data-stu-id="f0d93-101">Range: clear</span></span>
+# <a name="range-clear"></a><span data-ttu-id="00610-101">Range: clear</span><span class="sxs-lookup"><span data-stu-id="00610-101">Range: clear</span></span>
 
-<span data-ttu-id="f0d93-102">Löscht Bereichswerte, Format, Füllung, Rahmen usw.</span><span class="sxs-lookup"><span data-stu-id="f0d93-102">Clear range values, format, fill, border, etc.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="f0d93-103">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="f0d93-103">Prerequisites</span></span>
-<span data-ttu-id="f0d93-104">Die folgenden **Bereiche** sind erforderlich, um diese API auszuführen:</span><span class="sxs-lookup"><span data-stu-id="f0d93-104">The following **scopes** are required to execute this API:</span></span> 
+<span data-ttu-id="00610-102">Löschen von Bereichswerten, Format, Füllung, Rahmen usw.</span><span class="sxs-lookup"><span data-stu-id="00610-102">Clear range values, format, fill, border, etc.</span></span>
+## <a name="permissions"></a><span data-ttu-id="00610-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="00610-103">Permissions</span></span>
+<span data-ttu-id="00610-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="00610-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-    * <span data-ttu-id="f0d93-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f0d93-105">Files.ReadWrite</span></span>
+|<span data-ttu-id="00610-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="00610-106">Permission type</span></span>      | <span data-ttu-id="00610-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="00610-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="00610-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="00610-108">Delegated (work or school account)</span></span> | <span data-ttu-id="00610-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="00610-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="00610-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="00610-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="00610-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="00610-111">Not supported.</span></span>    |
+|<span data-ttu-id="00610-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="00610-112">Application</span></span> | <span data-ttu-id="00610-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="00610-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f0d93-106">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="f0d93-106">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="00610-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="00610-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/clear
@@ -14,27 +18,26 @@ GET /workbook/worksheets/{id|name}/range(<address>)/clear
 GET /workbook/tables/{id|name}/columns/{id|name}/range/clear
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="f0d93-107">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="f0d93-107">Request headers</span></span>
-| <span data-ttu-id="f0d93-108">Name</span><span class="sxs-lookup"><span data-stu-id="f0d93-108">Name</span></span>       | <span data-ttu-id="f0d93-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f0d93-109">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="00610-115">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="00610-115">Request headers</span></span>
+| <span data-ttu-id="00610-116">Name</span><span class="sxs-lookup"><span data-stu-id="00610-116">Name</span></span>       | <span data-ttu-id="00610-117">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="00610-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="f0d93-110">Authorization</span><span class="sxs-lookup"><span data-stu-id="f0d93-110">Authorization</span></span>  | <span data-ttu-id="f0d93-p101">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="f0d93-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="00610-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="00610-118">Authorization</span></span>  | <span data-ttu-id="00610-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="00610-p102">Bearer {token}. Required.</span></span> |
 
+## <a name="request-body"></a><span data-ttu-id="00610-121">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="00610-121">Request body</span></span>
+<span data-ttu-id="00610-122">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="00610-122">In the request body, provide a JSON object with the following parameters.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="f0d93-113">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="f0d93-113">Request body</span></span>
-<span data-ttu-id="f0d93-114">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="f0d93-114">In the request body, provide a JSON object with the following parameters.</span></span>
-
-| <span data-ttu-id="f0d93-115">Parameter</span><span class="sxs-lookup"><span data-stu-id="f0d93-115">Parameter</span></span>    | <span data-ttu-id="f0d93-116">Typ</span><span class="sxs-lookup"><span data-stu-id="f0d93-116">Type</span></span>   |<span data-ttu-id="f0d93-117">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f0d93-117">Description</span></span>|
+| <span data-ttu-id="00610-123">Parameter</span><span class="sxs-lookup"><span data-stu-id="00610-123">Parameter</span></span>    | <span data-ttu-id="00610-124">Typ</span><span class="sxs-lookup"><span data-stu-id="00610-124">Type</span></span>   |<span data-ttu-id="00610-125">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="00610-125">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f0d93-118">applyTo</span><span class="sxs-lookup"><span data-stu-id="f0d93-118">applyTo</span></span>|<span data-ttu-id="f0d93-119">string</span><span class="sxs-lookup"><span data-stu-id="f0d93-119">string</span></span>|<span data-ttu-id="f0d93-p102">Optional. Bestimmt den Typ der Löschaktion.  Mögliche Werte: `All`, `Formats`, `Contents`.</span><span class="sxs-lookup"><span data-stu-id="f0d93-p102">Optional. Determines the type of clear action.  Possible values are: `All`, `Formats`, `Contents`.</span></span>|
+|<span data-ttu-id="00610-126">applyTo</span><span class="sxs-lookup"><span data-stu-id="00610-126">applyTo</span></span>|<span data-ttu-id="00610-127">string</span><span class="sxs-lookup"><span data-stu-id="00610-127">string</span></span>|<span data-ttu-id="00610-p103">Optional. Bestimmt den Typ der Löschaktion.  Mögliche Werte: `All`, `Formats`, `Contents`.</span><span class="sxs-lookup"><span data-stu-id="00610-p103">Optional. Determines the type of clear action.  Possible values are: `All`, `Formats`, `Contents`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="f0d93-123">Antwort</span><span class="sxs-lookup"><span data-stu-id="f0d93-123">Response</span></span>
+## <a name="response"></a><span data-ttu-id="00610-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="00610-131">Response</span></span>
 
-<span data-ttu-id="f0d93-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="f0d93-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="00610-p104">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="00610-p104">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f0d93-126">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f0d93-126">Example</span></span>
-<span data-ttu-id="f0d93-127">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="f0d93-127">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="f0d93-128">Anforderung</span><span class="sxs-lookup"><span data-stu-id="f0d93-128">Request</span></span>
-<span data-ttu-id="f0d93-129">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="f0d93-129">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="00610-134">Beispiel</span><span class="sxs-lookup"><span data-stu-id="00610-134">Example</span></span>
+<span data-ttu-id="00610-135">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="00610-135">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="00610-136">Anforderung</span><span class="sxs-lookup"><span data-stu-id="00610-136">Request</span></span>
+<span data-ttu-id="00610-137">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="00610-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_clear"
@@ -49,8 +52,8 @@ Content-length: 32
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="f0d93-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="f0d93-130">Response</span></span>
-<span data-ttu-id="f0d93-131">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="f0d93-131">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="00610-138">Antwort</span><span class="sxs-lookup"><span data-stu-id="00610-138">Response</span></span>
+<span data-ttu-id="00610-139">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="00610-139">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

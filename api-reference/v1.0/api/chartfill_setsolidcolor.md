@@ -1,11 +1,43 @@
-<span data-ttu-id="40ec0-p102">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="40ec0-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+# <a name="chartfill-setsolidcolor"></a><span data-ttu-id="5d26b-101">ChartFill: setSolidColor</span><span class="sxs-lookup"><span data-stu-id="5d26b-101">ChartFill: setSolidColor</span></span>
 
-Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
+<span data-ttu-id="5d26b-102">Legt die Füllung eines Diagrammelements auf einfarbige Füllung fest.</span><span class="sxs-lookup"><span data-stu-id="5d26b-102">Sets the fill formatting of a chart element to a uniform color.</span></span>
+## <a name="permissions"></a><span data-ttu-id="5d26b-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="5d26b-103">Permissions</span></span>
+<span data-ttu-id="5d26b-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="5d26b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="40ec0-124">Beispiel</span><span class="sxs-lookup"><span data-stu-id="40ec0-124">Example</span></span>
-<span data-ttu-id="40ec0-125">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="40ec0-125">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="40ec0-126">Anforderung</span><span class="sxs-lookup"><span data-stu-id="40ec0-126">Request</span></span>
-<span data-ttu-id="40ec0-127">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="40ec0-127">Here is an example of the request.</span></span>
+|<span data-ttu-id="5d26b-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="5d26b-106">Permission type</span></span>      | <span data-ttu-id="5d26b-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="5d26b-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="5d26b-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="5d26b-108">Delegated (work or school account)</span></span> | <span data-ttu-id="5d26b-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5d26b-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="5d26b-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="5d26b-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5d26b-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="5d26b-111">Not supported.</span></span>    |
+|<span data-ttu-id="5d26b-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="5d26b-112">Application</span></span> | <span data-ttu-id="5d26b-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="5d26b-113">Not supported.</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="5d26b-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="5d26b-114">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /workbook/worksheets/{id|name}/charts(<name>)/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts(<name>)/title/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/setSolidColor
+
+```
+## <a name="request-headers"></a><span data-ttu-id="5d26b-115">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="5d26b-115">Request headers</span></span>
+| <span data-ttu-id="5d26b-116">Name</span><span class="sxs-lookup"><span data-stu-id="5d26b-116">Name</span></span>       | <span data-ttu-id="5d26b-117">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="5d26b-117">Description</span></span>|
+|:---------------|:----------|
+| <span data-ttu-id="5d26b-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="5d26b-118">Authorization</span></span>  | <span data-ttu-id="5d26b-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="5d26b-p102">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="5d26b-121">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="5d26b-121">Request body</span></span>
+<span data-ttu-id="5d26b-122">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="5d26b-122">In the request body, provide a JSON object with the following parameters.</span></span>
+
+| <span data-ttu-id="5d26b-123">Parameter</span><span class="sxs-lookup"><span data-stu-id="5d26b-123">Parameter</span></span>    | <span data-ttu-id="5d26b-124">Typ</span><span class="sxs-lookup"><span data-stu-id="5d26b-124">Type</span></span>   |<span data-ttu-id="5d26b-125">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="5d26b-125">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="5d26b-126">color</span><span class="sxs-lookup"><span data-stu-id="5d26b-126">color</span></span>|<span data-ttu-id="5d26b-127">string</span><span class="sxs-lookup"><span data-stu-id="5d26b-127">string</span></span>|<span data-ttu-id="5d26b-128">HTML-Farbcode, der die Farbe der Rahmenlinie, des Formulars #RRGGBB (z. B.  „FFA500“) oder als benannte HTML-Farbe (z. B. „orange“) darstellt.</span><span class="sxs-lookup"><span data-stu-id="5d26b-128">HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").</span></span>|
+
+## <a name="response"></a><span data-ttu-id="5d26b-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="5d26b-129">Response</span></span>
+
+<span data-ttu-id="5d26b-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5d26b-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="5d26b-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="5d26b-132">Example</span></span>
+<span data-ttu-id="5d26b-133">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="5d26b-133">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="5d26b-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="5d26b-134">Request</span></span>
+<span data-ttu-id="5d26b-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="5d26b-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chartfill_setsolidcolor"
@@ -20,8 +52,8 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="40ec0-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="40ec0-128">Response</span></span>
-<span data-ttu-id="40ec0-129">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="40ec0-129">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="5d26b-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="5d26b-136">Response</span></span>
+<span data-ttu-id="5d26b-137">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="5d26b-137">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
