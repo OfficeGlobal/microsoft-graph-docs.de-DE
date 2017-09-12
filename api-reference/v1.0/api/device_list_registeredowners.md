@@ -3,10 +3,11 @@
 Dient zum Abrufen einer Liste von Benutzern, die registrierte Besitzer des Geräts sind.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](../../../concepts/permissions_reference.md).
-- *Device.ReadWrite.All* und *User.ReadBasic.All*
-- *Directory.Read.All*
-- *Directory.ReadWrite.All* 
-- *Directory.AccessAsUser.All*
+
+- Device.ReadWrite.All und User.ReadBasic.All
+- Directory.Read.All
+- Directory.ReadWrite.All 
+- Directory.AccessAsUser.All
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

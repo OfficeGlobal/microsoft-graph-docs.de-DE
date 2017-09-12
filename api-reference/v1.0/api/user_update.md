@@ -11,7 +11,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Delegiert (persönliches Microsoft-Konto) | User.ReadWrite    |
 |Anwendung | User.ReadWrite.All, Directory.ReadWrite.All |
 
-Zum Aktualisieren der Eigenschaft „passwordProfile“ ist der folgende Bereich erforderlich: Directory.AccessAsUser.All.
+Zum Aktualisieren der Eigenschaft „passwordProfile“ ist die folgende Berechtigung erforderlich: Directory.AccessAsUser.All.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
