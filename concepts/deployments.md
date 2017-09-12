@@ -1,52 +1,72 @@
-# <a name="sovereign-cloud-deployments"></a>Unabhängige Cloudbereitstellungen
+# <a name="national-cloud-deployments"></a><span data-ttu-id="b0a47-101">Nationale Cloudbereitstellungen</span><span class="sxs-lookup"><span data-stu-id="b0a47-101">National cloud deployments</span></span>
 
 
-Dieser Artikel enthält Informationen über die verschiedenen unabhängigen Cloudinstanzen von Microsoft Graph und die Features, die Entwicklern zur Verfügung stehen. 
+<span data-ttu-id="b0a47-p101">Microsoft Cloud-Dienste stehen in drei separaten nationalen Clouds zur Verfügung. Diese nationalen Cloudversionen sind physische und logische netzwerkisolierte Instanzen von Microsoft Enterprise Cloud Services, die an die geografischen Grenzen von bestimmten Ländern gebunden sind und von lokalen Mitarbeitern betrieben werden. Weitere Informationen hierzu finden Sie unter [Nationale Clouds von Microsoft](https://www.microsoft.com/en-us/TrustCenter/CloudServices/NationalCloud).</span><span class="sxs-lookup"><span data-stu-id="b0a47-p101">Microsoft cloud services are available in three separate national clouds. These national cloud versions are physical and logical network-isolated instances of Microsoft enterprise cloud services, which are confined within the geographic borders of specific countries and operated by local personnel. To learn more, see [Microsoft National Clouds](https://www.microsoft.com/en-us/TrustCenter/CloudServices/NationalCloud).</span></span>
 
+<span data-ttu-id="b0a47-105">Aktuelle nationale Wolken umfassen Folgendes:</span><span class="sxs-lookup"><span data-stu-id="b0a47-105">Current national clouds include:</span></span>
 
-## <a name="microsoft-graph-operated-by-21vianet-in-china"></a>Microsoft Graph betrieben von 21Vianet in China
+- <span data-ttu-id="b0a47-106">Microsoft Cloud for US Government</span><span class="sxs-lookup"><span data-stu-id="b0a47-106">Microsoft Cloud for US Government</span></span>
+- <span data-ttu-id="b0a47-107">Microsoft Cloud Deutschland</span><span class="sxs-lookup"><span data-stu-id="b0a47-107">Microsoft Cloud Germany</span></span>
+- <span data-ttu-id="b0a47-108">Azure und Office 365, betrieben von 21Vianet in China</span><span class="sxs-lookup"><span data-stu-id="b0a47-108">Submit apps for Office 365 operated by 21Vianet in China</span></span>
 
-Dieser Abschnitt enthält Informationen über Microsoft Graph betrieben von 21Vianet, und die Features, die Entwicklern zur Verfügung stehen. 
+<span data-ttu-id="b0a47-109">Dieser Artikel enthält Informationen über die unterschiedlichen nationalen Cloudbereitstellungen von Microsoft Graph und die Features in jeder Bereitstellung, die Entwicklern zur Verfügung stehen.</span><span class="sxs-lookup"><span data-stu-id="b0a47-109">This article provides information about the different sovereign cloud instances of Microsoft Graph and the capabilities that are available to developers.</span></span> 
 
-### <a name="microsoft-graph-service-root-endpoints"></a>Microsoft Graph-Dienststammendpunkte
-| Microsoft Graph betrieben von 21Vianet | Microsoft Graph|
+## <a name="microsoft-graph-and-microsoft-graph-explorer-service-root-endpoints"></a><span data-ttu-id="b0a47-110">Dienststammendpunkte von Microsoft Graph und Microsoft Graph-Tester</span><span class="sxs-lookup"><span data-stu-id="b0a47-110">Microsoft Graph and Microsoft Graph Explorer service root endpoints</span></span>
+
+<span data-ttu-id="b0a47-111">Die folgende Tabelle zeigt die Dienststammendpunkte für Microsoft Graph und Microsoft Graph-Tester für jede nationale Cloud.</span><span class="sxs-lookup"><span data-stu-id="b0a47-111">The following table shows the service root endpoints for Microsoft Graph and Microsoft Graph Explorer for each National cloud.</span></span> 
+
+| <span data-ttu-id="b0a47-112">Nationale Cloud</span><span class="sxs-lookup"><span data-stu-id="b0a47-112">National Cloud</span></span> | <span data-ttu-id="b0a47-113">Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="b0a47-113">Microsoft Graph</span></span> | <span data-ttu-id="b0a47-114">Microsoft Graph-Tester</span><span class="sxs-lookup"><span data-stu-id="b0a47-114">Microsoft Graph Explorer</span></span>
+|---------------------------|----------------|----------------|
+| <span data-ttu-id="b0a47-115">Microsoft Graph betrieben von 21Vianet</span><span class="sxs-lookup"><span data-stu-id="b0a47-115">Microsoft Graph operated by 21Vianet</span></span> | <span data-ttu-id="b0a47-116">https://microsoftgraph.chinacloudapi.cn</span><span class="sxs-lookup"><span data-stu-id="b0a47-116">https://microsoftgraph.chinacloudapi.cn</span></span> | <span data-ttu-id="b0a47-117">https://developer.microsoft.com/zh-cn/graph/graph-explorer-china</span><span class="sxs-lookup"><span data-stu-id="b0a47-117">https://developer.microsoft.com/zh-cn/graph/graph-explorer-china</span></span> |
+| <span data-ttu-id="b0a47-118">Microsoft Graph Deutschland</span><span class="sxs-lookup"><span data-stu-id="b0a47-118">Microsoft Graph Germany</span></span> | <span data-ttu-id="b0a47-119">https://graph.microsoft.de</span><span class="sxs-lookup"><span data-stu-id="b0a47-119">https://graph.microsoft.de</span></span> | <span data-ttu-id="b0a47-120">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="b0a47-120">Not supported.</span></span> |
+| <span data-ttu-id="b0a47-121">Microsoft Graph for US Government</span><span class="sxs-lookup"><span data-stu-id="b0a47-121">Microsoft Graph for US Government</span></span> | <span data-ttu-id="b0a47-122">https://graph.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="b0a47-122">https://graph.microsoft.com</span></span> | <span data-ttu-id="b0a47-123">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="b0a47-123">Not supported.</span></span> |
+| <span data-ttu-id="b0a47-124">Globaler Microsoft Graph-Dienst</span><span class="sxs-lookup"><span data-stu-id="b0a47-124">Microsoft Graph global service</span></span> | <span data-ttu-id="b0a47-125">https://graph.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="b0a47-125">https://graph.microsoft.com</span></span> | <span data-ttu-id="b0a47-126">https://developer.microsoft.com/graph/graph-explorer</span><span class="sxs-lookup"><span data-stu-id="b0a47-126">https://developer.microsoft.com/graph/graph-explorer</span></span> |
+
+> <span data-ttu-id="b0a47-p102">**Hinweis**: Apps können nur über die nationalen Cloudendpunkte auf Organisationsdaten zugreifen. Dies bedeutet, dass nur auf Daten in Mandanten zugegriffen werden kann, die in der jeweiligen nationalen Cloud registriert sind. Apps, die versuchen,über Microsoft Graph auf Benutzerdaten zuzugreifen, die persönlichen Microsoft-Konten zugeordnet sind, sollten den globalen Dienst (https://graph.microsoft.com) verwenden. Zugriffstoken, die für eine nationale Cloudbereitstellung erworben wurden, können nicht mit Token ausgetauscht werden, die für den globalen Dienst erworben wurden.</span><span class="sxs-lookup"><span data-stu-id="b0a47-p102">**Note**: Apps can only access organizational data through the national cloud endpoints. This means that only data in tenants registered in the specific national cloud can be accessed. Apps that are trying to access consumer data associated with personal Microsoft accounts through Microsoft Graph should use the global service (https://graph.microsoft.com). Access tokens acquired for a national cloud deployment are not interchangeable with those acquired for the global service.</span></span>
+
+## <a name="azure-ad-openid-connect-and-oauth20-endpoints"></a><span data-ttu-id="b0a47-131">Endpunkte für Azure AD OpenID Connect und OAuth2.0</span><span class="sxs-lookup"><span data-stu-id="b0a47-131">Azure OpenID Connect and OAuth2.0</span></span>
+
+<span data-ttu-id="b0a47-132">In der folgenden Tabelle sind die Basis-URLs für die Azure Active Directory (Azure AD)-Endpunkte aufgeführt, die zum Erwerben von Token zum Aufrufen von Microsoft Graph für jede nationale Cloud verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="b0a47-132">The following table lists the base URLs for the Azure Active Directory (Azure AD) endpoints used to acquire tokens to call Microsoft Graph for each national cloud.</span></span> 
+
+| <span data-ttu-id="b0a47-133">Nationale Cloud</span><span class="sxs-lookup"><span data-stu-id="b0a47-133">National Cloud</span></span> | <span data-ttu-id="b0a47-134">Azure AD-Stammendpunkt</span><span class="sxs-lookup"><span data-stu-id="b0a47-134">Azure AD endpoint</span></span> |
 |---------------------------|----------------|
-| https://microsoftgraph.chinacloudapi.cn | https://graph.microsoft.com|
+| <span data-ttu-id="b0a47-135">Microsoft Graph betrieben von 21Vianet</span><span class="sxs-lookup"><span data-stu-id="b0a47-135">Microsoft Graph operated by 21Vianet</span></span> |<span data-ttu-id="b0a47-136">https://login.chinacloudapi.cn</span><span class="sxs-lookup"><span data-stu-id="b0a47-136">https://login.chinacloudapi.cn</span></span> | 
+| <span data-ttu-id="b0a47-137">Microsoft Graph Deutschland</span><span class="sxs-lookup"><span data-stu-id="b0a47-137">Microsoft Graph Germany</span></span> | <span data-ttu-id="b0a47-138">https://login.microsoftonline.de</span><span class="sxs-lookup"><span data-stu-id="b0a47-138">https://login.microsoftonline.com</span></span> | 
+| <span data-ttu-id="b0a47-139">Microsoft Graph for US Government</span><span class="sxs-lookup"><span data-stu-id="b0a47-139">Microsoft Graph for US Government</span></span> | <span data-ttu-id="b0a47-140">https://login-us.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="b0a47-140">https://login-us.microsoftonline.com</span></span> | 
+| <span data-ttu-id="b0a47-141">Microsoft Graph (globaler Dienst)</span><span class="sxs-lookup"><span data-stu-id="b0a47-141">Microsoft Graph (global service)</span></span> | <span data-ttu-id="b0a47-142">https://login.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="b0a47-142">https://login.microsoftonline.com</span></span> | 
 
-### <a name="microsoft-graph-explorer"></a>Microsoft Graph-Explorer
-| Microsoft Graph-Explorer in China | Microsoft Graph-Tester|
-|---------------------------|----------------|
-|https://developer.microsoft.com/zh-cn/graph/graph-explorer-china| https://developer.microsoft.com/graph/graph-explorer|
+<span data-ttu-id="b0a47-p103">Anforderungen an die Azure AD-Autorisierungs- oder Tokenendpunkte können mit der entsprechenden regionsspezifischen Basis-URL gebildet werden. Beispiel für Deutschland:</span><span class="sxs-lookup"><span data-stu-id="b0a47-p103">Requests to the Azure AD authorization or token endpoints can be formed using the appropriate region-specific base URL. For example, for Germany:</span></span>
 
-### <a name="azure-openid-connect-and-oauth20"></a>Azure OpenID Connect und OAuth 2.0
-Die zum Erwerben von Tokens zum Anmelden bei oder Aufrufen von Microsoft Graph, betrieben von 21Vianet, verwendeten Endpunkte weichen von denen bei anderen Angeboten ab. 
+- <span data-ttu-id="b0a47-145">Der gemeinsame Autorisierungsendpunkt ist https://login.microsoftonline.de/common/oauth2/authorize.</span><span class="sxs-lookup"><span data-stu-id="b0a47-145">The authorization common endpoint is https://login.microsoftonline.de/common/oauth2/authorize.</span></span>
+- <span data-ttu-id="b0a47-146">Der gemeinsame Tokenendpunkt ist https://login.microsoftonline.de/common/oauth2/authorize.</span><span class="sxs-lookup"><span data-stu-id="b0a47-146">The token common endpoint is https://login.microsoftonline.de/common/oauth2/token.</span></span>
 
-| Microsoft Graph betrieben von 21Vianet | Microsoft Graph|
-|---------------------------|----------------|
-| https://login.chinacloudapi.cn | https://login.microsoftonline.com|
- 
-Verwenden Sie https://login.chinacloudapi.cn/common/oauth2/authorize zum Authentifizieren des Benutzers und https://login.chinacloudapi.cn/common/oauth2/token zum Abrufen eines Tokens für Ihre App, um Microsoft Graph betrieben von 21Vianet aufzurufen.
+<span data-ttu-id="b0a47-p104">Mandantenspezifische Endpunkte können gebildet werden, indem die allgemeine Variable in den URLs oben entweder durch die Mandanten-ID oder durch eine verifizierte Domäne für den Mandanten ersetzt wird. Ob Sie die allgemeinen oder mandantenspezifischen Endpunkte verwenden, ist von den Anforderungen Ihrer App und dem Authentifizierungsfluss abhängig, den Sie zum Abrufen von Token verwenden. Weitere Informationen zu Azure AD-Zugriffstoken und Microsoft Graph finden Sie unter [Authentifizierungstoken abrufen](./auth_overview.md).</span><span class="sxs-lookup"><span data-stu-id="b0a47-p104">Tenant-specific endpoints can be formed by replacing "common" in the URLs above with either the tenant ID or a verified domain for the tenant. Whether you use the common or tenant-specific endpoints will depend upon the requirements of your app and the authentication flow you are using to get tokens. To learn more about Azure AD access tokens and Microsoft Graph, see [Get auth tokens](./auth_overview.md).</span></span>
 
-> **Hinweis:** Die aktuellen [v2.0-Autorisierungs- und Tokenendpunkte](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview/) stehen NICHT zur Verwendung mit Microsoft Graph betrieben von 21Vianet zur Verfügung. 
+> <span data-ttu-id="b0a47-150">**Hinweis:** Die [Autorisierungs- und Tokenendpunkte von Azure AD, Version 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview/) sind nur für den globalen Dienst verfügbar. Sie werden noch nicht für die Verwendung mit nationalen Cloudbereitstellungen unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b0a47-150">**Note:** The [Azure AD v2.0 authorization and token endpoints](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview/) are available on the global service only; they are not yet supported for use with national cloud deployments.</span></span> 
 
->Apps können über den **https://microsoftgraph.chinacloudapi.cn**-Endpunkt nur auf Unternehmensdaten zugreifen, und nicht auf Kundendaten. Apps sollte den **https://graph.microsoft.com**-Endpunkt für den Zugriff auf Kundendaten verwenden.
+## <a name="supported-features"></a><span data-ttu-id="b0a47-151">Unterstützte Features</span><span class="sxs-lookup"><span data-stu-id="b0a47-151">Supported API features</span></span>
 
-### <a name="service-capabilities-offered-by-microsoft-graph-operated-by-21vianet"></a>Dienstfunktionen für Microsoft Graph betrieben von 21Vianet
-Die folgenden Features von Microsoft Graph sind allgemein verfügbar (auf dem `/v1.0`-Endpunkt):
+<span data-ttu-id="b0a47-152">Die folgenden Microsoft Graph-Features sind im Allgemeinen in allen nationalen Cloudbereitstellungen (im `/v1.0`-Endpunkt) verfügbar, sofern nicht anders angegeben:</span><span class="sxs-lookup"><span data-stu-id="b0a47-152">The following Microsoft Graph features are generally available (on the `/v1.0` endpoint) across all national cloud deployments, except where noted:</span></span>
 
-* Benutzer
-* Gruppen
-* Dateien
-* E-Mails
-* Kalender
-* Persönliche Kontakte 
-* CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren und Löschen)
-* CORS-Unterstützung (Cross-Origin Resource Sharing)
+* <span data-ttu-id="b0a47-153">Benutzer</span><span class="sxs-lookup"><span data-stu-id="b0a47-153">Users</span></span>
+* <span data-ttu-id="b0a47-154">Gruppen</span><span class="sxs-lookup"><span data-stu-id="b0a47-154">Groups</span></span>
+* <span data-ttu-id="b0a47-155">Excel (wird nur beschränkt auf Microsoft Graph, betrieben von 21Vianet in China, unterstützt)</span><span class="sxs-lookup"><span data-stu-id="b0a47-155">Excel (Support is limited on Microsoft Graph operated by 21Vianet in China.)</span></span>
+* <span data-ttu-id="b0a47-156">OneDrive (wird nur beschränkt auf Microsoft Graph, betrieben von 21Vianet in China, unterstützt)</span><span class="sxs-lookup"><span data-stu-id="b0a47-156">OneDrive (Support is limited on Microsoft Graph operated by 21Vianet in China.)</span></span>
+* <span data-ttu-id="b0a47-157">Outlook Mail</span><span class="sxs-lookup"><span data-stu-id="b0a47-157">Outlook mail</span></span>
+* <span data-ttu-id="b0a47-158">Outlook-Kalender</span><span class="sxs-lookup"><span data-stu-id="b0a47-158">Outlook Calendar</span></span>
+* <span data-ttu-id="b0a47-159">Private Kontakte</span><span class="sxs-lookup"><span data-stu-id="b0a47-159">Personal Contacts</span></span> 
+* <span data-ttu-id="b0a47-160">SharePoint (wird nur beschränkt auf Microsoft Graph, betrieben von 21Vianet in China, unterstützt)</span><span class="sxs-lookup"><span data-stu-id="b0a47-160">SharePoint (Support is limited on Microsoft Graph operated by 21Vianet in China.)</span></span>
+* <span data-ttu-id="b0a47-161">Delta-Abfrage (Support variiert bei verschiedenen Ressourcen in jeder nationalen Cloudbereitstellung).</span><span class="sxs-lookup"><span data-stu-id="b0a47-161">Delta query (Support varies across different resources on each national cloud deployment.)</span></span>
+* <span data-ttu-id="b0a47-162">Webhooks (Support variiert bei verschiedenen Ressourcen in jeder nationalen Cloudbereitstellung).</span><span class="sxs-lookup"><span data-stu-id="b0a47-162">Webhooks (Support varies across different resources on each national cloud deployment.)</span></span>
 
-Die folgenden Features von Microsoft Graph stehen auch als Preview zur Verfügung (auf dem `/beta`-Endpunkt):
+<span data-ttu-id="b0a47-163">Die folgenden zusätzlichen Microsoft Graph-Features sind in allen nationalen Cloudbereitstellungen (im `/beta`-Endpunkt) in der Vorschau verfügbar, sofern nicht anders angegeben:</span><span class="sxs-lookup"><span data-stu-id="b0a47-163">The following addtional Microsoft Graph features are available in preview (on the `/beta` endpoint) across all national cloud deployments, except where noted:</span></span>
 
-* Organisationskontakte
-* Anwendungen
-* Dienstprinzipale
-* Verzeichnisschemaerweiterungen
-* Webhooks
+* <span data-ttu-id="b0a47-164">Organisationskontakte</span><span class="sxs-lookup"><span data-stu-id="b0a47-164">Organizational Contacts</span></span>
+* <span data-ttu-id="b0a47-165">Anwendungen</span><span class="sxs-lookup"><span data-stu-id="b0a47-165">Applications</span></span>
+* <span data-ttu-id="b0a47-166">Dienstprinzipale</span><span class="sxs-lookup"><span data-stu-id="b0a47-166">Service Principals</span></span>
+
+<span data-ttu-id="b0a47-167">Die folgenden Microsoft Graph-Features werden in nationalen Cloudbereitstellungen noch nicht unterstützt:</span><span class="sxs-lookup"><span data-stu-id="b0a47-167">The following Microsoft Graph features are not yet supported on national cloud deployments:</span></span>
+
+* <span data-ttu-id="b0a47-168">Microsoft Planner</span><span class="sxs-lookup"><span data-stu-id="b0a47-168">Microsoft Planner</span></span>
+* <span data-ttu-id="b0a47-169">Verzeichnisschemaerweiterungen</span><span class="sxs-lookup"><span data-stu-id="b0a47-169">Directory schema extensions</span></span>
+* <span data-ttu-id="b0a47-170">Offene Typerweiterungen</span><span class="sxs-lookup"><span data-stu-id="b0a47-170">Open type extensions</span></span>
