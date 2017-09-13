@@ -78,7 +78,7 @@ Dieselben [Berechtigungen](./permissions_reference.md), die zum Lesen einer best
 
 ## <a name="delta-query-request-examples"></a>Beispiele für die Delta-Abfrageanforderung 
 
-- [Inkrementelle Änderungen an Ereignissen in einer Kalenderansicht abrufen](../Concepts/delta_query_events.md)
+- [Inkrementelle Änderungen an Ereignissen in einer Kalenderansicht abrufen](../concepts/delta_query_events.md)
 - [Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen](./delta_query_messages.md)
 - [Inkrementelle Änderungen an Gruppen abrufen](./delta_query_groups.md)
 - [Inkrementelle Änderungen an Benutzern abrufen](./delta_query_users.md)

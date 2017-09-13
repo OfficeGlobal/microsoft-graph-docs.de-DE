@@ -70,9 +70,8 @@ Registrieren Sie eine App im Microsoft-App-Registrierungsportal. Dadurch wird di
 
     b. Wählen Sie **Plattform hinzufügen** und **Systemeigene Anwendung** aus.
 
-    > **Hinweis:** Das App-Registrierungsportal stellt einen Umleitungs-URI mit dem Wert *msalYOUR NEW APP ID://auth* bereit. Verwenden Sie nicht die integrierten Umleitungs-URIs. Das [Connect-Beispiel für Android](https://github.com/microsoftgraph/android-java-connect-sample) implementiert die MSAL-Authentifizierungsbibliothek, die diesen Umleitungs-URI erfordert. Bei Verwendung einer [unterstützten Drittanbieterbibliothek](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) oder der **ADAL**-Bibliothek müssen Sie die integrierten Umleitungs-URIs verwenden.
+    > **Hinweis:** Das App-Registrierungsportal stellt einen Umleitungs-URI mit dem Wert *msalENTER_YOUR_CLIENT_ID://auth* bereit. Verwenden Sie nicht die integrierten Umleitungs-URIs. Das [Connect-Beispiel für Android](https://github.com/microsoftgraph/android-java-connect-sample) implementiert die MSAL-Authentifizierungsbibliothek, die diesen Umleitungs-URI erfordert. Bei Verwendung einer [-unterstützten Drittanbieterbibliothek](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) oder der **ADAL**-Bibliothek müssen Sie die integrierten Umleitungs-URIs verwenden.
 
-    Für den Fluss „Guided Setup“ und den Fluss ohne Anleitung
 
     a. Fügen Sie delegierte Berechtigungen hinzu. Sie benötigen die Berechtigungen **profile**, **Mail.ReadWrite**, **Mail.Send**, **Files.ReadWrite** und **User.ReadBasic.All**. 
    
@@ -232,27 +231,40 @@ In der Hauptaktivität der Connect-Beispiel-App befindet sich eine Schaltfläche
 
 Sie müssen Ihre App so vorbereiten, dass die Antwort des Autorisierungsservers verarbeitet wird, die einen Code enthält, der durch ein Zugriffstoken ersetzt werden kann.
 
-1. Wir müssen dem Android-System mitteilen, dass die Connect-App Anforderungen an den Umleitungs-URI verarbeiten kann, der bei der Registrierung der Anwendung konfiguriert wurde. Öffnen Sie hierzu die Datei **AndroidManifest**, und fügen sie dem Element **\<application/\>** des Projekts die folgenden untergeordneten Elemente hinzu.
+1. Sie müssen dem Android-System mitteilen, dass die Connect-App Anforderungen an den Umleitungs-URI verarbeiten kann, der bei der Registrierung der Anwendung konfiguriert wurde. Öffnen Sie hierzu die Datei **strings.xml** mit den Zeichenfolgenressourcen, und fügen sie dem Element **\<application/\>** des Projekts die folgenden untergeordneten Elemente hinzu.
+   ```xml
+   <!DOCTYPE resources [
+       <!ENTITY clientId "ENTER_YOUR_CLIENT_ID">
+       ]>
+
+    ...
+    <string name="client_Id">&clientId;</string>
+    <string name="msalPrefix">msal&clientId;</string>
+
+   ```
+
+   Die Zeichenfolgenressourcen werden in der Datei **AndroidManifest.xml** verwendet. Die **MSAL**-Bibliothek liest während der Laufzeit die Client-ID und gibt REST-Antworten an die Umleitungs-URL zurück, die für **BrowserTabActivity** definiert wurde.
+
     ```xml
         <uses-sdk tools:overrideLibrary="com.microsoft.identity.msal" />
         <application ...>
             ...
-            <activity
-                android:name="com.microsoft.identity.client.BrowserTabActivity">
-                <intent-filter>
-                    <action android:name="android.intent.action.VIEW" />
-                    <category android:name="android.intent.category.DEFAULT" />
-                    <category android:name="android.intent.category.BROWSABLE" />
-                    <data android:scheme="msalENTER_YOUR_CLIENT_ID"
-                        android:host="auth" />
-                </intent-filter>
-            </activity>
-            <meta-data
-                android:name="https://login.microsoftonline.com/common"
-                android:value="authority string"/>
-            <meta-data
-                android:name="com.microsoft.identity.client.ClientId"
-                android:value="ENTER_YOUR_CLIENT_ID"/>
+           <activity
+               android:name="com.microsoft.identity.client.BrowserTabActivity">
+               <intent-filter>
+                   <action android:name="android.intent.action.VIEW" />
+                   <category android:name="android.intent.category.DEFAULT" />
+                   <category android:name="android.intent.category.BROWSABLE" />
+                   <data android:scheme="@string/msalPrefix"
+                       android:host="auth" />
+               </intent-filter>
+           </activity>
+           <meta-data
+               android:name="https://login.microsoftonline.com/common"
+               android:value="authority string"/>
+           <meta-data
+               android:name="com.microsoft.identity.client.ClientId"
+               android:value="@string/client_Id"/>
         </application>
     ```
 2. Die **MSAL**-Bibliothek benötigt Zugriff auf die vom Registrierungsportal zugewiesene Anwendungs-ID. **Die MSAL-Bibliothek bezeichnet die Anwendungs-ID als „Client-ID“**. Sie ruft die Anwendungs-ID (Client-ID) aus dem Anwendungskontext ab, den Sie im Bibliothekskonstruktor übergeben. 

@@ -4,9 +4,46 @@ Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschl
 
 Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs finden Sie unter [Bekannte Probleme](known_issues.md).
 
-## <a name="august-2017"></a>August 2017
+## <a name="september-2017"></a>September 2017
 
-### <a name="intune-apis"></a>Intune-APIs
+### <a name="outlook-calendar"></a>Outlook-Kalender
+
+|**Änderungstyp**|**Version**|**Beschreibung**|
+|:-------------|:-----------|:--------------|
+| Ergänzungen | Beta | Eigenschaft **locations** wurde zur Ressource [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) zur Unterstützung der Organisation von Ereignissen hinzugefügt, an denen Teilnehmer von mehr als einem Ort teilnehmen können. |
+| Ergänzungen | Beta | Eigenschaft **locationType** wurde zum komplexen Typ [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) hinzugefügt.|
+| Ergänzungen | Beta | Eigenschaften **uniqueId** und **uniqueIdType** wurden zum komplexen Typ [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) hinzugefügt. Diese Eigenschaften dienen zu diesem Zeitpunkt nur der internen Verwendung.|
+
+
+### <a name="outlook-inbox-message-rules"></a>Nachrichtenregel für Outlook-Posteingang
+
+|**Änderungstyp**|**Version**|**Beschreibung**|
+|:-------------|:-----------|:--------------|
+| Ergänzungen | Beta | Navigationseigenschaft **messageRules** wurde zur Ressource [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder) hinzugefügt. **messageRules** ist eine Sammlung von [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule)-Instanzen. |
+| Ergänzungen | Beta | Entität [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) sowie die komplexen Typen [messageRuleActions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messageruleactions), [messageRulePredicates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerulepredicates) und [sizeRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/sizerange) wurden hinzugefügt.  |
+| Ergänzungen | Beta | Die folgenden CRUD-Vorgänge für Nachrichtenregeln wurden hinzugefügt: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_post_messagerules), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_list_messagerules), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_update) und [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_delete). |
+
+
+### <a name="outlook-user-choices"></a>Auswahlmöglichkeiten für Outlook-Benutzer
+
+|**Änderungstyp**|**Version**|**Beschreibung**|
+|:-------------|:-----------|:--------------|
+| Ergänzungen | Beta | Die neue Navigationseigenschaft **masterCategories** wurde zur Entität [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) hinzugefügt.  |
+| Ergänzungen | Beta | Die neue Funktion [supportedLanguages](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedlanguages) wurde zur Entität [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) hinzugefügt.  |
+| Ergänzungen | Beta | Die neue Funktion [supportedTimeZones](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedtimezones) wurde zur Entität [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) hinzugefügt.  |
+
+
+## <a name="august-2017"></a>August 2017
+
+### <a name="group-lifecycle-policy"></a>Gruppenlebenszyklusrichtlinie
+
+|**Änderungstyp**|**Version**|**Beschreibung**|
+|:-------------|:-----------|:--------------|
+| Ergänzungen | Beta | [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/grouplifecyclepolicy)-Entität hinzugefügt. |
+| Ergänzungen | Beta | Folgende APIs wurden für Gruppenlebenszyklusrichtlinie hinzugefügt: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_list), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_update), [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_delete), [add group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_addgroup), [remove group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_removegroup) und [renew a group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_renewgroup). |
+| Ergänzungen | Beta | [List groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md)-Funktion zur [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group)-Entität hinzugefügt. |
+
+### <a name="intune-apis"></a>Intune APIs
 |Änderungstyp|Version|Beschreibung|
 |:---|:---|:---|
 |Ergänzungen|Beta|Neue Entität hinzugefügt:<br/>[windowsPrivacyDataAccessControlItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsprivacydataaccesscontrolitem)<br/>|
@@ -32,6 +69,12 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Änderung|Beta|Eigenschaft **secureByDefault** zum komplexen Typ [deviceManagementSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementsettings) hinzugefügt.|
 |Änderung|Beta|Eigenschaft **restartMode** zum komplexen Typ [windowsUpdateScheduledInstall](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsupdatescheduledinstall) hinzugefügt.|
 
+### <a name="onenote"></a>OneNote
+
+|**Änderungstyp**|**Version**|**Beschreibung**|
+|:-------------|:-----------|:--------------|
+| Ergänzungen | v1.0 und Beta | Die Navigationseigenschaft [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote) wurde zu **site** hinzugefügt.  |
+| Ergänzungen | Beta | Die Zielparameter *siteCollectionId* und *siteId* für Kopiervorgänge. Beispiel: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook). |
 
 ### <a name="people"></a>Kontakte 
 
@@ -39,20 +82,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |:-------------|:-----------|:--------------|
 | Ergänzungen | v1.0 | [People APIs](../api-reference/v1.0/resources/person.md) zu v1.0 hinzugefügt. Weitere Informationen zu der People API finden Sie unter [Abrufen von relevanten Informationen über Personen](people_example.md).|
 
-### <a name="group-lifecycle-policy"></a>Gruppenlebenszyklusrichtlinie
 
-|**Änderungstyp**|**Version**|**Beschreibung**|
-|:-------------|:-----------|:--------------|
-| Ergänzungen | Beta | [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/grouplifecyclepolicy)-Entität hinzugefügt. |
-| Ergänzungen | Beta | Folgende APIs wurden für Gruppenlebenszyklusrichtlinie hinzugefügt: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_list), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_update), [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_delete), [add group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_addgroup), [remove group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_removegroup) und [renew a group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_renewgroup). |
-| Ergänzungen | Beta | [List groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md)-Funktion zur [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group)-Entität hinzugefügt. |
-
-### <a name="onenote"></a>OneNote
-
-|**Änderungstyp**|**Version**|**Beschreibung**|
-|:-------------|:-----------|:--------------|
-| Ergänzungen | v1.0 und Beta | Die Navigationseigenschaft [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote) wurde zu **site** hinzugefügt.  |
-| Ergänzungen | Beta | Die Zielparameter *siteCollectionId* und *siteId* für Kopiervorgänge. Beispiel: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook). |
 
 
 ## <a name="july-2017"></a>Juli 2017

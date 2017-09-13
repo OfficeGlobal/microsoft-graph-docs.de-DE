@@ -130,8 +130,8 @@ Die Antwort enthält zwei Nachrichten und einen `@odata.nextLink`-Antwortheader.
             "subject":"Holiday promotion sale",
             "sender":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AQMkADNkNAAAVRMKAAAAA=="

@@ -34,7 +34,7 @@ Im Beispiel wird **findMeetingTimes** zwei Mal aufgerufen:
 
 Die beiden Aufrufe von **findMeetingTimes** enthalten die folgenden Parameter. Alle [Parameter](../api-reference/v1.0/api/user_findmeetingtimes.md#request-body) für **findMeetingTimes** sind optional.
 
-- **attendees**: ein Teilnehmer, Fanny Downs; die Eigenschaft **type** ist auf `required` festgelegt.
+- **attendees**: ein Teilnehmer, Samantha Booth; die Eigenschaft **type** ist auf `required` festgelegt.
 - **timeConstraint**: kein Ortsvorschlag erforderlich.
 - **timeConstraint**: Der erste Aufruf sucht im Datums-/Uhrzeitbereich vom 18. April, 9:00 Uhr bis zum 20. April, 17:00 Uhr; nachdem der erste Aufruf keine Zeiten vorschlagen kann, untersucht der zweite Aufruf den 21. April zwischen 9:00 und 17:00 Uhr.
 - **meetingDuration**: zwei Stunden.
@@ -59,8 +59,8 @@ Content-type: application/json
     { 
       "type": "required",  
       "emailAddress": { 
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com" 
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com" 
       } 
     }
   ],  
@@ -134,8 +134,8 @@ Content-type: application/json
     { 
       "type": "required",  
       "emailAddress": { 
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com" 
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com" 
       } 
     }
   ],  
@@ -208,7 +208,7 @@ Content-Length: 714
                     "attendee":{
                         "type":"required",
                         "emailAddress":{
-                            "address":"fannyd@contoso.onmicrosoft.com"
+                            "address":"samanthab@contoso.onmicrosoft.com"
                         }
                     }
                 }

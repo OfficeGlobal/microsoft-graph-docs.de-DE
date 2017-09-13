@@ -2,7 +2,7 @@
 
 Die Artikel in diesem Abschnitt bieten detaillierte Angaben dazu, wie Apps erstellt werden, die aus einer Palette von Sprachen und Entwicklungsplattformen mit Microsoft Graph verbunden werden. Jeder Artikel beginnt mit einem Beispiel eines Startprojekts für die entsprechende Plattform und führt Sie schrittweise durch das Hinzufügen von Funktionen, die den Benutzer authentifizieren, und stellt eine Beispielanforderung an Microsoft Graph, aus ihrem Konto eine E-Mail zu senden. Das fertige Projekt ist identisch mit dem [Connect-Beispiel im Microsoft Graph-Repository](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect) für die betreffende Plattform.
 
-Wählen Sie den Artikel, der sich mit dem Authentifizierungsanbieter und der Entwicklungsplattform Ihrer Wahl befasst, und unternehmen Sie die ersten Schritte zum Herstellen einer Verbindung mit Microsoft Graph.
+Wählen Sie den Artikel, der sich mit dem Authentifizierungsanbieter und der Entwicklungsplattform Ihrer Wahl befasst, und unternehmen Sie die ersten Schritte zum Herstellen einer Verbindung mit Microsoft Graph. Weitere Informationen finden Sie unter [Wo liegen die Unterschiede beim v2.0-Endpunkt?](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare)
 
 Sie können die Schritte in diesem Artikel ausführen, der sich mit der Entwicklungsplattform befasst, die Sie auswählen, oder die [Schnellstart](https://developer.microsoft.com/graph/quick-start)-Erfahrung ausprobieren und schnell eine funktionsfähige Lösung einrichten und  ausführen.
 
@@ -114,6 +114,7 @@ Wenn Sie die fertigen Connect-Beispiele ansehen möchten, besuchen Sie das [Micr
 </table>
 
 ## <a name="see-also"></a>Siehe auch
-- Testen Sie beispielhafte REST-Aufrufe in unserem [API Explorer](https://developer.microsoft.com/graph/graph-explorer).
-- [Azure AD-Endpunkt-Dokumentation](https://azure.microsoft.com/documentation/services/active-directory/)
-- [Azure AD v2.0-Endpunkt-Dokumentation](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)
+
+- Testen Sie beispielhafte REST-Aufrufe in unserem [API Explorer](https://graph.microsoft.io/graph-explorer).
+- [Azure AD-Endpunkt-Dokumentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide)
+- [Azure AD v2.0-Endpunkt-Dokumentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview)
