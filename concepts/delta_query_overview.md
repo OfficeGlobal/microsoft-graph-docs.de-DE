@@ -67,7 +67,7 @@ Die Delta-Abfrage wird derzeit für die folgenden Ressourcen unterstützt:
 | Ordner mit persönlichen Kontakten | [Delta](../api-reference/v1.0/api/contactfolder_delta.md)-Funktion der [contactFolder](../api-reference/v1.0/resources/contactfolder.md)-Ressource |
 | Persönliche Kontakte in einem Ordner | [Delta](../api-reference/v1.0/api/contact_delta.md)-Funktion der [contact](../api-reference/v1.0/resources/contact.md)-Ressource |
 | Benutzer | [Delta](../api-reference/v1.0/api/user_delta.md)-Funktion der [user](../api-reference/v1.0/resources/user.md)-Ressource | 
-| Laufwerk-Elemente\* | [Delta](../api-reference/v1.0/api/item_delta.md)-Funktion der [driveItem](../api-reference/v1.0/resources/driveItem.md)-Ressource |
+| Laufwerk-Elemente\* | [Delta](../api-reference/v1.0/api/driveitem_delta.md)-Funktion der [driveItem](../api-reference/v1.0/resources/driveitem.md)-Ressource |
 
 
 > \* Das Verwendungsmuster für OneDrive-Ressourcen ähnelt dem der anderen unterstützten Ressourcen, mit geringen Unterschieden in der Syntax. Die Delta-Abfrage für Laufwerke wird zwecks Konsistenz mit anderen Ressourcentypen demnächst aktualisiert. Genauere Informationen zu der aktuellen Syntax finden Sie unter <https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta>

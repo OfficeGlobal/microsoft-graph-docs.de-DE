@@ -121,7 +121,7 @@ Abhängig von der abonnierten Ressource kann ein zusätzliches resourceData-Feld
    ]
 }
 ```
-Wenn Benachrichtigungen von Laufwerksabonnements empfangen werden, ist das resourceData-Element null und die [delta](item_delta.md)-API muss aufgerufen werden, um festzustellen, welche Änderungen aufgetreten sind. Hier sehen Sie ein Beispiel für eine Laufwerksbenachrichtigung:
+Wenn Benachrichtigungen von Laufwerksabonnements empfangen werden, ist das resourceData-Element null und die [delta](driveitem_delta.md)-API muss aufgerufen werden, um festzustellen, welche Änderungen aufgetreten sind. Hier sehen Sie ein Beispiel für eine Laufwerksbenachrichtigung:
 ```http
 {
   "subscriptionId": "aa269f87-2a92-4cff-a43e-2771878c3727",
