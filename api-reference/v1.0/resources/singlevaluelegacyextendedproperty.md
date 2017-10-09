@@ -31,7 +31,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.singlevaluelegacyextendedproperty"
+  "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"
 }-->
 
 ```json
