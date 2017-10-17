@@ -1,6 +1,15 @@
 # <a name="add-attachment"></a>Anlage hinzufügen
 
-Mit dieser API können Sie neue Anlagen erstellen.
+Verwenden Sie diese API, um eine neue Anlage zu erstellen.
+
+Eine Anlage weist einen der folgenden Typen auf:
+
+* Datei ([fileAttachment](../resources/fileattachment.md)-Ressource)
+* Element (Kontakt, Ereignis oder Nachricht, dargestellt durch eine [itemAttachment](../resources/itemattachment.md)-Ressource)
+* Link zu einer Datei ([referenceAttachment](../resources/referenceAttachment.md)-Ressource)
+
+All diese Typen von Anlagenressourcen werden von der Ressource [attachment](../resources/attachment.md) abgeleitet. 
+
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 

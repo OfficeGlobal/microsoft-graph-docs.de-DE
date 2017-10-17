@@ -1,6 +1,6 @@
 # <a name="message-createreply"></a>message: createReply
 
-Erstellt einen Entwurf der Antwortnachricht. Sie können den Entwurf dann [aktualisieren](../api/message_update.md) oder [senden](../api/message_send.md).
+Erstellen Sie einen Entwurf der Antwort auf die angegebene [Nachricht](../resources/message.md). Anschließend können Sie den Entwurf [aktualisieren](../api/message_update.md), um den Antwortinhalt zum **Text** hinzuzufügen, oder andere Nachrichteneigenschaften ändern. Sie können den Entwurf auch einfach [senden](../api/message_send.md).
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
@@ -23,9 +23,9 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
+Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
@@ -41,12 +41,6 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
-Content-type: application/json
-Content-length: 248
-
-{
-  "comment": "comment-value"
-}
 ```
 
 ##### <a name="response"></a>Antwort

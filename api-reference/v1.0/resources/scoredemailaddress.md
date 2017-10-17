@@ -24,7 +24,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ```json
 {
   "address": "string",
-  "relevanceScore": 1024
+  "relevanceScore": 1024.0
 }
 ```
 

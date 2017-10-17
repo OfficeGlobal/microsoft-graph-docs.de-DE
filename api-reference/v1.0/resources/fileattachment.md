@@ -19,7 +19,7 @@ Abgeleitet von [attachment](attachment.md).
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|contentBytes|Binär|Der binäre Inhalt der Datei.|
+|contentBytes|Binär|Der base64-codierte Inhalt der Datei.|
 |contentId|String|Die ID der Anlage im Exchange-Speicher.|
 |contentLocation|String|Der URI (Uniform Resource Identifier), der dem Speicherort des Anlageninhalts entspricht.|
 |contentType|String|Der Inhaltstyp der Anlage.|

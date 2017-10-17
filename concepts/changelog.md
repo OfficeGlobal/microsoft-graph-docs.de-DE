@@ -6,20 +6,128 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 ## <a name="september-2017"></a>September 2017
 
+### <a name="intune-apis"></a>Intune APIs
+
+|Änderungstyp|Version|Beschreibung|
+|:---|:---|:---|
+|Ergänzungen|Beta|Hinzugefügte neue Entitäten:<br/>[activeDirectoryWindowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile.md)<br/>[azureADWindowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_azureadwindowsautopilotdeploymentprofile.md)<br/>[deviceEnrollmentConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentconfiguration.md)<br/>[deviceEnrollmentLimitConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentlimitconfiguration.md)<br/>[deviceEnrollmentPlatformRestrictionsConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration.md)<br/>[deviceEnrollmentWindowsHelloForBusinessConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration.md)<br/>[deviceManagementPartner](../api-reference/beta/resources/intune_onboarding_devicemanagementpartner.md)<br/>[enrollmentConfigurationAssignment](../api-reference/beta/resources/intune_onboarding_enrollmentconfigurationassignment.md)<br/>[windows10EnrollmentCompletionPageConfiguration](../api-reference/beta/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration.md)<br/>[windows10NetworkBoundaryConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10networkboundaryconfiguration.md)<br/>[windowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofile.md)<br/>[windowsAutopilotDeviceIdentity](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeviceidentity.md)<br/>[windowsAutopilotSettings](../api-reference/beta/resources/intune_enrollment_windowsautopilotsettings.md)<br/>|
+|Ergänzungen|Beta|Die folgenden komplexen Typen wurden hinzugefügt:<br/>[adminConsent](../api-reference/beta/resources/intune_devices_adminconsent.md)<br/>[allDevicesAssignmentTarget](../api-reference/beta/resources/intune_onboarding_alldevicesassignmenttarget.md)<br/>[allLicensedUsersAssignmentTarget](../api-reference/beta/resources/intune_onboarding_alllicensedusersassignmenttarget.md)<br/>[deviceAndAppManagementAssignmentTarget](../api-reference/beta/resources/intune_onboarding_deviceandappmanagementassignmenttarget.md)<br/>[deviceEnrollmentPlatformRestriction](../api-reference/beta/resources/intune_onboarding_deviceenrollmentplatformrestriction.md)<br/>[deviceHealthAttestationState](../api-reference/beta/resources/intune_devices_devicehealthattestationstate.md)<br/>[exclusionGroupAssignmentTarget](../api-reference/beta/resources/intune_onboarding_exclusiongroupassignmenttarget.md)<br/>[groupAssignmentTarget](../api-reference/beta/resources/intune_onboarding_groupassignmenttarget.md)<br/>[outOfBoxExperienceSettings](../api-reference/beta/resources/intune_enrollment_outofboxexperiencesettings.md)<br/>[windowsFirewallNetworkProfile](../api-reference/beta/resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)<br/>[windowsNetworkIsolationCloudResource](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationcloudresource.md)<br/>[windowsNetworkIsolationCloudResourceCollection](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationcloudresourcecollection.md)<br/>[windowsNetworkIsolationIPRangeCollection](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationiprangecollection.md)<br/>[windowsNetworkIsolationPolicy](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationpolicy.md)<br/>[windowsNetworkIsolationResourceCollection](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationresourcecollection.md)<br/>|
+|Ergänzungen|Beta|Die [sync](../api-reference/beta/api/intune_enrollment_windowsautopilotsettings_sync.md)-Aktion wurde [windowsAutopilotSettings](../api-reference/beta/resources/intune_enrollment_windowsautopilotsettings.md) hinzugefügt. |
+|Ergänzungen|Beta|Die [assign](../api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_assign.md)-Aktion wurde [windowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofile.md) hinzugefügt. |
+|Ergänzungen|Beta|Die [localActions](../api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_localactions.md)-Aktion wurde [deviceCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy.md) hinzugefügt. |
+|Ergänzungen|Beta|Die [setPriority](../api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_setpriority.md)-Aktion wurde [deviceEnrollmentConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentconfiguration.md) hinzugefügt. |
+|Ergänzungen|Beta|Die [assign](../api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_assign.md)-Aktion wurde [deviceEnrollmentConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentconfiguration.md) hinzugefügt. |
+|Ergänzungen|Beta|Die uploadDepToken-Aktion wurde der [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md)-Sammlung hinzugefügt. |
+|Ergänzungen|Beta|Die syncWithAppleDeviceEnrollmentProgram-Aktion wurde der [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md)-Sammlung hinzugefügt. |
+|Ergänzungen|Beta|Die updateMobileAppIdentifierDeployments-Aktion wurde zu [managedAppProtection](../api-reference/beta/resources/intune_mam_managedappprotection.md) hinzugefügt. |
+|Ergänzungen|Beta|Die assign-Aktion wurde für [targetedManagedAppProtection](../api-reference/beta/resources/intune_mam_targetedmanagedappprotection.md) hinzugefügt. |
+|Ergänzungen|Beta|Die assign-Aktion wurde für [targetedManagedAppConfiguration](../api-reference/beta/resources/intune_mam_targetedmanagedappconfiguration.md) hinzugefügt. |
+|Ergänzungen|Beta|Die assign-Aktion wurde für [windowsInformationProtection](../api-reference/beta/resources/intune_mam_windowsinformationprotection.md) hinzugefügt. |
+|Ergänzungen|Beta|Die getEncryptionPublicKey-Funktion wurde für die [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md)-Sammlung hinzugefügt |
+|Änderung|Beta|Die Eigenschaften **requireSafetyNetAttestationBasicIntegrity**, **requireSafetyNetAttestationCertifiedDevice**, **requireGooglePlayServices**, **requireUpToDateSecurityProviders**, **requireCompanyPortalAppIntegrity** und **conditionStatementId** wurden der [androidCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidcompliancepolicy.md)-Entität hinzugefügt.|
+|Änderung|Beta|Die Eigenschaften **requireAppVerify**, **requireSafetyNetAttestationBasicIntegrity**, **requireSafetyNetAttestationCertifiedDevice**, **requireGooglePlayServices**, **requireUpToDateSecurityProviders** and **requireCompanyPortalAppIntegrity** wurden der [androidForWorkCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy.md)-Entität hinzugefügt.|
+|Änderung|Beta|Die Eigenschaften **blockCrossProfileCopyPaste** und **requireAppVerify** wurden der [androidForWorkGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration.md)-Entität hinzugefügt.|
+|Änderung|Beta|Die Eigenschaften **kioskModeApps** und **requireAppVerify** wurden der [androidGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration.md)-Entität hinzugefügt.|
+|Änderung|Beta|Die **kioskModeManagedApps**-Eigenschaft wurde aus der [androidGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration.md)-Entität entfernt.|
+|Änderung|Beta|Die **cloudPkiProvider**-, **createdDateTime**-, **description**-, **lastModifiedDateTime**-, **displayName**-, **syncStatus**-, **lastSyncError**-, **lastSyncDateTime**-, **credentials**-, **trustedRootCertificate**- und **version**-Eigenschaften wurden aus der [cloudPkiSubscription](../api-reference/beta/resources/intune_deviceconfig_cloudpkisubscription.md)-Entität entfernt.|
+|Änderung|Beta|Die Eigenschaften **assignmentStatus**, **assignmentProgress** und **assignmentErrorMessage** wurden der [deviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_deviceconfiguration.md)-Entität hinzugefügt.|
+|Änderung|Beta|Die **intuneBrand**-Eigenschaft wurde der [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md)-Entität hinzugefügt.|
+|Änderung|Beta|Die Eigenschaften **vppTokenOrganizationName**, **vppTokenAccountType** und **vppTokenAppleId** wurden der [iosVppApp](../api-reference/beta/resources/intune_apps_iosvppapp.md)-Entität hinzugefügt.|
+|Änderung|Beta|Die **deviceEnrollmentType**, **wiFiMacAddress** und **deviceHealthAttestationState**-Eigenschaften wurden der [managedDevice](../api-reference/beta/resources/intune_deviceconfig_manageddevice.md)-Entität hinzugefügt.|
+|Änderung|Beta|Die **legacyAppConfiguration**-Eigenschaft wurde der [managedDeviceMobileAppConfiguration](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration.md)-Entität hinzugefügt.|
+|Änderung|Beta|Die **notApplicableCount**-Eigenschaft wurde der [managedDeviceMobileAppConfigurationDeviceSummary](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md)-Entität hinzugefügt.|
+|Änderung|Beta|Die **notApplicableCount**-Eigenschaft wurde der [managedDeviceMobileAppConfigurationUserSummary](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationusersummary.md)-Entität hinzugefügt.|
+|Änderung|Beta|Die Eigenschaften **firewallBlockStatefulFTP**, **firewallIdleTimeoutForSecurityAssociationInSeconds**, **firewallPreSharedKeyEncodingMethod**, **firewallIPSecExemptionsAllowNeighborDiscovery**, **firewallIPSecExemptionsAllowICMP**, **firewallIPSecExemptionsAllowRouterDiscovery**, **firewallIPSecExemptionsAllowDHCP**, **firewallCertificateRevocationListCheckMethod**, **firewallMergeKeyingModuleSettings**, **firewallPacketQueueingMethod**, **firewallProfileDomain**, **firewallProfilePublic**, **firewallProfilePrivate**, **defenderAttackSurfaceReductionExcludedPaths**, **defenderOfficeAppsOtherProcessInjectionType**, **defenderOfficeAppsExecutableContentCreationOrLaunchType**, **defenderOfficeAppsLaunchChildProcessType**, **defenderOfficeMacroCodeAllowWin32ImportsType**, **defenderScriptObfuscatedMacroCodeType**, **defenderScriptDownloadedPayloadExecutionType**, **defenderEmailContentExecutionType**, **defenderGuardMyFoldersType**, **defenderGuardedFoldersAllowedAppPaths**, **defenderAdditionalGuardedFolders**, **defenderNetworkProtectionType**, **defenderExploitProtectionXml**, **defenderExploitProtectionXmlFileName**, **defenderSecurityCenterBlockExploitProtectionOverride**, **appLockerApplicationControl**, **applicationGuardBlockClipboardSharing**, **applicationGuardAllowPrintToPDF**, **applicationGuardAllowPrintToXPS**, **applicationGuardAllowPrintToLocalPrinters**, **applicationGuardAllowPrintToNetworkPrinters** und **bitLockerDisableWarningForOtherDiskEncryption** wurden der [windows10EndpointProtectionConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md)-Entität hinzugefügt.|
+|Änderung|Beta|Die Eigenschaften **displayAppListWithGdiDPIScalingTurnedOn**, **displayAppListWithGdiDPIScalingTurnedOff**, **messagingBlockSync**, **messagingBlockMMS** und **messagingBlockRichCommunicationServices** wurden der [windows10GeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration.md)-Entität hinzugefügt.|
+|Änderung|Beta|Die **bluetoothDeviceName**-Eigenschaft wurde aus der [windows10GeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration.md)-Entität entfernt.|
+|Änderung|Beta|Die Eigenschaften **deviceAccountBlockExchangeServices**, **deviceAccountEmailAddress**, **deviceAccountExchangeServerAddress**, **deviceAccountRequirePasswordRotation** und **deviceAccountSessionInitiationProtocolAddress** wurden aus der [windows10TeamGeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10teamgeneralconfiguration.md)-Entität entfernt.|
+|Änderung|Beta|Die **localActions**-Navigationseigenschaft wurde der [androidCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidcompliancepolicy.md)-Entität hinzugefügt.|
+|Änderung|Beta|Die Navigationseigenschaften **windowsAutopilotSettings**, **windowsAutopilotDeviceIdentities**, **windowsAutopilotDeploymentProfiles**, **deviceEnrollmentConfigurations**, **deviceManagementPartners** und **depOnboardingSettings** wurden der [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md)-Entität hinzugefügt.|
+|Änderung|Beta|Die **cloudPkiSubscriptions**-Navigationseigenschaft wurde aus der [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md)-Entität entfernt.|
+|Änderung|Beta|Die **assignments**-Navigationseigenschaft wurde aus der [targetedManagedAppConfiguration](../api-reference/beta/resources/intune_mam_targetedmanagedappconfiguration.md)-Entität entfernt.|
+|Änderung|Beta|Die **assignments**-Navigationseigenschaft wurde aus der [targetedManagedAppProtection](../api-reference/beta/resources/intune_mam_targetedmanagedappprotection.md)-Entität entfernt.|
+|Änderung|Beta|Die **assignments**-Navigationseigenschaft wurde aus der [windowsInformationProtection](../api-reference/beta/resources/intune_mam_windowsinformationprotection.md)-Entität entfernt.|
+
+### <a name="onedrive"></a>OneDrive
+
+|**Änderungstyp**|**Version**|**Beschreibung**|
+|:-------------|:-----------|:--------------|
+| Ergänzungen | v1.0 | Die **system**-Eigenschaft wurde der [Drive][]-Ressource hinzugefügt.  |
+| Ergänzungen | v1.0 | Die **list**-Beziehung wurde der [Drive][]-Ressource hinzugefügt. |
+| Ergänzungen | v1.0 | Die **listItem**-Beziehung wurde der [DriveItem][]-Ressource hinzugefügt. |
+| Ergänzungen | v1.0 | Die Beziehungen **list** und **listItem** wurden der [SharedDriveItem][]-Ressource hinzugefügt. |
+| Ergänzungen | v1.0 | Die folgenden komplexen Typen wurden hinzugefügt: [FolderView][] |
+| Ergänzungen | v1.0 | Die **view**-Eigenschaft wurde dem komplexen Typ [Folder][] hinzugefügt. |
+| Ergänzungen | v1.0 | Die **driveType**-Eigenschaft wurde dem komplexen Typ [ItemReference][] hinzugefügt. |
+| Ergänzungen | v1.0 | Die Eigenschaften **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** und **frameRate** wurden dem komplexen Typ [Video][] hinzugefügt. |
+| Ergänzungen | Beta | Die **system**-Eigenschaft wurde der [Drive][Drive-beta]-Ressource hinzugefügt.  |
+| Ergänzungen | Beta | Die **activities**-Beziehung wurde der [Drive][Drive-beta]-Ressource hinzugefügt. |
+| Ergänzungen | Beta | Die **publication**-Eigenschaft wurde der [DriveItem][DriveItem-beta]-Ressource hinzugefügt. |
+| Ergänzungen | Beta | Die Beziehungen **activities** und **versions** wurden der [DriveItem][DriveItem-beta]-Ressource hinzugefügt. |
+| Ergänzungen | Beta | Hinzugefügte neue Entitäten: [DriveItemVersion][DriveItemVersion-beta], [ItemActivity][ItemActivity-beta]. |
+| Ergänzungen | Beta | Die folgenden komplexen Typen wurden hinzugefügt: [CommentAction][CommentAction-beta], [CreateAction][CreateAction-beta], [DeleteAction][DeleteAction-beta], [EditAction][EditAction-beta], [ItemActionSet][ItemActionSet-beta], [ItemActivityTimeSet][ItemActivityTimeSet-beta], [MentionAction][MentionAction-beta], [MoveAction][MoveAction-beta], [PublicationFacet][PublicationFacet-beta], [RenameAction][RenameAction-beta], [RestoreAction][RestoreAction-beta], [ShareAction][ShareAction-beta] und [VersionAction][VersionAction-beta]. |
+| Ergänzungen | Beta | Die **driveType**-Eigenschaft wurde dem komplexen Typ [ItemReference][ItemReference-beta] hinzugefügt. |
+| Löschung | Beta | Die **tenantId**-Eigenschaft wurde aus dem komplexen TYp [SharepointIds][SharepointIds-beta] entfernt. |
+| Ergänzungen | v1.0 | Die Eigenschaften **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** und **frameRate** wurden dem komplexen Typ [Video][Video-beta] hinzugefügt. |
+| Ergänzungen | Beta | Die Aktionen [CheckIn][CheckIn-beta] und [CheckOut][CheckOut-beta]wurden der [DriveItem][DriveItem-beta]-Ressource hinzugefügt. |
+| Ergänzungen | Beta | Die Eigenschaften **expirationDateTime**, **password**, **message** und **recipients** wurden in der [CreateLink][CreateLink-beta]-Aktion der [DriveItem][DriveItem-beta]-Ressource hinzugefügt. |
+
+[Drive]: ../api-reference/v1.0/resources/drive.md
+[DriveItem]: ../api-reference/v1.0/resources/driveitem.md
+[SharedDriveItem]: ../api-reference/v1.0/resources/shareddriveitem.md
+[FolderView]: ../api-reference/v1.0/resources/folderview.md
+[Folder]: ../api-reference/v1.0/resources/folder.md
+[ItemReference]: ../api-reference/v1.0/resources/itemreference.md
+[Video]: ../api-reference/v1.0/resources/video.md
+[Drive-beta]: ../api-reference/beta/resources/drive.md
+[DriveItem-beta]: ../api-reference/beta/resources/driveitem.md
+[DriveItemVersion-beta]: ../api-reference/beta/resources/driveitemversion.md
+[ItemActivity-beta]: ../api-reference/beta/resources/itemactivity.md
+[CommentAction-beta]: ../api-reference/beta/resources/commentaction.md
+[CreateAction-beta]: ../api-reference/beta/resources/createaction.md
+[DeleteAction-beta]: ../api-reference/beta/resources/deleteaction.md
+[EditAction-beta]: ../api-reference/beta/resources/editaction.md
+[ItemActionSet-beta]: ../api-reference/beta/resources/itemactionset.md
+[ItemActivityTimeSet-beta]: ../api-reference/beta/resources/itemactivitytimeset.md
+[MentionAction-beta]: ../api-reference/beta/resources/mentionaction.md
+[MoveAction-beta]: ../api-reference/beta/resources/moveaction.md
+[PublicationFacet-beta]: ../api-reference/beta/resources/publicationfacet.md
+[RenameAction-beta]: ../api-reference/beta/resources/renameaction.md
+[RestoreAction-beta]: ../api-reference/beta/resources/restoreaction.md
+[ShareAction-beta]: ../api-reference/beta/resources/shareaction.md
+[VersionAction-beta]: ../api-reference/beta/resources/versionaction.md
+[ItemReference-beta]: ../api-reference/beta/resources/itemreference.md
+[SharepointIds-beta]: ../api-reference/beta/resources/sharepointids.md
+[Video-beta]: ../api-reference/beta/resources/video.md
+[CheckIn-beta]: ../api-reference/beta/api/driveitem_checkin.md
+[CheckOut-beta]: ../api-reference/beta/api/driveitem_checkout.md
+[CreateLink-beta]: ../api-reference/beta/api/driveitem_createlink.md
+
+
 ### <a name="outlook-calendar"></a>Outlook-Kalender
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
-| Ergänzungen | Beta | Eigenschaft **locations** wurde zur Ressource [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) zur Unterstützung der Organisation von Ereignissen hinzugefügt, an denen Teilnehmer von mehr als einem Ort teilnehmen können. |
+| Ergänzungen | Beta | Die Funktionen [findRoomLists](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_findroomlists) und [findRooms](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_findrooms) wurden der [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/user)-Entität hinzugefügt. |
+| Ergänzungen | Beta | Die **locations**-Eigenschaft wurde der [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event)-Entität zur Unterstützung der Organisation von Ereignissen hinzugefügt, an denen Teilnehmer von mehr als einem Ort teilnehmen können. |
 | Ergänzungen | Beta | Eigenschaft **locationType** wurde zum komplexen Typ [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) hinzugefügt.|
 | Ergänzungen | Beta | Eigenschaften **uniqueId** und **uniqueIdType** wurden zum komplexen Typ [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) hinzugefügt. Diese Eigenschaften dienen zu diesem Zeitpunkt nur der internen Verwendung.|
+| Änderung | v1.0 und Beta | Wenn Sie über die entsprechenden delegierten Berechtigungen des angemeldeten Benutzers verfügen, können Sie die ID eines anderen Benutzers oder einen Benutzerprinzipalnamen angeben, um [einen Kalender abzurufen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_get) oder [Ereignisse in einem Kalender abzurufen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_events), wenn dieser Benutzer diesen Kalender für den angemeldeten Benutzer freigegeben hat oder wenn dieser Benutzer sein Postfach an den angemeldeten Benutzer delegiert hat. |
 
-
-### <a name="outlook-inbox-message-rules"></a>Nachrichtenregel für Outlook-Posteingang
+### <a name="outlook-contacts"></a>Outlook-Kontakte
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
-| Ergänzungen | Beta | Navigationseigenschaft **messageRules** wurde zur Ressource [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder) hinzugefügt. **messageRules** ist eine Sammlung von [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule)-Instanzen. |
+| Änderung | v1.0 und Beta | Wenn Sie über die entsprechenden delegierten Berechtigungen des angemeldeten Benutzers verfügen, können Sie die ID eines anderen Benutzers oder einen Benutzerprinzipalnamen angeben, um [einen Kontaktordner abzurufen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/contactfolder_get) oder [Kontakte in einem Kalender abzurufen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts), wenn dieser Benutzer diesen Ordner für den angemeldeten Benutzer freigegeben hat oder wenn dieser Benutzer sein Postfach an den angemeldeten Benutzer delegiert hat. |
+
+
+### <a name="outlook-mail"></a>Outlook-Mail
+
+|**Änderungstyp**|**Version**|**Beschreibung**|
+|:-------------|:-----------|:--------------|
+| Ergänzungen | Beta | Die **internetMessageHeaders**-Eigenschaft wurde der [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/message)-Entität hinzugefügt. |
+| Ergänzungen | Beta | Der komplexe Typ [internetMessageHeader](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/internetmessageheader) wurde hinzugefügt.|
+| Ergänzungen | Beta | Die **messageRules**-Navigationseigenschaft wurde der [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder)-Entität hinzugefügt. **messageRules** ist eine Sammlung von [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule)-Instanzen. |
 | Ergänzungen | Beta | Entität [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) sowie die komplexen Typen [messageRuleActions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messageruleactions), [messageRulePredicates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerulepredicates) und [sizeRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/sizerange) wurden hinzugefügt.  |
 | Ergänzungen | Beta | Die folgenden CRUD-Vorgänge für Nachrichtenregeln wurden hinzugefügt: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_post_messagerules), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_list_messagerules), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_update) und [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_delete). |
 
@@ -28,9 +136,82 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
-| Ergänzungen | Beta | Die neue Navigationseigenschaft **masterCategories** wurde zur Entität [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) hinzugefügt.  |
+| Ergänzungen | Beta | Die neue **masterCategories**-Navigationseigenschaft wurde der [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser)-Entität hinzugefügt. **masterCategories** ist eine Sammlung von [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookCategory)-Objekten. |
+| Ergänzungen | Beta | Die [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookCategory)-Entität wurde hinzugefügt. |
+| Ergänzungen | Beta | Die folgenden CRUD-Vorgänge für [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookCategory) wurden hinzugefügt: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_post_mastercategories), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookcategory_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookcategory_update) und [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookcategory_delete). |
 | Ergänzungen | Beta | Die neue Funktion [supportedLanguages](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedlanguages) wurde zur Entität [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) hinzugefügt.  |
-| Ergänzungen | Beta | Die neue Funktion [supportedTimeZones](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedtimezones) wurde zur Entität [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) hinzugefügt.  |
+| Ergänzungen | Beta | Die neue [supportedTimeZones](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedtimezones)-Funktion wurde der [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser)-Entität hinzugefügt.  |
+
+
+### <a name="sharepoint-lists"></a>SharePoint-Listen
+
+|**Änderungstyp**|**Version**|**Beschreibung**|
+|:-------------|:-----------|:--------------|
+| Ergänzungen | v1.0 | Hinzugefügte neue Entitäten: [ColumnDefinition][], [ColumnLink][], [ContentType][], [List][], [ListItem][]. |
+| Ergänzungen | v1.0 | Die Beziehungen **columns**, **contentTypes**, **items** und **lists** wurden der [Site][]-Ressource hinzugefügt. |
+| Ergänzungen | v1.0 | Die folgenden komplexen Typen wurden hinzugefügt: [BooleanColumn][], [CalculatedColumn][], [ChoiceColumn][], [ContentTypeInfo][], [ContentTypeOrder][], [CurrencyColumn][], [DateTimeColumn][], [DefaultColumnValue][], [ListInfo][], [LookupColumn][], [NumberColumn][], [PersonOrGroupColumn][], [SystemFacet][], [TextColumn][]. |
+| Ergänzungen | Beta | Hinzugefügte neue Entitäten: [BaseItemVersion][BaseItemVersion-beta], [ColumnLink][ColumnLink-beta], [ContentType][ContentType-beta], [ListItemVersion][ListItemVersion-beta], |
+| Ergänzungen | Beta | Die Eigenschaften **columnGroup**, **currency**, **defaultValue** und **displayName** wurden [ColumnDefinition][ColumnDefinition-beta] hinzugefügt. |
+| Ergänzungen | Beta | Die Eigenschaften **displayName** und **system** wurden der [List][List-beta]-Ressource hinzugefügt. |
+| Ergänzungen | Beta | Die Beziehungen **activities** und **contentTypes** wurden der [List][List-beta]-Ressource hinzugefügt. |
+| Ergänzungen | Beta | Die **contentType**-Eigenschaft wurde der [ListItem][ListItem-beta]-Ressource hinzugefügt. |
+| Ergänzungen | Beta | Die Beziehungen **activities** und **versions** wurden der [ListItem][ListItem-beta]-Ressource hinzugefügt. |
+| Ergänzungen | Beta | Die **contentType**-Beziehung wurde der [Site][Site-beta]-Ressource hinzugefügt. |
+| Ergänzungen | Beta | Die **outputType**-Eigenschaft wurde dem [BooleanColumn][BooleanColumn-beta]-Typ hinzugefügt. |
+| Ergänzungen | Beta | Die folgenden komplexen Typen wurden hinzugefügt: [ContentTypeInfo][ContentTypeInfo-beta], [ContentTypeOrder][ContentTypeOrder-beta], [CurrencyColumn][CurrencyColumn-beta] und [SystemFacet][SystemFacet-beta]. |
+| Ergänzungen | Beta | Die **contentTypesEnabled**-Eigenschaft wurde dem komplexen Typ [ListInfo] [ ListInfo-beta] hinzugefügt. |
+| Ergänzungen | Beta | Die **allowUnlimitedLength**-Eigenschaft wurde dem komplexen Typ [LookupColumn][LookupColumn-beta] hinzugefügt. |
+| Änderung   | Beta | Die **allowMultipleValue**-Eigenschaft wurde in **allowMultipleValues** im komplexen Typ [LookupColumn][LookupColumn-beta] umbenannt. |
+| Änderung   | Beta | Die **ChooseFrom**-Eigenschaft wurde in **chooseFromType** im komplexen Datentyp [PersonOrGroupColumn][PersonOrGroupColumn-beta] umbenannt. |
+| Löschung | Beta | Die **locale**-Eigenschaft wurde aus dem komplexen Typ [NumberColumn][NumberColumn-beta] entfernt. |
+| Löschung | Beta | Die **enforceUniqueValues**-Eigenschaft wurde aus dem komplexen Typ [PersonOrGroupColumn][PersonOrGroupColumn-beta] entfernt. |
+
+[BaseItemVersion-beta]: ../api-reference/beta/resources/baseitemversion.md
+[BooleanColumn-beta]:  ../api-reference/beta/resources/booleanColumn.md
+[BooleanColumn]: ../api-reference/v1.0/resources/booleancolumn.md
+[CalculatedColumn]: ../api-reference/v1.0/resources/calculatedcolumn.md
+[ChoiceColumn]: ../api-reference/v1.0/resources/choicecolumn.md
+[ColumnDefinition-beta]: ../api-reference/beta/resources/columndefinition.md
+[ColumnDefinition]: ../api-reference/v1.0/resources/columndefinition.md
+[ColumnLink-beta]: ../api-reference/beta/resources/columnLink.md
+[ColumnLink]: ../api-reference/v1.0/resources/columnLink.md
+[ContentType-beta]: ../api-reference/beta/resources/contentType.md
+[ContentType]: ../api-reference/v1.0/resources/contentType.md
+[ContentTypeInfo-beta]: ../api-reference/beta/resources/contentTypeInfo.md
+[ContentTypeInfo]: ../api-reference/v1.0/resources/contentTypeInfo.md
+[ContentTypeOrder-beta]: ../api-reference/beta/resources/contentTypeOrder.md
+[ContentTypeOrder]: ../api-reference/v1.0/resources/contentTypeOrder.md
+[CurrencyColumn-beta]: ../api-reference/beta/resources/currencycolumn.md
+[CurrencyColumn]: ../api-reference/v1.0/resources/currencycolumn.md
+[DateTimeColumn]: ../api-reference/v1.0/resources/datetimecolumn.md
+[DefaultColumnValue]: ../api-reference/v1.0/resources/defaultColumnValue.md
+[List-beta]: ../api-reference/beta/resources/list.md
+[List]: ../api-reference/v1.0/resources/list.md
+[ListInfo-beta]: ../api-reference/beta/resources/listinfo.md
+[ListInfo]: ../api-reference/v1.0/resources/listinfo.md
+[ListItem-beta]: ../api-reference/beta/resources/listitem.md
+[ListItem]: ../api-reference/v1.0/resources/listitem.md
+[ListItemVersion-beta]: ../api-reference/beta/resources/listitemversion.md
+[LookupColumn-beta]: ../api-reference/beta/resources/lookupColumn.md
+[LookupColumn]: ../api-reference/v1.0/resources/lookupcolumn.md
+[NumberColumn-beta]: ../api-reference/beta/resources/numberColumn.md
+[NumberColumn]: ../api-reference/v1.0/resources/numbercolumn.md
+[PersonOrGroupColumn-beta]: ../api-reference/beta/resources/personOrGroupColumn.md
+[PersonOrGroupColumn]: ../api-reference/v1.0/resources/personorgroupcolumn.md
+[Site-beta]: ../api-reference/beta/resources/site.md
+[Site]: ../api-reference/v1.0/resources/site.md
+[SystemFacet-beta]: ../api-reference/beta/resources/systemfacet.md
+[SystemFacet]: ../api-reference/v1.0/resources/systemFacet.md
+[TextColumn]: ../api-reference/v1.0/resources/textcolumn.md
+
+
+### <a name="sharepoint-sites"></a>SharePoint-Websites
+
+|**Änderungstyp**|**Version**|**Beschreibung**|
+|:-------------|:-----------|:--------------|
+| Ergänzungen | Beta | Die Eigenschaften **dataLocationCode** und **root** wurden dem komplexen Typ  [SiteCollection][SiteCollection-beta] hinzugefügt. |
+
+[SiteCollection-beta]: ../api-reference/beta/resources/sitecollection.md
 
 
 ## <a name="august-2017"></a>August 2017
@@ -76,7 +257,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 | Ergänzungen | v1.0 und Beta | Die Navigationseigenschaft [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote) wurde zu **site** hinzugefügt.  |
 | Ergänzungen | Beta | Die Zielparameter *siteCollectionId* und *siteId* für Kopiervorgänge. Beispiel: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook). |
 
-### <a name="people"></a>Kontakte 
+### <a name="people"></a>Personen 
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:-------------|:-----------|:--------------|
