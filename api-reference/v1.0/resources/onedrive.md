@@ -58,7 +58,9 @@ Die meisten API-Anforderungen für Dateiinteraktionen verwenden eine der folgend
 | `/groups/{group-id}/drive` | Greift auf die Standarddokumentbibliothek für eine Gruppe mithilfe der eindeutigen ID der Gruppe zu. |
 | `/shares/{share-id}` | Greift auf ein **DriveItem** über seine **SharedId** oder eine Freigabe-URL zu. |
 
-Zusätzlich zur Adressierung eines **DriveItem** innerhalb eines **Drive** durch eine eindeutige ID kann die App ein **DriveItem** auch über einen relativen Pfad von einer bekannten Ressource adressieren. Zur Adressierung über einen Pfad wird das Doppelpunktzeichen (`:`) für das Escape des relativen Pfads verwendet. Diese Tabelle enthält ein Beispiel für unterschiedliche Methoden für die Verwendung des Doppelpunkts zur Adressierung eines Elements nach Pfad.
+Zusätzlich zur Adressierung eines **DriveItem** innerhalb eines **Drive** durch eine eindeutige ID kann die App ein **DriveItem** auch über einen relativen Pfad von einer bekannten Ressource adressieren.
+Zur Adressierung über einen Pfad wird das Doppelpunktzeichen (`:`) für das Escape des relativen Pfads verwendet.
+Diese Tabelle enthält ein Beispiel für unterschiedliche Methoden für die Verwendung des Doppelpunkts zur Adressierung eines Elements nach Pfad.
 
 | Pfad | Ressource |
 |---|---|
@@ -69,13 +71,15 @@ Zusätzlich zur Adressierung eines **DriveItem** innerhalb eines **Drive** durch
 
 ## <a name="drive-resource"></a>Drive-Ressource
 
-Die [Drive-Ressource](drive.md) ist das Objekt der obersten Ebene innerhalb des OneDrive eines Benutzers oder einer SharePoint-Dokumentbibliothek. Fast alle Dateivorgänge beginnen damit, dass eine bestimmte Drive-Ressource  adressiert wird.
+Die [Drive-Ressource](drive.md) ist das Objekt der obersten Ebene innerhalb des OneDrive eines Benutzers oder einer SharePoint-Dokumentbibliothek.
+Fast alle Dateivorgänge beginnen damit, dass eine bestimmte Drive-Ressource  adressiert wird.
 
 Eine Drive-Ressource kann entweder von der eindeutigen ID des Laufwerks oder von dem Standardlaufwerk eines [Benutzers](user.md), einer [Gruppe](group.md), oder einer Organisation adressiert werden. 
 
 ## <a name="driveitem-resource"></a>DriveItem-Ressource
 
-[DriveItems](driveitem.md) sind die Objekte innerhalb des Laufwerks-Dateisystems. Der Zugriff darauf erfolgt über ihre **id** unter Verwendung der `/items/{item-id}`-Syntax oder den Dateisystempfad unter Verwendung der`/root:/path/to/item/`-Syntax.
+[DriveItems](driveitem.md) sind die Objekte innerhalb des Laufwerks-Dateisystems.
+Der Zugriff darauf erfolgt über ihre **id** unter Verwendung der `/items/{item-id}`-Syntax oder den Dateisystempfad unter Verwendung der`/root:/path/to/item/`-Syntax.
 
 DriveItems verfügen _Facets_, die Daten zu den Identitäten und Funktionen der Elemente bereitstellen.
 
@@ -83,13 +87,15 @@ DriveItems mit einem **folder**-Facet fungieren als Container von Elementen und 
 
 ## <a name="shared-folders-and-remote-items"></a>Freigegebene Ordner und Remoteelemente
 
-Persönliche OneDrive-Benutzer können ein oder mehrere freigegebene Elemente von einem anderen Laufwerk zu ihrem eigenen OneDrive hinzufügen. Diese freigegebenen Elemente werden als **DriveItem** in der **children**-Sammlung mit einem [remoteItem](remoteitem.md)-Facet angezeigt.
+Persönliche OneDrive-Benutzer können ein oder mehrere freigegebene Elemente von einem anderen Laufwerk zu ihrem eigenen OneDrive hinzufügen.
+Diese freigegebenen Elemente werden als **DriveItem** in der **children**-Sammlung mit einem [remoteItem](remoteitem.md)-Facet angezeigt.
 
 Weitere Informationen zum Arbeiten mit freigegebenen Ordnern und Remoteelementen finden Sie unter [Remoteelemente und freigegebene Ordner](remoteitem.md).   
 
 ## <a name="sharing-and-permissions"></a>Freigabe und Berechtigungen
 
-Eine der am häufigsten verwendeten Aktionen für OneDrive und SharePoint-Dokumentbibliotheken besteht im Freigeben von Inhalten für andere Personen. Über Microsoft Graph kann Ihre App [Freigabelinks](../api/item_createLink.md) erstellen, [Genehmigungen hinzufügen und Einladungen an Elemente eines Laufwerks senden](../api/item_invite.md).
+Eine der am häufigsten verwendeten Aktionen für OneDrive und SharePoint-Dokumentbibliotheken besteht im Freigeben von Inhalten für andere Personen.
+Über Microsoft Graph kann Ihre App [Freigabelinks](../api/driveitem_createlink.md) erstellen, [Genehmigungen hinzufügen und Einladungen](../api/driveitem_invite.md) an Elemente eines Laufwerks senden.
 
 Microsoft Graph bietet der App auch eine Möglichkeit, [Zugriff auf freigegebene Inhalte](../api/shares_get.md) direkt über einen Freigabelinks zu erhalten.
 

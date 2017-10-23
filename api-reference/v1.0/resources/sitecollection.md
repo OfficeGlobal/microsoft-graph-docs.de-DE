@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SiteCollection
+ms.openlocfilehash: 6b36f3a0c2d958081f1b5663231a541f2e8a000f
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/28/2017
+---
 # <a name="sitecollection-resource"></a>SiteCollection-Ressource
 
 Die **siteCollection**-Ressource stellt weitere Informationen zu einer Websitesammlung bereit.
@@ -35,5 +46,5 @@ Es folgt eine JSON-Darstellung der Ressource.
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "Facets/SiteCollection"
 }-->

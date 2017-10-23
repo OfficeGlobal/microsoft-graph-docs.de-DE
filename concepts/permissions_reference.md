@@ -249,22 +249,22 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
-|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Files.Read_ |    Lesezugriff auf Benutzerdateien | Ermöglicht der App, die Dateien des angemeldeten Benutzers zu lesen.| Nein |
-| _Files.Read.All_ | Alle Dateien lesen, auf die der Benutzer zugreifen kann | Ermöglicht der App, alle Dateien zu lesen, auf die der angemeldete Benutzer zugreifen kann. | Nein |
-| _Files.ReadWrite_ |   Vollzugriff auf Benutzerdateien | Ermöglicht der App, Dateien des angemeldeten Benutzers zu lesen, zu erstellen, zu aktualisieren und zu löschen. | Nein |
-| _Files.ReadWrite.All_ | Vollzugriff auf alle Dateien, auf die Benutzer zugreifen können | Ermöglicht der App, alle Dateien zu lesen, zu erstellen, zu aktualisieren und zu löschen, auf die der angemeldete Benutzer zugreifen kann. | Nein |
-| _Files.ReadWrite.AppFolder_ | Vollzugriff auf den Anwendungsordner (Vorschau) | (Vorschau) Ermöglicht der App, Dateien im Anwendungsordner zu lesen, zu erstellen, zu aktualisieren und zu löschen. | Nein |
-| _Files.Read.Selected_ |    Dateien lesen, die der Benutzer auswählt (Vorschau) | **Eingeschränkte Unterstützung in Microsoft Graph – siehe Anmerkungen** <br/> (Vorschau) Ermöglicht der App, Dateien zu lesen, die der Benutzer auswählt. Sobald der Benutzer eine Datei auswählt, erhält die App mehrere Stunden Zugriff auf diese Datei. | Nein |
-| _Files.ReadWrite.Selected_ |    Dateien lesen und schreiben, die der Benutzer auswählt (Vorschau) | **Eingeschränkte Unterstützung in Microsoft Graph – siehe Anmerkungen** <br/> (Vorschau) Ermöglicht der App, Dateien zu lesen und zu schreiben, die der Benutzer auswählt. Sobald der Benutzer eine Datei auswählt, erhält die App mehrere Stunden Zugriff auf diese Datei. | Nein |
+| Berechtigung                  | Anzeigezeichenfolge                                         | Beschreibung                                                                                                                                                                                             | Administratorzustimmung erforderlich |
+| :-------------------------- | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------- |
+| _Files.Read_                | Lesezugriff auf Benutzerdateien                                        | Ermöglicht der App, die Dateien des angemeldeten Benutzers zu lesen.                                                                                                                                                      | Nein                     |
+| _Files.Read.All_            | Alle Dateien lesen, auf die der Benutzer zugreifen kann                    | Ermöglicht der App, alle Dateien zu lesen, auf die der angemeldete Benutzer zugreifen kann.                                                                                                                                         | Nein                     |
+| _Files.ReadWrite_           | Vollzugriff auf Benutzerdateien                         | Ermöglicht der App, Dateien des angemeldeten Benutzers zu lesen, zu erstellen, zu aktualisieren und zu löschen.                                                                                                                          | Nein                     |
+| _Files.ReadWrite.All_       | Vollzugriff auf alle Dateien, auf die Benutzer zugreifen können          | Ermöglicht der App, alle Dateien zu lesen, zu erstellen, zu aktualisieren und zu löschen, auf die der angemeldete Benutzer zugreifen kann.                                                                                                             | Nein                     |
+| _Files.ReadWrite.AppFolder_ | Vollzugriff auf den Anwendungsordner (Vorschau) | (Vorschau) Ermöglicht der App, Dateien im Anwendungsordner zu lesen, zu erstellen, zu aktualisieren und zu löschen.                                                                                                         | Nein                     |
+| _Files.Read.Selected_       | Lesezugriff auf Dateien, die der Benutzer auswählt                       | **Eingeschränkte Unterstützung in Microsoft Graph – siehe Anmerkungen** <br/> (Vorschau) Ermöglicht der App, Dateien zu lesen, die der Benutzer auswählt. Sobald der Benutzer eine Datei auswählt, erhält die App mehrere Stunden Zugriff auf diese Datei.            | Nein                     |
+| _Files.ReadWrite.Selected_  | Lese- und Schreibzugriff auf Dateien, die der Benutzer auswählt             | **Eingeschränkte Unterstützung in Microsoft Graph – siehe Anmerkungen** <br/> (Vorschau) Ermöglicht der App, Dateien zu lesen und zu schreiben, die der Benutzer auswählt. Sobald der Benutzer eine Datei auswählt, erhält die App mehrere Stunden Zugriff auf diese Datei. | Nein                     |
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
-|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Files.Read.All_ | Lesen von Dateien in allen Websitesammlungen (Vorschau) | (Vorschau) Ermöglicht der App, alle Dateien in allen Websitesammlungen ohne einen angemeldeten Benutzer zu lesen. | Ja |
-| _Files.ReadWrite.All_ | Lesen und Schreiben von Dateien in allen Websitesammlungen (Vorschau) | **Eingeschränkte Unterstützung in Microsoft Graph** <br/> (Vorschau) Ermöglicht der App, alle Dateien in allen Websitesammlungen ohne einen angemeldeten Benutzer zu lesen, zu erstellen, zu aktualisieren und zu löschen. | Ja |
+| Berechtigung            | Anzeigezeichenfolge                               | Beschreibung                                                                                                    | Administratorzustimmung erforderlich |
+| :-------------------- | :------------------------------------------- | :------------------------------------------------------------------------------------------------------------- | :--------------------- |
+| _Files.Read.All_      | Lesen von Dateien in allen Websitesammlungen           | Die App kann alle Dateien in allen Websitesammlungen ohne angemeldeten Benutzer lesen.                             | Ja                    |
+| _Files.ReadWrite.All_ | Lesen und Schreiben von Dateien in allen Websitesammlungen | Die App kann alle Dateien in allen Websitesammlungen ohne angemeldeten Benutzer lesen, erstellen, aktualisieren und löschen. | Ja                    |
 
 ### <a name="remarks"></a>HinwBemerkungeneise
 
@@ -272,9 +272,8 @@ Die delegierten Berechtigungen „Files.Read“, „Files.ReadWrite“, „Files
 
 Die delegierten Berechtigungen „Files.Read.Selected“ und „Files.ReadWrite.Selected“ sind nur für Geschäfts-, Schul- oder Unikonten gültig und werden nur für Arbeit mit [Office 365-Dateihandlern (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps) bereitgestellt. Sie dürfen nicht verwendet werden, um Microsoft Graph-APIs direkt aufzurufen. 
 
-Die delegierte Berechtigung „Files.ReadWrite.AppFolder“ ist nur für persönliche Konten gültig und wird zum Zugreifen auf den [speziellen Anwendungsstammordner](https://dev.onedrive.com/items/special_folders.htm) mit der Microsoft Graph-API [Speziellen Ordner abrufen](../api-reference/v1.0/api/drive_special.md) für OneDrive verwendet.
+Die delegierte Berechtigung „Files.ReadWrite.AppFolder“ ist nur für persönliche Konten gültig und wird zum Zugreifen auf den [speziellen Anwendungsstammordner](https://dev.onedrive.com/misc/appfolder.htm) mit der Microsoft Graph-API [Speziellen Ordner abrufen](../api-reference/v1.0/api/drive_get_specialfolder.md) für OneDrive verwendet.
 
-Die Berechtigung „Files.ReadWrite.All“ unterstützt noch nicht die Microsoft Graph-API [Wiederaufnehmbare Uploadsitzung erstellen](../api-reference/v1.0/api/item_createuploadsession.md) für OneDrive. Vollständige Unterstützung wird in Kürze bereitgestellt. 
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
 #### <a name="delegated"></a>Delegiert
@@ -588,28 +587,35 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
-|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Sites.Read.All_ |    Elemente in allen Websitesammlungen lesen | Ermöglicht der App, Dokumente und Listenelemente in allen Websitesammlungen im Namen des angemeldeten Benutzers zu lesen. | Nein |
-| _Sites.ReadWrite.All_ |    Lese-/Schreibzugriff auf Elemente in allen Websitesammlungen | Ermöglicht der App, Dokumente und Listenelemente in allen Websitesammlungen im Namen des angemeldeten Benutzers zu bearbeiten oder zu löschen. | Nein |
+| Berechtigung              | Anzeigezeichenfolge                                                   | Beschreibung                                                                                                                   | Administratorzustimmung erforderlich |
+| :---------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- | :--------------------- |
+| _Sites.Read.All_        | Elemente in allen Websitesammlungen lesen                               | Ermöglicht der App, Dokumente und Listenelemente in allen Websitesammlungen im Namen des angemeldeten Benutzers zu lesen.                      | Nein                     |
+| _Sites.ReadWrite.All_   | Lese-/Schreibzugriff auf Elemente in allen Websitesammlungen                     | Ermöglicht der App, Dokumente und Listenelemente in allen Websitesammlungen im Namen des angemeldeten Benutzers zu bearbeiten oder zu löschen.            | Nein                     |
+| _Sites.Manage.All_      | Erstellen, Bearbeiten und Löschen von Elementen und Listen in allen Websitesammlungen | Ermöglicht der App, Listen, Dokumente und Listenelemente in allen Websitesammlungen im Namen des angemeldeten Benutzers zu verwalten und zu erstellen. | Nein                     |
+| _Sites.FullControl.All_ | Sie benötigen Vollzugriff auf alle Websitesammlungen.                        | Ermöglicht der App, vollständige Kontrolle über SharePoint-Websites in allen Websitesammlungen im Namen des angemeldeten Benutzers zu erlangen.              | Ja                    |
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
-|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Sites.Read.All_ |    Elemente in allen Websitesammlungen lesen (Vorschau) | Die App kann Dokumente und Listenelemente in allen Websitesammlungen ohne angemeldeten Benutzer lesen. | Ja |
-| _Sites.ReadWrite.All_ |    Lese-/Schreibzugriff auf Elemente in allen Websitesammlungen (Vorschau) | Die App kann Dokumente und Listenelemente in allen Websitesammlungen ohne angemeldeten Benutzer erstellen, lesen, aktualisieren und löschen. | Ja |
+| Berechtigung              | Anzeigezeichenfolge                                                   | Beschreibung                                                                                                                   | Administratorzustimmung erforderlich |
+| :---------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- | :--------------------- |
+| _Sites.Read.All_        | Elemente in allen Websitesammlungen lesen                               | Die App kann Dokumente und Listenelemente in allen Websitesammlungen ohne angemeldeten Benutzer lesen.                             | Ja                    |
+| _Sites.ReadWrite.All_   | Lese-/Schreibzugriff auf Elemente in allen Websitesammlungen                     | Die App kann Dokumente und Listenelemente in allen Websitesammlungen ohne angemeldeten Benutzer erstellen, lesen, aktualisieren und löschen. | Ja                    |
+| _Sites.Manage.All_      | Sie benötigen Vollzugriff auf alle Websitesammlungen.                        | Ermöglicht der App, Listen, Dokumente und Listenelemente in allen Websitesammlungen ohne angemeldeten Benutzer zu verwalten und zu erstellen.        | Ja                    |
+| _Sites.FullControl.All_ | Erstellen, Bearbeiten und Löschen von Elementen und Listen in allen Websitesammlungen | Ermöglicht der App, vollständige Kontrolle über SharePoint-Websites in allen Websitesammlungen ohne angemeldeten Benutzer zu erlangen.                     | Ja                    |
+
 
 ### <a name="remarks"></a>HinwBemerkungeneise
+
 Websiteberechtigungen gelten nur für Geschäfts-, Schul- oder Unikonten.
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
+
 #### <a name="delegated"></a>Delegiert
 
-* _Sites.Read.All_: Die Listen auf der SharePoint-Stammwebsite lesen (`GET /beta/sharePoint/site/lists`)
-* _Sites.ReadWrite.All_: Neue Listenelemente in einer SharePoint-Liste erstellen (`POST /beta/sharePoint/site/lists/123/items`)
-
-Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
+* _Sites.Read.All_: Die Listen auf der SharePoint-Stammwebsite lesen (`GET /v1.0/sites/root/lists`)
+* _Sites.ReadWrite.All_: Neue Listenelemente in einer SharePoint-Liste erstellen (`POST /v1.0/sites/root/lists/123/items`)
+* _Sites.Manage.All_ : Neue Liste zu einer SharePoint-Website hinzufügen (`POST /v1.0/sites/root/lists`)
+* _Sites.FullControl.All_ : Vollständiger Zugriff auf SharePoint-Websites und -Listen.
 
 ---
 

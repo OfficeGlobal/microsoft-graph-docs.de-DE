@@ -1,4 +1,15 @@
-# <a name="thumbnail-resource-type"></a>thumbnail-Ressourcentyp
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Thumbnail
+ms.openlocfilehash: 065c6ae7bbd4f6aca3172afd4399f0a1b5ff3d25
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/28/2017
+---
+# <a name="thumbnail-resource-type"></a>Thumbnail-Ressourcentyp
 
 Der **thumbnail**-Ressourcentyp stellt eine Miniaturansicht für ein Bild, ein Video, ein Dokument oder ein beliebiges Element dar, das über eine Bitmapdarstellung verfügt.
 
@@ -43,8 +54,7 @@ Es folgt eine JSON-Darstellung der **thumbnail**-Ressource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "thumbnail resource",
-  "keywords": "",
+  "description": "Thumbnail resource represents a single thumbnail for an item.",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/Thumbnail"
+} -->

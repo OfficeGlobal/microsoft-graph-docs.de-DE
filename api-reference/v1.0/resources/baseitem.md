@@ -1,8 +1,19 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: BaseItem
+ms.openlocfilehash: bbfebd734407259c391cdb1ce74beb96dc74d8bf
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/28/2017
+---
 # <a name="baseitem-resource-type"></a>baseItem-Ressourcentyp
 
 Die **baseItem**-Ressource ist eine abstrakte Ressource, die einen gemeinsamen Satz von Eigenschaften enthält, die auch von mehreren anderen Ressourcen verwendet werden. Folgende Ressourcen werden u. a. von abgeleitet **baseItem** abgeleitet:
 
-* [drive](drive.md)
+* [Laufwerk](drive.md)
 * [driveItem](driveitem.md)
 * [site](site.md)
 * [sharedDriveItem](shareddriveitem.md)
@@ -45,9 +56,9 @@ Es folgt eine JSON-Darstellung einer **baseItem**-Ressource.
 | lastModifiedDateTime | dateTimeOffset    | Datum und Uhrzeit der letzten Änderung des Elements. Schreibgeschützt.                                   |
 | name                 | string            | Der Name des Elements. Lese-/Schreibzugriff.                                                      |
 | parentReference      | [itemReference][] | Informationen zum übergeordneten Element, wenn das Element ein übergeordnetes Element hat. Lese-/Schreibzugriff.                              |
-| webUrl               | string (URL)      | URL, über die die Ressource im Browser angezeigt werden kann. Schreibgeschützt.                              |
+| webUrl               | String (URL)      | URL, über die die Ressource im Browser angezeigt werden kann. Schreibgeschützt.                              |
 
-[identitySet]: identitySet.md
+[identitySet]: identityset.md
 [itemReference]: itemreference.md
 
 ## <a name="remarks"></a>Bemerkungen
@@ -61,8 +72,5 @@ Der Typ `baseItem` wird voraussichtlich nicht direkt verwendet.
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/baseItem",
-  "tocBookmarks": {
-    "Site": "#"
-  }
+  "tocPath": "Resources/BaseItem"
 } -->

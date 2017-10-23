@@ -1,8 +1,20 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Mit mir geteilte Dateien auflisten
+ms.openlocfilehash: df6ae423c1c474f8707c71379970c51153eee5c2
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/28/2017
+---
 # <a name="list-items-shared-with-the-signed-in-user"></a>Elemente auflisten, die für den angemeldeten Benutzer freigegeben sind
 
 Mit dieser API können Sie eine Sammlung von Ressourcen des Typs [DriveItem](../resources/driveitem.md) abrufen, die für den Besitzer der Ressource des Typs [Drive](../resources/drive.md) freigegeben wurden.
 
 ## <a name="permissions"></a>Berechtigungen
+
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
@@ -11,31 +23,23 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Delegiert (persönliches Microsoft-Konto) | Files.Read.All, Files.ReadWrite.All    |
 |Anwendung | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
+**Hinweis:** Die /sharedWithMe-Anforderung funktioniert zwar mit Files.Read- oder Files.ReadWrite-Berechtigungen, es kann jedoch sein, dass einige Eigenschaften fehlen.
 Zusätzlich gilt: Ohne eine der Berechtigungen des Typs **All** ist kein Zugriff auf die von dieser API zurückgegebenen freigegebenen Elemente möglich.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
-<!-- { "blockType": "ignored" } -->
-```
-GET /me/drive/sharedWithMe
-```
+<!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "target": "action" } -->
 
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-
-## <a name="example"></a>Beispiel
-
-<!-- { "blockType": "request", "name": "drive-sharedwithme", "scopes": "files.read" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/sharedWithMe
+GET /me/drive/sharedWithMe
 ```
 
 ## <a name="response"></a>Antwort
 
 Dadurch wird eine Sammlung von [DriveItem](../resources/driveitem.md)-Ressourcen, zurückgegeben, die die DriveItem-Ressourcen enthalten, die für den Besitzer des Laufwerks freigegeben wurden. Da es sich bei dem Laufwerk um das Standardlaufwerk des Benutzers handelt, werden in diesem Beispiel Elemente zurückgegeben, die für den angemeldeten Benutzer freigegeben sind.
 
+<!-- {"blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true} -->
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true } -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -76,15 +80,16 @@ Content-Type: application/json
 
 DriveItems, die von der **SharedWithMe**-Aktion zurückgegeben werden, enthalten immer das [**remoteItem**](../resources/remoteitem.md)-Facet, das angibt, dass es sich um Elemente von einem anderen Laufwerk handelt. Um auf die freigegebenen DriveItem Ressourcen zuzugreifen, müssen Sie eine Anforderung anhand der Angaben in **remoteItem** im folgenden Format stellen:
 
-<!-- {"blockType": "ignored"} -->
+<!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
+
 ```http
-GET https://graph.microsoft.com/v1.0/drives/{remoteItem.parentReference.driveId}/items/{remoteItem.id}
+GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
 
 <!-- {
   "type": "#page.annotation",
-  "description": "Retrieve a list of files shared with the signed-in user.",
-  "keywords": "sharedWithMe onedrive shared files",
+  "description": "List the items shared with the owner of a drive.",
+  "keywords": "drive,onedrive.drive,default drive",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/Shared with me"
+  "tocPath": "Sharing/Shared with me"
 } -->

@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Image
+ms.openlocfilehash: 4488aedaf5c71f6484a0ccf33949fac2569d7af1
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/28/2017
+---
 # <a name="image-resource-type"></a>Image-Ressourcentyp
 
 Die **Image**-Ressourc gruppiert bildbezogene Eigenschaften in einer einzelnen Struktur. Wenn ein [**DriveItem**](driveitem.md) ein **image**-Facet ungleich Null aufweist, stellt das Element eine Bitmapdatei dar.
@@ -6,18 +17,11 @@ Die **Image**-Ressourc gruppiert bildbezogene Eigenschaften in einer einzelnen S
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
-Es folgt eine JSON-Darstellung der Ressource.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@odata.type": "microsoft.graph.image"
-}-->
-
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.image" } -->
 ```json
 {
-  "height": 1024,
-  "width": 1024
+  "width": 100,
+  "height": 200
 }
 ```
 
@@ -28,19 +32,17 @@ Es folgt eine JSON-Darstellung der Ressource.
 | **height** | Int32 | Optional. Die Höhe des Bilds in Pixel. Schreibgeschützt. |
 | **width**  | Int32 | Optional. Die Breite des Bilds in Pixel. Schreibgeschützt.  |
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-In OneDrive for Business wird diese Ressource für Elemente zurückgegeben, von denen basierend auf der Dateierweiterung davon ausgegangen wird, dass es sich um Bilder handelt. Diese Ressource gibt keine Eigenschaften in OneDrive for Business zurück.
+In OneDrive for Business wird diese Ressource für Elemente zurückgegeben, von denen basierend auf der Dateierweiterung davon ausgegangen wird, dass es sich um Bilder handelt.
 
 Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).
 
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "image resource",
-  "keywords": "",
+  "description": "The image facet describes properties of an image like width and height",
+  "keywords": "image,width,height,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Image"
+} -->

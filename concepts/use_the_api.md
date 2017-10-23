@@ -2,6 +2,8 @@
 
 Microsoft Graph ist eine RESTful-Web-API, mit der Sie auf Microsoft Cloud-Dienstressourcen zugreifen können. Nachdem Sie [Ihre App registriert](auth_register_app_v2.md) und [Authentifizierungstoken für einen Benutzer](auth_v2_user.md) oder einen [Dienst abgerufen haben](auth_v2_service.md), können Sie Anforderungen an die Microsoft Graph-API tätigen.
 
+> **Wichtig:**  Die Anwendung der Richtlinien für bedingten Zugriff für Microsoft Graph wurde geändert. Anwendungen müssen aktualisiert werden, um Szenarien ausführen zu können, für die bedingte Richtlinien konfiguriert sind. Weitere Informationen und Anleitungen hierzu finden Sie unter [Developer-Leitfaden zum bedingten Zugriff in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
+
 Erstellen Sie eine Anforderung, die der folgenden ähnlich ist, um in eine Ressource zu schreiben bzw. daraus zu lesen. Ressourcen können z. B. Benutzer oder E-Mail-Nachrichten sein.
 
 ```http

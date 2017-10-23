@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SharePoint-Website abrufen
+ms.openlocfilehash: c1f3d8096906a1cebafe15bfea18d924c1fd111c
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/28/2017
+---
 # <a name="get-a-site-resource"></a>Site-Ressource abrufen
 
 Dient zum Abrufen der Eigenschaften und Beziehungen einer [site][]-Ressource. Eine **site**-Ressource stellt eine Teamwebsite in SharePoint dar.
@@ -29,6 +40,8 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 So greifen Sie innerhalb eines Mandanten auf die SharePoint-Stammwebsite zu:
 
+<!-- { "blockType": "ignored" } -->
+
 ```http
 GET /sites/root
 GET /sites/contoso.sharepoint.com
@@ -44,7 +57,7 @@ GET /sites/{hostname}:/{server-relative-path}
 
 ## <a name="access-a-group-team-site"></a>Auf die Teamwebsite einer Gruppe zugreifen
 
-So greifen Sie auf die Teamwebsite für eine [group](../resources/group.md)-Ressource zu:
+So greifen Sie auf die Teamwebsite für eine  Gruppe zu:
 
 ```http
 GET /groups/{group-id}/sites/root
@@ -52,26 +65,35 @@ GET /groups/{group-id}/sites/root
 
 ## <a name="example"></a>Beispiel
 
-##### <a name="request"></a>Anforderung
+### <a name="request"></a>Anforderung
 
-<!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "get-site" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}
+GET /sites/{site-id}
 ```
 
-##### <a name="response"></a>Antwort
+### <a name="response"></a>Antwort
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "d297964f-d325-424b-a002-f54048a4622e",
-    "name": "OneDrive / SharePoint Team",
-    "description": "Collaboration site for the OneDrive and SharePoint team",
+  "id": "contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE",
+  "owner": {
+    "user": {
+      "displayName": "Daron Spektor",
+      "id": "5280E7FE-DC7A-4486-9490-E790D81DFEB3"
+    }
+  },
+  "displayName": "OneDrive Team Site",
+  "name": "1drvteam",
+  "createdDateTime": "2017-05-09T20:56:00Z",
+  "lastModifiedDateTime": "2017-05-09T20:56:01Z",
+  "webUrl": "https://contoso.sharepoint.com/teams/1drvteam"
 }
 ```
 
@@ -80,5 +102,5 @@ Content-type: application/json
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Site/Get site by ID"
+  "tocPath": "Sites/Get by ID"
 } -->

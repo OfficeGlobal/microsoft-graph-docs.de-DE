@@ -1,10 +1,19 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SearchResult
+ms.openlocfilehash: 33ce07c947d858f05844dd9dc2589379131c9dbb
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/28/2017
+---
 # <a name="searchresult-resource-type"></a>SearchResult-Ressourcentyp
 
-Die **SearchResult**-Ressource gibt an, dass ein Element die Antwort auf eine Suche ist.
+Die **SearchResult**-Ressource gibt an, dass ein Element die Antwort auf eine Suchanfrage ist.
 
 ## <a name="json-representation"></a>JSON-Darstellung
-
-Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
@@ -20,22 +29,18 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ## <a name="properties"></a>Eigenschaften
 
-| Eigenschaft            | Typ   | Beschreibung                                                                                                                                                                         |
-|:--------------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| onClickTelemetryUrl | String | Ein Rückruf-URL, die zum Erfassen von Telemetrieinformationen verwendet werden kann. Die Anwendung sollte ein GET für diese URL ausgeben, wenn der Benutzer mit diesem Element zur Verbesserung der Qualität der Ergebnisse interagiert. |
+| Eigenschaft            | Typ   | Beschreibung
+|:--------------------|:-------|:----------------------------------------------
+| onClickTelemetryUrl | String | Ein Rückruf-URL, die zum Erfassen von Telemetrieinformationen verwendet werden kann. Die Anwendung sollte ein GET für diese URL ausgeben, wenn der Benutzer mit diesem Element zur Verbesserung der Qualität der Ergebnisse interagiert.
 
 ## <a name="remarks"></a>Bemerkungen 
 
 Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).
 
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "searchResult resource",
-  "keywords": "",
+  "description": "The search result facet indicates an item is from a search.",
+  "keywords": "search result facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/SearchResult"
+} -->

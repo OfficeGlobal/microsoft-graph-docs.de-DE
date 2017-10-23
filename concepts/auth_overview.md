@@ -4,6 +4,8 @@ Zum Aufrufen von Microsoft Graph muss Ihre App ein Zugriffstoken von Azure Activ
 
 Dieses Thema enthält eine Übersicht über Zugriffstoken, Azure AD und das Verfahren zum Abrufen von Zugriffstoken durch Ihre App. Wenn Sie mit der Verfahren zum Integrieren einer App in Azure AD zum Abrufen von Token vertraut sind, können Sie direkt mit dem Abschnitt [Nächste Schritte](#next-steps) fortfahren, der Informationen und Beispiele speziell zu Microsoft Graph enthält. 
 
+> **Wichtig:**  Die Anwendung der Richtlinien für bedingten Zugriff für Microsoft Graph wurde geändert. Anwendungen müssen aktualisiert werden, um Szenarien ausführen zu können, für die bedingte Richtlinien konfiguriert sind. Weitere Informationen und Anleitungen hierzu finden Sie unter [Developer-Leitfaden zum bedingten Zugriff in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
+
 ## <a name="what-is-an-access-token-and-how-do-i-use-it"></a>Was sind Zugriffstoken und wie werden sie verwendet?
 
 Von Azure AD ausgestellte Zugriffstoken sind base64-codierte JSON Web Token (JWT). Sie enthalten Informationen (Ansprüche), die von Azure AD gesicherte Web-APIs wie Microsoft Graph verwenden, um die aufrufende Funktion zu überprüfen und sicherzustellen, dass diese über die richtigen Berechtigungen zum Ausführen des angeforderten Vorgangs verfügt. Beim Aufrufen von Microsoft Graph können Sie Zugriffstoken als undurchsichtig (opak) behandeln. Zugriffstoken sollten immer über einen sicheren Kanal wie z. B. Transport Layer Security (HTTPS) übertragen werden.

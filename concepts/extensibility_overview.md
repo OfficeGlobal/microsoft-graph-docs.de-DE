@@ -44,10 +44,10 @@ Mithilfe von [Schemaerweiterungen](../api-reference/v1.0/resources/schemaextensi
 
 Beim Erstellen einer Schemaerweiterungsdefinition müssen Sie einen eindeutigen Namen für die **ID** angeben. Es stehen zwei Benennungsoptionen zur Verfügung:
 
-- Wenn Sie bereits über eine Vanity-`.com`-Domäne verfügen, die Sie für Ihren Mandanten überprüft haben, können Sie den Domänennamen zusammen mit dem Schemanamen verwenden, um einen eindeutigen Namen im folgenden Format zu definieren: \{_&#65279;Domänenname_\}\_\{_&#65279;Schemaname_\}. Wenn Ihre Vanity-Domäne beispielsweise „contoso.com“ ist, können Sie eine **ID** mit dem Wert `contoso_mySchema` definieren.  Dies ist die bevorzugte Option.
+- Wenn Sie bereits über eine Vanity-`.com`-, `.net`-,  `.gov`-, `.edu`- oder `.org`-Domäne verfügen, die Sie für Ihren Mandanten überprüft haben, können Sie den Domänennamen zusammen mit dem Schemanamen verwenden, um einen eindeutigen Namen im folgenden Format zu definieren: \{_&#65279;Domänenname_\}\_\{_&#65279;Schemaname_\}. Wenn Ihre Vanity-Domäne beispielsweise „contoso.com“ ist, können Sie eine **ID** mit dem Wert `contoso_mySchema` definieren.  Dies ist die bevorzugte Option.
 - Wenn Sie nicht über eine überprüfte Vanity-Domäne verfügen, können Sie die **ID** einfach auf einen Schemanamen festlegen (ohne Domänennamenpräfix), z. B. `mySchema`. Microsoft Graph weist eine Zeichenfolgen-ID anhand des angegebenen Namens im folgenden Format zu: ext\{_&#65279;8-zufällige-alphanumerische-Zeichen_\}\_\{_&#65279;Schemaname_\}.  Beispiel: `extkvbmkofy_mySchema`.
 
-Sie sehen diesen eindeutigen Namen in der **ID**, wo er als Name des komplexen Typs verwendet wird, der Ihre benutzerdefinierten Daten in der erweiterten Ressourceninstanz speichert. 
+Sie sehen diesen eindeutigen Namen in der **ID**, wo er als Name des komplexen Typs verwendet wird, der Ihre benutzerdefinierten Daten in der erweiterten Ressourceninstanz speichert.
 
 Anders als bei offenen Erweiterungen handelt es sich bei der Verwaltung von Schemaerweiterungsdefinitionen ([Auflisten](../api-reference/v1.0/api/schemaextension_list.md), [Erstellen](../api-reference/v1.0/api/schemaextension_post_schemaextensions.md), [Abrufen](../api-reference/v1.0/api/schemaextension_get.md), [Aktualisieren](../api-reference/v1.0/api/schemaextension_update.md) und [Löschen](../api-reference/v1.0/api/schemaextension_delete.md)) und der Verwaltung ihrer Daten (Hinzufügen, Abrufen, Aktualisieren und Löschen) um unterschiedliche Sätze von API-Vorgängen. 
 

@@ -5,7 +5,7 @@ Sie können Microsoft Graph verwenden, um es Web- und Mobilanwendungen zu ermög
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
 
-Sie können auf eine Reihe von Excel-Objekten (wie Tabelle, Bereich oder Diagramm) mithilfe von standardmäßigen REST-APIs zugreifen, um Vorgänge zum Erstellen, Lesen, Aktualisieren und Löschen in der Abeitsmappe durchzuführen. Beispielsweise gibt `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
+Sie können auf eine Reihe von Excel-Objekten (wie Tabelle, Bereich oder Diagramm) mithilfe von standardmäßigen REST-APIs zugreifen, um Vorgänge zum Erstellen, Lesen, Aktualisieren und Löschen in der Abeitsmappe durchzuführen. Beispielsweise gibt `GET https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/worksheets`  
 eine Sammlung von Arbeitsblattobjekten zurück, die Teil der Arbeitsmappe sind.    
 
 
@@ -13,20 +13,21 @@ eine Sammlung von Arbeitsblattobjekten zurück, die Teil der Arbeitsmappe sind.
 
 ## <a name="authorization-and-scopes"></a>Autorisierung und Bereiche
 
-Sie können den [Azure AD v.20-Endpunkt](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth) verwenden, um Excel-APIs zu authentifizieren. Alle APIs benötigen den `Authorization: Bearer {access-token}`-HTTP-Header.   
+Sie können den [Azure AD v.2-Endpunkt](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth) verwenden, um Excel-APIs zu authentifizieren. Alle APIs benötigen den `Authorization: Bearer {access-token}`-HTTP-Header.   
   
-Einer der folgenden [Berechtigungsbereiche](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) ist erforderlich, um die Excel-Ressource verwenden:
+Einer der folgenden [Berechtigungsbereiche](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) ist erforderlich, um die Excel-Ressource zu verwenden:
 
-* Files.Read 
-* Files.ReadWrite
+* Files.Read (für Leseaktionen)
+* Files.ReadWrite (für Lese- und Schreibaktionen)
 
 
 ## <a name="sessions-and-persistence"></a>Sitzungen und Beständigkeit
 
-Excel-APIs können in einem der beiden folgenden Modi aufgerufen werden: 
+Excel-APIs können in einem der drei folgenden Modi aufgerufen werden: 
 
-1. Beständige Sitzung: Alle an der Arbeitsmappe vorgenommenen Änderungen werden gespeichert. Dies ist die übliche Vorgehensweise. 
-2. Nicht beständige Sitzung: Die von der API vorgenommenen Änderungen werden nicht am Quellspeicherort gespeichert. Stattdessen behält der Excel-Back-End-Server eine temporäre Kopie der Datei  bei, welche die während dieser API-Sitzung vorgenommenen Änderungen enthält. Wenn die Excel-Sitzung abläuft, gehen die Änderungen verloren. Dieser Modus eignet sich für Apps, die Analysen durchführen oder die Ergebnisse einer Berechnung oder eines Diagrammbilds abrufen, aber nicht den Dokumentstatus betreffen.   
+1. Beständige Sitzung: Alle an der Arbeitsmappe vorgenommenen Änderungen werden gespeichert. Dies ist die effizienteste und leistungsfähige Modus des Vorgangs. 
+2. Nicht beständige Sitzung: Die von der API vorgenommenen Änderungen werden nicht am Quellspeicherort gespeichert. Stattdessen behält der Excel-Back-End-Server eine temporäre Kopie der Datei  bei, welche die während dieser API-Sitzung vorgenommenen Änderungen enthält. Wenn die Excel-Sitzung abläuft, gehen die Änderungen verloren. Dieser Modus eignet sich für Apps, die Analysen durchführen oder die Ergebnisse einer Berechnung oder eines Diagrammbilds abrufen, aber nicht den Dokumentstatus betreffen. 
+3. Sitzungslos: Der API-Aufruf erfolgt ohne Sitzungsinformationen. Excel-Server müssen jedes Mal die Arbeitsmappen-Kopie des Servers lokalisieren, um den Vorgang auszuführen. Daher ist dies keine effiziente Methode zum Aufrufen von Excel-APIs. Sie eignet sich für die Abfrage von Ausnahmefällen. 
 
 Um die Sitzung in der API darzustellen, verwenden Sie den `workbook-session-id: {session-id}`-Header. 
 
@@ -67,7 +68,7 @@ content-type: application/json;odata.metadata
 #### <a name="usage"></a>Verwendung 
 
 Die vom vorherigen Aufruf zurückgegebene Sitzungs-ID wird als Header in nachfolgenden API-Anforderungen im  
-`workbook-session-id`-HTTP-Header übergeben. 
+`workbook-session-id`-HTTP-Header dargestellt. 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -75,6 +76,8 @@ GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksh
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
+
+>Hinweis: Wenn die Sitzungs-ID abgelaufen ist, wird ein `404` HTTP-Fehlercode an die Sitzung zurückgegeben. In einem solchen Szenario können Sie eine neue Sitzung erstellen und fortfahren. Sie können aber auch die Sitzung regelmäßig aktualisieren, damit die Sitzung erhalten bleibt. In der Regel läuft eine beständige Sitzung nach ca. 7 Minuten Inaktivität ab. Eine nicht beständige Sitzung läuft nach ca. 5 Minuten Inaktivität ab. 
 
 ## <a name="common-excel-scenarios"></a>Häufige Excel-Szenarien
 
@@ -149,7 +152,9 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="get-a-new-worksheet"></a>Neues Arbeitsblatt abrufen 
- 
+
+Rufen Sie ein Arbeitsblatt basierend auf den Namen ab. 
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/Sheet32243

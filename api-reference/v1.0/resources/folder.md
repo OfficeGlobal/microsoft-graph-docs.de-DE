@@ -1,6 +1,18 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Ordner
+ms.openlocfilehash: 664597297700f7af096ef30cfbd5342a45a6c157
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/28/2017
+---
 # <a name="folder-resource-type"></a>Folder-Ressourcentyp
 
-Die **Folder**-Ressource gruppiert ordnerbezogene Daten für ein Element in einer einzelnen Struktur. [**DriveItems**](driveitem.md) mit einem **Ordner**-Facet, das nicht Null ist, sind Container für andere DriveItems.
+Die **Folder**-Ressource gruppiert ordnerbezogene Daten für ein Element in einer einzelnen Struktur. 
+[**DriveItems**](driveitem.md) mit einem **Ordner**-Facet, das nicht Null ist, sind Container für andere DriveItems.
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -16,26 +28,29 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```json
 {
-  "childCount": 1024
+  "childCount": 1024,
+  "view": { "@odata.type": "microsoft.graph.folderView" }
 }
 ```
 
 ## <a name="properties"></a>Eigenschaften
 
-| Eigenschaft       | Typ  | Beschreibung                                                     |
-|:---------------|:------|:----------------------------------------------------------------|
-| **childCount** | Int64 | Die Anzahl der untergeordneten Elemente, die direkt in diesem Container enthalten. |
+| Eigenschaft       | Typ           | Beschreibung
+|:---------------|:---------------|:-------------------------------------------
+| **childCount** | Int64          | Die Anzahl von direkt in dem jeweiligen Container enthaltenen untergeordneten Elementen.
+| **view**       | [folderView][] | Eine Sammlung von Eigenschaften, welche die empfohlene Ansicht für den Ordner definieren.
 
-## <a name="remarks"></a>Bemerkungen 
+## <a name="remarks"></a>Hinweise 
 
-Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).
+Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem][].
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+[folderView]: folderView.md
+[DriveItem]: driveItem.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "folder resource",
-  "keywords": "",
+  "description": "The Folder facet describes properties of a folder",
+  "keywords": "folder,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Folder"
+} -->

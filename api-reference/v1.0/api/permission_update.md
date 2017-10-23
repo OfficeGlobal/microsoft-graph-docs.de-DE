@@ -1,6 +1,19 @@
-# <a name="update-permission"></a>Berechtigung aktualisieren
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: "Freigabeberechtigungen ändern"
+ms.openlocfilehash: ead6babf88b7efc578ef8be6d11cc9fb59dd5fdd
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/28/2017
+---
+# <a name="update-sharing-permission"></a>Freigabeberechtigung aktualisieren
 
-Über diese API können Sie die Eigenschaften einer Berechtigung aktualisieren, indem Sie einen Patch auf die betreffende Ressource anwenden.
+Über diese API können Sie die Eigenschaften einer Freigabeberechtigung aktualisieren, indem Sie einen Patch auf die betreffende Berechtigungsressource anwenden.
+
+Nur die **roles**-Eigenschaft kann auf diese Weise geändert werden.
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -15,21 +28,27 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
-PATCH /me/drive/items/{item-id}/permissions/{perm-id}
-PATCH /me/drive/root:/{path}:/permissions/{perm-id}
 PATCH /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
 PATCH /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
+PATCH /me/drive/items/{item-id}/permissions/{perm-id}
+PATCH /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
+PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## <a name="request-headers"></a>Anforderungsheader
+## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 
 | Name          | Typ   | Beschreibung                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | string | Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag (oder cTag) nicht mit dem aktuellen Tag des Elements übereinstimmt, wird die Antwort `412 Precondition Failed` zurückgegeben, und das Element wird nicht gelöscht. |
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.
+
+Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen.
+
+Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet.
+Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.
 
 | Eigenschaft     | Typ   | Beschreibung                   |
 |:-------------|:-------|:------------------------------|
@@ -41,29 +60,25 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das 
 
 ## <a name="example"></a>Beispiel
 
-##### <a name="request"></a>Anforderung
+Dies ist ein Beispiel für die Anforderung, welche die Rolle der Freigabeberechtigung zu Schreibgeschützt ändert.
 
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
-<!-- {
-  "blockType": "request",
-  "name": "update_permission"
-}-->
+<!-- {"blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite"} -->
+
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/permissions/{perm-id}
+PATCH /me/drive/items/{item-id}/permissions/{perm-id}
 Content-type: application/json
 
 {
   "roles": [ "read" ]
 }
 ```
-##### <a name="response"></a>Antwort
 
-Nachfolgend sehen Sie ein Beispiel der Antwort.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permission"
-} -->
+### <a name="response"></a>Antwort
+
+Bei Erfolg gibt diese Methode eine [Permission](../resources/permission.md)-Ressource im Antworttext zurück, die den aktualisierten Status der Berechtigung darstellt.
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission", "truncated": true } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -80,12 +95,16 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+## <a name="error-responses"></a>Fehlerantworten
+
+Weitere Informationen dazu, wie Fehler zurückgegeben werden, finden Sie im Thema [Fehlerantworten][error-response].
+
+[error-response]: ../../../concepts/errors.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "Update permission",
-  "keywords": "",
+  "description": "Update an item's sharing permissions",
+  "keywords": "permission, permissions, sharing, change permissions, update permission",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Update permission"
-}-->
+  "tocPath": "Sharing/Update permission"
+} -->

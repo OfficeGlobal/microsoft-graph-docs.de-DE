@@ -1,6 +1,38 @@
 # <a name="get-contactfolder"></a>contactFolder abrufen
 
-Mit dieser API können Sie einen Kontaktordner über seine Kontaktordner-ID abrufen.
+Dient zum Abrufen eines Kontaktordners anhand der Kontaktordner-ID.
+
+
+### <a name="get-another-users-contact-folder"></a>Abrufen des Kontaktordners eines anderen Benutzers
+
+Wenn Sie über Anwendungsberechtigungen oder die entsprechenden delegierten [Berechtigungen](#permissions) eines Benutzers verfügen, können Sie den Kontaktordner eines anderen Benutzers anzeigen. Dieser Abschnitt enthält Szenarien zu delegierten Berechtigungen.
+
+Beispiel: Ihre App besitzt delegierte Berechtigungen des Benutzers John. Der Benutzer Garth hat einen Kontaktordner für John freigegeben. Sie können den freigegebenen Ordner aufrufen, indem Sie Garths Benutzer-ID (oder den Benutzerprinzipalnamen) in der unten gezeigten Beispielabfrage angeben.
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/contactFolders/{id}
+```
+
+Diese Funktion gilt für alle unterstützten GET-Kontaktordnervorgänge für einen einzelnen Benutzer (siehe Abschnitt [HTTP-Anforderung](#http-request) unten). Sie gilt auch, wenn Garth sein gesamtes Postfachs an John delegiert hat.
+
+Wenn Garth weder seinen Kontaktordner für John freigegeben noch sein Postfach für John delegiert hat, wird bei der Angabe der Benutzer-ID oder des Benutzerprinzipalnamens von Garth in diesen GET-Vorgängen ein Fehler zurückgegeben. In solchen Fällen funktioniert die Angabe einer Benutzer-ID oder eines Benutzerprinzipalnamens nur, um den Kontaktordner eines angemeldeten Benutzers abzurufen, und die Abfrage entspricht der Verwendung der Verknüpfung the /me:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/contactFolders/{id}
+```
+
+Diese Funktion ist nur in GET-Vorgängen verfügbar für:
+
+- Freigegebene Kontaktordner
+- Freigegebene Kalender
+- Kontakte und Ereignisse in freigegebenen Ordnern
+- Die oben aufgeführten Ressourcen in delegierten Postfächern
+
+Diese Funktion steht in anderen Vorgängen für Kontakte, Ereignisse und deren Ordner nicht zur Verfügung.
+
+
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 

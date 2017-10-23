@@ -1,6 +1,17 @@
-# <a name="driverecipient-resource-type"></a>DriveRecipient-Ressourcentyp
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: DriveRecipient
+ms.openlocfilehash: 53f6a5559cb90142a88b839a996cb2eedfd1037a
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/28/2017
+---
+# <a name="driverecipient-resource"></a>DriveRecipient-Ressource
 
-Die **DriveRecipient**-Ressource stellt eine Person, eine Gruppe oder einen anderen Empfänger für die Freigabe mit der [Einladen](../api/item_invite.md)-Aktion dar.
+Die **DriveRecipient**-Ressource stellt eine Person, eine Gruppe oder einen anderen Empfänger für die Freigabe mit der [Einladen](../api/driveitem_invite.md)-Aktion dar.
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -27,11 +38,13 @@ Die Empfängerressource besitzt die folgenden Eigenschaften.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Bei Verwendung von [invite](../api/item_invite.md) zum Hinzufügen von Berechtigungen kann im DriveRecipient **email**, **alias** oder **objectId** angegeben sein. Nur einer dieser Werte ist erforderlich.
+Bei Verwendung von [invite](../api/driveitem_invite.md) zum Hinzufügen von Berechtigungen kann im DriveRecipient **email**, **alias** oder **objectId** angegeben sein.
+Nur einer dieser Werte ist erforderlich.
 
 <!-- {
   "type": "#page.annotation",
   "description": "Recipients resource defines a single recipient for the sharing invitation and permissions collection.",
   "keywords": "sharing,share,permissions,action.invite,invite,email",
-  "section": "documentation"
+  "section": "documentation",
+  "tocPath": "Resources/Recipients"
 } -->

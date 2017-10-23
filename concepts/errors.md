@@ -2,9 +2,9 @@
 
 <!--In this article:
   
--    [Status code](#msg_status_code)
--    [Error resource type](#msg_error_resource_type)
--    [Code property](#msg_code_property)
+-   [Status code](#msg_status_code)
+-   [Error resource type](#msg_error_resource_type)
+-   [Code property](#msg_code_property)
 
 <a name="msg_error_response"> </a> -->
 
@@ -18,7 +18,7 @@ In der folgenden Tabelle werden die HTTP-Statuscodes aufgeführt und beschrieben
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | 400         | Ungültige Anforderung (Bad Request)                     | Die Anforderung kann nicht verarbeitet werden, da sie fehlerhaft oder falsch ist.                                                                       |
 | 401         | Nicht autorisiert (Unauthorized)                    | Erforderliche Authentifizierungsinformationen fehlen oder sind für die Ressource nicht gültig.                                                   |
-| 403         | Verboten (Forbidden)                       | Der Zugriff auf die angeforderte Ressource wird verweigert. Der Benutzer verfügt möglicherweise nicht über ausreichende Berechtigungen.                                                 |
+| 403         | Forbidden                       | Der Zugriff auf die angeforderte Ressource wird verweigert. Der Benutzer verfügt möglicherweise nicht über ausreichende Berechtigungen. <br /><br /> **Wichtig:** Wenn Richtlinien für bedingten Zugriff auf eine Ressource angewandt werden, wird möglicherweise der Fehler HTTP 403; Forbidden error=insufficent_claims zurückgegeben. Weitere Informationen zur Microsoft Graph und zum bedingten Zugriff finden Sie in der [Developer-Leitfaden zum bedingten Zugriff in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)  |
 | 404         | Nicht gefunden (Not Found)                       | Die angeforderte Ressource ist nicht vorhanden.                                                                                                  |
 | 405         | Methode nicht zulässig (Method Not Allowed)              | Die HTTP-Methode in der Anforderung ist für die Ressource nicht zulässig.                                                                         |
 | 406         | Nicht zulässig (Not Acceptable)                  | Dieser Dienst unterstützt nicht das im Accept-Header angeforderte Format.                                                                |
@@ -36,7 +36,7 @@ In der folgenden Tabelle werden die HTTP-Statuscodes aufgeführt und beschrieben
 | 503         | Dienst nicht verfügbar (Service Unavailable)             | Der Dienst ist wegen Wartung vorübergehend nicht verfügbar ist oder ist überlastet. Sie können die Anfrage nach einer Verzögerung wiederholen, deren Länge in einem Retry-After-Header angegeben werden kann. |
 | 504         | Gateway-Timeout                 | Der Server fungiert zwar als Proxy, hat aber keine rechtzeitige Antwort vom Upstreamserver empfangen, die für den Zugriff erforderlich war, um die Anforderung abzuschließen. Kann zusammen mit 503 auftreten. |
 | 507         | Unzureichender Speicher (Insufficient Storage)            | Das maximale Speicherkontingent wurde erreicht.                                                                                            |
-| 509         | Bandbreitengrenze überschritten (Bandwidth Limit Exceeded)        | Die App wurde gedrosselt, da sie die maximale Bandbreite überschritten hat. Die App kann die Anforderung nach einiger Zeit wiederholen. |
+| 509         | Bandwidth Limit Exceeded        | Die App wurde gedrosselt, da sie die maximale Bandbreite überschritten hat. Die App kann die Anforderung nach einiger Zeit wiederholen. |
 
 Die Fehlerantwort ist ein einzelnes JSON-Objekt, das eine einzige Eigenschaft mit dem Namen **error** enthält. Dieses Objekt enthält alle Fehlerdetails. Sie können die hier zurückgegebenen Informationen anstelle von oder zusätzlich zu dem HTTP-Statuscode verwenden. Nachfolgend finden Sie ein Beispiel für einen vollständigen JSON-Fehlertext.
 

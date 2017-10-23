@@ -20,6 +20,11 @@ GET /users/{id | userPrincipalName}
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+
+Standardmäßig wird nur ein begrenzter Satz von Eigenschaften zurückgegeben (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
+
+Um einen alternativen Eigenschaftensatz zurückzugeben, müssen Sie den gewünschten Satz von [user](../resources/user.md)-Eigenschaften mithilfe des Odata-Abfrageparameters `$select` angeben. Um zum Beispiel _displayName_, _givenName_ und _postalCode_ zurückzugeben, fügen Sie Folgendes zur Abfrage hinzu: `$select=displayName,givenName,postalCode`.
+
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert|
 |:-----------|:------|
@@ -32,9 +37,15 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 ## <a name="response"></a>Antwort
 
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [user](../resources/user.md)-Objekt im Antworttext zurückgegeben.
-## <a name="example"></a>Beispiel
+
+## <a name="examples"></a>Beispiele
+
+### <a name="example-1-standard-users-request"></a>Beispiel 1: Standard-Benutzeranforderung
+
+Standardmäßig wird nur ein begrenzter Satz von Eigenschaften zurückgegeben (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). Dieses Beispiel zeigt die standardmäßige Anforderung und Antwort. 
+
 ##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+
 <!-- {
   "blockType": "request",
   "name": "get_user"
@@ -43,7 +54,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 GET https://graph.microsoft.com/v1.0/me
 ```
 ##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -68,6 +79,36 @@ Content-length: 491
    "surname": "surname-value",
    "userPrincipalName": "userPrincipalName-value",
    "id": "id-value"
+}
+```
+
+### <a name="example-2-users-request-using-select"></a>Beispiel 2: Benutzeranforderung mit $select
+
+Wenn Sie einen anderen Eigenschaftensatz benötigen, können Sie den OData-Abfrageparameter `$select` verwenden. Um zum Beispiel _displayName_, _givenName_ und _postalCode_ zurückzugeben, fügen Sie Folgendes zur Abfrage hinzu: `$select=displayName,givenName,postalCode`.
+
+##### <a name="request"></a>Anforderung
+<!-- {
+  "blockType": "request",
+  "name": "get_user"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me?$select=displayName,givenName,postalCode
+```
+##### <a name="response"></a>Antwort
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 491
+
+{
+   "displayName": "displayName-value",
+   "givenName": "givenName-value",
+   "postalCode": "postalCode-value"
 }
 ```
 

@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: sharepointIds
+ms.openlocfilehash: 36636ead90d8b913de4328aea9b6252e82f30c26
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/28/2017
+---
 # <a name="sharepointids-resource-type"></a>SharePointIds-Ressourcentyp
 
 Die **SharePointIds**-Ressource gruppiert die verschiedenen Bezeichner für ein in einer SharePoint-Website oder auf OneDrive for Business gespeichertes Element in einer einzelnen Struktur.
@@ -27,14 +38,14 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ## <a name="properties"></a>Eigenschaften
 
-| Eigenschaft         | Typ         | Beschreibung                                                                                  |
-| :--------------- | :----------- | :------------------------------------------------------------------------------------------- |
-| listId           | string       | Der eindeutige Bezeichner (GUID) für die Liste des Elements in SharePoint.                              |
-| listItemId       | string       | Ein ganzzahliger Bezeichner für das Element innerhalb der Liste.                               |
-| listItemUniqueId | string       | Der eindeutige Bezeichner (GUID) für das Element in OneDrive for Business oder auf einer SharePoint-Website. |
-| siteId           | string       | Der eindeutige Bezeichner (GUID) für die Websitesammlung (SPSite) des Elements.                        |
-| siteUrl          | string (URL) | Die SharePoint-URL für die Website, die das Element enthält.                                      |
-| webId            | string       | Der eindeutige Bezeichner (GUID) für die Website (SPWeb) des Elements.                                    |
+| Eigenschaft         | Typ         | Beschreibung
+|:-----------------|:-------------|:-------------------------------------------
+| listId           | string       | Der eindeutige Bezeichner (GUID) für die Liste des Elements in SharePoint.
+| listItemId       | string       | Ein ganzzahliger Bezeichner für das Element innerhalb der Liste.
+| listItemUniqueId | string       | Der eindeutige Bezeichner (GUID) für das Element in OneDrive for Business oder auf einer SharePoint-Website.
+| siteId           | string       | Der eindeutige Bezeichner (GUID) für die Websitesammlung (SPSite) des Elements.
+| siteUrl          | string (URL) | Die SharePoint-URL für die Website, die das Element enthält.
+| webId            | string       | Der eindeutige Bezeichner (GUID) für die Website (SPWeb) des Elements.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -46,8 +57,8 @@ Weitere Informationen über die Facets einer **driveItem**-Ressource finden Sie 
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharepointIds resource",
-  "keywords": "",
+  "description": "The SharepointIds facet provides Sharepoint ids associated with an item.",
+  "keywords": "item, unique, id, csom, facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/SharepointIds"
+} -->

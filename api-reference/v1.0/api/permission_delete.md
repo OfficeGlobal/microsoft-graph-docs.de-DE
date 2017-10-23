@@ -1,10 +1,23 @@
-# <a name="delete-permission"></a>Berechtigung löschen
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Entfernen des Zugriffs auf ein Element
+ms.openlocfilehash: cf573b49edc326ca221545657b29b1f2e86ba417
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/28/2017
+---
+# <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>Löschen einer Freigabeberechtigung aus einer Datei oder einem Ordner
 
-Entfernt den Zugriffs auf ein [DriveItem](../resources/driveitem.md).
+Entfernen Sie den Zugriff auf ein [DriveItem](../resources/driveitem.md).
 
-Nur die Berechtigungen, die nicht geerbt werden, können gelöscht werden. Die **inheritedFrom**-Eigenschaft muss `null` sein.
+Es können nur **nicht** vererbte Freigabeberechtigungen gelöscht werden.
+Die Eigenschaft **inheritedFrom** muss auf `null` gesetzt sein.
 
 ## <a name="permissions"></a>Berechtigungen
+
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
@@ -16,53 +29,44 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
-DELETE /me/drive/items/{item-id}/permissions/{perm-id}
-DELETE /me/drive/root:/{path}:/permissions/{perm-id}
-DELETE /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
 DELETE /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
+DELETE /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
+DELETE /me/drive/items/{item-id}/permissions/{perm-id}
+DELETE /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
+DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## <a name="request-headers"></a>Anforderungsheader
+## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 
 | Name          | Typ   | Beschreibung                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | string | Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag (oder cTag) nicht mit dem aktuellen Tag des Elements übereinstimmt, wird die Antwort `412 Precondition Failed` zurückgegeben, und das Element wird nicht gelöscht. |
 
-## <a name="request-body"></a>Anforderungstext
-Geben Sie für diese Methode keinen Anforderungstext an.
-
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
+Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 
-##### <a name="request"></a>Anforderung
+In diesem Beispiel wird die als {perm-id} identifizierte Berechtigung des Elements {item-id} vom OneDrive des aktuellen Benutzers entfernt.
 
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite" }-->
 
-<!-- {
-  "blockType": "request",
-  "name": "delete_permission"
-}-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/drive/root/items/{item-id}/permissions/{perm-id}
+DELETE /me/drive/root/items/{item-id}/permissions/{perm-id}
 ```
 
-##### <a name="response"></a>Antwort
+### <a name="response"></a>Antwort
 
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+<!-- { "blockType": "response", "truncated": false } -->
 
-<!-- {
-  "blockType": "response",
-  "truncated": false
-} -->
 ```http
 HTTP/1.1 204 No Content
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 * [Laufwerke](../resources/drive.md) mit dem**driveType** `personal` (OneDrive Personal) können keine Berechtigungen am Stamm-DriveItem erstellen oder ändern. 
 
@@ -70,8 +74,8 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete permission",
-  "keywords": "",
+  "description": "Remove an item's sharing permissions",
+  "keywords": "permission, permissions, sharing, remove permissions, delete permissions",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Delete permission"
-}-->
+  "tocPath": "Sharing/Remove permissions"
+} -->
