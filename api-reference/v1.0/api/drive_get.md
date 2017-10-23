@@ -1,85 +1,133 @@
-# <a name="get-drive"></a><span data-ttu-id="673a9-101">Laufwerk abrufen</span><span class="sxs-lookup"><span data-stu-id="673a9-101">Get Drive</span></span>
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Laufwerk abrufen
+ms.openlocfilehash: 91a140dbcb1550bc850656452a6fa24a84dd5500
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/28/2017
+---
+# <a name="get-drive"></a><span data-ttu-id="52e02-102">Laufwerk abrufen</span><span class="sxs-lookup"><span data-stu-id="52e02-102">Get Drive</span></span>
 
-<span data-ttu-id="673a9-p101">Dient zum Abrufen der Eigenschaften und der Beziehungen einer [Drive](../resources/drive.md)-Ressource. Ein Laufwerk ist der Container auf oberster Ebene für ein Dateisystem. Mit der Graph-API können Sie auf die Drive-Ressource für OneDrive oder OneDrive for Business eines Benutzers oder auf SharePoint-Dokumentbibliotheken zugreifen.</span><span class="sxs-lookup"><span data-stu-id="673a9-p101">Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource. A Drive is the top-level container for a file system. Graph API allows access to the Drive resource for a user's OneDrive or OneDrive for Business, or SharePoint document libraries.</span></span>
+<span data-ttu-id="52e02-103">Dient zum Abrufen der Eigenschaften und der Beziehungen einer [Drive](../resources/drive.md)-Ressource.</span><span class="sxs-lookup"><span data-stu-id="52e02-103">Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="673a9-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="673a9-105">Permissions</span></span>
+<span data-ttu-id="52e02-104">Ein Laufwerk ist der Container auf oberster Ebene für ein Dateisystem, wie z. B. OneDrive oder SharePoint-Dokumentbibliotheken.</span><span class="sxs-lookup"><span data-stu-id="52e02-104">A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.</span></span>
 
-<span data-ttu-id="673a9-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="673a9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="52e02-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="52e02-105">Permissions</span></span>
 
-|<span data-ttu-id="673a9-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="673a9-108">Permission type</span></span>      | <span data-ttu-id="673a9-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="673a9-109">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="52e02-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="52e02-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="52e02-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="52e02-108">Permission type</span></span>      | <span data-ttu-id="52e02-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="52e02-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="673a9-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="673a9-110">Delegated (work or school account)</span></span> | <span data-ttu-id="673a9-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="673a9-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="673a9-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="673a9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="673a9-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="673a9-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="673a9-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="673a9-114">Application</span></span> | <span data-ttu-id="673a9-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="673a9-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="52e02-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="52e02-110">Delegated (work or school account)</span></span> | <span data-ttu-id="52e02-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="52e02-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="52e02-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="52e02-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="52e02-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="52e02-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="52e02-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="52e02-114">Application</span></span> | <span data-ttu-id="52e02-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="52e02-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="get-a-users-onedrive"></a><span data-ttu-id="673a9-116">Abrufen des OneDrive eines Benutzers</span><span class="sxs-lookup"><span data-stu-id="673a9-116">Get a user's OneDrive</span></span>
+## <a name="get-current-users-onedrive"></a><span data-ttu-id="52e02-116">Abrufen des OneDrive des aktuellen Benutzers</span><span class="sxs-lookup"><span data-stu-id="52e02-116">Get a user's OneDrive</span></span>
 
-<span data-ttu-id="673a9-117">Damit Sie auf OneDrive oder OneDrive for Business eines Benutzers zugreifen können, muss Ihre App die **drive**-Beziehung in der [User](../resources/user.md)-Ressource anfordern.</span><span class="sxs-lookup"><span data-stu-id="673a9-117">To access a user's OneDrive or OneDrive for Business, your app must request the **drive** relationship on the [User](../resources/user.md) resource.</span></span>
+<span data-ttu-id="52e02-117">Über den `me`-Singleton kann auf das Laufwerk des angemeldeten Benutzers (bei der Verwendung einer delegierten Authentifizierung) zugegriffen werden.</span><span class="sxs-lookup"><span data-stu-id="52e02-117">The signed in user's drive (when using delegated authentication) can be accessed from the `me` singleton.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="673a9-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="673a9-118">HTTP request</span></span>
+<span data-ttu-id="52e02-118">Wenn das OneDrive eines Benutzers nicht bereitgestellt ist, der Benutzer jedoch über eine Lizenz für OneDrive verfügt, wird über diese Anforderung das Laufwerk des Benutzers automatisch bereitgestellt, wenn eine delegierte Authentifizierung verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="52e02-118">If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.</span></span>
 
-<!-- { "blockType": "ignored" } -->
+### <a name="http-request"></a><span data-ttu-id="52e02-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="52e02-119">HTTP request</span></span>
+
+<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read" } -->
 
 ```http
 GET /me/drive
+```
+
+## <a name="get-a-users-onedrive"></a><span data-ttu-id="52e02-120">Abrufen des OneDrive eines Benutzers</span><span class="sxs-lookup"><span data-stu-id="52e02-120">Get a user's OneDrive</span></span>
+
+<span data-ttu-id="52e02-121">Damit Sie auf OneDrive oder OneDrive for Business eines Benutzers zugreifen können, muss Ihre App die **drive**-Beziehung in der User-Ressource anfordern.</span><span class="sxs-lookup"><span data-stu-id="52e02-121">To access a user's OneDrive or OneDrive for Business, your app must request the **drive** relationship on the User resource.</span></span>
+
+<span data-ttu-id="52e02-122">Wenn das OneDrive eines Benutzers nicht bereitgestellt ist, der Benutzer jedoch über eine Lizenz für OneDrive verfügt, wird über diese Anforderung das Laufwerk des Benutzers automatisch bereitgestellt, wenn eine delegierte Authentifizierung verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="52e02-122">If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.</span></span>
+
+### <a name="http-request"></a><span data-ttu-id="52e02-123">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="52e02-123">HTTP request</span></span>
+
+<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all" } -->
+
+```http
 GET /users/{idOrUserPrincipalName}/drive
 ```
 
-## <a name="get-the-document-library-associated-with-a-group"></a><span data-ttu-id="673a9-119">Dient zum Abrufen der Dokumentbibliothek, die einer Gruppe zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="673a9-119">Get the document library associated with a group</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="52e02-124">Pfadparameter</span><span class="sxs-lookup"><span data-stu-id="52e02-124">Path parameters</span></span>
 
-<span data-ttu-id="673a9-120">Für den Zugriff auf die Standarddokumentbibliothek einer [Gruppe](../resources/group.md) fordert Ihre App die **drive**-Beziehung in der Gruppe an.</span><span class="sxs-lookup"><span data-stu-id="673a9-120">To access a [Group's](../resources/group.md) default document library, your app requests the **drive** relationship on the Group.</span></span>
+| <span data-ttu-id="52e02-125">Parametername</span><span class="sxs-lookup"><span data-stu-id="52e02-125">Parameter name</span></span> | <span data-ttu-id="52e02-126">Wert</span><span class="sxs-lookup"><span data-stu-id="52e02-126">Value</span></span>  | <span data-ttu-id="52e02-127">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="52e02-127">Description</span></span>                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| <span data-ttu-id="52e02-128">_idOrUserPrincipalName_</span><span class="sxs-lookup"><span data-stu-id="52e02-128">_idOrUserPrincipalName_</span></span>     | <span data-ttu-id="52e02-129">string</span><span class="sxs-lookup"><span data-stu-id="52e02-129">string</span></span> | <span data-ttu-id="52e02-130">Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="52e02-130">Required.</span></span> <span data-ttu-id="52e02-131">Der Bezeichner für das Benutzerobjekt, dem OneDrive angehört.</span><span class="sxs-lookup"><span data-stu-id="52e02-131">The identifier for the user object who owns the OneDrive.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="673a9-121">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="673a9-121">HTTP request</span></span>
+## <a name="get-the-document-library-associated-with-a-group"></a><span data-ttu-id="52e02-132">Dient zum Abrufen der Dokumentbibliothek, die einer Gruppe zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="52e02-132">Get the document library associated with a group</span></span>
 
-<!-- { "blockType": "ignored" } -->
+<span data-ttu-id="52e02-133">Für den Zugriff auf die Standarddokumentbibliothek einer Gruppe fordert Ihre App die **drive**-Beziehung in der Gruppe an.</span><span class="sxs-lookup"><span data-stu-id="52e02-133">To access a Group's default document library, your app requests the **drive** relationship on the Group.</span></span>
+
+### <a name="http-request"></a><span data-ttu-id="52e02-134">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="52e02-134">HTTP request</span></span>
+
+<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all" } -->
 
 ```http
-GET /groups/{idOrUserPrincipalName}/drive
+GET /groups/{groupId}/drive
 ```
 
+### <a name="path-parameters"></a><span data-ttu-id="52e02-135">Pfadparameter</span><span class="sxs-lookup"><span data-stu-id="52e02-135">Path parameters</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="673a9-122">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="673a9-122">Optional query parameters</span></span>
+| <span data-ttu-id="52e02-136">Parametername</span><span class="sxs-lookup"><span data-stu-id="52e02-136">Parameter name</span></span> | <span data-ttu-id="52e02-137">Wert</span><span class="sxs-lookup"><span data-stu-id="52e02-137">Value</span></span>  | <span data-ttu-id="52e02-138">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="52e02-138">Description</span></span>                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| <span data-ttu-id="52e02-139">_groupId_</span><span class="sxs-lookup"><span data-stu-id="52e02-139">_groupId_</span></span>      | <span data-ttu-id="52e02-140">string</span><span class="sxs-lookup"><span data-stu-id="52e02-140">string</span></span> | <span data-ttu-id="52e02-141">Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="52e02-141">Required.</span></span> <span data-ttu-id="52e02-142">Der Bezeichner für die Gruppe, die die Dokumentbibliothek besitzt.</span><span class="sxs-lookup"><span data-stu-id="52e02-142">The identifier for the group which owns the document library.</span></span> |
 
-<span data-ttu-id="673a9-123">Diese Methode unterstützt die [OData-Abfrageparameter](../../../concepts/query_parameters.md) von `$expand` und `$select` zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="673a9-123">This method supports the `$expand` and `$select` [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.</span></span>
+## <a name="get-the-document-library-for-a-site"></a><span data-ttu-id="52e02-143">Abrufen der Dokumentbibliothek für eine Website</span><span class="sxs-lookup"><span data-stu-id="52e02-143">Get the document library for a site</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="673a9-124">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="673a9-124">Request body</span></span>
+<span data-ttu-id="52e02-144">Für den Zugriff auf die Standarddokumentbibliothek einer [Website](../resources/site.md) fordert Ihre App die **drive**-Beziehung auf der Website an.</span><span class="sxs-lookup"><span data-stu-id="52e02-144">To access a [Group's](../resources/site.md) default document library, your app requests the **drive** relationship on the Group.</span></span>
 
-<span data-ttu-id="673a9-125">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="673a9-125">Do not supply a request body for this method.</span></span>
+### <a name="http-request"></a><span data-ttu-id="52e02-145">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="52e02-145">HTTP request</span></span>
 
-## <a name="response"></a><span data-ttu-id="673a9-126">Antwort</span><span class="sxs-lookup"><span data-stu-id="673a9-126">Response</span></span>
-
-<span data-ttu-id="673a9-127">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und die aktualisierte [Drive](../resources/drive.md)-Ressource im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="673a9-127">If successful, this method returns a `200 OK` response code and [Drive](../resources/drive.md) resource in the response body.</span></span>
-
-## <a name="example"></a><span data-ttu-id="673a9-128">Beispiel</span><span class="sxs-lookup"><span data-stu-id="673a9-128">Example</span></span>
-
-##### <a name="request"></a><span data-ttu-id="673a9-129">Anforderung</span><span class="sxs-lookup"><span data-stu-id="673a9-129">Request</span></span>
-
-<span data-ttu-id="673a9-130">Nachfolgend finden Sie ein Beispiel für die Anforderung zum Abrufen  von OneDrive oder OneDrive for Business des angemeldeten Benutzers.</span><span class="sxs-lookup"><span data-stu-id="673a9-130">Here is an example of the request to get the sign-in user's OneDrive or OneDrive for Business.</span></span>
-
-<!-- {
-  "blockType": "request",
-  "name": "get_drive"
-}-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive
+GET /sites/{siteId}/drive
 ```
 
-##### <a name="response"></a><span data-ttu-id="673a9-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="673a9-131">Response</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="52e02-146">Pfadparameter</span><span class="sxs-lookup"><span data-stu-id="52e02-146">Path parameters</span></span>
 
-<span data-ttu-id="673a9-132">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="673a9-132">Here is an example of the response.</span></span>
+| <span data-ttu-id="52e02-147">Parametername</span><span class="sxs-lookup"><span data-stu-id="52e02-147">Parameter name</span></span> | <span data-ttu-id="52e02-148">Wert</span><span class="sxs-lookup"><span data-stu-id="52e02-148">Value</span></span>  | <span data-ttu-id="52e02-149">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="52e02-149">Description</span></span>                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| <span data-ttu-id="52e02-150">_siteId_</span><span class="sxs-lookup"><span data-stu-id="52e02-150">_siteId_</span></span>       | <span data-ttu-id="52e02-151">string</span><span class="sxs-lookup"><span data-stu-id="52e02-151">string</span></span> | <span data-ttu-id="52e02-152">Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="52e02-152">Required.</span></span> <span data-ttu-id="52e02-153">Der Bezeichner für die Website, die die Dokumentbibliothek enthält.</span><span class="sxs-lookup"><span data-stu-id="52e02-153">The identifier for the site that contains the document library.</span></span> |
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.drive"
-} -->
+## <a name="get-a-drive-by-id"></a><span data-ttu-id="52e02-154">Abrufen eines Laufwerks nach ID</span><span class="sxs-lookup"><span data-stu-id="52e02-154">Get a drive by ID</span></span>
+
+<span data-ttu-id="52e02-155">Wenn Sie die eindeutige ID für ein Laufwerk besitzen, können Sie direkt über die Websitesammlung auf oberster Ebene darauf zugreifen.</span><span class="sxs-lookup"><span data-stu-id="52e02-155">If you have the unique identifier for a drive, you can access it directly from the top-level drives collection.</span></span>
+
+### <a name="http-request"></a><span data-ttu-id="52e02-156">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="52e02-156">HTTP request</span></span>
+
+<!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
+
+```http
+GET /drives/{driveId}
+```
+
+### <a name="path-parameters"></a><span data-ttu-id="52e02-157">Pfadparameter</span><span class="sxs-lookup"><span data-stu-id="52e02-157">Path parameters</span></span>
+
+| <span data-ttu-id="52e02-158">Parametername</span><span class="sxs-lookup"><span data-stu-id="52e02-158">Parameter name</span></span> | <span data-ttu-id="52e02-159">Wert</span><span class="sxs-lookup"><span data-stu-id="52e02-159">Value</span></span>  | <span data-ttu-id="52e02-160">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="52e02-160">Description</span></span>                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| <span data-ttu-id="52e02-161">_driveId_</span><span class="sxs-lookup"><span data-stu-id="52e02-161">_drive-id_</span></span>      | <span data-ttu-id="52e02-162">string</span><span class="sxs-lookup"><span data-stu-id="52e02-162">string</span></span> | <span data-ttu-id="52e02-163">Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="52e02-163">Required.</span></span> <span data-ttu-id="52e02-164">Dies ist der Bezeichner des angeforderten Laufwerks.</span><span class="sxs-lookup"><span data-stu-id="52e02-164">The identifier for the drive requested.</span></span> |
+
+## <a name="optional-query-parameters"></a><span data-ttu-id="52e02-165">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="52e02-165">Optional query parameters</span></span>
+
+<span data-ttu-id="52e02-166">Diese Methode unterstützt die [$select-Abfrageparameter] [ odata-query-parameters] zum Modellieren der Antwort.</span><span class="sxs-lookup"><span data-stu-id="52e02-166">These method support the [$select query parameter][odata-query-parameters] to shape the response.</span></span>
+
+## <a name="http-response"></a><span data-ttu-id="52e02-167">HTTP-Antwort</span><span class="sxs-lookup"><span data-stu-id="52e02-167">HTTP response</span></span>
+
+<span data-ttu-id="52e02-168">Diese Methoden geben eine [Drive-Ressource][drive-resource] für das entsprechende Laufwerk im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="52e02-168">Each of these methods returns a [Drive resource][drive-resource] for the matching drive in the response body.</span></span>
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive", "truncated": true, "name": ["get-drive-by-id", "get-drive-by-group", "get-drive-by-user", "get-drive-default"] } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
     "id": "b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7",
-    "driveType": "business",    
+    "driveType": "business",
     "owner": {
         "user": {
             "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
@@ -95,12 +143,17 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+### <a name="error-response-codes"></a><span data-ttu-id="52e02-169">Fehlerantwortcodes</span><span class="sxs-lookup"><span data-stu-id="52e02-169">Error response codes</span></span>
+
+<span data-ttu-id="52e02-170">Wenn das Laufwerk nicht vorhanden ist und nicht automatisch bereitgestellt werden kann (wenn die delegierte Authentifizierung verwendet wird), wird eine `HTTP 404`-Antwort zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="52e02-170">If the drive does not exist and cannot be provisioned automatically (when using delegated authentication) an `HTTP 404` response will be returned.</span></span>
+
+[drive-resource]: ../resources/drive.md
+[odata-query-parameters]: ../../../concepts/query_parameters.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/Get Drive"
-}-->
+  "tocPath": "Drives/Get drive"
+} -->

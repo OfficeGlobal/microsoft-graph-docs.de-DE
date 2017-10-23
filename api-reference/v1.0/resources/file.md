@@ -1,12 +1,24 @@
-# <a name="file-resource-type"></a>File-Ressourcentyp
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Datei
+ms.openlocfilehash: fd1aa4628fb4f3ba58474028c46840e7c1e2d53c
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/28/2017
+---
+# <a name="file-resource-type"></a><span data-ttu-id="e055c-102">File-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="e055c-102">File resource type</span></span>
 
-Die **File**-Ressource gruppiert dateibezogene Datenelemente in einer einzelnen Struktur.
+<span data-ttu-id="e055c-103">Die **File**-Ressource gruppiert dateibezogene Datenelemente in einer einzelnen Struktur.</span><span class="sxs-lookup"><span data-stu-id="e055c-103">The **File** resource groups file-related data items into a single structure.</span></span>
 
-Wenn ein [**DriveItem**](driveitem.md) ein **file**-Facet ungleich Null aufweist, stellt das Element eine Datei dar. Neben anderen Eigenschaften weisen Dateien eine **content**-Beziehung auf, die den Bytedatenstrom der Datei enthält.
+<span data-ttu-id="e055c-104">Wenn ein [**DriveItem**](driveitem.md) ein **file**-Facet ungleich Null aufweist, stellt das Element eine Datei dar.</span><span class="sxs-lookup"><span data-stu-id="e055c-104">If a [**DriveItem**](driveitem.md) has a non-null **file** facet, the item represents an file.</span></span>
+<span data-ttu-id="e055c-105">Neben anderen Eigenschaften weisen Dateien eine **content**-Beziehung auf, die den Bytedatenstrom der Datei enthält.</span><span class="sxs-lookup"><span data-stu-id="e055c-105">If a DriveItem has a non-null file facet, the item represents an file. In addition to other properties, files have a **content** relationship which contains the byte stream of the file.</span></span>
 
-## <a name="json-representation"></a>JSON-Darstellung
+## <a name="json-representation"></a><span data-ttu-id="e055c-106">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="e055c-106">JSON representation</span></span>
 
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="e055c-107">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="e055c-107">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -21,25 +33,21 @@ Es folgt eine JSON-Darstellung der Ressource.
 }
 ```
 
-## <a name="properties"></a>Eigenschaften
+## <a name="properties"></a><span data-ttu-id="e055c-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="e055c-108">Properties</span></span>
 
-| Eigenschaft | Typ                    | Beschreibung                                                                                                                                      |
+| <span data-ttu-id="e055c-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="e055c-109">Property</span></span> | <span data-ttu-id="e055c-110">Typ</span><span class="sxs-lookup"><span data-stu-id="e055c-110">Type</span></span>                    | <span data-ttu-id="e055c-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e055c-111">Description</span></span>                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| hashes   | [HashesType](hashes.md) | Hashes des binären Inhalts der Datei, wenn verfügbar. Schreibgeschützt.                                                                                    |
-| mimeType | string                  | Der MIME-Typ für die Datei. Dieser wird von der Logik auf dem Server bestimmt und stimmt möglicherweise nicht mit dem Wert überein, der bereitgestellt wurde, als die Datei hochgeladen wurde. Schreibgeschützt. |
+| <span data-ttu-id="e055c-112">hashes</span><span class="sxs-lookup"><span data-stu-id="e055c-112">hashes</span></span>   | [<span data-ttu-id="e055c-113">HashesType</span><span class="sxs-lookup"><span data-stu-id="e055c-113">HashesType</span></span>](hashes.md) | <span data-ttu-id="e055c-p102">Hashes des binären Inhalts der Datei, wenn verfügbar. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="e055c-p102">Hashes of the file's binary content, if available. Read-only.</span></span>                                                                                    |
+| <span data-ttu-id="e055c-116">mimeType</span><span class="sxs-lookup"><span data-stu-id="e055c-116">mimeType</span></span> | <span data-ttu-id="e055c-117">string</span><span class="sxs-lookup"><span data-stu-id="e055c-117">string</span></span>                  | <span data-ttu-id="e055c-p103">Der MIME-Typ für die Datei. Dieser wird von der Logik auf dem Server bestimmt und stimmt möglicherweise nicht mit dem Wert überein, der bereitgestellt wurde, als die Datei hochgeladen wurde. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="e055c-p103">The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only.</span></span> |
 
-## <a name="remarks"></a>Bemerkungen 
+## <a name="remarks"></a><span data-ttu-id="e055c-121">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e055c-121">Remarks</span></span> 
 
-Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).
+<span data-ttu-id="e055c-122">Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="e055c-122">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "file resource",
-  "keywords": "",
+  "description": "The file facet describes properties of a file",
+  "keywords": "file,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/File"
+} -->

@@ -1,10 +1,22 @@
-# <a name="folder-resource-type"></a>Folder-Ressourcentyp
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Ordner
+ms.openlocfilehash: 664597297700f7af096ef30cfbd5342a45a6c157
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/28/2017
+---
+# <a name="folder-resource-type"></a><span data-ttu-id="ca03b-102">Folder-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="ca03b-102">Folder resource type</span></span>
 
-Die **Folder**-Ressource gruppiert ordnerbezogene Daten für ein Element in einer einzelnen Struktur. [**DriveItems**](driveitem.md) mit einem **Ordner**-Facet, das nicht Null ist, sind Container für andere DriveItems.
+<span data-ttu-id="ca03b-103">Die **Folder**-Ressource gruppiert ordnerbezogene Daten für ein Element in einer einzelnen Struktur.</span><span class="sxs-lookup"><span data-stu-id="ca03b-103">The **Folder** resource groups folder-related data on an item into a single structure. DriveItems with a non-null folder facet are containers for other DriveItems.</span></span> 
+<span data-ttu-id="ca03b-104">[**DriveItems**](driveitem.md) mit einem **Ordner**-Facet, das nicht Null ist, sind Container für andere DriveItems.</span><span class="sxs-lookup"><span data-stu-id="ca03b-104">The Folder resource groups folder-related data on an item into a single structure. [**DriveItems**](driveitem.md) with a non-null **folder** facet are containers for other DriveItems.</span></span>
 
-## <a name="json-representation"></a>JSON-Darstellung
+## <a name="json-representation"></a><span data-ttu-id="ca03b-105">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="ca03b-105">JSON representation</span></span>
 
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="ca03b-106">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="ca03b-106">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -16,26 +28,29 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```json
 {
-  "childCount": 1024
+  "childCount": 1024,
+  "view": { "@odata.type": "microsoft.graph.folderView" }
 }
 ```
 
-## <a name="properties"></a>Eigenschaften
+## <a name="properties"></a><span data-ttu-id="ca03b-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="ca03b-107">Properties</span></span>
 
-| Eigenschaft       | Typ  | Beschreibung                                                     |
-|:---------------|:------|:----------------------------------------------------------------|
-| **childCount** | Int64 | Die Anzahl der untergeordneten Elemente, die direkt in diesem Container enthalten. |
+| <span data-ttu-id="ca03b-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="ca03b-108">Property</span></span>       | <span data-ttu-id="ca03b-109">Typ</span><span class="sxs-lookup"><span data-stu-id="ca03b-109">Type</span></span>           | <span data-ttu-id="ca03b-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ca03b-110">Description</span></span>
+|:---------------|:---------------|:-------------------------------------------
+| <span data-ttu-id="ca03b-111">**childCount**</span><span class="sxs-lookup"><span data-stu-id="ca03b-111">**childCount**</span></span> | <span data-ttu-id="ca03b-112">Int64</span><span class="sxs-lookup"><span data-stu-id="ca03b-112">Int64</span></span>          | <span data-ttu-id="ca03b-113">Die Anzahl von direkt in dem jeweiligen Container enthaltenen untergeordneten Elementen.</span><span class="sxs-lookup"><span data-stu-id="ca03b-113">Number of children contained immediately within this container.</span></span>
+| <span data-ttu-id="ca03b-114">**view**</span><span class="sxs-lookup"><span data-stu-id="ca03b-114">**view**</span></span>       | <span data-ttu-id="ca03b-115">[folderView][]</span><span class="sxs-lookup"><span data-stu-id="ca03b-115">[folderView facet][]</span></span> | <span data-ttu-id="ca03b-116">Eine Sammlung von Eigenschaften, welche die empfohlene Ansicht für den Ordner definieren.</span><span class="sxs-lookup"><span data-stu-id="ca03b-116">A collection of properties defining the recommended view for the folder.</span></span>
 
-## <a name="remarks"></a>Bemerkungen 
+## <a name="remarks"></a><span data-ttu-id="ca03b-117">Hinweise</span><span class="sxs-lookup"><span data-stu-id="ca03b-117">Remarks</span></span> 
 
-Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).
+<span data-ttu-id="ca03b-118">Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem][].</span><span class="sxs-lookup"><span data-stu-id="ca03b-118">For more information about the facets on a DriveItem, see [DriveItem][].</span></span>
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+[folderView]: folderView.md
+[DriveItem]: driveItem.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "folder resource",
-  "keywords": "",
+  "description": "The Folder facet describes properties of a folder",
+  "keywords": "folder,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Folder"
+} -->

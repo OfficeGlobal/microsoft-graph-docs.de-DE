@@ -1,99 +1,127 @@
-# <a name="list-available-drives"></a><span data-ttu-id="c11df-101">Verfügbare Laufwerke auflisten</span><span class="sxs-lookup"><span data-stu-id="c11df-101">List available drives</span></span>
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Laufwerke auflisten
+ms.openlocfilehash: 84771e589a65d11fc06707eb01b6211cf90a8581
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/28/2017
+---
+# <a name="list-available-drives"></a><span data-ttu-id="95a3e-102">Verfügbare Laufwerke auflisten</span><span class="sxs-lookup"><span data-stu-id="95a3e-102">List available drives</span></span>
 
-<span data-ttu-id="c11df-p101">Dient zum Abrufen der Liste der [Laufwerk](../resources/drive.md)-Ressourcen für einen Ziel-[Benutzer](../resources/user.md) oder eine Ziel-[Gruppe](../resources/group.md). Ihre App kann auch den Satz von Dokumentbibliotheken auf der SharePoint-Stammwebsite anfordern.</span><span class="sxs-lookup"><span data-stu-id="c11df-p101">Retrieve the list of [Drive](../resources/drive.md) resources available for a target [User](../resources/user.md) or [Group](../resources/group.md). Your app can also request the set of document libraries on the SharePoint root site.</span></span>
+<span data-ttu-id="95a3e-103">Rufen Sie die Liste der [Laufwerk](../resources/drive.md)-Ressourcen ab, die für einen Ziel-Benutzer, eine Ziel-Gruppe oder eine Ziel-[Seite](../resources/site.md) verfügbar sind.</span><span class="sxs-lookup"><span data-stu-id="95a3e-103">Retrieve the list of [Drive](../resources/drive.md) resources available for a target User, Group, or [Site](../resources/site.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c11df-104">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="c11df-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="95a3e-104">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="95a3e-104">Permissions</span></span>
 
-<span data-ttu-id="c11df-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="c11df-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="95a3e-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="95a3e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="c11df-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c11df-107">Permission type</span></span>      | <span data-ttu-id="c11df-108">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c11df-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="95a3e-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="95a3e-107">Permission type</span></span>      | <span data-ttu-id="95a3e-108">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="95a3e-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c11df-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c11df-109">Delegated (work or school account)</span></span> | <span data-ttu-id="c11df-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c11df-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="c11df-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c11df-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c11df-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c11df-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="c11df-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c11df-113">Application</span></span> | <span data-ttu-id="c11df-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c11df-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="95a3e-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="95a3e-109">Delegated (work or school account)</span></span> | <span data-ttu-id="95a3e-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="95a3e-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="95a3e-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="95a3e-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="95a3e-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="95a3e-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="95a3e-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="95a3e-113">Application</span></span> | <span data-ttu-id="95a3e-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="95a3e-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c11df-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c11df-115">HTTP request</span></span>
+## <a name="list-a-groups-drives"></a><span data-ttu-id="95a3e-115">Auflisten des Laufwerks einer Gruppe</span><span class="sxs-lookup"><span data-stu-id="95a3e-115">List a group's drives</span></span>
 
-<!-- { "blockType": "ignored" } -->
+<span data-ttu-id="95a3e-116">Für die Auflistung der Dokumentbibliotheken einer Gruppe fordert Ihre App die **drives**-Beziehung bei der Gruppe an.</span><span class="sxs-lookup"><span data-stu-id="95a3e-116">To list the document libraries for a group, your app requests the **drives** relationship on the Group.</span></span>
+
+### <a name="http-request"></a><span data-ttu-id="95a3e-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="95a3e-117">HTTP request</span></span>
+
+<!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all" } -->
 
 ```http
-GET /drives
+GET /groups/{groupId}/drives
+```
+
+## <a name="list-a-sites-drives"></a><span data-ttu-id="95a3e-118">Auflisten der Laufwerke einer Website</span><span class="sxs-lookup"><span data-stu-id="95a3e-118">List a site's drives</span></span>
+
+<span data-ttu-id="95a3e-119">Für die Auflistung der Dokumentbibliotheken einer Website fordert Ihre App die **drives**-Beziehung bei der Website an.</span><span class="sxs-lookup"><span data-stu-id="95a3e-119">To list the document libraries for a site, your app requests the **drives** relationship on the Site.</span></span>
+
+<!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all" } -->
+
+```http
+GET /sites/{siteId}/drives
+```
+
+## <a name="list-a-users-drives"></a><span data-ttu-id="95a3e-120">Auflisten der Laufwerke eines Benutzers</span><span class="sxs-lookup"><span data-stu-id="95a3e-120">List a user's drives</span></span>
+
+<!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read.all" } -->
+
+```http
+GET /users/{userId}/drives
+```
+
+## <a name="list-the-current-users-drives"></a><span data-ttu-id="95a3e-121">Die Laufwerke des aktuellen Benutzers auflisten</span><span class="sxs-lookup"><span data-stu-id="95a3e-121">List the current user's drives</span></span>
+
+<!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read" } -->
+
+```http
 GET /me/drives
-GET /sites/{site-id}/drives
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c11df-116">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="c11df-116">Optional query parameters</span></span>
-<span data-ttu-id="c11df-117">Diese Methode unterstützt die [OData-Abfrageparameter](../../../concepts/query_parameters.md) von `$expand`, `$select`, `$skipToken`, `$top` und `$orderby` zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c11df-117">This method supports the `$expand` and `$orderby` [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="95a3e-122">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="95a3e-122">Optional query parameters</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="c11df-118">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c11df-118">Request body</span></span>
+<span data-ttu-id="95a3e-123">Diese Methode unterstützt die [OData-Abfrageparameter](../../../concepts/query_parameters.md) von `$expand`, `$select`, `$skipToken`, `$top` und `$orderby` zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="95a3e-123">This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.</span></span>
 
-<span data-ttu-id="c11df-119">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="c11df-119">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c11df-120">Antwort</span><span class="sxs-lookup"><span data-stu-id="c11df-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="95a3e-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="95a3e-124">Response</span></span>
 
-<span data-ttu-id="c11df-121">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [Drive](../resources/drive.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c11df-121">If successful, this method returns a `200 OK` response code and collection of [Drive](../resources/drive.md) objects in the response body.</span></span>
+<span data-ttu-id="95a3e-125">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [Drive](../resources/drive.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="95a3e-125">If successful, this method returns a `200 OK` response code and collection of [Drive](../resources/drive.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c11df-122">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c11df-122">Example</span></span>
+<!-- { "blockType": "response", 
+       "@odata.type": "Collection(microsoft.graph.drive)",
+       "name": ["group-list-drives", "site-list-drives", "user-list-drives", "enum-drives"],
+       "truncated": true } -->
 
-##### <a name="request"></a><span data-ttu-id="c11df-123">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c11df-123">Request</span></span>
-
-<span data-ttu-id="c11df-124">Hier ist ein Beispiel für die Anforderung der Laufwerke des Benutzers.</span><span class="sxs-lookup"><span data-stu-id="c11df-124">Here is an example of the request for the user's drives.</span></span>
-
-<!-- {
-  "blockType": "request",
-  "name": "get_drives"
-}-->
-
-```http
-GET https://graph.microsoft.com/v1.0/me/drives
-```
-
-##### <a name="response"></a><span data-ttu-id="c11df-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="c11df-125">Response</span></span>
-
-<span data-ttu-id="c11df-126">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c11df-126">Here is an example of the response.</span></span>
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.drive",
-  "isCollection": true
-} -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 579
+Content-Type: application/json
 
 {
   "value": [
     {
-      "id": "b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7",
-      "driveType": "business",
+      "id": "942CAEB0-13AE-491B-85E4-7557CDC0F25F",
+      "driveType": "documentLibrary",
+      "name": "Shared Documents",
       "owner": {
-          "user": {
-              "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-              "displayName": "Ryan Gregg"
-          }
-      },
-      "quota": {
-          "deleted": 256938,
-          "remaining": 1099447353539,
-          "state": "normal",
-          "total": 1099511627776
+        "user": {
+          "id": "AE2A1EE9-81A7-423C-ABE4-B945F47509BB",
+          "displayName": "Ryan Gregg"
+        }
+      }
+    },
+    {
+      "id": "C1CD3ED9-0E98-4B0B-82D3-C8FB784B9DCC",
+      "driveType": "documentLibrary",
+      "name": "Contoso Project Files",
+      "owner": {
+        "user": {
+          "id": "406B2281-18E8-4416-9857-38C531B904F1",
+          "displayName": "Daron Spektor"
+        }
       }
     }
   ]
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="c11df-127">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="c11df-127">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="95a3e-126">Hinweise</span><span class="sxs-lookup"><span data-stu-id="95a3e-126">Remarks</span></span>
 
-<span data-ttu-id="c11df-p103">Die meisten Benutzer verfügen nur über eine einzige Laufwerkressource. Gruppen und einige Benutzer verfügen möglicherweise über mehrere Laufwerke.</span><span class="sxs-lookup"><span data-stu-id="c11df-p103">Most users will only have a single Drive resource. Groups and some users may have multiple drive available.</span></span>
+<span data-ttu-id="95a3e-127">Die meisten Benutzer verfügen nur über eine einzige Laufwerkressource.</span><span class="sxs-lookup"><span data-stu-id="95a3e-127">Most users will only have a single Drive resource. Groups and some users may have multiple drive available.</span></span>
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+<span data-ttu-id="95a3e-128">Gruppen und Webseiten verfügen möglicherweise über mehrere Laufwerksressourcen.</span><span class="sxs-lookup"><span data-stu-id="95a3e-128">Groups and Sites may have multiple Drive resources available.</span></span>
+
+<span data-ttu-id="95a3e-129">Laufwerke mit dem [System][]-Facet sind standardmäßig ausgeblendet.</span><span class="sxs-lookup"><span data-stu-id="95a3e-129">Drives with the [system][] facet are hidden by default.</span></span>
+<span data-ttu-id="95a3e-130">Fügen Sie `system` in Ihre `$select`-Anweisung ein, um sie aufzulisten.</span><span class="sxs-lookup"><span data-stu-id="95a3e-130">To list them, include `system` in your `$select` statement.</span></span>
+
+[System]: ../resources/systemFacet.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "List drives",
-  "keywords": "",
+  "description": "List the available drives for a user, group, or site.",
+  "keywords": "drive,onedrive.drive,list drives",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/List Drives"
-}-->
+  "tocPath": "Drives/List drives"
+} -->
