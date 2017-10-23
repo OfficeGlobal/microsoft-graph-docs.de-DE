@@ -50,7 +50,7 @@ Geben Sie im Anforderungstext eine JSON-Darstellung des [Attachment](../resource
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201, Created` und ein [Attachment](../resources/attachment.md)-Objekt im Antworttext zurückgegeben.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und ein [Attachment](../resources/attachment.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example-file-attachment"></a>Beispiel (Dateianlage)
 

@@ -43,7 +43,7 @@ Beim Nachverfolgen von Änderungen an Kontakten wird eine Runde von einem oder m
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [contact](../resources/contact.md)-Sammlungsobjekt im Antworttext zurückgegeben.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [contact](../resources/contact.md)-Sammlungsobjekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung

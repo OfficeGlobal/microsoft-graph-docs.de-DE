@@ -32,7 +32,7 @@ Geben Sie im Anforderungstext eine JSON-Darstellung des [groupSetting](../resour
 
 ## <a name="response"></a>Antwort
 
-Wenn erfolgreich ausgeführt, gibt diese Methode den Antwortcode `201, Created` und das [groupSetting](../resources/groupsetting.md)-Objekt im Antworttext zurück.
+Wenn erfolgreich ausgeführt, gibt diese Methode den Antwortcode `201 Created` und das [groupSetting](../resources/groupsetting.md)-Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

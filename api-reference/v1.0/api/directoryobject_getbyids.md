@@ -5,11 +5,18 @@ Gibt die in einer Liste von IDs angegebenen Directory-Objekte zurück.  HINWEIS:
 Nachfolgend sind einige gängige Verwendungsmöglichkeiten für diese Funktion aufgeführt:
 
 * Auflösen von IDs, die von Funktionen zurückgegeben werden (die Sammlungen von IDs zurückgeben), z. B. [getMemberObjects](directoryobject_getmemberobjects.md) oder [getMemberGroups](directoryobject_getmembergroups.md) in ihre zugrunde liegenden Directory-Objekte.
-* Auflösen von IDs, die von der Anwendung in einem externen Speicher persistent gemacht wurden, in ihre zugrunde liegenden Directory-Objekte.
+* Auflösen von durch die Anwendung permanent in einem externen Speicher gespeicherten IDs in ihre zugrunde liegenden Verzeichnisobjekte
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="permissions"></a>Berechtigungen
 
-Einer der folgenden **Bereiche** ist erforderlich, um diese API auszuführen: _Directory.Read.All_; _Directory.AccessAsUser.All_
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.Read.All, Directory.AccessAsUser.All    |
+|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
+|Anwendung | Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -37,7 +44,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das String-Sammlungsobjekt im Antworttext zurückgegeben.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das String-Sammlungsobjekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 
@@ -73,7 +80,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
     "value": [
       {
         "@odata.type": "#microsoft.graph.user",

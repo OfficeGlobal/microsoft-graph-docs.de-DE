@@ -34,7 +34,7 @@ Da die **message**-Ressource [Erweiterungen](../../../concepts/extensibility_ove
 
 ## <a name="response"></a>Antwort
 
-Bei erfolgreicher Ausführung der Methode werden der Antwortcode `201, Created` und das [message](../resources/message.md)-Objekt im Antworttext zurückgegeben.
+Bei erfolgreicher Ausführung der Methode werden der Antwortcode `201 Created` und das [message](../resources/message.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request-1"></a>Anforderung 1

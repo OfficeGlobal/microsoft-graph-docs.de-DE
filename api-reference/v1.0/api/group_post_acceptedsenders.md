@@ -27,7 +27,7 @@ Geben Sie im Anforderungstext die ID eines Benutzer- oder Gruppenobjekts an.
 
 ## <a name="response"></a>Antwort
 
-Diese Methode gibt den Antwortcode `204, No Content` ohne Antworttext zurück.
+Diese Methode gibt den Antwortcode `204 No Content` ohne Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung

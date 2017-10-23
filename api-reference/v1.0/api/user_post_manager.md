@@ -27,7 +27,7 @@ Geben Sie im Anforderungstext eine JSON-Darstellung eines [directoryObject](../r
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
+Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung

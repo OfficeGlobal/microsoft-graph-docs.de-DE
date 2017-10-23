@@ -47,7 +47,7 @@ Wenn Sie eine Delta-Abfrage für eine Kalenderansicht ausführen, gehen Sie davo
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200, OK` und das [event](../resources/event.md)-Sammlungsobjekt im Antworttext zurückgegeben.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [event](../resources/event.md)-Sammlungsobjekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
