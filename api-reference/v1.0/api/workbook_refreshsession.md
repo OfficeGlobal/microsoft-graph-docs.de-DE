@@ -28,7 +28,7 @@ Für diese API ist kein Anforderungstext erforderlich.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No content` zurückgegeben.
+Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
@@ -43,6 +43,9 @@ Content-type: application/json
 workbook-session-id: {session-id}
 Content-length: 0
 
+{
+
+}
 ```
 
 Beachten Sie, dass ein Arbeitsmappesitzungs-ID-Header erforderlich ist. 
