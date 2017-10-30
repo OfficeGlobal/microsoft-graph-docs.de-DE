@@ -1,15 +1,15 @@
 # <a name="calendar-resource-type"></a>Ressourcentyp calendar
 
-Ein Kalender, der ein Container für Ereignisse ist.
+Ein Kalender, der ein Container für Ereignisse ist. Dies kann ein Kalender für einen [Benutzer](user.md) oder der Standardkalender einer Office 365-[Gruppe](group.md) sein.
 
 ## <a name="methods"></a>Methoden
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
 |[Kalender auflisten](../api/user_list_calendars.md)|[calender](calendar.md)-Sammlung|Rufen Sie alle Kalender des Benutzers oder die Kalender auf der Standardgruppe oder einer anderen bestimmten Kalendergruppe ab.|
-|[Kalender erstellen](../api/user_post_calendars.md) |[Kalender](calendar.md)| Erstellen Sie einen neuen Kalender in der Standardkalendergruppe oder in der angegebenen Kalendergruppe.|
-|[Kalender abrufen](../api/calendar_get.md) | [Kalender](calendar.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des Kalenderobjekts.|
-|[Aktualisieren](../api/calendar_update.md) | [Kalender](calendar.md)  |Dient zum Aktualisieren des Kalenderobjekts aktualisieren. |
+|[Kalender erstellen](../api/user_post_calendars.md) |[Kalender](calendar.md)| Erstellen Sie einen neuen Kalender in der Standardkalendergruppe oder in der angegebenen Kalendergruppe für einen Benutzer.|
+|[Kalender abrufen](../api/calendar_get.md) | [Kalender](calendar.md) |Dient zum Abrufen der Eigenschaften und der Beziehungen eines **calendar**-Objekts. Dies kann ein Kalender für einen Benutzer oder der Standardkalender einer Office 365-Gruppe sein. |
+|[Aktualisieren](../api/calendar_update.md) | [Kalender](calendar.md)  |Mit dieser API können Sie die Eigenschaften eines **calendar**-Objekts aktualisieren. Dies kann ein Kalender für einen Benutzer oder der Standardkalender einer Office 365-Gruppe sein. |
 |[Löschen](../api/calendar_delete.md) | Keine |Dient zum Löschen des Kalenderobjekts aktualisieren. |
 |[calendarView auflisten](../api/calendar_list_calendarview.md) |[Ereignissammlung](event.md)| Dient zum Abrufen der Vorkommen, Ausnahmen und einzelnen Instanzen von Ereignissen in einer Kalenderansicht, die durch eine Zeitbereich definiert werden, aus dem primären Kalender `(../me/calendarview)` des Benutzers oder aus einem angegebenen Kalender.|
 |[Ereignisse auflisten](../api/calendar_list_events.md) |[Ereignissammlung](event.md)| Dient zum Abrufen einer Liste von Ereignissen in einem Kalender.  Die Liste enthält einzelne Instanzen von Besprechungen und Serienmaster.|
@@ -37,7 +37,7 @@ Ein Kalender, der ein Container für Ereignisse ist.
 |calendarView|[Ereignissammlung](event.md)|Die Kalenderansicht für den Kalender. Navigationseigenschaft. Schreibgeschützt.|
 |events|[Ereignissammlung](event.md)|Die Ereignisse im Kalender. Navigationseigenschaft. Schreibgeschützt.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter mehrwertiger Eigenschaften, die für den Kalender definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter einwertiger Eigenschaften, die für den Kalender definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter einwertiger Eigenschaften, die für den Kalender definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
