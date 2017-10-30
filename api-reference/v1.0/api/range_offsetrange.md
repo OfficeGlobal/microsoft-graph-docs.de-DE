@@ -14,7 +14,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/OffsetRange
-GET /workbook/worksheets/{id|name}/range(<address>)/OffsetRange
+GET /workbook/worksheets/{id|name}/range(address='<address>')/OffsetRange
 GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
 
 ```
