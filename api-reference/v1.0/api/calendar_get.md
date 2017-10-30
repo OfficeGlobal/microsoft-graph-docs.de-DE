@@ -1,6 +1,6 @@
 # <a name="get-calendar"></a>Kalender abrufen
 
-Dient zum Abrufen der Eigenschaften und der Beziehungen des Kalenderobjekts.
+Dient zum Abrufen der Eigenschaften und der Beziehungen eines [calendar](../resources/calendar.md)-Objekts. Dies kann ein Kalender für einen [Benutzer](../resources/user.md) oder der Standardkalender einer Office 365-[Gruppe](../resources/group.md) sein.
 
 
 ### <a name="get-another-users-calendar"></a>Abrufen des Kalenders eines anderen Benutzers

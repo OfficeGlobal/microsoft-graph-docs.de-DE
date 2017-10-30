@@ -8,6 +8,7 @@ Sie können auf zwei Arten über Microsoft Graph auf [Benutzer](user.md) zugreif
 - Anhand des `/me`-Alias für den angemeldeten Benutzer, welcher `/users/{signed-in user's id}` entspricht
 
 ## <a name="authorization"></a>Autorisierung
+
 Für den Zugriff auf Benutzervorgänge ist eine der folgenden [Berechtigungen](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) erforderlich. Die ersten drei Berechtigungen können einer App durch einen Benutzer gewährt werden. Die übrigen können der App nur durch einen Administrator gewährt werden.
 
 - User.ReadBasic.All
@@ -20,10 +21,11 @@ Für den Zugriff auf Benutzervorgänge ist eine der folgenden [Berechtigungen](h
 - Directory.AccessAsUser.All
 
 ## <a name="common-properties"></a>Allgemeine Eigenschaften
-Im Folgenden werden standardmäßige Eigenschaften dargestellt, die beim Abrufen eines Benutzers oder beim Auflisten von Benutzern zurückgegeben werden.  Diese stellen eine Teilmenge aller verfügbaren Eigenschaften. Verwenden Sie zum Abrufen weiterer Benutzereigenschaften den `$select`-Abfrageparameter. 
 
-| Eigenschaft | Beschreibung |
-|----------|-------------|
+Im Folgenden werden standardmäßige Eigenschaften dargestellt, die beim Abrufen eines Benutzers oder beim Auflisten von Benutzern zurückgegeben werden. Diese stellen eine Teilmenge aller verfügbaren Eigenschaften. Verwenden Sie zum Abrufen weiterer Benutzereigenschaften den `$select`-Abfrageparameter. 
+
+|Eigenschaft |Beschreibung |
+|:----------|:-------------|
 |id | Die eindeutige ID des Benutzers.|
 |businessPhones | Telefonnummern des Benutzers.|
 |displayName | Der Name des Benutzers, der im Adressbuch angezeigt wird.|
@@ -36,13 +38,16 @@ Im Folgenden werden standardmäßige Eigenschaften dargestellt, die beim Abrufen
 |surname| Der Nachname des Benutzers. |
 |userPrincipalName| Der Benutzerprinzipalname. |
 
+<br/>
+
 Weitere Informationen und eine Liste aller Eigenschaften finden Sie unter [user](user.md)-Objekt.
 
 ## <a name="common-operations"></a>Allgemeine Vorgänge
->**Hinweis:** Einige dieser Vorgänge erfordern zusätzliche Berechtigungen.
+
+> **Hinweis:** Einige dieser Vorgänge erfordern zusätzliche Berechtigungen.
 
 | Pfad    | Beschreibung |
-|---------|-------------|
+|:---------|:-------------|
 |[`/users`](../api/user_list.md) | Listet die Benutzer in der Organisation auf. |
 |[`/users/{id}`](../api/user_get.md) | Ruft einen bestimmten Benutzer anhand der ID ab. |
 |[`/users/{id}/photo/$value`](../api/profilephoto_get.md)| Ruft das Profilfoto des Benutzers ab. |

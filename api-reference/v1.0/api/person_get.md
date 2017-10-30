@@ -64,8 +64,10 @@ Das folgende Beispiel zeigt die Antwort.
 
 <!-- {
   "blockType": "response",
+  "name": "get_person",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person"
+  "@odata.type": "microsoft.graph.person",
+  "isCollection": true
 } -->
 
 ```http
@@ -104,10 +106,12 @@ Content-type: application/json
            ],
            "postalAddresses": [],
            "websites": [],
-           "personType": {
-               "class": "Person",
-               "subclass": "OrganizationUser"
-           }
+           "personType": [
+               {
+                    "class": "Person",
+                    "subclass": "OrganizationUser"
+                }
+            ]
        }
    ]
 }
@@ -115,23 +119,33 @@ Content-type: application/json
 ### <a name="select-the-fields-to-return-in-a-filtered-response"></a>Auswählen der Felder, die in einer gefilterten Antwort zurückgegeben werden 
 Sie können die *$select*- und *$filter*-Parameter gemeinsam verwenden, um eine benutzerdefinierte Liste der für den Benutzer relevanten Personen zu erstellen und nur die Felder abzurufen, die Ihre Anwendung benötigt. 
 
-Im folgenden Beispiel wird **displayName** und **scoredEmailAddresses** von Personen angerufen, deren Anzeigenamen dem angegebenen Namen entspricht. In diesem Beispiel werden nur die Personen zurückgegeben, deren Anzeigename „Lorrie Frye“ lautet. 
+Im folgenden Beispiel wird **displayName** und **scoredEmailAddresses** von Personen angerufen, deren Anzeigenamen dem angegebenen Namen entspricht. In diesem Beispiel werden nur die Personen zurückgegeben, deren Anzeigename „Lorrie Frye“ lautet.
 
-<!-- {
-  "blockType": "request",
-  "name": "get_person"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName eq 'Lorrie Frye'
+```
+
+Nachfolgend sehen Sie die korrekt codierte URL für die Beispielanforderung.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_person_select_and_filter"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName%20eq%20'Lorrie Frye'
 ```
 
 Das folgende Beispiel zeigt die Antwort. 
 
 <!-- {
   "blockType": "response",
+  "name": "get_person_select_and_filter",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person"
+  "@odata.type": "microsoft.graph.person",
+  "isCollection": true
 } -->
 
 ```http
@@ -146,7 +160,7 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Lorrief@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8.0
                 }
             ]
         }

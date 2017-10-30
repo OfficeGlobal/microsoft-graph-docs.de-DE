@@ -52,7 +52,7 @@ Mögliche @removed-Gründe sind *changed* und *deleted*.
 - *Changed* gibt an, dass das Element gelöscht wurde und aus [deletedItems](../api-reference/beta/resources/directory.md) wiederhergestellt werden kann.
 - *Deleted* gibt an, dass das Element gelöscht wurde und nicht wiederhergestellt werden kann.
 
-Das @removed-Objekt kann in der Antwort auf die erste Delta-Abfrage und in nachverfolgten (deltaLink-)Antworten zurückgegeben werden. Clients, die Delta-Abfrageanforderungen verwenden, sollten so konzipiert sein, dass sie diese Objekte in den Antworten behandeln.
+Das `@removed`-Objekt kann in der Antwort auf die erste Delta-Abfrage und in nachverfolgten (deltaLink-)Antworten zurückgegeben werden. Clients, die Delta-Abfrageanforderungen verwenden, sollten so konzipiert sein, dass sie diese Objekte in den Antworten behandeln.
 
 ## <a name="supported-resources"></a>Unterstützte Ressourcen
 
@@ -70,7 +70,7 @@ Die Delta-Abfrage wird derzeit für die folgenden Ressourcen unterstützt:
 | Laufwerk-Elemente\* | [Delta](../api-reference/v1.0/api/driveitem_delta.md)-Funktion der [driveItem](../api-reference/v1.0/resources/driveitem.md)-Ressource |
 
 
-> \* Das Verwendungsmuster für OneDrive-Ressourcen ähnelt dem der anderen unterstützten Ressourcen, mit geringen Unterschieden in der Syntax. Die Delta-Abfrage für Laufwerke wird zwecks Konsistenz mit anderen Ressourcentypen demnächst aktualisiert. Genauere Informationen zu der aktuellen Syntax finden Sie unter <https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta>
+> \* Das Verwendungsmuster für OneDrive-Ressourcen ähnelt dem der anderen unterstützten Ressourcen, mit geringen Unterschieden in der Syntax. Die Delta-Abfrage für Laufwerke wird zwecks Konsistenz mit anderen Ressourcentypen demnächst aktualisiert. Weitere Informationen zur aktuellen Syntax finden Sie unter[Laufwerksänderungen nachverfolgen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 

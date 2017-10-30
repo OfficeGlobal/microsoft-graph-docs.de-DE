@@ -6,15 +6,16 @@ Microsoft Graph stellt optionale Abfrageparameter bereit, die Sie zum Festlegen 
 
 |Name|Beschreibung|Beispiel|
 |:---------------|:--------|:-------|
-|[$count](#count)|Dient zum Abrufen der Gesamtzahl übereinstimmender Ressourcen.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
-|[$expand](#expand)|Dient zum Abrufen von verwandten Ressourcen.|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)
-|[$filter](#filter)|Dient zum Filtern von Ergebnissen (Zeilen).|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
-|[$orderby](#orderby)|Dient zum Sortieren von Ergebnissen.|[`/users?$orderby=displayName desc`](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0)
-|[$search](#search)| Dient zum Zurückgeben von Ergebnissen basierend auf Suchkriterien. Wird derzeit nicht in `messages`- und `person`-Sammlungen unterstützt.|[`/me/messages?$search=pizza`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0)
-|[$select](#select)|Dient zum Filtern von Eigenschaften (Spalten).|[`/users?$select=givenName,surname`](https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)
-|[$skip](#skip)|Dient zum Indizieren in einem Resultset. Wird auch von einigen APIs zum Implementieren von Paging verwendet und kann zusammen mit `$top` zum manuellen Auslagern von Ergebnissen verwendet werden.  | [`/me/messages?$skip=11`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0)
-|[$skipToken](#skiptoken)|Dient zum Abrufen der nächsten Seite von Ergebnissen aus Resultsets, die mehrere Seiten umfassen. (Einige APIs verwenden stattdessen `$skip`.) | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`
-|[$top](#top)|Dient zum Festlegen der Seitengröße von Ergebnissen. |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)
+|[$count](#count)|Dient zum Abrufen der Gesamtzahl übereinstimmender Ressourcen.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)|
+|[$expand](#expand)|Dient zum Abrufen von verwandten Ressourcen.|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)|
+|[$filter](#filter)|Dient zum Filtern von Ergebnissen (Zeilen).|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)|
+|[$format](#format)|Dient zum Zurückgeben der Ergebnisse im angegebenen Medienformat.|[`/users?$format=json`](https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0)|
+|[$orderby](#orderby)|Dient zum Sortieren von Ergebnissen.|[`/users?$orderby=displayName desc`](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0)|
+|[$search](#search)| Dient zum Zurückgeben von Ergebnissen basierend auf Suchkriterien. Wird derzeit nicht in `messages`- und `person`-Sammlungen unterstützt.|[`/me/messages?$search=pizza`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0)|
+|[$select](#select)|Dient zum Filtern von Eigenschaften (Spalten).|[`/users?$select=givenName,surname`](https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)|
+|[$skip](#skip)|Dient zum Indizieren in einem Resultset. Wird auch von einigen APIs zum Implementieren von Paging verwendet und kann zusammen mit `$top` zum manuellen Auslagern von Ergebnissen verwendet werden.  | [`/me/messages?$skip=11`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0)|
+|[$skipToken](#skiptoken)|Dient zum Abrufen der nächsten Seite von Ergebnissen aus Resultsets, die mehrere Seiten umfassen. (Einige APIs verwenden stattdessen `$skip`.) | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`|
+|[$top](#top)|Dient zum Festlegen der Seitengröße von Ergebnissen. |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)|
 
 Diese Parameter sind mit der [OData V4-Abfragesprache][odata-query] kompatibel. Nicht alle Parameter werden über alle Microsoft Graph-APIs hinweg unterstützt, und die Unterstützung kann zwischen dem `v1.0`- und dem `beta`-Endpunkt erheblich abweichen. 
 
@@ -116,6 +117,20 @@ Die folgende Tabelle enthält einige Beispiele zur Verwendung des `$filter`-Abfr
 | Alle Office 365-Gruppen in einer Organisation auflisten | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
 
 > **Hinweis:** Die folgenden `$filter`-Operatoren werden für Azure AD-Ressourcen nicht unterstützt: `ne`, `gt`, `ge`, `lt`, `le` und `not`. Der `contains`-Zeichenfolgenoperator wird derzeit nicht für Microsoft Graph-Ressourcen unterstützt.
+
+## <a name="format"></a>Format
+
+Verwenden Sie zum Festlegen des Medienformats der von Microsoft Graph zurückgegebenen Elemente den `$format`-Abfrageparameter.
+
+Die folgende Anforderung gibt beispielsweise die Benutzer in der Organisation im JSON-Format zurück:
+
+```http
+GET https://graph.microsoft.com/v1.0/users?$format=json
+```
+
+[Ausprobieren im Graph-Tester](https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0)
+
+> **Hinweis:** Der `$format`-Abfrageparameter unterstützt eine Reihe von Formaten (z. B. Atom, XML und JSON), die Ergebnisse werden aber möglicherweise nicht in allen Formaten zurückgegeben.
 
 ## <a name="orderby"></a>orderby
 

@@ -1,6 +1,6 @@
 # <a name="update-calendar"></a>Kalender aktualisieren
 
-Mit dieser API können Sie die Eigenschaften eines Kalenderobjekts aktualisieren.
+Aktualisieren Sie die Eigenschaften eines [calendar](../resources/calendar.md)-Objekts. Dies kann ein Kalender für einen [Benutzer](../resources/user.md) oder der Standardkalender einer Office 365-[Gruppe](../resources/group.md) sein.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 

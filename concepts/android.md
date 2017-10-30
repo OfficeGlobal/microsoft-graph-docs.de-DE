@@ -10,6 +10,8 @@ Um Microsoft Graph in Ihrer App für Android zu verwenden, müssen Sie für Benu
 
 ![Anmeldeseite für Microsoft-Konten auf Android](images/AndroidConnect.png)
 
+<br/>
+
 **Sie möchten keine App erstellen?** Laden Sie sich für einen Schnelleinstieg das [Connect-Beispiel für Android](https://github.com/microsoftgraph/android-java-connect-sample) herunter, auf dem dieser Artikel basiert.
 
 
@@ -27,9 +29,9 @@ Wenn Sie das [Connect-Beispiel für Android](https://github.com/microsoftgraph/a
 
 Starten Sie ein neues Projekt in Android Studio. Für den Großteil des Assistenten können Sie die Standardwerte belassen, stellen Sie aber sicher, dass Sie die folgenden Optionen auswählen:
 
-* Ziel-Android-Geräte **Telefon und Tablet**
-    * Minimales SDK - **API 16: Android 4.1 (Jelly Bean)**
-* Hinzufügen einer Aktivität zu Mobile - **Grundlegende Aktivität**
+- Android-Zielgeräte: **Mobiltelefone und Tablets**
+- Minimales SDK: **API 16: Android 4.1 (Jelly Bean)**
+- Hinzufügen einer Aktivität zu Mobile: **Grundlegende Aktivitäten**
  
 Auf diese Weise erhalten Sie ein Android-Projekt mit einer Aktivität und einer Schaltfläche, die Sie zum Authentifizieren des Benutzers verwenden können.
 
@@ -44,9 +46,9 @@ Registrieren Sie eine App im Microsoft-App-Registrierungsportal. Dadurch wird di
 
 2. Klicken Sie auf **App hinzufügen**.
 
->Tipp:  Wenn Sie das [Connect-Beispiel für Android](https://github.com/microsoftgraph/android-java-connect-sample) heruntergeladen haben und dieses lediglich registrieren möchten, deaktivieren Sie **Guided Setup**, bevor Sie auf die Schaltfläche **Create** klicken.
+    > **Tipp:** Wenn Sie das [Connect-Beispiel für Android](https://github.com/microsoftgraph/android-java-connect-sample) heruntergeladen haben und dieses lediglich registrieren möchten, deaktivieren Sie das Kontrollkästchen **Guided Setup**, bevor Sie auf die Schaltfläche **Create** klicken.
 
-3. Geben Sie einen Namen für die App ein, und wählen Sie **Create**. 
+3. Geben Sie einen Namen für die App ein, und wählen Sie dann **Erstellen** aus. 
     
     Für den Fluss **Guided Setup**:
  
@@ -62,6 +64,8 @@ Registrieren Sie eine App im Microsoft-App-Registrierungsportal. Dadurch wird di
 
     f. Auf der Seite **Configure** hat das Portal eine eindeutige Anwendungs-ID für Sie erstellt. Verwenden Sie diese, um Ihre App zu konfigurieren.
 
+    <br/>
+    
     Für den Fluss ohne Anleitung:
 
     Die Registrierungsseite wird angezeigt, und die Eigenschaften der App werden aufgeführt.
@@ -70,12 +74,11 @@ Registrieren Sie eine App im Microsoft-App-Registrierungsportal. Dadurch wird di
 
     b. Wählen Sie **Plattform hinzufügen** und **Systemeigene Anwendung** aus.
 
-    > **Hinweis:** Das App-Registrierungsportal stellt einen Umleitungs-URI mit dem Wert *msalENTER_YOUR_CLIENT_ID://auth* bereit. Verwenden Sie nicht die integrierten Umleitungs-URIs. Das [Connect-Beispiel für Android](https://github.com/microsoftgraph/android-java-connect-sample) implementiert die MSAL-Authentifizierungsbibliothek, die diesen Umleitungs-URI erfordert. Bei Verwendung einer [-unterstützten Drittanbieterbibliothek](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) oder der **ADAL**-Bibliothek müssen Sie die integrierten Umleitungs-URIs verwenden.
+      > **Hinweis:** Das Anwendungsregistrierungsportal stellt einen Umleitungs-URI mit dem Wert `msalENTER_YOUR_CLIENT_ID://auth` bereit. Verwenden Sie nicht die integrierten Umleitungs-URIs. Das [Connect-Beispiel für Android](https://github.com/microsoftgraph/android-java-connect-sample) implementiert die MSAL-Authentifizierungsbibliothek, die diesen Umleitungs-URI erfordert. Bei Verwendung einer [-unterstützten Drittanbieterbibliothek](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) oder der **ADAL**-Bibliothek müssen Sie die integrierten Umleitungs-URIs verwenden.
+      
+      c. Fügen Sie delegierte Berechtigungen hinzu. Sie benötigen die Berechtigungen **profile**, **Mail.ReadWrite**, **Mail.Send**, **Files.ReadWrite** und **User.ReadBasic.All**. 
 
-
-    a. Fügen Sie delegierte Berechtigungen hinzu. Sie benötigen die Berechtigungen **profile**, **Mail.ReadWrite**, **Mail.Send**, **Files.ReadWrite** und **User.ReadBasic.All**. 
-   
-    b. Wählen Sie **Speichern** aus.
+      d. Klicken Sie auf **Speichern**.
 
 
 ## <a name="authenticate-the-user-and-get-an-access-token"></a>Authentifizierung des Benutzers und Abrufen eines Zugriffstokens
@@ -93,8 +96,9 @@ Wir wollen nun das [Connect-Beispiel für Android](https://github.com/microsoftg
         exclude group: 'com.android.support', module: 'appcompat-v7'
     }
     compile 'com.android.volley:volley:1.0.0'
-
 ```
+
+<br/>
 
 ### <a name="start-the-authentication-flow"></a>Starten des Authentifizierungsflusses
 
@@ -116,6 +120,7 @@ Wir wollen nun das [Connect-Beispiel für Android](https://github.com/microsoftg
 
    ```
 
+<br/>
 
 2. Suchen Sie in der Klasse **ConnectActivity** nach dem Ereignishandler für das Klick-Ereignis von **mConnectButton**. Suchen Sie die **OnClick**-Methode, und überprüfen Sie den relevanten Code.
   
@@ -160,6 +165,9 @@ Wir wollen nun das [Connect-Beispiel für Android](https://github.com/microsoftg
     }
 
    ```
+   
+<br/>
+
 3. Suchen Sie den Ereignishandler, der die Azure AD-Umleitungsantwort verarbeitet, die von Azure AD generiert wird, wenn der Benutzer das Authentifizierungsdialogfeld schließt. Dieser Handler befindet sich in der Klasse **ConnectActivity**.
 
    ```java
@@ -184,10 +192,12 @@ Wir wollen nun das [Connect-Beispiel für Android](https://github.com/microsoftg
         }
     }
 
-   ```    
-3. Suchen Sie die Rückrufmethode der Authentifizierung, die das Authentifizierungstoken zwischenspeichert, das in Aufrufen der Graph-API verwendet wird.
+   ```  
+   
+   <br/>
 
- 
+4. Suchen Sie die Rückrufmethode der Authentifizierung, die das Authentifizierungstoken zwischenspeichert, das in Aufrufen der Graph-API verwendet wird.
+
 
 ```java
     /* Callback used for interactive request.  If succeeds we use the access
@@ -224,7 +234,9 @@ Wir wollen nun das [Connect-Beispiel für Android](https://github.com/microsoftg
     }
 
 ```
-    
+
+<br/>
+   
 In der Hauptaktivität der Connect-Beispiel-App befindet sich eine Schaltfläche **Connect**. Wenn Sie zum ersten Mal auf die Schaltfläche klicken, wird in der App eine Authentifizierungsseite über den Browser des Geräts angezeigt. Der nächste Schritt besteht darin, den Code zu behandeln, den der Autorisierungsserver an den Umleitung-URI sendet, und diesen durch ein Zugriffstoken zu ersetzen.
 
 ### <a name="exchange-the-authorization-code-for-an-access-token"></a>Ersetzen des Autorisierungscodes durch ein Zugriffstoken
@@ -232,6 +244,7 @@ In der Hauptaktivität der Connect-Beispiel-App befindet sich eine Schaltfläche
 Sie müssen Ihre App so vorbereiten, dass die Antwort des Autorisierungsservers verarbeitet wird, die einen Code enthält, der durch ein Zugriffstoken ersetzt werden kann.
 
 1. Sie müssen dem Android-System mitteilen, dass die Connect-App Anforderungen an den Umleitungs-URI verarbeiten kann, der bei der Registrierung der Anwendung konfiguriert wurde. Öffnen Sie hierzu die Datei **strings.xml** mit den Zeichenfolgenressourcen, und fügen sie dem Element **\<application/\>** des Projekts die folgenden untergeordneten Elemente hinzu.
+
    ```xml
    <!DOCTYPE resources [
        <!ENTITY clientId "ENTER_YOUR_CLIENT_ID">
@@ -240,8 +253,9 @@ Sie müssen Ihre App so vorbereiten, dass die Antwort des Autorisierungsservers 
     ...
     <string name="client_Id">&clientId;</string>
     <string name="msalPrefix">msal&clientId;</string>
-
    ```
+
+   <br/>
 
    Die Zeichenfolgenressourcen werden in der Datei **AndroidManifest.xml** verwendet. Die **MSAL**-Bibliothek liest während der Laufzeit die Client-ID und gibt REST-Antworten an die Umleitungs-URL zurück, die für **BrowserTabActivity** definiert wurde.
 
@@ -267,9 +281,11 @@ Sie müssen Ihre App so vorbereiten, dass die Antwort des Autorisierungsservers 
                android:value="@string/client_Id"/>
         </application>
     ```
+
+
 2. Die **MSAL**-Bibliothek benötigt Zugriff auf die vom Registrierungsportal zugewiesene Anwendungs-ID. **Die MSAL-Bibliothek bezeichnet die Anwendungs-ID als „Client-ID“**. Sie ruft die Anwendungs-ID (Client-ID) aus dem Anwendungskontext ab, den Sie im Bibliothekskonstruktor übergeben. 
 
-   >Hinweis: Sie können die Client-ID auch zur Laufzeit angeben, indem Sie einen Zeichenfolgeparameter an den Konstruktor übergeben. 
+   > **Hinweis:** Sie können die Client-ID auch zur Laufzeit angeben, indem Sie einen Zeichenfolgeparameter an den Konstruktor übergeben. 
 
 3. Die Aktivität wird aufgerufen, wenn der Autorisierungsserver eine Antwort sendet. Fordern Sie ein Zugriffstoken mit der Antwort vom Autorisierungsserver an. Wechseln Sie zur Klasse **AuthenticationManager**, und suchen Sie den folgenden Code.
 
@@ -331,30 +347,35 @@ Sie müssen Ihre App so vorbereiten, dass die Antwort des Autorisierungsservers 
 
    ```
 
+<br/>
 
 ## <a name="call-microsoft-graph"></a>Aufrufen von Microsoft Graph
+
 Zum Aufrufen von Microsoft Graph können Sie [das Microsoft Graph-SDK](#call-microsoft-graph-using-the-microsoft-graph-sdk) oder die [Microsoft Graph-REST-API](#call-microsoft-graph-using-the-microsoft-graph-rest-api) verwenden.
 
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-sdk"></a>Aufrufen von Microsoft Graph mit dem Microsoft Graph-SDK
+
 Das [Microsoft Graph-SDK für Android](https://github.com/microsoftgraph/msgraph-sdk-android) stellt Klassen bereit, aus denen Anforderungen und Prozessergebnisse aus Microsoft Graph erstellt werden. Führen Sie die folgenden Schritte aus, um das Microsoft Graph-SDK zu verwenden.
 
 1. Gewähren Sie Ihrer Anwendung entsprechende Internetberechtigungen. Öffnen Sie die Datei **AndroidManifest**, und fügen Sie das folgende untergeordnete Element zum Manifest hinzu.
+    
     ```xml
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     ```
 
+
 2. Fügen Sie Abhängigkeiten zum Microsoft Graph-SDK und zu GSON hinzu.
+   
    ```gradle
     compile 'com.microsoft.graph:msgraph-sdk-android:1.3.2'
     compile 'com.google.code.gson:gson:2.7'
    ```
 
 
-3. Verwenden Sie die Hilfsmethode **authenticateRequest**, um Authentifizierungstoken zu neuen Anforderungen hinzuzufügen. Diese Methode implementiert die gleiche Methode aus der Microsoft Graph-Authentifizierungsoberfläche **IAuthenticationProvider**.
+3. Verwenden Sie die Hilfsmethode **AuthenticateRequest**, um Authentifizierungstoken zu neuen Anforderungen hinzuzufügen. Diese Methode implementiert die gleiche Methode aus der Microsoft Graph-Authentifizierungsoberfläche **IAuthenticationProvider**.
     
    ```java
     /**
@@ -382,6 +403,7 @@ Das [Microsoft Graph-SDK für Android](https://github.com/microsoftgraph/msgraph
         }
     }
    ```
+
 
 4. Erstellen Sie einen E-Mail-Entwurf, und senden Sie ihn mit den folgenden Hilfsmethoden aus der Hilfsklasse **GraphServiceController**.
 
@@ -472,13 +494,18 @@ Das [Microsoft Graph-SDK für Android](https://github.com/microsoftgraph/msgraph
     }
 
    ```
+  
+
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-rest-api"></a>Aufrufen von Microsoft Graph mit der Microsoft Graph-REST-API
+
 Die [Microsoft Graph-REST-API](http://developer.microsoft.com/en-us/graph/docs) macht mehrere APIs aus Microsoft-Clouddiensten über einen einzelnen REST-API-Endpunkt verfügbar. Gehen Sie folgendermaßen vor, um die REST-API zu verwenden.
 
 1. Gewähren Sie Ihrer Anwendung entsprechende Internetberechtigungen. Öffnen Sie die Datei **AndroidManifest**, und fügen Sie das folgende untergeordnete Element zum Manifest hinzu.
+    
     ```xml
     <uses-permission android:name="android.permission.INTERNET" />
     ```
+
 
 2. Fügen Sie der Volley HTTP-Bibliothek eine Abhängigkeit hinzu.
 
@@ -486,7 +513,9 @@ Die [Microsoft Graph-REST-API](http://developer.microsoft.com/en-us/graph/docs) 
     compile 'com.android.volley:volley:1.0.0'
     ```
    
+
 3. Ersetzen Sie die Zeile `String accessToken = tokenResponse.accessToken;` durch den folgenden Code. Fügen Sie Ihre E-Mail-Adresse in den Platzhalter ein, der mit **\<YOUR_EMAIL_ADDRESS\>** markiert ist.
+   
    ```java
     final String accessToken = tokenResponse.accessToken;
 
@@ -547,24 +576,27 @@ Die [Microsoft Graph-REST-API](http://developer.microsoft.com/en-us/graph/docs) 
     });
    ```
 
+
 ## <a name="run-the-app"></a>Ausführen der App
 Sie können Ihre Android-App nun testen.
 
 1. Starten Sie Ihren Android-Emulator, oder schließen Sie das Gerät an Ihren Computer an.
 2. Drücken Sie in Android Studio UMSCHALT+F10, um die App auszuführen.
 3. Wählen Sie im Dialogfeld für die Bereitstellung Ihren Android-Emulator oder das Android-Gerät aus.
-4. Tippen Sie in der Hauptaktivität auf die Floating-Action-Button.
+4. Tippen Sie in der Hauptaktivität auf die**Floating Action**-Schaltfläche.
 5. Melden Sie sich mit Ihrem persönlichen Konto oder mit Ihrem Geschäfts- oder Schulkonto an, und gewähren Sie die erforderlichen Berechtigungen.
 6. Tippen Sie im App-Auswahldialogfeld auf die App, um fortzufahren.
 
 Überprüfen Sie den Posteingang der E-Mail-Adresse, die Sie im Abschnitt [Aufrufen von Microsoft Graph](#call-microsoft-graph) konfiguriert haben. Dort sollten Sie eine E-Mail von dem Konto vorfinden, das Sie zum Anmelden bei der App verwendet haben.
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 - Testen Sie den [Microsoft Graph-Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Beispiele für allgemeine Vorgänge finden Sie im [Codeausschnittbeispiel für Android](https://github.com/microsoftgraph/android-java-snippets-sample). Sie können auch unsere anderen [Android-Beispiele](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=android) auf GitHub erkunden.
 
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Microsoft Graph-SDK für Android](https://github.com/microsoftgraph/msgraph-sdk-android) 
 - [Abrufen von Zugriffstoken zum Aufrufen von Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
 - [Im Namen eines Benutzers zugreifen](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)

@@ -1,13 +1,17 @@
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension-Ressourcentyp (offene Erweiterungen)
 
-Offene Erweiterungen (bisher als Office 365-Datenerweiterungen bezeichnet) bieten Ihnen eine einfache Möglichkeit zum direkten Hinzufügen nicht typisierter Eigenschaften zu einer Ressource in Microsoft Graph. Offiene Erweiterungen werden mithilfe der **openTypeExtension**-Ressource dargestellt. Alle offenen Erweiterungen, die einer Ressource hinzugefügt wurden, werden in der **extensions**-Navigationseigenschaft angezeigt, die vom abstrakten Typ [extension](extension.md) abgeleitet wird.  Jede Erweiterung weist eine **extensionName**-Eigenschaft auf, die die einzige vordefinierte, schreibbare Eigenschaft für alle Erweiterungen zusammen mit ihren benutzerdefinierten Daten ist. Um sicherzustellen, dass Erweiterungsnamen eindeutig sind, können Sie eine umgekehrtes DNS-Format (Domain Name System) verwenden, das _von Ihrer eigenen Domäne_, z. B. `Com.Contoso.ContactInfo`, abhängig ist. Verwenden Sie in Erweiterungsnamen auf keinen Fall die Microsoft-Domäne (`Com.Microsoft` oder `Com.OnMicrosoft`).
+Offene Erweiterungen (bisher als Office 365-Datenerweiterungen bezeichnet) bieten Ihnen eine einfache Möglichkeit zum direkten Hinzufügen nicht typisierter Eigenschaften zu einer Ressource in Microsoft Graph. 
+
+Offiene Erweiterungen werden mithilfe der **openTypeExtension**-Ressource dargestellt. Alle offenen Erweiterungen, die einer Ressource hinzugefügt wurden, werden in der **extensions**-Navigationseigenschaft angezeigt, die vom abstrakten Typ [extension](extension.md) abgeleitet wird. Jede Erweiterung weist eine **extensionName**-Eigenschaft auf, die die einzige vordefinierte, schreibbare Eigenschaft für alle Erweiterungen zusammen mit ihren benutzerdefinierten Daten ist. 
+
+Um sicherzustellen, dass Erweiterungsnamen eindeutig sind, können Sie eine umgekehrtes DNS-Format (Domain Name System) verwenden, das _von Ihrer eigenen Domäne_, z. B. `Com.Contoso.ContactInfo`, abhängig ist. Verwenden Sie in Erweiterungsnamen auf keinen Fall die Microsoft-Domäne (`Com.Microsoft` oder `Com.OnMicrosoft`).
 
 Beispiel für eine offene Erweiterung: [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](../../../concepts/extensibility_open_users.md)
 
 Offene Erweiterungen werden von den folgenden Ressourcen in den entsprechenden Versionen unterstützt: - Allgemein verfügbar (GA: /v1.0 und /beta) oder Vorschau (/beta).
 
-| Ressource | Version |
-|---------------|-------|
+|Ressource |Version |
+|:---------------|:-------|
 | [Administrative Einheit](../../beta/resources/administrativeunit.md)  | Nur Vorschau |
 | [Kalenderereignis](event.md) | Allgemein verfügbar |
 | [Kalenderereignis](event.md) für Gruppe | Allgemein verfügbar |
@@ -43,19 +47,24 @@ Es folgt eine JSON-Darstellung der Ressource.
 }
 
 ```
+
+<br/>
+
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft     | Typ   |Beschreibung|
+
+|Eigenschaft      |Typ    |Beschreibung |
 |:---------------|:--------|:----------|
 |extensionName|String|Ein eindeutiger Textbezeichner für eine offene Erweiterung. Erforderlich.|
-|id|Zeichenfolge| Eine vollqualifizierte ID, die den Erweiterungstyp mit dem **extensionName**-Element verkettet. Schreibgeschützt.|
+|id|String| Eine vollqualifizierte ID, die den Erweiterungstyp mit dem **extensionName**-Element verkettet. Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen
+
 Keine
 
 
 ## <a name="methods"></a>Methoden
 
-| Methode           | Rückgabetyp    |Beschreibung|
+|Methode        |Rückgabetyp |Beschreibung |
 |:---------------|:--------|:----------|
 |[Post](../api/opentypeextension_post_opentypeextension.md) | [openTypeExtension](opentypeextension.md) (in einer vorhandenen Ressourceninstanz) oder ein neues [contact](../resources/contact.md)-, [event](../resources/event.md)- oder [message](../resources/message.md)-Objekt, das ein openTypeExtension-Objekt enthält. | Dient zum Erstellen eines openTypeExtension-Objekts in einer vorhandenen oder neuen Ressourceninstanz.|
 |[Get](../api/opentypeextension_get.md) | [openTypeExtension](opentypeextension.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des openTypeExtension-Objekts.|
