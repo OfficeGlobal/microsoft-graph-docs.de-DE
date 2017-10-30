@@ -1,38 +1,38 @@
-# <a name="create-rangeborder"></a><span data-ttu-id="0ab30-101">RangeBorder erstellen</span><span class="sxs-lookup"><span data-stu-id="0ab30-101">Create RangeBorder</span></span>
+# <a name="create-rangeborder"></a><span data-ttu-id="b96d3-101">RangeBorder erstellen</span><span class="sxs-lookup"><span data-stu-id="b96d3-101">Create RangeBorder</span></span>
 
-<span data-ttu-id="0ab30-102">Verwenden Sie diese API zum Erstellen eines neuen RangeBorder.</span><span class="sxs-lookup"><span data-stu-id="0ab30-102">Use this API to create a new RangeBorder.</span></span>
-## <a name="permissions"></a><span data-ttu-id="0ab30-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="0ab30-103">Permissions</span></span>
-<span data-ttu-id="0ab30-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="0ab30-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="b96d3-102">Verwenden Sie diese API zum Erstellen eines neuen RangeBorder.</span><span class="sxs-lookup"><span data-stu-id="b96d3-102">Use this API to create a new RangeBorder.</span></span>
+## <a name="permissions"></a><span data-ttu-id="b96d3-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="b96d3-103">Permissions</span></span>
+<span data-ttu-id="b96d3-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="b96d3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="0ab30-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="0ab30-106">Permission type</span></span>      | <span data-ttu-id="0ab30-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="0ab30-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b96d3-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="b96d3-106">Permission type</span></span>      | <span data-ttu-id="b96d3-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="b96d3-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0ab30-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="0ab30-108">Delegated (work or school account)</span></span> | <span data-ttu-id="0ab30-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0ab30-109">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="0ab30-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="0ab30-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0ab30-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="0ab30-111">Not supported.</span></span>    |
-|<span data-ttu-id="0ab30-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="0ab30-112">Application</span></span> | <span data-ttu-id="0ab30-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="0ab30-113">Not supported.</span></span> |
+|<span data-ttu-id="b96d3-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="b96d3-108">Delegated (work or school account)</span></span> | <span data-ttu-id="b96d3-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b96d3-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="b96d3-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="b96d3-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b96d3-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="b96d3-111">Not supported.</span></span>    |
+|<span data-ttu-id="b96d3-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="b96d3-112">Application</span></span> | <span data-ttu-id="b96d3-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="b96d3-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0ab30-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="0ab30-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b96d3-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="b96d3-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/borders
-POST /workbook/worksheets/{id|name}/range(<address>)/format/borders
+POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="0ab30-115">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="0ab30-115">Request headers</span></span>
-| <span data-ttu-id="0ab30-116">Name</span><span class="sxs-lookup"><span data-stu-id="0ab30-116">Name</span></span>       | <span data-ttu-id="0ab30-117">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="0ab30-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b96d3-115">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="b96d3-115">Request headers</span></span>
+| <span data-ttu-id="b96d3-116">Name</span><span class="sxs-lookup"><span data-stu-id="b96d3-116">Name</span></span>       | <span data-ttu-id="b96d3-117">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b96d3-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="0ab30-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="0ab30-118">Authorization</span></span>  | <span data-ttu-id="0ab30-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="0ab30-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b96d3-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="b96d3-118">Authorization</span></span>  | <span data-ttu-id="b96d3-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="b96d3-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0ab30-121">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="0ab30-121">Request body</span></span>
-<span data-ttu-id="0ab30-122">Geben Sie im Anforderungstext eine JSON-Darstellung des [RangeBorder](../resources/rangeborder.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="0ab30-122">In the request body, supply a JSON representation of [RangeBorder](../resources/rangeborder.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b96d3-121">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="b96d3-121">Request body</span></span>
+<span data-ttu-id="b96d3-122">Geben Sie im Anforderungstext eine JSON-Darstellung des [RangeBorder](../resources/rangeborder.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="b96d3-122">In the request body, supply a JSON representation of [RangeBorder](../resources/rangeborder.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0ab30-123">Antwort</span><span class="sxs-lookup"><span data-stu-id="0ab30-123">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b96d3-123">Antwort</span><span class="sxs-lookup"><span data-stu-id="b96d3-123">Response</span></span>
 
-<span data-ttu-id="0ab30-124">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und das [RangeBorder](../resources/rangeborder.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="0ab30-124">If successful, this method returns `201 Created` response code and [RangeBorder](../resources/rangeborder.md) object in the response body.</span></span>
+<span data-ttu-id="b96d3-124">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und das [RangeBorder](../resources/rangeborder.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="b96d3-124">If successful, this method returns `201 Created` response code and [RangeBorder](../resources/rangeborder.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0ab30-125">Beispiel</span><span class="sxs-lookup"><span data-stu-id="0ab30-125">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="0ab30-126">Anforderung</span><span class="sxs-lookup"><span data-stu-id="0ab30-126">Request</span></span>
-<span data-ttu-id="0ab30-127">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="0ab30-127">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b96d3-125">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b96d3-125">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b96d3-126">Anforderung</span><span class="sxs-lookup"><span data-stu-id="b96d3-126">Request</span></span>
+<span data-ttu-id="b96d3-127">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="b96d3-127">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_rangeborder_from_rangeformat"
@@ -50,9 +50,9 @@ Content-length: 136
   "weight": "weight-value"
 }
 ```
-<span data-ttu-id="0ab30-128">Geben Sie im Anforderungstext eine JSON-Darstellung des [RangeBorder](../resources/rangeborder.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="0ab30-128">In the request body, supply a JSON representation of [RangeBorder](../resources/rangeborder.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="0ab30-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="0ab30-129">Response</span></span>
-<span data-ttu-id="0ab30-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="0ab30-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="b96d3-128">Geben Sie im Anforderungstext eine JSON-Darstellung des [RangeBorder](../resources/rangeborder.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="b96d3-128">In the request body, supply a JSON representation of [RangeBorder](../resources/rangeborder.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="b96d3-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="b96d3-129">Response</span></span>
+<span data-ttu-id="b96d3-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="b96d3-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
