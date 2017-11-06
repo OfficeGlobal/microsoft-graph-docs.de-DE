@@ -118,8 +118,8 @@ Mit einem Zugriffstoken kann Ihre App authentifizierte Anforderungen an die Micr
     headers = { 
         'User-Agent' : 'python_tutorial/1.0',
         'Authorization' : 'Bearer {0}'.format(access_token),
-         'Accept' : 'application/json',
-         'Content-Type' : 'application/json'
+        'Accept' : 'application/json',
+        'Content-Type' : 'application/json'
     }
 ```
 > **Hinweis** Die Anforderung muss auch einen Header des Typs **Content-Type** mit einem Wert senden, der von der Graph-API akzeptiert wird, z. B. `application/json`.
@@ -130,7 +130,7 @@ Mit einem Zugriffstoken kann Ihre App authentifizierte Anforderungen an die Micr
 Übergeben Sie ein JSON-Objekt durch Festlegen des `persistChanges`-Wert auf `true` oder `false`. Wenn der Wert von `persistChanges` auf `false` festgelegt wird, wird eine nicht beständige Sitzungs-ID zurückgegeben. In diesem Beispiel wird die HTTP-Bibliothek [Anforderungen](http://docs.python-requests.org/en/latest/user/quickstart) verwendet. 
 
 ```python
-     # Replace the id with your Excel workbook's drive id
+    # Replace the id with your Excel workbook's drive id
     url = 'https://graph.microsoft.com/v1.0/me/drive/items/01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE/workbook/createSession'
     # Set request headers
     headers = { 
@@ -151,7 +151,7 @@ Mit einem Zugriffstoken kann Ihre App authentifizierte Anforderungen an die Micr
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 201, Created
+HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
@@ -183,7 +183,7 @@ Die vom vorherigen Aufruf zurückgegebene Sitzungs-ID wird als Header in nachfol
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {

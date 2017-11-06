@@ -1,36 +1,37 @@
-# <a name="microsoft-graph-quick-start-faq"></a>Microsoft Grap-Schnellstart – häufig gestellte Fragen
+# <a name="microsoft-graph-quick-start-faq"></a>Microsoft Graph-Schnellstart – Häufig gestellte Fragen
 
-In diesen häufig gestellten Fragen werden Fragen und Probleme behandelt, die bei [Microsoft Grap-Schnellstarts](https://developer.microsoft.com/en-us/graph/quick-start) auftreten können.
+In den häufig gestellten Fragen werden Fragen im Zusammenhang mit den [Microsoft Graph-Schnellstarts](https://developer.microsoft.com/en-us/graph/quick-start) beantwortet.
 
 ## <a name="what-do-the-quick-starts-do"></a>Welche Funktionen haben die Schnellstarts?
 
 Die Schnellstart-Beispiele zeigen, wie Sie die Leistungsfähigkeit von Microsoft Graph nutzen können. 
 
-Bei früheren Microsoft REST-APIs mussten Sie sich bei jedem Dienst authentifizieren, den Sie aufrufen wollten. Durch die einheitliche Authentifizierung von Microsoft Graph und die Kombination aller API-Endpunkte in einem Graph-API-Endpunkt werden diese Schritte unnötig. Sie authentifizieren sich jetzt nur einmal und können auf die Informationen mehrerer Anwendungen und Dienste zuzugreifen. 
+Wenn Sie die Office 365-REST-APIs verwenden, müssen Sie sich bei jedem Dienst, den Sie aufrufen möchten, authentifizieren. Bei Microsoft Graph wird diese Komplexität beseitigt, indem die Authentifizierung vereinheitlicht wird und Sie Zugriff auf alle APIs über einen einzigen Einstiegspunkt erhalten. Sie können sich einmal authentifizieren und auf Informationen in mehreren Anwendungen und Diensten zugreifen. 
 
-Im Microsoft Graph-Schnellstart-Beispiel 3 wird auf drei verschiedene Dienste mit einer Authentifizierung zugegriffen: Microsoft-Konto, OneDrive und Outlook. Bei jedem Schnellstart werden Informationen aus Benutzerprofilen von Microsoft-Konten abgerufen. Diese Daten (ein Foto) werden anschließend auf OneDrive geschrieben, und dann wird in Outlook eine E-Mail (mit einem Link zu dem Foto) generiert. 
+Die Microsoft Graph-Schnellstarts greifen mit einer Authentifizierung auf drei Dienste zu: Microsoft-Konto, OneDrive und Outlook. Bei jedem Schnellstart werden Informationen aus Benutzerprofilen von Microsoft-Konten abgerufen. Diese Daten (ein Foto) werden auf OneDrive geschrieben, und dann wird in Outlook eine E-Mail (mit einem Link zu dem Foto) generiert. 
 
-Es müssen vier Schritte für jeden Schnellstart ausgeführt werden, um eine Beispiel-App zu erhalten, die ausgeführt werden kann:
+Die Schnellstarts umfassen vier Schritte:
 - Wählen Sie Ihre Plattform. 
 - Rufen Sie Ihre App-ID (auch bekannt als Client-ID) ab.
 - Erstellen Sie das Beispiel.
-- Melden Sie sich an und versenden Sie ein Profilfoto per E-Mail.
+- Melden Sie sich an, und versenden Sie ein Profilfoto per E-Mail.
 
->Hinweis: Diese Codes sind nicht für den Produktionseinsatz geeignet; dies sind lediglich einfache Illustrationen dafür, wie Sie das gleiche Szenario für viele verschiedene Programmiersprachen und Plattformen ausführen können. Nach dem Schnellstart sollten Sie sich [intensiv mit der Authentifizierung beschäftigen](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios), um für den Produktionseinsatz geeignete Apps erstellen zu können.
+Wenn Sie den Schnellstart abgeschlossen haben, ist ihre App fertig.
 
 
 ## <a name="general-quick-start-sample-questions"></a>Allgemeine Schnellstart-Beispielfragen
-Fragen zu der Organisation und zu Inhalten der Suite von Schnellstart-Beispielen.
+In diesem Abschnitt werden Fragen zu der Organisation und zu Inhalten der Schnellstart-Beispiele beantwortet.
 
 ### <a name="why-does-my-quick-start-contain-a-readme-file"></a>Warum enthält mein Schnellstart eine Readme-Datei?
 
 Jeder Schnellstart registriert eine neue Anwendung und erstellt eine Zip-Datei, die den Inhalt eines GitHub-Repositorys enthält. Die Dateien im Repository werden aktualisiert, damit Sie die Beispielanwendung im Repository nicht konfigurieren müssen. Sie finden diese Repositorys in der [MicrosoftGraph-Organisation](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=connect) auf GitHub.
 
-Sie können sich die mit Schnellstarts verknüpften Repositorys gerne ansehen und Probleme melden, oder Sie befolgen die Anweisungen in der Readme-Datei zum Registrieren Ihrer eigenen Anwendung. Folgen Sie dem Link zum **Abfragen des Beispielcodes** unter Schritt 2 jedes Schnellstarts, um das zugehörige Repository aufzurufen.
+Sie können sich die mit Schnellstarts verknüpften Repositorys gerne ansehen und Probleme melden, oder Sie befolgen die Anweisungen in der Readme-Datei zum Registrieren Ihrer eigenen Anwendung. Folgen Sie dem Link zum **Abfragen des Beispielcodes** unter Schritt 2 jedes Schnellstarts, um das Repository aufzurufen.
 
-### <a name="which-microsoft-api-features-do-the-quick-start-samples-show"></a>Welche Funktionen von Microsoft-API werden in den Schnellstart-Beispielen veranschaulicht?
+### <a name="which-microsoft-graph-features-do-the-quick-start-samples-use"></a>Welche Funktionen von Microsoft-Graph werden in den Schnellstart-Beispielen verwendet?
 
-Die Zusammenstellung der Beispiele wird kontinuierlich verbessert. Schauen Sie sich das Beispiel-Repository an, das Sie interessiert. Wenn wir Funktionen zu Ihrem bevorzugten Beispiel hinzufügen, kündigen wir die Erweiterung im Beispiel-Readme an. In der folgenden Tabelle finden Sie die aktuellen Funktionen jedes Beispiels.
+Die Schnellstart-Beispiele werden ständig aktualisiert. Um die Updates zu erhalten, sehen Sie sich das Repository für das gewünschte Beispiel an. Wenn Features hinzugefügt werden, aktualisieren wir die Beispiel-Readme-Datei mit den neuen Informationen. In der folgenden Tabelle sind die aktuellen Funktionen jedes Beispiels aufgeführt.
+ +<!-- Replace the check mark images with an actual character that can be read by a screen reader. Or you could add alt text to each instance of the image. -->
 
 |Beispiel|Authentifizieren|Profilfoto abrufen|Foto auf OneDrive hochladen|Link per E-Mail freigeben|Foto an E-Mail anhängen|E-Mail senden|
 |-----:|-----:|-----:|------:|------:|------:|-----:|
@@ -48,11 +49,11 @@ Die Zusammenstellung der Beispiele wird kontinuierlich verbessert. Schauen Sie s
 |[Xamarin Connect](https://github.com/microsoftgraph/uwp-csharp-connect-sample)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|
 
 ## <a name="authentication-and-authorization"></a>Authentifizierung und Autorisierung
-Fragen im Zusammenhang mit Authentifizierungs- und Autorisierungsproblemen 
+In diesem Abschnitt werden Fragen im Zusammenhang mit Authentifizierungs- und Autorisierungsproblemen beantwortet. 
 
 ### <a name="why-dont-any-of-the-quick-start-samples-show-advanced-authentication-use-cases"></a>Warum sind in den Schnellstart-Beispielen keine Anwendungsfälle für die erweiterte Authentifizierung enthalten?
 
-Die Schnellstart-Beispiele bieten Ihnen eine Einführung in die Authentifizierung und Microsoft Graph-API-Aufrufe. Wenn Sie die Authentifizierung und Graph-API-Aufrufe zu Ihrer Produktionsanwendung hinzufügen, müssen Sie wissen, wie Sie diese im Hinblick auf Sicherheit und bedingte Zugriffsprobleme für erweiterte Authentifizierungsszenarien entwickeln.
+Die Schnellstart-Beispiele bieten Ihnen eine Einführung in die Authentifizierung und Microsoft Graph-API-Aufrufe. Wenn Sie die Authentifizierung und Microsoft Graph-API-Aufrufe zu Ihrer Produktionsanwendung hinzufügen, müssen Sie wissen, wie Sie diese im Hinblick auf Sicherheit und bedingte Zugriffsprobleme für erweiterte Authentifizierungsszenarien entwickeln.
 
 Weitere Informationen zu erweiterten Authentifizierungsszenarien für die verwendete Authentifizierungsbibliothek finden Sie auf der Seite des Publishers der Authentifizierungsbibliothek.
 
@@ -66,36 +67,42 @@ Weitere Informationen zu erweiterten Authentifizierungsszenarien für die verwen
 - [Microsoft Authentication Library für JavaScript](https://github.com/AzureAD/microsoft-authentication-library-for-js)
 
 ## <a name="microsoft-graph-api"></a>Microsoft Graph-API
-Fragen zum Schreiben von Codes für die Microsoft Graph-API
+In diesem Abschnitt werden Fragen zu Codierungsanwendungen beantwortet, die Microsoft Graph-APIs verwenden.
 
-### <a name="i-didnt-get-an-email-and-i-see-no-errors-or-exceptions-why-didnt-this-work"></a>Ich habe keine E-Mail erhalten, und es werden keine Fehler oder Ausnahmen angezeigt. Warum hat es nicht funktioniert?
+### <a name="i-didnt-get-an-email-and-i-dont-see-any-errors-or-exceptions-why-didnt-this-work"></a>Ich habe keine E-Mail erhalten, und es werden keine Fehler oder Ausnahmen angezeigt. Warum hat es nicht funktioniert?
 
 Wenn das Beispiel augenscheinlich eine E-Mail sendet, aber sie nicht in Ihrem Posteingang angezeigt wird, überprüfen Sie den Junk-E-Mail- oder Spam-Ordner. Wenn Sie die Nachricht von einem Testmandanten senden, wird die Nachricht möglicherweise als Spam gekennzeichnet.
 
 ### <a name="why-doesnt-the-email-sent-by-the-sample-have-my-profile-picture"></a>Warum enthält die Beispiel-E-Mail nicht mein Profilbild?
 
-- Möglicherweise wurde Ihr Profil nicht mit einem Profilbild eingerichtet. Wenn Sie mit einem Microsoft Service-Konto (MSA) angemeldet sind, erscheint das Profilbild auch dann nicht, wenn Sie eines besitzen. Die Microsoft Graph-API unterstützt derzeit keine Benutzerprofilbilder von MSA-Konten. <br/>Die meisten durch die Schnellstarts bereitgestellten Beispiele rufen Ihr Profilbild ab und laden es in das Stammverzeichnis Ihres OneDrive-Kontos hoch. Wenn Sie sich mit einem Microsoft-Konto (live.com, hotmail.com) anmelden, kann Microsoft Graph Ihr Profilbild aktuell nicht abrufen. Daher greifen wir auf das Bild mit der Gedankenblase zurück.
+Möglicherweise wurde Ihr Profil nicht mit einem Profilbild eingerichtet. Wenn Sie mit einem Microsoft angemeldet sind, erscheint das Profilbild auch dann nicht, wenn Sie eines besitzen. Die Microsoft Graph-API unterstützt derzeit keine Benutzerprofilbilder von Microsoft-Konten. Die meisten Schnellstart-Beispiele rufen Ihr Profilbild ab und laden es in das Stammverzeichnis Ihres OneDrive-Kontos hoch. Wenn Sie sich mit einem Microsoft-Konto (live.com, hotmail.com) anmelden, kann Microsoft Graph Ihr Profilbild aktuell nicht abrufen. Daher greifen wir auf das Bild mit der Gedankenblase zurück.
 
-- Im Node-Beispiel und in den iOS-Ziel-C-Beispielen werden keine Benutzerprofilbilder an die E-Mail-Nachricht angehängt. 
+In den Node iOS Objective C-Beispielen werden keine Benutzerprofilbilder an die E-Mail-Nachricht angehängt. 
 
-## <a name="asp-net"></a>ASP .NET
-Fragen zum Schreiben von Codes, Erstellen oder Ausführen des ASP.NET-Schnellstart-Beispiels.
+## <a name="aspnet"></a>ASP.NET
+In diesem Abschnitt werden Fragen zum Programmieren, Erstellen oder Ausführen des ASP.NET-Schnellstart-Beispiels beantwortet.
+
+### <a name="why-wont-my-aspnet-project-build"></a>Warum wird mein ASP.NET-Projekt nicht erstellt?
+Wenn ein Beispiel, das .NET-Bibliotheken verwendet, nicht in Visual Studio erstellt wird, überschreitet eines oder mehrere Ihrer Projekte eventuell die Windows-Pfadlängenbeschränkung von 260 Zeichen. Versuchen Sie, die Lösung zu einem Speicherort im oder in der Nähe des Stammverzeichnisses zu verschieben. 
 
 ## <a name="universal-windows-platform-uwp"></a>Universelle Windows-Plattform (UWP)
-Fragen zum Schreiben von Codes, Erstellen oder Ausführen des UWP-Schnellstart-Beispiels.
+In diesem Abschnitt werden Fragen zum Programmieren, Erstellen oder Ausführen des UWP-Schnellstart-Beispiels beantwortet.
+
+### <a name="why-wont-my-uwp-project-build"></a>Warum wird mein UWP-Projekt nicht erstellt?
+Wenn ein Beispiel, das .NET-Bibliotheken verwendet, nicht in Visual Studio erstellt wird, überschreitet eines oder mehrere Ihrer Projekte eventuell die Windows-Pfadlängenbeschränkung von 260 Zeichen. Versuchen Sie, die Lösung zu einem Speicherort im oder in der Nähe des Stammverzeichnisses zu verschieben. 
 
 ## <a name="xamarin"></a>Xamarin
-Fragen zum Schreiben von Codes, Erstellen oder Ausführen des Xamarin-Schnellstart-Beispiels.
+In diesem Abschnitt werden Fragen zum Programmieren, Erstellen oder Ausführen des Xamarin-Schnellstart-Beispiels beantwortet.
 
-### <a name="why-wont-my--aspnet-uwp-or-xamarin-project-build"></a>Warum wird mein ASP.NET-, UWP- oder Xamarin-Projekt nicht erstellt?
+### <a name="why-wont-my-xamarin-project-build"></a>Warum wird mein Xamarin-Projekt nicht erstellt?
 
 Wenn ein Beispiel, das .NET-Bibliotheken verwendet, nicht in Visual Studio erstellt wird, überschreitet eines oder mehrere Ihrer Projekte eventuell die Windows-Pfadlängenbeschränkung von 260 Zeichen. Insbesondere bei Xamarin-Lösungen tritt dies häufig auf, vor allen Dingen bei Android-Projekten innerhalb von Xamarin Lösungen. Versuchen Sie, die Lösung zu einem Speicherort im oder in der Nähe des Stammverzeichnisses zu verschieben. 
 
-## <a name="web-stack-samples"></a>Web-Stapel-Beispiele
-Fragen zum Schreiben von Codes, Erstellen oder Ausführen des Schnellstart-Beispiels mit Web-Technologie.
+## <a name="web-stack-samples"></a>Webstapel-Beispiele
+In diesem Abschnitt werden Fragen zum Programmieren, Erstellen oder Ausführen des Schnellstart-Beispiels mit Web-Technologie beantwortet.
 
 ### <a name="how-do-i-know-if-my-local-computer-supports-a-local-web-server"></a>Wie erkenne ich, ob mein lokaler Computer einen lokalen Webserver unterstützt?
-Die Schnellstart-Beispiele, die auf der Web-Technologie basieren, stellen die zum Starten und Hosten eines lokalen Webservers erforderliche Logik bereit. Beispielsweise enthält das auf der php 5.4.0+ Runtime basierende php-Beispiel einen [integrierten Webserver](http://php.net/manual/en/features.commandline.webserver.php), den Sie für die Entwicklung verwenden. Er ist nicht für die Verwendung in einer Produktionsumgebung vorgesehen. 
+Die Schnellstart-Beispiele, die auf der Web-Technologie basieren, stellen die zum Starten und Hosten eines lokalen Webservers erforderliche Logik bereit. Beispielsweise enthält das auf der PHP 5.4.0+ Runtime basierende PHP-Beispiel einen [integrierten Webserver](http://php.net/manual/en/features.commandline.webserver.php), den Sie für die Entwicklung verwenden. Er ist nicht für die Verwendung in einer Produktionsumgebung vorgesehen. 
 
 Wenn Sie das Node.js-Beispiel heruntergeladen haben, lesen Sie den [Leitfaden für die ersten Schritte mit Node.js](https://nodejs.org/en/docs/guides/getting-started-guide/), um mehr über den Start des Node-Webservers zu erfahren. 
 
@@ -121,6 +128,6 @@ Versuchen Sie zuerst, die Beispiel-App in einem InPrivate- oder Inkognitofenster
 
 ## <a name="didnt-find-what-you-need"></a>Sie haben keine Antwort auf Ihre Frage gefunden?
 
-Wenn diese häufig gestellten Fragen keine Antwort auf Ihre Frage oder keine Lösung für Ihr Problem mit einem oder mehreren der Schnellstarts bieten, melden Sie Ihre Frage oder Ihr Problem bitte auf [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph). 
+Wenn diese häufig gestellten Fragen keine Antwort auf Ihre Frage oder keine Lösung für Ihr Problem mit einem oder mehreren der Schnellstarts bieten, melden Sie Ihre Frage oder Ihr Problem bitte auf [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph). Taggen Sie Ihre Fragen mit „microsoftgraph“.
 
 Wenn sich Ihr Problem auf das Codebeispiel bezieht, das vom Schnellstart zur Verfügung gestellt wird, können Sie auch ein Problem im GitHub-Beispiel-Repository melden. Sie finden das Repository, indem Sie dem Link zum **Abfragen des Beispielcodes** unter Schritt 2 jedes Schnellstarts folgen.

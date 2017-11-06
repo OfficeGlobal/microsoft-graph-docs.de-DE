@@ -25,7 +25,6 @@ Das Element _Einschränkung_ des Namens bestimmt das potenzielle Ausmaß von Zug
 * Wenn **keine Einschränkung** angegeben wird, kann die App die Vorgänge nur für die Ressourcen ausführen, die im Besitz des angemeldeten Benutzers sind. Beispielsweise gewährt _User.Read_ Rechte zum Lesen nur des Profils des angemeldeten Benutzers, und _Mail.Read_ gewährt die Berechtigung zum Lesen nur der E-Mails im Postfach des angemeldeten Benutzers.
 
 > **Hinweis**: In delegierten Szenarios sind die Ihrer App gewährten effektiven Berechtigungen möglicherweise durch die Rechte des angemeldeten Benutzers in der Organisation eingeschränkt.
-> 
 
 ### <a name="microsoft-accounts-and-work-or-school-accounts"></a>Microsoft-Konten und Geschäfts-, Schul- oder Unikonten
 
@@ -33,27 +32,34 @@ Nicht alle Berechtigungen gelten für Microsoft-Konten und Geschäfts-, Schul- o
 
 ### <a name="user-and-group-search-limitations-for-guest-users-in-organizations"></a>Benutzer- und Gruppensucheinschränkungen für Gastbenutzer in Organisationen
 
-Benutzer- und Gruppensuchfunktionen ermöglichen der App, im Verzeichnis einer Organisation nach beliebigen Benutzern oder Gruppen zu suchen, indem der `/users`- oder `/groups`-Ressourcensatz abgefragt wird (z. B. `https://graph.microsoft.com/v1.0/users`). Diese Funktion steht Administratoren und Benutzern zur Verfügung, nicht jedoch Gastbenutzern. Wenn der angemeldete Benutzer ein Gastbenutzer ist, kann er abhängig von den einer App gewährten Berechtigungen das Profil eines bestimmten Benutzers oder einer bestimmten Gruppe lesen (z. B. `https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`); er kann jedoch nicht den `/users`- oder `/groups`-Ressourcensatz abfragen, wodurch potenziell mehr als eine einzelne Ressource zurückgegeben wird. Mit den entsprechenden Berechtigungen kann die App die Profile von Benutzern oder Gruppen lesen, die über Links in Navigationseigenschaften abgerufen werden, beispielsweise `/users/{id}/directReports` oder `/groups/{id}/members`.
+Benutzer- und Gruppensuchfunktionen ermöglichen der App, im Verzeichnis einer Organisation nach beliebigen Benutzern oder Gruppen zu suchen, indem der `/users`- oder `/groups`-Ressourcensatz abgefragt wird (z. B. `https://graph.microsoft.com/v1.0/users`). Diese Funktion steht Administratoren und Benutzern zur Verfügung, nicht jedoch Gastbenutzern. 
 
----
+Wenn der angemeldete Benutzer ein Gastbenutzer ist, kann er abhängig von den einer App gewährten Berechtigungen das Profil eines bestimmten Benutzers oder einer bestimmten Gruppe lesen (z. B. `https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`); er kann jedoch nicht den `/users`- oder `/groups`-Ressourcensatz abfragen, wodurch potenziell mehr als eine einzelne Ressource zurückgegeben wird. 
+
+Mit den entsprechenden Berechtigungen kann die App die Profile von Benutzern oder Gruppen lesen, die über Links in Navigationseigenschaften abgerufen werden, beispielsweise `/users/{id}/directReports` oder `/groups/{id}/members`.
+
 
 ## <a name="calendars-permissions"></a>Kalenderberechtigungen
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
-|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|Berechtigung    |Anzeigezeichenfolge   |Beschreibung |Administratorzustimmung erforderlich |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Calendars.Read_ |    Benutzerkalender lesen  | Ermöglicht der App, Ereignisse in Benutzerkalendern zu lesen.| Nein |
-| _Calendars.Read.Shared_ |    Benutzerkalender und freigegebene Kalender lesen | Ermöglicht der App, Ereignisse in allen Kalendern zu lesen, auf die der Benutzer zugreifen kann, einschließlich delegierter und freigegebener Kalender. | Nein |
-| _Calendars.ReadWrite_ |    Vollzugriff auf Benutzerkalender  | Ermöglicht der App, Ereignisse in Benutzerkalendern zu erstellen, zu lesen, zu aktualisieren und zu löschen. | Nein |
-| _Calendars.ReadWrite.Shared_ |    Benutzerkalender und freigegebene Kalender lesen und schreiben | Die App kann Ereignisse in allen Kalendern, für die der Benutzer über Zugriffsberechtigungen verfügt, erstellen, lesen, aktualisieren und löschen. Dies umfasst delegierte und freigegebene Kalender.| Nein |
+| _Calendars.Read_ |Benutzerkalender lesen |Ermöglicht der App, Ereignisse in Benutzerkalendern zu lesen. |Nein |
+| _Calendars.Read.Shared_ |Benutzerkalender und freigegebene Kalender lesen |Ermöglicht der App, Ereignisse in allen Kalendern zu lesen, auf die der Benutzer zugreifen kann, einschließlich delegierter und freigegebener Kalender. |Nein |
+| _Calendars.ReadWrite_ |Vollzugriff auf Benutzerkalender |Ermöglicht der App, Ereignisse in Benutzerkalendern zu erstellen, zu lesen, zu aktualisieren und zu löschen. |Nein |
+| _Calendars.ReadWrite.Shared_ |Benutzerkalender und freigegebene Kalender lesen und schreiben |Die App kann Ereignisse in allen Kalendern, für die der Benutzer über Zugriffsberechtigungen verfügt, erstellen, lesen, aktualisieren und löschen. Dies umfasst delegierte und freigegebene Kalender.|Nein |
+
+<br/>
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
-|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|Berechtigung    |Anzeigezeichenfolge   |Beschreibung |Administratorzustimmung erforderlich |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Calendars.Read_ |    Lesezugriff auf Kalender in allen Postfächern  | Ermöglicht der App, Ereignisse in allen Kalendern ohne einen angemeldeten Benutzer zu lesen.| Ja |
-| _Calendars.ReadWrite_ |    Lese- und Schreibzugriff auf Kalender in allen Postfächern | Ermöglicht der App, Ereignisse in allen Kalendern ohne einen angemeldeten Benutzer zu erstellen, zu lesen, zu aktualisieren und zu löschen.| Ja |
+|_Calendars.Read_ |Lesezugriff auf Kalender in allen Postfächern |Ermöglicht der App, Ereignisse in allen Kalendern ohne einen angemeldeten Benutzer zu lesen. |Ja |
+|_Calendars.ReadWrite_ |Lese- und Schreibzugriff auf Kalender in allen Postfächern |Ermöglicht der App, Ereignisse in allen Kalendern ohne einen angemeldeten Benutzer zu erstellen, zu lesen, zu aktualisieren und zu löschen. |Ja |
+
+<br/>
 
 ### <a name="remarks"></a>Hinweise
 
@@ -77,25 +83,24 @@ _Calendars.Read.Shared_ und _Calendars.ReadWrite.Shared_ gelten nur für Geschä
 
 Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 
----
 
 ## <a name="contacts-permissions"></a>Kontaktberechtigungen
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
-|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|Berechtigung    |Zeichenfolge anzeigen   |Beschreibung |Administratorzustimmung erforderlich |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Contacts.Read_ |    Benutzerkontakte lesen  | Ermöglicht der App, Benutzerkontakte zu lesen. | Nein |
-| _Contacts.Read.Shared_ |    Benutzerkontakte und freigegebene Kontakte lesen | Ermöglicht der App, Kontakte zu lesen, für die der Benutzer über Zugriffsberechtigungen verfügt, einschließlich der eigenen Kontakte des Benutzers und freigegebener Kontakte. | Nein |
-| _Contacts.ReadWrite_ |    Vollzugriff auf Benutzerkontakte  | Ermöglicht der App, Benutzerkontakte zu erstellen, zu lesen, zu aktualisieren und zu löschen. | Nein |
-| _Contacts.ReadWrite.Shared_ |    Benutzerkontakte und freigegebene Kontakte lesen und schreiben | Ermöglicht der App, Kontakte zu erstellen, zu lesen, zu aktualisieren und zu löschen, für die der Benutzer über Berechtigungen verfügt, einschließlich der eigenen Kontakte des Benutzers und freigegebener Kontakte.| Nein |
+|_Contacts.Read_ |Benutzerkontakte lesen  |Ermöglicht der App, Benutzerkontakte zu lesen. |Nein |
+|_Contacts.Read.Shared_ |Benutzerkontakte und freigegebene Kontakte lesen |Ermöglicht der App, Kontakte zu lesen, für die der Benutzer über Zugriffsberechtigungen verfügt, einschließlich der eigenen Kontakte des Benutzers und freigegebener Kontakte. |Nein |
+|_Contacts.ReadWrite_ |Vollzugriff auf Benutzerkontakte |Ermöglicht der App, Benutzerkontakte zu erstellen, zu lesen, zu aktualisieren und zu löschen. |Nein |
+|_Contacts.ReadWrite.Shared_ |Benutzerkontakte und freigegebene Kontakte lesen und schreiben |Ermöglicht der App, Kontakte zu erstellen, zu lesen, zu aktualisieren und zu löschen, für die der Benutzer über Berechtigungen verfügt, einschließlich der eigenen Kontakte des Benutzers und freigegebener Kontakte. |Nein |
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
-|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|Berechtigung    |Anzeigezeichenfolge   |Beschreibung |Administratorzustimmung erforderlich |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Contacts.Read_ |    Lesezugriff auf Kontakte in allen Postfächern | Ermöglicht der App, alle Kontakte in allen Postfächern ohne einen angemeldeten Benutzer zu lesen. | Ja |
-| _Contacts.ReadWrite_ |    Lese- und Schreibzugriff auf Kontakte in allen Postfächern  |Ermöglicht der App, alle Kontakte in allen Postfächern ohne einen angemeldeten Benutzer zu erstellen, zu lesen, zu aktualisieren und zu löschen.| Ja |
+|_Contacts.Read_ |Lesezugriff auf Kontakte in allen Postfächern |Ermöglicht der App, alle Kontakte in allen Postfächern ohne einen angemeldeten Benutzer zu lesen. |Ja |
+|_Contacts.ReadWrite_ |Lese- und Schreibzugriff auf Kontakte in allen Postfächern |Ermöglicht der App, alle Kontakte in allen Postfächern ohne einen angemeldeten Benutzer zu erstellen, zu lesen, zu aktualisieren und zu löschen. |Ja |
 
 ### <a name="remarks"></a>Hinweise
 Für Microsoft-Konten sind nur die delegierten Berechtigungen _Contacts.Read_ und _Contacts.ReadWrite_ gültig. 
@@ -115,82 +120,82 @@ Für Microsoft-Konten sind nur die delegierten Berechtigungen _Contacts.Read_ un
 
 Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 
----
 
 ## <a name="device-permissions"></a>Geräteberechtigungen
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
-|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|Berechtigung    |Anzeigezeichenfolge   |Beschreibung |Administratorzustimmung erforderlich |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Device.Read_ | Benutzergeräte lesen | Ermöglicht der App, eine Benutzerliste mit Geräten im Auftrag des angemeldeten Benutzers zu lesen. | Nein |
-| _Device.Command_ | Kommunikation mit Benutzergeräten | Ermöglicht der App, im Auftrag des angemeldeten Benutzers auf einem Benutzergerät eine andere App zu starten oder mit einer anderen App zu kommunizieren. | Nein |
+|_Device.Read_ |Benutzergeräte lesen |Ermöglicht der App, eine Benutzerliste mit Geräten im Auftrag des angemeldeten Benutzers zu lesen. |Nein |
+|_Device.Command_ |Kommunikation mit Benutzergeräten |Ermöglicht der App, im Auftrag des angemeldeten Benutzers auf einem Benutzergerät eine andere App zu starten oder mit einer anderen App zu kommunizieren. |Nein |
 
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
-|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|Berechtigung    |Anzeigezeichenfolge   |Beschreibung |Administratorzustimmung erforderlich |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Device.ReadWrite.All_ | Geräteeigenschaften lesen und schreiben | Die App kann alle Geräteeigenschaften ohne angemeldeten Benutzer lesen und schreiben. Ermöglicht nicht das Erstellen oder  Löschen von Geräten oder das Aktualisieren von alternativen Sicherheits-IDs von Geräten. | Ja |
+|_Device.ReadWrite.All_ |Geräteeigenschaften lesen und schreiben |Die App kann alle Geräteeigenschaften ohne angemeldeten Benutzer lesen und schreiben. Ermöglicht nicht das Erstellen oder  Löschen von Geräten oder das Aktualisieren von alternativen Sicherheits-IDs von Geräten. |Ja |
 
 ### <a name="remarks"></a>Hinweise
 
 Die delegierten Berechtigungen _Device.Read_ und _Device.Command_ gelten nur für persönlichen Microsoft-Konten.
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
+
 #### <a name="application"></a>Anwendung
 
 * _Device.ReadWrite.All_: Alle registrierten Geräte in der Organisation lesen (`GET /devices`).
 
 Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 
----
 
 ## <a name="intune-device-management-permissions"></a>Berechtigungen für Intune-Geräteverwaltung
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
-|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|Berechtigung    |Anzeigezeichenfolge   |Beschreibung |Administratorzustimmung erforderlich |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _DeviceManagementApps.Read.All_ | Microsoft Intune-Apps lesen | Ermöglicht der App, die Eigenschaften, Gruppenzuweisungen und Status von Apps, App-Konfigurationen sowie von Microsoft Intune verwaltete Richtlinien zum Schutz von Apps zu lesen. | Ja |
-| _DeviceManagementApps.ReadWrite.All_ | Microsoft Intune-Apps lesen und schreiben | Ermöglicht der App, die Eigenschaften, Gruppenzuweisungen und Status von Apps, App-Konfigurationen sowie von Microsoft Intune verwaltete Richtlinien zum Schutz von Apps zu lesen und zu schreiben. | Ja |
-| _DeviceManagementConfiguration.Read.All_ | Microsoft Intune-Gerätekonfiguration und -Richtlinien lesen | Ermöglicht der App, Eigenschaften der von Microsoft Intune verwalteten Gerätekonfiguration und Richtlinien zur Gerätekompatibilität sowie deren Zuweisung zu Gruppen zu lesen. | Ja |
-| _DeviceManagementConfiguration.ReadWrite.All_ | Microsoft Intune-Gerätekonfiguration und -Richtlinien lesen und schreiben  | Ermöglicht der App, Eigenschaften der von Microsoft Intune verwalteten Gerätekonfiguration und Richtlinien zur Gerätekompatibilität sowie deren Zuweisung zu Gruppen zu lesen und zu schreiben. | Ja |
-| _DeviceManagementManagedDevices.PrivilegedOperations.All_ | Remoteaktionen mit Auswirkungen auf den Benutzer auf Microsoft Intune-Geräten durchführen | Ermöglicht der App, Remoteaktionen mit großen Auswirkungen durchzuführen, z. B. das Zurücksetzen des Geräts oder der Kennung auf Geräten, die von Microsoft Intune verwaltet werden. | Ja |
-| _DeviceManagementManagedDevices.Read.All_ | Microsoft Intune-Geräte lesen | Ermöglicht der App, die Eigenschaften der von Microsoft Intune verwalteten Geräte zu lesen. | Ja |
-| _DeviceManagementManagedDevices.ReadWrite.All_ | Microsoft Intune-Geräte lesen und schreiben | Ermöglicht der App, die Eigenschaften der von Microsoft Intune verwalteten Geräte zu lesen und zu schreiben. Ermöglicht keine Operationen mit großen Auswirkungen, z. B. Remotezurücksetzen und Kennwortzurücksetzung am Gerät des Besitzers. | Ja |
-| _DeviceManagementRBAC.Read.All_ | Microsoft Intune-RBAC-Einstellungen lesen | Ermöglicht der App, die Eigenschaften bezüglich der Einstellungen der rollenbasierten Zugriffssteuerung (RBAC) von Microsoft Intune zu lesen. | Ja |
-| _DeviceManagementRBAC.ReadWrite.All_ | Microsoft Intune-RBAC-Einstellungen lesen und schreiben | Ermöglicht der App, die Eigenschaften bezüglich der Einstellungen der rollenbasierten Zugriffssteuerung (RBAC) von Microsoft Intune zu lesen und zu schreiben. | Ja |
-| _DeviceManagementServiceConfig.Read.All_ | Microsoft Intune-Konfiguration lesen | Ermöglicht der App, Intune-Diensteigenschaften zu lesen, einschließlich der Geräteregistrierung und der Drittanbieter-Dienstverbindungskonfiguration. | Ja |
-| _DeviceManagementServiceConfig.ReadWrite.All_ | Microsoft Intune-Konfiguration lesen und schreiben | Ermöglicht der App, Microsoft Intune-Diensteigenschaften zu lesen und zu schreiben, einschließlich der Geräteregistrierung und der Drittanbieter-Dienstverbindungskonfiguration. | Ja |
+|_DeviceManagementApps.Read.All_ | Microsoft Intune-Apps lesen | Ermöglicht der App, die Eigenschaften, Gruppenzuweisungen und Status von Apps, App-Konfigurationen sowie von Microsoft Intune verwaltete Richtlinien zum Schutz von Apps zu lesen. | Ja |
+|_DeviceManagementApps.ReadWrite.All_ | Microsoft Intune-Apps lesen und schreiben | Ermöglicht der App, die Eigenschaften, Gruppenzuweisungen und Status von Apps, App-Konfigurationen sowie von Microsoft Intune verwaltete Richtlinien zum Schutz von Apps zu lesen und zu schreiben. | Ja |
+|_DeviceManagementConfiguration.Read.All_ | Microsoft Intune-Gerätekonfiguration und -Richtlinien lesen | Ermöglicht der App, Eigenschaften der von Microsoft Intune verwalteten Gerätekonfiguration und Richtlinien zur Gerätekompatibilität sowie deren Zuweisung zu Gruppen zu lesen. | Ja |
+|_DeviceManagementConfiguration.ReadWrite.All_ | Microsoft Intune-Gerätekonfiguration und -Richtlinien lesen und schreiben  | Ermöglicht der App, Eigenschaften der von Microsoft Intune verwalteten Gerätekonfiguration und Richtlinien zur Gerätekompatibilität sowie deren Zuweisung zu Gruppen zu lesen und zu schreiben. | Ja |
+|_DeviceManagementManagedDevices.PrivilegedOperations.All_ | Remoteaktionen mit Auswirkungen auf den Benutzer auf Microsoft Intune-Geräten durchführen | Ermöglicht der App, Remoteaktionen mit großen Auswirkungen durchzuführen, z. B. das Zurücksetzen des Geräts oder der Kennung auf Geräten, die von Microsoft Intune verwaltet werden. | Ja |
+|_DeviceManagementManagedDevices.Read.All_ | Microsoft Intune-Geräte lesen | Ermöglicht der App, die Eigenschaften der von Microsoft Intune verwalteten Geräte zu lesen. | Ja |
+|_DeviceManagementManagedDevices.ReadWrite.All_ | Microsoft Intune-Geräte lesen und schreiben | Ermöglicht der App, die Eigenschaften der von Microsoft Intune verwalteten Geräte zu lesen und zu schreiben. Ermöglicht keine Operationen mit großen Auswirkungen, z. B. Remotezurücksetzen und Kennwortzurücksetzung am Gerät des Besitzers. | Ja |
+|_DeviceManagementRBAC.Read.All_ | Microsoft Intune-RBAC-Einstellungen lesen | Ermöglicht der App, die Eigenschaften bezüglich der Einstellungen der rollenbasierten Zugriffssteuerung (RBAC) von Microsoft Intune zu lesen. | Ja |
+|_DeviceManagementRBAC.ReadWrite.All_ | Microsoft Intune-RBAC-Einstellungen lesen und schreiben | Ermöglicht der App, die Eigenschaften bezüglich der Einstellungen der rollenbasierten Zugriffssteuerung (RBAC) von Microsoft Intune zu lesen und zu schreiben. | Ja |
+|_DeviceManagementServiceConfig.Read.All_ | Microsoft Intune-Konfiguration lesen | Ermöglicht der App, Intune-Diensteigenschaften zu lesen, einschließlich der Geräteregistrierung und der Drittanbieter-Dienstverbindungskonfiguration. | Ja |
+|_DeviceManagementServiceConfig.ReadWrite.All_ | Microsoft Intune-Konfiguration lesen und schreiben | Ermöglicht der App, Microsoft Intune-Diensteigenschaften zu lesen und zu schreiben, einschließlich der Geräteregistrierung und der Drittanbieter-Dienstverbindungskonfiguration. | Ja |
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
 Keine.
 
 ### <a name="remarks"></a>HinwBemerkungeneise
+
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
 Diese Berechtigungen gelten nur für Geschäfts-, Schul- oder Unikonten.
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
+
 #### <a name="application"></a>Anwendung
 
-* _DeviceManagementServiceConfiguration.Read.All_: Den aktuellen Status des Intune-Abonnements überprüfen (`GET /deviceManagement/subscriptionState`)
-* _DeviceManagementServiceConfiguration.ReadWrite.All_: Neue Geschäftsbedingungen erstellen (`POST /deviceManagement/termsAndConditions`)
-* _DeviceManagementConfiguration.Read.All_: Den Status einer Gerätekonfiguration suchen (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`)
-* _DeviceManagementConfiguration.ReadWrite.All_: Einer Gruppe eine Gerätekompatibilitätsrichtlinie zuweisen (`POST deviceCompliancePolicies/{id}/assign`)
-* _DeviceManagementApps.Read.All_: Alle Windows Store-Apps suchen, die in Intune veröffentlicht wurden (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`)
-* _DeviceManagementApps.ReadWrite.All_: Eine neue Anwendung veröffentlichen (`POST /deviceAppManagement/mobileApps`)
-* _DeviceManagementRBAC.Read.All_: Eine Rollenzuweisung anhand des Namens suchen (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`)
-* _DeviceManagementRBAC.ReadWrite.All_: Eine neue benutzerdefinierte Rolle erstellen (`POST /deviceManagement/roleDefinitions`)
-* _DeviceManagementManagedDevices.Read.All_: Ein verwaltetes Gerät anhand des Namens suchen (`GET /managedDevices/?$filter=deviceName eq 'My Device'`)
-* _DeviceManagementManagedDevices.ReadWrite.All_: Ein verwaltetes Gerät entfernen (`DELETE /managedDevices/{id}`)
+* _DeviceManagementServiceConfiguration.Read.All_: Den aktuellen Status des Intune-Abonnements überprüfen (`GET /deviceManagement/subscriptionState`).
+* _DeviceManagementServiceConfiguration.ReadWrite.All_: Neue Geschäftsbedingungen erstellen (`POST /deviceManagement/termsAndConditions`).
+* _DeviceManagementConfiguration.Read.All_: Den Status einer Gerätekonfiguration suchen (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`).
+* _DeviceManagementConfiguration.ReadWrite.All_: Einer Gruppe eine Gerätekompatibilitätsrichtlinie zuweisen (`POST deviceCompliancePolicies/{id}/assign`).
+* _DeviceManagementApps.Read.All_: Alle Windows Store-Apps suchen, die in Intune veröffentlicht wurden (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`).
+* _DeviceManagementApps.ReadWrite.All_: Eine neue Anwendung veröffentlichen (`POST /deviceAppManagement/mobileApps`).
+* _DeviceManagementRBAC.Read.All_: Eine Rollenzuweisung anhand des Namens suchen (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`).
+* _DeviceManagementRBAC.ReadWrite.All_: Eine neue benutzerdefinierte Rolle erstellen (`POST /deviceManagement/roleDefinitions`).
+* _DeviceManagementManagedDevices.Read.All_: Ein verwaltetes Gerät anhand des Namens suchen (`GET /managedDevices/?$filter=deviceName eq 'My Device'`).
+* _DeviceManagementManagedDevices.ReadWrite.All_: Ein verwaltetes Gerät entfernen (`DELETE /managedDevices/{id}`).
 * _DeviceManagementManagedDevices.PrivilegedOperations.All_: Die Kennung auf dem verwalteten Gerät eines Benutzers zurücksetzen (`POST /managedDevices/{id}/resetPasscode`).
 
 Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 
----
 
 ## <a name="directory-permissions"></a>Verzeichnisberechtigungen
 
@@ -198,9 +203,11 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Directory.Read.All_           |     Verzeichnisdaten lesen                     | Ermöglicht der App, Daten im Verzeichnis Ihrer Organisation zu lesen, z. B. Benutzer, Gruppen und Apps. | Ja |
-| _Directory.ReadWrite.All_      |     Schreib-/Lesezugriff auf Verzeichnisdaten           | Ermöglicht der App, Daten im Verzeichnis Ihrer Organisation ohne einen angemeldeten Benutzer zu lesen und zu schreiben, z. B. Benutzer und Gruppen.  Ermöglicht der App nicht das Löschen von Benutzern oder Gruppen oder das Zurücksetzen von Benutzerkennwörtern. | Ja |
-| _Directory.AccessAsUser.All_   |     Als der angemeldete Benutzer auf das Verzeichnis zugreifen  | Ermöglicht der App den gleichen Zugriff auf Informationen im Verzeichnis wie dem angemeldeten Benutzer.| Ja |
+| _Directory.Read.All_ |Verzeichnisdaten lesen | Ermöglicht der App, Daten im Verzeichnis Ihrer Organisation zu lesen, z. B. Benutzer, Gruppen und Apps. | Ja |
+| _Directory.ReadWrite.All_ |Verzeichnisdaten lesen und schreiben | Ermöglicht der App, Daten im Verzeichnis Ihrer Organisation ohne einen angemeldeten Benutzer zu lesen und zu schreiben, z. B. Benutzer und Gruppen. Ermöglicht der App nicht das Löschen von Benutzern oder Gruppen oder das Zurücksetzen von Benutzerkennwörtern. | Ja |
+| _Directory.AccessAsUser.All_ |Als der angemeldete Benutzer auf das Verzeichnis zugreifen  | Ermöglicht der App den gleichen Zugriff auf Informationen im Verzeichnis wie dem angemeldeten Benutzer. | Ja |
+
+<br/>
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
@@ -212,7 +219,9 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 ### <a name="remarks"></a>Bemerkungen
 Verzeichnisberechtigungen werden für Microsoft-Konten nicht unterstützt. 
 
- Verzeichnisberechtigungen stellen die höchste Stufe von Rechten für den Zugriff auf Verzeichnisressourcen wie [Benutzer](../api-reference/v1.0/resources/user.md), [Gruppen](../api-reference/v1.0/resources/group.md), und [Geräte](../api-reference/v1.0/resources/device.md) in einer Organisation bereit. Sie steuern zudem exklusiv den Zugriff auf andere Verzeichnisressourcen wie [Organisationskontakte](../api-reference/beta/resources/orgcontact.md), [Schemaerweiterungs-APIs](../api-reference/beta/resources/schemaextension.md), [Privileged Identity Management (PIM)-APIs](../api-reference/beta/resources/privilegedidentitymanagement_root.md) sowie viele der Ressourcen und APIs, die unter dem Knoten **Azure Active Directory** in der API-Referenzdokumentation der Versionen 1.0 und Beta aufgeführt sind. Hierzu zählen administrative Einheiten, Verzeichnisrollen, Verzeichniseinstellungen, Richtlinien und viele weitere. 
+Verzeichnisberechtigungen stellen die höchste Stufe von Rechten für den Zugriff auf Verzeichnisressourcen wie [Benutzer](../api-reference/v1.0/resources/user.md), [Gruppen](../api-reference/v1.0/resources/group.md), und [Geräte](../api-reference/v1.0/resources/device.md) in einer Organisation bereit. 
+
+Sie steuern zudem exklusiv den Zugriff auf andere Verzeichnisressourcen wie [Organisationskontakte](../api-reference/beta/resources/orgcontact.md), [Schemaerweiterungs-APIs](../api-reference/beta/resources/schemaextension.md), [Privileged Identity Management (PIM)-APIs](../api-reference/beta/resources/privilegedidentitymanagement_root.md) sowie viele der Ressourcen und APIs, die unter dem Knoten **Azure Active Directory** in der API-Referenzdokumentation der Versionen 1.0 und Beta aufgeführt sind. Hierzu zählen administrative Einheiten, Verzeichnisrollen, Verzeichniseinstellungen, Richtlinien und viele weitere. 
 
 Die Berechtigung _Directory.ReadWrite.All_ gewährt die folgenden Rechte:
 
@@ -231,6 +240,7 @@ Die Berechtigung _Directory.ReadWrite.All_ gewährt die folgenden Rechte:
  
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
+
 #### <a name="delegated"></a>Delegiert
 * _Directory.Read.All_: Alle administrativen Einheiten in einer Organisation auflisten (`GET /beta/administrativeUnits`)
 * _Directory.ReadWrite.All_: Mitglieder zu einer Verzeichnisrolle hinzufügen (`POST /directoryRoles/{id}/members/$ref`)
@@ -249,22 +259,22 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
-| Berechtigung                  | Anzeigezeichenfolge                                         | Beschreibung                                                                                                                                                                                             | Administratorzustimmung erforderlich |
-| :-------------------------- | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------- |
-| _Files.Read_                | Lesezugriff auf Benutzerdateien                                        | Ermöglicht der App, die Dateien des angemeldeten Benutzers zu lesen.                                                                                                                                                      | Nein                     |
-| _Files.Read.All_            | Alle Dateien lesen, auf die der Benutzer zugreifen kann                    | Ermöglicht der App, alle Dateien zu lesen, auf die der angemeldete Benutzer zugreifen kann.                                                                                                                                         | Nein                     |
-| _Files.ReadWrite_           | Vollzugriff auf Benutzerdateien                         | Ermöglicht der App, Dateien des angemeldeten Benutzers zu lesen, zu erstellen, zu aktualisieren und zu löschen.                                                                                                                          | Nein                     |
-| _Files.ReadWrite.All_       | Vollzugriff auf alle Dateien, auf die Benutzer zugreifen können          | Ermöglicht der App, alle Dateien zu lesen, zu erstellen, zu aktualisieren und zu löschen, auf die der angemeldete Benutzer zugreifen kann.                                                                                                             | Nein                     |
-| _Files.ReadWrite.AppFolder_ | Vollzugriff auf den Anwendungsordner (Vorschau) | (Vorschau) Ermöglicht der App, Dateien im Anwendungsordner zu lesen, zu erstellen, zu aktualisieren und zu löschen.                                                                                                         | Nein                     |
-| _Files.Read.Selected_       | Lesezugriff auf Dateien, die der Benutzer auswählt                       | **Eingeschränkte Unterstützung in Microsoft Graph – siehe Anmerkungen** <br/> (Vorschau) Ermöglicht der App, Dateien zu lesen, die der Benutzer auswählt. Sobald der Benutzer eine Datei auswählt, erhält die App mehrere Stunden Zugriff auf diese Datei.            | Nein                     |
-| _Files.ReadWrite.Selected_  | Lese- und Schreibzugriff auf Dateien, die der Benutzer auswählt             | **Eingeschränkte Unterstützung in Microsoft Graph – siehe Anmerkungen** <br/> (Vorschau) Ermöglicht der App, Dateien zu lesen und zu schreiben, die der Benutzer auswählt. Sobald der Benutzer eine Datei auswählt, erhält die App mehrere Stunden Zugriff auf diese Datei. | Nein                     |
+|Berechtigung |Anzeigezeichenfolge |Beschreibung | Administratorzustimmung erforderlich |
+|:--------- |:------------- |:---------- | :--------------------- |
+| _Files.Read_ | Lesezugriff auf Benutzerdateien | Ermöglicht der App, die Dateien des angemeldeten Benutzers zu lesen. | Nein |
+| _Files.Read.All_ | Alle Dateien lesen, auf die der Benutzer zugreifen kann | Ermöglicht der App, alle Dateien zu lesen, auf die der angemeldete Benutzer zugreifen kann. | Nein |
+| _Files.ReadWrite_  | Vollzugriff auf Benutzerdateien | Ermöglicht der App, Dateien des angemeldeten Benutzers zu lesen, zu erstellen, zu aktualisieren und zu löschen. | Nein|
+| _Files.ReadWrite.All_ | Vollzugriff auf alle Dateien, auf die Benutzer zugreifen können | Ermöglicht der App, alle Dateien zu lesen, zu erstellen, zu aktualisieren und zu löschen, auf die der angemeldete Benutzer zugreifen kann. | Nein |
+| _Files.ReadWrite.AppFolder_ | Vollzugriff auf den Anwendungsordner (Vorschau) | (Vorschau) Ermöglicht der App, Dateien im Anwendungsordner zu lesen, zu erstellen, zu aktualisieren und zu löschen. | Nein |
+| _Files.Read.Selected_  | Lesezugriff auf Dateien, die der Benutzer auswählt | **Eingeschränkte Unterstützung in Microsoft Graph – siehe Anmerkungen** <br/> (Vorschau) Ermöglicht der App, Dateien zu lesen, die der Benutzer auswählt. Sobald der Benutzer eine Datei auswählt, erhält die App mehrere Stunden Zugriff auf diese Datei.  | Nein |
+| _Files.ReadWrite.Selected_ | Lese- und Schreibzugriff auf Dateien, die der Benutzer auswählt | **Eingeschränkte Unterstützung in Microsoft Graph – siehe Anmerkungen** <br/> (Vorschau) Ermöglicht der App, Dateien zu lesen und zu schreiben, die der Benutzer auswählt. Sobald der Benutzer eine Datei auswählt, erhält die App mehrere Stunden Zugriff auf diese Datei. | Nein |
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
-| Berechtigung            | Anzeigezeichenfolge                               | Beschreibung                                                                                                    | Administratorzustimmung erforderlich |
-| :-------------------- | :------------------------------------------- | :------------------------------------------------------------------------------------------------------------- | :--------------------- |
-| _Files.Read.All_      | Lesen von Dateien in allen Websitesammlungen           | Die App kann alle Dateien in allen Websitesammlungen ohne angemeldeten Benutzer lesen.                             | Ja                    |
-| _Files.ReadWrite.All_ | Lesen und Schreiben von Dateien in allen Websitesammlungen | Die App kann alle Dateien in allen Websitesammlungen ohne angemeldeten Benutzer lesen, erstellen, aktualisieren und löschen. | Ja                    |
+| Berechtigung | Anzeigezeichenfolge | Beschreibung | Administratorzustimmung erforderlich |
+| :--------- | :------------- | :---------- | :--------------------- |
+| _Files.Read.All_ | Lesen von Dateien in allen Websitesammlungen | Die App kann alle Dateien in allen Websitesammlungen ohne angemeldeten Benutzer lesen.  | Ja |
+| _Files.ReadWrite.All_ | Lesen und Schreiben von Dateien in allen Websitesammlungen | Die App kann alle Dateien in allen Websitesammlungen ohne angemeldeten Benutzer lesen, erstellen, aktualisieren und löschen. | Ja |
 
 ### <a name="remarks"></a>HinwBemerkungeneise
 
@@ -276,6 +286,7 @@ Die delegierte Berechtigung „Files.ReadWrite.AppFolder“ ist nur für persön
 
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
+
 #### <a name="delegated"></a>Delegiert
 
 * _Files.Read_: Dateien lesen, die im OneDrive des angemeldeten Benutzers gespeichert sind (`GET /me/drive/root/children`)
@@ -286,7 +297,6 @@ Die delegierte Berechtigung „Files.ReadWrite.AppFolder“ ist nur für persön
 
 Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 
----
 
 ## <a name="group-permissions"></a>Gruppenberechtigungen
 
@@ -355,7 +365,9 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 _IdentityRiskEvent.Read.All_ gilt nur für Geschäfts-, Schul- oder Unikonten. Damit eine App mit delegierten Berechtigungen Informationen zu Identitätsrisiken lesen kann, muss der angemeldete Benutzer ein Mitglied einer der folgenden Administratorrollen sein: Globaler Administrator, Sicherheitsadministrator oder Benutzer mit Leseberechtigung für Sicherheitsfunktionen Weitere Informationen zu Administratorrollen finden Sie unter [Zuweisen von Administratorrollen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
+
 #### <a name="delegated-and-application"></a>Delegiert und Anwendung
+
 Die folgenden Verwendungen sind für delegierte und Anwendungsberechtigungen gültig:
 
 * Alle Risikoereignisse lesen, die für alle Benutzer im Mandanten generiert werden (`GET /beta/identityRiskEvents`)
@@ -364,8 +376,34 @@ Die folgenden Verwendungen sind für delegierte und Anwendungsberechtigungen gü
  
 Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 
----
 
+## <a name="identity-provider-permissions"></a>Berechtigungen für Identitätsanbieter
+
+#### <a name="delegated-permissions"></a>Delegierte Berechtigungen
+
+|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _IdentityProvider.Read.All_ |   Identitätsanbieterinformationen lesen  | Ermöglicht der App, die Identitätsanbieter, die in Ihrem Azure AD- oder Azure AD B2C-Mandanten konfiguriert sind, im Auftrag des angemeldeten Benutzers zu lesen. | Ja |
+| _IdentityProvider.ReadWrite.All_ |   Identitätsanbieterinformationen lesen und schreiben  |  Ermöglicht der App, die Identitätsanbieter, die in Ihrem Azure AD- oder Azure AD B2C-Mandanten konfiguriert sind, im Auftrag des angemeldeten Benutzers zu lesen und zu schreiben. | Ja |
+
+### <a name="remarks"></a>Hinweise
+
+_IdentityProvider.Read.All_ und _IdentityProvider.ReadWrite.All_ gelten nur für Geschäfts- oder Schulkonten. Damit eine App Identitätsanbieter mit delegierten Berechtigungen lesen oder schreiben kann, muss dem angemeldeten Benutzer die globale Administratorrolle zugewiesen sein. Weitere Informationen zu Administratorrollen finden Sie unter [Zuweisen von Administratorrollen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+
+### <a name="example-usage"></a>Verwendungsbeispiel
+
+#### <a name="delegated"></a>Delegiert
+Die folgenden Verwendungen sind für delegierte Berechtigungen gültig:
+
+* _IdentityProvider.Read.All_: Alle im Mandanten konfigurierten Identitätsanbieter lesen (`GET /beta/identityProviders`)
+* _IdentityProvider.Read.All_: Einen vorhandenen Identitätsanbieter lesen (`GET /beta/identityProviders/{id}`)
+* _IdentityProvider.ReadWrite.All_ Identitätsanbieter erstellen (`POST /beta/identityProviders`)
+* _IdentityProvider.ReadWrite.All_ Einen vorhandenen Identitätsanbieter aktualisieren (`PATCH /beta/identityProviders/{id}`)
+* _IdentityProvider.ReadWrite.All_ Einen vorhandenen Identitätsanbieter löschen (`DELETE /beta/identityProviders/{id}`)
+
+Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
+
+---
 ## <a name="mail-permissions"></a>E-Mail-Berechtigungen
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
@@ -402,7 +440,7 @@ Mit der Berechtigung _Mail.Send_ oder _Mail.Send.Shared_ kann eine App E-Mails s
 #### <a name="delegated"></a>Delegiert
 
 * _Mail.Read_: Nachrichten im Posteingang des Benutzers sortiert nach `receivedDateTime` auflisten (`GET /me/mailfolders/inbox/messages?$orderby=receivedDateTime DESC`).
-* _Mail.Read.Shared_: Aller Nachrichten mit Anlagen im Posteingang eines Benutzers suchen, der seinen Posteingang für den angemeldeten Benutzer freigegeben hat (`GET /users{id | userPrincipalName}/mailfolders/inbox/messages?$filter=hasAttachments eq true`).
+* _Mail.Read.Shared_: Alle Nachrichten mit Anlagen im Posteingang eines Benutzers suchen, der seinen Posteingang für den angemeldeten Benutzer freigegeben hat (`GET /users{id | userPrincipalName}/mailfolders/inbox/messages?$filter=hasAttachments eq true`).
 * _Mail.ReadWrite_: Eine Nachricht als gelesen markieren (`PATCH /me/messages/{id}`).
 * _Mail.Send_: Eine Nachricht senden (`POST /me/sendmail`).
 * _MailboxSettings.ReadWrite_: Die automatische Antwort des Benutzers aktualisieren (`PATCH /me/mailboxSettings`).
@@ -424,13 +462,13 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|:----------------|:------------------|:-------------|:-----------------------|
 | _Member.Read.Hidden_ | Ausgeblendete Mitgliedschaften lesen | Erlaubt es der App, im Namen des angemeldeten Benutzers die Mitgliedschaften aller ausgeblendeten Gruppen und administrativen Einheiten zu lesen, auf die der angemeldete Benutzer Zugriff hat. | Ja |
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|:----------------|:------------------|:-------------|:-----------------------|
 | _Member.Read.Hidden_ | Alle ausgeblendeten Mitgliedschaften lesen | Ermöglicht der App, die Mitgliedschaften ausgeblendeter Gruppen und administrativer Einheiten ohne einen angemeldeten Benutzer zu lesen. | Ja |
 
 ### <a name="remarks"></a>Hinweise
@@ -452,13 +490,13 @@ Die Mitgliedschaft in einigen Office 365-Gruppen kann ausgeblendet werden. Dies 
 
 Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 
----
 
 ## <a name="notes-permissions"></a>Notizberechtigungen
+
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|:----------------|:------------------|:-------------|:-----------------------|
 | _Notes.Read_ |    OneNote-Benutzernotizbücher lesen | Ermöglicht der App, die Titel von OneNote-Notizbüchern und -Abschnitten zu lesen sowie neue Seiten, Notizbücher und Abschnitte im Namen des angemeldeten Benutzers zu erstellen. | Nein |
 | _Notes.Create_ |    OneNote-Benutzernotizbücher erstellen | Ermöglicht der App, die Titel von OneNote-Notizbüchern und -Abschnitten zu lesen sowie neue Seiten, Notizbücher und Abschnitte im Namen des angemeldeten Benutzers zu erstellen.| Nein |
 | _Notes.ReadWrite_ |    OneNote-Benutzernotizbücher lesen und schreiben | Ermöglicht der App, OneNote-Notizbücher im Namen des angemeldeten Benutzers zu lesen, freizugeben und zu ändern. | Nein |
@@ -469,7 +507,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|:----------------|:------------------|:-------------|:-----------------------|
 | _Notes.Read.All_ |    Alle OneNote-Benutzernotizbücher lesen | Ermöglicht der App, alle OneNote-Notizbücher in Ihrer Organisation ohne einen angemeldeten Benutzer zu lesen. | Ja |
 | _Notes.ReadWrite.All_ |    Alle OneNote-Benutzernotizbücher lesen und schreiben | Ermöglicht der App, alle OneNote-Notizbücher in Ihrer Organisation ohne einen angemeldeten Benutzer zu lesen, freizugeben und zu ändern.| Ja |
 
@@ -499,14 +537,13 @@ Für Geschäfts-, Schul- oder Unikonten ermöglichen _Notes.Read.All_ und _Notes
 
 Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 
----
 
 ## <a name="openid-permissions"></a>OpenID-Berechtigungen
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|:----------------|:------------------|:-------------|:-----------------------|
 | _email_ |    E-Mail-Adresse von Benutzern anzeigen | Ermöglicht der App, die primäre E-Mail-Adresse Ihrer Benutzer zu lesen. | Nein |
 | _offline_access_ |    Jederzeit auf Daten des Benutzers zugreifen | Ermöglicht der App, Benutzerdaten zu lesen und zu aktualisieren, auch wenn diese die App derzeit nicht verwenden.| Nein |
 | _openid_ |    Benutzer anmelden | Damit können Benutzer sich mit Ihren Geschäfts- oder Schulkonten bei der App anmelden, und die App kann grundlegende Benutzerprofilinformationen lesen.| Nein |
@@ -523,8 +560,7 @@ Beim Azure AD (v1.0)-Endpunkt wird nur die Berechtigung _openid_ verwendet. Sie 
 
 Beim Azure AD v2.0-Endpunkt geben Sie die Berechtigung _offline\_access_ im _scope_-Parameter an, um explizit ein Aktualisierungstoken anzufordern, wenn Sie das OAuth 2.0- oder OpenID-Protokoll verwenden. Bei OpenID Connect geben Sie die Berechtigung _openid_ zum Anfordern eines ID-Tokens an. Sie können auch die Berechtigung _email_, die Berechtigung _profile_ oder beide angeben, um zusätzliche Ansprüche im ID-Token zurückzugeben. Sie müssen nicht _User.Read_ angeben, um ein ID-Token mit dem v2.0-Endpunkt zurückzugeben. Weitere Informationen finden Sie unter [OpenID Connect -Bereiche](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes).
 
-> **Wichtig** In der MSAL (Microsoft Authentication Library) werden derzeit standardmäßig _offline\_access_, _openid_, _profile_, und _email_  in Autorisierungs- und Tokenanforderungen angegeben. Wenn Sie diese Berechtigungen explizit angeben, bedeutet dies im Standardfall, dass Azure AD möglicherweise einen Fehler zurückgibt.
->  
+> **Wichtig** In der MSAL (Microsoft Authentication Library) werden derzeit standardmäßig _offline\_access_, _openid_, _profile_, und _email_  in Autorisierungs- und Tokenanforderungen angegeben. Wenn Sie diese Berechtigungen explizit angeben, bedeutet dies im Standardfall, dass Azure AD möglicherweise einen Fehler zurückgibt. 
 
 ---
 
@@ -541,16 +577,17 @@ Beim Azure AD v2.0-Endpunkt geben Sie die Berechtigung _offline\_access_ im _sco
 
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _People.Read.All_ | Lesezugriff auf alle Listen mit für den Benutzer relevanten Personen | Ermöglicht es der App, eine bewertete Liste der Personen zu lesen, die für den angemeldeten Benutzer oder andere Benutzer in der Organisation des angemeldeten Benutzers relevant sind. Die Liste kann lokale Kontakte, Kontakte aus sozialen Netzwerken oder aus dem Verzeichnis Ihrer Organisation und Personen aus kürzlichen Unterhaltungen (z. B. E-Mail und Skype) enthalten. Ermöglicht der App das Durchsuchen des gesamten Verzeichnisses der Organisation des angemeldeten Benutzers. | Ja |
+| _People.Read.All_ | Lesezugriff auf alle Listen mit für den Benutzer relevanten Personen | Ermöglicht es der App, eine bewertete Liste der Personen zu lesen, die für den angemeldeten Benutzer oder andere Benutzer in der Organisation des angemeldeten Benutzers relevant sind. <br/><br/>Die Liste kann lokale Kontakte, Kontakte aus sozialen Netzwerken oder aus dem Verzeichnis Ihrer Organisation und Personen aus kürzlichen Unterhaltungen (z. B. E-Mail und Skype) enthalten. Ermöglicht der App das Durchsuchen des gesamten Verzeichnisses der Organisation des angemeldeten Benutzers. | Ja |
 
 ### <a name="remarks"></a>Hinweise
 
 Die People.Read.All-Berechtigung gilt nur für Arbeits- und Schul- sowie Unikonten. 
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
+
 #### <a name="delegated"></a>Delegiert
-* _People.Read_ : Lesezugriff auf eine Liste der relevanten Personen (`GET /me/people`)
-* _People.Read.All_ : Lesezugriff auf eine Liste der relevanten Personen für einen anderen Benutzer in der gleichen Organisation (`GET /users('{id})/people`)
+* _People.Read_: Lesezugriff auf eine Liste der relevanten Personen (`GET /me/people`)
+* _People.Read.All_: Lesezugriff auf eine Liste der relevanten Personen für einen anderen Benutzer in der gleichen Organisation (`GET /users('{id})/people`)
 
 Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 
@@ -565,7 +602,7 @@ Keine.
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|:----------------|:------------------|:-------------|:-----------------------|
 | _Reports.Read.All_ | Alle Verwendungsberichte lesen | Die App kann alle Dienstverwendungsberichte ohne angemeldeten Benutzer lesen. Zu Diensten, die Verwendungsberichte bereitstellen, gehören Office 365 und Azure Active Directory. | Ja |
 
 ### <a name="remarks"></a>Bemerkungen
@@ -587,21 +624,21 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
-| Berechtigung              | Anzeigezeichenfolge                                                   | Beschreibung                                                                                                                   | Administratorzustimmung erforderlich |
-| :---------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- | :--------------------- |
-| _Sites.Read.All_        | Elemente in allen Websitesammlungen lesen                               | Ermöglicht der App, Dokumente und Listenelemente in allen Websitesammlungen im Namen des angemeldeten Benutzers zu lesen.                      | Nein                     |
-| _Sites.ReadWrite.All_   | Lese-/Schreibzugriff auf Elemente in allen Websitesammlungen                     | Ermöglicht der App, Dokumente und Listenelemente in allen Websitesammlungen im Namen des angemeldeten Benutzers zu bearbeiten oder zu löschen.            | Nein                     |
-| _Sites.Manage.All_      | Erstellen, Bearbeiten und Löschen von Elementen und Listen in allen Websitesammlungen | Ermöglicht der App, Listen, Dokumente und Listenelemente in allen Websitesammlungen im Namen des angemeldeten Benutzers zu verwalten und zu erstellen. | Nein                     |
-| _Sites.FullControl.All_ | Sie benötigen Vollzugriff auf alle Websitesammlungen.                        | Ermöglicht der App, vollständige Kontrolle über SharePoint-Websites in allen Websitesammlungen im Namen des angemeldeten Benutzers zu erlangen.              | Ja                    |
+|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Sites.Read.All_        | Elemente in allen Websitesammlungen lesen | Ermöglicht der App, Dokumente und Listenelemente in allen Websitesammlungen im Namen des angemeldeten Benutzers zu lesen. | Nein  |
+| _Sites.ReadWrite.All_   | Lese-/Schreibzugriff auf Elemente in allen Websitesammlungen | Ermöglicht der App, Dokumente und Listenelemente in allen Websitesammlungen im Namen des angemeldeten Benutzers zu bearbeiten oder zu löschen. | Nein  |
+| _Sites.Manage.All_      | Erstellen, Bearbeiten und Löschen von Elementen und Listen in allen Websitesammlungen | Ermöglicht der App, Listen, Dokumente und Listenelemente in allen Websitesammlungen im Namen des angemeldeten Benutzers zu verwalten und zu erstellen. | Nein |
+| _Sites.FullControl.All_ | Sie benötigen Vollzugriff auf alle Websitesammlungen. | Ermöglicht der App, vollständige Kontrolle über SharePoint-Websites in allen Websitesammlungen im Namen des angemeldeten Benutzers zu erlangen.  | Ja  |
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
-| Berechtigung              | Anzeigezeichenfolge                                                   | Beschreibung                                                                                                                   | Administratorzustimmung erforderlich |
-| :---------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- | :--------------------- |
-| _Sites.Read.All_        | Elemente in allen Websitesammlungen lesen                               | Die App kann Dokumente und Listenelemente in allen Websitesammlungen ohne angemeldeten Benutzer lesen.                             | Ja                    |
-| _Sites.ReadWrite.All_   | Lese-/Schreibzugriff auf Elemente in allen Websitesammlungen                     | Die App kann Dokumente und Listenelemente in allen Websitesammlungen ohne angemeldeten Benutzer erstellen, lesen, aktualisieren und löschen. | Ja                    |
-| _Sites.Manage.All_      | Sie benötigen Vollzugriff auf alle Websitesammlungen.                        | Ermöglicht der App, Listen, Dokumente und Listenelemente in allen Websitesammlungen ohne angemeldeten Benutzer zu verwalten und zu erstellen.        | Ja                    |
-| _Sites.FullControl.All_ | Erstellen, Bearbeiten und Löschen von Elementen und Listen in allen Websitesammlungen | Ermöglicht der App, vollständige Kontrolle über SharePoint-Websites in allen Websitesammlungen ohne angemeldeten Benutzer zu erlangen.                     | Ja                    |
+|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Sites.Read.All_        | Elemente in allen Websitesammlungen lesen | Die App kann Dokumente und Listenelemente in allen Websitesammlungen ohne angemeldeten Benutzer lesen. | Ja |
+| _Sites.ReadWrite.All_   | Lese-/Schreibzugriff auf Elemente in allen Websitesammlungen | Die App kann Dokumente und Listenelemente in allen Websitesammlungen ohne angemeldeten Benutzer erstellen, lesen, aktualisieren und löschen. | Ja |
+| _Sites.Manage.All_      | Sie benötigen Vollzugriff auf alle Websitesammlungen. | Ermöglicht der App, Listen, Dokumente und Listenelemente in allen Websitesammlungen ohne angemeldeten Benutzer zu verwalten und zu erstellen.  | Ja  |
+| _Sites.FullControl.All_ | Erstellen, Bearbeiten und Löschen von Elementen und Listen in allen Websitesammlungen | Ermöglicht der App, vollständige Kontrolle über SharePoint-Websites in allen Websitesammlungen ohne angemeldeten Benutzer zu erlangen.  | Ja  |
 
 
 ### <a name="remarks"></a>HinwBemerkungeneise
@@ -614,8 +651,8 @@ Websiteberechtigungen gelten nur für Geschäfts-, Schul- oder Unikonten.
 
 * _Sites.Read.All_: Die Listen auf der SharePoint-Stammwebsite lesen (`GET /v1.0/sites/root/lists`)
 * _Sites.ReadWrite.All_: Neue Listenelemente in einer SharePoint-Liste erstellen (`POST /v1.0/sites/root/lists/123/items`)
-* _Sites.Manage.All_ : Neue Liste zu einer SharePoint-Website hinzufügen (`POST /v1.0/sites/root/lists`)
-* _Sites.FullControl.All_ : Vollständiger Zugriff auf SharePoint-Websites und -Listen.
+* _Sites.Manage.All_: Neue Liste zu einer SharePoint-Website hinzufügen (`POST /v1.0/sites/root/lists`)
+* _Sites.FullControl.All_: Vollständiger Zugriff auf SharePoint-Websites und -Listen.
 
 ---
 
@@ -624,7 +661,7 @@ Websiteberechtigungen gelten nur für Geschäfts-, Schul- oder Unikonten.
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|:----------------|:------------------|:-------------|:-----------------------|
 | _Tasks.Read_ | Benutzeraufgaben lesen | Ermöglicht der App, Benutzeraufgaben zu lesen. | Nein |
 | _Tasks.Read.Shared_ | Benutzeraufgaben und freigegebene Aufgaben lesen | Ermöglicht der App, Aufgaben zu lesen, für die ein Benutzer über Zugriffsberechtigungen verfügt, einschließlich der eigenen Aufgaben des Benutzers und freigegebener Aufgaben. | Nein |
 | _Tasks.ReadWrite_ |    Benutzeraufgaben und -container erstellen, lesen, aktualisieren und löschen | Ermöglicht der App, Aufgaben und Container (und darin enthaltene Aufgaben), die dem angemeldeten Benutzer zugewiesen oder für diesen freigegeben sind, zu erstellen, zu lesen, zu aktualisieren und zu löschen.| Nein |
@@ -658,7 +695,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|:----------------|:------------------|:-------------|:-----------------------|
 | _User.Read_       |    Anmelden und Benutzerprofil lesen | Damit können Benutzer sich bei der App anmelden, und die App kann das Profil von angemeldeten Benutzern lesen. Die App kann auch grundlegende Unternehmensinformationen von angemeldeten Benutzern lesen.| Nein |
 | _User.ReadWrite_ |    Lese- und Schreibzugriff auf Benutzerprofile | Die App kann Ihr Profil lesen. Darüber hinaus kann die App Ihre Profilinformationen in Ihrem Namen aktualisieren. | Nein |
 | _User.ReadBasic.All_ |    Grundlegende Profile aller Benutzer lesen | Ermöglicht der App, einen grundlegenden Satz von Profileigenschaften anderer Benutzer in Ihrer Organisation im Namen des angemeldeten Benutzers zu lesen. Dazu gehören der Anzeigename, der Vor-und Nachname, die E-Mail-Adresse und das Foto. | Nein |
@@ -669,7 +706,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|:----------------|:------------------|:-------------|:-----------------------|
 | _User.Read.All_ |    Lesezugriff auf vollständige Profile aller Benutzer | Ermöglicht der App, den vollständigen Satz von Profileigenschaften, Gruppenmitgliedschaften, Berichte und Vorgesetzte von anderen Benutzern in Ihrer Organisation ohne angemeldeten Benutzers zu lesen.| Ja |
 | _User.ReadWrite.All_ |   Lese- und Schreibzugriff auf vollständige Profile aller Benutzer | Ermöglicht der App, den vollständigen Satz von Profileigenschaften, Gruppenmitgliedschaften, Berichten und Vorgesetzten von anderen Benutzern in Ihrer Organisation ohne einen angemeldeten Benutzer zu lesen und zu schreiben.  Ermöglicht der App außerdem, Benutzer zu erstellen, die kein Administrator sind. Ermöglicht nicht das Zurücksetzen von Benutzerkennwörtern. | Ja |
 | _User.Invite.All_  |     Gastbenutzer zur Organisation einladen | Ermöglicht der App, Gastbenutzer ohne einen angemeldeten Benutzer zu Ihrer Organisation einzuladen. | Ja |
@@ -723,6 +760,7 @@ Die Berechtigung _User.ReadBasic.All_ schränkt den App-Zugriff auf einen begren
 Zum Lesen der Gruppenmitgliedschaften eines Benutzers (`memberOf`) benötigt die App entweder die Berechtigung [ _Group.Read.All_ ](#group-permissions) oder [ _Group.ReadWrite.All_](#group-permissions). Wenn der Benutzer jedoch auch Mitglied in einer [directoryRole](../api-reference/v1.0/resources/directoryrole.md) oder [administrativeUnit](../api-reference/beta/resources/administrativeunit.md) ist, benötigt die App außerdem effektive Berechtigungen zum Lesen dieser Ressourcen; andernfalls gibt Microsoft Graph einen Fehler zurück. Dies bedeutet, dass die App auch [Verzeichnisberechtigungen](#directory-permissions) benötigt; für delegierte Berechtigungen benötigt der angemeldete Benutzer außerdem ausreichende Rechte in der Organisation, um auf Verzeichnisrollen und administrative Einheiten zuzugreifen. 
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
+
 #### <a name="delegated"></a>Delegiert
 
 * _User.Read_: Das vollständige Profil des angemeldeten Benutzers lesen (`GET /me`).

@@ -33,7 +33,7 @@ Im [Beispiel](#example-to-synchronize-events-in-a-calendar-view) unten finden Si
 
 ### <a name="optional-request-header"></a>Optionaler Anforderungsheader
 
-Jede GET-Anforderung der Delta-Abfrage gibt eine Sammlung aus einem oder mehreren Ereignissen in der Antwort zurück. Sie können optional den Anforderungsheader, _Prefer: odata.maxpagesize={x}_, angeben, um die maximale Anzahl an Ereignissen in einer Antwort festzulegen.
+Jede GET-Anforderung der Delta-Abfrage gibt eine Sammlung aus einem oder mehreren Ereignissen in der Antwort zurück. Sie können optional den Anforderungsheader, `Prefer: odata.maxpagesize={x}`, angeben, um die maximale Anzahl an Ereignissen in einer Antwort festzulegen.
 
 
 ## <a name="example-to-synchronize-events-in-a-calendar-view"></a>Beispiel für die Synchronisierung von Ereignissen in einer Kalenderansicht

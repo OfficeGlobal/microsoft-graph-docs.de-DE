@@ -35,7 +35,7 @@ Im [Beispiel](#example-to-synchronize-messages-in-a-folder) unten finden Sie Inf
 
 ### <a name="optional-request-header"></a>Optionaler Anforderungsheader
 
-Jede GET-Anforderung der Delta-Abfrage gibt eine Sammlung aus einer oder mehreren Nachrichten in der Antwort zurück. Sie können optional den Anforderungsheader, _Prefer: odata.maxpagesize={x}_, angeben, um die maximale Anzahl an Nachrichten in einer Antwort festzulegen.
+Jede GET-Anforderung der Delta-Abfrage gibt eine Sammlung aus einer oder mehreren Nachrichten in der Antwort zurück. Sie können optional den Anforderungsheader, `Prefer: odata.maxpagesize={x}`, angeben, um die maximale Anzahl an Nachrichten in einer Antwort festzulegen.
 
 <!--
 ### Iterative process 
