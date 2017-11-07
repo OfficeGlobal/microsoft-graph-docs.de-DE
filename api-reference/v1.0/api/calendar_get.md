@@ -25,12 +25,11 @@ GET /me/calendar
 
 Diese Funktion ist nur in GET-Vorgängen verfügbar für:
 
-- Freigegebene Kontaktordner
-- Freigegebene Kalender
-- Kontakte und Ereignisse in freigegebenen Ordnern
+- Freigegebene Kontaktordner, Kalender und Nachrichtenordner 
+- Kontakte, Ereignisse und Nachrichten in freigegebenen Ordnern
 - Die oben aufgeführten Ressourcen in delegierten Postfächern
 
-Diese Funktion steht in anderen Vorgängen für Kontakte, Ereignisse und deren Ordner nicht zur Verfügung.
+Diese Funktion steht in anderen Vorgängen für Kontakte, Ereignisse, Nachrichten und deren Ordner nicht zur Verfügung.
 
 
 ## <a name="permissions"></a>Berechtigungen

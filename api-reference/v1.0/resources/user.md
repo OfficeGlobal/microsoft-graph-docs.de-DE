@@ -21,8 +21,8 @@ Diese Ressource unterstützt Folgendes:
 |[List mailFolders](../api/user_list_mailfolders.md) |[MailFolder](mailfolder.md) collection| Ruft die E-Mail-Ordner-Sammlung unter dem Stammordner des angemeldeten Benutzers ab. |
 |[Create mailFolder](../api/user_post_mailfolders.md) |[MailFolder](mailfolder.md)| Erstellt einen neuen MailFolder durch Veröffentlichung in der mailFolders-Sammlung.|
 |[sendMail](../api/user_sendmail.md)|None|Sendet die im Anforderungstext angegebene Nachricht.|
-|[List events](../api/user_list_events.md) |[Ereignissammlung](event.md)| Ruft eine Liste der event-Objekte im Postfach des Benutzers ab. Die Liste enthält einzelne Instanzen von Besprechungen und Serienmaster.|
-|[Ereignis erstellen](../api/user_post_events.md) |[Event](event.md)| Erstellt ein neues Ereignis durch Veröffentlichen in der Ereignissammlung.|
+|[List events](../api/user_list_events.md) |[Event](event.md) collection| Ruft eine Liste der event-Objekte im Postfach des Benutzers ab. Die Liste enthält einzelne Instanzen von Besprechungen und Serienmaster.|
+|[Create event](../api/user_post_events.md) |[Event](event.md)| Erstellt ein neues Ereignis durch Veröffentlichen in der Ereignissammlung.|
 |[List calendars](../api/user_list_calendars.md) |[Calendar](calendar.md) collection| Ruft eine Kalenderobjektsammlung ab.|
 |[Create calendar](../api/user_post_calendars.md) |[Calendar](calendar.md)| Erstellt einen neuen Kalender durch Veröffentlichung in der Kalendersammlung.|
 |[List calendarGroups](../api/user_list_calendargroups.md) |[CalendarGroup](calendargroup.md) collection| Ruft eine CalendarGroup-Objektsammlung ab.|
@@ -39,11 +39,11 @@ Diese Ressource unterstützt Folgendes:
 |[List ownedObjects](../api/user_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| Ruft die Verzeichnisobjekte, die dem Benutzer gehören, aus der ownedDevices-Navigationseigenschaft ab.|
 |[List registeredDevices](../api/user_list_registereddevices.md) |[directoryObject](directoryobject.md) collection| Ruft die Geräte, die für den Benutzer registriert sind, aus der registeredDevices-Navigationseigenschaft ab.|
 |[List createdObjects](../api/user_list_createdobjects.md) |[directoryObject](directoryobject.md) collection| Ruft die Verzeichnisobjekte, die von dem Benutzer erstellt wurden, aus der createdObjects-Navigationseigenschaft ab.|
-|[assignLicense](../api/user_assignlicense.md)|[Benutzer](user.md)|Fügt Abonnements für den Benutzer hinzu bzw. entfernt sie. Sie können auch bestimmte Pläne aktivieren oder deaktivieren, die mit einem Abonnement verknüpft sind.|
+|[assignLicense](../api/user_assignlicense.md)|[user](user.md)|Fügt Abonnements für den Benutzer hinzu bzw. entfernt sie. Sie können auch bestimmte Pläne aktivieren oder deaktivieren, die mit einem Abonnement verknüpft sind.|
 |[licenseDetails auflisten](../api/user_list_licensedetails.md) |[licenseDetails](licensedetails.md)-Sammlung| Dient zum Abrufen einer licenseDetails-Objektsammlung.|
-|[checkMemberGroups](../api/user_checkmembergroups.md)|Zeichenfolgenauflistung|Sucht nach einer Mitgliedschaft in einer Liste von Gruppen. Die Überprüfung ist transitiv.|
-|[getMemberGroups](../api/user_getmembergroups.md)|Zeichenfolgenauflistung|Gibt alle Gruppen zurück, bei denen der Benutzer Mitglied ist. Die Überprüfung ist transitiv.|
-|[getMemberObjects](../api/user_getmemberobjects.md)|Zeichenfolgenauflistung| Gibt alle Gruppen und Verzeichnisrollen zurück, bei denen der Benutzer ein Mitglied ist. Die Überprüfung ist transitiv. |
+|[checkMemberGroups](../api/user_checkmembergroups.md)|String collection|Sucht nach einer Mitgliedschaft in einer Liste von Gruppen. Die Überprüfung ist transitiv.|
+|[getMemberGroups](../api/user_getmembergroups.md)|String collection|Gibt alle Gruppen zurück, bei denen der Benutzer Mitglied ist. Die Überprüfung ist transitiv.|
+|[getMemberObjects](../api/user_getmemberobjects.md)|String collection| Gibt alle Gruppen und Verzeichnisrollen zurück, bei denen der Benutzer ein Mitglied ist. Die Überprüfung ist transitiv. |
 |[reminderView](../api/user_reminderview.md)|[Reminder](reminder.md) collection|Gibt eine Liste von Kalendererinnerungen innerhalb der angegebenen Start- und Endzeiten zurück.|
 |[delta](../api/user_delta.md)|Benutzersammlung| Dient zum Abrufen inkrementeller Änderungen für Benutzer. |
 |**Offene Erweiterungen**| | |
@@ -59,12 +59,12 @@ Diese Ressource unterstützt Folgendes:
 |aboutMe|String|Ein Freihandform-Texteingabefeld, in dem der Benutzer sich selbst beschreiben kann.|
 |accountEnabled|Boolean| **true**, wenn das Konto aktiviert ist; andernfalls **false**. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Unterstützt $filter.    |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|Die Lizenzen, die dem Benutzer zugewiesen sind. Lässt keine NULL-Werte zu.            |
-|assignedPlans|[assignedPlan](assignedplan.md)-Sammlung|Die Pläne, die dem Benutzer zugewiesen sind. Schreibgeschützt. Lässt keine NULL-Werte zu. |
+|assignedPlans|[assignedPlan](assignedplan.md) collection|Die Pläne, die dem Benutzer zugewiesen sind. Schreibgeschützt. Lässt keine NULL-Werte zu. |
 |birthday|DateTimeOffset|Der Geburtstag des Benutzers. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |businessPhones|String-Sammlung|Die Telefonnummern für den Benutzer. HINWEIS: Obwohl dies eine String-Sammlung ist, kann nur eine Nummer für diese Eigenschaft festgelegt werden.|
 |Ort|String|Die Stadt, in der sich der Benutzer befindet. Unterstützt $filter.|
-|companyName|String|Der Unternehmensname, dem der Benutzer zugewiesen ist.|
-|country|String|Land/Region, in dem/der sich der Benutzer befindet; z. B. „USA“ oder „UK“. Unterstützt $filter.|
+| companyName | String | Der Unternehmensname, dem der Benutzer zugewiesen ist. Schreibgeschützt.
+|Land|String|Land/Region, in dem/der sich der Benutzer befindet; z. B. „USA“ oder „UK“. Unterstützt $filter.|
 |department
 |String|Der Name der Abteilung, in der der Benutzer arbeitet. Unterstützt $filter.|
 |displayName|String|cDer Name, der im Adressbuch für den Benutzer angezeigt wird. Dies ist normalerweise eine Kombination aus dem Vornamen, der Initiale des weiteren Vornamens und des Nachnamens. Diese Eigenschaft ist beim Erstellen eines Benutzers erforderlich und kann nicht bei Updates deaktiviert werden. Unterstützt $Filter und $orderby.|
@@ -90,8 +90,8 @@ Diese Ressource unterstützt Folgendes:
 |postalCode|String|Die Postleitzahl für die Postanschrift des Benutzers. Die Postleitzahl ist für das Land/die Region des Benutzers spezifisch. In den USA enthält dieses Attribut den ZIP Code.|
 |preferredLanguage|String|Die bevorzugte Sprache für den Benutzer. Muss im ISO 639-1-Code angegeben werden. Beispiel: „en-US“.|
 |preferredName|String|Der bevorzugte Name für den Benutzer.|
-|provisionedPlans|[ProvisionedPlan](provisionedplan.md)-Sammlung|Die Pläne, die für den Benutzer bereitgestellt wurden. Schreibgeschützt. Lässt keine NULL-Werte zu. |
-|proxyAddresses|Zeichenfolgenauflistung|Beispiel: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` Der **any**-Operator ist für Filterausdrücke für mehrwertige Eigenschaften erforderlich. Schreibgeschützt, lässt keine NULL-Werte zu. Unterstützt $filter.          |
+|provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|Die Pläne, die für den Benutzer bereitgestellt wurden. Schreibgeschützt. Lässt keine NULL-Werte zu. |
+|proxyAddresses|String collection|Beispiel: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` Der **any**-Operator ist für Filterausdrücke für mehrwertige Eigenschaften erforderlich. Schreibgeschützt, lässt keine NULL-Werte zu. Unterstützt $filter.          |
 |responsibilities|String collection|Eine Liste zur Aufzählung der Verantwortlichkeiten eines Benutzers.|
 |schools|String collection|Eine Liste zur Aufzählung der vom Benutzer besuchten Schulen.|
 |skills|String collection|Eine Liste zur Aufzählung der Qualifikationen eines Benutzers.|
@@ -106,28 +106,28 @@ Diese Ressource unterstützt Folgendes:
 
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|calendar|[Kalender](calendar.md)|Primärer Kalender des Benutzers. Schreibgeschützt.|
-|calendarGroups|[CalendarGroup](calendargroup.md)-Sammlung|Die Kalendergruppen des Benutzers. Schreibgeschützt. Lässt NULL-Werte zu.|
-|calendarView|[Ereignissammlung](event.md)|Die Kalenderansicht für den Kalender. Schreibgeschützt. Lässt NULL-Werte zu.|
-|calendars|[Kalendersammlung](calendar.md)|Die Kalender des Benutzers. Schreibgeschützt. Lässt NULL-Werte zu.|
-|contactFolders|[ContactFolder](contactfolder.md)-Sammlung|Die Kontakteordner des Benutzers. Schreibgeschützt. Lässt NULL-Werte zu.|
-|Kontakte|[Kontaktsammlung](contact.md)|Die Kontakte des Benutzers. Schreibgeschützt. Lässt NULL-Werte zu.|
-|createdObjects|[directoryObject](directoryobject.md)-Sammlung|Verzeichnisobjekte, die vom Benutzer erstellt wurden. Schreibgeschützt. Lässt NULL-Werte zu.|
+|calendar|[Calendar](calendar.md)|Primärer Kalender des Benutzers. Schreibgeschützt.|
+|calendarGroups|[CalendarGroup](calendargroup.md) collection|Die Kalendergruppen des Benutzers. Schreibgeschützt. Lässt NULL-Werte zu.|
+|calendarView|[Event](event.md) collection|Die Kalenderansicht für den Kalender. Schreibgeschützt. Lässt NULL-Werte zu.|
+|calendars|[Calendar](calendar.md) collection|Die Kalender des Benutzers. Schreibgeschützt. Lässt NULL-Werte zu.|
+|contactFolders|[ContactFolder](contactfolder.md) collection|Die Kontakteordner des Benutzers. Schreibgeschützt. Lässt NULL-Werte zu.|
+|contacts|[Contact](contact.md) collection|Die Kontakte des Benutzers. Schreibgeschützt. Lässt NULL-Werte zu.|
+|createdObjects|[directoryObject](directoryobject.md) collection|Verzeichnisobjekte, die vom Benutzer erstellt wurden. Schreibgeschützt. Lässt NULL-Werte zu.|
 |directReports|[directoryObject](directoryobject.md) collection|Die Benutzer und Kontakte, die an den Benutzer berichten. (Die Benutzer und Kontakte, deren manager-Eigenschaft auf diesen Benutzer festgelegt ist.) Schreibgeschützt. Lässt NULL-Werte zu. |
-|drive|[Laufwerk](drive.md)|OneDrive eines Benutzers. Schreibgeschützt.|
+|drive|[drive](drive.md)|OneDrive eines Benutzers. Schreibgeschützt.|
 |drives|[drive](drive.md)-Sammlung. | Eine Sammlung von Laufwerken, die für diesen Benutzer zur Verfügung stehen. Schreibgeschützt. |
-|events|[Ereignissammlung](event.md)|Die Ereignisse des Benutzers. Standardmäßig werden Ereignisse unter dem Standard-Kalender angezeigt. Schreibgeschützt. Lässt Nullwerte zu.|
-|extensions|[extension](extension.md)-Sammlung|Die Sammlung der für den Benutzer definierten offenen Erweiterungen. Schreibgeschützt. Lässt NULL-Werte zu.|
+|events|[Event](event.md) collection|Die Ereignisse des Benutzers. Standardmäßig werden Ereignisse unter dem Standard-Kalender angezeigt. Schreibgeschützt. Lässt NULL-Werte zu.|
+|Erweiterungen|[extension](extension.md)-Sammlung|Die Sammlung der für den Benutzer definierten offenen Erweiterungen. Schreibgeschützt. Lässt NULL-Werte zu.|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | Relevanzklassifizierung von Nachrichten des Benutzers basierend auf expliziten Kennzeichnungen, die die abgeleitete Relevanz oder Wichtigkeit außer Kraft setzen. |
-|mailFolders|[MailFolder](mailfolder.md)-Sammlung| Die E-Mail-Ordner des Benutzers. Schreibgeschützt. Lässt NULL-Werte zu.|
+|mailFolders|[MailFolder](mailfolder.md) collection| Die E-Mail-Ordner des Benutzers. Schreibgeschützt. Lässt NULL-Werte zu.|
 |manager|[directoryObject](directoryobject.md)|Der Benutzer oder Kontakt, der Vorgesetzter dieses Benutzers ist. Schreibgeschützt. (HTTP-Methoden: GET, PUT, DELETE.)|
-|memberOf|[directoryObject](directoryobject.md)-Sammlung|Die Gruppen und Verzeichnisrollen, bei denen der Benutzer Mitglied ist. Schreibgeschützt. Lässt NULL-Werte zu.|
-|messages|[Nachrichten](message.md)-Sammlung|Die Nachrichten in einem Postfach oder Ordner. Schreibgeschützt. Lässt Nullwerte zu.|
+|memberOf|[directoryObject](directoryobject.md) collection|Die Gruppen und Verzeichnisrollen, bei denen der Benutzer Mitglied ist. Schreibgeschützt. Lässt NULL-Werte zu.|
+|messages|[Message](message.md) collection|Die Nachrichten in einem Postfach oder Ordner. Schreibgeschützt. Lässt NULL-Werte zu.|
 |onenote|[OneNote](onenote.md)| Schreibgeschützt.|
-|ownedDevices|[directoryObject](directoryobject.md)-Sammlung|Geräte, die der Benutzer besitzt. Schreibgeschützt. Lässt NULL-Werte zu.|
-|ownedObjects|[directoryObject](directoryobject.md)-Sammlung|Verzeichnisobjekte, die der Benutzer besitzt. Schreibgeschützt. Lässt NULL-Werte zu.|
+|ownedDevices|[directoryObject](directoryobject.md) collection|Geräte, die der Benutzer besitzt. Schreibgeschützt. Lässt NULL-Werte zu.|
+|ownedObjects|[directoryObject](directoryobject.md) collection|Verzeichnisobjekte, die der Benutzer besitzt. Schreibgeschützt. Lässt NULL-Werte zu.|
 |Foto|[profilePhoto](profilephoto.md)| Das Profilfoto des Benutzers. Schreibgeschützt.|
-|registeredDevices|[directoryObject](directoryobject.md)-Sammlung|Geräte, die für den Benutzer registriert sind. Schreibgeschützt. Lässt Nullwerte zu.|
+|registeredDevices|[directoryObject](directoryobject.md) collection|Geräte, die für den Benutzer registriert sind. Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

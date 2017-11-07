@@ -66,7 +66,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |parentFolderId|String|Die ID des übergeordneten Ordners des Kontakts.|
 |personalNotes|String|Die Notizen des Benutzers zu dem Kontakt.|
 |profession|String|Der Beruf des Kontakts.|
-|spouseName|String|Der Name des Ehepartners des Kontakts|
+|spouseName|Zeichenfolge|Der Name des Ehepartners/Partners des Kontakts|
 |surname|String|Der Nachname des Kontakts.|
 |title|String|Der Titel des Kontakts.|
 |yomiCompanyName|String|Der phonetische japanische Firmenname des Kontakts. Diese Eigenschaft ist optional.|

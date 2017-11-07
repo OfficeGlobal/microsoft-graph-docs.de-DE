@@ -49,11 +49,11 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |isReminderOn|Boolean|True, wenn eine Benachrichtigung den Benutzer an das Ereignis erinnern soll.|
 |location|[Ort](../resources/location.md)|Der Ort des Ereignisses.|
 |onlineMeetingUrl|String|Eine URL für eine Onlinebesprechung.|
-|recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|Das Wiederholungsmuster für das Ereignis.|
+|recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|Das Serienmuster für das Ereignis.|
 |reminderMinutesBeforeStart|Int32|Festlegung, wie viele Minuten vor Beginn des Ereignisses die Erinnerung angezeigt werden soll|
 |responseRequested|Boolean|Legen Sie „True“ fest, wenn der Absender eine Antwort erhalten soll, wenn das Ereignis akzeptiert oder abgelehnt wird.|
 |sensitivity|String| Mögliche Werte: `Normal`, `Personal`, `Private`, `Confidential`.|
-|showAs|String|Der anzuzeigende Status: Frei = 0, Mit Vorbehalt = 1, Beschäftigt = 2, Abwesend = 3, An anderem Ort tätig = 4; Unbekannt =-1. Mögliche Werte: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
+|showAs|Zeichenfolge|Der anzuzeigende Status. Mögliche Werte: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
 |start|[DateTimeTimeZone](../resources/datetimetimezone.md)|Die Startzeit des Ereignisses. <br/><br/>Standardmäßig ist die Startzeit in UTC angegeben. Sie können eine optionale Zeitzone in StartTimeZone angeben, die Startzeit in dieser Zeitzone angeben und einen Zeitunterschied zur UTC-Zeitzone angeben. Beachten Sie, dass bei Verwendung von StartTimeZone auch ein Wert für EndTimeZone angegeben werden muss.<br/><br/>In diesem Beispiel wird 25. Februar 2015 19:34 in PST angegeben: „2015-02-25T19:34:00-08:00“.  |
 |subject|String|Der Text der Betreffzeile des Ereignisses|
 
@@ -62,8 +62,11 @@ Da die **event**-Ressource [Erweiterungen](../../../concepts/extensibility_overv
 ## <a name="response"></a>Antwort
 
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [vent](../resources/event.md)-Objekt im Antworttext zurückgegeben.
+
 ## <a name="example"></a>Beispiel
+
 ##### <a name="request"></a>Anforderung
+
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
@@ -81,12 +84,15 @@ Content-length: 285
     "response": "",
     "time": "datetime-value"
   },
+  "recurrence": null,
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true
 }
 ```
+
 ##### <a name="response"></a>Antwort
+
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
@@ -105,6 +111,7 @@ Content-length: 285
     "response": "",
     "time": "datetime-value"
   },
+  "recurrence": null,  
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true

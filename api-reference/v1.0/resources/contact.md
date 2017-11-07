@@ -63,7 +63,7 @@ Diese Ressource unterstützt Folgendes:
 |parentFolderId|String|Die ID des übergeordneten Ordners des Kontakts.|
 |personalNotes|String|Die Notizen des Benutzers zu dem Kontakt.|
 |profession|String|Der Beruf des Kontakts.|
-|spouseName|String|Der Name des Ehepartners des Kontakts|
+|spouseName|Zeichenfolge|Der Name des Ehepartners/Partners des Kontakts|
 |surname|String|Der Nachname des Kontakts.|
 |title|String|Der Titel des Kontakts.|
 |yomiCompanyName|String|Der phonetische japanische Firmenname des Kontakts.|
@@ -76,7 +76,7 @@ Diese Ressource unterstützt Folgendes:
 |Erweiterungen|[extension](extension.md)-Sammlung|Die Sammlung der für den Kontakt definierten offenen Erweiterungen. Schreibgeschützt. Lässt NULL-Werte zu.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter mehrwertiger Eigenschaften, die für den Kontakt definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
 |Foto|[profilePhoto](profilephoto.md)| Optionales Kontaktbild. Sie können für einen Kontakt ein Foto abrufen oder einstellen.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter einwertiger Eigenschaften, die für den Kontakt definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter einwertiger Eigenschaften, die für den Kontakt definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

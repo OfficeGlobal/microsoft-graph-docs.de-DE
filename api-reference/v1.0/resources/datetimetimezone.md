@@ -146,13 +146,13 @@ Asien/Colombo
 
 Asien/Katmandu
 
-Asien/Almaty
+Asien/Astana (Almaty)
 
 Asien/Dhaka
 
 Asien/Jekaterinburg
 
-Asien/Rangun
+Asien/Yangon (Rangun)
 
 Asien/Bangkok
 

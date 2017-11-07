@@ -8,7 +8,7 @@ Verwenden Sie die **type**-Eigenschaft, um die unterschiedlichen Typen von **rec
 
 > **Hinweis** Schließen Sie nur die Eigenschaften ein, die Sie für ein Serienmuster benötigen. Jede Eigenschaft, die Sie einschließen, die keinen unterstützten Typ aufweist, würde einen Fehler zurückgeben.
 
-| Typ des Wiederholungsmusters | Wert der type-Eigenschaft | Beschreibung | Beispiel | Erforderliche Eigenschaften |
+| Typ des Serienmusters | Wert der type-Eigenschaft | Beschreibung | Beispiel | Erforderliche Eigenschaften |
 |:---------------|:--------|:--------|:--------|:----------|
 | Täglich | `daily` | Das Ereignis wiederholt sich basierend auf der Anzahl von Tagen, die von **interval** zwischen den einzelnen Vorkommen angegeben werden. | Ereignis alle 3 Tage wiederholen | **type**, **interval** |
 | Wöchentlich | `weekly` | Das Ereignis wird am gleichen Tag oder an den gleichen Tagen einer Woche basierend auf der Anzahl von Wochen zwischen zwei Vorkommen wiederholt. | Ereignis jeden Montag und Dienstag wiederholen | **type**, **interval**, **daysOfWeek**, **firstDayOfWeek** |

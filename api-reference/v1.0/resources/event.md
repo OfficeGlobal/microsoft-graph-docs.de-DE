@@ -12,8 +12,8 @@ Diese Ressource unterstützt Folgendes:
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-|[List events](../api/user_list_events.md)|[event](event.md) collection |Ruft eine Liste der [event](../resources/event.md)-Objekte im Postfach des Benutzers ab. Die Liste enthält einzelne Instanzen von Besprechungen und Serienmaster.|
-|[Create event](../api/user_post_events.md) |[event](event.md)| Erstellt ein neues Ereignis durch Veröffentlichen in der Instanzensammlung.|
+|[List events](../api/user_list_events.md)|[Ereignissammlung](event.md) |Ruft eine Liste der [event](../resources/event.md)-Objekte im Postfach des Benutzers ab. Die Liste enthält einzelne Instanzen von Besprechungen und Serienmaster.|
+|[Ereignis erstellen](../api/user_post_events.md) |[event](event.md)| Erstellt ein neues Ereignis durch Veröffentlichen in der Instanzensammlung.|
 |[Get event](../api/event_get.md) | [event](event.md) |Liest die Eigenschaften und Beziehungen eines Ereignisobjekts.|
 |[Update](../api/event_update.md) | [event](event.md) |Aktualisiert das Ereignisobjekt. |
 |[Delete](../api/event_delete.md) | Keiner |Löscht das Ereignisobjekt. |
@@ -67,21 +67,21 @@ Diese Ressource unterstützt Folgendes:
 |responseStatus|[responseStatus](responsestatus.md)|Typ der Antwort, die als Antwort auf eine Ereignisnachricht gesendet wurde|
 |sensitivity|String| Mögliche Werte: `Normal`, `Personal`, `Private`, `Confidential`|
 |seriesMasterId|String|Die dem Element zugeordneten Kategorien|
-|showAs|String|Der anzuzeigende Status: Frei = 0, Mit Vorbehalt = 1, Beschäftigt = 2, Abwesend = 3, An anderem Ort tätig = 4; Unbekannt =-1. Mögliche Werte: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
+|showAs|Zeichenfolge|Der anzuzeigende Status. Mögliche Werte: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
 |start|[dateTimeTimeZone](datetimetimezone.md)|Datum, Uhrzeit und Zeitzone für den Beginn des Ereignisses|
 |subject|String|Der Text der Betreffzeile des Ereignisses|
-|type|String|Der Ereignistyp: SingleInstance = 0, Occurrence = 1, Exception = 2, SeriesMaster = 3. Mögliche Werte: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`.|
+|type|Zeichenfolge|Der Ereignistyp. Mögliche Werte: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`. Schreibgeschützt.|
 |webLink|String|Die URL zum Öffnen des Ereignisses in Outlook Web App:<br/><br/>Das Ereignis wird im Browser geöffnet, wenn Sie über Outlook Web App bei Ihrem Postfach angemeldet sind. Sie werden aufgefordert, sich anzumelden, wenn Sie noch nicht beim Browser angemeldet sind.<br/><br/>Auf diese URL kann von einem iFrame aus zugegriffen werden.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) collection|Die Sammlung der [FileAttachment](fileAttachment.md)- und [ItemAttachment](itemAttachment.md)-Anlagen des Ereignisses. Navigationseigenschaft. Schreibgeschützt. Lässt Nullwerte zu.|
-|calendar|[calendar](calendar.md)|Der Kalender, der das Ereignis enthält. Navigationseigenschaft. Schreibgeschützt.|
+|attachments|[attachment](attachment.md) collection|Die Sammlung der [FileAttachment](fileAttachment.md)- und [ItemAttachment](itemAttachment.md)-Anlagen des Ereignisses. Navigationseigenschaft. Schreibgeschützt Lässt Nullwerte zu.|
+|Kalender|[Kalender](calendar.md)|Der Kalender, der das Ereignis enthält. Navigationseigenschaft. Schreibgeschützt|
 |Erweiterungen|[Erweiterungssammlung](extension.md)|Die Sammlung der für das Ereignis definierten offenen Erweiterungen. Schreibgeschützt. Lässt Nullwerte zu.|
-|instances|[event](event.md) collection|Die Instanzen des Ereignisses. Navigationseigenschaft. Schreibgeschützt. Lässt NULL-Werte zu.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| Die Sammlung der für das Ereignis definierten mehrwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt NULL-Werte zu.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| Die Sammlung der für das Ereignis definierten einwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt Nullwerte zu.|
+|instances|[Ereignissammlung](event.md)|Die Instanzen des Ereignisses. Navigationseigenschaft. Schreibgeschützt Lässt Nullwerte zu.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für das Ereignis definierten mehrwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt Nullwerte zu.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für das Ereignis definierten einwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

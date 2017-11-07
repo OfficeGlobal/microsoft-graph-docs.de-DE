@@ -24,6 +24,8 @@ Sie können Microsoft Graph verwenden, um Benutzer zielgerichtet mit für sie re
 
 Mit der Microsoft Graph-API können Sie all dies und mehr erledigen.
 
+>**Hinweis:** Wenn Sie die Microsoft Graph-API verwenden, stimmen Sie den [Microsoft Graph-Nutzungsbedingungen](../misc/terms-of-use.md) und den [Microsoft-Datenschutzbestimmungen](https://go.microsoft.com/fwlink/?LinkId=521839) zu.
+
 ## <a name="next-steps"></a>Nächste Schritte
 
 - Sehen Sie sich [ausgewählte Szenarios](../concepts/featured_scenarios.md) an.

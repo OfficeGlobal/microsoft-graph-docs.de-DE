@@ -62,7 +62,7 @@ Anders als bei offenen Erweiterungen handelt es sich bei der Verwaltung von Sche
 
 Da Schemaerweiterungen als komplexe Typen in Instanzen der Zielressourcen zugänglich sind, können Sie wie folgt CRUD-Vorgänge auf die benutzerdefinierten Daten in einer Schemaerweiterung anwenden:
 
-- Sie können die `POST`-Methode der Ressource verwenden, um bei der Erstellung einer neuen Ressourceninstanz benutzerdefinierte Daten anzugeben.
+- Sie können die `POST`-Methode der Ressource verwenden, um bei der Erstellung einer neuen Ressourceninstanz benutzerdefinierte Daten anzugeben. Beachten Sie, dass ein [bekanntes Problem](known_issues.md#creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time) für die Ressourcen **contact**, **event**, **message** und **post** vorhanden ist, für das Sie eine Schemaerweiterung über einen `PATCH`-Vorgang erstellen müssen.
 - Sie können die `GET`-Methode der Ressource verwenden, um die benutzerdefinierten Daten zu lesen.
 - Sie können die `PATCH`-Methode der Ressource verwenden, um einer vorhandenen Ressourceninstanz benutzerdefinierte Daten hinzuzufügen oder benutzerdefinierte Daten aus einer vorhandenen Ressourceninstanz zu löschen.
 - Sie können die `PATCH`-Methode der Ressource verwenden, um den komplexen Typ auf „null“ festzulegen und so die benutzerdefinierten Daten in der Ressourceninstanz zu löschen. 

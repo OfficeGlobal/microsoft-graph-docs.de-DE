@@ -8,7 +8,7 @@ Sie können eine E-Mail-Nachricht mit diesem Beispiel versenden, aber das Foto d
 
 - [Erste Schritte mit Microsoft Graph in einer Ziel-C-iOS-App](ios_objectivec.md)
 
-## <a name="ios-swift-sonnect-sample"></a>Beispiel iOS-Swift-Connect
+## <a name="ios-swift-connect-sample"></a>iOS Swift Connect-Beispiel
 In diesem Beispiel wird die Microsoft Graph-Client-Bibliothek für Ziel C für den Zugriff auf den Microsoft Graph-Endpunkt verwendet. Die Benutzerauthentifizierung wird durch die Drittanbieter-[NXOAuth2Client](https://github.com/nxtbgthng/OAuth2Client)-Bibliothek durchgeführt. Diese Bibliothek lässt die App einen Benutzer einer lokalen Azure Active Directory-Instanz, aber keine MSA-Benutzer authentifizieren.
 
 Im Beispiel wird der Zugriff mit Graph auf das Azure-Profil des Benutzers verdeutlicht. Sie erfahren außerdem, wie Sie das Profilfoto des Benutzers abrufen, es auf den OneDrive-Speicher des Benutzers hochladen und in den Textkörper einer E-Mail-Nachricht in Outlook einbetten können.
