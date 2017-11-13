@@ -26,7 +26,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202, Accepted` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
+Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202 Accepted` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 Das folgende Beispiel illustriert, wie Sie diese API aufrufen können.

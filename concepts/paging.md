@@ -1,4 +1,3 @@
-
 # <a name="paging-microsoft-graph-data-in-your-app"></a>Paging der Microsoft Graph-Daten in Ihrer App 
 
 Einige Abfragen in Microsoft Graph geben mehrere Seiten von Daten zurück, entweder aufgrund von serverseitigem Paging oder aufgrund der Verwendung des `$top`-Abfrageparameters, um die Seitengröße in einer Anforderung gezielt zu begrenzen. Wenn ein Resultset mehrere Seiten umfasst, gibt Microsoft Graph eine `@odata.nextLink`-Eigenschaft in der Antwort, die eine URL zu der nächsten Seite mit Ergebnissen enthält. 
@@ -30,5 +29,3 @@ Das Paging-Verhalten variiert in den verschiedenen Microsoft Graph-APIs. Berück
 - Unterschiedliche APIs weisen möglicherweise unterschiedliche Standard- und Maximalgrößen für Seiten auf.
 - Unterschiedliche APIs verhalten sich möglicherweise unterschiedlich, wenn Sie eine Seitengröße (über den `$top`-Abfrageparameter) angeben, der die maximale Seitengröße für diese API überschreitet. Je nach API wird die angeforderte Seitengröße möglicherweise ignoriert oder standardmäßig auf die maximale Seitengröße für diese API festgelegt, oder Microsoft Graph gibt einen Fehler zurück. 
 - Nicht alle Ressourcen oder Beziehungen unterstützen Paging. Abfragen von [directoryRoles](../api-reference/v1.0/resources/directoryrole.md) unterstützen beispielsweise kein Paging. Dies umfasst das Lesen von Rollenobjekten und Rollenmitgliedern.
-- Einige Microsoft Graph-APIs unterstützen Rückwärts-Paging durch Anfügen des `previous-page`-Abfrageparameters (`&previous-page=true`) an den URL-Wert der `@odata:nextLink`-Eigenschaft. Nachdem Sie diesen Parameter an eine Anforderung angefügt haben, ist dieser im `@odata:nextLink`-URL-Wert in nachfolgenden Antworten enthalten. Das Rückwärts-Paging ist weiterhin möglich, bis eine Antwort mit einem leeren Ergebnis zurückgegeben wird. Beim Paging wird weiterhin ein Fehler zurückgegeben. Alternativ können Sie das Vorwärts-Paging von der aktuellen Antwort fortsetzen, indem Sie den `previous-page`-Parameter entfernen, wenn Sie die Anforderung für die nächste Seite von Ergebnissen senden. 
-
