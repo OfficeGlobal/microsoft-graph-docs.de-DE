@@ -89,7 +89,7 @@ Die `id`-Eigenschaft dient in erster Linie als Korrelationswert zum Zuordnen ein
 
 Die Eigenschaften `method` und `url` sind genau das, was Sie am Anfang jeder HTTP-Anforderung sehen. Die Methode ist die HTTP-Methode, und die URL ist die Ressourcen-URL, an die die einzelne Anforderung normalerweise gesendet wird.
 
-Einzelne Anforderungen können optional auch eine `headers`- und eine `body`-Eigenschaft enthalten. Beide Eigenschaften sind in der Regel JSON-Objekte, wie im vorherigen Beispiel gezeigt. In einigen Fällen ist die `body`-Eigenschaft möglicherweise ein base64-codierter URL-Wert anstelle eines JSON Objekts, beispielsweise wenn der Textkörper ein Bild ist. In diesen Fällen muss das `headers`-Objekt einen Wert für `content-type` enthalten.
+Einzelne Anforderungen können optional auch eine `headers`- und eine `body`-Eigenschaft enthalten. Beide Eigenschaften sind in der Regel JSON-Objekte. In einigen Fällen ist die `body`-Eigenschaft möglicherweise ein base64-codierter URL-Wert anstelle eines JSON Objekts, beispielsweise wenn der Textkörper ein Bild ist. Wenn ein `body` in der Anforderung enthalten ist, muss das `headers`-Objekt einen Wert für `content-type` enthalten.
 
 ## <a name="response-format"></a>Antwortformat
 
