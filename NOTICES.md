@@ -1,0 +1,5 @@
+#<a name="third-party-notices-for-microsoft-graph-explorer"></a>Hinweise zu Drittanbietern für Microsoft Graph-Tester
+
+Dieses Projekt enthält Material aus den unten aufgelisteten Projekten (zusammenfassend „Drittanbietercode“ genannt). Microsoft ist nicht der ursprüngliche Autor von Drittanbietercode. Die ursprünglichen Urheberrechtshinweise und Lizenzen, unter denen Microsoft solchen Drittanbietercode erhalten hat, sind unten zusammen mit dem vollständigen Text solcher Lizenzen dargelegt. Diese Hinweise und Lizenzen werden nur zu Informationszwecken bereitgestellt. Dieser Drittanbietercode wird für Sie unter den unten dargelegten Lizenzbedingungen lizenziert. Microsoft behält sich alle anderen Rechte vor, die in diesem Vertrag nicht ausdrücklich genannt sind, entweder ausdrücklich oder konkludent oder in anderer Weise. 
+
+- Der Android Robot wird anhand der von Google erstellten und freigegebenen Arbeit reproduziert und geändert und entsprechend den Nutzungsbedingungen von [Creative Commons 3.0 Attribution License](http://creativecommons.org/licenses/by/3.0/) verwendet.
