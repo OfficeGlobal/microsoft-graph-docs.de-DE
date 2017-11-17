@@ -88,7 +88,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
-|Berechtigung    |Zeichenfolge anzeigen   |Beschreibung |Administratorzustimmung erforderlich |
+|Berechtigung    |Anzeigezeichenfolge   |Beschreibung |Administratorzustimmung erforderlich |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Contacts.Read_ |Benutzerkontakte lesen  |Ermöglicht der App, Benutzerkontakte zu lesen. |Nein |
 |_Contacts.Read.Shared_ |Benutzerkontakte und freigegebene Kontakte lesen |Ermöglicht der App, Kontakte zu lesen, für die der Benutzer über Zugriffsberechtigungen verfügt, einschließlich der eigenen Kontakte des Benutzers und freigegebener Kontakte. |Nein |
