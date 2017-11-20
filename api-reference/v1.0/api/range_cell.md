@@ -22,6 +22,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Cell
 | Name       | Beschreibung|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Erforderlich. |
+| Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
@@ -29,7 +30,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |row|number|Zeilenanzahl der abzurufenden Zelle. Nullindiziert.|
-|column|number|Spaltenanzahl der abzurufenden Zelle. Nullindiziert.|
+|Spalte|number|Spaltenanzahl der abzurufenden Zelle. Nullindiziert.|
 
 ## <a name="response"></a>Antwort
 

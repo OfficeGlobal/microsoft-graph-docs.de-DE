@@ -22,6 +22,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireRow
 | Name       | Beschreibung|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Erforderlich. |
+| Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
 

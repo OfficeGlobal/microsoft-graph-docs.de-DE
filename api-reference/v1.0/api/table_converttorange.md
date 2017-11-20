@@ -21,6 +21,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/convertToRange
 | Name       | Beschreibung|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Erforderlich. |
+| Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
 

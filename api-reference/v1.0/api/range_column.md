@@ -22,13 +22,14 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
 | Name       | Beschreibung|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Erforderlich. |
+| Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|column|number|Spaltenanzahl des abzurufenden Bereichs. Nullindiziert.|
+|Spalte|number|Spaltenanzahl des abzurufenden Bereichs. Nullindiziert.|
 
 ## <a name="response"></a>Antwort
 
