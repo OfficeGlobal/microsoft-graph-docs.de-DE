@@ -20,7 +20,7 @@ workbook-session-id: {session-id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Authorization  | Bearer {token}. Erforderlich. | | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 | Arbeitsmappensitzungs-ID | Arbeitsmappensitzungs-ID zum Schließen |
 
 ## <a name="request-body"></a>Anforderungstext

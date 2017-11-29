@@ -20,6 +20,7 @@ GET /workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
 | Name       | Beschreibung|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Erforderlich. |
+| Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="response"></a>Antwort
 
