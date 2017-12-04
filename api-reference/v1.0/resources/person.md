@@ -63,7 +63,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "jobTitle": "string",
   "officeLocation": "string",
   "personNotes": "string",
-  "personType": [{"@odata.type": "microsoft.graph.personType"}],
+  "personType": {"@odata.type": "microsoft.graph.personType"},
   "phones": [{"@odata.type": "microsoft.graph.phone"}],
   "postalAddresses": [{"@odata.type": "microsoft.graph.location"}],
   "profession": "string",
