@@ -18,7 +18,7 @@ Die fertigen Verbindungsbeispiele finden Sie unter [Microsoft Graph](https://git
 |iOS (Swift) |<a href="https://github.com/microsoftgraph/ios-swift-connect-rest-sample">REST-Beispiel</a> |<a href="https://github.com/microsoftgraph/ios-swift-connect-sample">SDK-Beispiel</a> |
 |NodeJS |<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">REST-Beispiel</a> |<a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK-Beispiel</a> oder <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST-Beispiel</a> |
 |PHP |<a href="https://github.com/microsoftgraph/php-connect-rest-sample/tree/last_v1_auth">REST-Beispiel</a> |<a href="https://github.com/microsoftgraph/php-connect-sample">SDK-Beispiel</a> oder <a href="https://github.com/microsoftgraph/php-connect-rest-sample">REST-Beispiel</a> |
-|Python |<a href="https://github.com/microsoftgraph/python3-connect-rest-sample">REST-Beispiel</a> |
+|Python |<a href="https://github.com/microsoftgraph/python-sample-auth/blob/master/sample_adal.py">REST-Beispiel</a> |<a href="https://aka.ms/graph-python-samples">REST-Beispiel</a>
 |Ruby |<a href="https://github.com/microsoftgraph/ruby-connect-rest-sample/tree/last_v1_auth">REST-Beispiel</a> |<a href="https://github.com/microsoftgraph/ruby-connect-rest-sample">REST-Beispiel</a> |
 |UWP |<a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/last_v1_auth">REST-Beispiel</a> |<a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">SDK-Beispiel</a> oder <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">REST-Beispiel</a> |
 |Xamarin | |<a href="https://github.com/microsoftgraph/xamarin-csharp-connect-sample">SDK-Beispiel</a> |
