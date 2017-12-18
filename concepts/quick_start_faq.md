@@ -1,6 +1,6 @@
 # <a name="microsoft-graph-quick-start-faq"></a>Microsoft Graph-Schnellstart – Häufig gestellte Fragen
 
-In den häufig gestellten Fragen werden Fragen im Zusammenhang mit den [Microsoft Graph-Schnellstarts](https://developer.microsoft.com/en-us/graph/quick-start) beantwortet.
+In den häufig gestellten Fragen werden Fragen im Zusammenhang mit den [Microsoft Graph-Schnellstarts](https://developer.microsoft.com/de-DE/graph/quick-start) beantwortet.
 
 ## <a name="what-do-the-quick-starts-do"></a>Welche Funktionen haben die Schnellstarts?
 
@@ -11,8 +11,9 @@ Wenn Sie die Office 365-REST-APIs verwenden, müssen Sie sich bei jedem Dienst, 
 Die Microsoft Graph-Schnellstarts greifen mit einer Authentifizierung auf drei Dienste zu: Microsoft-Konto, OneDrive und Outlook. Bei jedem Schnellstart werden Informationen aus Benutzerprofilen von Microsoft-Konten abgerufen. Diese Daten (ein Foto) werden auf OneDrive geschrieben, und dann wird in Outlook eine E-Mail (mit einem Link zu dem Foto) generiert. 
 
 Die Schnellstarts umfassen vier Schritte:
+
 - Wählen Sie Ihre Plattform. 
-- Rufen Sie Ihre App-ID (auch bekannt als Client-ID) ab.
+- Rufen Sie Ihre App-ID (Client-ID) ab.
 - Erstellen Sie das Beispiel.
 - Melden Sie sich an, und versenden Sie ein Profilfoto per E-Mail.
 

@@ -22,7 +22,7 @@ Oder persönliche OneDrive-Umgebung eines Benutzers:`/drives/{id}/root`
 
 Nachdem Microsoft Graph die Abonnementsanfrage akzeptiert hat, werden Pushbenachrichtigungen an die im Abonnement angegebene URL gesendet. Die App führt dann Aktionen gemäß der Geschäftslogik aus. Sie ruft z. B. weitere Daten ab, aktualisiert Zwischenspeicher für Dokumente und Ansichten usw.
 
-Apps sollten ihre Abonnements verlängern, bevor diese ablaufen. Derzeit beträgt die längste Ablaufzeit drei Tage, abzüglich 90 Minuten ab der Erstellungszeit. Apps müssen ihre Abonnements vor dem Ablaufzeitpunkt verlängern. Andernfalls müssen sie ein neues Abonnement erstellen.
+Apps müssen ihre Abonnements vor dem Ablaufzeitpunkt verlängern. Andernfalls müssen sie ein neues Abonnement erstellen. Eine Liste maximaler Ablaufzeiten finden Sie unter [Maximale Abonnementdauer pro Ressourcentyp](subscription.md#maximum-length-of-subscription-per-resource-type).
 
 Apps können auch jederzeit gekündigt werden, um keine weiteren Benachrichtigungen zu erhalten.
 
