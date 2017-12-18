@@ -37,10 +37,10 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 ## <a name="response"></a>Antwort
 
-Wenn erfolgreich ausgeführt, gibt diese Methode den Antwortcode `204 OK` und ein aktualisiertes [groupSetting](../resources/groupsetting.md)-Objekt im Antworttext zurück.
+Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
+#### <a name="request"></a>Anforderung
 <!-- {
   "blockType": "request",
   "name": "update_groupsetting"
@@ -109,15 +109,15 @@ Content-length: 173
   ]
 }
 ```
-##### <a name="response"></a>Antwort
+
+#### <a name="response"></a>Antwort
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.groupSetting"
+  "truncated": false
 } -->
 ```http
-HTTP/1.1 204 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
