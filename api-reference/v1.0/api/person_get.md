@@ -1,170 +1,146 @@
-# <a name="get-person"></a><span data-ttu-id="c8e86-101">Get person</span><span class="sxs-lookup"><span data-stu-id="c8e86-101">Get person</span></span>
+# <a name="get-person"></a><span data-ttu-id="1e6ae-101">Get person</span><span class="sxs-lookup"><span data-stu-id="1e6ae-101">Get person</span></span>
 
-<span data-ttu-id="c8e86-102">Dient zum Abrufen der Eigenschaften und der Beziehungen des [person](../resources/person.md)-Objekts.</span><span class="sxs-lookup"><span data-stu-id="c8e86-102">Retrieve the properties and relationships of a [person](../resources/person.md) object.</span></span>
+<span data-ttu-id="1e6ae-102">Dient zum Abrufen der Eigenschaften und der Beziehungen des [person](../resources/person.md)-Objekts.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-102">Retrieve the properties and relationships of a [person](../resources/person.md) object.</span></span>
 
-<span data-ttu-id="c8e86-p101">Sie können diese Informationen über die People API abrufen. Beispiele finden Sie in dem Abschnitt [Beispiele](#examples) sowie im Artikel zum Thema [Abrufen relevanter Informationen über Personen](../../../concepts/people_example.md).</span><span class="sxs-lookup"><span data-stu-id="c8e86-p101">You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Get relevant information about people](../../../concepts/people_example.md).</span></span>
+<span data-ttu-id="1e6ae-p101">Sie können diese Informationen über die People API abrufen. Beispiele finden Sie in dem Abschnitt [Beispiele](#examples) sowie im Artikel zum Thema [Abrufen relevanter Informationen über Personen](../../../concepts/people_example.md).</span><span class="sxs-lookup"><span data-stu-id="1e6ae-p101">You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Get relevant information about people](../../../concepts/people_example.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c8e86-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="c8e86-105">Permissions</span></span>
-<span data-ttu-id="c8e86-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="c8e86-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="1e6ae-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="1e6ae-105">Permissions</span></span>
+<span data-ttu-id="1e6ae-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="1e6ae-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
  
 
-|<span data-ttu-id="c8e86-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c8e86-108">Permission type</span></span>      | <span data-ttu-id="c8e86-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c8e86-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1e6ae-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="1e6ae-108">Permission type</span></span>      | <span data-ttu-id="1e6ae-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="1e6ae-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c8e86-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c8e86-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c8e86-111">People.Read, People.Read.All</span><span class="sxs-lookup"><span data-stu-id="c8e86-111">People.Read, People.Read.All</span></span>    |
-|<span data-ttu-id="c8e86-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c8e86-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c8e86-113">People.Read</span><span class="sxs-lookup"><span data-stu-id="c8e86-113">People.Read</span></span>    |
-|<span data-ttu-id="c8e86-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c8e86-114">Application</span></span> | <span data-ttu-id="c8e86-115">People.Read.All</span><span class="sxs-lookup"><span data-stu-id="c8e86-115">People.Read.All</span></span> |
+|<span data-ttu-id="1e6ae-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="1e6ae-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1e6ae-111">People.Read, People.Read.All</span><span class="sxs-lookup"><span data-stu-id="1e6ae-111">People.Read, People.Read.All</span></span>    |
+|<span data-ttu-id="1e6ae-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="1e6ae-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1e6ae-113">People.Read</span><span class="sxs-lookup"><span data-stu-id="1e6ae-113">People.Read</span></span>    |
+|<span data-ttu-id="1e6ae-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="1e6ae-114">Application</span></span> | <span data-ttu-id="1e6ae-115">People.Read.All</span><span class="sxs-lookup"><span data-stu-id="1e6ae-115">People.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c8e86-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c8e86-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1e6ae-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="1e6ae-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/people/?$search='{property_value}'
-GET /me/people/?$filter={person_property} eq '{property_value}'
+GET /me/people/{id}
+GET /users/{id | userPrincipalName}/people/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c8e86-117">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="c8e86-117">Optional query parameters</span></span>
-|<span data-ttu-id="c8e86-118">Name</span><span class="sxs-lookup"><span data-stu-id="c8e86-118">Name</span></span>|<span data-ttu-id="c8e86-119">Wert</span><span class="sxs-lookup"><span data-stu-id="c8e86-119">Value</span></span>|<span data-ttu-id="c8e86-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c8e86-120">Description</span></span>|
-|:---------------|:--------|:-------|
-|<span data-ttu-id="c8e86-121">$filter</span><span class="sxs-lookup"><span data-stu-id="c8e86-121">$filter</span></span>|<span data-ttu-id="c8e86-122">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="c8e86-122">string</span></span>|<span data-ttu-id="c8e86-123">Dient zum Einschränken der Antwort auf diejenigen Personen, deren Datensätze die angegebenen Kriterien enthalten.</span><span class="sxs-lookup"><span data-stu-id="c8e86-123">Limits the response to only those people whose record contains the specified criteria.</span></span>|
-|<span data-ttu-id="c8e86-124">$orderby</span><span class="sxs-lookup"><span data-stu-id="c8e86-124">$orderby</span></span>|<span data-ttu-id="c8e86-125">string</span><span class="sxs-lookup"><span data-stu-id="c8e86-125">string</span></span>|<span data-ttu-id="c8e86-p103">Standardmäßig werden die Personen in der Antwort nach ihrer Relevanz für die Abfrage sortiert. Sie können die Reihenfolge der Personen in der Antwort mit dem *$orderby*-Parameter ändern.</span><span class="sxs-lookup"><span data-stu-id="c8e86-p103">By default, the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter.</span></span>|
-|<span data-ttu-id="c8e86-128">$search</span><span class="sxs-lookup"><span data-stu-id="c8e86-128">$search</span></span>|<span data-ttu-id="c8e86-129">string</span><span class="sxs-lookup"><span data-stu-id="c8e86-129">string</span></span>|<span data-ttu-id="c8e86-p104">Dient für die Suche nach Personen anhand des Namens oder des Alias. Unterstützt Fuzzyübereinstimmung.</span><span class="sxs-lookup"><span data-stu-id="c8e86-p104">Search for people by name or alias. Supports fuzzy matching.</span></span>|
-|<span data-ttu-id="c8e86-132">$select</span><span class="sxs-lookup"><span data-stu-id="c8e86-132">$select</span></span>|<span data-ttu-id="c8e86-133">string</span><span class="sxs-lookup"><span data-stu-id="c8e86-133">string</span></span>|<span data-ttu-id="c8e86-p105">Durch Trennzeichen getrennte Liste der Eigenschaften, die in die Antwort eingeschlossen werden sollen. Wählen Sie für optimale Leistung nur eine Teilmenge der benötigten Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="c8e86-p105">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>|
-|<span data-ttu-id="c8e86-136">$skip</span><span class="sxs-lookup"><span data-stu-id="c8e86-136">$skip</span></span>|<span data-ttu-id="c8e86-137">int</span><span class="sxs-lookup"><span data-stu-id="c8e86-137">int</span></span>|<span data-ttu-id="c8e86-p106">Die ersten n Ergebnisse werden übersprungen. Hilfreich für Paging. Wird bei Verwendung von *$search* nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="c8e86-p106">Skip the first n results, useful for paging. This is not supported when using *$search*.</span></span>|
-|<span data-ttu-id="c8e86-140">$top</span><span class="sxs-lookup"><span data-stu-id="c8e86-140">$top</span></span>|<span data-ttu-id="c8e86-141">int</span><span class="sxs-lookup"><span data-stu-id="c8e86-141">int</span></span>|<span data-ttu-id="c8e86-142">Anzahl der Ergebnisse, die zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="c8e86-142">Number of results to be returned.</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="1e6ae-117">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="1e6ae-117">Optional query parameters</span></span>
+<span data-ttu-id="1e6ae-118">Diese Methode unterstützt die folgende [OData-Abfrageparameter](../../../concepts/people_example.md) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-118">This method supports the [OData Query Parameters](../../../concepts/people_example.md) to help customize the response.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="c8e86-143">Parameter</span><span class="sxs-lookup"><span data-stu-id="c8e86-143">Parameters</span></span>
-| <span data-ttu-id="c8e86-144">Parameter</span><span class="sxs-lookup"><span data-stu-id="c8e86-144">Parameter</span></span> |<span data-ttu-id="c8e86-145">Typ</span><span class="sxs-lookup"><span data-stu-id="c8e86-145">Type</span></span>       |<span data-ttu-id="c8e86-146">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c8e86-146">Description</span></span>|
-|:----------|:----------|:----------|
-|<span data-ttu-id="c8e86-147">property_value</span><span class="sxs-lookup"><span data-stu-id="c8e86-147">property_value</span></span>|<span data-ttu-id="c8e86-148">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="c8e86-148">String</span></span>     |<span data-ttu-id="c8e86-p107">Der Wert der erweiterten Eigenschaft, nach der gefiltert wird. Erforderlich, wo im Abschnitt **HTTP-Anforderung** aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="c8e86-p107">The value of the extended property to match. Required where listed in the **HTTP request** section.</span></span>|
-|<span data-ttu-id="c8e86-151">person_property</span><span class="sxs-lookup"><span data-stu-id="c8e86-151">person_property</span></span>|<span data-ttu-id="c8e86-152">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="c8e86-152">String</span></span>    |<span data-ttu-id="c8e86-p108">Die Eigenschaft der Person, die übereinstimmen muss. Erforderlich, wo im Abschnitt **HTTP-Anforderung** aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="c8e86-p108">The person property to match. Required where listed in the **HTTP request** section.</span></span>|
+|<span data-ttu-id="1e6ae-119">Name</span><span class="sxs-lookup"><span data-stu-id="1e6ae-119">Name</span></span>|<span data-ttu-id="1e6ae-120">Wert</span><span class="sxs-lookup"><span data-stu-id="1e6ae-120">Value</span></span>|<span data-ttu-id="1e6ae-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1e6ae-121">Description</span></span>| 
+|:---------------|:--------|:-------| 
+|<span data-ttu-id="1e6ae-122">$filter</span><span class="sxs-lookup"><span data-stu-id="1e6ae-122">$filter</span></span>|<span data-ttu-id="1e6ae-123">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="1e6ae-123">string</span></span>|<span data-ttu-id="1e6ae-124">Dient zum Einschränken der Antwort auf diejenigen Personen, deren Datensätze die angegebenen Kriterien enthalten.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-124">Limits the response to only those people whose record contains the specified criteria.</span></span>| 
+|<span data-ttu-id="1e6ae-125">$orderby</span><span class="sxs-lookup"><span data-stu-id="1e6ae-125">$orderby</span></span>|<span data-ttu-id="1e6ae-126">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="1e6ae-126">string</span></span>|<span data-ttu-id="1e6ae-127">Standardmäßig werden die Personen in der Antwort nach ihrer Relevanz für die Abfrage sortiert.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-127">By default, the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the $orderby parameter.</span></span> <span data-ttu-id="1e6ae-128">Sie können die Reihenfolge der Personen in der Antwort mit dem *$orderby*-Parameter ändern.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-128">By default, the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter.</span></span>| 
+|<span data-ttu-id="1e6ae-129">$search</span><span class="sxs-lookup"><span data-stu-id="1e6ae-129">$search</span></span>|<span data-ttu-id="1e6ae-130">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="1e6ae-130">string</span></span>|<span data-ttu-id="1e6ae-131">Dient für die Suche nach Personen anhand des Namens oder des Alias.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-131">Search for people by name or alias. Supports fuzzy matching.</span></span> <span data-ttu-id="1e6ae-132">Unterstützt Fuzzyübereinstimmung.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-132">Supports Fuzzy matching</span></span>| 
+|<span data-ttu-id="1e6ae-133">$select</span><span class="sxs-lookup"><span data-stu-id="1e6ae-133">$select</span></span>|<span data-ttu-id="1e6ae-134">string</span><span class="sxs-lookup"><span data-stu-id="1e6ae-134">string</span></span>|<span data-ttu-id="1e6ae-p105">Durch Trennzeichen getrennte Liste der Eigenschaften, die in die Antwort eingeschlossen werden sollen. Wählen Sie für optimale Leistung nur eine Teilmenge der benötigten Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-p105">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>| 
+|<span data-ttu-id="1e6ae-137">$skip</span><span class="sxs-lookup"><span data-stu-id="1e6ae-137">$skip</span></span>|<span data-ttu-id="1e6ae-138">int</span><span class="sxs-lookup"><span data-stu-id="1e6ae-138">int</span></span>|<span data-ttu-id="1e6ae-p106">Die ersten n Ergebnisse werden übersprungen. Hilfreich für Paging. Wird bei Verwendung von *$search* nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-p106">Skip the first n results, useful for paging. This is not supported when using *$search*.</span></span>| 
+|<span data-ttu-id="1e6ae-141">$top</span><span class="sxs-lookup"><span data-stu-id="1e6ae-141">$top</span></span>|<span data-ttu-id="1e6ae-142">int</span><span class="sxs-lookup"><span data-stu-id="1e6ae-142">int</span></span>|<span data-ttu-id="1e6ae-143">Anzahl der Ergebnisse, die zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-143">Number of results to be returned.</span></span>| 
 
-## <a name="request-headers"></a><span data-ttu-id="c8e86-155">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="c8e86-155">Request headers</span></span>
-| <span data-ttu-id="c8e86-156">Name</span><span class="sxs-lookup"><span data-stu-id="c8e86-156">Name</span></span>      |<span data-ttu-id="c8e86-157">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c8e86-157">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1e6ae-144">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="1e6ae-144">Request headers</span></span>
+| <span data-ttu-id="1e6ae-145">Name</span><span class="sxs-lookup"><span data-stu-id="1e6ae-145">Name</span></span>      |<span data-ttu-id="1e6ae-146">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1e6ae-146">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="c8e86-158">Authorization</span><span class="sxs-lookup"><span data-stu-id="c8e86-158">Authorization</span></span>  | <span data-ttu-id="c8e86-p109">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c8e86-p109">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1e6ae-147">Authorization</span><span class="sxs-lookup"><span data-stu-id="1e6ae-147">Authorization</span></span>  | <span data-ttu-id="1e6ae-p107">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-p107">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c8e86-161">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c8e86-161">Request body</span></span>
-<span data-ttu-id="c8e86-162">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="c8e86-162">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="c8e86-163">Antwort</span><span class="sxs-lookup"><span data-stu-id="c8e86-163">Response</span></span>
-<span data-ttu-id="c8e86-p110">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [person](../resources/person.md)-Objekt im Antworttext zurückgegeben. Die Antwort kann eine person-Instanz oder eine Sammlung von person-Instanzen enthalten.</span><span class="sxs-lookup"><span data-stu-id="c8e86-p110">If successful, this method returns a `200 OK` response code and a [person](../resources/person.md) object in the response body. The response can contain one person instance or a collection of person instances.</span></span> 
-## <a name="examples"></a><span data-ttu-id="c8e86-166">Beispiele</span><span class="sxs-lookup"><span data-stu-id="c8e86-166">Examples</span></span>
-### <a name="perform-a-search"></a><span data-ttu-id="c8e86-167">Durchführen einer Suche</span><span class="sxs-lookup"><span data-stu-id="c8e86-167">Perform a search</span></span> 
-<span data-ttu-id="c8e86-168">Die folgende Anforderung führt eine Suche nach einer Person mit dem Namen „Irene McGowan“ durch.</span><span class="sxs-lookup"><span data-stu-id="c8e86-168">The following request does a search for a person named Irene McGowan.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="1e6ae-150">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="1e6ae-150">Request body</span></span>
+<span data-ttu-id="1e6ae-151">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-151">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="1e6ae-152">Antwort</span><span class="sxs-lookup"><span data-stu-id="1e6ae-152">Response</span></span>
+<span data-ttu-id="1e6ae-153">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [person](../resources/person.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-153">If successful, this method returns a `200 OK` response code and a [ListItemVersion](../resources/person.md) object in the response body.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="1e6ae-154">Beispiele</span><span class="sxs-lookup"><span data-stu-id="1e6ae-154">Examples</span></span>
+#### <a name="request-1"></a><span data-ttu-id="1e6ae-155">Anforderung 1</span><span class="sxs-lookup"><span data-stu-id="1e6ae-155">Request 1</span></span>
+<span data-ttu-id="1e6ae-156">Nachfolgend sehen Sie ein Beispiel der Anforderung, die die Person mit dieser ID in der Organisation des Benutzers abruft.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-156">The following is an example of the request that gets the person who has this ID in the user's organization.</span></span> 
 
 <!-- {
   "blockType": "request",
-  "name": "get_person"
+  "name": "get_person_by_id"
 }-->
-
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowan"
+GET https://graph.microsoft.com/v1.0/me/people/e3d0513b-449e-4198-ba6f-bd97ae7cae85
 ```
 
-<span data-ttu-id="c8e86-169">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="c8e86-169">The following example shows the response.</span></span> 
+#### <a name="response-1"></a><span data-ttu-id="1e6ae-157">Antwort 1</span><span class="sxs-lookup"><span data-stu-id="1e6ae-157">Response 1</span></span>
+<span data-ttu-id="1e6ae-158">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-158">Here is an example of the response.</span></span>
+
+><span data-ttu-id="1e6ae-159">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-159">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="1e6ae-160">Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-160">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
-  "name": "get_person",
+  "name": "get_person_by_id",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.person"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 629
 
 {
-    "value": [
-       {
-           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
-           "displayName": "Irene McGowan",
-           "givenName": "Irene",
-           "surname": "McGowan",
-           "birthday": "",
-           "personNotes": "",
-           "isFavorite": false,
-           "jobTitle": "Auditor",
-           "companyName": null,
-           "yomiCompany": "",
-           "department": "Finance",
-           "officeLocation": "12/1110",
-           "profession": "",
-           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
-           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
-           "scoredEmailAddresses": [
-               {
-                   "address": "irenem@contoso.onmicrosoft.com",
-                   "relevanceScore": -16.446060612802224
-               }
-           ],
-           "phones": [
-               {
-                   "type": "Business",
-                   "number": "+1 412 555 0109"
-               }
-           ],
-           "postalAddresses": [],
-           "websites": [],
-           "personType": [
-               {
-                    "class": "Person",
-                    "subclass": "OrganizationUser"
-                }
-            ]
-       }
-   ]
+  "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+  "displayName": "Isaiah Langer",
+  "givenName": "Isaiah",
+  "surname": "Langer",
+  "birthday": "",
+  "personNotes": "",
+  "isFavorite": false,
+  "jobTitle": "Web Marketing Manager",
+  "companyName": null,
+  "yomiCompany": "",
+  "department": "Sales & Marketing",
+  "officeLocation": "20/1101",
+  "profession": "",
+  "userPrincipalName": "IsaiahL@contoso.com",
+  "imAddress": "sip:isaiahl@contoso.com",
+  "scoredEmailAddresses": [
+      {
+          "address": "IsaiahL@contoso.com",
+          "relevanceScore": 20.0
+      }
+  ],
+  "phones": [
+      {
+          "type": "business",
+          "number": "+1 918 555 0101"
+      }
+  ],
+  "postalAddresses": [],
+  "websites": [],
+  "personType": {
+      "class": "Person",
+      "subclass": "OrganizationUser"
+  }
 }
 ```
-### <a name="select-the-fields-to-return-in-a-filtered-response"></a><span data-ttu-id="c8e86-170">Auswählen der Felder, die in einer gefilterten Antwort zurückgegeben werden</span><span class="sxs-lookup"><span data-stu-id="c8e86-170">Select the fields to return in a filtered response</span></span> 
-<span data-ttu-id="c8e86-171">Sie können die *$select*- und *$filter*-Parameter gemeinsam verwenden, um eine benutzerdefinierte Liste der für den Benutzer relevanten Personen zu erstellen und nur die Felder abzurufen, die Ihre Anwendung benötigt.</span><span class="sxs-lookup"><span data-stu-id="c8e86-171">You can combine the *$select* and *$filter* parameters to create a custom list of people relevant to the user and get only the fields that your application needs.</span></span> 
 
-<span data-ttu-id="c8e86-p111">Im folgenden Beispiel wird **displayName** und **scoredEmailAddresses** von Personen angerufen, deren Anzeigenamen dem angegebenen Namen entspricht. In diesem Beispiel werden nur die Personen zurückgegeben, deren Anzeigename „Lorrie Frye“ lautet.</span><span class="sxs-lookup"><span data-stu-id="c8e86-p111">The following example gets the **displayName** and **scoredEmailAddresses** of people whose display name equals the specified name. In this example, only people whose display name equals "Lorrie Frye" are returned.</span></span>
-
-<!-- { "blockType": "ignored" } -->
-
-```http
-GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName eq 'Lorrie Frye'
-```
-
-<span data-ttu-id="c8e86-174">Nachfolgend sehen Sie die korrekt codierte URL für die Beispielanforderung.</span><span class="sxs-lookup"><span data-stu-id="c8e86-174">The following is the properly encoded URL for the example request.</span></span>
+#### <a name="request-2"></a><span data-ttu-id="1e6ae-161">Anforderung 2</span><span class="sxs-lookup"><span data-stu-id="1e6ae-161">Request 2</span></span>
+<span data-ttu-id="1e6ae-162">Nachfolgend sehen Sie ein Beispiel der Anforderung, die die Person mit dieser ID in der Organisation des Benutzers abruft und die Antwort auf die ausgewählten Eigenschaften beschränkt.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-162">The following is an example of the request that gets the person who has this ID in the user's organization and restricts the response to the selected properties.</span></span>
 
 <!-- {
   "blockType": "request",
-  "name": "get_person_select_and_filter"
+  "name": "get_person_by_id_with_select"
 }-->
-
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName%20eq%20'Lorrie Frye'
+GET https://graph.microsoft.com/v1.0/me/people/e3d0513b-449e-4198-ba6f-bd97ae7cae85?$select=displayName
 ```
+#### <a name="response-2"></a><span data-ttu-id="1e6ae-163">Antwort 2</span><span class="sxs-lookup"><span data-stu-id="1e6ae-163">Response 2</span></span>
+<span data-ttu-id="1e6ae-164">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-164">Here is an example of the response.</span></span>
 
-<span data-ttu-id="c8e86-175">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="c8e86-175">The following example shows the response.</span></span> 
+><span data-ttu-id="1e6ae-165">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-165">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="1e6ae-166">Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="1e6ae-166">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
-  "name": "get_person_select_and_filter",
+  "name": "get_person_by_id_with_select",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.person"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 305
 
 {
-    "value": [
-        {
-            "id": "8CE6E1DE-CB84-4BF5-971D-D3ECF452E2B5",
-            "displayName": "Lorrie Frye",
-            "scoredEmailAddresses": [
-                {
-                    "address": "Lorrief@contoso.onmicrosoft.com",
-                    "relevanceScore": 8.0
-                }
-            ]
-        }
-    ]
+  "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+  "displayName": "Isaiah Langer"
 }
 ```
 
