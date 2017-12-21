@@ -22,8 +22,11 @@ POST /workbook/tables/$/add
 | Authorization  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
-## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext eine JSON-Darstellung des [Table](../resources/table.md)-Objekts an.
+### <a name="request-parameters"></a>Anforderungsparameter
+| Name           | Typ      |Beschreibung|
+|:---------------|:----------|:----------|
+| Address  | string| Bereichsadresse. Wenn Sie diese API abseits des `worksheets/{id or name}/tables/add`-Pfads aufrufen, müssen Sie das Präfix für den Blattnamen nicht in der Adresse angeben. Wenn Sie diese jedoch abseits des `workbook/tables/add`-Pfads aufrufen, müssen Sie den Blattnamen angeben, auf dem die Tabelle erstellt werden muss (Beispiel: `sheet1!A1:D4`)|
+| hasHeaders  | Boolescher Wert|Boolescher Wert, der angibt, ob der Bereich Spaltenbeschriftungen hat. Wenn die Quelle keine Überschriften enthält (d. h. wenn diese Eigenschaft auf „false“ festgelegt ist), generiert Excel automatisch eine Überschriftenänderung der Daten nach einer Zeile.|
 
 ## <a name="response"></a>Antwort
 
@@ -42,14 +45,10 @@ Content-type: application/json
 Content-length: 109
 
 {
-  "id": 99,
-  "name": "name-value",
-  "showHeaders": true,
-  "showTotals": true,
-  "style": "style-value"
+  "address": "A1:D8",
+  "hasHeaders": false
 }
 ```
-Geben Sie im Anforderungstext eine JSON-Darstellung des [Table](../resources/table.md)-Objekts an.
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {

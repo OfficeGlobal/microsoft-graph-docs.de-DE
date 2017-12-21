@@ -21,7 +21,7 @@ Stellt eine Spalte in einer Tabelle dar.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|int|Gibt einen eindeutigen Schlüssel an, der die Spalte in der Tabelle angibt. Schreibgeschützt.|
+|id|string|Gibt einen eindeutigen Schlüssel an, der die Spalte in der Tabelle angibt. Diese Eigenschaft sollte als nicht transparenter Zeichenfolgenwert interpretiert werden und sollte nicht in einen anderen Typ ausgewertet werden. Schreibgeschützt.|
 |Index|int|Gibt die Indexnummer der Spalte in der Spaltenauflistung der Tabelle zurück. Nullindiziert. Schreibgeschützt.|
 |name|string|Gibt den Namen der Tabellenspalte zurück. Schreibgeschützt.|
 |values|json|Stellt die Rohwerte des angegebenen Bereichs dar. Die zurückgegebenen Daten können den Typ Zeichenfolge, Zahl oder ein boolescher Wert sein. Zelle, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück.|
@@ -29,7 +29,7 @@ Stellt eine Spalte in einer Tabelle dar.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Filter|[Filter](filter.md)|Ruft den auf die Spalte angewendeten Filter ab. Schreibgeschützt.|
+|Filter|[Filter](filter.md)|Ruft den auf die Salte angewendeten Filter ab. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

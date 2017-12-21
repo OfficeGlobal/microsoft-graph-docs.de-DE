@@ -47,7 +47,6 @@ Beispiele für Gruppenfeatures, die delegierte und Nur-App-Berechtigungen unters
 * [Verzeichniseinstellungen](../api-reference/v1.0/resources/directoryobject.md) für Gruppen, Typ und Synchronisierung
 * Gruppenbesitzer und Mitgliedschaft
 
-
 Beispiele für Gruppenfeatures, die nur delegierte Berechtigungen unterstützen:
 
 * Gruppenunterhaltungen, Ereignisse, Fotos
@@ -73,7 +72,7 @@ Aktuell funktioniert das [Auflisten der Teams, denen ein Benutzer beigetreten is
 
 ### <a name="adding-and-getting-attachments-of-group-posts"></a>Hinzufügen und Abrufen von Anlagen von Gruppenbeiträgen
 
-Durch das [Hinzufügen](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_post_attachments) von Anlagen zu Gruppenbeiträgen, das [Auflisten](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_list_attachments) und das Abrufen von Anlagen von Gruppenbeiträgen wird aktuell die Fehlermeldung „Die OData-Anforderung wird nicht unterstützt“ zurückgegeben. Für die `/v1.0`- und `/beta`-Versionen wurde eine Problemlösung entwickelt, die bis Ende Januar 2016 allgemein verfügbar sein sollte.
+Durch das [Hinzufügen](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/api/post_post_attachments) von Anlagen zu Gruppenbeiträgen, das [Auflisten](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/api/post_list_attachments) und das Abrufen von Anlagen von Gruppenbeiträgen wird aktuell die Fehlermeldung „Die OData-Anforderung wird nicht unterstützt“ zurückgegeben. Für die `/v1.0`- und `/beta`-Versionen wurde eine Problemlösung entwickelt, die bis Ende Januar 2016 allgemein verfügbar sein sollte.
 
 ### <a name="setting-the-allowexternalsenders-property"></a>Festlegen der allowExternalSenders-Eigenschaft
 
@@ -91,8 +90,8 @@ Bekannte Probleme bei der Verwendung der Delta-Abfrage finden Sie im Abschnitt [
 Derzeit gibt es eine teilweise Unterstützung für einen Kalender, der auf einem Internet-Kalenderabonnement (ICS) basiert:
 
 * Sie können einen ICS-basierten Kalender einem Benutzerpostfach über die Benutzeroberfläche, jedoch nicht über die Microsoft Graph-API hinzufügen.
-* [Das Auflisten der Kalender des Benutzers](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) ermöglicht Ihnen, die Eigenschaften **name**, **color** und **id** jedes [Kalenders](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) in der Standardkalendergruppe des Benutzers oder einer bestimmten Kalendergruppe abzurufen, einschließlich ICS-basierte Kalender. Sie können die ICS-URL in der Kalenderressource nicht speichern und nicht darauf zugreifen.
-* Sie haben auch die Möglichkeit zum [Auflisten der Ereignisse](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) eines ICS-basierten Kalenders.
+* [Das Auflisten der Kalender des Benutzers](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/api/user_list_calendars) ermöglicht Ihnen, die Eigenschaften **name**, **color** und **id** jedes [Kalenders](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/resources/calendar) in der Standardkalendergruppe des Benutzers oder einer bestimmten Kalendergruppe abzurufen, einschließlich ICS-basierte Kalender. Sie können die ICS-URL in der Kalenderressource nicht speichern und nicht darauf zugreifen.
+* Sie haben auch die Möglichkeit zum [Auflisten der Ereignisse](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/api/calendar_list_events) eines ICS-basierten Kalenders.
 
 ### <a name="accessing-a-shared-calendar"></a>Zugreifen auf einen freigegebenen Kalender
 
@@ -135,7 +134,7 @@ Derzeit werden nur persönliche Kontakten unterstützt. Organisationskontakte we
 
 In der `/v1.0`-Version enthält `GET /me/contactFolders` keinen Standardordner für Kontakte des Benutzers. 
 
-Es wird ein Update zur Verfügung gestellt. In der Zwischenzeit können Sie die folgende [list contacts](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts)-Abfrage und die **parentFolderId**-Eigenschaft als Problemumgehung verwenden, um die ID des Standardordners für Kontakte abzurufen:
+Es wird ein Update zur Verfügung gestellt. In der Zwischenzeit können Sie die folgende [list contacts](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/api/user_list_contacts)-Abfrage und die **parentFolderId**-Eigenschaft als Problemumgehung verwenden, um die ID des Standardordners für Kontakte abzurufen:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
@@ -143,7 +142,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
 
 In der obigen Abfrage gilt Folgendes:
 
-1. `/me/contacts?$top=1` ruft die Eigenschaften eines [Kontakts](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact) im Standardordner für Kontakte ab.
+1. `/me/contacts?$top=1` ruft die Eigenschaften eines [Kontakts](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/resources/contact) im Standardordner für Kontakte ab.
 2. Das Anfügen von `&$select=parentFolderId` gibt nur die **parentFolderId**-Eigenschaft des Kontakts zurück, also die ID des Standardordners für Kontakte.
 
 
@@ -307,7 +306,7 @@ In der Zwischenzeit können Sie die folgende Problemumgehung verwenden, um die E
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>Nur in Office 365-REST- oder Azure AD-Graph-APIs verfügbare Funktionen
 
-Einige Funktionen sind in Microsoft Graph noch nicht verfügbar. Wenn Sie die gesuchte Funktion nicht finden, können Sie die endpunktspezifischen [Office 365-REST-APIs](https://msdn.microsoft.com/en-us/office/office365/api/api-catalog) verwenden. Für Azure Active Directory finden Sie im Blogbeitrag [Microsoft Graph oder Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) Informationen über die Features, die nur über die Azure AD-Graph-API verfügbar sind.
+Einige Funktionen sind in Microsoft Graph noch nicht verfügbar. Wenn Sie die gesuchte Funktion nicht finden, können Sie die endpunktspezifischen [Office 365-REST-APIs](https://msdn.microsoft.com/de-DE/office/office365/api/api-catalog) verwenden. Für Azure Active Directory finden Sie im Blogbeitrag [Microsoft Graph oder Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) Informationen über die Features, die nur über die Azure AD-Graph-API verfügbar sind.
 
 ## <a name="feedback"></a>Feedback
 

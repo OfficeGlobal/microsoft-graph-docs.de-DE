@@ -4,13 +4,13 @@ Microsoft Graph macht differenzierte Berechtigungen verfügbar, die den Zugriff 
 ## <a name="delegated-permissions-application-permissions-and-effective-permissions"></a>Delegierte Berechtigungen, Anwendungsberechtigungen und effektive Berechtigungen
 Microsoft Graph verfügt über zwei Arten von Berechtigungen: **Delegierte Berechtigungen** und **Anwendungsberechtigungen**. 
 
-- **Delegierte Berechtigungen** werden von Apps verwendet, die mit angemeldetem Benutzer ausgeführt werden. Bei diesen Apps stimmt der Benutzer oder ein Administrator den von der App angeforderten Berechtigungen zu, und an die App wird die Berechtigung delegiert, als angemeldeter Benutzer zu agieren, wenn sie Aufrufe an Microsoft Graph sendet. Einigen delegierten Berechtigungen kann auch von Benutzern zugestimmt werden, die kein Administrator sind, aber einige höhere Rechte erfordern Administratorzustimmung.  
+- **Delegierte Berechtigungen** werden von Apps verwendet, die mit angemeldetem Benutzer ausgeführt werden. Bei diesen Apps stimmt der Benutzer oder ein Administrator den von der App angeforderten Berechtigungen zu, und an die App wird die Berechtigung delegiert, als angemeldeter Benutzer zu agieren, wenn sie Aufrufe an Microsoft Graph sendet. Einigen delegierten Berechtigungen kann auch von Benutzern zugestimmt werden, die kein Administrator sind, aber einige höhere Rechte erfordern [Administratorzustimmung](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes).  
 
-- **Anwendungsberechtigungen** werden von Apps verwendet, die keinen angemeldeten Benutzer erfordern, z. B. Apps, die als Hintergrunddienste oder Daemons ausgeführt werden.  Anwendungsberechtigungen kann nur von einem Administrator zugestimmt werden. 
+- **Anwendungsberechtigungen** werden von Apps verwendet, die keinen angemeldeten Benutzer erfordern, z. B. Apps, die als Hintergrunddienste oder Daemons ausgeführt werden.  Anwendungsberechtigungen kann nur [von einem Administrator zugestimmt werden](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
 
 _Effektive Berechtigungen_ sind die Berechtigungen, über die Ihre App verfügt, wenn sie Aufrufe an Microsoft Graph sendet. Es ist wichtig, den Unterschied zwischen den delegierten und Anwendungsberechtigungen zu verstehen, die Ihren Apps gewährt werden, und ihren effektiven Berechtigungen beim Senden von Aufrufen an Microsoft Graph.
 
-- Bei delegierten Berechtigungen sind die _effektiven Berechtigungen_ der App die Schnittmenge mit den geringsten Rechten aus den delegierten Berechtigungen, die der App (per Zustimmung) gewährt wurden und den Rechten des derzeit angemeldeten Benutzers. Ihre App kann nie mehr Rechte als der angemeldete Benutzer haben. In Organisationen werden die Rechte des angemeldeten Benutzers ggf. durch eine Richtlinie oder die Mitgliedschaft in einer oder mehreren Administratorrollen bestimmt. Weitere Informationen zu Administratorrollen finden Sie unter [Zuweisen von Administratorrollen in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).<br/><br/>Nehmen wir beispielsweise an, Ihrer App wurde die delegierte Berechtigung _User.ReadWrite.All_ gewährt. Diese Berechtigung gewährt Ihrer App nominell die Berechtigung zum Lesen und Aktualisieren des Profils aller Benutzer in einer Organisation. Wenn der angemeldete Benutzer ein globaler Administrator ist, kann Ihre App das Profil aller Benutzer in der Organisation aktualisieren. Wenn der angemeldete Benutzer jedoch kein Mitglied einer Administratorrolle ist, kann Ihre App nur das Profil des angemeldeten Benutzers aktualisieren. Die Profile anderer Benutzer in der Organisation können nicht von der App aktualisiert werden, da der Benutzer, in dessen Namen die App agieren darf, nicht über diese Rechte verfügt.
+- Bei delegierten Berechtigungen sind die _effektiven Berechtigungen_ der App die Schnittmenge mit den geringsten Rechten aus den delegierten Berechtigungen, die der App (per Zustimmung) gewährt wurden und den Rechten des derzeit angemeldeten Benutzers. Ihre App kann nie mehr Rechte als der angemeldete Benutzer haben. In Organisationen werden die Rechte des angemeldeten Benutzers ggf. durch eine Richtlinie oder die Mitgliedschaft in einer oder mehreren Administratorrollen bestimmt. Weitere Informationen zu Administratorrollen finden Sie unter [Zuweisen von Administratorrollen in Azure Active Directory](https://docs.microsoft.com/de-DE/azure/active-directory/active-directory-assign-admin-roles).<br/><br/>Nehmen wir beispielsweise an, Ihrer App wurde die delegierte Berechtigung _User.ReadWrite.All_ gewährt. Diese Berechtigung gewährt Ihrer App nominell die Berechtigung zum Lesen und Aktualisieren des Profils aller Benutzer in einer Organisation. Wenn der angemeldete Benutzer ein globaler Administrator ist, kann Ihre App das Profil aller Benutzer in der Organisation aktualisieren. Wenn der angemeldete Benutzer jedoch kein Mitglied einer Administratorrolle ist, kann Ihre App nur das Profil des angemeldeten Benutzers aktualisieren. Die Profile anderer Benutzer in der Organisation können nicht von der App aktualisiert werden, da der Benutzer, in dessen Namen die App agieren darf, nicht über diese Rechte verfügt.
   
 - Bei Anwendungsberechtigungen sind die _effektiven Berechtigungen_ der App sämtliche Rechte, die die Berechtigung impliziert. Eine App mit der Anwendungsberechtigung _User.ReadWrite.All_ kann beispielsweise das Profil aller Benutzer in der Organisation aktualisieren. 
 
@@ -204,7 +204,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Directory.Read.All_ |Verzeichnisdaten lesen | Ermöglicht der App, Daten im Verzeichnis Ihrer Organisation zu lesen, z. B. Benutzer, Gruppen und Apps. | Ja |
-| _Directory.ReadWrite.All_ |Verzeichnisdaten lesen und schreiben | Ermöglicht der App, Daten im Verzeichnis Ihrer Organisation ohne einen angemeldeten Benutzer zu lesen und zu schreiben, z. B. Benutzer und Gruppen. Ermöglicht der App nicht das Löschen von Benutzern oder Gruppen oder das Zurücksetzen von Benutzerkennwörtern. | Ja |
+| _Directory.ReadWrite.All_ |Schreib-/Lesezugriff auf Verzeichnisdaten | Ermöglicht der App, Daten im Verzeichnis Ihrer Organisation ohne einen angemeldeten Benutzer zu lesen und zu schreiben, z. B. Benutzer und Gruppen. Ermöglicht der App nicht das Löschen von Benutzern oder Gruppen oder das Zurücksetzen von Benutzerkennwörtern. | Ja |
 | _Directory.AccessAsUser.All_ |Als der angemeldete Benutzer auf das Verzeichnis zugreifen  | Ermöglicht der App den gleichen Zugriff auf Informationen im Verzeichnis wie dem angemeldeten Benutzer. | Ja |
 
 <br/>
@@ -254,6 +254,41 @@ Die Berechtigung _Directory.ReadWrite.All_ gewährt die folgenden Rechte:
 Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 
 ---
+
+## <a name="education-graph-permissions"></a>Education Graph-Berechtigungen
+
+#### <a name="delegated-permissions"></a>Delegierte Berechtigungen
+
+|Berechtigung |Anzeigezeichenfolge |Beschreibung | Administratorzustimmung erforderlich |
+|:--------- |:------------- |:---------- | :--------------------- |
+|EduAssignments.ReadBasic | Lesen von Arbeitsaufträgen von Benutzern ohne Noten | Ermöglicht der App, Arbeitsaufträge ohne Noten im Auftrag des Benutzers zu lesen. | Ja |
+|EduAssignments.ReadWriteBasic | Lesen und Schreiben von Arbeitsaufträgen von Benutzern ohne Noten | Ermöglicht der App, Arbeitsaufträge ohne Noten im Auftrag des Benutzers zu lesen und zu schreiben. | Ja |
+|EduAssignments.Read | Lesen der Ansicht von Arbeitsaufträgen von Benutzern und deren Noten | Ermöglicht der App, Arbeitsaufträge und die entsprechenden Noten im Auftrag des Benutzers zu lesen.| Ja |
+|EduAssignments.ReadWrite | Lesen und Schreiben der Ansicht von Arbeitsaufträgen von Benutzern und deren Noten | Ermöglicht der App, Arbeitsaufträge und die entsprechenden Noten im Auftrag des Benutzers zu lesen und zu schreiben.|Ja |
+|EduRostering.ReadBasic| Lesen einer Dienstplanansicht einer begrenzten Untermengen von Benutzern | Ermöglicht der App, eine begrenzte Untermenge der Daten aus der Struktur von Schulen und Klassen im Dienstplan einer Organisation sowie bildungsspezifische Informationen zu Benutzern im Auftrag des Benutzers zu lesen.  | Ja  |
+
+
+#### <a name="application-permissions"></a>Anwendungsberechtigungen
+
+| Berechtigung | Anzeigezeichenfolge | Beschreibung | Administratorzustimmung erforderlich |
+| :--------- | :------------- | :---------- | :--------------------- |
+|EduAssignments.ReadBasic.All| Lesen von Arbeitsaufträgen ohne Noten|Ermöglicht der App, Arbeitsaufträge ohne Noten für alle Benutzer zu lesen.| Ja |
+|EduAssignments.ReadWriteBasic.All | Lesen und Schreiben von Arbeitsaufträgen ohne Noten | Ermöglicht der App, Arbeitsaufträge ohne Noten für alle Benutzer zu lesen und zu schreiben.| Ja |
+|EduAssignments.Read.All| Lesen von Schulprojekten mit Noten | Ermöglicht der App, Arbeitsaufträge und deren Noten für alle Benutzer zu lesen. | Ja |
+|EduAssignments.ReadWrite.All | Lesen und Schreiben von Arbeitsaufträgen mit Noten | Ermöglicht der App,  Arbeitsaufträge und deren Noten für alle Benutzer zu lesen und zu schreiben. | Ja |
+|EduRostering.ReadBasic.All | Lesen einer begrenzten Untermenge des Dienstplans der Organisation. | Ermöglicht der App, eine begrenzte Untermenge der Struktur von Schulen und Klassen im Dienstplan einer Organisation sowie bildungsspezifische Informationen zu allen Benutzern zu lesen. | Ja |
+|EduRostering.Read.All | Lesen des Dienstplans der Organisation. | Ermöglicht der App, die Struktur von Schulen und Klassen im Dienstplan einer Organisation sowie bildungsspezifische Informationen zu allen Benutzern zu lesen. | Ja |
+|EduRostering.ReadWrite.All| Lesen und Schreiben des Dienstplans der Organisation. | Ermöglicht der App, die Struktur von Schulen und Klassen im Dienstplan einer Organisation sowie bildungsspezifische Informationen zu allen Benutzern zu lesen und zu schreiben.  | Ja |
+
+### <a name="example-usage"></a>Verwendungsbeispiel
+
+#### <a name="delegated"></a>Delegiert
+
+* _EduAssignments.Read_: Abrufen der Arbeitsauftragsinformationen des angemeldeten Kursteilnehmers (`GET /education/classes/<id>/assignments/<id>`)
+* _EduAssignments.ReadWriteBasic_: Übermitteln des Arbeitsauftrags des angemeldeten Kursteilnehmers (`GET /education/classes/<id>/assignments/<id>submit`)
+* _EduRoster.ReadBasic_: Stunden, an denen ein angemeldeter Benutzer teilnimmt oder unterrichtet (`GET /education/classes/<id>/members`)
+
+Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 
 ## <a name="files-permissions"></a>Dateiberechtigungen
 
@@ -440,7 +475,7 @@ Mit der Berechtigung _Mail.Send_ oder _Mail.Send.Shared_ kann eine App E-Mails s
 #### <a name="delegated"></a>Delegiert
 
 * _Mail.Read_: Nachrichten im Posteingang des Benutzers sortiert nach `receivedDateTime` auflisten (`GET /me/mailfolders/inbox/messages?$orderby=receivedDateTime DESC`).
-* _Mail.Read.Shared_: Alle Nachrichten mit Anlagen im Posteingang eines Benutzers suchen, der seinen Posteingang für den angemeldeten Benutzer freigegeben hat (`GET /users{id | userPrincipalName}/mailfolders/inbox/messages?$filter=hasAttachments eq true`).
+* _Mail.Read.Shared_: Aller Nachrichten mit Anlagen im Posteingang eines Benutzers suchen, der seinen Posteingang für den angemeldeten Benutzer freigegeben hat (`GET /users{id | userPrincipalName}/mailfolders/inbox/messages?$filter=hasAttachments eq true`).
 * _Mail.ReadWrite_: Eine Nachricht als gelesen markieren (`PATCH /me/messages/{id}`).
 * _Mail.Send_: Eine Nachricht senden (`POST /me/sendmail`).
 * _MailboxSettings.ReadWrite_: Die automatische Antwort des Benutzers aktualisieren (`PATCH /me/mailboxSettings`).

@@ -27,7 +27,7 @@ Stellt eine Excel-Tabelle dar.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|int|Gibt einen Wert zurück, der das Arbeitsblatt in einer bestimmten Arbeitsmappe eindeutig identifiziert. Der Wert des Bezeichners bleibt unverändert, auch wenn die Tabelle umbenannt wird. Schreibgeschützt.|
+|id|string|Gibt einen Wert zurück, der das Arbeitsblatt in einer bestimmten Arbeitsmappe eindeutig identifiziert. Der Wert des Bezeichners bleibt unverändert, auch wenn die Tabelle umbenannt wird. Diese Eigenschaft sollte als nicht transparenter Zeichenfolgenwert interpretiert werden und sollte nicht in einen anderen Typ ausgewertet werden. Schreibgeschützt.|
 |name|string|Der Name der Tabelle.|
 |showHeaders|boolean|Gibt an, ob die Kopfzeile sichtbar oder nicht sichtbar ist. Dieser Wert kann festgelegt werden, um die Kopfzeile anzuzeigen, oder sie zu entfernen.|
 |showTotals|boolean|Gibt an, ob die Ergebniszeile sichtbar ist oder nicht. Dieser Wert kann so festgelegt werden, dass die Ergebniszeile angezeigt oder ausgeblendet wird.|
@@ -42,7 +42,7 @@ Stellt eine Excel-Tabelle dar.
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |columns|[TableColumn](tablecolumn.md)-Sammlung|Stellt eine Auflistung aller Spalten in der Tabelle dar. Schreibgeschützt.|
-|rows|[TableRow](tablerow.md)-Sammlung|Stellt eine Auflistung aller Zeilen in der Tabelle dar. Schreibgeschützt.|
+|Rows|[TableRow](tablerow.md)-Sammlung|Stellt eine Auflistung aller Zeilen in der Tabelle dar. Schreibgeschützt.|
 |sort|[TableSort](tablesort.md)|Stellt die Sortierung für die Tabelle dar. Schreibgeschützt.|
 |Arbeitsblatt|[Worksheet](worksheet.md)|Das Arbeitsblatt, das die aktuelle Tabelle enthält. Schreibgeschützt.|
 

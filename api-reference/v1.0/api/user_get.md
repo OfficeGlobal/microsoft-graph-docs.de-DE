@@ -14,12 +14,20 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Anwendung | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
+Für einen bestimmten Benutzer:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
+
+Für den angemeldeten Benutzer:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me
+```
+
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 
 Standardmäßig wird nur ein begrenzter Satz von Eigenschaften zurückgegeben (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
 
@@ -43,6 +51,41 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein 
 ### <a name="example-1-standard-users-request"></a>Beispiel 1: Standard-Benutzeranforderung
 
 Standardmäßig wird nur ein begrenzter Satz von Eigenschaften zurückgegeben (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). Dieses Beispiel zeigt die standardmäßige Anforderung und Antwort. 
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
+```
+
+##### <a name="response"></a>Antwort
+
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 491
+
+{
+  "businessPhones": [
+       "businessPhones-value"
+   ],
+   "displayName": "displayName-value",
+   "givenName": "givenName-value",
+   "jobTitle": "jobTitle-value",
+   "mail": "mail-value",
+   "mobilePhone": "mobilePhone-value",
+   "officeLocation": "officeLocation-value",
+   "preferredLanguage": "preferredLanguage-value",
+   "surname": "surname-value",
+   "userPrincipalName": "userPrincipalName-value",
+   "id": "id-value"
+}
+```
+
+
+### <a name="example-2-signed-in-user-request"></a>Beispiel 2: Anforderung des angemeldeten Benutzers
+
+Sie können die Benutzerinformationen des angemeldeten Benutzers abrufen, indem Sie `/users/{id | userPrincipalName}` durch `/me` ersetzen.
 
 ##### <a name="request"></a>Anforderung
 
@@ -82,24 +125,17 @@ Content-length: 491
 }
 ```
 
-### <a name="example-2-users-request-using-select"></a>Beispiel 2: Benutzeranforderung mit $select
+### <a name="example-3-users-request-using-select"></a>Beispiel 3: Benutzeranforderung mit $select
 
 Wenn Sie einen anderen Eigenschaftensatz benötigen, können Sie den OData-Abfrageparameter `$select` verwenden. Um zum Beispiel _displayName_, _givenName_ und _postalCode_ zurückzugeben, fügen Sie Folgendes zur Abfrage hinzu: `$select=displayName,givenName,postalCode`.
 
 ##### <a name="request"></a>Anforderung
-<!-- {
-  "blockType": "request",
-  "name": "get_user"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me?$select=displayName,givenName,postalCode
+GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode
 ```
 ##### <a name="response"></a>Antwort
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
-} -->
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
