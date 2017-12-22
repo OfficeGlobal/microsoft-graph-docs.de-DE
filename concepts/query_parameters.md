@@ -6,16 +6,16 @@ Microsoft Graph stellt optionale Abfrageparameter bereit, die Sie zum Festlegen 
 
 | Name                     | Beschreibung | Beispiel
 |:-------------------------|:------------|:---------|
-| [$count](#count)         | Dient zum Abrufen der Gesamtzahl übereinstimmender Ressourcen. | [`/me/messages?$top=2&$count=true`][count-example]
-| [$expand](#expand)       | Dient zum Abrufen von verwandten Ressourcen.|[`/groups?$expand=members`][expand-example]
-| [$filter](#filter)       | Dient zum Filtern von Ergebnissen (Zeilen).|[`/users?$filter=startswith(givenName,'J')`][filter-example]
-| [$format](#format)       | Dient zum Zurückgeben der Ergebnisse im angegebenen Medienformat.|[`/users?$format=json`][format-example]
-| [$orderby](#orderby)     | Dient zum Sortieren von Ergebnissen.|[`/users?$orderby=displayName desc`][orderby-example]
-| [$search](#search)       | Dient zum Zurückgeben von Ergebnissen basierend auf Suchkriterien. Wird derzeit nicht in `messages`- und `person`-Sammlungen unterstützt.|[`/me/messages?$search=pizza`][search-example]
-| [$select](#select)       | Dient zum Filtern von Eigenschaften (Spalten).|[`/users?$select=givenName,surname`][select-example]
-| [$skip](#skip)           | Dient zum Indizieren in einem Resultset. Wird auch von einigen APIs zum Implementieren von Paging verwendet und kann zusammen mit `$top` zum manuellen Auslagern von Ergebnissen verwendet werden. | [`/me/messages?$skip=11`][skip-example]
-| [$skipToken](#skiptoken) | Dient zum Abrufen der nächsten Seite von Ergebnissen aus Resultsets, die mehrere Seiten umfassen. (Einige APIs verwenden stattdessen `$skip`.) | `/users?$skiptoken=X%274453707402000100000017...`|
-| [$top](#top)             | Dient zum Festlegen der Seitengröße von Ergebnissen. |[`/users?$top=2`][top-example]
+| [$count](#count-parameter)         | Dient zum Abrufen der Gesamtzahl übereinstimmender Ressourcen. | [`/me/messages?$top=2&$count=true`][count-example]
+| [$expand](#expand-parameter)       | Dient zum Abrufen von verwandten Ressourcen.|[`/groups?$expand=members`][expand-example]
+| [$filter](#filter-parameter)       | Dient zum Filtern von Ergebnissen (Zeilen).|[`/users?$filter=startswith(givenName,'J')`][filter-example]
+| [$format](#format-parameter)       | Dient zum Zurückgeben der Ergebnisse im angegebenen Medienformat.|[`/users?$format=json`][format-example]
+| [$orderby](#orderby-parameter)     | Dient zum Sortieren von Ergebnissen.|[`/users?$orderby=displayName desc`][orderby-example]
+| [$search](#search-parameter)       | Dient zum Zurückgeben von Ergebnissen basierend auf Suchkriterien. Wird derzeit nicht in `messages`- und `person`-Sammlungen unterstützt.|[`/me/messages?$search=pizza`][search-example]
+| [$select](#select-parameter)       | Dient zum Filtern von Eigenschaften (Spalten).|[`/users?$select=givenName,surname`][select-example]
+| [$skip](#skip-parameter)           | Dient zum Indizieren in einem Resultset. Wird auch von einigen APIs zum Implementieren von Paging verwendet und kann zusammen mit `$top` zum manuellen Auslagern von Ergebnissen verwendet werden. | [`/me/messages?$skip=11`][skip-example]
+| [$skipToken](#skiptoken-parameter) | Dient zum Abrufen der nächsten Seite von Ergebnissen aus Resultsets, die mehrere Seiten umfassen. (Einige APIs verwenden stattdessen `$skip`.) | `/users?$skiptoken=X%274453707402000100000017...`|
+| [$top](#top-parameter)             | Dient zum Festlegen der Seitengröße von Ergebnissen. |[`/users?$top=2`][top-example]
 
 
 
@@ -39,7 +39,7 @@ Eine korrekt codierte URL sieht folgendermaßen aus:
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
 
-## <a name="count"></a>count
+## <a name="count-parameter"></a>count-Parameter
 
 Verwenden Sie `$count` als Abfrageparameter, um die Gesamtzahl der Elemente in einer Sammlung zusammen mit der Seite der Datenwerte anzugeben, die von Microsoft Graph zurückgegeben werden. 
 
@@ -54,7 +54,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 >**Hinweis:**`$count` wird für Sammlungen von Ressourcen, die von [`directoryObject`](../api-reference/v1.0/resources/directoryobject.md) abgeleitet werden, wie Sammlungen von [Benutzern](../api-reference/v1.0/resources/user.md) oder [Gruppen](../api-reference/v1.0/resources/group.md), nicht unterstützt.
 
-## <a name="expand"></a>expand
+## <a name="expand-parameter"></a>expand-Parameter
 
 Viele Microsoft Graph-Ressourcen machen sowohl deklarierte Eigenschaften der Ressource als auch deren Beziehungen zu anderen Ressourcen verfügbar. Diese Beziehungen werden auch als Verweiseigenschaften oder Navigationseigenschaften bezeichnet und können auf eine einzelne Ressource oder auf eine Sammlung von Ressourcen verweisen. Beispielsweise werden die E-Mail-Ordner, die Vorgesetzten und die direkten Mitarbeiter eines Benutzers alle als Beziehungen verfügbar gemacht. 
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 
 [Im Graph-Tester ausprobieren](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
 
-Bei einigen Ressourcensammlungen können Sie auch die Eigenschaften angeben, die in den erweiterten Ressourcen zurückgegeben werden sollen, indem Sie einen `$select`-Parameter hinzufügen. Im folgenden Beispiel wird die gleiche Abfrage wie im vorherigen Beispiel ausgeführt, hier wird jedoch eine [`$select`](#select)-Anweisung verwendet, um die für die erweiterten untergeordneten Element zurückgegebenen Eigenschaften auf die Eigenschaften `id` und `name` zu beschränken.
+Bei einigen Ressourcensammlungen können Sie auch die Eigenschaften angeben, die in den erweiterten Ressourcen zurückgegeben werden sollen, indem Sie einen `$select`-Parameter hinzufügen. Im folgenden Beispiel wird die gleiche Abfrage wie im vorherigen Beispiel ausgeführt, hier wird jedoch eine [`$select`](#select-parameter)-Anweisung verwendet, um die für die erweiterten untergeordneten Element zurückgegebenen Eigenschaften auf die Eigenschaften `id` und `name` zu beschränken.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 > 
 > Bei Azure AD-Ressourcen, die von [directoryObject](../api-reference/v1.0/resources/directoryobject.md) abgeleitet werden, z. B. [Benutzer](../api-reference/v1.0/resources/user.md) und [Gruppe](../api-reference/v1.0/resources/group.md), wird `$expand` nur für `beta` unterstützt, und es werden maximal 20 Elemente für die erweiterte Beziehung zurückgegeben.
 
-## <a name="filter"></a>Filter
+## <a name="filter-parameter"></a>filter-Parameter
 
 Verwenden Sie den `$filter`-Abfrageparameter, um nur eine Teilmenge einer Sammlung abzurufen. 
 
@@ -120,7 +120,7 @@ Die folgende Tabelle enthält einige Beispiele zur Verwendung des `$filter`-Abfr
 
 > **Hinweis:** Die folgenden `$filter`-Operatoren werden für Azure AD-Ressourcen nicht unterstützt: `ne`, `gt`, `ge`, `lt`, `le` und `not`. Der `contains`-Zeichenfolgenoperator wird derzeit nicht für Microsoft Graph-Ressourcen unterstützt.
 
-## <a name="format"></a>Format
+## <a name="format-parameter"></a>format-Parameter
 
 Verwenden Sie zum Festlegen des Medienformats der von Microsoft Graph zurückgegebenen Elemente den `$format`-Abfrageparameter.
 
@@ -134,7 +134,7 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 
 > **Hinweis:** Der `$format`-Abfrageparameter unterstützt eine Reihe von Formaten (z. B. Atom, XML und JSON), die Ergebnisse werden aber möglicherweise nicht in allen Formaten zurückgegeben.
 
-## <a name="orderby"></a>orderby
+## <a name="orderby-parameter"></a>orderby-Parameter
 
 Verwenden Sie zum Festlegen der Sortierreihenfolge der von Microsoft Graph zurückgegebenen Elemente den `$orderby`-Abfrageparameter.
 
@@ -165,11 +165,11 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
  > **Hinweis:** Bei Azure AD-Ressourcen, die von [directoryObject](../api-reference/v1.0/resources/directoryobject.md) abgeleitet werden, wie z. B. [Benutzer](../api-reference/v1.0/resources/user.md) und [Gruppe](../api-reference/v1.0/resources/group.md), kann `$orderby` nicht mit `$filter`-Ausdrücken verwendet werden. 
 
-## <a name="search"></a>Suche 
+## <a name="search-parameter"></a>search-Parameter
 
 Um die Ergebnisse einer Anforderung so zu beschränken, dass sie einem Suchkriterium entsprechen, verwenden Sie den `$search`-Abfrageparameter.
 
-> **Hinweis:** Sie können derzeit **nur** [Nachrichten](../api-reference/v1.0/resources/message.md)- und [Personen](../api-reference/v1.0/resources/person.md)-Sammlungen suchen. Eine `$search`-Anforderung gibt bis zu 250 Ergebnisse zurück. Sie können [`$filter`](#filter) oder [`$orderby`](#orderby) nicht in einer Suchabfrage verwenden.
+> **Hinweis:** Sie können derzeit **nur** [Nachrichten](../api-reference/v1.0/resources/message.md)- und [Personen](../api-reference/v1.0/resources/person.md)-Sammlungen suchen. Eine `$search`-Anforderung gibt bis zu 250 Ergebnisse zurück. Sie können [`$filter`](#filter-parameter) oder [`$orderby`](#orderby-parameter) nicht in einer Suchabfrage verwenden.
 
 ### <a name="using-search-on-message-collections"></a>Verwenden von $search in `message`-Sammlungen
 
@@ -237,7 +237,7 @@ Bei dieser Anforderung werden im Wesentlichen zwei Suchvorgänge ausgeführt: ei
 
 Weitere Informationen zur Personen-API finden Sie unter [Abrufen von Informationen über die entsprechenden Personen](./people_example.md).  
 
-## <a name="select"></a>select
+## <a name="select-parameter"></a>select-Parameter
 
 Verwenden Sie den `$select`-Abfrageparameter, um eine Reihe von Eigenschaften zurückzugeben, die sich von den Standardeigenschaften für eine einzelne Ressource oder eine Sammlung von Ressourcen unterscheidet. Mit $select können Sie eine Teilmenge oder eine Obermenge der Standardeigenschaften angeben.
 
@@ -253,7 +253,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 >
 > In `v1.0` geben einige Azure AD-Ressourcen, die von [directoryObject](../api-reference/v1.0/resources/directoryobject.md) abgeleitet werden, z.B. [Benutzer](../api-reference/v1.0/resources/user.md) und [Gruppe](../api-reference/v1.0/resources/group.md) eine begrenzte, standardmäßige Untermenge von Eigenschaften für Lesevorgänge zurück. Für diese Ressourcen müssen Sie `$select` verwenden, um Eigenschaften außerhalb des Standardsatzes zurückzugeben.  
 
-## <a name="skip"></a>skip
+## <a name="skip-parameter"></a>skip-Parameter
 
 Verwenden Sie den `$skip`-Abfrageparameter zum Festlegen der Anzahl der Elemente, die am Anfang einer Sammlung übersprungen werden sollen. Die folgende Anforderung gibt beispielsweise Ereignisse für den Benutzer sortiert nach Erstellungsdatum zurück, beginnend mit dem 21. Ereignis in der Sammlung:
 
@@ -264,12 +264,12 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 > **Hinweis:** Einige Microsoft Graph-APIs, z. B. Outlook-Mail und Outlook-Kalender (`message`, `event` und `calendar`), verwenden `$skip` zur Implementierung von Paging. Wenn Ergebnisse einer Abfrage mehrere Seiten umfassen, geben diese APIs eine `@odata:nextLink`-Eigenschaft mit einer URL zurück, die einen `$skip`-Parameter enthält. Sie können diese URL verwenden, um die nächste Seite mit Ergebnissen zurückzugeben. Weitere Informationen finden Sie unter [Paging](./paging.md).
 
-## <a name="skiptoken"></a>skipToken
+## <a name="skiptoken-parameter"></a>skipToken-Parameter
 
-Einige Abfragen geben mehrere Seiten von Daten zurück, entweder aufgrund von serverseitigem Paging oder aufgrund der Verwendung des [`$top`](#top)-Parameters, um die Seitengröße der Antwort zu begrenzen. Viele Microsoft Graph-APIs verwenden den `skipToken`-Abfrageparameter, um auf nachfolgende Seiten des Ergebnisses zu verweisen. Der `$skiptoken`-Parameter enthält ein undurchsichtiges Token, das auf die nächste Seite von Ergebnissen verweist und in der URL zurückgegeben wird, die in der `@odata.nextLink`-Eigenschaft in der Antwort bereitgestellt wird. Weitere Informationen finden Sie unter [Paging](./paging.md).
+Einige Abfragen geben mehrere Seiten von Daten zurück, entweder aufgrund von serverseitigem Paging oder aufgrund der Verwendung des [`$top`](#top-parameter)-Parameters, um die Seitengröße der Antwort zu begrenzen. Viele Microsoft Graph-APIs verwenden den `skipToken`-Abfrageparameter, um auf nachfolgende Seiten des Ergebnisses zu verweisen. Der `$skiptoken`-Parameter enthält ein undurchsichtiges Token, das auf die nächste Seite von Ergebnissen verweist und in der URL zurückgegeben wird, die in der `@odata.nextLink`-Eigenschaft in der Antwort bereitgestellt wird. Weitere Informationen finden Sie unter [Paging](./paging.md).
 
 
-## <a name="top"></a>top
+## <a name="top-parameter"></a>top-Parameter
 
 Verwenden Sie den `$top`-Abfrageparameter, um die Seitengröße des Resultsets anzugeben. 
 
