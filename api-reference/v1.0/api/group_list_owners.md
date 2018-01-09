@@ -1,6 +1,5 @@
 # <a name="list-owners"></a>Besitzer auflisten
-
-Dient zum Abrufen einer Liste der Besitzer der Gruppe. Bei den Besitzern handelt es sich um eine Reihe von Benutzern ohne Administratorrechte, die das Gruppenobjekt ändern dürfen. 
+Dient zum Abrufen einer Liste der Besitzer der Gruppe. Bei den Besitzern handelt es sich um eine Reihe von Benutzern, die keine Administratoren sind, die das Gruppenobjekt ändern können. 
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
@@ -16,8 +15,10 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ```http
 GET /groups/{id}/owners
 ```
+
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](../../../concepts/query_parameters.md) zur Anpassung der Antwort.
+
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
@@ -27,10 +28,10 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [user](../resources/user.md)-Objekten im Antworttext zurückgegeben.
+
 ## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
+#### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
@@ -39,8 +40,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/owners
 ```
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+
+#### <a name="response"></a>Antwort
+Nachfolgend sehen Sie ein Beispiel der Antwort.
+>**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,5 +1,5 @@
 # <a name="list-conversations"></a>Unterhaltungen auflisten
-Mit dieser API können Sie eine Liste aller Unterhaltungen in einer Gruppe abrufen.
+Mit dieser API können Sie eine Liste aller [Unterhaltungen](../resources/conversation.md) in einer Gruppe abrufen.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
@@ -17,7 +17,7 @@ GET /groups/{id}/conversations
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](../../../concepts/query_parameters.md) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
@@ -28,7 +28,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [Conversation](../resources/conversation.md)-Objekten im Antworttext zurückgegeben.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [conversation](../resources/conversation.md)-Objekten im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 #### <a name="request"></a>Anforderung

@@ -15,6 +15,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ```http
 POST /groups/{id}/getMemberObjects
 ```
+
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
@@ -31,8 +32,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Zeichenfolgensammlung im Antworttext zurückgegeben, der die IDs der Gruppen enthält, von denen die Gruppe ein Mitglied ist.
 
 ## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-##### <a name="request"></a>Anforderung
+#### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
@@ -48,8 +48,9 @@ Content-length: 33
 }
 ```
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+#### <a name="response"></a>Antwort
+Nachfolgend sehen Sie ein Beispiel der Antwort.
+>**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "response",
   "truncated": true,

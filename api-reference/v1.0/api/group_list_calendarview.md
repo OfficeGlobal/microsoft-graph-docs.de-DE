@@ -1,6 +1,6 @@
 # <a name="list-calendarview"></a>calendarView auflisten
-
 Mit dieser API können Sie Vorkommen, Ausnahmen und einzelnen Instanzen von Ereignissen in einer durch einen Zeitbereich definierten Kalenderansicht aus dem Standardkalender einer Gruppe abrufen.
+
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -8,15 +8,15 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | Group.Read.All, Group.ReadWrite.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Group.Read.All, Group.ReadWrite.All |
+|Anwendung | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
-## <a name="query-parameters"></a>Abfrageparameter
 
+## <a name="query-parameters"></a>Abfrageparameter
 Stellen Sie in der URL der Anforderung die folgenden Funktionsparameter mit Werten bereit.
 
 | Parameter    | Typ   |Beschreibung|
@@ -24,7 +24,8 @@ Stellen Sie in der URL der Anforderung die folgenden Funktionsparameter mit Wert
 |startDateTime|String|Startdatum und -uhrzeit des Zeitraums, dargestellt im ISO 8601-Format. Beispielsweise „2015-11-08T19:00:00.0000000“.|
 |endDateTime|String|Enddatum und -uhrzeit des Zeitraums, dargestellt im ISO 8601-Format. Z. B. „2015-11-08T20:00:00.0000000“.|
 
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](../../../concepts/query_parameters.md) zur Anpassung der Antwort.
+
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
@@ -35,10 +36,10 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [Event](../resources/event.md)-Objekten im Antworttext zurückgegeben.
+
 ## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
+#### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
@@ -47,8 +48,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/calendarView
 ```
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+
+#### <a name="response"></a>Antwort
+Nachfolgend sehen Sie ein Beispiel der Antwort.
+>**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "response",
   "truncated": true,

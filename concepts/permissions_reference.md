@@ -4,13 +4,13 @@ Microsoft Graph macht differenzierte Berechtigungen verfügbar, die den Zugriff 
 ## <a name="delegated-permissions-application-permissions-and-effective-permissions"></a>Delegierte Berechtigungen, Anwendungsberechtigungen und effektive Berechtigungen
 Microsoft Graph verfügt über zwei Arten von Berechtigungen: **Delegierte Berechtigungen** und **Anwendungsberechtigungen**. 
 
-- **Delegierte Berechtigungen** werden von Apps verwendet, die mit angemeldetem Benutzer ausgeführt werden. Bei diesen Apps stimmt der Benutzer oder ein Administrator den von der App angeforderten Berechtigungen zu, und an die App wird die Berechtigung delegiert, als angemeldeter Benutzer zu agieren, wenn sie Aufrufe an Microsoft Graph sendet. Einigen delegierten Berechtigungen kann auch von Benutzern zugestimmt werden, die kein Administrator sind, aber einige höhere Rechte erfordern [Administratorzustimmung](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes).  
+- **Delegierte Berechtigungen** werden von Apps verwendet, die mit angemeldetem Benutzer ausgeführt werden. Bei diesen Apps stimmt der Benutzer oder ein Administrator den von der App angeforderten Berechtigungen zu, und an die App wird die Berechtigung delegiert, als angemeldeter Benutzer zu agieren, wenn sie Aufrufe an Microsoft Graph sendet. Einigen delegierten Berechtigungen kann auch von Benutzern zugestimmt werden, die kein Administrator sind, aber einige höhere Rechte erfordern [Administratorzustimmung](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes).  
 
-- **Anwendungsberechtigungen** werden von Apps verwendet, die keinen angemeldeten Benutzer erfordern, z. B. Apps, die als Hintergrunddienste oder Daemons ausgeführt werden.  Anwendungsberechtigungen kann nur [von einem Administrator zugestimmt werden](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
+- **Anwendungsberechtigungen** werden von Apps verwendet, die keinen angemeldeten Benutzer erfordern, z. B. Apps, die als Hintergrunddienste oder Daemons ausgeführt werden.  Anwendungsberechtigungen kann nur [von einem Administrator zugestimmt werden](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
 
 _Effektive Berechtigungen_ sind die Berechtigungen, über die Ihre App verfügt, wenn sie Aufrufe an Microsoft Graph sendet. Es ist wichtig, den Unterschied zwischen den delegierten und Anwendungsberechtigungen zu verstehen, die Ihren Apps gewährt werden, und ihren effektiven Berechtigungen beim Senden von Aufrufen an Microsoft Graph.
 
-- Bei delegierten Berechtigungen sind die _effektiven Berechtigungen_ der App die Schnittmenge mit den geringsten Rechten aus den delegierten Berechtigungen, die der App (per Zustimmung) gewährt wurden und den Rechten des derzeit angemeldeten Benutzers. Ihre App kann nie mehr Rechte als der angemeldete Benutzer haben. In Organisationen werden die Rechte des angemeldeten Benutzers ggf. durch eine Richtlinie oder die Mitgliedschaft in einer oder mehreren Administratorrollen bestimmt. Weitere Informationen zu Administratorrollen finden Sie unter [Zuweisen von Administratorrollen in Azure Active Directory](https://docs.microsoft.com/de-DE/azure/active-directory/active-directory-assign-admin-roles).<br/><br/>Nehmen wir beispielsweise an, Ihrer App wurde die delegierte Berechtigung _User.ReadWrite.All_ gewährt. Diese Berechtigung gewährt Ihrer App nominell die Berechtigung zum Lesen und Aktualisieren des Profils aller Benutzer in einer Organisation. Wenn der angemeldete Benutzer ein globaler Administrator ist, kann Ihre App das Profil aller Benutzer in der Organisation aktualisieren. Wenn der angemeldete Benutzer jedoch kein Mitglied einer Administratorrolle ist, kann Ihre App nur das Profil des angemeldeten Benutzers aktualisieren. Die Profile anderer Benutzer in der Organisation können nicht von der App aktualisiert werden, da der Benutzer, in dessen Namen die App agieren darf, nicht über diese Rechte verfügt.
+- Bei delegierten Berechtigungen sind die _effektiven Berechtigungen_ der App die Schnittmenge mit den geringsten Rechten aus den delegierten Berechtigungen, die der App (per Zustimmung) gewährt wurden und den Rechten des derzeit angemeldeten Benutzers. Ihre App kann nie mehr Rechte als der angemeldete Benutzer haben. In Organisationen werden die Rechte des angemeldeten Benutzers ggf. durch eine Richtlinie oder die Mitgliedschaft in einer oder mehreren Administratorrollen bestimmt. Weitere Informationen zu Administratorrollen finden Sie unter [Zuweisen von Administratorrollen in Azure Active Directory]((https://docs.microsoft.com/de-DE/azure/active-directory/active-directory-assign-admin-roles)).<br/><br/>Nehmen wir beispielsweise an, Ihrer App wurde die delegierte Berechtigung _User.ReadWrite.All_ gewährt. Diese Berechtigung gewährt Ihrer App nominell die Berechtigung zum Lesen und Aktualisieren des Profils aller Benutzer in einer Organisation. Wenn der angemeldete Benutzer ein globaler Administrator ist, kann Ihre App das Profil aller Benutzer in der Organisation aktualisieren. Wenn der angemeldete Benutzer jedoch kein Mitglied einer Administratorrolle ist, kann Ihre App nur das Profil des angemeldeten Benutzers aktualisieren. Die Profile anderer Benutzer in der Organisation können nicht von der App aktualisiert werden, da der Benutzer, in dessen Namen die App agieren darf, nicht über diese Rechte verfügt.
   
 - Bei Anwendungsberechtigungen sind die _effektiven Berechtigungen_ der App sämtliche Rechte, die die Berechtigung impliziert. Eine App mit der Anwendungsberechtigung _User.ReadWrite.All_ kann beispielsweise das Profil aller Benutzer in der Organisation aktualisieren. 
 
@@ -255,12 +255,14 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 ---
 
-## <a name="education-graph-permissions"></a>Education Graph-Berechtigungen
+## <a name="education-permissions"></a>Bildungs-Berechtigungen
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
 |Berechtigung |Anzeigezeichenfolge |Beschreibung | Administratorzustimmung erforderlich |
 |:--------- |:------------- |:---------- | :--------------------- |
+|EduAdministration.Read | Bildungs-App-Einstellungen lesen |  Erlaubt es der App, Bildungs-App-Einstellungen im Auftrag des Benutzers zu lesen. | Ja |
+|EduAdministration.ReadWrite | Bildungs-App-Einstellungen verwalten | Erlaubt es der App, Bildungs-App-Einstellungen im Auftrag des Benutzers zu verwalten. | Ja |
 |EduAssignments.ReadBasic | Lesen von Arbeitsaufträgen von Benutzern ohne Noten | Ermöglicht der App, Arbeitsaufträge ohne Noten im Auftrag des Benutzers zu lesen. | Ja |
 |EduAssignments.ReadWriteBasic | Lesen und Schreiben von Arbeitsaufträgen von Benutzern ohne Noten | Ermöglicht der App, Arbeitsaufträge ohne Noten im Auftrag des Benutzers zu lesen und zu schreiben. | Ja |
 |EduAssignments.Read | Lesen der Ansicht von Arbeitsaufträgen von Benutzern und deren Noten | Ermöglicht der App, Arbeitsaufträge und die entsprechenden Noten im Auftrag des Benutzers zu lesen.| Ja |
@@ -315,9 +317,9 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 Die delegierten Berechtigungen „Files.Read“, „Files.ReadWrite“, „Files.Read.All“ und „Files.ReadWrite.All“ sind sowohl für persönliche Microsoft-Konten als auch Geschäfts-, Schul- oder Unikonten gültig. Beachten Sie, dass bei persönlichen Konten „Files.Read“ und „Files.ReadWrite“ auch Zugriff auf Dateien gewähren, die für den angemeldeten Benutzer freigegeben sind. 
 
-Die delegierten Berechtigungen „Files.Read.Selected“ und „Files.ReadWrite.Selected“ sind nur für Geschäfts-, Schul- oder Unikonten gültig und werden nur für Arbeit mit [Office 365-Dateihandlern (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps) bereitgestellt. Sie dürfen nicht verwendet werden, um Microsoft Graph-APIs direkt aufzurufen. 
+Die delegierten Berechtigungen „Files.Read.Selected“ und „Files.ReadWrite.Selected“ sind nur für Geschäfts-, Schul- oder Unikonten gültig und werden nur für Arbeit mit [Office 365-Dateihandlern (v1.0)]((https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps)) bereitgestellt. Sie dürfen nicht verwendet werden, um Microsoft Graph-APIs direkt aufzurufen. 
 
-Die delegierte Berechtigung „Files.ReadWrite.AppFolder“ ist nur für persönliche Konten gültig und wird zum Zugreifen auf den [speziellen Anwendungsstammordner](https://dev.onedrive.com/misc/appfolder.htm) mit der Microsoft Graph-API [Speziellen Ordner abrufen](../api-reference/v1.0/api/drive_get_specialfolder.md) für OneDrive verwendet.
+Die delegierte Berechtigung „Files.ReadWrite.AppFolder“ ist nur für persönliche Konten gültig und wird zum Zugreifen auf den [speziellen Anwendungsstammordner]((https://dev.onedrive.com/misc/appfolder.htm)) mit der Microsoft Graph-API [Speziellen Ordner abrufen](../api-reference/v1.0/api/drive_get_specialfolder.md) für OneDrive verwendet.
 
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
@@ -397,7 +399,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 ### <a name="remarks"></a>HinwBemerkungeneise
 
-_IdentityRiskEvent.Read.All_ gilt nur für Geschäfts-, Schul- oder Unikonten. Damit eine App mit delegierten Berechtigungen Informationen zu Identitätsrisiken lesen kann, muss der angemeldete Benutzer ein Mitglied einer der folgenden Administratorrollen sein: Globaler Administrator, Sicherheitsadministrator oder Benutzer mit Leseberechtigung für Sicherheitsfunktionen Weitere Informationen zu Administratorrollen finden Sie unter [Zuweisen von Administratorrollen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+_IdentityRiskEvent.Read.All_ gilt nur für Geschäfts-, Schul- oder Unikonten. Damit eine App mit delegierten Berechtigungen Informationen zu Identitätsrisiken lesen kann, muss der angemeldete Benutzer ein Mitglied einer der folgenden Administratorrollen sein: Globaler Administrator, Sicherheitsadministrator oder Benutzer mit Leseberechtigung für Sicherheitsfunktionen Weitere Informationen zu Administratorrollen finden Sie unter [Zuweisen von Administratorrollen in Azure Active Directory]((https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)).
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
 
@@ -423,7 +425,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 ### <a name="remarks"></a>Hinweise
 
-_IdentityProvider.Read.All_ und _IdentityProvider.ReadWrite.All_ gelten nur für Geschäfts- oder Schulkonten. Damit eine App Identitätsanbieter mit delegierten Berechtigungen lesen oder schreiben kann, muss dem angemeldeten Benutzer die globale Administratorrolle zugewiesen sein. Weitere Informationen zu Administratorrollen finden Sie unter [Zuweisen von Administratorrollen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+_IdentityProvider.Read.All_ und _IdentityProvider.ReadWrite.All_ gelten nur für Geschäfts- oder Schulkonten. Damit eine App Identitätsanbieter mit delegierten Berechtigungen lesen oder schreiben kann, muss dem angemeldeten Benutzer die globale Administratorrolle zugewiesen sein. Weitere Informationen zu Administratorrollen finden Sie unter [Zuweisen von Administratorrollen in Azure Active Directory]((https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)).
 
 ### <a name="example-usage"></a>Verwendungsbeispiel
 
@@ -591,7 +593,7 @@ Keine.
 ### <a name="remarks"></a>HinwBemerkungeneise
 Sie können diese Berechtigungen verwenden, um Artefakte anzugeben, die in Azure AD-Autorisierungs- und Tokenanforderungen zurückgegeben werden sollen. Sie werden von den Azure AD v1.0- und v2.0-Endpunkten unterschiedlich unterstützt.
 
-Beim Azure AD (v1.0)-Endpunkt wird nur die Berechtigung _openid_ verwendet. Sie wird im *scope*-Parameter in einer Autorisierungsanforderung angegeben, um ein ID-Token zurückzugeben, wenn Sie das OpenID Connect-Protokoll zum Anmelden eines Benutzers bei Ihrer App verwenden. Weitere Informationen finden Sie unter [Autorisieren des Zugriffs auf Webanwendungen mithilfe von Open ID Connect und Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code). Damit ein ID-Token erfolgreich zurückgegeben wird, müssen Sie auch sicherstellen, dass die Berechtigung _User.Read_ konfiguriert wird, wenn Sie Ihre App registrieren. 
+Beim Azure AD (v1.0)-Endpunkt wird nur die Berechtigung _openid_ verwendet. Sie wird im *scope*-Parameter in einer Autorisierungsanforderung angegeben, um ein ID-Token zurückzugeben, wenn Sie das OpenID Connect-Protokoll zum Anmelden eines Benutzers bei Ihrer App verwenden. Weitere Informationen finden Sie unter [Autorisieren des Zugriffs auf Webanwendungen mithilfe von Open ID Connect und Azure Active Directory]((https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code)). Damit ein ID-Token erfolgreich zurückgegeben wird, müssen Sie auch sicherstellen, dass die Berechtigung _User.Read_ konfiguriert wird, wenn Sie Ihre App registrieren. 
 
 Beim Azure AD v2.0-Endpunkt geben Sie die Berechtigung _offline\_access_ im _scope_-Parameter an, um explizit ein Aktualisierungstoken anzufordern, wenn Sie das OAuth 2.0- oder OpenID-Protokoll verwenden. Bei OpenID Connect geben Sie die Berechtigung _openid_ zum Anfordern eines ID-Tokens an. Sie können auch die Berechtigung _email_, die Berechtigung _profile_ oder beide angeben, um zusätzliche Ansprüche im ID-Token zurückzugeben. Sie müssen nicht _User.Read_ angeben, um ein ID-Token mit dem v2.0-Endpunkt zurückzugeben. Weitere Informationen finden Sie unter [OpenID Connect -Bereiche](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes).
 

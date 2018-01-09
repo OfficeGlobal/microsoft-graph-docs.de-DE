@@ -6,7 +6,6 @@ Diese Funktion unterstützt Office 365 und andere Typen von Gruppen, die in Azur
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
@@ -31,12 +30,10 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 |securityEnabledOnly|Boolean|Festgelegt auf **false**. Die Option, dass nur Gruppen mit aktivierter Sicherheit zurückgegeben werden, wird nur für Benutzer unterstützt.|
 
 ## <a name="response"></a>Antwort
-
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Zeichenfolgensammlung im Antworttext zurückgegeben, der die IDs der Gruppen enthält, von denen die Gruppe ein Mitglied ist.
 
 ## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-##### <a name="request"></a>Anforderung
+#### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
@@ -52,8 +49,9 @@ Content-length: 33
 }
 ```
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+#### <a name="response"></a>Antwort
+Nachfolgend sehen Sie ein Beispiel der Antwort.
+>**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "response",
   "truncated": true,

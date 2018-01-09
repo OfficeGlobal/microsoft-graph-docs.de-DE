@@ -1,6 +1,6 @@
 # <a name="delete-group"></a>Gruppe löschen
-
 Mit dieser API können Sie Gruppen löschen.
+
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -8,13 +8,14 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | Group.ReadWrite.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Group.ReadWrite.All |
+|Anwendung | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}
 ```
+
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
@@ -24,11 +25,10 @@ DELETE /groups/{id}
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
+#### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
@@ -37,7 +37,8 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/{id}
 ```
-##### <a name="response"></a>Antwort
+
+#### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. 
 <!-- {
   "blockType": "response",

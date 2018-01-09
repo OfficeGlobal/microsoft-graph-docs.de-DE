@@ -1,6 +1,6 @@
 # <a name="list-members"></a>Mitglieder auflisten
-
 Dient zum Abrufen einer Liste der direkten Mitglieder einer Gruppe. Eine Gruppe kann Benutzer, Kontakten und andere Gruppen als Mitglieder haben. Dieser Vorgang ist nicht transitiv.
+
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -15,8 +15,10 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ```http
 GET /groups/{id}/members
 ```
+
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](../../../concepts/query_parameters.md) zur Anpassung der Antwort.
+
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
@@ -26,10 +28,10 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [directoryObject](../resources/directoryobject.md)-Objekten im Antworttext zurückgegeben.
+
 ## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
+#### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
@@ -38,8 +40,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/members
 ```
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+
+#### <a name="response"></a>Antwort
+Nachfolgend sehen Sie ein Beispiel der Antwort.
+>**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "response",
   "truncated": true,

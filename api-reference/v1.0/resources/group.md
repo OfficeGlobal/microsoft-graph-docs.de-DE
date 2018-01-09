@@ -16,7 +16,7 @@ Diese Ressource unterstützt Folgendes:
 |[Gruppe erstellen](../api/group_post_groups.md) | [Gruppe](group.md) |Erstellt eine neue Gruppe. Dabei kann es sich um eine Office 365-Gruppe, eine dynamische Gruppe oder eine Sicherheitsgruppe handeln.|
 |[Gruppe abrufen](../api/group_get.md) | [Gruppe](group.md) |Liest die Eigenschaften eines Gruppenobjekts.|
 |[Gruppen auflisten](../api/group_list.md) |[Gruppensammlung](group.md) |Listet Gruppenobjekte und deren Eigenschaften auf.|
-|[Gruppe aktualisieren](../api/group_update.md) | [Gruppe](group.md) |Aktualisiert die Eigenschaften eines Gruppenobjekts. |
+|[Gruppe aktualisieren](../api/group_update.md) | Keine |Aktualisiert die Eigenschaften eines Gruppenobjekts. |
 |[Gruppe löschen](../api/group_delete.md) | Keiner |Löscht das Gruppenobjekt. |
 |[Besitzer hinzufügen](../api/group_post_owners.md) |Keine| Fügt einen neuen Besitzer zur Gruppe durch Bereitstellen an die **owners**-Navigationseigenschaft bereit (wird nur für Sicherheitsgruppen und E-Mail-fähige Sicherheitsgruppen unterstützt).|
 |[Besitzer auflisten](../api/group_list_owners.md) |[directoryObject](directoryobject.md)-Sammlung| Ruft die Eigentümer der Gruppe aus der **owners**-Navigationseigenschaft ab.|
@@ -29,13 +29,21 @@ Diese Ressource unterstützt Folgendes:
 |[getMemberObjects](../api/group_getmemberobjects.md)|String collection|Gibt alle Gruppen zurück, bei denen die Gruppe Mitglied ist. Die Funktion ist transitiv. |
 |[delta](../api/group_delta.md)|group-Sammlung| Dient zum Abrufen inkrementeller Änderungen für Gruppen. |
 |**Calendar**| | |
-|[Ereignis erstellen](../api/group_post_events.md) |[Event](event.md)| Erstellt ein neues Ereignis durch Veröffentlichen in der Ereignissammlung.|
+|[Ereignis erstellen](../api/group_post_events.md) |[Ereignis](event.md)| Erstellt ein neues Ereignis durch Veröffentlichen in der Ereignissammlung.|
+|[Ereignis abrufen](../api/group_get_event.md) |[Ereignis](event.md)|Liest die Eigenschaften eines Ereignisobjekts.|
 |[Ereignisse auflisten](../api/group_list_events.md) |[Ereignissammlung](event.md)| Ruft eine Ereignisobjektsammlung ab.|
+|[Ereignis aktualisieren](../api/group_update_event.md) |Keine|Dient zum Aktualisieren der Eigenschaften eines Ereignisobjekts.|
+|[Ereignis löschen](../api/group_delete_event.md) |Keine|Löscht das Ereignisobjekt.|
 |[calendarView auflisten](../api/group_list_calendarview.md) |[Ereignissammlung](event.md)| Ruft eine Auflistung der Ereignisse in einem angegebenen Zeitfenster ab.|
 |**Unterhaltungen**| | |
 |[Unterhaltung erstellen](../api/group_post_conversations.md) |[Unterhaltung](conversation.md)| Erstellt eine neue Unterhaltung durch Veröffentlichung in der Unterhaltungssammlung.|
+|[Unterhaltung abrufen](../api/group_get_conversation.md) |[Unterhaltung](conversation.md)| Dient zum Lesen der Eigenschaften eines Unterhaltungsobjekts.|
 |[Unterhaltungen auflisten](../api/group_list_conversations.md) |[Unterhaltungssammlung](conversation.md)| Ruft eine Unterhaltungsobjektsammlung ab.|
+|[Unterhaltung löschen](../api/group_delete_conversation.md) |Keine|Löscht ein Unterhaltungsobjekt.|
+|[Thread abrufen](../api/group_get_thread.md) |[conversationThread](conversationthread.md)| Liest die Eigenschaften eines Threadobjekts.|
 |[Threads auflisten](../api/group_list_threads.md) |[conversationThread](conversationthread.md)-Sammlung| Ruft alle Threads einer Gruppe ab.|
+|[Thread aktualisieren](../api/group_update_thread.md) |Keine| Aktualisiert die Eigenschaften eines Threadobjekts.|
+|[Thread löschen](../api/group_delete_thread.md) |Keine| Löscht das Threadobjekt.|
 |[acceptedSenders auflisten](../api/group_list_acceptedsenders.md) |[directoryObject](directoryobject.md)-Sammlung| Ruft eine Liste von Benutzern oder Gruppen ab, die sich in der Liste der acceptedSenders für diese Gruppe befinden.|
 |[acceptedSender hinzufügen](../api/group_post_acceptedsenders.md) |[directoryObject](directoryobject.md)| Fügt einen Benutzer oder eine Gruppe zur acceptSenders-Sammlung hinzu.|
 |[acceptedSender entfernen](../api/group_delete_acceptedsenders.md) |[directoryObject](directoryobject.md)| Entfernt einen Benutzer oder eine Gruppe aus der acceptedSenders-Sammlung.|
@@ -45,7 +53,7 @@ Diese Ressource unterstützt Folgendes:
 |[Einstellung erstellen](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Erstellen Sie eine Einstellungsobjekt basierend auf einer groupSettingTemplate. Die POST-Anforderung muss settingValues für alle Einstellungen bereitstellen, die in der Vorlage definiert sind. Für diesen Vorgang können nur gruppenspezifische Vorlagen verwendet werden.|
 |[Einstellung abrufen](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Dient zum Lesen der Eigenschaften eines bestimmten Einstellungsobjekts. |
 |[Einstellungen auflisten](../api/groupsetting_list.md) | [groupSetting](groupsetting.md)-Sammlung | Listet Eigenschaften aller Einstellungsobjekte auf. |
-|[Einstellung aktualisieren](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | Aktualisiert ein Einstellungsobjekt. |
+|[Einstellung aktualisieren](../api/groupsetting_update.md) | Keine | Aktualisiert ein Einstellungsobjekt. |
 |[Einstellung löschen](../api/groupsetting_delete.md) | Keine | Löscht ein Einstellungsobjekt. |
 |**Offene Erweiterungen**| | |
 |[Offene Erweiterung erstellen](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Erstellt eine offene Erweiterung und fügt benutzerdefinierte Eigenschaften zu einer neuen oder vorhandenen Ressource hinzu.|
@@ -103,10 +111,10 @@ Diese Ressource unterstützt Folgendes:
 |owners|[directoryObject](directoryobject.md)-Sammlung|Die Besitzer der Gruppe. Bei den Besitzern handelt es sich um eine Reihe von Benutzern, die keine Administratoren sind und die berechtigt sind, dieses Objekt zu ändern. Beschränkt auf 10 Besitzer. HTTP-Methoden: GET (unterstützt für alle Gruppen), POST (unterstützt für Office 365-Gruppen, Sicherheitsgruppen und E-Mail-fähige Sicherheitsgruppen), DELETE (unterstützt für Office 365-Gruppen und Sicherheitsgruppen). Lässt NULL-Werte zu.|
 |Foto|[profilePhoto](profilephoto.md)| Das Profilfoto der Gruppe. |
 |Fotos|[profilePhoto](profilephoto.md)-Sammlung| Die Profilfotos im Besitz der  Gruppe. Schreibgeschützt. Lässt Nullwerte zu.|
-|Planner|[Planner](planner.md)| Einstiegspunkt der Planner-Ressource, die möglicherweise für eine einheitliche Gruppe vorhanden ist.|
+|Planner|[planner](planner.md)| Einstiegspunkt der Planner-Ressource, die möglicherweise für eine einheitliche Gruppe vorhanden ist.|
 |rejectedSenders|[directoryObject](directoryobject.md)-Sammlung|Die Liste der Benutzer oder Gruppen, die nicht berechtigt sind, Beiträge oder Kalenderereignisse in dieser Gruppe zu erstellen. Lässt NULL-Werte zu|
 |Einstellungen|[groupSetting](groupsetting.md)-Sammlung| Schreibgeschützt. Lässt Nullwerte zu.|
-|sites|[site](site.md)-Sammlung|Die Liste der SharePoint-Websites in dieser Gruppe. Der Zugriff auf die Standardwebsite erfolgt mit „/sites/root“.
+|sites|[site](site.md)-Sammlung|Die Liste der SharePoint-Websites in dieser Gruppe. Der Zugriff auf die Standardwebsite erfolgt mit „/sites/root“.|
 |threads|[conversationThread](conversationthread.md)-Sammlung| Die Unterhaltungs-Threads der Gruppe. Lässt NULL-Werte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
@@ -175,7 +183,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](../../../concepts/extensibility_overview.md)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](../../../concepts/extensibility_open_users.md)

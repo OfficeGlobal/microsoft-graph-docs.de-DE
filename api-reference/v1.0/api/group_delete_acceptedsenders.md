@@ -1,17 +1,14 @@
 # <a name="remove-acceptedsender"></a>acceptedSender entfernen
-
 Mit dieser API können Sie Benutzer oder Gruppen aus der Liste „acceptedSenders“ entfernen. 
 
 ## <a name="permissions"></a>Berechtigungen
-
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
 | Berechtigungstyp                        | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)  |
 |:---------------------------------------|:-------------------------------------------- |
-| Delegiert (Geschäfts-, Schul- oder Unikonto)     | Group.ReadWrite.All    
-| Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt
-| Anwendung                            | Group.ReadWrite.All
-
+| Delegiert (Geschäfts-, Schul- oder Unikonto)     | Group.ReadWrite.All |
+| Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt |
+| Anwendung                            | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -21,24 +18,19 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-
 | Kopfzeile         | Wert                      |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}. Erforderlich.  
 
 ## <a name="request-body"></a>Anforderungstext
-
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-
-##### <a name="request"></a>Anforderung
-
-Im Folgenden finden Sie ein paar Beispiele für die Themenbereiche, an denen wir arbeiten:
+#### <a name="request"></a>Anforderung
+Nachfolgend sehen Sie ein paar Beispiele der Anforderung.
 
 <!-- {
   "blockType": "request",
@@ -50,8 +42,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=htt
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{id}
 ```
 
-##### <a name="response"></a>Antwort
-
+#### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. 
 
 <!-- {

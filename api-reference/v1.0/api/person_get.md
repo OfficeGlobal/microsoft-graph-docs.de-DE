@@ -6,7 +6,6 @@ Sie können diese Informationen über die People API abrufen. Beispiele finden S
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
- 
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
@@ -23,7 +22,7 @@ GET /users/{id | userPrincipalName}/people/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die folgende [OData-Abfrageparameter](../../../concepts/people_example.md) zur Anpassung der Antwort.
+Diese Methode unterstützt die folgenden [OData-Abfrageparameter](../../../concepts/query_parameters.md), um bei der Anpassung der Antwort zu helfen. Beispiele dazu finden Sie im Artikel [Abrufen relevanter Informationen über Personen](../../../concepts/people_example.md).
 
 |Name|Wert|Beschreibung| 
 |:---------------|:--------|:-------| 

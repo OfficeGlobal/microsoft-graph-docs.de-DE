@@ -1,11 +1,8 @@
 # <a name="group-delta"></a>group: delta
-
 Mit einer [Delta-Abfrage](../../../concepts/delta_query_overview.md) können Anwendungen neu erstellte, aktualisierte oder gelöschte Entitäten ermitteln, ohne die Zielressource bei jeder Anforderung vollständig lesen zu müssen. Um Änderungen an Gruppen zu ermitteln, führen Sie eine Anforderung unter Verwendung der *delta*-Funktion aus. Weitere Informationen finden Sie unter [Verwenden einer Delta-Abfrage](../../../concepts/delta_query_overview.md).
 
 ## <a name="permissions"></a>Berechtigungen
-
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
-
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
@@ -14,7 +11,6 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Anwendung | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
-
 Um Änderungen nachzuverfolgen, führe Sie zunächst eine Anforderung einschließlich der delta-Funktion für die Gruppenressource aus. 
 
 <!-- { "blockType": "ignored" } -->
@@ -23,7 +19,6 @@ GET /groups/delta
 ```
 
 ### <a name="query-parameters"></a>Abfrageparameter
-
 Beim Nachverfolgen von Änderungen in Gruppen wird eine Runde von einem oder mehreren **delta**-Funktionsaufrufen ausgeführt. Wenn Sie Abfrageparameter (außer `$deltatoken` und `$skiptoken`) verwenden, müssen Sie sie in der ursprünglichen **delta**-Anforderung angeben. Microsoft Graph codiert automatisch alle angegebenen Parameter in den Tokenteil der in der Antwort enthaltenen `nextLink`- oder `deltaLink`-URL. Sie müssen alle gewünschten Abfrageparameter nur einmal im Vorfeld angeben. In nachfolgenden Anforderungen können Sie die `nextLink`- oder `deltaLink`-URL aus der vorherigen Antwort kopieren und anwenden, da diese URL bereits die codierten gewünschten Parameter enthält.
 
 | Abfrageparameter      | Typ   |Beschreibung|
@@ -32,7 +27,6 @@ Beim Nachverfolgen von Änderungen in Gruppen wird eine Runde von einem oder meh
 | $skiptoken | string | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `nextLink`-URL des vorhergehenden **delta**-Funktionsaufrufs zurückgegeben wird und anzeigt, dass in derselben Gruppensammlung weitere Änderungen zum Nachverfolgen vorliegen. |
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-
 Diese Methode unterstützt OData-Abfrageparameter zur Anpassung der Antwort.
 
 - Sie können wie bei jeder GET-Anforderung den Abfrageparameter `$select` verwenden, um zwecks Leistungsoptimierung nur die benötigten Eigenschaften anzugeben. Die Eigenschaft _id_ wird immer zurückgegeben. 
@@ -50,7 +44,6 @@ Diese Methode unterstützt OData-Abfrageparameter zur Anpassung der Antwort.
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [group](../resources/group.md)-Sammlungsobjekt im Antworttext zurückgegeben. Die Antwort enthält zudem ein Statustoken, entweder eine nextLink- oder eine deltaLink-URL.
 
 - Wenn eine nextLink-URL zurückgegeben wird, gibt es zusätzliche Seiten mit Daten, die in der Sitzung abgerufen werden müssen. Die Anwendung nimmt weiterhin Anforderungen über die nextLink-URL vor, bis eine deltaLink-URL in der Antwort zurückgegeben wird.
@@ -62,7 +55,7 @@ Siehe:</br>
 - Beispielanforderungen finden Sie unter [Inkrementelle Änderungen für Gruppen abrufen](../../../concepts/delta_query_groups.md).</br>
     
 ## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
+#### <a name="request"></a>Anforderung
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -71,8 +64,8 @@ Siehe:</br>
 GET https://graph.microsoft.com/v1.0/groups/delta
 ```
 
-##### <a name="response"></a>Antwort
-Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+#### <a name="response"></a>Antwort
+>**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 
 <!-- {
   "blockType": "response",

@@ -1,5 +1,5 @@
 # <a name="create-conversation"></a>Unterhaltung erstellen
-Erstellen Sie eine neue Unterhaltung, indem Sie einen Thread und einen Beitrag einschließen. 
+Erstellen Sie eine neue [Unterhaltung](../resources/conversation.md), indem Sie einen Thread und einen Beitrag einschließen. 
 
 Sie können die APIs [conversationThread: reply](conversationthread_reply.md) und [post: reply](post_reply.md) verwenden, um weitere Beiträge in der betreffenden Unterhaltung zu veröffentlichen.
 

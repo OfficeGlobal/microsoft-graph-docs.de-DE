@@ -1,8 +1,8 @@
 # <a name="create-acceptedsender"></a>acceptedSender erstellen
-
 Fügt einen neuen Benutzer oder eine neue Gruppe zur acceptedSender-Liste hinzu.
 
 Geben Sie den Benutzer oder die Gruppe in `@odata.id` im Anforderungstext an. Benutzer in der Liste der zulässigen Absender können Beiträge für Unterhaltungen der Gruppe bereitstellen. Stellen Sie sicher, dass Sie nicht den gleichen Benutzer oder die gleiche Gruppe in den Listen für zulässige und abgelehnte Absender angeben, sonst wird ein Fehler angezeigt.
+
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -10,7 +10,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | Group.ReadWrite.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Group.ReadWrite.All |
+|Anwendung | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -26,11 +26,10 @@ POST /groups/{id}/acceptedSenders/$ref
 Geben Sie im Anforderungstext die ID eines Benutzer- oder Gruppenobjekts an.
 
 ## <a name="response"></a>Antwort
-
 Diese Methode gibt den Antwortcode `204 No Content` ohne Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
+#### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
@@ -45,7 +44,8 @@ Content-length: 30
   "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 ```
-##### <a name="response"></a>Antwort
+
+#### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 <!-- {
   "blockType": "response",

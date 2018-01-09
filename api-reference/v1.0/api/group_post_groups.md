@@ -1,5 +1,4 @@
 # <a name="create-group"></a>Gruppe erstellen
-
 Verwenden Sie diese API zum Erstellen einer neuen Gruppe gemäß der Angabe im Anforderungstext. Sie können drei Typen von Gruppen erstellen:
 
 * Office 365-Gruppe (einheitliche Gruppe)
@@ -22,6 +21,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ```http
 POST /groups
 ```
+
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
@@ -48,12 +48,11 @@ Geben Sie die **groupTypes** Eigenschaft an, wenn Sie eine Office 365 oder eine 
 Geben Sie bei Bedarf andere beschreibbare Eigenschaften für Ihre Gruppe an. Weitere Informationen finden Sie in Themen zu Eigenschaften der [group](../resources/group.md)-Ressource.
 
 ## <a name="response"></a>Antwort
-
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und das [group](../resources/group.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
-Hier ist ein Beispiel für eine Anforderung, die eine Office 365-Gruppe erstellt.
+#### <a name="request"></a>Anforderung
+Nachfolgend sehen Sie ein Beispiel für eine Anforderung, die eine Office 365-Gruppe erstellt.
 <!-- {
   "blockType": "request",
   "name": "create_group_from_groups"
@@ -75,8 +74,9 @@ Content-length: 244
 }
 ```
 
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden mehr Eigenschaften zurückgegeben.
+#### <a name="response"></a>Antwort
+Nachfolgend sehen Sie ein Beispiel der Antwort.
+>**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,5 +1,4 @@
 # <a name="get-group"></a>Gruppe abrufen
-
 Dient zum Abrufen der Eigenschaften und der Beziehungen eines Gruppenobjekts.
 
 ##### <a name="default-properties"></a>Standardeigenschaften
@@ -51,8 +50,10 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ```http
 GET /groups/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](../../../concepts/query_parameters.md) zur Anpassung der Antwort.
+
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
@@ -62,10 +63,10 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [photo](../resources/group.md)-Objekt im Antworttext zurückgegeben.
+
 ## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
+#### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
@@ -74,10 +75,11 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}
 ```
-##### <a name="response"></a>Antwort
+
+#### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 
-Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden, wie oben beschrieben, die Standardeigenschaften zurückgegeben.
+>**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Von einem tatsächlichen Aufruf werden, wie zuvor beschrieben, die Standardeigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
   "truncated": true,

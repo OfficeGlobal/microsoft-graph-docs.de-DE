@@ -21,7 +21,7 @@ GET /users/{id | userPrincipalName}/people
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](../../../concepts/people_example.md) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](../../../concepts/query_parameters.md), um bei der Anpassung der Antwort zu helfen. Beispiele dazu finden Sie im Artikel [Abrufen relevanter Informationen über Personen](../../../concepts/people_example.md).
 
 |Name|Wert|Beschreibung| 
 |:---------------|:--------|:-------| 

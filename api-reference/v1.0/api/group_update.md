@@ -1,10 +1,8 @@
 # <a name="update-group"></a>Gruppe aktualisieren
-
 Mit dieser API können Sie die Eigenschaften eines Gruppenobjekts aktualisieren.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
-
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,16 +41,15 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 **Hinweis**
 
 - Sie können **autoSubscribeNewMembers** aktualisieren, indem Sie diese Eigenschaft in ihrer eigenen PATCH-Anforderung angeben, ohne die anderen Eigenschaften in der Tabelle oben einzuschließen.
-- Nur eine Teilmenge der Gruppen-API, die zur Hauptgruppenadministration und -verwaltung gehören, unterstützen Anwendungs- und delegierte Berechtigungen. Alle anderen Mitglieder der Gruppen-API, einschließlich des Aktualisierens von **autoSubscribeNewMembers**, unterstützen nur delegierte Berechtigungen. Beispiele finden Sie unter [Bekannte Probleme](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes).
+- Nur eine Teilmenge der Gruppen-API, die zur Hauptgruppenadministration und -verwaltung gehören, unterstützen Anwendungs- und delegierte Berechtigungen. Alle anderen Mitglieder der Gruppen-API, einschließlich des Aktualisierens von **autoSubscribeNewMembers**, unterstützen nur delegierte Berechtigungen. Beispiele finden Sie unter [Bekannte Probleme](https://developer.microsoft.com/graph/docs/overview/release_notes#group-permission-scopes).
 
 ## <a name="response"></a>Antwort
-
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 
-##### <a name="request"></a>Anforderung
-
+#### <a name="request"></a>Anforderung
+Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
   "name": "update_group"
@@ -74,8 +71,9 @@ Content-length: 211
 }
 ```
 
-##### <a name="response"></a>Antwort
-
+#### <a name="response"></a>Antwort
+Nachfolgend sehen Sie ein Beispiel der Antwort.
+>**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "response",
   "truncated": true,
