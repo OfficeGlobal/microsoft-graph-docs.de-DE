@@ -2,7 +2,7 @@
 
 Mit den OneDrive-Verwendungsberichten können Sie eine allgemeine Übersicht über den durch OneDrive gewonnenen Nutzungswert hinsichtlich der Gesamtzahl der Dateien und des genutzten Speicherplatzes aller OneDrive-Konten in Ihrer Organisation erhalten. Sie können dann ein Drilldown ausführen, um die Trends aktiver OneDrive-Konten zu erfassen und zu erfahren, mit wie vielen Dateien Benutzer interagiert haben und wie viel Speicherplatz verwendet wird. Diese Berichte bieten auch Einzelheiten zu einzelnen OneDrive-Konten.
 
-> **Hinweis:** Ausführliche Informationen zu anderen Berichtsansichten und -namen finden Sie unter [Office 365-Berichte – OneDrive for Business-Nutzung]((https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680)).
+> **Hinweis:** Ausführliche Informationen zu anderen Berichtsansichten und -namen finden Sie unter [Office 365-Berichte – OneDrive for Business-Nutzung](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680).
 
 ## <a name="reports"></a>Berichte
 

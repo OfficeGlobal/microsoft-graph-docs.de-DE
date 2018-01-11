@@ -2,7 +2,7 @@
 
 Nutzen Sie die Postfach-Verwendungsberichte, um Informationen zu Benutzern mit einem Postfach und deren Aktivitätsniveau, das hauptsächlich auf gesendeten und empfangenen E-Mails basiert, zu erhalten. Sie können auch sehen, wie viel Speicherplatz jedes Postfach beansprucht und wie viele Postfächer sich den  Speicherkontingenten nähern.
 
-> **Hinweis:** Ausführliche Informationen zu anderen Berichtsansichten und -namen finden Sie unter [Office 365-Berichte – Postfachnutzung]((https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729)).
+> **Hinweis:** Ausführliche Informationen zu anderen Berichtsansichten und -namen finden Sie unter [Office 365-Berichte – Postfachnutzung](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).
 
 ## <a name="reports"></a>Berichte
 

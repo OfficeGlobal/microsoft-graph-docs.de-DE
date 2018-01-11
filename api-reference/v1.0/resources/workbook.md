@@ -25,7 +25,7 @@ Keine
 
 [Excel-Funktionen](#functions): Sie können eine Arbeitsmappenfunktion mit der Syntax `POST /workbook/functions/{function-name}` aufrufen. Geben Sie dabei die Funktionsargumente in Form eines JSON-Objekts im Text an. Der berechnete `value` der Funktion sowie alle Zeichenfolgen des Typs `error` werden im Funktionsergebnisobjekt zurückgegeben. Wird für den Wert `error` `null` zurückgegeben, bedeutet das, dass die Funktion erfolgreich ausgeführt wurde. 
 
-Eine vollständige Liste der unterstützten Funktionen finden Sie [hier]((https://support.office.com/de-DE/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)). Die Namen der einzelnen Parameter sowie die Datentypen finden Sie in der Funktionssignatur.
+Eine vollständige Liste der unterstützten Funktionen finden Sie [hier](https://support.office.com/de-DE/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Die Namen der einzelnen Parameter sowie die Datentypen finden Sie in der Funktionssignatur.
 
 _Wichtige Hinweise:_ 
 * Der Eingabebereichsparameter wird über ein Bereichsobjekt definiert, nicht über eine Bereichsadresszeichenfolge.  
@@ -44,7 +44,7 @@ Innerhalb einer Zelle sieht die `vlookup`-Funktion folgendermaßen aus:
 
 = SVERWEIS (Nachschlagewert, Bereich mit dem Nachschlagewert, Spaltennummer im Bereich mit dem Rückgabewert, geben Sie optional TRUE für eine ungefähre Übereinstimmung oder FALSE für eine genaue Übereinstimmung an)
 
-(Sehen Sie sich die Dokumentation für die [SVERWEIS-Excel-Funktion]((https://support.office.com/de-DE/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)) an.)
+(Sehen Sie sich die Dokumentation für die [SVERWEIS-Excel-Funktion](https://support.office.com/de-DE/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1) an.)
 
 Im folgenden Beispiel sehen Sie, wie Sie die `vlookup`-Funktion aufrufen und diese Parameter mit der Excel-REST-API weitergeben.
 
@@ -87,7 +87,7 @@ Innerhalb einer Zelle sieht die `median`-Funktion folgendermaßen aus:
 
 =MEDIAN(A2:A6)
 
-(Sehen Sie sich die Dokumentation für die [MEDIAN-Excel-Funktion]((https://support.office.com/de-DE/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)) an.)
+(Sehen Sie sich die Dokumentation für die [MEDIAN-Excel-Funktion](https://support.office.com/de-DE/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2) an.)
 
 Im folgenden Beispiel sehen Sie, wie Sie die `median`-Funktion und einen oder mehrere Eingabebereiche mit der Excel-REST-API aufrufen. 
 

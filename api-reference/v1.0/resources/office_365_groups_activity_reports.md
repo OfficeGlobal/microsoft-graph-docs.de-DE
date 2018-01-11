@@ -2,7 +2,7 @@
 
 Mit dem Gruppenaktivitätsbericht erhalten Sie Einblicke in die Aktivitäten der Office 365-Gruppen innerhalb Ihrer Organisation und erfahren, wie viele Office 365-Gruppen erstellt und verwendet wurden.
 
-> **Hinweis:** Ausführliche Informationen zu anderen Berichtsansichten und -namen finden Sie unter [Office 365-Berichte – Office 365-Gruppen]((https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)).
+> **Hinweis:** Ausführliche Informationen zu anderen Berichtsansichten und -namen finden Sie unter [Office 365-Berichte – Office 365-Gruppen](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
 
 ## <a name="reports"></a>Berichte
 

@@ -2,7 +2,7 @@
 
 Mithilfe der E-Mail-Aktivitätsberichte erhalten Sie eine allgemeine Übersicht über den E-Mail-Verkehr innerhalb Ihrer Organisation. Sie können auch das Widget E-Mail-Aktivitäten nutzen, um sich über Trends und Details bezüglich der E-Mail-Aktivität pro Benutzer in Ihrer Organisation zu informieren.
 
-> **Hinweis:** Ausführliche Informationen zu anderen Berichtsansichten und -namen finden Sie unter [Office 365-Berichte – E-Mail-Aktivität]((https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44)).
+> **Hinweis:** Ausführliche Informationen zu anderen Berichtsansichten und -namen finden Sie unter [Office 365-Berichte – E-Mail-Aktivität](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44).
 
 ## <a name="reports"></a>Berichte
 

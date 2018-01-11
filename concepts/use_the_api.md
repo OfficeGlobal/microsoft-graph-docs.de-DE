@@ -2,7 +2,7 @@
 
 Microsoft Graph ist eine RESTful-Web-API, mit der Sie auf Microsoft Cloud-Dienstressourcen zugreifen können. Nachdem Sie [Ihre App registriert](auth_register_app_v2.md) und [Authentifizierungstoken für einen Benutzer](auth_v2_user.md) oder einen [Dienst abgerufen haben](auth_v2_service.md), können Sie Anforderungen an die Microsoft Graph-API tätigen.
 
-> **Wichtig:**  Die Anwendung der Richtlinien für bedingten Zugriff für Microsoft Graph wurde geändert. Anwendungen müssen aktualisiert werden, um Szenarien ausführen zu können, für die bedingte Richtlinien konfiguriert sind. Weitere Informationen und Anleitungen hierzu finden Sie unter [Developer-Leitfaden zum bedingten Zugriff in Azure Active Directory]((https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)).
+> **Wichtig:**  Die Anwendung der Richtlinien für bedingten Zugriff für Microsoft Graph wurde geändert. Anwendungen müssen aktualisiert werden, um Szenarien ausführen zu können, für die bedingte Richtlinien konfiguriert sind. Weitere Informationen und Anleitungen hierzu finden Sie unter [Developer-Leitfaden zum bedingten Zugriff in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
 
 Erstellen Sie eine Anforderung, die der folgenden ähnlich ist, um in eine Ressource zu schreiben bzw. daraus zu lesen. Ressourcen können z. B. Benutzer oder E-Mail-Nachrichten sein.
 
@@ -46,7 +46,7 @@ Microsoft Graph unterstützt derzeit zwei Versionen: `v1.0` und `beta`.
 * `v1.0` umfasst allgemein verfügbare APIs. Verwenden Sie die Version 1.0 für alle Produktions-Apps.
 * `beta` umfasst APIs, die sich derzeit in der Vorschau befinden. Da möglicherweise grundlegende Änderungen an unseren Beta-APIs eingeführt werden, wird empfohlen, dass Sie die Betaversion nur zum Testen von Apps verwenden, die sich in der Entwicklung befinden; verwenden Sie keine Beta-APIs in Ihren Produktions-Apps.
 
-Wir freuen uns immer über Feedback zu unseren Beta-APIs. Auf unserer [UserVoice]((https://officespdev.uservoice.com/))-Seite können Sie Feedback abgeben oder Features anfordern.
+Wir freuen uns immer über Feedback zu unseren Beta-APIs. Auf unserer [UserVoice](https://officespdev.uservoice.com/)-Seite können Sie Feedback abgeben oder Features anfordern.
 
 Weitere Informationen zu API-Versionen finden Sie unter [Versionsverwaltung und Support](versioning_and_support.md).
 
@@ -74,4 +74,4 @@ Weitere Informationen zu Abfrageparametern finden Sie unter [Antworten anpassen]
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sie sind nun bereit für Ihre ersten Schritte mit Microsoft Graph. Um mehr zu erfahren, gehen Sie zu [Graph-Tester]((https://developer.microsoft.com/de-DE/graph/graph-explorer)), um ein paar Anforderungen auszuprobieren. Versuchen Sie den [Schnellstart]((https://developer.microsoft.com/de-DE/graph/quick-start)), oder beginnen Sie mit einem unserer [SDKs und Codebeispiele]((https://developer.microsoft.com/de-DE/graph/code-samples-and-sdks)).
+Sie sind nun bereit für Ihre ersten Schritte mit Microsoft Graph. Um mehr zu erfahren, gehen Sie zu [Graph-Tester](https://developer.microsoft.com/de-DE/graph/graph-explorer), um ein paar Anforderungen auszuprobieren. Versuchen Sie den [Schnellstart](https://developer.microsoft.com/de-DE/graph/quick-start), oder beginnen Sie mit einem unserer [SDKs und Codebeispiele](https://developer.microsoft.com/de-DE/graph/code-samples-and-sdks).

@@ -11,6 +11,6 @@ Microsoft Graph steuert den Zugriff auf Ressourcen über Berechtigungen. Sie mü
 Berichtsressourcen und APIs können Ihnen neue Möglichkeiten eröffnen, über die Sie mit Benutzer in Kontakt treten und ihre Erfahrungen mit Microsoft Graph verwalten können. So erhalten Sie weitere Informationen:
 
 - Informieren Sie sich ausführlicher über die Methoden und Eigenschaften der Ressourcen, die für Ihr Szenario am hilfreichsten sind.
-- Probieren Sie die API im [Graph-Tester]((https://developer.microsoft.com/graph/graph-explorer)) aus.
+- Probieren Sie die API im [Graph-Tester](https://developer.microsoft.com/graph/graph-explorer) aus.
 
 Benötigen Sie weitere Ideen? Dann sehen Sie sich an, [wie unsere Partner Microsoft Graph verwenden](https://developer.microsoft.com/graph/graph/examples#partners).
