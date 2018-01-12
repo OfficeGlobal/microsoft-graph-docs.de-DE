@@ -30,4 +30,15 @@ Wenn Sie Fehlerbehandlung implementieren, verwenden Sie den HTTP-Fehlercode 429 
 2. Wiederholen Sie die Anforderung.
 3. Wenn die Anforderung erneut nicht ausgeführt und der Fehlercode 429 zurückgegeben wird, unterliegen Sie weiterhin einer Einschränkung. Wiederholen Sie die Anforderung unter Anwendung der empfohlenen Retry-After-Verzögerung so lange, bis die Anforderung erfolgreich ist.
 
-Eine ausführlichere Erläuterung zum Thema Einschränkung in der Microsoft Cloud finden Sie unter [Throttling](https://msdn.microsoft.com/en-us/library/office/dn589798.aspx).
+Folgende Ressourcen bieten derzeit einen Retry-After-Header:
+- [Benutzer](../api-reference/v1.0/resources/user.md)
+- [Foto](../api-reference/v1.0/resources/profilephoto.md)
+- [E-Mail](../api-reference/v1.0/resources/message.md)
+- [Kalender (Benutzer und Gruppen)](../api-reference/v1.0/resources/event.md)
+- [Kontakt](../api-reference/v1.0/resources/contact.md)
+- [Anlage](../api-reference/v1.0/resources/attachment.md)
+- [Gruppenunterhaltungen](../api-reference/v1.0/resources/conversation.md)
+- [Personen und soziale Netzwerke](../api-reference/beta/resources/social_overview.md)
+- [Drive (OneDrive)](../api-reference/v1.0/resources/drive.md)
+
+Eine ausführlichere Erläuterung zum Thema Einschränkung in der Microsoft Cloud finden Sie unter [Throttling]((https://msdn.microsoft.com/de-DE/library/office/dn589798.aspx)).

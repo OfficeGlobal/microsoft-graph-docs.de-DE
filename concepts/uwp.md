@@ -2,11 +2,11 @@
 
 > **Sie erstellen Apps für Unternehmenskunden?** Ihre App funktioniert möglicherweise nicht, wenn Ihr Unternehmenskunde Enterprise Mobility-Sicherheitsfunktionen wie <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">bedingten Gerätezugriff</a> aktiviert. In diesem Fall treten bei Ihren Kunden möglicherweise Fehler auf. 
 
-> Zur Unterstützung **aller Unternehmenskunden** über **alle Unternehmensszenarien** hinweg müssen Sie den Azure AD-Endpunkt verwenden und Ihr Apps mithilfe des [Azure-Verwaltungsportals](https://aka.ms/aadapplist) verwalten. Weitere Informationen finden Sie unter [Entscheiden zwischen dem Azure AD- und dem Azure AD v2.0-Endpunkt](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
+> Zur Unterstützung **aller Unternehmenskunden** über **alle Unternehmensszenarien** hinweg müssen Sie den Azure AD-Endpunkt verwenden und Ihr Apps mithilfe des [Azure-Verwaltungsportals]((https://aka.ms/aadapplist)) verwalten. Weitere Informationen finden Sie unter [Entscheiden zwischen dem Azure AD- und dem Azure AD v2.0-Endpunkt](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
-Dieser Artikel beschreibt die erforderlichen Aufgaben zum Abrufen eines Zugriffstokens vom [Azure AD v2.0-Endpunkt](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth) und zum Aufrufen von Microsoft Graph. Er führt Sie schrittweise durch den Code im [Microsoft Graph Connect-Beispiel für UWP (Bibliothek)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) und erläutert die wichtigsten Konzepte, die in eine App implementiert werden müssen, die Microsoft Graph verwendet.
+Dieser Artikel beschreibt die erforderlichen Aufgaben zum Abrufen eines Zugriffstokens vom [Azure AD v2.0-Endpunkt]((https://developer.microsoft.com/de-DE/graph/docs/concepts/converged_auth)) und zum Aufrufen von Microsoft Graph. Er führt Sie schrittweise durch den Code im [Microsoft Graph Connect-Beispiel für UWP (Bibliothek)]((https://github.com/microsoftgraph/uwp-csharp-connect-sample)) und erläutert die wichtigsten Konzepte, die in eine App implementiert werden müssen, die Microsoft Graph verwendet.
 
-**Sie möchten keine App erstellen?** Verwenden Sie für einen schnellen Einstieg den [Microsoft Graph-Schnellstart](https://developer.microsoft.com/graph/quick-start), oder laden Sie das [Microsoft Graph Connect-Beispiel für UWP (Bibliothek)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) herunter, auf dem dieser Artikel basiert. Beachten Sie auch, dass es eine [REST-Version dieses Beispiels](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample) gibt.
+**Sie möchten keine App erstellen?** Verwenden Sie für einen schnellen Einstieg den [Microsoft Graph-Schnellstart]((https://developer.microsoft.com/graph/quick-start)), oder laden Sie das [Microsoft Graph Connect-Beispiel für UWP (Bibliothek)]((https://github.com/microsoftgraph/uwp-csharp-connect-sample)) herunter, auf dem dieser Artikel basiert. Beachten Sie auch, dass es eine [REST-Version dieses Beispiels]((https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample)) gibt.
 
 ## <a name="sample-user-interface"></a>Beispielbenutzeroberfläche
 
@@ -26,14 +26,14 @@ Die gesamten Zeichenfolgen der Beispielbenutzeroberfläche werden in der Datei �
 
 Für die ersten Schritte benötigen Sie: 
 
-- Ein [Microsoft-Konto](https://www.outlook.com/) oder ein [Geschäfts- oder Schulkonto](http://dev.office.com/devprogram)
-- Visual Studio 2015 
-- Das [Microsoft Graph-Startprojekt für UWP (Bibliothek)](https://github.com/microsoftgraph/uwp-csharp-connect-sample/tree/master/starter). Beide Vorlagen enthalten leere Klassen, denen Sie Code hinzufügen müssen. Außerdem enthalten sie Ressourcenzeichenfolgen. Um dieses Projekt abzurufen, müssen Sie das [Microsoft Graph Connect-Beispiel für UWP (Bibliothek)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) klonen oder herunterladen und dann die Projektmappe im Ordner **starter** öffnen.
+- Ein [Microsoft-Konto]((https://www.outlook.com/)) oder ein [Geschäfts-, Schul- oder Unikonto]((http://dev.office.com/devprogram))
+- Visual Studio 2017 
+- Das [Microsoft Graph-Startprojekt für UWP (Bibliothek)]((https://github.com/microsoftgraph/uwp-csharp-connect-sample)/tree/master/starter). Beide Vorlagen enthalten leere Klassen, denen Sie Code hinzufügen müssen. Außerdem enthalten sie Ressourcenzeichenfolgen. Um dieses Projekt abzurufen, müssen Sie das [Microsoft Graph Connect-Beispiel für UWP (Bibliothek)]((https://github.com/microsoftgraph/uwp-csharp-connect-sample)) klonen oder herunterladen und dann die Projektmappe im Ordner **starter** öffnen.
 
 
 ## <a name="register-the-app"></a>Registrieren der App
  
-1. Melden Sie sich beim [App-Registrierungsportal](https://apps.dev.microsoft.com/) entweder mit Ihrem persönlichen oder geschäftlichen Konto oder mit Ihrem Schulkonto an.
+1. Melden Sie sich beim [App-Registrierungsportal]((https://apps.dev.microsoft.com/)) entweder mit Ihrem persönlichen oder geschäftlichen Konto oder mit Ihrem Schulkonto an.
 2. Klicken Sie auf **App hinzufügen**.
 3. Geben Sie einen Namen für die App ein, und wählen Sie **Anwendung erstellen** aus.
     
@@ -414,11 +414,11 @@ Sie haben nun die erforderlichen Schritte für die Interaktion mit Microsoft Gra
 3. Klicken Sie auf die Schaltfläche **E-Mail senden**. Wenn die E-Mail gesendet wird, wird unter der Schaltfläche eine Erfolgsmeldung angezeigt. Die E-Mail-Nachricht enthält das Foto als Anlage und stellt außerdem einen Freigabelink zur hochgeladenen Datei in OneDrive bereit.
 
 ## <a name="next-steps"></a>Nächste Schritte
-- Testen Sie die REST-API mithilfe des [Graph-Explorers](https://developer.microsoft.com/en-us/graph/graph-explorer).
-- Beispiele allgemeiner Vorgänge sowohl für REST- als auch für SDK-Operationen finden Sie im [Microsoft Graph UWP Snippets-Beispiel (SDK)](https://github.com/microsoftgraph/uwp-csharp-snippets-sample) und im [Microsoft Graph UWP Snippets-Beispiel (REST)](https://github.com/microsoftgraph/uwp-csharp-snippets-rest-sample), oder erforschen Sie unsere [UWP-Bespiele](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=uwp) auf GitHub.
+- Testen Sie die REST-API mithilfe des [Graph-Explorers]((https://developer.microsoft.com/de-DE/graph/graph-explorer)).
+- Beispiele allgemeiner Vorgänge sowohl für REST- als auch für SDK-Operationen finden Sie im [Microsoft Graph UWP Snippets-Beispiel (SDK)]((https://github.com/microsoftgraph/uwp-csharp-snippets-sample)) und im [Microsoft Graph UWP Snippets-Beispiel (REST)]((https://github.com/microsoftgraph/uwp-csharp-snippets-rest-sample)), oder erforschen Sie unsere [UWP-Bespiele](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=uwp) auf GitHub.
 
 ## <a name="see-also"></a>Siehe auch
-- [Microsoft Graph .NET Clientbibliothek](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
-- [Protokolle für Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0-Tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Microsoft Graph .NET Clientbibliothek]((https://github.com/microsoftgraph/msgraph-sdk-dotnet))
+- [Protokolle für Azure AD v2.0]((https://azure.microsoft.com/de-DE/documentation/articles/active-directory-v2-protocols/))
+- [Azure AD v2.0-Tokens]((https://azure.microsoft.com/de-DE/documentation/articles/active-directory-v2-tokens/))
 

@@ -4,6 +4,10 @@ Rufen Sie die [mailboxSettings](../resources/mailboxsettings.md) des Benutzers a
 
 Sie können alle Postfacheinstellungen anzeigen oder bestimmte Einstellungen abrufen.
 
+Zeitzone ist eine bevorzugte Einstellung, die ein Benutzer für das Benutzerpostfach einrichten kann. Gültige Zeitzonenformate sind das Windows-Zeitzonenformat und das [IANA-Zeitzonenformat (Internet Assigned Numbers Authority)]((http://www.iana.org/time-zones)) (auch als Olson-Zeitzone bezeichnet). Das Windows-Format ist die Standardeinstellung. 
+
+Wenn Sie die bevorzugte Zeitzone eines Benutzers abrufen, wird die Zeitzone in dem eingerichteten Format zurückgegeben. Wenn Sie diese Zeitzone in einem bestimmten Format (Windows oder IANA) abrufen möchten, können Sie zunächst [die bevorzugte Zeitzone in das entsprechende Format als Postfacheinstellung ändern](user_update_mailboxsettings.md). Anschließend können Sie die Zeitzone in diesem Format abrufen. Alternativ können Sie die Formatkonvertierung separat in Ihrer App verwalten.
+
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -34,7 +38,7 @@ GET /me/mailboxSettings/timeZone
 GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter]((http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters)) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|

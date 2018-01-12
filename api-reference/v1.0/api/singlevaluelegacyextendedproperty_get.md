@@ -34,7 +34,7 @@ Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich (je n
 ## <a name="http-request"></a>HTTP-Anforderung
 
 #### <a name="get-a-resource-instance-using-expand"></a>Abrufen einer Ressourceninstanz mithilfe von `$expand`
-Hier sehen Sie, wie Sie eine Ressourceninstanz abrufen können, erweitert um die erweiterte Eigenschaft, deren **id**-Eigenschaft dem definierten Filter entspricht. Stellen Sie sicher, dass Sie für die Leerzeichen in der Filterzeichenfolge die [URL-Codierung](http://www.w3schools.com/tags/ref_urlencode.asp) verwenden.
+Hier sehen Sie, wie Sie eine Ressourceninstanz abrufen können, erweitert um die erweiterte Eigenschaft, deren **id**-Eigenschaft dem definierten Filter entspricht. Stellen Sie sicher, dass Sie für die Leerzeichen in der Filterzeichenfolge die [URL-Codierung]((http://www.w3schools.com/tags/ref_urlencode.asp)) verwenden.
 
 Abrufen einer **message**-Instanz:
 <!-- { "blockType": "ignored" } -->
@@ -91,7 +91,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueE
 
 #### <a name="get-resource-instances-using-filter"></a>Abrufen von Ressourceninstanzen mithilfe von `$filter`
 
-Hier sehen Sie, wie Sie alle Instanzen einer unterstützten Ressource abrufen, die eine erweiterte Eigenschaft haben, deren Eigenschaften **id** und **value** dem definierten Filter entsprechen. Stellen Sie sicher, dass Sie für die folgenden Zeichen in der Filterzeichenfolge die [URL-Codierung](http://www.w3schools.com/tags/ref_urlencode.asp) verwenden: Vorwärtsschrägstriche und Leerzeichen.
+Hier sehen Sie, wie Sie alle Instanzen einer unterstützten Ressource abrufen, die eine erweiterte Eigenschaft haben, deren Eigenschaften **id** und **value** dem definierten Filter entsprechen. Stellen Sie sicher, dass Sie für die folgenden Zeichen in der Filterzeichenfolge die [URL-Codierung]((http://www.w3schools.com/tags/ref_urlencode.asp)) verwenden: Doppelpunkte, Vorwärtsschrägstriche und Leerzeichen.
 
 
 Abrufen von **message**-Instanzen:
@@ -152,7 +152,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 |:-----|:-----|:-----|
 |_URL parameters_|
 |id_value|String|Die ID der erweiterten Eigenschaft, nach der gefiltert wird. Sie muss eins der unterstützten Formate aufweisen. Weitere Informationen finden Sie unter [Überblick über erweiterte Eigenschaften in Outlook](../resources/extended-properties-overview.md). Erforderlich.|
-|property_value|String|Der Wert der erweiterten Eigenschaft, nach der gefiltert wird. Erforderlich, wo im Abschnitt **HTTP-Anforderung** oben aufgeführt.|
+|property_value |String|Der Wert der erweiterten Eigenschaft, nach der gefiltert wird. Erforderlich, wo im Abschnitt **HTTP-Anforderung** oben aufgeführt. Wenn {property_value} keine Zeichenfolge ist, müssen Sie sicherstellen, dass `ep/value` explizit in den entsprechenden Edm-Datentyp beim Vergleich mit {property_value} umgewandelt wird. Beispiele finden Sie unter [Anforderung 3](#request-3) weiter unter. |
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
@@ -184,7 +184,7 @@ Im ersten Beispiel wird die angegebene Nachricht abgerufen und um eine einwertig
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA=')?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
 ```
-##### <a name="response-1"></a>Antwort 1
+#### <a name="response-1"></a>Antwort 1
 Der Antworttext enthält alle Eigenschaften der angegebenen Nachricht und die vom Filter zurückgegebene erweiterte Eigenschaft.
 
 Hinweis: Das hier gezeigte **message**-Objekt ist aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
@@ -228,22 +228,56 @@ Content-type: application/json
 }
 ```
 
-****
-
 #### <a name="request-2"></a>Anforderung 2
 
-Das zweite Beispiel ruft Nachrichten ab, die die im Filter spezifizierte einwertige erweiterte Eigenschaft haben. Der Filter gibt die erweiterte Eigenschaft zurück, die folgende Merkmale hat:
+Das zweite Beispiel ruft Nachrichten ab, die die im Filter spezifizierte einwertige erweiterte Eigenschaft vom Typ Zeichenfolge haben. Der Filter sucht nach der erweiterten Eigenschaft, die folgende Merkmale hat:
+
 - Die **id** entspricht der Zeichenfolge `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (URL-Codierung hier zur besseren Lesbarkeit entfernt).
-- Für **value** ist `Green` festgelegt.
+
+- Der **Wert** ist die Zeichenfolge `Green`.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/api/v1.0/Me/messages?$filter=singleValueExtendedProperties%2FAny(ep%3A%20ep%2Fid%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color'%20and%20ep%2Fvalue%20eq%20'Green')
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProperties%2FAny(ep%3A%20ep%2Fid%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color'%20and%20ep%2Fvalue%20eq%20'Green')
 ```
 
-##### <a name="response-2"></a>Antwort 2
+#### <a name="response-2"></a>Antwort 2
 
 Eine erfolgreiche Antwort ist durch den Antwortcode `HTTP 200 OK` gekennzeichnet. Der Antworttext enthält alle Eigenschaften der Nachrichten, die die dem Filter entsprechende erweiterte Eigenschaft haben. Der Antworttext ähnelt der Antwort beim [Abrufen einer Nachrichtensammlung](../api/user_list_messages.md). Die Antwort enthält nicht die dem Filter entsprechende erweiterte Eigenschaft.
+
+
+#### <a name="request-3"></a>Anforderung 3
+
+Die nächsten 2 Beispiele zeigen, wie Sie Nachrichten abrufen, die erweiterte einwertige Eigenschaften vom Typ Nicht-Zeichenfolge enthalten. Zur besseren Lesbarkeit ist die erforderliche URL-Codierung dort nicht enthalten.
+
+Das folgende Beispiel zeigt einen Filter, der nach der erweiterte Eigenschaft mit den folgenden Merkmalen sucht:
+
+- Die **id** entspricht der Zeichenfolge `CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid`.
+
+- Der **Wert** ist die GUID `b9cf8971-7d55-4b73-9ffa-a584611b600b`. Wenn Sie den Eigenschaftswert mit einer GUID vergleichen möchten, ändern Sie `ep/value` in `Edm.Guid`.
+
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProperties/any(ep:ep/id eq 'CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid' and cast(ep/value, Edm.Guid) eq (b9cf8971-7d55-4b73-9ffa-a584611b600b))
+```
+
+Das folgende Beispiel zeigt einen Filter, der nach der erweiterte Eigenschaft mit den folgenden Merkmalen sucht:
+
+- Die **id** entspricht der Zeichenfolge `Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete`.
+
+- Der **Wert** ist gleich der ganzen Zahl 12. Um den Eigenschaftswert mit einer ganzen Zahl zu vergleichen, ändern Sie `ep/value` in `Edm.Int32`.
+
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProperties/any(ep:ep/id eq 'Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete' and cast(ep/value, Edm.Int32) eq 12)
+```
+
+
+#### <a name="response-3"></a>Antwort 3
+
+Bei den zwei vorhergehenden Beispielen ist eine erfolgreiche Antwort durch den Antwortcode `HTTP 200 OK` gekennzeichnet. Der Antworttext enthält alle Eigenschaften der Nachrichten, die die dem Filter entsprechende erweiterte Eigenschaft haben. Der Antworttext ähnelt der Antwort beim [Abrufen einer Nachrichtensammlung](../api/user_list_messages.md). Die Antwort enthält nicht die dem Filter entsprechende erweiterte Eigenschaft.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
