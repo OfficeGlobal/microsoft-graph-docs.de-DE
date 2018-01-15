@@ -17,7 +17,7 @@ GET /workbook/tables/{id|name}/columns
 GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter]((http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters)) zur Anpassung der Antwort.  Verwenden Sie für zuverlässige Ergebnisse die Abfrageparameter [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) und [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) zum Blättern durch die Ergebnisse. Dies hilft, Leistungsprobleme im Zusammenhang mit großen Resultsets zu vermeiden.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
@@ -39,7 +39,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "get_columns"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns?$top=5&$skip=5
 ```
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
@@ -66,7 +66,8 @@ Content-length: 126
 }
 ```
 
-> **Hinweis:** Verwenden Sie die Abfrageparameter [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) und [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) zum Blättern durch eine große Anzahl von Spalten.
+> 
+  **Hinweis:** Verwenden Sie die Abfrageparameter [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) und [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) zum Blättern durch eine große Anzahl von Spalten.
 
 Beispiel: 
 

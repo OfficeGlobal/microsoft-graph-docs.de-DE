@@ -1,6 +1,11 @@
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 
 Fügt der Tabelle eine neue Zeile hinzu.
+
+## <a name="error-handling"></a>Fehlerbehandlung
+
+Bei dieser Anforderung tritt gelegentlich der 504 HTTP-Fehler auf. Sollte dieser Fehler auftreten,  wiederholen Sie die Anforderung.
+
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
