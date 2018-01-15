@@ -8,9 +8,9 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.AccessAsUser.All    |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.AccessAsUser.All |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Device.ReadWrite.All |
+|Anwendung | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +33,7 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zu
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+
 <!-- {
   "blockType": "request",
   "name": "delete_device"
@@ -42,7 +42,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 DELETE https://graph.microsoft.com/v1.0/devices/{id}
 ```
 ##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort.
+
 <!-- {
   "blockType": "response",
   "truncated": true
