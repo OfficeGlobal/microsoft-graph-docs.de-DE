@@ -41,4 +41,4 @@ Folgende Ressourcen bieten derzeit einen Retry-After-Header:
 - [Personen und soziale Netzwerke](../api-reference/beta/resources/social_overview.md)
 - [Drive (OneDrive)](../api-reference/v1.0/resources/drive.md)
 
-Eine ausführlichere Erläuterung zum Thema Einschränkung in der Microsoft Cloud finden Sie unter [Throttling]((https://msdn.microsoft.com/de-DE/library/office/dn589798.aspx)).
+Eine ausführlichere Erläuterung zum Thema Einschränkung in der Microsoft Cloud finden Sie unter [Throttling](https://msdn.microsoft.com/de-DE/library/office/dn589798.aspx).

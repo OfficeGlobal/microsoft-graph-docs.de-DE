@@ -6,7 +6,7 @@ Diese Einstellungen können Sie im Rahmen des [mailboxSettings](../resources/mai
 
 **Hinweis:** Sie können keine Postfacheinstellungen erstellen oder löschen.
 
-Wenn Sie die bevorzugte Zeitzone für einen Benutzer aktualisieren, können Sie diese im Windows- oder im [IANA-Format]((http://www.iana.org/time-zones)) (auch als Olson-Zeitzone bezeichnet) angeben.
+Wenn Sie die bevorzugte Zeitzone für einen Benutzer aktualisieren, können Sie diese im Windows- oder im [IANA-Format](http://www.iana.org/time-zones) (auch als Olson-Zeitzone bezeichnet) angeben.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
@@ -24,7 +24,7 @@ PATCH /me/mailboxSettings
 PATCH /users/{id|userPrincipalName}/mailboxSettings
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter]((http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters)) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|

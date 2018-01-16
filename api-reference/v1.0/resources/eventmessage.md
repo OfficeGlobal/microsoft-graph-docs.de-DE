@@ -54,7 +54,7 @@ Abgesehen von einer Besprechungsanfrage wird eine **eventMessage**-Instanz im Or
 |ID|String||
 |Wichtigkeit|String| Wichtigkeit der Nachricht: `low`, `normal`, `high`.|
 |inferenceClassification|String| Mögliche Werte: `focused`, `other`.|
-|internetMessageId |String |Die Nachrichten-ID im von [RFC2822]((http://www.ietf.org/rfc/rfc2822.txt)) angegebenen Format. |
+|internetMessageId |String |Die Nachrichten-ID im von [RFC2822](http://www.ietf.org/rfc/rfc2822.txt) angegebenen Format. |
 |isDeliveryReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
 |isDraft|Boolean|Gibt an, ob die Nachricht ein Entwurf ist. Eine Nachricht ist ein Entwurf, solange sie noch nicht gesendet wurde.|
 |isRead|Boolean|Gibt an, ob die Nachricht gelesen wurde.|

@@ -21,7 +21,7 @@ Microsoft Graph stellt optionale Abfrageparameter bereit, die Sie zum Festlegen 
 
 Diese Parameter sind mit der [OData V4-Abfragesprache][odata-query] kompatibel. Nicht alle Parameter werden über alle Microsoft Graph-APIs hinweg unterstützt, und die Unterstützung kann zwischen dem `v1.0`- und dem `beta`-Endpunkt erheblich abweichen. 
 
-> **Hinweis:** Am `beta`-Endpunkt ist das `$`-Präfix optional. Sie können z. B. `filter` anstelle von `$filter` verwenden. Weitere Informationen und Beispiele finden Sie unter [Abfrageparameter ohne $ Präfixe in Microsoft Graph unterstützen]((http://dev.office.com/queryparametersinMicrosoftGraph)).
+> **Hinweis:** Am `beta`-Endpunkt ist das `$`-Präfix optional. Sie können z. B. `filter` anstelle von `$filter` verwenden. Weitere Informationen und Beispiele finden Sie unter [Abfrageparameter ohne $ Präfixe in Microsoft Graph unterstützen](http://dev.office.com/queryparametersinMicrosoftGraph).
 
 ## <a name="encoding-query-parameters"></a>Codieren von Abfrageparametern
 
@@ -210,7 +210,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
 ```
 Weitere Informationen zu KQL, darunter zur Syntax, den unterstützten Operatoren und Tipps für die Suche finden Sie in den folgenden Artikeln:
 
-- [Syntaxreferenz für die Keyword Query Language (KQL)]((https://docs.microsoft.com/de-DE/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference))
+- [Syntaxreferenz für die Keyword Query Language (KQL)](https://docs.microsoft.com/de-DE/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 - 
   [Nachrichteneigenschaften und Suchoperatoren für In-Situ-eDiscovery in Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)

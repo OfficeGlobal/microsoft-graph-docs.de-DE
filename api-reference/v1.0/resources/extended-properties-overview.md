@@ -17,7 +17,7 @@ Möglich sind auch die folgenden Office 365-Gruppenressourcen:
 
 ## <a name="use-extended-properties-or-open-extensions"></a>Sollten erweiterte Eigenschaften oder offene Erweiterungen verwendet werden?
 
-In den meisten üblichen Szenarios sollten offene Erweiterungen verwendet werden können (dargestellt durch [openTypeExtension](../resources/opentypeextension.md) und bisher als Office 365-Datenerweiterungen bezeichnet), um benutzerdefinierte Daten für Ressourceninstanzen im Postfach eines Benutzers zu speichern oder darauf zuzugreifen. Verwenden Sie erweiterte Eigenschaften nur, wenn Sie auf benutzerdefinierte Daten für Outlook-MAPI-Eigenschaften zugreifen müssen, die nicht bereits in den [Microsoft Graph-API-Metadaten]((http://developer.microsoft.com/de-DE/graph/docs/overview/call_api)) verfügbar gemacht wurden. 
+In den meisten üblichen Szenarios sollten offene Erweiterungen verwendet werden können (dargestellt durch [openTypeExtension](../resources/opentypeextension.md) und bisher als Office 365-Datenerweiterungen bezeichnet), um benutzerdefinierte Daten für Ressourceninstanzen im Postfach eines Benutzers zu speichern oder darauf zuzugreifen. Verwenden Sie erweiterte Eigenschaften nur, wenn Sie auf benutzerdefinierte Daten für Outlook-MAPI-Eigenschaften zugreifen müssen, die nicht bereits in den [Microsoft Graph-API-Metadaten](http://developer.microsoft.com/de-DE/graph/docs/overview/call_api) verfügbar gemacht wurden. 
 
 ## <a name="types-of-extended-properties"></a>Typen erweiterter Eigenschaften
 
@@ -34,7 +34,7 @@ Sie können die **ID** verwenden, um eine spezifische Ressourceninstanz zusammen
 
 Wenn Sie eine einwertige oder mehrwertige erweiterte Eigenschaft erstellen, können Sie die **id**-Eigenschaft in einem von zwei Formaten angeben, basierend auf einem Zeichenfolgennamen (**Name**) oder numerischen Bezeichner (**Id**) und auf dem tatsächlichen Typ des Werts bzw. der Werte der Eigenschaft. Die folgenden zwei Tabellen enthalten die unterstützten Formate zum Angeben von ein- oder mehrwertigen erweiterten Eigenschaften. {_type_} stellt den Typ des Werts bzw. der Werte für die Eigenschaft dar. In den Beispielen sind dies Zeichenfolgen, ganze Zahlen und Arrays dieser Typen.
 
-Da erweiterte Eigenschaften in den meisten Fällen mit definierten MAPI-Eigenschaften zusammenarbeiten, die nicht in den Microsoft Graph-API-Metadaten verfügbar gemacht wurden, sollte das Format der Einfachheit halber angeben, ob die entsprechende MAPI-Eigenschaft eine Zeichenfolge aus Zeichen oder einen numerischen Wert in ihrem [MAPI-Eigenschaftsbezeichner]((https://msdn.microsoft.com/de-DE/library/office/cc815528.aspx)) verwendet.
+Da erweiterte Eigenschaften in den meisten Fällen mit definierten MAPI-Eigenschaften zusammenarbeiten, die nicht in den Microsoft Graph-API-Metadaten verfügbar gemacht wurden, sollte das Format der Einfachheit halber angeben, ob die entsprechende MAPI-Eigenschaft eine Zeichenfolge aus Zeichen oder einen numerischen Wert in ihrem [MAPI-Eigenschaftsbezeichner](https://msdn.microsoft.com/de-DE/library/office/cc815528.aspx) verwendet.
 Informationen zum Zuordnen einer erweiterten Eigenschaft zu einer vorhandenen MAPI-Eigenschaft wie dem Eigenschaftsbezeichner und der GUID finden Sie unter \[MS-OXPROPS\] Microsoft Corporation, [„Eigenschaften für Exchange Server-Protokolle“](https://msdn.microsoft.com/en-us/library/cc433490%28v=exchg.80%29.aspx).
 
 **Hinweis** Nachdem Sie ein Format für die **ID** ausgewählt haben, sollten Sie nur mit diesem Format auf die betreffende erweiterte Eigenschaft zugreifen.

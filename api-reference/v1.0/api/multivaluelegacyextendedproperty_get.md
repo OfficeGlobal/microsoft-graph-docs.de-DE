@@ -31,7 +31,7 @@ Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich (je n
  
 ## <a name="http-request"></a>HTTP-Anforderung
 
-Rufen Sie eine erweiterte Ressourceninstanz mit erweiterter Eigenschaft ab, die einem Filter für die **id**-Eigenschaft entspricht. Stellen Sie sicher, dass Sie die [URL-Codierung]((http://www.w3schools.com/tags/ref_urlencode.asp)) auf die Leerzeichen in der Filterzeichenfolge anwenden.
+Rufen Sie eine erweiterte Ressourceninstanz mit erweiterter Eigenschaft ab, die einem Filter für die **id**-Eigenschaft entspricht. Stellen Sie sicher, dass Sie die [URL-Codierung](http://www.w3schools.com/tags/ref_urlencode.asp) auf die Leerzeichen in der Filterzeichenfolge anwenden.
 
 Abrufen einer **message**-Instanz:
 <!-- { "blockType": "ignored" } -->

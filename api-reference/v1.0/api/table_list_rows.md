@@ -17,7 +17,7 @@ GET /workbook/tables/{id|name}/rows
 GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter]((http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters)) zur Anpassung der Antwort.  Verwenden Sie für zuverlässige Ergebnisse die Abfrageparameter [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) und [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) zum Blättern durch die Ergebnisse. Dies hilft, Leistungsprobleme im Zusammenhang mit großen Resultsets zu vermeiden.
+Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters) zur Anpassung der Antwort.  Verwenden Sie für zuverlässige Ergebnisse die Abfrageparameter [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) und [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) zum Blättern durch die Ergebnisse. Dies hilft, Leistungsprobleme im Zusammenhang mit großen Resultsets zu vermeiden.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|

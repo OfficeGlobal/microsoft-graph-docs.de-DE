@@ -34,7 +34,7 @@ Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich (je n
 ## <a name="http-request"></a>HTTP-Anforderung
 
 #### <a name="get-a-resource-instance-using-expand"></a>Abrufen einer Ressourceninstanz mithilfe von `$expand`
-Hier sehen Sie, wie Sie eine Ressourceninstanz abrufen können, erweitert um die erweiterte Eigenschaft, deren **id**-Eigenschaft dem definierten Filter entspricht. Stellen Sie sicher, dass Sie für die Leerzeichen in der Filterzeichenfolge die [URL-Codierung]((http://www.w3schools.com/tags/ref_urlencode.asp)) verwenden.
+Hier sehen Sie, wie Sie eine Ressourceninstanz abrufen können, erweitert um die erweiterte Eigenschaft, deren **id**-Eigenschaft dem definierten Filter entspricht. Stellen Sie sicher, dass Sie für die Leerzeichen in der Filterzeichenfolge die [URL-Codierung](http://www.w3schools.com/tags/ref_urlencode.asp) verwenden.
 
 Abrufen einer **message**-Instanz:
 <!-- { "blockType": "ignored" } -->
@@ -91,7 +91,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueE
 
 #### <a name="get-resource-instances-using-filter"></a>Abrufen von Ressourceninstanzen mithilfe von `$filter`
 
-Hier sehen Sie, wie Sie alle Instanzen einer unterstützten Ressource abrufen, die eine erweiterte Eigenschaft haben, deren Eigenschaften **id** und **value** dem definierten Filter entsprechen. Stellen Sie sicher, dass Sie für die folgenden Zeichen in der Filterzeichenfolge die [URL-Codierung]((http://www.w3schools.com/tags/ref_urlencode.asp)) verwenden: Doppelpunkte, Vorwärtsschrägstriche und Leerzeichen.
+Hier sehen Sie, wie Sie alle Instanzen einer unterstützten Ressource abrufen, die eine erweiterte Eigenschaft haben, deren Eigenschaften **id** und **value** dem definierten Filter entsprechen. Stellen Sie sicher, dass Sie für die folgenden Zeichen in der Filterzeichenfolge die [URL-Codierung](http://www.w3schools.com/tags/ref_urlencode.asp) verwenden: Doppelpunkte, Vorwärtsschrägstriche und Leerzeichen.
 
 
 Abrufen von **message**-Instanzen:
