@@ -33,7 +33,7 @@ Die folgende Tabelle zeigt die Eigenschaften der [Gruppe](../resources/group.md)
 | Eigenschaft | Typ | Beschreibung|
 |:---------------|:--------|:----------|
 | displayName | string | Der Name der Gruppe, der im Adressbuch angezeigt wird. |
-| mailEnabled | Boolescher Wert | **true** für E-Mail-aktivierte Gruppen. **true**, wenn eine Office 365-Gruppe erstellt wird. **false**, wenn dynamische oder Sicherheitsgruppe erstellt wird.|
+| mailEnabled | Boolescher Wert | **true** für E-Mail-aktivierte Gruppen. **true**, wenn eine Office 365-Gruppe erstellt wird. **false**, wenn eine dynamische oder eine Sicherheitsgruppe erstellt wird.|
 | mailNickname | string | Der E-Mail-Alias für die Gruppe. |
 | securityEnabled | Boolescher Wert | **true** für Gruppen mit aktivierter Sicherheit. **true**, wenn dynamische oder eine Sicherheitsgruppe erstellt wird. **false**, wenn eine Office 365-Gruppe erstellt wird. |
 
@@ -55,7 +55,7 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und
 Nachfolgend sehen Sie ein Beispiel für eine Anforderung, die eine Office 365-Gruppe erstellt.
 <!-- {
   "blockType": "request",
-  "name": "create_group_from_groups"
+  "name": "create_group"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups

@@ -19,7 +19,11 @@ GET /groups/delta
 ```
 
 ### <a name="query-parameters"></a>Abfrageparameter
-Beim Nachverfolgen von Änderungen in Gruppen wird eine Runde von einem oder mehreren **delta**-Funktionsaufrufen ausgeführt. Wenn Sie Abfrageparameter (außer `$deltatoken` und `$skiptoken`) verwenden, müssen Sie sie in der ursprünglichen **delta**-Anforderung angeben. Microsoft Graph codiert automatisch alle angegebenen Parameter in den Tokenteil der in der Antwort enthaltenen `nextLink`- oder `deltaLink`-URL. Sie müssen alle gewünschten Abfrageparameter nur einmal im Vorfeld angeben. In nachfolgenden Anforderungen können Sie die `nextLink`- oder `deltaLink`-URL aus der vorherigen Antwort kopieren und anwenden, da diese URL bereits die codierten gewünschten Parameter enthält.
+Beim Nachverfolgen von Änderungen in Gruppen wird eine Runde von einem oder mehreren **delta**-Funktionsaufrufen ausgeführt. Wenn Sie Abfrageparameter (außer `$deltatoken` und `$skiptoken`) verwenden, müssen Sie sie in der ursprünglichen **delta**-Anforderung angeben. Microsoft Graph codiert automatisch alle angegebenen Parameter in den Tokenteil der in der Antwort enthaltenen `nextLink`- oder `deltaLink`-URL.
+
+Sie müssen alle gewünschten Abfrageparameter nur einmal im Vorfeld angeben.
+
+In nachfolgenden Anforderungen können Sie die  `nextLink`- oder `deltaLink`-URL aus der vorherigen Antwort kopieren und anwenden, da diese URL bereits die codierten gewünschten Parameter enthält.
 
 | Abfrageparameter      | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
@@ -56,6 +60,7 @@ Siehe:</br>
     
 ## <a name="example"></a>Beispiel
 #### <a name="request"></a>Anforderung
+Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -65,6 +70,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 ```
 
 #### <a name="response"></a>Antwort
+Nachfolgend sehen Sie ein Beispiel der Antwort.
 >**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 
 <!-- {
