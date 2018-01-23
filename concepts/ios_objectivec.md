@@ -2,9 +2,9 @@
 
 > **Sie erstellen Apps für Unternehmenskunden?** Ihre App funktioniert möglicherweise nicht, wenn Ihr Unternehmenskunde Enterprise Mobility-Sicherheitsfunktionen wie <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">bedingten Gerätezugriff</a> aktiviert. In diesem Fall treten bei Ihren Kunden möglicherweise Fehler auf. 
 
-> Zur Unterstützung **aller Unternehmenskunden** über **alle Unternehmensszenarien** hinweg müssen Sie den Azure AD-Endpunkt verwenden und Ihr Apps mithilfe des [Azure-Verwaltungsportals](https://aka.ms/aadapplist) verwalten. Weitere Informationen finden Sie in dem Artikel zum Thema [Entscheidung zwischen dem Azure AD- und dem Azure AD v2.0-Endpunkt](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
+> Zur Unterstützung **aller Unternehmenskunden** über **alle Unternehmensszenarien** hinweg müssen Sie den Azure AD-Endpunkt verwenden und Ihr Apps mithilfe des [Azure-Portals](https://aka.ms/aadapplist) verwalten. Weitere Informationen finden Sie unter [Entscheiden zwischen dem Azure AD- und dem Azure AD v2.0-Endpunkt](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
-Dieser Artikel beschreibt die erforderlichen Aufgaben zum Abrufen eines Zugriffstokens vom [Azure AD v2.0-Endpunkt](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth) und zum Aufrufen von Microsoft Graph. Er führt Sie durch den Code im [Office 365 Connect-Beispiel für iOS (SDK)](https://github.com/microsoftgraph/ios-objectivec-connect-sample) und erläutert die wichtigsten Konzepte, die in einer App implementiert werden müssen, die Microsoft Graph verwendet. In diesem Artikel wird auch beschrieben, wie Sie mithilfe des [Microsoft Graph SDK für iOS](https://github.com/microsoftgraph/msgraph-sdk-ios) auf Microsoft Graph zugreifen.
+Dieser Artikel beschreibt die erforderlichen Aufgaben zum Abrufen eines Zugriffstokens vom [Azure AD v2.0-Endpunkt](https://developer.microsoft.com/de-DE/graph/docs/concepts/converged_auth) und zum Aufrufen von Microsoft Graph. Er führt Sie durch den Code im [Office 365 Connect-Beispiel für iOS (SDK)](https://github.com/microsoftgraph/ios-objectivec-connect-sample) und erläutert die wichtigsten Konzepte, die in einer App implementiert werden müssen, die Microsoft Graph verwendet. In diesem Artikel wird auch beschrieben, wie Sie mithilfe des [Microsoft Graph SDK für iOS](https://github.com/microsoftgraph/msgraph-sdk-ios) auf Microsoft Graph zugreifen.
 
 Sie können die Version der App, die Sie erstellen, aus diesem GitHub Repository herunterladen:
 
@@ -17,7 +17,7 @@ In der folgenden Abbildung ist die App dargestellt, die Sie erstellen.
 
 Der Workflow beinhaltet das Herstellen einer Verbindung zu Microsoft Graph sowie die Authentifizierung, das Anmelden mit Ihrem Büro- oder persönlichen Konto und schließlich das Senden einer E-Mail an einen Empfänger.
 
-**Sie möchten keine App erstellen?** Verwenden Sie für einen schnellen Einstieg den [Schnellstart Microsoft Graph](https://graph.microsoft.io/en-us/getting-started).
+**Sie möchten keine App erstellen?** Verwenden Sie für einen schnellen Einstieg den [Schnellstart Microsoft Graph](https://graph.microsoft.io/de-DE/getting-started).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -103,7 +103,7 @@ Für den Zugriff auf den Benutzeroberflächenworkflow muss die App den Benutzer 
    }
 ```     
 
-2. Als Nächstes fügen Sie die Methode in der Header-Datei hinzu. Öffnen Sie die Datei **AuthenticationProvider.h**, und fügen Sie dieser Klasse den folgenden Code hinzu.
+2. Als Nächstes fügen Sie die Methode in der Header-Datei hinzu. Öffnen Sie die Datei **AuthenticationProvider.h** und fügen Sie dieser Klasse den folgenden Code hinzu.
    ```objectivec
    -(void) connectToGraphWithClientId:(NSString *)clientId
                                scopes:(NSArray *)scopes
@@ -208,7 +208,7 @@ Nach dem Konfigurieren des Projekts für die Authentifizierung wird in den näch
     }
 ```
 3. Öffnen Sie **SendMailViewController.m.** Fügen Sie die folgende Methode zu der Klasse hinzu.
-Mit **UploadPictureToOneDrive** wird das Profilbild des [Benutzers](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) aus den [Benutzerinformationen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) hochgeladen. Die URL für die Webfreigabe wird in den Textkörper der E-Mail eingebettet, die vom Beispiel zurückgegeben wird.
+Mit **UploadPictureToOneDrive** wird das Profilbild des [Benutzers](https://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/resources/user) aus den [Benutzerinformationen](https://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/resources/user) hochgeladen. Die URL für die Webfreigabe wird in den Textkörper der E-Mail eingebettet, die vom Beispiel zurückgegeben wird.
 
   ```objectivec
   -(void) uploadPictureToOneDrive: (UIImage *) image completion:(void(^) (NSString*, NSError*))completionBlock{
@@ -235,7 +235,7 @@ Mit **UploadPictureToOneDrive** wird das Profilbild des [Benutzers](https://deve
     }
   ```
 4. Öffnen Sie **SendMailViewController.m.** und fügen Sie die folgende Methode zu der Klasse hinzu. 
-**getUserPicture** gibt das Profilbild des [Benutzers](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) zurück, falls dieses verfügbar ist.
+**getUserPicture** gibt das Profilbild des [Benutzers](https://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/resources/user) zurück, falls dieses verfügbar ist.
    ```objectivec
    -(void) getUserPicture: (NSString *)url completion:(void(^) (UIImage*, NSError*))completionBlock {
     
@@ -254,7 +254,7 @@ Mit **UploadPictureToOneDrive** wird das Profilbild des [Benutzers](https://deve
 
    ```
 3. Öffnen Sie **SendMailViewcontroller.m.** und fügen Sie die folgende Methode zu der Klasse hinzu.
-Diese Methode ruft die [Benutzerressource](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) ab, die den authentifizierten Benutzer repräsentiert, speichert die zum Abrufen des Profilbilds des Benutzers notwendigen Felder zwischen und versendet eine E-Mail-Nachricht.
+Diese Methode ruft die [Benutzerressource](https://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/resources/user) ab, die den authentifizierten Benutzer repräsentiert, speichert die zum Abrufen des Profilbilds des Benutzers notwendigen Felder zwischen und versendet eine E-Mail-Nachricht.
    ```objectivec
    //Retrieve the logged in user's display name and email address
    -(void) getUserInfo: (NSString *)url completion:(void(^) ( NSError*))completionBlock{
@@ -334,5 +334,5 @@ Diese Methode ruft die [Benutzerressource](https://developer.microsoft.com/en-us
 
 ## <a name="see-also"></a>Siehe auch
 - [Microsoft Graph SDK für iOS](https://github.com/microsoftgraph/msgraph-sdk-ios)
-- [Protokolle für Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0-Tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Protokolle für Azure AD v2.0](https://azure.microsoft.com/de-DE/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0-Tokens](https://azure.microsoft.com/de-DE/documentation/articles/active-directory-v2-tokens/)

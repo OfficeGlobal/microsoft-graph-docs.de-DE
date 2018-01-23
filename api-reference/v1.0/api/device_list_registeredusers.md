@@ -1,13 +1,18 @@
 # <a name="list-registeredusers"></a>registeredUsers auflisten
 
 Dient zum Abrufen einer Liste von Benutzern, die registrierte Benutzer des Geräts sind.
-## <a name="permissions"></a>Berechtigungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](../../../concepts/permissions_reference.md).
 
-- Device.ReadWrite.All und User.ReadBasic.All
-- Directory.Read.All
-- Directory.ReadWrite.All 
-- Directory.AccessAsUser.All
+Für mit der Cloud verknüpfte Geräte und registrierte persönliche Geräte werden registrierte Benutzer bei der Registrierung auf den gleichen Wert wie registrierte Besitzer festgelegt.
+
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+
+
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
+|Anwendung | Device.ReadWrite.All and User.ReadBasic.All oder Directory.Read.All oder Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -15,7 +20,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 GET /devices/{id}/registeredUsers
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|

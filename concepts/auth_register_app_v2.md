@@ -5,7 +5,7 @@ Ihre App muss bei Azure AD registriert werden. Durch Registrieren Ihrer App werd
 
 > **Hinweis:** Dieser Artikel befasst sich in erster Linie mit dem Registrieren von Apps beim Azure AD v2.0-Endpunkt. Informationen zum Registrieren Ihrer App beim Azure AD-Endpunkt finden Sie unter [Überlegungen zum Azure AD-Endpunkt](#azure-ad-endpoint-considerations) weiter unten.
 > 
-> Beachten Sie außerdem Folgendes: Wenn Sie bereits zuvor Apps im Microsoft Azure-Verwaltungsportal registriert haben, werden diese nicht im App-Registrierungsportal aufgeführt. Verwalten Sie diese Apps im Azure Verwaltungsportal. 
+> Beachten Sie außerdem Folgendes: Wenn Sie bereits zuvor Apps im Microsoft Azure-Portal registriert haben, werden diese nicht im App-Registrierungsportal aufgeführt. Verwalten Sie diese Apps im Azure-Portal. 
 
 
 Der folgende Screenshot zeigt ein Beispiel für die Registrierung einer Web-App, die mit einem Kennwort und implizitem Fluss konfiguriert wurde. ![Web-App-Registrierung mit Kennwort und Zulassung des impliziten Flusses](./images/v2-web-registration.png)
@@ -67,7 +67,7 @@ Die folgende Tabelle zeigt die Eigenschaften, die Sie für verschiedene Arten vo
 
 Apps, die eine Funktion zur Administratorzustimmung bereitstellen, benötigen möglicherweise eine zusätzliche Umleitungs-URL, an die Azure AD die Antwort zurückgeben kann.
 
-Weitere Details zum App-Registrierungsportal und zu den Eigenschaften, die Sie für Ihre App konfigurieren können, finden Sie in der [Referenz zur App-Registrierung](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-registration-portal).  
+Weitere Details zum App-Registrierungsportal und zu den Eigenschaften, die Sie für Ihre App konfigurieren können, finden Sie in der [Referenz zur App-Registrierung](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-v2-registration-portal).  
 
 ## <a name="azure-ad-endpoint-considerations"></a>Überlegungen zum Azure AD-Endpunkt
 

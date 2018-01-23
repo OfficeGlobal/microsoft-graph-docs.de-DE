@@ -2,15 +2,16 @@
 
 Mit dieser API können Sie die Eigenschaften eines registrierten Geräts aktualisieren.
 
+Nur bestimmte Eigenschaften eines Geräts können über genehmigte Geräteverwaltungs-App (Mobile Device Management, MDM) aktualisiert werden.
+
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.AccessAsUser.All    |
-|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Device.ReadWrite.All |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt |
+|Anwendung | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -25,7 +26,17 @@ PATCH /devices/{id}
 | Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext die Werte für die Eigenschaften des [device](../resources/device.md)-Objekts an, die aktualisiert werden sollen.
+
+Geben Sie im Anforderungstext die Werte für die Eigenschaften des [device](../resources/device.md)-Objekts an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.
+
+| Eigenschaft     | Typ   |Beschreibung|
+|:---------------|:--------|:----------|
+|accountEnabled|Boolean| **true**, wenn das Konto aktiviert ist; andernfalls **false**. |
+|operatingSystem|Zeichenfolge|Der Typ des Betriebssystems auf dem Gerät.|
+|operatingSystemVersion|Zeichenfolge|Die Version des Betriebssystems auf dem Gerät.|
+|displayName|Zeichenfolge|Der Anzeigename für das Gerät.|
+|isCompliant|Boolean|**true**, wenn das Gerät den Richtlinien für mobile Geräteverwaltung ( Mobile Device Management, MDM) entspricht; andernfalls **false**. Dies kann nur von einer genehmigten Geräteverwaltungs-App aktualisiert werden. |
+|isManaged|Boolescher Wert|**true**, wenn das Gerät durch die mobile Geräteverwaltungs-App verwaltet wird; andernfalls **false**. Dies kann nur von einer genehmigten Geräteverwaltungs-App aktualisiert werden. |
 
 ## <a name="response"></a>Antwort
 
@@ -33,7 +44,7 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zu
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+
 <!-- {
   "blockType": "request",
   "name": "update_device"
@@ -41,13 +52,14 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 PATCH https://graph.microsoft.com/v1.0/devices/{id}
 Content-type: application/json
+Content-length: 31
 
 {
-  "accountEnabled": true
+  "accountEnabled": false
 }
 ```
 ##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

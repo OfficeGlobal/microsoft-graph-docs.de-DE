@@ -1,6 +1,6 @@
 # <a name="associate-your-office-365-account-with-azure-ad-to-create-and-manage-apps"></a>Zuordnen des Office 365-Kontos zu Azure AD zum Erstellen und Verwalten von Apps
 
-Um die Anwendung zu authentifizieren, müssen Sie diese in Microsoft Azure Active Directory (Azure AD) registrieren. Hier werden die Office 365-Benutzerkonto- und Anwendungsinformationen gespeichert. Zum Verwalten von Azure AD über das Azure-Verwaltungsportal benötigen Sie ein Microsoft Azure-Abonnement. Sie können das Verwaltungsportal in Microsoft Azure zum Verwalten von Benutzern, Rollen und Apps verwenden.. 
+Um die Anwendung zu authentifizieren, müssen Sie diese in Microsoft Azure Active Directory (Azure AD) registrieren. Hier werden die Office 365-Benutzerkonto- und Anwendungsinformationen gespeichert. Zum Verwalten von Azure AD über das Azure-Portal benötigen Sie ein Microsoft Azure-Abonnement. Sie können das Portal in Microsoft Azure zum Verwalten von Benutzern, Rollen und Apps verwenden.. 
 
 In diesem Artikel wird gezeigt, wie Sie Ihr Office 365-Konto zu Azure AD zuordnen, um Apps zu erstellen und zu verwalten.
 
@@ -12,7 +12,7 @@ In diesem Artikel wird gezeigt, wie Sie Ihr Office 365-Konto zu Azure AD zuordne
 
 Wenn Sie über kein Office 365 for Business-Konto verfügen, müssen Sie folgende Aktionen durchführen:
 
-- Registrieren Sie sich für einen oben aufgeführten [Office 365 for Business-Plan](http://products.office.com/en-us/business/compare-office-365-for-business-plans), oder
+- Registrieren Sie sich für einen oben aufgeführten [Office 365 for Business-Plan](http://products.office.com/de-DE/business/compare-office-365-for-business-plans), oder
 - [Nehmen Sie am Office 365 Entwicklerprogramm teil, und erhalten Sie ein kostenloses Abonnement für Office 365 für 1 Jahr](https://aka.ms/devprogramsignup).
 
 **Microsoft Azure-Abonnement** 
@@ -27,7 +27,7 @@ Wenn Sie über kein Office 365 for Business-Konto verfügen, müssen Sie folgend
 ## <a name="to-associate-an-existing-azure-subscription-with-your-office-365-account"></a>So ordnen Sie ein vorhandenes Azure-Abonnement zu Ihrem Office 365-Konto zu
 
 
-1. Melden Sie sich bei dem [Microsoft Azure-Verwaltungsportal](https://manage.windowsazure.com) mit Ihren vorhandenen Azure-Anmeldeinformationen an (z. B. Microsoft-ID wie user@live.com).
+1. Melden Sie sich bei dem [Microsoft Azure-Portal](https://portal.azure.com) mit Ihren vorhandenen Azure-Anmeldeinformationen an (z. B. Microsoft-ID wie user@live.com).
         
 2. Wählen Sie **Active Directory**, und wählen Sie dann die Registerkarte **Verzeichnis**, und wählen Sie am unteren Rand des Bildschirms **Neu**. 
      
@@ -35,7 +35,7 @@ Wenn Sie über kein Office 365 for Business-Konto verfügen, müssen Sie folgend
     
 5. Wählen Sie unter **Verzeichnis hinzufügen** in der Dropdownliste **Verzeichnis** die Option **Bestehendes Verzeichnis verwenden** aus. Aktivieren Sie das Kontrollkästchen **Ich bin jetzt für die Abmeldung bereit** in der unteren rechten Ecke. 
     
-    Damit kehren Sie zum Azure-Verwaltungsportal zurück.
+    Damit kehren Sie zum Azure-Portal zurück.
         
 3. Melden Sie sich mit Ihren Office 365-Kontoinformationen an. 
     
@@ -77,10 +77,10 @@ Wenn Sie über kein Office 365 for Business-Konto verfügen, müssen Sie folgend
             
 4. Wählen Sie nach Erstellung des Azure-Abonnements **Portal** aus.
         
-5. Azure Tour wird angezeigt. Sie können Azure Tour anzeigen oder**X** wählen, um es zu schließen.
+5. Azure Tour wird angezeigt. Sie können Azure Tour anzeigen oder **X** wählen, um es zu schließen.
         
     Jetzt sollten alle Elemente im Azure-Abonnement angezeigt werden. Es wird ein Verzeichnis mit dem Namen Ihres Office 365-Mandanten aufgeführt.
     
 ## <a name="see-also"></a>Siehe auch
-- [Grundlegendes zur Registrierung einer Anwendung in Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
-- [Hinzufügen, Aktualisieren oder Entfernen einer Anwendung in Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-integrating-applications/)
+- [Grundlegendes zur Registrierung einer Anwendung in Azure AD](https://azure.microsoft.com/de-DE/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
+- [Hinzufügen, Aktualisieren oder Entfernen einer Anwendung in Azure AD](https://azure.microsoft.com/de-DE/documentation/articles/active-directory-integrating-applications/)
