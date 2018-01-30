@@ -33,7 +33,7 @@ _Wichtige Hinweise:_
 
 Beispiel: **SVERWEIS**
 
-In einer Excel-Tabelle nimmt die `vlookup`-Funktion die folgenden Argumente an:
+In einer Excel-Tabelle verwendet die `vlookup`-Funktion die folgenden Argumente an:
 
 1. Der Wert, den Sie nachschlagen möchten, auch das Nachschlagewert bezeichnet.
 2. Der Bereich, in dem sich der Nachschlagewert befindet. Denken Sie daran, dass sich der Nachschlagewert immer in der ersten Spalte des Bereichs für SVERWEIS befinden muss, um ordnungsgemäß zu funktionieren. Wenn sich der Nachschlagewert beispielsweise in Zelle C2 befindet, sollte der Bereich mit C beginnen.
@@ -81,7 +81,7 @@ content-type: application/json;odata.metadata
 
 Beispiel: `median`
 
-In einer Excel-Tabelle nimmt die `median` -Funktion ein Array eines oder mehrerer Eingabebereiche.
+In einer Excel-Tabelle verwendet die `median`-Funktion ein Array eines oder mehrerer Eingabebereiche.
 
 Innerhalb einer Zelle sieht die `median`-Funktion folgendermaßen aus:
 

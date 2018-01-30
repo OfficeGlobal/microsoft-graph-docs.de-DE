@@ -10,7 +10,7 @@ Sie können Microsoft Graph verwenden, um Notizen, Listen, Bilder, Dateien usw. 
 Verwenden Sie OneNote als Hilfsmittel zum Hinzufügen und Ordnen von Benutzerinhalten. Microsoft Graph vereinfacht das Schreiben von Apps, mit denen Studenten Notizen erstellen und recherchieren, Familien Pläne und Ideen teilen oder Einkäufer Bilder freigeben können. Ihre App sammelt die gewünschten Informationen, sendet sie an OneNote und hilft dann bei der Verwaltung dieser Informationen.
 
 ### <a name="capture-information-in-many-formats"></a>Erfassen von Informationen in vielen verschiedenen Formaten
-Erfassen Sie HML-Code, eingebettete Bilder (aus einer lokalen Quelle oder öffentlichen URL), Videos, Audio, E-Mail-Nachrichten und andere gängige Dateitypen. OneNote kann sogar Webseiten und PDF-Dateien als Snapshots darstellen. Microsoft Graph unterstützt eine Reihe von standardmäßigen HTML- und CSS-Codes für das OneNote-Seitenlayout, sodass Sie Tabellen, Inline-Bilder und einfache Formatierungen verwenden können, um den gewünschten Look zu erzielen. 
+Erfassen Sie HTML-Code, eingebettete Bilder (aus einer lokalen Quelle oder öffentlichen URL), Videos, Audio, E-Mail-Nachrichten und andere gängige Dateitypen. OneNote kann sogar Webseiten und PDF-Dateien als Snapshots darstellen. Microsoft Graph unterstützt eine Reihe von standardmäßigen HTML- und CSS-Codes für das OneNote-Seitenlayout, sodass Sie Tabellen, Inline-Bilder und einfache Formatierungen verwenden können, um den gewünschten Look zu erzielen. 
 
 ### <a name="use-the-onenote-ecosystem-to-enhance-your-core-scenarios"></a>Verwenden Sie das Ökosystem von OneNote, um Ihre wichtigsten Szenarien zu verbessern.
 Probieren Sie andere leistungsfähige Funktionen von OneNote aus. Die OneNote-APIs in Microsoft Graph führen OCR für Bilder aus, unterstützen die Volltextsuche, synchronisieren automatisch Clients, verarbeiten Bilder und extrahieren Visitenkarte sowie Online-Produkt- und Rezeptlisten. Verwenden Sie OneNote als digitalen Erinnerungsspeicher in der Cloud für Notizen und einfache Medien oder als Datenfeed für domänenspezifische Daten. 
@@ -31,9 +31,9 @@ Im folgenden werden einige der am häufigsten verwendeten Anfragen für OneNote-
 |Abrufen meiner Seiten|[https://graph.microsoft.com/v1.0/me/onenote/pages](https://developer.microsoft.com/de-DE/graph/graph-explorer?request=me/onenote/pages&version=1.0)|
 
 ## <a name="explore-the-onenote-apis"></a>Erkunden Sie die OneNote-APIs
-Verwenden Sie den [Microsoft Graph-Explorer](https://developer.microsoft.com/de-DE/graph/graph-explorer), um die OneNote-APIs mit Ihren eigenen OneNote-Notizbüchern auszuprobieren.
+Verwenden Sie den [Microsoft Graph-Tester](https://developer.microsoft.com/de-DE/graph/graph-explorer), um die OneNote-APIs mit Ihren eigenen OneNote-Notizbüchern auszuprobieren.
 
-Um OneNote-API-Anrufe über den Graph Explorer auszuführen, wählen Sie **Mehr Beispiele anzeigen** in der Spalte auf der linken Seite. Schalten Sie OneNote über das Menü **Ein**. Zudem müssen Sie die entsprechenden Berechtigungen aktivieren. Wählen Sie unter Ihrem Kontonamen im Menü auf der linken Seite **Berechtigungen ändern**. Weitere Informationen über OneNote-Berechtigungen finden Sie unter [Notizenberechtigungen](permissions_reference.md#notes-permissions).
+Um OneNote-API-Aufrufe über den Graph-Tester auszuführen, wählen Sie **Mehr Beispiele anzeigen** in der Spalte auf der linken Seite aus. Schalten Sie OneNote über das Menü **Ein**. Zudem müssen Sie die entsprechenden Berechtigungen aktivieren. Wählen Sie unter Ihrem Kontonamen im Menü auf der linken Seite **Berechtigungen ändern** aus. Weitere Informationen über OneNote-Berechtigungen finden Sie unter [Notizenberechtigungen](permissions_reference.md#notes-permissions).
 
 Hinweise zu den ersten Schritten mit OneNote-APIs in Microsoft Graph finden Sie unter [Referenzinhalte für OneNote](../api-reference/v1.0/resources/onenote.md).
 
