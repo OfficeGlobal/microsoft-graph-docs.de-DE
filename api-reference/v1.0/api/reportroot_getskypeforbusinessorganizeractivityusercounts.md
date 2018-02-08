@@ -24,7 +24,7 @@ GET /reports/getSkypeForBusinessOrganizerActivityUserCounts(period='{period_valu
 
 ## <a name="request-parameters"></a>Anforderungsparameter
 
-Stellen Sie in der URL der Anforderung die folgenden Abfrageparameter mit einem gültigen Wert bereit.
+Stellen Sie in der URL der Anforderung den folgenden Parameter mit einem gültigen Wert bereit.
 
 | Parameter | Typ   | Beschreibung                              |
 | :-------- | :----- | :--------------------------------------- |

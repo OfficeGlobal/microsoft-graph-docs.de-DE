@@ -25,7 +25,7 @@ GET /reports/getSkypeForBusinessActivityUserDetail(date={date_value})
 
 ## <a name="request-parameters"></a>Anforderungsparameter
 
-Stellen Sie in der URL der Anforderung den gewählten Abfrageparameter mit einem gültigen Wert bereit.
+Stellen Sie in der URL der Anforderung die folgenden Parameter mit einem gültigen Wert bereit.
 
 | Parameter | Typ   | Beschreibung                              |
 | :-------- | :----- | :--------------------------------------- |

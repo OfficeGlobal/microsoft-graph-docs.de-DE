@@ -228,31 +228,62 @@ Weitere Informationen zu KQL, darunter zur Syntax, den unterstützten Operatoren
 
 Sie können die Personen-API von Microsoft Graph verwenden, um Personen abzurufen, die für einen Benutzer am relevantesten sind. Relevanz wird durch die Kommunikations- und Zusammenarbeitsmuster und Geschäftsbeziehungen des Benutzers bestimmt. Die Personen-API unterstützt den `$search`-Abfrageparameter.
 
-Personensuchen werden sowohl für die Eigenschaft **displayName** als auch für die Eigenschaft **emailAddress** der Ressource vom Typ [person](../api-reference/v1.0/resources/person.md) ausgeführt. Suchvorgänge implementieren einen Algorithmus für Fuzzyübereinstimmungen. Dabei werden Ergebnisse basierend auf einer exakten Übereinstimmung und auch zu Rückschlüssen zu der Absicht der Suche zurückgegeben. Verwenden wir als Beispiel einen Benutzer mit dem Anzeigenamen „Tyler Lee“ und der E-Mail-Adresse „tylerle@example.com“, der sich in der **people**-Sammlung des angemeldeten Benutzers befindet. Bei allen der folgenden Suchvorgänge werden Ergebnisse zurückgegeben, die „Tyler“ enthalten.
+Personensuchen werden sowohl für die Eigenschaft **displayName** als auch für die Eigenschaft **emailAddress** der Ressource vom Typ [person](../api-reference/v1.0/resources/person.md) ausgeführt.
+
+Die folgende Anforderung führt eine Suche nach einer Person mit dem Namen „Irene McGowen“ in den Eigenschaften **displayName** und **emailAddress** für jede Person in der Sammlung **people** des angemeldeten Benutzers durch. Da eine Person mit dem Namen „Irene McGowan“ für den angemeldeten Benutzer relevant ist, werden die Informationen für „Irene McGowan“ zurückgegeben.
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/people?$search=tyler                //matches both Tyler's name and email
-GET https://graph.microsoft.com/v1.0/me/people?$search=tylerle              //matches Tyler's email
-GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //matches Tyler's email. Note the quotes to enclose '@'.
-GET https://graph.microsoft.com/v1.0/me/people?$search=tiler                //fuzzy match with Tyler's name 
-GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"          //matches Tyler's name. Note the quotes to enclose the space.
+GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowen"
 ```
 
-Sie können Suchen nach Personen durchführen, die an einem bestimmten Thema interessiert sind. Suchvorgänge werden basierend auf Rückschlüssen ausgeführt, die aus den E-Mail-Unterhaltungen des Benutzers abgeleitet werden. Die folgende Suche gibt beispielsweise eine Sammlung von Personen zurück, die für den angemeldeten Benutzer relevant sind und in Unterhaltungen mit diesem Benutzer Interesse an Pizza geäußert haben. Beachten Sie, dass der Suchbegriff in Anführungszeichen eingeschlossen ist.
+Das folgende Beispiel zeigt die Antwort. 
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"                
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+       {
+           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
+           "displayName": "Irene McGowan",
+           "givenName": "Irene",
+           "surname": "McGowan",
+           "birthday": "",
+           "personNotes": "",
+           "isFavorite": false,
+           "jobTitle": "Auditor",
+           "companyName": null,
+           "yomiCompany": "",
+           "department": "Finance",
+           "officeLocation": "12/1110",
+           "profession": "",
+           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
+           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
+           "scoredEmailAddresses": [
+               {
+                   "address": "irenem@contoso.onmicrosoft.com",
+                   "relevanceScore": -16.446060612802224
+               }
+           ],
+           "phones": [
+               {
+                   "type": "Business",
+                   "number": "+1 412 555 0109"
+               }
+           ],
+           "postalAddresses": [],
+           "websites": [],
+           "personType": {
+               "class": "Person",
+               "subclass": "OrganizationUser"
+           }
+       }
+   ]
+}
 ```
 
-Sie können auch Personen- und Themensuchen in derselben Anforderung kombinieren, indem Sie die beiden Typen von Suchausdrücken kombinieren.
-
-```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
-```
-
-Bei dieser Anforderung werden im Wesentlichen zwei Suchvorgänge ausgeführt: eine unscharfe Suche in den Eigenschaften**displayName** und **emailAddress** der relevanten Personen des angemeldeten Benutzers und eine Themensuche nach „Pizza“ in den relevanten Personen des Benutzers. Die Ergebnisse werden dann bewertet, sortiert und zurückgegeben. Beachten Sie, dass die Suche nicht restriktiv ist. Sie erhalten möglicherweise Ergebnisse, die Personen enthalten, die mit „tyl“ übereinstimmen oder die an „Pizza“ interessiert sind oder beides.
-
-Weitere Informationen zur Personen-API finden Sie unter [Abrufen von Informationen über die entsprechenden Personen](./people_example.md).  
+Weitere Informationen zur Personen-API finden Sie unter [Abrufen von Informationen über die entsprechenden Personen](./people_example.md#search-people).  
 
 ## <a name="select-parameter"></a>select-Parameter
 

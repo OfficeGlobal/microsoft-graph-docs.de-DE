@@ -28,7 +28,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|destinationId|String|Die Ordner-ID oder der bekannte Ordnername *Posteingang*, *Entwürfe*, *Gesendete Elemente* oder *Gelöschte Elemente*.|
+|destinationId|String|Die Ordner-ID oder ein bekannter Ordnername wie *Posteingang*, *Entwürfe*, *Gesendete Objekte* oder *Gelöschte Objekte*. Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).|
 
 ## <a name="response"></a>Antwort
 

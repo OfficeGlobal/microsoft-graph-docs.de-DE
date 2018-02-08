@@ -18,7 +18,7 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-Geben Sie den übergeordneten Ordner in der Abfrage-URL als Ordner-ID an oder den bekannten Ordnernamen `Inbox`, `Drafts`, `SentItems` oder `DeletedItems`.
+Geben Sie den übergeordneten Ordner in der Abfrage-URL als eine Ordner-ID oder einen bekannten Ordnernamen wie *Posteingang*, *Entwürfe*, *Gesendete Objekte* oder *Gelöschte Objekte* an. Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |

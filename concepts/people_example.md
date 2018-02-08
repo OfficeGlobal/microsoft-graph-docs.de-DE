@@ -1,7 +1,7 @@
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Verwenden der People API in Microsoft Graph zum Abrufen von Informationen über relevante Personen
 Microsoft Graph-Anwendungen können die People API zum Abrufen von Personen verwenden, die für einen Benutzer am relevantesten sind. Relevanz wird durch die Kommunikations- und Zusammenarbeitsmuster und Geschäftsbeziehungen des Benutzers bestimmt. Personen können lokale Kontakte, Kontakte aus sozialen Netzwerken, aus dem Verzeichnis Ihrer Organisation und Personen aus kürzlichen Unterhaltungen (z. B. E-Mail und Skype) sein. Neben Generierung dieser Einblicke bietet die People API auch Unterstützung für Fuzzyübereinstimmungen bei Suchvorgängen sowie die Möglichkeit, eine Liste der für einen Benutzer relevanten Benutzer in der Organisation des angemeldeten Benutzers abzurufen. Die People API ist insbesondere beim Auswählen von Personen hilfreich, z. B. beim Verfassen einer E-Mail oder beim Erstellen einer Besprechung. Sie können die People API beispielsweise beim Verfassen von E-Mails verwenden.
  
-## <a name="authorization"></a>Autorisierung
+## <a name="authorization"></a>Authorization
 Zum Aufrufen der People API in Microsoft Graph benötigt Ihre App die entsprechenden Berechtigungen: 
 
 * People.Read – Verwenden Sie diese Berechtigung für allgemeine People API-Aufrufe, beispielsweise https://graph.microsoft.com/v1.0/me/people/. People.Read erfordert die Zustimmung des Endbenutzers.
@@ -659,7 +659,7 @@ Mit den Anforderungen in diesem Abschnitt können Sie nach Personen suchen, die 
 ### <a name="use-search-to-select-people"></a>Verwenden der Suche zum Auswählen von Personen 
 Verwenden Sie den *$search*-Parameter zum Auswählen von Personen, die bestimmte Kriterien erfüllen. 
 
-Mit der folgenden Abfrage werden die für `/me` relevanten Personen zurückgegeben, deren **displayName** mit dem Buchstaben „j“ beginnt.
+Mit der folgenden Abfrage werden die für `/me` relevanten Personen zurückgegeben, deren **displayName** oder „emailAddress“ mit dem Buchstaben „j“ beginnt.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search=j
@@ -772,58 +772,40 @@ Content-type: application/json
 }
 ```
 ### <a name="perform-a-fuzzy-search"></a>Durchführen einer Fuzzysuche 
-Die folgende Anforderung führt eine Suche nach einer Person mit dem Namen „Irene McGowen“ durch. Da eine Person mit dem Namen „Irene McGowan“ für den angemeldeten Benutzer relevant ist, werden die Informationen für „Irene McGowan“ zurückgegeben.
+
+Suchvorgänge implementieren einen Algorithmus für Fuzzyübereinstimmungen. Dabei werden Ergebnisse basierend auf einer exakten Übereinstimmung und auch zu Rückschlüssen zu der Absicht der Suche zurückgegeben. Verwenden wir als Beispiel einen Benutzer mit dem Anzeigenamen „Tyler Lee“ und der E-Mail-Adresse „tylerle@example.com“, der sich in der **people**-Sammlung des angemeldeten Benutzers befindet. Alle der folgenden Suchvorgänge geben den Benutzer „Tyler“ als eines der Ereignisse zurück.
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowen"
+GET https://graph.microsoft.com/v1.0/me/people?$search=tyler                //matches both Tyler's name and email
+GET https://graph.microsoft.com/v1.0/me/people?$search=tylerle              //matches Tyler's email
+GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //matches Tyler's email. Note the quotes to enclose '@'.
+GET https://graph.microsoft.com/v1.0/me/people?$search=tiler                //fuzzy match with Tyler's name 
+GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"          //matches Tyler's name. Note the quotes to enclose the space.
 ```
 
-Das folgende Beispiel zeigt die Antwort. 
+Sie können auch Suchvorgänge nach Personen durchführen, die für den angemeldeten Benutzer relevant sind und Interesse an der Kommunikation über bestimmte Themen mit diesem Benutzer gezeigt haben, wie z. B. zum Thema „Pizza“ wie im folgenden Beispiel:
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "value": [
-       {
-           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
-           "displayName": "Irene McGowan",
-           "givenName": "Irene",
-           "surname": "McGowan",
-           "birthday": "",
-           "personNotes": "",
-           "isFavorite": false,
-           "jobTitle": "Auditor",
-           "companyName": null,
-           "yomiCompany": "",
-           "department": "Finance",
-           "officeLocation": "12/1110",
-           "profession": "",
-           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
-           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
-           "scoredEmailAddresses": [
-               {
-                   "address": "irenem@contoso.onmicrosoft.com",
-                   "relevanceScore": -16.446060612802224
-               }
-           ],
-           "phones": [
-               {
-                   "type": "Business",
-                   "number": "+1 412 555 0109"
-               }
-           ],
-           "postalAddresses": [],
-           "websites": [],
-           "personType": {
-               "class": "Person",
-               "subclass": "OrganizationUser"
-           }
-       }
-   ]
-}
+GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"                
 ```
+
+Themen in diesem Sinne sind einfach Wörter, die in der E-Mail-Kommunikation von den Benutzern am häufigsten verwendet wurden. Microsoft extrahiert diese Wörter und erstellt einen Index für diese Daten, um die Fuzzysuche zu erleichtern. 
+
+Beachten Sie, dass der Suchbegriff in Anführungszeichen eingeschlossen ist und die Themen in diesen Daten ohne Kontext extrahiert werden. Beispiel – Die Suche nach dem englischen Begriff „Windows“ in der folgenden Abfrage:
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:windows" 
+```
+ist eine Fuzzysuche im Themendatenindex, und die Ergebnisse können Instanzen umfassen, die das Windows-Betriebssystem, eine Öffnung in einer Gebäudewand oder andere Definitionen bezeichnen.
+
+Sie können auch Personen- und Themensuchen in derselben Anforderung kombinieren, indem Sie die beiden Typen von Suchausdrücken kombinieren.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
+```
+
+Bei dieser Anforderung werden im Wesentlichen zwei Suchvorgänge ausgeführt: eine unscharfe Suche in den Eigenschaften**displayName** und **emailAddress** der relevanten Personen des angemeldeten Benutzers und eine Themensuche nach „Pizza“ in den relevanten Personen des Benutzers. Die Ergebnisse werden dann bewertet, sortiert und zurückgegeben. Beachten Sie, dass die Suche nicht restriktiv ist. Sie erhalten möglicherweise Ergebnisse, die Personen enthalten, die mit „tyl“ übereinstimmen oder die an „Pizza“ interessiert sind oder beides.
+
 ### <a name="search-other-users-relevant-people"></a>Durchsuchen von für andere Benutzer relevanten Personen
 Die folgende Anforderung ruft die für eine andere Person in der Organisation des angemeldeten Benutzers relevanten Personen ab. Für diese Anforderung ist die Berechtigung People.Read.All erforderlich. In diesem Beispiel werden für Roscoe Seidel relevante Personen angezeigt.
 

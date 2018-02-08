@@ -1,6 +1,8 @@
 # <a name="mailfolder-resource-type"></a>mailFolder-Ressoucentyp
 
-Ein mailFolder-Element im Postfach eines Benutzers, wie z. B. Posteingang, Entwürfe und Gesendete Objekte. MailFolders können Nachrichten und untergeordneten mailFolders-Elemente enthalten.
+Ein mailFolder-Element im Postfach eines Benutzers, wie z. B. Posteingang und Entwürfe. Mailordner können Nachrichten, andere Outlook-Elemente und untergeordnete E-Mail-Ordner enthalten.
+
+Outlook erstellt standardmäßig bestimmte Ordner für Benutzer. Anstatt den entsprechenden Ordner-**ID**-Wert zu verwenden, können Sie der Einfachheit halber die folgenden bekannten Ordnernamen beim Zugriff auf diese Ordner in einer **mailFolder**-Sammlung verwenden: `ArchiveRoot`, `ConversationHistory`, `DeletedItems`, `Drafts`, `Inbox`, `JunkEmail`, `Outbox` und `SentItems`.
 
 Diese Ressource unterstützt die Verwendung einer [Delta-Abfrage](../../../concepts/delta_query_overview.md) zum Nachverfolgen von inkrementellen Hinzufügungen, Löschungen und Aktualisierungen durch Bereitstellen einer [delta](../api/mailfolder_delta.md)-Funktion.
 
@@ -47,7 +49,7 @@ MailFolders-Elemente in Outlook können mehr als einen Typ von Elementen enthalt
 |:---------------|:--------|:----------|
 |childFolders|[MailFolder](mailfolder.md)-Sammlung|Die Sammlung der untergeordneten Ordner in dem mailFolder-Element.|
 |Nachrichten|[Nachrichten](message.md)-Sammlung|Die Sammlung der Nachrichten in dem mailFolder-Element.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter mehrwertiger Eigenschaften, die für das mailFolder-Element definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter mehrwertiger Eigenschaften, die für das mailFolder-Element definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter einwertiger Eigenschaften, die für das mailFolder-Element definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung

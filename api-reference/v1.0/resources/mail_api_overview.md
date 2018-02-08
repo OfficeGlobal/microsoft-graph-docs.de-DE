@@ -15,6 +15,7 @@ Sie können bekannte Ordnernamen wie `Inbox`, `Drafts`, `SentItems` oder `Delete
 ```
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
+Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).
 
 ## <a name="common-use-cases"></a>Allgemeine Anwendungsfälle 
 
@@ -43,8 +44,8 @@ Die Microsoft Graph-API stellt zudem Methoden und Aktionen bereit, die allgemein
 Die E-Mail-API kann Ihnen neue Möglichkeiten für die Interaktion mit Benutzern eröffnen: 
 
 - Führen Sie einen Drilldown für die [Methoden](../resources/message.md#methods), [Eigenschaften](../resources/message.md#properties) und [Beziehungen](../resources/message.md#relationships) der Ressourcen [message](../resources/message.md) und [mailFolder](../resources/mailfolder.md) aus.
-- Probieren Sie die API im [Graph-Tester](https://developer.microsoft.com/en-us/graph/graph-explorer) aus.
+- Probieren Sie die API im [Graph-Tester](https://developer.microsoft.com/de-DE/graph/graph-explorer) aus.
 
-Benötigen Sie weitere Ideen? Dann sehen Sie sich an, [wie unsere Partner Microsoft Graph verwenden](https://developer.microsoft.com/en-us/graph/graph/examples#partners).
+Benötigen Sie weitere Ideen? Dann sehen Sie sich an, [wie unsere Partner Microsoft Graph verwenden](https://developer.microsoft.com/de-DE/graph/graph/examples#partners).
 
 
