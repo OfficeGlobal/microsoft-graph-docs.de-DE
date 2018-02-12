@@ -11,11 +11,11 @@ Stammdomänen erfordern eine Überprüfung. Beispielsweise muss „contoso.com�
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
 
-|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.Read.All    | 
-|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    | 
-|Anwendung | Directory.Read.All, Domain.ReadWrite.All | 
+|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.Read.All    |
+|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
+|Anwendung | Directory.Read.All, Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +52,7 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine
   "name": "get_verificationdnsrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/V1.0/domains/contoso.com/verificationDnsRecords
+GET https://graph.microsoft.com/v1.0/domains/contoso.com/verificationDnsRecords
 ```
 
 ##### <a name="response"></a>Antwort

@@ -48,7 +48,7 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zu
   "name": "delete_domain"
 }-->
 ```http
-DELETE https://graph.microsoft.com/V1.0/domains/contoso.com
+DELETE https://graph.microsoft.com/v1.0/domains/contoso.com
 ```
 
 ##### <a name="response"></a>Antwort

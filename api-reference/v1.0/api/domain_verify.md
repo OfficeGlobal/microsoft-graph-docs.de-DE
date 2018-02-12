@@ -44,7 +44,7 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das 
   "name": "domain_verify"
 }-->
 ```http
-POST https://graph.microsoft.com/V1.0/domains/contoso.com/verify
+POST https://graph.microsoft.com/v1.0/domains/contoso.com/verify
 ```
 
 ##### <a name="response"></a>Antwort

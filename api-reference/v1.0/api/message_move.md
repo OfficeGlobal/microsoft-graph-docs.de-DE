@@ -30,7 +30,8 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|DestinationId|String|Die Zielordner-ID oder ein bekannter Ordnername wie *Posteingang*, *Entwürfe*, *Gesendete Objekte* oder *Gelöschte Objekte*. Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).|
+|destinationId|String|Die ID des Zielordners oder der bekannte Ordnername `Inbox`, `Drafts`, `SentItems` oder `DeletedItems`.|
+
 
 ## <a name="response"></a>Antwort
 
@@ -50,7 +51,7 @@ Content-type: application/json
 Content-length: 44
 
 {
-  "DestinationId": "destinationId-value"
+  "destinationId": "destinationId-value"
 }
 ```
 

@@ -47,7 +47,7 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das 
   "name": "get_domain"
 }-->
 ```http
-GET https://graph.microsoft.com/V1.0/domains/contoso.com
+GET https://graph.microsoft.com/v1.0/domains/contoso.com
 ```
 ##### <a name="response"></a>Antwort
 Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
