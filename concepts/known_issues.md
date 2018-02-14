@@ -261,7 +261,7 @@ Geben Sie in Batchanforderungen immer relative URIs an. Microsoft Graph macht da
 
 ### <a name="limit-on-batch-size"></a>Beschränkung der Batchgröße
 
-JSON-Batchanforderungen sind derzeit auf fünf einzelne Anforderungen beschränkt. In der weiteren Entwicklung der JSON-Batchverarbeitung wird dieser Grenzwert hochgesetzt.
+JSON-Batchanforderungen sind derzeit auf 20 einzelne Anforderungen beschränkt.
 
 ### <a name="simplified-dependencies"></a>Vereinfachte Abhängigkeiten
 

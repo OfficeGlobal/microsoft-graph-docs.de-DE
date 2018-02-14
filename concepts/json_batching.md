@@ -1,4 +1,4 @@
-# <a name="combine-multiple-requests-in-one-http-call-using-json-batching-preview"></a>Kombinieren von mehreren Anforderungen in einem HTTP-Aufruf unter Verwendung der JSON-Batchverarbeitung (Vorschau)
+# <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Kombinieren von mehreren Anforderungen in einem HTTP-Aufruf unter Verwendung der JSON-Batchverarbeitung
 
 Die JSON-Batchverarbeitung ermöglicht es Ihnen, Ihre Anwendung durch Kombinieren von mehreren Anforderungen in einem einzigen JSON-Objekt zu optimieren. Ein Client möchte z. B. eine Ansicht aus nicht verbundenen Daten wie den folgenden zusammenstellen:
 
@@ -13,7 +13,7 @@ Indem Sie diese drei einzelnen Anforderungen in einer einzigen Batchanforderung 
 Zunächst erstellen Sie die JSON-Batchanforderung für das vorherige Beispiel. In diesem Szenario sind die einzelnen Anforderungen in keiner Weise voneinander abhängig und können daher in beliebiger Reihenfolge in der Batchanforderung platziert werden.
 
 ```http
-POST https://graph.microsoft.com/beta/$batch
+POST https://graph.microsoft.com/v1.0/$batch
 Accept: application/json
 Content-Type: application/json
 ```
@@ -82,7 +82,7 @@ Content-Type: application/json
       "id": "2",
       "status": 200,
       "body": {
-        "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.plannerTask)",
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.plannerTask)",
         "value": []
       }
     },
