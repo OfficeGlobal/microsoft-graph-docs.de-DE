@@ -1,6 +1,6 @@
 # <a name="attendee-resource-type"></a>attendee-Ressourcentyp
 
-Ein Teilnehmer eines Ereignisses.
+Ein Teilnehmer eines Ereignisses. Dies kann eine Person oder eine Ressource sein, wie z. B. Besprechungsräume oder Geräte, die als Ressource auf dem Exchange-Server für den Mandanten eingerichtet wurden.
 
 Abgeleitet von [attendeeBase](attendeebase.md).
 
@@ -8,7 +8,7 @@ Abgeleitet von [attendeeBase](attendeebase.md).
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|Die Antwort des Teilnehmers (keine, akzeptiert, abgelehnt, usw.) für das Ereignis und das Datum und die Uhrzeit, an dem/der die Antwort gesendet wurde.|
-|Typ|String|Der Teilnehmertyp: `Required`, `Optional`, `Resource`.|
+|Typ|String|Der Teilnehmertyp: `required`, `optional`, `resource`.|
 |emailAddress|[emailAddress](emailAddress.md)|Enthält den Namen und die SMTP-Adresse des Teilnehmers.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
