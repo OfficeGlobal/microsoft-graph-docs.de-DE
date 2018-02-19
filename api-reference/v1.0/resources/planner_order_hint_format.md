@@ -1,4 +1,4 @@
-# <a name="using-order-hints-in-planner"></a>Verwenden von ORDER-Hinweisen in Planner 
+# <a name="using-order-hints-in-planner"></a>Verwenden von ORDER-Hinweisen in Planner
 
 Objekte in Planner identifizieren ihre Sortierreihenfolge anhand von ORDER-Hinweisen. Die Werte von ORDER-Hinweisen sind Zeichenfolgen. Die Clients können die Zeichenfolgen basierend auf dem Ordnungswert von darin enthaltenen Zeichen sortieren, um die Reihenfolge von Elementen zu identifizieren. Die Zeichen werden ab dem Anfang der Zeichenfolge verglichen, bis ein Unterschied in den Ordnungswerten der Zeichen gefunden wird oder bis eine Zeichenfolge endet. In diesem Fall wird die kürzere Zeichenfolge vor der längeren sortiert. Die Werte können beliebige Zeichen zwischen den Ordnungszahlen 32 (Leerzeichen) und 126 enthalten (`~`).
 
@@ -45,7 +45,8 @@ Nachdem diese Änderungen an ORDER-Hinweisen an den Dienst in Patch-Anforderunge
 4. Element 2 (ORDER-Hinweis: `'adhg'`)
 5. Element 1 (ORDER-Hinweis: `'de5%'`)
 
-ORDER-Hinweise können für das Erstellen des ersten Elements in der Liste als ` !` angegeben werden, da in diesem Fall weder ein vorheriges noch ein nächstes Element vorhanden ist, dies ist jedoch nicht erforderlich, da der Dienst Werte für alle ORDER-Hinweise für Elemente automatisch generiert, wenn diese während der Erstellung des Elements nicht angegeben werden. Im folgenden Beispiel werden die ORDER-Hinweise veranschaulicht, die verwendet werden sollten, wenn Element in einer zuvor leeren Liste platziert werden. Fügen Sie das erste Element hinzu:
+ORDER-Hinweise können für das Erstellen des ersten Elements in der Liste als ` !` angegeben werden, da in diesem Fall weder ein vorheriges noch ein nächstes Element vorhanden ist, dies ist jedoch nicht erforderlich, da der Dienst Werte für alle ORDER-Hinweise für Elemente automatisch generiert, wenn diese während der Erstellung des Elements nicht angegeben werden. Im folgenden Beispiel werden die ORDER-Hinweise veranschaulicht, die verwendet werden sollten, wenn Element in einer zuvor leeren Liste platziert werden.
+Fügen Sie das erste Element hinzu:
 
 1. Element 1 (ORDER-Hinweis: `' !'`)
 
