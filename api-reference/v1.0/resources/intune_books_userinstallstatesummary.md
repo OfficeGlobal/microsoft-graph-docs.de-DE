@@ -1,0 +1,49 @@
+# <a name="userinstallstatesummary-resource-type"></a><span data-ttu-id="cdfba-101">userInstallStateSummary-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="cdfba-101">userInstallStateSummary resource type</span></span>
+
+> <span data-ttu-id="cdfba-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="cdfba-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="cdfba-103">Enthält Eigenschaften für die Zusammenfassung des Installationsstatus für einen Benutzer.</span><span class="sxs-lookup"><span data-stu-id="cdfba-103">Contains properties for the installation state summary for a user.</span></span>
+## <a name="methods"></a><span data-ttu-id="cdfba-104">Methoden</span><span class="sxs-lookup"><span data-stu-id="cdfba-104">Methods</span></span>
+|<span data-ttu-id="cdfba-105">Methode</span><span class="sxs-lookup"><span data-stu-id="cdfba-105">Method</span></span>|<span data-ttu-id="cdfba-106">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="cdfba-106">Return Type</span></span>|<span data-ttu-id="cdfba-107">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="cdfba-107">Description</span></span>|
+|:---|:---|:---|
+|[<span data-ttu-id="cdfba-108">userInstallStateSummaries auflisten</span><span class="sxs-lookup"><span data-stu-id="cdfba-108">List userInstallStateSummaries</span></span>](../api/intune_books_userinstallstatesummary_list.md)|<span data-ttu-id="cdfba-109">[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md)-Sammlung</span><span class="sxs-lookup"><span data-stu-id="cdfba-109">[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) collection</span></span>|<span data-ttu-id="cdfba-110">Auflisten von Eigenschaften und Beziehungen der [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md)-Objekte.</span><span class="sxs-lookup"><span data-stu-id="cdfba-110">List properties and relationships of the [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) objects.</span></span>|
+|[<span data-ttu-id="cdfba-111">userInstallStateSummary abrufen</span><span class="sxs-lookup"><span data-stu-id="cdfba-111">Get userInstallStateSummary</span></span>](../api/intune_books_userinstallstatesummary_get.md)|[<span data-ttu-id="cdfba-112">userInstallStateSummary</span><span class="sxs-lookup"><span data-stu-id="cdfba-112">userInstallStateSummary</span></span>](../resources/intune_books_userinstallstatesummary.md)|<span data-ttu-id="cdfba-113">Lesen von Eigenschaften und Beziehungen des [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md)-Objekts.</span><span class="sxs-lookup"><span data-stu-id="cdfba-113">Read properties and relationships of [plannerTaskDetails](../resources/intune_books_userinstallstatesummary.md) object.</span></span>|
+|[<span data-ttu-id="cdfba-114">userInstallStateSummary erstellen</span><span class="sxs-lookup"><span data-stu-id="cdfba-114">Create userInstallStateSummary</span></span>](../api/intune_books_userinstallstatesummary_create.md)|[<span data-ttu-id="cdfba-115">userInstallStateSummary</span><span class="sxs-lookup"><span data-stu-id="cdfba-115">userInstallStateSummary</span></span>](../resources/intune_books_userinstallstatesummary.md)|<span data-ttu-id="cdfba-116">Erstellen eines neuen [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md)-Objekts.</span><span class="sxs-lookup"><span data-stu-id="cdfba-116">Create a new [plannerBucket](../resources/intune_books_userinstallstatesummary.md) object.</span></span>|
+|[<span data-ttu-id="cdfba-117">userInstallStateSummary löschen</span><span class="sxs-lookup"><span data-stu-id="cdfba-117">Delete userInstallStateSummary</span></span>](../api/intune_books_userinstallstatesummary_delete.md)|<span data-ttu-id="cdfba-118">Keine</span><span class="sxs-lookup"><span data-stu-id="cdfba-118">None</span></span>|<span data-ttu-id="cdfba-119">Löscht ein [UserInstallStateSummary](../resources/intune_books_userinstallstatesummary.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="cdfba-119">Deletes a [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md).</span></span>|
+|[<span data-ttu-id="cdfba-120">userInstallStateSummary aktualisieren</span><span class="sxs-lookup"><span data-stu-id="cdfba-120">Update userInstallStateSummary</span></span>](../api/intune_books_userinstallstatesummary_update.md)|[<span data-ttu-id="cdfba-121">userInstallStateSummary</span><span class="sxs-lookup"><span data-stu-id="cdfba-121">userInstallStateSummary</span></span>](../resources/intune_books_userinstallstatesummary.md)|<span data-ttu-id="cdfba-122">Aktualisieren der Eigenschaften eines [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md)-Objekts.</span><span class="sxs-lookup"><span data-stu-id="cdfba-122">Update the properties of a [calendar](../resources/intune_books_userinstallstatesummary.md) object.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="cdfba-123">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="cdfba-123">Properties</span></span>
+|<span data-ttu-id="cdfba-124">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="cdfba-124">Property</span></span>|<span data-ttu-id="cdfba-125">Typ</span><span class="sxs-lookup"><span data-stu-id="cdfba-125">Type</span></span>|<span data-ttu-id="cdfba-126">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="cdfba-126">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="cdfba-127">id</span><span class="sxs-lookup"><span data-stu-id="cdfba-127">id</span></span>|<span data-ttu-id="cdfba-128">String</span><span class="sxs-lookup"><span data-stu-id="cdfba-128">String</span></span>|<span data-ttu-id="cdfba-129">Schlüssel der Entität.</span><span class="sxs-lookup"><span data-stu-id="cdfba-129">Key of the setting.</span></span>|
+|<span data-ttu-id="cdfba-130">userName</span><span class="sxs-lookup"><span data-stu-id="cdfba-130">UserName</span></span>|<span data-ttu-id="cdfba-131">String</span><span class="sxs-lookup"><span data-stu-id="cdfba-131">String</span></span>|<span data-ttu-id="cdfba-132">Benutzername</span><span class="sxs-lookup"><span data-stu-id="cdfba-132">User name.</span></span>|
+|<span data-ttu-id="cdfba-133">installedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="cdfba-133">installedDeviceCount</span></span>|<span data-ttu-id="cdfba-134">Int32</span><span class="sxs-lookup"><span data-stu-id="cdfba-134">Int32</span></span>|<span data-ttu-id="cdfba-135">Anzahl der installierten Geräte</span><span class="sxs-lookup"><span data-stu-id="cdfba-135">Installed Device Count.</span></span>|
+|<span data-ttu-id="cdfba-136">failedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="cdfba-136">failedDeviceCount</span></span>|<span data-ttu-id="cdfba-137">Int32</span><span class="sxs-lookup"><span data-stu-id="cdfba-137">Int32</span></span>|<span data-ttu-id="cdfba-138">Anzahl der fehlgeschlagenen Geräte</span><span class="sxs-lookup"><span data-stu-id="cdfba-138">Failed Device Count.</span></span>|
+|<span data-ttu-id="cdfba-139">notInstalledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="cdfba-139">notInstalledDeviceCount</span></span>|<span data-ttu-id="cdfba-140">Int32</span><span class="sxs-lookup"><span data-stu-id="cdfba-140">Int32</span></span>|<span data-ttu-id="cdfba-141">Anzahl der nicht installierten Geräte</span><span class="sxs-lookup"><span data-stu-id="cdfba-141">Not installed device count.</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="cdfba-142">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="cdfba-142">Relationships</span></span>
+|<span data-ttu-id="cdfba-143">Beziehung</span><span class="sxs-lookup"><span data-stu-id="cdfba-143">Relationship</span></span>|<span data-ttu-id="cdfba-144">Typ</span><span class="sxs-lookup"><span data-stu-id="cdfba-144">Type</span></span>|<span data-ttu-id="cdfba-145">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="cdfba-145">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="cdfba-146">deviceStates</span><span class="sxs-lookup"><span data-stu-id="cdfba-146">deviceStates</span></span>|<span data-ttu-id="cdfba-147">[deviceInstallState](../resources/intune_books_deviceinstallstate.md)-Sammlung</span><span class="sxs-lookup"><span data-stu-id="cdfba-147">[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection</span></span>|<span data-ttu-id="cdfba-148">Der Installationsstatus des E-Books.</span><span class="sxs-lookup"><span data-stu-id="cdfba-148">The install state of the eBook.</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="cdfba-149">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="cdfba-149">JSON Representation</span></span>
+<span data-ttu-id="cdfba-150">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="cdfba-150">Here is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.userInstallStateSummary"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.userInstallStateSummary",
+  "id": "String (identifier)",
+  "userName": "String",
+  "installedDeviceCount": 1024,
+  "failedDeviceCount": 1024,
+  "notInstalledDeviceCount": 1024
+}
+```
+
+
+
