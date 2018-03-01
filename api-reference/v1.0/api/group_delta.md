@@ -35,7 +35,8 @@ Diese Methode unterstützt OData-Abfrageparameter zur Anpassung der Antwort.
 
 - Sie können wie bei jeder GET-Anforderung den Abfrageparameter `$select` verwenden, um zwecks Leistungsoptimierung nur die benötigten Eigenschaften anzugeben. Die Eigenschaft _id_ wird immer zurückgegeben. 
 - Die Delta-Abfrage unterstützt `$select`, `$top` und `$expand` für Gruppen. 
-- Es besteht eingeschränkte Unterstützung für `$orderby`: Der einzige unterstützte `$orderby`-Ausdruck ist `$orderby=receivedDateTime+desc`. Wenn Sie keinen `$orderby`-Ausdruck einschließen, ist die Rückgabereihenfolge nicht gewährleistet. 
+- Es besteht eingeschränkte Unterstützung für `$filter` und `$orderby`:
+  * Der einzige unterstützte `$filter`-Ausdruck dient zum Nachverfolgen von Änderungen an einem bestimmten Objekt: `$filter=id+eq+{value}`. Sie können mehrere Objekte filtern. Beispiel: `https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff`. Es gilt ein Grenzwert von 50 gefilterten Objekten.
 - `$search` wird nicht unterstützt.
 
 ## <a name="request-headers"></a>Anforderungsheader

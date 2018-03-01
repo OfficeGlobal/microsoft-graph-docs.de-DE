@@ -6,7 +6,7 @@ Gruppen sind Auflistungen von [Benutzern](user.md) und anderen Hauptbenutzern, d
 
 | Typ              | Anwendungsfall | groupType | E-Mail-aktiviert | Mit aktivierter Sicherheit | Erstellung über API möglich? |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
-| [Office 365-Gruppen](#office-365-groups) | Ermöglicht die Zusammenarbeit von Benutzern mit freigegebenen Microsoft-Onlineressourcen. | `["Unified"]` | `true` | `false` | Ja | [user](user.md) |
+| [Office 365-Gruppen](#office-365-groups) | Ermöglicht die Zusammenarbeit von Benutzern mit freigegebenen Microsoft-Onlineressourcen. | `["Unified"]` | `true` | `false` | Ja |
 | [Sicherheitsgruppen](#security-groups-and-mail-enabled-security-groups) | Steuern des Benutzerzugriffs auf Ressourcen innerhalb der App. | `[]` | `false` | `true` | Ja |
 | [E-Mail-aktivierte Sicherheitsgruppen](#security-groups-and-mail-enabled-security-groups) | Steuern des Benutzerzugriffs auf Ressourcen innerhalb der App mit einem freigegebenen Gruppenpostfach. | `[]` | `true` | `true` | Nein |
 | Verteilergruppen | Verteilen von E-Mail-Nachrichten an die Mitglieder der Gruppe. Es wird empfohlen, dass Sie aufgrund der vielfältigeren Ressourcen Office 365-Gruppen verwenden. | `[]` | `true` | `false` | Nein |
@@ -58,7 +58,7 @@ Weitere Informationen zu Office 365-Gruppen und der Administratorerfahrung finde
 
 Sicherheitsgruppen sind für das Steuern des Benutzerzugriffs auf Ressourcen gedacht. Durch Überprüfen, ob ein Benutzer ein Mitglied einer Sicherheitsgruppe ist, kann Ihre App Autorisierungsentscheidungen treffen, wenn dieser Benutzer versucht, auf sichere Ressourcen in Ihrer App zuzugreifen. Sicherheitsgruppen können Benutzer und andere Sicherheitsgruppen als Mitglieder haben.
 
-E-Mail-aktivierte Sicherheitsgruppen werden auf die gleiche Weise wie Sicherheitsgruppen verwendet, weisen jedoch das zusätzliche Feature eines freigegebenen Postfachs für die Gruppen auf. E-Mail-aktivierte Sicherheitsgruppen können nicht über die API erstellt werden, aber andere Gruppenvorgänge funktionieren hier weiterhin. Weitere Informationen finden Sie im Exchange-Artikel  [Verwalten von E-Mail-aktivierten Sicherheitsgruppen](https://technet.microsoft.com/de-DE/library/bb123521%28v=exchg.160%29.aspx).
+E-Mail-aktivierte Sicherheitsgruppen werden auf die gleiche Weise wie Sicherheitsgruppen verwendet, weisen jedoch das zusätzliche Feature eines freigegebenen Postfachs für die Gruppen auf. E-Mail-aktivierte Sicherheitsgruppen können nicht über die API erstellt werden, aber andere Gruppenvorgänge funktionieren weiterhin.  E-Mail-aktivierte Sicherheitsgruppen sind schreibgeschützt. Weitere Informationen finden Sie im Exchange-Artikel  [Verwalten von E-Mail-aktivierten Sicherheitsgruppen](https://technet.microsoft.com/de-DE/library/bb123521%28v=exchg.160%29.aspx).
 
 ### <a name="security-group-example"></a>Beispiel für eine Sicherheitsgruppe
 

@@ -37,7 +37,9 @@ Diese Methode unterstützt OData-Abfrageparameter zur Anpassung der Antwort.
 
 - Sie können wie bei jeder GET-Anforderung den Abfrageparameter `$select` verwenden, um zwecks Leistungsoptimierung nur die benötigten Eigenschaften anzugeben. Die Eigenschaft _id_ wird immer zurückgegeben. 
 - Die Delta-Abfrage unterstützt `$select`, `$top` und `$expand` für Nachrichten. 
-- Es besteht eingeschränkte Unterstützung für `$orderby`: Der einzige unterstützte `$orderby`-Ausdruck ist `$orderby=receivedDateTime+desc`. Wenn Sie keinen `$orderby`-Ausdruck einschließen, ist die Rückgabereihenfolge nicht gewährleistet. 
+- Es besteht eingeschränkte Unterstützung für `$filter` und `$orderby`:
+  * Der einzige unterstützte `$filter`-Ausdruck dient zum Nachverfolgen von Änderungen an einem oder zwei bestimmten Benutzern: `$filter=id+eq+{value}` oder `$filter=id+eq+{value1}+or+id+eq+{value2}`. 
+  * Es wird nur der `$orderby`-Ausdruck `$orderby=receivedDateTime+desc` unterstützt. Wenn Sie keinen `$orderby`-Ausdruck einschließen, ist die Rückgabereihenfolge nicht gewährleistet. 
 - `$search` wird nicht unterstützt.
 
 ## <a name="request-headers"></a>Anforderungsheader

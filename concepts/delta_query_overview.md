@@ -36,7 +36,7 @@ Für Benutzer und Gruppen gibt es Einschränkungen im Hinblick auf die Verwendun
 -   Wenn ein `$select`-Abfrageparameter verwendet wird, bedeutet dies, dass der Client nur Änderungen an den Eigenschaften oder Beziehungen nachverfolgen möchte, die in der `$select`-Anweisung angegeben sind. Wenn eine Änderung an einer nicht ausgewählten Eigenschaft vorgenommen wird, wird die Ressource, für die diese Eigenschaft geändert wurde, nach einer nachfolgenden Anforderung nicht in der Delta-Antwort angezeigt.
 -   `$expand` wird nicht unterstützt.
 
-In Beta (Vorschau)-APIs für Benutzer und Gruppen können Sie mithilfe von Bereichsfiltern Änderungen an einem oder mehreren bestimmten Benutzern bzw. einer oder mehreren bestimmten Gruppen nach objectId nachverfolgen. Die folgende Anforderung gibt beispielsweise Änderungen für die Gruppen zurück, die mit den im Abfragefilter angegebenen IDs übereinstimmen: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e 
+APIs für Benutzer und Gruppen können Sie mithilfe von Bereichsfiltern Änderungen an einem oder mehreren bestimmten Benutzern bzw. einer oder mehreren bestimmten Gruppen nach objectId nachverfolgen. Die folgende Anforderung gibt beispielsweise Änderungen für die Gruppen zurück, die mit den im Abfragefilter angegebenen IDs übereinstimmen: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' oder id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e 
 
 ## <a name="resource-representation-in-the-delta-query-response"></a>Ressourcendarstellung in der Delta-Abfrageantwort
 
@@ -70,7 +70,7 @@ Die Delta-Abfrage wird derzeit für die folgenden Ressourcen unterstützt:
 | Laufwerk-Elemente\* | [Delta](../api-reference/v1.0/api/driveitem_delta.md)-Funktion der [driveItem](../api-reference/v1.0/resources/driveitem.md)-Ressource |
 
 
-> \* Das Verwendungsmuster für OneDrive-Ressourcen ähnelt dem der anderen unterstützten Ressourcen, mit geringen Unterschieden in der Syntax. Die Delta-Abfrage für Laufwerke wird zwecks Konsistenz mit anderen Ressourcentypen demnächst aktualisiert. Weitere Informationen zur aktuellen Syntax finden Sie unter[Laufwerksänderungen nachverfolgen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta).
+> \* Das Verwendungsmuster für OneDrive-Ressourcen ähnelt dem der anderen unterstützten Ressourcen, mit geringen Unterschieden in der Syntax. Die Delta-Abfrage für Laufwerke wird zwecks Konsistenz mit anderen Ressourcentypen demnächst aktualisiert. Weitere Informationen zur aktuellen Syntax finden Sie unter[Laufwerksänderungen nachverfolgen](https://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/api/item_delta).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 

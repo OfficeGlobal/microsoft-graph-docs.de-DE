@@ -13,7 +13,13 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Ergänzungen|Beta|Die Eigenschaften `favoritePlanReferences` und `recentPlanReferences` wurden der [plannerUser](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/plannerUser)-Entität hinzugefügt. |
 |Ergänzungen|Beta|Die Navigationseigenschaften `favoritePlans` und `recentPlans` wurden der [plannerUser](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/plannerUser)-Entität hinzugefügt. |
 |Ergänzungen|Beta|Die `contexts`-Eigenschaft wurde der [plannerPlan](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/plannerPlan)-Entität hinzugefügt. |
-|Ergänzungen|Beta|Die `contextDetails`-Eigenschaft wurden der [plannerPlanDetails](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/plannerPlanDetails)-Entität hinzugefügt. |## Januar 2018
+|Ergänzungen|Beta|Die `contextDetails`-Eigenschaft wurden der [plannerPlanDetails](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/plannerPlanDetails)-Entität hinzugefügt. |
+
+### <a name="reports-apis"></a>Bericht-APIs
+| Änderungstyp | Version | Beschreibung                              |
+|:------------|:--------|:-----------------------------------------|
+| Ergänzungen    | Beta    | Die **activatedOnSharedComputer**-Eigenschaft wurde der [userActivationCounts](../api-reference/beta/resources/useractivationcounts.md)-Entität hinzugefügt.|
+| Ergänzungen    | Beta    | Die **sharedComputerActivation**-Eigenschaft wurde der [office365ActivationsUserCounts](../api-reference/beta/resources/office365activationsusercounts.md)-Entität hinzugefügt.|
 
 ## <a name="january-2018"></a>Januar 2018
 
@@ -163,15 +169,18 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Änderung|Beta|Die Eigenschaften **supportsUserLicensing** und **supportsDeviceLicensing** wurden dem komplexen Typ [vppLicensingType](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_apps_vpplicensingtype) hinzugefügt.|
 |Änderung|Beta|Die **actionMessage**-Eigenschaft wurde aus dem komplexen Typ [vppTokenActionResult](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_onboarding_vpptokenactionresult) entfernt.|
 
-## <a name="january-2018"></a>Januar 2018
-
 ### <a name="reports-apis"></a>Bericht-APIs
 | Änderungstyp | Version | Beschreibung                              |
 |:------------|:--------|:-----------------------------------------|
 | Ergänzungen    | v1.0    | Die folgenden APIs wurden hinzugefügt:<br>[getTeamsUserActivityUserDetail](../api-reference/v1.0/api/reportroot_getteamsuseractivityuserdetail.md)<br>[getTeamsUserActivityCounts](../api-reference/v1.0/api/reportroot_getteamsuseractivitycounts.md)<br>[getTeamsUserActivityUserCounts](../api-reference/v1.0/api/reportroot_getteamsuseractivityusercounts.md)<br>[getTeamsDeviceUsageUserDetail](../api-reference/v1.0/api/reportroot_getteamsdeviceusageuserdetail.md)<br>[getTeamsDeviceUsageUserCounts](../api-reference/v1.0/api/reportroot_getteamsdeviceusageusercounts.md)<br>[getTeamsDeviceUsageDistributionUserCounts](../api-reference/v1.0/api/reportroot_getteamsdeviceusagedistributionusercounts.md) |
 
-
 ## <a name="december-2017"></a>Dezember 2017
+
+### <a name="delta-query"></a>Delta-Abfrage
+
+| Änderungstyp | Version | Beschreibung                              |
+|:------------|:--------|:-----------------------------------------|
+| Änderung      | v1.0    | Hinzufügen einer optionalen Abfrage-Filterfunktion zu [Benutzer](https://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/api/user_delta) und [Gruppen](https://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/api/group_delta). |
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune-APIs
 
@@ -821,7 +830,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 | **Änderungstyp** | **Version** | **Beschreibung**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Ergänzungen        | v1.0        | Delta-Funktion-Support zu V1.0 hinzufügen Zu folgenden Entitäten hinzufügen, um [Delta-Abfrage](https://developer.microsoft.com/de-DE/graph/docs/concepts/delta_query_overview) auszuführen:<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Beispiele finden Sie unter Folgendem:<br/>[Inkrementelle Änderungen an Gruppen abrufen](https://developer.microsoft.com/de-DE/graph/docs/concepts/delta_query_groups)<br/>[Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen](https://developer.microsoft.com/de-DE/graph/docs/concepts/delta_query_messages)<br/>[Inkrementelle Änderungen an Benutzern abrufen](https://developer.microsoft.com/de-DE/graph/docs/concepts/delta_query_users) |
+| Ergänzungen        | v1.0        | Delta-Funktion-Support zu V1.0 hinzufügen Zu folgenden Entitäten hinzufügen, um [Delta-Abfrage](https://developer.microsoft.com/de-DE/graph/docs/concepts/delta_query_overview) auszuführen:<br/>Kontakt<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Beispiele finden Sie unter Folgendem:<br/>[Inkrementelle Änderungen an Gruppen abrufen](https://developer.microsoft.com/de-DE/graph/docs/concepts/delta_query_groups)<br/>[Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen](https://developer.microsoft.com/de-DE/graph/docs/concepts/delta_query_messages)<br/>[Inkrementelle Änderungen an Benutzern abrufen](https://developer.microsoft.com/de-DE/graph/docs/concepts/delta_query_users) |
 | Änderung          | Beta        | Hinzufügen von zusätzlicher optionaler Abfrage-Filterfunktion (anhand der Id) zu [Benutzer](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/api/user_delta) und [Gruppen](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/api/group_delta). |
 
 ### <a name="added-user-resource-support-for-deleted-items"></a>Unterstützung von hinzugefügte Benutzer Ressourcen für gelöschte Elemente
@@ -849,13 +858,13 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 | **Änderungstyp** | **Version** | **Beschreibung**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Ergänzungen        | V1.0        | Hinzugefügte Vorgänge in [Domänen](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/resources/domain)<br/>Neue Entitäten:</br>[domain](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>Neue Aktionen:</br>[überprüfen](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/api/domain_verify) |
+| Ergänzungen        | v1.0        | Hinzugefügte Vorgänge in [Domänen](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/resources/domain)<br/>Neue Entitäten:</br>[domain](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>Neue Aktionen:</br>[überprüfen](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/api/domain_verify) |
 
 ### <a name="added-contracts-to-v10"></a>Hinzugefügte Verträge zu v1.0
 
 | **Änderungstyp** | **Version** | **Beschreibung**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Ergänzungen        | V1.0        | Neue Entität:</br>[Vertrag](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/resources/contract) |
+| Ergänzungen        | v1.0        | Neue Entität:</br>[Vertrag](https://graph.microsoft.io/de-DE/docs/api-reference/v1.0/resources/contract) |
 
 ### <a name="added-licensedetails-to-v10"></a>Hinzugefügte licenseDetails zu v1.0
 
