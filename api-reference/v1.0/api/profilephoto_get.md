@@ -38,7 +38,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
@@ -113,6 +113,23 @@ Content-type: application/json
     "height": 1
 }
 ```
+## <a name="using-the-binary-data-of-the-requested-photo"></a>Verwenden der Binärdaten des angeforderten Fotos
+
+Wenn Sie den `/photo/$value`-Endpunkt zum Abrufen der Binärdaten für ein Profilfoto verwenden, müssen Sie die Daten in eine Base-64-Zeichenfolge konvertieren, damit sie als E-Mail-Anlage hinzugefügt werden können. Das folgende Beispiel in JavaScript zeigt das Erstellen eines Arrays, das Sie als Wert des `Attachments`-Parameters einer [Outlook-Nachricht](user_post_messages.md) übergeben können.
+
+      const attachments = [{
+        '@odata.type': '#microsoft.graph.fileAttachment',
+        ContentBytes: file.toString('base64'),
+        Name: 'mypic.jpg'
+      }];
+
+Unter [Microsoft Graph Connect-Beispiel für Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample) finden Sie eine Implementierung dieses Beispiels.
+
+Wenn Sie das Bild auf einer Webseite anzeigen möchten, erstellen Sie ein Objekt im Arbeitsspeicher aus dem Bild, und verwenden Sie das Objekt als Quelle eines Bildelements. Hier ist ein Beispiel in JavaScript für diesen Vorgang.
+
+    const url = window.URL || window.webkitURL;
+    const blobUrl = url.createObjectURL(image.data);
+    document.getElementById(imageElement).setAttribute("src", blobUrl);
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

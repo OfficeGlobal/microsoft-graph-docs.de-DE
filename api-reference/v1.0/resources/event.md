@@ -49,7 +49,7 @@ Diese Ressource unterstützt Folgendes:
 |hasAttachments|Boolean|„true“, wenn das Ereignis Anlagen hat|
 |iCalUId|String|Ein eindeutiger Bezeichner, der für alle Instanzen eines Ereignisses in unterschiedlichen Kalendern verwendet wird|
 |id|String| Schreibgeschützt|
-|importance|String|Die Wichtigkeit des Ereignisses. Niedrig = 0, Normal = 1, Hoch = 2. Mögliche Werte: `Low`, `Normal`, `High`.|
+|importance|String|Die Wichtigkeit des Ereignisses. Mögliche Werte sind: `Low`, `Normal` und `High`.|
 |isAllDay|Boolean|„true“, wenn das Ereignis ein ganztägiges Ereignis ist|
 |isCancelled|Boolean|„true“, wenn das Ereignis abgesagt wurde|
 |isOrganizer|Boolean|„true“, wenn der Absender der Nachricht auch der Organisator ist|

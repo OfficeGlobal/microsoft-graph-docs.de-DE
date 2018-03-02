@@ -19,7 +19,7 @@ Abgeleitet von [attachment](attachment.md).
 |isInline|Boolean|Wird auf „true“ festgelegt, wenn die Anlage inline im Text des einbettenden Objekts angezeigt wird.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Anlage. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |name|String|Der Text, der unter dem Symbol angezeigt wird, das die eingebettete Anlage darstellt. Dies muss nicht der tatsächliche Dateiname sein.|
-|size|Int32|Die Größe der Anlage in Byte ab.|
+|size|Int32|Die Größe der Metadaten, die in der Nachricht für die Anlage gespeichert sind, in Byte. Dieser Wert gibt nicht die Größe der tatsächlichen Datei an.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

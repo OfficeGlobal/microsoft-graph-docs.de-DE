@@ -12,7 +12,7 @@ Damit die Education-APIs in Microsoft Graph aufgerufen werden können, muss Ihre
 
 Um Apps bereitzustellen, die in Education-APIs in Microsoft Graph integriert sind, müssen Schul-IT-Administratoren zunächst ihre Zustimmung für die von der App angeforderten Berechtigungen erteilen. Diese Zustimmung muss nur einmal erteilt werden, sofern sich die Berechtigungen nicht ändern. Nachdem der Administrator seine Zustimmung erteilt hat, wird die App für alle Benutzer im Mandanten bereitgestellt.
 
-Verwenden Sie den folgenden REST-Aufruf, um ein Dialogfeld für die Zustimmung auszulösen.
+Verwenden Sie den folgenden REST-Aufruf, um ein Dialogfeld für die Zustimmung anzuzeigen.
 
 ```
 GET https://login.microsoftonline.com/{tenant}/adminconsent?

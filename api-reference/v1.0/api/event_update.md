@@ -44,7 +44,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |body|[ItemBody](../resources/itembody.md)|Der Text der Nachricht, die mit diesem Ereignis verknüpft ist.|
 |categories|String|Die Kategorien, die mit dem Ereignis verknüpft sind.|
 |end|[DateTimeTimeZone](../resources/datetimetimezone.md)|Datum und Uhrzeit für das Ende des Ereignisses.<br/><br/>Standardmäßig ist die Endzeit in UTC angegeben. Sie können eine optionale Zeitzone in EndTimeZone angeben, die Endzeit in dieser Zeitzone angeben und einen Zeitunterschied zur UTC-Zeitzone angeben. Beachten Sie, dass bei Verwendung von EndTimeZone auch ein Wert für StartTimeZone angegeben werden muss.<br/><br/>In diesem Beispiel wird der 25. Februar 2015 21:34 in PST angegeben: „2015-02-25T21:34:00-08:00“. |
-|Wichtigkeit|String|Die Wichtigkeit des Ereignisses. Niedrig = 0, Normal = 1, Hoch = 2. Mögliche Werte: `Low`, `Normal`, `High`.|
+|Wichtigkeit|String|Die Wichtigkeit des Ereignisses. Mögliche Werte sind: `Low`, `Normal` und `High`.|
 |isAllDay|Boolean|True, wenn das Ereignis den ganzen Tag andauert.|
 |isReminderOn|Boolean|True, wenn eine Benachrichtigung den Benutzer an das Ereignis erinnern soll.|
 |location|[Ort](../resources/location.md)|Der Ort des Ereignisses.|
