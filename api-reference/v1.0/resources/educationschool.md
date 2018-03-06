@@ -1,14 +1,6 @@
 # <a name="educationschool-resource-type"></a>educationSchool-Ressourcentyp
 
-Eine Bildungseinrichtung. Die **educationSchool**-Ressource entspricht derzeit einer [administrativeUnit](../../beta/resources/administrativeunit.md)-Ressource und hat dieselbe ID.  
-
->**Hinweis:** Die Ressourcen **administrativeUnit** und **educationOrganization** befinden sich aktuell im Betastadium. Wenn Sie diese Ressourcen verwenden, müssen Sie das [Änderungsprotokoll](../../../concepts/changelog.md) in regelmäßigen Abständen überprüfen. Wenn Ressourcen der Microsoft Graph-API im v1.0-Endpunkt veröffentlicht werden, wird dies im Änderungsprotokoll vermerkt. Wenn Ihre App die Ressourcen **administrativeUnit** oder **educationOrganization** nutzt, müssen Sie die Basisanforderungs-URLs wie im folgenden Codeblock deklarieren.  
-  ```JavaScript
-  var v1BaseUrl = “https://graph.microsoft.com/v1.0/education”;
-  var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for administrativeUnit and educationOrganization
-  ```
-
-Diese Ressource ist ein Untertyp von [educationOrganization](../../beta/resources/educationorganization.md).
+Eine Ressource, eine Schule darstellt und zum Verwalten der Klassen, Lehrkräfte und Schüler der repräsentierten Schule verwendet wird.  
 
 
 ## <a name="methods"></a>Methoden
@@ -22,7 +14,6 @@ Diese Ressource ist ein Untertyp von [educationOrganization](../../beta/resource
 |[Benutzer hinzufügen](../api/educationschool_post_users.md) |[educationUser](educationuser.md)| Hinzufügen eines neuen **educationUser** für die Schule durch Bereitstellen in der Navigationseigenschaft **users**.|
 |[Benutzer auflisten](../api/educationschool_list_users.md) |[educationUser](educationuser.md)-Sammlung| Abrufen der **educationUser**-Objektsammlung.|
 |[Benutzer entfernen](../api/educationschool_delete_users.md) |[educationUser](educationuser.md)| Entfernen eines **educationUser** von der Schule über die Navigationseigenschaft **users**.|
-|[AdministrativeUnit abrufen](../api/educationschool_get_administrativeunit.md) |[administrativeUnit](../../beta/resources/administrativeunit.md)| Abrufen der **administrativeUnit**, die dieser **educationSchool** entspricht.|
 |[Aktualisieren](../api/educationschool_update.md) | [educationSchool](educationschool.md) |Aktualisieren eines **educationSchool**-Objekts. |
 |[Löschen](../api/educationschool_delete.md) | Keine |Löschen eines **educationSchool**-Objekts. |
 
