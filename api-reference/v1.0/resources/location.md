@@ -6,7 +6,7 @@ Stellt Standortinformationen eines Ereignisses dar.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft  | Typ   | Beschreibung                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
-| address | [physicalAddress](physicalAddress.md) |Die Adresse des Orts. |
+| address | [physicalAddress](physicaladdress.md) |Die Adresse des Orts. |
 | displayName  | String | Der Name, der mit dem Ort verknüpft ist                       |
 | locationEmailAddress | String | Optionale E-Mail-Adresse des Orts              |
 
