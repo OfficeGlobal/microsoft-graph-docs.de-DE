@@ -1,45 +1,58 @@
-# <a name="update-calendargroup"></a><span data-ttu-id="034eb-101">CalendarGroup aktualisieren</span><span class="sxs-lookup"><span data-stu-id="034eb-101">Update calendargroup</span></span>
+# <a name="update-calendargroup"></a><span data-ttu-id="d6416-101">CalendarGroup aktualisieren</span><span class="sxs-lookup"><span data-stu-id="d6416-101">Update calendargroup</span></span>
 
-<span data-ttu-id="034eb-102">Mit dieser API können Sie die Eigenschaften eines Objekts des Typs „calendargroup“ aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="034eb-102">Update the properties of calendargroup object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="034eb-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="034eb-103">Permissions</span></span>
-<span data-ttu-id="034eb-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="034eb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="d6416-102">Mit dieser API können Sie die Eigenschaften eines Objekts des Typs „calendargroup“ aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="d6416-102">Update the properties of calendargroup object.</span></span>
 
-|<span data-ttu-id="034eb-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="034eb-106">Permission type</span></span>      | <span data-ttu-id="034eb-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="034eb-107">Permissions (from least to most privileged)</span></span>              |
-|:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="034eb-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="034eb-108">Delegated (work or school account)</span></span> | <span data-ttu-id="034eb-109">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="034eb-109">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="034eb-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="034eb-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="034eb-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="034eb-111">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="034eb-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="034eb-112">Application</span></span> | <span data-ttu-id="034eb-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="034eb-113">Calendars.ReadWrite</span></span> |
+## <a name="permissions"></a><span data-ttu-id="d6416-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="d6416-103">Permissions</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="034eb-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="034eb-114">HTTP request</span></span>
+<span data-ttu-id="d6416-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="d6416-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+| <span data-ttu-id="d6416-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="d6416-106">Permission type</span></span>                        | <span data-ttu-id="d6416-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="d6416-107">Permissions (from least to most privileged)</span></span> |
+| :------------------------------------- | :------------------------------------------ |
+| <span data-ttu-id="d6416-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="d6416-108">Delegated (work or school account)</span></span>     | <span data-ttu-id="d6416-109">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d6416-109">Calendars.ReadWrite</span></span>                         |
+| <span data-ttu-id="d6416-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="d6416-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d6416-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d6416-111">Calendars.ReadWrite</span></span>                         |
+| <span data-ttu-id="d6416-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="d6416-112">Application</span></span>                            | <span data-ttu-id="d6416-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d6416-113">Calendars.ReadWrite</span></span>                         |
+
+## <a name="http-request"></a><span data-ttu-id="d6416-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="d6416-114">HTTP request</span></span>
+
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="034eb-115">Eine [calendarGroup](../resources/calendargroup.md) eines Benutzers.</span><span class="sxs-lookup"><span data-stu-id="034eb-115">Any [calendarGroup](../resources/calendargroup.md) of a user.</span></span>
+
+<span data-ttu-id="d6416-115">Eine [calendarGroup](../resources/calendargroup.md) eines Benutzers.</span><span class="sxs-lookup"><span data-stu-id="d6416-115">Any [calendarGroup](../resources/calendargroup.md) of a user.</span></span>
+
 ```http
 PATCH /me/calendarGroups/{id}
 PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="034eb-116">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="034eb-116">Request headers</span></span>
-| <span data-ttu-id="034eb-117">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="034eb-117">Header</span></span>       | <span data-ttu-id="034eb-118">Wert</span><span class="sxs-lookup"><span data-stu-id="034eb-118">Value</span></span> |
-|:---------------|:--------|
-| <span data-ttu-id="034eb-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="034eb-119">Authorization</span></span>  | <span data-ttu-id="034eb-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="034eb-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="034eb-122">Content-Type</span><span class="sxs-lookup"><span data-stu-id="034eb-122">Content-Type</span></span>  | <span data-ttu-id="034eb-p103">application/json. Erforderlich. </span><span class="sxs-lookup"><span data-stu-id="034eb-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="034eb-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="034eb-125">Request body</span></span>
-<span data-ttu-id="034eb-p104">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.</span><span class="sxs-lookup"><span data-stu-id="034eb-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d6416-116">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="d6416-116">Request headers</span></span>
 
-| <span data-ttu-id="034eb-129">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="034eb-129">Property</span></span>     | <span data-ttu-id="034eb-130">Typ</span><span class="sxs-lookup"><span data-stu-id="034eb-130">Type</span></span>   |<span data-ttu-id="034eb-131">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="034eb-131">Description</span></span>|
-|:---------------|:--------|:----------|
-|<span data-ttu-id="034eb-132">name</span><span class="sxs-lookup"><span data-stu-id="034eb-132">name</span></span>|<span data-ttu-id="034eb-133">String</span><span class="sxs-lookup"><span data-stu-id="034eb-133">String</span></span>|<span data-ttu-id="034eb-134">Der Gruppenname.</span><span class="sxs-lookup"><span data-stu-id="034eb-134">The group name.</span></span>|
+| <span data-ttu-id="d6416-117">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="d6416-117">Header</span></span>        | <span data-ttu-id="d6416-118">Wert</span><span class="sxs-lookup"><span data-stu-id="d6416-118">Value</span></span>                       |
+| :------------ | :-------------------------- |
+| <span data-ttu-id="d6416-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="d6416-119">Authorization</span></span> | <span data-ttu-id="d6416-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="d6416-p102">Bearer {token}. Required.</span></span>   |
+| <span data-ttu-id="d6416-122">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d6416-122">Content-Type</span></span>  | <span data-ttu-id="d6416-p103">application/json. Erforderlich. </span><span class="sxs-lookup"><span data-stu-id="d6416-p103">application/json. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="034eb-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="034eb-135">Response</span></span>
+## <a name="request-body"></a><span data-ttu-id="d6416-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="d6416-125">Request body</span></span>
 
-<span data-ttu-id="034eb-136">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [calendarGroup](../resources/calendargroup.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="034eb-136">If successful, this method returns a `200 OK` response code and updated [calendarGroup](../resources/calendargroup.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="034eb-137">Beispiel</span><span class="sxs-lookup"><span data-stu-id="034eb-137">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="034eb-138">Anforderung</span><span class="sxs-lookup"><span data-stu-id="034eb-138">Request</span></span>
-<span data-ttu-id="034eb-139">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="034eb-139">Here is an example of the request.</span></span>
+<span data-ttu-id="d6416-p104">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.</span><span class="sxs-lookup"><span data-stu-id="d6416-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+
+| <span data-ttu-id="d6416-129">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="d6416-129">Property</span></span> | <span data-ttu-id="d6416-130">Typ</span><span class="sxs-lookup"><span data-stu-id="d6416-130">Type</span></span>   | <span data-ttu-id="d6416-131">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d6416-131">Description</span></span>     |
+| :------- | :----- | :-------------- |
+| <span data-ttu-id="d6416-132">name</span><span class="sxs-lookup"><span data-stu-id="d6416-132">name</span></span>     | <span data-ttu-id="d6416-133">String</span><span class="sxs-lookup"><span data-stu-id="d6416-133">String</span></span> | <span data-ttu-id="d6416-134">Der Gruppenname.</span><span class="sxs-lookup"><span data-stu-id="d6416-134">The group name.</span></span> |
+
+## <a name="response"></a><span data-ttu-id="d6416-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="d6416-135">Response</span></span>
+
+<span data-ttu-id="d6416-136">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [calendarGroup](../resources/calendargroup.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="d6416-136">If successful, this method returns a `200 OK` response code and updated [calendarGroup](../resources/calendargroup.md) object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="d6416-137">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d6416-137">Example</span></span>
+
+##### <a name="request"></a><span data-ttu-id="d6416-138">Anforderung</span><span class="sxs-lookup"><span data-stu-id="d6416-138">Request</span></span>
+
+<span data-ttu-id="d6416-139">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="d6416-139">Here is an example of the request.</span></span>
+
 <!-- {
   "blockType": "request",
   "name": "update_calendargroup"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
 Content-type: application/json
@@ -49,13 +62,17 @@ Content-length: 30
   "name": "name-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="034eb-140">Antwort</span><span class="sxs-lookup"><span data-stu-id="034eb-140">Response</span></span>
-<span data-ttu-id="034eb-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="034eb-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+
+##### <a name="response"></a><span data-ttu-id="d6416-140">Antwort</span><span class="sxs-lookup"><span data-stu-id="d6416-140">Response</span></span>
+
+<span data-ttu-id="d6416-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="d6416-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.calendarGroup"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -71,6 +88,7 @@ Content-length: 110
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Update calendargroup",
