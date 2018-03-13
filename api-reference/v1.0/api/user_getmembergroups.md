@@ -5,7 +5,7 @@ Diese Funktion unterstützt Office 365 und andere Typen von Gruppen, die in Azur
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
->**Hinweis:** Diese API erfordert derzeit mindestens die Berechtigung „Directory.Read.All“. Bei der Verwendung der Berechtigungen „User.Read“ oder „User.ReadBasic.All“ in Kombination mit der Berechtigung „Group.Read.All“ wird ein Fehler zurückgegeben. Dies ist ein bekanntes Problem.
+>**Hinweis:** Diese API erfordert derzeit mindestens die Berechtigung „Directory.Read.All“. Bei der Verwendung der Berechtigung „Group.Read.All“ alleine oder in Kombination mit einer Benutzerberechtigung wird ein Fehler zurückgegeben. Dies ist ein bekanntes Problem.
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
