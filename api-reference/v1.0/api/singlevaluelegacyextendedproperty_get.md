@@ -1,10 +1,14 @@
 # <a name="get-singlevaluelegacyextendedproperty"></a>singleValueLegacyExtendedProperty abrufen
 
-In diesem Artikel erfahren Sie, wie Sie mithilfe von `$expand` oder `$filter` Ressourceninstanzen abrufen können, die eine einwertige erweiterte Eigenschaft enthalten.
+Sie können eine einzelne, mit einer bestimmten erweiterten Eigenschaft erweiterte Ressourceninstanz oder eine Sammlung von Ressourceninstanzen abrufen, die einem Filter entsprechende erweiterte Eigenschaften enthalten.
 
-Mit dem Abfrageparameter `$expand` können Sie die angegebene Instanz abrufen, erweitert um die angegebene erweiterte Eigenschaft. Dies ist derzeit die einzige Möglichkeit zum Abrufen des [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md)-Objekts, das eine erweiterte Eigenschaft darstellt.
+Mit dem Abfrageparameter `$expand` können Sie die angegebene Ressourceninstanz, erweitert um die angegebene erweiterte Eigenschaft, abrufen. Wenden Sie einen `$filter`- und einen `eq`-Operator auf die **ID**-Eigenschaft an, um die erweiterte Eigenschaft anzugeben. Dies ist derzeit die einzige Möglichkeit zum Abrufen des [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md)-Objekts, das eine erweiterte Eigenschaft darstellt. 
 
-Mithilfe des Abfrageparameters `$filter` können Sie alle Instanzen der angegebenen Ressource abrufen, die eine erweiterte Eigenschaft haben, deren Eigenschaften **id** und **value** dem festgelegten Filter entsprechen. Der Filter wird auf alle Instanzen der Ressource angewendet, die im Postfach eines angemeldeten Benutzers existieren.
+Um Ressourceninstanzen mit bestimmten erweiterten Eigenschaften abzurufen, verwenden Sie den Abfrageparameter `$filter`, und wenden Sie einen `eq`-Operator auf die **ID**-Eigenschaft an. Wenden Sie für nummerische erweiterte Eigenschaften zudem einen der folgenden Operatoren auf die Eigenschaft **Wert** an: `eq`, `ne`,`ge`, `gt`, `le` oder `lt`. Für erweiterte Eigenschaften vom Typ Zeichenfolge wenden Sie einen `contains`-, `startswith`-, `eq`-, oder `ne`-Operator auf den **Wert** an.
+
+Der Filter wird auf alle Instanzen der Ressource angewendet, die im Postfach eines angemeldeten Benutzers existieren. 
+
+Beim Filtern des Namens der Zeichenfolge (`Name`) in der **ID** einer erweiterten Eigenschaft wird die Groß-/Kleinschreibung beachtet. Beim Filtern der Eigenschaft **Wert** einer erweiterten Eigenschaft wird die Groß-/Kleinschreibung beachtet.
 
 Die folgenden Benutzerressourcen werden unterstützt:
 
@@ -33,7 +37,7 @@ Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich (je n
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
-#### <a name="get-a-resource-instance-using-expand"></a>Abrufen einer Ressourceninstanz mithilfe von `$expand`
+#### <a name="get-a-resource-instance-expanded-with-an-extended-property-that-matches-a-filter"></a>Abrufen einer Ressourceninstanz, erweitert um eine erweiterte Eigenschaft, die einem Filter entspricht
 Hier sehen Sie, wie Sie eine Ressourceninstanz abrufen können, erweitert um die erweiterte Eigenschaft, deren **id**-Eigenschaft dem definierten Filter entspricht. Stellen Sie sicher, dass Sie für die Leerzeichen in der Filterzeichenfolge die [URL-Codierung](http://www.w3schools.com/tags/ref_urlencode.asp) verwenden.
 
 Abrufen einer **message**-Instanz:
@@ -89,10 +93,11 @@ GET /groups/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-#### <a name="get-resource-instances-using-filter"></a>Abrufen von Ressourceninstanzen mithilfe von `$filter`
+#### <a name="get-resource-instances-that-include-numeric-extended-properties-matching-a-filter"></a>Abrufen von Ressourceninstanzen, die numerische erweiterte Eigenschaften enthalten, die einem Filter entsprechen
 
-Hier sehen Sie, wie Sie alle Instanzen einer unterstützten Ressource abrufen, die eine erweiterte Eigenschaft haben, deren Eigenschaften **id** und **value** dem definierten Filter entsprechen. Stellen Sie sicher, dass Sie für die folgenden Zeichen in der Filterzeichenfolge die [URL-Codierung](http://www.w3schools.com/tags/ref_urlencode.asp) verwenden: Doppelpunkte, Vorwärtsschrägstriche und Leerzeichen.
+Rufen Sie Instanzen einer unterstützten Ressource ab, die eine numerische erweiterte Eigenschaft besitzen, die einem Filter entspricht. Der Filter wendet einen `eq`-Operator auf die **ID**-Eigenschaft und einen der folgenden Operatoren auf die Eigenschaft **Wert** an: `eq`, `ne`,`ge`, `gt` , `le` oder `lt`. Stellen Sie sicher, dass Sie für die folgenden Zeichen in der Filterzeichenfolge die [URL-Codierung](http://www.w3schools.com/tags/ref_urlencode.asp) verwenden: Doppelpunkte, Vorwärtsschrägstriche und Leerzeichen.
 
+Die folgenden Syntaxzeilen zeigen einen Filter, der den `eq`-Operator auf die ID anwendet, und einen `eq`-Operator, der auf den Eigenschaftswert angewandt wird. Sie können den `eq`-Operator, der auf den **Wert** angewandt wird, durch einen der anderen Operatoren (`ne`,`ge`, `gt`, `le` oder `lt`) ersetzen, die auf numerische Werte angewandt werden.
 
 Abrufen von **message**-Instanzen:
 <!-- { "blockType": "ignored" } -->
@@ -147,12 +152,63 @@ GET /groups/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep
 GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
+#### <a name="get-resource-instances-with-string-typed-extended-properties-matching-a-filter"></a>Abrufen von Ressourceninstanzen mit erweiterten Eigenschaften des Typs Zeichenfolge, die einem Filter entsprechen
+
+Rufen Sie Instanzen der Ressource **Nachricht** oder **Ereignis** mit einer erweiterten Eigenschaft des Typs Zeichenfolge ab, die einem Filter entspricht. Der Filter wendet einen `eq`-Operator auf die **ID**-Eigenschaft und einen der folgenden Operatoren auf die Eigenschaft **Wert** an: `contains`, `startswith`, `eq` oder `ne`. Stellen Sie sicher, dass Sie für die folgenden Zeichen in der Filterzeichenfolge die [URL-Codierung](http://www.w3schools.com/tags/ref_urlencode.asp) verwenden: Doppelpunkte, Vorwärtsschrägstriche und Leerzeichen.
+
+
+Abrufen von **message**-Instanzen:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+
+GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+
+GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+
+GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+```
+
+Abrufen von **event**-Instanzen:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+
+GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+
+GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+
+GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+```
+
+Abrufen von **event**-Instanzen für Gruppen:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+```
+
+
 ## <a name="parameters"></a>Parameter
 |**Parameter**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
 |_URL parameters_|
 |id_value|String|Die ID der erweiterten Eigenschaft, nach der gefiltert wird. Sie muss eins der unterstützten Formate aufweisen. Weitere Informationen finden Sie unter [Überblick über erweiterte Eigenschaften in Outlook](../resources/extended-properties-overview.md). Erforderlich.|
-|property_value |String|Der Wert der erweiterten Eigenschaft, nach der gefiltert wird. Erforderlich, wo im Abschnitt **HTTP-Anforderung** oben aufgeführt. Wenn {property_value} keine Zeichenfolge ist, müssen Sie sicherstellen, dass `ep/value` explizit in den entsprechenden Edm-Datentyp beim Vergleich mit {property_value} umgewandelt wird. Beispiele finden Sie unter [Anforderung 3](#request-3) weiter unter. |
+|property_value |String|Der Wert der erweiterten Eigenschaft, nach der gefiltert wird. Erforderlich, wo im Abschnitt **HTTP-Anforderung** oben aufgeführt. Wenn {property_value} keine Zeichenfolge ist, müssen Sie sicherstellen, dass `ep/value` explizit in den entsprechenden Edm-Datentyp beim Vergleich mit {property_value} umgewandelt wird. Beispiele finden Sie unter [Anforderung 4](#request-4) weiter unter. |
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
@@ -166,11 +222,11 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200 OK` zurückgegeben.
 
-#### <a name="get-resource-instance-using-expand"></a>Abrufen von Ressourceninstanzen mithilfe von `$expand`
+#### <a name="get-resource-instance-expanded-with-a-matching-extended-property"></a>Abrufen einer Ressourceninstanz, erweitert um eine übereinstimmende erweiterte Eigenschaft
 Der Antworttext enthält ein Objekt, das die angeforderte Ressourceninstanz darstellt, erweitert um das dem Filter entsprechende [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)-Objekt.
   
-#### <a name="get-resource-instances-using-filter"></a>Abrufen von Ressourceninstanzen mithilfe von `$filter`
-Der Antworttext enthält ein oder mehrere Objekte, die Ressourceninstanzen darstellen, die die dem Filter entsprechende erweiterte Eigenschaft enthalten. Der Antworttext enthält nicht die erweiterte Eigenschaft.
+#### <a name="get-resource-instances-that-contain-an-extended-property-matching-a-filter"></a>Abrufen von Ressourceninstanzen mit einer erweiterten Eigenschaft, die einem Filter entspricht
+Der Antworttext enthält ein oder mehrere Objekte, die Ressourceninstanzen darstellen, die einem dem Filter entsprechende erweiterte Eigenschaft enthalten. Der Antworttext enthält nicht die erweiterte Eigenschaft.
 
 ## <a name="example"></a>Beispiel
 #### <a name="request-1"></a>Anforderung 1
@@ -232,9 +288,9 @@ Content-type: application/json
 
 Das zweite Beispiel ruft Nachrichten ab, die die im Filter spezifizierte einwertige erweiterte Eigenschaft vom Typ Zeichenfolge haben. Der Filter sucht nach der erweiterten Eigenschaft, die folgende Merkmale hat:
 
-- Die **id** entspricht der Zeichenfolge `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (URL-Codierung hier zur besseren Lesbarkeit entfernt).
+- Die **ID** entspricht der Zeichenfolge `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (URL-Codierung hier zur besseren Lesbarkeit entfernt).
 
-- Der **Wert** ist die Zeichenfolge `Green`.
+- Der **Wert** ist gleich der Zeichenfolge `Green`.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -247,6 +303,26 @@ Eine erfolgreiche Antwort ist durch den Antwortcode `HTTP 200 OK` gekennzeichnet
 
 
 #### <a name="request-3"></a>Anforderung 3
+
+Das dritte Beispiel ruft Nachrichten ab, die die im Filter spezifizierte einwertige erweiterte Eigenschaft vom Typ Zeichenfolge haben. Der Filter sucht nach der erweiterten Eigenschaft, die folgende Merkmale hat:
+
+- Die **ID** entspricht der Zeichenfolge `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (URL-Codierung hier zur besseren Lesbarkeit entfernt).
+
+- Die **Wert**, der die Zeichenfolge `green` enthält. 
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/v1.0/Me/messages?$filter=singleValueExtendedProperties/any(ep:ep/Id eq 'String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color' and contains(ep/Value, 'green'))
+```
+
+#### <a name="response-3"></a>Antwort 3
+
+Eine erfolgreiche Antwort ist durch den Antwortcode `HTTP 200 OK` gekennzeichnet. Der Antworttext enthält alle Eigenschaften der Nachrichten, die die dem Filter entsprechende erweiterte Eigenschaft haben. Wie zum Beispiel eine Nachricht, die eine einwertige erweiterte Eigenschaft mit einer **ID** besitzt, die der Zeichenfolge `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` entspricht, und der **Wert** `Light green` stimmt mit dem Filter überein und ist in der Antwort enthalten.
+
+Der Antworttext ähnelt der Antwort beim [Abrufen einer Nachrichtensammlung](../api/user_list_messages.md). Die Antwort enthält nicht die dem Filter entsprechende erweiterte Eigenschaft.
+
+
+#### <a name="request-4"></a>Anforderung 4
 
 Die nächsten 2 Beispiele zeigen, wie Sie Nachrichten abrufen, die erweiterte einwertige Eigenschaften vom Typ Nicht-Zeichenfolge enthalten. Zur besseren Lesbarkeit ist die erforderliche URL-Codierung dort nicht enthalten.
 
@@ -275,7 +351,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProp
 ```
 
 
-#### <a name="response-3"></a>Antwort 3
+#### <a name="response-4"></a>Antwort 4
 
 Bei den zwei vorhergehenden Beispielen ist eine erfolgreiche Antwort durch den Antwortcode `HTTP 200 OK` gekennzeichnet. Der Antworttext enthält alle Eigenschaften der Nachrichten, die die dem Filter entsprechende erweiterte Eigenschaft haben. Der Antworttext ähnelt der Antwort beim [Abrufen einer Nachrichtensammlung](../api/user_list_messages.md). Die Antwort enthält nicht die dem Filter entsprechende erweiterte Eigenschaft.
 
