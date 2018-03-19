@@ -1,11 +1,11 @@
 # <a name="get-subscription"></a>Abonnement abrufen
 
-Dient zum Abrufen der Eigenschaften und der Beziehungen eines Abonnements.
-## <a name="prerequisites"></a>Anforderungen
+Mit dieser API können Sie die Eigenschaften und Beziehungen eines Abonnements abrufen.
+## <a name="permissions"></a>Berechtigungen
 
-Die folgende Tabelle listet die vorgeschlagenen Berechtigungen, die für die jeweilige Ressource erforderlich sind.
+In der folgenden Tabelle ist für jede Ressource die entsprechende vorgeschlagene erforderliche Berechtigung aufgeführt. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-| Ressourcentyp/Element        | Bereich               |
+| Ressourcentyp/Element        | Berechtigung          |
 |-----------------------------|---------------------|
 | Kontakte                    | Contacts.Read       |
 | Unterhaltungen               | Group.Read.All      |
