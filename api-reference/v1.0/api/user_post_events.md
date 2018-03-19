@@ -4,7 +4,25 @@ Erstellen eines [Ereignisses](../resources/event.md) im Standardkalender des Ben
 
 Sie können die Zeitzone für alle Start- und Endzeiten des Ereignisses als Teil dieser Werte angeben, da die **start**- und **end**-Eigenschaft vom Typ [dateTimeTimeZone](../resources/datetimetimezone.md) sind. 
 
-Wenn das Ereignis erstellt wird, sendet der Server Einladungen an alle Teilnehmer.
+Wenn ein Ereignis gesendet wird, sendet der Server Einladungen an alle Teilnehmer.
+
+**Festlegen des Ortes in einer Einladung**
+
+Ein Exchange-Administrator kann ein Postfach und eine E-Mail-Adresse für eine Ressource, z. B. einen Besprechungsraum, oder Geräte, z B. einen Projektor, einrichten. Benutzer können die Ressource als Teilnehmer zu einer Besprechung einladen. Der Server akzeptiert im Auftrag der Ressource die Besprechungsanfrage basierend auf dem Frei/Gebucht-Zeitplan der Ressource oder lehnt diese ab. Wenn der Server eine Besprechung für die Ressource akzeptiert, wird ein Ereignis für die Besprechung im Kalender der Ressource erstellt. Wenn die Besprechung neu geplant wird, aktualisiert der Server das Ereignis im Kalender der Ressource automatisch.
+
+Ein weiterer Vorteil beim Einrichten eines Postfachs für eine Ressource ist das Steuern des Zeitplans der Ressource derart, dass z. B. nur Führungskräfte oder deren Stellvertretungen einen privaten Besprechungsraum buchen können.
+
+Gehen Sie folgendermaßen vor, wenn Sie ein Ereignis organisieren, bei dem ein Besprechungsort vorhanden ist:
+
+1. Legen Sie die **location**-Eigenschaft des **Ereignisses** entsprechend fest. 
+2. Legen Sie die optionale **locationEmailAddress**-Eigenschaft fest, wenn der Besprechungsort eine E-Mail-Adresse aufweist.
+
+Führen Sie die folgenden zusätzlichen Schritte aus, wenn der Besprechungsort als Ressource eingerichtet wurde oder wenn das Ereignis Geräte umfasst, die als Ressource eingerichtet wurden:
+
+3. Laden Sie die Ressource als [Teilnehmer](../resources/attendee.md) ein.
+4. Legen Sie die **type**-Eigenschaft des Teilnehmers auf `resource` fest.
+5. Legen Sie die **emailAddress** des Teilnehmers als E-Mail-Adresse der Ressource fest.
+
 
 
 ## <a name="permissions"></a>Berechtigungen
