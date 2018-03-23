@@ -1,8 +1,8 @@
-# <a name="assign-action"></a>Aktion „assign“
+# <a name="create-user"></a>Erstellen von „user“
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Diese Aktion ist noch nicht dokumentiert.
+Diese Methode erstellt ein neues Objekt des Typs [user](../resources/intune_mam_user.md).
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -18,9 +18,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 }
 -->
 ``` http
-POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/assign
+POST /users
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
@@ -30,45 +28,43 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.
+Geben Sie im Anforderungstext eine JSON-Darstellung des Benutzerobjekts an.
 
-In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion verwendet werden können.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen des Benutzers erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|assignments|Collection von Objekten des Typs [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Noch nicht dokumentiert|
+|id|String|Bezeichner des Benutzers|
 
 
 
 ## <a name="response"></a>Antwort
-Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` zurück.
+Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `201 Created` und ein Objekt des Typs [user](../resources/intune_mam_user.md) im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-
+POST https://graph.microsoft.com/v1.0/users
 Content-type: application/json
-Content-length: 282
+Content-length: 46
 
 {
-  "assignments": [
-    {
-      "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
-      "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
-      "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-      }
-    }
-  ]
+  "@odata.type": "#microsoft.graph.user"
 }
 ```
 
 ### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 95
+
+{
+  "@odata.type": "#microsoft.graph.user",
+  "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
+}
 ```
 
 

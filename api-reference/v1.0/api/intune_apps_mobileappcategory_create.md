@@ -1,8 +1,8 @@
-# <a name="assign-action"></a>Aktion „assign“
+# <a name="create-mobileappcategory"></a>Erstellen von „mobileAppCategory“
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Diese Aktion ist noch nicht dokumentiert.
+Diese Methode erstellt ein neues Objekt des Typs [mobileAppCategory](../resources/intune_apps_mobileappcategory.md).
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -18,9 +18,8 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 }
 -->
 ``` http
-POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/assign
+POST /deviceAppManagement/mobileAppCategories
+POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
@@ -30,45 +29,49 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.
+Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „mobileAppCategory“ an.
 
-In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion verwendet werden können.
+In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werden müssen, wenn Sie ein Objekt des Typs „mobileAppCategory“ erstellen.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|assignments|Collection von Objekten des Typs [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Noch nicht dokumentiert|
+|id|String|Schlüssel der Entität|
+|displayName|String|Name der App-Kategorie|
+|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts des Typs „mobileAppCategory“|
 
 
 
 ## <a name="response"></a>Antwort
-Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` zurück.
+Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `201 Created` und ein Objekt des Typs [mobileAppCategory](../resources/intune_apps_mobileappcategory.md) im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-
+POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppCategories
 Content-type: application/json
-Content-length: 282
+Content-length: 163
 
 {
-  "assignments": [
-    {
-      "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
-      "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
-      "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-      }
-    }
-  ]
+  "@odata.type": "#microsoft.graph.mobileAppCategory",
+  "displayName": "Display Name value",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
 
 ### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 212
+
+{
+  "@odata.type": "#microsoft.graph.mobileAppCategory",
+  "id": "d85d9cee-9cee-d85d-ee9c-5dd8ee9c5dd8",
+  "displayName": "Display Name value",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
+}
 ```
 
 
