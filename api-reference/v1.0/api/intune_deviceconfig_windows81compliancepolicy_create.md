@@ -1,0 +1,118 @@
+# <a name="create-windows81compliancepolicy"></a><span data-ttu-id="04d8f-101">Erstellen von „windows81CompliancePolicy“</span><span class="sxs-lookup"><span data-stu-id="04d8f-101">Create windows81CompliancePolicy</span></span>
+
+> <span data-ttu-id="04d8f-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="04d8f-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="04d8f-103">Diese Methode erstellt ein neues Objekt des Typs [windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="04d8f-103">Create a new [plannerBucket](../resources/intune_deviceconfig_windows81compliancepolicy.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="04d8f-104">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="04d8f-104">Prerequisites</span></span>
+<span data-ttu-id="04d8f-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="04d8f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="04d8f-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="04d8f-107">Permission type</span></span>|<span data-ttu-id="04d8f-108">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="04d8f-108">Permissions (from least to most privileged)</span></span>|
+|:---|:---|
+|<span data-ttu-id="04d8f-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="04d8f-109">Delegated (work or school account)</span></span>|<span data-ttu-id="04d8f-110">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="04d8f-110">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="04d8f-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="04d8f-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="04d8f-112">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="04d8f-112">Not supported.</span></span>|
+|<span data-ttu-id="04d8f-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="04d8f-113">Application</span></span>|<span data-ttu-id="04d8f-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="04d8f-114">Not supported.</span></span>|
+
+## <a name="http-request"></a><span data-ttu-id="04d8f-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="04d8f-115">HTTP Request</span></span>
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceManagement/deviceCompliancePolicies
+```
+
+## <a name="request-headers"></a><span data-ttu-id="04d8f-116">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="04d8f-116">Request headers</span></span>
+|<span data-ttu-id="04d8f-117">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="04d8f-117">Header</span></span>|<span data-ttu-id="04d8f-118">Wert</span><span class="sxs-lookup"><span data-stu-id="04d8f-118">Value</span></span>|
+|:---|:---|
+|<span data-ttu-id="04d8f-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="04d8f-119">Authorization</span></span>|<span data-ttu-id="04d8f-120">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="04d8f-120">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="04d8f-121">Accept</span><span class="sxs-lookup"><span data-stu-id="04d8f-121">Accept</span></span>|<span data-ttu-id="04d8f-122">application/json</span><span class="sxs-lookup"><span data-stu-id="04d8f-122">application/json</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="04d8f-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="04d8f-123">Request body</span></span>
+<span data-ttu-id="04d8f-124">Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „windows81CompliancePolicy“ an.</span><span class="sxs-lookup"><span data-stu-id="04d8f-124">In the request body, supply a JSON representation of the schemaExtension object.</span></span>
+
+<span data-ttu-id="04d8f-125">In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werden müssen, wenn Sie ein Objekt des Typs „windows81CompliancePolicy“ erstellen.</span><span class="sxs-lookup"><span data-stu-id="04d8f-125">The following table shows the properties that are required when you create a invitation.</span></span>
+
+|<span data-ttu-id="04d8f-126">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="04d8f-126">Property</span></span>|<span data-ttu-id="04d8f-127">Typ</span><span class="sxs-lookup"><span data-stu-id="04d8f-127">Type</span></span>|<span data-ttu-id="04d8f-128">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="04d8f-128">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="04d8f-129">id</span><span class="sxs-lookup"><span data-stu-id="04d8f-129">id</span></span>|<span data-ttu-id="04d8f-130">String</span><span class="sxs-lookup"><span data-stu-id="04d8f-130">String</span></span>|<span data-ttu-id="04d8f-131">Schlüssel der Entität.</span><span class="sxs-lookup"><span data-stu-id="04d8f-131">Key of the setting.</span></span> <span data-ttu-id="04d8f-132">Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="04d8f-132">Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)</span></span>|
+|<span data-ttu-id="04d8f-133">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="04d8f-133">createdDateTime</span></span>|<span data-ttu-id="04d8f-134">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="04d8f-134">DateTimeOffset</span></span>|<span data-ttu-id="04d8f-135">Datum und Uhrzeit der Erstellung des Objekts.</span><span class="sxs-lookup"><span data-stu-id="04d8f-135">DateTime the object was created.</span></span> <span data-ttu-id="04d8f-136">Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="04d8f-136">Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)</span></span>|
+|<span data-ttu-id="04d8f-137">description</span><span class="sxs-lookup"><span data-stu-id="04d8f-137">description</span></span>|<span data-ttu-id="04d8f-138">String</span><span class="sxs-lookup"><span data-stu-id="04d8f-138">String</span></span>|<span data-ttu-id="04d8f-139">Beschreibung der Gerätekonfiguration (vom Administrator festgelegt).</span><span class="sxs-lookup"><span data-stu-id="04d8f-139">Admin provided description of the Device Configuration.</span></span> <span data-ttu-id="04d8f-140">Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="04d8f-140">Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)</span></span>|
+|<span data-ttu-id="04d8f-141">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="04d8f-141">lastModifiedDateTime</span></span>|<span data-ttu-id="04d8f-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="04d8f-142">DateTimeOffset</span></span>|<span data-ttu-id="04d8f-143">Datum und Uhrzeit der letzten Änderung des Objekts.</span><span class="sxs-lookup"><span data-stu-id="04d8f-143">Indicates the date the object was last modified.</span></span> <span data-ttu-id="04d8f-144">Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="04d8f-144">Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)</span></span>|
+|<span data-ttu-id="04d8f-145">displayName</span><span class="sxs-lookup"><span data-stu-id="04d8f-145">displayName</span></span>|<span data-ttu-id="04d8f-146">String</span><span class="sxs-lookup"><span data-stu-id="04d8f-146">String</span></span>|<span data-ttu-id="04d8f-147">Name der Gerätekonfiguration (vom Administrator festgelegt).</span><span class="sxs-lookup"><span data-stu-id="04d8f-147">Admin provided name of the device configuration.</span></span> <span data-ttu-id="04d8f-148">Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="04d8f-148">Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)</span></span>|
+|<span data-ttu-id="04d8f-149">version</span><span class="sxs-lookup"><span data-stu-id="04d8f-149">version</span></span>|<span data-ttu-id="04d8f-150">Int32</span><span class="sxs-lookup"><span data-stu-id="04d8f-150">Int32</span></span>|<span data-ttu-id="04d8f-151">Version der Gerätekonfiguration.</span><span class="sxs-lookup"><span data-stu-id="04d8f-151">Version of the device configuration.</span></span> <span data-ttu-id="04d8f-152">Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="04d8f-152">Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)</span></span>|
+|<span data-ttu-id="04d8f-153">passwordRequired</span><span class="sxs-lookup"><span data-stu-id="04d8f-153">passwordRequired</span></span>|<span data-ttu-id="04d8f-154">Boolean</span><span class="sxs-lookup"><span data-stu-id="04d8f-154">Boolean</span></span>|<span data-ttu-id="04d8f-155">Legt fest, dass zum Entsperren des Windows-Geräts ein Kennwort erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="04d8f-155">Require a password to unlock Windows device.</span></span>|
+|<span data-ttu-id="04d8f-156">passwordBlockSimple</span><span class="sxs-lookup"><span data-stu-id="04d8f-156">passwordBlockSimple</span></span>|<span data-ttu-id="04d8f-157">Boolean</span><span class="sxs-lookup"><span data-stu-id="04d8f-157">Boolean</span></span>|<span data-ttu-id="04d8f-158">Gibt an, ob einfache Kennwörter erlaubt sind.</span><span class="sxs-lookup"><span data-stu-id="04d8f-158">Indicates whether or not to block simple password.</span></span>|
+|<span data-ttu-id="04d8f-159">passwordExpirationDays</span><span class="sxs-lookup"><span data-stu-id="04d8f-159">passwordExpirationDays</span></span>|<span data-ttu-id="04d8f-160">Int32</span><span class="sxs-lookup"><span data-stu-id="04d8f-160">Int32</span></span>|<span data-ttu-id="04d8f-161">Zeit bis zum Ablaufen des Kennworts in Tagen</span><span class="sxs-lookup"><span data-stu-id="04d8f-161">Password expiration in days.</span></span>|
+|<span data-ttu-id="04d8f-162">passwordMinimumLength</span><span class="sxs-lookup"><span data-stu-id="04d8f-162">passwordMinimumLength</span></span>|<span data-ttu-id="04d8f-163">Int32</span><span class="sxs-lookup"><span data-stu-id="04d8f-163">Int32</span></span>|<span data-ttu-id="04d8f-164">Mindestlänge des Kennworts</span><span class="sxs-lookup"><span data-stu-id="04d8f-164">The minimum password length.</span></span>|
+|<span data-ttu-id="04d8f-165">passwordMinutesOfInactivityBeforeLock</span><span class="sxs-lookup"><span data-stu-id="04d8f-165">passwordMinutesOfInactivityBeforeLock</span></span>|<span data-ttu-id="04d8f-166">Int32</span><span class="sxs-lookup"><span data-stu-id="04d8f-166">Int32</span></span>|<span data-ttu-id="04d8f-167">Zeitraum von Inaktivität in Minuten, nach dem die Eingabe eines Kennworts gefordert wird</span><span class="sxs-lookup"><span data-stu-id="04d8f-167">Minutes of inactivity before a password is required.</span></span>|
+|<span data-ttu-id="04d8f-168">passwordMinimumCharacterSetCount</span><span class="sxs-lookup"><span data-stu-id="04d8f-168">passwordMinimumCharacterSetCount</span></span>|<span data-ttu-id="04d8f-169">Int32</span><span class="sxs-lookup"><span data-stu-id="04d8f-169">Int32</span></span>|<span data-ttu-id="04d8f-170">Anzahl der Zeichensätze, die im Kennwort enthalten sein müssen</span><span class="sxs-lookup"><span data-stu-id="04d8f-170">The number of character sets required in the password.</span></span>|
+|<span data-ttu-id="04d8f-171">passwordRequiredType</span><span class="sxs-lookup"><span data-stu-id="04d8f-171">passwordRequiredType</span></span>|<span data-ttu-id="04d8f-172">String</span><span class="sxs-lookup"><span data-stu-id="04d8f-172">String</span></span>|<span data-ttu-id="04d8f-173">Geforderter Kennworttyp.</span><span class="sxs-lookup"><span data-stu-id="04d8f-173">The required password type.</span></span> <span data-ttu-id="04d8f-174">Mögliche Werte sind: `deviceDefault`, `alphanumeric` und `numeric`.</span><span class="sxs-lookup"><span data-stu-id="04d8f-174">Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.</span></span>|
+|<span data-ttu-id="04d8f-175">passwordPreviousPasswordBlockCount</span><span class="sxs-lookup"><span data-stu-id="04d8f-175">passwordPreviousPasswordBlockCount</span></span>|<span data-ttu-id="04d8f-176">Int32</span><span class="sxs-lookup"><span data-stu-id="04d8f-176">Int32</span></span>|<span data-ttu-id="04d8f-177">Grenze für die Wiederverwendung von Kennwörtern. Der festgelegte Wert gibt an, von wie vielen der zuletzt genutzten Kennwörter sich das Kennwort unterscheiden muss.</span><span class="sxs-lookup"><span data-stu-id="04d8f-177">The number of previous passwords to prevent re-use of.</span></span> <span data-ttu-id="04d8f-178">Gültige Werte: 0 bis 24.</span><span class="sxs-lookup"><span data-stu-id="04d8f-178">Valid values 0 to 24</span></span>|
+|<span data-ttu-id="04d8f-179">osMinimumVersion</span><span class="sxs-lookup"><span data-stu-id="04d8f-179">osMinimumVersion</span></span>|<span data-ttu-id="04d8f-180">String</span><span class="sxs-lookup"><span data-stu-id="04d8f-180">String</span></span>|<span data-ttu-id="04d8f-181">Mindestversion von Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="04d8f-181">Minimum Windows 8.1 version.</span></span>|
+|<span data-ttu-id="04d8f-182">osMaximumVersion</span><span class="sxs-lookup"><span data-stu-id="04d8f-182">osMaximumVersion</span></span>|<span data-ttu-id="04d8f-183">String</span><span class="sxs-lookup"><span data-stu-id="04d8f-183">String</span></span>|<span data-ttu-id="04d8f-184">Maximalversion von Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="04d8f-184">Maximum Windows 8.1 version.</span></span>|
+|<span data-ttu-id="04d8f-185">storageRequireEncryption</span><span class="sxs-lookup"><span data-stu-id="04d8f-185">storageRequireEncryption</span></span>|<span data-ttu-id="04d8f-186">Boolean</span><span class="sxs-lookup"><span data-stu-id="04d8f-186">Boolean</span></span>|<span data-ttu-id="04d8f-187">Gibt an, ob für ein Windows 8.1-Gerät Verschlüsselung gefordert wird.</span><span class="sxs-lookup"><span data-stu-id="04d8f-187">Indicates whether or not to require encryption on a windows 8.1 device.</span></span>|
+
+
+
+## <a name="response"></a><span data-ttu-id="04d8f-188">Antwort</span><span class="sxs-lookup"><span data-stu-id="04d8f-188">Response</span></span>
+<span data-ttu-id="04d8f-189">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `201 Created` und ein Objekt des Typs [windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md) im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="04d8f-189">If successful, this method returns a `201 Created` response code and a [section](../resources/intune_deviceconfig_windows81compliancepolicy.md) object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="04d8f-190">Beispiel</span><span class="sxs-lookup"><span data-stu-id="04d8f-190">Example</span></span>
+### <a name="request"></a><span data-ttu-id="04d8f-191">Anforderung</span><span class="sxs-lookup"><span data-stu-id="04d8f-191">Request</span></span>
+<span data-ttu-id="04d8f-192">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="04d8f-192">Here is an example of the request.</span></span>
+``` http
+POST https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies
+Content-type: application/json
+Content-length: 666
+
+{
+  "@odata.type": "#microsoft.graph.windows81CompliancePolicy",
+  "description": "Description value",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "displayName": "Display Name value",
+  "version": 7,
+  "passwordRequired": true,
+  "passwordBlockSimple": true,
+  "passwordExpirationDays": 6,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordMinimumCharacterSetCount": 0,
+  "passwordRequiredType": "alphanumeric",
+  "passwordPreviousPasswordBlockCount": 2,
+  "osMinimumVersion": "Os Minimum Version value",
+  "osMaximumVersion": "Os Maximum Version value",
+  "storageRequireEncryption": true
+}
+```
+
+### <a name="response"></a><span data-ttu-id="04d8f-193">Antwort</span><span class="sxs-lookup"><span data-stu-id="04d8f-193">Response</span></span>
+<span data-ttu-id="04d8f-p110">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="04d8f-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 774
+
+{
+  "@odata.type": "#microsoft.graph.windows81CompliancePolicy",
+  "id": "6bb4b7e0-b7e0-6bb4-e0b7-b46be0b7b46b",
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+  "description": "Description value",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "displayName": "Display Name value",
+  "version": 7,
+  "passwordRequired": true,
+  "passwordBlockSimple": true,
+  "passwordExpirationDays": 6,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordMinimumCharacterSetCount": 0,
+  "passwordRequiredType": "alphanumeric",
+  "passwordPreviousPasswordBlockCount": 2,
+  "osMinimumVersion": "Os Minimum Version value",
+  "osMaximumVersion": "Os Maximum Version value",
+  "storageRequireEncryption": true
+}
+```
+
+
+
