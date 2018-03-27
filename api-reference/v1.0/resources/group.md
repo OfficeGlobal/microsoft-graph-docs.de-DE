@@ -18,7 +18,10 @@ Diese Ressource unterstützt Folgendes:
 |[Gruppen auflisten](../api/group_list.md) |[Gruppensammlung](group.md) |Listet Gruppenobjekte und deren Eigenschaften auf.|
 |[Gruppe aktualisieren](../api/group_update.md) | Keine |Aktualisiert die Eigenschaften eines Gruppenobjekts. |
 |[Gruppe löschen](../api/group_delete.md) | Keiner |Löscht das Gruppenobjekt. |
-|[Besitzer hinzufügen](../api/group_post_owners.md) |Keine| Fügt einen neuen Besitzer zur Gruppe durch Bereitstellen an die **owners**-Navigationseigenschaft bereit (wird nur für Sicherheitsgruppen und E-Mail-fähige Sicherheitsgruppen unterstützt).|
+|[delta](../api/group_delta.md)|group-Sammlung| Dient zum Abrufen inkrementeller Änderungen für Gruppen. |
+|[List groupLifecyclePolicies](../api/group_list_grouplifecyclepolicies.md) |[groupLifecyclePolicy](grouplifecyclepolicy.md)-Sammlung| Dient zum Auflisten der Gruppenlebenszyklusrichtlinien. |
+|[Renew](../api/group_renew.md)|Boolescher Wert|Verlängert den Ablaufzeitraum einer Gruppe. Sobald die Gruppe verlängert wurde, wird der Ablaufzeitraum für die Gruppe um die Anzahl der Tage verlängert, die in der Richtlinie definiert sind.|
+|[Add owner](../api/group_post_owners.md) |Keine| Fügt einen neuen Besitzer zur Gruppe durch Bereitstellen an die **owners**-Navigationseigenschaft bereit (wird nur für Sicherheitsgruppen und E-Mail-fähige Sicherheitsgruppen unterstützt).|
 |[Besitzer auflisten](../api/group_list_owners.md) |[directoryObject](directoryobject.md)-Sammlung| Ruft die Eigentümer der Gruppe aus der **owners**-Navigationseigenschaft ab.|
 |[Besitzer entfernen](../api/group_delete_owners.md) | Keiner |Entfernt einen Besitzer aus einer Office 365-Gruppe, einer Sicherheitsgruppe oder einer E-Mail-fähigen Sicherheitsgruppe über die **owners**-Navigationseigenschaft.|
 |[Mitglied hinzufügen](../api/group_post_members.md) |Keiner| Fügt dieser Gruppe einen Benutzer oder eine Gruppe durch Bereitstellung an die **members**-Navigationseigenschaft hinzu (wird nur für Sicherheitsgruppen und E-Mail-fähige Sicherheitsgruppen unterstützt).|
@@ -27,7 +30,11 @@ Diese Ressource unterstützt Folgendes:
 |[checkMemberGroups](../api/group_checkmembergroups.md)|String collection|Prüft die Mitgliedschaft dieser Gruppe in einer Liste von Gruppen. Die Funktion ist transitiv.|
 |[getMemberGroups](../api/group_getmembergroups.md)|String collection|Gibt alle Gruppen zurück, bei denen die Gruppe Mitglied ist. Die Funktion ist transitiv.|
 |[getMemberObjects](../api/group_getmemberobjects.md)|String collection|Gibt alle Gruppen zurück, bei denen die Gruppe Mitglied ist. Die Funktion ist transitiv. |
-|[delta](../api/group_delta.md)|group-Sammlung| Dient zum Abrufen inkrementeller Änderungen für Gruppen. |
+|[Create setting](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Erstellen Sie eine Einstellungsobjekt basierend auf einer groupSettingTemplate. Die POST-Anforderung muss settingValues für alle Einstellungen bereitstellen, die in der Vorlage definiert sind. Für diesen Vorgang können nur gruppenspezifische Vorlagen verwendet werden.|
+|[Einstellung abrufen](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Dient zum Lesen der Eigenschaften eines bestimmten Einstellungsobjekts. |
+|[Einstellungen auflisten](../api/groupsetting_list.md) | [groupSetting](groupsetting.md)-Sammlung | Listet Eigenschaften aller Einstellungsobjekte auf. |
+|[Einstellung aktualisieren](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | Aktualisiert ein Einstellungsobjekt. |
+|[Einstellung löschen](../api/groupsetting_delete.md) | Keine | Löscht ein Einstellungsobjekt. |
 |**Calendar**| | |
 |[Ereignis erstellen](../api/group_post_events.md) |[Ereignis](event.md)| Erstellt ein neues Ereignis durch Veröffentlichen in der Ereignissammlung.|
 |[Ereignis abrufen](../api/group_get_event.md) |[Ereignis](event.md)|Liest die Eigenschaften eines Ereignisobjekts.|
@@ -77,7 +84,7 @@ Diese Ressource unterstützt Folgendes:
 |allowExternalSenders|Boolescher Wert|Der Standardwert ist **false**. Gibt an, ob Personen außerhalb der Organisation Nachrichten an die Gruppe senden können.|
 |autoSubscribeNewMembers|Boolean|Der Standardwert ist **false**. Gibt an, ob neu zur Gruppe hinzugefügte Mitglieder automatisch E-Mail-Benachrichtigungen erhalten. Sie können diese Eigenschaft in einer PATCH-Anforderung für die Gruppe festlegen; legen Sie sie nicht in der anfänglichen POST-Anforderung fest, mit der die Gruppe erstellt wird.|
 |Klassifikation|Zeichenfolge|Beschreibt eine Klassifizierung für die Gruppe (z. B. niedrige, mittlere oder hohe geschäftliche Auswirkungen). Gültige Werte für diese Eigenschaft werden durch die Erstellung eines ClassificationList-[setting](groupsetting.md)-Werts basierend auf der [Vorlagendefinition](groupsettingtemplate.md) erstellt.|
-|createdDateTime|DateTimeOffset| Das Datum und die Uhrzeit der Erstellung der Gruppe. |
+|createdDateTime|DateTimeOffset| Zeitstempel der Gruppenerstellung. Der Wert kann nicht geändert werden und wird automatisch ausgefüllt, wenn die Gruppe erstellt wird. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. |
 |description|String|Eine optionale Beschreibung für die Gruppe. |
 |displayName|String|Der Anzeigename der Gruppe. Diese Eigenschaft ist beim Erstellen einer Gruppe erforderlich und kann bei Updates nicht deaktiviert werden. Unterstützt $Filter und $orderby.|
 |groupTypes|String collection| Gibt den Typ der zu erstellenden Gruppe an. Mögliche Werte sind **Unified** zum Erstellen einer Office 365-Gruppe oder **DynamicMembership** für dynamische Gruppen.  Legen Sie für alle anderen Gruppentypen wie Gruppen mit aktivierter Sicherheit und E-Mail-fähige Sicherheitsgruppen diese Eigenschaft nicht fest. Unterstützt $filter.|
@@ -90,6 +97,7 @@ Diese Ressource unterstützt Folgendes:
 |onPremisesSecurityIdentifier|String|Enthält die lokale Sicherheits-ID (SID) für die Gruppe, die von der lokalen Bereitstellung in der Cloud synchronisiert wurde. Schreibgeschützt. |
 |onPremisesSyncEnabled|Boolean|**true**, wenn diese Gruppe aus einem lokalen Verzeichnis synchronisiert wird; **false**, wenn die Gruppe ursprünglich aus einem lokalen Verzeichnis synchronisiert wurde, aber nicht mehr synchronisiert wird; **NULL**, wenn dieses Objekt nie aus einem lokalen Verzeichnis synchronisiert wurde (Standard). Schreibgeschützt. Unterstützt $filter.|
 |proxyAddresses|String collection| Der **any**-Operator ist für Filterausdrücke für mehrwertige Eigenschaften erforderlich. Schreibgeschützt. Lässt keine NULL-Werte zu. Unterstützt $filter. |
+|renewedDateTime|DateTimeOffset| Zeitstempel der letzten Verlängerung der Gruppe. Dies kann nicht direkt geändert werden und wird nur über die [Aktion zum Verlängern des Diensts](../api/group_renew.md) aktualisiert. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
 |securityEnabled|Boolean|Gibt an, ob es sich bei der Gruppe um eine Sicherheitsgruppe handelt. Wenn die **mailEnabled**-Eigenschaft auch auf „true“ festgelegt ist, handelt es sich bei der Gruppe um eine E-Mail-fähige Sicherheitsgruppe; andernfalls ist die Gruppe eine Sicherheitsgruppe. Muss für Office 365-Gruppen auf **false** festgelegt sein. Unterstützt $filter.|
 |unseenCount|Int32|Anzahl der Beiträge, die der aktuelle Benutzer seit seinem letzten Besuch nicht gesehen hat.|
 |visibility|String| Gibt die Sichtbarkeit einer Office 365-Gruppe an. Die folgenden Werte sind möglich: **Private**, **Public** oder leer (als **öffentlich** interpretiert).|
@@ -162,6 +170,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "proxyAddresses": ["string"],
+  "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,
   "unseenCount": 1024,
   "visibility": "string",

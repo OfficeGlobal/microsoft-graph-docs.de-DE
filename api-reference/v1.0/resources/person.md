@@ -19,11 +19,11 @@ Eine Ansammlung von Informationen über eine Person aus E-Mails, Kontakten und s
 |scoredEmailAddresses|[scoredEmailAddress](scoredemailaddress.md)-Sammlung|Die E-Mail-Adressen der Person.|
 |givenName|Zeichenfolge|Der Vorname der Person.|
 |id|Zeichenfolge|Eindeutiger Bezeichner für die Person. Schreibgeschützt.|
-|imAddress|Zeichenfolge|Die VOIP-SIP-Adresse (Voice oder IP; Session Initiation Protocol) der Chatnachricht für den Benutzer. Schreibgeschützt.|
+|imAddress|String|Die VOIP-SIP-Adresse (Voice oder IP; Session Initiation Protocol) der Chatnachricht für den Benutzer. Schreibgeschützt.|
 |isFavorite|Boolesch|`true`, wenn der Benutzer diese Person als Favorit gekennzeichnet hat.|
 |jobTitle|Zeichenfolge|Die Position der Person.|
 |officeLocation|Zeichenfolge|Der Bürostandort der Person.|
-|personNotes|Zeichenfolge|Frei formatierbare Notizen, die der Benutzer zu dieser Person hinzugefügt hat.|
+|personNotes|String|Frei formatierbare Notizen, die der Benutzer zu dieser Person hinzugefügt hat.|
 |personType|[personType](persontype.md)-Sammlung|Der Personentyp.|
 |phones|[phone](phone.md)-Sammlung|Die Telefonnummern der Person.|
 |postalAddresses|[location](location.md)-Sammlung|Die Adressen der Person.|
