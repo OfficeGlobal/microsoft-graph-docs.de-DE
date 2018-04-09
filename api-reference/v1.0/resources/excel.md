@@ -1,6 +1,6 @@
 # <a name="working-with-excel-in-microsoft-graph"></a>Arbeiten mit Excel in Microsoft Graph
 
-Sie können Microsoft Graph verwenden, um es Web- und Mobilanwendungen zu ermöglichen, in OneDrive, SharePoint oder anderen unterstützten Speicherplattformen gespeicherte Excel-Arbeitsmappen zu lesen und zu bearbeiten. Die `Workbook`- (bzw. Excel-Datei-)Ressource enthält alle anderen Excel-Ressourcen über Beziehungen. Sie können über die [Laufwerks-API](drive.md) auf eine Arbeitsmappe zugreifen, indem Sie den Speicherort der Datei in der URL identifizieren. Beispiel:
+Sie können Microsoft Graph verwenden, um es Web- und Mobilanwendungen zu ermöglichen, in OneDrive for Business, auf einer SharePoint-Website oder einem Gruppenlaufwerk gespeicherte Excel-Arbeitsmappen zu lesen und zu bearbeiten. Die `Workbook`- (bzw. Excel-Datei-)Ressource enthält alle anderen Excel-Ressourcen über Beziehungen. Sie können über die [Laufwerks-API](drive.md) auf eine Arbeitsmappe zugreifen, indem Sie den Speicherort der Datei in der URL identifizieren. Beispiel:
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
@@ -9,7 +9,9 @@ Sie können auf eine Reihe von Excel-Objekten (wie Tabelle, Bereich oder Diagram
 eine Sammlung von Arbeitsblattobjekten zurück, die Teil der Arbeitsmappe sind.    
 
 
-**Hinweis:** Die Excel-REST-API unterstützt nur Arbeitsmappen im Office Open XML-Dateiformat. Arbeitsmappen mit der Erweiterung `.xls` werden nicht unterstützt. 
+Die Excel-REST-API unterstützt nur Arbeitsmappen im Office Open XML-Dateiformat. Arbeitsmappen mit der Erweiterung `.xls` werden nicht unterstützt. 
+
+**Hinweis**: In der OneDrive Consumer-Plattform gespeicherte Arbeitsmappen werden noch nicht unterstützt. Zu diesem Zeitpunkt werden von Excel-REST-APIs nur die Dateien in der Business-Plattform unterstützt. 
 
 ## <a name="authorization-and-scopes"></a>Autorisierung und Bereiche
 

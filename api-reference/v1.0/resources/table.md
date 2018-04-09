@@ -37,6 +37,7 @@ Stellt eine Excel-Tabelle dar.
 |showBandedColumns|Boolean|Gibt an, ob die Spalten gebänderte Formatierung aufweisen, wobei ungerade Spalten anders hervorgehoben werden als gerade, um die Tabelle leichter lesbar zu machen.   |
 |showBandedRows|Boolean|Gibt an, ob die Zeilen gebänderte Formatierung aufweisen, wobei ungerade Zeilen anders hervorgehoben werden als gerade, um die Tabelle leichter lesbar zu machen.    |
 |showFilterButton|Boolean|Gibt an, ob die Filterschaltflächen am oberen Rand jedes Spaltenheaders sichtbar sind. Diese Einstellung ist nur zulässig, wenn die Tabelle eine Kopfzeile enthält.   |
+|legacyId|String|In älteren Excel-Clients verwendete Legacy-ID. Der Wert des Bezeichners bleibt unverändert, auch wenn die Tabelle umbenannt wird. Diese Eigenschaft sollte als nicht transparenter Zeichenfolgenwert interpretiert werden und sollte nicht in einen anderen Typ ausgewertet werden. Schreibgeschützt.   |
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
@@ -53,7 +54,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+     "legacyId"
   ],
   "@odata.type": "microsoft.graph.table"
 }-->
@@ -69,7 +70,8 @@ Es folgt eine JSON-Darstellung der Ressource.
   "showFilterButton": true,
   "showHeaders": true,
   "showTotals": true,
-  "style": "String"
+  "style": "String",
+  "legacyId": "String"
 }
 
 ```

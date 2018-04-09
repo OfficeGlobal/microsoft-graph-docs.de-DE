@@ -4,9 +4,9 @@ Microsoft Graph macht differenzierte Berechtigungen verfügbar, die den Zugriff 
 ## <a name="delegated-permissions-application-permissions-and-effective-permissions"></a>Delegierte Berechtigungen, Anwendungsberechtigungen und effektive Berechtigungen
 Microsoft Graph verfügt über zwei Arten von Berechtigungen: **Delegierte Berechtigungen** und **Anwendungsberechtigungen**. 
 
-- **Delegierte Berechtigungen** werden von Apps verwendet, die mit angemeldetem Benutzer ausgeführt werden. Bei diesen Apps stimmt der Benutzer oder ein Administrator den von der App angeforderten Berechtigungen zu, und an die App wird die Berechtigung delegiert, als angemeldeter Benutzer zu agieren, wenn sie Aufrufe an Microsoft Graph sendet. Einigen delegierten Berechtigungen kann auch von Benutzern zugestimmt werden, die kein Administrator sind, aber einige höhere Rechte erfordern [Administratorzustimmung](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes).  
+- **Delegierte Berechtigungen** werden von Apps verwendet, die mit angemeldetem Benutzer ausgeführt werden. Bei diesen Apps stimmt der Benutzer oder ein Administrator den von der App angeforderten Berechtigungen zu, und an die App wird die Berechtigung delegiert, als angemeldeter Benutzer zu agieren, wenn sie Aufrufe an Microsoft Graph sendet. Einigen delegierten Berechtigungen kann auch von Benutzern zugestimmt werden, die kein Administrator sind, aber einige höhere Rechte erfordern [Administratorzustimmung](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes).  
 
-- **Anwendungsberechtigungen** werden von Apps verwendet, die keinen angemeldeten Benutzer erfordern, z. B. Apps, die als Hintergrunddienste oder Daemons ausgeführt werden.  Anwendungsberechtigungen kann nur [von einem Administrator zugestimmt werden](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
+- **Anwendungsberechtigungen** werden von Apps verwendet, die keinen angemeldeten Benutzer erfordern, z. B. Apps, die als Hintergrunddienste oder Daemons ausgeführt werden.  Anwendungsberechtigungen kann nur [von einem Administrator zugestimmt werden](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
 
 _Effektive Berechtigungen_ sind die Berechtigungen, über die Ihre App verfügt, wenn sie Aufrufe an Microsoft Graph sendet. Es ist wichtig, den Unterschied zwischen den delegierten und Anwendungsberechtigungen zu verstehen, die Ihren Apps gewährt werden, und ihren effektiven Berechtigungen beim Senden von Aufrufen an Microsoft Graph.
 
@@ -203,7 +203,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Directory.Read.All_ |Verzeichnisdaten lesen | Ermöglicht der App, Daten im Verzeichnis Ihrer Organisation zu lesen, z. B. Benutzer, Gruppen und Apps. | Ja |
+| _Directory.Read.All_ |Verzeichnisdaten lesen | Ermöglicht der App, Daten im Verzeichnis Ihrer Organisation zu lesen, z. B. Benutzer, Gruppen und Apps. **Hinweis**: Benutzer können Anwendungen zustimmen, die diese Berechtigung erfordern, wenn die Anwendung im Mandanten ihrer eigenen Organisation registriert ist.| Ja |
 | _Directory.ReadWrite.All_ |Schreib-/Lesezugriff auf Verzeichnisdaten | Ermöglicht der App, Daten im Verzeichnis Ihrer Organisation ohne einen angemeldeten Benutzer zu lesen und zu schreiben, z. B. Benutzer und Gruppen. Ermöglicht der App nicht das Löschen von Benutzern oder Gruppen oder das Zurücksetzen von Benutzerkennwörtern. | Ja |
 | _Directory.AccessAsUser.All_ |Als der angemeldete Benutzer auf das Verzeichnis zugreifen  | Ermöglicht der App den gleichen Zugriff auf Informationen im Verzeichnis wie dem angemeldeten Benutzer. | Ja |
 
