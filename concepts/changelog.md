@@ -6,6 +6,17 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 ## <a name="march-2018"></a>März 2018
 
+### <a name="excel-apis"></a>Excel-APIs
+|Änderungstyp|Version|Beschreibung|
+|:---|:---|:---|
+|Änderung|v1.0|Die **legacyId**-Eigenschaft wurde der Entität [Excel-Tabelle ](../api-reference/v1.0/resources/table.md) hinzugefügt. Diese enthält den numerischen Wertbezeichner (String-Datentyp), der für eine bestimmte Excel-Tabelle konstant bleibt. Dies wird als zusätzliche Metadaten bereitgestellt, wenn die Anwendung auf dem Legacy-Bezeichner basierte, der in älteren Excel-Clientanwendungen verwendet wurde. Hinweis: Die Eigenschaften `id` und `legacyId` sollten als nicht transparenter Zeichenfolgenwert behandelt und nicht in einen anderen Typ in der Anwendung ausgewertet werden. |
+
+
+### <a name="reports-apis"></a>Bericht-APIs
+|Änderungstyp|Version|Beschreibung|
+|:---|:---|:---|
+|Ergänzungen|Beta|Die **siteId**-Eigenschaft wurde der [sharePointSiteUsageDetail](../api-reference/beta/resources/sharepointsiteusagedetail.md)-Entität hinzugefügt.|
+
 ### <a name="group-lifecycle-policy"></a>Gruppenlebenszyklusrichtlinie
 
 | **Änderungstyp** | **Version** | **Beschreibung**                          |
@@ -1647,10 +1658,10 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Ergänzungen        | v1.0 und Beta | Unterstützung für Berücksichtigung von _Accept-Encoding:gzip_ hinzugefügt. |
-| Ergänzungen        | v1.0          | Unterstützung für Castsegment im erweiterten Pfad hinzugefügt. Beispiel: https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event |
+| Ergänzungen        | v1.0          | Unterstützung für Castsegment im erweiterten Pfad hinzugefügt. Beispiel: 'https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event'. |
 | Ergänzungen        | Beta          | Unterstützung für PATCH-Anforderung anhand struktureller Eigenschaften hinzugefügt. Beispiel: 'PATCH /me/mailboxSettings'. |
 | Ergänzungen        | Beta          | Azure Active Directory dient nun als Alternative für /beta/users/id/photo-Anforderungen, wenn Outlook die Anforderung nicht verarbeiten kann, beispielsweise wenn der Benutzer über keine Postfachlizenz oder der Mandant über kein Exchange Online-Abonnement verfügt. HINWEIS: Diese Alternative steht für GET und PATCH zur Verfügung. |
-| Ergänzungen        | Beta          | Unterstützung für Castsegment im erweiterten Pfad hinzugefügt. Beispiel: https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event |
+| Ergänzungen        | Beta          | Unterstützung für Castsegment im erweiterten Pfad hinzugefügt. Beispiel: 'https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event'. |
 
 ### <a name="onedrive"></a>OneDrive
 
@@ -1715,8 +1726,8 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 | :-------------- | :------------ | :--------------------------------------- |
 | Ergänzungen        | v1.0 und Beta | Verbesserung von Fehlermeldungen beim Auflösen von Mandantenalias- und abgelehnten JWT-Token (AAD). |
 | Ergänzungen        | v1.0 und Beta | Der Ort für den Autorisierungsdienstendpunkt wird jetzt in dem _www-authenticate_-Header zurückgegeben, wenn eine Anforderung mit einem leeren Bearertoken empfangen wird. |
-| Ergänzungen        | v1.0 und Beta | Die Funktion zum Filtern nach ID-Eigenschaft einer Entität wurde repariert. Beispiel: GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+'x'<br/>Bisher musste bei allen POST-Anforderungen für Dienstaktionen und Funktionen der Aktion oder dem Funktionsnamen ein Präfix mithilfe von microsoft.graph vorangestellt werden. Beispiel: POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups<br/>Das Präfix ist nun nicht mehr erforderlich (obwohl es immer noch angegeben werden kann). Folgendes würde jetzt daher funktionieren: POST https://graph.microsoft.com/v1.0/me/getMemberGroups |
-| Ändern          | Beta          | Abonnement-Eigenschaftennamen bereinigt.  |
+| Ergänzungen        | v1.0 und Beta | Die Funktion zum Filtern nach der ID-Eigenschaft einer Entität wurde repariert. Beispiel: GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+'x'<br/>Bisher musste bei allen POST-Anforderungen für Dienstaktionen und -funktionen dem Aktions- oder Funktionsnamen das Präfix „microsoft.graph“ vorangestellt werden. Beispiel: POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups.<br/>Das Präfix ist nun nicht mehr erforderlich (obwohl es immer noch angegeben werden kann). Folgendes würde jetzt daher ebenfalls funktionieren: POST https://graph.microsoft.com/v1.0/me/getMemberGroups |
+| Änderung          | Beta          | Abonnement-Eigenschaftennamen bereinigt.  |
 | Ergänzungen        | Beta          | Wir haben die Möglichkeit zum Ermitteln von (über _directorySettingTemplates_) und Außerkraftsetzen des Standardverhaltens (durch Erstellen einer _Einstellung_ aus der Vorlage) für Entitäten und die zugehörigen Funktionen hinzugefügt. Anfangs konnten die Verhaltensweisen für Office-Gruppen nur über die Vorlage gesteuert werden. |
 
 ### <a name="mail-folder"></a>Mail-Ordner
@@ -1791,7 +1802,7 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 | **Änderungstyp** | **Version** | **Beschreibung**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Ergänzungen        | Beta        | notificationUrl-Validierung bei Abonnement-Erstellung. Weitere Informationen finden Sie unter [Microsoft Graph WebHooks Update - January 2016](http://dev.office.com/blogs/Microsoft-Graph-WebHooks-Update-January-2016). |
-| Ergänzungen        | Beta        | Abonnemententitäten können jetzt gelöscht werden: LÖSCHEN https://graph.microsoft.com/beta/subscriptions/ |
+| Ergänzungen        | Beta        | Abonnemententitäten können jetzt gelöscht werden: DELETE https://graph.microsoft.com/beta/subscriptions/ |
 
 ### <a name="users"></a>Benutzer
 
@@ -1848,6 +1859,6 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Behebung             | v1.0 und Beta | Behebung eines Problems, aufgrund dessen bestimmte Benutzereigenschaften von anderen Benutzern nicht ausgewählt werden konnten, wenn auf den Benutzer mithilfe des Benutzerprinzipalnamens (UPN) verwiesen wurde. Beispiel: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
+| Behebung             | v1.0 und Beta | Behebung eines Problems, aufgrund dessen bestimmte Benutzereigenschaften von anderen Benutzern nicht ausgewählt werden konnten, wenn auf den Benutzer mithilfe des Benutzerprinzipalnamens (UPN) verwiesen wurde. Beispiel: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
 | Behebung             | v1.0 und Beta | Behebung eines Problems mit dem Aufruf der benutzergebundenen _microsoft.graph.reminderView_-Funktion, aufgrund dessen der folgende Fehler auftrat: „Eine Eigenschaft mit dem Namen 'businessPhones' vom Typ 'Microsoft.OutlookServices.Reminder' konnte nicht gefunden werden.“ |
 | Behebung             | v1.0 und Beta | Behebung eines Problems mit der Erstellung und Aktualisierung von Benutzern (POST/PATCH /v1.0/users), aufgrund dessen der 400-Fehler auftrat. |
