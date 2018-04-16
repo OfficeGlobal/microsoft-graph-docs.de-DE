@@ -49,11 +49,13 @@ Abgesehen von einer Besprechungsanfrage wird eine **eventMessage**-Instanz im Or
 |changeKey|String|Die Version der Nachricht.|
 |conversationId|String|Die ID der Unterhaltung, zu der die E-Mail gehört.|
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht erstellt wurde.|
+|Flag|[followUpFlag](followupflag.md)|Der Wert des Flags, der den Status, das Startdatum, das Fälligkeitsdatum oder das Enddatum für die Nachricht angibt.|
 |Von|[Empfänger](recipient.md)|Der Postfachbesitzer und der Absender der Nachricht.|
 |hasAttachments|Boolean|Gibt an, ob die Nachricht Anlagen enthält.|
 |ID|String||
 |Wichtigkeit|String| Wichtigkeit der Nachricht: `low`, `normal`, `high`.|
 |inferenceClassification|String| Mögliche Werte: `focused`, `other`.|
+|internetMessageHeaders | [InternetinternetMessageHeaders](internetmessageheader.md)-Sammlung | Die Sammlung von Nachrichtenkopfzeilen, definiert von [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), die Informationen des von einer Nachricht vom Absender bis zum Empfänger verwendeten Pfads einer Nachricht liefert. Schreibgeschützt.|
 |internetMessageId |String |Die Nachrichten-ID im von [RFC2822](http://www.ietf.org/rfc/rfc2822.txt) angegebenen Format. |
 |isDeliveryReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
 |isDraft|Boolean|Gibt an, ob die Nachricht ein Entwurf ist. Eine Nachricht ist ein Entwurf, solange sie noch nicht gesendet wurde.|
@@ -106,11 +108,13 @@ Es folgt eine JSON-Darstellung der Ressource.
   "changeKey": "string",
   "conversationId": "string",
   "createdDateTime": "DateTimeOffset",
+  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
   "id": "string (identifier)",
   "importance": "String",
   "inferenceClassification": "String",
+  "internetMessageHeaders": [{"@odata.type": "microsoft.graph.internetMessageHeader"}],
   "internetMessageId": "String",
   "isDeliveryReceiptRequested": true,
   "isDraft": true,

@@ -10,7 +10,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 | Berechtigungstyp                        | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten) |
 | :------------------------------------- | :--------------------------------------- |
-| Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt                           |
+| Delegiert (Geschäfts-, Schul- oder Unikonto)     | Reports.Read.All                         |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                           |
 | Anwendung                            | Reports.Read.All                         |
 
@@ -24,11 +24,11 @@ GET /reports/getMailboxUsageDetail(period='{period_value}')
 
 ## <a name="request-parameters"></a>Anforderungsparameter
 
-Stellen Sie in der URL der Anforderung den folgenden Parameter mit einem gültigen Wert bereit.
+Geben Sie in der Anforderungs-URL den folgenden Parameter mit einem gültigen Wert an.
 
 | Parameter | Typ   | Beschreibung                              |
 | :-------- | :----- | :--------------------------------------- |
-| Zeitraum    | Zeichenfolge | Gibt die Zeitspanne an, für die der Bericht aggregiert wird. Die unterstützten Werte für {period_value} sind: D7, D30, D90 und D180. Diese Werte folgen dem Format D*n*, wobei *n* die Anzahl der Tage angibt, für die der Bericht aggregiert wird. Erforderlich. |
+| Zeitraum    | Zeichenfolge | Gibt die Zeitspanne an, für die der Bericht aggregiert wird. Die unterstützten Werte für {period_value} sind: D7, D30, D90 und D180. Diese Werte folgen dem Format D*n*, wobei *n* die Anzahl der Tage angibt, für die der Bericht aggregiert wird. Erforderlich.  |
 
 ## <a name="request-headers"></a>Anforderungsheader
 

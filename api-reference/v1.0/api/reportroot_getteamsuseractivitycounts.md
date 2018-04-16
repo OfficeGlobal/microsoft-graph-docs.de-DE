@@ -8,7 +8,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 | Berechtigungstyp                        | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten) |
 | :------------------------------------- | :--------------------------------------- |
-| Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt                           |
+| Delegiert (Geschäfts-, Schul- oder Unikonto)     | Reports.Read.All                         |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                           |
 | Anwendung                            | Reports.Read.All                         |
 
@@ -26,7 +26,7 @@ Geben Sie in der Anforderungs-URL den folgenden Parameter mit einem gültigen We
 
 | Parameter | Typ   | Beschreibung                              |
 | :-------- | :----- | :--------------------------------------- |
-| Zeitraum    | Zeichenfolge | Gibt die Zeitspanne an, für die der Bericht aggregiert wird. Die unterstützten Werte für {period_value} sind: D7, D30, D90 und D180. Diese Werte folgen dem Format D*n*, wobei *n* die Anzahl der Tage angibt, für die der Bericht aggregiert wird. Erforderlich. |
+| Zeitraum    | Zeichenfolge | Gibt die Zeitspanne an, für die der Bericht aggregiert wird. Die unterstützten Werte für {period_value} sind: D7, D30, D90 und D180. Diese Werte folgen dem Format D*n*, wobei *n* die Anzahl der Tage angibt, für die der Bericht aggregiert wird. Erforderlich.  |
 
 ## <a name="request-headers"></a>Anforderungsheader
 
@@ -38,15 +38,15 @@ Geben Sie in der Anforderungs-URL den folgenden Parameter mit einem gültigen We
 
 Wenn diese Methode erfolgreich ist, wird eine `302 Found`-Antwort zurückgegeben, die zu einer vorauthentifizierten Download-URL für den Bericht umleitet. Die URL finden Sie in der `Location`-Kopfzeile der Antwort.
 
-Vorauthentifizierte Download-URLs sind nur für einen kurzen Zeitraum (einige Minuten) gültig und erfordern keinen Header des Typs `Authorization`.
+Zuvor authentifizierte Download-URLs sind nur für einen kurzen Zeitraum (einige Minuten) gültig und erfordern keinen `Authorization`-Header.
 
 Die CSV-Datei verfügt über die folgenden Spaltenheader:
 
-- Report Refresh Date
-- Report Date
-- Team Chat Messages
-- Private Chat Messages
-- Calls
+- Berichtsaktualisierungsdatum
+- Berichtsdatum
+- Team-Chatnachrichten
+- Private Chatnachrichten
+- Anrufe
 - Meetings
 - Report Period
 

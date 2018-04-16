@@ -44,16 +44,17 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |body|[ItemBody](../resources/itembody.md)|Der Text der Nachricht, die mit diesem Ereignis verknüpft ist.|
 |categories|String|Die Kategorien, die mit dem Ereignis verknüpft sind.|
 |end|[DateTimeTimeZone](../resources/datetimetimezone.md)|Datum und Uhrzeit für das Ende des Ereignisses.<br/><br/>Standardmäßig ist die Endzeit in UTC angegeben. Sie können eine optionale Zeitzone in EndTimeZone angeben, die Endzeit in dieser Zeitzone angeben und einen Zeitunterschied zur UTC-Zeitzone angeben. Beachten Sie, dass bei Verwendung von EndTimeZone auch ein Wert für StartTimeZone angegeben werden muss.<br/><br/>In diesem Beispiel wird der 25. Februar 2015 21:34 in PST angegeben: „2015-02-25T21:34:00-08:00“. |
-|Wichtigkeit|String|Die Wichtigkeit des Ereignisses. Mögliche Werte sind: `Low`, `Normal` und `High`.|
+|Wichtigkeit|String|Die Wichtigkeit des Ereignisses. Mögliche Werte sind: `low`, `normal` und `high`.|
 |isAllDay|Boolean|True, wenn das Ereignis den ganzen Tag andauert.|
 |isReminderOn|Boolean|True, wenn eine Benachrichtigung den Benutzer an das Ereignis erinnern soll.|
 |location|[Ort](../resources/location.md)|Der Ort des Ereignisses.|
+|locations|[location](../resources/location.md)-Sammlung|Die Orte, an denen die Veranstaltung stattfindet. Die Eigenschaften **location** und **locations** entsprechen sich immer gegenseitig. Wenn Sie die **location**-Eigenschaft aktualisieren, werden alle früheren Orte in der **locations**-Sammlung entfernt und durch den neuen **location**-Wert ersetzt. |
 |onlineMeetingUrl|String|Eine URL für eine Onlinebesprechung.|
 |recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|Das Serienmuster für das Ereignis.|
 |reminderMinutesBeforeStart|Int32|Festlegung, wie viele Minuten vor Beginn des Ereignisses die Erinnerung angezeigt werden soll|
 |responseRequested|Boolean|Legen Sie „True“ fest, wenn der Absender eine Antwort erhalten soll, wenn das Ereignis akzeptiert oder abgelehnt wird.|
-|sensitivity|String| Mögliche Werte: `Normal`, `Personal`, `Private`, `Confidential`.|
-|showAs|Zeichenfolge|Der anzuzeigende Status. Mögliche Werte: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
+|sensitivity|String| Mögliche Werte: `normal`, `personal`, `private`, `confidential`.|
+|showAs|Zeichenfolge|Der anzuzeigende Status. Mögliche Werte sind: `free`, `tentative`, `busy`, `oof`, `workingElsewhere` und `unknown`.|
 |start|[DateTimeTimeZone](../resources/datetimetimezone.md)|Die Startzeit des Ereignisses. <br/><br/>Standardmäßig ist die Startzeit in UTC angegeben. Sie können eine optionale Zeitzone in StartTimeZone angeben, die Startzeit in dieser Zeitzone angeben und einen Zeitunterschied zur UTC-Zeitzone angeben. Beachten Sie, dass bei Verwendung von StartTimeZone auch ein Wert für EndTimeZone angegeben werden muss.<br/><br/>In diesem Beispiel wird 25. Februar 2015 19:34 in PST angegeben: „2015-02-25T19:34:00-08:00“.  |
 |subject|String|Der Text der Betreffzeile des Ereignisses|
 
@@ -121,10 +122,9 @@ Content-length: 285
 ## <a name="see-also"></a>Weitere Artikel
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](../../../concepts/extensibility_overview.md)
-- [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Preview)](../../../concepts/extensibility_open_users.md)
-<!--
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
--->
+- [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](../../../concepts/extensibility_open_users.md)
+- [Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen](../../../concepts/extensibility_schema_groups.md)
+
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

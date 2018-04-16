@@ -10,7 +10,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 | Berechtigungstyp                        | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten) |
 | :------------------------------------- | :--------------------------------------- |
-| Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt                           |
+| Delegiert (Geschäfts-, Schul- oder Unikonto)     | Reports.Read.All                         |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                           |
 | Anwendung                            | Reports.Read.All                         |
 
@@ -25,7 +25,7 @@ GET /reports/getEmailAppUsageUserDetail(date={date_value})
 
 ## <a name="request-parameters"></a>Anforderungsparameter
 
-Stellen Sie in der URL der Anforderung die folgenden Parameter mit einem gültigen Wert bereit.
+Geben Sie in der Anforderungs-URL einen der folgenden Parameter mit einem gültigen Wert an.
 
 | Parameter | Typ   | Beschreibung                              |
 | :-------- | :----- | :--------------------------------------- |

@@ -44,6 +44,7 @@ Diese Ressource unterstützt Folgendes:
 |Abteilung|String|Die Abteilung des Kontakts.|
 |displayName|String|Der Anzeigename des Kontakts.|
 |emailAddresses|[EmailAddress](emailaddress.md) collection|Die E-Mail-Adressen des Kontakts.|
+|Kennzeichnen|[followUpFlag](followupflag.md)|Der Wert des Flags, der den Status, das Startdatum, das Fälligkeitsdatum oder das Enddatum für die Nachricht angibt.|
 |fileAs|String|Der Name, unter dem der Kontakt abgelegt ist.|
 |generation|String|Die Generation des Kontakts.|
 |givenName|String|Der Vorname des Kontakts.|
@@ -109,6 +110,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "department": "string",
   "displayName": "string",
   "emailAddresses": [{"@odata.type": "microsoft.graph.emailAddress"}],
+  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "fileAs": "string",
   "generation": "string",
   "givenName": "string",
