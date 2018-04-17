@@ -8,7 +8,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 | Berechtigungstyp                        | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten) |
 | :------------------------------------- | :--------------------------------------- |
-| Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt                           |
+| Delegiert (Geschäfts-, Schul- oder Unikonto)     | Reports.Read.All                         |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                           |
 | Anwendung                            | Reports.Read.All                         |
 
@@ -42,14 +42,14 @@ Geben Sie in der Anforderungs-URL einen der folgenden Parameter mit einem gülti
 
 Wenn diese Methode erfolgreich ist, wird eine `302 Found`-Antwort zurückgegeben, die zu einer vorauthentifizierten Download-URL für den Bericht umleitet. Die URL finden Sie in der `Location`-Kopfzeile der Antwort.
 
-Vorauthentifizierte Download-URLs sind nur für einen kurzen Zeitraum (einige Minuten) gültig und erfordern keinen Header des Typs `Authorization`.
+Zuvor authentifizierte Download-URLs sind nur für einen kurzen Zeitraum (einige Minuten) gültig und erfordern keinen `Authorization`-Header.
 
 Die CSV-Datei verfügt über die folgenden Spaltenheader:
 
-- Report Refresh Date
+- Berichtsaktualisierungsdatum
 - Benutzerprinzipalname
-- Last Activity Date
-- Is Deleted
+- Datum der letzten Aktivität
+- Ist gelöscht
 - Deleted Date
 - Used Web
 - Used Windows Phone

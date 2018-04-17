@@ -8,7 +8,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 | Berechtigungstyp                        | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten) |
 | :------------------------------------- | :--------------------------------------- |
-| Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt                           |
+| Delegiert (Geschäfts-, Schul- oder Unikonto)     | Reports.Read.All                         |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                           |
 | Anwendung                            | Reports.Read.All                         |
 
