@@ -13,16 +13,16 @@ Eine abstrakte Klasse, die die grundlegenden Eigenschaften des verwalteten eBook
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
-|displayName|Zeichenfolge|Name des E-Books|
-|description|Zeichenfolge|Beschreibung|
-|publisher|Zeichenfolge|Herausgeber|
+|id|String|Schlüssel der Entität|
+|displayName|String|Name des E-Books|
+|description|String|Beschreibung|
+|publisher|String|Herausgeber|
 |publishedDateTime|DateTimeOffset|Datum und Uhrzeit der Veröffentlichung des E-Books.|
 |largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Umschlagbild des Buchs|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der E-Book-Datei.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des E-Books.|
-|informationUrl|Zeichenfolge|URL zur Seite mit weiteren Informationen.|
-|privacyInformationUrl|Zeichenfolge|URL zur Datenschutzerklärung|
+|informationUrl|String|URL zur Seite mit weiteren Informationen.|
+|privacyInformationUrl|String|URL zur Datenschutzerklärung|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

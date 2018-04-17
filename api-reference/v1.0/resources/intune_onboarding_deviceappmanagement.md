@@ -15,14 +15,17 @@ Singleton-Entität, die als Container für alle Funktionen zur Verwaltung von Ap
 |:---|:---|:---|
 |id|String|Noch nicht dokumentiert|
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|Zeitpunkt, zu dem das Konto die Apps letztmals erfolgreich mit dem Microsoft Store für Unternehmen synchronisiert hat|
-|isEnabledForMicrosoftStoreForBusiness|Boolean|Gibt an, ob das Konto Anwendungen mit dem Microsoft Store für Unternehmen synchronisieren darf.|
+|isEnabledForMicrosoftStoreForBusiness|Boolescher Wert|Gibt an, ob das Konto Anwendungen mit dem Microsoft Store für Unternehmen synchronisieren darf.|
 |microsoftStoreForBusinessLanguage|String|Die Gebietsschemainformationen, die zur Synchronisierung von Anwendungen mit dem Microsoft Store für Unternehmen verwendet werden. Angegeben werden Kulturen, die für ein Land bzw. eine Region spezifisch sind. Die Namen dieser Kulturen folgen dem Standard RFC 4646 (Windows Vista und höher). Das Format lautet <languagecode2>-<country/regioncode2>. Dabei ist <languagecode2> ein klein geschriebener Code aus zwei Buchstaben nach ISO 639-1 und <country/regioncode2> ein groß geschriebener Code aus zwei Buchstaben nach ISO 3166. Beispiel für eine spezifische Kultur: „en-US“ für „Englisch (Vereinigte Staaten)“.|
 |microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|Zeitpunkt der letzten Anwendungssynchronisierung mit dem Microsoft Store für Unternehmen|
 
 ## <a name="relationships"></a>Beziehungen
-Keine
+|Beziehung|Typ|Beschreibung|
+|:---|:---|:---|
+|vppTokens|[VppToken](../resources/intune_onboarding_vpptoken.md)-Sammlung|Liste von Vpp-Token für diese Organisation.|
+
 ## <a name="json-representation"></a>JSON-Darstellung
-Unten sehen Sie eine JSON-Darstellung der Ressource.
+Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

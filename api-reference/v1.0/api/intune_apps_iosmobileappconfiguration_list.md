@@ -1,16 +1,14 @@
-# <a name="list-devicemanagementtroubleshootingevents"></a>deviceManagementTroubleshootingEvents auflisten
-
-> **Wichtig:** Die APIs der /beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+# <a name="list-iosmobileappconfigurations"></a>iosMobileAppConfigurations auflisten
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Auflisten von Eigenschaften und Beziehungen der [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md)-Objekte.
+Auflisten von Eigenschaften und Beziehungen der [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md)-Objekte.
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
-|Delegiert (Geschäfts-, Schul- oder Unikonto)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegiert (Geschäfts-, Schul- oder Unikonto)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 
@@ -20,7 +18,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 }
 -->
 ``` http
-GET /deviceManagement/troubleshootingEvents
+GET /deviceAppManagement/mobileAppConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
@@ -33,13 +31,13 @@ GET /deviceManagement/troubleshootingEvents
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und eine Sammlung von [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md)-Objekten im Antworttext zurück.
+Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und eine Collection von Objekten des Typs [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md) im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
+GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations
 ```
 
 ### <a name="response"></a>Antwort
@@ -47,15 +45,30 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 277
+Content-Length: 815
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.deviceManagementTroubleshootingEvent",
-      "id": "fb26dcee-dcee-fb26-eedc-26fbeedc26fb",
-      "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
-      "correlationId": "Correlation Id value"
+      "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+      "id": "b2c33191-3191-b2c3-9131-c3b29131c3b2",
+      "targetedMobileApps": [
+        "Targeted Mobile Apps value"
+      ],
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+      "description": "Description value",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "displayName": "Display Name value",
+      "version": 7,
+      "encodedSettingXml": "ZW5jb2RlZFNldHRpbmdYbWw=",
+      "settings": [
+        {
+          "@odata.type": "microsoft.graph.appConfigurationSettingItem",
+          "appConfigKey": "App Config Key value",
+          "appConfigKeyType": "integerType",
+          "appConfigKeyValue": "App Config Key Value value"
+        }
+      ]
     }
   ]
 }

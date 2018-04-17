@@ -18,20 +18,20 @@ Sie erbt von [managedEBook](../resources/intune_books_managedebook.md).
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Der Schlüssel der Entität. Der Wert wird geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
-|displayName|String|Der Name des E-Books. Der Wert wird geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
-|description|String|Beschreibung. Der Wert wird geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
-|publisher|String|Herausgeber. Der Wert wird geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
-|publishedDateTime|DateTimeOffset|Datum und Uhrzeit der Veröffentlichung des E-Books. Der Wert wird geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
-|largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Umschlagbild des Buchs. Der Wert wird geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
-|createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der E-Book-Datei. Der Wert wird geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
-|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des E-Books. Der Wert wird geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
-|informationUrl|String|URL zur Seite mit weiteren Informationen. Der Wert wird geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
-|privacyInformationUrl|String|URL zur Datenschutzerklärung. Der Wert wird geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|id|String|Schlüssel der Entität. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|displayName|String|Name des E-Books. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|description|String|Beschreibung. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|publisher|String|Herausgeber. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|publishedDateTime|DateTimeOffset|Datum und Uhrzeit der Veröffentlichung des E-Books. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Umschlagbild des Buchs. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der E-Book-Datei. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des E-Books. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|informationUrl|String|URL zur Seite mit weiteren Informationen. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|privacyInformationUrl|String|URL zur Datenschutzerklärung. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
 |vppTokenId|Guid|ID des VPP-Tokens|
 |appleId|String|Apple-ID, die dem VPP-Token zugeordnet ist|
 |vppOrganizationName|String|Zum VPP-Token gehörender Organisationsname|
-|genres|String-Sammlung|Genres|
+|genres|Collection von Objekten des Typs „String“|Genres|
 |language|String|Sprache|
 |seller|String|Verkäufer|
 |totalLicenseCount|Int32|Gesamtanzahl von Lizenzen|
@@ -40,13 +40,13 @@ Sie erbt von [managedEBook](../resources/intune_books_managedebook.md).
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|assignments|Sammlung von Objekten des Typs [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|Die Liste der Zuweisungen des E-Books. Der Wert wird geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|assignments|[managedEBookAssignment](../resources/intune_books_managedebookassignment.md)-Sammlung|Die Liste der Zuweisungen des E-Books. Der Wert wird geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
 |installSummary|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Die Installationszusammenfassung für die mobile App. Der Wert wird geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
-|deviceStates|Sammlung von Objekten des Typs [deviceInstallState](../resources/intune_books_deviceinstallstate.md)|Die Liste der Installationsstatus für das E-Book. Der Wert wird geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
-|userStateSummary|Sammlung von Objekten des Typs [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md)|Die Liste der Installationsstatus für das E-Book. Der Wert wird geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|deviceStates|[deviceInstallState](../resources/intune_books_deviceinstallstate.md)-Sammlung|Die Liste der Installationsstatus für das E-Book. Der Wert wird geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|userStateSummary|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md)-Sammlung|Die Liste der Installationsstatus für das E-Book. Der Wert wird geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
 
 ## <a name="json-representation"></a>JSON-Darstellung
-Unten sehen Sie eine JSON-Darstellung der Ressource.
+Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

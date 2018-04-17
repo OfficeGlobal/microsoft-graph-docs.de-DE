@@ -12,10 +12,13 @@ Die deviceManagement-Ressource stellt die Geräteentitäten der Sammlung eines M
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Die GUID für das Objekt.|
+|id|String|GUID für das Objekt|
 
 ## <a name="relationships"></a>Beziehungen
-Keine
+|Beziehung|Typ|Beschreibung|
+|:---|:---|:---|
+|importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md)-Sammlung|Sammlung von importierten Windows Autopilot-Geräten|
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {

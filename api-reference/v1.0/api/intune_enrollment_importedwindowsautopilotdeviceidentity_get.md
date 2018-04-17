@@ -1,16 +1,14 @@
-# <a name="get-user"></a>Benutzer abrufen
-
-> **Wichtig:** Die APIs der /beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+# <a name="get-importedwindowsautopilotdeviceidentity"></a>importedWindowsAutopilotDeviceIdentity abrufen
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Lesen von Eigenschaften und Beziehungen des [user](../resources/intune_troubleshooting_user.md)-Objekts.
+Lesen von Eigenschaften und Beziehungen des [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md)-Objekts.
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
-|Delegiert (Geschäfts-, Schul- oder Unikonto)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegiert (Geschäfts-, Schul- oder Unikonto)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 
@@ -20,7 +18,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 }
 -->
 ``` http
-GET /users/{usersId}
+GET /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
@@ -35,13 +33,13 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [user](../resources/intune_troubleshooting_user.md)-Objekt im Antworttext zurückgegeben.
+Bei Erfolg gibt die Methode den Antwortcode `200 OK` und ein [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md)-Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
-GET https://graph.microsoft.com/beta/users/{usersId}
+GET https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```
 
 ### <a name="response"></a>Antwort
@@ -49,12 +47,23 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 118
+Content-Length: 635
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.user",
-    "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
+    "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
+    "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
+    "orderIdentifier": "Order Identifier value",
+    "serialNumber": "Serial Number value",
+    "productKey": "Product Key value",
+    "hardwareIdentifier": "aGFyZHdhcmVJZGVudGlmaWVy",
+    "state": {
+      "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState",
+      "deviceImportStatus": "pending",
+      "deviceRegistrationId": "Device Registration Id value",
+      "deviceErrorCode": 15,
+      "deviceErrorName": "Device Error Name value"
+    }
   }
 }
 ```
