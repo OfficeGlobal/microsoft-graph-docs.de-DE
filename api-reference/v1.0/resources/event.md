@@ -49,13 +49,14 @@ Diese Ressource unterstützt Folgendes:
 |hasAttachments|Boolean|„true“, wenn das Ereignis Anlagen hat|
 |iCalUId|String|Ein eindeutiger Bezeichner, der für alle Instanzen eines Ereignisses in unterschiedlichen Kalendern verwendet wird|
 |id|String| Schreibgeschützt|
-|importance|String|Die Wichtigkeit des Ereignisses. Mögliche Werte sind: `Low`, `Normal` und `High`.|
+|importance|String|Die Wichtigkeit des Ereignisses. Mögliche Werte sind: `low`, `normal` und `high`.|
 |isAllDay|Boolean|„true“, wenn das Ereignis ein ganztägiges Ereignis ist|
 |isCancelled|Boolean|„true“, wenn das Ereignis abgesagt wurde|
 |isOrganizer|Boolean|„true“, wenn der Absender der Nachricht auch der Organisator ist|
 |isReminderOn|Boolean|„true“, wenn eingestellt ist, dass der Benutzer an das Ereignis erinnert werden soll|
 |lastModifiedDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|location|[location](location.md)|Der Ort, an dem das Ereignis stattfindet|
+|location|[location](location.md)|Der Ort des Ereignisses.|
+|locations|[location](location.md)-Sammlung|Die Orte, an denen die Veranstaltung stattfindet. Die Eigenschaften **location** und **locations** entsprechen sich immer gegenseitig. Wenn Sie die **location**-Eigenschaft aktualisieren, werden alle früheren Orte in der **locations**-Sammlung entfernt und durch den neuen **location**-Wert ersetzt. |
 |onlineMeetingUrl|String|Eine URL für eine Onlinebesprechung|
 |organizer|[recipient](recipient.md)|Der Organisator des Ereignisses|
 |originalEndTimeZone|String|Die Zeitzone, die bei der Erstellung des Ereignisses für das Ereignisende festgelegt wurde. Der Wert `tzone://Microsoft/Custom` gibt an, dass eine ältere benutzerdefinierte Zeitzone in Outlook Desktop festgelegt wurde.|
@@ -65,12 +66,12 @@ Diese Ressource unterstützt Folgendes:
 |reminderMinutesBeforeStart|Int32|Festlegung, wie viele Minuten vor Beginn des Ereignisses die Erinnerung angezeigt werden soll|
 |responseRequested|Boolean|„true“, wenn der Absender eine Antwort erhalten soll, sobald das Ereignis angenommen oder abgelehnt wird|
 |responseStatus|[responseStatus](responsestatus.md)|Typ der Antwort, die als Antwort auf eine Ereignisnachricht gesendet wurde|
-|sensitivity|String| Mögliche Werte: `Normal`, `Personal`, `Private`, `Confidential`|
+|sensitivity|String| Mögliche Werte: `normal`, `personal`, `private`, `confidential`|
 |seriesMasterId|String|Die dem Element zugeordneten Kategorien|
-|showAs|Zeichenfolge|Der anzuzeigende Status. Mögliche Werte: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
+|showAs|Zeichenfolge|Der anzuzeigende Status. Mögliche Werte sind: `free`, `tentative`, `busy`, `oof`, `workingElsewhere` und `unknown`.|
 |start|[dateTimeTimeZone](datetimetimezone.md)|Datum, Uhrzeit und Zeitzone für den Beginn des Ereignisses|
 |subject|String|Der Text der Betreffzeile des Ereignisses|
-|type|Zeichenfolge|Der Ereignistyp. Mögliche Werte: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`. Schreibgeschützt.|
+|type|Zeichenfolge|Der Ereignistyp. Mögliche Werte: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Schreibgeschützt.|
 |webLink|String|Die URL zum Öffnen des Ereignisses in Outlook Web App:<br/><br/>Das Ereignis wird im Browser geöffnet, wenn Sie über Outlook Web App bei Ihrem Postfach angemeldet sind. Sie werden aufgefordert, sich anzumelden, wenn Sie noch nicht beim Browser angemeldet sind.<br/><br/>Auf diese URL kann von einem iFrame aus zugegriffen werden.|
 
 ## <a name="relationships"></a>Beziehungen
@@ -120,6 +121,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "isReminderOn": true,
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
+  "locations": [{"@odata.type": "microsoft.graph.location"}],
   "onlineMeetingUrl": "string",
   "organizer": {"@odata.type": "microsoft.graph.recipient"},
   "originalEndTimeZone": "string",

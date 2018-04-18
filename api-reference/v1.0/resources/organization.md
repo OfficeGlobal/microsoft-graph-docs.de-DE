@@ -10,8 +10,8 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
 |[organization abrufen](../api/organization_get.md) | [organization](organization.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des organization-Objekts.|
-|[Update](../api/organization_update.md) | [organization](organization.md)  |Dient zum Aktualisieren des organization-Objekts. (Nur die **marketingNotificationMails**- und die **technicalNotificationMails**-Eigenschaft kann aktualisiert werden.) |
-|**Offene Erweiterungen**| | |
+|[Update](../api/organization_update.md) | [organization](organization.md)  |Dient zum Aktualisieren des organization-Objekts. Die einzigen Eigenschaften, die aktualisiert werden können, sind: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** und **privacyProfile**. |
+|**Offene Erweiterungen**| | ||**Offene Erweiterungen**| | |
 |[Offene Erweiterung erstellen](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Erstellt eine offene Erweiterung und fügt benutzerdefinierte Eigenschaften zu einer neuen oder vorhandenen Ressource hinzu.|
 |[Offene Erweiterung abrufen](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md)-Sammlung| Dient zum Abrufen einer offenen Erweiterung, die durch den Erweiterungsnamen identifiziert wird.|
 |**Schemaerweiterungen**| | |
@@ -34,6 +34,7 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 | objectType                           | String                                                            | Eine Zeichenfolge, die den Objekttyp identifiziert. Für Mandanten ist der Wert immer „Unternehmen“.                                                                                                                                                                                                 |
 | postalCode                           | Zeichenfolge                                                            | Die Postleitzahl aus der Unternehmensadresse                                                                                                                                                                                                                                      |
 | preferredLanguage                    | Zeichenfolge                                                            | Die bevorzugte Sprache für das Unternehmen. Muss im ISO 639-1-Code angegeben werden. Beispiel: „en“.                                                                                                                                                                                         |
+| privacyProfile                       | [privacyProfile](privacyprofile.md)                               | Das Datenschutzprofil einer Organisation.                                                                                                                                                                                                                                              |
 | provisionedPlans                     | [ProvisionedPlan-Sammlung](provisionedplan.md)                  | Lässt keine Nullwerte zu.                                                                                                                                                                                                                                                                        |
 | provisioningErrors                   | ProvisioningError-Sammlung                                      | Lässt keine Nullwerte zu.                                                                                                                                                                                                                                                                        |
 | securityComplianceNotificationMails  | String collection                                                 |                                                                                                                                                                                                                                                                                      |
@@ -76,6 +77,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
   "preferredLanguage": "string",
+  "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
   "securityComplianceNotificationMails": ["string"],
   "securityComplianceNotificationPhones": ["string"],

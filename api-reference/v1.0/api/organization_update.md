@@ -6,10 +6,10 @@ Mit dieser API können Sie die Eigenschaften der aktuell authentifizierten Organ
 
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
+|Berechtigungstyp | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten) |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | Nicht unterstützt    |
-|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.AccessAsUser.All |
+|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt |
 |Anwendung | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
@@ -32,31 +32,15 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|assignedPlans|AssignedPlan|Die Sammlung von Serviceplänen, die dem Mandanten zugeordnet sind. **Hinweis:** Lässt keine Nullwerte zu.            |
-|Ort|String|            |
-|companyLastDirSyncTime|DateTimeOffset|Uhrzeit und Datum der letzten Synchronisierung des Mandanten mit dem lokalen Verzeichnis.|
-|country|String|            |
-|countryLetterCode|String|            |
-|deletionTimestamp|DateTimeOffset||
-|dirSyncEnabled|Boolean|**true**, wenn das Objekt aus einem lokalen Verzeichnis synchronisiert wird; **false**, wenn das Objekt ursprünglich aus einem lokalen Verzeichnis synchronisiert wurde, aber nicht mehr synchronisiert wird; **NULL**, wenn dieses Objekt nie aus einem lokalen Verzeichnis synchronisiert wurde (Standard).|
-|displayName|String|Der Anzeigename für den Mandanten.|
-|marketingNotificationEmails|String|                                        **Hinweis:** Lässt keine Nullwerte zu.            |
-|objectType|Zeichenfolge|Eine Zeichenfolge, die den Objekttyp identifiziert. Für Mandanten ist der Wert immer „Unternehmen“. Geerbt von [directoryObject](../resources/directoryobject.md).|
-|postalCode|String|            |
-|preferredLanguage|String|            |
-|provisionedPlans|ProvisionedPlan|                                        **Hinweis:** Lässt keine Nullwerte zu.            |
-|provisioningErrors|ProvisioningError|                                        **Hinweis:** Lässt keine Nullwerte zu.            |
-|securityComplianceNotificationMails|String||
-|securityComplianceNotificationPhones|String||
-|state|String|            |
-|street|String|            |
-|technicalNotificationMails|String|                                        **Hinweis:** Lässt keine Nullwerte zu.            |
-|telephoneNumber|String|            |
-|verifiedDomains|VerifiedDomain|Die Sammlung von Domänen, die diesem Mandanten zugeordnet sind. **Hinweis:** Lässt keine Nullwerte zu.            |
+|marketingNotificationEmails|Zeichenfolgenauflistung|                                        **Hinweis:** Lässt keine Nullwerte zu.            |
+|privacyProfile|[privacyProfile](../resources/privacyprofile.md)|Das Datenschutzprofil einer Organisation ( „statementUrl“ und „contactEmail“ festlegen).            |
+|securityComplianceNotificationMails|String collection||
+|securityComplianceNotificationPhones|Zeichenfolgenauflistung||
+|technicalNotificationMails|Zeichenfolgenauflistung| 
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein aktualisiertes [organization](../resources/organization.md)-Objekt im Antworttext zurückgegeben.
+Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 
@@ -75,21 +59,15 @@ Content-type: application/json
 Content-length: 411
 
 {
-  "assignedPlans": [
+  "marketingNotificationEmails" : ["marketing@contoso.com"],
+  "privacyProfile" :
     {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "country": "country-value",
-  "countryLetterCode": "countryLetterCode-value",
-  "displayName": "displayName-value"
+      "contactEmail":"alice@contoso.com",
+      "statementUrl":"https://contoso.com/privacyStatement"
+    },
+  "securityComplianceNotificationMails" : ["security@contoso.com"],
+  "securityComplianceNotificationPhones" : ["(123) 456-7890"],
+  "technicalNotificationMails" : ["tech@contoso.com"]
 }
 ```
 
@@ -106,27 +84,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. **Hinweis**: Das hier gezeigte A
 } -->
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 411
-
-{
-  "assignedPlans": [
-    {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "country": "country-value",
-  "countryLetterCode": "countryLetterCode-value",
-  "displayName": "displayName-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <br/>
