@@ -1,6 +1,6 @@
 # <a name="get-user-mailbox-settings"></a>Postfacheinstellungen des Benutzers abrufen
 
-Rufen Sie die [mailboxSettings](../resources/mailboxsettings.md) des Benutzers ab. Dies umfasst die Einstellungen für automatische Antworten (automatische Benachrichtigung von Personen über den Empfang von E-Mails), Gebietsschema (Sprache und Land/Region) und Zeitzone.
+Rufen Sie die [mailboxSettings](../resources/mailboxsettings.md) des Benutzers ab. Dies umfasst die Einstellungen für automatische Antworten (automatische Benachrichtigung von Personen über den Empfang von E-Mails), Gebietsschema (Sprache und Land/Region), Zeitzone und die Geschäftszeiten.
 
 Sie können alle Postfacheinstellungen anzeigen oder bestimmte Einstellungen abrufen.
 
@@ -18,14 +18,14 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Anwendung | MailboxSettings.Read, MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-Anforderung
-Verwenden Sie die folgende Anforderung, um alle Postfacheinstellungen einschließlich Einstellungen für automatische Antworten abzurufen:
+So rufen Sie alle Postfacheinstellungen für einen Benutzer ab
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-Verwenden Sie die folgende Anforderung, um bestimmte Einstellungen abzurufen, z. B. Einstellungen für automatische Antworten, Gebietsschema oder Zeitzone:
+Verwenden Sie die folgende Anforderung, um bestimmte Einstellungen abzurufen, z. B. Einstellungen für automatische Antworten, Gebietsschema, Zeitzone oder Geschäftszeiten:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -36,6 +36,9 @@ GET /users/{id|userPrincipalName}/mailboxSettings/language
 
 GET /me/mailboxSettings/timeZone
 GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
+
+GET /me/mailboxSettings/workingHours
+GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
@@ -55,10 +58,11 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine
 - [automaticRepliesSetting](../resources/automaticRepliesSetting.md)-Objekt
 - [localeInfo](../resources/localeinfo.md)-Objekt
 - Zeichenfolge (für **timeZone**)
+- [workingHours](../resources/workinghours.md)
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request-1"></a>Anforderung 1
-Im ersten Beispiel werden alle Postfacheinstellungen des Postfachs des angemeldeten Benutzers abgerufen, welche die Einstellungen für automatische Antworten, Zeitzone und Spracheinstellungen umfassen.
+Im ersten Beispiel werden alle Postfacheinstellungen des Postfachs des angemeldeten Benutzers abgerufen, die Einstellungen für Zeitzone, automatische Antworten, Gebietsschema (Sprache und Land/Region) sowie Geschäftszeiten umfassen.
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_1"
@@ -98,6 +102,20 @@ Content-type: application/json
     "language":{
       "locale":"en-US",
       "displayName":"English (United States)"
+    },
+    "workingHours":{
+        "daysOfWeek":[
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday"
+        ],
+        "startTime":"08:00:00.0000000",
+        "endTime":"17:00:00.0000000",
+        "timeZone":{
+            "name":"Pacific Standard Time"
+        }
     }
 }
 ```
@@ -137,6 +155,64 @@ Content-type: application/json
     },
     "internalReplyMessage": "<html>\n<body>\n<p>I'm at our company's worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n",
     "externalReplyMessage": "<html>\n<body>\n<p>I'm at the Contoso worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n"
+}
+```
+
+
+##### <a name="request-3"></a>Anforderung 3
+Im dritten Beispiel werden die Einstellungen für die Geschäftszeiten für das Postfach des angemeldeten Benutzers abgerufen.
+<!-- {
+  "blockType": "ignored",
+  "name": "get_mailboxsettings_3"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
+```
+##### <a name="response-3"></a>Antwort 3
+Die Antwort enthält nur die Einstellungen für Geschäftszeiten. Beachten Sie, dass sich die Geschäftszeiten des Benutzers in einer [benutzerdefinierten Zeitzone](../resources/customtimezone.md) befinden. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+<!-- {
+  "blockType": "ignored",
+  "name": "get_mailboxsettings_3",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workingHours"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/mailboxSettings/workingHours",
+    "daysOfWeek":[
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+    ],
+    "startTime":"09:00:00.0000000",
+    "endTime":"18:30:00.0000000",
+    "timeZone":{
+        "@odata.type":"#microsoft.graph.customTimeZone",
+        "bias":-200,
+        "name":"Customized Time Zone",
+        "standardOffset":{
+            "time":"02:00:00.0000000",
+            "dayOccurrence":4,
+            "dayOfWeek":"sunday",
+            "month":5,
+            "year":0
+        },
+        "daylightOffset":{
+            "daylightBias":-100,
+            "time":"02:00:00.0000000",
+            "dayOccurrence":2,
+            "dayOfWeek":"sunday",
+            "month":10,
+            "year":0
+        }
+    }
 }
 ```
 

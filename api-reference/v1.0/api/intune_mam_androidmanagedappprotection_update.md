@@ -59,7 +59,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |periodBeforePinReset|Duration|Zeitraum, nach dem die für alle Ebenen geltende PIN zurückgesetzt werden muss, wenn „pinRequired“ auf „true“ gesetzt ist. Geerbt von [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
 |allowedDataStorageLocations|Collection von Objekten des Typs „String“|Datenspeicherorte, an denen der Benutzer verwaltete Daten speichern darf. Geerbt von [managedAppProtection](../resources/intune_mam_managedappprotection.md). Mögliche Werte sind: `oneDriveForBusiness`, `sharePoint` und `localStorage`.|
 |contactSyncBlocked|Boolean|Gibt an, ob eine Synchronisierung von Kontakten mit dem Gerät des Benutzers erlaubt ist. Geerbt von [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
-|printBlocked|Boolean|Gibt an, ob über verwaltete Apps gedruckt werden darf. Geerbt von [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
+|printBlocked|Boolean|Gibt an, ob aus verwalteten Apps gedruckt werden darf.
+ Geerbt von [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
 |fingerprintBlocked|Boolean|Gibt an, ob statt einer PIN der Fingerabdruckleser verwendet werden darf, wenn „pinRequired“ auf „true“ gesetzt ist. Geerbt von [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
 |disableAppPinIfDevicePinIsSet|Boolean|Gibt an, ob die Verwendung der App-PIN erforderlich ist, wenn die Geräte-PIN gesetzt ist. Geerbt von [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
 |minimumRequiredOsVersion|String|Unter älteren Versionen als der angegebenen Version ist der Zugriff auf Unternehmensdaten für die verwaltete App blockiert. Geerbt von [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
@@ -70,7 +71,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |screenCaptureBlocked|Boolean|Gibt an, ob verwaltete Benutzer Screenshots von verwalteten Apps anfertigen dürfen.|
 |disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|Ist diese Einstellung aktiviert, ist die Verschlüsselung auf App-Ebene deaktiviert, wenn die Verschlüsselung auf Geräteebene aktiviert ist.|
 |encryptAppData|Boolean|Gibt an, ob die Anwendungsdaten verwalteter Apps verschlüsselt werden sollen.|
-|deployedAppCount|Int32|Anzahl der Apps, für die die aktuelle Richtlinie bereitgestellt wurde|
+|deployedAppCount|Int32|Anzahl der Apps, für die die aktuelle Richtlinie bereitgestellt wurde.
+|
 |minimumRequiredPatchVersion|String|Legt das älteste erforderliche Android-Sicherheitspatchlevel fest, mit dem einem Benutzer noch sicherer Zugriff auf die App gewährt wird.|
 |minimumWarningPatchVersion|String|Legt das älteste empfohlene Android-Sicherheitspatchlevel fest, mit dem einem Benutzer noch sicherer Zugriff auf die App gewährt wird.|
 

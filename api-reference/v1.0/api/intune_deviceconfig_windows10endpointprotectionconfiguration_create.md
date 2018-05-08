@@ -53,11 +53,16 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Konfiguriert die Firewallprofileinstellungen für Domänennetzwerke.|
 |firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Konfiguriert die Firewallprofileinstellungen für öffentliche Netzwerke.|
 |firewallProfilePrivate|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Konfiguriert die Firewallprofileinstellungen für private Netzwerke.|
-|defenderAttackSurfaceReductionExcludedPaths|Collection von Objekten des Typs „String“|Liste von EXE-Dateien und Ordnern, die von Regeln zur Verringerung der Angriffsfläche ausgenommen werden sollen|
-|defenderGuardedFoldersAllowedAppPaths|Collection von Objekten des Typs „String“|Liste von Pfaden zu EXE-Dateien, die auf geschützte Ordner zugreifen dürfen|
-|defenderAdditionalGuardedFolders|Collection von Objekten des Typs „String“|Liste von Ordnerpfaden, die der Liste der geschützter Ordner hinzugefügt werden sollen|
-|defenderExploitProtectionXml|Binary|XML-Inhalte mit Details zum Exploit-Schutz|
-|defenderExploitProtectionXmlFileName|String|Name der Datei, aus der „DefenderExploitProtectionXml“ abgerufen wurde|
+|defenderAttackSurfaceReductionExcludedPaths|Collection von Objekten des Typs „String“|Liste von EXE-Dateien und Ordnern, die von Regeln zur Verringerung der Angriffsfläche ausgenommen werden sollen.
+|
+|defenderGuardedFoldersAllowedAppPaths|Collection von Objekten des Typs „String“|Liste von Pfaden zu EXE-Dateien, die auf geschützte Ordner zugreifen dürfen.
+|
+|defenderAdditionalGuardedFolders|Collection von Objekten des Typs „String“|Liste von Ordnerpfaden, die der Liste geschützter Ordner hinzugefügt werden sollen.
+|
+|defenderExploitProtectionXml|Binary|XML-Inhalte mit Details zum Exploit-Schutz.
+|
+|defenderExploitProtectionXmlFileName|String|Name der Datei, aus der „DefenderExploitProtectionXml“ abgerufen wurde.
+|
 |defenderSecurityCenterBlockExploitProtectionOverride|Boolean|Gibt an, ob verhindert werden soll, dass Benutzer die Einstellungen für den Exploit-Schutz überschreiben.|
 |appLockerApplicationControl|String|Ermöglicht dem Administrator die Festlegung der auf Geräten zulässigen Typen von Apps. Mögliche Werte sind: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker` und `auditComponentsStoreAppsAndSmartlocker`.|
 |smartScreenEnableInShell|Boolean|Ermöglicht IT-Administratoren die Konfiguration von SmartScreen für Windows.|
@@ -68,13 +73,19 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |applicationGuardAllowPersistence|Boolean|Erlaubt die dauerhafte Speicherung benutzergenerierter Daten im App Guard Container (Favoriten, Cookies, Webkennwörter usw.).|
 |applicationGuardForceAuditing|Boolean|Erzwingt die dauerhafte Speicherung von Windows-Protokollen und -Ereignissen durch die Überwachung zwecks Erfüllung von Sicherheits- und Compliancevorgaben (Beispielereignisse sind Benutzeranmeldungen und -abmeldungen, die Verwendung von Berechtigungen, die Installation von Software und Änderungen am System).|
 |applicationGuardBlockClipboardSharing|String|Blockiert die Freigabe von Zwischenablagedaten zwischen Host und Container, zwischen Container und Host, in beide Richtungen oder in keine Richtung. Mögliche Werte sind: `notConfigured`, `blockBoth`, `blockHostToContainer`, `blockContainerToHost` und `blockNone`.|
-|applicationGuardAllowPrintToPDF|Boolean|Erlaubt das Drucken im PDF-Format über Container.|
-|applicationGuardAllowPrintToXPS|Boolean|Erlaubt das Drucken im XPS-Format über Container.|
-|applicationGuardAllowPrintToLocalPrinters|Boolean|Erlaubt das Drucken mit lokalen Druckern über Container.|
-|applicationGuardAllowPrintToNetworkPrinters|Boolean|Erlaubt das Drucken mit Netzwerkdruckern über Container.|
+|applicationGuardAllowPrintToPDF|Boolean|Erlaubt das Drucken im PDF-Format aus dem Container.
+|
+|applicationGuardAllowPrintToXPS|Boolean|Erlaubt das Drucken im XPS-Format aus dem Container.
+|
+|applicationGuardAllowPrintToLocalPrinters|Boolean|Erlaubt das Drucken auf lokalen Druckern aus dem Container.
+|
+|applicationGuardAllowPrintToNetworkPrinters|Boolean|Erlaubt das Drucken auf Netzwerkdruckern aus dem Container.
+|
 |bitLockerDisableWarningForOtherDiskEncryption|Boolean|Ermöglicht es dem Administrator, den Warnhinweis bezüglich anderer Festplattenverschlüsselungslösungen auf Benutzer-PCs zu deaktivieren.|
-|bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Ermöglicht, dass der Administrator die Aktivierung der Verschlüsselung mittels BitLocker fordert. Diese Richtlinie gilt nur für Mobilgeräte-SKUs.|
-|bitLockerEncryptDevice|Boolean|Ermöglicht, dass der Administrator die Aktivierung der Verschlüsselung mittels BitLocker fordert.|
+|bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Ermöglicht es dem Administrator, eine Aktivierung der Verschlüsselung mittels BitLocker anzufordern.
+ Diese Richtlinie gilt nur für Mobilgeräte-SKUs.|
+|bitLockerEncryptDevice|Boolean|Ermöglicht es dem Administrator, eine Aktivierung der Verschlüsselung mittels BitLocker anzufordern.
+|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune_deviceconfig_bitlockerremovabledrivepolicy.md)|BitLocker-Richtlinie für Wechseldatenträger|
 
 

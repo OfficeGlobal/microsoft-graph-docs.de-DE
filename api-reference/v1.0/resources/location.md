@@ -1,14 +1,27 @@
 # <a name="location-resource-type"></a>Location-Ressourcentyp
 
-Stellt Standortinformationen eines Ereignisses dar.
+Stellt Standortinformationen eines [Ereignisses](event.md) dar.
 
+Es gibt mehrere Methoden zum Erstellen von Ereignissen in einem Kalender, z. B. über eine App mithilfe der REST-API [Ereignis erstellen](../api/user_post_events.md) oder manuell mithilfe der Outlook-Benutzeroberfläche. Wenn Sie ein Ereignis über die Benutzeroberfläche erstellen, können Sie den Ort als Nur-Text angeben (z. B. „Harrys Bar“) oder aus der in Outlook bereitgestellten Raumliste, [Bing-Vorschlagssuche](https://blogs.bing.com/search/2013/02/20/a-look-at-autosuggest/) oder [lokale Bing-Suche](https://blogs.bing.com/search/2010/08/17/local-search-on-m-bing-com/). 
+
+Je nachdem, wie ein Ereignis erstellt wurde, wird die schreibgeschützte **locationType**-Eigenschaft anders festgelegt. 
+
+| Wie ein Ereignis erstellt wurde  | Eigenschaft   | Erwarteter Wert |
+|:----------|:-------|:--------------------------------|
+| REST-API [Ereignis erstellen](../api/user_post_events.md)  | **locationType** | `default` |
+| Benutzeroberfläche in Outlook | **locationType** | Eine der folgenden Varianten: <ul><li>`default` für einen Ort, der als Nur-Text eingegeben wird.</li><li>`conferenceRoom` für einen Raum, der von der Outlook-Raumliste bereitgestellt wird.</li><li>Oder eine der folgenden Listen – `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress` – für einen Ort aus der Bing-Vorschlagssuche oder der lokalen Bing-Suche.</li></ul> |
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft  | Typ   | Beschreibung                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |Die Adresse des Orts. |
+| Koordinaten | [outlookGeoCoordinates](outlookGeoCoordinates.md) | Die geografischen Koordinaten und die Erhebung des Orts. |
 | displayName  | String | Der Name, der mit dem Ort verknüpft ist                       |
-| locationEmailAddress | String | Optionale E-Mail-Adresse des Orts              |
+| locationEmailAddress | String | Optionale E-Mail-Adresse des Orts.              |
+| locationUri | Zeichenfolge | Optionaler URI, der den Ort darstellt. |
+| locationType | Zeichenfolge | Der Typ des Orts. Mögliche Werte sind: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Schreibgeschützt.|
+| uniqueId | Zeichenfolge | Nur für internen Gebrauch.|
+| uniqueIdType | Zeichenfolge | Nur für internen Gebrauch. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -22,15 +35,17 @@ Stellt Standortinformationen eines Ereignisses dar.
 ```json
 {
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
+  "coordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
   "displayName": "string",
-  "locationEmailAddress": "string"
+  "locationEmailAddress": "string",
+  "locationUri": "string",
+  "locationType": "string",
+  "uniqueId": "string",
+  "uniqueIdType": "string"
 }
 
 ```
 
-## <a name="remarks"></a>Bemerkungen
-
-Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

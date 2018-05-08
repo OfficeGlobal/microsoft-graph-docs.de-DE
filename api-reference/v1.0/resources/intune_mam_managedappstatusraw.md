@@ -10,17 +10,14 @@ Erbt von [managedAppStatus](../resources/intune_mam_managedappstatus.md)
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
 |[managedAppStatusRaws auflisten](../api/intune_mam_managedappstatusraw_list.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)-Sammlung|Auflisten von Eigenschaften und Beziehungen der [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)-Objekte.|
-|[ManagedAppStatusRaw abrufen](../api/intune_mam_managedappstatusraw_get.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Lesen von Eigenschaften und Beziehungen des [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)-Objekts.|
-|[ManagedAppStatusRaw erstellen](../api/intune_mam_managedappstatusraw_create.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Erstellen eines neuen [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)-Objekts.|
-|[ManagedAppStatusRaw löschen](../api/intune_mam_managedappstatusraw_delete.md)|Keine|Löscht ein [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)-Objekt.|
-|[ManagedAppStatusRaw aktualisieren](../api/intune_mam_managedappstatusraw_update.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Aktualisieren der Eigenschaften eines [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)-Objekts.|
+|[ManagedAppStatusRaw abrufen](../api/intune_mam_managedappstatusraw_get.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|String|Anzeigename des Statusberichts. Geerbt von [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
-|id|String|Schlüssel der Entität. Geerbt von [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
-|version|String|Version der Entität Geerbt von [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
+|displayName|String|Anzeigename des Statusberichts. Geerbt von [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
+|id|String|Schlüssel der Entität. Geerbt von [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
+|version|String|Version der Entität. Geerbt von [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
 |content|[Json](../resources/intune_mam_json.md)|Inhalt des Statusberichts.|
 
 ## <a name="relationships"></a>Beziehungen

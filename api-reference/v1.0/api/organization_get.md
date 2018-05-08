@@ -6,9 +6,11 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | User.Read, Directory.Read.All    |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | User.Read, Directory.Read.All, Directory.ReadWrite.All   |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Directory.Read.All |
+|Anwendung | Directory.Read.All, Directory.ReadWrite.All |
+
+> Hinweis: Anwendungen, denen die User.Read-Berechtigung gewährt wurde, können nur die *id*-, *displayName*- und *verifiedDomains*-Eigenschaften der Organisation lesen.  Alle anderen Eigenschaften geben `null`-Werte zurück. Verwenden Sie zum Lesen aller Eigenschaften Directory.Read.All.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

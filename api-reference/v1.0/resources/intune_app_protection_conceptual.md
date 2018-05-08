@@ -42,7 +42,6 @@ Zur Verwaltung der App-Schutz-Richtlinien in Intune stehen die folgenden Graph-R
 - [mobileAppIdentifier](intune_mam_mobileappidentifier.md)
 - [proxiedDomain](intune_mam_proxieddomain.md)
 - [targetedManagedAppConfiguration](intune_mam_targetedmanagedappconfiguration.md)
-- [targetedManagedAppPolicyAssignment](intune_mam_targetedmanagedapppolicyassignment.md)
 - [targetedManagedAppProtection](intune_mam_targetedmanagedappprotection.md)
 - [user](intune_mam_user.md)
 - [windowsInformationProtectionAppLearningSummary](intune_wip_windowsinformationprotectionapplearningsummary.md)

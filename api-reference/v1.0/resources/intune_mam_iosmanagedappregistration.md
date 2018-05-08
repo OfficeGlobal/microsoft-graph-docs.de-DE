@@ -11,27 +11,24 @@ Erbt von [managedAppRegistration](../resources/intune_mam_managedappregistration
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
 |[iosManagedAppRegistrations auflisten](../api/intune_mam_iosmanagedappregistration_list.md)|[iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md)-Sammlung|Listet die Eigenschaften und Beziehungen von Objekten des Typs [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md) auf.|
-|[iosManagedAppRegistration abrufen](../api/intune_mam_iosmanagedappregistration_get.md)|[iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md)|Lesen von Eigenschaften und Beziehungen des [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md)-Objekts.|
-|[iosManagedAppRegistration erstellen](../api/intune_mam_iosmanagedappregistration_create.md)|[iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md)|Erstellt ein neues [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md)-Objekt.|
-|[iosManagedAppRegistration löschen](../api/intune_mam_iosmanagedappregistration_delete.md)|Keine|Löscht eine [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md).|
-|[iosManagedAppRegistration aktualisieren](../api/intune_mam_iosmanagedappregistration_update.md)|[iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md)|Aktualisieren der Eigenschaften eines [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md)-Objekts.|
+|[iosManagedAppRegistration abrufen](../api/intune_mam_iosmanagedappregistration_get.md)|[iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md)|Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md).|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
 |lastSyncDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Synchronisierung der App mit dem Verwaltungsdienst. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|applicationVersion|Zeichenfolge|App-Version. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|managementSdkVersion|Zeichenfolge|Version des App-Verwaltungs-SDK. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|platformVersion|Zeichenfolge|Version des Betriebssystems. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|deviceType|Zeichenfolge|Gerätetyp des Hostgeräts. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|deviceTag|Zeichenfolge|Vom App-Verwaltungs-SDK generiertes Tag, das bei der Zuordnung von Apps hilft, die auf demselben Gerät gehostet werden. Es ist nicht garantiert, dass die App-Zuordnung unter allen Bedingungen funktioniert. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|deviceName|Zeichenfolge|Gerätename des Hostgeräts. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|flaggedReasons|Zeichenfolgenauflistung|Gründe (0 oder mehr), aus denen eine App-Registrierung gekennzeichnet wurde. E.g. Die App wird auf einem gerooteten Gerät ausgeführt. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|userId|Zeichenfolge|Benutzer-ID, zu der die App-Registrierung gehört. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|applicationVersion|String|App-Version. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|managementSdkVersion|String|Version des App-Verwaltungs-SDK. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|platformVersion|String|Version des Betriebssystems. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|deviceType|String|Gerätetyp des Hostgeräts. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|deviceTag|String|Vom App-Verwaltungs-SDK generiertes Tag, das bei der Zuordnung von Apps hilft, die auf demselben Gerät gehostet werden. Es ist nicht garantiert, dass die App-Zuordnung unter allen Bedingungen funktioniert. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|deviceName|String|Gerätename des Hostgeräts. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|flaggedReasons|Collection von Objekten des Typs „String“|Gründe (0 oder mehr), aus denen eine App-Registrierung gekennzeichnet wurde. E.g. Die App wird auf einem gerooteten Gerät ausgeführt. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|userId|String|Benutzer-ID, zu der die App-Registrierung gehört. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|Bezeichner des App-Pakets. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|id|Zeichenfolge|Schlüssel der Entität Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|Version|Zeichenfolge|Version der Entität Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|id|String|Schlüssel der Entität. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|version|String|Version der Entität. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

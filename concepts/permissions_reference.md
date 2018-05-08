@@ -634,7 +634,9 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
-Keine.
+|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Reports.Read.All_ | Alle Verwendungsberichte lesen | Die App kann alle Dienstverwendungsberichte ohne angemeldeten Benutzer lesen. Zu Diensten, die Verwendungsberichte bereitstellen, gehören Office 365 und Azure Active Directory. | Ja |
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
@@ -722,6 +724,36 @@ _Freigegebene_ Berechtigungen werden derzeit nur für Geschäfts-, Schul- oder U
 * _Tasks.Read_: Alle unerledigten Aufgaben im Postfach eines Benutzers abrufen (`GET /users/{id | userPrincipalName}/outlook/tasks?$filter=status ne 'completed'`).
 * _Tasks.ReadWrite_: Eine Aufgabe im Postfach eines Benutzers aktualisieren (`PATCH /users/{id | userPrincipalName}/outlook/tasks/id`).
 * _Tasks.ReadWrite.Shared_: Eine Aufgabe im Namen eines anderen Benutzers ausführen (`POST /users/{id | userPrincipalName}/outlook/tasks/id/complete`).
+
+Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
+
+---
+
+## <a name="terms-of-use-permissions"></a>Nutzungsbedingungen für Berechtigungen
+
+#### <a name="delegated-permissions"></a>Delegierte Berechtigungen
+
+|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Agreement.Read.All_ | Lesen aller Vereinbarungen der Nutzungsbedingungen. | Ermöglicht der App, Vereinbarungen der Nutzungsbedingungen im Auftrag des angemeldeten Benutzers zu lesen. | Ja |
+| _Agreement.ReadWrite.All_ | Lesen und Schreiben aller Vereinbarungen der Nutzungsbedingungen. | Ermöglicht der App, die Vereinbarungen der Nutzungsbedingungen im Auftrag des angemeldeten Benutzers zu lesen und zu schreiben. | Ja |
+| _AgreementAcceptance.Read_ | Lesen der Annahmestatus der Nutzungsbedingungen | Ermöglicht der App, Annahmestatus der Nutzungsbedingungen im Auftrag des angemeldeten Benutzers zu lesen. | Ja |
+| _AgreementAcceptance.Read.All_ | Lesen der Annahmestatus der Nutzungsbedingungen, auf die der Benutzer zugreifen kann | Ermöglicht der App, Annahmestatus der Nutzungsbedingungen im Auftrag des angemeldeten Benutzers zu lesen. | Ja |
+
+### <a name="remarks"></a>Bemerkungen
+
+Alle oben genanten Berechtigungen gelten nur für Geschäfts-, Schul- oder Unikonten.
+
+Damit eine App alle Vereinbarungen oder Vereinbarungsannahmen mit delegierten Berechtigungen lesen oder schreiben kann, muss der angemeldete Benutzer der Rolle „Globaler Administrator“, „Administrator für bedingten Zugriff“ oder „Sicherheitsadministrator“ zugewiesen sein. Weitere Informationen zu Administratorrollen finden Sie unter [Zuweisen von Administratorrollen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+
+### <a name="example-usage"></a>Verwendungsbeispiel
+
+#### <a name="delegated"></a>Delegiert
+Die folgenden Verwendungen sind für delegierte Berechtigungen gültig:
+
+* _Agreement.Read.All_: Lesen aller Vereinbarungen der Nutzungsbedingungen (`GET /beta/agreements`)
+* _Agreement.ReadWrite.All_: Lesen und Schreiben aller Vereinbarungen der Nutzungsbedingungen (`POST /beta/agreements`)
+* _AgreementAcceptance.Read_: Lesen der Annahmestatus der Nutzungsbedingungen (`GET /beta/me/agreementAcceptances`)
 
 Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 

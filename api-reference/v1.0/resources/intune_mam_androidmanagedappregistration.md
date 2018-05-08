@@ -11,10 +11,7 @@ Erbt von [managedAppRegistration](../resources/intune_mam_managedappregistration
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
 |[AndroidManagedAppRegistrations auflisten](../api/intune_mam_androidmanagedappregistration_list.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)-Sammlung|Auflisten von Eigenschaften und Beziehungen der [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)-Objekte.|
-|[AndroidManagedAppRegistration abrufen](../api/intune_mam_androidmanagedappregistration_get.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|Lesen von Eigenschaften und Beziehungen des [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)-Objekts.|
-|[AndroidManagedAppRegistration erstellen](../api/intune_mam_androidmanagedappregistration_create.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|Erstellen eines neuen [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)-Objekts.|
-|[AndroidManagedAppRegistration löschen](../api/intune_mam_androidmanagedappregistration_delete.md)|Keine|Löscht ein [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)-Objekt.|
-|[AndroidManagedAppRegistration aktualisieren](../api/intune_mam_androidmanagedappregistration_update.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|Aktualisieren der Eigenschaften eines [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)-Objekts.|
+|[AndroidManagedAppRegistration abrufen](../api/intune_mam_androidmanagedappregistration_get.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md).|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
@@ -27,7 +24,7 @@ Erbt von [managedAppRegistration](../resources/intune_mam_managedappregistration
 |deviceType|String|Gerätetyp des Hostgeräts. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
 |deviceTag|String|Vom App-Verwaltungs-SDK generiertes Tag, das bei der Zuordnung von Apps hilft, die auf demselben Gerät gehostet werden. Es ist nicht garantiert, dass die App-Zuordnung unter allen Bedingungen funktioniert. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
 |deviceName|String|Gerätename des Hostgeräts. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|flaggedReasons|String-Sammlung|Gründe (0 oder mehr), aus denen eine App-Registrierung gekennzeichnet wurde. Beispiel: Die App wird auf einem gerooteten Gerät ausgeführt. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|flaggedReasons|Collection von Objekten des Typs „String“|Gründe (0 oder mehr), aus denen eine App-Registrierung gekennzeichnet wurde. E.g. Die App wird auf einem gerooteten Gerät ausgeführt. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
 |userId|String|Benutzer-ID, zu der die App-Registrierung gehört. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|Bezeichner des App-Pakets. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
 |id|String|Schlüssel der Entität. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
@@ -36,9 +33,9 @@ Erbt von [managedAppRegistration](../resources/intune_mam_managedappregistration
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|appliedPolicies|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md)-Sammlung|Richtlinien (0 oder mehr), die bereits auf die registrierte App angewendet wurden, als sie letztmals mit dem Verwaltungsdienst synchronisiert wurde. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|intendedPolicies|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md)-Sammlung|Richtlinien (0 oder mehr), die der Administrator bisher für die App vorgesehen hat. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|operations|Sammlung von Objekten des Typs [managedAppOperation](../resources/intune_mam_managedappoperation.md)|Operationen (0 oder mehr) mit langer Ausführungszeit, die bei der App-Registrierung ausgelöst wurden. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|appliedPolicies|Sammlung von Objekten des Typs [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|Richtlinien (0 oder mehr), die bereits auf die registrierte App angewendet wurden, als sie letztmals mit dem Verwaltungsdienst synchronisiert wurde. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|intendedPolicies|Sammlung von Objekten des Typs [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|Richtlinien (0 oder mehr), die der Administrator bisher für die App vorgesehen hat. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|Vorgänge|Sammlung von Objekten des Typs [managedAppOperation](../resources/intune_mam_managedappoperation.md)|Operationen (0 oder mehr) mit langer Ausführungszeit, die bei der App-Registrierung ausgelöst wurden. Geerbt von [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

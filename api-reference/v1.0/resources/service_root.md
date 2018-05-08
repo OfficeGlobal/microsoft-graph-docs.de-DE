@@ -16,7 +16,7 @@
 |[Laufwerk abrufen](../api/drive_get.md) | [Laufwerk](drive.md)  |Dient zum Abrufen von Objekteigenschaften. |
 |[Gruppe erstellen](../api/group_post_groups.md) |[Gruppe](group.md)| Dient zum Erstellen einer neuen Gruppe durch Veröffentlichen in der Gruppensammlung.|
 |[Gruppe auflisten](../api/group_list.md) | [Gruppensammlung](group.md) |Dient zum Abrufen einer Gruppenobjektsammlung. |
-|[Organisation auflisten](../api/organization_list.md) | [Organisationssammlung](organization.md) |Dient zum Abrufen der Organisationsobjektsammlung. |
+|[Organisation auflisten](../api/organization_get.md) | [Organisationssammlung](organization.md) |Dient zum Abrufen der Organisationsobjektsammlung. |
 |[subscribedSku auflisten](../api/subscribedsku_list.md) | [subscribedSku-Sammlung](subscribedsku.md) |Dient zum Abrufen der subscribedSku-Objektsammlung. |
 |[Benutzer erstellen](../api/user_post_users.md) |[Benutzer](user.md)| Dient zum Erstellen eines neuen Benutzers durch Veröffentlichen in der Benutzersammlung.|
 |[Benutzer auflisten](../api/user_list.md) | [Benutzersammlung](user.md) |Dient zum Abrufen einer Benutzerobjektsammlung. |

@@ -1,14 +1,18 @@
 # <a name="list-organization"></a>Organisation auflisten
 
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+
 Mit dieser API können Sie eine Liste von Organisationsobjekten abrufen.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | Nicht unterstützt    |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | User.Read, Directory.Read.All, Directory.ReadWrite.All   |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Nicht unterstützt |
+|Anwendung | Directory.Read.All, Directory.ReadWrite.All |
+
+> Hinweis: Anwendungen, denen die User.Read-Berechtigung gewährt wurde, können nur die *id*-, *displayName*- und *verifiedDomains*-Eigenschaften der Organisation lesen.  Alle anderen Eigenschaften geben `null`-Werte zurück. Verwenden Sie zum Lesen aller Eigenschaften Directory.Read.All.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -16,7 +20,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 GET /organization
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
@@ -36,7 +40,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "get_organization"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/organization
+GET https://graph.microsoft.com/beta/organization
 ```
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
@@ -56,7 +60,7 @@ Content-length: 500
     {
       "assignedPlans": [
         {
-          "assignedDateTime": "datetime-value",
+          "assignedDateTime": "2016-10-19T10:37:00Z",
           "capabilityStatus": "capabilityStatus-value",
           "service": "service-value",
           "servicePlanId": "servicePlanId-value"
