@@ -16,7 +16,7 @@ Enthält die Eigenschaften, mit denen eine MDM-App-Konfiguration zu einer Gruppe
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|Eindeutiger Bezeichner der Entität.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_apps_deviceandappmanagementassignmenttarget.md)|Zuweisungsziel, dem die Richtlinie der Nutzungsbedingungen zugewiesen wird.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Zuweisungsziel, dem die Richtlinie der Nutzungsbedingungen zugewiesen wird.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

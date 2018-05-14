@@ -18,7 +18,7 @@ Eine abstrakte Klasse, die die grundlegenden Eigenschaften des verwalteten eBook
 |description|String|Beschreibung|
 |publisher|String|Herausgeber|
 |publishedDateTime|DateTimeOffset|Datum und Uhrzeit der Veröffentlichung des E-Books.|
-|largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Umschlagbild des Buchs|
+|largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Umschlagbild des Buchs|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der E-Book-Datei.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des E-Books.|
 |informationUrl|String|URL zur Seite mit weiteren Informationen.|

@@ -58,7 +58,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/{auditEventId}
 Content-type: application/json
-Content-length: 1395
+Content-length: 1338
 
 {
   "displayName": "Display Name value",
@@ -66,9 +66,6 @@ Content-length: 1395
   "actor": {
     "@odata.type": "microsoft.graph.auditActor",
     "type": "Type value",
-    "permissions": [
-      "Permissions value"
-    ],
     "userPermissions": [
       "User Permissions value"
     ],
@@ -110,7 +107,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1493
+Content-Length: 1436
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -120,9 +117,6 @@ Content-Length: 1493
   "actor": {
     "@odata.type": "microsoft.graph.auditActor",
     "type": "Type value",
-    "permissions": [
-      "Permissions value"
-    ],
     "userPermissions": [
       "User Permissions value"
     ],

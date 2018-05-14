@@ -16,7 +16,7 @@ Noch nicht dokumentiert.
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|Noch nicht dokumentiert.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_onboarding_deviceandappmanagementassignmenttarget.md)|Noch nicht dokumentiert.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Noch nicht dokumentiert.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

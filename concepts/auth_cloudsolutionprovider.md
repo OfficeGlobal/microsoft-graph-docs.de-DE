@@ -1,8 +1,8 @@
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>Aufrufen von Microsoft Graph aus einer Anwendung eines Cloud-Lösungsanbieters
 
-> **Hinweis:** Dieses Thema gilt **nur** für Microsoft CSP-Anwendungsentwickler (Cloud-Lösungsanbieter). Das Programm [Microsoft Cloud-Lösungsanbieter (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) ermöglicht es Microsoft-Partnern, Microsoft Onlinedienste an Kunden zu verkaufen und zu verwalten.
+> **Hinweis:** Dieses Thema gilt **nur** für Microsoft CSP-Anwendungsentwickler (Cloud-Lösungsanbieter). Das Programm [Microsoft Cloud-Lösungsanbieter (CSP)](https://partner.microsoft.com/de-DE/cloud-solution-provider) ermöglicht es Microsoft-Partnern, Microsoft Onlinedienste an Kunden zu verkaufen und zu verwalten.
 
-In diesem Thema wird beschrieben, wie Sie Anwendungszugriff auf partnerverwaltete Kundendaten über Microsoft Graph aktivieren, entweder mit dem [Fluss zur Erteilung von Autorisierungscodes](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code) oder dem [Fluss zur Gewährung von Clientanmeldeinformationen für Dienst-zu-Dienst-Aufrufe](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
+In diesem Thema wird beschrieben, wie Sie Anwendungszugriff auf partnerverwaltete Kundendaten über Microsoft Graph aktivieren, entweder mit dem [Fluss zur Erteilung von Autorisierungscodes](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-protocols-oauth-code) oder dem [Fluss zur Gewährung von Clientanmeldeinformationen für Dienst-zu-Dienst-Aufrufe](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
 
 **Wichtig:** Das Aufrufen von Microsoft Graph aus einer CSP-Anwendung wird nur für Verzeichnisressourcen (z. B. **user**, **group**,**device**, **organization**) und [Intune](..\api-reference\beta\resources\intune_graph_overview.md)-Ressourcen unterstützt.
 
@@ -22,7 +22,7 @@ Eine Anwendung wird als *partnerverwaltet* betrachtet, wenn ihr erhöhte Rechte 
 
 Die ersten hier erforderlichen Schritte entsprechen weitgehend den Schritten zum Registrieren und Konfigurieren einer mehrinstanzenfähigen Anwendung:
 
-1. [Registrieren Sie die Anwendung](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-app-registration) in Ihrem Partnermandanten über das [Azure-Portal](https://portal.azure.com). Um als partnerverwaltete App ausgeführt werden zu können, muss eine Anwendung als [mehrinstanzenfähige App](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#update-registration-to-be-multi-tenant) konfiguriert werden. Falls Ihre App in mehreren geografische Regionen bereitgestellt und verkauft wird, müssen Sie Ihre App außerdem in jeder dieser Regionen registrieren, wie <a href="#region">hier</a> beschrieben.
+1. [Registrieren Sie die Anwendung](https://docs.microsoft.com/de-DE/azure/active-directory/active-directory-app-registration) in Ihrem Partnermandanten über das [Azure-Portal](https://portal.azure.com). Um als partnerverwaltete App ausgeführt werden zu können, muss eine Anwendung als [mehrinstanzenfähige App](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#update-registration-to-be-multi-tenant) konfiguriert werden. Falls Ihre App in mehreren geografische Regionen bereitgestellt und verkauft wird, müssen Sie Ihre App außerdem in jeder dieser Regionen registrieren, wie <a href="#region">hier</a> beschrieben.
 2. Konfigurieren Sie Ihre mehrinstanzenfähige App über das Azure-Portal mit den *erforderlichen Berechtigungen*; verwenden Sie einen Ansatz geringster Rechte.
 
 ### <a name="pre-consent-your-app-for-all-your-customers"></a>Vorabgenehmigen Ihrer App für alle Ihre Kunden
@@ -55,7 +55,7 @@ Zum Schluss gewähren Sie Ihrer partnerverwalteten App diese konfigurierten Bere
 
 ## <a name="token-acquisition-flows"></a>Tokenerwerbsflüsse
 
-Die Tokenerwerbsflüsse für partnerverwaltete Apps – [Fluss zur Erteilung von Autorisierungscodes](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code) und [Fluss zur Gewährung von Clientanmeldeinformationen für Dienst-zu-Dienst-Aufrufe](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service) – sind dieselben wie für normale mehrinstanzenfähige Apps.
+Die Tokenerwerbsflüsse für partnerverwaltete Apps – [Fluss zur Erteilung von Autorisierungscodes](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-protocols-oauth-code) und [Fluss zur Gewährung von Clientanmeldeinformationen für Dienst-zu-Dienst-Aufrufe](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service) – sind dieselben wie für normale mehrinstanzenfähige Apps.
 
 Abgesehen vom vorab genehmigten Zugriff auf alle Ihre Kundenmandanten haben partnerverwaltete Apps eine zusätzliche Fähigkeit. Sie ermöglicht es Ihren Agenten, mit Ihrer App auf Mandantendaten Ihres Kunden zuzugreifen (mit delegierten Administratorrechten). Im Prinzip funktioniert es wie folgt:
 
@@ -63,15 +63,15 @@ Abgesehen vom vorab genehmigten Zugriff auf alle Ihre Kundenmandanten haben part
 2. Die App fordert ein Zugriffstoken für den gewünschten partnerverwalteten Kundenmandanten an.
 3. Die App ruft unter Verwendung des Zugriffstokens Microsoft Graph auf.
 
-Dies ist ein standardmäßiger [Fluss zur Erteilung von Autorisierungscodes](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code), mit der Ausnahme, dass Ihre Agenten sich mit ihren Partnerkonten anmelden müssen. Um anzuzeigen, wie dies aussieht, stellen Sie sich vor, Ihr Partnermandant ist *partner.com* (dies ist die Startmandant für Ihre Agenten) und einer Ihrer Kunden ist *customer.com*:
+Dies ist ein standardmäßiger [Fluss zur Erteilung von Autorisierungscodes](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-protocols-oauth-code), mit der Ausnahme, dass Ihre Agenten sich mit ihren Partnerkonten anmelden müssen. Um anzuzeigen, wie dies aussieht, stellen Sie sich vor, Ihr Partnermandant ist *partner.com* (dies ist die Startmandant für Ihre Agenten) und einer Ihrer Kunden ist *customer.com*:
 
-1. [Autorisierungscode erwerben:](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code) Die App sendet eine Anforderung an den Endpunkt ```/authorize``` und muss einen **Kundenmandanten**, in unserem Beispiel ```customer.com```, als Mandantenziel verwenden. Ihre Agenten melden sich weiterhin mit ihrem ```username@partner.com```-Konto an.
+1. [Autorisierungscode erwerben:](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code) Die App sendet eine Anforderung an den Endpunkt ```/authorize``` und muss einen **Kundenmandanten**, in unserem Beispiel ```customer.com```, als Mandantenziel verwenden. Ihre Agenten melden sich weiterhin mit ihrem ```username@partner.com```-Konto an.
 
     ```http
     GET https://login.microsoftonline.com/customer.com/oauth2/authorize
     ```
 
-2. [Zugriffstoken mithilfe des Autorisierungscodes erwerben:](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) Ihre App muss einen **Kundennandanten** als Zielmandanten verwenden, in unserem Beispiel ```customer.com```, wenn sie die Anforderung an den Endpunkt ```token``` sendet:
+2. [Zugriffstoken mithilfe des Autorisierungscodes erwerben:](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) Ihre App muss einen **Kundennandanten** als Zielmandanten verwenden, in unserem Beispiel ```customer.com```, wenn sie die Anforderung an den Endpunkt ```token``` sendet:
 
     ```http
     POST https://login.microsoftonline.com/customer.com/oauth2/token
@@ -91,7 +91,7 @@ Die Kundenbeteiligung am CSP-Programm ist derzeit auf eine einzige Region beschr
 
 ## <a name="calling-microsoft-graph-immediately-after-customer-creation"></a>Aufrufen von Microsoft Graph sofort nach dem Erstellen des Kunden
 
-Wenn Sie einen neuen Kunden mit der [Partner Center-API](https://partnercenter.microsoft.com/en-us/partner/developer) erstellen, wird ein neuer Kundenmandant erstellt. Darüber hinaus wird eine Partnerbeziehung erstellt, wodurch Sie zum gespeicherten Partner dieses neuen Kundenmandanten werden. Es kann bis zu drei Minuten dauern, bis diese Partnerbeziehung an den neuen Kundenmandanten verteilt wird. Wenn Ihre App Microsoft Graph direkt nach der Erstellung aufruft, erhält die App wahrscheinlich die Fehlermeldung, dass der Zugriff verweigert wurde. Eine ähnliche Verzögerung kann eintreten, wenn ein bestehender Kunde Ihre Einladung akzeptiert. Dies liegt daran, dass die Vorabzustimmung davon abhängt, dass die Partnerbeziehung im Kundenmandanten vorhanden ist.
+Wenn Sie einen neuen Kunden mit der [Partner Center-API](https://partnercenter.microsoft.com/de-DE/partner/developer) erstellen, wird ein neuer Kundenmandant erstellt. Darüber hinaus wird eine Partnerbeziehung erstellt, wodurch Sie zum gespeicherten Partner dieses neuen Kundenmandanten werden. Es kann bis zu drei Minuten dauern, bis diese Partnerbeziehung an den neuen Kundenmandanten verteilt wird. Wenn Ihre App Microsoft Graph direkt nach der Erstellung aufruft, erhält die App wahrscheinlich die Fehlermeldung, dass der Zugriff verweigert wurde. Eine ähnliche Verzögerung kann eintreten, wenn ein bestehender Kunde Ihre Einladung akzeptiert. Dies liegt daran, dass die Vorabzustimmung davon abhängt, dass die Partnerbeziehung im Kundenmandanten vorhanden ist.
 
 Um dieses Problem zu vermeiden, wird empfohlen, dass die Partner-App nach der Kundenerstellung **drei Minuten** warten sollte, bevor sie Azure AD zum Erwerb eines Tokens (für den Aufruf von Microsoft Graph) aufruft. Hiermit sollten die meisten Fälle abgedeckt sein. Wenn jedoch nach Verstreichen der Wartezeit von drei Minuten weiterhin ein Autorisierungsfehler ausgegeben wird, warten Sie weitere 60 Sekunden, und versuchen Sie es erneut.
 

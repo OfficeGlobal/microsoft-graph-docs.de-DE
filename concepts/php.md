@@ -13,7 +13,7 @@ Um Microsoft Graph in Ihrer PHP-App zu verwenden, müssen Sie für Benutzer die 
 
 Für die ersten Schritte benötigen Sie: 
 
-- Ein [Microsoft-Konto](https://www.outlook.com/) oder ein [Geschäfts- oder Schulkonto](http://dev.office.com/devprogram)
+- Ein [Microsoft-Konto](https://www.outlook.com/) oder ein [Geschäfts- oder Schulkonto](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
 - PHP, Version 5.5.9 oder höher
 - [Composer](https://getcomposer.org/)
 
@@ -177,5 +177,5 @@ Sie können Ihre PHP-App nun testen.
 
 
 ## <a name="see-also"></a>Siehe auch
-* [Azure AD v2.0-Protokolle](https://azure.microsoft.com/de-DE/documentation/articles/active-directory-v2-protocols/)
-* [Azure AD v2.0-Tokens](https://azure.microsoft.com/de-DE/documentation/articles/active-directory-v2-tokens/)
+* [Azure AD v2.0-Protokolle](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+* [Azure AD v2.0-Tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)

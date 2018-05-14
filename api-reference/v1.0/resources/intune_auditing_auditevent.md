@@ -49,9 +49,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "actor": {
     "@odata.type": "microsoft.graph.auditActor",
     "type": "String",
-    "permissions": [
-      "String"
-    ],
     "userPermissions": [
       "String"
     ],

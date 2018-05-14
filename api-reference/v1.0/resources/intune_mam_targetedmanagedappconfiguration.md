@@ -35,7 +35,7 @@ Erbt von [managedAppConfiguration](../resources/intune_mam_managedappconfigurati
 |:---|:---|:---|
 |Apps|Sammlung von Objekten des Typs [managedMobileApp](../resources/intune_mam_managedmobileapp.md)|Liste der Apps, für die die Richtlinie bereitgestellt wurde|
 |deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Navigationseigenschaft zu einer Bereitstellungsübersicht für die Konfiguration|
-|assignments|targetedManagedAppPolicyAssignment-Sammlung|Navigationseigenschaft zu einer Liste von Einschlussgruppen und Ausschlussgruppen, für die die Richtlinie bereitgestellt wurde.|
+|assignments|Sammlung von Objekten des Typs [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Navigationseigenschaft zu einer Liste von Einschlussgruppen und Ausschlussgruppen, für die die Richtlinie bereitgestellt wurde.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

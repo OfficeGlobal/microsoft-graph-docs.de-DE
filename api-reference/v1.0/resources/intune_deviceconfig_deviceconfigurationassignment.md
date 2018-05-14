@@ -16,7 +16,7 @@ Die Zuweisungsentität für die Gerätekonfiguration weist eine AAD-Gruppe einer
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|Der Schlüssel der Zuweisung.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_deviceconfig_deviceandappmanagementassignmenttarget.md)|Das Zuweisungsziel für die Gerätekonfiguration.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Das Zuweisungsziel für die Gerätekonfiguration.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
