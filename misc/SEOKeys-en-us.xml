@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Menu>
-  <Item Label="Erkunden" url="" />
+  <Item Label="ERKUNDEN" url="" />
   <Item text="Übersicht" url="/en-us/concepts/overview" SEOKeyword="Übersicht, Microsoft Graph-API, Übersicht" SEODescription="Microsoft Graph ermöglicht Anwendungen, auf digitale Arbeit und digitale Lebensdaten in der gesamten intelligenten Microsoft Cloud zuzugreifen. Große Vorteile für Entwickler: Ein einheitlicher Microsoft-API-Endpunkt für den Zugriff auf Daten, Informationen und Einblicke aus der Microsoft Cloud.">
 	<Item text="Dienste in Microsoft Graph" url="/en-us/concepts/overview-major-services" />
 	<Item text="Benutzer, die Sie erreichen können" url="/en-us/concepts/users-you-can-reach">
