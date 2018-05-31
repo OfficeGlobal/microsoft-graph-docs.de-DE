@@ -49,18 +49,19 @@
 	  <Item text="Nachrichtenordner freigeben" url="/en-us/concepts/outlook-share-messages-folders" />
   </Item>
   <Item text="Anmerkungen" ProdTag="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Verwenden Sie Microsoft Graph, um Ihre Apps in OneNote zu integrieren.">
-    <Item text="Bewährte Methoden" url="/en-us/concepts/onenote_best_practices" SEODescription="Verwenden Sie bewährte Methoden bei der Arbeit mit OneNote-APIs in Microsoft Graph." />  <Item text="" url="/en-us/concepts/" />
-	<Item text="Brandingrichtlinien" url="/en-us/concepts/onenote-branding" />
+    <Item text="OneNote-Inhalte abrufen" url="/en-us/concepts/onenote-get-content" />
 	<Item text="Öffnen der OneNote-Clients" url="/en-us/concepts/open_onenote_client" SEODescription="Öffnen Sie eine OneNote-Anwendung zu einer bestimmten Seite oder einem bestimmten Notizbuch." />
-	<Item text="Verwenden von Notiztags" url="/en-us/concepts/onenote-note-tags" />
-	<Item text="Fehlercodes" url="/en-us/concepts/onenote_error_codes" SEODescription="Suchen Sie die Fehlercodes, die von OneNote-APIs in Microsoft Graph zurückgegeben werden." />
-  <Item text="OneNote-Inhalte abrufen" url="/en-us/concepts/onenote-get-content" />
 	<Item text="Seiten erstellen" url="/en-us/concepts/onenote-create-page" />
 	<Item text="Aktualisieren von Seiteninhalten" url="/en-us/concepts/onenote_update_page" />
-	<Item text="Erstellen von absolut positionierten Elementen" url="/en-us/concepts/onenote-abs-pos" />
 	<Item text="Hinzufügen von Bildern, Videos und Dateien" url="/en-us/concepts/onenote_images_files" />
+	<Item text="Erstellen von absolut positionierten Elementen" url="/en-us/concepts/onenote-abs-pos" />
 	<Item text="Extrahieren von Daten" url="/en-us/concepts/onenote-extract-data" />
+	<Item text="Verwenden von Notiztags" url="/en-us/concepts/onenote-note-tags" />
+	<Item Label="RESSOURCEN" url="" />
 	<Item text="Eingabe- und Ausgabe-HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="Erfahren Sie mehr über Eingabe- und Ausgabe-HTML, wenn Sie OneNote-Seiteninhalt erstellen, aktualisieren oder analysieren." />
+	<Item text="Bewährte Methoden" url="/en-us/concepts/onenote_best_practices" SEODescription="Verwenden Sie bewährte Methoden bei der Arbeit mit OneNote-APIs in Microsoft Graph." />  <Item text="" url="/en-us/concepts/" />
+	<Item text="Brandingrichtlinien" url="/en-us/concepts/onenote-branding" />
+	<Item text="Fehlercodes" url="/en-us/concepts/onenote_error_codes" SEODescription="Suchen Sie die Fehlercodes, die von OneNote-APIs in Microsoft Graph zurückgegeben werden." />
   </Item>
   <Item text="Persönliche Kontakte" ProdTag="Outlook" url="/en-us/concepts/outlook-contacts-concept-overview" />
   <Item text="Berichte" url="/en-us/concepts/reportroot-concept-overview" />
@@ -2168,6 +2169,7 @@
   </Item>
    <Item text="Benachrichtigungen ändern" url="/en-us/api-reference/v1.0/resources/webhooks" SEOKeyword="Einblicke, Microsoft Graph-API, Benutzer-API" SEODescription="">
     <Item text="Abonnement" url="/en-us/api-reference/v1.0/resources/subscription" SEOKeyword="Einblicke, Microsoft Graph-API, Benutzer-API" SEODescription="">
+	  <Item text="Abonnement auflisten" url="/en-us/api-reference/v1.0/api/subscription_list" />
       <Item text="Abonnement abrufen" url="/en-us/api-reference/v1.0/api/subscription_get" SEOKeyword="Abonnements auflisten, Microsoft Graph-API, Webhoooks-API" SEODescription="Dient zum Abrufen einer Liste von Abonnements." />
       <Item text="Abonnement erstellen" url="/en-us/api-reference/v1.0/api/subscription_post_subscriptions" />
       <Item text="Abonnement aktualisieren" url="/en-us/api-reference/v1.0/api/subscription_update" />
