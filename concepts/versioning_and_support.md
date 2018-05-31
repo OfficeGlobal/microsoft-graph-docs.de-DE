@@ -41,7 +41,7 @@ Nachfolgend finden Sie Beispiele für abwärtskompatible Änderungen:
 Die folgenden Versionen der Microsoft Graph-API stehen derzeit zur Verfügung.
 
 ### <a name="beta-version"></a>Betaversion
-Die Microsoft Graph-API-Betaversion, die unter `https://graph.microsoft.com/beta` verfügbar gemacht wird, enthält Features, die sich derzeit in der Vorschau befinden. Dokumentation zur Beta-API finden Sie in der [Microsoft Graph-Beta-Endpunktreferenz](../api-reference/beta/beta-overview.md). Von Zeit zu Zeit ist mit wesentlichen Änderungen an der Betaversion zu rechnen. Verwenden Sie keine Produktionsabhängigkeit in Beta-APIs.
+Die Microsoft Graph-API-Betaversion, die unter `https://graph.microsoft.com/beta` verfügbar gemacht wird, enthält Features, die sich derzeit_** in der Vorschau befinden**_. Dokumentation zur Beta-API finden Sie in der [Microsoft Graph-Beta-Endpunktreferenz](../api-reference/beta/beta-overview.md). Von Zeit zu Zeit ist mit wesentlichen Änderungen an der Betaversion zu rechnen. Verwenden Sie keine Produktionsabhängigkeit in Beta-APIs.
 
 Wir übernehmen keine Garantie dafür, dass eine Betafunktion für die aktuelle Version höher gestuft wird. Wenn das Microsoft Graph-API-Team der Meinung ist, dass eine Betafunktion für die allgemeine Verfügbarkeit (GA) bereit ist, wird diese Funktion der neuesten aktuellen Version hinzugefügt. Wenn die Höherstufung der Funktion zu einer wesentlichen Änderung an der aktuellen Version führen würde, wird die Versionsnummer erhöht, und die neue Version wird die aktuelle Version.
 Unsere Entwickler-Community kann unter [UserVoice](https://officespdev.uservoice.com/) Featureanforderungen veröffentlichen, einschließlich Anforderungen für neue Features sowie Anforderungen zur Höherstufung vorhandener Beta-APIs in die aktuelle Version. 
@@ -56,6 +56,6 @@ Es gibt zurzeit keine veralteten Versionen von Microsoft Graph.
 
 ## <a name="terms-of-use"></a>Nutzungsbedingungen
 
-Durch Verwendung der Microsoft Graph-APIs stimmen Sie den [Nutzungsbedingungen](https://msdn.microsoft.com/de-DE/cc300389) zu. 
+Durch Verwendung der Microsoft Graph-APIs stimmen Sie den [Nutzungsbedingungen](../misc/terms-of-use.md) zu. 
 
 Ihr Feedback ist uns wichtig. Nehmen Sie auf [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest) Kontakt mit uns auf. Taggen Sie Ihre Fragen mit {MicrosoftGraph}.

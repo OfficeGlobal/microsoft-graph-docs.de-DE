@@ -1,10 +1,10 @@
 # <a name="add-custom-data-to-resources-using-extensions"></a>Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen
 
-Microsoft Graph stellt einen zentralen API-Endpunkt bereit, der Ihnen über verschiedene Ressourcen wie [user](../api-reference/v1.0/resources/user.md) und [message](../api-reference/v1.0/resources/message.md) Zugriff auf umfassende personenzentrierte Daten und Erkenntnisse ermöglicht. Jetzt können Sie Microsoft Graph um eigene Anwendungsdaten _**erweitern**_. Sie können Microsoft Graph-Ressourcen benutzerdefinierte Eigenschaften hinzufügen, ohne dass dafür ein externer Datenspeicher nötig wäre. 
+Microsoft Graph stellt einen zentralen API-Endpunkt bereit, der Ihnen über verschiedene Ressourcen wie [user](../api-reference/v1.0/resources/user.md) und [message](../api-reference/v1.0/resources/message.md) Zugriff auf umfassende personenzentrierte Daten und Erkenntnisse ermöglicht. Sie können auch Microsoft Graph um eigene Anwendungsdaten erweitern. Sie können Microsoft Graph-Ressourcen benutzerdefinierte Eigenschaften hinzufügen, ohne dass dafür ein externer Datenspeicher nötig wäre.
 
 So könnten Sie sich beispielsweise entscheiden, Ihre App schlank zu halten und App-spezifische Benutzerprofildaten in Microsoft Graph zu speichern, indem Sie die Ressource **user** erweitern. Alternativ könnten Sie den vorhandenen Benutzerprofilspeicher Ihrer App auch beibehalten und der Ressource **user** einfach einen App-spezifischen Speicherbezeichner hinzufügen.
 
-Microsoft Graph bietet zwei Typen von Erweiterungen. Wählen Sie den Erweiterungstyp aus, der Ihren Anwendungsanforderungen am besten entspricht:
+Microsoft Graph bietet zwei Arten von Erweiterungen. Wählen Sie den Erweiterungstyp aus, der Ihren Anwendungsanforderungen am besten entspricht:
 
 - **Offene Erweiterungen**: Dieser Erweiterungstyp ist ideal für die ersten Schritte mit Erweiterungen.
 - **Schemaerweiterungen**: Bei diesem Erweiterungstyp handelt es sich um einen flexibleren Mechanismus für Entwickler, die typisierte Daten speichern, ihr Schema erkennbar und gemeinsam nutzbar machen, Filteroptionen nutzen und später auch Autorisierung und die Überprüfung von Eingabedaten implementieren möchten.
@@ -13,7 +13,7 @@ Microsoft Graph bietet zwei Typen von Erweiterungen. Wählen Sie den Erweiterun
 
 ## <a name="supported-resources"></a>Unterstützte Ressourcen
 
-In der folgenden Tabelle sind die Ressourcen aufgeführt, die offene Erweiterungen und Schemaerweiterungen unterstützen und angeben, ob sie die allgemeine Verfügbarkeit (GA) erreicht haben (verfügbar sowohl in v1.0- und Beta-Endpunkten) oder sich in der Vorschau befinden (nur im Beta-Endpunkt verfügbar).  
+In der folgenden Tabelle sind die Ressourcen aufgeführt, die offene Erweiterungen und Schemaerweiterungen unterstützen und angeben, ob sie die allgemeine Verfügbarkeit (GA) erreicht haben (verfügbar sowohl in v1.0- und Beta-Endpunkten) oder sich in der Vorschau befinden (nur im Beta-Endpunkt verfügbar).
 
 |Ressource |Offene Erweiterungen |Schemaerweiterungen |
 |:------- |:------ |:------ |
@@ -28,16 +28,16 @@ In der folgenden Tabelle sind die Ressourcen aufgeführt, die offene Erweiterung
 | [Privater Kontakt](../api-reference/v1.0/resources/contact.md)| Allgemein verfügbar | Allgemein verfügbar |
 | [Benutzer](../api-reference/v1.0/resources/user.md) | Allgemein verfügbar | Allgemein verfügbar |
 
-Sie können Erweiterungen für alle diese Ressourcen verwenden, wenn Sie mit einem Geschäfts-, Schul- oder Unikonto angemeldet sind. Darüber hinaus können Sie Erweiterungen für die folgenden Ressourcen verwenden, wenn Sie mit einem persönlichen Konto angemeldet sind: **event**, **post**, **group**, **message**, **contact** und **user** 
+Sie können Erweiterungen für alle diese Ressourcen verwenden, wenn Sie mit einem Geschäfts-, Schul- oder Unikonto angemeldet sind. Darüber hinaus können Sie Erweiterungen für die folgenden Ressourcen verwenden, wenn Sie mit einem persönlichen Konto angemeldet sind: **event**, **post**, **group**, **message**, **contact** und **user**.
 
 ## <a name="open-extensions"></a>Offene Erweiterungen
 
-[Offene Erweiterungen](../api-reference/v1.0/resources/opentypeextension.md) (früher als Office 365-Datenerweiterungen bezeichnet) sind [offene Typen](http://www.odata.org/getting-started/advanced-tutorial/#openType), die eine flexible Möglichkeit zum direkten Hinzufügen nicht typisierter App-Daten zu Ressourceninstanzen bieten. 
+[Offene Erweiterungen](../api-reference/v1.0/resources/opentypeextension.md) (früher als Office 365-Datenerweiterungen bezeichnet) sind [offene Typen](http://www.odata.org/getting-started/advanced-tutorial/#openType), die eine flexible Möglichkeit zum direkten Hinzufügen nicht typisierter App-Daten zu Ressourceninstanzen bieten.
 
 Offene Erweiterungen und die zugehörigen benutzerdefinierten Daten sind über die Navigationseigenschaft **extensions** der Ressourceninstanz verfügbar.
-Die Eigenschaft **extensionName** ist die einzige _vordefinierte_ beschreibbare Eigenschaft einer offenen Erweiterung. Bei der Erstellung einer offenen Erweiterung müssen Sie der Eigenschaft **extensionName** einen Namen zuweisen, der innerhalb des Mandanten eindeutig ist. 
+Die Eigenschaft **extensionName** ist die einzige _vordefinierte_ beschreibbare Eigenschaft einer offenen Erweiterung. Bei der Erstellung einer offenen Erweiterung müssen Sie der Eigenschaft **extensionName** einen Namen zuweisen, der innerhalb des Mandanten eindeutig ist.
 
-Eine Möglichkeit hierfür ist die Verwendung eines umgekehrten DNS (Domain Name System)-Formats, das von _Ihrer eigenen Domäne_ abhängt, zum Beispiel `Com.Contoso.ContactInfo`. 
+Eine Möglichkeit hierfür ist die Verwendung eines umgekehrten DNS (Domain Name System)-Formats, das von _Ihrer eigenen Domäne_ abhängt, zum Beispiel `Com.Contoso.ContactInfo`.
 
 Verwenden Sie in Erweiterungsnamen auf keinen Fall die Microsoft-Domäne (`Com.Microsoft` oder `Com.OnMicrosoft`).
 
@@ -58,28 +58,26 @@ Beim Erstellen einer Schemaerweiterungsdefinition müssen Sie einen eindeutigen 
 
 Sie sehen diesen eindeutigen Namen in der **ID**, wo er als Name des komplexen Typs verwendet wird, der Ihre benutzerdefinierten Daten in der erweiterten Ressourceninstanz speichert.
 
-Anders als bei offenen Erweiterungen handelt es sich bei der Verwaltung von Schemaerweiterungsdefinitionen ([Auflisten](../api-reference/v1.0/api/schemaextension_list.md), [Erstellen](../api-reference/v1.0/api/schemaextension_post_schemaextensions.md), [Abrufen](../api-reference/v1.0/api/schemaextension_get.md), [Aktualisieren](../api-reference/v1.0/api/schemaextension_update.md) und [Löschen](../api-reference/v1.0/api/schemaextension_delete.md)) und der Verwaltung ihrer Daten (Hinzufügen, Abrufen, Aktualisieren und Löschen) um unterschiedliche Sätze von API-Vorgängen. 
+Anders als bei offenen Erweiterungen handelt es sich bei der Verwaltung von Schemaerweiterungsdefinitionen ([Auflisten](../api-reference/v1.0/api/schemaextension_list.md), [Erstellen](../api-reference/v1.0/api/schemaextension_post_schemaextensions.md), [Abrufen](../api-reference/v1.0/api/schemaextension_get.md), [Aktualisieren](../api-reference/v1.0/api/schemaextension_update.md) und [Löschen](../api-reference/v1.0/api/schemaextension_delete.md)) und der Verwaltung ihrer Daten (Hinzufügen, Abrufen, Aktualisieren und Löschen) um unterschiedliche Sätze von API-Vorgängen.
 
 Da Schemaerweiterungen als komplexe Typen in Instanzen der Zielressourcen zugänglich sind, können Sie wie folgt CRUD-Vorgänge auf die benutzerdefinierten Daten in einer Schemaerweiterung anwenden:
 
 - Sie können die `POST`-Methode der Ressource verwenden, um bei der Erstellung einer neuen Ressourceninstanz benutzerdefinierte Daten anzugeben. Beachten Sie, dass ein [bekanntes Problem](known_issues.md#creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time) für die Ressourcen **contact**, **event**, **message** und **post** vorhanden ist, für das Sie eine Schemaerweiterung über einen `PATCH`-Vorgang erstellen müssen.
 - Sie können die `GET`-Methode der Ressource verwenden, um die benutzerdefinierten Daten zu lesen.
 - Sie können die `PATCH`-Methode der Ressource verwenden, um einer vorhandenen Ressourceninstanz benutzerdefinierte Daten hinzuzufügen oder benutzerdefinierte Daten aus einer vorhandenen Ressourceninstanz zu löschen.
-- Sie können die `PATCH`-Methode der Ressource verwenden, um den komplexen Typ auf „null“ festzulegen und so die benutzerdefinierten Daten in der Ressourceninstanz zu löschen. 
+- Sie können die `PATCH`-Methode der Ressource verwenden, um den komplexen Typ auf „null“ festzulegen und so die benutzerdefinierten Daten in der Ressourceninstanz zu löschen.
 
 Beispiel für eine Schemaerweiterung: [Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen](extensibility_schema_groups.md)
 
-
 ### <a name="schema-extensions-lifecycle"></a>Lebenszyklus von Schemaerweiterungen
 
-Wenn Ihre App eine Schemaerweiterungsdefinition erstellt, wird sie als Besitzer dieser Schemaerweiterung markiert. 
+Wenn Ihre App eine Schemaerweiterungsdefinition erstellt, wird sie als Besitzer dieser Schemaerweiterung markiert.
 
 Die Besitzer-App kann anschließend einen PATCH-Vorgang auf die Erweiterungseigenschaft **status** anwenden, um die Erweiterung auf den jeweils gewünschten Lebenszyklusstatus zu setzen. Je nach dem aktuellen Status kann die Besitzer-App die Erweiterung möglicherweise aktualisieren oder löschen. Jegliche Aktualisierungen einer Schemaerweiterung sollten stets ausschließlich additiv und nicht destruktiv sein.
 
-
 |Status |Verhalten des Lebenszyklusstatus |
 |:-------------|:------------|
-| InDevelopment | <ul><li>Anfänglicher Status nach der Erstellung. Die Besitzer-App entwickelt die Schemaerweiterung noch. </li><li>In diesem Status kann nur die Besitzer-App Ressourceninstanzen mit dieser Schemadefinition erweitern, und das nur in dem Verzeichnis, in dem die Besitzer-App registriert ist. </li><li>Nur die Besitzer-App kann die Erweiterungsdefinition mit additiven Änderungen aktualisieren oder sie löschen. </li><li>Die Besitzer-App kann die Schemaerweiterung aus dem Status **InDevelopment** in den Status **Available** versetzen.</li></ul> |
+| InDevelopment | <ul><li>Anfänglicher Status nach der Erstellung. Die Besitzer-App entwickelt die Schemaerweiterung noch. </li><li>In diesem Status kann jede App Ressourceninstanzen mit dieser Schemadefinition erweitern, und das nur in dem Verzeichnis, in dem die Besitzer-App registriert ist. </li><li>Nur die Besitzer-App kann die Erweiterungsdefinition mit additiven Änderungen aktualisieren oder sie löschen. </li><li>Die Besitzer-App kann die Schemaerweiterung aus dem Status **InDevelopment** in den Status **Available** versetzen.</li></ul> |
 | Available | <ul><li>Die Schemaerweiterung kann von allen Apps in jedem beliebigen Mandanten verwendet werden. </li><li>Nachdem die Besitzer-App die Erweiterung auf **Available** festlegt, kann jede App benutzerdefinierte Daten zu Instanzen der in der Erweiterung angegebenen Ressourcentypen hinzufügen (vorausgesetzt, die App ist zum Zugriff auf die betreffende Ressource berechtigt). Die App kann benutzerdefinierte Daten bei der Erstellung einer neuen Instanz oder bei der Aktualisierung einer bereits vorhandenen Instanz zuweisen. </li><li>Nur die Besitzer-App kann die Erweiterungsdefinition mit additiven Änderungen aktualisieren. Die Erweiterungsdefinition kann in diesem Status von keiner App gelöscht werden. </li><li>Die Besitzer-App kann die Schemaerweiterung aus dem Status **Available** in den Status **Deprecated** versetzen.</li></ul> |
 | Deprecated | <ul><li>Die Schemaerweiterungsdefinition kann nicht mehr gelesen und auch nicht mehr geändert werden. </li><li>Die Erweiterung kann von keiner App angezeigt, aktualisiert, um neue Eigenschaften ergänzt oder gelöscht werden. </li><li>Apps können vorhandene _Eigenschaftswerte_ der Erweiterung jedoch weiterhin lesen, aktualisieren oder löschen. </li><li>Die Besitzer-App kann die Schemaerweiterung aus dem Status **Deprecated** zurück in den Status **Available** versetzen.</li></ul> |
 
@@ -99,7 +97,7 @@ Die folgenden Datentypen werden beim Definieren einer Eigenschaft in einer Schem
 
 ### <a name="azure-ad-directory-schema-extensions"></a>Azure AD-Verzeichnisschemaerweiterungen
 
-Azure AD unterstützt einen ähnlichen Erweiterungstyp namens [Verzeichnisschemaerweiterung](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions) für einige [directoryObject](../api-reference/v1.0/resources/directoryObject.md)-Ressourcen. Zur Erstellung und Verwaltung der Definitionen von Verzeichnisschemaerweiterungen müssen Sie die Azure AD Graph-API verwenden. Das Hinzufügen, Abrufen, Aktualisieren und Löschen von _Daten_ in den Eigenschaften dieser Erweiterungen ist jedoch auch über die Microsoft Graph-API möglich.
+Azure AD unterstützt einen ähnlichen Erweiterungstyp namens [Verzeichnisschemaerweiterung](https://msdn.microsoft.com/de-DE/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions) für einige [directoryObject-Ressourcen](../api-reference/v1.0/resources/directoryObject.md). Zur Erstellung und Verwaltung der Definitionen von Verzeichnisschemaerweiterungen müssen Sie die [Azure AD Graph-API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) verwenden. Das Hinzufügen, Abrufen, Aktualisieren und Löschen von _Daten_ in den Eigenschaften dieser Erweiterungen ist jedoch auch über die Microsoft Graph-API möglich.
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -110,12 +108,18 @@ Zusätzlich muss einer App die Berechtigung *Directory.AccessAsUser.All* gewähr
 ## <a name="data-limits"></a>Beschränkungen für Daten
 
 ### <a name="open-extension-limits"></a>Beschränkungen für offene Erweiterungen
+
 Die folgenden Beschränkungen gelten für Verzeichnisressourcen (z. B. **user**, **group**, **device**):
 
 - Jede offene Erweiterung kann bis zu 2 KB Daten enthalten (einschließlich der Erweiterungsdefinition selbst).
 - Eine Anwendung kann bis zu zwei offene Erweiterungen pro Ressourceninstanz hinzufügen.
 
+Die folgenden Grenzwerte gelten für Outlook-Ressourcen (z.B. **Nachricht**, **Ereignis** und **Kontakt**):
+
+- Jede offene Erweiterung ist in einer [benannten MAPI-Eigenschaft](https://msdn.microsoft.com/en-us/library/cc765864(v=office.15).aspx) gespeichert, die eine begrenzte Ressource in dem Postfach eines Benutzers darstellt. Weitere Informationen hierzu finden Sie unter [openTypeExtension-Ressourcentyp](../api-reference/v1.0/resources/opentypeextension.md).
+
 ### <a name="schema-extension-limits"></a>Beschränkungen für Schemaerweiterungen
+
 Eine Anwendung kann nicht mehr als fünf **Schemaerweiterungs**definitionen erstellen.
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
@@ -130,6 +134,6 @@ Bekannte Einschränkungen bei der Verwendung von Erweiterungen finden Sie im [Ab
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Office 365-Domänen](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+- [Office 365-Domänen](https://technet.microsoft.com/de-DE/library/office-365-domains.aspx)
 
 - [Hinzufügen und Überprüfen einer Domäne für einen Office 365-Mandanten](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
