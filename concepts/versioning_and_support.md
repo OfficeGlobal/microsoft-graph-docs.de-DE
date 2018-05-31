@@ -4,7 +4,7 @@ In diesem Artikel werden der Support und die Richtlinien für wesentliche Änder
 
 ## <a name="support-policy-and-deprecation-information"></a>Supportrichtlinie und Informationen zu veralteten Funktionen
 
-Microsoft Graph folgt der [Microsoft-Lebenszyklusrichtlinie](https://support.microsoft.com/de-DE/lifecycle). 
+Microsoft Graph folgt der [Microsoft-Lebenszyklusrichtlinie](https://support.microsoft.com/en-us/lifecycle). 
 
 Wenn neue Versionen der Microsoft Graph REST-APIs und Microsoft Graph-SDKs veröffentlicht werden, werden frühere Versionen eingestellt. Microsoft erklärt eine Version mindestens 24 Monate vor der Einstellung einer API oder eines SDKs als veraltet. 
 
@@ -34,7 +34,7 @@ Nachfolgend finden Sie Beispiele für abwärtskompatible Änderungen:
  - Änderungen an der Reihenfolge von Eigenschaften
  - Änderungen an der Länge oder am Format von verschlüsselten Zeichenfolgen, z. B. Ressourcen-IDs
 
->**Hinweis:** Die Liste von abwärtskompatiblen Änderungen wird im Laufe der Zeit aktualisiert. Wenn Sie Ihre eigenen Clientproxys (z. B. WCF-Clients) generieren, wird empfohlen, dass Ihre Clientanwendungen auf das Empfangen von Eigenschaften und abgeleiteten Typen vorbereitet sein sollten, die zuvor nicht vom Microsoft Graph-API-Dienst definiert wurden. Die Microsoft Graph-API befolgt die im Abschnitt [Modellversionsverwaltung](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) der [Microsoft REST-API-Richtlinien](https://github.com/microsoft/api-guidelines/) beschriebene Anleitung. 
+>**Hinweis:** Die Liste von abwärtskompatiblen Änderungen wird im Laufe der Zeit aktualisiert. Wenn Sie Ihre eigenen Clientproxys (z. B. WCF-Clients) generieren, wird empfohlen, dass Ihre Clientanwendungen auf das Empfangen von Eigenschaften und abgeleiteten Typen vorbereitet sein sollten, die zuvor nicht vom Microsoft Graph-API-Dienst definiert wurden. Die Microsoft Graph-API befolgt die im Abschnitt [Modellversionsverwaltung](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) der [Microsoft REST-API-Richtlinien](https://github.com/microsoft/api-guidelines/) beschriebene Anleitung. 
 
 ## <a name="versions"></a>Versionen
 
