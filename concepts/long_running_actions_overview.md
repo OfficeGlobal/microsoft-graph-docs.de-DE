@@ -3,15 +3,16 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 ms.topic: conceptual
-ms.openlocfilehash: 963d2b71b879c285a43378d07c1bfd755f150b9f
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 30f98afa7b75784b0ee2b9ec446c6389cc876949
+ms.sourcegitcommit: af8fdd5ea762fb54b7fbebb9a70bd942a56c6b7a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 05/25/2018
+ms.locfileid: "19473153"
 ---
 # <a name="working-with-long-running-actions-beta"></a>Arbeiten mit langen Aktionen (Beta)
 
-> **Wichtig:** Die APIs der /beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Die Abfrage einiger API-Antworten kann unbestimmte Zeit dauern.
 Anstatt zu warten, bis der Vorgang abgeschlossen ist und Sie eine Antwort erhalten, können Sie das lange ausgeführte Aktionsmuster von Microsoft Graph verwenden.

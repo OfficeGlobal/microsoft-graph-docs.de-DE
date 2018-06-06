@@ -32,7 +32,7 @@ Bekannte Probleme bei der Verwendung der Delta-Abfrage finden Sie im Abschnitt [
 
 ### <a name="policy"></a>Richtlinie
 
-Beim Erstellen und Benennen einer Office 365-Gruppe mit Microsoft Graph werden Office 365-Gruppenrichtlinien umgangen, die über Outlook Web App konfiguriert werden. 
+Beim Erstellen und Benennen einer Office 365-Gruppe mit Microsoft Graph werden Office 365-Gruppenrichtlinien umgangen, die über Outlook Web App konfiguriert werden.
 
 ### <a name="permissions-for-groups-and-microsoft-teams"></a>Berechtigungen für Gruppen und Microsoft Teams
 
@@ -104,12 +104,13 @@ GET \users('{id}')\calendars('{id}')\events
 Möglicherweise wird HTTP 500 mit dem Fehlercode `ErrorInternalServerTransientError` angezeigt. Der Fehler tritt aus folgendem Grund auf:
 
 - Bisher gibt es zwei Methoden zur Implementierung der Kalenderfreigabe, die zur Unterscheidung einmal als der „alte“ Implementierungsansatz und einmal als der „neue“ Implementierungsansatz bezeichnet werden.
-- Der neue Ansatz ist derzeit für die Kalenderfreigabe mit Berechtigungen zum Anzeigen oder Bearbeiten verfügbar, jedoch nicht mit  aber nicht mit Berechtigungen der Stellvertretung. 
-- Sie können die Kalender-REST-API verwenden, um freigegebene Kalender anzuzeigen oder freizugeben, aber nur, wenn die Kalender auf die **neue** Weise freigegebenen wurden. 
+- Der neue Ansatz ist derzeit für die Kalenderfreigabe mit Berechtigungen zum Anzeigen oder Bearbeiten verfügbar, jedoch nicht mit  aber nicht mit Berechtigungen der Stellvertretung.
+- Sie können die Kalender-REST-API verwenden, um freigegebene Kalender anzuzeigen oder freizugeben, aber nur, wenn die Kalender auf die **neue** Weise freigegebenen wurden.
 - Sie können die Kalender-REST-API nicht verwenden, um freigegebene Kalender (oder deren Ereignisse) anzuzeigen oder freizugeben, wenn die Kalender auf die **alte** Weise freigegebenen wurden.
 
 
-Wenn ein Kalender mit Berechtigungen zum Anzeigen oder Bearbeiten auf die alte Weise freigegeben wurde, können Sie dieses Problem umgehen und die Kalenderfreigabe für die Verwendung des neuen Ansatzes aktualisieren. Im Laufe der Zeit werden alle freigegebenen Kalender für die Verwendung des neuen Ansatzes automatisch in Outlook aktualisiert, einschließlich mit Berechtigungen der Stellvertretung freigegebener Kalender. 
+Wenn ein Kalender mit Berechtigungen zum Anzeigen oder Bearbeiten auf die alte Weise freigegeben wurde, können Sie dieses Problem umgehen und die Kalenderfreigabe für die Verwendung des neuen Ansatzes aktualisieren.
+Im Laufe der Zeit werden alle freigegebenen Kalender für die Verwendung des neuen Ansatzes automatisch in Outlook aktualisiert, einschließlich mit Berechtigungen der Stellvertretung freigegebener Kalender.
 
 Gehen Sie folgendermaßen vor, um einen freigegebenen Kalender für die Verwendung des neuen Ansatzes manuell zu aktualisieren:
 1.  Der Empfänger entfernt den Kalender, der zuvor für diesen freigegeben wurde.
@@ -132,7 +133,7 @@ Derzeit werden nur persönliche Kontakten unterstützt. Organisationskontakte we
 
 ### <a name="default-contacts-folder"></a>Standardordner für Kontakte
 
-In der `/v1.0`-Version enthält `GET /me/contactFolders` keinen Standardordner für Kontakte des Benutzers. 
+In der `/v1.0`-Version enthält `GET /me/contactFolders` keinen Standardordner für Kontakte des Benutzers.
 
 Es wird ein Update zur Verfügung gestellt. In der Zwischenzeit können Sie die folgende [list contacts](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/api/user_list_contacts)-Abfrage und die **parentFolderId**-Eigenschaft als Problemumgehung verwenden, um die ID des Standardordners für Kontakte abzurufen:
 
@@ -175,7 +176,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### <a name="the-comment-parameter-for-creating-a-draft"></a>Der comment-Parameter für das Erstellen eines Entwurfs
 
-Der comment-Parameter für das Erstellen eines Antwort- oder Weiterleitungsentwurfs ([createReply](../api-reference/v1.0/api/message_createreply.md), [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) wird nicht Teil des Textkörpers des resultierenden Nachrichtenentwurfs.  
+Der comment-Parameter für das Erstellen eines Antwort- oder Weiterleitungsentwurfs ([createReply](../api-reference/v1.0/api/message_createreply.md), [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) wird nicht Teil des Textkörpers des resultierenden Nachrichtenentwurfs.
 
 ## <a name="drives-files-and-content-streaming"></a>Laufwerke, Dateien und Streamen von Inhalten
 
@@ -183,16 +184,20 @@ Der comment-Parameter für das Erstellen eines Antwort- oder Weiterleitungsentwu
 
 ## <a name="query-parameter-limitations"></a>Einschränkungen für Abfrageparameter
 
-* **$expand**-Einschränkungen:
-    * Keine Unterstützung für `nextLink`.
-    * Keine Unterstützung für mehr als eine Erweiterungsebene.
-    * Keine Unterstützung mit zusätzlichen Parametern (**$filter**, **$select**).
 * Mehrere Namespaces werden nicht unterstützt.
 * GET-Anforderungen für `$ref` und Umwandlung wird für Benutzer, Gruppen, Geräte, Dienstprinzipale und Anwendungen nicht unterstützt.
 * `@odata.bind` wird nicht unterstützt.  Ein Entwickler kann daher `Accepted` oder `RejectedSenders` für eine Gruppe nicht ordnungsgemäß festlegen.
 * `@odata.id` ist bei Nicht-Aufnahmenavigationen (z. B. Nachrichten) nicht vorhanden, wenn minimale Metadaten verwendet werden.
-* Arbeitsauslastungsübergreifende Filter/Suche ist nicht verfügbar. 
-* Volltextsuche (unter Verwendung von **$search**) ist nur für einige Entitäten wie Nachrichten verfügbar.
+* `$expand`:
+  * Keine Unterstützung für `nextLink`.
+  * Keine Unterstützung für mehr als eine Erweiterungsebene.
+  * Keine Unterstützung mit zusätzlichen Parametern (`$filter`, `$select`).
+* `$filter`:
+  * Filter werden vom `/attachments`-Endpunkt nicht unterstützt. Falls vorhanden, wird der `$filter`-Parameter ignoriert.
+  * Arbeitsauslastungsübergreifende Filter werden nicht unterstützt.
+* `$search`:
+  * Volltextsuche ist nur für einige Entitäten wie Nachrichten verfügbar.
+  * Arbeitsauslastungsübergreifende Suche wird nicht unterstützt.
 
 ## <a name="delta-query"></a>Delta-Abfrage
 
@@ -211,7 +216,7 @@ Aktuelle Einschränkungen:
 * Das Aktualisieren von Apps ist auf Apps beschränkt, die nach dem anfänglichen Beta-Update registriert wurden.
 * Azure Active Directory-Benutzer können Apps registrieren und weitere Besitzer hinzufügen.
 * Unterstützung für OpenID Connect und OAuth-Protokolle.
-* Richtlinienzuweisungen zu einer App schlagen fehl. 
+* Richtlinienzuweisungen zu einer App schlagen fehl.
 * Vorgänge mit ownedObjects, die die appId erfordern, schlagen fehl (z. B. users/{id|userPrincipalName}/ownedObjects/{id}/...).
 
 In der Entwicklung:
@@ -235,7 +240,8 @@ Wenn Sie eine Instanz von Ressourcen des Typs **administrativeUnit**, **device**
 
 ### <a name="creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time"></a>Erstellen einer Ressourceninstanz und Hinzufügen von Schemaerweiterungsdaten zur gleichen Zeit
 
-Sie können während des Vorgangs zum Erstellen einer **contact**-, **event**-, **message**- oder **post**-Instanz nicht gleichzeitig eine Schemaerweiterung festlegen. Sie müssen zuerst die Ressourceninstanz erstellen und dann einen `PATCH` für die betreffende Instanz durchführen, um eine Schemaerweiterung und benutzerdefinierte Daten hinzuzufügen. 
+Sie können während des Vorgangs zum Erstellen einer **contact**-, **event**-, **message**- oder **post**-Instanz nicht gleichzeitig eine Schemaerweiterung festlegen.
+Sie müssen zuerst die Ressourceninstanz erstellen und dann einen `PATCH` für die betreffende Instanz durchführen, um eine Schemaerweiterung und benutzerdefinierte Daten hinzuzufügen.
 
 ### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>Grenzwert von 100 zulässigen Werten für Schemaerweiterungseigenschaften pro Ressourceninstanz.
 
