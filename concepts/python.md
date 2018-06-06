@@ -70,6 +70,7 @@ Nachfolgend finden Sie einige weitere Python-Beispiele, die veranschaulichen, wi
 * [Python-Authentifizierungsbeispiele für Microsoft Graph](https://github.com/microsoftgraph/python-sample-auth)
 * [Arbeiten mit paginierten Microsoft Graph-Antworten in Python](https://github.com/microsoftgraph/python-sample-pagination)
 * [Arbeiten mit offenen Graph-Erweiterungen in Python](https://github.com/microsoftgraph/python-sample-open-extensions)
+* [Verbinden einer Python-Web-App mit der Sicherheits-API](https://github.com/microsoftgraph/python-security-rest-sample)
 
 Wenn Sie nach einem bestimmten Beispiel suchen, teilen Sie uns das mit, indem Sie uns [ein Problem übermitteln](https://github.com/microsoftgraph/python-sample-auth/issues). Wir schätzen Ihr Feedback zu allen Microsoft Graph-Szenarien, die Sie in Python entwickeln möchten!
 
