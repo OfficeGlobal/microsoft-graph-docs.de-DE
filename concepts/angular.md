@@ -7,7 +7,7 @@ In der folgenden Abbildung ist die App dargestellt, die Sie erstellen.
 ![Die Web-App nach der Anmeldung mit der Schaltfläche „E-Mail senden“](./images/angular-connect-sample.png)
 
 
-**Sie möchten keine App erstellen?** Verwenden Sie für einen schnellen Einstieg den [Schnellstart Microsoft Graph](https://graph.microsoft.io/en-us/getting-started).
+**Sie möchten keine App erstellen?** Verwenden Sie für einen schnellen Einstieg den [Schnellstart Microsoft Graph](https://graph.microsoft.io/de-DE/getting-started).
 
 Zum Herunterladen einer Version des Connect-Beispiels, das den Endpunkt Azure AD verwendet, siehe [Microsoft Graph Connect-Beispiel für Angular JS](https://github.com/microsoftgraph/angular-connect-rest-sample/releases/tag/last_v1_auth).
 
@@ -16,7 +16,7 @@ Zum Herunterladen einer Version des Connect-Beispiels, das den Endpunkt Azure AD
 
 Für die ersten Schritte benötigen Sie: 
 
-- Ein [Microsoft-Konto](https://www.outlook.com/) oder ein [Geschäfts- oder Schulkonto](http://dev.office.com/devprogram)
+- Ein [Microsoft-Konto](https://www.outlook.com/) oder ein [Geschäfts- oder Schulkonto](https://docs.microsoft.com/de-DE/office/developer-program/office-365-developer-program-faq#account-types)
 - [Node.js with npm](https://nodejs.org/en/download/)
 - [Bower](https://bower.io)
 - Das [Microsoft Connect-Beispiel für AngularJS](https://github.com/microsoftgraph/angular-connect-sample). Für diese exemplarische Vorgehensweise verwenden Sie den Ordner **Startprojekt** in den Beispieldateien.
@@ -36,7 +36,7 @@ Registrieren Sie eine App im Microsoft App-Registrierungsportal. Dadurch werden 
 
 5. Wählen Sie unter **Plattformen** die Option **Plattform hinzufügen** > **Web** aus.
 
-6. Stellen Sie sicher, dass das Kontrollkästchen **Impliziten Fluss zulassen** aktiviert ist, und geben Sie *http://localhost:8080/* als Umleitungs-URI ein. 
+6. Vergewissern Sie sich, dass das Kontrollkästchen **Impliziten Fluss zulassen** aktiviert ist, und geben Sie als Umleitungs-URI *http://localhost:8080* ein. 
 
 7. Wählen Sie **Speichern** aus.
 
@@ -172,5 +172,5 @@ Die App ruft Microsoft Graph auf, um Benutzerinformationen abzurufen und eine E-
 
 
 ## <a name="see-also"></a>Siehe auch
-- [Azure AD v2.0-Protokolle](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0-Tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Azure AD v2.0-Protokolle](https://azure.microsoft.com/de-DE/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0-Tokens](https://azure.microsoft.com/de-DE/documentation/articles/active-directory-v2-tokens/)

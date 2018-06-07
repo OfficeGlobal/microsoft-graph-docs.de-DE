@@ -16,7 +16,7 @@ Zum Herunterladen einer Version des Connect-Beispiels, das den Endpunkt Azure AD
 
 Für die ersten Schritte benötigen Sie: 
 
-- Ein [Microsoft-Konto](https://www.outlook.com/) oder ein [Geschäfts- oder Schulkonto](http://dev.office.com/devprogram)
+- Ein [Microsoft-Konto](https://www.outlook.com/) oder ein [Geschäfts- oder Schulkonto](https://docs.microsoft.com/de-DE/office/developer-program/office-365-developer-program-faq#account-types)
 - [Node.js mit npm](https://nodejs.org/en/download/) 
 - Das [Microsoft Connect-Beispiel für Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample). Für diese exemplarische Vorgehensweise verwenden Sie den Ordner **Startprojekt** in den Beispieldateien.
 
@@ -193,7 +193,7 @@ Die App ruft Microsoft Graph auf, um Benutzerinformationen abzurufen und eine E-
 
         npm start
 
-1. Navigieren Sie in einem Browser zu *http://localhost:3000*, und wählen Sie die Schaltfläche **Mit Office 365 verbinden** aus.
+1. Navigieren Sie in einem Browser zu *http://localhost:3000*, und wählen Sie die Schaltfläche **Mit Office 365** verbinden aus.
 
 1. Melden Sie sich an, und erteilen Sie die erforderlichen Berechtigungen. 
 
