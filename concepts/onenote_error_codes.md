@@ -36,7 +36,7 @@ Das Konto des aktuellen Benutzers hat die Maximalanzahl an aktiven Anforderungen
 Der Dienst kann keine Seite im angeforderten Abschnitt erstellen, da der Abschnitt kennwortgeschützt ist.
 
 ### <a name="10005"></a>10005
-Die Anforderung enthält mehr als die Maximalanzahl an Bildtags, wobei das **data-render-src**-Attribut eine PDF enthält. Siehe [Hinzufügen von Bildern und Dateien](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files)
+Die Anforderung enthält mehr als die Maximalanzahl an Bildtags, wobei das **data-render-src**-Attribut eine PDF enthält. Siehe [Hinzufügen von Bildern und Dateien](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-images-files)
 
 ### <a name="10006"></a>10006
 Die OneNote-API konnte keine Seite im angegebenen Abschnitt erstellen, da dieser Abschnitt beschädigt ist.
@@ -142,7 +142,7 @@ Die angeforderte Eigenschaft ist nicht vorhanden.
 Sie haben eine Ressource angefordert, die nicht vorhanden ist.
 
 ### <a name="20103"></a>20103
-Die **expand**-Abfrage wird für diese Anforderung nicht unterstützt. Siehe [Unterstützte Zeichenfolge-Optionen für OData-Anfragen](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#query-options).
+Die **expand**-Abfrage wird für diese Anforderung nicht unterstützt. Siehe [Unterstützte Zeichenfolge-Optionen für OData-Anfragen](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-get-content#query-options).
 
 ### <a name="20104"></a>20104
 Die **pagelevel**-Abfrageoption wird nur unterstützt, wenn Sie eine Abfrage für die Seitensammlung in einem Abschnitt oder für eine bestimmte Seite ausführen. Beispiel:  
@@ -231,7 +231,7 @@ Ihre Anforderung gibt ein ungültiges Element als Ziel der PATCH-Aktion an. Wenn
 Die Anforderung gibt einen Entitätstyp an, der für den PATCH-Vorgang nicht unterstützt wird. Siehe [Aktualisieren von Seiteninhalt](../api-reference/v1.0/api/page_update.md).
 
 ### <a name="20136"></a>20136
-Ihre Anforderung enthält ein ungültiges oder fehlendes **data-render-src**- oder **data-render-method**-Attribut. Siehe [Extrahieren von Daten aus Bildschirmausschnitten](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data).
+Ihre Anforderung enthält ein ungültiges oder fehlendes **data-render-src**- oder **data-render-method**-Attribut. Siehe [Extrahieren von Daten aus Bildschirmausschnitten](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-extract-data).
 
 ### <a name="20137"></a>20137
 Die Zielseite unterstützt keine PATCH-Anforderungen.
@@ -240,20 +240,20 @@ Die Zielseite unterstützt keine PATCH-Anforderungen.
 Das Ziel in der PATCH-Anforderung unterstützt die angegebene **append**Aktion nicht. Siehe [Aktualisieren von Seiteninhalt](../api-reference/v1.0/api/page_update.md).
 
 ### <a name="20139"></a>20139
-Die Anforderung enthält einen ungültigen **data-tag**-Attributwert. Siehe [Verwenden von Notiztags](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags).
+Die Anforderung enthält einen ungültigen **data-tag**-Attributwert. Siehe [Verwenden von Notiztags](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-note-tags).
 
 ### <a name="20140"></a>20140
 Die Anforderung enthält einen ungültigen **data-tag**-Statuswert. Kontrollkästchen-Notiztags können den Status **completed** besitzen. Beispiel:
 ```html
     <p data-tag="to-do:completed">To-do note tag in completed state (checked box in the UI)</p>
 ```
-Siehe [Verwenden von Notiztags](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags).
+Siehe [Verwenden von Notiztags](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-note-tags).
 
 ### <a name="20141"></a>20141
 Der Zielelementtyp in der PATCH-Anforderung unterstützt die angegebene Aktion nicht. Siehe [Aktualisieren von Seiteninhalt](../api-reference/v1.0/api/page_update.md).
 
 ### <a name="20142"></a>20142
-Ihre Anforderung enthält einen **expand**-Ausdruck für ein übergeordnetes Element untergeordneter Entitäten oder ein untergeordnetes Element übergeordneter Entitäten, der nicht unterstützt wird. Siehe [Unterstützte Zeichenfolge-Optionen für OData-Anfragen](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#query-options).
+Ihre Anforderung enthält einen **expand**-Ausdruck für ein übergeordnetes Element untergeordneter Entitäten oder ein untergeordnetes Element übergeordneter Entitäten, der nicht unterstützt wird. Siehe [Unterstützte Zeichenfolge-Optionen für OData-Anfragen](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-get-content#query-options).
 
 ### <a name="20143"></a>20143
 Die OData-Abfrage ist ungültig.
@@ -265,13 +265,13 @@ Die Anforderung enthält einen **expand**-Ausdruck für eine Nicht-Navigationsei
 Der **select**- oder **expand**-Ausdruck in der Anforderung enthält einen ungültigen Term.
 
 ### <a name="20146"></a>20146
-Das `style="position:absolute"`-Attribut wurde für ein Element angegeben, aber das **body**-Element gibt `data-absolute-enabled="true"` nicht an, das jedoch für die Unterstützung der Positionierung erforderlich ist. Alle Positionseinstellungen werden ignoriert. Siehe [Erstellen von absolut positionierten Elementen](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos).
+Das `style="position:absolute"`-Attribut wurde für ein Element angegeben, aber das **body**-Element gibt `data-absolute-enabled="true"` nicht an, das jedoch für die Unterstützung der Positionierung erforderlich ist. Alle Positionseinstellungen werden ignoriert. Siehe [Erstellen von absolut positionierten Elementen](onenote-abs-pos.md).
 
 ### <a name="20147"></a>20147
-Das `style="position:absolute"`-Attribut ist für ein Element angegeben, das kein direkt untergeordnetes Element des **body**-Elemente ist, welches nicht unterstützt wird. Wenn das Element **div**, **img** oder **object** ist, muss es als untergeordnetes Element des Textkörpers angegeben werden; andernfalls werden die Positionseinstellungen ignoriert und die dazugehörigen Inhalte werden als absolut positioniertes div dargestellt. Siehe [Erstellen von absolut positionierten Elementen](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos).
+Das `style="position:absolute"`-Attribut ist für ein Element angegeben, das kein direkt untergeordnetes Element des **body**-Elemente ist, welches nicht unterstützt wird. Wenn das Element **div**, **img** oder **object** ist, muss es als untergeordnetes Element des Textkörpers angegeben werden; andernfalls werden die Positionseinstellungen ignoriert und die dazugehörigen Inhalte werden als absolut positioniertes div dargestellt. Siehe [Erstellen von absolut positionierten Elementen](onenote-abs-pos.md).
 
 ### <a name="20148"></a>20148
-Das `style="position:absolute"`-Attribut ist für einen nicht unterstützten Elementyp angegeben. Nur **div**-, **img**- und **object**-Elemente, die direkt untergeordnete Elemente des Seitentextes sind, unterstützten die Positionierung. Siehe [Erstellen von absolut positionierten Elementen](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos).
+Das `style="position:absolute"`-Attribut ist für einen nicht unterstützten Elementyp angegeben. Nur **div**-, **img**- und **object**-Elemente, die direkt untergeordnete Elemente des Seitentextes sind, unterstützten die Positionierung. Siehe [Erstellen von absolut positionierten Elementen](onenote-abs-pos.md).
 
 ### <a name="20149"></a>20149
 Die Anforderung gibt ein Zielelement an, das nicht gefunden werden kann.
@@ -315,14 +315,14 @@ Die Anwendung hat zu viele Anfragen im Auftrag eines Benutzers innerhalb eines k
 Weitere Informationen finden Sie unter [Drosselung von OneNote-API und wie Sie dies vermeiden](http://blogs.msdn.com/b/onenotedev/archive/2016/01/13/onenote-api-throttling-and-best-practices.aspx).
 
 ### <a name="20168"></a>20168
-Die in der Anfrage angegebene Video-Quelle wird nicht unterstützt. Eine aktuelle Liste finden Sie unter [Unterstützte Video-Websites](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files#videos).
+Die in der Anfrage angegebene Video-Quelle wird nicht unterstützt. Eine aktuelle Liste finden Sie unter [Unterstützte Video-Websites](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-images-files#videos).
 
 
 ## <a name="codes-from-30001-to-39999"></a>Codes von 30001 bis 39999
 Etwas stimmt nicht mit dem Benutzerkonto.
 
 ### <a name="30101"></a>30101
-Das Benutzerkonto hat das OneDrive-Kontingent überschritten. Siehe [OneDrive](https://onedrive.live.com/about/en-us/).
+Das Benutzerkonto hat das OneDrive-Kontingent überschritten. Siehe [OneDrive](https://onedrive.live.com/about/de-DE/).
 
 ### <a name="30102"></a>30102
 Es kann nichts mehr zum angeforderten Abschnitt hinzugefügt werden, da dieser seine maximale Größe ereicht hat.

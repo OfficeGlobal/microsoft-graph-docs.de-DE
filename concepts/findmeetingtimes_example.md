@@ -231,5 +231,7 @@ Es gibt Situationen, in denen nicht alle Teilnehmer an einer Besprechung teilneh
 
 Nachdem Sie Vorschläge für Besprechungszeiten erhalten haben, haben Sie folgende Möglichkeiten:
 
-1. [Ein Ereignis erstellen und als Besprechungsanfrage senden](../api-reference/v1.0/api/user_post_events.md) 
-2. Dem Ereignis [eine Anlage hinzufügen](../api-reference/v1.0/api/event_post_attachments.md)
+1. [Termin erstellen und als Besprechungsanfrage senden](../api-reference/v1.0/api/user_post_events.md)
+2. Dem Termin [eine Anlage hinzufügen](../api-reference/v1.0/api/event_post_attachments.md)
+
+In diesem Artikel erfahren Sie mehr über die [Integration mit Outlook-Kalender](outlook-calendar-concept-overview.md).

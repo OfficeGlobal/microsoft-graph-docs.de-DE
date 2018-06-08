@@ -6,15 +6,15 @@ In der folgenden Abbildung ist die App dargestellt, die Sie erstellen.
 
 ![Die Web-App mit den Schaltfläche "E-Mail-Adresse abrufen" und "E-Mail senden" ](images/aspnet-connect-sample.png "Die Web-App mit den Schaltfläche 'E-Mail-Adresse abrufen' und 'E-Mail senden'")
 
-Der [Azure AD Version 2.0-Endpunkt](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview) ermöglicht Benutzern, sich mit einem Microsoft-Konto (MSA) oder einem Geschäfts-, Schul- oder Unikonto anzumelden. Die App verwendet die [ASP.Net OpenID Connect OWIN Middleware](https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect/) und die [Microsoft Authentication Library (MSAL) für .NET](https://www.nuget.org/packages/Microsoft.Identity.Client) für die Anmeldung und die Token-Verwaltung.
+Der [Azure AD Version 2.0-Endpunkt](https://azure.microsoft.com/de-DE/documentation/articles/active-directory-appmodel-v2-overview) ermöglicht Benutzern, sich mit einem Microsoft-Konto (MSA) oder einem Geschäfts-, Schul- oder Unikonto anzumelden. Die App verwendet die [ASP.Net OpenID Connect OWIN Middleware](https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect/) und die [Microsoft Authentication Library (MSAL) für .NET](https://www.nuget.org/packages/Microsoft.Identity.Client) für die Anmeldung und die Token-Verwaltung.
 
-**Sie möchten keine App erstellen?** Verwenden Sie für einen schnellen Einstieg den [Microsoft Graph-Schnellstart](https://developer.microsoft.com/en-us/graph/quick-start). Beachten Sie auch, dass es eine [REST-Version dieses Beispiels](https://github.com/microsoftgraph/aspnet-connect-rest-sample) gibt.
+**Sie möchten keine App erstellen?** Verwenden Sie für einen schnellen Einstieg den [Microsoft Graph-Schnellstart](https://developer.microsoft.com/de-DE/graph/quick-start). Beachten Sie auch, dass es eine [REST-Version dieses Beispiels](https://github.com/microsoftgraph/aspnet-connect-rest-sample) gibt.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 Für die ersten Schritte benötigen Sie: 
 
-- Ein [Microsoft-Konto](https://www.outlook.com/) oder ein [Geschäfts- oder Schulkonto](http://dev.office.com/devprogram)
+- Ein [Microsoft-Konto](https://www.outlook.com/) oder ein [Geschäfts- oder Schulkonto](https://docs.microsoft.com/de-DE/office/developer-program/office-365-developer-program-faq#account-types)
 - Visual Studio 2015 
 - [Microsoft Graph Connect-Beispiel für ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-connect-sample). Sie verwenden den Ordner **Startprojekt** in den Beispieldateien.
 
@@ -37,9 +37,9 @@ In diesem Schritt registrieren Sie eine App im Microsoft App-Registrierungsporta
 
     Sie werden die Anwendungs-ID und das Kennwort verwenden, um die App zu konfigurieren. 
 
-6. Wählen Sie unter **Plattformen** die Option **Plattform hinzufügen** > ** Web** aus.
+6. Klicken Sie unter **Plattformen** auf **Plattform hinzufügen** > **Web**.
 
-7. Stellen Sie sicher, dass das Kontrollkästchen **Impliziten Fluss zulassen** aktiviert ist, und geben Sie *http://localhost:55065/* als Umleitungs-URI ein. 
+7. Vergewissern Sie sich, dass das Kontrollkästchen **Allow Implicit Flow** aktiviert ist, und geben Sie als Umleitungs-URI *http://localhost:55065/* ein. 
 
     Die Option **Impliziten Fluss zulassen** ermöglicht den OpenID Connect-Hybridfluss. Während der Authentifizierung ermöglicht dies der App, sowohl Anmeldeinformationen (das **id_token**) als auch Artefakte (in diesem Fall ein Autorisierungscode) abzurufen, den die App zum Abrufen eines Zugriffstokens verwendet.
 
@@ -53,7 +53,7 @@ In diesem Schritt registrieren Sie eine App im Microsoft App-Registrierungsporta
 
 3. Suchen Sie die App-Konfigurationsschlüssel im Element **AppSettings**. Ersetzen Sie die Platzhalterwerte ENTER_YOUR_CLIENT_ID und ENTER_YOUR_SECRET durch die Werte, die Sie soeben kopiert haben.
 
-Der Umleitung-URI ist die URL des Projekts, das Sie registriert haben. Die angeforderten [Berechtigungsbereiche](https://developer.microsoft.com/en-us/graph/docs/concepts/permission_scopes) ermöglichen der App das Abrufen der Benutzerprofilinformationen und das Senden einer E-Mail.
+Der Umleitung-URI ist die URL des Projekts, das Sie registriert haben. Die angeforderten [Berechtigungsbereiche](https://developer.microsoft.com/de-DE/graph/docs/concepts/permission_scopes) ermöglichen der App das Abrufen der Benutzerprofilinformationen und das Senden einer E-Mail.
 
 ## <a name="call-microsoft-graph"></a>Aufrufen von Microsoft Graph
 
@@ -338,7 +338,7 @@ Jetzt können Sie [die App ausführen](#run-the-app).
 
 ## <a name="see-also"></a>Siehe auch
 - [Microsoft Graph .NET Clientbibliothek](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
-- [Webanwendung mit Web-API-Authentifizierungsszenario](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api)
-- [Integrieren einer Microsoft-Identität und von Microsoft Graph in eine Webanwendung mithilfe von OpenID Connect](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)
-- [Azure AD v2.0-Protokolle](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0-Tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Webanwendung mit Web-API-Authentifizierungsszenario](https://azure.microsoft.com/de-DE/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api)
+- [Integrieren einer Microsoft-Identität und von Microsoft Graph in eine Webanwendung mithilfe von OpenID Connect](https://azure.microsoft.com/de-DE/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)
+- [Azure AD v2.0-Protokolle](https://azure.microsoft.com/de-DE/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0-Tokens](https://azure.microsoft.com/de-DE/documentation/articles/active-directory-v2-tokens/)

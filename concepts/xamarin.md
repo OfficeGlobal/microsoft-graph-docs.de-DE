@@ -16,7 +16,7 @@ Dies ist die App, die Sie erstellen.
 
 Für die ersten Schritte benötigen Sie: 
 
-- Ein [Microsoft-Konto](https://www.outlook.com/) oder ein [Geschäfts- oder Schulkonto](http://dev.office.com/devprogram)
+- Ein [Microsoft-Konto](https://www.outlook.com/) oder ein [Geschäfts- oder Schulkonto](https://docs.microsoft.com/de-DE/office/developer-program/office-365-developer-program-faq#account-types)
 - Visual Studio 2015 
 - [Xamarin für Visual Studio](https://www.xamarin.com/visual-studio)
 - Windows 10 (mit [aktiviertem Entwicklungsmodus](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx))
@@ -71,9 +71,9 @@ Wenn Sie das iOS-Projekt in diesem Beispiel ausführen möchten, benötigen Sie 
 
 6. Ersetzen Sie `ENTER_YOUR_CLIENT_ID` durch den Wert der Anwendungs-ID, die Sie beim Registrieren der App erhalten haben. Sie müssen `msal` unbedingt vor der Anwendungs-ID beibehalten. Der resultierende Zeichenfolgenwert sollte wie folgt aussehen: `<data android:scheme="msal[application id]" android:host="auth" />`.
 
-## <a name="send-an-email-with-microsoft-graph"></a>Senden einer E-Mail mit Microsoft Graph
+## <a name="send-an-email-with-microsoft-graph"></a>Senden einer E-Mail mit Microsoft Graph
 
-Öffnen Sie die Datei MailHelper.cs in Ihrem Startprojekt. Diese Datei enthält den Code, durch den eine E-Mail erstellt und gesendet wird. Er besteht aus einer einzigen Methode – ``ComposeAndSendMailAsync`` –, die eine POST-Anforderung konstruiert und an den Endpunkt **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail** sendet. 
+Öffnen Sie die Datei MailHelper.cs in Ihrem Startprojekt. Diese Datei enthält den Code, der E-Mails erstellt und sendet. Er besteht aus einer einzigen Methode (``ComposeAndSendMailAsync``), die eine POST-Anforderung erstellt und an den Endpunkt **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail** sendet. 
 
 Die Methode ``ComposeAndSendMailAsync`` verwendet drei Zeichenfolgenwerte – ``subject``, ``bodyContent`` und ``recipients`` –, die von der Datei "MainPage.xaml.cs" an sie übergeben werden. Die Zeichenfolgen ``subject`` und ``bodyContent`` werden zusammen mit allen anderen Benutzeroberflächenzeichenfolgen in der Datei „AppResources.resx“ gespeichert. Die Zeichenfolge ``recipients`` stammt aus dem Adressfeld in der App-Schnittstelle. 
 
@@ -431,9 +431,9 @@ Sie haben nun die drei erforderlichen Schritte für die Interaktion mit Microsof
 ## <a name="run-the-app"></a>Ausführen der App
 1. Wählen Sie das auszuführende Projekt aus. Wenn Sie die Option für die universelle Windows-Plattform auswählen, können Sie das Beispiel auf dem lokalen Computer ausführen. Wenn Sie das iOS-Projekt ausführen möchten, müssen Sie eine Verbindung zu einem [Mac herstellen, auf dem die Xamarin-Tools installiert](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/) sind. (Sie können diese Projektmappe auch in Xamarin Studio auf einem Mac öffnen und das Beispiel direkt dort ausführen.) Sie können den [Visual Studio-Emulator für Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx) verwenden, wenn Sie das Android-Projekt ausführen möchten. 
 
-    ![](images/SelectProject.png "Select project in Visual Studio")
+    ![](images/SelectProject.png "Auswählen eines Projekts in Visual Studio")
 
-2. Drücken Sie zum Erstellen und Debuggen F5. Führen Sie die Lösung aus, und melden Sie sich entweder mit Ihrem persönlichen Konto oder mit Ihrem Geschäfts- oder Schulkonto an.
+2. Drücken Sie F5 zum Erstellen und Debuggen. Führen Sie die Lösung aus, und melden Sie sich entweder mit Ihrem persönlichen Konto oder mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     > **Hinweis** Möglicherweise müssen Sie den Buildkonfigurations-Manager öffnen, um sicherzustellen, dass die Build- und Bereitstellungsschritte für das UWP-Projekt ausgewählt sind. 
 
 3. Melden Sie sich mit Ihrem persönlichen Konto oder mit Ihrem Geschäfts- oder Schulkonto an, und gewähren Sie die erforderlichen Berechtigungen.

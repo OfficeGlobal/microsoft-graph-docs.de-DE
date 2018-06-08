@@ -1,10 +1,10 @@
-# <a name="use-microsoft-graph-to-integrate-with-onenote"></a>Verwenden von Microsoft Graph für die Integration in OneNote
+# <a name="onenote-api-overview"></a>Übersicht über die OneNote-API
+
+OneNote ist ein digitales Notizbuch, mit dem Kunden Ideen und Notizen für zu Hause, Schule oder Arbeit durch Tippen, Skizzieren oder Sprechen im Web, auf dem Smartphone, Tablet oder Desktop aufzeichnen können. Sie können Notizen beliebig organisieren, zwischen Geräten wechseln und dort weitermachen, wo sie aufgehört haben. Zudem können sie Notizen in Echtzeit gemeinsam mit anderen Personen bearbeiten.
+
+## <a name="why-integrate-with-onenote"></a>Vorteile der Integration in OneNote
 
 Durch die Integration Ihrer Apps in OneNote können Sie Erfahrungen plattformübergreifend für Millionen von Nutzern weltweit bereitstellen. Mit Microsoft Graph können Sie auf Notizbücher, Abschnitte und Seiten in OneNote-Lösungen zugreifen, um Ihren Benutzern zu helfen, Ideen umzusetzen und Informationen zu ordnen.
-
-## <a name="why-create-onenote-apps"></a>Warum sollte ich OneNote-Apps erstellen?
-
-Sie können Microsoft Graph verwenden, um Notizen, Listen, Bilder, Dateien usw. in OneNote-Notizbüchern zu erstellen und verwalten.
 
 ### <a name="collect-and-organize-notes-and-ideas"></a>Erfassen und Organisieren von Notizen und Ideen  
 Verwenden Sie OneNote als Hilfsmittel zum Hinzufügen und Ordnen von Benutzerinhalten. Microsoft Graph vereinfacht das Schreiben von Apps, mit denen Studenten Notizen erstellen und recherchieren, Familien Pläne und Ideen teilen oder Einkäufer Bilder freigeben können. Ihre App sammelt die gewünschten Informationen, sendet sie an OneNote und hilft dann bei der Verwaltung dieser Informationen.
@@ -26,9 +26,38 @@ Im folgenden werden einige der am häufigsten verwendeten Anfragen für OneNote-
 
 |Vorgang|URL|
 |:--------|:--|
-|Abrufen meiner Notizbücher|[https://graph.microsoft.com/v1.0/me/onenote/notebooks](https://developer.microsoft.com/de-DE/graph/graph-explorer?request=me/onenote/notebooks&version=1.0)|
-|Abrufen meiner Abschnitte|[https://graph.microsoft.com/v1.0/me/onenote/sections](https://developer.microsoft.com/de-DE/graph/graph-explorer?request=me/onenote/sections&version=1.0)|
-|Abrufen meiner Seiten|[https://graph.microsoft.com/v1.0/me/onenote/pages](https://developer.microsoft.com/de-DE/graph/graph-explorer?request=me/onenote/pages&version=1.0)|
+|Abrufen meiner Notizbücher|[https://graph.microsoft.com/v1.0/me/onenote/notebooks](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/notebooks&version=1.0)|
+|Abrufen meiner Abschnitte|[https://graph.microsoft.com/v1.0/me/onenote/sections](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/sections&version=1.0)|
+|Abrufen meiner Seiten|[https://graph.microsoft.com/v1.0/me/onenote/pages](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/pages&version=1.0)|
+
+## <a name="learn-more-about-onenote-apis"></a>Weitere Informationen zu OneNote-APIs
+
+Werfen Sie einen genaueren Blick auf Microsoft Graph-APIs, um mehr über die OneNote-Funktionen zum Aktualisieren von Inhalten zu erfahren. Die Themen in der folgenden Liste zeigen Ihnen, wie Sie neue OneNote-Seiten erstellen und vorhandene Seiten mit neuem Inhalt aktualisieren. Außerdem lernen Sie bewährte Methoden zum Aktualisieren von OneNote-Notizbüchern mit Microsoft Graph kennen. 
+
+
+**Arbeiten mit OneNote**
+
+* [Verwenden der OneNote-REST-API](../api-reference/v1.0/resources/onenote-api-overview.md)
+* [Bewährte Methoden](onenote_best_practices.md)
+* [Brandingrichtlinien](onenote-branding.md)
+* [Öffnen der OneNote-Clients](open_onenote_client.md)
+* [Verwenden von Notiztags auf OneNote-Seiten](onenote-note-tags.md)
+* [Fehlercodes für OneNote-APIs in Microsoft Graph](onenote_error_codes.md)
+
+**Arbeiten mit OneNote-Seiten**
+
+* [Eingabe- und Ausgabe-HTML auf OneNote-Seiten](onenote_input_output_html.md)
+* [Abrufen von OneNote-Inhalten und -Strukturen mit Microsoft Graph](onenote-get-content.md)
+* [Erstellen von OneNote-Seiten](onenote-create-page.md)
+* [Aktualisieren von OneNote-Seiteninhalten](onenote_update_page.md)
+
+**Arbeiten mit OneNote-Seiteninhalt**
+
+* [Erstellen von absolut positionierten Elementen auf OneNote-Seiten](onenote-abs-pos.md)
+* [Hinzufügen von Bildern, Videos und Dateien zu OneNote-Seiten](onenote_images_files.md)
+* [Verwenden von div-Tags der OneNote-API zum Extrahieren von Daten aus Erfassungen](onenote-extract-data.md)
+
+
 
 ## <a name="explore-the-onenote-apis"></a>Erkunden Sie die OneNote-APIs
 Verwenden Sie den [Microsoft Graph-Tester](https://developer.microsoft.com/de-DE/graph/graph-explorer), um die OneNote-APIs mit Ihren eigenen OneNote-Notizbüchern auszuprobieren.
@@ -36,13 +65,3 @@ Verwenden Sie den [Microsoft Graph-Tester](https://developer.microsoft.com/de-DE
 Um OneNote-API-Aufrufe über den Graph-Explorer zu tätigen, wählen Sie **Mehr Beispiele anzeigen** in der Spalte auf der linken Seite aus. Schalten Sie OneNote über das Menü **Ein**. Zudem müssen Sie die entsprechenden Berechtigungen aktivieren. Wählen Sie unter Ihrem Kontonamen im Menü auf der linken Seite **Berechtigungen ändern** aus. Weitere Informationen über OneNote-Berechtigungen finden Sie unter [Notizenberechtigungen](permissions_reference.md#notes-permissions).
 
 Hinweise zu den ersten Schritten mit OneNote-APIs in Microsoft Graph finden Sie unter [Referenzinhalte für OneNote](../api-reference/v1.0/resources/onenote.md).
-
-## <a name="see-also"></a>Siehe auch
-
-* [Brandingrichtlinien](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-branding)
-* [Abrufen von OneNote-Inhalt und -Struktur](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-get-content)
-* [Hinzufügen von Bildern, Videos und Dateien](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-images-files)
-* [Erstellen von absolut positionierten Elementen](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-abs-pos)
-* [Extrahieren von Daten](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-extract-data)
-* [Verwenden von Notiztags](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-note-tags)
-
