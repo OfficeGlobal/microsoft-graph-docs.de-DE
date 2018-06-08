@@ -39,6 +39,32 @@ Wenn der angemeldete Benutzer ein Gastbenutzer ist, kann er abhängig von den ei
 Mit den entsprechenden Berechtigungen kann die App die Profile von Benutzern oder Gruppen lesen, die über Links in Navigationseigenschaften abgerufen werden, beispielsweise `/users/{id}/directReports` oder `/groups/{id}/members`.
 
 
+## <a name="bookings-permissions"></a>Bookings-Berechtigungen
+
+#### <a name="delegated-permissions"></a>Delegierte Berechtigungen
+
+|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Bookings.Read.All_ |  Ermöglicht einer App Lesezugriff auf Bookings-Termine, Unternehmen, Kunden, Dienstleistungen und Mitarbeiter im Namen des angemeldeten Benutzers. | Vorgesehen für schreibgeschützt Anwendungen. Ein typischer Zielbenutzer ist der Kunde eines Unternehmens, das Termine vereinbart. | Nein |
+| _Bookings.ReadWrite.Appointments_ | Ermöglicht einer App Lese- und Schreibzugriff auf Bookings-Termine und Kunden. Ermöglicht darüber hinaus den Lesezugriff auf Unternehmen, Dienstleistungen und Mitarbeiter im Namen des angemeldeten Benutzers. | Vorgesehen für Terminplanungsanwendungen, die Termine und Kunden bearbeitet. Grundlegende Informationen zum Unternehmen mit Terminvergabe oder seine Dienstleistungen und Mitarbeiter können nicht geändert werden. Ein typischer Zielbenutzer ist der Kunde eines Unternehmens, das Termine vereinbart.| Nein |
+| _Bookings.ReadWrite.All_ | Ermöglicht einer App Lese- und Schreibzugriff auf Bookings-Termine, Unternehmen, Kunden, Dienstleistungen und Mitarbeiter im Namen des angemeldeten Benutzers. Ermöglicht nicht das Erstellen, Löschen oder Veröffentlichen von Unternehmen mit Bookings. | Vorgesehen für Verwaltungsanwendungen, die vorhandene Unternehmen, deren Dienstleistungen und Mitarbeiter bearbeiten. Ermöglicht nicht das Erstellen, Löschen oder Ändern des Veröffentlichungsstatus eines Unternehmens mit Terminvergabe. Der typische Zielbenutzer ist ein Support-Mitarbeiter eines Unternehmens.| Nein |
+| _Bookings.Manage_ | Ermöglicht einer App Lese- und Schreibzugriff sowie die Verwaltung von Bookings-Terminen, Unternehmen, Kunden, Dienstleistungen und Mitarbeitern im Namen des angemeldeten Benutzers.  | Ermöglicht der App den Vollzugriff. <br>Vorgesehen für eine vollständige Verwaltungsoberfläche. Der typische Zielbenutzer ist Administrator in einem Unternehmen.| Nein |
+
+#### <a name="application-permissions"></a>Anwendungsberechtigungen
+
+Keine.
+
+### <a name="example-usage"></a>Verwendungsbeispiel
+
+#### <a name="delegated"></a>Delegiert
+
+* _Bookings.Read.All_: Abrufen der ID und der Namen der Sammlung von Bookings-Unternehmen, die für einen Mandanten erstellt wurde (`GET /bookingBusinesses`).
+* _Bookings.ReadWrite.Appointments_: Erstellen eines Termins für einen Service bei einem Bookings-Unternehmen (`POST /bookingBusinesses/{id}/appointments`).
+* _Bookings.ReadWrite.All_: Erstellen eines neuen Service für das angegebene Bookings-Unternehmen (`POST /bookingBusinesses/{id}/services`).
+* _Bookings.Manage_: Bereitstellen der Terminvergabeseite dieses Unternehmens für externe Kunden (`POST /bookingBusinesses/{id}/publish`).
+
+---
+
 ## <a name="calendars-permissions"></a>Kalenderberechtigungen
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
@@ -454,7 +480,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 | _Mail.Send_ |    E-Mails als Benutzer senden | Die App kann E-Mails im Namen der Benutzer in der Organisation zu senden. | Nein |
 | _Mail.Send.Shared_ |    Senden von E-Mails im Auftrag von anderen Benutzern | Die App kann E-Mails als angemeldeter Benutzer senden, einschließlich Versand im Namen anderer Benutzer. | Nein |
 | _MailboxSettings.Read_ |  Postfacheinstellungen des Benutzers lesen | Die App kann die Postfacheinstellungen des Benutzers lesen. Umfasst nicht die Berechtigung zum Senden von E-Mails. | Nein |
-| _MailboxSettings.ReadWrite_ |  Benutzerpostfacheinstellungen lesen und schreiben | Die App kann die Postfacheinstellungen des Benutzers erstellen, lesen, aktualisieren und löschen. Umfasst nicht die Berechtigung zum Senden von E-Mails. | Nein |
+| _MailboxSettings.ReadWrite_ |  Benutzerpostfacheinstellungen lesen und schreiben | Die App kann die Postfacheinstellungen des Benutzers erstellen, lesen, aktualisieren und löschen. Enthält keine Berechtigung zum direkten Senden von E-Mail-Nachrichten, jedoch kann die App Regeln erstellen, die Nachrichten weiterleiten oder umleiten kann. | Nein |
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
@@ -659,6 +685,35 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 ---
 
+## <a name="security-permissions"></a>Sicherheitsberechtigungen
+
+#### <a name="delegated-permissions"></a>Delegierte Berechtigungen
+
+|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _SecurityEvents.Read.All_        |  Lesen von Sicherheitsereignissen der Organisation | Ermöglicht der App, die Sicherheitsereignisse Ihrer Organisation im Namen des angemeldeten Benutzers zu lesen. | Ja  |
+| _SecurityEvents.ReadWrite.All_   | Lesen und Aktualisieren von Sicherheitsereignissen der Organisation | Ermöglicht der App, die Sicherheitsereignisse Ihrer Organisation im Namen des angemeldeten Benutzers zu lesen. Ermöglicht der App zudem, die bearbeitbaren Eigenschaften in Sicherheitsereignissen im Namen des angemeldeten Benutzers zu aktualisieren. | Ja  |
+
+#### <a name="application-permissions"></a>Anwendungsberechtigungen
+
+|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _SecurityEvents.Read.All_        |  Lesen von Sicherheitsereignissen der Organisation | Ermöglicht der App das Lesen von Sicherheitsereignissen der Organisation. | Ja  |
+| _SecurityEvents.ReadWrite.All_   | Lesen und Aktualisieren von Sicherheitsereignissen der Organisation | Ermöglicht der App das Lesen von Sicherheitsereignissen der Organisation. Ermöglicht es der App zudem, die bearbeitbaren Eigenschaften in Sicherheitsereignissen zu aktualisieren. | Ja  |
+
+### <a name="remarks"></a>Bemerkungen
+
+Sicherheitsberechtigungen gelten nur für Geschäfts-, Schul- oder Unikonten.
+
+### <a name="example-usage"></a>Verwendungsbeispiel
+
+#### <a name="delegated-and-application"></a>Delegiert und Anwendung
+
+- _SecurityEvents.Read.All_: Lesen der Liste aller Sicherheitswarnungen von allen lizenzierten Sicherheitsanbietern Ihres Mandanten (`GET /beta/security/alerts`)
+- _SecurityEvents.ReadWrite.All_: Aktualisieren oder Lesen der Sicherheitswarnungen von allen lizenzierten Sicherheitsanbietern Ihres Mandanten (`PATCH /beta/security/alerts/{id}`)
+
+---
+
 ## <a name="sites-permissions"></a>Websiteberechtigungen
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
@@ -766,11 +821,13 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
 |:----------------|:------------------|:-------------|:-----------------------|
 | _User.Read_       |    Anmelden und Benutzerprofil lesen | Damit können Benutzer sich bei der App anmelden, und die App kann das Profil von angemeldeten Benutzern lesen. Die App kann auch grundlegende Unternehmensinformationen von angemeldeten Benutzern lesen.| Nein |
-| _User.ReadWrite_ |    Lese- und Schreibzugriff auf Benutzerprofile | Die App kann Ihr Profil lesen. Darüber hinaus kann die App Ihre Profilinformationen in Ihrem Namen aktualisieren. | Nein |
-| _User.ReadBasic.All_ |    Grundlegende Profile aller Benutzer lesen | Ermöglicht der App, einen grundlegenden Satz von Profileigenschaften anderer Benutzer in Ihrer Organisation im Namen des angemeldeten Benutzers zu lesen. Dazu gehören der Anzeigename, der Vor-und Nachname, die E-Mail-Adresse und das Foto. | Nein |
+| _User.ReadWrite_ |    Lese- und Schreibzugriff auf Benutzerprofile | Ermöglicht der App, das vollständige Profil des angemeldeten Benutzers zu lesen. Darüber hinaus kann die App die Profilinformationen des angemeldeten Benutzers in seinem Namen aktualisieren. | Nein |
+| _User.ReadBasic.All_ |    Grundlegende Profile aller Benutzer lesen | Ermöglicht der App, einen grundlegenden Satz von Profileigenschaften anderer Benutzer in Ihrer Organisation im Namen des angemeldeten Benutzers zu lesen. Dazu gehören der Anzeigename, der Vor-und Nachname, die E-Mail-Adresse, Durchwahlen und Foto. Ermöglicht der App auch, das vollständige Profil des angemeldeten Benutzers zu lesen. | Nein |
 | _User.Read.All_  |     Vollständige Profile aller Benutzer lesen           | Ermöglicht der App, den vollständigen Satz von Profileigenschaften, Berichten und Vorgesetzten von anderen Benutzern in Ihrer Organisation im Namen des angemeldeten Benutzers zu lesen. | Ja |
 | _User.ReadWrite.All_ |     Lese- und Schreibzugriff auf vollständige Profile aller Benutzer | Ermöglicht der App, den vollständigen Satz von Profileigenschaften, Berichten und Vorgesetzten von anderen Benutzern in Ihrer Organisation im Namen des angemeldeten Benutzers zu lesen und zu schreiben. Ermöglicht der App außerdem, im Namen des angemeldeten Benutzers Benutzer zu erstellen und zu löschen sowie Benutzerkennwörter zurückzusetzen. | Ja |
 | _User.Invite.All_  |     Gastbenutzer zur Organisation einladen | Ermöglicht der App, Gastbenutzer im Namen des angemeldeten Benutzers zu Ihrer Organisation einzuladen. | Ja |
+| _User.Export.All_       |    Daten des Benutzers exportieren | Ermöglicht der App, die Daten eines Benutzers im Unternehmen zu exportieren. Dies muss von einem Unternehmensadministrator ausgeführt werden.| Ja |
+
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
@@ -779,6 +836,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 | _User.Read.All_ |    Lesezugriff auf vollständige Profile aller Benutzer | Ermöglicht der App, den vollständigen Satz von Profileigenschaften, Gruppenmitgliedschaften, Berichte und Vorgesetzte von anderen Benutzern in Ihrer Organisation ohne angemeldeten Benutzers zu lesen.| Ja |
 | _User.ReadWrite.All_ |   Lese- und Schreibzugriff auf vollständige Profile aller Benutzer | Ermöglicht der App, den vollständigen Satz von Profileigenschaften, Gruppenmitgliedschaften, Berichten und Vorgesetzten von anderen Benutzern in Ihrer Organisation ohne einen angemeldeten Benutzer zu lesen und zu schreiben.  Ermöglicht der App außerdem, Benutzer zu erstellen, die kein Administrator sind. Ermöglicht nicht das Zurücksetzen von Benutzerkennwörtern. | Ja |
 | _User.Invite.All_  |     Gastbenutzer zur Organisation einladen | Ermöglicht der App, Gastbenutzer ohne einen angemeldeten Benutzer zu Ihrer Organisation einzuladen. | Ja |
+| _User.Export.All_       |    Daten des Benutzers exportieren | Ermöglicht der App, die Daten eines Benutzers im Unternehmen zu exportieren, ohne dass der Benutzer angemeldet sein muss.| Ja |
 
 ### <a name="remarks"></a>HinwBemerkungeneise
 
@@ -863,6 +921,7 @@ In diesem Abschnitt werden einige gängige Szenarios für [user](../api-referenc
 | Die App möchte das vollständige Benutzerprofil für den angemeldeten Benutzer lesen und schreiben.   | _User.ReadWrite_ | Lese- und Schreibzugriff auf Benutzerprofile |
 | Die App möchte das vollständige Benutzerprofil aller Benutzer lesen und schreiben.    | _User.ReadWrite.All_ | Lese- und Schreibzugriff auf vollständige Profile aller Benutzer |
 | Die App möchte Dateien, E-Mails und Kalenderinformationen für den angemeldeten Benutzer lesen und schreiben.    | _User.ReadWrite_, _Files.ReadWrite_, _Mail.ReadWrite_, _Calendars.ReadWrite_  |  Lese- und Schreibzugriff auf Benutzerprofil, Lese- und Schreibzugriff auf Benutzerprofil, Lese- und Schreibzugriff auf Benutzer-E-Mails, Vollzugriff auf Benutzerkalender |
+| Die App möchte eine Datenrichtlinien-Verarbeitungsanforderung zum Exportieren der persönlichen Daten eines Benutzers senden | _User.Export.All_ | Exportieren der persönlichen Daten eines Benutzers. |
    
 
 ### <a name="access-scenarios-on-the-group-resource"></a>Zugriffsszenarios für die Group-Ressource
@@ -874,3 +933,30 @@ In diesem Abschnitt werden einige gängige Szenarios für [user](../api-referenc
 | Die App möchte alle Inhalte in allen Office 365-Gruppen lesen und schreiben, einschließlich Dateien und Unterhaltungen.  Außerdem muss die App Gruppenmitgliedschaften anzeigen und in der Lage sein, Gruppenmitgliedschaften zu aktualisieren (wenn Besitzer).  |   _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Lese- und Schreibzugriff auf alle Gruppen, Bearbeiten oder Löschen von Artikeln in allen Websitesammlungen |
 | Die App möchte eine Office 365-Gruppe ermitteln (suchen). Der Benutzer kann eine bestimmte Gruppe suchen und aus der Aufzählungsliste eine Gruppe auswählen, damit der Benutzer der Gruppe beitreten kann.     | _Group.ReadWrite.All_ | Schreib-/Lesezugriff auf alle Gruppen|
 | Die App möchte über AAD Graph eine Gruppe erstellen. |   _Group.ReadWrite.All_ | Schreib-/Lesezugriff auf alle Gruppen|
+
+## <a name="user-activity-permissions"></a>Berechtigungen für Benutzeraktivitäten
+
+#### <a name="delegated-permissions"></a>Delegierte Berechtigungen
+
+|Berechtigung    |Anzeigezeichenfolge   |Beschreibung |Administratorzustimmung erforderlich |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _UserActivity.ReadWrite.CreatedByApp_ |Lesen und Schreiben der App-Aktivität in den Aktivitätsfeed der Benutzer |Ermöglicht der App, die Aktivitäten des angemeldeten Benutzers in der App zu lesen und eine Bericht zu erstellen. |Nein |
+
+#### <a name="delegated-permissions"></a>Delegierte Berechtigungen
+Keine.
+
+### <a name="remarks"></a>Bemerkungen
+*UserActivity.ReadWrite.CreatedByApp* gilt sowohl für Microsoft- als auch Geschäfts-, Schul- und Unikonten. 
+ 
+Die *CreatedByApp*-Einschränkung, die dieser Berechtigung zugeordnet ist, gibt an, dass der Dienst die implizite Filterung auf die Ergebnisse basierend auf der Identität der aufrufenden Anwendung anwendet, entweder der MSA-App-ID oder einem Satz von App-IDs, die für eine plattformübergreifende Anwendungsidentität konfiguriert sind. 
+
+### <a name="example-usage"></a>Verwendungsbeispiel
+
+#### <a name="delegated"></a>Delegiert
+* _UserActivity.ReadWrite.CreatedByApp_: Abrufen einer Liste der letzten eindeutigen Benutzeraktivitäten basierend auf den zugehörigen Verlaufselementen, die im letzten Tag veröffentlicht wurden. (GET /me/activities/recent).
+* _UserActivity.ReadWrite.CreatedByApp_: Veröffentlichen oder Aktualisieren einer Benutzeraktivität, die vom Benutzer der Anwendung möglicherweise fortgesetzt wird. (PUT /me/activities/%2Farticle%3F12345).
+*   _UserActivity.ReadWrite.CreatedByApp_: Veröffentlichen oder Aktualisieren eines Verlaufselements für eine bestimmte Benutzeraktivität, um den Zeitraum des Benutzereinsatzes darzustellen. (PUT /me/activities/{id}/historyItems/{id}).
+*   _UserActivity.ReadWrite.CreatedByApp_: Löschen einer Benutzeraktivität als Reaktion auf eine vom Benutzer ausgegebenen Anforderung oder zum Entfernen ungültiger Daten. (DELETE /me/activities/{id}).
+*   _UserActivity.ReadWrite.CreatedByApp_: Löschen eines Verlaufselements als Reaktion auf eine vom Benutzer ausgegebenen Anforderung oder zum Entfernen ungültiger Daten. (DELETE /me/activities/{id}/historyItems/{id}).
+
+<br/>
