@@ -5110,7 +5110,7 @@
           <Item text="Besitzer zuweisen" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="Besitzer erstellen, Microsoft Graph-API, Anwendungs-API" SEODescription="Verwenden Sie diese API zum Erstellen eines neuen Besitzers." />
           <Item text="Erweiterungseigenschaften auflisten" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="Erweiterungseigenschaften auflisten, Microsoft Graph-API, Anwendungs-API" SEODescription="Dient zum Abrufen einer Liste von Erweiterungseigenschaftsobjekten." />
         </Item>
-	  <Item text="Überwachungsprotokolle" url="/en-us/api-reference/beta/resources/directoryaudit">
+	  <Item text="Überwachungsprotokolle" url="/en-us/api-reference/beta/resources/azure_ad_auditlog_overview">
 			<Item text="Verzeichnisüberwachung" url="/en-us/api-reference/beta/resources/directoryaudit" SEOKeyword="directoryAudit-Objekt, Microsoft Graph-API, Azure AD, Überwachungsprotokolle" SEODescription="">
 			<Item text="Verzeichnisüberprüfungen auflisten" url="/en-us/api-reference/beta/api/directoryaudit_list" SEOKeyword="Überwachungsprotokoll-API, Microsoft Graph-API, Azure AD, Überwachungsprotokolle" SEODescription="API zum Zurückgeben einer Liste von directoryAudit-Objekten." />
 			<Item text="Verzeichnisüberwachung abrufen" url="/en-us/api-reference/beta/api/directoryaudit_get" SEOKeyword="Überwachungsprotokoll-API, Microsoft Graph-API, Azure AD, Überwachungsprotokolle" SEODescription="API zum Zurückgeben eines directoryAudit-Objekts." />
