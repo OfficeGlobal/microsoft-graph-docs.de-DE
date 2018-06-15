@@ -1689,6 +1689,7 @@
       <Item text="Gelöschte Elemente auflisten" url="/en-us/api-reference/v1.0/api/directory_deleteditems_list" />
       <Item text="Element endgültig löschen" url="/en-us/api-reference/v1.0/api/directory_deleteditems_delete" />
       <Item text="Gelöschtes Element wiederherstellen" url="/en-us/api-reference/v1.0/api/directory_deleteditems_restore" />
+      <Item text="Gelöschte Elemente auflisten, die im Besitz des Benutzers sind" url="/en-us/api-reference/v1.0/api/directory_deleteditems_user_owned" />
     </Item>
     <Item text="Gerät" url="/en-us/api-reference/v1.0/resources/device" SEOKeyword="Gerät-API, Microsoft Graph-API, Gerät-API" SEODescription="Stellt ein Gerät dar, das im Directory registriert ist. Erbt von DirectoryObject.">
       <Item text="Geräte auflisten" url="/en-us/api-reference/v1.0/api/device_list" SEOKeyword="Geräte auflisten, Microsoft Graph-API, Gerät-API" SEODescription="Dient zum Abrufen einer Liste von Geräteobjekten." />
@@ -5129,7 +5130,7 @@
         <Item text="Gelöschte Elemente auflisten" url="/en-us/api-reference/beta/api/directory_deleteditems_list" />
         <Item text="Element endgültig löschen" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
         <Item text="Gelöschtes Element wiederherstellen" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
-		<Item text="Gelöschte Elemente von Besitzer zu Benutzer auflisten" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
+        <Item text="Gelöschte Elemente auflisten, die im Besitz des Benutzers sind" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
        </Item>
 
       <Item text="Gerät" url="/en-us/api-reference/beta/resources/device" SEOKeyword="Gerät-API, Microsoft Graph-API, Gerät-API" SEODescription="Stellt ein Gerät dar, das im Directory registriert ist. Erbt von DirectoryObject.">
