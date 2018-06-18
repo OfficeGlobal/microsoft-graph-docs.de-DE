@@ -56,6 +56,6 @@ Es gibt zurzeit keine veralteten Versionen von Microsoft Graph.
 
 ## <a name="terms-of-use"></a>Nutzungsbedingungen
 
-Durch Verwendung der Microsoft Graph-APIs stimmen Sie den [Nutzungsbedingungen](../misc/terms-of-use.md) zu. 
+Durch Verwendung der Microsoft Graph-APIs stimmen Sie den [Nutzungsbedingungen](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use) zu. 
 
 Ihr Feedback ist uns wichtig. Nehmen Sie auf [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest) Kontakt mit uns auf. Taggen Sie Ihre Fragen mit {MicrosoftGraph}.
