@@ -5719,8 +5719,17 @@
       </Item>
     </Item>
     <Item text="Teamarbeit" ProdTag="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="Teams-API, Microsoft Graph-API, Microsoft Teams-API" SEODescription="Stellt eine Azure Active Directory-Gruppe dar. Geerbt von DirectoryObject.">
-      <Item text="Gruppe (Team)" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Gruppen-API, Microsoft Graph-API, Gruppen-API, Microsoft Teams-API, Teams-API" SEODescription="Stellt eine Azure Active Directory-Gruppe dar. Geerbt von DirectoryObject.">
-        <Item text="Gruppe abrufen" url="/en-us/api-reference/beta/api/group_get" SEOKeyword="Gruppe aufrufen, Microsoft Graph-API, Gruppen-API" SEODescription="Dient zum Abrufen der Eigenschaften und der Beziehungen des Gruppenobjekts." />
+      <Item text="Team" url="/en-us/api-reference/beta/resources/team">
+		<Item text="Team erstellen" url="/en-us/api-reference/beta/api/team_put_teams" />
+		<Item text="Team abrufen" url="/en-us/api-reference/beta/api/team_get" />
+		<Item text="Team aktualisieren" url="/en-us/api-reference/beta/api/team_update" />
+		<Item text="Team archivieren" url="/en-us/api-reference/beta/api/team_archive" />
+		<Item text="Archivierung von Team aufheben" url="/en-us/api-reference/beta/api/team_unarchive" />
+		<Item text="Team klonen" url="/en-us/api-reference/beta/api/team_clone" />
+	  </Item>
+	  <Item text="Gruppe (Team)" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Gruppen-API, Microsoft Graph-API, Gruppen-API, Microsoft Teams-API, Teams-API" SEODescription="Stellt eine Azure Active Directory-Gruppe dar. Geerbt von DirectoryObject.">
+        <Item text="Gruppe erstellen" url="/en-us/api-reference/beta/api/group_post_groups" />
+		<Item text="Gruppe abrufen" url="/en-us/api-reference/beta/api/group_get" SEOKeyword="Gruppe aufrufen, Microsoft Graph-API, Gruppen-API" SEODescription="Dient zum Abrufen der Eigenschaften und der Beziehungen des Gruppenobjekts." />
         <Item text="Gruppen auflisten" url="/en-us/api-reference/beta/api/group_list" SEOKeyword="Gruppen auflisten, Microsoft Graph-API, Gruppen-API" SEODescription="Ruft eine Liste von Gruppenobjekten ab." />
         <Item text="Gruppe aktualisieren" url="/en-us/api-reference/beta/api/group_update" SEOKeyword="Gruppe aktualisieren, Microsoft Graph-API, Gruppen-API" SEODescription="Dient zum Aktualisieren der Eigenschaften eines Gruppenobjekts." />
         <Item text="Gruppe löschen" url="/en-us/api-reference/beta/api/group_delete" SEOKeyword="Gruppe löschen, Microsoft Graph-API, Gruppen-API" SEODescription="Dient zum Löschen der Gruppe." />
@@ -5740,15 +5749,6 @@
         <Item text="Gruppe dauerhaft löschen" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
         <Item text="Gelöschte Gruppe wiederherstellen" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
       </Item>
-      <Item text="Team" url="/en-us/api-reference/beta/resources/team">
-		<Item text="Team erstellen" url="/en-us/api-reference/beta/api/team_put_teams" />
-		<Item text="Team abrufen" url="/en-us/api-reference/beta/api/team_get" />
-		<Item text="Team aktualisieren" url="/en-us/api-reference/beta/api/team_update" />
-	  </Item>
-	  <Item text="Foto" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="Benutzerpersonen, Microsoft Graph-API, Benutzer-API" SEODescription="">
-        <Item text="Foto abrufen" url="/en-us/api-reference/beta/api/profilephoto_get" />
-        <Item text="Foto aktualisieren" url="/en-us/api-reference/beta/api/profilephoto_update" />
-      </Item>
       <Item text="Kanal" url="/en-us/api-reference/beta/resources/channel" SEOKeyword="Kanal-API, Microsoft Graph-API, Kanal-API" SEODescription="">
         <Item text="Kanäle auflisten" url="/en-us/api-reference/beta/api/group_list_channels" SEOKeyword="Kanäle auflisten, Microsoft Graph-API, Gruppen-API" SEODescription="Dient zum Abrufen einer Liste von Kanalobjekten." />
         <Item text="Kanal erstellen" url="/en-us/api-reference/beta/api/group_post_channels" SEOKeyword="Unterhaltung erstellen, Microsoft Graph-API, Gruppen-API" SEODescription="Verwenden Sie diese API, um einen neuen Kanal zu erstellen." />
@@ -5757,7 +5757,12 @@
       <Item text="Chatthread" url="/en-us/api-reference/beta/resources/chatthread" SEOKeyword="Chatthread-API, Microsoft Graph-API, Chatthread-API" SEODescription="">
         <Item text="Chatthread erstellen" url="/en-us/api-reference/beta/api/channel_post_chatthreads" SEOKeyword="Chatthread erstellen, Microsoft Graph-API, Microsoft Teams-Chat-API" SEODescription="Verwenden Sie diese API, um einen neuen Chatthread zu erstellen." />
       </Item>
-      <Item text="Chatnachricht" url="/en-us/api-reference/beta/resources/chatmessage" SEOKeyword="Chatnachricht-API, Microsoft Graph-API, Chatnachricht-API" SEODescription="">
+      <Item text="Apps" url="/en-us/api-reference/beta/resources/teamsapp">
+		<Item text="Listen-Apps" url="/en-us/api-reference/beta/api/teams_apps_list" />
+		<Item text="App hinzufügen" url="/en-us/api-reference/beta/api/teams_apps_add" />
+		<Item text="App löschen" url="/en-us/api-reference/beta/api/teams_apps_delete" />
+	  </Item>
+	  <Item text="Chatnachricht" url="/en-us/api-reference/beta/resources/chatmessage" SEOKeyword="Chatnachricht-API, Microsoft Graph-API, Chatnachricht-API" SEODescription="">
       </Item>
       <Item text="Kalender" url="/en-us/api-reference/beta/resources/event" SEOKeyword="Benutzerkalender, Microsoft Graph-API, Benutzer-API" SEODescription="">
         <Item text="Ereignisse auflisten" url="/en-us/api-reference/beta/api/group_list_events" SEOKeyword="Ereignisse auflisten, Microsoft Graph-API, Gruppen-API" SEODescription="Dient zum Abrufen einer Liste von Ereignisobjekten." />
@@ -5782,15 +5787,9 @@
         <Item text="Notizbücher auflisten" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="Notizbücher auflisten, Microsoft Graph-API, Notizen-API" SEODescription="Dient zum Abrufen einer Liste von Notizbuchobjekten (../resources/notebook.md)." />
         <Item text="Notizbuch erstellen" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Notizbuch erstellen, Microsoft Graph-API, Notizen-API" SEODescription="Dient zum Erstellen eines neuen OneNote-Notizbuchs (../resources/notebook.md)." />
       </Item>
-      <Item text="Erweiterte Eigenschaften" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="">
-        <Item text="Erweiterte einwertige Eigenschaft" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="">
-          <Item text="Erweiterte einwertige Eigenschaft erstellen" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
-          <Item text="Erweiterte einwertige Eigenschaft abrufen" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
-        </Item>
-        <Item text="Erweiterte mehrwertige Eigenschaft" url="/en-us/api-reference/beta/resources/multivaluelegacyextendedproperty" SEODescription="">
-          <Item text="Erweiterte mehrwertige Eigenschaft erstellen" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
-          <Item text="Erweiterte mehrwertige Eigenschaft abrufen" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
-        </Item>
+	   <Item text="Fotopapier" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="Benutzerpersonen, Microsoft Graph-API, Benutzer-API" SEODescription="">
+        <Item text="Foto abrufen" url="/en-us/api-reference/beta/api/profilephoto_get" />
+        <Item text="Foto aktualisieren" url="/en-us/api-reference/beta/api/profilephoto_update" />
       </Item>
     </Item>
     <Item text="To-do-Aufgaben" ProdTag="Outlook" url="/en-us/api-reference/beta/resources/outlooktask">
