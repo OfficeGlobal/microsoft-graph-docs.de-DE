@@ -15,6 +15,7 @@ _Effektive Berechtigungen_ sind die Berechtigungen, über die Ihre App verfügt,
 - Bei Anwendungsberechtigungen sind die _effektiven Berechtigungen_ der App sämtliche Rechte, die die Berechtigung impliziert. Eine App mit der Anwendungsberechtigung _User.ReadWrite.All_ kann beispielsweise das Profil aller Benutzer in der Organisation aktualisieren. 
 
 ### <a name="microsoft-graph-permission-names"></a>Microsoft Graph-Berechtigungsnamen
+
 Die Namen von Microsoft Graph-Berechtigungen entsprechen einem einfachen Muster: _Ressource.Vorgang.Einschränkung_. Beispielsweise gewährt _User.Read_ die Berechtigung zum Lesen des Profils des angemeldeten Benutzers, _User.ReadWrite_ gewährt die Berechtigung zum Lesen und Ändern des Profils des angemeldeten Benutzers, und _Mail.Send_ gewährt die Berechtigung zum Senden von E-Mails im Namen des angemeldeten Benutzers. 
 
 Das Element _Einschränkung_ des Namens bestimmt das potenzielle Ausmaß von Zugriff, den Ihre App im Verzeichnis hat. Derzeit unterstützt Microsoft Graph die folgenden Einschränkungen: 
@@ -38,6 +39,41 @@ Wenn der angemeldete Benutzer ein Gastbenutzer ist, kann er abhängig von den ei
 
 Mit den entsprechenden Berechtigungen kann die App die Profile von Benutzern oder Gruppen lesen, die über Links in Navigationseigenschaften abgerufen werden, beispielsweise `/users/{id}/directReports` oder `/groups/{id}/members`.
 
+---
+
+## <a name="application-resource-permissions"></a>Berechtigungen für Anwendungsressourcen
+
+#### <a name="delegated-permissions"></a>Delegierte Berechtigungen
+
+Keine.
+
+#### <a name="application-permissions"></a>Anwendungsberechtigungen
+
+|   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Application.ReadWrite.All_ | Schreib-/Lesezugriff für alle Apps | Ermöglicht der aufrufenden App, Anwendungen und Dienstprinzipale zu erstellen und zu verwalten (lesen, aktualisieren, Anwendungsgeheimnisse aktualisieren und löschen), ohne dass ein Benutzer angemeldet ist.  Ermöglicht nicht die Verwaltung von Zustimmungseinwilligungen oder Anwendungszuordnungen für Benutzer oder Gruppen. | Ja |
+| _Application.ReadWrite.OwnedBy_ | Verwalten von Apps, die diese App erstellt oder deren Besitzer sie ist | Ermöglicht der aufrufenden App, andere Anwendungen und Dienstprinzipale zu erstellen und diese Anwendungen und Dienstprinzipale vollständig zu verwalten (lesen, aktualisieren, Anwendungsgeheimnisse aktualisieren und löschen), ohne dass ein Benutzer angemeldet ist.  Sie kann keine Anwendungen aktualisieren, deren Besitzer sie nicht ist. Ermöglicht nicht die Verwaltung von Zustimmungseinwilligungen oder Anwendungszuordnungen für Benutzer oder Gruppen. | Ja |
+
+### <a name="remarks"></a>Bemerkungen
+
+Die Berechtigung _Application.ReadWrite.OwnedBy_ ermöglicht die gleichen Vorgänge wie _Application.ReadWrite.All_, mit der Ausnahme, dass die erste Berechtigung diese Vorgänge nur für Anwendungen und Dienstprinzipale zulässt, deren Besitzer die aufrufende App ist. Der Besitz wird durch die Navigationseigenschaft `owners` für die Ziel-[Anwendungs](../api-reference/beta/api/application_list_owners.md)- oder -[Dienstprinzipal](../api-reference/beta/api/serviceprincipal_list_owners.md)-Ressource angegeben.
+> HINWEIS: Die Verwendung der Berechtigung _Application.ReadWrite.OwnedBy_ zum Aufrufen von `GET /applications` zur Auflistung von Anwendungen führt zu einem 403-Fehler.  Verwenden Sie stattdessen `GET servicePrincipals/{id}/ownedObjects` zum Auflisten der Anwendungen, deren Besitzer die aufrufende Anwendung ist.
+
+### <a name="example-usage"></a>Verwendungsbeispiel
+
+#### <a name="delegated"></a>Delegiert
+
+Keine.
+
+#### <a name="application"></a>Anwendung
+
+* _Application.ReadWrite.All_: Alle Anwendungen auflisten (`GET /beta/applications`)
+* _Application.ReadWrite.All_: Dienstprinzipal löschen (`DELETE /beta/servicePrincipals/{id}`)
+* _Application.ReadWrite.OwnedBy_: Anwendung erstellen (`POST /beta/applications`)
+* _Application.ReadWrite.OwnedBy_: Alle Anwendungen auflisten, deren Besitzer die aufrufende Anwendung ist (`GET /beta/servicePrincipals/{id}/ownedObjects`)
+* _Application.ReadWrite.OwnedBy_: Einen anderen Besitzer zu einer Anwendung hinzufügen, die bereits einen Besitzer hat (`POST /applications/{id}/owners/$ref`).  HINWEIS: Dies erfordert möglicherweise zusätzliche Berechtigungen.
+
+---
 
 ## <a name="bookings-permissions"></a>Bookings-Berechtigungen
 
@@ -62,8 +98,6 @@ Keine.
 * _Bookings.ReadWrite.Appointments_: Erstellen eines Termins für einen Service bei einem Bookings-Unternehmen (`POST /bookingBusinesses/{id}/appointments`).
 * _Bookings.ReadWrite.All_: Erstellen eines neuen Service für das angegebene Bookings-Unternehmen (`POST /bookingBusinesses/{id}/services`).
 * _Bookings.Manage_: Bereitstellen der Terminvergabeseite dieses Unternehmens für externe Kunden (`POST /bookingBusinesses/{id}/publish`).
-
----
 
 ## <a name="calendars-permissions"></a>Kalenderberechtigungen
 
@@ -175,53 +209,7 @@ Die delegierten Berechtigungen _Device.Read_ und _Device.Command_ gelten nur fü
 
 Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 
-
-## <a name="intune-device-management-permissions"></a>Berechtigungen für Intune-Geräteverwaltung
-
-#### <a name="delegated-permissions"></a>Delegierte Berechtigungen
-
-|Berechtigung    |Anzeigezeichenfolge   |Beschreibung |Administratorzustimmung erforderlich |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_DeviceManagementApps.Read.All_ | Microsoft Intune-Apps lesen | Ermöglicht der App, die Eigenschaften, Gruppenzuweisungen und Status von Apps, App-Konfigurationen sowie von Microsoft Intune verwaltete Richtlinien zum Schutz von Apps zu lesen. | Ja |
-|_DeviceManagementApps.ReadWrite.All_ | Microsoft Intune-Apps lesen und schreiben | Ermöglicht der App, die Eigenschaften, Gruppenzuweisungen und Status von Apps, App-Konfigurationen sowie von Microsoft Intune verwaltete Richtlinien zum Schutz von Apps zu lesen und zu schreiben. | Ja |
-|_DeviceManagementConfiguration.Read.All_ | Microsoft Intune-Gerätekonfiguration und -Richtlinien lesen | Ermöglicht der App, Eigenschaften der von Microsoft Intune verwalteten Gerätekonfiguration und Richtlinien zur Gerätekompatibilität sowie deren Zuweisung zu Gruppen zu lesen. | Ja |
-|_DeviceManagementConfiguration.ReadWrite.All_ | Microsoft Intune-Gerätekonfiguration und -Richtlinien lesen und schreiben  | Ermöglicht der App, Eigenschaften der von Microsoft Intune verwalteten Gerätekonfiguration und Richtlinien zur Gerätekompatibilität sowie deren Zuweisung zu Gruppen zu lesen und zu schreiben. | Ja |
-|_DeviceManagementManagedDevices.PrivilegedOperations.All_ | Remoteaktionen mit Auswirkungen auf den Benutzer auf Microsoft Intune-Geräten durchführen | Ermöglicht der App, Remoteaktionen mit großen Auswirkungen durchzuführen, z. B. das Zurücksetzen des Geräts oder der Kennung auf Geräten, die von Microsoft Intune verwaltet werden. | Ja |
-|_DeviceManagementManagedDevices.Read.All_ | Microsoft Intune-Geräte lesen | Ermöglicht der App, die Eigenschaften der von Microsoft Intune verwalteten Geräte zu lesen. | Ja |
-|_DeviceManagementManagedDevices.ReadWrite.All_ | Microsoft Intune-Geräte lesen und schreiben | Ermöglicht der App, die Eigenschaften der von Microsoft Intune verwalteten Geräte zu lesen und zu schreiben. Ermöglicht keine Operationen mit großen Auswirkungen, z. B. Remotezurücksetzen und Kennwortzurücksetzung am Gerät des Besitzers. | Ja |
-|_DeviceManagementRBAC.Read.All_ | Microsoft Intune-RBAC-Einstellungen lesen | Ermöglicht der App, die Eigenschaften bezüglich der Einstellungen der rollenbasierten Zugriffssteuerung (RBAC) von Microsoft Intune zu lesen. | Ja |
-|_DeviceManagementRBAC.ReadWrite.All_ | Microsoft Intune-RBAC-Einstellungen lesen und schreiben | Ermöglicht der App, die Eigenschaften bezüglich der Einstellungen der rollenbasierten Zugriffssteuerung (RBAC) von Microsoft Intune zu lesen und zu schreiben. | Ja |
-|_DeviceManagementServiceConfig.Read.All_ | Microsoft Intune-Konfiguration lesen | Ermöglicht der App, Intune-Diensteigenschaften zu lesen, einschließlich der Geräteregistrierung und der Drittanbieter-Dienstverbindungskonfiguration. | Ja |
-|_DeviceManagementServiceConfig.ReadWrite.All_ | Microsoft Intune-Konfiguration lesen und schreiben | Ermöglicht der App, Microsoft Intune-Diensteigenschaften zu lesen und zu schreiben, einschließlich der Geräteregistrierung und der Drittanbieter-Dienstverbindungskonfiguration. | Ja |
-
-#### <a name="application-permissions"></a>Anwendungsberechtigungen
-
-Keine.
-
-### <a name="remarks"></a>HinwBemerkungeneise
-
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
-
-Diese Berechtigungen gelten nur für Geschäfts-, Schul- oder Unikonten.
-
-### <a name="example-usage"></a>Verwendungsbeispiel
-
-#### <a name="application"></a>Anwendung
-
-* _DeviceManagementServiceConfiguration.Read.All_: Den aktuellen Status des Intune-Abonnements überprüfen (`GET /deviceManagement/subscriptionState`).
-* _DeviceManagementServiceConfiguration.ReadWrite.All_: Neue Geschäftsbedingungen erstellen (`POST /deviceManagement/termsAndConditions`).
-* _DeviceManagementConfiguration.Read.All_: Den Status einer Gerätekonfiguration suchen (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`).
-* _DeviceManagementConfiguration.ReadWrite.All_: Einer Gruppe eine Gerätekompatibilitätsrichtlinie zuweisen (`POST deviceCompliancePolicies/{id}/assign`).
-* _DeviceManagementApps.Read.All_: Alle Windows Store-Apps suchen, die in Intune veröffentlicht wurden (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`).
-* _DeviceManagementApps.ReadWrite.All_: Eine neue Anwendung veröffentlichen (`POST /deviceAppManagement/mobileApps`).
-* _DeviceManagementRBAC.Read.All_: Eine Rollenzuweisung anhand des Namens suchen (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`).
-* _DeviceManagementRBAC.ReadWrite.All_: Eine neue benutzerdefinierte Rolle erstellen (`POST /deviceManagement/roleDefinitions`).
-* _DeviceManagementManagedDevices.Read.All_: Ein verwaltetes Gerät anhand des Namens suchen (`GET /managedDevices/?$filter=deviceName eq 'My Device'`).
-* _DeviceManagementManagedDevices.ReadWrite.All_: Ein verwaltetes Gerät entfernen (`DELETE /managedDevices/{id}`).
-* _DeviceManagementManagedDevices.PrivilegedOperations.All_: Die Kennung auf dem verwalteten Gerät eines Benutzers zurücksetzen (`POST /managedDevices/{id}/resetPasscode`).
-
-Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
-
+---
 
 ## <a name="directory-permissions"></a>Verzeichnisberechtigungen
 
@@ -318,6 +306,8 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 
+---
+
 ## <a name="files-permissions"></a>Dateiberechtigungen
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
@@ -360,6 +350,7 @@ Die delegierte Berechtigung „Files.ReadWrite.AppFolder“ ist nur für persön
 
 Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 
+---
 
 ## <a name="group-permissions"></a>Gruppenberechtigungen
 
@@ -439,6 +430,7 @@ Die folgenden Verwendungen sind für delegierte und Anwendungsberechtigungen gü
  
 Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 
+---
 
 ## <a name="identity-provider-permissions"></a>Berechtigungen für Identitätsanbieter
 
@@ -467,6 +459,55 @@ Die folgenden Verwendungen sind für delegierte Berechtigungen gültig:
 Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 
 ---
+
+## <a name="intune-device-management-permissions"></a>Berechtigungen für Intune-Geräteverwaltung
+
+#### <a name="delegated-permissions"></a>Delegierte Berechtigungen
+
+|Berechtigung    |Anzeigezeichenfolge   |Beschreibung |Administratorzustimmung erforderlich |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_DeviceManagementApps.Read.All_ | Microsoft Intune-Apps lesen | Ermöglicht der App, die Eigenschaften, Gruppenzuweisungen und Status von Apps, App-Konfigurationen sowie von Microsoft Intune verwaltete Richtlinien zum Schutz von Apps zu lesen. | Ja |
+|_DeviceManagementApps.ReadWrite.All_ | Microsoft Intune-Apps lesen und schreiben | Ermöglicht der App, die Eigenschaften, Gruppenzuweisungen und Status von Apps, App-Konfigurationen sowie von Microsoft Intune verwaltete Richtlinien zum Schutz von Apps zu lesen und zu schreiben. | Ja |
+|_DeviceManagementConfiguration.Read.All_ | Microsoft Intune-Gerätekonfiguration und -Richtlinien lesen | Ermöglicht der App, Eigenschaften der von Microsoft Intune verwalteten Gerätekonfiguration und Richtlinien zur Gerätekompatibilität sowie deren Zuweisung zu Gruppen zu lesen. | Ja |
+|_DeviceManagementConfiguration.ReadWrite.All_ | Microsoft Intune-Gerätekonfiguration und -Richtlinien lesen und schreiben  | Ermöglicht der App, Eigenschaften der von Microsoft Intune verwalteten Gerätekonfiguration und Richtlinien zur Gerätekompatibilität sowie deren Zuweisung zu Gruppen zu lesen und zu schreiben. | Ja |
+|_DeviceManagementManagedDevices.PrivilegedOperations.All_ | Remoteaktionen mit Auswirkungen auf den Benutzer auf Microsoft Intune-Geräten durchführen | Ermöglicht der App, Remoteaktionen mit großen Auswirkungen durchzuführen, z. B. das Zurücksetzen des Geräts oder der Kennung auf Geräten, die von Microsoft Intune verwaltet werden. | Ja |
+|_DeviceManagementManagedDevices.Read.All_ | Microsoft Intune-Geräte lesen | Ermöglicht der App, die Eigenschaften der von Microsoft Intune verwalteten Geräte zu lesen. | Ja |
+|_DeviceManagementManagedDevices.ReadWrite.All_ | Microsoft Intune-Geräte lesen und schreiben | Ermöglicht der App, die Eigenschaften der von Microsoft Intune verwalteten Geräte zu lesen und zu schreiben. Ermöglicht keine Operationen mit großen Auswirkungen, z. B. Remotezurücksetzen und Kennwortzurücksetzung am Gerät des Besitzers. | Ja |
+|_DeviceManagementRBAC.Read.All_ | Microsoft Intune-RBAC-Einstellungen lesen | Ermöglicht der App, die Eigenschaften bezüglich der Einstellungen der rollenbasierten Zugriffssteuerung (RBAC) von Microsoft Intune zu lesen. | Ja |
+|_DeviceManagementRBAC.ReadWrite.All_ | Microsoft Intune-RBAC-Einstellungen lesen und schreiben | Ermöglicht der App, die Eigenschaften bezüglich der Einstellungen der rollenbasierten Zugriffssteuerung (RBAC) von Microsoft Intune zu lesen und zu schreiben. | Ja |
+|_DeviceManagementServiceConfig.Read.All_ | Microsoft Intune-Konfiguration lesen | Ermöglicht der App, Intune-Diensteigenschaften zu lesen, einschließlich der Geräteregistrierung und der Drittanbieter-Dienstverbindungskonfiguration. | Ja |
+|_DeviceManagementServiceConfig.ReadWrite.All_ | Microsoft Intune-Konfiguration lesen und schreiben | Ermöglicht der App, Microsoft Intune-Diensteigenschaften zu lesen und zu schreiben, einschließlich der Geräteregistrierung und der Drittanbieter-Dienstverbindungskonfiguration. | Ja |
+
+#### <a name="application-permissions"></a>Anwendungsberechtigungen
+
+Keine.
+
+### <a name="remarks"></a>HinwBemerkungeneise
+
+> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+
+Diese Berechtigungen gelten nur für Geschäfts-, Schul- oder Unikonten.
+
+### <a name="example-usage"></a>Verwendungsbeispiel
+
+#### <a name="delegated"></a>Delegiert
+
+* _DeviceManagementServiceConfiguration.Read.All_: Den aktuellen Status des Intune-Abonnements überprüfen (`GET /deviceManagement/subscriptionState`).
+* _DeviceManagementServiceConfiguration.ReadWrite.All_: Neue Geschäftsbedingungen erstellen (`POST /deviceManagement/termsAndConditions`).
+* _DeviceManagementConfiguration.Read.All_: Den Status einer Gerätekonfiguration suchen (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`).
+* _DeviceManagementConfiguration.ReadWrite.All_: Einer Gruppe eine Gerätekompatibilitätsrichtlinie zuweisen (`POST deviceCompliancePolicies/{id}/assign`).
+* _DeviceManagementApps.Read.All_: Alle Windows Store-Apps suchen, die in Intune veröffentlicht wurden (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`).
+* _DeviceManagementApps.ReadWrite.All_: Eine neue Anwendung veröffentlichen (`POST /deviceAppManagement/mobileApps`).
+* _DeviceManagementRBAC.Read.All_: Eine Rollenzuweisung anhand des Namens suchen (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`).
+* _DeviceManagementRBAC.ReadWrite.All_: Eine neue benutzerdefinierte Rolle erstellen (`POST /deviceManagement/roleDefinitions`).
+* _DeviceManagementManagedDevices.Read.All_: Ein verwaltetes Gerät anhand des Namens suchen (`GET /managedDevices/?$filter=deviceName eq 'My Device'`).
+* _DeviceManagementManagedDevices.ReadWrite.All_: Ein verwaltetes Gerät entfernen (`DELETE /managedDevices/{id}`).
+* _DeviceManagementManagedDevices.PrivilegedOperations.All_: Die Kennung auf dem verwalteten Gerät eines Benutzers zurücksetzen (`POST /managedDevices/{id}/resetPasscode`).
+
+Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
+
+---
+
 ## <a name="mail-permissions"></a>E-Mail-Berechtigungen
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen

@@ -178,6 +178,28 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 Der comment-Parameter für das Erstellen eines Antwort- oder Weiterleitungsentwurfs ([createReply](../api-reference/v1.0/api/message_createreply.md), [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) wird nicht Teil des Textkörpers des resultierenden Nachrichtenentwurfs.
 
+## <a name="bookings"></a>Bookings
+
+### <a name="errorexceededfindcountlimit-when-querying-bookingbusinesses"></a>„ErrorExceededFindCountLimit“ bei Abfrage von „bookingBusinesses“
+
+Das Abrufen der Liste mit `bookingBusinesses` schlägt mit dem folgenden Fehlercode fehl, wenn eine Organisation über mehrere Buchungsunternehmen verfügt und das Konto, das die Anforderung stellt, kein Administratorkonto ist:
+
+```json
+{
+  "error": {
+    "code": "ErrorExceededFindCountLimit",
+    "message":
+      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
+  }
+}
+```
+
+Der Satz von Unternehmen, der von der Anforderung zurückgegeben wird, kann durch die Einbeziehung eines Abfrageparameters eingeschränkt werden. Beispiel:
+
+```
+GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
+```
+
 ## <a name="drives-files-and-content-streaming"></a>Laufwerke, Dateien und Streamen von Inhalten
 
 * Beim ersten Zugriff auf ein persönliches Benutzerlaufwerk über Microsoft Graph tritt ein 401-Fehler auf, wenn der Benutzer seine persönliche Website noch nicht in einem Browser aufgerufen hat.
@@ -246,6 +268,10 @@ Sie müssen zuerst die Ressourceninstanz erstellen und dann einen `PATCH` für d
 ### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>Grenzwert von 100 zulässigen Werten für Schemaerweiterungseigenschaften pro Ressourceninstanz.
 
 Für Verzeichnisressourcen wie **device**, **group** und **user** gilt aktuell: Für eine Ressourceninstanz dürfen maximal 100 Eigenschaftswerte von Schemaerweiterungen festgelegt werden.
+
+### <a name="filtering-on-schema-extension-properties-not-supported-on-all-entity-types"></a>Filtern von Schemaerweiterungseigenschaften wird nicht für alle Entitätstypen unterstützt
+
+Das Filtern von Schemaerweiterungseigenschaften (mit dem Ausdruck `$filter`) wird für Outlook-Entitätstypen – **contact**, **event**, **message** oder **post**, nicht unterstützt.
 
 ## <a name="json-batching"></a>JSON-Batchverarbeitung
 
