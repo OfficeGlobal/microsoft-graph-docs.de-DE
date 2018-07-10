@@ -404,36 +404,8 @@
 			</Item>
 		</Item>
 	</Item>
-   <Item text="Geräte und Apps" ProdTag="Intune" url="/en-us/api-reference/v1.0/resources/intune_graph_overview">
+    <Item text="Geräte und Apps" ProdTag="Intune" url="/en-us/api-reference/v1.0/resources/intune_graph_overview">
       <Item text="App-Verwaltung" url="/en-us/api-reference/v1.0/resources/intune_apps_app_conceptual">
-        <Item text="Alle Geräte – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_apps_alldevicesassignmenttarget" />
-        <Item text="Alle lizenzierten Benutzer – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_books_alllicensedusersassignmenttarget" />
-        <Item text="Alle lizenzierten Benutzer – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_apps_alllicensedusersassignmenttarget" />
-        <Item text="Android for Work-App – Konfigurationsschemaelement" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_androidforworkappconfigurationschemaitem" />
-        <Item text="Android for Work-App – Konfigurationsschema" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_androidforworkappconfigurationschema">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_get" />
-          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_create" />
-          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_delete" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_update" />
-        </Item>
-        <Item text="Android for Work – Registrierungsprofil" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_androidforworkenrollmentprofile">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_get" />
-          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_create" />
-          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_delete" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_update" />
-          <Item text="revokeToken-Aktion" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_revoketoken" />
-          <Item text="createToken-Aktion" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_createtoken" />
-        </Item>
-        <Item text="Android for Work-Einstellungen" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_androidforworksettings">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_update" />
-          <Item text="requestSignupUrl-Aktion" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_requestsignupurl" />
-          <Item text="completeSignup-Aktion" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_completesignup" />
-          <Item text="syncApps-Aktion" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_syncapps" />
-          <Item text="unbind-Aktion" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_unbind" />
-        </Item>
         <Item text="Android-Branchen-App" url="/en-us/api-reference/v1.0/resources/intune_apps_androidlobapp">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_androidlobapp_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_androidlobapp_get" />
@@ -449,16 +421,7 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_apps_androidstoreapp_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_apps_androidstoreapp_update" />
         </Item>
-        <Item text="Geräte- und App-Verwaltung – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_apps_deviceandappmanagementassignmenttarget" />
-        <Item text="Geräte- und App-Verwaltung – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_books_deviceandappmanagementassignmenttarget" />
-        <Item text="Geräte-App-Verwaltung" url="/en-us/api-reference/v1.0/resources/intune_apps_deviceappmanagement">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_deviceappmanagement_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_apps_deviceappmanagement_update" />
-        </Item>
-        <Item text="Geräte-App-Verwaltung" url="/en-us/api-reference/v1.0/resources/intune_books_deviceappmanagement">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_books_deviceappmanagement_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_books_deviceappmanagement_update" />
-        </Item>
+        <Item text="App-Konfigurationseinstellungselement" url="/en-us/api-reference/v1.0/resources/intune_apps_appconfigurationsettingitem" />
         <Item text="Geräteinstallationsstatus" url="/en-us/api-reference/v1.0/resources/intune_books_deviceinstallstate">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_books_deviceinstallstate_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_books_deviceinstallstate_get" />
@@ -466,21 +429,13 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_books_deviceinstallstate_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_books_deviceinstallstate_update" />
         </Item>
-        <Item text="Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_devicemanagement">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_androidforwork_devicemanagement_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_androidforwork_devicemanagement_update" />
-        </Item>
         <Item text="Installationszusammenfassung der E-Book" url="/en-us/api-reference/v1.0/resources/intune_books_ebookinstallsummary">
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_books_ebookinstallsummary_get" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_books_ebookinstallsummary_update" />
         </Item>
-        <Item text="Ausschlussgruppe – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_apps_exclusiongroupassignmenttarget" />
-        <Item text="Ausschlussgruppe – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_books_exclusiongroupassignmenttarget" />
         <Item text="Dateiverschlüsselungsinformationen" url="/en-us/api-reference/v1.0/resources/intune_apps_fileencryptioninfo" />
-        <Item text="Gruppe – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_apps_groupassignmenttarget" />
-        <Item text="Gruppe – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_books_groupassignmenttarget" />
+        <Item text="Installationsstatus" url="/en-us/api-reference/v1.0/resources/intune_books_installstate" />
         <Item text="iOS-Gerätetyp" url="/en-us/api-reference/v1.0/resources/intune_apps_iosdevicetype" />
-        <Item text="iOS-Branchen-App – Zuweisungseinstellungen" url="/en-us/api-reference/v1.0/resources/intune_apps_ioslobappassignmentsettings" />
         <Item text="iOS-Branchen-App" url="/en-us/api-reference/v1.0/resources/intune_apps_ioslobapp">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_ioslobapp_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_ioslobapp_get" />
@@ -488,8 +443,15 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_apps_ioslobapp_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_apps_ioslobapp_update" />
         </Item>
+        <Item text="iOS-Branchen-App – Zuweisungseinstellungen" url="/en-us/api-reference/v1.0/resources/intune_apps_ioslobappassignmentsettings" />
         <Item text="Mindestversion des iOS-Betriebssystems" url="/en-us/api-reference/v1.0/resources/intune_apps_iosminimumoperatingsystem" />
-        <Item text="iOS Store-App – Zuweisungseinstellungen" url="/en-us/api-reference/v1.0/resources/intune_apps_iosstoreappassignmentsettings" />
+        <Item text="Konfiguration mobiler iOS-Apps" url="/en-us/api-reference/v1.0/resources/intune_apps_iosmobileappconfiguration">
+          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_list" />
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_get" />
+          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_create" />
+          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_delete" />
+          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_update" />
+        </Item>
         <Item text="iOS Store-App" url="/en-us/api-reference/v1.0/resources/intune_apps_iosstoreapp">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_iosstoreapp_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_iosstoreapp_get" />
@@ -497,13 +459,21 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_apps_iosstoreapp_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_apps_iosstoreapp_update" />
         </Item>
-        <Item text="iOS-VPP-App – Zuweisungseinstellungen" url="/en-us/api-reference/v1.0/resources/intune_apps_iosvppappassignmentsettings" />
+        <Item text="iOS Store-App – Zuweisungseinstellungen" url="/en-us/api-reference/v1.0/resources/intune_apps_iosstoreappassignmentsettings" />
         <Item text="iOS-VPP-App" url="/en-us/api-reference/v1.0/resources/intune_apps_iosvppapp">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_get" />
           <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_create" />
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_update" />
+        </Item>
+        <Item text="iOS-VPP-App – Zuweisungseinstellungen" url="/en-us/api-reference/v1.0/resources/intune_apps_iosvppappassignmentsettings" />
+        <Item text="iOS VPP-E-Book" url="/en-us/api-reference/v1.0/resources/intune_books_iosvppebook">
+          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_list" />
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_get" />
+          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_create" />
+          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_delete" />
+          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_update" />
         </Item>
         <Item text="iOS VPPE-Book-Zuweisung" url="/en-us/api-reference/v1.0/resources/intune_books_iosvppebookassignment">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebookassignment_list" />
@@ -512,14 +482,6 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebookassignment_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebookassignment_update" />
         </Item>
-        <Item text="iOS VPP-E-Book" url="/en-us/api-reference/v1.0/resources/intune_books_iosvppebook">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_get" />
-          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_create" />
-          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_delete" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_update" />
-        </Item>
-        <Item text="Schlüssel-Wert-Paar" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_keyvaluepair" />
         <Item text="macOS-Office-Suite-App" url="/en-us/api-reference/v1.0/resources/intune_apps_macosofficesuiteapp">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_macosofficesuiteapp_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_macosofficesuiteapp_get" />
@@ -545,12 +507,24 @@
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_managedapp_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_managedapp_get" />
         </Item>
+        <Item text="Verfügbarkeit verwalteter Apps" url="/en-us/api-reference/v1.0/resources/intune_apps_managedappavailability" />
+        <Item text="Verwaltetes Gerät – Konfiguration mobiler Apps" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfiguration">
+          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_list" />
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_get" />
+        </Item>
         <Item text="Verwaltetes Gerät – Zuweisung Für Konfiguration mobiler Apps" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfigurationassignment">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_get" />
           <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_create" />
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_update" />
+        </Item>
+        <Item text="Verwaltetes Gerät – Konfiguration mobiler Apps – Gerätestatus" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfigurationdevicestatus">
+          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_list" />
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_get" />
+          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_create" />
+          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_delete" />
+          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_update" />
         </Item>
         <Item text="Verwaltetes Gerät – Konfiguration mobiler Apps – Gerätezusammenfassung" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary">
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicesummary_get" />
@@ -567,9 +541,10 @@
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationusersummary_get" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationusersummary_update" />
         </Item>
-        <Item text="Verwaltetes Gerät – Konfiguration mobiler Apps" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfiguration">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_get" />
+        <Item text="Verwaltetes E-Book" url="/en-us/api-reference/v1.0/resources/intune_books_managedebook">
+          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_list" />
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_get" />
+          <Item text="Aktion zuweisen" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_assign" />
         </Item>
         <Item text="Zuweisung für verwaltete E-Books" url="/en-us/api-reference/v1.0/resources/intune_books_managedebookassignment">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_books_managedebookassignment_list" />
@@ -577,11 +552,6 @@
           <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_books_managedebookassignment_create" />
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_books_managedebookassignment_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_books_managedebookassignment_update" />
-        </Item>
-        <Item text="Verwaltetes E-Book" url="/en-us/api-reference/v1.0/resources/intune_books_managedebook">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_get" />
-          <Item text="Aktion zuweisen" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_assign" />
         </Item>
         <Item text="Verwaltete iOS-Branchen-App" url="/en-us/api-reference/v1.0/resources/intune_apps_managedioslobapp">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_managedioslobapp_list" />
@@ -601,7 +571,7 @@
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_managedmobilelobapp_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_managedmobilelobapp_get" />
         </Item>
-        <Item text="Microsoft Store für Unternehmen-App – Zuweisungseinstellungen" url="/en-us/api-reference/v1.0/resources/intune_apps_microsoftstoreforbusinessappassignmentsettings" />
+        <Item text="Konfigurationsschlüsseltyp für MDM-App" url="/en-us/api-reference/v1.0/resources/intune_apps_mdmappconfigkeytype" />
         <Item text="Microsoft Store für Unternehmen-App" url="/en-us/api-reference/v1.0/resources/intune_apps_microsoftstoreforbusinessapp">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_microsoftstoreforbusinessapp_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_microsoftstoreforbusinessapp_get" />
@@ -609,10 +579,13 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_apps_microsoftstoreforbusinessapp_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_apps_microsoftstoreforbusinessapp_update" />
         </Item>
-        <Item text="MIME-Inhalt" url="/en-us/api-reference/v1.0/resources/intune_apps_mimecontent" />
-        <Item text="MIME-Inhalt" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_mimecontent" />
-        <Item text="MIME-Inhalt" url="/en-us/api-reference/v1.0/resources/intune_books_mimecontent" />
-        <Item text="Mobile Apps – Zuweisungseinstellungen" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappassignmentsettings" />
+        <Item text="Microsoft Store für Unternehmen-App – Zuweisungseinstellungen" url="/en-us/api-reference/v1.0/resources/intune_apps_microsoftstoreforbusinessappassignmentsettings" />
+        <Item text="Microsoft Store für Unternehmen-Lizenztyp" url="/en-us/api-reference/v1.0/resources/intune_apps_microsoftstoreforbusinesslicensetype" />
+        <Item text="Mobile App" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileapp">
+          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_list" />
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_get" />
+          <Item text="assign-Aktion" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_assign" />
+        </Item>
         <Item text="Zuweisung für mobile Apps" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappassignment">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappassignment_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappassignment_get" />
@@ -620,12 +593,20 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappassignment_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappassignment_update" />
         </Item>
+        <Item text="Mobile Apps – Zuweisungseinstellungen" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappassignmentsettings" />
         <Item text="Kategorie mobiler Apps" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcategory">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_get" />
           <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_create" />
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_update" />
+        </Item>
+        <Item text="Inhalt mobiler Apps" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcontent">
+          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_list" />
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_get" />
+          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_create" />
+          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_delete" />
+          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_update" />
         </Item>
         <Item text="Inhaltsdatei mobiler App" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcontentfile">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontentfile_list" />
@@ -636,18 +617,8 @@
           <Item text="commit-Aktion" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontentfile_commit" />
           <Item text="renewUpload-Aktion" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontentfile_renewupload" />
         </Item>
-        <Item text="Inhalt mobiler Apps" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcontent">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_get" />
-          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_create" />
-          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_delete" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_update" />
-        </Item>
-        <Item text="Mobile App" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileapp">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_get" />
-          <Item text="Aktion zuweisen" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_assign" />
-        </Item>
+        <Item text="Uploadstatus der Inhaltsdatei der mobilen App" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcontentfileuploadstate" />
+        <Item text="Veröffentlichungsstatus der mobilen App" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileapppublishingstate" />
         <Item text="Mobile Branchen-App" url="/en-us/api-reference/v1.0/resources/intune_apps_mobilelobapp">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_mobilelobapp_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_apps_mobilelobapp_get" />
@@ -667,6 +638,8 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_apps_webapp_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_apps_webapp_update" />
         </Item>
+        <Item text="Windows-Architektur" url="/en-us/api-reference/v1.0/resources/intune_apps_windowsarchitecture" />
+        <Item text="Windows-Gerätetyp" url="/en-us/api-reference/v1.0/resources/intune_apps_windowsdevicetype" />
         <Item text="Mindestversion des Windows-Betriebssystems" url="/en-us/api-reference/v1.0/resources/intune_apps_windowsminimumoperatingsystem" />
         <Item text="Windows Mobile-MSI" url="/en-us/api-reference/v1.0/resources/intune_apps_windowsmobilemsi">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_apps_windowsmobilemsi_list" />
@@ -684,15 +657,13 @@
         </Item>
       </Item>
       <Item text="Geschäftsbedingungen des Unternehmens" url="/en-us/api-reference/v1.0/resources/intune_company_conceptual">
-        <Item text="Alle Geräte – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_companyterms_alldevicesassignmenttarget" />
-        <Item text="Alle lizenzierten Benutzer – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_companyterms_alllicensedusersassignmenttarget" />
-        <Item text="Geräte- und App-Verwaltung – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_companyterms_deviceandappmanagementassignmenttarget" />
-        <Item text="Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_companyterms_devicemanagement">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_companyterms_devicemanagement_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_companyterms_devicemanagement_update" />
+        <Item text="Geschäftsbedingungen" url="/en-us/api-reference/v1.0/resources/intune_companyterms_termsandconditions">
+          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_list" />
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_get" />
+          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_create" />
+          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_delete" />
+          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_update" />
         </Item>
-        <Item text="Ausschlussgruppe – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_companyterms_exclusiongroupassignmenttarget" />
-        <Item text="Gruppe – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_companyterms_groupassignmenttarget" />
         <Item text="Annahmestatus der Geschäftsbedingungen" url="/en-us/api-reference/v1.0/resources/intune_companyterms_termsandconditionsacceptancestatus">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsacceptancestatus_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsacceptancestatus_get" />
@@ -707,27 +678,19 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsassignment_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsassignment_update" />
         </Item>
-        <Item text="Geschäftsbedingungen" url="/en-us/api-reference/v1.0/resources/intune_companyterms_termsandconditions">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_get" />
-          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_create" />
-          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_delete" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_update" />
-        </Item>
       </Item>
       <Item text="Unternehmensregistrierung" url="/en-us/api-reference/v1.0/resources/intune_corporate_enrollment_conceptual">
-        <Item text="Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_corpenrollment_devicemanagement">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_corpenrollment_devicemanagement_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_corpenrollment_devicemanagement_update" />
+        <Item text="Importierte Windows Autopilot-Geräteidentität" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentity">
+          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_list" />
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_get" />
+          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_create" />
+          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_delete" />
+          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_update" />
         </Item>
-        <Item text="Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_enrollment_devicemanagement">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_enrollment_devicemanagement_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_enrollment_devicemanagement_update" />
-        </Item>
+        <Item text="Importstatus der importierten Windows Autopilot-Geräteidentität" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus" />
+        <Item text="Status der importierten Windows Autopilot-Geräteidentität" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate" />
       </Item>
       <Item text="Gerätekonfiguration" url="/en-us/api-reference/v1.0/resources/intune_device_configuration_conceptual">
-        <Item text="Alle Geräte – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_alldevicesassignmenttarget" />
-        <Item text="Alle lizenzierten Benutzer – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_alllicensedusersassignmenttarget" />
         <Item text="Android-Kompatibilitätsrichtlinie" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidcompliancepolicy">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidcompliancepolicy_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidcompliancepolicy_get" />
@@ -749,14 +712,26 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidgeneraldeviceconfiguration_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidgeneraldeviceconfiguration_update" />
         </Item>
+        <Item text="Geforderter Android-Kennworttyp" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidrequiredpasswordtype" />
         <Item text="App-Listenelement" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applistitem" />
+        <Item text="App-Listentyp" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applisttype" />
+        <Item text="Typ des Steuerelements für AppLocker-Anwendung" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applockerapplicationcontroltype" />
         <Item text="Konfigurationsbasis für Apple-Gerätefeatures" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_appledevicefeaturesconfigurationbase">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_appledevicefeaturesconfigurationbase_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_appledevicefeaturesconfigurationbase_get" />
         </Item>
+        <Item text="Freigabetyp der Zwischenablage des Anwendungsüberwachungsblocks" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applicationguardblockclipboardsharingtype" />
+        <Item text="Dateiübertragungstyp des Anwendungsüberwachungsblocks" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applicationguardblockfiletransfertype" />
+        <Item text="Modus für automatische Updates" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_automaticupdatemode" />
+        <Item text="BitLocker-Verschlüsselungsmethode" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_bitlockerencryptionmethod" />
         <Item text="BitLocker-Richtlinie für Wechseldatenträger" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_bitlockerremovabledrivepolicy" />
+        <Item text="Wochentag" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_dayofweek" />
+        <Item text="Typ der Defender-Cloudblockebene" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defendercloudblockleveltype" />
         <Item text="Defender-Aktionen bei Erkennung von Schadsoftware" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defenderdetectedmalwareactions" />
-        <Item text="Geräte- und App-Verwaltung – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceandappmanagementassignmenttarget" />
+        <Item text="Defender-Dateiaktivität" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defendermonitorfileactivity" />
+        <Item text="Defender-Aufforderung für Beispielübermittlung" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defenderpromptforsamplesubmission" />
+        <Item text="Defender-Überprüfungstyp" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defenderscantype" />
+        <Item text="Defender-Bedrohungsaktion" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defenderthreataction" />
         <Item text="Gerätekompatibilität-Aktionselement" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecomplianceactionitem">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_get" />
@@ -764,6 +739,7 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_update" />
         </Item>
+        <Item text="Gerätekompatibilität-Aktionstyp" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecomplianceactiontype" />
         <Item text="Gerätekompatibilitätsübersicht für Geräte" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancedeviceoverview">
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedeviceoverview_get" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedeviceoverview_update" />
@@ -774,6 +750,12 @@
           <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedevicestatus_create" />
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedevicestatus_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedevicestatus_update" />
+        </Item>
+        <Item text="Gerätekompatibilitätsrichtlinie" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicy">
+          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_list" />
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_get" />
+          <Item text="Aktion zuweisen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_assign" />
+          <Item text="scheduleActionsForRules-Aktion" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules" />
         </Item>
         <Item text="Zuweisung der Gerätekompatibilitätsrichtlinie" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicyassignment">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicyassignment_list" />
@@ -786,26 +768,13 @@
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicydevicestatesummary_get" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicydevicestatesummary_update" />
         </Item>
+        <Item text="Gerätekompatibilitätsrichtlinie – Einstellungsstatus" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicysettingstate" />
         <Item text="Gerätekompatibilitätsrichtlinie – Einstellungsstatuszusammenfassung" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_get" />
           <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_create" />
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_update" />
-        </Item>
-        <Item text="Gerätekompatibilitätsrichtlinie – Einstellungsstatus" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicysettingstate" />
-        <Item text="Gerätekompatibilitätsrichtlinie – Status" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicystate">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_get" />
-          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_create" />
-          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_delete" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_update" />
-        </Item>
-        <Item text="Gerätekompatibilitätsrichtlinie" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicy">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_get" />
-          <Item text="Aktion zuweisen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_assign" />
-          <Item text="scheduleActionsForRules-Aktion" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules" />
         </Item>
         <Item text="Gerätekompatibilität - geplante Aktion für Regel" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancescheduledactionforrule">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancescheduledactionforrule_list" />
@@ -832,6 +801,11 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceuserstatus_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceuserstatus_update" />
         </Item>
+        <Item text="Gerätekonfiguration" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfiguration">
+          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_list" />
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_get" />
+          <Item text="assign-Aktion" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_assign" />
+        </Item>
         <Item text="Zuweisung von Gerätekonfiguration" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationassignment">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationassignment_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationassignment_get" />
@@ -855,13 +829,6 @@
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationdevicestatus_update" />
         </Item>
         <Item text="Gerätekonfiguration – Einstellungsstatus" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationsettingstate" />
-        <Item text="Gerätekonfigurationsstatus" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationstate">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_get" />
-          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_create" />
-          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_delete" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_update" />
-        </Item>
         <Item text="Gerätekonfigurationsübersicht für Benutzer" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationuseroverview">
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationuseroverview_get" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationuseroverview_update" />
@@ -873,19 +840,14 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationuserstatus_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationuserstatus_update" />
         </Item>
-        <Item text="Gerätekonfiguration" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfiguration">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_get" />
-          <Item text="Aktion zuweisen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_assign" />
-        </Item>
         <Item text="Geräteverwaltungseinstellungen" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicemanagementsettings" />
-        <Item text="Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicemanagement">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicemanagement_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicemanagement_update" />
-        </Item>
+        <Item text="Schutzebene vor Gerätebedrohungen" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicethreatprotectionlevel" />
+        <Item text="Übermittlungsmodus für Diagnosedaten" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_diagnosticdatasubmissionmode" />
+        <Item text="Edge-Cookierichtlinie" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgecookiepolicy" />
+        <Item text="Edge-Suchmodul" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchengine" />
         <Item text="Edge-Suchmodul – Basis" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginebase" />
         <Item text="Edge-Suchmodul – benutzerdefiniert" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginecustom" />
-        <Item text="Edge-Suchmodul " url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchengine" />
+        <Item text="Edge-Suchmodultyp" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginetype" />
         <Item text="Editionsupgradekonfiguration" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_editionupgradeconfiguration">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_editionupgradeconfiguration_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_editionupgradeconfiguration_get" />
@@ -893,8 +855,11 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_editionupgradeconfiguration_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_editionupgradeconfiguration_update" />
         </Item>
-        <Item text="Ausschlussgruppe – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_exclusiongroupassignmenttarget" />
-        <Item text="Gruppe – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_groupassignmenttarget" />
+        <Item text="Typ der Edition Upgrade-Lizenz" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_editionupgradelicensetype" />
+        <Item text="Typ der Überprüfungsmethode für Firewall-Zertifikatsperrliste" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_firewallcertificaterevocationlistcheckmethodtype" />
+        <Item text="Methodentyp für Einreihung in die Warteschlange des Firewallpakets" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_firewallpacketqueueingmethodtype" />
+        <Item text="Methodentyp für Codierung bereits freigegebener Schlüssel für Firewall" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_firewallpresharedkeyencodingmethodtype" />
+        <Item text="Sicherheitsstufe der Internetwebsite" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_internetsitesecuritylevel" />
         <Item text="iOS-Zertifikatprofil" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioscertificateprofile">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_ioscertificateprofile_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_ioscertificateprofile_get" />
@@ -928,11 +893,12 @@
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_iosgeneraldeviceconfiguration_update" />
         </Item>
         <Item text="iOS-Startbildschirm – App" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenapp" />
-        <Item text="iOS-Startbildschirm – Ordnerseite" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenfolderpage" />
         <Item text="iOS-Startbildschirm – Ordner" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenfolder" />
+        <Item text="iOS-Startbildschirm – Ordnerseite" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenfolderpage" />
         <Item text="iOS-Startbildschirm – Element" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenitem" />
         <Item text="iOS-Startbildschirm – Seite" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenpage" />
         <Item text="iOS-Netznutzungsregel" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosnetworkusagerule" />
+        <Item text="iOS-Benachrichtigungstyp" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosnotificationalerttype" />
         <Item text="iOS-Benachrichtigungseinstellungen" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosnotificationsettings" />
         <Item text="iOS-Updatekonfiguration" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosupdateconfiguration">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_iosupdateconfiguration_list" />
@@ -948,6 +914,7 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_iosupdatedevicestatus_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_iosupdatedevicestatus_update" />
         </Item>
+        <Item text="Installationsstatus für iOS-Updates" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosupdatesinstallstatus" />
         <Item text="macOS-Kompatibilitätsrichtlinie" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_macoscompliancepolicy">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_macoscompliancepolicy_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_macoscompliancepolicy_get" />
@@ -976,10 +943,6 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_macosgeneraldeviceconfiguration_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_macosgeneraldeviceconfiguration_update" />
         </Item>
-        <Item text="Verwaltetes Gerät" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_manageddevice">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_manageddevice_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_manageddevice_get" />
-        </Item>
         <Item text="Medieninhaltsfilter Australien" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingaustralia" />
         <Item text="Medieninhaltsfilter Kanada" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingcanada" />
         <Item text="Medieninhaltsfilter Frankreich" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingfrance" />
@@ -989,19 +952,43 @@
         <Item text="Medieninhaltsfilter Neuseeland" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingnewzealand" />
         <Item text="Medieninhaltsfilter Vereinigtes Königreich" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingunitedkingdom" />
         <Item text="Medieninhaltsfilter USA" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingunitedstates" />
+        <Item text="Miracast-Kanal" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_miracastchannel" />
+        <Item text="OMA-Einstellung" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasetting" />
         <Item text="OMA-Einstellung base64" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingbase64" />
         <Item text="OMA-Einstellung boolesch" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingboolean" />
         <Item text="OMA-Einstellung Datum Uhrzeit" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingdatetime" />
         <Item text="OMA-Einstellung Gleitkomma" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingfloatingpoint" />
         <Item text="OMA-Einstellung ganze Zahl" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettinginteger" />
-        <Item text="OMA-Einstellung XML-Zeichenfolge" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingstringxml" />
         <Item text="OMA-Einstellung Zeichenfolge" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingstring" />
-        <Item text="OMA-Einstellung" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasetting" />
+        <Item text="OMA-Einstellung XML-Zeichenfolge" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingstringxml" />
+        <Item text="Richtlinienplattformtyp" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_policyplatformtype" />
+        <Item text="Features der Vorabversion" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_prereleasefeatures" />
+        <Item text="Typ von Bewertungs-Apps" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingappstype" />
+        <Item text="Filmbewertung Australien" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingaustraliamoviestype" />
+        <Item text="Fernsehbewertung Australien" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingaustraliatelevisiontype" />
+        <Item text="Filmbewertung Kanada" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingcanadamoviestype" />
+        <Item text="Fernsehbewertung Kanada" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingcanadatelevisiontype" />
+        <Item text="Filmbewertung Frankreich" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingfrancemoviestype" />
+        <Item text="Fernsehbewertung Frankreich" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingfrancetelevisiontype" />
+        <Item text="Filmbewertung Deutschland" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratinggermanymoviestype" />
+        <Item text="Fernsehbewertung Deutschland" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratinggermanytelevisiontype" />
+        <Item text="Filmbewertung Irland" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingirelandmoviestype" />
+        <Item text="Fernsehbewertung Irland" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingirelandtelevisiontype" />
+        <Item text="Filmbewertung Japan" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingjapanmoviestype" />
+        <Item text="Fernsehbewertung Japan" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingjapantelevisiontype" />
+        <Item text="Filmbewertung Neuseeland" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingnewzealandmoviestype" />
+        <Item text="Fernsehbewertung Neuseeland" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingnewzealandtelevisiontype" />
+        <Item text="Filmbewertung Vereinigtes Königreich" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedkingdommoviestype" />
+        <Item text="Fernsehbewertung Vereinigtes Königreich" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedkingdomtelevisiontype" />
+        <Item text="Filmbewertung USA" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedstatesmoviestype" />
+        <Item text="Fernsehbewertung USA" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedstatestelevisiontype" />
+        <Item text="Bericht" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_report" />
         <Item text="Berichtsstamm" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_reportroot">
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_reportroot_get" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_reportroot_update" />
         </Item>
-        <Item text="Bericht" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_report" />
+        <Item text="Geforderter Kennworttyp" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_requiredpasswordtype" />
+        <Item text="Filtertyp für sichere Suche" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_safesearchfiltertype" />
         <Item text="Einstellungsquelle" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_settingsource" />
         <Item text="Einstellungszustand-Gerätezusammenfassung" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_settingstatedevicesummary">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_settingstatedevicesummary_list" />
@@ -1010,7 +997,9 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_settingstatedevicesummary_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_settingstatedevicesummary_update" />
         </Item>
+        <Item text="Richtlinientyp für Löschung eines gemeinsam genutzten PC-Kontos" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sharedpcaccountdeletionpolicytype" />
         <Item text="Gemeinsam genutzter PC – Konto-Manager-Richtlinie" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sharedpcaccountmanagerpolicy" />
+        <Item text="Zulässiger Kontotyp für gemeinsam genutzten PC" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sharedpcallowedaccounttype" />
         <Item text="Konfiguration des gemeinsam genutzten PCs" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sharedpcconfiguration">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_sharedpcconfiguration_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_sharedpcconfiguration_get" />
@@ -1018,11 +1007,16 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_sharedpcconfiguration_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_sharedpcconfiguration_update" />
         </Item>
+        <Item text="Sicherheitsstufe für Website" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sitesecuritylevel" />
         <Item text="Softwareaktualisierung – Statuszusammenfassung" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_softwareupdatestatussummary">
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_softwareupdatestatussummary_get" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_softwareupdatestatussummary_update" />
         </Item>
-        <Item text="URI" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_uri" />
+        <Item text="Einstellung für Statusverwaltung" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_statemanagementsetting" />
+        <Item text="Sichtbarkeitseinstellung" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_visibilitysetting" />
+        <Item text="Cookieeinstellungen für Webbrowser" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_webbrowsercookiesettings" />
+        <Item text="Wöchentlicher Zeitplan" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_weeklyschedule" />
+        <Item text="Informationen auf dem Willkommensbildschirm" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_welcomescreenmeetinginformation" />
         <Item text="Windows 10-Kompatibilitätsrichtlinie" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windows10compliancepolicy">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10compliancepolicy_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10compliancepolicy_get" />
@@ -1037,6 +1031,7 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10customconfiguration_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10customconfiguration_update" />
         </Item>
+        <Item text="Typ der Windows 10 Edition" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windows10editiontype" />
         <Item text="Windows 10 Endpoint Protection-Konfiguration" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windows10endpointprotectionconfiguration">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10endpointprotectionconfiguration_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10endpointprotectionconfiguration_get" />
@@ -1101,6 +1096,7 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_update" />
         </Item>
+        <Item text="Windows-Übermittlungsoptimierungsmodus" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsdeliveryoptimizationmode" />
         <Item text="Windows-Firewall-Netzwerkprofil" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsfirewallnetworkprofile" />
         <Item text="Windows Phone 8.1-Kompatibilitätsrichtlinie" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsphone81compliancepolicy">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsphone81compliancepolicy_list" />
@@ -1123,6 +1119,9 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsphone81generalconfiguration_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsphone81generalconfiguration_update" />
         </Item>
+        <Item text="Aktivierungseinstellungen für Windows-Blickpunkt" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsspotlightenablementsettings" />
+        <Item text="Windows-Startmenü – Sichtbarkeitstyp für App-Liste" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsstartmenuapplistvisibilitytype" />
+        <Item text="Windows-Startmenü – Modustyp" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsstartmenumodetype" />
         <Item text="Windows Update - aktive Stunden für Installation" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdateactivehoursinstall" />
         <Item text="Windows Update for Business-Konfiguration" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_list" />
@@ -1133,9 +1132,12 @@
         </Item>
         <Item text="Windows Update-Zeitplantyp für Installation" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdateinstallscheduletype" />
         <Item text="Geplante Installation von Windows Update" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdatescheduledinstall" />
+        <Item text="Windows Update-Typ" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdatetype" />
+        <Item text="Einstellungen der Windows-Benutzerkontensteuerung" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsuseraccountcontrolsettings" />
       </Item>
-      <Item text="Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_corpenrollment_devicemanagement">
-        <Item text="Apple Push Notification-Zertifikat" url="/en-us/api-reference/v1.0/resources/intune_devices_applepushnotificationcertificate">
+      <Item text="Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_devices_conceptual">
+        <Item text="Aktionszustand" url="/en-us/api-reference/v1.0/resources/intune_devices_actionstate" />
+        <Item text="Apple-Pushbenachrichtigungszertifikat" url="/en-us/api-reference/v1.0/resources/intune_devices_applepushnotificationcertificate">
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_devices_applepushnotificationcertificate_get" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_devices_applepushnotificationcertificate_update" />
         </Item>
@@ -1149,6 +1151,7 @@
         </Item>
         <Item text="Audit-Eigenschaft" url="/en-us/api-reference/v1.0/resources/intune_auditing_auditproperty" />
         <Item text="Audit-Ressource" url="/en-us/api-reference/v1.0/resources/intune_auditing_auditresource" />
+        <Item text="Compliance-Status" url="/en-us/api-reference/v1.0/resources/intune_devices_compliancestate" />
         <Item text="In Konfigurations-Manager-Client aktivierte Features" url="/en-us/api-reference/v1.0/resources/intune_devices_configurationmanagerclientenabledfeatures" />
         <Item text="Benutzer von freigegebenem Apple-Gerät löschen – Aktiosergebnis" url="/en-us/api-reference/v1.0/resources/intune_devices_deleteuserfromsharedappledeviceactionresult" />
         <Item text="Erkannte App" url="/en-us/api-reference/v1.0/resources/intune_devices_detectedapp">
@@ -1158,14 +1161,14 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_devices_detectedapp_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_devices_detectedapp_update" />
         </Item>
-        <Item text="Ergebnis von Gerätevorgang" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceactionresult" />
-        <Item text="Gerätekategorie" url="/en-us/api-reference/v1.0/resources/intune_devices_devicecategory">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_devices_devicecategory_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_devices_devicecategory_update" />
-        </Item>
+        <Item text="Ergebnis von Geräteaktion" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceactionresult" />
+        <Item text="Grund des Geräteregistrierungsfehlers" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_deviceenrollmentfailurereason" />
         <Item text="Exchange-Zugriffsstatus für Geräte – Zusammenfassung" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceexchangeaccessstatesummary" />
         <Item text="Geräte-Geolocation" url="/en-us/api-reference/v1.0/resources/intune_devices_devicegeolocation" />
         <Item text="Integritätsnachweis für Geräte – Status" url="/en-us/api-reference/v1.0/resources/intune_devices_devicehealthattestationstate" />
+        <Item text="Exchange-Zugriffsstatus für Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_devices_devicemanagementexchangeaccessstate" />
+        <Item text="Exchange-Zugriffsstatusgrund für Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_devices_devicemanagementexchangeaccessstatereason" />
+        <Item text="Status des Abonnements der Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_devices_devicemanagementsubscriptionstate" />
         <Item text="Problembehandlung bei Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_devicemanagementtroubleshootingevent">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagementtroubleshootingevent_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagementtroubleshootingevent_get" />
@@ -1173,31 +1176,8 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagementtroubleshootingevent_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagementtroubleshootingevent_update" />
         </Item>
-        <Item text="Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_devices_devicemanagement">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_devices_devicemanagement_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_devices_devicemanagement_update" />
-        </Item>
-        <Item text="Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_endpointprotection_devicemanagement">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_endpointprotection_devicemanagement_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_endpointprotection_devicemanagement_update" />
-        </Item>
-        <Item text="Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_notification_devicemanagement">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_notification_devicemanagement_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_notification_devicemanagement_update" />
-        </Item>
-        <Item text="Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_remoteassistance_devicemanagement">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_remoteassistance_devicemanagement_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_remoteassistance_devicemanagement_update" />
-        </Item>
-        <Item text="Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_devicemanagement">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagement_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagement_update" />
-        </Item>
-        <Item text="Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_auditing_devicemanagement">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_auditing_devicemanagement_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_auditing_devicemanagement_update" />
-        </Item>
-        <Item text="Betriebssystem des Geräts - Zusammenfassung" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceoperatingsystemsummary" />
+        <Item text="Betriebssystem des Geräts – Zusammenfassung" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceoperatingsystemsummary" />
+        <Item text="Status der Geräteregistrierung" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceregistrationstate" />
         <Item text="Problembehandlung bei Registrierung" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_enrollmenttroubleshootingevent">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_enrollmenttroubleshootingevent_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_enrollmenttroubleshootingevent_get" />
@@ -1213,10 +1193,6 @@
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_notification_localizednotificationmessage_update" />
         </Item>
         <Item text="Gerät suchen – Aktionsergebnis" url="/en-us/api-reference/v1.0/resources/intune_devices_locatedeviceactionresult" />
-        <Item text="Verwaltete Geräte – Übersicht" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddeviceoverview">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_devices_manageddeviceoverview_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_devices_manageddeviceoverview_update" />
-        </Item>
         <Item text="Verwaltetes Gerät" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddevice">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_devices_manageddevice_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_devices_manageddevice_get" />
@@ -1242,6 +1218,22 @@
           <Item text="windowsDefenderUpdateSignatures-Aktion" url="/en-us/api-reference/v1.0/api/intune_devices_manageddevice_windowsdefenderupdatesignatures" />
           <Item text="updateWindowsDeviceAccount-Aktion" url="/en-us/api-reference/v1.0/api/intune_devices_manageddevice_updatewindowsdeviceaccount" />
         </Item>
+        <Item text="Verwaltete Geräte – Übersicht" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddeviceoverview">
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_devices_manageddeviceoverview_get" />
+          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_devices_manageddeviceoverview_update" />
+        </Item>
+        <Item text="Besitzertyp für verwaltetes Gerät" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddeviceownertype" />
+        <Item text="Vom Partner gemeldeter Integritätsstatus für verwaltetes Gerät" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddevicepartnerreportedhealthstate" />
+        <Item text="Verwaltungs-Agenttyp" url="/en-us/api-reference/v1.0/resources/intune_devices_managementagenttype" />
+        <Item text="Mobile App – Aktionstyp" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileappactiontype" />
+        <Item text="Mobile App –Absicht" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileappintent" />
+        <Item text="Mobile-App – Details zu Absicht und Status" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileappintentandstatedetail" />
+        <Item text="Mobile App – App-Problembehandlung – Verlauf der Richtlinienerstellung" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingapppolicycreationhistory" />
+        <Item text="Mobile App – App-Problembehandlung –Statusverlauf" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingappstatehistory" />
+        <Item text="Mobile App – App-Problembehandlung –Zielverlauf" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingapptargethistory" />
+        <Item text="Mobile App – App-Problembehandlung –Aktualisierungsverlauf" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingappupdatehistory" />
+        <Item text="Mobile App – Geräteproblembehandlung –Eincheckverlauf" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingdevicecheckinhistory" />
+        <Item text="Mobile App – Problembehandlung Verlaufselement" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootinghistoryitem" />
         <Item text="Benachrichtigungsvorlage" url="/en-us/api-reference/v1.0/resources/intune_notification_notificationmessagetemplate">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_get" />
@@ -1250,6 +1242,8 @@
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_update" />
           <Item text="sendTestMessage-Aktion" url="/en-us/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_sendtestmessage" />
         </Item>
+        <Item text="Brandingoptionen der Nachrichtenvorlage" url="/en-us/api-reference/v1.0/resources/intune_notification_notificationtemplatebrandingoptions" />
+        <Item text="Onboardingstatus für Remoteunterstützung" url="/en-us/api-reference/v1.0/resources/intune_remoteassistance_remoteassistanceonboardingstatus" />
         <Item text="Partner für Remoteunterstützung" url="/en-us/api-reference/v1.0/resources/intune_remoteassistance_remoteassistancepartner">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_remoteassistance_remoteassistancepartner_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_remoteassistance_remoteassistancepartner_get" />
@@ -1261,30 +1255,15 @@
         </Item>
         <Item text="Remotesperren – Aktionsergebnis" url="/en-us/api-reference/v1.0/resources/intune_devices_remotelockactionresult" />
         <Item text="Kennung zurücksetzen – Aktionsergebnis" url="/en-us/api-reference/v1.0/resources/intune_devices_resetpasscodeactionresult" />
+        <Item text="Resultierender App-Status" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_resultantappstate" />
+        <Item text="Ausführungsstatus" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_runstate" />
         <Item text="Aktualisieren von Windows-Gerätekonto – Aktionsparameter" url="/en-us/api-reference/v1.0/resources/intune_devices_updatewindowsdeviceaccountactionparameter" />
-        <Item text="Benutzer" url="/en-us/api-reference/v1.0/resources/intune_devices_user">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_devices_user_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_devices_user_get" />
-          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_devices_user_create" />
-          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_devices_user_delete" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_devices_user_update" />
-          <Item text="removeAllDevicesFromManagement-Aktion" url="/en-us/api-reference/v1.0/api/intune_devices_user_removealldevicesfrommanagement" />
-        </Item>
-        <Item text="Benutzer" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_user">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_get" />
-          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_create" />
-          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_delete" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_update" />
-        </Item>
         <Item text="Windows Defender-Überprüfung – Aktionsergebnis" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdefenderscanactionresult" />
         <Item text="Windows-Gerät – Konto" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceaccount" />
         <Item text="Windows-Gerät – AD-Konto" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceadaccount" />
         <Item text="Windows-Gerät – Azure AD-Konto" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceazureadaccount" />
       </Item>
-      <Item text="App-Schutz" url="/en-us/api-reference/v1.0/resources/intune_app_protection_conceptual">
-        <Item text="Alle Geräte – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_mam_alldevicesassignmenttarget" />
-        <Item text="Alle lizenzierten Benutzer – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_mam_alllicensedusersassignmenttarget" />
+      <Item text="Schutz mobiler Apps" url="/en-us/api-reference/v1.0/resources/intune_app_protection_conceptual">
         <Item text="Schutz verwalteter Android-Apps" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmanagedappprotection">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_get" />
@@ -1295,8 +1274,10 @@
         <Item text="Registrierung verwalteter Android-Apps" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmanagedappregistration">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappregistration_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappregistration_get" />
+          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappregistration_create" />
         </Item>
         <Item text="Mobile Android-App-ID" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmobileappidentifier" />
+        <Item text="Anwendungstyp" url="/en-us/api-reference/v1.0/resources/intune_wip_applicationtype" />
         <Item text="Standardschutz verwalteter Apps" url="/en-us/api-reference/v1.0/resources/intune_mam_defaultmanagedappprotection">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_mam_defaultmanagedappprotection_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_defaultmanagedappprotection_get" />
@@ -1304,17 +1285,6 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_mam_defaultmanagedappprotection_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_mam_defaultmanagedappprotection_update" />
         </Item>
-        <Item text="Geräte- und App-Verwaltung – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_mam_deviceandappmanagementassignmenttarget" />
-        <Item text="Geräte-App-Verwaltung" url="/en-us/api-reference/v1.0/resources/intune_mam_deviceappmanagement">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_deviceappmanagement_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_mam_deviceappmanagement_update" />
-        </Item>
-        <Item text="Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_wip_devicemanagement">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_wip_devicemanagement_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_wip_devicemanagement_update" />
-        </Item>
-        <Item text="Ausschlussgruppe – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_mam_exclusiongroupassignmenttarget" />
-        <Item text="Gruppe – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_mam_groupassignmenttarget" />
         <Item text="Schutz verwalteter iOS-Apps" url="/en-us/api-reference/v1.0/resources/intune_mam_iosmanagedappprotection">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_get" />
@@ -1332,11 +1302,16 @@
         <Item text="IPv6-Bereich" url="/en-us/api-reference/v1.0/resources/intune_mam_ipv6range" />
         <Item text="JSON" url="/en-us/api-reference/v1.0/resources/intune_mam_json" />
         <Item text="Schlüssel-Wert-Paar" url="/en-us/api-reference/v1.0/resources/intune_mam_keyvaluepair" />
+        <Item text="Freigabeebene der Zwischenablage verwalteter Apps" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappclipboardsharinglevel" />
         <Item text="Konfiguration verwalteter Apps" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappconfiguration">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_mam_managedappconfiguration_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_managedappconfiguration_get" />
         </Item>
+        <Item text="Datenverschlüsselungstyp für verwaltete Apps" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappdataencryptiontype" />
+        <Item text="Datenspeicherstandort für verwaltete Apps" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappdatastoragelocation" />
+        <Item text="Datenübertragungsebene  für verwaltete Apps" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappdatatransferlevel" />
         <Item text="Diagnosestatus verwalteter Apps" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappdiagnosticstatus" />
+        <Item text="Grund für Kennzeichnung verwalteter App" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappflaggedreason" />
         <Item text="Verwaltete App-Vorgänge" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappoperation">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_mam_managedappoperation_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_managedappoperation_get" />
@@ -1344,16 +1319,17 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_mam_managedappoperation_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_mam_managedappoperation_update" />
         </Item>
-        <Item text="Richtlinie für verwaltete Apps – Bereitstellungszusammenfassung pro App" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummaryperapp" />
-        <Item text="Bereitstellungszusammenfassung für Richtlinie für verwaltete Apps" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummary">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicydeploymentsummary_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicydeploymentsummary_update" />
-        </Item>
+        <Item text="Zeichensatz für PIN verwalteter Apps" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppincharacterset" />
         <Item text="Verwaltete App-Richtlinie" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicy">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicy_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicy_get" />
           <Item text="targetApps-Aktion" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicy_targetapps" />
         </Item>
+        <Item text="Bereitstellungszusammenfassung für Richtlinie für verwaltete Apps" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummary">
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicydeploymentsummary_get" />
+          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicydeploymentsummary_update" />
+        </Item>
+        <Item text="Richtlinie für verwaltete Apps – Bereitstellungszusammenfassung pro App" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummaryperapp" />
         <Item text="Schutz verwalteter Apps" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappprotection">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_mam_managedappprotection_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_managedappprotection_get" />
@@ -1363,13 +1339,13 @@
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_mam_managedappregistration_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_managedappregistration_get" />
         </Item>
-        <Item text="Status verwalteter App – roh" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappstatusraw">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_get" />
-        </Item>
         <Item text="Status verwalteter Apps" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappstatus">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatus_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatus_get" />
+        </Item>
+        <Item text="Status verwalteter App – roh" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappstatusraw">
+          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_list" />
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_get" />
         </Item>
         <Item text="Verwaltete mobile App" url="/en-us/api-reference/v1.0/resources/intune_mam_managedmobileapp">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_mam_managedmobileapp_list" />
@@ -1396,20 +1372,24 @@
           <Item text="Aktion zuweisen" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappconfiguration_assign" />
           <Item text="targetApps-Aktion" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappconfiguration_targetapps" />
         </Item>
+        <Item text="Verwaltete Ziel-Apps – Richtlinienzuweisung" url="/en-us/api-reference/v1.0/resources/intune_mam_targetedmanagedapppolicyassignment">
+          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_list" />
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_get" />
+          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_delete" />
+          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_update" />
+        </Item>
         <Item text="Benutzerorientierter Schutz verwalteter Apps" url="/en-us/api-reference/v1.0/resources/intune_mam_targetedmanagedappprotection">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappprotection_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappprotection_get" />
-          <Item text="Aktion zuweisen" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappprotection_assign" />
+          <Item text="assign-Aktion" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappprotection_assign" />
         </Item>
-        <Item text="Benutzer" url="/en-us/api-reference/v1.0/resources/intune_mam_user">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_mam_user_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_user_get" />
-          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_mam_user_create" />
-          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_mam_user_delete" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_mam_user_update" />
-          <Item text="wipeManagedAppRegistrationsByDeviceTag-Aktion" url="/en-us/api-reference/v1.0/api/intune_mam_user_wipemanagedappregistrationsbydevicetag" />
+        <Item text="Windows Information Protection" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotection">
+          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_list" />
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_get" />
+          <Item text="assign-Aktion" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_assign" />
         </Item>
-        <Item text="Windows Information Protection-App-Schulungszusammenfassung" url="/en-us/api-reference/v1.0/resources/intune_wip_windowsinformationprotectionapplearningsummary">
+        <Item text="Windows Information Protection-App" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionapp" />
+        <Item text="Windows Information Protection-App – Schulungszusammenfassung" url="/en-us/api-reference/v1.0/resources/intune_wip_windowsinformationprotectionapplearningsummary">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionapplearningsummary_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionapplearningsummary_get" />
           <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionapplearningsummary_create" />
@@ -1423,9 +1403,9 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotectionapplockerfile_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotectionapplockerfile_update" />
         </Item>
-        <Item text="Windows Information Protection-App" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionapp" />
         <Item text="Windows Information Protection – Datenwiederherstellungszertifikat" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectiondatarecoverycertificate" />
         <Item text="Windows Information Protection – Desktop-App" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectiondesktopapp" />
+        <Item text="Windows Information Protection – Erzwingungsstufe" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionenforcementlevel" />
         <Item text="Windows Information Protection – IP-Bereichssammlung" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectioniprangecollection" />
         <Item text="Windows Information Protection – Netzwerk-Schulungszusammenfassung" url="/en-us/api-reference/v1.0/resources/intune_wip_windowsinformationprotectionnetworklearningsummary">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionnetworklearningsummary_list" />
@@ -1434,6 +1414,7 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionnetworklearningsummary_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionnetworklearningsummary_update" />
         </Item>
+        <Item text="Windows Information Protection – Anforderungen für PIN-Zeichensatz" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionpincharacterrequirements" />
         <Item text="Windows Information Protection-Richtlinie" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionpolicy">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotectionpolicy_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotectionpolicy_get" />
@@ -1444,28 +1425,8 @@
         <Item text="Windows Information Protection – Proxydomänensammlung" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionproxieddomaincollection" />
         <Item text="Windows Information Protection – Ressourcensammlung" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionresourcecollection" />
         <Item text="Windows Information Protection – Store-App" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionstoreapp" />
-        <Item text="Windows Information Protection" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotection">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_get" />
-          <Item text="Aktion zuweisen" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_assign" />
-        </Item>
       </Item>
       <Item text="Onboarding" url="/en-us/api-reference/v1.0/resources/intune_onboarding_conceptual">
-        <Item text="Alle Geräte – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_onboarding_alldevicesassignmenttarget" />
-        <Item text="Alle lizenzierten Benutzer – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_onboarding_alllicensedusersassignmenttarget" />
-        <Item text="Geräte- und App-Verwaltung – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_onboarding_deviceandappmanagementassignmenttarget" />
-        <Item text="Geräte-App-Verwaltung" url="/en-us/api-reference/v1.0/resources/intune_onboarding_deviceappmanagement">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceappmanagement_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceappmanagement_update" />
-          <Item text="syncMicrosoftStoreForBusinessApps-Aktion" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceappmanagement_syncmicrosoftstoreforbusinessapps" />
-        </Item>
-        <Item text="Gerätekategorie" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicecategory">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_get" />
-          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_create" />
-          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_delete" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_update" />
-        </Item>
         <Item text="Konfiguration der Geräteregistrierung" url="/en-us/api-reference/v1.0/resources/intune_onboarding_deviceenrollmentconfiguration">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceenrollmentconfiguration_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceenrollmentconfiguration_get" />
@@ -1502,6 +1463,9 @@
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementexchangeconnector_update" />
           <Item text="sync-Aktion" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementexchangeconnector_sync" />
         </Item>
+        <Item text="Status des Exchange Connectors für Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementexchangeconnectorstatus" />
+        <Item text="Synchronisierungstyp des Exchange Connectors für Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementexchangeconnectorsynctype" />
+        <Item text="Typ des Exchange Connectors für Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementexchangeconnectortype" />
         <Item text="Geräteverwaltungspartner" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementpartner">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_get" />
@@ -1509,10 +1473,9 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_update" />
         </Item>
-        <Item text="Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagement">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagement_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagement_update" />
-        </Item>
+        <Item text="App-Typ für Geräteverwaltungspartner" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementpartnerapptype" />
+        <Item text="Mandantenstatus für Geräteverwaltungspartner" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementpartnertenantstate" />
+        <Item text="Aktivierung" url="/en-us/api-reference/v1.0/resources/intune_onboarding_enablement" />
         <Item text="Zuweisung der Registrierungskonfiguration" url="/en-us/api-reference/v1.0/resources/intune_onboarding_enrollmentconfigurationassignment">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_onboarding_enrollmentconfigurationassignment_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_onboarding_enrollmentconfigurationassignment_get" />
@@ -1520,10 +1483,8 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_onboarding_enrollmentconfigurationassignment_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_onboarding_enrollmentconfigurationassignment_update" />
         </Item>
-        <Item text="Ausschlussgruppe – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_onboarding_exclusiongroupassignmenttarget" />
-        <Item text="Gruppe – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_onboarding_groupassignmenttarget" />
         <Item text="Intune-Marke" url="/en-us/api-reference/v1.0/resources/intune_onboarding_intunebrand" />
-        <Item text="MIME-Inhalt" url="/en-us/api-reference/v1.0/resources/intune_onboarding_mimecontent" />
+        <Item text="MDM-Zertifizierungsstelle" url="/en-us/api-reference/v1.0/resources/intune_onboarding_mdmauthority" />
         <Item text="MTD-Connector (Mobile Threat Defense)" url="/en-us/api-reference/v1.0/resources/intune_onboarding_mobilethreatdefenseconnector">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_onboarding_mobilethreatdefenseconnector_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_onboarding_mobilethreatdefenseconnector_get" />
@@ -1531,6 +1492,7 @@
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_onboarding_mobilethreatdefenseconnector_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_onboarding_mobilethreatdefenseconnector_update" />
         </Item>
+        <Item text="Mandantenstatus für Mobile Threat-Partner" url="/en-us/api-reference/v1.0/resources/intune_onboarding_mobilethreatpartnertenantstate" />
         <Item text="Einstellungen für lokalen, bedingten Zugriff" url="/en-us/api-reference/v1.0/resources/intune_onboarding_onpremisesconditionalaccesssettings">
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_onboarding_onpremisesconditionalaccesssettings_get" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_onboarding_onpremisesconditionalaccesssettings_update" />
@@ -1542,13 +1504,18 @@
           <Item text="setMobileDeviceManagementAuthority-Aktion" url="/en-us/api-reference/v1.0/api/intune_onboarding_organization_setmobiledevicemanagementauthority" />
         </Item>
         <Item text="RGB-Farbe" url="/en-us/api-reference/v1.0/resources/intune_onboarding_rgbcolor" />
-        <Item text="Benutzer" url="/en-us/api-reference/v1.0/resources/intune_onboarding_user">
-          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_list" />
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_get" />
-          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_create" />
-          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_delete" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_update" />
+        <Item text="VPP-Token" url="/en-us/api-reference/v1.0/resources/intune_onboarding_vpptoken">
+          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_list" />
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_get" />
+          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_create" />
+          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_delete" />
+          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_update" />
+          <Item text="syncLicenses-Aktion" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_synclicenses" />
+          <Item text="syncLicenses-Aktion" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_synclicenses" />
         </Item>
+        <Item text="VPP-Tokenstatus" url="/en-us/api-reference/v1.0/resources/intune_onboarding_vpptokenstate" />
+        <Item text="Synchronisierungsstatus des VPP-Tokens" url="/en-us/api-reference/v1.0/resources/intune_onboarding_vpptokensyncstatus" />
+        <Item text="PIN-Verwendung für Windows Hello for Business " url="/en-us/api-reference/v1.0/resources/intune_onboarding_windowshelloforbusinesspinusage" />
       </Item>
       <Item text="Rollenbasierte Zugriffssteuerung" url="/en-us/api-reference/v1.0/resources/intune_rbac_conceptual">
         <Item text="Geräte- und App-Verwaltungsrollenzuweisung" url="/en-us/api-reference/v1.0/resources/intune_rbac_deviceandappmanagementroleassignment">
@@ -1564,10 +1531,6 @@
           <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroledefinition_create" />
           <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroledefinition_delete" />
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroledefinition_update" />
-        </Item>
-        <Item text="Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_rbac_devicemanagement">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_rbac_devicemanagement_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_rbac_devicemanagement_update" />
         </Item>
         <Item text="Ressourcenaktion" url="/en-us/api-reference/v1.0/resources/intune_rbac_resourceaction" />
         <Item text="Ressourcenvorgang" url="/en-us/api-reference/v1.0/resources/intune_rbac_resourceoperation">
@@ -1592,13 +1555,46 @@
           <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_rbac_roledefinition_update" />
         </Item>
         <Item text="Rollenberechtigung" url="/en-us/api-reference/v1.0/resources/intune_rbac_rolepermission" />
-        <Item text="URI" url="/en-us/api-reference/v1.0/resources/intune_rbac_uri" />
+      </Item>
+      <Item text="Gemeinsam genutzte Ressourcen" url="/en-us/api-reference/v1.0/resources/intune_shared_conceptual">
+        <Item text="Alle Geräte – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_shared_alldevicesassignmenttarget" />
+        <Item text="Alle lizenzierten Benutzer – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_shared_alllicensedusersassignmenttarget" />
+        <Item text="Compliance-Status" url="/en-us/api-reference/v1.0/resources/intune_shared_compliancestatus" />
+        <Item text="Geräte- und App-Verwaltung – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceandappmanagementassignmenttarget" />
+        <Item text="Geräte-App-Verwaltung" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceappmanagement">
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement" />
+          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement" />
+          <Item text="syncMicrosoftStoreForBusinessApps-Aktion" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps" />
+        </Item>
+        <Item text="Gerätekategorie" url="/en-us/api-reference/v1.0/resources/intune_shared_devicecategory">
+          <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+        </Item>
+        <Item text="Geräteregistrierungstyp" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceenrollmenttype" />
+        <Item text="Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_shared_devicemanagement">
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_get" />
+          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_update" />
+        </Item>
+        <Item text="Ausschlussgruppe – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_shared_exclusiongroupassignmenttarget" />
+        <Item text="Gruppe – Zuweisungsziel" url="/en-us/api-reference/v1.0/resources/intune_shared_groupassignmenttarget" />
+        <Item text="Installationsabsicht" url="/en-us/api-reference/v1.0/resources/intune_shared_installintent" />
+        <Item text="MIME-Inhalt" url="/en-us/api-reference/v1.0/resources/intune_shared_mimecontent" />
+        <Item text="Gespeicherte Optionen für Generierung des Benutzeroberflächenzustands" url="/en-us/api-reference/v1.0/resources/intune_shared_saveduistategenerationoptions" />
+        <Item text="URI" url="/en-us/api-reference/v1.0/resources/intune_shared_uri" />
+        <Item text="Benutzer" url="/en-us/api-reference/v1.0/resources/intune_shared_user">
+          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_shared_user" />
+          <Item text="Erstellen" url="/en-us/api-reference/v1.0/api/intune_shared_user" />
+          <Item text="Löschen" url="/en-us/api-reference/v1.0/api/intune_shared_user_delete" />
+          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_shared_user" />
+          <Item text="removeAllDevicesFromManagement-Aktion" url="/en-us/api-reference/v1.0/api/intune_shared_user_removealldevicesfrommanagement" />
+          <Item text="wipeManagedAppRegistrationsByDeviceTag-Aktion" url="/en-us/api-reference/v1.0/api/intune_shared_user_wipemanagedappregistrationsbydevicetag" />
+        </Item>
+        <Item text="Kontotyp des VPP-Tokens" url="/en-us/api-reference/v1.0/resources/intune_shared_vpptokenaccounttype" />
       </Item>
       <Item text="Telekommunikationsausgaben" url="/en-us/api-reference/v1.0/resources/intune_tem_conceptual">
-        <Item text="Geräteverwaltung" url="/en-us/api-reference/v1.0/resources/intune_tem_devicemanagement">
-          <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_tem_devicemanagement_get" />
-          <Item text="Aktualisieren" url="/en-us/api-reference/v1.0/api/intune_tem_devicemanagement_update" />
-        </Item>
         <Item text="Telecom Expense Management-Partner" url="/en-us/api-reference/v1.0/resources/intune_tem_telecomexpensemanagementpartner">
           <Item text="Auflisten" url="/en-us/api-reference/v1.0/api/intune_tem_telecomexpensemanagementpartner_list" />
           <Item text="Abrufen" url="/en-us/api-reference/v1.0/api/intune_tem_telecomexpensemanagementpartner_get" />
@@ -2402,7 +2398,7 @@
         <Item text="Ereignisse auflisten" url="/en-us/api-reference/beta/api/user_list_events" SEOKeyword="Ereignisse auflisten, Microsoft Graph-API, Benutzer-API" SEODescription="Dient zum Abrufen einer Liste von Ereignisobjekten." />
         <Item text="Ereignis erstellen" url="/en-us/api-reference/beta/api/user_post_events" SEOKeyword="Ereignis erstellen, Microsoft Graph-API, Benutzer-API" SEODescription="Verwenden Sie diese API zum Erstellen eines neuen Ereignisses." />
         <Item text="Ereignis abrufen" url="/en-us/api-reference/beta/api/event_get" SEOKeyword="Ereignis abrufen, Microsoft Graph-API, Outlook-Kalender-API" SEODescription="Dient zum Abrufen der Eigenschaften und der Beziehungen des Ereignisobjekts." />
-        <Item text="Ereignis aktualisieren" url="/en-us/api-reference/beta/api/event_update" SEOKeyword="Ereignis aktualisieren, Microsoft Graph-API, Outlook-Kalender-API" SEODescription="Dient zum Aktualisieren der Eigenschaften des Ereignisobjekts." />
+        <Item text="Ereignis aktualisieren" url="/en-us/api-reference/beta/api/event_update" SEOKeyword="Ereignis aktualisieren, Microsoft Graph-API, Outlook-Kalender-API" SEODescription="Mit dieser API können Sie die Eigenschaften eines Ereignisobjekts aktualisieren." />
         <Item text="Ereignis weiterleiten" url="/en-us/api-reference/beta/api/event_forward" SEODescription="" />
         <Item text="Ereignis löschen" url="/en-us/api-reference/beta/api/event_delete" SEOKeyword="Ereignis löschen, Microsoft Graph-API, Outlook-Kalender-API" SEODescription="Dient zum Löschen des Ereignisses." />
         <Item text="Ereignis abbrechen" url="/en-us/api-reference/beta/api/event_cancel" SEOKeyword="Ereignis abbrechen, Microsoft Graph-API, Outlook-Kalender-API" SEODescription="Bricht das Ereignis ab." />
