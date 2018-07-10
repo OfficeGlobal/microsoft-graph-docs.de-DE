@@ -83,6 +83,29 @@ Aktuell liegt ein Problem vor, aufgrund dessen sich die Eigenschaft **allowExter
 Bekannte Probleme bei der Verwendung der Delta-Abfrage finden Sie im Abschnitt [ Delta-Abfrage](#delta-query) in diesem Artikel.
 
 
+## <a name="bookings"></a>Bookings
+
+### <a name="errorexceededfindcountlimit-when-querying-bookingbusinesses"></a>„ErrorExceededFindCountLimit“ bei Abfrage von „bookingBusinesses“
+
+Beim Abrufen der Liste mit `bookingBusinesses` tritt ein Fehler mit dem folgenden Fehlercode auf, wenn eine Organisation über mehrere Buchungsunternehmen verfügt und das Konto, das die Anforderung stellt, kein Administratorkonto ist:
+
+```json
+{
+  "error": {
+    "code": "ErrorExceededFindCountLimit",
+    "message":
+      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
+  }
+}
+```
+
+Schränken Sie zur Umgehung dieses Problems den Satz von Unternehmen ein, der von der Anforderung zurückgegeben wird, indem Sie einen `query`-Parameter einbeziehen. Beispiel:
+
+```
+GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
+```
+
+
 ## <a name="calendars"></a>Kalender
 
 ### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>Hinzufügen von und Zugreifen auf ICS-basierte Kalender im Postfach des Benutzers
@@ -178,27 +201,6 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 Der comment-Parameter für das Erstellen eines Antwort- oder Weiterleitungsentwurfs ([createReply](../api-reference/v1.0/api/message_createreply.md), [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) wird nicht Teil des Textkörpers des resultierenden Nachrichtenentwurfs.
 
-## <a name="bookings"></a>Bookings
-
-### <a name="errorexceededfindcountlimit-when-querying-bookingbusinesses"></a>„ErrorExceededFindCountLimit“ bei Abfrage von „bookingBusinesses“
-
-Das Abrufen der Liste mit `bookingBusinesses` schlägt mit dem folgenden Fehlercode fehl, wenn eine Organisation über mehrere Buchungsunternehmen verfügt und das Konto, das die Anforderung stellt, kein Administratorkonto ist:
-
-```json
-{
-  "error": {
-    "code": "ErrorExceededFindCountLimit",
-    "message":
-      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
-  }
-}
-```
-
-Der Satz von Unternehmen, der von der Anforderung zurückgegeben wird, kann durch die Einbeziehung eines Abfrageparameters eingeschränkt werden. Beispiel:
-
-```
-GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
-```
 
 ## <a name="drives-files-and-content-streaming"></a>Laufwerke, Dateien und Streamen von Inhalten
 

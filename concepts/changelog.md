@@ -12,6 +12,24 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 | :-------------- | :---------- | :--------------------------------------- |
 | Änderung          | Beta        | Die [application](https://graph.microsoft.io/de-DE/docs/api-reference/beta/resources/application)- und [servicePrincipal](https://graph.microsoft.io/de-DE/docs/api-reference/beta/resources/serviceprincipal)-APIs werden in der Vorschau (Beta) aktualisiert. Die erste Gruppe von Änderungen wird am 16. Juli 2018 angewendet. Die Änderungen umfassen Umbenennungen und Umstrukturierungen von Eigenschaften. Die meisten der vorhandenen Eigenschaften sind erst verfügbar, wenn die Änderungen abgeschlossen sind. Es werden neue Eigenschaften hinzugefügt. Die Änderungen werden in der Vorschau (Beta) vor der Veröffentlichung in v1.0 veröffentlicht. |
 
+### <a name="microsoft-teams-apis"></a>Microsoft Teams-APIs
+| **Änderungstyp** | **Version**   | **Beschreibung**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Löschung|Beta|DELETE /groups/{id}/team/channels/{id} entfernt; verwenden Sie stattdessen DELETE /teams/{id}/channels/{id}. |
+|Löschung|Beta|GET /groups/{id}/team/channels/{id} entfernt; verwenden Sie stattdessen GET /teams/{id}/channels/{id}. |
+|Löschung|Beta|PATCH /groups/{id}/team/channels/{id} entfernt; verwenden Sie stattdessen PATCH /teams/{id}/channels/{id}. |
+|Löschung|Beta|POST /groups/{id}/team/channels/{id}/chatthreads entfernt; verwenden Sie stattdessen POST /teams/{id}/channels/{id}/chatthreads. |
+|Löschung|Beta|GET /groups/{id}/team/channels entfernt; verwenden Sie stattdessen GET /teams/{id}/channels. |
+|Löschung|Beta|DELETE /groups/{id}/channels/{id} entfernt; verwenden Sie stattdessen DELETE /teams/{id}/channels/{id}. |
+|Löschung|Beta|GET /groups/{id}/channels/{id} entfernt; verwenden Sie stattdessen GET /teams/{id}/channels/{id}. |
+|Löschung|Beta|PATCH /groups/{id}/channels/{id} entfernt; verwenden Sie stattdessen PATCH /teams/{id}/channels/{id}. |
+|Löschung|Beta|POST /groups/{id}/channels/{id}/chatthreads entfernt; verwenden Sie stattdessen POST /teams/{id}/channels/{id}/chatthreads. |
+|Löschung|Beta|GET /groups/{id}/channels entfernt; verwenden Sie stattdessen GET /teams/{id}/channels. |
+|Löschung|Beta|POST /groups/{id}/team/channels entfernt; verwenden Sie stattdessen POST /teams/{id}/channels. |
+|Löschung|Beta|GET /groups/{id}/team entfernt; verwenden Sie stattdessen GET /teams/{id}. |
+|Löschung|Beta|PATCH /groups/{id}/team entfernt; verwenden Sie stattdessen PATCH /teams/{id}. |
+
+
 ## <a name="june-2018"></a>Juni 2018
 
 ### <a name="directory-apis"></a>Verzeichnis-APIs
@@ -814,7 +832,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Änderung|Beta|Die Navigationseigenschaft **allowedAppLockerFiles** wurde aus der Entität [windowsInformationProtection](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotection) entfernt.|
 |Änderung|Beta|Die Navigationseigenschaft **windowsProtectionState** wurde aus der Entität [windowsManagedDevice](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_devices_windowsmanageddevice) entfernt.|
 |Änderung|Beta|Die Eigenschaft **v11_0** wurde zum komplexen Typ [iosMinimumOperatingSystem](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_apps_iosminimumoperatingsystem) hinzugefügt.|
-|Änderung|Beta|Die Eigenschaft **denied** wurde zum komplexen Typ [windowsInformationProtectionApp](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotectionapp) hinzugefügt.|
+|Ändern|Beta|Die Eigenschaft **denied** wurde zum komplexen Typ [windowsInformationProtectionApp](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotectionapp) hinzugefügt.|
 
 ### <a name="reports-apis"></a>Bericht-APIs
 | Änderungstyp | Version | Beschreibung                              |
