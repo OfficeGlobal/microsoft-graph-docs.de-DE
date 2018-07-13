@@ -42,6 +42,9 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 |Änderungstyp|Version|Beschreibung|
 |:---|:---|:---|
+|Ergänzungen|v1.0|Die Eigenschaft **connectorServerName** wurde zur Entität [deviceManagementExchangeConnector](../api-reference/v1.0/resources/intune_onboarding_devicemanagementexchangeconnector.md) hinzugefügt.|
+|Ergänzungen|v1.0|Die Eigenschaften **firewallEnabled**, **firewallBlockAllIncoming** und **firewallEnableStealthMode** wurden der Entität [macOSCompliancePolicy](../api-reference/v1.0/resources/intune_deviceconfig_macoscompliancepolicy.md) hinzugefügt.|
+|Ergänzungen|v1.0|Das Mitglied **unknown** wurde dem Enum-Typ [iosUpdatesInstallStatus](../api-reference/v1.0/resources/intune_deviceconfig_iosupdatesinstallstatus.md) hinzugefügt.|
 |Ergänzungen|Beta|Hinzugefügte neue Entitäten:<br/>[androidDeviceOwnerWiFiConfiguration](../api-reference/beta/resources/intune_deviceconfig_androiddeviceownerwificonfiguration.md)<br/>[iosVppAppAssignedDeviceLicense](../api-reference/beta/resources/intune_apps_iosvppappassigneddevicelicense.md)<br/>[iosVppAppAssignedLicense](../api-reference/beta/resources/intune_apps_iosvppappassignedlicense.md)<br/>[iosVppAppAssignedUserLicense](../api-reference/beta/resources/intune_apps_iosvppappassigneduserlicense.md)<br/>[managedDeviceMobileAppConfigurationState](../api-reference/beta/resources/intune_deviceconfig_manageddevicemobileappconfigurationstate.md)<br/>[userPFXCertificate](../api-reference/beta/resources/intune_raimportcerts_userpfxcertificate.md)<br/>[vppTokenLicenseSummary](../api-reference/beta/resources/intune_onboarding_vppTokenLicenseSummary.md)<br/>|
 |Ergänzungen|Beta|Die folgenden komplexen Typen wurden hinzugefügt:<br/>[iosVppAppRevokeLicensesActionResult](../api-reference/beta/resources/intune_apps_iosvppapprevokelicensesactionresult.md)<br/>|
 |Ergänzungen|Beta|Neue Enumerationstypen hinzugefügt:<br/>[androidDeviceOwnerSystemUpdateInstallType](../api-reference/beta/resources/intune_deviceconfig_androiddeviceownersystemupdateinstalltype.md)<br/>[androidDeviceOwnerWiFiSecurityType](../api-reference/beta/resources/intune_deviceconfig_androiddeviceownerwifisecuritytype.md)<br/>[userPfxIntendedPurpose](../api-reference/beta/resources/intune_raimportcerts_userpfxintendedpurpose.md)<br/>[userPfxPaddingScheme](../api-reference/beta/resources/intune_raimportcerts_userpfxpaddingscheme.md)<br/>|
@@ -386,7 +389,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 | Änderung | Beta | UserActivity.ReadWrite.CreatedByApp-Berechtigung zu [Upsert HistoryItem](https://developer.microsoft.com/de-DE/graph/docs/beta/projectrome_delete_historyItem) hinzugefügt |
 | Änderung | Beta | **status**-Eigenschaft zu [Aktivität](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/projectrome_activity) hinzugefügt |
 | Änderung | Beta | **activity**-Navigationseigenschaft zu [historyItem](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/projectrome_historyitem) hinzugefügt |
-| Änderung | Beta | Neue APIs zu [Project Rome-Übersicht](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/project_rome_overview) hinzugefügt |
+| Ändern | Beta | Neue APIs zu [Project Rome-Übersicht](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/project_rome_overview) hinzugefügt |
 
 ### <a name="azure-ad-apis"></a>Azure AD-APIs
 
@@ -829,7 +832,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Änderung|Beta|Die Navigationseigenschaften **mobileAppIdentifierDeployments** und **targetedSecurityGroups** wurden aus der Entität [targetedManagedAppConfiguration](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_mam_targetedmanagedappconfiguration) entfernt.|
 |Änderung|Beta|Die Navigationseigenschaft **targetedSecurityGroups** wurde aus der Entität [targetedManagedAppProtection](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_mam_targetedmanagedappprotection) entfernt.|
 |Änderung|Beta|Die Navigationseigenschaft **deviceManagementTroubleshootingEvents** wurde zur Entität [user](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_devices_user) hinzugefügt.|
-|Änderung|Beta|Die Navigationseigenschaft **allowedAppLockerFiles** wurde aus der Entität [windowsInformationProtection](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotection) entfernt.|
+|Ändern|Beta|Die Navigationseigenschaft **allowedAppLockerFiles** wurde aus der Entität [windowsInformationProtection](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotection) entfernt.|
 |Änderung|Beta|Die Navigationseigenschaft **windowsProtectionState** wurde aus der Entität [windowsManagedDevice](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_devices_windowsmanageddevice) entfernt.|
 |Änderung|Beta|Die Eigenschaft **v11_0** wurde zum komplexen Typ [iosMinimumOperatingSystem](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_apps_iosminimumoperatingsystem) hinzugefügt.|
 |Ändern|Beta|Die Eigenschaft **denied** wurde zum komplexen Typ [windowsInformationProtectionApp](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotectionapp) hinzugefügt.|
@@ -1882,10 +1885,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 | **Änderungstyp** | **Version** | **Beschreibung**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Ergänzungen        | Beta        | Eine neue Deltafunktion zu folgenden Elemente hinzufügen, um [Delta Abfrage](https://developer.microsoft.com/de-DE/graph/docs/concepts/delta_query_overview) auszuführen:<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Beispiele finden Sie unter Folgendem:<br/>
-  [Inkrementelle Änderungen an Gruppen abrufen (Vorschau)](https://developer.microsoft.com/de-DE/graph/docs/concepts/delta_query_groups)<br/>
-  [Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen (Vorschau)](https://developer.microsoft.com/de-DE/graph/docs/concepts/delta_query_messages)<br/>
-  [Inkrementelle Änderungen an Benutzern abrufen (Vorschau)](https://developer.microsoft.com/de-DE/graph/docs/concepts/delta_query_users) |
+| Ergänzungen        | Beta        | Eine neue Deltafunktion zu folgenden Elemente hinzufügen, um [Delta Abfrage](https://developer.microsoft.com/de-DE/graph/docs/concepts/delta_query_overview) auszuführen:<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Beispiele finden Sie unter Folgendem:<br/>[Inkrementelle Änderungen an Gruppen abrufen (Vorschau)](https://developer.microsoft.com/de-DE/graph/docs/concepts/delta_query_groups)<br/>[Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen (Vorschau)](https://developer.microsoft.com/de-DE/graph/docs/concepts/delta_query_messages)<br/>[Inkrementelle Änderungen an Benutzern abrufen (Vorschau)](https://developer.microsoft.com/de-DE/graph/docs/concepts/delta_query_users) |
 
 ### <a name="excel-apis"></a>Excel-APIs
 
