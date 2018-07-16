@@ -58,10 +58,6 @@ Beispiele für Gruppenfeatures, die nur delegierte Berechtigungen unterstützen:
 
 Microsoft Teams und Office 365-Gruppen [haben eine ähnliche Funktionalität](../api-reference/beta/resources/teams_api_overview.md). Alle Gruppen-APIs können für Teams verwendet werden, mit der Ausnahme, dass mit der API „Gruppe erstellen“ derzeit kein Team erstellt werden kann.  In zukünftigen API-Versionen wird dies unterstützt.
 
-### <a name="microsoft-teams-channels-preview"></a>Microsoft Teams-Kanäle (Vorschau)
-
-Zurzeit können Sie Kanäle lesen und erstellen, aber nicht aktualisieren oder löschen.  In zukünftigen API-Versionen wird dies unterstützt.
-
 ### <a name="microsoft-teams-chat-threads-and-chat-messages-preview"></a>Microsoft Teams-Chatthreads und -Chatnachrichten (Vorschau)
 
 Zurzeit können Sie Chatthreads in Kanälen erstellen, aber keine vorhandenen Chatthreads lesen und keine Antworten auf diese hinzufügen. Außerdem können Sie keine direkten Chats zwischen Benutzern lesen oder schreiben, die sich außerhalb des Bereichs eines Teams oder Kanals befinden.  Zukünftige API-Versionen werden über zusätzliche Funktionen in diesem Bereich verfügen.
