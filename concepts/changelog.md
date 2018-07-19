@@ -1835,8 +1835,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 | Änderung      | Beta    | Die **userStatusOverview**-Navigationseigenschaft wurde der [deviceCompliancePolicy](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy)-Entität hinzugefügt. |
 | Änderung      | Beta    | Die **userStatusOverview**-Navigationseigenschaft wurde der [deviceConfiguration](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfiguration)-Entität hinzugefügt. |
 | Änderung      | Beta    | Die Navigationseigenschaften **groupAssignments**, **deviceStatuses** und **userStatuses** wurden der [iosLobAppProvisioningConfiguration](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_apps_ioslobappprovisioningconfiguration)-Entität hinzugefügt. |
-| Änderung      | Beta    | Der Typ der folgenden Eigenschaften in der [windows10VpnConfiguration](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10vpnconfiguration)-Entität wurde geändert:<br/>
-  **identityCertificate** von [windows10CertificateProfileBase](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10certificateprofilebase) in [windowsCertificateProfileBase](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowscertificateprofilebase) |
+| Änderung      | Beta    | Der Typ der folgenden Eigenschaften in der [windows10VpnConfiguration](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10vpnconfiguration)-Entität wurde geändert:<br/>**identityCertificate** von [windows10CertificateProfileBase](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10certificateprofilebase) in [windowsCertificateProfileBase](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowscertificateprofilebase) |
 | Änderung      | Beta    | Die Eigenschaften **deviceComplianceCheckinThresholdDays** und **isScheduledActionEnabled** wurden dem komplexen Typ [deviceManagementSettings](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementsettings) hinzugefügt. |
 | Änderung      | Beta    | Die Eigenschaften **windowsCommercialId** und **windowsCommercialIdLastModifiedTime** wurden aus dem komplexen Typ [deviceManagementSettings](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementsettings) entfernt. |
 | Änderung      | Beta    | Die Eigenschaften **bundleID**, **appName**, **publisher**, **enabled** und **showOnLockScreen** wurden dem komplexen Typ [iosNotificationSettings](https://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosnotificationsettings) hinzugefügt. |
@@ -1946,8 +1945,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 | **Änderungstyp** | **Version** | **Beschreibung**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Ergänzungen        | v1.0        | 
-  [Erweiterte Eigenschaften](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/resources/extended-properties-overview) werden jetzt von folgenden Ressourcen unterstützt: Nachricht, mailFolder, Ereignis, Kalender, Kontakt, contactFolder, Gruppenereignis, Gruppenkalender, Gruppenbeitrag. |
+| Ergänzungen        | v1.0        | [Erweiterte Eigenschaften](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/resources/extended-properties-overview) werden jetzt von folgenden Ressourcen unterstützt: Nachricht, mailFolder, Ereignis, Kalender, Kontakt, contactFolder, Gruppenereignis, Gruppenkalender, Gruppenbeitrag. |
 
 ### <a name="groups"></a>Gruppen
 
@@ -1995,8 +1993,7 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 
 | **Änderungstyp** | **Version** | **Beschreibung**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Ergänzungen        | v1.0        | 
-  **onlineMeetingUrl**-Eigenschaft zur [Ereignis](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/resources/event)-Ressource hinzugefügt. |
+| Ergänzungen        | v1.0        | **onlineMeetingUrl**-Eigenschaft zur [Ereignis](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/resources/event)-Ressource hinzugefügt. |
 | Ergänzungen        | Beta        | Die [forward](http://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/api/event_forward)-Aktion wurde zur Ereignisressource hinzugefügt. |
 | Ergänzungen        | Beta        | Die folgenden Eigenschaften wurden zur [calendar](http://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/calendar)-Ressource zur Unterstützung der Freigabe von Kalendern hinzugefügt: **canEdit**, **canShare**, **canViewPrivateItems**, **isShared**, **isShareWithMe** und **Besitzer**. |
 
@@ -2004,10 +2001,8 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 
 | **Änderungstyp** | **Version** | **Beschreibung**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Ergänzungen        | v1.0        | 
-  [mailboxSettings](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/resources/mailboxsettings) komplexer Typ, einschließlich der **automaticRepliesSetting**-, **timeZone**- und **Sprache**-Eigenschaften hinzugefügt. |
-| Ergänzungen        | v1.0        | 
-  **mailboxSettings**-Eigenschaft zur [Benutzer](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/resources/user)-Ressource hinzugefügt. |
+| Ergänzungen        | v1.0        | [mailboxSettings](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/resources/mailboxsettings) komplexer Typ, einschließlich der **automaticRepliesSetting**-, **timeZone**- und **Sprache**-Eigenschaften hinzugefügt. |
+| Ergänzungen        | v1.0        | **mailboxSettings**-Eigenschaft zur [Benutzer](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/resources/user)-Ressource hinzugefügt. |
 | Ergänzungen        | Beta        | Unterstützung für das Erstellen, Auflisten, Abrufen und Löschen einer oder mehrerer Instanzen von [Erwähnungen](http://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/resources/mention) in einer Nachricht hinzugefügt. Erwähnungen unterstützen Aufrufe, um die Aufmerksamkeit anderer Benutzer in einer Nachricht zu erhalten. |
 | Ergänzungen        | Beta        | Unterstützung für die [getMailTips](http://developer.microsoft.com/de-DE/graph/docs/api-reference/beta/api/user_getmailtips)-Aktion, um beliebige MailTips für bestimmte Empfänger zu erhalten hinzugefügt. Folgende Ressourcen wurden hinzugefügt: automaticRepliesMailTips, mailTips, mailTipsError. |
 
