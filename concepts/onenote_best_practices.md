@@ -3,6 +3,7 @@
 Dieser Artikel enthält Vorschläge für die Arbeit mit OneNote-APIs in Microsoft Graph. Diese Empfehlungen basieren auf den Antworten auf häufig gestellte Fragen auf Stack Overflow und Twitter.
 
 ## <a name="use-select-to-select-the-minimum-set-of-properties-you-need"></a>Verwenden von $select, um die minimale Anzahl der benötigten Eigenschaften auszuwählen
+
 Wenn Sie eine Ressource (z. B. Abschnitte innerhalb eines Notizbuchs) abfragen, verwende Sie eine ähnliche Abfrage wie die folgende.
 
 ```http
@@ -18,11 +19,15 @@ GET ~/notebooks/{id}/sections?$select=id,displayName
 Der gleiche Ansatz gilt für andere OneNote-APIs.
 
 ## <a name="use-expand-instead-of-making-multiple-api-calls"></a>Verwenden von $expand, anstatt mehrere API-Aufrufe auszuführen
+
 Nehmen wir an, dass Sie alle Notizbücher, Abschnitte und Abschnittsgruppen des Benutzers in einer hierarchischen Ansicht abrufen möchten. Dazu können Sie folgendermaßen vorgehen:
 
 * Rufen Sie `GET ~/notebooks` auf, um die Liste der Notizbücher anzuzeigen.
+
 * Rufen Sie für jedes abgerufene Notizbuch `GET ~/notebooks/{notebookId}/sections` auf, um die Liste der Abschnitte anzuzeigen.
+
 * Rufen Sie für jedes abgerufene Notizbuch `GET ~/notebooks/{notebookId}/sectionGroups` auf, um die Liste der Abschnittsgruppen anzuzeigen.
+
 * Optional können Sie die Abschnittsgruppen rekursiv durchlaufen.
 
 Dies ist zwar (mit ein paar zusätzlichen sequenziellen Roundtrips zum Dienst) möglich, besserer wäre es jedoch, den `$expand`-Parameter zu verwenden. 

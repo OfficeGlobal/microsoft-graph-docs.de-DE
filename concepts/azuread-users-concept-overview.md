@@ -8,7 +8,7 @@ Benutzer stehen für ein Geschäfts- oder Schul- bzw. Unikonto von Azure Active 
 
 Sie können mit Microsoft Graph auf die Beziehungen, Dokumente, Kontakte und Einstellungen zugreifen, die im Kontext des angemeldeten Benutzers relevant sind. Die **Benutzer**-Ressource bietet eine einfache Möglichkeit zum Zugreifen und Bearbeiten von Benutzerressourcen ohne zusätzliche Aufrufe, ohne Suche nach bestimmten Authentifizierungsinformationen und die direkte Ausgabe von Abfragen für Microsoft Graph-Ressourcen.
 
-Um auf die Informationen oder Daten eines Benutzers zuzugreifen, müssen Sie [den Zugriff im Namen dieses Benutzers erhalten](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user). Das Authentifizieren Ihrer Anwendung mit [Admin Zustimmung](https://developer.microsoft.com/de-DE/graph/docs/concepts/permissions_reference) ermöglicht Ihnen, eine umfassendere Palette von Entitäten, die einem Benutzer zugeordnet sind, zu verwenden und zu aktualisieren.
+Um auf die Informationen oder Daten eines Benutzers zuzugreifen, müssen Sie [den Zugriff im Namen dieses Benutzers erhalten](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user). Das Authentifizieren Ihrer Anwendung mit [Admin Zustimmung](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference) ermöglicht Ihnen, eine umfassendere Palette von Entitäten, die einem Benutzer zugeordnet sind, zu verwenden und zu aktualisieren.
 
 ### <a name="manage-your-organization"></a>Verwalten Ihrer Organisation
 
@@ -52,5 +52,5 @@ Maximieren Sie die Relevanz in der Anwendung, indem Sie zuletzt verwendete oder 
 - Festlegen der Zugriffssteuerung und Richtlinien für Benutzer mit der [Azure AD-API](../api-reference/v1.0/resources/azure_ad_overview.md).
 - Überprüfen der [Berechtigungen](permissions_reference.md), die Ihre App zum Zugreifen auf die Benutzerdaten haben muss. 
 <!-- This isn't really a next step; let's remove to keep the list of links concise.>
-- Stay up to date with the Microsoft Graph [changelog](https://developer.microsoft.com/graph/docs/concepts/changelog).
+- Stay up to date with Microsoft Graph [changelog](https://developer.microsoft.com/graph/docs/concepts/changelog).
 -->
