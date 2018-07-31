@@ -1,8 +1,8 @@
-# <a name="open-the-onenote-client"></a><span data-ttu-id="fdfc9-101">Öffnen der OneNote-Clients</span><span class="sxs-lookup"><span data-stu-id="fdfc9-101">Open the Postman client.</span></span>
+# <a name="open-the-onenote-client"></a><span data-ttu-id="7efad-101">Öffnen der OneNote-Clients</span><span class="sxs-lookup"><span data-stu-id="7efad-101">Open the OneNote client</span></span>
 
-<span data-ttu-id="fdfc9-102">Sie können die **Links**-Eigenschaft einer Seite oder eines Notizbuchs verwenden, um eine OneNote-Anwendung für eine bestimmte Seite oder ein Notizbuch zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-102">You can use the **links** property of a page or notebook to open a OneNote application to a particular page or notebook.</span></span> 
+<span data-ttu-id="7efad-102">Sie können die **Links**-Eigenschaft einer Seite oder eines Notizbuchs verwenden, um eine OneNote-Anwendung für eine bestimmte Seite oder ein Notizbuch zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="7efad-102">You can use the **links** property of a page or notebook to open a OneNote application to a particular page or notebook.</span></span> 
 
-<span data-ttu-id="fdfc9-103">Die **Links**-Eigenschaft ist ein JSON-Objekt, das zwei URLs enthält.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-103">The **links** property is a JSON object that contains two URLs.</span></span> <span data-ttu-id="fdfc9-104">Die URLs öffnen die Seite oder das Notizbuch in der OneNote-Clientanwendung oder in OneNote Online.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-104">The URLs will open the page or notebook in the OneNote client application or in OneNote Online.</span></span>
+<span data-ttu-id="7efad-103">Die **Links**-Eigenschaft ist ein JSON-Objekt, das zwei URLs enthält.</span><span class="sxs-lookup"><span data-stu-id="7efad-103">The **links** property is a JSON object that contains two URLs.</span></span> <span data-ttu-id="7efad-104">Die URLs öffnen die Seite oder das Notizbuch in der OneNote-Clientanwendung oder in OneNote Online.</span><span class="sxs-lookup"><span data-stu-id="7efad-104">The URLs will open the page or notebook in the OneNote client application or in OneNote Online.</span></span>
 
 ```json
 { 
@@ -17,25 +17,34 @@
 }
 ```
 
-- <span data-ttu-id="fdfc9-105">Die **OneNoteClientUrl** öffnet den OneNote-Client, wenn dieser bereits auf dem Gerät installiert ist.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-105">**oneNoteClientUrl** - Opens the OneNote client if it is already installed on the device.</span></span> <span data-ttu-id="fdfc9-106">Diese URL enthält das Präfix *onenote*.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-106">This URL includes the *onenote* prefix.</span></span>
-<span data-ttu-id="fdfc9-107">Die sprachspezifische Version wird geöffnet, sofern diese auf dem Gerät installiert ist.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-107">Opens the language-specific version if one is installed on the device.</span></span> <span data-ttu-id="fdfc9-108">Andernfalls wird die Spracheinstellung der Plattform verwendet.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-108">Otherwise, uses the platform language setting.</span></span>
-- <span data-ttu-id="fdfc9-109">**OneNoteWebUrl** öffnet OneNote Online, wenn der Standardbrowser auf dem Gerät OneNote Online unterstützt.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-109">**oneNoteWebUrl** - Opens OneNote Online if the default browser on the device supports it.</span></span> <span data-ttu-id="fdfc9-110">Verwendet die Einstellung für die Browsersprache.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-110">Uses the browser language setting.</span></span>
+- <span data-ttu-id="7efad-105">**oneNoteClientUrl**</span><span class="sxs-lookup"><span data-stu-id="7efad-105">**oneNoteClientUrl**</span></span> 
+
+    - <span data-ttu-id="7efad-106">Öffnet den OneNote-Client, wenn dieser bereits auf dem Gerät installiert ist.</span><span class="sxs-lookup"><span data-stu-id="7efad-106">oneNoteClientUrl - Opens the OneNote client if it is already installed on the device.</span></span> <span data-ttu-id="7efad-107">Diese URL enthält das Präfix *onenote*.</span><span class="sxs-lookup"><span data-stu-id="7efad-107">This URL includes the *onenote* prefix.</span></span>
+    - <span data-ttu-id="7efad-108">Die sprachspezifische Version wird geöffnet, sofern diese auf dem Gerät installiert ist.</span><span class="sxs-lookup"><span data-stu-id="7efad-108">Opens the language-specific version if one is installed on the device.</span></span> <span data-ttu-id="7efad-109">Andernfalls wird die Spracheinstellung der Plattform verwendet.</span><span class="sxs-lookup"><span data-stu-id="7efad-109">Otherwise, uses the platform language setting.</span></span>
+
+- <span data-ttu-id="7efad-110">**oneNoteWebUrl**</span><span class="sxs-lookup"><span data-stu-id="7efad-110">**oneNoteWebUrl**</span></span> 
+
+    - <span data-ttu-id="7efad-111">Öffnet OneNote Online, wenn der Standardbrowser auf dem Gerät OneNote Online unterstützt.</span><span class="sxs-lookup"><span data-stu-id="7efad-111">oneNoteWebUrl - Opens OneNote Online if the default browser on the device supports it.</span></span> 
+    - <span data-ttu-id="7efad-112">Verwendet die Einstellung für die Browsersprache.</span><span class="sxs-lookup"><span data-stu-id="7efad-112">Uses the browser language setting.</span></span>
 
 
-<span data-ttu-id="fdfc9-111">Die OneNote-API gibt die **links**-Eigenschaft in der HTTP-Antwort für die folgenden Vorgänge zurück:</span><span class="sxs-lookup"><span data-stu-id="fdfc9-111">The OneNote API returns the **links** property in the HTTP response for the following operations:</span></span>
+<span data-ttu-id="7efad-113">Die OneNote-API gibt die **links**-Eigenschaft in der HTTP-Antwort für die folgenden Vorgänge zurück:</span><span class="sxs-lookup"><span data-stu-id="7efad-113">The OneNote API returns the **links** property in the HTTP response for the following operations:</span></span>
 
-- <span data-ttu-id="fdfc9-112">Erstellen einer Seite durch Senden einer [ `POST pages` ](../api-reference/v1.0/api/section_post_pages.md)-Anforderung</span><span class="sxs-lookup"><span data-stu-id="fdfc9-112">Create a page by sending a [`POST pages`](../api-reference/v1.0/api/section_post_pages.md) request</span></span>
-- <span data-ttu-id="fdfc9-113">Erstellen eines Notizbuchs durch Senden einer [ `POST notebooks` ](../api-reference/v1.0/api/onenote_post_notebooks.md)-Anforderung</span><span class="sxs-lookup"><span data-stu-id="fdfc9-113">Create a notebook by sending a [`POST notebooks`](../api-reference/v1.0/api/onenote_post_notebooks.md) request</span></span>
-- <span data-ttu-id="fdfc9-114">Abrufen von Seitenmetadaten durch Senden einer [ `GET pages` ](../api-reference/v1.0/api/page_get.md)- oder [ `GET pages/{id}` ](../api-reference/v1.0/api/page_get.md)-Anforderung</span><span class="sxs-lookup"><span data-stu-id="fdfc9-114">Get page metadata by sending a [`GET pages`](../api-reference/v1.0/api/page_get.md) or [`GET pages/{id}`](../api-reference/v1.0/api/page_get.md) request</span></span>
-- <span data-ttu-id="fdfc9-115">Abrufen von Seitenmetadaten durch Senden einer [ `GET notebooks` ](../api-reference/v1.0/api/notebook_get.md)- oder [ `GET notebooks/{id}` ](../api-reference/v1.0/api/notebook_get.md)-Anforderung</span><span class="sxs-lookup"><span data-stu-id="fdfc9-115">Get notebook metadata by sending a [`GET notebooks`](../api-reference/v1.0/api/notebook_get.md) or [`GET notebooks/{id}`](../api-reference/v1.0/api/notebook_get.md) request</span></span>
+- <span data-ttu-id="7efad-114">Erstellen Sie eine Seite durch Senden einer [`POST pages`](../api-reference/v1.0/api/section_post_pages.md)-Anforderung.</span><span class="sxs-lookup"><span data-stu-id="7efad-114">Create a page by sending a [`POST pages`](../api-reference/v1.0/api/section_post_pages.md) request</span></span>
 
-<span data-ttu-id="fdfc9-116">In den folgenden Beispielen wird gezeigt, wie der Statuscode der Antwort überprüft, die JSON an die richtigen URLs übersandt und der OneNote-Client geöffnet wird.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-116">The following examples show how to check the status code of the response, parse the JSON to extract the URLs, and then open the OneNote client.</span></span>
+- <span data-ttu-id="7efad-115">Erstellen Sie ein Notizbuch durch Senden einer [`POST notebooks`](../api-reference/v1.0/api/onenote_post_notebooks.md)-Anforderung.</span><span class="sxs-lookup"><span data-stu-id="7efad-115">Create a notebook by sending a [`POST notebooks`](../api-reference/v1.0/api/onenote_post_notebooks.md) request</span></span>
 
-## <a name="ios-example"></a><span data-ttu-id="fdfc9-117">iOS-Beispiel</span><span class="sxs-lookup"><span data-stu-id="fdfc9-117">iOS example</span></span>
+- <span data-ttu-id="7efad-116">Rufen Sie Seitenmetadaten durch Senden einer [`GET pages`](../api-reference/v1.0/api/page_get.md)- oder [`GET pages/{id}`](../api-reference/v1.0/api/page_get.md)-Anforderung ab.</span><span class="sxs-lookup"><span data-stu-id="7efad-116">Get page metadata by sending a [`GET pages`](../api-reference/v1.0/api/page_get.md) or [`GET pages/{id}`](../api-reference/v1.0/api/page_get.md) request</span></span>
 
-<span data-ttu-id="fdfc9-118">Im folgenden Beispiel werden die OneNote-Client-URLs aus der JSON-Antwort abgerufen.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-118">The following example gets the OneNote client URLs from the JSON response.</span></span> <span data-ttu-id="fdfc9-119">Die AFNetworking-Bibliothek (http://afnetworking.com/) wird verwendet, um die beiden URLs zu extrahieren.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-119">It uses the AFNetworking library (http://afnetworking.com/) to extract the two URLs.</span></span> <span data-ttu-id="fdfc9-120">Im Beispiel ist `created` der Zeiger für das ONSCPSStandardResponse-Objekt, in dem die Antwortwerte gespeichert wurden, und `responseObject` enthält die analysierte JSON.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-120">The following example gets the oncshort client URLs from the JSON response. It uses the AFNetworking library (http://afnetworking.com/http://afnetworking.com/) to extract the two URLs. In the example, created`created` is a pointer to the ONSCPSStandardResponse`responseObject` object used to store the response values, and responseObject holds the parsed JSON.</span></span>
+- <span data-ttu-id="7efad-117">Rufen Sie Notizbuchmetadaten durch Senden einer [`GET notebooks`](../api-reference/v1.0/api/notebook_get.md)- oder [`GET notebooks/{id}`](../api-reference/v1.0/api/notebook_get.md)-Anforderung ab.</span><span class="sxs-lookup"><span data-stu-id="7efad-117">Get notebook metadata by sending a [`GET notebooks`](../api-reference/v1.0/api/notebook_get.md) or [`GET notebooks/{id}`](../api-reference/v1.0/api/notebook_get.md) request</span></span>
 
-```objectivec
+<span data-ttu-id="7efad-118">In den folgenden Beispielen wird gezeigt, wie der Statuscode der Antwort überprüft, die JSON an die richtigen URLs übersandt und der OneNote-Client geöffnet wird.</span><span class="sxs-lookup"><span data-stu-id="7efad-118">The following examples show how to check the status code of the response, parse the JSON to extract the URLs, and then open the OneNote client.</span></span>
+
+## <a name="ios-example"></a><span data-ttu-id="7efad-119">iOS-Beispiel</span><span class="sxs-lookup"><span data-stu-id="7efad-119">iOS example</span></span>
+
+<span data-ttu-id="7efad-120">Im folgenden Beispiel werden die OneNote-Client-URLs aus der JSON-Antwort abgerufen.</span><span class="sxs-lookup"><span data-stu-id="7efad-120">The following example gets the OneNote client URLs from the JSON response.</span></span> <span data-ttu-id="7efad-121">Die AFNetworking-Bibliothek (http://afnetworking.com/) wird verwendet, um die beiden URLs zu extrahieren.</span><span class="sxs-lookup"><span data-stu-id="7efad-121">It uses the AFNetworking library (http://afnetworking.com/) to extract the two URLs.</span></span> <span data-ttu-id="7efad-122">Im Beispiel ist `created` der Zeiger für das **ONSCPSStandardResponse**-Objekt, in dem die Antwortwerte gespeichert wurden, und `responseObject` enthält die analysierte JSON.</span><span class="sxs-lookup"><span data-stu-id="7efad-122">In the example, `created` is a pointer to the ONSCPSStandardResponse object used to store the response values, and `responseObject` holds the parsed JSON.</span></span>
+
+```objc
     /* Import the JSON library */
     #import "AFURLRequestSerialization.h"
 
@@ -73,16 +82,18 @@
       }
 ``` 
 
-<span data-ttu-id="fdfc9-121">Nachdem Sie die URLs der Antwort analysiert haben, können Sie OneNote mit dem folgenden Code öffnen.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-121">After you parse the URLs from the response, you can open OneNote by using the following code.</span></span> <span data-ttu-id="fdfc9-122">Verwenden Sie `oneNoteClientUrl`, um den installierten OneNote-Client zu öffnen, oder `oneNoteWebURL`, um OneNote Online zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-122">Use `oneNoteClientUrl` to open the installed OneNote client or `oneNoteWebURL` to open OneNote Online.</span></span>
+<br/>
 
-```objectivec
+<span data-ttu-id="7efad-123">Nachdem Sie die URLs der Antwort analysiert haben, können Sie OneNote mit dem folgenden Code öffnen.</span><span class="sxs-lookup"><span data-stu-id="7efad-123">After you parse the URLs from the response, you can open OneNote by using the following code.</span></span> <span data-ttu-id="7efad-124">Verwenden Sie `oneNoteClientUrl`, um den installierten OneNote-Client zu öffnen, oder `oneNoteWebURL`, um OneNote Online zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="7efad-124">Use `oneNoteClientUrl` to open the installed OneNote client or `oneNoteWebURL` to open OneNote Online.</span></span>
+
+```objc
 NSURL *url = [NSURL URLWithString:standardResponse.oneNoteWebUrl];
 [[UIApplication sharedApplication] openURL:url];
 ```
 
-## <a name="android-example"></a><span data-ttu-id="fdfc9-123">Android-Beispiel</span><span class="sxs-lookup"><span data-stu-id="fdfc9-123">Android example</span></span>
+## <a name="android-example"></a><span data-ttu-id="7efad-125">Android-Beispiel</span><span class="sxs-lookup"><span data-stu-id="7efad-125">Android example</span></span>
 
-<span data-ttu-id="fdfc9-124">Suchen Sie zunächst nach dem für den Erfolg-Statuscode und analysieren Sie dann die JSON.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-124">First, check for the success status code and then parse the JSON.</span></span> <span data-ttu-id="fdfc9-125">Das Beispiel setzt voraus, dass eine POST-Anforderung gesendet wurde, und sucht daher nach einem `201 Created`-Statuscode.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-125">The example assumes a POST request was sent, so it checks for a `201 Created` status code.</span></span> <span data-ttu-id="fdfc9-126">Wenn Sie eine `GET`-Anforderung durchgeführt haben, suchen Sie stattdessen nach einem `200` Statuscode.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-126">If you made a `GET` request, check for a `200` status code instead.</span></span>
+<span data-ttu-id="7efad-126">Suchen Sie zunächst nach dem Erfolg-Statuscode, und analysieren Sie dann die JSON.</span><span class="sxs-lookup"><span data-stu-id="7efad-126">First, check for the success status code and then parse the JSON.</span></span> <span data-ttu-id="7efad-127">Das Beispiel setzt voraus, dass eine POST-Anforderung gesendet wurde, und sucht daher nach einem `201 Created`-Statuscode.</span><span class="sxs-lookup"><span data-stu-id="7efad-127">The example assumes a POST request was sent, so it checks for a `201 Created` status code.</span></span> <span data-ttu-id="7efad-128">Wenn Sie eine `GET`-Anforderung durchgeführt haben, suchen Sie stattdessen nach einem `200` Statuscode.</span><span class="sxs-lookup"><span data-stu-id="7efad-128">If you made a `GET` request, check for a `200` status code instead.</span></span>
 
 ```java
 public ApiResponse getResponse() throws Exception {
@@ -139,7 +150,9 @@ public ApiResponse getResponse() throws Exception {
 }
 ```
 
-<span data-ttu-id="fdfc9-127">Mit den Antworteigenschaften kann Ihre App OneNote Online öffnen (siehe folgendes Beispiel).</span><span class="sxs-lookup"><span data-stu-id="fdfc9-127">Using the response properties, your app can open OneNote Online, as shown in the following example.</span></span>
+<br/>
+
+<span data-ttu-id="7efad-129">Mit den Antworteigenschaften kann Ihre App OneNote Online öffnen (siehe folgendes Beispiel).</span><span class="sxs-lookup"><span data-stu-id="7efad-129">Using the response properties, your app can open OneNote Online, as shown in the following example.</span></span>
 
 ```java 
 if (response.getResponseCode() == 201) {
@@ -148,8 +161,10 @@ if (response.getResponseCode() == 201) {
     startActivity(launchBrowser);
 }
 ```
- 
-<span data-ttu-id="fdfc9-128">Oder Ihre App kann den OneNote-Client auf einem Android-Gerät öffnen.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-128">Or your app can open the OneNote client on an Android device.</span></span> <span data-ttu-id="fdfc9-129">Bei Verwendung der `oneNoteClientUrl`-Eigenschaft, müssen Sie die GUID-Zeichenfolgen in geschweifte Klammern `{ }` einfassen, bevor Sie das Internet starten.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-129">When using the `oneNoteClientUrl` property, you must surround the GUID strings with braces `{ }` before starting the Intent.</span></span> <span data-ttu-id="fdfc9-130">Im folgenden Beispiel wird dieser Vorgang erklärt.</span><span class="sxs-lookup"><span data-stu-id="fdfc9-130">The following example shows how to:</span></span>
+
+<br/>
+
+<span data-ttu-id="7efad-130">Oder Ihre App kann den OneNote-Client auf einem Android-Gerät öffnen.</span><span class="sxs-lookup"><span data-stu-id="7efad-130">Or your app can open the OneNote client on an Android device.</span></span> <span data-ttu-id="7efad-131">Bei Verwendung der `oneNoteClientUrl`-Eigenschaft, müssen Sie die GUID-Zeichenfolgen in geschweifte Klammern `{ }` einfassen, bevor Sie das Internet starten.</span><span class="sxs-lookup"><span data-stu-id="7efad-131">When using the `oneNoteClientUrl` property, you must surround the GUID strings with braces `{ }` before starting the Intent.</span></span> <span data-ttu-id="7efad-132">Im folgenden Beispiel wird dieser Vorgang erklärt.</span><span class="sxs-lookup"><span data-stu-id="7efad-132">The following example shows how to do that.</span></span>
 
 ```java 
 if (response.getResponseCode() == 201) {
@@ -168,7 +183,7 @@ if (response.getResponseCode() == 201) {
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="fdfc9-131">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="fdfc9-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7efad-133">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7efad-133">See also</span></span>
 
-- [<span data-ttu-id="fdfc9-132">Abrufen von OneNote-Inhalt und -Struktur</span><span class="sxs-lookup"><span data-stu-id="fdfc9-132">Get OneNote content and structure</span></span>](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
-- [<span data-ttu-id="fdfc9-133">Erstellen von OneNote-Seiten</span><span class="sxs-lookup"><span data-stu-id="fdfc9-133">Create OneNote pages</span></span>](../api-reference/v1.0/api/section_post_pages.md)
+- [<span data-ttu-id="7efad-134">Abrufen von OneNote-Inhalt und -Struktur</span><span class="sxs-lookup"><span data-stu-id="7efad-134">Get OneNote content and structure</span></span>](onenote-get-content.md)
+- [<span data-ttu-id="7efad-135">Erstellen von OneNote-Seiten</span><span class="sxs-lookup"><span data-stu-id="7efad-135">Create OneNote pages</span></span>](onenote-create-page.md)
