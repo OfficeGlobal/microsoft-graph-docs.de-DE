@@ -3,6 +3,7 @@
 Dieser Artikel beschreibt Fehlercodes, die von der OneNote-API zurückgegeben werden, wenn eine von der API gesendete Anfrage fehlschlägt.
 
 ## <a name="error-response-example"></a>Fehlerantwort-Beispiel
+
 Wenn Ihre Anforderung einen Fehler generiert, hält die OneNote-API die Ausführung der Anforderung an und gibt eine Fehlerantwort als JSON-Objekt zurück. Eine Fehlerantwort enthält den zugehörigen Fehlercode, eine Nachricht und einen Link zum entsprechenden Abschnitt dieses Artikels. Im folgenden Beispiel wird eine Fehlerantwort veranschaulicht.
 
 ```json
@@ -21,6 +22,7 @@ Wenn Ihre Anforderung einen Fehler generiert, hält die OneNote-API die Ausführ
 Weitere Informationen zu Microsoft Graph-Fehlern finden Sie unter [Microsoft Graph-Fehlerantworten und Ressourcentypen](errors.md).
 
 ## <a name="codes-from-10001-to-19999"></a>Codes von 10001-19999
+
 Der Dienst hat Probleme oder sendet Informationen zur Anwendung.
 
 ### <a name="10001"></a>10001
@@ -36,7 +38,7 @@ Das Konto des aktuellen Benutzers hat die Maximalanzahl an aktiven Anforderungen
 Der Dienst kann keine Seite im angeforderten Abschnitt erstellen, da der Abschnitt kennwortgeschützt ist.
 
 ### <a name="10005"></a>10005
-Die Anforderung enthält mehr als die Maximalanzahl an Bildtags, wobei das **data-render-src**-Attribut eine PDF enthält. Siehe [Hinzufügen von Bildern und Dateien](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-images-files)
+Die Anforderung enthält mehr als die Maximalanzahl an Bildtags, wobei das **data-render-src**-Attribut eine PDF enthält. Siehe [Hinzufügen von Bildern und Dateien](onenote_images_files.md)
 
 ### <a name="10006"></a>10006
 Die OneNote-API konnte keine Seite im angegebenen Abschnitt erstellen, da dieser Abschnitt beschädigt ist.
@@ -48,7 +50,7 @@ Der Server ist zu ausgelastet, um die eingehende Anforderung zu bearbeiten. Bitt
 Eine oder mehrere der Dokumentbibliotheken des OneDrive-Benutzers oder der -Gruppe enthalten mehr als 5.000 OneDrive-Elemente (Notizbücher, Abschnitte, Abschnittsgruppen) und können nicht mithilfe der API abgefragt werden. Stellen Sie sicher, dass keine der Benutzer- oder Gruppen-Dokumentbibliotheken mehr als 5.000 OneNote-Elemente enthält. Im [OneNote-Entwicklerblog](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) finden Sie Informationen zur Reduzierung der Elemente.
 
 ### <a name="10012"></a>10012
-Die Entität kann nicht erstellt oder aktualisiert werden, da aus der Bibliothek, die das Notizbuch enthält, Elemente ausgecheckt werden müssen, bevor diese bearbeitet werden können. Weitere Informationen finden Sie unter https://support.office.com/en-us/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7.
+Die Entität kann nicht erstellt oder aktualisiert werden, da aus der Bibliothek, die das Notizbuch enthält, Elemente ausgecheckt werden müssen, bevor diese bearbeitet werden können. Weitere Informationen finden Sie unter [Einrichten einer Bibliothek, um das Auschecken von Dateien erforderlich zu machen](https://support.office.com/de-DE/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7).
 
 Entfernen Sie entweder die Anforderung zum Auschecken aus der Bibliothek oder verschieben Sie das Notizbuch.
 
@@ -71,6 +73,7 @@ Ungültige Anforderung.
 Die Anforderung ist fehlgeschlagen, da ein unbekannter Fehler aufgetreten ist.
 
 ## <a name="codes-from-20001-to-29999"></a>Codes von 20001 bis 29999
+
 Der Anwendungscode hat einen Fehler gemacht.
 
 ### <a name="20001"></a>20001
@@ -109,6 +112,7 @@ Die Anforderung enthält eine ungültige mehrteilige Nutzlast. Das Problem kann 
 
 ### <a name="20012"></a>20012
 Die Anforderung stellt keinen Inhaltstyp für das angegebene Teil zur Verfügung. 
+
 ### <a name="20013"></a>20013
 Die Anforderung stellt keinen Inhaltstyp und keine Kopfzeile für die Content-Disposition für das angegebene Teil zur Verfügung. 
 
@@ -135,6 +139,7 @@ Es wurde ein fehlerhafter Json-Anforderungstext gefunden.
 
 ### <a name="20100"></a>20100
 Etwas stimmt mit der Syntax der Anforderung nicht. 
+
 ### <a name="20101"></a>20101
 Die angeforderte Eigenschaft ist nicht vorhanden.
 
@@ -142,7 +147,7 @@ Die angeforderte Eigenschaft ist nicht vorhanden.
 Sie haben eine Ressource angefordert, die nicht vorhanden ist.
 
 ### <a name="20103"></a>20103
-Die **expand**-Abfrage wird für diese Anforderung nicht unterstützt. Siehe [Unterstützte Zeichenfolge-Optionen für OData-Anfragen](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-get-content#query-options).
+Die **expand**-Abfrage wird für diese Anforderung nicht unterstützt. Siehe [Unterstützte Zeichenfolge-Optionen für OData-Anfragen](onenote-get-content.md#supported-odata-query-string-options).
 
 ### <a name="20104"></a>20104
 Die **pagelevel**-Abfrageoption wird nur unterstützt, wenn Sie eine Abfrage für die Seitensammlung in einem Abschnitt oder für eine bestimmte Seite ausführen. Beispiel:  
@@ -186,19 +191,19 @@ Die HTML im „Presentation“-Teil enthält ein **data-attachment**-Attribut, d
 Die Anforderung gibt ein PATCH-Ziel an, das nicht gefunden werden kann.
 
 ### <a name="20121"></a>20121
-Die Anforderung enthält ein ungültiges PATCH-Argument. Siehe [Aktualisieren von Seiteninhalt](../api-reference/v1.0/api/page_update.md).
+Die Anforderung enthält ein ungültiges PATCH-Argument. Weitere Informationen finden Sie unter [Aktualisieren von Seiteninhalt](onenote_update_page.md).
 
 ### <a name="20122"></a>20122
-Ihre Anforderung gibt eine nicht unterstützte PATCH-Aktion an. Siehe [Aktualisieren von Seiteninhalt](../api-reference/v1.0/api/page_update.md).
+Ihre Anforderung gibt eine nicht unterstützte PATCH-Aktion an. Weitere Informationen finden Sie unter [Aktualisieren von Seiteninhalt](onenote_update_page.md).
 
 ### <a name="20123"></a>20123
 Die PATCH-Anforderung kann die angegebene Seite nicht ändern.
 
 ### <a name="20124"></a>20124
-Die mehrteilige PATCH-Anforderung beinhaltet keinen „Befehle“-Teil mit der PATCH-Aktion-JSON-Struktur. Siehe [Aktualisieren von Seiteninhalt](../api-reference/v1.0/api/page_update.md).
+Die mehrteilige PATCH-Anforderung beinhaltet keinen „Befehle“-Teil mit der PATCH-Aktion-JSON-Struktur. Siehe [Aktualisieren von Seiteninhalt](onenote_update_page.md).
 
 ### <a name="20125"></a>20125
-Die PATCH-Anforderung enthält keine Aktionen. Siehe [Aktualisieren von Seiteninhalt](../api-reference/v1.0/api/page_update.md).
+Die PATCH-Anforderung enthält keine Aktionen. Weitere Informationen finden Sie unter [Aktualisieren von Seiteninhalt](onenote_update_page.md).
 
 ### <a name="20126"></a>20126
 Der Nachrichtentext enthält entweder falsch formatierten JSON-Code oder Felder, die für diesen Vorgang nicht unterstützt werden.
@@ -222,38 +227,41 @@ Die Anforderung enthält einen ungültigen Wert für den Inhaltstyp. Verwenden S
 Die Anforderung enthält ungültige Inhalte. Häufige Ursachen hierfür sind eine fehlende Kopfzeile für die Inhaltstyp-Anfrage und/oder keine Inhalte im Textkörper der Anfrage. 
 
 ### <a name="20133"></a>20133
-Die Anforderung gibt ein PATCH-Ziel an, das nicht unterstützt wird. Siehe [Aktualisieren von Seiteninhalt](../api-reference/v1.0/api/page_update.md).
+Die Anforderung gibt ein PATCH-Ziel an, das nicht unterstützt wird. Siehe [Aktualisieren von Seiteninhalt](onenote_update_page.md).
 
 ### <a name="20134"></a>20134
-Ihre Anforderung gibt ein ungültiges Element als Ziel der PATCH-Aktion an. Wenn das Ziel den **data-id**-Bezeichner verwendet, müssen Sie sicherstellen, dass ein Nummernzeichen (#) vorangestellt ist. Siehe [Aktualisieren von Seiteninhalt](../api-reference/v1.0/api/page_update.md).
+Die Anforderung gibt ein ungültiges Element als Ziel der PATCH-Aktion an. Wenn das Ziel den **data-id**-Bezeichner verwendet, stellen Sie sicher, dass ein #-Symbol diesem vorangestellt ist. Weitere Informationen finden Sie unter [Aktualisieren von Seiteninhalt](onenote_update_page.md).
 
 ### <a name="20135"></a>20135
-Die Anforderung gibt einen Entitätstyp an, der für den PATCH-Vorgang nicht unterstützt wird. Siehe [Aktualisieren von Seiteninhalt](../api-reference/v1.0/api/page_update.md).
+Die Anforderung gibt einen Entitätstyp an, der für den PATCH-Vorgang nicht unterstützt wird. Siehe [Aktualisieren von Seiteninhalt](onenote_update_page.md).
 
 ### <a name="20136"></a>20136
-Ihre Anforderung enthält ein ungültiges oder fehlendes **data-render-src**- oder **data-render-method**-Attribut. Siehe [Extrahieren von Daten aus Bildschirmausschnitten](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-extract-data).
+Ihre Anforderung enthält ein ungültiges oder fehlendes **data-render-src**- oder **data-render-method**-Attribut. Siehe [Extrahieren von Daten aus Bildschirmausschnitten](onenote-extract-data.md).
 
 ### <a name="20137"></a>20137
 Die Zielseite unterstützt keine PATCH-Anforderungen.
 
 ### <a name="20138"></a>20138
-Das Ziel in der PATCH-Anforderung unterstützt die angegebene **append**Aktion nicht. Siehe [Aktualisieren von Seiteninhalt](../api-reference/v1.0/api/page_update.md).
+Das Ziel in der PATCH-Anforderung unterstützt die angegebene **append**Aktion nicht. Weitere Informationen finden Sie unter [Aktualisieren von Seiteninhalt](onenote_update_page.md).
 
 ### <a name="20139"></a>20139
-Die Anforderung enthält einen ungültigen **data-tag**-Attributwert. Siehe [Verwenden von Notiztags](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-note-tags).
+Die Anforderung enthält einen ungültigen **data-tag**-Attributwert. Weitere Informationen finden Sie unter [Verwenden von Notiztags](onenote-note-tags.md).
 
 ### <a name="20140"></a>20140
-Die Anforderung enthält einen ungültigen **data-tag**-Statuswert. Kontrollkästchen-Notiztags können den Status **completed** besitzen. Beispiel:
+Die Anforderung enthält einen ungültigen **data-tag**-Statuswert. Kontrollkästchen-Notiztags können den Status **completed** besitzen. 
+
+Beispiel:
+
 ```html
     <p data-tag="to-do:completed">To-do note tag in completed state (checked box in the UI)</p>
 ```
-Siehe [Verwenden von Notiztags](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-note-tags).
+Siehe [Verwenden von Notiztags](onenote-note-tags.md).
 
 ### <a name="20141"></a>20141
-Der Zielelementtyp in der PATCH-Anforderung unterstützt die angegebene Aktion nicht. Siehe [Aktualisieren von Seiteninhalt](../api-reference/v1.0/api/page_update.md).
+Der Zielelementtyp in der PATCH-Anforderung unterstützt die angegebene Aktion nicht. Siehe [Aktualisieren von Seiteninhalt](onenote_update_page.md).
 
 ### <a name="20142"></a>20142
-Ihre Anforderung enthält einen **expand**-Ausdruck für ein übergeordnetes Element untergeordneter Entitäten oder ein untergeordnetes Element übergeordneter Entitäten, der nicht unterstützt wird. Siehe [Unterstützte Zeichenfolge-Optionen für OData-Anfragen](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-get-content#query-options).
+Ihre Anforderung enthält einen **expand**-Ausdruck für ein übergeordnetes Element untergeordneter Entitäten oder ein untergeordnetes Element übergeordneter Entitäten, der nicht unterstützt wird. Siehe [Unterstützte Zeichenfolge-Optionen für OData-Anfragen](onenote-get-content.md#supported-odata-query-string-options).
 
 ### <a name="20143"></a>20143
 Die OData-Abfrage ist ungültig.
@@ -283,7 +291,7 @@ Die Anforderung ist für diesen Authentifizierungstyp nicht gültig.  Verwenden 
 Die Anforderung ist für diesen Authentifizierungstyp nicht gültig. Verwenden Sie den `../me/onenote/section/{id}/pages`-Endpunkt, um eine Seite in einem bestimmten Abschnitt zu erstellen.
 
 ### <a name="20152"></a>20152
-Es ist kein Namenswert für die Entität vorhanden. Der Name muss definiert werden und darf nicht nur Leerzeichen enthalten.
+Für die Entität ist kein name-Wert angegeben. Der Name muss definiert werden, und er darf nicht nur aus Leerzeichen bestehen.
 
 ### <a name="20153"></a>20153
 Der Entitätsname enthält ungültige Zeichen. Der Name darf die folgenden Zeichen nicht enthalten: `? * \ / : < > | & # " % ~`
@@ -315,7 +323,7 @@ Die Anwendung hat zu viele Anfragen im Auftrag eines Benutzers innerhalb eines k
 Weitere Informationen finden Sie unter [Drosselung von OneNote-API und wie Sie dies vermeiden](http://blogs.msdn.com/b/onenotedev/archive/2016/01/13/onenote-api-throttling-and-best-practices.aspx).
 
 ### <a name="20168"></a>20168
-Die in der Anfrage angegebene Video-Quelle wird nicht unterstützt. Eine aktuelle Liste finden Sie unter [Unterstützte Video-Websites](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-images-files#videos).
+Die in der Anfrage angegebene Video-Quelle wird nicht unterstützt. Eine aktuelle Liste finden Sie unter [Unterstützte Video-Websites](onenote_images_files.md#adding-videos).
 
 
 ## <a name="codes-from-30001-to-39999"></a>Codes von 30001 bis 39999

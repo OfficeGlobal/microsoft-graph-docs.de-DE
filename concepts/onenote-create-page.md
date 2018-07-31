@@ -1,10 +1,12 @@
 # <a name="create-onenote-pages"></a>Erstellen von OneNote-Seiten
 
-*__Gilt für:__ Privatanwender-Notizbücher auf OneDrive | Enterprise-Notizbücher auf Office 365*
+**Gilt für**: Heimanwender-Notizbücher in OneDrive | Unternehmensnotizbücher in Office 365
 
 Zum Erstellen einer OneNote-Seite senden Sie eine POST-Anforderung an einen *pages*-Endpunkt. Beispiel:
 
-`POST ../notes/sections/{id}/pages`</p>
+`POST ../notes/sections/{id}/pages`
+
+<br/>
 
 Senden Sie den HTML-Code, der die Seite definiert, im Nachrichtentext. Wenn die Anforderung erfolgreich ist, gibt Microsoft Graph den HTTP-Statuscode 201 zurück.
 
@@ -13,44 +15,43 @@ Senden Sie den HTML-Code, der die Seite definiert, im Nachrichtentext. Wenn die 
 
 
 <a name="request-uri"></a>
+
 ## <a name="construct-the-request-uri"></a>Erstellen des Anforderungs-URI
 
 Um den URI der POST-Anforderung zu erstellen, beginnen Sie mit der Stamm-URL des Diensts:
 
 `https://graph.microsoft.com/v1.0/me/onenote`
 
+<br/>
+
 Fügen Sie dann den *pages*-Endpunkt an:
 
-**Erstellen einer Seite in einem beliebigen Abschnitt (angegeben durch den Abschnittsnamen)**
+- **Erstellen einer Seite in einem beliebigen Abschnitt (angegeben durch den Abschnittsnamen)**<br/><br/>`.../pages?sectionName=DefaultSection`
 
-`.../pages?sectionName=DefaultSection`
-
-**Erstellen einer Seite in einem beliebigen Abschnitt (angegeben durch die ID)** 
-
-`.../sections/{section-id}/pages` 
+- **Erstellen einer Seite in einem beliebigen Abschnitt (angegeben durch die ID)**<br/><br/>`.../sections/{section-id}/pages` 
 
 Wenn Sie Seiten im persönlichen Notizbuch des Benutzers erstellen, bietet Microsoft Graph auch Endpunkte, die Sie zum Erstellen von Seiten im Standardnotizbuch verwenden können:
 
-**Erstellen einer Seite im Standardabschnitt des Standardnotizbuchs** 
-
-`../pages` 
+- **Erstellen einer Seite im Standardabschnitt des Standardnotizbuchs**<br/><br/>`../pages` 
 
 
 
 Ihr vollständiger Anforderungs-URI gleicht einem der folgenden Beispiele:
-* `https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages`
-* `https://graph.microsoft.com/v1.0/me/onenote/pages?sectionName=Homework`
+
+- `https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages`
+- `https://graph.microsoft.com/v1.0/me/onenote/pages?sectionName=Homework`
 
 Hier erfahren Sie mehr über die [Stamm-URL des Diensts](../api-reference/v1.0/resources/onenote-api-overview.md#root-url).
 
 <a name="post-pages-section-name"></a>
+
 ### <a name="using-the-sectionname-url-parameter"></a>Verwenden des URL-Parameters *sectionName*
 
 Die folgenden Regeln gelten bei Verwendung des *sectionName*-Parameters zum Erstellen einer Seite in einem benannten Abschnitt im Standardnotizbuch:
 
 - Nur auf Abschnitte auf oberster Ebene kann verwiesen werden (keine Abschnitte in Abschnittsgruppen).
 
-- Ist im Standardnotizbuch kein Abschnitt mit dem angegebenen Namen vorhanden, wird er von der API erstellt. Die folgenden Zeichen sind für Abschnittsnamen nicht zulässig: ? * \ / : &lt; &gt; | &amp; # " % ~
+- Ist im Standardnotizbuch kein Abschnitt mit dem angegebenen Namen vorhanden, wird er von der API erstellt. Die folgenden Zeichen sind für Abschnittsnamen nicht zulässig: `? * \ / : < > | & # " % ~`
 
 - Beim Abgleich von Abschnittsnamen wird die Groß-und Kleinschreibung nicht beachtet, aber beim Erstellen von Abschnitten bleibt die Groß-/Kleinschreibung erhalten. Somit wird z. B. „Mein neuer Abschnitt“ genau so angezeigt, aber „mein neuer abschnitt“ würde bei nachfolgenden Übermittlungen ebenfalls übereinstimmen.
 
@@ -64,6 +65,7 @@ Da Abschnitte erstellt werden, wenn sie noch nicht vorhanden sind, ist es sicher
 
 
 <a name="message-body"></a>
+
 ## <a name="construct-the-message-body"></a>Erstellen des Nachrichtentexts
 
 Der HTML-Code, der Seiteninhalt definiert, wird als *Eingabe-HTML* bezeichnet. Eingabe-HTML unterstützt eine [Teilmenge der Standard-HTML und -CSS](#supported-html-and-css-for-onenote-pages) mit zusätzlichen benutzerdefinierten Attributen. (Benutzerdefinierte Attribute, wie **data-id** und **data-render-src**, werden in [Eingabe- und Ausgabe-HTML](onenote_input_output_html.md) beschrieben.) 
@@ -72,9 +74,8 @@ Senden Sie die Eingabe-HTML im Nachrichtentext der POST-Anforderung. Sie können
 
 Das folgende Beispiel sendet die Eingabe-HTML direkt im Nachrichtentext.
 
-```
+```html
 POST https://graph.microsoft.com/v1.0/me/onenote/pages
-Authorization: Bearer {token}
 Authorization: Bearer {token}
 Content-Type: application/xhtml+xml
 
@@ -91,12 +92,15 @@ Content-Type: application/xhtml+xml
 </html>
 ```
 
+<br/>
+
 Wenn Sie Binärdaten senden, müssen Sie eine [mehrteilige Anforderung](#example-request) verwenden. 
 
->Zur Vereinfachung der Programmierung und Konsistenz in Ihrer App können Sie mehrteilige Anforderungen verwenden, um alle Seiten zu erstellen. Es ist ratsam, eine Bibliothek zu verwenden, um mehrteilige Nachrichten zu erstellen. Dadurch wird das Risiko der Erstellung von fehlerhaften Nutzlasten reduziert.
+> **Hinweis:** Zur Vereinfachung der Programmierung und Konsistenz in Ihrer App können Sie mehrteilige Anforderungen verwenden, um alle Seiten zu erstellen. Es ist ratsam, eine Bibliothek zu verwenden, um mehrteilige Nachrichten zu erstellen. Dadurch wird das Risiko der Erstellung von fehlerhaften Nutzlasten reduziert.
 
 
 <a name="input-html-rules"></a>
+
 ### <a name="requirements-and-limitations-for-input-html-in-post-pages-requests"></a>Anforderungen und Einschränkungen für Eingabe-HTML in POST-Anforderungen
 
 Beachten Sie beim Senden von Eingabe-HTML diese allgemeinen Anforderungen und Einschränkungen:  
@@ -109,10 +113,11 @@ Beachten Sie beim Senden von Eingabe-HTML diese allgemeinen Anforderungen und Ei
 
 - Microsoft Graph unterstützt eine [Teilmenge der HTML-Elemente](#supported-html-and-css-for-onenote-pages). 
 
-- Microsoft Graph unterstützt eine Teilmenge der allgemeinen HTML-Attribute und eine Reihe von benutzerdefinierten Attributen, z. B. das **data-id**-Attribut, das für das Aktualisieren von Seiten verwendet wird. Weitere Informationen zu den unterstützten Attributen finden Sie unter [Eingabe- und Ausgabe-HTML](onenote_input_output_html.md).
+- Microsoft Graph unterstützt eine Teilmenge der allgemeinen HTML-Attribute und eine Reihe von benutzerdefinierten Attributen, z. B. das **data-id**-Attribut, das für das Aktualisieren von Seiten verwendet wird. Unterstützte Attribute finden Sie unter [Eingabe- und Ausgabe-HTML](onenote_input_output_html.md).
 
 
 <a name="supported-html"></a>
+
 ### <a name="supported-html-and-css-for-onenote-pages"></a>Unterstützte HTML und CSS für OneNote-Seiten
 
 Nicht alle Elemente, Attribute und Eigenschaften werden (in HTML4, XHTML, CSS, HTML5 usw.) unterstützt. Stattdessen akzeptiert Microsoft Graph einen eingeschränkten Satz von HTML-Elementen, der der üblichen Verwendung von OneNote besser entspricht. Weitere Informationen finden Sie unter [Unterstützung von HTML-Tags für Seiten](http://dev.onenote.com/docs#/introduction/html-tag-support-for-pages). Wenn ein Tag dort nicht aufgeführt ist, wird es wahrscheinlich ignoriert.
@@ -134,11 +139,12 @@ Microsoft Graph behält den semantischen Inhalt und die grundlegende Struktur de
 
 
 <a name="example"></a>
+
 ## <a name="example-request"></a>Beispielanforderung
 
 Dieses Beispiel einer mehrteiligen Anforderung erstellt eine Seite, die Bilder und eine eingebettete Datei enthält. Der erforderliche **Presentation**-Teil enthält die Eingabe-HTML, die die Seite definiert. Der **imageBlock1**-Teil enthält die binären Bilddaten und **fileBlock1** die Binärdateidaten. Datenteile enthalten können auch HTML enthalten. In diesem Fall [rendert Microsoft Graph den HTML-Code als Bild](onenote_images_files.md#add-an-image-using-binary-data) auf der OneNote-Seite. 
 
-```
+```html
 POST https://graph.microsoft.com/v1.0/me/onenote/pages
 Authorization: Bearer {token}
 Content-Type: multipart/form-data; boundary=MyPartBoundary198374
@@ -178,22 +184,27 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
-Weitere Beispiele für die Erstellung von Seiten, die Bilder und andere Dateien enthalten, finden Sie unter [Hinzufügen von Bildern und Dateien](onenote_images_files.md) sowie in unseren [Lernprogrammen](https://msdn.microsoft.com/de-DE/office/office365/howto/onenote-tutorial) und [Beispielen](https://github.com/onenotedev). Außerdem finden Sie Informationen zum [Erstellen absolut positionierter Elemente](onenote-abs-pos.md), [Verwenden von Notiztags](onenote-note-tags.md) und [Extrahieren von Daten](onenote-extract-data.md) für Visitenkarten und Onlinerezept- und Produktlisten.
+Weitere Beispiele für die Erstellung von Seiten, die Bilder und andere Dateien enthalten, finden Sie unter [Hinzufügen von Bildern und Dateien](onenote_images_files.md) sowie in unseren [Lernprogrammen](https://docs.microsoft.com/de-DE/previous-versions/office/office-365-api/how-to/onenote-tutorial) und [Beispielen](https://github.com/onenotedev). Außerdem finden Sie Informationen zum [Erstellen absolut positionierter Elemente](onenote-abs-pos.md), [Verwenden von Notiztags](onenote-note-tags.md) und [Extrahieren von Daten](onenote-extract-data.md) für Visitenkarten und Onlinerezept- und Produktlisten.
 
-Microsoft Graph hat in einigen Formaten strenge Anforderungen, z. B. CRLF-Zeilenumbrüche in einem mehrteiligen Nachrichtentext. Um das Risiko fehlerhafter Nutzlasten zu reduzieren, sollten Sie eine Bibliothek verwenden, um mehrteilige Nachrichten zu erstellen. Wenn Sie eine Statusmeldung 400 für eine fehlerhafte Nutzlast erhalten, überprüfen Sie die Formatierung der Zeilenumbrüche und Leerräume, und achten Sie auf Codierungsprobleme. Versuchen Sie beispielsweise die Verwendung von `charset=utf-8` (Beispiel: `Content-Type: text/html; charset=utf-8`).
+Microsoft Graph hat in einigen Formaten strenge Anforderungen, z. B. CRLF-Zeilenumbrüche in einem mehrteiligen Nachrichtentext. Um das Risiko fehlerhafter Nutzlasten zu reduzieren, sollten Sie eine Bibliothek verwenden, um mehrteilige Nachrichten zu erstellen. 
+
+Wenn Sie eine Statusmeldung 400 für eine fehlerhafte Nutzlast erhalten, überprüfen Sie die Formatierung der Zeilenumbrüche und Leerräume, und achten Sie auf Codierungsprobleme. Versuchen Sie beispielsweise die Verwendung von `charset=utf-8` (Beispiel: `Content-Type: text/html; charset=utf-8`).
 
 Siehe [Anforderungen und Einschränkungen für Eingabe-HTML](#requirements-and-limitations-for-input-html-in-post-pages-requests) und [Größenbeschränkungen für POST-Anforderungen](onenote_images_files.md#size-limitations-for-post-pages-requests).
 
 
 <a name="request-response-info"></a>
+
 ## <a name="request-and-response-information-for-post-pages-requests"></a>Anforderungs- und Antwortinformationen für *POST pages*-Anforderungen
 
 | Anforderungsdaten | Beschreibung |  
 |------|------|  
 | Protokoll | Alle Anforderungen verwenden das SSL/TLS HTTPS-Protokoll. |  
-| Header „Authorization“ | <p>`Bearer {token}`, wobei *{token}* ein gültiges OAuth 2.0-Zugriffstoken für Ihre registrierte App ist.</p><p>Wenn dies fehlt oder ungültig ist, schlägt die Anforderung mit dem Statuscode 401 fehl. Siehe [Authentifizierung und Berechtigungen](permissions_reference.md).</p> |  
-| Header „Content-Type“ | <p>`text/html` oder `application/xhtml+xml` für den HTML-Inhalt, unabhängig davon, ob er direkt im Nachrichtentext oder im erforderlichen „Presentation“-Teil einer mehrteiligen Anforderung gesendet wird.</p><p>Mehrteilige Anfragen sind erforderlich, wenn Binärdaten gesendet werden sollen. Sie verwenden den Inhaltstyp `multipart/form-data; boundary=part-boundary`, wobei *{part-boundary}* eine Zeichenfolge ist, die den Beginn und das Ende jedes Datenteils signalisiert.</p> |  
+| Header „Authorization“ | <p>`Bearer {token}`, wobei `{token}` ein gültiges OAuth 2.0-Zugriffstoken für Ihre registrierte App ist.</p><p>Wenn dies fehlt oder ungültig ist, schlägt die Anforderung mit dem Statuscode 401 fehl. Siehe [Authentifizierung und Berechtigungen](permissions_reference.md).</p> |  
+| Header „Content-Type“ | <p>`text/html` oder `application/xhtml+xml` für den HTML-Inhalt, unabhängig davon, ob er direkt im Nachrichtentext oder im erforderlichen „Presentation“-Teil einer mehrteiligen Anforderung gesendet wird.</p><p>Mehrteilige Anfragen sind erforderlich, wenn Binärdaten gesendet werden sollen. Sie verwenden den Inhaltstyp `multipart/form-data; boundary=part-boundary`, wobei `{part-boundary}` eine Zeichenfolge ist, die den Beginn und das Ende jedes Datenteils signalisiert.</p> |  
 | Header „Accept“ | `application/json` | 
+
+<br/>
 
 | Antwortdaten | Beschreibung |  
 |------|------|  
@@ -205,17 +216,26 @@ Siehe [Anforderungen und Einschränkungen für Eingabe-HTML](#requirements-and-l
 
 
 <a name="root-url"></a>
+
 ### <a name="constructing-the-microsoft-graph-service-root-url"></a>Zusammensetzen der Stamm-URL des Microsoft Graph-Diensts
 
-Die Stamm-URL des Microsoft Graph-Diensts verwendet das folgende Format für alle Aufrufe von Microsoft Graph. `https://graph.microsoft.com/{version}/me/onenote/`  Das `version`-Segment in der URL stellt die Version von Microsoft Graph dar, die Sie verwenden möchten. Verwenden Sie `v1.0` für stabilen Produktionscode. Verwenden Sie `beta`, um ein Feature zu testen, das sich in der Entwicklung befindet. Features und Funktionen in der Betaversion ändern sich möglicherweise, sodass Sie es nicht in Ihrem Produktionscode verwenden sollten. Verwenden Sie `me` für OneNote-Inhalt, auf den der aktuelle Benutzer zugreifen kann (eigene und freigegebene Inhalte). Verwenden Sie `users/{id}` für OneNote-Inhalte, die der (in der URL) angegebene Benutzer für den aktuellen Benutzer freigegeben hat. Verwenden Sie [Microsoft Graph](https://graph.microsoft.com/v1.0/users), um Benutzer-IDs abzurufen. 
+Die Stamm-URL des Microsoft Graph-Diensts verwendet das folgende Format für alle Aufrufe von Microsoft Graph:
+
+`https://graph.microsoft.com/{version}/me/onenote/`  
+
+Das Segment `version` in der URL ist die Version von Microsoft Graph, die verwendet werden soll. Verwenden Sie `v1.0` für stabilen Produktionscode. Verwenden Sie `beta`, um ein Feature zu testen, das sich in der Entwicklung befindet. Features und Funktionen in der Betaversion ändern sich möglicherweise, sodass Sie es nicht in Ihrem Produktionscode verwenden sollten. 
+
+Verwenden Sie `me` für OneNote-Inhalt, auf den der aktuelle Benutzer zugreifen kann (eigene und freigegebene Inhalte). Verwenden Sie `users/{id}` für OneNote-Inhalte, die der (in der URL) angegebene Benutzer für den aktuellen Benutzer freigegeben hat. Verwenden Sie [Microsoft Graph](https://graph.microsoft.com/v1.0/users), um Benutzer-IDs abzurufen. 
 
 
 <a name="permissions"></a>
+
 ## <a name="permissions"></a>Berechtigungen
 
 Zum Erstellen von OneNote-Seiten müssen Sie die entsprechenden Berechtigungen anfordern. Wählen Sie die niedrigste Berechtigungsstufe, die Ihre App zur Erledigung ihrer Aufgaben benötigt.
 
-Wählen Sie zwischen: 
+Wählen Sie zwischen:
+
 - Notes.Create
 - Notes.ReadWrite
 - Notes.ReadWrite.All
@@ -226,7 +246,8 @@ Weitere Informationen zu Berechtigungsbereichen und deren Funktionsweise finden 
 
 
 <a name="see-also"></a>
-## <a name="additional-resources"></a>Weitere Ressourcen
+
+## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen von Bildern und Dateien](onenote_images_files.md)
 - [Erstellen von absolut positionierten Elementen](onenote-abs-pos.md)  

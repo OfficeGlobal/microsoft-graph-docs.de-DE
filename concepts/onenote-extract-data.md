@@ -1,15 +1,16 @@
 # <a name="use-onenote-api-div-tags-to-extract-data-from-captures"></a>Verwenden von div-Tags der OneNote-API zum Extrahieren von Daten aus Erfassungen 
 
-*__Gilt für:__ Privatanwender-Notizbücher auf OneDrive | Enterprise-Notizbücher auf Office 365*
+**Gilt für** Heimanwender-Notizbücher in OneDrive | Unternehmensnotizbücher in Office 365
 
 Verwenden Sie die OneNote-API zum Extrahieren von Visitenkartendaten aus einem Bild oder von Rezept- und Produktdaten von einer URL.
 
 <a name="attributes"></a>
+
 ## <a name="extraction-attributes"></a>Extraktionsattribute
 
 Zum Extrahieren und Transformieren von Daten schließen Sie einfach ein div-Tag in die [create-page](onenote-create-page.md)- oder [update-page](onenote_update_page.md)-Anforderung ein, das den Quellinhalt, die Extraktionsmethode sowie ein Ausweichverhalten angibt. Die API rendert extrahierte Daten auf der Seite in einem einfach zu lesenden Format. 
 
-```
+```html
 <div
   data-render-src="image-or-url"
   data-render-method="extraction-method"
@@ -17,7 +18,7 @@ Zum Extrahieren und Transformieren von Daten schließen Sie einfach ein div-Tag 
 </div>
 ```
 
-**data-render-src**
+### <a name="data-render-src"></a>data-render-src
 
 Die Inhaltsquelle. Dies kann ein Bild einer Visitenkarte oder eine absolute URL von zahlreichen beliebten Rezept- oder Produktwebsites sein. Erforderlich. 
 
@@ -26,7 +27,7 @@ Verwenden Sie für optimale Ergebnisse beim Angeben einer URL die kanonische URL
 `<link rel="canonical" href="www.domainname.com/page/123/size12/type987" />` 
 
 
-**data-render-method**
+### <a name="data-render-method"></a>data-render-method
 
 Die auszuführende Extraktionsmethode. Erforderlich. 
 
@@ -37,22 +38,22 @@ Die auszuführende Extraktionsmethode. Erforderlich.
 | extract.product | Extraktionen von Produktlisten. |
 | extract | Ein unbekannter Datenextraktionstyp. |
 
-Für optimale Ergebnisse geben Sie den Inhaltstyp (`extract.businesscard`, `extract.recipe` oder `extract.product`) an, falls bekannt. Wenn der Typ nicht bekannt ist, verwenden Sie die `extract`-Methode; die OneNote-API versucht daraufhin, den Typ automatisch zu ermitteln.
+Für optimale Ergebnisse geben Sie den Inhaltstyp (`extract.businesscard`, `extract.recipe` oder `extract.product`) an, falls bekannt. Wenn der Typ nicht bekannt ist, verwenden Sie die `extract`-Methode, und die OneNote-API versucht daraufhin, den Typ automatisch zu ermitteln.
 
-**data-render-fallback**
+### <a name="data-render-fallback"></a>data-render-fallback
 
 Das Ausweichverhalten, wenn die Extraktion fehlschlägt. Wenn der Wert weggelassen wird, gilt der Standardwert **render**. 
 
 | Wert | Beschreibung |
 |:------|:------|
 | render() | Rendert das Quellbild oder eine Momentaufnahme der Rezept- oder Produktwebseite. |
-| n/v | Hat keine Wirkung. <br />Die Option ist nützlich, wenn Sie zusätzlich zum extrahierten Inhalt immer eine Momentaufnahme der Visitenkarte oder Webseite auf der Seite einschließen möchten. Achten Sie darauf, ein separates `img`-Element in der Anforderung zu senden, wie in den Beispielen dargestellt. |
+| n/v | Hat keine Wirkung. <br /><br />Die Option ist nützlich, wenn Sie zusätzlich zum extrahierten Inhalt immer eine Momentaufnahme der Visitenkarte oder Webseite auf der Seite einschließen möchten. Achten Sie darauf, ein separates `img`-Element in der Anforderung zu senden, wie in den Beispielen dargestellt. |
 
 <a name="biz-card"></a>
+
 ## <a name="business-card-extractions"></a>Extraktionen von Visitenkarten
 
 Die OneNote-API sucht und rendert die folgenden Kontaktinformationen basierend auf dem Bild einer Visitenkarte einer Person oder eines Unternehmens.
-
 
 - Name
 - Titel
@@ -61,14 +62,16 @@ Die OneNote-API sucht und rendert die folgenden Kontaktinformationen basierend a
 - Postanschrift und physische Adressen
 - E-Mail-Adressen
 - Websites
-   
-  ![Ein Beispiel für die Extraktion einer Visitenkarte.](images/biz-card-extraction.png)
 
-Eine vCard (VCF-Datei) mit den extrahierten Kontaktdaten wird auch in die Seite eingebettet. Die vCard ist eine bequeme Möglichkeit, um die Kontaktinformationen beim Abrufen des HTML-Inhalts der Seite abzurufen.
+
+
+<img alt="An example business card extraction" src="images/biz-card-extraction.png" width="200">
+
+Eine vCard (.VCF-Datei) mit den extrahierten Kontaktinformationen wird ebenfalls in die Seite eingebettet. Die vCard-Datei ist eine bequeme Möglichkeit zum Abrufen von Kontaktinformationen beim Abrufen von HTML-Seiteninhalten.
 
 ### <a name="common-scenarios-for-business-card-extractions"></a>Häufige Szenarien für Visitenkartenextraktionen
 
-**Abbildung zum Extrahieren von Visitenkarteninformationen und Rendern der Visitenkarte**
+#### <a name="extract-business-card-information-and-also-render-the-business-card-image"></a>Abbildung zum Extrahieren von Visitenkarteninformationen und Rendern der Visitenkarte
 
 Geben Sie die `extract.businesscard`-Methode und das `none`-Ausweichverhalten an. Senden Sie auch ein `img`-Element mit dem `src`-Attribut, das auch auf das Bild verweist. Wenn die API keinen Inhalt extrahieren kann, wird nur das Bild der Visitenkarte gerendert.
 
@@ -82,7 +85,7 @@ Geben Sie die `extract.businesscard`-Methode und das `none`-Ausweichverhalten an
 ```
 
 
-**Abbildung zum Extrahieren von Visitenkarteninformationen und Rendern des Bilds der Visitenkarte, wenn die Extraktion fehlschlägt**
+#### <a name="extract-business-card-information-and-render-the-business-card-image-only-if-the-extraction-fails"></a>Abbildung zum Extrahieren von Visitenkarteninformationen und Rendern des Bilds der Visitenkarte, wenn die Extraktion fehlschlägt
 
 Geben Sie die `extract.businesscard`-Methode an, und verwenden Sie das standardmäßige `render`-Ausweichverhalten. Wenn die API keinen Inhalt extrahieren kann, wird stattdessen das Bild der Visitenkarte gerendert.
 
@@ -97,6 +100,7 @@ Bei Visitenkartenextraktionen wird das Bild als benannten Teil in einer mehrteil
 
 
 <a name="recipe"></a>
+
 ## <a name="recipe-extractions"></a>Extraktionen von Rezepten
 
 Die OneNote-API sucht und rendert die folgenden Informationen auf der Grundlage einer Rezeptkarten-URL.
@@ -108,13 +112,14 @@ Die OneNote-API sucht und rendert die folgenden Informationen auf der Grundlage 
 - Vorbereitungs-, Koch- und Gesamtzeiten
 - Portionen
 
-   ![Ein Beispiel für die Extraktion von Rezepten](images/recipe-extraction.png)
+
+<img alt="An example recipe extraction" src="images/recipe-extraction.png" width="200">
 
 Die API ist für Rezepte von vielen beliebten Websites wie *Allrecipes.com*, *FoodNetwork.com* und *SeriousEats.com* optimiert.
 
 ### <a name="common-scenarios-for-recipe-extractions"></a>Häufige Szenarien für Rezeptextraktionen
 
-**Extrahieren von Rezeptinformationen und Rendern eines Snapshots der Rezeptwebseite**
+#### <a name="extract-recipe-information-and-also-render-a-snapshot-of-the-recipe-webpage"></a>Extrahieren von Rezeptinformationen und Rendern eines Snapshots der Rezeptwebseite
 
 Geben Sie die `extract.recipe`-Methode und das `none`-Ausweichverhalten an. Senden Sie auch ein `img`-Element, wobei das `data-render-src`-Attribut auf die Rezept-URL festgelegt ist. Wenn die API keinen Inhalt extrahieren kann, wird nur ein Snapshot der Rezeptwebseite gerendert.
 
@@ -130,7 +135,7 @@ Dieses Szenario bietet möglicherweise die meisten Informationen, da die Webseit
 ```
  
 
-**Extrahieren von Rezeptinformationen und Rendern eines Snapshots der Rezeptwebseite, wenn die Extraktion fehlschlägt**
+#### <a name="extract-recipe-information-and-render-a-snapshot-of-the-recipe-webpage-only-if-the-extraction-fails"></a>Extrahieren von Rezeptinformationen und Rendern eines Snapshots der Rezeptwebseite, wenn die Extraktion fehlschlägt
 
 Geben Sie die `extract.recipe`-Methode an, und verwenden Sie das standardmäßige Render-Ausweichverhalten. Wenn die API keinen Inhalt extrahieren kann, wird stattdessen ein Snapshot der Rezeptwebseite gerendert.
 
@@ -142,7 +147,7 @@ Geben Sie die `extract.recipe`-Methode an, und verwenden Sie das standardmäßig
 ```
 
 
-**Extrahieren von Rezeptinformationen und Rendern eines Links zum Rezept**
+#### <a name="extract-recipe-information-and-also-render-a-link-to-the-recipe"></a>Extrahieren von Rezeptinformationen und Rendern eines Links zum Rezept
 
 Geben Sie die `extract.recipe`-Methode und das `none`-Ausweichverhalten an. Senden Sie auch ein `a`-Element, wobei das `src`-Attribut auf die Rezept-URL festgelegt ist (Sie können alternativ auch andere Informationen senden, die Sie der Seite hinzufügen möchten). Wenn die API keinen Inhalt extrahieren kann, wird nur der Rezept-Link gerendert.
 
@@ -157,6 +162,7 @@ Geben Sie die `extract.recipe`-Methode und das `none`-Ausweichverhalten an. Send
 
 
 <a name="product"></a>
+
 ## <a name="product-listing-extractions"></a>Extraktionen von Produktlisten
 
 - Titel
@@ -164,15 +170,17 @@ Geben Sie die `extract.recipe`-Methode und das `none`-Ausweichverhalten an. Send
 - Primäres Bild
 - Beschreibung
 - Features
-- Spezifikationen</td>
+- Spezifikationen
 
-  ![Ein Beispiel für die Extraktion einer Produktliste.](images/product-extraction.png)
+
+
+<img alt="An example product listing extraction" src="images/product-extraction.png" width="200">
 
 Die API ist für Produkte von vielen beliebten Websites wie *Amazon.com* und *HomeDepot.com* optimiert.
 
 ### <a name="common-scenarios-for-recipe-extractions"></a>Häufige Szenarien für Rezeptextraktionen
 
-**Extrahieren von Produktinformationen und Rendern eines Snapshots der Produktwebseite**
+#### <a name="extract-product-information-and-also-render-a-snapshot-of-the-product-webpage"></a>Extrahieren von Produktinformationen und Rendern eines Snapshots der Produktwebseite
 
 Geben Sie die `extract.product`-Methode und das `none`-Ausweichverhalten an. Senden Sie auch ein `img`-Element, wobei das `data-render-src`-Attribut auf die Produkt-URL festgelegt ist. Wenn die API keinen Inhalt extrahieren kann, wird nur ein Snapshot der Produktwebseite gerendert.
 
@@ -188,7 +196,7 @@ Dieses Szenario bietet möglicherweise die meisten Informationen, da die Webseit
 ```
 
 
-**Extrahieren von Produktinformationen und Rendern eines Snapshots der Produktwebseite, wenn die Extraktion fehlschlägt**
+#### <a name="extract-product-information-and-render-a-snapshot-of-the-product-webpage-only-if-the-extraction-fails"></a>Extrahieren von Produktinformationen und Rendern eines Snapshots der Produktwebseite, wenn die Extraktion fehlschlägt
 
 Geben Sie die `extract.product`-Methode an, und verwenden Sie das standardmäßige Render-Ausweichverhalten. Wenn die API keinen Inhalt extrahieren kann, wird stattdessen ein Snapshot der Produktwebseite gerendert.
 
@@ -200,7 +208,7 @@ Geben Sie die `extract.product`-Methode an, und verwenden Sie das standardmäßi
 ```
  
 
-**Extrahieren von Produktinformationen und Rendern eines Links zum Produkt**
+#### <a name="extract-product-information-and-also-render-a-link-to-the-product"></a>Extrahieren von Produktinformationen und Rendern eines Links zum Produkt
 
 Geben Sie die `extract.product`-Methode und das `none`-Ausweichverhalten an. Senden Sie auch ein `a`-Element, wobei das `src`-Attribut auf die Produkt-URL festgelegt ist (Sie können alternativ auch andere Informationen senden, die Sie der Seite hinzufügen möchten). Wenn die API keinen Inhalt extrahieren kann, wird nur der Seitenlink gerendert.
 
@@ -215,6 +223,7 @@ Geben Sie die `extract.product`-Methode und das `none`-Ausweichverhalten an. Sen
 
 
 <a name="unknown"></a> 
+
 ## <a name="unknown-content-type-extractions"></a>Extraktionen unbekannter Inhaltstypen
 
 Wenn Sie den Inhaltstyp (Visitenkarte, Rezept oder Produkt), den Sie versenden möchten, nicht kennen, können Sie die unqualifizierte `extract`-Methode verwenden und die OneNote-API den Typ automatisch erkennen lassen. Dies ist möglicherweise sinnvoll, wenn Ihre App andere Erfassungstypen sendet.
@@ -223,7 +232,7 @@ Wenn Sie den Inhaltstyp (Visitenkarte, Rezept oder Produkt), den Sie versenden m
  
 ### <a name="common-scenarios-for-unknown-extractions"></a>Häufige Szenarien für Extraktionen unbekannter Inhaltstypen
 
-**Senden Sie ein Bild oder eine URL, und rendern Sie das bereitgestellte Bild oder einen Snapshot der Webseite, wenn die Extraktion fehlschlägt**
+#### <a name="send-an-image-or-a-url-and-render-the-supplied-image-or-a-snapshot-of-the-webpage-if-the-extraction-fails"></a>Senden Sie ein Bild oder eine URL, und rendern Sie das bereitgestellte Bild oder einen Snapshot der Webseite, wenn die Extraktion fehlschlägt
 
 Geben Sie die `extract`-Methode an, damit die API den Inhaltstyp automatisch erkennen kann und verwenden Sie das standardmäßige render-Ausweichverhalten. Wenn die API keinen Inhalt extrahieren kann, wird stattdessen das bereitgestellte Bild oder ein Snapshot der Webseite gerendert.
 
@@ -236,26 +245,28 @@ Geben Sie die `extract`-Methode an, damit die API den Inhaltstyp automatisch erk
 
 
 <a name="request-response-info"></a>
+
 ## <a name="response-information"></a>Informationen in der Antwort
 
 | Antwortdaten | Beschreibung |  
 |------|------|  
-| Erfolgscode | HTTP-Statuscode 201 für eine erfolgreiche POST-Anforderung, HTTP-Statuscode 204 für eine erfolgreiche PATCH-Anforderung. |  
+| Erfolgscode | HTTP-Statuscode 201 bei erfolgreich ausgeführter POST-Anforderung, HTTP-Statuscode 204 bei erfolgreich ausgeführter PATCH-Anforderung |  
 | Fehler| Informationen zu OneNote-Fehlern, die Microsoft Graph zurückgeben kann, finden Sie unter [Fehlercodes für OneNote-APIs in Microsoft Graph](onenote_error_codes.md). |  
 
 
 <a name="permissions"></a>
+
 ## <a name="permissions"></a>Berechtigungen
 
 Zum Erstellen oder Aktualisieren von OneNote-Seiten müssen Sie die entsprechenden Berechtigungen anfordern. Wählen Sie die niedrigste Berechtigungsstufe, die Ihre App zur Erledigung ihrer Aufgaben benötigt.
 
-**Berechtigungen für _POST Pages_**
+#### <a name="permissions-for-post-pages"></a>Berechtigungen für BEITRAG-Seiten
 
 - Notes.Create
 - Notes.ReadWrite
 - Notes.ReadWrite.All  
 
-**Berechtigungen für _PATCH Pages_**
+#### <a name="permissions-for-patch-pages"></a>Berechtigungen für PATCH-Seiten
 
 - Notes.ReadWrite
 - Notes.ReadWrite.All
@@ -264,12 +275,13 @@ Weitere Informationen zu Berechtigungsbereichen und deren Funktionsweise finden 
 
 
 <a name="see-also"></a>
-## <a name="additional-resources"></a>Weitere Ressourcen
+
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen von OneNote-Seiten](onenote-create-page.md)
 - [Aktualisieren mit OneNote-Seiteninhalt](onenote_update_page.md)
 - [Hinzufügen von Bildern und Dateien](onenote_images_files.md)
-- [Integrieren in OneNote](integrate_with_onenote.md)
+- [Integrieren mit OneNote](integrate_with_onenote.md)
 - [OneNote-Entwicklerblog](http://go.microsoft.com/fwlink/?LinkID=390183)
 - [Fragen zur OneNote-Entwicklung auf Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
 - [OneNote GitHub-Repos](http://go.microsoft.com/fwlink/?LinkID=390178)  

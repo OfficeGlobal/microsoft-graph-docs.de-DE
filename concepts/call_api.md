@@ -39,7 +39,9 @@ Metadaten für Microsoft Graph-API `beta`
     https://graph.microsoft.com/beta/$metadata
 ```
 
-Mithilfe der Metadaten können Sie das Datenmodell von Microsoft Graph sehen und verstehen, einschließlich Entitätstypen und Entitätenmengen, komplexe Typen und Enumerationen, aus denen die Anforderungs- und Antwortpakete bestehen, die an und von Microsoft Graph gesendet werden. Die Metadaten können Sie verwenden, um die Beziehungen zwischen Entitäten in Microsoft Graph zu verstehen und URLs einzurichten, die zwischen Entitäten navigieren. Diese auf Navigation-basierende Vernetzung ist das charakteristische Merkmal von Microsoft Graph.
+Mithilfe der Metadaten können Sie das Datenmodell von Microsoft Graph sehen und verstehen, einschließlich Entitätstypen und Entitätenmengen, komplexe Typen und Enumerationen, aus denen die Anforderungs- und Antwortpakete bestehen, die an und von Microsoft Graph gesendet werden.
+Die Metadaten können Sie verwenden, um die Beziehungen zwischen Entitäten in Microsoft Graph zu verstehen und URLs einzurichten, die zwischen Entitäten navigieren.
+Diese auf Navigation-basierende Vernetzung ist das charakteristische Merkmal von Microsoft Graph.
 
 Bei den Pfad-URL-Ressourcennamen und Abfrageparametern sowie den Aktionsparametern und -werten wird nicht nach Groß-/Kleinschreibung unterschieden. Bei zugewiesenen Werten, Entitäts-IDs und anderen base64-codierte Werten wird nach Groß-/Kleinschreibung unterschieden.
 
@@ -292,4 +294,4 @@ Die Anforderungsnutzlast enthält die Eingabe für die `sendMail`-Aktion, welche
 ## <a name="use-microsoft-graph-client-libraries"></a>Verwenden von Microsoft Graph-Clientbibliotheken
 Sie bevorzugen die Benutzerfreundlichkeit und die leistungsstarken Funktionen von SDKs? Zwar können Sie Microsoft Graph jederzeit über die REST-API aufrufen; wir stellen jedoch auch SDKs für viele beliebte Plattformen zur Verfügung.
 
-Informieren Sie sich unter diesem Link über unsere [SDKs](https://graph.microsoft.io/en-us/code-samples-and-sdks).
+Informieren Sie sich unter diesem Link über unsere [SDKs](https://graph.microsoft.io/de-DE/code-samples-and-sdks).
