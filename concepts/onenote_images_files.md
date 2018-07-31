@@ -1,7 +1,7 @@
 
 # <a name="add-images-videos-and-files-to-onenote-pages"></a>Hinzufügen von Bildern, Videos und Dateien zu OneNote-Seiten
 
-*__Gilt für:__ Heimanwender-Notizbücher in OneDrive | Unternehmensnotizbücher in Office 365*
+**Gilt für** Heimanwender-Notizbücher in OneDrive | Unternehmensnotizbücher in Office 365
 
 Sie können Elemente der Typen **img**, **object** und **iframe** verwenden, um bei der [Erstellung](onenote-create-page.md) oder [Aktualisierung](onenote_update_page.md) von OneNote-Seiten Bilder, Videos und Dateien zur Seite hinzuzufügen. 
 
@@ -11,31 +11,44 @@ Sie können Elemente der Typen **img**, **object** und **iframe** verwenden, um 
 
 
 <a name="images"></a>
+
 ## <a name="adding-images"></a>Hinzufügen von Bildern
 
 Bilder können mittels URL-Verweis oder durch das Senden von Rohdaten hinzugefügt werden. Microsoft Graph unterstützt die folgenden Methoden zum Hinzufügen von Bildern, Logos und Fotos zu OneNote-Seiten: 
 
-[Hinzufügen öffentlicher Bilder aus dem Internet](#add-a-public-image-from-the-web)  
-Verwenden Sie `img` mit `src="http://image-url"`, und geben Sie die URL eines öffentlich zugänglichen Bilds an. Das Bild wird auf der OneNote-Seite gerendert.</p>
-[Hinzufügen von Bildern mithilfe von Binärdaten](#add-an-image-using-binary-data)</p>
-Verwenden Sie `img` mit `src="name:image-block-name"`, und senden Sie die Bilddatei in einem Datenteil einer mehrteiligen Anforderung. Das Bild wird auf der OneNote-Seite gerendert.</p>
-[Hinzufügen von Webseitenmomentaufnahmen](#add-a-webpage-snapshot)</p>
-Verwenden Sie `img` mit `data-render-src="http://webpage-url"`, und geben Sie die URL einer Webseite an. Auf der OneNote-Seite wird eine Momentaufnahme der gesamten Webseite gerendert.</p>
-[Hinzufügen von HTML-basiert gerenderten Bildern](#add-an-image-rendered-from-html)</p>
-Verwenden Sie `img` mit `data-render-src="name:html-block-name"`, und senden Sie HTML-Code in einem Datenteil einer mehrteiligen Anforderung. Der HTML-Code wird auf der OneNote-Seite als Bild gerendert.</p>
-[Hinzufügen von Bildern von PDF-Inhalten](#add-images-of-pdf-file-contents)</p>
-Verwenden Sie `<img data-render-src="name:part-name" />`, und senden Sie die PDF-Datei in einem Datenteil einer mehrteiligen Anforderung. Jede PDF-Seite wird auf der OneNote-Seite als separates Bild gerendert.</p>
-[Hinzufügen von Bilddateien als Dateianlage](#add-an-image-file-as-an-attachment)</p>
-Verwenden Sie `object` mit `data="name:file-block-name" data-attachment="file-name.file-ext" type="media-type"`, und senden Sie eine Bilddatei in einem Datenteil einer mehrteiligen Anforderung. Der OneNote-Seite wird eine Dateianlage hinzugefügt, und es wird ein Dateisymbol angezeigt.</p>
+[Hinzufügen öffentlicher Bilder aus dem Internet](#add-a-public-image-from-the-web)
+
+Verwenden Sie `img` mit `src="http://image-url"`, und geben Sie die URL eines öffentlich zugänglichen Bilds an. Das Bild wird auf der OneNote-Seite gerendert.
+
+[Hinzufügen von Bildern mithilfe von Binärdaten](#add-an-image-using-binary-data)
+
+Verwenden Sie `img` mit `src="name:image-block-name"`, und senden Sie die Bilddatei in einem Datenteil einer mehrteiligen Anforderung. Das Bild wird auf der OneNote-Seite gerendert.
+
+[Hinzufügen von Webseitenmomentaufnahmen](#add-a-webpage-snapshot)
+
+Verwenden Sie `img` mit `data-render-src="http://webpage-url"`, und geben Sie die URL einer Webseite an. Auf der OneNote-Seite wird eine Momentaufnahme der gesamten Webseite gerendert.
+
+[Hinzufügen von HTML-basiert gerenderten Bildern](#add-an-image-rendered-from-html)
+
+Verwenden Sie `img` mit `data-render-src="name:html-block-name"`, und senden Sie HTML-Code in einem Datenteil einer mehrteiligen Anforderung. Der HTML-Code wird auf der OneNote-Seite als Bild gerendert.
+
+[Hinzufügen von Bildern von PDF-Inhalten](#add-images-of-pdf-file-contents)
+
+Verwenden Sie `<img data-render-src="name:part-name" />`, und senden Sie die PDF-Datei in einem Datenteil einer mehrteiligen Anforderung. Jede PDF-Seite wird auf der OneNote-Seite als separates Bild gerendert.
+
+[Hinzufügen von Bilddateien als Dateianlage](#add-an-image-file-as-an-attachment)
+
+Verwenden Sie `object` mit `data="name:file-block-name" data-attachment="file-name.file-ext" type="media-type"`, und senden Sie eine Bilddatei in einem Datenteil einer mehrteiligen Anforderung. Der OneNote-Seite wird eine Dateianlage hinzugefügt, und es wird ein Dateisymbol angezeigt.
+
 
 > **Hinweis:** Zum Abrufen von Bildern auf einer OneNote-Seite müssen Sie zunächst die [Seiteninhalte per GET-Anforderung abrufen](onenote-get-content.md#page-html-content). Das gibt die URLs der Bildressourcen auf der Seite zurück. Dann senden Sie separat [eine GET-Anforderung je Bildressource](onenote-get-content.md#image-or-other-file-resource).
 
 
-**Bildattribute** 
+#### <a name="image-attributes"></a>Attribute von Bildern 
 
 Elemente des Typs **img** können optional Attribute der Typen **alt**, **height** und **width** enthalten sowie die Formatattribute **max-width** und **max-height**.
 
-**Bildmedientypen**
+#### <a name="image-media-types"></a>Bildmedientypen
 
 Microsoft Graph unterstützt die Bildtypen TIFF, PNG, GIF, JPEG und BMP. Soll ein anderes Bildformat ohne vorherige Konvertierung dargestellt werden, müssen Sie [die Binärdaten senden](#add-an-image-using-binary-data), in einer mehrteiligen Anforderung. Base64 muss nicht verwendet werden, und auch eine anderweitige Codierung der gesendeten Binärdaten ist nicht erforderlich.
 
@@ -45,11 +58,12 @@ Unter [Einschränkungen](#size-limitations-for-post-pages-requests) sind alle Ei
 
 
 <a name="image-img-url-src"></a>
+
 ### <a name="add-a-public-image-from-the-web"></a>Hinzufügen öffentlicher Bilder aus dem Internet
 
 Geben Sie im Eingabe-HTML-Code Ihrer Anforderung `<img src="http://..." />` an, und setzen Sie die URL eines öffentlich verfügbaren Bilds im Attribut **src**.
 
-```
+```html
 Content-Type: multipart/form-data; boundary=MyAppPartBoundary
 Authorization: Bearer {access-token}
 
@@ -73,11 +87,12 @@ Content-Type: text/html
 ```
 
 <a name="image-img-binary-src"></a>
+
 ### <a name="add-an-image-using-binary-data"></a>Hinzufügen von Bildern mithilfe von Binärdaten
 
 Geben Sie im Eingabe-HTML-Code im Teil **Presentation** Ihrer Anforderung `<img src="name:part-name" />` an. Dabei ist *part-name* der eindeutige Bezeichner des Datenteils in Ihrer [mehrteiligen Anforderung](onenote-create-page.md#example-request), der die binären Bilddaten enthält. Senden Sie die Binärdaten in unveränderter Form: Verwenden Sie weder Base64 noch eine andere Form der Codierung.
 
-```
+```html
 Content-Type: multipart/form-data; boundary=MyAppPartBoundary
 Authorization: Bearer {access-token}
 
@@ -108,13 +123,14 @@ Content-Type: image/jpeg
 
 
 <a name="image-img-url-data-render-src"></a>
+
 ### <a name="add-a-webpage-snapshot"></a>Hinzufügen von Webseitenmomentaufnahmen
 
 Sie können mit Microsoft Graph Momentaufnahmen ganzer Webseiten erstellen und in neue Seiten einfügen. Diese Methode ist nützlich, um Webseiten zu archivieren oder komplexe Webseiten mit Features abzubilden, die OneNote nicht unterstützt (beispielsweise bestimmte CSS-Formatierungen).  
 
 Geben Sie im Eingabe-HTML-Code Ihrer Anforderung `<img src="http://..." />` an, und setzen Sie die URL der einzufügenden Webseite im Attribut **src**.
 
-```
+```html
 Content-Type: multipart/form-data; boundary=MyAppPartBoundary
 Authorization: Bearer {access-token}
 
@@ -139,12 +155,15 @@ Content-Type: text/html
 
 
 <a name="image-img-binary-data-render-src"></a>
+
 ### <a name="add-an-image-rendered-from-html"></a>Hinzufügen von HTML-basiert gerenderten Bildern
-Wenn Sie den HTML-Code als Datenblock übergeben, dürfen darin weder aktive Inhalte enthalten sein, die Benutzeranmeldeinformationen erfordern, noch vorab geladene Browser-Plug-Ins. Das Modul, das Microsoft Graph verwendet, um die HTML-Seite als Bild zu rendern, kann Benutzer nicht anmelden und enthält keine Plug-Ins wie Adobe Flash oder Apple QuickTime. Das bedeutet außerdem: Dynamisch geladene Inhalte, beispielsweise in einem AJAX-Skript, werden nicht angezeigt, wenn zum Abrufen der Daten Benutzeranmeldeinformationen oder Cookies erforderlich sind.
+
+Wenn Sie den HTML-Code als Datenblock übergeben, dürfen darin weder aktive Inhalte enthalten sein, die Benutzeranmeldeinformationen erfordern, noch vorab geladene Browser-Plug-Ins. Das Modul, das Microsoft Graph verwendet, um die HTML-Seite als Bild zu rendern, kann Benutzer nicht anmelden und enthält keine Plug-Ins wie Adobe Flash oder Apple QuickTime. Das bedeutet außerdem: Dynamisch geladene Inhalte, wie sie in einem AJAX-Skript vorkommen können, werden nicht angezeigt, wenn zum Abrufen der Daten Benutzeranmeldeinformationen oder Cookies erforderlich sind.
 
 Geben Sie im Eingabe-HTML-Code im Teil **Presentation** Ihrer Anforderung `<img data-render-src="name:part-name" />` an. Dabei ist *part-name* der eindeutige Bezeichner des Datenteils in Ihrer [mehrteiligen Anforderung](onenote-create-page.md#example-request), der den HTML-Code enthält.
 
-```
+
+```html
 Content-Type: multipart/form-data; boundary=MyAppPartBoundary
 Authorization: Bearer {access-token}
 
@@ -182,11 +201,12 @@ it won't work. Instead, use URL-based real images like this:</p>
 
 
 <a name="image-object"></a>
+
 ### <a name="add-an-image-file-as-an-attachment"></a>Hinzufügen von Bilddateien als Anlage
 
 Geben Sie im Eingabe-HTML-Code im Teil **Presentation** Ihrer Anforderung `<object data="name:part-name" data-attachment="file-name.file-ext" type="media-type/media-subtype" />` an. Dabei ist *part-name* der eindeutige Bezeichner des Datenteils in Ihrer [mehrteiligen Anforderung](onenote-create-page.md#example-request), der die binären Bilddaten enthält. Senden Sie die Binärdaten in unveränderter Form: Verwenden Sie weder Base64 noch eine andere Form der Codierung.
 
-```
+```html
 Content-Type: multipart/form-data; boundary=MyAppPartBoundary
 Authorization: Bearer {access-token}
 
@@ -219,12 +239,13 @@ Weitere Informationen zu Dateimedientypen finden Sie unter [diesem Link](#file-m
 
 
 
-<a name="videos"></a>
+<a name="adding-videos"></a>
+
 ## <a name="adding-videos"></a>Hinzufügen von Videos
 
 Wenn Sie Videos in OneNote-Seiten einbetten möchten, können Sie `<iframe data-original-src="http://..." />` im Eingabe-HTML-Code verwenden. 
 
-**Unterstützte Videowebsites**
+### <a name="supported-video-sites"></a>Unterstützte Videowebsites
 
 - Dailymotion
 - Office Mix
@@ -235,20 +256,31 @@ Wenn Sie Videos in OneNote-Seiten einbetten möchten, können Sie `<iframe data-
 - Vimeo
 - Vine
 
-**„iframe“-Attribute**
+### <a name="iframe-attributes"></a>„iframe“-Attribute
 
-**data-original-src**</p>
-Erforderlich. URL des Videos.<br />Beispiel: `data-original-src="https://www.youtube.com/watch?v=3Ztr44aKmQ8"`</p>
-**width**</p>
-Optional. Breite des „iframe“-Elements, in dem das Video enthalten ist. Der Standardwert ist 480.<br />Beispiel: `width="300"`</p>
-**height**</p>
-Optional. Höhe des „iframe“-Elements, in dem das Video enthalten ist. Der Standardwert ist 360.<br />Beispiel: `height="300"`</p>
+#### <a name="data-original-src"></a>data-original-src
 
-**Beispiel**
+Erforderlich.  URL des Videos.
+
+Beispiel: `data-original-src="https://www.youtube.com/watch?v=3Ztr44aKmQ8"`
+
+#### <a name="width"></a>width
+
+Optional. Breite des „iframe“-Elements, in dem das Video enthalten ist. Der Standardwert ist 480.
+
+Beispiel: `width="300"`
+
+#### <a name="height"></a>height
+
+Optional. Höhe des „iframe“-Elements, in dem das Video enthalten ist. Der Standardwert ist 360.
+
+Beispiel: `height="300"`
+
+### <a name="example"></a>Beispiel
 
 Geben Sie im Eingabe-HTML-Code Ihrer Anforderung `<iframe data-original-src="http://..." />` an, und setzen Sie die URL des Videos im Attribut **data-original-src**.
 
-```
+```html
 Content-Type: multipart/form-data; boundary=MyAppPartBoundary
 Authorization: Bearer {access-token}
 
@@ -270,31 +302,47 @@ Content-Type: text/html
 ```
 
 
-<a name="files"></a>
+<a name="adding-files"></a>
+
 ## <a name="adding-files"></a>Hinzufügen von Dateien
 
 Zum Hinzufügen von Dateianlagen zu OneNote-Seiten verwenden Sie ein Element des Typs **object** im Eingabe-HTML-Code. Wenn Sie eine PDF-Datei hinzufügen möchten, können Sie die einzelnen PDF-Seiten mithilfe eines Elements des Typs **img** als Bild rendern. 
 
-[Hinzufügen von Dateianlagen](#add-a-file-attachment)</p>
-Verwenden Sie `<object .../>`, und senden Sie die Datei in einem Datenteil einer mehrteiligen Anforderung. Der OneNote-Seite wird eine Dateianlage hinzugefügt, die als Dateisymbol angezeigt wird.</p>
-[Hinzufügen von Bildern von PDF-Inhalten](#add-images-of-pdf-file-contents)</p>
-Verwenden Sie `<img data-render-src="name:part-name" />`, und senden Sie eine PDF-Datei in einem Datenteil einer mehrteiligen Anforderung. Jede PDF-Seite wird auf der OneNote-Seite als separates Bild gerendert.</p>
+[Hinzufügen von Dateianlagen](#add-a-file-attachment)
 
-**Dateiattribute**
+Verwenden Sie `<object .../>`, und senden Sie die Datei in einem Datenteil einer mehrteiligen Anforderung. Der OneNote-Seite wird eine Dateianlage hinzugefügt, die als Dateisymbol angezeigt wird.
+
+[Hinzufügen von Bildern von PDF-Inhalten](#add-images-of-pdf-file-contents)
+
+Verwenden Sie `<img data-render-src="name:part-name" />`, und senden Sie eine PDF-Datei in einem Datenteil einer mehrteiligen Anforderung. Jede PDF-Seite wird auf der OneNote-Seite als separates Bild gerendert.
+
+#### <a name="file-attributes"></a>Dateiattribute
 
 Elemente des Typs **object** erfordern die folgenden Attribute:
 
-**data-attachment**</p>
-Name und Dateierweiterung der Datei, die auf der OneNote-Seite angezeigt werden soll<br />Beispiel: `data-attachment="filename.docx"`</p>
-**data**</p>
-Name des Textteils in der mehrteiligen Anforderung, der die binären Dateidaten enthält. Microsoft Graph bietet keine Unterstützung für die Übergabe von URL-Verweisen in diesem Attribut.<br />Beispiel: `data="name:part-name"`</p>
-**type**</p>
-Medientyp der Datei. Er legt fest, welches Dateisymbol auf der Seite angezeigt werden soll und welche Anwendung gestartet wird, sobald der Benutzer die Datei auf dem Gerät über OneNote aktiviert.<br />Beispiel: `type="application/pdf"`</p>
+**data-attachment**
+
+Name und Dateierweiterung der Datei, die auf der OneNote-Seite angezeigt werden soll
+
+Beispiel: `data-attachment="filename.docx"`
+
+**data**
+
+Name des Textteils in der mehrteiligen Anforderung, der die binären Dateidaten enthält. Microsoft Graph bietet keine Unterstützung für die Übergabe von URL-Verweisen in diesem Attribut.
+
+Beispiel: `data="name:part-name"`
+
+**type**
+
+Medientyp der Datei. Er legt fest, welches Dateisymbol auf der Seite angezeigt werden soll und welche Anwendung gestartet wird, sobald der Benutzer die Datei auf dem Gerät über OneNote aktiviert.
+
+Beispiel: `type="application/pdf"`
 
 
 <a name="file-media-types"></a>
 
-### <a name="file-media-types"></a>Dateimedientypen  
+#### <a name="file-media-types"></a>Dateimedientypen  
+
 Microsoft Graph verwendet für angefügte Dateien vordefinierte Dateitypensymbole. Erkennt die API den Dateityp nicht, wird ein generisches Symbol verwendet. Nachfolgend sind verschiedene häufig vorkommende Dateitypen aufgeführt, die von der API erkannt werden:
 
 - application/pdf  
@@ -314,11 +362,12 @@ Unter [Einschränkungen](#size-limitations-for-post-pages-requests) sind alle Ei
 
 
 <a name="file-object"></a>
+
 ### <a name="add-a-file-attachment"></a>Hinzufügen von Dateianlagen
 
 Geben Sie im Eingabe-HTML-Code im Teil **Presentation** Ihrer Anforderung `<object data="name:part-name" data-attachment="file-name.file-ext" type="media-type/media-subtype" />` an. Dabei ist *part-name* der eindeutige Bezeichner des Datenteils in Ihrer [mehrteiligen Anforderung](onenote-create-page.md#example-request), der die binären Dateidaten enthält. Senden Sie die Binärdaten in unveränderter Form: Verwenden Sie weder Base64 noch eine andere Form der Codierung.
 
-```
+```html
 Content-Type: multipart/form-data; boundary=MyAppPartBoundary
 Authorization: Bearer {access-token}
 
@@ -348,11 +397,12 @@ Content-Type: image/jpeg
 
 
 <a name="file-binary-data-render-src"></a>
+
 ### <a name="add-images-of-pdf-file-contents"></a>Hinzufügen von Bildern von PDF-Inhalten
 
 Geben Sie im Eingabe-HTML-Code im Teil **Presentation** Ihrer Anforderung `<img data-render-src="name:part-name" ... />` an. Dabei ist *part-name* der eindeutige Bezeichner des Datenteils in Ihrer [mehrteiligen Anforderung](onenote-create-page.md#example-request), der die binären Dateidaten enthält. Senden Sie die Binärdaten in unveränderter Form: Verwenden Sie weder Base64 noch eine andere Form der Codierung.
 
-```
+```html
 Content-Type: multipart/form-data; boundary=MyAppPartBoundary
 Authorization: Bearer {access-token}
 
@@ -382,6 +432,7 @@ Content-Type: application/pdf
 
 
 <a name="size-limits"></a>
+
 ## <a name="size-limitations-for-post-pages-requests"></a>Größenbeschränkungen bei Anforderungen des Typs „Post pages“
 
 Für das Senden von Bild- und Dateidaten gelten folgende Einschränkungen: <!--TODO: check these-->
@@ -399,18 +450,19 @@ Für das Senden von Bild- und Dateidaten gelten folgende Einschränkungen: <!--T
 - Die maximal zulässige Anzahl von Bildern pro POST-Anforderung liegt bei 30, unabhängig von der Methode, über die sie an die API gesendet werden. Alle weiteren Bilder werden ignoriert. Wenn Sie eine Webseite mit vielen Bildern abbilden möchten, empfiehlt sich die [Erstellung einer Momentaufnahme der gesamten Seite](#add-a-webpage-snapshot).
 
 
-## <a name="when-to-use-html-versus-data-render-src"></a>Anwendungsfälle: HTML vs. *data-render-src* 
+## <a name="when-to-use-html-versus-data-render-src"></a>Anwendungsfälle: HTML vs. data-render-src 
+
 Ob Sie den HTML-Code direkt auf der OneNote-Seite einfügen oder das Attribut **data-render-src** verwenden sollten, hängt von verschiedenen Faktoren ab. Berücksichtigen Sie bei Ihrer Entscheidung Folgendes:
 
 - Komplexer HTML-Code sollte per **data-render-src** an das Renderingmodul gesendet werden. Eine manuelle Anpassung des HTML-Codes an die Anforderungen von Microsoft Graph empfiehlt sich nicht. Dies gilt auch für HTML-Code mit nicht unterstützten Tags.
 
 - Für akkurates Seitenrendering unter Beibehaltung des Layouts und Designs der Seite empfiehlt sich die Verwendung des Renderingmoduls per **data-render-src**.
 
-- Bei direkt bearbeitbarem Text sollte der HTML-Code direkt auf der Seite eingefügt werden. Gerenderte Bilder werden zwar von einem System für optische Zeichenerkennung (OCR, Optical Character Recognition) gescannt, dieses System liefert jedoch keine gleichwertigen Ergebnisse.
+- Direkt bearbeitbarer Text lässt sich häufig am besten durch direktes Einfügen des HTML-Codes in die Seite erreichen. Die gerenderten Bilder werden von einem System für die optische Zeichenerkennung (OCR) gescannt, sind jedoch nicht unbedingt identisch.
 
-- Momentaufnahmen bestimmter Zeitpunkte zu Verlaufs- oder Archivierungszwecken sollten mithilfe der Methode „data-render-src“ angefertigt werden.
+- Momentaufnahmen bestimmter Zeitpunkte zu Verlaufs- oder Archivierungszwecken sollten mithilfe der Methode **data-render-src** angefertigt werden.
 
-- **data-render-src** eignet sich hervorragend, um einem Webseitendesign Überarbeitungshinweise hinzuzufügen. Mit den Freihandfunktionen von OneNote können Sie Änderungen auf dem Bild markieren oder wichtige Bereiche hervorheben. Ist die betreffende Webseite ein Bild, gestaltet sich das sehr viel einfacher.
+- Das Markieren eines Webseitenentwurfs für Überprüfungen ist ein Bereich, in dem **data-render-src** besonders hervorsticht. Mithilfe der Freihandfunktionen von OneNote können Sie auf einem Bild zeichnen, um Änderungen anzugeben oder bestimmte Abschnitte hervorzuheben. Wenn die Webseite als Bild vorliegt, ist das wesentlich einfacher.
 
 - Sehr große Bilder oder Bilder in Formaten, die OneNote nicht direkt unterstützt, lassen sich mit dem Attribut **data-render-src** mitunter einfacher als Miniaturansicht anzeigen und konvertieren, als dies mit eigenem Code möglich wäre. Selbst wenn das Bild auch online verfügbar ist: Wenn Sie die Daten in die POST-Anforderung einbetten, steht die Seitenabbildung OneNote-Benutzern manchmal schneller zur Verfügung, da zur Erstellung der OneNote-Seite insgesamt weniger Roundtrips nötig sind.
 
@@ -418,17 +470,18 @@ Manchmal können Sie am einfachsten herausfinden, welche Methode für Ihre Benut
 
 
 <a name="permissions"></a>
+
 ## <a name="permissions"></a>Berechtigungen
 
 Zum Erstellen oder Aktualisieren von OneNote-Seiten müssen Sie die entsprechenden Berechtigungen anfordern. Wählen Sie die niedrigste Stufe, die erforderlich ist, damit Ihre App korrekt funktioniert.
 
-**Berechtigungen für _POST pages_**
+#### <a name="permissions-for-post-pages"></a>Berechtigungen für BEITRAG-Seiten
 
 - Notes.Create
 - Notes.ReadWrite
 - Notes.ReadWrite.All 
 
-**Berechtigungen für _PATCH pages_**
+#### <a name="permissions-for-patch-pages"></a>Berechtigungen für PATCH-Seiten
 
 - Notes.ReadWrite
 - Notes.ReadWrite.All
@@ -437,9 +490,10 @@ Weitere Informationen zu Berechtigungsbereichen und deren Funktionsweise finden 
 
 
 <a name="see-also"></a>
-## <a name="additional-resources"></a>Weitere Ressourcen
+
+## <a name="see-also"></a>Siehe auch
 
 - [Integrieren mit OneNote](integrate_with_onenote.md)
 - [OneNote-Entwicklerblog](http://go.microsoft.com/fwlink/?LinkID=390183)
-- [Fragen zur OneNote-Entwicklung auf Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
-- [GitHub-Repositorys für OneNote](http://go.microsoft.com/fwlink/?LinkID=390178)  
+- [Fragen zur OneNote-Entwicklung auf Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote GitHub-Repos](http://go.microsoft.com/fwlink/?LinkID=390178)  

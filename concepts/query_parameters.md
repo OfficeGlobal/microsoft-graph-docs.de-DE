@@ -167,10 +167,10 @@ Wenn Sie $filter angeben, leitet der Server eine Sortierreihenfolge für die Erg
 Das folgende Beispiel zeigt eine Abfrage, die nach den Eigenschaften **subject** und **importance** gefiltert ist und dann nach den Eigenschaften **subject**, **importance** und **receivedDateTime** in absteigender Reihenfolge sortiert werden.
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome to exchange unified messaging' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
 ```
 
-[Ausprobieren im Graph-Tester](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome to exchange unified messaging%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
+[Ausprobieren im Graph-Tester](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
  > **Hinweis:** Bei Azure AD-Ressourcen, die von [directoryObject](../api-reference/v1.0/resources/directoryobject.md) abgeleitet werden, wie z. B. [Benutzer](../api-reference/v1.0/resources/user.md) und [Gruppe](../api-reference/v1.0/resources/group.md), kann `$orderby` nicht mit `$filter`-Ausdrücken verwendet werden. 
 
@@ -184,25 +184,26 @@ Um die Ergebnisse einer Anforderung so zu beschränken, dass sie einem Suchkrite
 
 Office 365-Anwendungen wie Outlook und SharePoint unterstützen die KQL-Syntax (Keyword Query Language) für Suchvorgänge. Dies bietet den Vorteil einer gemeinsamen Discovery-Domäne für die Datenspeicher. 
 
-Beim Durchsuchen von Nachrichtensammlungen sind die Ergebnisse nach Datum und Uhrzeit sortiert, zu dem bzw. der die Nachricht gesendet wurde. 
+Sie können die folgenden Eigenschaftennamen angeben, die KQL in einer $search-Abfragezeichenfolge erkennt. Diese Eigenschaftennamen sind keine in der Entität **Nachricht** definierten Eigenschaften, sie sind jedoch intern Eigenschaften in der Entität **Nachricht** zugeordnet. Weitere Informationen und Beispiele finden Sie unter [Durchsuchbare Eigenschaften in Exchange](https://docs.microsoft.com/de-DE/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange).
 
-Sie können die folgenden Eigenschaften in einer **Nachricht** in einem `$search`-Kriterium angeben:
-
-- **attachments**
-- **bccRecipients**
-- **body**
-- **category**
-- **ccRecipients**
-- **content**
-- **from**
-- **hasAttachments**
-- **participants**
-- **receivedDateTime**
-- **sender**
-- **subject**
-- **toRecipients**
+- **Anlage**
+- **bcc**
+- **Text**
+- **Kategorie**
+- **cc**
+- **Inhalt**
+- **Von**
+- **Besitzt**
+- **Wichtigkeit**
+- **Teilnehmer**
+- **Empfangen**
+- **Absender**
+- **Betreff**
+- **An**
 
 Wenn Sie eine Suche nach Nachrichten durchführen und nur einen Wert angeben, wird die Suche anhand der Standardsucheigenschaften**from**, **subject** und **body** ausgeführt.
+
+Die Ergebnisse beim Durchsuchen einer Nachrichtensammlung sind nach Datum und Uhrzeit sortiert, zu dem bzw. der die Nachricht gesendet wurde.
 
 Im folgenden Beispiel werden alle Nachrichten im Posteingang des angemeldeten Benutzers zurückgegeben, die das Wort „Pizza“ in einer der drei Standardsucheigenschaften enthalten:
 

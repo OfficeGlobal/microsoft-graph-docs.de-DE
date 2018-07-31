@@ -1,6 +1,6 @@
 # <a name="create-and-send-outlook-messages"></a>Erstellen und Senden von Outlook-Nachrichten
 
-E-Mails werden in Microsoft Graph durch die [message](../api-reference/v1.0/resources/message.md)-Ressource dargestellt. 
+E-Mails werden in Microsoft Graph durch die [message](../api-reference/v1.0/resources/message.md)-Ressource dargestellt.
 
 Standardmäßig werden Nachrichten durch eine eindeutige Eintrags-ID in der **id**-Eigenschaft identifiziert. Ein Speicheranbieter weist einer Nachricht eine Eintrags-ID zu, wenn die Nachricht zuerst als Entwurf gespeichert oder gesendet wurde. Diese ID ändert sich, wenn die Nachricht kopiert oder in einen anderen Ordner, einen Store oder eine PST-Datei verschoben wird.
 
@@ -10,9 +10,9 @@ In Outlook können Sie eine E-Mail in derselben [SendMail](../api-reference/v1.0
 
 Wenn Sie auf eine E-Mail antworten, können Sie auf ähnliche Weise die Antwort in derselben Aktion erstellen und senden ([reply](../api-reference/v1.0/api/message_reply.md), [reply-all](../api-reference/v1.0/api//message_replyall.md) oder [forward](../api-reference/v1.0/api/message_forward.md)). Sie können auch einen Entwurf für die Antwort erstellen ([reply](../api-reference/v1.0/api/message_createreply.md), [reply-all](../api-reference/v1.0/api//message_createreplyall.md) oder [forward](../api-reference/v1.0/api/message_createforward.md)), [Inhalt hinzufügen](../api-reference/v1.0/api/message_update.md) und den Entwurf zu einem späteren Zeitpunkt [senden](../api-reference/v1.0/api/message_send.md).
 
-Um programmgesteuert zwischen einem Entwurf und einer gesendeten Nachricht zu unterscheiden, überprüfen Sie die Eigenschaft **isDraft**. 
+Um programmgesteuert zwischen einem Entwurf und einer gesendeten Nachricht zu unterscheiden, überprüfen Sie die Eigenschaft **isDraft**.
 
-Standardmäßig werden Nachrichtenentwürfe im Ordner `Drafts`gespeichert, und gesendete Nachrichten werden im Ordner `Sent Items` gespeichert. Sie können den Ordner für Entwürfe und den Ordner für gesendete Elemente auch einfach anhand ihrer bekannten Ordnernamen erkennen. Sie können z. B. Folgendes durchführen, um die [Nachrichten](../api-reference/v1.0/api/user_list_messages.md) im Ordner „Entwürfe“ abzurufen:
+Standardmäßig werden Nachrichtenentwürfe im Ordner `Drafts`gespeichert, und gesendete Nachrichten werden im Ordner `Sent Items` gespeichert. Sie können den Ordner für Entwürfe und den Ordner für gesendete Elemente auch einfach anhand ihrer [bekannten Ordnernamen](../api-reference/v1.0/resources/mailfolder.md#well-known-folder-names) erkennen. Sie können z. B. Folgendes durchführen, um die [Nachrichten](../api-reference/v1.0/api/user_list_messages.md) im Ordner „Entwürfe“ abzurufen:
 
 ```http
 GET /me/mailfolders('Drafts')
@@ -20,18 +20,20 @@ GET /me/mailfolders('Drafts')
 
 ### <a name="body-format-and-malicious-script"></a>Textformat und bösartige Skripts
 
-<!-- Remove the following 2 sections from the message.md topics 
+<!-- Remove the following 2 sections from the message.md topics
 -->
 
 Der Nachrichtentext kann entweder das HTML- oder Textformat aufweisen, wobei HTML der standardmäßige Nachrichtentexttyp ist, der bei einer GET-Antwort zurückgegeben wird.
 
 Wenn Sie [eine Nachricht abrufen](../api-reference/v1.0/api/message_get.md), können Sie den folgenden Anforderungsheader angeben, um die Eigenschaften **body** und **uniqueBody** im Textformat zurückzugeben:
 
-```
+```http
 Prefer: outlook.body-content-type="text"
 ```
+
 Sie können den folgenden Header angeben oder ihn einfach überspringen, um den Nachrichtentext im HTML-Format zu erhalten:
-```
+
+```http
 Prefer: outlook.body-content-type="html"
 ```
 
@@ -43,7 +45,8 @@ Wenn Sie einen der Header angeben, enthält eine erfolgreiche Antwort den entspr
 Wenn der Textkörper im HTML-Format vorliegt, entfernt Outlook standardmäßig alle potenziell unsicheren HTML-Elemente (z. B. JavaScript), die in der **body**-Eigenschaft eingebettet sind, vor dem Zurückgeben des Textkörperinhalts in einer REST-Antwort.
 
 Um den gesamten ursprünglichen HTML-Inhalt abzurufen, schließen Sie den folgenden HTTP-Anforderungsheader ein:
-```
+
+```http
 Prefer: outlook.allow-unsafe-html
 ```
 
@@ -56,7 +59,8 @@ Wenn in Outlook eine Nachricht erstellt wird legt Outlook in den meisten Fällen
 
 ## <a name="using-mailtips-to-check-recipient-status-and-save-time-preview"></a>Verwenden von MailTips zum Überprüfen des Empfängerstatus und Sparen von Zeit (Vorschau)
 
-Mit [MailTips](../api-reference/beta/resources/mailtips.md) können Sie intelligente Entscheidungen treffen, bevor Sie eine E-Mail senden. MailTips stellt Ihnen Informationen bereit, wie z. B. darüber, ob das Postfach eines Empfängers auf bestimmte Absender beschränkt ist oder ob zum Senden von E-Mails an den Empfänger eine Genehmigung erforderlich ist.
+Mit [MailTips](../api-reference/beta/resources/mailtips.md) können Sie intelligente Entscheidungen treffen, bevor Sie eine E-Mail senden.
+MailTips stellt Ihnen Informationen bereit, wie z. B. darüber, ob das Postfach eines Empfängers auf bestimmte Absender beschränkt ist oder ob zum Senden von E-Mails an den Empfänger eine Genehmigung erforderlich ist.
 
 ## <a name="integrating-with--social-gesture-preview"></a>Integration mit der Geste „@“ aus sozialen Netzwerken (Vorschau)
 
@@ -65,8 +69,7 @@ Sie können:
 
 - @-Erwähnungen beim [Erstellen einer Nachricht](../api-reference/beta/api/user_post_messages.md#request-2) erstellen
 - [Alle Nachrichten im Postfach eines Benutzers abrufen, die eine @-Erwähnung des Benutzers beinhalten](../api-reference/beta/api/user_list_messages.md#request-2)
-- [Alle @-Erwähnungen in einer Nachricht abrufen](../api-reference/beta/api/message_get.md#request-2) 
-
+- [Alle @-Erwähnungen in einer Nachricht abrufen](../api-reference/beta/api/message_get.md#request-2)
 
 ## <a name="other-shared-capabilities"></a>Sonstige gemeinsam genutzte Funktionen
 

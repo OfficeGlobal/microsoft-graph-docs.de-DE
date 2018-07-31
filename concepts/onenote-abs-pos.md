@@ -4,6 +4,7 @@
 Das „body“-Element einer OneNote-Seite kann mehrere direkt untergeordnete Elemente des Typs `div`, `img` oder `object` enthalten, die unabhängig voneinander auf der Seite positioniert werden können.
 
 <a name="attributes"></a>
+
 ## <a name="attributes-and-positioning-behavior"></a>Attribute und Positionierungsverhalten
 
 Mithilfe der Attribute `data-absolute-enabled` und [`style`](#supported-css-style-attributes) können Sie absolut positionierte Elemente auf einer Seite erstellen. Dabei gilt:
@@ -23,11 +24,11 @@ Mithilfe der Attribute `data-absolute-enabled` und [`style`](#supported-css-styl
 - Absolut positionierte Elemente können weder geschachtelt werden noch positionierte Elemente enthalten. Die API ignoriert alle für geschachtelte Elemente innerhalb eines absolut positionierten „div“-Elements angegebenen Positionseinstellungen, rendert die geschachtelten Inhalte innerhalb des absolut positionierten übergeordneten „div“-Elements und gibt eine Warnung in der Eigenschaft **api.diagnostics** in der Antwort zurück.
 
 
-# <a name="example"></a>Beispiel
+### <a name="example"></a>Beispiel
 
- Das folgende Beispiel enthält ein direkt untergeordnetes Element des Typs `p`, ein absolut positioniertes „div“-Element und ein nicht absolut positioniertes „div“-Element.
+Das folgende Beispiel enthält ein direkt untergeordnetes Element des Typs `p`, ein absolut positioniertes „div“-Element und ein nicht absolut positioniertes „div“-Element.
 
-## <a name="input-html"></a>Eingabe-HTML  
+#### <a name="input-html"></a>Eingabe-HTML  
 
    ```html 
    <body data-absolute-enabled="true">
@@ -41,9 +42,9 @@ Mithilfe der Attribute `data-absolute-enabled` und [`style`](#supported-css-styl
    </body>
    ```
 
-Die API rendert das nicht absolut positionierte „div“-Element im „div“-Element „_default“. Beachten Sie: Die geschachtelten Tags des Typs `<div>` werden verworfen, da sie keine semantischen Informationen definieren (z. B. `data-id`).
+Die API rendert das nicht absolut positionierte „div“-Element im „div“-Element „default“. Beachten Sie: Die geschachtelten Tags des Typs `<div>` werden verworfen, da sie keine semantischen Informationen definieren (z. B. `data-id`).
 
-## <a name="output-html"></a>Ausgabe-HTML 
+#### <a name="output-html"></a>Ausgabe-HTML 
 
    ```html 
    <body data-absolute-enabled="true" style="font-family:Calibri;font-size:11pt">
@@ -57,12 +58,12 @@ Die API rendert das nicht absolut positionierte „div“-Element im „div“-E
    </body>
    ```
 
-## <a name="example"></a>Beispiel
+### <a name="example"></a>Beispiel
 
- Das folgende Beispiel erstellt eine Seite, die ein einziges absolut positioniertes „div“-Element und ein einziges absolut positioniertes Bild enthält.
+Das folgende Beispiel erstellt eine Seite, die ein einziges absolut positioniertes „div“-Element und ein einziges absolut positioniertes Bild enthält.
 
 
-### <a name="input-html"></a>Eingabe-HTML  
+#### <a name="input-html"></a>Eingabe-HTML  
 
 ```html 
 <html>
@@ -91,7 +92,8 @@ Beachten Sie die Änderungen am nicht berücksichtigten, geschachtelten „div�
 Weitere Informationen dazu, wie die OneNote-API Eingabe-HTML und Ausgabe-HTML verarbeitet, finden Sie unter [Eingabe- und Ausgabe-HTML auf OneNote-Seiten](onenote_input_output_html.md).
 
 <a name="style-attributes"></a>
-### <a name="supported-css-style-attributes"></a>Unterstützte CSS-Formatattribute
+
+## <a name="supported-css-style-attributes"></a>Unterstützte CSS-Formatattribute
 
 Für alle absolut positionierten Elemente können eine obere Position und eine linke Position angegeben werden. Für „div“-Elemente und Bilder lässt sich die Breite, für Bilder zusätzlich auch die Höhe festlegen. Beispiel:
 
@@ -101,16 +103,18 @@ Für alle absolut positionierten Elemente können eine obere Position und eine l
 
 | Attribut | Unterstütztes Element | Beschreibung |  
 |:------|:------|:------|  
-| top | div, img, object | Y-Koordinate des oberen Rands des Elements, anzugeben ausschließlich in Pixel. Der Standardwert ist 120 Pixel.<p>Beispiel: `top:140px`</p> |  
-| left |  div, img, object  | X-Koordinate des linken Rands des Elements, anzugeben ausschließlich in Pixel Der Standardwert ist 48 Pixel.<p>Beispiel: `left:95px`</p> |  
-| width |  div, img  | Die Breite des Elements, anzugeben ausschließlich in Pixel.<p>Beispiel: `width:480px`</p> |  
-| height | img | Die Höhe des Elements, anzugeben ausschließlich in Pixel. Die Höhe von „div“-Elementen wird zur Laufzeit berechnet; angegebene Höhenwerte werden ignoriert.<p>Beispiel: `height:665px`</p> |  
+| top | div, img, object | Y-Koordinate des oberen Rands des Elements, anzugeben ausschließlich in Pixel. Der Standardwert ist 120 Pixel.<br/><br/>Beispiel: `top:140px` |  
+| left |  div, img, object  | X-Koordinate des linken Rands des Elements, anzugeben ausschließlich in Pixel Der Standardwert ist 48 Pixel.<br/><br/>Beispiel: `left:95px` |  
+| width |  div, img  | Die Breite des Elements, anzugeben ausschließlich in Pixel.<br/><br/>Beispiel: `width:480px` |  
+| height | img | Die Höhe des Elements, anzugeben ausschließlich in Pixel. Die Höhe von „div“-Elementen wird zur Laufzeit berechnet; angegebene Höhenwerte werden ignoriert.<br/><br/>Beispiel: `height:665px` |  
  
 Andere Positionsattribute, beispielsweise `z-index`, werden ignoriert. Für absolut positionierte Bilder können Sie entweder das Attribut `data-render-src` oder das Attribut `src` verwenden.
 
 
 <a name="request-response-info"></a>
+
 ## <a name="response-information"></a>Informationen in der Antwort
+
 Die OneNote-API gibt in der Antwort die nachfolgenden Informationen zurück.
 
 | Antwortdaten | Beschreibung |  
@@ -121,17 +125,19 @@ Die OneNote-API gibt in der Antwort die nachfolgenden Informationen zurück.
 
 
 <a name="permissions"></a>
+
 ## <a name="permissions"></a>Berechtigungen
 
-Zum Erstellen oder Aktualisieren von OneNote-Seiten müssen Sie die entsprechenden Berechtigungen anfordern. Wählen Sie die niedrigste Berechtigungsstufe, die erforderlich ist, damit Ihre App korrekt funktioniert.
+Zum Erstellen oder Aktualisieren von OneNote-Seiten müssen Sie die entsprechenden Berechtigungen anfordern. Wählen Sie die niedrigste Berechtigungsstufe, die Ihre App zur Erledigung ihrer Aufgaben benötigt.
 
-### <a name="permissions-for-post-pages"></a>Berechtigungen für _POST pages_ 
+#### <a name="permissions-for-post-pages"></a>Berechtigungen für BEITRAG-Seiten 
+
 - Notes.Create
 - Notes.ReadWrite
 - Notes.ReadWrite.All  
 
 
-### <a name="permissions-for-patch-pages"></a>Berechtigungen für _PATCH pages_ 
+#### <a name="permissions-for-patch-pages"></a>Berechtigungen für PATCH-Seiten 
 
 - Notes.ReadWrite
 - Notes.ReadWrite.All
@@ -140,12 +146,13 @@ Weitere Informationen zu Berechtigungsbereichen und deren Funktionsweise finden 
 
 
 <a name="see-also"></a>
-## <a name="additional-resources"></a>Weitere Ressourcen
 
-- [Create OneNote pages](onenote-create-page.md)
+## <a name="see-also"></a>Siehe auch
+
+- [Erstellen von OneNote-Seiten](onenote-create-page.md)
 - [Aktualisieren der Inhalte von OneNote-Seiten](onenote_update_page.md)
 - [Integrieren mit OneNote](integrate_with_onenote.md)
 - [OneNote-Entwicklerblog](http://go.microsoft.com/fwlink/?LinkID=390183)
-- [Fragen zur OneNote-Entwicklung auf Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
-- [GitHub-Repositorys für OneNote](http://go.microsoft.com/fwlink/?LinkID=390178)  
+- [Fragen zur OneNote-Entwicklung auf Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote GitHub-Repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
 

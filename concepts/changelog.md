@@ -29,6 +29,10 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Löschung|Beta|GET /groups/{id}/team entfernt; verwenden Sie stattdessen GET /teams/{id}. |
 |Löschung|Beta|PATCH /groups/{id}/team entfernt; verwenden Sie stattdessen PATCH /teams/{id}. |
 
+### <a name="webhooks"></a>Webhooks
+| Änderungstyp | Version | Beschreibung                              |
+|:------------|:--------|:-----------------------------------------|
+| Änderungen | Beta und Version 1.0 | Reduzierte [maximale Abonnmentablaufdauer](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type) für [Webhooks](../api-reference/v1.0/resources/webhooks.md) bei Laufwerkstammelementen auf 3 Tage. | 
 
 ## <a name="june-2018"></a>Juni 2018
 
@@ -985,7 +989,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 | Ergänzungen    | Beta    | Die assign-Aktion wurde für [windowsInformationProtection](../api-reference/beta/resources/intune_mam_windowsinformationprotection.md) hinzugefügt. |
 | Ergänzungen    | Beta    | Die getEncryptionPublicKey-Funktion wurde für die [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md)-Sammlung hinzugefügt |
 | Änderung      | Beta    | Die Eigenschaften **requireSafetyNetAttestationBasicIntegrity**, **requireSafetyNetAttestationCertifiedDevice**, **requireGooglePlayServices**, **requireUpToDateSecurityProviders**, **requireCompanyPortalAppIntegrity** und **conditionStatementId** wurden der [androidCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidcompliancepolicy.md)-Entität hinzugefügt. |
-| Änderung      | Beta    | Die Eigenschaften **requireAppVerify**, **requireSafetyNetAttestationBasicIntegrity**, **requireSafetyNetAttestationCertifiedDevice**, **requireGooglePlayServices**, **requireUpToDateSecurityProviders** and **requireCompanyPortalAppIntegrity** wurden der [androidForWorkCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy.md)-Entität hinzugefügt. |
+| Ändern      | Beta    | Die Eigenschaften **requireAppVerify**, **requireSafetyNetAttestationBasicIntegrity**, **requireSafetyNetAttestationCertifiedDevice**, **requireGooglePlayServices**, **requireUpToDateSecurityProviders** and **requireCompanyPortalAppIntegrity** wurden der [androidForWorkCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy.md)-Entität hinzugefügt. |
 | Änderung      | Beta    | Die Eigenschaften **blockCrossProfileCopyPaste** und **requireAppVerify** wurden der [androidForWorkGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration.md)-Entität hinzugefügt. |
 | Änderung      | Beta    | Die Eigenschaften **kioskModeApps** und **requireAppVerify** wurden der [androidGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration.md)-Entität hinzugefügt. |
 | Änderung      | Beta    | Die **kioskModeManagedApps**-Eigenschaft wurde aus der [androidGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration.md)-Entität entfernt. |

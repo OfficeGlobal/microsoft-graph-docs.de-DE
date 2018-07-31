@@ -17,25 +17,34 @@ Die **Links**-Eigenschaft ist ein JSON-Objekt, das zwei URLs enthält. Die URLs 
 }
 ```
 
-- Die **OneNoteClientUrl** öffnet den OneNote-Client, wenn dieser bereits auf dem Gerät installiert ist. Diese URL enthält das Präfix *onenote*.
-Die sprachspezifische Version wird geöffnet, sofern diese auf dem Gerät installiert ist. Andernfalls wird die Spracheinstellung der Plattform verwendet.
-- **OneNoteWebUrl** öffnet OneNote Online, wenn der Standardbrowser auf dem Gerät OneNote Online unterstützt. Verwendet die Einstellung für die Browsersprache.
+- **oneNoteClientUrl** 
+
+    - Öffnet den OneNote-Client, wenn dieser bereits auf dem Gerät installiert ist. Diese URL enthält das Präfix *onenote*.
+    - Die sprachspezifische Version wird geöffnet, sofern diese auf dem Gerät installiert ist. Andernfalls wird die Spracheinstellung der Plattform verwendet.
+
+- **oneNoteWebUrl** 
+
+    - Öffnet OneNote Online, wenn der Standardbrowser auf dem Gerät OneNote Online unterstützt. 
+    - Verwendet die Einstellung für die Browsersprache.
 
 
 Die OneNote-API gibt die **links**-Eigenschaft in der HTTP-Antwort für die folgenden Vorgänge zurück:
 
-- Erstellen einer Seite durch Senden einer [ `POST pages` ](../api-reference/v1.0/api/section_post_pages.md)-Anforderung
-- Erstellen eines Notizbuchs durch Senden einer [ `POST notebooks` ](../api-reference/v1.0/api/onenote_post_notebooks.md)-Anforderung
-- Abrufen von Seitenmetadaten durch Senden einer [ `GET pages` ](../api-reference/v1.0/api/page_get.md)- oder [ `GET pages/{id}` ](../api-reference/v1.0/api/page_get.md)-Anforderung
-- Abrufen von Seitenmetadaten durch Senden einer [ `GET notebooks` ](../api-reference/v1.0/api/notebook_get.md)- oder [ `GET notebooks/{id}` ](../api-reference/v1.0/api/notebook_get.md)-Anforderung
+- Erstellen Sie eine Seite durch Senden einer [`POST pages`](../api-reference/v1.0/api/section_post_pages.md)-Anforderung.
+
+- Erstellen Sie ein Notizbuch durch Senden einer [`POST notebooks`](../api-reference/v1.0/api/onenote_post_notebooks.md)-Anforderung.
+
+- Rufen Sie Seitenmetadaten durch Senden einer [`GET pages`](../api-reference/v1.0/api/page_get.md)- oder [`GET pages/{id}`](../api-reference/v1.0/api/page_get.md)-Anforderung ab.
+
+- Rufen Sie Notizbuchmetadaten durch Senden einer [`GET notebooks`](../api-reference/v1.0/api/notebook_get.md)- oder [`GET notebooks/{id}`](../api-reference/v1.0/api/notebook_get.md)-Anforderung ab.
 
 In den folgenden Beispielen wird gezeigt, wie der Statuscode der Antwort überprüft, die JSON an die richtigen URLs übersandt und der OneNote-Client geöffnet wird.
 
 ## <a name="ios-example"></a>iOS-Beispiel
 
-Im folgenden Beispiel werden die OneNote-Client-URLs aus der JSON-Antwort abgerufen. Die AFNetworking-Bibliothek (http://afnetworking.com/) wird verwendet, um die beiden URLs zu extrahieren. Im Beispiel ist `created` der Zeiger für das ONSCPSStandardResponse-Objekt, in dem die Antwortwerte gespeichert wurden, und `responseObject` enthält die analysierte JSON.
+Im folgenden Beispiel werden die OneNote-Client-URLs aus der JSON-Antwort abgerufen. Die AFNetworking-Bibliothek (http://afnetworking.com/) wird verwendet, um die beiden URLs zu extrahieren. Im Beispiel ist `created` der Zeiger für das **ONSCPSStandardResponse**-Objekt, in dem die Antwortwerte gespeichert wurden, und `responseObject` enthält die analysierte JSON.
 
-```objectivec
+```objc
     /* Import the JSON library */
     #import "AFURLRequestSerialization.h"
 
@@ -73,16 +82,18 @@ Im folgenden Beispiel werden die OneNote-Client-URLs aus der JSON-Antwort abgeru
       }
 ``` 
 
+<br/>
+
 Nachdem Sie die URLs der Antwort analysiert haben, können Sie OneNote mit dem folgenden Code öffnen. Verwenden Sie `oneNoteClientUrl`, um den installierten OneNote-Client zu öffnen, oder `oneNoteWebURL`, um OneNote Online zu öffnen.
 
-```objectivec
+```objc
 NSURL *url = [NSURL URLWithString:standardResponse.oneNoteWebUrl];
 [[UIApplication sharedApplication] openURL:url];
 ```
 
 ## <a name="android-example"></a>Android-Beispiel
 
-Suchen Sie zunächst nach dem für den Erfolg-Statuscode und analysieren Sie dann die JSON. Das Beispiel setzt voraus, dass eine POST-Anforderung gesendet wurde, und sucht daher nach einem `201 Created`-Statuscode. Wenn Sie eine `GET`-Anforderung durchgeführt haben, suchen Sie stattdessen nach einem `200` Statuscode.
+Suchen Sie zunächst nach dem Erfolg-Statuscode, und analysieren Sie dann die JSON. Das Beispiel setzt voraus, dass eine POST-Anforderung gesendet wurde, und sucht daher nach einem `201 Created`-Statuscode. Wenn Sie eine `GET`-Anforderung durchgeführt haben, suchen Sie stattdessen nach einem `200` Statuscode.
 
 ```java
 public ApiResponse getResponse() throws Exception {
@@ -139,6 +150,8 @@ public ApiResponse getResponse() throws Exception {
 }
 ```
 
+<br/>
+
 Mit den Antworteigenschaften kann Ihre App OneNote Online öffnen (siehe folgendes Beispiel).
 
 ```java 
@@ -148,7 +161,9 @@ if (response.getResponseCode() == 201) {
     startActivity(launchBrowser);
 }
 ```
- 
+
+<br/>
+
 Oder Ihre App kann den OneNote-Client auf einem Android-Gerät öffnen. Bei Verwendung der `oneNoteClientUrl`-Eigenschaft, müssen Sie die GUID-Zeichenfolgen in geschweifte Klammern `{ }` einfassen, bevor Sie das Internet starten. Im folgenden Beispiel wird dieser Vorgang erklärt.
 
 ```java 
@@ -170,5 +185,5 @@ if (response.getResponseCode() == 201) {
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Abrufen von OneNote-Inhalt und -Struktur](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
-- [Erstellen von OneNote-Seiten](../api-reference/v1.0/api/section_post_pages.md)
+- [Abrufen von OneNote-Inhalt und -Struktur](onenote-get-content.md)
+- [Erstellen von OneNote-Seiten](onenote-create-page.md)

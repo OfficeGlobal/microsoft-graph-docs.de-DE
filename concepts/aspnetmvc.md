@@ -104,7 +104,7 @@ Das Startprojekt deklariert bereits eine Abhängigkeit für das Microsoft Graph 
 
   Beachten Sie den Aufruf von **SampleAuthProvider**, um den Token abzurufen, wenn der Client initialisiert wird.
 
-1. Im Ordner **Modelle** öffnen Sie GraphService.cs. Der Dienst verwendet die Bibliothek zur Interaktion mit dem Microsoft Graph.
+1. Im Ordner **Modelle** öffnen Sie GraphService.cs. Der Dienst verwendet die Bibliothek zur Interaktion mit Microsoft Graph.
 
 1. Fügen Sie die folgende **using**-Anweisung hinzu.
 
