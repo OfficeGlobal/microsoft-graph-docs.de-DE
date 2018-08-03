@@ -197,6 +197,10 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 Der comment-Parameter für das Erstellen eines Antwort- oder Weiterleitungsentwurfs ([createReply](../api-reference/v1.0/api/message_createreply.md), [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) wird nicht Teil des Textkörpers des resultierenden Nachrichtenentwurfs.
 
+### <a name="get-messages-returns-chats-in-microsoft-teams"></a>Nachrichten abrufen gibt Chats in Microsoft Teams zurück
+
+In den v1- und Beta-Endpunkten beinhaltet die Antwort von `GET /users/id/messages` die Chats des Benutzers aus Microsoft Teams, die außerhalb des Bereichs eines Teams oder Kanal erfolgt sind. Diese Chatnachrichten haben „Chat“ als Betreff.
+
 
 ## <a name="drives-files-and-content-streaming"></a>Laufwerke, Dateien und Streamen von Inhalten
 

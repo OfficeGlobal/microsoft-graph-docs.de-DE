@@ -601,7 +601,7 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _Notes.Read_ |    OneNote-Benutzernotizbücher lesen | Ermöglicht der App, die Titel von OneNote-Notizbüchern und -Abschnitten zu lesen sowie neue Seiten, Notizbücher und Abschnitte im Namen des angemeldeten Benutzers zu erstellen. | Nein |
+| _Notes.Read_ |    OneNote-Benutzernotizbücher lesen | Ermöglicht der App, OneNote-Notizbücher im Namen des angemeldeten Benutzers zu lesen.| Nein |
 | _Notes.Create_ |    OneNote-Benutzernotizbücher erstellen | Ermöglicht der App, die Titel von OneNote-Notizbüchern und -Abschnitten zu lesen sowie neue Seiten, Notizbücher und Abschnitte im Namen des angemeldeten Benutzers zu erstellen.| Nein |
 | _Notes.ReadWrite_ |    OneNote-Benutzernotizbücher lesen und schreiben | Ermöglicht der App, OneNote-Notizbücher im Namen des angemeldeten Benutzers zu lesen, freizugeben und zu ändern. | Nein |
 | _Notes.Read.All_ |    Alle OneNote-Notizbücher lesen, auf die der Benutzer zugreifen kann | Ermöglicht der App, OneNote-Notizbücher zu lesen, auf die der angemeldete Benutzer in der Organisation Zugriff hat. | Nein |

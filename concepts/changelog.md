@@ -6,6 +6,25 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 ## <a name="july-2018"></a>Juli 2018
 
+### <a name="directory-apis"></a>Verzeichnis-APIs
+
+| **Änderungstyp** | **Version**   | **Beschreibung**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Ergänzungen | Beta | isMultipleDataLocationsForServicesEnabled-Eigenschaft wurde der [Organization](../api-reference/beta/resources/organization.md)-Ressource hinzugefügt. Mit dieser Einstellung können Apps prüfen, ob dieser Mandant für Multi-Geo-Funktionen aktiviert ist. preferredDataLocation-Eigenschaft wurde den [user](../api-reference/beta/resources/user.md)- und [group](../api-reference/beta/resources/group.md)-Ressourcen hinzugefügt. Die Einstellung ermöglicht das Festlegen eines bevorzugten Datenspeicherorts für einen Benutzer oder Eine Gruppe.|
+
+### <a name="microsoft-teams-apis"></a>Microsoft Teams-APIs
+| **Änderungstyp** | **Version**   | **Beschreibung**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Änderung|Beta|[chatmessage](../api-reference/beta/resources/chatmessage.md))-Ressource aktualisiert|
+|Ergänzungen|Beta|Ressourcentyp [Chat attachment](../api-reference/beta/resources/chatattachment.md) hinzugefügt|
+|Ergänzungen|Beta|Ressourcentyp [Chat mention](../api-reference/beta/resources/chatattachment.md) hinzugefügt|
+|Ergänzungen|Beta|Ressourcentyp [Chat reaction](../api-reference/beta/resources/chatattachment.md) hinzugefügt|
+|Ergänzungen|Beta|[API zum Abrufen aller Kanalnachrichten](../api-reference/beta/api/channel_list_messages.md) hinzugefügt |
+|Ergänzungen|Beta|[API zum Abrufen der Kanalnachricht](../api-reference/beta/api/channel_get_message.md) hinzugefügt |
+|Ergänzungen|Beta|[API zum Abrufen aller Nachrichtenantworten](../api-reference/beta/api/channel_list_messagereplies.md) hinzugefügt |
+|Ergänzungen|Beta|[API zum Abrufen einer Antwort auf eine Nachricht](../api-reference/beta/api/channel_get_messagereply.md) hinzugefügt |
+
+
 ### <a name="application-and-serviceprincipal-api-changes"></a>Änderungen an der application- und servicePrincipal-API
 
 | **Änderungstyp** | **Version** | **Beschreibung**                          |
@@ -15,6 +34,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams-APIs
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Ergänzungen|Beta| Unterstützung für Anwendungsberechtigungen zu [/users/{id}/joinedTeams](../api-reference/beta/api/user_list_joinedteams.md) hinzugefügt |
 |Löschung|Beta|DELETE /groups/{id}/team/channels/{id} entfernt; verwenden Sie stattdessen DELETE /teams/{id}/channels/{id}. |
 |Löschung|Beta|GET /groups/{id}/team/channels/{id} entfernt; verwenden Sie stattdessen GET /teams/{id}/channels/{id}. |
 |Löschung|Beta|PATCH /groups/{id}/team/channels/{id} entfernt; verwenden Sie stattdessen PATCH /teams/{id}/channels/{id}. |
@@ -28,6 +48,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Löschung|Beta|POST /groups/{id}/team/channels entfernt; verwenden Sie stattdessen POST /teams/{id}/channels. |
 |Löschung|Beta|GET /groups/{id}/team entfernt; verwenden Sie stattdessen GET /teams/{id}. |
 |Löschung|Beta|PATCH /groups/{id}/team entfernt; verwenden Sie stattdessen PATCH /teams/{id}. |
+|Ergänzungen|Beta|API zum [Auflisten aller Teams in der Organisation](../api-reference/beta/api/team_list_all_teams.md) hinzugefügt. |
 
 ### <a name="webhooks"></a>Webhooks
 | Änderungstyp | Version | Beschreibung                              |
@@ -40,7 +61,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Ergänzungen | Alle | Die neuen Anwendungsberechtigungen _Application.ReadWrite.All_ und „_Application.ReadWrite.OwnedBy“ ermöglichen der Client-App, Anwendungen und Dienstprinzipale zu erstellen, lesen, aktualisieren und löschen, wie im Thema zu [Berechtigungen](permissions_reference.md#application-resource-permissions) beschrieben. |
+| Ergänzungen | Alle | Die neuen Anwendungsberechtigungen _Application.ReadWrite.All_ und _Application.ReadWrite.OwnedBy_ ermöglichen der Client-App, Anwendungen und Dienstprinzipale zu erstellen, lesen, aktualisieren und löschen, wie im [Thema zu Berechtigungen](permissions_reference.md#application-resource-permissions) beschrieben. |
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune-APIs
 
@@ -85,7 +106,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Ergänzungen|Beta|Das Mitglied **notConfigured** wurde dem Enum-Typ [editionUpgradeLicenseType](../api-reference/beta/resources/intune_deviceconfig_editionupgradelicensetype.md) hinzugefügt.|
 |Ergänzungen|Beta|Das Mitglied **unknown** wurde dem Enum-Typ [iosUpdatesInstallStatus](../api-reference/beta/resources/intune_deviceconfig_iosupdatesinstallstatus.md) hinzugefügt.|
 |Ergänzungen|Beta|Das Mitglied **userRequestedInstall** wurde dem Enum-Typ [mobileAppActionType](../api-reference/beta/resources/intune_troubleshooting_mobileappactiontype.md) hinzugefügt.|
-|Ergänzungen|Beta|Das Mitglied **notConfigured** wurde dem Enum-Typ [windows10EditionType](../api-reference/beta/resources/intune_deviceconfig_windows10editiontype.md) hinzugefügt.|
+|Ergänzungen|Beta|Das Mitglied **notConfigured** wurde dem Enum-Typ [windows10EditionType](../api-reference/beta/resources/intune_deviceconfig_windows10editiontype.md) hinzugefügt.
 
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams-APIs
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
