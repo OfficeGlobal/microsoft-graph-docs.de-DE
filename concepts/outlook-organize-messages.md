@@ -6,7 +6,7 @@ In Outlook können Kunden ihre Nachrichten so organisieren, wie sie möchten: al
 
 Nachrichtenordner werden programmgesteuert von der [mailFolder](../api-reference/v1.0/resources/mailfolder.md)-Ressource dargestellt, und der Posteingang ist einer der Ordner am Stamm der Ordnerstruktur.
 
-Jeder **mailFolder** wird durch seine Ordner-ID identifiziert und weist eine schreibbare **displayName**-Eigenschaft auf. Outlook erstellt standardmäßig ein paar andere Ordner für Kunden. Sie können auf diese Standardordner anhand ihrer Ordner-IDs oder anhand ihrer bekannten Namen verweisen. Eine Liste der verfügbaren bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../api-reference/v1.0/resources/mailfolder.md#well-known-folder-names).
+Jeder **mailFolder** wird durch seine Ordner-ID identifiziert und weist eine schreibbare **displayName**-Eigenschaft auf. Outlook erstellt standardmäßig ein paar andere Ordner für Kunden. Sie können auf diese Standardordner anhand ihrer Ordner-IDs oder anhand ihrer bekannten Namen verweisen. Eine Liste der verfügbaren bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../api-reference/v1.0/resources/mailfolder.md).
 
 Wenn Sie bei einem benutzerdefinierten, nicht standardmäßigen Ordner dessen Ordnerpfad kennen, können Sie auf den Ordner zugreifen, indem Sie zuerst die `/users/{id}/mailfolders` -Verknüpfung verwenden, um zur Stammebene zu gelangen, und dann alle Ordner der oberen Ebene abrufen:
 

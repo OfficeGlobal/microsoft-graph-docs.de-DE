@@ -12,7 +12,7 @@ Wenn Sie auf eine E-Mail antworten, können Sie auf ähnliche Weise die Antwort 
 
 Um programmgesteuert zwischen einem Entwurf und einer gesendeten Nachricht zu unterscheiden, überprüfen Sie die Eigenschaft **isDraft**.
 
-Standardmäßig werden Nachrichtenentwürfe im Ordner `Drafts`gespeichert, und gesendete Nachrichten werden im Ordner `Sent Items` gespeichert. Sie können den Ordner für Entwürfe und den Ordner für gesendete Elemente auch einfach anhand ihrer [bekannten Ordnernamen](../api-reference/v1.0/resources/mailfolder.md#well-known-folder-names) erkennen. Sie können z. B. Folgendes durchführen, um die [Nachrichten](../api-reference/v1.0/api/user_list_messages.md) im Ordner „Entwürfe“ abzurufen:
+Standardmäßig werden Nachrichtenentwürfe im Ordner `Drafts`gespeichert, und gesendete Nachrichten werden im Ordner `Sent Items` gespeichert. Sie können den Ordner für Entwürfe und den Ordner für gesendete Elemente auch einfach anhand ihrer [bekannten Ordnernamen](../api-reference/v1.0/resources/mailfolder.md) erkennen. Sie können z. B. Folgendes durchführen, um die [Nachrichten](../api-reference/v1.0/api/user_list_messages.md) im Ordner „Entwürfe“ abzurufen:
 
 ```http
 GET /me/mailfolders('Drafts')
