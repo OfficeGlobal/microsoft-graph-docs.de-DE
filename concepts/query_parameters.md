@@ -182,28 +182,9 @@ Um die Ergebnisse einer Anforderung so zu beschränken, dass sie einem Suchkrite
 
 ### <a name="using-search-on-message-collections"></a>Verwenden von $search in Nachrichtensammlungen
 
-Office 365-Anwendungen wie Outlook und SharePoint unterstützen die KQL-Syntax (Keyword Query Language) für Suchvorgänge. Dies bietet den Vorteil einer gemeinsamen Discovery-Domäne für die Datenspeicher. 
+Sie können nach Nachrichten auf Grundlage eines Werts in einer bestimmten Eigenschaften suchen. Die Suchergebnisse sind nach Datum und Uhrzeit sortiert, zu dem bzw. der die Nachricht gesendet wurde.
 
-Sie können die folgenden Eigenschaftennamen angeben, die KQL in einer $search-Abfragezeichenfolge erkennt. Diese Eigenschaftennamen sind keine in der Entität **Nachricht** definierten Eigenschaften, sie sind jedoch intern Eigenschaften in der Entität **Nachricht** zugeordnet. Weitere Informationen und Beispiele finden Sie unter [Durchsuchbare Eigenschaften in Exchange](https://docs.microsoft.com/de-DE/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange).
-
-- **Anlage**
-- **bcc**
-- **Text**
-- **Kategorie**
-- **cc**
-- **Inhalt**
-- **Von**
-- **Besitzt**
-- **Wichtigkeit**
-- **Teilnehmer**
-- **Empfangen**
-- **Absender**
-- **Betreff**
-- **An**
-
-Wenn Sie eine Suche nach Nachrichten durchführen und nur einen Wert angeben, wird die Suche anhand der Standardsucheigenschaften**from**, **subject** und **body** ausgeführt.
-
-Die Ergebnisse beim Durchsuchen einer Nachrichtensammlung sind nach Datum und Uhrzeit sortiert, zu dem bzw. der die Nachricht gesendet wurde.
+Wenn Sie eine Suche nach Nachrichten durchführen und nur einen Wert ohne bestimmte Nachrichteneigenschaften angeben, wird die Suche anhand der Standardsucheigenschaften**from**, **subject** und **body** ausgeführt.
 
 Im folgenden Beispiel werden alle Nachrichten im Posteingang des angemeldeten Benutzers zurückgegeben, die das Wort „Pizza“ in einer der drei Standardsucheigenschaften enthalten:
 
@@ -213,12 +194,31 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 [Ausprobieren im Graph-Tester][search-example]
 
-Im nächsten Beispiel werden alle Nachrichten im Posteingang des Benutzers, die von einer bestimmten E-Mail-Adresse gesendet wurden:
+Alternativ können Sie eine Suche nach Nachrichten durchführen, indem Sie die Nachrichteneigenschaftennamen in der folgenden Tabelle angeben, die durch die KQL-Syntax erkannt werden. Diese Eigenschaftennamen entsprechen den in der **message**-Entität von Microsoft Graph definierten Eigenschaften. Outlook und andere Office 365-Anwendungen wie SharePoint unterstützen die KQL-Syntax und bieten den Komfort einer gemeinsamen Discovery-Domäne für ihre Datenspeicher.
 
-```http
-GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
-```
-Weitere Informationen zu KQL, darunter zur Syntax, den unterstützten Operatoren und Tipps für die Suche finden Sie in den folgenden Artikeln:
+
+| Durchsuchbare E-Mail-Eigenschaft                | Beschreibung | Beispiel 
+|:-------------------------|:------------|:---------|
+| **Anlage**           | Die Namen der an eine E-Mail angefügten Dateien.|[`me/messages?$search="attachment:api-catalog.md"`][search-att-example]
+| **bcc**           | Das **bcc**-Feld einer E-Mail-Nachricht, das als SMTP-Adresse, Anzeigename oder Alias angegeben ist.|[`me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`][search-bcc-example]
+| **Text**           | Text einer E-Mail.|[`me/messages?$search="body:excitement"`][search-body-example]
+| **cc**           | Das **cc**-Feld einer E-Mail-Nachricht, das als SMTP-Adresse, Anzeigename oder Alias angegeben ist.|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
+| **Von**           | Der Absender einer E-Mail-Nachricht, der als SMTP-Adresse, Anzeigename oder Alias angegeben ist.|[`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]
+| **hasAttachment** | „True“, wenn eine E-Mail eine Anlage enthält, die keine Inlineanlage ist, andernfalls „false“. |[`me/messages?$search="hasAttachments=true"`][search-from-example]
+| **Wichtigkeit**           | Die Wichtigkeit einer E-Mail-Nachricht, die ein Absender festlegen kann, wenn er eine Nachricht sendet. Die möglichen Werte sind `low`, `medium` oder `high`.|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
+| **Art**           | Der Typ der Nachricht. Die möglichen Werte sind `contacts`, `docs`, `email`, `faxes`, `im`, `journals`, `meetings`, `notes`, `posts`, `rssfeeds`, `tasks` oder `voicemail`.|[`me/messages?$search="kind:voicemail"`][search-kind-example]
+| **Teilnehmer**           | Die **von**-, **an**-, **cc**- und **bcc**-Felder einer E-Mail-Nachricht, die als SMTP-Adressen, Anzeigenamen oder Aliase angegeben sind.|[`me/messages?$search="participants:danas"`][search-part-example]
+| **Empfangen**           | Das Datum, an dem eine E-Mail-Nachricht von einem Empfänger empfangen wurde.|[`me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`][search-rcvd-example]
+| **recipients**           | Die **an**-, **cc**- und **bcc**-Felder einer E-Mail-Nachricht, die als SMTP-Adressen, Anzeigenamen oder Aliase angegeben sind.|[`me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`][search-rcpts-example]
+| **Gesendet**           | Das Datum, an dem eine E-Mail vom Absender gesendet wurde.|[`me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`][search-sent-example]
+| **size**           | Die Größe eines Elements in Byte.|[`me/messages?$search="size:1..500000"`][search-size-example]
+| **Betreff**           | Der Text in der Betreffzeile einer E-Mail. .|[`me/messages?$search="subject:has"&$select=subject`][search-sbj-example]
+| **An**           | Das **An**-Feld einer E-Mail-Nachricht, das als SMTP-Adresse, Anzeigename oder Alias angegeben ist.|[`me/messages?$search="to:randiw"&$select=subject,toRecipients`][search-to-example]
+
+
+Weitere Informationen zu durchsuchbaren E-Mail-Eigenschaften, zu KQL-Syntax, unterstützten Operatoren und Tipps für die Suche finden Sie in den folgenden Artikeln:
+
+- [Durchsuchbar Eigenschaften in Exchange](https://docs.microsoft.com/de-DE/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)
 
 - [Syntaxreferenz für die Keyword Query Language (KQL)](https://docs.microsoft.com/de-DE/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
@@ -369,4 +369,22 @@ Beachten Sie jedoch, dass Abfrageparameter, die in einer Anforderung angegeben s
 [skip-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0
 [top-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0
 
+[search-att-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22attachment%3Aapi-catalog%2Emd%22&method=GET&version=v1.0
+[search-bcc-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22bcc%3Asamanthab%40contoso%2Ecom%22%26$select=subject,bccRecipients&method=GET&version=v1.0
+[search-body-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22body%3Aexcitement%22&method=GET&version=v1.0
+[search-cc-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22cc%3Adanas%22%26$select=subject,ccRecipients&method=GET&version=v1.0
+[search-from-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22from%3Arandiw%22%26$select=subject,from&method=GET&version=v1.0
+[search-hasatt-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22hasAttachments=true%22&method=GET&version=v1.0
+[search-imp-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22importance%3Ahigh%22%26$select=subject,importance&method=GET&version=v1.0
+[search-kind-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22kind%3Avoicemail%22&method=GET&version=v1.0
+[search-part-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22participants%3Adanas%22&method=GET&version=v1.0
+
+[search-rcvd-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22received%3A07/23/2018%22%26$select=subject,receivedDateTime&method=GET&version=v1.0
+
+[search-rcpts-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22recipients%3Arandiw%22%26$select=subject,toRecipients,ccRecipients,bccRecipients&method=GET&version=v1.0
+[search-sent-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22sent%3A07/23/2018%22%26$select=subject,sentDateTime&method=GET&version=v1.0
+[search-size-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22size%3A1%2E%2E500000%22&method=GET&version=v1.0
+
+[search-sbj-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22subject%3Ahas%22%26$select=subject&method=GET&version=v1.
+[search-to-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22to%3Arandiw%22%26$select=subject,toRecipients&method=GET&version=v1.0
 
