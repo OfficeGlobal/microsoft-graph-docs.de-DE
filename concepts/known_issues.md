@@ -104,14 +104,6 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 
 ## <a name="calendars"></a>Kalender
 
-### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>Hinzufügen von und Zugreifen auf ICS-basierte Kalender im Postfach des Benutzers
-
-Derzeit gibt es eine teilweise Unterstützung für einen Kalender, der auf einem Internet-Kalenderabonnement (ICS) basiert:
-
-* Sie können einen ICS-basierten Kalender einem Benutzerpostfach über die Benutzeroberfläche, jedoch nicht über die Microsoft Graph-API hinzufügen.
-* [Das Auflisten der Kalender des Benutzers](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/api/user_list_calendars) ermöglicht Ihnen, die Eigenschaften **name**, **color** und **id** jedes [Kalenders](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/resources/calendar) in der Standardkalendergruppe des Benutzers oder einer bestimmten Kalendergruppe abzurufen, einschließlich ICS-basierte Kalender. Sie können die ICS-URL in der Kalenderressource nicht speichern und nicht darauf zugreifen.
-* Sie haben auch die Möglichkeit zum [Auflisten der Ereignisse](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/api/calendar_list_events) eines ICS-basierten Kalenders.
-
 ### <a name="accessing-a-shared-calendar"></a>Zugreifen auf einen freigegebenen Kalender
 
 Beim Versuch, auf Ereignisse in einem Kalender zuzugreifen, der von einem anderen Benutzer mithilfe des folgenden Vorgangs freigegeben wurde:
@@ -143,6 +135,17 @@ Ein für Sie mit dem neuen Ansatz freigegebener Kalender wird genau wie jeder an
 GET \me\calendars('{id}')\events
 ```
 
+### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>Hinzufügen von und Zugreifen auf ICS-basierte Kalender im Postfach des Benutzers
+
+Derzeit gibt es eine teilweise Unterstützung für einen Kalender, der auf einem Internet-Kalenderabonnement (ICS) basiert:
+
+* Sie können einen ICS-basierten Kalender einem Benutzerpostfach über die Benutzeroberfläche, jedoch nicht über die Microsoft Graph-API hinzufügen.
+* [Das Auflisten der Kalender des Benutzers](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/api/user_list_calendars) ermöglicht Ihnen, die Eigenschaften **name**, **color** und **id** jedes [Kalenders](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/resources/calendar) in der Standardkalendergruppe des Benutzers oder einer bestimmten Kalendergruppe abzurufen, einschließlich ICS-basierte Kalender. Sie können die ICS-URL in der Kalenderressource nicht speichern und nicht darauf zugreifen.
+* Sie haben auch die Möglichkeit zum [Auflisten der Ereignisse](http://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/api/calendar_list_events) eines ICS-basierten Kalenders.
+
+### <a name="onlinemeetingurl-property-support-for-microsoft-teams"></a>Unterstützung für die onlineMeetingUrl-Eigenschaft in Microsoft Teams
+
+Derzeit gibt die **onlineMeetingUrl**-Eigenschaft einer Skype-Besprechung [event](../api-reference/v1.0/resources/event.md) die URL der Online-Besprechung angeben. Allerdings wird dieser Eigenschaft für eine Microsoft Teams-Besprechung auf Null festgelegt.
 
 ## <a name="contacts"></a>Kontakte
 

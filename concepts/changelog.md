@@ -50,10 +50,17 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Löschung|Beta|PATCH /groups/{id}/team entfernt; verwenden Sie stattdessen PATCH /teams/{id}. |
 |Ergänzungen|Beta|API zum [Auflisten aller Teams in der Organisation](../api-reference/beta/api/team_list_all_teams.md) hinzugefügt. |
 
+### <a name="outlook-contacts"></a>Outlook-Kontakte
+| **Änderungstyp** | **Version**   | **Beschreibung**                          |
+|:--------------- |:------------- |:---------------------------------------- |
+|Ergänzungen |Beta | Komplexer Typ [typedEmailAddress](../api-reference/beta/resources/typedemailaddress.md) hinzugefügt. |
+|Änderung | Beta | Typ der **emailAddresses**-Eigenschaft des [Kontakts wurde](../api-reference/beta/resources/contact.md) zu einer Sammlung von **typedEmailAddress**-Instanzen geändert.|
+
 ### <a name="webhooks"></a>Webhooks
 | Änderungstyp | Version | Beschreibung                              |
 |:------------|:--------|:-----------------------------------------|
 | Änderungen | Beta und Version 1.0 | Reduzierte [maximale Abonnmentablaufdauer](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type) für [Webhooks](../api-reference/v1.0/resources/webhooks.md) bei Laufwerkstammelementen auf 3 Tage. | 
+
 
 ## <a name="june-2018"></a>Juni 2018
 
