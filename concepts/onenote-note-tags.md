@@ -63,7 +63,8 @@ Im Folgenden finden Sie eine einfache Aufgabenliste, in der das erste Element ab
 <p data-tag="to-do" data-id="summer">Plant tomatoes and peppers</p>
 ```
 
-Beachten Sie, dass die oben aufgeführten `<p>`-Tags jeweils ein `data-id`-Attribut enthalten. Dies erleichtert das Aktualisieren der Kontrollkästchen-Notiztags. Mit der folgenden Anforderung wird z. B. die spring-Aufgabe Pflanzen als abgeschlossen gekennzeichnet.
+Beachten Sie, dass die oben aufgeführten `<p>`-Tags jeweils ein `data-id`-Attribut enthalten. Dies erleichtert das Aktualisieren der Kontrollkästchen-Notiztags. Mit der folgenden Anforderung wird z. B. die Aufgabe Frühjahrsbepflanzung als abgeschlossen gekennzeichnet.
+
 
 ```json
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content

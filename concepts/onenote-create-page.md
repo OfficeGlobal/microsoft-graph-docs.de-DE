@@ -142,7 +142,7 @@ Microsoft Graph behält den semantischen Inhalt und die grundlegende Struktur de
 
 ## <a name="example-request"></a>Beispielanforderung
 
-Dieses Beispiel einer mehrteiligen Anforderung erstellt eine Seite, die Bilder und eine eingebettete Datei enthält. Der erforderliche **Presentation**-Teil enthält die Eingabe-HTML, die die Seite definiert. Der **imageBlock1**-Teil enthält die binären Bilddaten und **fileBlock1** die Binärdateidaten. Datenteile enthalten können auch HTML enthalten. In diesem Fall [rendert Microsoft Graph den HTML-Code als Bild](onenote_images_files.md#add-an-image-using-binary-data) auf der OneNote-Seite. 
+Dieses Beispiel einer mehrteiligen Anforderung erstellt eine Seite, die Bilder und eine eingebettete Datei enthält. Der erforderliche **Presentation**-Teil enthält die Eingabe-HTML, die die Seite definiert. Der **imageBlock1**-Teil enthält die binären Bilddaten und **fileBlock1** die Binärdateidaten. Datenteile können auch HTML enthalten. In diesem Fall [rendert Microsoft Graph den HTML-Code als Bild](onenote_images_files.md#add-an-image-using-binary-data) auf der OneNote-Seite. 
 
 ```html
 POST https://graph.microsoft.com/v1.0/me/onenote/pages
