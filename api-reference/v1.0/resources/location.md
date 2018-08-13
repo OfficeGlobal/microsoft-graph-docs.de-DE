@@ -15,13 +15,13 @@ Je nachdem, wie ein Ereignis erstellt wurde, wird die schreibgeschützte **locat
 | Eigenschaft  | Typ   | Beschreibung                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |Die Adresse des Orts. |
-| Koordinaten | [outlookGeoCoordinates](outlookGeoCoordinates.md) | Die geografischen Koordinaten und die Erhebung des Orts. |
+| Koordinaten | [outlookGeoCoordinates](outlookgeocoordinates.md) | Die geografischen Koordinaten und die Erhebung des Orts. |
 | displayName  | String | Der Name, der mit dem Ort verknüpft ist                       |
 | locationEmailAddress | String | Optionale E-Mail-Adresse des Orts.              |
-| locationUri | Zeichenfolge | Optionaler URI, der den Ort darstellt. |
-| locationType | Zeichenfolge | Der Typ des Orts. Mögliche Werte sind: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Schreibgeschützt.|
-| uniqueId | Zeichenfolge | Nur für internen Gebrauch.|
-| uniqueIdType | Zeichenfolge | Nur für internen Gebrauch. |
+| locationUri | String | Optionaler URI, der den Ort darstellt. |
+| locationType | String | Der Typ des Orts. Mögliche Werte sind: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Schreibgeschützt.|
+| uniqueId | String | Nur für internen Gebrauch.|
+| uniqueIdType | String | Nur für internen Gebrauch. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

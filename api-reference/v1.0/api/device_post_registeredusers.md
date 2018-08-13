@@ -15,7 +15,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /devices/{id}/registeredUsers
+POST /devices/{id}/registeredUsers/$ref
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader

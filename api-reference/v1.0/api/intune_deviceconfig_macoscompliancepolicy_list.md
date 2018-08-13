@@ -45,7 +45,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1035
+Content-Length: 1150
 
 {
   "value": [
@@ -70,7 +70,10 @@ Content-Length: 1035
       "systemIntegrityProtectionEnabled": true,
       "deviceThreatProtectionEnabled": true,
       "deviceThreatProtectionRequiredSecurityLevel": "secured",
-      "storageRequireEncryption": true
+      "storageRequireEncryption": true,
+      "firewallEnabled": true,
+      "firewallBlockAllIncoming": true,
+      "firewallEnableStealthMode": true
     }
   ]
 }

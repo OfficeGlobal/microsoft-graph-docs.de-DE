@@ -34,14 +34,17 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 Bei erfolgreicher Ausführung gibt die Funktion den Antwortcode `200 OK` und eine Collection von Objekten des Typs [managedAppDiagnosticStatus](../resources/intune_mam_managedappdiagnosticstatus.md) im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
+
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
+
 ``` http
 GET https://graph.microsoft.com/v1.0/users/{usersId}/getManagedAppDiagnosticStatuses
 ```
 
 ### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

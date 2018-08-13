@@ -25,7 +25,7 @@ GET /deviceManagement/exchangeConnectors
 |Kopfzeile|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
-|Annehmen|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -45,7 +45,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 555
+Content-Length: 616
 
 {
   "value": [
@@ -56,6 +56,7 @@ Content-Length: 555
       "status": "connectionPending",
       "primarySmtpAddress": "Primary Smtp Address value",
       "serverName": "Server Name value",
+      "connectorServerName": "Connector Server Name value",
       "exchangeConnectorType": "hosted",
       "version": "Version value",
       "exchangeAlias": "Exchange Alias value",

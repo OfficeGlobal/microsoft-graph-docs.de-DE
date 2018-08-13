@@ -3,7 +3,7 @@ Dient zum Abrufen der Eigenschaften und der Beziehungen eines Gruppenobjekts.
 
 ##### <a name="default-properties"></a>Standardeigenschaften
 
-Im Folgenden werden standardmäßige Eigenschaften dargestellt, die beim Abrufen oder beim Auflisten von Gruppen zurückgegeben werden. Diese stellen eine Teilmenge aller verfügbaren Eigenschaften. 
+Im Folgenden werden standardmäßige Eigenschaften dargestellt, die beim Abrufen oder beim Auflisten von Gruppen zurückgegeben werden. Diese stellen eine Teilmenge aller verfügbaren Eigenschaften.
 
 * description
 * displayName
