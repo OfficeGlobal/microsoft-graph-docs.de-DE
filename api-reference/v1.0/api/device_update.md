@@ -23,7 +23,7 @@ PATCH /devices/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -31,12 +31,12 @@ Geben Sie im Anforderungstext die Werte für die Eigenschaften des [device](../r
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| **true**, wenn das Konto aktiviert ist; andernfalls **false**. |
+|accountEnabled|Boolesch| **true**, wenn das Konto aktiviert ist; andernfalls **false**. |
 |operatingSystem|Zeichenfolge|Der Typ des Betriebssystems auf dem Gerät.|
 |operatingSystemVersion|Zeichenfolge|Die Version des Betriebssystems auf dem Gerät.|
 |displayName|Zeichenfolge|Der Anzeigename für das Gerät.|
-|isCompliant|Boolean|**true**, wenn das Gerät den Richtlinien für mobile Geräteverwaltung ( Mobile Device Management, MDM) entspricht; andernfalls **false**. Dies kann nur von einer genehmigten Geräteverwaltungs-App aktualisiert werden. |
-|isManaged|Boolescher Wert|**true**, wenn das Gerät durch die mobile Geräteverwaltungs-App verwaltet wird; andernfalls **false**. Dies kann nur von einer genehmigten Geräteverwaltungs-App aktualisiert werden. |
+|isCompliant|Boolesch|**true**, wenn das Gerät den Richtlinien für mobile Geräteverwaltung ( Mobile Device Management, MDM) entspricht; andernfalls **false**. Die Aktualisierung kann für ein beliebiges Geräte-Betriebssystem nur durch Intune oder für Geräte mit Windows-Betriebssystem durch eine [genehmigte MDM-App](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) erfolgen. |
+|isManaged|Boolesch|**true**, wenn das Gerät durch die mobile Geräteverwaltungs-App verwaltet wird; andernfalls **false**. Die Aktualisierung kann für ein beliebiges Geräte-Betriebssystem nur durch Intune oder für Geräte mit Windows-Betriebssystem durch eine [genehmigte MDM-App](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) erfolgen. |
 
 ## <a name="response"></a>Antwort
 

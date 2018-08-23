@@ -35,5 +35,5 @@ Sie können auf eine Reihe von Excel-Objekten (wie Tabelle, Bereich oder Diagram
 * [Schreiben in eine Excel-Arbeitsmappe mit Microsoft Graph](excel-write-to-workbook.md)
 * [Verwenden von Arbeitsmappenfunktionen in Excel mit Microsoft Graph](excel-use-functions.md)
 * [Aktualisieren eines Bereichsformats in Excel mit Microsoft Graph](excel-update-range-format.md)
-* [Anzeigen eines Diagrammbilds in Excel mithilfe von Microsoft Graph](excel-display-chart-image.md)
+* [Ein Diagrammbild in Excel mithilfe von Microsoft Graph anzeigen](excel-display-chart-image.md)
 * [Verwenden der Excel-REST-API](../api-reference/v1.0/resources/excel.md)
