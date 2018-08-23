@@ -15,7 +15,7 @@ Um auf die Daten in Microsoft Graph zuzugreifen, muss Ihre Anwendung ein OAuth 2
 - Dem HTTP-Anforderungsheader für die *Autorisierung*, als *Bearer*token
 - Dem Graph-Clientkonstruktor, wenn Sie eine Microsoft Graph-Clientbibliothek verwenden
 
-Verwenden Sie die API der Microsoft-Authentifizierungsbibliothek, [MSAL](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-v2-libraries), um das Zugriffstoken für Microsoft Graph zu erhalten.
+Verwenden Sie die API der Microsoft-Authentifizierungsbibliothek, [MSAL](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries), um das Zugriffstoken für Microsoft Graph zu erhalten.
 
 ## <a name="consent-and-authorization"></a>Zustimmung und Autorisierung
 
@@ -30,8 +30,8 @@ Wenden Sie die folgenden bewährten Methoden für Zustimmung und Autorisierung i
 - **Gehen Sie beim Konfigurieren Ihr App mit Bedacht vor**. Dies wirkt sich direkt auf die Erfahrung von Endbenutzern und Administratoren sowie auf die Akzeptanz und die Sicherheit der Anwendung aus. Beispiel:
 
     - Die Datenschutzrichtlinie Ihrer Anwendung, die Nutzungsbedingungen, der Name, das Logo und die Domäne werden in Zustimmungs- und anderen Oberflächen angezeigt. Stellen Sie daher sicher, dass sie diese sorgfältig konfigurieren, damit bei Ihren Endbenutzern keine Missverständnisse entstehen.
-    - Überlegen Sie sich, wer Ihrer Anwendung zustimmen soll: Endbenutzer oder Administratoren. Konfigurieren Sie die Anwendung dann so, dass [Berechtigungen entsprechend angefordert werden](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-v2-scopes).
-    - Sie müssen den Unterschied zwischen [statischer, dynamische und inkrementeller Zustimmung](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent) verstehen.
+    - Überlegen Sie sich, wer Ihrer Anwendung zustimmen soll: Endbenutzer oder Administratoren. Konfigurieren Sie die Anwendung dann so, dass [Berechtigungen entsprechend angefordert werden](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes).
+    - Sie müssen den Unterschied zwischen [statischer, dynamische und inkrementeller Zustimmung](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent) verstehen.
 
 - **Erwägen Sie Anwendungen mit mehreren Mandanten**. Gehen Sie davon aus, dass Kunden verschiedene Anwendungs- und Zustimmungssteuerungen in unterschiedlichen Zuständen haben. Beispiel:
 
@@ -83,7 +83,7 @@ Unbekannte Member werden standardmäßig nicht von Microsoft Graph zurückgegebe
 
 ## <a name="storing-data-locally"></a>Lokales Speichern von Daten
 
-Im Idealfall sollte Ihre Anwendung Aufrufe von Microsoft Graph zum Abrufen von Daten in Echtzeit tätigen, wenn erforderlich. Daten sollten nur dann zwischengespeichert oder lokal gespeichert werden, wenn dies für ein bestimmtes Szenario erforderlich ist und wenn dieser Anwendungsfall von Ihren Nutzungsbedingungen und Ihrer Datenschutzbestimmung abgedeckt ist und nicht gegen die [Nutzungsbedingungen Microsoft Graph](https://developer.microsoft.com/de-DE/graph/docs/misc/terms-of-use) verstößt. Ihre Anwendung sollte auch entsprechende Aufbewahrungs- und Löschrichtlinien implementieren.
+Im Idealfall sollte Ihre Anwendung Aufrufe von Microsoft Graph zum Abrufen von Daten in Echtzeit tätigen, wenn erforderlich. Daten sollten nur dann zwischengespeichert oder lokal gespeichert werden, wenn dies für ein bestimmtes Szenario erforderlich ist und wenn dieser Anwendungsfall von Ihren Nutzungsbedingungen und Ihrer Datenschutzbestimmung abgedeckt ist und nicht gegen die [Nutzungsbedingungen Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use) verstößt. Ihre Anwendung sollte auch entsprechende Aufbewahrungs- und Löschrichtlinien implementieren.
 
 ## <a name="optimizations"></a>Optimierungen
 
