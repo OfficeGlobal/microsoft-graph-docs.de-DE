@@ -24,20 +24,20 @@ PATCH /me/mailboxSettings
 PATCH /users/{id|userPrincipalName}/mailboxSettings
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Eigenschaften an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben. Im Folgenden werden die beschreibbaren/aktualisierbaren Eigenschaften aufgelistet:
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Konfigurationseinstellungen zum automatischen Benachrichtigen des Absenders bei eingehenden E-Mails mit einer Nachricht vom angemeldeten Benutzer.|
+|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Konfigurationseinstellungen zum automatischen Benachrichtigen des Absenders bei eingehenden E-Mails mit einer Nachricht vom angemeldeten Benutzer. Sie können solche Benachrichtigungen nur für einen zukünftigen Datumsbereich festlegen.|
 |language|[localeInfo](../resources/localeinfo.md)|Die Gebietsschemainformationen des Benutzers, einschließlich der bevorzugten Sprache und Land/Region.|
-|timeZone|string|Die Standardzeitzone für das Postfach des Benutzers.|
+|timeZone|Zeichenfolge|Die Standardzeitzone für das Postfach des Benutzers.|
 |workingHours|[workingHours](../resources/workinghours.md)|Die Stunden, Wochentage und die Zeitzone, an denen bzw. in der der Benutzer arbeitet.|
 
 ## <a name="response"></a>Antwort
@@ -66,11 +66,11 @@ Im folgenden Beispiel werden automatische Antworten für einen bestimmten Datums
   "name": "update_mailboxsettings"
 }-->
 ```http
-PATCH https://graph.microsoft.com/api/v1.0/me/mailboxSettings
+PATCH https://graph.microsoft.com/v1.0/me/mailboxSettings
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/api/v1.0/$metadata#Me/mailboxSettings",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings",
     "automaticRepliesSetting": {
         "status": "Scheduled",
         "scheduledStartDateTime": {
@@ -96,7 +96,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/api/v1.0/$metadata#Me/mailboxSettings",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings",
     "automaticRepliesSetting": {
         "status": "scheduled",
         "externalAudience": "all",
@@ -123,7 +123,7 @@ Das zweite Beispiel passt die Zeitzone für die Geschäftszeiten des angemeldete
   "name": "update_mailboxsettings_2"
 }-->
 ```http
-PATCH https://graph.microsoft.com/api/v1.0/me/mailboxSettings
+PATCH https://graph.microsoft.com/v1.0/me/mailboxSettings
 Content-Type: application/json
 
 {

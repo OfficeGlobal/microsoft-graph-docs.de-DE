@@ -3,27 +3,34 @@
 Verwenden Sie diese API zum Erstellen eines neuen **plannerPlan**-Objekts.
 
 ## <a name="permissions"></a>Berechtigungen
+
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | Group.ReadWrite.All    |
-|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Nicht unterstützt |
+| Berechtigungstyp                        | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegiert (Geschäfts-, Schul- oder Unikonto)     | Group.ReadWrite.All                         |
+| Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                              |
+| Anwendung                            | Nicht unterstützt                              |
 
 ## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-POST /planner/plans
 
+<!-- { "blockType": "ignored" } -->
+``` http
+POST /planner/plans
 ```
+
 ## <a name="request-headers"></a>Anforderungsheader
-| Name       | Beschreibung|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+
+| Name          | Beschreibung               |
+| :------------ | :------------------------ |
+| Autorisierung | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie im Anforderungstext eine JSON-Darstellung des [plannerPlan](../resources/plannerplan.md)-Objekts an. Die Eigenschaft „owner“ des **plannerPlan**-Objekts muss auf die ID eines [group](../resources/group.md)-Objekts festgelegt werden.
+
+>**Hinweis:** Der Benutzer, der den Plan erstellt, muss ein Mitglied der Gruppe, die den Plan besitzen wird. Wenn Sie mithilfe des Befehls [Gruppe erstellen](../api/group_post_groups.md) eine neue Gruppe erstellen, werden Sie der Gruppe nicht als Mitglied hinzugefügt. Nach dem Erstellen der Gruppe fügen Sie sich selbst mithilfe der [Post-Gruppenmitglieder](../api/group_post_members.md)als Mitglied hinzu.
+
 
 ## <a name="response"></a>Antwort
 
@@ -32,13 +39,16 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und
 Diese Methode kann einen beliebigen [HTTP-Statuscode](../../../concepts/errors.md) zurückgeben. Die häufigsten Fehler, die Apps für diese Methode behandeln sollten, sind die Antworten 400, 403 und 404. Weitere Informationen zu diesen Fehlern finden Sie unter [Häufige Planner-Fehlerbedingungen](../resources/planner_overview.md#common-planner-error-conditions).
 
 ## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
+
+### <a name="request"></a>Anforderung
+
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
+
 <!-- {
   "blockType": "request",
   "name": "create_plannerplan_from_planner"
 }-->
-```http
+``` http
 POST https://graph.microsoft.com/v1.0/planner/plans
 Content-type: application/json
 Content-length: 381
@@ -48,15 +58,19 @@ Content-length: 381
   "title": "title-value"
 }
 ```
+
 Geben Sie im Anforderungstext eine JSON-Darstellung des [plannerPlan](../resources/plannerplan.md)-Objekts an.
-##### <a name="response"></a>Antwort
+
+### <a name="response"></a>Antwort
+
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.plannerPlan"
 } -->
-```http
+``` http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 357

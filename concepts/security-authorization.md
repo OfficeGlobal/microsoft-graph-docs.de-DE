@@ -63,7 +63,7 @@ So registrieren Sie Ihre Anwendung
     >**Hinweis**: Sie müssen kein Mandantenadministrator sein. Sie werden zur Liste **Meine Programme** weitergeleitet.
 2. Wählen Sie **App hinzufügen**, und geben Sie einen **Anwendungsnamen** ein, um eine neue Anwendung zu erstellen.
 3. Wählen Sie auf der Registrierungsseite für die neue Anwendung **Plattform hinzufügen** > **Web**. Geben Sie im Feld **Umleitungs-URL** die Umleitungs-URL ein.
-4. Wählen Sie im Abschnitt **Microsoft Graph-Berechtigungen** unter **Delegierte Berechtigungen** **Hinzufügen** aus. Wählen Sie im Dialogfeld die erforderlichen Berechtigungen. Eine Liste von Berechtigungen finden Sie unter [Sicherheitsberechtigungen](../concepts/permissions_reference.md#security-permissions).
+4. Wählen Sie im Abschnitt **Microsoft Graph-Berechtigungen** unter **Delegierte Berechtigungen** **Hinzufügen** aus. Wählen Sie im Dialogfeld die erforderlichen Berechtigungen. Eine Liste von Berechtigungen finden Sie unter [Sicherheitsberechtigungen](../concepts/permissions_reference.md#security-permissions).
 
     >Die Sicherheits-API erfordert den Bereich SecurityEvents.Read.All für GET-Abfragen und den Bereich SecurityEvents.ReadWrite.All für PATCH/POST-Abfragen.
 
@@ -79,7 +79,7 @@ Weitere Informationen finden Sie unter: [Registrieren Ihrer App beim Azure AD v2
 
 ## <a name="grant-permissions-to-an-application"></a>Gewähren von Berechtigungen für eine Anwendung
 
-Die Anwendungsregistrierung definiert nur, welche Berechtigungen die Anwendung erfordert. Sie gewährt der Anwendung diese Berechtigungen NICHT. Ein Azure AD-Mandantenadministrator muss diese Berechtigungen explizit gewähren, indem er den Endpunkt für die Administratorzustimmung aufruft. Einzelheiten hierzu finden Sie unter [Verwenden des Endpunkts für die Administratorzustimmung](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).
+Die Anwendungsregistrierung definiert nur, welche Berechtigungen die Anwendung erfordert. Sie gewährt der Anwendung diese Berechtigungen NICHT. Ein Azure AD-Mandantenadministrator muss diese Berechtigungen explizit gewähren, indem er den Endpunkt für die Administratorzustimmung aufruft. Einzelheiten hierzu finden Sie unter [Verwenden des Endpunkts für die Administratorzustimmung](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).
 
 Um einer Anwendung Berechtigungen zu gewähren, brauchen Sie:
 
@@ -98,7 +98,7 @@ So gewähren Sie Berechtigungen
 
 ## <a name="assign-azure-ad-roles-to-users"></a>Zuweisen von Azure AD-Rollen für Benutzer
 
-Nachdem einer Anwendung Berechtigungen erteilt wurden, erhalten alle Benutzer, die Zugriff auf die Anwendung (d. h. Mitglieder des Azure AD-Mandanten) die Berechtigungen, die erteilt wurden. Um vertrauliche Daten zusätzlich zu schützen, verlangt die Sicherheits-API, dass Benutzern die Azure AD-Rolle **Benutzer mit Leseberechtigung für Sicherheitsfunktionen** zugewiesen wird. Einzelheiten hierzu finden Sie unter [Zuweisen von Administratorrollen](https://docs.microsoft.com/de-DE/azure/active-directory/active-directory-assign-admin-roles-azure-portal) und [Zuweisen eines Benutzers zu Administratorrollen](https://docs.microsoft.com/de-DE/azure/active-directory/active-directory-users-assign-role-azure-portal).
+Nachdem einer Anwendung Berechtigungen erteilt wurden, erhalten alle Benutzer, die Zugriff auf die Anwendung (d. h. Mitglieder des Azure AD-Mandanten) die Berechtigungen, die erteilt wurden. Um vertrauliche Daten zusätzlich zu schützen, verlangt die Sicherheits-API, dass Benutzern die Azure AD-Rolle **Benutzer mit Leseberechtigung für Sicherheitsfunktionen** zugewiesen wird. Einzelheiten hierzu finden Sie unter [Zuweisen von Administratorrollen](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles-azure-portal) und [Zuweisen eines Benutzers zu Administratorrollen](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
 >**Hinweis:** Sie müssen Mandantenadministrator sein, um diesen Schritt auszuführen.
 
@@ -123,19 +123,19 @@ Die folgende Tabelle enthält Ressourcen, die Sie zum Erstellen eines Authentifi
 
 |**Art der Anwendung**|**Authentifizierungsbibliothek**|
 |------------------------|----------------------------|
-|[Desktop-Apps – iOS](https://docs.microsoft.com/de-DE/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: Microsoft-Authentifizierungsbibliothek (Vorschau) für iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
-|[Desktop-Apps – Android](https://docs.microsoft.com/de-DE/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft-Authentifizierungsbibliothek (MSAL)](http://javadoc.io/doc/com.microsoft.identity.client/msal)|
-|[Desktop-Apps – .NET](https://docs.microsoft.com/de-DE/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft-Authentifizierungsbibliothek (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
-|[Web-Apps — JavaScript SPA](https://docs.microsoft.com/de-DE/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Microsoft-Authentifizierungsbibliothek für JavaScript (Vorschau)](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
-|[Web-Apps — .NET-Webserver](https://docs.microsoft.com/de-DE/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
-|[Web-Apps - NodeJS-Web-App](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
+|[Desktop-Apps – iOS](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: Microsoft-Authentifizierungsbibliothek (Vorschau) für iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
+|[Desktop-Apps – Android](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft-Authentifizierungsbibliothek (MSAL)](http://javadoc.io/doc/com.microsoft.identity.client/msal)|
+|[Desktop-Apps – .NET](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft-Authentifizierungsbibliothek (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
+|[Web-Apps — JavaScript SPA](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Microsoft-Authentifizierungsbibliothek für JavaScript (Vorschau)](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
+|[Web-Apps — .NET-Webserver](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
+|[Web-Apps - NodeJS-Web-App](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
 
 Für Anwendungen, die keine der vorhandenen Bibliotheken verwenden, siehe [Im Namen eines Benutzers zugreifen](../concepts/auth_v2_user.md).
 
 1. Abrufen eines Codes von Azure AD. Die Abfrage zum Aufruf enthält die Parameter für die Anwendungs-ID, Umleitungs-URL und **erforderliche Berechtigungen**.
 2. Verwenden des Codes zum Abrufen eines Zugriffstokens.
 
-Wenn Sie die OpenID Connect-Bibliothek verwenden, lesen Sie [Authentifizieren mithilfe von Azure Active Directory und OpenID Connect](https://docs.microsoft.com/de-DE/azure/architecture/multitenant-identity/authenticate), und rufen Sie `app.UseOpenIdConnectAuthentication()` auf.
+Wenn Sie die OpenID Connect-Bibliothek verwenden, lesen Sie [Authentifizieren mithilfe von Azure Active Directory und OpenID Connect](https://docs.microsoft.com/en-us/azure/architecture/multitenant-identity/authenticate), und rufen Sie `app.UseOpenIdConnectAuthentication()` auf.
 
 >**Hinweis:** Wenn Sie benutzerdelegierte Authentifizierungstoken anfordern, ist der Parameter für die Bibliothek **angeforderte Bereiche**. Verwenden Sie User.Read für diesen Parameter statt den Anforderungen der registrierten Anwendung. Der Parameter **angeforderte Bereiche** hat keinen Einfluss auf die Berechtigungen, die in den zurückgegebenen Authentifizierungstoken enthalten sind. Diese werden durch die Berechtigungen bestimmt, die der Mandantenadministrator der Anwendung erteilt.
 

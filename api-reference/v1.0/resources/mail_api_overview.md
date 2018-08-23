@@ -1,30 +1,33 @@
-# <a name="use-the-microsoft-graph-api-to-integrate-with-outlook-mail"></a>Verwenden der Microsoft Graph-API für die Integration in Outlook-Mail
+# <a name="use-the-outlook-mail-rest-api"></a>Verwenden der Outlook-Mail-REST-API
 
 Mit Microsoft Graph kann Ihre App autorisierten Zugriff auf die E-Mail-Daten eines Benutzers in einem persönlichen oder Organisationskonto in Outlook erhalten. Mit den [entsprechenden delegierten Berechtigungen oder Anwendungsberechtigungen](../../../concepts/permissions_reference.md) kann die App auf die E-Mail-Daten des angemeldeten Benutzers oder eines beliebigen Benutzers in einem Mandanten zugreifen. Die E-Mail-Daten können sich in der Cloud in Exchange Online als Teil von Office 365 oder in einer lokalen Exchange-Installation in einer [Hybridbereitstellung](../../../concepts/hybrid_rest_support.md) befinden.
 
 ## <a name="using-the-mail-rest-api"></a>Verwenden der E-Mail-REST-API
+
 E-Mail-API-Anforderungen werden im Auftrag eines [Benutzers](../resources/user.md) ausgeführt, der durch die Eigenschaft **ID** des Benutzers (eine eindeutige GUID), die E-Mail-Adresse oder die Aliasverknüpfung `me` für den angemeldeten Benutzer identifiziert werden kann.
 
-E-Mail-Nachrichten werden durch die Ressource [message](../resources/message.md) dargestellt und in einem [mailFolder](../resources/mailfolder.md) organisiert. Nachrichten und E-Mail-Ordner werden durch ihre Eigenschaft **ID** identifiziert, die mit `GET`-Operationen abgerufen werden kann. 
+E-Mail-Nachrichten werden durch die Ressource [message](../resources/message.md) dargestellt und in einem [mailFolder](../resources/mailfolder.md) organisiert. Nachrichten und E-Mail-Ordner werden durch ihre Eigenschaft **ID** identifiziert, die mit `GET`-Operationen abgerufen werden kann.
 
->**Hinweis:** Gehen Sie im Allgemeinen nicht davon aus, dass die IDs von **message** und **mailfolder** in einem Postfach eindeutig und unveränderlich sind. Sie können sich nach bestimmten Aktionen wie z. B. Kopieren, Verschieben oder Senden ändern. 
+>**Hinweis:** Gehen Sie im Allgemeinen nicht davon aus, dass die IDs von **message** und **mailfolder** in einem Postfach eindeutig und unveränderlich sind. Sie können sich nach bestimmten Aktionen wie z. B. Kopieren, Verschieben oder Senden ändern.
 
 Nachrichtentext kann im HTML- oder Textformat vorliegen.
 
-Sie können bekannte Ordnernamen wie `Inbox`, `Drafts`, `SentItems` oder `DeletedItems` verwenden, um bestimmte E-Mail-Ordner zu identifizieren, die standardmäßig für alle Benutzer vorhanden sind. Sie können z. B. Nachrichten im Outlook-Ordner **Gesendete Elemente** des angemeldeten Benutzers abrufen, ohne zuerst die Ordner-ID abzurufen:
-```
+Sie können bekannte Ordnernamen wie `Inbox`, `Drafts`, `SentItems` oder `DeletedItems` verwenden, um bestimmte, standardmäßig für alle Benutzer vorhandene Mail-Ordner einfacher zu erkennen. Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).
+
+So können Sie beispielsweise Nachrichten in den Outlook-Ordner **Gesendete Elemente** des angemeldeten Benutzers erhalten, ohne zuvor die Ordner-ID erhalten zu haben:
+
+```http
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
-Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).
 
-## <a name="common-use-cases"></a>Allgemeine Anwendungsfälle 
+## <a name="common-use-cases"></a>Allgemeine Anwendungsfälle
 
-Die Ressource **message** macht Eigenschaften wie **categories**, **conversationId**, **flag** und **importance** verfügbar, die Features in der Benutzeroberfläche entsprechen, sodass Apps die integrierte Outlook-Benutzeroberfläche automatisieren oder integrieren können. 
+Die Ressource **message** macht Eigenschaften wie **categories**, **conversationId**, **flag** und **importance** verfügbar, die Features in der Benutzeroberfläche entsprechen, sodass Apps die integrierte Outlook-Benutzeroberfläche automatisieren oder integrieren können.
 
 Die Microsoft Graph-API stellt zudem Methoden und Aktionen bereit, die allgemeine Anwendungsfälle von Nachrichten unterstützen.
 
-| Anwendungsfälle        | REST-Ressourcen | Siehe auch |
-|:---------------|:--------|:----------|
+| Anwendungsfälle | REST-Ressourcen | Siehe auch |
+|:----------|:---------------|:---------|
 | **Benutzerorientierte Aktionen** | | |
 | Nachrichten entwerfen, lesen, beantworten, weiterleiten, senden, aktualisieren oder löschen | [message](../resources/message.md) | [Methoden von „message“](../resources/message.md#methods) |
 | Das Versenden von Nachrichten im Auftrag des Postfachbesitzers an einen anderen Benutzer delegieren | [message](../resources/message.md) | Festlegen der Eigenschaften **from** und **sender** in einer [Nachricht](../resources/message.md) |
@@ -41,11 +44,11 @@ Die Microsoft Graph-API stellt zudem Methoden und Aktionen bereit, die allgemein
 | Auf benutzerdefinierte Daten für nicht ausreichend verfügbare Outlook-MAPI-Eigenschaften zugreifen | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Übersicht über erweiterte Outlook-Eigenschaften](../resources/extended-properties-overview.md) |
 
 ## <a name="next-steps"></a>Nächste Schritte
-Die E-Mail-API kann Ihnen neue Möglichkeiten für die Interaktion mit Benutzern eröffnen: 
 
+Die E-Mail-API kann Ihnen neue Möglichkeiten für die Interaktion mit Benutzern eröffnen:
+
+- [Übersicht über die Outlook-Mail-API](../../../concepts/outlook-mail-concept-overview.md)
 - Führen Sie einen Drilldown für die [Methoden](../resources/message.md#methods), [Eigenschaften](../resources/message.md#properties) und [Beziehungen](../resources/message.md#relationships) der Ressourcen [message](../resources/message.md) und [mailFolder](../resources/mailfolder.md) aus.
-- Probieren Sie die API im [Graph-Tester](https://developer.microsoft.com/de-DE/graph/graph-explorer) aus.
+- Probieren Sie die API im [Graph-Tester](https://developer.microsoft.com/en-us/graph/graph-explorer) aus.
 
-Benötigen Sie weitere Ideen? Dann sehen Sie sich an, [wie unsere Partner Microsoft Graph verwenden](https://developer.microsoft.com/de-DE/graph/graph/examples#partners).
-
-
+Benötigen Sie weitere Ideen? Dann sehen Sie sich an, [wie unsere Partner Microsoft Graph verwenden](https://developer.microsoft.com/en-us/graph/graph/examples#partners).
