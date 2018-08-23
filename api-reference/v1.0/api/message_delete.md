@@ -1,6 +1,9 @@
 # <a name="delete-message"></a>Nachricht löschen
 
-Mit dieser API können Sie Nachrichten löschen.
+Löschen Sie eine Nachricht im Postfach des jeweiligen Benutzers, oder löschen Sie eine Beziehung zur Nachricht.
+
+>**Hinweis** Eventuell können Sie Elemente im Ordner "wiederherstellbare Elemente" (unter dem [altbekannten Ordnernamen ](../resources/mailfolder.md)`recoverableitemsdeletions`) nicht löschen. Weitere Informationen finden Sie unter [Aufbewahrung gelöschter Elemente](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) und [Aufräumen gelöschter Elemente](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items).
+
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -21,7 +24,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

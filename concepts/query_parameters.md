@@ -7,21 +7,21 @@ Microsoft Graph stellt optionale Abfrageparameter bereit, die Sie zum Festlegen 
 | Name                     | Beschreibung | Beispiel
 |:-------------------------|:------------|:---------|
 | [$count](#count-parameter)         | Dient zum Abrufen der Gesamtzahl übereinstimmender Ressourcen. | [`/me/messages?$top=2&$count=true`][count-example]
-| [$expand](#expand-parameter)       | Dient zum Abrufen von verwandten Ressourcen.|[`/groups?$expand=members`][expand-example]
-| [$filter](#filter-parameter)       | Dient zum Filtern von Ergebnissen (Zeilen).|[`/users?$filter=startswith(givenName,'J')`][filter-example]
-| [$format](#format-parameter)       | Dient zum Zurückgeben der Ergebnisse im angegebenen Medienformat.|[`/users?$format=json`][format-example]
-| [$orderby](#orderby-parameter)     | Dient zum Sortieren von Ergebnissen.|[`/users?$orderby=displayName desc`][orderby-example]
-| [$search](#search-parameter)       | Dient zum Zurückgeben von Ergebnissen basierend auf Suchkriterien. Wird derzeit in **messages**- und **person**-Sammlungen unterstützt.|[`/me/messages?$search=pizza`][search-example]
-| [$select](#select-parameter)       | Dient zum Filtern von Eigenschaften (Spalten).|[`/users?$select=givenName,surname`][select-example]
-| [$skip](#skip-parameter)           | Dient zum Indizieren in einem Resultset. Wird auch von einigen APIs zum Implementieren von Paging verwendet und kann zusammen mit `$top` zum manuellen Auslagern von Ergebnissen verwendet werden. | [`/me/messages?$skip=11`][skip-example]
-| [$skipToken](#skiptoken-parameter) | Dient zum Abrufen der nächsten Seite von Ergebnissen aus Resultsets, die mehrere Seiten umfassen. (Einige APIs verwenden stattdessen `$skip`.) | `/users?$skiptoken=X%274453707402000100000017...`|
-| [$top](#top-parameter)             | Dient zum Festlegen der Seitengröße von Ergebnissen. |[`/users?$top=2`][top-example]
+| [$Erweitern](#expand-parameter)       | Dient zum Abrufen von verwandten Ressourcen.|[`/groups?$expand=members`][expand-example]
+| [$Filter](#filter-parameter)       | Dient zum Filtern von Ergebnissen (Zeilen).|[`/users?$filter=startswith(givenName,'J')`][filter-example]
+| [$Format](#format-parameter)       | Dient zum Zurückgeben der Ergebnisse im angegebenen Medienformat.|[`/users?$format=json`][format-example]
+| [$Sortieren nach](#orderby-parameter)     | Dient zum Sortieren von Ergebnissen.|[`/users?$orderby=displayName desc`][orderby-example]
+| [$Suchen](#search-parameter)       | Dient zum Zurückgeben von Ergebnissen basierend auf Suchkriterien. Wird derzeit in **messages**- und **person**-Sammlungen unterstützt.|[`/me/messages?$search=pizza`][search-example]
+| [$Auswählen](#select-parameter)       | Dient zum Filtern von Eigenschaften (Spalten).|[`/users?$select=givenName,surname`][select-example]
+| [$Überspringen](#skip-parameter)           | Dient zum Indizieren in einem Resultset. Wird auch von einigen APIs zum Implementieren von Paging verwendet und kann zusammen mit `$top` zum manuellen Auslagern von Ergebnissen verwendet werden. | [`/me/messages?$skip=11`][skip-example]
+| [$TokenÜberspringen](#skiptoken-parameter) | Dient zum Abrufen der nächsten Seite von Ergebnissen aus Resultsets, die mehrere Seiten umfassen. (Einige APIs verwenden stattdessen `$skip`.) | `/users?$skiptoken=X%274453707402000100000017...`|
+| [$Nach oben](#top-parameter)             | Dient zum Festlegen der Seitengröße von Ergebnissen. |[`/users?$top=2`][top-example]
 
 
 
 Diese Parameter sind mit der [OData V4-Abfragesprache][odata-query] kompatibel. Nicht alle Parameter werden über alle Microsoft Graph-APIs hinweg unterstützt, und die Unterstützung kann zwischen dem `v1.0`- und dem `beta`-Endpunkt erheblich abweichen. 
 
-> **Hinweis:** Am `beta`-Endpunkt ist das `$`-Präfix optional. Sie können z. B. `filter` anstelle von `$filter` verwenden. Weitere Informationen und Beispiele finden Sie unter [Abfrageparameter ohne $ Präfixe in Microsoft Graph unterstützen](http://dev.office.com/queryparametersinMicrosoftGraph).
+> **Hinweis:** Am `beta`-Endpunkt ist das `$`-Präfix optional. Sie können z. B. `filter` anstelle von `$filter` verwenden. Weitere Informationen und Beispiele finden Sie unter [Abfrageparameter ohne $ Präfixe in Microsoft Graph unterstützen](http://dev.office.com/queryparametersinMicrosoftGraph).
 
 ## <a name="encoding-query-parameters"></a>Codieren von Abfrageparametern
 
@@ -200,30 +200,29 @@ Alternativ können Sie eine Suche nach Nachrichten durchführen, indem Sie die N
 | Durchsuchbare E-Mail-Eigenschaft                | Beschreibung | Beispiel 
 |:-------------------------|:------------|:---------|
 | **Anlage**           | Die Namen der an eine E-Mail angefügten Dateien.|[`me/messages?$search="attachment:api-catalog.md"`][search-att-example]
-| **bcc**           | Das **bcc**-Feld einer E-Mail-Nachricht, das als SMTP-Adresse, Anzeigename oder Alias angegeben ist.|[`me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`][search-bcc-example]
+| **Bcc**           | Das **bcc**-Feld einer E-Mail-Nachricht, das als SMTP-Adresse, Anzeigename oder Alias angegeben ist.|[`me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`][search-bcc-example]
 | **Text**           | Text einer E-Mail.|[`me/messages?$search="body:excitement"`][search-body-example]
-| **cc**           | Das **cc**-Feld einer E-Mail-Nachricht, das als SMTP-Adresse, Anzeigename oder Alias angegeben ist.|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
+| **CC**           | Das **cc**-Feld einer E-Mail-Nachricht, das als SMTP-Adresse, Anzeigename oder Alias angegeben ist.|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
 | **Von**           | Der Absender einer E-Mail-Nachricht, der als SMTP-Adresse, Anzeigename oder Alias angegeben ist.|[`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]
 | **hasAttachment** | „True“, wenn eine E-Mail eine Anlage enthält, die keine Inlineanlage ist, andernfalls „false“. |[`me/messages?$search="hasAttachments=true"`][search-from-example]
 | **Wichtigkeit**           | Die Wichtigkeit einer E-Mail-Nachricht, die ein Absender festlegen kann, wenn er eine Nachricht sendet. Die möglichen Werte sind `low`, `medium` oder `high`.|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
 | **Art**           | Der Typ der Nachricht. Die möglichen Werte sind `contacts`, `docs`, `email`, `faxes`, `im`, `journals`, `meetings`, `notes`, `posts`, `rssfeeds`, `tasks` oder `voicemail`.|[`me/messages?$search="kind:voicemail"`][search-kind-example]
 | **Teilnehmer**           | Die **von**-, **an**-, **cc**- und **bcc**-Felder einer E-Mail-Nachricht, die als SMTP-Adressen, Anzeigenamen oder Aliase angegeben sind.|[`me/messages?$search="participants:danas"`][search-part-example]
 | **Empfangen**           | Das Datum, an dem eine E-Mail-Nachricht von einem Empfänger empfangen wurde.|[`me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`][search-rcvd-example]
-| **recipients**           | Die **an**-, **cc**- und **bcc**-Felder einer E-Mail-Nachricht, die als SMTP-Adressen, Anzeigenamen oder Aliase angegeben sind.|[`me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`][search-rcpts-example]
+| **Empfänger**           | Die **an**-, **cc**- und **bcc**-Felder einer E-Mail-Nachricht, die als SMTP-Adressen, Anzeigenamen oder Aliase angegeben sind.|[`me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`][search-rcpts-example]
 | **Gesendet**           | Das Datum, an dem eine E-Mail vom Absender gesendet wurde.|[`me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`][search-sent-example]
-| **size**           | Die Größe eines Elements in Byte.|[`me/messages?$search="size:1..500000"`][search-size-example]
+| **Größe anpassen**           | Die Größe eines Elements in Byte.|[`me/messages?$search="size:1..500000"`][search-size-example]
 | **Betreff**           | Der Text in der Betreffzeile einer E-Mail. .|[`me/messages?$search="subject:has"&$select=subject`][search-sbj-example]
 | **An**           | Das **An**-Feld einer E-Mail-Nachricht, das als SMTP-Adresse, Anzeigename oder Alias angegeben ist.|[`me/messages?$search="to:randiw"&$select=subject,toRecipients`][search-to-example]
 
 
 Weitere Informationen zu durchsuchbaren E-Mail-Eigenschaften, zu KQL-Syntax, unterstützten Operatoren und Tipps für die Suche finden Sie in den folgenden Artikeln:
 
-- [Durchsuchbar Eigenschaften in Exchange](https://docs.microsoft.com/de-DE/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)
+- [Durchsuchbar Eigenschaften in Exchange](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)
 
-- [Syntaxreferenz für die Keyword Query Language (KQL)](https://docs.microsoft.com/de-DE/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Syntaxreferenz für die Keyword Query Language (KQL)](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- 
-  [Nachrichteneigenschaften und Suchoperatoren für In-Situ-eDiscovery in Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
+- [Nachrichteneigenschaften und Suchoperatoren für In-Situ-eDiscovery in Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>Verwenden von $search in Personensammlungen
 
@@ -335,7 +334,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 
 ## <a name="error-handling-for-query-parameters"></a>Fehlerbehandlung für Abfrageparameter
 
-Einige Anforderungen geben eine Fehlermeldung zurück, wenn ein angegebener Abfrageparameter nicht unterstützt wird. `$expand` kann zum Beispiel nicht in der `user/photo`-Beziehung verwendet werden. 
+Einige Anforderungen geben eine Fehlermeldung zurück, wenn ein angegebener Abfrageparameter nicht unterstützt wird. `$expand` kann zum Beispiel nicht in der `user/photo`Beziehung verwendet werden. 
 
 ```http
 https://graph.microsoft.com/beta/me?$expand=photo
