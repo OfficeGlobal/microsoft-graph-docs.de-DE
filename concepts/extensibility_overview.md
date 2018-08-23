@@ -1,10 +1,10 @@
 # <a name="add-custom-data-to-resources-using-extensions"></a>Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen
 
-Microsoft Graph stellt einen zentralen API-Endpunkt bereit, der Ihnen über verschiedene Ressourcen wie [user](../api-reference/v1.0/resources/user.md) und [message](../api-reference/v1.0/resources/message.md) Zugriff auf umfassende personenzentrierte Daten und Erkenntnisse ermöglicht. Sie können auch Microsoft Graph um eigene Anwendungsdaten erweitern. Sie können Microsoft Graph-Ressourcen benutzerdefinierte Eigenschaften hinzufügen, ohne dass dafür ein externer Datenspeicher nötig wäre.
+Microsoft Graph stellt einen zentralen API-Endpunkt bereit, der Ihnen über verschiedene Ressourcen wie [user](../api-reference/v1.0/resources/user.md) und [message](../api-reference/v1.0/resources/message.md) Zugriff auf umfassende personenzentrierte Daten und Erkenntnisse ermöglicht. Sie können auch Microsoft Graph um eigene Anwendungsdaten erweitern. Sie können Microsoft Graph-Ressourcen benutzerdefinierte Eigenschaften hinzufügen, ohne dass dafür ein externer Datenspeicher nötig wäre.
 
-So könnten Sie sich beispielsweise entscheiden, Ihre App schlank zu halten und App-spezifische Benutzerprofildaten in Microsoft Graph zu speichern, indem Sie die Ressource **user** erweitern. Alternativ könnten Sie den vorhandenen Benutzerprofilspeicher Ihrer App auch beibehalten und der Ressource **user** einfach einen App-spezifischen Speicherbezeichner hinzufügen.
+So könnten Sie sich beispielsweise entscheiden, Ihre App schlank zu halten und App-spezifische Benutzerprofildaten in Microsoft Graph zu speichern, indem Sie die Ressource **user** erweitern. Alternativ könnten Sie den vorhandenen Benutzerprofilspeicher Ihrer App auch beibehalten und der Ressource **user** einfach einen App-spezifischen Speicherbezeichner hinzufügen.
 
-Microsoft Graph bietet zwei Arten von Erweiterungen. Wählen Sie den Erweiterungstyp aus, der Ihren Anwendungsanforderungen am besten entspricht:
+Microsoft Graph bietet zwei Arten von Erweiterungen. Wählen Sie den Erweiterungstyp aus, der Ihren Anwendungsanforderungen am besten entspricht:
 
 - **Offene Erweiterungen**: Dieser Erweiterungstyp ist ideal für die ersten Schritte mit Erweiterungen.
 - **Schemaerweiterungen**: Bei diesem Erweiterungstyp handelt es sich um einen flexibleren Mechanismus für Entwickler, die typisierte Daten speichern, ihr Schema erkennbar und gemeinsam nutzbar machen, Filteroptionen nutzen und später auch Autorisierung und die Überprüfung von Eingabedaten implementieren möchten.
@@ -32,12 +32,12 @@ Sie können Erweiterungen für alle diese Ressourcen verwenden, wenn Sie mit ein
 
 ## <a name="open-extensions"></a>Offene Erweiterungen
 
-[Offene Erweiterungen](../api-reference/v1.0/resources/opentypeextension.md) (früher als Office 365-Datenerweiterungen bezeichnet) sind [offene Typen](http://www.odata.org/getting-started/advanced-tutorial/#openType), die eine flexible Möglichkeit zum direkten Hinzufügen nicht typisierter App-Daten zu Ressourceninstanzen bieten.
+[Offene Erweiterungen](../api-reference/v1.0/resources/opentypeextension.md) (früher als Office 365-Datenerweiterungen bezeichnet) sind [offene Typen](http://www.odata.org/getting-started/advanced-tutorial/#openType), die eine flexible Möglichkeit zum direkten Hinzufügen nicht typisierter App-Daten zu Ressourceninstanzen bieten.
 
 Offene Erweiterungen und die zugehörigen benutzerdefinierten Daten sind über die Navigationseigenschaft **extensions** der Ressourceninstanz verfügbar.
 Die Eigenschaft **extensionName** ist die einzige _vordefinierte_ beschreibbare Eigenschaft einer offenen Erweiterung. Bei der Erstellung einer offenen Erweiterung müssen Sie der Eigenschaft **extensionName** einen Namen zuweisen, der innerhalb des Mandanten eindeutig ist.
 
-Eine Möglichkeit hierfür ist die Verwendung eines umgekehrten DNS (Domain Name System)-Formats, das von _Ihrer eigenen Domäne_ abhängt, zum Beispiel `Com.Contoso.ContactInfo`.
+Eine Möglichkeit hierfür ist die Verwendung eines umgekehrten DNS (Domain Name System)-Formats, das von _Ihrer eigenen Domäne_ abhängt, zum Beispiel `Com.Contoso.ContactInfo`.
 
 Verwenden Sie in Erweiterungsnamen auf keinen Fall die Microsoft-Domäne (`Com.Microsoft` oder `Com.OnMicrosoft`).
 
@@ -53,8 +53,8 @@ Mithilfe von [Schemaerweiterungen](../api-reference/v1.0/resources/schemaextensi
 
 Beim Erstellen einer Schemaerweiterungsdefinition müssen Sie einen eindeutigen Namen für die **ID** angeben. Es stehen zwei Benennungsoptionen zur Verfügung:
 
-- Wenn Sie bereits über eine Vanity-`.com`-, `.net`-,  `.gov`-, `.edu`- oder `.org`-Domäne verfügen, die Sie für Ihren Mandanten überprüft haben, können Sie den Domänennamen zusammen mit dem Schemanamen verwenden, um einen eindeutigen Namen im folgenden Format zu definieren: \{_&#65279;Domänenname_\}\_\{_&#65279;Schemaname_\}. Wenn Ihre Vanity-Domäne beispielsweise „contoso.com“ ist, können Sie eine **ID** mit dem Wert `contoso_mySchema` definieren. Dies ist die bevorzugte Option.
-- Wenn Sie nicht über eine überprüfte Vanity-Domäne verfügen, können Sie die **ID** einfach auf einen Schemanamen festlegen (ohne Domänennamenpräfix), z. B. `mySchema`. Microsoft Graph weist eine Zeichenfolgen-ID anhand des angegebenen Namens im folgenden Format zu: ext\{_&#65279;8-zufällige-alphanumerische-Zeichen_\}\_\{_&#65279;Schemaname_\}.  Beispiel: `extkvbmkofy_mySchema`.
+- Wenn Sie bereits über eine Vanity-`.com`-, `.net`-,  `.gov`-, `.edu`- oder `.org`-Domäne verfügen, die Sie für Ihren Mandanten überprüft haben, können Sie den Domänennamen zusammen mit dem Schemanamen verwenden, um einen eindeutigen Namen im folgenden Format zu definieren: \{_﻿Domänenname_\}\_\{_﻿Schemaname_\}. Wenn Ihre Vanity-Domäne beispielsweise „contoso.com“ ist, können Sie eine **ID** mit dem Wert `contoso_mySchema` definieren. Dies ist die bevorzugte Option.
+- Wenn Sie nicht über eine überprüfte Vanity-Domäne verfügen, können Sie die **ID** einfach auf einen Schemanamen festlegen (ohne Domänennamenpräfix), z. B. `mySchema`. Microsoft Graph weist eine Zeichenfolgen-ID anhand des angegebenen Namens im folgenden Format zu: ext\{_﻿8-zufällige-alphanumerische-Zeichen_\}\_\{_﻿Schemaname_\}.  Beispiel: `extkvbmkofy_mySchema`.
 
 Sie sehen diesen eindeutigen Namen in der **ID**, wo er als Name des komplexen Typs verwendet wird, der Ihre benutzerdefinierten Daten in der erweiterten Ressourceninstanz speichert.
 
@@ -78,8 +78,8 @@ Die Besitzer-App kann anschließend einen PATCH-Vorgang auf die Erweiterungseige
 |Status |Verhalten des Lebenszyklusstatus |
 |:-------------|:------------|
 | InDevelopment | <ul><li>Anfänglicher Status nach der Erstellung. Die Besitzer-App entwickelt die Schemaerweiterung noch. </li><li>In diesem Status kann jede App Ressourceninstanzen mit dieser Schemadefinition erweitern, und das nur in dem Verzeichnis, in dem die Besitzer-App registriert ist. </li><li>Nur die Besitzer-App kann die Erweiterungsdefinition mit additiven Änderungen aktualisieren oder sie löschen. </li><li>Die Besitzer-App kann die Schemaerweiterung aus dem Status **InDevelopment** in den Status **Available** versetzen.</li></ul> |
-| Available | <ul><li>Die Schemaerweiterung kann von allen Apps in jedem beliebigen Mandanten verwendet werden. </li><li>Nachdem die Besitzer-App die Erweiterung auf **Available** festlegt, kann jede App benutzerdefinierte Daten zu Instanzen der in der Erweiterung angegebenen Ressourcentypen hinzufügen (vorausgesetzt, die App ist zum Zugriff auf die betreffende Ressource berechtigt). Die App kann benutzerdefinierte Daten bei der Erstellung einer neuen Instanz oder bei der Aktualisierung einer bereits vorhandenen Instanz zuweisen. </li><li>Nur die Besitzer-App kann die Erweiterungsdefinition mit additiven Änderungen aktualisieren. Die Erweiterungsdefinition kann in diesem Status von keiner App gelöscht werden. </li><li>Die Besitzer-App kann die Schemaerweiterung aus dem Status **Available** in den Status **Deprecated** versetzen.</li></ul> |
-| Deprecated | <ul><li>Die Schemaerweiterungsdefinition kann nicht mehr gelesen und auch nicht mehr geändert werden. </li><li>Die Erweiterung kann von keiner App angezeigt, aktualisiert, um neue Eigenschaften ergänzt oder gelöscht werden. </li><li>Apps können vorhandene _Eigenschaftswerte_ der Erweiterung jedoch weiterhin lesen, aktualisieren oder löschen. </li><li>Die Besitzer-App kann die Schemaerweiterung aus dem Status **Deprecated** zurück in den Status **Available** versetzen.</li></ul> |
+| Verfügbar | <ul><li>Die Schemaerweiterung kann von allen Apps in jedem beliebigen Mandanten verwendet werden. </li><li>Nachdem die Besitzer-App die Erweiterung auf **Available** festlegt, kann jede App benutzerdefinierte Daten zu Instanzen der in der Erweiterung angegebenen Ressourcentypen hinzufügen (vorausgesetzt, die App ist zum Zugriff auf die betreffende Ressource berechtigt). Die App kann benutzerdefinierte Daten bei der Erstellung einer neuen Instanz oder bei der Aktualisierung einer bereits vorhandenen Instanz zuweisen. </li><li>Nur die Besitzer-App kann die Erweiterungsdefinition mit additiven Änderungen aktualisieren. Die Erweiterungsdefinition kann in diesem Status von keiner App gelöscht werden. </li><li>Die Besitzer-App kann die Schemaerweiterung aus dem Status **Available** in den Status **Deprecated** versetzen.</li></ul> |
+| Veraltet | <ul><li>Die Schemaerweiterungsdefinition kann nicht mehr gelesen und auch nicht mehr geändert werden. </li><li>Die Erweiterung kann von keiner App angezeigt, aktualisiert, um neue Eigenschaften ergänzt oder gelöscht werden. </li><li>Apps können vorhandene _Eigenschaftswerte_ der Erweiterung jedoch weiterhin lesen, aktualisieren oder löschen. </li><li>Die Besitzer-App kann die Schemaerweiterung aus dem Status **Deprecated** zurück in den Status **Available** versetzen.</li></ul> |
 
 ### <a name="supported-property-data-types"></a>Unterstützte Datentypen für Eigenschaften
 
@@ -95,9 +95,9 @@ Die folgenden Datentypen werden beim Definieren einer Eigenschaft in einer Schem
 
 > **Hinweis:** Eigenschaften mit mehreren Werten werden nicht unterstützt.
 
-### <a name="azure-ad-directory-schema-extensions"></a>Azure AD-Verzeichnisschemaerweiterungen
+### <a name="azure-ad-directory-schema-extensions"></a>Azure AD-Verzeichnisschemaerweiterungen
 
-Azure AD unterstützt einen ähnlichen Erweiterungstyp namens [Verzeichnisschemaerweiterung](https://msdn.microsoft.com/de-DE/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions) für einige [directoryObject-Ressourcen](../api-reference/v1.0/resources/directoryObject.md). Zur Erstellung und Verwaltung der Definitionen von Verzeichnisschemaerweiterungen müssen Sie die [Azure AD Graph-API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) verwenden. Das Hinzufügen, Abrufen, Aktualisieren und Löschen von _Daten_ in den Eigenschaften dieser Erweiterungen ist jedoch auch über die Microsoft Graph-API möglich.
+Azure AD unterstützt einen ähnlichen Erweiterungstyp namens [Verzeichnisschemaerweiterung](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions) für einige [directoryObject-Ressourcen](../api-reference/v1.0/resources/directoryObject.md). Zur Erstellung und Verwaltung der Definitionen von Verzeichnisschemaerweiterungen müssen Sie die [Azure AD Graph-API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) verwenden. Das Hinzufügen, Abrufen, Aktualisieren und Löschen von _Daten_ in den Eigenschaften dieser Erweiterungen ist jedoch auch über die Microsoft Graph-API möglich.
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -134,6 +134,6 @@ Bekannte Einschränkungen bei der Verwendung von Erweiterungen finden Sie im [Ab
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Office 365-Domänen](https://technet.microsoft.com/de-DE/library/office-365-domains.aspx)
+- [Office 365-Domänen](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 
 - [Hinzufügen und Überprüfen einer Domäne für einen Office 365-Mandanten](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
