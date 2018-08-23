@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: UploadSession
-ms.openlocfilehash: d84b588c28791ab8f1cf6cef1be6af767fa18e47
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 6c0ffebf0d973afe72ab82de9782c1f54e2342dd
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "20502123"
 ---
 # <a name="uploadsession-resource"></a>UploadSession-Ressource
 
@@ -37,12 +38,12 @@ Es folgt eine JSON-Darstellung der Ressource.
 | Eigenschaft       | Typ              |Beschreibung
 |:-------------------|:------------------|:------------------------------------
 | expirationDateTime | DateTimeOffset    | Datum und Uhrzeit in UTC, wenn die Upload Sitzung abläuft. Die vollständige Datei muss hochgeladen werden, bevor dieser Ablaufzeitpunkt erreicht wird.
-| nextExpectedRanges | String collection | Eine Zusammenstellung von Bytebereichen, die dem Server für die Datei fehlen. Diese Bereiche sind Null indiziert und haben das Format "Anfang-Ende" (z. B. zeigt "0-26" die ersten 27 Bytes der Datei an).
-| uploadUrl          | String            | Der URL-Endpunkt, der PUT-Anfragen für Bytebereiche der Datei akzeptiert.
+| nextExpectedRanges | Zeichenfolgenauflistung | Eine Zusammenstellung von Bytebereichen, die dem Server für die Datei fehlen. Diese Bereiche sind Null indiziert und haben das Format "Anfang-Ende" (z. B. zeigt "0-26" die ersten 27 Bytes der Datei an).
+| uploadUrl          | Zeichenfolge            | Der URL-Endpunkt, der PUT-Anfragen für Bytebereiche der Datei akzeptiert.
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+## <a name="see-also"></a>Siehe auch
 
-Unter [Hochladen große Dateien mit einer Upload-Sitzung](../api/driveitem_createuploadsession.md) finden Sie Details zum Hochladen von Dateien mit einer Sitzung.
+- [Hochladen großer Dateien mit einer Uploadsitzung](../api/driveitem_createuploadsession.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

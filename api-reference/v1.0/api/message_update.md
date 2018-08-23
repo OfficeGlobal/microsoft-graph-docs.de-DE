@@ -21,28 +21,28 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Inhaltstyp | Zeichenfolge  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben. Schreibbare/Aktualisierbare Eigenschaften:
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|bccRecipients|Recipient|Die Bcc:-Empfänger der Nachricht. Kann nur aktualisiert werden, wenn IsDraft = True.|
-|categories|String collection|Die Kategorien, die mit der Nachricht verknüpft sind.|
-|ccRecipients|Recipient collection|Die Cc:-Empfänger der Nachricht. Kann nur aktualisiert werden, wenn IsDraft = True.|
-|Von|Recipient|Der Postfachbesitzer und der Absender der Nachricht. Kann nur aktualisiert werden, wenn IsDraft = True.|
-|Wichtigkeit|String|Wichtigkeit der Nachricht Mögliche Werte: `Low`, `Normal`, `High`.|
-|inferenceClassification | String | Die Klassifizierung der Nachricht für den Benutzer, basierend auf der abgeleiteten Relevanz oder Wichtigkeit oder auf einer expliziten Außerkraftsetzung. Mögliche Werte sind: `focused` oder `other`. |
-|internetMessageId |String |Die Nachrichten-ID im von [RFC2822](http://www.ietf.org/rfc/rfc2822.txt) angegebenen Format. Kann nur aktualisiert werden, wenn IsDraft = True.|
-|isRead|Boolean|Gibt an, ob die Nachricht gelesen wurde.|
-|replyTo|Recipient collection|Die E-Mail-Adressen, die beim Antworten verwendet werden sollen. Kann nur aktualisiert werden, wenn IsDraft = True.|
-|sender|Recipient|Das Konto, das tatsächlich verwendet wird, um die Nachricht zu generieren. Kann nur aktualisiert werden, wenn IsDraft = True.|
-|toRecipients|Recipient collection|Die An:-Empfänger der Nachricht. Kann nur aktualisiert werden, wenn IsDraft = True.|
-|body|ItemBody|Der Text der Nachricht. Kann nur aktualisiert werden, wenn IsDraft = True.|
-|isDeliveryReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
-|isReadReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
-|subject|String|Der Betreff der Nachricht. Kann nur aktualisiert werden, wenn IsDraft = True.|
+|bccRecipients|Empfänger|Die BCC-Empfänger der Nachricht. Nur aktualisierbar, wenn isDraft=true.|
+|categories|Zeichenfolgenauflistung|Die Kategorien, die mit der Nachricht verknüpft sind.|
+|ccRecipients|Recipient collection|Die CC-Empfänger der Nachricht. Nur aktualisierbar, wenn isDraft=true.|
+|Von|Empfänger|Der Postfachbesitzer und der Absender der Nachricht. Nur aktualisierbar, wenn isDraft=true. Muss dem tatsächlich verwendeten Posteingang entsprechen.|
+|Wichtigkeit|Zeichenfolge|Die Wichtigkeit der Nachricht. Mögliche Werte sind: `Low`, `Normal` und `High`.|
+|inferenceClassification | Zeichenfolge | Die Klassifizierung der Nachricht für den Benutzer, basierend auf der abgeleiteten Relevanz oder Wichtigkeit oder auf einer expliziten Außerkraftsetzung. Mögliche Werte sind `focused`, oder `other`. |
+|internetMessageId |Zeichenfolge |Die Nachrichten-ID im von [RFC2822](http://www.ietf.org/rfc/rfc2822.txt) angegebenen Format. Nur aktualisierbar, wenn isDraft=true.|
+|isRead|Boolesch|Gibt an, ob die Nachricht gelesen wurde.|
+|replyTo|Recipient collection|Die E-Mail-Adressen, die beim Antworten verwendet werden sollen. Nur aktualisierbar, wenn isDraft=true.|
+|sender|Empfänger|Das Konto, das tatsächlich verwendet wird, um die Nachricht zu generieren. Nur aktualisierbar, wenn isDraft=true und wenn eine Nachricht von einem [geteilten Postfach](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes) gesendet wird oder wenn die Nachricht im [Auftrag von jemanden](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926) gesendet wird. Der Wert muss in jedem Fall dem tatsächlich verwendeten Postfach entsprechen.|
+|toRecipients|Recipient collection|Die Empfänger der Nachricht. Nur aktualisierbar, wenn isDraft=true.|
+|Text|ItemBody|Der Text der Nachricht. Nur aktualisierbar, wenn isDraft=true.|
+|isDeliveryReceiptRequested|Boolesch|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
+|isReadReceiptRequested|Boolesch|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
+|Betreff|Zeichenfolge|Der Betreff der Nachricht. Nur aktualisierbar, wenn isDraft=true.|
 
 Da die **message**-Ressource [Erweiterungen](../../../concepts/extensibility_overview.md) unterstützt, erlaubt der `PATCH`-Vorgang das Hinzufügen, Aktualisieren oder Löschen eigener App-spezifischer Daten in den benutzerdefinierten Eigenschaften von Erweiterungen in vorhandenen **message**-Instanzen.
 
@@ -96,7 +96,7 @@ Content-length: 248
 }
 ```
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](../../../concepts/extensibility_overview.md)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Preview)](../../../concepts/extensibility_open_users.md)

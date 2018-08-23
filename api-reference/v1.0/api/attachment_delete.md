@@ -4,23 +4,32 @@ Mit dieser API können Sie Anlagen aus Kalenderereignissen, E-Mail-Nachrichten o
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-* Beim Zugriff auf Anlagen in Nachrichten: Mail.ReadWrite
-* Beim Zugriff auf Anlagen in Ereignissen: Calendars.ReadWrite
-* Beim Zugriff auf Anlagen in Gruppenereignissen oder -beiträgen: Group.ReadWrite.All
+* Beim Zugriff auf Anlagen in Nachrichten: Mail.ReadWrite.
+* Beim Zugriff auf Anlagen in Ereignissen: Calendars.ReadWrite.
+* Beim Zugriff auf Anlagen in Gruppenbeiträgen: Group.ReadWrite.All.
+
+<!--
+* If accessing attachments in Group Events or Posts: Group.ReadWrite.All.
+-->
 
 ## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
 Anlagen für ein [Ereignis](../resources/event.md) im Standard[kalender](../resources/calendar.md) des Benutzers oder der Gruppe.
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/events/{id}/attachments/{id}
-DELETE /groups/{id}/events/{id}/attachments/{id}
 
 DELETE /me/calendar/{id}/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
-DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
 ```
+
+<!--
+DELETE /groups/{id}/events/{id}/attachments/{id}
+DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
+-->
+
 Anlagen für ein [Ereignis](../resources/event.md) in einem [Kalender](../resources/calendar.md) aus der standardmäßigen [calendarGroup](../resources/calendargroup.md) des Benutzers.
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
@@ -29,26 +38,31 @@ DELETE /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 ```
 Anlagen für ein [Ereignis](../resources/event.md) in einem [Kalender](../resources/calendar.md) aus der [calendarGroup](../resources/calendargroup.md) eines Benutzers.
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 ```
 Anlagen für eine [Nachricht](../resources/message.md) im Postfach eines Benutzers.
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
 ```
 Anlagen für eine [Nachricht](../resources/message.md) in einem [MailFolder](../resources/mailfolder.md) der obersten Ebene im Postfach eines Benutzers.
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
-Anlagen für eine [Nachricht](../resources/message.md) in einem untergeordneten [MailFolder](../resources/mailfolder.md) im Postfach eines Benutzers.  Das Beispiel unten zeigt eine einzige Schachtelungsebene, aber eine Nachricht kann sich auch in einem untergeordneten Element eines untergeordneten Elements usw. befinden.
+Anlagen für eine [Nachricht](../resources/message.md) in einem untergeordneten Ordner eines [mailFolder](../resources/mailfolder.md) im Postfach eines Benutzers.  Das folgende Beispiel zeigt eine Ebene der Verschachtelung. Eine Nachricht kann jedoch auch in einem untergeordneten Ordner eines untergeordneten Ordners und so weiter enthalten sein.
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 Anlagen für einen [Beitrag](../resources/post.md) in einem [Thread](../resources/conversationthread.md), der zu einer [Unterhaltung](../resources/conversation.md) einer Gruppe gehört.
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
 DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
@@ -56,7 +70,7 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

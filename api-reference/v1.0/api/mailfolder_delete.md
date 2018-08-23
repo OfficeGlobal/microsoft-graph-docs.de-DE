@@ -1,6 +1,11 @@
 # <a name="delete-mailfolder"></a>mailFolder löschen
 
-Mit dieser API können Sie Ressourcen des Typs „mailFolder“ löschen.
+Löschen Sie den angegebenen [mailFolder](../resources/mailfolder.md).
+
+Sie können einen E-Mail-Oder durch seine Ordner-ID oder durch seinen [bekannten Ordnernamen](../resources/mailfolder.md), falls dieser existiert, angeben. 
+
+>**Hinweis** Eventuell können Sie Elemente im Ordner "wiederhergestellte Elemente" (mit dem bekannten Ordnernamen `recoverableitemsdeletions`) nicht löschen. Weitere Informationen finden Sie unter [Aufbewahrung gelöschter Elemente](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) und [Aufräumen gelöschter Elemente](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items).
+
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -19,7 +24,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
