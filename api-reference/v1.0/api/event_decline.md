@@ -1,6 +1,6 @@
-# <a name="event-decline"></a>event: decline
+# <a name="event-decline"></a>Ereignis: ablehnen
 
-Mit dieser API können Sie die Einladung zu dem angegebenen Ereignis löschen.
+Einladung zum angegebenen [Ereignis](../resources/event.md) in einem [Kalender](../resources/calendar.md) des Benutzers ablehnen.
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -19,11 +19,9 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ```http
 POST /me/events/{id}/decline
 POST /users/{id | userPrincipalName}/events/{id}/decline
-POST /groups/{id}/events/{id}/decline
 
 POST /me/calendar/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendar/events/{id}/decline
-POST /groups/{id}/calendar/events/{id}/decline
 
 POST /me/calendars/{id}/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/decline
@@ -41,8 +39,8 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Inhaltstyp | Zeichenfolge  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -50,8 +48,8 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|comment|String|In der Antwort enthaltener Text. Optional.|
-|sendResponse|Boolean|`true`,wenn eine Antwort an den Organisator gesendet werden soll; andernfalls `false`. Optional. Der Standardwert lautet `true`.|
+|Kommentar|Zeichenfolge|In der Antwort enthaltener Text. Optional.|
+|sendResponse|Boolescher Wert|`true` ,wenn eine Antwort an den Organisator gesendet werden soll; andernfalls `false`. Optional. Der Standardwert lautet `true`.|
 
 ## <a name="response"></a>Antwort
 

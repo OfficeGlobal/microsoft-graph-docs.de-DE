@@ -1,6 +1,6 @@
-# <a name="event-tentativelyaccept"></a>event: tentativelyAccept
+# <a name="event-tentativelyaccept"></a>Ereignis: tentativelyAccept
 
-Mit dieser API können Sie das jeweils angegebene Ereignis mit Vorbehalt akzeptieren.
+Das angegebene [Ereignis](../resources/event.md) in einem [Kalender](../resources/calendar.md) des Benutzers unter Vorbehalt annehmen.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
@@ -16,11 +16,9 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ```http
 POST /me/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/events/{id}/tentativelyAccept
-POST /groups/{id}/events/{id}/tentativelyAccept
 
 POST /me/calendar/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/calendar/events/{id}/tentativelyAccept
-POST /groups/{id}/calendar/events/{id}/tentativelyAccept
 
 POST /me/calendars/{id}/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/tentativelyAccept
@@ -34,16 +32,16 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Inhaltstyp | Zeichenfolge  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|comment|String|In der Antwort enthaltener Text. Optional.|
-|sendResponse|Boolean|`true`,wenn eine Antwort an den Organisator gesendet werden soll; andernfalls `false`. Optional. Der Standardwert lautet `true`.|
+|Kommentar|Zeichenfolge|In der Antwort enthaltener Text. Optional.|
+|sendResponse|Boolescher Wert|`true` ,wenn eine Antwort an den Organisator gesendet werden soll; andernfalls `false`. Optional. Der Standardwert lautet `true`.|
 
 ## <a name="response"></a>Antwort
 

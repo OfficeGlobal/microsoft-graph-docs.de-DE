@@ -24,8 +24,8 @@ POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.
@@ -34,7 +34,7 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|syncType|String|Typ der auszuführenden Synchronisierung (vollständige Synchronisierung oder Deltasynchronisierung)|
+|syncType|[deviceManagementExchangeConnectorSyncType](../resources/intune_onboarding_devicemanagementexchangeconnectorsynctype.md)|Typ der auszuführenden Synchronisierung (vollständige Synchronisierung oder Deltasynchronisierung)|
 
 
 

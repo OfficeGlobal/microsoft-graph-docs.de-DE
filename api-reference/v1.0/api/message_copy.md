@@ -1,49 +1,58 @@
-# <a name="message-copy"></a>message: copy
+# <a name="message-copy"></a>message: Text
 
 Mit dieser API können Sie Nachrichten in Ordner kopieren.
 
 ## <a name="permissions"></a>Berechtigungen
+
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
-|:--------------------|:---------------------------------------------------------|
+| Berechtigungstyp | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten) |
+|:----------------|:--------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | Mail.ReadWrite    |
 |Delegiert (persönliches Microsoft-Konto) | Mail.ReadWrite    |
 |Anwendung | Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-Anforderung
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/messages/{id}/copy
 POST /users/{id | userPrincipalName}/messages/{id}/copy
 POST /me/mailFolders/{id}/messages/{id}/copy
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 ```
+
 ## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
+
+| Kopfzeile | Wert |
+|:-------|:------|
+| Autorisierung | `Bearer {token}`. Erforderlich. |
+| Inhaltstyp | `application/json`. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
-| Parameter    | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|destinationId|String|Die Zielordner-ID oder ein bekannter Ordnername wie *Posteingang*, *Entwürfe*, *Gesendete Objekte* oder *Gelöschte Objekte*. Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).|
+| Parameter | Typ | Beschreibung |
+|:----------|:-----|:------------|
+|destinationId|Zeichenfolge|Die Zielordner-ID oder ein bekannter Ordnername. Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [MailFolder-Ressourcentyp](../resources/mailfolder.md).|
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und das [Message](../resources/message.md)-Objekt im Antworttext zurückgegeben.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und eine [mailFolder](../resources/message.md)-Ressource im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
+
 Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
+
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
   "name": "message_copy"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/copy
 Content-type: application/json
@@ -55,12 +64,16 @@ Content-length: 44
 ```
 
 ##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+
+Nachfolgend sehen Sie ein Beispiel der Antwort.
+
+> **Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
