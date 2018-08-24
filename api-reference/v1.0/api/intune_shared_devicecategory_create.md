@@ -24,8 +24,8 @@ POST /deviceManagement/deviceCategories
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekt des Typs deviceCategory an.
@@ -34,9 +34,9 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für die Gerätekategorie. Schreibgeschützt.|
-|displayName|String|Der Anzeigename für die Gerätekategorie.|
-|description|String|Optionale Beschreibung für die Gerätekategorie.|
+|ID|Zeichenfolge|Eindeutiger Bezeichner für die Gerätekategorie. Schreibgeschützt.|
+|displayName|Zeichenfolge|Der Anzeigename für die Gerätekategorie.|
+|description|Zeichenfolge|Optionale Beschreibung für die Gerätekategorie.|
 
 
 

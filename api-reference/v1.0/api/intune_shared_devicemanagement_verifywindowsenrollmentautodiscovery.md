@@ -24,8 +24,8 @@ GET /deviceManagement/verifyWindowsEnrollmentAutoDiscovery
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie in der Anforderungs-URL die folgenden Abfrageparameter mit Werten an.

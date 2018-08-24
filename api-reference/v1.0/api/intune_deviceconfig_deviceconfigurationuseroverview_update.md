@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusO
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) an.
@@ -34,9 +34,9 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|ID|Zeichenfolge|Schlüssel der Entität|
 |pendingCount|Int32|Anzahl der ausstehenden Benutzer|
-|notApplicableCount|Int32|Anzahl der ausgenommenen Geräte|
+|notApplicableCount|Int32|Anzahl der nicht anwendbaren Benutzer|
 |successCount|Int32|Anzahl der erfolgreichen Benutzer|
 |errorCount|Int32|Anzahl der Benutzer mit Fehlern|
 |failedCount|Int32|Anzahl der fehlgeschlagenen Benutzer|

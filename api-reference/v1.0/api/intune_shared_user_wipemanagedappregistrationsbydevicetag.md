@@ -1,14 +1,16 @@
-# <a name="geteffectivepermissions-function"></a>getEffectivePermissions-Funktion
+# <a name="wipemanagedappregistrationsbydevicetag-action"></a>Aktion „wipeManagedAppRegistrationsByDeviceTag“
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Noch nicht dokumentiert
+Diese Aktion stößt einen Zurücksetzungsvorgang für eine App-Registrierung mit dem jeweils angegebenen Gerätetag an.
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
-|Delegiert (Geschäfts-, Schul- oder Unikonto)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
+|Delegiert (Geschäfts-, Schul- oder Unikonto)|DeviceManagementApps.ReadWrite.All|
 |Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 
@@ -18,7 +20,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 }
 -->
 ``` http
-GET /deviceManagement/getEffectivePermissions
+POST /users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
@@ -28,53 +30,38 @@ GET /deviceManagement/getEffectivePermissions
 |Akzeptieren|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie in der Anforderungs-URL die folgenden Abfrageparameter mit Werten an.
-In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion verwendet werden können.
+Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.
+
+In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion verwendet werden können.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|Bereich|Zeichenfolge|Noch nicht dokumentiert|
-
-
+|deviceTag|Zeichenfolge|Gerätetag|
 
 ## <a name="response"></a>Antwort
-Wenn die Funktion erfolgreich verläuft, werden der Antwortcode `200 OK` und eine [rolePermission](../resources/intune_rbac_rolepermission.md)-Sammlung im Antworttext zurückgegeben.
+Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` zurück.
 
 ## <a name="example"></a>Beispiel
+
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
+
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceManagement/getEffectivePermissions(scope='parameterValue')
+POST https://graph.microsoft.com/beta/users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
+
+Content-type: application/json
+Content-length: 39
+
+{
+  "deviceTag": "Device Tag value"
+}
 ```
 
 ### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 471
 
-{
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.rolePermission",
-      "actions": [
-        "Actions value"
-      ],
-      "resourceActions": [
-        {
-          "@odata.type": "microsoft.graph.resourceAction",
-          "allowedResourceActions": [
-            "Allowed Resource Actions value"
-          ],
-          "notAllowedResourceActions": [
-            "Not Allowed Resource Actions value"
-          ]
-        }
-      ]
-    }
-  ]
-}
+``` http
+HTTP/1.1 204 No Content
 ```
 
 
