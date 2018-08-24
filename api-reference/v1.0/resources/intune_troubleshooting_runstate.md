@@ -1,0 +1,16 @@
+# <a name="runstate-enum-type"></a><span data-ttu-id="e36d4-101">RunState Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="e36d4-101">runState enum type</span></span>
+
+> <span data-ttu-id="e36d4-102">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="e36d4-102">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e36d4-103">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="e36d4-103">Use of these APIs in production applications is not supported.</span></span>
+
+> <span data-ttu-id="e36d4-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="e36d4-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="e36d4-105">Gibt den Typ des Ausführungsstatus des Geräteverwaltungsskipts an.</span><span class="sxs-lookup"><span data-stu-id="e36d4-105">Indicates the type of execution status of the device management script.</span></span>
+## <a name="members"></a><span data-ttu-id="e36d4-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="e36d4-106">Members</span></span>
+|<span data-ttu-id="e36d4-107">Element</span><span class="sxs-lookup"><span data-stu-id="e36d4-107">Member</span></span>|<span data-ttu-id="e36d4-108">Wert</span><span class="sxs-lookup"><span data-stu-id="e36d4-108">Value</span></span>|<span data-ttu-id="e36d4-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e36d4-109">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="e36d4-110">unbekannt</span><span class="sxs-lookup"><span data-stu-id="e36d4-110">unknown</span></span>|<span data-ttu-id="e36d4-111">0</span><span class="sxs-lookup"><span data-stu-id="e36d4-111">0%</span></span>|<span data-ttu-id="e36d4-112">Unbekanntes Ergebnis.</span><span class="sxs-lookup"><span data-stu-id="e36d4-112">Unknown result.</span></span>|
+|<span data-ttu-id="e36d4-113">Erfolgreich</span><span class="sxs-lookup"><span data-stu-id="e36d4-113">success</span></span>|<span data-ttu-id="e36d4-114">1</span><span class="sxs-lookup"><span data-stu-id="e36d4-114">$1</span></span>|<span data-ttu-id="e36d4-115">Skript wird erfolgreich ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="e36d4-115">Script is run successfully.</span></span>|
+|<span data-ttu-id="e36d4-116">Fehler</span><span class="sxs-lookup"><span data-stu-id="e36d4-116">Fail</span></span>|<span data-ttu-id="e36d4-117">2</span><span class="sxs-lookup"><span data-stu-id="e36d4-117">-2</span></span>|<span data-ttu-id="e36d4-118">Skript konnte nicht ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="e36d4-118">Script failed to run.</span></span>|
+
+
+
