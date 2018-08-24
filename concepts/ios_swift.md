@@ -4,7 +4,7 @@
 
 > Zur Unterstützung **aller Unternehmenskunden** über **alle Unternehmensszenarien** hinweg müssen Sie den Azure AD-Endpunkt verwenden und Ihre Apps mithilfe des [Azure-Portals](https://aka.ms/aadapplist) verwalten. Weitere Informationen finden Sie unter [Entscheiden zwischen dem Azure AD- und dem Azure AD v2.0-Endpunkt](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
-Dieser Artikel beschreibt die erforderlichen Aufgaben zum Abrufen eines Zugriffstokens vom [Azure AD v2.0-Endpunkt](https://developer.microsoft.com/de-DE/graph/docs/concepts/converged_auth) und zum Aufrufen von Microsoft Graph. Er führt Sie durch den Code im [Office 365 Connect-Beispiel für iOS (REST)](https://github.com/microsoftgraph/ios-swift-connect-rest-sample) und erläutert die wichtigsten Konzepte, die in einer App implementiert werden müssen, die Microsoft Graph verwendet. In diesem Artikel wird auch beschrieben, wie Sie mit REST-Vorgängen in einem asynchronen **Zusagenkette**-Muster auf Microsoft Graph zugreifen. Zusagen im Beispiel werden mit dem [mxcl/PromiseKit 4.5.2](https://github.com/mxcl/PromiseKit/blob/master/README.md) CocoaPod implementiert. 
+Dieser Artikel beschreibt die erforderlichen Aufgaben zum Abrufen eines Zugriffstokens vom [Azure AD v2.0-Endpunkt](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth) und zum Aufrufen von Microsoft Graph. Er führt Sie durch den Code im [Office 365 Connect-Beispiel für iOS (REST)](https://github.com/microsoftgraph/ios-swift-connect-rest-sample) und erläutert die wichtigsten Konzepte, die in einer App implementiert werden müssen, die Microsoft Graph verwendet. In diesem Artikel wird auch beschrieben, wie Sie mit REST-Vorgängen in einem asynchronen **Zusagenkette**-Muster auf Microsoft Graph zugreifen. Zusagen im Beispiel werden mit dem [mxcl/PromiseKit 4.5.2](https://github.com/mxcl/PromiseKit/blob/master/README.md) CocoaPod implementiert. 
 
 Das Beispiel wurde mit **XCode 9.2** und **Swift 3.2** erstellt.
 
@@ -19,7 +19,7 @@ In der folgenden Abbildung ist die App dargestellt, die Sie erstellen.
 
 Der Workflow authentifiziert und autorisiert das Beispiel für den Zugriff auf Microsoft Graph-Ressourcen, meldet sich mit Ihrem Geschäfts- oder persönlichen Konto an und sendet schließlich eine E-Mail an einen Empfänger.
 
-**Sie möchten keine App erstellen?** Verwenden Sie für einen schnellen Einstieg den [Microsoft Graph-Schnellstart](https://developer.microsoft.com/de-DE/graph/quick-start).
+**Sie möchten keine App erstellen?** Verwenden Sie für einen schnellen Einstieg den [Microsoft Graph-Schnellstart](https://developer.microsoft.com/en-us/graph/quick-start).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -29,7 +29,7 @@ Für die ersten Schritte benötigen Sie:
 * Installation von [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) als ein Abhängigkeits-Manager.
 * Installation von [Carthage](https://github.com/Carthage/Carthage) zum Importieren und Erstellen der **MSAL**-Bibliothek.
 * Installation von [PromiseKit 4.5.2](https://github.com/mxcl/PromiseKit/blob/master/Documentation/Installation.md) Cocoapod. 
-* Ein [Microsoft-Konto](https://www.outlook.com/) oder ein [Geschäfts- oder Schulkonto](https://docs.microsoft.com/de-DE/office/developer-program/office-365-developer-program-faq#account-types)
+* Ein [Microsoft-Konto](https://www.outlook.com/) oder ein [Geschäfts- oder Schulkonto](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
 
 ## <a name="register-the-app"></a>Registrieren der App
  
@@ -476,13 +476,12 @@ Der Code, den wir hier verwenden, befindet sich in der Klasse **SendMailViewCont
 
 2. Führen Sie das Beispiel aus, tippen Sie auf **Verbinden**, melden Sie sich mit Ihrem persönlichen Konto oder mit Ihrem Geschäfts- oder Schulkonto an und gewähren Sie die erforderlichen Berechtigungen.
 
-3. Klicken Sie auf die Schaltfläche **E-Mail senden**.
- Nachdem die E-Mail gesendet wurde, wird unter der Schaltfläche eine Erfolgsmeldung angezeigt.
+3. Klicken Sie auf die Schaltfläche **E-Mail senden**. Nachdem die E-Mail gesendet wurde, wird unter der Schaltfläche eine Erfolgsmeldung angezeigt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 - Testen Sie die REST-API mithilfe des [Graph-Testers](https://graph.microsoft.io/graph-explorer).
 - Beispiele allgemeiner Vorgänge für SDK-Operationen finden Sie in dem Beispiel [Microsoft Graph iOS Objective C Snippets](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample).
 
 ## <a name="see-also"></a>Siehe auch
-- [Azure AD v2.0-Protokolle](https://azure.microsoft.com/de-DE/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0-Tokens](https://azure.microsoft.com/de-DE/documentation/articles/active-directory-v2-tokens/)
+- [Azure AD v2.0-Protokolle](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0-Tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
