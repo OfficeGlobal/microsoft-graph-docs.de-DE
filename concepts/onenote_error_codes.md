@@ -50,7 +50,7 @@ Der Server ist zu ausgelastet, um die eingehende Anforderung zu bearbeiten. Bitt
 Eine oder mehrere der Dokumentbibliotheken des OneDrive-Benutzers oder der -Gruppe enthalten mehr als 5.000 OneDrive-Elemente (Notizbücher, Abschnitte, Abschnittsgruppen) und können nicht mithilfe der API abgefragt werden. Stellen Sie sicher, dass keine der Benutzer- oder Gruppen-Dokumentbibliotheken mehr als 5.000 OneNote-Elemente enthält. Im [OneNote-Entwicklerblog](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) finden Sie Informationen zur Reduzierung der Elemente.
 
 ### <a name="10012"></a>10012
-Die Entität kann nicht erstellt oder aktualisiert werden, da aus der Bibliothek, die das Notizbuch enthält, Elemente ausgecheckt werden müssen, bevor diese bearbeitet werden können. Weitere Informationen finden Sie unter [Einrichten einer Bibliothek, um das Auschecken von Dateien erforderlich zu machen](https://support.office.com/de-DE/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7).
+Die Entität kann nicht erstellt oder aktualisiert werden, da aus der Bibliothek, die das Notizbuch enthält, Elemente ausgecheckt werden müssen, bevor diese bearbeitet werden können. Weitere Informationen finden Sie unter [Einrichten einer Bibliothek, um das Auschecken von Dateien erforderlich zu machen](https://support.office.com/en-us/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7).
 
 Entfernen Sie entweder die Anforderung zum Auschecken aus der Bibliothek oder verschieben Sie das Notizbuch.
 
@@ -215,7 +215,7 @@ Die Anfrage gibt den Namen einer unbekannten Eigenschaft an.
 Die Anforderung enthält einen OData-Syntaxfehler an der in der Nachricht angegebenen Position.
 
 ### <a name="20129"></a>20129
-Die Anforderung enthält eine **top**-Abfrage-Zeichenfolgeoption, deren Wert zu hoch ist. Der Maximalwert für Seitenabfragen beträgt 100, und der Standardwert ist 20.
+Die Anforderung enthält eine **top**-Abfrage-Zeichenfolgeoption, deren Wert zu hoch ist. Der Maximalwert für Seitenabfragen beträgt 100, und der Standardwert ist 20.
 
 ### <a name="20130"></a>20130
 Die Anforderung enthält einen URI, der zu einer HTTP-Ressource zeigt, die nicht gefunden werden kann.
@@ -285,7 +285,7 @@ Das `style="position:absolute"`-Attribut ist für einen nicht unterstützten Ele
 Die Anforderung gibt ein Zielelement an, das nicht gefunden werden kann.
 
 ### <a name="20150"></a>20150
-Die Anforderung ist für diesen Authentifizierungstyp nicht gültig.  Verwenden Sie stattdessen den `../me/onenote/`-Pfad.
+Die Anforderung ist für diesen Authentifizierungstyp nicht gültig. Verwenden Sie stattdessen den `../me/onenote/`-Pfad.
 
 ### <a name="20151"></a>20151
 Die Anforderung ist für diesen Authentifizierungstyp nicht gültig. Verwenden Sie den `../me/onenote/section/{id}/pages`-Endpunkt, um eine Seite in einem bestimmten Abschnitt zu erstellen.
@@ -330,13 +330,13 @@ Die in der Anfrage angegebene Video-Quelle wird nicht unterstützt. Eine aktuell
 Etwas stimmt nicht mit dem Benutzerkonto.
 
 ### <a name="30101"></a>30101
-Das Benutzerkonto hat das OneDrive-Kontingent überschritten. Siehe [OneDrive](https://onedrive.live.com/about/de-DE/).
+Das Benutzerkonto hat das OneDrive-Kontingent überschritten. Siehe [OneDrive](https://onedrive.live.com/about/en-us/).
 
 ### <a name="30102"></a>30102
 Es kann nichts mehr zum angeforderten Abschnitt hinzugefügt werden, da dieser seine maximale Größe ereicht hat.
 
 ### <a name="30103"></a>30103
-Der Ressourceverbrauch ist zu hoch für die Anforderung. Entweder weist das Benutzerkonto ein zu großes Datenset auf, oder der Dienst erhält eine große Anzahl konkurrierender Anforderungen für dieselbe Website (z. B. die persönliche Website des Benutzers oder eine Teamwebsite).
+Der Ressourceverbrauch ist zu hoch für die Anforderung. Entweder weist das Benutzerkonto ein zu großes Datenset auf, oder der Dienst erhält eine große Anzahl konkurrierender Anforderungen für dieselbe Website (z. B. die persönliche Website des Benutzers oder eine Teamwebsite).
 
 ### <a name="30104"></a>30104
 Das Benutzerkonto wurde angehalten.

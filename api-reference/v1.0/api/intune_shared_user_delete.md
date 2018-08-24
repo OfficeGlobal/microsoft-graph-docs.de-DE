@@ -1,14 +1,18 @@
-# <a name="delete-importedwindowsautopilotdeviceidentity"></a>importedWindowsAutopilotDeviceIdentity löschen
+# <a name="delete-user"></a>Benutzer löschen
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Löscht eine [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md)
+Löscht ein [user](../resources/intune_shared_user.md)-Objekt.
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](../../../concepts/permissions_reference.md).  Die spezifische erforderliche Berechtigung hängt vom Kontext ab.
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
-|Delegiert (Geschäfts-, Schul- oder Unikonto)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegiert (Geschäfts-, Schul- oder Unikonto)| _variiert je nach Kontext_|
+| &nbsp; &nbsp; Geräte | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All |
+| &nbsp; &nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; Problembehandlung | DeviceManagementManagedDevices.ReadWrite.All |
 |Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 
@@ -18,7 +22,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 }
 -->
 ``` http
-DELETE /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
+DELETE /users/{usersId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
@@ -34,14 +38,17 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.
 
 ## <a name="example"></a>Beispiel
+
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
+
 ``` http
-DELETE https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
+DELETE https://graph.microsoft.com/v1.0/users/{usersId}
 ```
 
 ### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+
 ``` http
 HTTP/1.1 204 No Content
 ```
