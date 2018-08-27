@@ -1,0 +1,14 @@
+# <a name="ratingjapantelevisiontype-enum-type"></a><span data-ttu-id="25a2c-101">RatingJapanTelevisionType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="25a2c-101">ratingJapanTelevisionType enum type</span></span>
+
+> <span data-ttu-id="25a2c-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="25a2c-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="25a2c-103">Bezeichnung zur Bewertung von TV-Inhalten in Japan</span><span class="sxs-lookup"><span data-stu-id="25a2c-103">TV content rating labels in Japan</span></span>
+## <a name="members"></a><span data-ttu-id="25a2c-104">Mitglieder</span><span class="sxs-lookup"><span data-stu-id="25a2c-104">Members</span></span>
+|<span data-ttu-id="25a2c-105">Mitglied</span><span class="sxs-lookup"><span data-stu-id="25a2c-105">Member</span></span>|<span data-ttu-id="25a2c-106">Wert</span><span class="sxs-lookup"><span data-stu-id="25a2c-106">Value</span></span>|<span data-ttu-id="25a2c-107">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="25a2c-107">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="25a2c-108">allAllowed</span><span class="sxs-lookup"><span data-stu-id="25a2c-108">allAllowed</span></span>|<span data-ttu-id="25a2c-109">0</span><span class="sxs-lookup"><span data-stu-id="25a2c-109">0%</span></span>|<span data-ttu-id="25a2c-110">Standardwert, alle TV-Sendungsinhalte zulassen</span><span class="sxs-lookup"><span data-stu-id="25a2c-110">Default value, allow all TV shows content</span></span>|
+|<span data-ttu-id="25a2c-111">allBlocked</span><span class="sxs-lookup"><span data-stu-id="25a2c-111">allBlocked</span></span>|<span data-ttu-id="25a2c-112">1</span><span class="sxs-lookup"><span data-stu-id="25a2c-112">$1</span></span>|<span data-ttu-id="25a2c-113">Keine TV-Sendungsinhalte zulassen</span><span class="sxs-lookup"><span data-stu-id="25a2c-113">Do not allow any TV shows content</span></span>|
+|<span data-ttu-id="25a2c-114">explicitAllowed</span><span class="sxs-lookup"><span data-stu-id="25a2c-114">explicitAllowed</span></span>|<span data-ttu-id="25a2c-115">2</span><span class="sxs-lookup"><span data-stu-id="25a2c-115">-2</span></span>|<span data-ttu-id="25a2c-116">Alle TV-Inhalte sind ausdrücklich zugelassen</span><span class="sxs-lookup"><span data-stu-id="25a2c-116">All TV content is explicitly allowed</span></span>|
+
+
+
