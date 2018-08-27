@@ -1,0 +1,15 @@
+# <a name="vpptokensyncstatus-enum-type"></a><span data-ttu-id="da9fa-101">VppTokenSyncStatus Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="da9fa-101">vppTokenSyncStatus enum type</span></span>
+
+> <span data-ttu-id="da9fa-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="da9fa-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="da9fa-103">Mögliche Synchronisierungszustände eines "Apple Volume Purchase Program"-Tokens.</span><span class="sxs-lookup"><span data-stu-id="da9fa-103">Possible sync statuses associated with an Apple Volume Purchase Program token.</span></span>
+## <a name="members"></a><span data-ttu-id="da9fa-104">Elemente</span><span class="sxs-lookup"><span data-stu-id="da9fa-104">Members</span></span>
+|<span data-ttu-id="da9fa-105">Element</span><span class="sxs-lookup"><span data-stu-id="da9fa-105">Member</span></span>|<span data-ttu-id="da9fa-106">Wert</span><span class="sxs-lookup"><span data-stu-id="da9fa-106">Value</span></span>|<span data-ttu-id="da9fa-107">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="da9fa-107">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="da9fa-108">Keine</span><span class="sxs-lookup"><span data-stu-id="da9fa-108">none</span></span>|<span data-ttu-id="da9fa-109">0</span><span class="sxs-lookup"><span data-stu-id="da9fa-109">0%</span></span>|<span data-ttu-id="da9fa-110">Standardstatus.</span><span class="sxs-lookup"><span data-stu-id="da9fa-110">Default status</span></span>|
+|<span data-ttu-id="da9fa-111">inProgress</span><span class="sxs-lookup"><span data-stu-id="da9fa-111">InProgress</span></span>|<span data-ttu-id="da9fa-112">1</span><span class="sxs-lookup"><span data-stu-id="da9fa-112">$1</span></span>|<span data-ttu-id="da9fa-113">Synchronisation läuft.</span><span class="sxs-lookup"><span data-stu-id="da9fa-113">Last Sync in progress.</span></span>|
+|<span data-ttu-id="da9fa-114">completed</span><span class="sxs-lookup"><span data-stu-id="da9fa-114">Completed.</span></span>|<span data-ttu-id="da9fa-115">2</span><span class="sxs-lookup"><span data-stu-id="da9fa-115">-2</span></span>|<span data-ttu-id="da9fa-116">Letzte Synchronisierung wurde erfolgreich abgeschlossen.</span><span class="sxs-lookup"><span data-stu-id="da9fa-116">Last Sync completed successfully.</span></span>|
+|<span data-ttu-id="da9fa-117">failed</span><span class="sxs-lookup"><span data-stu-id="da9fa-117">failed</span></span>|<span data-ttu-id="da9fa-118">3</span><span class="sxs-lookup"><span data-stu-id="da9fa-118">-3</span></span>|<span data-ttu-id="da9fa-119">Letzte Synchronisierung ist fehlgeschlagen.</span><span class="sxs-lookup"><span data-stu-id="da9fa-119">Last Sync failed.</span></span>|
+
+
+

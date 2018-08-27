@@ -1,26 +1,24 @@
-# <a name="event-snoozereminder"></a><span data-ttu-id="9a9dc-101">event: snoozeReminder</span><span class="sxs-lookup"><span data-stu-id="9a9dc-101">event: snoozeReminder</span></span>
+# <a name="event-snoozereminder"></a><span data-ttu-id="2dc45-101">event: snoozeReminder</span><span class="sxs-lookup"><span data-stu-id="2dc45-101">event: snoozeReminder</span></span>
 
-<span data-ttu-id="9a9dc-102">Mit dieser API können Sie eine Erinnerung auf einen neuen Termin verschieben.</span><span class="sxs-lookup"><span data-stu-id="9a9dc-102">Postpone a reminder until a new time.</span></span>
+<span data-ttu-id="2dc45-102">Verschieben Sie eine Erinnerung für ein [Ereignis](../resources/event.md) in einem [Kalender](../resources/calendar.md) eines Benutzers bis zu einem neuen Zeitpunkt.</span><span class="sxs-lookup"><span data-stu-id="2dc45-102">Postpone a reminder for an [event](../resources/event.md) in a user [calendar](../resources/calendar.md) until a new time.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9a9dc-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="9a9dc-103">Permissions</span></span>
-<span data-ttu-id="9a9dc-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="9a9dc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2dc45-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="2dc45-103">Permissions</span></span>
+<span data-ttu-id="2dc45-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="2dc45-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="9a9dc-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="9a9dc-106">Permission type</span></span>      | <span data-ttu-id="9a9dc-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="9a9dc-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2dc45-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="2dc45-106">Permission type</span></span>      | <span data-ttu-id="2dc45-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="2dc45-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9a9dc-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="9a9dc-108">Delegated (work or school account)</span></span> | <span data-ttu-id="9a9dc-109">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9a9dc-109">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="9a9dc-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="9a9dc-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9a9dc-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9a9dc-111">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="9a9dc-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="9a9dc-112">Application</span></span> | <span data-ttu-id="9a9dc-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9a9dc-113">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="2dc45-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="2dc45-108">Delegated (work or school account)</span></span> | <span data-ttu-id="2dc45-109">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2dc45-109">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="2dc45-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="2dc45-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2dc45-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2dc45-111">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="2dc45-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="2dc45-112">Application</span></span> | <span data-ttu-id="2dc45-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2dc45-113">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9a9dc-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="9a9dc-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2dc45-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="2dc45-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/events/{id}/snoozeReminder
-POST /groups/{id}/events/{id}/snoozeReminder
 
 POST /me/calendar/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendar/events/{id}/snoozeReminder
-POST /groups/{id}/calendar/events/{id}/snoozeReminder
 
 POST /me/calendars/{id}/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/snoozeReminder
@@ -31,27 +29,27 @@ POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/sn
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
 ```
-## <a name="request-headers"></a><span data-ttu-id="9a9dc-115">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="9a9dc-115">Request headers</span></span>
-| <span data-ttu-id="9a9dc-116">Name</span><span class="sxs-lookup"><span data-stu-id="9a9dc-116">Name</span></span>       | <span data-ttu-id="9a9dc-117">Typ</span><span class="sxs-lookup"><span data-stu-id="9a9dc-117">Type</span></span> | <span data-ttu-id="9a9dc-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="9a9dc-118">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2dc45-115">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="2dc45-115">Request headers</span></span>
+| <span data-ttu-id="2dc45-116">Name</span><span class="sxs-lookup"><span data-stu-id="2dc45-116">Name</span></span>       | <span data-ttu-id="2dc45-117">Typ</span><span class="sxs-lookup"><span data-stu-id="2dc45-117">Type</span></span> | <span data-ttu-id="2dc45-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2dc45-118">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="9a9dc-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="9a9dc-119">Authorization</span></span>  | <span data-ttu-id="9a9dc-120">string</span><span class="sxs-lookup"><span data-stu-id="9a9dc-120">string</span></span>  | <span data-ttu-id="9a9dc-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="9a9dc-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="9a9dc-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9a9dc-123">Content-Type</span></span> | <span data-ttu-id="9a9dc-124">string</span><span class="sxs-lookup"><span data-stu-id="9a9dc-124">string</span></span>  | <span data-ttu-id="9a9dc-p103">Die Art der Daten im Textkörper einer Entität. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="9a9dc-p103">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="2dc45-119">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="2dc45-119">Authorization</span></span>  | <span data-ttu-id="2dc45-120">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="2dc45-120">string</span></span>  | <span data-ttu-id="2dc45-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="2dc45-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2dc45-123">Inhaltstyp</span><span class="sxs-lookup"><span data-stu-id="2dc45-123">Content-Type</span></span> | <span data-ttu-id="2dc45-124">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="2dc45-124">string</span></span>  | <span data-ttu-id="2dc45-p103">Die Art der Daten im Textkörper einer Entität. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="2dc45-p103">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9a9dc-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="9a9dc-127">Request body</span></span>
-<span data-ttu-id="9a9dc-128">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="9a9dc-128">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2dc45-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="2dc45-127">Request body</span></span>
+<span data-ttu-id="2dc45-128">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="2dc45-128">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="9a9dc-129">Parameter</span><span class="sxs-lookup"><span data-stu-id="9a9dc-129">Parameter</span></span>    | <span data-ttu-id="9a9dc-130">Typ</span><span class="sxs-lookup"><span data-stu-id="9a9dc-130">Type</span></span>   |<span data-ttu-id="9a9dc-131">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="9a9dc-131">Description</span></span>|
+| <span data-ttu-id="2dc45-129">Parameter</span><span class="sxs-lookup"><span data-stu-id="2dc45-129">Parameter</span></span>    | <span data-ttu-id="2dc45-130">Typ</span><span class="sxs-lookup"><span data-stu-id="2dc45-130">Type</span></span>   |<span data-ttu-id="2dc45-131">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2dc45-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9a9dc-132">newReminderTime</span><span class="sxs-lookup"><span data-stu-id="9a9dc-132">newReminderTime</span></span>|<span data-ttu-id="9a9dc-133">DateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="9a9dc-133">DateTimeTimeZone</span></span>|<span data-ttu-id="9a9dc-134">Das neue Datum und die neue Uhrzeit für die Auslösung der Erinnerung.</span><span class="sxs-lookup"><span data-stu-id="9a9dc-134">The new date and time to trigger the reminder.</span></span>|
+|<span data-ttu-id="2dc45-132">newReminderTime</span><span class="sxs-lookup"><span data-stu-id="2dc45-132">newReminderTime</span></span>|<span data-ttu-id="2dc45-133">DateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="2dc45-133">DateTimeTimeZone</span></span>|<span data-ttu-id="2dc45-134">Das neue Datum und die neue Uhrzeit für die Auslösung der Erinnerung.</span><span class="sxs-lookup"><span data-stu-id="2dc45-134">The new date and time to trigger the reminder.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="9a9dc-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="9a9dc-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2dc45-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="2dc45-135">Response</span></span>
 
-<span data-ttu-id="9a9dc-p104">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200 OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="9a9dc-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="2dc45-p104">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200 OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2dc45-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9a9dc-138">Beispiel</span><span class="sxs-lookup"><span data-stu-id="9a9dc-138">Example</span></span>
-<span data-ttu-id="9a9dc-139">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="9a9dc-139">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="9a9dc-140">Anforderung</span><span class="sxs-lookup"><span data-stu-id="9a9dc-140">Request</span></span>
-<span data-ttu-id="9a9dc-141">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="9a9dc-141">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2dc45-138">Beispiel</span><span class="sxs-lookup"><span data-stu-id="2dc45-138">Example</span></span>
+<span data-ttu-id="2dc45-139">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="2dc45-139">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="2dc45-140">Anforderung</span><span class="sxs-lookup"><span data-stu-id="2dc45-140">Request</span></span>
+<span data-ttu-id="2dc45-141">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="2dc45-141">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "event_snoozereminder"
@@ -69,8 +67,8 @@ Content-length: 97
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="9a9dc-142">Antwort</span><span class="sxs-lookup"><span data-stu-id="9a9dc-142">Response</span></span>
-<span data-ttu-id="9a9dc-143">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="9a9dc-143">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="2dc45-142">Antwort</span><span class="sxs-lookup"><span data-stu-id="2dc45-142">Response</span></span>
+<span data-ttu-id="2dc45-143">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="2dc45-143">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
