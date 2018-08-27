@@ -1,0 +1,15 @@
+# <a name="edgecookiepolicy-enum-type"></a><span data-ttu-id="a7efc-101">EdgeCookiePolicy Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="a7efc-101">edgeCookiePolicy enum type</span></span>
+
+> <span data-ttu-id="a7efc-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="a7efc-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="a7efc-103">Mögliche Werte, die angeben, welche Cookies in Microsoft Edge zulässig sind.</span><span class="sxs-lookup"><span data-stu-id="a7efc-103">Possible values to specify which cookies are allowed in Microsoft Edge.</span></span>
+## <a name="members"></a><span data-ttu-id="a7efc-104">Elemente</span><span class="sxs-lookup"><span data-stu-id="a7efc-104">Members</span></span>
+|<span data-ttu-id="a7efc-105">Element</span><span class="sxs-lookup"><span data-stu-id="a7efc-105">Member</span></span>|<span data-ttu-id="a7efc-106">Wert</span><span class="sxs-lookup"><span data-stu-id="a7efc-106">Value</span></span>|<span data-ttu-id="a7efc-107">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a7efc-107">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="a7efc-108">userDefined</span><span class="sxs-lookup"><span data-stu-id="a7efc-108">User-defined</span></span>|<span data-ttu-id="a7efc-109">0</span><span class="sxs-lookup"><span data-stu-id="a7efc-109">0%</span></span>|<span data-ttu-id="a7efc-110">Dem Benutzer ermöglichen, Folgendes festzulegen.</span><span class="sxs-lookup"><span data-stu-id="a7efc-110">Allow the user to set.</span></span>|
+|<span data-ttu-id="a7efc-111">Zulassen</span><span class="sxs-lookup"><span data-stu-id="a7efc-111">Allow</span></span>|<span data-ttu-id="a7efc-112">1</span><span class="sxs-lookup"><span data-stu-id="a7efc-112">$1</span></span>|<span data-ttu-id="a7efc-113">Zulassen.</span><span class="sxs-lookup"><span data-stu-id="a7efc-113">Allow</span></span>|
+|<span data-ttu-id="a7efc-114">blockThirdParty</span><span class="sxs-lookup"><span data-stu-id="a7efc-114">blockThirdParty</span></span>|<span data-ttu-id="a7efc-115">2</span><span class="sxs-lookup"><span data-stu-id="a7efc-115">-2</span></span>|<span data-ttu-id="a7efc-116">Nur Drittanbieter-Cookies blockieren.</span><span class="sxs-lookup"><span data-stu-id="a7efc-116">Block only third party cookies.</span></span>|
+|<span data-ttu-id="a7efc-117">blockAll</span><span class="sxs-lookup"><span data-stu-id="a7efc-117">blockAll</span></span>|<span data-ttu-id="a7efc-118">3</span><span class="sxs-lookup"><span data-stu-id="a7efc-118">-3</span></span>|<span data-ttu-id="a7efc-119">Alle Cookies blockieren.</span><span class="sxs-lookup"><span data-stu-id="a7efc-119">Block all cookies.</span></span>|
+
+
+
