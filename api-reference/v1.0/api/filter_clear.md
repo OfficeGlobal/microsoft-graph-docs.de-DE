@@ -1,38 +1,38 @@
-# <a name="filter-clear"></a><span data-ttu-id="43094-101">Filter deaktivieren</span><span class="sxs-lookup"><span data-stu-id="43094-101">Filter: clear</span></span>
+# <a name="filter-clear"></a><span data-ttu-id="fdc94-101">Filter deaktivieren</span><span class="sxs-lookup"><span data-stu-id="fdc94-101">Filter: clear</span></span>
 
-<span data-ttu-id="43094-102">Deaktiviert den Filter für die angegebene Spalte.</span><span class="sxs-lookup"><span data-stu-id="43094-102">Clear the filter on the given column.</span></span>
-## <a name="permissions"></a><span data-ttu-id="43094-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="43094-103">Permissions</span></span>
-<span data-ttu-id="43094-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="43094-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="fdc94-102">Deaktiviert den Filter für die angegebene Spalte.</span><span class="sxs-lookup"><span data-stu-id="fdc94-102">Clear the filter on the given column.</span></span>
+## <a name="permissions"></a><span data-ttu-id="fdc94-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="fdc94-103">Permissions</span></span>
+<span data-ttu-id="fdc94-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="fdc94-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="43094-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="43094-106">Permission type</span></span>      | <span data-ttu-id="43094-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="43094-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fdc94-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="fdc94-106">Permission type</span></span>      | <span data-ttu-id="fdc94-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="fdc94-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="43094-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="43094-108">Delegated (work or school account)</span></span> | <span data-ttu-id="43094-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="43094-109">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="43094-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="43094-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="43094-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="43094-111">Not supported.</span></span>    |
-|<span data-ttu-id="43094-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="43094-112">Application</span></span> | <span data-ttu-id="43094-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="43094-113">Not supported.</span></span> |
+|<span data-ttu-id="fdc94-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="fdc94-108">Delegated (work or school account)</span></span> | <span data-ttu-id="fdc94-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fdc94-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="fdc94-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="fdc94-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fdc94-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="fdc94-111">Not supported.</span></span>    |
+|<span data-ttu-id="fdc94-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="fdc94-112">Application</span></span> | <span data-ttu-id="fdc94-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="fdc94-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="43094-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="43094-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fdc94-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="fdc94-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/columns/{id|name}/filter/clear
 POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/clear
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="43094-115">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="43094-115">Request headers</span></span>
-| <span data-ttu-id="43094-116">Name</span><span class="sxs-lookup"><span data-stu-id="43094-116">Name</span></span>       | <span data-ttu-id="43094-117">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="43094-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fdc94-115">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="fdc94-115">Request headers</span></span>
+| <span data-ttu-id="fdc94-116">Name</span><span class="sxs-lookup"><span data-stu-id="fdc94-116">Name</span></span>       | <span data-ttu-id="fdc94-117">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="fdc94-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="43094-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="43094-118">Authorization</span></span>  | <span data-ttu-id="43094-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="43094-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fdc94-118">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="fdc94-118">Authorization</span></span>  | <span data-ttu-id="fdc94-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="fdc94-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="43094-121">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="43094-121">Request body</span></span>
-<span data-ttu-id="43094-122">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="43094-122">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fdc94-121">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="fdc94-121">Request body</span></span>
+<span data-ttu-id="fdc94-122">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="fdc94-122">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="43094-123">Antwort</span><span class="sxs-lookup"><span data-stu-id="43094-123">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fdc94-123">Antwort</span><span class="sxs-lookup"><span data-stu-id="fdc94-123">Response</span></span>
 
-<span data-ttu-id="43094-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200 OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="43094-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="fdc94-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200 OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="fdc94-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="43094-126">Beispiel</span><span class="sxs-lookup"><span data-stu-id="43094-126">Example</span></span>
-<span data-ttu-id="43094-127">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="43094-127">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="43094-128">Anforderung</span><span class="sxs-lookup"><span data-stu-id="43094-128">Request</span></span>
-<span data-ttu-id="43094-129">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="43094-129">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="fdc94-126">Beispiel</span><span class="sxs-lookup"><span data-stu-id="fdc94-126">Example</span></span>
+<span data-ttu-id="fdc94-127">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="fdc94-127">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="fdc94-128">Anforderung</span><span class="sxs-lookup"><span data-stu-id="fdc94-128">Request</span></span>
+<span data-ttu-id="fdc94-129">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="fdc94-129">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "filter_clear"
@@ -41,12 +41,11 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/cl
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/filter/clear
 ```
 
-##### <a name="response"></a><span data-ttu-id="43094-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="43094-130">Response</span></span>
-<span data-ttu-id="43094-131">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="43094-131">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="fdc94-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="fdc94-130">Response</span></span>
+<span data-ttu-id="fdc94-131">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="fdc94-131">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

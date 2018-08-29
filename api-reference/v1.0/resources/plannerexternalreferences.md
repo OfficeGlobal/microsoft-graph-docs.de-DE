@@ -1,16 +1,19 @@
-<span data-ttu-id="9eb2c-p102">Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall muss der Client **gültige URLs** auf Basis der Protokolle **HTTP/HTTPS** als Eigenschaften angeben, und ihre Werte müssen die [externalReference](plannerexternalreference.md)-Objekte sein. Basierend auf OData dürfen Eigenschaftennamen in offenen Typen die folgenden Zeichen nicht enthalten: `.`, `:`, `%`; daher müssen sie codiert werden. Nachfolgend ein Beispiel. Um einen Verweis zu entfernen, legen Sie den Wert der Eigenschaft auf `null` fest.</span><span class="sxs-lookup"><span data-stu-id="9eb2c-p102">Properties of an Open Type can be defined by the client. In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects. Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`  so they need to be encoded. Example is shown below. To remove a reference, set the value of the property to `null`.</span></span>
-Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall muss der Client **gültige URLs** auf Basis der Protokolle **HTTP/HTTPS** als Eigenschaften angeben, und ihre Werte müssen die [externalReference](plannerexternalreference.md)-Objekte sein. Basierend auf OData dürfen Eigenschaftennamen in offenen Typen die folgenden Zeichen nicht enthalten: `.`, `:`, `%`; daher müssen sie codiert werden. Nachfolgend ein Beispiel. Um einen Verweis zu entfernen, legen Sie den Wert der Eigenschaft auf `null` fest.
+# <a name="plannerexternalreferences-resource-type"></a><span data-ttu-id="2e428-101">plannerExternalReferences-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="2e428-101">plannerExternalReferences resource type</span></span>
 
-## <span data-ttu-id="9eb2c-112">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="9eb2c-112">JSON representation</span></span>
-<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="2e428-p101">Die **plannerExternalReferences**-Ressource stellt die Sammlung der Verweise für eine Aufgabe dar. Es handelt sich um einen offenen Typ. Sie ist Bestandteil des [taskDetails](plannertaskdetails.md)-Objekts. Der Wert im Eigenschaft-Wert-Paar ist das [externalReference](plannerexternalreference.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="2e428-p101">The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [externalReference](plannerexternalreference.md) object.</span></span>
 
-<span data-ttu-id="9eb2c-113">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="9eb2c-113">Here is a JSON representation of the resource</span></span>
+
+## <a name="properties"></a><span data-ttu-id="2e428-106">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="2e428-106">Properties</span></span>
+<span data-ttu-id="2e428-p102">Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall muss der Client **gültige URLs** auf Basis der Protokolle **HTTP/HTTPS** als Eigenschaften angeben, und ihre Werte müssen die [externalReference](plannerexternalreference.md)-Objekte sein. Basierend auf OData dürfen Eigenschaftennamen in offenen Typen die folgenden Zeichen nicht enthalten: `.`, `:`, `%`; daher müssen sie codiert werden. Nachfolgend ein Beispiel. Um einen Verweis zu entfernen, legen Sie den Wert der Eigenschaft auf `null` fest.</span><span class="sxs-lookup"><span data-stu-id="2e428-p102">Properties of an Open Type can be defined by the client. In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects. Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`  so they need to be encoded. Example is shown below. To remove a reference, set the value of the property to `null`.</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="2e428-112">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="2e428-112">JSON representation</span></span>
+
+<span data-ttu-id="2e428-113">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="2e428-113">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "String-value" ],
   "@odata.type": "microsoft.graph.plannerExternalReferences"
 }-->
 
@@ -28,7 +31,7 @@ Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fal
 }
 ```
 
-<span data-ttu-id="9eb2c-114">// Beispiel</span><span class="sxs-lookup"><span data-stu-id="9eb2c-114">// Example</span></span>
+<span data-ttu-id="2e428-114">// Beispiel</span><span class="sxs-lookup"><span data-stu-id="2e428-114">// Example</span></span>
 
 ```json
 {
