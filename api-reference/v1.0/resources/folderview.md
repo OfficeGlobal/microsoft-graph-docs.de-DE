@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: FolderView
-ms.openlocfilehash: 65fc0a6aa702e6cd08f18dc16957bb7a41589f40
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: e73846a18f8576af8fe3cf5949e8ca5c63891837
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265155"
 ---
 # <a name="folderview-resource-type"></a>FolderView-Ressourcentyp
 
@@ -22,7 +23,7 @@ Es ist verfügbar über die Eigenschaft [folder][folder-facet] von Ressourcen de
 ```json
 {
   "sortBy": "default | name | type | size | takenOrCreatedDateTime | lastModifiedDateTime | sequence",
-  "sortDescending": "ascending | descending",
+  "sortOrder": "ascending | descending",
   "viewType": "default | icons | details | thumbnails"
 }
 ```
@@ -31,13 +32,13 @@ Es ist verfügbar über die Eigenschaft [folder][folder-facet] von Ressourcen de
 
 | Eigenschaftenname         | Typ   | Beschreibung
 |:----------------------|:-------|:--------------------------------------------
-| **sortBy**            | string | Diese Eigenschaft legt die Methode fest, auf deren Basis der Ordner sortiert werden soll.
-| **sortOrder**         | string | Ist diese Eigenschaft auf „true“ gesetzt, sollen alle Elemente in absteigender Reihenfolge sortiert werden. Andernfalls sollen die Elemente in aufsteigender Reihenfolge sortiert werden.
-| **viewType**          | string | Diese Eigenschaft legt die Ansicht fest, die zur Darstellung des Ordners verwendet werden soll.
+| **sortBy**            | Zeichenfolge | Diese Eigenschaft legt die Methode fest, auf deren Basis der Ordner sortiert werden soll.
+| **sortOrder**         | Zeichenfolge | Ist diese Eigenschaft auf „true“ gesetzt, sollen alle Elemente in absteigender Reihenfolge sortiert werden. Andernfalls sollen die Elemente in aufsteigender Reihenfolge sortiert werden.
+| **viewType**          | Zeichenfolge | Diese Eigenschaft legt die Ansicht fest, die zur Darstellung des Ordners verwendet werden soll.
 
 Über die Eigenschaft _sortBy_ können Sie die Sortierreihenfolge von Elementen in allen Anwendungen steuern, die das Facet **viewType** berücksichtigen.
 
-### <a name="sortby-values"></a>Werte für „sortBy“
+### <a name="sortby-options"></a>sortBy-Optionen
 
 Für die Eigenschaft **sortBy** sind die folgenden Werte definiert:
 
@@ -52,7 +53,7 @@ Für die Eigenschaft **sortBy** sind die folgenden Werte definiert:
 | `sequence`               | Die Elemente folgen einer vom Benutzer angegebenen benutzerdefinierten Sequenz.
 
 
-### <a name="sortorder-values"></a>Werte für „sortOrder“
+### <a name="sortorder-options"></a>sortOrder-Optionen
 
 Für die Eigenschaft **sortOrder** sind die folgenden Werte definiert:
 
@@ -62,7 +63,7 @@ Für die Eigenschaft **sortOrder** sind die folgenden Werte definiert:
 | `descending` | Elemente sollen in absteigender Reihenfolge sortiert werden.
 
 
-### <a name="viewtype-values"></a>Werte für „viewType“
+### <a name="viewtype-options"></a>viewType-Optionen
 
 Für die Eigenschaft **viewType** sind die folgenden Werte definiert:
 
@@ -82,5 +83,13 @@ Für die Eigenschaft **viewType** sind die folgenden Werte definiert:
   "description": "The FolderView facet provides or sets recommendations on the user-experience of a folder.",
   "keywords": "view, folderview, sortby, sortorder, viewtype, coversourceid, folder",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/folderview.md:
+      Found potential enums in resource example that weren't defined in a table:(default,icons,details,thumbnails) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/folderview.md:
+      Found potential enums in resource example that weren't defined in a table:(default,name,type,size,takenOrCreatedDateTime,lastModifiedDateTime,sequence) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/folderview.md:
+      Found potential enums in resource example that weren't defined in a table:(ascending,descending) are in resource, but () are in table"
+  ],
   "tocPath": "Facets/FolderView"
 } -->

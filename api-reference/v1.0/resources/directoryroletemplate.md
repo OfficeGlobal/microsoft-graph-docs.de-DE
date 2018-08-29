@@ -8,14 +8,14 @@ Stellt eine Verzeichnisrollenvorlage dar. Eine Verzeichnisrollenvorlage gibt die
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
 |[directoryRoleTemplate abrufen](../api/directoryroletemplate_get.md) | [directoryRoleTemplate](directoryroletemplate.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des directoryRoleTemplate-Objekts.|
-|[directoryRoleTemplate auflisten](../api/directoryroletemplate_list.md) | [directoryRoleTemplate-Sammlung](directoryroletemplate.md) |Dient zum Abrufen einer Liste von directoryRoleTemplate-Objekten.|
+|[directoryRoleTemplate auflisten](../api/directoryroletemplate_list.md) | |||UNTRANSLATED_CONTENT_START|||[directoryRoleTemplate](directoryroletemplate.md) collection|||UNTRANSLATED_CONTENT_END||| |Dient zum Abrufen einer Liste von directoryRoleTemplate-Objekten.|
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|description|String|Die festzulegende Beschreibung für die Verzeichnisrolle. Schreibgeschützt.|
-|displayName|String|Der festzulegende Name für die Verzeichnisrolle. Schreibgeschützt. |
-|id|String|Der eindeutige Bezeichner für die Vorlage. Geerbt von [directoryObject](directoryobject.md). Sie geben die **id** der Verzeichnisrollenvorlage die Eigenschaft **RoleTemplateId** in der POST-Anforderung zum Aktivieren einer [DirectoryRole](directoryrole.md) in einen Mandanten an. Schlüssel, lässt keine Nullwerte zu. Schreibgeschützt.|
+|Beschreibung|Zeichenfolge|Die festzulegende Beschreibung für die Verzeichnisrolle. Schreibgeschützt.|
+|displayName|Zeichenfolge|Der festzulegende Name für die Verzeichnisrolle. Schreibgeschützt. |
+|id|Zeichenfolge|Der eindeutige Bezeichner für die Vorlage. Geerbt von [directoryObject](directoryobject.md). Sie geben die **id** der Verzeichnisrollenvorlage die Eigenschaft **RoleTemplateId** in der POST-Anforderung zum Aktivieren einer [DirectoryRole](directoryrole.md) in einen Mandanten an. Schlüssel, lässt keine Nullwerte zu. Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -26,13 +26,20 @@ Keine
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryRoleTemplate"
+  "baseType": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.directoryRoleTemplate",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "toppable": false
+      }
+    }
+  ]
 }-->
 
 ```json

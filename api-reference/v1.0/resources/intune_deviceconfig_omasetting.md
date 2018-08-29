@@ -14,12 +14,11 @@ Definition der OMA-Einstellungen.
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "abstract": true,
   "@odata.type": "microsoft.graph.omaSetting"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSetting",

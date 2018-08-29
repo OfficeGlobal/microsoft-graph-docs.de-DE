@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Annehmen|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) an.
@@ -34,16 +34,16 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|azureStorageUri|String|Der Azure Storage-URI.|
-|isCommitted|Boolean|Ein Wert, der angibt, ob für die Datei ein Commit ausgeführt wurde.|
-|id|String|Die Datei-ID|
-|createdDateTime|DateTimeOffset|Der Zeitpunkt der Erstellung der Datei|
-|name|String|Der Dateiname|
-|size|Int64|Die Größe der Datei vor der Verschlüsselung.|
-|sizeEncrypted|Int64|Die Größe der Datei nach der Verschlüsselung.|
-|azureStorageUriExpirationDateTime|DateTimeOffset|Die Zeit, zu der der Azure Storage-URI abläuft.|
-|manifest|Binär|Die Manifestinformationen|
-|uploadState|String|Der Status der aktuellen Uploadanforderung. Mögliche Werte sind: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed` und `commitFileTimedOut`.|
+|azureStorageUri|Zeichenfolge|Azure Storage-URI|
+|isCommitted|Boolesch|Wert, der angibt, ob für die Datei ein Commit ausgeführt wurde|
+|id|Zeichenfolge|ID der Datei|
+|createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der Datei|
+|name|Zeichenfolge|Name der Datei|
+|size|Int64|Größe der Datei vor der Verschlüsselung|
+|sizeEncrypted|Int64|Größe der Datei nach der Verschlüsselung|
+|azureStorageUriExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs des Azure Storage-URI|
+|manifest|Binär|Manifestinformationen|
+|uploadState|[mobileAppContentFileUploadState](../resources/intune_apps_mobileappcontentfileuploadstate.md)|Status der aktuellen Uploadanforderung. Mögliche Werte: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
 
 
 

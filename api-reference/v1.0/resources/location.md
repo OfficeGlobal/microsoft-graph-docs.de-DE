@@ -8,7 +8,7 @@ Je nachdem, wie ein Ereignis erstellt wurde, wird die schreibgeschützte **locat
 
 | Wie ein Ereignis erstellt wurde  | Eigenschaft   | Erwarteter Wert |
 |:----------|:-------|:--------------------------------|
-| REST-API [Ereignis erstellen](../api/user_post_events.md)  | **locationType** | `default` |
+| REST-API [Ereignis erstellen](../api/user_post_events.md) | **locationType** | `default` |
 | Benutzeroberfläche in Outlook | **locationType** | Eine der folgenden Varianten: <ul><li>`default` für einen Ort, der als Nur-Text eingegeben wird.</li><li>`conferenceRoom` für einen Raum, der von der Outlook-Raumliste bereitgestellt wird.</li><li>Oder eine der folgenden Listen – `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress` – für einen Ort aus der Bing-Vorschlagssuche oder der lokalen Bing-Suche.</li></ul> |
 
 ## <a name="properties"></a>Eigenschaften
@@ -16,12 +16,12 @@ Je nachdem, wie ein Ereignis erstellt wurde, wird die schreibgeschützte **locat
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |Die Adresse des Orts. |
 | Koordinaten | [outlookGeoCoordinates](outlookgeocoordinates.md) | Die geografischen Koordinaten und die Erhebung des Orts. |
-| displayName  | String | Der Name, der mit dem Ort verknüpft ist                       |
-| locationEmailAddress | String | Optionale E-Mail-Adresse des Orts.              |
-| locationUri | String | Optionaler URI, der den Ort darstellt. |
-| locationType | String | Der Typ des Orts. Mögliche Werte sind: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Schreibgeschützt.|
-| uniqueId | String | Nur für internen Gebrauch.|
-| uniqueIdType | String | Nur für internen Gebrauch. |
+| displayName  | Zeichenfolge | Der Name, der mit dem Ort verknüpft ist                       |
+| locationEmailAddress | Zeichenfolge | Optionale E-Mail-Adresse des Orts.              |
+| locationUri | Zeichenfolge | Optionaler URI, der den Ort darstellt. |
+| locationType | locationType | Der Typ des Orts. Mögliche Werte: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Schreibgeschützt.|
+| uniqueId | Zeichenfolge | Nur für internen Gebrauch.|
+| uniqueIdType | locationUniqueIdType | Nur für internen Gebrauch. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

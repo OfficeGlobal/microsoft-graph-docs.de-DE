@@ -3,11 +3,12 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentType
-ms.openlocfilehash: ee869e5f2925af92fea9eef04fd26ec483baad5b
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: cb16559aa9da3a885be1977bbd1466265d0a72f0
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268333"
 ---
 # <a name="contenttype-resource-type"></a>ContentType-Ressourcentyp
 
@@ -20,7 +21,10 @@ Mit Inhaltstypen können Sie eine Reihe von Spalten definieren, die auf jedem [ 
 ## <a name="json-representation"></a>JSON-Darstellung
 
 Es folgt eine JSON-Darstellung einer **contentType**-Ressource.
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType" } -->
+<!-- {
+  "blockType": "resource",
+ "baseType": "microsoft.graph.entity",
+ "@odata.type": "microsoft.graph.contentType" } -->
 
 ```json
 {
@@ -46,17 +50,17 @@ Es folgt eine JSON-Darstellung einer **contentType**-Ressource.
 | **description**   | string               | Der beschreibende Text für das Element.
 | **group**         | string               | Der Name der Gruppe, der dieser Inhaltstyp angehört. Dadurch können dazugehörige Inhaltstypen einfacher organisiert werden.
 | **hidden**        | boolean              | Gibt an, ob der Inhaltstyp im Menü 'Neu' der Liste ausgeblendet ist.
-| **id**            | string               | Der eindeutige Bezeichner des Inhaltstyps.
+| **ID**            | string               | Der eindeutige Bezeichner des Inhaltstyps.
 | **inheritedFrom** | [itemReference][]    | Wenn dieses Inhaltstyps aus einem anderen Bereich (z. B. eine Website) übernommen wurde, wird ein Verweis auf das Element angezeigt, in dem der Inhaltstyp definiert ist.
 | **name**          | string               | Der Name des Inhaltstyps.
 | **order**         | [contentTypeOrder][] | Gibt die Reihenfolge, in welcher der Inhaltstyp in der Auswahl-Benutzeroberfläche angezeigt wird.
 | **parentId**      | string               | Der eindeutige Bezeichner des Inhaltstyps.
-| **readOnly**      | boolean              | `true` gibt an, dass der Inhaltstyp erst geändert werden kann, nachdem der Wert auf `false` festgelegt wurde.
-| **sealed**        | boolean              | `true` gibt an, dass der Inhaltstyp nicht von Benutzern oder über Push-Down-Vorgänge geändert werden kann. Nur Websitesammlungsadministratoren können Inhaltstypen versiegeln oder entsiegeln.
+| **readOnly**      | boolean              | gibt an, dass der Inhaltstyp erst geändert werden kann, nachdem der Wert auf `false` festgelegt wurde.`true`
+| **sealed**        | boolean              | gibt an, dass der Inhaltstyp nicht von Benutzern oder über Push-Down-Vorgänge geändert werden kann.`true` Nur Websitesammlungsadministratoren können Inhaltstypen versiegeln oder entsiegeln.
 
 ## <a name="relationships"></a>Beziehungen
 
-| Eigenschaftsname   | Typ                      | Beschreibung
+| Eigenschaftenname   | Typ                      | Beschreibung
 |:----------------|:--------------------------|:-------------------------------
 | **columnLinks** | [columnLink][]-Sammlung | Die Sammlung von Spalten, die für diesen Inhaltstyp erforderlich sind.
 

@@ -24,8 +24,8 @@ GET /reports/deviceConfigurationUserActivity
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -50,7 +50,7 @@ Content-Length: 123
 {
   "value": {
     "@odata.type": "microsoft.graph.report",
-    "content": "<Unknown Primitive Type Edm.Stream>"
+    "content": {"@odata.type": "Edm.Stream"}
   }
 }
 ```

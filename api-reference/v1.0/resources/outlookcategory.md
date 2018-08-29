@@ -12,29 +12,28 @@ Jede Kategorie weist zwei Eigenschaften auf: **displayName** und **color**. Der 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |displayName|Zeichenfolge|Ein eindeutiger Name, der eine Kategorie im Postfach des Benutzers identifiziert. Nach der Erstellung einer Kategorie kann der Namen nicht geändert werden. Schreibgeschützt.|
-|color|Zeichenfolge|Eine voreingestellte Konstante, die eine Kategorie charakterisiert und einer von 25 vordefinierten Farben zugeordnet ist. Siehe folgenden Hinweis. |
+|Farbe|CategoryColor|Eine voreingestellte Konstante, die eine Kategorie charakterisiert und einer von 25 vordefinierten Farben zugeordnet ist. Siehe folgenden Hinweis. |
 
 > **Hinweis** Die möglichen Werte für **color** sind vordefinierte Konstanten wie `None`, `preset0` und `preset1`. Jede voreingestellte Konstante ist weiter einer Farbe zugeordnet. Die tatsächliche Farbe ist von dem Outlook-Client abhängig, auf dem die Kategorien angezeigt werden. In der folgenden Tabelle sind die Farben dargestellt, die den einzelnen vordefinierten Konstanten für Outlook (Desktopclient) zugeordnet sind. 
-
 
 | Voreingestellte Konstante  | In Outlook zugeordnete Farbe |
 |:---------------|:--------|
 | Keine | Keine Farbe zugeordnet |
-| Preset0 | Red |
+| Preset0 | Rot |
 | Preset1 | Orange |
-| Preset2 | Brown |
-| Preset3 | Yellow |
-| Preset4 | Green |
-| Preset5 | Teal |
-| Preset6 | Olive |
+| Preset2 | Braun |
+| Preset3 | Gelb |
+| Preset4 | Grün |
+| Preset5 | Blaugrün |
+| Preset6 | Olivgrün |
 | Preset7 | Blau |
-| Preset8 | Purple |
-| Preset9 | Cranberry |
-| Preset10 | Steel |
+| Preset8 | Lila |
+| Preset9 | Preiselbeere |
+| Preset10 | Stahlgrau |
 | Preset11 | DarkSteel |
-| Preset12 | Gray |
+| Preset12 | Grau |
 | Preset13 | DarkGray |
-| Preset14 | Black |
+| Preset14 | Schwarz |
 | Preset15 | DarkRed |
 | Preset16 | DarkOrange |
 | Preset17 | DarkBrown |
@@ -54,6 +53,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.outlookCategory"
 }-->
 
@@ -82,6 +82,10 @@ Es folgt eine JSON-Darstellung der Ressource.
   "description": "outlookCategory resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+      "Warning: /api-reference/v1.0/resources/outlookcategory.md:
+      Failed to parse any rows out of table with headers: |Pre-set constant|Color mapped to in Outlook|"
+  ],
   "tocPath": ""
 }-->
  
