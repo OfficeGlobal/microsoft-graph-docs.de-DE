@@ -1,16 +1,19 @@
-<span data-ttu-id="4dcf4-p102">Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall sollte der Client **GUIDs** als Eigenschaften bereitstellen, und ihre Werte müssen [checklistItem](plannerchecklistitem.md)-Objekte sein. Nachfolgend ein Beispiel. Um ein Element in der Checkliste zu entfernen, legen Sie den Wert der Eigenschaft auf `null` fest.</span><span class="sxs-lookup"><span data-stu-id="4dcf4-p102">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
-Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall sollte der Client **GUIDs** als Eigenschaften bereitstellen, und ihre Werte müssen [checklistItem](plannerchecklistitem.md)-Objekte sein. Nachfolgend ein Beispiel. Um ein Element in der Checkliste zu entfernen, legen Sie den Wert der Eigenschaft auf `null` fest.
+# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="170ff-101">plannerChecklistItems-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="170ff-101">plannerChecklistItems resource type</span></span>
 
-## <span data-ttu-id="4dcf4-111">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="4dcf4-111">JSON representation</span></span>
-<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="170ff-p101">Die **plannerChecklistItemCollection**-Ressource stellt die Sammlung der Checklistenelemente für einen Vorgang dar. Es handelt sich um einen offenen Typ. Sie ist Bestandteil des [taskDetails](plannertaskdetails.md)-Objekts. Der Wert im Eigenschaft-Wert-Paar ist das [checklistItem](plannerchecklistitem.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="170ff-p101">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
 
-<span data-ttu-id="4dcf4-112">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="4dcf4-112">Here is a JSON representation of the resource</span></span>
+
+## <a name="properties"></a><span data-ttu-id="170ff-106">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="170ff-106">Properties</span></span>
+<span data-ttu-id="170ff-p102">Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall sollte der Client **GUIDs** als Eigenschaften bereitstellen, und ihre Werte müssen [checklistItem](plannerchecklistitem.md)-Objekte sein. Nachfolgend ein Beispiel. Um ein Element in der Checkliste zu entfernen, legen Sie den Wert der Eigenschaft auf `null` fest.</span><span class="sxs-lookup"><span data-stu-id="170ff-p102">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="170ff-111">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="170ff-111">JSON representation</span></span>
+
+<span data-ttu-id="170ff-112">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="170ff-112">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "String-value" ],
   "@odata.type": "microsoft.graph.plannerChecklistItems"
 }-->
 
@@ -26,7 +29,7 @@ Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fal
   }
 }
 ```
-<span data-ttu-id="4dcf4-113">// Beispiel</span><span class="sxs-lookup"><span data-stu-id="4dcf4-113">// Example</span></span>
+<span data-ttu-id="170ff-113">// Beispiel</span><span class="sxs-lookup"><span data-stu-id="170ff-113">// Example</span></span>
 
 ```json
 {

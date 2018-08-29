@@ -1,23 +1,23 @@
-# <a name="iosmobileappidentifier-resource-type"></a><span data-ttu-id="0c54d-101">iosMobileAppIdentifier-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="0c54d-101">iosMobileAppIdentifier resource type</span></span>
+# <a name="iosmobileappidentifier-resource-type"></a><span data-ttu-id="f3569-101">iosMobileAppIdentifier-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="f3569-101">iosMobileAppIdentifier resource type</span></span>
 
-> <span data-ttu-id="0c54d-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="0c54d-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f3569-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="f3569-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="0c54d-103">Der Bezeichner für eine iOS-App.</span><span class="sxs-lookup"><span data-stu-id="0c54d-103">The identifier for an iOS app.</span></span>
+<span data-ttu-id="f3569-103">Der Bezeichner für eine iOS-App.</span><span class="sxs-lookup"><span data-stu-id="f3569-103">The identifier for an iOS app.</span></span>
 
-<span data-ttu-id="0c54d-104">Erbt von [MobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)</span><span class="sxs-lookup"><span data-stu-id="0c54d-104">Inherits from [mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)</span></span>
+<span data-ttu-id="f3569-104">Erbt von [MobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)</span><span class="sxs-lookup"><span data-stu-id="f3569-104">Inherits from [mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0c54d-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="0c54d-105">Properties</span></span>
-|<span data-ttu-id="0c54d-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="0c54d-106">Property</span></span>|<span data-ttu-id="0c54d-107">Typ</span><span class="sxs-lookup"><span data-stu-id="0c54d-107">Type</span></span>|<span data-ttu-id="0c54d-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="0c54d-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f3569-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f3569-105">Properties</span></span>
+|<span data-ttu-id="f3569-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="f3569-106">Property</span></span>|<span data-ttu-id="f3569-107">Typ</span><span class="sxs-lookup"><span data-stu-id="f3569-107">Type</span></span>|<span data-ttu-id="f3569-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f3569-108">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0c54d-109">bundleId</span><span class="sxs-lookup"><span data-stu-id="0c54d-109">bundleId</span></span>|<span data-ttu-id="0c54d-110">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="0c54d-110">String</span></span>|<span data-ttu-id="0c54d-111">Der Bezeichner für eine App wie im App-Store definiert.</span><span class="sxs-lookup"><span data-stu-id="0c54d-111">The identifier for an app, as specified in the app store.</span></span>|
+|<span data-ttu-id="f3569-109">bundleId</span><span class="sxs-lookup"><span data-stu-id="f3569-109">bundleId</span></span>|<span data-ttu-id="f3569-110">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="f3569-110">String</span></span>|<span data-ttu-id="f3569-111">Der Bezeichner für eine App wie im App-Store definiert.</span><span class="sxs-lookup"><span data-stu-id="f3569-111">The identifier for an app, as specified in the app store.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="0c54d-112">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="0c54d-112">Relationships</span></span>
-<span data-ttu-id="0c54d-113">Keine</span><span class="sxs-lookup"><span data-stu-id="0c54d-113">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="0c54d-114">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="0c54d-114">JSON Representation</span></span>
-<span data-ttu-id="0c54d-115">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="0c54d-115">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="f3569-112">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="f3569-112">Relationships</span></span>
+<span data-ttu-id="f3569-113">Keine</span><span class="sxs-lookup"><span data-stu-id="f3569-113">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f3569-114">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="f3569-114">JSON Representation</span></span>
+<span data-ttu-id="f3569-115">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="f3569-115">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.mobileAppIdentifier",
   "@odata.type": "microsoft.graph.iosMobileAppIdentifier"
 }
 -->

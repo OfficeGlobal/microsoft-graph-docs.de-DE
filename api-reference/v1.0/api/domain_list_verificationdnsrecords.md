@@ -1,63 +1,63 @@
-# <a name="list-verificationdnsrecords"></a><span data-ttu-id="47e25-101">verificationDnsRecords auflisten</span><span class="sxs-lookup"><span data-stu-id="47e25-101">List verificationDnsRecords</span></span>
+# <a name="list-verificationdnsrecords"></a><span data-ttu-id="c81cc-101">verificationDnsRecords auflisten</span><span class="sxs-lookup"><span data-stu-id="c81cc-101">List verificationDnsRecords</span></span>
 
-<span data-ttu-id="47e25-102">Dient zum Abrufen einer Liste von [domainDnsRecord](../resources/domaindnsrecord.md)-Objekten.</span><span class="sxs-lookup"><span data-stu-id="47e25-102">Retrieve a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects.</span></span>
+<span data-ttu-id="c81cc-102">Dient zum Abrufen einer Liste von [domainDnsRecord](../resources/domaindnsrecord.md)-Objekten.</span><span class="sxs-lookup"><span data-stu-id="c81cc-102">Retrieve a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects.</span></span>
 
-<span data-ttu-id="47e25-p101">Sie können eine zugeordnete Domäne erst dann mit Ihrem Azure AD-Mandanten verwenden, nachdem der Besitz überprüft wurde. Um den Besitz der Domäne zu überprüfen, rufen Sie die Domänenüberprüfungseinträge ab, und fügen Sie die Details zur Zonendatei der Domäne hinzu. Dies kann über die Domänenregistrierungsstelle oder die Konfiguration des DNS-Servers erfolgen.</span><span class="sxs-lookup"><span data-stu-id="47e25-p101">You cannot use an associated domain with your Azure AD tenant until ownership is verified. To verify the ownership of the domain, retrieve the domain verification records and add the details to the zone file of the domain. This can be done through the domain registrar or DNS server configuration.</span></span>
+<span data-ttu-id="c81cc-p101">Sie können eine zugeordnete Domäne erst dann mit Ihrem Azure AD-Mandanten verwenden, nachdem der Besitz überprüft wurde. Um den Besitz der Domäne zu überprüfen, rufen Sie die Domänenüberprüfungseinträge ab, und fügen Sie die Details zur Zonendatei der Domäne hinzu. Dies kann über die Domänenregistrierungsstelle oder die Konfiguration des DNS-Servers erfolgen.</span><span class="sxs-lookup"><span data-stu-id="c81cc-p101">You cannot use an associated domain with your Azure AD tenant until ownership is verified. To verify the ownership of the domain, retrieve the domain verification records and add the details to the zone file of the domain. This can be done through the domain registrar or DNS server configuration.</span></span>
 
-<span data-ttu-id="47e25-p102">Stammdomänen erfordern eine Überprüfung. Beispielsweise muss „contoso.com“ überprüft werden. Wenn eine Stammdomäne überprüft wird, werden Unterdomänen der Stammdomäne automatisch überprüft. Beispielsweise wird „subdomain.contoso.com“ automatisch überprüft, wenn „contoso.com“ überprüft wurde.</span><span class="sxs-lookup"><span data-stu-id="47e25-p102">Root domains require verification. For example, contoso.com requires verification. If a root domain is verified, subdomains of the root domain are automatically verified. For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.</span></span>
+<span data-ttu-id="c81cc-p102">Stammdomänen erfordern eine Überprüfung. Beispielsweise muss „contoso.com“ überprüft werden. Wenn eine Stammdomäne überprüft wird, werden Unterdomänen der Stammdomäne automatisch überprüft. Beispielsweise wird „subdomain.contoso.com“ automatisch überprüft, wenn „contoso.com“ überprüft wurde.</span><span class="sxs-lookup"><span data-stu-id="c81cc-p102">Root domains require verification. For example, contoso.com requires verification. If a root domain is verified, subdomains of the root domain are automatically verified. For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="47e25-110">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="47e25-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c81cc-110">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="c81cc-110">Permissions</span></span>
 
-<span data-ttu-id="47e25-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="47e25-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="c81cc-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="c81cc-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
 
-|<span data-ttu-id="47e25-113">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="47e25-113">Permission type</span></span>      | <span data-ttu-id="47e25-114">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="47e25-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c81cc-113">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c81cc-113">Permission type</span></span>      | <span data-ttu-id="c81cc-114">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c81cc-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="47e25-115">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="47e25-115">Delegated (work or school account)</span></span> | <span data-ttu-id="47e25-116">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="47e25-116">Directory.Read.All</span></span>    |
-|<span data-ttu-id="47e25-117">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="47e25-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="47e25-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="47e25-118">Not supported.</span></span>    |
-|<span data-ttu-id="47e25-119">Anwendung</span><span class="sxs-lookup"><span data-stu-id="47e25-119">Application</span></span> | <span data-ttu-id="47e25-120">Directory.Read.All, Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="47e25-120">Directory.Read.All, Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="c81cc-115">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c81cc-115">Delegated (work or school account)</span></span> | <span data-ttu-id="c81cc-116">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="c81cc-116">Directory.Read.All</span></span>    |
+|<span data-ttu-id="c81cc-117">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c81cc-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c81cc-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c81cc-118">Not supported.</span></span>    |
+|<span data-ttu-id="c81cc-119">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c81cc-119">Application</span></span> | <span data-ttu-id="c81cc-120">Directory.Read.All, Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c81cc-120">Directory.Read.All, Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="47e25-121">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="47e25-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c81cc-121">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c81cc-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /domains/{id}/verificationDnsRecords
 ```
 
-> <span data-ttu-id="47e25-122">Geben Sie für {id} die Domäne mit ihrem vollqualifizierten Domänennamen an.</span><span class="sxs-lookup"><span data-stu-id="47e25-122">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="c81cc-122">Geben Sie für {id} die Domäne mit ihrem vollqualifizierten Domänennamen an.</span><span class="sxs-lookup"><span data-stu-id="c81cc-122">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="47e25-123">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="47e25-123">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c81cc-123">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="c81cc-123">Optional query parameters</span></span>
 
-<span data-ttu-id="47e25-124">Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.io/docs/overview/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="47e25-124">This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="c81cc-124">Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.io/docs/overview/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c81cc-124">This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="47e25-125">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="47e25-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c81cc-125">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="c81cc-125">Request headers</span></span>
 
-| <span data-ttu-id="47e25-126">Name</span><span class="sxs-lookup"><span data-stu-id="47e25-126">Name</span></span>      |<span data-ttu-id="47e25-127">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="47e25-127">Description</span></span>|
+| <span data-ttu-id="c81cc-126">Name</span><span class="sxs-lookup"><span data-stu-id="c81cc-126">Name</span></span>      |<span data-ttu-id="c81cc-127">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c81cc-127">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="47e25-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="47e25-128">Authorization</span></span>  | <span data-ttu-id="47e25-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="47e25-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="47e25-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="47e25-131">Content-Type</span></span>  | <span data-ttu-id="47e25-132">application/json</span><span class="sxs-lookup"><span data-stu-id="47e25-132">application/json</span></span> |
+| <span data-ttu-id="c81cc-128">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="c81cc-128">Authorization</span></span>  | <span data-ttu-id="c81cc-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c81cc-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c81cc-131">Inhaltstyp</span><span class="sxs-lookup"><span data-stu-id="c81cc-131">Content-Type</span></span>  | <span data-ttu-id="c81cc-132">application/json</span><span class="sxs-lookup"><span data-stu-id="c81cc-132">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="47e25-133">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="47e25-133">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c81cc-133">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c81cc-133">Request body</span></span>
 
-<span data-ttu-id="47e25-134">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="47e25-134">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="c81cc-134">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="c81cc-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="47e25-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="47e25-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c81cc-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="c81cc-135">Response</span></span>
 
-<span data-ttu-id="47e25-136">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [domainDnsRecord](../resources/domaindnsrecord.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="47e25-136">If successful, this method returns a `200 OK` response code and collection of [domainDnsRecord](../resources/domaindnsrecord.md) objects in the response body.</span></span>
+<span data-ttu-id="c81cc-136">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [domainDnsRecord](../resources/domaindnsrecord.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c81cc-136">If successful, this method returns a `200 OK` response code and collection of [domainDnsRecord](../resources/domaindnsrecord.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="47e25-137">Beispiel</span><span class="sxs-lookup"><span data-stu-id="47e25-137">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="47e25-138">Anforderung</span><span class="sxs-lookup"><span data-stu-id="47e25-138">Request</span></span>
+## <a name="example"></a><span data-ttu-id="c81cc-137">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c81cc-137">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c81cc-138">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c81cc-138">Request</span></span>
 
 <!-- {
   "blockType": "request",
   "name": "get_verificationdnsrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/domains/contoso.com/verificationDnsRecords
+GET https://graph.microsoft.com/v1.0/domains/{domain-name}/verificationDnsRecords
 ```
 
-##### <a name="response"></a><span data-ttu-id="47e25-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="47e25-139">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="c81cc-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="c81cc-139">Response</span></span>
 
-<span data-ttu-id="47e25-p105">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="47e25-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="c81cc-p105">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c81cc-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

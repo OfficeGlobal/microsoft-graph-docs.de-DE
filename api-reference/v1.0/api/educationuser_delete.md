@@ -1,46 +1,46 @@
-# <a name="delete-educationuser"></a><span data-ttu-id="c36d1-101">EducationUser löschen</span><span class="sxs-lookup"><span data-stu-id="c36d1-101">Delete educationUser</span></span>
+# <a name="delete-educationuser"></a><span data-ttu-id="6ff61-101">EducationUser löschen</span><span class="sxs-lookup"><span data-stu-id="6ff61-101">Delete educationUser</span></span>
 
-<span data-ttu-id="c36d1-102">Löscht einen Benutzer.</span><span class="sxs-lookup"><span data-stu-id="c36d1-102">Delete a user</span></span>
+<span data-ttu-id="6ff61-102">Löscht einen Benutzer.</span><span class="sxs-lookup"><span data-stu-id="6ff61-102">Delete a user.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="c36d1-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="c36d1-103">Permissions</span></span>
-<span data-ttu-id="c36d1-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="c36d1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6ff61-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="6ff61-103">Permissions</span></span>
+<span data-ttu-id="6ff61-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="6ff61-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="c36d1-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c36d1-106">Permission type</span></span>      | <span data-ttu-id="c36d1-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c36d1-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6ff61-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="6ff61-106">Permission type</span></span>      | <span data-ttu-id="6ff61-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="6ff61-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c36d1-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c36d1-108">Delegated (work or school account)</span></span> |  <span data-ttu-id="c36d1-109">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c36d1-109">Not supported.</span></span>  |
-|<span data-ttu-id="c36d1-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c36d1-110">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="c36d1-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c36d1-111">Not supported.</span></span>  |
-|<span data-ttu-id="c36d1-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c36d1-112">Application</span></span> | <span data-ttu-id="c36d1-113">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c36d1-113">EduRoster.ReadWrite.All</span></span> |
+|<span data-ttu-id="6ff61-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="6ff61-108">Delegated (work or school account)</span></span> |  <span data-ttu-id="6ff61-109">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="6ff61-109">Not supported.</span></span>  |
+|<span data-ttu-id="6ff61-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="6ff61-110">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="6ff61-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="6ff61-111">Not supported.</span></span>  |
+|<span data-ttu-id="6ff61-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="6ff61-112">Application</span></span> | <span data-ttu-id="6ff61-113">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6ff61-113">EduRoster.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c36d1-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c36d1-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6ff61-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="6ff61-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /education/users/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="c36d1-115">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="c36d1-115">Request headers</span></span>
-| <span data-ttu-id="c36d1-116">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="c36d1-116">Header</span></span>       | <span data-ttu-id="c36d1-117">Wert</span><span class="sxs-lookup"><span data-stu-id="c36d1-117">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="6ff61-115">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="6ff61-115">Request headers</span></span>
+| <span data-ttu-id="6ff61-116">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="6ff61-116">Header</span></span>       | <span data-ttu-id="6ff61-117">Wert</span><span class="sxs-lookup"><span data-stu-id="6ff61-117">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="c36d1-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="c36d1-118">Authorization</span></span>  | <span data-ttu-id="c36d1-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c36d1-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="6ff61-118">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="6ff61-118">Authorization</span></span>  | <span data-ttu-id="6ff61-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="6ff61-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="c36d1-121">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c36d1-121">Request body</span></span>
-<span data-ttu-id="c36d1-122">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="c36d1-122">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6ff61-121">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="6ff61-121">Request body</span></span>
+<span data-ttu-id="6ff61-122">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="6ff61-122">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="c36d1-123">Antwort</span><span class="sxs-lookup"><span data-stu-id="c36d1-123">Response</span></span>
-<span data-ttu-id="c36d1-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c36d1-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="6ff61-123">Antwort</span><span class="sxs-lookup"><span data-stu-id="6ff61-123">Response</span></span>
+<span data-ttu-id="6ff61-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="6ff61-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c36d1-126">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c36d1-126">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c36d1-127">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c36d1-127">Request</span></span>
-<span data-ttu-id="c36d1-128">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="c36d1-128">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6ff61-126">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6ff61-126">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6ff61-127">Anforderung</span><span class="sxs-lookup"><span data-stu-id="6ff61-127">Request</span></span>
+<span data-ttu-id="6ff61-128">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="6ff61-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_educationuser"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/users/13019
+DELETE https://graph.microsoft.com/v1.0/education/users/{user-id}
 ```
-##### <a name="response"></a><span data-ttu-id="c36d1-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="c36d1-129">Response</span></span>
-<span data-ttu-id="c36d1-130">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c36d1-130">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="6ff61-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="6ff61-129">Response</span></span>
+<span data-ttu-id="6ff61-130">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="6ff61-130">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
