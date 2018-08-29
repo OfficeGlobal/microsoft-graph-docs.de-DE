@@ -14,7 +14,7 @@ Programmgesteuert können Sie über die **messageRules**-Navigationseigenschaft 
 | Aktionen | [messageRuleActions](messageruleactions.md) | Aktionen, die auf eine Nachricht angewendet werden, wenn die entsprechenden Bedingungen erfüllt sind. |
 | Bedingungen | [messageRulePredicates](messagerulepredicates.md) | Bedingungen, die bei Erfüllung die entsprechenden Aktionen für diese Regel auslösen. |
 | displayName | Zeichenfolge | Der Anzeigename der Regel. |
-| exceptions | [messageRulePredicates](messagerulepredicates.md) | Ausnahmebedingungen für die Regel. |
+| Ausnahmen | [messageRulePredicates](messagerulepredicates.md) | Ausnahmebedingungen für die Regel. |
 | hasError | Boolescher Wert | Gibt an, ob sich die Regel in einem Fehlerzustand befindet. Schreibgeschützt. |
 | id |Zeichenfolge|Der eindeutige Bezeichner der Regel. Schreibgeschützt.|
 | isEnabled | Boolescher Wert | Gibt an, ob die Regel auf Nachrichten angewendet werden kann. |
@@ -29,6 +29,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "blockType": "resource",
   "optionalProperties": [
    ],
+   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.messageRule"
 }-->
 

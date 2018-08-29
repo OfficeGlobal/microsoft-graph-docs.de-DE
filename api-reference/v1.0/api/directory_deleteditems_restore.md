@@ -28,14 +28,14 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directory/deleteditems/{id}/restore
+POST /directory/deletedItems/{id}/restore
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
 | Autorisierung  | Bearer&lt;code&gt; *erforderlich*|
-| Annehmen | application/json |
+| Annehmen | Anwendung/json |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -52,7 +52,7 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das 
   "name": "create_directoryobject_from_directory"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb/restore
+POST https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}/restore
 ```
 Geben Sie im Anforderungstext eine JSON-Darstellung des [directoryObject](../resources/directoryobject.md)-Objekts an.
 ##### <a name="response"></a>Antwort

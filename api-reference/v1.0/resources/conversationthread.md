@@ -18,13 +18,13 @@ Die Empfängersammlung des letzten Beitrags besteht aus den aggregierten Empfän
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|String| Schreibgeschützt.|
+|id|Zeichenfolge| Schreibgeschützt.|
 |toRecipients|[recipient](recipient.md)-Sammlung|Die An:-Empfänger des Threads.|
 |ccRecipients|[recipient](recipient.md)-Sammlung|Die Cc:-Empfänger des Threads.|
 |Thema|String|Das Thema der Unterhaltung. Diese Eigenschaft kann festgelegt werden, wenn die Unterhaltung erstellt wird, sie kann jedoch nicht aktualisiert werden.||
 |hasAttachments|Boolean|Gibt an, ob einer der Beiträge innerhalb dieses Threads über mindestens eine Anlage verfügt.|
 |lastDeliveredDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|uniqueSenders|String collection|Alle Benutzer, die eine Nachricht an diesen Thread gesendet haben.|
+|uniqueSenders|Zeichenfolgenauflistung|Alle Benutzer, die eine Nachricht an diesen Thread gesendet haben.|
 |Vorschau|String|Eine kurze Zusammenfassung aus dem Text des neuesten Beitrags in dieser Unterhaltung.|
 |isLocked|Boolean|Zeigt an, ob der Thread gesperrt ist.|
 
@@ -37,13 +37,26 @@ Die Empfängersammlung des letzten Beitrags besteht aus den aggregierten Empfän
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "posts"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.conversationThread"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.conversationThread",
+  "@odata.annotations": [
+    {
+      "property": "posts",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json

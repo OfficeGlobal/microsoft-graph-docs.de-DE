@@ -30,11 +30,10 @@ Keine
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.attachment",
   "@odata.type": "microsoft.graph.referenceAttachment"
 }-->
 

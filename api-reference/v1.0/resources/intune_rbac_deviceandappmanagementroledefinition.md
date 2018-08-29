@@ -18,25 +18,25 @@ Erbt von [RoleDefinition](../resources/intune_rbac_roledefinition.md)
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität. Dies ist schreibgeschützt und wird automatisch generiert. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|displayName|String|Anzeigename der Rollendefinition. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|description|String|Beschreibung der Rollendefinition. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|rolePermissions|[rolePermission](../resources/intune_rbac_rolepermission.md)-Sammlung|Liste der Rollenberechtigungen, die diese Rolle ausführen kann. Diese müssen mit dem actionName übereinstimmen, der als Teil der rolePermission definiert ist. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|isBuiltIn|Boolean|Rollentyp. Wird auf „true“ festgelegt, wenn es sich um eine integrierte, oder auf „false“, wenn es sich um eine benutzerdefinierte Rollendefinition handelt. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|id|Zeichenfolge|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|displayName|String|Anzeigename der Rollendefinition Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|description|String|Beschreibung der Rollendefinition Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|rolePermissions|Sammlung von Objekten des Typs [rolePermission](../resources/intune_rbac_rolepermission.md)|Liste der Rollenberechtigungen, die dieser Rolle erteilt wurden. Diese müssen mit dem Wert für „actionName“ übereinstimmen, der als Teil von „rolePermission“ festgelegt wurde. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|isBuiltIn|Boolean|Rollentyp. Ist auf „True“ gesetzt, wenn es sich um eine integrierte Rolle handelt, und auf „False“, wenn es sich um eine benutzerdefinierte Rollendefinition handelt. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|roleAssignments|[roleAssignment](../resources/intune_rbac_roleassignment.md)-Sammlung|Liste von Rollenzuweisungen für diese Rollendefinition. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|roleAssignments|Sammlung von Objekten des Typs [roleAssignment](../resources/intune_rbac_roleassignment.md)|Liste von Rollenzuweisungen für diese Rollendefinition. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.roleDefinition",
   "@odata.type": "microsoft.graph.deviceAndAppManagementRoleDefinition"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleDefinition",

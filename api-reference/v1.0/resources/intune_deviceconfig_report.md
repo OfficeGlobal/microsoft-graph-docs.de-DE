@@ -12,16 +12,14 @@ Verlaufsberichte des Gerätekonfigurationsprofils.
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.report"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.report",
-  "content": "<Unknown Primitive Type Edm.Stream>"
+  "content": {"@odata.type": "Edm.Stream"}
 }
 ```
 

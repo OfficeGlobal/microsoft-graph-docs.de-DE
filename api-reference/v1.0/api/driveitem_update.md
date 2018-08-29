@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Eine Datei oder einen Ordner aktualisieren
-ms.openlocfilehash: 1662007d030f51b0fd9242ba0f22b670e5e2bde2
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: af936948371ada7f0a8cd52115eac31ea6388d10
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266891"
 ---
 # <a name="update-driveitem-properties"></a>DriveItem-Eigenschaften aktualisieren
 
@@ -58,7 +59,7 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und die 
 
 In diesem Beispiel wird die DriveItem-Ressource in "new-file-name.docx" umbenannt.
 
-<!-- { "blockType": "request", "name": "update-item" } -->
+<!-- { "blockType": "request", "name": "update-item", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}

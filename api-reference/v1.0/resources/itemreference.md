@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ItemReference
-ms.openlocfilehash: abd8b438e6c4e364a7a4b010d0808255425fa4df
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: e83b0a18725d587094a00e9cc84a51b030d83340
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268466"
 ---
 # <a name="itemreference-resource-type"></a>ItemReference-Ressourcentyp
 
@@ -43,13 +44,13 @@ Es folgt eine JSON-Darstellung der Ressource.
 | driveType     | Zeichenfolge            | Identifiziert den Laufwerkstyp. Werte finden Sie unter [drive][]-Ressource.
 | id            | String            | Eindeutiger Bezeichner des Elements im Laufwerk. Schreibgeschützt.
 | name          | Zeichenfolge            | Der Name des Elements, auf das verwiesen wird. Schreibgeschützt.
-| Pfad          | String            | Pfad, der verwendet werden kann, um zu dem Element zu navigieren. Schreibgeschützt.
-| shareId       | String            | Ein eindeutiger Bezeichner für eine freigegebene Ressource, auf die über [Freigabe][]-API zugegriffen werden kann.
+| Pfad          | Zeichenfolge            | Pfad, der verwendet werden kann, um zu dem Element zu navigieren. Schreibgeschützt.
+| shareId       | Zeichenfolge            | Ein eindeutiger Bezeichner für eine freigegebene Ressource, auf die über [Freigabe][]-API zugegriffen werden kann.
 | sharepointIds | [sharepointIds][] | Gibt Bezeichner zurück, die für SharePoint REST-Kompatibilität nützlich sind. Schreibgeschützt.
 
 [drive]: ../resources/drive.md
 [sharepointIds]: ../resources/sharepointids.md
-[Shares]: ../api/shares_get.md
+[Freigabe]: ../api/shares_get.md
 
 ## <a name="remarks"></a>Hinweise
 
@@ -69,5 +70,9 @@ Um den lesbaren Pfad für ein Breadcrumb abzurufen, können Sie alles bis zum er
   "type": "#page.annotation",
   "description": "ItemReference returns a pointer to another item.",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/itemreference.md:
+      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/ItemReference"
 } -->

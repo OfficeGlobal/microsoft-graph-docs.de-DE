@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ChoiceColumn
-ms.openlocfilehash: c266550e8918603c3ee6104818c0aa721f1281d9
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 9feb49fc9c581a4518f63a0367087d54de32cff4
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23264070"
 ---
 # <a name="choicecolumn-resource-type"></a>ChoiceColumn-Ressourcentyp
 
@@ -40,5 +41,9 @@ Es folgt eine JSON-Darstellung einer **choiceColumn**-Ressource.
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/choicecolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(checkBoxes,dropDownMenu,radioButtons) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/ChoiceColumn"
 } -->

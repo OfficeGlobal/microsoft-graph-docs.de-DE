@@ -6,7 +6,7 @@ Enthält die Eigenschaften für generischen MIME-Inhalt.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|type|String|Gibt den MIME-Typ des Inhalts an.|
+|Typ|String|Gibt den MIME-Typ des Inhalts an.|
 |Wert|Binär|Das Bytearray, das den tatsächlichen Inhalt enthält.|
 
 ## <a name="relationships"></a>Beziehungen
@@ -15,7 +15,6 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mimeContent"
 }
 -->

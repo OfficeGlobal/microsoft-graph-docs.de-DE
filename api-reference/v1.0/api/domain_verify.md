@@ -28,8 +28,8 @@ POST /domains/{id}/verify
 
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich.|
-| Content-Type  | application/json |
+| Autorisierung  | Bearer {token}. Erforderlich.|
+| Inhaltstyp  | application/json |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -44,7 +44,7 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das 
   "name": "domain_verify"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/domains/contoso.com/verify
+POST https://graph.microsoft.com/v1.0/domains/{domain-name}/verify
 ```
 
 ##### <a name="response"></a>Antwort
@@ -66,7 +66,7 @@ Content-length: 192
   "isDefault": true,
   "isInitial": true,
   "isRoot": true,
-  "name": "contoso.com"
+  "id": "contoso.com"
 }
 ```
 

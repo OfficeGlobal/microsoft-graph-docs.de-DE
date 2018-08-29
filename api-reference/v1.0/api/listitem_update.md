@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: Aktualisieren eines Eintrags in einer SharePoint-Liste
-ms.openlocfilehash: ca1c3dcb96ba347b457253b3843114402dba8ba3
-ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
+ms.openlocfilehash: d59167e740d28d832cd9cf6b1175f6b5be1cd729
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268529"
 ---
 # <a name="update-an-item-in-a-list"></a>Element in einer Liste aktualisieren
 
@@ -47,7 +48,7 @@ Geben Sie im Textbereich eine JSON-Darstellung von einem [FieldValueSet][] an, u
 Dies ist ein Beispiel für die Aktualisierung der Felder Farbe und Menge Felder des Listenelements mit neuen Werten.
 Alle anderen Werte des listItem bleiben unberührt. 
 
-<!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
+<!-- { "blockType": "request", "name": "update-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
 PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
@@ -63,7 +64,7 @@ Content-Type: application/json
 
 Wenn die Methode erfolgreich verläuft, wird ein [fieldValueSet][]-Objekt im Antworttext des aktualisierten Listenelements zurückgegeben.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.fieldValueSet", "truncated": true } -->
 
 ```json
 HTTP/1.1 201 Created

@@ -31,7 +31,7 @@ Nachfolgend finden Sie die grundlegenden Eigenschaften von attachment-Ressourcen
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |contentType|String|Der MIME-Typ.|
-|id|String| Schreibgeschützt.|
+|id|Zeichenfolge| Schreibgeschützt.|
 |isInline|Boolean|`true`, wenn die Anlage eine Inlineanlage ist, andernfalls `false`.|
 |lastModifiedDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |name|String|Der Dateiname der Anlage.|
@@ -46,6 +46,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "abstract": true,
   "optionalProperties": [
 
   ],

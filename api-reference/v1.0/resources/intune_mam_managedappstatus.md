@@ -12,20 +12,21 @@ Stellt den App-Schutz und den Konfigurationsstatus für die Organisation dar.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|Zeichenfolge|Anzeigename des Statusberichts|
+|displayName|String|Anzeigename des Statusberichts|
 |id|Zeichenfolge|Schlüssel der Entität|
-|Version|Zeichenfolge|Version der Entität|
+|Version|String|Version der Entität|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "abstract": true,
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.managedAppStatus"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppStatus",

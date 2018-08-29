@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Identität"
-ms.openlocfilehash: ada6fd22f59ceb01e10cc57ea3640c5f67b65144
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Identität
+ms.openlocfilehash: 521952ab8ea3350fcf29aa80cb82928e5017e5bb
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267164"
 ---
 # <a name="identity-resource-type"></a>identity-Ressourcentyp
 
@@ -15,7 +16,9 @@ Die **Identity**-Ressource stellt eine Identität von einem _Akteur_ dar. Ein Ak
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identity", "optionalProperties": ["displayName", "thumbnails"] } -->
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identity",
+  "openType": true,
+ "optionalProperties": ["displayName", "thumbnails"] } -->
 ```json
 {
   "displayName": "string",
@@ -28,7 +31,7 @@ Die **Identity**-Ressource stellt eine Identität von einem _Akteur_ dar. Ein Ak
 
 | Eigenschaft    | Typ   | Beschreibung                                                                                                                                                                                                                                                                                                           |
 |:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName | Zeichenfolge | Der Anzeigenamen der Identität. Beachten Sie, dass dieser möglicherweise nicht immer verfügbar oder auf dem neuesten Stand ist. Wenn sich z. B. der Anzeigename eines Benutzers ändert, zeigt die API möglicherweise den neuen Wert in einer zukünftigen Antwort an, aber für die dem Benutzer zugeordneten Elemente wird mit [delta](../api/driveitem_delta.md) nicht angezeigt, dass sie sich geändert haben.     |
+| displayName | String | Der Anzeigenamen der Identität. Beachten Sie, dass dieser möglicherweise nicht immer verfügbar oder auf dem neuesten Stand ist. Wenn sich z. B. der Anzeigename eines Benutzers ändert, zeigt die API möglicherweise den neuen Wert in einer zukünftigen Antwort an, aber für die dem Benutzer zugeordneten Elemente wird mit [delta](../api/driveitem_delta.md) nicht angezeigt, dass sie sich geändert haben.     |
 | id          | String | Eindeutiger Bezeichner für die Identität.                                                                                                                                                                                                                                                                                   |
 
 ## <a name="remarks"></a>Bemerkungen

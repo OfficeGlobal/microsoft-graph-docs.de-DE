@@ -11,12 +11,11 @@ Basisklasse des IP-Bereichs zur Darstellung von IPV4- und IPV6-Adressbereichen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "abstract": true,
   "@odata.type": "microsoft.graph.ipRange"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.ipRange"

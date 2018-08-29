@@ -30,8 +30,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.i
 
 | Name      |Beschreibung|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
-| Content-Type  | application/json |
+| Autorisierung  | Bearer {token}. Erforderlich. |
+| Inhaltstyp  | application/json |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -44,6 +44,7 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das 
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "get_domain"
 }-->
 ```http

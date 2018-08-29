@@ -26,7 +26,7 @@ GET /reports/getOffice365ActivationsUserDetail
 
 | Name          | Beschreibung                              |
 | :------------ | :--------------------------------------- |
-| Authorization | Bearer {token}. Erforderlich.                |
+| Autorisierung | Bearer {token}. Erforderlich.                |
 | If-None-Match | Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag mit dem aktuellen Tag in der Datei übereinstimmt, wird ein `304 Not Modified`-Antwortcode zurückgegeben. Optional. |
 
 ## <a name="response"></a>Antwort
@@ -54,8 +54,9 @@ Die CSV-Datei verfügt über die folgenden Kopfzeilen für Spalten.
 
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getoffice365activationsuserdetail"
 }-->
 
@@ -67,7 +68,11 @@ GET https://graph.microsoft.com/v1.0/reports/getOffice365ActivationsUserDetail
 
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -77,11 +82,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 Führen Sie die Umleitung 302 aus, und die heruntergeladene CSV-Datei besitzt das folgende Format.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

@@ -13,15 +13,15 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/BoundingRect
-GET /workbook/worksheets/{id|name}/range(address='<address>')/BoundingRect
-GET /workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
+GET /workbook/names/{name}/range/boundingRect
+GET /workbook/worksheets/{id|name}/range(address='<address>')/boundingRect
+GET /workbook/tables/{id|name}/columns/{id|name}/range/boundingRect
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -41,10 +41,11 @@ Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
+  "isComposable": true,
   "name": "range_boundingrect"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/BoundingRect
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/boundingRect
 Content-type: application/json
 Content-length: 42
 
@@ -58,7 +59,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

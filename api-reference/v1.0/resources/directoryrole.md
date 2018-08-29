@@ -16,7 +16,7 @@ Stellt eine Azure AD-Verzeichnisrolle dar. Azure AD-Verzeichnisrollen werden auc
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft   | Typ | Beschreibung |
 |:---------------|:--------|:----------|
-|description|String|Die Beschreibung für die Verzeichnisrolle. Schreibgeschützt. |
+|Beschreibung|String|Die Beschreibung für die Verzeichnisrolle. Schreibgeschützt. |
 |displayName|String|Der Anzeigename für die Verzeichnisrolle. Schreibgeschützt. |
 |id|Zeichenfolge|Die eindeutige ID für die Verzeichnisrolle. Geerbt von [directoryObject](directoryobject.md). Schlüssel, lässt keine Nullwerte zu, schreibgeschützt.|
 |roleTemplateId|String| Die **id** der [directoryRoleTemplate](directoryroletemplate.md), auf der diese Rolle basiert. Die Eigenschaft muss angegeben werden, wenn eine Verzeichnisrolle mit einer POST-Operation in einem Mandanten aktiviert wird. Nach der Aktivierung der Verzeichnisrolle ist die Eigenschaft schreibgeschützt. |
@@ -30,8 +30,9 @@ Stellt eine Azure AD-Verzeichnisrolle dar. Azure AD-Verzeichnisrollen werden auc
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
     "memberOf",
     "members",
@@ -39,7 +40,15 @@ Es folgt eine JSON-Darstellung der Ressource.
     "owners"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryRole"
+  "baseType": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.directoryRole",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "toppable": false
+      }
+    }
+  ]
 }-->
 
 ```json

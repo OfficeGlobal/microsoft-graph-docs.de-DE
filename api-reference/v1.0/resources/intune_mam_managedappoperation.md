@@ -15,22 +15,22 @@ Steht für einen Vorgang, der auf eine App-Registrierung angewendet wird.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|String|Der Name des Vorgangs|
-|lastModifiedDateTime|DateTimeOffset|Der Zeitpunkt der letzten Änderung des App-Vorgangs|
-|state|String|Der aktuelle Status des Vorgangs|
-|id|String|Schlüssel der Entität.|
-|version|String|Version der Entität|
+|displayName|String|Name des Vorgangs|
+|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des App-Vorgangs|
+|state|String|Aktueller Status des Vorgangs|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Version|String|Version der Entität|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.managedAppOperation"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppOperation",

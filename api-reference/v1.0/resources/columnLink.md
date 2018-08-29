@@ -3,11 +3,12 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: ColumnLink
-ms.openlocfilehash: ef7fef6fb6ca35f1117433b452de0841691282a0
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: cdae360afb6e626ee481a7e98ed5f90e657203b2
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265120"
 ---
 # <a name="columnlink-resource-type"></a>ColumnLink-Ressourcentyp
 
@@ -18,7 +19,10 @@ A **ColumnLink** eines [ContentType][] fügt die Website **ColumnDefinition** zu
 ## <a name="json-representation"></a>JSON-Darstellung
 
 Es folgt eine JSON-Darstellung einer **columnLink**-Ressource.
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.columnLink" } -->
+<!-- {
+  "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.columnLink" } -->
 
 ```json
 {
@@ -31,7 +35,7 @@ Es folgt eine JSON-Darstellung einer **columnLink**-Ressource.
 
 | Eigenschaftenname | Typ   | Beschreibung
 |:--------------|:-------|:----------------------------------------------------
-| **id**        | string | Die eindeutige ID für die Spalte.
+| **ID**        | Zeichenfolge | Die eindeutige ID für die Spalte.
 | **name**      | string | Der Name der Spalte in diesem Inhaltstyp.
 
 <!-- {

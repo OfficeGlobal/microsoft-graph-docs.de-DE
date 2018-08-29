@@ -12,25 +12,25 @@ Noch nicht dokumentiert.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität.|
-|unknownDeviceCount|Int32|Anzahl unbekannter Geräte|
-|notApplicableDeviceCount|Int32|Anzahl nicht anwendbarer Geräte|
-|compliantDeviceCount|Int32|Anzahl der konformen Geräte|
-|remediatedDeviceCount|Int32|Anzahl korrigierter Geräte|
-|nonCompliantDeviceCount|Int32|Anzahl der nicht konformen Geräte|
-|errorDeviceCount|Int32|Anzahl der fehlerhaften Geräte|
+|id|Zeichenfolge|Schlüssel der Entität|
+|unknownDeviceCount|Int32|Anzahl von unbekannten Geräten|
+|notApplicableDeviceCount|Int32|Anzahl der ausgenommenen Geräte|
+|compliantDeviceCount|Int32|Anzahl von konformen Geräten|
+|remediatedDeviceCount|Int32|Anzahl von korrigierten Geräten|
+|nonCompliantDeviceCount|Int32|Anzahl von nicht konformen Geräten|
+|errorDeviceCount|Int32|Anzahl von Geräten mit Fehlern|
 |conflictDeviceCount|Int32|Anzahl der Geräte mit Konflikten|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceConfigurationDeviceStateSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationDeviceStateSummary",

@@ -23,12 +23,12 @@ Windows Information Protection – Netzwerk-Schulungszusammenfassungsentität
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.windowsInformationProtectionNetworkLearningSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionNetworkLearningSummary",

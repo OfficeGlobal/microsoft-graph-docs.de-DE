@@ -15,12 +15,10 @@ Stellt eine App in der Liste der verwalteten Anwendungen dar.
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.appListItem"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.appListItem",

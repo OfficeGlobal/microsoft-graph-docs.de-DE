@@ -9,28 +9,27 @@ Erbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md).
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|Zeichenfolge|Anzeigename. Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md).|
-|Beschreibung|Zeichenfolge|Beschreibung. Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md).|
-|omaUri|Zeichenfolge|OMA. Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md).|
+|displayName|Zeichenfolge|Anzeigename Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|description|String|Beschreibung. Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|omaUri|Zeichenfolge|OMA Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |Wert|Einzelner|Wert.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingFloatingPoint"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSettingFloatingPoint",
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
-  "value": "<Unknown Primitive Type Edm.Single>"
+  "value": 1.5
 }
 ```
 
