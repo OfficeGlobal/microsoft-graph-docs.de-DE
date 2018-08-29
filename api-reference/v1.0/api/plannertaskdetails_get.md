@@ -13,13 +13,13 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/tasks/<id>/details
+GET /planner/tasks/{id}/details
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -38,7 +38,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "get_plannertaskdetails"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/planner/tasks/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/details
+GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/details
 ```
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.

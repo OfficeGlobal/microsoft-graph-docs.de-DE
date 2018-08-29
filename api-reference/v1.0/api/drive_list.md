@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Laufwerke auflisten
-ms.openlocfilehash: 84771e589a65d11fc06707eb01b6211cf90a8581
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: f23226b5e3de7e46b02f3bf8e252d338fc77ec5b
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23270405"
 ---
 # <a name="list-available-drives"></a>Verfügbare Laufwerke auflisten
 
@@ -29,7 +30,7 @@ Für die Auflistung der Dokumentbibliotheken einer Gruppe fordert Ihre App die *
 
 ### <a name="http-request"></a>HTTP-Anforderung
 
-<!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all" } -->
+<!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /groups/{groupId}/drives
@@ -39,7 +40,7 @@ GET /groups/{groupId}/drives
 
 Für die Auflistung der Dokumentbibliotheken einer Website fordert Ihre App die **drives**-Beziehung bei der Website an.
 
-<!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all" } -->
+<!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /sites/{siteId}/drives
@@ -47,7 +48,7 @@ GET /sites/{siteId}/drives
 
 ## <a name="list-a-users-drives"></a>Auflisten der Laufwerke eines Benutzers
 
-<!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read.all" } -->
+<!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /users/{userId}/drives
@@ -55,7 +56,7 @@ GET /users/{userId}/drives
 
 ## <a name="list-the-current-users-drives"></a>Die Laufwerke des aktuellen Benutzers auflisten
 
-<!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read" } -->
+<!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drives
@@ -63,7 +64,7 @@ GET /me/drives
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
-Diese Methode unterstützt die [OData-Abfrageparameter](../../../concepts/query_parameters.md) von `$expand`, `$select`, `$skipToken`, `$top` und `$orderby` zur Anpassung der Antwort.
+Diese Methode unterstützt die `$expand`, `$select`, `$skipToken`, `$top` und `$orderby` [OData-Abfrageparameter](../../../concepts/query_parameters.md) zur Anpassung der Antwort.
 
 
 ## <a name="response"></a>Antwort

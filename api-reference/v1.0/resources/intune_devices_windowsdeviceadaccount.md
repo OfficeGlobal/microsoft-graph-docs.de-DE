@@ -11,18 +11,17 @@ Erbt von [windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount
 |:---|:---|:---|
 |password|Zeichenfolge|Noch nicht dokumentiert. Vererbt von [windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount.md)|
 |Domänname|Zeichenfolge|Noch nicht dokumentiert.|
-|userName|Zeichenfolge|Noch nicht dokumentiert.|
+|userName|String|Noch nicht dokumentiert.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.windowsDeviceAccount",
   "@odata.type": "microsoft.graph.windowsDeviceADAccount"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsDeviceADAccount",

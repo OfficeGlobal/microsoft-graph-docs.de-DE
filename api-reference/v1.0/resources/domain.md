@@ -1,5 +1,4 @@
-# domain-Ressourcentyp
-<a id="domain-resource-type" class="xliff"></a>
+# <a name="domain-resource-type"></a>domain-Ressourcentyp
 
 Stellt eine Domäne dar, die einem Mandanten zugewiesen ist.
 
@@ -17,8 +16,7 @@ So ordnen Sie eine Domäne einem Mandanten zu:
 
 5. [Konfigurieren Sie](../api/domain_list_serviceconfigurationrecords.md) unterstützte Dienste, indem Sie eine Liste von Datensätzen abrufen, die zum Aktivieren von Diensten für die Domäne erforderlich sind. Fügen Sie die Details des Konfigurationsdatensatzes mithilfe der Domänenregistrierungsstelle oder der DNS-Serverkonfiguration der Zonendatei der Domäne hinzu.
 
-## Methoden
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>Methoden
 
 | Methode   | Rückgabetyp |Beschreibung|
 |:---------------|:--------|:----------|
@@ -31,14 +29,13 @@ So ordnen Sie eine Domäne einem Mandanten zu:
 |[Domäne löschen](../api/domain_delete.md) | Keine |Dient zum Löschen einer Domäne.|
 |[Domäne überprüfen](../api/domain_verify.md)|[Domäne](domain.md)|Überprüft den Besitz der Domäne.|
 
-## Eigenschaften
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft   | Typ | Beschreibung |
 |:---------------|:--------|:----------|
 |authenticationType|String| Gibt den konfigurierten Authentifizierungstyp für die Domäne an. Der Wert ist entweder *Verwaltet* oder *Verbund*.<br> *Verwaltet* gibt eine cloudverwaltete Domäne an, bei der Azure AD die Benutzerauthentifizierung ausführt.<br>*Verbund* gibt an, dass die Authentifizierung im Verbund mit einem Identitätsanbieter steht, z. B. das lokale Active Directory des Mandanten über Active Directory-Verbunddienste. Lässt keine Nullwerte zu. |
 |availabilityStatus|String| Diese Eigenschaft ist immer null, außer wenn die Aktion [verify](../api/domain_verify.md) verwendet wird. Wenn die Aktion [verify](../api/domain_verify.md) verwendet wird, wird in der Antwort eine **Domänen**entität zurückgegeben. Die Eigenschaft **availabilityStatus** der **Domänen**entität in der Antwort ist entweder *AvailableImmediately* oder *EmailVerifiedDomainTakeoverScheduled*.|
-|id|Zeichenfolge| Der vollqualifizierte Name der Domäne. Schlüssel, unveränderlich, lässt keine Nullwerte zu, eindeutig |
+|id|String| Der vollqualifizierte Name der Domäne. Schlüssel, unveränderlich, lässt keine Nullwerte zu, eindeutig |
 |isAdminManaged|Boolean| Der Wert der Eigenschaft ist „false“, wenn die DNS-Datensatzverwaltung der Domäne an Office 365 delegiert wurde. Andernfalls ist der Wert „true“. Lässt keine Nullwerte zu. |
 |isDefault|Boolescher Wert| „True“, wenn dies die Standarddomäne ist, die für die Benutzererstellung verwendet wird. Es gibt nur eine Standarddomäne pro Unternehmen. Lässt keine Nullwerte zu. |
 |isInitial|Boolean| „True“, wenn dies die erste Domäne ist, die von Microsoft Online Services (companyname.onmicrosoft.com) erstellt wird. Es gibt nur eine anfängliche Domäne pro Unternehmen. Lässt keine Nullwerte zu. |
@@ -47,8 +44,7 @@ So ordnen Sie eine Domäne einem Mandanten zu:
 |supportedServices|String-Sammlung| Die der Domäne zugewiesenen Funktionen.<br><br>Kann 0, 1 oder mehrere der folgenden Werte umfassen: *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> Zu den Werten, die Sie mithilfe der Graph-API hinzufügen/entfernen können, gehören: *Email*, *OfficeCommunicationsOnline*, *Yammer*<br>Lässt keine Nullwerte zu.|
 |Status|[domainState](domainstate.md)| Status von asynchronen Vorgängen, die für die Domäne geplant sind. |
 
-## Beziehungen
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>Beziehungen
 
 Beziehungen zwischen einer Domäne und anderen Objekten im Verzeichnis, z. B. die Überprüfungsdatensätze und Dienstkonfigurationsdatensätze, die über Navigationseigenschaften verfügbar gemacht werden. Sie können diese Beziehungen lesen, indem Sie auf diese Navigationseigenschaften in Ihren Anforderungen abzielen.
 
@@ -58,15 +54,14 @@ Beziehungen zwischen einer Domäne und anderen Objekten im Verzeichnis, z. B. di
 |serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md)-Sammlung| DNS-Einträge, die der Kunde der Zonendatei der Domäne hinzufügt, bevor die Domäne von Microsoft-Onlinediensten verwendet werden kann.<br>Schreibgeschützt. Lässt Nullwerte zu. |
 |verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md)-Sammlung| DNS-Einträge, die der Kunde der DNS-Zonendatei der Domäne hinzufügt, bevor die Domänenbesitzüberprüfung mit Azure AD abgeschlossen werden kann.<br>Schreibgeschützt. Lässt Nullwerte zu.|
 
-## JSON-Darstellung
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.domain"
 }-->
 

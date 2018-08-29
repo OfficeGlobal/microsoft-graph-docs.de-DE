@@ -18,12 +18,12 @@ GET /groups/{id}/photo
 GET /drive/root/createdByUser/photo
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -63,7 +63,7 @@ Content-length: 53
 Hier ist ein Beispiel für die Anforderung der Fotobytes.
 <!-- {
   "blockType": "request",
-  "name": "get_photo"
+  "name": "get_photo_value"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo/$value
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo/$value
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 
-<!-- { "blockType": "response", "@odata.type": "stream" } -->
+<!-- { "blockType": "response", "@odata.type": "Edm.Stream" } -->
 
 ```http
 HTTP/1.1 200 OK

@@ -13,7 +13,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/format/autofitColumns
+POST /workbook/names/{name}/range/format/autofitColumns
 POST /workbook/worksheets/{id|name}/range(address='<address>')/format/autofitColumns
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitColumns
 
@@ -21,7 +21,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitColumns
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -39,15 +39,13 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "rangeformat_autofitcolumns"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/autofitColumns
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/autofitColumns
 ```
 
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

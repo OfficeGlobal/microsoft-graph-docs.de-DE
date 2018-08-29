@@ -22,7 +22,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -45,7 +45,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attachment",
+  "@odata.type": "collection(microsoft.graph.attachment)",
   "isCollection": true
 } -->
 ```http
@@ -56,15 +56,14 @@ Content-length: 215
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+      "@odata.type": "microsoft.graph.fileAttachment",
       "contentType": "contentType-value",
       "contentLocation": "contentLocation-value",
-      "contentBytes": "contentBytes-value",
+      "contentBytes": "base64-contentBytes-value",
       "contentId": "null",
       "lastModifiedDateTime": "datetime-value",
       "id": "id-value",
       "isInline": false,
-      "isContactPhoto": false,
       "name": "name-value",
       "size": 99
     }

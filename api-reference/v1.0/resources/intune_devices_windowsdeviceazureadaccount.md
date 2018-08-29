@@ -16,12 +16,11 @@ Erbt von [windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.windowsDeviceAccount",
   "@odata.type": "microsoft.graph.windowsDeviceAzureADAccount"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsDeviceAzureADAccount",

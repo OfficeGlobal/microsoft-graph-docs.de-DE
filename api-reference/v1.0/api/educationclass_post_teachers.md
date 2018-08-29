@@ -19,8 +19,8 @@ POST /education/classes/{id}/teachers/$ref
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Erforderlich.  |
-| Content-Type  | application/json  |
+| Autorisierung  | Bearer {token}. Erforderlich.  |
+| Inhaltstyp  | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung eines [educationUser](../resources/educationuser.md)-Objekts an.
@@ -37,7 +37,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "create_educationuser_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/11017/teachers/$ref
+POST https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers/$ref
 Content-type: application/json
 Content-length: 508
 

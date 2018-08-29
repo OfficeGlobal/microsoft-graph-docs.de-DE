@@ -21,7 +21,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Erforderlich.  |
+| Autorisierung  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
@@ -100,7 +100,6 @@ Content-length: 1131
 }
 ```
 
-##### <a name="response"></a>Antwort
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 <!-- {

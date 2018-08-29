@@ -14,15 +14,15 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailFolders/inbox/messagerules
-GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
+GET /me/mailFolders/inbox/messageRules
+GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -33,10 +33,11 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["inbox"],
   "name": "get_messagerules"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messagerules
+GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
 ```
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.

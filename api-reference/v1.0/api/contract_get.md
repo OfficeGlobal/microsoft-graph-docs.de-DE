@@ -27,7 +27,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.i
 
 | Name      |Beschreibung|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -53,7 +53,7 @@ Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Contract"
+  "@odata.type": "microsoft.graph.contract"
 } -->
 ```http
 HTTP/1.1 200 OK

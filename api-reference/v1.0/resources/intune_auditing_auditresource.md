@@ -15,12 +15,10 @@ Eine Klasse, die die Eigenschaften für die Audit-Ressource enthält.
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.auditResource"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.auditResource",

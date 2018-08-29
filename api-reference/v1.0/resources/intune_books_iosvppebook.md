@@ -18,7 +18,7 @@ Sie erbt von [managedEBook](../resources/intune_books_managedebook.md).
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|id|Zeichenfolge|Schlüssel der Entität. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
 |displayName|String|Name des E-Books. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
 |description|String|Beschreibung. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
 |publisher|String|Herausgeber. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
@@ -47,12 +47,12 @@ Sie erbt von [managedEBook](../resources/intune_books_managedebook.md).
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.managedEBook",
   "@odata.type": "microsoft.graph.iosVppEBook"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -70,7 +70,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "lastModifiedDateTime": "String (timestamp)",
   "informationUrl": "String",
   "privacyInformationUrl": "String",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "appleId": "String",
   "vppOrganizationName": "String",
   "genres": [

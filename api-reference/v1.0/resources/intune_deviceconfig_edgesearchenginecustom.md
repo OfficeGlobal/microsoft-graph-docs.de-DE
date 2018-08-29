@@ -15,12 +15,11 @@ Erbt von [edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearchengin
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.edgeSearchEngineBase",
   "@odata.type": "microsoft.graph.edgeSearchEngineCustom"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.edgeSearchEngineCustom",

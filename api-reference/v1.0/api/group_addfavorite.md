@@ -19,7 +19,7 @@ POST /groups/{id}/addFavorite
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Erforderlich.  |
+| Autorisierung  | Bearer {token}. Erforderlich.  |
 | Prefer | return=minimal. Wenn die Antwortkopfzeile „minimal“ in der Anforderungskopfzeile enthalten ist, gibt eine erfolgreiche Antwort den `204 No Content`-Code zurück.  Optional.  |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -43,8 +43,7 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/addFavorite
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": false
 } -->
 ```http
 HTTP/1.1 200 OK

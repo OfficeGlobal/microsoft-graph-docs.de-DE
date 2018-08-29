@@ -16,26 +16,26 @@ Zusammenfassung des Zustands der Gerätekonformitätsrichtlinien und -konfigurat
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
-|settingName|Zeichenfolge|Name der Einstellung|
-|instancePath|Zeichenfolge|Namen des Instanzpfads für die Einstellung|
-|unknownDeviceCount|Int32|Anzahl der unbekannten Geräte für die Einstellung|
-|notApplicableDeviceCount|Int32|Anzahl der nicht anwendbaren Geräte für die Einstellung|
-|compliantDeviceCount|Int32|Anzahl der kompatiblen Geräte für die Einstellung|
-|remediatedDeviceCount|Int32|Anzahl der kompatiblen Geräte für die Einstellung|
-|nonCompliantDeviceCount|Int32|Anzahl der nicht kompatiblen Geräte für die Einstellung|
-|errorDeviceCount|Int32|Anzahl der fehlerhaften Geräte für die Einstellung|
+|settingName|String|Name der Einstellung|
+|instancePath|String|Name des zur Einstellung gehörenden Objekts des Typs „InstancePath“|
+|unknownDeviceCount|Int32|Anzahl der Geräte mit Meldung „Unknown“ für die Einstellung|
+|notApplicableDeviceCount|Int32|Anzahl der Geräte mit Meldung „Not Applicable“ für die Einstellung|
+|compliantDeviceCount|Int32|Anzahl der Geräte mit Meldung „Compliant“ für die Einstellung|
+|remediatedDeviceCount|Int32|Anzahl der Geräte mit Meldung „Compliant“ für die Einstellung|
+|nonCompliantDeviceCount|Int32|Anzahl der Geräte mit Meldung „NonCompliant“ für die Einstellung|
+|errorDeviceCount|Int32|Anzahl der Geräte mit Meldung „Error“ für die Einstellung|
 |conflictDeviceCount|Int32|Anzahl der Geräte mit Konfliktfehler für die Einstellung|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.settingStateDeviceSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.settingStateDeviceSummary",

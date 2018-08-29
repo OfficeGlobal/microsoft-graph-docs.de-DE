@@ -21,7 +21,7 @@ Eine Unterhaltung ist eine Sammlung von [Threads](conversationthread.md), und ei
 |lastDeliveredDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |Vorschau|String|Eine kurze Zusammenfassung aus dem Text des neuesten Beitrags in dieser Unterhaltung.|
 |Thema|String|Das Thema der Unterhaltung. Diese Eigenschaft kann festgelegt werden, wenn die Unterhaltung erstellt wird, sie kann jedoch nicht aktualisiert werden.|
-|uniqueSenders|String collection|Alle Benutzer, die eine Nachricht an diese Unterhaltung gesendet haben.|
+|uniqueSenders|Zeichenfolgenauflistung|Alle Benutzer, die eine Nachricht an diese Unterhaltung gesendet haben.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
@@ -32,13 +32,23 @@ Eine Unterhaltung ist eine Sammlung von [Threads](conversationthread.md), und ei
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "threads"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.conversation"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.conversation",
+  "@odata.annotations": [
+    {
+      "property": "threads",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -48,7 +58,9 @@ Es folgt eine JSON-Darstellung der Ressource.
   "lastDeliveredDateTime": "String (timestamp)",
   "preview": "string",
   "topic": "string",
-  "uniqueSenders": ["string"]
+  "uniqueSenders": ["string"],
+
+  "threads": [{"@odata.type": "microsoft.graph.conversationThread"}]
 }
 
 ```

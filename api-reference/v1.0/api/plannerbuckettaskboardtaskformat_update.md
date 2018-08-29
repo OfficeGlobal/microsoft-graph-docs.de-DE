@@ -13,12 +13,12 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/tasks/<id>/bucketTaskBoardFormat
+PATCH /planner/tasks/{id}/bucketTaskBoardFormat
 ```
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | If-Match  | Letzter bekannter ETag-Wert für das zu aktualisierende **plannerBucketTaskBoardTaskFormat**-Objekt. Erforderlich.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -26,7 +26,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|orderHint|Zeichenfolge|Hinweis, der zum Anordnen von Aufgaben in der Ansicht „Buckets“ des Task Board verwendet wird. Das Format ist wie [hier](../resources/planner_order_hint_format.md) beschrieben definiert.|
+|orderHint|String|Hinweis, der zum Anordnen von Aufgaben in der Ansicht „Buckets“ des Task Board verwendet wird. Das Format ist wie [hier](../resources/planner_order_hint_format.md) beschrieben definiert.|
 
 ## <a name="response"></a>Antwort
 
@@ -42,7 +42,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "update_plannerbuckettaskboardtaskformat"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/hsOf2dhOJkqyYYZEtdzDe2QAIUCR/bucketTaskBoardFormat
+PATCH https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/bucketTaskBoardFormat
 Content-type: application/json
 Content-length: 34
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

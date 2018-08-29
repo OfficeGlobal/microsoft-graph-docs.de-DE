@@ -21,8 +21,8 @@ POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type | string | `application/json` |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Inhaltstyp | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext einen Namen für die Abschnittsgruppe an.
@@ -55,7 +55,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 } -->
 ```http
 HTTP/1.1 200 OK

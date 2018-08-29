@@ -14,12 +14,12 @@ Dies ist die Basisklasse für die Konformitätsrichtlinie. Konformitätsrichtlin
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität.|
+|id|Zeichenfolge|Schlüssel der Entität.|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts|
 |description|String|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration|
-|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts|
+|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
 |displayName|String|Vom Administrator bereitgestellter Name der Gerätekonfiguration|
-|version|Int32|Version der Gerätekonfiguration|
+|version|Int32|Version der Gerätekonfiguration.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
@@ -36,7 +36,8 @@ Dies ist die Basisklasse für die Konformitätsrichtlinie. Konformitätsrichtlin
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "abstract": true,
   "@odata.type": "microsoft.graph.deviceCompliancePolicy"
 }
 -->

@@ -13,12 +13,12 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /planner/buckets/<id>
+DELETE /planner/buckets/{id}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | If-Match  | Letzter bekannter ETag-Wert für den zu löschenden **plannerBucket**. Erforderlich.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -38,7 +38,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "delete_plannerbucket"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/planner/buckets/<id>
+DELETE https://graph.microsoft.com/v1.0/planner/buckets/{id}
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
 ##### <a name="response"></a>Antwort

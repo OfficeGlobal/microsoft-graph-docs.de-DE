@@ -1,17 +1,14 @@
-<a id="domaindnsmxrecord-resource-type" class="xliff"></a>
-# domainDnsMxRecord-Ressourcentyp
+# <a name="domaindnsmxrecord-resource-type"></a>domainDnsMxRecord-Ressourcentyp
 
 Stellt einen MX-Eintrag dar, der der DNS-Zonendatei einer bestimmten Domäne im Mandanten hinzugefügt wird. Geerbt von der Entität [DomainDnsRecord](domaindnsrecord.md).
 
-<a id="methods" class="xliff"></a>
-## Methoden
+## <a name="methods"></a>Methoden
 Direkte Abfragen dieser Ressource werden nicht unterstützt. Informationen zum Abfragen von Domänendiensteinträgen finden Sie im Thema [Domäne](domain.md).
 
-<a id="properties" class="xliff"></a>
-## Eigenschaften
+## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|Zeichenfolge| Eindeutiger Bezeichner, der dieser Entität zugewiesen ist. Lässt keine Nullwerte zu, schreibgeschützt.|
+|id|String| Eindeutiger Bezeichner, der dieser Entität zugewiesen ist. Lässt keine Nullwerte zu, schreibgeschützt.|
 |isOptional|Boolean| Wenn „false“, muss der MX-Eintrag vom Kunden auf dem DNS-Host konfiguriert werden, damit Microsoft-Onlinedienste ordnungsgemäß mit der Domäne funktionieren. |
 |label|String| Wert, der beim Konfigurieren der *alias/host/name*-Eigenschaft des MX-Eintrags auf dem DNS-Host verwendet wird. |
 |mailExchange|String| Wert, der beim Konfigurieren der *answer/destination/value*-Eigenschaft des MX-Eintrags auf dem DNS-Host verwendet wird.|
@@ -20,16 +17,15 @@ Direkte Abfragen dieser Ressource werden nicht unterstützt. Informationen zum A
 |supportedService|String| Microsoft-Onlinedienst oder Feature mit Abhängigkeit von diesem MX-Eintrag.</br></br>Kann einer der folgenden Werte sein: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
 |ttl|Int32| Wert, der beim Konfigurieren der Eigenschaft für die Gültigkeitsdauer (*time-to-live (ttl)*) des DNS-Eintrags auf dem DNS-Host verwendet werden soll. Lässt keine Nullwerte zu. |
 
-<a id="relationships" class="xliff"></a>
-## Beziehungen
+## <a name="relationships"></a>Beziehungen
 Keine
 
-<a id="json-representation" class="xliff"></a>
-## JSON-Darstellung
+## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -38,7 +34,6 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",

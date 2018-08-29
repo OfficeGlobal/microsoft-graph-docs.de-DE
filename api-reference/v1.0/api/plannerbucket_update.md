@@ -13,12 +13,12 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/buckets/<id>
+PATCH /planner/buckets/{id}
 ```
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | If-Match  | Letzter bekannter ETag-Wert für den zu aktualisierenden **plannerBucket**. Erforderlich.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -27,7 +27,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |name|String|Name des Buckets.|
-|orderHint|Zeichenfolge|Hinweis, der zum Anordnen von Elementen dieses Typs in einer Listenansicht verwendet wird. Das Format ist wie [hier](../resources/planner_order_hint_format.md) beschrieben definiert.|
+|orderHint|String|Hinweis, der zum Anordnen von Elementen dieses Typs in einer Listenansicht verwendet wird. Das Format ist wie [hier](../resources/planner_order_hint_format.md) beschrieben definiert.|
 |planId|String|Plan-ID, zu der der Bucket gehört.|
 
 ## <a name="response"></a>Antwort
@@ -44,7 +44,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "update_plannerbucket"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/buckets/hsOf2dhOJkqyYYZEtdzDe2QAIUCR
+PATCH https://graph.microsoft.com/v1.0/planner/buckets/{bucket-id}
 Content-type: application/json
 Content-length: 27
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

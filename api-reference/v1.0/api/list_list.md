@@ -3,18 +3,19 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: Auflisten der SharePoint-Listen einer Website
-ms.openlocfilehash: 8c3d8da3e8dc4ab3aa2f399eb09d916ea602e1c5
-ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
+ms.openlocfilehash: 5d88720ecf3d183f806526364130dd2812874f3c
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267647"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Listen einer Website auflisten
 
 Rufen Sie die Sammlung aller [Listen][] für eine [Website][] auf.
 
 [Listen]: ../resources/list.md
-[site]: ../resources/site.md
+[Website]: ../resources/site.md
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -36,7 +37,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 #### <a name="request"></a>Anforderung
 
-<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
@@ -75,6 +76,13 @@ Content-type: application/json
   ]
 }
 ```
+
+## <a name="remarks"></a>Bemerkungen
+
+Listen mit dem [System][]-Facet sind standardmäßig ausgeblendet.
+Fügen Sie `system` in Ihre `$select`-Anweisung ein, um sie aufzulisten.
+
+[System]: ../resources/systemFacet.md
 
 <!-- {
   "type": "#page.annotation",

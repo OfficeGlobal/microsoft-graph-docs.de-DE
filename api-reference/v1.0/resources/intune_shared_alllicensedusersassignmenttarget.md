@@ -16,7 +16,7 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
   "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
 }
 -->

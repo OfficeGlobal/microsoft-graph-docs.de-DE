@@ -13,15 +13,15 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line/clear
-POST /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/line/clear
-POST /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines/format/line/clear
+POST /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line/clear
+POST /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/line/clear
+POST /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorgridlines/format/line/clear
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -39,15 +39,14 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "chartlineformat_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line/clear
 ```
 
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

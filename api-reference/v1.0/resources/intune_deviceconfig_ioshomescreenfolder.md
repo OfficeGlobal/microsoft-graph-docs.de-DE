@@ -18,7 +18,7 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.iosHomeScreenItem",
   "@odata.type": "microsoft.graph.iosHomeScreenFolder"
 }
 -->

@@ -23,7 +23,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -38,7 +38,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "get_workbookpivottable"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/pivotTables/{id}
+GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/pivotTables/{id}
 ```
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.

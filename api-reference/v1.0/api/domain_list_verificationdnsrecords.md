@@ -33,8 +33,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.i
 
 | Name      |Beschreibung|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
-| Content-Type  | application/json |
+| Autorisierung  | Bearer {token}. Erforderlich. |
+| Inhaltstyp  | application/json |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -52,7 +52,7 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine
   "name": "get_verificationdnsrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/domains/contoso.com/verificationDnsRecords
+GET https://graph.microsoft.com/v1.0/domains/{domain-name}/verificationDnsRecords
 ```
 
 ##### <a name="response"></a>Antwort

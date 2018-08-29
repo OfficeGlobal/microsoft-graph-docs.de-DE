@@ -14,13 +14,14 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
+DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
+DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{other-group-id}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile         | Wert                      |
 |:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Erforderlich.  
+| Autorisierung  | Bearer {token}. Erforderlich.  
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -30,16 +31,14 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zu
 
 ## <a name="example"></a>Beispiel
 #### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein paar Beispiele der Anforderung.
+Nachfolgend sehen Sie ein Beispiel der Anforderung.
 
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{id}
-
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{id}
+DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
 ```
 
 #### <a name="response"></a>Antwort

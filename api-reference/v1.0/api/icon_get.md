@@ -22,7 +22,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -46,7 +46,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.icon"
+  "@odata.type": "microsoft.graph.workbookIcon"
 } -->
 ```http
 HTTP/1.1 200 OK

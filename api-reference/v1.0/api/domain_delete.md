@@ -29,8 +29,8 @@ DELETE /domains/{id}
 
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
-| Content-Type  | application/json |
+| Autorisierung  | Bearer {token}. Erforderlich. |
+| Inhaltstyp  | application/json |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -45,6 +45,7 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zu
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "delete_domain"
 }-->
 ```http

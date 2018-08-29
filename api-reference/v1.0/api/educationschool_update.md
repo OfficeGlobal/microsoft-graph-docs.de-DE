@@ -19,8 +19,8 @@ PATCH /education/schools/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Erforderlich.  |
-| Content-Type  | application/json  |
+| Autorisierung  | Bearer {token}. Erforderlich.  |
+| Inhaltstyp  | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Geben Sie aus Gründen der Leistung vorhandene Werte, die nicht geändert wurden, nicht an.
@@ -51,7 +51,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "update_educationschool"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/schools/10002
+PATCH https://graph.microsoft.com/v1.0/education/schools/{school-id}
 Content-type: application/json
 Content-length: 292
 

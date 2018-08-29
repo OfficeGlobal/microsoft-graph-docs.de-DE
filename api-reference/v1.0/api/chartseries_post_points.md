@@ -13,13 +13,13 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
+POST /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -37,7 +37,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "create_chartpoints_from_chartseries"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points
 Content-type: application/json
 Content-length: 3
 
@@ -50,7 +50,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartPoint"
+  "@odata.type": "microsoft.graph.workbookChartPoint"
 } -->
 ```http
 HTTP/1.1 201 Created

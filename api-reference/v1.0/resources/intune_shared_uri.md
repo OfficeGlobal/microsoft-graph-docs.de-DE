@@ -12,12 +12,10 @@ Noch nicht dokumentiert
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.uri"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.uri",

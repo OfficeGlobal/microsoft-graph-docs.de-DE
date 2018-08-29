@@ -13,14 +13,14 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range/format/protection
+PATCH /workbook/names/{name}/range/format/protection
 PATCH /workbook/worksheets/{id|name}/range(<address>)/format/protection
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ```
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -42,7 +42,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "update_formatprotection"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/protection
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/protection
 Content-type: application/json
 Content-length: 45
 
@@ -56,7 +56,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.formatProtection"
+  "@odata.type": "microsoft.graph.workbookFormatProtection"
 } -->
 ```http
 HTTP/1.1 200 OK

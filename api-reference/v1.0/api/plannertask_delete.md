@@ -13,12 +13,12 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /planner/tasks/<id>
+DELETE /planner/tasks/{id}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | If-Match  | Letzter bekannter ETag-Wert für die zu löschende **plannerTask**. Erforderlich.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -38,7 +38,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "delete_plannertask"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/planner/tasks/<id>
+DELETE https://graph.microsoft.com/v1.0/planner/tasks/{id}
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
 ##### <a name="response"></a>Antwort

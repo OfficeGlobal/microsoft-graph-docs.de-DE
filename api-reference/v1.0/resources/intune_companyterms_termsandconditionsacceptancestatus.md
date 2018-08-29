@@ -15,9 +15,9 @@ Eine termsAndConditionsAcceptanceStatus-Entität stellt den Annahmestatus einer 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner der Entität.|
-|userDisplayName|String|Anzeigename des Benutzers, dessen Annahme die Entität darstellt.|
-|acceptedVersion|Int32|Die neueste Versionsnummer der vom Benutzer akzeptierten Geschäftsbedingungen.|
+|id|Zeichenfolge|Eindeutiger Bezeichner der Entität|
+|userDisplayName|String|Anzeigename des Benutzers, dessen Zustimmung die Entität darstellt|
+|acceptedVersion|Int32|Die Versionsnummer der neuesten Version der Geschäftsbedingungen, die der Benutzer akzeptiert hat|
 |acceptedDateTime|DateTimeOffset|Datum und Uhrzeit, zu der die Nutzungsbedingungen zuletzt vom Benutzer akzeptiert wurden.|
 
 ## <a name="relationships"></a>Beziehungen
@@ -27,12 +27,12 @@ Eine termsAndConditionsAcceptanceStatus-Entität stellt den Annahmestatus einer 
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.termsAndConditionsAcceptanceStatus"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",

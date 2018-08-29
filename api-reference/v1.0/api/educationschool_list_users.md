@@ -22,7 +22,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.i
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Erforderlich.  |
+| Autorisierung  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -36,7 +36,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "get_users"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/schools/10002/users
+GET https://graph.microsoft.com/v1.0/education/schools/{school-id}/users
 ```
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. 

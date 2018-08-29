@@ -24,7 +24,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.i
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.
@@ -41,10 +41,11 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein 
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["bac262b7-485d-4739-b436-e31467d64fac"],
   "name": "update_outlookcategory"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/outlook/masterCategories('bac262b7-485d-4739-b436-e31467d64fac')
+PATCH https://graph.microsoft.com/v1.0/me/outlook/masterCategories/bac262b7-485d-4739-b436-e31467d64fac
 Content-type: application/json
 Content-length: 30
 

@@ -13,12 +13,10 @@ Windows Information Protection – Proxydomänensammlung
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionProxiedDomainCollection"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionProxiedDomainCollection",

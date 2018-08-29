@@ -2,7 +2,7 @@
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Hierbei handelt es sich um die Ressource für Rollendefinitionen. Die Rollendefinition bildet die Grundlage für rollenbasierten Zugriff in Intune. Eine Rolle kombiniert eine Intune-Ressource wie beispielsweise eine mobile App mit den zur Rolle gehörenden Rollenberechtigungen, beispielsweise „Erstellen“ oder „Lesen“. Es gibt zwei Arten von Rollen: integrierte Rollen und benutzerdefinierte Rollen. Integrierte Rollen können nicht geändert werden. Sowohl integrierte Rollen als auch benutzerdefinierte Rollen werden nur durchgesetzt, wenn Zuweisungen vorhanden sind. Erstellen Sie eine benutzerdefinierte Rolle, wenn Sie eine Rolle definieren möchten, die beliebige der verfügbaren Ressourcen und Rollenberechtigungen in einer einzigen Rolle zusammenfasst.
+Die Rollendefinitionsressource. Die Rollendefinition bildet die Grundlage für rollenbasierten Zugriff in Intune. In der Rolle wird eine Intune-Ressource wie z. B. eine mobile App mit den zugehörigen Rollenberechtigungen, wie „Erstellen“ oder „Lesen“, für die Ressource kombiniert. Es gibt zwei Arten von Rollen: integrierte und benutzerdefinierte Rollen. Integrierte Rollen können nicht geändert werden. Für integrierte wie für benutzerdefinierte Rollen müssen Zuweisungen erzwungen werden. Erstellen Sie eine benutzerdefinierte Rolle, wenn Sie eine Rolle definieren möchten, die beliebige der verfügbaren Ressourcen und Rollenberechtigungen in einer einzigen Rolle zusammenfasst.
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -15,7 +15,7 @@ Hierbei handelt es sich um die Ressource für Rollendefinitionen. Die Rollendefi
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität. Er ist schreibgeschützt und wird automatisch generiert.|
+|id|Zeichenfolge|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert.|
 |displayName|String|Anzeigename der Rollendefinition|
 |description|String|Beschreibung der Rollendefinition|
 |rolePermissions|Sammlung von Objekten des Typs [rolePermission](../resources/intune_rbac_rolepermission.md)|Liste der Rollenberechtigungen, die dieser Rolle erteilt wurden. Diese müssen mit dem Wert für „actionName“ übereinstimmen, der als Teil von „rolePermission“ festgelegt wurde.|
@@ -27,13 +27,13 @@ Hierbei handelt es sich um die Ressource für Rollendefinitionen. Die Rollendefi
 |roleAssignments|Sammlung von Objekten des Typs [roleAssignment](../resources/intune_rbac_roleassignment.md)|Liste der Rollenzuweisungen für die Rollendefinition|
 
 ## <a name="json-representation"></a>JSON-Darstellung
-Unten sehen Sie eine JSON-Darstellung der Ressource.
-<!-- {
+Es folgt eine JSON-Darstellung der Ressource.
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.roleDefinition"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.roleDefinition",

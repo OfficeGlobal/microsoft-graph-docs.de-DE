@@ -24,7 +24,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.i
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -37,10 +37,11 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein 
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["de912e4d-c790-4da9-949c-ccd933aaa0f7"],
   "name": "get_outlookcategory"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories('de912e4d-c790-4da9-949c-ccd933aaa0f7')
+GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories/de912e4d-c790-4da9-949c-ccd933aaa0f7
 ```
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.

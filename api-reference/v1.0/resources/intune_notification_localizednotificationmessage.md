@@ -17,21 +17,21 @@ Der Textinhalt einer Benachrichtigungsvorlage für das angegebene Gebietsschema.
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
-|locale|Zeichenfolge|Das Gebietsschema für das diese Nachricht bestimmt ist.|
-|subject|Zeichenfolge|Die Vorlage für den Betreff der Nachricht.|
-|messageTemplate|Zeichenfolge|Die Vorlage für den Inhalt der Nachricht.|
-|isDefault|Boolescher Wert|Die Kennzeichnung gibt an, ob dies das Standard-Gebietsschema für die Fallbacksprache ist. Dieser Kennzeichnung kann nur festgelegt werden. Um die Festlegung aufzuheben, setzen Sie diese Eigenschaft bei einer anderen lokalisierten Benachrichtigung auf „true“.|
+|Gebietsschema|String|Das Gebietsschema für das diese Nachricht bestimmt ist.|
+|subject|String|Die Vorlage für den Betreff der Nachricht.|
+|messageTemplate|String|Die Vorlage für den Inhalt der Nachricht.|
+|isDefault|Boolean|Die Kennzeichnung gibt an, ob dies das Standard-Gebietsschema für die Fallbacksprache ist. Dieser Kennzeichnung kann nur festgelegt werden. Um die Festlegung aufzuheben, setzen Sie diese Eigenschaft bei einer anderen lokalisierten Benachrichtigung auf „true“.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.localizedNotificationMessage"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.localizedNotificationMessage",

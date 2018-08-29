@@ -15,19 +15,19 @@ Die Zuweisungsentität für die Gerätekonfiguration weist eine AAD-Gruppe einer
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Der Schlüssel der Zuweisung.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Das Zuweisungsziel für die Gerätekonfiguration.|
+|id|Zeichenfolge|Schlüssel der Zuweisung|
+|Ziel|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Das Zuweisungsziel für die Gerätekonfiguration.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceConfigurationAssignment"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",

@@ -13,12 +13,10 @@ Windows Information Protection – Ressourcensammlung
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionResourceCollection"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionResourceCollection",

@@ -20,7 +20,7 @@ workbook-session-id: {session-id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. | | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
+| Autorisierung  | Bearer {token}. Erforderlich. | | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 | Arbeitsmappensitzungs-ID | Arbeitsmappensitzungs-ID zum Schließen |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -61,3 +61,11 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Warning: close_excel_session//api-reference/v1.0/api/workbook_closesession.md:
+      Request includes a non-standard header: workbook-session-id"
+  ]
+}-->

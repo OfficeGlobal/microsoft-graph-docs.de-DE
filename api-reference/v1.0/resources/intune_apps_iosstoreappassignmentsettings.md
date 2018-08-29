@@ -17,7 +17,7 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.mobileAppAssignmentSettings",
   "@odata.type": "microsoft.graph.iosStoreAppAssignmentSettings"
 }
 -->

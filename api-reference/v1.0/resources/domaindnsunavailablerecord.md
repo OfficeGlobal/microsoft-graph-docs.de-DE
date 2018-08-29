@@ -1,28 +1,24 @@
-# domainDnsUnavailableRecord-Ressourcentyp
-<a id="domaindnsunavailablerecord-resource-type" class="xliff"></a>
+# <a name="domaindnsunavailablerecord-resource-type"></a>domainDnsUnavailableRecord-Ressourcentyp
 
 Wenn Sie die Navigationseigenschaft **serviceConfigurationRecords** für eine [Domain](domain.md)-Entität abfragen, werden möglicherweise eine oder mehrere [DomainDnsCnameRecord](domaindnscnamerecord.md)-, [DomainDnsMxRecord](domaindnsmxrecord.md)-, [DomainDnsSrvRecord](domaindnssrvrecord.md)- und/oder [DomainDnsTxtRecord](domaindnstxtrecord.md)-Entitäten zurückgegeben. Diese Entitäten geben die DNS-Einträge an, die Sie der Zonendatei der Domäne hinzufügen müssen, bevor die Domäne von Microsoft-Onlinediensten verwendet werden kann. Wenn es nicht möglich ist, solche Entitäten zu generieren, wird stattdessen eine DomainDnsUnavailableRecord-Entität zurückgegeben. Geerbt von der Entität [DomainDnsRecord](domaindnsrecord.md).
 
-## Methoden
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>Methoden
 Direkte Abfragen dieser Ressource werden nicht unterstützt. Informationen zum Abfragen von Domänendiensteinträgen finden Sie im Thema [Domäne](domain.md).
 
-## Eigenschaften
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|description|String|Gibt den Grund an, warum die **DomainDnsUnavailableRecord**-Entität zurückgegeben wird. |
+|Beschreibung|String|Gibt den Grund an, warum die **DomainDnsUnavailableRecord**-Entität zurückgegeben wird. |
 
-## Beziehungen
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>Beziehungen
 Keine
 
-## JSON-Darstellung
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -31,15 +27,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```json
 {
-  "canonicalName": "String",
-  "description": "String",
-  "id": "String (identifier)",
-  "isOptional": true,
-  "label": "String",
-  "recordType": "String",
-  "supportedService": "String",
-  "text": "String",
-  "ttl": 1024
+  "description": "String"
 }
 
 ```

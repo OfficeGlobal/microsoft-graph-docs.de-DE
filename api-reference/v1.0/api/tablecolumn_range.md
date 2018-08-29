@@ -13,14 +13,14 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/{id|name}/Range
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
+POST /workbook/tables/{id|name}/columns/{id|name}/range
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/range
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -33,12 +33,14 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das 
 Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "tablecolumn_range"
+  "isComposable": true,
+  "name": "tablecolumn_range",
+  "idempotent": true
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/Range
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range
 ```
 
 ##### <a name="response"></a>Antwort
@@ -46,7 +48,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

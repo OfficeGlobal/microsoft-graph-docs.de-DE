@@ -23,13 +23,13 @@ Dieser Ressourcentyp definiert eine Operation oder eine Aktion, die auf eine Int
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
-Unten sehen Sie eine JSON-Darstellung der Ressource.
-<!-- {
+Es folgt eine JSON-Darstellung der Ressource.
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.resourceOperation"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.resourceOperation",

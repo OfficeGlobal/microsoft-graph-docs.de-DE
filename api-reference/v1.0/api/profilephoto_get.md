@@ -59,19 +59,18 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 
 ## <a name="parameters"></a>Parameter
 
-|**Parameter**|**Typ**|**Beschreibung**|
+|Parameter|Typ|Beschreibung|
 |:-----|:-----|:-----|
-|_URL-Parameter_|
 |size  |String  | Eine Fotogröße. Die unterstützten Größen der HD-Fotos in Office 365 sind wie folgt: „48x48“, „64x64“, „96x96“, „120x120“, „240x240“, 
 „360x360“, „432x432“, „504x504“ und „648x648“. Fotos können eine beliebige Größe aufweisen, wenn sie in Azure Active Directory gespeichert sind. |
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

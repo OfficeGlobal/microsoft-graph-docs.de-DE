@@ -14,12 +14,10 @@ In Netzwerknutzungsregeln können Unternehmen angeben, wie verwaltete Apps Netzw
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosNetworkUsageRule"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosNetworkUsageRule",

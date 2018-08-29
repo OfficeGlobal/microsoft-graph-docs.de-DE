@@ -19,7 +19,7 @@ DELETE /users/{id}/inferenceClassification/overrides/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -33,6 +33,7 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zu
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["98f5bdef-576a-404d-a2ea-07a3cf34af4r"],
   "name": "delete_inferenceclassificationoverride"
 }-->
 ```http

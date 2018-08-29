@@ -16,7 +16,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/renew
+POST /groups/{id}/renew
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
@@ -42,7 +42,7 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zu
   "name": "group_renew"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/renew
+POST https://graph.microsoft.com/v1.0/groups/{id}/renew
 ```
 
 ##### <a name="response"></a>Antwort

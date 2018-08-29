@@ -15,13 +15,13 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/mailFolders/inbox/messagerules/{id}
-PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
+PATCH /me/mailFolders/inbox/messageRules/{id}
+PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 ```
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -45,11 +45,11 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das 
 Im folgenden Beispiel werden der Name der Regel sowie die Aktionen, die für diese Regel ausgeführt werden sollen, im [Beispiel](messagerule_get.md#example) in [Regel abrufen](messagerule_get.md) von der Weiterleitung an eine Adresse zur Markierung ihrer Wichtigkeit in „Hoch“ geändert. 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["inbox", "AQAAAJ5dZqA="],
   "name": "update_messagerule"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')
-
+PATCH https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=
 Content-type: application/json
 
 {

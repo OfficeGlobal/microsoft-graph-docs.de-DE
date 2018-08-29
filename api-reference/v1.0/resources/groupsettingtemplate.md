@@ -13,7 +13,7 @@ Gruppeneinstellungsvorlagen stellen systemdefinierte Einstellungen dar, die für
 
 | Eigenschaft | Typ | Beschreibung |
 |:---------------|:--------|:----------|
-|description|Zeichenfolge| Beschreibung der Vorlage. |
+|Beschreibung|Zeichenfolge| Beschreibung der Vorlage. |
 |displayName|Zeichenfolge| Anzeigename der Vorlage. |
 |id|Zeichenfolge| Der eindeutige Bezeichner für die Vorlage. Schreibgeschützt.|
 |values|[settingTemplateValue](settingtemplatevalue.md)-Sammlung| Sammlung von settingTemplateValues, die den Satz der verfügbaren Einstellungen, Standardwerte und Typen auflistet, die diese Vorlage bilden. |
@@ -27,11 +27,12 @@ Keine.
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.groupSettingTemplate"
 }-->
 

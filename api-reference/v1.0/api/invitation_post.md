@@ -25,8 +25,8 @@ POST /invitations
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Erforderlich.  |
-| Content-Type  | application/json  |
+| Autorisierung  | Bearer {token}. Erforderlich.  |
+| Inhaltstyp  | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung eines [invitation](../resources/invitation.md)-Objekts an.
@@ -65,7 +65,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.invitations"
+  "@odata.type": "microsoft.graph.invitation"
 } -->
 ```http
 HTTP/1.1 201 OK
@@ -95,3 +95,11 @@ Content-length: 551
   "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
 }
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: create_user_from_users/invitedUser:
+      Property 'invitedUser' is of type Custom but has no custom members."
+  ]
+}-->

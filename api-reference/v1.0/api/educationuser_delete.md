@@ -20,7 +20,7 @@ DELETE /education/users/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Erforderlich.  |
+| Autorisierung  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -37,7 +37,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "delete_educationuser"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/users/13019
+DELETE https://graph.microsoft.com/v1.0/education/users/{user-id}
 ```
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. 

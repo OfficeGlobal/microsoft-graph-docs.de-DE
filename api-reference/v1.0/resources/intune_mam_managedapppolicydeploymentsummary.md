@@ -12,23 +12,23 @@ ManagedAppEntity ist der Basisentitätstyp für alle anderen Entitätstypen im A
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|String|Noch nicht dokumentiert.|
-|configurationDeployedUserCount|Int32|Noch nicht dokumentiert.|
-|lastRefreshTime|DateTimeOffset|Noch nicht dokumentiert.|
-|configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](../resources/intune_mam_managedapppolicydeploymentsummaryperapp.md)-Sammlung|Noch nicht dokumentiert.|
-|id|String|Schlüssel der Entität.|
-|version|String|Version der Entität|
+|displayName|Zeichenfolge|Noch nicht dokumentiert|
+|configurationDeployedUserCount|Int32|Noch nicht dokumentiert|
+|lastRefreshTime|DateTimeOffset|Noch nicht dokumentiert|
+|configurationDeploymentSummaryPerApp|Collection von Objekten des Typs [managedAppPolicyDeploymentSummaryPerApp](../resources/intune_mam_managedapppolicydeploymentsummaryperapp.md)|Noch nicht dokumentiert|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Version|String|Version der Entität|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummary",

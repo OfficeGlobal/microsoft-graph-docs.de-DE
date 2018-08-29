@@ -7,7 +7,7 @@ Schlüssel-Wert-Paar zum Speichern benutzerdefinierter Einstellungen
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |name|Zeichenfolge|Namen für dieses Schlüssel-Wert-Paar|
-|value|Zeichenfolge|Wert für dieses Schlüssel-Wert-Paar|
+|Wert|Zeichenfolge|Wert für dieses Schlüssel-Wert-Paar|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -15,7 +15,6 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.keyValuePair"
 }
 -->

@@ -21,8 +21,8 @@ POST /groups/{id}/conversations
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Erforderlich.  |
-| Content-Type  | application/json  |
+| Autorisierung  | Bearer {token}. Erforderlich.  |
+| Inhaltstyp  | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [conversation](../resources/conversation.md)-Objekts an, das einen [conversationThread](../resources/conversationThread.md) und einen [post](../resources/post.md) enthält.
@@ -37,10 +37,11 @@ Die Antwort enthält die IDs für die neue Unterhaltung und den Thread, die Sie 
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["29981b6a-0e57-42dc-94c9-cd24f5306196"],
   "name": "create_conversation_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations
+POST https://graph.microsoft.com/v1.0/groups/29981b6a-0e57-42dc-94c9-cd24f5306196/conversations
 Content-type: application/json
 
 {

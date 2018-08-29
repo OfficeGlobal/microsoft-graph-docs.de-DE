@@ -14,14 +14,14 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/tasks
-GET /users/<id>/planner/tasks
+GET /users/{id}/planner/tasks
 GET /drive/root/createdByUser/planner/tasks
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

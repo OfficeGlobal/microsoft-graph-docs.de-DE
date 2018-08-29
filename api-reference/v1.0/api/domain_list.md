@@ -22,8 +22,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.i
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Erforderlich.|
-| Annehmen         | application/json; |
+| Autorisierung  | Bearer {token}. Erforderlich.|
+| Accept         | application/json; |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -63,7 +63,7 @@ Content-length: 245
       "isDefault": true,
       "isInitial": true,
       "isRoot": true,
-      "name": "contoso.com",
+      "id": "contoso.com",
       "supportedServices": [
         "Email",
         "OfficeCommunicationsOnline"

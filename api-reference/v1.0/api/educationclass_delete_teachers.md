@@ -19,7 +19,7 @@ DELETE /education/classes/{id}/teachers/{userId}/$ref
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Erforderlich.  |
+| Autorisierung  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -36,7 +36,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "create_educationclass_from_educationschool"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/classes/<id>/teachers/14012
+DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers/{teacher-id}
 ```
 
 ##### <a name="response"></a>Antwort

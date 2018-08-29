@@ -3,17 +3,18 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Entfernen des Zugriffs auf ein Element
-ms.openlocfilehash: cf573b49edc326ca221545657b29b1f2e86ba417
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 011345afb9789b0ff2927704a1e678f39656a719
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268620"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>Löschen einer Freigabeberechtigung aus einer Datei oder einem Ordner
 
-Entfernen Sie den Zugriff auf ein [DriveItem](../resources/driveitem.md).
+Löschen Sie den Zugriff auf ein [DriveItem](../resources/driveitem.md).
 
-Es können nur **nicht** vererbte Freigabeberechtigungen gelöscht werden.
+Es können nur **nicht** vererbte Berechtigungen gelöscht werden.
 Die Eigenschaft **inheritedFrom** muss auf `null` gesetzt sein.
 
 ## <a name="permissions"></a>Berechtigungen
@@ -42,7 +43,7 @@ DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | Name          | Typ   | Beschreibung                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | string | Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag (oder cTag) nicht mit dem aktuellen Tag des Elements übereinstimmt, wird die Antwort `412 Precondition Failed` zurückgegeben, und das Element wird nicht gelöscht. |
+| if-match      | Zeichenfolge | Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag (oder cTag) nicht mit dem aktuellen Tag des Elements übereinstimmt, wird die Antwort `412 Precondition Failed` zurückgegeben, und das Element wird nicht gelöscht. |
 
 ## <a name="response"></a>Antwort
 
@@ -50,12 +51,12 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zu
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die als {perm-id} identifizierte Berechtigung des Elements {item-id} vom OneDrive des aktuellen Benutzers entfernt.
+In diesem Beispiel wird die als {perm-id} identifiziert Berechtigung des Elements {item-id} vom OneDrive des aktuellen Benutzers entfernt.
 
-<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite" }-->
+<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite", "tags": "service.graph" }-->
 
 ```http
-DELETE /me/drive/root/items/{item-id}/permissions/{perm-id}
+DELETE /me/drive/items/{item-id}/permissions/{perm-id}
 ```
 
 ### <a name="response"></a>Antwort
@@ -66,7 +67,7 @@ DELETE /me/drive/root/items/{item-id}/permissions/{perm-id}
 HTTP/1.1 204 No Content
 ```
 
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
 * [Laufwerke](../resources/drive.md) mit dem**driveType** `personal` (OneDrive Personal) können keine Berechtigungen am Stamm-DriveItem erstellen oder ändern. 
 

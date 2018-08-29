@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Laufwerk abrufen
-ms.openlocfilehash: 91a140dbcb1550bc850656452a6fa24a84dd5500
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 4c77a1ef801fa65edf77376d421cafa3ff79f3d4
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23269432"
 ---
 # <a name="get-drive"></a>Laufwerk abrufen
 
@@ -27,13 +28,13 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 ## <a name="get-current-users-onedrive"></a>Abrufen des OneDrive des aktuellen Benutzers
 
-Über den `me`-Singleton kann auf das Laufwerk des angemeldeten Benutzers (bei der Verwendung einer delegierten Authentifizierung) zugegriffen werden.
+Das Über den `me`-Singleton kann auf das Laufwerk des angemeldeten Benutzers (bei der Verwendung einer delegierten Authentifizierung) zugegriffen werden.
 
 Wenn das OneDrive eines Benutzers nicht bereitgestellt ist, der Benutzer jedoch über eine Lizenz für OneDrive verfügt, wird über diese Anforderung das Laufwerk des Benutzers automatisch bereitgestellt, wenn eine delegierte Authentifizierung verwendet wird.
 
 ### <a name="http-request"></a>HTTP-Anforderung
 
-<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive
@@ -47,7 +48,7 @@ Wenn das OneDrive eines Benutzers nicht bereitgestellt ist, der Benutzer jedoch 
 
 ### <a name="http-request"></a>HTTP-Anforderung
 
-<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /users/{idOrUserPrincipalName}/drive
@@ -61,11 +62,11 @@ GET /users/{idOrUserPrincipalName}/drive
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>Dient zum Abrufen der Dokumentbibliothek, die einer Gruppe zugeordnet ist.
 
-Für den Zugriff auf die Standarddokumentbibliothek einer Gruppe fordert Ihre App die **drive**-Beziehung in der Gruppe an.
+Für den Zugriff auf die Standarddokumentbibliothek einer **Gruppe** fordert Ihre App die drive-Beziehung in der Gruppe an.
 
 ### <a name="http-request"></a>HTTP-Anforderung
 
-<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /groups/{groupId}/drive
@@ -102,7 +103,7 @@ Wenn Sie die eindeutige ID für ein Laufwerk besitzen, können Sie direkt über 
 <!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
 
 ```http
-GET /drives/{driveId}
+GET /drives/{drive-id}
 ```
 
 ### <a name="path-parameters"></a>Pfadparameter
@@ -117,7 +118,7 @@ Diese Methode unterstützt die [$select-Abfrageparameter] [ odata-query-paramete
 
 ## <a name="http-response"></a>HTTP-Antwort
 
-Diese Methoden geben eine [Drive-Ressource][drive-resource] für das entsprechende Laufwerk im Antworttext zurück.
+Diese Methoden gebeneine [Drive-Ressource][drive-resource] für das entsprechende Laufwerk im Antworttext zurück.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive", "truncated": true, "name": ["get-drive-by-id", "get-drive-by-group", "get-drive-by-user", "get-drive-default"] } -->
 
@@ -155,5 +156,13 @@ Wenn das Laufwerk nicht vorhanden ist und nicht automatisch bereitgestellt werde
   "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
+  "suppressions": [
+      "Warning: /api-reference/v1.0/api/drive_get.md:
+        Unable to map some markdown elements into schema.
+            Unmapped methods:
+        get-drive-default, get-drive-by-user, get-drive-by-group, get-drive-by-id
+            Unmapped tables:
+        Permissions - AuthScopes, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters"
+  ],
   "tocPath": "Drives/Get drive"
 } -->
