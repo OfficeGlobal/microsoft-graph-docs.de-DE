@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 ms.topic: conceptual
-ms.openlocfilehash: 30f98afa7b75784b0ee2b9ec446c6389cc876949
-ms.sourcegitcommit: af8fdd5ea762fb54b7fbebb9a70bd942a56c6b7a
+ms.openlocfilehash: 2dc0ecdf553b41b92202a2d5835108f2861adfa2
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "19473153"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23280760"
 ---
 # <a name="working-with-long-running-actions-beta"></a>Arbeiten mit langen Aktionen (Beta)
 
@@ -64,7 +64,7 @@ Wenn die App jedoch den Status des Kopiervorgangs anzeigen oder sicherstellen mu
 Um den Status des Kopiervorgang zu überprüfen, stellt die App eine Anforderung an die URL, die in der vorherigen Antwort bereitgestellt wurde.
 *Hinweis:* Diese Anforderung erfordert keine Authentifizierung, da die URL kurzlebig und einzigartig für den ursprünglichen Aufrufer ist. 
 
-<!-- { "blockType": "request", "name": "lro-check-status", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "lro-check-status", "scopes": "files.readwrite" } -->
 
 ```http
 GET https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
@@ -93,7 +93,7 @@ Die App kann die Überwachungs-URL weiterhin abfragen, um Statusupdates anzuford
 Nach einigen Sekunden ist der Kopiervorgang abgeschlossen.
 Wenn die App nun die Überwachungs-URL abfragt, ist die Antwort eine Weiterleitung zum Endergebnis der Aktion.
 
-<!-- { "blockType": "request", "name": "lro-check-status-complete", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "lro-check-status-complete", "scopes": "files.readwrite" } -->
 
 ```http
 GET https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
@@ -119,13 +119,17 @@ Content-type: application/json
 Nachdem der Auftrag abgeschlossen wurde, gibt die Überwachungs-URL die Ressourcen-ID des Ergebnisses zurück, in diesem Fall die neue Kopie des ursprünglichen Elements.
 Sie können dieses neue Element mithilfe der Ressourcen-ID ansprechen. Beispiel:
 
-<!-- { "blockType": "request", "name": "lro-copy-item-example-complete", "scopes": "files.readwrite" } -->
+<!-- {
+  "blockType": "request",
+  "name": "lro-copy-item-example-complete",
+  "scopes": "files.readwrite"
+} -->
 
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/01MOWKYVJML57KN2ANMBA3JZJS2MBGC7KM
+GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 ```
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem" } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -159,5 +163,11 @@ Die gleichen [Berechtigungen](./permissions_reference.md), die für die Ausführ
   "description": "Monitor the progress of long-running actions in the API.",
   "keywords": "monitor,long,running,operation,action",
   "section": "documentation",
+  "suppressions": [
+    "Error: lro-check-status:
+      Unable to locate a definition for resource type: microsoft.graph.asyncJobStatus",
+    "Error: lro-check-status-complete:
+      Unable to locate a definition for resource type: microsoft.graph.asyncJobStatus"
+  ],
   "tocPath": "Concepts/Long running actions"
 } -->

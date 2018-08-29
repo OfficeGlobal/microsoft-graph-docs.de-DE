@@ -279,7 +279,7 @@ content-length: 96
     ],
     "attachments": [
       {
-        "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+        "@odata.type": "microsoft.graph.fileAttachment",
         "name": "menu.txt",
         "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
       }
@@ -294,4 +294,4 @@ Die Anforderungsnutzlast enthält die Eingabe für die `sendMail`-Aktion, welche
 ## <a name="use-microsoft-graph-client-libraries"></a>Verwenden von Microsoft Graph-Clientbibliotheken
 Sie bevorzugen die Benutzerfreundlichkeit und die leistungsstarken Funktionen von SDKs? Zwar können Sie Microsoft Graph jederzeit über die REST-API aufrufen; wir stellen jedoch auch SDKs für viele beliebte Plattformen zur Verfügung.
 
-Informieren Sie sich unter diesem Link über unsere [SDKs](https://graph.microsoft.io/de-DE/code-samples-and-sdks).
+Informieren Sie sich unter diesem Link über unsere [SDKs](https://graph.microsoft.io/en-us/code-samples-and-sdks).

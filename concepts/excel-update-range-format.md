@@ -11,6 +11,7 @@ Diese Anforderung aktualisiert die vertikale Ausrichtung, die Zeilenhöhe und Sp
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat"
 }-->
 ```http
@@ -29,7 +30,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFormat"
+  "@odata.type": "microsoft.graph.workbookRangeFormat"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -49,6 +50,7 @@ Diese Anforderung aktualisiert die Schriftart, Größe und Farbe der ersten Zell
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_font"
 }-->
 ```http
@@ -66,7 +68,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFont"
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -87,6 +89,7 @@ Diese Anforderung aktualisiert die Hintergrundfarbe der ersten Zelle.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_fill"
 }-->
 ```http
@@ -102,7 +105,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFill"
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -117,6 +120,7 @@ Diese Anforderung aktualisiert die vertikale und horizontale Ausrichtung, die Ze
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_two"
 }-->
 ```http
@@ -136,7 +140,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFormat"
+  "@odata.type": "microsoft.graph.workbookRangeFormat"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -156,6 +160,7 @@ Diese Anforderung aktualisiert den Schriftschnitt und Schriftgrad der zweiten Ze
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_font_two"
 }-->
 ```http
@@ -172,7 +177,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFont"
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -193,6 +198,7 @@ Diese Anforderung aktualisiert die Hintergrundfarbe der zweiten Zelle.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_fill_two"
 }-->
 ```http
@@ -208,7 +214,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFill"
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -224,6 +230,7 @@ Diese Anforderung aktualisiert die horizontale Ausrichtung, die vertikale Ausric
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_three"
 }-->
 ```http
@@ -243,7 +250,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFormat"
+  "@odata.type": "microsoft.graph.workbookRangeFormat"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -263,6 +270,7 @@ Diese Anforderung aktualisiert die Schriftart, Größe und Farbe der dritten Zel
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_font_three"
 }-->
 ```http
@@ -280,7 +288,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFont"
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -301,6 +309,7 @@ Diese Anforderung aktualisiert die Hintergrundfarbe der dritten Zelle.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_fill_three"
 }-->
 ```http
@@ -316,7 +325,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFill"
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 } -->
 ```http
 HTTP/1.1 200 OK

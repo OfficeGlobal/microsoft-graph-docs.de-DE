@@ -8,7 +8,7 @@ Die Delta-Abfrage unterstützt die vollständige Synchronisierung, die alle Nach
 
 Die Delta-Abfrage wird jeweils für einen Ordner durchgeführt. Um die Änderungen der Nachrichten in einer Ordnerhierarchie nachzuverfolgen, müssen Sie jeden Ordner einzeln nachverfolgen.
 
-Das Nachverfolgen von Nachrichtenänderungen in einem Ordner ist in der Regel eine Runde aus einer oder mehreren GET-Anforderungen mit der **Delta**-Funktion. Die ursprüngliche GET-Anforderung wird ähnlich wie das [Abrufen von Nachrichten](https://developer.microsoft.com/de-DE/graph/docs/api-reference/v1.0/api/user_list_messages) durchgeführt, außer dass die folgende **delta**-Funktion eingeschlossen wird:
+Das Nachverfolgen von Nachrichtenänderungen in einem Ordner ist in der Regel eine Runde aus einer oder mehreren GET-Anforderungen mit der **Delta**-Funktion. Die ursprüngliche GET-Anforderung wird ähnlich wie das [Abrufen von Nachrichten](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_messages) durchgeführt, außer dass die folgende **delta**-Funktion eingeschlossen wird:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
@@ -88,12 +88,13 @@ Die erste Anforderung gibt Folgendes an:
 - Den [optionalen Anforderungsheader](#optional-request-header), _odata.maxpagesize_, der gleichzeitig 2 Nachrichten zurückgibt.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
+  "sampleKeys": ["AQMkADNkNAAAgEMAAAA"],
   "name": "get_messages_delta_1"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$select=subject,sender,isRead HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADNkNAAAgEMAAAA/messages/delta?$select=subject,sender,isRead HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -148,12 +149,13 @@ Die Antwort enthält zwei Nachrichten und einen `@odata.nextLink`-Antwortheader.
 Die zweite Anforderung gibt die aus der vorherigen Antwort zurückgegebene `nextLink`-URL an. Beachten Sie, dass sie nicht denselben Parameter `$select` wie in der ursprünglichen Anforderung angeben muss, da das `skipToken` in der `nextLink`-URL es codiert und einschließt.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
+  "sampleKeys": ["AQMkADNkNAAAgEMAAAA"],
   "name": "get_messages_delta_2"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADNkNAAAgEMAAAA/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -208,12 +210,12 @@ Die zweite Antwort gibt die nächsten 2 Nachrichten in dem Ordner zurück und ei
 Die dritte Anforderung verwendet weiterhin die neueste aus der letzten Synchronisierungsanforderung zurückgegebene `nextLink`-URL.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
+  "sampleKeys": ["AQMkADNkNAAAgEMAAAA"],
   "name": "get_messages_delta_3"
 }-->
-
-```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
+```
+GET https://graph.microsoft.com/v1.0/me/mailFolders/AQMkADNkNAAAgEMAAAA/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -255,12 +257,13 @@ Die dritte Antwort gibt die einzige in dem Ordner verbleibende Nachricht zurück
 Mit dem `deltaLink` aus der [letzten Anforderung](#sample-third-request) in der letzten Runde können Sie nur die Nachrichten abrufen, die sich seitdem in diesem Ordner geändert haben (durch Hinzufügung, Löschung oder Aktualisierung). Ihre erste Anforderung in der nächsten Runde sieht folgendermaßen aus, sofern Sie die gleiche maximale Seitengröße in der Antwort beibehalten möchten:
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
+  "sampleKeys": ["AQMkADNkNAAAgEMAAAA"],
   "name": "get_messages_delta_next"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADNkNAAAgEMAAAA/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
