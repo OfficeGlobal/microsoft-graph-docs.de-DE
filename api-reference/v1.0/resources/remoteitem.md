@@ -3,18 +3,18 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: RemoteItem
-ms.openlocfilehash: fd324460b3486f90c342feb1c782c0cf74d77416
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 549b0804a1d6449a71d2cc870836c0d044099a38
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23264273"
 ---
 # <a name="remoteitem-resource-type"></a>RemoteItem-Ressourcentyp
 
-Die **RemoteItem**-Ressource gibt an, dass ein [**driveItem**](driveitem.md)-Element auf ein Element in einem anderen Laufwerk verweist.
-Diese Ressource stellt die eindeutigen IDs des Quelllaufwerks und des Zielelements bereit.
+Die **RemoteItem**-Ressource gibt an, dass ein [**driveItem**](driveitem.md)-Element auf ein Element in einem anderen Laufwerk verweist. Diese Ressource stellt die eindeutigen IDs des Quelllaufwerks und des Zielelements bereit.
 
-[**DriveItems**](driveitem.md) mit einem **remoteItem**-Facet ungleich Null sind Ressourcen, die freigegeben, zu OneDrive-Umgebungen von Benutzern hinzugefügt oder für Elemente von heterogenen Elementsammlungen (wie z. B. Suchergebnisse) zurückgegeben wurden.
+[**DriveItems**](driveitem.md) mit einem **remoteItem**-Facet ungleich Null sind Ressourcen, die freigegeben, zu OneDrive-Umgebungen von Benutzern hinzugefügt oder für Elemente von heterogenen Elementsammlungen (wie z. B. Suchergebnisse) zurückgegeben wurden.
 
 **Hinweis:** Im Gegensatz zu Ordnern im gleichen Laufwerk wird beim Verschieben eines **driveItem**-Elements in ein Remoteelement möglicherweise der `id`-Wert geändert.
 
@@ -39,6 +39,7 @@ Diese Ressource stellt die eindeutigen IDs des Quelllaufwerks und des Zielelemen
   "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
   "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+  "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
   "size": 1024,
   "webDavUrl": "url",
   "webUrl": "url"
@@ -50,21 +51,24 @@ Diese Ressource stellt die eindeutigen IDs des Quelllaufwerks und des Zielelemen
 | Eigenschaftenname        | Typ                                | Beschreibung                                                                                                                                                       |
 | :------------------- | :---------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdBy            | [IdentitySet](identityset.md)       | Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.                                                                                  |
-| createdDateTime      | Timestamp                           | Datum und Uhrzeit der Elementerstellung. Schreibgeschützt.                                                                                                                        |
-| file                 | [Datei](file.md)                     | Gibt an, dass das Remote-Element eine Datei ist. Schreibgeschützt.                                                                                                              |
+| createdDateTime      | Zeitstempel                           | Datum und Uhrzeit der Elementerstellung. Schreibgeschützt.                                                                                                                        |
+| Datei                 | [Datei](file.md)                     | Gibt an, dass das Remote-Element eine Datei ist. Schreibgeschützt.                                                                                                              |
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | Informationen über das Remote-Element aus dem lokalen Dateisystem. Schreibgeschützt.                                                                                          |
-| folder               | [Ordner](folder.md)                 | Gibt an, dass das Remote-Element ein Ordner ist. Schreibgeschützt.                                                                                                            |
-| id                   | String                              | Eindeutige ID für das Remote-Element in dem Laufwerk. Schreibgeschützt.                                                                                                    |
+| Ordner               | [Ordner](folder.md)                 | Gibt an, dass das Remote-Element ein Ordner ist. Schreibgeschützt.                                                                                                            |
+| ID                   | Zeichenfolge                              | Eindeutige ID für das Remote-Element in dem Laufwerk. Schreibgeschützt.                                                                                                    |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element zuletzt geändert wurde. Schreibgeschützt.                                                                            |
-| lastModifiedDateTime | Timestamp                           | Datum und Uhrzeit der letzten Änderung des Elements. Schreibgeschützt.                                                                                                              |
-| name                 | String                              | Optional. Dateiname des Remote-Elements. Schreibgeschützt.                                                                                                                 |
-| package              | [Paket](package.md)               | Zeigt wenn vorhanden an, dass das Element ein Paket ist statt eines Ordners oder einer Datei. Pakete werden in einigen Kontexten wie Dateien, in anderen Kontexten wie Ordner behandelt. Schreibgeschützt. |
+| lastModifiedDateTime | Zeitstempel                           | Datum und Uhrzeit der letzten Änderung des Elements. Schreibgeschützt.                                                                                                              |
+| Name                 | Zeichenfolge                              | Optional. Dateiname des Remote-Elements. Schreibgeschützt.                                                                                                                 |
+| Paket              | [Paket](package.md)               | Zeigt wenn vorhanden an, dass das Element ein Paket ist statt eines Ordners oder einer Datei. Pakete werden in einigen Kontexten wie Dateien, in anderen Kontexten wie Ordner behandelt. Schreibgeschützt. |
 | parentReference      | [ItemReference](itemreference.md)   | Eigenschaften des übergeordneten Elements des Remote-Elements. Schreibgeschützt.                                                                                                           |
 | shared               | [shared](shared.md)                 | Gibt an, dass das Element für andere freigegeben wurde, und enthält den „freigegeben“-Status des Elements. Schreibgeschützt.                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | Bietet Interoperabilität zwischen Elementen in OneDrive for Business und SharePoint mit vollständigem Satz an Element-IDs. Schreibgeschützt.                                          |
-| size                 | Int64                               | Größe des Remote-Elements. Schreibgeschützt.                                                                                                                               |
+| Größe                 | Int64                               | Größe des Remote-Elements. Schreibgeschützt.                                                                                                                               |
+| specialFolder        | [specialFolder][]                   | Facet, das zurückgegeben wird, wenn das aktuelle Element auch als spezieller Ordner verfügbar ist. Schreibgeschützt.                                                                     |
 | webDavUrl            | Url                                 | DAV-kompatible URL für das Element.                                                                                                                                  |
 | webUrl               | Url                                 | URL, über die die Ressource im Browser angezeigt werden kann. Schreibgeschützt.                                                                                                         |
+
+[specialFolder]: specialFolder.md
 
 ## <a name="remarks"></a>Bemerkungen
 

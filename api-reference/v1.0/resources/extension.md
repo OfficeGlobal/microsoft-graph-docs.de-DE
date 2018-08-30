@@ -7,7 +7,10 @@ Ein abstrakter Typ für die Unterstützung des offenen Typs [openTypeExtension](
 Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
+  "abstract": "true",
+  "baseType": "microsoft.graph.entity",
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
 
   ],
@@ -21,9 +24,9 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|String| Schreibgeschützt.|
+|id|Zeichenfolge| Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

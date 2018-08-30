@@ -17,7 +17,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/delta
-GET /users/<id>/mailFolders/{id}/messages/delta
+GET /users/{id}/mailFolders/{id}/messages/delta
 ```
 
 ### <a name="query-parameters"></a>Abfrageparameter
@@ -26,8 +26,8 @@ Beim Nachverfolgen von Änderungen in Nachrichten wird eine Runde von einem oder
 
 | Abfrageparameter      | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `deltaLink`-URL des vorhergehenden **delta**-Funktionsaufrufs für dieselbe Nachrichtensammlung zurückgegeben wird und den Abschluss dieser Runde der Änderungsnachverfolgung anzeigt. Speichern Sie die gesamte `deltaLink`-URL einschließlich dieses Tokens, und wenden Sie sie in der ersten Anforderung der nächsten Änderungsnachverfolgungsrunde für diese Sammlung an.|
-| $skiptoken | string | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `nextLink`-URL des vorhergehenden **delta**-Funktionsaufrufs zurückgegeben wird und anzeigt, dass in derselben Nachrichtensammlung weitere Änderungen zum Nachverfolgen vorliegen. |
+| $deltatoken | Zeichenfolge | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `deltaLink`-URL des vorhergehenden **delta**-Funktionsaufrufs für dieselbe Nachrichtensammlung zurückgegeben wird und den Abschluss dieser Runde der Änderungsnachverfolgung anzeigt. Speichern Sie die gesamte `deltaLink`-URL einschließlich dieses Tokens, und wenden Sie sie in der ersten Anforderung der nächsten Änderungsnachverfolgungsrunde für diese Sammlung an.|
+| $skiptoken | Zeichenfolge | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `nextLink`-URL des vorhergehenden **delta**-Funktionsaufrufs zurückgegeben wird und anzeigt, dass in derselben Nachrichtensammlung weitere Änderungen zum Nachverfolgen vorliegen. |
 
 #### <a name="odata-query-parameters"></a>OData-Abfrageparameter
 
@@ -36,14 +36,14 @@ Beim Nachverfolgen von Änderungen in Nachrichten wird eine Runde von einem oder
 - Es besteht eingeschränkte Unterstützung für `$filter` und `$orderby`:
   * Es werden nur die `$filter`-Ausdrücke `$filter=receivedDateTime+ge+{value}` oder `$filter=receivedDateTime+gt+{value}` unterstützt.
   * Es wird nur der `$orderby`-Ausdruck `$orderby=receivedDateTime+desc` unterstützt. Wenn Sie keinen `$orderby`-Ausdruck einschließen, ist die Rückgabereihenfolge nicht gewährleistet. 
-- `$search` wird nicht unterstützt.
+- wird nicht unterstützt.`$search`
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type  | string  | application/json. Erforderlich.  |
-| Prefer | string  | odata.maxpagesize={x}. Optional. |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Inhaltstyp  | Zeichenfolge  | application/json. Erforderlich. |
+| Bevorzugt | Zeichenfolge  | odata.maxpagesize={x}. Optional. |
 
 ## <a name="response"></a>Antwort
 
@@ -61,7 +61,6 @@ Zum Nachverfolgen von Änderungen in den Nachrichten eines Ordners führen Sie e
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
-
 Prefer: odata.maxpagesize=2
 ```
 

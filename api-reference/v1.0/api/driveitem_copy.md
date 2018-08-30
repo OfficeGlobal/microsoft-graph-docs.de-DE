@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Eine Datei oder einen Ordner kopieren
-ms.openlocfilehash: 6740091f887e42a14b2a42c99ee586af4254c473
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 2b54f183daa716f1a872f373a499368fdfd558d9
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265253"
 ---
 # <a name="copy-a-driveitem"></a>DriveItem kopieren
 
@@ -43,16 +44,16 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Name            | Wert                                          | Beschreibung                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | Optional.  Verweis auf das übergeordnete Element, in dem die Kopie erstellt wird.                                         |
-| name            | string                                         | Optional.  Der neue Name der Kopie. Wenn dieser nicht angegeben wird, wird der gleiche Namen wie für das Original verwendet.    |
+| Name            | Zeichenfolge                                         | Optional.  Der neue Name der Kopie. Wenn dieser nicht angegeben wird, wird der gleiche Namen wie für das Original verwendet.    |
 
-**Hinweis:** Die _parentReference_ sollte die Parameter `driveId` und `id` für den Zielordner enthalten.
+**Hinweis:** Die _ParentReference_ sollte die Parameter `driveId` und `id` für den Zielordner enthalten.
 
 ## <a name="example"></a>Beispiel
 
 In diesem Beispiel wird eine von `{item-id}` mit einem `driveId`- und `id`-Wert identifizierte Datei in einen Ordner kopiert.
 Die neue Kopie der Datei erhält den Namen `contoso plan (copy).txt`.
 
-<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "tags": "service.graph", "target": "action" } -->
 
 ```http
 POST /me/drive/items/{item-id}/copy

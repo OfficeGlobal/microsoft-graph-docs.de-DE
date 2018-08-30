@@ -4,14 +4,14 @@ Konfigurationseinstellungen zum automatischen Benachrichtigen des Absenders bei 
 
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|externalAudience|String| Die Zielgruppe außerhalb der Organisation des angemeldeten Benutzers, der **ExternalReplyMessage** erhält, wenn **Status** `AlwaysEnabled` oder `Scheduled` ist. Mögliche Werte: `none`, `contactsOnly`, `all`.|
-|externalReplyMessage|string|Die automatische Antwort an die angegebene externe Zielgruppe, wenn **Status** `AlwaysEnabled` oder `Scheduled` ist.|
-|internalReplyMessage|string|Die automatische Antwort an die interne Zielgruppe in der Organisation des angemeldeten Benutzers, wenn **Status** `AlwaysEnabled` oder `Scheduled` ist. |
+|externalAudience|ExternalAudienceScope| Die Benutzergruppe außerhalb der Organisation des angemeldeten Benutzers, der die **ExternalReplyMessage** erhält, wenn der **Status** `AlwaysEnabled` oder `Scheduled` ist. Mögliche Werte sind: `none`, `contactsOnly`, `all`.|
+|externalReplyMessage|Zeichenfolge|Die automatische Antwort an die angegebene externe Zielgruppe, wenn **Status** `AlwaysEnabled` oder `Scheduled` ist.|
+|internalReplyMessage|Zeichenfolge|Die automatische Antwort an die interne Zielgruppe in der Organisation des angemeldeten Benutzers, wenn **Status** `AlwaysEnabled` oder `Scheduled` ist. |
 |scheduledEndDateTime|[dateTimeTimeZone](datetimetimezone.md)|Datum und Uhrzeit, die zum Beenden der automatischen Antworten festgelegt werden, wenn **Status** auf `Scheduled` gesetzt ist. |
 |scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|Datum und Uhrzeit, die für den Beginn der automatischen Antworten festgelegt werden, wenn **Status** auf `Scheduled` gesetzt ist.|
-|status|String|Konfigurationensstatus für automatische Antworten. Mögliche Werte: `disabled`, `alwaysEnabled`, `scheduled`.|
+|Status|AutomaticRepliesStatus|Status der Konfigurationen für automatische Antworten. Mögliche Werte sind: `disabled`, `alwaysEnabled`, `scheduled`.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

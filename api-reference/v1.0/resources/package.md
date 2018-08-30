@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Paket
-ms.openlocfilehash: 33be73ed79438bdf28b76747b6efb79290be8d0c
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 12ae750a0f4fbe0e951554308d4041928c31a16d
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267542"
 ---
 # <a name="package-resource-type"></a>Package-Ressourcentyp
 
@@ -26,9 +27,11 @@ DriveItems mit dem **package**-Facet enthalten keine **folder**- oder **file**-F
 }
 ```
 
+## <a name="properties"></a>Eigenschaften
+
 | Eigenschaftenname | Typ   | Beschreibung                                                                                                                                                                      |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **type**      | string | Eine Zeichenfolge, die den Typ des Pakets angibt. Obwohl `oneNote` der einzige derzeit definierte Wert ist, sollten Sie davon ausgehen, dass andere Paketarten zurückgegeben werden, die entsprechend behandelt werden müssen. |
+| Typ          | Zeichenfolge | Eine Zeichenfolge, die den Typ des Pakets angibt. Obwohl `oneNote` der einzige derzeit definierte Wert ist, sollten Sie davon ausgehen, dass andere Paketarten zurückgegeben werden, die entsprechend behandelt werden müssen. |
 
 ## <a name="remarks"></a>Bemerkungen 
 

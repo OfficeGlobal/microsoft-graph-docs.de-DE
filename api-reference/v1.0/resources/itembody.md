@@ -5,8 +5,8 @@ Stellt Eigenschaften des Textkörpers eines Elements dar, z. B. eine Nachricht, 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Inhalt|String|Der Inhalt des Elements.|
-|contentType|Zeichenfolge|Der Typ des Inhalts. Mögliche Werte sind `Text` und `HTML`.|
+|Inhalt|Zeichenfolge|Der Inhalt des Elements.|
+|contentType|BodyType|Der Typ des Inhalts. Mögliche Werte sind `Text` und `HTML`.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

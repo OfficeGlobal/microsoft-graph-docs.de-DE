@@ -13,12 +13,12 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/UsedRange
+GET /workbook/worksheets/{id|name}/usedRange
 
 ```
 
-## <a name="optional-request-parameter"></a>Optionaler Anforderungsparameter
-Stellen Sie in der Anforderungs-URL einen optionalen Abfrageparameter bereit.
+## <a name="parameters"></a>Parameter
+In der Anforderungs-URL können Sie optionale Parameter angeben.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
@@ -27,7 +27,7 @@ Stellen Sie in der Anforderungs-URL einen optionalen Abfrageparameter bereit.
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="response"></a>Antwort
@@ -36,14 +36,16 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das 
 
 ## <a name="example"></a>Beispiel
 Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
+
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "worksheet_usedrange"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange(valuesOnly=true)
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange
 ```
 
 ##### <a name="response"></a>Antwort
@@ -51,7 +53,38 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 169
+
+{
+  "address": "address-value",
+  "addressLocal": "addressLocal-value"
+}
+```
+
+Alternativ kann diese Funktion mit dem optionalen `valuesOnly` Parameter aufgerufen werden.
+
+##### <a name="request"></a>Anforderung
+Nachfolgend sehen Sie ein Beispiel der Anforderung.
+<!--{
+  "blockType": "request",
+  "isComposable": true,
+  "name": "worksheet_usedrange_valuesonly"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange(valuesOnly=true)
+```
+
+##### <a name="response"></a>Antwort
+Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

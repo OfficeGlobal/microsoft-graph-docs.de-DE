@@ -6,9 +6,9 @@ In der folgenden Tabelle sind die drei Szenarien für den Abruf einer offenen Er
 
 |**GET-Szenario**|**Unterstützte Ressourcen**|**Antworttext**|
 |:-----|:-----|:-----|
-|Abrufen einer bestimmen Erweiterung aus einer bekannten Ressourceninstanz| [Device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md) | Nur offene Erweiterung|
-|Abrufen einer bekannten Ressourceninstanz, erweitert um eine bestimmte Erweiterung|Device, event, group, group event, group post, message, organization, personal contact, user |Eine um die offene Erweiterung erweiterte Ressourceninstanz|
-|Suchen und Erweitern von Ressourceninstanzen mit einer bestimmten Erweiterung |Event, group event, group post, message, personal contact|Um die offene Erweiterung erweiterte Ressourceninstanzen|
+|Abrufen einer bestimmen Erweiterung aus einer bekannten Ressourceninstanz| [Gerät](../resources/device.md), [Ereignis](../resources/event.md), [Guppe](../resources/group.md), [Gruppen-Ereignis](../resources/event.md), [Gruppen-Beitrag](../resources/post.md), [Nachricht](../resources/message.md), [Organisation](../resources/organization.md), [Persönlicher Kontakt](../resources/contact.md), [Benutzer](../resources/user.md) | Nur offene Erweiterung|
+|Abrufen einer bekannten Ressourceninstanz, erweitert um eine bestimmte Erweiterung|Gerät, Ereignis, Gruppe, Gruppen-Ereignis, Gruppen-Beitrag, Nachricht, Organisation, persönlicher Kontakt, Benutzer |Eine um die offene Erweiterung erweiterte Ressourceninstanz|
+|Suchen und Erweitern von Ressourceninstanzen mit einer bestimmten Erweiterung |Ereignis, Gruppen-Ereignis, Gruppen-Beitrag, Nachricht, persönlicher Kontakt|Um die offene Erweiterung erweiterte Ressourceninstanzen|
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -20,7 +20,7 @@ Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich (je n
 | [Gruppe](../resources/group.md) | Group.Read.All | [Gruppenereignis](../resources/event.md) | Group.Read.All |
 | [Gruppenbeitrag](../resources/post.md) | Group.Read.All | [Nachricht](../resources/message.md) | Mail.Read |
 | [Organisation](../resources/organization.md) | Directory.Read.All | [Privater Kontakt](../resources/contact.md) | Contacts.Read |
-| [Benutzer](../resources/user.md) | User.Read.All | | |
+| [Benutzer](../resources/user.md) | User.ReadBasic.All | | |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -83,27 +83,26 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 
 >**Hinweis:** Die obige Syntax zeigt mehrere häufig verwendete Möglichkeiten zum Identifizieren einer Ressourceninstanz oder -sammlung, um eine Erweiterung daraus zu löschen. Alle anderen Syntaxen, mit denen Sie diese Ressourceninstanzen oder -sammlungen identifizieren können, unterstützen das Löschen offener Erweiterungen daraus in einer ähnlichen Weise.
 
-## <a name="parameters"></a>Parameter
-|**Parameter**|**Typ**|**Beschreibung**|
+## <a name="path-parameters"></a>Pfadparameter
+|Parameter|Typ|Beschreibung|
 |:-----|:-----|:-----|
-|_URL parameters_|
-|Id|string|Platzhalter für einen eindeutigen Bezeichner eines Objekts in der entsprechenden Sammlung, z. B. einer Nachricht, eines Ereignisses oder eines Kontakts. Erforderlich. Nicht zu verwechseln mit der **id**-Eigenschaft einer **openTypeExtension**.|
-|extensionId|string|Platzhalter für einen Erweiterungsnamen. Ein Erweiterungsname ist der eindeutige Textbezeichner einer Erweiterung oder ein vollqualifizierter Name, der den Erweiterungstyp und den eindeutigen Textbezeichner verkettet. Der vollqualifizierte Name wird beim Erstellen der Erweiterung in der Eigenschaft **id** zurückgegeben. Erforderlich.|
+|ID|Zeichenfolge|Platzhalter für einen eindeutigen Bezeichner eines Objekts in der entsprechenden Sammlung, z. B. einer Nachricht, eines Ereignisses oder eines Kontakts. Erforderlich. Nicht zu verwechseln mit der **id**-Eigenschaft einer **openTypeExtension**.|
+|extensionId|Zeichenfolge|Platzhalter für einen Erweiterungsnamen. Ein Erweiterungsname ist der eindeutige Textbezeichner einer Erweiterung oder ein vollqualifizierter Name, der den Erweiterungstyp und den eindeutigen Textbezeichner verkettet. Der vollqualifizierte Name wird beim Erstellen der Erweiterung in der Eigenschaft **id** zurückgegeben. Erforderlich.|
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
 Stellen Sie sicher, dass Sie für die Leerzeichen in der `$filter`-Zeichenfolge die [URL-Codierung](http://www.w3schools.com/tags/ref_urlencode.asp) verwenden.
 
-|**Name**|**Wert**|**Beschreibung**|
+|Name|Wert|Beschreibung|
 |:---------------|:--------|:-------|
-|$filter|string|Gibt Erweiterungen zurück, deren **id** dem Wert des Parameters `extensionId` entspricht.|
-|$filter with **any** operator|string|Gibt Instanzen einer Ressourcensammlung zurück, die eine Erweiterung enthalten, deren **id** dem Wert des Parameters `extensionId` entspricht.|
-|$expand|string|Erweitert eine Ressourceninstanz um eine Erweiterung. |
+|$filter|Zeichenfolge|Gibt Erweiterungen zurück, deren **id** dem Wert des Parameters `extensionId` entspricht.|
+|$filter bei **jedem** Operator|Zeichenfolge|Gibt Instanzen einer Ressourcensammlung zurück, die eine Erweiterung enthalten, deren **id** dem Wert des Parameters `extensionId` entspricht.|
+|$expand|Zeichenfolge|Erweitert eine Ressourceninstanz um eine Erweiterung. |
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Wert |
 |:---------------|:----------|
-| Authorization | Bearer {token}. Erforderlich. |
+| Autorisierung | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -121,17 +120,18 @@ Die erste Möglichkeit ist der Abruf mithilfe des Namens:
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Com.Contoso.Referral", "AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="],
   "name": "get_opentypeextension_1"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Com.Contoso.Referral')
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral
 ```
 
 Die zweite Möglichkeit ist der Abruf mithilfe der ID (vollqualifizierter Name):
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral
 ```
 
 #### <a name="response-1"></a>Antwort 1
@@ -139,7 +139,7 @@ Hier sehen Sie die Antwort für Beispiel 1:
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -147,7 +147,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
@@ -167,10 +167,11 @@ Das zweite Beispiel referenziert eine Erweiterung über ihren Namen und ruft die
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Com.Contoso.Deal", "f5480dfd-7d77-4d0b-ba2e-3391953cc74a", "AAMkADVl17IsAAA="],
   "name": "get_opentypeextension_2"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions('Com.Contoso.Deal') 
+GET https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions/Com.Contoso.Deal/
 ```
 
 #### <a name="response-2"></a>Antwort 2
@@ -180,7 +181,7 @@ Die Antwort für das zweite Beispiel sieht so aus:
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -188,7 +189,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Deal",
     "extensionName": "Com.Contoso.Deal",
     "companyName": "Alpine Skis",
@@ -205,10 +206,11 @@ Im dritten Beispiel wird die angegebene Nachricht abgerufen und um eine von eine
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="],
   "name": "get_opentypeextension_3"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')?$expand=extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===?$expand=extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
 ```
 
 
@@ -282,7 +284,7 @@ Content-type: application/json
     "extensions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
     "extensions": [ 
       { 
-        "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+        "@odata.type": "#microsoft.graph.openTypeExtension",
         "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
         "extensionName": "Com.Contoso.Referral",
         "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
@@ -301,11 +303,11 @@ Content-type: application/json
 Das vierte Beispiel referenziert eine Erweiterung über ihren vollqualifizierten Namen und ruft die Erweiterung im angegebenen Gruppenbeitrag ab.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_opentypeextension_4"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate') 
+GET https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate
 ```
 
 #### <a name="response-4"></a>Antwort 4
@@ -313,9 +315,9 @@ GET https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef
 Die Antwort für das vierte Beispiel sieht wie folgt aus: 
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -365,6 +367,7 @@ Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen a
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages",
@@ -426,7 +429,7 @@ HTTP/1.1 200 OK
     "extensions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
     "extensions": [ 
       { 
-        "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+        "@odata.type": "#microsoft.graph.openTypeExtension",
         "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
         "extensionName": "Com.Contoso.Referral",
         "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
@@ -450,5 +453,13 @@ HTTP/1.1 200 OK
   "description": "Get openTypeExtension",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+      "Warning: /api-reference/v1.0/api/opentypeextension_get.md:
+        Unable to map some markdown elements into schema.
+            Unmapped methods:
+        get_opentypeextension_1, get_opentypeextension_2, get_opentypeextension_3, get_opentypeextension_5
+            Unmapped tables:
+        Get open extension - Unknown, Permissions - AuthScopes, Path parameters - PathParameters, Optional query parameters - PathParameters, Request headers - HttpHeaders"
+  ],
   "tocPath": ""
 }-->
