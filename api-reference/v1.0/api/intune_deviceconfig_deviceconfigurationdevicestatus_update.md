@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatu
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) an.
@@ -34,14 +34,14 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|deviceDisplayName|String|Gerätename, der dem Objekt des Typs „DevicePolicyStatus“ zugeordnet ist|
-|userName|String|Gemeldeter Benutzername|
-|deviceModel|String|Gemeldetes Gerätemodell|
+|ID|Zeichenfolge|Schlüssel der Entität|
+|deviceDisplayName|Zeichenfolge|Gerätename, der dem Objekt des Typs „DevicePolicyStatus“ zugeordnet ist|
+|userName|Zeichenfolge|Gemeldeter Benutzername|
+|deviceModel|Zeichenfolge|Gemeldetes Gerätemodell|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Toleranzperiode für die Gerätekonformität|
-|status|String|Konformitätsstatus des Richtlinienberichts. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error` und `conflict`.|
+|Status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Compliance-Status des Richtlinienberichts. Mögliche Werte: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |lastReportedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Richtlinienberichts|
-|userPrincipalName|String|Benutzerprinzipalname|
+|userPrincipalName|Zeichenfolge|Benutzerprinzipalname|
 
 
 

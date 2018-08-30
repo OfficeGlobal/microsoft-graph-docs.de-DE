@@ -8,11 +8,10 @@ Abgeleitet von [location](location.md).
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-  
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.location",
   "@odata.type": "microsoft.graph.locationConstraintItem"
 }-->
 
@@ -26,11 +25,11 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 | address | [physicalAddress](physicalAddress.md) |Die Adresse des Orts. |
-| displayName  | String | Der Name, der mit dem Ort verknüpft ist                       |
-| locationEmailAddress | String | Optionale E-Mail-Adresse des Orts |
+| displayName  | Zeichenfolge | Der Name, der mit dem Ort verknüpft ist                       |
+| locationEmailAddress | Zeichenfolge | Optionale E-Mail-Adresse des Orts |
 | resolveAvailability | Boolescher Wert | Wenn „true“ gesetzt ist und die angegebene Ressource gebucht ist, sucht [findMeetingTimes](../api/user_findmeetingtimes.md) nach einer anderen, freien Ressource. Wenn „false“ gesetzt ist und die angegebene Ressource gebucht ist, gibt **findMeetingTimes** die Ressource mit dem höchsten Wert aus dem Cache des Benutzers zurück, ohne zu prüfen, ob diese Ressource frei ist. Der Standardwert ist „true“. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

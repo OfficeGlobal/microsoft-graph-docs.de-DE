@@ -24,8 +24,8 @@ PATCH /deviceManagement/conditionalAccessSettings
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Annehmen|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md)-Objekts an.
@@ -34,11 +34,11 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Noch nicht dokumentiert|
-|aktiviert|Boolean|Gibt an, ob lokaler bedingter Zugriff für diese Organisation aktiviert ist.|
+|ID|Zeichenfolge|Noch nicht dokumentiert|
+|aktiviert|Boolesch|Gibt an, ob lokaler bedingter Zugriff für diese Organisation aktiviert ist.|
 |includedGroups|GUID-Sammlung|Benutzergruppen, für die der lokale bedingte Zugriff gilt. Alle Benutzer in diesen Gruppen müssen verwaltete und für den E-Mail-Zugriff kompatible Mobilgeräte verwenden.|
 |excludedGroups|GUID-Sammlung|Benutzergruppen, die vom lokalen bedingten Zugriff ausgenommen werden. Alle Benutzer in diesen Gruppen werden von der Richtlinie zu bedingtem Zugriff ausgenommen.|
-|overrideDefaultRule|Boolean|Überschreibt die Standardzugriffsregel, wenn zugelassen wird, dass einem Gerät Zugriff gewährt wird.|
+|overrideDefaultRule|Boolesch|Überschreibt die Standardzugriffsregel, wenn zugelassen wird, dass einem Gerät Zugriff gewährt wird.|
 
 
 
@@ -56,10 +56,10 @@ Content-length: 195
 {
   "enabled": true,
   "includedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "79199ed9-e50b-4257-8de4-70b9c8685061"
   ],
   "excludedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "79199ed9-e50b-4257-8de4-70b9c8685061"
   ],
   "overrideDefaultRule": true
 }
@@ -77,10 +77,10 @@ Content-Length: 318
   "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
   "enabled": true,
   "includedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "79199ed9-e50b-4257-8de4-70b9c8685061"
   ],
   "excludedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "79199ed9-e50b-4257-8de4-70b9c8685061"
   ],
   "overrideDefaultRule": true
 }
