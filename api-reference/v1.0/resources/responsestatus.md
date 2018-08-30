@@ -6,7 +6,7 @@ Der Antwortstatus einer Besprechungsanfrage.
 
 | Eigenschaft | Typ           | Beschreibung |
 |:---------|:---------------|:------------|
-| Antwort | String         | Der Antworttyp. Mögliche Werte: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.
+| Antwort | responseType   | Der Antworttyp. Mögliche Werte: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.
 | Uhrzeit     | DateTimeOffset | Datum und Uhrzeit, an dem bzw. der die Antwort zurückgegeben wurde. Hierfür wird das ISO 8601-Format, und die Angabe erfolgt immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`
 
 ## <a name="json-representation"></a>JSON-Darstellung

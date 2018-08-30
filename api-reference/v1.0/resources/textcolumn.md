@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: TextColumn
-ms.openlocfilehash: 80e41b379b9b4ce51a3ee6c910447a22f43356c3
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: b5c41091b9193aabc36ee04e9dcc310bfc110af1
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23264287"
 ---
 # <a name="textcolumn-resource-type"></a>TableColumn-Ressourcentyp
 
@@ -30,18 +31,22 @@ Es folgt eine JSON-Darstellung einer **textColumn**-Ressource.
 
 ## <a name="properties"></a>Eigenschaften
 
-| Eigenschaftenname                   | Typ   | Beschreibung
-|:--------------------------------|:-------|:-----------------------------------------------
-| **allowMultipleLines**          | string | Gibt an, ob mehrere Textzeilen zugelassen sind.
-| **appendChangesToExistingText** | string | Gibt an, ob Updates für diese Spalte den vorhandenen Text ersetzen oder an den vorhandenen Text angefügt werden sollen.
-| **linesForEditing**             | int    | Die Größe des Textfeldes.
-| **maxLength**                   | int    | Die maximal Anzahl Zeichen für den Wert.
-| **textType**                    | string | Der Texttyp des gespeicherten Textes. Muss `plain` oder `richText` sein.
+| Eigenschaftenname                   | Typ    | Beschreibung
+|:--------------------------------|:--------|:---------------------------------
+| **allowMultipleLines**          | Boolescher Wert | Gibt an, ob mehrere Textzeilen zugelassen sind.
+| **appendChangesToExistingText** | Boolescher Wert | Gibt an, ob Updates für diese Spalte den vorhandenen Text ersetzen oder an den vorhandenen Text angefügt werden sollen.
+| **linesForEditing**             | Int32   | Die Größe des Textfeldes.
+| **maxLength**                   | Int32   | Die maximal Anzahl Zeichen für den Wert.
+| **textType**                    | Zeichenfolge  | Der Texttyp des gespeicherten Textes. Muss `plain` oder `richText` sein. `richText`
 
 <!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/textcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(plain,richText) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/TextColumn"
 } -->
