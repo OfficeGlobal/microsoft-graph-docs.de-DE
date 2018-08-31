@@ -1,6 +1,8 @@
 # <a name="create-open-extension"></a>Datenerweiterung erstellen
 
-Mit dieser API können Sie offene Erweiterungen (Objekte des Typs [openTypeExtension](../resources/openTypeExtension.md)) erstellen und einer neuen oder bereits vorhandenen Ressourceninstanz benutzerdefinierte Eigenschaften hinzufügen. 
+Erstellen Sie offene Erweiterungen (Objekte des Typs [openTypeExtension](../resources/openTypeExtension.md)) und fügen einer neuen oder bereits vorhandenen Ressourceninstanz benutzerdefinierte Eigenschaften hinzu.
+
+> **Hinweis:** Wenn Sie offene Erweiterungen für Outlook-Ressourcen erstellen, verweisen wir Sie auf **Outlook-spezifische Überlegungen** in [Ressourcentyp openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -18,7 +20,7 @@ Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich (je n
 
 ### <a name="create-an-extension-in-a-new-resource-instance"></a>Erstellen einer Erweiterung in einer neuen Ressourceninstanz
 
-Verwenden Sie die gleiche REST-Anforderung wie zum Erstellen der Instanz. 
+Verwenden Sie die gleiche REST-Anforderung, die Sie verwenden, um die Instanz zu erstellen.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -29,7 +31,7 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
 ```
 
->**Hinweis:** Die obige Syntax zeigt mehrere häufig verwendete Möglichkeiten zum Erstellen der unterstützten Ressourceninstanzen. Alle anderen POST-Syntaxen, mit denen Sie diese Ressourceninstanzen erstellen können, unterstützen das Erstellen offener Erweiterungen darin in einer ähnlichen Weise.
+>**Hinweis:** Diese Syntax enthält einige allgemeine Methoden zur Erstellung der unterstützten Ressourceninstanzen. Alle anderen POST-Syntaxen, mit denen Sie diese Ressourceninstanzen erstellen können, unterstützen das Erstellen von offenen Erweiterungen in ihnen auf ähnliche Weise.
 
 Im Abschnitt [Anforderungstext](#request-body) ist beschrieben, wie Sie die Eigenschaften der neuen Ressourceninstanz _und die Erweiterung_ in den Anforderungstext einschließen können.
 
@@ -50,21 +52,21 @@ POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
 ```
 
->**Hinweis:** Die obige Syntax zeigt mehrere häufig verwendete Möglichkeiten zum Identifizieren einer Ressourceninstanz, um eine Erweiterung darin zu erstellen. Alle anderen Syntaxen, mit denen Sie diese Ressourceninstanzen identifizieren können, unterstützen das Erstellen offener Erweiterungen darin in einer ähnlichen Weise.
+>**Hinweis:** Diese Syntax enthält einige allgemeine Methoden zur Identifizierung einer Ressourceninstanz, um eine Erweiterung darin zu erstellen. Alle anderen Syntaxen, die es Ihnen ermöglichen, diese Ressourceninstanzen zu identifizieren, unterstützen das Erstellen offener Erweiterungen darin in einer ähnlichen Weise.
 
 Im Abschnitt [Anforderungstext](#request-body) wird beschrieben, wie Sie _die Erweiterung_ in den Anforderungstext einschließen können.
 
-## <a name="parameters"></a>Parameter
-|**Parameter**|**Typ**|**Beschreibung**|
+## <a name="path-parameters"></a>Pfadparameter
+|Parameter|Typ|Beschreibung|
 |:-----|:-----|:-----|
-|_URL parameters_|
-|id|string|Ein eindeutiger Bezeichner für ein Objekt in der entsprechenden Sammlung. Erforderlich.|
+|id|Zeichenfolge|Ein eindeutiger Bezeichner für ein Objekt in der entsprechenden Sammlung. Erforderlich.|
 
 ## <a name="request-headers"></a>Anforderungsheader
+
 | Name       | Wert |
 |:---------------|:----------|
-| Authorization | Bearer {token}. Erforderlich. |
-| Content-Type | application/json |
+| Autorisierung | Bearer {token}. Erforderlich. |
+| Inhaltstyp | application/json |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -72,19 +74,22 @@ Geben Sie den JSON-Text einer [openTypeExtension](../resources/openTypeExtension
 
 | Name       | Wert |
 |:---------------|:----------|
-| @odata.type | Microsoft.Graph.OpenTypeExtension |
-| extensionName | %unique_string% |
+| @odata.type | microsoft.graph.openTypeExtension |
+| extensionName | %unique_string % |
 
 Beim Erstellen einer Erweiterung in einer _neuen_ Ressourceninstanz müssen Sie zusätzlich zu dem neuen **openTypeExtension**-Objekt eine JSON-Darstellung der zur Erstellung einer solchen Ressourceninstanz erforderlichen Eigenschaften angeben.
 
 ## <a name="response"></a>Antwort
 
-#### <a name="response-code"></a>Antwortcode
+### <a name="response-code"></a>Antwortcode
+
 Je nach Vorgang lautet der Antwortcode `201 Created` oder `202 Accepted`.
 
-Wenn Sie eine Erweiterung und eine Ressourceninstanz in ein und demselben Vorgang erstellen, wird bei erfolgreicher Durchführung des Vorgangs derselbe Antwortcode zurückgegeben, der auch zurückgegeben worden wäre, wenn Sie nur die Ressourceninstanz ohne die Erweiterung erstellt hätten. Weitere Informationen finden Sie in den [oben](#create-an-extension-in-a-new-resource-instance) aufgeführten Artikeln zum Thema Instanzenerstellung.
+Beim Erstellen einer Erweiterung mit dem gleichen Vorgang, mit dem Sie eine Ressourceninstanz erstellen, gibt der Vorgang den gleichen Antwortcode zurück, den er auch zurückgibt, wenn Sie den Vorgang zum Erstellen der Ressourceninstanz ohne die Erweiterung verwenden.
+Weitere Informationen finden Sie in den entsprechenden Themen zum Erstellen der Instanz wie [oben](#create-an-extension-in-a-new-resource-instance) aufgelistet.
 
-#### <a name="response-body"></a>Antworttext
+### <a name="response-body"></a>Antworttext
+
 | Szenario       | Ressource  | Antworttext |
 |:---------------|:----------|:--------------|
 | Erstellen einer Erweiterung bei gleichzeitiger expliziter Erstellung einer _neuen_ Ressourceninstanz | [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) | Enthält die neue Instanz, erweitert um das [openTypeExtension](../resources/openTypeExtension.md)-Objekt. |
@@ -92,19 +97,20 @@ Wenn Sie eine Erweiterung und eine Ressourceninstanz in ein und demselben Vorgan
 | Erstellen einer Erweiterung in einer _vorhandenen_ Ressourceninstanz | Alle unterstützten Ressourcen | Enthält das **openTypeExtension**-Objekt. |
 
 ## <a name="example"></a>Beispiel
-##### <a name="request-1"></a>Anforderung 1
+
+### <a name="request-1"></a>Anforderung 1
 
 Im ersten Beispiel werden mit ein und demselben Aufruf eine Nachricht und eine Erweiterung erstellt. Der Anforderungstext enthält Folgendes:
 
-- Die für eine neue Nachricht typischen Eigenschaften **subject**, **body** und **toRecipients** 
+- Die für eine neue Nachricht typischen Eigenschaften **subject**, **body** und **toRecipients**
 - Daneben die folgenden Parameter der Erweiterung:
 
-  - Den Typ `Microsoft.Graph.OpenTypeExtension` 
-  - Den Erweiterungsnamen „Com.Contoso.Referral“ 
-  - Zusätzliche Daten, die als 3 benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `expirationDate` und `dealValue`  
+  - Den Typ`microsoft.graph.openTypeExtension`
+  - Den Erweiterungsnamen „Com.Contoso.Referral“
+  - Zusätzliche Daten, die als drei benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `expirationDate` und `dealValue`.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_1"
 }-->
 ```http
@@ -125,7 +131,7 @@ POST https://graph.microsoft.com/v1.0/me/messages
   ],
   "extensions": [
     {
-      "@odata.type": "Microsoft.Graph.OpenTypeExtension",
+      "@odata.type": "microsoft.graph.openTypeExtension",
       "extensionName": "Com.Contoso.Referral",
       "companyName": "Wingtip Toys",
       "expirationDate": "2015-12-30T11:00:00.000Z",
@@ -135,11 +141,11 @@ POST https://graph.microsoft.com/v1.0/me/messages
 }
 ```
 
-##### <a name="response-1"></a>Antwort 1
+### <a name="response-1"></a>Antwort 1
 
 Unten sehen Sie die Antwort für Beispiel 1. Der Antworttext enthält die Eigenschaften der neuen Nachricht sowie die folgenden Parameter der neuen Erweiterung:
 
-- Die Eigenschaft **id** mit dem vollqualifizierten Namen `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral` 
+- Die Eigenschaft **id** mit dem vollqualifizierten Namen`Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`
 - Die in der Anforderung angegebene Standardeigenschaft **extensionName**
 - Die in der Anforderung angegebenen benutzerdefinierten Daten, gespeichert als 3 benutzerdefinierte Eigenschaften
 
@@ -201,7 +207,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 ('AAMkAGEbs88AAB84uLuAAA%3D')/extensions",
   "extensions": [
     {
-      "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+      "@odata.type": "#microsoft.graph.openTypeExtension",
       "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df800e5@1717f226-49d1-4d0c-9d74-709fad664b77')/messages
 ('AAMkAGEbs88AAB84uLuAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
       "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
@@ -214,45 +220,44 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 }
 ```
 
-
 ****
 
-##### <a name="request-2"></a>Anforderung 2
+### <a name="request-2"></a>Anforderung 2
 
 Das zweite Beispiel erstellt eine Erweiterung in der angegebenen Nachricht. Der Anforderungstext enthält die folgenden Parameter für die Erweiterung:
 
-- Den Typ `Microsoft.Graph.OpenTypeExtension` 
+- Den Typ`microsoft.graph.openTypeExtension`
 - Den Erweiterungsnamen „Com.Contoso.Referral“
-- Zusätzliche Daten, die als 3 benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `dealValue` und `expirationDate`  
+- Zusätzliche Daten, die als 3 benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `dealValue` und`expirationDate`
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_2"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions
 
-{ 
-  "@odata.type" : "Microsoft.Graph.OpenTypeExtension", 
-  "extensionName" : "Com.Contoso.Referral", 
-  "companyName" : "Wingtip Toys", 
-  "dealValue" : 500050, 
-  "expirationDate" : "2015-12-03T10:00:00.000Z" 
-} 
+{
+  "@odata.type" : "microsoft.graph.openTypeExtension",
+  "extensionName" : "Com.Contoso.Referral",
+  "companyName" : "Wingtip Toys",
+  "dealValue" : 500050,
+  "expirationDate" : "2015-12-03T10:00:00.000Z"
+}
 ```
 
-##### <a name="response-2"></a>Antwort 2
+### <a name="response-2"></a>Antwort 2
 
 Die Antwort für das zweite Beispiel sehen Sie unten. Der Antworttext enthält die folgenden Parameter für die neue Erweiterung:
 
 - Die Standardeigenschaft **extensionName**
-- Die Eigenschaft **id** mit dem vollqualifizierten Namen `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral` 
-- Die benutzerdefinierten Daten, die gespeichert werden sollen  
+- Die Eigenschaft **id** mit dem vollqualifizierten Namen`Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`
+- Die benutzerdefinierten Daten, die gespeichert werden sollen
 
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -260,7 +265,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
@@ -273,23 +278,23 @@ Content-type: application/json
 
 ****
 
-##### <a name="request-3"></a>Anforderung 3
+### <a name="request-3"></a>Anforderung 3
 
 Das dritte Beispiel erstellt eine Erweiterung in dem angegebenen Gruppenereignis. Der Anforderungstext enthält die folgenden Parameter für die Erweiterung:
 
-- Den Typ `Microsoft.Graph.OpenTypeExtension` 
+- Den Typ`microsoft.graph.openTypeExtension`
 - Den Erweiterungsnamen „Com.Contoso.Deal“
-- Zusätzliche Daten, die als 3 benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `dealValue` und `expirationDate`  
+- Zusätzliche Daten, die als 3 benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `dealValue` und`expirationDate`
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_3"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions 
+POST https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions
 
 {
-  "@odata.type" : "Microsoft.Graph.OpenTypeExtension",
+  "@odata.type" : "microsoft.graph.openTypeExtension",
   "extensionName" : "Com.Contoso.Deal",
   "companyName" : "Alpine Skis",
   "dealValue" : 1010100,
@@ -297,14 +302,14 @@ POST https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc7
 }
 ```
 
-##### <a name="response-3"></a>Antwort 3
+### <a name="response-3"></a>Antwort 3
 
 Unten sehen Sie die Antwort auf die Anforderung im dritten Beispiel:
 
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -312,7 +317,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Deal",
     "extensionName": "Com.Contoso.Deal",
     "companyName": "Alpine Skis",
@@ -323,20 +328,20 @@ Content-type: application/json
 
 ****
 
-##### <a name="request-4"></a>Anforderung 4
+### <a name="request-4"></a>Anforderung 4
 
 Das vierte Beispiel erstellt eine Erweiterung in einem neuen Gruppenbeitrag, mit demselben **reply**-Aktionsaufruf, wie er für bereits vorhandene Gruppenbeiträge verwendet wird. Die Aktion **reply** erstellt einen neuen Beitrag und eine neue, in diesen Beitrag eingebettete Erweiterung. Der Antworttext enthält eine Eigenschaft **post** mit dem **Text** des neuen Beitrags sowie die folgenden Daten der neuen Erweiterung:
 
-- Den Typ `Microsoft.Graph.OpenTypeExtension` 
+- Den Typ`microsoft.graph.openTypeExtension`
 - Den Erweiterungsnamen „Com.Contoso.HR“
-- Zusätzliche Daten, die als 3 benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `expirationDate` und das Zeichenfolgen-Array `topPicks`
+- Zusätzliche Daten, die als 3 benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `expirationDate` und das Zeichenfolgen-Array`topPicks`
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_4"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=')/microsoft.graph.reply 
+POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=/reply
 
 {
   "post": {
@@ -356,12 +361,12 @@ POST https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364ae
         "Add family"
       ]
     }
-  ]        
+  ]
   }
 }
 ```
 
-##### <a name="response-4"></a>Antwort 4
+### <a name="response-4"></a>Antwort 4
 
 Die Antwort für das vierte Beispiel sehen Sie unten. Wird eine Erweiterung in einem neuen Gruppenbeitrag erstellt, wird nur der Antwortcode „HTTP 202“ zurückgegeben.
 
@@ -375,23 +380,22 @@ Content-type: text/plain
 Content-Length: 0
 ```
 
-
 ****
 
-##### <a name="request-5"></a>Anforderung 5
+### <a name="request-5"></a>Anforderung 5
 
 Das fünfte Beispiel erstellt in ein und derselben POST-Operation eine Erweiterung in einem neuen Gruppenbeitrag und eine Unterhaltung. Die POST-Operation erstellt eine neue Unterhaltung, einen neuen Thread, einen neuen Beitrag und eine neue, in diesen Beitrag eingebettete Erweiterung. Der Anforderungstext enthält die Eigenschaften **Topic** und **Threads** sowie ein untergeordnetes Objekt des Typs **post** der neuen Unterhaltung. Das **post**-Objekt wiederum enthält den **Text** des neuen Beitrags sowie die folgenden Daten der Erweiterung:
 
-- Den Typ `Microsoft.Graph.OpenTypeExtension` 
+- Den Typ`microsoft.graph.openTypeExtension`
 - Den Erweiterungsnamen „Com.Contoso.HR“
-- Zusätzliche Daten, die als 3 benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `expirationDate` und das Zeichenfolgen-Array `topPicks`
+- Zusätzliche Daten, die als 3 benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `expirationDate` und das Zeichenfolgen-Array`topPicks`
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_5"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations
+POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/conversations
 
 {
   "Topic": "Does anyone have a second?",
@@ -413,19 +417,19 @@ POST https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364ae
                 "Employees only",
                 "Add spouse or guest",
                 "Add family"
-              ]  
-            }  
-          ] 
-        } 
-      ]  
-    } 
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ]
 }
 ```
 
-##### <a name="response-5"></a>Antwort 5
+### <a name="response-5"></a>Antwort 5
 
-Unten sehen Sie die Antwort für das fünfte Beispiel mit der neuen Unterhaltung und einer Thread-ID. Dieser neue Thread enthält einen automatisch erstellten Beitrag, der wiederum die neue Erweiterung enthält. 
+Unten sehen Sie die Antwort für das fünfte Beispiel mit der neuen Unterhaltung und einer Thread-ID. Dieser neue Thread enthält einen automatisch erstellten Beitrag, der wiederum die neue Erweiterung enthält.
 
 Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 
@@ -452,7 +456,6 @@ Content-type: application/json
 }
 
 ```
-
 
 <!-- This page was manually created. -->
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
