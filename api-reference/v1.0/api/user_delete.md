@@ -8,7 +8,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.AccessAsUser.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Nicht unterstützt |
+|Anwendung | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -19,7 +19,7 @@ DELETE /users/{id | userPrincipalName}
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert|
 |:-----------|:------|
-| Authorization  | Bearer {token}. Erforderlich.  |
+| Autorisierung  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -36,7 +36,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "delete_user"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/mba9a3254-9f18-4209-aeb3-9e42a35b5be4
+DELETE https://graph.microsoft.com/v1.0/users/{user-id}
 ```
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. 

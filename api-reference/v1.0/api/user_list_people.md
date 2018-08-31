@@ -5,6 +5,7 @@ Dient zum Abrufen einer Sammlung von [person](../resources/person.md)-Objekten, 
 Sie können diese Informationen über die People API abrufen. Beispiele finden Sie in dem Abschnitt [Beispiele](#examples) sowie im Artikel zum Thema [Abrufen relevanter Informationen über Personen](../../../concepts/people_example.md).
 
 ## <a name="permissions"></a>Berechtigungen
+
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
@@ -14,49 +15,59 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Anwendung | People.Read.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/people
 GET /users/{id | userPrincipalName}/people
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
+
 Diese Methode unterstützt die [OData-Abfrageparameter](../../../concepts/query_parameters.md), um bei der Anpassung der Antwort zu helfen. Beispiele dazu finden Sie im Artikel [Abrufen relevanter Informationen über Personen](../../../concepts/people_example.md).
 
-|Name|Wert|Beschreibung| 
-|:---------------|:--------|:-------| 
-|$filter|Zeichenfolge|Dient zum Einschränken der Antwort auf diejenigen Personen, deren Datensätze die angegebenen Kriterien enthalten.| 
-|$orderby|Zeichenfolge|Standardmäßig werden die Personen in der Antwort nach ihrer Relevanz für die Abfrage sortiert. Sie können die Reihenfolge der Personen in der Antwort mit dem *$orderby*-Parameter ändern.| 
-|$search|Zeichenfolge|Dient für die Suche nach Personen anhand des Namens oder des Alias. Unterstützt Fuzzyübereinstimmung.| 
-|$select|string|Durch Trennzeichen getrennte Liste der Eigenschaften, die in die Antwort eingeschlossen werden sollen. Wählen Sie für optimale Leistung nur eine Teilmenge der benötigten Eigenschaften.| 
-|$skip|int|Die ersten n Ergebnisse werden übersprungen. Hilfreich für Paging. Wird bei Verwendung von *$search* nicht unterstützt.| 
-|$top|int|Anzahl der Ergebnisse, die zurückgegeben werden.| 
+|Name|Wert|Beschreibung|
+|:---------------|:--------|:-------|
+|$filter|string|Dient zum Einschränken der Antwort auf diejenigen Personen, deren Datensätze die angegebenen Kriterien enthalten.|
+|$orderby|string|Standardmäßig werden die Personen in der Antwort nach ihrer Relevanz für die Abfrage sortiert. Sie können die Reihenfolge der Personen in der Antwort mit dem *$orderby*-Parameter ändern.|
+|$search|string|Dient für die Suche nach Personen anhand des Namens oder des Alias. Unterstützt Fuzzyübereinstimmung. Der Parameter funktioniert nur für die Suche der relevanten Personen des angemeldeten Benutzers, nicht zum Suchen von Personen, die für andere Benutzer relevant sind. Unterstützt außerdem die `topic` Schlüsselwort-Personensuche basierend auf Themen, die aus E-Mail-Konversationen mit dieser Person extrahiert wurden. Siehe Abschnitt *Eine Fuzzy-Suche ausführen* unter [Abrufen von relevanten Informationen über Personen](../../../concepts/people_example.md#perform-a-fuzzy-search) für Informationen und Beispiele. |
+|$select|string|Durch Trennzeichen getrennte Liste der Eigenschaften, die in die Antwort eingeschlossen werden sollen. Wählen Sie für optimale Leistung nur eine Teilmenge der benötigten Eigenschaften.|
+|$skip|int|Die ersten n Ergebnisse werden übersprungen. Hilfreich für Paging. Wird bei Verwendung von *$search* nicht unterstützt.|
+|$top|int|Anzahl der Ergebnisse, die zurückgegeben werden.|
 
 ## <a name="request-headers"></a>Anforderungsheader
+
 | Name      |Beschreibung|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
-| Annehmen | application/json |
+| Autorisierung  | Bearer {token}. Erforderlich. |
+| Akzeptieren | Anwendung/json |
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [person](../resources/person.md)-Objekten im Antworttext zurückgegeben. Die Antwort kann ein person-Objekt oder eine Sammlung von person-Objekten enthalten.
 
 ## <a name="examples"></a>Beispiele
+
 #### <a name="request"></a>Anforderung
+
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 
 <!-- {
   "blockType": "request",
   "name": "get_person_collection"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/people
 ```
 
 #### <a name="response"></a>Antwort
+
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 <!-- {

@@ -7,36 +7,31 @@ Stellt den Schutz eines Arbeitsblattobjekts dar.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Get WorksheetProtection](../api/worksheetprotection_get.md) | [WorksheetProtection](worksheetprotection.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des worksheetProtection-Objekts.|
-|[Protect](../api/worksheetprotection_protect.md)|Keine|Schützen ein Arbeitsblatt. Wird ausgelöst, wenn das Arbeitsblatt geschützt ist.|
-|[Unprotect](../api/worksheetprotection_unprotect.md)|Keine|Schutz eines Arbeitsblatts aufheben.|
+|[Get WorksheetProtection](../api/worksheetprotection_get.md) | [WorkbookWorksheetProtection](worksheetprotection.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des worksheetProtection-Objekts.|
+|[Protect](../api/worksheetprotection_protect.md)|Keine|Ein Arbeitsblatt schützen. Es wird ausgelöst, wenn das Arbeitsblatt geschützt ist.|
+|[Schutz aufheben](../api/worksheetprotection_unprotect.md)|Keine|Schutz eines Arbeitsblatts aufheben.|
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|geschützt|boolean|Zeigt an, ob das Arbeitsblatt geschützt ist.  Schreibgeschützt.|
-
-## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
-|:---------------|:--------|:----------|
-|options
-|[WorksheetProtectionOptions](worksheetprotectionoptions.md)|Optionen für den Arbeitsblattschutz. Schreibgeschützt.|
+|Optionen|[WorkbookWorksheetProtectionOptions](worksheetprotectionoptions.md)|Optionen für den Arbeitsblattschutz. Schreibgeschützt.|
+|geschützt|boolesch|Zeigt an, ob das Arbeitsblatt geschützt ist.  Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.worksheetProtection"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookWorksheetProtection"
 }-->
 
 ```json
 {
-  "protected": true
+  "protected": true,
+  "options": { "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions" }
 }
 
 ```

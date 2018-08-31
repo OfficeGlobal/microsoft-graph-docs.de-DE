@@ -25,15 +25,15 @@ PATCH /groups/{id}/settings/{id}
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name | Beschreibung |
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Erforderlich. |
-| Content-Type  | application/json  |
+| Autorisierung  | Bearer {token}. Erforderlich. |
+| Inhaltstyp  | Anwendung/json  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. 
 
 | Eigenschaft | Typ | Beschreibung |
 |:---------------|:--------|:----------|
-| values | settingValue | Der aktualisierten Satz von Werten.  HINWEIS: Sie müssen den gesamten Sammlungssatz angeben. Sie können keinen einzelnen Wertesatz aktualisieren. |
+| Werte | settingValue-Sammlung | Der aktualisierten Satz von Werten.  HINWEIS: Sie müssen den gesamten Sammlungssatz angeben. Sie können keinen einzelnen Wertesatz aktualisieren. |
 
 ## <a name="response"></a>Antwort
 

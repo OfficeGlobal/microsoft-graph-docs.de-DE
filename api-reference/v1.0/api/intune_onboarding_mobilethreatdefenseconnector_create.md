@@ -24,8 +24,8 @@ POST /deviceManagement/mobileThreatDefenseConnectors
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs mobileThreatDefenseConnector an.
@@ -34,14 +34,14 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Noch nicht dokumentiert|
+|id|Zeichenfolge|Noch nicht dokumentiert|
 |lastHeartbeatDateTime|DateTimeOffset|DateTime des letzten vom Datensynchronisierungspartner empfangenen Heartbeats|
-|partnerState|String|Status des Datensynchronisierungspartners für dieses Konto. Mögliche Werte sind: `unavailable`, `available`, `enabled`, `unresponsive`.|
-|androidEnabled|Boolean|Legen Sie für Android fest, ob Daten vom Datensynchronisierungspartner während der Konformitätsbewertung verwendet werden sollen.|
-|iosEnabled|Boolean|Für iOS: Rufen Sie ab oder legen Sie fest, ob Daten vom Datensynchronisierungspartner während der Konformitätsbewertung verwendet werden sollen.|
-|androidDeviceBlockedOnMissingPartnerData|Boolean|Für Android: Legen Sie fest, ob Intune Daten vom Datensynchronisierungspartner empfangen muss, bevor ein Gerät als kompatibel markiert wird.|
-|iosDeviceBlockedOnMissingPartnerData|Boolean|Für iOS: Legen Sie fest, ob Intune Daten vom Datensynchronisierungspartner empfangen muss, bevor ein Gerät als kompatibel markiert wird.|
-|partnerUnsupportedOsVersionBlocked|Boolean|Rufen Sie ab bzw. legen Sie fest, ob Geräte auf den aktivierten Plattformen, die nicht die Mindestversionsanforderungen des Datensynchronisierungspartners erfüllen, blockiert werden.|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune_onboarding_mobilethreatpartnertenantstate.md)|Daten Sync Partner-Zustand für dieses Konto. Mögliche Werte sind: `unavailable`, `available`, `enabled`, `unresponsive`.|
+|androidEnabled|boolesch|Legen Sie für Android fest, ob Daten vom Datensynchronisierungspartner während der Konformitätsbewertung verwendet werden sollen.|
+|iosEnabled|boolesch|Für iOS: Rufen Sie ab oder legen Sie fest, ob Daten vom Datensynchronisierungspartner während der Konformitätsbewertung verwendet werden sollen.|
+|androidDeviceBlockedOnMissingPartnerData|boolesch|Für Android: Legen Sie fest, ob Intune Daten vom Datensynchronisierungspartner empfangen muss, bevor ein Gerät als kompatibel markiert wird.|
+|iosDeviceBlockedOnMissingPartnerData|boolesch|Für iOS: Legen Sie fest, ob Intune Daten vom Datensynchronisierungspartner empfangen muss, bevor ein Gerät als kompatibel markiert wird.|
+|partnerUnsupportedOsVersionBlocked|boolesch|Rufen Sie ab bzw. legen Sie fest, ob Geräte auf den aktivierten Plattformen, die nicht die Mindestversionsanforderungen des Datensynchronisierungspartners erfüllen, blockiert werden.|
 |partnerUnresponsivenessThresholdInDays|Int32|Erlaubt das Abrufen oder das Festlegen des für die betreffende Partnerintegration geltenden Zeitraums in Tagen, während dessen ein Nichtreagieren des Mandanten toleriert wird.|
 
 

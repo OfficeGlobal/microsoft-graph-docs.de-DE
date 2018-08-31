@@ -18,39 +18,39 @@ Erbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceen
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
-|displayName|String|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
-|description|String|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
-|priority|Int32|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|id|Zeichenfolge|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|displayName|Zeichenfolge|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|Beschreibung|Zeichenfolge|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|Priorität|Int32|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
-|version|Int32|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|Version|Int32|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |pinMinimumLength|Int32|Noch nicht dokumentiert.|
 |pinMaximumLength|Int32|Noch nicht dokumentiert.|
-|pinUppercaseCharactersUsage|String|Noch nicht dokumentiert. Mögliche Werte: `allowed`, `required`, `disallowed`.|
-|pinLowercaseCharactersUsage|String|Noch nicht dokumentiert. Mögliche Werte: `allowed`, `required`, `disallowed`.|
-|pinSpecialCharactersUsage|String|Noch nicht dokumentiert. Mögliche Werte: `allowed`, `required`, `disallowed`.|
-|state|String|Noch nicht dokumentiert. Mögliche Werte: `notConfigured`, `enabled`, `disabled`.|
-|securityDeviceRequired|Boolean|Noch nicht dokumentiert.|
-|unlockWithBiometricsEnabled|Boolean|Noch nicht dokumentiert.|
-|remotePassportEnabled|Boolean|Noch nicht dokumentiert.|
+|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|Noch nicht dokumentiert. Mögliche Werte sind: `allowed`, `required`, `disallowed`.|
+|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|Noch nicht dokumentiert. Mögliche Werte sind: `allowed`, `required`, `disallowed`.|
+|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|Noch nicht dokumentiert. Mögliche Werte sind: `allowed`, `required`, `disallowed`.|
+|Status|[Aktivierung](../resources/intune_onboarding_enablement.md)|Noch nicht dokumentiert. Mögliche Werte sind: `notConfigured`, `enabled`, `disabled`.|
+|securityDeviceRequired|Boolesch|Noch nicht dokumentiert.|
+|unlockWithBiometricsEnabled|Boolesch|Noch nicht dokumentiert.|
+|remotePassportEnabled|Boolesch|Noch nicht dokumentiert.|
 |pinPreviousBlockCount|Int32|Noch nicht dokumentiert.|
 |pinExpirationInDays|Int32|Noch nicht dokumentiert.|
-|enhancedBiometricsState|String|Noch nicht dokumentiert. Mögliche Werte: `notConfigured`, `enabled`, `disabled`.|
+|enhancedBiometricsState|[Aktivierung](../resources/intune_onboarding_enablement.md)|Noch nicht dokumentiert. Mögliche Werte sind: `notConfigured`, `enabled`, `disabled`.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|assignments|[enrollmentConfigurationAssignment](../resources/intune_onboarding_enrollmentconfigurationassignment.md)-Sammlung|Die Liste derGruppenzuweisungen für das Gerätekonfigurationsprofil. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|Aufgaben|[enrollmentConfigurationAssignment](../resources/intune_onboarding_enrollmentconfigurationassignment.md)-Sammlung|Die Liste derGruppenzuweisungen für das Gerätekonfigurationsprofil. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceEnrollmentConfiguration",
   "@odata.type": "microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",

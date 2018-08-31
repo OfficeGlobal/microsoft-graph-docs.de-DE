@@ -29,7 +29,7 @@ Stellen Sie in der URL der Anforderung den Parameter mit einem gültigen Wert be
 
 | Parameter | Typ   | Beschreibung                              |
 | :-------- | :----- | :--------------------------------------- |
-| Zeitraum    | Zeichenfolge | Gibt die Zeitspanne an, für die der Bericht aggregiert wird. Die unterstützten Werte für {period_value} sind: D7, D30, D90 und D180. Diese Werte folgen dem Format D*n*, wobei *n* die Anzahl der Tage angibt, für die der Bericht aggregiert wird. |
+| Zeitraum    | string | Gibt die Zeitspanne an, für die der Bericht aggregiert wird. Die unterstützten Werte für {period_value} sind: D7, D30, D90 und D180. Diese Werte folgen dem Format D*n*, wobei *n* die Anzahl der Tage angibt, für die der Bericht aggregiert wird. |
 | date      | Datum   | Gibt das Datum an, für das die Benutzer angezeigt werden sollen, die Aktivitäten durchgeführt haben. {date_value} muss im Format JJJJ-MM-TT vorliegen. Da dieser Bericht nur für die letzten 30 Tage verfügbar ist, sollte {date_value} ein Datum aus diesem Zeitraum sein. |
 
 > **Hinweis:** Sie müssen in der URL entweder einen Zeitraum oder ein Datum festlegen.
@@ -38,7 +38,7 @@ Stellen Sie in der URL der Anforderung den Parameter mit einem gültigen Wert be
 
 | Name          | Beschreibung                              |
 | :------------ | :--------------------------------------- |
-| Authorization | Bearer {token}. Erforderlich.                |
+| Autorisierung | Bearer {token}. Erforderlich.                |
 | If-None-Match | Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag mit dem aktuellen Tag in der Datei übereinstimmt, wird ein `304 Not Modified`-Antwortcode zurückgegeben. Optional. |
 
 ## <a name="response"></a>Antwort
@@ -69,8 +69,9 @@ Die CSV-Datei verfügt über die folgenden Kopfzeilen für Spalten.
 
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getyammerdeviceusageuserdetail"
 }-->
 
@@ -82,7 +83,37 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerDeviceUsageUserDetail(peri
 
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
+
+```http
+HTTP/1.1 302 Found
+Content-Type: text/plain
+Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
+```
+
+#### <a name="request"></a>Anforderung
+
+Wenn er mit dem Parameter `date` aufgerufen wird, wird der Bericht zur Verwendung am angegebenen Datum ausgelegt.
+
+<!--{
+  "blockType": "request",
+  "isComposable": true,
+  "name": "reportroot_getyammerdeviceusageuserdetail_date"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/reports/getYammerDeviceUsageUserDetail(date='2018-03-05')
+```
+
+#### <a name="response"></a>Antwort
+
+Nachfolgend sehen Sie ein Beispiel der Antwort.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -92,11 +123,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 Führen Sie die Umleitung 302 aus, und die heruntergeladene CSV-Datei besitzt das folgende Format.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

@@ -13,12 +13,12 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/legend
+PATCH /workbook/worksheets/{id|name}/charts/{name}/legend
 ```
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -27,12 +27,12 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Overlay|boolean|Boolescher Wert, der angibt, ob die Diagrammlegende mit dem Text des Diagramms überlappen soll.|
-|Position|string|Gibt die Position der Legende im Diagramm an. Mögliche Werte: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
-|visible|boolean|Ein boolescher Wert, der die Sichtbarkeit eines ChartLegend-Objekts darstellt.|
+|Position|Zeichenfolge|Gibt die Position der Legende im Diagramm an. Mögliche Werte: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
+|sichtbar|boolean|Ein boolescher Wert, der die Sichtbarkeit eines ChartLegend-Objekts darstellt.|
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [ChartLegend](../resources/chartlegend.md)-Objekt im Antworttext zurückgegeben.
+Wenn das Verfahren erfolgreich verläuft, werden im Antworttext der Antwortcode `200 OK` und ein [WorkbookChartLegend](../resources/chartlegend.md)-Objekt zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
@@ -41,7 +41,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "update_chartlegend"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/legend
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/legend
 Content-type: application/json
 Content-length: 72
 
@@ -56,7 +56,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartLegend"
+  "@odata.type": "microsoft.graph.workbookChartLegend"
 } -->
 ```http
 HTTP/1.1 200 OK

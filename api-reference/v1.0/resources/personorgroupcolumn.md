@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
-ms.openlocfilehash: 715c6ca22957cbd951784e6cf32edf2bf47f1098
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 37c324ddb1863e3e589e7d17ea60bd879e50771f
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267556"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>PersonOrGroupColumn-Ressourcentyp
 
@@ -30,21 +31,21 @@ Es folgt eine JSON-Darstellung einer **personOrGroupColumn**-Ressource.
 
 | Eigenschaftenname              | Typ    | Beschreibung
 |:---------------------------|:--------|:--------------------------------------
-| **allowMultipleSelection** | boolean | Gibt an, ob mehrere Werte aus der Quelle ausgewählt werden können.
-| **displayAs**              | string  | Informationen zum Anzeigen der Informationen zu der ausgewählten Person oder Gruppe. Siehe unten.
-| **chooseFromType**         | string  | Gibt an, ob nur Personen oder Personen und Gruppen ausgewählt werden können. Müssen `peopleAndGroups` oder `peopleOnly` sein.
+| **allowMultipleSelection** | boolesch | Gibt an, ob mehrere Werte aus der Quelle ausgewählt werden können.
+| **displayAs**              | Zeichenfolge  | Informationen zum Anzeigen der Informationen zu der ausgewählten Person oder Gruppe. Siehe unten.
+| **chooseFromType**         | Zeichenfolge  | Gibt an, ob nur Personen oder Personen und Gruppen ausgewählt werden können. Müssen `peopleAndGroups` oder `peopleOnly` sein.
 
-## <a name="displayas-values"></a>DisplayAs-Werte
+## <a name="displayas-options"></a>DisplayAs-Optionen
 
 | DisplayAs-Wert               | Beschreibung
 |:------------------------------|:-----------------------
-| **account**                   | Die rohe SharePoint-codierte Anforderungszeichenfolge für die Person oder Gruppe (z. B. i:0#.f|Mitgliedschaft|jane@contoso.com).
-| **department**                | Die Abteilung der Person oder Gruppe.
-| **firstName**                 | The person's first name.
-| **id**                        | Die ID der Person oder Gruppe im Verzeichnis.
+| **Konto**                   | Die rohe SharePoint-codierte Anforderungszeichenfolge für die Person oder Gruppe (z. B. i:0#.f|Mitgliedschaft|jane@contoso.com).
+| **Abteilung**                | Die Abteilung der Person oder Gruppe.
+| **firstName**                 | Der Vorname der Person.
+| **ID**                        | Die ID der Person oder Gruppe im Verzeichnis.
 | **lastName**                  | Der Nachname der Person.
 | **mobilePhone**               | Die Mobiltelefonnummer der Person.
-| **name**                      | Der Name der Person.
+| **Name**                      | Der Name der Person.
 | **nameWithPictureAndDetails** | Der Name der Person mit ihrem Bild und zusätzlichen Details.
 | **nameWithPresence**          | Standard. Der Name der Person mit einem Anwesenheitssymbol (verfügbar/beschäftigt/usw.).
 | **office**                    | Die Büronummer der Person.
@@ -64,5 +65,11 @@ Hinweis: Möglicherweise werden weitere DisplayAs-Typen zurückgegeben.
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/personorgroupcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(peopleAndGroups,peopleOnly) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/personorgroupcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(account,contentType,created,department,...) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/PersonOrGroupColumn"
 } -->
