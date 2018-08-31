@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Spezielle Ordner abgerufen
-ms.openlocfilehash: 894c0dc2c41441ab8006f58dcf5ccbc9d0043b0a
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 42deedff6dc5a0925412e95af806fee99d8be242
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265036"
 ---
 # <a name="get-a-special-folder-by-name"></a>Speziellen Ordner nach Name abrufen
 
@@ -82,10 +83,10 @@ Um die untergeordneten Elemente eines speziellen Ordners anzufordern, können Si
 
 ### <a name="http-request"></a>HTTP-Anforderung
 
-<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
-GET /me/drive/special/{name}/children
+GET /me/drive/special/{special-folder-name}/children
 ```
 
 ### <a name="http-response"></a>HTTP-Antwort

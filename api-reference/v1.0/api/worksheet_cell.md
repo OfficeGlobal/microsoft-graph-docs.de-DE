@@ -13,14 +13,22 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
+GET /workbook/worksheets/{id|name}/cell(row=<row>,column=<column>)
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
+
+## <a name="parameters"></a>Parameter
+Geben Sie im Anforderungspfad die folgenden Parameter an.
+
+| Parameter    | Typ   |Beschreibung|
+|:---------------|:--------|:----------|
+|Zeile|Int32|Zeilenanzahl der abzurufenden Zelle. Nullindiziert.|
+|Spalte|Int32|Spaltenanzahl der abzurufenden Zelle. Nullindiziert.|
 
 ## <a name="response"></a>Antwort
 
@@ -30,12 +38,13 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das 
 Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "worksheet_cell"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/cell(row=<row>,column=<column>)
 ```
 
 ##### <a name="response"></a>Antwort
@@ -43,7 +52,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

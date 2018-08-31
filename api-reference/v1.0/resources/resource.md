@@ -1,16 +1,23 @@
-# <a name="resource-resource-type"></a>resource-Ressourcentyp
+# <a name="onenoteresource-resource-type"></a>Ressourcentyp OneNoteResource
 
 Ein Bild oder eine andere Dateiressource auf einer OneNote-Seite. 
 
 Sie können die Binärdaten einer Ressource abrufen, der Abruf einer JSON-Darstellung eines Ressourcenobjekts oder einer Ressourcensammlung wird jedoch nicht unterstützt.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.onenoteEntityBaseModel",
+  "optionalProperties": [],
+  "isMediaEntity": true,
   "@odata.type": "microsoft.graph.onenoteResource"
 }-->
+
+```json
+{
+  "content": { "@odata.type": "Edm.Stream" },
+  "contentUrl": "string (url)"
+}
+```
 
 Rufen Sie die Binärdaten einer bestimmten Ressource ab, indem Sie eine GET-Anforderung an den Endpunkt `content` der Ressourcen senden:
 
@@ -43,7 +50,11 @@ Ein `object`-Tag (das Dateien wie PDF, DOCX und PNG darstellt) schließt den End
 ```
 
 ## <a name="properties"></a>Eigenschaften
-Keine.
+
+| Eigenschaft             | Typ            | Beschreibung
+|:---------------------|:----------------|:---------------------------------
+| Inhalt              | Stream          | Der Inhaltsstream
+| contentUrl           | Zeichenfolge (URL)    | Die URL für das Herunterladen von Inhalten
 
 ## <a name="relationships"></a>Beziehungen
 Keine.

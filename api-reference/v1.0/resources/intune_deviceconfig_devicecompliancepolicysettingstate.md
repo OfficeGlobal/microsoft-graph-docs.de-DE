@@ -6,29 +6,27 @@ Zustand der Gerätekonformitätsrichtlinien-Einstellung für ein bestimmtes Ger�
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|setting|String|Die gemeldete Einstellung|
-|settingName|String|Lokalisierter/benutzerfreundlicher Name der Einstellung, die gemeldet wird|
-|instanceDisplayName|String|Name der Einstellungsinstanz, die gemeldet wird.|
-|state|String|Der Konformitätsstatus der Einstellung. Mögliche Werte: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|Einstellung|Zeichenfolge|Die gemeldete Einstellung|
+|settingName|Zeichenfolge|Lokalisierter/benutzerfreundlicher Name der Einstellung, die gemeldet wird|
+|instanceDisplayName|Zeichenfolge|Name der Einstellungsinstanz, die gemeldet wird.|
+|Status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |errorCode|Int64|Fehlercode für die Einstellung|
-|errorDescription|String|Fehlerbeschreibung|
-|userId|String|UserId|
-|userName|String|UserName|
-|userEmail|String|UserEmail|
-|userPrincipalName|String|UserPrincipalName.|
+|errorDescription|Zeichenfolge|Fehlerbeschreibung|
+|userId|Zeichenfolge|UserId|
+|userName|Zeichenfolge|UserName|
+|userEmail|Zeichenfolge|UserEmail|
+|userPrincipalName|Zeichenfolge|Benutzer-Prinzipalname|
 |sources|[settingSource](../resources/intune_deviceconfig_settingsource.md)-Sammlung|Beitragende Richtlinien|
-|currentValue|String|Aktueller Wert der Einstellung auf dem Gerät|
+|currentValue|Zeichenfolge|Aktueller Wert der Einstellung auf dem Gerät|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceCompliancePolicySettingState"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingState",

@@ -15,41 +15,41 @@ Stellt eine Klasse in einer Schule dar. Die **educationClass**-Ressource entspri
 |[Lehrer hinzufügen](../api/educationclass_post_teachers.md) |[educationUser](educationuser.md)| Hinzufügen eines neuen **educationUser** für die Klasse durch Bereitstellen in der Navigationseigenschaft „teachers“.|
 |[Lehrer auflisten](../api/educationclass_list_teachers.md) |[educationUser](educationuser.md)-Sammlung| Abrufen einer Liste der Lehrer für die Klasse|
 |[Lehrer entfernen](../api/educationclass_delete_teachers.md) |[educationUser](educationuser.md)| Entfernen eines **educationUser** aus der Klasse über die Navigationseigenschaft „teachers“.|
-|[Gruppe abrufen](../api/educationclass_get_group.md) |[group](group.md)| Abrufen der Office 365-**Gruppe**, die dieser **educationClass** entspricht.|
+|[Gruppe abrufen](../api/educationclass_get_group.md) |[Gruppe](group.md)| Abrufen der Office 365-**Gruppe**, die dieser **educationClass** entspricht.|
 |[Aktualisieren](../api/educationclass_update.md) | [educationClass](educationclass.md)    |Aktualisieren eines **educationClass**-Objekts. |
 |[Löschen](../api/educationclass_delete.md) | Keine |Löschen eines **educationClass**-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id| String| Eindeutiger Bezeichner für die Klasse|
-|description|String| Beschreibung der Klasse|
-|displayName|String| Der Name der Klasse|
-|mailNickname|String| E-Mail-Name zum Senden von E-Mails an alle Mitglieder, wenn diese Option aktiviert ist. |
+|id| Zeichenfolge| Eindeutiger Bezeichner für die Klasse|
+|Beschreibung|Zeichenfolge| Beschreibung der Klasse|
+|displayName|Zeichenfolge| Der Name der Klasse|
+|mailNickname|Zeichenfolge| E-Mail-Name zum Senden von E-Mails an alle Mitglieder, wenn diese Option aktiviert ist. |
 |createdBy|[identitySet](identityset.md)| Entität, die die Klasse erstellt hat. |
-|classCode|String| Von der Schule verwendeter Klassencode zum Identifizieren der Klasse|
-|externalId|String| ID der Klasse aus dem Synchronisierungssystem |
-|externalName|String|Der Name der Klasse im Synchronisierungssystem|
-|externalSource|string| Quelle, aus der diese Klasse erstellt wurde. Mögliche Werte sind: `sis`, `manual` und `unknownFutureValue`.|
-|term|[educationTerm](educationterm.md)|Der Zeitraum für diese Klasse.|
-
+|classCode|Zeichenfolge| Von der Schule verwendeter Klassencode zum Identifizieren der Klasse|
+|externalId|Zeichenfolge| ID der Klasse aus dem Synchronisierungssystem |
+|externalName|Zeichenfolge|Der Name der Klasse im Synchronisierungssystem|
+|externalSource|educationExternalSource| Quelle, aus der diese Klasse erstellt wurde. Mögliche Werte sind `sis`, `manual`,`unknownFutureValue`.|
+|Zeitraum|[educationTerm](educationterm.md)|Der Zeitraum für diese Klasse.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|members|[educationUser](../resources/educationuser.md)-Sammlung| Alle Benutzer in der Klasse. Lässt Nullwerte zu.|
-|schools|[educationSchool](../resources/educationschool.md)-Sammlung| Alle Schulen, denen dieser Klasse zugeordnet ist. Lässt Nullwerte zu.|
-|teachers|[educationUser](../resources/educationuser.md)-Sammlung|  Alle Lehrer in der Klasse. Lässt Nullwerte zu.|
+|Mitglieder|[educationUser](../resources/educationuser.md)-Sammlung| Alle Benutzer in der Klasse. Lässt Nullwerte zu.|
+|Schulen|[educationSchool](../resources/educationschool.md)-Sammlung| Alle Schulen, denen dieser Klasse zugeordnet ist. Lässt Nullwerte zu.|
+|Lehrer|[educationUser](../resources/educationuser.md)-Sammlung|  Alle Lehrer in der Klasse. Lässt Nullwerte zu.|
+|Gruppe|[Gruppe](../resources/group.md)| Die Directory-Gruppe, die dieser Klasse entspricht.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.educationClass"
 }-->
 
@@ -64,7 +64,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "externalName": "String",
   "externalSource": "string",
   "mailNickname": "String",
-  "term": {"@odata.type": "microsoft.graph.education.term"}
+  "term": {"@odata.type": "microsoft.graph.educationTerm"}
 }
 
 ```

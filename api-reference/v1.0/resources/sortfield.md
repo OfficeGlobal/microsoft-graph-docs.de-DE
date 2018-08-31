@@ -3,29 +3,23 @@
 Stellt eine Bedingung in einem Sortiervorgang dar.
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|ascending|boolean|Stellt dar, ob die Sortierung in aufsteigender Reihenfolge ausgeführt wird.|
-|color|string|Stellt die Farbe dar, die das Ziel der Bedingung ist, wenn die Sortierung für die Schrift- oder Zellenfarbe gilt.|
-|dataOption|string|Stellt weitere Sortieroptionen für dieses Feld dar. Die folgenden Werte sind möglich: `Normal`, `TextAsNumber`.|
-|Key|int|Stellt die Spalte (oder Zeile, je nach Sortierausrichtung) dar, für die die Bedingung gilt. Wird als Offset von der ersten Spalte (oder Zeile) dargestellt.|
-|sortOn|string|Stellt den Typ der Sortierung dieser Bedingung dar. Die folgenden Werte sind möglich: `Value`, `CellColor`, `FontColor`, `Icon`.|
-
-## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
-|:---------------|:--------|:----------|
-|Symbol|[Icon](icon.md)|Stellt das Symbol dar, das das Ziel der Bedingung ist, wenn die Sortierung für das Symbol der Zelle gilt.|
+|aufsteigend|boolesch|Stellt dar, ob die Sortierung in aufsteigender Reihenfolge ausgeführt wird.|
+|Farbe|Zeichenfolge|Stellt die Farbe dar, die das Ziel der Bedingung ist, wenn die Sortierung für die Schrift- oder Zellenfarbe gilt.|
+|dataOption|Zeichenfolge|Stellt weitere Sortieroptionen für dieses Feld dar. Mögliche Werte sind: `Normal`, `TextAsNumber`.|
+|Schlüssel|int|Stellt die Spalte (oder Zeile, je nach Sortierausrichtung) dar, für die die Bedingung gilt. Wird als Offset von der ersten Spalte (oder Zeile) dargestellt.|
+|sortOn|Zeichenfolge|Stellt den Typ der Sortierung dieser Bedingung dar. Mögliche Werte sind: `Value`, `CellColor`, `FontColor`, `Icon`.|
+|Symbol|[WorkbookIcon](icon.md)|Stellt das Symbol dar, welches das Ziel der Bedingung ist, wenn die Sortierung für das Symbol der Zelle gilt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.sortField"
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookSortField"
 }-->
 
 ```json
@@ -34,7 +28,8 @@ Es folgt eine JSON-Darstellung der Ressource.
   "color": "string",
   "dataOption": "string",
   "key": 1024,
-  "sortOn": "string"
+  "sortOn": "string",
+  "icon": { "@odata.type": "microsoft.graph.workbookIcon" }
 }
 
 ```

@@ -4,14 +4,14 @@ Mithilfe von Schemaerweiterungen können Sie ein Schema definieren, um stark typ
 
 Schemaerweiterungen werden von den folgenden Ressourcentypen unterstützt:
 
- - [contact](contact.md)
- - [device](device.md)
+ - [Kontakt](contact.md)
+ - [Gerät](device.md)
  - [event](event.md) in einem Benutzer oder Office 365-Gruppenkalender
  - [post](post.md) einer Office 365-Gruppe
- - [group](group.md)
- - [message](message.md) 
- - [organization](organization.md)
- - [user](user.md)
+ - [Gruppe](group.md)
+ - [Mitteilung](message.md) 
+ - [Organisation](organization.md)
+ - [Benutzer](user.md)
 
 Im [Beispiel für Schemaerweiterungen](../../../concepts/extensibility_schema_groups.md) erfahren Sie, wie Sie benutzerdefinierte Daten zu Gruppen hinzufügen.
 
@@ -19,31 +19,30 @@ Im [Beispiel für Schemaerweiterungen](../../../concepts/extensibility_schema_gr
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Create](../api/schemaextension_post_schemaextensions.md) | schemaExtension |Dient zum Erstellen einer Schemaerweiterungsdefinition.|
-|[List](../api/schemaextension_list.md) | schemaExtension |Dient zum Auflisten der verfügbaren schemaExtension-Definitionen und ihrer Eigenschaften.|
+|[Erstellen](../api/schemaextension_post_schemaextensions.md) | schemaExtension |Dient zum Erstellen einer Schemaerweiterungsdefinition.|
+|[Liste](../api/schemaextension_list.md) | schemaExtension |Dient zum Auflisten der verfügbaren schemaExtension-Definitionen und ihrer Eigenschaften.|
 |[Get](../api/schemaextension_get.md) | schemaExtension |Dient zum Lesen der Eigenschaften einer bestimmten schemaExtension-Definition.|
-|[Update](../api/schemaextension_update.md) | schemaExtension   |Dient zum Aktualisieren einer schemaExtension-Definition. |
-|[Delete](../api/schemaextension_delete.md) | Keine |Dient zum Löschen einer schemaExtension-Definition. |
+|[Aktualisieren](../api/schemaextension_update.md) | schemaExtension   |Dient zum Aktualisieren einer schemaExtension-Definition. |
+|[Löschen](../api/schemaextension_delete.md) | Keine |Dient zum Löschen einer schemaExtension-Definition. |
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|description|String|Beschreibung für die Schemaerweiterung.|
-|id|String|Der eindeutige Bezeichner für die Schemaerweiterungsdefinition. <br>Sie können einen Wert mit einer von zwei Methoden zuweisen: <ul><li>Verketten Sie den Namen einer Ihrer überprüften Domänen mit einem Namen für die Schemaerweiterung, um eine eindeutige Zeichenfolge in diesem Format zu bilden: \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. Beispiel: `contoso_mySchema`. </li><li>Geben Sie einen Schemanamen an, und verwenden Sie diesen Schemanamen in Microsoft Graph zum Vervollständigen der **id**-Zuweisung in diesem Format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Zum Beispiel: `extkvbmkofy_mySchema`.</li></ul>Diese Eigenschaft kann nach dem Erstellen nicht mehr geändert werden. |
-|owner|Zeichenfolge|Die `appId` der Anwendung, die der Besitzer der Schemaerweiterung ist. Diese Eigenschaft kann bei der Erstellung bereitgestellt werden, um den Besitzer anzugeben.  Wird Sie nicht bereitgestellt, wird die `appId` der aufrufenden Anwendung als Besitzer festgelegt. In beiden Fällen muss der angemeldete Benutzer angemeldet der Besitzer der Anwendung sein. Wurde diese Eigenschaft einmal festgelegt, ist sie schreibgeschützt und kann nicht geändert werden.| 
-|properties|[extensionSchemaProperty](extensionschemaproperty.md)-Sammlung|Die Sammlung von Eigenschaftennamen und Typen, die die Schemaerweiterungsdefinition bilden.|
-|status|String|Der Lebenszyklusstatus der Schemaerweiterung. Mögliche Statuswerte sind: **InDevelopment**, **Available** und **Deprecated**. Wird bei der Erstellung automatisch auf **InDevelopment** festgelegt. Unter [Schemaerweiterungen](../../../concepts/extensibility_overview.md#schema-extensions) finden Sie weitere Informationen zu den möglichen Statusübergängen und Verhaltensweisen.|
-|targetTypes|String-Sammlung|Satz von Microsoft Graph-Typen (die Erweiterungen unterstützen können), auf die die Schemaerweiterung angewendet werden kann. Zur Auswahl stehen **contact**, **device**, **event**, **group**, **message**, **organization**, **post** und **user**.|
+|Beschreibung|Zeichenfolge|Beschreibung für die Schemaerweiterung.|
+|id|Zeichenfolge|Der eindeutige Bezeichner für die Schemaerweiterungsdefinition. <br>Sie können einen Wert mit einer von zwei Methoden zuweisen: <ul><li>Verketten Sie den Namen einer Ihrer überprüften Domänen mit einem Namen für die Schemaerweiterung, um eine eindeutige Zeichenfolge in diesem Format zu bilden: \{_﻿domainName_\}\_\{_﻿schemaName_\}. Beispiel: `contoso_mySchema`. </li><li>Geben Sie einen Schemanamen an, und verwenden Sie diesen Schemanamen in Microsoft Graph zum Vervollständigen der **id**-Zuweisung in diesem Format: ext\{_﻿8-random-alphanumeric-chars_\}\_\{_﻿schema-name_\}. Zum Beispiel: `extkvbmkofy_mySchema`.</li></ul>Diese Eigenschaft kann nach dem Erstellen nicht mehr geändert werden. |
+|Besitzer|Zeichenfolge|Die `appId` der Anwendung, die der Besitzer der Schemaerweiterung ist. Diese Eigenschaft kann bei der Erstellung bereitgestellt werden, um den Besitzer anzugeben.  Wird Sie nicht bereitgestellt, wird die `appId` der aufrufenden Anwendung als Besitzer festgelegt. In beiden Fällen muss der angemeldete Benutzer angemeldet der Besitzer der Anwendung sein. Wurde diese Eigenschaft einmal festgelegt, ist sie schreibgeschützt und kann nicht geändert werden.| 
+|Eigenschaften|[extensionSchemaProperty](extensionschemaproperty.md)-Sammlung|Die Sammlung von Eigenschaftennamen und Typen, die die Schemaerweiterungsdefinition bilden.|
+|Status|Zeichenfolge|Der Lebenszyklusstatus der Schemaerweiterung. Mögliche Statuswerte sind: **InDevelopment**, **Available** und **Deprecated**. Wird bei der Erstellung automatisch auf **InDevelopment** festgelegt. Unter [Schemaerweiterungen](../../../concepts/extensibility_overview.md#schema-extensions) finden Sie weitere Informationen zu den möglichen Statusübergängen und Verhaltensweisen.|
+|targetTypes|Zeichenfolgenauflistung|Satz von Microsoft Graph-Typen (die Erweiterungen unterstützen können), auf die die Schemaerweiterung angewendet werden kann. Zur Auswahl stehen **contact**, **device**, **event**, **group**, **message**, **organization**, **post** und **user**.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.schemaExtension"
 }-->
 

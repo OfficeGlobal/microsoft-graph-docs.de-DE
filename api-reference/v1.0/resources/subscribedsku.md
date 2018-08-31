@@ -8,19 +8,19 @@ Für abonnierte SKUs wird nur der Lesevorgang unterstützt. Erstellen, Aktualisi
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
 |[subscribedSku abrufen](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |Dient zum Lesen der Eigenschaften und Beziehungen des subscribedSku-Objekts.|
-|[subscribedSku auflisten](../api/subscribedsku_list.md) | [subscribedSku](subscribedsku.md)-Sammlung |Dienst zum Abrufen der Liste aller kommerziellen Abonnements, die eine Organisation erworben hat.|
+|[subscribedSku auflisten](../api/subscribedsku_list.md) | |||UNTRANSLATED_CONTENT_START|||[subscribedSku](subscribedsku.md) collection|||UNTRANSLATED_CONTENT_END||| |Dienst zum Abrufen der Liste aller kommerziellen Abonnements, die eine Organisation erworben hat.|
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|appliesTo|String| Beispiel: „Benutzer“ oder „Community“. |
-|capabilityStatus|String| Beispiel: „Aktiviert“. |
+|appliesTo|Zeichenfolge| Beispiel: „Benutzer“ oder „Community“. |
+|capabilityStatus|Zeichenfolge| Beispiel: „Aktiviert“. |
 |consumedUnits|Int32| Die Anzahl der Lizenzen, die zugewiesen wurden. |
-|id|String| Der eindeutige Bezeichner für das subscribedSku-Objekt. Schlüssel, lässt keine Nullwerte zu. |
+|ID|Zeichenfolge| Der eindeutige Bezeichner für das subscribedSku-Objekt. Schlüssel, lässt keine Nullwerte zu. |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Informationen über die Anzahl und den Status der Prepaidlizenzen. |
-|servicePlans|[servicePlanInfo](serviceplaninfo.md)-Auflistung| Informationen über die Servicepläne, die mit der SKU verfügbar sind. Lässt keine Nullwerte zu. |
+|servicePlans|[servicePlanInfo](serviceplaninfo.md)-Sammlung| Informationen über die Servicepläne, die mit der SKU verfügbar sind. Lässt keine Nullwerte zu. |
 |skuId|Guid| Der eindeutige Bezeichner (GUID) für die Dienst-SKU. |
-|skuPartNumber|String| Die SKU-Teilenummer, z. B.: „AAD_PREMIUM“ oder „RMSBASIC“. |
+|skuPartNumber|Zeichenfolge| Die SKU-Teilenummer, z. B.: „AAD_PREMIUM“ oder „RMSBASIC“. |
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -29,13 +29,25 @@ Keine
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.subscribedSku"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.subscribedSku",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "toppable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false
+      }
+    }
+  ]
 }-->
 
 ```json

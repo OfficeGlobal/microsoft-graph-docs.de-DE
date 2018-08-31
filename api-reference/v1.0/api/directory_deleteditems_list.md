@@ -26,7 +26,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http 
-GET /directory/deleteditems/microsoft.graph.group
+GET /directory/deletedItems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
@@ -39,7 +39,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.i
 | Name      |Beschreibung|
 |:----------|:----------|
 | Autorisierung  | Bearer&lt;code&gt; *erforderlich*|
-| Annehmen  | application/json |
+| Annehmen  | Anwendung/json |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -55,7 +55,7 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine
   "name": "get_deleteditems"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directory/deleteditems/microsoft.graph.group
+GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.group
 ```
 ##### <a name="response"></a>Antwort
 Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.

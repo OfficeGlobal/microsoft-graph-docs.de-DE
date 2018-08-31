@@ -12,12 +12,11 @@ Stellt die Reihe von Aktionen dar, die für eine Regel verfügbar sind.
 | forwardAsAttachmentTo | [recipient](recipient.md)-Sammlung | Die E-Mail-Adressen der Empfänger, an die eine Nachricht als Anlage weitergeleitet werden soll. |
 | forwardTo | [recipient](recipient.md)-Sammlung | Die E-Mail-Adressen der Empfänger, an die eine Nachricht weitergeleitet werden soll. |
 | markAsRead | Boolescher Wert | Gibt an, ob eine Nachricht als gelesen markiert werden soll. |
-| markImportance | Zeichenfolge | Legt die Wichtigkeit der Nachricht fest. Die folgenden Einstellungen sind möglich: `low`, `normal`, `high`. |
+| markImportance | Wichtigkeit | Legt die Wichtigkeit der Nachricht fest. Die folgenden Einstellungen sind möglich: `low`, `normal`, `high`. |
 | moveToFolder |  Zeichenfolge| Die ID des Ordners, in den eine Nachricht verschoben wird. |
 | permanentDelete | Boolescher Wert | Gibt an, ob eine Nachricht dauerhaft gelöscht und nicht im Ordner „Gelöschte Elemente“ gespeichert werden soll. |
-| redirectTo | [recipient](recipient.md) | Die E-Mail-Adresse, an die eine Nachricht umgeleitet werden soll. |
+| redirectTo | [Empfänger](recipient.md)-Sammlung | Die E-Mail-Adresse, an die eine Nachricht umgeleitet werden soll. |
 | stopProcessingRules | Boolescher Wert | Gibt an, ob nachfolgende Regeln ausgewertet werden sollen. |
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
@@ -40,7 +39,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "markImportance": "String",
   "moveToFolder": "String",
   "permanentDelete": "Boolean",
-  "redirectTo": {"@odata.type": "microsoft.graph.recipient"},
+  "redirectTo": [{"@odata.type": "microsoft.graph.recipient"}],
   "stopProcessingRules": "Boolean"
 }
 

@@ -3,18 +3,18 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Video
-ms.openlocfilehash: dd6ece46ce54fe791c0e6b5801287e2abad4fe48
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: cb9e28c1b26aa60fe7d854796df8bff34ca8e5df
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265848"
 ---
 # <a name="video-resource-type"></a>Video-Ressourcentyp
 
 Die **Video**-Ressource gruppiert videobezogene Datenelemente in einer einzelnen Struktur.
 
-Wenn ein [**DriveItem**](driveitem.md) ein **video**-Facet ungleich Null aufweist, stellt das Element eine Videodatei dar.
-Die Eigenschaften der **Video**-Ressource werden durch Extrahieren von Metadaten aus der Datei aufgefüllt.
+Wenn ein [**DriveItem**](driveitem.md) ein **video**-Facet ungleich Null aufweist, stellt das Element eine Videodatei dar. Die Eigenschaften der **Video**-Ressource werden durch Extrahieren von Metadaten aus der Datei aufgefüllt.
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -52,7 +52,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 | **bitrate**               | Int32  | Bitrate des Videos in Bits pro Sekunde.
 | **duration**              | Int64  | Dauer der Datei in Millisekunden.
 | **fourCC**                | string | „Vier Zeichencode“-Name des Videoformats.
-| **framerate**             | double | Framerate des Videos.
+| **frameRate**             | double | Framerate des Videos.
 | **height**                | Int32  | Die Höhe des Videos in Pixel.
 | **width**                 | Int32  | Die Breite des Videos in Pixel.
 

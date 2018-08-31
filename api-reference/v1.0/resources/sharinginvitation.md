@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SharingInvitation
-ms.openlocfilehash: 75fa8212f77873b86748f6d8f63c8e62c8d6a0ca
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 9237c401fd83a7b30303f147402262c022b820a7
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265855"
 ---
 # <a name="sharinginvitation-resource-type"></a>SharingInvitation-Ressourcentyp
 
@@ -35,16 +36,18 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ## <a name="properties"></a>Eigenschaften
 
-| Eigenschaftenname  | Typ                          | Beschreibung                                                                                                                   |
-|:---------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
-| E-Mail          | String                        | Die für den Empfänger der Freigabeeinladung angegebene E-Mail-Adresse. Schreibgeschützt.                                          |
-| invitedBy      | [identitySet](identityset.md) | Stellt Informationen zum Absender der Einladung bereit, der diese Berechtigung erstellt hat, wenn diese Informationen verfügbar sind. Schreibgeschützt. |
-| signInRequired | Boolescher Wert                       | Bei `true` muss sich der Empfänger der Einladung anmelden, um auf das freigegebene Element zugreifen zu können. Schreibgeschützt.                     |
+| Eigenschaftenname  | Typ            | Beschreibung
+|:---------------|:----------------|:------------------------------------------
+| E-Mail          | Zeichenfolge          | Die für den Empfänger der Freigabeeinladung angegebene E-Mail-Adresse. Schreibgeschützt.
+| invitedBy      | [identitySet][] | Stellt Informationen zum Absender der Einladung bereit, der diese Berechtigung erstellt hat, wenn diese Informationen verfügbar sind. Schreibgeschützt.
+| signInRequired | Boolescher Wert         | Bei `true` muss sich der Empfänger der Einladung anmelden, um auf das freigegebene Element zugreifen zu können. Schreibgeschützt.
 
-## <a name="remarks"></a>Bemerkungen 
+## <a name="remarks"></a>Bemerkungen
 
 Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).
 
+[DriveItem]: driveItem.md
+[IdentitySet]: identitySet.md
 
 <!-- {
   "type": "#page.annotation",

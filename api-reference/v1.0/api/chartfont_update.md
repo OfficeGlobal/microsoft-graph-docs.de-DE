@@ -13,14 +13,14 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/font
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/format/font
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/font
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/font
 ```
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -32,12 +32,12 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |color|string|HTML-Farbcodedarstellung der Textfarbe. #ff0000 stellt beispielsweise Rot dar.|
 |italic|boolean|Stellt den Kursiv-Status der Schriftart dar.|
 |name|string|Schriftartname (z. B. "Calibri")|
-|size|double|Der Schriftgrad (z. B. 11)|
-|underline|string|Art der auf die Schriftart angewendeten Unterstreichung. Mögliche Werte: `None`, `Single`.|
+|size|double|Der Schriftgrad (z. B. 11)|
+|underline|string|Art der Unterstreichung für die Schriftart. Mögliche Werte sind: `None`, `Single`.|
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [ChartFont](../resources/chartfont.md)-Objekt im Antworttext zurückgegeben.
+Wenn das Verfahren erfolgreich verläuft, werden im Antworttext der `200 OK` Antwortcode und ein aktualisiertes [WorkbookChartFont](../resources/chartfont.md)-Objekt zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
@@ -46,7 +46,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "update_chartfont"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/format/font
 Content-type: application/json
 Content-length: 134
 
@@ -64,7 +64,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartFont"
+  "@odata.type": "microsoft.graph.workbookChartFont"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -1,6 +1,6 @@
 # <a name="get-section"></a>Abschnitt abrufen
 
-Mit dieser API können Sie die Eigenschaften und Beziehungen eines Objekts des Typs [section](../resources/section.md) abrufen.
+Rufen Sie die Eigenschaften und die Beziehungen eines [onenoteSection](../resources/section.md)-Objekts ab.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -26,15 +26,15 @@ Die Standardabfrage erweitert `parentNotebook` und wählt die zugehörigen Eigen
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Annehmen | string | `application/json` |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Akzeptieren | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [section](../resources/section.md)-Objekt im Antworttext zurückgegeben.
+Bei erfolgreicher Ausführung gibt die Methode den `200 OK` Antwortcode und ein [onenoteSection](../resources/section.md)-Objekt im Antworttext zurück.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.

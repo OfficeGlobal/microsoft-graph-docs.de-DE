@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Synchronisieren der Inhalte eines Laufwerks
-ms.openlocfilehash: 47f3ebbc7936b6bd97b58a62db4805197c3bb3c1
-ms.sourcegitcommit: 126066a65b7c59f0d71667d722ee987b8ee97713
+ms.openlocfilehash: f87bfcd686ab98297c8b33aefc55705162438a35
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "20050829"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265015"
 ---
 # <a name="track-changes-for-a-drive"></a>Laufwerksänderungen nachverfolgen
 
@@ -46,7 +46,13 @@ GET /users/{userId}/drive/root/delta
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
-Diese Methode unterstützt die [OData-Abfrageparameter](../../../concepts/query_parameters.md) von  `$select`, `$expand` und `$top` zur Anpassung der Antwort.
+|||UNTRANSLATED_CONTENT_START|||This method supports the `$select`, `$expand`, and `$top` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.|||UNTRANSLATED_CONTENT_END|||
+
+## <a name="parameters"></a>Parameter
+
+| Name   | Wert  | Beschreibung                                                                                                                          |
+|:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
+| Token  | Zeichenfolge | Optional. Wenn nicht angegeben, zählt es den aktuellen Zustand der Hierarchie. Wenn `latest`, gibt es eine leere Antwort mit dem neuesten Delta-Token zurück. Wenn ein früherer Delta-Token existiert, gibt es den neuen Status seit diesem Token zurück.
 
 ## <a name="response"></a>Antwort
 
@@ -67,7 +73,7 @@ Hier sehen Sie ein Beispiel für einen Aufruf dieser API zur Ermittlung Ihres lo
 
 Unten ein Beispiel für eine ursprüngliche Anforderung:
 
-<!-- { "blockType": "request", "name": "get_item_delta_first" } -->
+<!-- { "blockType": "request", "name": "get_item_delta_first", "tags": "service.graph" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta
@@ -115,7 +121,7 @@ Unten sehen Sie ein Beispiel für einen Aufruf dieser API zur Aktualisierung Ihr
 
 Hier sehen Sie ein Beispiel für eine Anforderung nach der ursprünglichen Anforderung:
 
-<!-- { "blockType": "request", "name": "get_item_delta_last" }-->
+<!-- { "blockType": "request", "name": "get-item-delta-last", "tags": "service.graph" }-->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
@@ -171,7 +177,7 @@ Rufen Sie zum Abrufen des aktuellen deltaLink `delta` mit dem Abfragezeichenfolg
 
 ### <a name="request"></a>Anforderung
 
-<!-- { "blockType": "request", "name": "get-delta-latest", "scope": "files.read", "target": "action" } -->
+<!-- { "blockType": "request", "name": "get-delta-latest", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
 ```http
 GET /me/drive/root/delta?token=latest
@@ -179,7 +185,7 @@ GET /me/drive/root/delta?token=latest
 
 ### <a name="response"></a>Antwort
 
-<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
+<!-- { "blockType": "response", "isEmpty": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -191,7 +197,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
 * Der „delta“-Feed zeigt den aktuellen Zustand jedes Elements, nicht jede Änderung. Wenn ein Element beispielsweise zweimal umbenannt wurde, wird es nur einmal angezeigt, mit seinem neuesten Namen.
 * Ein Element kann mehrmals in einem „delta“-Feed aufgeführt werden, aus jeweils unterschiedlichen Gründen. Verwenden Sie das letzte Vorkommen in der Auflistung.
@@ -202,7 +208,7 @@ Content-type: application/json
 
 * **cTag**
 * **lastModifiedBy**
-* **size**
+* **Größe**
 
 ## <a name="error-responses"></a>Fehlerantworten
 
