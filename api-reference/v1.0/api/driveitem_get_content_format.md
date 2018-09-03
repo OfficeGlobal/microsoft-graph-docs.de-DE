@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Konvertieren in andere Formate
-ms.openlocfilehash: 3031500beaec2d765075abfd925a6333f50368f9
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 46e8ed178384a81f232a753fe683f8e11efe8585
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23269180"
 ---
 # <a name="download-a-file-in-another-format"></a>Herunterladen einer Datei in einem anderen Format
 
@@ -40,21 +41,23 @@ GET /drive/root:/{path and filename}:/content?format={format}
 
 | Name      | Wert  | Beschreibung                                                    |
 |:----------|:-------|:---------------------------------------------------------------|
-| _format_  | string | Hier geben Sie das Format an, in dem der Elementinhalt heruntergeladen werden soll. |
+| _Format_  | Zeichenfolge | Hier geben Sie das Format an, in dem der Elementinhalt heruntergeladen werden soll. |
 
 
-Die folgenden Werte sind für den Parameter **convert** gültig:
+#### <a name="format-options"></a>Formatoptionen
 
-| Wert   | Beschreibung                        | Unterstützte Quellerweiterungen |
-|:--------|:-----------------------------------|-----------------------------|
-| **pdf** | Konvertiert das Element ins PDF-Format. | CSV, DOC, DOCX, ODP, ODS, ODT, POT, POTM, POTX, PPS, PPSX, PPSXM, PPT, PPTM, PPTX, RTF, XLS, XLSX | 
+Die folgenden Werte sind für den **Format**-Parameter gültig:
+
+| Formatwert | Beschreibung                        | Unterstützte Quellerweiterungen
+|:-------------|:-----------------------------------|----------------------------
+| pdf          | Konvertiert das Element ins PDF-Format. | CSV, DOC, DOCX, ODP, ODS, ODT, POT, POTM, POTX, PPS, PPSX, PPSXM, PPT, PPTM, PPTX, RTF, XLS, XLSX
 
 ### <a name="example"></a>Beispiel
 
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
 ```http
-GET /drive/items/{item-id}/content?format={format}
+GET /me/drive/items/{item-id}/content?format={format}
 ```
 
 ## <a name="response"></a>Antwort

@@ -30,7 +30,7 @@ Können Sie Benutzer vordefinierten administrativen Azure AD-[Directory-Rollen](
 
 ### <a name="manage-devices"></a>Verwalten von Geräten
 
-[Verwalten Sie Geräte](https://docs.microsoft.com/de-DE/azure/active-directory/device-management-introduction.md), die in der Organisation registriert sind. Geräte sind für Benutzer registriert und umfassen Elemente wie Laptops, Desktops, Tablets und Mobiltelefone. Geräte werden in der Regel mithilfe des Geräteregistrierungsdiensts oder von Microsoft Intune in der Cloud erstellt. Sie werden von Richtlinien für bedingten Zugriff für mehrstufige Authentifizierung verwendet.
+[Verwalten Sie Geräte](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction.md), die in der Organisation registriert sind. Geräte sind für Benutzer registriert und umfassen Elemente wie Laptops, Desktops, Tablets und Mobiltelefone. Geräte werden in der Regel mithilfe des Geräteregistrierungsdiensts oder von Microsoft Intune in der Cloud erstellt. Sie werden von Richtlinien für bedingten Zugriff für mehrstufige Authentifizierung verwendet.
 
 ### <a name="partner-tenant-management"></a>Verwaltung von Partnermandanten
 
@@ -54,11 +54,14 @@ Sie können Risikoereignisse abrufen, die von Azure Active Directory [Identity P
 
 Sie können sicheren Zugriff auf Ressourcen erlangen, indem Sie Administratorberechtigungen bei Bedarf aktivieren. [Privileged Identity Management](../api-reference/beta/resources/privilegedidentitymanagement_root.md) ist ein Feature von Azure AD Premium P2.
 
+### <a name="manage-user-access-reviews-preview"></a>Verwaltung von Benutzerzugriffsbewertungen (Vorschau)
+
+Sie können Zugriffsbewertungen von Gruppenmitgliedschaften und Zugriff auf die Anwendung konfigurieren. [Zugriffsbewertungen](../api-reference/beta/resources/accessreviews_root.md) ist in Azure AD Premium P2 enthalten.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 - Informationen zum [Verwenden der Azure AD-REST-APIs](../api-reference/v1.0/resources/azure_ad_overview.md).
 - Verwenden von Azure AD zum [Authentifizieren](auth_overview.md) bei Microsoft Graph. 
-- Integrieren der [Azure AD-Anmeldung](https://azure.microsoft.com/de-DE/develop/identity/signin/) in Ihre App oder Website.
+- Integrieren der [Azure AD-Anmeldung](https://azure.microsoft.com/en-us/develop/identity/signin/) in Ihre App oder Website.
 - Informationen zu Neuerungen in den Azure AD-APIs finden Sie im [Changelog](changelog.md).
-- In den [Beispielen](https://developer.microsoft.com/de-DE/graph/graph/examples) finden Sie weitere Ideen für die Verwendung von Microsoft Graph.
+- In den [Beispielen](https://developer.microsoft.com/en-us/graph/graph/examples) finden Sie weitere Ideen für die Verwendung von Microsoft Graph.

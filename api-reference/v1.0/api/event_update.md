@@ -1,6 +1,6 @@
 # <a name="update-event"></a>Ereignis aktualisieren
 
-Mit dieser API können Sie die Eigenschaften eines Ereignisobjekts aktualisieren.
+Aktualisieren Sie die Eigenschaften eines [Ereignisobjekts](../resources/event.md).
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -33,36 +33,39 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|attendees|[Teilnehmer](../resources/attendee.md)|Die Sammlung der Teilnehmer für das Ereignis.|
-|body|[ItemBody](../resources/itembody.md)|Der Text der Nachricht, die mit diesem Ereignis verknüpft ist.|
-|categories|String|Die Kategorien, die mit dem Ereignis verknüpft sind.|
-|end|[DateTimeTimeZone](../resources/datetimetimezone.md)|Datum und Uhrzeit für das Ende des Ereignisses.<br/><br/>Standardmäßig ist die Endzeit in UTC angegeben. Sie können eine optionale Zeitzone in EndTimeZone angeben, die Endzeit in dieser Zeitzone angeben und einen Zeitunterschied zur UTC-Zeitzone angeben. Beachten Sie, dass bei Verwendung von EndTimeZone auch ein Wert für StartTimeZone angegeben werden muss.<br/><br/>In diesem Beispiel wird der 25. Februar 2015 21:34 in PST angegeben: „2015-02-25T21:34:00-08:00“. |
-|Wichtigkeit|String|Die Wichtigkeit des Ereignisses. Mögliche Werte sind: `low`, `normal` und `high`.|
-|isAllDay|Boolean|True, wenn das Ereignis den ganzen Tag andauert.|
-|isReminderOn|Boolean|True, wenn eine Benachrichtigung den Benutzer an das Ereignis erinnern soll.|
+|Teilnehmer|[Teilnehmer](../resources/attendee.md)|Die Sammlung der Teilnehmer für das Ereignis.|
+|Text|[ItemBody](../resources/itembody.md)|Der Text der Nachricht, die mit diesem Ereignis verknüpft ist.|
+|Kategorien|Zeichenfolge|Die Kategorien, die mit dem Ereignis verknüpft sind.|
+|end|[DateTimeTimeZone](../resources/datetimetimezone.md)|Datum und Uhrzeit für das Ende des Ereignisses.<br/><br/>Standardmäßig ist die Endzeit in UTC angegeben. Sie können eine optionale Zeitzone in EndTimeZone angeben, die Endzeit in dieser Zeitzone angeben und einen Zeitunterschied zur UTC-Zeitzone angeben. Beachten Sie, dass bei Verwendung von EndTimeZone auch ein Wert für StartTimeZone angegeben werden muss.<br/><br/>In diesem Beispiel wird der 25. Februar 2015 21:34 in PST angegeben: „2015-02-25T21:34:00-08:00“. |
+|Wichtigkeit|Zeichenfolge|Die Wichtigkeit des Ereignisses. Mögliche Werte sind `low`, `normal`,`high`.|
+|isAllDay|boolesch|True, wenn das Ereignis den ganzen Tag andauert.|
+|isReminderOn|boolesch|True, wenn eine Benachrichtigung den Benutzer an das Ereignis erinnern soll.|
 |location|[Ort](../resources/location.md)|Der Ort des Ereignisses.|
 |locations|[location](../resources/location.md)-Sammlung|Die Orte, an denen die Veranstaltung stattfindet. Die Eigenschaften **location** und **locations** entsprechen sich immer gegenseitig. Wenn Sie die **location**-Eigenschaft aktualisieren, werden alle früheren Orte in der **locations**-Sammlung entfernt und durch den neuen **location**-Wert ersetzt. |
-|onlineMeetingUrl|String|Eine URL für eine Onlinebesprechung.|
 |recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|Das Serienmuster für das Ereignis.|
 |reminderMinutesBeforeStart|Int32|Festlegung, wie viele Minuten vor Beginn des Ereignisses die Erinnerung angezeigt werden soll|
-|responseRequested|Boolean|Legen Sie „True“ fest, wenn der Absender eine Antwort erhalten soll, wenn das Ereignis akzeptiert oder abgelehnt wird.|
-|sensitivity|String| Mögliche Werte: `normal`, `personal`, `private`, `confidential`.|
-|showAs|Zeichenfolge|Der anzuzeigende Status. Mögliche Werte sind: `free`, `tentative`, `busy`, `oof`, `workingElsewhere` und `unknown`.|
-|start|[DateTimeTimeZone](../resources/datetimetimezone.md)|Die Startzeit des Ereignisses. <br/><br/>Standardmäßig ist die Startzeit in UTC angegeben. Sie können eine optionale Zeitzone in StartTimeZone angeben, die Startzeit in dieser Zeitzone angeben und einen Zeitunterschied zur UTC-Zeitzone angeben. Beachten Sie, dass bei Verwendung von StartTimeZone auch ein Wert für EndTimeZone angegeben werden muss.<br/><br/>In diesem Beispiel wird 25. Februar 2015 19:34 in PST angegeben: „2015-02-25T19:34:00-08:00“.  |
-|subject|String|Der Text der Betreffzeile des Ereignisses|
+|responseRequested|boolesch|Legen Sie „True“ fest, wenn der Absender eine Antwort erhalten soll, wenn das Ereignis akzeptiert oder abgelehnt wird.|
+|sensitivity|Zeichenfolge| Mögliche Werte: `normal`, `personal`, `private`, `confidential`.|
+|showAs|Zeichenfolge|Der anzuzeigende Status. Mögliche Werte: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|start|[DateTimeTimeZone](../resources/datetimetimezone.md)|Die Startzeit des Ereignisses. <br/><br/>Standardmäßig ist die Startzeit in UTC angegeben. Sie können eine optionale Zeitzone in StartTimeZone angeben, die Startzeit in dieser Zeitzone angeben und einen Zeitunterschied zur UTC-Zeitzone angeben. Beachten Sie, dass bei Verwendung von StartTimeZone auch ein Wert für EndTimeZone angegeben werden muss.<br/><br/>In diesem Beispiel wird 25. Februar 2015 19:34 in PST angegeben: „2015-02-25T19:34:00-08:00“.  |
+|Betreff|Zeichenfolge|Der Text der Betreffzeile des Ereignisses.|
 
-Da die **event**-Ressource [Erweiterungen](../../../concepts/extensibility_overview.md) unterstützt, erlaubt der `PATCH`-Vorgang das Hinzufügen, Aktualisieren oder Löschen eigener App-spezifischer Daten in den benutzerdefinierten Eigenschaften von Erweiterungen in vorhandenen **event**-Instanzen.
+Da die **event**-Ressource [Erweiterungen](../../../concepts/extensibility_overview.md) unterstützt, erlaubt der `PATCH`-Vorgang das Hinzufügen, Aktualisieren oder Löschen eigener App-spezifischer Daten in den benutzerdefinierten Eigenschaften von Erweiterungen in vorhandenen **event**-Instanzen.  
+  
+Wenn das **event** das Sie aktualisieren das Master-Ereignis einer Terminserie ist, mehrere Teilnehmer und Instanzen enthält, die separat aktualisiert wurden, werden mehrere Benachrichtigung-e-Mails gesendet: eine für die Master-Serie und jeweils eine pro Instanz, die aktualisiert wurde.  
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [vent](../resources/event.md)-Objekt im Antworttext zurückgegeben.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [event](../resources/event.md)-Objekt im Antworttext zurückgegeben.  
+
+>**Hinweis:** Diese Methode kann eine HTTP-400-Bad-Request-Antwort mit einem Fehlercode `ErrorOccurrenceCrossingBoundary` und der folgenden Fehlermeldung zurückgeben: geändertes Serienelement weist kreuzende oder sich überlappende benachbarte Serienelemente auf. Dies gibt an, dass das Update die folgenden Outlook-Einschränkung auf Serienausnahmen verletzt: das Auftreten ein Serientermins kann nicht auf oder vor dem Tag des vorherigen Vorkommens verschoben werden und kann nicht auf oder nach dem Tag des folgenden Vorkommens verschoben werden.
 
 ## <a name="example"></a>Beispiel
 
@@ -119,7 +122,7 @@ Content-length: 285
 }
 ```
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](../../../concepts/extensibility_overview.md)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](../../../concepts/extensibility_open_users.md)

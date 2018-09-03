@@ -1,6 +1,6 @@
 # <a name="create-section"></a>Abschnitt erstellen
 
-Mit dieser API können Sie eine neue Ressource des Typs [section](../resources/section.md) in der angegebenen Abschnittsgruppe erstellen.
+Mit dieser API können Sie eine neue Ressource des Typs [onenoteSection](../resources/section.md) in der angegebenen Abschnittsgruppe erstellen.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -21,8 +21,8 @@ POST /sites/{id}/onenote/sectionGroups/{id}/sections
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type | string | `application/json` |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Inhaltstyp | Zeichenfolge | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext einen Namen für den Abschnitt an.
@@ -31,7 +31,7 @@ Innerhalb der gleichen Hierarchieebene müssen Abschnittsnamen eindeutig sein. D
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und ein [section](../resources/section.md)-Objekt im Antworttext zurückgegeben.
+Bei erfolgreicher Ausführung gibt die Methode den `201 Created` Antwortcode und ein [onenoteSection](../resources/section.md)-Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung

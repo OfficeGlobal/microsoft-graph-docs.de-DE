@@ -6,12 +6,12 @@
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.outlookitem"
+  "abstract": true,
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.outlookItem"
 }-->
 
 ```json
@@ -25,12 +25,12 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|categories|String collection||
-|changeKey|String||
+|Kategorien|Zeichenfolgenauflistung|Die Kategorien, die mit dem Element verknüpft sind|
+|changeKey|Zeichenfolge|Identifiziert die Version des Elements. Jedes Mal, wenn das Element geändert wird, ändert sich auch ChangeKey. Dies ermöglicht es Exchange, die Änderungen an der richtigen Version des Objekts vorzunehmen. Schreibgeschützt.|
 |createdDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|id|String| Schreibgeschützt.|
+|id|Zeichenfolge| Schreibgeschützt.|
 |lastModifiedDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 
 ## <a name="relationships"></a>Beziehungen

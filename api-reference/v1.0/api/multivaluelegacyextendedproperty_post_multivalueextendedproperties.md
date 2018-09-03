@@ -4,11 +4,11 @@ In diesem Artikel erläutern wir Ihnen,wie Sie eine oder mehrere mehrwertige erw
 
 Die folgenden Benutzerressourcen werden unterstützt:
 
-- [message](../resources/message.md)
+- [Nachricht](../resources/message.md)
 - [mailFolder](../resources/mailfolder.md)
-- [event](../resources/event.md)
-- [calendar](../resources/calendar.md)
-- [contact](../resources/contact.md)
+- [Ereignis](../resources/event.md)
+- [Kalender](../resources/calendar.md)
+- [Kontakt](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
 
 Darüber hinaus werden die folgenden Gruppenressourcen unterstützt:
@@ -93,28 +93,24 @@ PATCH /users/{id|userPrincipalName}/contactFolders/{id}
 PATCH /groups/{id}/events/{id}
 ```
 
-
-## <a name="parameters"></a>Parameter
-|**Parameter**|**Typ**|**Beschreibung**|
-|:-----|:-----|:-----|
-|_URL parameters_|
-|id|string|Eine eindeutige ID für ein Objekt in der entsprechenden Sammlung. Erforderlich.|
-|_Body parameters_|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) collection| Ein Array aus einer oder mehreren mehrwertigen erweiterten Eigenschaften |
-|id|String|Geben Sie diesen Parameter für jede Eigenschaft in der **multiValueExtendedProperties**-Sammlung an, um die Eigenschaft zu identifizieren. Der Parameter muss einem der unterstützten Formate entsprechen. Weitere Informationen finden Sie unter [Outlook extended properties overview](../resources/extended-properties-overview.md) (Überblick über erweiterte Outlook-Eigenschaften). Erforderlich.|
-|value|string|Geben Sie für jede Eigenschaft in der **multiValueExtendedProperties**-Sammlung den Eigenschaftswert an. Erforderlich.|
-
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Wert |
 |:---------------|:----------|
-| Authorization | Bearer {token}. Erforderlich. |
-| Content-Type | application/json |
+| Autorisierung | Bearer {token}. Erforderlich. |
+| Inhaltstyp | application/json |
 
 ## <a name="request-body"></a>Anforderungstext
 
 Geben Sie einen JSON-Text für jedes [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md)-Objekt in der **multiValueExtendedProperties**-Sammlung der Ressourceninstanz an.
 
-Beim Erstellen einer erweiterten Eigenschaft in einer _neuen_ Ressourceninstanz müssen Sie zusätzlich zu der neuen **multiValueExtendedProperties**-Sammlung eine JSON-Darstellung der betreffenden Ressourceninstanz angeben (d. h. eine Ressource des Typs [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md) usw.).
+|Eigenschaft|Typ|Beschreibung|
+|:-----|:-----|:-----|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) -Sammlung| Ein Array aus einer oder mehreren mehrwertigen erweiterten Eigenschaften |
+|id|Zeichenfolge|Geben Sie diesen Parameter für jede Eigenschaft in der **multiValueExtendedProperties**-Sammlung an, um die Eigenschaft zu identifizieren. Der Parameter muss einem der unterstützten Formate entsprechen. Weitere Informationen finden Sie unter [Outlook extended properties overview](../resources/extended-properties-overview.md) (Überblick über erweiterte Outlook-Eigenschaften). Erforderlich.|
+|Wert|Zeichenfolge|Geben Sie für jede Eigenschaft in der **multiValueExtendedProperties**-Sammlung den Eigenschaftswert an. Erforderlich.|
+
+Beim Erstellen einer erweiterten Eigenschaft in einer _neuen_ Ressourceninstanz müssen Sie zusätzlich zu der neuen **multiValueExtendedProperties**-Sammlung eine JSON-Darstellung der betreffenden Ressourceninstanz angeben (d. h. eine Ressource des Typs [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md) usw.).
+
 
 ## <a name="response"></a>Antwort
 

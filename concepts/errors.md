@@ -18,7 +18,7 @@ In der folgenden Tabelle werden die HTTP-Statuscodes aufgeführt und beschrieben
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | 400         | Ungültige Anforderung (Bad Request)                     | Die Anforderung kann nicht verarbeitet werden, da sie fehlerhaft oder falsch ist.                                                                       |
 | 401         | Nicht autorisiert (Unauthorized)                    | Erforderliche Authentifizierungsinformationen fehlen oder sind für die Ressource nicht gültig.                                                   |
-| 403         | Forbidden                       | Der Zugriff auf die angeforderte Ressource wird verweigert. Der Benutzer verfügt möglicherweise nicht über ausreichende Berechtigungen. <br /><br /> **Wichtig:** Wenn Richtlinien für bedingten Zugriff auf eine Ressource angewandt werden, wird möglicherweise der Fehler HTTP 403; Forbidden error=insufficent_claims zurückgegeben. Weitere Informationen zur Microsoft Graph und zum bedingten Zugriff finden Sie in der [Developer-Leitfaden zum bedingten Zugriff in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)  |
+| 403         | Verboten (Forbidden)                       | Der Zugriff auf die angeforderte Ressource wird verweigert. Der Benutzer verfügt möglicherweise nicht über ausreichende Berechtigungen. <br /><br /> **Wichtig:** Wenn Richtlinien für bedingten Zugriff auf eine Ressource angewandt werden, wird möglicherweise der Fehler HTTP 403; Forbidden error=insufficent_claims zurückgegeben. Weitere Informationen zur Microsoft Graph und zum bedingten Zugriff finden Sie in der [Developer-Leitfaden zum bedingten Zugriff in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)  |
 | 404         | Nicht gefunden (Not Found)                       | Die angeforderte Ressource ist nicht vorhanden.                                                                                                  |
 | 405         | Methode nicht zulässig (Method Not Allowed)              | Die HTTP-Methode in der Anforderung ist für die Ressource nicht zulässig.                                                                         |
 | 406         | Nicht zulässig (Not Acceptable)                  | Dieser Dienst unterstützt nicht das im Accept-Header angeforderte Format.                                                                |
@@ -33,14 +33,14 @@ In der folgenden Tabelle werden die HTTP-Statuscodes aufgeführt und beschrieben
 | 429         | Zu viele Anforderungen (Too Many Requests)               | Die Clientanwendung wurde gedrosselt und sollte nicht versuchen, die Anforderung zu wiederholen, bis eine bestimmte Zeitspanne abgelaufen ist.                |
 | 500         | Interner Serverfehler (Internal Server Error)           | Beim Verarbeiten der Anforderung ist ein interner Serverfehler aufgetreten.                                                                       |
 | 501         | Nicht implementiert (Not Implemented)                 | Das angeforderte Feature ist nicht implementiert.                                                                                               |
-| 503         | Dienst nicht verfügbar (Service Unavailable)             | Der Dienst ist wegen Wartung vorübergehend nicht verfügbar ist oder ist überlastet. Sie können die Anfrage nach einer Verzögerung wiederholen, deren Länge in einem Retry-After-Header angegeben werden kann. |
+| 503         | Dienst nicht verfügbar (Service Unavailable)             | Der Dienst ist wegen Wartung vorübergehend nicht verfügbar ist oder ist überlastet. Sie können die Anfrage nach einer Verzögerung wiederholen, deren Länge in einem Retry-After-Header angegeben werden kann.|
 | 504         | Gateway-Timeout                 | Der Server fungiert zwar als Proxy, hat aber keine rechtzeitige Antwort vom Upstreamserver empfangen, die für den Zugriff erforderlich war, um die Anforderung abzuschließen. Kann zusammen mit 503 auftreten. |
 | 507         | Unzureichender Speicher (Insufficient Storage)            | Das maximale Speicherkontingent wurde erreicht.                                                                                            |
-| 509         | Bandwidth Limit Exceeded        | Die App wurde gedrosselt, da sie die maximale Bandbreite überschritten hat. Die App kann die Anforderung nach einiger Zeit wiederholen. |
+| 509         | Bandbreitengrenze überschritten (Bandwidth Limit Exceeded)        | Die App wurde gedrosselt, da sie die maximale Bandbreite überschritten hat. Die App kann die Anforderung nach einiger Zeit wiederholen. |
 
 Die Fehlerantwort ist ein einzelnes JSON-Objekt, das eine einzige Eigenschaft mit dem Namen **error** enthält. Dieses Objekt enthält alle Fehlerdetails. Sie können die hier zurückgegebenen Informationen anstelle von oder zusätzlich zu dem HTTP-Statuscode verwenden. Nachfolgend finden Sie ein Beispiel für einen vollständigen JSON-Fehlertext.
 
-<!-- { "blockType": "example", "@odata.type": "sample.error", "expectError": true, "name": "example-error-response"} -->
+<!-- { "blockType": "ignored", "@odata.type": "odata.error", "expectError": true, "name": "example-error-response" } -->
 ```json
 {
   "error": {
@@ -66,7 +66,7 @@ Fehlerantworten entsprechen der Definition der [OData v4](http://docs.oasis-open
 
 Die Fehlerressource besteht aus den folgenden Ressourcen:
 
-<!-- { "blockType": "resource", "@odata.type": "sample.error" } -->
+<!-- { "blockType": "resource", "@odata.type": "odata.error" } -->
 ```json
 {
   "error": { "@odata.type": "odata.error" }  
@@ -88,16 +88,9 @@ In der Fehlerantwort befindet sich eine Fehlerressource, die die folgenden Eigen
 
 | Eigenschaftenname  | Wert                  | Beschreibung\                                                                                               |
 |:---------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
-| **code**       | string                 | Eine Fehlercode-Zeichenfolge für den aufgetretenen Fehler                                                            |
-| **message**    | string                 | Eine für Entwickler bereitgestellte Meldung über den aufgetretenen Fehler. Diese sollte dem Benutzer selbst nicht direkt angezeigt werden. |
+| **code**       | Zeichenfolge                 | Eine Fehlercode-Zeichenfolge für den aufgetretenen Fehler                                                            |
+| **message**    | Zeichenfolge                 | Eine für Entwickler bereitgestellte Meldung über den aufgetretenen Fehler. Diese sollte dem Benutzer selbst nicht direkt angezeigt werden. |
 | **innererror** | error object           | Optional. Zusätzliche Fehlerobjekte, die eventuell spezifischer als der Fehler der obersten Ebene sind.                     |
-<!-- {
-  "type": "#page.annotation",
-  "description": "Understand the error format for the API and error codes.",
-  "keywords": "error response, error, error codes, innererror, message, code",
-  "section": "documentation",
-  "tocPath": "Misc/Error Responses"
-} -->
 
 <!--<a name="msg_code_property"> </a> -->
 
@@ -198,3 +191,15 @@ Nachfolgend sind einige weitere Fehler aufgeführt, denen Ihre App in den gescha
 
 - [Microsoft Graph API release notes and known issues](microsoft-graph-api-release-notes-known-issues.md )
 - [Hands on lab: Deep dive into the Microsoft Graph API](http://dev.office.com/hands-on-labs/4585) -->
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Understand the error format for the API and error codes.",
+  "keywords": "error response, error, error codes, innererror, message, code",
+  "section": "documentation",
+  "suppressions": [
+    " Warning: /concepts/errors.md:
+      Multiple resources found in file, but we only support one per file. 'odata.error,odata.error'. Skipping."
+  ],
+  "tocPath": "Misc/Error Responses"
+} -->

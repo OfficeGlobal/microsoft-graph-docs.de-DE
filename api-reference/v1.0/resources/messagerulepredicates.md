@@ -6,13 +6,13 @@ Steht für die Gruppe von Bedingungen und Ausnahmen, die für eine Regel zur Ver
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-| bodyContains | Sammlung (Zeichenfolge) | Steht für die Zeichenfolgen, die im Textkörper einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
-| bodyOrSubjectContains | Sammlung (Zeichenfolge) | Steht für die Zeichenfolgen, die im Textkörper oder Betreff einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
-| categories | Sammlung (Zeichenfolge) | Steht für die Kategorien, mit denen eine eingehende Nachricht gekennzeichnet werden sollte, damit die Bedingung oder Ausnahme zutrifft. |
+| bodyContains | Sammlung(Zeichenfolge) | Steht für die Zeichenfolgen, die im Textkörper einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
+| bodyOrSubjectContains | Sammlung(Zeichenfolge) | Steht für die Zeichenfolgen, die im Textkörper oder Betreff einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
+| Kategorien | Sammlung(Zeichenfolge) | Steht für die Kategorien, mit denen eine eingehende Nachricht gekennzeichnet werden sollte, damit die Bedingung oder Ausnahme zutrifft. |
 | fromAddresses | Sammlung ([Empfänger](recipient.md)) | Steht für die speziellen Absender-E-Mail-Adressen einer eingehenden Nachricht, damit die Bedingung oder Ausnahme zutrifft. |
 | hasAttachments | Boolescher Wert | Gibt an, ob eine eingehende Nachricht Anlagen aufweisen muss, damit eine Bedingung oder Ausnahme zutrifft. |
-| HeaderContains | Sammlung (Zeichenfolge) | Steht für die Zeichenfolgen, die in den Kopfzeilen einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
-| Wichtigkeit | Zeichenfolge | Die Wichtigkeit einer eingehenden Nachricht, damit die Bedingung oder Ausnahme zutrifft: `low`, `normal`, `high`. |
+| HeaderContains | Sammlung(Zeichenfolge) | Steht für die Zeichenfolgen, die in den Kopfzeilen einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
+| Wichtigkeit | Wichtigkeit | Die Wichtigkeit einer eingehenden Nachricht, damit die Bedingung oder Ausnahme zutrifft: `low`, `normal`, `high`. |
 | isApprovalRequest | Boolescher Wert | Gibt an, ob eine eingehende Nachricht eine Genehmigungsanforderung sein muss, damit die Bedingung oder Ausnahme zutrifft. |
 | isAutomaticForward | Boolescher Wert | Gibt an, ob eine eingehende Nachricht automatisch weitergeleitet werden muss, damit die Bedingung oder Ausnahme zutrifft. |
 | isAutomaticReply | Boolescher Wert | Gibt an, ob eine eingehende Nachricht eine automatische Antwort sein muss, damit die Bedingung oder Ausnahme zutrifft. |
@@ -24,20 +24,18 @@ Steht für die Gruppe von Bedingungen und Ausnahmen, die für eine Regel zur Ver
 | isReadReceipt | Boolescher Wert | Gibt an, ob eine eingehende Nachricht eine Lesebestätigung sein muss, damit die Bedingung oder Ausnahme zutrifft. |
 | isSigned | Boolescher Wert | Gibt an, ob eine eingehende Nachricht S/MIME-signiert sein muss, damit die Bedingung oder Ausnahme zutrifft. |
 | isVoicemail | Boolescher Wert | Gibt an, ob eine eingehende Nachricht eine Voicemail sein muss, damit die Bedingung oder Ausnahme zutrifft. |
-| messageActionFlag | Zeichenfolge  | Steht für den flag-for-action-Wert, der in einer eingehenden Nachricht angezeigt wird, damit die Bedingung oder Ausnahme zutrifft. Mögliche Werte sind: `any`, `call`, `doNotForward`, `followUp`, `fyi`, `forward`, `noResponseNecessary`, `read`, `reply`, `replyToAll`, `review`. |
+| messageActionFlag | messageActionFlag  | Steht für den flag-for-action-Wert, der in einer eingehenden Nachricht angezeigt wird, damit die Bedingung oder Ausnahme zutrifft. Die möglichen Werte sind: `any`, `call`, `doNotForward`, `followUp`, `fyi`, `forward`, `noResponseNecessary`, `read`, `reply`, `replyToAll`, `review`. |
 | notSentToMe | Boolescher Wert | Gibt an, ob der Besitzer des Postfachs kein Empfänger einer eingehenden Nachrichten sein darf, damit die Bedingung oder Ausnahme zutrifft. |
-| recipientContains | Sammlung (Zeichenfolge) | Steht für die Zeichenfolgen, die in den Eigenschaften **toRecipients** oder **ccRecipients** einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
-| senderContains | Sammlung (Zeichenfolge) | Steht für die Zeichenfolgen, die in der **from**-Eigenschaft Kopfzeilen einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
-| sensitivity | Zeichenfolge | Steht für die Vertraulichkeitsstufe, mit der eine eingehende Nachricht gekennzeichnet werden sollte, damit die Bedingung oder Ausnahme zutrifft. Mögliche Werte: `normal`, `personal`, `private`, `confidential` |
+| recipientContains | Sammlung(Zeichenfolge) | Steht für die Zeichenfolgen, die in den Eigenschaften **toRecipients** oder **ccRecipients** einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
+| senderContains | Sammlung(Zeichenfolge) | Steht für die Zeichenfolgen, die in der **from**-Eigenschaft Kopfzeilen einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
+| Vertraulichkeit | Vertraulichkeit | Steht für die Vertraulichkeitsstufe, mit der eine eingehende Nachricht gekennzeichnet werden sollte, damit die Bedingung oder Ausnahme zutrifft. Die möglichen Werte sind: `normal`, `personal`, `private`, `confidential`. |
 | sentCcMe | Boolescher Wert | Gibt an, ob sich der Besitzer des Postfachs in der **ccRecipients**-Eigenschaft einer eingehenden Nachrichten befinden muss, damit die Bedingung oder Ausnahme zutrifft. |
 | sentOnlyToMe | Boolescher Wert | Gibt an, ob der Besitzer des Postfachs der einzige Empfänger in einer eingehenden Nachrichten sein muss, damit die Bedingung oder Ausnahme zutrifft. |
 | sentToAddresses | Sammlung ([Empfänger](recipient.md)) | Steht für die E-Mail-Adressen, an die eine eingehenden Nachricht gesendet werden muss, damit die Bedingung oder Ausnahme zutrifft. |
 | sentToMe | Boolescher Wert | Gibt an, ob sich der Besitzer des Postfachs in der **toRecipients**-Eigenscahft einer eingehenden Nachrichten befinden muss, damit die Bedingung oder Ausnahme zutrifft. |
 | sentToOrCcMe | Boolescher Wert | Gibt an, ob sich der Besitzer des Postfachs in der **toRecipients**-Eigenschaft oder in der **ccRecipients**-Eigenschaft einer eingehenden Nachrichten befinden muss, damit die Bedingung oder Ausnahme zutrifft. |
-| SubjectContains | Sammlung (Zeichenfolge) | Steht für die Zeichenfolgen, die im Betreiff einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
+| SubjectContains | Sammlung(Zeichenfolge) | Steht für die Zeichenfolgen, die im Betreiff einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
 | withinSizeRange | [sizeRange](sizerange.md) | Gibt die maximale und minimale Größe (in Kilobyte) an, zwischen der eine eingehende Nachricht liegen muss, damit eine Bedingung oder Ausnahme zutrifft. |
-
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

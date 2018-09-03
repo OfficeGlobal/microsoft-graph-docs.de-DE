@@ -31,45 +31,45 @@ Diese Ressource unterstützt Folgendes:
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|assistantName|String|Der Name des Assistenten des Kontakts.|
-|birthday|DateTimeOffset|Das Geburtsdatum des Kontakts. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
+|assistantName|Zeichenfolge|Der Name des Assistenten des Kontakts.|
+|Geburtsdatum|DateTimeOffset|Das Geburtsdatum des Kontakts. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |businessAddress|[PhysicalAddress](physicaladdress.md)|Die Geschäftsadresse des Kontakts.|
-|businessHomePage|String|Die geschäftliche Homepage des Kontakts.|
-|businessPhones|String collection|Die geschäftlichen Telefonnummern des Kontakts.|
-|categories|String collection|Die Kategorien, die mit dem Kontakt verknüpft sind.|
-|changeKey|String|Gibt die Version des Kontakts an. Jedes Mal, wenn der Kontakt geändert wird, wird auch die Eigenschaft „changeKey“ geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
-|children|String collection|Die Namen der Kinder des Kontakts.|
-|companyName|String|Der Name des Unternehmens des Kontakts.|
+|businessHomePage|Zeichenfolge|Die geschäftliche Homepage des Kontakts.|
+|businessPhones|Zeichenfolgenauflistung|Die geschäftlichen Telefonnummern des Kontakts.|
+|Kategorien|Zeichenfolgenauflistung|Die Kategorien, die mit dem Kontakt verknüpft sind.|
+|changeKey|Zeichenfolge|Gibt die Version des Kontakts an. Jedes Mal, wenn der Kontakt geändert wird, wird auch die Eigenschaft „changeKey“ geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
+|Untergeordnetes Element|Zeichenfolgenauflistung|Die Namen der Kinder des Kontakts.|
+|companyName|Zeichenfolge|Der Name des Unternehmens des Kontakts.|
 |createdDateTime|DateTimeOffset|Der Zeitpunkt, zu dem der Kontakt erstellt wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|Abteilung|String|Die Abteilung des Kontakts.|
-|displayName|String|Der Anzeigename des Kontakts.|
-|emailAddresses|[EmailAddress](emailaddress.md) collection|Die E-Mail-Adressen des Kontakts.|
-|Kennzeichnen|[followUpFlag](followupflag.md)|Der Wert des Flags, der den Status, das Startdatum, das Fälligkeitsdatum oder das Enddatum für die Nachricht angibt.|
-|fileAs|String|Der Name, unter dem der Kontakt abgelegt ist.|
-|generation|String|Die Generation des Kontakts.|
-|givenName|String|Der Vorname des Kontakts.|
+|Abteilung|Zeichenfolge|Die Abteilung des Kontakts.|
+|displayName|Zeichenfolge|Der Anzeigename des Kontakts.|
+|emailAddresses|[EmailAddress](emailaddress.md) Sammlung|Die E-Mail-Adressen des Kontakts.|
+|Kennzeichnen|[followupFlag](followupflag.md)|Der Wert des Flags, der den Status, das Startdatum, das Fälligkeitsdatum oder das Enddatum für die Nachricht angibt.|
+|fileAs|Zeichenfolge|Der Name, unter dem der Kontakt abgelegt ist.|
+|generation|Zeichenfolge|Die Generation des Kontakts.|
+|givenName|Zeichenfolge|Der Vorname des Kontakts.|
 |homeAddress|[PhysicalAddress](physicaladdress.md)|Die Privatadresse des Kontakts.|
-|homePhones|String collection|Die privaten Telefonnummern des Kontakts.|
-|id|String|Eindeutiger Bezeichner für den Kontakt. Schreibgeschützt.|
-|imAddresses|String collection|Instant Messaging Chatadressen des Kontakts.|
-|initials|String|Die Initialen des Kontakts.|
-|jobTitle|String|Die Position des Kontakts.|
+|homePhones|Zeichenfolgenauflistung|Die privaten Telefonnummern des Kontakts.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für den Kontakt. Schreibgeschützt.|
+|imAddresses|Zeichenfolgenauflistung|Instant Messaging Chatadressen des Kontakts.|
+|initials|Zeichenfolge|Die Initialen des Kontakts.|
+|jobTitle|Zeichenfolge|Die Position des Kontakts.|
 |lastModifiedDateTime|DateTimeOffset|Der Zeitpunkt, zu dem der Kontakt geändert wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|manager|String|Der Name des Vorgesetzten des Kontakts.
-|middleName|String|Der zweite Vorname des Kontakts.|
-|mobilePhone|String|Die Mobiltelefonnummer des Kontakts.|
-|nickName|String|Der Spitzname des Kontakts.|
-|officeLocation|String|Der Bürostandort des Kontakts.|
+|Verwalter|Zeichenfolge|Der Name des Vorgesetzten des Kontakts.
+|middleName|Zeichenfolge|Der zweite Vorname des Kontakts.|
+|mobilePhone|Zeichenfolge|Die Mobiltelefonnummer des Kontakts.|
+|nickName|Zeichenfolge|Der Spitzname des Kontakts.|
+|officeLocation|Zeichenfolge|Der Bürostandort des Kontakts.|
 |otherAddress|[PhysicalAddress](physicaladdress.md)|Weitere Adressen für den Kontakt.|
-|parentFolderId|String|Die ID des übergeordneten Ordners des Kontakts.|
-|personalNotes|String|Die Notizen des Benutzers zu dem Kontakt.|
-|profession|String|Der Beruf des Kontakts.|
+|parentFolderId|Zeichenfolge|Die ID des übergeordneten Ordners des Kontakts.|
+|personalNotes|Zeichenfolge|Die Notizen des Benutzers zu dem Kontakt.|
+|Beruf|Zeichenfolge|Der Beruf des Kontakts.|
 |spouseName|Zeichenfolge|Der Name des Ehepartners/Partners des Kontakts|
-|surname|String|Der Nachname des Kontakts.|
-|title|String|Der Titel des Kontakts.|
-|yomiCompanyName|String|Der phonetische japanische Firmenname des Kontakts.|
-|yomiGivenName|String|Der phonetische japanische Vorname des Kontakts.|
-|yomiSurname|String|Der phonetische japanische Nachname des Kontakts.|
+|surname|Zeichenfolge|Der Nachname des Kontakts.|
+|Titel|Zeichenfolge|Der Titel des Kontakts.|
+|yomiCompanyName|Zeichenfolge|Der phonetische japanische Firmenname des Kontakts.|
+|yomiGivenName|Zeichenfolge|Der phonetische japanische Vorname des Kontakts.|
+|yomiSurname|Zeichenfolge|Der phonetische japanische Nachname des Kontakts.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
@@ -85,6 +85,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.outlookItem",
+  "openType": true,
   "optionalProperties": [
     "extensions",
     "multiValueExtendedProperties",
@@ -92,7 +94,26 @@ Es folgt eine JSON-Darstellung der Ressource.
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.contact"
+  "@odata.type": "microsoft.graph.contact",
+  "@odata.annotations": [
+    {
+      "property": "extensions",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "photo",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
