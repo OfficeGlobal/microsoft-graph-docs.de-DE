@@ -18,20 +18,20 @@ Erbt von [managedEBookAssignment](../resources/intune_books_managedebookassignme
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität. Geerbt von [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_books_deviceandappmanagementassignmenttarget.md)|Das Zuweisungsziel für das E-Book. Geerbt von [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|
-|installIntent|String|Die Installationspriorität für das E-Book. Geerbt von [managedEBookAssignment](../resources/intune_books_managedebookassignment.md). Mögliche Werte sind: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|id|Zeichenfolge|Schlüssel der Entität. Geerbt von [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Zuweisungsziel für das E-Book. Geerbt von [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|Installationspriorität für das E-Book. Geerbt von [managedEBookAssignment](../resources/intune_books_managedebookassignment.md). Die möglichen Werte sind: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.managedEBookAssignment",
   "@odata.type": "microsoft.graph.iosVppEBookAssignment"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosVppEBookAssignment",

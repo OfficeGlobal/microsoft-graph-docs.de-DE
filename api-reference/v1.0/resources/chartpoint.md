@@ -7,35 +7,37 @@ Stellt einen Punkt einer Datenreihe in einem Diagramm dar.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[ChartPoint abrufen](../api/chartpoint_get.md) | [ChartPoint](chartpoint.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartPoint-Objekts.|
-|[List](../api/chartpoint_list.md) | [ChartPoint-Sammlung](chartpoint.md) |Dient zum Abrufen der ChartPoint-Objektsammlung. |
-|[Itemat](../api/chartpointscollection_itemat.md)|[ChartPoint](chartpoint.md)|Abrufen eines Punkts anhand seiner Position in der Datenreihe.|
+|[ChartPoint abrufen](../api/chartpoint_get.md) | [WorkbookChartPoint](chartpoint.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartPoint-Objekts.|
+|[Liste](../api/chartpoint_list.md) | [WorkbookChartPoint](chartpoint.md)-Sammlung |Dient zum Abrufen der chartPoint-Objektsammlung. |
+|[ItemAt](../api/chartpointscollection_itemat.md)|[WorkbookChartPoint](chartpoint.md)|Abrufen eines Punkts anhand seiner Position in der Datenreihe.|
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|value|object|Gibt den Wert eines Diagrammpunkts zurück. Schreibgeschützt.|
+|Wert|Json|Gibt den Wert eines Diagrammpunkts zurück. Schreibgeschützt.|
+|id|Zeichenfolge|Eindeutiger Bezeichner|
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Format|[ChartPointFormat](chartpointformat.md)|Kapselt die Formateigenschaften eines Diagrammpunkts. Schreibgeschützt.|
+|Format|[WorkbookChartPointFormat](chartpointformat.md)|Kapselt die Formateigenschaften eines Diagrammpunkts ein. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartPoint"
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartPoint"
 }-->
 
 ```json
 {
-  "value": "string"
+  "value": "string",
+  "id": "string"
 }
 
 ```

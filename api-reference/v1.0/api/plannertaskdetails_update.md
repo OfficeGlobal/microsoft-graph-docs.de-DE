@@ -13,12 +13,12 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/tasks/<id>/details
+PATCH /planner/tasks/{id}/details
 ```
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | If-Match  | Letzter bekannter ETag-Wert für das zu aktualisierende **plannerTaskDetails**-Objekt. Erforderlich.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -27,8 +27,8 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|Die Sammlung von Checklistenelementen für die Aufgabe.|
-|description|String|Beschreibung der Aufgabe.|
-|previewType|string|Hierdurch wird der Typ der Vorschau festgelegt, die für die Aufgabe angezeigt wird. Mögliche Werte: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Bei Festlegung auf `automatic` wird die angezeigte Vorschau von der App ausgewählt, mit der die Aufgabe angezeigt wird.|
+|description|Zeichenfolge|Beschreibung der Aufgabe.|
+|previewType|Zeichenfolge|Hierdurch wird der Typ der Vorschau festgelegt, die für die Aufgabe angezeigt wird. Mögliche Werte sind: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Bei Festlegung auf `automatic` wird die angezeigte Vorschau von der App ausgewählt, die die Aufgabe anzeigt.|
 |references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|Die Sammlung der Verweise für die Aufgabe.|
 
 ## <a name="response"></a>Antwort
@@ -45,7 +45,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "update_plannertaskdetails"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/details
+PATCH https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/details
 Content-type: application/json
 Content-length: 857
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

@@ -15,29 +15,29 @@ Zustand der Gerätekompatibilitätseinstellung für ein bestimmtes Gerät.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|setting|String|Der Klassenname und der Eigenschaftenname der Einstellung.|
-|settingName|String|Der gemeldete Einstellungsname|
-|deviceId|String|Die gemeldete Geräte-ID|
-|deviceName|String|Der gemeldete Gerätename|
-|userId|String|Die gemeldete Benutzer-ID|
-|userEmail|String|Die gemeldete Benutzer-E-Mail-Adresse|
-|userName|String|Der gemeldete Benutzername|
-|userPrincipalName|String|Der gemeldete Benutzerprinzipalname|
-|deviceModel|String|Das gemeldete Gerätemodell|
-|state|String|Der Konformitätsstatus der Einstellung. Mögliche Werte: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Einstellung|Zeichenfolge|Klassenname und Eigenschaftenname der Einstellung|
+|settingName|Zeichenfolge|Gemeldeter Einstellungsname|
+|deviceId|Zeichenfolge|Gemeldete Geräte-ID|
+|deviceName|Zeichenfolge|Gemeldeter Gerätename|
+|userId|Zeichenfolge|Gemeldete Benutzer-ID|
+|userEmail|Zeichenfolge|Gemeldete Benutzer-E-Mail-Adresse|
+|userName|Zeichenfolge|Gemeldeter Benutzername|
+|userPrincipalName|Zeichenfolge|Gemeldeter Benutzerprinzipalname|
+|deviceModel|Zeichenfolge|Gemeldetes Gerätemodell|
+|Zustand|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Der Compliance-Zustand der Einstellung. Die möglichen Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Karenzzeit für die Gerätekonformität|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceComplianceSettingState"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceSettingState",

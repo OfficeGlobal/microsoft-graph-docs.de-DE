@@ -1,6 +1,6 @@
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
-Diese Methode ruft Details zur Microsoft Teams-Gerätenutzung ab, aufgeschlüsselt nach Benutzer.
+Diese Methode ruft Details zur Microsoft Teams-Gerätenutzung ab, aufgeschlüsselt nach Benutzer.
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -14,7 +14,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "samples" } -->
 
 ```http
 GET /reports/getTeamsDeviceUsageUserDetail(period='{period_value}')
@@ -28,7 +28,7 @@ Geben Sie in der Anforderungs-URL einen der folgenden Parameter mit einem gülti
 | Parameter | Typ   | Beschreibung                              |
 | :-------- | :----- | :--------------------------------------- |
 | Zeitraum    | Zeichenfolge | Gibt die Zeitspanne an, für die der Bericht aggregiert wird. Die unterstützten Werte für {period_value} sind: D7, D30, D90 und D180. Diese Werte folgen dem Format D*n*, wobei *n* die Anzahl der Tage angibt, für die der Bericht aggregiert wird. |
-| date      | Datum   | Gibt das Datum an, für das die Benutzer angezeigt werden sollen, die Aktivitäten durchgeführt haben. {date_value} muss im Format JJJJ-MM-TT vorliegen. Da dieser Bericht nur für die letzten 30 Tage verfügbar ist, sollte {date_value} ein Datum aus diesem Zeitraum sein. |
+| Datum      | Datum   | Gibt das Datum an, für das die Benutzer angezeigt werden sollen, die Aktivitäten durchgeführt haben. {date_value} muss im Format JJJJ-MM-TT vorliegen. Da dieser Bericht nur für die letzten 30 Tage verfügbar ist, sollte {date_value} ein Datum aus diesem Zeitraum sein. |
 
 > **Hinweis:** Sie müssen in der URL entweder einen Zeitraum oder ein Datum festlegen.
 
@@ -36,7 +36,7 @@ Geben Sie in der Anforderungs-URL einen der folgenden Parameter mit einem gülti
 
 | Name          | Beschreibung               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Erforderlich. |
+| Autorisierung | Bearer {token}. Erforderlich. |
 
 ## <a name="response"></a>Antwort
 
@@ -50,14 +50,14 @@ Die CSV-Datei verfügt über die folgenden Spaltenheader:
 - Benutzerprinzipalname
 - Datum der letzten Aktivität
 - Ist gelöscht
-- Deleted Date
-- Used Web
-- Used Windows Phone
-- Used iOS
-- Used Mac
-- Used Android Phone
-- Used Windows
-- Report Period
+- Löschdatum
+- Verwendetes Web
+- Verwendetes Windows Phone
+- Verwendetes iOS
+- Verwendetes Mac
+- Verwendetes Android Phone
+- Verwendetes Windows
+- Berichtszeitraum
 
 ## <a name="example"></a>Beispiel
 
@@ -78,7 +78,11 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsDeviceUsageUserDetail(perio
 
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -88,11 +92,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 Führen Sie die Umleitung 302 aus, und die heruntergeladene CSV-Datei besitzt das folgende Format.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

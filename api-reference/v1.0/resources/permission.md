@@ -3,13 +3,14 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Berechtigung
-ms.openlocfilehash: 9f73684d51ab4cee047219e142f72edf778cb171
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 4c39722653cd61f5d58a4de5b317cb3a1a9afb9d
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23269614"
 ---
-# <a name="permission-resource-type"></a>Permission-Ressourcentyp
+# <a name="permission-resource-type"></a>Persmission-Ressourcentypressourcentyp
 
 Die **Permission**-Ressource enthält Informationen über eine Berechtigung, die einer [DriveItem](driveitem.md)-Ressource erteilt wurde.
 
@@ -20,10 +21,17 @@ Die **Permission**-Ressource stellt die verschiedenen Formen über Facets für d
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [ "link", "grantedTo", "invitation", "inheritedFrom", "shareId" ],
+  "optionalProperties": [
+    "link",
+    "grantedTo",
+    "invitation",
+    "inheritedFrom",
+    "shareId"
+  ],
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.permission"
 }-->
 ```json
@@ -42,14 +50,13 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 | Eigenschaft      | Typ                                      | Beschreibung
 |:--------------|:------------------------------------------|:-----------------
-| id            | String                                    | Die eindeutige ID der Berechtigung für alle Berechtigungen für das Element. Schreibgeschützt.
+| ID            | Zeichenfolge                                    | Die eindeutige ID der Berechtigung für alle Berechtigungen für das Element. Schreibgeschützt.
 | grantedTo     | [IdentitySet](identityset.md)             | Bei Berechtigungen vom Typ „Benutzer“ detaillierte Informationen zu Benutzern und Anwendungen für diese Berechtigung. Schreibgeschützt.
-| invitation    | [SharingInvitation][]                     | Details zu verknüpften Einladungen zur Freigabe für diese Berechtigung. Schreibgeschützt.
+| Einladung    | [SharingInvitation][]                     | Details zu verknüpften Einladungen zur Freigabe für diese Berechtigung. Schreibgeschützt.
 | inheritedFrom | [ItemReference](itemreference.md)         | Stellt einen Verweis auf das Vorgängerelement der aktuellen Berechtigung bereit, wenn es von einem Vorgängerelement geerbt wurde. Schreibgeschützt.
 | Link          | [SharingLink][]                           | Stellt Linkdetails der aktuellen Berechtigung bereit, wenn es sich um Berechtigungen vom Typ „Link“ handelt. Schreibgeschützt.
-| role          | Collection of String
-                      | Die Art der Berechtigung z, B. `read` Nachfolgend finden Sie die vollständige Liste von Rollen. Schreibgeschützt.
-| shareId       | String                                    | Ein eindeutiges Token, das verwendet werden kann, um über die [ **Freigabe**-API](../api/shares_get.md) auf dieses freigegebene Element zuzugreifen. Schreibgeschützt.
+| Rollen         | Auflistung der Zeichenfolge                      | Die Art der Berechtigung z, B. `read` Nachfolgend finden Sie die vollständige Liste von Rollen. Schreibgeschützt.
+| shareId       | Zeichenfolge                                    | Ein eindeutiges Token, das verwendet werden kann, um über die [ **Freigabe**-API](../api/shares_get.md) auf dieses freigegebene Element zuzugreifen. Schreibgeschützt.
 
 Die Permission-Ressource verwendet _Facets_ zum Bereitstellen von Informationen über die Art der Berechtigung, die von Ressource dargestellt wird.
 
@@ -150,13 +157,13 @@ Nachdem die Freigabeeinladung von einem Benutzer eingelöst wurde, enthält die 
 
 ## <a name="methods"></a>Methoden
 
-| Method                                                   | REST-Pfad
+| Methode                                                   | REST-Pfad
 |:---------------------------------------------------------|:-----------------------
 | [Berechtigungen auflisten](../api/driveitem_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [Get permission](../api/permission_get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
 | [Hinzufügen](../api/driveitem_invite.md)                        | `POST /drive/items/{item-id}/invite`
-| [Update](../api/permission_update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
-| [Delete](../api/permission_delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [Aktualisieren](../api/permission_update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [Löschen](../api/permission_delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
 ## <a name="remarks"></a>Bemerkungen

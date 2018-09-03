@@ -1,6 +1,6 @@
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 
-Fügt der Tabelle eine neue Zeile hinzu.
+Fügt Zeilen an das Ende der Tabelle an. Beachten Sie, dass die API mehrere Zeilen von Daten mit dieser API akzeptieren kann. Hinzufügen von jeweils einer Zeile zur Zeit kann zu Leistungsbeeinträchtigungen führen. Die empfohlene Vorgehensweise wäre die Zeilen in einem einzigen Aufruf zu batchen anstatt einzelne Zeilen einzufügen. Um optimale Ergebnisse zu erhalten, sammeln Sie die Zeilen, die auf der Anwendungsseite eingefügt werden sollen, und führen Sie den Vorgang zum Hinzufügen von einzelnen Zeilen aus. Experimentieren Sie mit der Anzahl der Zeilen, um die ideale Anzahl der Zeilen zu bestimmen, die in einem einzelnen API-Aufruf verwendet werden. 
 
 ## <a name="error-handling"></a>Fehlerbehandlung
 
@@ -25,7 +25,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -33,15 +33,16 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Index|number|Optional. Gibt die relative Position der neuen Zeile an. Bei Null erfolgt die Erweiterung am Ende. Alle Zeilen unterhalb der eingefügten Zeile werden nach unten verschoben. Nullindiziert.|
-|values|(boolean or string or number)|Optional. Ein 2-dimensionales Array von unformatierten Werten der Tabellenzeile.|
+|Index|Int32|Optional. Gibt die relative Position der neuen Zeile an. Bei Null erfolgt die Erweiterung am Ende. Alle Zeilen unterhalb der eingefügten Zeile werden nach unten verschoben. Nullindiziert.|
+|values|Json|Optional. Ein 2-dimensionales Array von unformatierten Werten der Tabellenzeile.|
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [TableRow](../resources/tablerow.md)-Objekt im Antworttext zurückgegeben.
+Wenn erfolgreich, gibt diese Methode einen `200 OK` Antwortcode und ein [WorkbookTableRow](../resources/tablerow.md)-Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
-Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
+In diesem Beispiel werden zwei Zeilen mit Daten an das Ende der Tabelle eingefügt. 
+
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
@@ -54,7 +55,7 @@ Content-type: application/json
 Content-length: 51
 
 {
-  "index": null,
+  "index": 5,
   "values": [
     [1, 2, 3],
     [4, 5, 6]
@@ -67,7 +68,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableRow"
+  "@odata.type": "microsoft.graph.workbookTableRow"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -87,5 +88,11 @@ Content-length: 45
   "description": "TableRowCollection: add",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/tablerowcollection_add.md/tablerowcollection_add/values:
+      Inconsistent types between parameter (Collection) and table (None)",
+    "Error: /api-reference/v1.0/api/tablerowcollection_add.md/tablerowcollection_add/values:
+      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not."
+  ],
   "tocPath": ""
 }-->

@@ -18,7 +18,7 @@ PATCH /workbook/worksheets/{id|name}
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -26,13 +26,13 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|name|string|Der Anzeigename des Arbeitsblatts.|
+|Name|Zeichenfolge|Der Anzeigename des Arbeitsblatts.|
 |position|int|Die nullbasiert Position des Arbeitsblatts in der Arbeitsmappe.|
-|visibility|string|Die Sichtbarkeit des Arbeitsblatts. Mögliche Werte: `Visible`, `Hidden`, `VeryHidden`.|
+|visibility|Zeichenfolge|Die Sichtbarkeit des Arbeitsblatts. Die möglichen Werte sind: `Visible`, `Hidden`, `VeryHidden`.|
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [Worksheet](../resources/worksheet.md)-Objekt im Antworttext zurückgegeben.
+Wenn erfolgreich, gibt dieses Verfahren im Antworttext einen `200 OK` Antwortcode und ein[WorkbookWorksheet](../resources/worksheet.md)-Objekt zurück.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
@@ -56,7 +56,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.worksheet"
+  "@odata.type": "microsoft.graph.workbookWorksheet"
 } -->
 ```http
 HTTP/1.1 200 OK

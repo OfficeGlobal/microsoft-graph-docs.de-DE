@@ -26,14 +26,14 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|attendeeAvailability|[attendeeAvailability](attendeeavailability.md) collection|Ein Array, das den Verfügbarkeitsstatus jedes Teilnehmers für den betreffenden Besprechungsvorschlag anzeigt|
-|confidence|Double|Ein Prozentwert, der angibt, wie hoch die Wahrscheinlichkeit ist, dass alle Teilnehmer teilnehmen können|
-|locations|[location](location.md) collection|Ein Array, das den Namen und den geografischen Ort jedes Besprechungsorts für den betreffenden Besprechungsvorschlag angibt|
+|attendeeAvailability|[attendeeAvailability](attendeeavailability.md) -Sammlung|Ein Array, das den Verfügbarkeitsstatus jedes Teilnehmers für diesen Besprechungsvorschlag anzeigt.|
+|confidence|Doppelt|Ein Prozentwert, der angibt, wie hoch die Wahrscheinlichkeit ist, dass alle Teilnehmer teilnehmen können|
+|Orte|[location](location.md)-Sammlung|Ein Array, das den Namen und den geografischen Ort jedes Besprechungsorts für den betreffenden Besprechungsvorschlag angibt|
 |meetingTimeSlot|[timeSlot](timeslot.md)|Ein für die Besprechung vorgeschlagenes Zeitfenster|
-|organizerAvailability|String| Die Verfügbarkeit des Besprechungsorganisators für diesen Besprechungsvorschlag. Mögliche Werte sind: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`und `unknown`.|
-|suggestionReason|String|Grund, aus dem der betreffende Besprechungstermin vorgeschlagen wurde|
+|organizerAvailability|freeBusyStatus| Die Verfügbarkeit des Besprechungsorganisators für diesen Besprechungsvorschlag. Die möglichen Werte sind: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|suggestionReason|Zeichenfolge|Grund, aus dem der betreffende Besprechungstermin vorgeschlagen wurde|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

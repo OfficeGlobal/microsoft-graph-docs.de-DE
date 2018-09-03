@@ -7,21 +7,17 @@ Verwaltet Sortiervorgänge für Table-Objekte.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Get TableSort](../api/tablesort_get.md) | [TableSort](tablesort.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des tableSort-Objekts.|
-|[Apply](../api/tablesort_apply.md)|Keine|Führt einen Sortiervorgang aus.|
-|[Clear](../api/tablesort_clear.md)|Keine|Löscht die Sortierung, die derzeit in der Tabelle enthalten ist. Dies ändert nicht die Sortierung der Tabelle, löscht jedoch den Zustand der Kopfzeilen-Schaltflächen.|
+|[Get TableSort](../api/tablesort_get.md) | [WorkbookTableSort](tablesort.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des tableSort-Objekts.|
+|[Anwenden](../api/tablesort_apply.md)|Keine|Führt einen Sortiervorgang aus.|
+|[Löschen](../api/tablesort_clear.md)|Keine|Löscht die Sortierung, die derzeit in der Tabelle enthalten ist. Dies ändert nicht die Sortierung der Tabelle, löscht jedoch den Zustand der Kopfzeilen-Schaltflächen.|
 |[Reapply](../api/tablesort_reapply.md)|Keine|Wendet die aktuellen Sortierparameter erneut auf die Tabelle an.|
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|matchCase|boolean|Stellt dar, ob die Groß-/Kleinschreibung den letzten Sortiervorgang der Tabelle beeinflusst hat. Schreibgeschützt.|
-|method|string|Stellt die chinesische Zeichensortiermethode dar, mit der die Tabelle zuletzt sortiert wurde. Die folgenden Werte sind möglich: `PinYin`, `StrokeCount`. Schreibgeschützt.|
-
-## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
-|:---------------|:--------|:----------|
-|fields|[SortField](sortfield.md)|Stellt die aktuellen Bedingungen dar, die zuletzt zum Sortieren der Tabelle verwendet wurden. Schreibgeschützt.|
+|fields|[WorkbookSortField](sortfield.md)-Sammlung|Stellt die aktuellen Bedingungen dar, die zuletzt zum Sortieren der Tabelle verwendet wurden. Schreibgeschützt.|
+|matchCase|boolescher Wert|Stellt dar, ob die Groß-/Kleinschreibung den letzten Sortiervorgang der Tabelle beeinflusst hat. Schreibgeschützt.|
+|method|Zeichenfolge|Stellt die Sortiermethode für chinesische Zeichen dar, die zuletzt verwendet wurde, um die Tabelle zu sortieren. Die möglichen Werte sind: `PinYin`, `StrokeCount`. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -32,13 +28,15 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.tableSort"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookTableSort"
 }-->
 
 ```json
 {
   "matchCase": true,
-  "method": "string"
+  "method": "string",
+  "fields": [{ "@odata.type": "microsoft.graph.workbookSortField" }]
 }
 
 ```

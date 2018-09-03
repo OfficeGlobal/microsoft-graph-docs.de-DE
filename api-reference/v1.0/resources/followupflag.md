@@ -8,7 +8,7 @@ Ermöglicht das Festlegen einer Kennzeichnung für den Benutzer zur späteren We
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](dateTimeTimeZone.md)|Datum und Uhrzeit, zu dem bzw. der die Weiterverfolgung beendet wurde.|
 |dueDateTime|**dateTimeTimeZone**|Datum und Uhrzeit, zu dem bzw. der die Weiterverfolgung beendet sein muss.|
-|flagStatus|Zeichenfolge|Der Status für die Weiterverfolgung eines Elements. Mögliche Werte sind: `notFlagged`, `complete` und `flagged`.|
+|flagStatus|followupFlagStatus|Der Status für die Weiterverfolgung eines Elements. Mögliche Werte sind: `notFlagged`, `complete` und `flagged`.|
 |startDateTime|**dateTimeTimeZone**|Datum und Uhrzeit, zu dem bzw. der die Weiterverfolgung beginnen soll.|
 
 ## <a name="json-representation"></a>JSON-Darstellung

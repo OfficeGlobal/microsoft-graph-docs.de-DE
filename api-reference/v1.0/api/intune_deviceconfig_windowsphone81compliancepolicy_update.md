@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [windowsPhone81CompliancePolicy](../resources/intune_deviceconfig_windowsphone81compliancepolicy.md) an.
@@ -34,23 +34,23 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität. Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|Beschreibung|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|passwordBlockSimple|Boolean|Gibt an, ob die Kalendersynchronisierung blockiert werden soll.|
-|passwordExpirationDays|Int32|Zeit in Tagen bis zum Ablaufen des Kennworts|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|passwordBlockSimple|Boolescher Wert|Gibt an, ob die Kalendersynchronisierung blockiert werden soll.|
+|passwordExpirationDays|Int32|Zeit in Tagen bis zum Ablaufen des Kennworts.|
 |passwordMinimumLength|Int32|Mindestlänge von Kennwörtern|
 |passwordMinutesOfInactivityBeforeLock|Int32|Zeitraum von Inaktivität in Minuten, nach dem die Eingabe eines Kennworts gefordert wird|
 |passwordMinimumCharacterSetCount|Int32|Anzahl der Zeichensätze, die im Kennwort enthalten sein müssen|
-|passwordRequiredType|String|Geforderter Kennworttyp. Mögliche Werte sind: `deviceDefault`, `alphanumeric` und `numeric`.|
-|passwordPreviousPasswordBlockCount|Int32|Legt fest, wie viele der zuletzt verwendeten Kennwörter nicht erneut verwendet werden dürfen. Gültige Werte: 0 bis 24.|
-|passwordRequired|Boolean|Legt fest, ob ein Kennwort gefordert wird.|
-|osMinimumVersion|String|Mindestversion von Windows Phone|
-|osMaximumVersion|String|Maximalversion von Windows Phone|
-|storageRequireEncryption|Boolean|Legt fest, dass auf Windows Phone-Geräten Verschlüsselung gefordert wird.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Geforderter Kennworttyp. Die möglichen Werte sind: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordPreviousPasswordBlockCount|Int32|Anzahl der zuletzt verwendeten Kennwörter, die nicht erneut verwendet werden dürfen. Gültige Werte: 0 bis 24.|
+|passwordRequired|Boolescher Wert|Legt fest, ob ein Kennwort gefordert wird.|
+|osMinimumVersion|Zeichenfolge|Mindestversion von Windows Phone|
+|osMaximumVersion|Zeichenfolge|Maximalversion von Windows Phone|
+|storageRequireEncryption|Boolescher Wert|Legt fest, dass auf Windows Phone-Geräten Verschlüsselung gefordert wird.|
 
 
 

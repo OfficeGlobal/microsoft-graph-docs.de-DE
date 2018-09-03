@@ -22,7 +22,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -30,7 +30,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [TableRow](../resources/tablerow.md)-Objekten im Antworttext zurückgegeben.
+Wenn erfolgreich, gibt diese Methode einen `200 OK` Antwortcode und eine Sammlung von [WorkbookTableRow](../resources/tablerow.md)-Objekten im Antworttext zurück.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
@@ -46,7 +46,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableRow",
+  "@odata.type": "microsoft.graph.workbookTableRow",
   "isCollection": true
 } -->
 ```http

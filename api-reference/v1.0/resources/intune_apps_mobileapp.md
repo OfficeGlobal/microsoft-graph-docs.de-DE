@@ -8,40 +8,41 @@ Eine abstrakte Klasse, die grundlegende Eigenschaften von mobilen Intune-Apps en
 |:---|:---|:---|
 |[Auflisten von „mobileApp“](../api/intune_apps_mobileapp_list.md)|Sammlung von Objekten des Typs [mobileApp](../resources/intune_apps_mobileapp.md)|Listet die Eigenschaften und Beziehungen von Objekten des Typs [mobileApp](../resources/intune_apps_mobileapp.md) auf.|
 |[Abrufen von „mobileApp“](../api/intune_apps_mobileapp_get.md)|[mobileApp](../resources/intune_apps_mobileapp.md)|Liest die Eigenschaften und Beziehungen von Objekten des Typs [mobileApp](../resources/intune_apps_mobileapp.md).|
-|[Aktion „assign“](../api/intune_apps_mobileapp_assign.md)|Keiner|Noch nicht dokumentiert|
+|[Aktion „assign“](../api/intune_apps_mobileapp_assign.md)|Keine|Noch nicht dokumentiert|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|displayName|String|Titel der App (vom Administrator bereitgestellt oder importiert)|
-|description|String|Beschreibung der App|
-|publisher|String|Herausgeber der App|
-|largeIcon|[mimeContent](../resources/intune_apps_mimecontent.md)|Das große Symbol, das in den App-Details angezeigt und für den Upload des Symbols verwendet werden soll|
+|id|Zeichenfolge|Schlüssel der Entität|
+|displayName|Zeichenfolge|Titel der App (vom Administrator bereitgestellt oder importiert)|
+|Beschreibung|Zeichenfolge|Beschreibung der App|
+|Herausgeber|Zeichenfolge|Herausgeber der App|
+|largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|Das große Symbol, das in den App-Details angezeigt und für den Upload des Symbols verwendet werden soll|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der App|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der App|
-|isFeatured|Boolean|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde|
-|privacyInformationUrl|String|URL zur Datenschutzerklärung|
-|informationUrl|String|URL zur Seite mit weiteren Informationen|
-|owner|String|Besitzer der App|
-|developer|String|Entwickler der App|
-|notes|String|Hinweise zur App|
-|publishingState|String|Veröffentlichungsstatus der App. Eine App kann erst zugewiesen werden, wenn sie veröffentlicht wurde. Mögliche Werte sind: `notPublished`, `processing` und `published`.|
+|isFeatured|boolesch|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde|
+|privacyInformationUrl|Zeichenfolge|URL zur Datenschutzerklärung|
+|informationUrl|Zeichenfolge|URL zur Seite mit weiteren Informationen|
+|Besitzer|Zeichenfolge|Besitzer der App|
+|Entwickler|Zeichenfolge|Entwickler der App|
+|Notizen|Zeichenfolge|Hinweise zur App|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Der Veröffentlichungsstatus der App. Eine App kann erst zugewiesen werden, wenn sie veröffentlicht wurde. Mögliche Werte sind:`notPublished`, `processing`, `published`.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|categories|Sammlung von Objekten des Typs [mobileAppCategory](../resources/intune_apps_mobileappcategory.md)|Liste der Kategorien, denen die App zugeordnet ist.|
-|assignments|Sammlung von Objekten des Typs [mobileAppAssignment](../resources/intune_apps_mobileappassignment.md)|Liste der Gruppenzuweisungen für die mobile App|
+|Kategorien|Sammlung von Objekten des Typs [mobileAppCategory](../resources/intune_apps_mobileappcategory.md)|Liste der Kategorien, denen die App zugeordnet ist.|
+|Aufgaben|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md)-Sammlung|Liste der Gruppenzuweisungen für die mobile App|
 
 ## <a name="json-representation"></a>JSON-Darstellung
-Unten sehen Sie eine JSON-Darstellung der Ressource.
-<!-- {
+Es folgt eine JSON-Darstellung der Ressource.
+<!--{
   "blockType": "resource",
+  "abstract": true,
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.mobileApp"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileApp",

@@ -12,7 +12,7 @@ Die Ressource remoteAssistPartner repräsentiert die Metadaten und den Status ei
 |[remoteAssistancePartner löschen](../api/intune_remoteassistance_remoteassistancepartner_delete.md)|Keine|Löschen eines [remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md).|
 |[remoteAssistancePartner aktualisieren](../api/intune_remoteassistance_remoteassistancepartner_update.md)|[remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md)|Aktualisieren der Eigenschaften eines [remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md)-Objekts.|
 |[beginOnboarding-Aktion](../api/intune_remoteassistance_remoteassistancepartner_beginonboarding.md)|Keine|Noch nicht dokumentiert.|
-|[disconnect-Aktion](../api/intune_remoteassistance_remoteassistancepartner_disconnect.md)|Keine|Noch nicht dokumentiert.|
+|[disconnect-Aktion](../api/intune_remoteassistance_remoteassistancepartner_disconnect.md)|Keine|Noch nicht dokumentiert|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
@@ -20,19 +20,19 @@ Die Ressource remoteAssistPartner repräsentiert die Metadaten und den Status ei
 |id|Zeichenfolge|Der eindeutige Bezeichner des Partners.|
 |displayName|Zeichenfolge|Der Anzeigename des Partners.|
 |onboardingUrl|Zeichenfolge|Die URL des Onboarding-Portals des Partners, in dem ein Administrator den Remoteunterstützungsdienst konfigurieren kann.|
-|onboardingStatus|Zeichenfolge|Noch nicht festgelegt; mögliche Werte: `notOnboarded`, `onboarding`, `onboarded`.|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|Noch nicht festgelegt. Die möglichen Werte sind: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Zeitstempel der letzten vom TEM-Partner an Intune gesendeten Anforderung|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.remoteAssistancePartner"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.remoteAssistancePartner",

@@ -7,18 +7,18 @@ Stellt Haupt-Gitternetzlinien oder Hilfs-Gitternetzlinien auf einer Diagrammachs
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[ChartGridlines abrufen](../api/chartgridlines_get.md) | [ChartGridlines](chartgridlines.md) |Dient zum Lesender Eigenschaften und der Beziehungen des chartGridlines-Objekts.|
-|[Update](../api/chartgridlines_update.md) | [ChartGridlines](chartgridlines.md)    |Dient zum Aktualisieren des ChartGridlines-Objekts. |
+|[ChartGridlines abrufen](../api/chartgridlines_get.md) | [WorkbookChartGridlines](chartgridlines.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartGridlines-Objekts.|
+|[Aktualisieren](../api/chartgridlines_update.md) | [WorkbookChartGridlines](chartgridlines.md)    |Dient zum Aktualisieren des ChartGridlines-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|visible|boolean|Boolescher Wert, der angibt, ob die Achsengitternetzlinien angezeigt werden.|
+|sichtbar|boolesch|Boolescher Wert, der angibt, ob die Achsengitternetzlinien angezeigt werden.|
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Format|[ChartGridlinesFormat](chartgridlinesformat.md)|Stellt die Formatierung der Diagrammgitternetzlinien dar. Schreibgeschützt.|
+|Format|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|Stellt die Formatierung der Diagrammgitternetzlinien dar. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -26,10 +26,11 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartGridLines"
+  "@odata.type": "microsoft.graph.workbookChartGridlines"
 }-->
 
 ```json

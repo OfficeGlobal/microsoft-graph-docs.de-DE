@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Laufwerk
-ms.openlocfilehash: 0b178967f7eb8da8bdf8584bb13a7d4f9950392b
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: c1abdfefa30dc2f510f3207adaf1d61a4d6a5edd
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23270097"
 ---
 # <a name="drive-resource-type"></a>Drive-Ressourcentyp
 
@@ -21,10 +22,27 @@ Es folgt eine JSON-Darstellung einer Laufwerksressource.
 
 Die **drive**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet und erbt Eigenschaften von dieser Ressource.
 
-<!-- { "blockType": "resource", 
-       "@odata.type": "microsoft.graph.drive",
-       "keyProperty": "id", 
-       "optionalProperties": [ "activities", "createdBy", "createdDateTime", "description", "lastModifiedBy", "lastModifiedDateTime", "name", "webUrl", "items", "root", "special", "system"] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [
+    "activities",
+    "createdBy",
+    "createdDateTime",
+    "description",
+    "lastModifiedBy",
+    "lastModifiedDateTime",
+    "name",
+    "webUrl",
+    "items",
+    "root",
+    "sharepointIds",
+    "special",
+    "system"
+  ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.drive"
+}-->
 
 ```json
 {
@@ -40,6 +58,7 @@ Die **drive**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet und er
   "owner": { "@odata.type": "microsoft.graph.identitySet" },
   "quota": { "@odata.type": "microsoft.graph.quota" },
   "root": { "@odata.type": "microsoft.graph.driveItem" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "special": [ { "@odata.type": "microsoft.graph.driveItem" }],
   "system": { "@odata.type": "microsoft.graph.systemFacet" },
   "webUrl": "url"
@@ -52,16 +71,16 @@ Die **drive**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet und er
 | :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdBy            | [identitySet][]               | Die Identität des Benutzers, des Geräts oder der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.                                                                                                                                                  |
 | createdDateTime      | dateTimeOffset                | Datum und Uhrzeit der Elementerstellung. Schreibgeschützt.                                                                                                                                                                                       |
-| description          | Zeichenfolge                        | Stellt eine für den Benutzer sichtbare Beschreibung des Laufwerks bereit. Lese-/Schreibzugriff.
-| driveType            | String                        | Beschreibt den Typ des Laufwerks, der durch diese Ressource dargestellt wird. Persönliche OneDrive-Laufwerke geben `personal` zurück. OneDrive for Business gibt `business` zurück. SharePoint-Dokumentbibliotheken geben `documentLibrary` zurück. Schreibgeschützt. |
-| id                   | String                        | Der eindeutige Bezeichner des Laufwerks. Schreibgeschützt.                                                                                                                                                                                   |
+| Beschreibung          | Zeichenfolge                        | Stellt eine für den Benutzer sichtbare Beschreibung des Laufwerks bereit. Lese-/Schreibzugriff.
+| driveType            | Zeichenfolge                        | Beschreibt den Typ des Laufwerks, der durch diese Ressource dargestellt wird. Persönliche OneDrive-Laufwerke geben `personal` zurück. OneDrive for Business gibt `business` zurück. SharePoint-Dokumentbibliotheken geben `documentLibrary` zurück. Schreibgeschützt. |
+| id                   | Zeichenfolge                        | Der eindeutige Bezeichner des Laufwerks. Schreibgeschützt.                                                                                                                                                                                   |
 | lastModifiedBy       | [identitySet][]               | Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element zuletzt geändert wurde. Schreibgeschützt.                                                                                                                                           |
 | lastModifiedDateTime | dateTimeOffset                | Datum und Uhrzeit der letzten Änderung des Elements. Schreibgeschützt.                                                                                                                                                                             |
-| name                 | string                        | Der Name des Elements. Lese-/Schreibzugriff.                                                                                                                                                                                                |
-| owner                | [identitySet](identityset.md) | Optional.  Das Benutzerkonto, das das Laufwerk besitzt. Schreibgeschützt.                                                                                                                                                                       |
-| quota                | [quota](quota.md)             | Optional.  Informationen zum Speicherkontingent des Laufwerks. Schreibgeschützt.                                                                                                                                                          |
+| Name                 | Zeichenfolge                        | Der Name des Elements. Lese-/Schreibzugriff.                                                                                                                                                                                                |
+| Besitzer                | [identitySet](identityset.md) | Optional.  Das Benutzerkonto, das das Laufwerk besitzt. Schreibgeschützt.                                                                                                                                                                       |
+| Kontingent                | [Kontingent](quota.md)             | Optional.  Informationen zum Speicherkontingent des Laufwerks. Schreibgeschützt.                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | Gibt Bezeichner zurück, die für SharePoint REST-Kompatibilität nützlich sind. Schreibgeschützt.                                                                                                                                                         |
-| System               | [systemFacet][]               | Falls vorhanden, gibt an, dass es sich um ein vom System verwaltetes Laufwerk handelt. Schreibgeschützt.
+| System-               | [systemFacet][]               | Falls vorhanden, gibt an, dass es sich um ein vom System verwaltetes Laufwerk handelt. Schreibgeschützt.
 | webUrl               | String (URL)                  | URL, über die die Ressource im Browser angezeigt werden kann. Schreibgeschützt.                                                                                                                                                                        |
 
 [identitySet]: identityset.md
@@ -72,9 +91,10 @@ Die **drive**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet und er
 
 | Beziehung | Typ                                 | Beschreibung
 |:-------------|:-------------------------------------|:-----------------------
-| items        | [driveitem](driveitem.md) collection | Alle im Laufwerk enthaltenen Elemente. Schreibgeschützt. Lässt Nullwerte zu.
-| root         | [driveitem](driveitem.md)            | Der Stammordner des Laufwerks. Schreibgeschützt.
-| Sonderfall      | [driveitem](driveitem.md) collection | Sammlung gemeinsamer Ordner, die  in OneDrive zur Verfügung stehen. Schreibgeschützt. Lässt Nullwerte zu.
+| Elemente        | [DriveItem](driveitem.md)-Sammlung | Alle im Laufwerk enthaltenen Elemente. Schreibgeschützt. Lässt Nullwerte zu.
+| Stamm         | [DriveItem](driveitem.md)            | Der Stammordner des Laufwerks. Schreibgeschützt.
+| Sonderfall      | [DriveItem](driveitem.md)-Sammlung | Sammlung gemeinsamer Ordner, die  in OneDrive zur Verfügung stehen. Schreibgeschützt. Lässt Nullwerte zu.
+| Liste         | [Liste](list.md)                      | Für Laufwerke in SharePoint, die zugrundeliegenden Dokumentbibliothek-Liste. Schreibgeschützt. Lässt Nullwerte zu.
 
 ## <a name="methods"></a>Methoden
 
@@ -105,6 +125,10 @@ In der vorstehenden Tabelle verwenden die Beispiele `/drive`, andere Pfade sind 
   "description": "Drive is a top level object for OneDrive API that provides access to the contents of a drive. ",
   "keywords": "drive,objects,resources",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/drive.md:
+      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
+  ],
   "tocPath": "Drives",
   "tocBookmarks": { "Resources/Drive": "#" }
 } -->

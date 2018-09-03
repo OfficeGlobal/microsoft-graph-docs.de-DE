@@ -1,6 +1,6 @@
-# <a name="microsoft-teams-teamwork-api-overview"></a>Überblick über die Teamarbeit-API in Microsoft Teams
+# <a name="microsoft-teams-api-overview-preview"></a>Microsoft Teams-API (Übersicht) (Vorschau)
 
-Microsoft Teams ist der ultimative Hub für Zusammenarbeit und intelligente Kommunikation. Microsoft Teams, das auf den Stärken und der Größe von Office 365 aufbaut, bietet mit mehr als 120 Millionen von Benutzern chatbasierte Funktionen für Zusammenarbeit, Besprechungen, Anrufe sowie Enterprise-VoIP-Funktionen. 
+Microsoft Teams ist der ultimative Hub für Zusammenarbeit und intelligente Kommunikation. Microsoft Teams, das auf den Stärken und der Größe von Office 365 aufbaut, bietet mit mehr als 120 Millionen von Benutzern chatbasierte Funktionen für Zusammenarbeit, Besprechungen, Anrufe sowie Enterprise-VoIP-Funktionen.
 
 ## <a name="why-integrate-with-microsoft-teams"></a>Gründe für die Integration in Microsoft Teams
 
@@ -16,7 +16,7 @@ Websites, Dienste und systemeigene Plattformanwendungen werden nicht innerhalb d
 
 ![Rufen Sie die Microsoft Teams-API von Registerkarten, Bots, Websites und Diensten auf.](images/TeamsAppEndpoints.png)
 
-Diese Zusammenarbeitstools umfassen Microsoft Graph-fähige Registerkarten oder Bot-Apps, die innerhalb von Microsoft Teams ausgeführt werden. Sie können Microsoft Graph auch außerhalb einer Microsoft Teams-App aufrufen, z. B. von einer Website oder einem Webdienst aus. Wenn Sie Ihre Website bereits für Microsoft Graph aktiviert haben, können Sie diese Arbeit für Microsoft Teams verwenden, indem Sie die [Microsoft Teams-Entwicklerplattform](https://docs.microsoft.com/de-DE/microsoftteams/platform/#pivot=home&panel=home-all) verwenden, um eine Registerkarten-App zu erstellen, die den vorhandenen Websitecode verwendet.
+Diese Zusammenarbeitstools umfassen Microsoft Graph-fähige Registerkarten oder Bot-Apps, die innerhalb von Microsoft Teams ausgeführt werden. Sie können Microsoft Graph auch außerhalb einer Microsoft Teams-App aufrufen, z. B. von einer Website oder einem Webdienst aus. Wenn Sie Ihre Website bereits für Microsoft Graph aktiviert haben, können Sie diese Arbeit für Microsoft Teams verwenden, indem Sie die [Microsoft Teams-Entwicklerplattform](https://docs.microsoft.com/en-us/microsoftteams/platform/#pivot=home&panel=home-all) verwenden, um eine Registerkarten-App zu erstellen, die den vorhandenen Websitecode verwendet.
 
 Wenn eine Microsoft Teams-Registerkarte oder Bot-App nicht ideal für Ihr Szenario ist, wählen Sie einen der folgenden App-Typen aus.
 
@@ -25,12 +25,11 @@ Wenn eine Microsoft Teams-Registerkarte oder Bot-App nicht ideal für Ihr Szenar
 |Registerkarten|Inhalte mit verbesserter Anzeige in Microsoft Teams.|
 |Connectors|Für Posts optimierte Updates für Kanäle.|
 |Aktionen fordernde Nachrichten|Fügen Sie Ihren Connector-Karten verbesserte Interaktion hinzu.|
-|Websites|Inhalte mit verbesserter Anzeige in Ihren Webseiten.|
+|Webseiten|Inhalte mit verbesserter Anzeige in Ihren Webseiten.|
 |Bots|Helfen Sie Benutzern, Aufgaben in Unterhaltungen zu erledigen.|
 |Aktivitätsfeed|Benutzer über Feed-Benachrichtigungen einbeziehen.|
 |Messaging-Erweiterungen|Zulassen, dass Benutzer erweiterte Karten in Unterhaltungen abfragen und freigeben.|
 |Dienste|Verbessern Sie Ihre Clientanwendungen mit Microsoft Graph-Daten über Ihren Webdienst.|
-
 
 ### <a name="create-multiple-teams-and-channels"></a>Erstellen mehrerer Teams und Kanäle
 
@@ -45,9 +44,7 @@ Wenn das Unternehmensproblem gelöst wurde und Sie das virtuelle Team nicht mehr
 ## <a name="next-steps"></a>Nächste Schritte
 
 - Erfahren Sie, wie Sie [die Microsoft Teams-API verwenden](../api-reference/beta/resources/teams_api_overview.md).
-- Führen Sie einen Drilldown für die Methoden, Eigenschaften und Beziehungen der Ressourcen [team](../api-reference/beta/resources/team.md), [channel](../api-reference/beta/resources/channel.md) und [group](.../api-reference/v1.0/resources/group.md) aus.
-- Probieren Sie die API im [Graph-Tester](https://developer.microsoft.com/de-DE/graph/graph-explorer) aus.
-- Erfahren Sie mehr über das [Microsoft Teams-Programmiermodell](https://docs.microsoft.com/de-DE/microsoftteams/platform/concepts/concepts-overview).
+- Führen Sie einen Drilldown für die Methoden, Eigenschaften und Beziehungen der Ressourcen [team](../api-reference/beta/resources/team.md), [channel](../api-reference/beta/resources/channel.md) und [group](../api-reference/v1.0/resources/group.md) aus.
+- Probieren Sie die API im [Graph-Tester](https://developer.microsoft.com/en-us/graph/graph-explorer) aus.
+- Erfahren Sie mehr über das [Microsoft Teams-Programmiermodell](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/concepts-overview).
 - Schnelleinstieg mit [Beispielcode](https://github.com/OfficeDev/microsoft-teams-sample-graph).
-
-

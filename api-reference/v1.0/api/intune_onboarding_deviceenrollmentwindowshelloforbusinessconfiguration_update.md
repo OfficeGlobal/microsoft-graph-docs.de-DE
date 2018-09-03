@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Annehmen|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung für das [deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration.md)-Objekt an.
@@ -36,23 +36,23 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |:---|:---|:---|
 |id|Zeichenfolge|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |displayName|Zeichenfolge|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
-|description|Zeichenfolge|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|Beschreibung|Zeichenfolge|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |Priorität|Int32|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |Version|Int32|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |pinMinimumLength|Int32|Noch nicht dokumentiert.|
 |pinMaximumLength|Int32|Noch nicht dokumentiert.|
-|pinUppercaseCharactersUsage|Zeichenfolge|Noch nicht dokumentiert. Mögliche Werte: `allowed`, `required`, `disallowed`.|
-|pinLowercaseCharactersUsage|Zeichenfolge|Noch nicht dokumentiert. Mögliche Werte: `allowed`, `required`, `disallowed`.|
-|pinSpecialCharactersUsage|Zeichenfolge|Noch nicht dokumentiert. Mögliche Werte: `allowed`, `required`, `disallowed`.|
-|state|Zeichenfolge|Noch nicht dokumentiert. Mögliche Werte: `notConfigured`, `enabled`, `disabled`.|
+|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|Noch nicht dokumentiert. Die möglichen Werte sind: `allowed`, `required`, `disallowed`.|
+|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|Noch nicht dokumentiert. Die möglichen Werte sind: `allowed`, `required`, `disallowed`.|
+|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|Noch nicht dokumentiert. Die möglichen Werte sind: `allowed`, `required`, `disallowed`.|
+|Status|[enablement](../resources/intune_onboarding_enablement.md)|Noch nicht dokumentiert. Die möglichen Werte sind: `notConfigured`, `enabled`, `disabled`.|
 |securityDeviceRequired|Boolescher Wert|Noch nicht dokumentiert.|
 |unlockWithBiometricsEnabled|Boolescher Wert|Noch nicht dokumentiert.|
 |remotePassportEnabled|Boolescher Wert|Noch nicht dokumentiert.|
 |pinPreviousBlockCount|Int32|Noch nicht dokumentiert.|
 |pinExpirationInDays|Int32|Noch nicht dokumentiert.|
-|enhancedBiometricsState|Zeichenfolge|Noch nicht dokumentiert. Mögliche Werte: `notConfigured`, `enabled`, `disabled`.|
+|enhancedBiometricsState|[enablement](../resources/intune_onboarding_enablement.md)|Noch nicht dokumentiert. Die möglichen Werte sind: `notConfigured`, `enabled`, `disabled`.|
 
 
 

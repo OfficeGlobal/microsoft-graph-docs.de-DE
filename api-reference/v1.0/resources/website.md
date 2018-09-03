@@ -6,7 +6,7 @@ Stellt eine Website dar.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|type|Zeichenfolge| Mögliche Werte: `other`, `home`, `work`, `blog`, `profile`.|
+|type|websiteType| Die möglichen Werte sind: `other`, `home`, `work`, `blog`, `profile`.|
 |address|Zeichenfolge|Die URL der Website.|
 |displayName|Zeichenfolge|Der Anzeigename der Website.|
 

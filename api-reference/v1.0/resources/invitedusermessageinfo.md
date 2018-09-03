@@ -6,7 +6,7 @@ Mit dem invitedUserMessageInfo-Objekt können Sie die [invitation](invitation.md
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|ccRecipients|[Empfänger](recipient.md)|Weitere Empfänger, an die die Einladungsnachricht gesendet werden soll. Derzeit wird nur 1 zusätzlicher Empfänger unterstützt.|
+|ccRecipients|[Empfänger](recipient.md)-Sammlung|Zusätzliche Empfänger, an die die Einladungsnachricht gesendet werden soll. Derzeit wird nur 1 zusätzlicher Empfänger unterstützt.|
 |customizedMessageBody|Zeichenfolge|Angepasster Nachrichtentext, den Sie senden möchten, wenn Sie nicht die Standardnachricht senden.|
 |messageLanguage|Zeichenfolge|Die Sprache, in der Sie die Standardnachricht senden möchten. Wenn customizedMessageBody angegeben ist, wird diese Eigenschaft ignoriert und die Nachricht wird mithilfe von customizedMessageBody gesendet. Das Sprachformat sollte ISO 639 sein. Der Standardwert ist en-US.|
 
