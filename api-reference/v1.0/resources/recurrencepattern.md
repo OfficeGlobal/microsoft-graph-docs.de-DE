@@ -22,12 +22,12 @@ Verwenden Sie die **type**-Eigenschaft, um die unterschiedlichen Typen von **rec
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |dayOfMonth|Int32|Der Tag des Monats, an dem das Ereignis stattfindet. Erforderlich, wenn **type** `absoluteMonthly` oder `absoluteYearly` ist. |
-|daysOfWeek|Zeichenfolgenauflistung|Eine Auflistung der Tage der Woche, an denen das Ereignis stattfindet. Mögliche Werte: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. <br>Wenn **type** `relativeMonthly` oder `relativeYearly` ist und **daysOfWeek** mehr als einen Tag angibt, fällt das Ereignis auf den ersten Tag, der dem Muster entspricht. <br> Erforderlich, wenn **type** `weekly`, `relativeMonthly` oder `relativeYearly` ist.|
-|firstDayOfWeek|Zeichenfolge|Der erste Tag der Woche. Mögliche Werte: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. Der Standardwert lautet `sunday`. Erforderlich, wenn **type** `weekly` ist. |
-|Index|Zeichenfolge|Gibt an, in welcher Instanz der zulässigen Tage, die unter **daysOfsWeek** angegeben sind, das Ereignis eintritt, ausgehend von der ersten Instanz des Monats gezählt. Mögliche Werte: `first`, `second`, `third`, `fourth`, `last`. Der Standardwert lautet `first`. Optional; wird verwendet, wenn **type** `relativeMonthly` oder `relativeYearly` ist. |
+|daysOfWeek|dayOfWeek-Sammlung|Eine Auflistung der Tage der Woche, an denen das Ereignis stattfindet. Die möglichen Werte sind: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. <br>Wenn **type** `relativeMonthly` oder `relativeYearly` ist und **daysOfWeek** mehr als einen Tag angibt, fällt das Ereignis auf den ersten Tag, der dem Muster entspricht. <br> Erforderlich, wenn **type** `weekly`, `relativeMonthly` oder `relativeYearly` ist.|
+|firstDayOfWeek|dayOfWeek|Der erste Tag der Woche. Die möglichen Werte sind: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. Der Standardwert lautet `sunday`. Erforderlich, wenn **type** `weekly` ist. |
+|Index|weekIndex|Gibt an, in welcher Instanz der zulässigen Tage, die unter **daysOfsWeek** angegeben sind, das Ereignis eintritt, ausgehend von der ersten Instanz des Monats aus gezählt. Mögliche Werte sind: `first`, `second`, `third`, `fourth`, `last`. Der Standardwert lautet `first`. Optional; wird verwendet, wenn **type** `relativeMonthly` oder `relativeYearly` ist. |
 |Intervall|Int32|Die Anzahl von Einheiten zwischen den Vorkommen, wobei Einheiten je nach **type** in Tagen, Wochen, Monaten oder Jahren angegeben werden können. Erforderlich. |
 |Monat|Int32|Der Monat, in dem das Ereignis stattfindet.  Dies ist eine Zahl zwischen 1 und 12.|
-|Typ|String|Typ des Serienmusters: `daily`, `weekly`, `absoluteMonthly`, `relativeMonthly`, `absoluteYearly`, `relativeYearly`. Erforderlich.|
+|Typ|RecurrencePatternType|Typ des Serienmusters: `daily`, `weekly`, `absoluteMonthly`, `relativeMonthly`, `absoluteYearly`, `relativeYearly`. Erforderlich.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -61,5 +61,9 @@ Es folgt eine JSON-Darstellung der Ressource.
   "description": "recurrencePattern resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/recurrencepattern.md/microsoft.graph.recurrencePattern/daysOfWeek:
+      Inconsistent types between parameter (String) and table (Object)"
+  ],
   "tocPath": ""
 }-->

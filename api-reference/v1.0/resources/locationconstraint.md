@@ -11,7 +11,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.locationconstraint"
+  "@odata.type": "microsoft.graph.locationConstraint"
 }-->
 
 ```json
@@ -23,11 +23,11 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |isRequired|Boolescher Wert|Der Client fordert den Dienst auf, in der Antwort einen Besprechungsort für die Besprechung anzugeben. Ist diese Eigenschaft auf „true“ gesetzt und alle Ressourcen sind gebucht, gibt [findMeetingTimes](../api/user_findmeetingtimes.md) keine Besprechungsterminvorschläge zurück. Ist diese Eigenschaft auf „false“ gesetzt und alle Ressourcen sind gebucht, sucht **findMeetingTimes** trotzdem nach Besprechungsterminen, jedoch nicht nach Orten. |
-|locations|[locationConstraintItem](locationconstraintitem.md) collection|Einschränkungsinformationen für einen oder mehrere Orte, die der Kunde für die Besprechung anfordert|
-|suggestLocation|Boolean|Der Client fordert den Dienst auf, einen oder mehrere Besprechungsorte vorzuschlagen.|
+|locations|[locationConstraintItem](locationconstraintitem.md)-Sammlung|Einschränkungsinformationen für einen oder mehrere Orte, die der Kunde für die Besprechung anfordert|
+|suggestLocation|Boolescher Wert|Der Client fordert den Dienst auf, einen oder mehrere Besprechungsorte vorzuschlagen.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

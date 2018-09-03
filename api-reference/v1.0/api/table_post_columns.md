@@ -20,15 +20,15 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext eine JSON-Darstellung des [TableColumn](../resources/tablecolumn.md)-Objekts an.
+Geben Sie im Anforderungstext eine JSON-Darstellung des [WorkbookTableColumn](../resources/tablecolumn.md)-Objekts an.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und das [TableColumn](../resources/tablecolumn.md)-Objekt im Antworttext zurückgegeben.
+Wenn erfolgreich, gibt dieses Verfahren einen `201 Created` Antwortcode und ein[WorkbookTableColumn](../resources/tablecolumn.md)-Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
@@ -49,13 +49,13 @@ Content-length: 81
   "values": "values-value"
 }
 ```
-Geben Sie im Anforderungstext eine JSON-Darstellung des [TableColumn](../resources/tablecolumn.md)-Objekts an.
+Geben Sie im Anforderungstext eine JSON-Darstellung des [WorkbookTableColumn](../resources/tablecolumn.md)-Objekts an.
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableColumn"
+  "@odata.type": "microsoft.graph.workbookTableColumn"
 } -->
 ```http
 HTTP/1.1 201 Created

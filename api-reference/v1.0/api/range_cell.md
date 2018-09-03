@@ -1,4 +1,4 @@
-# <a name="range-cell"></a>Range: Cell
+# <a name="range-cell"></a>Bereich: Zelle
 
 Ruft das Bereichsobjekt ab, das die einzelne Zelle basierend auf Zeilen- und Spaltenanzahl enthält. Die Zelle kann sich außerhalb seines übergeordneten Bereichs befinden, solange es im Arbeitsblatt-Raster bleibt. Die zurückgegebene Zelle befindet sich relativ zur obersten linken Zelle des Bereichs.
 ## <a name="permissions"></a>Berechtigungen
@@ -13,24 +13,24 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/Cell
-GET /workbook/worksheets/{id|name}/range(address='<address>')/Cell
-GET /workbook/tables/{id|name}/columns/{id|name}/range/Cell
+GET /workbook/names/{name}/range/cell
+GET /workbook/worksheets/{id|name}/range(address='<address>')/cell
+GET /workbook/tables/{id|name}/columns/{id|name}/range/cell
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
-## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
+## <a name="path-parameters"></a>Pfadparameter
+Geben Sie in dem Pfad die folgenden Parameter ein.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|row|number|Zeilenanzahl der abzurufenden Zelle. Nullindiziert.|
-|Spalte|number|Spaltenanzahl der abzurufenden Zelle. Nullindiziert.|
+|Zeile|Int32|Zeilenzahl der abzurufenden Zelle. Nullindiziert.|
+|Spalte|Int32|Spaltenzahl der abzurufenden Zelle. Nullindiziert.|
 
 ## <a name="response"></a>Antwort
 
@@ -40,21 +40,13 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das 
 Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "range_cell"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Cell
-Content-type: application/json
-Content-length: 37
-
-{
-  "row": {
-  },
-  "column": {
-  }
-}
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/cell(row=5,column=6)
 ```
 
 ##### <a name="response"></a>Antwort
@@ -62,7 +54,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

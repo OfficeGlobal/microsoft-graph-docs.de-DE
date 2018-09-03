@@ -26,8 +26,8 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.
@@ -36,9 +36,9 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|keepEnrollmentData|Boolean|Noch nicht dokumentiert|
-|keepUserData|Boolean|Noch nicht dokumentiert|
-|macOsUnlockCode|String|Noch nicht dokumentiert|
+|keepEnrollmentData|boolesch|Noch nicht dokumentiert|
+|keepUserData|boolesch|Noch nicht dokumentiert|
+|macOsUnlockCode|Zeichenfolge|Noch nicht dokumentiert|
 
 
 
@@ -48,11 +48,11 @@ Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` z
 ## <a name="example"></a>Beispiel
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
+
+<!-- { "blockType": "request" } -->
 ``` http
 POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}/wipe
-
 Content-type: application/json
-Content-length: 109
 
 {
   "keepEnrollmentData": true,
@@ -63,6 +63,8 @@ Content-length: 109
 
 ### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+
+<!-- { "blockType": "response" } -->
 ``` http
 HTTP/1.1 204 No Content
 ```

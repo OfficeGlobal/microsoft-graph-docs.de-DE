@@ -12,10 +12,10 @@ Beim Filtern des Namens der Zeichenfolge (`Name`) in der **ID** einer erweiterte
 
 Die folgenden Benutzerressourcen werden unterstützt:
 
-- [message](../resources/message.md)
+- [Nachricht](../resources/message.md)
 - [mailFolder](../resources/mailfolder.md)
 - [event](../resources/event.md)
-- [calendar](../resources/calendar.md)
+- [Kalender](../resources/calendar.md)
 - [contakt](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
 
@@ -183,7 +183,7 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-## <a name="parameters"></a>Parameter
+## <a name="path-parameters"></a>Pfadparameter
 |Parameter|Typ|Beschreibung|
 |:-----|:-----|:-----|
 |id_value|Zeichenfolge|Die ID der erweiterten Eigenschaft, nach der gefiltert wird. Sie muss eins der unterstützten Formate aufweisen. Weitere Informationen finden Sie unter [Überblick über erweiterte Eigenschaften in Outlook](../resources/extended-properties-overview.md). Erforderlich.|

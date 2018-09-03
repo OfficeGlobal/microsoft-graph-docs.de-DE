@@ -24,8 +24,8 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des windows10TeamGeneralConfiguration-Objekts an.
@@ -34,32 +34,32 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|azureOperationalInsightsBlockTelemetry|Boolean|Gibt an, ob Azure Operational Insights blockiert werden soll.|
-|azureOperationalInsightsWorkspaceId|String|ID des Azure Operational Insights-Arbeitsbereichs|
-|azureOperationalInsightsWorkspaceKey|String|Schlüssel des Azure Operational Insights-Arbeitsbereichs|
-|connectAppBlockAutoLaunch|Boolean|Gibt an, ob die App „Verbinden“ automatisch gestartet werden soll, sobald eine Projektion initiiert wird.|
-|maintenanceWindowBlocked|Boolean|Gibt an, ob ein Wartungsfenster für Geräteupdates festgelegt werden darf.|
+|Beschreibung|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|azureOperationalInsightsBlockTelemetry|boolesch|Gibt an, ob Azure Operational Insights blockiert werden soll.|
+|azureOperationalInsightsWorkspaceId|Zeichenfolge|ID des Azure Operational Insights-Arbeitsbereichs|
+|azureOperationalInsightsWorkspaceKey|Zeichenfolge|Schlüssel des Azure Operational Insights-Arbeitsbereichs|
+|connectAppBlockAutoLaunch|boolesch|Gibt an, ob die App „Verbinden“ automatisch gestartet werden soll, sobald eine Projektion initiiert wird.|
+|maintenanceWindowBlocked|boolesch|Gibt an, ob ein Wartungsfenster für Geräteupdates festgelegt werden darf.|
 |maintenanceWindowDurationInHours|Int32|Dauer des Wartungsfensters für Geräteupdates. Gültige Werte: 0 bis 5.|
 |maintenanceWindowStartTime|TimeOfDay|Beginn des Wartungsfensters für Geräteupdates|
-|miracastChannel|String|Kanal. Mögliche Werte sind: `userDefined`, `one`, `two`, `three`, `four`, `five`, `six`, `seven`, `eight`, `nine`, `ten`, `eleven`, `thirtySix`, `forty`, `fortyFour`, `fortyEight`, `oneHundredFortyNine`, `oneHundredFiftyThree`, `oneHundredFiftySeven`, `oneHundredSixtyOne` und `oneHundredSixtyFive`.|
-|miracastBlocked|Boolean|Gibt an, ob eine drahtlose Projektion erlaubt ist.|
-|miracastRequirePin|Boolean|Gibt an, ob für eine drahtlose Projektion die Eingabe einer PIN erforderlich ist.|
-|settingsBlockMyMeetingsAndFiles|Boolean|Gibt an, ob die Funktion „Meine Besprechungen und Dateien“ im Startmenü deaktiviert werden soll. In diesem Bereich werden die Office 365-Besprechungen und -Dateien des angemeldeten Benutzers angezeigt.|
-|settingsBlockSessionResume|Boolean|Gibt an, ob Sitzungen nach einem Sitzungstimeout fortgeführt werden dürfen.|
-|settingsBlockSigninSuggestions|Boolean|Gibt an, ob das Anmeldedialogfeld automatisch mit den Eingeladenen aus geplanten Besprechungen befüllt werden darf.|
+|miracastChannel|[miracastChannel](../resources/intune_deviceconfig_miracastchannel.md)|Der Kanal. Die möglichen Werte sind: `userDefined`, `one`, `two`, `three`, `four`, `five`, `six`, `seven`, `eight`, `nine`, `ten`, `eleven`, `thirtySix`, `forty`, `fortyFour`, `fortyEight`, `oneHundredFortyNine`, `oneHundredFiftyThree`, `oneHundredFiftySeven`, `oneHundredSixtyOne`, `oneHundredSixtyFive`.|
+|miracastBlocked|boolesch|Gibt an, ob eine drahtlose Projektion erlaubt ist.|
+|miracastRequirePin|boolesch|Gibt an, ob für eine drahtlose Projektion die Eingabe einer PIN erforderlich ist.|
+|settingsBlockMyMeetingsAndFiles|boolesch|Gibt an, ob die Funktion „Meine Besprechungen und Dateien“ im Startmenü deaktiviert werden soll. In diesem Bereich werden die Office 365-Besprechungen und -Dateien des angemeldeten Benutzers angezeigt.|
+|settingsBlockSessionResume|boolesch|Gibt an, ob Sitzungen nach einem Sitzungstimeout fortgeführt werden dürfen.|
+|settingsBlockSigninSuggestions|boolesch|Gibt an, ob das Anmeldedialogfeld automatisch mit den Eingeladenen aus geplanten Besprechungen befüllt werden darf.|
 |settingsDefaultVolume|Int32|Legt die Standardlautstärke für neue Sitzungen fest. Zulässige Werte sind 0 bis 100. Der Standardwert lautet 45. Gültige Werte: 0 bis 100.|
 |settingsScreenTimeoutInMinutes|Int32|Gibt den Zeitraum in Minuten an, nach dem der Bildschirm des Hub-Systems abgeschaltet wird.|
 |settingsSessionTimeoutInMinutes|Int32|Gibt den Zeitraum in Minuten an, nach dem es zu einem Sitzungstimeout kommt.|
 |settingsSleepTimeoutInMinutes|Int32|Gibt den Zeitraum in Minuten an, nach dem das Hub-System in den Energiesparmodus geschaltet wird.|
-|welcomeScreenBlockAutomaticWakeUp|Boolean|Gibt an, ob der Willkommensbildschirm automatisch angezeigt werden soll, sobald jemand den Raum betritt.|
-|welcomeScreenBackgroundImageUrl|String|URL zum Hintergrundbild für den Willkommensbildschirm. Die URL muss das HTTPS-Protokoll verwenden und ein PNG-Bild zurückgeben.|
-|welcomeScreenMeetingInformation|String|Die Informationen, die im Willkommensbildschirm angezeigt werden sollen. Mögliche Werte sind: `userDefined`, `showOrganizerAndTimeOnly` und `showOrganizerAndTimeAndSubject`.|
+|welcomeScreenBlockAutomaticWakeUp|boolesch|Gibt an, ob der Willkommensbildschirm automatisch angezeigt werden soll, sobald jemand den Raum betritt.|
+|welcomeScreenBackgroundImageUrl|Zeichenfolge|URL zum Hintergrundbild für den Willkommensbildschirm. Die URL muss das HTTPS-Protokoll verwenden und ein PNG-Bild zurückgeben.|
+|welcomeScreenMeetingInformation|[welcomeScreenMeetingInformation](../resources/intune_deviceconfig_welcomescreenmeetinginformation.md)|Die Informationen, die im Willkommensbildschirm angezeigt werden sollen. Die möglichen Werte sind: `userDefined`, `showOrganizerAndTimeOnly`, `showOrganizerAndTimeAndSubject`.|
 
 
 

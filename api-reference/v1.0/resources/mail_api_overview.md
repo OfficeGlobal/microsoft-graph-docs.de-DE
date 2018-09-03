@@ -12,7 +12,7 @@ E-Mail-Nachrichten werden durch die Ressource [message](../resources/message.md)
 
 Nachrichtentext kann im HTML- oder Textformat vorliegen.
 
-Sie können bekannte Ordnernamen wie `Inbox`, `Drafts`, `SentItems` oder `DeletedItems` verwenden, um bestimmte, standardmäßig für alle Benutzer vorhandene Mail-Ordner einfacher zu erkennen. Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).
+Sie können bekannte Ordnernamen wie `Inbox`, `Drafts`, `SentItems` oder `DeletedItems` verwenden, um bestimmte, standardmäßig für alle Benutzer vorhandene Mail-Ordner einfacher zu identifizieren. Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).
 
 So können Sie beispielsweise Nachrichten in den Outlook-Ordner **Gesendete Elemente** des angemeldeten Benutzers erhalten, ohne zuvor die Ordner-ID erhalten zu haben:
 
@@ -34,6 +34,7 @@ Die Microsoft Graph-API stellt zudem Methoden und Aktionen bereit, die allgemein
 | Wichtigere Nachrichten zuerst anzeigen | [inferenceClassificationOverride](../resources/inferenceClassificationOverride.md) | [Posteingang mit Fokus](../resources/manage_focused_inbox.md) |
 | Anlagen einer Nachricht hinzufügen, abrufen oder löschen | [attachment](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [message](../resources/message.md) | [Methoden von „attachment“](../resources/attachment.md#methods) |
 | Automatische Antwort, Gebietsschema, Zeitzone oder Arbeitszeiten eines Benutzers abrufen oder aktualisieren | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Postfacheinstellungen des Benutzers abrufen](../api/user_get_mailboxsettings.md) <br> [Postfacheinstellungen des Benutzers aktualisieren](../api/user_update_mailboxsettings.md) |
+| Abrufen von E-Mail-Infos von anderen Empfänger spezielle Status, z.B. Abwesenheitsbenachrichtigungen | [user](../resources/user.md), <br> [mailTips](../resources/mailtips.md) | [Abrufen von E-Mail-Infos](../api/user_getmailtips.md) |
 | **E-Mail- und Ordnerverwaltung** | | |
 | Nachrichten in einer E-Mail-Ordnerhierarchie organisieren | [mailFolder](../resources/mailfolder.md)  | [Methoden von „mailFolder“](../resources/mailfolder.md#methods) |
 | Nachrichten suchen und filtern | [message](../resources/message.md) | [Abfrageparameter](../../../concepts/query_parameters.md)  |

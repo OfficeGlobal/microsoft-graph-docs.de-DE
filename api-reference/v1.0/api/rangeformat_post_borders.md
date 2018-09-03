@@ -13,7 +13,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/format/borders
+POST /workbook/names/{name}/range/format/borders
 POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 
@@ -21,15 +21,15 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext eine JSON-Darstellung des [RangeBorder](../resources/rangeborder.md)-Objekts an.
+Geben Sie im Anforderungstext eine JSON-Darstellung des [WorkbookRangeBorder](../resources/rangeborder.md)-Objekts an.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und das [RangeBorder](../resources/rangeborder.md)-Objekt im Antworttext zurückgegeben.
+Wenn erfolgreich, gibt diese Methode einen Antwortcode `201 Created` und das [WorkbookRangeBorder](../resources/rangeborder.md)-Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
@@ -39,7 +39,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "create_rangeborder_from_rangeformat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/borders
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/borders
 Content-type: application/json
 Content-length: 136
 
@@ -51,13 +51,13 @@ Content-length: 136
   "weight": "weight-value"
 }
 ```
-Geben Sie im Anforderungstext eine JSON-Darstellung des [RangeBorder](../resources/rangeborder.md)-Objekts an.
+Geben Sie im Anforderungstext eine JSON-Darstellung des [WorkbookRangeBorder](../resources/rangeborder.md)-Objekts an.
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeBorder"
+  "@odata.type": "microsoft.graph.workbookRangeBorder"
 } -->
 ```http
 HTTP/1.1 201 Created

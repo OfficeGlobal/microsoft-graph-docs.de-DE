@@ -7,14 +7,14 @@ Stellt die Außerkraftsetzung eines Benutzers dafür dar, wie eingehende Nachric
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Update](../api/inferenceclassificationoverride_update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)    |Ändert das **ClassifyAs**-Feld einer Außerkraftsetzung wie angegeben. |
+|[Aktualisieren](../api/inferenceclassificationoverride_update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Ändert das **classifyAs**-Feld einer Außerkraftsetzung wie angegeben. |
 |[Löschen](../api/inferenceclassificationoverride_delete.md) | Keine |Löscht eine Außerkraftsetzung, die durch ihre ID angegeben ist. |
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|classifyAs|string| Gibt an, wie eingehende Nachrichten von einem bestimmten Absender immer klassifiziert werden sollen. Mögliche Werte: `focused`, `other`.|
-|id|string| Der eindeutige Bezeichner der Außerkraftsetzung. Schreibgeschützt.|
+|classifyAs|inferenceClassificationType| Gibt an, wie eingehende Nachrichten von einem bestimmten Absender stets klassifiziert werden sollen. Die möglichen Werte sind: `focused`, `other`.|
+|id|Zeichenfolge| Der eindeutige Bezeichner der Außerkraftsetzung. Schreibgeschützt.|
 |senderEmailAddress|[emailAddress](emailaddress.md)|Die E-Mail-Adressinformationen des Absenders, für den die Außerkraftsetzung erstellt wird.|
 
 ## <a name="relationships"></a>Beziehungen
@@ -27,6 +27,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

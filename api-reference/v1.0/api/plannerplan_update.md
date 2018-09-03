@@ -1,6 +1,7 @@
-# <a name="update-plannerplan"></a>plannerPlan aktualisieren
+# <a name="update-plannerplan"></a>Aktualisierung des plannerPlan
 
-Dient zum Aktualisieren der Eigenschaften eines **plannerplan**-Objekts.
+Dient zum Aktualisieren der Eigenschaften eines **plannerPlan**-Objekts.
+
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -13,12 +14,14 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/plans/<id>
+PATCH /planner/plans/{id}
 ```
-## <a name="optional-request-headers"></a>Optionale Anforderungsheader
+
+## <a name="request-headers"></a>Anforderungsheader
+
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | If-Match  | Letzter bekannter ETag-Wert für den zu aktualisierenden plannerPlan. Erforderlich.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -26,8 +29,8 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|owner|String|[Gruppe](../resources/group.md) `id`, in deren Besitz der Plan ist. Dieses Feld kann erst festgelegt werden, wenn eine gültige Gruppe vorhanden ist. Nachdem dieses festgelegt wurde, kann es nur noch vom Besitzer aktualisiert werden.|
-|title|String|Der Titel des Plans.|
+|owner|Zeichenfolge|[Gruppe](../resources/group.md) `id`, in deren Besitz der Plan ist. Dieses Feld kann erst festgelegt werden, wenn eine gültige Gruppe vorhanden ist. Nachdem dieses festgelegt wurde, kann es nur noch vom Besitzer aktualisiert werden.|
+|title|Zeichenfolge|Der Titel des Plans.|
 
 ## <a name="response"></a>Antwort
 
@@ -43,7 +46,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "update_plannerplan"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM
+PATCH https://graph.microsoft.com/v1.0/planner/plans/{plan-id}
 Content-type: application/json
 Content-length: 29
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

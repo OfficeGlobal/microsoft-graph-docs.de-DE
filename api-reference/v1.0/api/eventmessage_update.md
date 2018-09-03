@@ -22,18 +22,18 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Inhaltstyp | Zeichenfolge  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben. Schreibbare/Aktualisierbare Eigenschaften:
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|categories|String|Die Kategorien, die mit der Nachricht verknüpft sind.|
-|importance|String|Wichtigkeit der Nachricht Mögliche Werte: `Low`, `Normal`, `High`.|
-|isDeliveryReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
-|isRead|Boolean|Gibt an, ob die Nachricht gelesen wurde.|
-|isReadReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
+|Kategorien|Zeichenfolge|Die Kategorien, die mit der Nachricht verknüpft sind.|
+|Wichtigkeit|Zeichenfolge|Die Wichtigkeit der Nachricht. Die möglichen Werte sind: `Low`, `Normal`, `High`.|
+|isDeliveryReceiptRequested|Boolesch|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
+|isRead|Boolesch|Gibt an, ob die Nachricht gelesen wurde.|
+|isReadReceiptRequested|Boolesch|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
 
 ## <a name="response"></a>Antwort
 

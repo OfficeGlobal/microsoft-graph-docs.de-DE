@@ -19,15 +19,15 @@ POST /workbook/worksheets/{id|name}/charts/
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext eine JSON-Darstellung des [Chart](../resources/chart.md)-Objekts an.
+Geben Sie im Anforderungstext eine JSON-Darstellung des [WorkbookChart](../resources/chart.md)-Objekts an.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und das [Chart](../resources/chart.md)-Objekt im Antworttext zurückgegeben.
+Wenn erfolgreich, gibt diese Methode einen `201 Created` Antwortcode und ein[WorkbookChart](../resources/chart.md)-Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
@@ -47,13 +47,13 @@ Content-length: 52
   "left": 99
 }
 ```
-Geben Sie im Anforderungstext eine JSON-Darstellung des [Chart](../resources/chart.md)-Objekts an.
+Geben Sie im Anforderungstext eine JSON-Darstellung des [WorkbookChart](../resources/chart.md)-Objekts an.
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 201 Created

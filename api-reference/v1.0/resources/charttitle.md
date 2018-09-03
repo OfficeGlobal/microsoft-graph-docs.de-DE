@@ -7,20 +7,20 @@ Ein Diagrammtitelobjekt eines Diagramms.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[ChartTitle abrufen](../api/charttitle_get.md) | [ChartTitle](charttitle.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartTitle-Objekts.|
-|[Update](../api/charttitle_update.md) | [ChartTitle](charttitle.md)    |Dient zum Aktualisieren des ChartTitle-Objekts. |
+|[ChartTitle abrufen](../api/charttitle_get.md) | [WorkbookChartTitle](charttitle.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartTitle-Objekts.|
+|[Aktualisieren](../api/charttitle_update.md) | [WorkbookChartTitle](charttitle.md)    |Dient zum Aktualisieren des ChartTitle-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Overlay|boolean|Boolescher Wert, der angibt, ob der Diagrammtitel das Diagramm überlagert.|
-|text|string|Stellt den Titeltext eines Diagramms dar.|
-|visible|boolean|Ein boolescher Wert, der die Sichtbarkeit eines Diagrammtitelobjekts darstellt.|
+|Overlay|boolesch|Boolescher Wert, der angibt, ob der Diagrammtitel das Diagramm überlagert.|
+|Text|Zeichenfolge|Stellt den Titeltext eines Diagramms dar.|
+|sichtbar|boolesch|Ein boolescher Wert, der die Sichtbarkeit eines Diagrammtitelobjekts darstellt.|
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Format|[ChartTitleFormat](charttitleformat.md)|Stellt die Formatierung für einen Diagrammtitel dar, einschließlich Füllung und Schriftartformatierung. Schreibgeschützt.|
+|Format|[WorkbookChartTitleFormat](charttitleformat.md)|Stellt die Formatierung für einen Diagrammtitel dar, einschließlich Füllung und Schriftartformatierung. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -28,10 +28,11 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 }-->
 
 ```json

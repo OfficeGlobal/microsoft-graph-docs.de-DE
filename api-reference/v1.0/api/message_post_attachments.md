@@ -23,8 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Anwendung | Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-Anlagen für eine [Nachricht](../resources/message.md) im Postfach eines Benutzers.
+<!-- { "blockType": "ignored" } --> Anlagen für eine [Nachricht](../resources/message.md) im Postfach eines Benutzers.
 ```http
 POST /me/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/messages/{id}/attachments
@@ -42,8 +41,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Inhaltstyp | Zeichenfolge  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [Attachment](../resources/attachment.md)-Objekts an.
@@ -58,6 +57,7 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkpsDRVK"],
   "name": "create_file_attachment_from_message"
 }-->
 ```http
@@ -68,7 +68,7 @@ Content-length: 142
 {
   "@odata.type": "#microsoft.graph.fileAttachment",
   "name": "smile",
-  "contentBytes": "R0lGODdhEAYEAA7"
+  "contentBytes": "base64R0lGODdhEAYEAA7"
 }
 ```
 
@@ -94,7 +94,7 @@ Content-length: 202
     "isInline": false,
     "contentId": null,
     "contentLocation": null,
-    "contentBytes": "R0lGODdhEAYEAA7"
+    "contentBytes": "base64R0lGODdhEAYEAA7"
 }
 
 ```
@@ -105,6 +105,7 @@ Content-length: 202
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkpsDRVK"],
   "name": "create_item_attachment_from_message"
 }-->
 

@@ -7,29 +7,29 @@ Gibt ein Formatobjekt zurück, das die Schriftart des Bereichs, Füllung, Rahmen
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[RangeFormat abrufen](../api/rangeformat_get.md) | [RangeFormat](rangeformat.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des rangeFormat-Objekts.|
-|[RangeBorder erstellen](../api/rangeformat_post_borders.md) |[RangeBorder](rangeborder.md)| Dient zum Erstellen eines neues RangeBorder durch Veröffentlichen in der Rahmensammlung.|
-|[Rahmen auflisten](../api/rangeformat_list_borders.md) |[RangeBorder-Sammlung](rangeborder.md)| Dient zum Abrufen einer RangeBorder-Objeksammlung.|
-|[Update](../api/rangeformat_update.md) | [RangeFormat](rangeformat.md)    |Dient zum Aktualisieren des RangeFormat-Objekts. |
+|[RangeFormat abrufen](../api/rangeformat_get.md) | [WorkbookRangeFormat](rangeformat.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des rangeFormat-Objekts.|
+|[RangeBorder erstellen](../api/rangeformat_post_borders.md) |[WorkbookRangeBorder](rangeborder.md)| Dient zum Erstellen eines neues RangeBorder durch Veröffentlichen in der Rahmensammlung.|
+|[Rahmen auflisten](../api/rangeformat_list_borders.md) |[WorkbookRangeBorder](rangeborder.md)-Sammlung| Dient zum Abrufen einer RangeBorder-Objeksammlung.|
+|[Aktualisieren](../api/rangeformat_update.md) | [WorkbookRangeFormat](rangeformat.md) |Dient zum Aktualisieren des RangeFormat-Objekts. |
 |[Autofitcolumns](../api/rangeformat_autofitcolumns.md)|Keine|Ändert die Breite der Spalten des aktuellen Bereichs, um basierend auf den aktuellen Daten in den Spalten die optimale Breite zu erzielen.|
 |[Autofitrows](../api/rangeformat_autofitrows.md)|Keine|Ändert die Höhe der Zeilen des aktuellen Bereichs, um basierend auf den aktuellen Daten in den Zeilen die optimale Höhe zu erzielen.|
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |columnWidth|double|Ruft die Breite aller Spalten innerhalb des Bereichs ab oder legt diese fest. Wenn die Breite der Spalten nicht gleichmäßig ist, wird Null zurückgegeben.|
-|horizontalAlignment|string|Stellt die horizontale Ausrichtung für das angegebene Objekt dar. Mögliche Werte: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
+|horizontalAlignment|Zeichenfolge|Stellt die horizontale Ausrichtung für das angegebene Objekt dar. Mögliche Werte: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
 |rowHeight|double|Ruft die Höhe aller Zeilen des Bereichs ab oder legt diese fest. Wenn die Höhe der Zeilen nicht gleichmäßig ist, wird Null zurückgegeben.|
-|verticalAlignment|string|Stellt die vertikale Ausrichtung für das angegebene Objekt dar. Mögliche Werte: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
-|wrapText|boolean|Gibt an, ob Excel den Text im Objekt umbricht. Ein Nullwert gibt an, dass der gesamte Bereich keine einheitliche Textumbruch-Einstellung hat|
+|verticalAlignment|Zeichenfolge|Stellt die vertikale Ausrichtung für das angegebene Objekt dar. Mögliche Werte sind: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
+|wrapText|Boolescher Wert|Gibt an, ob Excel den Text im Objekt umbricht. Ein Nullwert gibt an, dass der gesamte Bereich keine einheitliche Textumbruch-Einstellung hat|
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Borders|[RangeBorder-Sammlung](rangeborder.md)|Auflistung von Border-Objekten, die für den gesamten ausgewählten Bereich gelten, schreibgeschützt.|
-|fill|[RangeFill](rangefill.md)|Gibt das Fill-Objekt an, das für den gesamten Bereich definiert ist. Schreibgeschützt.|
-|font|[RangeFont](rangefont.md)|Gibt das Font-Objekt zurück, das für den gesamten ausgewählten Bereich definiert ist, schreibgeschützt.|
-|Schutz|[FormatProtection](formatprotection.md)|Gibt das Formatschutz-Objekt für einen Bereich zurück. Schreibgeschützt.|
+|Borders|[WorkbookRangeBorder](rangeborder.md)-Sammlung|Auflistung von Border-Objekten, die für den gesamten ausgewählten Bereich gelten, schreibgeschützt.|
+|fill|[WorkbookRangeFill](rangefill.md)|Gibt das Fill-Objekt an, das für den gesamten Bereich definiert ist. Schreibgeschützt.|
+|Schriftart|[WorkbookRangeFont](rangefont.md)|Gibt das Font-Objekt zurück, das für den gesamten ausgewählten Bereich definiert ist, schreibgeschützt.|
+|protection|[WorkbookFormatProtection](formatprotection.md)|Gibt das Formatschutz-Objekt für einen Bereich zurück. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -37,10 +37,11 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.rangeFormat"
+  "@odata.type": "microsoft.graph.workbookRangeFormat"
 }-->
 
 ```json

@@ -24,8 +24,8 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „windows81GeneralConfiguration“ an.
@@ -34,45 +34,45 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|accountsBlockAddingNonMicrosoftAccountEmail|Boolean|Gibt an, ob verhindert werden soll, dass der Benutzer E-Mail-Konten zu Geräten hinzufügt, die keinem Microsoft-Konto zugeordnet sind.|
-|applyOnlyToWindows81|Boolean|Wert, der angibt, ob die Richtlinie nur für Windows 8.1 gilt. Diese Eigenschaft ist schreibgeschützt.|
-|browserBlockAutofill|Boolean|Gibt an, ob AutoAusfüllen blockiert werden soll.|
-|browserBlockAutomaticDetectionOfIntranetSites|Boolean|Gibt an, ob die automatische Erkennung von Intranetwebsites blockiert werden soll.|
-|browserBlockEnterpriseModeAccess|Boolean|Gibt an, ob der Zugriff im Unternehmensmodus blockiert werden soll.|
-|browserBlockJavaScript|Boolean|Gibt an, ob verhindert werden soll, dass der Benutzer JavaScript verwendet.|
-|browserBlockPlugins|Boolean|Gibt an, ob Plug-Ins blockiert werden sollen.|
-|browserBlockPopups|Boolean|Gibt an, ob Popups blockiert werden sollen.|
-|browserBlockSendingDoNotTrackHeader|Boolean|Gibt an, ob verhindert werden soll, dass der Benutzer den „Do not track“-Header sendet.|
-|browserBlockSingleWordEntryOnIntranetSites|Boolean|Gibt an, ob Einträge mit nur einem einzigen Wort auf Intranetwebsites blockiert werden sollen.|
-|browserRequireSmartScreen|Boolean|Gibt an, ob der Benutzer den Smartscreenfilter verwenden muss.|
-|browserEnterpriseModeSiteListLocation|String|Speicherort der Websiteliste für den Unternehmensmodus. Dies kann eine lokale Datei, ein lokales Netzwerk oder ein HTTP-Speicherort sein.|
-|browserInternetSecurityLevel|String|Internetsicherheitsstufe. Mögliche Werte sind: `userDefined`, `medium`, `mediumHigh` und `high`.|
-|browserIntranetSecurityLevel|String|Intranetsicherheitsstufe. Mögliche Werte sind: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh` und `high`.|
-|browserLoggingReportLocation|String|Speicherort des Protokollierungsberichts|
-|browserRequireHighSecurityForRestrictedSites|Boolean|Gibt an, ob für eingeschränkte Websites die Sicherheitsstufe „Hoch“ zwingend ist.|
-|browserRequireFirewall|Boolean|Gibt an, ob eine Firewall erforderlich ist.|
-|browserRequireFraudWarning|Boolean|Gibt an, ob die Funktion zur Betrugswarnung erforderlich ist.|
-|browserTrustedSitesSecurityLevel|String|Sicherheitsstufe für vertrauenswürdige Websites. Mögliche Werte sind: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh` und `high`.|
-|cellularBlockDataRoaming|Boolean|Gibt an, ob Datenroaming blockiert werden soll.|
-|diagnosticsBlockDataSubmission|Boolean|Gibt an, ob die Übermittlung von Diagnosedaten blockiert werden soll.|
-|passwordBlockPicturePasswordAndPin|Boolean|Gibt an, ob verhindert werden soll, dass der Benutzer einen Bildcode und eine PIN verwendet.|
+|Beschreibung|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|accountsBlockAddingNonMicrosoftAccountEmail|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer E-Mail-Konten zu Geräten hinzufügt, die keinem Microsoft-Konto zugeordnet sind.|
+|applyOnlyToWindows81|boolesch|Wert, der angibt, ob die Richtlinie nur für Windows 8.1 gilt. Diese Eigenschaft ist schreibgeschützt.|
+|browserBlockAutofill|boolesch|Gibt an, ob AutoAusfüllen blockiert werden soll.|
+|browserBlockAutomaticDetectionOfIntranetSites|boolesch|Gibt an, ob die automatische Erkennung von Intranetwebsites blockiert werden soll.|
+|browserBlockEnterpriseModeAccess|boolesch|Gibt an, ob der Zugriff im Unternehmensmodus blockiert werden soll.|
+|browserBlockJavaScript|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer JavaScript verwendet.|
+|browserBlockPlugins|boolesch|Gibt an, ob Plug-Ins blockiert werden sollen.|
+|browserBlockPopups|boolesch|Gibt an, ob Popups blockiert werden sollen.|
+|browserBlockSendingDoNotTrackHeader|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer den „Do not track“-Header sendet.|
+|browserBlockSingleWordEntryOnIntranetSites|boolesch|Gibt an, ob Einträge mit nur einem einzigen Wort auf Intranetwebsites blockiert werden sollen.|
+|browserRequireSmartScreen|boolesch|Gibt an, ob der Benutzer den Smartscreenfilter verwenden muss.|
+|browserEnterpriseModeSiteListLocation|Zeichenfolge|Speicherort der Websiteliste für den Unternehmensmodus. Dies kann eine lokale Datei, ein lokales Netzwerk oder ein HTTP-Speicherort sein.|
+|browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune_deviceconfig_internetsitesecuritylevel.md)|Die Internet-Sicherheitsstufe. Die möglichen Werte sind: `userDefined`, `medium`, `mediumHigh`, `high`.|
+|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|Die Intranet-Sicherheitsstufe. Die möglichen Werte sind: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
+|browserLoggingReportLocation|Zeichenfolge|Speicherort des Protokollierungsberichts|
+|browserRequireHighSecurityForRestrictedSites|boolesch|Gibt an, ob für eingeschränkte Websites die Sicherheitsstufe „Hoch“ zwingend ist.|
+|browserRequireFirewall|boolesch|Gibt an, ob eine Firewall erforderlich ist.|
+|browserRequireFraudWarning|boolesch|Gibt an, ob die Funktion zur Betrugswarnung erforderlich ist.|
+|browserTrustedSitesSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|Sicherheitsstufe für vertrauenswürdige Websites. Die möglichen Werte sind: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
+|cellularBlockDataRoaming|boolesch|Gibt an, ob Datenroaming blockiert werden soll.|
+|diagnosticsBlockDataSubmission|boolesch|Gibt an, ob die Übermittlung von Diagnosedaten blockiert werden soll.|
+|passwordBlockPicturePasswordAndPin|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer einen Bildcode und eine PIN verwendet.|
 |passwordExpirationDays|Int32|Zeit bis zum Ablaufen des Kennworts in Tagen|
 |passwordMinimumLength|Int32|Mindestlänge des Kennworts|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Zeitraum von Inaktivität in Minuten, bevor es zu einem Bildschirmtimeout kommt|
 |passwordMinimumCharacterSetCount|Int32|Anzahl der Zeichensätze, die im Kennwort enthalten sein müssen|
 |passwordPreviousPasswordBlockCount|Int32|Grenze für die Wiederverwendung von Kennwörtern. Der festgelegte Wert gibt an, von wie vielen der zuletzt genutzten Kennwörter sich das Kennwort unterscheiden muss. Gültige Werte: 0 bis 24.|
-|passwordRequiredType|String|Geforderter Kennworttyp. Mögliche Werte sind: `deviceDefault`, `alphanumeric` und `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Der deforderte Kennworttyp. Die möglichen Werte sind: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Die Anzahl von fehlgeschlagenen Anmeldeversuchen, bevor eine Zurücksetzung auf die Werkseinstellungen durchgeführt wird.|
-|storageRequireDeviceEncryption|Boolean|Gibt an, ob für ein Mobilgerät Verschlüsselung gefordert wird.|
-|updatesRequireAutomaticUpdates|Boolean|Gibt an, ob automatische Updates erforderlich sind.|
-|userAccountControlSettings|String|Einstellungen der Benutzerkontensteuerung. Mögliche Werte sind: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming` und `neverNotify`.|
-|workFoldersUrl|String|URL des Arbeitsordners.|
+|storageRequireDeviceEncryption|boolesch|Gibt an, ob für ein Mobilgerät Verschlüsselung gefordert wird.|
+|updatesRequireAutomaticUpdates|boolesch|Gibt an, ob automatische Updates erforderlich sind.|
+|userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md)|Die Einstellungen der Benutzerkontensteuerung. Die möglichen Werte sind: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
+|workFoldersUrl|Zeichenfolge|URL des Arbeitsordners.|
 
 
 

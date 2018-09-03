@@ -28,11 +28,11 @@ Mit ihrer Zustimmung können Sie mit Microsoft Graph Benutzer und Organisationen
 
 ## <a name="connect-to-school-services"></a>Verbinden mit Diensten für die Ausbildung
 
-Verwenden Sie Microsoft Graph, um Schüler/Studenten, Lehrkräfte und Bildungseinrichtungen mit Lizenzen für Microsoft 365-Diensten für Bildung zu erreichen. Mit ihrer Zustimmung können Sie Education-APIs in Microsoft Graph verwenden, die Office 365-Ressourcen und -Daten mit Informationen erweitern, die für die Ausbildungsszenarien relevant sind, z. B. Bildungseinrichtungen, Kursteilnehmer, Lehrer, Kurse, Anmeldungen und Aufgaben. 
+Verwenden Sie Microsoft Graph, um Schüler/Studenten, Lehrkräfte und Bildungseinrichtungen mit Lizenzen für Microsoft 365-Diensten für Bildung zu erreichen. Mit ihrer Zustimmung können Sie Education-APIs in Microsoft Graph verwenden, die Office 365-Ressourcen und -Daten mit Informationen erweitern, die für die Ausbildungsszenarien relevant sind, z. B. Bildungseinrichtungen, Kursteilnehmer, Lehrer, Kurse, Anmeldungen und Aufgaben. Weitere Informationen zum [Integrieren mit der Education-API](education-concept-overview.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Sehen Sie sich [ausgewählte Szenarios](https://developer.microsoft.com/de-DE/graph/examples) an.
+- Sehen Sie sich [ausgewählte Szenarios](https://developer.microsoft.com/en-us/graph/examples) an.
 - Starten Sie eine Beispielanforderung im [Graph-Tester](https://developer.microsoft.com/graph/graph-explorer).
 - Nutzen Sie den [Schnellstart](https://developer.microsoft.com/graph/quick-start), um eine sofort ausführbare Beispiel-App einzurichten.
 - Sehen Sie im Inhaltsverzeichnis unter **Lernen** nach, um mehr über die Dienste und Features zu erfahren, die Sie in diesen Szenarios verwenden können. 

@@ -5,8 +5,8 @@ Beschreibt das Datum, die Uhrzeit und Zeitzone eines Zeitpunkts.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|DateTime|String|Ein bestimmter Zeitpunkt in einer kombinierten Datums- und Uhrzeitsdarstellung (`<date>T<time>`).|
-|TimeZone|String|Einer der folgenden Zeitzonennamen.|
+|dateTime|Zeichenfolge|Ein bestimmter Zeitpunkt in einer kombinierten Datums- und Uhrzeitsdarstellung (`<date>T<time>`).|
+|timeZone|Zeichenfolge|Einer der folgenden Zeitzonennamen.|
 
 Die Eigenschaft _TimeZone_ kann auf eine beliebige, von Windows unterstützte Zeitzone und auf einen der folgenden Zeitzonennamen eingestellt werden .
 

@@ -22,15 +22,15 @@ POST /directoryObjects/{id}/checkMemberGroups
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type  | application/json  |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Inhaltstyp  | Zeichenfolge | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|groupIds|String|Eine Sammlung mit den Objekt-IDs der Gruppen, in denen die Mitgliedschaft überprüft werden soll. Bis zu 20 Gruppen können angegeben werden.|
+|groupIds|Zeichenfolgenauflistung|Eine Sammlung mit den Objekt-IDs der Gruppen, in denen die Mitgliedschaft überprüft werden soll. Bis zu 20 Gruppen können angegeben werden.|
 
 ## <a name="response"></a>Antwort
 
@@ -45,13 +45,13 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das 
   "name": "directoryobject_checkmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/checkMemberGroups
+POST https://graph.microsoft.com/v1.0/directoryObjects/{id}/checkMemberGroups
 Content-type: application/json
 
 {
   "groupIds": [
-        "fee2c45b-915a-4a64-b130-f4eb9e75525e",
-        "4fe90ae7-065a-478b-9400-e0a0e1cbd540"
+        "fee2c45b-915a-4a64b130f4eb9e75525e",
+        "4fe90ae065a-478b9400e0a0e1cbd540"
   ]
 }
 ```

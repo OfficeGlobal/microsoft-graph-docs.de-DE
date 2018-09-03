@@ -22,8 +22,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
-| Content-Type   | application/json |
+| Autorisierung  | Bearer {token}. Erforderlich. |
+| Inhaltstyp   | application/json |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -35,7 +35,7 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein 
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_schemaextension"
 }-->
 ```http
@@ -44,7 +44,7 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.schemaExtension"
 } -->
@@ -70,7 +70,7 @@ Content-length: 201
 }
 ```
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](../../../concepts/extensibility_overview.md)
 - [Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen](../../../concepts/extensibility_schema_groups.md)

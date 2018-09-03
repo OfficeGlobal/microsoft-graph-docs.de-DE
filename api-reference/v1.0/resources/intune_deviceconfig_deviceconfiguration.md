@@ -8,16 +8,16 @@ Gerätekonfiguration.
 |:---|:---|:---|
 |[deviceConfigurations auflisten](../api/intune_deviceconfig_deviceconfiguration_list.md)|[deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)-Sammlung|Auflisten von Eigenschaften und Beziehungen der [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)-Objekte.|
 |[deviceConfiguration abrufen](../api/intune_deviceconfig_deviceconfiguration_get.md)|[deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|Lesen von Eigenschaften und Beziehungen des [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)-Objekts.|
-|[Aktion zuweisen](../api/intune_deviceconfig_deviceconfiguration_assign.md)|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)-Sammlung|Noch nicht dokumentiert.|
+|[Aktion zuweisen](../api/intune_deviceconfig_deviceconfiguration_assign.md)|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)-Sammlung|Noch nicht dokumentiert|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität.|
+|id|Zeichenfolge|Schlüssel der Entität|
 |lastModifiedDateTime|DateTimeOffset|DateTime der letzten Änderung des Objekts.|
-|createdDateTime|DateTimeOffset|DateTime der Erstellung des Objekts.|
-|description|String|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration.|
-|displayName|String|Vom Administrator bereitgestellter Name der Gerätekonfiguration.|
+|createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts|
+|description|Zeichenfolge|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration.|
+|displayName|Zeichenfolge|Vom Administrator bereitgestellter Name der Gerätekonfiguration|
 |version|Int32|Version der Gerätekonfiguration.|
 
 ## <a name="relationships"></a>Beziehungen
@@ -32,12 +32,13 @@ Gerätekonfiguration.
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "abstract": true,
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceConfiguration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceConfiguration",
