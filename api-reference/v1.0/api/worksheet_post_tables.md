@@ -23,17 +23,16 @@ POST /workbook/worksheets/{id|name}/tables/add
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext die folgenden Parameter an. 
+Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
-### <a name="request-parameters"></a>Anforderungsparameter
-| Name           | Typ      |Beschreibung|
+| Parameter           | Typ      |Beschreibung|
 |:---------------|:----------|:----------|
-| Address  | string| Bereichsadresse. Wenn Sie diese API abseits des `worksheets/{id or name}/tables/add`-Pfads aufrufen, müssen Sie das Präfix für den Blattnamen nicht in der Adresse angeben. Wenn Sie diese jedoch abseits des `workbook/tables/add`-Pfads aufrufen, müssen Sie den Blattnamen angeben, auf dem die Tabelle erstellt werden muss (Beispiel: `sheet1!A1:D4`)|
-| hasHeaders  | boolean|Boolescher Wert, der angibt, ob der Bereich Spaltenbeschriftungen hat. Wenn die Quelle keine Überschriften enthält (d. h. wenn diese Eigenschaft auf „false“ festgelegt ist), generiert Excel automatisch eine Überschriftenänderung der Daten nach einer Zeile.|
+| Adresse  | Zeichenfolge| Bereichsadresse. Wenn Sie diese API abseits des `worksheets/{id or name}/tables/add`-Pfads aufrufen, müssen Sie das Präfix für den Blattnamen nicht in der Adresse angeben. Wenn Sie diese jedoch abseits des `workbook/tables/add`-Pfads aufrufen, müssen Sie den Blattnamen angeben, auf dem die Tabelle erstellt werden muss (Beispiel: `sheet1!A1:D4`)|
+| hasHeaders  | boolesch|Boolescher Wert, der angibt, ob der Bereich Spaltenbeschriftungen hat. Wenn die Quelle keine Überschriften enthält (d. h. wenn diese Eigenschaft auf „false“ festgelegt ist), generiert Excel automatisch eine Überschriftenänderung der Daten nach einer Zeile.|
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und ein [WorkbookTable](../resources/table.md)-Objekt im Antworttext zurückgegeben.
+Wenn erfolgreich, gibt diese Methode einen Antwortcode `201 Created` und ein [WorkbookTable](../resources/table.md)-Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung

@@ -21,17 +21,16 @@ GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(include
 
 Der `<id | userPrincipalName>` für den Benutzer muss mit dem im Autorisierungstoken (zur Erstellung der Anforderung verwendet) codierten Benutzer übereinstimmen.
 
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Beschreibung|
-|:---------------|:----------|
-| Authorization  | Bearer {code}|
-
-## <a name="request-parameters"></a>Anforderungsparameter
-Stellen Sie in der URL der Anforderung die folgenden Abfrageparameter mit Werten bereit.
+## <a name="function-parameters"></a>Funktionsparameter
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|includePersonalNotebooks|Boolean|Schließen Sie Notizbücher ein, die dem Benutzer gehören. Wählen Sie `true`, um Notizbücher einzuschließen, die dem Benutzer gehören; wählen Sie andernfalls `false`. Wenn Sie den Parameter `includePersonalNotebooks` nicht einschließen, gibt Ihre Anforderung eine `400`-Fehlermeldung zurück.|
+|includePersonalNotebooks|boolesch|Schließen Sie Notizbücher ein, die dem Benutzer gehören. Wählen Sie `true`, um Notizbücher einzuschließen, die dem Benutzer gehören; wählen Sie andernfalls `false`. Wenn Sie den Parameter `includePersonalNotebooks` nicht einschließen, gibt Ihre Anforderung eine `400`-Fehlermeldung zurück.|
+
+## <a name="request-headers"></a>Anforderungsheader
+| Name       | Beschreibung|
+|:---------------|:----------|
+| Autorisierung  | Bearer {code}|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
