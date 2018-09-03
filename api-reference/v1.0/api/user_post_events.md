@@ -49,8 +49,8 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:-----------|:------|
-| Authorization  | Bearer {token}. Erforderlich.  |
-| Content-Type  | application/json. Erforderlich.   |
+| Autorisierung  | Bearer {token}. Erforderlich.  |
+| Inhaltstyp  | application/json. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [event](../resources/event.md)-Objekts an.
@@ -349,7 +349,6 @@ Content-length: 2985
       "uniqueId":"Fourth Coffee",
       "uniqueIdType":"private",
       "address":{
-        "type":"unknown",
         "street":"4567 Main St",
         "city":"Redmond",
         "state":"WA",
@@ -567,7 +566,7 @@ Content-type: application/json
 ```
 
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](../../../concepts/extensibility_overview.md)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](../../../concepts/extensibility_open_users.md)

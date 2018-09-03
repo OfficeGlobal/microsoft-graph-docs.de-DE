@@ -20,14 +20,14 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="parameters"></a>Parameter
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|count|Int32|Die Anzahl von Spalten, die in den Ergebnisbereich aufgenommen werden soll. Grundsätzlich verwenden Sie eine positive Zahl, um einen Bereich außerhalb des aktuellen Bereichs zu erstellen. Sie können auch eine negative Zahl verwenden, um einen Bereich innerhalb des aktuellen Bereichs zu erstellen. Der Standardwert ist 1.|
+|Anzahl|Int32|Optional. Die Anzahl von Spalten, die in den Ergebnisbereich aufgenommen werden soll. Grundsätzlich verwenden Sie eine positive Zahl, um einen Bereich außerhalb des aktuellen Bereichs zu erstellen. Sie können auch eine negative Zahl verwenden, um einen Bereich innerhalb des aktuellen Bereichs zu erstellen. Der Standardwert ist 1.|
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -38,12 +38,14 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das 
 Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "workbookrange_columnsbefore"
+  "isComposable": true,
+  "name": "workbookrange_columnsbefore",
+  "idempotent": true
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=2)
+POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=2)
 ```
 
 ##### <a name="response"></a>Antwort
@@ -51,7 +53,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
