@@ -22,7 +22,7 @@ GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 
 ```
 
-### <a name="query-parameters"></a>Abfrageparameter
+## <a name="query-parameters"></a>Abfrageparameter
 
 Beim Nachverfolgen von Änderungen in Ereignissen wird eine Runde von einem oder mehreren **delta**-Funktionsaufrufen ausgeführt. Wenn Sie Abfrageparameter (außer `$deltatoken` und `$skiptoken`) verwenden, müssen Sie sie in der ursprünglichen **delta**-Anforderung angeben. Microsoft Graph codiert automatisch alle angegebenen Parameter in den Tokenteil der in der Antwort enthaltenen `nextLink`- oder `deltaLink`-URL. Sie müssen alle gewünschten Abfrageparameter nur einmal im Vorfeld angeben. In nachfolgenden Anforderungen können Sie die `nextLink`- oder `deltaLink`-URL einfach aus der vorherigen Antwort kopieren und anwenden, da diese URL bereits die codierten gewünschten Parameter enthält.
 
@@ -31,8 +31,8 @@ Beim Nachverfolgen von Änderungen in Ereignissen wird eine Runde von einem oder
 |:---------------|:--------|:----------|
 |startDateTime|Zeichenfolge|Startdatum und -uhrzeit des Zeitraums, dargestellt im ISO 8601-Format. Beispielsweise „2015-11-08T19:00:00.0000000“.|
 |endDateTime|Zeichenfolge|Enddatum und -uhrzeit des Zeitraums, dargestellt im ISO 8601-Format. Z. B. „2015-11-08T20:00:00.0000000“.|
-| $deltatoken | string | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `deltaLink`-URL des vorhergehenden **delta**-Funktionsaufrufs für dieselbe Kalenderansicht zurückgegeben wird und den Abschluss dieser Runde der Änderungsnachverfolgung anzeigt. Speichern Sie die gesamte `deltaLink`-URL einschließlich dieses Tokens, und wenden Sie sie in der ersten Anforderung der nächsten Änderungsnachverfolgungsrunde für diese Kalenderansicht an.|
-| $skiptoken | string | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `nextLink`-URL des vorhergehenden **delta**-Funktionsaufrufs zurückgegeben wird und anzeigt, dass in derselben Kalenderansicht weitere Änderungen zum Nachverfolgen vorliegen. |
+| $deltatoken | Zeichenfolge | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `deltaLink`-URL des vorhergehenden **delta**-Funktionsaufrufs für dieselbe Kalenderansicht zurückgegeben wird und den Abschluss dieser Runde der Änderungsnachverfolgung anzeigt. Speichern Sie die gesamte `deltaLink`-URL einschließlich dieses Tokens, und wenden Sie sie in der ersten Anforderung der nächsten Änderungsnachverfolgungsrunde für diese Kalenderansicht an.|
+| $TokenÜberspringen | Zeichenfolge | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `nextLink`-URL des vorhergehenden **delta**-Funktionsaufrufs zurückgegeben wird und anzeigt, dass in derselben Kalenderansicht weitere Änderungen zum Nachverfolgen vorliegen. |
 
 Wenn Sie eine Delta-Abfrage für eine Kalenderansicht ausführen, gehen Sie davon aus, dass alle Eigenschaften abgerufen werden, die normalerweise von einer `GET /calendarview`-Anforderung abgerufen werden. `$select` wird in diesem Fall nicht unterstützt. 
 
@@ -41,9 +41,9 @@ Wenn Sie eine Delta-Abfrage für eine Kalenderansicht ausführen, gehen Sie davo
 | Name       | Typ | Beschreibung |
 |:---------------|:----------|:----------|
 | Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
-| Inhaltstyp  | string  | application/json. Erforderlich. |
-| Bevorzugt | string  | odata.maxpagesize={x}. Optional. |
-| Bevorzugt | string | {Time zone}. Optional. Falls kein Wert vorhanden, wird UTC angenommen.|
+| Inhaltstyp  | Zeichenfolge  | application/json. Erforderlich. |
+| Bevorzugt | Zeichenfolge  | odata.maxpagesize={x}. Optional. |
+| Bevorzugt | Zeichenfolge | {Time zone}. Optional. Falls kein Wert vorhanden, wird UTC angenommen.|
 
 ## <a name="response"></a>Antwort
 
