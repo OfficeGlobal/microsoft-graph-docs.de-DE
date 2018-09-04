@@ -17,21 +17,23 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
 
 ```
+
+## <a name="function-parameters"></a>Funktionsparameter
+
+| Parameter    | Typ   |Beschreibung|
+|:---------------|:--------|:----------|
+|Anzahl|Int32|Optional. Die Anzahl von Zeilen, die in den Ergebnisbereich aufgenommen werden soll. Grundsätzlich verwenden Sie eine positive Zahl, um einen Bereich außerhalb des aktuellen Bereichs zu erstellen. Sie können auch eine negative Zahl verwenden, um einen Bereich innerhalb des aktuellen Bereichs zu erstellen. Der Standardwert ist 1.|
+
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
 | Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
-## <a name="parameters"></a>Parameter
-
-| Parameter    | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|Anzahl|Int32|Optional. Die Anzahl der Zeilen, die im resultierenden Bereich aufgenommen werden sollen. Verwenden Sie im Allgemeinen eine positive Zahl, um einen Bereich außerhalb des aktuellen Bereichs zu erstellen. Sie können auch eine negative Zahl verwenden, um einen Bereich im aktuellen Bereich zu erstellen. Der Standardwert ist 1|
-
 ## <a name="request-body"></a>Anforderungstext
+Geben Sie für diese Methode keinen Anforderungstext an.
 
-### <a name="response"></a>Antwort
+## <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [workbookRange](../resources/range.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
@@ -70,7 +72,7 @@ Content-length: 157
 }
 ```
 
-Wenn ohne den optionalen `count` Parameter aufgerufen, gibt diese Funktion nur eine Zeile oberhalb des Bereichs zurück.
+Ohne den optionalen `count` Parameter aufgerufen, gibt diese Funktion nur eine Zeile oberhalb des Bereichs zurück.
 
 ##### <a name="request"></a>Anforderung
 <!--{

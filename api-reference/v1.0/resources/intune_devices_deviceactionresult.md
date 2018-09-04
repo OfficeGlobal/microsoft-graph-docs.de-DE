@@ -7,7 +7,7 @@ Ergebnis von Gerätevorgang
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |actionName|Zeichenfolge|Name der Aktion|
-|actionState|Zeichenfolge|Status der Aktion; mögliche Werte sind: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune_devices_actionstate.md)|Status der Aktion. Mögliche Werte: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Zeitpunkt der Einleitung der Aktion|
 |lastUpdatedDateTime|DateTimeOffset|Zeitpunkt der letzten Aktualisierung des Aktionszustands|
 
@@ -15,12 +15,10 @@ Ergebnis von Gerätevorgang
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceActionResult"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceActionResult",

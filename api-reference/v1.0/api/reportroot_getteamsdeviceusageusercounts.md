@@ -20,19 +20,19 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 GET /reports/getTeamsDeviceUsageUserCounts(period='{period_value}')
 ```
 
-## <a name="request-parameters"></a>Anforderungsparameter
+## <a name="function-parameters"></a>Funktionsparameter
 
 Geben Sie in der Anforderungs-URL den folgenden Parameter mit einem gültigen Wert an.
 
 | Parameter | Typ   | Beschreibung                              |
 | :-------- | :----- | :--------------------------------------- |
-| Zeitraum    | Zeichenfolge | Gibt die Zeitspanne an, für die der Bericht aggregiert wird. Die unterstützten Werte für {period_value} sind: D7, D30, D90 und D180. Diese Werte folgen dem Format D*n*, wobei *n* die Anzahl der Tage angibt, für die der Bericht aggregiert wird. Erforderlich.  |
+| Zeitraum    | Zeichenfolge | Gibt die Zeitspanne an, für die der Bericht aggregiert wird. Die unterstützten Werte für {period_value} sind: D7, D30, D90 und D180. Diese Werte folgen dem Format D*n*, wobei *n* die Anzahl der Tage angibt, für die der Bericht aggregiert wird. Erforderlich. |
 
 ## <a name="request-headers"></a>Anforderungsheader
 
 | Name          | Beschreibung               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Erforderlich. |
+| Autorisierung | Bearer {token}. Erforderlich. |
 
 ## <a name="response"></a>Antwort
 
@@ -71,7 +71,11 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsDeviceUsageUserCounts(perio
 
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -81,11 +85,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 Führen Sie die Umleitung 302 aus, und die heruntergeladene CSV-Datei besitzt das folgende Format.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

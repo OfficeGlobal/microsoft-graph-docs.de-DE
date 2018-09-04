@@ -7,14 +7,14 @@ Stellt ein Zellensymbol dar.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Symbol abrufen](../api/icon_get.md) | [Icon](icon.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des icon-Objekts.|
-|[Update](../api/icon_update.md) | [Icon](icon.md)    |Dient zum Aktualisieren des icon-Objekts. |
+|[Symbol abrufen](../api/icon_get.md) | [Symbol](icon.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des Symbol-Objekts.|
+|[Aktualisieren](../api/icon_update.md) | [Symbol](icon.md)  |Dient zum Aktualisieren des Symbol-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Index|int|Stellt den Index des Symbols im angegebenen Satz dar.|
-|set|string|Stellt den Satz dar, zu dem das Symbol gehört. Mögliche Werte: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
+|Gruppe|Zeichenfolge|Repräsentiert die Gruppe, zu der das Symbol gehört. Mögliche Werte: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -29,7 +29,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.icon"
+  "@odata.type": "microsoft.graph.workbookIcon"
 }-->
 
 ```json
