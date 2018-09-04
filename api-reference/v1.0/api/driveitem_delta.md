@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Synchronisieren der Inhalte eines Laufwerks
-ms.openlocfilehash: f87bfcd686ab98297c8b33aefc55705162438a35
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
+ms.openlocfilehash: 64ca2eb0593c7eb6da518dadf3722b65c8472966
+ms.sourcegitcommit: 7d7c4476483b95e960d944053974794a4073a4c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23265015"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "23798187"
 ---
 # <a name="track-changes-for-a-drive"></a>Laufwerksänderungen nachverfolgen
 
@@ -44,15 +44,15 @@ GET /sites/{siteId}/drive/root/delta
 GET /users/{userId}/drive/root/delta
 ```
 
-## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-
-|||UNTRANSLATED_CONTENT_START|||This method supports the `$select`, `$expand`, and `$top` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.|||UNTRANSLATED_CONTENT_END|||
-
-## <a name="parameters"></a>Parameter
+## <a name="function-parameters"></a>Funktionsparameter
 
 | Name   | Wert  | Beschreibung                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
 | Token  | Zeichenfolge | Optional. Wenn nicht angegeben, zählt es den aktuellen Zustand der Hierarchie. Wenn `latest`, gibt es eine leere Antwort mit dem neuesten Delta-Token zurück. Wenn ein früherer Delta-Token existiert, gibt es den neuen Status seit diesem Token zurück.
+
+## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
+
+Diese Methode unterstützt die [OData-Abfrageparameter](../../../concepts/query_parameters.md) von  `$select`, `$expand` und `$top` zur Anpassung der Antwort.
 
 ## <a name="response"></a>Antwort
 

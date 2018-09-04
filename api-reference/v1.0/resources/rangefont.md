@@ -7,18 +7,18 @@ Dieses Objekt stellt die Zeichenformatierung (Schriftart, Schriftgrad, Farbe usw
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[RangeFont abrufen](../api/rangefont_get.md) | [RangeFont](rangefont.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des rangeFont-Objekts.|
-|[Update](../api/rangefont_update.md) | [RangeFont](rangefont.md)    |Dient zum Aktualisieren des RangeFont-Objekts. |
+|[RangeFont abrufen](../api/rangefont_get.md) | [WorkbookRangeFont](rangefont.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des rangeFont-Objekts.|
+|[Aktualisieren](../api/rangefont_update.md) | [WorkbookRangeFont](rangefont.md)   |Dient zum Aktualisieren des RangeFont-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|bold|boolean|Stellt den Fett-Status der Schriftart dar.|
-|color|string|HTML-Farbcodedarstellung der Textfarbe. #ff0000 stellt beispielsweise Rot dar.|
-|italic|boolean|Stellt den Kursiv-Status der Schriftart dar.|
-|name|string|Schriftartname (z. B. "Calibri")|
-|size|double|Schriftgrad|
-|underline|string|Art der auf die Schriftart angewendete Unterstreichung. Die folgenden Werte sind möglich: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
+|fett|boolesch|Stellt den Fett-Status der Schriftart dar.|
+|Farbe|Zeichenfolge|HTML-Farbcodedarstellung der Textfarbe. #ff0000 stellt beispielsweise Rot dar.|
+|kursiv|boolesch|Stellt den Kursiv-Status der Schriftart dar.|
+|Name|Zeichenfolge|Schriftartname (z. B. "Calibri")|
+|Größe|doppelt|Schriftgrad|
+|unterstrichen|Zeichenfolge|Art der Unterstreichung für die Schriftart. Mögliche Werte sind: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -28,12 +28,11 @@ Keine
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.rangeFont"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 }-->
 
 ```json

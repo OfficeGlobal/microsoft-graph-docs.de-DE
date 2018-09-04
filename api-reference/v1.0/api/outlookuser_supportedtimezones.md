@@ -25,16 +25,16 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones
 GET /me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'{timezone_format}')
 GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'{timezone_format}')
 ```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:---------------|:--------|:----------|
-| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
-
 
 ## <a name="function-parameters"></a>Funktionsparameter
 | Parameter       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
 | TimeZoneStandard  | timeZoneStandard  | Ein Zeitzonenformat. Unterstützte Werte sind: `Windows` und `Iana`. Optional. |
+
+## <a name="request-headers"></a>Anforderungsheader
+| Name       | Typ | Beschreibung|
+|:---------------|:--------|:----------|
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

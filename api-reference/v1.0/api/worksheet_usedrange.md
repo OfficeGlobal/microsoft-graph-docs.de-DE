@@ -17,7 +17,7 @@ GET /workbook/worksheets/{id|name}/usedRange
 
 ```
 
-## <a name="parameters"></a>Parameter
+## <a name="function-parameters"></a>Funktionsparameter
 In der Anforderungs-URL können Sie optionale Parameter angeben.
 
 | Parameter    | Typ   |Beschreibung|
@@ -29,6 +29,9 @@ In der Anforderungs-URL können Sie optionale Parameter angeben.
 |:---------------|:----------|
 | Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
+
+## <a name="request-body"></a>Anforderungstext
+Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 

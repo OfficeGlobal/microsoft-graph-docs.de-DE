@@ -7,14 +7,14 @@ Kapselt die Formatierungsoptionen für Linienelemente.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[ChartLineFormat abrufen](../api/chartlineformat_get.md) | [ChartLineFormat](chartlineformat.md) |Dient zum Lesen der Eigenschaften und Beziehungen eines chartLineFormat-Objekts.|
-|[Update](../api/chartlineformat_update.md) | [ChartLineFormat](chartlineformat.md)    |Dient zum Aktualisieren des ChartLineFormat-Objekts. |
-|[Clear](../api/chartlineformat_clear.md)|Keine|Löschen der Linienformatierung eines Diagrammelements.|
+|[ChartLineFormat abrufen](../api/chartlineformat_get.md) | [WorkbookChartLineFormat](chartlineformat.md) |Dient zum Lesen der Eigenschaften und Beziehungen eines chartLineFormat-Objekts.|
+|[Aktualisieren](../api/chartlineformat_update.md) | [WorkbookChartLineFormat](chartlineformat.md) |Dient zum Aktualisieren des ChartLineFormat-Objekts. |
+|[Löschen](../api/chartlineformat_clear.md)|Keine|Löschen der Linienformatierung eines Diagrammelements.|
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|color|string|HTML-Farbcode, der die Farbe der Linien im Diagramm darstellt.|
+|Farbe|Zeichenfolge|HTML-Farbcode, der die Farbe der Linien im Diagramm darstellt.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -24,12 +24,11 @@ Keine
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartLineFormat"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartLineFormat"
 }-->
 
 ```json

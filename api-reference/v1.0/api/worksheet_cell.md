@@ -13,22 +13,26 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/cell(row=<row>,column=<column>)
+GET /workbook/worksheets/{id|name}/cell(row={row},column={column})
 
 ```
-## <a name="request-headers"></a>Anforderungsheader
-| Name       | Beschreibung|
-|:---------------|:----------|
-| Autorisierung  | Bearer {token}. Erforderlich. |
-| Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
-## <a name="parameters"></a>Parameter
+## <a name="function-parameters"></a>Funktionsparameter
 Geben Sie im Anforderungspfad die folgenden Parameter an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Zeile|Int32|Zeilenanzahl der abzurufenden Zelle. Nullindiziert.|
 |Spalte|Int32|Spaltenanzahl der abzurufenden Zelle. Nullindiziert.|
+
+## <a name="request-headers"></a>Anforderungsheader
+| Name       | Beschreibung|
+|:---------------|:----------|
+| Autorisierung  | Bearer {token}. Erforderlich. |
+| Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
+
+## <a name="request-body"></a>Anforderungstext
+Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 

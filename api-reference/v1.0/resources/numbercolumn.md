@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: NumberColumn
-ms.openlocfilehash: 8aa366e3c4f59fc5d22f945c863bab4f91373b67
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 4aaff6539fc9c7ce77029463562c0f8fca57cac6
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266506"
 ---
 # <a name="numbercolumn-resource-type"></a>NumberColumn-Ressourcentyp
 
@@ -31,22 +32,22 @@ Es folgt eine JSON-Darstellung einer **numberColumn**-Ressource.
 
 | Eigenschaftenname      | Typ   | Beschreibung
 |:-------------------|:-------|:-----------------------------------------------
-| **decimalPlaces**  | string | Wie viele Dezimalstellen angezeigt werden sollen. Informationen zu den möglichen Werten finden Sie weiter unten.
-| **displayAs**      | string | Wie sollte der Wert in der UX dargestellt werden? Müssen `number` oder `percentage` sein. Wenn nicht angegeben, werden sie als `number` behandelt.
-| **maximum**        | double | Der maximal zulässige Wert.
-| **minimum**        | double | Der minimal zulässige Wert.
+| **decimalPlaces**  | Zeichenfolge | Wie viele Dezimalstellen angezeigt werden sollen. Informationen zu den möglichen Werten finden Sie weiter unten.
+| **displayAs**      | Zeichenfolge | Wie sollte der Wert in der UX dargestellt werden. Müssen `number` oder `percentage` sein. Wenn nicht angegeben, werden sie als `number` behandelt.
+| **maximum**        | doppelt | Der maximal zulässige Wert.
+| **minimum**        | doppelt | Der minimal zulässige Wert.
 
-## <a name="decimalplaces-values"></a>DecimalPlaces-Werte
+## <a name="decimalplaces"></a>DecimalPlaces
 
 | Wert          | Beschreibung
 |:---------------|:--------------------------------------------------------------
-| **automatic**  | Standard. Dezimalstellen werden je nach Bedarf automatisch angezeigt.
-| **none**       | Keine Dezimalstellen anzuzeigen.
-| **one**        | Immer eine Dezimalstelle anzeigen.
-| **two**        | Immer zwei Dezimalstellen anzeigen.
-| **three**      | Immer drei Dezimalstellen anzeigen.
-| **four**       | Immer vier Dezimalstellen anzeigen.
-| **five**       | Immer fünf Dezimalstellen anzeigen.
+| **Automatisch**  | Standard. Dezimalstellen werden je nach Bedarf automatisch angezeigt.
+| **keine**       | Keine Dezimalstellen anzuzeigen.
+| **eine**        | Immer eine Dezimalstelle anzeigen.
+| **zwei**        | Immer zwei Dezimalstellen anzeigen.
+| **drei**      | Immer drei Dezimalstellen anzeigen.
+| **vier**       | Immer vier Dezimalstellen anzeigen.
+| **fünf**       | Immer füng Dezimalstellen anzeigen.
 
 Hinweis: **decimalPlaces** und **displayAs** trifft darauf zu, wie Zahlen gerendert, nicht gespeichert werden.
 Diese Eigenschaften können aktualisiert werden.
@@ -56,5 +57,11 @@ Diese Eigenschaften können aktualisiert werden.
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/numbercolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(automatic,none,one,two,three,four,five) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/numbercolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(number,percentage) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/NumberColumn"
 } -->
