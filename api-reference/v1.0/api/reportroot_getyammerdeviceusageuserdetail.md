@@ -23,13 +23,13 @@ GET /reports/getYammerDeviceUsageUserDetail(period='{period_value}')
 GET /reports/getYammerDeviceUsageUserDetail(date={date_value})
 ```
 
-## <a name="request-parameters"></a>Anforderungsparameter
+## <a name="function-parameters"></a>Funktionsparameter
 
 Stellen Sie in der URL der Anforderung den Parameter mit einem gültigen Wert bereit.
 
 | Parameter | Typ   | Beschreibung                              |
 | :-------- | :----- | :--------------------------------------- |
-| Zeitraum    | string | Gibt die Zeitspanne an, für die der Bericht aggregiert wird. Die unterstützten Werte für {period_value} sind: D7, D30, D90 und D180. Diese Werte folgen dem Format D*n*, wobei *n* die Anzahl der Tage angibt, für die der Bericht aggregiert wird. |
+| Zeitraum    | Zeichenfolge | Gibt die Zeitspanne an, für die der Bericht aggregiert wird. Die unterstützten Werte für {period_value} sind: D7, D30, D90 und D180. Diese Werte folgen dem Format D*n*, wobei *n* die Anzahl der Tage angibt, für die der Bericht aggregiert wird. |
 | date      | Datum   | Gibt das Datum an, für das die Benutzer angezeigt werden sollen, die Aktivitäten durchgeführt haben. {date_value} muss im Format JJJJ-MM-TT vorliegen. Da dieser Bericht nur für die letzten 30 Tage verfügbar ist, sollte {date_value} ein Datum aus diesem Zeitraum sein. |
 
 > **Hinweis:** Sie müssen in der URL entweder einen Zeitraum oder ein Datum festlegen.

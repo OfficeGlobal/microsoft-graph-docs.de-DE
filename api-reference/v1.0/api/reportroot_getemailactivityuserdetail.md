@@ -16,14 +16,14 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "samples" } --> 
 
 ```http
 GET /reports/getEmailActivityUserDetail(period='{period_value}')
 GET /reports/getEmailActivityUserDetail(date={date_value})
 ```
 
-## <a name="request-parameters"></a>Anforderungsparameter
+## <a name="function-parameters"></a>Funktionsparameter
 
 Geben Sie in der Anforderungs-URL einen der folgenden Parameter mit einem gültigen Wert an.
 
@@ -38,7 +38,7 @@ Geben Sie in der Anforderungs-URL einen der folgenden Parameter mit einem gülti
 
 | Name          | Beschreibung                              |
 | :------------ | :--------------------------------------- |
-| Authorization | Bearer {token}. Erforderlich.                |
+| Autorisierung | Bearer {token}. Erforderlich.                |
 | If-None-Match | Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag mit dem aktuellen Tag in der Datei übereinstimmt, wird ein `304 Not Modified`-Antwortcode zurückgegeben. Optional. |
 
 ## <a name="response"></a>Antwort
@@ -67,8 +67,9 @@ Die CSV-Datei verfügt über die folgenden Kopfzeilen für Spalten.
 
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getemailactivityuserdetail"
 }-->
 
@@ -80,7 +81,11 @@ GET https://graph.microsoft.com/v1.0/reports/getEmailActivityUserDetail(period='
 
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -90,11 +95,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 Führen Sie die Umleitung 302 aus, und die heruntergeladene CSV-Datei besitzt das folgende Format.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

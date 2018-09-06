@@ -22,7 +22,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 GET /reports/getOneDriveActivityUserCounts(period='{period_value}')
 ```
 
-## <a name="request-parameters"></a>Anforderungsparameter
+## <a name="function-parameters"></a>Funktionsparameter
 
 Geben Sie in der Anforderungs-URL den folgenden Parameter mit einem gültigen Wert an.
 

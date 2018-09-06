@@ -18,27 +18,26 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/mailFolders/inbox/messagerules
-POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
+POST /me/mailFolders/inbox/messageRules
+POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Parameter an, die auf die Regel angewendet werden können. Nachfolgend finden Sie die Textparameter, die in der Regel beim Erstellen von Regeln verwendet werden. Sie können bei Bedarf im Anforderungstext beliebige andere schreibbare **messageRule**-Eigenschaften angeben.
 
-### <a name="request-parameters"></a>Anforderungsparameter
 | Name       | Typ|Beschreibung|
 |:--------|:-------|:----------|
-|Aktionen|[messageRuleActions](../resources/messageruleactions.md)|Aktionen, die auf eine Nachricht angewendet werden, wenn die entsprechenden Bedingungen (falls vorhanden) erfüllt sind. Erforderlich. |
+|Aktionen|[messageRuleActions](../resources/messageruleactions.md)|Aktionen, die auf eine Nachricht angewendet werden, wenn die entsprechenden Bedingungen (falls vorhanden) erfüllt sind. Erforderlich.|
 |Bedingungen|[messageRulePredicates](../resources/messagerulepredicates.md)|Bedingungen, die bei Erfüllung die entsprechenden Aktionen für diese Regel auslösen. Optional.|
-|displayName| Zeichenfolge  | Der Anzeigename der Regel. Erforderlich. |
+|displayName| Zeichenfolge  | Der Anzeigename der Regel. Erforderlich.|
 |Ausnahmen| [messageRulePredicates](../resources/messagerulepredicates.md)| Ausnahmebedingungen für die Regel. Optional. |
 |isEnabled | Boolescher Wert | Gibt an, ob die Regel auf Nachrichten angewendet werden kann. Optional. |
-|sequence| Int32 | Gibt die Reihenfolge an, in der die Regel zusammen mit anderen Regeln ausgeführt wird. Erforderlich. |
+|sequence| Int32 | Gibt die Reihenfolge an, in der die Regel zusammen mit anderen Regeln ausgeführt wird. Erforderlich.|
 
 ## <a name="response"></a>Antwort
 Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `201 Created` und ein Objekt des Typs **messageRule** im Antworttext zurück.
@@ -48,10 +47,11 @@ Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `201 Created` und
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["inbox"],
   "name": "create_messagerule_from_mailfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messagerules
+POST https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
 Content-type: application/json
 
 {      

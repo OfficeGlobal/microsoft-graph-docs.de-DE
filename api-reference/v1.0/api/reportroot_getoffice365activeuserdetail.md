@@ -23,7 +23,7 @@ GET /reports/getOffice365ActiveUserDetail(period='{period_value}')
 GET /reports/getOffice365ActiveUserDetail(date={date_value})
 ```
 
-## <a name="request-parameters"></a>Anforderungsparameter
+## <a name="function-parameters"></a>Funktionsparameter
 
 Geben Sie in der Anforderungs-URL einen der folgenden Parameter mit einem gültigen Wert an.
 

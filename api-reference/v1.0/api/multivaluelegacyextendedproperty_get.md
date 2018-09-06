@@ -6,11 +6,11 @@ Mit dem Abfrageparameter `$expand` können Sie die angegebene Instanz abrufen, e
 
 Die folgenden Benutzerressourcen werden unterstützt:
 
-- [Nachricht](../resources/message.md)
+- [message](../resources/message.md)
 - [mailFolder](../resources/mailfolder.md)
-- [Ereignis](../resources/event.md)
-- [Kalender](../resources/calendar.md)
-- [Kontakt](../resources/contact.md)
+- [event](../resources/event.md)
+- [calendar](../resources/calendar.md)
+- [contakt](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
 
 Darüber hinaus werden die folgenden Gruppenressourcen unterstützt:
@@ -31,9 +31,9 @@ Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich (je n
  
 ## <a name="http-request"></a>HTTP-Anforderung
 
-Rufen Sie eine erweiterte Ressourceninstanz mit erweiterter Eigenschaft ab, die einem Filter für die **id**-Eigenschaft entspricht. Stellen Sie sicher, dass Sie die [URL-Codierung](http://www.w3schools.com/tags/ref_urlencode.asp) auf die Leerzeichen in der Filterzeichenfolge anwenden.
+Hier sehen Sie, wie Sie eine Ressourceninstanz abrufen können, erweitert um die erweiterte Eigenschaft, deren **id**-Eigenschaft dem definierten Filter entspricht. Stellen Sie sicher, dass Sie für die Leerzeichen in der Filterzeichenfolge die [URL-Codierung](http://www.w3schools.com/tags/ref_urlencode.asp) verwenden.
 
-Abrufen einer **Nachricht**-Instanz: <!-- { "blockType": "ignored" } -->
+Abrufen einer **message**-Instanz: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -45,17 +45,17 @@ GET /me/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Abrufen einer **Ereignis**-Instanz <!-- { "blockType": "ignored" } -->
+Abrufen einer **event**-Instanz <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Abrufen einer **Kalender**-Instanz: <!-- { "blockType": "ignored" } -->
+Abrufen einer **calendar**-Instanz: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Abrufen einer **Kontakt**-Instanz: <!-- { "blockType": "ignored" } -->
+Abrufen einer **contakt**-Instanz: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -67,21 +67,21 @@ Abrufen einer **contactFolder**-Instanz: <!-- { "blockType": "ignored" } -->
 GET /me/contactfolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Abrufen einer **Ereignis**-Instanz für eine Gruppe: <!-- { "blockType": "ignored" } -->
+Abrufen einer **event**-Instanz für eine Gruppe: <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Abrufen einer **Beitrag**-Instanz für eine Gruppe: <!-- { "blockType": "ignored" } -->
+Abrufen einer **post**-Instanz für eine Gruppe: <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-## <a name="parameters"></a>Parameter
+## <a name="path-parameters"></a>Pfadparameter
 |Parameter|Typ|Beschreibung|
 |:-----|:-----|:-----|
-|id_value|Zeichenfolge|Die ID der erweiterten übereinstimmenden Eigenschaft. Sie muss eins der unterstützten Formate aufweisen. Weitere Informationen finden Sie unter [Überblick über erweiterte Eigenschaften in Outlook](../resources/extended-properties-overview.md). Erforderlich.|
+|id_value|Zeichenfolge|Die ID der erweiterten Eigenschaft, nach der gefiltert wird. Sie muss eins der unterstützten Formate aufweisen. Weitere Informationen finden Sie unter [Überblick über erweiterte Eigenschaften in Outlook](../resources/extended-properties-overview.md). Erforderlich.|
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
