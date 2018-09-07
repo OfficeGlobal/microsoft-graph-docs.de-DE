@@ -27,7 +27,7 @@ GET /reports/getOffice365ActivationsUserCounts
 | Name          | Beschreibung                              |
 | :------------ | :--------------------------------------- |
 | Autorisierung | Bearer {token}. Erforderlich.                |
-| If-None-Match | Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag mit dem aktuellen Tag in der Datei übereinstimmt, wird ein `304 Not Modified`-Antwortcode zurückgegeben. Optional. |
+| Bei Nichtübereinstimmung | Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag mit dem aktuellen Tag in der Datei übereinstimmt, wird ein `304 Not Modified`-Antwortcode zurückgegeben. Optional. |
 
 ## <a name="response"></a>Antwort
 
@@ -41,6 +41,7 @@ Die CSV-Datei verfügt über die folgenden Kopfzeilen für Spalten.
 - Produkttyp
 - Zugewiesen
 - Aktiviert
+- Aktivierung gemeinsam genutzter Computer
 
 ## <a name="example"></a>Beispiel
 
@@ -82,5 +83,5 @@ Führen Sie die Umleitung 302 aus, und die heruntergeladene CSV-Datei besitzt da
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Product Type,Assigned,Activated
+Report Refresh Date,Product Type,Assigned,Activated,Shared Computer Activation
 ```

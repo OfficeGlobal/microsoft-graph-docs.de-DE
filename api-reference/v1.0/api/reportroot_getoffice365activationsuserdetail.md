@@ -44,9 +44,10 @@ Die CSV-Datei verfügt über die folgenden Kopfzeilen für Spalten.
 - Datum der letzten Aktivierung
 - Windows
 - Mac
-- Windows 10 Mobile
+- Windows 10 Mobile
 - iOS
 - Android
+- Gemeinsam genutzter Computer aktiviert
 
 ## <a name="example"></a>Beispiel
 
@@ -88,5 +89,5 @@ Führen Sie die Umleitung 302 aus, und die heruntergeladene CSV-Datei besitzt da
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated Date,Windows,Mac,Windows 10 Mobile,iOS,Android
+Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated Date,Windows,Mac,Windows 10 Mobile,iOS,Android,Activated On Shared Computer
 ```
