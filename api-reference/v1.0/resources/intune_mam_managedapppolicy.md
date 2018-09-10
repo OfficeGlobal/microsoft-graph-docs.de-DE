@@ -13,12 +13,12 @@ Die ManagedAppPolicy-Ressource stellt einen Basistyp für plattformspezifische R
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|String|Anzeigename der Richtlinie|
-|description|String|Beschreibung der Richtlinie|
+|displayName|Zeichenfolge|Anzeigename der Richtlinie|
+|description|Zeichenfolge|Beschreibung der Richtlinie|
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit der Erstellung der Richtlinie.|
 |lastModifiedDateTime|DateTimeOffset|Das Datum und die Uhrzeit der letzten Änderung der Richtlinie.|
 |id|Zeichenfolge|Schlüssel der Entität|
-|Version|String|Version der Entität|
+|Version|Zeichenfolge|Version der Entität|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -26,9 +26,8 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppPolicy"
 }-->
 ``` json
@@ -42,6 +41,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 

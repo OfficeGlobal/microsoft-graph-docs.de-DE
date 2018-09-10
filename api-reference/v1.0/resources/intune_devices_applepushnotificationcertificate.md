@@ -13,7 +13,7 @@ Apple Push Notification-Zertifikat.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für das Zertifikat|
+|ID|String|Eindeutiger Bezeichner für das Zertifikat|
 |appleIdentifier|String|Apple-ID des Kontos, mit dem das MDM-Push-Zertifikat erstellt wurde|
 |topicIdentifier|String|Thema-ID|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Apple Push Notification-Zertifikats|
@@ -26,8 +26,8 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.applePushNotificationCertificate"
 }-->
 ``` json
@@ -41,6 +41,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "certificate": "String"
 }
 ```
+
+
+
+
+
 
 
 

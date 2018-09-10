@@ -15,7 +15,7 @@ Enthält Eigenschaften für die Zusammenfassung des Installationsstatus für ein
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
+|ID|Zeichenfolge|Schlüssel der Entität|
 |userName|String|Name des Benutzers|
 |installedDeviceCount|Int32|Anzahl der installierten Geräte|
 |failedDeviceCount|Int32|Anzahl der fehlgeschlagenen Geräte|
@@ -30,8 +30,8 @@ Enthält Eigenschaften für die Zusammenfassung des Installationsstatus für ein
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.userInstallStateSummary"
 }-->
 ``` json
@@ -44,6 +44,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "notInstalledDeviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

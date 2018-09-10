@@ -15,7 +15,7 @@ Enthält Eigenschaften für eine einzelne Intune-App-Kategorie.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|ID|String|Schlüssel der Entität|
 |displayName|String|Name der App-Kategorie|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der mobileAppCategory.|
 
@@ -25,8 +25,8 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppCategory"
 }-->
 ``` json
@@ -37,6 +37,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

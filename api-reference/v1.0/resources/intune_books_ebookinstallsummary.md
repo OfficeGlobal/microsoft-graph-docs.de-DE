@@ -12,7 +12,7 @@ Enthält Eigenschaften für die Installationszusammenfassung eines Buchs für ei
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
+|ID|Zeichenfolge|Schlüssel der Entität|
 |installedDeviceCount|Int32|Die Anzahl der Geräte, auf denen das Buch erfolgreich installiert wurde.|
 |failedDeviceCount|Int32|Die Anzahl der Geräte, auf denen die Installation des Buchs fehlgeschlagen ist.|
 |notInstalledDeviceCount|Int32|Die Anzahl von Geräten, auf denen das Buch nicht installiert ist.|
@@ -26,8 +26,8 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.eBookInstallSummary"
 }-->
 ``` json
@@ -42,6 +42,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "notInstalledUserCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

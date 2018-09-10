@@ -13,7 +13,6 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "abstract": true,
   "@odata.type": "microsoft.graph.windowsUpdateInstallScheduleType"
 }-->
 ``` json
@@ -21,6 +20,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "@odata.type": "#microsoft.graph.windowsUpdateInstallScheduleType"
 }
 ```
+
+
+
+
+
 
 
 

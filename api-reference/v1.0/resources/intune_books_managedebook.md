@@ -13,16 +13,16 @@ Eine abstrakte Klasse, die die grundlegenden Eigenschaften des verwalteten eBook
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
-|displayName|String|Name des E-Books|
-|description|String|Beschreibung|
-|publisher|String|Herausgeber|
+|ID|Zeichenfolge|Schlüssel der Entität|
+|displayName|Zeichenfolge|Name des E-Books|
+|description|Zeichenfolge|Beschreibung|
+|publisher|Zeichenfolge|Herausgeber|
 |publishedDateTime|DateTimeOffset|Datum und Uhrzeit der Veröffentlichung des E-Books.|
 |largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Umschlagbild des Buchs|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der E-Book-Datei.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des E-Books.|
-|informationUrl|String|URL zur Seite mit weiteren Informationen.|
-|privacyInformationUrl|String|URL zur Datenschutzerklärung|
+|informationUrl|Zeichenfolge|URL zur Seite mit weiteren Informationen.|
+|privacyInformationUrl|Zeichenfolge|URL zur Datenschutzerklärung|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
@@ -36,9 +36,8 @@ Eine abstrakte Klasse, die die grundlegenden Eigenschaften des verwalteten eBook
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedEBook"
 }-->
 ``` json
@@ -60,6 +59,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "privacyInformationUrl": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -12,11 +12,11 @@ Einzelne Entität, die die Exchange-Einstellungen für lokalen bedingten Zugriff
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Noch nicht dokumentiert|
-|enabled|Boolean|Gibt an, ob lokaler bedingter Zugriff für diese Organisation aktiviert ist.|
+|ID|Zeichenfolge|Noch nicht dokumentiert|
+|aktiviert|Boolesch|Gibt an, ob lokaler bedingter Zugriff für diese Organisation aktiviert ist.|
 |includedGroups|GUID-Sammlung|Benutzergruppen, für die der lokale bedingte Zugriff gilt. Alle Benutzer in diesen Gruppen müssen verwaltete und für den E-Mail-Zugriff kompatible Mobilgeräte verwenden.|
 |excludedGroups|GUID-Sammlung|Benutzergruppen, die vom lokalen bedingten Zugriff ausgenommen werden. Alle Benutzer in diesen Gruppen werden von der Richtlinie zu bedingtem Zugriff ausgenommen.|
-|overrideDefaultRule|Boolean|Überschreibt die Standardzugriffsregel, wenn zugelassen wird, dass einem Gerät Zugriff gewährt wird.|
+|overrideDefaultRule|Boolesch|Überschreibt die Standardzugriffsregel, wenn zugelassen wird, dass einem Gerät Zugriff gewährt wird.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -24,8 +24,8 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.onPremisesConditionalAccessSettings"
 }-->
 ``` json
@@ -34,14 +34,19 @@ Es folgt eine JSON-Darstellung der Ressource.
   "id": "String (identifier)",
   "enabled": true,
   "includedGroups": [
-    "fe4d7f2b-e7b8-4276-9976-7a3fc83edbbc"
+    "Guid"
   ],
   "excludedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "Guid"
   ],
   "overrideDefaultRule": true
 }
 ```
+
+
+
+
+
 
 
 

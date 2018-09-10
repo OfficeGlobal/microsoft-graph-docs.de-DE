@@ -15,18 +15,21 @@ Erbt von [mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.mobileAppIdentifier",
   "@odata.type": "microsoft.graph.androidMobileAppIdentifier"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidMobileAppIdentifier",
   "packageId": "String"
 }
 ```
+
+
+
+
+
 
 
 

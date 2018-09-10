@@ -15,7 +15,7 @@ Windows Information Protection – Netzwerk-Schulungszusammenfassungsentität
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für die WindowsInformationProtectionNetworkLearningSummary.|
+|ID|String|Eindeutiger Bezeichner für die WindowsInformationProtectionNetworkLearningSummary.|
 |url|String|Website-URL|
 |deviceCount|Int32|Geräteanzahl|
 
@@ -25,8 +25,8 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionNetworkLearningSummary"
 }-->
 ``` json
@@ -37,6 +37,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "deviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

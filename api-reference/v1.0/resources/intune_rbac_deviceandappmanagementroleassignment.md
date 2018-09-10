@@ -18,7 +18,7 @@ Erbt von [roleAssignment](../resources/intune_rbac_roleassignment.md)
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität Dies ist schreibgeschützt und wird automatisch generiert. Geerbt von [RoleAssignment](../resources/intune_rbac_roleassignment.md)|
+|ID|Zeichenfolge|Schlüssel der Entität Dies ist schreibgeschützt und wird automatisch generiert. Geerbt von [RoleAssignment](../resources/intune_rbac_roleassignment.md)|
 |displayName|String|Der Anzeigename der Rollenzuweisung. Geerbt von [RoleAssignment](../resources/intune_rbac_roleassignment.md)|
 |description|String|Beschreibung der Rollenzuweisung. Geerbt von [RoleAssignment](../resources/intune_rbac_roleassignment.md)|
 |resourceScopes|String collection|Liste der IDs der Rollenbereichsmitglieder-Sicherheitsgruppen.  Dies sind IDs aus Azure Active Directory. Geerbt von [RoleAssignment](../resources/intune_rbac_roleassignment.md)|
@@ -33,8 +33,8 @@ Erbt von [roleAssignment](../resources/intune_rbac_roleassignment.md)
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.roleAssignment",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceAndAppManagementRoleAssignment"
 }-->
 ``` json
@@ -51,6 +51,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   ]
 }
 ```
+
+
+
+
+
 
 
 

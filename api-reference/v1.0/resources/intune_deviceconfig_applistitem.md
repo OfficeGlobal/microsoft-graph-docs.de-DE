@@ -6,7 +6,7 @@ Stellt eine App in der Liste der verwalteten Anwendungen dar.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|name|Zeichenfolge|Anwendungsname|
+|Name|Zeichenfolge|Anwendungsname|
 |publisher|Zeichenfolge|Herausgeber der App|
 |appStoreUrl|Zeichenfolge|Store-URL der Anwendung|
 |appId|Zeichenfolge|Anwendungs- oder Paket-ID der Anwendung|
@@ -28,6 +28,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "appId": "String"
 }
 ```
+
+
+
+
+
 
 
 

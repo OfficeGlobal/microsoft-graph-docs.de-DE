@@ -10,7 +10,7 @@ Erbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |displayName|Zeichenfolge|Anzeigename Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|description|String|Beschreibung. Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|description|Zeichenfolge|Beschreibung. Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |omaUri|Zeichenfolge|OMA Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |fileName|Zeichenfolge|Die dem Dateinamen zugeordnete Werteigenschaft (*.xml).|
 |value|Binär|Wert (UTF8-codiertes Bytearray)|
@@ -21,7 +21,6 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingStringXml"
 }-->
 ``` json
@@ -34,6 +33,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "value": "binary"
 }
 ```
+
+
+
+
+
 
 
 

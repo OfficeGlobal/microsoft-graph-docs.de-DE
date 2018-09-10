@@ -19,7 +19,7 @@ Steht für einen Vorgang, der auf eine App-Registrierung angewendet wird.
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des App-Vorgangs|
 |state|String|Aktueller Status des Vorgangs|
 |id|Zeichenfolge|Schlüssel der Entität|
-|Version|String|Version der Entität|
+|Version|Zeichenfolge|Version der Entität|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -27,8 +27,8 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppOperation"
 }-->
 ``` json
@@ -41,6 +41,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -17,7 +17,6 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.edgeSearchEngineBase",
   "@odata.type": "microsoft.graph.edgeSearchEngineCustom"
 }-->
 ``` json
@@ -26,6 +25,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "edgeSearchEngineOpenSearchXmlUrl": "String"
 }
 ```
+
+
+
+
+
 
 
 

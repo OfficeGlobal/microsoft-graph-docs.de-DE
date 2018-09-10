@@ -19,11 +19,10 @@ Enthält die Eigenschaften des für eine mobile Android-App mindestens erforderl
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.androidMinimumOperatingSystem"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidMinimumOperatingSystem",
@@ -37,6 +36,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "v5_1": true
 }
 ```
+
+
+
+
+
 
 
 

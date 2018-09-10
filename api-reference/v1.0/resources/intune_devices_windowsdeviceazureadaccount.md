@@ -18,7 +18,6 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsDeviceAccount",
   "@odata.type": "microsoft.graph.windowsDeviceAzureADAccount"
 }-->
 ``` json
@@ -28,6 +27,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "userPrincipalName": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -15,7 +15,7 @@ Die Rollenzuweisungsressource. Rollenzuweisungen verknüpfen eine Rollendefiniti
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert.|
+|ID|Zeichenfolge|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert.|
 |displayName|String|Der Anzeigename der Rollenzuweisung.|
 |description|String|Beschreibung der Rollenzuweisung.|
 |resourceScopes|String collection|Liste der IDs der Rollenbereichsmitglieder-Sicherheitsgruppen.  Dies sind IDs aus Azure Active Directory.|
@@ -29,8 +29,8 @@ Die Rollenzuweisungsressource. Rollenzuweisungen verknüpfen eine Rollendefiniti
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.roleAssignment"
 }-->
 ``` json
@@ -44,6 +44,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   ]
 }
 ```
+
+
+
+
+
 
 
 

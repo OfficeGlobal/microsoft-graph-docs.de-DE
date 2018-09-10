@@ -10,7 +10,7 @@ Erbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md).
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |displayName|Zeichenfolge|Anzeigename Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|description|String|Beschreibung. Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|description|Zeichenfolge|Beschreibung. Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |omaUri|Zeichenfolge|OMA Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |Wert|DateTimeOffset|Wert.|
 
@@ -20,7 +20,6 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingDateTime"
 }-->
 ``` json
@@ -32,6 +31,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "value": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

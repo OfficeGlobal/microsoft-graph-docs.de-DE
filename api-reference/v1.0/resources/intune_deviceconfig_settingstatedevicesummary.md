@@ -15,9 +15,9 @@ Zusammenfassung des Zustands der Gerätekonformitätsrichtlinien und -konfigurat
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
-|settingName|String|Name der Einstellung|
-|instancePath|String|Name des zur Einstellung gehörenden Objekts des Typs „InstancePath“|
+|ID|Zeichenfolge|Schlüssel der Entität|
+|settingName|Zeichenfolge|Name der Einstellung|
+|instancePath|Zeichenfolge|Name des zur Einstellung gehörenden Objekts des Typs „InstancePath“|
 |unknownDeviceCount|Int32|Anzahl der Geräte mit Meldung „Unknown“ für die Einstellung|
 |notApplicableDeviceCount|Int32|Anzahl der Geräte mit Meldung „Not Applicable“ für die Einstellung|
 |compliantDeviceCount|Int32|Anzahl der Geräte mit Meldung „Compliant“ für die Einstellung|
@@ -32,8 +32,8 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.settingStateDeviceSummary"
 }-->
 ``` json
@@ -51,6 +51,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "conflictDeviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

@@ -6,7 +6,7 @@ Noch nicht dokumentiert
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Noch nicht dokumentiert|
+|ID|Zeichenfolge|Noch nicht dokumentiert|
 |displayName|Zeichenfolge|Noch nicht dokumentiert.|
 
 ## <a name="relationships"></a>Beziehungen
@@ -15,6 +15,7 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.settingSource"
 }
 -->
@@ -25,6 +26,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "displayName": "String"
 }
 ```
+
+
+
+
+
 
 
 

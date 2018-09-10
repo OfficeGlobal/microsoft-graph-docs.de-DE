@@ -18,9 +18,9 @@ Erbt von [RoleDefinition](../resources/intune_rbac_roledefinition.md)
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|displayName|String|Anzeigename der Rollendefinition Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|description|String|Beschreibung der Rollendefinition Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|ID|Zeichenfolge|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|displayName|Zeichenfolge|Anzeigename der Rollendefinition Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|description|Zeichenfolge|Beschreibung der Rollendefinition Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
 |rolePermissions|Sammlung von Objekten des Typs [rolePermission](../resources/intune_rbac_rolepermission.md)|Liste der Rollenberechtigungen, die dieser Rolle erteilt wurden. Diese müssen mit dem Wert für „actionName“ übereinstimmen, der als Teil von „rolePermission“ festgelegt wurde. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
 |isBuiltIn|Boolean|Rollentyp. Ist auf „True“ gesetzt, wenn es sich um eine integrierte Rolle handelt, und auf „False“, wenn es sich um eine benutzerdefinierte Rollendefinition handelt. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
 
@@ -33,8 +33,8 @@ Erbt von [RoleDefinition](../resources/intune_rbac_roledefinition.md)
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.roleDefinition",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceAndAppManagementRoleDefinition"
 }-->
 ``` json
@@ -62,6 +62,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "isBuiltIn": true
 }
 ```
+
+
+
+
+
 
 
 

@@ -27,3 +27,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 
 
+
+
+
+
+

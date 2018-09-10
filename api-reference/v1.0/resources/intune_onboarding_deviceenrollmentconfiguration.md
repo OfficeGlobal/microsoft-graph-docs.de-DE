@@ -14,7 +14,7 @@ Noch nicht dokumentiert.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Noch nicht dokumentiert|
+|ID|Zeichenfolge|Noch nicht dokumentiert|
 |displayName|Zeichenfolge|Noch nicht dokumentiert.|
 |description|Zeichenfolge|Noch nicht dokumentiert.|
 |priority|Int32|Noch nicht dokumentiert.|
@@ -25,15 +25,14 @@ Noch nicht dokumentiert.
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|assignments|[enrollmentConfigurationAssignment](../resources/intune_onboarding_enrollmentconfigurationassignment.md)-Sammlung|Die Liste derGruppenzuweisungen für das Gerätekonfigurationsprofil.|
+|Aufgaben|[enrollmentConfigurationAssignment](../resources/intune_onboarding_enrollmentconfigurationassignment.md)-Sammlung|Die Liste derGruppenzuweisungen für das Gerätekonfigurationsprofil.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceEnrollmentConfiguration"
 }-->
 ``` json
@@ -48,6 +47,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "version": 1024
 }
 ```
+
+
+
+
+
 
 
 

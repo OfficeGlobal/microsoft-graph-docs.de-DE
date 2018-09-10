@@ -15,11 +15,11 @@ Der Textinhalt einer Benachrichtigungsvorlage für das angegebene Gebietsschema.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
+|ID|Zeichenfolge|Schlüssel der Entität|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
-|Gebietsschema|String|Das Gebietsschema für das diese Nachricht bestimmt ist.|
-|subject|String|Die Vorlage für den Betreff der Nachricht.|
-|messageTemplate|String|Die Vorlage für den Inhalt der Nachricht.|
+|Gebietsschema|Zeichenfolge|Das Gebietsschema für das diese Nachricht bestimmt ist.|
+|subject|Zeichenfolge|Die Vorlage für den Betreff der Nachricht.|
+|messageTemplate|Zeichenfolge|Die Vorlage für den Inhalt der Nachricht.|
 |isDefault|Boolean|Die Kennzeichnung gibt an, ob dies das Standard-Gebietsschema für die Fallbacksprache ist. Dieser Kennzeichnung kann nur festgelegt werden. Um die Festlegung aufzuheben, setzen Sie diese Eigenschaft bei einer anderen lokalisierten Benachrichtigung auf „true“.|
 
 ## <a name="relationships"></a>Beziehungen
@@ -28,8 +28,8 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.localizedNotificationMessage"
 }-->
 ``` json
@@ -43,6 +43,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "isDefault": true
 }
 ```
+
+
+
+
+
 
 
 

@@ -12,7 +12,7 @@ Zusammenfassungsdaten für verwaltete Geräte
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für die Zusammenfassung|
+|ID|String|Eindeutiger Bezeichner für die Zusammenfassung|
 |enrolledDeviceCount|Int32|Gesamtanzahl von registrierten Geräten. Über den Intune-PC-Agent verwaltete Geräte sind nicht enthalten.|
 |mdmEnrolledCount|Int32|Anzahl von in MDM registrierten Geräten|
 |dualEnrolledDeviceCount|Int32|Anzahl von Geräten, die in MDM und EAS registriert sind|
@@ -25,8 +25,8 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDeviceOverview"
 }-->
 ``` json
@@ -55,6 +55,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   }
 }
 ```
+
+
+
+
+
 
 
 

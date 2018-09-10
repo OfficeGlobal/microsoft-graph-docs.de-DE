@@ -22,7 +22,7 @@ GET /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
@@ -65,6 +65,11 @@ Content-Length: 580
   }
 }
 ```
+
+
+
+
+
 
 
 

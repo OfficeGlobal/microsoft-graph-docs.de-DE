@@ -12,7 +12,7 @@ Noch nicht dokumentiert.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
+|ID|Zeichenfolge|Schlüssel der Entität|
 |unknownDeviceCount|Int32|Anzahl von unbekannten Geräten|
 |notApplicableDeviceCount|Int32|Anzahl der ausgenommenen Geräte|
 |compliantDeviceCount|Int32|Anzahl von konformen Geräten|
@@ -27,8 +27,8 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceConfigurationDeviceStateSummary"
 }-->
 ``` json
@@ -44,6 +44,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "conflictDeviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

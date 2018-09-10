@@ -15,7 +15,7 @@ Eine verwaltete oder nicht verwaltete App, die auf einem verwalteten Gerät inst
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für die erkannte Anwendung. Dieser wird automatisch von Intune generiert, wenn die Anwendung erstellt wird. Schreibgeschützt.|
+|ID|String|Eindeutiger Bezeichner für die erkannte Anwendung. Dieser wird automatisch von Intune generiert, wenn die Anwendung erstellt wird. Schreibgeschützt.|
 |displayName|String|Name der ermittelten Anwendung. Schreibgeschützt.|
 |version|String|Version der ermittelten Anwendung. Schreibgeschützt.|
 |sizeInByte|Int64|Größe der ermittelten Anwendung in Byte. Schreibgeschützt.|
@@ -30,8 +30,8 @@ Eine verwaltete oder nicht verwaltete App, die auf einem verwalteten Gerät inst
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.detectedApp"
 }-->
 ``` json
@@ -44,6 +44,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "deviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

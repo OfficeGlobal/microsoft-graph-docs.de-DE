@@ -14,17 +14,20 @@ Erbt von [deviceAndAppManagementAssignmentTarget](../resources/intune_shared_dev
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
   "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget"
 }
 ```
+
+
+
+
+
 
 
 
