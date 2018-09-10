@@ -15,10 +15,10 @@ Erbt von [managedAppStatus](../resources/intune_mam_managedappstatus.md)
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|String|Anzeigename des Statusberichts. Geerbt von [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
+|displayName|Zeichenfolge|Anzeigename des Statusberichts. Geerbt von [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
 |id|Zeichenfolge|Schlüssel der Entität. Geerbt von [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
-|version|String|Version der Entität Geerbt von [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
-|content|[Json](../resources/intune_mam_json.md)|Inhalt des Statusberichts.|
+|version|Zeichenfolge|Version der Entität Geerbt von [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
+|content|[Json](../resources/json.md)|Inhalt des Statusberichts.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -26,8 +26,8 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppStatus",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppStatusRaw"
 }-->
 ``` json
@@ -41,6 +41,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   }
 }
 ```
+
+
+
+
+
 
 
 

@@ -6,7 +6,7 @@ Noch nicht dokumentiert
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|password|String|Noch nicht dokumentiert.|
+|password|Zeichenfolge|Noch nicht dokumentiert.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -22,6 +22,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "password": "String"
 }
 ```
+
+
+
+
+
 
 
 

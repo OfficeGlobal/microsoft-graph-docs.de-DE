@@ -17,7 +17,7 @@ Der Bezeichner für die Bereitstellung einer App
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|Bezeichner der App mit dem zugehörigen Betriebssystemtyp|
 |id|Zeichenfolge|Schlüssel der Entität|
-|Version|String|Version der Entität|
+|Version|Zeichenfolge|Version der Entität|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -25,8 +25,8 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedMobileApp"
 }-->
 ``` json
@@ -39,6 +39,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 
