@@ -1,27 +1,25 @@
-# <a name="ipv4range-resource-type"></a><span data-ttu-id="f563f-101">iPv4Range-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="f563f-101">iPv4Range resource type</span></span>
+# <a name="ipv4range-resource-type"></a><span data-ttu-id="3646e-101">iPv4Range-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="3646e-101">iPv4Range resource type</span></span>
 
-> <span data-ttu-id="f563f-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="f563f-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="3646e-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="3646e-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="f563f-103">IP-V4-Bereich</span><span class="sxs-lookup"><span data-stu-id="f563f-103">IP V4 range</span></span>
+<span data-ttu-id="3646e-103">IP-V4-Bereich</span><span class="sxs-lookup"><span data-stu-id="3646e-103">IP V4 range</span></span>
 
-<span data-ttu-id="f563f-104">Erbt von [ipRange](../resources/intune_mam_iprange.md)</span><span class="sxs-lookup"><span data-stu-id="f563f-104">Inherits from [ipRange](../resources/intune_mam_iprange.md)</span></span>
+<span data-ttu-id="3646e-104">Erbt von [ipRange](../resources/intune_mam_iprange.md)</span><span class="sxs-lookup"><span data-stu-id="3646e-104">Inherits from [ipRange](../resources/intune_mam_iprange.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f563f-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f563f-105">Properties</span></span>
-|<span data-ttu-id="f563f-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="f563f-106">Property</span></span>|<span data-ttu-id="f563f-107">Typ</span><span class="sxs-lookup"><span data-stu-id="f563f-107">Type</span></span>|<span data-ttu-id="f563f-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f563f-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3646e-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="3646e-105">Properties</span></span>
+|<span data-ttu-id="3646e-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="3646e-106">Property</span></span>|<span data-ttu-id="3646e-107">Typ</span><span class="sxs-lookup"><span data-stu-id="3646e-107">Type</span></span>|<span data-ttu-id="3646e-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3646e-108">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f563f-109">lowerAddress</span><span class="sxs-lookup"><span data-stu-id="f563f-109">lowerAddress</span></span>|<span data-ttu-id="f563f-110">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="f563f-110">String</span></span>|<span data-ttu-id="f563f-111">Untere IP-Adresse</span><span class="sxs-lookup"><span data-stu-id="f563f-111">Lower IP Address</span></span>|
-|<span data-ttu-id="f563f-112">upperAddress</span><span class="sxs-lookup"><span data-stu-id="f563f-112">upperAddress</span></span>|<span data-ttu-id="f563f-113">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="f563f-113">String</span></span>|<span data-ttu-id="f563f-114">Obere IP-Adresse</span><span class="sxs-lookup"><span data-stu-id="f563f-114">Upper IP Address</span></span>|
+|<span data-ttu-id="3646e-109">lowerAddress</span><span class="sxs-lookup"><span data-stu-id="3646e-109">lowerAddress</span></span>|<span data-ttu-id="3646e-110">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="3646e-110">String</span></span>|<span data-ttu-id="3646e-111">Untere IP-Adresse</span><span class="sxs-lookup"><span data-stu-id="3646e-111">Lower IP Address</span></span>|
+|<span data-ttu-id="3646e-112">upperAddress</span><span class="sxs-lookup"><span data-stu-id="3646e-112">upperAddress</span></span>|<span data-ttu-id="3646e-113">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="3646e-113">String</span></span>|<span data-ttu-id="3646e-114">Obere IP-Adresse</span><span class="sxs-lookup"><span data-stu-id="3646e-114">Upper IP Address</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="f563f-115">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="f563f-115">Relationships</span></span>
-<span data-ttu-id="f563f-116">Keine</span><span class="sxs-lookup"><span data-stu-id="f563f-116">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="f563f-117">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="f563f-117">JSON Representation</span></span>
-<span data-ttu-id="f563f-118">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="f563f-118">Here is a JSON representation of the resource.</span></span>
-<!-- {
+## <a name="relationships"></a><span data-ttu-id="3646e-115">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="3646e-115">Relationships</span></span>
+<span data-ttu-id="3646e-116">Keine</span><span class="sxs-lookup"><span data-stu-id="3646e-116">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3646e-117">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="3646e-117">JSON Representation</span></span>
+<span data-ttu-id="3646e-118">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="3646e-118">Here is a JSON representation of the resource.</span></span>
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.ipRange",
   "@odata.type": "microsoft.graph.iPv4Range"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iPv4Range",
@@ -29,6 +27,11 @@
   "upperAddress": "String"
 }
 ```
+
+
+
+
+
 
 
 
