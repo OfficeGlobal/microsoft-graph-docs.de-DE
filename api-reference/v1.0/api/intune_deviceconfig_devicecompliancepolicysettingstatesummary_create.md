@@ -24,8 +24,8 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Annehmen|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs deviceCompliancePolicySettingStateSummary an.
@@ -34,16 +34,16 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|Einstellung|String|Der Klassenname und der Eigenschaftenname der Einstellung.|
-|settingName|String|Der Name der Einstellung.|
-|platformType|String|Die Plattform der Einstellung. Mögliche Werte: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `all`.|
-|id|String|Schlüssel der Entität|
-|unknownDeviceCount|Int32|Anzahl unbekannter Geräte|
-|notApplicableDeviceCount|Int32|Anzahl nicht anwendbarer Geräte|
-|compliantDeviceCount|Int32|Anzahl der konformen Geräte|
-|remediatedDeviceCount|Int32|Anzahl korrigierter Geräte|
-|nonCompliantDeviceCount|Int32|Anzahl der nicht konformen Geräte|
-|errorDeviceCount|Int32|Anzahl der fehlerhaften Geräte|
+|ID|Zeichenfolge|Schlüssel der Entität.|
+|Einstellung|Zeichenfolge|Klassenname und Eigenschaftenname der Einstellung|
+|settingName|Zeichenfolge|Name der Einstellung|
+|platformType|[policyPlatformType](../resources/intune_deviceconfig_policyplatformtype.md)|Einstellungsplattform. Mögliche Werte sind: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile` und `all`.|
+|unknownDeviceCount|Int32|Anzahl von unbekannten Geräten|
+|notApplicableDeviceCount|Int32|Anzahl der ausgenommenen Geräte|
+|compliantDeviceCount|Int32|Anzahl von konformen Geräten|
+|remediatedDeviceCount|Int32|Anzahl von korrigierten Geräten|
+|nonCompliantDeviceCount|Int32|Anzahl von nicht konformen Geräten|
+|errorDeviceCount|Int32|Anzahl von Geräten mit Fehlern|
 |conflictDeviceCount|Int32|Anzahl von Geräten mit Konflikt|
 
 
@@ -83,10 +83,10 @@ Content-Length: 440
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
+  "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
   "setting": "Setting value",
   "settingName": "Setting Name value",
   "platformType": "iOS",
-  "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
   "unknownDeviceCount": 2,
   "notApplicableDeviceCount": 8,
   "compliantDeviceCount": 4,
@@ -96,6 +96,11 @@ Content-Length: 440
   "conflictDeviceCount": 3
 }
 ```
+
+
+
+
+
 
 
 

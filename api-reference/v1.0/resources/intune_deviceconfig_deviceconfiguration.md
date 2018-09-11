@@ -13,12 +13,12 @@ Gerätekonfiguration.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
+|ID|Zeichenfolge|Schlüssel der Entität|
 |lastModifiedDateTime|DateTimeOffset|DateTime der letzten Änderung des Objekts.|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts|
-|description|Zeichenfolge|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration.|
+|Beschreibung|Zeichenfolge|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration.|
 |displayName|Zeichenfolge|Vom Administrator bereitgestellter Name der Gerätekonfiguration|
-|version|Int32|Version der Gerätekonfiguration.|
+|Version|Int32|Version der Gerätekonfiguration.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
@@ -34,9 +34,8 @@ Gerätekonfiguration.
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceConfiguration"
 }-->
 ``` json
@@ -50,6 +49,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "version": 1024
 }
 ```
+
+
+
+
+
 
 
 
