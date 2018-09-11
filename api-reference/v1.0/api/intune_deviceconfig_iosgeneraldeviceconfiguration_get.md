@@ -22,12 +22,12 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -47,7 +47,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8404
+Content-Length: 8470
 
 {
   "value": {
@@ -160,6 +160,7 @@ Content-Length: 8404
     "kioskModeAllowVolumeButtons": true,
     "kioskModeAllowZoomSettings": true,
     "kioskModeAppStoreUrl": "https://example.com/kioskModeAppStoreUrl/",
+    "kioskModeBuiltInAppId": "Kiosk Mode Built In App Id value",
     "kioskModeRequireAssistiveTouch": true,
     "kioskModeRequireColorInversion": true,
     "kioskModeRequireMonoAudio": true,
@@ -272,6 +273,11 @@ Content-Length: 8404
   }
 }
 ```
+
+
+
+
+
 
 
 

@@ -36,7 +36,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |:---|:---|:---|
 |id|Zeichenfolge|Eindeutiger Bezeichner für die WindowsInformationProtectionAppLearningSummary.|
 |applicationName|Zeichenfolge|Name der Anwendung|
-|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Antragstyp. Mögliche Werte sind: `universal`, `desktop`.|
+|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Typ der Anwendung. Mögliche Werte sind: `universal`, `desktop`.|
 |deviceCount|Int32|Geräteanzahl|
 
 
@@ -75,6 +75,11 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
+
+
+
+
+
 
 
 

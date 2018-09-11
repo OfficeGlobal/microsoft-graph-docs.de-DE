@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Konvertieren in andere Formate
-ms.openlocfilehash: 46e8ed178384a81f232a753fe683f8e11efe8585
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
+ms.openlocfilehash: 7798905363217d366caabbdd9c82559f578c01aa
+ms.sourcegitcommit: 809748ea18943f5fd1d99c4c65a9b964f39a5f25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23269180"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "23893298"
 ---
 # <a name="download-a-file-in-another-format"></a>Herunterladen einer Datei in einem anderen Format
 
@@ -30,21 +30,14 @@ GET /drive/items/{item-id}/content?format={format}
 GET /drive/root:/{path and filename}:/content?format={format}
 ```
 
-### <a name="optional-request-headers"></a>Optionale Anforderungsheader
+## <a name="query-parameters"></a>Abfrageparameter
 
-| Name            | Wert   | Beschreibung                                                                                                                                              |
-|:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _if-none-match_ | Zeichenfolge  | Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag (oder cTag) mit dem aktuellen Tag in der Datei übereinstimmt, wird die Antwort `HTTP 304 Not Modified` zurückgegeben. |
-
-
-### <a name="query-string-parameters"></a>Parameter der Abfragezeichenfolge
-
-| Name      | Wert  | Beschreibung                                                    |
+| Parameter      | Typ  | Beschreibung                                                    |
 |:----------|:-------|:---------------------------------------------------------------|
-| _Format_  | Zeichenfolge | Hier geben Sie das Format an, in dem der Elementinhalt heruntergeladen werden soll. |
+| _Format_  | Zeichenfolge | Geben Sie das Format an, in dem der Inhalt des Elements heruntergeladen werden soll. |
 
 
-#### <a name="format-options"></a>Formatoptionen
+### <a name="format-options"></a>Formatoptionen
 
 Die folgenden Werte sind für den **Format**-Parameter gültig:
 
@@ -52,7 +45,13 @@ Die folgenden Werte sind für den **Format**-Parameter gültig:
 |:-------------|:-----------------------------------|----------------------------
 | pdf          | Konvertiert das Element ins PDF-Format. | CSV, DOC, DOCX, ODP, ODS, ODT, POT, POTM, POTX, PPS, PPSX, PPSXM, PPT, PPTM, PPTX, RTF, XLS, XLSX
 
-### <a name="example"></a>Beispiel
+## <a name="optional-request-headers"></a>Optionale Anforderungsheader
+
+| Name            | Wert   | Beschreibung                                                                                                                                              |
+|:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| _if-none-match_ | Zeichenfolge  | Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag (oder cTag) mit dem aktuellen Tag in der Datei übereinstimmt, wird die Antwort `HTTP 304 Not Modified` zurückgegeben. |
+
+## <a name="example"></a>Beispiel
 
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
