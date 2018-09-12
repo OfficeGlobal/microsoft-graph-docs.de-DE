@@ -16,8 +16,8 @@ Eine Klasse, die die Eigenschaften für die Gruppenzuordnung einer mobilen App e
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |ID|Zeichenfolge|Schlüssel der Entität|
-|intent|[installIntent](../resources/intune_shared_installintent.md)|Die durch den Administrator definierten Install-Intent. Die möglichen Werte sind: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
-|Ziel|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Die vom Administrator definierte Zielgruppenzuordnung|
+|intent|[installIntent](../resources/intune_shared_installintent.md)|Die vom Administrator definierte Installationspriorität. Mögliche Werte sind: `available`, `required`, `uninstall` und `availableWithoutEnrollment`.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Die vom Administrator definierte Zielgruppenzuordnung|
 |Einstellungen|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|Die vom Administrator definierten Einstellungen für die Zielgruppenzuordnung.|
 
 ## <a name="relationships"></a>Beziehungen
@@ -26,8 +26,8 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppAssignment"
 }-->
 ``` json
@@ -43,6 +43,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   }
 }
 ```
+
+
+
+
+
 
 
 

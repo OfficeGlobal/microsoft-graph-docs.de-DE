@@ -22,7 +22,7 @@ Erbt von [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Richtlinie Geerbt von [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |id|Zeichenfolge|Schlüssel der Entität Geerbt von [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |Version|Zeichenfolge|Version der Entität Geerbt von [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|WIP Erzwingungsstufe. Siehe die Enum-Definition für die unterstützten Werte. Mögliche Werte: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
+|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|WIP-Erzwingungsstufe. Die unterstützten Werte finden Sie in der Enum-Definition. Mögliche Werte sind: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
 |enterpriseDomain|Zeichenfolge|Primäre Unternehmensdomäne|
 |enterpriseProtectedDomainNames|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md)-Sammlung|Liste von Unternehmensdomänen, die geschützt werden sollen|
 |protectionUnderLockConfigRequired|Boolescher Wert|Gibt an, ob die Funktion „Protection under Lock“ (auch als „Encrypt under PIN“ bezeichnet) konfiguriert werden muss.|
@@ -56,9 +56,8 @@ Erbt von [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppPolicy",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtection"
 }-->
 ``` json
@@ -90,7 +89,7 @@ Es folgt eine JSON-Darstellung der Ressource.
     "certificate": "binary"
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -190,6 +189,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "isAssigned": true
 }
 ```
+
+
+
+
+
 
 
 

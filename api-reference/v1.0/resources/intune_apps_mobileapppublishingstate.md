@@ -7,8 +7,13 @@ Gibt den Veröffentlichungsstatus einer Anwendung an.
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |notPublished|0|Die Anwendung ist noch nicht veröffentlicht.|
-|processing|1|1|
-|published|2|Die Anwendung ist veröffentlicht.|
+|Verarbeitung|1|1|
+|Veröffentlicht|2|Die Anwendung ist veröffentlicht.|
+
+
+
+
+
 
 
 
