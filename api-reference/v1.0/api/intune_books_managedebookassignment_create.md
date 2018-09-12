@@ -36,7 +36,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
 |Ziel|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Zuweisungsziel für das E-Book|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|Installationsabsicht für das E-Book. Die möglichen Werte sind: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|Installationsabsicht für das E-Book. Mögliche Werte: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 
 
@@ -76,6 +76,11 @@ Content-Length: 243
   "installIntent": "required"
 }
 ```
+
+
+
+
+
 
 
 

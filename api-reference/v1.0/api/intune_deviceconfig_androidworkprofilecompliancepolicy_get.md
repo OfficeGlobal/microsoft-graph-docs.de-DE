@@ -1,8 +1,8 @@
-# <a name="get-ioscompliancepolicy"></a>iosCompliancePolicy abrufen
+# <a name="get-androidworkprofilecompliancepolicy"></a>Abrufen von androidWorkProfileCompliancePolicy
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Lesen von Eigenschaften und Beziehungen des [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md)-Objekts.
+Liest Eigenschaften und Beziehungen von Objekten des Typs [AndroidWorkProfileCompliancePolicy](../resources/intune_deviceconfig_androidworkprofilecompliancepolicy.md).
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -33,7 +33,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md)-Objekt im Antworttext zurückgegeben.
+Wenn die Methode erfolgreich verläuft, wird im Antworttext der `200 OK` Antwortcode und [AndroidWorkProfileCompliancePolicy](../resources/intune_deviceconfig_androidworkprofilecompliancepolicy.md) zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 ### <a name="request"></a>Anforderung
@@ -47,31 +47,38 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 978
+Content-Length: 1417
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.iosCompliancePolicy",
-    "id": "4f501351-1351-4f50-5113-504f5113504f",
+    "@odata.type": "#microsoft.graph.androidWorkProfileCompliancePolicy",
+    "id": "4e385271-5271-4e38-7152-384e7152384e",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "displayName": "Display Name value",
     "version": 7,
-    "passcodeBlockSimple": true,
-    "passcodeExpirationDays": 6,
-    "passcodeMinimumLength": 5,
-    "passcodeMinutesOfInactivityBeforeLock": 5,
-    "passcodePreviousPasscodeBlockCount": 2,
-    "passcodeMinimumCharacterSetCount": 0,
-    "passcodeRequiredType": "alphanumeric",
-    "passcodeRequired": true,
-    "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value",
-    "securityBlockJailbrokenDevices": true,
+    "passwordRequired": true,
+    "passwordMinimumLength": 5,
+    "passwordRequiredType": "alphabetic",
+    "passwordMinutesOfInactivityBeforeLock": 5,
+    "passwordExpirationDays": 6,
+    "passwordPreviousPasswordBlockCount": 2,
+    "securityPreventInstallAppsFromUnknownSources": true,
+    "securityDisableUsbDebugging": true,
+    "securityRequireVerifyApps": true,
     "deviceThreatProtectionEnabled": true,
     "deviceThreatProtectionRequiredSecurityLevel": "secured",
-    "managedEmailProfileRequired": true
+    "securityBlockJailbrokenDevices": true,
+    "osMinimumVersion": "Os Minimum Version value",
+    "osMaximumVersion": "Os Maximum Version value",
+    "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
+    "storageRequireEncryption": true,
+    "securityRequireSafetyNetAttestationBasicIntegrity": true,
+    "securityRequireSafetyNetAttestationCertifiedDevice": true,
+    "securityRequireGooglePlayServices": true,
+    "securityRequireUpToDateSecurityProviders": true,
+    "securityRequireCompanyPortalAppIntegrity": true
   }
 }
 ```
