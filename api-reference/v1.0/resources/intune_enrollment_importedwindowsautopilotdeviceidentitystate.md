@@ -6,7 +6,7 @@ Noch nicht dokumentiert
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|deviceImportStatus|[importedWindowsAutopilotDeviceIdentityImportStatus](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus.md)|Vom Geräteverzeichnisdienst (DDS) gemeldeter Gerätestatus. Die möglichen Werte sind: `unknown`, `pending`, `partial`, `complete`, `error`.|
+|deviceImportStatus|[importedWindowsAutopilotDeviceIdentityImportStatus](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus.md)|Gerätestatus, der vom Device Directory Service (DDS) gemeldet wird. Mögliche Werte sind: `unknown`, `pending`, `partial`, `complete`, `error`.|
 |deviceRegistrationId|Zeichenfolge|Vom Geräteverzeichnisdienst (DDS) gemeldete Geräteregistrierungs-ID für erfolgreich hinzugefügtes Gerät|
 |deviceErrorCode|Int32|Vom Geräteverzeichnisdienst (DDS) gemeldeter Gerätefehlercode|
 |deviceErrorName|Zeichenfolge|Vom Geräteverzeichnisdienst (DDS) gemeldeter Gerätefehlername|
@@ -28,6 +28,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "deviceErrorName": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -6,11 +6,16 @@ Exchange-Zugriffszustand des Gerätes.
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|none|0|Kein Zugriffszustand von Exchange gefunden|
-|unknown|1|Geräte-Zugriffszustand auf Exchange ist unbekannt|
+|keine|0|Kein Zugriffszustand von Exchange gefunden|
+|unbekannt|1|Geräte-Zugriffszustand auf Exchange ist unbekannt|
 |zulässig|2|Das Gerät hat Zugriff auf Exchange|
-|blocked|3|Das Gerät ist in Exchange gesperrt|
+|gesperrt|3|Das Gerät ist in Exchange gesperrt|
 |In Quarantäne|4|Das Gerät befindet sich in Quarantäne in Exchange|
+
+
+
+
+
 
 
 

@@ -8,8 +8,8 @@ Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Wei
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
-|Delegiert (Geschäfts-, Schul- oder Unikonto)| _variiert je nach Kontext_ |
-| &nbsp; &nbsp; Geräte | DeviceManagementManagedDevices.ReadWrite.All |
+|Delegiert (Geschäfts- oder Schulkonto)| _variiert je nach Kontext_ |
+| &nbsp; &nbsp; Geräteverwaltung | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; Problembehandlung | DeviceManagementManagedDevices.ReadWrite.All |
@@ -38,7 +38,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Eindeutige Kennung für den Benutzer.|
+|ID|Zeichenfolge|Eindeutiger Bezeichner des Benutzers|
 |**Onboarding**|
 |deviceEnrollmentLimit|Int32|Der Grenzwert für die maximale Anzahl von Geräten, die der Benutzer registrieren kann. Zulässige Werte sind 5 oder 1000.|
 

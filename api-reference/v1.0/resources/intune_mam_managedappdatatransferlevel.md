@@ -6,9 +6,14 @@ Daten können von/zu diesen Klassen von Apps übertragen werden
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allApps|0|„Alle Apps“.|
+|allApps|0|Alle Apps.|
 |managedApps|1|Verwaltete Apps.|
-|Keine|2|Keine Apps.|
+|keine|2|Keine Apps.|
+
+
+
+
+
 
 
 
