@@ -26,7 +26,7 @@ Eine abstrakte Klasse, die grundlegende Eigenschaften von mobilen Intune-Apps en
 |Besitzer|Zeichenfolge|Besitzer der App|
 |Entwickler|Zeichenfolge|Entwickler der App|
 |Notizen|Zeichenfolge|Hinweise zur App|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Der Veröffentlichungsstatus der App. Eine App kann erst zugewiesen werden, wenn sie veröffentlicht wurde. Mögliche Werte sind:`notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Der Status der Veröffentlichung einer App. Eine App kann erst zugewiesen werden, wenn sie veröffentlicht wurde. Mögliche Werte sind: `notPublished`, `processing`, `published`.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
@@ -38,9 +38,8 @@ Eine abstrakte Klasse, die grundlegende Eigenschaften von mobilen Intune-Apps en
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileApp"
 }-->
 ``` json
@@ -66,6 +65,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "publishingState": "String"
 }
 ```
+
+
+
+
+
 
 
 

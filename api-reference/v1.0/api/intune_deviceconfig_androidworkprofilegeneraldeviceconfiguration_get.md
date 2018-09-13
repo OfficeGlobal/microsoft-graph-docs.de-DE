@@ -1,8 +1,8 @@
-# <a name="get-ioscustomconfiguration"></a>iosCustomConfiguration abrufen
+# <a name="get-androidworkprofilegeneraldeviceconfiguration"></a>Abrufen von androidWorkProfileGeneralDeviceConfiguration
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Lesen von Eigenschaften und Beziehungen des [iosCustomConfiguration](../resources/intune_deviceconfig_ioscustomconfiguration.md)-Objekts.
+Lesen Sie Eigenschaften und Beziehungen des [androidWorkProfileGeneralDeviceConfiguration](../resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration.md)-Objekts.
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -33,7 +33,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [iosCustomConfiguration](../resources/intune_deviceconfig_ioscustomconfiguration.md)-Objekt im Antworttext zurückgegeben.
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen`200 OK`Antwortcode und[androidWorkProfileGeneralDeviceConfiguration](../resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration.md)-Objekt im Antworttext.
 
 ## <a name="example"></a>Beispiel
 ### <a name="request"></a>Anforderung
@@ -47,20 +47,51 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 490
+Content-Length: 2104
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.iosCustomConfiguration",
-    "id": "f34428e3-28e3-f344-e328-44f3e32844f3",
+    "@odata.type": "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
+    "id": "6decda7e-da7e-6dec-7eda-ec6d7edaec6d",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
-    "payloadName": "Payload Name value",
-    "payloadFileName": "Payload File Name value",
-    "payload": "cGF5bG9hZA=="
+    "passwordBlockFingerprintUnlock": true,
+    "passwordBlockTrustAgents": true,
+    "passwordExpirationDays": 6,
+    "passwordMinimumLength": 5,
+    "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
+    "passwordPreviousPasswordBlockCount": 2,
+    "passwordSignInFailureCountBeforeFactoryReset": 12,
+    "passwordRequiredType": "lowSecurityBiometric",
+    "workProfileDataSharingType": "preventAny",
+    "workProfileBlockNotificationsWhileDeviceLocked": true,
+    "workProfileBlockAddingAccounts": true,
+    "workProfileBluetoothEnableContactSharing": true,
+    "workProfileBlockScreenCapture": true,
+    "workProfileBlockCrossProfileCallerId": true,
+    "workProfileBlockCamera": true,
+    "workProfileBlockCrossProfileContactsSearch": true,
+    "workProfileBlockCrossProfileCopyPaste": true,
+    "workProfileDefaultAppPermissionPolicy": "prompt",
+    "workProfilePasswordBlockFingerprintUnlock": true,
+    "workProfilePasswordBlockTrustAgents": true,
+    "workProfilePasswordExpirationDays": 1,
+    "workProfilePasswordMinimumLength": 0,
+    "workProfilePasswordMinNumericCharacters": 7,
+    "workProfilePasswordMinNonLetterCharacters": 9,
+    "workProfilePasswordMinLetterCharacters": 6,
+    "workProfilePasswordMinLowerCaseCharacters": 9,
+    "workProfilePasswordMinUpperCaseCharacters": 9,
+    "workProfilePasswordMinSymbolCharacters": 6,
+    "workProfilePasswordMinutesOfInactivityBeforeScreenTimeout": 9,
+    "workProfilePasswordPreviousPasswordBlockCount": 13,
+    "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
+    "workProfilePasswordRequiredType": "lowSecurityBiometric",
+    "workProfileRequirePassword": true,
+    "securityRequireVerifyApps": true
   }
 }
 ```
