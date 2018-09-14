@@ -4,7 +4,8 @@ Dieser Ressourcentyp stellt eine Nachricht in einem mailFolder-Objekt dar.
 
 Diese Ressource unterstützt Folgendes:
 
-- Hinzufügen Ihrer eigenen Daten zu benutzerdefinierten Eigenschaften mithilfe von [Erweiterungen](../../../concepts/extensibility_overview.md).
+- Hinzufügen Ihrer eigenen Daten als benutzerdefinierte Kopfzeilen von Internet-Nachrichten. Fügen Sie benutzerdefinierte Kopfzeilen nur beim Erstellen einer Nachricht hinzu, und benennen Sie diese mit „x-“ beginnend. Nach dem Senden der Nachricht können Sie die Kopfzeilen nicht mehr ändern. Verwenden Sie den `$select` Abfrageparameter des Vorgangs [Eine Nachricht erhalten](../api/message_get.md), um sich die Kopfzeilen einer Nachricht anzeigen zu lassen.
+- Hinzufügen Ihrer eigenen Daten als benutzerdefinierte Eigenschaften in [Erweiterungen](../../../concepts/extensibility_overview.md).
 - Verwenden einer [Delta-Abfrage](../../../concepts/delta_query_overview.md) zum Nachverfolgen von inkrementellen Hinzufügungen, Löschungen und Aktualisierungen durch Bereitstellen der [delta](../api/message_delta.md)-Funktion.
 
 ## <a name="methods"></a>Methoden
@@ -43,11 +44,11 @@ Diese Ressource unterstützt Folgendes:
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|bccRecipients|[recipient](recipient.md) collection|Die Bcc:-Empfänger der Nachricht.|
-|body|[itemBody](itembody.md)|Der Text der Nachricht. Er kann im HTML- oder Textformat vorliegen.|
+|bccRecipients|[Empfänger](recipient.md)-Sammlung|Die Bcc:-Empfänger der Nachricht.|
+|Text|[itemBody](itembody.md)|Der Text der Nachricht. Er kann im HTML- oder Textformat vorliegen.|
 |bodyPreview|Zeichenfolge|Die ersten 255 Zeichen des Nachrichtentexts. Liegt im Textformat vor.|
-|categories|Zeichenfolgenauflistung|Die Kategorien, die mit der Nachricht verknüpft sind.|
-|ccRecipients|[recipient](recipient.md) collection|Die Cc:-Empfänger der Nachricht.|
+|Kategorien|Zeichenfolgenauflistung|Die Kategorien, die mit der Nachricht verknüpft sind.|
+|ccRecipients|[Empfänger](recipient.md)-Sammlung|Die Cc:-Empfänger der Nachricht.|
 |changeKey|Zeichenfolge|Die Version der Nachricht.|
 |conversationId|Zeichenfolge|Die ID der Unterhaltung, zu der die E-Mail gehört.|
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht erstellt wurde.|
@@ -57,7 +58,7 @@ Diese Ressource unterstützt Folgendes:
 |id|Zeichenfolge|Eindeutiger Bezeichner für die Nachricht (beachten Sie, dass sich dieser Wert ändern kann, wenn eine Nachricht verschoben oder geändert wird)|
 |Wichtigkeit|Wichtigkeit| Wichtigkeit der Nachricht: `Low`, `Normal`, `High`.|
 |inferenceClassification | inferenceClassificationType | Die Klassifizierung der Nachricht für den Benutzer, basierend auf der abgeleiteten Relevanz oder Wichtigkeit oder auf einer expliziten Außerkraftsetzung. Mögliche Werte sind `focused`, oder `other`. |
-|internetMessageHeaders | [internetinternetMessageHeaders](internetmessageheader.md)-Sammlung | Die Sammlung von Nachrichtenkopfzeilen, definiert von [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), die Informationen des von einer Nachricht vom Absender bis zum Empfänger verwendeten Pfads einer Nachricht liefert. Schreibgeschützt.|
+|internetMessageHeaders | [internetinternetMessageHeaders](internetmessageheader.md)-Sammlung | Eine Sammlung von Nachrichtenkopfzeilen, die von [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) definiert sind. Der Satz enthält Nachrichtenkopfzeilen, die den Pfad einer Nachricht vom Absender bis zum Empfänger anzeigen. Ebenso kann er benutzerdefinierte Nachrichtenkopfzeilen enthalten, die App-Daten für die Nachricht beinhalten. |
 |internetMessageId |Zeichenfolge |Die Nachrichten-ID im von [RFC2822](http://www.ietf.org/rfc/rfc2822.txt) angegebenen Format. |
 |isDeliveryReceiptRequested|Boolesch|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
 |isDraft|Boolesch|Gibt an, ob die Nachricht ein Entwurf ist. Eine Nachricht ist ein Entwurf, solange sie noch nicht gesendet wurde.|
@@ -66,11 +67,11 @@ Diese Ressource unterstützt Folgendes:
 |lastModifiedDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht zuletzt geändert wurde.|
 |parentFolderId|Zeichenfolge|Der eindeutige Bezeichner für das übergeordnete mailFolder-Element der Nachricht.|
 |receivedDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht erhalten wurde.|
-|replyTo|[recipient](recipient.md) collection|Die E-Mail-Adressen, die beim Antworten verwendet werden sollen.|
-|sender|[Empfänger](recipient.md)|Das Konto, das tatsächlich verwendet wird, um die Nachricht zu generieren. In den meisten Fällen ist dieser Wert der gleiche wie die Eigenschaft **von**. Sie können diese Eigenschaft auf einen anderen Wert setzen, wenn Sie eine Nachricht aus einem [geteilten Postfach](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes) senden oder eine Nachricht im [Auftrag von jemandem](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926) schicken. Der Wert muss in jedem Fall dem tatsächlich verwendeten Postfach entsprechen.|
+|replyTo|[Empfänger](recipient.md)-Sammlung|Die E-Mail-Adressen, die beim Antworten verwendet werden sollen.|
+|Absender|[Empfänger](recipient.md)|Das Konto, das tatsächlich verwendet wird, um die Nachricht zu generieren. In den meisten Fällen ist dieser Wert der gleiche wie die Eigenschaft **von**. Sie können diese Eigenschaft auf einen anderen Wert setzen, wenn Sie eine Nachricht aus einem [geteilten Postfach](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes) senden oder eine Nachricht im [Auftrag von jemandem](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926) schicken. Der Wert muss in jedem Fall dem tatsächlich verwendeten Postfach entsprechen.|
 |sentDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht gesendet wurde.|
 |Betreff|Zeichenfolge|Der Betreff der Nachricht.|
-|toRecipients|[recipient](recipient.md) collection|Die An:-Empfänger der Nachricht.|
+|toRecipients|[Empfänger](recipient.md)-Sammlung|Die An:-Empfänger der Nachricht.|
 |uniqueBody|[itemBody](itembody.md)|Der Teil des Nachrichtentexts, der nur in der aktuellen Nachricht vorhanden ist. **uniqueBody** wird nicht standardmäßig zurückgegeben, kann aber für eine bestimmte Nachricht mithilfe der Abfrage `?$select=uniqueBody` abgerufen werden. Er kann im HTML- oder Textformat vorliegen.|
 |webLink|Zeichenfolge|Die URL zum Öffnen der Nachricht in Outlook Web App.<br><br>Sie können am Ende der URL das Argument „ispopout“ anhängen, um zu ändern, wie die Nachricht angezeigt wird. Wenn „ispopout“ nicht vorhanden oder auf 1 festgelegt ist, wird die Nachricht in einem Popout-Fenster angezeigt. Wenn „ispopout“ auf 0 festgelegt ist, zeigt der Browser die Nachricht in Outlook Web App im Prüffensterbereich an.<br><br>Die Nachricht wird im Browser geöffnet, wenn Sie über Outlook Web App bei Ihrem Postfach angemeldet sind. Sie werden aufgefordert, sich anzumelden, wenn Sie noch nicht beim Browser angemeldet sind.<br><br>Auf diese URL kann von einem iFrame aus zugegriffen werden.|
 
@@ -91,7 +92,7 @@ Beim Schreiben einer Nachricht stellen in den meisten Fällen die From- und Send
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md)-Sammlung|Die [fileAttachment](fileattachment.md)- und [itemAttachment](itemattachment.md)-Anlagen der Nachricht.|
+|Anlagen|[attachment](attachment.md)-Sammlung|Die [fileAttachment](fileattachment.md)- und [itemAttachment](itemattachment.md)-Anlagen der Nachricht.|
 |Erweiterungen|[extension](extension.md)-Sammlung|Die Sammlung der für die Nachricht definierten offenen Erweiterungen. Schreibgeschützt. Lässt NULL-Werte zu.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten mehrwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt NULL-Werte zu.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten einwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt Nullwerte zu.|
