@@ -7,8 +7,13 @@ Typ der Anzeigemodi für das Startmenü.
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |userDefined|0|Benutzerdefiniert. Standardwert.|
-|fullScreen|1|Vollbild.|
+|fullScreen|1|Gesamter Bildschirm|
 |nonFullScreen|2|Nicht-Vollbild.|
+
+
+
+
+
 
 
 

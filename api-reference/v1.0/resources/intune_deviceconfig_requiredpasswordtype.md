@@ -8,7 +8,12 @@ Mögliche Werte der erforderlichen Kennwörter.
 |:---|:---|:---|
 |deviceDefault|0|Standardwert des Geräts, ohne Vorsatz.|
 |Alphanumerisch|1|Alphanumerisches Kennwort erforderlich.|
-|Numerisch|2|Numerisches Kennwort erforderlich.|
+|numeric|2|Numerisches Kennwort erforderlich.|
+
+
+
+
+
 
 
 

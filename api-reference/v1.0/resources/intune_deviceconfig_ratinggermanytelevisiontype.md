@@ -8,11 +8,16 @@ Fernseh-Jugendschutzklassen in Deutschland
 |:---|:---|:---|
 |allAllowed|0|Standardwert, alle Fernsehinhalte sind erlaubt|
 |allBlocked|1|Nicht alle Fernseh-Sendungsinhalte zulassen|
-|general|2|Ab 0 Jahren, ohne Alterseinschränkungen|
+|allgemein|2|Ab 0 Jahren, ohne Alterseinschränkungen|
 |agesAbove6|3|Ab 6 Jahren, im Alter zwischen 6 Jahren und älter|
 |agesAbove12|4|Ab 12 Jahren, ab 12 Jahren|
 |agesAbove16|5|Ab 16 Jahren, im Alter zwischen 16 Jahren und älter|
-|adults|6|Ab 18 Jahren, nur Erwachsene|
+|Erwachsene|6|Ab 18 Jahren, nur Erwachsene|
+
+
+
+
+
 
 
 

@@ -40,7 +40,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Richtlinie Geerbt von [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |id|Zeichenfolge|Schlüssel der Entität Geerbt von [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |Version|Zeichenfolge|Version der Entität Geerbt von [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|WIP Erzwingungsstufe. Siehe die Enum-Definition für unterstützte Werte. Geerbt aus [WindowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md). Mögliche Werte sind: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
+|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|WIP-Erzwingungsstufe. Die unterstützten Werte finden Sie in der Enumerationsdefinition. Geerbt von [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md). Mögliche Werte: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt` und `encryptAuditAndBlock`.|
 |enterpriseDomain|Zeichenfolge|Primäre Unternehmensdomäne. Geerbt von [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
 |enterpriseProtectedDomainNames|Sammlung von Objekten des Typs [windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md)|Liste der zu schützenden Unternehmensdomänen. Geerbt von [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
 |protectionUnderLockConfigRequired|Boolesch|Gibt an, ob die Funktion „Protection under Lock“ (auch als „Encrypt under PIN“ bezeichnet) konfiguriert werden muss. Geerbt von [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
@@ -66,9 +66,9 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |mdmEnrollmentUrl|Zeichenfolge|URL zur Registrierung in der MDM-Lösung|
 |windowsHelloForBusinessBlocked|Boolesch|Boolescher Wert, der Windows Hello for Business als Methode für die Anmeldung bei Windows festlegt|
 |pinMinimumLength|Int32|Ganze Zahl, die festlegt, wie viele Zeichen die PIN mindestens haben muss. Der Standardwert ist „4“. Die kleinste Zahl, die Sie als Wert für diese Richtlinieneinstellung konfigurieren können, ist 4. Die größte Zahl, die Sie konfigurieren können, muss kleiner sein als die Zahl, die Sie für die Richtlinieneinstellung zur Festlegung der PIN-Maximallänge angegeben haben, oder kleiner als 127 (je nachdem, welche Zahl kleiner ist).|
-|pinUppercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Ganzzahl-Wert, der die Verwendung von Großbuchstaben in der Windows Hello für Business PIN konfiguriert. Der Standardwert lautet NotAllow. Mögliche Werte sind:`notAllow`, `requireAtLeastOne`, `allow`.|
-|pinLowercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Ganzzahl-Wert, der die Verwendung von Kleinbuchstaben in der Windows Hello für Business PIN konfiguriert. Der Standardwert lautet NotAllow. Mögliche Werte sind: `notAllow`, `requireAtLeastOne`, `allow`.|
-|pinSpecialCharacters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Ganzzahl-Wert, der die Verwendung von Sonderzeichen in der Windows Hello für Business PIN konfiguriert. Zu den zulässigen Sonderzeichen für Windows Hello for Business-Gesten gehören: ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ \[ \ \] ^ _ ` { | } ~. Der Standardwert lautet NotAllow. Mögliche Werte sind: `notAllow`, `requireAtLeastOne`, `allow`.|
+|pinUppercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Ganzzahlwert, der die Verwendung von Großbuchstaben in der Windows Hello for Business-PIN konfiguriert. Der Standard ist NotAllow. Mögliche Werte: `notAllow`, `requireAtLeastOne`, `allow`.|
+|pinLowercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Ganzzahlwert, der die Verwendung von Kleinbuchstaben in der Windows Hello für Business PIN konfiguriert. Der Standard ist NotAllow. Mögliche Werte: `notAllow`, `requireAtLeastOne`, `allow`.|
+|pinSpecialCharacters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Ganzzahlwert, der konfiguriert, ob Sonderzeichen in der Windows Hello for Business-PIN verwendet werden dürfen. Zu den zulässigen Sonderzeichen für Windows Hello for Business-Gesten gehören: ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ \[ \ \] ^ _ ` { | } ~. Der Standard ist NotAllow. Mögliche Werte: `notAllow`, `requireAtLeastOne`, `allow`.|
 |pinExpirationDays|Int32|Ganzzahlwert, der angibt, wie viele Tage die PIN verwendet werden darf, bevor das System den Benutzer auffordert, sie zu ändern. Die größte Zahl, die Sie als Wert für diese Richtlinieneinstellung konfigurieren können, ist 730. Die kleinste Zahl, die Sie als Wert für diese Richtlinieneinstellung konfigurieren können, ist 0. Wenn Sie für diese Richtlinie „0“ festlegen, läuft die PIN des Benutzers niemals ab. Dieser Knoten wurde in Windows 10 Version 1511 hinzugefügt. Der Standardwert lautet „0“.|
 |numberOfPastPinsRemembered|Int32|Ganzzahlwert, der angibt, wie viele der zuletzt dem Benutzerkonto zugeordneten PINs nicht wiederverwendet werden dürfen. Die größte Zahl, die Sie als Wert für diese Richtlinieneinstellung konfigurieren können, ist 50. Die kleinste Zahl, die Sie als Wert für diese Richtlinieneinstellung konfigurieren können, ist 0. Wenn Sie für diese Richtlinie „0“ festlegen, wird keine Speicherung früherer PINs erzwungen. Dieser Knoten wurde in Windows 10 Version 1511 hinzugefügt. Der Standardwert lautet „0“.|
 |passwordMaximumAttemptCount|Int32|Legt fest, wie oft die Authentifizierung fehlschlagen darf, bevor das Gerät zurückgesetzt wird. Ein Wert von „0“ deaktiviert die Funktion zur Gerätezurücksetzung. Gültig sind Ganzzahlen X, wobei gilt 4 <= X <= 16 für Desktops und 0 <= X <= 999 für Mobilgeräte.|
@@ -114,7 +114,7 @@ Content-length: 4466
     "certificate": "Y2VydGlmaWNhdGU="
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -262,7 +262,7 @@ Content-Length: 4574
     "certificate": "Y2VydGlmaWNhdGU="
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -374,6 +374,11 @@ Content-Length: 4574
   "daysWithoutContactBeforeUnenroll": 0
 }
 ```
+
+
+
+
+
 
 
 

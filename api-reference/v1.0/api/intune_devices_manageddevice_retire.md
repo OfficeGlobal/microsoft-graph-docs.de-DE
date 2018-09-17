@@ -38,19 +38,20 @@ Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` z
 ## <a name="example"></a>Beispiel
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
-
-<!-- { "blockType": "request" } -->
 ``` http
 POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}/retire
 ```
 
 ### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
-
-<!-- { "blockType": "response" } -->
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
+
+
 
 
 

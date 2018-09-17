@@ -6,11 +6,16 @@ Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|unknown|0|Unbekannter Status.|
-|pending|1|Status ausstehend.|
-|partial|2|Teilweiser Status.|
-|complete|3|Status abgeschlossen.|
-|error|4|Fehlerstatus|
+|unbekannt|0|Unbekannter Status.|
+|ausstehend|1|Status ausstehend.|
+|partiell|2|Teilweiser Status.|
+|abgeschlossen|3|Status abgeschlossen.|
+|Fehler|4|Fehlerstatus|
+
+
+
+
+
 
 
 

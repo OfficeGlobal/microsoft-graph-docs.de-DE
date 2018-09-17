@@ -15,26 +15,26 @@ Enthält Eigenschaften für den Installationsstatus für ein Gerät.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität.|
-|deviceName|String|Gerätename|
-|deviceId|String|Geräte-ID|
+|ID|Zeichenfolge|Schlüssel der Entität|
+|deviceName|Zeichenfolge|Name des Geräts|
+|deviceId|Zeichenfolge|ID des Geräts|
 |lastSyncDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Synchronisierung|
-|installState|String|Der Installationsstatus des E-Books. Mögliche Werte: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|String|Der Fehlercode für Fehler bei der Installation.|
-|osVersion|String|Betriebssystemversion|
-|osDescription|String|Beschreibung des Betriebssystems|
-|userName|String|Benutzername des Geräts|
+|installState|[installState](../resources/intune_books_installstate.md)|Der Installationsstatus des E-Books. Mögliche Werte sind: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed` und `unknown`.|
+|errorCode|Zeichenfolge|Fehlercode von Installationsfehlern|
+|osVersion|Zeichenfolge|Betriebssystemversion|
+|osDescription|Zeichenfolge|Beschreibung des Betriebssystems|
+|userName|Zeichenfolge|Benutzername des Geräts|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceInstallState"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceInstallState",
@@ -49,6 +49,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "userName": "String"
 }
 ```
+
+
+
+
+
 
 
 

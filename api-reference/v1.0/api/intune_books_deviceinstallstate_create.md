@@ -39,7 +39,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |deviceName|Zeichenfolge|Name des Geräts|
 |deviceId|Zeichenfolge|ID des Geräts|
 |lastSyncDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Synchronisierung|
-|installState|[installState](../resources/intune_books_installstate.md)|Installationsstatus des E-Books. Mögliche Werte: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
+|installState|[installState](../resources/intune_books_installstate.md)|Der Installationsstatus des e-Books. Mögliche Werte sind: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
 |errorCode|Zeichenfolge|Fehlercode von Installationsfehlern|
 |osVersion|Zeichenfolge|Betriebssystemversion|
 |osDescription|Zeichenfolge|Beschreibung des Betriebssystems|
@@ -91,6 +91,11 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
+
+
+
+
 
 
 

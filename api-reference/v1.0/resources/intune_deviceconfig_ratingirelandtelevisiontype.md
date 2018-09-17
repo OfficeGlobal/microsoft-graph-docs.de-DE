@@ -3,8 +3,8 @@
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
 Bezeichnungen für die Bewertung von TV-Inhalten in Irland
-## <a name="members"></a>Mitglieder
-|Mitglied|Wert|Beschreibung|
+## <a name="members"></a>Elemente
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |allAllowed|0|Standardwert, alle TV-Show-Inhalte werden angezeigt|
 |allBlocked|1|Keine TV-Show-Inhalte zulassen|
@@ -13,6 +13,11 @@ Bezeichnungen für die Bewertung von TV-Inhalten in Irland
 |youngAdults|4|Die YA-Klassifizierung ist für ein jugendliches Publikum geeignet|
 |parentalSupervision|5|Die PS-Klassifizierung richtet sich an Eltern und Erziehungsberechtigte, um einen eingeschränkten Zugriff für Kinder in Betracht zu ziehen|
 |reif|6|Die MA-Klassifizierung ist für Erwachsene geeignet|
+
+
+
+
+
 
 
 

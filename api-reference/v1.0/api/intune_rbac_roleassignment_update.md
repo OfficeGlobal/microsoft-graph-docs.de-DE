@@ -24,8 +24,8 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Annehmen|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs [roleAssignment](../resources/intune_rbac_roleassignment.md) an.
@@ -34,10 +34,10 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität. Er ist schreibgeschützt und wird automatisch generiert.|
-|displayName|String|Der Anzeigename der Rollenzuweisung.|
-|description|String|Beschreibung der Rollenzuweisung.|
-|resourceScopes|String collection|Liste der IDs der Rollenbereichsmitglieder-Sicherheitsgruppen.  Dies sind IDs aus Azure Active Directory.|
+|ID|Zeichenfolge|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert.|
+|displayName|Zeichenfolge|Der Anzeigename der Rollenzuweisung.|
+|Beschreibung|Zeichenfolge|Beschreibung der Rollenzuweisung.|
+|resourceScopes|Zeichenfolgen-Sammlung|Liste der IDs der Rollenbereichsmitglieder-Sicherheitsgruppen.  Dies sind IDs aus Azure Active Directory.|
 
 
 
@@ -78,6 +78,11 @@ Content-Length: 242
   ]
 }
 ```
+
+
+
+
+
 
 
 

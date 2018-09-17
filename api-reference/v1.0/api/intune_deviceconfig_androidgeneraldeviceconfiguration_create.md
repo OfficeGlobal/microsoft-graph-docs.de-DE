@@ -50,7 +50,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |cellularBlockVoiceRoaming|boolesch|Gibt an, ob Sprachroaming blockiert werden soll.|
 |cellularBlockWifiTethering|boolesch|Gibt an, ob die Synchronisierung von WLAN-Tethering blockiert werden soll.|
 |compliantAppsList|Collection von Objekten des Typs [appListItem](../resources/intune_deviceconfig_applistitem.md)|Liste aller Apps, für die die Konformitätsrichtlinie gilt (Zulassungsliste oder Sperrliste, gesteuert über „compliantAppListType“). Diese Collection darf maximal 10.000 Elemente enthalten.|
-|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Typ der in „compliantAppsList“ definierten Liste. Die möglichen Werte sind: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
+|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Typ der Liste, die in der CompliantAppsList ist. Mögliche Werte sind: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |diagnosticDataBlockSubmission|boolesch|Gibt an, ob die Übermittlung von Diagnosedaten blockiert werden soll.|
 |locationServicesBlocked|boolesch|Gibt an, ob die Ortungsdienste blockiert werden sollen.|
 |googleAccountBlockAutoSync|boolesch|Gibt an, ob die automatische Synchronisierung von Google-Konten blockiert werden soll.|
@@ -66,7 +66,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Zeitraum von Inaktivität in Minuten, bevor es zu einem Bildschirmtimeout kommt|
 |passwordPreviousPasswordBlockCount|Int32|Anzahl der zuletzt verwendeten Kennwörter, die nicht erneut verwendet werden dürfen. Gültige Werte: 0 bis 24.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Legt fest, nach wie vielen fehlgeschlagenen Anmeldeversuchen eine Zurücksetzung auf die Werkseinstellungen durchgeführt wird. Gültige Werte: 4 bis 11.|
-|passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|Geforderter Kennworttyp. Die möglichen Werte sind: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
+|passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|Typ des Kennworts, das erforderlich ist. Mögliche Werte sind: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
 |passwordRequired|boolesch|Gibt an, ob ein Kennwort erforderlich ist.|
 |powerOffBlocked|boolesch|Gibt an, ob das Ausschalten des Geräts blockiert werden soll.|
 |factoryResetBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer eine Zurücksetzung auf die Werkseinstellungen durchführt.|
@@ -82,7 +82,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |webBrowserBlockAutofill|boolesch|Gibt an, ob das AutoAusfüllen-Feature des Webbrowsers blockiert werden soll.|
 |webBrowserBlockJavaScript|boolesch|Gibt an, ob JavaScript im Webbrowser blockiert werden soll.|
 |webBrowserBlocked|boolesch|Gibt an, ob der Webbrowser blockiert werden soll.|
-|webBrowserCookieSettings|[webBrowserCookieSettings](../resources/intune_deviceconfig_webbrowsercookiesettings.md)|Cookieeinstellungen des Webbrowsers. Die möglichen Werte sind: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
+|webBrowserCookieSettings|[webBrowserCookieSettings](../resources/intune_deviceconfig_webbrowsercookiesettings.md)|Cookie-Einstellungen im Webbrowser. Mögliche Werte sind: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
 |wiFiBlocked|boolesch|Gibt an, ob die WLAN-Synchronisierung blockiert werden soll.|
 |appsInstallAllowList|Collection von Objekten des Typs [appListItem](../resources/intune_deviceconfig_applistitem.md)|Liste von Apps, die auf dem KNOX-Gerät installiert werden dürfen. Diese Collection darf maximal 500 Elemente enthalten.|
 |appsLaunchBlockList|Collection von Objekten des Typs [appListItem](../resources/intune_deviceconfig_applistitem.md)|Liste von Apps, die auf dem KNOX-Gerät nicht gestartet werden dürfen. Diese Collection darf maximal 500 Elemente enthalten.|
@@ -304,6 +304,11 @@ Content-Length: 3205
   "securityRequireVerifyApps": true
 }
 ```
+
+
+
+
+
 
 
 

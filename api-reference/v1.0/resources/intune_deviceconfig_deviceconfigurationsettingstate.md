@@ -9,7 +9,7 @@ Status der Konfigurationseinstellungen für ein bestimmtes Gerät
 |Einstellung|Zeichenfolge|Die gemeldete Einstellung|
 |settingName|Zeichenfolge|Lokalisierter/benutzerfreundlicher Name der Einstellung, die gemeldet wird|
 |instanceDisplayName|Zeichenfolge|Name der Einstellungsinstanz, die gemeldet wird.|
-|Status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|Zustand|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Fehlercode für die Einstellung|
 |errorDescription|Zeichenfolge|Fehlerbeschreibung|
 |userId|Zeichenfolge|UserId|
@@ -50,6 +50,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "currentValue": "String"
 }
 ```
+
+
+
+
+
 
 
 

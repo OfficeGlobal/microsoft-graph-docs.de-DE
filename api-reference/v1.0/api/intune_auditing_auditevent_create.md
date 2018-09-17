@@ -24,8 +24,8 @@ POST /deviceManagement/auditEvents
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „auditEvent“ an.
@@ -34,18 +34,18 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|displayName|String|Anzeigename des Ereignisses|
-|componentName|String|Name der Komponente|
-|actor|[auditActor](../resources/intune_auditing_auditactor.md)|AAD-Benutzer und -Anwendung, die dem Überwachungsereignis zugeordnet sind|
-|activity|String|Anzeigename der Aktivität|
+|ID|Zeichenfolge|Schlüssel der Entität|
+|displayName|Zeichenfolge|Anzeigename des Ereignisses|
+|componentName|Zeichenfolge|Name der Komponente|
+|Akteur|[auditActor](../resources/intune_auditing_auditactor.md)|AAD-Benutzer und -Anwendung, die dem Überwachungsereignis zugeordnet sind|
+|Aktivität|Zeichenfolge|Anzeigename der Aktivität|
 |activityDateTime|DateTimeOffset|Datum und Uhrzeit der Durchführung der Aktivität im UTC-Format|
-|activityType|String|Typ der durchgeführten Aktivität|
-|activityOperationType|String|HTTP-Vorgangstyp der Aktivität|
-|activityResult|String|Ergebnis der Aktivität|
+|activityType|Zeichenfolge|Typ der durchgeführten Aktivität|
+|activityOperationType|Zeichenfolge|HTTP-Vorgangstyp der Aktivität|
+|activityResult|Zeichenfolge|Ergebnis der Aktivität|
 |correlationId|Guid|ID der Clientanforderung, die zur Korrelation von Aktivitäten im System verwendet wird|
-|resources|Collection von Objekten des Typs [auditResource](../resources/intune_auditing_auditresource.md)|Ressourcen, die geändert werden|
-|category|String|Überwachungskategorie|
+|Ressourcen|Collection von Objekten des Typs [auditResource](../resources/intune_auditing_auditresource.md)|Ressourcen, die geändert werden|
+|Kategorie|Zeichenfolge|Überwachungskategorie|
 
 
 
@@ -153,6 +153,11 @@ Content-Length: 1436
   "category": "Category value"
 }
 ```
+
+
+
+
+
 
 
 

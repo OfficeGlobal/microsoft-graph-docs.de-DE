@@ -19,13 +19,14 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 -->
 ``` http
 POST /deviceManagement/importedWindowsAutopilotDeviceIdentities
+POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des importedWindowsAutopilotDeviceIdentity-Objekts an.
@@ -34,12 +35,12 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|GUID des Objekts|
-|orderIdentifier|String|Auftrags-ID des Windows AutoPilot-Geräts|
-|serialNumber|String|Seriennummer des Windows AutoPilot-Geräts|
-|productKey|String|Produktschlüssel des Windows AutoPilot-Geräts|
-|hardwareIdentifier|Binary|Hardware-Blob des Windows AutoPilot-Geräts|
-|state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate.md)|Aktueller Zustand des importierten Geräts|
+|ID|Zeichenfolge|GUID des Objekts|
+|orderIdentifier|Zeichenfolge|Auftrags-ID des Windows AutoPilot-Geräts|
+|serialNumber|Zeichenfolge|Seriennummer des Windows AutoPilot-Geräts|
+|productKey|Zeichenfolge|Product Key des Windows AutoPilot-Geräts|
+|hardwareIdentifier|Binär|Hardware-Blob des Windows AutoPilot-Geräts|
+|Zustand|[importedWindowsAutopilotDeviceIdentityState](../resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate.md)|Aktueller Status des importierten Geräts|
 
 
 
@@ -93,6 +94,11 @@ Content-Length: 590
   }
 }
 ```
+
+
+
+
+
 
 
 

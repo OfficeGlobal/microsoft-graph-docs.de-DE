@@ -24,8 +24,8 @@ POST /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Annehmen|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung für das windowsInformationProtectionNetworkLearningSummary-Objekt ein.
@@ -34,8 +34,8 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für die WindowsInformationProtectionNetworkLearningSummary.|
-|url|String|Website-URL|
+|ID|Zeichenfolge|Eindeutiger Bezeichner für die WindowsInformationProtectionNetworkLearningSummary.|
+|URL|Zeichenfolge|Website-URL|
 |deviceCount|Int32|Geräteanzahl|
 
 
@@ -72,6 +72,11 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
+
+
+
+
+
 
 
 

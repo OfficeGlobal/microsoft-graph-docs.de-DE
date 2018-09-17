@@ -28,7 +28,7 @@ Sie erbt von [mobileApp](../resources/intune_apps_mobileapp.md).
 |owner|Zeichenfolge|Der Besitzer der App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
 |developer|Zeichenfolge|Der Entwickler der App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
 |notes|Zeichenfolge|Hinweise zur App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Der Veröffentlichungsstatus der App. Eine App kann erst zugewiesen werden, wenn sie veröffentlicht wurde. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md). Mögliche Werte sind `notPublished`, `processing` und `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Der Veröffentlichungsstand der App. Die App kann nur dann zugewiesen werden, wenn die App veröffentlicht wird. Vererbt von [mobileApp](../resources/intune_apps_mobileapp.md). Die möglichen Werte sind: `notPublished`, `processing`, `published`.|
 |committedContentVersion|Zeichenfolge|Die interne zugesicherte Inhaltsversion.|
 |fileName|Zeichenfolge|Der Name der Hauptdatei der Branchenanwendung.|
 |size|Int64|Die Gesamtgröße einschließlich aller hochgeladenen Dateien.|
@@ -44,9 +44,8 @@ Sie erbt von [mobileApp](../resources/intune_apps_mobileapp.md).
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.mobileApp",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileLobApp"
 }-->
 ``` json
@@ -75,6 +74,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "size": 1024
 }
 ```
+
+
+
+
+
 
 
 

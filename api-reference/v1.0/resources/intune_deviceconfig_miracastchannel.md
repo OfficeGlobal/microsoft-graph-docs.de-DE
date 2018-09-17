@@ -7,26 +7,31 @@ Mögliche Werte für Miracast-Kanal.
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |userDefined|0|Benutzerdefiniert, Standardwert, ohne Vorsatz.|
-|one|1|Eins.|
-|two|2|Zwei.|
-|three|3|Drei.|
-|four|4|Vier.|
-|five|5|Fünf.|
-|six|6|Sechs.|
-|seven|7|Sieben.|
-|eight|8|Acht.|
-|nine|9|Neun.|
-|ten|10|Zehn.|
+|ONE|1|Eins.|
+|zwei|2|Zwei.|
+|drei|3|Drei.|
+|vier|4|Vier.|
+|fünf|5|Fünf.|
+|Sechs|6|Sechs.|
+|Sieben|7|Sieben.|
+|acht|8|Acht.|
+|Neun|9|Neun.|
+|Zehn|10|Zehn.|
 |eleven|11|Elf.|
-|thirtySix|36|Sechsunddreißig.|
-|forty|40|Vierzig.|
-|fortyFour|44|Vierundvierzig.|
-|fortyEight|48|Achtundvierzig.|
-|oneHundredFortyNine|149|Einhundertneunundvierzig.|
-|oneHundredFiftyThree|153|Einhundertdreiundfünfzig.|
-|oneHundredFiftySeven|157|Einhundertsiebenundfünfzig.|
-|oneHundredSixtyOne|161|Einhunderteinundsechzig.|
-|oneHundredSixtyFive|165|Einhundertfünfundsechzig.|
+|Sechsundreißig|36|Sechsunddreißig.|
+|Vierzig|40|Vierzig.|
+|Vierundvierzig|44|Vierundvierzig.|
+|Achtundvierzig|48|Achtundvierzig.|
+|Einhunderneunundvierzig|149|Einhundertneunundvierzig.|
+|Einhunderdreiundfünfzig|153|Einhundertdreiundfünfzig.|
+|Einhundersiebenundfünfzig|157|Einhundertsiebenundfünfzig.|
+|Einhundereinundsechzig|161|Einhunderteinundsechzig.|
+|Einhundertfünfundsechzig|165|Einhundertfünfundsechzig.|
+
+
+
+
+
 
 
 

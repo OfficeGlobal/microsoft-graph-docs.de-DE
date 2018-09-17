@@ -34,7 +34,7 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|syncType|[deviceManagementExchangeConnectorSyncType](../resources/intune_onboarding_devicemanagementexchangeconnectorsynctype.md)|Typ der auszuführenden Synchronisierung (vollständige Synchronisierung oder Deltasynchronisierung)|
+|syncType|[deviceManagementExchangeConnectorSyncType](../resources/intune_onboarding_devicemanagementexchangeconnectorsynctype.md)|Typ der auszuführenden Synchronisierung (vollständige Synchronisierung oder Deltasynchronisierung).|
 
 
 
@@ -60,6 +60,11 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
+
+
 
 
 

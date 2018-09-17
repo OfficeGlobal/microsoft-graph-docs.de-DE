@@ -22,12 +22,12 @@ GET /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceComplia
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Erforderlich.|
-|Annehmen|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -52,10 +52,10 @@ Content-Length: 483
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
+    "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
     "setting": "Setting value",
     "settingName": "Setting Name value",
     "platformType": "iOS",
-    "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
     "unknownDeviceCount": 2,
     "notApplicableDeviceCount": 8,
     "compliantDeviceCount": 4,
@@ -66,6 +66,11 @@ Content-Length: 483
   }
 }
 ```
+
+
+
+
+
 
 
 

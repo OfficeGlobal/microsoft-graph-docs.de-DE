@@ -7,9 +7,14 @@ Mögliche Werte für die Sicherheitsebene der Internetsite.
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |userDefined|0|Benutzerdefiniert, Standardwert, keine Vorgabe.|
-|Mittel|1|Mittel.|
+|mittel|1|Mittel.|
 |mediumHigh|2|Mittelhoch.|
 |Hoch|3|Hoch.|
+
+
+
+
+
 
 
 

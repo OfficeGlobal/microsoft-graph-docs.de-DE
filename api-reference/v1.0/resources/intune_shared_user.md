@@ -7,13 +7,13 @@ Stellt ein user-Objekt von Azure Active Directory dar.
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Benutzer auflisten](../api/intune_shared_user_list.md)-Objekte.|
-|[Benutzer abrufen](../api/intune_shared_user_get.md)-Objekt.|
-|[Benutzer erstellen](../api/intune_shared_user_create.md)-Objekt.|
-|[Benutzer löschen](../api/intune_shared_user_delete.md).|
-|[Benutzer aktualisieren](../api/intune_shared_user_update.md)-Benutzerobjekt.|
+|[Benutzer auflisten](../api/intune_shared_user_list.md)-Objekte.||||UNTRANSLATED_CONTENT_START|||[user](../resources/intune_shared_user.md) collection|||UNTRANSLATED_CONTENT_END||||Auflisten von Eigenschaften und Beziehungen der [Benutzer](../resources/intune_shared_user.md)-Objekte.|
+|[Benutzer abrufen](../api/intune_shared_user_get.md)-Objekt.||||UNTRANSLATED_CONTENT_START|||[user](../resources/intune_shared_user.md) collection|||UNTRANSLATED_CONTENT_END||||Lesen von Eigenschaften und Beziehungen des [Benutzer](../resources/intune_shared_user.md)-Objekts.|
+|[Benutzer erstellen](../api/intune_shared_user_create.md)-Objekt.||||UNTRANSLATED_CONTENT_START|||[user](../resources/intune_shared_user.md) collection|||UNTRANSLATED_CONTENT_END||||Dient zum Erstellen eines neuen [Benutzer](../resources/intune_shared_user.md)-Objekts.|
+|[Benutzer löschen](../api/intune_shared_user_delete.md).|Keine|Löscht ein [user](../resources/intune_shared_user.md)-Objekt.|
+|[Benutzer aktualisieren](../api/intune_shared_user_update.md)-Objekt.|[Benutzer](../resources/intune_shared_user.md)|Aktualisieren der Eigenschaften eines [Benutzer](../resources/intune_shared_user.md)-Objekts.|
 |**Geräteverwaltung**|
-|[removeAllDevicesFromManagement-Aktion](../api/intune_shared_user_removealldevicesfrommanagement.md)|Keine|Die Verwaltung aller Geräte für diesen Benutzer außer Kraft setzen|
+|[removeAllDevicesFromManagement-Aktion](../api/intune_shared_user_removealldevicesfrommanagement.md)|Keine|Die Verwaltung aller Geräte für diesen Benutzer einstellen.|
 |**Mobile Anwendungsverwaltung (MAM)**|
 |[getManagedAppDiagnosticStatuses-Funktion](../api/intune_shared_user_getmanagedappdiagnosticstatuses.md)|[managedAppDiagnosticStatus](../resources/intune_mam_managedappdiagnosticstatus.md)-Sammlung|Ruft den Status der Diagnoseüberprüfung für einen bestimmten Benutzer ab.|
 |[getManagedAppPolicies-Funktion](../api/intune_shared_user_getmanagedapppolicies.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md)-Sammlung|Ruft App-Einschränkungen für einen bestimmten Benutzer ab.|
@@ -22,7 +22,7 @@ Stellt ein user-Objekt von Azure Active Directory dar.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Eindeutiger Bezeichner des Benutzers.|
+|ID|Zeichenfolge|Eindeutiger Bezeichner des Benutzers|
 |**Onboarding**|
 |deviceEnrollmentLimit|Int32|Der Grenzwert für die maximale Anzahl von Geräten, die der Benutzer registrieren kann. Zulässige Werte sind 5 oder 1000.|
 
@@ -31,7 +31,7 @@ Stellt ein user-Objekt von Azure Active Directory dar.
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
 |**Geräteverwaltung**|
-|managedDevices|[managedDevice](../resources/intune_devices_manageddevice.md)-Sammlung|Die mit dem Benutzer verknüpften verwalteten Geräte.|
+|managedDevices|[managedDevice](../resources/intune_devices_manageddevice.md)-Sammlung|Die dem Benutzer zugeordneten verwalteten Geräte.|
 |**Mobile Anwendungsverwaltung (MAM)**|
 |managedAppRegistrations|[managedAppRegistration](../resources/intune_mam_managedappregistration.md)-Sammlung|Null oder mehr verwaltete App-Registrierungen, die dem Benutzer gehören.|
 |**Problembehandlung**|

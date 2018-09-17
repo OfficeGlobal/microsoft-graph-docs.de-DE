@@ -6,8 +6,13 @@ Zeichensatz, der für die App-PIN eines Benutzers verwendet werden soll
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|numeric|0|Numerische Zeichen|
+|numerisch|0|Numerische Zeichen|
 |alphanumericAndSymbol|1|Alphanumerische und Sonderzeichen|
+
+
+
+
+
 
 
 

@@ -24,8 +24,8 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -45,7 +45,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8854
+Content-Length: 8922
 
 {
   "value": [
@@ -159,6 +159,7 @@ Content-Length: 8854
       "kioskModeAllowVolumeButtons": true,
       "kioskModeAllowZoomSettings": true,
       "kioskModeAppStoreUrl": "https://example.com/kioskModeAppStoreUrl/",
+      "kioskModeBuiltInAppId": "Kiosk Mode Built In App Id value",
       "kioskModeRequireAssistiveTouch": true,
       "kioskModeRequireColorInversion": true,
       "kioskModeRequireMonoAudio": true,
@@ -272,6 +273,11 @@ Content-Length: 8854
   ]
 }
 ```
+
+
+
+
+
 
 
 

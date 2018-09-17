@@ -8,7 +8,8 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
-|Delegiert (Geschäfts-, Schul- oder Unikonto)| (on-boarding) DeviceManagementApps.ReadWrite.All|
+|Delegiert (Arbeits- oder Schulkonto)| 
+| &nbsp; &nbsp; _Onboarding_ | DeviceManagementApps.ReadWrite.All|
 |Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 
@@ -25,7 +26,7 @@ POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
 |Kopfzeile|Wert|
 |:---|:---|
 |Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -33,15 +34,16 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 ## <a name="response"></a>Antwort
 Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` zurück.
 
-## <a name="example"></a>Beispiel
-### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+## <a name="example-request"></a>Beispielanforderung
+
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/syncMicrosoftStoreForBusinessApps
 ```
 
 ### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+
+Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+
 ``` http
 HTTP/1.1 204 No Content
 ```

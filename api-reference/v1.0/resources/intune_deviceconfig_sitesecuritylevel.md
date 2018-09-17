@@ -7,11 +7,16 @@ Mögliche Werte für die Sicherheitsebene der Site.
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |userDefined|0|Benutzerdefiniert, Standardwert, ohne Vorsatz.|
-|low|1|Niedrig.|
+|niedrig|1|Niedrig.|
 |mediumLow|2|Mittelniedrig.|
-|medium|3|Mittel.|
+|mittel|3|Mittel.|
 |mediumHigh|4|Mittelhoch.|
 |high|5|Hoch.|
+
+
+
+
+
 
 
 

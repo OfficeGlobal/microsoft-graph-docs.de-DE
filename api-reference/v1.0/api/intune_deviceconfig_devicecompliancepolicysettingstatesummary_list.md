@@ -24,8 +24,8 @@ GET /deviceManagement/deviceCompliancePolicySettingStateSummaries
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -51,10 +51,10 @@ Content-Length: 521
   "value": [
     {
       "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
+      "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
       "setting": "Setting value",
       "settingName": "Setting Name value",
       "platformType": "iOS",
-      "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
       "unknownDeviceCount": 2,
       "notApplicableDeviceCount": 8,
       "compliantDeviceCount": 4,
@@ -66,6 +66,11 @@ Content-Length: 521
   ]
 }
 ```
+
+
+
+
+
 
 
 

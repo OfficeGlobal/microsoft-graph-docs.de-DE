@@ -7,8 +7,13 @@ Gibt an, welche Stufe der sicheren Suche (Filtern von nicht jugendfreien Inhalte
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |userDefined|0|Benutzerdefiniert, Standardwert, keine Vorgabe.|
-|strikt|1|Strikt, strengste Filterung von nicht jugendfreien Inhalten.|
-|moderat|2|Moderate Filterung von nicht jugendfreien Inhalten (gültige Suchergebnisse werden nicht gefiltert).|
+|strict|1|Strikt, strengste Filterung von nicht jugendfreien Inhalten.|
+|moderate|2|Moderate Filterung von nicht jugendfreien Inhalten (gültige Suchergebnisse werden nicht gefiltert).|
+
+
+
+
+
 
 
 

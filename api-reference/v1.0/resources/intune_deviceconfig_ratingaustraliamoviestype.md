@@ -8,11 +8,16 @@ Bezeichnungen der Film-Bewertungen in Australien
 |:---|:---|:---|
 |allAllowed|0|Standardwert: Alle Filminhalte zugelassen|
 |allBlocked|1|Keine Filminhalte zulassen|
-|general|2|Die Klassifizierung G ist geeignet für alle Altersstufen|
+|allgemein|2|Die Klassifizierung G ist geeignet für alle Altersstufen|
 |parentalGuidance|3|Die Klassifizierung PG bedeutet, dass bei Kindern oder Jugendlichen unter 15 Jahren die Begleitung durch Erziehungsberechtigte oder Aufsichtspersonen angeraten ist|
 |mature|4|Die M-Klassifizierung ist nicht für Zuschauer unter 15 Jahren zu empfehlen|
 |agesAbove15|5|Die Klassifizierung MA15+ ist nicht für Zuschauer unter 15 Jahren geeignet|
 |agesAbove18|6|Die Klassifizierung R18+ ist nicht für Zuschauer unter 18 Jahren geeignet|
+
+
+
+
+
 
 
 

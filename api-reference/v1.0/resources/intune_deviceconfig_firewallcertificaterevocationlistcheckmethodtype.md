@@ -7,9 +7,14 @@ Mögliche Werte für firewallCertificateRevocationListCheckMethod
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |deviceDefault|0|Von Intune wurde kein Wert konfiguriert, den vom Benutzer konfigurierten Standartwerd für das Gerät nicht außer Kraft setzen|
-|Keine|1|Zertifikatsperrliste nicht prüfen|
+|keine|1|Zertifikatsperrliste nicht prüfen|
 |Versuch|2|CRL-Überprüfung versuchen und Zertifikat nur zulassen, wenn das Zertifikat von der Überprüfung bestätigt wird|
 |erfordert|3|Erfolgreiche CRL-Überprüfung anfordern, bevor ein Zertifikat zugelassen wird|
+
+
+
+
+
 
 
 

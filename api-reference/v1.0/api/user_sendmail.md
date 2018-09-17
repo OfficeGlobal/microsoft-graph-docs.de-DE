@@ -30,8 +30,8 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Nachricht|[Nachricht](../resources/message.md)|Die zu sendende Nachricht. Erforderlich.|
-|SaveToSentItems|Boolescher Wert|,Gibt an, ob die Nachricht im Ordner „Gesendete Elemente“ gespeichert werden soll. Geben Sie es nur an, wenn der Parameter false ist; der Standardwert true ist.  Optional. |
+|Nachricht|[Meldung](../resources/message.md)|Die zu sendende Nachricht. Erforderlich.|
+|saveToSentItems|Boolesch|,Gibt an, ob die Nachricht im Ordner „Gesendete Elemente“ gespeichert werden soll. Geben Sie es nur an, wenn der Parameter false ist; der Standardwert true ist.  Optional. |
 
 ## <a name="response"></a>Antwort
 
@@ -39,7 +39,7 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202 Accepted` zur�
 
 ## <a name="example"></a>Beispiel
 Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
-##### <a name="request"></a>Anforderung
+##### <a name="request-1"></a>Anforderung 1
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
@@ -48,7 +48,6 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 POST https://graph.microsoft.com/v1.0/me/sendMail
 Content-type: application/json
-Content-length: 512
 
 {
   "message": {
@@ -76,7 +75,55 @@ Content-length: 512
 }
 ```
 
-##### <a name="response"></a>Antwort
+##### <a name="response-1"></a>Antwort 1
+Nachfolgend sehen Sie ein Beispiel der Antwort.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 202 Accepted
+```
+
+##### <a name="request-2"></a>Anforderung 2
+Im nächsten Beispiel wird eine Meldung mit benutzerdefinierten Internet-Nachrichten-Headern erstellt und die Nachricht gesendet.
+<!-- {
+  "blockType": "request",
+  "name": "user_sendmail_with_headers"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/sendMail
+Content-type: application/json
+
+{
+  "message": {
+    "subject": "9/9/2018: concert",
+    "body": {
+      "contentType": "HTML",
+      "content": "The group represents Nevada."
+    },
+    "toRecipients": [
+      {
+        "emailAddress": {
+          "address": "AlexW@contoso.OnMicrosoft.com"
+        }
+      }
+    ],
+    "internetMessageHeaders":[
+      {
+        "name":"x-custom-header-group-name",
+        "value":"Nevada"
+      },
+      {
+        "name":"x-custom-header-group-id",
+        "value":"NV001"
+      }
+    ]
+  }
+}
+```
+
+##### <a name="response-2"></a>Antwort 2
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 <!-- {
   "blockType": "response",

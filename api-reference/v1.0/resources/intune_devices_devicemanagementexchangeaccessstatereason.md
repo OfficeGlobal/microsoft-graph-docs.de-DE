@@ -2,11 +2,11 @@
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Grund des Gerätezustandes des Exchange-Zugriffs.
-## <a name="members"></a>Mitglieder
-|Mitglied|Wert|Beschreibung|
+Grund des Exchange-Zugriffszustandes des Geräts.
+## <a name="members"></a>Elemente
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Keine|0|Kein Zugriffszustandsgrund von Exchange gefunden|
+|keine|0|Kein Zugriffszustandsgrund von Exchange gefunden|
 |unbekannt|1|Unbekannter Grund des Zugriffszustandes|
 |exchangeGlobalRule|2|Zugriffszustand durch Exchange globale Regel bestimmt|
 |exchangeIndividualRule|3|Zugriffszustand durch Exchange einzelne Regel bestimmt|
@@ -22,6 +22,11 @@ Grund des Gerätezustandes des Exchange-Zugriffs.
 |azureADBlockDueToAccessPolicy|14|Zugriffszustand durch AAD-Zugriffsrichtlinie widerrufen|
 |compromisedPassword|15|Zugriffszustand wurde durch kompromittierendes Kennwort widerrufen|
 |deviceNotKnownWithManagedApp|16|Zugriffszustand wurde durch die Herausforderung für verwaltete Anwendungen widerrufen|
+
+
+
+
+
 
 
 

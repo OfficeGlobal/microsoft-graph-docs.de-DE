@@ -1,10 +1,10 @@
-# <a name="cross-device-experiences-in-microsoft-graph"></a>Geräteübergreifende Oberflächen in Microsoft Graph
+# <a name="cross-device-experiences-in-microsoft-graph"></a>Geräteübergreifende Oberflächen in Microsoft Graph
 
 Die Gerätevielfalt ist heute nahezu unüberschaubar. Heimanwender nutzen Geräte in den verschiedensten Formfaktoren und mit den unterschiedlichsten Plattformen: Morgens lesen sie die neuesten Nachrichten auf ihrem Tablet, auf dem Weg zur Arbeit checken sie ihre E-Mails auf dem Smartphone und im Büro erledigen sie ihre Aufgaben am Desktop-PC. Abends schauen sie sich vielleicht einen Film auf ihrer Heimkonsole an und hören über intelligente Lautsprecher die Nachrichten des Tages. Der durchschnittliche Kunde nutzt im Laufe des Tages mehrere verschiedene Geräte und Plattformen. 
 
 In der Vergangenheit war das Nutzungsverhalten zwischen den einzelnen Formfaktoren klar abgegrenzt, und es wurden auf jedem Formfaktor spezifische Aufgaben erledigt. Heute jedoch nutzen Heimanwender verschiedenste Geräte und möchten auf jedem einzelnen von ihnen auch jede Aktivität durchführen können. Die während eines typischen Tages anfallenden Aufgaben (ob zu Hause im Familienkreis oder im Büro unter Kollegen) sind nicht mehr geräteorientiert, sondern **anwenderorientiert**. Heimanwender möchten jederzeit genau den Bildschirm verwenden können, den sie gerade zur Hand haben, unabhängig von der Eingabequelle. In der Realität stellt sich dabei oft heraus, dass jedes Gerät Einschränkungen mit sich bringt. Geräteübergreifendes Arbeiten erfordert unnatürliche Aktionen: Der Anwender muss sich selbst eine E-Mail schicken oder muss USB-Sticks verwenden. Der Kunde erlebt beim Wechsel zwischen seinen Geräten einen Bruch, und manchmal wird aufgrund eben dieses Kontextwechsels Wichtiges nicht erledigt. Auch für Entwickler ergeben sich dadurch Herausforderungen. Wenn Kunden bei der Nutzung einer App Brüche erleben, sinkt ihre Akzeptanz der App.
 
-Microsoft arbeitet derzeit an einer Plattform zur Erstellung von Oberflächen, die die Beschränkungen einzelner Geräte aufheben und eine geräteübergreifende Harmonisierung möglich machen. Mit ihr können Sie **anwenderorientierte** Szenarien erstellen, die den Benutzer begleiten und Einschränkungen zwischen Geräten aufheben, unabhängig von Formfaktor oder Plattform. Microsoft Graph ist ein zentraler, vereinheitlichter Endpunkt für den Zugriff auf Daten aus Azure Active Directory und Office 365. Ab sofort können Sie über Microsoft Graph zusätzlich auf die Aktivitäten und Geräte Ihrer Kunden zugreifen und funktionsreiche, anwenderorientierte Oberflächen entwerfen, die auf allen Geräten und Plattformen zur Verfügung stehen. 
+Microsoft arbeitet derzeit an einer Plattform zur Erstellung von Oberflächen, die die Beschränkungen einzelner Geräte aufheben und eine geräteübergreifende Harmonisierung möglich machen. Mit ihr können Sie **anwenderorientierte** Szenarien erstellen, die den Benutzer begleiten und Einschränkungen zwischen Geräten aufheben, unabhängig von Formfaktor oder Plattform. Microsoft Graph ist ein zentraler, vereinheitlichter Endpunkt für den Zugriff auf Daten aus Azure Active Directory und Office 365. Ab sofort können Sie über Microsoft Graph zusätzlich auf die Aktivitäten und Geräte Ihrer Kunden zugreifen und funktionsreiche, anwenderorientierte Oberflächen entwerfen, die auf allen Geräten und Plattformen zur Verfügung stehen. 
 
 ## <a name="why-invest-in-cross-device-experiences"></a>Gründe für eine Investition in geräteübergreifende Oberflächen
 
@@ -14,8 +14,15 @@ Mithilfe von Aktivitäten können Sie die einzelnen Aufgaben der Benutzer Ihrer 
 ### <a name="build-rich-cross-device-experiences-by-using-the-device-relay-api"></a>Erstellen funktionsreicher geräteübergreifender Oberflächen mithilfe der Geräterelay-API 
 Die Geräterelay-API macht neben Microsoft-Geräten (PCs, Windows Phones, Xbox, IoT, HoloLens etc.) auch Android- und iOS-Geräte verfügbar. So lassen sich die Barrieren zwischen den Geräten Ihrer Benutzer effektiv aufbrechen. Sie können Apps erstellen, die auf die Benutzerumgebung zurückgreifen, und funktionsreiche Oberflächen entwerfen, die nicht auf ein einzelnes Gerät beschränkt sind, sondern sich in Echtzeit überall nutzen lassen. 
 
+## <a name="reach-out-to-and-engage-with-users-anywhere-via-a-coherent-and-human-centric-notification-story-preview"></a>Erreichen und kontaktieren Sie Benutzer überall mit einer zusammenhängenden und menschlichen Textabschnitt-Benachrichtigung (Vorschau)
+
+Benachrichtigungen sind mit die effektivsten und direktesten Wege, um mit Ihren Benutzern zu kommunizieren und sie einzubinden. 
+
+Mit der Microsoft Graph-Benachrichtigungs-API können Sie Benachrichtigungen in einer auf Menschen, anstatt auf Geräte zugeschnittenen Art zustellen. Sie können darauf abzielen, dass ein Benutzer Benachrichtigungen an das Microsoft Graph-Benachrichtigungen-Framework sendet und sich darauf verlässt, dass die Benachrichtigungen an jeden Endpunkt übermittelt werden, an denen der Benutzer angemeldet ist. Die Geräte-übergreifende Benachrichtigungsverwaltung wird mit der Microsoft Graph-Benachrichtigungs-API auch einfacher, damit Sie Benachrichtigungen über die Geräte von Benutzern hinweg synchronisieren und Redundanzen und Unterbrechungen für Ihre Benutzer reduzieren können. 
+
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Use the Microsoft Graph API to enable cross-device experiences](../api-reference/v1.0/resources/cross-device-reference-overview.md)
-- [Weitere Informationen zur Aktivitätsfeed-API in Microsoft Graph](activity-feed-concept-overview.md)
-- [Weitere Informationen zur Geräterelay-API in Microsoft Graph](device-relay-concept-overview.md)
+- [Nutzen Sie die Microsoft Graph-API, um Geräte-übergreifende Erfahrungen zu ermöglichen](../api-reference/v1.0/resources/cross-device-reference-overview.md)
+- [Weitere Informationen zur Aktivitätsfeed-API in Microsoft Graph](activity-feed-concept-overview.md)
+- [Weitere Informationen zur Geräterelay-API in Microsoft Graph](device-relay-concept-overview.md)
+- [Erfahren Sie mehr über die Microsoft Graph-Benachrichtigungs-API in Microsoft Graph](notifications-concept-overview.md)

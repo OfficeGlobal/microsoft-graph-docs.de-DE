@@ -31,12 +31,12 @@ Sie erbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecom
 |passwordMinutesOfInactivityBeforeLock|Int32|Zeitraum von Inaktivität in Minuten, nach dem die Eingabe eines Kennworts gefordert wird|
 |passwordPreviousPasswordBlockCount|Int32|Anzahl der zuletzt verwendeten Kennwörter, die nicht erneut verwendet werden dürfen. Gültige Werte: 1 bis 24.|
 |passwordMinimumCharacterSetCount|Int32|Anzahl der Zeichensätze, die im Kennwort enthalten sein müssen|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Geforderter Kennworttyp. Mögliche Werte sind `deviceDefault`, `alphanumeric` und `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Der erforderliche Kennworttyp. Mögliche Werte: `deviceDefault`, `alphanumeric`, `numeric`.|
 |osMinimumVersion|Zeichenfolge|Mindestversion von IOS.|
 |osMaximumVersion|Zeichenfolge|Höchstversion von IOS.|
 |systemIntegrityProtectionEnabled|Boolesch|Gibt an, ob auf Geräten der Systemintegritätsschutz aktiviert sein muss.|
 |deviceThreatProtectionEnabled|Boolesch|Legt fest, dass auf Geräten der Gerätebedrohungsschutz aktiviert sein muss.|
-|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Legt die Mindestrisikostufe fest, ab der Mobile Bedrohungsschutz einen Konformitätsverstoß melden soll. Mögliche Werte: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Legt die Mindestrisikostufe fest, ob der Mobile Bedrohungsschutz einen Compliance-Verstoß melden soll. Mögliche Werte sind: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Boolesch|Gibt an, ob auf Mac OS-Geräten die Verschlüsselung erforderlich ist.|
 |firewallEnabled|Boolesch|Gibt an, ob die Firewall aktiviert werden soll oder nicht.|
 |firewallBlockAllIncoming|Boolesch|Entspricht der Option "Alle eingehende Verbindungen blockieren".|
@@ -55,13 +55,12 @@ Sie erbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecom
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceCompliancePolicy",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.macOSCompliancePolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
@@ -90,6 +89,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "firewallEnableStealthMode": true
 }
 ```
+
+
+
+
+
 
 
 

@@ -6,8 +6,13 @@ Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Offline|0|Noch nicht dokumentiert|
+|offline|0|Noch nicht dokumentiert|
 |online|1|Noch nicht dokumentiert|
+
+
+
+
+
 
 
 

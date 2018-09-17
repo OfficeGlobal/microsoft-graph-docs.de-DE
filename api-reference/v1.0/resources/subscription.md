@@ -4,7 +4,7 @@ Mit einem Abonnement kann eine Client-App Benachrichtigungen zu Änderungen an d
 
 - E-Mail, Ereignisse und Kontakte aus Outlook
 - Unterhaltungen aus Office-Gruppen
-- Laufwerk-Stammelemente aus OneDrive
+- Laufwerkstammelemente aus OneDrive
 - Benutzer und Gruppen aus dem Azure Active Directory
 
 ## <a name="json-representation"></a>JSON-Darstellung
@@ -49,24 +49,24 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 | Eigenschaft | Typ | Beschreibung |
 |:---------|:-----|:------------|
-| changeType | string | Erforderlich. Gibt den Typ der Änderung in der abonnierten Ressource an, die eine Benachrichtigung auslöst. Unterstützte Werte sind: `created`, `updated`, `deleted`. Es können mehrere Werte mithilfe einer durch Komma getrennten Liste zusammen verwendet werden.<br><br>Hinweis: Laufwerk Stamm-Element Benachrichtigungs-Support unterstützen nur den `updated` ChangeType. Support für Benutzer und Gruppen-Benachrichtigungen `updated` und `deleted` changeType.|
-| notificationUrl | string | Erforderlich. Die URL des Endpunkts, die Benachrichtigungen erhalten werden. Diese URL muss das HTTPS-Protokoll nutzen. |
-| resource | string | Erforderlich. Erforderlich. Die Basis-URL nicht einschließen (`https://graph.microsoft.com/v1.0/`). |
+| changeType | Zeichenfolge | Erforderlich. Gibt den Typ der Änderung in der abonnierten Ressource an, die eine Benachrichtigung auslöst. Unterstützte Werte sind: `created`, `updated`, `deleted`. Es können mehrere Werte mithilfe einer durch Komma getrennten Liste zusammen verwendet werden.<br><br>Hinweis: Laufwerk Stamm-Element Benachrichtigungs-Support unterstützen nur den `updated` ChangeType. Support für Benutzer und Gruppen-Benachrichtigungen `updated` und `deleted` changeType.|
+| notificationUrl | Zeichenfolge | Erforderlich. Die URL des Endpunkts, die Benachrichtigungen erhalten werden. Diese URL muss das HTTPS-Protokoll nutzen. |
+| Ressource | Zeichenfolge | Erforderlich. Gibt die Ressource ab, die für Änderungen überwacht wird. Die Basis-URL nicht einschließen (`https://graph.microsoft.com/v1.0/`). |
 | expirationDateTime | [dateTime](http://tools.ietf.org/html/rfc3339) | Erforderlich. Gibt Datum und Uhrzeit für das Ablaufen des Webhook-Abonnements an. Die Zeit wird in UTC angegeben und kann eine Dauer aus der Erstellung des Abonnements sein, die von der abonnierten Ressource abweicht.  In der folgenden Tabelle finden Sie die maximale Dauer unterstützter Abonnements. |
-| clientState | string | Optional. Gibt den Wert der `clientState`-Eigenschaft an, die in jeder Benachrichtigung vom Dienst gesendet wird. Die Höchstlänge beträgt 128 Zeichen. Der Client kann prüfen, ob die Benachrichtigung vom Dienst stammt, indem er den Wert der mit dem Abonnement gesendeten `clientState`-Eigenschaft mit dem Wert der mit jeder Benachrichtigung empfangenen `clientState`-Eigenschaft vergleicht. |
-| ID | string | Eindeutige ID für das Abonnement. Schreibgeschützt. |
-| applicationId | string | Bezeichner der Anwendung, die verwendet wird, um das Abonnement zu erstellen. Schreibgeschützt. |
-| creatorId | string | Bezeichner des Benutzers oder des Dienstprinzipals, der das Abonnement erstellt hat. Wenn die App zum Erstellen des Abonnements delegierte Berechtigungen verwendet hat, enthält dieses Feld die ID des angemeldeten Nutzers, für den die App im Auftrag von diesem Nutzer angerufen wurde. Wenn die App Anwendungsberechtigungen verwendet hat, enthält dieses Feld die Id des Dienstprinzipals entsprechend der App. Schreibgeschützt. |
+| clientState | Zeichenfolge | Optional. Gibt den Wert der `clientState`-Eigenschaft an, die in jeder Benachrichtigung vom Dienst gesendet wird. Die Höchstlänge beträgt 128 Zeichen. Der Client kann prüfen, ob die Benachrichtigung vom Dienst stammt, indem er den Wert der mit dem Abonnement gesendeten `clientState`-Eigenschaft mit dem Wert der mit jeder Benachrichtigung empfangenen `clientState`-Eigenschaft vergleicht. |
+| ID | Zeichenfolge | Eindeutige ID für das Abonnement. Schreibgeschützt. |
+| applicationId | Zeichenfolge | Bezeichner der Anwendung, die verwendet wird, um das Abonnement zu erstellen. Schreibgeschützt. |
+| creatorId | Zeichenfolge | Bezeichner des Benutzers oder des Dienstprinzipals, der das Abonnement erstellt hat. Wenn die App zum Erstellen des Abonnements delegierte Berechtigungen verwendet hat, enthält dieses Feld die ID des angemeldeten Nutzers, für den die App im Auftrag von diesem Nutzer angerufen wurde. Wenn die App Anwendungsberechtigungen verwendet hat, enthält dieses Feld die Id des Dienstprinzipals entsprechend der App. Schreibgeschützt. |
 
 ## <a name="maximum-length-of-subscription-per-resource-type"></a>Maximale Abonnementdauer pro Ressourcentyp
 
 | Ressource            | Maximal zulässige Ablaufzeit  |
 |:--------------------|:-------------------------|
-| Mail                | 4320 Minuten (3 Tage)    |
-| Kalender            | 4320 Minuten (3 Tage)    |
-| Kontakte            | 4320 Minuten (3 Tage)    |
-| Gruppenunterhaltungen | 4320 Minuten (3 Tage)    |
-| Laufwerkstammelemente    | 4320 Minuten (3 Tage) |
+| E-Mail                | 4230 Minuten (unter 3 Tage)    |
+| Kalender            | 4230 Minuten (unter 3 Tage)    |
+| Kontakte            | 4230 Minuten (unter 3 Tage)    |
+| Gruppenunterhaltungen | 4230 Minuten (unter 3 Tage)    |
+| Laufwerkstammelemente    | 4230 Minuten (unter 3 Tage)    |
 
 > **Hinweis:** Vorhandene Anwendungen und neue Anwendungen sollten den unterstützten Wert nicht überschreiten. In Zukunft werden alle Anforderungen zum Erstellen oder Erneuern eines Abonnements über den Maximalwert hinaus fehlschlagen.
 
@@ -78,10 +78,10 @@ Keine
 
 | Methode | Rückgabetyp | Beschreibung |
 |:-------|:------------|:------------|
-| [Abonnement erstellen](../api/subscription_post_subscriptions.md) | [subscription](subscription.md) | Abonniert eine Listener-Anwendung zum Empfangen von Benachrichtigungen, wenn Microsoft Graph-Daten geändert werden. |
-| [Abonnement aktualisieren](../api/subscription_update.md) | [subscription](subscription.md) | Erneuert ein Abonnement durch Aktualisierung der Ablaufzeit. |
-| [Liste von Abonnements](../api/subscription_list.md) | [subscription](subscription.md) | Listen aktiver Abonnements. |
-| [Abonnement abrufen](../api/subscription_get.md) | [subscription](subscription.md) | Dient zum Lesen der Eigenschaften und der Beziehungen des subscription-Objekts. |
+| [Abonnement erstellen](../api/subscription_post_subscriptions.md) | [Abonnement](subscription.md) | Abonniert eine Listener-Anwendung zum Empfangen von Benachrichtigungen, wenn Microsoft Graph-Daten geändert werden. |
+| [Abonnement aktualisieren](../api/subscription_update.md) | [Abonnement](subscription.md) | Erneuert ein Abonnement durch Aktualisierung der Ablaufzeit. |
+| [Liste von Abonnements](../api/subscription_list.md) | [Abonnement](subscription.md) | Listen aktiver Abonnements. |
+| [Abonnement abrufen](../api/subscription_get.md) | [Abonnement](subscription.md) | Dient zum Lesen der Eigenschaften und der Beziehungen des subscription-Objekts. |
 | [Abonnement löschen](../api/subscription_delete.md) | Keine |Löscht ein subscription-Objekt. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -7,7 +7,7 @@ Windows Information Protection – IP-Bereichssammlung
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |displayName|Zeichenfolge|Anzeigename|
-|ranges|[ipRange](../resources/intune_mam_iprange.md)-Sammlung|Sammlung der IP-Bereiche|
+|Bereiche|[ipRange](../resources/intune_mam_iprange.md)-Sammlung|Sammlung der IP-Bereiche|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -30,6 +30,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   ]
 }
 ```
+
+
+
+
+
 
 
 

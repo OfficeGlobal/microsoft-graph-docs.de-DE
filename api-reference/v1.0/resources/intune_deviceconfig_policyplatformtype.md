@@ -6,7 +6,7 @@ Unterstützte Plattformtypen für Richtlinien.
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|android|0|Android.|
+|Android|0|Android.|
 |iOS|2|iOS.|
 |macOS|3|MacOS.|
 |windowsPhone81|4|WindowsPhone 8.1.|
@@ -14,6 +14,11 @@ Unterstützte Plattformtypen für Richtlinien.
 |windows10AndLater|6|Windows 10 und höher.|
 |androidWorkProfile|7|AndroidWorkProfile.|
 |all|100|Alle Plattformen.|
+
+
+
+
+
 
 
 

@@ -24,3 +24,4 @@ Mithilfe der folgenden Microsoft Graph-APIS können Sie Benutzeraktivitäten ers
 - [Aktivität löschen](../api/projectrome_delete_activity.md)
 - [Verlaufselement erstellen oder ersetzen](../api/projectrome_put_historyitem.md)
 - [|||UNTRANSLATED_CONTENT_START|||Delete a history item|||UNTRANSLATED_CONTENT_END|||](../api/projectrome_delete_historyitem.md)
+

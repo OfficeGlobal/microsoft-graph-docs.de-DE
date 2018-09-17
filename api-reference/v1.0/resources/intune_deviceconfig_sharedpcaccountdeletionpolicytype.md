@@ -6,9 +6,15 @@ Mögliche Werte für den Fall, dass Konten auf einem freigegebenen PC gelöscht 
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|immediate|0|Sofort löschen.|
+|sofort
+|0|Sofort löschen.|
 |diskSpaceThreshold|1|Bei Speicherplatz-Schwellenwert löschen.|
 |diskSpaceThresholdOrInactiveThreshold|2|Bei Speicherplatz-Schwellenwert oder inaktivem Schwellenwert löschen.|
+
+
+
+
+
 
 
 

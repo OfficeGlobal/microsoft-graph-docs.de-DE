@@ -16,7 +16,6 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "abstract": true,
   "@odata.type": "microsoft.graph.omaSetting"
 }-->
 ``` json
@@ -27,6 +26,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "omaUri": "String"
 }
 ```
+
+
+
+
+
 
 
 

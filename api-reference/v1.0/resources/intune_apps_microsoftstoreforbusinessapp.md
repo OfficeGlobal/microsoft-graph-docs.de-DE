@@ -18,7 +18,7 @@ Sie erbt von [mobileApp](../resources/intune_apps_mobileapp.md).
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
+|ID|Zeichenfolge|Schlüssel der Entität Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
 |displayName|Zeichenfolge|Der vom Administrator bereitgestellte oder importierte Titel der App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
 |Beschreibung|Zeichenfolge|Beschreibung der App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
 |Verleger|Zeichenfolge|Der Herausgeber der App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
@@ -31,11 +31,11 @@ Sie erbt von [mobileApp](../resources/intune_apps_mobileapp.md).
 |Besitzer|Zeichenfolge|Der Besitzer der App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
 |Entwickler|Zeichenfolge|Der Entwickler der App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
 |Notizen|Zeichenfolge|Hinweise zur App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Der Veröffentlichungsstatus der App. Die App kann erst zugewiesen werden, wenn sie veröffentlicht wurde. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md). Mögliche Werte sind: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Der Veröffentlichungsstand der App. Die App kann nur dann zugewiesen werden, wenn die App veröffentlicht wurde. Vererbt von [mobileApp](../resources/intune_apps_mobileapp.md). Die möglichen Werte sind: `notPublished`, `processing`, `published`.|
 |usedLicenseCount|Int32|Die Anzahl von verwendeten Microsoft Store für Unternehmen-Lizenzen.|
 |totalLicenseCount|Int32|Die Gesamtzahl der Microsoft Store für Unternehmen-Lizenzen.|
 |productKey|Zeichenfolge|Der Product Key der App|
-|licenseType|[microsoftStoreForBusinessLicenseType](../resources/intune_apps_microsoftstoreforbusinesslicensetype.md)|Die Art der app-Lizenz. Mögliche Werte: `offline`, `online`.|
+|licenseType|[microsoftStoreForBusinessLicenseType](../resources/intune_apps_microsoftstoreforbusinesslicensetype.md)|Der Lizenztyp der App. Mögliche Werte: `offline`, `online`.|
 |packageIdentityName|Zeichenfolge|Bezeichner des App-Pakets|
 
 ## <a name="relationships"></a>Beziehungen
@@ -48,8 +48,8 @@ Sie erbt von [mobileApp](../resources/intune_apps_mobileapp.md).
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.mobileApp",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.microsoftStoreForBusinessApp"
 }-->
 ``` json
@@ -80,6 +80,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "packageIdentityName": "String"
 }
 ```
+
+
+
+
+
 
 
 

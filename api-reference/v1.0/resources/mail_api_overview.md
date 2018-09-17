@@ -14,7 +14,7 @@ Nachrichtentext kann im HTML- oder Textformat vorliegen.
 
 Sie können bekannte Ordnernamen wie `Inbox`, `Drafts`, `SentItems` oder `DeletedItems` verwenden, um bestimmte, standardmäßig für alle Benutzer vorhandene Mail-Ordner einfacher zu identifizieren. Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).
 
-So können Sie beispielsweise Nachrichten in den Outlook-Ordner **Gesendete Elemente** des angemeldeten Benutzers erhalten, ohne zuvor die Ordner-ID erhalten zu haben:
+So können Sie beispielsweise Nachrichten im Outlook-Ordner **Gesendete Elemente** des angemeldeten Benutzers erhalten, ohne zuvor die Ordner-ID erhalten zu haben:
 
 ```http
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
@@ -41,6 +41,7 @@ Die Microsoft Graph-API stellt zudem Methoden und Aktionen bereit, die allgemein
 | Benachrichtigung über Änderungen an Nachrichten in einem Ordner erhalten | [subscription](../resources/subscription.md) | [Arbeiten mit Webhooks in Microsoft Graph](../resources/webhooks.md) |
 | Nachrichten oder eine E-Mail-Ordnerhierarchie synchronisieren | [message](../resources/message.md) | [Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen](../../../concepts/delta_query_messages.md) |
 | **App-Entwicklung** | | |
+| Hinzufügen von benutzerdefinierten App-Daten als Internet-Nachrichten-Header einer Nachricht | [message](../resources/message.md) | Hinzufügen von benutzerdefinierten Daten an die **InternetMessageHeaders**-Eigenschaft der Nachricht. |
 | Benutzerdefinierte App-Daten mithilfe von Erweiterungen zu einer Nachricht hinzufügen | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](../../../concepts/extensibility_overview.md) |
 | Auf benutzerdefinierte Daten für nicht ausreichend verfügbare Outlook-MAPI-Eigenschaften zugreifen | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Übersicht über erweiterte Outlook-Eigenschaften](../resources/extended-properties-overview.md) |
 

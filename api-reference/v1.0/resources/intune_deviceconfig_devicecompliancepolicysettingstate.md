@@ -9,14 +9,14 @@ Zustand der Gerätekonformitätsrichtlinien-Einstellung für ein bestimmtes Ger�
 |Einstellung|Zeichenfolge|Die gemeldete Einstellung|
 |settingName|Zeichenfolge|Lokalisierter/benutzerfreundlicher Name der Einstellung, die gemeldet wird|
 |instanceDisplayName|Zeichenfolge|Name der Einstellungsinstanz, die gemeldet wird.|
-|Status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|Zustand|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Fehlercode für die Einstellung|
 |errorDescription|Zeichenfolge|Fehlerbeschreibung|
 |userId|Zeichenfolge|UserId|
 |userName|Zeichenfolge|UserName|
 |userEmail|Zeichenfolge|UserEmail|
 |userPrincipalName|Zeichenfolge|Benutzer-Prinzipalname|
-|sources|[settingSource](../resources/intune_deviceconfig_settingsource.md)-Sammlung|Beitragende Richtlinien|
+|Quellen|[settingSource](../resources/intune_deviceconfig_settingsource.md)-Sammlung|Beitragende Richtlinien|
 |currentValue|Zeichenfolge|Aktueller Wert der Einstellung auf dem Gerät|
 
 ## <a name="relationships"></a>Beziehungen
@@ -50,6 +50,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "currentValue": "String"
 }
 ```
+
+
+
+
+
 
 
 

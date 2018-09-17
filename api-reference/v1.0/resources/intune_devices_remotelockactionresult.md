@@ -9,22 +9,20 @@ Erbt von [deviceActionResult](../resources/intune_devices_deviceactionresult.md)
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|actionName|String|Aktionsname, geerbt von [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|actionState|String|Status der Aktion, geerbt von [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Mögliche Werte sind: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionName|Zeichenfolge|Aktionsname, geerbt von [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
+|actionState|[actionState](../resources/intune_devices_actionstate.md)|Zustand der aus [DeviceActionResult](../resources/intune_devices_deviceactionresult.md) geerbten Aktion. Mögliche Werte: `none`, `pending`, `canceled`, `active`, `done`, `failed` und `notSupported`.|
 |startDateTime|DateTimeOffset|Zeit, zu der die Aktion initiiert wurde. Geerbt von [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Zeit, zu der der Aktionszustand zuletzt aktualisiert wurde. Geerbt von [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|unlockPin|String|Pin zum Entsperren des Clients|
+|unlockPin|Zeichenfolge|Pin zum Entsperren des Clients|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.remoteLockActionResult"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.remoteLockActionResult",
@@ -35,6 +33,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "unlockPin": "String"
 }
 ```
+
+
+
+
+
 
 
 

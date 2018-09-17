@@ -24,8 +24,8 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [applePushNotificationCertificate](../resources/intune_devices_applepushnotificationcertificate.md) an.
@@ -34,12 +34,12 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für das Zertifikat|
-|appleIdentifier|String|Apple-ID des Kontos, mit dem das MDM-Push-Zertifikat erstellt wurde|
-|topicIdentifier|String|Thema-ID|
-|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Apple Push Notification-Zertifikats|
-|expirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs des Apple Push Notification-Zertifikats|
-|certificate|String|Noch nicht dokumentiert|
+|ID|Zeichenfolge|Eindeutiger Bezeichner für das Zertifikat|
+|appleIdentifier|Zeichenfolge|Apple-ID des Kontos, mit dem das MDM-Push-Zertifikat erstellt wurde|
+|topicIdentifier|Zeichenfolge|Thema-ID|
+|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Apple Push Notification-Zertifikats|
+|expirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs des Apple Push Notification-Zertifikats|
+|certificate|Zeichenfolge|Noch nicht dokumentiert|
 
 
 
@@ -80,6 +80,11 @@ Content-Length: 384
   "certificate": "Certificate value"
 }
 ```
+
+
+
+
+
 
 
 

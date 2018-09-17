@@ -7,9 +7,14 @@ Mögliche Werte, die angeben, welche Cookies in Microsoft Edge zulässig sind.
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |userDefined|0|Dem Benutzer ermöglichen, Folgendes festzulegen.|
-|Zulassen|1|Zulassen.|
+|allow|1|Zulassen.|
 |blockThirdParty|2|Nur Drittanbieter-Cookies blockieren.|
 |blockAll|3|Alle Cookies blockieren.|
+
+
+
+
+
 
 
 

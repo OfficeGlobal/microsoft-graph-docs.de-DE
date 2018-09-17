@@ -50,7 +50,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |appleNewsBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer News verwendet, wenn sich das Gerät im überwachten Modus befindet (iOS 9.0 oder höher).|
 |appsSingleAppModeList|[appListItem](../resources/intune_deviceconfig_applistitem.md)-Sammlung|Ruft die Liste von iOS-Apps ab, die autonom in den Einzelanwendungsmodus wechseln können, ab oder legt diese fest. Nur überwacht. iOS 7.0 oder höher. Diese Sammlung darf maximal 500 Elemente enthalten.|
 |appsVisibilityList|[appListItem](../resources/intune_deviceconfig_applistitem.md)-Sammlung|Liste von Apps in der Sichtbarkeitsliste (entweder eine Liste sichtbarer/startbarer Apps oder eine Liste ausgeblendeter/nicht startbarer Apps, gesteuert von AppsVisibilityListType) (iOS 9.3 und höher). Diese Sammlung darf maximal 10.000 Elemente enthalten.|
-|appsVisibilityListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Typ der Liste, die in der AppsVisibilityList enthalten ist. Mögliche Werte sind `none`, `appsInListCompliant`,`appsNotInListCompliant`.|
+|appsVisibilityListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Typ der Liste, die in der AppsVisibilityList ist. Mögliche Werte sind: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |appStoreBlockAutomaticDownloads|boolesch|Gibt an, ob das automatische Herunterladen von Apps blockiert werden soll, die auf anderen Geräten gekauft wurden, wenn sich das Gerät im überwachten Modus befindet (iOS 9.0 oder höher).|
 |appStoreBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer den App Store verwendet.|
 |appStoreBlockInAppPurchases|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer In-App-Käufe tätigt.|
@@ -67,7 +67,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |classroomAppBlockRemoteScreenObservation|boolesch|Gibt an, ob die Remotebildschirmüberwachung über die Classroom-App zugelassen wird, wenn sich das Gerät im überwachten Modus befindet (iOS 9.3 und höher).|
 |classroomAppForceUnpromptedScreenObservation|boolesch|Gibt an, ob dem Lehrer eines verwalteten Kurses in der Classroom-App automatisch die Berechtigung erteilt werden soll, den Bildschirm eines Kursteilnehmers ohne Aufforderung anzuzeigen, wenn sich das Gerät im überwachten Modus befindet.|
 |compliantAppsList|Collection von Objekten des Typs [appListItem](../resources/intune_deviceconfig_applistitem.md)|Liste aller Apps, für die die Konformitätsrichtlinie gilt (Zulassungsliste oder Sperrliste, gesteuert über „compliantAppListType“). Diese Collection darf maximal 10.000 Elemente enthalten.|
-|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Typ der in „compliantAppsList“ definierten Liste. Mögliche Werte sind `none`, `appsInListCompliant`,`appsNotInListCompliant`.|
+|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Die Liste, die in der AppComplianceList ist. Mögliche Werte: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |configurationProfileBlockChanges|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer Konfigurationsprofile und Zertifikate interaktiv installiert, wenn sich das Gerät im überwachten Modus befindet.|
 |definitionLookupBlocked|boolesch|Gibt an, ob die Definitionssuche zugelassen wird, wenn sich das Gerät im überwachten Modus befindet (iOS 8.1.3 und höher).|
 |deviceBlockEnableRestrictions|boolesch|Gibt an, ob erlaubt werden soll, dass der Benutzer Einschränkungen in den Geräteeinstellungen aktiviert, wenn sich das Gerät im überwachten Modus befindet.|
@@ -116,6 +116,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |kioskModeAllowVolumeButtons|boolesch|Gibt ab, ob die Verwendung der Lautstärketasten im Kiosk-Modus erlaubt werden soll.|
 |kioskModeAllowZoomSettings|boolesch|Gibt ab, ob der Zugriff auf die Zoomeinstellungen im Kiosk-Modus erlaubt werden soll.|
 |kioskModeAppStoreUrl|Zeichenfolge|URL im App Store zu der App, die für den Kiosk-Modus verwendet werden soll. Verwenden Sie diese, wenn „KioskModeManagedAppId“ nicht bekannt ist.|
+|kioskModeBuiltInAppId|Zeichenfolge|ID für integrierte Apps für die Verwendung im Kioskmodus. Wird verwendet, wenn KioskModeManagedAppId und KioskModeAppStoreUrl nicht festgelegt wurden.|
 |kioskModeRequireAssistiveTouch|boolesch|Gibt an, ob Touch-Unterstützung im Kiosk-Modus erforderlich ist.|
 |kioskModeRequireColorInversion|boolesch|Gibt ab, ob die Farbinversion im Kiosk-Modus erforderlich ist.|
 |kioskModeRequireMonoAudio|boolesch|Gibt ab, ob Mono-Audio im Kiosk-Modus erforderlich ist.|
@@ -136,7 +137,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |mediaContentRatingUnitedKingdom|[mediaContentRatingUnitedKingdom](../resources/intune_deviceconfig_mediacontentratingunitedkingdom.md)|Einstellungen für Medieninhalte für das Vereinigte Königreich|
 |mediaContentRatingUnitedStates|[mediaContentRatingUnitedStates](../resources/intune_deviceconfig_mediacontentratingunitedstates.md)|Einstellungen für Medieninhalte für die USA|
 |networkUsageRules|[iosNetworkUsageRule](../resources/intune_deviceconfig_iosnetworkusagerule.md)-Sammlung|Liste verwalteter Apps und die Netzwerkregeln, die darauf angewendet werden. Diese Sammlung kann bis zu 1000 Elemente enthalten.|
-|mediaContentRatingApps|[ratingAppsType](../resources/intune_deviceconfig_ratingappstype.md)|Medieninhalt-Bewertungseinstellungen für Apps. Mögliche Werte: `allAllowed`, `allBlocked`, `agesAbove4`, `agesAbove9`, `agesAbove12`, `agesAbove17`.|
+|mediaContentRatingApps|[ratingAppsType](../resources/intune_deviceconfig_ratingappstype.md)|Medieninhalt-Bewertungseinstellungen für Apps. Mögliche Werte sind: `allAllowed`, `allBlocked`, `agesAbove4`, `agesAbove9`, `agesAbove12` und `agesAbove17`.|
 |messagesBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer die Nachrichten-App auf dem überwachten Gerät verwendet.|
 |notificationsBlockSettingsModification|boolesch|Gibt an, ob die Änderung von Benachrichtigungseinstellungen zugelassen wird (iOS 9.3 und höher).|
 |passcodeBlockFingerprintUnlock|boolesch|Gibt an, ob die Entsperrung durch Fingerabdruck blockiert werden soll.|
@@ -150,14 +151,14 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |passcodeMinimumCharacterSetCount|Int32|Anzahl von Zeichensätzen, die eine Kennung enthalten muss Gültige Werte: 0 bis 4.|
 |passcodePreviousPasscodeBlockCount|Int32|Anzahl der zuletzt verwendeten Kennungen, die nicht erneut verwendet werden dürfen. Gültige Werte: 1 bis 24.|
 |passcodeSignInFailureCountBeforeWipe|Int32|Legt fest, nach wie vielen fehlgeschlagenen Anmeldeversuchen eine Zurücksetzung des Geräts durchgeführt wird. Gültige Werte: 4 bis 11.|
-|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Geforderter Kennungstyp. Mögliche Werte sind `deviceDefault`, `alphanumeric`,`numeric`.|
+|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Geforderter Kennungstyp. Mögliche Werte sind: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passcodeRequired|boolesch|Gibt an, ob eine Kennung erforderlich ist.|
 |podcastsBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer Podcasts auf dem überwachten Gerät verwendet (iOS 8.0 und höher).|
 |safariBlockAutofill|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer AutoAusfüllen in Safari verwendet.|
 |safariBlockJavaScript|boolesch|Gibt an, ob JavaScript in Safari blockiert werden soll.|
 |safariBlockPopups|boolesch|Gibt an, ob Popups in Safari blockiert werden sollen.|
 |safariBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer Safari verwendet.|
-|safariCookieSettings|[webBrowserCookieSettings](../resources/intune_deviceconfig_webbrowsercookiesettings.md)|Cokkieeinstellungen für Safari. Mögliche Werte sind: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
+|safariCookieSettings|[webBrowserCookieSettings](../resources/intune_deviceconfig_webbrowsercookiesettings.md)|Cokkieeinstellungen für Safari. Mögliche Werte: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
 |safariManagedDomains|Zeichenfolgenauflistung|URLs, die mit den hier aufgeführten Mustern übereinstimmen, werden als verwaltet betrachtet.|
 |safariPasswordAutoFillDomains|Zeichenfolgenauflistung|Benutzer können Kennwörter in Safari nur von URLs speichern, die mit den hier aufgeführten Mustern übereinstimmen. Gilt für Geräte im überwachten Modus (iOS 9.3 und höher).|
 |safariRequireFraudWarning|boolesch|Gibt an, ob eine Betrugswarnung in Safari erforderlich ist.|
@@ -182,7 +183,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 7841
+Content-length: 7905
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -292,6 +293,7 @@ Content-length: 7841
   "kioskModeAllowVolumeButtons": true,
   "kioskModeAllowZoomSettings": true,
   "kioskModeAppStoreUrl": "https://example.com/kioskModeAppStoreUrl/",
+  "kioskModeBuiltInAppId": "Kiosk Mode Built In App Id value",
   "kioskModeRequireAssistiveTouch": true,
   "kioskModeRequireColorInversion": true,
   "kioskModeRequireMonoAudio": true,
@@ -409,7 +411,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 7949
+Content-Length: 8013
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -521,6 +523,7 @@ Content-Length: 7949
   "kioskModeAllowVolumeButtons": true,
   "kioskModeAllowZoomSettings": true,
   "kioskModeAppStoreUrl": "https://example.com/kioskModeAppStoreUrl/",
+  "kioskModeBuiltInAppId": "Kiosk Mode Built In App Id value",
   "kioskModeRequireAssistiveTouch": true,
   "kioskModeRequireColorInversion": true,
   "kioskModeRequireMonoAudio": true,
@@ -632,6 +635,11 @@ Content-Length: 7949
   "wiFiConnectOnlyToConfiguredNetworks": true
 }
 ```
+
+
+
+
+
 
 
 

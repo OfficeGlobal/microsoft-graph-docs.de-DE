@@ -15,13 +15,13 @@ Entität, die eine Verbindung mit dem Geräteverwaltungspartner darstellt.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Noch nicht dokumentiert|
+|ID|Zeichenfolge|Noch nicht dokumentiert|
 |lastHeartbeatDateTime|DateTimeOffset|Zeitstempel des letzten Heartbeats nach Aktivierung der Option „Connect to Device management Partner“ durch den Administrator|
-|partnerState|String|Partnerstatus des Mandanten. Mögliche Werte sind: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|partnerAppType|String|Partner-App-Typ. Mögliche Werte sind: `unknown`, `singleTenantApp`, `multiTenantApp`.|
-|singleTenantAppId|String|ID der Partner-App mit einem einzelnen Mandanten|
-|displayName|String|Anzeigename für Partner|
-|isConfigured|Boolean|Gibt an, ob Geräteverwaltungspartner konfiguriert ist.|
+|partnerState|[deviceManagementPartnerTenantState](../resources/intune_onboarding_devicemanagementpartnertenantstate.md)|Partnerstatus dieses Mandanten. Mögliche Werte sind: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected` und `unresponsive`.|
+|partnerAppType|[deviceManagementPartnerAppType](../resources/intune_onboarding_devicemanagementpartnerapptype.md)|Typ der Partner-App. Mögliche Werte sind: `unknown`, `singleTenantApp` und `multiTenantApp`.|
+|singleTenantAppId|Zeichenfolge|ID der Partner-App mit einem einzelnen Mandanten|
+|displayName|Zeichenfolge|Anzeigename für Partner|
+|isConfigured|Boolesch|Gibt an, ob Geräteverwaltungspartner konfiguriert ist.|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|DateTime in UTC, zu der PartnerDevices entfernt werden|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|DateTime in UTC, zu der PartnerDevices als nicht kompatibel gekennzeichnet werden|
 
@@ -29,12 +29,12 @@ Entität, die eine Verbindung mit dem Geräteverwaltungspartner darstellt.
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceManagementPartner"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementPartner",
@@ -49,6 +49,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

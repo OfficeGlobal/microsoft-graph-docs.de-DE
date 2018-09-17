@@ -9,10 +9,10 @@ Ein Element zur Beschreibung der Benachrichtigungseinstellungen.
 |Paket-ID|Zeichenfolge|Paket-ID der App, auf die diese Benachrichtigungseinstellungen angewandt werden.|
 |Anwendungsname|Zeichenfolge|Anwendungsname, der der Paket-ID zugeordnet werden muss.|
 |Herausgeber|Zeichenfolge|Herausgeber, der der Paket-ID zugeordnet werden muss.|
-|enabled|Boolescher Wert|Gibt an, ob Benachrichtigungen für diese App zulässig sind.|
+|aktiviert|Boolescher Wert|Gibt an, ob Benachrichtigungen für diese App zulässig sind.|
 |showInNotificationCenter|Boolescher Wert|Gibt an, ob Benachrichtigungen im Nachrichtencenter angezeigt werden können.|
 |showOnLockScreen|Boolescher Wert|Gibt an, ob Benachrichtigungen auf dem Sperrbildschirm angezeigt werden können.|
-|alertType|Zeichenfolge|Gibt die Art der Warnung für Benachrichtigungen für diese App an. Mögliche Werte: `deviceDefault`, `banner`, `modal`, `none`.|
+|alertType|[iosNotificationAlertType](../resources/intune_deviceconfig_iosnotificationalerttype.md)|Gibt die Art der Warnung für Benachrichtigungen für diese App an. Mögliche Werte: `deviceDefault`, `banner`, `modal`, `none`.|
 |badgesEnabled|Boolescher Wert|Gibt an, ob Badges für diese App zulässig sind.|
 |soundsEnabled|Boolescher Wert|Gibt an, ob Ton für diese App zulässig ist.|
 
@@ -20,12 +20,10 @@ Ein Element zur Beschreibung der Benachrichtigungseinstellungen.
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosNotificationSettings"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosNotificationSettings",
@@ -40,6 +38,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "soundsEnabled": true
 }
 ```
+
+
+
+
+
 
 
 

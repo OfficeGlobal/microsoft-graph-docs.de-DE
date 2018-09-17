@@ -17,10 +17,10 @@ Die Ressource remoteAssistPartner repräsentiert die Metadaten und den Status ei
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Der eindeutige Bezeichner des Partners.|
+|ID|Zeichenfolge|Der eindeutige Bezeichner des Partners.|
 |displayName|Zeichenfolge|Der Anzeigename des Partners.|
 |onboardingUrl|Zeichenfolge|Die URL des Onboarding-Portals des Partners, in dem ein Administrator den Remoteunterstützungsdienst konfigurieren kann.|
-|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|Noch nicht festgelegt. Die möglichen Werte sind: `notOnboarded`, `onboarding`, `onboarded`.|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|Noch nicht festgelegt; Mögliche Werte: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Zeitstempel der letzten vom TEM-Partner an Intune gesendeten Anforderung|
 
 ## <a name="relationships"></a>Beziehungen
@@ -29,8 +29,8 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.remoteAssistancePartner"
 }-->
 ``` json
@@ -43,6 +43,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

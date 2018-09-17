@@ -10,7 +10,7 @@ Erbt von [deviceActionResult](../resources/intune_devices_deviceactionresult.md)
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |actionName|Zeichenfolge|Aktionsname, geerbt von [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|actionState|[actionState](../resources/intune_devices_actionstate.md)|Status der Aktion, geerbt aus [DeviceActionResult](../resources/intune_devices_deviceactionresult.md). Mögliche Werte: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune_devices_actionstate.md)|Status der Aktion. Geerbt von [DeviceActionResult](../resources/intune_devices_deviceactionresult.md). Mögliche Werte sind: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Zeit, zu der die Aktion initiiert wurde. Geerbt von [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Zeit, zu der der Aktionszustand zuletzt aktualisiert wurde. Geerbt von [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |userPrincipalName|Zeichenfolge|Benutzerprinzipalnamen für den Benutzer, der gelöscht werden soll|
@@ -19,12 +19,10 @@ Erbt von [deviceActionResult](../resources/intune_devices_deviceactionresult.md)
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceActionResult",
   "@odata.type": "microsoft.graph.deleteUserFromSharedAppleDeviceActionResult"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deleteUserFromSharedAppleDeviceActionResult",
@@ -35,6 +33,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "userPrincipalName": "String"
 }
 ```
+
+
+
+
+
 
 
 
