@@ -6,8 +6,13 @@ Der Grund, für den ein Benutzer markiert wurde
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Keine|0|Keine|
+|keine|0|Keine|
 |rootedDevice|1|Die App-Registrierung wird auf einem verankerten/entsperrten Gerät ausgeführt.|
+
+
+
+
+
 
 
 

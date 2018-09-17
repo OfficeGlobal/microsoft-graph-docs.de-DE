@@ -39,8 +39,8 @@ Erbt von [appleDeviceFeaturesConfigurationBase](../resources/intune_deviceconfig
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.appleDeviceFeaturesConfigurationBase",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.macOSDeviceFeaturesConfiguration"
 }-->
 ``` json
@@ -54,6 +54,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "version": 1024
 }
 ```
+
+
+
+
+
 
 
 

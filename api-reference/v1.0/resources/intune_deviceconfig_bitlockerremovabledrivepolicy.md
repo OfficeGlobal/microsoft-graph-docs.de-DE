@@ -14,11 +14,10 @@ BitLocker-Richtlinien für Wechseldatenträger.
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.bitLockerRemovableDrivePolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.bitLockerRemovableDrivePolicy",
@@ -27,6 +26,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "blockCrossOrganizationWriteAccess": true
 }
 ```
+
+
+
+
+
 
 
 

@@ -9,7 +9,7 @@ Noch nicht dokumentiert
 |Erfolgreich|0|Noch nicht dokumentiert|
 |Verfügbar|1|Noch nicht dokumentiert|
 |idle|2|Noch nicht dokumentiert|
-|unknown|3|Noch nicht dokumentiert|
+|unbekannt|3|Noch nicht dokumentiert|
 |downloading|-2016330712|Noch nicht dokumentiert|
 |downloadFailed|-2016330711|Noch nicht dokumentiert|
 |downloadRequiresComputer|-2016330710|Noch nicht dokumentiert|
@@ -23,6 +23,11 @@ Noch nicht dokumentiert
 |installFailed|-2016330702|Noch nicht dokumentiert|
 |notSupportedOperation|-2016330701|Noch nicht dokumentiert|
 |sharedDeviceUserLoggedInError|-2016330699|Noch nicht dokumentiert|
+
+
+
+
+
 
 
 

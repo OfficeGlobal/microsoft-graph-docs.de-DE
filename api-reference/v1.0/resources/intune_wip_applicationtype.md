@@ -11,3 +11,8 @@ Möglichen Typen der Anwendung
 
 
 
+
+
+
+
+

@@ -25,8 +25,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „mobileAppCategory“ an.
@@ -35,8 +35,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|displayName|String|Name der App-Kategorie|
+|ID|Zeichenfolge|Schlüssel der Entität|
+|displayName|Zeichenfolge|Name der App-Kategorie|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts des Typs „mobileAppCategory“|
 
 
@@ -73,6 +73,11 @@ Content-Length: 212
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
+
+
 
 
 

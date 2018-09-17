@@ -45,7 +45,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |passwordMinimumLength|Int32|Mindestlänge von Kennwörtern|
 |passwordMinutesOfInactivityBeforeLock|Int32|Zeitraum von Inaktivität in Minuten, nach dem die Eingabe eines Kennworts gefordert wird|
 |passwordMinimumCharacterSetCount|Int32|Anzahl der Zeichensätze, die im Kennwort enthalten sein müssen|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Geforderter Kennworttyp. Die möglichen Werte sind: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Der erforderliche Kennworttyp. Mögliche Werte: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Anzahl der zuletzt verwendeten Kennwörter, die nicht erneut verwendet werden dürfen. Gültige Werte: 0 bis 24.|
 |passwordRequired|Boolescher Wert|Legt fest, ob ein Kennwort gefordert wird.|
 |osMinimumVersion|Zeichenfolge|Mindestversion von Windows Phone|
@@ -113,6 +113,11 @@ Content-Length: 779
   "storageRequireEncryption": true
 }
 ```
+
+
+
+
+
 
 
 

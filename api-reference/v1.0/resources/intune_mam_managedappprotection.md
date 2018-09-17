@@ -24,10 +24,10 @@ Erbt von [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).
 |Version|Zeichenfolge|Version der Entität Geerbt von [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |periodOfflineBeforeAccessCheck|Dauer|Zeitraum, nach dem der Zugriff überprüft wird, wenn das Gerät nicht mit dem Internet verbunden ist.|
 |periodOnlineBeforeAccessCheck|Dauer|Zeitraum, nach dem der Zugriff überprüft wird, wenn das Gerät mit dem Internet verbunden ist.|
-|allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|Quellen, von denen Daten übermittelt werden dürfen. Mögliche Werte sind: `allApps`, `managedApps`,`none`.|
-|allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|Ziele, an die Daten übermittelt werden dürfen. Mögliche Werte sind: `allApps`, `managedApps`,`none`.|
+|allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|Quellen, von denen Daten übertragen werden dürfen. Mögliche Werte sind: `allApps`, `managedApps`, `none`.|
+|allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|Ziele, die an die Daten übertragen werden dürfen. Mögliche Werte sind: `allApps`, `managedApps`, `none`.|
 |organizationalCredentialsRequired|Boolesch|Gibt an, ob von der Organisation bereitgestellte Anmeldeinformationen zur Nutzung der App erforderlich sind.|
-|allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune_mam_managedappclipboardsharinglevel.md)|Regelt die Freigabe der Zwischenablage für Apps auf dem verwalteten Gerät. Mögliche Werte sind: `allApps`, `managedAppsWithPasteIn`, `managedApps`, `blocked`.|
+|allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune_mam_managedappclipboardsharinglevel.md)|Die Ebene, auf der die Zwischenablage zwischen Apps auf dem verwalteten Gerät geteilt werden kann. Mögliche Werte sind: `allApps`, `managedAppsWithPasteIn`, `managedApps`, `blocked`.|
 |dataBackupBlocked|Boolesch|Gibt an, ob die Sicherung der Daten der verwalteten App blockiert werden soll.|
 |deviceComplianceRequired|Boolesch|Gibt an, ob Gerätekonformität erforderlich ist.|
 |managedBrowserToOpenLinksRequired|Boolesch|Gibt an, ob Internetlinks in der Managed Browser-App geöffnet werden sollen.|
@@ -37,9 +37,9 @@ Erbt von [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).
 |maximumPinRetries|Int32|Legt die Maximalanzahl von fehlerhaften PIN-Eingaben fest, bevor die verwaltete Anwendung entweder blockiert oder zurückgesetzt wird.|
 |simplePinBlocked|Boolesch|Gibt an, ob einfache PINs blockiert werden sollen.|
 |minimumPinLength|Int32|Erforderliche PIN-Mindestlänge für PINs auf App-Ebene, wenn „pinRequired“ auf „true“ gesetzt ist.|
-|pinCharacterSet|[managedAppPinCharacterSet](../resources/intune_mam_managedapppincharacterset.md)|Zulässige Zeichensätze für PINs auf App-Ebene, wenn „pinRequired“ auf „true“ gesetzt ist. Mögliche Werte sind: `numeric`, `alphanumericAndSymbol`.|
+|pinCharacterSet|[managedAppPinCharacterSet](../resources/intune_mam_managedapppincharacterset.md)|Zeichensatz, der für eine Pin auf App-Ebene verwendet werden kann, wenn PinRequired auf True festgelegt ist. Mögliche Werte sind: `numeric`, `alphanumericAndSymbol`.|
 |periodBeforePinReset|Dauer|Zeitraum, nach dem die für alle Ebenen geltende PIN zurückgesetzt werden muss, wenn „pinRequired“ auf „true“ gesetzt ist.|
-|allowedDataStorageLocations|[managedAppDataStorageLocation Enum](../resources/intune_mam_managedappdatastoragelocation.md)-Sammlung|Datenspeicherorte, an denen der Benutzer verwaltete Daten speichern kann.|
+|allowedDataStorageLocations|[managedAppDataStorageLocation](../resources/intune_mam_managedappdatastoragelocation.md)-Sammlung|Datenspeicherorte, an denen der Benutzer verwaltete Daten speichern darf.|
 |contactSyncBlocked|Boolesch|Gibt an, ob eine Synchronisierung von Kontakten mit dem Gerät des Benutzers erlaubt ist.|
 |printBlocked|Boolesch|Gibt an, ob über verwaltete Apps gedruckt werden darf.|
 |fingerprintBlocked|Boolesch|Gibt an, ob statt einer PIN der Fingerabdruckleser verwendet werden darf, wenn „pinRequired“ auf „true“ gesetzt ist.|
@@ -55,9 +55,8 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppPolicy",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppProtection"
 }-->
 ``` json
@@ -99,6 +98,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "minimumWarningAppVersion": "String"
 }
 ```
+
+
+
+
+
 
 
 

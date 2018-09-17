@@ -6,10 +6,14 @@ Besitzertyp des Geräts.
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|unknown|0|Unbekannt.|
+|unbekannt|0|Unbekannt.|
 |company|1|Gehört einem Unternehmen.|
-|personal|2|Gehört einer Person.
-|
+|persönlich|2|Gehört einer Person.|
+
+
+
+
+
 
 
 

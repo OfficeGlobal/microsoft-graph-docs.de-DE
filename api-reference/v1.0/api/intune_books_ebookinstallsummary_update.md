@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Annehmen|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) an.
@@ -34,7 +34,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität.|
+|ID|Zeichenfolge|Schlüssel der Entität|
 |installedDeviceCount|Int32|Die Anzahl der Geräte, auf denen das Buch erfolgreich installiert wurde.|
 |failedDeviceCount|Int32|Die Anzahl der Geräte, auf denen die Installation des Buchs fehlgeschlagen ist.|
 |notInstalledDeviceCount|Int32|Die Anzahl von Geräten, auf denen das Buch nicht installiert ist.|
@@ -83,6 +83,11 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
+
+
+
+
+
 
 
 

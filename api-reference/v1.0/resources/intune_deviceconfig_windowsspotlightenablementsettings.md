@@ -8,7 +8,12 @@ Ermöglicht es IT-Administratoren, ein vordefiniertes standardmäßiges Suchmodu
 |:---|:---|:---|
 |notConfigured|0|Spotlight auf dem Sperrbildschirm ist nicht konfiguriert|
 |deaktiviert|1|Windows Spotlight auf dem Sperrbildschirm deaktivieren|
-|enabled|2|Windows Spotlight auf dem Sperrbildschirm aktivieren|
+|aktiviert|2|Windows Spotlight auf dem Sperrbildschirm aktivieren|
+
+
+
+
+
 
 
 

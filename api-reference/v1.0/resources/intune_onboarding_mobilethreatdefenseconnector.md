@@ -17,7 +17,7 @@ Entität, die eine Verbindung zu einem Mobile Threat Defense-Partner repräsenti
 |:---|:---|:---|
 |ID|Zeichenfolge|Noch nicht dokumentiert|
 |lastHeartbeatDateTime|DateTimeOffset|DateTime des letzten vom Datensynchronisierungspartner empfangenen Heartbeats|
-|partnerState|[mobileThreatPartnerTenantState](../resources/intune_onboarding_mobilethreatpartnertenantstate.md)|Daten Sync Partner-Zustand für dieses Konto. Mögliche Werte sind: `unavailable`, `available`, `enabled`, `unresponsive`.|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune_onboarding_mobilethreatpartnertenantstate.md)|Status des Datensynchronisierungspartners für dieses Konto. Mögliche Werte sind: `unavailable`, `available`, `enabled`, `unresponsive`.|
 |androidEnabled|boolesch|Legen Sie für Android fest, ob Daten vom Datensynchronisierungspartner während der Konformitätsbewertung verwendet werden sollen.|
 |iosEnabled|boolesch|Für iOS: Rufen Sie ab oder legen Sie fest, ob Daten vom Datensynchronisierungspartner während der Konformitätsbewertung verwendet werden sollen.|
 |androidDeviceBlockedOnMissingPartnerData|boolesch|Für Android: Legen Sie fest, ob Intune Daten vom Datensynchronisierungspartner empfangen muss, bevor ein Gerät als kompatibel markiert wird.|
@@ -31,8 +31,8 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileThreatDefenseConnector"
 }-->
 ``` json
@@ -49,6 +49,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "partnerUnresponsivenessThresholdInDays": 1024
 }
 ```
+
+
+
+
+
 
 
 

@@ -6,7 +6,7 @@ SharedPC-Konto-Manager-Richtlinie. Gilt nur, wenn der Konto-Manager aktiviert is
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|accountDeletionPolicy|String|Konfiguriert, wann Konten gelöscht werden. Mögliche Werte sind: `immediate`, `diskSpaceThreshold` und `diskSpaceThresholdOrInactiveThreshold`.|
+|accountDeletionPolicy|[sharedPCAccountDeletionPolicyType](../resources/intune_deviceconfig_sharedpcaccountdeletionpolicytype.md)|Konfiguriert, wann Konten gelöscht werden. Mögliche Werte sind: `immediate`, `diskSpaceThreshold` und `diskSpaceThresholdOrInactiveThreshold`.|
 |cacheAccountsAboveDiskFreePercentage|Int32|Legt den Prozentsatz des verfügbaren Speicherplatzes fest, den ein PC haben sollte, damit keine weiteren zwischengespeicherten freigegebenen PC-Konten gelöscht werden. Gilt nur, wenn AccountDeletionPolicy den Wert DiskSpaceThreshold oder DiskSpaceThresholdOrInactiveThreshold hat. Gültige Werte: 0 bis 100.|
 |inactiveThresholdDays|Int32|Gibt an, wann mit dem Löschen von Konten begonnen wird, wenn während des angegebenen Zeitraums (Anzahl von Tagen) keine Anmeldung stattgefunden hat. Gilt nur, wenn AccountDeletionPolicy den Wert DiskSpaceThreshold oder DiskSpaceThresholdOrInactiveThreshold hat.|
 |removeAccountsBelowDiskFreePercentage|Int32|Legt den auf einem PC verbleibenden Prozentsatz an Speicherplatz fest, ab dem Konten im Cache gelöscht werden, um Speicherplatz freizugeben. Konten, die am längsten inaktiv waren, werden zuerst gelöscht. Gilt nur, wenn AccountDeletionPolicy den Wert DiskSpaceThresholdOrInactiveThreshold hat. Gültige Werte: 0 bis 100.|
@@ -15,12 +15,10 @@ SharedPC-Konto-Manager-Richtlinie. Gilt nur, wenn der Konto-Manager aktiviert is
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.sharedPCAccountManagerPolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharedPCAccountManagerPolicy",
@@ -30,6 +28,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "removeAccountsBelowDiskFreePercentage": 1024
 }
 ```
+
+
+
+
+
 
 
 

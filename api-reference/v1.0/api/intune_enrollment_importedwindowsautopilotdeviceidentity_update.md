@@ -19,6 +19,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 -->
 ``` http
 PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
+PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
@@ -92,6 +93,11 @@ Content-Length: 590
   }
 }
 ```
+
+
+
+
+
 
 
 

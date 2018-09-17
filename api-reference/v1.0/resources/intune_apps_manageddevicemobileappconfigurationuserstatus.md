@@ -15,23 +15,23 @@ Enthält Eigenschaften, geerbte Eigenschaften und Aktionen für den Status einer
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität.|
-|userDisplayName|String|Benutzername des DevicePolicyStatus|
-|devicesCount|Int32|Geräteanzahl für diesen Benutzer|
-|status|String|Compliance-Status des Richtlinienberichts Mögliche Werte: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|ID|Zeichenfolge|Schlüssel der Entität|
+|userDisplayName|Zeichenfolge|Benutzername, der zu dem Objekt des Typs „DevicePolicyStatus“ gehört|
+|devicesCount|Int32|Geräteanzahl für den Benutzer|
+|Status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Konformitätsstatus des Richtlinienberichts. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Richtlinienberichts|
-|userPrincipalName|String|UserPrincipalName.|
+|userPrincipalName|Zeichenfolge|Benutzer-Prinzipalname|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDeviceMobileAppConfigurationUserStatus"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationUserStatus",
@@ -43,6 +43,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "userPrincipalName": "String"
 }
 ```
+
+
+
+
+
 
 
 

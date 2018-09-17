@@ -36,13 +36,13 @@ Sie erbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfig
 |browserBlockSingleWordEntryOnIntranetSites|Boolescher Wert|Gibt an, ob Einträge mit nur einem einzigen Wort auf Intranetwebsites blockiert werden sollen.|
 |browserRequireSmartScreen|Boolescher Wert|Gibt an, ob der Benutzer den Smartscreenfilter verwenden muss.|
 |browserEnterpriseModeSiteListLocation|Zeichenfolge|Speicherort der Websiteliste für den Unternehmensmodus. Dies kann eine lokale Datei, ein lokales Netzwerk oder ein HTTP-Speicherort sein.|
-|browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune_deviceconfig_internetsitesecuritylevel.md)|Internetsicherheitsstufe. Die möglichen Werte sind: `userDefined`, `medium`, `mediumHigh`, `high`.|
-|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|Intranetsicherheitsstufe. Die mögliche Werte sind: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
+|browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune_deviceconfig_internetsitesecuritylevel.md)|Die Sicherheitsstufe für das Internet. Mögliche Werte sind: `userDefined`, `medium`, `mediumHigh`, `high`.|
+|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|Die Sicherheitsstufe des Intranets. Mögliche Werte sind: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
 |browserLoggingReportLocation|Zeichenfolge|Speicherort des Protokollierungsberichts|
 |browserRequireHighSecurityForRestrictedSites|Boolescher Wert|Gibt an, ob für eingeschränkte Websites die Sicherheitsstufe „Hoch“ zwingend ist.|
 |browserRequireFirewall|Boolescher Wert|Gibt an, ob eine Firewall erforderlich ist.|
 |browserRequireFraudWarning|Boolescher Wert|Gibt an, ob die Funktion zur Betrugswarnung erforderlich ist.|
-|browserTrustedSitesSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|Sicherheitsstufe für vertrauenswürdige Websites. Die mögliche Werte sind: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
+|browserTrustedSitesSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|Die Sicherheitsstufe für vertrauenswürdige Sites. Mögliche Werte sind: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
 |cellularBlockDataRoaming|Boolescher Wert|Gibt an, ob Datenroaming blockiert werden soll.|
 |diagnosticsBlockDataSubmission|Boolescher Wert|Gibt an, ob die Übermittlung von Diagnosedaten blockiert werden soll.|
 |passwordBlockPicturePasswordAndPin|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer einen Bildcode und eine PIN verwendet.|
@@ -51,11 +51,11 @@ Sie erbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfig
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Zeitraum von Inaktivität in Minuten, bevor es zu einem Bildschirmtimeout kommt|
 |passwordMinimumCharacterSetCount|Int32|Anzahl der Zeichensätze, die im Kennwort enthalten sein müssen|
 |passwordPreviousPasswordBlockCount|Int32|Grenze für die Wiederverwendung von Kennwörtern. Der festgelegte Wert gibt an, von wie vielen der zuletzt genutzten Kennwörter sich das Kennwort unterscheiden muss. Gültige Werte: 0 bis 24.|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Geforderter Kennworttyp. Die möglichen Werte sind: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Der erforderliche Kennworttyp. Mögliche Werte: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Die Anzahl von fehlgeschlagenen Anmeldeversuchen, bevor eine Zurücksetzung auf die Werkseinstellungen durchgeführt wird.|
 |storageRequireDeviceEncryption|Boolescher Wert|Gibt an, ob für ein Mobilgerät Verschlüsselung gefordert wird.|
 |updatesRequireAutomaticUpdates|Boolescher Wert|Gibt an, ob automatische Updates erforderlich sind.|
-|userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md)|Einstellungen der Benutzerkontensteuerung. Die möglichen Werte sind: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
+|userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md)|Die Steuerung der Benutzerkontensteuerung. Mögliche Werte sind: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
 |workFoldersUrl|Zeichenfolge|Die URL des Arbeitsordners.|
 
 ## <a name="relationships"></a>Beziehungen
@@ -63,7 +63,7 @@ Sie erbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfig
 |:---|:---|:---|
 |assignments|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)-Sammlung|Liste der Zuweisungen für das Gerätekonfigurationsprofil. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md)-Sammlung|Installationsstatus der Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md)-Sammlung|Installationsstatus der Gerätekonfiguration nach Benutzer. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md)-Sammlung|Installationsstatus der Gerätekonfiguration nach Benutzer. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Übersicht über den Status der Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Übersicht über den Status der Gerätekonfiguration nach Benutzer. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md)-Sammlung|Übersicht über den Einstellungsstatus für die Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -72,18 +72,9 @@ Sie erbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfig
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceConfiguration",
-  "@odata.type": "microsoft.graph.windows81GeneralConfiguration",
-  "@odata.annotations": [
-    {
-      "property": "applyOnlyToWindows81",
-      "capabilities": {
-        "computed": true,
-        "permissions": "Read"
-      }
-    }
-  ]
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.windows81GeneralConfiguration"
 }-->
 ``` json
 {
@@ -129,6 +120,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "workFoldersUrl": "String"
 }
 ```
+
+
+
+
+
 
 
 

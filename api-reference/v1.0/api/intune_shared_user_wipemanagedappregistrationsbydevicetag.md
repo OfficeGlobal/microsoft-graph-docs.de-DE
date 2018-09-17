@@ -1,6 +1,6 @@
 # <a name="wipemanagedappregistrationsbydevicetag-action"></a>Aktion „wipeManagedAppRegistrationsByDeviceTag“
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Die APIs der /beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
@@ -10,7 +10,8 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
-|Delegiert (Geschäfts-, Schul- oder Unikonto)|DeviceManagementApps.ReadWrite.All|
+|Delegiert (Geschäfts-, Schul- oder Unikonto)| _variiert je nach Kontext_ |
+| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All |
 |Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 
@@ -27,7 +28,7 @@ POST /users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
 |Kopfzeile|Wert|
 |:---|:---|
 |Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|application/json|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.
