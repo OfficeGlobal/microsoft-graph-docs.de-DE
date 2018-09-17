@@ -1,18 +1,18 @@
-# <a name="resetpasscode-action"></a><span data-ttu-id="1c727-101">resetPasscode-Aktion</span><span class="sxs-lookup"><span data-stu-id="1c727-101">resetPasscode action</span></span>
+# <a name="resetpasscode-action"></a><span data-ttu-id="db000-101">resetPasscode-Aktion</span><span class="sxs-lookup"><span data-stu-id="db000-101">resetPasscode action</span></span>
 
-> <span data-ttu-id="1c727-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="1c727-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="db000-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="db000-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="1c727-103">Kennung zurücksetzen</span><span class="sxs-lookup"><span data-stu-id="1c727-103">Reset passcode</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="1c727-104">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="1c727-104">Prerequisites</span></span>
-<span data-ttu-id="1c727-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="1c727-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="db000-103">Kennung zurücksetzen</span><span class="sxs-lookup"><span data-stu-id="db000-103">Reset passcode</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="db000-104">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="db000-104">Prerequisites</span></span>
+<span data-ttu-id="db000-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="db000-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="1c727-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="1c727-107">Permission type</span></span>|<span data-ttu-id="1c727-108">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="1c727-108">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="db000-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="db000-107">Permission type</span></span>|<span data-ttu-id="db000-108">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="db000-108">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1c727-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="1c727-109">Delegated (work or school account)</span></span>|<span data-ttu-id="1c727-110">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="1c727-110">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
-|<span data-ttu-id="1c727-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="1c727-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1c727-112">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="1c727-112">Not supported.</span></span>|
-|<span data-ttu-id="1c727-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="1c727-113">Application</span></span>|<span data-ttu-id="1c727-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="1c727-114">Not supported.</span></span>|
+|<span data-ttu-id="db000-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="db000-109">Delegated (work or school account)</span></span>|<span data-ttu-id="db000-110">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="db000-110">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
+|<span data-ttu-id="db000-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="db000-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="db000-112">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="db000-112">Not supported.</span></span>|
+|<span data-ttu-id="db000-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="db000-113">Application</span></span>|<span data-ttu-id="db000-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="db000-114">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1c727-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="1c727-115">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="db000-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="db000-115">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -23,30 +23,35 @@ POST /deviceManagement/managedDevices/{managedDeviceId}/resetPasscode
 POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/resetPasscode
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1c727-116">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="1c727-116">Request headers</span></span>
-|<span data-ttu-id="1c727-117">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="1c727-117">Header</span></span>|<span data-ttu-id="1c727-118">Wert</span><span class="sxs-lookup"><span data-stu-id="1c727-118">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="db000-116">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="db000-116">Request headers</span></span>
+|<span data-ttu-id="db000-117">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="db000-117">Header</span></span>|<span data-ttu-id="db000-118">Wert</span><span class="sxs-lookup"><span data-stu-id="db000-118">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="1c727-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="1c727-119">Authorization</span></span>|<span data-ttu-id="1c727-120">Bearer &lt;token&gt;. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="1c727-120">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="1c727-121">Annehmen</span><span class="sxs-lookup"><span data-stu-id="1c727-121">Accept</span></span>|<span data-ttu-id="1c727-122">application/json</span><span class="sxs-lookup"><span data-stu-id="1c727-122">application/json</span></span>|
+|<span data-ttu-id="db000-119">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="db000-119">Authorization</span></span>|<span data-ttu-id="db000-120">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="db000-120">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="db000-121">Akzeptieren</span><span class="sxs-lookup"><span data-stu-id="db000-121">Accept</span></span>|<span data-ttu-id="db000-122">Anwendung/json</span><span class="sxs-lookup"><span data-stu-id="db000-122">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1c727-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="1c727-123">Request body</span></span>
-<span data-ttu-id="1c727-124">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="1c727-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="db000-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="db000-123">Request body</span></span>
+<span data-ttu-id="db000-124">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="db000-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1c727-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="1c727-125">Response</span></span>
-<span data-ttu-id="1c727-126">Wenn die Aktion erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1c727-126">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="db000-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="db000-125">Response</span></span>
+<span data-ttu-id="db000-126">Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` zurück.</span><span class="sxs-lookup"><span data-stu-id="db000-126">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1c727-127">Beispiel</span><span class="sxs-lookup"><span data-stu-id="1c727-127">Example</span></span>
-### <a name="request"></a><span data-ttu-id="1c727-128">Anforderung</span><span class="sxs-lookup"><span data-stu-id="1c727-128">Request</span></span>
-<span data-ttu-id="1c727-129">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="1c727-129">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="db000-127">Beispiel</span><span class="sxs-lookup"><span data-stu-id="db000-127">Example</span></span>
+### <a name="request"></a><span data-ttu-id="db000-128">Anforderung</span><span class="sxs-lookup"><span data-stu-id="db000-128">Request</span></span>
+<span data-ttu-id="db000-129">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="db000-129">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}/resetPasscode
 ```
 
-### <a name="response"></a><span data-ttu-id="1c727-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="1c727-130">Response</span></span>
-<span data-ttu-id="1c727-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1c727-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="db000-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="db000-130">Response</span></span>
+<span data-ttu-id="db000-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="db000-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
+
+
 
 
 
