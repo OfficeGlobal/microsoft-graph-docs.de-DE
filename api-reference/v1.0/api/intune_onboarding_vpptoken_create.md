@@ -34,16 +34,16 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Wird automatisch generiert, wenn AppleVolumePurchaseProgramToken erstellt wird. Schlüssel der Entität.|
+|ID|Zeichenfolge|Wird automatisch generiert, wenn AppleVolumePurchaseProgramToken erstellt wird. Schlüssel der Entität.|
 |organizationName|Zeichenfolge|Organisation, die dem Apple Volume Purchase Program-Token zugeordnet ist|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|Volume Purchase Program-Typ, dem das angegebene Apple Volume Purchase Program-Token zugeordnet ist. Mögliche Werte sind: `business`, `education`. Mögliche Werte sind: `business`, `education`.|
+|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|Der Typ des Mengenkaufprogramms, dem das angegebene "Apple Volume Purchase Program"-Token zugeordnet ist. Mögliche Werte: `business`, `education`. Mögliche Werte: `business`, `education`.|
 |appleId|Zeichenfolge|Apple-ID, die dem Apple Volume Purchase Program-Token zugeordnet ist.|
 |expirationDateTime|DateTimeOffset|Ablaufdatum und -uhrzeit des Apple Volume Purchase Program-Token.|
 |lastSyncDateTime|DateTimeOffset|Zeitpunkt der letzten Synchronisierung der Anwendung mit dem Apple Volume Purchase Program Service mithilfe des Apple Volume Purchase Program-Token.|
 |Token|Zeichenfolge|Aus dem Apple Volume Purchase Program heruntergeladene Zeichenfolge des Apple Volume Purchase Program-Token.|
 |lastModifiedDateTime|DateTimeOffset|Letztes Änderungsdatum und letzter Änderungszeitpunkt des Apple Volume Purchase Program-Token.|
-|Status|[vppTokenState](../resources/intune_onboarding_vpptokenstate.md)|Aktueller Stand des Apple Volume Purchase Program-Token. Mögliche Werte: `unknown`, `valid`, `expired`, `invalid`. Mögliche Werte: `unknown`, `valid`, `expired`, `invalid`.|
-|lastSyncStatus|[vppTokenSyncStatus](../resources/intune_onboarding_vpptokensyncstatus.md)|Aktueller Synchronisierungsstatus seit der letzten Synchronisierung der Anwendung, die mit dem Apple Volume Purchase Program-Token durchgeführt wurde. Mögliche Werte: `none`, `inProgress`, `completed`, `failed`. Mögliche Werte: `none`, `inProgress`, `completed`, `failed`.|
+|Zustand|[vppTokenState](../resources/intune_onboarding_vpptokenstate.md)|Aktueller Zustand des "Apple Volume Purchase Program-Token. Mögliche Werte sind: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`. Mögliche Werte: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`.|
+|lastSyncStatus|[vppTokenSyncStatus](../resources/intune_onboarding_vpptokensyncstatus.md)|Aktuelle Synchronisierungsstatus vor der letzten Anwendungssynchronisierung, der mit dem "Apple Volume Purchase Program"-Token ausgelöst wurde. Mögliche Werte: `none`, `inProgress`, `completed`, `failed`. Mögliche Werte: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|boolesch|Angabe, ob Anwendungen für das VPP-Token automatisch aktualisiert werden.|
 |countryOrRegion|Zeichenfolge|Angabe, ob Anwendungen für das VPP-Token automatisch aktualisiert werden.|
 
@@ -99,6 +99,11 @@ Content-Length: 574
   "countryOrRegion": "Country Or Region value"
 }
 ```
+
+
+
+
+
 
 
 

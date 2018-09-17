@@ -24,8 +24,8 @@ POST /deviceManagement/detectedApps
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „detectedApp“ an.
@@ -34,9 +34,9 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für die erkannte Anwendung. Dieser wird automatisch von Intune generiert, wenn die Anwendung erstellt wird. Schreibgeschützt.|
-|displayName|String|Name der ermittelten Anwendung. Schreibgeschützt.|
-|version|String|Version der ermittelten Anwendung. Schreibgeschützt.|
+|ID|Zeichenfolge|Eindeutiger Bezeichner für die erkannte Anwendung. Dieser wird automatisch von Intune generiert, wenn die Anwendung erstellt wird. Schreibgeschützt.|
+|displayName|Zeichenfolge|Name der ermittelten Anwendung. Schreibgeschützt.|
+|version|Zeichenfolge|Version der ermittelten Anwendung. Schreibgeschützt.|
 |sizeInByte|Int64|Größe der ermittelten Anwendung in Byte. Schreibgeschützt.|
 |deviceCount|Int32|Anzahl von Geräten, auf denen die Anwendung installiert ist|
 
@@ -78,6 +78,11 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
+
+
+
+
+
 
 
 

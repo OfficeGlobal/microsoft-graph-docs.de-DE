@@ -24,8 +24,8 @@ POST /deviceAppManagement/managedEBooks
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des iosVppEBook-Objekts an.
@@ -34,22 +34,22 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
-|displayName|String|Name des E-Books. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
-|description|String|Beschreibung. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
-|publisher|String|Herausgeber. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|ID|Zeichenfolge|Schlüssel der Entität. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|displayName|Zeichenfolge|Name des E-Books. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|Beschreibung|Zeichenfolge|Beschreibung. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|Verleger|Zeichenfolge|Herausgeber. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
 |publishedDateTime|DateTimeOffset|Datum und Uhrzeit der Veröffentlichung des E-Books. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
 |largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Umschlagbild des Buchs. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der E-Book-Datei. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des E-Books. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
-|informationUrl|String|URL zur Seite mit weiteren Informationen. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
-|privacyInformationUrl|String|URL zur Datenschutzerklärung. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|informationUrl|Zeichenfolge|URL zur Seite mit weiteren Informationen. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
+|privacyInformationUrl|Zeichenfolge|URL zur Datenschutzerklärung. Geerbt von [managedEBook](../resources/intune_books_managedebook.md).|
 |vppTokenId|Guid|ID des VPP-Tokens|
-|appleId|String|Apple-ID, die dem VPP-Token zugeordnet ist|
-|vppOrganizationName|String|Zum VPP-Token gehörender Organisationsname|
-|genres|Collection von Objekten des Typs „String“|Genres|
-|language|String|Sprache|
-|seller|String|Verkäufer|
+|appleId|Zeichenfolge|Apple-ID, die dem VPP-Token zugeordnet ist|
+|vppOrganizationName|Zeichenfolge|Zum VPP-Token gehörender Organisationsname|
+|Genre|Collection von Objekten des Typs „String“|Genres|
+|Sprache|Zeichenfolge|Sprache|
+|Verkäufer|Zeichenfolge|Verkäufer|
 |totalLicenseCount|Int32|Gesamtanzahl von Lizenzen|
 |usedLicenseCount|Int32|Gesamtanzahl von genutzten Lizenzen|
 
@@ -128,6 +128,11 @@ Content-Length: 961
   "usedLicenseCount": 0
 }
 ```
+
+
+
+
+
 
 
 

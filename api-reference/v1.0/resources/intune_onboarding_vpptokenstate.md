@@ -10,6 +10,12 @@ Mögliche Zustände eines "Apple Volume Purchase Program"-Tokens.
 |Gültig|1|Token ist gültig.|
 |abgelaufen|2|Token ist abgelaufen.|
 |Ungültig|3|Token ist ungültig.|
+|assignedToExternalMDM|4|Token wird von einem anderen MDM-Dienst verwaltet.|
+
+
+
+
+
 
 
 

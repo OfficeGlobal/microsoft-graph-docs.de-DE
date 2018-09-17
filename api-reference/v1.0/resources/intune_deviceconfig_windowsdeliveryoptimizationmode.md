@@ -3,8 +3,8 @@
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
 Zustellungsoptimierungsmodus für Peer-Zustellung
-## <a name="members"></a>Mitglieder
-|Mitglied|Wert|Beschreibung|
+## <a name="members"></a>Elemente
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |userDefined|0|Dem Benutzer ermöglichen, Folgendes festzulegen.|
 |httpOnly|1|Nur HTTP, kein Peering|
@@ -13,6 +13,11 @@ Zustellungsoptimierungsmodus für Peer-Zustellung
 |httpWithInternetPeering|4|HTTP gemischt mit Internet-Peering|
 |simpleDownload|99|Einfacher Downloadmodus ohne Peering|
 |bypassMode|100|Umgehungsmodus Keine Zustellungsoptimierung verwenden, sondern BITS|
+
+
+
+
+
 
 
 

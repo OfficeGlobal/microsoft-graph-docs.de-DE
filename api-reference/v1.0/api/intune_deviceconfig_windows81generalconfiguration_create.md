@@ -52,13 +52,13 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |browserBlockSingleWordEntryOnIntranetSites|boolesch|Gibt an, ob Einträge mit nur einem einzigen Wort auf Intranetwebsites blockiert werden sollen.|
 |browserRequireSmartScreen|boolesch|Gibt an, ob der Benutzer den Smartscreenfilter verwenden muss.|
 |browserEnterpriseModeSiteListLocation|Zeichenfolge|Speicherort der Websiteliste für den Unternehmensmodus. Dies kann eine lokale Datei, ein lokales Netzwerk oder ein HTTP-Speicherort sein.|
-|browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune_deviceconfig_internetsitesecuritylevel.md)|Die Internet-Sicherheitsstufe. Die möglichen Werte sind: `userDefined`, `medium`, `mediumHigh`, `high`.|
-|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|Die Intranet-Sicherheitsstufe. Die möglichen Werte sind: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
+|browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune_deviceconfig_internetsitesecuritylevel.md)|Die Sicherheitsstufe für das Internet. Mögliche Werte sind: `userDefined`, `medium`, `mediumHigh`, `high`.|
+|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|Die Sicherheitsstufe des Intranets. Mögliche Werte sind: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
 |browserLoggingReportLocation|Zeichenfolge|Speicherort des Protokollierungsberichts|
 |browserRequireHighSecurityForRestrictedSites|boolesch|Gibt an, ob für eingeschränkte Websites die Sicherheitsstufe „Hoch“ zwingend ist.|
 |browserRequireFirewall|boolesch|Gibt an, ob eine Firewall erforderlich ist.|
 |browserRequireFraudWarning|boolesch|Gibt an, ob die Funktion zur Betrugswarnung erforderlich ist.|
-|browserTrustedSitesSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|Sicherheitsstufe für vertrauenswürdige Websites. Die möglichen Werte sind: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
+|browserTrustedSitesSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|Die Sicherheitsstufe für vertrauenswürdige Sites. Mögliche Werte sind: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
 |cellularBlockDataRoaming|boolesch|Gibt an, ob Datenroaming blockiert werden soll.|
 |diagnosticsBlockDataSubmission|boolesch|Gibt an, ob die Übermittlung von Diagnosedaten blockiert werden soll.|
 |passwordBlockPicturePasswordAndPin|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer einen Bildcode und eine PIN verwendet.|
@@ -67,11 +67,11 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Zeitraum von Inaktivität in Minuten, bevor es zu einem Bildschirmtimeout kommt|
 |passwordMinimumCharacterSetCount|Int32|Anzahl der Zeichensätze, die im Kennwort enthalten sein müssen|
 |passwordPreviousPasswordBlockCount|Int32|Grenze für die Wiederverwendung von Kennwörtern. Der festgelegte Wert gibt an, von wie vielen der zuletzt genutzten Kennwörter sich das Kennwort unterscheiden muss. Gültige Werte: 0 bis 24.|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Der deforderte Kennworttyp. Die möglichen Werte sind: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Der erforderliche Kennworttyp. Mögliche Werte: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Die Anzahl von fehlgeschlagenen Anmeldeversuchen, bevor eine Zurücksetzung auf die Werkseinstellungen durchgeführt wird.|
 |storageRequireDeviceEncryption|boolesch|Gibt an, ob für ein Mobilgerät Verschlüsselung gefordert wird.|
 |updatesRequireAutomaticUpdates|boolesch|Gibt an, ob automatische Updates erforderlich sind.|
-|userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md)|Die Einstellungen der Benutzerkontensteuerung. Die möglichen Werte sind: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
+|userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md)|Die Steuerung der Benutzerkontensteuerung. Mögliche Werte sind: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
 |workFoldersUrl|Zeichenfolge|URL des Arbeitsordners.|
 
 
@@ -179,6 +179,11 @@ Content-Length: 1865
   "workFoldersUrl": "https://example.com/workFoldersUrl/"
 }
 ```
+
+
+
+
+
 
 
 

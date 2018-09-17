@@ -7,16 +7,16 @@ Gerätekategorien bieten eine Möglichkeit zum Organisieren Ihrer Geräte. Mithi
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste DeviceCategories](../api/intune_shared_devicecategory_list.md) -Sammlung|Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [deviceCategory](../resources/intune_shared_devicecategory.md) auf.|
-|[deviceCategory abrufen](../api/intune_shared_devicecategory_get.md)|Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [deviceCategory](../resources/intune_shared_devicecategory.md).|
-|[deviceCategory erstellen](../api/intune_shared_devicecategory_create.md)|Erstellen eines neuen [deviceCategory](../resources/intune_shared_devicecategory.md)-Objekts.|
-|[deviceCategory löschen](../api/intune_shared_devicecategory_delete.md).|
-|[deviceCategory aktualisieren](../api/intune_shared_devicecategory_update.md)|Diese Methode aktualisiert die Eigenschaften von Objekten des Typs [deviceCategory](../resources/intune_shared_devicecategory.md).|
+|[List deviceCategories](../api/intune_shared_devicecategory_list.md)-Objekte.|
+|[Get deviceCategory](../api/intune_shared_devicecategory_get.md)-Objekt.|
+|[Create deviceCategory](../api/intune_shared_devicecategory_create.md)-Objekt.|
+|[Delete deviceCategory](../api/intune_shared_devicecategory_delete.md).|
+|[Update deviceCategory](../api/intune_shared_devicecategory_update.md)-Objekt.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Eindeutiger Bezeichner für die Gerätekategorie. Schreibgeschützt.|
+|ID|Zeichenfolge|Eindeutiger Bezeichner für die Gerätekategorie. Schreibgeschützt.|
 |**Onboarding**|
 |displayName|Zeichenfolge|Der Anzeigename für die Gerätekategorie.|
 |description|Zeichenfolge|Optionale Beschreibung für die Gerätekategorie.|

@@ -25,7 +25,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 |Kopfzeile|Wert|
 |:---|:---|
 |Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|Anwendung/json|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [managedDeviceMobileAppConfigurationUserSummary](../resources/intune_apps_manageddevicemobileappconfigurationusersummary.md) an.
@@ -86,6 +86,11 @@ Content-Length: 346
   "configurationVersion": 4
 }
 ```
+
+
+
+
+
 
 
 

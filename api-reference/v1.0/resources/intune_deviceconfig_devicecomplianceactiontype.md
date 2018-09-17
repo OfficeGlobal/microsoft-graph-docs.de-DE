@@ -7,11 +7,17 @@ Geplante Aktion Typ Enum
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |noAction|0|Keine Aktion|
-|notification|1|Benachrichtigung senden|
+|Benachrichtigung|1|Benachrichtigung senden|
 |block|2|Blockiert das Gerät im AAD|
 |retire|3|Deaktiviert das Gerät|
 |wipe|4|Setzt das Gerät zurück|
 |removeResourceAccessProfiles|5|Entfernt Ressourcen-Zugriffsprofile vom Gerät|
+|pushNotification|9|Push-Benachrichtigung an Gerät senden|
+
+
+
+
+
 
 
 

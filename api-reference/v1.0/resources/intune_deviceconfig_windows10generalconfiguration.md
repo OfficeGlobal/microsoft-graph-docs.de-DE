@@ -18,7 +18,7 @@ Sie erbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfig
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|ID|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |Beschreibung|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
@@ -30,218 +30,218 @@ Sie erbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfig
 |enterpriseCloudPrintResourceIdentifier|Zeichenfolge|OAuth-Ressourcen-URI für den Druckdienst, wie im Azure-Portal konfiguriert.|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|Maximale Anzahl von Druckern, die von einem Ermittlungsendpunkt abgefragt werden sollen. Dies ist nur eine Mobileinstellung. Gültige Werte: 1 bis 65535.|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|Zeichenfolge|OAuth-Ressourcen-URI für Druckerermittlungsdienst, wie im Azure-Portal konfiguriert.|
-|searchBlockDiacritics|Boolescher Wert|Gibt an, ob die Suche diakritische Zeichen verwenden kann.|
-|searchDisableAutoLanguageDetection|Boolescher Wert|Gibt an, ob die automatische Spracherkennung bei der Indizierung von Inhalten und Eigenschaften verwendet werden soll.|
-|searchDisableIndexingEncryptedItems|Boolescher Wert|Gibt an, ob die Indizierung WIP-geschützter Elemente blockiert werden soll, um zu verhindern, dass diese in Suchergebnissen für Cortana oder Explorer angezeigt werden.|
-|searchEnableRemoteQueries|Boolescher Wert|Gibt an, ob Remoteabfragen des Indexes dieses Computers blockiert werden sollen.|
-|searchDisableIndexerBackoff|Boolescher Wert|Gibt an, ob die Sicherungsfunktion der Suchindizierung deaktiviert werden soll.|
-|searchDisableIndexingRemovableDrive|Boolescher Wert|Gibt an, ob zugelassen werden soll, dass Benutzer Speicherorte auf Wechseldatenträgern hinzufügen, die indiziert werden sollen.|
-|searchEnableAutomaticIndexSizeManangement|Boolescher Wert|Gibt die Mindestmenge an Festplattenspeicherplatz auf demselben Laufwerk wie der Indexspeicherort an, bevor die Indizierung beendet wird.|
-|diagnosticsDataSubmissionMode|Zeichenfolge|Ruft einen Wert ab, der es dem Gerät ermöglicht, Diagnose- und Nutzungstelemetriedaten zu senden, oder ruft diesen ab (z. B. Watson). Mögliche Werte: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
-|oneDriveDisableFileSync|Boolescher Wert|Ruft einen Wert ab, der es IT-Administratoren ermöglicht, zu verhindern, dass Apps und Features mit Dateien auf OneDrive arbeiten.|
-|smartScreenEnableAppInstallControl|Boolescher Wert|Ermöglicht IT-Administratoren, zu steuern, ob Benutzer Apps von anderen Orten als dem Store installieren können.|
+|searchBlockDiacritics|boolesch|Gibt an, ob die Suche diakritische Zeichen verwenden kann.|
+|searchDisableAutoLanguageDetection|boolesch|Gibt an, ob die automatische Spracherkennung bei der Indizierung von Inhalten und Eigenschaften verwendet werden soll.|
+|searchDisableIndexingEncryptedItems|boolesch|Gibt an, ob die Indizierung WIP-geschützter Elemente blockiert werden soll, um zu verhindern, dass diese in Suchergebnissen für Cortana oder Explorer angezeigt werden.|
+|searchEnableRemoteQueries|boolesch|Gibt an, ob Remoteabfragen des Indexes dieses Computers blockiert werden sollen.|
+|searchDisableIndexerBackoff|boolesch|Gibt an, ob die Sicherungsfunktion der Suchindizierung deaktiviert werden soll.|
+|searchDisableIndexingRemovableDrive|boolesch|Gibt an, ob zugelassen werden soll, dass Benutzer Speicherorte auf Wechseldatenträgern hinzufügen, die indiziert werden sollen.|
+|searchEnableAutomaticIndexSizeManangement|boolesch|Gibt die Mindestmenge an Festplattenspeicherplatz auf demselben Laufwerk wie der Indexspeicherort an, bevor die Indizierung beendet wird.|
+|diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune_deviceconfig_diagnosticdatasubmissionmode.md)|Ruft einen Wert ab, der es dem Gerät ermöglicht, Diagnose- und Nutzungstelemetriedaten zu senden, oder ruft diesen ab (z. B. Watson). Mögliche Werte: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
+|oneDriveDisableFileSync|boolesch|Ruft einen Wert ab, der es IT-Administratoren ermöglicht, zu verhindern, dass Apps und Features mit Dateien auf OneDrive arbeiten.|
+|smartScreenEnableAppInstallControl|boolesch|Ermöglicht IT-Administratoren, zu steuern, ob Benutzer Apps von anderen Orten als dem Store installieren können.|
 |personalizationDesktopImageUrl|Zeichenfolge|Eine http- oder https-URL zu einem JPG-, JPEG- oder PNP-Bild, das heruntergeladen und als Desktopbild verwendet werden muss, oder eine Datei-URL zu einem lokalen Bild in dem Dateisystem, das als Desktopbild verwendet werden muss.|
 |personalizationLockScreenImageUrl|Zeichenfolge|Eine http- oder https-URL zu einem JPG-, JPEG- oder PNP-Bild, das heruntergeladen und als Sperrbildschirmbild verwendet werden muss, oder eine Datei-URL zu einem lokalen Bild in dem Dateisystem, das als Sperrbildschirmbild verwendet werden muss.|
 |bluetoothAllowedServices|Zeichenfolgenauflistung|Gibt eine Liste zulässiger Bluetooth-Dienste und -Profile in Zeichenfolgen im Hexadezimalformat an.|
-|bluetoothBlockAdvertising|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Bluetooth-Werbung verwendet.|
-|bluetoothBlockDiscoverableMode|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer den sichtbaren Bluetoothmodus verwendet.|
-|bluetoothBlockPrePairing|Boolescher Wert|Gibt an, ob bestimmte gebündelte Bluetooth-Peripheriegeräte automatisch mit dem Hostgerät gekoppelt werden.|
-|edgeBlockAutofill|Boolescher Wert|Gibt an, ob AutoAusfüllen blockiert werden soll.|
-|edgeBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer den Edge-Browser verwendet.|
-|edgeCookiePolicy|Zeichenfolge|Gibt an, welche Cookies im Edge-Browsers blockiert werden sollen. Mögliche Werte: `userDefined`, `allow`, `blockThirdParty`, `blockAll`.|
-|edgeBlockDeveloperTools|Boolescher Wert|Gibt an, ob Entwicklertools im Edge-Browser blockiert werden sollen.|
-|edgeBlockSendingDoNotTrackHeader|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer die Kopfzeile „Do Not Track“ (nicht verfolgen) sendet.|
-|edgeBlockExtensions|Boolescher Wert|Gibt an, ob Erweiterungen im Edge-Browser blockiert werden sollen.|
-|edgeBlockInPrivateBrowsing|Boolescher Wert|Gibt an, ob InPrivate-Browsen in Firmennetzwerken im Edge-Browser blockiert werden soll.|
-|edgeBlockJavaScript|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer JavaScript verwendet.|
-|edgeBlockPasswordManager|Boolescher Wert|Gibt an, ob der Kennwort-Manager blockiert werden soll.|
-|edgeBlockAddressBarDropdown|Boolescher Wert|Blockiert die Dropdownfunktionalität der Adressleiste in Microsoft Edge. Deaktivieren Sie diese Einstellung, um Netzwerkverbindungen zu Microsoft-Diensten zu minimieren.|
-|edgeBlockCompatibilityList|Boolescher Wert|Blockiert die Microsoft-Kompatibilitätsliste in Microsoft Edge. Diese Liste von Microsoft hilft Edge beim korrekten Anzeigen von Websites mit bekannten Kompatibilitätsproblemen.|
-|edgeClearBrowsingDataOnExit|Boolescher Wert|Löscht Browserdaten beim Beenden von Microsoft Edge.|
-|edgeAllowStartPagesModification|Boolescher Wert|Lässt zu, dass Benutzer Startseiten in Edge ändern. Verwenden Sie „EdgeHomepageUrls“, um Startseiten anzugeben, die dem Benutzer standardmäßig angezeigt werden, wenn er Edge öffnet.|
-|edgeDisableFirstRunPage|Boolescher Wert|Blockiert die Microsoft-Webseite, die bei der ersten Verwendung von Microsoft Edge geöffnet wird. Mithilfe dieser Richtlinie können Unternehmen diese Seite blockieren, z. B. in Umgebungen mit Nullemissionskonfiguration.|
-|edgeBlockLiveTileDataCollection|Boolescher Wert|Hiermit wird die Erfassung von Informationen durch Microsoft für die Erstellung von Livekacheln blockiert, wenn Benutzer über Microsoft Edge eine Website an das Startmenü anheften.|
-|edgeSyncFavoritesWithInternetExplorer|Boolescher Wert|Hiermit wird die Synchronisierung von Favoriten zwischen Internet Explorer und Microsoft Edge aktiviert. Hinzufügungen, Löschungen, Änderungen und Reihenfolgenänderungen bei Favoriten werden zwischen Browsern beibehalten.|
-|cellularBlockDataWhenRoaming|Boolescher Wert|Gibt an, ob verhindert wird, dass der Benutzer beim Roaming Daten über Mobilfunk verwendet.|
-|cellularBlockVpn|Boolescher Wert|Gibt an, ob verhindert wird, dass der Benutzer beim Roaming VPN über Mobilfunk verwendet.|
-|cellularBlockVpnWhenRoaming|Boolescher Wert|Gibt an, ob verhindert wird, dass der Benutzer beim Roaming über Mobilfunk VPN verwendet.|
-|defenderBlockEndUserAccess|Boolescher Wert|Gibt ab, ob der Endbenutzerzugriff auf Defender blockiert wird.|
+|bluetoothBlockAdvertising|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer Bluetooth-Werbung verwendet.|
+|bluetoothBlockDiscoverableMode|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer den sichtbaren Bluetoothmodus verwendet.|
+|bluetoothBlockPrePairing|boolesch|Gibt an, ob bestimmte gebündelte Bluetooth-Peripheriegeräte automatisch mit dem Hostgerät gekoppelt werden.|
+|edgeBlockAutofill|boolesch|Gibt an, ob AutoAusfüllen blockiert werden soll.|
+|edgeBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer den Edge-Browser verwendet.|
+|edgeCookiePolicy|[edgeCookiePolicy](../resources/intune_deviceconfig_edgecookiepolicy.md)|Gibt an, welche Cookies im Edge-Browsers blockiert werden sollen. Mögliche Werte: `userDefined`, `allow`, `blockThirdParty`, `blockAll`.|
+|edgeBlockDeveloperTools|boolesch|Gibt an, ob Entwicklertools im Edge-Browser blockiert werden sollen.|
+|edgeBlockSendingDoNotTrackHeader|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer die Kopfzeile „Do Not Track“ (nicht verfolgen) sendet.|
+|edgeBlockExtensions|boolesch|Gibt an, ob Erweiterungen im Edge-Browser blockiert werden sollen.|
+|edgeBlockInPrivateBrowsing|boolesch|Gibt an, ob InPrivate-Browsen in Firmennetzwerken im Edge-Browser blockiert werden soll.|
+|edgeBlockJavaScript|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer JavaScript verwendet.|
+|edgeBlockPasswordManager|boolesch|Gibt an, ob der Kennwort-Manager blockiert werden soll.|
+|edgeBlockAddressBarDropdown|boolesch|Blockiert die Dropdownfunktionalität der Adressleiste in Microsoft Edge. Deaktivieren Sie diese Einstellung, um Netzwerkverbindungen zu Microsoft-Diensten zu minimieren.|
+|edgeBlockCompatibilityList|boolesch|Blockiert die Microsoft-Kompatibilitätsliste in Microsoft Edge. Diese Liste von Microsoft hilft Edge beim korrekten Anzeigen von Websites mit bekannten Kompatibilitätsproblemen.|
+|edgeClearBrowsingDataOnExit|boolesch|Löscht Browserdaten beim Beenden von Microsoft Edge.|
+|edgeAllowStartPagesModification|boolesch|Lässt zu, dass Benutzer Startseiten in Edge ändern. Verwenden Sie „EdgeHomepageUrls“, um Startseiten anzugeben, die dem Benutzer standardmäßig angezeigt werden, wenn er Edge öffnet.|
+|edgeDisableFirstRunPage|boolesch|Blockiert die Microsoft-Webseite, die bei der ersten Verwendung von Microsoft Edge geöffnet wird. Mithilfe dieser Richtlinie können Unternehmen diese Seite blockieren, z. B. in Umgebungen mit Nullemissionskonfiguration.|
+|edgeBlockLiveTileDataCollection|boolesch|Hiermit wird die Erfassung von Informationen durch Microsoft für die Erstellung von Livekacheln blockiert, wenn Benutzer über Microsoft Edge eine Website an das Startmenü anheften.|
+|edgeSyncFavoritesWithInternetExplorer|boolesch|Hiermit wird die Synchronisierung von Favoriten zwischen Internet Explorer und Microsoft Edge aktiviert. Hinzufügungen, Löschungen, Änderungen und Reihenfolgenänderungen bei Favoriten werden zwischen Browsern beibehalten.|
+|cellularBlockDataWhenRoaming|boolesch|Gibt an, ob verhindert wird, dass der Benutzer beim Roaming Daten über Mobilfunk verwendet.|
+|cellularBlockVpn|boolesch|Gibt an, ob verhindert wird, dass der Benutzer beim Roaming VPN über Mobilfunk verwendet.|
+|cellularBlockVpnWhenRoaming|boolesch|Gibt an, ob verhindert wird, dass der Benutzer beim Roaming über Mobilfunk VPN verwendet.|
+|defenderBlockEndUserAccess|boolesch|Gibt ab, ob der Endbenutzerzugriff auf Defender blockiert wird.|
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|Anzahl von Tagen, bevor Schadsoftware in Quarantäne gelöscht werden. Gültige Werte: 0 bis 90.|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune_deviceconfig_defenderdetectedmalwareactions.md)|Ruft Defender-Aktionen für erkannte Schadsoftware pro Bedrohungsstufe an. oder legt diese fest.|
-|defenderSystemScanSchedule|Zeichenfolge|Wochentag für die Systemüberprüfung. Mögliche Werte: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|defenderSystemScanSchedule|[weeklySchedule](../resources/intune_deviceconfig_weeklyschedule.md)|Wochentag für die Systemüberprüfung. Mögliche Werte: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |defenderFilesAndFoldersToExclude|Zeichenfolgenauflistung|Dateien und Ordner, die von Überprüfungen und Echtzeitschutz ausgenommen werden sollen.|
 |defenderFileExtensionsToExclude|Zeichenfolgenauflistung|Dateierweiterungen, die von Überprüfungen und Echtzeitschutz ausgenommen werden sollen.|
 |defenderScanMaxCpu|Int32|Prozentsatz der maximalen CPU-Auslastung während der Überprüfung. Gültige Werte: 0 bis 100.|
-|defenderMonitorFileActivity|Zeichenfolge|Wert für die Überwachung der Dateiaktivität. Mögliche Werte: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
+|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune_deviceconfig_defendermonitorfileactivity.md)|Wert für die Überwachung der Dateiaktivität. Mögliche Werte: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
 |defenderProcessesToExclude|Zeichenfolgenauflistung|Prozesse, die von Überprüfungen und Echtzeitschutz ausgenommen werden sollen.|
-|defenderPromptForSampleSubmission|Zeichenfolge|Die Konfiguration zur Aufforderung des Benutzers, ein Beispiel zu übermitteln. Mögliche Werte: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
-|defenderRequireBehaviorMonitoring|Boolescher Wert|Gibt an, ob eine Verhaltensüberwachung erforderlich ist.|
-|defenderRequireCloudProtection|Boolescher Wert|Gibt an, ob Cloudschutz erforderlich ist.|
-|defenderRequireNetworkInspectionSystem|Boolescher Wert|Gibt an, ob ein Netzwerkinspektionssystem erforderlich ist.|
-|defenderRequireRealTimeMonitoring|Boolescher Wert|Gibt an, ob eine Echtzeitüberwachung erforderlich ist.|
-|defenderScanArchiveFiles|Boolescher Wert|Gibt an, ob Archivdateien gescannt werden sollen.|
-|defenderScanDownloads|Boolescher Wert|Gibt an, ob Downloads gescannt werden sollen.|
-|defenderScanNetworkFiles|Boolescher Wert|Gibt an, ob in einem Netzwerkordner geöffnete Dateien gescannt werden sollen.|
-|defenderScanIncomingMail|Boolescher Wert|Gibt an, ob eingehende E-Mail-Nachrichten gescannt werden sollen.|
-|defenderScanMappedNetworkDrivesDuringFullScan|Boolescher Wert|Gibt an, ob zugeordnete Netzwerklaufwerke bei der vollständigen Überprüfung gescannt werden sollen.|
-|defenderScanRemovableDrivesDuringFullScan|Boolescher Wert|Gibt an, ob Wechseldatenträger bei der vollständigen Überprüfung gescannt werden sollen.|
-|defenderScanScriptsLoadedInInternetExplorer|Boolescher Wert|Gibt an, ob Skripts, die in Internet Explorer geladen sind, gescannt werden sollen.|
+|defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune_deviceconfig_defenderpromptforsamplesubmission.md)|Die Konfiguration zur Aufforderung des Benutzers, ein Beispiel zu übermitteln. Mögliche Werte: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
+|defenderRequireBehaviorMonitoring|boolesch|Gibt an, ob eine Verhaltensüberwachung erforderlich ist.|
+|defenderRequireCloudProtection|boolesch|Gibt an, ob Cloudschutz erforderlich ist.|
+|defenderRequireNetworkInspectionSystem|boolesch|Gibt an, ob ein Netzwerkinspektionssystem erforderlich ist.|
+|defenderRequireRealTimeMonitoring|boolesch|Gibt an, ob eine Echtzeitüberwachung erforderlich ist.|
+|defenderScanArchiveFiles|boolesch|Gibt an, ob Archivdateien gescannt werden sollen.|
+|defenderScanDownloads|boolesch|Gibt an, ob Downloads gescannt werden sollen.|
+|defenderScanNetworkFiles|boolesch|Gibt an, ob in einem Netzwerkordner geöffnete Dateien gescannt werden sollen.|
+|defenderScanIncomingMail|boolesch|Gibt an, ob eingehende E-Mail-Nachrichten gescannt werden sollen.|
+|defenderScanMappedNetworkDrivesDuringFullScan|boolesch|Gibt an, ob zugeordnete Netzwerklaufwerke bei der vollständigen Überprüfung gescannt werden sollen.|
+|defenderScanRemovableDrivesDuringFullScan|boolesch|Gibt an, ob Wechseldatenträger bei der vollständigen Überprüfung gescannt werden sollen.|
+|defenderScanScriptsLoadedInInternetExplorer|boolesch|Gibt an, ob Skripts, die in Internet Explorer geladen sind, gescannt werden sollen.|
 |defenderSignatureUpdateIntervalInHours|Int32|Das Aktualisierungsintervall der Signatur in Stunden. Geben Sie 0, wenn keine Überprüfung ausgeführt werden soll. Gültige Werte: 0 bis 24.|
-|defenderScanType|Zeichenfolge|Der Überprüfungstyp des Defender-Systems. Mögliche Werte: `userDefined`, `disabled`, `quick`, `full`.|
+|defenderScanType|[defenderScanType](../resources/intune_deviceconfig_defenderscantype.md)|Der Überprüfungstyp des Defender-Systems. Mögliche Werte: `userDefined`, `disabled`, `quick`, `full`.|
 |defenderScheduledScanTime|TimeOfDay|Die Defender-Uhrzeit für die Systemüberprüfung.|
 |defenderScheduledQuickScanTime|TimeOfDay|Die Zeit, zu der eine tägliche Schnellüberprüfung durchgeführt werden soll.|
-|defenderCloudBlockLevel|Zeichenfolge|Gibt die Ebene für Schutz in der Cloud an. Mögliche Werte: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
-|lockScreenAllowTimeoutConfiguration|Boolescher Wert|Gibt an, ob eine vom Benutzer konfigurierbare Einstellung zum Steuern des Bildschirmtimeouts auf dem Sperrbildschirm von Windows 10 Mobile-Geräten angezeigt werden soll. Wenn diese Richtlinie auf „Zulassen“ festgelegt ist, wird der von „lockScreenTimeoutInSeconds“ Wert ignoriert.|
-|lockScreenBlockActionCenterNotifications|Boolescher Wert|Gibt an, ob Benachrichtigungen des Info-Centers über den Sperrbildschirm blockiert werden sollen.|
-|lockScreenBlockCortana|Boolescher Wert|Gibt an, ob der Benutzer über die Spracherkennung mit Cortana interagieren kann, solange das System gesperrt ist.|
-|lockScreenBlockToastNotifications|Boolescher Wert|Gibt an, ob Popupbenachrichtigungen über dem Sperrbildschirm des Geräts zulässig sind.|
+|defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune_deviceconfig_defendercloudblockleveltype.md)|Gibt die Ebene für Schutz in der Cloud an. Mögliche Werte: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
+|lockScreenAllowTimeoutConfiguration|boolesch|Gibt an, ob eine vom Benutzer konfigurierbare Einstellung zum Steuern des Bildschirmtimeouts auf dem Sperrbildschirm von Windows 10 Mobile-Geräten angezeigt werden soll. Wenn diese Richtlinie auf „Zulassen“ festgelegt ist, wird der von „lockScreenTimeoutInSeconds“ Wert ignoriert.|
+|lockScreenBlockActionCenterNotifications|boolesch|Gibt an, ob Benachrichtigungen des Info-Centers über den Sperrbildschirm blockiert werden sollen.|
+|lockScreenBlockCortana|boolesch|Gibt an, ob der Benutzer über die Spracherkennung mit Cortana interagieren kann, solange das System gesperrt ist.|
+|lockScreenBlockToastNotifications|boolesch|Gibt an, ob Popupbenachrichtigungen über dem Sperrbildschirm des Geräts zulässig sind.|
 |lockScreenTimeoutInSeconds|Int32|Legt die Dauer (in Sekunden) vom Sperren des Bildschirms bis zum Abschalten des Bildschirms für Windows 10 Mobile-Geräte fest. Unterstützte Werte: 11 bis 1800. Gültige Werte: 11 bis 1800.|
-|passwordBlockSimple|Boolescher Wert|Geben Sie an, ob PINs oder Kennwörter wie „1111“ oder „1234“ zulässig sind. Für Windows 10-Desktops wird dadurch auch die Verwendung von Bildkennwörtern gesteuert.|
+|passwordBlockSimple|boolesch|Geben Sie an, ob PINs oder Kennwörter wie „1111“ oder „1234“ zulässig sind. Für Windows 10-Desktops wird dadurch auch die Verwendung von Bildkennwörtern gesteuert.|
 |passwordExpirationDays|Int32|Zeitraum in Tagen bis zum Ablaufen des Kennworts Gültige Werte: 0 bis 730.|
 |passwordMinimumLength|Int32|Mindestlänge des Kennworts Gültige Werte: 4 bis 16.|
-|passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Zeitraum von Inaktivität in Minuten, bevor es zu einem Bildschirmtimeout kommt.|
-|passwordMinimumCharacterSetCount|Int32|Anzahl der Zeichensätze, die im Kennwort enthalten sein müssen.|
+|passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Zeitraum von Inaktivität in Minuten, bevor es zu einem Bildschirmtimeout kommt|
+|passwordMinimumCharacterSetCount|Int32|Anzahl der Zeichensätze, die im Kennwort enthalten sein müssen|
 |passwordPreviousPasswordBlockCount|Int32|Grenze für die Wiederverwendung von Kennwörtern. Der festgelegte Wert gibt an, von wie vielen der zuletzt genutzten Kennwörter sich das Kennwort unterscheiden muss. Gültige Werte: 0 bis 50.|
-|passwordRequired|Boolescher Wert|Gibt an, ob der Benutzer ein Kennwort benötigt.|
-|passwordRequireWhenResumeFromIdleState|Boolescher Wert|Gibt an, ob zum Fortsetzen aus einem Leerlaufstatus ein Kennwort erforderlich ist.|
-|passwordRequiredType|Zeichenfolge|Geforderter Kennworttyp. Mögliche Werte: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequired|boolesch|Gibt an, ob der Benutzer ein Kennwort benötigt.|
+|passwordRequireWhenResumeFromIdleState|boolesch|Gibt an, ob zum Fortsetzen aus einem Leerlaufstatus ein Kennwort erforderlich ist.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Geforderter Kennworttyp. Mögliche Werte sind: `deviceDefault`, `alphanumeric` und `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Die Anzahl von fehlgeschlagenen Anmeldeversuchen, bevor eine Zurücksetzung auf die Werkseinstellungen durchgeführt wird. Gültige Werte: 0 bis 999.|
-|privacyAdvertisingId|Zeichenfolge|Aktiviert oder deaktiviert die Verwendung einer Werbe-ID. Dies wurde in Windows 10, Version 1607, hinzugefügt. Mögliche Werte: `notConfigured`, `blocked`, `allowed`.|
-|privacyAutoAcceptPairingAndConsentPrompts|Boolescher Wert|Gibt an, ob beim Starten von Apps das automatische Akzeptieren der Dialogfelder für die Benutzerzustimmung zur Kopplung und zum Datenschutz zulässig ist.|
-|privacyBlockInputPersonalization|Boolescher Wert|Gibt an, ob die Nutzung cloudbasierter Sprachdienste für Cortana, Diktat oder Store-Apps blockiert wird.|
-|startBlockUnpinningAppsFromTaskbar|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Apps aus der Taskleiste loslöst.|
-|startMenuAppListVisibility|Zeichenfolge|Durch Festlegen dieses Werts wird die App-Liste reduziert oder vollständig entfernt bzw. die entsprechende Option in der App „Einstellungen“ deaktiviert. Mögliche Werte: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
-|startMenuHideChangeAccountSettings|Boolescher Wert|Durch Aktivieren dieser Richtlinie wird die Einstellung zur Kontoänderung in der Benutzerkachel im Startmenü ausgeblendet.|
-|startMenuHideFrequentlyUsedApps|Boolescher Wert|Durch Aktivieren dieser Richtlinie werden die meistverwendeten Apps aus dem Startmenü ausgeblendet, und die entsprechende Option wird in der App „Einstellungen“ deaktiviert.|
-|startMenuHideHibernate|Boolescher Wert|Durch Aktivieren dieser Richtlinie wird die Option „Ruhezustand“ nicht mehr im Netzschaltersymbol im Startmenü angezeigt.|
-|startMenuHideLock|Boolescher Wert|Durch Aktivieren dieser Richtlinie wird die Sperre aus der Benutzerkachel im Startmenü ausgeblendet.|
-|startMenuHidePowerButton|Boolescher Wert|Durch Aktivieren dieser Richtlinie wird das Netzschaltersymbol aus dem Startmenü ausgeblendet.|
-|startMenuHideRecentJumpLists|Boolescher Wert|Durch Aktivieren dieser Richtlinie werden die letzten Sprunglisten aus dem Startmenü/der Taskleiste ausgeblendet, und die entsprechende Option wird in der App „Einstellungen“ deaktiviert.|
-|startMenuHideRecentlyAddedApps|Boolescher Wert|Durch Aktivieren dieser Richtlinie werden zuletzt hinzugefügte Apps aus dem Startmenü ausgeblendet, und die entsprechende Option wird in der App „Einstellungen“ deaktiviert.|
-|startMenuHideRestartOptions|Boolescher Wert|Durch Aktivieren dieser Richtlinie werden die Optionen „Neu starten“und „Aktualisieren und neu starten“ nicht mehr im Netzschaltersymbol im Startmenü angezeigt.|
-|startMenuHideShutDown|Boolescher Wert|Durch Aktivieren dieser Richtlinie wird „Herunterfahren/Aktualisieren“ und „Herunterfahren“ aus dem Netzschaltersymbol im Startmenü ausgeblendet.|
-|startMenuHideSignOut|Boolescher Wert|Durch Aktivieren dieser Richtlinie wird „Abmelden“ aus der Benutzerkachel im Startmenü ausgeblendet.|
-|startMenuHideSleep|Boolescher Wert|Durch Aktivieren dieser Richtlinie wird „Standbymodus“ aus dem Netzschaltersymbol im Startmenü ausgeblendet|
-|startMenuHideSwitchAccount|Boolescher Wert|Durch Aktivieren dieser Richtlinie wird „Konto wechseln“ aus der Benutzerkachel im Startmenü ausgeblendet.|
-|startMenuHideUserTile|Boolescher Wert|Durch Aktivieren dieser Richtlinie wird die Benutzerkachel aus dem Startmenü ausgeblendet.|
-|startMenuLayoutEdgeAssetsXml|Binär|Diese Richtlinieneinstellung ermöglicht Ihnen das Importieren von Microsoft Edge-Assets zur Verwendung mit der Richtlinie „startMenuLayoutXml“. Das Startlayout kann eine sekundäre Kachel aus der Edge-App enthalten, die nach der lokalen Edge-Assetdatei sucht. Das lokale Edge-Asset ist in diesem Fall nicht vorhanden und führt dazu, dass die sekundäre Edge-Kachel leer angezeigt wird.  Diese Richtlinie wird nur angewendet, wenn die Richtlinie „startMenuLayoutXml“ geändert wird. Der Wert sollte ein UTF-8-Base64-codiertes Bytearray sein.|
+|privacyAdvertisingId|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Aktiviert oder deaktiviert die Verwendung einer Werbe-ID. Dies wurde in Windows 10, Version 1607, hinzugefügt. Mögliche Werte: `notConfigured`, `blocked`, `allowed`.|
+|privacyAutoAcceptPairingAndConsentPrompts|boolesch|Gibt an, ob beim Starten von Apps das automatische Akzeptieren der Dialogfelder für die Benutzerzustimmung zur Kopplung und zum Datenschutz zulässig ist.|
+|privacyBlockInputPersonalization|boolesch|Gibt an, ob die Nutzung cloudbasierter Sprachdienste für Cortana, Diktat oder Store-Apps blockiert wird.|
+|startBlockUnpinningAppsFromTaskbar|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer Apps aus der Taskleiste loslöst.|
+|startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune_deviceconfig_windowsstartmenuapplistvisibilitytype.md)|Durch Festlegen dieses Werts wird die App-Liste reduziert oder vollständig entfernt bzw. die entsprechende Option in der App „Einstellungen“ deaktiviert. Mögliche Werte: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
+|startMenuHideChangeAccountSettings|boolesch|Durch Aktivieren dieser Richtlinie wird die Einstellung zur Kontoänderung in der Benutzerkachel im Startmenü ausgeblendet.|
+|startMenuHideFrequentlyUsedApps|boolesch|Durch Aktivieren dieser Richtlinie werden die meistverwendeten Apps aus dem Startmenü ausgeblendet, und die entsprechende Option wird in der App „Einstellungen“ deaktiviert.|
+|startMenuHideHibernate|boolesch|Durch Aktivieren dieser Richtlinie wird die Option „Ruhezustand“ nicht mehr im Netzschaltersymbol im Startmenü angezeigt.|
+|startMenuHideLock|boolesch|Durch Aktivieren dieser Richtlinie wird die Sperre aus der Benutzerkachel im Startmenü ausgeblendet.|
+|startMenuHidePowerButton|boolesch|Durch Aktivieren dieser Richtlinie wird das Netzschaltersymbol aus dem Startmenü ausgeblendet.|
+|startMenuHideRecentJumpLists|boolesch|Durch Aktivieren dieser Richtlinie werden die letzten Sprunglisten aus dem Startmenü/der Taskleiste ausgeblendet, und die entsprechende Option wird in der App „Einstellungen“ deaktiviert.|
+|startMenuHideRecentlyAddedApps|boolesch|Durch Aktivieren dieser Richtlinie werden zuletzt hinzugefügte Apps aus dem Startmenü ausgeblendet, und die entsprechende Option wird in der App „Einstellungen“ deaktiviert.|
+|startMenuHideRestartOptions|boolesch|Durch Aktivieren dieser Richtlinie werden die Optionen „Neu starten“und „Aktualisieren und neu starten“ nicht mehr im Netzschaltersymbol im Startmenü angezeigt.|
+|startMenuHideShutDown|boolesch|Durch Aktivieren dieser Richtlinie wird „Herunterfahren/Aktualisieren“ und „Herunterfahren“ aus dem Netzschaltersymbol im Startmenü ausgeblendet.|
+|startMenuHideSignOut|boolesch|Durch Aktivieren dieser Richtlinie wird „Abmelden“ aus der Benutzerkachel im Startmenü ausgeblendet.|
+|startMenuHideSleep|boolesch|Durch Aktivieren dieser Richtlinie wird „Standbymodus“ aus dem Netzschaltersymbol im Startmenü ausgeblendet|
+|startMenuHideSwitchAccount|boolesch|Durch Aktivieren dieser Richtlinie wird „Konto wechseln“ aus der Benutzerkachel im Startmenü ausgeblendet.|
+|startMenuHideUserTile|boolesch|Durch Aktivieren dieser Richtlinie wird die Benutzerkachel aus dem Startmenü ausgeblendet.|
+|startMenuLayoutEdgeAssetsXml|Binär|Diese Richtlinieneinstellung ermöglicht Ihnen das Importieren von Microsoft Edge-Assets zur Verwendung mit der Richtlinie „startMenuLayoutXml“. Das Startlayout kann eine sekundäre Kachel aus der Edge-App enthalten, die nach der lokalen Edge-Assetdatei sucht. Das lokale Edge-Asset ist in diesem Fall nicht vorhanden und führt dazu, dass die sekundäre Edge-Kachel leer angezeigt wird. Diese Richtlinie wird nur angewendet, wenn die Richtlinie „startMenuLayoutXml“ geändert wird. Der Wert sollte ein UTF-8-Base64-codiertes Bytearray sein.|
 |startMenuLayoutXml|Binär|Ermöglicht Administratoren das Außerkraftsetzen des Startmenü-Standardlayouts und verhindert Änderungen durch den Benutzer. Das Layout wird durch Angabe einer XML-Datei geändert, die auf einem Layoutänderungsschema basiert. XML muss ein UTF8-codiertes Bytearrayformat aufweisen.|
-|startMenuMode|Zeichenfolge|Ermöglicht Administratoren zu entscheiden, wie das Startmenü angezeigt wird. Mögliche Werte: `userDefined`, `fullScreen`, `nonFullScreen`.|
-|startMenuPinnedFolderDocuments|Zeichenfolge|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung mit dem Ordner „Dokumente“ im Startmenü. Mögliche Werte: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderDownloads|Zeichenfolge|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung mit dem Ordner „Downloads“ im Startmenü. Mögliche Werte: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderFileExplorer|Zeichenfolge|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung „FileExplorer“ im Startmenü Mögliche Werte: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderHomeGroup|Zeichenfolge|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung mit dem Ordner „ Heimnetzgruppe“ im Startmenü. Mögliche Werte: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderMusic|Zeichenfolge|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung mit dem Ordner „Musik“ im Startmenü. Mögliche Werte: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderNetwork|Zeichenfolge|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung mit dem Ordner „Netzwerk“ im Startmenü. Mögliche Werte: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderPersonalFolder|Zeichenfolge|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung mit dem persönlichen Ordner im Startmenü. Mögliche Werte: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderPictures|Zeichenfolge|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung mit dem Ordner „Bilder“ im Startmenü. Mögliche Werte: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderSettings|Zeichenfolge|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung mit dem Ordner „Einstellungen“ im Startmenü. Mögliche Werte: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderVideos|Zeichenfolge|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung mit dem Ordner „Videos“ im Startmenü. Mögliche Werte: `notConfigured`, `hide`, `show`.|
-|settingsBlockSettingsApp|Boolescher Wert|Gibt an, ob der Zugriff auf die App „Einstellungen“ blockiert werden soll.|
-|settingsBlockSystemPage|Boolescher Wert|Gibt an, ob der Zugriff auf „System“ in der App „Einstellungen“ blockiert werden soll.|
-|settingsBlockDevicesPage|Boolescher Wert|Gibt an, ob der Zugriff auf „Geräte“ in der App „Einstellungen“ blockiert werden soll.|
-|settingsBlockNetworkInternetPage|Boolescher Wert|Gibt an, ob der Zugriff auf „Netzwerk und Internet“ in der App „Einstellungen“ blockiert werden soll.|
-|settingsBlockPersonalizationPage|Boolescher Wert|Gibt an, ob der Zugriff auf „Personalisierung“ in der App „Einstellungen“ blockiert werden soll.|
-|settingsBlockAccountsPage|Boolescher Wert|Gibt an, ob der Zugriff auf „Konten“ in der App „Einstellungen“ blockiert werden soll.|
-|settingsBlockTimeLanguagePage|Boolescher Wert|Gibt an, ob der Zugriff auf „Zeit und Sprache“ in der App „Einstellungen“ blockiert werden soll.|
-|settingsBlockEaseOfAccessPage|Boolescher Wert|Gibt an, ob der Zugriff auf „Erleichterte Bedienung“ in der App „Einstellungen“ blockiert werden soll.|
-|settingsBlockPrivacyPage|Boolescher Wert|Gibt an, ob der Zugriff auf „Datenschutz“ in der App „Einstellungen“ blockiert werden soll.|
-|settingsBlockUpdateSecurityPage|Boolescher Wert|Gibt an, ob der Zugriff auf „Update und Sicherheit“ in der App „Einstellungen“ blockiert werden soll.|
-|settingsBlockAppsPage|Boolescher Wert|Gibt an, ob der Zugriff auf „Apps“ in der App „Einstellungen“ blockiert werden soll.|
-|settingsBlockGamingPage|Boolescher Wert|Gibt an, ob der Zugriff auf „Gaming“ in der App „Einstellungen“ blockiert werden soll.|
-|windowsSpotlightBlockConsumerSpecificFeatures|Boolescher Wert|Ermöglicht IT-Administratoren das Blockieren von Funktionen, die normalerweise nur für Endbenutzer bestimmt sind, beispielsweise Startvorschläge, Mitgliedschaftsbenachrichtigungen, App-Installation nach Anzeige der Windows-Willkommensseite und Kachelumleitungen.|
-|windowsSpotlightBlocked|Boolescher Wert|Ermöglicht IT-Administratoren das Deaktivieren aller Features von Windows-Blickpunkt.|
-|windowsSpotlightBlockOnActionCenter|Boolescher Wert|Blockiert Vorschläge von Microsoft, die nach jeder Neuinstallation des Betriebssytem, nach jedem Upgrade oder auf fortlaufender Basis angezeigt werden, um Benutzern Neuigkeiten oder Änderungen vorzustellen.|
-|windowsSpotlightBlockTailoredExperiences|Boolescher Wert|Blockiert personalisierte Inhalte in Windows-Blickpunkt basierend auf dem Gerät, das der Benutzer verwendet.|
-|windowsSpotlightBlockThirdPartyNotifications|Boolescher Wert|Blockiert Inhalte von Drittanbietern, die über Windows-Blickpunkt übermittelt werden.|
-|windowsSpotlightBlockWelcomeExperience|Boolescher Wert|Windows-Begrüßungsseite zur Vorstellung neuer oder aktualisierter Features blockieren|
-|windowsSpotlightBlockWindowsTips|Boolescher Wert|Ermöglicht IT-Administratoren das Deaktivieren des Popups von Windows-Tipps.|
-|windowsSpotlightConfigureOnLockScreen|Zeichenfolge|Gibt den Typ des Blickpunkts an. Mögliche Werte sind: `notConfigured`, `disabled`, `enabled`.|
-|networkProxyApplySettingsDeviceWide|Boolescher Wert|Wenn dieser Wert festgelegt ist, werden Proxyeinstellungen auf alle Prozesse und Konten in dem Gerät angewendet. Andernfalls wird er auf das Benutzerkonto angewendet, das bei MDM registriert ist.|
-|networkProxyDisableAutoDetect|Boolescher Wert|Deaktiviert die automatische Erkennung von Einstellungen. Wenn diese Option aktiviert ist, versucht das System, den Pfad zu einem PAC-Skript (automatische Proxykonfiguration) zu suchen.|
+|startMenuMode|[windowsStartMenuModeType](../resources/intune_deviceconfig_windowsstartmenumodetype.md)|Ermöglicht Administratoren zu entscheiden, wie das Startmenü angezeigt wird. Mögliche Werte: `userDefined`, `fullScreen`, `nonFullScreen`.|
+|startMenuPinnedFolderDocuments|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung mit dem Ordner „Dokumente“ im Startmenü. Mögliche Werte: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderDownloads|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung mit dem Ordner „Downloads“ im Startmenü. Mögliche Werte: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderFileExplorer|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung „FileExplorer“ im Startmenü Mögliche Werte: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderHomeGroup|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung mit dem Ordner „ Heimnetzgruppe“ im Startmenü. Mögliche Werte: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderMusic|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung mit dem Ordner „Musik“ im Startmenü. Mögliche Werte: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderNetwork|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung mit dem Ordner „Netzwerk“ im Startmenü. Mögliche Werte: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderPersonalFolder|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung mit dem persönlichen Ordner im Startmenü. Mögliche Werte: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderPictures|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung mit dem Ordner „Bilder“ im Startmenü. Mögliche Werte: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderSettings|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung mit dem Ordner „Einstellungen“ im Startmenü. Mögliche Werte: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderVideos|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Erzwingt die Sichtbarkeit (Anzeigen/Ausblenden) der Verknüpfung mit dem Ordner „Videos“ im Startmenü. Mögliche Werte: `notConfigured`, `hide`, `show`.|
+|settingsBlockSettingsApp|boolesch|Gibt an, ob der Zugriff auf die App „Einstellungen“ blockiert werden soll.|
+|settingsBlockSystemPage|boolesch|Gibt an, ob der Zugriff auf „System“ in der App „Einstellungen“ blockiert werden soll.|
+|settingsBlockDevicesPage|boolesch|Gibt an, ob der Zugriff auf „Geräte“ in der App „Einstellungen“ blockiert werden soll.|
+|settingsBlockNetworkInternetPage|boolesch|Gibt an, ob der Zugriff auf „Netzwerk und Internet“ in der App „Einstellungen“ blockiert werden soll.|
+|settingsBlockPersonalizationPage|boolesch|Gibt an, ob der Zugriff auf „Personalisierung“ in der App „Einstellungen“ blockiert werden soll.|
+|settingsBlockAccountsPage|boolesch|Gibt an, ob der Zugriff auf „Konten“ in der App „Einstellungen“ blockiert werden soll.|
+|settingsBlockTimeLanguagePage|boolesch|Gibt an, ob der Zugriff auf „Zeit und Sprache“ in der App „Einstellungen“ blockiert werden soll.|
+|settingsBlockEaseOfAccessPage|boolesch|Gibt an, ob der Zugriff auf „Erleichterte Bedienung“ in der App „Einstellungen“ blockiert werden soll.|
+|settingsBlockPrivacyPage|boolesch|Gibt an, ob der Zugriff auf „Datenschutz“ in der App „Einstellungen“ blockiert werden soll.|
+|settingsBlockUpdateSecurityPage|boolesch|Gibt an, ob der Zugriff auf „Update und Sicherheit“ in der App „Einstellungen“ blockiert werden soll.|
+|settingsBlockAppsPage|boolesch|Gibt an, ob der Zugriff auf „Apps“ in der App „Einstellungen“ blockiert werden soll.|
+|settingsBlockGamingPage|boolesch|Gibt an, ob der Zugriff auf „Gaming“ in der App „Einstellungen“ blockiert werden soll.|
+|windowsSpotlightBlockConsumerSpecificFeatures|boolesch|Ermöglicht IT-Administratoren das Blockieren von Funktionen, die normalerweise nur für Endbenutzer bestimmt sind, beispielsweise Startvorschläge, Mitgliedschaftsbenachrichtigungen, App-Installation nach Anzeige der Windows-Willkommensseite und Kachelumleitungen.|
+|windowsSpotlightBlocked|boolesch|Ermöglicht IT-Administratoren das Deaktivieren aller Features von Windows-Blickpunkt.|
+|windowsSpotlightBlockOnActionCenter|boolesch|Blockiert Vorschläge von Microsoft, die nach jeder Neuinstallation des Betriebssytem, nach jedem Upgrade oder auf fortlaufender Basis angezeigt werden, um Benutzern Neuigkeiten oder Änderungen vorzustellen.|
+|windowsSpotlightBlockTailoredExperiences|boolesch|Blockiert personalisierte Inhalte in Windows-Blickpunkt basierend auf dem Gerät, das der Benutzer verwendet.|
+|windowsSpotlightBlockThirdPartyNotifications|boolesch|Blockiert Inhalte von Drittanbietern, die über Windows-Blickpunkt übermittelt werden.|
+|windowsSpotlightBlockWelcomeExperience|boolesch|Windows-Begrüßungsseite zur Vorstellung neuer oder aktualisierter Features blockieren|
+|windowsSpotlightBlockWindowsTips|boolesch|Ermöglicht IT-Administratoren das Deaktivieren des Popups von Windows-Tipps.|
+|windowsSpotlightConfigureOnLockScreen|[windowsSpotlightEnablementSettings](../resources/intune_deviceconfig_windowsspotlightenablementsettings.md)|Gibt den Typ von Spotlight an. Mögliche Werte sind: `notConfigured`, `disabled` und `enabled`.|
+|networkProxyApplySettingsDeviceWide|boolesch|Wenn dieser Wert festgelegt ist, werden Proxyeinstellungen auf alle Prozesse und Konten in dem Gerät angewendet. Andernfalls wird er auf das Benutzerkonto angewendet, das bei MDM registriert ist.|
+|networkProxyDisableAutoDetect|boolesch|Deaktiviert die automatische Erkennung von Einstellungen. Wenn diese Option aktiviert ist, versucht das System, den Pfad zu einem PAC-Skript (automatische Proxykonfiguration) zu suchen.|
 |networkProxyAutomaticConfigurationUrl|Zeichenfolge|Adresse zu dem PAC-Skript, das Sie verwenden möchten.|
 |networkProxyServer|[windows10NetworkProxyServer](../resources/intune_deviceconfig_windows10networkproxyserver.md)|Gibt manuelle Proxyservereinstellungen an.|
 |accountsBlockAddingNonMicrosoftAccountEmail|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer E-Mail-Konten zu Geräten hinzufügt, die keinem Microsoft-Konto zugeordnet sind.|
-|antiTheftModeBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer eine Einstellung für den AntiTheft-Modus auswählt (nur Windows 10 Mobile).|
-|bluetoothBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Bluetooth verwendet.|
-|cameraBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer auf die Kamera des Geräts zugreift.|
-|connectedDevicesServiceBlocked|Boolescher Wert|Gibt an, ob der Dienst für verbundene Geräte blockiert werden soll, der die Ermittlung anderer Geräte und eine Verbindungsherstellung zu anderen Geräten, Remotmessaging, Remote-App-Sitzungen und anderen geräteübergreifenden Oberflächen ermöglicht.|
-|certificatesBlockManualRootCertificateInstallation|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer eine manuelle Stammzertifikatinstallation ausführt.|
-|copyPasteBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Kopieren/Einfügen verwendet.|
-|cortanaBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Cortana verwendet.|
-|deviceManagementBlockFactoryResetOnMobile|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer sein Telefon zurücksetzt.|
-|deviceManagementBlockManualUnenroll|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer eine manuelle Aufhebung der Registrierung von der Geräteverwaltung vornimmt.|
-|safeSearchFilter|Zeichenfolge|Gibt an, welche Filterebene von SafeSearch erforderlich ist. Mögliche Werte: `userDefined`, `strict`, `moderate`.|
-|edgeBlockPopups|Boolescher Wert|Gibt an, ob Popups blockiert werden sollen.|
-|edgeBlockSearchSuggestions|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Suchvorschläge in der Adressleiste verwendet.|
-|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Intranetverkehr aus Edge an Internet Explorer sendet.|
-|edgeRequireSmartScreen|Boolescher Wert|Gibt an, ob der Benutzer aufgefordert werden soll, den Smartscreenfilter zu verwenden.|
+|antiTheftModeBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer eine Einstellung für den AntiTheft-Modus auswählt (nur Windows 10 Mobile).|
+|bluetoothBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer Bluetooth verwendet.|
+|cameraBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer auf die Kamera des Geräts zugreift.|
+|connectedDevicesServiceBlocked|boolesch|Gibt an, ob der Dienst für verbundene Geräte blockiert werden soll, der die Ermittlung anderer Geräte und eine Verbindungsherstellung zu anderen Geräten, Remotmessaging, Remote-App-Sitzungen und anderen geräteübergreifenden Oberflächen ermöglicht.|
+|certificatesBlockManualRootCertificateInstallation|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer eine manuelle Stammzertifikatinstallation ausführt.|
+|copyPasteBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer Kopieren/Einfügen verwendet.|
+|cortanaBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer Cortana verwendet.|
+|deviceManagementBlockFactoryResetOnMobile|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer sein Telefon zurücksetzt.|
+|deviceManagementBlockManualUnenroll|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer eine manuelle Aufhebung der Registrierung von der Geräteverwaltung vornimmt.|
+|safeSearchFilter|[safeSearchFilterType](../resources/intune_deviceconfig_safesearchfiltertype.md)|Gibt an, welche Filterebene von SafeSearch erforderlich ist. Mögliche Werte: `userDefined`, `strict`, `moderate`.|
+|edgeBlockPopups|boolesch|Gibt an, ob Popups blockiert werden sollen.|
+|edgeBlockSearchSuggestions|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer Suchvorschläge in der Adressleiste verwendet.|
+|edgeBlockSendingIntranetTrafficToInternetExplorer|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer Intranetverkehr aus Edge an Internet Explorer sendet.|
+|edgeRequireSmartScreen|boolesch|Gibt an, ob der Benutzer aufgefordert werden soll, den Smartscreenfilter zu verwenden.|
 |edgeEnterpriseModeSiteListLocation|Zeichenfolge|Gibt den Speicherort der Siteliste für den Unternehmensmodus an. Dies kann eine lokale Datei, ein lokales Netzwerk oder ein http-Speicherort sein.|
 |edgeFirstRunUrl|Zeichenfolge|Die URL für erste Ausführung, wenn der Edge-Browser das erste Mal geöffnet wird.|
 |edgeSearchEngine|[edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearchenginebase.md)|Ermöglicht es IT-Administratoren, eine standardmäßige Suchmaschine für MDM-gesteuerte Geräte festzulegen. Benutzer können dies außer Kraft setzen und die standardmäßige Suchmaschine ändern, sofern die Richtlinie „AllowSearchEngineCustomization“ nicht festgelegt ist.|
 |edgeHomepageUrls|Zeichenfolgenauflistung|Die Liste von URLs für Startseiten, die auf bei MDM-registrierten Geräten im Edge-Browser angezeigt werden.|
-|edgeBlockAccessToAboutFlags|Boolescher Wert|Gibt an, ob Zugriff auf Info-Flags im Edge-Browser verhindert werden soll.|
-|smartScreenBlockPromptOverride|Boolescher Wert|Gibt an, ob Benutzer SmartScreenFilter-Warnungen zu potenziell bösartigen Websites außer Kraft setzen können.|
-|smartScreenBlockPromptOverrideForFiles|Boolescher Wert|Gibt an, ob Benutzer die SmartScreenFilter-Warnungen zum Herunterladen nicht überprüfter Dateien außer Kraft setzen können.|
-|webRtcBlockLocalhostIpAddress|Boolescher Wert|Gibt an, ob die LocalHost-IP-Adresse des Benutzers angezeigt wird, während Telefonanrufe über WebRTC getätigt werden.|
-|internetSharingBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Internetfreigabe verwendet.|
-|settingsBlockAddProvisioningPackage|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Bereitstellungspakete installiert.|
-|settingsBlockRemoveProvisioningPackage|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Laufzeitkonfigurations-Agent Bereitstellungspakete entfernt.|
-|settingsBlockChangeSystemTime|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer die Einstellungen für Datum und Uhrzeit ändert.|
-|settingsBlockEditDeviceName|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer den Gerätenamen bearbeitet.|
-|settingsBlockChangeRegion|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Regionseinstellungen ändert.|
-|settingsBlockChangeLanguage|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Spracheinstellungen ändert.|
-|settingsBlockChangePowerSleep|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Energie- und Energiesparmoduseinstellungen ändert.|
-|locationServicesBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Ortungsdienste verwendet.|
-|microsoftAccountBlocked|Boolescher Wert|Gibt an, ob ein Microsoft-Konto blockiert werden soll.|
-|microsoftAccountBlockSettingsSync|Boolescher Wert|Gibt an, ob die Synchronisierung von Einstellungen eines Microsoft-Kontos blockiert werden soll.|
-|nfcBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Near Field Communication verwendet.|
-|resetProtectionModeBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer den Schutzmodus zurücksetzt.|
-|screenCaptureBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Screenshots macht.|
-|storageBlockRemovableStorage|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Wechselmedien verwendet.|
-|storageRequireMobileDeviceEncryption|Boolescher Wert|Gibt an, ob für ein mobiles Gerät eine Verschlüsselung erforderlich ist.|
-|usbBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer eine USB-Verbindung verwendet.|
-|voiceRecordingBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer die Sprachaufzeichnung verwendet.|
-|wiFiBlockAutomaticConnectHotspots|Boolescher Wert|Gibt an, ob die automatische Herstellung einer Verbindung zu WLAN-Hotspots blockiert werden soll. Hat keine Auswirkungen, wenn die WLAN-Funktion blockiert ist.|
-|wiFiBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer WLAN verwendet.|
-|wiFiBlockManualConfiguration|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer eine manuelle WLAN-Konfiguration verwendet.|
+|edgeBlockAccessToAboutFlags|boolesch|Gibt an, ob Zugriff auf Info-Flags im Edge-Browser verhindert werden soll.|
+|smartScreenBlockPromptOverride|boolesch|Gibt an, ob Benutzer SmartScreenFilter-Warnungen zu potenziell bösartigen Websites außer Kraft setzen können.|
+|smartScreenBlockPromptOverrideForFiles|boolesch|Gibt an, ob Benutzer die SmartScreenFilter-Warnungen zum Herunterladen nicht überprüfter Dateien außer Kraft setzen können.|
+|webRtcBlockLocalhostIpAddress|boolesch|Gibt an, ob die LocalHost-IP-Adresse des Benutzers angezeigt wird, während Telefonanrufe über WebRTC getätigt werden.|
+|internetSharingBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer Internetfreigabe verwendet.|
+|settingsBlockAddProvisioningPackage|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer Bereitstellungspakete installiert.|
+|settingsBlockRemoveProvisioningPackage|boolesch|Gibt an, ob verhindert werden soll, dass der Laufzeitkonfigurations-Agent Bereitstellungspakete entfernt.|
+|settingsBlockChangeSystemTime|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer die Einstellungen für Datum und Uhrzeit ändert.|
+|settingsBlockEditDeviceName|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer den Gerätenamen bearbeitet.|
+|settingsBlockChangeRegion|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer Regionseinstellungen ändert.|
+|settingsBlockChangeLanguage|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer Spracheinstellungen ändert.|
+|settingsBlockChangePowerSleep|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer Energie- und Energiesparmoduseinstellungen ändert.|
+|locationServicesBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer Ortungsdienste verwendet.|
+|microsoftAccountBlocked|boolesch|Gibt an, ob ein Microsoft-Konto blockiert werden soll.|
+|microsoftAccountBlockSettingsSync|boolesch|Gibt an, ob die Synchronisierung von Einstellungen eines Microsoft-Kontos blockiert werden soll.|
+|nfcBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer Near Field Communication verwendet.|
+|resetProtectionModeBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer den Schutzmodus zurücksetzt.|
+|screenCaptureBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer Screenshots macht.|
+|storageBlockRemovableStorage|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer Wechselmedien verwendet.|
+|storageRequireMobileDeviceEncryption|boolesch|Gibt an, ob für ein mobiles Gerät eine Verschlüsselung erforderlich ist.|
+|usbBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer eine USB-Verbindung verwendet.|
+|voiceRecordingBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer die Sprachaufzeichnung verwendet.|
+|wiFiBlockAutomaticConnectHotspots|boolesch|Gibt an, ob die automatische Herstellung einer Verbindung zu WLAN-Hotspots blockiert werden soll. Hat keine Auswirkungen, wenn die WLAN-Funktion blockiert ist.|
+|wiFiBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer WLAN verwendet.|
+|wiFiBlockManualConfiguration|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer eine manuelle WLAN-Konfiguration verwendet.|
 |wiFiScanInterval|Int32|Gibt an, wie häufig Geräte nach WLAN-Netzwerken suchen. Unterstützte Werte sind 1 bis 500, wobei 100 der Standardwert ist und 500 eine niedrige Häufigkeit bedeutet. Gültige Werte: 1 bis 500.|
-|wirelessDisplayBlockProjectionToThisDevice|Boolescher Wert|Gibt an, ob erlaubt werden soll, dass andere Geräte diesen Computer für die Projektion ermitteln.|
-|wirelessDisplayBlockUserInputFromReceiver|Boolescher Wert|Gibt an, ob Benutzereingaben von drahtlosen Anzeigeempfängern erlaubt sind.|
-|wirelessDisplayRequirePinForPairing|Boolescher Wert|Gibt an, ob eine PIN für neue Geräte zum Initiieren der Kopplung erforderlich ist.|
-|windowsStoreBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer den Windows Store verwendet.|
-|appsAllowTrustedAppsSideloading|Zeichenfolge|Gibt an, ob Apps aus AppX-Paketen, die mit einem vertrauenswürdigen Zertifikat signiert sind, quergeladen werden können. Mögliche Werte: `notConfigured`, `blocked`, `allowed`.|
-|windowsStoreBlockAutoUpdate|Boolescher Wert|Gibt an, ob automatische Updates von Apps aus dem Windows Store blockiert werden sollen.|
-|developerUnlockSetting|Zeichenfolge|Gibt an, ob die Entwicklersperre zulässig ist. Mögliche Werte: `notConfigured`, `blocked`, `allowed`.|
-|sharedUserAppDataAllowed|Boolescher Wert|Gibt an, ob verhindert werden soll, dass mehrere Benutzer derselben App Daten austauschen.|
-|appsBlockWindowsStoreOriginatedApps|Boolescher Wert|Gibt an, ob das Starten aller Apps aus dem Windows Store deaktiviert werden soll, die vorinstalliert waren oder heruntergeladen wurden.|
-|windowsStoreEnablePrivateStoreOnly|Boolescher Wert|Gibt an, ob nur der private Store aktiviert werden soll.|
-|storageRestrictAppDataToSystemVolume|Boolescher Wert|Gibt an, ob Anwendungsdaten auf das Systemlaufwerk beschränkt sind.|
-|storageRestrictAppInstallToSystemVolume|Boolescher Wert|Gibt an, ob die Installation von Anwendungen auf das Systemlaufwerk beschränkt ist.|
-|gameDvrBlocked|Boolescher Wert|Gibt an, ob DVR und Broadcasting blockiert werden soll.|
-|experienceBlockDeviceDiscovery|Boolescher Wert|Gibt an, ob die Geräteerkennungs-UX aktiviert werden soll.|
-|experienceBlockErrorDialogWhenNoSIM|Boolescher Wert|Gibt an, ob das Fehlerdialogfeld angezeigt werden soll, wenn keine SIM-Karte erkannt wird.|
-|experienceBlockTaskSwitcher|Boolescher Wert|Gibt an, ob die Programmumschaltung auf dem Gerät aktiviert werden soll.|
-|logonBlockFastUserSwitching|Boolescher Wert|Verhindert, dass schnell zwischen Benutzern umgeschaltet werden kann, die gleichzeitig ohne Abmelden angemeldet sind.|
+|wirelessDisplayBlockProjectionToThisDevice|boolesch|Gibt an, ob erlaubt werden soll, dass andere Geräte diesen Computer für die Projektion ermitteln.|
+|wirelessDisplayBlockUserInputFromReceiver|boolesch|Gibt an, ob Benutzereingaben von drahtlosen Anzeigeempfängern erlaubt sind.|
+|wirelessDisplayRequirePinForPairing|boolesch|Gibt an, ob eine PIN für neue Geräte zum Initiieren der Kopplung erforderlich ist.|
+|windowsStoreBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer den Windows Store verwendet.|
+|appsAllowTrustedAppsSideloading|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Gibt an, ob Apps aus AppX-Paketen, die mit einem vertrauenswürdigen Zertifikat signiert sind, quergeladen werden können. Mögliche Werte: `notConfigured`, `blocked`, `allowed`.|
+|windowsStoreBlockAutoUpdate|boolesch|Gibt an, ob automatische Updates von Apps aus dem Windows Store blockiert werden sollen.|
+|developerUnlockSetting|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Gibt an, ob die Entwicklersperre zulässig ist. Mögliche Werte: `notConfigured`, `blocked`, `allowed`.|
+|sharedUserAppDataAllowed|boolesch|Gibt an, ob verhindert werden soll, dass mehrere Benutzer derselben App Daten austauschen.|
+|appsBlockWindowsStoreOriginatedApps|boolesch|Gibt an, ob das Starten aller Apps aus dem Windows Store deaktiviert werden soll, die vorinstalliert waren oder heruntergeladen wurden.|
+|windowsStoreEnablePrivateStoreOnly|boolesch|Gibt an, ob nur der private Store aktiviert werden soll.|
+|storageRestrictAppDataToSystemVolume|boolesch|Gibt an, ob Anwendungsdaten auf das Systemlaufwerk beschränkt sind.|
+|storageRestrictAppInstallToSystemVolume|boolesch|Gibt an, ob die Installation von Anwendungen auf das Systemlaufwerk beschränkt ist.|
+|gameDvrBlocked|boolesch|Gibt an, ob DVR und Broadcasting blockiert werden soll.|
+|experienceBlockDeviceDiscovery|boolesch|Gibt an, ob die Geräteerkennungs-UX aktiviert werden soll.|
+|experienceBlockErrorDialogWhenNoSIM|boolesch|Gibt an, ob das Fehlerdialogfeld angezeigt werden soll, wenn keine SIM-Karte erkannt wird.|
+|experienceBlockTaskSwitcher|boolesch|Gibt an, ob die Programmumschaltung auf dem Gerät aktiviert werden soll.|
+|logonBlockFastUserSwitching|boolesch|Verhindert, dass schnell zwischen Benutzern umgeschaltet werden kann, die gleichzeitig ohne Abmelden angemeldet sind.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|Zuweisungen|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)-Sammlung|Liste der Zuweisungen für das Gerätekonfigurationsprofil. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|Aufgaben|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)-Sammlung|Liste der Zuweisungen für das Gerätekonfigurationsprofil. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md)-Sammlung|Installationsstatus der Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md)-Sammlung|Installationsstatus der Gerätekonfiguration nach Benutzer. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Übersicht über den Status der Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Übersicht über den Status der Gerätekonfiguration nach Benutzer. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|deviceSettingStateSummaries| [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md)-Sammlung|Übersicht über den Einstellungsstatus für die Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md)-Sammlung|Übersicht über den Einstellungsstatus für die Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.deviceConfiguration",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windows10GeneralConfiguration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -477,6 +477,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "logonBlockFastUserSwitching": true
 }
 ```
+
+
+
+
+
 
 
 

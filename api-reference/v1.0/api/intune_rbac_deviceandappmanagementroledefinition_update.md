@@ -25,8 +25,8 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Annehmen|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md)-Objekts an.
@@ -35,11 +35,11 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität. Dies ist schreibgeschützt und wird automatisch generiert. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|displayName|String|Anzeigename der Rollendefinition. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|description|String|Beschreibung der Rollendefinition. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|rolePermissions|Sammlung von Objekten des Typs [rolePermission](../resources/intune_rbac_rolepermission.md)|Liste der Rollenberechtigungen, die dieser Rolle erteilt wurden. Diese müssen mit dem actionName übereinstimmen, der als Teil der rolePermission definiert ist. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|isBuiltIn|Boolean|Rollentyp. Wird auf „true“ festgelegt, wenn es sich um eine integrierte, oder auf „false“, wenn es sich um eine benutzerdefinierte Rollendefinition handelt. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|ID|Zeichenfolge|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|displayName|Zeichenfolge|Anzeigename der Rollendefinition Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|description|Zeichenfolge|Beschreibung der Rollendefinition Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|rolePermissions|Sammlung von Objekten des Typs [rolePermission](../resources/intune_rbac_rolepermission.md)|Liste der Rollenberechtigungen, die dieser Rolle erteilt wurden. Diese müssen mit dem Wert für „actionName“ übereinstimmen, der als Teil von „rolePermission“ festgelegt wurde. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|isBuiltIn|Boolesch|Rollentyp. Ist auf „True“ gesetzt, wenn es sich um eine integrierte Rolle handelt, und auf „False“, wenn es sich um eine benutzerdefinierte Rollendefinition handelt. Geerbt von [roleDefinition](../resources/intune_rbac_roledefinition.md)|
 
 
 
@@ -108,6 +108,11 @@ Content-Length: 651
   "isBuiltIn": true
 }
 ```
+
+
+
+
+
 
 
 

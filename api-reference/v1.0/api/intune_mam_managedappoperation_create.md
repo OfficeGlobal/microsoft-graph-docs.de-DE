@@ -24,8 +24,8 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „managedAppOperation“ an.
@@ -34,11 +34,11 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|String|Name des Vorgangs|
+|displayName|Zeichenfolge|Name des Vorgangs|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des App-Vorgangs|
-|state|String|Aktueller Status des Vorgangs|
-|id|String|Schlüssel der Entität|
-|version|String|Version der Entität|
+|state|Zeichenfolge|Aktueller Status des Vorgangs|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Version|Zeichenfolge|Version der Entität|
 
 
 
@@ -78,6 +78,11 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
+
+
+
+
 
 
 

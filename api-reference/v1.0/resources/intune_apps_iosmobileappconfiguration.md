@@ -39,12 +39,12 @@ Erbt von [managedDeviceMobileAppConfiguration](../resources/intune_apps_managedd
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
   "baseType": "microsoft.graph.managedDeviceMobileAppConfiguration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosMobileAppConfiguration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
@@ -68,6 +68,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   ]
 }
 ```
+
+
+
+
+
 
 
 

@@ -35,7 +35,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Die GUID für das Objekt.|
-|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|Autorität für die Verwaltung mobiler Geräte. Die möglichen Werte sind: `unknown`, `intune`, `sccm`, `office365`.|
+|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|Managementautorität für mobile Geräte. Mögliche Werte sind: `unknown`, `intune`, `sccm`, `office365`.|
 
 
 
@@ -68,6 +68,11 @@ Content-Length: 151
   "mobileDeviceManagementAuthority": "intune"
 }
 ```
+
+
+
+
+
 
 
 

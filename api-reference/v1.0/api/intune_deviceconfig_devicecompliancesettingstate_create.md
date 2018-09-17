@@ -44,7 +44,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |userName|Zeichenfolge|Gemeldeter Benutzername|
 |userPrincipalName|Zeichenfolge|Gemeldeter Benutzerprinzipalname|
 |deviceModel|Zeichenfolge|Gemeldetes Gerätemodell|
-|Status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|Zustand|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Toleranzperiode für die Gerätekonformität|
 
 
@@ -99,6 +99,11 @@ Content-Length: 566
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
+
+
+
+
+
 
 
 

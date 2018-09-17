@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceConfigurationDeviceStateSummaries
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md) an.
@@ -34,14 +34,14 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|unknownDeviceCount|Int32|Anzahl der unbekannten Geräte|
+|ID|Zeichenfolge|Schlüssel der Entität|
+|unknownDeviceCount|Int32|Anzahl von unbekannten Geräten|
 |notApplicableDeviceCount|Int32|Anzahl der ausgenommenen Geräte|
-|compliantDeviceCount|Int32|Anzahl der konformen Geräte|
-|remediatedDeviceCount|Int32|Anzahl der korrigierten Geräte|
-|nonCompliantDeviceCount|Int32|Anzahl der nicht konformen Geräte|
-|errorDeviceCount|Int32|Anzahl der fehlerhaften Geräte|
-|conflictDeviceCount|Int32|Anzahl der Geräte mit Konflikten|
+|compliantDeviceCount|Int32|Anzahl von konformen Geräten|
+|remediatedDeviceCount|Int32|Anzahl von korrigierten Geräten|
+|nonCompliantDeviceCount|Int32|Anzahl von nicht konformen Geräten|
+|errorDeviceCount|Int32|Anzahl von Geräten mit Fehlern|
+|conflictDeviceCount|Int32|Anzahl von Geräten mit Konflikt|
 
 
 
@@ -86,6 +86,11 @@ Content-Length: 339
   "conflictDeviceCount": 3
 }
 ```
+
+
+
+
+
 
 
 

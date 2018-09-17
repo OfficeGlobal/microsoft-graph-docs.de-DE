@@ -7,8 +7,13 @@ Mögliche Werte für firewallPreSharedKeyEncodingMethod
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |deviceDefault|0|Von Intune wurde kein Wert konfiguriert, den vom Benutzer konfigurierten Standardwert für das Gerät nicht außer Kraft setzen|
-|Keine|1|Vorinstallierter Schlüssel ist nicht codiert. Stattdessen wird er in seinem Breitzeichen-Format gespeichert|
+|keine|1|Vorinstallierter Schlüssel ist nicht codiert. Stattdessen wird er in seinem Breitzeichen-Format gespeichert|
 |utF8|2|Vorinstallierter Schlüssel mit UTF-8-Codierung|
+
+
+
+
+
 
 
 

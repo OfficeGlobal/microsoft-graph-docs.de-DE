@@ -15,21 +15,21 @@ Windows Information Protection App Learning – Zusammenfassungsentität.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für die WindowsInformationProtectionAppLearningSummary.|
-|applicationName|String|Name der Anwendung|
-|applicationType|String|Typ der Anwendung. Mögliche Werte sind: `universal`, `desktop`.|
+|ID|Zeichenfolge|Eindeutiger Bezeichner für die WindowsInformationProtectionAppLearningSummary.|
+|applicationName|Zeichenfolge|Name der Anwendung|
+|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Anwendungstyp. Mögliche Werte sind: `universal` und `desktop`.|
 |deviceCount|Int32|Geräteanzahl|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionAppLearningSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLearningSummary",
@@ -39,6 +39,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "deviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

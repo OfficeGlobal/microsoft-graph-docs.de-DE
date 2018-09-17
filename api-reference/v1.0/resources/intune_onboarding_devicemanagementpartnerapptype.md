@@ -6,9 +6,14 @@ Partner-App-Typ.
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|unknown|0|Der Partner-App-Typ ist unbekannt.|
+|unbekannt|0|Der Partner-App-Typ ist unbekannt.|
 |singleTenantApp|1|Die Partner-App hat nur einen Mandanten in AAD.|
 |multiTenantApp|2|Die Partner-App hat mehrere Mandanten in AAD.|
+
+
+
+
+
 
 
 

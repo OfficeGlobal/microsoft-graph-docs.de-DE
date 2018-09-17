@@ -11,7 +11,12 @@ Mögliche Werte für Installationsstatus.
 |failed|2|Fehlgeschlagen.|
 |notInstalled|3|Nicht installiert.|
 |uninstallFailed|4|Deinstallieren ist fehlgeschlagen.|
-|unknown|5|Unbekannt.|
+|unbekannt|5|Unbekannt.|
+
+
+
+
+
 
 
 

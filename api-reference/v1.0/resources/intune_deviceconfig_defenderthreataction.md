@@ -8,11 +8,16 @@ Standard-Aktion des Defenders, um auf erkannte Malware-Bedrohungen zu reagieren.
 |:---|:---|:---|
 |deviceDefault|0|Aktion basierend auf der Update-Definition anwenden.|
 |clean|1|Die erkannte Bedrohung säubern.|
-|Quarantäne|2|Die erkannte Bedrohung unter Quarantäne stellen.|
+|quarantine|2|Die erkannte Bedrohung unter Quarantäne stellen.|
 |remove|3|Erkannte Bedrohung entfernen.|
-|Zulassen|4|Zulassen der erkannten Bedrohung.|
+|allow|4|Zulassen der erkannten Bedrohung.|
 |userDefined|5|Erlaubt es dem Benutzer, die Aktion zu bestimmen, die bei einer erkannten Bedrohung durchgeführt werden soll.|
-|Blockieren|6|Blockieren der erkannten Bedrohung.|
+|block|6|Blockieren der erkannten Bedrohung.|
+
+
+
+
+
 
 
 

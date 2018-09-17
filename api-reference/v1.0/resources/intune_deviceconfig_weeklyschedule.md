@@ -18,3 +18,8 @@ Mögliche Werte für einem wöchentlichen Plan.
 
 
 
+
+
+
+
+

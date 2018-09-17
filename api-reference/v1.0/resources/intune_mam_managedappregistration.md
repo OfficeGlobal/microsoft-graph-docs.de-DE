@@ -16,17 +16,17 @@ Die Ressource „managedAppRegistration“ repräsentiert die Details einer verw
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung|
 |lastSyncDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Synchronisierung der App mit dem Verwaltungsdienst|
-|applicationVersion|String|Version der App|
-|managementSdkVersion|String|Version des App-Verwaltungs-SDK|
-|platformVersion|String|Version des Betriebssystems|
-|deviceType|String|Gerätetyp des Hostgeräts|
-|deviceTag|String|Vom App-Verwaltungs-SDK generiertes Tag, das bei der Zuordnung von Apps hilft, die auf demselben Gerät gehostet werden. Es ist nicht garantiert, dass die App-Zuordnung unter allen Bedingungen funktioniert.|
-|deviceName|String|Gerätename des Hostgeräts|
-|flaggedReasons|String-Sammlung|Gründe (0 oder mehr), aus denen eine App-Registrierung gekennzeichnet wurde. Beispiel: Die App wird auf einem gerooteten Gerät ausgeführt.|
-|userId|String|Benutzer-ID, zu der die App-Registrierung gehört|
+|applicationVersion|Zeichenfolge|Version der App|
+|managementSdkVersion|Zeichenfolge|Version des App-Verwaltungs-SDK|
+|platformVersion|Zeichenfolge|Version des Betriebssystems|
+|deviceType|Zeichenfolge|Gerätetyp des Hostgeräts|
+|deviceTag|Zeichenfolge|Vom App-Verwaltungs-SDK generiertes Tag, das bei der Zuordnung von Apps hilft, die auf demselben Gerät gehostet werden. Es ist nicht garantiert, dass die App-Zuordnung unter allen Bedingungen funktioniert.|
+|deviceName|Zeichenfolge|Gerätename des Hostgeräts|
+|flaggedReasons|[managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md)-Sammlung|Gründe (0 oder mehr), aus denen eine App-Registrierung gekennzeichnet wurde. Beispiel: Die App wird auf einem gerooteten Gerät ausgeführt.|
+|userId|Zeichenfolge|Benutzer-ID, zu der die App-Registrierung gehört|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|Bezeichner des App-Pakets|
-|id|String|Schlüssel der Entität|
-|version|String|Version der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Version|Zeichenfolge|Version der Entität|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
@@ -36,13 +36,13 @@ Die Ressource „managedAppRegistration“ repräsentiert die Details einer verw
 |operations|Sammlung von Objekten des Typs [managedAppOperation](../resources/intune_mam_managedappoperation.md)|Operationen (0 oder mehr) mit langer Ausführungszeit, die bei der App-Registrierung ausgelöst wurden|
 
 ## <a name="json-representation"></a>JSON-Darstellung
-Unten sehen Sie eine JSON-Darstellung der Ressource.
-<!-- {
+Es folgt eine JSON-Darstellung der Ressource.
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppRegistration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppRegistration",
@@ -65,6 +65,11 @@ Unten sehen Sie eine JSON-Darstellung der Ressource.
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -15,16 +15,16 @@ Zusammenfassung des Zustands der Gerätekonformitätsrichtlinien-Einstellung fü
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|setting|Zeichenfolge|Der Klassenname und der Eigenschaftenname der Einstellung.|
-|settingName|Zeichenfolge|Der Name der Einstellung.|
-|platformType|Zeichenfolge|Die Plattform der Einstellung. Mögliche Werte: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `all`.|
-|id|Zeichenfolge|Schlüssel der Entität|
-|unknownDeviceCount|Int32|Anzahl unbekannter Geräte|
-|notApplicableDeviceCount|Int32|Anzahl nicht anwendbarer Geräte|
-|compliantDeviceCount|Int32|Anzahl der konformen Geräte|
-|remediatedDeviceCount|Int32|Anzahl korrigierter Geräte|
-|nonCompliantDeviceCount|Int32|Anzahl der nicht konformen Geräte|
-|errorDeviceCount|Int32|Anzahl der fehlerhaften Geräte|
+|ID|Zeichenfolge|Schlüssel der Entität|
+|Einstellung|Zeichenfolge|Klassenname und Eigenschaftenname der Einstellung|
+|settingName|Zeichenfolge|Name der Einstellung|
+|platformType|[policyPlatformType](../resources/intune_deviceconfig_policyplatformtype.md)|Einstellungsplattform. Mögliche Werte sind: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile` und `all`.|
+|unknownDeviceCount|Int32|Anzahl von unbekannten Geräten|
+|notApplicableDeviceCount|Int32|Anzahl der ausgenommenen Geräte|
+|compliantDeviceCount|Int32|Anzahl von konformen Geräten|
+|remediatedDeviceCount|Int32|Anzahl von korrigierten Geräten|
+|nonCompliantDeviceCount|Int32|Anzahl von nicht konformen Geräten|
+|errorDeviceCount|Int32|Anzahl von Geräten mit Fehlern|
 |conflictDeviceCount|Int32|Anzahl der Geräte mit Konflikten|
 
 ## <a name="relationships"></a>Beziehungen
@@ -34,19 +34,19 @@ Zusammenfassung des Zustands der Gerätekonformitätsrichtlinien-Einstellung fü
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceCompliancePolicySettingStateSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
+  "id": "String (identifier)",
   "setting": "String",
   "settingName": "String",
   "platformType": "String",
-  "id": "String (identifier)",
   "unknownDeviceCount": 1024,
   "notApplicableDeviceCount": 1024,
   "compliantDeviceCount": 1024,
@@ -56,6 +56,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "conflictDeviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

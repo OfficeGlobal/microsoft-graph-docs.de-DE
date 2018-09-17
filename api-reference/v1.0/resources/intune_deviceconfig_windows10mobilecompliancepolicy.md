@@ -28,7 +28,7 @@ Sie erbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecom
 |passwordBlockSimple|boolesch|Gibt an, ob die Kalendersynchronisierung blockiert werden soll.|
 |passwordMinimumLength|Int32|Mindestlänge des Kennworts. Gültige Werte: 4 bis 16.|
 |passwordMinimumCharacterSetCount|Int32|Anzahl der Zeichensätze, die im Kennwort enthalten sein müssen|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Der geforderte Kennworttyp. Mögliche Werte sind `deviceDefault`, `alphanumeric`,`numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Der erforderliche Kennworttyp. Mögliche Werte: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Grenze für die Wiederverwendung von Kennwörtern. Der festgelegte Wert gibt an, von wie vielen der zuletzt genutzten Kennwörter sich das Kennwort unterscheiden muss.|
 |passwordExpirationDays|Int32|Zeit in Tagen bis zum Ablaufen des Kennworts. Gültige Werte: 1 bis 255.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Zeitraum von Inaktivität in Minuten, nach dem die Eingabe eines Kennworts gefordert wird|
@@ -56,8 +56,8 @@ Sie erbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecom
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceCompliancePolicy",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windows10MobileCompliancePolicy"
 }-->
 ``` json
@@ -87,6 +87,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "storageRequireEncryption": true
 }
 ```
+
+
+
+
+
 
 
 

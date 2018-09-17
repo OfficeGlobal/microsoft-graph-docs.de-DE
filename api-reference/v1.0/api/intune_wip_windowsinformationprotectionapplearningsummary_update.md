@@ -24,8 +24,8 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
-|Annehmen|application/json|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Akzeptieren|Anwendung/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md)-Objekts an.
@@ -34,9 +34,9 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für die WindowsInformationProtectionAppLearningSummary.|
-|applicationName|String|Name der Anwendung|
-|applicationType|String|Typ der Anwendung. Mögliche Werte sind: `universal`, `desktop`.|
+|ID|Zeichenfolge|Eindeutiger Bezeichner für die WindowsInformationProtectionAppLearningSummary.|
+|applicationName|Zeichenfolge|Name der Anwendung|
+|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Anwendungstyp. Mögliche Werte sind: `universal` und `desktop`.|
 |deviceCount|Int32|Geräteanzahl|
 
 
@@ -74,6 +74,11 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
+
+
+
+
+
 
 
 

@@ -6,8 +6,13 @@ Ermöglicht es IT-Administratoren, ein vordefiniertes standardmäßiges Suchmodu
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Standard|0|Verwendet Werkseinstellungen von Edge, um das Standard-Suchmodul gemäß Benutzermarkt zuzuweisen|
+|default|0|Verwendet Werkseinstellungen von Edge, um das Standard-Suchmodul gemäß Benutzermarkt zuzuweisen|
 |Bing|1|Legt Bing als das Standard-Suchmodul fest|
+
+
+
+
+
 
 
 
