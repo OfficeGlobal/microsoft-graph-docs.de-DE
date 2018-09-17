@@ -1,0 +1,56 @@
+# <a name="registrykeystate-resource-type"></a><span data-ttu-id="3d086-101">Ressourcentyp registryKeyState</span><span class="sxs-lookup"><span data-stu-id="3d086-101">registryKeyState resource type</span></span>
+
+<span data-ttu-id="3d086-102">Enthält Informationen zu Änderungen am Registrierungsschlüssel im Zusammenhang mit der Warnung und dem Prozess, der den Registrierungsschlüssel geändert hat.</span><span class="sxs-lookup"><span data-stu-id="3d086-102">Contains information about registry key changes related to the alert, and the process that changed the registry keys.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="3d086-103">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="3d086-103">Properties</span></span>
+
+| <span data-ttu-id="3d086-104">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="3d086-104">Property</span></span>     | <span data-ttu-id="3d086-105">Typ</span><span class="sxs-lookup"><span data-stu-id="3d086-105">Type</span></span>        | <span data-ttu-id="3d086-106">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3d086-106">Description</span></span> |
+|:-------------|:------------|:------------|
+|<span data-ttu-id="3d086-107">hive</span><span class="sxs-lookup"><span data-stu-id="3d086-107">Hive</span></span>|<span data-ttu-id="3d086-108">registryHive</span><span class="sxs-lookup"><span data-stu-id="3d086-108">registryHive</span></span>|<span data-ttu-id="3d086-109">Ein [Windows-Registry-Hive](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives):</span><span class="sxs-lookup"><span data-stu-id="3d086-109">A [Windows registry hive](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives) :</span></span> <ul><li><span data-ttu-id="3d086-110">HKEY_CURRENT_CONFIG</span><span class="sxs-lookup"><span data-stu-id="3d086-110">HKEY_CURRENT_CONFIG</span></span></li> <li><span data-ttu-id="3d086-111">HKEY_CURRENT_USER</span><span class="sxs-lookup"><span data-stu-id="3d086-111">HKEY_CURRENT_USER</span></span></li> <li><span data-ttu-id="3d086-112">HKEY_LOCAL_MACHINE\SAM</span><span class="sxs-lookup"><span data-stu-id="3d086-112">HKEY_LOCAL_MACHINE\SAM</span></span></li> <li><span data-ttu-id="3d086-113">HKEY_LOCAL_MACHINE\Security</span><span class="sxs-lookup"><span data-stu-id="3d086-113">HKEY_LOCAL_MACHINE\Security</span></span></li> <li><span data-ttu-id="3d086-114">HKEY_LOCAL_MACHINE\Software</span><span class="sxs-lookup"><span data-stu-id="3d086-114">HKEY_LOCAL_MACHINE\Software</span></span></li> <li><span data-ttu-id="3d086-115">HKEY_LOCAL_MACHINE\System</span><span class="sxs-lookup"><span data-stu-id="3d086-115">HKEY_LOCAL_MACHINE\System</span></span></li> <li><span data-ttu-id="3d086-116">HKEY_USERS\\.Default.</span><span class="sxs-lookup"><span data-stu-id="3d086-116">HKEY_USERS\\.Default.</span></span></li></ul> <span data-ttu-id="3d086-117">Mögliche Werte sind: `unknown`, `currentConfig`, `currentUser`, `localMachineSam`, `localMachineSamSoftware`, `localMachineSystem` und `usersDefault`.</span><span class="sxs-lookup"><span data-stu-id="3d086-117">Possible values are: `unknown`, `currentConfig`, `currentUser`, `localMachineSam`, `localMachineSamSoftware`, `localMachineSystem`, `usersDefault`.</span></span>|
+|<span data-ttu-id="3d086-118">Key</span><span class="sxs-lookup"><span data-stu-id="3d086-118">key</span></span>|<span data-ttu-id="3d086-119">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="3d086-119">String</span></span>|<span data-ttu-id="3d086-120">Aktueller (d.h. geänderten) Registrierungsschlüssel (ohne HIVE).</span><span class="sxs-lookup"><span data-stu-id="3d086-120">Current (i.e. changed) registry key (excludes HIVE).</span></span>|
+|<span data-ttu-id="3d086-121">oldKey</span><span class="sxs-lookup"><span data-stu-id="3d086-121">oldKey</span></span>|<span data-ttu-id="3d086-122">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="3d086-122">String</span></span>|<span data-ttu-id="3d086-123">Früherer (d.h., vor Änderung) Registrierungsschlüssel (ohne HIVE).</span><span class="sxs-lookup"><span data-stu-id="3d086-123">Previous (i.e. before changed) registry key (excludes HIVE).</span></span>|
+|<span data-ttu-id="3d086-124">oldValueData</span><span class="sxs-lookup"><span data-stu-id="3d086-124">oldValueData</span></span>|<span data-ttu-id="3d086-125">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="3d086-125">String</span></span>|<span data-ttu-id="3d086-126">Früherer (d.h., vor Änderung) Wertdaten des Registrierungsschlüssels (Inhalte).</span><span class="sxs-lookup"><span data-stu-id="3d086-126">Previous (i.e. before changed) registry key value data (contents).</span></span>|
+|<span data-ttu-id="3d086-127">oldValueName</span><span class="sxs-lookup"><span data-stu-id="3d086-127">oldValueName</span></span>|<span data-ttu-id="3d086-128">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="3d086-128">String</span></span>|<span data-ttu-id="3d086-129">Früherer (d.h., vor Änderung) Wertname des Registrierungsschlüssels.</span><span class="sxs-lookup"><span data-stu-id="3d086-129">Previous (i.e. before changed) registry key value name.</span></span>|
+|<span data-ttu-id="3d086-130">Operation</span><span class="sxs-lookup"><span data-stu-id="3d086-130">operation</span></span>|<span data-ttu-id="3d086-131">registryOperation</span><span class="sxs-lookup"><span data-stu-id="3d086-131">registryOperation</span></span>|<span data-ttu-id="3d086-132">Der Vorgang, der den Namen des Registrierungsschlüssels und/oder den Wert geändert hat.</span><span class="sxs-lookup"><span data-stu-id="3d086-132">Operation that changed the registry key name and/or value.</span></span> <span data-ttu-id="3d086-133">Mögliche Werte: `unknown`, `create`, `modify`, `delete`.</span><span class="sxs-lookup"><span data-stu-id="3d086-133">Possible values are: `unknown`, `create`, `modify`, `delete`.</span></span>|
+|<span data-ttu-id="3d086-134">processId</span><span class="sxs-lookup"><span data-stu-id="3d086-134">processId</span></span>|<span data-ttu-id="3d086-135">Int32</span><span class="sxs-lookup"><span data-stu-id="3d086-135">Int32</span></span>|<span data-ttu-id="3d086-136">Prozess-ID (PID) des Prozesses, der den Registrierungsschlüssel geändert hat (Prozessdetails werden in der Sammlung der 'Prozesse'-Warnungen angezeigt).</span><span class="sxs-lookup"><span data-stu-id="3d086-136">Process ID (PID) of the process that modified the registry key (process details will appear in the alert 'processes' collection).</span></span>|
+|<span data-ttu-id="3d086-137">valueData</span><span class="sxs-lookup"><span data-stu-id="3d086-137">valueData</span></span>|<span data-ttu-id="3d086-138">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="3d086-138">String</span></span>|<span data-ttu-id="3d086-139">Aktuelle (d.h. geänderte) Wertdaten des Registrierungsschlüssels (Inhalte).</span><span class="sxs-lookup"><span data-stu-id="3d086-139">Current (i.e. changed) registry key value data (contents).</span></span>|
+|<span data-ttu-id="3d086-140">valueName</span><span class="sxs-lookup"><span data-stu-id="3d086-140">valueName</span></span>|<span data-ttu-id="3d086-141">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="3d086-141">String</span></span>|<span data-ttu-id="3d086-142">Aktueller (d.h. geänderter) Wertname des Registrierungsschlüssels</span><span class="sxs-lookup"><span data-stu-id="3d086-142">Current (i.e. changed) registry key value name</span></span>|
+|<span data-ttu-id="3d086-143">valueType</span><span class="sxs-lookup"><span data-stu-id="3d086-143">ValueType</span></span>|<span data-ttu-id="3d086-144">registryValueType</span><span class="sxs-lookup"><span data-stu-id="3d086-144">registryValueType</span></span>|[<span data-ttu-id="3d086-145">Werttyp des Registrierungsschlüssels</span><span class="sxs-lookup"><span data-stu-id="3d086-145">Registry key value type</span></span>](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types) <ul><li><span data-ttu-id="3d086-146">REG_BINARY</span><span class="sxs-lookup"><span data-stu-id="3d086-146">REG_BINARY</span></span></li> <li><span data-ttu-id="3d086-147">REG_DWORD</span><span class="sxs-lookup"><span data-stu-id="3d086-147">REG_DWORD</span></span></li> <li><span data-ttu-id="3d086-148">REG_DWORD_LITTLE_ENDIAN</span><span class="sxs-lookup"><span data-stu-id="3d086-148">REG_DWORD_LITTLE_ENDIAN</span></span></li> <li><span data-ttu-id="3d086-149">REG_DWORD_BIG_ENDIAN</span><span class="sxs-lookup"><span data-stu-id="3d086-149">REG_DWORD_BIG_ENDIAN</span></span></li><li><span data-ttu-id="3d086-150">REG_EXPAND_SZ</span><span class="sxs-lookup"><span data-stu-id="3d086-150">REG_EXPAND_SZ</span></span></li> <li><span data-ttu-id="3d086-151">REG_LINK</span><span class="sxs-lookup"><span data-stu-id="3d086-151">REG_LINK</span></span></li> <li><span data-ttu-id="3d086-152">REG_MULTI_SZ</span><span class="sxs-lookup"><span data-stu-id="3d086-152">REG_MULTI_SZ</span></span></li> <li><span data-ttu-id="3d086-153">REG_NONE</span><span class="sxs-lookup"><span data-stu-id="3d086-153">REG_NONE</span></span></li> <li><span data-ttu-id="3d086-154">REG_QWORD</span><span class="sxs-lookup"><span data-stu-id="3d086-154">REG_QWORD</span></span></li> <li><span data-ttu-id="3d086-155">REG_QWORD_LITTLE_ENDIAN</span><span class="sxs-lookup"><span data-stu-id="3d086-155">REG_QWORD_LITTLE_ENDIAN</span></span></li> <li><span data-ttu-id="3d086-156">REG_SZ</span><span class="sxs-lookup"><span data-stu-id="3d086-156">REG_SZ</span></span></li></ul> <span data-ttu-id="3d086-157">Mögliche Werte sind: `unknown`, `binary`, `dword`, `dwordLittleEndian`, `dwordBigEndian`, `expandSz`, `link`, `multiSz`, `none`, `qword`, `qwordlittleEndian` und `sz`.</span><span class="sxs-lookup"><span data-stu-id="3d086-157">Possible values are: `unknown`, `binary`, `dword`, `dwordLittleEndian`, `dwordBigEndian`, `expandSz`, `link`, `multiSz`, `none`, `qword`, `qwordlittleEndian`, `sz`.</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="3d086-158">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="3d086-158">JSON representation</span></span>
+
+<span data-ttu-id="3d086-159">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="3d086-159">The following is a JSON representation of the resource.</span></span>
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.registryKeyState"
+}-->
+
+```json
+{
+  "hive": "@odata.type: microsoft.graph.registryHive",
+  "key": "String",
+  "oldKey": "String",
+  "oldValueData": "String",
+  "oldValueName": "String",
+  "operation": "@odata.type: microsoft.graph.registryOperation",
+  "processId": 1024,
+  "valueData": "String",
+  "valueName": "String",
+  "valueType": "@odata.type: microsoft.graph.registryValueType"
+}
+
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "registryKeyState resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

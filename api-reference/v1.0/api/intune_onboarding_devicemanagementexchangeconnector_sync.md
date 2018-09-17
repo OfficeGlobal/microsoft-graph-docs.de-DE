@@ -1,18 +1,18 @@
-# <a name="sync-action"></a><span data-ttu-id="6378c-101">Aktion „sync“</span><span class="sxs-lookup"><span data-stu-id="6378c-101">sync action</span></span>
+# <a name="sync-action"></a><span data-ttu-id="9538c-101">Aktion „sync“</span><span class="sxs-lookup"><span data-stu-id="9538c-101">sync action</span></span>
 
-> <span data-ttu-id="6378c-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="6378c-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="9538c-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="9538c-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="6378c-103">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="6378c-103">Not yet documented</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="6378c-104">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="6378c-104">Prerequisites</span></span>
-<span data-ttu-id="6378c-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="6378c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="9538c-103">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="9538c-103">Not yet documented</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="9538c-104">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="9538c-104">Prerequisites</span></span>
+<span data-ttu-id="9538c-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="9538c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="6378c-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="6378c-107">Permission type</span></span>|<span data-ttu-id="6378c-108">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="6378c-108">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="9538c-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="9538c-107">Permission type</span></span>|<span data-ttu-id="9538c-108">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="9538c-108">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="6378c-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="6378c-109">Delegated (work or school account)</span></span>|<span data-ttu-id="6378c-110">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6378c-110">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="6378c-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="6378c-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6378c-112">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="6378c-112">Not supported.</span></span>|
-|<span data-ttu-id="6378c-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="6378c-113">Application</span></span>|<span data-ttu-id="6378c-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="6378c-114">Not supported.</span></span>|
+|<span data-ttu-id="9538c-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="9538c-109">Delegated (work or school account)</span></span>|<span data-ttu-id="9538c-110">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9538c-110">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="9538c-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="9538c-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9538c-112">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="9538c-112">Not supported.</span></span>|
+|<span data-ttu-id="9538c-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="9538c-113">Application</span></span>|<span data-ttu-id="9538c-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="9538c-114">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="6378c-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="6378c-115">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9538c-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="9538c-115">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -21,29 +21,29 @@
 POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/sync
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6378c-116">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="6378c-116">Request headers</span></span>
-|<span data-ttu-id="6378c-117">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="6378c-117">Header</span></span>|<span data-ttu-id="6378c-118">Wert</span><span class="sxs-lookup"><span data-stu-id="6378c-118">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9538c-116">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="9538c-116">Request headers</span></span>
+|<span data-ttu-id="9538c-117">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="9538c-117">Header</span></span>|<span data-ttu-id="9538c-118">Wert</span><span class="sxs-lookup"><span data-stu-id="9538c-118">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="6378c-119">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="6378c-119">Authorization</span></span>|<span data-ttu-id="6378c-120">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="6378c-120">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="6378c-121">Akzeptieren</span><span class="sxs-lookup"><span data-stu-id="6378c-121">Accept</span></span>|<span data-ttu-id="6378c-122">Anwendung/json</span><span class="sxs-lookup"><span data-stu-id="6378c-122">application/json</span></span>|
+|<span data-ttu-id="9538c-119">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="9538c-119">Authorization</span></span>|<span data-ttu-id="9538c-120">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="9538c-120">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="9538c-121">Akzeptieren</span><span class="sxs-lookup"><span data-stu-id="9538c-121">Accept</span></span>|<span data-ttu-id="9538c-122">Anwendung/json</span><span class="sxs-lookup"><span data-stu-id="9538c-122">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6378c-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="6378c-123">Request body</span></span>
-<span data-ttu-id="6378c-124">Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.</span><span class="sxs-lookup"><span data-stu-id="6378c-124">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9538c-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="9538c-123">Request body</span></span>
+<span data-ttu-id="9538c-124">Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.</span><span class="sxs-lookup"><span data-stu-id="9538c-124">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="6378c-125">In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="6378c-125">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="9538c-125">In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="9538c-125">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="6378c-126">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="6378c-126">Property</span></span>|<span data-ttu-id="6378c-127">Typ</span><span class="sxs-lookup"><span data-stu-id="6378c-127">Type</span></span>|<span data-ttu-id="6378c-128">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6378c-128">Description</span></span>|
+|<span data-ttu-id="9538c-126">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="9538c-126">Property</span></span>|<span data-ttu-id="9538c-127">Typ</span><span class="sxs-lookup"><span data-stu-id="9538c-127">Type</span></span>|<span data-ttu-id="9538c-128">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="9538c-128">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6378c-129">syncType</span><span class="sxs-lookup"><span data-stu-id="6378c-129">syncType</span></span>|[<span data-ttu-id="6378c-130">deviceManagementExchangeConnectorSyncType</span><span class="sxs-lookup"><span data-stu-id="6378c-130">deviceManagementExchangeConnectorSyncType</span></span>](../resources/intune_onboarding_devicemanagementexchangeconnectorsynctype.md)|<span data-ttu-id="6378c-131">Typ der auszuführenden Synchronisierung (vollständige Synchronisierung oder Deltasynchronisierung)</span><span class="sxs-lookup"><span data-stu-id="6378c-131">The type of sync which will be executed, full sync or delta sync.</span></span>|
+|<span data-ttu-id="9538c-129">syncType</span><span class="sxs-lookup"><span data-stu-id="9538c-129">syncType</span></span>|[<span data-ttu-id="9538c-130">deviceManagementExchangeConnectorSyncType</span><span class="sxs-lookup"><span data-stu-id="9538c-130">deviceManagementExchangeConnectorSyncType</span></span>](../resources/intune_onboarding_devicemanagementexchangeconnectorsynctype.md)|<span data-ttu-id="9538c-131">Typ der auszuführenden Synchronisierung (vollständige Synchronisierung oder Deltasynchronisierung).</span><span class="sxs-lookup"><span data-stu-id="9538c-131">The type of sync which will be executed, full sync or delta sync.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="6378c-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="6378c-132">Response</span></span>
-<span data-ttu-id="6378c-133">Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` zurück.</span><span class="sxs-lookup"><span data-stu-id="6378c-133">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="9538c-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="9538c-132">Response</span></span>
+<span data-ttu-id="9538c-133">Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` zurück.</span><span class="sxs-lookup"><span data-stu-id="9538c-133">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6378c-134">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6378c-134">Example</span></span>
-### <a name="request"></a><span data-ttu-id="6378c-135">Anforderung</span><span class="sxs-lookup"><span data-stu-id="6378c-135">Request</span></span>
-<span data-ttu-id="6378c-136">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="6378c-136">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9538c-134">Beispiel</span><span class="sxs-lookup"><span data-stu-id="9538c-134">Example</span></span>
+### <a name="request"></a><span data-ttu-id="9538c-135">Anforderung</span><span class="sxs-lookup"><span data-stu-id="9538c-135">Request</span></span>
+<span data-ttu-id="9538c-136">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="9538c-136">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/sync
 
@@ -55,11 +55,16 @@ Content-length: 31
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="6378c-137">Antwort</span><span class="sxs-lookup"><span data-stu-id="6378c-137">Response</span></span>
-<span data-ttu-id="6378c-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="6378c-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="9538c-137">Antwort</span><span class="sxs-lookup"><span data-stu-id="9538c-137">Response</span></span>
+<span data-ttu-id="9538c-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="9538c-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
+
+
 
 
 
