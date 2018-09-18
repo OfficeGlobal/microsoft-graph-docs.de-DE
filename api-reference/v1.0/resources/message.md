@@ -4,9 +4,10 @@ Dieser Ressourcentyp stellt eine Nachricht in einem mailFolder-Objekt dar.
 
 Diese Ressource unterstützt Folgendes:
 
-- Hinzufügen Ihrer eigenen Daten als benutzerdefinierte Kopfzeilen von Internet-Nachrichten. Fügen Sie benutzerdefinierte Kopfzeilen nur beim Erstellen einer Nachricht hinzu, und benennen Sie diese mit „x-“ beginnend. Nach dem Senden der Nachricht können Sie die Kopfzeilen nicht mehr ändern. Verwenden Sie den `$select` Abfrageparameter des Vorgangs [Eine Nachricht erhalten](../api/message_get.md), um sich die Kopfzeilen einer Nachricht anzeigen zu lassen.
-- Hinzufügen Ihrer eigenen Daten als benutzerdefinierte Eigenschaften in [Erweiterungen](../../../concepts/extensibility_overview.md).
-- Verwenden einer [Delta-Abfrage](../../../concepts/delta_query_overview.md) zum Nachverfolgen von inkrementellen Hinzufügungen, Löschungen und Aktualisierungen durch Bereitstellen der [delta](../api/message_delta.md)-Funktion.
+- Hinzufügen Ihrer eigenen Daten als benutzerdefinierte Kopfzeilen von Internet-Nachrichten. Fügen Sie benutzerdefinierte Kopfzeilen nur beim Erstellen einer Nachricht hinzu, und benennen Sie diese mit „x-“ beginnend. Nach dem Senden der Nachricht können Sie die Kopfzeilen nicht mehr ändern. Verwenden Sie den `$select`-Abfrageparameter des Vorgangs [zum Abrufen einer Nachricht](../api/message_get.md), um die Nachrichtenheader anzuzeigen.
+- Hinzufügen der eigenen Daten als benutzerdefinierte Eigenschaften als [Erweiterungen](../../../concepts/extensibility_overview.md).
+- Abonnieren von [Änderungsbenachrichtigungen](../../../concepts/webhooks.md).
+- Verwenden einer [delta-Abfrage](../../../concepts/delta_query_overview.md) zum Nachverfolgen von inkrementellen Hinzufügungen, Löschungen und Aktualisierungen durch Bereitstellen einer [delta](../api/message_delta.md)-Funktion.
 
 ## <a name="methods"></a>Methoden
 
@@ -47,18 +48,18 @@ Diese Ressource unterstützt Folgendes:
 |bccRecipients|[Empfänger](recipient.md)-Sammlung|Die Bcc:-Empfänger der Nachricht.|
 |Text|[itemBody](itembody.md)|Der Text der Nachricht. Er kann im HTML- oder Textformat vorliegen.|
 |bodyPreview|Zeichenfolge|Die ersten 255 Zeichen des Nachrichtentexts. Liegt im Textformat vor.|
-|Kategorien|Zeichenfolgenauflistung|Die Kategorien, die mit der Nachricht verknüpft sind.|
+|categories|Zeichenfolgenauflistung|Die Kategorien, die mit der Nachricht verknüpft sind.|
 |ccRecipients|[Empfänger](recipient.md)-Sammlung|Die Cc:-Empfänger der Nachricht.|
 |changeKey|Zeichenfolge|Die Version der Nachricht.|
 |conversationId|Zeichenfolge|Die ID der Unterhaltung, zu der die E-Mail gehört.|
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht erstellt wurde.|
-|Flag|[followupFlag](followupflag.md)|Der Wert des Flags, der den Status, das Startdatum, das Fälligkeitsdatum oder das Enddatum für die Nachricht angibt.|
-|Von|[Empfänger](recipient.md)|Der Postfachbesitzer und der Absender der Nachricht. Der Wert muss dem tatsächlich verwendeten Postfach entsprechen.|
+|flag|[followupFlag](followupflag.md)|Der Kennzeichenwert, der den Status, das Startdatum, das Fälligkeitsdatum oder das Enddatum für die Nachricht angibt.|
+|Von|[Empfänger](recipient.md)|Der Postfachbesitzer und Absender der Nachricht. Der Wert muss dem tatsächlich verwendeten Postfach entsprechen.|
 |hasAttachments|Boolescher Wert|Gibt an, ob die Nachricht Anlagen enthält. Diese Eigenschaft enthält keine Inline-Anlagen, wenn eine Nachrichtalso  nur Inline-Anlagen enthält, ist diese Eigenschaft „false“. Um das Vorhandensein von Inline-Anlagen zu überprüfen, analysieren Sie die **body**-Eigenschaft so, dass nach einem `src`-Attribut, z. B. `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`, gesucht wird.|
 |id|Zeichenfolge|Eindeutiger Bezeichner für die Nachricht (beachten Sie, dass sich dieser Wert ändern kann, wenn eine Nachricht verschoben oder geändert wird)|
-|Wichtigkeit|Wichtigkeit| Wichtigkeit der Nachricht: `Low`, `Normal`, `High`.|
+|importance|importance| Die Wichtigkeit der Nachricht: `Low`, `Normal`, `High`.|
 |inferenceClassification | inferenceClassificationType | Die Klassifizierung der Nachricht für den Benutzer, basierend auf der abgeleiteten Relevanz oder Wichtigkeit oder auf einer expliziten Außerkraftsetzung. Mögliche Werte sind `focused`, oder `other`. |
-|internetMessageHeaders | [internetinternetMessageHeaders](internetmessageheader.md)-Sammlung | Eine Sammlung von Nachrichtenkopfzeilen, die von [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) definiert sind. Der Satz enthält Nachrichtenkopfzeilen, die den Pfad einer Nachricht vom Absender bis zum Empfänger anzeigen. Ebenso kann er benutzerdefinierte Nachrichtenkopfzeilen enthalten, die App-Daten für die Nachricht beinhalten. |
+|internetMessageHeaders | [internetMessageHeaders](internetmessageheader.md)-Sammlung | Eine Sammlung von Nachrichtenkopfzeilen, die von [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) definiert sind. Der Satz enthält Nachrichtenheader, die den Netzwerkpfad einer Nachricht vom Absender bis zum Empfänger anzeigen. Ebenso kann er benutzerdefinierte Nachrichtenkopfzeilen enthalten, die App-Daten für die Nachricht beinhalten. |
 |internetMessageId |Zeichenfolge |Die Nachrichten-ID im von [RFC2822](http://www.ietf.org/rfc/rfc2822.txt) angegebenen Format. |
 |isDeliveryReceiptRequested|Boolesch|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
 |isDraft|Boolesch|Gibt an, ob die Nachricht ein Entwurf ist. Eine Nachricht ist ein Entwurf, solange sie noch nicht gesendet wurde.|
@@ -172,7 +173,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Postfacheinstellungen abrufen](../api/user_get_mailboxsettings.md) 
 - [Postfacheinstellungen aktualisieren](../api/user_update_mailboxsettings.md)
