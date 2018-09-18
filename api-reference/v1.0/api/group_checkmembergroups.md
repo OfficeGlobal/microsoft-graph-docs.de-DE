@@ -1,4 +1,4 @@
-# <a name="group-checkmembergroups"></a>group: checkMemberGroups
+# <a name="group-checkmembergroups"></a>Gruppe: checkMemberGroups
 
 Sucht nach einer Mitgliedschaft in der angegebenen Liste von Gruppen. Gibt aus der Liste diejenigen Gruppen zurück, bei denen die angegebene Gruppe über eine direkte oder transitive Mitgliedschaft verfügt.
 
@@ -14,7 +14,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                                                                              |
 | Anwendung                            | _Group.Read.All_, Directory.Read.All. Directory.ReadWrite.All                               |
 
-> **Hinweis:** Diese API erfordert derzeit die Berechtigung `Directory.Read.All` oder höher. Bei der Verwendung der Berechtigung `Gorup.Read.All` wird ein Fehler ausgegeben. Dies ist ein bekanntes Problem.
+> **Hinweis:** Diese API erfordert derzeit die Berechtigung `Directory.Read.All` oder höher. Bei der Verwendung der Berechtigung `Group.Read.All` wird ein Fehler ausgegeben. Dies ist ein bekanntes Problem.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -36,7 +36,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter | Typ              | Beschreibung           |
 | :-------- | :---------------- | :-------------------- |
-| groupIds  | Zeichenfolgenauflistung | Ein Array von Gruppen-IDs |
+| groupIds  | Zeichenfolgen-Sammlung | Ein Array von Gruppen-IDs |
 
 ## <a name="response"></a>Antwort
 
