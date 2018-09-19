@@ -4,7 +4,8 @@ Stellt ein Azure AD-Benutzerkonto dar. Erbt von [directoryObject](directoryobjec
 
 Diese Ressource unterstützt Folgendes:
 
-- Hinzufügen Ihrer eigenen Daten zu benutzerdefinierten Eigenschaften mithilfe von [Erweiterungen](../../../concepts/extensibility_overview.md).
+- Hinzufügen der eigenen Daten als benutzerdefinierte Eigenschaften als [Erweiterungen](../../../concepts/extensibility_overview.md).
+- Abonnieren von [Änderungsbenachrichtigungen](../../../concepts/webhooks.md).
 - Verwenden einer [Delta-Abfrage](../../../concepts/delta_query_overview.md) zum Nachverfolgen von inkrementellen Hinzufügungen, Löschungen und Aktualisierungen durch Bereitstellen der [delta](../api/user_delta.md)-Funktion.
 
 ## <a name="methods"></a>Methoden
@@ -45,7 +46,7 @@ Diese Ressource unterstützt Folgendes:
 |[getMemberGroups](../api/user_getmembergroups.md)|Zeichenfolgenauflistung|Gibt alle Gruppen zurück, bei denen der Benutzer Mitglied ist. Die Überprüfung ist transitiv.|
 |[getMemberObjects](../api/user_getmemberobjects.md)|Zeichenfolgenauflistung| Gibt alle Gruppen und Verzeichnisrollen zurück, bei denen der Benutzer ein Mitglied ist. Die Überprüfung ist transitiv. |
 |[reminderView](../api/user_reminderview.md)|[Erinnerung](reminder.md)-Sammlung|Gibt eine Liste von Kalendererinnerungen innerhalb der angegebenen Start- und Endzeiten zurück.|
-|[Delta](../api/user_delta.md)|Benutzersammlung| Dient zum Abrufen inkrementeller Änderungen für Benutzer. |
+|[delta](../api/user_delta.md)|Benutzersammlung| Dient zum Abrufen inkrementeller Änderungen für Benutzer. |
 |**Offene Erweiterungen**| | |
 |[Offene Erweiterung erstellen](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Erstellt eine offene Erweiterung und fügt benutzerdefinierte Eigenschaften zu einer neuen oder vorhandenen Ressource hinzu.|
 |[Offene Erweiterung abrufen](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md)-Sammlung| Dient zum Abrufen einer offenen Erweiterung, die durch den Erweiterungsnamen identifiziert wird.|
@@ -57,16 +58,17 @@ Diese Ressource unterstützt Folgendes:
 | Eigenschaft       | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
 |aboutMe|Zeichenfolge|Ein Freihandform-Texteingabefeld, in dem der Benutzer sich selbst beschreiben kann.|
-|accountEnabled|Boolesch| **wahr**, wenn das Konto aktiviert ist; andernfalls **falsch**. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Unterstützt $filter.    |
+|accountEnabled|Boolesch| **true**, wenn das Konto aktiviert ist; andernfalls **false**. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Unterstützt $filter.    |
 |ageGroup|Zeichenfolge|Legt die Altersgruppe der Benutzer fest. Zulässige Werte: `null`, `minor`, `notAdult` und `adult`. Weitere Informationen finden Sie unter [Definitionen zu Eigenschaften der Volljährigkeit](#legal-age-group-property-definitions). |
 |assignedLicenses|[assignedLicense](assignedlicense.md)-Sammlung|Die Lizenzen, die dem Benutzer zugewiesen sind. Lässt keine NULL-Werte zu.            |
 |assignedPlans|[assignedPlan](assignedplan.md)-Sammlung|Die Pläne, die dem Benutzer zugewiesen sind. Schreibgeschützt. Lässt keine NULL-Werte zu. |
 |Geburtsdatum|DateTimeOffset|Der Geburtstag des Benutzers. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |businessPhones|String-Sammlung|Die Telefonnummern für den Benutzer. HINWEIS: Obwohl dies eine String-Sammlung ist, kann nur eine Nummer für diese Eigenschaft festgelegt werden.|
 |Ort|Zeichenfolge|Die Stadt, in der sich der Benutzer befindet. Unterstützt $filter.|
-|companyName| Zeichenfolge | Der Unternehmensname, dem der Benutzer zugewiesen ist. Schreibgeschützt.
+|companyName | Zeichenfolge | Der Unternehmensname, dem der Benutzer zugewiesen ist. Schreibgeschützt. |
 |consentProvidedForMinor|Zeichenfolge|Legt fest, ob Zustimmung für Minderjährige abgerufen wurde. Zulässige Werte: `null`, `granted`, `denied` und `notRequired`. Weitere Informationen finden Sie unter [Definitionen zu Eigenschaften der Volljährigkeit](#legal-age-group-property-definitions).|
 |Land|Zeichenfolge|Land/Region, in dem/der sich der Benutzer befindet; z. B. „USA“ oder „UK“. Unterstützt $filter.|
+|createdDateTime | DateTimeOffset |Das Erstellungsdatum des User-Objekts. |
 |Abteilung|Zeichenfolge|Der Name der Abteilung, in der der Benutzer arbeitet. Unterstützt $filter.|
 |displayName|Zeichenfolge|cDer Name, der im Adressbuch für den Benutzer angezeigt wird. Dies ist normalerweise eine Kombination aus dem Vornamen, der Initiale des weiteren Vornamens und des Nachnamens. Diese Eigenschaft ist beim Erstellen eines Benutzers erforderlich und kann nicht bei Updates deaktiviert werden. Unterstützt $Filter und $orderby.|
 |givenName|Zeichenfolge|Der Vorname des Benutzers. Unterstützt $filter.|
@@ -124,7 +126,7 @@ Diese schreibgeschützte Eigenschaft wird von Unternehmens-Anwendungsentwicklern
 |keine|0|Standardwert nicht `ageGroup` wurde für den Benutzer festgelegt.|
 |minorWithoutParentalConsent |1|(Reserviert für die zukünftige Verwendung)|
 |minorWithParentalConsent|2| Der Benutzer ist basierend auf den altersbezogenen Vorschriften ihres Landes oder Region als Minderjährig zu betrachten und der Administrator des Kontos hat von den Erziehungsberechtigten die entsprechende Zustimmung erhalten.|
-|Erwachsener|3|Der Benutzer wird basierend auf den altersbezogenen Vorschriften seines Landes als Erwachsener betrachtet.|
+|adult|3|Der Benutzer wird basierend auf den altersbezogenen Vorschriften seines Landes als Erwachsener betrachtet.|
 |notAdult|4|Der Benutzer hat seinen Ursprung in einem Land oder einer Region, das/die zusätzliche altersbezogene Vorschriften (beispielsweise USA, Großbritannien, Europäische Union oder Südkorea) hat und das Alter des Benutzers befindet sich innerhalb der Spanne zwischen einem Minderjährigen und einem Erwachsenen (wie im entsprechenden Land oder der Region festgelegt). Im Allgemeinen, bedeutet dies, dass Teenager in regulierten Ländern als `notAdult` gelten.|
 |minorNoParentalConsentRequired|5|Der Benutzer ist ein Miderjähriger, stammt jedoch aus einem Land oder einer Region, das/die keine altersbezogenen Vorschriften hat.|
 
@@ -137,9 +139,9 @@ Die Altersgruppe und Zustimmung des Minderjährigen sind optionale Eigenschaften
 | Wert    | #  |Beschreibung|
 |:---------------|:--------|:----------|
 |keine|0|Standardwert nicht `ageGroup` wurde für den Benutzer festgelegt.|
-|Minderjähriger|1|Der Benutzer ist als Minderjähriger zu berücksichtigen.|
+|minor|1|Der Benutzer ist als Minderjähriger zu berücksichtigen.|
 |notAdult|2|Der Benutzer stammt aus einem Land, das gesetzliche Vorschriften hat, USA, Großbritannien, Europäische Union oder Südkorea) und das Alter des Benutzers liegt über der Obergrenze des Kindesalters (nach Land) und unter der Untergrenze für das Erwachsenenalter (festgelegt je nach Land oder Region). Teenager gelten in regulierten Länder als praktisch als `notAdult` .|
-|Erwachsener|3|Der Benutzer sollte als Erwachsener behandelt werden..|
+|adult|3|Der Benutzer sollte als Erwachsener behandelt werden..|
 
 #### <a name="consentprovidedforminor-property"></a>ConsentProvidedForMinor-Eigenschaft
 
@@ -164,7 +166,7 @@ Die Altersgruppe und Zustimmung des Minderjährigen sind optionale Eigenschaften
 |createdObjects|[directoryObject](directoryobject.md)-Sammlung|Verzeichnisobjekte, die vom Benutzer erstellt wurden. Schreibgeschützt. Lässt NULL-Werte zu.|
 |directReports|[directoryObject](directoryobject.md)-Sammlung|Die Benutzer und Kontakte, die an den Benutzer berichten. (Die Benutzer und Kontakte, deren manager-Eigenschaft auf diesen Benutzer festgelegt ist.) Schreibgeschützt. Lässt NULL-Werte zu. |
 |Laufwerk|[Laufwerk](drive.md)|OneDrive eines Benutzers. Schreibgeschützt.|
-|Laufwerke||||UNTRANSLATED_CONTENT_START|||[drive](drive.md) collection|||UNTRANSLATED_CONTENT_END|||| Eine Sammlung von Laufwerken, die für diesen Benutzer zur Verfügung stehen. Schreibgeschützt. |
+|drives||||UNTRANSLATED_CONTENT_START|||[drive](drive.md) collection|||UNTRANSLATED_CONTENT_END|||| Eine Sammlung von Laufwerken, die für diesen Benutzer zur Verfügung stehen. Schreibgeschützt. |
 |Ereignisse|[Ereignis](event.md)-Sammlung|Die Ereignisse des Benutzers. Standardmäßig werden Ereignisse unter dem Standard-Kalender angezeigt. Schreibgeschützt. Lässt NULL-Werte zu.|
 |Erweiterungen|[extension](extension.md)-Sammlung|Die Sammlung der für den Benutzer definierten offenen Erweiterungen. Schreibgeschützt. Lässt NULL-Werte zu.|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | Relevanzklassifizierung von Nachrichten des Benutzers basierend auf expliziten Kennzeichnungen, die die abgeleitete Relevanz oder Wichtigkeit außer Kraft setzen. |
@@ -435,6 +437,10 @@ Es folgt eine JSON-Darstellung der Ressource.
   "type": "#page.annotation",
   "description": "user resource",
   "keywords": "",
+  "suppressions" : [
+     "Warning: /api-reference/v1.0/resources/user.md/microsoft.graph.user:
+      Property 'createdDateTime' found in markdown table but not in resource definition."
+  ],
   "section": "documentation",
   "tocPath": ""
 }-->
