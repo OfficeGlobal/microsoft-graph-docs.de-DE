@@ -11,25 +11,27 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Anwendung | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "samples" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
-
+GET /workbook/worksheets/{id|name}/charts/{name}/image
+GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640)
+GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480)
+GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
-## <a name="request-body"></a>Anforderungstext
+## <a name="path-parameters"></a>Pfadparameter
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|height|number|Optional. Die gewünschte Höhe des resultierenden Bilds.|
-|width|number|Optional. Die gewünschte Breite des resultierenden Bilds.|
-|fittingMode|string|Optional. Die Methode, die verwendet wird, um das Diagramm auf die angegebenen Maße zu skalieren (wenn Höhe und Breite festgelegt sind).  Mögliche Werte: `Fit`, `FitAndCenter`, `Fill`.|
+|Höhe|Int32|Die gewünschte Höhe des resultierenden Bilds. Optional.|
+|Breite|Int32|Die gewünschte Breite des resultierenden Bilds. Optional.|
+|fittingMode|Zeichenfolge|Das angewandte Verfahren für die Skalierung des Diagramms auf die Dimensionen skalieren (wenn Höhe und Breite festgelegt werden)."  Mögliche Werte sind: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## <a name="response"></a>Antwort
 
@@ -37,16 +39,18 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine
 
 ## <a name="example"></a>Beispiel
 Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
+
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
-<!-- { "blockType": "ignored" } -->
+
+<!-- { "blockType": "request" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
 ```
 
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json;odata.metadata=minimal;odata.streaming=true
