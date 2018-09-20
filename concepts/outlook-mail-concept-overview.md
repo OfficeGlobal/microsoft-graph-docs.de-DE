@@ -32,7 +32,7 @@ Mit Microsoft Graph können Sie den Benutzern Ihrer App kontextbasiert Daten vor
 
 - Über die [Personen-API](people_example.md) können Sie in Ihrer App interaktive Steuerelemente wie eine Personenauswahl bereitstellen. Die Personen-API kann dem Benutzer die für ihn relevantesten Personen vorschlagen, basierend auf seinen Kommunikations- und Zusammenarbeitsmustern sowie seinen geschäftlichen Beziehungen. 
 
-- Stellen Sie den Benutzern Ihrer App eine intelligente Dateiauswahl zur Verfügung, die ihnen beim Verfassen einer Nachricht ihre zuletzt genutzten Dateien als mögliche Anlagen anbietet. [Insights (Vorschau)](../api-reference/beta/resources/insights.md) nutzt erweiterte Analysen, um dem Benutzer Dateien vorzuschlagen, die für ihn besonders relevant sind, die er kürzlich angesehen oder bearbeitet hat oder die mit ihm geteilt wurden.
+- Stellen Sie den Benutzern Ihrer App eine intelligente Dateiauswahl zur Verfügung, die ihnen beim Verfassen einer Nachricht ihre zuletzt genutzten Dateien als mögliche Anlagen anbietet. [Insights (Vorschauversion)](../api-reference/beta/resources/insights.md) nutzt erweiterte Analysen, um dem Benutzer Dateien vorzuschlagen, die für ihn besonders relevant sind, die er kürzlich angesehen oder bearbeitet hat oder die mit ihm geteilt wurden.
 
 
 ### <a name="store-app-data-in-a-resource-or-resource-instance"></a>Speicherung von App-Daten in Ressourcen oder Ressourceninstanzen
@@ -49,7 +49,7 @@ Um benutzerdefinierte Daten hinzuzufügen und anschließend zu aktualisieren, k�
 
   - [Erstellen und Senden von Nachrichten](outlook-create-send-messages.md)
   - Möglichkeiten zum [Organisieren von Nachrichten](outlook-organize-messages.md)
-  - Freigeben von Nachrichtenordnern[](outlook-share-messages-folders.md)
+  - Wie man [freigegebene Nachrichten abruft](outlook-share-messages-folders.md)
 
 - Informieren Sie sich über die [Arbeit mit der Mail-API](../api-reference/v1.0/resources/mail_api_overview.md) und die [Anwendungsfälle](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) der API in Microsoft Graph 1.0.
 

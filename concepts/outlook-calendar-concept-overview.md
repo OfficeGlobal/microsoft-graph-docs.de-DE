@@ -71,7 +71,9 @@ Verringern Sie den Aufwand, indem Sie die App-Daten in externen Datenspeichern s
 - Wählen Sie Beispielabfragen für Kalender im [Graph-Tester](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0) aus, und probieren Sie sie aus.
 - Informieren Sie sich über folgende Themen:
   - [Suchen nach möglichen Besprechungszeiten im Outlook-Kalender](findmeetingtimes_example.md)
+  - [Abrufen von Frei/Gebucht-Informationen für Benutzer und Ressourcen (Preview)](outlook-get-free-busy-schedule.md)
   - [Planen wiederkehrender Termine als wiederkehrende Ereignisse in Outlook](outlook-schedule-recurring-events.md)
+  - [Abrufen von freigegebenen Ereignissen](outlook-get-shared-events-calendars.md)
 - Sehen Sie sich die Referenz zur Outlook-[Kalender-API](../api-reference/v1.0/resources/calendar.md) an.
 
 <!-- Replace the last item with the calendar API overview when it's published.

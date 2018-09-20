@@ -38,4 +38,5 @@ Sie können die normalen CRUD-Vorgänge für einen Outlook-[Kontakt](../api-refe
 ## <a name="next-steps"></a>Nächste Schritte
 
 - Wählen Sie Beispielabfragen für Kontakte in [Graph-Tester](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fcontacts&version=v1.0) aus. Wählen Sie in der Spalte links **Mehr Beispiele anzeigen** aus. Aktivieren Sie **Persönliche Kontakte** über das Menü.
+- Erfahren Sie mehr über die [erste gemeinsame Kontakte](outlook-get-shared-contacts-folders.md)
 - Sehen Sie sich die Referenz zur Outlook-[Kontakte-API](../api-reference/v1.0/resources/contact.md) an.

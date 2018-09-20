@@ -2,38 +2,14 @@
 
 Mit dieser Methode können Sie die Eigenschaften und Beziehungen eines [message](../resources/message.md)-Objekts abrufen.
 
-Da die **message**-Ressource [Erweiterungen](../../../concepts/extensibility_overview.md) unterstützt, können Sie über den `GET`-Vorgang auch benutzerdefinierte Eigenschaften und Erweiterungsdaten aus **message**-Instanzen abrufen.
-
 Zurzeit gibt dieser Vorgang Nachrichtentext ausschließlich im HTML-Format zurück.
 
+Es gibt zwei Szenarien, in denen eine App eine Nachricht im E-Mail-Ordner eines anderen Benutzers erhalten kann:
 
-### <a name="get-messages-in-another-users-message-folder"></a>Anzeigen von Nachrichten im Nachrichtenordner eines anderen Benutzers
+* Wenn die App über Anwendungsberechtigungen verfügt oder
+* Wenn die App über die entsprechenden delegierten [Berechtigungen](#permissions)  von einem Benutzer verfügt und ein anderer Benutzer einen E-Mail-Ordner für diesen Benutzer freigegeben hat oder delegierten Zugriff auf diesen Benutzer gewährt hat. |||UNTRANSLATED_CONTENT_START|||See [details and an example](../../../concepts/outlook-share-messages-folders.md).|||UNTRANSLATED_CONTENT_END|||
 
-Wenn Sie über Anwendungsberechtigungen oder die entsprechenden delegierten [Berechtigungen](#permissions) eines Benutzers verfügen, können Sie Nachrichten aus dem Nachrichtenordner eines anderen Benutzers anzeigen. Dieser Abschnitt enthält Szenarien zu delegierten Berechtigungen.
-
-Beispiel: Ihre App besitzt delegierte Berechtigungen des Benutzers John. Der Benutzer Garth hat einen Nachrichtenordner für John freigegeben. Sie können eine Nachricht in diesem freigegebenen Ordner aufrufen, indem Sie Garths Benutzer-ID (oder den Benutzerprinzipalnamen) in der unten gezeigten Beispielabfrage angeben.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/messages/{id}
-```
-
-Diese Funktion gilt für alle unterstützten GET-Nachrichtenvorgänge für einen einzelnen Benutzer (siehe Abschnitt [HTTP-Anforderung](#http-request) unten). Sie gilt auch, wenn Garth sein gesamtes Postfach an John delegiert hat.
-
-Wenn Garth weder seinen Nachrichtenordner für John freigegeben noch sein Postfach für John delegiert hat, wird bei der Angabe der Benutzer-ID oder des Benutzerprinzipalnamens von Garth in diesen GET-Vorgängen ein Fehler zurückgegeben. In solchen Fällen funktioniert die Angabe einer Benutzer-ID oder eines Benutzerprinzipalnamens nur, um Nachrichten aus dem Nachrichtenordner eines angemeldeten Benutzers anzuzeigen, und die Abfrage entspricht der Verwendung der Verknüpfung the /me:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/messages/{id}
-```
-
-Diese Funktion ist nur in GET-Vorgängen verfügbar für:
-
-- Freigegebene Kontaktordner, Kalender und Nachrichtenordner 
-- Kontakte, Ereignisse und Nachrichten in freigegebenen Ordnern
-- Die oben aufgeführten Ressourcen in delegierten Postfächern
-
-Diese Funktion steht in anderen Vorgängen für Kontakte, Ereignisse, Nachrichten und deren Ordner nicht zur Verfügung.
+|||UNTRANSLATED_CONTENT_START|||Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.|||UNTRANSLATED_CONTENT_END|||
 
 
 ## <a name="permissions"></a>Berechtigungen
@@ -164,7 +140,7 @@ Beim nächsten Beispiel werden die Kopfzeilen einer Internet-Nachricht mithilfe 
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
 ```
 ##### <a name="response-2"></a>Antwort 2
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Die Gruppe der Nachrichten-Kopfzeilen im Antwortobjekt wurde aus Platzgründen gekürzt. Von einem tatsächlichen Aufruf werden alle Kopfzeilen zurückgegeben.
+Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Die Gruppe der Nachrichten-Kopfzeilen im Antwortobjekt wurde aus Platzgründen gekürzt. Alle Header werden von einem aktuellen Anruf zurückgegeben.
 <!-- {
   "blockType": "response",
   "truncated": true,
