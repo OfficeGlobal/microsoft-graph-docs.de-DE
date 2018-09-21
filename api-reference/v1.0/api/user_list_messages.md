@@ -1,51 +1,26 @@
-# <a name="list-messages"></a><span data-ttu-id="8aa38-101">Nachrichten auflisten</span><span class="sxs-lookup"><span data-stu-id="8aa38-101">List messages</span></span>
+# <a name="list-messages"></a><span data-ttu-id="40db2-101">Nachrichten auflisten</span><span class="sxs-lookup"><span data-stu-id="40db2-101">List messages</span></span>
 
-<span data-ttu-id="8aa38-102">Mit dieser Methode können Sie die Nachrichten im Postfach des angemeldeten Benutzers abrufen (einschließlich der Nachrichten aus den Ordnern „Gelöschte Elemente“ und „Clutter“).</span><span class="sxs-lookup"><span data-stu-id="8aa38-102">Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).</span></span>
+<span data-ttu-id="40db2-102">Mit dieser Methode können Sie die Nachrichten im Postfach des angemeldeten Benutzers abrufen (einschließlich der Nachrichten aus den Ordnern „Gelöschte Elemente“ und „Clutter“).</span><span class="sxs-lookup"><span data-stu-id="40db2-102">Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).</span></span>
 
-<span data-ttu-id="8aa38-103">Zurzeit gibt dieser Vorgang Nachrichtentext ausschließlich im HTML-Format zurück.</span><span class="sxs-lookup"><span data-stu-id="8aa38-103">Currently, this operation returns message bodies in only HTML format.</span></span>
+<span data-ttu-id="40db2-103">Zurzeit gibt dieser Vorgang Nachrichtentext ausschließlich im HTML-Format zurück.</span><span class="sxs-lookup"><span data-stu-id="40db2-103">Currently, this operation returns message bodies in only HTML format.</span></span>
 
+<span data-ttu-id="40db2-104">Es gibt zwei Szenarien, in denen eine App eine Nachricht im E-Mail-Ordner eines anderen Benutzers erhalten kann:</span><span class="sxs-lookup"><span data-stu-id="40db2-104">There are two scenarios where an app can get messages in another user's mail folder:</span></span>
 
-### <a name="get-messages-in-another-users-message-folder"></a><span data-ttu-id="8aa38-104">Anzeigen von Nachrichten im Nachrichtenordner eines anderen Benutzers</span><span class="sxs-lookup"><span data-stu-id="8aa38-104">Get messages in another user's message folder</span></span>
+* <span data-ttu-id="40db2-105">Wenn die App über Anwendungsberechtigungen verfügt, oder</span><span class="sxs-lookup"><span data-stu-id="40db2-105">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="40db2-106">Wenn die App über die entsprechenden delegierten [Berechtigungen](#permissions) von einem Benutzer verfügt und ein anderer Benutzer einen E-Mail-Ordner für diesen Benutzer freigegeben hat oder delegierten Zugriff auf diesen Benutzer gewährt hat.</span><span class="sxs-lookup"><span data-stu-id="40db2-106">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="40db2-107">|||UNTRANSLATED_CONTENT_START|||See [details and an example](../../../concepts/outlook-share-messages-folders.md).|||UNTRANSLATED_CONTENT_END|||</span><span class="sxs-lookup"><span data-stu-id="40db2-107">See [details and an example](../../../concepts/outlook-share-messages-folders.md).</span></span>
 
-<span data-ttu-id="8aa38-105">Wenn Sie über Anwendungsberechtigungen oder die entsprechenden delegierten [Berechtigungen](#permissions) eines Benutzers verfügen, können Sie Nachrichten aus dem Nachrichtenordner eines anderen Benutzers anzeigen.</span><span class="sxs-lookup"><span data-stu-id="8aa38-105">If you have application permissions, or if you have the appropriate delegated [permissions](#permissions) from one user, it's possible to get messages from another user's message folder.</span></span> <span data-ttu-id="8aa38-106">Dieser Abschnitt enthält Szenarien zu delegierten Berechtigungen.</span><span class="sxs-lookup"><span data-stu-id="8aa38-106">This section focuses on scenarios that involve delegated permissions.</span></span>
+## <a name="permissions"></a><span data-ttu-id="40db2-108">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="40db2-108">Permissions</span></span>
+<span data-ttu-id="40db2-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="40db2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-<span data-ttu-id="8aa38-107">Beispiel: Ihre App besitzt delegierte Berechtigungen des Benutzers John.</span><span class="sxs-lookup"><span data-stu-id="8aa38-107">For example, your app has acquired delegated permissions from the user, John.</span></span> <span data-ttu-id="8aa38-108">Der Benutzer Garth hat einen Nachrichtenordner für John freigegeben.</span><span class="sxs-lookup"><span data-stu-id="8aa38-108">Suppose another user, Garth, has shared a message folder with John.</span></span> <span data-ttu-id="8aa38-109">Sie können die Nachrichten in diesem freigegebenen Ordner aufrufen, indem Sie Garths Benutzer-ID (oder den Benutzerprinzipalnamen) in der unten gezeigten Beispielabfrage angeben.</span><span class="sxs-lookup"><span data-stu-id="8aa38-109">You can get the messages in that shared folder by specifying Garth’s user ID (or user principal name) in the example query shown below.</span></span>
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/messages
-```
-
-<span data-ttu-id="8aa38-110">Diese Funktion gilt für alle unterstützten GET-Nachrichtenvorgänge für einen einzelnen Benutzer (siehe Abschnitt [HTTP-Anforderung](#http-request) unten).</span><span class="sxs-lookup"><span data-stu-id="8aa38-110">This capability applies to all the supported GET messages operations for an individual user, as listed in the [HTTP request](#http-request) section below.</span></span> <span data-ttu-id="8aa38-111">Sie gilt auch, wenn Garth sein gesamtes Postfach an John delegiert hat.</span><span class="sxs-lookup"><span data-stu-id="8aa38-111">It also applies if Garth has delegated his entire mailbox to John.</span></span>
-
-<span data-ttu-id="8aa38-112">Wenn Garth weder seinen Nachrichtenordner für John freigegeben noch sein Postfach für John delegiert hat, wird bei der Angabe der Benutzer-ID oder des Benutzerprinzipalnamens von Garth in diesen GET-Vorgängen ein Fehler zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="8aa38-112">If Garth has not shared his message folder with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations will return an error.</span></span> <span data-ttu-id="8aa38-113">In solchen Fällen funktioniert die Angabe einer Benutzer-ID oder eines Benutzerprinzipalnamens nur, um Nachrichten aus dem Nachrichtenordner eines angemeldeten Benutzers anzuzeigen, und die Abfrage entspricht der Verwendung der Verknüpfung the /me:</span><span class="sxs-lookup"><span data-stu-id="8aa38-113">In such cases, specifying a user ID or user principal name only works for getting messages in the signed-in user’s own message folders, and the query is equivalent to using the /me shortcut:</span></span>
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/messages
-```
-
-<span data-ttu-id="8aa38-114">Diese Funktion ist nur in GET-Vorgängen verfügbar für:</span><span class="sxs-lookup"><span data-stu-id="8aa38-114">This capability is available in only GET operations of:</span></span>
-
-- <span data-ttu-id="8aa38-115">Freigegebene Kontaktordner, Kalender und Nachrichtenordner</span><span class="sxs-lookup"><span data-stu-id="8aa38-115">Shared contact folders, calendars, and message folders</span></span> 
-- <span data-ttu-id="8aa38-116">Kontakte, Ereignisse und Nachrichten in freigegebenen Ordnern</span><span class="sxs-lookup"><span data-stu-id="8aa38-116">Contacts, events, and messages in shared folders</span></span>
-- <span data-ttu-id="8aa38-117">Die oben aufgeführten Ressourcen in delegierten Postfächern</span><span class="sxs-lookup"><span data-stu-id="8aa38-117">The above resources in delegated mailboxes</span></span>
-
-<span data-ttu-id="8aa38-118">Diese Funktion steht in anderen Vorgängen für Kontakte, Ereignisse, Nachrichten und deren Ordner nicht zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="8aa38-118">This capability is not available in other operations for contacts, events, messages, and their folders.</span></span>
-
-
-## <a name="permissions"></a><span data-ttu-id="8aa38-119">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="8aa38-119">Permissions</span></span>
-<span data-ttu-id="8aa38-p105">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="8aa38-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
-
-|<span data-ttu-id="8aa38-122">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="8aa38-122">Permission type</span></span>      | <span data-ttu-id="8aa38-123">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="8aa38-123">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="40db2-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="40db2-111">Permission type</span></span>      | <span data-ttu-id="40db2-112">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="40db2-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8aa38-124">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="8aa38-124">Delegated (work or school account)</span></span> | <span data-ttu-id="8aa38-125">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8aa38-125">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="8aa38-126">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="8aa38-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8aa38-127">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8aa38-127">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="8aa38-128">Anwendung</span><span class="sxs-lookup"><span data-stu-id="8aa38-128">Application</span></span> | <span data-ttu-id="8aa38-129">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8aa38-129">Mail.Read, Mail.ReadWrite</span></span> |
+|<span data-ttu-id="40db2-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="40db2-113">Delegated (work or school account)</span></span> | <span data-ttu-id="40db2-114">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="40db2-114">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="40db2-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="40db2-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="40db2-116">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="40db2-116">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="40db2-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="40db2-117">Application</span></span> | <span data-ttu-id="40db2-118">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="40db2-118">Mail.Read, Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8aa38-130">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="8aa38-130">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="40db2-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="40db2-119">HTTP request</span></span>
 
-<span data-ttu-id="8aa38-131">So rufen Sie alle Nachrichten in einem Benutzerpostfach ab:</span><span class="sxs-lookup"><span data-stu-id="8aa38-131">To get all the messages in a user's mailbox:</span></span>
+<span data-ttu-id="40db2-120">So rufen Sie alle Nachrichten in einem Benutzerpostfach ab:</span><span class="sxs-lookup"><span data-stu-id="40db2-120">To get all the messages in a user's mailbox:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -53,7 +28,7 @@ GET /me/messages
 GET /users/{id | userPrincipalName}/messages
 ```
 
-<span data-ttu-id="8aa38-132">So rufen Sie Nachrichten in einem spezifischen Ordner in einem Benutzerpostfach ab:</span><span class="sxs-lookup"><span data-stu-id="8aa38-132">To get messages in a specific folder in the user's mailbox:</span></span>
+<span data-ttu-id="40db2-121">So rufen Sie Nachrichten in einem spezifischen Ordner in einem Benutzerpostfach ab:</span><span class="sxs-lookup"><span data-stu-id="40db2-121">To get messages in a specific folder in the user's mailbox:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -61,27 +36,27 @@ GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="8aa38-133">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="8aa38-133">Optional query parameters</span></span>
-<span data-ttu-id="8aa38-134">Diese Methode unterstützt die [OData-Abfrageparameter]((http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters)) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="8aa38-134">This method supports the [OData Query Parameters]((http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters)) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="8aa38-135">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="8aa38-135">Request headers</span></span>
-| <span data-ttu-id="8aa38-136">Name</span><span class="sxs-lookup"><span data-stu-id="8aa38-136">Name</span></span>       | <span data-ttu-id="8aa38-137">Typ</span><span class="sxs-lookup"><span data-stu-id="8aa38-137">Type</span></span> | <span data-ttu-id="8aa38-138">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8aa38-138">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="40db2-122">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="40db2-122">Optional query parameters</span></span>
+<span data-ttu-id="40db2-123">Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="40db2-123">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="40db2-124">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="40db2-124">Request headers</span></span>
+| <span data-ttu-id="40db2-125">Name</span><span class="sxs-lookup"><span data-stu-id="40db2-125">Name</span></span>       | <span data-ttu-id="40db2-126">Typ</span><span class="sxs-lookup"><span data-stu-id="40db2-126">Type</span></span> | <span data-ttu-id="40db2-127">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="40db2-127">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="8aa38-139">Authorization</span><span class="sxs-lookup"><span data-stu-id="8aa38-139">Authorization</span></span>  | <span data-ttu-id="8aa38-140">string</span><span class="sxs-lookup"><span data-stu-id="8aa38-140">string</span></span>  | <span data-ttu-id="8aa38-p106">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="8aa38-p106">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="8aa38-143">Besser: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="8aa38-143">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="8aa38-144">string</span><span class="sxs-lookup"><span data-stu-id="8aa38-144">string</span></span> | <span data-ttu-id="8aa38-145">Das Format, in der die **body**- und **uniqueBody**-Eigenschaften zurückgegeben werden sollen.</span><span class="sxs-lookup"><span data-stu-id="8aa38-145">The format of the **body** and **uniqueBody** properties to be returned in.</span></span> <span data-ttu-id="8aa38-146">Werte können „Text“ oder „html“ sein.</span><span class="sxs-lookup"><span data-stu-id="8aa38-146">Values can be "text" or "html".</span></span> <span data-ttu-id="8aa38-147">Wenn die Kopfzeile nicht angegeben ist, werden die **body**- und **uniqueBody**-Eigenschaften im HTML-Format zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="8aa38-147">If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format.</span></span> <span data-ttu-id="8aa38-148">Optional.</span><span class="sxs-lookup"><span data-stu-id="8aa38-148">Optional.</span></span> |
+| <span data-ttu-id="40db2-128">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="40db2-128">Authorization</span></span>  | <span data-ttu-id="40db2-129">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="40db2-129">string</span></span>  | <span data-ttu-id="40db2-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="40db2-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="40db2-132">Besser: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="40db2-132">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="40db2-133">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="40db2-133">string</span></span> | <span data-ttu-id="40db2-134">Das Format, in der die **body**- und **uniqueBody**-Eigenschaften zurückgegeben werden sollen.</span><span class="sxs-lookup"><span data-stu-id="40db2-134">The format of the **body** and **uniqueBody** properties to be returned in.</span></span> <span data-ttu-id="40db2-135">Werte können „Text“ oder „html“ sein.</span><span class="sxs-lookup"><span data-stu-id="40db2-135">Values can be "text" or "html".</span></span> <span data-ttu-id="40db2-136">Wenn die Kopfzeile nicht angegeben ist, werden die **body**- und **uniqueBody**-Eigenschaften im HTML-Format zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="40db2-136">If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format.</span></span> <span data-ttu-id="40db2-137">Optional.</span><span class="sxs-lookup"><span data-stu-id="40db2-137">Optional.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="8aa38-149">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="8aa38-149">Request body</span></span>
-<span data-ttu-id="8aa38-150">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="8aa38-150">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="40db2-138">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="40db2-138">Request body</span></span>
+<span data-ttu-id="40db2-139">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="40db2-139">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8aa38-151">Antwort</span><span class="sxs-lookup"><span data-stu-id="8aa38-151">Response</span></span>
+## <a name="response"></a><span data-ttu-id="40db2-140">Antwort</span><span class="sxs-lookup"><span data-stu-id="40db2-140">Response</span></span>
 
-<span data-ttu-id="8aa38-152">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [Message](../resources/message.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="8aa38-152">If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.</span></span>
+<span data-ttu-id="40db2-141">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [Message](../resources/message.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="40db2-141">If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.</span></span>
 
-<span data-ttu-id="8aa38-153">Die Standardseitengröße für diese Anforderung liegt bei 10 Nachrichten.</span><span class="sxs-lookup"><span data-stu-id="8aa38-153">The default page size for this request is 10 messages.</span></span>
+<span data-ttu-id="40db2-142">Die Standardseitengröße für diese Anforderung liegt bei 10 Nachrichten.</span><span class="sxs-lookup"><span data-stu-id="40db2-142">The default page size for this request is 10 messages.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8aa38-154">Beispiel</span><span class="sxs-lookup"><span data-stu-id="8aa38-154">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8aa38-155">Anforderung</span><span class="sxs-lookup"><span data-stu-id="8aa38-155">Request</span></span>
-<span data-ttu-id="8aa38-156">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="8aa38-156">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="40db2-143">Beispiel</span><span class="sxs-lookup"><span data-stu-id="40db2-143">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="40db2-144">Anforderung</span><span class="sxs-lookup"><span data-stu-id="40db2-144">Request</span></span>
+<span data-ttu-id="40db2-145">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="40db2-145">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_messages"
@@ -89,8 +64,8 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages
 ```
-##### <a name="response"></a><span data-ttu-id="8aa38-157">Antwort</span><span class="sxs-lookup"><span data-stu-id="8aa38-157">Response</span></span>
-<span data-ttu-id="8aa38-p108">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="8aa38-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="40db2-146">Antwort</span><span class="sxs-lookup"><span data-stu-id="40db2-146">Response</span></span>
+<span data-ttu-id="40db2-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="40db2-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
