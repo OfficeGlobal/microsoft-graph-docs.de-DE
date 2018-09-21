@@ -1,4 +1,4 @@
-# <a name="get-freebusy-schedule-for-users-and-resources-preview"></a>Abrufen von Frei/Gebucht-Informationen für Benutzer und Ressourcen (Preview)
+# <a name="get-freebusy-schedule-of-users-and-resources-preview"></a>Abrufen von Frei/Gebucht-Informationen für Benutzer und Ressourcen (Vorschau)
 
 In einer Arbeits- oder Schulumgebung ist es üblich, zu schauen, wann ein Benutzer für eine Besprechung frei ist oder die Verfügbarkeit eines Teams, eines Raums oder einer Ausrüstung für einen bestimmten Zeitraum zu überprüfen.
 
@@ -163,7 +163,7 @@ Abgesehen vom Frei/Gebucht-Status und den Arbeitszeiten der angeforderten Entit�
 - Der angemeldete Benutzer ist ein Administrator der gleichen Organisation wie der angeforderte Benutzer.
 
 ## <a name="time-zone-representation"></a>Zeitzonendarstellung
-Standardmäßig werden die Anfangs- und Endzeiten der zurückgegebenen Elemente des Zeitplans in UTC dargestellt. Sie können einen `Prefer` Header verwenden, um eine für Ihre App passende Zeitzone anzugeben. Dazu folgendes Beispiel: 
+Standardmäßig werden die Anfangs- und Endzeiten der zurückgegebenen Elemente des Zeitplans in UTC dargestellt. Sie können einen `Prefer` Header verwenden, um eine für Ihre App passende Zeitzone anzugeben. Beispiel: 
 ```
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
@@ -177,4 +177,4 @@ Beachten Sie die folgenden Grenzwerte und Fehlerzustände:
 
 ## <a name="see-also"></a>Siehe auch
 - [Verweis auf Berechtigungen](permissions_reference.md#calendars-permissions)
-- [Suchen nach möglichen Besprechungszeiten im Outlook-Kalender](findmeetingtimes_example.md)
+- [Nach möglichen Besprechungszeiten im Outlook-Kalender suchen](findmeetingtimes_example.md)

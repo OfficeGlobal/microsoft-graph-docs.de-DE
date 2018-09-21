@@ -1,35 +1,11 @@
 # <a name="list-contacts"></a>Kontakte auflisten
 
-Mit dieser API können Sie eine Kontaktsammlung aus dem Standardkontaktordner des angemeldeten Benutzers abrufen.
+Ruft eine Kontaktsammlung aus dem Standardkontaktordner des angemeldeten Benutzers ab.
 
+Es gibt zwei Szenarien, in denen eine App einen Kontakt in dem Kontaktordner eines anderen Benutzers abrufen kann:
 
-### <a name="get-contacts-in-another-users-contact-folder"></a>Abrufen von Kontakten aus dem Kontaktordner eines anderen Benutzers
-
-Wenn Sie über Anwendungsberechtigungen oder die entsprechenden delegierten [Berechtigungen](#permissions) eines Benutzers verfügen, können Sie Kontakte aus dem Kontaktordner eines anderen Benutzers anzeigen. Dieser Abschnitt enthält Szenarien zu delegierten Berechtigungen.
-
-Beispiel: Ihre App besitzt delegierte Berechtigungen des Benutzers John. Der Benutzer Garth hat einen Kontaktordner für John freigegeben. Sie können die Kontakte in diesem freigegebenen Ordner aufrufen, indem Sie Garths Benutzer-ID (oder den Benutzerprinzipalnamen) in der unten gezeigten Beispielabfrage angeben.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/contacts
-```
-
-Diese Funktion gilt für alle unterstützten GET-Kontaktvorgänge für einen einzelnen Benutzer (siehe Abschnitt [HTTP-Anforderung](#http-request) unten). Sie gilt auch, wenn Garth sein gesamtes Postfachs an John delegiert hat.
-
-Wenn Garth weder seinen Kontaktordner für John freigegeben noch sein Postfach für John delegiert hat, wird bei der Angabe der Benutzer-ID oder des Benutzerprinzipalnamens von Garth in diesen GET-Vorgängen ein Fehler zurückgegeben. In solchen Fällen funktioniert die Angabe einer Benutzer-ID oder eines Benutzerprinzipalnamens nur, um Kontakte aus dem Kontaktordner eines angemeldeten Benutzers abzurufen, und die Abfrage entspricht der Verwendung der Verknüpfung the /me:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/contacts
-```
-
-Diese Funktion ist nur in GET-Vorgängen verfügbar für:
-
-- Freigegebene Kontaktordner, Kalender und Nachrichtenordner 
-- Kontakte, Ereignisse und Nachrichten in freigegebenen Ordnern
-- Die oben aufgeführten Ressourcen in delegierten Postfächern
-
-Diese Funktion steht in anderen Vorgängen für Kontakte, Ereignisse, Nachrichten und deren Ordner nicht zur Verfügung.
+* Wenn die App über Anwendungsberechtigungen verfügt, oder
+* Wenn die App über die entsprechenden delegierten [Berechtigungen](#permissions) von einem Benutzer verfügt und ein anderer Benutzer einen Kontaktordner für diesen Benutzer freigegeben hat oder delegierten Zugriff auf diesen Benutzer gewährt hat. Siehe [Details und ein Beispiel](../../../concepts/outlook-get-shared-contacts-folders.md).
 
 
 ## <a name="permissions"></a>Berechtigungen
@@ -73,8 +49,8 @@ Zum Beispiel können Sie die `$filter` Abfrageparameter verwenden, um Kontakte a
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Erforderlich.  |
-| Content-Type   | application/json  |
+| Autorisierung  | Bearer {token}. Erforderlich.  |
+| Inhaltstyp   | Anwendung/json  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

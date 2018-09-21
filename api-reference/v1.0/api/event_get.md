@@ -4,36 +4,12 @@ Dient zum Abrufen der Eigenschaften und Beziehungen des angegebenen [event](../r
 
 Zurzeit gibt dieser Vorgang Ereignistext nur im HTML-Format zurück.
 
+Es gibt zwei Szenarien, in dem eine App ein Ereignis im Kalender des Benutzers abrufen kann:
+
+* Wenn die App über Anwendungsberechtigungen verfügt, oder
+* Wenn die App über die entsprechenden delegierten [Berechtigungen](#permissions) von einem Benutzer verfügt und ein anderer Benutzer einen E-Mail-Ordner für diesen Benutzer freigegeben hat oder delegierten Zugriff auf diesen Benutzer gewährt hat. |||UNTRANSLATED_CONTENT_START|||See [details and an example](../../../concepts/outlook-get-shared-events-calendars.md).|||UNTRANSLATED_CONTENT_END|||
+
 Da die **event**-Ressource [Erweiterungen](../../../concepts/extensibility_overview.md) unterstützt, können Sie über den `GET`-Vorgang auch benutzerdefinierte Eigenschaften und Erweiterungsdaten aus **event**-Instanzen abrufen.
-
-
-### <a name="get-events-in-another-users-calendar"></a>Abrufen von Ereignissen aus dem Kalender eines anderen Benutzers
-
-Wenn Sie über Anwendungsberechtigungen oder die entsprechenden delegierten [Berechtigungen](#permissions) eines Benutzers verfügen, können Sie Ereignisse aus dem Kalender eines anderen Benutzers anzeigen. Dieser Abschnitt enthält Szenarien zu delegierten Berechtigungen.
-
-Beispiel: Ihre App besitzt delegierte Berechtigungen des Benutzers John. Der Benutzer Garth hat einen Kalender für John freigegeben. Sie können ein Ereignis aus dem freigegebenen Kalender aufrufen, indem Sie Garths Benutzer-ID (oder den Benutzerprinzipalnamen) in der unten gezeigten Beispielabfrage angeben.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/events/{id}
-```
-
-Diese Funktion gilt für alle unterstützten GET-Ereignisvorgänge für einen einzelnen Benutzer (siehe Abschnitt [HTTP-Anforderung](#http-request) unten). Sie gilt auch, wenn Garth sein gesamtes Postfach an John delegiert hat.
-
-Wenn Garth weder seinen Kalender für John freigegeben noch sein Postfach für John delegiert hat, wird bei der Angabe der Benutzer-ID oder des Benutzerprinzipalnamens von Garth in diesen GET-Vorgängen ein Fehler zurückgegeben. In solchen Fällen funktioniert die Angabe einer Benutzer-ID oder eines Benutzerprinzipalnamens nur, um ein Ereignis aus dem Kalender eines angemeldeten Benutzers abzurufen, und die Abfrage entspricht der Verwendung der Verknüpfung the /me:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/events/{id}
-```
-
-Diese Funktion ist nur in GET-Vorgängen verfügbar für:
-
-- Freigegebene Kontaktordner, Kalender und Nachrichtenordner 
-- Kontakte, Ereignisse und Nachrichten in freigegebenen Ordnern
-- Die oben aufgeführten Ressourcen in delegierten Postfächern
-
-Diese Funktion steht in anderen Vorgängen für Kontakte, Ereignisse, Nachrichten und deren Ordner nicht zur Verfügung.
 
 
 ### <a name="support-various-time-zones"></a>Unterstützen verschiedener Zeitzonen
@@ -80,12 +56,12 @@ GET /me/calendargroups/{id}/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung |
 |:---------------|:--------|:--------|
-| Authorization  | string | Bearer {token}. Erforderlich.  |
-| Prefer: outlook.timezone  | string | Verwenden Sie dies, um die Zeitzone für die Anfangs- und Endzeiten in der Antwort anzugeben. Wenn nicht angegeben, werden diese Zeitwerte in UTC zurückgegeben. Optional. |
+| Autorisierung  | Zeichenfolge | Bearer {token}. Erforderlich.  |
+| Bevorzugen: outlook.timezone  | string | Verwenden Sie dies, um die Zeitzone für die Anfangs- und Endzeiten in der Antwort anzugeben. Wenn nicht angegeben, werden diese Zeitwerte in UTC zurückgegeben. Optional. |
 | Besser: outlook.body-content-type | string | Das Format, in der die **body**-Eigenschaft zurückgegeben werden soll. Werte können „Text“ oder „html“ sein. Als Bestätigung wird eine `Preference-Applied`-Kopfzeile zurückgegeben, wenn diese `Prefer`-Kopfzeile angegeben ist. Wenn die Kopfzeile nicht angegeben ist, wird die **body**-Eigenschaft im HTML-Format zurückgegeben. Optional. |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -98,16 +74,17 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein 
 ##### <a name="request-1"></a>Anforderung 1
 Im erste Beispiel wird das angegebene Ereignis abgerufen. Es gibt Folgendes an:
 
-- Einen `Prefer: outlook.timezone`-Header zum Abrufen von Datums- und Uhrzeitwerten in 	Pacific Normalzeit. 
+- Einen `Prefer: outlook.timezone`-Header zum Abrufen von Datums- und Uhrzeitwerten in Pacific Normalzeit. 
 - Einen `$select`-Abfrageparameter zum Zurückgeben bestimmter Eigenschaften. Ohne `$select`-Parameter werden alle Ereigniseigenschaften zurückgegeben.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGIAAAoZDOFAAA="],
   "name": "get_event"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
+GET https://graph.microsoft.com/v1.0/me/events/AAMkAGIAAAoZDOFAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
@@ -198,10 +175,11 @@ Im zweiten Beispiel wird das Abrufen eines Ereignisses dargestellt, das mehr als
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADAGAADDdm4NAAA="],
   "name": "get_event_multiple_locations"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events('AAMkADAGAADDdm4NAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
+GET https://graph.microsoft.com/v1.0/me/events/AAMkADAGAADDdm4NAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
 ```
 ##### <a name="response-2"></a>Antwort 2
 Nachfolgend sehen Sie ein Beispiel der Antwort. Die **locations**-Eigenschaft umfasst Details für die drei Orte, für die das Ereignis organisiert wird. 
@@ -257,7 +235,6 @@ Content-length: 1992
       "uniqueId":"Fourth Coffee",
       "uniqueIdType":"private",
       "address":{
-        "type":"unknown",
         "street":"4567 Main St",
         "city":"Redmond",
         "state":"WA",

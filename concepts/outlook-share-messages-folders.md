@@ -1,12 +1,12 @@
-# <a name="share-outlook-message-folders-between-users"></a>Freigeben von Outlook-Nachrichtenordnern zwischen Benutzern
+# <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>Abrufen von Outlook-Nachrichten in einem freigegebenen oder delegierten Ordner
 
 <!-- remove similar content in other topics when ready to publish - list messages, get message, get mail folder.
 These topics also have similar section - list events, get event, get calendar, list contacts, get contact, get contact folder.
 -->
 
-In Outlook können Kunden Ordner für andere freigeben und „Lesen“-, „Erstellen“- oder „Ändern“-Zugriff auf einzelne Ordner oder das gesamte Postfach gewähren. Dies wird in Outlook auch als „Delegierung“ bezeichnet.
+Mit Outlook können Benutzer Ordner freigeben und den Zugriff auf einzelne Kontaktordner „lesen“, „erstellen“, „ändern“ oder „löschen“ aktivieren. Outlook ermöglicht es einem Kunden auch, einen anderen Benutzer zu delegieren, um im Auftrag des Kunden zu handeln und auf bestimmte Ordner oder das gesamte Postfach des Kunden zuzugreifen. Dies wird in Outlook auch als „Delegierung“ bezeichnet.
 
-Programmgesteuert unterstützt Microsoft Graph das Abrufen von Nachrichten in E-Mail-Ordnern, die andere Benutzer freigegeben haben, sowie das Abrufen der freigegebenen Ordner selbst.
+Programmgesteuert unterstützt Microsoft Graph das Abrufen von Nachrichten in E-Mail-Ordnern, die andere Benutzer freigegeben haben, sowie das Abrufen der freigegebenen Ordner selbst. Die Unterstützung gilt auch für Ordner, die delegiert wurden.
 
 Beispielsweise hat Garth John Lesezugriff auf den Posteingang von Garth erteilt. Wenn John sich in Ihrer App angemeldet und delegierte Berechtigungen (Mail.Read.Shared oder Mail.ReadWrite.Shared) bereitgestellt hat, kann Ihre App auf Garths Mail und Posteingang zugreifen, wie nachstehend beschrieben.
 
@@ -45,7 +45,7 @@ Nach erfolgreichem Abschluss erhalten Sie „HTTP 200 OK“ und eine [mailFolder
 
 Dieselben GET-Funktionen würden gelten, wenn Garth an John weiteren Zugriff auf Garths Posteingang delegiert hätte oder wenn Garth sein gesamtes Postfach an John delegiert hätte.
 
-Wenn Garth weder seinen Nachrichtenordner für John freigegeben noch sein Postfach für John delegiert hat, wird bei der Angabe der Benutzer-ID oder des Benutzerprinzipalnamens von Garth in diesen GET-Vorgängen ein Fehler zurückgegeben. 
+Wenn Garth weder seinen Kalender für John freigegeben noch sein Postfach für John delegiert hat, wird bei der Angabe der Benutzer-ID oder des Benutzerprinzipalnamens von Garth in diesen GET-Vorgängen ein Fehler zurückgegeben. 
 
 
 ## <a name="next-steps"></a>Nächste Schritte

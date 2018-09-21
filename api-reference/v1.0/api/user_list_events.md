@@ -2,41 +2,16 @@
 
 Dient zum Abrufen einer Liste der [event](../resources/event.md)-Objekte im Postfach des Benutzers. Die Liste enthält einzelne Instanzen von Besprechungen und Serienmaster.
 
-Zurzeit gibt dieser Vorgang Ereignistext nur im HTML-Format zurück.
-
 Um erweiterte Ereignisinstanzen abzurufen, können Sie [die Kalenderansicht abrufen](calendar_list_calendarview.md) oder [die Instanzen eines Ereignisses abrufen](event_list_instances.md).
 
+Zurzeit gibt dieser Vorgang Ereignistext nur im HTML-Format zurück.
 
-### <a name="get-events-in-another-users-calendar"></a>Abrufen von Ereignissen aus dem Kalender eines anderen Benutzers
+Es gibt zwei Szenarien, in denen eine App Ereignisse im Kalender eines anderen Benutzers abrufen kann:
 
-Wenn Sie über Anwendungsberechtigungen oder die entsprechenden delegierten [Berechtigungen](#permissions) eines Benutzers verfügen, können Sie Ereignisse aus dem Kalender eines anderen Benutzers anzeigen. Dieser Abschnitt enthält Szenarien zu delegierten Berechtigungen.
+* Wenn die App über Anwendungsberechtigungen verfügt, oder
+* Wenn die App über die entsprechenden delegierten [Berechtigungen](#permissions) von einem Benutzer verfügt und ein anderer Benutzer einen Kalender für diesen Benutzer freigegeben hat oder delegierten Zugriff auf diesen Benutzer gewährt hat. Siehe [Details und ein Beispiel](../../../concepts/outlook-get-shared-events-calendars.md).
 
-Beispiel: Ihre App besitzt delegierte Berechtigungen des Benutzers John. Der Benutzer Garth hat einen Kalender für John freigegeben. Sie können die Ereignisse aus dem freigegebenen Kalender aufrufen, indem Sie Garths Benutzer-ID (oder den Benutzerprinzipalnamen) in der unten gezeigten Beispielabfrage angeben.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/events
-```
-
-Diese Funktion gilt für alle unterstützten GET-Ereignisvorgänge für einen einzelnen Benutzer (siehe Abschnitt [HTTP-Anforderung](#http-request) unten). Sie gilt auch, wenn Garth sein gesamtes Postfach an John delegiert hat.
-
-Wenn Garth weder seinen Kalender für John freigegeben noch sein Postfach für John delegiert hat, wird bei der Angabe der Benutzer-ID oder des Benutzerprinzipalnamens von Garth in diesen GET-Vorgängen ein Fehler zurückgegeben. In solchen Fällen funktioniert die Angabe einer Benutzer-ID oder eines Benutzerprinzipalnamens nur, um Ereignisse aus dem Kalender eines angemeldeten Benutzers abzurufen, und die Abfrage entspricht der Verwendung der Verknüpfung the /me:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/events
-```
-
-Diese Funktion ist nur in GET-Vorgängen verfügbar für:
-
-- Freigegebene Kontaktordner, Kalender und Nachrichtenordner 
-- Kontakte, Ereignisse und Nachrichten in freigegebenen Ordnern
-- Die oben aufgeführten Ressourcen in delegierten Postfächern
-
-Diese Funktion steht in anderen Vorgängen für Kontakte, Ereignisse, Nachrichten und deren Ordner nicht zur Verfügung.
-
-
-### <a name="support-various-time-zones"></a>Unterstützen verschiedener Zeitzonen
+### <a name="support-various-time-zones"></a>Unterstützung verschiedener Zeitzonen
 
 Für alle GET-Vorgänge, die Ereignisse zurückgeben, können Sie den `Prefer: outlook.timezone`-Header zum Angeben der Zeitzone für die Anfangs- und Endzeit des Ereignisses in der Antwort verwenden. 
 
@@ -81,8 +56,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microso
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung |
 |:---------------|:--------|:--------|
-| Authorization  | string | Bearer {token}. Erforderlich.  |
-| Prefer: outlook.timezone  | string | Verwenden Sie dies, um die Zeitzone für die Anfangs- und Endzeiten in der Antwort anzugeben. Wenn nicht angegeben, werden diese Zeitwerte in UTC zurückgegeben. Optional. |
+| Autorisierung  | Zeichenfolge | Bearer {token}. Erforderlich.  |
+| Bevorzugen: outlook.timezone  | string | Verwenden Sie dies, um die Zeitzone für die Anfangs- und Endzeiten in der Antwort anzugeben. Wenn nicht angegeben, werden diese Zeitwerte in UTC zurückgegeben. Optional. |
 | Besser: outlook.body-content-type | string | Das Format, in der die **body**-Eigenschaft zurückgegeben werden soll. Werte können „Text“ oder „html“ sein. Als Bestätigung wird eine `Preference-Applied`-Kopfzeile zurückgegeben, wenn diese `Prefer`-Kopfzeile angegeben ist. Wenn die Kopfzeile nicht angegeben ist, wird die **body**-Eigenschaft im HTML-Format zurückgegeben. Optional. |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -95,7 +70,7 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung. Es gibt Folgendes an:
 
-- Einen `Prefer: outlook.timezone`-Header zum Abrufen von Datums- und Uhrzeitwerten in 	Pacific Normalzeit. 
+- Einen `Prefer: outlook.timezone`-Header zum Abrufen von Datums- und Uhrzeitwerten in Pacific Normalzeit. 
 - Einen `$select`-Abfrageparameter zum Zurückgeben bestimmter Eigenschaften. Ohne `$select`-Parameter werden alle Ereigniseigenschaften zurückgegeben.
 
 <!-- {
