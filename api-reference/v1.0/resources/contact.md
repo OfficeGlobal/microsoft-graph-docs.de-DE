@@ -4,7 +4,8 @@ Ein Kontakt ist ein Element in Outlook, in dem Sie Informationen über die Perso
 
 Diese Ressource unterstützt Folgendes:
 
-- Hinzufügen Ihrer eigenen Daten zu benutzerdefinierten Eigenschaften mithilfe von [Erweiterungen](../../../concepts/extensibility_overview.md).
+- Hinzufügen der eigenen Daten als benutzerdefinierte Eigenschaften als [Erweiterungen](../../../concepts/extensibility_overview.md).
+- Abonnieren von [Änderungsbenachrichtigungen](../../../concepts/webhooks.md).
 - Verwenden einer [Delta-Abfrage](../../../concepts/delta_query_overview.md) zum Nachverfolgen von inkrementellen Hinzufügungen, Löschungen und Aktualisierungen durch Bereitstellen der [delta](../api/contact_delta.md)-Funktion.
 
 
@@ -163,7 +164,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Verwenden einer Delta-Abfrage zum Nachverfolgen von Änderungen in Microsoft Graph-Daten](../../../concepts/delta_query_overview.md)
 - [Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen](../../../concepts/delta_query_messages.md)
