@@ -4,35 +4,10 @@ Mit dieser Methode können Sie die Nachrichten im Postfach des angemeldeten Benu
 
 Zurzeit gibt dieser Vorgang Nachrichtentext ausschließlich im HTML-Format zurück.
 
+Es gibt zwei Szenarien, in denen eine App eine Nachricht im E-Mail-Ordner eines anderen Benutzers erhalten kann:
 
-### <a name="get-messages-in-another-users-message-folder"></a>Anzeigen von Nachrichten im Nachrichtenordner eines anderen Benutzers
-
-Wenn Sie über Anwendungsberechtigungen oder die entsprechenden delegierten [Berechtigungen](#permissions) eines Benutzers verfügen, können Sie Nachrichten aus dem Nachrichtenordner eines anderen Benutzers anzeigen. Dieser Abschnitt enthält Szenarien zu delegierten Berechtigungen.
-
-Beispiel: Ihre App besitzt delegierte Berechtigungen des Benutzers John. Der Benutzer Garth hat einen Nachrichtenordner für John freigegeben. Sie können die Nachrichten in diesem freigegebenen Ordner aufrufen, indem Sie Garths Benutzer-ID (oder den Benutzerprinzipalnamen) in der unten gezeigten Beispielabfrage angeben.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/messages
-```
-
-Diese Funktion gilt für alle unterstützten GET-Nachrichtenvorgänge für einen einzelnen Benutzer (siehe Abschnitt [HTTP-Anforderung](#http-request) unten). Sie gilt auch, wenn Garth sein gesamtes Postfach an John delegiert hat.
-
-Wenn Garth weder seinen Nachrichtenordner für John freigegeben noch sein Postfach für John delegiert hat, wird bei der Angabe der Benutzer-ID oder des Benutzerprinzipalnamens von Garth in diesen GET-Vorgängen ein Fehler zurückgegeben. In solchen Fällen funktioniert die Angabe einer Benutzer-ID oder eines Benutzerprinzipalnamens nur, um Nachrichten aus dem Nachrichtenordner eines angemeldeten Benutzers anzuzeigen, und die Abfrage entspricht der Verwendung der Verknüpfung the /me:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/messages
-```
-
-Diese Funktion ist nur in GET-Vorgängen verfügbar für:
-
-- Freigegebene Kontaktordner, Kalender und Nachrichtenordner 
-- Kontakte, Ereignisse und Nachrichten in freigegebenen Ordnern
-- Die oben aufgeführten Ressourcen in delegierten Postfächern
-
-Diese Funktion steht in anderen Vorgängen für Kontakte, Ereignisse, Nachrichten und deren Ordner nicht zur Verfügung.
-
+* Wenn die App über Anwendungsberechtigungen verfügt, oder
+* Wenn die App über die entsprechenden delegierten [Berechtigungen](#permissions) von einem Benutzer verfügt und ein anderer Benutzer einen E-Mail-Ordner für diesen Benutzer freigegeben hat oder delegierten Zugriff auf diesen Benutzer gewährt hat. |||UNTRANSLATED_CONTENT_START|||See [details and an example](../../../concepts/outlook-share-messages-folders.md).|||UNTRANSLATED_CONTENT_END|||
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
@@ -62,12 +37,12 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Besser: outlook.body-content-type | string | Das Format, in der die **body**- und **uniqueBody**-Eigenschaften zurückgegeben werden sollen. Werte können „Text“ oder „html“ sein. Wenn die Kopfzeile nicht angegeben ist, werden die **body**- und **uniqueBody**-Eigenschaften im HTML-Format zurückgegeben. Optional. |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Besser: outlook.body-content-type | Zeichenfolge | Das Format, in der die **body**- und **uniqueBody**-Eigenschaften zurückgegeben werden sollen. Werte können „Text“ oder „html“ sein. Wenn die Kopfzeile nicht angegeben ist, werden die **body**- und **uniqueBody**-Eigenschaften im HTML-Format zurückgegeben. Optional. |
 
 
 ## <a name="request-body"></a>Anforderungstext
