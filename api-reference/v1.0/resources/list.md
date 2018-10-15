@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: Auflisten
-ms.openlocfilehash: ba0c01ce1887a32bd8b671cf511104e9128b5efb
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 9fa1de406a3c4064ccb410b4b5b2df91b54a1bac
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268459"
 ---
 # <a name="list-resource"></a>List-Ressource
 
@@ -20,7 +21,7 @@ Die folgenden Aufgaben stehen für list-Ressourcen zur Verfügung.
 **Hinweis:** Mit dieser Beta können Sie nur durch Listen navigieren, keine Listen erstellen oder aktualisieren.
 Sie können jedoch [Listenelemente][listItem] erstellen oder aktualisieren.
 
-Alle Beispiele unten beziehen sich auf  eine Website, z. B.: `https://graph.microsoft.com/beta/sites/{site-id}`.
+Alle Beispiele unten beziehen sich auf  eine Website, z. B.: `https://graph.microsoft.com/v1.0/sites/{site-id}`.
 
 | Häufige Aufgaben               | HTTP-Methode
 |:--------------------------|:------------------------------
@@ -40,10 +41,16 @@ Alle Beispiele unten beziehen sich auf  eine Website, z. B.: `https://graph.micr
 
 Es folgt eine JSON-Darstellung einer **list**-Ressource.
 
-<!-- { "blockType": "resource", 
-       "@odata.type": "microsoft.graph.list",
-       "keyProperty": "id", 
-       "optionalProperties": [ "items", "drive"] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [
+    "items",
+    "drive"
+  ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.list"
+}-->
 
 ```json
 {
@@ -55,7 +62,7 @@ Es folgt eine JSON-Darstellung einer **list**-Ressource.
   "list": {
     "@odata.type": "microsoft.graph.listInfo",
     "hidden": false,
-    "template": "documentLibrary | genericList | survey | links | announcements | contacts ..."
+    "template": "documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
   },
   "system": false,
 
@@ -68,6 +75,8 @@ Es folgt eine JSON-Darstellung einer **list**-Ressource.
   "eTag": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
+  "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "webUrl": "url to visit the list in a browser"
 }
 ```
@@ -78,33 +87,36 @@ Die **list**-Ressource besitzt folgende Eigenschaften.
 
 | Eigenschaftsname    | Typ                             | Beschreibung
 |:-----------------|:---------------------------------|:---------------------------
-| **columns**      | Sammlung ([ColumnDefinition][]) | Die Sammlung von Felddefinitionen für diese Liste.
-| **contentTypes** | Sammlung ([contentType][])      | Die Sammlung von in dieser Liste enthaltenen content-Typen.
-| **displayName**  | string                           | Der anzeigbare Titel der Liste.
+| **displayName**  | Zeichenfolge                           | Der anzeigbare Titel der Liste.
 | **list**         | [listInfo][]                     | Weitere Details über die Liste.
 | **system**       | [systemFacet][]                  | Falls vorhanden, gibt an, dass es sich um eine vom System verwaltete Liste handelt. Schreibgeschützt.
 
-Die folgenden Eigenschaften werden von  ** [baseItem][]** geerbt.
+Die folgenden Eigenschaften werden von  **[baseItem][]** geerbt.
 
-| Eigenschaftsname            | Typ             | Beschreibung
-|:-------------------------|:-----------------|:-------------------------------
-| **id**                   | string           | Der eindeutige Bezeichner des Elements. Schreibgeschützt.
-| **name**                 | string           | Der Name des Elements.
-| **createdBy**            | [identitySet][]  | Die Identität des Erstellers dieses Elements. Schreibgeschützt.
-| **createdDateTime**      | DateTimeOffset   | Das Datum und die Uhrzeit der Erstellung des Elements. Schreibgeschützt.
-| **description**          | string           | Der beschreibende Text für das Element.
-| **lastModifiedBy**       | [identitySet][]  | Die Identität der Person, die dieses Element zuletzt geändert hat. Schreibgeschützt.
-| **lastModifiedDateTime** | DateTimeOffset   | Das Datum und die Uhrzeit der letzten Änderung des Elements. Schreibgeschützt.
-| **webUrl**               | String (URL)     | URL, über die das Element im Browser angezeigt werden kann. Schreibgeschützt.
+| Eigenschaftsname            | Typ              | Beschreibung
+|:-------------------------|:------------------|:------------------------------
+| **ID**                   | Zeichenfolge            | Der eindeutige Bezeichner des Elements. Schreibgeschützt.
+| **name**                 | Zeichenfolge            | Der Name des Elements.
+| **createdBy**            | [identitySet][]   | Die Identität des Erstellers dieses Elements. Schreibgeschützt.
+| **createdDateTime**      | DateTimeOffset    | Das Datum und die Uhrzeit der Erstellung des Elements. Schreibgeschützt.
+| **description**          | Zeichenfolge            | Der beschreibende Text für das Element.
+| **eTag**                 | Zeichenfolge            | ETag für das Element. Schreibgeschützt.                                                          |
+| **lastModifiedBy**       | [identitySet][]   | Die Identität derPerson, die dieses Element zuletzt geändert hat. Schreibgeschützt.
+| **lastModifiedDateTime** | DateTimeOffset    | Das Datum und die Uhrzeit der letzten Änderung des Elements. Schreibgeschützt.
+| **parentReference**      | [itemReference][] | Informationen zum übergeordneten Element, wenn das Element ein übergeordnetes Element hat. Lese-/Schreibzugriff.
+| **sharepointIds**        | [sharepointIds][] | Gibt Bezeichner zurück, die für SharePoint REST-Kompatibilität nützlich sind. Schreibgeschützt.
+| **webUrl**               | String (URL)      | URL, über die das Element im Browser angezeigt werden kann. Schreibgeschützt.
 
 ## <a name="relationships"></a>Beziehungen
 
 Die **list**-Ressource weist folgende Beziehungen zu anderen Ressourcen auf.
 
-| Beziehungsname | Typ                        | Beschreibung
-|:------------------|:----------------------------|:------------------------------
-| **drive**         | [drive][]                   | Nur in Dokumentbibliotheken vorhanden. Ermöglicht den Zugriff auf die Liste als [drive][]-Ressource mit [driveItems][driveItem].
-| **items**         | Sammlung ([listItem][])    | Alle in der Liste enthaltenen Elemente.
+| Beziehungsname | Typ                             | Beschreibung
+|:------------------|:---------------------------------|:----------------------
+| **drive**         | [drive][]                        | Nur in Dokumentbibliotheken vorhanden. Ermöglicht den Zugriff auf die Liste als [drive][]-Ressource mit [driveItems][driveItem].
+| **items**         | Sammlung ([listItem][])         | Alle in der Liste enthaltenen Elemente.
+| **columns**       | Sammlung ([ColumnDefinition][]) | Die Sammlung von Felddefinitionen für diese Liste.
+| **contentTypes**  | Sammlung ([contentType][])      | Die Sammlung von in dieser Liste enthaltenen content-Typen.
 
 [baseItem]: baseItem.md
 [contentType]: contentType.md
@@ -112,8 +124,10 @@ Die **list**-Ressource weist folgende Beziehungen zu anderen Ressourcen auf.
 [driveItem]: driveItem.md
 [columnDefinition]: columnDefinition.md
 [identitySet]: identitySet.md
+[itemReference]: itemreference.md
 [listInfo]: listInfo.md
 [listItem]: listItem.md
+[sharepointIds]: sharepointIds.md
 [site]: site.md
 [systemFacet]: systemFacet.md
 

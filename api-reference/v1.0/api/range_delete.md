@@ -1,4 +1,4 @@
-# <a name="range-delete"></a>Range: delete
+# <a name="range-delete"></a>Bereich: löschen
 
 Löscht die einem Bereich zugeordneten Zellen.
 ## <a name="permissions"></a>Berechtigungen
@@ -13,7 +13,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/delete
+POST /workbook/names/{name}/range/delete
 POST /workbook/worksheets/{id|name}/range(address='<address>')/delete
 POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 
@@ -21,7 +21,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -29,7 +29,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Shift|string|Gibt an, wohin die Zellen verschoben werden.  Mögliche Werte: `Up`, `Left`.|
+|Shift|Zeichenfolge|Gibt an, in welche Richtung die Zellen verschoben werden sollen.  Die möglichen Werte sind: `Up`, `Left`.|
 
 ## <a name="response"></a>Antwort
 
@@ -44,7 +44,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "range_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/delete
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/delete
 Content-type: application/json
 Content-length: 28
 
@@ -57,8 +57,7 @@ Content-length: 28
 Nachfolgend sehen Sie ein Beispiel der Antwort. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

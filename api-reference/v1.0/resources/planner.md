@@ -1,11 +1,9 @@
-# planner-Ressourcentyp
-<a id="planner-resource-type" class="xliff"></a>
+# <a name="planner-resource-type"></a>planner-Ressourcentyp
 
 Die **planner**-Ressource ist der Einstiegspunkt für das Planner-Objektmodell. Sie gibt eine Singleton **planner**-Ressource zurück.  Sie enthält keine verwendbaren Eigenschaften.
 
 
-## Methoden
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>Methoden
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
@@ -13,37 +11,49 @@ Die **planner**-Ressource ist der Einstiegspunkt für das Planner-Objektmodell. 
 |[plannerPlan erstellen](../api/planner_post_plans.md) |[plannerPlan](plannerplan.md)| Dient zum Erstellen eines neuen **plannerPlan** durch Veröffentlichung in der plans-Sammlung.|
 |[plannerTask erstellen](../api/planner_post_tasks.md) |[plannerTask](plannertask.md)| Dient zum Erstellen einer neuen **plannerTask** durch Veröffentlichung in der tasks-Sammlung.|
 
-## Eigenschaften
-<a id="properties" class="xliff"></a>
-| Eigenschaft     | Typ   |Beschreibung|
-|:---------------|:--------|:----------|
-|id|String| Schreibgeschützt. Bezeichner der **planner**-Ressource.|
-
-## Beziehungen
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|buckets|[plannerBucket](plannerbucket.md)-Sammlung| Schreibgeschützt. Lässt Nullwerte zu. Gibt eine Sammlung der angegebenen einfaches zurück.|
+|Buckets|[plannerBucket](plannerbucket.md)-Sammlung| Schreibgeschützt. Lässt Nullwerte zu. Gibt eine Sammlung der angegebenen einfaches zurück.|
 |plans|[plannerPlan](plannerplan.md)-Sammlung| Schreibgeschützt. Lässt Nullwerte zu. Gibt eine Sammlung der angegebenen Pläne zurück.|
-|tasks|[plannerTask](plannertask.md)-Sammlung| Schreibgeschützt. Lässt Nullwerte zu. Gibt eine Sammlung der angegebenen Aufgaben zurück.|
+|Aufgaben|[plannerTask](plannertask.md)-Sammlung| Schreibgeschützt. Lässt Nullwerte zu. Gibt eine Sammlung der angegebenen Aufgaben zurück.|
 
-## JSON-Darstellung
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.planner"
 }-->
 
 ```json
 {
-  "id": "String (identifier)"
 }
+```
 
+## <a name="example"></a>Beispiel
+
+Die **Planner** -Ressource ist im Stamm des Diagramms verfügbar.
+
+<!--{
+  "blockType": "request"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/planner
+```
+
+<!--{
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.planner"
+}-->
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

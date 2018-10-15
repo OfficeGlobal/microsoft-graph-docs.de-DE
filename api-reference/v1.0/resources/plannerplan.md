@@ -9,14 +9,14 @@ Die **plannerPlan**-Ressource stellt einen Plan in Office 365 dar. Ein Plan kann
 |[plannerPlan abrufen](../api/plannerplan_get.md) | [plannerPlan](plannerplan.md) |Dient zum Lesen der Eigenschaften und Beziehungen eines **plannerPlan**-Objekts.|
 |[Buckets auflisten](../api/plannerplan_list_buckets.md) |[plannerBucket](plannerbucket.md)-Sammlung| Dient zum Abrufen einer **plannerBucket**-Objektsammlung.|
 |[Aufgaben auflisten](../api/plannerplan_list_tasks.md) |[plannerTask](plannertask.md)-Sammlung| Dient zum Abrufen einer **plannerTask**-Objektsammlung.|
-|[Update](../api/plannerplan_update.md) | [plannerPlan](plannerplan.md) |Dient zum Aktualisieren eines **plannerPlan**-Objekts. |
+|[Aktualisieren](../api/plannerplan_update.md) | [plannerPlan](plannerplan.md) |Dient zum Aktualisieren eines **plannerPlan**-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |createdDateTime|DateTimeOffset|Schreibgeschützt. Datum und Uhrzeit der Erstellung des Plans. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|id|String| Schreibgeschützt. ID des Plans. Sie ist 28 Zeichen lang, und es wird zwischen Groß-und Kleinschreibung unterschieden. Für den Dienst wird eine [Formatüberprüfung](planner_identifiers_disclaimer.md) durchgeführt.|
-|owner|String|ID der [Gruppe](group.md), die den Plan besitzt. Dieses Feld kann erst festgelegt werden, wenn eine gültige Gruppe vorhanden ist. Nachdem dieses festgelegt wurde, kann es nur noch vom Besitzer aktualisiert werden.|
+|id|Zeichenfolge| Schreibgeschützt. ID des Plans. Sie ist 28 Zeichen lang und berücksichtigt Groß-/Kleinschreibung. Die [Formatvalidierung](planner_identifiers_disclaimer.md) erfolgt für den Dienst.|
+|owner|Zeichenfolge|ID der [Gruppe](group.md), die den Plan besitzt. Dieses Feld kann erst festgelegt werden, wenn eine gültige Gruppe vorhanden ist. Nachdem dieses festgelegt wurde, kann es nur noch vom Besitzer aktualisiert werden.|
 |title|Zeichenfolge|Erforderlich.  Der Titel des Plans.|
 |createdBy|[identitySet](identityset.md)|Schreibgeschützt. Der Benutzer, der den Plan erstellt hat.|
 
@@ -33,6 +33,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

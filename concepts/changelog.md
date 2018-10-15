@@ -10,17 +10,23 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Löschung|beta| Entfernte IsBlocks und InstalledState Eigenschaften von [teamsApp](../api-reference/beta/resources/teamsapp.md)|
+|Löschung|beta| Entfernte isBlocks und InstalledState Eigenschaften von [teamsApp](../api-reference/beta/resources/teamsapp.md).|
 |Änderung | beta | Es wurde angekündigt, dass die Kontexteigenschaft auf [TeamsApp](../api-reference/beta/resources/teamsapp.md) umbenannt wird|
-|Ergänzung|beta|Unterstützung für Anwendungsberechtigungen zu [GET /teams/{Id}](../api-reference/beta/api/team_get.md)hinzugefügt |
-|Ergänzung|beta|Unterstützung für Anwendungsberechtigungen zu [GET /teams/{Id} /channels](../api-reference/beta/api/group_list_channels.md)hinzugefügt |
-|Ergänzung|beta|Unterstützung für Anwendungsberechtigungen zu [GET /teams/{id}/channels/{id}](../api-reference/beta/api/channel_get.md)hinzugefügt |
+|Ergänzung|beta|Unterstützung für Anwendungsberechtigungen zu [GET /teams/{id}](../api-reference/beta/api/team_get.md)hinzugefügt. |
+|Ergänzung|beta|Unterstützung für Anwendungsberechtigungen zu [GET /teams/{id} /channels](../api-reference/beta/api/group_list_channels.md) hinzugefügt. |
+|Ergänzung|beta|Unterstützung für Anwendungsberechtigungen zu [GET /teams/{id}/channels/{id}](../api-reference/beta/api/channel_get.md) hinzugefügt. |
+
+### <a name="outlook-mail"></a>Outlook-Mail
+
+| **Änderungstyp** | **Version**   | **Beschreibung**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Ergänzung        | v1.0 und beta | Die**  internetMessageHeaders Eigenschaft der Entität ** essage ist nun bei der Nachrichtenerstellung beschreibbar.[ ](../api-reference/v1.0/resources/message.md) |
 
 ### <a name="project-rome-notifications-api"></a>Project Rome-Benachrichtigungen-API
 
 | **Änderungstyp** | **Version** | **Beschreibung**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Ergänzung          | Beta        | [Benachrichtigung](../api-reference/beta/resources/projectrome_notification.md) Ressourcentyp hinzugefügt. |
+| Ergänzung          | Beta        | [notification](../api-reference/beta/resources/projectrome_notification.md) Ressourcentyp hinzugefügt. |
 | Ergänzung          | Beta        | [Benachrichtigung erstellen und veröffentlichen] (../api-reference/beta/api/projectrome_notification_post.md)-API hinzugefügt.|
 
 ### <a name="security-apis"></a>Sicherheits-APIs
@@ -169,7 +175,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Änderung|beta|Aktualisierte [Chatmessage](../api-reference/beta/resources/chatmessage.md)-Ressource|
+|Änderung|beta|Aktualisierte [Chatmessage](../api-reference/beta/resources/chatmessage.md) Ressource|
 |Ergänzung|beta|Ressourcentyp [Chat attachment](../api-reference/beta/resources/chatattachment.md) hinzugefügt|
 |Ergänzung|beta|Ressourcentyp [Chat mention](../api-reference/beta/resources/chatattachment.md) hinzugefügt|
 |Ergänzung|beta|Ressourcentyp [Chat reaction](../api-reference/beta/resources/chatattachment.md) hinzugefügt|
@@ -185,7 +191,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 | Ergänzung | Beta | **Status** -Eigenschaft zum [SychronizationStatus](../api-reference/beta/resources/synchronization_synchronizationstatus.md) hinzugefügt, um Clienten das Überwachen des Fortschritts eines Synchronisierungsauftrags zu ermöglichen.|
 
 
-### <a name="application-and-serviceprincipal-api-changes"></a>Änderungen an der Anwendung und servicePrincipal-API
+### <a name="application-and-serviceprincipal-api-changes"></a>Änderungen an der application- und servicePrincipal-API
 
 | **Änderungstyp** | **Version** | **Beschreibung**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -323,7 +329,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 ### <a name="directory-apis"></a>Verzeichnis-APIs
 
-| **Änderungstyp** | **alertFeedback**   | **Beschreibung**                          |
+| **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Ergänzung        | v1.0        | Die Aktion [Gelöschte Elemente im Besitz eines Benutzers auflisten](../api-reference/v1.0/api/directory_deleteditems_user_owned.md) wurde der Ressource [directory (deleted items)](../api-reference/v1.0/resources/directory.md) hinzugefügt. | 
 | Ergänzung | beta | Die [getUserOwnedObjects](../api-reference/beta/api/directory_deleteditems_user_owned.md)-Funktion wurde der [directory](../api-reference/beta/resources/directory.md)-Ressource hinzugefügt, um die gelöschten Gruppen aufzuführen, die im Besitz eines bestimmten Benutzers sind. |
@@ -332,7 +338,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Änderung          | v1.0 und Beta | Der Bereich **Members.Read.Hidden** ist erforderlich, um die Auflistung **Members** in einer [educationClass](../api-reference/v1.0/resources/educationclass.md)-Entität mithilfe von Nur-App-Token zu lesen oder zu aktualisieren. |
+| Änderung          | v1.0 und beta | Der Bereich **Members.Read.Hidden** ist erforderlich, um die Auflistung **Members** in einer [educationClass](../api-reference/v1.0/resources/educationclass.md)-Entität mithilfe von Nur-App-Token zu lesen oder zu aktualisieren. |
 |Änderung           |Beta           |Die zulässigen Werte für den **educationSubmissionStatus**-Typ in der Statuseigenschaft von [educationsubmission](../api-reference/beta/resources/educationsubmission.md) wurden aktualisiert.|
 |Änderung           |Beta           |Der komplexe **educationAssignmentIndividualRecipient**-Typ wurde der assignTo-Eigenschaft von [educationAssignment](../api-reference/beta/resources/educationassignment.md) hinzugefügt.|
 |Änderung           |Beta           |Die **unsubmittedBy**-, **unsubmittedDate**-, **ReturnedBy**-, **ReturnedDate**-Eigenschaften von [educationSubmission](../api-reference/beta/resources/educationsubmission.md) wurden hinzugefügt.|
@@ -343,7 +349,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Ergänzung        | v1.0 und Beta | Eigenschaft **importance** zur Entität [post](../api-reference/v1.0/resources/post.md) hinzugefügt. |
+| Ergänzung        | v1.0 und beta | Eigenschaft **importance** zur Entität [post](../api-reference/v1.0/resources/post.md) hinzugefügt. |
 
 ### <a name="microsoft-bookings-api"></a>Microsoft Bookings-API
 
@@ -836,7 +842,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Ergänzung|v1.0|Die [targetApps](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/intune_mam_targetedmanagedappconfiguration_targetapps.md)-Aktion wurde zu [targetedManagedAppConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/intune_mam_targetedmanagedappconfiguration) hinzugefügt. |
 |Ergänzung|v1.0|Die [wipeManagedAppRegistrationsByDeviceTag](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/intune_mam_user_wipemanagedappregistrationsbydevicetag.md)-Aktion wurde zu [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/intune_shared_user) hinzugefügt. |
 |Ergänzung|v1.0|Die [sendTestMessage](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_sendtestmessage.md)-Aktion wurde auf [notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/intune_notification_notificationmessagetemplate) hinzugefügt. |
-|Ergänzung|v1.0|Die [assign](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/intune_books_managedebook_assign.md)-Aktion wurde zu [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/intune_books_managedebook) hinzugefügt. |
+|Ergänzung|v1.0|Die Aktion [assign](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/intune_books_managedebook_assign.md) wurde zu [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/intune_books_managedebook) hinzugefügt |
 |Ergänzung|v1.0|Die Aktion [beginOnboarding](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/intune_remoteassistance_remoteassistancepartner_beginonboarding.md) wurde zu [remoteAssistancePartner](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/intune_remoteassistance_remoteassistancepartner) hinzugefügt. |
 |Ergänzung|v1.0|Die Aktion [disconnect](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/intune_remoteassistance_remoteassistancepartner_disconnect.md) wurde zu [remoteAssistancePartner](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/intune_remoteassistance_remoteassistancepartner) hinzugefügt. |
 |Ergänzung|v1.0|Die [downloadApplePushNotificationCertificateSigningRequest](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/intune_devices_applepushnotificationcertificate_downloadapplepushnotificationcertificatesigningrequest.md)-Funktion wurde zu [applePushNotificationCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/intune_devices_applepushnotificationcertificate) hinzugefügt. |
@@ -1014,8 +1020,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Löschung|Beta|Die folgenden komplexen Typen wurden entfernt:<br/>**windowsInformationProtectionCloudResource**<br/>**windowsInformationProtectionCloudResourceCollection**<br/>|
 |Änderung|Beta|Die folgenden Eigenschaften der Entität [androidDeviceComplianceLocalActionLockDeviceWithPasscode](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode) wurden geändert:<br/>**passcode** von Erforderlich zu Optional<br/>|
 |Änderung|Beta|Die Eigenschaften **microsoftStoreForBusinessLastSuccessfulSyncDateTime**, **isEnabledForMicrosoftStoreForBusiness**, **microsoftStoreForBusinessLanguage** und **microsoftStoreForBusinessLastCompletedApplicationSyncTime** wurden zur Entität [deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_deviceappmanagement) hinzugefügt.|
-|Änderung|
-Beta|Die Eigenschaft **target** wurde zur Entität [deviceConfigurationAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationassignment) hinzugefügt.|
+|Änderung|Beta|Die Eigenschaft **target** wurde zur Entität [deviceConfigurationAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationassignment) hinzugefügt.|
 |Änderung|Beta|Die Eigenschaft **deviceProtectionOverview** wurde zur Entität [deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_devicemanagement) hinzugefügt.|
 |Änderung|Beta|Die Eigenschaften **exchangeAlias** und **exchangeOrganization** wurden zur Entität [deviceManagementExchangeConnector](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnector) hinzugefügt.|
 |Änderung|Beta|Die Eigenschaften **appStoreUrl** und **minimumSupportedOperatingSystem** wurden zur Entität [managedAndroidStoreApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_managedandroidstoreapp) hinzugefügt.|
@@ -1137,7 +1142,7 @@ Beta|Die Eigenschaft **target** wurde zur Entität [deviceConfigurationAssignmen
 
 | Änderungstyp | Version | Beschreibung                              |
 | :---------- | :------ | :--------------------------------------- |
-| Änderung          | v1.0 und Beta | Bei dieser Erweiterung des Verhaltens geht es um das Abrufen eines freigegebenen E-Mail-Ordners oder seiner Nachrichteninhalte, wenn ein Benutzer den E-Mail-Ordner für den angemeldeten Benutzer freigegeben hat oder das Postfach des Benutzers an den angemeldeten Benutzer delegiert wurde. In solchen Fällen kann eine App die Benutzer-ID oder den Benutzerprinzipalnamen angeben, um [diesen freigegebenen E-Mail-Ordner abzurufen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/mailfolder_get) oder [die Nachrichten in diesem freigegebenen Ordner abzurufen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_messages), solange der angemeldete Benutzer über delegierte Berechtigungen für die App verfügt. |
+| Änderung          | v1.0 und beta | Bei dieser Erweiterung des Verhaltens geht es um das Abrufen eines freigegebenen E-Mail-Ordners oder seiner Nachrichteninhalte, wenn ein Benutzer den E-Mail-Ordner für den angemeldeten Benutzer freigegeben hat oder das Postfach des Benutzers an den angemeldeten Benutzer delegiert wurde. In solchen Fällen kann eine App die Benutzer-ID oder den Benutzerprinzipalnamen angeben, um [diesen freigegebenen E-Mail-Ordner abzurufen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/mailfolder_get) oder [die Nachrichten in diesem freigegebenen Ordner abzurufen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_messages), solange der angemeldete Benutzer über delegierte Berechtigungen für die App verfügt. |
 
 
 ### <a name="outlook-user-choices"></a>Auswahlmöglichkeiten für Outlook-Benutzer
@@ -1280,13 +1285,13 @@ Beta|Die Eigenschaft **target** wurde zur Entität [deviceConfigurationAssignmen
 | Ergänzung        | Beta          | Die **locations**-Eigenschaft wurde der [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event)-Entität zur Unterstützung der Organisation von Ereignissen hinzugefügt, an denen Teilnehmer von mehr als einem Ort teilnehmen können. |
 | Ergänzung        | Beta          | Eigenschaft **locationType** wurde zum komplexen Typ [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) hinzugefügt. |
 | Ergänzung        | Beta          | Eigenschaften **uniqueId** und **uniqueIdType** wurden zum komplexen Typ [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) hinzugefügt. Diese Eigenschaften dienen zu diesem Zeitpunkt nur der internen Verwendung. |
-| Änderung          | v1.0 und Beta | Bei dieser Erweiterung des Verhaltens geht es um das Abrufen eines freigegebenen Kalenders oder seiner Ereignisinhalte, wenn ein Benutzer einen Kalender für den angemeldeten Benutzer freigegeben hat oder das Postfach des Benutzers an den angemeldeten Benutzer delegiert wurde. In solchen Fällen kann eine App die Benutzer-ID oder den Benutzerprinzipalnamen angeben, um [diesen freigegebenen Kalender abzurufen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_get) oder [die Ereignisse in diesem freigegebenen Kalender abzurufen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_events), solange der angemeldete Benutzer über delegierte Berechtigungen für die App verfügt. |
+| Änderung          | v1.0 und beta | Bei dieser Erweiterung des Verhaltens geht es um das Abrufen eines freigegebenen Kalenders oder seiner Ereignisinhalte, wenn ein Benutzer einen Kalender für den angemeldeten Benutzer freigegeben hat oder das Postfach des Benutzers an den angemeldeten Benutzer delegiert wurde. In solchen Fällen kann eine App die Benutzer-ID oder den Benutzerprinzipalnamen angeben, um [diesen freigegebenen Kalender abzurufen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_get) oder [die Ereignisse in diesem freigegebenen Kalender abzurufen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_events), solange der angemeldete Benutzer über delegierte Berechtigungen für die App verfügt. |
 
 ### <a name="outlook-contacts"></a>Outlook-Kontakte
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Änderung          | v1.0 und Beta | Bei dieser Erweiterung des Verhaltens geht es um das Abrufen eines freigegebenen Kontaktordners oder seiner Kontaktinhalte, wenn ein Benutzer den Kontaktordner für den angemeldeten Benutzer freigegeben hat oder das Postfach des Benutzers an den angemeldeten Benutzer delegiert wurde. In solchen Fällen kann eine App die Benutzer-ID oder den Benutzerprinzipalnamen angeben, um [diesen freigegebenen Kontaktordner abzurufen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/contactfolder_get) oder [die Kontakte in diesem freigegebenen Ordner abzurufen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts), solange der angemeldete Benutzer über delegierte Berechtigungen für die App verfügt. |
+| Änderung          | v1.0 und beta | Bei dieser Erweiterung des Verhaltens geht es um das Abrufen eines freigegebenen Kontaktordners oder seiner Kontaktinhalte, wenn ein Benutzer den Kontaktordner für den angemeldeten Benutzer freigegeben hat oder das Postfach des Benutzers an den angemeldeten Benutzer delegiert wurde. In solchen Fällen kann eine App die Benutzer-ID oder den Benutzerprinzipalnamen angeben, um [diesen freigegebenen Kontaktordner abzurufen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/contactfolder_get) oder [die Kontakte in diesem freigegebenen Ordner abzurufen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts), solange der angemeldete Benutzer über delegierte Berechtigungen für die App verfügt. |
 
 ### <a name="outlook-mail"></a>Outlook-Mail
 
@@ -1646,8 +1651,8 @@ Beta|Die Eigenschaft **target** wurde zur Entität [deviceConfigurationAssignmen
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Ergänzung        | v1.0          | Unterstützung für die [openTypeExtension](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/opentypeextension) in den folgenden Ressourcen – [Gerät](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/device), [Gruppe](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group),[Organisation](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/organization), [Benutzer](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user). |
-| Ergänzung        | v1.0 und Beta | Wenn der Benutzer mit einem persönlichen Microsoft-Konto angemeldet ist, besteht Unterstützung für offene Erweiterungen in den folgenden Ressourcen – Ereignis, Beitrag, Gruppe, Nachricht, Kontakt und Benutzer. (Dies ist zusätzlich zu diesen Ressourcen, plus Gerät, Gruppe, Organisation und Benutzer, geöffnete Erweiterungen werden unterstützt, wenn der Benutzer sich mit einem Firmen- oder Schul-Konto anmeldet.) |
-| Ergänzung        | v1.0 und Beta | Unterstützung für die `$expand`, um [offene Erweiterungen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/opentypeextension_get) in den folgenden Ressourcen zu erhalten: [Gerät](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/device), [Gruppe](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group),[Organisation](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/organization), [Nachricht](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/post), [Benutzer](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user). |
+| Ergänzung        | v1.0 und beta | Wenn der Benutzer mit einem persönlichen Microsoft-Konto angemeldet ist, besteht Unterstützung für offene Erweiterungen in den folgenden Ressourcen – Ereignis, Beitrag, Gruppe, Nachricht, Kontakt und Benutzer. (Dies ist zusätzlich zu diesen Ressourcen, plus Gerät, Gruppe, Organisation und Benutzer, geöffnete Erweiterungen werden unterstützt, wenn der Benutzer sich mit einem Firmen- oder Schul-Konto anmeldet.) |
+| Ergänzung        | v1.0 und beta | Unterstützung für die `$expand`, um [offene Erweiterungen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/opentypeextension_get) in den folgenden Ressourcen zu erhalten: [Gerät](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/device), [Gruppe](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group),[Organisation](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/organization), [Nachricht](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/post), [Benutzer](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user). |
 | Ergänzung        | Beta          | Unterstützung für `$expand` um [offene Erweiterungen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/opentypeextension_get) in [administrativeUnit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/administrativeunit) zu erhalten. |
 
 
@@ -1657,16 +1662,16 @@ Beta|Die Eigenschaft **target** wurde zur Entität [deviceConfigurationAssignmen
 | :-------------- | :------------ | :--------------------------------------- |
 | Ergänzung        | v1.0          | Neue Ressource [schemaExtension](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/schemaextension) und CRUD-Methoden zum Verwalten von Erweiterungsdefinitionen für die folgenden Ressourcen: [Kontakt](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact), [Gerät](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/device), [Ereignis](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/event), [Gruppe](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group), [Nachricht](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message), [Organisation](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/organization), [Beitrag](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/post), [Benutzer](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user). Beachten Sie, dass die Unterstützung für [administrativeUnit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/administrativeunit) wie zuvor noch auf die Betaversion beschränkt ist. |
 | Ergänzung        | v1.0          | Die vorhandenen BEITRAG-, GET- und PATCH-Methoden der folgenden Ressourcen – [Kontakt](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact), [Gerät](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/device), [Ereignis](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/event), [Gruppe](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group), [Nachricht](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message), [Organisation](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/organization), [Beitrag](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/post), [Benutzer](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) - unterstützen jetzt Hinzufügen, Abrufen, und Aktualisieren oder Löschen von benutzerdefinierte Daten als Schemaerweiterungen werden in den entsprechenden Ressourceninstanzen gespeichert. |
-| Ergänzung        | v1.0 und Beta | Sie können nun `$filter` verwenden, um nach Ressourceninstanzen mit Eigenschaften zu suchen, die bestimmten Erweiterungsimmobilienwerten, z. B. Erweiterungsnamen entsprechen. Sehen Sie [Beispiel](https://devx.microsoft-tst.com/en-us/graph/docs/concepts/extensibility_schema_groups#5-get-a-group-and-its-extension-data) für Details. |
-| Änderung          | v1.0 und Beta | [Schemaerweiterungsdefinition löschen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/schemaextension_delete) wird keinen Einfluss mehr auf den Zugriff von benutzerdefinierten Daten haben, die aufgrund dieser Definition hinzugefügt wurden. |
-| Änderung          | v1.0 und Beta | Sie können nun einen Schema-Erweiterungskomplextyp auf Null setzen, um eine Schemaerweiterung aus einer Ressourceninstanz zu entfernen. |
+| Ergänzung        | v1.0 und beta | Sie können nun `$filter` verwenden, um nach Ressourceninstanzen mit Eigenschaften zu suchen, die bestimmten Erweiterungsimmobilienwerten, z. B. Erweiterungsnamen entsprechen. Sehen Sie [Beispiel](https://devx.microsoft-tst.com/en-us/graph/docs/concepts/extensibility_schema_groups#5-get-a-group-and-its-extension-data) für Details. |
+| Änderung          | v1.0 und beta | [Schemaerweiterungsdefinition löschen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/schemaextension_delete) wird keinen Einfluss mehr auf den Zugriff von benutzerdefinierten Daten haben, die aufgrund dieser Definition hinzugefügt wurden. |
+| Änderung          | v1.0 und beta | Sie können nun einen Schema-Erweiterungskomplextyp auf Null setzen, um eine Schemaerweiterung aus einer Ressourceninstanz zu entfernen. |
 
 
 ### <a name="group"></a>Gruppe
 
 |**Änderungstyp**|**Version**|**Beschreibung**|
 |:--------------|:----------|:--------------|
-| Ergänzung | v1.0 und Beta | Die Navigationseigenschaften**drives** und **sites** wurden zu **group** hinzugefügt.
+| Ergänzung | v1.0 und beta | Die Navigationseigenschaften**drives** und **sites** wurden zu **group** hinzugefügt.
 
 ### <a name="insights-apis"></a>Insights-APIs
 
@@ -1743,7 +1748,7 @@ Beta|Die Eigenschaft **target** wurde zur Entität [deviceConfigurationAssignmen
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Ergänzung        | v1.0 und Beta | Für **findMeetingTimes**, neuen Aufzählungswert **uneingeschränkt** hinzugefügt, den Sie als **activityDomain**-Eigenschaft, Teil des **TimeConstraint**- Parameters, spezifizieren. Dies lässt **findMeetingTimes** nach Zeiten suchen, die für die Art der Aktivität geeignet sind, für die Sie planen. Weitere Details im Abschnitt [request body](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_findmeetingtimes#request-body). |
+| Ergänzung        | v1.0 und beta | Für **findMeetingTimes**, neuen Aufzählungswert **uneingeschränkt** hinzugefügt, den Sie als **activityDomain**-Eigenschaft, Teil des **TimeConstraint**- Parameters, spezifizieren. Dies lässt **findMeetingTimes** nach Zeiten suchen, die für die Art der Aktivität geeignet sind, für die Sie planen. Weitere Details im Abschnitt [request body](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_findmeetingtimes#request-body). |
 | Ergänzung        | Beta          | Unterstützung, die einen **event**-Text im Klartext erhält, als Alternative zum Standard-HTML-Format. Siehe [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/event_get)- und [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_events)-Ereignisse für Details. |
 
 ### <a name="outlook-mail"></a>Outlook-Mail
@@ -1794,7 +1799,7 @@ Beta|Die Eigenschaft **target** wurde zur Entität [deviceConfigurationAssignmen
 | :-------------- | :---------- | :--------------------------------------- |
 | Änderung          | Beta        | APIs für administrative Einheiten werden in der Vorschau (Beta) aktualisiert. Die erste Gruppe von Änderungen wird am 3. Mai 2017 angewendet. Im Rahmen der Änderungen werden die folgenden Eigenschaften umbenannt:<br />- Komplexer Typ **roleMemberInfo** in komplexen Typ **identity** für die scopedRoleMembership-Entität<br />- Navigationseigenschaft **scopedAdministratorOf** in **scopedRoleMemberOf** für die user-Entität<br />- Navigationseigenschaft **scopedAdministrators** in **scopedRoleMembers** für die administrativeUnit-Entität<br />- Navigationseigenschaft **scopedAdministrators** in **scopedMembers** für die directoryRole-Entität |
 
-### <a name="application-and-serviceprincipal-api-changes"></a>Änderungen an der Anwendung und servicePrincipal-API
+### <a name="application-and-serviceprincipal-api-changes"></a>Änderungen an der application- und servicePrincipal-API
 
 | **Änderungstyp** | **Version** | **Beschreibung**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1984,7 +1989,7 @@ Beta|Die Eigenschaft **target** wurde zur Entität [deviceConfigurationAssignmen
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Änderung          | v1.0 und Beta | Die bisherigen „Office 365-Datenerweiterungen“ wurden in „offene Erweiterungen“ umbenannt. |
+| Änderung          | v1.0 und beta | Die bisherigen „Office 365-Datenerweiterungen“ wurden in „offene Erweiterungen“ umbenannt. |
 | Ergänzung        | Beta          | Es wurden Ressourcen hinzugefügt, die [offene Erweiterungen](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#open-extensions) unterstützen: <br/>Administrative Einheit<br/>Gerät<br/>Gruppe<br/>Organisation<br/>Benutzer<br/>Sehen Sie sich das folgende Beispiel an:<br/>[Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Preview)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_open_users) |
 
 ### <a name="directory-apis"></a>Verzeichnis-APIs
@@ -2112,9 +2117,9 @@ Beta|Die Eigenschaft **target** wurde zur Entität [deviceConfigurationAssignmen
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Ergänzung        | v1.0 und Beta | Der v2-Authentifizierungsendpunkt unterstützt jetzt die OAuth-Clientgenehmigung „_credentials“, die für [Dämone und lange ausgeführte Prozesse in Geschäftsszenarien](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-client-creds/) verwendet werden kann. |
-| Ergänzung        | v1.0 und Beta | Der v2-Authentifizierungsendpunkt unterstützt jetzt [Berechtigungsbereiche, die die Zustimmung des Administrators erfordern](http://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference), über den [Administratorzustimmungs-Endpunkt](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes). |
-| Ergänzung        | v1.0 und Beta | Der v2-Authentifizierungsendpunkt unterstützt jetzt die Administratorzustimmung für alle Benutzer in einem Mandanten über die [Administratorzustimmungs-Endpunkt](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes). |
+| Ergänzung        | v1.0 und beta | Der v2-Authentifizierungsendpunkt unterstützt jetzt die OAuth-Clientgenehmigung „_credentials“, die für [Dämone und lange ausgeführte Prozesse in Geschäftsszenarien](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-client-creds/) verwendet werden kann. |
+| Ergänzung        | v1.0 und beta | Der v2-Authentifizierungsendpunkt unterstützt jetzt [Berechtigungsbereiche, die die Zustimmung des Administrators erfordern](http://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference), über den [Administratorzustimmungs-Endpunkt](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes). |
+| Ergänzung        | v1.0 und beta | Der v2-Authentifizierungsendpunkt unterstützt jetzt die Administratorzustimmung für alle Benutzer in einem Mandanten über die [Administratorzustimmungs-Endpunkt](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes). |
 
 ### <a name="invitation-apis"></a>Einladungs-APIs
 
@@ -2380,18 +2385,18 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Ergänzung        | v1.0 und Beta | _recent_-Funktion zum Auflisten eines Satzes von Elementen hinzugefügt, die zuletzt von dem angemeldeten Benutzer verwendet wurden. Diese Liste enthält Elemente, die sich in dem Laufwerk des Benutzers befinden sowie Elemente in anderen Laufwerken, auf die dieser Zugriff hat. Beispiel: GET /me/drive/recent. |
-| Ergänzung        | v1.0 und Beta | _sharedWithMe_-Funktion zum Auflisten des Satzes von Elementen hinzugefügt, die für den aktuellen Benutzer freigegeben sind. Beispiel: GET /me/drive/sharedWithMe. |
+| Ergänzung        | v1.0 und beta | _recent_-Funktion zum Auflisten eines Satzes von Elementen hinzugefügt, die zuletzt von dem angemeldeten Benutzer verwendet wurden. Diese Liste enthält Elemente, die sich in dem Laufwerk des Benutzers befinden sowie Elemente in anderen Laufwerken, auf die dieser Zugriff hat. Beispiel: GET /me/drive/recent. |
+| Ergänzung        | v1.0 und beta | _sharedWithMe_-Funktion zum Auflisten des Satzes von Elementen hinzugefügt, die für den aktuellen Benutzer freigegeben sind. Beispiel: GET /me/drive/sharedWithMe. |
 
 ### <a name="driveitem"></a>DriveItem
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Ergänzung        | v1.0 und Beta | _remoteItem_-Typ zum Bereitstellen eines Links zu einem Element in einem anderen Laufwerk hinzugefügt. |
-| Ergänzung        | v1.0 und Beta | _sharingInvitation_-Typ hinzugefügt, um Details zu verknüpften Einladungen zur Freigabe für diese Berechtigung bereitzustellen. |
-| Ergänzung        | v1.0 und Beta | _delta_-Funktion zum Nachverfolgen von Änderungen an Elementen in einem Laufwerk hinzugefügt. Beispiel: GET /me/drive/items/{item-id}/delta |
-| Ergänzung        | v1.0 und Beta | _copy_-Funktion zum Erstellen einer Kopie eines _driveItem_-Elements (einschließlich untergeordneter Elemente) unter einem neuen übergeordneten Element oder unter einem neuen Namen hinzugefügt. Beispiel: POST /me/drive/items/{item-id}/copy |
-| Ergänzung        | v1.0 und Beta | _conflictBehavior_-Instanzattribute sind nun auf _driveItem_ anwendbar. |
+| Ergänzung        | v1.0 und beta | _remoteItem_-Typ zum Bereitstellen eines Links zu einem Element in einem anderen Laufwerk hinzugefügt. |
+| Ergänzung        | v1.0 und beta | _sharingInvitation_-Typ hinzugefügt, um Details zu verknüpften Einladungen zur Freigabe für diese Berechtigung bereitzustellen. |
+| Ergänzung        | v1.0 und beta | _delta_-Funktion zum Nachverfolgen von Änderungen an Elementen in einem Laufwerk hinzugefügt. Beispiel: GET /me/drive/items/{item-id}/delta |
+| Ergänzung        | v1.0 und beta | _copy_-Funktion zum Erstellen einer Kopie eines _driveItem_-Elements (einschließlich untergeordneter Elemente) unter einem neuen übergeordneten Element oder unter einem neuen Namen hinzugefügt. Beispiel: POST /me/drive/items/{item-id}/copy |
+| Ergänzung        | v1.0 und beta | _conflictBehavior_-Instanzattribute sind nun auf _driveItem_ anwendbar. |
 |Ergänzung|Beta|_invite_-Funktion zum Senden einer Einladung zur Freigabe für ein vorhandenes Element hinzugefügt. Mit einer Einladung zur Freigabe werden ein Freigabelink erstellt und eine E-Mail-Nachricht an den Empfänger die Einladung mit dem Freigabelink gesendet. Beispiel: POST /drive/items/{item-id}/invite
 
 ### <a name="event"></a>Ereignis
@@ -2418,9 +2423,9 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Ergänzung        | v1.0 und Beta | Verbesserung von Fehlermeldungen beim Auflösen von Mandantenalias- und abgelehnten JWT-Token (AAD). |
-| Ergänzung        | v1.0 und Beta | Der Ort für den Autorisierungsdienstendpunkt wird jetzt in dem _www-authenticate_-Header zurückgegeben, wenn eine Anforderung mit einem leeren Bearertoken empfangen wird. |
-| Ergänzung        | v1.0 und Beta | Die Funktion zum Filtern nach der ID-Eigenschaft einer Entität wurde repariert. Beispiel: GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+'x'<br/>Bisher musste bei allen POST-Anforderungen für Dienstaktionen und -funktionen dem Aktions- oder Funktionsnamen das Präfix „microsoft.graph“ vorangestellt werden. Beispiel: POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups.<br/>Das Präfix ist nun nicht mehr erforderlich (obwohl es immer noch angegeben werden kann). Folgendes würde jetzt daher ebenfalls funktionieren: POSThttps://graph.microsoft.com/v1.0/me/getMemberGroups |
+| Ergänzung        | v1.0 und beta | Verbesserung von Fehlermeldungen beim Auflösen von Mandantenalias- und abgelehnten JWT-Token (AAD). |
+| Ergänzung        | v1.0 und beta | Der Ort für den Autorisierungsdienstendpunkt wird jetzt in dem _www-authenticate_-Header zurückgegeben, wenn eine Anforderung mit einem leeren Bearertoken empfangen wird. |
+| Ergänzung        | v1.0 und beta | Die Funktion zum Filtern nach der ID-Eigenschaft einer Entität wurde repariert. Beispiel: GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+'x'<br/>Bisher musste bei allen POST-Anforderungen für Dienstaktionen und -funktionen dem Aktions- oder Funktionsnamen das Präfix „microsoft.graph“ vorangestellt werden. Beispiel: POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups.<br/>Das Präfix ist nun nicht mehr erforderlich (obwohl es immer noch angegeben werden kann). Folgendes würde jetzt daher ebenfalls funktionieren: POSThttps://graph.microsoft.com/v1.0/me/getMemberGroups |
 | Änderung          | Beta          | Abonnement-Eigenschaftennamen bereinigt.  |
 | Ergänzung        | Beta          | Wir haben die Möglichkeit zum Ermitteln von (über _directorySettingTemplates_) und Außerkraftsetzen des Standardverhaltens (durch Erstellen einer _Einstellung_ aus der Vorlage) für Entitäten und die zugehörigen Funktionen hinzugefügt. Anfangs konnten die Verhaltensweisen für Office-Gruppen nur über die Vorlage gesteuert werden. |
 
@@ -2436,7 +2441,7 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Ergänzung        | v1.0          | _mobilePhone_-Eigenschaft hinzugefügt.            |
-| Ergänzung        | v1.0 und Beta | _internetMessageId_-Eigenschaft hinzugefügt. Die Nachrichten-ID im von [RFC2822](http://www.ietf.org/rfc/rfc2822.txt) angegebenen Format. |
+| Ergänzung        | v1.0 und beta | _internetMessageId_-Eigenschaft hinzugefügt. Die Nachrichten-ID im von [RFC2822](http://www.ietf.org/rfc/rfc2822.txt) angegebenen Format. |
 | Änderung          | Beta          | _mobilePhone1_-Eigenschaft in _mobilePhone_ umgenannt. |
 | Änderung          | Beta          | _createReply_ und _createReplyAll _ verwenden neue _Message_- und _comment_-Parameter. |
 | Änderung          | Beta          | _createForward_ verwendet neue _Message_-, _ToRecipients_- und _comment_-Parameter. |
@@ -2446,7 +2451,7 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Ergänzung        | v1.0 und Beta | _sharingInvitation_-Eigenschaft hinzugefügt, um Details zu verknüpften Einladungen zur Freigabe für diese Berechtigung bereitzustellen. |
+| Ergänzung        | v1.0 und beta | _sharingInvitation_-Eigenschaft hinzugefügt, um Details zu verknüpften Einladungen zur Freigabe für diese Berechtigung bereitzustellen. |
 
 ### <a name="person"></a>Person
 
@@ -2481,14 +2486,14 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Ergänzung        | v1.0 und Beta | Neue _remoteItem_-Eigenschaft für driveItem für Microsoft-Konten. |
+| Ergänzung        | v1.0 und beta | Neue _remoteItem_-Eigenschaft für driveItem für Microsoft-Konten. |
 
 ### <a name="general"></a>Allgemein
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Änderung          | v1.0 und Beta | -_/me/drive_ funktioniert nun für Microsoft-Konten und Geschäfts-, Schul- und Uni-Konten. |
-| Änderung          | v1.0 und Beta | Laufwerkanforderungen für Konten, deren OneDrive-Speicher bei Bedarf bereitgestellt wurde, funktionieren zuverlässig und können in mehr Szenarien verwendet werden, in denen die SharePoint-Standardwebsites des Mandanten nicht standardmäßige Namen verwenden. |
+| Änderung          | v1.0 und beta | -_/me/drive_ funktioniert nun für Microsoft-Konten und Geschäfts-, Schul- und Uni-Konten. |
+| Änderung          | v1.0 und beta | Laufwerkanforderungen für Konten, deren OneDrive-Speicher bei Bedarf bereitgestellt wurde, funktionieren zuverlässig und können in mehr Szenarien verwendet werden, in denen die SharePoint-Standardwebsites des Mandanten nicht standardmäßige Namen verwenden. |
 | Löschung        | Beta          | Verschiedene nicht implementierte Typen aus dem Betaschema zur Anpassung an 1.0 Schema entfernt. |
 
 ### <a name="subscriptions"></a>Abonnements
@@ -2502,7 +2507,7 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Änderung          | v1.0 und Beta | _displayName_ wird jetzt für Microsoft-Konten zurückgegeben. |
+| Änderung          | v1.0 und beta | _displayName_ wird jetzt für Microsoft-Konten zurückgegeben. |
 
 ## <a name="january-2016"></a>Januar 2016
 
@@ -2516,7 +2521,7 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Behebung             | v1.0 und Beta | Behebung eines Problems mit Aufrufaktionen, die mit directoryObjects verknüpft sind und zu dem folgenden Fehler führten:  „Der Rückgabetyp des Vorgangs ist mit dem vorgegebenen Entitätssatz nicht möglich“. Dies gilt für die folgenden Aktionen: _microsoft.graph.checkMemberObjects_, _microsoft.graph.getMemberObjects_, _microsoft.graph.checkMemberGroups_, _microsoft.graph.assignLicense_, _microsoft.graph.changePassword_. |
+| Behebung             | v1.0 und beta | Behebung eines Problems mit Aufrufaktionen, die mit directoryObjects verknüpft sind und zu dem folgenden Fehler führten:  „Der Rückgabetyp des Vorgangs ist mit dem vorgegebenen Entitätssatz nicht möglich“. Dies gilt für die folgenden Aktionen: _microsoft.graph.checkMemberObjects_, _microsoft.graph.getMemberObjects_, _microsoft.graph.checkMemberGroups_, _microsoft.graph.assignLicense_, _microsoft.graph.changePassword_. |
 
 ## <a name="december-2015"></a>Dezember 2015
 
@@ -2530,18 +2535,18 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Behebung             | v1.0 und Beta | Behebung eines Problems mit Anforderungen mit $filter-Ausdrücken, die mehrmals die gleiche Eigenschaft angegebenen haben, was zu dem folgenden 500-Fehler führte: Ein Element mit diesem Schlüssel wurde bereits hinzugefügt. |
-| Behebung             | v1.0 und Beta | Behebung eines Problems mit der Groß-/Kleinschreibung für Aktionsparameternamen und -werte. |
-| Behebung             | v1.0 und Beta | Behebung eines Problems mit der Verarbeitung von Anforderungen für Nutzlasten mit Nullwerten für einige eingebettete komplexe Eigenschaften, aufgrund dessen ein Fehler mit einer Nullverweisausnahme auftrat. |
-| Ergänzung        | v1.0 und Beta | Unterstützung für das Sortieren und Filtern von komplexen Type-Eigenschaften. |
-| Ergänzung        | v1.0 und Beta | authorization_uri-Eigenschaft in dem www-authenticate-Header einer 401-Antwort hinzugefügt. Dieser URI kann verwendet werden, um den Tokenerwerbfluss zu starten. |
-| Ergänzung        | v1.0 und Beta | Verbesserte Fehlermeldungen für Benutzer und Gruppen. |
+| Behebung             | v1.0 und beta | Behebung eines Problems mit Anforderungen mit $filter-Ausdrücken, die mehrmals die gleiche Eigenschaft angegebenen haben, was zu dem folgenden 500-Fehler führte: Ein Element mit diesem Schlüssel wurde bereits hinzugefügt. |
+| Behebung             | v1.0 und beta | Behebung eines Problems mit der Groß-/Kleinschreibung für Aktionsparameternamen und -werte. |
+| Behebung             | v1.0 und beta | Behebung eines Problems mit der Verarbeitung von Anforderungen für Nutzlasten mit Nullwerten für einige eingebettete komplexe Eigenschaften, aufgrund dessen ein Fehler mit einer Nullverweisausnahme auftrat. |
+| Ergänzung        | v1.0 und beta | Unterstützung für das Sortieren und Filtern von komplexen Type-Eigenschaften. |
+| Ergänzung        | v1.0 und beta | authorization_uri-Eigenschaft in dem www-authenticate-Header einer 401-Antwort hinzugefügt. Dieser URI kann verwendet werden, um den Tokenerwerbfluss zu starten. |
+| Ergänzung        | v1.0 und beta | Verbesserte Fehlermeldungen für Benutzer und Gruppen. |
 
 ### <a name="groups"></a>Gruppen
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Behebung             | v1.0 und Beta | Behebung eines Problems mit dem Aufruf folgender Gruppenaktionen: _microsoft.graph.addFavorite_, _microsoft.graph.removeFavorite_ and _microsoft.graph.resetUnseenCount_. |
+| Behebung             | v1.0 und beta | Behebung eines Problems mit dem Aufruf folgender Gruppenaktionen: _microsoft.graph.addFavorite_, _microsoft.graph.removeFavorite_ and _microsoft.graph.resetUnseenCount_. |
 
 ### <a name="messages"></a>Nachrichten
 
@@ -2553,7 +2558,7 @@ Unterstützung für dynamische Gruppenmitgliedschaft über die öffentliche Vors
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Behebung             | v1.0 und Beta | Behebung eines Problems, aufgrund dessen bestimmte Benutzereigenschaften von anderen Benutzern nicht ausgewählt werden konnten, wenn auf den Benutzer mithilfe des Benutzerprinzipalnamens (UPN) verwiesen wurde. Beispiel: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
-| Behebung             | v1.0 und Beta | Behebung eines Problems mit dem Aufruf der benutzergebundenen _microsoft.graph.reminderView_-Funktion, aufgrund dessen der folgende Fehler auftrat: „Eine Eigenschaft mit dem Namen 'businessPhones' vom Typ 'Microsoft.OutlookServices.Reminder' konnte nicht gefunden werden.“ |
-| Behebung             | v1.0 und Beta | Behebung eines Problems mit der Erstellung und Aktualisierung von Benutzern (POST/PATCH /v1.0/users), aufgrund dessen der 400-Fehler auftrat. |
+| Behebung             | v1.0 und beta | Behebung eines Problems, aufgrund dessen bestimmte Benutzereigenschaften von anderen Benutzern nicht ausgewählt werden konnten, wenn auf den Benutzer mithilfe des Benutzerprinzipalnamens (UPN) verwiesen wurde. Beispiel: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
+| Behebung             | v1.0 und beta | Behebung eines Problems mit dem Aufruf der benutzergebundenen _microsoft.graph.reminderView_-Funktion, aufgrund dessen der folgende Fehler auftrat: „Eine Eigenschaft mit dem Namen 'businessPhones' vom Typ 'Microsoft.OutlookServices.Reminder' konnte nicht gefunden werden.“ |
+| Behebung             | v1.0 und beta | Behebung eines Problems mit der Erstellung und Aktualisierung von Benutzern (POST/PATCH /v1.0/users), aufgrund dessen der 400-Fehler auftrat. |
 

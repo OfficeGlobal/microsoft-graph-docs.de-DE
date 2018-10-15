@@ -1,4 +1,4 @@
-# <a name="range-usedrange"></a>Range: UsedRange
+# <a name="range-usedrange"></a>Spanne: UsedRange
 
 Gibt den verwendeten Bereich des angegebenen Bereichsobjekts zurück.
 ## <a name="permissions"></a>Berechtigungen
@@ -13,23 +13,21 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/UsedRange
-GET /workbook/worksheets/{id|name}/range(address='<address>')/UsedRange
-GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
+GET /workbook/names/{name}/range/usedRange
+GET /workbook/worksheets/{id|name}/range(address='<address>')/usedRange
+GET /workbook/tables/{id|name}/columns/{id|name}/range/usedRange
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
-## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
-
+## <a name="path-parameters"></a>Pfadparameter
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|valuesOnly|boolean|Optional. Betrachtet nur Zellen mit Werten als verwendet.|
+|valuesOnly|boolescher Wert|Optional. Betrachtet nur Zellen mit Werten als verwendet.|
 
 ## <a name="response"></a>Antwort
 
@@ -39,18 +37,13 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das 
 Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "range_usedrange"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/UsedRange
-Content-type: application/json
-Content-length: 24
-
-{
-  "valuesOnly": true
-}
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/usedRange
 ```
 
 ##### <a name="response"></a>Antwort
@@ -58,7 +51,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -74,6 +67,42 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
+
+Es folgt ein Beispiel, das die optionalen `valuesOnly` Parameter angibt.
+
+##### <a name="request"></a>Anforderung
+Nachfolgend sehen Sie ein Beispiel der Anforderung.
+<!--{
+  "blockType": "request",
+  "isComposable": true,
+  "name": "range_usedrange_valuesonly"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/usedRange(valuesOnly=true)
+```
+
+##### <a name="response"></a>Antwort
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookRange"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 169
+
+{
+  "address": "address-value",
+  "addressLocal": "addressLocal-value",
+  "cellCount": 90,
+  "columnCount": 90,
+  "columnIndex": 90,
+  "valueTypes": "valueTypes-value"
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

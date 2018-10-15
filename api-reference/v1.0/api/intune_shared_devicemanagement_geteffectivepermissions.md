@@ -2,7 +2,8 @@
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Noch nicht dokumentiert
+Ruft die effektiven Berechtigungen des derzeit authentifizierten Benutzers ab.
+
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -34,7 +35,6 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |Bereich|Zeichenfolge|Noch nicht dokumentiert|
-
 
 
 ## <a name="response"></a>Antwort

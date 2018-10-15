@@ -3,18 +3,18 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Audio
-ms.openlocfilehash: 43b9999ecfb472a82e00a12ca820fdf8548eec64
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: e68b70565f0eccd7847fba2b8085661071a75ae7
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266233"
 ---
 # <a name="audio-facet"></a>Audio-Facet
 
 Die Ressource **Audio** führt audiobezogene Eigenschaften für ein Element in einer einzelnen Struktur zusammen.
 
-Wenn ein [**DriveItem**](driveitem.md)-Element ein **audio**-Facet ungleich Null aufweist, stellt das Element eine Audiodatei dar.
-Die Eigenschaften der **Audio**-Ressource werden durch Extrahieren von Metadaten aus der Datei aufgefüllt. 
+Wenn ein [**DriveItem**](driveitem.md)-Element ein **file**-Facet ungleich Null aufweist, stellt das Element eine Audiodatei dar. Die Eigenschaften der **Audio**-Ressource werden durch Extrahieren von Metadaten aus der Datei aufgefüllt. 
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -44,19 +44,19 @@ Die Eigenschaften der **Audio**-Ressource werden durch Extrahieren von Metadaten
 
 | Eigenschaftenname         | Typ    | Beschreibung                                                          |
 |:----------------------|:--------|:---------------------------------------------------------------------|
-| **album**             | string  | Der Titel des Albums, zu dem die Audiodatei gehört                          |
-| **albumArtist**       | string  | Der Künstler, der für das Album genannt ist, zu dem die Audiodatei gehört                    |
-| **artist**            | string  | Der zur Audiodatei gehörende Künstler                            |
-| **bitrate**           | Int32   | Die Bitrate in KBit/s                                           |
-| **composers**         | string  | Der Name des Komponisten der Audiodatei                          |
-| **copyright**         | string  | Urheberrechtsinformationen zur Audiodatei                            |
-| **disc**              | Int32   | Die Nummer der CD, von der die Audiodatei stammt                    |
-| **discCount**         | Int32   | Die Gesamtanzahl von CDs im Album                             |
+| **album**             | Zeichenfolge  | Der Titel des Albums, zu dem die Audiodatei gehört                          |
+| **albumArtist**       | Zeichenfolge  | Der Künstler, der für das Album genannt ist, zu dem die Audiodatei gehört                    |
+| **artist**            | Zeichenfolge  | Der zur Audiodatei gehörende Künstler                            |
+| **bitrate**           | Int64   | Die Bitrate in KBit/s                                           |
+| **composers**         | Zeichenfolge  | Der Name des Komponisten der Audiodatei                          |
+| **copyright**         | Zeichenfolge  | Urheberrechtsinformationen zur Audiodatei                            |
+| **disc**              | Int16   | Die Nummer der CD, von der die Audiodatei stammt.                    |
+| **discCount**         | Int16   | Die Gesamtanzahl von CDs im Album                             |
 | **duration**          | Int64   | Die Dauer der Audiodatei in Millisekunden                |
-| **genre**             | string  | Das Genre der Audiodatei                                        |
+| **genre**             | Zeichenfolge  | Das Genre der Audiodatei                                        |
 | **hasDrm**            | boolean | Angabe, ob die Datei DRM-geschützt ist (Digital Rights Management, Verwaltung digitaler Rechte)   |
 | **isVariableBitrate** | boolean | Angabe, ob die Datei mit variabler Bitrate codiert ist            |
-| **title**             | string  | Der Titel der Audiodatei                                         |
+| **title**             | Zeichenfolge  | Der Titel der Audiodatei                                         |
 | **track**             | Int32   | Die Nummer des der Audiodatei entsprechenden Titels auf der Quell-CD    |
 | **trackCount**        | Int32   | Die Gesamtanzahl von Audiotiteln auf der Quell-CD der Audiodatei |
 | **year**              | Int32   | Das Jahr, in dem die Audiodatei aufgenommen wurde                                |

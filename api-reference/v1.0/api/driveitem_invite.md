@@ -2,16 +2,18 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Versenden einer Einladung für den Zugriff auf ein Element"
-ms.openlocfilehash: 5be2060c190434c4b9d587d20fe68d69786b3aa5
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Versenden einer Einladung für den Zugriff auf ein Element
+ms.openlocfilehash: c68289049503e70e04b2e403ca09cfc1f67e4096
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268732"
 ---
-# <a name="send-a-sharing-invitation"></a>Freigabeeinladung senden
+# <a name="send-a-sharing-invitation"></a>Freigabeeinladung versenden
 
-Sendet eine Freigabeeinladung für ein **DriveItem**-Element. Eine Freigabeeinladung stellt Berechtigungen für Empfänger bereit und sendet optional eine E-Mail-Nachricht an den Empfänger, um diesen über die Freigabe in Kenntnis zu setzen.
+Sendet eine Einladung zur Freigabe für ein **DriveItem**.
+Eine Einladung zur Freigabe stellt Berechtigungen für die Empfänger bereit und sendet ihnen optional eine E-Mail mit einem [Freigabelink][].
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -39,7 +41,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "ignored", "scopes": "files.readwrite" } -->
 
 ```json
 {
@@ -54,33 +56,33 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 }
 ```
 
-| Parameter        | Typ                                            | Beschreibung                                                                                                |
-|:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| recipients       | Collection([DriveRecipient](../resources/driverecipient.md)) | Eine Sammlung der Empfänger, die Zugriff und die Freigabeeinladung erhalten.                                            |
-| message          | String                                          | Eine formatierte Nur-Text-Nachricht, die in der Freigabeeinladung enthalten ist. Die maximale Länge beträgt 2000 Zeichen. |
-| requireSignIn    | Boolean                                         | Gibt an, ob der Empfänger der Einladung sich anmelden muss, um auf das freigegebene Element zuzugreifen.            |
-| sendInvitation   | Boolean                                         | Gibt an, ob eine E-Mail oder ein Beitrag generiert (falsch) oder ob nur die Berechtigung erstellt (true) wurde.            |
-| roles            | Collection(String)                              | Gibt die Rollen an, die den Empfängern der Freigabeeinladung erteilt werden.                         |
+| Parameter        | Typ                           | Beschreibung
+|:-----------------|:-------------------------------|:-------------------------
+| recipients       | Collection([DriveRecipient][]) | Eine Sammlung der Empfänger, die Zugriff und die Freigabeeinladung erhalten.
+| message          | Zeichenfolge                         | Eine formatierte Nur-Text-Nachricht, die in der Freigabeeinladung enthalten ist. Die maximale Länge beträgt 2000 Zeichen.
+| requireSignIn    | Boolescher Wert                        | Gibt an, ob der Empfänger der Einladung sich anmelden muss, um auf das freigegebene Element zuzugreifen.
+| sendInvitation   | Boolescher Wert                        | Bei true wird ein [Freigabelink][] an den Empfänger gesendet. Andernfalls wird direkt eine Berechtigung erteilt, ohne dass eine Benachrichtigung gesendet wird.
+| roles            | Collection(String)             | Gibt die Rollen an, die den Empfängern der Freigabeeinladung erteilt werden.
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird eine Einladung zur Freigabe an einen Benutzer mit der E-Mail-Adresse "ryan@contoso.org" versandt, in der dieser über eine Datei für die Zusammenarbeit benachrichtigt wird.
+In diesem Beispiel wird eine Einladung zur Freigabe an einen Benutzer mit der E-Mail-Adresse "ryan@contoso.com" versandt, in der dieser über eine Datei für die Zusammenarbeit benachrichtigt wird.
 Die Einladung gewährt Ryan Lese-/ Schreibzugriff auf die Datei.
 
 ### <a name="http-request"></a>HTTP-Anforderung
 
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [permission](../resources/permission.md)-Sammlungsobjekt im Antworttext zurückgegeben.
 
-<!-- { "blockType": "request", "name": "send-sharing-invite", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "send-sharing-invite", "scopes": "files.readwrite", "target": "action" } -->
 
-```http
+```json
 POST /me/drive/items/{item-id}/invite
 Content-type: application/json
 
 {
   "recipients": [
     {
-      "email": "ryan@contoso.org"
+      "email": "ryan@contoso.com"
     }
   ],
   "message": "Here's the file that we're collaborating on.",
@@ -96,7 +98,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```http
+```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -130,7 +132,9 @@ Content-type: application/json
 Weitere Informationen dazu, wie Fehler zurückgegeben werden, finden Sie im Thema [Fehlerantworten][error-response].
 
 
+[driveRecipient]: ../resources/driverecipient.md
 [error-response]: ../../../concepts/errors.md
+[sharing link]: ../resources/permission.md#sharing-links
 
 <!-- {
   "type": "#page.annotation",

@@ -20,39 +20,37 @@ Eine Ressource, eine Schule darstellt und zum Verwalten der Klassen, Lehrkräfte
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|String|GUID dieser Schule|
-|displayName| String| Anzeigename der Schule| 
-|description| String | Beschreibung der Schule| 
-|status| string| Schreibgeschützt. Mögliche Werte: `inactive`, `active`, `expired`, `deleteable`.|
-|externalSource| string| Schreibgeschützt.  Mögliche Werte sind: `sis`, `manual` und `unknownFutureValue`.|
-|principalEmail| String| Die E-Mail-Adresse des Prinzipals|
-|principalName| String | Der Name des Prinzipals|
-|externalPrincipalId| String | Die ID des Prinzipals im Synchronisierungssystem |
-|highestGrade|String| Höchste unterrichtete Klasse |
-|lowestGrade|String| Niedrigste unterrichtete Klasse |
-|schoolNumber|String| Schulnummer|
-|externalId|String| Die ID der Schule im Synchronisierungssystem |
-|phone|String| Die Telefonnummer der Schule |
-|fax|String| Die Faxnummer der Schule |
-|address|[physicalAddress](physicaladdress.md)| Die Adresse der Schule|
+|ID|Zeichenfolge|GUID dieser Schule|
+|displayName| Zeichenfolge| Anzeigename der Schule| 
+|Beschreibung| Zeichenfolge | Beschreibung der Schule| 
+|Zustand| Zeichenfolge| Schreibgeschützt. Die möglichen Werte sind: `inactive`, `active`, `expired`, `deleteable`.|
+|externalSource| educationExternalSource| Schreibgeschützt.  Die möglichen Werte sind: `sis`, `manual`, `unknownFutureValue`.|
+|principalEmail| Zeichenfolge| Die E-Mail-Adresse des Prinzipals|
+|principalName| Zeichenfolge | Der Name des Prinzipals|
+|externalPrincipalId| Zeichenfolge | Die ID des Prinzipals im Synchronisierungssystem |
+|highestGrade|Zeichenfolge| Höchste unterrichtete Klasse |
+|lowestGrade|Zeichenfolge| Niedrigste unterrichtete Klasse |
+|schoolNumber|Zeichenfolge| Schulnummer|
+|externalId|Zeichenfolge| Die ID der Schule im Synchronisierungssystem |
+|Telefon|Zeichenfolge| Die Telefonnummer der Schule |
+|Fax|Zeichenfolge| Die Faxnummer der Schule |
+|Adresse|[physicalAddress](physicaladdress.md)| Die Adresse der Schule|
 |createdBy|[identitySet](identityset.md)|Entität, die Schule erstellt hat.|
-
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|classes|[educationClass](educationclass.md)-Sammlung| In der Schule unterrichtete Klassen. Lässt Nullwerte zu.|
+|Klassen|[educationClass](educationclass.md)-Sammlung| In der Schule unterrichtete Klassen. Lässt Nullwerte zu.|
 |users|[educationUser](educationuser.md)-Sammlung| Benutzer in der Schule. Lässt Nullwerte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.educationOrganization",
   "@odata.type": "microsoft.graph.educationSchool"
 }-->
 

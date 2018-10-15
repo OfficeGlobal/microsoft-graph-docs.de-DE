@@ -20,17 +20,17 @@ POST /directoryRoles
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type  | application/json  |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Inhaltstyp  | Zeichenfolge  | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [directoryRole](../resources/directoryrole.md)-Objekts an.
 
 In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Aktivieren einer Verzeichnisrolle erforderlich sind.
 
-|Erforderliche Parameter | Typ | Beschreibung|
+|Parameter | Typ | Beschreibung|
 |:---------|:---------|:---------|
-|roleTemplateId | string | Die ID der [directoryRoleTemplate](../resources/directoryroletemplate.md), auf der die Rolle basiert. Dies ist die einzige Eigenschaft, die in der Anforderung angegeben werden kann.|
+|roleTemplateId | Zeichenfolge | Erforderlich. Die ID des [DirectoryRoleTemplate](../resources/directoryroletemplate.md), auf dem die Rolle basiert. Dies ist die einzige Eigenschaft, die in der Anforderung angegeben werden kann.|
 
 ## <a name="response"></a>Antwort
 

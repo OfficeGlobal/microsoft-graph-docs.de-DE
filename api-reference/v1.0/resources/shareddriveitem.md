@@ -3,13 +3,14 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SharedDriveItem
-ms.openlocfilehash: 3b4497c1a15704388dbb4bb4ba181d3985d65a69
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: abcf686be46e15a523a1a88170981cb318e71b00
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268200"
 ---
-# <a name="shareddriveitem-resource-type"></a>sharedDriveItem-Ressourcentyp
+# <a name="shareddriveitem-resource-type"></a>SharedDriveItem-Ressourcentyp
 
 Die **sharedDriveItem**-Ressource wird zurückgegeben, wenn die [Freigabe](../api/shares_get.md)-API für den Zugriff auf ein freigegebenes[driveItem](driveitem.md)-Objekt verwendet wird.
 
@@ -21,6 +22,7 @@ Die **sharedDriveItem**-Ressource wird von [ **baseItem** ](baseitem.md) abgelei
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.baseItem",
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.sharedDriveItem"
 }-->
@@ -31,7 +33,7 @@ Die **sharedDriveItem**-Ressource wird von [ **baseItem** ](baseitem.md) abgelei
   "name": "string",
   "owner": { "@odata.type": "microsoft.graph.identitySet" },
 
-  "driveItem": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
   "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
   "list": { "@odata.type": "microsoft.graph.list" },
   "listItem": { "@odata.type": "microsoft.graph.listItem" },
@@ -44,35 +46,34 @@ Die **sharedDriveItem**-Ressource wird von [ **baseItem** ](baseitem.md) abgelei
 
 | Eigenschaft | Typ                          | Beschreibung                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
-| id       | String                        | Die eindeutige ID der Freigabe, auf die zugegriffen wird.              |
-| name     | String                        | Der Anzeigename für das freigegebene Element.                             |
-| owner    | [IdentitySet](identityset.md) | Informationen zum Besitzer des freigegebenen Elements, auf das verwiesen wird. |
+| ID       | Zeichenfolge                        | Die eindeutige ID der Freigabe, auf die zugegriffen wird.              |
+| name     | Zeichenfolge                        | Der Anzeigename für das freigegebene Element.                             |
+| Besitzer    | [IdentitySet](identityset.md) | Informationen zum Besitzer des freigegebenen Elements, auf das verwiesen wird. |
 
 ## <a name="relationships"></a>Beziehungen
 
 | Beziehungsname | Typ                | Beschreibung
 | ------------------|:--------------------|:-----------------------------------
 | **driveItem**     | [**driveItem**][driveItem]   | Dient für den Zugriff auf das zugrunde liegende **driveItem**
-| **list**          | [**list**][list]        | Dient für den Zugriff auf die zugrunde liegende **list**
+| **Liste**          | [**list**][list]        | Dient für den Zugriff auf das zugrunde liegende **list**
 | **listItem**      | [**listItem**][listItem]    | Dient für den Zugriff auf das zugrunde liegende **listItem**
-| **site**          | [**site**][site]        | Dient für den Zugriff auf die zugrunde liegende **site**
+| **site**          | [**site**][site]        | Dient für den Zugriff auf das zugrunde liegende **site**
 
-
-Für in persönlichen OneDrive-Konten freigegebene **driveItems** können Sie alternativ ebenfalls folgende Beziehungen verwenden.
+Für in persönlichen OneDrive-Konten freigegebene **driveItems** könnenSie alternativ ebenfalls folgende Beziehungen verwenden.
 
 | Beziehungsname | Typ                         | Beschreibung
 | ------------------|:-----------------------------|:-----------------------------------
-| **items**         | [**driveItem**][driveItem]-Sammlung | Alle im Freigabestamm enthaltenen driveItems. Diese Sammlung kann nicht aufgezählt werden.
-| **driveItem**     | [**driveItem**][driveItem]            | Dient für den Zugriff auf das zugrunde liegende **driveItem**
+| **Positionen**         | [**driveItem**][driveItem]-Sammmlung | Alle im Freigabestamm enthaltenen driveItems. Diese Sammlung kann nicht aufgezählt werden.
+| **root**          | [**driveItem**][driveItem]   | Dient dem Zugriff auf das zugrunde liegende **driveItem**. Veraltet – verwenden Sie `driveItem` stattdessen.
 
 [driveItem]: driveItem.md
 [list]: list.md
 [listItem]: listItem.md
 [site]: site.md
 
-## <a name="methods"></a>Methoden
+## <a name="methods"></a>Methods
 
-| Method                                  | REST-Pfad                |
+| Methode                                  | REST-Pfad                |
 | :-------------------------------------- | :----------------------- |
 | [Freigegebenes Element abrufen](../api/shares_get.md) | `GET /shares/{share-id}` |
 

@@ -3,15 +3,16 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: BaseItem
-ms.openlocfilehash: bbfebd734407259c391cdb1ce74beb96dc74d8bf
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: eaf73cf54671393b61cc37b5a5d1922060640882
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268914"
 ---
 # <a name="baseitem-resource-type"></a>baseItem-Ressourcentyp
 
-Die **baseItem**-Ressource ist eine abstrakte Ressource, die einen gemeinsamen Satz von Eigenschaften enthält, die auch von mehreren anderen Ressourcen verwendet werden. Folgende Ressourcen werden u. a. von abgeleitet **baseItem** abgeleitet:
+Die **baseItem**-Ressource ist eine abstrakte Ressource, die einen gemeinsamen Satz von Eigenschaften enthält, die auch von mehreren anderen Ressourcen verwendet werden. Folgende Ressourcen werden u. a. von abgeleitet **baseItem** abgeleitet:
 
 * [Laufwerk](drive.md)
 * [driveItem](driveitem.md)
@@ -26,6 +27,8 @@ Es folgt eine JSON-Darstellung einer **baseItem**-Ressource.
   "blockType": "resource",
   "optionalProperties": [ "createdBy", "lastModifiedBy", "description", "parentReference", "webUrl" ],
   "keyProperty": "id",
+  "abstract": true,
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.baseItem"
 }-->
 
@@ -48,18 +51,27 @@ Es folgt eine JSON-Darstellung einer **baseItem**-Ressource.
 
 | Eigenschaft             | Typ              | Beschreibung                                                                            |
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------- |
-| id                   | string            | Der eindeutige Bezeichner des Laufwerks. Schreibgeschützt.                                         |
+| id                   | Zeichenfolge            | Der eindeutige Bezeichner des Laufwerks. Schreibgeschützt.                                         |
 | createdBy            | [identitySet][]   | Die Identität des Benutzers, des Geräts oder der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.        |
 | createdDateTime      | dateTimeOffset    | Datum und Uhrzeit der Elementerstellung. Schreibgeschützt.                                             |
-| eTag                 | string            | ETag für das Element. Schreibgeschützt.                                                          |
+| description          | Zeichenfolge            | Stellt eine für den Benutzer sichtbare Beschreibung des Elements bereit. Optional.                             |
+| eTag                 | Zeichenfolge            | ETag für das Element. Schreibgeschützt.                                                          |
 | lastModifiedBy       | [identitySet][]   | Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element zuletzt geändert wurde. Schreibgeschützt. |
 | lastModifiedDateTime | dateTimeOffset    | Datum und Uhrzeit der letzten Änderung des Elements. Schreibgeschützt.                                   |
-| name                 | string            | Der Name des Elements. Lese-/Schreibzugriff.                                                      |
+| name                 | Zeichenfolge            | Der Name des Elements. Lese-/Schreibzugriff.                                                      |
 | parentReference      | [itemReference][] | Informationen zum übergeordneten Element, wenn das Element ein übergeordnetes Element hat. Lese-/Schreibzugriff.                              |
 | webUrl               | String (URL)      | URL, über die die Ressource im Browser angezeigt werden kann. Schreibgeschützt.                              |
 
+## <a name="relationships"></a>Beziehungen
+
+| Beziehung       | Typ     | Beschreibung
+|:-------------------|:---------|:---------------------------------------------
+| createdByUser      | [user][] | Der Name des Benutzers, der das Element erstellt hat. Schreibgeschützt.
+| lastModifiedByUser | [user][] | Der Name des Benutzers, der das Element zuletzt geändert hat. Schreibgeschützt.
+
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
+[user]: user.md
 
 ## <a name="remarks"></a>Bemerkungen
 

@@ -7,7 +7,7 @@ Gibt eine Telefonnummer an.
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |number|Zeichenfolge|Die Telefonnummer|
-|type|Zeichenfolge|Der Typ der Telefonnummer. Mögliche Werte sind: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|type|phoneType|Der Typ der Telefonnummer. Die möglichen Werte sind: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

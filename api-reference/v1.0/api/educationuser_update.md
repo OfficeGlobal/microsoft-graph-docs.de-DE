@@ -19,27 +19,27 @@ PATCH /education/users/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Erforderlich.  |
-| Content-Type  | application/json  |
+| Autorisierung  | Bearer {token}. Erforderlich.  |
+| Inhaltstyp  | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Geben Sie aus Gründen der Leistung vorhandene Werte, die nicht geändert wurden, nicht an.
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|displayName| String| Der Anzeigename des Benutzers|
-|givenName| String | Vorname |
-|middleName| String | Zweiter Vorname des Benutzers|
-|surname| String | Nachname des Benutzers|
-|mail| String| E-Mail-Adresse|
-|mobilePhone| String | Mobiltelefonnummer des Benutzers |
-|externalSource|string| Mögliche Werte sind: `sis`, `manual` und `enum_sentinel`.|
-|externalSource|string| Quelle, aus der dieser Benutzer erstellt wurde.  Mögliche Werte sind: `sis`, `manual` und `enum_sentinel`.|
+|displayName| Zeichenfolge| Der Anzeigename des Benutzers|
+|givenName| Zeichenfolge | Vorname |
+|middleName| Zeichenfolge | Zweiter Vorname des Benutzers|
+|surname| Zeichenfolge | Nachname des Benutzers|
+|mail| Zeichenfolge| E-Mail-Adresse|
+|mobilePhone| Zeichenfolge | Mobiltelefonnummer des Benutzers |
+|externalSource|Zeichenfolge| Die möglichen Werte sind: `sis`, `manual`, `enum_sentinel`.|
+|externalSource|Zeichenfolge| Quelle, aus der dieser Benutzer erstellt wurde.  Die möglichen Werte sind: `sis`, `manual`, `enum_sentinel`.|
 |mailingAddress|[physicalAddress](../resources/physicaladdress.md)| E-Mail-Adresse des Benutzers|
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| Die Wohnadresse des Benutzers|
-|primaryRole|string| Standardrolle für einen Benutzer.  Die Rolle des Benutzers kann in einer einzelnen Klasse unterschiedlich sein. Mögliche Werte sind: `student`, `teacher` und `enum_sentinel`.|
-|student|[educationStudent](../resources/educationstudent.md)| Ist die primäre Rolle Kursteilnehmer, enthält dieser Block spezifische Daten für Kursteilnehmer.|
-|teacher|[educationTeacher](../resources/educationteacher.md)| Ist die primäre Rolle Lehrer, enthält dieser Block lehrerspezifische Daten.|
+|primaryRole|Zeichenfolge| Standardrolle für einen Benutzer.  Die Rolle des Benutzers kann in einer einzelnen Klasse unterschiedlich sein. Die möglichen Werte sind: `student`, `teacher`, `enum_sentinel`.|
+|Kursteilnehmer|[educationStudent](../resources/educationstudent.md)| Ist die primäre Rolle Kursteilnehmer, enthält dieser Block spezifische Daten für Kursteilnehmer.|
+|Lehrer|[educationTeacher](../resources/educationteacher.md)| Ist die primäre Rolle Lehrer, enthält dieser Block lehrerspezifische Daten.|
 
 
 ## <a name="response"></a>Antwort
@@ -52,7 +52,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "update_educationuser"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/users/13020
+PATCH https://graph.microsoft.com/v1.0/education/users/{user-id}
 Content-type: application/json
 Content-length: 508
 
@@ -97,7 +97,7 @@ Content-length: 508
         "state": "CA",
         "street": "12345 Main St."
       },
-  "primaryRole": "string",
+  "primaryRole": "student",
   "residenceAddress": {
         "city": "Los Angeles",
         "countryOrRegion": "United States",
@@ -106,7 +106,6 @@ Content-length: 508
         "street": "12345 Main St."
       },
   "student": {
-      "primaryRole": "student",
       "externalId": "13005",
       "birthDate": "2001-01-01T00:00:00Z"
     }

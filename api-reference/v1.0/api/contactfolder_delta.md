@@ -18,7 +18,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/delta
-GET /users/<id>/contactFolders/delta
+GET /users/{id}/contactFolders/delta
 ```
 
 ### <a name="query-parameters"></a>Abfrageparameter
@@ -27,8 +27,8 @@ Beim Nachverfolgen von Änderungen in Kontaktordnern wird eine Runde von einem o
 
 | Abfrageparameter      | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `deltaLink`-URL des vorhergehenden **delta**-Funktionsaufrufs für dieselbe Sammlung von Kontaktordnern zurückgegeben wird und den Abschluss dieser Runde der Änderungsnachverfolgung anzeigt. Speichern Sie die gesamte `deltaLink`-URL einschließlich dieses Tokens, und wenden Sie sie in der ersten Anforderung der nächsten Änderungsnachverfolgungsrunde für diese Sammlung an.|
-| $skiptoken | string | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `nextLink`-URL des vorhergehenden **delta**-Funktionsaufrufs zurückgegeben wird und anzeigt, dass in derselben Sammlung von Kontaktordnern weitere Änderungen zum Nachverfolgen vorliegen. |
+| $deltatoken | Zeichenfolge | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `deltaLink`-URL des vorhergehenden **delta**-Funktionsaufrufs für dieselbe Sammlung von Kontaktordnern zurückgegeben wird und den Abschluss dieser Runde der Änderungsnachverfolgung anzeigt. Speichern Sie die gesamte `deltaLink`-URL einschließlich dieses Tokens, und wenden Sie sie in der ersten Anforderung der nächsten Änderungsnachverfolgungsrunde für diese Sammlung an.|
+| $skiptoken | Zeichenfolge | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `nextLink`-URL des vorhergehenden **delta**-Funktionsaufrufs zurückgegeben wird und anzeigt, dass in derselben Sammlung von Kontaktordnern weitere Änderungen zum Nachverfolgen vorliegen. |
 
 #### <a name="odata-query-parameters"></a>OData-Abfrageparameter
 
@@ -37,9 +37,9 @@ Sie können wie bei jeder GET-Anforderung den Abfrageparameter `$select` verwend
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type  | string  | application/json. Erforderlich.  |
-| Prefer | string  | odata.maxpagesize={x}. Optional. |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Inhaltstyp  | Zeichenfolge  | application/json. Erforderlich. |
+| Bevorzugt | Zeichenfolge  | odata.maxpagesize={x}. Optional. |
 
 ## <a name="response"></a>Antwort
 
@@ -59,7 +59,6 @@ Ein ähnliches Beispiel zeigt, wie die Statustoken zum Nachverfolgen von Änderu
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/contactFolders/delta
-
 Prefer: odata.maxpagesize=2
 ```
 
@@ -88,7 +87,6 @@ Content-length: 254
     {
      "parentFolderId": "parentFolderId-value",
       "displayName": "displayName-value",
-      "wellKnownName": "wellKnownName-value",
       "id": "id-value"
     }
   ]

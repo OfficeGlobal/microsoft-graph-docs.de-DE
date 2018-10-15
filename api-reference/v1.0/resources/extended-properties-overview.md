@@ -4,9 +4,9 @@ Erweiterte Eigenschaften ermöglichen das Speichern von benutzerdefinierten Date
 
 - [message](../resources/message.md)
 - [mailFolder](../resources/mailfolder.md)
-- [event](../resources/event.md)
-- [calendar](../resources/calendar.md)
-- [contact](../resources/contact.md)
+- [Ereignis](../resources/event.md)
+- [Kalender](../resources/calendar.md)
+- [Kontakt](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
 
 Möglich sind auch die folgenden Office 365-Gruppenressourcen:
@@ -17,7 +17,7 @@ Möglich sind auch die folgenden Office 365-Gruppenressourcen:
 
 ## <a name="use-extended-properties-or-open-extensions"></a>Sollten erweiterte Eigenschaften oder offene Erweiterungen verwendet werden?
 
-In den meisten üblichen Szenarios sollten offene Erweiterungen verwendet werden können (dargestellt durch [openTypeExtension](../resources/opentypeextension.md) und bisher als Office 365-Datenerweiterungen bezeichnet), um benutzerdefinierte Daten für Ressourceninstanzen im Postfach eines Benutzers zu speichern oder darauf zuzugreifen. Verwenden Sie erweiterte Eigenschaften nur, wenn Sie auf benutzerdefinierte Daten für Outlook-MAPI-Eigenschaften zugreifen müssen, die nicht bereits in den [Microsoft Graph-API-Metadaten](http://developer.microsoft.com/de-DE/graph/docs/overview/call_api) verfügbar gemacht wurden. 
+In den meisten üblichen Szenarios sollten offene Erweiterungen verwendet werden können (dargestellt durch [openTypeExtension](../resources/opentypeextension.md) und bisher als Office 365-Datenerweiterungen bezeichnet), um benutzerdefinierte Daten für Ressourceninstanzen im Postfach eines Benutzers zu speichern oder darauf zuzugreifen. Verwenden Sie erweiterte Eigenschaften nur, wenn Sie auf benutzerdefinierte Daten für Outlook-MAPI-Eigenschaften zugreifen müssen, die nicht bereits in den [Microsoft Graph-API-Metadaten](http://developer.microsoft.com/en-us/graph/docs/overview/call_api) verfügbar gemacht wurden. 
 
 ## <a name="types-of-extended-properties"></a>Typen erweiterter Eigenschaften
 
@@ -30,39 +30,50 @@ Sie können die **ID** verwenden, um eine spezifische Ressourceninstanz zusammen
 **Hinweis** Sie können die REST API nicht dafür verwenden, alle erweiterten Eigenschaften einer spezifischen Instanz in einem Aufruf abzurufen.
   
 
-### <a name="id-formats"></a>ID-Formate
+### <a name="id-formats"></a>id formats
 
-Wenn Sie eine einwertige oder mehrwertige erweiterte Eigenschaft erstellen, können Sie die **id**-Eigenschaft in einem von zwei Formaten angeben, basierend auf einem Zeichenfolgennamen (**Name**) oder numerischen Bezeichner (**Id**) und auf dem tatsächlichen Typ des Werts bzw. der Werte der Eigenschaft. Die folgenden zwei Tabellen enthalten die unterstützten Formate zum Angeben von ein- oder mehrwertigen erweiterten Eigenschaften. {_type_} stellt den Typ des Werts bzw. der Werte für die Eigenschaft dar. In den Beispielen sind dies Zeichenfolgen, ganze Zahlen und Arrays dieser Typen.
+Sie können die **id** einer erweiterten Eigenschaft in drei Formaten angeben:
 
-Da erweiterte Eigenschaften in den meisten Fällen mit definierten MAPI-Eigenschaften zusammenarbeiten, die nicht in den Microsoft Graph-API-Metadaten verfügbar gemacht wurden, sollte das Format der Einfachheit halber angeben, ob die entsprechende MAPI-Eigenschaft eine Zeichenfolge aus Zeichen oder einen numerischen Wert in ihrem [MAPI-Eigenschaftsbezeichner](https://msdn.microsoft.com/de-DE/library/office/cc815528.aspx) verwendet.
-Informationen zum Zuordnen einer erweiterten Eigenschaft zu einer vorhandenen MAPI-Eigenschaft wie dem Eigenschaftsbezeichner und der GUID finden Sie unter \[MS-OXPROPS\] Microsoft Corporation, [„Eigenschaften für Exchange Server-Protokolle“](https://msdn.microsoft.com/en-us/library/cc433490%28v=exchg.80%29.aspx).
+- Als eine benannte Eigenschaft, identifiziert durch den erweiterten Eigenschaftentyp, als Namespace und als einen Zeichenfolgennamen.
+- Als eine benannte Eigenschaft, identifiziert durch den erweiterten Eigenschaftentyp, als Namespace und als einen numerischen Bezeichner.
+- Im Format Proptag, identifiziert durch den erweiterten Eigenschaftentyp sowie ein [MAPI-Eigenschaftentag](https://docs.microsoft.com/en-us/office/client-developer/outlook/mapi/mapi-property-tags).
 
-**Hinweis** Nachdem Sie ein Format für die **ID** ausgewählt haben, sollten Sie nur mit diesem Format auf die betreffende erweiterte Eigenschaft zugreifen.
-
+Die nächsten 2 Tabellen beschreiben diese Formate als erweiterte Eigenschaften, angewendet auf einzelne und mehrere Werten. {_type_} stellt den Typ des Werts bzw. der Werte für die erweiterte Eigenschaft dar. In den Beispielen sind dies Zeichenfolgen, ganze Zahlen und Arrays dieser Typen.
 
 **Gültige ID-Formate für einwertige erweiterte Eigenschaften**
 
 |**Format**|**Beispiel**|**Beschreibung**|
 |:---------|:----------|:--------------|
-| „{_type_} {_guid_} **Name** {_name_}“ | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifiziert eine Eigenschaft nach dem Namespace (der GUID), zu dem sie gehört, und einem Namen.         |
-| „{_type_} {_guid_} **Id** {_id_}“     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifiziert eine Eigenschaft nach dem Namespace (der GUID), zu dem sie gehört, und einem Bezeichner.  |
+| „{_type_} {_guid_} **Name** {_name_}“ | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifiziert eine Eigenschaft nach dem Namespace (der GUID), zu dem sie gehört, und einem Zeichenfolgenamen.         |
+| „{_type_} {_guid_} **Id** {_id_}“     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifiziert eine Eigenschaft nach dem Namespace (der GUID), zu dem sie gehört, und einem numerischen Bezeichner.  |
+| "{_type_} {_proptag_}"                    | ```"String 0x4001001E"```                                           | Identifiziert eine vordefinierte Eigenschaft über ihren Eigenschaftentag. |
 
 **Gültige ID-Formate für mehrwertige erweiterte Eigenschaften**
 
 |**Format**|**Beispiel**|**Beschreibung**|
 |:---------|:----------|:--------------|
-| „{_type_} {_guid_} **Name** {_name_}“ | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifiziert eine Eigenschaft nach Namespace (der GUID) und Namen.         |
-| „{_type_} {_guid_} **Id** {_id_}“     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifiziert eine Eigenschaft nach Namespace (der GUID) und Bezeichner.   |
+| „{_type_} {_guid_} **Name** {_name_}“ | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifiziert eine Eigenschaft nach dem Namespace (der GUID) und einem Zeichenfolgenamen.         |
+| „{_type_} {_guid_} **Id** {_id_}“     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifiziert eine Eigenschaft nach dem Namespace (der GUID) und einem numerischen Bezeichner.   |
+| "{_type_} {_proptag_}"                    | ```"StringArray 0x4002101E"```                                           | Identifiziert eine vordefinierte Eigenschaft über ihren Eigenschaftentag. |
+
+
+Verwenden Sie eines der Formate für die benannte Eigenschaft, um eine erweiterte Eigenschaft mit einem oder mit mehreren Werten als benutzerdefinierte Eigenschaft zu definieren. Bei den beiden Formaten bezieht das erste einen Zeichenfolgenamen (**Name**) und ist der Einfachheit halber das bevorzugte Format. Benannte Eigenschaften verfügen über ihre [Eigenschaftenbezeichner](https://docs.microsoft.com/en-us/office/client-developer/outlook/mapi/mapi-property-identifier-overview) in der Spanne 0x8000-0xfffe.
+
+Verwenden Sie das Format Proptag um auf Eigenschaften zuzugreifen, die mit MAPI oder von einem Client oder Server vordefiniert wurden und nicht die noch nicht in Microsoft Graph verfügbar gemacht wurden. Diese Eigenschaften haben Eigenschaftenbezeichner in der Spanne 0x0001-0x7fff. Versuchen Sie nicht, eine benutzerdefinierte Eigenschaft mit dem Format Proptag zu definieren. 
+
+Informationen zum Zuordnen einer erweiterten Eigenschaft zu einer vorhandenen MAPI-Eigenschaft wie dem Eigenschaftsbezeichner und der GUID finden Sie unter \[MS-OXPROPS\] Microsoft Corporation, [„Eigenschaften für Exchange Server-Protokolle“](https://msdn.microsoft.com/en-us/library/cc433490%28v=exchg.80%29.aspx).
+
+**Hinweis** Nachdem Sie ein Format für die **ID** ausgewählt haben, sollten Sie nur mit diesem Format auf die betreffende erweiterte Eigenschaft zugreifen.
 
 ### <a name="rest-api-operations"></a>REST-API-Vorgänge
  
 Vorgänge für erweiterte Eigenschaften mit einem einzelnen Wert:
 
 - [Eine erweiterte Eigenschaft in einer neuen oder vorhandenen Ressourceninstanz erstellen](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md)
-- [Eine oder eine Sammlung von Ressourceninstanzen mit einer erweiterten Eigenschaft mit `$expand` oder `$filter` abrufen](../api/singlevaluelegacyextendedproperty_get.md)
+- [Eine oder eine Sammlung von Ressourceninstanzen mit einer erweiterten Eigenschaft mit `$expand` oder `$filter` abrufen `$filter`](../api/singlevaluelegacyextendedproperty_get.md)
 
 Vorgänge für erweiterte Eigenschaften mit mehreren Werten:
 
 - [Eine erweiterte Eigenschaft in einer neuen oder vorhandenen Ressourceninstanz erstellen](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md)
-- [Eine Ressourceninstanz mit einer erweiterten Eigenschaft mithilfe von `$expand` abrufen](../api/multivaluelegacyextendedproperty_get.md)
+- [Eine Ressourceninstanz mit einer erweiterten Eigenschaft mithilfe von `$expand` abrufen `$expand`](../api/multivaluelegacyextendedproperty_get.md)
 

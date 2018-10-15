@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Freigeben einer Datei mit einem Link
-ms.openlocfilehash: 2a1471cf08545bb24b8da47ce1792f85860d07ca
-ms.sourcegitcommit: 9f78a3506e1c1ad0733264ce21a1f8acfeadb90a
+ms.openlocfilehash: bbdf872216a5a9e266e04c95868e0179cf15e553
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "22223474"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266807"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Freigabelink für ein DriveItem erstellen
 
@@ -47,8 +47,8 @@ Bei der Anforderung sollte es sich um ein JSON-Objekt mit folgenden Eigenschafte
 
 |   Name    |  Typ  |                                 Beschreibung                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
-| **type**  | string | Der Typ Freigabelink, der erstellt werden soll. Möglich sind `view`, `edit` oder `embed`.       |
-| **scope** | string | Optional. Der Bereich des zu erstellenden Links. Möglich sind `anonymous` oder `organization`. |
+| **type**  | Zeichenfolge | Der Typ Freigabelink, der erstellt werden soll. Möglich sind `view`, `edit` oder `embed`.       |
+| **scope** | Zeichenfolge | Optional. Der Bereich des zu erstellenden Links. Möglich sind `anonymous` oder `organization`. |
 
 
 ### <a name="link-types"></a>Linktypen
@@ -66,10 +66,11 @@ Für den Parameter **type** sind die folgenden Werte zulässig:
 Für den Parameter **scope** sind die nachfolgend aufgeführten Werte zulässig.
 Wenn er **scope**-Parameter nicht angegeben ist, wird der Standardlinktyp für die Organisation erstellt.
 
-| Typwert     | Beschreibung                                                                                                                   |
-|:---------------|:------------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | Erstellt einen Link zum DriveItem, auf das alle über den Link zugreifen können. Anonyme Links können von einem Administrator deaktiviert werden.                 |
-| `organization` | Erstellt einen Link zum DriveItem, auf das alle innerhalb der Organisation des Benutzers zugreifen können. Der Linkbereich „organization“ ist nicht für das persönliche OneDrive verfügbar. |
+| Wert          | Beschreibung
+|:---------------|:------------------------------------------------------------
+| `anonymous`    | Jeder Benutzer mit dem Link hat Zugriff, ohne sich anmelden zu müssen. Hierzu können auch Personen außerhalb Ihrer Organisation zählen. Die Unterstützung für anonyme Links kann von einem Administrator deaktiviert werden.
+| `organization` | Alle Benutzer, die in Ihrer Organisation (Mandant) angemeldet sind, können den Link benutzen, um Zugriff zu erhalten. Nur in OneDrive for Business und SharePoint verfügbar.
+
 
 ## <a name="response"></a>Antwort
 
@@ -86,11 +87,11 @@ Der Freigabelink ist schreibgeschützt konfiguriert und kann von allen verwendet
 
 <!-- {
   "blockType": "request",
-  "name": "item_createlink"
+  "name": "create-link"
 }-->
 
 ```http
-POST /me/drive/items/{itemId}/createLink
+POST /me/drive/items/{item-id}/createLink
 Content-type: application/json
 
 {
@@ -130,7 +131,7 @@ Verwenden Sie den Parameter **scope** mit dem Wert `organization`, um einen Link
 
 ### <a name="request"></a>Anforderung
 
-<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite", "tags": "service.sharepoint" } -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink
@@ -171,9 +172,9 @@ Bei Verwendung des Linktyps `embed` kann der zurückgegebene Wert für „webUrl
 
 **Hinweis:** Einbettungslinks werden nur fürdas persönlich OneDrive unterstützt.
 
-### <a name="request"></a>Anfordern
+### <a name="request"></a>Anforderung
 
-<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite service.onedrive" } -->
+<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite", "tags": "service.onedrive service.graph" } -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink
@@ -207,7 +208,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
 * Mit dieser Aktion erstellte Links laufen nicht ab, es sei denn, für die Organisation wird eine Standardablaufrichtlinie erzwungen.
 * Links sind in den Freigabeberechtigungen für das Element sichtbar und können von einem Besitzer des Elements entfernt werden.

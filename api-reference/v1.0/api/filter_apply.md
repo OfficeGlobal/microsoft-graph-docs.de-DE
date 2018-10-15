@@ -1,4 +1,4 @@
-# <a name="filter-apply"></a>Filter: apply
+# <a name="filter-apply"></a>Filter: anwenden
 
 Wendet die angegebenen Filterkriterien in der angegebenen Spalte an.
 ## <a name="permissions"></a>Berechtigungen
@@ -20,14 +20,14 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/ap
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Erforderlich. |
+| Autorisierung  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|criteria|FilterCriteria|Die Kriterien, die angewendet werden sollen.|
+|criteria|WorkbookFilterCriteria|Die Kriterien, die angewendet werden sollen.|
 
 ## <a name="response"></a>Antwort
 
@@ -69,8 +69,7 @@ Content-length: 321
 Nachfolgend sehen Sie ein Beispiel der Antwort. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

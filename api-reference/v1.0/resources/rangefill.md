@@ -7,14 +7,14 @@ Stellt den Hintergrund eines Bereichsobjekts dar.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[RangeFill abrufen](../api/rangefill_get.md) | [RangeFill](rangefill.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des rangeFill-Objekts.|
-|[Update](../api/rangefill_update.md) | [RangeFill](rangefill.md)    |Dient zum Aktualisieren des RangeFill-Objekts. |
-|[Clear](../api/rangefill_clear.md)|Keine|Setzt den Hintergrund des Bereichs zurück.|
+|[RangeFill abrufen](../api/rangefill_get.md) | [WorkbookRangeFill](rangefill.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des rangeFill-Objekts.|
+|[Aktualisieren](../api/rangefill_update.md) | [WorkbookRangeFill](rangefill.md)   |Dient zum Aktualisieren des RangeFill-Objekts. |
+|[Löschen](../api/rangefill_clear.md)|Keine|Setzt den Hintergrund des Bereichs zurück.|
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|color|string|HTML-Farbcode, der die Farbe der Rahmenlinie, des Formulars #RRGGBB (z. B.  "FFA500") oder als benannte HTML-Farbe (z. B. "orange") darstellt.|
+|Farbe|Zeichenfolge|HTML-Farbcode, der die Farbe der Rahmenlinie, des Formulars #RRGGBB (z. B.  "FFA500") oder als benannte HTML-Farbe (z. B. "orange") darstellt.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -24,12 +24,11 @@ Keine
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.rangeFill"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 }-->
 
 ```json

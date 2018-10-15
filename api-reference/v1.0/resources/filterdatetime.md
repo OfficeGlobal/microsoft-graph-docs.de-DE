@@ -3,10 +3,10 @@
 Stellt dar, wie ein Datum beim Filtern nach Werten gefiltert wird.
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|date|string|Das Datum im ISO8601-Format zum Filtern von Daten.|
-|specificity|string|Genauigkeit des Datums zum Beibehalten von Daten. Wenn z. B. das Datum 2005-04-02 ist und die Spezifität auf „Monat“ festgelegt ist, werden beim Filtervorgang alle Zeilen mit einem Datum im Monat April 2009 beibehalten. Mögliche Werte:`Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
+|date|Zeichenfolge|Das Datum im ISO8601-Format zum Filtern von Daten.|
+|specificity|Zeichenfolge|Wie spezifisch die Daten bestimmt werden sollen, um die Daten zu halten. Angenommen, das Datum ist der 02.04.2005 und die Spezifität wird auf „Monat“ festgelegt, hält der Filter-Vorgang alle Zeilen mit einem Datum im Monat April 2009. Die mögliche Werte sind: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -21,7 +21,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.filterDateTime"
+  "@odata.type": "microsoft.graph.workbookFilterDateTime"
 }-->
 
 ```json

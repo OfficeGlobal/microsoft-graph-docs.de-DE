@@ -29,7 +29,7 @@ Sie erbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecom
 |passwordMinimumLength|Int32|Mindestlänge von Kennwörtern|
 |passwordMinutesOfInactivityBeforeLock|Int32|Zeitraum von Inaktivität in Minuten, nach dem die Eingabe eines Kennworts gefordert wird|
 |passwordMinimumCharacterSetCount|Int32|Anzahl der Zeichensätze, die im Kennwort enthalten sein müssen|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Geforderter Kennworttyp. Mögliche Werte sind `deviceDefault`, `alphanumeric`,`numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Der benötigte Kennworttyp. Mögliche Werte: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Anzahl der zuletzt verwendeten Kennwörter, die nicht erneut verwendet werden dürfen. Gültige Werte: 0 bis 24.|
 |passwordRequired|Boolesch|Legt fest, ob ein Kennwort gefordert wird.|
 |osMinimumVersion|Zeichenfolge|Mindestversion von Windows Phone|
@@ -51,8 +51,8 @@ Sie erbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecom
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceCompliancePolicy",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsPhone81CompliancePolicy"
 }-->
 ``` json
@@ -77,6 +77,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "storageRequireEncryption": true
 }
 ```
+
+
+
+
+
 
 
 

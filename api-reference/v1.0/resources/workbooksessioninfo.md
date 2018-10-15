@@ -24,6 +24,6 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 | Eigenschaft | Typ  | Beschreibung                               |
 |:---------|:------|:------------------------------------------|
-| id  | string | Die ID der Arbeitsmappensitzung. |
-| persistChanges | string |  `true` für eine beständige Sitzung `false` für eine nicht-beständige Sitzung (Ansichtsmodus) |
+| id  | Zeichenfolge | Die ID der Arbeitsmappensitzung. |
+| persistChanges | Boolescher Wert |  `true` für eine beständige Sitzung. `false` für eine nicht-beständige Sitzung (Ansichtsmodus) |
 

@@ -14,10 +14,10 @@ Diese Ressource unterstützt die Verwendung einer [Delta-Abfrage](../../../conce
 |[Löschen](../api/contactfolder_delete.md) | Keine |Dient zum Löschen des contactFolder-Objekts. |
 |[childFolders auflisten](../api/contactfolder_list_childfolders.md) |[ContactFolder](contactfolder.md)-Sammlung| Dient zum Abrufen einer Sammlung von untergeordneten Ordnern unter dem angegebenen Kontaktordner.|
 |[Untergeordneten contactFolder erstellen](../api/contactfolder_post_childfolders.md) |[ContactFolder](contactfolder.md)| Dient zum Erstellen eines neuen contactFolder als untergeordnetes Element eines bestimmten Ordners.|
-|[delta](../api/contact_delta.md)|[contact](contact.md)-Sammlung| Dient zum Abrufen eines Satzes von Kontaktordnern, die dem Postfach des Benutzers hinzugefügt bzw. daraus gelöscht oder entfernt wurden.|
+|[Delta](../api/contact_delta.md)|[contact](contact.md)-Sammlung| Dient zum Abrufen eines Satzes von Kontaktordnern, die dem Postfach des Benutzers hinzugefügt bzw. daraus gelöscht oder entfernt wurden.|
 |[Kontakte im Ordner auflisten](../api/contactfolder_list_contacts.md) |[Contact](contact.md)-Sammlung| Dient zum Abrufen einer Kontaktsammlung aus dem Standardkontaktordner des angemeldeten Benutzers (`.../me/contacts`) oder aus dem angegebenen Kontaktordner.|
 |[Kontakt in Ordner erstellen](../api/contactfolder_post_contacts.md) |[Kontakt](contact.md)| Dient zum Hinzufügen eines Kontakts zum Stammordner der Kontakte oder zum Endpunkt `contacts` eines anderen Kontaktordners.|
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[contactFolder](contactFolder.md)  |Dient zum Erstellen einer oder mehrerer erweiterter einwertiger Eigenschaften in einem neuen oder vorhandenen contactFolder-Element.   |
+|[Erweiterte Eigenschaft mit einfachem Wert erstellen](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[contactFolder](contactFolder.md)  |Dient zum Erstellen einer oder mehrerer erweiterter einwertiger Eigenschaften in einem neuen oder vorhandenen contactFolder-Element.   |
 |[contactFolder mit erweiterter einwertiger Eigenschaft abrufen](../api/singlevaluelegacyextendedproperty_get.md)  | [contactFolder](contactFolder.md) | Dient zum Abrufen von contactFolders-Elementen mit einer erweiterten einwertigen Eigenschaft mithilfe von `$expand` oder `$filter`. |
 |[Mehrwertige erweiterte Eigenschaft erstellen](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [contactFolder](contactFolder.md) | Dient zum Erstellen einer oder mehrerer erweiterter mehrwertiger Eigenschaften in einem neuen oder vorhandenen contactFolder-Element.  |
 |[contactFolder mit erweiterter mehrwertiger Eigenschaft abrufen](../api/multivaluelegacyextendedproperty_get.md)  | [contactFolder](contactFolder.md) | Dient zum Abrufen eines contactFolders-Elements mit einer erweiterten mehrwertigen Eigenschaft mithilfe von `$expand`. |
@@ -25,9 +25,9 @@ Diese Ressource unterstützt die Verwendung einer [Delta-Abfrage](../../../conce
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|displayName|String|Der Anzeigename des Ordners.|
-|id|String|Eindeutiger Bezeichner des Kontaktordners. Schreibgeschützt.|
-|parentFolderId|String|Die ID des übergeordneten Ordners des Ordners.|
+|displayName|Zeichenfolge|Der Anzeigename des Ordners.|
+|ID|Zeichenfolge|Eindeutiger Bezeichner des Kontaktordners. Schreibgeschützt.|
+|parentFolderId|Zeichenfolge|Die ID des übergeordneten Ordners des Ordners.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
@@ -41,7 +41,7 @@ Diese Ressource unterstützt die Verwendung einer [Delta-Abfrage](../../../conce
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "childFolders",
@@ -50,7 +50,26 @@ Es folgt eine JSON-Darstellung der Ressource.
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.contactFolder"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.contactFolder",
+  "@odata.annotations": [
+    {
+      "property": "childFolders",
+      "capabilities": {
+        "navigability": "single",
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "contacts",
+      "capabilities": {
+        "changeTracking": true,
+        "navigability": "single",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

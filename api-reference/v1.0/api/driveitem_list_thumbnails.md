@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Abrufen von Miniaturansichten für eine Datei oder einen Ordner"
-ms.openlocfilehash: 864765898955d0a690ab85dc0be9761a7a9d1856
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Abrufen von Miniaturansichten für eine Datei oder einen Ordner
+ms.openlocfilehash: 98bfa0bee80beabc9934ae603f317627facffb4a
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266835"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Miniaturansichten für ein DriveItem auflisten
 
@@ -59,7 +60,7 @@ Bei Erfolg gibt diese Methode einen Antwortcode des Typs `200 OK` und eine Samml
 
 Hier ist ein Beispiel für die Anforderung, die verfügbare Miniaturansichten für ein Element im OneDrive des aktuellen Benutzers abruft.
 
-<!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails
@@ -68,7 +69,7 @@ GET /me/drive/items/{item-id}/thumbnails
 Diese gibt ein Array von verfügbaren **thumbnailSets** für das Element zurück. Ein beliebiges Element auf einem Laufwerk kann Null oder mehr Miniaturansichten aufweisen.
 
 **Hinweis:** Sie können den _select_-Abfragezeichenfolgenparameter verwenden, um zu steuern, welche Miniaturansichtgrößen im **ThumbnailSet** zurückgegeben werden.
-`/thumbnails?select=medium` ruft beispielsweise nur die mittelgroßen Miniaturansichten ab.
+ruft beispielsweise nur die mittelgroßen Miniaturansichten ab.`/thumbnails?select=medium`
 
 
 ### <a name="response"></a>Antwort
@@ -97,7 +98,7 @@ Sie können die Metadaten einer einzelnen Miniaturansicht sowie ihre Größe abr
 
 ### <a name="http-request"></a>HTTP-Anforderung
 
-<!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
@@ -107,9 +108,9 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 
 | Name         | Typ   | Beschreibung                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
-| **item-id**  | string | Der eindeutige Bezeichner für das referenzierte Element                                           |
-| **thumb-id** | number | Der Index der Miniaturansicht, in der Regel 0 bis 4. Wenn es eine benutzerdefinierte Miniaturansicht gibt, ist ihr Index 0. |
-| **size**     | string | Die Größe der angeforderten Miniaturansicht. Dabei kann es sich um eine der nachfolgend aufgeführten Standardgrößen oder um eine benutzerdefinierte Größe handeln. |
+| **item-id**  | Zeichenfolge | Der eindeutige Bezeichner für das referenzierte Element                                           |
+| **thumb-id** | Nummer | Der Index der Miniaturansicht, in der Regel 0 bis 4. Wenn es eine benutzerdefinierte Miniaturansicht gibt, ist ihr Index 0. |
+| **size**     | Zeichenfolge | Die Größe der angeforderten Miniaturansicht. Dabei kann es sich um eine der nachfolgend aufgeführten Standardgrößen oder um eine benutzerdefinierte Größe handeln. |
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 
@@ -130,7 +131,7 @@ Sie können den Inhalt einer Miniaturansicht direkt abrufen, indem Sie die Eigen
 
 ### <a name="http-request"></a>HTTP-Anforderung
 
-<!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
@@ -157,7 +158,7 @@ Dadurch kann Ihre App Miniaturansichten und Elemente in einer einzelnen Anforder
 
 ### <a name="http-request"></a>HTTP-Anforderung
 
-<!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/children?$expand=thumbnails
@@ -203,17 +204,15 @@ Content-type: application/json
 }
 ```
 
-## <a name="size-values"></a>Größenwerte
+## <a name="size-options"></a>Größenoptionen
 
 In dieser Tabelle sind die möglichen Miniaturansichtgrößen definiert. Zwar können Sie jede beliebige Miniaturansichtgröße anfordern; bei den definierten Werten ist es jedoch wahrscheinlich, dass sie existieren und dass schnell ein Wert zurückgegeben wird:
 
 | Name           | Auflösung  | Seitenverhältnis | Beschreibung                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
-| `small`        | 96 longest
-  | Original     | Kleine, stark komprimierte Miniaturansicht, zugeschnitten auf ein quadratisches Seitenverhältnis |
-| `medium`       | 176 longest | Original     | Zugeschnitten auf die standardmäßige Elementgröße für die OneDrive-Webansicht         |
-| `large`        | 800 longest
- | Original     | Miniaturansicht, bei der die längste Kante auf 800 Pixel skaliert wurde               |
+| `small`        | 96 längste  | Original     | Kleine, stark komprimierte Miniaturansicht, zugeschnitten auf ein quadratisches Seitenverhältnis |
+| `medium`       | 176 längste | Original     | Zugeschnitten auf die standardmäßige Elementgröße für die OneDrive-Webansicht         |
+| `large`        | 800 längste | Original     | Miniaturansicht, bei der die längste Kante auf 800 Pixel skaliert wurde               |
 | `smallSquare`  | 96x96       | Quadratisches Zuschneiden  | Kleines Quadrat (Miniaturansicht)                                               |
 | `mediumSquare` | 176x176     | Quadratisches Zuschneiden  | Kleines Quadrat (Miniaturansicht)                                               |
 | `largeSquare`  | 800x800     | Quadratisches Zuschneiden  | Großes Quadrat (Miniaturansicht)                                               |
@@ -223,7 +222,7 @@ In dieser Tabelle sind die möglichen Miniaturansichtgrößen definiert. Zwar k�
 Zusätzlich zu den definierten Größen kann Ihre App eine benutzerdefinierte Miniaturansichtsgröße anfordern, indem die Dimensionen der Miniaturansicht mit dem Präfix `c` angegeben werden.
 Wenn Ihre App zum Beispiel Miniaturansichten mit einer Größe von 300 x 400 benötigt, können Sie diese Größe wie folgt anfordern:
 
-<!-- { "name": "get-thumbnail-custom-size", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-thumbnail-custom-size", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
@@ -268,7 +267,7 @@ Die folgenden Aufrufe können nicht zur Erweiterung der Miniaturansichtsammlung 
 * `GET /drive/root:/{item-path}?expand=children(expand=thumbnails)`
 * `GET /drive/items/{item-id}/children?expand=thumbnails`
 
-Miniaturansichten werden unter SharePoint Server 2016 nicht unterstützt.
+Miniaturansichten werden unter SharePoint Server 2016 nicht unterstützt.
 
 ### <a name="error-responses"></a>Fehlerantworten
 
@@ -281,5 +280,17 @@ Weitere Informationen dazu, wie Fehler zurückgegeben werden, finden Sie unter [
   "description": "Get metadata and content for thumbnails of multiple sizes for OneDrive items.",
   "keywords": "thumbnail,content,download,sizes",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/driveitem_list_thumbnails.md:
+      Unable to map some markdown elements into schema.
+         Unmapped methods:
+      enum-item-thumbnails, get-one-thumbnail, get-thumbnail-content, get-thumbnail-while-listing, get-thumbnail-custom-size
+         Unmapped tables:
+      Permissions - AuthScopes, Path parameters - PathParameters, Size options - Unknown, Examples of custom identifiers - Unknown",
+    "Warning: Couldn't serialize request for path /me/drive/items/{var}/thumbnails/{var}/{var}/content into EDMX: System.InvalidOperationException: Uri path requires navigating into unknown object hierarchy: missing property '{var}' on 'thumbnailSet'. Possible issues:
+         1) Doc bug where '{var}' isn't defined on the resource.         2) Doc bug where '{var}' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.       3) Doc bug where 'thumbnailSet' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation
+     at ApiDocs.Publishing.CSDL.CsdlWriter.ParseRequestTargetType(String requestPath, MethodCollection requestMethodCollection, EntityFramework edmx, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 1145
+     at ApiDocs.Publishing.CSDL.CsdlWriter.ProcessRestRequestPaths(EntityFramework edmx, String[] baseUrlsToRemove, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 821"
+  ],
   "tocPath": "Items/Thumbnails"
 } -->

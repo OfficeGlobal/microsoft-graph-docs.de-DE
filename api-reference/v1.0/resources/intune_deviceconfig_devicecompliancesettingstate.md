@@ -25,7 +25,7 @@ Zustand der Gerätekompatibilitätseinstellung für ein bestimmtes Gerät.
 |userName|Zeichenfolge|Gemeldeter Benutzername|
 |userPrincipalName|Zeichenfolge|Gemeldeter Benutzerprinzipalname|
 |deviceModel|Zeichenfolge|Gemeldetes Gerätemodell|
-|Zustand|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Der Compliance-Zustand der Einstellung. Die möglichen Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|Zustand|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Karenzzeit für die Gerätekonformität|
 
 ## <a name="relationships"></a>Beziehungen
@@ -34,8 +34,8 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceComplianceSettingState"
 }-->
 ``` json
@@ -55,6 +55,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

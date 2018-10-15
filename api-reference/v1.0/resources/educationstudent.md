@@ -5,12 +5,12 @@ Zusätzliche Informationen, die einem vorhandenen [educationUser](educationuser.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|birthDate|Date| Geburtsdatum des Kursteilnehmers.|
-|externalId|String| ID des Kursteilnehmers im Quellsystem.|
-|gender|`educationGender enumeration`| Mögliche Werte: `female`, `male`, `other`, `unkownFutureValue`.|
-|grade|String|Aktuelle Klassenstufe des Kursteilnehmers.|
-|graduationYear|String| Jahr, in dem der Kursteilnehmer die Schule abschließt.|
-|studentNumber|String| Kursteilnehmernummer|
+|birthDate|Datum| Geburtsdatum des Kursteilnehmers.|
+|externalId|Zeichenfolge| ID des Kursteilnehmers im Quellsystem.|
+|gender|educationGender| Die möglichen Werte sind: `female`, `male`, `other`, `unknownFutureValue`.|
+|Ergebnis|Zeichenfolge|Aktuelle Klassenstufe des Kursteilnehmers.|
+|graduationYear|Zeichenfolge| Jahr, in dem der Kursteilnehmer die Schule abschließt.|
+|studentNumber|Zeichenfolge| Kursteilnehmernummer|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

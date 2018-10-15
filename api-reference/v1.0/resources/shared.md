@@ -3,18 +3,18 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Geteilt
-ms.openlocfilehash: 1d828310a226edd0443ff3b5f60156df1e7c98cb
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 0a94a1d5ddf671151cf786d9ff93ae4f9e012a7b
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267899"
 ---
 # <a name="shared-resource-type"></a>Shared-Ressourcentyp
 
-Die **Shared**-Ressourcenart gibt an, dass ein DriveItem für andere Personen freigegeben wurde.
-Die Ressource enthält Informationen darüber, wie das Element freigegeben wird.
+Die **Shared**-Ressourcenart gibt an, dass ein DriveItem für andere Personen freigegeben wurde. Die Ressource enthält Informationen darüber, wie das Element freigegeben wird.
 
-Wenn ein [**DriveItem**](driveitem.md) ein **shared**-Facet ungleich Null aufweist, wurde das Element freigegeben.
+Wenn ein [**DriveItem**](driveitem.md) eine **shared**-Facette ungleich Null aufweist, wurde das Element freigegeben.
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -37,12 +37,12 @@ Wenn ein [**DriveItem**](driveitem.md) ein **shared**-Facet ungleich Null aufwei
 
 | Eigenschaft       | Typ                          | Beschreibung
 | :------------- |:------------------------------|:----------------------------
-| owner          | [IdentitySet](identityset.md) | Die Identität der der Besitzer des freigegebenen Elements. Schreibgeschützt.
-| scope          | String                        | Gibt den Bereich der Freigabe des Elements an: `anonymous`, `organization` oder `users`. Schreibgeschützt.
+| Besitzer          | [IdentitySet](identityset.md) | Die Identität der der Besitzer des freigegebenen Elements. Schreibgeschützt.
+| Bereich          | Zeichenfolge                        | Gibt den Bereich der Freigabe des Elements an: `anonymous`, `organization` oder `users`. Schreibgeschützt.
 | sharedBy       | [identitySet](identityset.md) | Die Identität des Benutzers, der das Element freigegeben hat. Schreibgeschützt.
 | sharedDateTime | DateTimeOffset                | UTC-Datum und -Uhrzeit der Elementfreigabe. Schreibgeschützt.
 
-## <a name="scope-values"></a>Bereichswerte
+## <a name="scope-options"></a>Bereichsoptionen
 
 | Wert          | Beschreibung                                                                           |
 |:---------------|:--------------------------------------------------------------------------------------|
@@ -59,5 +59,9 @@ Weitere Informationen über die Facets einer **driveItem**-Ressource finden Sie 
   "description": "The shared facet provides info about shared items.",
   "keywords": "shared,share,item,facet,onedrive",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/shared.md:
+      Found potential enums in resource example that weren't defined in a table:(anonymous,organization,users) are in resource, but () are in table"
+  ],
   "tocPath": "Facets/Shared"
 } -->

@@ -3,7 +3,7 @@
 
 | Wert
 |:-----------------
-| Fenster
+| Windows
 | iana
 
 
@@ -16,7 +16,7 @@
 | gebucht              | 2
 | abwesend               | 3
 | workingElsewhere  | 4
-| unbekannt           | -1
+| unknown           | -1
 
 
 ### <a name="attendeetype-values"></a>attendeeType Werte
@@ -24,7 +24,7 @@
 | Wert
 |:-------------------------
 | erforderlich
-| Optional
+| optional
 | Ressource
 
 
@@ -32,7 +32,7 @@
 
 | Wert
 |:-------------------------
-| Keine
+| none
 | contactsOnly
 | all
 
@@ -76,7 +76,7 @@
 
 | Wert
 |:-------------------------
-| weiblich
+| female
 | männlich
 | sonstige
 | unknownFutureValue
@@ -87,7 +87,7 @@
 | Wert
 |:-------------------------
 | singleInstance
-| Auftreten
+| occurrence
 | Ausnahme
 | seriesMaster
 
@@ -97,8 +97,8 @@
 | Wert
 |:-------------------------
 | normal
-| persönlich
-| privat
+| personal
+| private
 | vertraulich
 
 
@@ -106,17 +106,17 @@
 
 | Wert
 |:-------------------------
-| niedrig
+| low
 | normal
-| hoch
+| high
 
 
 ### <a name="educationuserrole-values"></a>EducationUserRole Werte
 | Wert
 |:---------------------
 | Kursteilnehmer
-| Lehrer
-| Keine
+| teacher
+| none
 | unknownFutureValue
 
 
@@ -124,7 +124,7 @@
 
 | Wert
 |:-----------------
-| Keine
+| none
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -155,15 +155,15 @@
 |:-------------------------
 | deviceDefault
 | Banner
-| Modal
-| Keine
+| modal
+| none
 
 ### <a name="deviceenrollmentfailurereason-values"></a>DeviceEnrollmentFailureReason Werte
 
 | Wert
 |:-------------
-| unbekannt
-| Authentifizierung
+| unknown
+| authentication
 | Autorisierung
 | accountValidation
 | userValidation
@@ -178,7 +178,7 @@
 ### <a name="bodytype-values"></a>BodyType Werte
 | Wert
 |:---------
-| SMS
+| Text
 | HTML
 
 
@@ -186,7 +186,7 @@
 
 | Wert
 |:-------------------------
-| Standard
+| default
 | ConferenceRoom
 | homeAddress
 | businessAddress
@@ -201,10 +201,10 @@
 
 | Wert
 |:-------------------------
-| unbekannt
+| unknown
 | locationStore
 | Directory
-| privat
+| private
 | Bing
 
 
@@ -212,15 +212,15 @@
 
 | Wert
 |:-------------------------
-| Beliebiger Wert
+| any
 | Aufruf
 | doNotForward
 | followUp
 | fyi
-| Weiterleiten
+| forward
 | noResponseNecessary
-| lesen
-| antworten
+| read
+| Antworten
 | ReplyToAll
 | prüfen
 
@@ -267,15 +267,15 @@
 
 | Wert
 |:-------------------------
-| POS1
+| home
 | Geschäft
-| Mobile
+| mobile
 | sonstige
 | Assistent
 | homeFax
 | businessFax
 | otherFax
-| Pager
+| pager
 | Optionsschaltfläche
 
 
@@ -283,11 +283,11 @@
 
 | Wert
 |:-------------------------
-| Automatisch
+| automatic
 | noPreview
-| Checkliste
+| checklist
 | Beschreibung
-| Referenz
+| reference
 
 
 ### <a name="status-values"></a>Statuswerte
@@ -295,7 +295,7 @@
 | Wert
 |:-----------------
 | aktiv
-| Aktualisiert
+| updated
 | gelöscht
 | ignoriert
 | unknownFutureValue
@@ -305,11 +305,11 @@
 
 | Wert
 |:-------------------------
-| erste
+| first
 | zweite
 | dritte
 | vierte
-| letzte
+| letzte(r)
 
 
 ### <a name="dayofweek-values"></a>dayOfWeek Werte
@@ -322,13 +322,13 @@
 | Mittwoch
 | Donnerstag
 | Freitag
-| Samstag
+| saturday
 
 ### <a name="recurrencepatterntype-values"></a>recurrencePatternType Werte
 
 | Wert
 |:-------------------------
-| täglich
+| daily
 | wöchentlich
 | absoluteMonthly
 | relativeMonthly
@@ -342,7 +342,7 @@
 |:-------------------------
 | endDate
 | noEnd
-| nummeriert
+| numbered
 
 
 ### <a name="onenotesourceservice-values"></a>onenoteSourceService Werte
@@ -358,7 +358,7 @@
 
 | Wert
 |:-------------------------
-| Keine
+| none
 | organizer
 | tentativelyAccepted
 | angenommen
@@ -370,9 +370,9 @@
 
 | Wert
 |:-------------------------
-| unbekannt
+| unknown
 | Arbeit
-| persönlich
+| personal
 | uneingeschränkt
 
 
@@ -381,9 +381,9 @@
 | Wert
 |:-------------------------
 | sonstige
-| POS1
+| home
 | Arbeit
-| Blog
+| blog
 | Profil
 
 
@@ -391,7 +391,7 @@
 
 | Element   |Wert    
 |:---------|:--------
-| Keine     | -1      
+| none     | -1      
 | preset0  | 0       
 | preset1  | 1       
 | preset2  | 2       
@@ -417,3 +417,194 @@
 | preset22 | 22      
 | preset23 | 23      
 | preset24 | 24      
+
+# <a name="security-api-enums"></a>Sicherheits-API-Enumerationen
+
+# <a name="alertfeedback-enum-type"></a>alertFeedback Enumerationstyp
+
+Mögliche Rückmeldewerte zur Meldung eines Analysten.
+
+## <a name="members"></a>Elemente
+
+|Element|Wert|Beschreibung|
+|:---|:---|:---|
+|unknown|0|Unbekannt.|
+|truePositive|1|Benachrichtigung ist „True Positive“.|
+|falsePositive|2| Benachrichtigung ist „False Positive“.|
+|benignPositive|3| Benachrichtigung ist „Benign Positive“.|
+
+# <a name="filehashtype-enum-type"></a>Enumerationstyp FileHashType
+
+Enum für Hash-Dateitypen.
+
+## <a name="members"></a>Elemente
+
+|Element|Wert|Beschreibung|
+|:---|:---|:---|
+|unknown|0|Unbekannter Typ.|
+|sha1|1|SHA1 Hash-Typ.|
+|sha256|2| SHA256-Hash-Typ.|
+|md5|3| MD5-Hash-Typ.|
+|authenticodeHash256|4| AuthenticodeHash256-Hash-Typ.|
+|lsHash|5| LsHash-Hash-Typ.|
+|ctph|6| CTPH-Hash-Typ.|
+|peSha1|7| PESHA1-Hash-Typ.|
+|peSha256|8| PESHA256-Hash-Typ.|
+
+# <a name="connectiondirection-enum-type"></a>ConnectionDirection Enumerationstyp
+
+Enum für die Richtung der Netzwerkverbindung (eingehend/ausgehend).
+
+## <a name="members"></a>Elemente
+
+|Element|Wert|Beschreibung|
+|:---|:---|:---|
+|unknown|0|Unbekannte Verbindung.|
+|inbound|1|Eingehende Verbindung.|
+|Ausgehend|2| Ausgehende Verbindung.|
+
+# <a name="connectionstatus-enum-type"></a>ConnectionStatus Enumerationstyp
+
+Enumeration für den Status der Verbindungen.
+
+## <a name="members"></a>Elemente
+
+|Element|Wert|Beschreibung|
+|:---|:---|:---|
+|unknown|0|Unbekannter Verbindungsstatus.|
+|attempted|1|Verbindungsversuch.|
+|erfolgreich|2| Verbindung erfolgreich hergestellt.|
+|blocked|3| Verbindung blockiert.|
+|fehlgeschlagen|4| Verbindung fehlgeschlagen.|
+
+# <a name="processintegritylevel-enum-type"></a>ProcessIntegrityLevel Enumerationstyp
+
+Mögliche Werte der Integritätsebene des Prozesses.
+
+## <a name="members"></a>Elemente
+
+|Element|Wert|Beschreibung|
+|:---|:---|:---|
+|unknown|0|Unbekannt.|
+|untrusted|10|Die Integritätsebene ist „Nicht vertrauenswürdig“.|
+|low|20| Die Integritätseben ist „Niedrig“.|
+|medium|30| Die Integritätsebene ist „Mittel“.|
+|high|40| Die Integritätseben ist „Hoch“.|
+| system|50| Die Integritätseben ist „System“.|
+
+# <a name="registryhive-enum-type"></a>RegistryHive Enumerationstyp
+
+Enumeration für Registrierungs-Hives gemäß [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).
+
+## <a name="members"></a>Elemente
+
+|Element|Wert|Beschreibung|
+|:---|:---|:---|
+|unknown|0|Unbekannter Hive.|
+|currentConfig|1|HKEY_CURRENT_CONFIG-Hive.|
+|currentUser|2| HKEY_CURRENT_USER-Hive.|
+|localMachineSam|3| HKEY_LOCAL_MACHINE\SAM-Hive.|
+|localMachineSamSoftware|4| HKEY_LOCAL_MACHINE\Software-Hive.|
+|localMachineSystem|5| HKEY_LOCAL_MACHINE\System-Hive.|
+|usersDefault|6| HKEY_USERS\\.Default-Hive.|
+
+# <a name="registryoperation-enum-type"></a>RegistryOperation Enumerationstyp
+
+Der Vorgang, der den Namen des Registrierungsschlüssels und/oder den Wert geändert hat.
+
+## <a name="members"></a>Elemente
+
+|Element|Wert|Beschreibung|
+|:---|:---|:---|
+|unknown|0|Unbekannter Werttyp der Registrierung.|
+|Erstellen|1|Registrierung erstellen.|
+|modify|2|Registrierung ändern.|
+|Löschen|3|Registrierung löschen.|
+
+# <a name="registryvaluetype-enum-type"></a>registryValueType Enumerationstyp
+
+Enumeration für Wertetypen der Registrierung gemäß [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types).
+
+## <a name="members"></a>Elemente
+
+|Element|Wert|Beschreibung|
+|:---|:---|:---|
+|unknown|0|Unbekannter Werttyp der Registrierung.|
+|binary|1|REG_BINARY-Werttyp der Registrierung.|
+|DWORD|2| REG_DWORD-Werttyp der Registrierung.|
+|dwordLittleEndian|3| REG_DWORD_LITTLE_ENDIAN-Werttyp der Registrierung.|
+|dwordBigEndian|4| REG_DWORD_BIG_ENDIAN-Werttyp der Registrierung.|
+|expandSz|5| REG_EXPAND_SZ-Werttyp der Registrierung.|
+|Link|6| REG_LINK-Werttyp der Registrierung.|
+|multiSz|7| REG_MULTI_SZ-Werttyp der Registrierung.|
+|none|8| REG_NONE-Werttyp der Registrierung.|
+|qword|9| REG_QWORD-Werttyp der Registrierung.|
+|qwordlittleEndian|10| REG_QWORD_LITTLE_ENDIAN-Werttyp der Registrierung.|
+|sz|11| REG_SZ-Werttyp der Registrierung.|
+
+# <a name="alertseverity-enum-type"></a>AlertSeverity-Enumerationstyp
+
+Enumeration für den Schweregrad von Warnungen.
+
+## <a name="members"></a>Elemente
+
+|Element|Wert|Beschreibung|
+|:---|:---|:---|
+|unknown|0|Der Schweregrad ist unbekannt.|
+|informativ|1|Der Schweregrad dient nur zu Informationszwecken.|
+|low|2| Der Schweregrad ist niedrig.|
+|medium|3| Der Schweregrad ist mittel.|
+|high|4| Der Schweregrad ist hoch.|
+
+# <a name="alertstatus-enum-type"></a>AlertStatus Enumerationstyp
+
+Mögliche Werte eines Warnungs-Lebenszyklusstatus (Phase).
+
+## <a name="members"></a>Elemente
+
+|Element|Wert|Beschreibung|
+|:---|:---|:---|
+|unknown|0|Unbekannter Status.|
+|newAlert|10| Die Warnung ist neu.|
+|inProgress|20|Die Warnung ist in Arbeit.|
+|Gelöst|30|Die Warnung ist aufgelöst.|
+
+# <a name="emailrole-enum-type"></a>EmailRole Enumerationstyp
+
+Mögliche Werte für E-Mail-Rollen.
+
+## <a name="members"></a>Elemente
+
+|Element|Wert|Beschreibung|
+|:---|:---|:---|
+|unknown|0|Unbekannte Rolle.|
+|sender|1|Der Absender der E-Mail.|
+|Empfänger|2|Der Empfänger der E-Mail.|
+
+# <a name="logontype-enum-type"></a>LogonType Enumerationstyp
+
+Mögliche Werte für die Methode der Benutzeranmeldung.
+
+## <a name="members"></a>Elemente
+
+|Element|Wert|Beschreibung|
+|:---|:---|:---|
+|unknown|-1|Unbekannt.|
+|interaktiv|0|Die Anmeldung ist interaktiv.|
+|remoteInteractive|1| Die Anmeldung ist Remote-Interaktiv.|
+|network|2| Die Anmeldung ist Netzwerk.|
+|batch|3| Die Anmeldung ist Batch.|
+|service|4| Die Anmeldung ist der Dienst.|
+
+# <a name="useraccountsecuritytype-enum-type"></a>UserAccountSecurityType Enumerationstyp
+
+Mögliche Werte für Benutzerkontentypen (Gruppen-Mitgliedschaft), je nach Windows-Definition.
+
+## <a name="members"></a>Elemente
+
+|Element|Wert|Beschreibung|
+|:---|:---|:---|
+|unknown|-1|Unbekannt.|
+|standard|0|Mitglied der Gruppe der Standard-Benutzer.|
+|power|1| Mitglied der Gruppe Poweruser.|
+|administrator|2| Mitglied der Gruppe "Administratoren".|

@@ -19,19 +19,18 @@ PATCH /education/classes/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Erforderlich.  |
-| Content-Type  | application/json  |
+| Autorisierung  | Bearer {token}. Erforderlich.  |
+| Inhaltstyp  | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Geben Sie aus Gründen der Leistung vorhandene Werte, die nicht geändert wurden, nicht an.
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|description|String| Beschreibung der Klasse|
-|displayName|String| Der Name der Klasse|
-|mailNickname|String| E-Mail-Alias zum Senden von E-Mails an alle Benutzer, wenn diese Funktion aktiviert ist. |
-<!-- Please verify the revised description here. -->
-|classCode|String| Von der Schule verwendeter Klassencode. | |externalId|String| Die ID der Klasse aus dem Synchronisierungssystem. | |externalName|String| Name der Klasse im Synchronisierungssystem.| |externalSource|String| Wie diese Klasse erstellt wurde. Mögliche Werte: `sis`, `manual`, `enum_sentinel`.|
+|Beschreibung|Zeichenfolge| Beschreibung der Klasse|
+|displayName|Zeichenfolge| Der Name der Klasse|
+|mailNickname|Zeichenfolge| E-Mail-Alias zum Senden von E-Mails an alle Benutzer, wenn diese Funktion aktiviert ist. |
+<!-- Please verify the revised description here. --> |classCode|String| Von der Schule verwendeter Klassencode. | |externalId|String| Die ID der Klasse aus dem Synchronisierungssystem. | |externalName|String| Name der Klasse im Synchronisierungssystem.| |externalSource|String| Wie diese Klasse erstellt wurde. Die möglichen Werte sind: `sis`, `manual`, `enum_sentinel`.
 
 ## <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein aktualisiertes [educationClass](../resources/educationclass.md)-Objekt im Antworttext zurückgegeben.
@@ -43,7 +42,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "update_educationclass"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/classes/11014
+PATCH https://graph.microsoft.com/v1.0/education/classes/{class-id}
 Content-type: application/json
 Content-length: 224
 

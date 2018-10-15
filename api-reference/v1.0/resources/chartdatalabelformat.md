@@ -10,10 +10,30 @@ Keine
 Keine
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|fill|[ChartFill](chartfill.md)|Stellt die Füllung der aktuellen Diagrammdatenbeschriftung dar. Schreibgeschützt.|
-|font|[ChartFont](chartfont.md)|Stellt die Zeichenformatierung (Schriftart, Schriftgrad, Farbe usw.) für eine Diagrammdatenbeschriftung dar. Schreibgeschützt.|
+|fill|[WorkbookChartFill](chartfill.md)|Stellt die Füllung der aktuellen Diagrammdatenbeschriftung dar. Schreibgeschützt.|
+|Schriftart|[WorkbookChartFont](chartfont.md)|Stellt die Zeichenformatierung (Schriftart, Schriftgrad, Farbe usw.) für eine Diagrammdatenbeschriftung dar. Schreibgeschützt.|
+
+
+## <a name="json-representation"></a>JSON-Darstellung
+
+Es folgt eine JSON-Darstellung der Ressource.
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartDataLabelFormat"
+}-->
+
+```json
+{
+  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"},
+  "font": {"@odata.type": "microsoft.graph.workbookChartFont"}
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

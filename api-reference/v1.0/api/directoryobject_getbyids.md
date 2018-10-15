@@ -23,15 +23,15 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /directoryObjects/getById
+POST /directoryObjects/getByIds
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
 
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type  | application/json  |
+| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Inhaltstyp  | Zeichenfolge | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -39,8 +39,8 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter   | Typ |Beschreibung|
 |:---------------|:--------|:----------|
-|ids|String collection| Eine Sammlung von IDs, für die Objekte zurückgegeben werden sollen. Sie können bis zu 1000 IDs angeben. |
-|types|String collection| Eine Sammlung von Ressourcentypen, die den Satz von zu durchsuchenden Ressourcensammlungen angibt. Wenn keine Angabe erfolgt, wird [directoryObject](../resources/directoryobject.md) als Standardwert verwendet; dieser enthält alle im Verzeichnis definierten Ressourcentypen. Jedes Objekt, das von `directoryObject` abgeleitet wird, kann in der Sammlung angegeben werden; Beispiel: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md) usw. Bei den Werten wird nicht zwischen Groß- und Kleinschreibung unterschieden.|
+|ids|Zeichenfolgen-Sammlung| Eine Sammlung von IDs, für die Objekte zurückgegeben werden sollen. Sie können bis zu 1000 IDs angeben. |
+|types|Zeichenfolgen-Sammlung| Eine Sammlung von Ressourcentypen, die den Satz der zu durchsuchenden Ressourcensammlungen festlegt. Wenn nichts angegeben wird, ist die Standardeinstellung [DirectoryObject](../resources/directoryobject.md), die alle im Directory definierten Ressourcentypen enthält. Jedes Objekt, das von `directoryObject` ableitet, kann in der Sammlung angegeben werden; Zum Beispiel: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md), und so weiter. Bei den Werten wird nicht zwischen Groß-/Kleinschreibung unterschieden.|
 
 ## <a name="response"></a>Antwort
 
@@ -60,7 +60,7 @@ POST https://graph.microsoft.com/v1.0/directoryObjects/getByIds
 Content-type: application/json
 
 {
-    "ids":["84b80893-8749-40a3-97b7-68513b600544","5d6059b6-368d-45f8-91e1-8e07d485f1d0"],
+    "ids":["84b80893874940a3-97b7-68513b600544","5d6059b6368d-45f8-91e18e07d485f1d0"],
     "types":["user"]
 }
 ```
