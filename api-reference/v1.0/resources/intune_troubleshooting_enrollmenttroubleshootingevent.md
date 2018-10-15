@@ -1,7 +1,5 @@
 # <a name="enrollmenttroubleshootingevent-resource-type"></a>enrollmentTroubleshootingEvent-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
-
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
 Ereignis, das einen Fehler bei der Registrierung darstellt.
@@ -28,8 +26,8 @@ Erbt von [deviceManagementTroubleshootingEvent](../resources/intune_troubleshoot
 |osVersion|Zeichenfolge|Betriebssystemversion|
 |userId|Zeichenfolge|Bezeichner für den Benutzer, der versucht hat, das Gerät zu registrieren.|
 |deviceId|Zeichenfolge|Azure AD-Gerätebezeichner|
-|enrollmentType|[deviceEnrollmentType](../resources/intune_shared_deviceenrollmenttype.md)|Typ der Registrierung. Die möglichen Werte sind: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
-|failureCategory|[deviceEnrollmentFailureReason](../resources/intune_troubleshooting_deviceenrollmentfailurereason.md)|Allgemeine Fehlerkategorie. Die möglichen Werte sind: `unknown`, `authentication`, `authorization`, `accountValidation`, `userValidation`, `deviceNotSupported`, `inMaintenance`, `badRequest`, `featureNotSupported`, `enrollmentRestrictionsEnforced`, `clientDisconnected`.|
+|enrollmentType|[deviceEnrollmentType](../resources/intune_shared_deviceenrollmenttype.md)|Typ der Registrierung. Mögliche Werte: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
+|failureCategory|[deviceEnrollmentFailureReason](../resources/intune_troubleshooting_deviceenrollmentfailurereason.md)|Allgemeine Fehlerkategorie. Mögliche Werte sind: `unknown`, `authentication`, `authorization`, `accountValidation`, `userValidation`, `deviceNotSupported`, `inMaintenance`, `badRequest`, `featureNotSupported`, `enrollmentRestrictionsEnforced`, `clientDisconnected` und `userAbandonment`.|
 |failureReason|Zeichenfolge|Detaillierte Fehlerursache|
 
 ## <a name="relationships"></a>Beziehungen
@@ -38,8 +36,8 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceManagementTroubleshootingEvent",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.enrollmentTroubleshootingEvent"
 }-->
 ``` json
@@ -58,6 +56,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "failureReason": "String"
 }
 ```
+
 
 
 
