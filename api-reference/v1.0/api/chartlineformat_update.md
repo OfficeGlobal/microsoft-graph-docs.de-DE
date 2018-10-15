@@ -1,47 +1,47 @@
-# <a name="update-chartlineformat"></a><span data-ttu-id="421a7-101">ChartLineFormat aktualisieren</span><span class="sxs-lookup"><span data-stu-id="421a7-101">Update chartlineformat</span></span>
+# <a name="update-chartlineformat"></a><span data-ttu-id="96434-101">ChartLineFormat aktualisieren</span><span class="sxs-lookup"><span data-stu-id="96434-101">Update chartlineformat</span></span>
 
-<span data-ttu-id="421a7-102">Dient zum Aktualisieren der Eigenschaften des ChartLineFormat-Objekts.</span><span class="sxs-lookup"><span data-stu-id="421a7-102">Update the properties of chartlineformat object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="421a7-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="421a7-103">Permissions</span></span>
-<span data-ttu-id="421a7-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="421a7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="96434-102">Dient zum Aktualisieren der Eigenschaften des ChartLineFormat-Objekts.</span><span class="sxs-lookup"><span data-stu-id="96434-102">Update the properties of chartlineformat object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="96434-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="96434-103">Permissions</span></span>
+<span data-ttu-id="96434-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="96434-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="421a7-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="421a7-106">Permission type</span></span>      | <span data-ttu-id="421a7-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="421a7-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="96434-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="96434-106">Permission type</span></span>      | <span data-ttu-id="96434-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="96434-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="421a7-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="421a7-108">Delegated (work or school account)</span></span> | <span data-ttu-id="421a7-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="421a7-109">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="421a7-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="421a7-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="421a7-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="421a7-111">Not supported.</span></span>    |
-|<span data-ttu-id="421a7-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="421a7-112">Application</span></span> | <span data-ttu-id="421a7-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="421a7-113">Not supported.</span></span> |
+|<span data-ttu-id="96434-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="96434-108">Delegated (work or school account)</span></span> | <span data-ttu-id="96434-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="96434-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="96434-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="96434-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="96434-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="96434-111">Not supported.</span></span>    |
+|<span data-ttu-id="96434-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="96434-112">Application</span></span> | <span data-ttu-id="96434-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="96434-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="421a7-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="421a7-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="96434-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="96434-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/line
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines/format/line
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/line
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorgridlines/format/line
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="421a7-115">Optionale Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="421a7-115">Optional request headers</span></span>
-| <span data-ttu-id="421a7-116">Name</span><span class="sxs-lookup"><span data-stu-id="421a7-116">Name</span></span>       | <span data-ttu-id="421a7-117">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="421a7-117">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="96434-115">Optionale Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="96434-115">Optional request headers</span></span>
+| <span data-ttu-id="96434-116">Name</span><span class="sxs-lookup"><span data-stu-id="96434-116">Name</span></span>       | <span data-ttu-id="96434-117">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="96434-117">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="421a7-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="421a7-118">Authorization</span></span>  | <span data-ttu-id="421a7-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="421a7-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="421a7-121">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="421a7-121">Workbook-Session-Id</span></span>  | <span data-ttu-id="421a7-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="421a7-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="96434-118">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="96434-118">Authorization</span></span>  | <span data-ttu-id="96434-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="96434-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="96434-121">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="96434-121">Workbook-Session-Id</span></span>  | <span data-ttu-id="96434-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="96434-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="421a7-124">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="421a7-124">Request body</span></span>
-<span data-ttu-id="421a7-p104">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.</span><span class="sxs-lookup"><span data-stu-id="421a7-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="96434-124">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="96434-124">Request body</span></span>
+<span data-ttu-id="96434-p104">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.</span><span class="sxs-lookup"><span data-stu-id="96434-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="421a7-128">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="421a7-128">Property</span></span>     | <span data-ttu-id="421a7-129">Typ</span><span class="sxs-lookup"><span data-stu-id="421a7-129">Type</span></span>   |<span data-ttu-id="421a7-130">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="421a7-130">Description</span></span>|
+| <span data-ttu-id="96434-128">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="96434-128">Property</span></span>     | <span data-ttu-id="96434-129">Typ</span><span class="sxs-lookup"><span data-stu-id="96434-129">Type</span></span>   |<span data-ttu-id="96434-130">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="96434-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="421a7-131">color</span><span class="sxs-lookup"><span data-stu-id="421a7-131">color</span></span>|<span data-ttu-id="421a7-132">string</span><span class="sxs-lookup"><span data-stu-id="421a7-132">string</span></span>|<span data-ttu-id="421a7-133">HTML-Farbcode, der die Farbe der Linien im Diagramm darstellt.</span><span class="sxs-lookup"><span data-stu-id="421a7-133">HTML color code representing the color of lines in the chart.</span></span>|
+|<span data-ttu-id="96434-131">color</span><span class="sxs-lookup"><span data-stu-id="96434-131">color</span></span>|<span data-ttu-id="96434-132">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="96434-132">string</span></span>|<span data-ttu-id="96434-133">HTML-Farbcode, der die Farbe der Linien im Diagramm darstellt.</span><span class="sxs-lookup"><span data-stu-id="96434-133">HTML color code representing the color of lines in the chart.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="421a7-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="421a7-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="96434-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="96434-134">Response</span></span>
 
-<span data-ttu-id="421a7-135">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [ChartLineFormat](../resources/chartlineformat.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="421a7-135">If successful, this method returns a `200 OK` response code and updated [ChartLineFormat](../resources/chartlineformat.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="421a7-136">Beispiel</span><span class="sxs-lookup"><span data-stu-id="421a7-136">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="421a7-137">Anforderung</span><span class="sxs-lookup"><span data-stu-id="421a7-137">Request</span></span>
-<span data-ttu-id="421a7-138">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="421a7-138">Here is an example of the request.</span></span>
+<span data-ttu-id="96434-135">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein aktualisiertes [WorkbookChartLineFormat](../resources/chartlineformat.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="96434-135">If successful, this method returns a `200 OK` response code and updated [plannerAssignedToTaskBoardTaskFormat](../resources/chartlineformat.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="96434-136">Beispiel</span><span class="sxs-lookup"><span data-stu-id="96434-136">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="96434-137">Anforderung</span><span class="sxs-lookup"><span data-stu-id="96434-137">Request</span></span>
+<span data-ttu-id="96434-138">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="96434-138">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_chartlineformat"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line
 Content-type: application/json
 Content-length: 28
 
@@ -49,12 +49,12 @@ Content-length: 28
   "color": "color-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="421a7-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="421a7-139">Response</span></span>
-<span data-ttu-id="421a7-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="421a7-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="96434-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="96434-139">Response</span></span>
+<span data-ttu-id="96434-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="96434-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartLineFormat"
+  "@odata.type": "microsoft.graph.workbookChartLineFormat"
 } -->
 ```http
 HTTP/1.1 200 OK

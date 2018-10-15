@@ -1,55 +1,55 @@
-# <a name="chart-resource-type"></a>Chart-Ressourcentyp
+# <a name="chart-resource-type"></a><span data-ttu-id="51f86-101">Chart-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="51f86-101">Chart resource type</span></span>
 
-Steht für ein Diagrammobjekt in einer Arbeitsmappe.
+<span data-ttu-id="51f86-102">Steht für ein Diagrammobjekt in einer Arbeitsmappe.</span><span class="sxs-lookup"><span data-stu-id="51f86-102">Represents a chart object in a workbook.</span></span>
 
 
-## <a name="methods"></a>Methoden
+## <a name="methods"></a><span data-ttu-id="51f86-103">Methoden</span><span class="sxs-lookup"><span data-stu-id="51f86-103">Methods</span></span>
 
-| Methode           | Rückgabetyp    |Beschreibung|
+| <span data-ttu-id="51f86-104">Methode</span><span class="sxs-lookup"><span data-stu-id="51f86-104">Method</span></span>           | <span data-ttu-id="51f86-105">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="51f86-105">Return Type</span></span>    |<span data-ttu-id="51f86-106">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="51f86-106">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Chart abrufen](../api/chart_get.md) | [Chart](chart.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chart-Objekts.|
-|[ChartSeries erstellen](../api/chart_post_series.md) |[ChartSeries](chartseries.md)| Dient zum Erstellen einer neuen ChartSeries durch Veröffentlichen in der Datenreihensammlung.|
-|[Reihe auflisten](../api/chart_list_series.md) |[ChartSeries-Sammlung](chartseries.md)| Dient zum Abrufen einer ChartSeries-Objektsammlung.|
-|[Update](../api/chart_update.md) | [Chart](chart.md)    |Dient zum Aktualisieren des Chart-Objekts. |
-|[Image](../api/chart_image.md)|Abbildung der base64-codierten Zeichenfolge|Rendert das Diagramm als base64-codiertes Bild durch Skalierung, um es an die angegebenen Maße anzupassen.|
-|[Löschen](../api/chart_delete.md)|Keine|Löscht das Diagrammobjekt.|
-|[Setdata](../api/chart_setdata.md)|Keine|Setzt die Quelldaten für das Diagramm zurück.|
-|[Setposition](../api/chart_setposition.md)|Keine|Positioniert das Diagramm im Verhältnis zu den Zellen im Arbeitsblatt.|
-|[List](../api/chart_list.md) | [Diagrammsammlung](chart.md) |Dient zum Abrufen der Diagrammobjeksammlung. |
-|[Itemat](../api/chartcollection_itemat.md)|[Chart](chart.md)|Ruft ein Diagramm anhand seiner Position in der Sammlung ab.|
-|[Add](../api/chartcollection_add.md)|[Chart](chart.md)|Erstellt ein neues Diagramm.|
+|[<span data-ttu-id="51f86-107">Chart abrufen</span><span class="sxs-lookup"><span data-stu-id="51f86-107">Get Chart</span></span>](../api/chart_get.md) | [<span data-ttu-id="51f86-108">WorkbookChart</span><span class="sxs-lookup"><span data-stu-id="51f86-108">WorkbookChart</span></span>](chart.md) |<span data-ttu-id="51f86-109">Dient zum Lesen der Eigenschaften und der Beziehungen des Chart-Objekts.</span><span class="sxs-lookup"><span data-stu-id="51f86-109">Read properties and relationships of chart object.</span></span>|
+|[<span data-ttu-id="51f86-110">ChartSeries erstellen</span><span class="sxs-lookup"><span data-stu-id="51f86-110">Create ChartSeries</span></span>](../api/chart_post_series.md) |[<span data-ttu-id="51f86-111">WorkbookChartSeries</span><span class="sxs-lookup"><span data-stu-id="51f86-111">WorkbookChartSeries</span></span>](chartseries.md)| <span data-ttu-id="51f86-112">Dient zum Erstellen einer neuen ChartSeries durch Veröffentlichen in der Datenreihensammlung.</span><span class="sxs-lookup"><span data-stu-id="51f86-112">Create a new ChartSeries by posting to the series collection.</span></span>|
+|[<span data-ttu-id="51f86-113">Reihe auflisten</span><span class="sxs-lookup"><span data-stu-id="51f86-113">List series</span></span>](../api/chart_list_series.md) |<span data-ttu-id="51f86-114">[WorkbookChartSeries](chartseries.md)-Sammlung</span><span class="sxs-lookup"><span data-stu-id="51f86-114">[WorkbookChartSeries](chartseries.md) collection</span></span>| <span data-ttu-id="51f86-115">Dient zum Abrufen einer ChartSeries-Objektsammlung.</span><span class="sxs-lookup"><span data-stu-id="51f86-115">Get a ChartSeries object collection.</span></span>|
+|[<span data-ttu-id="51f86-116">Aktualisieren</span><span class="sxs-lookup"><span data-stu-id="51f86-116">Update</span></span>](../api/chart_update.md) | [<span data-ttu-id="51f86-117">WorkbookChart</span><span class="sxs-lookup"><span data-stu-id="51f86-117">WorkbookChart</span></span>](chart.md)   |<span data-ttu-id="51f86-118">Dient zum Aktualisieren des Chart-Objekts.</span><span class="sxs-lookup"><span data-stu-id="51f86-118">Update Chart object.</span></span> |
+|[<span data-ttu-id="51f86-119">Abbild</span><span class="sxs-lookup"><span data-stu-id="51f86-119">Image</span></span>](../api/chart_image.md)|<span data-ttu-id="51f86-120">Abbildung der base64-codierten Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="51f86-120">Image base64 encoded string</span></span>|<span data-ttu-id="51f86-121">Rendert das Diagramm als base64-codiertes Bild durch Skalierung, um es an die angegebenen Maße anzupassen.</span><span class="sxs-lookup"><span data-stu-id="51f86-121">Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.</span></span>|
+|[<span data-ttu-id="51f86-122">Löschen</span><span class="sxs-lookup"><span data-stu-id="51f86-122">Delete</span></span>](../api/chart_delete.md)|<span data-ttu-id="51f86-123">Keine</span><span class="sxs-lookup"><span data-stu-id="51f86-123">None</span></span>|<span data-ttu-id="51f86-124">Löscht das Diagrammobjekt.</span><span class="sxs-lookup"><span data-stu-id="51f86-124">Deletes the chart object.</span></span>|
+|[<span data-ttu-id="51f86-125">Setdata</span><span class="sxs-lookup"><span data-stu-id="51f86-125">Setdata</span></span>](../api/chart_setdata.md)|<span data-ttu-id="51f86-126">Keine</span><span class="sxs-lookup"><span data-stu-id="51f86-126">None</span></span>|<span data-ttu-id="51f86-127">Setzt die Quelldaten für das Diagramm zurück.</span><span class="sxs-lookup"><span data-stu-id="51f86-127">Resets the source data for the chart.</span></span>|
+|[<span data-ttu-id="51f86-128">Setposition</span><span class="sxs-lookup"><span data-stu-id="51f86-128">Setposition</span></span>](../api/chart_setposition.md)|<span data-ttu-id="51f86-129">Keine</span><span class="sxs-lookup"><span data-stu-id="51f86-129">None</span></span>|<span data-ttu-id="51f86-130">Positioniert das Diagramm im Verhältnis zu den Zellen im Arbeitsblatt.</span><span class="sxs-lookup"><span data-stu-id="51f86-130">Positions the chart relative to cells on the worksheet.</span></span>|
+|[<span data-ttu-id="51f86-131">Liste</span><span class="sxs-lookup"><span data-stu-id="51f86-131">List</span></span>](../api/chart_list.md) | <span data-ttu-id="51f86-132">[WorkbookChart](chart.md) -Sammlung</span><span class="sxs-lookup"><span data-stu-id="51f86-132">[WorkbookChart](chart.md) collection</span></span> |<span data-ttu-id="51f86-133">Dient zum Abrufen der Diagrammobjeksammlung.</span><span class="sxs-lookup"><span data-stu-id="51f86-133">Get chart object collection.</span></span> |
+|[<span data-ttu-id="51f86-134">Itemat</span><span class="sxs-lookup"><span data-stu-id="51f86-134">Itemat</span></span>](../api/chartcollection_itemat.md)|[<span data-ttu-id="51f86-135">WorkbookChart</span><span class="sxs-lookup"><span data-stu-id="51f86-135">WorkbookChart</span></span>](chart.md)|<span data-ttu-id="51f86-136">Ruft ein Diagramm anhand seiner Position in der Sammlung ab.</span><span class="sxs-lookup"><span data-stu-id="51f86-136">Gets a chart based on its position in the collection.</span></span>|
+|[<span data-ttu-id="51f86-137">Hinzufügen</span><span class="sxs-lookup"><span data-stu-id="51f86-137">Add</span></span>](../api/chartcollection_add.md)|[<span data-ttu-id="51f86-138">WorkbookChart</span><span class="sxs-lookup"><span data-stu-id="51f86-138">WorkbookChart</span></span>](chart.md)|<span data-ttu-id="51f86-139">Erstellt ein neues Diagramm.</span><span class="sxs-lookup"><span data-stu-id="51f86-139">Creates a new chart.</span></span>|
 
-## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+## <a name="properties"></a><span data-ttu-id="51f86-140">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="51f86-140">Properties</span></span>
+| <span data-ttu-id="51f86-141">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="51f86-141">Property</span></span>     | <span data-ttu-id="51f86-142">Typ</span><span class="sxs-lookup"><span data-stu-id="51f86-142">Type</span></span>   |<span data-ttu-id="51f86-143">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="51f86-143">Description</span></span>|
 |:---------------|:--------|:----------|
-|height|double|Die Höhe des Diagrammobjekts (in Punkten).|
-|id|string|Ruft ein Diagramm anhand seiner Position in der Sammlung ab. Schreibgeschützt.|
-|left|double|Der Abstand von der linken Seite des Diagramms zu dem Ursprung des Arbeitsblatts (in Punkten).|
-|name|string|Gibt den Namen eines Diagrammobjekts an.|
-|top|double|Der Abstand (in Punkten) von dem oberen Rand des Objekts zum oberen Rand von Zeile 1 (auf einem Arbeitsblatt) oder zum oberen Diagrammbereich (in einem Diagramm).|
-|width|double|Die Breite des Diagrammobjekts (in Punkten).|
+|<span data-ttu-id="51f86-144">Höhe</span><span class="sxs-lookup"><span data-stu-id="51f86-144">height</span></span>|<span data-ttu-id="51f86-145">double</span><span class="sxs-lookup"><span data-stu-id="51f86-145">double</span></span>|<span data-ttu-id="51f86-146">Die Höhe des Diagrammobjekts (in Punkten).</span><span class="sxs-lookup"><span data-stu-id="51f86-146">Represents the height, in points, of the chart object.</span></span>|
+|<span data-ttu-id="51f86-147">ID</span><span class="sxs-lookup"><span data-stu-id="51f86-147">id</span></span>|<span data-ttu-id="51f86-148">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="51f86-148">string</span></span>|<span data-ttu-id="51f86-p101">Ruft ein Diagramm anhand seiner Position in der Sammlung ab. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="51f86-p101">Gets a chart based on its position in the collection. Read-only.</span></span>|
+|<span data-ttu-id="51f86-151">links</span><span class="sxs-lookup"><span data-stu-id="51f86-151">left</span></span>|<span data-ttu-id="51f86-152">double</span><span class="sxs-lookup"><span data-stu-id="51f86-152">double</span></span>|<span data-ttu-id="51f86-153">Der Abstand von der linken Seite des Diagramms zu dem Ursprung des Arbeitsblatts (in Punkten).</span><span class="sxs-lookup"><span data-stu-id="51f86-153">The distance, in points, from the left side of the chart to the worksheet origin.</span></span>|
+|<span data-ttu-id="51f86-154">Name</span><span class="sxs-lookup"><span data-stu-id="51f86-154">name</span></span>|<span data-ttu-id="51f86-155">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="51f86-155">string</span></span>|<span data-ttu-id="51f86-156">Gibt den Namen eines Diagrammobjekts an.</span><span class="sxs-lookup"><span data-stu-id="51f86-156">Represents the name of a chart object.</span></span>|
+|<span data-ttu-id="51f86-157">oben</span><span class="sxs-lookup"><span data-stu-id="51f86-157">top</span></span>|<span data-ttu-id="51f86-158">double</span><span class="sxs-lookup"><span data-stu-id="51f86-158">double</span></span>|<span data-ttu-id="51f86-159">Der Abstand (in Punkten) von dem oberen Rand des Objekts zum oberen Rand von Zeile 1 (auf einem Arbeitsblatt) oder zum oberen Diagrammbereich (in einem Diagramm).</span><span class="sxs-lookup"><span data-stu-id="51f86-159">Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).</span></span>|
+|<span data-ttu-id="51f86-160">Breite</span><span class="sxs-lookup"><span data-stu-id="51f86-160">width</span></span>|<span data-ttu-id="51f86-161">double</span><span class="sxs-lookup"><span data-stu-id="51f86-161">double</span></span>|<span data-ttu-id="51f86-162">Die Breite des Diagrammobjekts (in Punkten).</span><span class="sxs-lookup"><span data-stu-id="51f86-162">Represents the width, in points, of the chart object.</span></span>|
 
-## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+## <a name="relationships"></a><span data-ttu-id="51f86-163">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="51f86-163">Relationships</span></span>
+| <span data-ttu-id="51f86-164">Beziehung</span><span class="sxs-lookup"><span data-stu-id="51f86-164">Relationship</span></span> | <span data-ttu-id="51f86-165">Typ</span><span class="sxs-lookup"><span data-stu-id="51f86-165">Type</span></span>   |<span data-ttu-id="51f86-166">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="51f86-166">Description</span></span>|
 |:---------------|:--------|:----------|
-|Achsen|[ChartAxes](chartaxes.md)|Die Achsen des Diagramms. Schreibgeschützt.|
-|dataLabels|[ChartDataLabels](chartdatalabels.md)|Stellt die Datenbeschriftungen im Diagramm dar. Schreibgeschützt.|
-|Format|[ChartAreaFormat](chartareaformat.md)|Kapselt die Formateigenschaften für den Diagrammbereich. Schreibgeschützt.|
-|Legende|[ChartLegend](chartlegend.md)|Die Legende für das Diagramm. Schreibgeschützt.|
-|Datenreihe|[ChartSeries-Sammlung](chartseries.md)|Eine einzelne Datenreihe oder eine Sammlung von Datenreihen im Diagramm. Schreibgeschützt.|
-|title|[ChartTitle](charttitle.md)|Der Titel des angegebenen Diagramms, einschließlich Text, Sichtbarkeit, Position und Formatierung des Titels. Schreibgeschützt.|
-|Arbeitsblatt|[Worksheet](worksheet.md)|Das Arbeitsblatt, das das aktuelle Diagramm enthält. Schreibgeschützt.|
+|<span data-ttu-id="51f86-167">Achsen</span><span class="sxs-lookup"><span data-stu-id="51f86-167">axes</span></span>|[<span data-ttu-id="51f86-168">WorkbookChartAxes</span><span class="sxs-lookup"><span data-stu-id="51f86-168">WorkbookChartAxes</span></span>](chartaxes.md)|<span data-ttu-id="51f86-p102">Die Achsen des Diagramms. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="51f86-p102">Represents chart axes. Read-only.</span></span>|
+|<span data-ttu-id="51f86-171">dataLabels</span><span class="sxs-lookup"><span data-stu-id="51f86-171">dataLabels</span></span>|[<span data-ttu-id="51f86-172">WorkbookChartDataLabels</span><span class="sxs-lookup"><span data-stu-id="51f86-172">WorkbookChartDataLabels</span></span>](chartdatalabels.md)|<span data-ttu-id="51f86-p103">Stellt die Datenbeschriftungen im Diagramm dar. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="51f86-p103">Represents the datalabels on the chart. Read-only.</span></span>|
+|<span data-ttu-id="51f86-175">Format</span><span class="sxs-lookup"><span data-stu-id="51f86-175">format</span></span>|[<span data-ttu-id="51f86-176">WorkbookChartAreaFormat</span><span class="sxs-lookup"><span data-stu-id="51f86-176">WorkbookChartAreaFormat</span></span>](chartareaformat.md)|<span data-ttu-id="51f86-p104">Kapselt die Formateigenschaften für den Diagrammbereich. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="51f86-p104">Encapsulates the format properties for the chart area. Read-only.</span></span>|
+|<span data-ttu-id="51f86-179">legend</span><span class="sxs-lookup"><span data-stu-id="51f86-179">legend</span></span>|[<span data-ttu-id="51f86-180">WorkbookChartLegend</span><span class="sxs-lookup"><span data-stu-id="51f86-180">WorkbookChartLegend</span></span>](chartlegend.md)|<span data-ttu-id="51f86-p105">Die Legende für das Diagramm. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="51f86-p105">Represents the legend for the chart. Read-only.</span></span>|
+|<span data-ttu-id="51f86-183">series</span><span class="sxs-lookup"><span data-stu-id="51f86-183">series</span></span>|<span data-ttu-id="51f86-184">[WorkbookChartSeries](chartseries.md)-Sammlung</span><span class="sxs-lookup"><span data-stu-id="51f86-184">[WorkbookChartSeries](chartseries.md) collection</span></span>|<span data-ttu-id="51f86-p106">Eine einzelne Datenreihe oder eine Sammlung von Datenreihen im Diagramm. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="51f86-p106">Represents either a single series or collection of series in the chart. Read-only.</span></span>|
+|<span data-ttu-id="51f86-187">title</span><span class="sxs-lookup"><span data-stu-id="51f86-187">title</span></span>|[<span data-ttu-id="51f86-188">WorkbookChartTitle</span><span class="sxs-lookup"><span data-stu-id="51f86-188">WorkbookChartTitle</span></span>](charttitle.md)|<span data-ttu-id="51f86-p107">Der Titel des angegebenen Diagramms, einschließlich Text, Sichtbarkeit, Position und Formatierung des Titels. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="51f86-p107">Represents the title of the specified chart, including the text, visibility, position and formating of the title. Read-only.</span></span>|
+|<span data-ttu-id="51f86-191">Arbeitsblatt</span><span class="sxs-lookup"><span data-stu-id="51f86-191">worksheet</span></span>|[<span data-ttu-id="51f86-192">WorkbookWorksheet</span><span class="sxs-lookup"><span data-stu-id="51f86-192">WorkbookWorksheet</span></span>](worksheet.md)|<span data-ttu-id="51f86-p108">Das Arbeitsblatt, das das aktuelle Diagramm enthält. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="51f86-p108">The worksheet containing the current chart. Read-only.</span></span>|
 
-## <a name="json-representation"></a>JSON-Darstellung
+## <a name="json-representation"></a><span data-ttu-id="51f86-195">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="51f86-195">JSON representation</span></span>
 
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="51f86-196">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="51f86-196">Here is a JSON representation of the resource.</span></span>
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chart"
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChart"
 }-->
 
 ```json

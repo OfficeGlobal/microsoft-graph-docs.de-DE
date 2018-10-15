@@ -1,17 +1,17 @@
-# <a name="phone-resource-type"></a><span data-ttu-id="08334-101">phone-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="08334-101">phone resource type</span></span>
+# <a name="phone-resource-type"></a><span data-ttu-id="a0cde-101">phone-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="a0cde-101">phone resource type</span></span>
 
-<span data-ttu-id="08334-102">Gibt eine Telefonnummer an.</span><span class="sxs-lookup"><span data-stu-id="08334-102">Represents a phone number identified in an item.</span></span>
+<span data-ttu-id="a0cde-102">Gibt eine Telefonnummer an.</span><span class="sxs-lookup"><span data-stu-id="a0cde-102">Represents a phone number.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="08334-103">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="08334-103">Properties</span></span>
-| <span data-ttu-id="08334-104">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="08334-104">Property</span></span>     | <span data-ttu-id="08334-105">Typ</span><span class="sxs-lookup"><span data-stu-id="08334-105">Type</span></span>   |<span data-ttu-id="08334-106">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="08334-106">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a0cde-103">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="a0cde-103">Properties</span></span>
+| <span data-ttu-id="a0cde-104">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="a0cde-104">Property</span></span>     | <span data-ttu-id="a0cde-105">Typ</span><span class="sxs-lookup"><span data-stu-id="a0cde-105">Type</span></span>   |<span data-ttu-id="a0cde-106">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a0cde-106">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="08334-107">number</span><span class="sxs-lookup"><span data-stu-id="08334-107">number</span></span>|<span data-ttu-id="08334-108">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="08334-108">string</span></span>|<span data-ttu-id="08334-109">Die Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="08334-109">The contact's mobile phone number.</span></span>|
-|<span data-ttu-id="08334-110">type</span><span class="sxs-lookup"><span data-stu-id="08334-110">type</span></span>|<span data-ttu-id="08334-111">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="08334-111">String</span></span>|<span data-ttu-id="08334-p101">Der Typ der Telefonnummer. Mögliche Werte sind: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span><span class="sxs-lookup"><span data-stu-id="08334-p101">The type of phone number. Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span></span>|
+|<span data-ttu-id="a0cde-107">number</span><span class="sxs-lookup"><span data-stu-id="a0cde-107">number</span></span>|<span data-ttu-id="a0cde-108">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="a0cde-108">string</span></span>|<span data-ttu-id="a0cde-109">Die Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="a0cde-109">The phone number.</span></span>|
+|<span data-ttu-id="a0cde-110">type</span><span class="sxs-lookup"><span data-stu-id="a0cde-110">type</span></span>|<span data-ttu-id="a0cde-111">phoneType</span><span class="sxs-lookup"><span data-stu-id="a0cde-111">phoneType values</span></span>|<span data-ttu-id="a0cde-112">Der Typ der Telefonnummer.</span><span class="sxs-lookup"><span data-stu-id="a0cde-112">The type of phone number.</span></span> <span data-ttu-id="a0cde-113">Die möglichen Werte sind: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span><span class="sxs-lookup"><span data-stu-id="a0cde-113">The possible values are `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`, , or .</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="08334-114">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="08334-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a0cde-114">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="a0cde-114">JSON representation</span></span>
 
-<span data-ttu-id="08334-115">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="08334-115">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a0cde-115">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="a0cde-115">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

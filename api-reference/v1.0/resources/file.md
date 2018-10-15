@@ -3,22 +3,22 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Datei
-ms.openlocfilehash: fd1aa4628fb4f3ba58474028c46840e7c1e2d53c
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 2201533457863c3cac6b7a9463f80e37bd5a569a
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267465"
 ---
-# <a name="file-resource-type"></a><span data-ttu-id="e055c-102">File-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="e055c-102">File resource type</span></span>
+# <a name="file-resource-type"></a><span data-ttu-id="e0de1-102">File-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="e0de1-102">File resource type</span></span>
 
-<span data-ttu-id="e055c-103">Die **File**-Ressource gruppiert dateibezogene Datenelemente in einer einzelnen Struktur.</span><span class="sxs-lookup"><span data-stu-id="e055c-103">The **File** resource groups file-related data items into a single structure.</span></span>
+<span data-ttu-id="e0de1-103">Die **File**-Ressource gruppiert dateibezogene Datenelemente in einer einzelnen Struktur.</span><span class="sxs-lookup"><span data-stu-id="e0de1-103">The **File** resource groups file-related data items into a single structure.</span></span>
 
-<span data-ttu-id="e055c-104">Wenn ein [**DriveItem**](driveitem.md) ein **file**-Facet ungleich Null aufweist, stellt das Element eine Datei dar.</span><span class="sxs-lookup"><span data-stu-id="e055c-104">If a [**DriveItem**](driveitem.md) has a non-null **file** facet, the item represents an file.</span></span>
-<span data-ttu-id="e055c-105">Neben anderen Eigenschaften weisen Dateien eine **content**-Beziehung auf, die den Bytedatenstrom der Datei enthält.</span><span class="sxs-lookup"><span data-stu-id="e055c-105">If a DriveItem has a non-null file facet, the item represents an file. In addition to other properties, files have a **content** relationship which contains the byte stream of the file.</span></span>
+<span data-ttu-id="e0de1-p101">Wenn ein [**DriveItem**](driveitem.md) ein **file**-Facet ungleich Null aufweist, stellt das Element eine Datei dar. Neben anderen Eigenschaften weisen Dateien eine **content**-Beziehung auf, die den Bytedatenstrom der Datei enthält.</span><span class="sxs-lookup"><span data-stu-id="e0de1-p101">If a [**DriveItem**](driveitem.md) has a non-null **file** facet, the item represents an file. In addition to other properties, files have a **content** relationship which contains the byte stream of the file.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="e055c-106">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="e055c-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e0de1-106">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="e0de1-106">JSON representation</span></span>
 
-<span data-ttu-id="e055c-107">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="e055c-107">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="e0de1-107">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="e0de1-107">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -33,16 +33,16 @@ ms.lasthandoff: 09/28/2017
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="e055c-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="e055c-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="e0de1-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="e0de1-108">Properties</span></span>
 
-| <span data-ttu-id="e055c-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="e055c-109">Property</span></span> | <span data-ttu-id="e055c-110">Typ</span><span class="sxs-lookup"><span data-stu-id="e055c-110">Type</span></span>                    | <span data-ttu-id="e055c-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e055c-111">Description</span></span>                                                                                                                                      |
+| <span data-ttu-id="e0de1-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="e0de1-109">Property</span></span> | <span data-ttu-id="e0de1-110">Typ</span><span class="sxs-lookup"><span data-stu-id="e0de1-110">Type</span></span>                    | <span data-ttu-id="e0de1-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e0de1-111">Description</span></span>                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="e055c-112">hashes</span><span class="sxs-lookup"><span data-stu-id="e055c-112">hashes</span></span>   | [<span data-ttu-id="e055c-113">HashesType</span><span class="sxs-lookup"><span data-stu-id="e055c-113">HashesType</span></span>](hashes.md) | <span data-ttu-id="e055c-p102">Hashes des binären Inhalts der Datei, wenn verfügbar. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="e055c-p102">Hashes of the file's binary content, if available. Read-only.</span></span>                                                                                    |
-| <span data-ttu-id="e055c-116">mimeType</span><span class="sxs-lookup"><span data-stu-id="e055c-116">mimeType</span></span> | <span data-ttu-id="e055c-117">string</span><span class="sxs-lookup"><span data-stu-id="e055c-117">string</span></span>                  | <span data-ttu-id="e055c-p103">Der MIME-Typ für die Datei. Dieser wird von der Logik auf dem Server bestimmt und stimmt möglicherweise nicht mit dem Wert überein, der bereitgestellt wurde, als die Datei hochgeladen wurde. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="e055c-p103">The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only.</span></span> |
+| <span data-ttu-id="e0de1-112">hashes</span><span class="sxs-lookup"><span data-stu-id="e0de1-112">hashes</span></span>   | [<span data-ttu-id="e0de1-113">Hashes</span><span class="sxs-lookup"><span data-stu-id="e0de1-113">Hashes</span></span>](hashes.md) | <span data-ttu-id="e0de1-p102">Hashes des binären Inhalts der Datei, wenn verfügbar. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="e0de1-p102">Hashes of the file's binary content, if available. Read-only.</span></span>                                                                                    |
+| <span data-ttu-id="e0de1-116">mimeType</span><span class="sxs-lookup"><span data-stu-id="e0de1-116">mimeType</span></span> | <span data-ttu-id="e0de1-117">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="e0de1-117">string</span></span>                  | <span data-ttu-id="e0de1-p103">Der MIME-Typ für die Datei. Dieser wird von der Logik auf dem Server bestimmt und stimmt möglicherweise nicht mit dem Wert überein, der bereitgestellt wurde, als die Datei hochgeladen wurde. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="e0de1-p103">The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only.</span></span> |
 
-## <a name="remarks"></a><span data-ttu-id="e055c-121">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e055c-121">Remarks</span></span> 
+## <a name="remarks"></a><span data-ttu-id="e0de1-121">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e0de1-121">Remarks</span></span> 
 
-<span data-ttu-id="e055c-122">Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="e055c-122">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="e0de1-122">Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="e0de1-122">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
 <!-- {
   "type": "#page.annotation",
