@@ -8,6 +8,6 @@ Sie können mehrere Richtlinien mit unterschiedlichen allgemeinen Geschäftsbedi
 
 Die folgenden Graph-Ressourcen stehen zur Verfügung, um die allgemeinen Geschäftsbedingungen des Unternehmens in Intune zu verwalten:
 
+- [Geschäftsbedingungen](intune_companyterms_termsandconditions.md)
 - [Annahmestatus der Geschäftsbedingungen](intune_companyterms_termsandconditionsacceptancestatus.md)
 - [Zuweisung für Geschäftsbedingungen](intune_companyterms_termsandconditionsassignment.md)
-- [Geschäftsbedingungen](intune_companyterms_termsandconditions.md)
