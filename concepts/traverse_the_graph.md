@@ -34,7 +34,7 @@ GET https://graph.microsoft.com/v1.0/users HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-Wenn der Vorgang erfolgreich ist, erhalten Sie die Antwort 200 OK mit der Auflistung der [user](..\api-reference\v1.0\resources\user.md)-Ressourcen in der Nutzlast. Jeder Benutzer wird anhand der **id**-Eigenschaft und seinen Standardeigenschaften identifiziert. Die nachfolgend dargestellte Arbeitslast ist aus Platzgründen abgeschnitten.
+Wenn der Vorgang erfolgreich ist, erhalten Sie die Antwort 200 OK mit der Auflistung der [user](../api-reference/v1.0/resources/user.md)-Ressourcen in der Nutzlast. Jeder Benutzer wird anhand der **id**-Eigenschaft und seinen Standardeigenschaften identifiziert. Die nachfolgend dargestellte Arbeitslast ist aus Platzgründen abgeschnitten.
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -77,14 +77,14 @@ Content-type: application/json
 }
 ```
 
-Mit Microsoft Graph können Sie auch Websitesammlungen anzeigen, indem Sie in den Beziehungen von einer Ressource zu einer anderen navigieren. Über die **mailFolders**-Navigationseigenschaft eines Benutzers können Sie beispielsweise die Auflistung von [mailFolder](..\api-reference\v1.0\resources\mailfolder.md)-Ressourcen im Benutzerpostfach abfragen:
+Mit Microsoft Graph können Sie auch Websitesammlungen anzeigen, indem Sie in den Beziehungen von einer Ressource zu einer anderen navigieren. Über die **mailFolders**-Navigationseigenschaft eines Benutzers können Sie beispielsweise die Auflistung von [mailFolder](../api-reference/v1.0/resources/mailfolder.md)-Ressourcen im Benutzerpostfach abfragen:
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/me/mailfolders HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-Wenn der Vorgang erfolgreich ist, erhalten Sie die Antwort 200 OK mit der Auflistung der [mailFolder](..\api-reference\v1.0\resources\user.md)-Ressourcen in der Nutzlast. Jeder **mailFolder** wird anhand der **id**-Eigenschaft und seinen Eigenschaften identifiziert. Die nachfolgend dargestellte Arbeitslast ist aus Platzgründen abgeschnitten.
+Wenn der Vorgang erfolgreich ist, erhalten Sie die Antwort 200 OK mit der Auflistung der [mailFolder](../api-reference/v1.0/resources/user.md)-Ressourcen in der Nutzlast. Jeder **mailFolder** wird anhand der **id**-Eigenschaft und seinen Eigenschaften identifiziert. Die nachfolgend dargestellte Arbeitslast ist aus Platzgründen abgeschnitten.
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -162,7 +162,7 @@ GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$sel
 Authorization : Bearer {access_token}
 ```
 
-Bei erfolgreicher Antwort wird der Statuscode 200 OK und eine Nutzlast zurückgegeben, wie dargestellt. 
+Bei erfolgreicher Antwort wird der Statuscode 200 OK und eine Nutzlast zurückgegeben, wie dargestellt.
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -220,7 +220,7 @@ GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/dire
 Authorization : Bearer {access_token}
 ```
 
-Bei erfolgreicher Antwort wird der Statuscode 200 OK und eine Nutzlast zurückgegeben, wie dargestellt. 
+Bei erfolgreicher Antwort wird der Statuscode 200 OK und eine Nutzlast zurückgegeben, wie dargestellt.
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -247,7 +247,7 @@ Authorization : Bearer {access_token}
 ```
 
     
-Bei erfolgreicher Antwort wird der Statuscode 200 OK und eine Nutzlast zurückgegeben, wie dargestellt. 
+Bei erfolgreicher Antwort wird der Statuscode 200 OK und eine Nutzlast zurückgegeben, wie dargestellt.
 
 
 ```no-highlight 
@@ -286,7 +286,7 @@ content-length: 147
 Sie können alle Beziehungen in einer bestimmten Ressource anzeigen, indem Sie zu den Metadaten wechseln, den EntityType suchen und sich alle NavigationProperties für diesen EntityType ansehen.
 
 ## <a name="call-functions"></a>Aufruffunktionen
-Microsoft Graph unterstützt auch _Funktionen_ zum Bearbeiten von Ressourcen auf andere Art und Weise als einfache CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren und Löschen). Diese liegen häufig in der Form von HTTPS-POST-Anforderungen vor, um Argumente für die Funktion aufzunehmen. Die folgende HTTPS-POST-Anforderung z. B. ermöglicht es dem angemeldeten Benutzer (`me`), eine E-Mail zu senden.
+Microsoft Graph unterstützt auch _Funktionen_ zum Bearbeiten von Ressourcen auf andere Art und Weise als einfache CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren und Löschen). Diese liegen häufig in der Form von HTTPS-POST-Anforderungen vor, um Argumente für die Funktion aufzunehmen. Die folgende HTTPS-POST-Anforderung z. B. ermöglicht es dem angemeldeten Benutzer (`me`), eine E-Mail zu senden.
 
 ```no-highlight 
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
@@ -310,7 +310,7 @@ content-length: 96
     ],
     "attachments": [
       {
-        "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+        "@odata.type": "microsoft.graph.fileAttachment",
         "name": "menu.txt",
         "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
       }
@@ -324,7 +324,7 @@ Sie können alle verfügbaren Funktionen in den Metadaten sehen. Sie werden als 
 
 ## <a name="use-the-microsoft-graph-sdks"></a>Verwendung der Microsoft Graph-SDKs
 
-Sie bevorzugen die Benutzerfreundlichkeit und die leistungsstarken Funktionen von SDKs? Zwar können Sie Microsoft Graph jederzeit über REST-APIs aufrufen; wir stellen jedoch auch SDKs für viele beliebte Plattformen zur Verfügung. Unter [Codebeispiele und SDKs](https://graph.microsoft.io/en-us/code-samples-and-sdks) können Sie die verfügbaren SDKs erkunden.
+Sie bevorzugen die Benutzerfreundlichkeit und die leistungsstarken Funktionen von SDKs? Zwar können Sie Microsoft Graph jederzeit über REST-APIs aufrufen; wir stellen jedoch auch SDKs für viele beliebte Plattformen zur Verfügung. Unter [Codebeispiele und SDKs](https://graph.microsoft.io/en-us/code-samples-and-sdks) können Sie die verfügbaren SDKs erkunden.
 
 ## <a name="see-also"></a>Siehe auch
 

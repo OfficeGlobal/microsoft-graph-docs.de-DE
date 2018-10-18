@@ -8,7 +8,7 @@ In der folgenden Abbildung ist die App dargestellt, die Sie erstellen.
 
 ![Screenshot des Microsoft Ruby on Rails Connect-Beispiels](./images/Microsoft-Graph-Ruby-Connect-UI.png)
 
-**Sie möchten keine App erstellen?** Verwenden Sie für einen schnellen Einstieg den [Schnellstart Microsoft Graph](https://graph.microsoft.io/de-DE/getting-started), oder laden Sie das [Ruby REST Connect-Beispiel](https://github.com/microsoftgraph/ruby-connect-rest-sample) herunter, auf dem dieser Artikel basiert.
+**Sie möchten keine App erstellen?** Verwenden Sie für einen schnellen Einstieg den [Schnellstart Microsoft Graph](https://graph.microsoft.io/en-us/getting-started), oder laden Sie das [Ruby REST Connect-Beispiel](https://github.com/microsoftgraph/ruby-connect-rest-sample) herunter, auf dem dieser Artikel basiert.
 
 
 ## <a name="prerequisites"></a>Voraussetzungen
@@ -19,7 +19,7 @@ Für die ersten Schritte benötigen Sie:
 - Rails-Framework (das Beispiel wurde auf Rails 4.2 getestet).
 - Bundler Dependency Manager.
 - Rack-Webserveroberfläche für Ruby.
-- Ein [Microsoft-Konto](https://www.outlook.com/) oder ein [Geschäfts- oder Schulkonto](https://docs.microsoft.com/de-DE/office/developer-program/office-365-developer-program-faq#account-types)
+- Ein [Microsoft-Konto](https://www.outlook.com/) oder ein [Geschäfts- oder Schulkonto](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
 - Das Microsoft Graph Connect-Startprojekt für Ruby on Rails. Laden Sie das [Microsoft Graph Ruby on Rails Connect-Beispiel](https://github.com/microsoftgraph/ruby-connect-rest-sample) herunter. Das Startprojekt befindet sich im _Start_ordner.
 
 
@@ -53,7 +53,7 @@ Registrieren Sie eine App im Microsoft App-Registrierungsportal. Dadurch werden 
 
 ## <a name="configure-the-project"></a>Konfigurieren des Projekts
 
-1. Laden Sie das [Microsoft Graph Ruby on Rails Connect-Beispiel](https://github.com/microsoftgraph/ruby-connect-rest-sample) herunter, oder klonen Sie es. Öffnen Sie den Startordner im Editor Ihrer Wahl.
+1. Laden Sie das [Microsoft Graph Ruby on Rails Connect-Beispiel](https://github.com/microsoftgraph/ruby-connect-rest-sample) herunter, oder klonen Sie es. Öffnen Sie den Startordner im Editor Ihrer Wahl.__
 1. Wenn Sie weder über einen Bundler noch über ein Rack verfügen, können Sie sie mithilfe des folgenden Befehls installieren.
 
     ```
@@ -79,7 +79,7 @@ Der Authentifizierungsfluss kann in diese grundlegenden Schritte unterteilt werd
 2. Anfordern eines Autorisierungscodes
 3. Einlösen des Autorisierungscodes für ein Zugriffstoken
 
->Weitere Informationen zu diesem Autorisierungsfluss finden Sie unter [Webanwendung zu Web-API](https://azure.microsoft.com/de-DE/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api) und [Integrieren einer Microsoft-Identität und von Microsoft Graph in eine Webanwendung mit OpenID Connect](https://azure.microsoft.com/de-DE/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/) in der Dokumentation zu Azure AD.
+>Weitere Informationen zu diesem Autorisierungsfluss finden Sie unter [Webanwendung zu Web-API](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api) und [Integrieren einer Microsoft-Identität und von Microsoft Graph in eine Webanwendung mit OpenID Connect](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/) in der Dokumentation zu Azure AD.
 
 Wir verwenden einen Dreierstack [Rack](http://rack.github.io/) Middleware, damit die App sich gegenüber Microsoft Graph authentifizieren kann:
 

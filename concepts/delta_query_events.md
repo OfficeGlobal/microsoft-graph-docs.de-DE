@@ -16,8 +16,8 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
 
 Eine GET-Anforderung mit der **delta**-Funktion gibt Folgendes zurück:
 
-- `nextLink` (mit einer URL mit einem **delta**-Funktionsaufruf und einem _skipToken_) oder 
-- `deltaLink` (mit einer URL mit einem **delta**-Funktionsaufruf und einem _deltaToken_).
+- (mit einer URL mit einem **delta**-Funktionsaufruf und einem _skipToken_) oder`nextLink` 
+- (mit einer URL mit einem **delta**-Funktionsaufruf und einem _deltaToken_).`deltaLink`
 
 Diese Token sind [Statustoken](delta_query_overview.md#state-tokens), die die refs/remotes/microsoftgraph/master-Parameter _startDateTime_ und _endDateTime_ sowie alle anderen Abfrageparameter in der GET-Anforderung der ursprünglichen Delta-Abfrage codieren. 
 
@@ -56,14 +56,14 @@ In diesem Beispiel wird die angegebene Kalenderansicht zum ersten Mal synchronis
 Die erste Anforderung gibt Folgendes an:
 
 - Datum-/Uhrzeitwerte für die Parameter _startDateTime_ und _endDateTime_.
-- Den [optionalen Anforderungsheader](#optional-request-header), _odata.maxpagesize_, der gleichzeitig 2 Ereignisse zurückgibt.
+- Den [optionalen Anforderungsheader](#optional-request-header), _odata.maxpagesize_, der gleichzeitig 2 Ereignisse zurückgibt.
 
 <!-- {
   "blockType": "request",
   "name": "get_calendarview_delta_1"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendarview/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarView/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -84,7 +84,7 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
-    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarView/delta?$skiptoken=R0usmcCM996atia_s",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -153,7 +153,7 @@ Die zweite Anforderung gibt die aus der vorherigen Antwort zurückgegebene `next
   "name": "get_calendarview_delta_2"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarView/delta?$skiptoken=R0usmcCM996atia_s HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -173,7 +173,7 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
-    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarView/delta?$skiptoken=R0usmci39OQxqJrxK4",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -244,7 +244,7 @@ Die dritte Anforderung verwendet weiterhin das neueste aus der letzten Synchroni
   "name": "get_calendarview_delta_3"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4 HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarView/delta?$skiptoken=R0usmci39OQxqJrxK4 HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -265,7 +265,7 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
-    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/calendarView/delta?$deltatoken=R0usmcMDNGg0J1E",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -311,7 +311,7 @@ Mit dem `deltaLink` aus der [letzten Anforderung](#step-3-sample-third-request) 
   "name": "get_calendarview_delta_next"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarView/delta?$deltatoken=R0usmcMDNGg0J1E HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -329,7 +329,7 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
-    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcFuQtZdtpk4",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/calendarView/delta?$deltatoken=R0usmcFuQtZdtpk4",
     "value":[
         {
             "@odata.type": "#microsoft.graph.event",
@@ -357,7 +357,6 @@ Content-type: application/json
             "location":{
                 "displayName":"Chapel of Saint Ignatius",
                 "address":{
-                    "type":"unknown",
                     "street":"900 Broadway",
                     "city":"Seattle",
                     "state":"WA",

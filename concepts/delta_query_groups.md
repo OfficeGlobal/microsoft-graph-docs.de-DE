@@ -313,4 +313,4 @@ Es wird empfohlen, die folgenden bewährten Methoden zu verwenden, um dieses Mus
 
 
 ## <a name="see-also"></a>Siehe auch
-[Microsoft Graph-Delta-Abfrage](../concepts/delta_query_overview.md) – Übersicht.
+[Microsoft Graph-Delta-Abfrage](../concepts/delta_query_overview.md) – Übersicht.
