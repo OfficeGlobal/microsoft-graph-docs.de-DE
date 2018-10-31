@@ -35,7 +35,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |emptySuggestionsReason|Zeichenfolge|Ein Grund dafür, dass keine Besprechungsvorschläge zurückgegeben werden. Die möglichen Werte sind: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable`, oder`unknown`. Diese Eigenschaft ist eine leere Zeichenfolge, wenn die **meetingTimeSuggestions** -Eigenschaft Besprechungsvorschläge enthält.|
-|meetingTimeSuggestions||||UNTRANSLATED_CONTENT_START|||[meetingTimeSuggestion](meetingTimeSuggestion.md) collection|||UNTRANSLATED_CONTENT_END||||Ein Array von Besprechungsvorschlägen.|
+|meetingTimeSuggestions|[meetingTimeSuggestion](meetingTimeSuggestion.md) -Sammlung|Ein Array von Besprechungsvorschlägen.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

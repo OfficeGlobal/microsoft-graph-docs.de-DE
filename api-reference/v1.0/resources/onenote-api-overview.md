@@ -9,7 +9,7 @@ https://graph.microsoft.com/{version}/{location}/onenote/
 ```
 Das Segment `version` in der URL ist die Version von Microsoft Graph, die verwendet werden soll:
 
-- `v1.0` |||UNTRANSLATED_CONTENT_START|||is for stable production code.|||UNTRANSLATED_CONTENT_END|||
+- `v1.0` ist für stabilen Produktionscode.
 - `beta` |||UNTRANSLATED_CONTENT_START|||is to try out a feature that's in development.|||UNTRANSLATED_CONTENT_END||| Funktionen und Funktionalität in der Betaversion ändern sich möglicherweise, sodass Sie diese nicht in Ihrem Produktionscode verwenden sollten.
 
 Speicherort können Benutzernotizbücher in Office 365 oder dem Verbraucher-OneDrive, Gruppennotizbücher oder auf einer SharePoint-Website gehostete Teamnotizbücher in Office 365 sein. 

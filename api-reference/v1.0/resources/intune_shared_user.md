@@ -7,9 +7,9 @@ Stellt ein user-Objekt von Azure Active Directory dar.
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Benutzer auflisten](../api/intune_shared_user_list.md)-Objekte.||||UNTRANSLATED_CONTENT_START|||[user](../resources/intune_shared_user.md) collection|||UNTRANSLATED_CONTENT_END||||Auflisten von Eigenschaften und Beziehungen der [Benutzer](../resources/intune_shared_user.md)-Objekte.|
-|[Benutzer abrufen](../api/intune_shared_user_get.md)-Objekt.||||UNTRANSLATED_CONTENT_START|||[user](../resources/intune_shared_user.md) collection|||UNTRANSLATED_CONTENT_END||||Lesen von Eigenschaften und Beziehungen des [Benutzer](../resources/intune_shared_user.md)-Objekts.|
-|[Benutzer erstellen](../api/intune_shared_user_create.md)-Objekt.||||UNTRANSLATED_CONTENT_START|||[user](../resources/intune_shared_user.md) collection|||UNTRANSLATED_CONTENT_END||||Dient zum Erstellen eines neuen [Benutzer](../resources/intune_shared_user.md)-Objekts.|
+|[Benutzer auflisten](../api/intune_shared_user_list.md)-Objekte.|[user](../resources/intune_shared_user.md)-sammlung|Auflisten von Eigenschaften und Beziehungen der [Benutzer](../resources/intune_shared_user.md)-Objekte.|
+|[Benutzer abrufen](../api/intune_shared_user_get.md)-Objekt.|[user](../resources/intune_shared_user.md)-sammlung|Lesen von Eigenschaften und Beziehungen des [Benutzer](../resources/intune_shared_user.md)-Objekts.|
+|[Benutzer erstellen](../api/intune_shared_user_create.md)-Objekt.|[user](../resources/intune_shared_user.md)-sammlung|Dient zum Erstellen eines neuen [Benutzer](../resources/intune_shared_user.md)-Objekts.|
 |[Benutzer löschen](../api/intune_shared_user_delete.md).|Keine|Löscht ein [user](../resources/intune_shared_user.md)-Objekt.|
 |[Benutzer aktualisieren](../api/intune_shared_user_update.md)-Objekt.|[Benutzer](../resources/intune_shared_user.md)|Aktualisieren der Eigenschaften eines [Benutzer](../resources/intune_shared_user.md)-Objekts.|
 |**Geräteverwaltung**|
