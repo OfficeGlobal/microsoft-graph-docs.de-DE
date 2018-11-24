@@ -1,18 +1,18 @@
-# <a name="delete-windows81compliancepolicy"></a><span data-ttu-id="c339a-101">windows81CompliancePolicy löschen</span><span class="sxs-lookup"><span data-stu-id="c339a-101">Delete windows81CompliancePolicy</span></span>
+# <a name="delete-windows81compliancepolicy"></a><span data-ttu-id="16854-101">windows81CompliancePolicy löschen</span><span class="sxs-lookup"><span data-stu-id="16854-101">Delete windows81CompliancePolicy</span></span>
 
-> <span data-ttu-id="c339a-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="c339a-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="16854-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="16854-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="c339a-103">Löscht Objekte des Typs [windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="c339a-103">Deletes a [windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="c339a-104">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="c339a-104">Prerequisites</span></span>
-<span data-ttu-id="c339a-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="c339a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="16854-103">Löscht Objekte des Typs [windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="16854-103">Deletes a [windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="16854-104">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="16854-104">Prerequisites</span></span>
+<span data-ttu-id="16854-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="16854-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="c339a-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c339a-107">Permission type</span></span>|<span data-ttu-id="c339a-108">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c339a-108">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="16854-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="16854-107">Permission type</span></span>|<span data-ttu-id="16854-108">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="16854-108">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="c339a-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c339a-109">Delegated (work or school account)</span></span>|<span data-ttu-id="c339a-110">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c339a-110">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="c339a-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c339a-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c339a-112">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c339a-112">Not supported.</span></span>|
-|<span data-ttu-id="c339a-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c339a-113">Application</span></span>|<span data-ttu-id="c339a-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c339a-114">Not supported.</span></span>|
+|<span data-ttu-id="16854-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="16854-109">Delegated (work or school account)</span></span>|<span data-ttu-id="16854-110">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="16854-110">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="16854-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="16854-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="16854-112">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="16854-112">Not supported.</span></span>|
+|<span data-ttu-id="16854-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="16854-113">Application</span></span>|<span data-ttu-id="16854-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="16854-114">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="c339a-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c339a-115">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="16854-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="16854-115">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -21,35 +21,30 @@
 DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c339a-116">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="c339a-116">Request headers</span></span>
-|<span data-ttu-id="c339a-117">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="c339a-117">Header</span></span>|<span data-ttu-id="c339a-118">Wert</span><span class="sxs-lookup"><span data-stu-id="c339a-118">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="16854-116">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="16854-116">Request headers</span></span>
+|<span data-ttu-id="16854-117">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="16854-117">Header</span></span>|<span data-ttu-id="16854-118">Wert</span><span class="sxs-lookup"><span data-stu-id="16854-118">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="c339a-119">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="c339a-119">Authorization</span></span>|<span data-ttu-id="c339a-120">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="c339a-120">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="c339a-121">Akzeptieren</span><span class="sxs-lookup"><span data-stu-id="c339a-121">Accept</span></span>|<span data-ttu-id="c339a-122">Anwendung/json</span><span class="sxs-lookup"><span data-stu-id="c339a-122">application/json</span></span>|
+|<span data-ttu-id="16854-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="16854-119">Authorization</span></span>|<span data-ttu-id="16854-120">Bearer &lt;token&gt;. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="16854-120">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="16854-121">Annehmen</span><span class="sxs-lookup"><span data-stu-id="16854-121">Accept</span></span>|<span data-ttu-id="16854-122">application/json</span><span class="sxs-lookup"><span data-stu-id="16854-122">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c339a-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c339a-123">Request body</span></span>
-<span data-ttu-id="c339a-124">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="c339a-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="16854-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="16854-123">Request body</span></span>
+<span data-ttu-id="16854-124">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="16854-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c339a-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="c339a-125">Response</span></span>
-<span data-ttu-id="c339a-126">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c339a-126">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="16854-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="16854-125">Response</span></span>
+<span data-ttu-id="16854-126">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="16854-126">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c339a-127">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c339a-127">Example</span></span>
-### <a name="request"></a><span data-ttu-id="c339a-128">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c339a-128">Request</span></span>
-<span data-ttu-id="c339a-129">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="c339a-129">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="16854-127">Beispiel</span><span class="sxs-lookup"><span data-stu-id="16854-127">Example</span></span>
+### <a name="request"></a><span data-ttu-id="16854-128">Anforderung</span><span class="sxs-lookup"><span data-stu-id="16854-128">Request</span></span>
+<span data-ttu-id="16854-129">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="16854-129">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
-### <a name="response"></a><span data-ttu-id="c339a-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="c339a-130">Response</span></span>
-<span data-ttu-id="c339a-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c339a-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="16854-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="16854-130">Response</span></span>
+<span data-ttu-id="16854-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="16854-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
 
 
 

@@ -1,0 +1,16 @@
+# <a name="teamsasyncoperationtype-enum-type"></a><span data-ttu-id="cc59c-101">TeamsAsyncOperationType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="cc59c-101">teamsAsyncOperationType enum type</span></span>
+
+
+
+<span data-ttu-id="cc59c-102">Arten von [TeamsAsyncOperation](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="cc59c-102">Types of [teamsAsyncOperation](teamsasyncoperation.md).</span></span> <span data-ttu-id="cc59c-103">Elemente werden hier wie weitere Async hinzugefügt Vorgänge unterstützt werden.</span><span class="sxs-lookup"><span data-stu-id="cc59c-103">Members will be added here as more async operations are supported.</span></span>
+
+## <a name="members"></a><span data-ttu-id="cc59c-104">Elemente</span><span class="sxs-lookup"><span data-stu-id="cc59c-104">Members</span></span>
+
+| <span data-ttu-id="cc59c-105">Element</span><span class="sxs-lookup"><span data-stu-id="cc59c-105">Member</span></span> | <span data-ttu-id="cc59c-106">Wert</span><span class="sxs-lookup"><span data-stu-id="cc59c-106">Value</span></span>| <span data-ttu-id="cc59c-107">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="cc59c-107">Description</span></span> |
+|:---------------|:--------|:----------|
+|<span data-ttu-id="cc59c-108">Ungültig</span><span class="sxs-lookup"><span data-stu-id="cc59c-108">invalid</span></span>|<span data-ttu-id="cc59c-109">0</span><span class="sxs-lookup"><span data-stu-id="cc59c-109">0</span></span>|<span data-ttu-id="cc59c-110">Ungültiger Wert.</span><span class="sxs-lookup"><span data-stu-id="cc59c-110">Invalid value.</span></span>|
+|<span data-ttu-id="cc59c-111">cloneTeam</span><span class="sxs-lookup"><span data-stu-id="cc59c-111">cloneTeam</span></span>|<span data-ttu-id="cc59c-112">1</span><span class="sxs-lookup"><span data-stu-id="cc59c-112">1</span></span>|<span data-ttu-id="cc59c-113">Der Vorgang zum Klonen Sie ein Team.</span><span class="sxs-lookup"><span data-stu-id="cc59c-113">Operation to clone a team.</span></span>|
+|<span data-ttu-id="cc59c-114">archiveTeam</span><span class="sxs-lookup"><span data-stu-id="cc59c-114">archiveTeam</span></span>|<span data-ttu-id="cc59c-115">2</span><span class="sxs-lookup"><span data-stu-id="cc59c-115">2</span></span>|<span data-ttu-id="cc59c-116">Der Vorgang zum Archivieren von einem Team.</span><span class="sxs-lookup"><span data-stu-id="cc59c-116">Operation to archive a team.</span></span>|
+|<span data-ttu-id="cc59c-117">unarchiveTeam</span><span class="sxs-lookup"><span data-stu-id="cc59c-117">unarchiveTeam</span></span>|<span data-ttu-id="cc59c-118">3</span><span class="sxs-lookup"><span data-stu-id="cc59c-118">3</span></span>|<span data-ttu-id="cc59c-119">Der Vorgang zum Wiederherstellen eines archivierten Teams.</span><span class="sxs-lookup"><span data-stu-id="cc59c-119">Operation to restore an archived team.</span></span>|
+|<span data-ttu-id="cc59c-120">createTeam</span><span class="sxs-lookup"><span data-stu-id="cc59c-120">createTeam</span></span>|<span data-ttu-id="cc59c-121">3</span><span class="sxs-lookup"><span data-stu-id="cc59c-121">3</span></span>|<span data-ttu-id="cc59c-122">Vorgang, um ein Team von Grund auf zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="cc59c-122">Operation to create a team from scratch.</span></span>|
+

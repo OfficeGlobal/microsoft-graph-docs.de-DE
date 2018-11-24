@@ -1,28 +1,29 @@
-# <a name="androidminimumoperatingsystem-resource-type"></a><span data-ttu-id="77a2d-101">androidMinimumOperatingSystem-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="77a2d-101">androidMinimumOperatingSystem resource type</span></span>
+# <a name="androidminimumoperatingsystem-resource-type"></a><span data-ttu-id="8afef-101">androidMinimumOperatingSystem-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="8afef-101">androidMinimumOperatingSystem resource type</span></span>
 
-> <span data-ttu-id="77a2d-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="77a2d-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="8afef-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="8afef-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="77a2d-103">Enthält die Eigenschaften des für eine mobile Android-App mindestens erforderlichen Betriebssystems.</span><span class="sxs-lookup"><span data-stu-id="77a2d-103">Contains properties for the minimum operating system required for an Android mobile app.</span></span>
-## <a name="properties"></a><span data-ttu-id="77a2d-104">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="77a2d-104">Properties</span></span>
-|<span data-ttu-id="77a2d-105">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="77a2d-105">Property</span></span>|<span data-ttu-id="77a2d-106">Typ</span><span class="sxs-lookup"><span data-stu-id="77a2d-106">Type</span></span>|<span data-ttu-id="77a2d-107">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="77a2d-107">Description</span></span>|
+<span data-ttu-id="8afef-103">Enthält die Eigenschaften des für eine mobile Android-App mindestens erforderlichen Betriebssystems.</span><span class="sxs-lookup"><span data-stu-id="8afef-103">Contains properties for the minimum operating system required for an Android mobile app.</span></span>
+## <a name="properties"></a><span data-ttu-id="8afef-104">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="8afef-104">Properties</span></span>
+|<span data-ttu-id="8afef-105">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="8afef-105">Property</span></span>|<span data-ttu-id="8afef-106">Typ</span><span class="sxs-lookup"><span data-stu-id="8afef-106">Type</span></span>|<span data-ttu-id="8afef-107">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8afef-107">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="77a2d-108">v4_0</span><span class="sxs-lookup"><span data-stu-id="77a2d-108">v4_0</span></span>|<span data-ttu-id="77a2d-109">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="77a2d-109">Boolean</span></span>|<span data-ttu-id="77a2d-110">Version 4.0 oder höher</span><span class="sxs-lookup"><span data-stu-id="77a2d-110">Version 4.0 or later.</span></span>|
-|<span data-ttu-id="77a2d-111">v4_0_3</span><span class="sxs-lookup"><span data-stu-id="77a2d-111">v4_0_3</span></span>|<span data-ttu-id="77a2d-112">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="77a2d-112">Boolean</span></span>|<span data-ttu-id="77a2d-113">Version 4.0.3 oder höher</span><span class="sxs-lookup"><span data-stu-id="77a2d-113">Version 4.0.3 or later.</span></span>|
-|<span data-ttu-id="77a2d-114">v4_1</span><span class="sxs-lookup"><span data-stu-id="77a2d-114">v4_1</span></span>|<span data-ttu-id="77a2d-115">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="77a2d-115">Boolean</span></span>|<span data-ttu-id="77a2d-116">Version 4.1 oder höher</span><span class="sxs-lookup"><span data-stu-id="77a2d-116">Version 4.1 or later.</span></span>|
-|<span data-ttu-id="77a2d-117">v4_2</span><span class="sxs-lookup"><span data-stu-id="77a2d-117">v4_2</span></span>|<span data-ttu-id="77a2d-118">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="77a2d-118">Boolean</span></span>|<span data-ttu-id="77a2d-119">Version 4.2 oder höher</span><span class="sxs-lookup"><span data-stu-id="77a2d-119">Version 4.2 or later.</span></span>|
-|<span data-ttu-id="77a2d-120">v4_3</span><span class="sxs-lookup"><span data-stu-id="77a2d-120">v4_3</span></span>|<span data-ttu-id="77a2d-121">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="77a2d-121">Boolean</span></span>|<span data-ttu-id="77a2d-122">Version 4.3 oder höher</span><span class="sxs-lookup"><span data-stu-id="77a2d-122">Version 4.3 or later.</span></span>|
-|<span data-ttu-id="77a2d-123">v4_4</span><span class="sxs-lookup"><span data-stu-id="77a2d-123">v4_4</span></span>|<span data-ttu-id="77a2d-124">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="77a2d-124">Boolean</span></span>|<span data-ttu-id="77a2d-125">Version 4.4 oder höher</span><span class="sxs-lookup"><span data-stu-id="77a2d-125">Version 4.4 or later.</span></span>|
-|<span data-ttu-id="77a2d-126">v5_0</span><span class="sxs-lookup"><span data-stu-id="77a2d-126">v5_0</span></span>|<span data-ttu-id="77a2d-127">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="77a2d-127">Boolean</span></span>|<span data-ttu-id="77a2d-128">Version 5.0 oder höher</span><span class="sxs-lookup"><span data-stu-id="77a2d-128">Version 5.0 or later.</span></span>|
-|<span data-ttu-id="77a2d-129">v5_1</span><span class="sxs-lookup"><span data-stu-id="77a2d-129">v5_1</span></span>|<span data-ttu-id="77a2d-130">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="77a2d-130">Boolean</span></span>|<span data-ttu-id="77a2d-131">Version 5.1 oder höher</span><span class="sxs-lookup"><span data-stu-id="77a2d-131">Version 5.1 or later.</span></span>|
+|<span data-ttu-id="8afef-108">v4_0</span><span class="sxs-lookup"><span data-stu-id="8afef-108">v4_0</span></span>|<span data-ttu-id="8afef-109">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="8afef-109">Boolean</span></span>|<span data-ttu-id="8afef-110">Version 4.0 oder höher</span><span class="sxs-lookup"><span data-stu-id="8afef-110">Version 4.0 or later.</span></span>|
+|<span data-ttu-id="8afef-111">v4_0_3</span><span class="sxs-lookup"><span data-stu-id="8afef-111">v4_0_3</span></span>|<span data-ttu-id="8afef-112">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="8afef-112">Boolean</span></span>|<span data-ttu-id="8afef-113">Version 4.0.3 oder höher</span><span class="sxs-lookup"><span data-stu-id="8afef-113">Version 4.0.3 or later.</span></span>|
+|<span data-ttu-id="8afef-114">v4_1</span><span class="sxs-lookup"><span data-stu-id="8afef-114">v4_1</span></span>|<span data-ttu-id="8afef-115">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="8afef-115">Boolean</span></span>|<span data-ttu-id="8afef-116">Version 4.1 oder höher</span><span class="sxs-lookup"><span data-stu-id="8afef-116">Version 4.1 or later.</span></span>|
+|<span data-ttu-id="8afef-117">v4_2</span><span class="sxs-lookup"><span data-stu-id="8afef-117">v4_2</span></span>|<span data-ttu-id="8afef-118">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="8afef-118">Boolean</span></span>|<span data-ttu-id="8afef-119">Version 4.2 oder höher</span><span class="sxs-lookup"><span data-stu-id="8afef-119">Version 4.2 or later.</span></span>|
+|<span data-ttu-id="8afef-120">v4_3</span><span class="sxs-lookup"><span data-stu-id="8afef-120">v4_3</span></span>|<span data-ttu-id="8afef-121">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="8afef-121">Boolean</span></span>|<span data-ttu-id="8afef-122">Version 4.3 oder höher</span><span class="sxs-lookup"><span data-stu-id="8afef-122">Version 4.3 or later.</span></span>|
+|<span data-ttu-id="8afef-123">v4_4</span><span class="sxs-lookup"><span data-stu-id="8afef-123">v4_4</span></span>|<span data-ttu-id="8afef-124">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="8afef-124">Boolean</span></span>|<span data-ttu-id="8afef-125">Version 4.4 oder höher</span><span class="sxs-lookup"><span data-stu-id="8afef-125">Version 4.4 or later.</span></span>|
+|<span data-ttu-id="8afef-126">v5_0</span><span class="sxs-lookup"><span data-stu-id="8afef-126">v5_0</span></span>|<span data-ttu-id="8afef-127">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="8afef-127">Boolean</span></span>|<span data-ttu-id="8afef-128">Version 5.0 oder höher</span><span class="sxs-lookup"><span data-stu-id="8afef-128">Version 5.0 or later.</span></span>|
+|<span data-ttu-id="8afef-129">v5_1</span><span class="sxs-lookup"><span data-stu-id="8afef-129">v5_1</span></span>|<span data-ttu-id="8afef-130">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="8afef-130">Boolean</span></span>|<span data-ttu-id="8afef-131">Version 5.1 oder höher</span><span class="sxs-lookup"><span data-stu-id="8afef-131">Version 5.1 or later.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="77a2d-132">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="77a2d-132">Relationships</span></span>
-<span data-ttu-id="77a2d-133">Keine</span><span class="sxs-lookup"><span data-stu-id="77a2d-133">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="77a2d-134">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="77a2d-134">JSON Representation</span></span>
-<span data-ttu-id="77a2d-135">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="77a2d-135">Here is a JSON representation of the resource.</span></span>
-<!--{
+## <a name="relationships"></a><span data-ttu-id="8afef-132">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="8afef-132">Relationships</span></span>
+<span data-ttu-id="8afef-133">Keine</span><span class="sxs-lookup"><span data-stu-id="8afef-133">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8afef-134">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="8afef-134">JSON Representation</span></span>
+<span data-ttu-id="8afef-135">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="8afef-135">Here is a JSON representation of the resource.</span></span>
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.androidMinimumOperatingSystem"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidMinimumOperatingSystem",
@@ -36,11 +37,6 @@
   "v5_1": true
 }
 ```
-
-
-
-
-
 
 
 

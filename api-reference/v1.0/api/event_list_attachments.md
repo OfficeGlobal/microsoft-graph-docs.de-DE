@@ -1,17 +1,17 @@
-# <a name="list-attachments"></a><span data-ttu-id="cc75b-101">Anlagen auflisten</span><span class="sxs-lookup"><span data-stu-id="cc75b-101">List attachments</span></span>
+# <a name="list-attachments"></a><span data-ttu-id="73b4f-101">Anlagen auflisten</span><span class="sxs-lookup"><span data-stu-id="73b4f-101">List attachments</span></span>
 
-<span data-ttu-id="cc75b-102">Mit dieser API können Sie eine Liste der einem Ereignis angefügten Objekte des Typs [attachment](../resources/attachment.md) abrufen.</span><span class="sxs-lookup"><span data-stu-id="cc75b-102">Retrieve a list of [attachment](../resources/attachment.md) objects attached to an event.</span></span>
-## <a name="permissions"></a><span data-ttu-id="cc75b-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="cc75b-103">Permissions</span></span>
-<span data-ttu-id="cc75b-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="cc75b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="73b4f-102">Mit dieser API können Sie eine Liste der einem Ereignis angefügten Objekte des Typs [attachment](../resources/attachment.md) abrufen.</span><span class="sxs-lookup"><span data-stu-id="73b4f-102">Retrieve a list of [attachment](../resources/attachment.md) objects attached to an event.</span></span>
+## <a name="permissions"></a><span data-ttu-id="73b4f-103">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="73b4f-103">Permissions</span></span>
+<span data-ttu-id="73b4f-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="73b4f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="cc75b-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="cc75b-106">Permission type</span></span>      | <span data-ttu-id="cc75b-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="cc75b-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="73b4f-106">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="73b4f-106">Permission type</span></span>      | <span data-ttu-id="73b4f-107">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="73b4f-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cc75b-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="cc75b-108">Delegated (work or school account)</span></span> | <span data-ttu-id="cc75b-109">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="cc75b-109">Calendars.Read</span></span>    |
-|<span data-ttu-id="cc75b-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="cc75b-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cc75b-111">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="cc75b-111">Calendars.Read</span></span>    |
-|<span data-ttu-id="cc75b-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="cc75b-112">Application</span></span> | <span data-ttu-id="cc75b-113">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="cc75b-113">Calendars.Read</span></span> |
+|<span data-ttu-id="73b4f-108">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="73b4f-108">Delegated (work or school account)</span></span> | <span data-ttu-id="73b4f-109">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="73b4f-109">Calendars.Read</span></span>    |
+|<span data-ttu-id="73b4f-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="73b4f-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="73b4f-111">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="73b4f-111">Calendars.Read</span></span>    |
+|<span data-ttu-id="73b4f-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="73b4f-112">Application</span></span> | <span data-ttu-id="73b4f-113">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="73b4f-113">Calendars.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cc75b-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="cc75b-114">HTTP request</span></span>
-<span data-ttu-id="cc75b-115">Anlagen für ein [Ereignis](../resources/event.md) im Standard[kalender](../resources/calendar.md) des Benutzers.</span><span class="sxs-lookup"><span data-stu-id="cc75b-115">Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).</span></span>
+## <a name="http-request"></a><span data-ttu-id="73b4f-114">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="73b4f-114">HTTP request</span></span>
+<span data-ttu-id="73b4f-115">Anlagen für ein [Ereignis](../resources/event.md) in der Benutzer als [Kalender](../resources/calendar.md).</span><span class="sxs-lookup"><span data-stu-id="73b4f-115">Attachments for an [event](../resources/event.md) in the user's default [calendar](../resources/calendar.md).</span></span>
 
 <!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
@@ -31,7 +31,7 @@ GET /groups/{id}/events/{id}/attachments
 GET /groups/{id}/calendar/events/{id}/attachments
 -->
 
-<span data-ttu-id="cc75b-116">Anlagen für ein [Ereignis](../resources/event.md) in einem [Kalender](../resources/calendar.md) aus der standardmäßigen [calendarGroup](../resources/calendargroup.md) des Benutzers.</span><span class="sxs-lookup"><span data-stu-id="cc75b-116">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="73b4f-116">Anlagen für ein [Ereignis](../resources/event.md) in einem [Kalender](../resources/calendar.md) aus der standardmäßigen [calendarGroup](../resources/calendargroup.md) des Benutzers.</span><span class="sxs-lookup"><span data-stu-id="73b4f-116">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -41,29 +41,29 @@ GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
 GET /me/calendargroup/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
 ```
-<span data-ttu-id="cc75b-117">Anlagen für ein [Ereignis](../resources/event.md) in einem [Kalender](../resources/calendar.md) aus der [calendarGroup](../resources/calendargroup.md) eines Benutzers.</span><span class="sxs-lookup"><span data-stu-id="cc75b-117">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="73b4f-117">Anlagen für ein [Ereignis](../resources/event.md) in einem [Kalender](../resources/calendar.md) aus der [calendarGroup](../resources/calendargroup.md) eines Benutzers.</span><span class="sxs-lookup"><span data-stu-id="73b4f-117">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="cc75b-118">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="cc75b-118">Optional query parameters</span></span>
-<span data-ttu-id="cc75b-119">Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="cc75b-119">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="cc75b-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="cc75b-120">Request headers</span></span>
-| <span data-ttu-id="cc75b-121">Name</span><span class="sxs-lookup"><span data-stu-id="cc75b-121">Name</span></span>       | <span data-ttu-id="cc75b-122">Typ</span><span class="sxs-lookup"><span data-stu-id="cc75b-122">Type</span></span> | <span data-ttu-id="cc75b-123">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="cc75b-123">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="73b4f-118">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="73b4f-118">Optional query parameters</span></span>
+<span data-ttu-id="73b4f-119">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="73b4f-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="73b4f-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="73b4f-120">Request headers</span></span>
+| <span data-ttu-id="73b4f-121">Name</span><span class="sxs-lookup"><span data-stu-id="73b4f-121">Name</span></span>       | <span data-ttu-id="73b4f-122">Typ</span><span class="sxs-lookup"><span data-stu-id="73b4f-122">Type</span></span> | <span data-ttu-id="73b4f-123">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="73b4f-123">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="cc75b-124">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="cc75b-124">Authorization</span></span>  | <span data-ttu-id="cc75b-125">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="cc75b-125">string</span></span>  | <span data-ttu-id="cc75b-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="cc75b-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="73b4f-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="73b4f-124">Authorization</span></span>  | <span data-ttu-id="73b4f-125">string</span><span class="sxs-lookup"><span data-stu-id="73b4f-125">string</span></span>  | <span data-ttu-id="73b4f-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="73b4f-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cc75b-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="cc75b-128">Request body</span></span>
-<span data-ttu-id="cc75b-129">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="cc75b-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="73b4f-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="73b4f-128">Request body</span></span>
+<span data-ttu-id="73b4f-129">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="73b4f-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cc75b-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="cc75b-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="73b4f-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="73b4f-130">Response</span></span>
 
-<span data-ttu-id="cc75b-131">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [Attachment](../resources/attachment.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="cc75b-131">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="cc75b-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="cc75b-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="cc75b-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="cc75b-133">Request</span></span>
-<span data-ttu-id="cc75b-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="cc75b-134">Here is an example of the request.</span></span>
+<span data-ttu-id="73b4f-131">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [Attachment](../resources/attachment.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="73b4f-131">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="73b4f-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="73b4f-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="73b4f-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="73b4f-133">Request</span></span>
+<span data-ttu-id="73b4f-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="73b4f-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_attachments"
@@ -71,8 +71,8 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ```http
 GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments
 ```
-##### <a name="response"></a><span data-ttu-id="cc75b-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="cc75b-135">Response</span></span>
-<span data-ttu-id="cc75b-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="cc75b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="73b4f-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="73b4f-135">Response</span></span>
+<span data-ttu-id="73b4f-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="73b4f-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
