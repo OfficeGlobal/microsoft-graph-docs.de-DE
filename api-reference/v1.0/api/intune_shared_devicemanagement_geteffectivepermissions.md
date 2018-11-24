@@ -1,19 +1,20 @@
-# <a name="geteffectivepermissions-function"></a><span data-ttu-id="54b0d-101">getEffectivePermissions-Funktion</span><span class="sxs-lookup"><span data-stu-id="54b0d-101">getEffectivePermissions function</span></span>
+# <a name="geteffectivepermissions-function"></a><span data-ttu-id="65e71-101">getEffectivePermissions-Funktion</span><span class="sxs-lookup"><span data-stu-id="65e71-101">getEffectivePermissions function</span></span>
 
-> <span data-ttu-id="54b0d-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="54b0d-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="65e71-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="65e71-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="54b0d-103">Ruft die effektiven Berechtigungen des derzeit authentifizierten Benutzers ab.</span><span class="sxs-lookup"><span data-stu-id="54b0d-103">Retrieves the effective permissions of the currently authenticated user</span></span>
+<span data-ttu-id="65e71-103">Ruft die effektiven Berechtigungen des derzeit authentifizierten Benutzers ab.</span><span class="sxs-lookup"><span data-stu-id="65e71-103">Retrieves the effective permissions of the currently authenticated user</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="54b0d-104">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="54b0d-104">Prerequisites</span></span>
-<span data-ttu-id="54b0d-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="54b0d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="65e71-104">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="65e71-104">Prerequisites</span></span>
+<span data-ttu-id="65e71-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="65e71-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="54b0d-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="54b0d-107">Permission type</span></span>|<span data-ttu-id="54b0d-108">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="54b0d-108">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="65e71-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="65e71-107">Permission type</span></span>|<span data-ttu-id="65e71-108">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="65e71-108">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="54b0d-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="54b0d-109">Delegated (work or school account)</span></span>|<span data-ttu-id="54b0d-110">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="54b0d-110">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
-|<span data-ttu-id="54b0d-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="54b0d-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="54b0d-112">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="54b0d-112">Not supported.</span></span>|
-|<span data-ttu-id="54b0d-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="54b0d-113">Application</span></span>|<span data-ttu-id="54b0d-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="54b0d-114">Not supported.</span></span>|
+|<span data-ttu-id="65e71-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="65e71-109">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="65e71-110">&nbsp;&nbsp; Rollenbasierte Zugriffssteuerung</span><span class="sxs-lookup"><span data-stu-id="65e71-110">&nbsp; &nbsp; Role-based access control</span></span> | <span data-ttu-id="65e71-111">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="65e71-111">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
+|<span data-ttu-id="65e71-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="65e71-112">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="65e71-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="65e71-113">Not supported.</span></span>|
+|<span data-ttu-id="65e71-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="65e71-114">Application</span></span>|<span data-ttu-id="65e71-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="65e71-115">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="54b0d-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="54b0d-115">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="65e71-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="65e71-116">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -22,33 +23,33 @@
 GET /deviceManagement/getEffectivePermissions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="54b0d-116">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="54b0d-116">Request headers</span></span>
-|<span data-ttu-id="54b0d-117">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="54b0d-117">Header</span></span>|<span data-ttu-id="54b0d-118">Wert</span><span class="sxs-lookup"><span data-stu-id="54b0d-118">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="65e71-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="65e71-117">Request headers</span></span>
+|<span data-ttu-id="65e71-118">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="65e71-118">Header</span></span>|<span data-ttu-id="65e71-119">Wert</span><span class="sxs-lookup"><span data-stu-id="65e71-119">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="54b0d-119">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="54b0d-119">Authorization</span></span>|<span data-ttu-id="54b0d-120">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="54b0d-120">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="54b0d-121">Akzeptieren</span><span class="sxs-lookup"><span data-stu-id="54b0d-121">Accept</span></span>|<span data-ttu-id="54b0d-122">application/json</span><span class="sxs-lookup"><span data-stu-id="54b0d-122">application/json</span></span>|
+|<span data-ttu-id="65e71-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="65e71-120">Authorization</span></span>|<span data-ttu-id="65e71-121">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="65e71-121">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="65e71-122">Accept</span><span class="sxs-lookup"><span data-stu-id="65e71-122">Accept</span></span>|<span data-ttu-id="65e71-123">application/json</span><span class="sxs-lookup"><span data-stu-id="65e71-123">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="54b0d-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="54b0d-123">Request body</span></span>
-<span data-ttu-id="54b0d-124">Geben Sie in der Anforderungs-URL die folgenden Abfrageparameter mit Werten an.</span><span class="sxs-lookup"><span data-stu-id="54b0d-124">In the request URL, provide the following query parameters with values.</span></span>
-<span data-ttu-id="54b0d-125">In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="54b0d-125">The following table shows the parameters that can be used with this function.</span></span>
+## <a name="request-body"></a><span data-ttu-id="65e71-124">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="65e71-124">Request body</span></span>
+<span data-ttu-id="65e71-125">Geben Sie in der Anforderungs-URL die folgenden Abfrageparameter mit Werten an.</span><span class="sxs-lookup"><span data-stu-id="65e71-125">In the request URL, provide the following query parameters with values.</span></span>
+<span data-ttu-id="65e71-126">In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="65e71-126">The following table shows the parameters that can be used with this function.</span></span>
 
-|<span data-ttu-id="54b0d-126">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="54b0d-126">Property</span></span>|<span data-ttu-id="54b0d-127">Typ</span><span class="sxs-lookup"><span data-stu-id="54b0d-127">Type</span></span>|<span data-ttu-id="54b0d-128">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="54b0d-128">Description</span></span>|
+|<span data-ttu-id="65e71-127">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="65e71-127">Property</span></span>|<span data-ttu-id="65e71-128">Typ</span><span class="sxs-lookup"><span data-stu-id="65e71-128">Type</span></span>|<span data-ttu-id="65e71-129">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="65e71-129">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="54b0d-129">Bereich</span><span class="sxs-lookup"><span data-stu-id="54b0d-129">scope</span></span>|<span data-ttu-id="54b0d-130">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="54b0d-130">String</span></span>|<span data-ttu-id="54b0d-131">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="54b0d-131">Not yet documented</span></span>|
+|<span data-ttu-id="65e71-130">scope</span><span class="sxs-lookup"><span data-stu-id="65e71-130">scope</span></span>|<span data-ttu-id="65e71-131">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="65e71-131">String</span></span>|<span data-ttu-id="65e71-132">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="65e71-132">Not yet documented</span></span>|
 
 
-## <a name="response"></a><span data-ttu-id="54b0d-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="54b0d-132">Response</span></span>
-<span data-ttu-id="54b0d-133">Wenn die Funktion erfolgreich verläuft, werden der Antwortcode `200 OK` und eine [rolePermission](../resources/intune_rbac_rolepermission.md)-Sammlung im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="54b0d-133">If successful, this function returns a `200 OK` response code and a [rolePermission](../resources/intune_rbac_rolepermission.md) collection in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="65e71-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="65e71-133">Response</span></span>
+<span data-ttu-id="65e71-134">Wenn die Funktion erfolgreich verläuft, werden der Antwortcode `200 OK` und eine [rolePermission](../resources/intune_rbac_rolepermission.md)-Sammlung im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="65e71-134">If successful, this function returns a `200 OK` response code and a [rolePermission](../resources/intune_rbac_rolepermission.md) collection in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="54b0d-134">Beispiel</span><span class="sxs-lookup"><span data-stu-id="54b0d-134">Example</span></span>
-### <a name="request"></a><span data-ttu-id="54b0d-135">Anforderung</span><span class="sxs-lookup"><span data-stu-id="54b0d-135">Request</span></span>
-<span data-ttu-id="54b0d-136">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="54b0d-136">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="65e71-135">Beispiel</span><span class="sxs-lookup"><span data-stu-id="65e71-135">Example</span></span>
+### <a name="request"></a><span data-ttu-id="65e71-136">Anforderung</span><span class="sxs-lookup"><span data-stu-id="65e71-136">Request</span></span>
+<span data-ttu-id="65e71-137">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="65e71-137">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/getEffectivePermissions(scope='parameterValue')
 ```
 
-### <a name="response"></a><span data-ttu-id="54b0d-137">Antwort</span><span class="sxs-lookup"><span data-stu-id="54b0d-137">Response</span></span>
-<span data-ttu-id="54b0d-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="54b0d-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="65e71-138">Antwort</span><span class="sxs-lookup"><span data-stu-id="65e71-138">Response</span></span>
+<span data-ttu-id="65e71-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="65e71-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

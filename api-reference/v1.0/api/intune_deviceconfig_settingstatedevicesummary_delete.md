@@ -1,18 +1,18 @@
-# <a name="delete-settingstatedevicesummary"></a><span data-ttu-id="21322-101">settingStateDeviceSummary löschen</span><span class="sxs-lookup"><span data-stu-id="21322-101">Delete settingStateDeviceSummary</span></span>
+# <a name="delete-settingstatedevicesummary"></a><span data-ttu-id="d954e-101">settingStateDeviceSummary löschen</span><span class="sxs-lookup"><span data-stu-id="d954e-101">Delete settingStateDeviceSummary</span></span>
 
-> <span data-ttu-id="21322-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="21322-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="d954e-102">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="d954e-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="21322-103">Löscht ein [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="21322-103">Deletes a [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="21322-104">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="21322-104">Prerequisites</span></span>
-<span data-ttu-id="21322-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="21322-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="d954e-103">Löscht ein [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="d954e-103">Deletes a [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="d954e-104">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="d954e-104">Prerequisites</span></span>
+<span data-ttu-id="d954e-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="d954e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="21322-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="21322-107">Permission type</span></span>|<span data-ttu-id="21322-108">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="21322-108">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="d954e-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="d954e-107">Permission type</span></span>|<span data-ttu-id="d954e-108">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="d954e-108">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="21322-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="21322-109">Delegated (work or school account)</span></span>|<span data-ttu-id="21322-110">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="21322-110">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="21322-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="21322-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="21322-112">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="21322-112">Not supported.</span></span>|
-|<span data-ttu-id="21322-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="21322-113">Application</span></span>|<span data-ttu-id="21322-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="21322-114">Not supported.</span></span>|
+|<span data-ttu-id="d954e-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="d954e-109">Delegated (work or school account)</span></span>|<span data-ttu-id="d954e-110">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d954e-110">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="d954e-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="d954e-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d954e-112">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="d954e-112">Not supported.</span></span>|
+|<span data-ttu-id="d954e-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="d954e-113">Application</span></span>|<span data-ttu-id="d954e-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="d954e-114">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="21322-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="21322-115">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d954e-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="d954e-115">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -22,35 +22,30 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSett
 DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/deviceSettingStateSummaries/{settingStateDeviceSummaryId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="21322-116">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="21322-116">Request headers</span></span>
-|<span data-ttu-id="21322-117">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="21322-117">Header</span></span>|<span data-ttu-id="21322-118">Wert</span><span class="sxs-lookup"><span data-stu-id="21322-118">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d954e-116">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="d954e-116">Request headers</span></span>
+|<span data-ttu-id="d954e-117">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="d954e-117">Header</span></span>|<span data-ttu-id="d954e-118">Wert</span><span class="sxs-lookup"><span data-stu-id="d954e-118">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="21322-119">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="21322-119">Authorization</span></span>|<span data-ttu-id="21322-120">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="21322-120">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="21322-121">Akzeptieren</span><span class="sxs-lookup"><span data-stu-id="21322-121">Accept</span></span>|<span data-ttu-id="21322-122">Anwendung/json</span><span class="sxs-lookup"><span data-stu-id="21322-122">application/json</span></span>|
+|<span data-ttu-id="d954e-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="d954e-119">Authorization</span></span>|<span data-ttu-id="d954e-120">Bearer &lt;token&gt;. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="d954e-120">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="d954e-121">Accept</span><span class="sxs-lookup"><span data-stu-id="d954e-121">Accept</span></span>|<span data-ttu-id="d954e-122">application/json</span><span class="sxs-lookup"><span data-stu-id="d954e-122">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="21322-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="21322-123">Request body</span></span>
-<span data-ttu-id="21322-124">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="21322-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d954e-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="d954e-123">Request body</span></span>
+<span data-ttu-id="d954e-124">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="d954e-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="21322-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="21322-125">Response</span></span>
-<span data-ttu-id="21322-126">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="21322-126">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="d954e-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="d954e-125">Response</span></span>
+<span data-ttu-id="d954e-126">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="d954e-126">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="21322-127">Beispiel</span><span class="sxs-lookup"><span data-stu-id="21322-127">Example</span></span>
-### <a name="request"></a><span data-ttu-id="21322-128">Anforderung</span><span class="sxs-lookup"><span data-stu-id="21322-128">Request</span></span>
-<span data-ttu-id="21322-129">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="21322-129">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d954e-127">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d954e-127">Example</span></span>
+### <a name="request"></a><span data-ttu-id="d954e-128">Anforderung</span><span class="sxs-lookup"><span data-stu-id="d954e-128">Request</span></span>
+<span data-ttu-id="d954e-129">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="d954e-129">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries/{settingStateDeviceSummaryId}
 ```
 
-### <a name="response"></a><span data-ttu-id="21322-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="21322-130">Response</span></span>
-<span data-ttu-id="21322-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="21322-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="d954e-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="d954e-130">Response</span></span>
+<span data-ttu-id="d954e-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="d954e-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
 
 
 
