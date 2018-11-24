@@ -6,23 +6,22 @@ Aktualisieren der Eigenschaften eines [deviceManagement](../resources/intune_sha
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
-| Berechtigung &nbsp; Typ &nbsp; (vom Workflow &nbsp;) | Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten) |
+| Berechtigung&nbsp;Typ&nbsp;(durch&nbsp;Workflow) | Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten) |
 |:---|:---|
-| Delegiert (Geschäfts- oder Schulkonto) |
-| &nbsp; &nbsp; Überwachung | DeviceManagementApps.ReadWrite.All |
-| &nbsp; &nbsp; Unternehmensbedingungen | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Unternehmens-Registrierung | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp; &nbsp; Geräte-Konfiguration | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp; &nbsp; Geräteverwaltung | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; Endpunkt-Schutz | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; Registrierung | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Benachrichtigung | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; RBAC | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp; &nbsp; Remote-Unterstützung | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Telecom-Ausgaben-Verwaltung | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Problembehandlung | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; Windows Information Schutz | DeviceManagementApps.ReadWrite.All |
+| Delegiert (Geschäfts-, Schul- oder Unikonto) |
+| &nbsp;&nbsp; Überwachung | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp; Begriffe des Unternehmens | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Corporate Registrierung | DeviceManagementServiceConfig.ReadWrite.All|
+| &nbsp;&nbsp; Gerätekonfiguration | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp; Gerätemanagement | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Endpoint Protection. | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Benachrichtigung | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Rollenbasierte Zugriffssteuerung | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp;&nbsp; Remoteunterstützung | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Telekommunikation Ausgaben Management | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Problembehandlung | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Windows Information Protection | DeviceManagementApps.ReadWrite.All |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt|
 | Anwendung | Nicht unterstützt |
 
@@ -38,8 +37,8 @@ PATCH /deviceManagement
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceManagement](../resources/intune_shared_devicemanagement.md) an.
@@ -48,15 +47,16 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Eindeutiger Bezeichner für das Gerät|
-|**Geräte-Konfiguration**|
-|Einstellungen|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Einstellungen auf Kontoebene.|
-|**Geräteverwaltung**|
-|subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|Zustand des Abonnements bei der Verwaltung des mobilen Gerätes des Mandanten. Mögliche Werte: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für das Gerät.
+|
+|**deviceConfiguration**|
+|settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Einstellungen auf Kontoebene|
+|**deviceManagement**|
+|subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|Status des Abonnements bei der Lösung für Mobilgeräteverwaltung des Mandanten. Die möglichen Werte sind: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |**Onboarding**|
-|intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|„intuneBrand“ enthält Daten, mit denen das Aussehen der Unternehmensportal-Anwendungen und des Endbenutzer-Webportals angepasst werden.|
+|intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|„intuneBrand“ enthält Daten, mit denen das Aussehen der Unternehmensportal-Anwendungen und des Endbenutzer-Webportals angepasst wird.|
 
-Die Anforderung des Body-Eigenschaft-Supports variiert je nach Workflow.
+Anforderung Body-Eigenschaft Unterstützung variiert je nach Workflow.
 
 ## <a name="response"></a>Antwort
 Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und ein aktualisiertes Objekt des Typs [deviceManagement](../resources/intune_shared_devicemanagement.md) im Antworttext zurück.
@@ -96,7 +96,7 @@ Content-length: 751
 
 ### <a name="response"></a>Antwort
 
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen gekürzt. Zurückgegebene Eigenschaften variieren je nach Workflow und Kontext.
+Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Zurückgegebene Eigenschaften variieren je nach Workflow und Kontext.
 
 ``` http
 HTTP/1.1 200 OK

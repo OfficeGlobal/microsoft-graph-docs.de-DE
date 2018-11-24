@@ -15,21 +15,21 @@ Eine Klasse, die die Eigenschaften für die Gruppenzuordnung einer mobilen App e
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität|
-|intent|[installIntent](../resources/intune_shared_installintent.md)|Die vom Administrator definierte Installationspriorität. Mögliche Werte sind: `available`, `required`, `uninstall` und `availableWithoutEnrollment`.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Die vom Administrator definierte Zielgruppenzuordnung|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Priorität|[installIntent](../resources/intune_shared_installintent.md)|Die vom Administrator definierte Installationspriorität. Mögliche Werte: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|Ziel|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Die vom Administrator definierte Zielgruppenzuordnung.|
 |Einstellungen|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|Die vom Administrator definierten Einstellungen für die Zielgruppenzuordnung.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppAssignment"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -43,11 +43,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   }
 }
 ```
-
-
-
-
-
 
 
 

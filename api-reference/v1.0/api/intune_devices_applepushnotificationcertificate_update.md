@@ -24,8 +24,8 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [applePushNotificationCertificate](../resources/intune_devices_applepushnotificationcertificate.md) an.
@@ -34,12 +34,12 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Eindeutiger Bezeichner für das Zertifikat|
-|appleIdentifier|Zeichenfolge|Apple-ID des Kontos, mit dem das MDM-Push-Zertifikat erstellt wurde|
-|topicIdentifier|Zeichenfolge|Thema-ID|
-|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Apple Push Notification-Zertifikats|
-|expirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs des Apple Push Notification-Zertifikats|
-|certificate|Zeichenfolge|Noch nicht dokumentiert|
+|id|String|Eindeutiger Bezeichner für das Zertifikat|
+|appleIdentifier|String|Apple-ID des Kontos, mit dem das MDM-Push-Zertifikat erstellt wurde|
+|topicIdentifier|String|Thema-ID|
+|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Apple Push Notification-Zertifikats|
+|expirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs des Apple Push Notification-Zertifikats|
+|certificate|String|Noch nicht dokumentiert|
 
 
 
@@ -52,12 +52,12 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/applePushNotificationCertificate
 Content-type: application/json
-Content-length: 264
+Content-length: 271
 
 {
+  "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
   "appleIdentifier": "Apple Identifier value",
   "topicIdentifier": "Topic Identifier value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "certificate": "Certificate value"
 }
@@ -80,11 +80,6 @@ Content-Length: 384
   "certificate": "Certificate value"
 }
 ```
-
-
-
-
-
 
 
 

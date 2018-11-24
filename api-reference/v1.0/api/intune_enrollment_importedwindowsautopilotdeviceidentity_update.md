@@ -25,8 +25,8 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedW
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung für das [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md)-Objekt an.
@@ -35,12 +35,12 @@ Die folgende Tabelle enthält die Eigenschaften, die beim Erstellen des [importe
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|GUID des Objekts|
-|orderIdentifier|Zeichenfolge|Auftrags-ID des Windows AutoPilot-Geräts|
-|serialNumber|Zeichenfolge|Seriennummer des Windows AutoPilot-Geräts|
-|productKey|Zeichenfolge|Product Key des Windows AutoPilot-Geräts|
-|hardwareIdentifier|Binär|Hardware-Blob des Windows AutoPilot-Geräts|
-|Zustand|[importedWindowsAutopilotDeviceIdentityState](../resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate.md)|Aktueller Status des importierten Geräts|
+|id|String|GUID des Objekts|
+|orderIdentifier|String|Auftrags-ID des Windows AutoPilot-Geräts|
+|serialNumber|String|Seriennummer des Windows AutoPilot-Geräts|
+|productKey|String|Product Key des Windows AutoPilot-Geräts|
+|hardwareIdentifier|Binary|Hardware-Blob des Windows AutoPilot-Geräts|
+|state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate.md)|Aktueller Status des importierten Geräts|
 
 
 
@@ -53,9 +53,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 Content-type: application/json
-Content-length: 464
+Content-length: 541
 
 {
+  "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
   "orderIdentifier": "Order Identifier value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
@@ -93,11 +94,6 @@ Content-Length: 590
   }
 }
 ```
-
-
-
-
-
 
 
 

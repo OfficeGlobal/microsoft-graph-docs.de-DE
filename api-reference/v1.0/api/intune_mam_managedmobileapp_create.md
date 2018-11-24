@@ -27,8 +27,8 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „managedMobileApp“ an.
@@ -38,8 +38,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|Bezeichner der App mit dem zugehörigen Betriebssystemtyp|
-|id|Zeichenfolge|Schlüssel der Entität|
-|Version|Zeichenfolge|Version der Entität|
+|id|String|Schlüssel der Entität|
+|version|String|Version der Entität|
 
 
 
@@ -79,11 +79,6 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

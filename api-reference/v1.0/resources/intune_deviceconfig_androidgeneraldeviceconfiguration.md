@@ -1,4 +1,4 @@
-# <a name="androidgeneraldeviceconfiguration-resource-type"></a>androidGeneralDeviceConfiguration-Ressourcentyp
+# <a name="androidgeneraldeviceconfiguration-resource-type"></a>androidGeneralDeviceConfiguration-Ressourcentyp 
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
@@ -18,79 +18,79 @@ Erbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigurat
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |Beschreibung|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|appsBlockClipboardSharing|boolesch|Gibt an, ob die gemeinsame Nutzung der Zwischenablage zum Kopieren und Einfügen zwischen Anwendungen blockiert werden soll.|
-|appsBlockCopyPaste|boolesch|Gibt an, ob Kopieren und Einfügen zwischen Anwendungen blockiert werden soll.|
-|appsBlockYouTube|boolesch|Gibt an, ob die YouTube-App blockiert werden soll.|
-|bluetoothBlocked|boolesch|Gibt an, ob Bluetooth blockiert werden soll.|
-|cameraBlocked|boolesch|Gibt an, ob die Verwendung der Kamera blockiert werden soll.|
+|appsBlockClipboardSharing|Boolescher Wert|Gibt an, ob die gemeinsame Nutzung der Zwischenablage zum Kopieren und Einfügen zwischen Anwendungen blockiert werden soll.|
+|appsBlockCopyPaste|Boolescher Wert|Gibt an, ob Kopieren und Einfügen zwischen Anwendungen blockiert werden soll.|
+|appsBlockYouTube|Boolescher Wert|Gibt an, ob die YouTube-App blockiert werden soll.|
+|bluetoothBlocked|Boolescher Wert|Gibt an, ob Bluetooth blockiert werden soll.|
+|cameraBlocked|Boolescher Wert|Gibt an, ob die Verwendung der Kamera blockiert werden soll.|
 |cellularBlockDataRoaming|Boolescher Wert|Gibt an, ob Datenroaming blockiert werden soll.|
-|cellularBlockMessaging|boolesch|Gibt an, ob SMS-/MMS-Nachrichten blockiert werden sollen.|
-|cellularBlockVoiceRoaming|boolesch|Gibt an, ob Sprachroaming blockiert werden soll.|
-|cellularBlockWifiTethering|boolesch|Gibt an, ob die Synchronisierung von WLAN-Tethering blockiert werden soll.|
-|compliantAppsList|Collection von Objekten des Typs [appListItem](../resources/intune_deviceconfig_applistitem.md)|Liste aller Apps, für die die Konformitätsrichtlinie gilt (Zulassungsliste oder Sperrliste, gesteuert über „compliantAppListType“). Diese Collection darf maximal 10.000 Elemente enthalten.|
+|cellularBlockMessaging|Boolescher Wert|Gibt an, ob SMS-/MMS-Nachrichten blockiert werden sollen.|
+|cellularBlockVoiceRoaming|Boolescher Wert|Gibt an, ob Sprachroaming blockiert werden soll.|
+|cellularBlockWifiTethering|Boolescher Wert|Gibt an, ob die Synchronisierung von WLAN-Tethering blockiert werden soll.|
+|compliantAppsList|Sammlung von Objekten des Typs [appListItem](../resources/intune_deviceconfig_applistitem.md)|Liste aller Apps, für die die Konformitätsrichtlinie gilt (Zulassungsliste oder Sperrliste, gesteuert über „compliantAppListType“). Diese Collection darf maximal 10.000 Elemente enthalten.|
 |compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Typ der in „compliantAppsList“ definierten Liste. Mögliche Werte sind: `none`, `appsInListCompliant` und `appsNotInListCompliant`.|
-|diagnosticDataBlockSubmission|boolesch|Gibt an, ob die Übermittlung von Diagnosedaten blockiert werden soll.|
-|locationServicesBlocked|boolesch|Gibt an, ob die Ortungsdienste blockiert werden sollen.|
-|googleAccountBlockAutoSync|boolesch|Gibt an, ob die automatische Synchronisierung von Google-Konten blockiert werden soll.|
-|googlePlayStoreBlocked|boolesch|Gibt an, ob der Google Play-Store blockiert werden soll.|
-|kioskModeBlockSleepButton|boolesch|Gibt an, ob die Standbytaste im Kioskmodus blockiert werden soll.|
-|kioskModeBlockVolumeButtons|boolesch|Gibt an, ob die Lautstärkeregler im Kioskmodus blockiert werden sollen.|
-|kioskModeApps|Collection von Objekten des Typs [appListItem](../resources/intune_deviceconfig_applistitem.md)|Eine Liste der Apps, die ausgeführt werden können, wenn sich das Gerät im Kioskmodus befindet. Diese Collection darf maximal 500 Elemente enthalten.|
-|nfcBlocked|boolesch|Gibt an, ob NFC (Near Field Communication) blockiert werden soll.|
-|passwordBlockFingerprintUnlock|boolesch|Gibt an, ob die Entsperrung durch Fingerabdruck blockiert werden soll.|
-|passwordBlockTrustAgents|boolesch|Gibt an, ob Smart Lock oder andere Vertrauensstellungs-Agents blockiert werden sollen.|
+|diagnosticDataBlockSubmission|Boolescher Wert|Gibt an, ob die Übermittlung von Diagnosedaten blockiert werden soll.|
+|locationServicesBlocked|Boolescher Wert|Gibt an, ob die Ortungsdienste blockiert werden sollen.|
+|googleAccountBlockAutoSync|Boolescher Wert|Gibt an, ob die automatische Synchronisierung von Google-Konten blockiert werden soll.|
+|googlePlayStoreBlocked|Boolescher Wert|Gibt an, ob der Google Play-Store blockiert werden soll.|
+|kioskModeBlockSleepButton|Boolescher Wert|Gibt an, ob die Standbytaste im Kiosk-Modus blockiert werden soll.|
+|kioskModeBlockVolumeButtons|Boolescher Wert|Gibt an, ob die Lautstärkeregler im Kiosk-Modus blockiert werden sollen.|
+|kioskModeApps|Sammlung von Objekten des Typs [appListItem](../resources/intune_deviceconfig_applistitem.md)|Eine Liste der Apps, die ausgeführt werden können, wenn sich das Gerät im Kioskmodus befindet. Diese Collection darf maximal 500 Elemente enthalten.|
+|nfcBlocked|Boolescher Wert|Gibt an, ob NFC (Near Field Communication) blockiert werden soll.|
+|passwordBlockFingerprintUnlock|Boolescher Wert|Gibt an, ob die Entsperrung durch Fingerabdruck blockiert werden soll.|
+|passwordBlockTrustAgents|Boolescher Wert|Gibt an, ob Smart Lock oder andere Vertrauensstellungs-Agents blockiert werden sollen.|
 |passwordExpirationDays|Int32|Zeit in Tagen bis zum Ablaufen des Kennworts. Gültige Werte: 1 bis 365.|
 |passwordMinimumLength|Int32|Mindestlänge von Kennwörtern. Gültige Werte: 4 bis 16.|
-|passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Zeitraum von Inaktivität in Minuten, bevor es zu einem Bildschirmtimeout kommt|
+|passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Zeitraum von Inaktivität in Minuten, bevor es zu einem Bildschirmtimeout kommt.|
 |passwordPreviousPasswordBlockCount|Int32|Anzahl der zuletzt verwendeten Kennwörter, die nicht erneut verwendet werden dürfen. Gültige Werte: 0 bis 24.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Legt fest, nach wie vielen fehlgeschlagenen Anmeldeversuchen eine Zurücksetzung auf die Werkseinstellungen durchgeführt wird. Gültige Werte: 4 bis 11.|
-|passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|Benötigter Kennworttyp. Mögliche Werte sind: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex` und `any`.|
-|passwordRequired|boolesch|Gibt an, ob ein Kennwort erforderlich ist.|
-|powerOffBlocked|boolesch|Gibt an, ob das Ausschalten des Geräts blockiert werden soll.|
-|factoryResetBlocked|boolesch|Gibt an, ob verhindert werden soll, dass der Benutzer eine Zurücksetzung auf die Werkseinstellungen durchführt.|
-|screenCaptureBlocked|boolesch|Gibt an, ob Screenshots blockiert werden sollen.|
-|deviceSharingAllowed|boolesch|Gibt an, ob der Gerätefreigabemodus zugelassen wird.|
-|storageBlockGoogleBackup|boolesch|Gibt an, ob die Google-Sicherung blockiert werden soll.|
-|storageBlockRemovableStorage|boolesch|Gibt an, ob die Verwendung von Wechselmedien blockiert werden soll.|
-|storageRequireDeviceEncryption|boolesch|Gibt an, ob eine Geräteverschlüsselung erforderlich ist.|
-|storageRequireRemovableStorageEncryption|boolesch|Gibt an, ob die Verschlüsselung von Wechselmedien erforderlich ist.|
-|voiceAssistantBlocked|boolesch|Gibt an, ob die Verwendung des Sprach-Assistenten blockiert werden soll.|
-|voiceDialingBlocked|boolesch|Gibt an, ob das Sprachwahlverfahren blockiert werden soll.|
-|webBrowserBlockPopups|boolesch|Gibt an, ob Popups innerhalb des Webbrowsers blockiert werden sollen.|
-|webBrowserBlockAutofill|boolesch|Gibt an, ob das AutoAusfüllen-Feature des Webbrowsers blockiert werden soll.|
-|webBrowserBlockJavaScript|boolesch|Gibt an, ob JavaScript im Webbrowser blockiert werden soll.|
-|webBrowserBlocked|boolesch|Gibt an, ob der Webbrowser blockiert werden soll.|
+|passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|Geforderter Kennworttyp. Mögliche Werte sind: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex` und `any`.|
+|passwordRequired|Boolescher Wert|Gibt an, ob ein Kennwort erforderlich ist.|
+|powerOffBlocked|Boolescher Wert|Gibt an, ob das Ausschalten des Geräts blockiert werden soll.|
+|factoryResetBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Zurücksetzung auf Werkseinstellungen durchführt.|
+|screenCaptureBlocked|Boolescher Wert|Gibt an, ob Screenshots blockiert werden sollen.|
+|deviceSharingAllowed|Boolescher Wert|Gibt an, ob der Gerätefreigabemodus zugelassen wird.|
+|storageBlockGoogleBackup|Boolescher Wert|Gibt an, ob die Google-Sicherung blockiert werden soll.|
+|storageBlockRemovableStorage|Boolescher Wert|Gibt an, ob die Verwendung von Wechselmedien blockiert werden soll.|
+|storageRequireDeviceEncryption|Boolescher Wert|Gibt an, ob Geräteverschlüsselung erforderlich ist.|
+|storageRequireRemovableStorageEncryption|Boolescher Wert|Gibt an, ob die Wechselmedienverschlüsselung erforderlich ist.|
+|voiceAssistantBlocked|Boolescher Wert|Gibt an, ob die Verwendung des Sprach-Assistenten blockiert werden soll.|
+|voiceDialingBlocked|Boolescher Wert|Gibt an, ob das Sprachwahlverfahren blockiert werden soll.|
+|webBrowserBlockPopups|Boolescher Wert|Gibt an, ob Popups innerhalb des Webbrowsers blockiert werden sollen.|
+|webBrowserBlockAutofill|Boolescher Wert|Gibt an, ob das AutoAusfüllen-Feature blockiert werden soll.|
+|webBrowserBlockJavaScript|Boolescher Wert|Gibt an, ob JavaScript im Webbrowser blockiert werden soll.|
+|webBrowserBlocked|Boolescher Wert|Gibt an, ob der Webbrowser blockiert werden soll.|
 |webBrowserCookieSettings|[webBrowserCookieSettings](../resources/intune_deviceconfig_webbrowsercookiesettings.md)|Cookieeinstellungen des Webbrowsers. Mögliche Werte sind: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited` und `allowAlways`.|
-|wiFiBlocked|boolesch|Gibt an, ob die WLAN-Synchronisierung blockiert werden soll.|
-|appsInstallAllowList|Collection von Objekten des Typs [appListItem](../resources/intune_deviceconfig_applistitem.md)|Liste von Apps, die auf dem KNOX-Gerät installiert werden dürfen. Diese Collection darf maximal 500 Elemente enthalten.|
-|appsLaunchBlockList|Collection von Objekten des Typs [appListItem](../resources/intune_deviceconfig_applistitem.md)|Liste von Apps, die auf dem KNOX-Gerät nicht gestartet werden dürfen. Diese Collection darf maximal 500 Elemente enthalten.|
-|appsHideList|Collection von Objekten des Typs [appListItem](../resources/intune_deviceconfig_applistitem.md)|Liste von Apps, die auf dem KNOX-Gerät ausgeblendet werden sollen. Diese Collection darf maximal 500 Elemente enthalten.|
-|securityRequireVerifyApps|Boolesch|Legt fest, dass die Android-Funktion „Verify Apps“ aktiviert sein muss.|
+|wiFiBlocked|Boolescher Wert|Gibt an, ob die Synchronisierung der WLAN-Funktion blockiert werden soll.|
+|appsInstallAllowList|Sammlung von Objekten des Typs [appListItem](../resources/intune_deviceconfig_applistitem.md)|Liste von Apps, die auf dem KNOX-Gerät installiert werden dürfen. Diese Collection darf maximal 500 Elemente enthalten.|
+|appsLaunchBlockList|Sammlung von Objekten des Typs [appListItem](../resources/intune_deviceconfig_applistitem.md)|Liste von Apps, die auf dem KNOX-Gerät nicht gestartet werden dürfen. Diese Collection darf maximal 500 Elemente enthalten.|
+|appsHideList|Sammlung von Objekten des Typs [appListItem](../resources/intune_deviceconfig_applistitem.md)|Liste von Apps, die auf dem KNOX-Gerät ausgeblendet werden sollen. Diese Collection darf maximal 500 Elemente enthalten.|
+|securityRequireVerifyApps|Boolescher Wert|Legt fest, dass die Android-Funktion „Verify Apps“ aktiviert sein muss.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|Aufgaben|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)-Sammlung|Liste der Zuweisungen für das Gerätekonfigurationsprofil. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md)-Sammlung|Installationsstatus der Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md)-Sammlung|Installationsstatus der Gerätekonfiguration nach Benutzer. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|assignments|Sammlung von Objekten des Typs [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)|Liste der Zuweisungen für das Gerätekonfigurationsprofil. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|deviceStatuses|Sammlung von Objekten des Typs [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md)|Installationsstatus der Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|userStatuses|Sammlung von Objekten des Typs [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md)|Gerät Konfiguration Installationsstatus durch Benutzer. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Übersicht über den Status der Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Übersicht über den Status der Gerätekonfiguration nach Benutzer. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md)-Sammlung|Übersicht über den Einstellungsstatus für die Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|deviceSettingStateSummaries|Sammlung von Objekten des Typs [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md)|Übersicht über den Einstellungsstatus für die Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceConfiguration",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidGeneralDeviceConfiguration"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidGeneralDeviceConfiguration",
@@ -190,11 +190,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "securityRequireVerifyApps": true
 }
 ```
-
-
-
-
-
 
 
 

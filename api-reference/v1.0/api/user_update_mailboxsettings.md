@@ -6,7 +6,7 @@ Diese Einstellungen können Sie im Rahmen des [mailboxSettings](../resources/mai
 
 **Hinweis:** Sie können keine Postfacheinstellungen erstellen oder löschen.
 
-Wenn Sie die bevorzugte Zeitzone für einen Benutzer aktualisieren, können Sie diese im Windows- oder im [IANA-Format](http://www.iana.org/time-zones) (auch als Olson-Zeitzone bezeichnet) angeben.
+Wenn Sie die bevorzugte Zeitzone für einen Benutzer aktualisieren, können Sie diese im Windows- oder im [IANA-Format](https://www.iana.org/time-zones) (auch als Olson-Zeitzone bezeichnet) angeben.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
@@ -24,20 +24,20 @@ PATCH /me/mailboxSettings
 PATCH /users/{id|userPrincipalName}/mailboxSettings
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Eigenschaften an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben. Im Folgenden werden die beschreibbaren/aktualisierbaren Eigenschaften aufgelistet:
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Konfigurationseinstellungen zum automatischen Benachrichtigen des Absenders bei eingehenden E-Mails mit einer Nachricht vom angemeldeten Benutzer. Sie können solche Benachrichtigungen nur für einen zukünftigen Datumsbereich festlegen.|
+|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Konfigurationseinstellungen zum automatischen Benachrichtigen des Absenders bei eingehenden E-Mails mit einer Nachricht vom angemeldeten Benutzer. Sie können solche Benachrichtigungen für nur einen zukünftigen Datumsbereich festlegen.|
 |language|[localeInfo](../resources/localeinfo.md)|Die Gebietsschemainformationen des Benutzers, einschließlich der bevorzugten Sprache und Land/Region.|
-|timeZone|Zeichenfolge|Die Standardzeitzone für das Postfach des Benutzers.|
+|timeZone|string|Die Standardzeitzone für das Postfach des Benutzers.|
 |workingHours|[workingHours](../resources/workinghours.md)|Die Stunden, Wochentage und die Zeitzone, an denen bzw. in der der Benutzer arbeitet.|
 
 ## <a name="response"></a>Antwort
@@ -128,37 +128,37 @@ Content-Type: application/json
 
 {
   "workingHours": {
-      "endTime" : "18:30:00.0000000", 
-      "daysOfWeek": [ 
-          "Monday", 
-          "Tuesday", 
-          "Wednesday", 
-          "Thursday", 
-          "Friday", 
-          "Saturday" 
-      ], 
-      "timeZone" : { 
-         "@odata.type": "#microsoft.graph.customTimeZone", 
-         "bias":-300, 
+      "endTime" : "18:30:00.0000000", 
+      "daysOfWeek": [ 
+          "Monday", 
+          "Tuesday", 
+          "Wednesday", 
+          "Thursday", 
+          "Friday", 
+          "Saturday" 
+      ], 
+      "timeZone" : { 
+         "@odata.type": "#microsoft.graph.customTimeZone", 
+         "bias":-300, 
          "name": "Customized Time Zone",
-         "standardOffset":{   
-           "time":"02:00:00.0000000", 
-           "dayOccurrence":2, 
-           "dayOfWeek":"Sunday", 
-           "month":10, 
-           "year":0 
-         }, 
-         "daylightOffset":{   
-           "daylightBias":100, 
-           "time":"02:00:00.0000000", 
-           "dayOccurrence":4, 
-           "dayOfWeek":"Sunday", 
-           "month":5, 
-           "year":0 
-         } 
-      } 
+         "standardOffset":{   
+           "time":"02:00:00.0000000", 
+           "dayOccurrence":2, 
+           "dayOfWeek":"Sunday", 
+           "month":10, 
+           "year":0 
+         }, 
+         "daylightOffset":{   
+           "daylightBias":100, 
+           "time":"02:00:00.0000000", 
+           "dayOccurrence":4, 
+           "dayOfWeek":"Sunday", 
+           "month":5, 
+           "year":0 
+         } 
+      } 
   }
-} 
+} 
 ```
 ##### <a name="response-2"></a>Antwort 2
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.

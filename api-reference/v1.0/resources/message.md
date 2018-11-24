@@ -4,10 +4,10 @@ Dieser Ressourcentyp stellt eine Nachricht in einem mailFolder-Objekt dar.
 
 Diese Ressource unterstützt Folgendes:
 
-- Hinzufügen Ihrer eigenen Daten als benutzerdefinierte Kopfzeilen von Internet-Nachrichten. Fügen Sie benutzerdefinierte Kopfzeilen nur beim Erstellen einer Nachricht hinzu, und benennen Sie diese mit „x-“ beginnend. Nach dem Senden der Nachricht können Sie die Kopfzeilen nicht mehr ändern. Verwenden Sie den `$select`-Abfrageparameter des Vorgangs [zum Abrufen einer Nachricht](../api/message_get.md), um die Nachrichtenheader anzuzeigen.
-- Hinzufügen der eigenen Daten als benutzerdefinierte Eigenschaften als [Erweiterungen](../../../concepts/extensibility_overview.md).
-- Abonnieren von [Änderungsbenachrichtigungen](../../../concepts/webhooks.md).
-- Verwenden einer [delta-Abfrage](../../../concepts/delta_query_overview.md) zum Nachverfolgen von inkrementellen Hinzufügungen, Löschungen und Aktualisierungen durch Bereitstellen einer [delta](../api/message_delta.md)-Funktion.
+- Hinzufügen von Ihren eigenen Daten als benutzerdefinierte Internetkopfzeilen Nachricht. Benutzerdefinierte Header nur beim Erstellen einer Nachricht hinzufügen, und nennen Sie sie beginnend mit "x-". Nachdem die Nachricht gesendet wurde, können Sie die Kopfzeilen nicht ändern. Wenn die Kopfzeilen der Nachricht erhalten möchten, gelten die `$select` Abfragen Parameter in einem Vorgang [Meldung wird angezeigt](../api/message_get.md) .
+- Hinzufügen von Ihren eigenen Daten als benutzerdefinierte Eigenschaften als [Extensions](../../../concepts/extensibility_overview.md).
+- Abonnieren von [Benachrichtigungen zu ändern](../../../concepts/webhooks.md).
+- Verwenden einer [Delta-Abfrage](../../../concepts/delta_query_overview.md) zum Nachverfolgen von inkrementellen Hinzufügungen, Löschungen und Aktualisierungen durch Bereitstellen der [delta](../api/message_delta.md)-Funktion.
 
 ## <a name="methods"></a>Methoden
 
@@ -45,34 +45,34 @@ Diese Ressource unterstützt Folgendes:
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|bccRecipients|[Empfänger](recipient.md)-Sammlung|Die Bcc:-Empfänger der Nachricht.|
-|Text|[itemBody](itembody.md)|Der Text der Nachricht. Er kann im HTML- oder Textformat vorliegen.|
+|bccRecipients|[recipient](recipient.md) collection|Die Bcc:-Empfänger der Nachricht.|
+|body|[itemBody](itembody.md)|Der Text der Nachricht. Er kann im HTML- oder Textformat vorliegen.|
 |bodyPreview|Zeichenfolge|Die ersten 255 Zeichen des Nachrichtentexts. Liegt im Textformat vor.|
 |categories|Zeichenfolgenauflistung|Die Kategorien, die mit der Nachricht verknüpft sind.|
-|ccRecipients|[Empfänger](recipient.md)-Sammlung|Die Cc:-Empfänger der Nachricht.|
+|ccRecipients|[recipient](recipient.md) collection|Die Cc:-Empfänger der Nachricht.|
 |changeKey|Zeichenfolge|Die Version der Nachricht.|
 |conversationId|Zeichenfolge|Die ID der Unterhaltung, zu der die E-Mail gehört.|
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht erstellt wurde.|
-|flag|[followupFlag](followupflag.md)|Der Kennzeichenwert, der den Status, das Startdatum, das Fälligkeitsdatum oder das Enddatum für die Nachricht angibt.|
-|Von|[Empfänger](recipient.md)|Der Postfachbesitzer und Absender der Nachricht. Der Wert muss dem tatsächlich verwendeten Postfach entsprechen.|
+|Flag|[followupFlag](followupflag.md)|Der Wert des Flags, der den Status, das Startdatum, das Fälligkeitsdatum oder das Enddatum für die Nachricht angibt.|
+|Von|[Empfänger](recipient.md)|Der Postfachbesitzer und der Absender der Nachricht. Der Wert muss in das tatsächliche Postfach verwendet entsprechen.|
 |hasAttachments|Boolescher Wert|Gibt an, ob die Nachricht Anlagen enthält. Diese Eigenschaft enthält keine Inline-Anlagen, wenn eine Nachrichtalso  nur Inline-Anlagen enthält, ist diese Eigenschaft „false“. Um das Vorhandensein von Inline-Anlagen zu überprüfen, analysieren Sie die **body**-Eigenschaft so, dass nach einem `src`-Attribut, z. B. `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`, gesucht wird.|
 |id|Zeichenfolge|Eindeutiger Bezeichner für die Nachricht (beachten Sie, dass sich dieser Wert ändern kann, wenn eine Nachricht verschoben oder geändert wird)|
-|importance|importance| Die Wichtigkeit der Nachricht: `Low`, `Normal`, `High`.|
-|inferenceClassification | inferenceClassificationType | Die Klassifizierung der Nachricht für den Benutzer, basierend auf der abgeleiteten Relevanz oder Wichtigkeit oder auf einer expliziten Außerkraftsetzung. Mögliche Werte sind `focused`, oder `other`. |
-|internetMessageHeaders | [internetMessageHeaders](internetmessageheader.md)-Sammlung | Eine Sammlung von Nachrichtenkopfzeilen, die von [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) definiert sind. Der Satz enthält Nachrichtenheader, die den Netzwerkpfad einer Nachricht vom Absender bis zum Empfänger anzeigen. Ebenso kann er benutzerdefinierte Nachrichtenkopfzeilen enthalten, die App-Daten für die Nachricht beinhalten. |
-|internetMessageId |Zeichenfolge |Die Nachrichten-ID im von [RFC2822](http://www.ietf.org/rfc/rfc2822.txt) angegebenen Format. |
-|isDeliveryReceiptRequested|Boolesch|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
-|isDraft|Boolesch|Gibt an, ob die Nachricht ein Entwurf ist. Eine Nachricht ist ein Entwurf, solange sie noch nicht gesendet wurde.|
-|isRead|Boolesch|Gibt an, ob die Nachricht gelesen wurde.|
-|isReadReceiptRequested|Boolesch|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
+|Wichtigkeit|Wichtigkeit| Wichtigkeit der Nachricht: `Low`, `Normal`, `High`.|
+|inferenceClassification | inferenceClassificationType | Die Klassifizierung der Nachricht für Benutzer, basierend auf abgeleiteten Relevanz oder Wichtigkeit oder auf eine explizite Außerkraftsetzung vorliegt. Die möglichen Werte sind: `focused` oder `other`. |
+|internetMessageHeaders | [internetinternetMessageHeaders](internetmessageheader.md)-Sammlung | Eine Auflistung von Nachrichtenkopfzeilen von [RFC5322](https://www.ietf.org/rfc/rfc5322.txt)definiert. Der Satz enthält Nachrichtenkopfzeilen zurück, der den Netzwerkpfad durch eine Nachricht vom Absender an den Empfänger angibt. Sie können auch benutzerdefinierte Nachrichtenkopfzeilen enthalten, die die app-Daten für die Nachricht enthalten. |
+|internetMessageId |String |Die Nachrichten-ID im von [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) angegebenen Format. |
+|isDeliveryReceiptRequested|Boolescher Wert|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
+|isDraft|Boolescher Wert|Gibt an, ob die Nachricht ein Entwurf ist. Eine Nachricht ist ein Entwurf, solange sie noch nicht gesendet wurde.|
+|isRead|Boolescher Wert|Gibt an, ob die Nachricht gelesen wurde.|
+|isReadReceiptRequested|Boolescher Wert|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
 |lastModifiedDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht zuletzt geändert wurde.|
 |parentFolderId|Zeichenfolge|Der eindeutige Bezeichner für das übergeordnete mailFolder-Element der Nachricht.|
 |receivedDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht erhalten wurde.|
-|replyTo|[Empfänger](recipient.md)-Sammlung|Die E-Mail-Adressen, die beim Antworten verwendet werden sollen.|
-|Absender|[Empfänger](recipient.md)|Das Konto, das tatsächlich verwendet wird, um die Nachricht zu generieren. In den meisten Fällen ist dieser Wert der gleiche wie die Eigenschaft **von**. Sie können diese Eigenschaft auf einen anderen Wert setzen, wenn Sie eine Nachricht aus einem [geteilten Postfach](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes) senden oder eine Nachricht im [Auftrag von jemandem](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926) schicken. Der Wert muss in jedem Fall dem tatsächlich verwendeten Postfach entsprechen.|
+|replyTo|[recipient](recipient.md) collection|Die E-Mail-Adressen, die beim Antworten verwendet werden sollen.|
+|sender|[Empfänger](recipient.md)|Das Konto, das tatsächlich verwendet wird, um die Nachricht zu generieren. In den meisten Fällen beträgt dieser Wert **von** -Eigenschaft identisch. Sie können diese Eigenschaft auf einen anderen Wert festlegen, beim Senden einer Nachricht von einem [freigegebenen Postfach](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)oder Senden einer Nachricht als [Delegieren](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). Der Wert muss in jedem Fall das tatsächliche Postfach verwendet entsprechen.|
 |sentDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht gesendet wurde.|
 |Betreff|Zeichenfolge|Der Betreff der Nachricht.|
-|toRecipients|[Empfänger](recipient.md)-Sammlung|Die An:-Empfänger der Nachricht.|
+|toRecipients|[recipient](recipient.md) collection|Die An:-Empfänger der Nachricht.|
 |uniqueBody|[itemBody](itembody.md)|Der Teil des Nachrichtentexts, der nur in der aktuellen Nachricht vorhanden ist. **uniqueBody** wird nicht standardmäßig zurückgegeben, kann aber für eine bestimmte Nachricht mithilfe der Abfrage `?$select=uniqueBody` abgerufen werden. Er kann im HTML- oder Textformat vorliegen.|
 |webLink|Zeichenfolge|Die URL zum Öffnen der Nachricht in Outlook Web App.<br><br>Sie können am Ende der URL das Argument „ispopout“ anhängen, um zu ändern, wie die Nachricht angezeigt wird. Wenn „ispopout“ nicht vorhanden oder auf 1 festgelegt ist, wird die Nachricht in einem Popout-Fenster angezeigt. Wenn „ispopout“ auf 0 festgelegt ist, zeigt der Browser die Nachricht in Outlook Web App im Prüffensterbereich an.<br><br>Die Nachricht wird im Browser geöffnet, wenn Sie über Outlook Web App bei Ihrem Postfach angemeldet sind. Sie werden aufgefordert, sich anzumelden, wenn Sie noch nicht beim Browser angemeldet sind.<br><br>Auf diese URL kann von einem iFrame aus zugegriffen werden.|
 
@@ -93,7 +93,7 @@ Beim Schreiben einer Nachricht stellen in den meisten Fällen die From- und Send
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Anlagen|[attachment](attachment.md)-Sammlung|Die [fileAttachment](fileattachment.md)- und [itemAttachment](itemattachment.md)-Anlagen der Nachricht.|
+|attachments|[attachment](attachment.md)-Sammlung|Die [fileAttachment](fileattachment.md)- und [itemAttachment](itemattachment.md)-Anlagen der Nachricht.|
 |Erweiterungen|[extension](extension.md)-Sammlung|Die Sammlung der für die Nachricht definierten offenen Erweiterungen. Schreibgeschützt. Lässt NULL-Werte zu.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten mehrwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt NULL-Werte zu.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten einwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt Nullwerte zu.|
@@ -173,7 +173,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 - [Postfacheinstellungen abrufen](../api/user_get_mailboxsettings.md) 
 - [Postfacheinstellungen aktualisieren](../api/user_update_mailboxsettings.md)

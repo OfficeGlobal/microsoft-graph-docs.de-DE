@@ -25,8 +25,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) an.
@@ -35,9 +35,9 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität|
-|settingName|Zeichenfolge|Name der Einstellung|
-|instancePath|Zeichenfolge|Name des zur Einstellung gehörenden Objekts des Typs „InstancePath“|
+|id|String|Schlüssel der Entität|
+|settingName|String|Name der Einstellung|
+|instancePath|String|Name des zur Einstellung gehörenden Objekts des Typs „InstancePath“|
 |unknownDeviceCount|Int32|Anzahl der Geräte mit Meldung „Unknown“ für die Einstellung|
 |notApplicableDeviceCount|Int32|Anzahl der Geräte mit Meldung „Not Applicable“ für die Einstellung|
 |compliantDeviceCount|Int32|Anzahl der Geräte mit Meldung „Compliant“ für die Einstellung|
@@ -57,9 +57,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries/{settingStateDeviceSummaryId}
 Content-type: application/json
-Content-length: 296
+Content-length: 360
 
 {
+  "@odata.type": "#microsoft.graph.settingStateDeviceSummary",
   "settingName": "Setting Name value",
   "instancePath": "Instance Path value",
   "unknownDeviceCount": 2,
@@ -93,11 +94,6 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
-
-
-
-
-
 
 
 

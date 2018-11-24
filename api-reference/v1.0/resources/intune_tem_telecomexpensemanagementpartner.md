@@ -15,9 +15,9 @@ TelecomExpenseManagementPartner-Ressourcen stellen die Metadaten und den Status 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Eindeutiger Bezeichner des TEM-Partners|
-|displayName|Zeichenfolge|Anzeigename des TEM-Partners|
-|url|Zeichenfolge|Die URL für die Verwaltungssteuerung des TEM-Partners, mit der ein Administrator den TEM-Dienst konfigurieren kann.|
+|id|String|Eindeutiger Bezeichner des TEM-Partners|
+|displayName|String|Anzeigename des TEM-Partners|
+|url|String|Die URL für die Verwaltungssteuerung des TEM-Partners, mit der ein Administrator den TEM-Dienst konfigurieren kann.|
 |appAuthorized|Boolean|Gibt an, ob die AAD-App des Partners für den Zugriff auf Intune autorisiert wurde.|
 |enabled|Boolean|Gibt an, ob die Intune-Verbindung mit dem TEM-Dienst derzeit aktiviert oder deaktiviert ist.|
 |lastConnectionDateTime|DateTimeOffset|Zeitstempel der letzten vom TEM-Partner an Intune gesendeten Anforderung|
@@ -26,12 +26,12 @@ TelecomExpenseManagementPartner-Ressourcen stellen die Metadaten und den Status 
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.telecomExpenseManagementPartner"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.telecomExpenseManagementPartner",
@@ -43,11 +43,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
 
 
 

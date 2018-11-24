@@ -6,7 +6,7 @@ Stellt eine App in der Liste der verwalteten Anwendungen dar.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|Name|Zeichenfolge|Anwendungsname|
+|name|Zeichenfolge|Anwendungsname|
 |publisher|Zeichenfolge|Herausgeber der App|
 |appStoreUrl|Zeichenfolge|Store-URL der Anwendung|
 |appId|Zeichenfolge|Anwendungs- oder Paket-ID der Anwendung|
@@ -15,10 +15,11 @@ Stellt eine App in der Liste der verwalteten Anwendungen dar.
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appListItem"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.appListItem",
@@ -28,11 +29,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "appId": "String"
 }
 ```
-
-
-
-
-
 
 
 

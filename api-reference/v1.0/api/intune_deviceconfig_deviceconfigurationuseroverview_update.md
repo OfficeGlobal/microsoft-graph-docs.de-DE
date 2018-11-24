@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusO
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) an.
@@ -34,9 +34,9 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität|
+|id|String|Schlüssel der Entität|
 |pendingCount|Int32|Anzahl der ausstehenden Benutzer|
-|notApplicableCount|Int32|Anzahl der nicht anwendbaren Benutzer|
+|notApplicableCount|Int32|Anzahl der Benutzer nicht zutreffend|
 |successCount|Int32|Anzahl der erfolgreichen Benutzer|
 |errorCount|Int32|Anzahl der Benutzer mit Fehlern|
 |failedCount|Int32|Anzahl der fehlgeschlagenen Benutzer|
@@ -54,9 +54,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusOverview
 Content-type: application/json
-Content-length: 212
+Content-length: 282
 
 {
+  "@odata.type": "#microsoft.graph.deviceConfigurationUserOverview",
   "pendingCount": 12,
   "notApplicableCount": 2,
   "successCount": 12,
@@ -86,11 +87,6 @@ Content-Length: 331
   "configurationVersion": 4
 }
 ```
-
-
-
-
-
 
 
 

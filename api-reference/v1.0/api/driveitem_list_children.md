@@ -3,14 +3,14 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Auflisten der Inhalte eines Ordners
-ms.openlocfilehash: 31e20780379055b9ec8217bb90b4da26414a64e5
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: 2bf094f424ed0a1fda1c790c435619bf65f25e36
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23265218"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26596686"
 ---
-# <a name="list-children-of-a-driveitem"></a>Untergeordnete Elemente eines DriveItem auflisten
+# <a name="list-children-of-a-driveitem"></a>Untergeordnetes Element eines DriveItem auflisten
 
 Eine Auflistung von [DriveItems](../resources/driveitem.md) im **untergeordneten** Verhältnis eines DriveItem zurückgeben.
 
@@ -107,7 +107,7 @@ Content-type: application/json
 
 **Hinweis:** Wenn eine Auflistung die Standardseitengröße (200 Artikel) überschreitet, wird die Eigenschaft **@odata.nextLink** in der Antwort zurückgegeben, damit angezeigt wird, dass mehr Elemente zur Verfügung, und die Anfrage-URL für die nächste Seite von Elementen zurückzugeben.
 
-Sie können die Seitengröße über [Optionale Abfragezeichenfolge-Parameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) steuern.
+Sie können die Seitengröße über [Optionale Abfragezeichenfolge-Parameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) steuern.
 
 ### <a name="error-responses"></a>Fehlerantworten
 

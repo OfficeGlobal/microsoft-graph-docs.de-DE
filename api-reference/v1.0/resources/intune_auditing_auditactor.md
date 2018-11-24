@@ -6,7 +6,7 @@ Eine Klasse, die die Eigenschaften für den Audit-Akteur enthält.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|Typ|Zeichenfolge|Akteurtyp.|
+|type|Zeichenfolge|Akteurtyp|
 |userPermissions|Zeichenfolgenauflistung|Liste der Benutzerberechtigungen, nachdem die Überwachung ausgeführt wurde.|
 |applicationId|Zeichenfolge|AAD-Anwendungs-ID|
 |applicationDisplayName|Zeichenfolge|Anwendungsname|
@@ -19,10 +19,11 @@ Eine Klasse, die die Eigenschaften für den Audit-Akteur enthält.
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.auditActor"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.auditActor",
@@ -38,11 +39,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "userId": "String"
 }
 ```
-
-
-
-
-
 
 
 

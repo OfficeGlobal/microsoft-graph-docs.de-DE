@@ -24,8 +24,8 @@ POST /organization/{organizationId}/setMobileDeviceManagementAuthority
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer &lt;token&gt;. Erforderlich.|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -51,11 +51,6 @@ Content-Length: 18
   "value": 2
 }
 ```
-
-
-
-
-
 
 
 

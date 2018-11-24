@@ -38,7 +38,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |:---------------|:--------|:----------|
 |description|String|Beschreibung für die Schemaerweiterung.|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md)-Sammlung|Die Sammlung von Eigenschaftennamen und Typen, die die Schemaerweiterungsdefinition bilden. Nur additive Änderungen sind zulässig. |
-|status|String|Der Lebenszyklusstatus der Schemaerweiterung. Bei der Erstellung ist der anfängliche Status **InDevelopment**. Mögliche Statusübergänge sind von **InDevelopment** zu **Available**, von **Available** zu **Deprecated** und von **Deprecated** zu **Available**.|
+|status|String|Der Lebenszyklusstatus der Schemaerweiterung. Der Anfangszustand erstellt worden ist **InDevelopment**. Möglichen Zuständen Übergänge liegen **InDevelopment** bis **verfügbar** und **veraltet** **verfügbar** .|
 |targetTypes|String collection|Satz von Microsoft Graph-Typen (die Erweiterungen unterstützen können), auf die die Schemaerweiterung angewendet werden kann.  Nur additive Änderungen sind zulässig.|
 
 ## <a name="response"></a>Antwort

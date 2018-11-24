@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) an.
@@ -34,17 +34,17 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität|
-|Einstellung|Zeichenfolge|Klassenname und Eigenschaftenname der Einstellung|
-|settingName|Zeichenfolge|Gemeldeter Einstellungsname|
-|deviceId|Zeichenfolge|Gemeldete Geräte-ID|
-|deviceName|Zeichenfolge|Gemeldeter Gerätename|
-|userId|Zeichenfolge|Gemeldete Benutzer-ID|
-|userEmail|Zeichenfolge|Gemeldete Benutzer-E-Mail-Adresse|
-|userName|Zeichenfolge|Gemeldeter Benutzername|
-|userPrincipalName|Zeichenfolge|Gemeldeter Benutzerprinzipalname|
-|deviceModel|Zeichenfolge|Gemeldetes Gerätemodell|
-|Zustand|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
+|id|String|Schlüssel der Entität|
+|Einstellung|String|Der Klassenname und der Eigenschaftenname der Einstellung.|
+|settingName|String|Der gemeldete Einstellungsname|
+|deviceId|String|Die gemeldete Geräte-ID|
+|deviceName|String|Der gemeldete Gerätename|
+|userId|String|Die gemeldete Benutzer-ID|
+|userEmail|String|Die gemeldete Benutzer-E-Mail-Adresse|
+|userName|String|Der gemeldete Benutzername|
+|userPrincipalName|String|Der gemeldete Benutzerprinzipalname|
+|deviceModel|String|Das gemeldete Gerätemodell|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Toleranzperiode für die Gerätekonformität|
 
 
@@ -58,9 +58,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/{deviceComplianceSettingStateId}
 Content-type: application/json
-Content-length: 450
+Content-length: 517
 
 {
+  "@odata.type": "#microsoft.graph.deviceComplianceSettingState",
   "setting": "Setting value",
   "settingName": "Setting Name value",
   "deviceId": "Device Id value",
@@ -98,11 +99,6 @@ Content-Length: 566
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
-
-
-
-
 
 
 

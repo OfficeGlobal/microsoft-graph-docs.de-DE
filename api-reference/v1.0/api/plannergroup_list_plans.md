@@ -1,6 +1,6 @@
 # <a name="list-plans"></a>Pläne auflisten
 
-Dient zum Abrufen einer Liste von **plannerplan**-Objekten, die im Besitz eines [group](../resources/group.md)-Objekts sind.
+Abrufen einer Liste von **PlannerPlan** -Objekten, die ein [Group](../resources/group.md) -Objekt gehören.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -13,13 +13,13 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/planner/plans
+GET /groups/{group-id}/planner/plans
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
-| Autorisierung  | Bearer {token}. Erforderlich. |
+| Authorization  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

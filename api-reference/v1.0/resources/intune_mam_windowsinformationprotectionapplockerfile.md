@@ -15,22 +15,22 @@ Windows Information Protection-AppLocker-Datei
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|Zeichenfolge|Der Anzeigename|
-|fileHash|Zeichenfolge|SHA256-Hash der Datei|
-|file|Binär|Datei als Bytearray|
-|id|Zeichenfolge|Schlüssel der Entität|
-|Version|Zeichenfolge|Version der Entität|
+|displayName|String|Der Anzeigename|
+|fileHash|String|SHA256-Hash der Datei|
+|file|Binary|Datei als Bytearray|
+|id|String|Schlüssel der Entität.|
+|version|String|Version der Entität|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionAppLockerFile"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLockerFile",
@@ -41,11 +41,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "version": "String"
 }
 ```
-
-
-
-
-
 
 
 

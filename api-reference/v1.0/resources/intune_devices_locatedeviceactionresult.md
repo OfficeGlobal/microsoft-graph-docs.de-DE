@@ -10,7 +10,7 @@ Erbt von [deviceActionResult](../resources/intune_devices_deviceactionresult.md)
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |actionName|Zeichenfolge|Aktionsname, geerbt von [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|actionState|[actionState](../resources/intune_devices_actionstate.md)|Zustand der aus [DeviceActionResult](../resources/intune_devices_deviceactionresult.md) geerbten Aktion. Mögliche Werte sind: `none`, `pending`, `canceled`, `active`, `done`, `failed` und `notSupported`.|
+|actionState|[actionState](../resources/intune_devices_actionstate.md)|Status der Aktion Inherited aus [DeviceActionResult](../resources/intune_devices_deviceactionresult.md). Mögliche Werte sind: `none`, `pending`, `canceled`, `active`, `done`, `failed` und `notSupported`.|
 |startDateTime|DateTimeOffset|Zeit, zu der die Aktion initiiert wurde. Geerbt von [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Zeit, zu der der Aktionszustand zuletzt aktualisiert wurde. Geerbt von [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |deviceLocation|[deviceGeoLocation](../resources/intune_devices_devicegeolocation.md)|Standort des Geräts|
@@ -19,10 +19,11 @@ Erbt von [deviceActionResult](../resources/intune_devices_deviceactionresult.md)
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.locateDeviceActionResult"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.locateDeviceActionResult",
@@ -43,11 +44,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   }
 }
 ```
-
-
-
-
-
 
 
 

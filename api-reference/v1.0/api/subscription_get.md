@@ -15,7 +15,8 @@ In der folgenden Tabelle ist für jede Ressource die entsprechende vorgeschlagen
 | Gruppen                      | Group.Read.All      |
 | Benutzer                       | User.Read.All       |
 | Laufwerk (OneDrive eines Benutzers)    | Files.ReadWrite     |
-| Laufwerke (freigegebene SharePoint-Inhalte und Laufwerke) | Files.ReadWrite.All |
+| Laufwerke (gemeinsame SharePoint-Inhalte und Laufwerke) | Files.ReadWrite.All |
+|Sicherheitshinweis| SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -27,13 +28,13 @@ GET /subscriptions/{id}
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
 
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 

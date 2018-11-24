@@ -1,8 +1,8 @@
-# <a name="get-manageddevice"></a>Abrufen von „managedDevice“
+# <a name="get-manageddevice"></a>managedDevice abrufen
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [managedDevice](../resources/intune_devices_manageddevice.md).
+Lesen von Eigenschaften und Beziehungen des [managedDevice](../resources/intune_devices_manageddevice.md)-Objekts.
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -24,18 +24,18 @@ GET /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevice
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|application/json|
+|Authorization|Bearer &lt;token&gt;. Erforderlich.|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und ein Objekt des Typs [managedDevice](../resources/intune_devices_manageddevice.md) im Antworttext zurück.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [managedDevice](../resources/intune_devices_manageddevice.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 ### <a name="request"></a>Anforderung
@@ -154,11 +154,6 @@ Content-Length: 4920
   }
 }
 ```
-
-
-
-
-
 
 
 

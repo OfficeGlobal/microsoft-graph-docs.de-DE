@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md) an.
@@ -34,41 +34,41 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|id|String|Schlüssel der Entität. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|Beschreibung|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|applyOnlyToWindowsPhone81|boolesch|Wert, der angibt, ob die Richtlinie nur für Windows Phone 8.1 gilt. Diese Eigenschaft ist schreibgeschützt.|
-|appsBlockCopyPaste|boolesch|Gibt an, ob Kopieren/Einfügen blockiert werden soll.|
-|bluetoothBlocked|boolesch|Gibt an, ob Bluetooth blockiert werden soll.|
-|cameraBlocked|boolesch|Gibt an, ob die Kamera blockiert werden soll.|
-|cellularBlockWifiTethering|boolesch|Gibt an, ob WLAN-Tethering blockiert werden soll. Hat keine Auswirkungen, wenn die WLAN-Funktion blockiert ist.|
+|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|applyOnlyToWindowsPhone81|Boolean|Wert, der angibt, ob die Richtlinie nur für Windows Phone 8.1 gilt. Diese Eigenschaft ist schreibgeschützt.|
+|appsBlockCopyPaste|Boolean|Gibt an, ob Kopieren/Einfügen blockiert werden soll.|
+|bluetoothBlocked|Boolean|Gibt an, ob Bluetooth blockiert werden soll.|
+|cameraBlocked|Boolean|Gibt an, ob die Kamera blockiert werden soll.|
+|cellularBlockWifiTethering|Boolean|Gibt an, ob WLAN-Tethering blockiert werden soll. Hat keine Auswirkungen, wenn die WLAN-Funktion blockiert ist.|
 |compliantAppsList|Collection von Objekten des Typs [appListItem](../resources/intune_deviceconfig_applistitem.md)|Liste aller Apps, für die die Konformitätsrichtlinie gilt (Zulassungsliste oder Sperrliste, gesteuert über „compliantAppListType“). Diese Collection darf maximal 10.000 Elemente enthalten.|
-|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Eine Liste in der AppComplianceList. Mögliche Werte: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
-|diagnosticDataBlockSubmission|boolesch|Gibt an, ob die Übermittlung von Diagnosedaten blockiert werden soll.|
-|emailBlockAddingAccounts|boolesch|Gibt an, ob benutzerdefinierte E-Mail-Konten blockiert werden sollen.|
-|locationServicesBlocked|boolesch|Gibt an, ob die Ortungsdienste blockiert werden sollen.|
-|microsoftAccountBlocked|boolesch|Gibt an, ob die Verwendung eines Microsoft-Kontos erlaubt ist.|
-|nfcBlocked|boolesch|Gibt an, ob NFC (Near Field Communication) blockiert werden soll.|
-|passwordBlockSimple|boolesch|Gibt an, ob die Kalendersynchronisierung blockiert werden soll.|
-|passwordExpirationDays|Int32|Zeit in Tagen bis zum Ablaufen des Kennworts.|
-|passwordMinimumLength|Int32|Mindestlänge von Kennwörtern.|
+|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Typ der in „compliantAppsList“ definierten Liste. Mögliche Werte sind: `none`, `appsInListCompliant` und `appsNotInListCompliant`.|
+|diagnosticDataBlockSubmission|Boolean|Gibt an, ob die Übermittlung von Diagnosedaten blockiert werden soll.|
+|emailBlockAddingAccounts|Boolean|Gibt an, ob benutzerdefinierte E-Mail-Konten blockiert werden sollen.|
+|locationServicesBlocked|Boolean|Gibt an, ob die Ortungsdienste blockiert werden sollen.|
+|microsoftAccountBlocked|Boolean|Gibt an, ob die Verwendung eines Microsoft-Kontos erlaubt ist.|
+|nfcBlocked|Boolean|Gibt an, ob NFC (Near Field Communication) blockiert werden soll.|
+|passwordBlockSimple|Boolean|Gibt an, ob die Kalendersynchronisierung blockiert werden soll.|
+|passwordExpirationDays|Int32|Zeit in Tagen bis zum Ablaufen des Kennworts|
+|passwordMinimumLength|Int32|Mindestlänge von Kennwörtern|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Zeitraum von Inaktivität in Minuten, nach dem es zu einem Bildschirmtimeout kommt|
 |passwordMinimumCharacterSetCount|Int32|Anzahl von Zeichensätzen, die ein Kennwort enthalten muss|
 |passwordPreviousPasswordBlockCount|Int32|Anzahl der zuletzt verwendeten Kennwörter, die nicht erneut verwendet werden dürfen. Gültige Werte: 0 bis 24.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Legt fest, nach wie vielen fehlgeschlagenen Anmeldeversuchen eine Zurücksetzung auf die Werkseinstellungen durchgeführt wird.|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Der benötigte Kennworttyp. Mögliche Werte: `deviceDefault`, `alphanumeric`, `numeric`.|
-|passwordRequired|boolesch|Gibt an, ob ein Kennwort erforderlich ist.|
-|screenCaptureBlocked|boolesch|Gibt an, ob Screenshots blockiert werden sollen.|
-|storageBlockRemovableStorage|boolesch|Gibt an, ob Wechselmedien blockiert werden sollen.|
-|storageRequireEncryption|boolesch|Gibt an, ob Verschlüsselung erforderlich ist.|
-|webBrowserBlocked|boolesch|Gibt an, ob der Webbrowser blockiert werden soll.|
-|wifiBlocked|boolesch|Gibt an, ob die WLAN-Funktion blockiert werden soll.|
-|wifiBlockAutomaticConnectHotspots|boolesch|Gibt an, ob die automatische Herstellung einer Verbindung zu WLAN-Hotspots blockiert werden soll. Hat keine Auswirkungen, wenn die WLAN-Funktion blockiert ist.|
-|wifiBlockHotspotReporting|boolesch|Gibt an, ob die Erstellung von Berichten zu WLAN-Hotspots blockiert werden soll. Hat keine Auswirkungen, wenn die WLAN-Funktion blockiert ist.|
-|windowsStoreBlocked|boolesch|Gibt an, ob der Windows Store blockiert werden soll.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Geforderter Kennworttyp. Mögliche Werte sind: `deviceDefault`, `alphanumeric` und `numeric`.|
+|passwordRequired|Boolean|Gibt an, ob ein Kennwort erforderlich ist.|
+|screenCaptureBlocked|Boolean|Gibt an, ob Screenshots blockiert werden sollen.|
+|storageBlockRemovableStorage|Boolean|Gibt an, ob Wechselmedien blockiert werden sollen.|
+|storageRequireEncryption|Boolean|Gibt an, ob Verschlüsselung erforderlich ist.|
+|webBrowserBlocked|Boolean|Gibt an, ob der Webbrowser blockiert werden soll.|
+|wifiBlocked|Boolean|Gibt an, ob die WLAN-Funktion blockiert werden soll.|
+|wifiBlockAutomaticConnectHotspots|Boolean|Gibt an, ob die automatische Herstellung einer Verbindung zu WLAN-Hotspots blockiert werden soll. Hat keine Auswirkungen, wenn die WLAN-Funktion blockiert ist.|
+|wifiBlockHotspotReporting|Boolean|Gibt an, ob die Erstellung von Berichten zu WLAN-Hotspots blockiert werden soll. Hat keine Auswirkungen, wenn die WLAN-Funktion blockiert ist.|
+|windowsStoreBlocked|Boolean|Gibt an, ob der Windows Store blockiert werden soll.|
 
 
 
@@ -81,10 +81,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1452
+Content-length: 1461
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.windowsPhone81GeneralConfiguration",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -182,11 +182,6 @@ Content-Length: 1633
   "windowsStoreBlocked": true
 }
 ```
-
-
-
-
-
 
 
 

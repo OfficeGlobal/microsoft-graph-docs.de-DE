@@ -12,22 +12,22 @@ Einzelne Entität, die die Exchange-Einstellungen für lokalen bedingten Zugriff
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Noch nicht dokumentiert|
-|aktiviert|Boolesch|Gibt an, ob lokaler bedingter Zugriff für diese Organisation aktiviert ist.|
+|id|String|Noch nicht dokumentiert|
+|enabled|Boolean|Gibt an, ob lokaler bedingter Zugriff für diese Organisation aktiviert ist.|
 |includedGroups|GUID-Sammlung|Benutzergruppen, für die der lokale bedingte Zugriff gilt. Alle Benutzer in diesen Gruppen müssen verwaltete und für den E-Mail-Zugriff kompatible Mobilgeräte verwenden.|
 |excludedGroups|GUID-Sammlung|Benutzergruppen, die vom lokalen bedingten Zugriff ausgenommen werden. Alle Benutzer in diesen Gruppen werden von der Richtlinie zu bedingtem Zugriff ausgenommen.|
-|overrideDefaultRule|Boolesch|Überschreibt die Standardzugriffsregel, wenn zugelassen wird, dass einem Gerät Zugriff gewährt wird.|
+|overrideDefaultRule|Boolean|Überschreibt die Standardzugriffsregel, wenn zugelassen wird, dass einem Gerät Zugriff gewährt wird.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.onPremisesConditionalAccessSettings"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
@@ -42,11 +42,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "overrideDefaultRule": true
 }
 ```
-
-
-
-
-
 
 
 

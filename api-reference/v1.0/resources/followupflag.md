@@ -1,7 +1,7 @@
 # <a name="followupflag-resource-type"></a>followupFlag-Ressourcentyp
 
 
-Ermöglicht das Festlegen einer Kennzeichnung für den Benutzer zur späteren Weiterverfolgung. Unterstützte Elemente umfassen [message](message.md) und [contact](contact.md).
+Ermöglicht das Aktivieren von ein Flag in einem Element für den Benutzer zu einem späteren Zeitpunkt zu verfolgen. 
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|

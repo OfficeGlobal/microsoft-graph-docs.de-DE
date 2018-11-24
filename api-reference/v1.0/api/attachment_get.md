@@ -16,14 +16,14 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 * Beim Zugriff auf Anlagen in Nachrichten: Mail.Read
 * Beim Zugriff auf Anlagen in Ereignissen: Calendars.Read
-* Beim Zugriff auf Anlagen in Gruppenereignissen oder -beiträgen: Group.Read.All.
+* Wenn Anlagen in der Gruppe Beiträge zugreifen: Group.Read.All.
 
 <!--
 * If accessing attachments in group events or posts: Group.Read.All.
 -->
 
 ## <a name="http-request"></a>HTTP-Anforderung
-Anlagen für ein [Ereignis](../resources/event.md) im Standard-[Kalender](../resources/calendar.md) des Benutzers.
+Anlagen für ein [Ereignis](../resources/event.md) in der Benutzer als [Kalender](../resources/calendar.md).
 
 <!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
@@ -69,24 +69,24 @@ Anlagen für eine [Nachricht](../resources/message.md) in einem [MailFolder](../
 GET /me/mailFolders/{id}/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
-Anlagen für eine [Nachricht](../resources/message.md) in einem untergeordneten Ordner eines [mailFolder](../resources/mailfolder.md) im Postfach eines Benutzers.  Das folgende Beispiel zeigt eine Ebene der Verschachtelung. Eine Nachricht kann jedoch auch in einem untergeordneten Ordner eines untergeordneten Ordners und so weiter enthalten sein.
+Anlagen für eine [Nachricht](../resources/message.md) , die in einem untergeordneten Ordner von einem [MailFolder](../resources/mailfolder.md) im Postfach eines Benutzers enthalten sind.  Das folgende Beispiel zeigt eine Ebene von schachteln, aber eine Nachricht kann befinden in ein untergeordnetes Element des ein untergeordnetes Element und so weiter.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
-Anlagen für einen [Beitrag](../resources/post.md) in einer [Diskussion](../resources/conversationthread.md), der zu einer [Unterhaltung](../resources/conversation.md) einer Gruppe gehört.
+Anlagen für einen [Beitrag](../resources/post.md) in einem [Thread](../resources/conversationthread.md), der zu einer [Unterhaltung](../resources/conversation.md) einer Gruppe gehört.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

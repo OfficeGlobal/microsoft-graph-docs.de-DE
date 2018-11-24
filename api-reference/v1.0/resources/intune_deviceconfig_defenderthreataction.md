@@ -1,23 +1,18 @@
-# <a name="defenderthreataction-enum-type"></a>DefenderThreatAction Enumerationstyp
+# <a name="defenderthreataction-enum-type"></a>DefenderThreatAction Enum-Typ
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Standard-Aktion des Defenders, um auf erkannte Malware-Bedrohungen zu reagieren.
+Defender Standardaktion durchführen erkannt Schadsoftware.
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|deviceDefault|0|Aktion basierend auf der Update-Definition anwenden.|
-|clean|1|Die erkannte Bedrohung säubern.|
-|quarantine|2|Die erkannte Bedrohung unter Quarantäne stellen.|
-|remove|3|Erkannte Bedrohung entfernen.|
-|allow|4|Zulassen der erkannten Bedrohung.|
-|userDefined|5|Erlaubt es dem Benutzer, die Aktion zu bestimmen, die bei einer erkannten Bedrohung durchgeführt werden soll.|
-|block|6|Blockieren der erkannten Bedrohung.|
-
-
-
-
-
+|deviceDefault|0|Wenden Sie Aktion basierend auf der Definition Update an.|
+|clean|1|Bereinigen der erkannten Bedrohung.|
+|Quarantäne|2|Isolieren Sie erkannte Bedrohung.|
+|remove|3|Erkannte Bedrohung zu entfernen.|
+|zulassen|4|Zulassen der erkannten Bedrohung.|
+|vom Typ userDefined|5|Ermöglicht es dem Benutzer die erkannten Bedrohung auszuführende Aktion zu bestimmen.|
+|Blockieren|6|Blockieren der erkannten Bedrohung.|
 
 
 

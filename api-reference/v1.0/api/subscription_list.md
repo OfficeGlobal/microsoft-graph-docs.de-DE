@@ -1,37 +1,37 @@
 # <a name="list-subscriptions"></a>Liste von Abonnements
 
-Rufen Sie die Eigenschaften und Beziehungen von Webhook-Abonnements basierend auf der App-ID, dem Benutzer und der Rolle des Benutzers mit einem Mandanten ab.
+Abrufen der Eigenschaften und Beziehungen zwischen Webhook Abonnements, basierend auf der app-ID, die Benutzer und die Rolle des Benutzers mit einem Mandanten.
 
 ## <a name="permissions"></a>Berechtigungen
 
-Diese API unterstützt die folgenden Berechtigungsbereiche. Weitere Informationen, unter anderem dazu, wie Sie Berechtigungen auswählen, finden Sie unter [Berechtigungen](../../../concepts/permissions_reference.md).
+Diese API unterstützt die folgenden berechtigungsbereiche. Weitere, einschließlich auswählen von Berechtigungen finden Sie unter [Berechtigungen](../../../concepts/permissions_reference.md).
 
 | Berechtigungstyp  | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)  |
 |:---------------- |:-------------------------------------------- |
-| [Delegiert](../../../concepts/auth_v2_user.md)(Geschäfts-, Schul- oder Unikonto) | Rolle, die zum [Abonnement erstellen](subscription_get.md) oder für Subscriptions.Read.All  (siehe unten) erforderlich ist. |
-| [Delegiert](../../../concepts/auth_v2_user.md) (persönliches Microsoft-Konto) | Rolle, die zum [Abonnement erstellen](./subscription_get.md) oder für Subscriptions.Read.All  (siehe unten) erforderlich ist. |
-| [Anwendung](../../../concepts/auth_v2_service.md) | Rolle, die zum [Abonnement erstellen](./subscription_get.md) erforderlich ist. |
+| [Delegierte Berechtigung](../../../concepts/auth_v2_user.md) (Arbeit oder Schule Konto) | Rolle, die zum [Erstellen von Abonnement](subscription_post_subscriptions.md) oder Subscription.Read.All (siehe unten) erforderlich. |
+| [Delegierte Berechtigung](../../../concepts/auth_v2_user.md) (Persönliches Microsoft-Konto) | Rolle, die zum [Erstellen von Abonnement](subscription_post_subscriptions.md) oder Subscription.Read.All (siehe unten) erforderlich. |
+| [Anwendung die Berechtigung](../../../concepts/auth_v2_service.md) | Rolle erforderlich, um das [Abonnement zu erstellen](subscription_post_subscriptions.md). |
 
-Response-Ergebnisse basieren auf dem Kontext der aufrufenden App. Es folgt eine Zusammenfassung der gängigen Szenarien:
+Antwort Ergebnisse basieren auf dem Kontext der aufrufenden app. Es folgt eine Zusammenfassung der gängigen Szenarien:
 
 ### <a name="basic-scenarios"></a>Grundlegende Szenarios
 
-In der Regel möchte eine Anwendung Abonnements abrufen, die sie ursprünglich für den derzeit angemeldeten Benutzer oder für alle Benutzer im Verzeichnis (Geschäfts-/Schul-/Uni-Konten) erstellt hat. Für diese Szenarien sind keine besonderen Berechtigungen erforderlich, die über diejenigen hinausgehen, die ursprünglich von der App zum Erstellen der Abonnements verwendet wurden.
+In den meisten Fällen eine Anwendung Abonnements abrufen möchte, die ursprünglich für den aktuell angemeldeten Benutzer oder für alle Benutzer in das Verzeichnis (Arbeit/Schule Konten) erstellt. Diese Szenarien ist keine speziellen Berechtigungen als die die app ursprünglich verwendet, um dessen Abonnements erstellen erforderlich.
 
-| Kontext der aufrufenden App | Antwort enthält |
+| Kontext der aufrufenden app | Antwort enthält |
 |:-----|:---------------- |
-| App ruft im Namen des angemeldeten Benutzers auf (delegierte Berechtigung). <br/>-und-<br/>App verfügt über die ursprüngliche Berechtigung, die zum [Abonnement erstellen](subscription_post_subscriptions.md)erforderlich ist.<br/><br/>Hinweis: Dies gilt für persönliche Microsoft-Konten und Geschäfts-/Schul-/Uni-Konten. | Abonnements, die durch **diese App** nur für den angemeldeten Benutzer erstellt werden. |
-| App ruft eigenständig auf (Anwendungsberechtigung).<br/>-und-<br/>App verfügt über die ursprüngliche Berechtigung, die zum [Abonnement erstellen](subscription_post_subscriptions.md)erforderlich ist.<br/><br/>Hinweis: Dies gilt nur für Geschäfts-/Schul-/Uni-Konten.| Abonnements, die durch **diese App** für sich oder für einen beliebigen Benutzer im Verzeichnis erstellt werden.|
+| App ist im Namen des angemeldeten Benutzers (Delegierte Berechtigung) aufrufen. <br/>- und -<br/>App besitzt die ursprüngliche Berechtigung erforderlich, um [das Abonnement zu erstellen](subscription_post_subscriptions.md).<br/><br/>Hinweis: Dies gilt für persönliche Microsoft-Konten und Arbeit/Schule Konten. | Abonnements durch **diese app** für den angemeldeten Benutzer nur erstellt. |
+| App ist im Namen selbst (Anwendung die Berechtigung) aufrufen.<br/>- und -<br/>App besitzt die ursprüngliche Berechtigung erforderlich, um [das Abonnement zu erstellen](subscription_post_subscriptions.md).<br/><br/>Hinweis: Dies gilt Arbeit/nur Konten Schule.| Abonnements, die **diese** App für sich selbst oder für jeden Benutzer in das Verzeichnis erstellt werden.|
 
 ### <a name="advanced-scenarios"></a>Erweiterte Szenarien
 
-In einigen Fällen möchte eine App Abonnements abrufen, die von anderen Apps erstellt wurden. Beispielsweise möchte ein Benutzer alle Abonnements anzeigen, die von einer beliebigen App eigenständig erstellt wurden. Oder ein Administrator möchte möglicherweise alle Abonnements von allen Apps in deren Verzeichnis sehen.
+In einigen Fällen eine app von anderen apps erstellt Abonnements abrufen möchte. Beispielsweise möchte ein Benutzer alle Abonnements, die von einer beliebigen app in ihrem Auftrag erstellt. Oder ein Administrator alle Abonnements aus allen apps in ihrem Verzeichnis finden Sie unter möchten.
 Für solche Szenarien ist eine delegierte Berechtigung Subscription.Read.All erforderlich.
 
-| Kontext der aufrufenden App | Antwort enthält |
+| Kontext der aufrufenden app | Antwort enthält |
 |:-----|:---------------- |
-| App ruft im Namen des angemeldeten Benutzers auf (delegierte Berechtigung). *Der Benutzer ist ein Nicht-Administrator*. <br/>-und-<br/>App verfügt über die Berechtigung Subscription.Read.All<br/><br/>Hinweis: Dies gilt für persönliche Microsoft-Konten und Geschäfts-/Schul-/Uni-Konten. | Abonnements, die durch **eine beliebige App** nur für den angemeldeten Benutzer erstellt werden. |
-| App ruft im Namen des angemeldeten Benutzers auf (delegierte Berechtigung). *Der Benutzer ist ein Administrator*.<br/>-und-<br/>App verfügt über die Berechtigung Subscription.Read.All<br/><br/>Hinweis: Dies gilt nur für Geschäfts-/Schul-/Uni-Konten. | Abonnements, die durch **eine beliebige App** für **einen beliebigen Benutzer**im Verzeichnis erstellt werden.|
+| App ist im Namen des angemeldeten Benutzers (Delegierte Berechtigung) aufrufen. *Der Benutzer ist ein nicht-Administrator*. <br/>- und -<br/>App verfügt über die Berechtigung Subscription.Read.All<br/><br/>Hinweis: Dies gilt für persönliche Microsoft-Konten und Arbeit/Schule Konten. | Abonnements, die von **einer beliebigen app** nur für den angemeldeten Benutzer erstellt. |
+| App ist im Namen des angemeldeten Benutzers (Delegierte Berechtigung) aufrufen. *Der Benutzer ist ein Administrator*.<br/>- und -<br/>App verfügt über die Berechtigung Subscription.Read.All<br/><br/>Hinweis: Dies gilt Arbeit/nur Konten Schule. | Abonnements, die von **einer beliebigen app** für **alle Benutzer** im Verzeichnis erstellt.|
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -43,13 +43,13 @@ GET /subscriptions
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
-Diese Methode unterstützt nicht die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt nicht die [OData-Abfrage-Parameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) , mit denen die Antwort anpassen.
 
 ## <a name="request-headers"></a>Anforderungsheader
 
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -57,7 +57,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Bei Erfolg gibt diese Methode im Antworttext einen `200 OK` Antwortcode und eine Liste von [Abonnement](../resources/subscription.md) .-Objekten zurück.
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Liste von Objekten im Antworttext [Abonnement](../resources/subscription.md) .
 
 ## <a name="example"></a>Beispiel
 
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/v1.0/subscriptions
 
 ##### <a name="response"></a>Antwort
 
-Es folgt das Beispiel einer Antwort.  Bitte beachten Sie, dass diese aus Platzgründen gekürzt sein kann.  Alle unterstützten Eigenschaften, die für die Anforderung und den Kontext des Aufrufs geeignet sind, werden von einem tatsächlichen Aufruf zurückgegeben.
+Es folgt eine ein Beispiel für die Antwort.  Beachten Sie, dass der Kürze halber abgeschnitten sein können.  Alle unterstützten Eigenschaften für die Anforderung und der aufrufende Kontext aus einem tatsächlichen Aufruf zurückgegeben.
 
 <!-- {
   "blockType": "response",
@@ -115,4 +115,4 @@ Content-length: 586
   "tocPath": ""
 }-->
 
-Gibt eine Anforderung mehrere Seiten mit Daten zurück, enthält die Antwort eine `@odata.nextLink` -Eigenschaft zur einfacheren Verwaltung der Ergebnisse.  Weitere Informationen finden Sie unter [Paging der Microsoft Graph-Daten in Ihrer App](../../../concepts/paging.md).
+Wenn eine Anforderung mehrere Seiten mit Daten zurückgegeben, die Antwort enthält eine `@odata.nextLink` Eigenschaft zur einfacheren Verwaltung der Ergebnisse.  Finden Sie weitere Informationen finden Sie unter [Microsoft Graph Paging von Daten in Ihrer app](../../../concepts/paging.md).

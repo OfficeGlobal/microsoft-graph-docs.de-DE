@@ -10,29 +10,27 @@ Enthält die Eigenschaften des für eine mobile iOS-App mindestens erforderliche
 |v9_0|Boolescher Wert|Version 9.0 oder höher|
 |v10_0|Boolescher Wert|Version 10.0 oder höher|
 |v11_0|Boolescher Wert|Version 11.0 oder höher|
+|v12_0|Boolescher Wert|Version 12.0 oder höher.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosMinimumOperatingSystem"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosMinimumOperatingSystem",
   "v8_0": true,
   "v9_0": true,
   "v10_0": true,
-  "v11_0": true
+  "v11_0": true,
+  "v12_0": true
 }
 ```
-
-
-
-
-
 
 
 

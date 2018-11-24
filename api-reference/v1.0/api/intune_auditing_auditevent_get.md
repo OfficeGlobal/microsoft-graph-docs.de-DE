@@ -22,12 +22,12 @@ GET /deviceManagement/auditEvents/{auditEventId}
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -47,7 +47,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1535
+Content-Length: 1538
 
 {
   "value": {
@@ -73,7 +73,7 @@ Content-Length: 1535
     "activityType": "Activity Type value",
     "activityOperationType": "Activity Operation Type value",
     "activityResult": "Activity Result value",
-    "correlationId": "<Unknown Primitive Type Edm.Guid>",
+    "correlationId": "52effe71-fe71-52ef-71fe-ef5271feef52",
     "resources": [
       {
         "@odata.type": "microsoft.graph.auditResource",
@@ -94,11 +94,6 @@ Content-Length: 1535
   }
 }
 ```
-
-
-
-
-
 
 
 

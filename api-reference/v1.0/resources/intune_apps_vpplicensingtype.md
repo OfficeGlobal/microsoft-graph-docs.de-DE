@@ -13,10 +13,11 @@ Enthält Eigenschaften für den iOS-Volume-Purchased Programm (Vpp)-Lizenzierung
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.vppLicensingType"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.vppLicensingType",
@@ -24,11 +25,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "supportsDeviceLicensing": true
 }
 ```
-
-
-
-
-
 
 
 

@@ -1,14 +1,14 @@
 # <a name="alerttrigger-resource-type"></a>Ressourcentyp alertTrigger
 
-Enthält Informationen zu den Eigenschaften, die eine Erkennung ausgelöst haben (Eigenschaften sind in der Warnungsentität vorhanden).
+Enthält Informationen zu den Eigenschaften, die eine Erkennung ausgelöst (Eigenschaften sind in der Warnung Entität vorhanden).
 
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft   | Typ|Beschreibung|
 |:---------------|:--------|:----------|
-|Name|Zeichenfolge|Der Name der Eigenschaft, der als ein Erkennungstrigger gedient hat.|
-|Typ|Zeichenfolge|Typ der Eigenschaft im Schlüssel/Wert-Paar für die Auslegung. Bspw. String, Boolean, usw.|
-|Wert|Zeichenfolge|Der Wert der Eigenschaft, der als ein Erkennungstrigger gedient hat.|
+|name|Zeichenfolge|Der Name der Eigenschaft, die als eine Erkennung Trigger.|
+|Typ|Zeichenfolge|Typ der Eigenschaft im Schlüssel / Wert-Paar für Auslegung. String, Boolean, beispielsweise usw.|
+|Wert|Zeichenfolge|Der Wert der Eigenschaft, die als eine Erkennung Trigger.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -35,8 +35,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```json
 {
-  "name": "endpointAddress",
-  "type": "networkConnection.sourceAddress",
+  "name": "hostState.privateIpAddress",
+  "type": "String",
   "value": "10.154.9.40"
 }
 

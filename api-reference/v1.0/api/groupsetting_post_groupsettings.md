@@ -2,7 +2,7 @@
 
 Verwenden Sie diese API zum Erstellen einer neuen Einstellung, basierend auf den Vorlagen, die in [groupSettingTemplates](../resources/groupsettingtemplate.md) zur Verfügung stehen. Diese Einstellungen können auf Mandantenebene oder auf Gruppenebene erfolgen. Die Erstellungsanforderung muss [settingValues](../resources/settingvalue.md) für alle Einstellungen bereitstellen, die in der Vorlage definiert sind. Bei gruppenspezifischen Einstellungen kann nur die Einstellung, die regelt, ob die Mitglieder einer Gruppe Gastbenutzer einladen können, festgelegt werden. Dies steuert dieses Verhalten, sobald die Möglichkeit zum Hinzufügen von Gastbenutzern zu einer Gruppe allgemein verfügbar ist.
 
-Um eine Liste der Vorlagen und Eigenschaften zu erhalten, die in v1.0 unterstützt werden, verwenden Sie eine [groupSettingTemplate-Abfrage](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groupSettingTemplates&version=v1.0) (Für Beta-Endpoints rufen Sie bitte [directorySettingTemplates](https://developer.microsoft.com/en-us/graph/graph-explorer?request=directorySettingTemplates&version=beta) auf.)
+Verwenden Sie eine Liste der Vorlagen und die Eigenschaften, die sie in v1. 0 unterstützen, einer [GroupSettingTemplate Abfrage](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0) (für Beta Endpunkte, Anruf [DirectorySettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta).)
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -26,8 +26,8 @@ POST /groups/{id}/settings
 
 | Name | Beschreibung |
 |:---------------|:----------|
-| Autorisierung | Bearer {token}. Erforderlich. |
-| Inhaltstyp | application/json |
+| Authorization | Bearer {token}. Erforderlich. |
+| Content-Type | application/json |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [groupSetting](../resources/groupsetting.md)-Objekts an. Der Anzeigenamen für die Einstellung wird jedoch basierend auf dem Namen der referenzierten Einstellungsvorlage festgelegt.

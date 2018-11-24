@@ -24,8 +24,8 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs roleAssignment an.
@@ -34,10 +34,10 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert.|
-|displayName|Zeichenfolge|Der Anzeigename der Rollenzuweisung.|
-|Beschreibung|Zeichenfolge|Beschreibung der Rollenzuweisung.|
-|resourceScopes|Zeichenfolgen-Sammlung|Liste der IDs der Rollenbereichsmitglieder-Sicherheitsgruppen.  Dies sind IDs aus Azure Active Directory.|
+|id|String|Schlüssel der Entität. Er ist schreibgeschützt und wird automatisch generiert.|
+|displayName|String|Der Anzeigename der Rollenzuweisung.|
+|description|String|Beschreibung der Rollenzuweisung.|
+|resourceScopes|String-Sammlung|Liste der IDs der Rollenbereichsmitglieder-Sicherheitsgruppen.  Dies sind IDs aus Azure Active Directory.|
 
 
 
@@ -79,11 +79,6 @@ Content-Length: 242
   ]
 }
 ```
-
-
-
-
-
 
 
 

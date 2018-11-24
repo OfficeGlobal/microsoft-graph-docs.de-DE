@@ -27,8 +27,8 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung für das [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md)-Objekt ein.
@@ -37,11 +37,11 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|Zeichenfolge|Der Anzeigename|
-|fileHash|Zeichenfolge|SHA256-Hash der Datei|
+|displayName|String|Der Anzeigename|
+|fileHash|String|SHA256-Hash der Datei|
 |file|Binär|Datei als Bytearray|
-|id|Zeichenfolge|Schlüssel der Entität|
-|Version|Zeichenfolge|Version der Entität|
+|id|String|Schlüssel der Entität.|
+|Version|String|Version der Entität|
 
 
 
@@ -54,9 +54,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}/exemptAppLockerFiles/{windowsInformationProtectionAppLockerFileId}
 Content-type: application/json
-Content-length: 131
+Content-length: 211
 
 {
+  "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLockerFile",
   "displayName": "Display Name value",
   "fileHash": "File Hash value",
   "file": "ZmlsZQ==",
@@ -80,11 +81,6 @@ Content-Length: 260
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

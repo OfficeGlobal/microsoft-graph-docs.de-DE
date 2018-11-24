@@ -6,7 +6,7 @@ Education-APIs umfassen Ressourcen für Listenerstellung und Zuordnungen, die Si
 
 ## <a name="authorization"></a>Autorisierung
 
-Damit die Education-APIs in Microsoft Graph aufgerufen werden können, muss Ihre App ein Zugriffstoken erwerben. Weitere Informationen zu Zugriffstoken finden Sie unter [Abrufen von Zugriffstoken zum Aufrufen von Microsoft Graph](https://developer.microsoft.com/de-DE/graph/docs/concepts/auth_overview). Zudem muss Ihre App über die entsprechenden Berechtigungen verfügen. Weitere Informationen finden Sie unter [Education-Berechtigungen](../../../concepts/permissions_reference.md#education-permissions). 
+Damit die Education-APIs in Microsoft Graph aufgerufen werden können, muss Ihre App ein Zugriffstoken erwerben. Weitere Informationen zu Zugriffstoken finden Sie unter [Abrufen von Zugriffstoken zum Aufrufen von Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). Zudem muss Ihre App über die entsprechenden Berechtigungen verfügen. Weitere Informationen finden Sie unter [Education-Berechtigungen](../../../concepts/permissions_reference.md#education-permissions). 
 
 ### <a name="app-permissions-to-enable-school-it-admins-to-consent"></a>App-Berechtigungen zum Aktivieren der Zustimmung von Schul-IT-Administratoren 
 
@@ -64,5 +64,5 @@ Die Listenerstellungs-APIs unterstützen die folgenden Szenarien:
 Verwenden Sie die Microsoft Graph-Education-APIs zum Erstellen von Lösungen für Bildungseinrichtungen, die auf Schulpläne zugreifen. So erhalten Sie weitere Informationen:
 
 - Erfahren Sie, welche Ressourcen und Methoden für Ihr Szenario am besten geeignet sind.
-- Probieren Sie die API im [Graph-Tester](https://developer.microsoft.com/de-DE/graph/graph-explorer) aus.
+- Probieren Sie die API im [Graph-Tester](https://developer.microsoft.com/graph/graph-explorer) aus.
 

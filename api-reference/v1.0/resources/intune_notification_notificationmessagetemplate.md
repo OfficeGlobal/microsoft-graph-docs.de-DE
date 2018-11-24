@@ -16,10 +16,10 @@ Benachrichtigungs-E-Mails sind Nachrichten, die an Endbenutzer gesendet werden, 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität|
-|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
-|displayName|Zeichenfolge|Anzeigename für die Benachrichtigungs-E-Mail-Vorlage|
-|defaultLocale|Zeichenfolge|Standardgebietsschema, das verwendet wird, wenn das angeforderte Gebietsschema nicht verfügbar ist|
+|id|String|Schlüssel der Entität|
+|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts|
+|displayName|String|Anzeigename für die Benachrichtigungs-E-Mail-Vorlage|
+|defaultLocale|String|Standardgebietsschema, das verwendet wird, wenn das angeforderte Gebietsschema nicht verfügbar ist|
 |brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|Optionen für das Branding der Nachrichtenvorlage. Das Branding wird in der Intune-Verwaltungskonsole definiert. Mögliche Werte sind: `none`, `includeCompanyLogo`, `includeCompanyName` und `includeContactInformation`.|
 
 ## <a name="relationships"></a>Beziehungen
@@ -28,13 +28,13 @@ Benachrichtigungs-E-Mails sind Nachrichten, die an Endbenutzer gesendet werden, 
 |localizedNotificationMessages|Sammlung von Objekten des Typs [localizedNotificationMessages](../resources/intune_notification_localizednotificationmessage.md)|Liste der lokalisierten Nachrichten für die Benachrichtigungs-E-Mail-Vorlage|
 
 ## <a name="json-representation"></a>JSON-Darstellung
-Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+Unten sehen Sie eine JSON-Darstellung der Ressource.
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.notificationMessageTemplate"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.notificationMessageTemplate",
@@ -45,11 +45,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "brandingOptions": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -1,20 +1,20 @@
 # <a name="securityvendorinformation-resource-type"></a>Ressourcentyp securityVendorInformation
 
-Enthält Angaben zum Sicherheitsprodukt/Dienstleister, Anbieter und Unteranbieter (bspw. vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).
+Enthält Details über die Produkt-Dienst Sicherheitsanbieter, Anbieter und Subprovider (beispielsweise Hersteller = Microsoft; Provider = Windows Defender ATP; SubProvider = AppLocker).
 
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft   | Typ|Beschreibung|
 |:---------------|:--------|:----------|
-|provider *|Zeichenfolge|Bestimmter Anbieter (Produkt/Dienst - kein Herstellerunternehmen); beispielsweise WindowsDefenderATP.|
-|providerVersion|Zeichenfolge|Version des Anbieters oder Unteranbieters, falls vorhanden, die die Warnung ausgelöst hat.|
-|subProvider|Zeichenfolge|Bestimmter Unteranbieter (unter einem aggregierten Anbieter); beispielsweise WindowsDefenderATP.SmartScreen.|
-|vendor *|Zeichenfolge|Name des Warnungs-Software-Herstellers (beispielsweise Microsoft, Dell, FireEye).|
-(\* Kennzeichnet ein Pflichtfeld.)
+|Anbieter |Zeichenfolge|Bestimmte Anbieter (Product/Service - nicht Hersteller Unternehmen); beispielsweise WindowsDefenderATP.|
+|providerVersion|Zeichenfolge|Version des Anbieters oder Subprovider, falls vorhanden, die Warnung ausgelöst wurde. *Required*|
+|subProvider|Zeichenfolge|Bestimmte Subprovider (unter aggregieren Anbieter); beispielsweise WindowsDefenderATP.SmartScreen.|
+|Hersteller |Zeichenfolge|Name des Herstellers alert (beispielsweise Microsoft, Dell, FireEye). *Required*|
+
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
-Es folgt eine JSON-Darstellung der Ressource.
+Die folgenden ist eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

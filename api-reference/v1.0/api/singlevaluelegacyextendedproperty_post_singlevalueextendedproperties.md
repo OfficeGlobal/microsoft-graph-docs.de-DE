@@ -4,29 +4,36 @@ Dient zum Erstellen einer oder mehrerer erweiterter einwertiger Eigenschaften in
 
 Die folgenden Benutzerressourcen werden unterstützt:
 
-- [message](../resources/message.md)
-- [mailFolder](../resources/mailfolder.md)
-- [event](../resources/event.md)
-- [Kalender](../resources/calendar.md)
+- [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
+- [Ereignis](../resources/event.md)
+- [mailFolder](../resources/mailfolder.md)
+- [Nachricht](../resources/message.md)
 
 Darüber hinaus werden die folgenden Gruppenressourcen unterstützt:
 
-- [event](../resources/event.md)-Ressourcen für Gruppen
 - [calendar](../resources/calendar.md)-Ressourcen für Gruppen
+- [event](../resources/event.md)-Ressourcen für Gruppen
 - [post](../resources/post.md)-Ressourcen für Gruppen 
 
 Im [Übersichtsartikel zu erweiterten Eigenschaften](../resources/extended-properties-overview.md) finden Sie weitere Informationen dazu, wann Sie offene Erweiterungen verwenden sollten und wann erweiterte Eigenschaften. Außerdem erfahren Sie dort, wie erweiterte Eigenschaften angegeben werden.
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich (je nachdem, in welchem Typ von Ressource Sie die erweiterte Eigenschaft erstellen möchten): Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+Erstellen Sie je nach der Ressource in die erweiterte Eigenschaft und die Berechtigung geben (delegierte oder-Anwendung) Sie Anforderung, die Berechtigung, die in der folgenden Tabelle angegeben ist mindestens erforderlich, um diese API-aufrufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](../../../concepts/permissions_reference.md).
 
-- Mail.ReadWrite
-- Calendars.ReadWrite
-- Contacts.ReadWrite
-- Group.ReadWrite.All
- 
+| Unterstützte Ressource | Delegiert (Geschäfts-, Schul- oder Unikonto) | Delegiert (persönliches Microsoft-Konto) | Anwendung |
+|:-----|:-----|:-----|:-----|
+| [Kalender](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [Kontakt](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
+| [calendar](../resources/calendar.md)-Ressourcen für Gruppen | Group.ReadWrite.All | Nicht unterstützt | Nicht unterstützt |
+| [event](../resources/event.md)-Ressourcen für Gruppen | Group.ReadWrite.All | Nicht unterstützt | Nicht unterstützt |
+| [post](../resources/post.md)-Ressourcen für Gruppen | Group.ReadWrite.All | Nicht unterstützt | Nicht unterstützt |
+| [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+
 ## <a name="http-request"></a>HTTP-Anforderung
 Sie können erweiterte Eigenschaften in einer neuen oder vorhandenen Ressourceninstanz erstellen.
 
@@ -96,8 +103,8 @@ PATCH /groups/{id}/events/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Wert |
 |:---------------|:----------|
-| Autorisierung | Bearer {token}. Erforderlich. |
-| Inhaltstyp | application/json |
+| Authorization | Bearer {token}. Erforderlich. |
+| Content-Type | application/json |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -106,10 +113,10 @@ Stellen Sie einen JSON-Text für jedes [singleValueLegacyExtendedProperty](../re
 |Eigenschaft|Typ|Beschreibung|
 |:-----|:-----|:-----|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md)-Sammlung| Ein Array aus erweiterten mehrwertigen Eigenschaften. |
-|id|Zeichenfolge|Geben Sie diese für jede Eigenschaft in der **singleValueExtendedProperties**-Sammlung an, um die Eigenschaft zu identifizieren. Sie muss eins der unterstützten Formate aufweisen. Weitere Informationen finden Sie unter [Überblick über erweiterte Eigenschaften in Outlook](../resources/extended-properties-overview.md). Erforderlich.|
-|value|Zeichenfolge|Geben Sie für jede Eigenschaft in der **singleValueExtendedProperties**-Sammlung den Eigenschaftswert an. Erforderlich.|
+|id|String|Geben Sie diese für jede Eigenschaft in der **singleValueExtendedProperties**-Sammlung an, um die Eigenschaft zu identifizieren. Sie muss eins der unterstützten Formate aufweisen. Weitere Informationen finden Sie unter [Überblick über erweiterte Eigenschaften in Outlook](../resources/extended-properties-overview.md). Erforderlich.|
+|value|string|Geben Sie für jede Eigenschaft in der **singleValueExtendedProperties**-Sammlung den Eigenschaftswert an. Erforderlich.|
 
-Beim Erstellen einer erweiterten Eigenschaft in einer _neuen_ Ressourceninstanz müssen Sie zusätzlich zu der neuen **singleValueExtendedProperties**-Sammlung eine JSON-Darstellung der betreffenden Ressourceninstanz spezifizieren (d. h. eine Ressource des Typs [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md) usw.).
+Beim Erstellen einer erweiterten Eigenschaft in einer _neuen_ Ressourceninstanz müssen Sie zusätzlich zu der neuen **singleValueExtendedProperties**-Sammlung eine JSON-Darstellung der betreffenden Ressourceninstanz spezifizieren (d. h. eine Ressource des Typs [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md) usw.).
 
 ## <a name="response"></a>Antwort
 

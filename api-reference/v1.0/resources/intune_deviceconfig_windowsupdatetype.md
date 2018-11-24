@@ -1,22 +1,17 @@
-# <a name="windowsupdatetype-enum-type"></a>Enumerationstyp WindowsUpdateType
+# <a name="windowsupdatetype-enum-type"></a>WindowsUpdateType Enum-Typ
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Welche Branch-Geräte erhalten Updates von
+Welche Geräte Branch erhält ihre Updates aus
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|userDefined|0|Ermöglicht es dem Benutzer, folgendes festzulegen.|
-|alle|1|Halbjährlicher Kanal (gezielt). Das Gerät erhält alle anwendbaren Feature-Updates vom halbjährlichen Kanal (gezielt).|
-|businessReadyOnly|2|Halbjährlicher Kanal. Das Gerät erhält Feature-Updates vom halbjährlichen Kanal.|
-|windowsInsiderBuildFast|3|Windows Insider – Schnell|
-|windowsInsiderBuildSlow|4|Windows Insider – Langsam|
-|windowsInsiderBuildRelease|5|Veröffentlichungvon Windows Insider|
-
-
-
-
-
+|vom Typ userDefined|0|Ermöglicht es dem Benutzer festgelegt.|
+|all|1|Semikolons jährlichen Channel (Ziel). Gerät Ruft alle anwendbaren Feature Updates aus Semikolons jährlichen Channel (gezielte) ab.|
+|businessReadyOnly|2|Semikolons jährlichen Channel. Gerät ruft Feature Updates aus Semikolons jährlichen Channel ab.|
+|windowsInsiderBuildFast|3|Erstellen von Windows-Insider - Fast|
+|windowsInsiderBuildSlow|4|Erstellen von Windows-Insider - langsam|
+|windowsInsiderBuildRelease|5|Windows-Insider Build-Version|
 
 
 

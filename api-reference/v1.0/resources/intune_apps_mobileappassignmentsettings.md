@@ -11,20 +11,16 @@ Abstrakte Klasse, die Eigenschaften zum Zuweisen einer mobilen App zu einer Grup
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignmentSettings"
 }
 ```
-
-
-
-
-
 
 
 

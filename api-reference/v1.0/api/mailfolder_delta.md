@@ -21,25 +21,25 @@ GET /me/mailFolders/delta
 GET /users/{id}/mailFolders/delta
 ```
 
-## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
+## <a name="query-parameters"></a>Abfrageparameter
 
 Beim Nachverfolgen von Änderungen in E-Mail-Ordnern wird eine Runde von einem oder mehreren **delta**-Funktionsaufrufen ausgeführt. Wenn Sie Abfrageparameter (außer `$deltatoken` und `$skiptoken`) verwenden, müssen Sie sie in der ursprünglichen **delta**-Anforderung angeben. Microsoft Graph codiert automatisch alle angegebenen Parameter in den Tokenteil der in der Antwort enthaltenen `nextLink`- oder `deltaLink`-URL. Sie müssen alle gewünschten Abfrageparameter nur einmal im Vorfeld angeben. In nachfolgenden Anforderungen können Sie die `nextLink`- oder `deltaLink`-URL einfach aus der vorherigen Antwort kopieren und anwenden, da diese URL bereits die codierten gewünschten Parameter enthält.
 
 | Abfrageparameter      | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-| $deltatoken | Zeichenfolge | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `deltaLink`-URL des vorhergehenden **delta**-Funktionsaufrufs für dieselbe Sammlung von E-Mail-Ordnern zurückgegeben wird und den Abschluss dieser Runde der Änderungsnachverfolgung anzeigt. Speichern Sie die gesamte `deltaLink`-URL einschließlich dieses Tokens, und wenden Sie sie in der ersten Anforderung der nächsten Änderungsnachverfolgungsrunde für diese Sammlung an.|
-| $skiptoken | Zeichenfolge | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `nextLink`-URL des vorhergehenden **delta**-Funktionsaufrufs zurückgegeben wird und anzeigt, dass in derselben Sammlung von E-Mail-Ordnern weitere Änderungen zum Nachverfolgen vorliegen. |
+| $deltatoken | string | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `deltaLink`-URL des vorhergehenden **delta**-Funktionsaufrufs für dieselbe Sammlung von E-Mail-Ordnern zurückgegeben wird und den Abschluss dieser Runde der Änderungsnachverfolgung anzeigt. Speichern Sie die gesamte `deltaLink`-URL einschließlich dieses Tokens, und wenden Sie sie in der ersten Anforderung der nächsten Änderungsnachverfolgungsrunde für diese Sammlung an.|
+| $skiptoken | string | Ein [Statustoken](../../../concepts/delta_query_overview.md), das in der `nextLink`-URL des vorhergehenden **delta**-Funktionsaufrufs zurückgegeben wird und anzeigt, dass in derselben Sammlung von E-Mail-Ordnern weitere Änderungen zum Nachverfolgen vorliegen. |
 
-#### <a name="odata-query-parameters"></a>OData-Abfrageparameter
+### <a name="odata-query-parameters"></a>OData-Abfrageparameter
 
 Sie können wie bei jeder GET-Anforderung den Abfrageparameter `$select` verwenden, um zwecks Leistungsoptimierung nur die benötigten Eigenschaften anzugeben. Die Eigenschaft _id_ wird immer zurückgegeben. 
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung |
 |:---------------|:----------|:----------|
-| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
-| Inhaltstyp  | Zeichenfolge  | application/json. Erforderlich. |
-| Prefer | Zeichenfolge  | odata.maxpagesize={x}. Optional. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Content-Type  | string  | application/json. Erforderlich.  |
+| Prefer | string  | odata.maxpagesize={x}. Optional. |
 
 ## <a name="response"></a>Antwort
 

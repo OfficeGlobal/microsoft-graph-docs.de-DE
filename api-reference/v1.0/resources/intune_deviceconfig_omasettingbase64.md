@@ -10,19 +10,20 @@ Erbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |displayName|Zeichenfolge|Anzeigename Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|Beschreibung|Zeichenfolge|Beschreibung. Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|description|Zeichenfolge|Beschreibung. Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |omaUri|Zeichenfolge|OMA Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|fileName|Zeichenfolge|Die dem Dateinamen zugeordnete Werteigenschaft (*.cer | *.crt | *.p7b | *.bin).|
+|fileName|Zeichenfolge|Die dem Dateinamen zugeordnete Werteigenschaft (*.cer | .CRT | p7b | * .bin).|
 |Wert|Zeichenfolge|Wert (Base64-codierte Zeichenfolge)|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingBase64"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSettingBase64",
@@ -33,11 +34,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "value": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -18,7 +18,7 @@ GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode bietet **keine** Unterstützung für [OData Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters).
+Diese Methode bietet **keine** Unterstützung für [OData Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters).
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|

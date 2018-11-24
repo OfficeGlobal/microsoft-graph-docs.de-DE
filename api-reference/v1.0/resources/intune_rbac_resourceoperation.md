@@ -15,21 +15,21 @@ Dieser Ressourcentyp definiert eine Operation oder eine Aktion, die auf eine Int
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Ressourcenoperation. Er ist schreibgeschützt und wird automatisch generiert.|
-|resourceName|Zeichenfolge|Name der Ressource, auf die die Operation angewendet wird|
-|actionName|Zeichenfolge|Typ von Aktion, den die Operation ausführen wird. Der Wert für „actionName“ sollte prägnant sein und aus möglichst wenigen Wörtern bestehen.|
-|description|Zeichenfolge|Beschreibung der Ressourcenoperation. Diese Beschreibung wird angezeigt, wenn der Benutzer im Azure-Portal den Mauszeiger auf der Operation platziert.|
+|id|String|Schlüssel der Ressourcenoperation. Er ist schreibgeschützt und wird automatisch generiert.|
+|resourceName|String|Name der Ressource, auf die die Operation angewendet wird|
+|actionName|String|Typ von Aktion, den die Operation ausführen wird. Der Wert für „actionName“ sollte prägnant sein und aus möglichst wenigen Wörtern bestehen.|
+|description|String|Beschreibung der Ressourcenoperation. Diese Beschreibung wird angezeigt, wenn der Benutzer im Azure-Portal den Mauszeiger auf der Operation platziert.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
-Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+Unten sehen Sie eine JSON-Darstellung der Ressource.
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.resourceOperation"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.resourceOperation",
@@ -39,11 +39,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "description": "String"
 }
 ```
-
-
-
-
-
 
 
 

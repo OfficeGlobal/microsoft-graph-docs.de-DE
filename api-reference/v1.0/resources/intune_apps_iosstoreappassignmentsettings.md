@@ -15,21 +15,17 @@ Erbt von [mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignm
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosStoreAppAssignmentSettings"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
   "vpnConfigurationId": "String"
 }
 ```
-
-
-
-
-
 
 
 

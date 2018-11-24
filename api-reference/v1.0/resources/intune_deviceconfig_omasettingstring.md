@@ -10,7 +10,7 @@ Erbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md).
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |displayName|Zeichenfolge|Anzeigename Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|description|Zeichenfolge|Beschreibung. Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|Beschreibung|Zeichenfolge|Beschreibung. Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |omaUri|Zeichenfolge|OMA Vererbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |Wert|Zeichenfolge|Wert.|
 
@@ -18,10 +18,11 @@ Erbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md).
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingString"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSettingString",
@@ -31,11 +32,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "value": "String"
 }
 ```
-
-
-
-
-
 
 
 

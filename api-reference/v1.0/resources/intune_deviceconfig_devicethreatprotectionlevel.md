@@ -1,22 +1,17 @@
-# <a name="devicethreatprotectionlevel-enum-type"></a>DeviceThreatProtectionLevel Enumerationstyp
+# <a name="devicethreatprotectionlevel-enum-type"></a>DeviceThreatProtectionLevel Enum-Typ
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Schutzstufen gegen Bedrohungen von Geräten für die Device Threat Protection API.
-## <a name="members"></a>Mitglieder
-|Mitglied|Wert|Beschreibung|
+Gerät Bedrohung Schutzebenen für das Gerät Threat Protection-API.
+## <a name="members"></a>Elemente
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht verfügbar|0|Standardwert. Nicht verwenden.|
-|gesichert|1|Gerätebedrohungslevel: Gesichert. Dies ist die sicherste Stufe und bedeutet, dass keine Bedrohungen auf dem Gerät gefunden wurden.|
-|gering|2|Gerätebedrohungslevel: Niedrig. Der Wert Niedrig steht für einen Gefährdungsgrad, der ein minimales Risiko für das Gerät oder die Gerätedaten darstellt.|
-|mittel|3|Gerätebedrohungslevel: Mittel. Der Wert Mittel steht für einen Gefährdungsgrad, der ein mittelschweres Risiko für das Gerät oder die Gerätedaten darstellt.|
-|hoch|4|Gerätebedrohungslevel: Hoch. Der Wert Hoch steht für einen Gefährdungsgrad, der ein schwerwiegendes Risiko für das Gerät oder die Gerätedaten darstellt.|
-|Nicht gesetzt|10|Gerätebedrohungslevel: Nicht gesetzt. Nicht gesetzt bedeutet, dass es nicht erforderlich ist, dass das Gerät über eine Schutzstufe gegen Bedrohungen verfügt.|
-
-
-
-
-
+|gesichert|1|Gerät veränderte Anforderung: gesichert. Dies ist die sicherste Ebene und steht, die auf dem Gerät keine Viren gefunden wurden.|
+|Niedrig|2|Gerät Threat Protection geforderte: niedrig. Niedrig stellt einen Schweregrad der Bedrohung, die an das Gerät oder Gerätedaten minimalem Risiko darstellt.|
+|medium|3|Gerät Threat Protection geforderte: Mittel. Mittel stellt einen Schweregrad der Bedrohung, dass Posen Risiko an das Gerät oder Gerätedaten mäßig dar.|
+|hohe|4|Gerät Threat Protection geforderte: hoch. Besonders stellt einen Schweregrad der Bedrohung, die an das Gerät oder Gerätedaten erheblich Risiko darstellt.|
+|notSet|10|Gerät Threat Protection geforderte: nicht festgelegt. Set darstellt, keine Notwendigkeit für das Gerät besteht zu eine Bedrohung Schutzebene erfüllen.|
 
 
 

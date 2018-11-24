@@ -1,4 +1,4 @@
-# <a name="deviceappmanagement-resource-type"></a>Ressourcentyp deviceAppManagement
+# <a name="deviceappmanagement-resource-type"></a>Ressourcentyp „deviceAppManagement“
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
@@ -8,19 +8,19 @@ Singleton-Entität, die als Container für alle Funktionen zur Verwaltung von Ap
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Abrufen von deviceAppManagement](../api/intune_shared_deviceappmanagement_get.md)|Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md).|
-|[Aktualisieren von deviceAppManagement](../api/intune_shared_deviceappmanagement_update.md)|Aktualisiert die Eigenschaften von Objekten des Typs [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md).|
+|[Abrufen von „deviceAppManagement“](../api/intune_shared_deviceappmanagement_get.md)|Liest die Eigenschaften und Beziehungen von Objekten des Typs [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md).|
+|[Aktualisieren von „deviceAppManagement“](../api/intune_shared_deviceappmanagement_update.md)|Aktualisiert die Eigenschaften von Objekten des Typs [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md).|
 |**Onboarding**|
 |[Aktion „syncMicrosoftStoreForBusinessApps“](../api/intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps.md)|Keiner|Synchronisiert Intune-Konten mit dem Microsoft Store für Unternehmen.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität.|
+|id|Zeichenfolge|Schlüssel der Entität|
 |**Onboarding**|
 |isEnabledForMicrosoftStoreForBusiness|Boolescher Wert|Gibt an, ob das Konto Anwendungen mit dem Microsoft Store für Unternehmen synchronisieren darf.|
-|microsoftStoreForBusinessLanguage|Zeichenfolge|Die Gebietsschemainformationen, die zur Synchronisierung von Anwendungen mit dem Microsoft Store für Unternehmen verwendet werden. Angegeben werden Kulturen, die für ein Land bzw. eine Region spezifisch sind. Die Namen dieser Kulturen folgen dem Standard RFC 4646 (Windows Vista und höher). Das Format lautet <languagecode2>-<country/regioncode2>. Dabei ist <languagecode2> ein klein geschriebener Code aus zwei Buchstaben nach ISO 639-1 und <country/regioncode2> ein groß geschriebener Code aus zwei Buchstaben nach ISO 3166. Beispiel für eine spezifische Kultur: „en-US“ für „Englisch (Vereinigte Staaten)“.|
-|microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|Zeitpunkt der letzten Anwendungssynchronisierung mit dem Microsoft Store für Unternehmen.|
+|microsoftStoreForBusinessLanguage|String|Die Gebietsschemainformationen, die zur Synchronisierung von Anwendungen mit dem Microsoft Store für Unternehmen verwendet werden. Angegeben werden Kulturen, die für ein Land bzw. eine Region spezifisch sind. Die Namen dieser Kulturen folgen dem Standard RFC 4646 (Windows Vista und höher). Das Format lautet <languagecode2>-<country/regioncode2>. Dabei ist <languagecode2> ein klein geschriebener Code aus zwei Buchstaben nach ISO 639-1 und <country/regioncode2> ein groß geschriebener Code aus zwei Buchstaben nach ISO 3166. Beispiel für eine spezifische Kultur: „en-US“ für „Englisch (Vereinigte Staaten)“.|
+|microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|Zeitpunkt der letzten Anwendungssynchronisierung mit dem Microsoft Store für Unternehmen|
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|Zeitpunkt, zu dem das Konto die Apps letztmals erfolgreich mit dem Microsoft Store für Unternehmen synchronisiert hat|
 
 ## <a name="relationships"></a>Beziehungen
@@ -30,13 +30,13 @@ Singleton-Entität, die als Container für alle Funktionen zur Verwaltung von Ap
 |mobileAppCategories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md)-Sammlung|Die Kategorien der mobilen Apps.|
 |mobileAppConfigurations|[managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)-Sammlung|Die Konfigurationen der mobilen Apps für verwaltete Geräte.|
 |mobileApps|[mobileApp](../resources/intune_apps_mobileapp.md)-Sammlung|Die mobilen Apps.|
-|**Books**|
-|managedEBooks|[managedEBook](../resources/intune_books_managedebook.md)-Sammlung|Das verwaltete e-Book.|
-|**Mobile Anwendungsverwaltung (MAM)**|
+|**Bücher**|
+|managedEBooks|[managedEBook](../resources/intune_books_managedebook.md)-Sammlung|Das verwaltete E-Book|
+|**Mobile app-Verwaltung (MAM)**|
 |androidManagedAppProtections|[androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md)-Sammlung|Richtlinien verwalteter Android-Apps|
-|defaultManagedAppProtections|[defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md)-Sammlung|Standardrichtlinien verwalteter Apps.|
-|iosManagedAppProtections|[iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md)-Sammlung|Richtlinien verwalteter iOS-Apps.|
-|managedAppPolicies|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md)-Sammlung|Richtlinien verwalteter Apps.|
+|defaultManagedAppProtections|[defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md)-Sammlung|Standardrichtlinien verwalteter Apps|
+|iosManagedAppProtections|[iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md)-Sammlung|Richtlinien verwalteter iOS-Apps|
+|managedAppPolicies|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md)-Sammlung|Richtlinien verwalteter Apps|
 |managedAppRegistrations|[managedAppRegistration](../resources/intune_mam_managedappregistration.md)-Sammlung|Die Registrierungen verwalteter Apps|
 |managedAppStatuses|[managedAppStatus](../resources/intune_mam_managedappstatus.md)-Sammlung|Die Status der verwalteten Apps|
 |mdmWindowsInformationProtectionPolicies|[mdmWindowsInformationProtectionPolicy](../resources/intune_mam_mdmwindowsinformationprotectionpolicy.md)-Sammlung|Windows Information Protection für Apps auf in MDM registrierten Geräten|
@@ -46,7 +46,7 @@ Singleton-Entität, die als Container für alle Funktionen zur Verwaltung von Ap
 |vppTokens|[VppToken](../resources/intune_onboarding_vpptoken.md)-Sammlung|Liste von Vpp-Token für diese Organisation.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
-Es folgt eine JSON-Darstellung der Ressource.  Beachten Sie, dass dies nur ein Beispiel ist. Abfrageantworten für tatsächliche Abfragen enthalten die dem Kontext entsprechenden Eigenschaften.  
+Es folgt eine JSON-Darstellung der Ressource.  Beachten Sie, dass dies nur ein Beispiel ist. Abfrageantworten an tatsächlichen Abfragen enthält die Eigenschaften für den Kontext geeignet.  
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

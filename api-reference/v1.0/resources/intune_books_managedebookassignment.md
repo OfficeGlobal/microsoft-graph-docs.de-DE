@@ -15,20 +15,20 @@ Enthält Eigenschaften zum Zuweisen eines E-Books zu einer Gruppe.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
-|Ziel|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Zuweisungsziel für das E-Book|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|Installationsabsicht für das E-Book. Mögliche Werte: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|id|String|Schlüssel der Entität.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Das Zuweisungsziel für das E-Book.|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|Installationspriorität für das E-Book. Mögliche Werte: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedEBookAssignment"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedEBookAssignment",
@@ -39,11 +39,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "installIntent": "String"
 }
 ```
-
-
-
-
-
 
 
 

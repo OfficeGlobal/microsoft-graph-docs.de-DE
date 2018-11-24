@@ -12,7 +12,7 @@ Noch nicht dokumentiert.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität|
+|id|String|Schlüssel der Entität.|
 |displayName|String|Der Name der Richtlinie|
 |compliantDeviceCount|Int32|Anzahl der konformen Geräte|
 |nonCompliantDeviceCount|Int32|Anzahl der nicht konformen Geräte|
@@ -33,12 +33,12 @@ Noch nicht dokumentiert.
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.softwareUpdateStatusSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.softwareUpdateStatusSummary",
@@ -60,11 +60,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "notApplicableUserCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

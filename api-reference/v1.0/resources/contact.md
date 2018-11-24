@@ -4,8 +4,8 @@ Ein Kontakt ist ein Element in Outlook, in dem Sie Informationen über die Perso
 
 Diese Ressource unterstützt Folgendes:
 
-- Hinzufügen der eigenen Daten als benutzerdefinierte Eigenschaften als [Erweiterungen](../../../concepts/extensibility_overview.md).
-- Abonnieren von [Änderungsbenachrichtigungen](../../../concepts/webhooks.md).
+- Hinzufügen von Ihren eigenen Daten zu benutzerdefinierten Eigenschaften als [Extensions](../../../concepts/extensibility_overview.md).
+- Abonnieren von [Benachrichtigungen zu ändern](../../../concepts/webhooks.md).
 - Verwenden einer [Delta-Abfrage](../../../concepts/delta_query_overview.md) zum Nachverfolgen von inkrementellen Hinzufügungen, Löschungen und Aktualisierungen durch Bereitstellen der [delta](../api/contact_delta.md)-Funktion.
 
 
@@ -33,19 +33,18 @@ Diese Ressource unterstützt Folgendes:
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |assistantName|Zeichenfolge|Der Name des Assistenten des Kontakts.|
-|Geburtsdatum|DateTimeOffset|Das Geburtsdatum des Kontakts. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
+|birthday|DateTimeOffset|Das Geburtsdatum des Kontakts. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |businessAddress|[PhysicalAddress](physicaladdress.md)|Die Geschäftsadresse des Kontakts.|
 |businessHomePage|Zeichenfolge|Die geschäftliche Homepage des Kontakts.|
 |businessPhones|Zeichenfolgenauflistung|Die geschäftlichen Telefonnummern des Kontakts.|
-|Kategorien|Zeichenfolgenauflistung|Die Kategorien, die mit dem Kontakt verknüpft sind.|
+|categories|Zeichenfolgenauflistung|Die Kategorien, die mit dem Kontakt verknüpft sind.|
 |changeKey|Zeichenfolge|Gibt die Version des Kontakts an. Jedes Mal, wenn der Kontakt geändert wird, wird auch die Eigenschaft „changeKey“ geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
-|Untergeordnetes Element|Zeichenfolgenauflistung|Die Namen der Kinder des Kontakts.|
+|children|Zeichenfolgenauflistung|Die Namen der Kinder des Kontakts.|
 |companyName|Zeichenfolge|Der Name des Unternehmens des Kontakts.|
 |createdDateTime|DateTimeOffset|Der Zeitpunkt, zu dem der Kontakt erstellt wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |Abteilung|Zeichenfolge|Die Abteilung des Kontakts.|
-|displayName|Zeichenfolge|Der Anzeigename des Kontakts.|
-|emailAddresses|[EmailAddress](emailaddress.md) Sammlung|Die E-Mail-Adressen des Kontakts.|
-|Kennzeichnen|[followupFlag](followupflag.md)|Der Wert des Flags, der den Status, das Startdatum, das Fälligkeitsdatum oder das Enddatum für die Nachricht angibt.|
+|displayName|Zeichenfolge|Der Anzeigename des Kontakts. Sie können den Anzeigenamen in einem Vorgang [Erstellen](../api/user_post_contacts.md) oder [Aktualisieren](../api/contact_update.md) angeben. Beachten Sie, dass es sich bei spätere Aktualisierungen mit anderen Eigenschaften verursachen einen automatisch generierten Wert den Wert DisplayName überschrieben, den Sie angegeben haben. Um einen bereits vorhandenen Wert zu erhalten, immer als schließen Sie DisplayName in einem Vorgang [zu aktualisieren ein](../api/contact_update.md) .|
+|emailAddresses|[EmailAddress](emailaddress.md) collection|Die E-Mail-Adressen des Kontakts.|
 |fileAs|Zeichenfolge|Der Name, unter dem der Kontakt abgelegt ist.|
 |generation|Zeichenfolge|Die Generation des Kontakts.|
 |givenName|Zeichenfolge|Der Vorname des Kontakts.|
@@ -56,7 +55,7 @@ Diese Ressource unterstützt Folgendes:
 |initials|Zeichenfolge|Die Initialen des Kontakts.|
 |jobTitle|Zeichenfolge|Die Position des Kontakts.|
 |lastModifiedDateTime|DateTimeOffset|Der Zeitpunkt, zu dem der Kontakt geändert wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|Verwalter|Zeichenfolge|Der Name des Vorgesetzten des Kontakts.
+|manager|Zeichenfolge|Der Name des Vorgesetzten des Kontakts.
 |middleName|Zeichenfolge|Der zweite Vorname des Kontakts.|
 |mobilePhone|Zeichenfolge|Die Mobiltelefonnummer des Kontakts.|
 |nickName|Zeichenfolge|Der Spitzname des Kontakts.|
@@ -64,10 +63,10 @@ Diese Ressource unterstützt Folgendes:
 |otherAddress|[PhysicalAddress](physicaladdress.md)|Weitere Adressen für den Kontakt.|
 |parentFolderId|Zeichenfolge|Die ID des übergeordneten Ordners des Kontakts.|
 |personalNotes|Zeichenfolge|Die Notizen des Benutzers zu dem Kontakt.|
-|Beruf|Zeichenfolge|Der Beruf des Kontakts.|
+|profession|Zeichenfolge|Der Beruf des Kontakts.|
 |spouseName|Zeichenfolge|Der Name des Ehepartners/Partners des Kontakts|
 |surname|Zeichenfolge|Der Nachname des Kontakts.|
-|Titel|Zeichenfolge|Der Titel des Kontakts.|
+|title|Zeichenfolge|Der Titel des Kontakts.|
 |yomiCompanyName|Zeichenfolge|Der phonetische japanische Firmenname des Kontakts.|
 |yomiGivenName|Zeichenfolge|Der phonetische japanische Vorname des Kontakts.|
 |yomiSurname|Zeichenfolge|Der phonetische japanische Nachname des Kontakts.|
@@ -132,7 +131,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "department": "string",
   "displayName": "string",
   "emailAddresses": [{"@odata.type": "microsoft.graph.emailAddress"}],
-  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "fileAs": "string",
   "generation": "string",
   "givenName": "string",
@@ -164,7 +162,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 - [Verwenden einer Delta-Abfrage zum Nachverfolgen von Änderungen in Microsoft Graph-Daten](../../../concepts/delta_query_overview.md)
 - [Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen](../../../concepts/delta_query_messages.md)

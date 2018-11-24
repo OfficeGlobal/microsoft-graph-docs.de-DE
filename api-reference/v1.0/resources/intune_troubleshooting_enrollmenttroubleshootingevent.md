@@ -18,7 +18,7 @@ Erbt von [deviceManagementTroubleshootingEvent](../resources/intune_troubleshoot
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|UUID für das Objekt. Geerbt von [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md)|
+|id|Zeichenfolge|UUID für das Objekt. Geerbt von [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md)|
 |eventDateTime|DateTimeOffset|Uhrzeit, zu der das Ereignis aufgetreten ist. Gerbt von [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md)|
 |correlationId|Zeichenfolge|ID, die für die Verfolgung des Fehlers in dem Dienst verwendet wurde. Gerbt von [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md)|
 |managedDeviceIdentifier|Zeichenfolge|Von Intune erstellter oder erfasster Gerätebezeichner|
@@ -34,12 +34,12 @@ Erbt von [deviceManagementTroubleshootingEvent](../resources/intune_troubleshoot
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceManagementTroubleshootingEvent",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.enrollmentTroubleshootingEvent"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.enrollmentTroubleshootingEvent",
@@ -57,6 +57,13 @@ Es folgt eine JSON-Darstellung der Ressource.
 }
 ```
 
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+     "Warning: Enum deviceEnrollmentFailureReason has some values specified and others unspecified."
+  ],
+}
+-->
 
 
 

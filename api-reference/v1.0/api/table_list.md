@@ -17,12 +17,12 @@ GET /workbook/tables
 GET /workbook/worksheets/{id|name}/tables
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
-| Autorisierung  | Bearer {token}. Erforderlich. |
+| Authorization  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -30,7 +30,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Sammlung von [WorkbookTable](../resources/table.md)-Objekten im Antworttext zurück.
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und Auflistung von Objekten im Antworttext [WorkbookTable](../resources/table.md) .
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
@@ -66,7 +66,7 @@ Content-length: 158
   ]
 }
 ```
-> **Hinweis:** Verwenden Sie die Abfrageparameter [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) und [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) zum Blättern durch eine große Anzahl von Tabellen.
+> **Hinweis:** Verwenden Sie die Abfrageparameter [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) und [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) zum Blättern durch eine große Anzahl von Tabellen.
 
 Beispiel: 
 

@@ -8,7 +8,8 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
-|Delegiert (Geschäfts-, Schul- oder Unikonto)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegiert (Geschäfts-, Schul- oder Unikonto)||
+| &nbsp;&nbsp; **Onboarding** | DeviceManagementManaged Devices.ReadWrite.All|
 |Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 
@@ -24,8 +25,8 @@ POST /deviceManagement/deviceCategories
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekt des Typs deviceCategory an.
@@ -34,9 +35,10 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Eindeutiger Bezeichner für die Gerätekategorie. Schreibgeschützt.|
-|displayName|Zeichenfolge|Der Anzeigename für die Gerätekategorie.|
-|description|Zeichenfolge|Optionale Beschreibung für die Gerätekategorie.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für die Gerätekategorie. Schreibgeschützt.|
+|**Onboarding**|
+|displayName|String|Der Anzeigename für die Gerätekategorie.|
+|description|String|Optionale Beschreibung für die Gerätekategorie.|
 
 
 

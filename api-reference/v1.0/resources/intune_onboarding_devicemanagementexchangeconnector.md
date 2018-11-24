@@ -16,27 +16,27 @@ Entität, die eine Verbindung mit einer Exchange-Umgebung darstellt.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Noch nicht dokumentiert|
+|id|String|Noch nicht dokumentiert|
 |lastSyncDateTime|DateTimeOffset|Zeit der letzten Synchronisierung für Exchange Connector|
-|Status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Status des Exchange Connectors. Mögliche Werte: sind `none`, `connectionPending`, `connected` und `disconnected`.|
-|primarySmtpAddress|Zeichenfolge|E-Mail-Adresse, die zum Konfigurieren von Exchange Connector zwischen Diensten verwendet wird.|
-|serverName|Zeichenfolge|Der Name des Exchange Servers.|
-|connectorServerName|Zeichenfolge|Der Name des Servers, der Exchange Connector hostet.|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Exchange Connectorstatus. Mögliche Werte: sind `none`, `connectionPending`, `connected` und `disconnected`.|
+|primarySmtpAddress|String|E-Mail-Adresse, die zum Konfigurieren von Exchange Connector zwischen Diensten verwendet wird.|
+|serverName|String|Der Name des Exchange-Servers.|
+|connectorServerName|String|Der Name des Servers, der Exchange Connector hostet.|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|Der konfigurierte Typ von Exchange Connector. Mögliche Werte: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
-|Version|Zeichenfolge|Die Version des ExchangeConnectorAgent|
-|exchangeAlias|Zeichenfolge|Ein dem Exchange-Server zugewiesener Alias|
-|exchangeOrganization|Zeichenfolge|Exchange-Organisation für den Exchange-Server|
+|Version|String|Die Version des ExchangeConnectorAgent|
+|exchangeAlias|String|Ein dem Exchange-Server zugewiesener Alias|
+|exchangeOrganization|String|Exchange-Organisation für den Exchange-Server|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceManagementExchangeConnector"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
@@ -52,11 +52,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "exchangeOrganization": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -24,8 +24,8 @@ POST /deviceManagement/auditEvents
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „auditEvent“ an.
@@ -34,18 +34,18 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität|
-|displayName|Zeichenfolge|Anzeigename des Ereignisses|
-|componentName|Zeichenfolge|Name der Komponente|
-|Akteur|[auditActor](../resources/intune_auditing_auditactor.md)|AAD-Benutzer und -Anwendung, die dem Überwachungsereignis zugeordnet sind|
-|Aktivität|Zeichenfolge|Anzeigename der Aktivität|
+|id|String|Schlüssel der Entität|
+|displayName|String|Anzeigename des Ereignisses|
+|componentName|String|Name der Komponente|
+|actor|[auditActor](../resources/intune_auditing_auditactor.md)|AAD-Benutzer und -Anwendung, die dem Überwachungsereignis zugeordnet sind|
+|activity|String|Anzeigename der Aktivität|
 |activityDateTime|DateTimeOffset|Datum und Uhrzeit der Durchführung der Aktivität im UTC-Format|
-|activityType|Zeichenfolge|Typ der durchgeführten Aktivität|
-|activityOperationType|Zeichenfolge|HTTP-Vorgangstyp der Aktivität|
-|activityResult|Zeichenfolge|Ergebnis der Aktivität|
+|activityType|String|Typ der durchgeführten Aktivität|
+|activityOperationType|String|HTTP-Vorgangstyp der Aktivität|
+|activityResult|String|Ergebnis der Aktivität|
 |correlationId|Guid|ID der Clientanforderung, die zur Korrelation von Aktivitäten im System verwendet wird|
-|Ressourcen|Collection von Objekten des Typs [auditResource](../resources/intune_auditing_auditresource.md)|Ressourcen, die geändert werden|
-|Kategorie|Zeichenfolge|Überwachungskategorie|
+|resources|Collection von Objekten des Typs [auditResource](../resources/intune_auditing_auditresource.md)|Ressourcen, die geändert werden|
+|category|String|Überwachungskategorie|
 
 
 
@@ -58,7 +58,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/auditEvents
 Content-type: application/json
-Content-length: 1387
+Content-length: 1390
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -82,7 +82,7 @@ Content-length: 1387
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "52effe71-fe71-52ef-71fe-ef5271feef52",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -108,7 +108,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1436
+Content-Length: 1439
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -133,7 +133,7 @@ Content-Length: 1436
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "52effe71-fe71-52ef-71fe-ef5271feef52",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -153,11 +153,6 @@ Content-Length: 1436
   "category": "Category value"
 }
 ```
-
-
-
-
-
 
 
 

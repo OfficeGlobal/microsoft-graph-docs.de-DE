@@ -15,7 +15,7 @@ Geplante Aktion für eine Regel
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität|
+|id|String|Schlüssel der Entität.|
 |ruleName|String|Name der Regel, für die diese geplante Aktion gilt.|
 
 ## <a name="relationships"></a>Beziehungen
@@ -25,12 +25,12 @@ Geplante Aktion für eine Regel
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceComplianceScheduledActionForRule"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceScheduledActionForRule",
@@ -38,11 +38,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "ruleName": "String"
 }
 ```
-
-
-
-
-
 
 
 

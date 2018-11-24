@@ -3,14 +3,14 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: DriveItem
-ms.openlocfilehash: 60f2d58331f349f9990f78f36f04df055ce90b9e
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: d73b43b0ba1d98f496b4a1b2a606ec9f95298efa
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23269838"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26602384"
 ---
-# <a name="driveitem-resource-type"></a>DriveItem-Ressourcentyp
+# <a name="driveitem-resource-type"></a>Ressourcentyp „DriveItem“
 
 Die **driveItem**-Ressource stellt eine Datei, einen Ordner oder ein anderes auf einem Laufwerk gespeichertes Element dar. Alle Dateisystemobjekte in OneDrive und SharePoint werden als **driveItem**-Ressourcen zurückgegeben.
 
@@ -97,36 +97,36 @@ Die **driveItem**-Ressource wird von [**baseItem**][baseItem] abgeleitet und erb
 
 | Eigenschaft             | Typ               | Beschreibung
 |:---------------------|:-------------------|:---------------------------------
-| Audio                | [Audio][]          | Audiometadaten, wenn das Element eine Audiodatei ist. Schreibgeschützt.
-| Inhalt              | Datenstrom             | Der Inhaltsdatenstrom, wenn das Element eine Datei ist
+| audio                | [audio][]          | Audiometadaten, wenn das Element eine Audiodatei ist. Schreibgeschützt.
+| content              | Stream             | Der Inhaltsdatenstrom, wenn das Element eine Datei ist
 | createdBy            | [identitySet][]    | Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.
 | createdDateTime      | DateTimeOffset     | Datum und Uhrzeit der Elementerstellung. Schreibgeschützt.
-| cTag                 | Zeichenfolge             | Ein ETag für den Inhalt des Elements. Dieses ETag wird nicht geändert, wenn nur die Metadaten geändert werden. **Hinweis:** Diese Eigenschaft wird nicht zurückgegeben, wenn das Element ein Ordner ist. Schreibgeschützt.
-| gelöscht              | [gelöscht][]        | Informationen zum „gelöscht“-Zustand des Elements. Schreibgeschützt.
-| Beschreibung          | Zeichenfolge             | Stellt eine für den Benutzer sichtbare Beschreibung des Elements bereit. Lese-/Schreibzugriff. Nur auf OneDrive Personal
+| cTag                 | String             | Ein ETag für den Inhalt des Elements. Dieses ETag wird nicht geändert, wenn nur die Metadaten geändert werden. **Hinweis:** Diese Eigenschaft wird nicht zurückgegeben, wenn das Element ein Ordner ist. Schreibgeschützt.
+| gelöscht              | [deleted][]        | Informationen zum „gelöscht“-Zustand des Elements. Schreibgeschützt.
+| description          | Zeichenfolge             | Stellt eine für den Benutzer sichtbare Beschreibung des Elements bereit. Lese-/Schreibzugriff. Nur auf OneDrive Personal
 | eTag                 | Zeichenfolge             | ETag des gesamten Elements (Metadaten + Inhalt). Schreibgeschützt.
-| Datei                 | [Datei][]           | Dateimetadaten, wenn das Element eine Datei ist. Schreibgeschützt.
+| file                 | [file][]           | Dateimetadaten, wenn das Element eine Datei ist. Schreibgeschützt.
 | fileSystemInfo       | [fileSystemInfo][] | Informationen zum Dateisystem des Clients. Lese-/Schreibzugriff.
-| Ordner               | [Ordner][]         | Ordnermetadaten, wenn das Element ein Ordner ist. Schreibgeschützt.
+| folder               | [folder][]         | Ordnermetadaten, wenn das Element ein Ordner ist. Schreibgeschützt.
 | id                   | Zeichenfolge             | Der eindeutige Bezeichner des Elements im Laufwerk. Schreibgeschützt.
-| Abbildung                | [Bild][]          | Bildmetadaten, wenn das Element ein Bild ist. Schreibgeschützt.
+| Abbildung                | [image][]          | Bildmetadaten, wenn das Element ein Bild ist. Schreibgeschützt.
 | lastModifiedBy       | [identitySet][]    | Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element zuletzt geändert wurde. Schreibgeschützt.
 | lastModifiedDateTime | DateTimeOffset     | Datum und Uhrzeit der letzten Änderung des Elements. Schreibgeschützt.
-| Standort             | [geoCoordinates][] | Standortmetadaten, sofern das Element Standortdaten aufweist. Schreibgeschützt.
-| Name                 | Zeichenfolge             | Der Name des Elements (Dateiname und Erweiterung). Lese-/Schreibzugriff.
-| Paket              | [Paket][]        | Zeigt wenn vorhanden an, dass das Element ein Paket ist statt eines Ordners oder einer Datei. Pakete werden in einigen Kontexten wie Dateien, in anderen Kontexten wie Ordner behandelt. Schreibgeschützt.
+| location             | [geoCoordinates][] | Standortmetadaten, sofern das Element Standortdaten aufweist. Schreibgeschützt.
+| name                 | Zeichenfolge             | Der Name des Elements (Dateiname und Erweiterung). Lese-/Schreibzugriff.
+| package              | [package][]        | Zeigt wenn vorhanden an, dass das Element ein Paket ist statt eines Ordners oder einer Datei. Pakete werden in einigen Kontexten wie Dateien, in anderen Kontexten wie Ordner behandelt. Schreibgeschützt.
 | parentReference      | [itemReference][]  | Informationen zum übergeordneten Element, wenn das Element ein übergeordnetes Element hat. Lese-/Schreibzugriff.
-| Foto                | [Foto][]          | Fotometadaten, wenn das Element ein Foto ist. Schreibgeschützt.
+| Foto                | [photo][]          | Fotometadaten, wenn das Element ein Foto ist. Schreibgeschützt.
 | Veröffentlichung          | [publicationFacet][] | Stellt Informationen über den veröffentlichten oder ausgecheckten Status eines Elements an Stellen bereit, die solche Aktionen unterstützen. Diese Eigenschaft wird standardmäßig nicht zurückgegeben. Schreibgeschützt. |
 | remoteItem           | [remoteItem][]     | Daten zum Remoteelement, wenn das Element von einem anderen Laufwerk freigegeben ist als dem, auf das zugegriffen wird. Schreibgeschützt.
-| Stamm                 | [Stamm][]           | Wenn diese Eigenschaft nicht Null ist, bedeutet dies, dass es sich bei der driveItem-Ressource um die oberste driveItem-Ressource auf dem Laufwerk handelt.
+| root                 | [root][]           | Wenn diese Eigenschaft nicht Null ist, bedeutet dies, dass es sich bei der driveItem-Ressource um die oberste driveItem-Ressource auf dem Laufwerk handelt.
 | searchResult         | [searchResult][]   | Suchmetadaten, wenn das Element aus einem Suchergebnis stammt. Schreibgeschützt.
-| freigegeben               | [freigegeben][]         | Gibt an, dass das Element für andere freigegeben wurde, und enthält den „freigegeben“-Status des Elements. Schreibgeschützt.
+| shared               | [shared][]         | Gibt an, dass das Element für andere freigegeben wurde, und enthält den „freigegeben“-Status des Elements. Schreibgeschützt.
 | sharepointIds        | [sharepointIds][]  | Gibt Bezeichner zurück, die für SharePoint REST-Kompatibilität nützlich sind. Schreibgeschützt.
-| Größe                 | Int64              | Größe des Elements in Byte. Schreibgeschützt.
+| size                 | Int64              | Größe des Elements in Byte. Schreibgeschützt.
 | specialFolder        | [specialFolder][]  | Facet, das zurückgegeben wird, wenn das aktuelle Element auch als spezieller Ordner verfügbar ist. Schreibgeschützt.
-| Video                | [Video][]          | Videometadaten, wenn das Element ein Video ist. Schreibgeschützt.
-| webDavUrl            | Zeichenfolge             | WebDAV-kompatible URL für das Element.
+| video                | [video][]          | Videometadaten, wenn das Element ein Video ist. Schreibgeschützt.
+| webDavUrl            | String             | WebDAV-kompatible URL für das Element.
 | webUrl               | Zeichenfolge             | URL, über die die Ressource im Browser angezeigt werden kann. Schreibgeschützt.
 
 **Hinweis:** Die Eigenschaften „eTag“ und „cTag“ arbeiten bei Containern (Ordnern) anders. Der Wert „cTag“ wird geändert, wenn Inhalte oder Metadaten eines Nachfolgers des Ordners geändert werden. Der Wert „eTag“ wird nur geändert, wenn die Eigenschaften des Ordners geändert werden. Ausnahme: Eigenschaften, die von Nachfolgern abgeleitet werden (wie **childCount** oder **lastModifiedDateTime**).
@@ -135,14 +135,14 @@ Die **driveItem**-Ressource wird von [**baseItem**][baseItem] abgeleitet und erb
 
 | Beziehung       | Typ                        | Beschreibung
 |:-------------------|:----------------------------|:--------------------------
-| Untergeordnetes Element           | driveItem-Sammmlung        | Sammlung von Elementobjekten für die direkt untergeordneten Elemente eines Elements. Nur Elemente, die Ordner repräsentieren, haben untergeordnete Elemente. Schreibgeschützt. Lässt Nullwerte zu.
-| createdByUser      | [Benutzer][]                    | Der Name des Benutzers, der das Element erstellt hat. Schreibgeschützt.
-| lastModifiedByUser | [Benutzer][]                    | Der Name des Benutzers, der das Element zuletzt geändert hat. Schreibgeschützt.
+| children           | DriveItem-Auflistung        | Sammlung von Elementobjekten der direkten untergeordneten Elemente eines Elements. Nur Elemente, die Ordner repräsentieren, haben untergeordnete Elemente. Schreibgeschützt. Lässt Nullwerte zu.
+| createdByUser      | [user][]                    | Der Name des Benutzers, der das Element erstellt hat. Schreibgeschützt.
+| lastModifiedByUser | [user][]                    | Der Name des Benutzers, der das Element zuletzt geändert hat. Schreibgeschützt.
 | listItem           | [listItem][]                | Für Laufwerke in SharePoint, die zugeordneten Dokumentbibliothek-Listenelement. Schreibgeschützt. Lässt Nullwerte zu.
-| Berechtigungen        | [Berechtigungen][] -Sammlung   | Der Satz von Berechtigungen für das Element. Schreibgeschützt. Lässt Nullwerte zu.
-| Miniaturansichten         | [thumbnailSet][] -Sammlung | Sammlung der dem Element zugeordneten [ThumbnailSet][]-Objekte. Weitere Informationen finden Sie im Artikel zum [Abrufen von Miniaturansichten][]. Schreibgeschützt. Lässt Nullwerte zu.
-| Versionen           | [DriveItemVersion][] -Auflistung | Die Liste der vorherigen Versionen des Listenelements. Weitere Informationen finden Sie unter [Abrufen von früheren Versionen][]. Schreibgeschützt. Lässt Nullwerte zu.
-| Arbeitsmappe           | [Arbeitsmappe][]                | Für Dateien, die Excel-Kalkulationstabellen sind, greift auf die Arbeitsmappen-API zu, um mit dem Inhalt der Kalkulationstabelle zu arbeiten. Lässt Nullwerte zu.
+| permissions        | [permission][] collection   | Der Satz von Berechtigungen für das Element. Schreibgeschützt. Lässt Nullwerte zu.
+| thumbnails         | [thumbnailSet][] collection | Sammlung der dem Element zugeordneten [ThumbnailSet][]-Objekte. Weitere Informationen finden Sie im Artikel zum [Abrufen von Miniaturansichten][]. Schreibgeschützt. Lässt Nullwerte zu.
+| Versionen           | [DriveItemVersion][] -Auflistung | Die Liste der vorherigen Versionen des Elements. Weitere Informationen finden Sie unter [Abrufen von früheren Versionen][]. Schreibgeschützt. Lässt Nullwerte zu.
+| Arbeitsmappe           | [workbook][]                | Für Dateien, die Excel-Kalkulationstabellen sind, greift auf die Arbeitsmappe API die Kalkulationstabelle Inhalt entwickelt. Lässt Nullwerte zu.
 
 ## <a name="instance-attributes"></a>Instanzenattribute
 
@@ -150,9 +150,9 @@ Instanzenattribute sind Eigenschaften mit speziellem Verhalten. Diese Eigenschaf
 
 | Eigenschaftenname                     | Typ   | Beschreibung
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.conflictBehavior | Zeichenfolge | Das Konfliktlösungsverhalten von Aktionen, die ein neues Element erstellen. Verwenden Sie die Werte *fail*, *replace* oder *rename*. Das Standardformat für PUT ist *replace*. Ein Element wird nie mit dieser Anmerkung zurückgegeben. Schreibzugriff.
-| @microsoft.graph.downloadUrl      | Zeichenfolge | Eine URL, über die die Inhalte der Datei heruntergeladen werden können. Eine Authentifizierung ist mit dieser URL nicht erforderlich. Schreibgeschützt.
-| @microsoft.graph.sourceUrl        | Zeichenfolge | Bei Ausgabe einer PUT-Anforderung kann der Dienst mithilfe dieser Instanzanmerkung angewiesen werden, den Inhalt der URL herunterzuladen und als diese Datei zu speichern. Schreibzugriff.
+| @microsoft.graph.conflictBehavior | string | Das Konfliktlösungsverhalten von Aktionen, die ein neues Element erstellen. Verwenden Sie die Werte *fail*, *replace* oder *rename*. Das Standardformat für PUT ist *replace*. Ein Element wird nie mit dieser Anmerkung zurückgegeben. Schreibzugriff.
+| @microsoft.graph.downloadUrl      | string | Eine URL, über die die Inhalte der Datei heruntergeladen werden können. Eine Authentifizierung ist mit dieser URL nicht erforderlich. Schreibgeschützt.
+| @microsoft.graph.sourceUrl        | string | Bei Ausgabe einer PUT-Anforderung kann der Dienst mithilfe dieser Instanzanmerkung angewiesen werden, den Inhalt der URL herunterzuladen und als diese Datei zu speichern. Schreibzugriff.
 
 **Hinweis:** Der Wert „@microsoft.graph.downloadUrl“ ist eine kurzlebige URL und kann nicht zwischengespeichert werden. Die URL ist nur für kurze Zeit (1 Stunde) verfügbar, bevor sie ungültig wird.
 
@@ -163,55 +163,57 @@ Instanzenattribute sind Eigenschaften mit speziellem Verhalten. Diese Eigenschaf
 | [Element abrufen](../api/driveitem_get.md)                      | `GET /drive/items/{item-id}`
 | [Untergeordnete Objekte auflisten](../api/driveitem_list_children.md)       | `GET /drive/items/{item-id}/children`
 | [Versionen auflisten](../api/driveitem_list_versions.md)       | `GET /drive/items/{item-id}/versions`
-| [Element erstellen](../api/driveitem_post_children.md)         | `POST /drive/items/{item-id}/children`
-| [Element aktualisieren](../api/driveitem_update.md)                | `PATCH /drive/items/{item-id}`
-| [Inhalt aktualisieren](../api/driveitem_put_content.md)        | `PUT /drive/items/{item-id}/content`
+| [Create item](../api/driveitem_post_children.md)         | `POST /drive/items/{item-id}/children`
+| [Update item](../api/driveitem_update.md)                | `PATCH /drive/items/{item-id}`
+| [Upload content](../api/driveitem_put_content.md)        | `PUT /drive/items/{item-id}/content`
 | [Inhalte herunterladen](../api/driveitem_get_content.md)      | `GET /drive/items/{item-id}/content`
 | [Bestimmtes Dateiformat herunterladen][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
 | [Element löschen](../api/driveitem_delete.md)                | `DELETE /drive/items/{item-id}`
-| [Element verschieben](../api/driveitem_move.md)                    | `PATCH /drive/items/{item-id}`
-| [Element kopieren](../api/driveitem_copy.md)                    | `POST /drive/items/{item-id}/copy`
-| [Elemente durchsuchen](../api/driveitem_search.md)               | `GET /drive/items/{item-id}/search(q='text')`
-| [Liste der Änderungen auf einem Laufwerk](../api/driveitem_delta.md)     | `GET /drive/root/delta`
-| [Liste Miniaturansichten](../api/driveitem_list_thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
+| [Move item](../api/driveitem_move.md)                    | `PATCH /drive/items/{item-id}`
+| [Copy item](../api/driveitem_copy.md)                    | `POST /drive/items/{item-id}/copy`
+| [Search items](../api/driveitem_search.md)               | `GET /drive/items/{item-id}/search(q='text')`
+| [List changes in a drive](../api/driveitem_delta.md)     | `GET /drive/root/delta`
+| [List thumbnails](../api/driveitem_list_thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
 | [Freigabelink erstellen](../api/driveitem_createlink.md)    | `POST /drive/items/{item-id}/createLink`
 | [Berechtigungen hinzufügen](../api/driveitem_invite.md)            | `POST /drive/items/{item-id}/invite`
 | [Berechtigungen auflisten](../api/driveitem_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [Berechtigung löschen](../api/permission_delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
+| [Delete permission](../api/permission_delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
+| [Preview-Element][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
+[item-preview]: ../api/driveItem_preview.md
 
 ## <a name="remarks"></a>Bemerkungen
 
 In OneDrive for Business- oder SharePoint-Dokumentbibliotheken wird die Eigenschaft **cTag** nicht zurückgegeben, wenn die **driveItem**-Ressource ein [Ordner][]-Facet hat.
 
-[Audio]: audio.md
+[audio]: audio.md
 [baseItem]: baseItem.md
-[gelöscht]: deleted.md
+[deleted]: deleted.md
 [download-format]: ../api/driveitem_get_content_format.md
 [driveItemVersion]: driveItemVersion.md
-[Datei]: file.md
+[file]: file.md
 [fileSystemInfo]: fileSystemInfo.md
-[Ordner]: folder.md
+[folder]: folder.md
 [Abrufen von früheren Versionen]: ../api/driveitem_list_versions.md
 [Abrufen von Miniaturansichten]: ../api/driveitem_list_thumbnails.md
 [identitySet]: identitySet.md
-[Bild]: image.md
+[image]: image.md
 [itemReference]: itemReference.md
 [geoCoordinates]: geoCoordinates.md
 [listItem]: listItem.md
-[Paket]: package.md
-[Paket]: permission.md
-[Foto]: photo.md
+[package]: package.md
+[permission]: permission.md
+[photo]: photo.md
 [remoteItem]: remoteItem.md
-[Stamm]: root.md
+[root]: root.md
 [searchResult]: searchResult.md
 [shared]: shared.md
 [sharepointIds]: sharepointIds.md
 [specialFolder]: specialFolder.md
 [thumbnailSet]: thumbnailSet.md
-[Video]: video.md
-[Arbeitsmappe]: workbook.md
-[Benutzer]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/users
+[video]: video.md
+[workbook]: workbook.md
+[user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
 [publicationFacet]: publicationfacet.md
 
 <!-- {

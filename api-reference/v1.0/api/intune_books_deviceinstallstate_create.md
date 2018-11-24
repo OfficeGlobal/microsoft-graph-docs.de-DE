@@ -25,8 +25,8 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „deviceInstallState“ an.
@@ -35,15 +35,15 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
-|deviceName|Zeichenfolge|Name des Geräts|
-|deviceId|Zeichenfolge|ID des Geräts|
+|id|String|Schlüssel der Entität|
+|deviceName|String|Name des Geräts|
+|deviceId|String|ID des Geräts|
 |lastSyncDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Synchronisierung|
-|installState|[installState](../resources/intune_books_installstate.md)|Der Installationsstatus des e-Books. Mögliche Werte sind: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|Zeichenfolge|Fehlercode von Installationsfehlern|
-|osVersion|Zeichenfolge|Betriebssystemversion|
-|osDescription|Zeichenfolge|Beschreibung des Betriebssystems|
-|userName|Zeichenfolge|Name des Gerätebenutzers|
+|installState|[installState](../resources/intune_books_installstate.md)|Der Installationsstatus des E-Books. Mögliche Werte sind: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed` und `unknown`.|
+|errorCode|String|Fehlercode von Installationsfehlern|
+|osVersion|String|Version des Betriebssystems|
+|osDescription|String|Beschreibung des Betriebssystems|
+|userName|String|Name des Gerätebenutzers|
 
 
 
@@ -91,11 +91,6 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
-
-
-
-
-
 
 
 

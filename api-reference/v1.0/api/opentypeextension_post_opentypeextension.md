@@ -1,20 +1,24 @@
 # <a name="create-open-extension"></a>Datenerweiterung erstellen
 
-Erstellen Sie offene Erweiterungen (Objekte des Typs [openTypeExtension](../resources/openTypeExtension.md)) und fügen einer neuen oder bereits vorhandenen Ressourceninstanz benutzerdefinierte Eigenschaften hinzu.
+Mit dieser API können Sie offene Erweiterungen (Objekte des Typs [openTypeExtension](../resources/openTypeExtension.md)) erstellen und einer neuen oder bereits vorhandenen Ressourceninstanz benutzerdefinierte Eigenschaften hinzufügen.
 
-> **Hinweis:** Wenn Sie offene Erweiterungen für Outlook-Ressourcen erstellen, verweisen wir Sie auf **Outlook-spezifische Überlegungen** in [Ressourcentyp openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).
+> **Hinweis:** Wenn beim Erstellen von open Extensions auf Outlook-Ressourcen finden Sie in [OpenTypeExtension Ressourcentyp](../resources/opentypeextension.md#outlook-specific-considerations) **Outlook-spezifischen Aspekte** .
 
 ## <a name="permissions"></a>Berechtigungen
 
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich (je nachdem, in welchem Typ von Ressource Sie die Erweiterung erstellen möchten): Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+Je nach der Ressource, die Sie die Erweiterung im erstellen und die Berechtigung Typ (delegierte oder-Anwendung) angefordert, die Berechtigung, die in der folgenden Tabelle angegebenen mit den geringsten ist erforderlich, um diese API aufzurufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](../../../concepts/permissions_reference.md).
 
-|**Unterstützte Ressource**|**Berechtigung**|**Unterstützte Ressource**|**Berechtigung** |
+| Unterstützte Ressource | Delegiert (Geschäfts-, Schul- oder Unikonto) | Delegiert (persönliches Microsoft-Konto) | Anwendung |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | Device.ReadWrite.All | [event](../resources/event.md) | Calendars.ReadWrite |
-| [group](../resources/group.md) | Group.ReadWrite.All | [group event](../resources/event.md) | Group.ReadWrite.All |
-| [group post](../resources/post.md) | Group.ReadWrite.All | [message](../resources/message.md) | Mail.ReadWrite |
-| [organization](../resources/organization.md) | Directory.AccessAsUser.All | [personal contact](../resources/contact.md) | Contacts.ReadWrite |
-| [user](../resources/user.md) | Directory.AccessAsUser.All | | |
+| [Gerät](../resources/device.md) | Directory.AccessAsUser.All | Nicht unterstützt | Device.ReadWrite.All |
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [group](../resources/group.md) | Group.ReadWrite.All | Nicht unterstützt | Group.ReadWrite.All |
+| [group event](../resources/event.md) | Group.ReadWrite.All | Nicht unterstützt | Nicht unterstützt |
+| [group post](../resources/post.md) | Group.ReadWrite.All | Nicht unterstützt | Group.ReadWrite.All |
+| [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
+| [organization](../resources/organization.md) | Directory.AccessAsUser.All | Nicht unterstützt | Nicht unterstützt |
+| [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [user](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -31,7 +35,7 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
 ```
 
->**Hinweis:** Diese Syntax enthält einige allgemeine Methoden zur Erstellung der unterstützten Ressourceninstanzen. Alle anderen POST-Syntaxen, mit denen Sie diese Ressourceninstanzen erstellen können, unterstützen das Erstellen von offenen Erweiterungen in ihnen auf ähnliche Weise.
+>**Hinweis:** Diese Syntax enthält einige allgemeinen Bereitstellungsmethoden für die Ressourceninstanzen unterstützte zu erstellen. Andere POST-Syntax, die Sie erstellen diese Ressourceninstanzen können unterstützt erstellen open Erweiterungen in diese auf ähnliche Weise.
 
 Im Abschnitt [Anforderungstext](#request-body) ist beschrieben, wie Sie die Eigenschaften der neuen Ressourceninstanz _und die Erweiterung_ in den Anforderungstext einschließen können.
 
@@ -52,21 +56,21 @@ POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
 ```
 
->**Hinweis:** Diese Syntax enthält einige allgemeine Methoden zur Identifizierung einer Ressourceninstanz, um eine Erweiterung darin zu erstellen. Alle anderen Syntaxen, die es Ihnen ermöglichen, diese Ressourceninstanzen zu identifizieren, unterstützen das Erstellen offener Erweiterungen darin in einer ähnlichen Weise.
+>**Hinweis:** Diese Syntax enthält einige allgemeinen Bereitstellungsmethoden für eine Ressourceninstanz identifizieren, um eine Erweiterung in es zu erstellen. Alle anderen Syntax, die Ihnen ermöglicht, diese Ressourceninstanzen identifizieren unterstützt das Erstellen von open Extensions darin auf ähnliche Weise.
 
 Im Abschnitt [Anforderungstext](#request-body) wird beschrieben, wie Sie _die Erweiterung_ in den Anforderungstext einschließen können.
 
 ## <a name="path-parameters"></a>Pfadparameter
 |Parameter|Typ|Beschreibung|
 |:-----|:-----|:-----|
-|id|Zeichenfolge|Ein eindeutiger Bezeichner für ein Objekt in der entsprechenden Sammlung. Erforderlich.|
+|id|string|Ein eindeutiger Bezeichner für ein Objekt in der entsprechenden Sammlung. Erforderlich.|
 
 ## <a name="request-headers"></a>Anforderungsheader
 
 | Name       | Wert |
 |:---------------|:----------|
-| Autorisierung | Bearer {token}. Erforderlich. |
-| Inhaltstyp | application/json |
+| Authorization | Bearer {token}. Erforderlich. |
+| Content-Type | application/json |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -75,7 +79,7 @@ Geben Sie den JSON-Text einer [openTypeExtension](../resources/openTypeExtension
 | Name       | Wert |
 |:---------------|:----------|
 | @odata.type | microsoft.graph.openTypeExtension |
-| extensionName | %unique_string % |
+| extensionName | %unique_string% |
 
 Beim Erstellen einer Erweiterung in einer _neuen_ Ressourceninstanz müssen Sie zusätzlich zu dem neuen **openTypeExtension**-Objekt eine JSON-Darstellung der zur Erstellung einer solchen Ressourceninstanz erforderlichen Eigenschaften angeben.
 
@@ -85,8 +89,8 @@ Beim Erstellen einer Erweiterung in einer _neuen_ Ressourceninstanz müssen Sie 
 
 Je nach Vorgang lautet der Antwortcode `201 Created` oder `202 Accepted`.
 
-Beim Erstellen einer Erweiterung mit dem gleichen Vorgang, mit dem Sie eine Ressourceninstanz erstellen, gibt der Vorgang den gleichen Antwortcode zurück, den er auch zurückgibt, wenn Sie den Vorgang zum Erstellen der Ressourceninstanz ohne die Erweiterung verwenden.
-Weitere Informationen finden Sie in den entsprechenden Themen zum Erstellen der Instanz wie [oben](#create-an-extension-in-a-new-resource-instance) aufgelistet.
+Beim Erstellen einer Erweiterungs mit den gleichen Vorgang, mit denen Sie eine Ressourceninstanz zu erstellen, gibt der Vorgang den gleichen Antwortcode, den es zurückgibt, wenn Sie den Vorgang zum Erstellen der Ressourceninstanz ohne die Erweiterung verwenden.
+Finden Sie in den entsprechenden Themen für die Instanz als aufgeführten [oben](#create-an-extension-in-a-new-resource-instance)zu erstellen.
 
 ### <a name="response-body"></a>Antworttext
 
@@ -105,9 +109,9 @@ Im ersten Beispiel werden mit ein und demselben Aufruf eine Nachricht und eine E
 - Die für eine neue Nachricht typischen Eigenschaften **subject**, **body** und **toRecipients**
 - Daneben die folgenden Parameter der Erweiterung:
 
-  - Den Typ`microsoft.graph.openTypeExtension`
+  - Den Typ `microsoft.graph.openTypeExtension`
   - Den Erweiterungsnamen „Com.Contoso.Referral“
-  - Zusätzliche Daten, die als drei benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `expirationDate` und `dealValue`.
+  - Zusätzliche Daten, die als drei benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden: `companyName`, `expirationDate`, und `dealValue`.
 
 <!-- {
   "blockType": "ignored",
@@ -145,7 +149,7 @@ POST https://graph.microsoft.com/v1.0/me/messages
 
 Unten sehen Sie die Antwort für Beispiel 1. Der Antworttext enthält die Eigenschaften der neuen Nachricht sowie die folgenden Parameter der neuen Erweiterung:
 
-- Die Eigenschaft **id** mit dem vollqualifizierten Namen`Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`
+- Die Eigenschaft **id** mit dem vollqualifizierten Namen `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`
 - Die in der Anforderung angegebene Standardeigenschaft **extensionName**
 - Die in der Anforderung angegebenen benutzerdefinierten Daten, gespeichert als 3 benutzerdefinierte Eigenschaften
 
@@ -226,9 +230,9 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 
 Das zweite Beispiel erstellt eine Erweiterung in der angegebenen Nachricht. Der Anforderungstext enthält die folgenden Parameter für die Erweiterung:
 
-- Den Typ`microsoft.graph.openTypeExtension`
+- Den Typ `microsoft.graph.openTypeExtension`
 - Den Erweiterungsnamen „Com.Contoso.Referral“
-- Zusätzliche Daten, die als 3 benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `dealValue` und`expirationDate`
+- Zusätzliche Daten, die als 3 benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `dealValue` und `expirationDate`
 
 <!-- {
   "blockType": "ignored",
@@ -251,7 +255,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi
 Die Antwort für das zweite Beispiel sehen Sie unten. Der Antworttext enthält die folgenden Parameter für die neue Erweiterung:
 
 - Die Standardeigenschaft **extensionName**
-- Die Eigenschaft **id** mit dem vollqualifizierten Namen`Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`
+- Die Eigenschaft **id** mit dem vollqualifizierten Namen `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`
 - Die benutzerdefinierten Daten, die gespeichert werden sollen
 
 <!-- {
@@ -282,9 +286,9 @@ Content-type: application/json
 
 Das dritte Beispiel erstellt eine Erweiterung in dem angegebenen Gruppenereignis. Der Anforderungstext enthält die folgenden Parameter für die Erweiterung:
 
-- Den Typ`microsoft.graph.openTypeExtension`
+- Den Typ `microsoft.graph.openTypeExtension`
 - Den Erweiterungsnamen „Com.Contoso.Deal“
-- Zusätzliche Daten, die als 3 benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `dealValue` und`expirationDate`
+- Zusätzliche Daten, die als 3 benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `dealValue` und `expirationDate`
 
 <!-- {
   "blockType": "ignored",
@@ -332,9 +336,9 @@ Content-type: application/json
 
 Das vierte Beispiel erstellt eine Erweiterung in einem neuen Gruppenbeitrag, mit demselben **reply**-Aktionsaufruf, wie er für bereits vorhandene Gruppenbeiträge verwendet wird. Die Aktion **reply** erstellt einen neuen Beitrag und eine neue, in diesen Beitrag eingebettete Erweiterung. Der Antworttext enthält eine Eigenschaft **post** mit dem **Text** des neuen Beitrags sowie die folgenden Daten der neuen Erweiterung:
 
-- Den Typ`microsoft.graph.openTypeExtension`
+- Den Typ `microsoft.graph.openTypeExtension`
 - Den Erweiterungsnamen „Com.Contoso.HR“
-- Zusätzliche Daten, die als 3 benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `expirationDate` und das Zeichenfolgen-Array`topPicks`
+- Zusätzliche Daten, die als 3 benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `expirationDate` und das Zeichenfolgen-Array `topPicks`
 
 <!-- {
   "blockType": "ignored",
@@ -386,9 +390,9 @@ Content-Length: 0
 
 Das fünfte Beispiel erstellt in ein und derselben POST-Operation eine Erweiterung in einem neuen Gruppenbeitrag und eine Unterhaltung. Die POST-Operation erstellt eine neue Unterhaltung, einen neuen Thread, einen neuen Beitrag und eine neue, in diesen Beitrag eingebettete Erweiterung. Der Anforderungstext enthält die Eigenschaften **Topic** und **Threads** sowie ein untergeordnetes Objekt des Typs **post** der neuen Unterhaltung. Das **post**-Objekt wiederum enthält den **Text** des neuen Beitrags sowie die folgenden Daten der Erweiterung:
 
-- Den Typ`microsoft.graph.openTypeExtension`
+- Den Typ `microsoft.graph.openTypeExtension`
 - Den Erweiterungsnamen „Com.Contoso.HR“
-- Zusätzliche Daten, die als 3 benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `expirationDate` und das Zeichenfolgen-Array`topPicks`
+- Zusätzliche Daten, die als 3 benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `expirationDate` und das Zeichenfolgen-Array `topPicks`
 
 <!-- {
   "blockType": "ignored",

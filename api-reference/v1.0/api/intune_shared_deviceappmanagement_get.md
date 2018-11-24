@@ -6,7 +6,7 @@ Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [dev
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](../../../concepts/permissions_reference.md).  Beachten Sie, dass die entsprechende Berechtigung gemäß dem Workflow variiert.
+Eine der folgenden Berechtigungen ist erforderlich, um diese API-aufrufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](../../../concepts/permissions_reference.md).  Beachten Sie, dass die entsprechende Berechtigungen gemäß den Workflow variiert.
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -24,13 +24,13 @@ GET /deviceAppManagement
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -45,7 +45,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement
 ```
 
 ## <a name="example-response"></a>Beispielantwort
-Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+Der Kürze halber werden möglicherweise im Response-Objekt dargestellten abgeschnitten. Alle Eigenschaften werden von einem tatsächlichen Aufruf zurückgegeben.
 
 ``` http
 HTTP/1.1 200 OK

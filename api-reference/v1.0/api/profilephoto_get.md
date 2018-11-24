@@ -2,7 +2,7 @@
 
 Rufen Sie das angegebene [profilePhoto](../resources/profilephoto.md) oder die Metadaten (profilePhoto-Eigenschaften) ab.
 
-> **Hinweis:** Dieser Vorgang in Version 1.0 unterstützt ausschließlich Postfächer in Geschäfts-, Schul- oder Unikonten des Benutzers. Persönliche Postfächer werden nicht unterstützt.
+> **Hinweis:** Dieser Vorgang in Version 1.0 unterstützt ausschließlich Postfächer in Geschäfts-, Schul- oder Unikonten des Benutzers. Persönliche Postfächer werden nicht unterstützt.
 
 Die unterstützten Größen der HD-Fotos in Office 365 sind wie folgt: „48x48“, „64x64“, „96x96“, „120x120“, „240x240“, „360x360“,“432x432“, „504x504“ und „648x648“. Fotos können eine beliebige Größe aufweisen, wenn sie in Azure Active Directory gespeichert sind.
 
@@ -23,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 ## <a name="http-request"></a>HTTP-Anforderung 
 
-### <a name="get-the-photo"></a>Foto abrufen
+### <a name="get-the-photo"></a>Möchten Sie das Foto
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo/$value
@@ -34,7 +34,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
-### <a name="get-the-metadata-of-the-photo"></a>Metadaten des Fotos abrufen
+### <a name="get-the-metadata-of-the-photo"></a>Abrufen der Metadaten des Fotos
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
@@ -47,7 +47,7 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
-### <a name="get-the-metadata-for-a-specific-photo-size"></a>Metadaten für eine bestimmte Fotogröße abrufen
+### <a name="get-the-metadata-for-a-specific-photo-size"></a>Abrufen der Metadaten für eine bestimmte Fotogröße
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photos/{size}
@@ -63,15 +63,15 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 
 |Parameter|Typ|Beschreibung|
 |:-----|:-----|:-----|
-|size  |Zeichenfolge  | Eine Fotogröße. Die unterstützten Größen der HD-Fotos in Office 365 sind wie folgt: „48x48“, „64x64“, „96x96“, „120x120“, „240x240“, „360x360“,“432x432“, „504x504“ und „648x648“. Fotos können eine beliebige Größe aufweisen, wenn sie in Azure Active Directory gespeichert sind. |
+|size  |String  | Eine Fotogröße. Die unterstützten Größen der HD-Fotos in Office 365 sind wie folgt: „48x48“, „64x64“, „96x96“, „120x120“, „240x240“, „360x360“,“432x432“, „504x504“ und „648x648“. Fotos können eine beliebige Größe aufweisen, wenn sie in Azure Active Directory gespeichert sind. |
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -8,21 +8,21 @@ Eine abstrakte Klasse, die die grundlegenden Eigenschaften des verwalteten eBook
 |:---|:---|:---|
 |[managedEBooks auflisten](../api/intune_books_managedebook_list.md)|[managedEBook](../resources/intune_books_managedebook.md)-Sammlung|Auflisten von Eigenschaften und Beziehungen der [managedEBook](../resources/intune_books_managedebook.md)-Objekte.|
 |[managedEBook abrufen](../api/intune_books_managedebook_get.md)|[managedEBook](../resources/intune_books_managedebook.md)|Lesen von Eigenschaften und Beziehungen des [managedEBook](../resources/intune_books_managedebook.md)-Objekts.|
-|[Aktion zuweisen](../api/intune_books_managedebook_assign.md)|Keine|Noch nicht dokumentiert|
+|[Aktion zuweisen](../api/intune_books_managedebook_assign.md)|Keine|Noch nicht dokumentiert.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität|
-|displayName|Zeichenfolge|Name des E-Books|
-|description|Zeichenfolge|Beschreibung|
-|publisher|Zeichenfolge|Herausgeber|
+|id|String|Schlüssel der Entität|
+|displayName|String|Name des E-Books|
+|description|String|Beschreibung|
+|publisher|String|Herausgeber|
 |publishedDateTime|DateTimeOffset|Datum und Uhrzeit der Veröffentlichung des E-Books.|
 |largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Umschlagbild des Buchs|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der E-Book-Datei.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des E-Books.|
-|informationUrl|Zeichenfolge|URL zur Seite mit weiteren Informationen.|
-|privacyInformationUrl|Zeichenfolge|URL zur Datenschutzerklärung|
+|informationUrl|String|URL zur Seite mit weiteren Informationen.|
+|privacyInformationUrl|String|URL zur Datenschutzerklärung|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
@@ -34,12 +34,12 @@ Eine abstrakte Klasse, die die grundlegenden Eigenschaften des verwalteten eBook
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedEBook"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedEBook",
@@ -59,11 +59,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "privacyInformationUrl": "String"
 }
 ```
-
-
-
-
-
 
 
 

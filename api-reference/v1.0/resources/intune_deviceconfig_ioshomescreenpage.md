@@ -13,10 +13,11 @@ Eine Seite mit Apps und Ordnern auf der Startseite.
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosHomeScreenPage"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosHomeScreenPage",
@@ -42,11 +43,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   ]
 }
 ```
-
-
-
-
-
 
 
 

@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) an.
@@ -34,8 +34,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität|
-|userName|Zeichenfolge|Name des Benutzers|
+|id|String|Schlüssel der Entität|
+|userName|String|Name des Benutzers|
 |installedDeviceCount|Int32|Anzahl der installierten Geräte|
 |failedDeviceCount|Int32|Anzahl der fehlgeschlagenen Geräte|
 |notInstalledDeviceCount|Int32|Anzahl der nicht installierten Geräte|
@@ -51,9 +51,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}
 Content-type: application/json
-Content-length: 127
+Content-length: 189
 
 {
+  "@odata.type": "#microsoft.graph.userInstallStateSummary",
   "userName": "User Name value",
   "installedDeviceCount": 4,
   "failedDeviceCount": 1,
@@ -77,11 +78,6 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
-
-
-
-
-
 
 
 

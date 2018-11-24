@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md) an.
@@ -36,7 +36,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |:---|:---|:---|
 |inGracePeriodCount|Int32|Anzahl von Geräten, die sich in der Toleranzperiode befinden|
 |configManagerCount|Int32|Anzahl von Geräten, deren Konformität mit System Center Configuration Manager verwaltet wird|
-|ID|Zeichenfolge|Schlüssel der Entität|
+|id|String|Schlüssel der Entität|
 |unknownDeviceCount|Int32|Anzahl von unbekannten Geräten|
 |notApplicableDeviceCount|Int32|Anzahl der ausgenommenen Geräte|
 |compliantDeviceCount|Int32|Anzahl von konformen Geräten|
@@ -56,9 +56,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicyDeviceStateSummary
 Content-type: application/json
-Content-length: 270
+Content-length: 349
 
 {
+  "@odata.type": "#microsoft.graph.deviceCompliancePolicyDeviceStateSummary",
   "inGracePeriodCount": 2,
   "configManagerCount": 2,
   "unknownDeviceCount": 2,
@@ -92,11 +93,6 @@ Content-Length: 398
   "conflictDeviceCount": 3
 }
 ```
-
-
-
-
-
 
 
 

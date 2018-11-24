@@ -11,20 +11,16 @@ Ermöglicht es IT-Administratoren, eine standardmäßige Suchmaschine für MDM-g
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.edgeSearchEngineBase"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.edgeSearchEngineBase"
 }
 ```
-
-
-
-
-
 
 
 

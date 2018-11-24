@@ -24,8 +24,8 @@ PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wi
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung für das [windowsInformationProtectionNetworkLearningSummary](../resources/intune_wip_windowsinformationprotectionnetworklearningsummary.md)-Objekt ein.
@@ -34,8 +34,8 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Eindeutiger Bezeichner für die WindowsInformationProtectionNetworkLearningSummary.|
-|URL|Zeichenfolge|Website-URL|
+|id|String|Eindeutiger Bezeichner für die WindowsInformationProtectionNetworkLearningSummary.|
+|url|String|Website-URL|
 |deviceCount|Int32|Geräteanzahl|
 
 
@@ -49,9 +49,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{windowsInformationProtectionNetworkLearningSummaryId}
 Content-type: application/json
-Content-length: 48
+Content-length: 137
 
 {
+  "@odata.type": "#microsoft.graph.windowsInformationProtectionNetworkLearningSummary",
   "url": "Url value",
   "deviceCount": 11
 }
@@ -71,11 +72,6 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
-
-
-
-
-
 
 
 

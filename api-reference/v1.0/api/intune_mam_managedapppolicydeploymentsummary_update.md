@@ -27,8 +27,8 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) an.
@@ -37,12 +37,12 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|Zeichenfolge|Noch nicht dokumentiert|
+|displayName|String|Noch nicht dokumentiert|
 |configurationDeployedUserCount|Int32|Noch nicht dokumentiert|
 |lastRefreshTime|DateTimeOffset|Noch nicht dokumentiert|
 |configurationDeploymentSummaryPerApp|Collection von Objekten des Typs [managedAppPolicyDeploymentSummaryPerApp](../resources/intune_mam_managedapppolicydeploymentsummaryperapp.md)|Noch nicht dokumentiert|
-|id|Zeichenfolge|Schlüssel der Entität|
-|Version|Zeichenfolge|Version der Entität|
+|id|String|Schlüssel der Entität|
+|version|String|Version der Entität|
 
 
 
@@ -55,9 +55,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/deploymentSummary
 Content-type: application/json
-Content-length: 516
+Content-length: 588
 
 {
+  "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummary",
   "displayName": "Display Name value",
   "configurationDeployedUserCount": 14,
   "lastRefreshTime": "2017-01-01T00:01:30.1240368-08:00",
@@ -101,11 +102,6 @@ Content-Length: 637
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

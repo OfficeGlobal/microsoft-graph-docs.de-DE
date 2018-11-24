@@ -1,8 +1,8 @@
-# <a name="autopilotdevicestream-function"></a>autopilotDeviceStream-Funktion
+# <a name="autopilotdevicestream-function"></a>AutopilotDeviceStream-Funktion
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Erstellen Sie eine Upload-Anfrage mit Autopilot-Gerätestream.
+Erstellen Sie eine Anforderung Upload mit Autopilot Gerät Stream darin.
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -24,8 +24,8 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -51,11 +51,6 @@ Content-Length: 48
   "value": "Autopilot Device Stream value"
 }
 ```
-
-
-
-
-
 
 
 

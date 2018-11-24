@@ -1,6 +1,6 @@
-# <a name="update-alert"></a>Update-Benachrichtigung
+# <a name="update-alert"></a>Warnung aktualisieren
 
-Aktualisieren Sie eine editierbare **alert**-Eigenschaft innerhalb einer integrierten Lösung, um den Benachrichtigungsstatus und die Zuweisungen zwischen den Lösungen synchron zu halten. Diese Methode aktualisiert jede Lösung, die einen Datensatz der referenzierten alert-ID hat.
+Aktualisieren einer bearbeitbaren **Benachrichtigung** -Eigenschaft in eine integrierte Lösung alert Status und Aufgaben in Lösungen synchron. Dieser Methode wird jede Lösung, die eine Aufzeichnung die Warnung ID wurde aktualisiert.
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -14,7 +14,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
-> **Hinweis:** Bei dieser Methode müssen Sie die **alert** ID als Parameter und „vendorInformation” mit der `provider` und `vendor` angeben.
+> **Hinweis:** Sie müssen die **Warnung** -ID als Parameter und VendorInformation mit einschließen die `provider` und `vendor` mit dieser Methode.
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -25,31 +25,30 @@ PATCH /security/alerts/{alert_id}
 
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Autorisierung  | Bearer {code}. Erforderlich.|
-|Bevorzugt | zurückgeben = Darstellung |
+| Authorization  | Bearer {code}. Erforderlich.|
+|Prefer | zurückgeben = Darstellung |
 
 ## <a name="request-body"></a>Anforderungstext
 
-Geben Sie im Request-Body eine JSON-Darstellung der Werte für die relevanten Felder an, die aktualisiert werden sollen. Der Body **muss** die `vendorInformation` Eigenschaft mit gültigen `provider` und `vendor` Feldern enthalten. Die folgende Tabelle listet die Felder auf, die für eine Benachrichtigung aktualisiert werden können. Die Werte für bestehende Eigenschaften, die nicht im Body des Requests enthalten sind, ändern sich nicht. Um die beste Leistung zu erzielen, sollten Sie keine vorhandenen Werte einbeziehen, die sich nicht geändert haben.
+Geben Sie im Textkörper Anforderung eine JSON-Darstellung der Werte für die entsprechenden Felder, die aktualisiert werden soll. Der Textkörper **muss** enthalten die `vendorInformation` -Eigenschaft mit gültigen `provider` und `vendor` Felder. In der folgenden Tabelle werden die Felder, die für eine Warnung aktualisiert werden können. Die Werte für vorhandene Eigenschaften, die nicht im Textkörper Anforderung enthalten sind, werden nicht geändert. Geben Sie aus Gründen der Leistung vorhandene Werte, die nicht geändert wurden, nicht an.
 
 | Eigenschaft   | Typ |Beschreibung|
 |:---------------|:--------|:----------|
-|assignedTo|Zeichenfolge|Name des Analysten, dem die Benachrichtigung für die Selektierung, Untersuchung oder Wartung zugeordnet ist|
+|assignedTo|Zeichenfolge|Name des der Analyst die Benachrichtigung wird für die Ursachenanalyse, Untersuchung oder Remediation zugewiesen.|
 |closedDateTime|DateTimeOffset|Zeitpunkt, an dem die Benachrichtigung geschlossen wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
-|comments|String-Sammlung|Analystenkommentare auf die Benachrichtigung (für Kunden- Benachrichtigungsmanagement).|
-|Rückmeldung|alertFeedback|Analysten-Feedback auf die Benachrichtigung. Mögliche Werte: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
-|Status|alertStatus|Benachrichtigungs-Lebenszyklusstatus (Phase). Mögliche Werte: `unknown`, `newAlert`, `inProgress`, `resolved`.|
-|tags|String-Sammlung|Benutzerdefinierbare Labels, die auf eine Benachrichtigung angewendet werden können und als Filterbedingungen dienen können (z.B. "HVA", "SAW").|
-|vendorInformation *|[securityVendorInformation](../resources/securityvendorinformation.md)|Komplexer Typ, der Angaben zum Sicherheitsprodukt/Dienstleister, Anbieter und Unteranbieter enthält (z. B. Lieferant=Microsoft; Anbieter=Windows Defender ATP; Unteranbieter=AppLocker). **Die Felder Anbieter und Lieferant sind Pflichtfelder.**|
-(\* Kennzeichnet ein Pflichtfeld.)
+|comments|Collection von Objekten des Typs „String“|Analystenkommentare auf die Benachrichtigung (für Kunden alert Management).|
+|Feedback|alertFeedback|Analyst Feedback auf die Benachrichtigung. Mögliche Werte: sind `unknown`, `truePositive`, `falsePositive` und `benignPositive`.|
+|status|alertStatus|Warnung Lebenszyklusstatus (Phase). Mögliche Werte: sind `unknown`, `newAlert`, `inProgress` und `resolved`.|
+|-Tags hinzugefügtes Markup|Collection von Objekten des Typs „String“|Benutzer definierbare Beschriftungen, die auf eine Warnung angewendet werden können und als filterbedingungen (beispielsweise "HVA", "MAUERN) dienen.|
+|vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|Komplexer Typ, das Details über die Produkt-Dienst Sicherheitsanbieter, Anbieter und Subprovider enthält (beispielsweise Hersteller = Microsoft; Provider = Windows Defender ATP; SubProvider = AppLocker). **Anbieter und Hersteller Felder sind erforderlich.**|
 
 ## <a name="response"></a>Antwort
 
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.
 
-Wird der optionale Anforderungsheader verwendet, gibt die Methode einen `200 OK` Antwortcode und das aktualisierte [alert](../resources/alert.md)-Objekt im Antworttext zurück.
+Wenn der optionale Anforderungsheader verwendet wird, gibt die Methode eine `200 OK` Antwortcode und das aktualisierte [Warnung](../resources/alert.md) -Objekt aus der Antwort.
 
-## <a name="example-1"></a>Beispiel 1
+## <a name="example-1"></a>Beispiel 1
 
 ### <a name="request"></a>Anforderung
 
@@ -80,7 +79,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Antwort
 
-Es folgt ein Beispiel für die erfolgreiche Antwort.
+Es folgt ein Beispiel für eine erfolgreiche Antwort.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,11 +90,11 @@ Es folgt ein Beispiel für die erfolgreiche Antwort.
 HTTP/1.1 204 No Content
 ```
 
-## <a name="example-2"></a>Beispiel 2
+## <a name="example-2"></a>Beispiel 2
 
 ### <a name="request"></a>Anforderung
 
-Das folgende Beispiel zeigt eine Anforderung, die den `Prefer` Anforderungsheader enthält.
+Das folgende Beispiel zeigt eine Anforderung, die umfasst die `Prefer` Anforderungsheader.
 
 <!-- {
   "blockType": "request",
@@ -124,9 +123,9 @@ Prefer: return=representation
 
 ### <a name="response"></a>Antwort
 
-Das folgende Beispiel zeigt die Antwort, wenn der optionale `Prefer: return=representation` Anforderungsheader verwendet wird.
+Im folgenden ist ein Beispiel für die Antwort bei der optionalen `Prefer: return=representation` Anforderungsheader wird verwendet.
 
->**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Alle Eigenschaften werden von einem aktuellen Aufruf zurückgegeben.
+>**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "response",
   "truncated": true,

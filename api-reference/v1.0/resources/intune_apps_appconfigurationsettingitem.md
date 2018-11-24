@@ -6,18 +6,19 @@ Enthält die Eigenschaften für ein App-Konfigurationseinstellungselement.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|appConfigKey|Zeichenfolge|App-Konfigurationsschlüssel|
+|appConfigKey|String|App-Konfigurationsschlüssel|
 |appConfigKeyType|[mdmAppConfigKeyType](../resources/intune_apps_mdmappconfigkeytype.md)|Typs des App-Konfigurationsschlüssels. Mögliche Werte: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
-|appConfigKeyValue|Zeichenfolge|Wert des App-Konfigurationsschlüssels|
+|appConfigKeyValue|String|Wert des App-Konfigurationsschlüssels|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appConfigurationSettingItem"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.appConfigurationSettingItem",
@@ -26,11 +27,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "appConfigKeyValue": "String"
 }
 ```
-
-
-
-
-
 
 
 

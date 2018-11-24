@@ -1,4 +1,4 @@
-# <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>ImportedWindowsAutopilotDeviceIdentityImportStatus Enumerationstyp
+# <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>ImportedWindowsAutopilotDeviceIdentityImportStatus Enum-Typ
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
@@ -6,16 +6,11 @@ Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|unbekannt|0|Unbekannter Status.|
-|ausstehend|1|Status ausstehend.|
-|partiell|2|Teilweiser Status.|
-|abgeschlossen|3|Status abgeschlossen.|
-|Fehler|4|Fehlerstatus|
-
-
-
-
-
+|unknown|0|Unbekannte Status.|
+|Ausstehende|1|Ausstehend.|
+|teilweise|2|Teilweise Status.|
+|complete|3|Abgeschlossen Sie Status "".|
+|error|4|Fehlerstatus.|
 
 
 
