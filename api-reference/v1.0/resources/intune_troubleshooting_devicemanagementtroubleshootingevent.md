@@ -15,7 +15,7 @@ Ereignis, das einen allgemeinen Fehler darstellt
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|UUID für das Objekt|
+|id|String|UUID für das Objekt|
 |eventDateTime|DateTimeOffset|Uhrzeit, zu der das Ereignis aufgetreten ist.|
 |correlationId|Zeichenfolge|ID, die für die Verfolgung des Fehlers in dem Dienst verwendet wurde.|
 
@@ -23,12 +23,12 @@ Ereignis, das einen allgemeinen Fehler darstellt
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceManagementTroubleshootingEvent"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementTroubleshootingEvent",
@@ -37,7 +37,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "correlationId": "String"
 }
 ```
-
 
 
 

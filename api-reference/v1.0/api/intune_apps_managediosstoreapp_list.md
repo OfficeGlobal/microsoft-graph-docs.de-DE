@@ -24,8 +24,8 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -45,7 +45,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1409
+Content-Length: 1433
 
 {
   "value": [
@@ -83,17 +83,13 @@ Content-Length: 1409
         "v8_0": true,
         "v9_0": true,
         "v10_0": true,
-        "v11_0": true
+        "v11_0": true,
+        "v12_0": true
       }
     }
   ]
 }
 ```
-
-
-
-
-
 
 
 

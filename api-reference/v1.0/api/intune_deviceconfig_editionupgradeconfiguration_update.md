@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [editionUpgradeConfiguration](../resources/intune_deviceconfig_editionupgradeconfiguration.md) an.
@@ -34,16 +34,16 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|id|String|Schlüssel der Entität. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|Beschreibung|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|licenseType|[editionUpgradeLicenseType](../resources/intune_deviceconfig_editionupgradelicensetype.md)|Typ der Edition Upgrade-Lizenz. Mögliche Werte sind: `productKey` und `licenseFile`.|
-|targetEdition|[windows10EditionType](../resources/intune_deviceconfig_windows10editiontype.md)|Zieledition von Edition Upgrade. Mögliche Werte sind: `windows10Enterprise`, `windows10EnterpriseN`, `windows10Education`, `windows10EducationN`, `windows10MobileEnterprise`, `windows10HolographicEnterprise`, `windows10Professional`, `windows10ProfessionalN`, `windows10ProfessionalEducation`, `windows10ProfessionalEducationN`, `windows10ProfessionalWorkstation` und `windows10ProfessionalWorkstationN`.|
-|license|Zeichenfolge|Inhalt der Edition Upgrade-Lizenzdatei|
-|productKey|Zeichenfolge|Product Key von Edition Upgrade|
+|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|licenseType|[editionUpgradeLicenseType](../resources/intune_deviceconfig_editionupgradelicensetype.md)|Typ der Edition Upgrade-Lizenz. Mögliche Werte sind: `productKey` und `licenseFile`.|
+|targetEdition|[windows10EditionType](../resources/intune_deviceconfig_windows10editiontype.md)|Zieledition von Edition Upgrade. Mögliche Werte sind: `windows10Enterprise`, `windows10EnterpriseN`, `windows10Education`, `windows10EducationN`, `windows10MobileEnterprise`, `windows10HolographicEnterprise`, `windows10Professional`, `windows10ProfessionalN`, `windows10ProfessionalEducation`, `windows10ProfessionalEducationN`, `windows10ProfessionalWorkstation` und `windows10ProfessionalWorkstationN`.|
+|license|String|Inhalt der Edition Upgrade-Lizenzdatei|
+|productKey|String|Product Key von Edition Upgrade|
 
 
 
@@ -56,10 +56,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 309
+Content-length: 311
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.editionUpgradeConfiguration",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -91,11 +91,6 @@ Content-Length: 483
   "productKey": "Product Key value"
 }
 ```
-
-
-
-
-
 
 
 

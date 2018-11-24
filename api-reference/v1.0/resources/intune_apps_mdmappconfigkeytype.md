@@ -6,16 +6,11 @@ Wichtige Typen der App-Konfiguration.
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|stringTyp|0|Noch nicht dokumentiert|
-|integerTyp|1|Noch nicht dokumentiert|
-|realTyp|2|Noch nicht dokumentiert|
-|booleanTyp|3|Noch nicht dokumentiert|
-|tokenTyp|4|Noch nicht dokumentiert|
-
-
-
-
-
+|stringType|0|Noch nicht dokumentiert|
+|integerType|1|Noch nicht dokumentiert|
+|realType|2|Noch nicht dokumentiert|
+|booleanType|3|Noch nicht dokumentiert|
+|"TokenType"|4|Noch nicht dokumentiert|
 
 
 

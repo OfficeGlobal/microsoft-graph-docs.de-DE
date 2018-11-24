@@ -18,10 +18,11 @@ Erbt von [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingInteger"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSettingInteger",
@@ -31,11 +32,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "value": 1024
 }
 ```
-
-
-
-
-
 
 
 

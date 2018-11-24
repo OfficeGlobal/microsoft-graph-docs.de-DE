@@ -17,12 +17,12 @@ GET /me/messages/{id}/attachments
 GET /users/{id | userPrincipalName}/messages/{id}/attachments
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

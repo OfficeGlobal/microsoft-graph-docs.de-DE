@@ -1,4 +1,4 @@
-# <a name="firewallpacketqueueingmethodtype-enum-type"></a>FirewallPacketQueueingMethodType Enumerationstyp
+# <a name="firewallpacketqueueingmethodtype-enum-type"></a>FirewallPacketQueueingMethodType Enum-Typ
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
@@ -6,16 +6,11 @@ Mögliche Werte für firewallPacketQueueingMethod
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|deviceDefault|0|Von Intune wurde kein Wert konfiguriert, den vom Benutzer konfigurierten Standardwert für das Gerät nicht außer Kraft setzen|
-|deaktiviert|1|Paket-Queuing deaktivieren|
-|queueInbound|2|Eingehende verschlüsselte Pakete in Warteschlange stellen|
-|queueOutbound|3|Entschlüsselte ausgehende Pakete zur Weiterleitung in Warteschlange stellen|
-|queueBoth|4|Eingehende und ausgehende Pakete in Warteschlange stellen|
-
-
-
-
-
+|deviceDefault|0|Überschreiben Sie keinen Wert von Intune, konfiguriert nicht den Standardwert für den Benutzer konfigurierten Gerät|
+|deaktiviert|1|Paket Warteschlangen deaktivieren|
+|queueInbound|2|Eingehende, verschlüsselte Pakete Warteschlange|
+|queueOutbound|3|Warteschlange entschlüsselt ausgehenden Pakete für die Weiterleitung|
+|queueBoth|4|Die Warteschlange eingehenden und ausgehenden Pakete|
 
 
 

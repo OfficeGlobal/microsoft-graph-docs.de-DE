@@ -11,20 +11,16 @@ Basistyp für Zuordnungsziele.
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementAssignmentTarget"
 }
 ```
-
-
-
-
-
 
 
 

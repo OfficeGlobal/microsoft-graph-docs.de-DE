@@ -9,10 +9,10 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
 |Delegiert (Geschäfts-, Schul- oder Unikonto)| _variiert je nach Kontext_|
-| &nbsp; &nbsp; Geräte | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All |
-| &nbsp; &nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Problembehandlung | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Gerätemanagement | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Problembehandlung | DeviceManagementManagedDevices.ReadWrite.All |
 |Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 
@@ -28,8 +28,8 @@ PATCH /users/{usersId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [user](../resources/intune_shared_user.md)-Objekts an.
@@ -38,7 +38,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Eindeutige Kennung für den Benutzer.|
+|id|Zeichenfolge|Eindeutiger Bezeichner des Benutzers|
 |**Onboarding**|
 |deviceEnrollmentLimit|Int32|Der Grenzwert für die maximale Anzahl von Geräten, die der Benutzer registrieren kann. Zulässige Werte sind 5 oder 1000.|
 

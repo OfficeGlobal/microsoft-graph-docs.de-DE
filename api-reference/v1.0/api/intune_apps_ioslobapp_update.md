@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [iosLobApp](../resources/intune_apps_ioslobapp.md)-Objekts an.
@@ -34,24 +34,24 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
-|displayName|Zeichenfolge|Der vom Administrator bereitgestellte oder importierte Titel der App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
-|Beschreibung|Zeichenfolge|Beschreibung der App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
-|Verleger|Zeichenfolge|Der Herausgeber der App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
+|id|String|Schlüssel der Entität. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
+|displayName|String|Der vom Administrator bereitgestellte oder importierte Titel der App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
+|description|String|Beschreibung der App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
+|Herausgeber|String|Der Herausgeber der App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|Das große Symbol, das in den App-Details angezeigt und für den Upload des Symbols verwendet werden soll. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
-|isFeatured|Boolesch|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
-|privacyInformationUrl|Zeichenfolge|URL zur Datenschutzerklärung. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
-|informationUrl|Zeichenfolge|URL zur Seite mit weiteren Informationen. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
-|owner|Zeichenfolge|Der Besitzer der App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
-|Entwickler|Zeichenfolge|Der Entwickler der App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
-|Hinweise|Zeichenfolge|Hinweise zur App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Der Veröffentlichungsstand der App. Die App kann nur dann zugewiesen werden, wenn die App veröffentlicht wird. Vererbt von [mobileApp](../resources/intune_apps_mobileapp.md). Die möglichen Werte sind: `notPublished`, `processing`, `published`.|
+|isFeatured|Boolean|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
+|privacyInformationUrl|String|URL zur Datenschutzerklärung Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
+|informationUrl|String|URL zur Seite mit weiteren Informationen. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
+|owner|String|Der Besitzer der App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
+|developer|String|Der Entwickler der App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
+|notes|String|Hinweise für die App. Geerbt von [mobileApp](../resources/intune_apps_mobileapp.md).|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Der Veröffentlichungsstatus für die App. Die App kann nicht zugewiesen werden, solange sie nicht veröffentlicht wurde. Geerbt von [MobileApp](../resources/intune_apps_mobileapp.md). Mögliche Werte sind: `notPublished`, `processing` und `published`.|
 |committedContentVersion|Zeichenfolge|Die interne zugesicherte Inhaltsversion. Geerbt von [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
 |fileName|Zeichenfolge|Name der Hauptdatei der Branchenanwendung. Geerbt von [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
-|Größe|Int64|Gesamtgröße einschließlich aller hochgeladenen Dateien. Geerbt von [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
-|gebündelt|Zeichenfolge|Identitätsname|
+|size|Int64|Gesamtgröße einschließlich aller hochgeladenen Dateien. Geerbt von [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
+|bundleId|Zeichenfolge|Identitätsname|
 |applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|Die iOS-Architektur, für die diese App ausgeführt werden kann.|
 |minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune_apps_iosminimumoperatingsystem.md)|Der Wert für die Mindestversion des verwendbaren Betriebssystems.|
 |expirationDateTime|DateTimeOffset|Das Ablaufdatum.|
@@ -69,9 +69,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1205
+Content-length: 1209
 
 {
+  "@odata.type": "#microsoft.graph.iosLobApp",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -80,7 +81,6 @@ Content-length: 1205
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "isFeatured": true,
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
   "informationUrl": "https://example.com/informationUrl/",
@@ -102,7 +102,8 @@ Content-length: 1205
     "v8_0": true,
     "v9_0": true,
     "v10_0": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true
   },
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "versionNumber": "Version Number value",
@@ -115,7 +116,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1361
+Content-Length: 1381
 
 {
   "@odata.type": "#microsoft.graph.iosLobApp",
@@ -151,18 +152,14 @@ Content-Length: 1361
     "v8_0": true,
     "v9_0": true,
     "v10_0": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true
   },
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "versionNumber": "Version Number value",
   "buildNumber": "Build Number value"
 }
 ```
-
-
-
-
-
 
 
 

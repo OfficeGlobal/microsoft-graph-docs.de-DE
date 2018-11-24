@@ -22,12 +22,12 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer &lt;token&gt;. Erforderlich.|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -47,7 +47,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1456
+Content-Length: 1478
 
 {
   "value": {
@@ -84,7 +84,8 @@ Content-Length: 1456
       "v8_0": true,
       "v9_0": true,
       "v10_0": true,
-      "v11_0": true
+      "v11_0": true,
+      "v12_0": true
     },
     "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
     "versionNumber": "Version Number value",
@@ -92,11 +93,6 @@ Content-Length: 1456
   }
 }
 ```
-
-
-
-
-
 
 
 

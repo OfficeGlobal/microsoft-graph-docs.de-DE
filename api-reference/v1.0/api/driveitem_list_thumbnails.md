@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Abrufen von Miniaturansichten für eine Datei oder einen Ordner
-ms.openlocfilehash: 98bfa0bee80beabc9934ae603f317627facffb4a
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: b7b842a5aac4b8505db3b4fc1c77dcb7c983f521
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23266835"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26564844"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Miniaturansichten für ein DriveItem auflisten
 
@@ -69,7 +69,7 @@ GET /me/drive/items/{item-id}/thumbnails
 Diese gibt ein Array von verfügbaren **thumbnailSets** für das Element zurück. Ein beliebiges Element auf einem Laufwerk kann Null oder mehr Miniaturansichten aufweisen.
 
 **Hinweis:** Sie können den _select_-Abfragezeichenfolgenparameter verwenden, um zu steuern, welche Miniaturansichtgrößen im **ThumbnailSet** zurückgegeben werden.
-ruft beispielsweise nur die mittelgroßen Miniaturansichten ab.`/thumbnails?select=medium`
+`/thumbnails?select=medium` ruft beispielsweise nur die mittelgroßen Miniaturansichten ab.
 
 
 ### <a name="response"></a>Antwort
@@ -108,9 +108,9 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 
 | Name         | Typ   | Beschreibung                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
-| **item-id**  | Zeichenfolge | Der eindeutige Bezeichner für das referenzierte Element                                           |
-| **thumb-id** | Nummer | Der Index der Miniaturansicht, in der Regel 0 bis 4. Wenn es eine benutzerdefinierte Miniaturansicht gibt, ist ihr Index 0. |
-| **size**     | Zeichenfolge | Die Größe der angeforderten Miniaturansicht. Dabei kann es sich um eine der nachfolgend aufgeführten Standardgrößen oder um eine benutzerdefinierte Größe handeln. |
+| **item-id**  | string | Der eindeutige Bezeichner für das referenzierte Element                                           |
+| **thumb-id** | number | Der Index der Miniaturansicht, in der Regel 0 bis 4. Wenn es eine benutzerdefinierte Miniaturansicht gibt, ist ihr Index 0. |
+| **size**     | string | Die Größe der angeforderten Miniaturansicht. Dabei kann es sich um eine der nachfolgend aufgeführten Standardgrößen oder um eine benutzerdefinierte Größe handeln. |
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 {
   "width": 100,
   "height": 100,
-  "url": "http://onedrive.com/asd123a/asdjlkasjdkasdjlk.jpg"
+  "url": "https://onedrive.com/asd123a/asdjlkasjdkasdjlk.jpg"
 }
 ```
 
@@ -210,9 +210,11 @@ In dieser Tabelle sind die möglichen Miniaturansichtgrößen definiert. Zwar k�
 
 | Name           | Auflösung  | Seitenverhältnis | Beschreibung                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
-| `small`        | 96 längste  | Original     | Kleine, stark komprimierte Miniaturansicht, zugeschnitten auf ein quadratisches Seitenverhältnis |
-| `medium`       | 176 längste | Original     | Zugeschnitten auf die standardmäßige Elementgröße für die OneDrive-Webansicht         |
-| `large`        | 800 längste | Original     | Miniaturansicht, bei der die längste Kante auf 800 Pixel skaliert wurde               |
+| `small`        | 96 longest
+  | Original     | Kleine, stark komprimierte Miniaturansicht, zugeschnitten auf ein quadratisches Seitenverhältnis |
+| `medium`       | 176 longest | Original     | Zugeschnitten auf die standardmäßige Elementgröße für die OneDrive-Webansicht         |
+| `large`        | 800 longest
+ | Original     | Miniaturansicht, bei der die längste Kante auf 800 Pixel skaliert wurde               |
 | `smallSquare`  | 96x96       | Quadratisches Zuschneiden  | Kleines Quadrat (Miniaturansicht)                                               |
 | `mediumSquare` | 176x176     | Quadratisches Zuschneiden  | Kleines Quadrat (Miniaturansicht)                                               |
 | `largeSquare`  | 800x800     | Quadratisches Zuschneiden  | Großes Quadrat (Miniaturansicht)                                               |
@@ -267,7 +269,7 @@ Die folgenden Aufrufe können nicht zur Erweiterung der Miniaturansichtsammlung 
 * `GET /drive/root:/{item-path}?expand=children(expand=thumbnails)`
 * `GET /drive/items/{item-id}/children?expand=thumbnails`
 
-Miniaturansichten werden unter SharePoint Server 2016 nicht unterstützt.
+Miniaturansichten werden unter SharePoint Server 2016 nicht unterstützt.
 
 ### <a name="error-responses"></a>Fehlerantworten
 

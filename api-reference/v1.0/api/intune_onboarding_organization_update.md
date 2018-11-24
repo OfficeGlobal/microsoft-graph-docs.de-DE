@@ -24,8 +24,8 @@ PATCH /organization/{organizationId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [organization](../resources/intune_onboarding_organization.md)-Objekts an.
@@ -35,7 +35,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Die GUID für das Objekt.|
-|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|Managementautorität für mobile Geräte. Mögliche Werte sind: `unknown`, `intune`, `sccm`, `office365`.|
+|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|Autorität für die Verwaltung mobiler Geräte. Mögliche Werte: `unknown`, `intune`, `sccm` und `office365`.|
 
 
 
@@ -48,9 +48,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/organization/{organizationId}
 Content-type: application/json
-Content-length: 51
+Content-length: 102
 
 {
+  "@odata.type": "#microsoft.graph.organization",
   "mobileDeviceManagementAuthority": "intune"
 }
 ```
@@ -68,11 +69,6 @@ Content-Length: 151
   "mobileDeviceManagementAuthority": "intune"
 }
 ```
-
-
-
-
-
 
 
 

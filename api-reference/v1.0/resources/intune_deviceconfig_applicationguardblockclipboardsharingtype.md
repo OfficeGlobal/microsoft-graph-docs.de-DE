@@ -1,4 +1,4 @@
-# <a name="applicationguardblockclipboardsharingtype-enum-type"></a>applicationGuardBlockClipboardSharingType Enumerationstyp
+# <a name="applicationguardblockclipboardsharingtype-enum-type"></a>ApplicationGuardBlockClipboardSharingType Enum-Typ
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
@@ -6,16 +6,11 @@ Mögliche Werte für applicationGuardBlockClipboardSharingType
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|notConfigured|0|Nicht konfiguriert|
-|blockBoth|1|Zwischenablage blockieren, um Daten vom Host zum Container und vom Container zum Host freizugeben|
-|blockHostToContainer|2|Zwischenablage blockieren, um Daten vom Host zum Container freizugeben|
-|blockContainerToHost|3|Zwischenablage blockieren, um Daten vom Container zum Host freizugeben|
-|blockNone|4|Zwischenablage blockieren, um Daten weder vom Host zum Container noch vom Container zum Host freizugeben|
-
-
-
-
-
+|nicht konfiguriert|0|Nicht konfiguriert|
+|blockBoth|1|Zwischenablage zum Freigeben von Daten aus Host Container und aus dem Container zum Hosten von blockieren|
+|blockHostToContainer|2|Blockieren der Zwischenablage zum Freigeben von Daten vom Host Container|
+|blockContainerToHost|3|Zwischenablage zum Freigeben von Daten aus dem Container zum Hosten von blockieren|
+|blockNone|4|Zwischenablage zum Freigeben von Daten vom Host Container weder aus Container zum Hosten von blockieren|
 
 
 

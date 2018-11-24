@@ -18,10 +18,11 @@ Enthält Eigenschaften für Dateiverschlüsselungsinformationen für die Inhalts
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.fileEncryptionInfo"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.fileEncryptionInfo",
@@ -34,11 +35,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "fileDigestAlgorithm": "String"
 }
 ```
-
-
-
-
-
 
 
 

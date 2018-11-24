@@ -24,8 +24,8 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md) an.
@@ -34,16 +34,16 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Noch nicht dokumentiert|
+|id|String|Noch nicht dokumentiert|
 |lastSyncDateTime|DateTimeOffset|Zeit der letzten Synchronisierung für Exchange Connector|
-|Status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Status des Exchange Connectors. Mögliche Werte: sind `none`, `connectionPending`, `connected` und `disconnected`.|
-|primarySmtpAddress|Zeichenfolge|E-Mail-Adresse, die zum Konfigurieren von Exchange Connector zwischen Diensten verwendet wird.|
-|serverName|Zeichenfolge|Der Name des Exchange Servers.|
-|connectorServerName|Zeichenfolge|Der Name des Servers, der Exchange Connector hostet.|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Exchange Connectorstatus. Mögliche Werte: sind `none`, `connectionPending`, `connected` und `disconnected`.|
+|primarySmtpAddress|String|E-Mail-Adresse, die zum Konfigurieren von Exchange Connector zwischen Diensten verwendet wird.|
+|serverName|String|Der Name des Exchange-Servers.|
+|connectorServerName|String|Der Name des Servers, der Exchange Connector hostet.|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|Der konfigurierte Typ von Exchange Connector. Mögliche Werte: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
-|Version|Zeichenfolge|Die Version des ExchangeConnectorAgent|
-|exchangeAlias|Zeichenfolge|Ein dem Exchange-Server zugewiesener Alias|
-|exchangeOrganization|Zeichenfolge|Exchange-Organisation für den Exchange-Server|
+|Version|String|Die Version des ExchangeConnectorAgent|
+|exchangeAlias|String|Ein dem Exchange-Server zugewiesener Alias|
+|exchangeOrganization|String|Exchange-Organisation für den Exchange-Server|
 
 
 
@@ -56,9 +56,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 Content-type: application/json
-Content-length: 418
+Content-length: 490
 
 {
+  "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "status": "connectionPending",
   "primarySmtpAddress": "Primary Smtp Address value",
@@ -92,11 +93,6 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
-
-
-
-
-
 
 
 

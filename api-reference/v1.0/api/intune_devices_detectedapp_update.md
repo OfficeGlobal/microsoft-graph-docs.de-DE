@@ -24,8 +24,8 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [detectedApp](../resources/intune_devices_detectedapp.md) an.
@@ -34,9 +34,9 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Eindeutiger Bezeichner für die erkannte Anwendung. Dieser wird automatisch von Intune generiert, wenn die Anwendung erstellt wird. Schreibgeschützt.|
-|displayName|Zeichenfolge|Name der ermittelten Anwendung. Schreibgeschützt.|
-|Version|Zeichenfolge|Version der ermittelten Anwendung. Schreibgeschützt.|
+|id|String|Eindeutiger Bezeichner für die erkannte Anwendung. Dieser wird automatisch von Intune generiert, wenn die Anwendung erstellt wird. Schreibgeschützt.|
+|displayName|String|Name der ermittelten Anwendung. Schreibgeschützt.|
+|version|String|Version der ermittelten Anwendung. Schreibgeschützt.|
 |sizeInByte|Int64|Größe der ermittelten Anwendung in Byte. Schreibgeschützt.|
 |deviceCount|Int32|Anzahl von Geräten, auf denen die Anwendung installiert ist|
 
@@ -51,9 +51,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/detectedApps/{detectedAppId}
 Content-type: application/json
-Content-length: 117
+Content-length: 167
 
 {
+  "@odata.type": "#microsoft.graph.detectedApp",
   "displayName": "Display Name value",
   "version": "Version value",
   "sizeInByte": 10,
@@ -77,11 +78,6 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
-
-
-
-
-
 
 
 

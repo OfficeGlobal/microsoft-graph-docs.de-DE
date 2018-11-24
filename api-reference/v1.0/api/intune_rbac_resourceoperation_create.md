@@ -24,8 +24,8 @@ POST /deviceManagement/resourceOperations
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des resourceOperation-Objekts an.
@@ -34,7 +34,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Ressourcenoperation. Er ist schreibgeschützt und wird automatisch generiert.|
+|id|Zeichenfolge|Schlüssel der Ressourcenoperation. Er ist schreibgeschützt und wird automatisch generiert.|
 |resourceName|Zeichenfolge|Name der Ressource, auf die die Operation angewendet wird|
 |actionName|Zeichenfolge|Typ von Aktion, den die Operation ausführen wird. Der Wert für „actionName“ sollte prägnant sein und aus möglichst wenigen Wörtern bestehen.|
 |description|Zeichenfolge|Beschreibung der Ressourcenoperation. Diese Beschreibung wird angezeigt, wenn der Benutzer im Azure-Portal den Mauszeiger auf der Operation platziert.|
@@ -75,11 +75,6 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
-
-
-
-
-
 
 
 

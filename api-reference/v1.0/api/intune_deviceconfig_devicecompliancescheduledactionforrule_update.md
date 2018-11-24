@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sche
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceComplianceScheduledActionForRule](../resources/intune_deviceconfig_devicecompliancescheduledactionforrule.md) an.
@@ -34,8 +34,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität|
-|ruleName|Zeichenfolge|Name der Regel, auf die die geplante Aktion angewendet wird|
+|id|String|Schlüssel der Entität|
+|ruleName|String|Name der Regel, auf die die geplante Aktion angewendet wird|
 
 
 
@@ -48,9 +48,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}
 Content-type: application/json
-Content-length: 37
+Content-length: 114
 
 {
+  "@odata.type": "#microsoft.graph.deviceComplianceScheduledActionForRule",
   "ruleName": "Rule Name value"
 }
 ```
@@ -68,11 +69,6 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
-
-
-
-
-
 
 
 

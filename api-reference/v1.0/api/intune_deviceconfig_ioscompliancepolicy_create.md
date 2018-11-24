@@ -24,8 +24,8 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des iosCompliancePolicy-Objekts an.
@@ -34,26 +34,26 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|id|Zeichenfolge|Schlüssel der Entität. Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|Beschreibung|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|passcodeBlockSimple|boolesch|Gibt an, ob einfache Kennungen erlaubt sind.|
+|passcodeBlockSimple|Boolescher Wert|Gibt an, ob einfache Kennungen erlaubt sind.|
 |passcodeExpirationDays|Int32|Zeit in Tagen bis zum Ablaufen der Kennung. Gültige Werte: 1 bis 65535.|
 |passcodeMinimumLength|Int32|Mindestlänge von Kennungen. Gültige Werte: 4 bis 14.|
 |passcodeMinutesOfInactivityBeforeLock|Int32|Zeitraum von Inaktivität in Minuten, bevor die Eingabe einer Kennung erforderlich ist.|
 |passcodePreviousPasscodeBlockCount|Int32|Anzahl der zuletzt verwendeten Kennungen, die nicht erneut verwendet werden dürfen. Gültige Werte: 1 bis 24.|
-|passcodeMinimumCharacterSetCount|Int32|Anzahl der Zeichensätze, die im Kennwort enthalten sein müssen|
-|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Der erforderliche Kennungstyp. Mögliche Werte sind: `deviceDefault`, `alphanumeric` und `numeric`.|
-|passcodeRequired|boolesch|Gibt an, ob eine Kennung erforderlich ist.|
+|passcodeMinimumCharacterSetCount|Int32|Anzahl der Zeichensätze, die im Kennwort enthalten sein müssen.|
+|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Der erforderliche Kennungstyp. Mögliche Werte: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passcodeRequired|Boolescher Wert|Gibt an, ob eine Kennung erforderlich ist.|
 |osMinimumVersion|Zeichenfolge|Mindestversion von IOS.|
 |osMaximumVersion|Zeichenfolge|Höchstversion von IOS.|
-|securityBlockJailbrokenDevices|Boolesch|Legt fest, dass weder gerootete Geräte verwendet werden dürfen noch Geräte, für die ein Jailbreak durchgeführt wurde.|
-|deviceThreatProtectionEnabled|Boolesch|Legt fest, dass auf Geräten der Gerätebedrohungsschutz aktiviert sein muss.|
-|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Legt die Mindestrisikostufe fest, ab der Mobile Threat Protection einen Konformitätsverstoß melden soll. Mögliche Werte sind: `unavailable`, `secured`, `low`, `medium`, `high` und `notSet`.|
-|managedEmailProfileRequired|boolesch|Gibt an, ob ein verwaltetes E-Mail-Profil erforderlich ist.|
+|securityBlockJailbrokenDevices|Boolescher Wert|Legt fest, dass weder gerootete Geräte verwendet werden dürfen noch Geräte, für die ein Jailbreak durchgeführt wurde.|
+|deviceThreatProtectionEnabled|Boolescher Wert|Legt fest, dass auf Geräten der Gerätebedrohungsschutz aktiviert sein muss.|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Legt die Mindestrisikostufe fest, ab der Mobile Threat Protection einen Konformitätsverstoß melden soll. Mögliche Werte: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|managedEmailProfileRequired|Boolescher Wert|Gibt an, ob ein verwaltetes E-Mail-Profil erforderlich ist.|
 
 
 
@@ -66,12 +66,11 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 809
+Content-length: 745
 
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
   "passcodeBlockSimple": true,
@@ -122,11 +121,6 @@ Content-Length: 917
   "managedEmailProfileRequired": true
 }
 ```
-
-
-
-
-
 
 
 

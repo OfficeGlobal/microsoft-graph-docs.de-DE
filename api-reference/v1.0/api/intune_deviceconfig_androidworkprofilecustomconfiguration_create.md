@@ -2,7 +2,7 @@
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Erstellen eines neuen [AndroidWorkProfileCustomConfiguration](../resources/intune_deviceconfig_androidworkprofilecustomconfiguration.md)-Objekts.
+Erstellen eines neuen [AndroidWorkProfileCustomConfiguration](../resources/intune_deviceconfig_androidworkprofilecustomconfiguration.md) -Objekts.
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -24,20 +24,20 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext eine JSON-Darstellung des androidWorkProfileCustomConfiguration-Objekts an.
+Geben Sie im Textkörper Anforderung für das Objekt AndroidWorkProfileCustomConfiguration eine JSON-Darstellung.
 
-In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen von androidWorkProfileCustomConfiguration erforderlich sind.
+In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die AndroidWorkProfileCustomConfiguration erstellen.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|Beschreibung|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |omaSettings|Collection von Objekten des Typs [omaSetting](../resources/intune_deviceconfig_omasetting.md)|OMA-Einstellungen. Diese Collection darf maximal 500 Elemente enthalten.|
@@ -45,7 +45,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen v
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und ein [AndroidWorkProfileCustomConfiguration](../resources/intune_deviceconfig_androidworkprofilecustomconfiguration.md)-Objekt im Antworttext zurück.
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [AndroidWorkProfileCustomConfiguration](../resources/intune_deviceconfig_androidworkprofilecustomconfiguration.md) -Objekts in der Antworttext.
 
 ## <a name="example"></a>Beispiel
 ### <a name="request"></a>Anforderung
@@ -53,11 +53,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 477
+Content-length: 413
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileCustomConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -99,11 +98,6 @@ Content-Length: 585
   ]
 }
 ```
-
-
-
-
-
 
 
 

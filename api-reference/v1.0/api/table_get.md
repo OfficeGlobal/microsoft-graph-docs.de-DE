@@ -17,12 +17,12 @@ GET /workbook/tables/{id|name}
 GET /workbook/worksheets/{id|name}/tables/{id|name}
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
-| Autorisierung  | Bearer {token}. Erforderlich. |
+| Authorization  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -30,7 +30,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [WorkbookTable](../resources/table.md)-Objekt im Antworttext zurückgegeben.
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und [WorkbookTable](../resources/table.md) -Objekts in der Antworttext.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.

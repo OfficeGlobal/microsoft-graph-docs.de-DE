@@ -4,7 +4,7 @@
 
 Die rollenbasierte Zugriffskontrolle in Intune bestimmt, wer Aktionen für Intune-Objekte ausführen und Änderungen an verwalteten Anwendungen, Benutzern und Geräten vornehmen kann.   
 
-Die folgenden Graph-Ressourcen stehen zur Verfügung, um die rollenbasierte Zugriffskontrolle in Intune zu verwalten:
+Die folgenden Graph-Ressourcen stehen zur Verfügung, um die rollenbasierte Zugriffskontrolle in Intune zu verwalten:  
 
 - [Geräte- und App-Verwaltungsrollenzuweisung](intune_rbac_deviceandappmanagementroleassignment.md)
 - [Geräte- und App-Verwaltungsrollendefinition](intune_rbac_deviceandappmanagementroledefinition.md)

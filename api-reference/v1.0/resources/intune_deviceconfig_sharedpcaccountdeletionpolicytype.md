@@ -1,20 +1,14 @@
-# <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>SharedPCAccountDeletionPolicyType Enumerationstyp
+# <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>SharedPCAccountDeletionPolicyType Enum-Typ
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Mögliche Werte für den Fall, dass Konten auf einem freigegebenen PC gelöscht werden.
+Mögliche Werte für wann Konten auf einem freigegebenen PC gelöscht werden.
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|sofort
-|0|Sofort löschen.|
-|diskSpaceThreshold|1|Bei Speicherplatz-Schwellenwert löschen.|
-|diskSpaceThresholdOrInactiveThreshold|2|Bei Speicherplatz-Schwellenwert oder inaktivem Schwellenwert löschen.|
-
-
-
-
-
+|Direktfenster|0|Löschen Sie sofort.|
+|diskSpaceThreshold|1|Löschen Sie Disk Space Schwellenwert.|
+|diskSpaceThresholdOrInactiveThreshold|2|Löschen Sie Disk Space Schwellenwert oder inaktiv Schwellenwert.|
 
 
 

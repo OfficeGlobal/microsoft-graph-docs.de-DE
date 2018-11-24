@@ -2,7 +2,7 @@
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Entität, die eine Verbindung zu einem Mobile Threat Defense-Partner repräsentiert
+Entität, die eine Verbindung zu einem Mobile Threat Defense-Partner repräsentiert
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -15,26 +15,26 @@ Entität, die eine Verbindung zu einem Mobile Threat Defense-Partner repräsenti
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Noch nicht dokumentiert|
+|id|String|Noch nicht dokumentiert|
 |lastHeartbeatDateTime|DateTimeOffset|DateTime des letzten vom Datensynchronisierungspartner empfangenen Heartbeats|
-|partnerState|[mobileThreatPartnerTenantState](../resources/intune_onboarding_mobilethreatpartnertenantstate.md)|Status des Datensynchronisierungspartners für dieses Konto. Mögliche Werte sind: `unavailable`, `available`, `enabled`, `unresponsive`.|
-|androidEnabled|boolesch|Legen Sie für Android fest, ob Daten vom Datensynchronisierungspartner während der Konformitätsbewertung verwendet werden sollen.|
-|iosEnabled|boolesch|Für iOS: Rufen Sie ab oder legen Sie fest, ob Daten vom Datensynchronisierungspartner während der Konformitätsbewertung verwendet werden sollen.|
-|androidDeviceBlockedOnMissingPartnerData|boolesch|Für Android: Legen Sie fest, ob Intune Daten vom Datensynchronisierungspartner empfangen muss, bevor ein Gerät als kompatibel markiert wird.|
-|iosDeviceBlockedOnMissingPartnerData|boolesch|Für iOS: Legen Sie fest, ob Intune Daten vom Datensynchronisierungspartner empfangen muss, bevor ein Gerät als kompatibel markiert wird.|
-|partnerUnsupportedOsVersionBlocked|boolesch|Rufen Sie ab bzw. legen Sie fest, ob Geräte auf den aktivierten Plattformen, die nicht die Mindestversionsanforderungen des Datensynchronisierungspartners erfüllen, blockiert werden.|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune_onboarding_mobilethreatpartnertenantstate.md)|Daten Sync Partner Zustand für dieses Konto. Mögliche Werte: sind `unavailable`, `available`, `enabled` und `unresponsive`.|
+|androidEnabled|Boolean|Legen Sie für Android fest, ob Daten vom Datensynchronisierungspartner während der Konformitätsbewertung verwendet werden sollen.|
+|iosEnabled|Boolean|Für iOS: Rufen Sie ab oder legen Sie fest, ob Daten vom Datensynchronisierungspartner während der Konformitätsbewertung verwendet werden sollen.|
+|androidDeviceBlockedOnMissingPartnerData|Boolean|Für Android: Legen Sie fest, ob Intune Daten vom Datensynchronisierungspartner empfangen muss, bevor ein Gerät als kompatibel markiert wird.|
+|iosDeviceBlockedOnMissingPartnerData|Boolean|Für iOS: Legen Sie fest, ob Intune Daten vom Datensynchronisierungspartner empfangen muss, bevor ein Gerät als kompatibel markiert wird.|
+|partnerUnsupportedOsVersionBlocked|Boolean|Rufen Sie ab bzw. legen Sie fest, ob Geräte auf den aktivierten Plattformen, die nicht die Mindestversionsanforderungen des Datensynchronisierungspartners erfüllen, blockiert werden.|
 |partnerUnresponsivenessThresholdInDays|Int32|Erlaubt das Abrufen oder das Festlegen des für die betreffende Partnerintegration geltenden Zeitraums in Tagen, während dessen ein Nichtreagieren des Mandanten toleriert wird.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileThreatDefenseConnector"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
@@ -49,11 +49,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "partnerUnresponsivenessThresholdInDays": 1024
 }
 ```
-
-
-
-
-
 
 
 

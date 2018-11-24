@@ -15,19 +15,19 @@ Eine TermsAndConditionsAssignment-Entität steht für die Zuweisung einer bestim
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Eindeutiger Bezeichner der Entität|
-|Ziel|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Zuweisungsziel, dem die Richtlinie der Nutzungsbedingungen zugewiesen wird.|
+|id|String|Eindeutiger Bezeichner der Entität.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Zuweisungsziel, dem die Richtlinie der Nutzungsbedingungen zugewiesen wird.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.termsAndConditionsAssignment"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
@@ -37,11 +37,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   }
 }
 ```
-
-
-
-
-
 
 
 

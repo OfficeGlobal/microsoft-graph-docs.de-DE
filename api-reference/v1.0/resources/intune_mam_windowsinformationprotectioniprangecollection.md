@@ -7,16 +7,17 @@ Windows Information Protection – IP-Bereichssammlung
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |displayName|Zeichenfolge|Anzeigename|
-|Bereiche|[ipRange](../resources/intune_mam_iprange.md)-Sammlung|Sammlung der IP-Bereiche|
+|ranges|[ipRange](../resources/intune_mam_iprange.md)-Sammlung|Sammlung der IP-Bereiche|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionIPRangeCollection"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionIPRangeCollection",
@@ -30,11 +31,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   ]
 }
 ```
-
-
-
-
-
 
 
 

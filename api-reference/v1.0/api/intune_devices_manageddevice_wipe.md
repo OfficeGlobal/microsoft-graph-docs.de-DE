@@ -26,8 +26,8 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.
@@ -36,9 +36,9 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|keepEnrollmentData|boolesch|Noch nicht dokumentiert|
-|keepUserData|boolesch|Noch nicht dokumentiert|
-|macOsUnlockCode|Zeichenfolge|Noch nicht dokumentiert|
+|keepEnrollmentData|Boolean|Noch nicht dokumentiert|
+|keepUserData|Boolean|Noch nicht dokumentiert|
+|macOsUnlockCode|String|Noch nicht dokumentiert|
 
 
 
@@ -66,11 +66,6 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
 
 
 

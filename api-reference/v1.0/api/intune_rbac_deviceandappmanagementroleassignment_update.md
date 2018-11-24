@@ -24,8 +24,8 @@ PATCH /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceAndAppManagementRoleAssignment](../resources/intune_rbac_deviceandappmanagementroleassignment.md) an.
@@ -34,11 +34,11 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität Dies ist schreibgeschützt und wird automatisch generiert. Geerbt von [RoleAssignment](../resources/intune_rbac_roleassignment.md)|
-|displayName|Zeichenfolge|Der Anzeigename der Rollenzuweisung. Geerbt von [RoleAssignment](../resources/intune_rbac_roleassignment.md)|
-|Beschreibung|Zeichenfolge|Beschreibung der Rollenzuweisung. Geerbt von [RoleAssignment](../resources/intune_rbac_roleassignment.md)|
-|resourceScopes|Zeichenfolgen-Sammlung|Liste der IDs der Rollenbereichsmitglieder-Sicherheitsgruppen.  Dies sind IDs aus Azure Active Directory. Geerbt von [RoleAssignment](../resources/intune_rbac_roleassignment.md)|
-|Elemente|Zeichenfolgen-Sammlung|Die Liste der IDs der Rollenmitglieder-Sicherheitsgruppen. Dies sind IDs aus Azure Active Directory.|
+|id|String|Schlüssel der Entität. Dies ist schreibgeschützt und wird automatisch generiert. Geerbt von [RoleAssignment](../resources/intune_rbac_roleassignment.md)|
+|displayName|String|Der Anzeigename der Rollenzuweisung. Geerbt von [RoleAssignment](../resources/intune_rbac_roleassignment.md)|
+|description|String|Beschreibung der Rollenzuweisung. Geerbt von [RoleAssignment](../resources/intune_rbac_roleassignment.md)|
+|resourceScopes|String-Sammlung|Liste der IDs der Rollenbereichsmitglieder-Sicherheitsgruppen.  Dies sind IDs aus Azure Active Directory. Geerbt von [RoleAssignment](../resources/intune_rbac_roleassignment.md)|
+|Elemente|String-Sammlung|Die Liste der IDs der Rollenmitglieder-Sicherheitsgruppen. Dies sind IDs aus Azure Active Directory.|
 
 
 
@@ -51,9 +51,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 Content-type: application/json
-Content-length: 183
+Content-length: 258
 
 {
+  "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleAssignment",
   "displayName": "Display Name value",
   "description": "Description value",
   "resourceScopes": [
@@ -85,11 +86,6 @@ Content-Length: 307
   ]
 }
 ```
-
-
-
-
-
 
 
 

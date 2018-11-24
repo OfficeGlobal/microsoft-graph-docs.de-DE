@@ -24,8 +24,8 @@ POST /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs deviceManagementTroubleshootingEvent an.
@@ -34,7 +34,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|UUID für das Objekt|
+|id|String|UUID für das Objekt|
 |eventDateTime|DateTimeOffset|Uhrzeit, zu der das Ereignis aufgetreten ist.|
 |correlationId|Zeichenfolge|ID, die für die Verfolgung des Fehlers in dem Dienst verwendet wurde.|
 
@@ -47,7 +47,7 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
-POST https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
+POST https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents
 Content-type: application/json
 Content-length: 179
 
@@ -72,7 +72,6 @@ Content-Length: 228
   "correlationId": "Correlation Id value"
 }
 ```
-
 
 
 

@@ -24,8 +24,8 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs [softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md) an.
@@ -34,8 +34,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität|
-|displayName|Zeichenfolge|Der Name der Richtlinie|
+|id|String|Schlüssel der Entität|
+|displayName|String|Der Name der Richtlinie|
 |compliantDeviceCount|Int32|Anzahl der konformen Geräte|
 |nonCompliantDeviceCount|Int32|Anzahl der nicht konformen Geräte|
 |remediatedDeviceCount|Int32|Anzahl korrigierter Geräte|
@@ -62,9 +62,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/softwareUpdateStatusSummary
 Content-type: application/json
-Content-length: 452
+Content-length: 518
 
 {
+  "@odata.type": "#microsoft.graph.softwareUpdateStatusSummary",
   "displayName": "Display Name value",
   "compliantDeviceCount": 4,
   "nonCompliantDeviceCount": 7,
@@ -110,11 +111,6 @@ Content-Length: 567
   "notApplicableUserCount": 6
 }
 ```
-
-
-
-
-
 
 
 

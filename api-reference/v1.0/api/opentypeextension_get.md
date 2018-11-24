@@ -6,21 +6,26 @@ In der folgenden Tabelle sind die drei Szenarien für den Abruf einer offenen Er
 
 |**GET-Szenario**|**Unterstützte Ressourcen**|**Antworttext**|
 |:-----|:-----|:-----|
-|Abrufen einer bestimmen Erweiterung aus einer bekannten Ressourceninstanz| [Gerät](../resources/device.md), [Ereignis](../resources/event.md), [Guppe](../resources/group.md), [Gruppen-Ereignis](../resources/event.md), [Gruppen-Beitrag](../resources/post.md), [Nachricht](../resources/message.md), [Organisation](../resources/organization.md), [Persönlicher Kontakt](../resources/contact.md), [Benutzer](../resources/user.md) | Nur offene Erweiterung|
-|Abrufen einer bekannten Ressourceninstanz, erweitert um eine bestimmte Erweiterung|Gerät, Ereignis, Gruppe, Gruppen-Ereignis, Gruppen-Beitrag, Nachricht, Organisation, persönlicher Kontakt, Benutzer |Eine um die offene Erweiterung erweiterte Ressourceninstanz|
-|Suchen und Erweitern von Ressourceninstanzen mit einer bestimmten Erweiterung |Ereignis, Gruppen-Ereignis, Gruppen-Beitrag, Nachricht, persönlicher Kontakt|Um die offene Erweiterung erweiterte Ressourceninstanzen|
+|Abrufen einer bestimmen Erweiterung aus einer bekannten Ressourceninstanz| [Device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md) | Nur offene Erweiterung|
+|Abrufen einer bekannten Ressourceninstanz, erweitert um eine bestimmte Erweiterung|Device, event, group, group event, group post, message, organization, personal contact, user |Eine um die offene Erweiterung erweiterte Ressourceninstanz|
+|Suchen und Erweitern von Ressourceninstanzen mit einer bestimmten Erweiterung |Event, group event, group post, message, personal contact|Um die offene Erweiterung erweiterte Ressourceninstanzen|
 
 ## <a name="permissions"></a>Berechtigungen
 
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich (je nach Typ der Ressource, die die Erweiterung enthält): Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+Je nach der Ressource, die die Erweiterung und die Berechtigung enthält Typ (delegierte oder-Anwendung) angefordert, die Berechtigung, die in der folgenden Tabelle angegebenen mit den geringsten ist erforderlich, um diese API aufzurufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](../../../concepts/permissions_reference.md).
 
-|**Unterstützte Ressource**|**Berechtigung**|**Unterstützte Ressource**|**Berechtigung** |
+| Unterstützte Ressource | Delegiert (Geschäfts-, Schul- oder Unikonto) | Delegiert (persönliches Microsoft-Konto) | Anwendung |
 |:-----|:-----|:-----|:-----|
-| [Gerät](../resources/device.md) | Directory.Read.All | [Ereignis](../resources/event.md) | Calendars.Read |
-| [Gruppe](../resources/group.md) | Group.Read.All | [Gruppenereignis](../resources/event.md) | Group.Read.All |
-| [Gruppenbeitrag](../resources/post.md) | Group.Read.All | [Nachricht](../resources/message.md) | Mail.Read |
-| [Organisation](../resources/organization.md) | Directory.Read.All | [Privater Kontakt](../resources/contact.md) | Contacts.Read |
-| [Benutzer](../resources/user.md) | User.ReadBasic.All | | |
+| [Gerät](../resources/device.md) | Directory.Read.All | Nicht unterstützt | Device.ReadWrite.All |
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [Gruppe](../resources/group.md) | Group.Read.All | Nicht unterstützt | Group.Read.All |
+| [group event](../resources/event.md) | Group.Read.All | Nicht unterstützt | Nicht unterstützt |
+| [group post](../resources/post.md) | Group.Read.All | Nicht unterstützt | Group.Read.All |
+| [Nachricht](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
+| [organization](../resources/organization.md) | User.Read | Nicht unterstützt | Nicht unterstützt |
+| [personal contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [Benutzer](../resources/user.md) | User.Read | User.Read | User.Read.All |
+
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -86,23 +91,23 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 ## <a name="path-parameters"></a>Pfadparameter
 |Parameter|Typ|Beschreibung|
 |:-----|:-----|:-----|
-|ID|Zeichenfolge|Platzhalter für einen eindeutigen Bezeichner eines Objekts in der entsprechenden Sammlung, z. B. einer Nachricht, eines Ereignisses oder eines Kontakts. Erforderlich. Nicht zu verwechseln mit der **id**-Eigenschaft einer **openTypeExtension**.|
-|extensionId|Zeichenfolge|Platzhalter für einen Erweiterungsnamen. Ein Erweiterungsname ist der eindeutige Textbezeichner einer Erweiterung oder ein vollqualifizierter Name, der den Erweiterungstyp und den eindeutigen Textbezeichner verkettet. Der vollqualifizierte Name wird beim Erstellen der Erweiterung in der Eigenschaft **id** zurückgegeben. Erforderlich.|
+|Id|string|Platzhalter für einen eindeutigen Bezeichner eines Objekts in der entsprechenden Sammlung, z. B. einer Nachricht, eines Ereignisses oder eines Kontakts. Erforderlich. Nicht zu verwechseln mit der **id**-Eigenschaft einer **openTypeExtension**.|
+|extensionId|string|Platzhalter für einen Erweiterungsnamen. Ein Erweiterungsname ist der eindeutige Textbezeichner einer Erweiterung oder ein vollqualifizierter Name, der den Erweiterungstyp und den eindeutigen Textbezeichner verkettet. Der vollqualifizierte Name wird beim Erstellen der Erweiterung in der Eigenschaft **id** zurückgegeben. Erforderlich.|
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
-Stellen Sie sicher, dass Sie für die Leerzeichen in der `$filter`-Zeichenfolge die [URL-Codierung](http://www.w3schools.com/tags/ref_urlencode.asp) verwenden.
+Stellen Sie sicher, dass Sie für die Leerzeichen in der `$filter`-Zeichenfolge die [URL-Codierung](https://www.w3schools.com/tags/ref_urlencode.asp) verwenden.
 
 |Name|Wert|Beschreibung|
 |:---------------|:--------|:-------|
-|$filter|Zeichenfolge|Gibt Erweiterungen zurück, deren **id** dem Wert des Parameters `extensionId` entspricht.|
-|$filter bei **jedem** Operator|Zeichenfolge|Gibt Instanzen einer Ressourcensammlung zurück, die eine Erweiterung enthalten, deren **id** dem Wert des Parameters `extensionId` entspricht.|
-|$expand|Zeichenfolge|Erweitert eine Ressourceninstanz um eine Erweiterung. |
+|$filter|string|Gibt Erweiterungen zurück, deren **id** dem Wert des Parameters `extensionId` entspricht.|
+|$filter with **any** operator|string|Gibt Instanzen einer Ressourcensammlung zurück, die eine Erweiterung enthalten, deren **id** dem Wert des Parameters `extensionId` entspricht.|
+|$expand|string|Erweitert eine Ressourceninstanz um eine Erweiterung. |
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Wert |
 |:---------------|:----------|
-| Autorisierung | Bearer {token}. Erforderlich. |
+| Authorization | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

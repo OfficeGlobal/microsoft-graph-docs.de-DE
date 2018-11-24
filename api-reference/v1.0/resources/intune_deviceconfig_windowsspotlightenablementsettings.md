@@ -1,19 +1,14 @@
-# <a name="windowsspotlightenablementsettings-enum-type"></a>WindowsSpotlightEnablementSettings Enumerationstyp
+# <a name="windowsspotlightenablementsettings-enum-type"></a>WindowsSpotlightEnablementSettings Enum-Typ
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Ermöglicht es IT-Administratoren, ein vordefiniertes standardmäßiges Suchmodul für MDM-gesteuerte Geräte festzulegen
+Ermöglicht es IT-Admind eine vordefinierten Standard-Suchmaschine für MDM gesteuerte Geräte festlegen
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|notConfigured|0|Spotlight auf dem Sperrbildschirm ist nicht konfiguriert|
-|deaktiviert|1|Windows Spotlight auf dem Sperrbildschirm deaktivieren|
-|aktiviert|2|Windows Spotlight auf dem Sperrbildschirm aktivieren|
-
-
-
-
-
+|nicht konfiguriert|0|Spotlight auf Lock-Bildschirm ist nicht konfiguriert.|
+|deaktiviert|1|Deaktivieren des Windows-Spotlight für Sperren des Bildschirms|
+|enabled|2|Aktivieren Sie Windows Spotlight auf Sperren des Bildschirms|
 
 
 

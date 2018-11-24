@@ -19,7 +19,7 @@ GET /groups/{id}/onenote/sections/{id}/pages
 GET /sites/{id}/onenote/sections/{id}/pages
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 Die Standardabfrage für Seiten gibt die ersten 20 Seiten sortiert nach `lastModifiedTime desc` zurück. Wenn die Standardabfrage mehr als 20 Seiten zurückgibt, enthält die Antwort ein `@odata.nextLink`-Objekt, mit dem Sie seitenweise durch das Resultset blättern können. Die maximale Anzahl von Seiten, die für eine `top`-Anforderung zurückgegeben werden, beträgt 100.
 
@@ -29,7 +29,7 @@ Die Standardantwort erweitert `parentSection` und wählt die Eigenschaften `id`,
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
-| Annehmen | string | `application/json` |
+| Accept | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -45,7 +45,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 GET https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages
 ```
 ##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Response-Objekt wird aus Platzgründen Zahl gekürzt. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

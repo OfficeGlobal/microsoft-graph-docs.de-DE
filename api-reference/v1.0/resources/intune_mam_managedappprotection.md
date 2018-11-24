@@ -11,7 +11,7 @@ Erbt von [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).
 |:---|:---|:---|
 |[managedAppProtections auflisten](../api/intune_mam_managedappprotection_list.md)|[managedAppProtection](../resources/intune_mam_managedappprotection.md)-Sammlung|Listet die Eigenschaften und Beziehungen von [managedAppProtection](../resources/intune_mam_managedappprotection.md)-Objekten auf.|
 |[managedAppProtection abrufen](../api/intune_mam_managedappprotection_get.md)|[managedAppProtection](../resources/intune_mam_managedappprotection.md)|Liest die Eigenschaften und Beziehungen des [managedAppProtection](../resources/intune_mam_managedappprotection.md)-Objekts.|
-|[targetApps-Aktion](../api/intune_mam_managedappprotection_targetapps.md)|Keine|Noch nicht dokumentiert|
+|[targetApps-Aktion](../api/intune_mam_managedappprotection_targetapps.md)|Keine|Noch nicht dokumentiert.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
@@ -24,26 +24,26 @@ Erbt von [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).
 |Version|Zeichenfolge|Version der Entität Geerbt von [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |periodOfflineBeforeAccessCheck|Dauer|Zeitraum, nach dem der Zugriff überprüft wird, wenn das Gerät nicht mit dem Internet verbunden ist.|
 |periodOnlineBeforeAccessCheck|Dauer|Zeitraum, nach dem der Zugriff überprüft wird, wenn das Gerät mit dem Internet verbunden ist.|
-|allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|Quellen, von denen Daten übertragen werden dürfen. Mögliche Werte sind: `allApps`, `managedApps`, `none`.|
-|allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|Ziele, die an die Daten übertragen werden dürfen. Mögliche Werte sind: `allApps`, `managedApps`, `none`.|
-|organizationalCredentialsRequired|Boolesch|Gibt an, ob von der Organisation bereitgestellte Anmeldeinformationen zur Nutzung der App erforderlich sind.|
-|allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune_mam_managedappclipboardsharinglevel.md)|Die Ebene, auf der die Zwischenablage zwischen Apps auf dem verwalteten Gerät geteilt werden kann. Mögliche Werte sind: `allApps`, `managedAppsWithPasteIn`, `managedApps`, `blocked`.|
-|dataBackupBlocked|Boolesch|Gibt an, ob die Sicherung der Daten der verwalteten App blockiert werden soll.|
-|deviceComplianceRequired|Boolesch|Gibt an, ob Gerätekonformität erforderlich ist.|
-|managedBrowserToOpenLinksRequired|Boolesch|Gibt an, ob Internetlinks in der Managed Browser-App geöffnet werden sollen.|
-|saveAsBlocked|Boolesch|Gibt an, ob Benutzer das Menüelement „Speichern unter“ verwenden dürfen, um eine Kopie geschützter Dateien zu speichern.|
+|allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|Quellen, von denen Daten übermittelt werden dürfen. Mögliche Werte: `allApps`, `managedApps`, `none`.|
+|allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|Ziele, an die Daten übermittelt werden dürfen. Mögliche Werte: `allApps`, `managedApps`, `none`.|
+|organizationalCredentialsRequired|Boolescher Wert|Gibt an, ob von der Organisation bereitgestellte Anmeldeinformationen zur Nutzung der App erforderlich sind.|
+|allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune_mam_managedappclipboardsharinglevel.md)|Regelt die Freigabe der Zwischenablage für Apps auf dem verwalteten Gerät. Mögliche Werte: `allApps`, `managedAppsWithPasteIn`, `managedApps`, `blocked`.|
+|dataBackupBlocked|Boolescher Wert|Gibt an, ob die Sicherung der Daten der verwalteten App blockiert werden soll.|
+|deviceComplianceRequired|Boolescher Wert|Gibt an, ob Gerätekonformität erforderlich ist.|
+|managedBrowserToOpenLinksRequired|Boolescher Wert|Gibt an, ob Internetlinks in der Managed Browser-App geöffnet werden sollen.|
+|saveAsBlocked|Boolescher Wert|Gibt an, ob Benutzer das Menüelement „Speichern unter“ verwenden dürfen, um eine Kopie geschützter Dateien zu speichern.|
 |periodOfflineBeforeWipeIsEnforced|Dauer|Legt fest, wie lange eine App ohne Internetverbindung sein darf, bevor sämtliche verwalteten Daten gelöscht werden.|
-|pinRequired|Boolesch|Gibt an, ob eine PIN auf App-Ebene erforderlich ist.|
-|maximumPinRetries|Int32|Legt die Maximalanzahl von fehlerhaften PIN-Eingaben fest, bevor die verwaltete Anwendung entweder blockiert oder zurückgesetzt wird.|
-|simplePinBlocked|Boolesch|Gibt an, ob einfache PINs blockiert werden sollen.|
+|pinRequired|Boolescher Wert|Gibt an, ob eine PIN auf App-Ebene erforderlich ist.|
+|maximumPinRetries|Int32|Maximale Anzahl von falsche Pin "Wiederholen" versucht, bevor die verwaltete app blockiert oder Kennworteingaben gelöscht wird.|
+|simplePinBlocked|Boolescher Wert|Gibt an, ob einfache PINs blockiert werden sollen.|
 |minimumPinLength|Int32|Erforderliche PIN-Mindestlänge für PINs auf App-Ebene, wenn „pinRequired“ auf „true“ gesetzt ist.|
-|pinCharacterSet|[managedAppPinCharacterSet](../resources/intune_mam_managedapppincharacterset.md)|Zeichensatz, der für eine Pin auf App-Ebene verwendet werden kann, wenn PinRequired auf True festgelegt ist. Mögliche Werte sind: `numeric`, `alphanumericAndSymbol`.|
+|pinCharacterSet|[managedAppPinCharacterSet](../resources/intune_mam_managedapppincharacterset.md)|Zulässige Zeichensätze für PINs auf App-Ebene, wenn „pinRequired“ auf „true“ gesetzt ist. Mögliche Werte: `numeric`, `alphanumericAndSymbol`.|
 |periodBeforePinReset|Dauer|Zeitraum, nach dem die für alle Ebenen geltende PIN zurückgesetzt werden muss, wenn „pinRequired“ auf „true“ gesetzt ist.|
-|allowedDataStorageLocations|[managedAppDataStorageLocation](../resources/intune_mam_managedappdatastoragelocation.md)-Sammlung|Datenspeicherorte, an denen der Benutzer verwaltete Daten speichern darf.|
-|contactSyncBlocked|Boolesch|Gibt an, ob eine Synchronisierung von Kontakten mit dem Gerät des Benutzers erlaubt ist.|
-|printBlocked|Boolesch|Gibt an, ob über verwaltete Apps gedruckt werden darf.|
-|fingerprintBlocked|Boolesch|Gibt an, ob statt einer PIN der Fingerabdruckleser verwendet werden darf, wenn „pinRequired“ auf „true“ gesetzt ist.|
-|disableAppPinIfDevicePinIsSet|Boolesch|Gibt an, ob die Verwendung der App-PIN erforderlich ist, wenn die Geräte-PIN gesetzt ist.|
+|allowedDataStorageLocations|[ManagedAppDataStorageLocation](../resources/intune_mam_managedappdatastoragelocation.md) -Auflistung|Datenspeicherorte, an denen der Benutzer verwaltete Daten speichern darf.|
+|contactSyncBlocked|Boolescher Wert|Gibt an, ob eine Synchronisierung von Kontakten mit dem Gerät des Benutzers erlaubt ist.|
+|printBlocked|Boolescher Wert|Gibt an, ob über verwaltete Apps gedruckt werden darf.|
+|fingerprintBlocked|Boolescher Wert|Gibt an, ob statt einer PIN der Fingerabdruckleser verwendet werden darf, wenn „pinRequired“ auf „true“ gesetzt ist.|
+|disableAppPinIfDevicePinIsSet|Boolescher Wert|Gibt an, ob die Verwendung der App-PIN erforderlich ist, wenn die Geräte-PIN gesetzt ist.|
 |minimumRequiredOsVersion|Zeichenfolge|Unter älteren Versionen als der angegebenen Version ist der Zugriff auf Unternehmensdaten für die verwaltete App blockiert.|
 |minimumWarningOsVersion|Zeichenfolge|Ist eine ältere Version als die angegebene Version installiert, wird in der verwalteten App die Warnmeldung angezeigt, dass kein Zugriff auf Unternehmensdaten erlaubt ist.|
 |minimumRequiredAppVersion|Zeichenfolge|Unter älteren Versionen als der angegebenen Version ist der Zugriff auf Unternehmensdaten für die verwaltete App blockiert.|
@@ -53,12 +53,12 @@ Erbt von [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.managedAppPolicy",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppProtection"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppProtection",
@@ -99,10 +99,13 @@ Es folgt eine JSON-Darstellung der Ressource.
 }
 ```
 
-
-
-
-
-
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+     "Warning: /api-reference/v1.0/resources/intune_mam_managedappprotection.md/microsoft.graph.managedAppProtection/allowedDataStorageLocations:
+      Inconsistent types between parameter (String) and table (Object)"
+  ],
+}
+-->
 
 

@@ -1,7 +1,7 @@
 # <a name="timezoneinformation-resource-type"></a>timeZoneInformation-Ressourcentyp
 
 
-Stellt eine Zeitzone dar. Das unterstützte Format ist Windows und auch das Format der [IANA-Zeitzone (Internet Assigned Numbers Authority)](http://www.iana.org/time-zones) (auch bekannt als Olson-Zeitzone) wenn das derzeitige bekannte Problem behoben ist.
+Stellt eine Zeitzone dar. Das unterstützte Format ist Windows und auch das Format der [IANA-Zeitzone (Internet Assigned Numbers Authority)](https://www.iana.org/time-zones) (auch bekannt als Olson-Zeitzone) wenn das derzeitige bekannte Problem behoben ist.
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|

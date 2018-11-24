@@ -15,19 +15,19 @@ Zuweisung der Gerätekonformitätsrichtlinie.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität|
-|Ziel|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Ziel für die Zuweisung der Compliance-Richtlinie|
+|id|String|Schlüssel der Entität.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Ziel für die Zuweisung der Compliance-Richtlinie|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceCompliancePolicyAssignment"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
@@ -37,11 +37,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   }
 }
 ```
-
-
-
-
-
 
 
 

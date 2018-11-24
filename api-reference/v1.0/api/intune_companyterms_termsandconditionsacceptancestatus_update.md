@@ -24,8 +24,8 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md) an.
@@ -34,9 +34,9 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Eindeutiger Bezeichner der Entität|
-|userDisplayName|Zeichenfolge|Anzeigename des Benutzers, dessen Zustimmung die Entität darstellt|
-|acceptedVersion|Int32|Die Versionsnummer der neuesten Version der Geschäftsbedingungen, die der Benutzer akzeptiert hat|
+|id|String|Eindeutiger Bezeichner der Entität|
+|userDisplayName|String|Anzeigename des Benutzers, dessen Zustimmung die Entität darstellt|
+|acceptedVersion|Int32|Versionsnummer der neuesten Version der Geschäftsbedingungen, die der Benutzer akzeptiert hat|
 |acceptedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Zustimmung zu den Bedingungen durch den Benutzer|
 
 
@@ -50,9 +50,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}
 Content-type: application/json
-Content-length: 138
+Content-length: 211
 
 {
+  "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",
   "userDisplayName": "User Display Name value",
   "acceptedVersion": 15,
   "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
@@ -74,11 +75,6 @@ Content-Length: 260
   "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
 }
 ```
-
-
-
-
-
 
 
 

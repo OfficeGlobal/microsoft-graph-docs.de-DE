@@ -19,10 +19,11 @@ Standort des Geräts
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceGeoLocation"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceGeoLocation",
@@ -36,11 +37,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "speed": "<Unknown Primitive Type Edm.Double>"
 }
 ```
-
-
-
-
-
 
 
 

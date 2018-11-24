@@ -1,6 +1,6 @@
-# <a name="get-alert"></a>Warnung abrufen
+# <a name="get-alert"></a>Warnung erhalten
 
- Rufen Sie die Eigenschaften und die Beziehungen eines [alerts](../resources/alert.md)-Objekts ab.
+ Rufen Sie die Eigenschaften und die Beziehungen eines [Benachrichtigung](../resources/alert.md) -Objekts ab.
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -8,9 +8,9 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All   |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) |  SecurityEvents.Read.All SecurityEvents.ReadWrite.All   |
 |Delegiert (persönliches Microsoft-Konto) |  Nicht unterstützt  |
-|Anwendung | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
+|Anwendung | SecurityEvents.Read.All SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -24,7 +24,7 @@ GET /security/alerts/{alert_id}
 
 | Name      |Beschreibung|
 |:----------|:----------|
-| Autorisierung  | Bearer {code}. Erforderlich.|
+| Authorization  | Bearer {code}. Erforderlich.|
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -32,7 +32,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und ein **alert**-Objekt im Antworttext zurück.
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine **Warnung** -Objekts in der Antworttext. Wenn ein Statuscode als 2xx oder 404 von einem Anbieter zurückgegeben wird, oder wenn von ein Anbieter Zeitlimit überschritten, die Antwort werden eine `206 Partial Content` Statuscode mit der Antwort Anbieter in der Kopfzeile einer Warnung. Weitere Informationen finden Sie unter [Microsoft Graph Security-API-Fehlerantworten](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Beispiel
 

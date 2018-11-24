@@ -2,10 +2,10 @@
 
 Dient zum Abrufen der Eigenschaften und der Beziehungen eines [calendar](../resources/calendar.md)-Objekts. Dies kann ein Kalender für einen [Benutzer](../resources/user.md) oder der Standardkalender einer Office 365-[Gruppe](../resources/group.md) sein.
 
-Es gibt zwei Szenarien, in denen eine App den Kalender eines anderen Benutzers abrufen kann:
+Es gibt zwei Szenarien, in dem eine app Kalender des Benutzers abgerufen werden kann:
 
-* Wenn die App über Anwendungsberechtigungen verfügt, oder
-* Wenn die App über die entsprechenden delegierten [Berechtigungen](#permissions) von einem Benutzer verfügt und ein anderer Benutzer einen Kalender für diesen Benutzer freigegeben hat oder delegierten Zugriff auf diesen Benutzer gewährt hat. Siehe [Details und ein Beispiel](../../../concepts/outlook-get-shared-events-calendars.md).
+* Wenn die app Anwendungsberechtigungen verfügt oder,
+* Wenn die app verfügt die entsprechenden [Berechtigungen](#permissions) delegiert, von einem Benutzer und einen anderen Benutzer der Benutzer einen Kalender freigegeben hat, oder delegierten Zugriff, die diesem Benutzer zugewiesen hat. Finden Sie [ausführliche Informationen und ein Beispiel](../../../concepts/outlook-get-shared-events-calendars.md).
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
@@ -17,7 +17,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Anwendung | Calendars.Read |
 
 ## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } --> Der Standard[kalender](../resources/calendar.md) eines Benutzers oder einer Gruppe.
+<!-- { "blockType": "ignored" } -->Eines Benutzers oder einer Gruppe als [Kalender](../resources/calendar.md).
 ```http
 GET /me/calendar
 GET /users/{id | userPrincipalName}/calendar
@@ -37,11 +37,11 @@ GET /me/calendarGroups/{id}/calendars/{id}
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

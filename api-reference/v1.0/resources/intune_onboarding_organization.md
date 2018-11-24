@@ -7,15 +7,15 @@ Die organization-Ressource stellt eine Instanz der globalen Einstellungen und Re
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
 |[Organisationen auflisten](../api/intune_onboarding_organization_list.md)|[organization](../resources/intune_onboarding_organization.md)-Sammlung|Auflisten von Eigenschaften und Beziehungen der [organization](../resources/intune_onboarding_organization.md)-Objekte.|
-|[Organisation abrufen](../api/intune_onboarding_organization_get.md)|[Organisation](../resources/intune_onboarding_organization.md)|Dient zum Lesen der Eigenschaften und Beziehungen des [organization](../resources/intune_onboarding_organization.md)-Objekts.|
-|[Organisation aktualisieren](../api/intune_onboarding_organization_update.md)|[Organisation](../resources/intune_onboarding_organization.md)|Aktualisieren der Eigenschaften eines [organization](../resources/intune_onboarding_organization.md)-Objekts.|
+|[Organisation abrufen](../api/intune_onboarding_organization_get.md)|[organization](../resources/intune_onboarding_organization.md)|Dient zum Lesen der Eigenschaften und Beziehungen des [organization](../resources/intune_onboarding_organization.md)-Objekts.|
+|[Organisation aktualisieren](../api/intune_onboarding_organization_update.md)|[organization](../resources/intune_onboarding_organization.md)|Aktualisieren der Eigenschaften eines [organization](../resources/intune_onboarding_organization.md)-Objekts.|
 |[setMobileDeviceManagementAuthority-Aktion](../api/intune_onboarding_organization_setmobiledevicemanagementauthority.md)|Int32|Autorität für die Verwaltung mobiler Geräte festlegen|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Die GUID für das Objekt.|
-|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|Managementautorität für mobile Geräte. Mögliche Werte sind: `unknown`, `intune`, `sccm`, `office365`.|
+|id|String|Die GUID für das Objekt.|
+|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|Autorität für die Verwaltung mobiler Geräte. Mögliche Werte: `unknown`, `intune`, `sccm`, `office365`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -35,6 +35,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 }
 ```
 
+
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
@@ -51,9 +52,4 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 }
 -->
-
-
-
-
-
 

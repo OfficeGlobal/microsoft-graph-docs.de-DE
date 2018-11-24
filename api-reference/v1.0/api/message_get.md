@@ -4,12 +4,12 @@ Mit dieser Methode können Sie die Eigenschaften und Beziehungen eines [message]
 
 Zurzeit gibt dieser Vorgang Nachrichtentext ausschließlich im HTML-Format zurück.
 
-Es gibt zwei Szenarien, in denen eine App eine Nachricht im E-Mail-Ordner eines anderen Benutzers erhalten kann:
+Es gibt zwei Szenarien, in dem eine app eine Nachricht in einen anderen Benutzer e-Mail-Ordner abrufen:
 
-* Wenn die App über Anwendungsberechtigungen verfügt oder
-* Wenn die App über die entsprechenden delegierten [Berechtigungen](#permissions)  von einem Benutzer verfügt und ein anderer Benutzer einen E-Mail-Ordner für diesen Benutzer freigegeben hat oder delegierten Zugriff auf diesen Benutzer gewährt hat. Siehe [Details und ein Beispiel](../../../concepts/outlook-share-messages-folders.md).
+* Wenn die app Anwendungsberechtigungen verfügt oder,
+* Wenn die app verfügt die entsprechenden [Berechtigungen](#permissions) delegiert, von einem Benutzer und einen anderen Benutzer der Benutzer einen e-Mail-Ordner freigegeben hat, oder delegierten Zugriff, die diesem Benutzer zugewiesen hat. Finden Sie [ausführliche Informationen und ein Beispiel](../../../concepts/outlook-share-messages-folders.md).
 
-|||UNTRANSLATED_CONTENT_START|||Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.|||UNTRANSLATED_CONTENT_END|||
+Da die **message**-Ressource [Erweiterungen](../../../concepts/extensibility_overview.md) unterstützt, können Sie über den `GET`-Vorgang auch benutzerdefinierte Eigenschaften und Erweiterungsdaten aus **message**-Instanzen abrufen.
 
 
 ## <a name="permissions"></a>Berechtigungen
@@ -30,12 +30,12 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
-| Besser: outlook.body-content-type | Zeichenfolge | Das Format, in der die **body**- und **uniqueBody**-Eigenschaften zurückgegeben werden sollen. Werte können „Text“ oder „html“ sein. Als Bestätigung wird eine `Preference-Applied`-Kopfzeile zurückgegeben, wenn diese `Prefer`-Kopfzeile angegeben ist. Wenn die Kopfzeile nicht angegeben ist, werden die **body**- und **uniqueBody**-Eigenschaften im HTML-Format zurückgegeben. Optional. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Besser: outlook.body-content-type | string | Das Format, in der die **body**- und **uniqueBody**-Eigenschaften zurückgegeben werden sollen. Werte können „Text“ oder „html“ sein. Als Bestätigung wird eine `Preference-Applied`-Kopfzeile zurückgegeben, wenn diese `Prefer`-Kopfzeile angegeben ist. Wenn die Kopfzeile nicht angegeben ist, werden die **body**- und **uniqueBody**-Eigenschaften im HTML-Format zurückgegeben. Optional. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -130,7 +130,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-2"></a>Anforderung 2
-Beim nächsten Beispiel werden die Kopfzeilen einer Internet-Nachricht mithilfe eines `$select` Abfrageparameters ermittelt. 
+Im nächste Beispiel wird mit einer `$select` Abfragen Parameter, um die Nachrichtenkopfzeilen Internet eine Nachricht zu erhalten. 
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAAW-VPeAAA="],
@@ -140,7 +140,7 @@ Beim nächsten Beispiel werden die Kopfzeilen einer Internet-Nachricht mithilfe 
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
 ```
 ##### <a name="response-2"></a>Antwort 2
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Die Gruppe der Nachrichten-Kopfzeilen im Antwortobjekt wurde aus Platzgründen gekürzt. Alle Header werden von einem aktuellen Anruf zurückgegeben.
+Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Die Gruppe von Nachrichtenköpfe in der Response-Objekt wird aus Platzgründen Zahl gekürzt. Alle Header wird von einem tatsächlichen Aufruf zurückgegeben werden soll.
 <!-- {
   "blockType": "response",
   "truncated": true,

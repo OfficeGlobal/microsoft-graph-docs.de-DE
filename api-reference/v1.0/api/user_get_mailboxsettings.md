@@ -4,7 +4,7 @@ Rufen Sie die [mailboxSettings](../resources/mailboxsettings.md) des Benutzers a
 
 Sie können alle Postfacheinstellungen anzeigen oder bestimmte Einstellungen abrufen.
 
-Zeitzone ist eine bevorzugte Einstellung, die ein Benutzer für das Benutzerpostfach einrichten kann. Gültige Zeitzonenformate sind das Windows-Zeitzonenformat und das [IANA-Zeitzonenformat (Internet Assigned Numbers Authority)](http://www.iana.org/time-zones) (auch als Olson-Zeitzone bezeichnet). Das Windows-Format ist die Standardeinstellung. 
+Zeitzone ist eine bevorzugte Einstellung, die ein Benutzer für das Benutzerpostfach einrichten kann. Gültige Zeitzonenformate sind das Windows-Zeitzonenformat und das [IANA-Zeitzonenformat (Internet Assigned Numbers Authority)](https://www.iana.org/time-zones) (auch als Olson-Zeitzone bezeichnet). Das Windows-Format ist die Standardeinstellung. 
 
 Wenn Sie die bevorzugte Zeitzone eines Benutzers abrufen, wird die Zeitzone in dem eingerichteten Format zurückgegeben. Wenn Sie diese Zeitzone in einem bestimmten Format (Windows oder IANA) abrufen möchten, können Sie zunächst [die bevorzugte Zeitzone in das entsprechende Format als Postfacheinstellung ändern](user_update_mailboxsettings.md). Anschließend können Sie die Zeitzone in diesem Format abrufen. Alternativ können Sie die Formatkonvertierung separat in Ihrer App verwalten.
 
@@ -18,13 +18,13 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Anwendung | MailboxSettings.Read, MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-Anforderung
-So rufen Sie alle Postfacheinstellungen für einen Benutzer ab: <!-- { "blockType": "ignored" } -->
+Alle postfacheinstellungen für einen Benutzer abrufen:<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-Verwenden Sie die folgende Anforderung, um bestimmte Einstellungen abzurufen, z. B. Einstellungen für automatische Antworten, Gebietsschema, Zeitzone oder Geschäftszeiten: <!-- { "blockType": "ignored" } -->
+Zum Abrufen von bestimmter Einstellungen - antwortet nur die automatische beispielsweise über Einstellungen, Gebietsschema, Zeitzone oder Arbeitszeit:<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
 GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
@@ -39,11 +39,11 @@ GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

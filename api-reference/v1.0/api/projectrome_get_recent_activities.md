@@ -1,6 +1,6 @@
-# <a name="get-recent-user-activities"></a>Aktuelle Nutzeraktivitäten abrufen
+# <a name="get-recent-user-activities"></a>Abrufen aktueller Benutzeraktivitäten
 
-Letzte Aktivitäten für einen bestimmten Benutzer abrufen. Diese OData-Funktion verfügt über einige Standardverhalten, sodass sie wie eine "zuletzt verwendet"-API  ausgeführt wird. Der Dienst fragt die aktuellen [HistoryItems](../resources/projectrome_historyitem.md) ab und zieht diese zugehörigen Aktivitäten. Aktivitäten werden entsprechend der neuesten **lastModified** im **historyItem** sortiert. Dies bedeutet, dass Aktivitäten ohne **historyItems** nicht in der Antwort enthalten sind. Die Berechtigung UserActivity.ReadWrite.CreatedByApp wendet auch eine zusätzliche Filterung für die Antwort an, sodass nur von Ihrer Anwendung erstellte Aktivitäten zurückgegeben werden. Diese serverseitige Filterung kann zu leeren Seiten führen, wenn der Benutzer besonders aktiv ist und andere Anwendungen neuere Aktivitäten erstellt haben. Um die Aktivitäten Ihrer Anwendung abzurufen, verwenden Sie die **NextLink**-Eigenschaft für die Paginierung.
+Rufen Sie aktuelle Aktivitäten für einen bestimmten Benutzer. Diese OData-Funktion verfügt über einige Standardverhalten enthalten, sodass sie wie eine API "zuletzt verwendet" ausgeführt werden. Der Dienst für die aktuelle [HistoryItems](../resources/projectrome_historyitem.md)Abfragen, und ziehen Sie die zugehörigen Aktivitäten. Aktivitäten werden entsprechend der neuesten **LastModified** auf die **HistoryItem**sortiert. Dies bedeutet, dass Aktivitäten ohne **HistoryItems** nicht in der Antwort enthalten sein werden. Die Berechtigung UserActivity.ReadWrite.CreatedByApp wird auch gelten zusätzliche Filter auf die Antwort, damit nur Aktivitäten, die von der Anwendung erstellt zurückgegeben werden. Diese serverseitige Filterung auftreten auf leere Seiten, wenn der Benutzer besonders aktiv ist und anderen Applikationen neuere Aktivitäten erstellt haben. Wenn Sie Ihre Anwendung Aktivitäten erhalten möchten, verwenden Sie die **NextLink** -Eigenschaft für die Paginierung.
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -22,11 +22,11 @@ GET /me/activities/recent
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort. Die folgenden Abfrageparameter werden unterstützt:
+Diese Methode unterstützt einige [OData-Abfrage-Parameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) , mit denen die Antwort anpassen. Die folgenden Abfrageparameter werden unterstützt:
 
-- $expand Sie für die Navigationseigenschaft **historyItems**.
+- $ Erweitern Sie für die Eigenschaft **HistoryItems** Navigation.
 - $top um die maximale Anzahl von Elementen auf mehreren Seiten zu begrenzen.
-- $filter auf die **LastModifiedDateTime** -Eigenschaft für **Aktivitäten**  oder ** HistoryItems**, falls erweitert.
+- $filter auf die **LastModifiedDateTime** -Eigenschaft für **Aktivitäten** oder **HistoryItems**, wenn erweitert.
 
 Es folgen einige Beispiele für unterstützte Abfragen mit URL-Codierung.
 
@@ -42,15 +42,15 @@ Es folgen einige Beispiele für unterstützte Abfragen mit URL-Codierung.
 
 |Name | Typ | Beschreibung|
 |:----|:-----|:-----------|
-|Autorisierung | Zeichenfolge | Bearer {token}. Erforderlich.|
+|Authorization | string | Bearer {token}. Erforderlich.|
 
 ## <a name="request-body"></a>Anforderungstext
 
-Geben Sie keinen Anforderungstext an.
+Geben Sie einen Anforderungstext nicht.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode den `200 OK` Antwortcode mit den neuesten Benutzeraktivitäten für ihre Anwendung aus.
+Wenn der Vorgang erfolgreich war, gibt diese Methode die `200 OK` Antwortcode mit den aktuellsten Aktivitäten des Benutzers, für die Anwendung.
 
 ## <a name="example"></a>Beispiel
 
@@ -93,7 +93,7 @@ Content-Type: application/json
         "appActivityId": "/article?12345",
         "visualElements": {
             "attribution": {
-              "iconUrl": "http://www.contoso.com/icon",
+              "iconUrl": "https://www.contoso.com/icon",
               "alternateText": "Contoso, Ltd.",
               "addImageQuery": false,
               },
@@ -101,7 +101,7 @@ Content-Type: application/json
             "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
             "backgroundColor": "#ff0000",
             "content": {
-              "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+              "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
               "type": "AdaptiveCard",
               "body":
               [{
@@ -110,13 +110,13 @@ Content-Type: application/json
               }]
             }
         },
-        "activationUrl": "http://www.contoso.com/article?id=12345",
+        "activationUrl": "https://www.contoso.com/article?id=12345",
         "appDisplayName": "Contoso, Ltd.",
         "userTimezone": "Africa/Casablanca",
-        "fallbackUrl": "http://www.contoso.com/article?id=12345",
-        "contentUrl": "http://www.contoso.com/article?id=12345",
+        "fallbackUrl": "https://www.contoso.com/article?id=12345",
+        "contentUrl": "https://www.contoso.com/article?id=12345",
         "contentInfo": {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Article",
             "author": "John Doe",
             "name": "How to Tie a Reef Knot"

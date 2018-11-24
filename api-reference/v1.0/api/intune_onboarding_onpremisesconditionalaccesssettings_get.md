@@ -22,12 +22,12 @@ GET /deviceManagement/conditionalAccessSettings
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -47,7 +47,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 357
+Content-Length: 363
 
 {
   "value": {
@@ -55,20 +55,15 @@ Content-Length: 357
     "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
     "enabled": true,
     "includedGroups": [
-      "<Unknown Primitive Type Edm.Guid>"
+      "77c9d466-d466-77c9-66d4-c97766d4c977"
     ],
     "excludedGroups": [
-      "<Unknown Primitive Type Edm.Guid>"
+      "2a0afae4-fae4-2a0a-e4fa-0a2ae4fa0a2a"
     ],
     "overrideDefaultRule": true
   }
 }
 ```
-
-
-
-
-
 
 
 

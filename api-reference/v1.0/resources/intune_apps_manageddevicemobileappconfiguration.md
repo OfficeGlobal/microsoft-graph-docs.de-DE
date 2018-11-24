@@ -8,35 +8,36 @@ Eine abstrakte Klasse zur Konfiguration mobiler Apps für registrierte Geräte.
 |:---|:---|:---|
 |[managedDeviceMobileAppConfigurations auflisten](../api/intune_apps_manageddevicemobileappconfiguration_list.md)|[managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)-Sammlung|Auflisten von Eigenschaften und Beziehungen der [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)-Objekte.|
 |[managedDeviceMobileAppConfiguration abrufen](../api/intune_apps_manageddevicemobileappconfiguration_get.md)|[managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|Lesen von Eigenschaften und Beziehungen des [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)-Objekts.|
+|[assign-Aktion](../api/intune_apps_manageddevicemobileappconfiguration_assign.md)|Keine|Noch nicht dokumentiert|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität.|
+|id|Zeichenfolge|Schlüssel der Entität.|
 |targetedMobileApps|String-Sammlung|Die zugeordnete App.|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts|
-|Beschreibung|Zeichenfolge|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration|
+|description|Zeichenfolge|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
 |displayName|Zeichenfolge|Vom Administrator bereitgestellter Name der Gerätekonfiguration|
-|Version|Int32|Version der Gerätekonfiguration.|
+|version|Int32|Version der Gerätekonfiguration.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|Zuordnungen|[managedDeviceMobileAppConfigurationAssignment](../resources/intune_apps_manageddevicemobileappconfigurationassignment.md)-Sammlung|Die Liste der Gruppenzuweisungen für die App-Konfiguration.|
-|deviceStatuses|[ManagedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md)-Sammlung|Liste von ManagedDeviceMobileAppConfigurationDeviceStatus.|
+|assignments|[managedDeviceMobileAppConfigurationAssignment](../resources/intune_apps_manageddevicemobileappconfigurationassignment.md)-Sammlung|Die Liste der Gruppenzuweisungen für die App-Konfiguration.|
+|deviceStatuses|[ManagedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) -Auflistung|Liste der ManagedDeviceMobileAppConfigurationDeviceStatus.|
 |userStatuses|[managedDeviceMobileAppConfigurationUserStatus](../resources/intune_apps_manageddevicemobileappconfigurationuserstatus.md)-Sammlung|Liste von ManagedDeviceMobileAppConfigurationUserStatus.|
 |deviceStatusSummary|[managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md)|Zusammenfassung der App-Konfiguration-Gerätestatus.|
 |userStatusSummary|[managedDeviceMobileAppConfigurationUserSummary](../resources/intune_apps_manageddevicemobileappconfigurationusersummary.md)|Zusammenfassung der App-Konfiguration-Benutzerstatus.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDeviceMobileAppConfiguration"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfiguration",
@@ -51,11 +52,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "version": 1024
 }
 ```
-
-
-
-
-
 
 
 

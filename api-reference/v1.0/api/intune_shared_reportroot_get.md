@@ -10,8 +10,8 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
 |Delegiert (Geschäfts-, Schul- oder Unikonto)||
-| &nbsp; &nbsp; Gerätekonfiguration | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-| &nbsp; &nbsp; Problembehandlung | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+| &nbsp;&nbsp; Gerätekonfiguration | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+| &nbsp;&nbsp; Problembehandlung | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 
@@ -25,12 +25,12 @@ GET /reports
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

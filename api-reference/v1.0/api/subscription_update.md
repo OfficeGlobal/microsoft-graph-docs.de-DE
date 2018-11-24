@@ -2,7 +2,7 @@
 
 Erneuert ein Abonnement durch Verlängern seiner Ablaufzeit.
 
-Abonnements enden nach einer Zeitspanne, die je nach Ressourcentyp variiert. Um fehlende Benachrichtigungen zu vermeiden, sollte eine App ihr Abonnement frühzeitig vor ihrem Ablaufdatum erneuern. Die maximale Länge eines Abonnements für jeden Ressourcentyp finden Sie unter [Abonnement](../resources/subscription.md).
+Abonnements laufen ab nach der Zeitspanne, die nach Ressourcentyp variiert. Zur Vermeidung von Benachrichtigungen fehlende sollten eine app seine Abonnements im Vorfeld ihrem Ablaufdatum erneuern. Finden Sie unter [Abonnement](../resources/subscription.md) für die maximale Länge eines Abonnements für jeden Ressourcentyp.
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -17,7 +17,8 @@ In der folgenden Tabelle ist für jede Ressource die entsprechende vorgeschlagen
 | Gruppen                      | Group.Read.All      |
 | Benutzer                       | User.Read.All       |
 | Laufwerk (OneDrive eines Benutzers)    | Files.ReadWrite     |
-| Laufwerke (freigegebene SharePoint-Inhalte und Laufwerke) | Files.ReadWrite.All |
+| Laufwerke (gemeinsame SharePoint-Inhalte und Laufwerke) | Files.ReadWrite.All |
+|Sicherheitshinweis| SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -31,7 +32,7 @@ PATCH /subscriptions/{id}
 
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="response"></a>Antwort
 

@@ -12,21 +12,17 @@ Stellt ein Element auf dem iOS-Startbildschirm dar.
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosHomeScreenItem"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosHomeScreenItem",
   "displayName": "String"
 }
 ```
-
-
-
-
-
 
 
 

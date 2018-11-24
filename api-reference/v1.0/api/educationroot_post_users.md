@@ -2,7 +2,7 @@
 
 Erstellen eines neuen Benutzers.
 
-<!-- Add some additional text to better distinguish this method from the user_post_users (https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_post_users) topic. -->
+<!-- Add some additional text to better distinguish this method from the user_post_users (https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/user_post_users) topic. -->
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).

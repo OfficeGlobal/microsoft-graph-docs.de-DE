@@ -20,12 +20,12 @@ Stellt den App-Schutz und den Konfigurationsstatus für die Organisation dar.
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppStatus"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppStatus",
@@ -34,11 +34,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "version": "String"
 }
 ```
-
-
-
-
-
 
 
 

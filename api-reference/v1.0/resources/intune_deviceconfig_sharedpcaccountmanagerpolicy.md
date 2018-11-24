@@ -15,10 +15,11 @@ SharedPC-Konto-Manager-Richtlinie. Gilt nur, wenn der Konto-Manager aktiviert is
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.sharedPCAccountManagerPolicy"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharedPCAccountManagerPolicy",
@@ -28,11 +29,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "removeAccountsBelowDiskFreePercentage": 1024
 }
 ```
-
-
-
-
-
 
 
 

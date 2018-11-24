@@ -1,6 +1,6 @@
 # <a name="create-subscription"></a>Abonnement erstellen
 
-Diese API abonniert eine Listeneranwendung, über die sie Benachrichtigungen erhält, sobald Daten in Microsoft Graph geändert werden
+Diese API abonniert eine Listeneranwendung, über die sie Benachrichtigungen erhält, sobald Daten in Microsoft Graph geändert werden
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -15,9 +15,10 @@ Zur Abonnementerstellung ist Lesezugriff auf die Ressource erforderlich. Beispie
 | Gruppen                      | Group.Read.All      |
 | Benutzer                       | User.Read.All       |
 | Laufwerk (OneDrive eines Benutzers)    | Files.ReadWrite     |
-| Laufwerke (freigegebene SharePoint-Inhalte und Laufwerke) | Files.ReadWrite.All |
+| Laufwerke (gemeinsame SharePoint-Inhalte und Laufwerke) | Files.ReadWrite.All |
+|Sicherheitshinweis| SecurityEvents.ReadWrite.All |
 
- > **Hinweis:** Der Endpunkt /v1.0 erlaubt Anwendungsberechtigungen für die meisten Ressourcen. Unterhaltungen in einer Gruppe und OneDrive-Laufwerk-Stammelemente werden mit den Anwendungsberechtigungen nicht unterstützt.
+ > **Hinweis:** Der Endpunkt /v1.0 kann Berechtigungen für die meisten Ressourcen. Unterhaltungen in einer Gruppe und OneDrive Laufwerk Stammelemente werden mit den Anwendungsberechtigungen nicht unterstützt.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -31,7 +32,7 @@ POST /subscriptions
 
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="response"></a>Antwort
 
@@ -60,8 +61,8 @@ Content-type: application/json
 }
 ```
 
-Geben Sie im Anforderungstext eine JSON-Darstellung des [subscription](../resources/subscription.md)-Objekts an.
-Das Feld `clientState` ist optional.
+Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [Abonnement](../resources/subscription.md) -Objekts.
+Die `clientState` Feld ist optional.
 
 ##### <a name="resources-examples"></a>Beispiele für Ressourcen
 
@@ -70,12 +71,13 @@ Im Folgenden sind gültige Werte für die Ressourceneigenschaft des Abonnements 
 | Ressourcentyp | Beispiele |
 |:------ |:----- |
 |Mail|me/mailfolders('inbox')/messages<br />me/messages|
-|Kontakte|pan data-id="undefined" class="unusedGlossaryTerm">me/messages|
+|Kontakte|me/contacts|
 |Kalender|me/events|
 |Benutzer|users|
 |Gruppen|Gruppen|
 |Unterhaltungen|groups('*{id}*')/conversations|
 |Laufwerke|me/drive/root|
+|Sicherheitshinweis|Sicherheitshinweise /? $filter = Status Eq 'Neu'|
 
 ##### <a name="response"></a>Antwort
 
@@ -106,7 +108,7 @@ Content-length: 252
 
 ## <a name="notification-endpoint-validation"></a>Endpunktprüfung für Benachrichtigungen
 
-Der Abonnement-Benachrichtigungs-Endpunkt (in der Eigenschaft `notificationUrl` angegeben) muss auf eine Validierungsanforderung antworten können, wie beschrieben unter [Einrichten von Benachrichtigungen für Änderungen in Benutzerdaten](../../../concepts/webhooks.md#notification-endpoint-validation). Wenn die Validierung fehlschlägt, gibt die Anforderung zur Erstellung des Abonnements einen 400-Bad Request-Fehler zurück.
+Das Abonnement Benachrichtigung Endpunkt (im angegebenen der `notificationUrl` -Eigenschaft) müssen Daten aneinander zur Reaktion auf eine Anforderung zur Überprüfung, wie unter [Einrichten von Benachrichtigungen, damit die Änderungen in Benutzerdaten](../../../concepts/webhooks.md#notification-endpoint-validation). Wenn die Überprüfung fehlschlägt, gibt die Anforderung an das Abonnement zu erstellen einer 400-Bad Request-Fehler zurück.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

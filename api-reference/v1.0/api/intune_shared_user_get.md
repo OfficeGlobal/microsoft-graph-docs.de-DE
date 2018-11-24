@@ -4,15 +4,15 @@
 
 Lesen von Eigenschaften und Beziehungen des [user](../resources/intune_shared_user.md)-Objekts.
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](../../../concepts/permissions_reference.md).  Die jeweilige Berechtigung hängt vom Kontext ab.
+Eine der folgenden Berechtigungen ist erforderlich, um diese API-aufrufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](../../../concepts/permissions_reference.md).  Die jeweilige Berechtigung hängt vom Kontext ab.
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
 |Delegiert (Geschäfts-, Schul- oder Unikonto)| _variiert je nach Kontext_|
-| &nbsp; &nbsp; Geräte | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
-| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
-| &nbsp; &nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
-| &nbsp; &nbsp; Problembehandlung | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp; Gerätemanagement | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
+| &nbsp;&nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; Problembehandlung | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 |Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 
@@ -26,12 +26,12 @@ GET /users/{usersId}
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

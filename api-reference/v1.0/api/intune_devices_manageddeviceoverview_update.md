@@ -24,8 +24,8 @@ PATCH /deviceManagement/managedDeviceOverview
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md) an.
@@ -34,7 +34,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Eindeutiger Bezeichner für die Zusammenfassung|
+|id|String|Eindeutiger Bezeichner für die Zusammenfassung|
 |enrolledDeviceCount|Int32|Gesamtanzahl von registrierten Geräten. Über den Intune-PC-Agent verwaltete Geräte sind nicht enthalten.|
 |mdmEnrolledCount|Int32|Anzahl von in MDM registrierten Geräten|
 |dualEnrolledDeviceCount|Int32|Anzahl von Geräten, die in MDM und EAS registriert sind|
@@ -52,9 +52,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 625
+Content-length: 685
 
 {
+  "@odata.type": "#microsoft.graph.managedDeviceOverview",
   "enrolledDeviceCount": 3,
   "mdmEnrolledCount": 0,
   "dualEnrolledDeviceCount": 7,
@@ -110,11 +111,6 @@ Content-Length: 734
   }
 }
 ```
-
-
-
-
-
 
 
 

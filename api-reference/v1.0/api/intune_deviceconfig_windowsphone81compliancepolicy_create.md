@@ -24,8 +24,8 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des windowsPhone81CompliancePolicy-Objekts an.
@@ -34,23 +34,23 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|id|String|Schlüssel der Entität. Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|passwordBlockSimple|Boolescher Wert|Gibt an, ob die Kalendersynchronisierung blockiert werden soll.|
-|passwordExpirationDays|Int32|Zeit in Tagen bis zum Ablaufen des Kennworts.|
+|passwordBlockSimple|Boolean|Gibt an, ob die Kalendersynchronisierung blockiert werden soll.|
+|passwordExpirationDays|Int32|Zeit in Tagen bis zum Ablaufen des Kennworts|
 |passwordMinimumLength|Int32|Mindestlänge von Kennwörtern|
 |passwordMinutesOfInactivityBeforeLock|Int32|Zeitraum von Inaktivität in Minuten, nach dem die Eingabe eines Kennworts gefordert wird|
 |passwordMinimumCharacterSetCount|Int32|Anzahl der Zeichensätze, die im Kennwort enthalten sein müssen|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Der erforderliche Kennworttyp. Mögliche Werte: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Geforderter Kennworttyp. Mögliche Werte sind: `deviceDefault`, `alphanumeric` und `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Anzahl der zuletzt verwendeten Kennwörter, die nicht erneut verwendet werden dürfen. Gültige Werte: 0 bis 24.|
-|passwordRequired|Boolescher Wert|Legt fest, ob ein Kennwort gefordert wird.|
-|osMinimumVersion|Zeichenfolge|Mindestversion von Windows Phone|
-|osMaximumVersion|Zeichenfolge|Maximalversion von Windows Phone|
-|storageRequireEncryption|Boolescher Wert|Legt fest, dass auf Windows Phone-Geräten Verschlüsselung gefordert wird.|
+|passwordRequired|Boolean|Legt fest, ob ein Kennwort gefordert wird.|
+|osMinimumVersion|String|Mindestversion von Windows Phone|
+|osMaximumVersion|String|Maximalversion von Windows Phone|
+|storageRequireEncryption|Boolean|Verschlüsselung auf Windows Phone-Geräten erforderlich|
 
 
 
@@ -63,12 +63,11 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 671
+Content-length: 607
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81CompliancePolicy",
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
   "passwordBlockSimple": true,
@@ -113,11 +112,6 @@ Content-Length: 779
   "storageRequireEncryption": true
 }
 ```
-
-
-
-
-
 
 
 

@@ -18,11 +18,11 @@ Erbt von [roleAssignment](../resources/intune_rbac_roleassignment.md)
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität Dies ist schreibgeschützt und wird automatisch generiert. Geerbt von [RoleAssignment](../resources/intune_rbac_roleassignment.md)|
+|id|String|Schlüssel der Entität Dies ist schreibgeschützt und wird automatisch generiert. Geerbt von [RoleAssignment](../resources/intune_rbac_roleassignment.md)|
 |displayName|String|Der Anzeigename der Rollenzuweisung. Geerbt von [RoleAssignment](../resources/intune_rbac_roleassignment.md)|
 |description|String|Beschreibung der Rollenzuweisung. Geerbt von [RoleAssignment](../resources/intune_rbac_roleassignment.md)|
-|resourceScopes|String collection|Liste der IDs der Rollenbereichsmitglieder-Sicherheitsgruppen.  Dies sind IDs aus Azure Active Directory. Geerbt von [RoleAssignment](../resources/intune_rbac_roleassignment.md)|
-|Elemente|String collection|Die Liste der IDs der Rollenmitglieder-Sicherheitsgruppen. Dies sind IDs aus Azure Active Directory.|
+|resourceScopes|String-Sammlung|Liste der IDs der Rollenbereichsmitglieder-Sicherheitsgruppen.  Dies sind IDs aus Azure Active Directory. Geerbt von [RoleAssignment](../resources/intune_rbac_roleassignment.md)|
+|members|String-Sammlung|Die Liste der IDs der Rollenmitglieder-Sicherheitsgruppen. Dies sind IDs aus Azure Active Directory.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
@@ -31,12 +31,12 @@ Erbt von [roleAssignment](../resources/intune_rbac_roleassignment.md)
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.roleAssignment",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceAndAppManagementRoleAssignment"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleAssignment",
@@ -51,11 +51,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   ]
 }
 ```
-
-
-
-
-
 
 
 

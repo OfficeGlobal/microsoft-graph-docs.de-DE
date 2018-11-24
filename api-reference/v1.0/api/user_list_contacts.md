@@ -1,11 +1,11 @@
 # <a name="list-contacts"></a>Kontakte auflisten
 
-Ruft eine Kontaktsammlung aus dem Standardkontaktordner des angemeldeten Benutzers ab.
+Rufen Sie eine Kontakte-Auflistung aus dem Standardordner Kontakte des angemeldeten Benutzers.
 
-Es gibt zwei Szenarien, in denen eine App einen Kontakt in dem Kontaktordner eines anderen Benutzers abrufen kann:
+Es gibt zwei Szenarien, in dem eine app Kontakte in einen anderen Benutzer Kontaktordner abrufen:
 
-* Wenn die App über Anwendungsberechtigungen verfügt, oder
-* Wenn die App über die entsprechenden delegierten [Berechtigungen](#permissions) von einem Benutzer verfügt und ein anderer Benutzer einen Kontaktordner für diesen Benutzer freigegeben hat oder delegierten Zugriff auf diesen Benutzer gewährt hat. Siehe [Details und ein Beispiel](../../../concepts/outlook-get-shared-contacts-folders.md).
+* Wenn die app Anwendungsberechtigungen verfügt oder,
+* Wenn die app verfügt die entsprechenden [Berechtigungen](#permissions) delegiert, von einem Benutzer und einen anderen Benutzer diesen Benutzer einen Kontaktordner freigegeben hat, oder delegierten Zugriff, die diesem Benutzer zugewiesen hat. Finden Sie [ausführliche Informationen und ein Beispiel](../../../concepts/outlook-get-shared-contacts-folders.md).
 
 
 ## <a name="permissions"></a>Berechtigungen
@@ -38,7 +38,7 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 Zum Beispiel können Sie die `$filter` Abfrageparameter verwenden, um Kontakte auf Basis der Domäne mit ihren E-Mail-Adressen filtern:
 
@@ -49,8 +49,8 @@ Zum Beispiel können Sie die `$filter` Abfrageparameter verwenden, um Kontakte a
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Autorisierung  | Bearer {token}. Erforderlich.  |
-| Inhaltstyp   | Anwendung/json  |
+| Authorization  | Bearer {token}. Erforderlich.  |
+| Content-Type   | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

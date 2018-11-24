@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) an.
@@ -34,9 +34,9 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität. Geerbt von [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Zuweisungsziel für das E-Book. Geerbt von [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|Die Installationsabsicht für eBook. Geerbt von [managedEBookAssignment](../resources/intune_books_managedebookassignment.md). Mögliche Werte sind: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|id|String|Schlüssel der Entität. Geerbt von [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Das Zuweisungsziel des E-Books. Geerbt von [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|Die Installationspriorität des E-Books. Geerbt von [ManagedEBookAssignment](../resources/intune_books_managedebookassignment.md). Mögliche Werte sind: `available`, `required`, `uninstall` und `availableWithoutEnrollment`.|
 
 
 
@@ -49,9 +49,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBookAssignmentId}
 Content-type: application/json
-Content-length: 133
+Content-length: 193
 
 {
+  "@odata.type": "#microsoft.graph.iosVppEBookAssignment",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
   },
@@ -75,11 +76,6 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
-
-
-
-
-
 
 
 

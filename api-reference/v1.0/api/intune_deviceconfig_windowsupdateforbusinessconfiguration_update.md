@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) an.
@@ -34,25 +34,25 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|id|String|Schlüssel der Entität. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|Beschreibung|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune_deviceconfig_windowsdeliveryoptimizationmode.md)|Zustellungsoptimierungsmodus. Mögliche Werte: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload` und `bypassMode`.|
-|prereleaseFeatures|[prereleaseFeatures](../resources/intune_deviceconfig_prereleasefeatures.md)|Die Vorabversion-Features. Mögliche Werte: `userDefined`, `settingsOnly`, `settingsAndExperimentations`, `notAllowed`.|
-|automaticUpdateMode|[automaticUpdateMode](../resources/intune_deviceconfig_automaticupdatemode.md)|Modus für automatische Updates. Mögliche Werte: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`.|
-|microsoftUpdateServiceAllowed|Boolesch|Legt fest, dass der Microsoft Update Service zugelassen wird.|
-|driversExcluded|Boolesch|Legt fest, dass Treiber von Windows-Updates ausgenommen werden.|
+|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune_deviceconfig_windowsdeliveryoptimizationmode.md)|Übermittlung Optimierung Modus. Mögliche Werte sind: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload` und `bypassMode`.|
+|prereleaseFeatures|[prereleaseFeatures](../resources/intune_deviceconfig_prereleasefeatures.md)|Pre-Release-Funktionen. Mögliche Werte sind: `userDefined`, `settingsOnly`, `settingsAndExperimentations` und `notAllowed`.|
+|automaticUpdateMode|[automaticUpdateMode](../resources/intune_deviceconfig_automaticupdatemode.md)|Modus für automatische Updates. Mögliche Werte sind: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime` und `autoInstallAndRebootWithoutEndUserControl`.|
+|microsoftUpdateServiceAllowed|Boolean|Legt fest, dass der Microsoft Update Service zugelassen wird.|
+|driversExcluded|Boolean|Legt fest, dass Treiber von Windows-Updates ausgenommen werden.|
 |installationSchedule|[windowsUpdateInstallScheduleType](../resources/intune_deviceconfig_windowsupdateinstallscheduletype.md)|Installationszeitplan|
 |qualityUpdatesDeferralPeriodInDays|Int32|Legt fest, um wie viele Tage Qualitätsupdates zurückgestellt werden sollen.|
 |featureUpdatesDeferralPeriodInDays|Int32|Legt fest, um wie viele Tage Funktionsupdates zurückgestellt werden sollen.|
-|qualityUpdatesPaused|Boolesch|Setzt Qualitätsupdates aus.|
-|featureUpdatesPaused|Boolesch|Setzt Funktionsupdates aus.|
+|qualityUpdatesPaused|Boolean|Setzt Qualitätsupdates aus.|
+|featureUpdatesPaused|Boolean|Setzt Funktionsupdates aus.|
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Aussetzung der Qualitätsupdates|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Aussetzung der Funktionsupdates|
-|businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune_deviceconfig_windowsupdatetype.md)|Bestimmt, welche Branch-Geräte ihre Updates erhalten von. Mögliche Werte: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
+|businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune_deviceconfig_windowsupdatetype.md)|Bestimmt, welche Geräte Branch ihre Updates von erhält. Mögliche Werte sind: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow` und `windowsInsiderBuildRelease`.|
 
 
 
@@ -65,10 +65,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 898
+Content-length: 910
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -126,11 +126,6 @@ Content-Length: 1082
   "businessReadyUpdatesOnly": "all"
 }
 ```
-
-
-
-
-
 
 
 

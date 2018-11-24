@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [managedDeviceMobileAppConfigurationAssignment](../resources/intune_apps_manageddevicemobileappconfigurationassignment.md) an.
@@ -34,8 +34,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Eindeutiger Bezeichner der Entität|
-|Ziel|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Zuweisungsziel, dem die Geschäftsbedingungen-Richtlinie zugewiesen ist|
+|id|String|Eindeutiger Bezeichner der Entität|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Zuweisungsziel, dem die Geschäftsbedingungen-Richtlinie zugewiesen ist|
 
 
 
@@ -48,9 +48,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/assignments/{managedDeviceMobileAppConfigurationAssignmentId}
 Content-type: application/json
-Content-length: 101
+Content-length: 185
 
 {
+  "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationAssignment",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
   }
@@ -72,11 +73,6 @@ Content-Length: 234
   }
 }
 ```
-
-
-
-
-
 
 
 

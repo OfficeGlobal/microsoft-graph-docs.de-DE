@@ -24,8 +24,8 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des iosUpdateConfiguration-Objekts an.
@@ -34,15 +34,15 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|id|Zeichenfolge|Schlüssel der Entität. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|Beschreibung|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|activeHoursStart|TimeOfDay|Beginn der aktiven Stunden (Als aktive Stunden wird das Zeitfenster bezeichnet, in dem keine Updates installiert werden sollen.)|
-|activeHoursEnd|TimeOfDay|Ende der aktiven Stunden (Als aktive Stunden wird das Zeitfenster bezeichnet, in dem keine Updates installiert werden sollen.)|
-|scheduledInstallDays|[dayOfWeek](../resources/intune_deviceconfig_dayofweek.md)-Sammlung|Tage in der Woche, für die aktive Stunden konfiguriert werden. Diese Sammlung kann maximal 7 Elemente enthalten. Mögliche Werte: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|activeHoursStart|TimeOfDay|Beginn der aktiven Stunden (als aktive Stunden wird das Zeitfenster bezeichnet, in dem keine Installation von Updates ausgeführt werden soll)|
+|activeHoursEnd|TimeOfDay|Ende der aktiven Stunden (als aktive Stunden wird das Zeitfenster bezeichnet, in dem keine Installation von Updates ausgeführt werden soll)|
+|scheduledInstallDays|[DayOfWeek](../resources/intune_deviceconfig_dayofweek.md) -Auflistung|Tage in der Woche, für die aktive Stunden konfiguriert werden. Diese Sammlung darf maximal 7 Elemente enthalten. Mögliche Werte: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |utcTimeOffsetInMinutes|Int32|UTC-Zeitversatz in Minuten|
 
 
@@ -56,11 +56,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 389
+Content-length: 325
 
 {
   "@odata.type": "#microsoft.graph.iosUpdateConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -96,11 +95,6 @@ Content-Length: 497
   "utcTimeOffsetInMinutes": 6
 }
 ```
-
-
-
-
-
 
 
 

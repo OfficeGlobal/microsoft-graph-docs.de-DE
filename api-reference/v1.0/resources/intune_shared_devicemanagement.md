@@ -2,22 +2,21 @@
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Die Ressource DeviceManagement stellt einen Container dar, dessen Inhalt je nach Workflow variiert, einschließlich:  
+Die Ressource DeviceManagement stellt einen Container, deren Inhalt variieren nach Workflow je, einschließlich:  
 
-- Überwachungsereignisse
-- Geschäftsbedingungen im Unternehmen 
-- Unternehmens-Registrierungsprofile
-- Geräte-Konfigurationseinstellungen
-- Geräteverwaltung
-- Endpunkt-Schutz
-- Registrierungsprofile
-- Benachrichtigungen
-- On-boarding-Richtlinien, Einstellungen und details
-- Rollenbasierte Zugriffssteuerung (RBAC) Richtlinien
-- Remoteunterstützungspartner
-- Telekommunikationskostenmanagement-Partner
-- Problembehandlungsereignisse
-- Windows Information Protection-Zusammenfassungen
+- Überwachung der Ereignisse  
+- Geschäftsbedingungen im Unternehmen   
+- Die Konfiguration für Geräte  
+- Geräteverwaltung  
+- EndPoint Protection.  
+- Registrierung Profile  
+- Benachrichtigungen  
+- Onboarding-Richtlinien, Einstellungen und details  
+- Rollenbasierte Zugriffssteuerung (RBAC) Zugriffsrichtlinien  
+- Remoteunterstützung Partner  
+- Telekommunikation weite Management-Partner  
+- Problembehandlung bei Ereignissen  
+- Windows Information Protection Zusammenfassungen  
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
@@ -27,16 +26,17 @@ Die Ressource DeviceManagement stellt einen Container dar, dessen Inhalt je nach
 |**Onboarding**|
 |[verifyWindowsEnrollmentAutoDiscovery-Funktion](../api/intune_shared_devicemanagement_verifywindowsenrollmentautodiscovery.md)|Boolescher Wert|Noch nicht dokumentiert|
 |**RBAC**|
-|[GetEffectivePermissions-Funktion](../api/intune_shared_devicemanagement_geteffectivepermissions.md)|["RolePermission"](../resources/intune_rbac_rolepermission.md) Sammlung oder zeichenfolgenauflistung|Ruft die effektiven Berechtigungen des derzeit authentifizierten Benutzers ab.|
+|[GetEffectivePermissions-Funktion](../api/intune_shared_devicemanagement_geteffectivepermissions.md)|["RolePermission"](../resources/intune_rbac_rolepermission.md) Auflistung oder zeichenfolgenauflistung|Ruft die effektiven Berechtigungen des derzeit authentifizierten Benutzers ab.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Eindeutiger Bezeichner für das Gerät.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für das Gerät.
+|
 |**deviceConfiguration**|
-|Einstellungen|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Einstellungen auf Kontoebene|
+|settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Einstellungen auf Kontoebene|
 |**deviceManagement**|
-|subscriptionState|Zeichenfolge|Status des Abonnements bei der Lösung für Mobilgeräteverwaltung des Mandanten. Die möglichen Werte sind: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
+|subscriptionState|String|Status des Abonnements bei der Lösung für Mobilgeräteverwaltung des Mandanten. Die möglichen Werte sind: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |**Onboarding**|
 |intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|„intuneBrand“ enthält Daten, mit denen das Aussehen der Unternehmensportal-Anwendungen und des Endbenutzer-Webportals angepasst wird.|
 
@@ -62,7 +62,7 @@ Die Ressource DeviceManagement stellt einen Container dar, dessen Inhalt je nach
 |managedDevices|[managedDevice](../resources/intune_devices_manageddevice.md)-Sammlung|Die Liste der verwalteten Geräte|
 |**Registrierung**|
 |importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md)-Sammlung|Sammlung von importierten Windows Autopilot-Geräten|
-|importedWindowsAutopilotDeviceIdentityUploads|[ImportedWindowsAutopilotDeviceIdentityUpload](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md)-Sammlung|Auflistung von Windows Autopilot Geräte-Uploads.|
+|importedWindowsAutopilotDeviceIdentityUploads|[ImportedWindowsAutopilotDeviceIdentityUpload](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md) -Auflistung|Auflistung von Windows Autopilot, die Geräte hochladen.|
 |**Benachrichtigungen**|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md)-Sammlung|Benachrichtigungsvorlage|
 |**Onboarding**|
@@ -76,13 +76,13 @@ Die Ressource DeviceManagement stellt einen Container dar, dessen Inhalt je nach
 |resourceOperations|[resourceOperation](../resources/intune_rbac_resourceoperation.md)-Sammlung|Ressourcenvorgänge|
 |roleAssignments|[DeviceAndAppManagementRoleAssignment](../resources/intune_rbac_deviceandappmanagementroleassignment.md)-Sammlung|Rollenzuweisungen|
 |roleDefinitions|[roleDefinition](../resources/intune_rbac_roledefinition.md)-Sammlung|Rollendefinitionen|
-|**Remote-Unterstützung**|
+|**Remoteunterstützung**|
 |remoteAssistancePartners|[remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md)-Sammlung|Die Partner für die Remoteunterstützung.|
-|**Telekommunikationsausgaben-Verwaltung**|
+|**Telekommunikation Ausgaben management**|
 |telecomExpenseManagementPartners|[telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md)-Sammlung|Telecom Expense Management-Partner|
 |**Problembehandlung**|
 |troubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md)-Sammlung|Die Liste der Problembehandlungsereignisse für den Mandanten.|
-|**Windows Information Protection**|
+|**Windows-Datenschutz**|
 |windowsInformationProtectionAppLearningSummaries|[windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md)-Sammlung|Windows Information Protection  – App-Schulungszusammenfassung|
 |windowsInformationProtectionNetworkLearningSummaries|[windowsInformationProtectionNetworkLearningSummary](../resources/intune_wip_windowsinformationprotectionnetworklearningsummary.md)-Sammlung|Windows Information Protection – Netzwerk-Schulungszusammenfassung|
 

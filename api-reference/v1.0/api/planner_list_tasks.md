@@ -16,7 +16,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 GET /planner/tasks
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Für diese Methode müssen [Filter](http://graph.microsoft.io/docs/overview/query_parameters) für planID angegeben werden.
+Für diese Methode müssen [Filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) für planID angegeben werden.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|

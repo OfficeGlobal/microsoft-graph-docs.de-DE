@@ -15,7 +15,7 @@ Enthält Inhaltseigenschaften für eine bestimmte App-Version. Jedes mobileAppCo
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|String|Die Version des App-Inhalts.|
+|id|String|Die Version des App-Inhalts.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
@@ -24,23 +24,18 @@ Enthält Inhaltseigenschaften für eine bestimmte App-Version. Jedes mobileAppCo
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppContent"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppContent",
   "id": "String (identifier)"
 }
 ```
-
-
-
-
-
 
 
 

@@ -24,8 +24,8 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -45,12 +45,12 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4607
+Content-Length: 4610
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.intune_mam_graph.windowsInformationProtectionPolicy",
+      "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
       "displayName": "Display Name value",
       "description": "Description value",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
@@ -77,7 +77,7 @@ Content-Length: 4607
         "certificate": "Y2VydGlmaWNhdGU="
       },
       "revokeOnUnenrollDisabled": true,
-      "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+      "rightsManagementServicesTemplateId": "abf7b16f-b16f-abf7-6fb1-f7ab6fb1f7ab",
       "azureRightsManagementServicesAllowed": true,
       "iconsVisible": true,
       "protectedApps": [
@@ -179,11 +179,6 @@ Content-Length: 4607
   ]
 }
 ```
-
-
-
-
-
 
 
 

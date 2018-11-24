@@ -1,26 +1,21 @@
-# <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>ManagedDevicePartnerReportedHealthState Enumerationstyp
+# <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>ManagedDevicePartnerReportedHealthState Enum-Typ
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Verfügbare Integritätszustände für das Gerät Health-API
+Verfügbare Zustände für das Gerät Health-API
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|unbekannt|0|Der Integritätszustand des Geräts wurde noch nicht gemeldet|
-|activated|1|Das Gerät wurde von einem Mobile-Threat-Defense-Partner aktiviert, hat seine Integrität aber noch nicht gemeldet.|
-|deactivated|2|Das Gerät wurde von einem Mobile-Threat-Defense-Partner deaktiviert. Der Integritätszustand des Geräts ist nicht bekannt.|
-|secured|3|Das Gerät wird vom Mobile-Threat-Defense-Partner als gesichert angesehen.|
-|lowSeverity|4|Das Gerät wird vom Mobile-Threat-Defense-Partner als geringe Bedrohung angesehen.|
-|mediumSeverity|5|Das Gerät wird vom Mobile-Threat-Defense-Partner als mittlere Bedrohung angesehen.|
-|highSeverity|6|Das Gerät wird vom Mobile-Threat-Defense-Partner als große Bedrohung angesehen.|
-|unresponsive|7|Das Gerät reagiert laut dem Mobile-Threat-Defense-Partner nicht. Der Integritätszustand des Geräts ist nicht bekannt.|
-|compromised|8|Das Gerät wird vom Threat-Defense-Partner als gefährdet betrachtet. Dies bedeutet, dass das Gerät über eine aktive Bedrohung oder ein Risiko verfügt, das vom Endbenutzer nicht auf einfache Weise behoben werden kann und der Benutzer sollte sich an seinen IT-Administrator wenden.|
-|misconfigured|9|Das Gerät ist falsch mit den Thread Defense-Partner konfiguriert. Dies bedeutet, dass dem Gerät ein erforderliches Profil oder eine Konfiguration fehlt, damit der Threat DefensePartner ordnungsgemäß funktioniert und daher kann die Bedrohungs- oder Risikoanalyse nicht ausgeführt werden.|
-
-
-
-
-
+|unknown|0|Gerät Integritätsstatus ist noch nicht gemeldet.|
+|aktiviert|1|Gerät von einem mobilen Threat Defense Partner aktiviert wurde, aber noch nicht Health gemeldet.|
+|deaktiviert|2|Gerät wurde von einem mobilen Threat Defense Partner deaktiviert. Die Integrität Gerät ist nicht bekannt.|
+|gesichert|3|Gerät gilt als vom mobilen Threat Defense Partner gesichert.|
+|lowSeverity|4|Gerät wird vom mobilen Threat Defense Partner geringe Bedrohung angesehen.|
+|mediumSeverity|5|Gerät wird vom mobilen Threat Defense Partner mittlere Bedrohung angesehen.|
+|highSeverity|6|Gerät wird vom mobilen Threat Defense Partner hohe Bedrohung angesehen.|
+|nicht reagiert|7|Gerät gilt vom mobilen Threat Defense Partner nicht reagiert. Die Integrität Gerät ist nicht bekannt.|
+|gefährdet|8|Gerät wird durch die Abwehr von Partner gefährdet betrachtet. Dies bedeutet, dass das Gerät verfügt über ein aktives Bedrohung oder Risiko, das vom Endbenutzer auf einfache Weise behoben werden, ist nicht möglich, und der Benutzer sollte ihre IT-Administrator wenden|
+|falsch konfiguriert|9|Gerät ist falsch konfiguriert, mit dem Partner Abwehr von berücksichtigt. Dies bedeutet, dass das Gerät fehlt eine erforderliche Profil oder Konfiguration für den Threat Defense Partner ordnungsgemäß funktioniert und ist somit Bedrohung oder Analyse kann nicht für die Durchführung.|
 
 
 

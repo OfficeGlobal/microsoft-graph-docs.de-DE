@@ -8,7 +8,8 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
-|Delegiert (Geschäfts-, Schul- oder Unikonto)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegiert (Geschäfts-, Schul- oder Unikonto)||
+| &nbsp;&nbsp; **Onboarding** und <br> &nbsp;&nbsp; **Gerätemanagement**| DeviceManagementManagedDevices.ReadWrite.All|
 |Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 
@@ -25,8 +26,8 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceCategory](../resources/intune_shared_devicecategory.md) an.
@@ -37,8 +38,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |:---|:---|:---|
 |id|Zeichenfolge|Eindeutiger Bezeichner für die Gerätekategorie. Schreibgeschützt.|
 |**Onboarding**|
-|displayName|Zeichenfolge|Der Anzeigename für die Gerätekategorie.|
-|description|Zeichenfolge|Optionale Beschreibung für die Gerätekategorie.|
+|displayName|String|Der Anzeigename für die Gerätekategorie.|
+|description|String|Optionale Beschreibung für die Gerätekategorie.|
 
 
 
@@ -62,7 +63,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ```
 
 ### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Response-Objekt ist möglicherweise aus Platzgründen abgeschnitten. Response-Eigenschaften variieren entsprechend Kontext.
+Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Response-Eigenschaften variiert entsprechend Kontext.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

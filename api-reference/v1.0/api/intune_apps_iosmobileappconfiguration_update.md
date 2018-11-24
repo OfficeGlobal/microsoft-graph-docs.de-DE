@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md) an.
@@ -34,14 +34,14 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
+|id|String|Schlüssel der Entität. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|String-Sammlung|Die zugeordnete App. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|Beschreibung|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
+|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
+|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |version|Int32|Version der Gerätekonfiguration. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|encodedSettingXml|Binär|Base64-binärcodierte MDM-App-Konfiguration|
+|encodedSettingXml|Binary|Base64-binärcodierte MDM-App-Konfiguration|
 |Einstellungen|[appConfigurationSettingItem](../resources/intune_apps_appconfigurationsettingitem.md)-Sammlung|App-Konfigurationseinstellungselemente|
 
 
@@ -58,11 +58,11 @@ Content-type: application/json
 Content-length: 534
 
 {
+  "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
   "targetedMobileApps": [
     "Targeted Mobile Apps value"
   ],
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
   "encodedSettingXml": "ZW5jb2RlZFNldHRpbmdYbWw=",
@@ -106,11 +106,6 @@ Content-Length: 706
   ]
 }
 ```
-
-
-
-
-
 
 
 

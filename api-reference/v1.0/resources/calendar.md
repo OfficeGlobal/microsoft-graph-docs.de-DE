@@ -2,11 +2,11 @@
 
 Ein Kalender, der ein Container für Ereignisse ist. Dies kann ein Kalender für einen [Benutzer](user.md) oder der Standardkalender einer Office 365-[Gruppe](group.md) sein.
 
-> **Hinweis:** Es gibt einige kleinere Unterschiede in der Art und Weise, wie Sie mit den Benutzerkalendern und Gruppenkalendern interagieren können:
+> **Hinweis:** Es gibt einige kleinere Unterschiede bei der Verarbeitung von Benutzerkalender und Gruppenkalender interagieren können:
 
- - In einer [CalendarGroup](calendargroup.md) können Sie nur Benutzerkalender organisieren.
- - Outlook akzeptiert automatisch alle Besprechungsanfragen für Gruppen. Sie können Besprechungsanfragen für Benutzerkalender nur [annehmen](../api/event_accept.md), [mit Vorbehalt annehmen](../api/event_tentativelyaccept.md)oder [ablehnen](../api/event_decline.md).
-  - Outlook unterstützt keine Erinnerungen für Gruppen-Ereignisse. Sie können nur bei Benutzerkalendern [erneut erinnern](../api/event_snoozereminder.md) oder eine [Erinnerung](../api/event_dismissreminder.md) [schließen](reminder.md).
+ - Sie können nur Benutzerkalender in einer [CalendarGroup](calendargroup.md)organisieren.
+ - Outlook akzeptiert automatisch alle Besprechungsanfragen für Gruppen. Sie können für Benutzerkalender nur [annehmen](../api/event_accept.md), [mit Vorbehalt annehmen](../api/event_tentativelyaccept.md)oder [Ablehnen](../api/event_decline.md) von Besprechungsanfragen.
+  - Outlook unterstützt keine Erinnerungen für Ereignisse gruppieren. Sie können für Benutzerkalender nur [erneut erinnern](../api/event_snoozereminder.md) oder eine [Erinnerung](reminder.md) [zu schließen](../api/event_dismissreminder.md) .
 
 ## <a name="methods"></a>Methoden
 
@@ -19,7 +19,8 @@ Ein Kalender, der ein Container für Ereignisse ist. Dies kann ein Kalender für
 |[Löschen](../api/calendar_delete.md) | Keine |Dient zum Löschen des Kalenderobjekts aktualisieren. |
 |[calendarView auflisten](../api/calendar_list_calendarview.md) |[Ereignissammlung](event.md)| Dient zum Abrufen der Vorkommen, Ausnahmen und einzelnen Instanzen von Ereignissen in einer Kalenderansicht, die durch eine Zeitbereich definiert werden, aus dem primären Kalender `(../me/calendarview)` des Benutzers oder aus einem angegebenen Kalender.|
 |[Ereignisse auflisten](../api/calendar_list_events.md) |[Ereignissammlung](event.md)| Dient zum Abrufen einer Liste von Ereignissen in einem Kalender.  Die Liste enthält einzelne Instanzen von Besprechungen und Serienmaster.|
-|[Ereignis erstellen](../api/calendar_post_events.md) |[event](event.md)| Dient zum Erstellen eines neuen Ereignisses im Standardkalender oder im angegebenen Kalender.|
+|[Ereignis erstellen](../api/calendar_post_events.md) |[Ereignis](event.md)| Erstellen Sie ein neues Ereignis in die standardmäßigen oder den angegebenen Kalender.|
+|[findMeetingTimes](../api/user_findmeetingtimes.md) |[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) |Schlagen Sie vor Besprechungszeiten und Speicherorte basierend auf der Organisator und Teilnehmer Verfügbarkeit und Zeit oder Ort Einschränkungen. |
 |[Einwertige erweiterte Eigenschaft erstellen](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[Kalender](calendar.md)  |Dient zum Erstellen einer oder mehrerer erweiterter einwertiger Eigenschaften in einem neuen oder vorhandenen Kalender.   |
 |[Kalender mit einwertiger erweiterter Eigenschaft abrufen](../api/singlevaluelegacyextendedproperty_get.md)  | [Kalender](calendar.md) | Ruft mithilfe von `$expand` oder `$filter` Kalender mit einer einwertigen erweiterten Eigenschaft ab. |
 |[Mehrwertige erweiterte Eigenschaft erstellen](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [Kalender](calendar.md) | Dient zum Erstellen einer oder mehrerer erweiterter mehrwertiger Eigenschaften in einem neuen oder vorhandenen Kalender.  |
@@ -30,9 +31,9 @@ Ein Kalender, der ein Container für Ereignisse ist. Dies kann ein Kalender für
 |:---------------|:--------|:----------|
 |canEdit |Boolescher Wert |„True“, wenn der Benutzer in den Kalender schreiben kann, andernfalls „false“. Diese Eigenschaft ist für den Benutzer, der den Kalender erstellt hat, „true“. Diese Eigenschaft ist auch für einen Benutzer „true“, für den ein Kalender freigegeben wurde und der Schreibzugriff hat. |
 |canShare |Boolescher Wert |„True“, wenn der Benutzer die Berechtigung zum Freigeben des Kalenders hat, andernfalls „false“. Nur der Benutzer, der den Kalender erstellt hat, kann ihn freigeben. |
-|canViewPrivateItems |Boolescher Wert |„True“, wenn der Benutzer Elemente im Kalender lesen kann, die als „privat“ markiert wurden, andernfalls „false“. |
+|canViewPrivateItems |Boolean |„True“, wenn der Benutzer Elemente im Kalender lesen kann, die als „privat“ markiert wurden, andernfalls „false“. |
 |changeKey|Zeichenfolge|Gibt die Version des Kalenderobjekts an. Jedes Mal, wenn der Kalender geändert wird, wird auch „changeKey“ geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen. Schreibgeschützt.|
-|color|CalendarColor|Gibt das Farbdesign an, um den Kalender von anderen Kalendern in einer Benutzeroberfläche zu unterscheiden. Die Eigenschaftswerte sind: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
+|color|calendarColor|Gibt das Farbdesign an, um den Kalender von anderen Kalendern in einer Benutzeroberfläche zu unterscheiden. Die Eigenschaftswerte sind: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |id|Zeichenfolge|Eindeutiger Bezeichner für die Gruppe. Schreibgeschützt.|
 |name|Zeichenfolge|Der Kalendername.|
 |owner |[emailAddress](emailaddress.md) | Wenn festgelegt, stellt dies den Benutzer dar, der den Kalender erstellt oder hinzugefügt hat. Für einen Kalender, den der Benutzer erstellt oder hinzugefügt hat, wird die Eigenschaft **owner** auf den Benutzer festgelegt. Für einen Kalender, der für den Benutzer freigegeben wurde, wird die Eigenschaft **owner** auf die Person festgelegt, die den Kalender für den Benutzer freigegeben hat. |
@@ -41,7 +42,7 @@ Ein Kalender, der ein Container für Ereignisse ist. Dies kann ein Kalender für
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |calendarView|[Ereignissammlung](event.md)|Die Kalenderansicht für den Kalender. Navigationseigenschaft. Schreibgeschützt.|
-|Ereignisse|[Ereignissammlung](event.md)|Die Ereignisse im Kalender. Navigationseigenschaft. Schreibgeschützt.|
+|events|[Ereignissammlung](event.md)|Die Ereignisse im Kalender. Navigationseigenschaft. Schreibgeschützt.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter mehrwertiger Eigenschaften, die für den Kalender definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter einwertiger Eigenschaften, die für den Kalender definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
 

@@ -17,12 +17,12 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 GET /education/schools/{id}/classes
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.io/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
-| Autorisierung  | Bearer {token}. Erforderlich.  |
+| Authorization  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

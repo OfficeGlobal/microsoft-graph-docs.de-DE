@@ -1,47 +1,47 @@
-# <a name="use-the-activity-feed-rest-api"></a>Verwenden Sie die Aktivitätsfeed-REST-API
+# <a name="use-the-activity-feed-rest-api"></a>Verwenden Sie den Aktivitätsfeed REST-API
 
-Sie können den Aktivitätsfeed-API in Microsoft Graph benutzen, um die Geräte und Plattformen übergreifenden Aktivitäten eines Benutzers fortzusetzen. Die Aktivitätsfeed-API-Anforderungen werden im Auftrag eines Benutzers über [delegierte Berechtigungen](../../../concepts/permissions_reference.md#delegated-permissions-application-permissions-and-effective-permissions) und die [Benutzeraktivitätsberechtigung](../../../concepts/permissions_reference.md) ausgeführt, die entweder mit persönlichen oder beruflichen und schulischen Konten verwendet werden können. 
+Der Aktivitätsfeed-API in Microsoft Graph können Sie eines Benutzers Actiity Geräte-und plattformübergreifend fortsetzen. Aktivität feed API-Anfragen werden ausgeführt, im Auftrag eines Benutzers über [Berechtigungen delegiert](../../../concepts/permissions_reference.md#delegated-permissions-application-permissions-and-effective-permissions) und die [Benutzerberechtigungen für die Aktivität](../../../concepts/permissions_reference.md), die mit entweder persönliche oder Arbeit und Schule Konten verwendet werden können. 
 
-Die Benutzeraktivitäten werden von der Ressource [Aktivität](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_activity) dargestellt und sind in einem zeitbasierten Feed, der durch die Sammlung mich/Aktivitäten dargestellt wird, organisiert. 
+Die Benutzeraktivitäten werden von der Ressource [Aktivität](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_activity) dargestellt und sind organisiert ein Feed zeitbasierte dargestellt durch die Auflistung mich / Aktivitäten. 
 <!-- Add missing content.
 Each activity represents a unique... 
 -->
-## <a name="what-makes-a-great-user-activity"></a>Was macht eine großartige Benutzer-Aktivität aus?
+## <a name="what-makes-a-great-user-activity"></a>Was macht eine hervorragende Benutzeraktivität?
 
-Bei Nutzeraktivitäten werden nicht nur Apps gestartet, sondern auch Deep Links zu bestimmten Inhalten in Ihrer App. Die Benutzeraktivitäten, die Sie erstellen, können nicht nur in Ihrer eigenen App verwendet werden, sondern werden auch in der Cortana und Windows-Timeline angezeigt. Dies führt zu mehr App-Reengagements und erleichtert es Ihren Nutzern, Ihre App weiterhin auf mehreren Geräten zu verwenden.  
+Die Benutzeraktivitäten nicht starten Sie apps – sie deep-Links in spezifischem Inhalt Ihrer App sind. Die Benutzeraktivitäten, die Sie erstellen können nicht nur in Ihrer eigenen app verwendet werden, aber auch im Cortana und Windows-Zeitachse angezeigt – gesteuerter Weitere app-Reengagement und erleichtert es für Ihre Benutzer weiterhin Ihre app für mehrere Geräte verwenden.  
 
 ### <a name="what-should-become-an-activity"></a>Was sollte eine Aktivität werden? 
 
-Da jede App verschieden ist, liegt es an jedem App-Entwickler, die beste Möglichkeit zum Zuordnen von Aktionen innerhalb der Anwendung zu Benutzeraktivitäten zu verstehen. Beispielsweise können Spiele für jede Kampagne eine Aktivität erstellen, während die Erstellung von Dokumenten-Apps möglicherweise eine Aktivität für jedes einzigartige Dokument erstellen, und Branchen-Apps können für jeden Workflow eine Aktivität erstellen. 
+Da jeder app unterscheidet, ist es zu verstehen, die beste Möglichkeit zum Zuordnen von Aktionen innerhalb der Anwendung auf die Benutzeraktivitäten jeder app-Entwickler. Beispielsweise Spiele möglicherweise eine Aktivität für jede Kampagne erstellen, Erstellen von apps Dokument möglicherweise eine Aktivität für jedes Dokument erstellen und Line-of-Business-apps möglicherweise eine Aktivität für jeden Workflow erstellen. 
 
-Wenden Sie die folgenden Richtlinien an, wie Sie in Ihren App-Aktivitäten definiert sind:
+Wenden Sie die folgenden Richtlinien, wie Sie in Ihrer app Activitites definieren:
 
-**DO:** Tragen Sie eine einzelne Aktivität für eine Gruppe von verwandten Benutzeraktionen ein. Wenn Ihre Anwendung bei einer Sequenz von verwandten Inhalten verwendet wird, ist es wahrscheinlich sinnvoll, eine einzelne Aktivität für die gesamte Sitzung aufzuzeichnen.  
+**Aktionen aus:** Tragen Sie eine einzelne Aktivität für eine Gruppe von verwandten Benutzeraktionen. Wenn Ihre Anwendung bei einer Sequenz von verwandten Inhalten verwendet wird, ist es wahrscheinlich sinnvoll, um eine einzelne Aktivität für die gesamte Sitzung aufzuzeichnen.  
 
-*Wiedergabeliste Szenarien:* Dies ist besonders relevant für Musik-Wiedergabelisten oder TV-Programme – eine Aktivität einzelner Benutzer kann aktualisiert werden, um Ihren Fortschritt anzuzeigen. In diesem Fall werden Sie eine einzelne Benutzeraktivität mit mehreren [Punkten aus Ereignisprotokollen](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_historyitem) erhalten, die über mehrere Tage oder Wochen hinweg Zeiträume des Engagements darstellen.  
+*Wiedergabeliste Szenarien:* Dies ist besonders relevant für Wiedergabelisten oder TV-Programmen – eine Aktivität einzelner Benutzer kann aktualisiert werden, um Ihren Fortschritt anzuzeigen. In diesem Fall müssen Sie eine einzelne Benutzeraktivität mit mehreren [Verlaufselemente](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_historyitem) , die über mehrere Tage oder Wochen hinweg Zeiträume, in denen Engagements darstellt.  
 
-**DO:** Speichern von Benutzerdaten in die Cloud. Wenn Sie geräteübergreifende Aktivitäten unterstützen möchten, müssen Sie sicherstellen, dass der für die erneute Aktivierung dieser Aktivität erforderliche Inhalt an einem Cloud-Speicherort gespeichert wird. Wenn Sie beispielsweise eine Aktivität jedes Mal veröffentlichen, wenn ein Benutzer ein Dokument bearbeitet, sollte das Dokument in der Cloud gespeichert werden und nicht lokal auf dem Gerät des Benutzers, um geräteübergreifendes Reengagement zu ermöglichen.  
+**Aktionen aus:** Speichern von Benutzerdaten in die Cloud. Wenn Sie Aktivitäten Cross-Gerät unterstützen möchten, müssen Sie sicherstellen, dass der Inhalt erforderlich, um diese Aktivität reengage an einen Speicherort für die Cloud gespeichert ist. Angenommen, wenn Sie eine Aktivität eines Dokuments Bearbeitung jedes Mal veröffentlichen, sollte das Dokument in der Cloud im Gegensatz zur lokal auf dem Gerät des Benutzers gespeichert werden, um zwischen Geräten Reengagement zu aktivieren.  
 
-**TUN SIE NICHT:** Eine Benutzeraktivität für Aktionen erstellen, die Benutzer nicht benötigen, um zukünftig fortzusetzen. Wenn Ihre Anwendung zum Ausführen einfacher, einmaliger Vorgänge verwendet wird, deren Status für die zukünftige Verfolgung nicht beibehalten wird, brauchen Sie wahrscheinlich keine Benutzeraktivität zu schreiben. 
+**Nicht:** Erstellen Sie eine Benutzeraktivität für Aktionen, die Benutzer nicht benötigen, um zukünftig fortzusetzen. Wenn Ihre Anwendung verwendet wird, zum einfachen, einmaligen Vorgänge ausführen, die Status für Sie in der Zukunft verfolgen nicht beibehalten, müssen wahrscheinlich nicht Sie eine Benutzeraktivität zu schreiben. 
 
-Um Klarheit zu schaffen: Obwohl die Benutzeraktivitäten in der Windows-Timeline angezeigt werden, dient dies nicht als Werkzeug zur Versionsverwaltung – das Auswählen einer dokumentbasierten Aktivität sollte immer die neueste Version dieses Dokuments (einschließlich Änderungen, die von einem anderen Benutzer vorgenommen wurden) anzeigen.
+Um klar, obwohl die Benutzeraktivitäten in Windows Zeitachse angezeigt werden, Dies dient nicht als Tool Versioning – auswählen eine Aktivität dokumentbasierten sollte immer die neueste Version des Dokuments (einschließlich Änderungen, die von einem anderen Benutzer vorgenommen wurden.) anzeigen
 
-**DO NOT:** Eine Benutzeraktivität für Aktionen erstellen, die von *anderen Benutzern abgeschlossen wurde*. Wenn jemand dem Benutzer eine Nachricht sendet oder den Benutzer innerhalb Ihrer App @erwähnt, sollte keine neue Aktivität geschrieben werden. Diese Interaktionen erfolgen besser durch das Auftauchen von Benachrichtigungen.  
+**Nicht:** Erstellen Sie eine Benutzeraktivität für Aktionen, die von *anderen Benutzern*abgeschlossen. Wenn Ihnen jemand eine Nachricht oder @mentions der Benutzer in der app dem Benutzer sendet, sollte eine neue Aktivität nicht geschrieben werden. Diese Interaktionen sind besser versorgt, indem persönliche angezeigt werden Benachrichtigungen.  
 
-*Szenarien der Zusammenarbeit:* Wenn mehrere Personen an der gleichen Aktivität (beispielsweise an einem Word-Dokument) arbeiten, wird es Fälle geben, in denen ein anderer Benutzer Änderungen an dem Dokument vorgenommen hat, nachdem Sie es zuletzt bearbeitet haben. In diesem Fall möchten App-Entwickler die visuellen Elemente in der Aktivität aktualisieren, um die Änderungen an dem Dokument zu reflektieren. Dazu aktualisiert die App möglicherweise die vorhandene Aktivität, ohne ein neues Verlaufselement zu erstellen. 
+*Szenarien der Zusammenarbeit:* Wenn mehrere Personen für die gleiche Aktivität (beispielsweise ein Word-Dokument) arbeiten, ist es, Fällen, wenn ein anderer Benutzer Änderungen an das Dokument vorgenommen hat, nachdem Sie zuletzt bearbeitet. In diesem Fall sollten app-Entwickler aktualisieren die visuellen Elemente in der Aktivität entsprechend dem Dokument geändert. Zu diesem Zweck möglicherweise die app die vorhandene Aktivität aktualisieren, ohne ein neues Historienelement erstellen. 
 
->**Hinweis:** Wenn Sie Aktivitäten für eine Webanwendung veröffentlichen, ist es wichtig, sowohl eine `activationURL` einzubeziehen als auch eine `fallbackURL` für jede Ihrer Aktivitäten. Die Aktivitäten bringen den Benutzer zu Ihrer App zurück, wie es bei Microsoft-Erfahrungen wie Windows-Timeline erwartet wird. 
+>**Hinweis:** Wenn Sie Aktivitäten für eine Webanwendung zu veröffentlichen, es ist wichtig, die beide enthalten eine `activationURL` und eine `fallbackURL` für jede Ihrer Aktivitäten. Die Aktivitäten werden den Benutzer wieder in Ihrer app gestartet erwartungsgemäß aus Microsoft Erfahrungen wie Windows Zeitachse. 
 
 ## <a name="app-interaction-patterns-and-user-activities"></a>App-Interaktionsmuster und die Benutzeraktivitäten 
-Die Benutzeraktivitäten, die Sie erstellen, variieren basierend auf dem Interaktionsmuster Ihrer App. Während jede App unterschiedlich ist, werden die meisten zu einem der folgenden Interaktionsmuster gehören: 
+Die Benutzeraktivitäten, die Sie erstellen variiert basierend auf der Interaktionsmuster Ihrer App. Während jeder app unterscheidet, werden die meisten in eine der folgenden Interaktionsmuster gehören: 
 
-* **Dokumentbasierte Apps** – Erstellen einer Aktivität pro Dokument mit mindestens einem oder mehreren Ereignisprotokollen, die Zeiträume der Nutzung anzeigen. Es ist wichtig, Ihre Aktivitäten-Karte zu aktualisieren, da Änderungen an dem Dokument erfolgten. 
-* **Medien-Wiedergabe Apps** – Erstellen einer Aktivität pro logischer Gruppierung von Inhalten wie eine Wiedergabeliste, ein Programm oder eigenständige Inhalte. 
-* **Spiele** – Erstellen Sie eine Aktivität für jedes gespeicherte Spiel oder jede Welt. Wenn Ihr Spiel nur eine einzelne Sequenz von Ebenen unterstützt, können Sie die gleiche Aktivität im Laufe der Zeit schreiben, obwohl Sie vielleicht Ihre Karte zum Anzeigen Ihres aktuellen Status oder Ihrer Erfolge aktualisieren möchten. 
-* **Utility-Apps** – <g id = "3521"> - Wenn in Ihrer App nichts vorhanden ist, das die Nutzer fortsetzen möchten, sollten Sie keine Aktivitäten veröffentlichen Ein gutes Beispiel ist eine einfache App für einen Einzelzweck wie der Taschenrechner. 
-* **Branchen-Apps** – Viele Apps gibt es zum Verwalten von einfachen Aufgaben oder Workflows. Erstellen Sie eine Aktivität für jeden separaten Workflow über Ihre App. Beispielsweise wäre jede Spesenabrechnung eine separate-Aktivität, da Sie möglicherweise auf diese Aktivität klicken werden, um festzustellen, ob sie genehmigt wurde.
+* **Dokumentbasierter apps** – Erstellen einer Aktivität pro Dokument mit mindestens einen Verlaufsdatensätze spiegeln Zeiträume, in denen verwenden. Es ist wichtig, die Aktivität Karte aktualisieren, wie das Dokument geändert wird. 
+* **Media Wiedergabe apps** – Erstellen einer Aktivität pro logische Gruppierung von Inhalt wie eine Wiedergabeliste, Programm oder eigenständigen Inhalte. 
+* **Spiele** – erstellen Sie eine Aktivität für jeden gespeicherte Spiel oder der Praxis. Wenn das Spiel nur eine einzelne Sequenz von Ebenen unterstützt, können Sie die gleiche Aktivität im Laufe der Zeit schreiben, obwohl sollten Sie die Visitenkarte zum Anzeigen Ihrer aktuellen Status oder Erfolge zu aktualisieren. 
+* **Dienstprogramm apps** – liegt nothing innerhalb Ihrer app, die Benutzer fortsetzen möchten, sollten Sie Aktivitäten nicht veröffentlichen. Ein gutes Beispiel ist eine einfache einfachen Zweck erfüllende app wie Rechner. 
+* **Branchen apps** – viele apps zum Verwalten von Workflows oder einfache Aufgaben vorhanden. Erstellen Sie eine Aktivität für jeden separate Workflow auf die Sie über Ihre app. Beispielsweise wäre jede Spesenabrechnung eine separate-Aktivität, da Sie möglicherweise klicken Sie auf diese Aktivität, um festzustellen, ob sie genehmigt wurde.
 
-*Einige komplexe Apps enthalten mehrere Interaktionsmuster. Unter Umständen möchten Sie verschiedenen Mustern zur Erstellung von Benutzeraktivitäten für verschiedene Szenarien folgen, die von Ihrer App behandelt werden.*
+*Einige komplexe apps enthalten mehrere Interaktionsmuster. Möglicherweise möchten Sie führen die anderen Benutzer Aktivität Erstellung Mustern für die verschiedenen Szenarien, die von Ihrer app behandelt.*
 
 <!-- Add content or remove H2.
 ## Common use cases 
@@ -49,10 +49,11 @@ Die Benutzeraktivitäten, die Sie erstellen, variieren basierend auf dem Interak
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Sehen Sie sich die [Aktivitäten-Ressource](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_activity) an und definieren Sie Ihre App-Aktivitäten, damit Sie Benutzern helfen, wichtige Aufgaben fortsetzen zu können.
-- Erkunden Sie die [adaptiven Karten-Beispiele,](http://adaptivecards.io/samples/) Beispiele für Ideen, um Ihre Aktivitäten **hervorstechen zu lassen** .  
-- Probieren Sie die API im [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) aus.
+- Finden Sie unter die [Aktivität Ressource](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_activity) , und definieren Sie Ihre app Aktivitäten, mit denen Benutzer wichtige Aufgaben fortsetzen.
+- Machen Sie sich die [adaptive Karte Beispiele](https://adaptivecards.io/samples/) Beispiele für Ideen, um Ihre Aktivitäten **pop**stellen.  
+- Probieren Sie die API im [Graph-Tester](https://developer.microsoft.com/graph/graph-explorer) aus.
 
-**Sie möchten noch mehr erfahren?** 
-- Finden Sie unter [wie Microsoft Erfahrungen Aktivitäten verwendet](https://channel9.msdn.com/events/Build/2017/B8108).
-- Informieren Sie sich über [die Aktivitätsfeed API und fahren Sie fort, wo ich aufgehört habe](https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011).
+**Weitere Ideen suchen?** 
+
+- Finden Sie unter [wie Microsoft guter Aktivitäten verwenden](https://channel9.msdn.com/events/Build/2017/B8108).
+- Informationen Sie über [die Aktivität feed API und wählen Sie aus, wo unterbrochen](https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011).

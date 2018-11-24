@@ -15,9 +15,9 @@ Die Rollendefinitionsressource. Die Rollendefinition bildet die Grundlage für r
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert.|
-|displayName|Zeichenfolge|Anzeigename der Rollendefinition|
-|description|Zeichenfolge|Beschreibung der Rollendefinition|
+|id|String|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert.|
+|displayName|String|Anzeigename der Rollendefinition|
+|description|String|Beschreibung der Rollendefinition|
 |rolePermissions|Sammlung von Objekten des Typs [rolePermission](../resources/intune_rbac_rolepermission.md)|Liste der Rollenberechtigungen, die dieser Rolle erteilt wurden. Diese müssen mit dem Wert für „actionName“ übereinstimmen, der als Teil von „rolePermission“ festgelegt wurde.|
 |isBuiltIn|Boolean|Rollentyp. Ist auf „True“ gesetzt, wenn es sich um eine integrierte Rolle handelt, und auf „False“, wenn es sich um eine benutzerdefinierte Rollendefinition handelt.|
 
@@ -27,13 +27,13 @@ Die Rollendefinitionsressource. Die Rollendefinition bildet die Grundlage für r
 |roleAssignments|Sammlung von Objekten des Typs [roleAssignment](../resources/intune_rbac_roleassignment.md)|Liste der Rollenzuweisungen für die Rollendefinition|
 
 ## <a name="json-representation"></a>JSON-Darstellung
-Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+Unten sehen Sie eine JSON-Darstellung der Ressource.
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.roleDefinition"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.roleDefinition",
@@ -59,11 +59,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "isBuiltIn": true
 }
 ```
-
-
-
-
-
 
 
 

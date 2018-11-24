@@ -6,12 +6,12 @@ Um erweiterte Ereignisinstanzen abzurufen, können Sie [die Kalenderansicht abru
 
 Zurzeit gibt dieser Vorgang Ereignistext nur im HTML-Format zurück.
 
-Es gibt zwei Szenarien, in denen eine App Ereignisse im Kalender eines anderen Benutzers abrufen kann:
+Es gibt zwei Szenarien, in dem eine app Ereignisse im Kalender des Benutzers abzurufen:
 
-* Wenn die App über Anwendungsberechtigungen verfügt, oder
-* Wenn die App über die entsprechenden delegierten [Berechtigungen](#permissions) von einem Benutzer verfügt und ein anderer Benutzer einen Kalender für diesen Benutzer freigegeben hat oder delegierten Zugriff auf diesen Benutzer gewährt hat. Siehe [Details und ein Beispiel](../../../concepts/outlook-get-shared-events-calendars.md).
+* Wenn die app Anwendungsberechtigungen verfügt oder,
+* Wenn die app verfügt die entsprechenden [Berechtigungen](#permissions) delegiert, von einem Benutzer und einen anderen Benutzer der Benutzer einen Kalender freigegeben hat, oder delegierten Zugriff, die diesem Benutzer zugewiesen hat. Finden Sie [ausführliche Informationen und ein Beispiel](../../../concepts/outlook-get-shared-events-calendars.md).
 
-### <a name="support-various-time-zones"></a>Unterstützung verschiedener Zeitzonen
+### <a name="support-various-time-zones"></a>Unterstützen verschiedener Zeitzonen
 
 Für alle GET-Vorgänge, die Ereignisse zurückgeben, können Sie den `Prefer: outlook.timezone`-Header zum Angeben der Zeitzone für die Anfangs- und Endzeit des Ereignisses in der Antwort verwenden. 
 
@@ -52,12 +52,12 @@ GET /me/calendargroups/{id}/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung |
 |:---------------|:--------|:--------|
-| Autorisierung  | Zeichenfolge | Bearer {token}. Erforderlich.  |
-| Bevorzugen: outlook.timezone  | string | Verwenden Sie dies, um die Zeitzone für die Anfangs- und Endzeiten in der Antwort anzugeben. Wenn nicht angegeben, werden diese Zeitwerte in UTC zurückgegeben. Optional. |
+| Authorization  | string | Bearer {token}. Erforderlich.  |
+| Prefer: outlook.timezone  | string | Verwenden Sie dies, um die Zeitzone für die Anfangs- und Endzeiten in der Antwort anzugeben. Wenn nicht angegeben, werden diese Zeitwerte in UTC zurückgegeben. Optional. |
 | Besser: outlook.body-content-type | string | Das Format, in der die **body**-Eigenschaft zurückgegeben werden soll. Werte können „Text“ oder „html“ sein. Als Bestätigung wird eine `Preference-Applied`-Kopfzeile zurückgegeben, wenn diese `Prefer`-Kopfzeile angegeben ist. Wenn die Kopfzeile nicht angegeben ist, wird die **body**-Eigenschaft im HTML-Format zurückgegeben. Optional. |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -70,7 +70,7 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung. Es gibt Folgendes an:
 
-- Einen `Prefer: outlook.timezone`-Header zum Abrufen von Datums- und Uhrzeitwerten in Pacific Normalzeit. 
+- Einen `Prefer: outlook.timezone`-Header zum Abrufen von Datums- und Uhrzeitwerten in 	Pacific Normalzeit. 
 - Einen `$select`-Abfrageparameter zum Zurückgeben bestimmter Eigenschaften. Ohne `$select`-Parameter werden alle Ereigniseigenschaften zurückgegeben.
 
 <!-- {

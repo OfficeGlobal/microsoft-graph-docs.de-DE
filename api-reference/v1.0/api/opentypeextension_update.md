@@ -9,15 +9,19 @@ Die Daten in einer Erweiterung können Grundtypen oder Arrays von Grundtypen sei
 
 ## <a name="permissions"></a>Berechtigungen
 
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich (je nach dem Typ der Ressource, in der die Erweiterung erstellt wurde): Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
+Je nach der Ressource, der die Erweiterung in erstellt wurde und die Berechtigung Typ (delegierte oder-Anwendung) angefordert, die Berechtigung, die in der folgenden Tabelle angegebenen mit den geringsten ist erforderlich, um diese API aufzurufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](../../../concepts/permissions_reference.md).
 
-|**Unterstützte Ressource**|**Berechtigung**|**Unterstützte Ressource**|**Berechtigung** |
+| Unterstützte Ressource | Delegiert (Geschäfts-, Schul- oder Unikonto) | Delegiert (persönliches Microsoft-Konto) | Anwendung |
 |:-----|:-----|:-----|:-----|
-| [Gerät](../resources/device.md) | Device.ReadWrite.All | [Ereignis](../resources/event.md) | Calendars.ReadWrite |
-| [Gruppe](../resources/group.md) | Group.ReadWrite.All | [Gruppenereignis](../resources/event.md) | Group.ReadWrite.All |
-| [Gruppenbeitrag](../resources/post.md) | Group.ReadWrite.All | [Nachricht](../resources/message.md) | Mail.ReadWrite |
-| [Organisation](../resources/organization.md) | Directory.AccessAsUser.All | [persönlicher Kontakt](../resources/contact.md) | Contacts.ReadWrite |
-| [Benutzer](../resources/user.md) | Directory.AccessAsUser.All | | |
+| [Gerät](../resources/device.md) | Directory.AccessAsUser.All | Nicht unterstützt | Device.ReadWrite.All |
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [group](../resources/group.md) | Group.ReadWrite.All | Nicht unterstützt | Group.ReadWrite.All |
+| [group event](../resources/event.md) | Group.ReadWrite.All | Nicht unterstützt | Nicht unterstützt |
+| [group post](../resources/post.md) | Group.ReadWrite.All | Nicht unterstützt | Group.ReadWrite.All |
+| [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
+| [organization](../resources/organization.md) | Directory.AccessAsUser.All | Nicht unterstützt | Nicht unterstützt |
+| [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [user](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 In der Anforderung geben Sie die Ressourceninstanz an, spezifizieren in der Navigationseigenschaft **extensions** dieser Instanz die Erweiterung und wenden anschließend den Befehl `PATCH` auf diese Erweiterungsinstanz an.
@@ -43,14 +47,14 @@ Im Abschnitt [Anforderungstext](#request-body) wird beschrieben, wie Sie benutze
 ## <a name="path-parameters"></a>Pfadparameter
 |Parameter|Typ|Beschreibung|
 |:-----|:-----|:-----|
-|id|Zeichenfolge|Ein eindeutiger Bezeichner für eine Instanz der entsprechenden Sammlung. Erforderlich.|
-|extensionId|Zeichenfolge|Dies kann ein Erweiterungsname sein. Der Erweiterungsname ist ein eindeutiger Textbezeichner einer Erweiterung oder ein vollqualifizierter Name, der den Erweiterungstyp und den eindeutigen Textbezeichner verkettet. Der vollqualifizierte Name wird beim Erstellen der Erweiterung in der `id`-Eigenschaft zurückgegeben. Erforderlich.|
+|id|string|Ein eindeutiger Bezeichner für eine Instanz der entsprechenden Sammlung. Erforderlich. |
+|extensionId|string|Dies kann ein Erweiterungsname sein. Der Erweiterungsname ist ein eindeutiger Textbezeichner einer Erweiterung oder ein vollqualifizierter Name, der den Erweiterungstyp und den eindeutigen Textbezeichner verkettet. Der vollqualifizierte Name wird beim Erstellen der Erweiterung in der `id`-Eigenschaft zurückgegeben. Erforderlich. |
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Wert |
 |:---------------|:----------|
-| Autorisierung | Bearer {token}. Erforderlich. |
-| Inhaltstyp | application/json |
+| Authorization | Bearer {token}. Erforderlich. |
+| Content-Type | application/json |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -59,7 +63,7 @@ Stellen Sie den JSON-Text eines [openTypeExtension](../resources/openTypeExtensi
 | Name       | Wert |
 |:---------------|:----------|
 | @odata.type | microsoft.graph.openTypeExtension |
-| extensionName | %unique_string % |
+| extensionName | %unique_string% |
 
 ## <a name="response"></a>Antwort
 
@@ -103,7 +107,7 @@ PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZ
 Sie können die Beispielanforderung und den folgenden Anforderungstext verwenden, um die oben genannte Erweiterung auf folgende Weise zu aktualisieren:
 - Durch Ändern des `companyName` von `Wingtip Toys` zu `Wingtip Toys (USA)`
 - Durch Ändern des `dealValue` von `500050` zu `500100`
-- Durch Hinzufügen neuer Daten als die benutzerdefinierte `updated`-Eigenschaft `updated`
+- Durch Hinzufügen neuer Daten als die benutzerdefinierte `updated`-Eigenschaft
 
 <!-- { "blockType": "ignored" } -->
 ```http

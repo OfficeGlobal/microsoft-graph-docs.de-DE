@@ -24,8 +24,8 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „termsAndConditionsAssignment“ an.
@@ -34,8 +34,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Eindeutiger Bezeichner der Entität|
-|Ziel|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Zuweisungsziel, dem die Geschäftsbedingungen-Richtlinie zugewiesen ist|
+|id|String|Eindeutiger Bezeichner der Entität|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Zuweisungsziel, dem die Geschäftsbedingungen-Richtlinie zugewiesen ist|
 
 
 
@@ -73,11 +73,6 @@ Content-Length: 217
   }
 }
 ```
-
-
-
-
-
 
 
 

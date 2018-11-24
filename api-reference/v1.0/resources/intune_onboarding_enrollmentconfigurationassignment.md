@@ -15,19 +15,19 @@ Noch nicht dokumentiert.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Noch nicht dokumentiert.|
-|Ziel|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Noch nicht dokumentiert.|
+|id|String|Noch nicht dokumentiert.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Noch nicht dokumentiert.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.enrollmentConfigurationAssignment"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
@@ -37,11 +37,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   }
 }
 ```
-
-
-
-
-
 
 
 

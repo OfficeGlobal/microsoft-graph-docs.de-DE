@@ -17,18 +17,18 @@ Eine Klasse, die die Eigenschaften für das Audit-Ereignis enthält.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität|
-|displayName|Zeichenfolge|Anzeigename des Ereignisses|
-|componentName|Zeichenfolge|Name der Komponente|
-|actor|[auditActor](../resources/intune_auditing_auditactor.md)|AAD-Benutzer und -Anwendung, die dem Überwachungsereignis zugeordnet sind|
-|activity|Zeichenfolge|Anzeigename der Aktivität|
-|activityDateTime|DateTimeOffset|Datum und Uhrzeit der Durchführung der Aktivität im UTC-Format|
-|activityType|Zeichenfolge|Typ der durchgeführten Aktivität|
-|activityOperationType|Zeichenfolge|HTTP-Vorgangstyp der Aktivität|
-|activityResult|Zeichenfolge|Ergebnis der Aktivität|
-|correlationId|Guid|ID der Clientanforderung, die zur Korrelation von Aktivitäten im System verwendet wird|
-|resources|Collection von Objekten des Typs [auditResource](../resources/intune_auditing_auditresource.md)|Ressourcen, die geändert werden|
-|category|Zeichenfolge|Audit-Kategorie|
+|id|String|Schlüssel der Entität.|
+|displayName|String|Anzeigename des Ereignisses|
+|componentName|String|Komponentenname|
+|actor|[auditActor](../resources/intune_auditing_auditactor.md)|AAD-Benutzer und -Anwendung, die dem Audit-Ereignis zugeordnet sind.|
+|activity|String|Anzeigename der Aktivität|
+|activityDateTime|DateTimeOffset|Datum und Uhrzeit in UTC, zu der die Aktivität ausgeführt wurde.|
+|activityType|String|Der Typ der Aktivität, die ausgeführt wurde.|
+|activityOperationType|String|Der HTTP-Vorgangstyp der Aktivität|
+|activityResult|String|Das Ergebnis der Aktivität|
+|correlationId|Guid|Die Clientanforderungs-ID, die zum Korrelieren der Aktivität innerhalb des Systems verwendet wird.|
+|resources|[auditResource](../resources/intune_auditing_auditresource.md)-Sammlung|Ressourcen, die geändert werden.|
+|category|String|Audit-Kategorie|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -84,11 +84,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "category": "String"
 }
 ```
-
-
-
-
-
 
 
 

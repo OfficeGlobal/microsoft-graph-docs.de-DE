@@ -22,12 +22,12 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer &lt;token&gt;. Erforderlich.|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -47,7 +47,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1030
+Content-Length: 1033
 
 {
   "value": {
@@ -66,7 +66,7 @@ Content-Length: 1030
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "informationUrl": "https://example.com/informationUrl/",
     "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-    "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+    "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
     "appleId": "Apple Id value",
     "vppOrganizationName": "Vpp Organization Name value",
     "genres": [
@@ -79,11 +79,6 @@ Content-Length: 1030
   }
 }
 ```
-
-
-
-
-
 
 
 

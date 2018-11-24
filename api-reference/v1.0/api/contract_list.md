@@ -22,7 +22,7 @@ GET /contracts
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
-Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.io/docs/overview/query_parameters) zur Anpassung der Antwort. 
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort. 
 
 > Für „customerId“, „defaultDomainName“ und „displayName“ wird Filterung unterstützt.
 
@@ -30,7 +30,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.i
 
 | Name      |Beschreibung|
 |:----------|:----------|
-| Autorisierung  | Bearer {token}. Erforderlich. |
+| Authorization  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 

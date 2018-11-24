@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Wiederaufnehmbarer Dateien-Upload
-ms.openlocfilehash: d6a6066ea04d087efef556a1d5b5af888a34dad2
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: 14b9047f84b5390aea2f5285660e6c04a6bc3149
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23265512"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26564758"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Hochladen großer Dateien mit einer Uploadsitzung
 
@@ -48,12 +48,12 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### <a name="request-body"></a>Anforderungstext
 
 Es ist kein Anforderungstexts erforderlich.
-Sie können jedoch im Textkörper der Anforderung eine `item` -Eigenschaft angeben, die zusätzliche Daten über die hochgeladene Datei bereitstellen.
+Sie können jedoch angeben einer `item` -Eigenschaft im Textkörper Anforderung zusätzliche Daten über die hochgeladene Datei bereitstellen.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
-  "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
+  "@microsoft.graph.conflictBehavior": "rename | fail | replace",
   "description": "description",
   "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
   "name": "filename.txt"
@@ -81,9 +81,9 @@ Beispielsweise können Sie im Anforderungstext die Eigenschaft „conflictBehavi
 
 | Eigenschaft             | Typ               | Beschreibung
 |:---------------------|:-------------------|:---------------------------------
-| Beschreibung          | Zeichenfolge             | Stellt eine für den Benutzer sichtbare Beschreibung des Elements bereit. Lese-/Schreibzugriff. Nur auf OneDrive Personal
+| description          | Zeichenfolge             | Stellt eine für den Benutzer sichtbare Beschreibung des Elements bereit. Lese-/Schreibzugriff. Nur auf OneDrive Personal
 | fileSystemInfo       | [fileSystemInfo][] | Informationen zum Dateisystem des Clients. Lese-/Schreibzugriff.
-| Name                 | Zeichenfolge             | Der Name des Elements (Dateiname und Erweiterung). Lese-/Schreibzugriff.
+| name                 | Zeichenfolge             | Der Name des Elements (Dateiname und Erweiterung). Lese-/Schreibzugriff.
 
 ### <a name="request"></a>Anforderung
 
@@ -126,16 +126,16 @@ Content-Type: application/json
 ## <a name="upload-bytes-to-the-upload-session"></a>Hochladen von Bytes in die Uploadsitzung
 
 Zum Hochladen der Datei oder eines Teils der Datei sendet die App eine PUT-Anfrage an den Wert **uploadUrl**, der ihr in der **createUploadSession**-Antwort übermittelt wurde.
-Sie können die gesamte Datei hochladen oder die Datei in Fragmente aufteilen, vorausgesetzt, die maximale Bytezahl pro Anforderung bleibt unter 60 MiB.
+Sie können die gesamte Datei hochladen oder die Datei in Fragmente aufteilen, vorausgesetzt, die maximale Bytezahl pro Anforderung bleibt unter 60 MiB.
 
-Die Dateifragmente müssen sequenziell in der richtigen Reihenfolge hochgeladen werden.
+Die Fragmente der Datei müssen in Reihenfolge nacheinander hochgeladen werden.
 Werden die Fragmente in der falschen Reihenfolge hochgeladen, tritt ein Fehler auf.
 
-**Hinweis:** Wenn die App eine Datei in mehrere Fragmente aufteilt, **MUSS** die Größe jedes Fragments ein Vielfaches von 320 KiB (327.680 Byte) sein. Bei Fragmentgrößen, die sich nicht ohne Rest durch 320 KiB teilen lassen, treten beim Übergeben einiger Dateien Fehler auf.
+**Hinweis:** Wenn die App eine Datei in mehrere Fragmente aufteilt, **MUSS** die Größe jedes Fragments ein Vielfaches von 320 KiB (327.680 Byte) sein. Bei Fragmentgrößen, die sich nicht ohne Rest durch 320 KiB teilen lassen, treten beim Übergeben einiger Dateien Fehler auf.
 
 ### <a name="example"></a>Beispiel
 
-In diesem Beispiel lädt die App die ersten 26 Byte einer 128-Byte-Datei hoch.
+In diesem Beispiel lädt die App die ersten 26 Byte einer 128-Byte-Datei hoch.
 
 * Der Header **Content-Length** definiert die Größe der aktuellen Anforderung.
 * Der Header **Content-Range** gibt den Bytebereich in der Gesamtdatei an, den diese Anforderung repräsentiert.
@@ -191,12 +191,12 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 * Die Eigenschaft `nextExpectedRanges` listet nicht immer alle fehlenden Bereiche auf.
-* Wird ein Segment geschrieben, gibt sie den nächsten Bereich zurück, ab dem begonnen wird (z. B. „523-“).
+* Wird ein Segment geschrieben, gibt sie den nächsten Bereich zurück, ab dem begonnen wird (z. B. „523-“).
 * Schlägt der Schreibvorgang fehl, weil der Client ein Fragment gesendet hat, das der Server bereits empfangen hat, antwortet der Server mit `HTTP 416 Requested Range Not Satisfiable`. Sie können den [Uploadstatus anfordern](#resuming-an-in-progress-upload), um eine detailliertere Liste der fehlenden Bereiche zu erhalten.
-* Wenn Sie den Autorisierungsheader in den `PUT`-Aufruf einschließen, wird möglicherweise eine Antwort des Typs `HTTP 401 Unauthorized` zurückgegeben. Der Autorisierungsheader und das Bearertoken sollten nur mit dem `POST`-Aufruf im Rahmen von Schritt 1 gesendet werden. Der Autorisierungsheader sollte nicht in den `PUT`-Aufruf eingeschlossen werden.
+* Wenn Sie den Autorisierungsheader in den `PUT`-Aufruf einschließen, wird möglicherweise eine Antwort des Typs `HTTP 401 Unauthorized` zurückgegeben. Der Autorisierungsheader und das Bearertoken sollten nur mit dem `POST`-Aufruf im Rahmen von Schritt 1 gesendet werden. Der Autorisierungsheader sollte nicht in den `PUT`-Aufruf eingeschlossen werden.
 
 ## <a name="completing-a-file"></a>Vervollständigen einer Datei
 
@@ -354,12 +354,12 @@ Content-Type: application/json
   * `502 Bad Gateway`
   * `503 Service Unavailable`
   * `504 Gateway Timeout`
-* Verwenden Sie einen Exponential Backoff-Algorithmus, wenn beim Fortsetzen oder Neusenden einer Uploadanforderung 5xx-Serverfehler auftreten.
-* Bei anderen Fehlern sollten Sie keinen Exponential Backoff-Algorithmus verwenden, sondern stattdessen die Anzahl der Wiederholungsversuche beschränken.
+* Verwenden Sie einen Exponential Backoff-Algorithmus, wenn beim Fortsetzen oder Neusenden einer Uploadanforderung 5xx-Serverfehler auftreten.
+* Bei anderen Fehlern sollten Sie keinen Exponential Backoff-Algorithmus verwenden, sondern stattdessen die Anzahl der Wiederholungsversuche beschränken.
 * Sollte bei fortsetzbaren Uploads der Fehler `404 Not Found` auftreten, starten Sie den gesamten Upload neu. Dies bedeutet, dass die Upload-Sitzung nicht mehr vorhanden ist.
-* Verwenden Sie fortsetzbare Dateiübertragungen für Dateien, die größer als 10 MiB sind (10.485.760 Byte).
-* Die optimale Größe eines Bytebereichs für stabile Highspeedverbindungen ist 10 MiB. Bei langsameren oder weniger zuverlässigen Verbindungen liefern kleinere Fragmentgrößen eventuell bessere Ergebnisse. Die empfohlene Fragmentgröße liegt zwischen 5 und 10 MiB.
-* Verwenden Sie eine Bytebereichsgröße, die ein Vielfaches von 320 KiB ist (327.680 Byte) ist. Wenn Sie eine Fragmentgröße verwenden, die kein Vielfaches von 320 KiB ist, können Übertragungen großer Dateien nach Upload des letzten Bytebereichs fehlschlagen.
+* Verwenden Sie fortsetzbare Dateiübertragungen für Dateien, die größer als 10 MiB sind (10.485.760 Byte).
+* Die optimale Größe eines Bytebereichs für stabile Highspeedverbindungen ist 10 MiB. Bei langsameren oder weniger zuverlässigen Verbindungen liefern kleinere Fragmentgrößen eventuell bessere Ergebnisse. Die empfohlene Fragmentgröße liegt zwischen 5 und 10 MiB.
+* Verwenden Sie eine Bytebereichsgröße, die ein Vielfaches von 320 KiB ist (327.680 Byte) ist. Wenn Sie eine Fragmentgröße verwenden, die kein Vielfaches von 320 KiB ist, können Übertragungen großer Dateien nach Upload des letzten Bytebereichs fehlschlagen.
 
 ## <a name="error-responses"></a>Fehlerantworten
 
@@ -375,7 +375,7 @@ Weitere Informationen dazu, wie Fehler zurückgegeben werden, finden Sie unter [
   "keywords": "upload,large file,fragment,BITS",
   "suppressions": [
     "Warning: /api-reference/v1.0/api/driveitem_createuploadsession.md:
-      Found potential enums in resource example that weren't defined in a table:(rename,fail,overwrite) are in resource, but () are in table"
+      Found potential enums in resource example that weren't defined in a table:(rename,fail,replace) are in resource, but () are in table"
   ],
   "section": "documentation"
 } -->

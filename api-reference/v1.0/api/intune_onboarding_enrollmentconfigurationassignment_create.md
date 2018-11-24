@@ -24,8 +24,8 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs enrollmentConfigurationAssignment an.
@@ -34,8 +34,8 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Noch nicht dokumentiert.|
-|Ziel|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Noch nicht dokumentiert.|
+|id|Zeichenfolge|Noch nicht dokumentiert.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Noch nicht dokumentiert.|
 
 
 
@@ -73,11 +73,6 @@ Content-Length: 222
   }
 }
 ```
-
-
-
-
-
 
 
 

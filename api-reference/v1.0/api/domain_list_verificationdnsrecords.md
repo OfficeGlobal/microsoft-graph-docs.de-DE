@@ -27,14 +27,14 @@ GET /domains/{id}/verificationDnsRecords
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
-Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.io/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
 
 | Name      |Beschreibung|
 |:----------|:----------|
-| Autorisierung  | Bearer {token}. Erforderlich. |
-| Inhaltstyp  | application/json |
+| Authorization  | Bearer {token}. Erforderlich. |
+| Content-Type  | application/json |
 
 ## <a name="request-body"></a>Anforderungstext
 

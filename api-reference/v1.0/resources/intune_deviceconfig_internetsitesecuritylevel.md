@@ -2,19 +2,14 @@
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Mögliche Werte für die Sicherheitsebene der Internetsite.
+Mögliche Werte für Internet-Website Sicherheitsstufe.
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|userDefined|0|Benutzerdefiniert, Standardwert, keine Vorgabe.|
-|mittel|1|Mittel.|
-|mediumHigh|2|Mittelhoch.|
-|Hoch|3|Hoch.|
-
-
-
-
-
+|vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
+|medium|1|Mittel.|
+|mediumHigh|2|Mittel-hoch.|
+|hohe|3|Hoch|
 
 
 

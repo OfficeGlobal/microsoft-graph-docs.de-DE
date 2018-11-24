@@ -9,10 +9,10 @@ Erbt von [windowsInformationProtectionApp](../resources/intune_mam_windowsinform
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|Zeichenfolge|Anzeigename der App. Geerbt von [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
-|description|Zeichenfolge|Die Beschreibung der App. Geerbt von [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
-|publisherName|Zeichenfolge|Der Name des Herausgebers, geerbt von [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
-|productName|Zeichenfolge|Der Produktname. Geerbt von [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
+|displayName|String|Anzeigename der App. Geerbt von [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
+|description|String|Die Beschreibung der App. Geerbt von [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
+|publisherName|String|Der Name des Herausgebers, geerbt von [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
+|productName|String|Der Produktname. Geerbt von [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
 |denied|Boolean|Bei „true“ wird der App der Schutz oder eine Ausnahme verweigert. Geerbt von [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
 |binaryName|String|Der binäre Name|
 |binaryVersionLow|String|Die niedrigere Binärversion.|
@@ -22,10 +22,11 @@ Erbt von [windowsInformationProtectionApp](../resources/intune_mam_windowsinform
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionDesktopApp"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionDesktopApp",
@@ -39,11 +40,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "binaryVersionHigh": "String"
 }
 ```
-
-
-
-
-
 
 
 

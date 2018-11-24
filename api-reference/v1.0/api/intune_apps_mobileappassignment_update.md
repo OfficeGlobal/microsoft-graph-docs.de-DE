@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssign
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) an.
@@ -34,10 +34,10 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
+|id|String|Schlüssel der Entität|
 |intent|[installIntent](../resources/intune_shared_installintent.md)|Die vom Administrator definierte Installationspriorität. Mögliche Werte sind: `available`, `required`, `uninstall` und `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Die vom Administrator definierte Zielgruppenzuordnung|
-|Einstellungen|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|Die vom Administrator definierten Einstellungen für die Zielgruppenzuordnung|
+|settings|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|Die vom Administrator definierten Einstellungen für die Zielgruppenzuordnung|
 
 
 
@@ -50,9 +50,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}
 Content-type: application/json
-Content-length: 215
+Content-length: 273
 
 {
+  "@odata.type": "#microsoft.graph.mobileAppAssignment",
   "intent": "required",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
@@ -82,11 +83,6 @@ Content-Length: 322
   }
 }
 ```
-
-
-
-
-
 
 
 

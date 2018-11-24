@@ -25,8 +25,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategor
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekt des Typs [mobileAppCategory](../resources/intune_apps_mobileappcategory.md) an.
@@ -35,8 +35,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität|
-|displayName|Zeichenfolge|Name der App-Kategorie|
+|id|String|Schlüssel der Entität|
+|displayName|String|Name der App-Kategorie|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts des Typs „mobileAppCategory“|
 
 
@@ -50,11 +50,11 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppCategories/{mobileAppCategoryId}
 Content-type: application/json
-Content-length: 107
+Content-length: 99
 
 {
-  "displayName": "Display Name value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
+  "@odata.type": "#microsoft.graph.mobileAppCategory",
+  "displayName": "Display Name value"
 }
 ```
 
@@ -72,11 +72,6 @@ Content-Length: 212
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
-
-
-
-
 
 
 

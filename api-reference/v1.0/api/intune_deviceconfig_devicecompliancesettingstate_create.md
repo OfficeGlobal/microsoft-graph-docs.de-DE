@@ -24,8 +24,8 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „deviceComplianceSettingState“ an.
@@ -34,17 +34,17 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
-|Einstellung|Zeichenfolge|Klassenname und Eigenschaftenname der Einstellung|
-|settingName|Zeichenfolge|Gemeldeter Einstellungsname|
-|deviceId|Zeichenfolge|Gemeldete Geräte-ID|
-|deviceName|Zeichenfolge|Gemeldeter Gerätename|
-|userId|Zeichenfolge|Gemeldete Benutzer-ID|
-|userEmail|Zeichenfolge|Gemeldete Benutzer-E-Mail-Adresse|
-|userName|Zeichenfolge|Gemeldeter Benutzername|
-|userPrincipalName|Zeichenfolge|Gemeldeter Benutzerprinzipalname|
-|deviceModel|Zeichenfolge|Gemeldetes Gerätemodell|
-|Zustand|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|id|String|Schlüssel der Entität|
+|setting|String|Klassenname und Eigenschaftenname der Einstellung|
+|settingName|String|Gemeldeter Einstellungsname|
+|deviceId|String|Gemeldete Geräte-ID|
+|deviceName|String|Gemeldeter Gerätename|
+|userId|String|Gemeldete Benutzer-ID|
+|userEmail|String|Gemeldete Benutzer-E-Mail-Adresse|
+|userName|String|Gemeldeter Benutzername|
+|userPrincipalName|String|Gemeldeter Benutzerprinzipalname|
+|deviceModel|String|Gemeldetes Gerätemodell|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Toleranzperiode für die Gerätekonformität|
 
 
@@ -99,11 +99,6 @@ Content-Length: 566
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
-
-
-
-
 
 
 

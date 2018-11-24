@@ -24,8 +24,8 @@ PATCH /deviceManagement/conditionalAccessSettings
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md)-Objekts an.
@@ -34,11 +34,11 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Noch nicht dokumentiert|
-|aktiviert|Boolesch|Gibt an, ob lokaler bedingter Zugriff für diese Organisation aktiviert ist.|
+|id|String|Noch nicht dokumentiert|
+|aktiviert|Boolean|Gibt an, ob lokaler bedingter Zugriff für diese Organisation aktiviert ist.|
 |includedGroups|GUID-Sammlung|Benutzergruppen, für die der lokale bedingte Zugriff gilt. Alle Benutzer in diesen Gruppen müssen verwaltete und für den E-Mail-Zugriff kompatible Mobilgeräte verwenden.|
 |excludedGroups|GUID-Sammlung|Benutzergruppen, die vom lokalen bedingten Zugriff ausgenommen werden. Alle Benutzer in diesen Gruppen werden von der Richtlinie zu bedingtem Zugriff ausgenommen.|
-|overrideDefaultRule|Boolesch|Überschreibt die Standardzugriffsregel, wenn zugelassen wird, dass einem Gerät Zugriff gewährt wird.|
+|overrideDefaultRule|Boolean|Überschreibt die Standardzugriffsregel, wenn zugelassen wird, dass einem Gerät Zugriff gewährt wird.|
 
 
 
@@ -51,15 +51,16 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/conditionalAccessSettings
 Content-type: application/json
-Content-length: 195
+Content-length: 275
 
 {
+  "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
   "enabled": true,
   "includedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "77c9d466-d466-77c9-66d4-c97766d4c977"
   ],
   "excludedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "2a0afae4-fae4-2a0a-e4fa-0a2ae4fa0a2a"
   ],
   "overrideDefaultRule": true
 }
@@ -70,26 +71,21 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 318
+Content-Length: 324
 
 {
   "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
   "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
   "enabled": true,
   "includedGroups": [
-    "String"
+    "77c9d466-d466-77c9-66d4-c97766d4c977"
   ],
   "excludedGroups": [
-    "String"
+    "2a0afae4-fae4-2a0a-e4fa-0a2ae4fa0a2a"
   ],
   "overrideDefaultRule": true
 }
 ```
-
-
-
-
-
 
 
 

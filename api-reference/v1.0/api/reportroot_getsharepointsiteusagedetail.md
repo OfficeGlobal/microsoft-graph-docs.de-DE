@@ -30,7 +30,7 @@ Geben Sie in der Anforderungs-URL einen der folgenden Parameter mit einem gülti
 | Parameter | Typ   | Beschreibung                              |
 | :-------- | :----- | :--------------------------------------- |
 | Zeitraum    | Zeichenfolge | Gibt die Zeitspanne an, für die der Bericht aggregiert wird. Die unterstützten Werte für {period_value} sind: D7, D30, D90 und D180. Diese Werte folgen dem Format D*n*, wobei *n* die Anzahl der Tage angibt, für die der Bericht aggregiert wird. |
-| Datum      | Datum   | Gibt das Datum an, für das die Benutzer angezeigt werden sollen, die Aktivitäten durchgeführt haben. {date_value} muss im Format JJJJ-MM-TT vorliegen. Da dieser Bericht nur für die letzten 30 Tage verfügbar ist, sollte {date_value} ein Datum aus diesem Zeitraum sein. |
+| date      | Datum   | Gibt das Datum an, für das die Benutzer angezeigt werden sollen, die Aktivitäten durchgeführt haben. {date_value} muss im Format JJJJ-MM-TT vorliegen. Da dieser Bericht nur für die letzten 30 Tage verfügbar ist, sollte {date_value} ein Datum aus diesem Zeitraum sein. |
 
 > **Hinweis:** Sie müssen in der URL entweder einen Zeitraum oder ein Datum festlegen.
 
@@ -38,7 +38,7 @@ Geben Sie in der Anforderungs-URL einen der folgenden Parameter mit einem gülti
 
 | Name          | Beschreibung                              |
 | :------------ | :--------------------------------------- |
-| Autorisierung | Bearer {token}. Erforderlich.                |
+| Authorization | Bearer {token}. Erforderlich.                |
 | If-None-Match | Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag mit dem aktuellen Tag in der Datei übereinstimmt, wird ein `304 Not Modified`-Antwortcode zurückgegeben. Optional. |
 
 ## <a name="response"></a>Antwort
@@ -50,6 +50,7 @@ Zuvor authentifizierte Download-URLs sind nur für einen kurzen Zeitraum (einige
 Die CSV-Datei verfügt über die folgenden Kopfzeilen für Spalten.
 
 - Berichtsaktualisierungsdatum
+- Site-Id
 - Website-URL
 - Anzeigename des Besitzers
 - Ist gelöscht
@@ -103,5 +104,5 @@ Führen Sie die Umleitung 302 aus, und die heruntergeladene CSV-Datei besitzt da
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Page View Count,Visited Page Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Report Period
+Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Page View Count,Visited Page Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Report Period
 ```

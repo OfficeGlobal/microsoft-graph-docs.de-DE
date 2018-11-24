@@ -1,19 +1,14 @@
-# <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>RatingUnitedKingdomTelevisionType Enumerationstyp
+# <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>RatingUnitedKingdomTelevisionType Enum-Typ
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Bezeichnungen für die Bewertung von Filminhalten in Großbritannien
+TV zum Bewerten Beschriftungen in Großbritannien
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, alle Filminhalte werden angezeigt|
-|allBlocked|1|Keine TV-Show-Inhalte zulassen|
-|caution|2|TV-Inhalte mit einer Warnmeldung zulassen|
-
-
-
-
-
+|allAllowed|0|Standardwert, zulassen, dass alle TV Inhalt anzeigt.|
+|allBlocked|1|Lassen Sie nicht, dass alle TV Inhalt anzeigt.|
+|caution|2|Zulassen der TV Inhalt mit eine Warnmeldung angezeigt|
 
 
 

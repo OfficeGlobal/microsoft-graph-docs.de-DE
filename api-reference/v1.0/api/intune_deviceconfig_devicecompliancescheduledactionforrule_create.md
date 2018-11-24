@@ -24,8 +24,8 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „deviceComplianceScheduledActionForRule“ an.
@@ -34,8 +34,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität|
-|ruleName|Zeichenfolge|Name der Regel, auf die die geplante Aktion angewendet wird|
+|id|String|Schlüssel der Entität|
+|ruleName|String|Name der Regel, auf die die geplante Aktion angewendet wird|
 
 
 
@@ -69,11 +69,6 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
-
-
-
-
-
 
 
 

@@ -1,46 +1,46 @@
 # <a name="activity-resource-type"></a>Ressourcentyp Aktivität
 
-Stellt eine einzelne Aktivität in einer App dar -  beispielsweise ein TV-Programm, ein Dokument oder eine aktuelle Kampagne in einem Video Spiel. Wenn ein Benutzer diese Aktivität einbezieht, wird das Engagement als [Element des Ereignisprotokolls](projectrome_historyitem.md) erfasst, das die Start- und Endzeit für diese Aktivität angibt. Wenn der Benutzer diese Aktivität im Laufe er Zeit erneut einbezieht, werden mehrere Elemente des Ereignisprotokolls als eine einzelne Benutzeraktivität aufgezeichnet.
+Stellt eine einzelne Aktivität in einer app - beispielsweise ein TV-Programm, ein Dokument oder eine aktuelle Kampagne in einem Video Spiel. Wenn ein Benutzer Aktivität einbezieht, wird das Engagement als [Historienelement](projectrome_historyitem.md) erfasst, das die Start- und Endzeit für diese Aktivität angibt. Wie der Benutzer Aktivität über einen Zeitraum erneut einbezieht, werden mehrere Verlaufselemente für eine einzelne Benutzeraktivität aufgezeichnet.
 
-Sie können Aktivitäten in Microsoft Graph verwenden, um Benutzern zu ermöglichen, auf mehreren Geräten zu dem zurückzukehren, was sie in ihrer App getan haben. Aktivitäten, die von Ihrer App erstellt werden, erscheinen auf allen Geräten der Nutzer und werden Nutzern als Deep Links zu bestimmten Inhalten in Ihrer App angezeigt. Sie können bestimmte Inhalte in Ihrer App als Ziel darstellen, das in Windows angezeigt wird und auf iOS- und Android-Geräten über Cortana-Benachrichtigungen zugänglich ist.
+Sie können Aktivitäten in Microsoft Graph, damit Benutzer zurückerhalten, was sie für mehrere Geräte in ihrer app getan haben. Aktivitäten, die Ihre app erstellt auf Geräten alle Benutzer angezeigt werden, und für Benutzer als deep-Links auf bestimmte Inhalte Ihrer App verfügbar gemacht. Sie können bestimmte Inhalte Ihrer App als Ziel Ausdrücken, die in Windows und den Zugriff auf iOS und Android-Geräte über Cortana Benachrichtigungen präsentiert wird.
 
-Da jede App anders ist, müssen Sie wissen, wie Sie Aktionen in Ihrer Anwendung am besten auf Benutzeraktivitäten abbilden, die in Cortana und Timeline angezeigt werden. Beispielsweise können Spiele für jede Kampagne eine Aktivität erstellen, während die Erstellung von Dokumenten-Apps möglicherweise eine Aktivität für jedes einzigartige Dokument erstellen, und Branchen-Apps können für jeden Workflow eine Aktivität erstellen.
+Da jeder app anders ist, ist es Ihnen zu verstehen, die beste Möglichkeit zum Zuordnen von Aktionen innerhalb der Anwendung auf die Benutzeraktivitäten, die in Cortana und Zeitachse angezeigt wird. Beispielsweise Spiele möglicherweise eine Aktivität für jede Kampagne erstellen, Erstellen von apps Dokument möglicherweise eine Aktivität für jedes Dokument erstellen und Line-of-Business-apps möglicherweise eine Aktivität für jeden Workflow erstellen.
 
-Ihre Benutzeraktivitäten werden in den Benutzererfahrungen von Cortana und der Windows-Zeitachse angezeigt, die darauf ausgerichtet sind, die Produktivität und Effizienz der Benutzer zu erhöhen, indem sie ihnen helfen, zu Inhalten zurückzukehren, an denen sie in der Vergangenheit gearbeitet haben.
+Ihre Benutzeraktivitäten werden in Cortana und Windows-Zeitachsen Benutzererlebnis präsentiert werden die konzentriert sich eine Erhöhung Benutzer Produktivität und Effizienz durch Unterstützung bei der ähnliche Inhalte zu erhalten, die sie in der Vergangenheit gearbeitet.
 
 ## <a name="methods"></a>Methoden
 
 |Methode | Rückgabetyp | Beschreibung|
 |:------|:------------|:-----------|
-|[Aktivität erstellen oder ersetzen](../api/projectrome_put_activity.md) | [activity](projectrome_activity.md) |Erstellt oder ersetzt eine vorhandene Aktivität (Upsert). Die appActivityId muss URL-sicher sein (alle Zeichen außer RFC 2396 nicht reservierten Zeichen müssen in ihre hexadezimale Darstellung konvertiert werden), aber die ursprüngliche appActivityId muss nicht URL-sicher sein. |
-|[Eine Aktivität löschen](../api/projectrome_delete_activity.md) | Kein Inhalt | Löscht die angegebene Aktivität für diesen Benutzer von Ihrer App aus.|
-|[Aktivitäten abrufen](../api/projectrome_get_activities.md) | Sammlung von [Aktivitäten](projectrome_activity.md) | Ruft die Aktivitäten für Ihre App für einen bestimmten Benutzer ab.|
-|[Aktuelle Aktivitäten abrufen](../api/projectrome_get_recent_activities.md) | Sammlung von [Aktivitäten](projectrome_activity.md) | Ruft die aktuellste Aktivitäten für Ihre App für einen bestimmten Benutzer ab, sortiert und basierend auf der am häufigsten zuletzt erstellten oder aktualisierten [HistoryItems](projectrome_historyitem.md).|
+|[Erstellen oder Ersetzen Sie die Aktivität](../api/projectrome_put_activity.md) | [Aktivität](projectrome_activity.md) |Erstellt oder eine vorhandene Aktivität (Upsert) ersetzt. Die AppActivityId URL-sichere (alle Zeichen mit Ausnahme der RFC 2396 nicht reservierte Zeichen in ihre hexadezimale Darstellung konvertiert werden müssen) sein muss, aber die ursprünglichen AppActivityId benötigt keinen URL-sicheren. |
+|[Aktivität löschen](../api/projectrome_delete_activity.md) | Kein Inhalt | Löscht die angegebene Aktivität für diesen Benutzer von Ihrer app aus.|
+|[Abrufen von Aktivitäten](../api/projectrome_get_activities.md) | Auflistung von [Aktivitäten](projectrome_activity.md) | Ruft die Aktivitäten für Ihre app für einen bestimmten Benutzer ab.|
+|[Aktuelle Aktivitäten abrufen](../api/projectrome_get_recent_activities.md) | Auflistung von [Aktivitäten](projectrome_activity.md) | Ruft die neuesten Aktivitäten für Ihre app für einen bestimmten Benutzer, sortiert und basierend auf der am häufigsten zuletzt erstellte oder aktualisierte [HistoryItems](projectrome_historyitem.md)ab.|
 
 ## <a name="properties"></a>Eigenschaften
 
 |Name | Typ | Beschreibung|
 |:----|:-----|:-----------|
-|userTimezone | Zeichenfolge | Optional. Die Zeitzone, in der das Gerät des Benutzers zum Generieren der Aktivität verwendet wurde, in der es sich zum Zeitpunkt der Erstellung der Aktivität befand. Werte, die als Olson-IDs bereitgestellt werden, um die plattformübergreifende Darstellung zu unterstützen.|
-|createdDateTime | DateTimeOffset | Vom Server festgelegt. DateTime in UTC, als das Objekt auf dem Server erstellt wurde. |
-|lastModifiedDateTime | DateTimeOffset | Vom Server festgelegt. DateTime in UTC, als das Objekt auf dem Server geändert wurde. |
-|ID | Zeichenfolge | Vom Server generierte ID, verwendet für die URL-Adressierung.|
-|appActivityId | Zeichenfolge | Erforderlich. Die eindeutige Aktivitäts-ID im Kontext der App - vom Anrufer geliefert und unveränderlich danach bereitgestellt.|
-|activitySourceHost | Zeichenfolge | Erforderlich. URL für die Domäne, die die plattformübergreifende Identitätszuordnung für die App darstellt. Die Zuordnung wird entweder als JSON-Datei in der Domäne gespeichert oder kann über das Windows-Entwicklungscenter konfiguriert werden. Die JSON-Datei heißt plattformübergreifende App-IDs und wird im Stammverzeichnis Ihrer HTTPS-Domäne entweder in der Top-Level-Domäne gehostet oder enthält eine Sub-Domäne. Zum Beispiel: https://contoso.com oder https://myapp.contoso.com, jedoch NICHT https://myapp.contoso.com/somepath. Sie benötigen eine eindeutige Datei und Domäne (oder Sub-Domäne) pro plattformübergreifende App-Identität. Beispielsweise ist eine separate Datei und eine Domäne für Word und PowerPoint erforderlich.|
-|AppDisplayName | Zeichenfolge | Optional. Kurze Beschreibung der App, die zum Generieren der Aktivität verwendet wird, wenn die App nicht auf dem lokalen Gerät des Benutzers installiert ist.|
-|activationUrl | Zeichenfolge | Erforderlich. URL, die zum Starten der Aktivität in der von der App-Id dargestellten besten systemeigenen Erfahrung verwendet wird. Startet möglicherweise eine webbasierte App, wenn keine systemeigene App vorhanden ist.|
-|fallbackUrl | Zeichenfolge | Optional. URL, die zum Starten der Aktivität in einer webbasierten App verwendet wird, falls verfügbar.|
-|contentUrl | Zeichenfolge | Optional. Wird verwendet, wenn der Inhalt außerhalb einer nativen oder webbasierten App-Erfahrung gerendert werden kann (z.B. ein Zeiger auf ein Element in einem RSS-Feed).|
-|visualElements| [visualInfo](../resources/projectrome_visualinfo.md) | Erforderlich. Das Objekt mit Informationen zum Rendern der Aktivität in der UX.|
-|contentInfo | Nicht typisiertes JSON-Objekt | Optional. Ein benutzerdefiniertes Datenelement - JSON-LD erweiterbare Beschreibung des Inhalts entsprechend der [schema.org](http://schema.org) Syntax.|
-|expirationDateTime | DateTimeOffset | Vom Server festgelegt. DateTime in UTC, wenn das Objekt auf dem Server abgelaufen ist.|
-|Status | status | Vom Server festgelegt. Ein Statuscode, der dazu verwendet wird, um gültige Objekte identifizieren. Werte: aktiv, aktualisiert, gelöscht, ignoriert.|
+|userTimezone | Zeichenfolge | Optional. Die Zeitzone, in der das Gerät des Benutzers verwendet, um die Aktivität generieren zum Zeitpunkt der Erstellung Aktivität gefunden wurde; Werte, die zur Unterstützung der plattformübergreifende Darstellung als Olson-IDs angegeben.|
+|createdDateTime | DateTimeOffset | Vom Server festgelegt. DateTime in UTC, wenn das Objekt auf dem Server erstellt wurde. |
+|lastModifiedDateTime | DateTimeOffset | Vom Server festgelegt. DateTime in UTC, wenn das Objekt auf dem Server geändert wurde. |
+|id | Zeichenfolge | Server generierte ID für die URL-Adressen verwendet.|
+|appActivityId | Zeichenfolge | Erforderlich. Die eindeutige Aktivitäts-ID im Kontext der app - vom Anrufer und unveränderlich danach bereitgestellt.|
+|activitySourceHost | Zeichenfolge | Erforderlich. URL für die Domäne, die die Zuordnung plattformübergreifende Identität für die app darstellt. Zuordnung ist gespeicherte entweder als JSON-Datei für die Domäne gehostet oder über Windows-Entwicklungscenter konfigurierbar. Die Datei JSON heißt Cross-Plattform-app-IDs und befindet sich am Stamm der Domäne HTTPS, entweder auf die Domäne der obersten Ebene oder enthalten eine Sub-Domäne. Zum Beispiel: https://contoso.com oder https://myapp.contoso.com, jedoch NICHT https://myapp.contoso.com/somepath. Sie müssen einen eindeutigen Dateinamen und Domäne (oder Sub Domäne) pro plattformübergreifende app-Identität verfügen. Beispielsweise ist eine separate Datei und eine Domäne für Word und PowerPoint erforderlich.|
+|appDisplayName | Zeichenfolge | Optional. Kurze Beschreibung der app verwendet, um die Aktivität für die Verwendung in Fällen generiert werden, wenn die app nicht auf das lokale Gerät des Benutzers installiert ist.|
+|activationUrl | Zeichenfolge | Erforderlich. So starten Sie die Aktivität im systemeigenen optimal dargestellt durch die AppId verwendete URL. Starten eine webbasierten app möglicherweise, wenn keine systemeigene Anwendung vorhanden ist.|
+|fallbackUrl | Zeichenfolge | Optional. URL zum Starten der Aktivitätsfeeds in einer webbasierten-app verwendet werden, falls verfügbar.|
+|contentUrl | Zeichenfolge | Optional. Verwendet den Fall, dass der Inhalt außerhalb einer systemeigenen oder webbasierte app-Benutzeroberfläche (beispielsweise einen Zeiger auf ein Element in einem RSS-Feed) gerendert werden kann.|
+|visualElements| [visualInfo](../resources/projectrome_visualinfo.md) | Erforderlich. Das Objekt mit Informationen zum Rendern der Aktivitätsfeeds in die UX.|
+|ContentInfo dar | Nicht typisierte JSON-Objekt | Optional. Eine benutzerdefinierte Datenelement - JSON-LD extensible Beschreibung des Inhalts entsprechend [schema.org](https://schema.org) Syntax.|
+|expirationDateTime | DateTimeOffset | Vom Server festgelegt. DateTime in UTC, wenn das Objekt auf dem Server abgelaufen.|
+|status | status | Vom Server festgelegt. Einen Statuscode verwendet, um gültige Objekte identifizieren. Werte: aktiv, aktualisiert, gelöscht, ignoriert.|
 
 ## <a name="relationships"></a>Beziehungen
 
 |Beziehung | Typ | Beschreibung|
 |:------------|:-----|:-----------|
-|historyItems| [ActivityHistoryItem](../resources/projectrome_historyitem.md) -Sammlung | Optional. NavigationProperty / Eindämmung; Navigationseigenschaft zu den historyItems der Aktivität.|
+|historyItems| [ActivityHistoryItem](../resources/projectrome_historyitem.md) -Auflistung | Optional. NavigationProperty/Kapselung; Navigationseigenschaft der Aktivität HistoryItems.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

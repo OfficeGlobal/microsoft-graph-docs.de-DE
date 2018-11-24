@@ -20,7 +20,7 @@ GET /groups/{id}/threads/{id}/posts/{id}
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert |
 |:---------------|:--------|
@@ -76,7 +76,7 @@ Content-length: 414
 }
 ```
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](../../../concepts/extensibility_overview.md)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Preview)](../../../concepts/extensibility_open_users.md)

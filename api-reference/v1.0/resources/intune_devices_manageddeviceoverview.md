@@ -12,23 +12,23 @@ Zusammenfassungsdaten für verwaltete Geräte
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|String|Eindeutiger Bezeichner für die Zusammenfassung|
+|id|String|Eindeutiger Bezeichner für die Zusammenfassung|
 |enrolledDeviceCount|Int32|Gesamtanzahl von registrierten Geräten. Über den Intune-PC-Agent verwaltete Geräte sind nicht enthalten.|
-|mdmEnrolledCount|Int32|Anzahl von in MDM registrierten Geräten|
-|dualEnrolledDeviceCount|Int32|Anzahl von Geräten, die in MDM und EAS registriert sind|
-|deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune_devices_deviceoperatingsystemsummary.md)|Betriebssystemzusammenfassung für das Gerät|
+|mdmEnrolledCount|Int32|Die Anzahl der in MDM registrierten Geräte.|
+|dualEnrolledDeviceCount|Int32|Die Anzahl der in MDM und EAS registrierten Geräte.|
+|deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune_devices_deviceoperatingsystemsummary.md)|Betriebssystem des Geräts – Zusammenfassung.|
 |deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune_devices_deviceexchangeaccessstatesummary.md)|Verteilung des Exchange-Zugriffsstatus in Intune|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDeviceOverview"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -55,11 +55,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   }
 }
 ```
-
-
-
-
-
 
 
 

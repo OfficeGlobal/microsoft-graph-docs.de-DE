@@ -1,6 +1,6 @@
 # <a name="get-section"></a>Abschnitt abrufen
 
-Rufen Sie die Eigenschaften und die Beziehungen eines [onenoteSection](../resources/section.md)-Objekts ab.
+Rufen Sie die Eigenschaften und die Beziehungen eines [OnenoteSection](../resources/section.md) -Objekts ab.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
@@ -19,22 +19,22 @@ GET /groups/{id}/onenote/sections/{id}
 GET /sites/{id}/onenote/sections/{id}
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) `select` und `expand` zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) `select` und `expand` zur Anpassung der Antwort.
 
 Die Standardabfrage erweitert `parentNotebook` und wählt die zugehörigen Eigenschaften `id`, `displayName` und `self` aus. Gültige `expand`-Werte für Abschnitte sind `parentNotebook` und `parentSectionGroup`.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
-| Akzeptieren | string | `application/json` |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Accept | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Bei erfolgreicher Ausführung gibt die Methode den `200 OK` Antwortcode und ein [onenoteSection](../resources/section.md)-Objekt im Antworttext zurück.
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eines [OnenoteSection](../resources/section.md) -Objekts in der Antworttext.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.

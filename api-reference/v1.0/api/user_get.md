@@ -14,20 +14,18 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Anwendung | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
-Für einen bestimmten Benutzer:
-<!-- { "blockType": "ignored" } -->
+Für einen bestimmten Benutzer:<!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
 
-Für den angemeldeten Benutzer:
-<!-- { "blockType": "ignored" } -->
+Für den angemeldeten Benutzer:<!-- { "blockType": "ignored" } -->
 ```http
 GET /me
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/de-DE/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 Standardmäßig wird nur ein begrenzter Satz von Eigenschaften zurückgegeben (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
 

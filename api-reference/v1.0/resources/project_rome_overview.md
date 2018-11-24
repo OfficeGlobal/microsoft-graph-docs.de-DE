@@ -1,27 +1,27 @@
-# <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Verwenden der Microsoft Graph-API zum Arbeiten mit Project Rome
+# <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Verwenden Sie die Microsoft Graph-API Project ROM entwickelt
 
-[Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) ist eine Initiative von Microsoft, um eine geräteübergreifende Plattform für Erfahrungen zu erstellen. Mit Project Rome kann eine App auf einem lokalen Client oder Dienst mit Apps und Diensten auf einem Remote-Host interagieren, wenn der Benutzer sich mit dem selben Microsoft-Konto anmeldet, das er benutzt, um sich auf dem Client-Gerät anzumelden. Dadurch können geräte- und plattformübergreifende Erfahrungen programmiert werden, bei denen die Benutzeraufgaben und nicht die Geräte im Vordergrund stehen.
+[Project-ROM](https://developer.microsoft.com/en-us/windows/project-rome) handelt es sich um eine Microsoft-Initiative zum Erstellen eines Cross-Geräts Plattform auftritt. Project-ROM ermöglicht einer app auf einem lokalen Client oder Dienst zur Interaktion mit apps und Dienste auf einem remote-Host, wenn der Benutzer mit der gleichen Microsoft-Konto signiert, mit denen sie auf dem Clientgerät anmelden. Dies ermöglicht es Ihnen zu Programm Cross-Gerät und plattformübergreifende Erfahrungen, die um Benutzeraufgaben statt Geräte zentriert werden.
 
-Eine wichtige Komponente wird über Microsoft Graph zur Verfügung gestellt, um solche Erfahrungen zu ermöglichen: Aktivitäten.
+Eine wichtige Komponente wird über Microsoft Graph so ermöglicht es den verfügbar gemacht: Aktivitäten.
 
 ## <a name="activities"></a>Aktivitäten
 
-Aktivitäten in Microsoft Graph ermöglichen Ihnen, das Engagement von Benutzern in Ihren Apps unabhängig von Geräten und Plattformen voranzutreiben. Eine Aktivität ist die Einheit des Benutzerengagements und besteht aus drei Komponenten:
+Aktivitäten in Microsoft Graph können Sie zu Laufwerk Benutzer mit Ihren apps für Geräte und Plattformen. Eine Aktivität ist die Einheit eines Auftrags für Benutzer und besteht aus drei Komponenten:
 
-- Einem Deep-link
-- Einer visuellen Darstellung
-- Inhalts-Metadaten, die die Aktivität mithilfe des gemeinsamen [http://schema.org/](http://schema.org/) Vokabulars beschreibt
+- Deep-link
+- Eine visuelle Darstellung
+- Metadaten, die die Aktivität beschreibt mithilfe der [https://schema.org/](https://schema.org/) shared Vokabular
 
-Wenn von einer Anwendung eine Sitzung erstellt wird, wird der Aktivität ein Verlaufselement hinzugefügt, das den Zeitraum des Benutzerengagements wiederspiegelt. Sobald ein Benutzer eine Aktivität wieder aufnimmt, wird der Aktivitä ein neues Verlaufselement hinzugefügt, um das Benutzerengagement weiter ansteigen zu lassen.
+Wenn eine Sitzung von einer Anwendung erstellt wird, wird die Aktivität des Berichtszeitraums Benutzer Engagements entsprechend ein Historienelement hinzugefügt. Jedes Mal wird ein Benutzer mit einer Aktivität reengages, ein neues Historienelement die Aktivität fällig Engagements Benutzer hinzugefügt.
 
-Wenn eine Anwendung ein Benutzeraktivitätsobjekt veröffentlich, wird dieses Objekt in einigen der neuen Benutzeroberflächen in Windows angezeigt, so etwa in Cortana-Benachrichtigungen und der Zeitachse. Sie können in Ihren Aktivitätsobjekten sowohl umfangreiche Metadaten (damit Aktivitäten genau im richtigen Kontext dargestellt werden) als auch umfangreiche visuelle Darstellungen (mit dem [Adaptive Card](http://adaptivecards.io/)-Markup) festlegen.
+Wenn eine Anwendung Aktivität Benutzerobjekte veröffentlicht, wird das Objekt in einigen der neuen Benutzeroberfläche Flächen in Windows angezeigt; Cortana Benachrichtigungen und Zeitachsen. Sie können in Ihrer Aktivität-Objekten rich-Metadaten (zum Aktivitäten im richtigen Kontext dargestellt werden können) und rich visuelle Objekte (mit [Adaptive Karte](https://adaptivecards.io/) Markup) angeben.
 
-Mithilfe der folgenden Microsoft Graph-APIS können Sie Benutzeraktivitäten erstellen und abrufen:
+Die folgenden Microsoft Graph-APIs können zum Erstellen und die Benutzeraktivitäten abrufen:
 
-- [Aktivität erstellen oder ersetzen](../api/projectrome_put_activity.md)
-- [Aktivitäten abrufen](../api/projectrome_get_activities.md)
+- [Erstellen oder Ersetzen Sie die Aktivität](../api/projectrome_put_activity.md)
+- [Abrufen von Aktivitäten](../api/projectrome_get_activities.md)
 - [Aktuelle Aktivitäten abrufen](../api/projectrome_get_recent_activities.md)
 - [Aktivität löschen](../api/projectrome_delete_activity.md)
 - [Verlaufselement erstellen oder ersetzen](../api/projectrome_put_historyitem.md)
-- [|||UNTRANSLATED_CONTENT_START|||Delete a history item|||UNTRANSLATED_CONTENT_END|||](../api/projectrome_delete_historyitem.md)
+- [Verlaufselement](../api/projectrome_delete_historyitem.md) löschen
 

@@ -12,25 +12,25 @@ Noch nicht dokumentiert.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |pendingCount|Int32|Anzahl der ausstehenden Geräte|
-|notApplicableCount|Int32|Anzahl der ausgenommenen Geräte|
+|notApplicableCount|Int32|Anzahl der nicht anwendbaren Geräte|
 |successCount|Int32|Anzahl der erfolgreichen Geräte|
 |errorCount|Int32|Anzahl der fehlerhaften Geräte|
 |failedCount|Int32|Anzahl der fehlgeschlagenen Geräte|
-|lastUpdateDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Aktualisierung|
+|lastUpdateDateTime|DateTimeOffset|Zeit der letzten Aktualisierung|
 |configurationVersion|Int32|Version der Richtlinie für diese Übersicht|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceComplianceDeviceOverview"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceDeviceOverview",
@@ -44,11 +44,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "configurationVersion": 1024
 }
 ```
-
-
-
-
-
 
 
 

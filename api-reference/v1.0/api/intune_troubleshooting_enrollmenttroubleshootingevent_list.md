@@ -24,8 +24,8 @@ GET /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -37,7 +37,7 @@ Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und eine
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
-GET https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
+GET https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents
 ```
 
 ### <a name="response"></a>Antwort
@@ -66,7 +66,6 @@ Content-Length: 639
   ]
 }
 ```
-
 
 
 

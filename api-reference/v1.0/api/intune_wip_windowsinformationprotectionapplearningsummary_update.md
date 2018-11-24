@@ -24,8 +24,8 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md)-Objekts an.
@@ -34,8 +34,8 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Eindeutiger Bezeichner für die WindowsInformationProtectionAppLearningSummary.|
-|applicationName|Zeichenfolge|Name der Anwendung|
+|id|String|Eindeutiger Bezeichner für die WindowsInformationProtectionAppLearningSummary.|
+|applicationName|String|Name der Anwendung|
 |applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Anwendungstyp. Mögliche Werte sind: `universal` und `desktop`.|
 |deviceCount|Int32|Geräteanzahl|
 
@@ -50,9 +50,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsInformationProtectionAppLearningSummaryId}
 Content-type: application/json
-Content-length: 106
+Content-length: 191
 
 {
+  "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLearningSummary",
   "applicationName": "Application Name value",
   "applicationType": "desktop",
   "deviceCount": 11
@@ -74,11 +75,6 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
-
-
-
-
-
 
 
 

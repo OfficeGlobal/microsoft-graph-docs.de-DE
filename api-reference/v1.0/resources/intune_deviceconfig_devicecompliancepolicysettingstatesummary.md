@@ -15,10 +15,10 @@ Zusammenfassung des Zustands der Gerätekonformitätsrichtlinien-Einstellung fü
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität|
-|Einstellung|Zeichenfolge|Klassenname und Eigenschaftenname der Einstellung|
+|id|Zeichenfolge|Schlüssel der Entität|
+|setting|Zeichenfolge|Klassenname und Eigenschaftenname der Einstellung|
 |settingName|Zeichenfolge|Name der Einstellung|
-|platformType|[policyPlatformType](../resources/intune_deviceconfig_policyplatformtype.md)|Einstellungsplattform. Mögliche Werte sind: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile` und `all`.|
+|platformType|[policyPlatformType](../resources/intune_deviceconfig_policyplatformtype.md)|Einstellung-Plattform. Mögliche Werte sind: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile` und `all`.|
 |unknownDeviceCount|Int32|Anzahl von unbekannten Geräten|
 |notApplicableDeviceCount|Int32|Anzahl der ausgenommenen Geräte|
 |compliantDeviceCount|Int32|Anzahl von konformen Geräten|
@@ -34,12 +34,12 @@ Zusammenfassung des Zustands der Gerätekonformitätsrichtlinien-Einstellung fü
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceCompliancePolicySettingStateSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
@@ -56,11 +56,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "conflictDeviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

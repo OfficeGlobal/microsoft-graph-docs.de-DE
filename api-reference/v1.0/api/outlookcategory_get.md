@@ -19,12 +19,12 @@ GET /me/outlook/masterCategories/{id}
 GET /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://graph.microsoft.io/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
-| Autorisierung  | Bearer {token}. Erforderlich. |
+| Authorization  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

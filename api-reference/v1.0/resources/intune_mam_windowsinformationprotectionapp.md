@@ -10,16 +10,17 @@ App für Windows-Informationsschutz
 |description|Zeichenfolge|Beschreibung der App|
 |publisherName|Zeichenfolge|Name des Verlegers|
 |productName|Zeichenfolge|Produktname|
-|denied|Boolean|Bei „true“ wird der App der Schutz oder eine Ausnahme verweigert.|
+|denied|Boolescher Wert|Bei „true“ wird der App der Schutz oder eine Ausnahme verweigert.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionApp"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionApp",
@@ -30,11 +31,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "denied": true
 }
 ```
-
-
-
-
-
 
 
 

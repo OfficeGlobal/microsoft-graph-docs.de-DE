@@ -4,15 +4,15 @@
 
 Dient zum Erstellen eines neuen [user](../resources/intune_shared_user.md)-Objekts.
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](../../../concepts/permissions_reference.md).  Die spezifische erforderliche Berechtigung hängt vom Kontext ab.
+Eine der folgenden Berechtigungen ist erforderlich, um diese API-aufrufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](../../../concepts/permissions_reference.md).  Die spezifische erforderliche Berechtigung hängt vom Kontext ab.
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
-|Delegiert (Geschäfts- oder Schulkonto)| _variiert je nach Kontext_ |
-| &nbsp; &nbsp; Geräteverwaltung | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All |
-| &nbsp; &nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Problembehandlung | DeviceManagementManagedDevices.ReadWrite.All |
+|Delegiert (Geschäfts-, Schul- oder Unikonto)| _variiert je nach Kontext_ |
+| &nbsp;&nbsp; Gerätemanagement | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Problembehandlung | DeviceManagementManagedDevices.ReadWrite.All |
 |Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 
@@ -28,8 +28,8 @@ POST /users
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Benutzerobjekts an.
@@ -38,11 +38,11 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Eindeutiger Bezeichner des Benutzers|
+|id|Zeichenfolge|Eindeutiger Bezeichner des Benutzers|
 |**Onboarding**|
 |deviceEnrollmentLimit|Int32|Der Grenzwert für die maximale Anzahl von Geräten, die der Benutzer registrieren kann. Zulässige Werte sind 5 oder 1000.|
 
-Die Anforderung der Body-Eigenschaft-Unterstützung variiert je nach Kontext.
+Anforderung Body-Eigenschaft Unterstützung variiert je nach Kontext.
 
 ## <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und ein [user](../resources/intune_shared_user.md)-Objekt im Antworttext zurückgegeben.
@@ -63,7 +63,7 @@ Content-length: 46
 ```
 
 ### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Die von einem tatsächlichen Aufruf zurückgegebenen Eigenschaften variieren je nach Kontext.
+Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Eigenschaften von einer tatsächlichen Aufruf zurückgegeben variieren je nach Kontext.
 
 ``` http
 HTTP/1.1 201 Created

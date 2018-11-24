@@ -1,6 +1,6 @@
 # <a name="get-devicecategory"></a>Abrufen von „deviceCategory“
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph werden in einer Vorschauversion bereitgestellt und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
@@ -11,7 +11,9 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
-|Delegiert (Geschäfts-, Schul- oder Unikonto)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegiert (Geschäfts-, Schul- oder Unikonto)||
+| &nbsp; &nbsp; **Geräteverwaltung** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+| &nbsp;&nbsp; **Onboarding** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 
@@ -26,13 +28,13 @@ GET /deviceManagement/deviceCategories/{deviceCategoryId}
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -45,11 +47,13 @@ Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und ein 
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{deviceCategoryId}
+GET https://graph.microsoft.com/v1.0/deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/deviceCategory
+GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCategories/{deviceCategoryId}
+
 ```
 
 ### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Die von einem gegenwärtigen Anruf zurückgegebenen Eigenschaften variieren je nach Kontext.
+Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Eigenschaften von einer tatsächlichen Aufruf zurückgegeben variieren je nach Kontext.
 
 ``` http
 HTTP/1.1 200 OK

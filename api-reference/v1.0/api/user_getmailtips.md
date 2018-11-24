@@ -1,15 +1,15 @@
-# <a name="user-getmailtips"></a>user: getMailTips
+# <a name="user-getmailtips"></a>Benutzer: GetMailTips
 
-Rufen Sie die E-Mail-Info für einen oder mehrere Empfänger als verfügbar für den angemeldeten [Benutzer](../resources/user.md)  ab.
+Rufen Sie die e-Mail-Infos für einen oder mehrere Empfänger als dem angemeldeten [Benutzer](../resources/user.md)zur Verfügung.
 
-Beachten Sie, dass Sie durch `POST` Aufruf der `getMailTips` Aktion bestimmte Typen von E-Mail-Infos anfordern können, dass diese für mehrere Empfänger gleichzeitig zurückgegeben werden sollen. Die angeforderten E-Mail-Infos werden in einer [mailTips](../resources/mailtips.md) -Sammlung zurückgegeben.
+Beachten Sie, dass durch Erstellen einer `POST` aufrufen, um die `getMailTips` -Aktion können Sie bestimmte Typen von e-Mail-Infos für mehrere Empfänger gleichzeitig zurückgegeben werden soll anfordern. Der angeforderte e-Mail-Infos werden in einer [e-Mail-Infos](../resources/mailtips.md) -Auflistung zurückgegeben.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](../../../concepts/permissions_reference.md).
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | Mail.Read, Mail.Read.Shared    |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Mail.Read Mail.Read.Shared    |
 |Delegiert (persönliches Microsoft-Konto) | Mail.Read    |
 |Anwendung | Mail.Read |
 
@@ -20,27 +20,27 @@ POST /me/getMailTips
 POST /users/{id|userPrincipalName}/getMailTips
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
 | Kopfzeile       | Wert|
 |:-----------  |:------|
-| Autorisierung | Bearer {token}. Erforderlich. |
-| Inhaltstyp  | application/json  |
+| Authorization | Bearer {token}. Erforderlich. |
+| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|EmailAddresses|Zeichenfolgesammlung|Eine Sammlung von SMTP-Adressen von Empfängern, für die Sie E-Mail-Infos erhalten möchten.|
-|MailTipsOptions|Zeichenfolge|Eine Enumeration von Kennzeichen, die die angeforderte E-Mail-Info repräsentiert. Mögliche Werte sind: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, und `totalMemberCount`.|
+|EmailAddresses|Collection von Objekten des Typs „String“|Eine Auflistung von SMTP-Adressen der Empfänger für e-Mail-Infos zu erhalten.|
+|MailTipsOptions|Zeichenfolge|Eine Flags-Enumeration, die die angeforderten e-Mail-Infos darstellt. Mögliche Werte sind: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, und `totalMemberCount`.|
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [mailTips](../resources/mailtips.md)-Objekten im Antworttext zurückgegeben.
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [e-Mail-Infos](../resources/mailtips.md) .
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
-Das folgende Beispiel liefert E-Mail-Infos für die angegebenen Empfänger, für alle automatischen Antworteinstellungen und den Vollstatus des Postfachs.
+Im folgenden Beispiel wird die e-Mail-Infos für die angegebenen Empfänger, für alle Einstellungen für automatische Antworten und den vollständigen Postfach-Status.
 
 <!-- {
   "blockType": "request",

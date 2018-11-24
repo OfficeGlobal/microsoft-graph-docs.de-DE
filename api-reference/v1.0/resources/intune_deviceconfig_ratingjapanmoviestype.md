@@ -1,22 +1,17 @@
-# <a name="ratingjapanmoviestype-enum-type"></a>RatingJapanMoviesType Enumerationstyp
+# <a name="ratingjapanmoviestype-enum-type"></a>RatingJapanMoviesType Enum-Typ
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-Bezeichnungen für die Bewertung von Filminhalten in Japan
+Filme Bewertung Beschriftungen in Japan
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, alle Filminhalte werden angezeigt|
-|allBlocked|1|Keine Filminhalte zulassen|
-|general|2|Geeignet für alle Altersgruppen|
-|parentalGuidance|3|Die PG-12-Klassifizierung erfordert die elterliche Aufsicht von Kindern unter 12 Jahren|
-|agesAbove15|4|Die R15+-Klassifizierung ist für Zuschauer von mindestens 15 Jahren geeignet|
-|agesAbove18|5|Die R18+-Klassifizierung ist für Zuschauer von mindestens 18 Jahren geeignet|
-
-
-
-
-
+|allAllowed|0|Standardwert, alle Filme Inhalte zulassen|
+|allBlocked|1|Alle Inhalte Filme nicht zulassen|
+|Allgemeine|2|Geeignet für alle Jahren|
+|parentalGuidance|3|Die Bild-12-Klassifizierung fordert Eltern Anleitungen für young Personen unter 12|
+|agesAbove15|4|Die Klassifizierung R15 + ist geeignet für Leser von Berichten 15 oder älter|
+|agesAbove18|5|Die Klassifizierung R18 + ist geeignet für Leser von Berichten von 18 oder älter|
 
 
 

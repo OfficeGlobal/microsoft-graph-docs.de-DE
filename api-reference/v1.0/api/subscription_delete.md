@@ -15,7 +15,8 @@ In der folgenden Tabelle ist für jede Ressource die entsprechende vorgeschlagen
 | Gruppen                      | Group.Read.All      |
 | Benutzer                       | User.Read.All       |
 | Laufwerk (OneDrive eines Benutzers)    | Files.ReadWrite     |
-| Laufwerke (freigegebene SharePoint-Inhalte und Laufwerke) | Files.ReadWrite.All |
+| Laufwerke (gemeinsame SharePoint-Inhalte und Laufwerke) | Files.ReadWrite.All |
+|Sicherheitshinweis| SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -29,7 +30,7 @@ DELETE /subscriptions/{id}
 
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | Zeichenfolge  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 

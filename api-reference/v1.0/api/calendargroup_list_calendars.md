@@ -32,7 +32,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
 

@@ -6,27 +6,28 @@ Zustand der Gerätekonformitätsrichtlinien-Einstellung für ein bestimmtes Ger�
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|Einstellung|Zeichenfolge|Die gemeldete Einstellung|
-|settingName|Zeichenfolge|Lokalisierter/benutzerfreundlicher Name der Einstellung, die gemeldet wird|
-|instanceDisplayName|Zeichenfolge|Name der Einstellungsinstanz, die gemeldet wird.|
-|Zustand|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|setting|String|Die gemeldete Einstellung|
+|settingName|String|Lokalisierter/benutzerfreundlicher Name der Einstellung, die gemeldet wird|
+|instanceDisplayName|String|Name der Einstellungsinstanz, die gemeldet wird.|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
 |errorCode|Int64|Fehlercode für die Einstellung|
 |errorDescription|Zeichenfolge|Fehlerbeschreibung|
 |userId|Zeichenfolge|UserId|
 |userName|Zeichenfolge|UserName|
 |userEmail|Zeichenfolge|UserEmail|
 |userPrincipalName|Zeichenfolge|Benutzer-Prinzipalname|
-|Quellen|[settingSource](../resources/intune_deviceconfig_settingsource.md)-Sammlung|Beitragende Richtlinien|
+|sources|[settingSource](../resources/intune_deviceconfig_settingsource.md)-Sammlung|Beitragende Richtlinien|
 |currentValue|Zeichenfolge|Aktueller Wert der Einstellung auf dem Gerät|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceCompliancePolicySettingState"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingState",
@@ -50,11 +51,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "currentValue": "String"
 }
 ```
-
-
-
-
-
 
 
 

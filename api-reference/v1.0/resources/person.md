@@ -6,32 +6,32 @@ Eine Ansammlung von Informationen über eine Person aus E-Mails, Kontakten und s
 
 | Methode | Rückgabetyp | Beschreibung |
 |:---------------|:--------|:----------|
-|[Personen auflisten](../api/user_list_people.md) | **Person** |Dient zum Abrufen einer Sammlung von person-Objekten, sortiert nach ihrer Relevanz für den [Benutzer](../resources/user.md).|
+|[List people](../api/user_list_people.md) | **Person** |Dient zum Abrufen einer Sammlung von person-Objekten, sortiert nach ihrer Relevanz für den [Benutzer](../resources/user.md).|
 
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft | Typ | Beschreibung |
 |:---------------|:--------|:----------|
-|Geburtsdatum|Zeichenfolge|Der Geburtstag der Person.|
-|companyName|Zeichenfolge|Der Name des Unternehmens der Person.|
-|Abteilung|Zeichenfolge|Die Abteilung der Person.|
-|displayName|Zeichenfolge|Der Anzeigename der Person.|
+|birthday|String|Der Geburtstag der Person.|
+|companyName|String|Der Name des Unternehmens der Person.|
+|department|String|Die Abteilung der Person.|
+|displayName|String|Der Anzeigename der Person.|
 |scoredEmailAddresses|[scoredEmailAddress](scoredemailaddress.md)-Sammlung|Die E-Mail-Adressen der Person.|
-|givenName|Zeichenfolge|Der Vorname der Person.|
-|id|Zeichenfolge|Eindeutiger Bezeichner für die Person. Schreibgeschützt.|
-|imAddress|Zeichenfolge|Die VOIP-SIP-Adresse (Voice oder IP; Session Initiation Protocol) der Chatnachricht für den Benutzer. Schreibgeschützt.|
-|isFavorite|Boolesch|`true` , wenn der Benutzer diese Person als Favorit gekennzeichnet hat.|
-|jobTitle|Zeichenfolge|Die Position der Person.|
-|officeLocation|Zeichenfolge|Der Bürostandort der Person.|
-|personNotes|Zeichenfolge|Frei formatierbare Notizen, die der Benutzer zu dieser Person hinzugefügt hat.|
+|givenName|String|Der Vorname der Person.|
+|id|String|Eindeutiger Bezeichner für die Person. Schreibgeschützt.|
+|imAddress|String|Die VOIP-SIP-Adresse (Voice oder IP; Session Initiation Protocol) der Chatnachricht für den Benutzer. Schreibgeschützt.|
+|isFavorite|Boolesch|`true`, wenn der Benutzer diese Person als Favorit gekennzeichnet hat.|
+|jobTitle|String|Die Position der Person.|
+|officeLocation|String|Der Bürostandort der Person.|
+|personNotes|String|Frei formatierbare Notizen, die der Benutzer zu dieser Person hinzugefügt hat.|
 |personType|[personType](persontype.md) |Der Personentyp.|
 |phones|[phone](phone.md)-Sammlung|Die Telefonnummern der Person.|
 |postalAddresses|[location](location.md)-Sammlung|Die Adressen der Person.|
-|profession|Zeichenfolge|Der Beruf der Person.|
-|surname|Zeichenfolge|Der Nachname der Person.|
-|userPrincipalName|Zeichenfolge|Der Benutzerprinzipalname der Person. Der UPN ist ein Anmeldename der Person im Internetformat, der auf dem Internetstandard [RFC 822](http://www.ietf.org/rfc/rfc0822.txt) basiert. Gemäß der Konvention sollte er dem E-Mail-Namen der Person zugeordnet sein. Das allgemeine Format lautet alias@domäne.|
+|profession|String|Der Beruf der Person.|
+|surname|String|Der Nachname der Person.|
+|userPrincipalName|String|Der Benutzerprinzipalname der Person. Der UPN ist ein Anmeldename der Person im Internetformat, der auf dem Internetstandard [RFC 822](https://www.ietf.org/rfc/rfc0822.txt) basiert. Gemäß der Konvention sollte er dem E-Mail-Namen der Person zugeordnet sein. Das allgemeine Format lautet alias@domäne.|
 |websites|[website](website.md)-Sammlung|Die Websites der Person.|
-|yomiCompany|Zeichenfolge|Der phonetische japanische Firmenname des Unternehmens der Person.|
+|yomiCompany|String|Der phonetische japanische Firmenname des Unternehmens der Person.|
 
 ## <a name="relationships"></a>Beziehungen
 

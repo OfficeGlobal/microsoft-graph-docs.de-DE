@@ -63,7 +63,7 @@ Content-Type:text/html
   </head>
   <body>
     <p>Here's an image from an online source:</p>
-    <img src="http://..." alt="an image on the page" width="500" />
+    <img src="https://..." alt="an image on the page" width="500" />
     <p>Here's an image uploaded as binary data:</p>
     <img src="name:imageBlock1" alt="an image on the page" width="300" />
     <p>Here's a file attachment:</p>
@@ -86,7 +86,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 ##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Response-Objekt wird aus Platzgründen Zahl gekürzt. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

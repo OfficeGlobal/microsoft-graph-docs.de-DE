@@ -1,4 +1,4 @@
-# <a name="remoteassistanceonboardingstatus-enum-type"></a>RemoteAssistanceOnboardingStatus Enumerationstyp
+# <a name="remoteassistanceonboardingstatus-enum-type"></a>RemoteAssistanceOnboardingStatus Enum-Typ
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
@@ -9,11 +9,6 @@ Noch nicht dokumentiert
 |notOnboarded|0|Noch nicht dokumentiert|
 |Onboarding|1|Noch nicht dokumentiert|
 |onboarded|2|Noch nicht dokumentiert|
-
-
-
-
-
 
 
 

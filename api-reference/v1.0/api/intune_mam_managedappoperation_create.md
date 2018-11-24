@@ -24,8 +24,8 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „managedAppOperation“ an.
@@ -34,11 +34,11 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|Zeichenfolge|Name des Vorgangs|
+|displayName|String|Name des Vorgangs|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des App-Vorgangs|
-|state|Zeichenfolge|Aktueller Status des Vorgangs|
-|id|Zeichenfolge|Schlüssel der Entität|
-|Version|Zeichenfolge|Version der Entität|
+|state|String|Aktueller Status des Vorgangs|
+|id|String|Schlüssel der Entität|
+|version|String|Version der Entität|
 
 
 
@@ -51,12 +51,11 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations
 Content-type: application/json
-Content-length: 223
+Content-length: 159
 
 {
   "@odata.type": "#microsoft.graph.managedAppOperation",
   "displayName": "Display Name value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "state": "State value",
   "version": "Version value"
 }
@@ -78,11 +77,6 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

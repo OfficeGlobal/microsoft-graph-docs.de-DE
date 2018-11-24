@@ -24,8 +24,8 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 ## <a name="request-headers"></a>Anforderungsheader
 |Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Akzeptieren|Anwendung/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON Darstellung für das localizedNotificationMessage-Objekt an.
@@ -34,12 +34,12 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|Zeichenfolge|Schlüssel der Entität|
+|id|String|Schlüssel der Entität|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
-|Gebietsschema|Zeichenfolge|Das Gebietsschema für das diese Nachricht bestimmt ist.|
-|Betreff|Zeichenfolge|Die Vorlage für den Betreff der Nachricht.|
-|messageTemplate|Zeichenfolge|Die Vorlage für den Inhalt der Nachricht.|
-|isDefault|Boolesch|Die Kennzeichnung gibt an, ob dies das Standard-Gebietsschema für die Fallbacksprache ist. Dieser Kennzeichnung kann nur festgelegt werden. Um die Festlegung aufzuheben, setzen Sie diese Eigenschaft bei einer anderen lokalisierten Benachrichtigung auf „true“.|
+|Gebietsschema|String|Das Gebietsschema für das diese Nachricht bestimmt ist.|
+|Betreff|String|Die Vorlage für den Betreff der Nachricht.|
+|messageTemplate|String|Die Vorlage für den Inhalt der Nachricht.|
+|isDefault|Boolean|Die Kennzeichnung gibt an, ob dies das Standard-Gebietsschema für die Fallbacksprache ist. Dieser Kennzeichnung kann nur festgelegt werden. Um die Festlegung aufzuheben, setzen Sie diese Eigenschaft bei einer anderen lokalisierten Benachrichtigung auf „true“.|
 
 
 
@@ -52,11 +52,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages
 Content-type: application/json
-Content-length: 264
+Content-length: 200
 
 {
   "@odata.type": "#microsoft.graph.localizedNotificationMessage",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "locale": "Locale value",
   "subject": "Subject value",
   "messageTemplate": "Message Template value",
@@ -81,11 +80,6 @@ Content-Length: 313
   "isDefault": true
 }
 ```
-
-
-
-
-
 
 
 

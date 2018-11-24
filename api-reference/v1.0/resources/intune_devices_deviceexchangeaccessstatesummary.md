@@ -16,10 +16,11 @@ Exchange-Zugriffsstatus für Geräte – Zusammenfassung
 Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceExchangeAccessStateSummary",
@@ -30,11 +31,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "unavailableDeviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

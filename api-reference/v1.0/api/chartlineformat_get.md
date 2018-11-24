@@ -18,12 +18,12 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/line
 GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorgridlines/format/line
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
-| Autorisierung  | Bearer {token}. Erforderlich. |
+| Authorization  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -31,7 +31,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [user](../resources/chartlineformat.md)-Objekt im Antworttext zurückgegeben.
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und [WorkbookChartLineFormat](../resources/chartlineformat.md) -Objekts in der Antworttext.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
