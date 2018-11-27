@@ -49,7 +49,7 @@ Die Listenerstellungs-APIs unterstützen die folgenden Szenarien:
 - [Auflisten aller Schulen](../api/educationroot_list_schools.md) 
 - [Auflisten von Schulen, in denen ein Kurs unterrichtet wird](../api/educationclass_list_schools.md)
 - [Auflisten von Schulen für einen Benutzer](../api/educationuser_list_schools.md)
-- [Abrufen aller Kurse](../api/educationroot_list_classes.md )
+- [Abrufen aller Kurse](../api/educationroot_list_classes.md)
 - [Abrufen von Kursen einer Schule](../api/educationschool_list_classes.md)
 - [Auflisten von Kursen für einen Benutzer](../api/educationuser_list_classes.md)
 - [Hinzufügen von Kursen zu einer Schule](../api/educationschool_post_classes.md)
