@@ -1,9 +1,0 @@
-<span data-ttu-id="fa76e-p114">Sie bevorzugen die Benutzerfreundlichkeit und die leistungsstarken Funktionen von SDKs? Zwar können Sie Microsoft Graph jederzeit über REST-APIs aufrufen; wir stellen jedoch auch SDKs für viele beliebte Plattformen zur Verfügung. Unter [Codebeispiele und SDKs](https://graph.microsoft.io/en-us/code-samples-and-sdks) können Sie die verfügbaren SDKs erkunden.</span><span class="sxs-lookup"><span data-stu-id="fa76e-p114">Like the power and ease of SDKs? While you can always use REST APIs to call Microsoft Graph, we also provide SDKs for many popular platforms. To explore the SDKs that are available, see [Code samples and SDKs](https://graph.microsoft.io/en-us/code-samples-and-sdks).</span></span>
-
-Sie bevorzugen die Benutzerfreundlichkeit und die leistungsstarken Funktionen von SDKs? Zwar können Sie Microsoft Graph jederzeit über REST-APIs aufrufen; wir stellen jedoch auch SDKs für viele beliebte Plattformen zur Verfügung. Unter [Codebeispiele und SDKs](https://graph.microsoft.io/en-us/code-samples-and-sdks) können Sie die verfügbaren SDKs erkunden.
-
-## <span data-ttu-id="fa76e-158">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="fa76e-158">See also</span></span>
-<a id="see-also" class="xliff"></a>
-
-- [<span data-ttu-id="fa76e-159">Verwenden der Microsoft Graph-API</span><span class="sxs-lookup"><span data-stu-id="fa76e-159">Use the Microsoft Graph API</span></span>](use_the_api.md)
-- [<span data-ttu-id="fa76e-160">Authentifizierungstoken abrufen</span><span class="sxs-lookup"><span data-stu-id="fa76e-160">Get auth tokens</span></span>](auth_overview.md)
