@@ -1,13 +1,23 @@
-# plannerOrderHintsByAssignee-Ressourcentyp
-<a id="plannerorderhintsbyassignee-resource-type" class="xliff"></a>
+---
+title: plannerOrderHintsByAssignee-Ressourcentyp
+description: Die **PlannerOrderHintsByAssignee** ist eine Ressource, die Sortierung Hinweise für "assignees" in einer Ressource PlannerTask an, dass die Reihenfolge des Vorgangs in der Ansicht zugewiesen an der Aufgabe-Karte enthält.
+ms.openlocfilehash: a15a1f81b348958e5c38189db10743b83d72050f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27059868"
+---
+# <a name="plannerorderhintsbyassignee-resource-type"></a><span data-ttu-id="d8a5c-103">plannerOrderHintsByAssignee-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="d8a5c-103">plannerOrderHintsByAssignee resource type</span></span>
 
-Die **plannerOrderHintsByAssignee**-Ressource enthält [Anordnungshinweise](planner_order_hint_format.md) für zugewiesene Personen in einer [plannerTask](plannerTask.md)-Ressource, um die Anordnung der Aufgabe in der Ansicht „ZugewiesenAn“ des Task Board anzugeben. Es handelt sich um einen offenen Typ. Die Eigenschaften sind die IDs der Benutzer, die der Aufgabe zugewiesen sind, und die Werte sind Anordnungshinweise.
+> <span data-ttu-id="d8a5c-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="d8a5c-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d8a5c-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="d8a5c-105">Use of these APIs in production applications is not supported.</span></span>
 
-## Eigenschaften
-<a id="properties" class="xliff"></a>
-Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall muss der Client IDs von Benutzern, die der Aufgabe zugewiesen sind, als Eigenschaftennamen und einen gültigen [Anordnungshinweis](planner_order_hint_format.md) als Wert angeben. Von diesem Typ können keine Eigenschaften entfernt werden. Der Dienst entfernt automatisch Werte, wenn die Zuweisungen in der enthaltenden [plannerTask](plannerTask.md)-Ressource aktualisiert werden.
+<span data-ttu-id="d8a5c-p102">Die **plannerOrderHintsByAssignee**-Ressource enthält [Anordnungshinweise](planner-order-hint-format.md) für zugewiesene Personen in einer [plannerTask](plannertask.md)-Ressource, um die Anordnung der Aufgabe in der Ansicht „ZugewiesenAn“ des Task Board anzugeben. Es handelt sich um einen offenen Typ. Die Eigenschaften sind die IDs der Benutzer, die der Aufgabe zugewiesen sind, und die Werte sind Anordnungshinweise.</span><span class="sxs-lookup"><span data-stu-id="d8a5c-p102">The **plannerOrderHintsByAssignee** is a resource that contains [ordering hints](planner-order-hint-format.md) for assignees in a [plannerTask](plannertask.md) resource, to indicate the order of the task in Assigned To view of the Task Board. This type is an open type. The properties are the ids of users assigned to the task, and the values are order hints.</span></span>
 
-Beispiel:
+## <a name="properties"></a><span data-ttu-id="d8a5c-109">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="d8a5c-109">Properties</span></span>
+<span data-ttu-id="d8a5c-p103">Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall muss der Client IDs von Benutzern, die der Aufgabe zugewiesen sind, als Eigenschaftennamen und einen gültigen [Anordnungshinweis](planner-order-hint-format.md) als Wert angeben. Von diesem Typ können keine Eigenschaften entfernt werden. Der Dienst entfernt automatisch Werte, wenn die Zuweisungen in der enthaltenden [plannerTask](plannertask.md)-Ressource aktualisiert werden.</span><span class="sxs-lookup"><span data-stu-id="d8a5c-p103">Properties of an Open Type can be defined by the client. In this case, the client must provide ids of users assigned to the task as property names, and a valid [order hint](planner-order-hint-format.md) as the value. Properties cannot be removed from this type. The service will automatically remove values as the assignments on the containing [plannerTask](plannertask.md) are updated.</span></span>
+
+<span data-ttu-id="d8a5c-114">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="d8a5c-114">Example:</span></span>
 
 <!-- {
   "blockType": "resource",

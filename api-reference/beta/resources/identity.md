@@ -1,43 +1,52 @@
-# <a name="identity-resource-type"></a>identity-Ressourcentyp
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/14/2017
+title: Identität
+ms.openlocfilehash: 66dcd979718665af650edbfc50a46ece7c2c4c06
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27059771"
+---
+# <a name="identity-resource-type"></a><span data-ttu-id="3d8c4-102">Identität Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="3d8c4-102">identity resource type</span></span>
 
-Die **Identity**-Ressource stellt eine Identität von einem _Akteur_ dar. Ein Akteur kann z. B. ein Benutzer, Gerät oder eine Anwendung sein.
+> <span data-ttu-id="3d8c4-103">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="3d8c4-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="3d8c4-104">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="3d8c4-104">Use of these APIs in production applications is not supported.</span></span>
 
-## <a name="json-representation"></a>JSON-Darstellung
+<span data-ttu-id="3d8c4-p102">Die **Identity**-Ressource stellt eine Identität von einem _Akteur_ dar. Ein Akteur kann z. B. ein Benutzer, Gerät oder eine Anwendung sein.</span><span class="sxs-lookup"><span data-stu-id="3d8c4-p102">The **Identity** resource represents an identity of an _actor_. For example, an actor can be a user, device, or application.</span></span>
 
-Es folgt eine JSON-Darstellung der Ressource.
+## <a name="json-representation"></a><span data-ttu-id="3d8c4-107">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="3d8c4-107">JSON representation</span></span>
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.identity"
-}-->
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identity", "optionalProperties": ["displayName", "tenantId", "thumbnails"], "openType": true } -->
 
 ```json
 {
   "displayName": "string",
-  "id": "string"
+  "id": "string",
+  "tenantId": "string",
+  "thumbnails": { "@odata.type": "microsoft.graph.thumbnailSet" }
 }
 ```
 
-## <a name="properties"></a>Eigenschaften
+## <a name="properties"></a><span data-ttu-id="3d8c4-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="3d8c4-108">Properties</span></span>
 
-| Eigenschaft    | Typ   | Beschreibung                                                                                                                                                                                                                                                                                                           |
-|:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName | String | Der Anzeigenamen der Identität. Beachten Sie, dass dieser möglicherweise nicht immer verfügbar oder auf dem neuesten Stand ist. Wenn sich z. B. der Anzeigename eines Benutzers ändert, zeigt die API möglicherweise den neuen Wert in einer zukünftigen Antwort an, aber für die dem Benutzer zugeordneten Elemente wird mit [delta](../api/item_delta.md) nicht angezeigt, dass sie sich geändert haben.        |
-| id          | String | Eindeutiger Bezeichner für die Identität.                                                                                                                                                                                                                                                                                   |
+| <span data-ttu-id="3d8c4-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="3d8c4-109">Property</span></span>            | <span data-ttu-id="3d8c4-110">Typ</span><span class="sxs-lookup"><span data-stu-id="3d8c4-110">Type</span></span>   | <span data-ttu-id="3d8c4-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3d8c4-111">Description</span></span>                                                                                                                                                                                                                                                                                                           |
+|:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="3d8c4-112">displayName</span><span class="sxs-lookup"><span data-stu-id="3d8c4-112">displayName</span></span>         | <span data-ttu-id="3d8c4-113">String</span><span class="sxs-lookup"><span data-stu-id="3d8c4-113">String</span></span> | <span data-ttu-id="3d8c4-p103">Der Anzeigenamen der Identität. Beachten Sie, dass dieser möglicherweise nicht immer verfügbar oder auf dem neuesten Stand ist. Wenn sich z. B. der Anzeigename eines Benutzers ändert, zeigt die API möglicherweise den neuen Wert in einer zukünftigen Antwort an, aber für die dem Benutzer zugeordneten Elemente wird mit [delta](../api/driveitem-delta.md) nicht angezeigt, dass sie sich geändert haben.</span><span class="sxs-lookup"><span data-stu-id="3d8c4-p103">The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md).</span></span>  |
+| <span data-ttu-id="3d8c4-117">id</span><span class="sxs-lookup"><span data-stu-id="3d8c4-117">id</span></span>                  | <span data-ttu-id="3d8c4-118">String</span><span class="sxs-lookup"><span data-stu-id="3d8c4-118">String</span></span> | <span data-ttu-id="3d8c4-119">Eindeutiger Bezeichner für die Identität.</span><span class="sxs-lookup"><span data-stu-id="3d8c4-119">Unique identifier for the identity.</span></span>                                                                                                                                                                                                                                                                                   |
+| <span data-ttu-id="3d8c4-120">tenantId</span><span class="sxs-lookup"><span data-stu-id="3d8c4-120">tenantId</span></span>            | <span data-ttu-id="3d8c4-121">String</span><span class="sxs-lookup"><span data-stu-id="3d8c4-121">String</span></span> | <span data-ttu-id="3d8c4-122">Eindeutige Identität des Mandanten (optional).</span><span class="sxs-lookup"><span data-stu-id="3d8c4-122">Unique identity of the tenant (optional).</span></span>                                                                                                                                                                                                                                                                             |
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a><span data-ttu-id="3d8c4-123">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="3d8c4-123">Remarks</span></span>
 
-Unter gewissen Umständen steht der eindeutige Bezeichner für den Akteur möglicherweise nicht zur Verfügung. In diesem Fall die wird die Eigenschaft **DisplayName** für die Identität zurückgegeben werden, aber die **Id**-Eigenschaft ist aus der Ressource nicht vorhanden.
+<span data-ttu-id="3d8c4-p104">Unter gewissen Umständen steht der eindeutige Bezeichner für den Akteur möglicherweise nicht zur Verfügung. In diesem Fall die wird die Eigenschaft **DisplayName** für die Identität zurückgegeben werden, aber die **Id**-Eigenschaft ist aus der Ressource nicht vorhanden.</span><span class="sxs-lookup"><span data-stu-id="3d8c4-p104">In some circumstances, the unique identifier for the actor may not be available. In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "identity resource",
-  "keywords": "",
+  "description": "Identity contains information about an app, user, or group.",
+  "keywords": "identity,owner,modifier,app,user,group",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/Identity"
+} -->
