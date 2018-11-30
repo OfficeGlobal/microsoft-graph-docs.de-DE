@@ -1,0 +1,30 @@
+---
+title: RatingAustraliaTelevisionType Enum-Typ
+description: TV zum Bewerten Bezeichnungen in Australien
+ms.openlocfilehash: 852d18b1cd7ae1486cf2826f0af169e4e89703d0
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27017403"
+---
+# <a name="ratingaustraliatelevisiontype-enum-type"></a><span data-ttu-id="43b16-103">RatingAustraliaTelevisionType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="43b16-103">ratingAustraliaTelevisionType enum type</span></span>
+
+> <span data-ttu-id="43b16-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="43b16-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="43b16-105">TV zum Bewerten Bezeichnungen in Australien</span><span class="sxs-lookup"><span data-stu-id="43b16-105">TV content rating labels in Australia</span></span>
+## <a name="members"></a><span data-ttu-id="43b16-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="43b16-106">Members</span></span>
+|<span data-ttu-id="43b16-107">Element</span><span class="sxs-lookup"><span data-stu-id="43b16-107">Member</span></span>|<span data-ttu-id="43b16-108">Wert</span><span class="sxs-lookup"><span data-stu-id="43b16-108">Value</span></span>|<span data-ttu-id="43b16-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="43b16-109">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="43b16-110">allAllowed</span><span class="sxs-lookup"><span data-stu-id="43b16-110">allAllowed</span></span>|<span data-ttu-id="43b16-111">0</span><span class="sxs-lookup"><span data-stu-id="43b16-111">0</span></span>|<span data-ttu-id="43b16-112">Standardwert, zulassen, dass alle TV Inhalt anzeigt.</span><span class="sxs-lookup"><span data-stu-id="43b16-112">Default value, allow all TV shows content</span></span>|
+|<span data-ttu-id="43b16-113">allBlocked</span><span class="sxs-lookup"><span data-stu-id="43b16-113">allBlocked</span></span>|<span data-ttu-id="43b16-114">1</span><span class="sxs-lookup"><span data-stu-id="43b16-114">1</span></span>|<span data-ttu-id="43b16-115">Lassen Sie nicht, dass alle TV Inhalt anzeigt.</span><span class="sxs-lookup"><span data-stu-id="43b16-115">Do not allow any TV shows content</span></span>|
+|<span data-ttu-id="43b16-116">preschoolers</span><span class="sxs-lookup"><span data-stu-id="43b16-116">preschoolers</span></span>|<span data-ttu-id="43b16-117">2</span><span class="sxs-lookup"><span data-stu-id="43b16-117">2</span></span>|<span data-ttu-id="43b16-118">Die Klassifizierung P ist für Preschoolers vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="43b16-118">The P classification is intended for preschoolers</span></span>|
+|<span data-ttu-id="43b16-119">Untergeordnetes Element</span><span class="sxs-lookup"><span data-stu-id="43b16-119">children</span></span>|<span data-ttu-id="43b16-120">3</span><span class="sxs-lookup"><span data-stu-id="43b16-120">3</span></span>|<span data-ttu-id="43b16-121">Die C-Klassifikation ist für die untergeordneten Elemente unter 14 vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="43b16-121">The C classification is intended for children under 14</span></span>|
+|<span data-ttu-id="43b16-122">Allgemeine</span><span class="sxs-lookup"><span data-stu-id="43b16-122">general</span></span>|<span data-ttu-id="43b16-123">4</span><span class="sxs-lookup"><span data-stu-id="43b16-123">4</span></span>|<span data-ttu-id="43b16-124">Die Klassifizierung G eignet sich für alle Jahren</span><span class="sxs-lookup"><span data-stu-id="43b16-124">The G classification is suitable for all ages</span></span>|
+|<span data-ttu-id="43b16-125">parentalGuidance</span><span class="sxs-lookup"><span data-stu-id="43b16-125">parentalGuidance</span></span>|<span data-ttu-id="43b16-126">5</span><span class="sxs-lookup"><span data-stu-id="43b16-126">5</span></span>|<span data-ttu-id="43b16-127">Die Bild-Klassifizierung wird für young Viewer empfohlen.</span><span class="sxs-lookup"><span data-stu-id="43b16-127">The PG classification is recommended for young viewers</span></span>|
+|<span data-ttu-id="43b16-128">Erfahrungswerte</span><span class="sxs-lookup"><span data-stu-id="43b16-128">mature</span></span>|<span data-ttu-id="43b16-129">6</span><span class="sxs-lookup"><span data-stu-id="43b16-129">6</span></span>|<span data-ttu-id="43b16-130">Die M-Klassifizierung wird für Leser von Berichten über 15 empfohlen.</span><span class="sxs-lookup"><span data-stu-id="43b16-130">The M classification is recommended for viewers over 15</span></span>|
+|<span data-ttu-id="43b16-131">agesAbove15</span><span class="sxs-lookup"><span data-stu-id="43b16-131">agesAbove15</span></span>|<span data-ttu-id="43b16-132">7</span><span class="sxs-lookup"><span data-stu-id="43b16-132">7</span></span>|<span data-ttu-id="43b16-133">Die Klassifizierung MA15 + eignet sich nicht für Leser von Berichten unter 15</span><span class="sxs-lookup"><span data-stu-id="43b16-133">The MA15+ classification is not suitable for viewers under 15</span></span>|
+|<span data-ttu-id="43b16-134">agesAbove15AdultViolence</span><span class="sxs-lookup"><span data-stu-id="43b16-134">agesAbove15AdultViolence</span></span>|<span data-ttu-id="43b16-135">8</span><span class="sxs-lookup"><span data-stu-id="43b16-135">8</span></span>|<span data-ttu-id="43b16-136">Die Klassifizierung AV15 + eignet sich nicht für Leser von Berichten unter 15, Versender nicht jugendfreier Gewalt-spezifischen</span><span class="sxs-lookup"><span data-stu-id="43b16-136">The AV15+ classification is not suitable for viewers under 15, adult violence-specific</span></span>|
+
+
+
