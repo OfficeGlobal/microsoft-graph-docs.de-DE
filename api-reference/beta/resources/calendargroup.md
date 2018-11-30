@@ -1,35 +1,45 @@
+---
+title: calendarGroup-Ressourcentyp
+description: Eine Gruppe der Benutzerkalender.
+ms.openlocfilehash: 4ff927e4bcf8bcd54f3cfe6756895d59e43e44b4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27058251"
+---
 # <a name="calendargroup-resource-type"></a>calendarGroup-Ressourcentyp
 
-Eine Gruppe von Kalendern.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-**Hinweis** Outlook.com unterstützt nur die Standardkalendergruppe, auf die über „/me/calendars“ zugegriffen werden kann. Sie können diese Kalendergruppe nicht löschen.
+Eine Gruppe der Benutzerkalender.
 
 ## <a name="methods"></a>Methoden
 
-| Methode       | Rückgabetyp  |Beschreibung|
-|:---------------|:--------|:----------|
-|[Kalendergruppen auflisten](../api/user_list_calendargroups.md) |[Kalendersammlung](calendar.md)| Dient zum Abrufen der Kalendergruppen des Benutzers.|
-|[Kalendergruppe erstellen](../api/user_post_calendargroups.md) |[Kalender](calendar.md)| Erstellt eine neue Kalendergruppe.|
-|[Kalendergruppe abrufen](../api/calendargroup_get.md) | [calendarGroup](calendargroup.md) |Dient zum Lesen der Eigenschaften und der Beziehungen eines Kalendergruppenobjekts.|
-|[Update](../api/calendargroup_update.md) | [calendarGroup](calendargroup.md) |Dient zum Aktualisieren des calendarGroup-Objekts. |
-|[Löschen](../api/calendargroup_delete.md) | Keine |Dient zum Löschen des calendarGroup-Objekts. |
-|[Kalender auflisten](../api/calendargroup_list_calendars.md) |[Kalendersammlung](calendar.md)| Listet Kalender in einer Kalendergruppe auf.|
-|[Kalender erstellen](../api/calendargroup_post_calendars.md) |[Kalender](calendar.md)| Erstellt einen neuen Kalender in einer Kalendergruppe.|
-
+| Methode                                                      | Rückgabetyp                        | Beschreibung                                                   |
+| :---------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------ |
+| [Kalendergruppen auflisten](../api/user-list-calendargroups.md)  | [Kalendersammlung](calendar.md) | Dient zum Abrufen der Kalendergruppen des Benutzers.                               |
+| [Kalendergruppe erstellen](../api/user-post-calendargroups.md) | [Kalender](calendar.md)            | Erstellt eine neue Kalendergruppe.                                  |
+| [Kalendergruppe abrufen](../api/calendargroup-get.md)           | [calendarGroup](calendargroup.md)  | Dient zum Lesen der Eigenschaften und der Beziehungen eines Kalendergruppenobjekts. |
+| [Update](../api/calendargroup-update.md)                    | [calendarGroup](calendargroup.md)  | Dient zum Aktualisieren des calendarGroup-Objekts.                                  |
+| [Löschen](../api/calendargroup-delete.md)                    | Keine                               | Dient zum Löschen des calendarGroup-Objekts.                                  |
+| [Kalender auflisten](../api/calendargroup-list-calendars.md)    | [Kalendersammlung](calendar.md) | Listet Kalender in einer Kalendergruppe auf.                           |
+| [Kalender erstellen](../api/calendargroup-post-calendars.md)   | [Kalender](calendar.md)            | Erstellt einen neuen Kalender in einer Kalendergruppe.                    |
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
-|:---------------|:--------|:----------|
-|name|String|Der Gruppenname.|
-|changeKey|String|Gibt die Version der Kalendergruppe an. Jedes Mal, wenn die Kalendergruppe geändert wird, wird auch ChangeKey geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen. Schreibgeschützt.|
-|classId|Guid|Die Klassen-ID. Schreibgeschützt.|
-|id|String|Eindeutiger Bezeichner für die Gruppe. Schreibgeschützt.|
+
+| Eigenschaft  | Typ   | Beschreibung                                                                                                                                                                                               |
+| :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name      | String | Der Gruppenname.                                                                                                                                                                                           |
+| changeKey | String | Gibt die Version der Kalendergruppe an. Jedes Mal, wenn die Kalendergruppe geändert wird, wird auch ChangeKey geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen. Schreibgeschützt. |
+| classId   | Guid   | Die Klassen-ID. Schreibgeschützt.                                                                                                                                                                          |
+| id        | String | Eindeutiger Bezeichner für die Gruppe. Schreibgeschützt.                                                                                                                                                                 |
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
-|:---------------|:--------|:----------|
-|Kalender|[Kalendersammlung](calendar.md)|Die Kalender in Kalendergruppe. Navigation-Eigenschaft Schreibgeschützt. Lässt Nullwerte zu.|
 
+| Beziehung | Typ                               | Beschreibung                                                                    |
+| :----------- | :--------------------------------- | :----------------------------------------------------------------------------- |
+| Kalender    | [Kalendersammlung](calendar.md) | Die Kalender in Kalendergruppe. Navigation-Eigenschaft Schreibgeschützt. Lässt Nullwerte zu. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -51,12 +61,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "id": "string (identifier)",
   "name": "string"
 }
-
 ```
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "calendarGroup resource",

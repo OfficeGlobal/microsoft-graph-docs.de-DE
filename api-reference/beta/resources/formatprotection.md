@@ -1,4 +1,16 @@
+---
+title: FormatProtection-Ressourcentyp
+description: Stellt den Formatschutz eines Bereichsobjekts dar.
+ms.openlocfilehash: 5f2a4968b018a952b24bb18a75a4f6d5aff55b00
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27062743"
+---
 # <a name="formatprotection-resource-type"></a>FormatProtection-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Stellt den Formatschutz eines Bereichsobjekts dar.
 
@@ -7,11 +19,11 @@ Stellt den Formatschutz eines Bereichsobjekts dar.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[FormatProtection abrufen](../api/formatprotection_get.md) | [FormatProtection](formatprotection.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des formatProtection-Objekts.|
-|[Update](../api/formatprotection_update.md) | [FormatProtection](formatprotection.md)    |Dient zum Aktualisieren des FormatProtection-Objekts. |
+|[FormatProtection abrufen](../api/formatprotection-get.md) | [FormatProtection](formatprotection.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des formatProtection-Objekts.|
+|[Update](../api/formatprotection-update.md) | [FormatProtection](formatprotection.md)  |Dient zum Aktualisieren des FormatProtection-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |formulaHidden|boolean|Zeigt an, ob Excel die Formel für die Zellen im Bereich ausblendet. Ein Nullwert gibt an, dass der gesamte Bereich keine einheitliche Einstellung zur Formelausblendung hat.|
 |locked|boolean|Gibt an, ob Excel die Zellen im Objekt sperrt. Ein Nullwert gibt an, dass der gesamte Bereich keine einheitliche Einstellung zum Sperren hat.|

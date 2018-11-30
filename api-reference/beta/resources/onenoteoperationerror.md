@@ -1,4 +1,16 @@
+---
+title: onenoteOperationError-Ressourcentyp
+description: Ein Fehler einem OneNote-Vorgang, der nicht ausgeführt werden konnte.
+ms.openlocfilehash: 0dab8b405c99f2931d2cc02cc915df5f805322d8
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27064735"
+---
 # <a name="onenoteoperationerror-resource-type"></a>onenoteOperationError-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Ein Fehler einem OneNote-Vorgang, der nicht ausgeführt werden konnte.
 
@@ -22,7 +34,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |code|string|Der Fehlercode.|
 |message|string|Die Fehlermeldung.|

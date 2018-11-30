@@ -1,4 +1,18 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Paket
+ms.openlocfilehash: fe26cf0dc5de00673d5c3c2ae4a90ac80a62897f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27064480"
+---
 # <a name="package-resource-type"></a>Package-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Die **Package**-Ressource gibt an, dass ein DriveItem das Element der obersten Ebene in einem „Paket“ oder einer Sammlung von Elementen ist, die als eine Sammlung und nicht als einzelne Elemente behandelt werden müssen.
 
@@ -11,7 +25,7 @@ DriveItems mit dem **package**-Facet enthalten keine **folder**- oder **file**-F
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.package" } -->
 ```json
 {
-  "type": "string"
+  "type": "oneNote"
 }
 ```
 

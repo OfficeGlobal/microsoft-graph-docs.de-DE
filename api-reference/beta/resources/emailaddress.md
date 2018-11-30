@@ -1,14 +1,24 @@
+---
+title: emailAddress-Ressourcentyp
+description: Stellt den Namen und die SMTP-Adresse einer Instanz einer Entität, beispielsweise eine Nachricht Empfänger oder Kalender Besitzer.
+ms.openlocfilehash: f607fe4ce01b9a3c3f5e7af5aa1638fef3840177
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27059178"
+---
 # <a name="emailaddress-resource-type"></a>emailAddress-Ressourcentyp
 
-Name und E-Mail-Adresse eines Kontakts oder eines Empfängers der Nachricht.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+
+Stellt den Namen und die SMTP-Adresse einer Instanz einer Entität, beispielsweise eine Nachricht Empfänger oder Kalender Besitzer.
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|address|String|Die E-Mail-Adresse der Person oder Organisation.|
-|name|String|Der Anzeigename der Person oder Entität.|
-
-
+|address|String|Die e-Mail-Adresse einer Instanz einer Entität.|
+|name|String|Der Anzeigename einer Instanz einer Entität.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
