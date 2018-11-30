@@ -1,4 +1,16 @@
+---
+title: ChartPointFormat-Ressourcentyp
+description: Stellt das Formatierungsobjekt für Diagrammpunkte dar.
+ms.openlocfilehash: ec8c2c277e3bd81b5b96be4c7af8a5788bcfb80d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27059793"
+---
 # <a name="chartpointformat-resource-type"></a>ChartPointFormat-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Stellt das Formatierungsobjekt für Diagrammpunkte dar.
 
@@ -10,7 +22,7 @@ Keine
 Keine
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |fill|[ChartFill](chartfill.md)|Stellt die Füllung eines Diagramms dar, einschließlich Informationen zur Hintergrundformatierung. Schreibgeschützt.|
 

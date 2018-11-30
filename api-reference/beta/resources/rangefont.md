@@ -1,4 +1,16 @@
+---
+title: RangeFont-Ressourcentyp
+description: Dieses Objekt stellt die Zeichenformatierung (Schriftart, Schriftgrad, Farbe usw.) für ein Objekt dar.
+ms.openlocfilehash: fc1f3e35bb2ea612dd462d97075ad9757e27bf22
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27058788"
+---
 # <a name="rangefont-resource-type"></a>RangeFont-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Dieses Objekt stellt die Zeichenformatierung (Schriftart, Schriftgrad, Farbe usw.) für ein Objekt dar.
 
@@ -7,11 +19,11 @@ Dieses Objekt stellt die Zeichenformatierung (Schriftart, Schriftgrad, Farbe usw
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[RangeFont abrufen](../api/rangefont_get.md) | [RangeFont](rangefont.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des rangeFont-Objekts.|
-|[Update](../api/rangefont_update.md) | [RangeFont](rangefont.md)    |Dient zum Aktualisieren des RangeFont-Objekts. |
+|[RangeFont abrufen](../api/rangefont-get.md) | [RangeFont](rangefont.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des rangeFont-Objekts.|
+|[Update](../api/rangefont-update.md) | [RangeFont](rangefont.md)   |Dient zum Aktualisieren des RangeFont-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |bold|boolean|Stellt den Fett-Status der Schriftart dar.|
 |color|string|HTML-Farbcodedarstellung der Textfarbe. #ff0000 stellt beispielsweise Rot dar.|
