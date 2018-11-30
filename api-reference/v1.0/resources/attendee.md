@@ -1,6 +1,16 @@
+---
+title: attendee-Ressourcentyp
+description: Ein Teilnehmer eines Ereignisses. Dies kann eine Person oder eine Ressource sein, wie z. B. Besprechungsräume oder Geräte, die als Ressource auf dem Exchange-Server für den Mandanten eingerichtet wurden.
+ms.openlocfilehash: 7c9040b563840c22eec1dd7456892fc7ff83ee4f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27020133"
+---
 # <a name="attendee-resource-type"></a>attendee-Ressourcentyp
 
-Ein Teilnehmer eines Ereignisses.
+Ein Teilnehmer eines Ereignisses. Dies kann eine Person oder eine Ressource sein, wie z. B. Besprechungsräume oder Geräte, die als Ressource auf dem Exchange-Server für den Mandanten eingerichtet wurden.
 
 Abgeleitet von [attendeeBase](attendeebase.md).
 
@@ -8,8 +18,8 @@ Abgeleitet von [attendeeBase](attendeebase.md).
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|Die Antwort des Teilnehmers (keine, akzeptiert, abgelehnt, usw.) für das Ereignis und das Datum und die Uhrzeit, an dem/der die Antwort gesendet wurde.|
-|Typ|String|Der Teilnehmertyp: `Required`, `Optional`, `Resource`.|
-|emailAddress|[emailAddress](emailAddress.md)|Enthält den Namen und die SMTP-Adresse des Teilnehmers.|
+|Typ|String|Der Teilnehmertyp: `required`, `optional`, `resource`.|
+|emailAddress|[emailAddress](emailaddress.md)|Enthält den Namen und die SMTP-Adresse des Teilnehmers.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -17,6 +27,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attendeeBase",
   "optionalProperties": [
 
   ],
