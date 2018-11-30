@@ -1,3 +1,13 @@
+---
+title: sectionLinks-Ressourcentyp
+description: Links zum Öffnen eines OneNote-Abschnitts.
+ms.openlocfilehash: 4ca6221992c75f410839538d8080c084c8486903
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27017071"
+---
 # <a name="sectionlinks-resource-type"></a>sectionLinks-Ressourcentyp
 
 Links zum Öffnen eines OneNote-Abschnitts.
@@ -22,7 +32,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[externalLink](externallink.md)|Öffnet den Abschnitt im systemeigenen OneNote-Client, sofern er installiert ist.|
 |oneNoteWebUrl|[externalLink](externallink.md)|Öffnet den Abschnitt in OneNote Online.|

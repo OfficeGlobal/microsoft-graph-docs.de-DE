@@ -1,3 +1,13 @@
+---
+title: ChartSeriesFormat-Ressourcentyp
+description: Kapselt die Formateigenschaften für den Diagrammdatenreihe.
+ms.openlocfilehash: 81b79331580c2d7edbc52f19d1c4c9cfd57db0cf
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27017406"
+---
 # <a name="chartseriesformat-resource-type"></a>ChartSeriesFormat-Ressourcentyp
 
 Kapselt die Formateigenschaften für den Diagrammdatenreihe.
@@ -10,10 +20,30 @@ Keine
 Keine
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|fill|[ChartFill](chartfill.md)|Stellt die Füllung einer Diagrammdatenreihe dar, einschließlich Informationen zur Hintergrundformatierung. Schreibgeschützt.|
-|line|[ChartLineFormat](chartlineformat.md)|Die Zeilenformatierung. Schreibgeschützt.|
+|fill|[WorkbookChartFill](chartfill.md)|Stellt die Füllung einer Diagrammdatenreihe dar, einschließlich Informationen zur Hintergrundformatierung. Schreibgeschützt.|
+|line|[WorkbookChartLineFormat](chartlineformat.md)|Die Zeilenformatierung. Schreibgeschützt.|
+
+
+## <a name="json-representation"></a>JSON-Darstellung
+
+Es folgt eine JSON-Darstellung der Ressource.
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartSeriesFormat"
+}-->
+
+```json
+{
+  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"},
+  "line": {"@odata.type": "microsoft.graph.workbookChartLineFormat"}
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
