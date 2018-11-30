@@ -1,4 +1,16 @@
+---
+title: Arbeiten mit Dateien in Microsoft Graph
+description: Mithilfe von Microsoft Graph können Sie eine App erstellen, die eine Verbindung mit Dateien in OneDrive-, OneDrive for Business- und SharePoint-Dokumentbibliotheken herstellt. Mit Microsoft Graph können Sie verschiedene Möglichkeiten zum Umgang mit in Office 365 gespeicherten Dateien einrichten, angefangen vom einfachen Speichern von Dokumenten bis hin zu komplexen Dateifreigabeszenarien.
+ms.openlocfilehash: 6b25f279fbbc6386e110647cc25e882f7a388220
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27060347"
+---
 # <a name="working-with-files-in-microsoft-graph"></a>Arbeiten mit Dateien in Microsoft Graph
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Mithilfe von Microsoft Graph können Sie eine App erstellen, die eine Verbindung mit Dateien in OneDrive-, OneDrive for Business- und SharePoint-Dokumentbibliotheken herstellt. Mit Microsoft Graph können Sie verschiedene Möglichkeiten zum Umgang mit in Office 365 gespeicherten Dateien einrichten, angefangen vom einfachen Speichern von Dokumenten bis hin zu komplexen Dateifreigabeszenarien.
 
@@ -11,7 +23,7 @@ Die meisten Interaktionen mit Dateien finden über Interaktionen mit **DriveItem
 
 ```json
 {
-  "@content.downloadUrl":"http://public-sn3302.files.1drv.com/y2pcT7OaUEExF7EHOlpTjCE55mIUoiX7H3sx1ff6I-nP35XUTBqZlnkh9FJhWb_pf9sZ7LEpEchvDznIbQig0hWBeidpwFkOqSKCwQylisarN6T0ecAeMvantizBUzM2PA1",
+  "@content.downloadUrl":"https://public-sn3302.files.1drv.com/y2pcT7OaUEExF7EHOlpTjCE55mIUoiX7H3sx1ff6I-nP35XUTBqZlnkh9FJhWb_pf9sZ7LEpEchvDznIbQig0hWBeidpwFkOqSKCwQylisarN6T0ecAeMvantizBUzM2PA1",
   "createdDateTime": "2016-09-16T03:37:04.72Z",
   "cTag": "aYzpENDY0OEYwNkM5MUQ5RDNEITU0OTI3LjI1Ng",
   "eTag": "aRDQ2NDhGMDZDOTFEOUQzRCE1NDkyNy4w",
@@ -89,8 +101,8 @@ Weitere Informationen zum Arbeiten mit freigegebenen Ordnern und Remoteelementen
 
 ## <a name="sharing-and-permissions"></a>Freigabe und Berechtigungen
 
-Eine der am häufigsten verwendeten Aktionen für OneDrive und SharePoint-Dokumentbibliotheken besteht im Freigeben von Inhalten für andere Personen. Über Microsoft Graph kann Ihre App [Freigabelinks](../api/item_createLink.md) erstellen, [Genehmigungen hinzufügen und Einladungen an Elemente eines Laufwerks senden](../api/item_invite.md).
+Eine der am häufigsten verwendeten Aktionen für OneDrive und SharePoint-Dokumentbibliotheken besteht im Freigeben von Inhalten für andere Personen. Über Microsoft Graph kann Ihre App [Freigabelinks](../api/driveitem-createlink.md) erstellen, [Genehmigungen hinzufügen und Einladungen an Elemente eines Laufwerks senden](../api/driveitem-invite.md).
 
-Microsoft Graph bietet der App auch eine Möglichkeit, [Zugriff auf freigegebene Inhalte](../api/shares_get.md) direkt über einen Freigabelinks zu erhalten.
+Microsoft Graph bietet der App auch eine Möglichkeit, [Zugriff auf freigegebene Inhalte](../api/shares-get.md) direkt über einen Freigabelinks zu erhalten.
 
  
