@@ -1,3 +1,13 @@
+---
+title: website-Ressourcentyp
+description: Stellt eine Website dar.
+ms.openlocfilehash: 14934aae418581f4c75c880be67bf51fd0bc293c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27016550"
+---
 # <a name="website-resource-type"></a>website-Ressourcentyp
 
 Stellt eine Website dar.
@@ -6,9 +16,9 @@ Stellt eine Website dar.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|type|Zeichenfolge| Mögliche Werte: `other`, `home`, `work`, `blog`, `profile`.|
-|address|Zeichenfolge|Die URL der Website.|
-|displayName|Zeichenfolge|Der Anzeigename der Website.|
+|Typ|websiteType| Die möglichen Werte sind: `other`, `home`, `work`, `blog`, `profile`.|
+|address|string|Die URL der Website.|
+|displayName|string|Der Anzeigename der Website.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

@@ -1,4 +1,16 @@
+---
+title: ChartLineFormat-Ressourcentyp
+description: Kapselt die Formatierungsoptionen für Linienelemente.
+ms.openlocfilehash: 6646f985fd106ed738432852fec5a3bad187ab61
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27062149"
+---
 # <a name="chartlineformat-resource-type"></a>ChartLineFormat-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Kapselt die Formatierungsoptionen für Linienelemente.
 
@@ -7,12 +19,12 @@ Kapselt die Formatierungsoptionen für Linienelemente.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[ChartLineFormat abrufen](../api/chartlineformat_get.md) | [ChartLineFormat](chartlineformat.md) |Dient zum Lesen der Eigenschaften und Beziehungen eines chartLineFormat-Objekts.|
-|[Update](../api/chartlineformat_update.md) | [ChartLineFormat](chartlineformat.md)    |Dient zum Aktualisieren des ChartLineFormat-Objekts. |
-|[Clear](../api/chartlineformat_clear.md)|Keine|Löschen der Linienformatierung eines Diagrammelements.|
+|[ChartLineFormat abrufen](../api/chartlineformat-get.md) | [ChartLineFormat](chartlineformat.md) |Dient zum Lesen der Eigenschaften und Beziehungen eines chartLineFormat-Objekts.|
+|[Update](../api/chartlineformat-update.md) | [ChartLineFormat](chartlineformat.md) |Dient zum Aktualisieren des ChartLineFormat-Objekts. |
+|[Löschen](../api/chartlineformat-clear.md)|Keine|Löschen der Linienformatierung eines Diagrammelements.|
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |color|string|HTML-Farbcode, der die Farbe der Linien im Diagramm darstellt.|
 

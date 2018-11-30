@@ -1,6 +1,17 @@
+---
+title: Arbeiten mit Dateien in Microsoft Graph
+description: Microsoft Graph können Sie eine app erstellen, die mit Dateien über OneDrive, OneDrive für Unternehmen und SharePoint-Dokumentbibliotheken stellt eine Verbindung her.
+ms.openlocfilehash: efcc8fe207e7e32638286c89378a72d2f519b8fd
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27019386"
+---
 # <a name="working-with-files-in-microsoft-graph"></a>Arbeiten mit Dateien in Microsoft Graph
 
-Mithilfe von Microsoft Graph können Sie eine App erstellen, die eine Verbindung mit Dateien in OneDrive-, OneDrive for Business- und SharePoint-Dokumentbibliotheken herstellt. Mit Microsoft Graph können Sie verschiedene Möglichkeiten zum Umgang mit in Office 365 gespeicherten Dateien einrichten, angefangen vom einfachen Speichern von Dokumenten bis hin zu komplexen Dateifreigabeszenarien.
+Microsoft Graph können Sie eine app erstellen, die mit Dateien über OneDrive, OneDrive für Unternehmen und SharePoint-Dokumentbibliotheken stellt eine Verbindung her.
+Mit Microsoft Graph können Sie eine Vielzahl von Erfahrungen mit Dateien, die Sie in Office 365 einfach Speichern von Benutzerdokumenten für komplexe Dateifreigabe Szenarien erstellen.
 
 Microsoft Graph legt zwei Ressourcentypen für die Arbeit mit Dateien Offen:
 
@@ -11,7 +22,7 @@ Die meisten Interaktionen mit Dateien finden über Interaktionen mit **DriveItem
 
 ```json
 {
-  "@content.downloadUrl":"http://public-sn3302.files.1drv.com/y2pcT7OaUEExF7EHOlpTjCE55mIUoiX7H3sx1ff6I-nP35XUTBqZlnkh9FJhWb_pf9sZ7LEpEchvDznIbQig0hWBeidpwFkOqSKCwQylisarN6T0ecAeMvantizBUzM2PA1",
+  "@content.downloadUrl":"https://public-sn3302.files.1drv.com/y2pcT7OaUEExF7EHOlpTjCE55mIUoiX7H3sx1ff6I-nP35XUTBqZlnkh9FJhWb_pf9sZ7LEpEchvDznIbQig0hWBeidpwFkOqSKCwQylisarN6T0ecAeMvantizBUzM2PA1",
   "createdDateTime": "2016-09-16T03:37:04.72Z",
   "cTag": "aYzpENDY0OEYwNkM5MUQ5RDNEITU0OTI3LjI1Ng",
   "eTag": "aRDQ2NDhGMDZDOTFEOUQzRCE1NDkyNy4w",
@@ -46,17 +57,19 @@ Die meisten Interaktionen mit Dateien finden über Interaktionen mit **DriveItem
 
 Die meisten API-Anforderungen für Dateiinteraktionen verwenden eine der folgenden grundlegenden Ressourcen für den Zugriff auf **Drive** oder **DriveItem**.
 
-| Pfad    | Ressource    |
-|---------|-------------|
-| `/me/drive` | OneDrive eines Benutzers |
-| `/me/drives` | Listet die für den Benutzer verfügbaren OneDrive-Ressourcen auf. |
-| `/drives/{drive-id}` | Greift auf ein bestimmtes **Drive** über die Laufwerks-ID zu. |
-| `/drives/{drive-id}/root/children` | Listet die **DriveItem**-Ressourcen in der Root eines spezifischen **Drive** auf. |
-| `/me/drive/items/{item-id}` | Greift auf ein **DriveItem** auf dem OneDrive des Benutzers über die eindeutige ID zu. |
-| `/me/drive/special/{special-id}` | Greift auf einen bestimmten (benannten) Ordner auf dem OneDrive des Benutzers über seinen bekannten Namen zu. |
-| `/users/{user-id}/drive` | Greift auf das OneDrive eines anderen Benutzers mithilfe der eindeutigen ID des Benutzers zu. |
-| `/groups/{group-id}/drive` | Greift auf die Standarddokumentbibliothek für eine Gruppe mithilfe der eindeutigen ID der Gruppe zu. |
-| `/shares/{share-id}` | Greift auf ein **DriveItem** über seine **SharedId** oder eine Freigabe-URL zu. |
+| Pfad                               | Ressource
+|------------------------------------|-----------------------------------------
+| `/me/drive`                        | OneDrive eines Benutzers
+| `/me/drives`                       | Listet die für den Benutzer verfügbaren OneDrive-Ressourcen auf.
+| `/drives/{drive-id}`               | Greift auf ein bestimmtes **Drive** über die Laufwerks-ID zu.
+| `/drives/{drive-id}/root/children` | Listet die **DriveItem**-Ressourcen in der Root eines spezifischen **Drive** auf.
+| `/me/drive/items/{item-id}`        | Greift auf ein **DriveItem** auf dem OneDrive des Benutzers über die eindeutige ID zu.
+| `/me/drive/special/{special-id}`   | Greift auf einen bestimmten (benannten) Ordner auf dem OneDrive des Benutzers über seinen bekannten Namen zu.
+| `/users/{user-id}/drive`           | Greift auf das OneDrive eines anderen Benutzers mithilfe der eindeutigen ID des Benutzers zu.
+| `/groups/{group-id}/drive`         | Greift auf die Standarddokumentbibliothek für eine Gruppe mithilfe der eindeutigen ID der Gruppe zu.
+| `/shares/{share-id}`               | Greift auf ein **DriveItem** über seine **SharedId** oder eine Freigabe-URL zu.
+| `/sites/{site-id}/drive`           | Zugriff auf die Standardeinstellung **Laufwerk** (Dokumentbibliothek) für die angegebene [SharePoint][] - [Website][]
+| `/sites/{site-id}/drives`          | Auflisten der **Laufwerke** (Dokumentbibliotheken) unter der angegebenen [SharePoint][] - [Website][]
 
 Zusätzlich zur Adressierung eines **DriveItem** innerhalb eines **Drive** durch eine eindeutige ID kann die App ein **DriveItem** auch über einen relativen Pfad von einer bekannten Ressource adressieren. Zur Adressierung über einen Pfad wird das Doppelpunktzeichen (`:`) für das Escape des relativen Pfads verwendet. Diese Tabelle enthält ein Beispiel für unterschiedliche Methoden für die Verwendung des Doppelpunkts zur Adressierung eines Elements nach Pfad.
 
@@ -69,7 +82,8 @@ Zusätzlich zur Adressierung eines **DriveItem** innerhalb eines **Drive** durch
 
 ## <a name="drive-resource"></a>Drive-Ressource
 
-Die [Drive-Ressource](drive.md) ist das Objekt der obersten Ebene innerhalb des OneDrive eines Benutzers oder einer SharePoint-Dokumentbibliothek. Fast alle Dateivorgänge beginnen damit, dass eine bestimmte Drive-Ressource  adressiert wird.
+[Laufwerk Ressource](drive.md) ist das Objekt der obersten Ebene innerhalb eines Benutzers OneDrive oder einer [SharePoint][] -Dokumentbibliothek.
+Fast alle Dateivorgänge beginnen damit, dass eine bestimmte Drive-Ressource  adressiert wird.
 
 Eine Drive-Ressource kann entweder von der eindeutigen ID des Laufwerks oder von dem Standardlaufwerk eines [Benutzers](user.md), einer [Gruppe](group.md), oder einer Organisation adressiert werden. 
 
@@ -89,8 +103,9 @@ Weitere Informationen zum Arbeiten mit freigegebenen Ordnern und Remoteelementen
 
 ## <a name="sharing-and-permissions"></a>Freigabe und Berechtigungen
 
-Eine der am häufigsten verwendeten Aktionen für OneDrive und SharePoint-Dokumentbibliotheken besteht im Freigeben von Inhalten für andere Personen. Über Microsoft Graph kann Ihre App [Freigabelinks](../api/item_createLink.md) erstellen, [Genehmigungen hinzufügen und Einladungen an Elemente eines Laufwerks senden](../api/item_invite.md).
+Eine der am häufigsten verwendeten Aktionen für OneDrive und SharePoint-Dokumentbibliotheken besteht im Freigeben von Inhalten für andere Personen. Über Microsoft Graph kann Ihre App [Freigabelinks](../api/driveitem-createlink.md) erstellen, [Genehmigungen hinzufügen und Einladungen an Elemente eines Laufwerks senden](../api/driveitem-invite.md).
 
-Microsoft Graph bietet der App auch eine Möglichkeit, [Zugriff auf freigegebene Inhalte](../api/shares_get.md) direkt über einen Freigabelinks zu erhalten.
+Microsoft Graph bietet der App auch eine Möglichkeit, [Zugriff auf freigegebene Inhalte](../api/shares-get.md) direkt über einen Freigabelinks zu erhalten.
 
- 
+[SharePoint]: sharepoint.md
+[site]: site.md

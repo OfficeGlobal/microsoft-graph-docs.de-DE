@@ -1,3 +1,13 @@
+---
+title: TableRow-Ressourcentyp
+description: Stellt eine Zeile in einer Tabelle dar.
+ms.openlocfilehash: e96367137fb6b2fe70e15aa932a104c2042651c0
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27016111"
+---
 # <a name="tablerow-resource-type"></a>TableRow-Ressourcentyp
 
 Stellt eine Zeile in einer Tabelle dar.
@@ -7,19 +17,19 @@ Stellt eine Zeile in einer Tabelle dar.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[TableRow abrufen](../api/tablerow_get.md) | [TableRow](tablerow.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des tableRow-Objekts.|
-|[Update](../api/tablerow_update.md) | [TableRow](tablerow.md)    |Dient zum Aktualisieren des TableRow-Objekts. |
-|[Range](../api/tablerow_range.md)|[Range](range.md)|Ruft das Bereichsobjekt ab, das mit der gesamten Zeile verknüpft ist.|
-|[Delete](../api/tablerow_delete.md)|Keine|Löscht die Zeile aus der Tabelle.|
-|[List](../api/tablerow_list.md) | [TableRow](tablerow.md)-Sammlung: |Dient zum Abrufen einer tableRow-Objektsammlung. |
-|[Itemat](../api/tablerowcollection_itemat.md)|[TableRow](tablerow.md)|Ruft eine Zeile anhand ihrer Position in der Auflistung ab.|
-|[Add](../api/tablerowcollection_add.md)|[TableRow](tablerow.md)|Fügt der Tabelle eine neue Zeile hinzu.|
+|[TableRow abrufen](../api/tablerow-get.md) | [WorkbookTableRow](tablerow.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des tableRow-Objekts.|
+|[Update](../api/tablerow-update.md) | [WorkbookTableRow](tablerow.md)  |Dient zum Aktualisieren des TableRow-Objekts. |
+|[Range](../api/tablerow-range.md)|[Range](range.md)|Ruft das Bereichsobjekt ab, das mit der gesamten Zeile verknüpft ist.|
+|[Delete](../api/tablerow-delete.md)|Keine|Löscht die Zeile aus der Tabelle.|
+|[List](../api/tablerow-list.md) | [WorkbookTableRow](tablerow.md) -Auflistung |Dient zum Abrufen einer tableRow-Objektsammlung. |
+|[Itemat](../api/tablerowcollection-itemat.md)|[WorkbookTableRow](tablerow.md)|Ruft eine Zeile anhand ihrer Position in der Auflistung ab.|
+|[Add](../api/tablerowcollection-add.md)|[WorkbookTableRow](tablerow.md)|Fügt der Tabelle eine neue Zeile hinzu.|
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Index|int|Gibt die Indexnummer der Zeile in der Zeilenauflistung der Tabelle zurück. Nullindiziert. Schreibgeschützt.|
-|values|json|Stellt die Rohwerte des angegebenen Bereichs dar. Die zurückgegebenen Daten können den Typ Zeichenfolge, Zahl oder ein boolescher Wert sein. Zelle, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück.|
+|values|Json|Stellt die Rohwerte des angegebenen Bereichs dar. Die zurückgegebenen Daten können den Typ Zeichenfolge, Zahl oder ein boolescher Wert sein. Zelle, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -29,12 +39,11 @@ Keine
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.tableRow"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookTableRow"
 }-->
 
 ```json

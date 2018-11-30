@@ -1,3 +1,13 @@
+---
+title: plannerTaskDetails-Ressourcentyp
+description: Die **plannerTaskDetails**-Ressource stellt die zusätzlichen Informationen zu einer Aufgabe dar. Jedes task-Objekt hat ein Detailobjekt.
+ms.openlocfilehash: 74ba1c5b7c607f30253463e6cfc256fd3119bf45
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27019818"
+---
 # <a name="plannertaskdetails-resource-type"></a>plannerTaskDetails-Ressourcentyp
 
 Die **plannerTaskDetails**-Ressource stellt die zusätzlichen Informationen zu einer Aufgabe dar. Jedes [task](plannertask.md)-Objekt hat ein Detailobjekt.
@@ -7,16 +17,16 @@ Die **plannerTaskDetails**-Ressource stellt die zusätzlichen Informationen zu e
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[plannerTaskDetails abrufen](../api/plannertaskdetails_get.md) | [plannerTaskDetails](plannertaskdetails.md) |Dient zum Lesen der Eigenschaften und Beziehungen eines **plannerTaskDetails**-Objekts.|
-|[Update](../api/plannertaskdetails_update.md) | [plannerTaskDetails](plannertaskdetails.md)    |Dient zum Aktualisieren des **plannerTaskDetails**-Objekts. |
+|[plannerTaskDetails abrufen](../api/plannertaskdetails-get.md) | [plannerTaskDetails](plannertaskdetails.md) |Dient zum Lesen der Eigenschaften und Beziehungen eines **plannerTaskDetails**-Objekts.|
+|[Update](../api/plannertaskdetails-update.md) | [plannerTaskDetails](plannertaskdetails.md)    |Dient zum Aktualisieren des **plannerTaskDetails**-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|Die Sammlung von Checklistenelementen für die Aufgabe.|
 |description|String|Beschreibung der Aufgabe.|
-|id|Zeichenfolge| Schreibgeschützt. ID der Aufgabendetails. Sie ist 28 Zeichen lang, und es wird zwischen Groß-und Kleinschreibung unterschieden. Für den Dienst wird eine [Formatüberprüfung](planner_identifiers_disclaimer.md) durchgeführt.|
-|previewType|string|Hierdurch wird der Typ der Vorschau festgelegt, die für die Aufgabe angezeigt wird. Mögliche Werte: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Bei Festlegung auf `automatic` wird die angezeigte Vorschau von der App ausgewählt, mit der die Aufgabe angezeigt wird.|
+|id|String| Schreibgeschützt. ID des die Aufgabendetails. Es ist eine 28 Zeichen lang und Groß-/Kleinschreibung beachtet. [Format Validierung](planner-identifiers-disclaimer.md) erfolgt für den Dienst.|
+|previewType|string|Hierdurch wird den Typ der Vorschau, die für den Vorgang wird angezeigt. Die möglichen Werte sind: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Bei Festlegung auf `automatic` die angezeigte Vorschau wird von der app anzeigen den Vorgang ausgewählt.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|Die Sammlung der Verweise für die Aufgabe.|
 
 ## <a name="relationships"></a>Beziehungen
@@ -26,11 +36,10 @@ Keine
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.plannerTaskDetails"
 }-->
 

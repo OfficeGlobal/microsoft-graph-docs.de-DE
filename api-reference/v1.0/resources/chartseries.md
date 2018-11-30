@@ -1,3 +1,13 @@
+---
+title: ChartSeries-Ressourcentyp
+description: Stellt eine Datenreihe in einem Diagramm dar.
+ms.openlocfilehash: 970a35511b1851e09c47257bf3f67d05228d4454
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27016471"
+---
 # <a name="chartseries-resource-type"></a>ChartSeries-Ressourcentyp
 
 Stellt eine Datenreihe in einem Diagramm dar.
@@ -7,23 +17,23 @@ Stellt eine Datenreihe in einem Diagramm dar.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[ChartSeries abrufen](../api/chartseries_get.md) | [ChartSeries](chartseries.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartSeries-Objekts.|
-|[ChartPoints erstellen](../api/chartseries_post_points.md) |[ChartPoints](chartpoint.md)| Dient zum Erstellen eines neuen ChartPoints durch Veröffentlichen in der Punkteammlung.|
-|[Punkte auflisten](../api/chartseries_list_points.md) |[ChartPoints-Sammlung](chartpoint.md)| Dient zum Abrufen einer ChartPoints-Objeksammlung.|
-|[Update](../api/chartseries_update.md) | [ChartSeries](chartseries.md)    |Dient zum Aktualisieren des ChartSeries-Objekts. |
-|[List](../api/chartseries_list.md) | [ChartSeries-Sammlung](chartseries.md) |Dient zum Abrufen der chartSeries-Objektsammlung. |
-|[Itemat](../api/chartseriescollection_itemat.md)|[ChartSeries](chartseries.md)|Ruft eine Datenreihe anhand ihrer Position in der Sammlung ab.|
+|[ChartSeries abrufen](../api/chartseries-get.md) | [WorkbookChartSeries](chartseries.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartSeries-Objekts.|
+|[ChartPoints erstellen](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| Dient zum Erstellen eines neuen ChartPoints durch Veröffentlichen in der Punkteammlung.|
+|[Punkte auflisten](../api/chartseries-list-points.md) |[ChartPoints-Sammlung](chartpoint.md)| Dient zum Abrufen einer ChartPoints-Objeksammlung.|
+|[Update](../api/chartseries-update.md) | [WorkbookChartSeries](chartseries.md) |Dient zum Aktualisieren des ChartSeries-Objekts. |
+|[List](../api/chartseries-list.md) | [WorkbookChartSeries](chartseries.md) -Auflistung |Dient zum Abrufen der chartSeries-Objektsammlung. |
+|[ItemAt](../api/chartseriescollection-itemat.md)|[WorkbookChartSeries](chartseries.md)|Ruft eine Datenreihe anhand ihrer Position in der Sammlung ab.|
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |name|string|Gibt den Namen einer Datenreihe in einem Diagramm an.|
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Format|[ChartSeriesFormat](chartseriesformat.md)|Stellt die Formatierung für eine Diagrammdatenreihe dar, einschließlich Füllung und Linienformatierung. Schreibgeschützt.|
-|Punkte|[ChartPoints-Sammlung](chartpoint.md)|Stellt eine Sammlung aller Punkte in der Datenreihe dar. Schreibgeschützt.|
+|Format|[WorkbookChartSeriesFormat](chartseriesformat.md)|Stellt die Formatierung für eine Diagrammdatenreihe dar, einschließlich Füllung und Linienformatierung. Schreibgeschützt.|
+|points|[WorkbookChartPoint](chartpoint.md) -Auflistung|Stellt eine Sammlung aller Punkte in der Datenreihe dar. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -31,10 +41,11 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartSeries"
+  "@odata.type": "microsoft.graph.workbookChartSeries"
 }-->
 
 ```json

@@ -1,4 +1,16 @@
-# <a name="quota-resource-type"></a>quota-Ressourcentyp
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Kontingent
+ms.openlocfilehash: 54eb88bdc048c6b63bb6f2d0a23fb05023663ca7
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27017023"
+---
+# <a name="quota-resource-type"></a>Quota-Ressourcentyp
 
 Die **quota**-Ressource enthält Details zu Leerzeichenbeschränkungen auf einer[Laufwerk](drive.md)-Ressource.
 
@@ -41,12 +53,14 @@ Es folgt eine JSON-Darstellung der Ressource.
 | `critical` | Verbleibendes Kontingent weniger als 1 % des gesamten Kontingentplatzes.                                                                                                                       |
 | `exceeded` | Das verwendete Kontingent hat das gesamte Kontingent überschritten. Neue Dateien oder Ordner können nicht hinzugefügt werden, wenn sie nicht unter dem Betrag für das Gesamtkontingent liegen oder mehr Speicherplatz erworben wird. |
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "quota resource",
-  "keywords": "",
+  "description": "The quota facet provides information about how much space the OneDrive has available.",
+  "keywords": "quota,available,remaining,used",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/quota.md:
+      Found potential enums in resource example that weren't defined in a table:(normal, nearing,critical,exceeded) are in resource, but () are in table"
+  ],
+  "tocPath": "Facets/Quota"
+} -->

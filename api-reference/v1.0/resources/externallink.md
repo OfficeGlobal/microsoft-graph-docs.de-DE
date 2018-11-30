@@ -1,3 +1,13 @@
+---
+title: externalLink-Ressourcentyp
+description: Eine URL, über die eine OneNote-Seite oder ein OneNote-Notizbuch geöffnet wird.
+ms.openlocfilehash: ae25c6220545ff55259a18b6180225cc602e129b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27016870"
+---
 # <a name="externallink-resource-type"></a>externalLink-Ressourcentyp
 
 Eine URL, über die eine OneNote-Seite oder ein OneNote-Notizbuch geöffnet wird.
@@ -21,7 +31,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |href|String|Die URL des Links.|
 

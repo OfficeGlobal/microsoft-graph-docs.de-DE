@@ -1,24 +1,34 @@
+---
+title: inferenceClassification-Ressourcentyp
+description: 'Klassifizierung der Nachrichten eines Benutzers, um den Fokus auf die Nachrichten zu legen, die für den Benutzer relevanter oder wichtiger sind. '
+ms.openlocfilehash: 0fb1e01ad9710a0ff5f2de7f63808a6f3e988c13
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27016874"
+---
 # <a name="inferenceclassification-resource-type"></a>inferenceClassification-Ressourcentyp
 
 Klassifizierung der Nachrichten eines Benutzers, um den Fokus auf die Nachrichten zu legen, die für den Benutzer relevanter oder wichtiger sind. 
 
-Weitere Informationen finden Sie unter [Verwalten eines Posteingang mit Fokus](manage_focused_inbox.md).
+Weitere Informationen finden Sie unter [Verwalten eines Posteingang mit Fokus](manage-focused-inbox.md).
 
 
 ## <a name="methods"></a>Methoden
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[inferenceClassificationOverride erstellen](../api/inferenceclassification_post_overrides.md) |[inferenceClassificationOverride](inferenceclassificationoverride.md)| Erstellen einer Außerkraftsetzung für einen Absender, der durch eine SMTP-Adresse identifiziert wird. Künftige Nachrichten von dieser SMTP-Adresse werden durchgängig klassifiziert wie in der Außerkraftsetzung angegeben.|
-|[Außerkraftsetzungen auflisten](../api/inferenceclassification_list_overrides.md) |[inferenceClassificationOverride-Sammlung](inferenceclassificationoverride.md)| Dient zum Abrufen der Außerkraftsetzungen, die ein Benutzer eingerichtet hat, um Nachrichten von bestimmten Absendern immer auf eine bestimmte Art und Weise zu klassifizieren.|
+|[inferenceClassificationOverride erstellen](../api/inferenceclassification-post-overrides.md) |[inferenceClassificationOverride](inferenceclassificationoverride.md)| Erstellen einer Außerkraftsetzung für einen Absender, der durch eine SMTP-Adresse identifiziert wird. Künftige Nachrichten von dieser SMTP-Adresse werden durchgängig klassifiziert wie in der Außerkraftsetzung angegeben.|
+|[Außerkraftsetzungen auflisten](../api/inferenceclassification-list-overrides.md) |[inferenceClassificationOverride-Sammlung](inferenceclassificationoverride.md)| Dient zum Abrufen der Außerkraftsetzungen, die ein Benutzer eingerichtet hat, um Nachrichten von bestimmten Absendern immer auf eine bestimmte Art und Weise zu klassifizieren.|
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |id|string| Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Außerkraftsetzungen|[inferenceClassificationOverride-Sammlung](inferenceclassificationoverride.md)| Eine Reihe von Außerkraftsetzungen für einen Benutzer, um Nachrichten von bestimmten Absendern immer auf eine bestimmte Art und Weise zu klassifizieren: `focused` oder `other`. Schreibgeschützt. Lässt Nullwerte zu.|
 
@@ -31,7 +41,18 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.inferenceClassification"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.inferenceClassification",
+  "@odata.annotations": [
+    {
+      "property": "overrides",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
