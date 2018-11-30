@@ -1,0 +1,204 @@
+---
+title: Liste signIns
+description: Ruft die Azure AD Benutzer Anmeldungen für Ihre Mandanten. In den Protokollen-Anmeldung sind derzeit interaktiv in Art sind (wobei ein Benutzername und Kennwort als Teil des Autorisierungstoken übergeben wird) und erfolgreicher federated Anmeldungen Anmeldevorgängen enthalten.  Die neuesten SignIns werden zuerst zurückgegeben.
+ms.openlocfilehash: 3abca59187dcc9667789e33bcefc1bcc51d5ab10
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27059756"
+---
+# <a name="list-signins"></a><span data-ttu-id="af209-105">Liste signIns</span><span class="sxs-lookup"><span data-stu-id="af209-105">List signIns</span></span>
+
+<span data-ttu-id="af209-106">Ruft die Azure AD Benutzer Anmeldungen für Ihre Mandanten.</span><span class="sxs-lookup"><span data-stu-id="af209-106">Retrieves the Azure AD user sign-ins for your tenant.</span></span> <span data-ttu-id="af209-107">In den Protokollen-Anmeldung sind derzeit interaktiv in Art sind (wobei ein Benutzername und Kennwort als Teil des Autorisierungstoken übergeben wird) und erfolgreicher federated Anmeldungen Anmeldevorgängen enthalten.</span><span class="sxs-lookup"><span data-stu-id="af209-107">Sign-ins that are interactive in nature (where a username/password is passed as part of authorization token) and successful federated sign-ins are currently included in the sign-in logs.</span></span>  <span data-ttu-id="af209-108">Die neuesten SignIns werden zuerst zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="af209-108">The most recent signIns are returned first.</span></span>
+
+
+## <a name="permissions"></a><span data-ttu-id="af209-109">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="af209-109">Permissions</span></span>
+<span data-ttu-id="af209-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="af209-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="af209-112">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="af209-112">Permission type</span></span>      | <span data-ttu-id="af209-113">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="af209-113">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="af209-114">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="af209-114">Delegated (work or school account)</span></span> | <span data-ttu-id="af209-115">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="af209-115">AuditLog.Read.All</span></span> |
+|<span data-ttu-id="af209-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="af209-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="af209-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="af209-117">Not supported</span></span>   |
+|<span data-ttu-id="af209-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="af209-118">Application</span></span> | <span data-ttu-id="af209-119">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="af209-119">AuditLog.Read.All</span></span> | 
+
+<span data-ttu-id="af209-120">Darüber hinaus müssen apps Azure AD [ordnungsgemäß registriert](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) sein.</span><span class="sxs-lookup"><span data-stu-id="af209-120">In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="af209-121">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="af209-121">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET auditLogs/signIns
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="af209-122">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="af209-122">Optional query parameters</span></span>
+<span data-ttu-id="af209-123">Diese Methode unterstützt die folgende OData-Abfrageparameter zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="af209-123">This method supports the following OData Query Parameters to help customize the response.</span></span> <span data-ttu-id="af209-124">Überprüfen Sie die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) dafür, wie diese Parameter zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="af209-124">Check [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) for how to use these parameters.</span></span>
+
+|<span data-ttu-id="af209-125">Name</span><span class="sxs-lookup"><span data-stu-id="af209-125">Name</span></span>     |<span data-ttu-id="af209-126">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="af209-126">Description</span></span>                            |<span data-ttu-id="af209-127">Beispiel</span><span class="sxs-lookup"><span data-stu-id="af209-127">Example</span></span>|
+|:--------------------|----------------|------------------------------------------------------------------------|
+|[<span data-ttu-id="af209-128">$filter</span><span class="sxs-lookup"><span data-stu-id="af209-128">$filter</span></span>](https://developer.microsoft.com/graph/docs/concepts/query_parameters#filter-parameter)|<span data-ttu-id="af209-129">Dient zum Filtern von Ergebnissen (Zeilen).</span><span class="sxs-lookup"><span data-stu-id="af209-129">Filters results (rows).</span></span> |`/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
+|[<span data-ttu-id="af209-130">$top</span><span class="sxs-lookup"><span data-stu-id="af209-130">$top</span></span>](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top-parameter)|<span data-ttu-id="af209-131">Dient zum Festlegen der Seitengröße von Ergebnissen.</span><span class="sxs-lookup"><span data-stu-id="af209-131">Sets the page size of results.</span></span>|`/auditLogs/signIns?$top=1`|
+|[<span data-ttu-id="af209-132">$skiptoken</span><span class="sxs-lookup"><span data-stu-id="af209-132">$skiptoken</span></span>](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skiptoken-parameter)|<span data-ttu-id="af209-133">Ruft ab, das die nächste Seite mit Ergebnissen aus Ergebnis, die festgelegt über mehrere Seiten erstrecken.</span><span class="sxs-lookup"><span data-stu-id="af209-133">Retrieves the next page of results from result sets that span multiple pages.</span></span>|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+
+### <a name="list-of-attributes-supported-by-filter-parameter"></a><span data-ttu-id="af209-134">Liste der Attribute von $filter Parameter unterstützt werden</span><span class="sxs-lookup"><span data-stu-id="af209-134">List of attributes supported by $filter parameter</span></span>
+|<span data-ttu-id="af209-135">Name des Attributs</span><span class="sxs-lookup"><span data-stu-id="af209-135">Attribute Name</span></span> |<span data-ttu-id="af209-136">Unterstützte Operatoren</span><span class="sxs-lookup"><span data-stu-id="af209-136">Supported operators</span></span>|
+|:----------------|:------|
+|<span data-ttu-id="af209-137">id</span><span class="sxs-lookup"><span data-stu-id="af209-137">id</span></span>|<span data-ttu-id="af209-138">eq</span><span class="sxs-lookup"><span data-stu-id="af209-138">eq</span></span>|
+|<span data-ttu-id="af209-139">userId</span><span class="sxs-lookup"><span data-stu-id="af209-139">userId</span></span>|<span data-ttu-id="af209-140">eq</span><span class="sxs-lookup"><span data-stu-id="af209-140">eq</span></span>|
+|<span data-ttu-id="af209-141">appId</span><span class="sxs-lookup"><span data-stu-id="af209-141">appId</span></span>|<span data-ttu-id="af209-142">eq</span><span class="sxs-lookup"><span data-stu-id="af209-142">eq</span></span>|
+|<span data-ttu-id="af209-143">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="af209-143">createdDateTime</span></span>| <span data-ttu-id="af209-144">EQ le ge</span><span class="sxs-lookup"><span data-stu-id="af209-144">eq, le, ge</span></span>|
+|<span data-ttu-id="af209-145">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="af209-145">userDisplayName</span></span>| <span data-ttu-id="af209-146">EQ startswith</span><span class="sxs-lookup"><span data-stu-id="af209-146">eq, startswith</span></span>|
+|<span data-ttu-id="af209-147">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="af209-147">userPrincipalName</span></span>| <span data-ttu-id="af209-148">EQ startswith</span><span class="sxs-lookup"><span data-stu-id="af209-148">eq, startswith</span></span>|
+|<span data-ttu-id="af209-149">appDisplayName</span><span class="sxs-lookup"><span data-stu-id="af209-149">appDisplayName</span></span>| <span data-ttu-id="af209-150">EQ startswith</span><span class="sxs-lookup"><span data-stu-id="af209-150">eq, startswith</span></span>|
+|<span data-ttu-id="af209-151">ipAddress</span><span class="sxs-lookup"><span data-stu-id="af209-151">ipAddress</span></span>| <span data-ttu-id="af209-152">EQ startswith</span><span class="sxs-lookup"><span data-stu-id="af209-152">eq, startswith</span></span>|
+|<span data-ttu-id="af209-153">/ Ortsname des Standorts</span><span class="sxs-lookup"><span data-stu-id="af209-153">location/city</span></span>| <span data-ttu-id="af209-154">EQ startswith</span><span class="sxs-lookup"><span data-stu-id="af209-154">eq, startswith</span></span>|
+|<span data-ttu-id="af209-155">Speicherort/Status</span><span class="sxs-lookup"><span data-stu-id="af209-155">location/state</span></span>| <span data-ttu-id="af209-156">EQ startswith</span><span class="sxs-lookup"><span data-stu-id="af209-156">eq, startswith</span></span>|
+|<span data-ttu-id="af209-157">Speicherort/countryOrRegion</span><span class="sxs-lookup"><span data-stu-id="af209-157">location/countryOrRegion</span></span>| <span data-ttu-id="af209-158">EQ startswith</span><span class="sxs-lookup"><span data-stu-id="af209-158">eq, startswith</span></span>|
+|<span data-ttu-id="af209-159">Status/errorCode</span><span class="sxs-lookup"><span data-stu-id="af209-159">status/errorCode</span></span>|<span data-ttu-id="af209-160">eq</span><span class="sxs-lookup"><span data-stu-id="af209-160">eq</span></span>|
+|<span data-ttu-id="af209-161">InitiatedBy/Mitgliedsname</span><span class="sxs-lookup"><span data-stu-id="af209-161">initiatedBy/user/id</span></span>|<span data-ttu-id="af209-162">eq</span><span class="sxs-lookup"><span data-stu-id="af209-162">eq</span></span>|
+|<span data-ttu-id="af209-163">InitiatedBy/Benutzer/displayName</span><span class="sxs-lookup"><span data-stu-id="af209-163">initiatedBy/user/displayName</span></span>| <span data-ttu-id="af209-164">eq</span><span class="sxs-lookup"><span data-stu-id="af209-164">eq</span></span>|
+|<span data-ttu-id="af209-165">InitiatedBy/Benutzer/userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="af209-165">initiatedBy/user/userPrincipalName</span></span>| <span data-ttu-id="af209-166">EQ startswith</span><span class="sxs-lookup"><span data-stu-id="af209-166">eq, startswith</span></span>|
+|<span data-ttu-id="af209-167">clientAppUsed</span><span class="sxs-lookup"><span data-stu-id="af209-167">clientAppUsed</span></span>| <span data-ttu-id="af209-168">eq</span><span class="sxs-lookup"><span data-stu-id="af209-168">eq</span></span>|
+|<span data-ttu-id="af209-169">conditionalAccessStatus</span><span class="sxs-lookup"><span data-stu-id="af209-169">conditionalAccessStatus</span></span> | <span data-ttu-id="af209-170">eq</span><span class="sxs-lookup"><span data-stu-id="af209-170">eq</span></span>|
+|<span data-ttu-id="af209-171">DeviceDetail-browser</span><span class="sxs-lookup"><span data-stu-id="af209-171">deviceDetail/browser</span></span>| <span data-ttu-id="af209-172">EQ startswith</span><span class="sxs-lookup"><span data-stu-id="af209-172">eq, startswith</span></span>|
+|<span data-ttu-id="af209-173">DeviceDetail/operatingSystem</span><span class="sxs-lookup"><span data-stu-id="af209-173">deviceDetail/operatingSystem</span></span>| <span data-ttu-id="af209-174">EQ startswith</span><span class="sxs-lookup"><span data-stu-id="af209-174">eq, startswith</span></span>|
+|<span data-ttu-id="af209-175">correlationId</span><span class="sxs-lookup"><span data-stu-id="af209-175">correlationId</span></span>| <span data-ttu-id="af209-176">eq</span><span class="sxs-lookup"><span data-stu-id="af209-176">eq</span></span>|
+|<span data-ttu-id="af209-177">riskDetail</span><span class="sxs-lookup"><span data-stu-id="af209-177">riskDetail</span></span>| <span data-ttu-id="af209-178">eq</span><span class="sxs-lookup"><span data-stu-id="af209-178">eq</span></span>|
+|<span data-ttu-id="af209-179">riskLevelAggregated</span><span class="sxs-lookup"><span data-stu-id="af209-179">riskLevelAggregated</span></span>| <span data-ttu-id="af209-180">eq</span><span class="sxs-lookup"><span data-stu-id="af209-180">eq</span></span>|
+|<span data-ttu-id="af209-181">riskLevelDuringSignIn</span><span class="sxs-lookup"><span data-stu-id="af209-181">riskLevelDuringSignIn</span></span>| <span data-ttu-id="af209-182">eq</span><span class="sxs-lookup"><span data-stu-id="af209-182">eq</span></span>|
+|<span data-ttu-id="af209-183">riskEventTypes</span><span class="sxs-lookup"><span data-stu-id="af209-183">riskEventTypes</span></span>| <span data-ttu-id="af209-184">eq</span><span class="sxs-lookup"><span data-stu-id="af209-184">eq</span></span>|
+|<span data-ttu-id="af209-185">riskState</span><span class="sxs-lookup"><span data-stu-id="af209-185">riskState</span></span>| <span data-ttu-id="af209-186">eq</span><span class="sxs-lookup"><span data-stu-id="af209-186">eq</span></span>|
+|<span data-ttu-id="af209-187">originalRequestId</span><span class="sxs-lookup"><span data-stu-id="af209-187">originalRequestId</span></span>| <span data-ttu-id="af209-188">eq</span><span class="sxs-lookup"><span data-stu-id="af209-188">eq</span></span>|
+|<span data-ttu-id="af209-189">tokenIssuerName</span><span class="sxs-lookup"><span data-stu-id="af209-189">tokenIssuerName</span></span>| <span data-ttu-id="af209-190">eq</span><span class="sxs-lookup"><span data-stu-id="af209-190">eq</span></span>|
+|<span data-ttu-id="af209-191">tokenIssuerType</span><span class="sxs-lookup"><span data-stu-id="af209-191">tokenIssuerType</span></span>| <span data-ttu-id="af209-192">eq</span><span class="sxs-lookup"><span data-stu-id="af209-192">eq</span></span>|
+|<span data-ttu-id="af209-193">resourceDisplayName</span><span class="sxs-lookup"><span data-stu-id="af209-193">resourceDisplayName</span></span>| <span data-ttu-id="af209-194">eq</span><span class="sxs-lookup"><span data-stu-id="af209-194">eq</span></span>|
+|<span data-ttu-id="af209-195">resourceId</span><span class="sxs-lookup"><span data-stu-id="af209-195">resourceId</span></span>| <span data-ttu-id="af209-196">eq</span><span class="sxs-lookup"><span data-stu-id="af209-196">eq</span></span>|
+
+
+## <a name="response"></a><span data-ttu-id="af209-197">Antwort</span><span class="sxs-lookup"><span data-stu-id="af209-197">Response</span></span>
+<span data-ttu-id="af209-198">Wenn der Vorgang erfolgreich war, gibt diese Methode eine `200 OK` Antwortcode und Auflistung von Objekten im Antworttext [Anmelden](../resources/signin.md) .</span><span class="sxs-lookup"><span data-stu-id="af209-198">If successful, this method returns a `200 OK` response code and collection of [signIn](../resources/signin.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="af209-199">Beispiel</span><span class="sxs-lookup"><span data-stu-id="af209-199">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="af209-200">Anforderung</span><span class="sxs-lookup"><span data-stu-id="af209-200">Request</span></span>
+<span data-ttu-id="af209-201">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="af209-201">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "get_signins"
+}-->
+```http
+GET https://graph.microsoft.com/beta/auditLogs/signIns
+```
+##### <a name="response"></a><span data-ttu-id="af209-202">Antwort</span><span class="sxs-lookup"><span data-stu-id="af209-202">Response</span></span>
+<span data-ttu-id="af209-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="af209-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.signIn",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 264
+```
+```json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
+    "value": [{
+        "id":"b01b1726-0147-425e-a7f7-21f252050400",
+        "createdDateTime":"2018-11-06T18:48:33.8527147Z",
+        "userDisplayName":"Jon Doe",
+         "userPrincipalName":"admin@aad171.ccsctp.net",
+         "userId":"d7cc485d-2c1b-422c-98fd-5ce52859a4a3",
+        "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+         "appDisplayName":"Azure Portal",
+         "ipAddress":"207.254.19.10",
+         "clientAppUsed":"Browser",
+        "mfaDetail":null,
+         "correlationId":"65dd87ce-2183-419e-81a9-d6e20379bcc2",
+         "conditionalAccessStatus":"notApplied",
+        "originalRequestId":null,
+        "isInteractive":true,
+        "tokenIssuerName":null,
+        "tokenIssuerType":"AzureAD",
+        "processingTimeInMilliseconds":0,
+        "riskDetail":"none",
+        "riskLevelAggregated":"none",
+        "riskLevelDuringSignIn":"none",
+        "riskState":"none",
+        "riskEventTypes":[
+
+        ],
+        "resourceDisplayName":"windows azure service management api",
+        "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
+        "authenticationMethodsUsed":[
+
+        ],
+        "status":{
+            "errorCode":50140,
+            "failureReason":"This error occurred due to 'Keep me signed in' interrupt when the user was signing-in.",
+            "additionalDetails":null
+        },
+        "deviceDetail":{
+            "deviceId":null,
+            "displayName":null,
+            "operatingSystem":"Windows 7",
+            "browser":"Chrome 63.0.3239",
+            "isCompliant":null,
+            "isManaged":null,
+            "trustType":null
+        },
+        "location":{
+            "city":"Lithia Springs",
+            "state":"Georgia",
+            "countryOrRegion":"US",
+            "geoCoordinates":{
+                "altitude":null,
+                "latitude":33.7930908203125,
+                "longitude":-84.445358276367188
+            }
+        },
+        "appliedConditionalAccessPolicies":[
+            {
+            "id":"6551c58c-e5da-4036-a6ea-c2c3fad264f1",
+            "displayName":"New Name here4",
+            "enforcedGrantControls":[
+                "Mfa",
+                "RequireCompliantDevice"
+            ],
+            "enforcedSessionControls":[
+
+            ],
+            "result":"notApplied"
+            },
+            {
+            "id":"b645a140-20fe-4ce0-a724-18ab201e9026",
+            "displayName":"PipelineTest4",
+            "enforcedGrantControls":[
+
+            ],
+            "enforcedSessionControls":[
+
+            ],
+            "result":"notEnabled"
+            }
+        ],
+        "authenticationProcessingDetails":[
+
+        ],
+        "networkLocationDetails":[
+
+        ]
+        }
+    
+    ]
+}
+
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List signIns",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
