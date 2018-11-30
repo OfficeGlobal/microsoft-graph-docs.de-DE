@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: ItemReference
+ms.openlocfilehash: 3af3af4b366c61119ba48aaebdc461e356f23464
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27016272"
+---
 # <a name="itemreference-resource-type"></a>ItemReference-Ressourcentyp
 
 Die **ItemReference**-Ressource enthält Informationen, die erforderlich sind, um ein [DriveItem](driveitem.md) über die API zu adressieren.
@@ -15,6 +27,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ```json
 {
   "driveId": "string",
+  "driveType": "personal | business | documentLibrary",
   "id": "string",
   "name": "string",
   "path": "string",
@@ -25,16 +38,21 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ## <a name="properties"></a>Eigenschaften
 
-| Eigenschaft      | Typ                              | Beschreibung                                                                                                |
-| :------------ | :-------------------------------- | :--------------------------------------------------------------------------------------------------------- |
-| driveId       | Zeichenfolge                            | Eindeutiger Bezeichner der drive-Instanz, die das Element enthält. Schreibgeschützt.                                 |
-| id            | String                            | Eindeutiger Bezeichner des Elements im Laufwerk. Schreibgeschützt.                                                     |
-| name          | Zeichenfolge                            | Der Name des Elements, auf das verwiesen wird. Schreibgeschützt.                                                          |
-| Pfad          | String                            | Pfad, der verwendet werden kann, um zu dem Element zu navigieren. Schreibgeschützt.                                                  |
-| shareId       | String                            | Ein eindeutiger Bezeichner für eine freigegebene Ressource, auf die über [Freigabe](../api/shares_get.md)-API zugegriffen werden kann. |
-| sharepointIds | [sharepointIds](sharepointids.md) | Gibt Bezeichner zurück, die für SharePoint REST-Kompatibilität nützlich sind. Schreibgeschützt.                                   |
+| Eigenschaft      | Typ              | Beschreibung
+|:--------------|:------------------|:-----------------------------------------
+| driveId       | String            | Eindeutiger Bezeichner der drive-Instanz, die das Element enthält. Schreibgeschützt.
+| driveType     | string            | Identifiziert den Laufwerkstyp. Werte finden Sie unter [drive][]-Ressource.
+| id            | String            | Eindeutiger Bezeichner des Elements im Laufwerk. Schreibgeschützt.
+| name          | Zeichenfolge            | Der Name des Elements, auf das verwiesen wird. Schreibgeschützt.
+| Pfad          | String            | Pfad, der verwendet werden kann, um zu dem Element zu navigieren. Schreibgeschützt.
+| shareId       | String            | Ein eindeutiger Bezeichner für eine freigegebene Ressource, auf die über [Freigabe][]-API zugegriffen werden kann.
+| sharepointIds | [sharepointIds][] | Gibt Bezeichner zurück, die für SharePoint REST-Kompatibilität nützlich sind. Schreibgeschützt.
 
-## <a name="remarks"></a>HinwBemerkungeneise
+[drive]: ../resources/drive.md
+[sharepointIds]: ../resources/sharepointids.md
+[Freigabe]: ../api/shares-get.md
+
+## <a name="remarks"></a>Hinweise
 
 Um ein **driveItem**-Element aus einer **itemReference**-Ressource zu adressieren, erstellen Sie eine URL im folgenden Format:
 
@@ -50,8 +68,11 @@ Um den lesbaren Pfad für ein Breadcrumb abzurufen, können Sie alles bis zum er
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "itemReference resource",
-  "keywords": "",
+  "description": "ItemReference returns a pointer to another item.",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/itemreference.md:
+      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
+  ],
+  "tocPath": "Resources/ItemReference"
+} -->
