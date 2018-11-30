@@ -1,4 +1,18 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Image
+ms.openlocfilehash: c9e647ef630e8822d835aec1bd72b9f3c18f2e3e
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27063197"
+---
 # <a name="image-resource-type"></a>Image-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Die **Image**-Ressourc gruppiert bildbezogene Eigenschaften in einer einzelnen Struktur. Wenn ein [**DriveItem**](driveitem.md) ein **image**-Facet ungleich Null aufweist, stellt das Element eine Bitmapdatei dar.
 
@@ -6,18 +20,11 @@ Die **Image**-Ressourc gruppiert bildbezogene Eigenschaften in einer einzelnen S
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
-Es folgt eine JSON-Darstellung der Ressource.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@odata.type": "microsoft.graph.image"
-}-->
-
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.image" } -->
 ```json
 {
-  "height": 1024,
-  "width": 1024
+  "width": 100,
+  "height": 200
 }
 ```
 
@@ -28,20 +35,17 @@ Es folgt eine JSON-Darstellung der Ressource.
 | **height** | Int32 | Optional. Die Höhe des Bilds in Pixel. Schreibgeschützt. |
 | **width**  | Int32 | Optional. Die Breite des Bilds in Pixel. Schreibgeschützt.  |
 
+## <a name="remarks"></a>Hinweise
 
-## <a name="remarks"></a>Bemerkungen
-
-In OneDrive for Business wird diese Ressource für Elemente zurückgegeben, von denen basierend auf der Dateierweiterung davon ausgegangen wird, dass es sich um Bilder handelt. Diese Ressource gibt keine Eigenschaften in OneDrive for Business zurück.
+In OneDrive for Business wird diese Ressource für Elemente zurückgegeben, von denen basierend auf der Dateierweiterung davon ausgegangen wird, dass es sich um Bilder handelt.
 
 Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).
 
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "image resource",
-  "keywords": "",
+  "description": "The image facet describes properties of an image like width and height",
+  "keywords": "image,width,height,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Image"
+} -->

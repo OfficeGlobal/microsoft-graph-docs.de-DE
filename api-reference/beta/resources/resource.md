@@ -1,4 +1,16 @@
+---
+title: resource-Ressourcentyp
+description: 'Ein Bild oder eine andere Dateiressource auf einer OneNote-Seite. '
+ms.openlocfilehash: 8e0e049cab613c7c1a72c8c96e21bac77c507ae1
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27063890"
+---
 # <a name="resource-resource-type"></a>resource-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Ein Bild oder eine andere Dateiressource auf einer OneNote-Seite. 
 
@@ -52,8 +64,7 @@ Keine.
 ## <a name="methods"></a>Methoden
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Binärdaten von Ressource abrufen](../api/resource_get.md) | Stream |Dient zum Abrufen der Binärdaten einer Datei- oder Bildressource.|
-
+|[Binärdaten von Ressource abrufen](../api/resource-get.md) | Stream |Dient zum Abrufen der Binärdaten einer Datei- oder Bildressource.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

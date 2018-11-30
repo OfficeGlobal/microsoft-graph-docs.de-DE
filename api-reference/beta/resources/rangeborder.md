@@ -1,4 +1,16 @@
+---
+title: RangeBorder-Ressourcentyp
+description: Stellt den Rahmen eines Objekts dar.
+ms.openlocfilehash: ace494607d7e5803bf0ab0be5d5b3c86be875dcb
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27065695"
+---
 # <a name="rangeborder-resource-type"></a>RangeBorder-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Stellt den Rahmen eines Objekts dar.
 
@@ -7,13 +19,13 @@ Stellt den Rahmen eines Objekts dar.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[RangeBorder abrufen](../api/rangeborder_get.md) | [RangeBorder](rangeborder.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des rangeBorder-Objekts.|
-|[Update](../api/rangeborder_update.md) | [RangeBorder](rangeborder.md)    |Dient zum Aktualisieren des RangeBorder-Objekts. |
-|[List](../api/rangeborder_list.md) | [RangeBorder-Sammlung](rangeborder.md) |Dient zum Abrufen der RangeBorder-Objeksammlung. |
-|[Itemat](../api/rangebordercollection_itemat.md)|[RangeBorder](rangeborder.md)|Dient zum Abrufen eines Rahmenobjekts mithilfe seines Index.|
+|[RangeBorder abrufen](../api/rangeborder-get.md) | [RangeBorder](rangeborder.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des rangeBorder-Objekts.|
+|[Update](../api/rangeborder-update.md) | [RangeBorder](rangeborder.md) |Dient zum Aktualisieren des RangeBorder-Objekts. |
+|[List](../api/rangeborder-list.md) | [RangeBorder-Sammlung](rangeborder.md) |Dient zum Abrufen der RangeBorder-Objeksammlung. |
+|[Itemat](../api/rangebordercollection-itemat.md)|[RangeBorder](rangeborder.md)|Dient zum Abrufen eines Rahmenobjekts mithilfe seines Index.|
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |color|string|HTML-Farbcode, der die Farbe der Rahmenlinie, des Formulars #RRGGBB (z. B.  „FFA500“) oder als benannte HTML-Farbe (z. B. „orange“) darstellt.|
 |id|string|Stellt die Rahmen-ID dar. Mögliche Werte: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Schreibgeschützt.|

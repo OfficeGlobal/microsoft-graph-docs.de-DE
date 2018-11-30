@@ -1,9 +1,21 @@
+---
+title: reminder-Ressourcentyp
+description: Eine Erinnerung für ein Ereignis in einem Benutzerkalender.
+ms.openlocfilehash: e7b7e2266b5959c6aa4927ecad52e24342d607e4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27061456"
+---
 # <a name="reminder-resource-type"></a>reminder-Ressourcentyp
 
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
+Eine Erinnerung für ein [Ereignis](event.md) in einem [Kalender](calendar.md)des Benutzers.
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |changeKey|String|Gibt die Version der Erinnerung an. Jedes Mal, wenn die Erinnerung geändert wird, wird auch **changeKey** geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
 |eventEndTime|[DateTimeTimeZone](datetimetimezone.md)|Datum, Uhrzeit und Zeitzone für das Ende des Ereignisses.|
@@ -13,7 +25,6 @@
 |eventSubject|String|Der Text der Betreffzeile des Ereignisses.|
 |eventWebLink|String|Die URL zum Öfnen des Ereignisses in Outlook im Web.<br/><br/>Das Ereignis wird im Browser geöffnet, wenn Sie über Outlook im Web bei Ihrem Postfach angemeldet sind. Sie werden aufgefordert, sich anzumelden, wenn Sie noch nicht beim Browser angemeldet sind.<br/><br/>Auf diese URL kann von einem iFrame aus zugegriffen werden.|
 |reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|Datum, Uhrzeit und Zeitzone für das Ausführen der Erinnerung.|
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

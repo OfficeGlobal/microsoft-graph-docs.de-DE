@@ -1,10 +1,22 @@
+---
+title: patchContentCommand-Ressourcentyp
+description: Die an einer OneNote-Seite vorzunehmenden Änderungen in einer PATCH-Anforderung.
+ms.openlocfilehash: fb559a96aa5eef94dd07280b888da0df989b2363
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27064939"
+---
 # <a name="patchcontentcommand-resource-type"></a>patchContentCommand-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Die an einer OneNote-Seite vorzunehmenden Änderungen in einer PATCH-Anforderung.
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
-Es folgt eine JSON-Darstellung der Ressource, die im Text der Anforderung [PATCH pages/{id}`](../api/page_update.md) gesendet wird. 
+Es folgt eine JSON-Darstellung der Ressource, die im Text der Anforderung [PATCH pages/{id}`](../api/page-update.md) gesendet wird. 
 
 <!-- {
   "blockType": "resource",
@@ -25,7 +37,7 @@ Es folgt eine JSON-Darstellung der Ressource, die im Text der Anforderung [PATCH
 ```
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |action|String|Die für das Zielelement auszuführende Aktion. Mögliche Werte sind: `replace`, `append`, `delete`, `insert` oder `prepend`.|
 |content|String|Eine Zeichenfolge aus wohlgeformtem HTML-Code, die der Seite hinzugefügt werden soll, sowie alle Bild- oder Dateibinärdaten. Wenn der Inhalt Binärdaten enthält, muss die Anforderung unter Verwendung des Inhaltstyps `multipart/form-data` mit der Komponente „Commands“ gesendet werden  |
