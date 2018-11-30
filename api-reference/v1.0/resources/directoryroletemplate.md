@@ -1,38 +1,55 @@
-# <a name="directoryroletemplate-resource-type"></a>Ressourcentyp directoryRoleTemplate
+---
+title: Ressourcentyp directoryRoleTemplate
+description: 'Stellt eine Verzeichnis Rollenvorlage dar. Vorlage Rolle Directory gibt die Eigenschaftswerte einer Directory-Rolle (DirectoryRole). Es ist eine zugehörige Verzeichnis Rolle Template-Objekt für jede der Directory Rollen, die in einem Mandanten aktiviert werden können. Um eine Rolle Directory lesen oder deren Member aktualisieren möchten, müssen sie zuerst im Mandanten aktiviert werden. Nur die Administratoren im Unternehmen Directory-Rolle ist standardmäßig aktiviert. Andere Rollen verfügbaren Verzeichnis zu aktivieren, die Sie Senden einer POST-Anforderung an den `/directoryRoles` Endpunkt mit der ID des Directory Rolle die Rolle Directory auf dem basiert angegebenen Vorlage im **RoleTemplateId** -Parameter der Anforderung. Nach dem erfolgreichen Abschluss dieser Anforderung können Sie dann zum Lesen und Zuweisen von Mitgliedern zur Rolle Directory starten. **Hinweis**: Directory Rollenvorlage ist für die Rolle der Benutzer Directory verfügbar gemacht werden. Die Benutzer-Directory-Rolle ist implizit und ist für Directory-Clients nicht sichtbar. Jeder Benutzer in den Mandanten wird von der Infrastruktur dieser Rolle zugewiesen. Die Rolle ist bereits aktiviert. Verwenden Sie diese Vorlage nicht.'
+ms.openlocfilehash: e654ab8c14a0c5e831b2cbf818047fea0e2d95c9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27019086"
+---
+# <a name="directoryroletemplate-resource-type"></a><span data-ttu-id="c849e-114">Ressourcentyp directoryRoleTemplate</span><span class="sxs-lookup"><span data-stu-id="c849e-114">directoryRoleTemplate resource type</span></span>
 
-Stellt eine Verzeichnisrollenvorlage dar. Eine Verzeichnisrollenvorlage gibt die Eigenschaftswerte einer Verzeichnisrolle [DirectoryRole](directoryrole.md) an. Für jede Verzeichnisrolle, die in einem Mandanten aktiviert werden kann, gibt es eine zugehörige Verzeichnisrollenvorlage. Um eine Verzeichnisrolle zu lesen oder ihre Mitglieder zu aktualisieren, muss diese zuerst im Mandanten aktiviert werden. Nur die Unternehmensadministratoren sind standardmäßig aktiviert. Zur Aktivierung anderer verfügbarer Verzeichnisrollen senden Sie eine POST-Anforderung an den `/directoryRoles`-Endpunkt mit der ID der Verzeichnisrollenvorlage, auf der die Verzeichnisrolle basiert, die im Parameter **RoleTemplateId** der Anfrage angegeben ist. Nach dem erfolgreichen Abschluss dieser Anforderung können Sie die Verzeichnisrolle lesen und ihr Mitglieder zuweisen. **Hinweis**: Eine Verzeichnisrollenvorlage wird für die Verzeichnisrolle der Benutzer verfügbar gemacht. Die Benutzer-Verzeichnisrolle ist implizit und für Verzeichnis-Clients nicht sichtbar. Jeder Benutzer im Mandanten wird von der Infrastruktur dieser Rolle zugewiesen. Die Rolle ist bereits aktiviert. Verwenden Sie diese Vorlage nicht.
+<span data-ttu-id="c849e-p102">Stellt eine Verzeichnisrollenvorlage dar. Eine Verzeichnisrollenvorlage gibt die Eigenschaftswerte einer Verzeichnisrolle [DirectoryRole](directoryrole.md) an. Für jede Verzeichnisrolle, die in einem Mandanten aktiviert werden kann, gibt es eine zugehörige Verzeichnisrollenvorlage. Um eine Verzeichnisrolle zu lesen oder ihre Mitglieder zu aktualisieren, muss diese zuerst im Mandanten aktiviert werden. Nur die Unternehmensadministratoren sind standardmäßig aktiviert. Zur Aktivierung anderer verfügbarer Verzeichnisrollen senden Sie eine POST-Anforderung an den `/directoryRoles`-Endpunkt mit der ID der Verzeichnisrollenvorlage, auf der die Verzeichnisrolle basiert, die im Parameter **RoleTemplateId** der Anfrage angegeben ist. Nach dem erfolgreichen Abschluss dieser Anforderung können Sie die Verzeichnisrolle lesen und ihr Mitglieder zuweisen. **Hinweis**: Eine Verzeichnisrollenvorlage wird für die Verzeichnisrolle der Benutzer verfügbar gemacht. Die Benutzer-Verzeichnisrolle ist implizit und für Verzeichnis-Clients nicht sichtbar. Jeder Benutzer im Mandanten wird von der Infrastruktur dieser Rolle zugewiesen. Die Rolle ist bereits aktiviert. Verwenden Sie diese Vorlage nicht.</span><span class="sxs-lookup"><span data-stu-id="c849e-p102">Represents a directory role template. A directory role template specifies the property values of a directory role ([directoryRole](directoryrole.md)). There is an associated directory role template object for each of the directory roles that may be activated in a tenant. To read a directory role or update its members, it must first be activated in the tenant. Only the Company Administrators directory role is activated by default. To activate other available directory roles you send a POST request to the `/directoryRoles` endpoint with the ID of the directory role template on which the directory role is based specified in the **roleTemplateId** parameter of the request. Upon successful completion of this request, you can then start to read and assign members to the directory role. **Note**: A directory role template is exposed for the Users directory role. The Users directory role is implicit and is not visible to directory clients. Every User in the tenant is assigned to this role by the infrastructure. The role is already activated. Do not use this template.</span></span>
 
 
-## <a name="methods"></a>Methoden
+## <a name="methods"></a><span data-ttu-id="c849e-127">Methoden</span><span class="sxs-lookup"><span data-stu-id="c849e-127">Methods</span></span>
 
-| Methode       | Rückgabetyp  |Beschreibung|
+| <span data-ttu-id="c849e-128">Methode</span><span class="sxs-lookup"><span data-stu-id="c849e-128">Method</span></span>       | <span data-ttu-id="c849e-129">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="c849e-129">Return Type</span></span>  |<span data-ttu-id="c849e-130">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c849e-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|[directoryRoleTemplate abrufen](../api/directoryroletemplate_get.md) | [directoryRoleTemplate](directoryroletemplate.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des directoryRoleTemplate-Objekts.|
-|[directoryRoleTemplate auflisten](../api/directoryroletemplate_list.md) | [directoryRoleTemplate-Sammlung](directoryroletemplate.md) |Dient zum Abrufen einer Liste von directoryRoleTemplate-Objekten.|
+|[<span data-ttu-id="c849e-131">directoryRoleTemplate abrufen</span><span class="sxs-lookup"><span data-stu-id="c849e-131">Get directoryRoleTemplate</span></span>](../api/directoryroletemplate-get.md) | [<span data-ttu-id="c849e-132">directoryRoleTemplate</span><span class="sxs-lookup"><span data-stu-id="c849e-132">directoryRoleTemplate</span></span>](directoryroletemplate.md) |<span data-ttu-id="c849e-133">Dient zum Lesen der Eigenschaften und der Beziehungen des directoryRoleTemplate-Objekts.</span><span class="sxs-lookup"><span data-stu-id="c849e-133">Read properties and relationships of directoryRoleTemplate object.</span></span>|
+|[<span data-ttu-id="c849e-134">directoryRoleTemplate auflisten</span><span class="sxs-lookup"><span data-stu-id="c849e-134">List directoryRoleTemplate</span></span>](../api/directoryroletemplate-list.md) | <span data-ttu-id="c849e-135">[directoryRoleTemplate-Sammlung](directoryroletemplate.md)</span><span class="sxs-lookup"><span data-stu-id="c849e-135">[directoryRoleTemplate](directoryroletemplate.md) collection</span></span> |<span data-ttu-id="c849e-136">Dient zum Abrufen einer Liste von directoryRoleTemplate-Objekten.</span><span class="sxs-lookup"><span data-stu-id="c849e-136">Retrieve a list of directoryRoleTemplate objects.</span></span>|
 
-## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+## <a name="properties"></a><span data-ttu-id="c849e-137">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="c849e-137">Properties</span></span>
+| <span data-ttu-id="c849e-138">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="c849e-138">Property</span></span>     | <span data-ttu-id="c849e-139">Typ</span><span class="sxs-lookup"><span data-stu-id="c849e-139">Type</span></span>   |<span data-ttu-id="c849e-140">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c849e-140">Description</span></span>|
 |:---------------|:--------|:----------|
-|description|String|Die festzulegende Beschreibung für die Verzeichnisrolle. Schreibgeschützt.|
-|displayName|String|Der festzulegende Name für die Verzeichnisrolle. Schreibgeschützt. |
-|id|String|Der eindeutige Bezeichner für die Vorlage. Geerbt von [directoryObject](directoryobject.md). Sie geben die **id** der Verzeichnisrollenvorlage die Eigenschaft **RoleTemplateId** in der POST-Anforderung zum Aktivieren einer [DirectoryRole](directoryrole.md) in einen Mandanten an. Schlüssel, lässt keine Nullwerte zu. Schreibgeschützt.|
+|<span data-ttu-id="c849e-141">description</span><span class="sxs-lookup"><span data-stu-id="c849e-141">description</span></span>|<span data-ttu-id="c849e-142">String</span><span class="sxs-lookup"><span data-stu-id="c849e-142">String</span></span>|<span data-ttu-id="c849e-p103">Die festzulegende Beschreibung für die Verzeichnisrolle. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="c849e-p103">The description to set for the directory role. Read-only.</span></span>|
+|<span data-ttu-id="c849e-145">displayName</span><span class="sxs-lookup"><span data-stu-id="c849e-145">displayName</span></span>|<span data-ttu-id="c849e-146">String</span><span class="sxs-lookup"><span data-stu-id="c849e-146">String</span></span>|<span data-ttu-id="c849e-p104">Der festzulegende Name für die Verzeichnisrolle. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="c849e-p104">The display name to set for the directory role. Read-only.</span></span> |
+|<span data-ttu-id="c849e-149">id</span><span class="sxs-lookup"><span data-stu-id="c849e-149">id</span></span>|<span data-ttu-id="c849e-150">String</span><span class="sxs-lookup"><span data-stu-id="c849e-150">String</span></span>|<span data-ttu-id="c849e-p105">Der eindeutige Bezeichner für die Vorlage. Geerbt von [directoryObject](directoryobject.md). Sie geben die **id** der Verzeichnisrollenvorlage die Eigenschaft **RoleTemplateId** in der POST-Anforderung zum Aktivieren einer [DirectoryRole](directoryrole.md) in einen Mandanten an. Schlüssel, lässt keine Nullwerte zu. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="c849e-p105">The unique identifier for the template. Inherited from [directoryObject](directoryobject.md). You specify the **id** of the directory role template for the **roleTemplateId** property in the POST request activate a [directoryRole](directoryrole.md) in a tenant. Key, Not nullable. Read-only.</span></span>|
 
-## <a name="relationships"></a>Beziehungen
-Keine
+## <a name="relationships"></a><span data-ttu-id="c849e-156">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="c849e-156">Relationships</span></span>
+<span data-ttu-id="c849e-157">Keine</span><span class="sxs-lookup"><span data-stu-id="c849e-157">None</span></span>
 
 
 
-## <a name="json-representation"></a>JSON-Darstellung
+## <a name="json-representation"></a><span data-ttu-id="c849e-158">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="c849e-158">JSON representation</span></span>
 
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="c849e-159">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="c849e-159">Here is a JSON representation of the resource</span></span>
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryRoleTemplate"
+  "baseType": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.directoryRoleTemplate",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "toppable": false
+      }
+    }
+  ]
 }-->
 
 ```json
