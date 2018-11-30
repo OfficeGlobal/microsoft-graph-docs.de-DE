@@ -1,0 +1,33 @@
+---
+title: EmbeddedSIMDeviceStateValue Enum-Typ
+description: Beschreibt die verschiedenen Zustände für einen eingebetteten SIM Aktivierungscode.
+ms.openlocfilehash: c0b1cffedcae18dab4c1d23a2691cafa8709c0ff
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27059255"
+---
+# <a name="embeddedsimdevicestatevalue-enum-type"></a><span data-ttu-id="e408e-103">EmbeddedSIMDeviceStateValue Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="e408e-103">embeddedSIMDeviceStateValue enum type</span></span>
+
+> <span data-ttu-id="e408e-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="e408e-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e408e-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="e408e-105">Use of these APIs in production applications is not supported.</span></span>
+
+> <span data-ttu-id="e408e-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="e408e-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="e408e-107">Beschreibt die verschiedenen Zustände für einen eingebetteten SIM Aktivierungscode.</span><span class="sxs-lookup"><span data-stu-id="e408e-107">Describes the various states for an embedded SIM activation code.</span></span>
+## <a name="members"></a><span data-ttu-id="e408e-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="e408e-108">Members</span></span>
+|<span data-ttu-id="e408e-109">Element</span><span class="sxs-lookup"><span data-stu-id="e408e-109">Member</span></span>|<span data-ttu-id="e408e-110">Wert</span><span class="sxs-lookup"><span data-stu-id="e408e-110">Value</span></span>|<span data-ttu-id="e408e-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e408e-111">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="e408e-112">notEvaluated</span><span class="sxs-lookup"><span data-stu-id="e408e-112">notEvaluated</span></span>|<span data-ttu-id="e408e-113">0</span><span class="sxs-lookup"><span data-stu-id="e408e-113">0</span></span>|<span data-ttu-id="e408e-114">Legt fest, dass der eingebettete SIM Aktivierungscode kostenlosen und verfügbar ist, ein Gerät zugewiesen werden soll.</span><span class="sxs-lookup"><span data-stu-id="e408e-114">Designates that the embedded SIM activation code is free and available to be assigned to a device.</span></span>|
+|<span data-ttu-id="e408e-115">failed</span><span class="sxs-lookup"><span data-stu-id="e408e-115">failed</span></span>|<span data-ttu-id="e408e-116">1</span><span class="sxs-lookup"><span data-stu-id="e408e-116">1</span></span>|<span data-ttu-id="e408e-117">Legt fest, dass Intune Service konnte nicht an einem Gerät dieses Profil übermitteln.</span><span class="sxs-lookup"><span data-stu-id="e408e-117">Designates that Intune Service failed to deliver this profile to a device.</span></span>|
+|<span data-ttu-id="e408e-118">Installieren von</span><span class="sxs-lookup"><span data-stu-id="e408e-118">installing</span></span>|<span data-ttu-id="e408e-119">2</span><span class="sxs-lookup"><span data-stu-id="e408e-119">2</span></span>|<span data-ttu-id="e408e-120">Legt fest, dass der eingebettete SIM Aktivierungscode zu einem Gerät zugewiesen wurde, und das Gerät wird das Token installieren.</span><span class="sxs-lookup"><span data-stu-id="e408e-120">Designates that the embedded SIM activation code has been assigned to a device and the device is installing the token.</span></span>|
+|<span data-ttu-id="e408e-121">installiert</span><span class="sxs-lookup"><span data-stu-id="e408e-121">installed</span></span>|<span data-ttu-id="e408e-122">3</span><span class="sxs-lookup"><span data-stu-id="e408e-122">3</span></span>|<span data-ttu-id="e408e-123">Legt fest, dass der eingebettete SIM Aktivierungscode auf das Zielgerät erfolgreich installiert wurde.</span><span class="sxs-lookup"><span data-stu-id="e408e-123">Designates that the embedded SIM activation code has been successfully installed on the target device.</span></span>|
+|<span data-ttu-id="e408e-124">Löschen</span><span class="sxs-lookup"><span data-stu-id="e408e-124">deleting</span></span>|<span data-ttu-id="e408e-125">4</span><span class="sxs-lookup"><span data-stu-id="e408e-125">4</span></span>|<span data-ttu-id="e408e-126">Legt fest, dass Intune Service versucht, um das Profil vom Gerät zu löschen.</span><span class="sxs-lookup"><span data-stu-id="e408e-126">Designates that Intune Service is trying to delete the profile from the device.</span></span>|
+|<span data-ttu-id="e408e-127">error</span><span class="sxs-lookup"><span data-stu-id="e408e-127">error</span></span>|<span data-ttu-id="e408e-128">5</span><span class="sxs-lookup"><span data-stu-id="e408e-128">5</span></span>|<span data-ttu-id="e408e-129">Legt fest, dass Fehler mit diesem Profil vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="e408e-129">Designates that there is error with this profile.</span></span>|
+|<span data-ttu-id="e408e-130">gelöscht</span><span class="sxs-lookup"><span data-stu-id="e408e-130">deleted</span></span>|<span data-ttu-id="e408e-131">6</span><span class="sxs-lookup"><span data-stu-id="e408e-131">6</span></span>|<span data-ttu-id="e408e-132">Legt fest, dass das Profil vom Gerät gelöscht wird.</span><span class="sxs-lookup"><span data-stu-id="e408e-132">Designates that the profile is deleted from the device.</span></span>|
+|<span data-ttu-id="e408e-133">removedByUser</span><span class="sxs-lookup"><span data-stu-id="e408e-133">removedByUser</span></span>|<span data-ttu-id="e408e-134">7</span><span class="sxs-lookup"><span data-stu-id="e408e-134">7</span></span>|<span data-ttu-id="e408e-135">Legt fest, dass das Profil des Benutzers vom Gerät entfernt wird</span><span class="sxs-lookup"><span data-stu-id="e408e-135">Designates that the profile is removed from the device by the user</span></span>|
+
+
+
+
+
