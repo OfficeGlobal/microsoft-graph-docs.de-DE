@@ -1,4 +1,16 @@
+---
+title: ChartAxes-Ressourcentyp
+description: Die Achsen des Diagramms.
+ms.openlocfilehash: 964133a103d59b699613c4c378295e1d9693e7a1
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27062144"
+---
 # <a name="chartaxes-resource-type"></a>ChartAxes-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Die Achsen des Diagramms.
 
@@ -10,7 +22,7 @@ Keine
 Keine
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |categoryAxis|[ChartAxis](chartaxis.md)|Stellt die Rubrikenachse in einem Diagramm dar. Schreibgeschützt.|
 |seriesAxis|[ChartAxis](chartaxis.md)|Stellt die Reihenachse eines dreidimensionalen Diagramms dar. Schreibgeschützt.|

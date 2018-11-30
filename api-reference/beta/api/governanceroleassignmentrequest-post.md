@@ -1,0 +1,566 @@
+---
+title: Erstellen von governanceRoleAssignmentRequest
+description: Erstellen Sie eine Rolle Zuordnung Anforderung zur Darstellung der Operation in einer rollenzuweisung angezeigt werden soll. Die folgende Tabelle enthält die Vorgänge.
+ms.openlocfilehash: b0d9edab1182d4a6fa620cfb953df1cb8af20c66
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27061016"
+---
+# <a name="create-governanceroleassignmentrequest"></a>Erstellen von governanceRoleAssignmentRequest
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+
+Erstellen Sie eine Rolle Zuordnung Anforderung zur Darstellung der Operation in einer rollenzuweisung angezeigt werden soll. Die folgende Tabelle enthält die Vorgänge.
+
+| Vorgang       | Typ | 
+|:---------------|:----------|
+| Zuweisen einer rollenzuweisung| AdminAdd |
+| Aktivieren einer qualifizierten rollenzuweisung| UserAdd | 
+| Deaktivieren einer aktivierten rollenzuweisung| UserRemove | 
+| Entfernen einer rollenzuweisung| AdminRemove |
+| Aktualisieren einer rollenzuweisung| AdminUpdate |
+| So erweitern Sie meine rollenzuweisung anfordern| UserExtend | 
+| Erweitern Sie eine rollenzuweisung| AdminExtend | 
+| Anforderung an meine abgelaufene rollenzuweisung erneuern| UserRenew | 
+| Erneuern einer abgelaufenen rollenzuweisung| AdminRenew | 
+
+ 
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
+
+|Berechtigungstyp      | Berechtigungen              |
+|:--------------------|:---------------------------------------------------------|
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
+|Anwendung | PrivilegedAccess.ReadWrite.AzureResources |
+
+## <a name="http-request"></a>HTTP-Anforderung
+<!-- { "blockType": "ignored" } -->
+```http
+POST /privilegedAccess/azureResources/roleAssignmentRequests
+```
+
+## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
+Diese Methode keine [OData-Abfrage-Parameter](/graph/query-parameters) **nicht** unterstützt.
+
+### <a name="request-headers"></a>Anforderungsheader
+| Name       | Beschreibung|
+|:---------------|:----------|
+| Authorization  | Bearer {code}|
+| Content-type  | application/json|
+
+### <a name="request-body"></a>Anforderungstext
+Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) -Objekts. 
+
+| Eigenschaft     | Typ    |Erforderlich|  Beschreibung|
+|:---------------|:--------|:----------|:----------|
+|resourceId|String|Ja|Die ID der Ressource.|
+|roleDefinitionId|String|Ja|Die ID der Rollendefinition.|
+|subjectId|String|Ja|Die ID des Betreffs.|
+|assignmentState|String|Ja|Der Status der Zuordnung. Der Wert kann sein ``Eligible`` und ``Active``.|
+|Typ|String|Ja|Der Anforderungstyp. Der Wert kann sein `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`und `AdminExtend`.|
+|Grund|String| |Der Grund muss bereitgestellt werden, für die Rolle Zuordnung Anforderung zur Überwachung und Zweck überprüfen.|
+|Zeitplan|[governanceSchedule](../resources/governanceschedule.md)| | Den Zeitplan der Rolle Zuordnung Anforderung. Für Anforderungstyp `UserAdd`, `AdminAdd`, `AdminUpdate`, und `AdminExtend`, es ist erforderlich.|
+
+### <a name="response"></a>Antwort
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201, Created` Antwortcode und eines [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) -Objekts in der Antworttext.
+
+## <a name="error-codes"></a>Fehlercodes
+Diese API folgt dem Standard von HTTP-Codes, zusätzlich zu den Fehlercodes, die in der folgenden Tabelle aufgeführt.
+
+|Fehlercode     | Fehlermeldung              | Details |
+|:--------------------| :---------------------|:--------------------|
+| 400 BadRequest | RoleNotFound    | Die `roleDefinitionId` vorausgesetzt, in der Anforderung Nachrichtentext nicht gefunden werden kann.
+| 400 BadRequest | ResourceIsLocked    | Die Ressource, die im Textkörper Anforderung bereitgestellt ist, im Zustand des `Locked` und Role Assignment Anforderungen kann nicht erstellt werden.
+| 400 BadRequest | SubjectNotFound    | Die `subjectId` vorausgesetzt, in der Anforderung Nachrichtentext nicht gefunden werden kann.
+| 400 BadRequest | PendingRoleAssignmentRequest    | Gibt es vorhanden bereits eine ausstehende [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) im System.
+| 400 BadRequest | RoleAssignmentExists    | Der zu erstellenden bereits angefordert [GovernanceRoleAssignment](../resources/governanceroleassignment.md) im System vorhanden ist.
+| 400 BadRequest | RoleAssignmentDoesNotExist    | Die [GovernanceRoleAssignment](../resources/governanceroleassignment.md) aktualisiert/erweitert werden angefordert ist im System nicht vorhanden.
+| 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | Die [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) entspricht nicht den Richtlinien für interne und kann nicht erstellt werden.
+
+## <a name="example-1"></a>Beispiel 1
+In diesem Beispiel weisen Sie Administratoren Benutzer nawu@fimdev.net Rolle Abrechnung.
+
+ >**Hinweis:** Neben der Berechtigung, dieses Beispiel erfordert den Requestor in mindestens einem `Active` Administrator rollenzuweisung (`owner` oder `user access administrator`) für die Ressource. 
+
+| Eigenschaft     | Typ    |Erforderlich|  Wert |
+|:---------------|:--------|:----------|:----------|
+|resourceId|String|Ja|\<resourceId\>|
+|roleDefinitionId|String|Ja|\<roleDefinitionId\>|
+|subjectId|String|Ja|\<subjectId\>|
+|assignmentState|String|Ja| Berechtigte / Active|
+|Typ|String|Ja| AdminAdd|
+|Grund|String| hängt von der Rolle Einstellungen||
+|Zeitplan|[governanceSchedule](../resources/governanceschedule.md)|Ja|        |
+##### <a name="request"></a>Anforderung
+<!-- {
+  "blockType": "request",
+  "name": "governanceroleassignmentrequest_post"
+}-->
+```http
+POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests
+Content-type: application/json
+
+{"roleDefinitionId":"ea48ad5e-e3b0-4d10-af54-39a45bbfe68d",
+"resourceId":"e5e7d29d-5465-45ac-885f-4716a5ee74b5",
+"subjectId":"918e54be-12c4-4f4c-a6d3-2ee0e3661c51",
+"assignmentState":"Eligible",
+"type":"AdminAdd",
+"reason":"Assign an eligible role",
+"schedule":{
+  "startDateTime":"2018-05-12T23:37:43.356Z",
+  "endDateTime":"2018-11-08T23:37:43.356Z",
+  "type":"Once"
+  }
+}
+```
+##### <a name="response"></a>Antwort
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.governanceRoleAssignmentRequest"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 226
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleAssignmentRequests/$entity",
+    "id": "1232e4ea-741a-4be5-8044-5edabdd61672",
+    "resourceId": "e5e7d29d-5465-45ac-885f-4716a5ee74b5",
+    "roleDefinitionId": "ea48ad5e-e3b0-4d10-af54-39a45bbfe68d",
+    "subjectId": "918e54be-12c4-4f4c-a6d3-2ee0e3661c51",
+    "linkedEligibleRoleAssignmentId": "",
+    "type": "AdminAdd",
+    "assignmentState": "Eligible",
+    "requestedDateTime": "0001-01-01T00:00:00Z",
+    "roleAssignmentStartDateTime": "2018-05-12T23:38:34.6007266Z",
+    "roleAssignmentEndDateTime": "2018-11-08T23:37:43.356Z",
+    "reason": "Evaluate Only",
+    "status": {
+        "status": "InProgress",
+        "subStatus": "Granted",
+        "statusDetails": [
+            {
+                "key": "AdminRequestRule",
+                "value": "Grant"
+            },
+            {
+                "key": "ExpirationRule",
+                "value": "Grant"
+            },
+            {
+                "key": "MfaRule",
+                "value": "Grant"
+            }
+        ]
+    },
+    "schedule": {
+        "type": "Once",
+        "startDateTime": "2018-05-12T23:37:43.356Z",
+        "endDateTime": "2018-11-08T23:37:43.356Z",
+        "duration": "PT0S"
+    }
+}
+```
+
+## <a name="example-2"></a>Beispiel 2
+In diesem Beispiel wird der Benutzer nawu@fimdev.net zu auswählbaren Abrechnung Rolle aktiviert.
+
+| Eigenschaft     | Typ    |Erforderlich|  Wert |
+|:---------------|:--------|:----------|:----------|
+|resourceId|String|Ja|\<resourceId\>|
+|roleDefinitionId|String|Ja|\<roleDefinitionId\>|
+|subjectId|String|Ja|\<subjectId\>|
+|assignmentState|String|Ja| Aktiv|
+|Typ|String|Ja| UserAdd|
+|Grund|String| hängt von der Rolle Einstellungen||
+|Zeitplan|[governanceSchedule](../resources/governanceschedule.md)|Ja|        |
+##### <a name="request"></a>Anforderung
+<!-- {
+  "blockType": "request",
+  "name": "governanceroleassignmentrequest_post"
+}-->
+```http
+POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests
+Content-type: application/json
+
+{"roleDefinitionId":"8b4d1d51-08e9-4254-b0a6-b16177aae376",
+"resourceId":"e5e7d29d-5465-45ac-885f-4716a5ee74b5",
+"subjectId":"918e54be-12c4-4f4c-a6d3-2ee0e3661c51",
+"assignmentState":"Active",
+"type":"UserAdd",
+"reason": "Activate the owner role",
+"schedule":{
+  "type":"Once",
+  "startDateTime":"2018-05-12T23:28:43.537Z",
+  "duration":"PT9H"
+  },
+"linkedEligibleRoleAssignmentId":"e327f4be-42a0-47a2-8579-0a39b025b394"
+}
+```
+##### <a name="response"></a>Antwort
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.governanceRoleAssignmentRequest"
+} -->
+```json
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleAssignmentRequests/$entity",
+    "id": "3ad49a7c-918e-4d86-9f84-fab28f8658c0",
+    "resourceId": "e5e7d29d-5465-45ac-885f-4716a5ee74b5",
+    "roleDefinitionId": "8b4d1d51-08e9-4254-b0a6-b16177aae376",
+    "subjectId": "918e54be-12c4-4f4c-a6d3-2ee0e3661c51",
+    "linkedEligibleRoleAssignmentId": "e327f4be-42a0-47a2-8579-0a39b025b394",
+    "type": "UserAdd",
+    "assignmentState": "Active",
+    "requestedDateTime": "0001-01-01T00:00:00Z",
+    "roleAssignmentStartDateTime": "2018-05-12T23:29:29.5123911Z",
+    "roleAssignmentEndDateTime": "2018-05-13T08:28:43.537Z",
+    "reason": "Activate the owner role",
+    "status": {
+        "status": "InProgress",
+        "subStatus": "Granted",
+        "statusDetails": [
+            {
+                "key": "EligibilityRule",
+                "value": "Grant"
+            },
+            {
+                "key": "ExpirationRule",
+                "value": "Grant"
+            },
+            {
+                "key": "MfaRule",
+                "value": "Grant"
+            },
+            {
+                "key": "JustificationRule",
+                "value": "Grant"
+            },
+            {
+                "key": "ActivationDayRule",
+                "value": "Grant"
+            },
+            {
+                "key": "ApprovalRule",
+                "value": "Grant"
+            }
+        ]
+    },
+    "schedule": {
+        "type": "Once",
+        "startDateTime": "2018-05-12T23:28:43.537Z",
+        "endDateTime": "0001-01-01T00:00:00Z",
+        "duration": "PT9H"
+    }
+}
+```
+
+## <a name="example-3"></a>Beispiel 3
+In diesem Beispiel deaktiviert die nawu@fimdev.net Benutzer die aktive Abrechnung Reader-Rolle.
+
+| Eigenschaft     | Typ    |Erforderlich|  Wert |
+|:---------------|:--------|:----------|:----------|
+|resourceId|String|Ja|\<resourceId\>|
+|roleDefinitionId|String|Ja|\<roleDefinitionId\>|
+|subjectId|String|Ja|\<subjectId\>|
+|assignmentState|String|Ja| Aktiv|
+|Typ|String|Ja| UserRemove|
+|Grund|String| Nein||
+|Zeitplan|[governanceSchedule](../resources/governanceschedule.md)|Nein|        |
+##### <a name="request"></a>Anforderung
+<!-- {
+  "blockType": "request",
+  "name": "governanceroleassignmentrequest_post"
+}-->
+```http
+POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests
+Content-type: application/json
+
+{"roleDefinitionId":"bc75b4e6-7403-4243-bf2f-d1f6990be122",
+"resourceId":"fb016e3a-c3ed-4d9d-96b6-a54cd4f0b735",
+"subjectId":"918e54be-12c4-4f4c-a6d3-2ee0e3661c51",
+"assignmentState":"Active",
+"type":"UserRemove",
+"reason":"Deactivate the role",
+"linkedEligibleRoleAssignmentId":"cb8a533e-02d5-42ad-8499-916b1e4822ec"
+}
+```
+##### <a name="response"></a>Antwort
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.governanceRoleAssignmentRequest"
+} -->
+```json
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 226
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleAssignmentRequests/$entity",
+    "id": "abfcdb57-8e5d-42a0-ae67-7598b96fddb1",
+    "resourceId": "fb016e3a-c3ed-4d9d-96b6-a54cd4f0b735",
+    "roleDefinitionId": "bc75b4e6-7403-4243-bf2f-d1f6990be122",
+    "subjectId": "918e54be-12c4-4f4c-a6d3-2ee0e3661c51",
+    "linkedEligibleRoleAssignmentId": "cb8a533e-02d5-42ad-8499-916b1e4822ec",
+    "type": "UserRemove",
+    "assignmentState": "Active",
+    "requestedDateTime": "0001-01-01T00:00:00Z",
+    "roleAssignmentStartDateTime": null,
+    "roleAssignmentEndDateTime": null,
+    "reason": "Evaluate only",
+    "schedule": null,
+    "status": {
+        "status": "Closed",
+        "subStatus": "Revoked",
+        "statusDetails": []
+    }
+}
+```
+
+### <a name="example-4"></a>Beispiel 4
+In diesem Beispiel Entfernen von Administratoren die nawu@fimdev.net Benutzer aus der Rolle Leser Abrechnung.
+
+ >**Hinweis:** Neben den Berechtigungsbereich erfordert in diesem Beispiel wird den Requestor in mindestens einem `Active` Administrator rollenzuweisung (`owner` oder `user access administrator`) für die Ressource.
+ 
+| Eigenschaft     | Typ    |Erforderlich|  Wert |
+|:---------------|:--------|:----------|:----------|
+|resourceId|String|Ja|\<resourceId\>|
+|roleDefinitionId|String|Ja|\<roleDefinitionId\>|
+|subjectId|String|Ja|\<subjectId\>|
+|assignmentState|String|Ja| Berechtigte / Active|
+|Typ|String|Ja| AdminRemove|
+|Grund|String| Nein||
+|Zeitplan|[governanceSchedule](../resources/governanceschedule.md)|Nein|        |
+##### <a name="request"></a>Anforderung
+<!-- {
+  "blockType": "request",
+  "name": "governanceroleassignmentrequest_post"
+}-->
+```http
+POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests
+Content-type: application/json
+
+{
+  "roleDefinitionId":"65bb4622-61f5-4f25-9d75-d0e20cf92019",
+  "resourceId":"e5e7d29d-5465-45ac-885f-4716a5ee74b5",
+  "subjectId":"74765671-9ca4-40d7-9e36-2f4a570608a6",
+  "assignmentState":"Eligible",
+  "type":"AdminRemove"
+}
+```
+##### <a name="response"></a>Antwort
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.governanceRoleAssignmentRequest"
+} -->
+```json
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 226
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#governanceRoleAssignmentRequests/$entity",
+  "id":"c934fcb9-cf53-42ac-a8b4-6246f6726299",
+  "resourceId":"e5e7d29d-5465-45ac-885f-4716a5ee74b5",
+  "roleDefinitionId":"65bb4622-61f5-4f25-9d75-d0e20cf92019",
+  "subjectId":"74765671-9ca4-40d7-9e36-2f4a570608a6",
+  "linkedEligibleRoleAssignmentId":"",
+  "type":"AdminRemove",
+  "assignmentState":"Eligible",
+  "requestedDateTime":"0001-01-01T00:00:00Z",
+  "roleAssignmentStartDateTime":null,
+  "roleAssignmentEndDateTime":null,
+  "reason":null,
+  "status":{
+    "status":"Closed",
+    "subStatus":"Revoked",
+    "statusDetails":[]
+  },
+  "schedule":null
+}
+```
+
+### <a name="example-5"></a>Beispiel 5
+In diesem Beispiel aktualisieren Administratoren die rollenzuweisung für den Benutzer nawu@fimdev.net Besitzer.
+
+ >**Hinweis:** Neben den Berechtigungsbereich erfordert in diesem Beispiel wird den Requestor in mindestens einem `Active` Administrator rollenzuweisung (`owner` oder `user access administrator`) für die Ressource. 
+| Eigenschaft     | Typ    |Erforderlich|  Wert |
+|:---------------|:--------|:----------|:----------|
+|resourceId|String|Ja|\<resourceId\>|
+|roleDefinitionId|String|Ja|\<roleDefinitionId\>|
+|subjectId|String|Ja|\<subjectId\>|
+|assignmentState|String|Ja| Berechtigte / Active|
+|Typ|String|Ja| AdminUpdate|
+|Grund|String| hängt von roleSettings||
+|Zeitplan|[governanceSchedule](../resources/governanceschedule.md)|Ja|        |
+##### <a name="request"></a>Anforderung
+<!-- {
+  "blockType": "request",
+  "name": "governanceroleassignmentrequest_post"
+}-->
+```http
+POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests
+Content-type: application/json
+
+{
+  "roleDefinitionId":"70521f3e-3b95-4e51-b4d2-a2f485b02103",
+  "resourceId":"e5e7d29d-5465-45ac-885f-4716a5ee74b5",
+  "subjectId":"1566d11d-d2b6-444a-a8de-28698682c445",
+  "assignmentState":"Eligible",
+  "type":"AdminUpdate",
+  "schedule":{
+    "type":"Once",
+    "startDateTime":"2018-03-08T05:42:45.317Z",
+    "endDateTime":"2018-06-05T05:42:31.000Z"
+  }
+}
+```
+##### <a name="response"></a>Antwort
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.governanceRoleAssignmentRequest"
+} -->
+```json
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 226
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#governanceRoleAssignmentRequests/$entity",
+  "id":"4f6d4802-b3ac-4f5a-86d7-a6a4edd7d383",
+  "resourceId":"e5e7d29d-5465-45ac-885f-4716a5ee74b5",
+  "roleDefinitionId":"70521f3e-3b95-4e51-b4d2-a2f485b02103",
+  "subjectId":"1566d11d-d2b6-444a-a8de-28698682c445",
+  "linkedEligibleRoleAssignmentId":"",
+  "type":"AdminUpdate",
+  "assignmentState":"Eligible",
+  "requestedDateTime":"0001-01-01T00:00:00Z",
+  "roleAssignmentStartDateTime":"2018-05-12T23:50:03.4755896Z",
+  "roleAssignmentEndDateTime":"2018-06-05T05:42:31Z",
+  "reason":null,
+  "status":{
+    "status":"InProgress",
+    "subStatus":"Granted",
+    "statusDetails":[
+      {
+        "key":"AdminRequestRule","value":"Grant"
+      },{
+        "key":"ExpirationRule","value":"Grant"
+      },{
+        "key":"MfaRule","value":"Grant"
+      }
+    ]
+  },
+  "schedule":{
+    "type":"Once",
+    "startDateTime":"2018-03-08T05:42:45.317Z",
+    "endDateTime":"2018-06-05T05:42:31Z",
+    "duration":"PT0S"
+  }
+}
+```
+
+### <a name="example-6"></a>Beispiel 6
+In diesem Beispiel wird erweitert die ablaufende rollenzuweisung für Benutzer ANUJCUSER API Management Service Mitwirkenden.
+
+ >**Hinweis:** Neben den Berechtigungsbereich erfordert in diesem Beispiel wird den Requestor in mindestens einem `Active` Administrator rollenzuweisung (`owner` oder `user access administrator`) für die Ressource.
+ 
+| Eigenschaft     | Typ    |Erforderlich|  Wert |
+|:---------------|:--------|:----------|:----------|
+|resourceId|String|Ja|\<resourceId\>|
+|roleDefinitionId|String|Ja|\<roleDefinitionId\>|
+|subjectId|String|Ja|\<subjectId\>|
+|assignmentState|String|Ja| Berechtigte / Active |
+|Typ|String|Ja| AdminExtend|
+|Grund|String| hängt von roleSettings||
+|Zeitplan|[governanceSchedule](../resources/governanceschedule.md)|Ja|        |
+##### <a name="request"></a>Anforderung
+<!-- {
+  "blockType": "request",
+  "name": "governanceroleassignmentrequest_post"
+}-->
+```http
+POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests
+Content-type: application/json
+
+{
+  "roleDefinitionId":"0e88fd18-50f5-4ee1-9104-01c3ed910065",
+  "resourceId":"e5e7d29d-5465-45ac-885f-4716a5ee74b5",
+  "subjectId":"74765671-9ca4-40d7-9e36-2f4a570608a6",
+  "assignmentState":"Eligible",
+  "type":"AdminExtend",
+  "reason":"extend role assignment",
+  "schedule":{
+    "type":"Once",
+    "startDateTime":"2018-05-12T23:53:55.327Z",
+    "endDateTime":"2018-08-10T23:53:55.327Z"
+  }
+}
+```
+##### <a name="response"></a>Antwort
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.governanceRoleAssignmentRequest"
+} -->
+```json
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 226
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#governanceRoleAssignmentRequests/$entity",
+  "id":"486f0c05-47c8-4498-9c06-086a78c83004",
+  "resourceId":"e5e7d29d-5465-45ac-885f-4716a5ee74b5",
+  "roleDefinitionId":"0e88fd18-50f5-4ee1-9104-01c3ed910065",
+  "subjectId":"74765671-9ca4-40d7-9e36-2f4a570608a6",
+  "linkedEligibleRoleAssignmentId":"",
+  "type":"AdminExtend",
+  "assignmentState":"Eligible",
+  "requestedDateTime":"0001-01-01T00:00:00Z",
+  "roleAssignmentStartDateTime":"2018-05-12T23:54:09.7221332Z",
+  "roleAssignmentEndDateTime":"2018-08-10T23:53:55.327Z",
+  "reason":"extend role assignment",
+  "status":{
+    "status":"InProgress",
+    "subStatus":"Granted",
+    "statusDetails":[
+      {
+        "key":"AdminRequestRule","value":"Grant"
+      },{
+        "key":"ExpirationRule","value":"Grant"
+      },{
+        "key":"MfaRule","value":"Grant"
+      }
+    ]
+  },
+  "schedule":{
+    "type":"Once",
+    "startDateTime":"2018-05-12T23:53:55.327Z",
+    "endDateTime":"2018-08-10T23:53:55.327Z",
+    "duration":"PT0S"
+  }
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Post roleAssignmentRequest",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
