@@ -1,3 +1,13 @@
+---
+title: settingValue-Ressourcentyp
+description: Eine Einstellung, die durch ein Name/Wertpaar dargestellt wird.
+ms.openlocfilehash: b47c5c746117390cfd59db71d832928e482403b9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27020091"
+---
 # <a name="settingvalue-resource-type"></a>settingValue-Ressourcentyp
 
 Eine Einstellung, die durch ein Name/Wertpaar dargestellt wird.
