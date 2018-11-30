@@ -1,21 +1,33 @@
-# <a name="automaticrepliessetting-resource-type"></a>Ressourcentyp automaticRepliesSetting
+---
+title: Ressourcentyp automaticRepliesSetting
+description: 'Konfigurationseinstellungen automatisch benachrichtigt den Absender einer eingehenden e-Mail mit einer Nachricht aus der '
+ms.openlocfilehash: 040180da2b58481b96e1e249763c61f03355afec
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27065855"
+---
+# <a name="automaticrepliessetting-resource-type"></a><span data-ttu-id="9358b-103">Ressourcentyp automaticRepliesSetting</span><span class="sxs-lookup"><span data-stu-id="9358b-103">automaticRepliesSetting resource type</span></span>
 
-Konfigurationseinstellungen zum automatischen Benachrichtigen des Absenders bei eingehenden E-Mails mit einer Nachricht vom angemeldeten Benutzer. Beispiel: eine automatische Antwort, die darüber informiert, dass der angemeldete Benutzer zur Beantwortung von E-Mails nicht verfügbar ist. 
+> <span data-ttu-id="9358b-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="9358b-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9358b-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="9358b-105">Use of these APIs in production applications is not supported.</span></span>
+
+<span data-ttu-id="9358b-p102">Konfigurationseinstellungen zum automatischen Benachrichtigen des Absenders bei eingehenden E-Mails mit einer Nachricht vom angemeldeten Benutzer. Beispiel: eine automatische Antwort, die darüber informiert, dass der angemeldete Benutzer zur Beantwortung von E-Mails nicht verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="9358b-p102">Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user. For example, an automatic reply to notify that the signed-in user is unavailable to respond to emails.</span></span> 
 
 
-## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+## <a name="properties"></a><span data-ttu-id="9358b-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="9358b-108">Properties</span></span>
+| <span data-ttu-id="9358b-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="9358b-109">Property</span></span>     | <span data-ttu-id="9358b-110">Typ</span><span class="sxs-lookup"><span data-stu-id="9358b-110">Type</span></span>   |<span data-ttu-id="9358b-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="9358b-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|externalAudience|String| Die Zielgruppe außerhalb der Organisation des angemeldeten Benutzers, der **ExternalReplyMessage** erhält, wenn **Status** `AlwaysEnabled` oder `Scheduled` ist. Mögliche Werte: `none`, `contactsOnly`, `all`.|
-|externalReplyMessage|string|Die automatische Antwort an die angegebene externe Zielgruppe, wenn **Status** `AlwaysEnabled` oder `Scheduled` ist.|
-|internalReplyMessage|string|Die automatische Antwort an die interne Zielgruppe in der Organisation des angemeldeten Benutzers, wenn **Status** `AlwaysEnabled` oder `Scheduled` ist. |
-|scheduledEndDateTime|[dateTimeTimeZone](datetimetimezone.md)|Datum und Uhrzeit, die zum Beenden der automatischen Antworten festgelegt werden, wenn **Status** auf `Scheduled` gesetzt ist. |
-|scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|Datum und Uhrzeit, die für den Beginn der automatischen Antworten festgelegt werden, wenn **Status** auf `Scheduled` gesetzt ist.|
-|status|String|Konfigurationensstatus für automatische Antworten. Mögliche Werte: `disabled`, `alwaysEnabled`, `scheduled`.|
+|<span data-ttu-id="9358b-112">externalAudience</span><span class="sxs-lookup"><span data-stu-id="9358b-112">externalAudience</span></span>|<span data-ttu-id="9358b-113">String</span><span class="sxs-lookup"><span data-stu-id="9358b-113">String</span></span>| <span data-ttu-id="9358b-p103">Die Zielgruppe außerhalb der Organisation des angemeldeten Benutzers, der **ExternalReplyMessage** erhält, wenn **Status** `AlwaysEnabled` oder `Scheduled` ist. Mögliche Werte: `none`, `contactsOnly`, `all`.</span><span class="sxs-lookup"><span data-stu-id="9358b-p103">The set of audience external to the signed-in user's organization who will receive the **ExternalReplyMessage**, if **Status** is `AlwaysEnabled` or `Scheduled`. Possible values are: `none`, `contactsOnly`, `all`.</span></span>|
+|<span data-ttu-id="9358b-116">externalReplyMessage</span><span class="sxs-lookup"><span data-stu-id="9358b-116">externalReplyMessage</span></span>|<span data-ttu-id="9358b-117">string</span><span class="sxs-lookup"><span data-stu-id="9358b-117">string</span></span>|<span data-ttu-id="9358b-118">Die automatische Antwort an die angegebene externe Zielgruppe, wenn **Status** `AlwaysEnabled` oder `Scheduled` ist.</span><span class="sxs-lookup"><span data-stu-id="9358b-118">The automatic reply to send to the specified external audience, if **Status** is `AlwaysEnabled` or `Scheduled`.</span></span>|
+|<span data-ttu-id="9358b-119">internalReplyMessage</span><span class="sxs-lookup"><span data-stu-id="9358b-119">internalReplyMessage</span></span>|<span data-ttu-id="9358b-120">string</span><span class="sxs-lookup"><span data-stu-id="9358b-120">string</span></span>|<span data-ttu-id="9358b-121">Die automatische Antwort an die interne Zielgruppe in der Organisation des angemeldeten Benutzers, wenn **Status** `AlwaysEnabled` oder `Scheduled` ist.</span><span class="sxs-lookup"><span data-stu-id="9358b-121">The automatic reply to send to the audience internal to the signed-in user's organization, if **Status** is `AlwaysEnabled` or `Scheduled`.</span></span> |
+|<span data-ttu-id="9358b-122">scheduledEndDateTime</span><span class="sxs-lookup"><span data-stu-id="9358b-122">scheduledEndDateTime</span></span>|[<span data-ttu-id="9358b-123">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="9358b-123">dateTimeTimeZone</span></span>](datetimetimezone.md)|<span data-ttu-id="9358b-124">Datum und Uhrzeit, die zum Beenden der automatischen Antworten festgelegt werden, wenn **Status** auf `Scheduled` gesetzt ist.</span><span class="sxs-lookup"><span data-stu-id="9358b-124">The date and time that automatic replies are set to end, if **Status** is set to `Scheduled`.</span></span> |
+|<span data-ttu-id="9358b-125">scheduledStartDateTime</span><span class="sxs-lookup"><span data-stu-id="9358b-125">scheduledStartDateTime</span></span>|[<span data-ttu-id="9358b-126">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="9358b-126">dateTimeTimeZone</span></span>](datetimetimezone.md)|<span data-ttu-id="9358b-127">Datum und Uhrzeit, die für den Beginn der automatischen Antworten festgelegt werden, wenn **Status** auf `Scheduled` gesetzt ist.</span><span class="sxs-lookup"><span data-stu-id="9358b-127">The date and time that automatic replies are set to begin, if **Status** is set to `Scheduled`.</span></span>|
+|<span data-ttu-id="9358b-128">status</span><span class="sxs-lookup"><span data-stu-id="9358b-128">status</span></span>|<span data-ttu-id="9358b-129">String</span><span class="sxs-lookup"><span data-stu-id="9358b-129">String</span></span>|<span data-ttu-id="9358b-p104">Konfigurationensstatus für automatische Antworten. Mögliche Werte: `disabled`, `alwaysEnabled`, `scheduled`.</span><span class="sxs-lookup"><span data-stu-id="9358b-p104">Configurations status for automatic replies. Possible values are: `disabled`, `alwaysEnabled`, `scheduled`.</span></span>|
 
-## <a name="json-representation"></a>JSON-Darstellung
+## <a name="json-representation"></a><span data-ttu-id="9358b-132">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="9358b-132">JSON representation</span></span>
 
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="9358b-133">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="9358b-133">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

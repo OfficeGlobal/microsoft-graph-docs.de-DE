@@ -1,18 +1,30 @@
-# <a name="passwordprofile-resource-type"></a>passwordProfile-Ressourcentyp
+---
+title: passwordProfile-Ressourcentyp
+description: Enthält das einem Benutzer zugewiesene Kennwortprofil. Die **passwordProfile**-Eigenschaft der user-Entität ist ein **asswordProfile**-Objekt.
+ms.openlocfilehash: 71a91f0848ba8218d16a59c9e1f867d14e5cad9b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27065993"
+---
+# <a name="passwordprofile-resource-type"></a><span data-ttu-id="8180e-104">passwordProfile-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="8180e-104">passwordProfile resource type</span></span>
 
-Enthält das einem Benutzer zugewiesene Kennwortprofil. Die **passwordProfile**-Eigenschaft der [user](user.md)-Entität ist ein **asswordProfile**-Objekt.
+> <span data-ttu-id="8180e-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="8180e-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8180e-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="8180e-106">Use of these APIs in production applications is not supported.</span></span>
+
+<span data-ttu-id="8180e-p103">Enthält das einem Benutzer zugewiesene Kennwortprofil. Die **passwordProfile**-Eigenschaft der [user](user.md)-Entität ist ein **asswordProfile**-Objekt.</span><span class="sxs-lookup"><span data-stu-id="8180e-p103">Contains the password profile associated with a user. The **passwordProfile** property of the [user](user.md) entity is a **passwordProfile** object.</span></span>
 
 
-## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+## <a name="properties"></a><span data-ttu-id="8180e-109">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="8180e-109">Properties</span></span>
+| <span data-ttu-id="8180e-110">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="8180e-110">Property</span></span>     | <span data-ttu-id="8180e-111">Typ</span><span class="sxs-lookup"><span data-stu-id="8180e-111">Type</span></span>   |<span data-ttu-id="8180e-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8180e-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|forceChangePasswordNextSignIn|Boolean| **true**, wenn der Benutzer sein Kennwort bei der nächsten Anmeldung ändern muss, andernfalls **false**. |
-|password|String|Das Kennwort für den Benutzer.. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Sie kann aktualisiert werden, aber der Benutzer muss das Kennwort bei der nächsten Anmeldung ändern. Das Kennwort muss den Mindestanforderungen entsprechen, wie von der **passwordPolicies**-Eigenschaft des Benutzers angegeben.  Standardmäßig ist ein sicheres Kennwort erforderlich.|
+|<span data-ttu-id="8180e-113">forceChangePasswordNextSignIn</span><span class="sxs-lookup"><span data-stu-id="8180e-113">forceChangePasswordNextSignIn</span></span>|<span data-ttu-id="8180e-114">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="8180e-114">Boolean</span></span>| <span data-ttu-id="8180e-115">Wenn **true**, bei der nächsten Anmeldung, die Benutzer ihre Kennwörter ändern müssen.</span><span class="sxs-lookup"><span data-stu-id="8180e-115">If **true**, at next sign-in, the user must change their password.</span></span> <span data-ttu-id="8180e-116">Nach der kennwortänderung einer diese Eigenschaft wird automatisch auf zurückgesetzt \***"false"**.</span><span class="sxs-lookup"><span data-stu-id="8180e-116">After a password change, this property will be automatically reset to \***false**.</span></span> <span data-ttu-id="8180e-117">Wenn dies nicht festgelegt, Standard ist **false**.</span><span class="sxs-lookup"><span data-stu-id="8180e-117">If not set, default is **false**.</span></span> |
+|<span data-ttu-id="8180e-118">forceChangePasswordNextSignInWithMfa</span><span class="sxs-lookup"><span data-stu-id="8180e-118">forceChangePasswordNextSignInWithMfa</span></span>|<span data-ttu-id="8180e-119">Boolesch</span><span class="sxs-lookup"><span data-stu-id="8180e-119">Boolean</span></span>| <span data-ttu-id="8180e-120">Wenn **true**, bei der nächsten Anmeldung, die Benutzer ausführen müssen, erzwungen eine mehrstufige Authentifizierung (mehrstufiger Authentifizierung das), bevor Sie ihr Kennwort ändern.</span><span class="sxs-lookup"><span data-stu-id="8180e-120">If **true**, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password.</span></span> <span data-ttu-id="8180e-121">Das Verhalten ist identisch mit **ForceChangePasswordNextSignIn** , mit der Ausnahme, dass der Benutzer aufgefordert wird, eine mehrstufige Authentifizierung zuerst ausführen, bevor das Kennwort ändern.</span><span class="sxs-lookup"><span data-stu-id="8180e-121">The behavior is identical to **forceChangePasswordNextSignIn** except that the user is required to first perform a multi-factor authentication before password change.</span></span> <span data-ttu-id="8180e-122">Nach dem Kennwort zu ändern wird diese Eigenschaft automatisch auf **false**zurückgesetzt.</span><span class="sxs-lookup"><span data-stu-id="8180e-122">After a password change, this property will be automatically reset to **false**.</span></span> <span data-ttu-id="8180e-123">Wenn dies nicht festgelegt, Standard ist **false**.</span><span class="sxs-lookup"><span data-stu-id="8180e-123">If not set, default is **false**.</span></span> |
+|<span data-ttu-id="8180e-124">password</span><span class="sxs-lookup"><span data-stu-id="8180e-124">password</span></span>|<span data-ttu-id="8180e-125">String</span><span class="sxs-lookup"><span data-stu-id="8180e-125">String</span></span>|<span data-ttu-id="8180e-p106">Das Kennwort für den Benutzer.. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Sie kann aktualisiert werden, aber der Benutzer muss das Kennwort bei der nächsten Anmeldung ändern. Das Kennwort muss den Mindestanforderungen entsprechen, wie von der **passwordPolicies**-Eigenschaft des Benutzers angegeben.  Standardmäßig ist ein sicheres Kennwort erforderlich.</span><span class="sxs-lookup"><span data-stu-id="8180e-p106">The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s **passwordPolicies** property. By default, a strong password is required.</span></span>|
 
+## <a name="json-representation"></a><span data-ttu-id="8180e-131">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="8180e-131">JSON representation</span></span>
 
-## <a name="json-representation"></a>JSON-Darstellung
-
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="8180e-132">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="8180e-132">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -25,6 +37,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ```json
 {
   "forceChangePasswordNextSignIn": true,
+  "forceChangePasswordNextSignInWithMfa": false,
   "password": "string"
 }
 
