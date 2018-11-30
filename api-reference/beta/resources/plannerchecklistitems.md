@@ -1,17 +1,26 @@
-# plannerChecklistItems-Ressourcentyp
-<a id="plannerchecklistitems-resource-type" class="xliff"></a>
+---
+title: plannerChecklistItems-Ressourcentyp
+description: Die **plannerChecklistItemCollection**-Ressource stellt die Sammlung der Checklistenelemente für einen Vorgang dar. Es handelt sich um einen offenen Typ. Sie ist Bestandteil des taskDetails-Objekts. Der Wert im Eigenschaft-Wert-Paar ist das checklistItem-Objekt.
+ms.openlocfilehash: 44e64872c34a70062e847889576bd226d4fe51fb
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27062298"
+---
+# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="3201c-106">plannerChecklistItems-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="3201c-106">plannerChecklistItems resource type</span></span>
 
-Die **plannerChecklistItemCollection**-Ressource stellt die Sammlung der Checklistenelemente für einen Vorgang dar. Es handelt sich um einen offenen Typ. Sie ist Bestandteil des [taskDetails](plannertaskdetails.md)-Objekts. Der Wert im Eigenschaft-Wert-Paar ist das [checklistItem](plannerchecklistitem.md)-Objekt.
+> <span data-ttu-id="3201c-107">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="3201c-107">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="3201c-108">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="3201c-108">Use of these APIs in production applications is not supported.</span></span>
+
+<span data-ttu-id="3201c-p103">Die **plannerChecklistItemCollection**-Ressource stellt die Sammlung der Checklistenelemente für einen Vorgang dar. Es handelt sich um einen offenen Typ. Sie ist Bestandteil des [taskDetails](plannertaskdetails.md)-Objekts. Der Wert im Eigenschaft-Wert-Paar ist das [checklistItem](plannerchecklistitem.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="3201c-p103">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
 
 
-## Eigenschaften
-<a id="properties" class="xliff"></a>
-Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall sollte der Client **GUIDs** als Eigenschaften bereitstellen, und ihre Werte müssen [checklistItem](plannerchecklistitem.md)-Objekte sein. Nachfolgend ein Beispiel. Um ein Element in der Checkliste zu entfernen, legen Sie den Wert der Eigenschaft auf `null` fest.
+## <a name="properties"></a><span data-ttu-id="3201c-113">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="3201c-113">Properties</span></span>
+<span data-ttu-id="3201c-p104">Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall sollte der Client **GUIDs** als Eigenschaften bereitstellen, und ihre Werte müssen [checklistItem](plannerchecklistitem.md)-Objekte sein. Nachfolgend ein Beispiel. Um ein Element in der Checkliste zu entfernen, legen Sie den Wert der Eigenschaft auf `null` fest.</span><span class="sxs-lookup"><span data-stu-id="3201c-p104">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
 
-## JSON-Darstellung
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a><span data-ttu-id="3201c-118">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="3201c-118">JSON representation</span></span>
 
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="3201c-119">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="3201c-119">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -33,7 +42,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   }
 }
 ```
-// Beispiel
+<span data-ttu-id="3201c-120">// Beispiel</span><span class="sxs-lookup"><span data-stu-id="3201c-120">// Example</span></span>
 
 ```json
 {
