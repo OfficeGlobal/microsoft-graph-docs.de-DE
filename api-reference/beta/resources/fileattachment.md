@@ -1,6 +1,18 @@
+---
+title: fileAttachment-Ressourcentyp
+description: Eine Datei (beispielsweise eine Textdatei oder Word-Dokument), ein Ereignis zugeordnet ist,
+ms.openlocfilehash: 2a43ebbc78d831e907bfd19d647e4b7e398abe90
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27062339"
+---
 # <a name="fileattachment-resource-type"></a>fileAttachment-Ressourcentyp
 
-Eine Datei (z. B. eine Textdatei oder ein Word-Dokument), die an ein Ereignis, eine Nachricht oder einen Beitrag angefügt ist. Die **contentBytes**-Eigenschaft enthält den base64-codierten Inhalt der Datei.  
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+
+Eine Datei (beispielsweise eine Textdatei oder Word-Dokument), ein [Ereignis](../resources/event.md), [Nachricht](../resources/message.md), [Outlook-Aufgabe](../resources/outlooktask.md)oder [Buchen](../resources/post.md)zugeordnet ist. Die **ContentBytes** -Eigenschaft enthält die base64-codierten Inhalt der Datei.  
 
 Fügen Sie beim Erstellen einer Dateianlage Folgendes zum Anforderungstext hinzu:
 
@@ -13,14 +25,13 @@ Abgeleitet von [attachment](attachment.md).
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-|[Abrufen](../api/attachment_get.md) | [fileAttachment](fileattachment.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des fileAttachment-Objekts.|
-|[Delete](../api/attachment_delete.md) | Keine |Löscht das fileAttachment-Objekt. |
-
+|[Abrufen](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des fileAttachment-Objekts.|
+|[Delete](../api/attachment-delete.md) | Keine |Löscht das fileAttachment-Objekt. |
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|contentBytes|Binär|Der binäre Inhalt der Datei.|
+|contentBytes|Binär|Der base64-codierte Inhalt der Datei.|
 |contentId|String|Die ID der Anlage im Exchange-Speicher.|
 |contentLocation|String|Der URI (Uniform Resource Identifier), der dem Speicherort des Anlageninhalts entspricht.|
 |contentType|String|Der Inhaltstyp der Anlage.|

@@ -1,10 +1,22 @@
+---
+title: Ressourcentyp automaticRepliesSetting
+description: 'Konfigurationseinstellungen automatisch benachrichtigt den Absender einer eingehenden e-Mail mit einer Nachricht aus der '
+ms.openlocfilehash: 040180da2b58481b96e1e249763c61f03355afec
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27065855"
+---
 # <a name="automaticrepliessetting-resource-type"></a>Ressourcentyp automaticRepliesSetting
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Konfigurationseinstellungen zum automatischen Benachrichtigen des Absenders bei eingehenden E-Mails mit einer Nachricht vom angemeldeten Benutzer. Beispiel: eine automatische Antwort, die darüber informiert, dass der angemeldete Benutzer zur Beantwortung von E-Mails nicht verfügbar ist. 
 
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |externalAudience|String| Die Zielgruppe außerhalb der Organisation des angemeldeten Benutzers, der **ExternalReplyMessage** erhält, wenn **Status** `AlwaysEnabled` oder `Scheduled` ist. Mögliche Werte: `none`, `contactsOnly`, `all`.|
 |externalReplyMessage|string|Die automatische Antwort an die angegebene externe Zielgruppe, wenn **Status** `AlwaysEnabled` oder `Scheduled` ist.|

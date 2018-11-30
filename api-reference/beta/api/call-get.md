@@ -1,0 +1,184 @@
+---
+title: Abrufen von Anrufen
+description: Rufen Sie die Eigenschaften und die Beziehungen eines Anrufs-Objekts ab.
+ms.openlocfilehash: d161160fbce95e1aa549c8561c0c271b5c641818
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27062356"
+---
+# <a name="get-call"></a>Abrufen von Anrufen
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+
+Rufen Sie die Eigenschaften und die Beziehungen eines Anrufs-Objekts ab.
+
+## <a name="permissions"></a>Berechtigungen
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
+
+| Berechtigungstyp | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)                  |
+| :-------------- | :----------------------------------------------------------- |
+| Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt.                         |
+| Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt.                         |
+| Anwendung                            | Keine.                                  |
+
+## <a name="http-request"></a>HTTP-Anforderung
+<!-- { "blockType": "ignored" } -->
+```http
+GET /app/calls/{id}
+GET /applications/{id}/calls/{id}
+```
+
+## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
+Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
+
+## <a name="request-headers"></a>Anforderungsheader
+| Name          | Beschreibung               |
+|:--------------|:--------------------------|
+| Authorization | Bearer {token}. Erforderlich. |
+
+## <a name="request-body"></a>Anforderungstext
+Geben Sie für diese Methode keinen Anforderungstext an.
+
+## <a name="response"></a>Antwort
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eines Objekts [aufrufen,](../resources/call.md) in der Antworttext.
+
+## <a name="example"></a>Beispiel
+
+##### <a name="request"></a>Anforderung
+Das folgende Beispiel zeigt die Antwort.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_call"
+}-->
+```http
+GET https://graph.microsoft.com/beta/app/calls/{id}
+```
+
+##### <a name="response"></a>Antwort
+
+> **Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.call"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 2821
+
+{
+  "activeModalities": [
+    "unknown"
+  ],
+  "answeredBy": {
+    "identity": {
+      "user": {
+        "id": "550fae72-d251-43ec-868c-373732c2704f",
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "displayName": "Heidi Steen"
+      }
+    },
+    "languageId": "languageId-value",
+    "region": "region-value"
+  },
+  "callRoutes": [
+    {
+      "final": {
+        "user": {
+          "id": "550fae72-d251-43ec-868c-373732c2704f",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+          "displayName": "Heidi Steen"
+        }
+      },
+      "original": {
+        "phone": {
+          "id": "+14258828080"
+        }
+      },
+      "routingType": "forwarded"
+    }
+  ],
+  "callbackUri": "callbackUri-value",
+  "chatInfo": {
+    "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
+    "messageId": "0",
+    "replyChainMessageId": "0"
+  },
+  "direction": "incoming",
+  "id": "id-value",
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<media config blob>"
+  },
+  "meetingCapability": {
+    "allowAnonymousUsersToDialOut": true,
+    "autoAdmittedUsers": "everyoneInCompany"
+  },
+  "meetingInfo": {
+    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
+    "organizer": {
+      "user": {
+        "id": "550fae72-d251-43ec-868c-373732c2704f",
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "displayName": "Heidi Steen"
+      }
+    },
+    "allowConversationWithoutHost": true
+  },
+  "myParticipantId": "myParticipantId-value",
+  "requestedModalities": [
+    "audio", "video"
+  ],
+  "ringingTimeoutInSeconds": 99,
+  "routingPolicies": [
+    "none"
+  ],
+  "source": {
+    "identity": {
+      "user": {
+        "id": "550fae72-d251-43ec-868c-373732c2704f",
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "displayName": "Heidi Steen"
+      }
+    },
+    "languageId": "languageId-value",
+    "region": "region-value"
+  },
+  "state": "incoming",
+  "subject": "subject-value",
+  "targets": [
+    {
+      "identity": {
+        "user": {
+          "id": "550fae72-d251-43ec-868c-373732c2704f",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+          "displayName": "Heidi Steen"
+        }
+      },
+      "languageId": "languageId-value",
+      "region": "region-value"
+    }
+  ],
+  "tenantId": "tenantId-value",
+  "terminationReason": "terminationReason-value",
+  "toneInfo": {
+    "sequenceId": 99,
+    "tone": "tone0"
+  }
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get call",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

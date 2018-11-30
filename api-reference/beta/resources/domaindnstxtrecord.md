@@ -1,14 +1,23 @@
-<a id="domaindnstxtrecord-resource-type" class="xliff"></a>
-# domainDnsTxtRecord-Ressourcentyp
+---
+title: domainDnsTxtRecord-Ressourcentyp
+description: Stellt einen TXT-Eintrag dar, der der DNS-Zonendatei einer bestimmten Domäne im Mandanten hinzugefügt wird. Geerbt von der Entität DomainDnsRecord.
+ms.openlocfilehash: 2c49f42c2044d58855d293d39c0e5110091e4495
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27065170"
+---
+# <a name="domaindnstxtrecord-resource-type"></a>domainDnsTxtRecord-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Stellt einen TXT-Eintrag dar, der der DNS-Zonendatei einer bestimmten Domäne im Mandanten hinzugefügt wird. Geerbt von der Entität [DomainDnsRecord](domaindnsrecord.md).
 
-<a id="methods" class="xliff"></a>
-## Methoden
+## <a name="methods"></a>Methoden
 Direkte Abfragen dieser Ressource werden nicht unterstützt. Informationen zum Abfragen von Domänendiensteinträgen finden Sie im Thema [Domäne](domain.md).
 
-<a id="properties" class="xliff"></a>
-## Eigenschaften
+## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |id|String| Eindeutiger Bezeichner, der dieser Entität zugewiesen ist. Lässt keine Nullwerte zu, schreibgeschützt. |
@@ -19,13 +28,11 @@ Direkte Abfragen dieser Ressource werden nicht unterstützt. Informationen zum A
 |text|String| Wert, der beim Konfigurieren der *text*-Eigenschaft auf dem DNS-Host verwendet wird. |
 |ttl|Int32| Wert, der beim Konfigurieren der Eigenschaft für die Gültigkeitsdauer (*time-to-live (ttl)*) des DNS-Eintrags auf dem DNS-Host verwendet werden soll. Lässt keine Nullwerte zu. |
 
-<a id="relationships" class="xliff"></a>
-## Beziehungen
+## <a name="relationships"></a>Beziehungen
 Keine
 
 
-<a id="json-representation" class="xliff"></a>
-## JSON-Darstellung
+## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {

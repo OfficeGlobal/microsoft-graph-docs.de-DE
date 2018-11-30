@@ -1,4 +1,16 @@
+---
+title: Filter-Ressourcentyp
+description: Verwaltet das Filtern der Spalte einer Tabelle.
+ms.openlocfilehash: df896d10b1e8734015d38b92b5824e3e3652e3a6
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27062736"
+---
 # <a name="filter-resource-type"></a>Filter-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Verwaltet das Filtern der Spalte einer Tabelle.
 
@@ -7,14 +19,14 @@ Verwaltet das Filtern der Spalte einer Tabelle.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Apply](../api/filter_apply.md)|Keine|Wendet die angegebenen Filterkriterien in der angegebenen Spalte an.|
-|[Clear](../api/filter_clear.md)|Keine|Deaktiviert den Filter für die angegebene Spalte.|
+|[Apply](../api/filter-apply.md)|Keine|Wendet die angegebenen Filterkriterien in der angegebenen Spalte an.|
+|[Löschen](../api/filter-clear.md)|Keine|Deaktiviert den Filter für die angegebene Spalte.|
 
 ## <a name="properties"></a>Eigenschaften
 Keine
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |criteria|[FilterCriteria](filtercriteria.md)|Der aktuell angewendete Filter in der angegebenen Spalte. Schreibgeschützt.|
 

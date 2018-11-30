@@ -1,4 +1,16 @@
+---
+title: ChartDataLabels-Ressourcentyp
+description: Stellt eine Sammlung aller Datenbeschriftungen an einem Diagrammpunkt dar.
+ms.openlocfilehash: d226c5edb3fecc3a2e27fae32060f786f790d7e7
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27063351"
+---
 # <a name="chartdatalabels-resource-type"></a>ChartDataLabels-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Stellt eine Sammlung aller Datenbeschriftungen an einem Diagrammpunkt dar.
 
@@ -7,13 +19,13 @@ Stellt eine Sammlung aller Datenbeschriftungen an einem Diagrammpunkt dar.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[ChartDataLabels abrufen](../api/chartdatalabels_get.md) | [ChartDataLabels](chartdatalabels.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartDataLabels-Objekts.|
-|[Update](../api/chartdatalabels_update.md) | [ChartDataLabels](chartdatalabels.md)    |Dient zum Aktualisieren des ChartDataLabels-Objekts. |
+|[ChartDataLabels abrufen](../api/chartdatalabels-get.md) | [ChartDataLabels](chartdatalabels.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartDataLabels-Objekts.|
+|[Update](../api/chartdatalabels-update.md) | [ChartDataLabels](chartdatalabels.md) |Dient zum Aktualisieren des ChartDataLabels-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Position|string|DataLabelPosition-Wert, der die Position der Datenbeschriftung darstellt. Mögliche Werte: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
+|position|string|DataLabelPosition-Wert, der die Position der Datenbeschriftung darstellt. Mögliche Werte: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
 |Separator|string|Zeichenfolge, die das Trennzeichen für die Datenbeschriftungen in einem Diagramm darstellt.|
 |showBubbleSize|boolean|Boolescher Wert, der angibt, ob die Größe der Datenbeschriftungs-Sprechblase angezeigt wird.|
 |showCategoryName|boolean|Boolescher Wert, der angibt, ob der Kategoriename der Datenbeschriftung angezeigt wird.|
@@ -23,7 +35,7 @@ Stellt eine Sammlung aller Datenbeschriftungen an einem Diagrammpunkt dar.
 |showValue|boolean|Boolescher Wert, der angibt, ob der Datenbeschriftungswert angezeigt wird.|
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Format|[ChartDataLabelFormat](chartdatalabelformat.md)|Stellt das Format der Diagrammdatenbeschriftungen dar, einschließlich Füllung und Formatierung der Schriftart. Schreibgeschützt.|
 
