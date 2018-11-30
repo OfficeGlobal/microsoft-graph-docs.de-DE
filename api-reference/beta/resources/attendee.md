@@ -1,20 +1,31 @@
-# <a name="attendee-resource-type"></a>attendee-Ressourcentyp
+---
+title: attendee-Ressourcentyp
+description: Ein Teilnehmer eines Ereignisses. Dies kann eine Person oder eine Ressource sein, wie z. B. Besprechungsräume oder Geräte, die als Ressource auf dem Exchange-Server für den Mandanten eingerichtet wurden.
+ms.openlocfilehash: 7c1a4d5fb483dc722768c9b95885837bdaf6087e
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27062872"
+---
+# <a name="attendee-resource-type"></a><span data-ttu-id="ffeab-104">attendee-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="ffeab-104">attendee resource type</span></span>
 
-Ein Teilnehmer eines Ereignisses.
+> <span data-ttu-id="ffeab-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="ffeab-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ffeab-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="ffeab-106">Use of these APIs in production applications is not supported.</span></span>
 
-Abgeleitet von [attendeeBase](attendeebase.md).
+<span data-ttu-id="ffeab-107">Ein Teilnehmer eines Ereignisses.</span><span class="sxs-lookup"><span data-stu-id="ffeab-107">An event attendee.</span></span> <span data-ttu-id="ffeab-108">Dies kann eine Person oder eine Ressource sein, wie z. B. Besprechungsräume oder Geräte, die als Ressource auf dem Exchange-Server für den Mandanten eingerichtet wurden.</span><span class="sxs-lookup"><span data-stu-id="ffeab-108">This can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant.</span></span>
 
-## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+<span data-ttu-id="ffeab-109">Abgeleitet von [attendeeBase](attendeebase.md).</span><span class="sxs-lookup"><span data-stu-id="ffeab-109">Derived from [attendeeBase](attendeebase.md).</span></span>
+
+## <a name="properties"></a><span data-ttu-id="ffeab-110">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="ffeab-110">Properties</span></span>
+| <span data-ttu-id="ffeab-111">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="ffeab-111">Property</span></span>     | <span data-ttu-id="ffeab-112">Typ</span><span class="sxs-lookup"><span data-stu-id="ffeab-112">Type</span></span>   |<span data-ttu-id="ffeab-113">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ffeab-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|status|[ResponseStatus](responsestatus.md)|Die Antwort des Teilnehmers (keine, akzeptiert, abgelehnt, usw.) für das Ereignis und das Datum und die Uhrzeit, an dem/der die Antwort gesendet wurde.|
-|Typ|String|Der Teilnehmertyp: `Required`, `Optional`, `Resource`.|
-|emailAddress|[emailAddress](emailAddress.md)|Enthält den Namen und die SMTP-Adresse des Teilnehmers.|
+|<span data-ttu-id="ffeab-114">status</span><span class="sxs-lookup"><span data-stu-id="ffeab-114">status</span></span>|[<span data-ttu-id="ffeab-115">ResponseStatus</span><span class="sxs-lookup"><span data-stu-id="ffeab-115">ResponseStatus</span></span>](responsestatus.md)|<span data-ttu-id="ffeab-116">Die Antwort des Teilnehmers (keine, akzeptiert, abgelehnt, usw.) für das Ereignis und das Datum und die Uhrzeit, an dem/der die Antwort gesendet wurde.</span><span class="sxs-lookup"><span data-stu-id="ffeab-116">The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.</span></span>|
+|<span data-ttu-id="ffeab-117">Typ</span><span class="sxs-lookup"><span data-stu-id="ffeab-117">type</span></span>|<span data-ttu-id="ffeab-118">String</span><span class="sxs-lookup"><span data-stu-id="ffeab-118">String</span></span>|<span data-ttu-id="ffeab-119">Der Teilnehmertyp: `required`, `optional`, `resource`.</span><span class="sxs-lookup"><span data-stu-id="ffeab-119">The attendee type: `required`, `optional`, `resource`.</span></span>|
+|<span data-ttu-id="ffeab-120">emailAddress</span><span class="sxs-lookup"><span data-stu-id="ffeab-120">emailAddress</span></span>|[<span data-ttu-id="ffeab-121">emailAddress</span><span class="sxs-lookup"><span data-stu-id="ffeab-121">emailAddress</span></span>](emailaddress.md)|<span data-ttu-id="ffeab-122">Enthält den Namen und die SMTP-Adresse des Teilnehmers.</span><span class="sxs-lookup"><span data-stu-id="ffeab-122">Includes the name and SMTP address of the attendee.</span></span>|
 
+## <a name="json-representation"></a><span data-ttu-id="ffeab-123">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="ffeab-123">JSON representation</span></span>
 
-## <a name="json-representation"></a>JSON-Darstellung
-
-Es folgt eine JSON-Darstellung der Ressource.
+<span data-ttu-id="ffeab-124">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="ffeab-124">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
