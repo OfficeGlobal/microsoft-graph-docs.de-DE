@@ -1,3 +1,13 @@
+---
+title: personType-Ressourcentyp
+description: Stellt den Typ der Person dar.
+ms.openlocfilehash: 3938be8d1dd0bf4a4934de4bbcd7862185971128
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27016806"
+---
 # <a name="persontype-resource-type"></a>personType-Ressourcentyp
 
 Stellt den Typ der Person dar.
@@ -12,7 +22,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.persontype
+  "@odata.type": "microsoft.graph.personType"
 }-->
 
 ```json
@@ -32,7 +42,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "persontype resource",
+  "description": "personType resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

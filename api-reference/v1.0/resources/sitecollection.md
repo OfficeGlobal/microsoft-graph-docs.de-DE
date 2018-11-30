@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SiteCollection
+ms.openlocfilehash: 98f7b9d930ccf7f1f0e1a6a0e1ad0353d49cf2bf
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27018223"
+---
 # <a name="sitecollection-resource"></a>SiteCollection-Ressource
 
 Die **siteCollection**-Ressource stellt weitere Informationen zu einer Websitesammlung bereit.
@@ -17,16 +29,19 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```json
 {
-  "hostname": "contoso.sharepoint.com"
+  "hostname": "contoso.sharepoint.com",
+  "root": { "@odata.type": "microsoft.graph.root" }
 }
 ```
 
 ## <a name="properties"></a>Eigenschaften
 
-| Eigenschaftenname | Typ    | Beschreibung                                                                                                                  |
-|:--------------|:--------|:---------------------------------------------------
-| **hostname**  | string  | Der Hostname der Websitesammlung. Schreibgeschützt.
+| Eigenschaftenname        | Typ     | Beschreibung
+|:---------------------|:---------|:---------------------------------------------------
+| **hostname**         | string   | Der Hostname der Websitesammlung. Schreibgeschützt.
+| **root**             | [root][] | Falls vorhanden, gibt an, dass dies eine Stammwebsitesammlung in SharePoint ist. Schreibgeschützt.
 
+[root]: root.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -35,5 +50,5 @@ Es folgt eine JSON-Darstellung der Ressource.
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "Facets/SiteCollection"
 }-->

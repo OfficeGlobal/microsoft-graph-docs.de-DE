@@ -1,3 +1,13 @@
+---
+title: FormatProtection-Ressourcentyp
+description: Stellt den Formatschutz eines Bereichsobjekts dar.
+ms.openlocfilehash: b3954763d7c611c0db90008ff7aa74f672c51a4d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27017187"
+---
 # <a name="formatprotection-resource-type"></a>FormatProtection-Ressourcentyp
 
 Stellt den Formatschutz eines Bereichsobjekts dar.
@@ -7,11 +17,11 @@ Stellt den Formatschutz eines Bereichsobjekts dar.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[FormatProtection abrufen](../api/formatprotection_get.md) | [FormatProtection](formatprotection.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des formatProtection-Objekts.|
-|[Update](../api/formatprotection_update.md) | [FormatProtection](formatprotection.md)    |Dient zum Aktualisieren des FormatProtection-Objekts. |
+|[FormatProtection abrufen](../api/formatprotection-get.md) | [FormatProtection](formatprotection.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des formatProtection-Objekts.|
+|[Update](../api/formatprotection-update.md) | [FormatProtection](formatprotection.md)  |Dient zum Aktualisieren des FormatProtection-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |formulaHidden|boolean|Zeigt an, ob Excel die Formel für die Zellen im Bereich ausblendet. Ein Nullwert gibt an, dass der gesamte Bereich keine einheitliche Einstellung zur Formelausblendung hat.|
 |locked|boolean|Gibt an, ob Excel die Zellen im Objekt sperrt. Ein Nullwert gibt an, dass der gesamte Bereich keine einheitliche Einstellung zum Sperren hat.|
@@ -26,10 +36,11 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.formatProtection"
+  "@odata.type": "microsoft.graph.workbookFormatProtection"
 }-->
 
 ```json

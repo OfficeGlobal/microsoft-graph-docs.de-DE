@@ -1,3 +1,13 @@
+---
+title: TableColumn-Ressourcentyp
+description: Stellt eine Spalte in einer Tabelle dar.
+ms.openlocfilehash: 3db97f1d80a0c36278cb27b806ab2a82be6c8b01
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27017904"
+---
 # <a name="tablecolumn-resource-type"></a>TableColumn-Ressourcentyp
 
 Stellt eine Spalte in einer Tabelle dar.
@@ -7,40 +17,40 @@ Stellt eine Spalte in einer Tabelle dar.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[TableColumn abrufen](../api/tablecolumn_get.md) | [TableColumn](tablecolumn.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des tableColumn-Objekts.|
-|[Update](../api/tablecolumn_update.md) | [TableColumn](tablecolumn.md) |Dient zum Aktualisieren des TableColumn-Objekts. |
-|[Databodyrange](../api/tablecolumn_databodyrange.md)|[Range](range.md)|Ruft das Bereichsobjekt ab, das mit dem Datenteil der Spalte verknüpft ist.|
-|[Headerrowrange](../api/tablecolumn_headerrowrange.md)|[Range](range.md)|Ruft das Bereichsobjekt ab, das mit der Überschriftenzeile der Spalte verknüpft ist.|
-|[Range](../api/tablecolumn_range.md)|[Range](range.md)|Ruft das Bereichsobjekt ab, das mit der gesamten Spalte verknüpft ist.|
-|[Totalrowrange](../api/tablecolumn_totalrowrange.md)|[Range](range.md)|Ruft das Bereichsobjekt ab, das mit der Ergebniszeile der Spalte verknüpft ist.|
-|[Delete](../api/tablecolumn_delete.md)|Keine|Löscht die Spalte aus der Tabelle.|
-|[List](../api/tablecolumn_list.md) | [TableColumn](tablecolumn.md)-Sammlung |Dient zum Abrufen der tableColumn-Objektsammlung. |
-|[Itemat](../api/tablecolumncollection_itemat.md)|[TableColumn](tablecolumn.md)|Ruft eine Spalte anhand ihrer Position in der Auflistung ab.|
-|[Add](../api/tablecolumncollection_add.md)|[TableColumn](tablecolumn.md)|Fügt der Tabelle eine neue Spalte hinzu.|
+|[TableColumn abrufen](../api/tablecolumn-get.md) | [WorkbookTableColumn](tablecolumn.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des tableColumn-Objekts.|
+|[Update](../api/tablecolumn-update.md) | [WorkbookTableColumn](tablecolumn.md) |Dient zum Aktualisieren des TableColumn-Objekts. |
+|[Databodyrange](../api/tablecolumn-databodyrange.md)|[Range](range.md)|Ruft das Bereichsobjekt ab, das mit dem Datenteil der Spalte verknüpft ist.|
+|[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[Range](range.md)|Ruft das Bereichsobjekt ab, das mit der Überschriftenzeile der Spalte verknüpft ist.|
+|[Range](../api/tablecolumn-range.md)|[Range](range.md)|Ruft das Bereichsobjekt ab, das mit der gesamten Spalte verknüpft ist.|
+|[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[Range](range.md)|Ruft das Bereichsobjekt ab, das mit der Ergebniszeile der Spalte verknüpft ist.|
+|[Delete](../api/tablecolumn-delete.md)|Keine|Löscht die Spalte aus der Tabelle.|
+|[List](../api/tablecolumn-list.md) | [WorkbookTableColumn](tablecolumn.md) -Auflistung |Dient zum Abrufen der tableColumn-Objektsammlung. |
+|[Itemat](../api/tablecolumncollection-itemat.md)|[WorkbookTableColumn](tablecolumn.md)|Ruft eine Spalte anhand ihrer Position in der Auflistung ab.|
+|[Add](../api/tablecolumncollection-add.md)|[WorkbookTableColumn](tablecolumn.md)|Fügt der Tabelle eine neue Spalte hinzu.|
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|int|Gibt einen eindeutigen Schlüssel an, der die Spalte in der Tabelle angibt. Schreibgeschützt.|
+|id|string|Gibt einen eindeutigen Schlüssel an, der die Spalte in der Tabelle angibt. Diese Eigenschaft sollte als nicht transparenter Zeichenfolgenwert interpretiert werden und sollte nicht in einen anderen Typ ausgewertet werden. Schreibgeschützt.|
 |Index|int|Gibt die Indexnummer der Spalte in der Spaltenauflistung der Tabelle zurück. Nullindiziert. Schreibgeschützt.|
 |name|string|Gibt den Namen der Tabellenspalte zurück. Schreibgeschützt.|
-|values|json|Stellt die Rohwerte des angegebenen Bereichs dar. Die zurückgegebenen Daten können den Typ Zeichenfolge, Zahl oder ein boolescher Wert sein. Zelle, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück.|
+|values|Json|Stellt die Rohwerte des angegebenen Bereichs dar. Die zurückgegebenen Daten können den Typ Zeichenfolge, Zahl oder ein boolescher Wert sein. Zelle, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Filter|[Filter](filter.md)|Ruft den auf die Spalte angewendeten Filter ab. Schreibgeschützt.|
+|Filter|[WorkbookFilter](filter.md)|Ruft den auf die Salte angewendeten Filter ab. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.tableColumn"
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookTableColumn"
 }-->
 
 ```json

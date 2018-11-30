@@ -1,24 +1,22 @@
+---
+title: entity-Ressourcentyp
+description: Keines
+ms.openlocfilehash: 381e1df86d96f416a36eca58c1b3f6a7f3e58f01
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27017654"
+---
 # <a name="entity-resource-type"></a>entity-Ressourcentyp
 
-
-## <a name="methods"></a>Methoden
-
-| Methode       | Rückgabetyp  |Beschreibung|
-|:---------------|:--------|:----------|
-|[Entität abrufen](../api/entity_get.md) | [Entität](entity.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des entity-Objekts.|
-|[Löschen](../api/entity_delete.md) | Keine |Löscht ein entity-Objekt. |
-
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |id|String| Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
-
-
-
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -26,6 +24,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "abstract": "true",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],

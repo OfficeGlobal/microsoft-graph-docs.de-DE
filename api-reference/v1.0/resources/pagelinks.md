@@ -1,3 +1,13 @@
+---
+title: pageLinks-Ressourcentyp
+description: Links zum Öffnen einer OneNote-Seite.
+ms.openlocfilehash: f1e4fe36d4356986bc88b744a9a62e28b8d368c5
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27016575"
+---
 # <a name="pagelinks-resource-type"></a>pageLinks-Ressourcentyp
 
 Links zum Öffnen einer OneNote-Seite.
@@ -22,7 +32,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[externalLink](externallink.md)|Öffnet die Seite im systemeigenen OneNote-Client, sofern er installiert ist.|
 |oneNoteWebUrl|[externalLink](externallink.md)|Öffnet die Seite in OneNote Online.|

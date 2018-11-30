@@ -1,3 +1,13 @@
+---
+title: ChartLineFormat-Ressourcentyp
+description: Kapselt die Formatierungsoptionen für Linienelemente.
+ms.openlocfilehash: 6e43818bc55972585deff5aa2add1d513f031360
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27016845"
+---
 # <a name="chartlineformat-resource-type"></a>ChartLineFormat-Ressourcentyp
 
 Kapselt die Formatierungsoptionen für Linienelemente.
@@ -7,12 +17,12 @@ Kapselt die Formatierungsoptionen für Linienelemente.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[ChartLineFormat abrufen](../api/chartlineformat_get.md) | [ChartLineFormat](chartlineformat.md) |Dient zum Lesen der Eigenschaften und Beziehungen eines chartLineFormat-Objekts.|
-|[Update](../api/chartlineformat_update.md) | [ChartLineFormat](chartlineformat.md)    |Dient zum Aktualisieren des ChartLineFormat-Objekts. |
-|[Clear](../api/chartlineformat_clear.md)|Keine|Löschen der Linienformatierung eines Diagrammelements.|
+|[ChartLineFormat abrufen](../api/chartlineformat-get.md) | [WorkbookChartLineFormat](chartlineformat.md) |Dient zum Lesen der Eigenschaften und Beziehungen eines chartLineFormat-Objekts.|
+|[Update](../api/chartlineformat-update.md) | [WorkbookChartLineFormat](chartlineformat.md) |Dient zum Aktualisieren des ChartLineFormat-Objekts. |
+|[Löschen](../api/chartlineformat-clear.md)|Keine|Löschen der Linienformatierung eines Diagrammelements.|
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |color|string|HTML-Farbcode, der die Farbe der Linien im Diagramm darstellt.|
 
@@ -24,12 +34,11 @@ Keine
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartLineFormat"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartLineFormat"
 }-->
 
 ```json

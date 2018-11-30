@@ -1,9 +1,19 @@
+---
+title: licenseUnitsDetail-Ressourcentyp
+description: Die **prepaidUnits**-Eigenschaft der subscribedSku-Entität ist vom Typ **licenseUnitsDetail**.
+ms.openlocfilehash: e8cf5253676dab8a4b31c3ab33faa0af3ddfd527
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27016187"
+---
 # <a name="licenseunitsdetail-resource-type"></a>licenseUnitsDetail-Ressourcentyp
 
 Die **prepaidUnits**-Eigenschaft der [subscribedSku](subscribedsku.md)-Entität ist vom Typ **licenseUnitsDetail**.
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:-------------|:-----|:----------|
 |aktiviert|Int32| Die Anzahl der Einheiten, die aktiviert werden. |
 |suspended|Int32| Die Anzahl der Einheiten, die angehalten werden. |

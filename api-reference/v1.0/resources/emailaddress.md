@@ -1,3 +1,13 @@
+---
+title: emailAddress-Ressourcentyp
+description: Name und E-Mail-Adresse eines Kontakts oder eines Empfängers der Nachricht.
+ms.openlocfilehash: 962b2f36af9e292125edc3da8606cd532b8c2ec0
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27016345"
+---
 # <a name="emailaddress-resource-type"></a>emailAddress-Ressourcentyp
 
 Name und E-Mail-Adresse eines Kontakts oder eines Empfängers der Nachricht.

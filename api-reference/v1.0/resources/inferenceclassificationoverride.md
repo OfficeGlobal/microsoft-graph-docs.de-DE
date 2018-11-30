@@ -1,3 +1,13 @@
+---
+title: inferenceClassificationOverride-Ressourcentyp
+description: Stellt die Außerkraftsetzung eines Benutzers dafür dar, wie eingehende Nachrichten von einem bestimmten Absender immer klassifiziert werden sollen.
+ms.openlocfilehash: 3f3f07e870a4ba549062197a380633ab591c54fe
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27017827"
+---
 # <a name="inferenceclassificationoverride-resource-type"></a>inferenceClassificationOverride-Ressourcentyp
 
 Stellt die Außerkraftsetzung eines Benutzers dafür dar, wie eingehende Nachrichten von einem bestimmten Absender immer klassifiziert werden sollen.
@@ -7,13 +17,13 @@ Stellt die Außerkraftsetzung eines Benutzers dafür dar, wie eingehende Nachric
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Update](../api/inferenceclassificationoverride_update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)    |Ändert das **ClassifyAs**-Feld einer Außerkraftsetzung wie angegeben. |
-|[Löschen](../api/inferenceclassificationoverride_delete.md) | Keine |Löscht eine Außerkraftsetzung, die durch ihre ID angegeben ist. |
+|[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Ändern Sie das **ClassifyAs** -Feld einer Außerkraftsetzung wie angegeben. |
+|[Delete](../api/inferenceclassificationoverride-delete.md) | Keine |Löscht eine Außerkraftsetzung, die durch ihre ID angegeben ist. |
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|classifyAs|string| Gibt an, wie eingehende Nachrichten von einem bestimmten Absender immer klassifiziert werden sollen. Mögliche Werte: `focused`, `other`.|
+|classifyAs|inferenceClassificationType| Gibt an, wie eingehende-Nachrichten von einer bestimmten Absender sollte stets als klassifiziert werden. Die möglichen Werte sind: `focused`, `other`.|
 |id|string| Der eindeutige Bezeichner der Außerkraftsetzung. Schreibgeschützt.|
 |senderEmailAddress|[emailAddress](emailaddress.md)|Die E-Mail-Adressinformationen des Absenders, für den die Außerkraftsetzung erstellt wird.|
 
@@ -27,6 +37,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

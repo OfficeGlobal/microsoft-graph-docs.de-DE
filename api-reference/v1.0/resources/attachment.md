@@ -1,3 +1,13 @@
+---
+title: Ressourcentyp attachment
+description: Sie können ein Ereignis verwandten Inhalten hinzugefügt
+ms.openlocfilehash: 418d8d4e60d12fed5a54f994e14e996c65731926
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27018009"
+---
 # <a name="attachment-resource-type"></a>Ressourcentyp attachment
 
 Sie können verwandte Inhalte in Form einer Anlage zu einem [Ereignis](../resources/event.md), einer [Nachricht](../resources/message.md) oder einem [Beitrag](../resources/post.md) hinzufügen.
@@ -6,7 +16,7 @@ Sie können verwandte Inhalte in Form einer Anlage zu einem [Ereignis](../resour
 
 * Datei ([fileAttachment](../resources/fileattachment.md)-Ressource)
 * Element (Kontakt, Ereignis oder Nachricht, dargestellt durch eine [itemAttachment](../resources/itemattachment.md)-Ressource)
-* Link zu einer Datei ([referenceAttachment](../resources/referenceAttachment.md)-Ressource)
+* Link zu einer Datei ([referenceAttachment](../resources/referenceattachment.md)-Ressource)
 
 
 ## <a name="methods"></a>Methoden
@@ -15,18 +25,18 @@ Die folgenden Methoden gelten für alle abgeleiteten Typen von Anlagen (**fileAt
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-|[Anlage abrufen](../api/attachment_get.md) | [attachment](attachment.md) |Lesen Sie die Eigenschaften und Beziehungen einer Anlage, die einem Ereignis, einer Nachricht oder einem Beitrag angehängt ist.|
-|[Anlage einem Ereignis hinzufügen](../api/event_post_attachments.md) | [attachment](attachment.md) |Dient dem Hinzufügen einer Datei, eines Elements oder einer verknüpften Anlage zu einem Ereignis.|
-|[Anlagen einer Nachricht hinzufügen](../api/message_post_attachments.md) | [attachment](attachment.md) |Dient dem Hinzufügen einer Datei, eines Elements oder einer verknüpften Anlage zu einer Nachricht.|
-|[Anlage einem Beitrag hinzufügen](../api/post_post_attachments.md) | [attachment](attachment.md) |Dient dem Hinzufügen einer Datei, eines Elements oder einer verknüpften Anlage zu einem Beitrag.|
-|[Anlagen eines Ereignisses auflisten](../api/event_list_attachments.md) | [attachment](attachment.md) collection | Liste der Anlagen für ein Ereignis abrufen |
-|[Anlagen einer Nachricht auflisten](../api/message_list_attachments.md) | [attachment](attachment.md) collection | Liste der Anlagen für eine Nachricht abrufen |
-|[Anlagen eines Beitrags auflisten](../api/post_list_attachments.md) | [attachment](attachment.md) collection | Liste der Anlagen für einen Beitrag abrufen |
-|[Löschen](../api/attachment_delete.md) | Keine |Eine Anlage für ein Ereignis, eine Nachricht oder einen Beitrag löschen |
+|[Anlage abrufen](../api/attachment-get.md) | [attachment](attachment.md) |Lesen Sie die Eigenschaften und Beziehungen einer Anlage, die einem Ereignis, einer Nachricht oder einem Beitrag angehängt ist.|
+|[Anlage einem Ereignis hinzufügen](../api/event-post-attachments.md) | [attachment](attachment.md) |Dient dem Hinzufügen einer Datei, eines Elements oder einer verknüpften Anlage zu einem Ereignis.|
+|[Anlagen einer Nachricht hinzufügen](../api/message-post-attachments.md) | [attachment](attachment.md) |Dient dem Hinzufügen einer Datei, eines Elements oder einer verknüpften Anlage zu einer Nachricht.|
+|[Anlage einem Beitrag hinzufügen](../api/post-post-attachments.md) | [attachment](attachment.md) |Dient dem Hinzufügen einer Datei, eines Elements oder einer verknüpften Anlage zu einem Beitrag.|
+|[Anlagen eines Ereignisses auflisten](../api/event-list-attachments.md) | [attachment](attachment.md) collection | Liste der Anlagen für ein Ereignis abrufen |
+|[Anlagen einer Nachricht auflisten](../api/message-list-attachments.md) | [attachment](attachment.md) collection | Liste der Anlagen für eine Nachricht abrufen |
+|[Anlagen eines Beitrags auflisten](../api/post-list-attachments.md) | [attachment](attachment.md) collection | Liste der Anlagen für einen Beitrag abrufen |
+|[Löschen](../api/attachment-delete.md) | Keine |Eine Anlage für ein Ereignis, eine Nachricht oder einen Beitrag löschen |
 
 ## <a name="properties"></a>Eigenschaften
 
-Nachfolgend finden Sie die grundlegenden Eigenschaften von attachment-Ressourcen. Zusätzliche Eigenschaften finden Sie bei dem jeweiligen Anlagentyp ([fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) oder [referenceAttachment](../resources/referenceAttachment.md)).
+Nachfolgend finden Sie die grundlegenden Eigenschaften von attachment-Ressourcen. Zusätzliche Eigenschaften finden Sie bei dem jeweiligen Anlagentyp ([fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) oder [referenceAttachment](../resources/referenceattachment.md)).
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
@@ -46,6 +56,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "abstract": true,
   "optionalProperties": [
 
   ],

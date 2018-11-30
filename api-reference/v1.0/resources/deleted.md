@@ -1,8 +1,20 @@
-# <a name="deleted-resource-type"></a>Deleted-Ressourcentyp
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Deleted
+ms.openlocfilehash: 6a51d858f529e65820d7bc55bb7ec8fec80186d4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27016435"
+---
+# <a name="deleted-facet"></a>Facet „Deleted“
 
 Die **Deleted**-Ressource gibt an, dass das Element gelöscht wurde. In dieser Version der API gibt das Vorhandensein (nicht Null) des Ressourcenwerts an, dass die Datei gelöscht wurde. Ein NULL-Werte (oder ein fehlender Wert) gibt an, dass die Datei nicht gelöscht wurde.
 
-Unter [Änderungen für ein Element anzeigen](../api/item_delta.md) finden Sie weitere Informationen zum Nachverfolgen von Änderungen und zum Suchen gelöschter Elemente.
+Unter [Änderungen für ein Element anzeigen](../api/driveitem-delta.md) finden Sie weitere Informationen zum Nachverfolgen von Änderungen und zum Suchen gelöschter Elemente.
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -20,7 +32,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "state": "string"
 }
 ```
-
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft | Typ   | Beschreibung                               |
@@ -31,13 +42,10 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).
 
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "deleted resource",
-  "keywords": "",
+  "description": "The deleted facet providers properties about deleted items",
+  "keywords": "deleted,delete,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Deleted"
+} -->

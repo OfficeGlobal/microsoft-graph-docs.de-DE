@@ -1,3 +1,13 @@
+---
+title: RangeFill-Ressourcentyp
+description: Stellt den Hintergrund eines Bereichsobjekts dar.
+ms.openlocfilehash: 7a9919d5190c34937319de1c15f722453b7c79e0
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27016580"
+---
 # <a name="rangefill-resource-type"></a>RangeFill-Ressourcentyp
 
 Stellt den Hintergrund eines Bereichsobjekts dar.
@@ -7,12 +17,12 @@ Stellt den Hintergrund eines Bereichsobjekts dar.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[RangeFill abrufen](../api/rangefill_get.md) | [RangeFill](rangefill.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des rangeFill-Objekts.|
-|[Update](../api/rangefill_update.md) | [RangeFill](rangefill.md)    |Dient zum Aktualisieren des RangeFill-Objekts. |
-|[Clear](../api/rangefill_clear.md)|Keine|Setzt den Hintergrund des Bereichs zurück.|
+|[RangeFill abrufen](../api/rangefill-get.md) | [WorkbookRangeFill](rangefill.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des rangeFill-Objekts.|
+|[Update](../api/rangefill-update.md) | [WorkbookRangeFill](rangefill.md)   |Dient zum Aktualisieren des RangeFill-Objekts. |
+|[Löschen](../api/rangefill-clear.md)|Keine|Setzt den Hintergrund des Bereichs zurück.|
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |color|string|HTML-Farbcode, der die Farbe der Rahmenlinie, des Formulars #RRGGBB (z. B.  "FFA500") oder als benannte HTML-Farbe (z. B. "orange") darstellt.|
 
@@ -24,12 +34,11 @@ Keine
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.rangeFill"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 }-->
 
 ```json

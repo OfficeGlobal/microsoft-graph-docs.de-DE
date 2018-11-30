@@ -1,3 +1,13 @@
+---
+title: notebookLinks-Ressourcentyp
+description: Links zum Öffnen eines OneNote-Notizbuchs.
+ms.openlocfilehash: 713779d3bab12222df7a405c1dccb4e6cd4cb235
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27017726"
+---
 # <a name="notebooklinks-resource-type"></a>notebookLinks-Ressourcentyp
 
 Links zum Öffnen eines OneNote-Notizbuchs.
@@ -22,7 +32,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[externalLink](externallink.md)|Öffnet das Notizbuch im systemeigenen OneNote-Client, sofern er installiert ist.|
 |oneNoteWebUrl|[externalLink](externallink.md)|Öffnet das Notizbuch in OneNote Online.|

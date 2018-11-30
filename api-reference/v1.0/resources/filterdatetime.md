@@ -1,12 +1,22 @@
+---
+title: FilterDatetime-Ressourcentyp
+description: Stellt dar, wie ein Datum beim Filtern nach Werten gefiltert wird.
+ms.openlocfilehash: 8156b9f5779dd8d70ff3a839d8a6ef4f5753bacd
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27016155"
+---
 # <a name="filterdatetime-resource-type"></a>FilterDatetime-Ressourcentyp
 
 Stellt dar, wie ein Datum beim Filtern nach Werten gefiltert wird.
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |date|string|Das Datum im ISO8601-Format zum Filtern von Daten.|
-|specificity|string|Genauigkeit des Datums zum Beibehalten von Daten. Wenn z. B. das Datum 2005-04-02 ist und die Spezifität auf „Monat“ festgelegt ist, werden beim Filtervorgang alle Zeilen mit einem Datum im Monat April 2009 beibehalten. Mögliche Werte:`Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
+|specificity|string|Wie bestimmte das Datum verwendet werden soll, Daten zu halten. Angenommen, wenn das Datum 2005-04-02 ist und die Spezifität auf "Month" festgelegt wird, bleiben Filteroperation alle Zeilen mit einem Datum im Monat April 2009. Die möglichen Werte sind: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -21,7 +31,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.filterDateTime"
+  "@odata.type": "microsoft.graph.workbookFilterDateTime"
 }-->
 
 ```json

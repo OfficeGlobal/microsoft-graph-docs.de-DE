@@ -1,18 +1,28 @@
+---
+title: groupSetting-Ressourcentyp
+description: Gruppeneinstellungen steuern Verhalten wie blockierte Wortlisten für Gruppenanzeigenamen oder ob Gastbenutzer Gruppenbesitzer sein können.
+ms.openlocfilehash: 16eb67e717fb151a627961176b1409e8426e3178
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27016881"
+---
 # <a name="groupsetting-resource-type"></a>groupSetting-Ressourcentyp
 
 Gruppeneinstellungen steuern Verhalten wie blockierte Wortlisten für Gruppenanzeigenamen oder ob Gastbenutzer Gruppenbesitzer sein können.
 
-Gruppeneinstellungen können basierend auf den verfügbaren [groupSettingTemplates](groupSettingTemplate.md) erstellt werden, und die Standardwerte können geändert werden. Diese Einstellungen regeln Gruppenverhalten auf mandantenweiter Ebene oder für eine bestimmte Gruppe. Wenn die gleiche Einstellung sowohl mandantenweit als auch für eine bestimmte Gruppe definiert ist, überschreibt die Einstellung auf Gruppierungsebene die mandantenweite Einstellung.  So ermöglicht die mandantenweite Einstellung Gästen möglicherweise, von vorhandenen Mitgliedern der Gruppe eingeladen zu werden, wobei eine einzelne Gruppeneinstellung dies jedoch überschreiben und nicht zulassen kann, das Gäste von Mitgliedern der Gruppe eingeladen werden. Gruppeneinstellungen regeln nur das Gruppenverhalten in Office 365.
+Gruppeneinstellungen können basierend auf den verfügbaren [groupSettingTemplates](groupsettingtemplate.md) erstellt werden, und die Standardwerte können geändert werden. Diese Einstellungen regeln Gruppenverhalten auf mandantenweiter Ebene oder für eine bestimmte Gruppe. Wenn die gleiche Einstellung sowohl mandantenweit als auch für eine bestimmte Gruppe definiert ist, überschreibt die Einstellung auf Gruppierungsebene die mandantenweite Einstellung.  So ermöglicht die mandantenweite Einstellung Gästen möglicherweise, von vorhandenen Mitgliedern der Gruppe eingeladen zu werden, wobei eine einzelne Gruppeneinstellung dies jedoch überschreiben und nicht zulassen kann, das Gäste von Mitgliedern der Gruppe eingeladen werden. Gruppeneinstellungen regeln nur das Gruppenverhalten in Office 365.
 
 ## <a name="methods"></a>Methoden
 
 | Methode | Rückgabetyp | Beschreibung |
 |:---------------|:--------|:----------|
-|[Einstellung erstellen](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Erstellen Sie eine Einstellungsobjekt basierend auf einer groupSettingTemplate. Die POST-Anforderung muss settingValues für alle Einstellungen bereitstellen, die in der Vorlage definiert sind. |
-|[Einstellung abrufen](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Dient zum Lesen der Eigenschaften eines bestimmten Einstellungsobjekts. |
-|[Einstellungen auflisten](../api/groupsetting_list.md) | [groupSetting](groupsetting.md)-Sammlung | Listet Eigenschaften aller Einstellungsobjekte auf. |
-|[Einstellung aktualisieren](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | groupsetting-Objekt wird aktualisiert. |
-|[Einstellung löschen](../api/groupsetting_delete.md) | Keine | Löscht ein Einstellungsobjekt. |
+|[Einstellung erstellen](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |Erstellen Sie eine Einstellungsobjekt basierend auf einer groupSettingTemplate. Die POST-Anforderung muss settingValues für alle Einstellungen bereitstellen, die in der Vorlage definiert sind. |
+|[Einstellung abrufen](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Dient zum Lesen der Eigenschaften eines bestimmten Einstellungsobjekts. |
+|[Einstellungen auflisten](../api/groupsetting-list.md) | [groupSetting](groupsetting.md)-Sammlung | Listet Eigenschaften aller Einstellungsobjekte auf. |
+|[Einstellung aktualisieren](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | groupsetting-Objekt wird aktualisiert. |
+|[Einstellung löschen](../api/groupsetting-delete.md) | Keine | Löscht ein Einstellungsobjekt. |
 
 ## <a name="properties"></a>Eigenschaften
 
@@ -31,11 +41,12 @@ Keine.
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.groupSetting"
 }-->
 
