@@ -1,4 +1,16 @@
+---
+title: ChartLegend-Ressourcentyp
+description: Stellt die Legende in einem Diagramm dar.
+ms.openlocfilehash: d01eee45245d17fb142ddb75b70a6cde6a89213c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27064880"
+---
 # <a name="chartlegend-resource-type"></a>ChartLegend-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Stellt die Legende in einem Diagramm dar.
 
@@ -7,18 +19,18 @@ Stellt die Legende in einem Diagramm dar.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[ChartLegend abrufen](../api/chartlegend_get.md) | [ChartLegend](chartlegend.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartLegend-Objekts.|
-|[Update](../api/chartlegend_update.md) | [ChartLegend](chartlegend.md)    |Dient zum Aktualisieren des ChartLegend-Objekts. |
+|[ChartLegend abrufen](../api/chartlegend-get.md) | [ChartLegend](chartlegend.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartLegend-Objekts.|
+|[Update](../api/chartlegend-update.md) | [ChartLegend](chartlegend.md) |Dient zum Aktualisieren des ChartLegend-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Overlay|boolean|Boolescher Wert, der angibt, ob die Diagrammlegende mit dem Text des Diagramms überlappen soll.|
 |Position|string|Gibt die Position der Legende im Diagramm an. Mögliche Werte: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
 |visible|boolean|Ein boolescher Wert, der die Sichtbarkeit eines ChartLegend-Objekts darstellt.|
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Format|[ChartLegendFormat](chartlegendformat.md)|Stellt die Formatierung für eine Diagrammlegende dar, einschließlich Füllung und Schriftartformatierung. Schreibgeschützt.|
 

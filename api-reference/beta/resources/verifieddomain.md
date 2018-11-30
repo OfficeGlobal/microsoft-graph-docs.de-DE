@@ -1,17 +1,28 @@
+---
+title: verifiedDomain-Ressourcentyp
+description: Gibt eine Domäne für einen Mandanten an. Die **verifiedDomains**-Eigenschaft der organization-Entität ist eine Auflistung von **VerifiedDomain**.
+ms.openlocfilehash: 810b5fea0fbaf82eeb452c0f5c6032679590ff49
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27063431"
+---
 # <a name="verifieddomain-resource-type"></a>verifiedDomain-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Gibt eine Domäne für einen Mandanten an. Die **verifiedDomains**-Eigenschaft der [organization](organization.md)-Entität ist eine Auflistung von **VerifiedDomain**.
 
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Funktionen|String|Zum Beispiel „Email“, „OfficeCommunicationsOnline“.|
 |isDefault|Boolean|                **true**, wenn dies die Standarddomäne ist, die dem Mandanten zugeordnet ist, andernfalls **false**.            |
 |isInitial|Boolean|**true**, wenn dies die ursprüngliche Domäne ist, die dem Mandanten zugeordnet ist, andernfalls **false**.|
 |name|String|Der Domänenname, zum Beispiel „contoso.onmicrosoft.com“|
 |type|String|Z. B. „verwaltet“.|
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
