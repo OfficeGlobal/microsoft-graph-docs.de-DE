@@ -1,17 +1,31 @@
+---
+title: Ressourcentyp directoryRole
+description: Stellt eine Azure AD-Directory-Rolle. Azure Active Directory Directory Rollen sind auch bekannt als *Administratorrollen*. Weitere Informationen zu Rollen Verzeichnis (Administrator) finden Sie unter Zuweisen von Administratorrollen in Azure Active Directory. Mit dem Microsoft Graph können Sie Directory Rollen erteilen sie die Berechtigungen der Zielrolle Benutzer zuweisen. Um eine Rolle Directory lesen oder deren Member aktualisieren möchten, müssen sie zuerst im Mandanten aktiviert werden. Nur die Administratoren im Unternehmen Directory-Rolle ist standardmäßig aktiviert. Zum Aktivieren von anderen verfügbaren Verzeichnis Rollen senden Sie eine POST-Anforderung mit der ID der DirectoryRoleTemplate, auf dem die Rolle Directory basiert. Erbt von directoryObject.
+ms.openlocfilehash: 7087befbf18a569defda697e1e2c9eb9d7d34bb9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27019290"
+---
 # <a name="directoryrole-resource-type"></a>Ressourcentyp directoryRole
 
-Stellt eine Azure AD-Verzeichnisrolle dar. Azure AD-Verzeichnisrollen werden auch als *Administratorrollen* bezeichnet. Weitere Informationen zu diesen Verzeichnis-(Administrator)Rollen finden Sie unter [Zuweisen von Administratorrollen in Azure AD](http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/). Mit Microsoft Graph können Sie Benutzer zu Verzeichnisrollen zuweisen, um ihnen Berechtigungen der Zielrolle zuzuweisen. Um eine Verzeichnisrolle zu lesen oder ihre Mitglieder zu aktualisieren, muss diese zuerst im Mandanten aktiviert werden. Nur die Unternehmensadministratoren sind standardmäßig aktiviert. Zum Aktivieren anderer verfügbarer Verzeichnisrollen senden Sie eine POST-Anforderung mit der ID der [directoryRoleTemplate](directoryroletemplate.md), auf der die Verzeichnisrolle basiert. Erbt von [directoryObject](directoryobject.md).
+Stellt eine Azure AD-Directory-Rolle. Azure Active Directory Directory Rollen sind auch bekannt als *Administratorrollen*. Weitere Informationen zu Rollen Verzeichnis (Administrator) finden Sie unter [Zuweisen von Administratorrollen in Azure Active Directory](http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/). Mit dem Microsoft Graph können Sie Directory Rollen erteilen sie die Berechtigungen der Zielrolle Benutzer zuweisen. Um eine Rolle Directory lesen oder deren Member aktualisieren möchten, müssen sie zuerst im Mandanten aktiviert werden. Nur die Administratoren im Unternehmen Directory-Rolle ist standardmäßig aktiviert. Zum Aktivieren von anderen verfügbaren Verzeichnis Rollen senden Sie eine POST-Anforderung mit der ID der [DirectoryRoleTemplate](directoryroletemplate.md) , auf dem die Rolle Directory basiert. Erbt von [directoryObject](directoryobject.md).
+Diese Ressource unterstützt Folgendes:
+
+- Verwenden einer [Delta-Abfrage](/graph/delta-query-overview) zum Nachverfolgen von inkrementellen Hinzufügungen, Löschungen und Aktualisierungen durch Bereitstellen der [delta](../api/directoryrole-delta.md)-Funktion.
 
 ## <a name="methods"></a>Methoden
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-|[directoryRole abrufen](../api/directoryrole_get.md) | [directoryRole](directoryrole.md) | Dient zum Lesen der Eigenschaften und der Beziehungen des directoryRole-Objekts. |
-|[directoryRoles auflisten](../api/directoryrole_list.md) | [directoryRole-Sammlung](directoryrole.md) | Dient zum Auflisten der Verzeichnisrollen, die im Mandanten aktiviert sind. |
-|[Mitglied hinzufügen](../api/directoryrole_post_members.md) |[directoryObject](directoryobject.md)| Fügen Sie der Verzeichnisrolle einen Benutzer durch Veröffentlichen in der Mitgliedernavitionseingenschaft hinzu.|
-|[Mitglieder auflisten](../api/directoryrole_list_members.md) |[directoryObject](directoryobject.md)-Sammlung| Ruft die Benutzer, die Mitglieder der Verzeichnisrolle sind, aus der Mitgliedernavigationseigenschaft ab.|
-|[Mitglied entfernen](../api/directoryrole_delete_member.md) |[directoryObject](directoryobject.md)| Dient zum Entfernen eines Benutzers aus der Verzeichnisrolle.|
-|[directoryRole aktivieren](../api/directoryrole_post_directoryroles.md) |[directoryRole](directoryrole.md) | Dient zum Aktivieren einer Verzeichnisrolle.|
+|[directoryRole abrufen](../api/directoryrole-get.md) | [directoryRole](directoryrole.md) | Dient zum Lesen der Eigenschaften und der Beziehungen des directoryRole-Objekts. |
+|[directoryRoles auflisten](../api/directoryrole-list.md) | [directoryRole-Sammlung](directoryrole.md) | Dient zum Auflisten der Verzeichnisrollen, die im Mandanten aktiviert sind. |
+|[Mitglied hinzufügen](../api/directoryrole-post-members.md) |[directoryObject](directoryobject.md)| Fügen Sie der Verzeichnisrolle einen Benutzer durch Veröffentlichen in der Mitgliedernavitionseingenschaft hinzu.|
+|[Mitglieder auflisten](../api/directoryrole-list-members.md) |[directoryObject](directoryobject.md)-Sammlung| Ruft die Benutzer, die Mitglieder der Verzeichnisrolle sind, aus der Mitgliedernavigationseigenschaft ab.|
+|[Mitglied entfernen](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| Dient zum Entfernen eines Benutzers aus der Verzeichnisrolle.|
+|[directoryRole aktivieren](../api/directoryrole-post-directoryroles.md) |[directoryRole](directoryrole.md) | Dient zum Aktivieren einer Verzeichnisrolle.|
+|[delta](../api/directoryrole-delta.md)|directoryRole-Sammlung| Rufen Sie inkrementelle Änderungen für Directory Rollen. |
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft   | Typ | Beschreibung |
@@ -30,8 +44,9 @@ Stellt eine Azure AD-Verzeichnisrolle dar. Azure AD-Verzeichnisrollen werden auc
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
     "memberOf",
     "members",
@@ -39,7 +54,15 @@ Es folgt eine JSON-Darstellung der Ressource.
     "owners"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryRole"
+  "baseType": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.directoryRole",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "toppable": false
+      }
+    }
+  ]
 }-->
 
 ```json

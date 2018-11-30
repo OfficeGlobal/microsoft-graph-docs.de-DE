@@ -1,3 +1,13 @@
+---
+title: phone-Ressourcentyp
+description: Gibt eine Telefonnummer an.
+ms.openlocfilehash: 1293b1f84d9e73f5d92c9b6f6b078b5f39126e33
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27018997"
+---
 # <a name="phone-resource-type"></a>phone-Ressourcentyp
 
 Gibt eine Telefonnummer an.
@@ -6,8 +16,8 @@ Gibt eine Telefonnummer an.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|number|Zeichenfolge|Die Telefonnummer|
-|type|Zeichenfolge|Der Typ der Telefonnummer. Mögliche Werte sind: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|number|string|Die Telefonnummer|
+|type|phoneType|Der Typ der Telefonnummer. Die möglichen Werte sind: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

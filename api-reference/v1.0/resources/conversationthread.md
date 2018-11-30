@@ -1,3 +1,13 @@
+---
+title: Ressourcentyp conversationThread
+description: Ein conversationThread ist eine Sammlung von Beiträgen.
+ms.openlocfilehash: 7fc248957ed81a9d02d6f2d404110690b350ca1a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27019634"
+---
 # <a name="conversationthread-resource-type"></a>Ressourcentyp conversationThread
 Ein conversationThread ist eine Sammlung von [Beiträgen](post.md).
 
@@ -7,13 +17,13 @@ Die Empfängersammlung des letzten Beitrags besteht aus den aggregierten Empfän
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-|[Threads auflisten](../api/group_list_threads.md) | [conversationThread](conversationthread.md)-Sammlung |Ruft alle Threads einer Gruppe ab.|
-|[Thread erstellen](../api/group_post_threads.md) | [conversationThread](conversationthread.md) |Beginnt eine neue Unterhaltung, indem zunächst ein Thread erstellt wird. Eine neue Unterhaltung, Unterhaltungsthreads und Beiträge werden in der Gruppe erstellt.|
-|[conversationThread abrufen](../api/conversationthread_get.md) | [conversationThread](conversationthread.md) |Dient zum Abrufen eines bestimmten Threads, der zu einer Gruppe gehört. |
-|[Aktualisieren](../api/conversationthread_update.md) | [conversationThread](conversationthread.md)  |conversationThread-Objekt aktualisieren. |
-|[Löschen](../api/conversationthread_delete.md) | Keine |conversationThread-Objekt löschen. |
-|[Antworten](../api/conversationthread_reply.md)|Keine|Antworten Sie auf diesen Thread, indem Sie eine neue Beitragsentität erstellen.|
-|[Beiträge auflisten](../api/conversationthread_list_posts.md) |[post](post.md)-Sammlung| Dient zum Abrufen der Beiträge des angegebenen Threads. |
+|[Threads auflisten](../api/group-list-threads.md) | [conversationThread](conversationthread.md)-Sammlung |Ruft alle Threads einer Gruppe ab.|
+|[Thread erstellen](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Beginnt eine neue Unterhaltung, indem zunächst ein Thread erstellt wird. Eine neue Unterhaltung, Unterhaltungsthreads und Beiträge werden in der Gruppe erstellt.|
+|[conversationThread abrufen](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Dient zum Abrufen eines bestimmten Threads, der zu einer Gruppe gehört. |
+|[Aktualisieren](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |conversationThread-Objekt aktualisieren. |
+|[Löschen](../api/conversationthread-delete.md) | Keine |conversationThread-Objekt löschen. |
+|[Antworten](../api/conversationthread-reply.md)|Keine|Antworten Sie auf diesen Thread, indem Sie eine neue Beitragsentität erstellen.|
+|[Beiträge auflisten](../api/conversationthread-list-posts.md) |[post](post.md)-Sammlung| Dient zum Abrufen der Beiträge des angegebenen Threads. |
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
@@ -24,7 +34,7 @@ Die Empfängersammlung des letzten Beitrags besteht aus den aggregierten Empfän
 |Thema|String|Das Thema der Unterhaltung. Diese Eigenschaft kann festgelegt werden, wenn die Unterhaltung erstellt wird, sie kann jedoch nicht aktualisiert werden.||
 |hasAttachments|Boolean|Gibt an, ob einer der Beiträge innerhalb dieses Threads über mindestens eine Anlage verfügt.|
 |lastDeliveredDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|uniqueSenders|String collection|Alle Benutzer, die eine Nachricht an diesen Thread gesendet haben.|
+|uniqueSenders|Zeichenfolgenauflistung|Alle Benutzer, die eine Nachricht an diesen Thread gesendet haben.|
 |Vorschau|String|Eine kurze Zusammenfassung aus dem Text des neuesten Beitrags in dieser Unterhaltung.|
 |isLocked|Boolean|Zeigt an, ob der Thread gesperrt ist.|
 
@@ -37,13 +47,26 @@ Die Empfängersammlung des letzten Beitrags besteht aus den aggregierten Empfän
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "posts"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.conversationThread"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.conversationThread",
+  "@odata.annotations": [
+    {
+      "property": "posts",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json

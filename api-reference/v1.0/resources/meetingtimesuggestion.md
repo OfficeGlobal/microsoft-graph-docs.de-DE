@@ -1,3 +1,13 @@
+---
+title: Ressourcentyp „meetingTimeSuggestion“
+description: 'Ein besprechungsvorschlag, das Informationen wie Besprechungszeit, Anwesenheit Wahrscheinlichkeit, einzelne enthält '
+ms.openlocfilehash: 345d09015be5e489c88cb89fe6a4175ebbab2874
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27019698"
+---
 # <a name="meetingtimesuggestion-resource-type"></a>Ressourcentyp „meetingTimeSuggestion“
 
 Ein Besprechungsvorschlag mit Informationen wie dem Besprechungstermin, der Teilnahmewahrscheinlichkeit, der individuellen Verfügbarkeit und den verfügbaren Besprechungsorten
@@ -26,13 +36,13 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |attendeeAvailability|[attendeeAvailability](attendeeavailability.md) collection|Ein Array, das den Verfügbarkeitsstatus jedes Teilnehmers für den betreffenden Besprechungsvorschlag anzeigt|
 |confidence|Double|Ein Prozentwert, der angibt, wie hoch die Wahrscheinlichkeit ist, dass alle Teilnehmer teilnehmen können|
-|locations|[location](location.md) collection|Ein Array, das den Namen und den geografischen Ort jedes Besprechungsorts für den betreffenden Besprechungsvorschlag angibt|
+|locations|[location](location.md)-Sammlung|Ein Array, das den Namen und den geografischen Ort jedes Besprechungsorts für den betreffenden Besprechungsvorschlag angibt|
 |meetingTimeSlot|[timeSlot](timeslot.md)|Ein für die Besprechung vorgeschlagenes Zeitfenster|
-|organizerAvailability|String| Die Verfügbarkeit des Besprechungsorganisators für diesen Besprechungsvorschlag. Mögliche Werte sind: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`und `unknown`.|
+|organizerAvailability|freeBusyStatus| Verfügbarkeit der Organisator der Besprechung für diese besprechungsvorschlag. Die möglichen Werte sind: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |suggestionReason|String|Grund, aus dem der betreffende Besprechungstermin vorgeschlagen wurde|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

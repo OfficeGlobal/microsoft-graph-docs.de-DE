@@ -1,3 +1,13 @@
+---
+title: subscribedSku-Ressourcentyp
+description: Enthält Informationen zu einer Dienst-SKU, die ein Unternehmen abonniert hat.
+ms.openlocfilehash: 5a3c3515d4d902810db32acf10b4cee6a889bfc9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27018840"
+---
 # <a name="subscribedsku-resource-type"></a>subscribedSku-Ressourcentyp
 
 Enthält Informationen zu einer Dienst-SKU, die ein Unternehmen abonniert hat.
@@ -7,18 +17,18 @@ Für abonnierte SKUs wird nur der Lesevorgang unterstützt. Erstellen, Aktualisi
 ## <a name="methods"></a>Methoden
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[subscribedSku abrufen](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |Dient zum Lesen der Eigenschaften und Beziehungen des subscribedSku-Objekts.|
-|[subscribedSku auflisten](../api/subscribedsku_list.md) | [subscribedSku](subscribedsku.md)-Sammlung |Dienst zum Abrufen der Liste aller kommerziellen Abonnements, die eine Organisation erworben hat.|
+|[subscribedSku abrufen](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |Dient zum Lesen der Eigenschaften und Beziehungen des subscribedSku-Objekts.|
+|[Liste subscribedsku](../api/subscribedsku-list.md) | [subscribedSku-Sammlung](subscribedsku.md) |Dienst zum Abrufen der Liste aller kommerziellen Abonnements, die eine Organisation erworben hat.|
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |appliesTo|String| Beispiel: „Benutzer“ oder „Community“. |
 |capabilityStatus|String| Beispiel: „Aktiviert“. |
 |consumedUnits|Int32| Die Anzahl der Lizenzen, die zugewiesen wurden. |
 |id|String| Der eindeutige Bezeichner für das subscribedSku-Objekt. Schlüssel, lässt keine Nullwerte zu. |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Informationen über die Anzahl und den Status der Prepaidlizenzen. |
-|servicePlans|[servicePlanInfo](serviceplaninfo.md)-Auflistung| Informationen über die Servicepläne, die mit der SKU verfügbar sind. Lässt keine Nullwerte zu. |
+|servicePlans|[servicePlanInfo](serviceplaninfo.md)-Sammlung| Informationen über die Servicepläne, die mit der SKU verfügbar sind. Lässt keine Nullwerte zu. |
 |skuId|Guid| Der eindeutige Bezeichner (GUID) für die Dienst-SKU. |
 |skuPartNumber|String| Die SKU-Teilenummer, z. B.: „AAD_PREMIUM“ oder „RMSBASIC“. |
 
@@ -29,13 +39,25 @@ Keine
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.subscribedSku"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.subscribedSku",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "toppable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false
+      }
+    }
+  ]
 }-->
 
 ```json

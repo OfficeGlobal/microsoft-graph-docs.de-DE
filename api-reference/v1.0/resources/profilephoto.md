@@ -1,3 +1,13 @@
+---
+title: profilePhoto-Ressourcentyp
+description: Ein Profilfoto eines Benutzers, einer Gruppe oder eines Outlook-Kontakts, auf den bzw. die von Exchange Online zugegriffen wird. Es handelt sich um Binärdaten, die nicht in Base-64 codiert sind.
+ms.openlocfilehash: c5f74e1dcd48e42a2e17d5a64e6ed4b9e9cca5e4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27019997"
+---
 # <a name="profilephoto-resource-type"></a>profilePhoto-Ressourcentyp
 Ein Profilfoto eines Benutzers, einer Gruppe oder eines Outlook-Kontakts, auf den bzw. die von Exchange Online zugegriffen wird. Es handelt sich um Binärdaten, die nicht in Base-64 codiert sind.
 
@@ -7,8 +17,8 @@ Die unterstützten Größen der HD-Fotos auf Exchange Online sind wie folgt: „
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-|[profilePhoto abrufen](../api/profilephoto_get.md) | [profilePhoto](profilephoto.md) |Ruft das angegebene **profilePhoto** oder seine Metadaten (profilePhoto-Eigenschaften) ab.|
-|[Update](../api/profilephoto_update.md) | [profilePhoto](profilephoto.md)  |Weist dem angegebenen Benutzer, der angegebenen Gruppe oder dem angegebenen Kontakt ein Foto zu. Das Foto sollte binär sein. Es ersetzt vorhandene Fotos (falls vorhanden).|
+|[profilePhoto abrufen](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) |Ruft das angegebene **profilePhoto** oder seine Metadaten (profilePhoto-Eigenschaften) ab.|
+|[Update](../api/profilephoto-update.md) | [profilePhoto](profilephoto.md)  |Weist dem angegebenen Benutzer, der angegebenen Gruppe oder dem angegebenen Kontakt ein Foto zu. Das Foto sollte binär sein. Es ersetzt vorhandene Fotos (falls vorhanden).|
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
@@ -25,11 +35,11 @@ Keine
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "isMediaEntity": true,
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.profilePhoto"
 }-->

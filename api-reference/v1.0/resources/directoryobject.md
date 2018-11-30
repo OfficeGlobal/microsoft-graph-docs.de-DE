@@ -1,3 +1,13 @@
+---
+title: directoryObject-Ressourcentyp
+description: Stellt ein Azure Active Directory-Objekt dar. Der **directoryObject**-Typ ist der Basistyp für die meisten anderen Directory-Entitätstypen.
+ms.openlocfilehash: 0981584bb86b71d06e29de4efc379c84bacac51d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27019722"
+---
 # <a name="directoryobject-resource-type"></a>directoryObject-Ressourcentyp
 
 Stellt ein Azure Active Directory-Objekt dar. Der **directoryObject**-Typ ist der Basistyp für die meisten anderen Directory-Entitätstypen.
@@ -6,12 +16,12 @@ Stellt ein Azure Active Directory-Objekt dar. Der **directoryObject**-Typ ist de
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-|[directoryObject abrufen](../api/directoryobject_get.md) | [directoryObject](directoryobject.md) |Dient zum Lesen der Eigenschaften des directory-Objekts.|
-|[directoryObject löschen](../api/directoryobject_delete.md) | Keine |Dient zum Löschen eines directory-Objekts. |
-|[checkMemberGroups](../api/directoryobject_checkmembergroups.md)|String collection|Sucht nach einer Mitgliedschaft in einer Liste von Gruppen. Die Überprüfung ist transitiv.|
-|[getMemberGroups](../api/directoryobject_getmembergroups.md)|String collection|Gibt alle Gruppen zurück, in denen das Benutzer-, Gruppen- oder Verzeichnisobjekt Mitglied ist. Die Überprüfung ist transitiv.|
-|[getMemberObjects](../api/directoryobject_getmemberobjects.md)|Zeichenfolgenauflistung| Gibt alle Gruppen und Verzeichnisrollen zurück, in denen ein Benutzer-, Gruppen- oder Verzeichnisobjekt Mitglied ist. Die Überprüfung ist transitiv. |
-|[getByIds](../api/directoryobject_getbyids.md) | [directoryObject](directoryobject.md)-Sammlung | Dient zum Abrufen eines Satzes von Directory-Objekten basierend auf einem Satz angegebener IDs. |
+|[directoryObject abrufen](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |Dient zum Lesen der Eigenschaften des directory-Objekts.|
+|[directoryObject löschen](../api/directoryobject-delete.md) | Keine |Dient zum Löschen eines directory-Objekts. |
+|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|Zeichenfolgenauflistung|Sucht nach einer Mitgliedschaft in einer Liste von Gruppen. Die Überprüfung ist transitiv.|
+|[getMemberGroups](../api/directoryobject-getmembergroups.md)|Zeichenfolgenauflistung|Gibt alle Gruppen zurück, in denen das Benutzer-, Gruppen- oder Verzeichnisobjekt Mitglied ist. Die Überprüfung ist transitiv.|
+|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Zeichenfolgenauflistung| Gibt alle Gruppen und Verzeichnisrollen zurück, in denen ein Benutzer-, Gruppen- oder Verzeichnisobjekt Mitglied ist. Die Überprüfung ist transitiv. |
+|[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md)-Sammlung | Dient zum Abrufen eines Satzes von Directory-Objekten basierend auf einem Satz angegebener IDs. |
 
 ## <a name="properties"></a>Eigenschaften
 
@@ -28,13 +38,25 @@ Keine
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryObject"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false
+      }
+    }
+  ]
 }-->
 
 ```json

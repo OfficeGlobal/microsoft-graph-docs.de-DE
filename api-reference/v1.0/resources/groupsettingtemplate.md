@@ -1,3 +1,13 @@
+---
+title: groupSettingTemplate-Ressourcentyp
+description: Gruppeneinstellungsvorlagen stellen systemdefinierte Einstellungen dar, die für den Mandanten verfügbar sind. Gruppeneinstellungen können basierend auf den verfügbaren **groupSettingTemplates** erstellt werden, und die Standardwerte können geändert werden. Gruppeneinstellungsvorlagen können nicht erstellt, aktualisiert oder gelöscht werden. Diese Einstellungen können mandantenweite Einstellungen oder bestimmte Gruppeneinstellungen darstellen. Die derzeit einzig verfügbaren Vorlagen beziehen sich auf Office 365-Gruppen und umfassen Einstellungen dazu, ob Benutzer Gruppen erstellen oder Gäste von außerhalb der Organisation einladen können, Mitglieder einer Gruppe zu werden.
+ms.openlocfilehash: 3c4111b2727e79e048778063b259611795733de4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27019574"
+---
 # <a name="groupsettingtemplate-resource-type"></a>groupSettingTemplate-Ressourcentyp
 
 Gruppeneinstellungsvorlagen stellen systemdefinierte Einstellungen dar, die für den Mandanten verfügbar sind. [Gruppeneinstellungen](groupsetting.md) können basierend auf den verfügbaren **groupSettingTemplates** erstellt werden, und die Standardwerte können geändert werden. Gruppeneinstellungsvorlagen können nicht erstellt, aktualisiert oder gelöscht werden. Diese Einstellungen können mandantenweite Einstellungen oder bestimmte Gruppeneinstellungen darstellen. Die derzeit einzig verfügbaren Vorlagen beziehen sich auf Office 365-Gruppen und umfassen Einstellungen dazu, ob Benutzer Gruppen erstellen oder Gäste von außerhalb der Organisation einladen können, Mitglieder einer Gruppe zu werden.
@@ -6,8 +16,8 @@ Gruppeneinstellungsvorlagen stellen systemdefinierte Einstellungen dar, die für
 
 | Methode | Rückgabetyp | Beschreibung |
 |:---------------|:--------|:----------|
-|[Get groupSettingTemplate](../api/groupsettingtemplate_get.md) | [groupSettingTemplate](groupsettingtemplate.md) | Liest die spezifischen Eigenschaften eines vom System definierten groupSettingTemplate-Objekts. |
-|[List groupSettingTemplate](../api/groupsettingtemplate_list.md) | [Sammlung von groupSettingTemplate](groupsettingtemplate.md) |Listet alle der vom System definierten groupSettingTemplate-Objekte auf.|
+|[Get groupSettingTemplate](../api/groupsettingtemplate-get.md) | [groupSettingTemplate](groupsettingtemplate.md) | Liest die spezifischen Eigenschaften eines vom System definierten groupSettingTemplate-Objekts. |
+|[List groupSettingTemplate](../api/groupsettingtemplate-list.md) | [Sammlung von groupSettingTemplate](groupsettingtemplate.md) |Listet alle der vom System definierten groupSettingTemplate-Objekte auf.|
 
 ## <a name="properties"></a>Eigenschaften
 
@@ -27,11 +37,12 @@ Keine.
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.groupSettingTemplate"
 }-->
 

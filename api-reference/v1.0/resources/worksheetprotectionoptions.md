@@ -1,3 +1,13 @@
+---
+title: WorksheetProtectionOptions-Ressourcentyp
+description: Stellt die Optionen für den Arbeitsblattschutz dar.
+ms.openlocfilehash: ef086b911a154df2eddf92ee57b89d570ef12247
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27019693"
+---
 # <a name="worksheetprotectionoptions-resource-type"></a>WorksheetProtectionOptions-Ressourcentyp
 
 Stellt die Optionen für den Arbeitsblattschutz dar.
@@ -26,7 +36,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.worksheetProtectionOptions"
+  "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions"
 }-->
 
 ```json

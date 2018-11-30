@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: RemoteItem
+ms.openlocfilehash: df613c674ab2aed8857112ba01d3a77c15dcd81a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27018957"
+---
 # <a name="remoteitem-resource-type"></a>RemoteItem-Ressourcentyp
 
 Die **RemoteItem**-Ressource gibt an, dass ein [**driveItem**](driveitem.md)-Element auf ein Element in einem anderen Laufwerk verweist. Diese Ressource stellt die eindeutigen IDs des Quelllaufwerks und des Zielelements bereit.
@@ -27,8 +39,8 @@ Die **RemoteItem**-Ressource gibt an, dass ein [**driveItem**](driveitem.md)-Ele
   "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
   "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-  "size": 1024,
   "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
+  "size": 1024,
   "webDavUrl": "url",
   "webUrl": "url"
 }
@@ -52,18 +64,20 @@ Die **RemoteItem**-Ressource gibt an, dass ein [**driveItem**](driveitem.md)-Ele
 | shared               | [shared](shared.md)                 | Gibt an, dass das Element für andere freigegeben wurde, und enthält den „freigegeben“-Status des Elements. Schreibgeschützt.                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | Bietet Interoperabilität zwischen Elementen in OneDrive for Business und SharePoint mit vollständigem Satz an Element-IDs. Schreibgeschützt.                                          |
 | size                 | Int64                               | Größe des Remote-Elements. Schreibgeschützt.                                                                                                                               |
-| specialFolder        | [SpecialFolder](specialfolder.md)   | Facet, das zurückgegeben wird, wenn das aktuelle Element auch als spezieller Ordner verfügbar ist. Schreibgeschützt.                                                                     |
+| specialFolder        | [specialFolder][]                   | Facet, das zurückgegeben wird, wenn das aktuelle Element auch als spezieller Ordner verfügbar ist. Schreibgeschützt.                                                                     |
 | webDavUrl            | Url                                 | DAV-kompatible URL für das Element.                                                                                                                                  |
 | webUrl               | Url                                 | URL, über die die Ressource im Browser angezeigt werden kann. Schreibgeschützt.                                                                                                         |
+
+[specialFolder]: specialfolder.md
 
 ## <a name="remarks"></a>Bemerkungen
 
 Weitere Informationen über die Facets einer **driveItem**-Ressourcen finden Sie unter [driveItem](driveitem.md).
 
-
 <!-- {
   "type": "#page.annotation",
-  "description": "remoteItem resource type provides a link to an item in another drive.",
-  "keywords": "remoteitem symlink remote drive shared with me add to onedrive",
-  "section": "documentation"
+  "description": "The quota facet provides information about how much space the OneDrive has available.",
+  "keywords": "quota,available,remaining,used",
+  "section": "documentation",
+  "tocPath": "Facets/RemoteItem"
 } -->

@@ -1,6 +1,16 @@
+---
+title: reminder-Ressourcentyp
+description: Eine Erinnerung für ein Ereignis in einem Benutzerkalender.
+ms.openlocfilehash: 131de8772c6b4fa400ab0f48197430611030c255
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27019501"
+---
 # <a name="reminder-resource-type"></a>reminder-Ressourcentyp
 
-
+Eine Erinnerung für ein [Ereignis](event.md) in einem [Kalender](calendar.md)des Benutzers.
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|

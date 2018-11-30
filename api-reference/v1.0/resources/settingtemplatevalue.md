@@ -1,3 +1,13 @@
+---
+title: settingTemplateValue-Ressourcentyp
+description: Stellt eine einzelne Vorlageneinstellungsdefinition dar, einschließlich des Standardwerts für die Einstellung, wenn die Einstellung nicht instanziiert wurde.
+ms.openlocfilehash: 00e424e36338855d8ef603d06c7a9ee52a99c621
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27019498"
+---
 # <a name="settingtemplatevalue-resource-type"></a>settingTemplateValue-Ressourcentyp
 
 Stellt eine einzelne Vorlageneinstellungsdefinition dar, einschließlich des Standardwerts für die Einstellung, wenn die Einstellung nicht instanziiert wurde.
@@ -8,7 +18,7 @@ Stellt eine einzelne Vorlageneinstellungsdefinition dar, einschließlich des Sta
 |:---------------|:--------|:----------|
 |defaultValue|Zeichenfolge| Der Standardwert für die Einstellung. |
 |description|Zeichenfolge| Beschreibung der Einstellung. |
-|Name|Zeichenfolge| Der Name der Einstellung. |
+|Name|String| Der Name der Einstellung. |
 |type|Zeichenfolge| Der Typ der Einstellung. |
 
 ### <a name="json-representation"></a>JSON-Darstellung

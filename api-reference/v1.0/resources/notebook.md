@@ -1,3 +1,13 @@
+---
+title: notebook-Ressourcentyp
+description: Stellt ein OneNote-Notizbuch dar.
+ms.openlocfilehash: b84cb85cea58939a5414c51ce58c82b684ca0997
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27018876"
+---
 # <a name="notebook-resource-type"></a>notebook-Ressourcentyp
 
 Stellt ein OneNote-Notizbuch dar.
@@ -8,6 +18,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.onenoteEntityHierarchyModel",
   "optionalProperties": [
     "sectionGroups",
     "sections"
@@ -34,7 +45,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.|
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit der Erstellung des Notizbuchs. Der Zeitstempel stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
@@ -48,24 +59,25 @@ Es folgt eine JSON-Darstellung der Ressource.
 |sectionGroupsUrl|String|Die URL für die Navigationseigenschaft `sectionGroups`, die alle Abschnittsgruppen im Notizbuch zurückgibt. Schreibgeschützt.|
 |sectionsUrl|String|Die URL für die Navigationseigenschaft `sections`, die alle Abschnitte im Notizbuch zurückgibt. Schreibgeschützt.|
 |self|String|Der Endpunkt, an dem Sie Details zum Notizbuch abrufen können. Schreibgeschützt.|
-|userRole|String|Mögliche Werte: `Owner`, `Contributor`, `Reader`, `None`. „Owner“ stellt Zugriff auf Besitzerebene auf das Notizbuch dar. „Contributor“ stellt Lese-/Schreibzugriff auf das Notizbuch dar. „Reader“ stellt schreibgeschützten Zugriff auf das Notizbuch dar. Schreibgeschützt.|
+|userRole|onenoteUserRole|Mögliche Werte: `Owner`, `Contributor`, `Reader`, `None`. „Owner“ stellt Zugriff auf Besitzerebene auf das Notizbuch dar. „Contributor“ stellt Lese-/Schreibzugriff auf das Notizbuch dar. „Reader“ stellt schreibgeschützten Zugriff auf das Notizbuch dar. Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |sectionGroups|[SectionGroup](sectiongroup.md)-Sammlung|Die Abschnittsgruppen im Notizbuch. Schreibgeschützt. Lässt Nullwerte zu.|
-|sections|[Section](section.md)-Sammlung|Die Abschnitte im Notizbuch. Schreibgeschützt. Lässt Nullwerte zu.|
+|Abschnitte|[OnenoteSection](section.md) -Auflistung|Die Abschnitte im Notizbuch. Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="methods"></a>Methoden
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Notizbuch abrufen](../api/notebook_get.md) | [Notebook](notebook.md) |Dient zum Lesen der Eigenschaften und Beziehungen des Notizbuchs.|
-|[Abschnittsgruppe erstellen](../api/notebook_post_sectiongroups.md) |[SectionGroup](sectiongroup.md)| Dient zum Erstellen einer Abschnittsgruppe durch Veröffentlichung in der SectionGroups-Sammlung im angegebenen Notizbuch.|
-|[Abschnittsgruppen auflisten](../api/notebook_list_sectiongroups.md) |[SectionGroup](sectiongroup.md)-Sammlung| Dient zum Abrufen einer Sammlung von Abschnittsgruppen im angegebenen Notizbuch.|
-|[Abschnitt erstellen](../api/notebook_post_sections.md) |[Section](section.md)| Dient zum Erstellen eines Abschnitts durch Veröffentlichung in der Sections-Sammlung im angegebenen Notizbuch.|
-|[Abschnitte auflisten](../api/notebook_list_sections.md) |[Section](section.md)-Sammlung| Dient zum Abrufen einer Sammlung von Abschnitten im angegebenen Notizbuch.|
-|[copyNotebook](../api/notebook_copynotebook.md)| Keine | Kopiert ein Notizbuch.|
+|[Notizbuch abrufen](../api/notebook-get.md) | [Notebook](notebook.md) |Dient zum Lesen der Eigenschaften und Beziehungen des Notizbuchs.|
+|[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | [recentNotebook](recentnotebook.md)-Sammlung | Dient zum Abrufen einer Sammlung der zuletzt geöffneten Notizbücher des Benutzers. |
+|[Abschnittsgruppe erstellen](../api/notebook-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| Dient zum Erstellen einer Abschnittsgruppe durch Veröffentlichung in der SectionGroups-Sammlung im angegebenen Notizbuch.|
+|[Abschnittsgruppen auflisten](../api/notebook-list-sectiongroups.md) |[SectionGroup](sectiongroup.md)-Sammlung| Dient zum Abrufen einer Sammlung von Abschnittsgruppen im angegebenen Notizbuch.|
+|[Abschnitt erstellen](../api/notebook-post-sections.md) |[OnenoteSection](section.md)| Dient zum Erstellen eines Abschnitts durch Veröffentlichung in der Sections-Sammlung im angegebenen Notizbuch.|
+|[Abschnitte auflisten](../api/notebook-list-sections.md) |[OnenoteSection](section.md) -Auflistung| Dient zum Abrufen einer Sammlung von Abschnitten im angegebenen Notizbuch.|
+|[copyNotebook](../api/notebook-copynotebook.md)| Keine | Kopiert ein Notizbuch.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
