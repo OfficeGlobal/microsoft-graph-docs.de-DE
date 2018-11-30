@@ -1,15 +1,24 @@
-# plannerChecklistItems-Ressourcentyp
-<a id="plannerchecklistitems-resource-type" class="xliff"></a>
+---
+title: plannerChecklistItems-Ressourcentyp
+description: Die **plannerChecklistItemCollection**-Ressource stellt die Sammlung der Checklistenelemente für einen Vorgang dar. Es handelt sich um einen offenen Typ. Sie ist Bestandteil des taskDetails-Objekts. Der Wert im Eigenschaft-Wert-Paar ist das checklistItem-Objekt.
+ms.openlocfilehash: 44e64872c34a70062e847889576bd226d4fe51fb
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27062298"
+---
+# <a name="plannerchecklistitems-resource-type"></a>plannerChecklistItems-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Die **plannerChecklistItemCollection**-Ressource stellt die Sammlung der Checklistenelemente für einen Vorgang dar. Es handelt sich um einen offenen Typ. Sie ist Bestandteil des [taskDetails](plannertaskdetails.md)-Objekts. Der Wert im Eigenschaft-Wert-Paar ist das [checklistItem](plannerchecklistitem.md)-Objekt.
 
 
-## Eigenschaften
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Eigenschaften
 Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall sollte der Client **GUIDs** als Eigenschaften bereitstellen, und ihre Werte müssen [checklistItem](plannerchecklistitem.md)-Objekte sein. Nachfolgend ein Beispiel. Um ein Element in der Checkliste zu entfernen, legen Sie den Wert der Eigenschaft auf `null` fest.
 
-## JSON-Darstellung
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>JSON-Darstellung
 
 Es folgt eine JSON-Darstellung der Ressource.
 

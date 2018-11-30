@@ -1,6 +1,20 @@
-# <a name="quota-resource-type"></a>quota-Ressourcentyp
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Kontingent
+ms.openlocfilehash: f4518021da8ad180b91472feb52199678c2edc83
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27064192"
+---
+# <a name="quota-resource-type"></a>Kontingent Ressourcentyp
 
-Die **quota**-Ressource enthält Details zu Leerzeichenbeschränkungen auf einer[Laufwerk](drive.md)-Ressource.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+
+Die Ressource **Kontingent** enthält Details zu verwendeten Speicherplatz für eine Ressource [Laufwerk](drive.md) schränkt.
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -17,6 +31,9 @@ Es folgt eine JSON-Darstellung der Ressource.
   "deleted": 1024,
   "remaining": 1024,
   "state": "normal | nearing | critical | exceeded",
+  "storagePlanInformation": {
+    "upgradeAvailable": true
+  },
   "total": 1024,
   "used": 1024
 }
@@ -31,8 +48,9 @@ Es folgt eine JSON-Darstellung der Ressource.
 | verbleibende     | Int64  | Gesamter verbleibender Speicherplatz vor dem Erreichen des Speicherkontingents in Byte. Schreibgeschützt. |
 | gelöscht       | Int64  | Gesamte Dateien genutzter Speicherplatz im Papierkorb in Byte. Schreibgeschützt.      |
 | state         | string | Wert der Enumeration, die den Zustand des Speicherplatzes angibt. Schreibgeschützt. |
+| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Informationen über das Laufwerk Speicherung Kontingent Pläne. Nur in der persönlichen OneDrive.|
 
-## <a name="state-enumeration"></a>Status Enumeration
+### <a name="state-enumeration-values"></a>State Enumerationswerte
 
 | Wert      | Beschreibung                                                                                                                                                                 |
 |:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -41,14 +59,10 @@ Es folgt eine JSON-Darstellung der Ressource.
 | `critical` | Verbleibendes Kontingent weniger als 1 % des gesamten Kontingentplatzes.                                                                                                                       |
 | `exceeded` | Das verwendete Kontingent hat das gesamte Kontingent überschritten. Neue Dateien oder Ordner können nicht hinzugefügt werden, wenn sie nicht unter dem Betrag für das Gesamtkontingent liegen oder mehr Speicherplatz erworben wird. |
 
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "quota resource",
-  "keywords": "",
+  "description": "The quota facet provides information about how much space the OneDrive has available.",
+  "keywords": "quota,available,remaining,used",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Quota"
+} -->

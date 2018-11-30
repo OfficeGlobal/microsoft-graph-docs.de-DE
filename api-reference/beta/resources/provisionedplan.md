@@ -1,15 +1,26 @@
+---
+title: provisionedPlan-Ressourcentyp
+description: Die **ProvisionedPlans**-Eigenschaft der user-Entität und der oganization-Entität ist eine Sammlung von **provisionedPlan**.
+ms.openlocfilehash: efaf4dc2916189e2bf6a8078a693059369f7cb2b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27061726"
+---
 # <a name="provisionedplan-resource-type"></a>provisionedPlan-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Die **ProvisionedPlans**-Eigenschaft der [user](user.md)-Entität und der [oganization](organization.md)-Entität ist eine Sammlung von **provisionedPlan**.
 
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |capabilityStatus|String|Z. B. „Aktiviert“.|
 |provisioningStatus|String|Z. B. „Erfolgreich“.|
 |service|String|Der Name des Diensts. z. B. „AccessControlS2S“|
-
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

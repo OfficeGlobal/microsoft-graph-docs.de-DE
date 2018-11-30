@@ -1,9 +1,21 @@
+---
+title: SortField-Ressourcentyp
+description: Stellt eine Bedingung in einem Sortiervorgang dar.
+ms.openlocfilehash: bb5915e9d9637912b97c0425819acd15a6ed40ca
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27063901"
+---
 # <a name="sortfield-resource-type"></a>SortField-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Stellt eine Bedingung in einem Sortiervorgang dar.
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |ascending|boolean|Stellt dar, ob die Sortierung in aufsteigender Reihenfolge ausgeführt wird.|
 |color|string|Stellt die Farbe dar, die das Ziel der Bedingung ist, wenn die Sortierung für die Schrift- oder Zellenfarbe gilt.|
@@ -12,7 +24,7 @@ Stellt eine Bedingung in einem Sortiervorgang dar.
 |sortOn|string|Stellt den Typ der Sortierung dieser Bedingung dar. Die folgenden Werte sind möglich: `Value`, `CellColor`, `FontColor`, `Icon`.|
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Symbol|[Icon](icon.md)|Stellt das Symbol dar, das das Ziel der Bedingung ist, wenn die Sortierung für das Symbol der Zelle gilt.|
 

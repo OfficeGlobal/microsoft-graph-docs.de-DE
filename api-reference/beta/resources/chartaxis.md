@@ -1,4 +1,16 @@
+---
+title: ChartAxis-Ressourcentyp
+description: Stellt eine einzelne Achse in einem Diagramm dar.
+ms.openlocfilehash: f92e8dd12dc2d7036d5022e2b293cfc290faf910
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27062594"
+---
 # <a name="chartaxis-resource-type"></a>ChartAxis-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Stellt eine einzelne Achse in einem Diagramm dar.
 
@@ -7,11 +19,11 @@ Stellt eine einzelne Achse in einem Diagramm dar.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[ChartAxis abrufen](../api/chartaxis_get.md) | [ChartAxis](chartaxis.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartAxis-Objekts.|
-|[Update](../api/chartaxis_update.md) | [ChartAxis](chartaxis.md)    |Dient zum Aktualisieren des ChartAxis-Objekts. |
+|[ChartAxis abrufen](../api/chartaxis-get.md) | [ChartAxis](chartaxis.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartAxis-Objekts.|
+|[Update](../api/chartaxis-update.md) | [ChartAxis](chartaxis.md)   |Dient zum Aktualisieren des ChartAxis-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft       | Typ    |Beschreibung|
+| Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |majorUnit|object|Stellt das Intervall zwischen zwei Hauptteilstrichen dar. Kann auf einen numerischen Wert oder eine leere Zeichenfolge festgelegt werden.  Der zurückgegebene Wert ist immer eine Zahl.|
 |maximum|object|Stellt den Maximalwert auf der Größenachse dar.  Kann auf einen numerischen Wert oder eine leere Zeichenfolge festgelegt werden (für automatische Achsenwerte).  Der zurückgegebene Wert ist immer eine Zahl.|
@@ -19,7 +31,7 @@ Stellt eine einzelne Achse in einem Diagramm dar.
 |minorUnit|object|Stellt das Intervall zwischen zwei Hilfsteilstrichen dar. Kann auf einen numerischen Wert oder eine leere Zeichenfolge festgelegt werden (für automatische Achsenwerte). Der zurückgegebene Wert ist immer eine Zahl.|
 
 ## <a name="relationships"></a>Beziehungen
-| Beziehung | Typ    |Beschreibung|
+| Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Format|[ChartAxisFormat](chartaxisformat.md)|Stellt die Formatierung für ein Diagrammobjekt dar, einschließlich Linien- und Schriftartformatierung. Schreibgeschützt.|
 |majorGridlines|[ChartGridlines](chartgridlines.md)|Gibt ein Gitternetzlinien-Objekt zurück, das die Hauptgitternetzlinien für die angegebene Achse darstellt. Schreibgeschützt.|

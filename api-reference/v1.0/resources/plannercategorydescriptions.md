@@ -1,11 +1,19 @@
-# plannerCategoryDescriptions-Ressourcentyp
-<a id="plannercategorydescriptions-resource-type" class="xliff"></a>
+---
+title: plannerCategoryDescriptions-Ressourcentyp
+description: 'Die **plannerCategoryDescriptions**-Ressource stellt die beschreibenden Bezeichnungen für die Kategorien dar, die für einen Plan definiert wurden. Sie gehört zum planDetails-Objekt. Es können bis zu 6 Kategorien definiert werden. '
+ms.openlocfilehash: e71cbd1f41d23747691b3738b5a46ff302a72168
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27017025"
+---
+# <a name="plannercategorydescriptions-resource-type"></a>plannerCategoryDescriptions-Ressourcentyp
 
 Die **plannerCategoryDescriptions**-Ressource stellt die beschreibenden Bezeichnungen für die Kategorien dar, die für einen Plan definiert wurden. Sie gehört zum [planDetails](plannerplandetails.md)-Objekt. Es können bis zu 6 Kategorien definiert werden. 
 
 
-## Eigenschaften
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |category1|String|Mit Kategorie 1 verknüpfte Bezeichnung.|
@@ -15,8 +23,7 @@ Die **plannerCategoryDescriptions**-Ressource stellt die beschreibenden Bezeichn
 |category5|String|Mit Kategorie 5 verknüpfte Bezeichnung.|
 |category6|String|Mit Kategorie 6 verknüpfte Bezeichnung.|
 
-## JSON-Darstellung
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {

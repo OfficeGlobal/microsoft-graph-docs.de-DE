@@ -1,4 +1,18 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Hashes
+ms.openlocfilehash: 2387af83450f667aa4732cc46d7d3cf2111579f0
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27058439"
+---
 # <a name="hashes-resource-type"></a>Hash-Ressourcentyp
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Die **Hashes**-Ressourcengruppen machen Hashes in einer einzelnen Struktur für ein Element verfügbar.
 
@@ -16,12 +30,11 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```json
 {
-  "crc32Hash": "string",
-  "sha1Hash": "string",
-  "quickXorHash": "string"
+  "crc32Hash": "string (hex)",
+  "sha1Hash": "string (hex)",
+  "quickXorHash": "string (base64)"
 }
 ```
-
 
 ## <a name="properties"></a>Eigenschaften
 
@@ -29,24 +42,25 @@ Es folgt eine JSON-Darstellung der Ressource.
 |:-----------------|:-------|:------------------------------------------------------------------|
 | **sha1Hash**     | String | SHA1-Hash für den Inhalt der Datei (sofern zutreffend). Schreibgeschützt. |
 | **crc32Hash**    | String | Der Wert der CRC32 der Datei (sofern zutreffend). Schreibgeschützt.            |
-| **quickXorHash** | String | Ein proprietärer Hash der Datei, die verwendet werden kann, um festzustellen, ob sich der Inhalt der Datei (sofern zutreffend) geändert hat. Schreibgeschützt. | 
+| **quickXorHash** | String | Ein proprietärer Hash der Datei, die verwendet werden kann, um festzustellen, ob sich der Inhalt der Datei (sofern zutreffend) geändert hat. Schreibgeschützt. |
 
 **Hinweis:** In einigen Fällen stehen möglicherweise keine Hash-Werte zur Verfügung. Wenn dies der Fall ist, werden die Hash-Werte für ein Element nach dem Download des Elements aktualisiert.
 
+## <a name="remarks"></a>Hinweise
 
-## <a name="remarks"></a>Bemerkungen
+In OneDrive for Business und SharePoint Server 2016 sind **sha1Hash** und **crc32Hash** nicht verfügbar.
 
-In OneDrive for Business stehen **sha1Hash** und **crc32Hash** nicht zur Verfügung. In OneDrive Personal steht **QuickXorHash** nicht zur Verfügung.
+In OneDrive Personal ist **quickXorHash** nicht verfügbar.
+
+Wie Sie **quickXorHash** für eine Datei berechnen, bezieht sich dieser auf den [quickXorHash](https://dev.onedrive.com/snippets/quickxorhash.htm)-Codeausschnitt.
 
 Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).
 
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "hashes resource",
-  "keywords": "",
+  "description": "The hashes facet provides hash identifiers for a file in OneDrive",
+  "keywords": "hash,sha1,crc32,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Hashes"
+} -->

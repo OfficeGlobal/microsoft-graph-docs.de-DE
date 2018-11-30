@@ -1,12 +1,24 @@
-# <a name="filesysteminfo-resource-type"></a>Ressourcentyp FileSystemInfo
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: fileSystemInfo
+ms.openlocfilehash: 08a79a265e8d4dbda3017a1ff8a32c5e4cab51ab
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27058852"
+---
+# <a name="filesysteminfo-facet"></a>FileSystemInfo-Facet
+
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Die Ressource **FileSystemInfo** enthält Eigenschaften, die vom lokalen Dateisystem des Geräts für die lokale Version eines Elements gemeldet werden. Diese Facet kann zum Angeben des letzten Änderungsdatums oder des Erstellungsdatums des Elements verwendet werden, wie es auf dem lokalen Gerät gespeichert war.
 
-**Hinweis:** Die Eigenschaft **FileSystemInfo** ist nicht für DriveItems in SharePoint oder OneDrive for Business verfügbar.
+Das Facet ist verfügbar für die Eigenschaft „fileSystemInfo“ von Ressourcen des Typs [driveItem][item-resource].
 
 ## <a name="json-representation"></a>JSON-Darstellung
-
-Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
@@ -18,8 +30,9 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```json
 {
-  "createdDateTime": "datetime",
-  "lastModifiedDateTime": "datetime"
+  "createdDateTime" : "datetime",
+  "lastAccessedDateTime": "datetime",
+  "lastModifiedDateTime" : "datetime"
 }
 ```
 
@@ -28,7 +41,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 | Eigenschaft                 | Typ           | Beschreibung                                                                                                          |
 | :----------------------- | :------------- | :------------------------------------------------------------------------------------------------------------------- |
 | **createdDateTime**      | DateTimeOffset | Das UTC-Datum und die UTC-Uhrzeit der Erstellung der Datei auf einem Client.                                                              |
-| **lastAccessedDateTime** | DateTimeOffset | Das UTC-Datum und die UTC-Uhrzeit des letzten Zugriffs auf die Datei. Nur für die [Liste der zuletzt verwendeten Dateien](../api/drive_recent.md) verfügbar. |
+| **lastAccessedDateTime** | DateTimeOffset | Das UTC-Datum und die UTC-Uhrzeit des letzten Zugriffs auf die Datei. Nur für die [Liste der zuletzt verwendeten Dateien](../api/drive-recent.md) verfügbar. |
 | **lastModifiedDateTime** | DateTimeOffset | Das UTC-Datum und die UTC-Uhrzeit der letzten Änderung der Datei auf einem Client.                                                        |
 
 ## <a name="notes"></a>Hinweise
@@ -41,16 +54,18 @@ Diese Eigenschaften sind lese- und schreibgeschützt. Wenn Sie eine Datei hochla
 
 Wenn der Inhalt der Datei aktualisiert wird und diese Eigenschaften nicht angegeben werden, wird **lastModifiedDateTime** automatisch auf die aktuelle Uhrzeit zurückgesetzt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
+
+* **lastAccessedDateTime** ist für Elemente in SharePoint Online oder OneDrive for Business nicht verfügbar.
 
 Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+[item-resource]: ../resources/driveitem.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "fileSystemInfo resource",
-  "keywords": "",
+  "description": "The fileSystemInfo facet provides information about date created and modified by clients.",
+  "keywords": "fileSystemInfo,client,system info,onedrive",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/FileSystemInfo"
+} -->
