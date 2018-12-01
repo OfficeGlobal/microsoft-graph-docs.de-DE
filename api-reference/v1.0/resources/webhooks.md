@@ -1,12 +1,12 @@
 ---
 title: Verwenden der Microsoft Graph-API zum Abrufen Benachrichtigungen ändern
 description: Die Microsoft Graph-REST-API verwendet einen Webhook Mechanismus zum Übermitteln von Benachrichtigungen an Clients. Ein Client ist ein Webdienst, der den eigenen URL Erhalt von Benachrichtigungen konfiguriert. Client-apps verwenden Benachrichtigungen, um deren Status nach Änderungen zu aktualisieren. Weitere Einzelheiten, einschließlich das Abonnieren und behandeln eingehende Benachrichtigungen Set finden Sie unter Einrichten von Benachrichtigungen, damit die Änderungen in Benutzerdaten.
-ms.openlocfilehash: a44a32b5a1dd1c8f3bd2a9234503da5a583f8bdd
-ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
+ms.openlocfilehash: c7d468b7c5064911d27d3a93bc3160d03c2a4dc3
+ms.sourcegitcommit: 02ead22efd4f10cd50f89c9f5aa3b6dfda96aeec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27020155"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123945"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Verwenden der Microsoft Graph-API zum Abrufen Benachrichtigungen ändern
 
@@ -37,6 +37,7 @@ In der Regel sind für Abonnementvorgänge Leseberechtigungen für die Ressource
 ## <a name="see-also"></a>Siehe auch
 
 - [Abonnementressourcentyp](./subscription.md)
+- [Liste von Abonnements](../api/subscription-list.md)
 - [Abonnement abrufen](../api/subscription-get.md)
 - [Abonnement erstellen](../api/subscription-post-subscriptions.md)
 - [Update subscription](../api/subscription-update.md)
