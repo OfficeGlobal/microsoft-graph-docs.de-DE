@@ -1,52 +1,52 @@
 ---
 title: Erstellen von audio Routinggruppe
 description: Erstellen Sie eine neue **AudioRoutingGroup**.
-ms.openlocfilehash: 9e42fb085887cee22ccc8eac0997adf0464e0d55
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 0dd506f3cf02e59d5a34c7184f4e596f6ff9e1fd
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059956"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156040"
 ---
-# <a name="create-audio-routing-group"></a><span data-ttu-id="4463c-103">Erstellen von audio Routinggruppe</span><span class="sxs-lookup"><span data-stu-id="4463c-103">Create audio routing group</span></span>
+# <a name="create-audio-routing-group"></a><span data-ttu-id="49e7c-103">Erstellen von audio Routinggruppe</span><span class="sxs-lookup"><span data-stu-id="49e7c-103">Create audio routing group</span></span>
 
-> <span data-ttu-id="4463c-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="4463c-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4463c-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="4463c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="49e7c-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="49e7c-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="49e7c-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="49e7c-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="4463c-106">Erstellen Sie eine neue **AudioRoutingGroup**.</span><span class="sxs-lookup"><span data-stu-id="4463c-106">Create a new **audioRoutingGroup**.</span></span>
+<span data-ttu-id="49e7c-106">Erstellen Sie eine neue **AudioRoutingGroup**.</span><span class="sxs-lookup"><span data-stu-id="49e7c-106">Create a new **audioRoutingGroup**.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4463c-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="4463c-107">Permissions</span></span>
-<span data-ttu-id="4463c-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4463c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="49e7c-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="49e7c-107">Permissions</span></span>
+<span data-ttu-id="49e7c-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="49e7c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="4463c-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="4463c-110">Permission type</span></span>                        | <span data-ttu-id="4463c-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="4463c-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="49e7c-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="49e7c-110">Permission type</span></span>                        | <span data-ttu-id="49e7c-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="49e7c-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="4463c-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="4463c-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="4463c-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="4463c-113">Not supported.</span></span>                               |
-| <span data-ttu-id="4463c-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="4463c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4463c-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="4463c-115">Not supported.</span></span>                               |
-| <span data-ttu-id="4463c-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="4463c-116">Application</span></span>     | <span data-ttu-id="4463c-117">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="4463c-117">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="49e7c-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="49e7c-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="49e7c-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="49e7c-113">Not supported.</span></span>                               |
+| <span data-ttu-id="49e7c-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="49e7c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="49e7c-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="49e7c-115">Not supported.</span></span>                               |
+| <span data-ttu-id="49e7c-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="49e7c-116">Application</span></span>     | <span data-ttu-id="49e7c-117">Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="49e7c-117">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4463c-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="4463c-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="49e7c-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="49e7c-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/audioRoutingGroups
 POST /applications/{id}/calls/{id}/audioRoutingGroups
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4463c-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="4463c-119">Request headers</span></span>
-| <span data-ttu-id="4463c-120">Name</span><span class="sxs-lookup"><span data-stu-id="4463c-120">Name</span></span>          | <span data-ttu-id="4463c-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="4463c-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="49e7c-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="49e7c-119">Request headers</span></span>
+| <span data-ttu-id="49e7c-120">Name</span><span class="sxs-lookup"><span data-stu-id="49e7c-120">Name</span></span>          | <span data-ttu-id="49e7c-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="49e7c-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="4463c-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="4463c-122">Authorization</span></span> | <span data-ttu-id="4463c-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="4463c-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="49e7c-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="49e7c-122">Authorization</span></span> | <span data-ttu-id="49e7c-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="49e7c-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4463c-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="4463c-125">Request body</span></span>
-<span data-ttu-id="4463c-126">Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [AudioRoutingGroup](../resources/audioroutinggroup.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="4463c-126">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="49e7c-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="49e7c-125">Request body</span></span>
+<span data-ttu-id="49e7c-126">Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [AudioRoutingGroup](../resources/audioroutinggroup.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="49e7c-126">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4463c-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="4463c-127">Response</span></span>
-<span data-ttu-id="4463c-128">Wenn der Vorgang erfolgreich war, gibt diese Methode `200 OK` Antwortobjekt Code und [AudioRoutingGroup](../resources/audioroutinggroup.md) im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="4463c-128">If successful, this method returns `200 OK` response code and [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="49e7c-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="49e7c-127">Response</span></span>
+<span data-ttu-id="49e7c-128">Wenn der Vorgang erfolgreich war, gibt diese Methode `200 OK` Antwortobjekt Code und [AudioRoutingGroup](../resources/audioroutinggroup.md) im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="49e7c-128">If successful, this method returns `200 OK` response code and [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="4463c-129">Beispiele</span><span class="sxs-lookup"><span data-stu-id="4463c-129">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="49e7c-129">Beispiele</span><span class="sxs-lookup"><span data-stu-id="49e7c-129">Examples</span></span>
 
-### <a name="example-1-one-to-one-audio-routing-group"></a><span data-ttu-id="4463c-130">In Beispiel 1: 1: 1-audio Routinggruppe</span><span class="sxs-lookup"><span data-stu-id="4463c-130">Example 1: One-to-one audio routing group</span></span>
+### <a name="example-1-one-to-one-audio-routing-group"></a><span data-ttu-id="49e7c-130">In Beispiel 1: 1: 1-audio Routinggruppe</span><span class="sxs-lookup"><span data-stu-id="49e7c-130">Example 1: One-to-one audio routing group</span></span>
 
-##### <a name="request"></a><span data-ttu-id="4463c-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="4463c-131">Request</span></span>
-<span data-ttu-id="4463c-132">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="4463c-132">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="49e7c-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="49e7c-131">Request</span></span>
+<span data-ttu-id="49e7c-132">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="49e7c-132">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -69,11 +69,11 @@ Content-Length: 233
 }
 ```
 
-<span data-ttu-id="4463c-133">Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [AudioRoutingGroup](../resources/audioroutinggroup.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="4463c-133">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
+<span data-ttu-id="49e7c-133">Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [AudioRoutingGroup](../resources/audioroutinggroup.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="49e7c-133">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="4463c-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="4463c-134">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="49e7c-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="49e7c-134">Response</span></span>
 
-> <span data-ttu-id="4463c-p104">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="4463c-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="49e7c-p104">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="49e7c-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -96,10 +96,10 @@ Content-Length: 233
   ]
 }
 ```
-### <a name="example-2-multicast-audioroutinggroup"></a><span data-ttu-id="4463c-137">Beispiel 2: Multicast audioRoutingGroup</span><span class="sxs-lookup"><span data-stu-id="4463c-137">Example 2: Multicast audioRoutingGroup</span></span>
+### <a name="example-2-multicast-audioroutinggroup"></a><span data-ttu-id="49e7c-137">Beispiel 2: Multicast audioRoutingGroup</span><span class="sxs-lookup"><span data-stu-id="49e7c-137">Example 2: Multicast audioRoutingGroup</span></span>
 
-##### <a name="request"></a><span data-ttu-id="4463c-138">Anforderung</span><span class="sxs-lookup"><span data-stu-id="4463c-138">Request</span></span>
-<span data-ttu-id="4463c-139">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="4463c-139">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="49e7c-138">Anforderung</span><span class="sxs-lookup"><span data-stu-id="49e7c-138">Request</span></span>
+<span data-ttu-id="49e7c-139">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="49e7c-139">The following example shows the request.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
@@ -127,11 +127,11 @@ Content-Length: 233
 }
 ```
 
-<span data-ttu-id="4463c-140">Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [AudioRoutingGroup](../resources/audioroutinggroup.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="4463c-140">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
+<span data-ttu-id="49e7c-140">Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [AudioRoutingGroup](../resources/audioroutinggroup.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="49e7c-140">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="4463c-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="4463c-141">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="49e7c-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="49e7c-141">Response</span></span>
 
-> <span data-ttu-id="4463c-p105">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="4463c-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="49e7c-p105">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="49e7c-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 200 OK
