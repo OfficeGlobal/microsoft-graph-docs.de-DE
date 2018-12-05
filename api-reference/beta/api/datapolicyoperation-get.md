@@ -1,12 +1,12 @@
 ---
 title: Abrufen von dataPolicyOperation
 description: Rufen Sie die Eigenschaften des DataPolicyOperation-Objekts ab.
-ms.openlocfilehash: f2894b7cc23d6a5d35a03c7626ca9cb4640a9fcc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: fbc94719f9944adb25f7dd744cf0b15b179f3a5d
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059564"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156019"
 ---
 # <a name="get-datapolicyoperation"></a>Abrufen von dataPolicyOperation
 
@@ -24,7 +24,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /dataPolicyOperations/<id>
+GET /dataPolicyOperations/{id}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
@@ -43,7 +43,7 @@ Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjek
   "name": "get_datapolicyoperation"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/dataPolicyOperations/<id>
+GET https://graph.microsoft.com/beta/dataPolicyOperations/{id}
 ```
 ##### <a name="response"></a>Antwort
 Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
@@ -63,7 +63,8 @@ Content-length: 212
   "status": "status-value",
   "storageLocation": "storageLocation-value",
   "userId": "userId-value",
-  "submittedDateTime": "datetime-value"
+  "submittedDateTime": "datetime-value",
+  "progress": "progress-value"
 }
 ```
 

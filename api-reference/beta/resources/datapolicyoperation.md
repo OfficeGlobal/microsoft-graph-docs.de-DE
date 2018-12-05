@@ -1,12 +1,12 @@
 ---
 title: Ressourcentyp dataPolicyOperation
 description: Stellt einen gesendete Daten Richtlinie Vorgang dar. Sie enthält die erforderlichen Informationen für das Nachverfolgen des Status eines Vorgangs. Beispielsweise kann ein Unternehmensadministrator anfordern, Daten Richtlinie Vorgang zum Exportieren eines Mitarbeiters Unternehmensdaten verwendet, und klicken Sie dann die Anforderung später verfolgen.
-ms.openlocfilehash: e6763f4050157658ea0a7f4d1e6f52668ed6e4b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 6e896fdfa60b733dd91e9da573d998c1949f0d9c
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063623"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156033"
 ---
 # <a name="datapolicyoperation-resource-type"></a>Ressourcentyp dataPolicyOperation
 
@@ -30,6 +30,7 @@ Stellt einen gesendete Daten Richtlinie Vorgang dar. Sie enthält die erforderli
 |storageLocation|String|Der URL-Adresse an, in dem Daten für exportanforderungen exportiert werden.|
 |userId|String|Die Id für den Benutzer, auf dem die Operation ausgeführt wird.|
 |submittedDateTime|DateTimeOffset|Stellt die bei die Anforderung für diesen Datenvorgang im ISO 8601-Format verwenden übermittelt wurde, im UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
+|Fortschritt|Gleitkommawert mit doppelter Genauigkeit|Gibt den Fortschritt eines Vorgangs an.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -54,7 +55,8 @@ Es folgt eine JSON-Darstellung der Ressource.
   "status": "string",
   "storageLocation": "String",
   "userId": "String",
-  "submittedDateTime": "String (timestamp)"
+  "submittedDateTime": "String (timestamp)",
+  "progress": "Double"
 }
 
 ```

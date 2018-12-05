@@ -1,12 +1,12 @@
 ---
 title: Liste audio Routinggruppen
 description: Abrufen einer Liste von **AudioRoutingGroup** -Objekten.
-ms.openlocfilehash: da6724f95fbc2c4365a1b1e4d34d317c130f12df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: d188d8478b8bf57f45f0fa15eed9973cafba7b2f
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062676"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156004"
 ---
 # <a name="list-audio-routing-groups"></a>Liste audio Routinggruppen
 
@@ -21,7 +21,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:---------------------------------------|:--------------------------------------------|
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt.                               |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt.                               |
-| Anwendung     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Anwendung     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
