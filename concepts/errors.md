@@ -1,10 +1,20 @@
+---
+title: Microsoft Graph-Fehlerantworten und -Ressourcentypen
+description: "  "
+ms.openlocfilehash: a4641b4e4de5adcb3ce6b935aaabe504d76e6676
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27092183"
+---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Microsoft Graph-Fehlerantworten und -Ressourcentypen
 
 <!--In this article:
   
--    [Status code](#msg_status_code)
--    [Error resource type](#msg_error_resource_type)
--    [Code property](#msg_code_property)
+-   [Status code](#msg-status-code)
+-   [Error resource type](#msg-error-resource-type)
+-   [Code property](#msg-code-property)
 
 <a name="msg_error_response"> </a> -->
 
@@ -18,7 +28,7 @@ In der folgenden Tabelle werden die HTTP-Statuscodes aufgeführt und beschrieben
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | 400         | Ungültige Anforderung (Bad Request)                     | Die Anforderung kann nicht verarbeitet werden, da sie fehlerhaft oder falsch ist.                                                                       |
 | 401         | Nicht autorisiert (Unauthorized)                    | Erforderliche Authentifizierungsinformationen fehlen oder sind für die Ressource nicht gültig.                                                   |
-| 403         | Verboten (Forbidden)                       | Der Zugriff auf die angeforderte Ressource wird verweigert. Der Benutzer verfügt möglicherweise nicht über ausreichende Berechtigungen.                                                 |
+| 403         | Verboten (Forbidden)                       | Der Zugriff auf die angeforderte Ressource wird verweigert. Der Benutzer verfügt möglicherweise nicht über ausreichende Berechtigungen. <br /><br /> **Wichtig:** Wenn Richtlinien für bedingten Zugriff auf eine Ressource angewandt werden, wird möglicherweise der Fehler HTTP 403; Forbidden error=insufficent_claims zurückgegeben. Weitere Informationen zur Microsoft Graph und zum bedingten Zugriff finden Sie in der [Developer-Leitfaden zum bedingten Zugriff in Azure Active Directory](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-conditional-access-developer)  |
 | 404         | Nicht gefunden (Not Found)                       | Die angeforderte Ressource ist nicht vorhanden.                                                                                                  |
 | 405         | Methode nicht zulässig (Method Not Allowed)              | Die HTTP-Methode in der Anforderung ist für die Ressource nicht zulässig.                                                                         |
 | 406         | Nicht zulässig (Not Acceptable)                  | Dieser Dienst unterstützt nicht das im Accept-Header angeforderte Format.                                                                |
@@ -29,7 +39,8 @@ In der folgenden Tabelle werden die HTTP-Statuscodes aufgeführt und beschrieben
 | 413         | Anforderungseinheit zu groß (Request Entity Too Large)        | Die Größe der Anforderung überschreitet den zulässigen Höchstwert.                                                                                            |
 | 415         | Nicht unterstützter Medientyp (Unsupported Media Type)          | Der Inhaltstyp der Anfrage hat ein Format, das vom Dienst nicht unterstützt wird.                                                      |
 | 416         | Angeforderter Bereich kann nicht erfüllt werden (Requested Range Not Satisfiable) | Der angegebene Bytebereich ist ungültig oder nicht verfügbar.                                                                                    |
-| 422         | Einheit kann nicht bearbeitet werden (Unprocessable Entity)            | Die Anforderung kann nicht verarbeitet werden, da sie semantisch falsch ist.                                                                       |
+| 422         | Einheit kann nicht bearbeitet werden (Unprocessable Entity)            | Die Anforderung kann nicht verarbeitet werden, da sie semantisch falsch ist.                                                                        |
+| 423         | Gesperrt                          | Die Ressource, auf die zugegriffen wird, ist gesperrt.                                                                                          |
 | 429         | Zu viele Anforderungen (Too Many Requests)               | Die Clientanwendung wurde gedrosselt und sollte nicht versuchen, die Anforderung zu wiederholen, bis eine bestimmte Zeitspanne abgelaufen ist.                |
 | 500         | Interner Serverfehler (Internal Server Error)           | Beim Verarbeiten der Anforderung ist ein interner Serverfehler aufgetreten.                                                                       |
 | 501         | Nicht implementiert (Not Implemented)                 | Das angeforderte Feature ist nicht implementiert.                                                                                               |
@@ -40,7 +51,7 @@ In der folgenden Tabelle werden die HTTP-Statuscodes aufgeführt und beschrieben
 
 Die Fehlerantwort ist ein einzelnes JSON-Objekt, das eine einzige Eigenschaft mit dem Namen **error** enthält. Dieses Objekt enthält alle Fehlerdetails. Sie können die hier zurückgegebenen Informationen anstelle von oder zusätzlich zu dem HTTP-Statuscode verwenden. Nachfolgend finden Sie ein Beispiel für einen vollständigen JSON-Fehlertext.
 
-<!-- { "blockType": "example", "@odata.type": "sample.error", "expectError": true, "name": "example-error-response"} -->
+<!-- { "blockType": "ignored", "@odata.type": "odata.error", "expectError": true, "name": "example-error-response" } -->
 ```json
 {
   "error": {
@@ -60,13 +71,13 @@ Die Fehlerantwort ist ein einzelnes JSON-Objekt, das eine einzige Eigenschaft mi
 
 Die Fehlerressource wird immer dann zurückgegeben, wenn ein Fehler bei der Verarbeitung der Anforderung auftritt.
 
-Fehlerantworten entsprechen der Definition der [OData v4](http://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091)-Spezifikation für Fehlerantworten.
+Fehlerantworten entsprechen der Definition der [OData v4](https://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091)-Spezifikation für Fehlerantworten.
 
 ### <a name="json-representation"></a>JSON-Darstellung
 
 Die Fehlerressource besteht aus den folgenden Ressourcen:
 
-<!-- { "blockType": "resource", "@odata.type": "sample.error" } -->
+<!-- { "blockType": "resource", "@odata.type": "odata.error" } -->
 ```json
 {
   "error": { "@odata.type": "odata.error" }  
@@ -91,13 +102,6 @@ In der Fehlerantwort befindet sich eine Fehlerressource, die die folgenden Eigen
 | **code**       | string                 | Eine Fehlercode-Zeichenfolge für den aufgetretenen Fehler                                                            |
 | **message**    | string                 | Eine für Entwickler bereitgestellte Meldung über den aufgetretenen Fehler. Diese sollte dem Benutzer selbst nicht direkt angezeigt werden. |
 | **innererror** | error object           | Optional. Zusätzliche Fehlerobjekte, die eventuell spezifischer als der Fehler der obersten Ebene sind.                     |
-<!-- {
-  "type": "#page.annotation",
-  "description": "Understand the error format for the API and error codes.",
-  "keywords": "error response, error, error codes, innererror, message, code",
-  "section": "documentation",
-  "tocPath": "Misc/Error Responses"
-} -->
 
 <!--<a name="msg_code_property"> </a> -->
 
@@ -197,4 +201,16 @@ Nachfolgend sind einige weitere Fehler aufgeführt, denen Ihre App in den gescha
 <!-- ##Additional Resources##
 
 - [Microsoft Graph API release notes and known issues](microsoft-graph-api-release-notes-known-issues.md )
-- [Hands on lab: Deep dive into the Microsoft Graph API](http://dev.office.com/hands-on-labs/4585) -->
+- [Hands on lab: Deep dive into the Microsoft Graph API](https://dev.office.com/hands-on-labs/4585) -->
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Understand the error format for the API and error codes.",
+  "keywords": "error response, error, error codes, innererror, message, code",
+  "section": "documentation",
+  "suppressions": [
+    " Warning: /concepts/errors.md:
+      Multiple resources found in file, but we only support one per file. 'odata.error,odata.error'. Skipping."
+  ],
+  "tocPath": "Misc/Error Responses"
+} -->

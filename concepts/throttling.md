@@ -1,3 +1,13 @@
+---
+title: Leitfaden zu Einschränkungen in Microsoft Graph
+description: Durch Einschränkungen wird die Anzahl der gleichzeitigen Aufrufe an einen Dienst begrenzt, um eine Überlastung von Ressourcen zu verhindern. Microsoft Graph ist für die Verarbeitung einer großen Menge von Anforderungen konzipiert. Wenn die Anzahl der Anforderungen jedoch zu hoch ist und zu einer Überlastung führen könnte, können Einschränkungen dazu beitragen, die optimale Leistung und Zuverlässigkeit des Microsoft Graph-Diensts aufrechtzuerhalten.
+ms.openlocfilehash: dfe7fed3efc01932137df00d6d62ad069faf64cd
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27092212"
+---
 # <a name="microsoft-graph-throttling-guidance"></a>Leitfaden zu Einschränkungen in Microsoft Graph
 
 
@@ -30,4 +40,15 @@ Wenn Sie Fehlerbehandlung implementieren, verwenden Sie den HTTP-Fehlercode 429 
 2. Wiederholen Sie die Anforderung.
 3. Wenn die Anforderung erneut nicht ausgeführt und der Fehlercode 429 zurückgegeben wird, unterliegen Sie weiterhin einer Einschränkung. Wiederholen Sie die Anforderung unter Anwendung der empfohlenen Retry-After-Verzögerung so lange, bis die Anforderung erfolgreich ist.
 
-Eine ausführlichere Erläuterung zum Thema Einschränkung in der Microsoft Cloud finden Sie unter [Throttling](https://msdn.microsoft.com/en-us/library/office/dn589798.aspx).
+Folgende Ressourcen bieten derzeit einen Retry-After-Header:
+- [Benutzer](/graph/api/resources/user?view=graph-rest-1.0)
+- [Foto](/graph/api/resources/profilephoto?view=graph-rest-1.0)
+- [E-Mail](/graph/api/resources/message?view=graph-rest-1.0)
+- [Kalender (Benutzer und Gruppen)](/graph/api/resources/event?view=graph-rest-1.0)
+- [Kontakt](/graph/api/resources/contact?view=graph-rest-1.0)
+- [Anlage](/graph/api/resources/attachment?view=graph-rest-1.0)
+- [Gruppenunterhaltungen](/graph/api/resources/conversation?view=graph-rest-1.0)
+- [Personen und soziale Netzwerke](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
+
+Eine ausführlichere Erläuterung zum Thema Einschränkung in der Microsoft Cloud finden Sie unter [Throttling](https://msdn.microsoft.com/library/office/dn589798.aspx).
