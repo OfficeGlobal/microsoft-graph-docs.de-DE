@@ -3,7 +3,7 @@ title: Zuordnen des Office 365-Kontos zu Azure AD zum Erstellen und Verwalten vo
 description: 'Um die Anwendung zu authentifizieren, müssen Sie diese in Microsoft Azure Active Directory (Azure AD) registrieren. Hier werden die Office 365-Benutzerkonto- und Anwendungsinformationen gespeichert. Zum Verwalten von Azure AD über das Azure-Portal benötigen Sie ein Microsoft Azure-Abonnement. Sie können das Portal in Microsoft Azure zum Verwalten von Benutzern, Rollen und Apps verwenden.. '
 ms.openlocfilehash: 1a0935a88d985d8be72197c2652586bbbc19bd1d
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092239"

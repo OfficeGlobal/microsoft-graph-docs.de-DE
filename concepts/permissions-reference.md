@@ -3,7 +3,7 @@ title: 'Microsoft Graph-Berechtigungsreferenz '
 description: 'Microsoft Graph macht differenzierte Berechtigungen verfügbar, die den Zugriff von Apps auf Ressourcen wie Benutzer, Gruppen und E-Mails steuern. Als Entwickler entscheiden Sie, welche Berechtigungen für Microsoft Graph Ihre App anfordert. Wenn ein Benutzer sich bei Ihrer App anmeldet, erhält er oder in einigen Fällen ein Administrator die Möglichkeit, diesen Berechtigungen zuzustimmen. Falls der Benutzer zustimmt, erhält Ihre App Zugriff auf die angeforderten Ressourcen und APIs. Für Apps, die ohne angemeldeten Benutzer ausgeführt werden, kann den Berechtigungen während der Installation oder Registrierung der App von einem Administrator vorab zugestimmt werden (vorab genehmigte Apps). '
 ms.openlocfilehash: 3d6831c3c50818904a20a7dac2d3bf33c1baf515
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092315"

@@ -3,7 +3,7 @@ title: Nationale Cloudbereitstellungen
 description: Zusätzlich zu unserem globalen Netzwerk von Rechenzentren sind Microsoft Cloud Services in drei separaten nationalen Clouds verfügbar. Diese nationalen Cloudversionen sind physische und logische netzwerkisolierte Instanzen von Microsoft Enterprise Cloud Services, die an die geografischen Grenzen von bestimmten Ländern gebunden sind und von lokalen Mitarbeitern betrieben werden. Weitere Informationen hierzu finden Sie unter „Nationale Clouds von Microsoft“.
 ms.openlocfilehash: b0f2ab257773faa14fe59566992bb1ed0dd77959
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092162"

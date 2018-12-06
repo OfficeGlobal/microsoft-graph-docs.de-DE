@@ -3,7 +3,7 @@ title: 'Verwenden der Benachrichtigungs-API in Microsoft Graph zur Realisierung 
 description: 'Benachrichtigungen stellen die wirksamste Möglichkeit dar, Benutzer wieder an sich zu binden. Sie können die Aufmerksamkeit Ihres Benutzers erregen und bringen ihn wieder zu Ihrer App zurück. In einer Welt der vielen Geräte können Ihre Benutzer von überall auf Ihre Apps und Dienste zugreifen, auf verschiedenen Plattformen und Geräten, auf denen Ihre Apps präsent sind. '
 ms.openlocfilehash: 7ff36d7e0d406cb7918e2999812e3c756ae3b5bc
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092202"

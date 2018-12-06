@@ -3,7 +3,7 @@ title: Geräteübergreifende Oberflächen in Microsoft Graph
 description: 'Die Gerätevielfalt ist heute nahezu unüberschaubar. Heimanwender nutzen Geräte in den verschiedensten Formfaktoren und mit den unterschiedlichsten Plattformen: Morgens lesen sie die neuesten Nachrichten auf ihrem Tablet, auf dem Weg zur Arbeit checken sie ihre E-Mails auf dem Smartphone und im Büro erledigen sie ihre Aufgaben am Desktop-PC. Abends schauen sie sich vielleicht einen Film auf ihrer Heimkonsole an und hören über intelligente Lautsprecher die Nachrichten des Tages. Der durchschnittliche Kunde nutzt im Laufe des Tages mehrere verschiedene Geräte und Plattformen. '
 ms.openlocfilehash: 83557d59f964631fe12a8a5cb7f00121955432d3
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092178"

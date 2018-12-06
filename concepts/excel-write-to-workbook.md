@@ -3,7 +3,7 @@ title: Schreiben von Daten in eine Excel-Arbeitsmappe mit Microsoft Graph
 description: q=excelstarter).
 ms.openlocfilehash: a36e44ce390f0947fbc2d5615551f17becf11b33
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092164"

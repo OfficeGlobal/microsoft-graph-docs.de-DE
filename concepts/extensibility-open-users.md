@@ -3,7 +3,7 @@ title: Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener E
 description: 'Sie werden durch ein Beispiel geführt, um die Verwendung *offener Erweiterungen* zu veranschaulichen. '
 ms.openlocfilehash: b2ff767e9eb0762ec3600166328d2bb0c5218936
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092335"

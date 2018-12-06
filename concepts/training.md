@@ -3,7 +3,7 @@ title: Microsoft Graph-Schulung
 description: Microsoft Graph-Schulungsübungen sind schrittweise Lernprogramme, in denen Sie durch das Erstellen einer einfachen Anwendung geführt werden, die die Azure Active Directory-Authentifizierung verwendet und über Microsoft Graph auf Daten zugreift.
 ms.openlocfilehash: 4704377c7d54e1d2052f471e5d2b5c18ed6b9867
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092199"

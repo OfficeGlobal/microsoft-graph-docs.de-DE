@@ -3,7 +3,7 @@ title: Übersicht über die Berichts-API von Microsoft Graph
 description: Anhand von Nutzungsberichten im Microsoft 365-Administrationscenter können Administratoren die Nutzung von Office 365-Diensten in ihrem Unternehmen besser verstehen. Mit der Berichts-API in Microsoft Graph haben Sie die Möglichkeit der Integration mit Office 365-Nutzungsberichten.
 ms.openlocfilehash: d923d0003a276be15620998c53693a9bab7116d5
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092285"

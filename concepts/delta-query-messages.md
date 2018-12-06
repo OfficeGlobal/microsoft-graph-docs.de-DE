@@ -3,7 +3,7 @@ title: Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen
 description: Mit der Delta-Abfrage können Sie Ergänzungen, Löschungen oder Aktualisierungen an Nachrichten in einem Ordner anhand einer Serie von Delta-Funktionsaufrufen abfragen.
 ms.openlocfilehash: bae652cc8382ae1b966a24fc4af58f720a2f0c9f
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092197"

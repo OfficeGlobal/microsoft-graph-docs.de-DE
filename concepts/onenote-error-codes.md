@@ -3,7 +3,7 @@ title: Fehlercodes für OneNote-APIs in Microsoft Graph
 description: Dieser Artikel beschreibt Fehlercodes, die von der OneNote-API zurückgegeben werden, wenn eine von der API gesendete Anfrage fehlschlägt.
 ms.openlocfilehash: 265929be081ee61a88b8baf4f600e2c154797ec7
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092265"

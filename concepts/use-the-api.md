@@ -3,7 +3,7 @@ title: Verwenden der Microsoft Graph-API
 description: Microsoft Graph ist eine RESTful-Web-API, mit der Sie auf Microsoft Cloud-Dienstressourcen zugreifen können. Nachdem Sie Ihre App registriert und Authentifizierungstoken für einen Benutzer oder einen Dienst abgerufen haben, können Sie Anforderungen an die Microsoft Graph-API tätigen.
 ms.openlocfilehash: 1a9d9bcefdfb302a9de602aa15aa642a0c57a793
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092294"

@@ -3,7 +3,7 @@ title: Öffnen der OneNote-Clients
 description: 'Sie können die **Links**-Eigenschaft einer Seite oder eines Notizbuchs verwenden, um eine OneNote-Anwendung für eine bestimmte Seite oder ein Notizbuch zu öffnen. '
 ms.openlocfilehash: c82507243488777e557b18e599edb86b2ac15622
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092268"

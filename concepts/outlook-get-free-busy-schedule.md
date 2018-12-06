@@ -3,7 +3,7 @@ title: Abrufen des Frei/Gebucht-Zeitplans für Benutzer und Ressourcen (Vorschau
 description: Ein häufiges Szenario in einer Arbeits- oder Schulumgebung besteht darin, anzuzeigen, wann ein Benutzer für eine Besprechung verfügbar ist, oder die Verfügbarkeit eines Teams, Raums oder Geräts für einen Zeitraum zu durchsuchen.
 ms.openlocfilehash: 8a2dd9318bdd806c99d525ee41f46d78d1963b47
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092304"

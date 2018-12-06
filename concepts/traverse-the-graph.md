@@ -3,7 +3,7 @@ title: Durchqueren von Microsoft Graph
 description: Zusätzlich zur Verwendung der Microsoft Graph-API zum Lesen und Schreiben von Daten können Sie eine Reihe von Anforderungsmustern verwenden, um die Ressourcen in Microsoft Graph zu durchlaufen. Mithilfe des Metadatendokuments erhalten Sie auch einen Einblick in die Datenmodelle der Ressourcen und Beziehungen in Microsoft Graph.
 ms.openlocfilehash: 33f9ace57c7a0c3166e43a6ca1264174962752e1
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092185"

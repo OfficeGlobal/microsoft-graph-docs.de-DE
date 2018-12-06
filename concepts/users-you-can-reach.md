@@ -3,7 +3,7 @@ title: Benutzer, die Sie mit Microsoft Graph erreichen können
 description: 'Microsoft bietet Dienste und Lösungen, die den modernen Arbeitsalltag und das moderne Leben erweitern. '
 ms.openlocfilehash: c50ce779b0f6e990a360463da64b3b0e1a9aef34
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092303"

@@ -3,7 +3,7 @@ title: Ohne Benutzer zugreifen
 description: 'Einige Apps rufen Microsoft Graph mit ihrer eigenen Identität und nicht im Namen eines Benutzers auf. In vielen Fällen handelt es sich dabei um Hintergrunddienste oder Daemons, die auf einem Server ausgeführt werden, ohne dass ein Benutzer angemeldet ist. Ein Beispiel für eine solche App ist ein E-Mail-Archivierungsdienst, der nachts reaktiviert und ausgeführt wird. In einigen Fällen rufen Apps, bei deren Ausführung ein Benutzer angemeldet ist, Microsoft Graph auch unter ihrer eigenen Identität auf. Beispiel: Eine App muss Funktionen verwenden, die höhere Rechte in einer Organisation erfordern als diejenigen, die dem angemeldeten Benutzer zugewiesen sind.  '
 ms.openlocfilehash: 25eb9686153e997079de3f17f88d017c336d3a61
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092261"

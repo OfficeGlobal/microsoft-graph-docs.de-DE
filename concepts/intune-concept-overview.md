@@ -3,7 +3,7 @@ title: Überblick über Intune-Geräte und die Apps-API
 description: 'Mit Microsoft Intune können Unternehmen Geräte und Apps verwalten. Sie können mit der Intune-API in Microsoft Graph Geräte und Apps verwalten sowie Intune mit en von Ihnen bevorzugten Tools konfigurieren. '
 ms.openlocfilehash: fced71d317aa5f2aebfd2c44237ea9087a6be4f6
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092284"

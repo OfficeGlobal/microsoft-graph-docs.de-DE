@@ -3,7 +3,7 @@ title: Übersicht über Microsoft Graph Data Connect (Vorschau)
 description: Microsoft Graph enthält umfassende Informationen zu Mitarbeitern und ihrem Arbeitsplatz, einschließlich Informationen dazu, wie Mitarbeiter arbeiten und sie kommunizieren, zusammenarbeiten und ihre Zeit verwalten. Microsoft Graph Data Connect liefert diese Daten an Microsoft Azure, sodass Sie Zugriff auf die besten Entwicklungs- und Hostingtools erhalten, um mit diesen Daten zu arbeiten. Dadurch können Kunden von innovativen oder branchenspezifischen Anwendungen profitieren, die ihre Produktivität verbessern, während sie gleichzeitig die vollständige Kontrolle über ihre Microsoft Graph-Kundendaten behalten. Microsoft bietet die sichere Kontrolle, die Kunden erwarten.
 ms.openlocfilehash: cce6046c9ed9b57171e998b1cb17c4e92fa0fcb5
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092242"

@@ -3,7 +3,7 @@ title: 'Erstellen geräteübergreifender Apps mit Project Rome '
 description: 'Sie können Project Rome verwenden, um Benutzeroberflächen geräte- und plattformübergreifend zu erstellen und dabei Reibungspunkte für Benutzer zu reduzieren und App-Bindung zu fördern. Für Anwendungen, die Daten geräte- und plattformübergreifend mithilfe von Project Rome freigeben, müssen Sie eine geräteübergreifende App konfigurieren, die Informationen über Ihre plattformspezifischen Apps enthält. '
 ms.openlocfilehash: b555356fd523605837cd339630f64757fa8106bf
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092275"
@@ -68,8 +68,8 @@ Sie müssen alle plattformspezifischen Anwendungs-IDs sammeln, damit sie diese I
 
 So suchen Sie nach den IDs
 
-* **windows_universal** – Geben Sie eine AUMID für jede UWP-App an. Weitere Informationen hierzu finden Sie unter [Suche der Anwendungsbenutzermodell-ID einer installierten App (Branche 8.1)](https://docs.microsoft.com/de-DE/previous-versions/windows/embedded/dn449300(v=winembedded.82)) und [Anwendung](https://docs.microsoft.com/de-DE/uwp/schemas/appxpackage/appxmanifestschema/element-application).
-* **windows_win32** – Geben Sie eine AUMID für jede App an. Für win32-Apps müssen Sie ein Skript verwenden, um diese Informationen abzurufen. Weitere Informationen hierzu finden Sie unter [Suche der Anwendungsbenutzermodell-ID einer installierten App (Branche 8.1)](https://docs.microsoft.com/de-DE/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **windows_universal** – Geben Sie eine AUMID für jede UWP-App an. Weitere Informationen hierzu finden Sie unter [Suche der Anwendungsbenutzermodell-ID einer installierten App (Branche 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)) und [Anwendung](https://docs.microsoft.com/de-DE/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** – Geben Sie eine AUMID für jede App an. Für win32-Apps müssen Sie ein Skript verwenden, um diese Informationen abzurufen. Weitere Informationen hierzu finden Sie unter [Suche der Anwendungsbenutzermodell-ID einer installierten App (Branche 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
 * **Android-** – Weitere Informationen finden Sie unter [Ändern des Paketnamens](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **IOS** – Weitere Informationen finden Sie unter [Paket](https://developer.apple.com/documentation/foundation/bundle) und [Erforderliche, lokalisierbare und bearbeitbare Eigenschaften](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** – Melden Sie sich beim [App-Registrierungsportal](https://apps.dev.microsoft.com) an. Sie können die App-ID/Client-ID für Ihre Apps anzeigen. Sowohl Live SDK (Hexadezimalwerte) als auch zusammengeführte App-IDs (GUIDs) werden unterstützt.   
@@ -94,7 +94,7 @@ Wenn Sie Ihre geräteübergreifende App im Windows Dev Center konfigurieren möc
 So suchen Sie nach den IDs
 
 * 
-  **Windows-Benachrichtigungsdienst** – Informationen dazu finden Sie unter [Registrieren Ihrer App und Empfangen der Anmeldeinformationen für Ihren Clouddienst ](https://docs.microsoft.com/de-DE/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) und [App-Registrierungsportal](https://apps.dev.microsoft.com).
+  **Windows-Benachrichtigungsdienst** – Informationen dazu finden Sie unter [Registrieren Ihrer App und Empfangen der Anmeldeinformationen für Ihren Clouddienst ](https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) und [App-Registrierungsportal](https://apps.dev.microsoft.com).
 * **Apple Push Notification Service** – Informationen dazu finden Sie unter [APNs Overview](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html).
 * **Google Cloud Messaging** – Informationen dazu finden Sie unter [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/).
 
@@ -141,8 +141,8 @@ Im folgende Beispiel sind alle gültigen Plattform-IDs enthalten, die aktuell zu
 
 So suchen Sie nach den IDs
 
-* **windows_universal** – Geben Sie eine AUMID für jede UWP-App an. Weitere Informationen hierzu finden Sie unter [Suche der Anwendungsbenutzermodell-ID einer installierten App (Branche 8.1)](https://docs.microsoft.com/de-DE/previous-versions/windows/embedded/dn449300(v=winembedded.82)) und [Anwendung](https://docs.microsoft.com/de-DE/uwp/schemas/appxpackage/appxmanifestschema/element-application).
-* **windows_win32** – Geben Sie eine AUMID für jede App an. Für win32-Apps müssen Sie ein Skript verwenden, um diese Informationen abzurufen. Weitere Informationen hierzu finden Sie unter [Suche der Anwendungsbenutzermodell-ID einer installierten App (Branche 8.1)](https://docs.microsoft.com/de-DE/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **windows_universal** – Geben Sie eine AUMID für jede UWP-App an. Weitere Informationen hierzu finden Sie unter [Suche der Anwendungsbenutzermodell-ID einer installierten App (Branche 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)) und [Anwendung](https://docs.microsoft.com/de-DE/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** – Geben Sie eine AUMID für jede App an. Für win32-Apps müssen Sie ein Skript verwenden, um diese Informationen abzurufen. Weitere Informationen hierzu finden Sie unter [Suche der Anwendungsbenutzermodell-ID einer installierten App (Branche 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
 * **Android-** – Weitere Informationen finden Sie unter [Ändern des Paketnamens](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **IOS** – Weitere Informationen finden Sie unter [Paket](https://developer.apple.com/documentation/foundation/bundle) und [Erforderliche, lokalisierbare und bearbeitbare Eigenschaften](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** – Melden Sie sich beim [App-Registrierungsportal](https://apps.dev.microsoft.com) an. Sie können die App-ID/Client-ID für Ihre Apps anzeigen. Sowohl Live SDK (Hexadezimalwerte) als auch zusammengeführte App-IDs (GUIDs) werden unterstützt.   

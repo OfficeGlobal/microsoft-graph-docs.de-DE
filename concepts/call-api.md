@@ -3,7 +3,7 @@ title: Aufrufen der Microsoft Graph-API
 description: 'Wenn Sie auf eine Microsoft Graph-Ressource zugreifen oder diese bearbeiten möchten, müssen Sie die Ressourcen-URLs aufrufen und festlegen, indem Sie einen der folgenden Vorgänge verwenden:   '
 ms.openlocfilehash: c8b678ce41488d6854e436e7dc5fc97989b54aee
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092234"

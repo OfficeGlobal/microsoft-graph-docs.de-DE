@@ -3,7 +3,7 @@ title: Verwenden einer Delta-Abfrage zum Nachverfolgen von Änderungen in Micros
 description: Mit der Delta-Abfrage können Anwendungen neu erstellte, aktualisierte oder gelöschte Entitäten ermitteln, ohne die Zielressource bei jeder Anforderung vollständig lesen zu müssen. Mit der Delta-Abfrage können Microsoft Graph-Anwendungen Änderungen effizient mit einem lokalen Datenspeicher synchronisieren.
 ms.openlocfilehash: 4732cabed3595738b70c54a7a029f19400edbe6f
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092327"

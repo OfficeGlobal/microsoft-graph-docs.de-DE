@@ -3,7 +3,7 @@ title: 'Verwenden von div-Tags der OneNote-API zum Extrahieren von Daten aus Erf
 description: " Enterprise-Notizbücher in Office 365"
 ms.openlocfilehash: 201c20261d47e66df877e0138670b96ee377b7cb
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092237"

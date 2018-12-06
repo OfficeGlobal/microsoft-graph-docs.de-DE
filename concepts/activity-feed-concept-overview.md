@@ -3,7 +3,7 @@ title: Verwenden der Aktivitätsfeed-API in Microsoft Graph zur Erstellung ger�
 description: Wenn Sie Aktivitäten verwenden, können diese Microsoft-Oberflächen zu einer größeren Akzeptanz Ihrer App führen. Die Anzeige von Aktivitäten in Apps kann Benutzern außerdem helfen, genau dort weiterzumachen, wo sie zuvor aufgehört haben – auf jedem Gerät und auf jeder Plattform, inklusive Windows, Android und iOS.
 ms.openlocfilehash: 768326a5a18962f28aebe2e66b7dbd2a95b1a7bb
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092153"

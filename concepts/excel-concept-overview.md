@@ -3,7 +3,7 @@ title: Übersicht über Excel-Arbeitsmappen und die Diagramme-API
 description: Excel ist eine unentbehrliches Produktivitätswerkzeug. Benutzer in allen Branchen und aller Hierarchieebenen nutzen das Programm als Werkzeug zum Speichern, Nachverfolgen und Bearbeiten aller Arten von Daten. Excel wird für alle möglichen Aufgaben verwendet, von der einfachen Aufgabennachverfolgung und Datenverwaltung bis hin zu komplexen Berechnungen und professioneller Berichterstellung. Sie können die Excel-REST-API in Microsoft Graph verwenden, um den Wert Ihrer Daten, Berichte und Dashboards noch zu erhöhen.
 ms.openlocfilehash: 4d433b4b84bab2fc6a75cf8d0020d715a030683b
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092343"

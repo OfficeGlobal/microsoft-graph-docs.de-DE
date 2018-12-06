@@ -3,7 +3,7 @@ title: Konfigurieren der integrierten Registerkartentypen in Microsoft Teams
 description: 'Um eine Microsoft Teams-Registerkarte mithilfe von Microsoft Graph-APIs zu erstellen oder zu konfigurieren, '
 ms.openlocfilehash: 2485e65ebac0c7201fe8b8210f8e4af9b9c8f164
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092205"
@@ -15,7 +15,7 @@ In diesem Artikel wird erläutert, wie Sie diese Werte für die integrierten Reg
 
 ## <a name="custom-tabs"></a>Benutzerdefinierte Registerkarten
 
-Um Microsoft Graph zum Konfigurieren einer Registerkarte zu verwenden, die einem von Ihnen geschriebenen [Registerkartenanbieter](https://docs.microsoft.com/de-DE/microsoftteams/platform/concepts/tabs/tabs-overview)zugeordnet ist, identifizieren Sie die `entityId`, `contentUrl`, `removeUrl` und `websiteUrl`, die die [Konfigurations-Benutzeroberfläche für Microsoft Teams bereitstellt](https://docs.microsoft.com/de-DE/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest), und übergeben Sie eben diese Werte für `entityId`, `contentUrl`, `removeUrl` und `websiteUrl` an Microsoft Graph.
+Um Microsoft Graph zum Konfigurieren einer Registerkarte zu verwenden, die einem von Ihnen geschriebenen [Registerkartenanbieter](https://docs.microsoft.com/de-DE/microsoftteams/platform/concepts/tabs/tabs-overview)zugeordnet ist, identifizieren Sie die `entityId`, `contentUrl`, `removeUrl` und `websiteUrl`, die die [Konfigurations-Benutzeroberfläche für Microsoft Teams bereitstellt](https://docs.microsoft.com/en-us/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest), und übergeben Sie eben diese Werte für `entityId`, `contentUrl`, `removeUrl` und `websiteUrl` an Microsoft Graph.
 
 Die `teamsAppId` ist die gleiche wie die `id` im [App-Manifestschema für Microsoft Teams](https://docs.microsoft.com/de-DE/microsoftteams/platform/resources/schema/manifest-schema).
 

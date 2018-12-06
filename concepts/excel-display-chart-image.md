@@ -3,7 +3,7 @@ title: Anzeigen eines Diagrammbilds in Excel mithilfe von Microsoft Graph
 description: Wenn Sie einen GET-Vorgang zum Abrufen eines Diagrammbilds ausführen, gibt die Excel-API das Bild als Base-64-Zeichenfolge zurück.
 ms.openlocfilehash: ae721547fca9a6fe835843544bf550c5fe222426
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092319"

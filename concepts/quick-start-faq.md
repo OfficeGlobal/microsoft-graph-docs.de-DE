@@ -3,7 +3,7 @@ title: Microsoft Graph-Schnellstart – Häufig gestellte Fragen
 description: In den häufig gestellten Fragen werden Fragen im Zusammenhang mit den Microsoft Graph-Schnellstarts beantwortet.
 ms.openlocfilehash: 90e16a340d4dbb337cbe0af5f799476b28eba200
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092263"

@@ -3,7 +3,7 @@ title: Leitfaden zu Einschränkungen in Microsoft Graph
 description: Durch Einschränkungen wird die Anzahl der gleichzeitigen Aufrufe an einen Dienst begrenzt, um eine Überlastung von Ressourcen zu verhindern. Microsoft Graph ist für die Verarbeitung einer großen Menge von Anforderungen konzipiert. Wenn die Anzahl der Anforderungen jedoch zu hoch ist und zu einer Überlastung führen könnte, können Einschränkungen dazu beitragen, die optimale Leistung und Zuverlässigkeit des Microsoft Graph-Diensts aufrechtzuerhalten.
 ms.openlocfilehash: dfe7fed3efc01932137df00d6d62ad069faf64cd
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092212"

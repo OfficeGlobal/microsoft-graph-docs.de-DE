@@ -3,7 +3,7 @@ title: Verwenden von Abfrageparametern zum Anpassen von Antworten
 description: Microsoft Graph stellt optionale Abfrageparameter bereit, die Sie zum Festlegen und Steuern der in einer Antwort zurückgegebenen Datenmenge verwenden können. Die folgenden Abfrageparameter werden unterstützt.
 ms.openlocfilehash: e41a6e8d9cc42506985bd82f00bcdc4efaec8add
 ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/30/2018
 ms.locfileid: "27092347"
@@ -233,7 +233,7 @@ Weitere Informationen zu durchsuchbaren E-Mail-Eigenschaften, zu KQL-Syntax, unt
 - [Syntaxreferenz für die Keyword Query Language (KQL)](https://docs.microsoft.com/de-DE/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 - 
-  [Nachrichteneigenschaften und Suchoperatoren für In-Situ-eDiscovery in Exchange 2016](https://technet.microsoft.com/de-DE/library/dn774955(v=exchg.160).aspx)
+  [Nachrichteneigenschaften und Suchoperatoren für In-Situ-eDiscovery in Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>Verwenden von $search in Personensammlungen
 

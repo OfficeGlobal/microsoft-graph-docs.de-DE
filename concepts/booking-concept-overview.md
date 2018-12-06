@@ -3,7 +3,7 @@ title: Übersicht über die Microsoft Bookings-API (Vorschau)
 description: Microsoft Bookings bietet Online- und Mobilgeräte-Apps, die das Planen von Terminen für kleine Unternehmen und ihre Kunden vereinfachen. Kleine Unternehmen, die ihre Services auf Terminbasis anbieten, wie z. B. Autowerkstätten, Frisörsalons und Anwaltskanzleien, können von der Verwaltung ihrer Terminvereinbarungen profitieren, da sie so ihre Zeit mit wichtigeren Aufgaben verbringen können, um ihr Geschäft voranzutreiben. Microsoft Bookings steht für Unternehmen mit einem Office 365 Business Premium-Abonnement zur Verfügung.
 ms.openlocfilehash: 334b26b5f02e7060b0fddfe8264e138e9d3a2bdc
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092286"
@@ -39,6 +39,6 @@ Weitere Informationen finden Sie unter [Microsoft Bookings-API in Microsoft Grap
 Weitere Informationen:
 
 - 
-  [Microsoft Bookings](https://support.office.com/de-DE/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) und andere [Office 365-Apps für Unternehmen](https://support.office.com/de-DE/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
+  [Microsoft Bookings](https://support.office.com/de-DE/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) und andere [Office 365-Apps für Unternehmen](https://support.office.com/en-us/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
 - [Verwenden der Bookings-API](/graph/api/resources/booking-api-overview?view=graph-rest-beta) in Microsoft Graph.
 

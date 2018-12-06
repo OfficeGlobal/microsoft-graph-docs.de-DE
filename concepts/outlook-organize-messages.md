@@ -3,7 +3,7 @@ title: Organisieren von Outlook-Nachrichten
 description: 'In Outlook können Kunden ihre Nachrichten so organisieren, wie sie möchten: alle Nachrichten im gleichen Posteingangsordner, oder Nachrichten werden in Abhängigkeit von den jeweiligen Anforderungen in einer Ordnerstruktur unter dem Posteingang gespeichert. Sie können Nachrichten des Benutzers bequem filtern, suchen oder sortieren.'
 ms.openlocfilehash: 870da6cfed6bc286c0e9869dd98220d260b1e7ad
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092287"
