@@ -1,12 +1,12 @@
 ---
 title: Abrufen von governanceResource
 description: Rufen Sie die Eigenschaften und die Beziehungen eines GovernanceResource-Objekts ab.
-ms.openlocfilehash: d871dbe91b82cebc01a8c282c0afdfbd8701c8f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 55fcea026a2816f33ab6064ea5828d3af4526690
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058593"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191081"
 ---
 # <a name="get-governanceresource"></a>Abrufen von governanceResource
 
@@ -72,7 +72,8 @@ Content-Length: 459
     "type": "subscription",
     "displayName": "Wingtip Toys - Prod",
     "status": "Active",
-    "onboardDateTime": "2018-04-05T22:30:37.13Z"
+    "registeredDateTime": "2018-04-05T22:30:37.13Z",
+    "registeredRoot": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d",    
 }
 ```
 

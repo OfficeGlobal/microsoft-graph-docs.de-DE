@@ -1,12 +1,12 @@
 ---
 title: Ressourcentyp governanceRoleAssignmentRequest
 description: Stellt die Anforderung für Role Assignment Vorgänge in Privilegd Identity Management.
-ms.openlocfilehash: 4b19ed04b4c78fa084c1247fc1798a39b08c3fdb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b3f3c7b3ec324b9b3df24cc0c53eaa6d1cda7a4c
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27057944"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191123"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>Ressourcentyp governanceRoleAssignmentRequest
 
@@ -23,7 +23,7 @@ Stellt die Anforderung für Role Assignment Vorgänge in Privilegd Identity Mana
 |[Get](../api/governanceroleassignmentrequest-get.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Abrufen einer Rolle Zuordnung Anforderung durch ID angegebenen  
 |[List](../api/governanceroleassignmentrequest-list.md) | [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) -Auflistung|Get-Role Assignment-Anforderungen für eine Ressource.|
 |[Create](../api/governanceroleassignmentrequest-post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Erstellen Sie eine Anforderung an den Lebenszyklus von vorhandenen oder neuen rollenzuweisung zu verwalten.|
-|[Cancel](../api/governanceroleassignmentrequest-cancel.md)|  |Ausstehende Role Assignment Anforderung abbrechen.|
+|[Abbrechen](../api/governanceroleassignmentrequest-cancel.md)|  |Ausstehende Role Assignment Anforderung abbrechen.|
 |[Update](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Administratoren aktualisieren die Entscheidung über die Anforderungen, wenn die Anforderungen in den Status der werden `PendingAdminDecision`.|
 
 ## <a name="properties"></a>Eigenschaften
@@ -36,8 +36,6 @@ Stellt die Anforderung für Role Assignment Vorgänge in Privilegd Identity Mana
 |Typ                       |Zeichenfolge         |Erforderlich. Darstellen der den Typ des Vorgangs für die rollenzuweisung. Der Wert kann sein <ul><li>`AdminAdd`: Administratoren Benutzer/Gruppen zu Rollen zuweisen;</li><li>`UserAdd`: Benutzer aktivieren zu auswählbaren Zuordnungen;</li><li> `AdminUpdate`: Administratoren Ändern vorhandener rollenzuweisungen</li><li>`AdminRemove`: Administratoren Benutzer/Gruppen aus Rollen entfernen;<li>`UserRemove`: Benutzer deaktivieren aktive Zuordnungen;<li>`UserExtend`: Benutzer erfordern, deren ablaufenden Aufgaben zu erweitern.</li><li>`AdminExtend`: Administratoren erweitern ablaufende Zuordnungen.</li><li>`UserRenew`: Benutzer anfordern, um deren abgelaufenen Aufgaben zu erneuern.</li><li>`AdminRenew`: Administratoren erweitern ablaufende Zuordnungen.</li></ul>|
 |assignmentState|Zeichenfolge  |Erforderlich. Der Status der Zuordnung. Der Wert kann sein <ul><li> `Eligible`für die Zuweisung von zu auswählbaren</li><li> `Active`-Wenn sie direkt zugeordnet ist `Active` von Administratoren, oder bei einer Zuordnung zu auswählbaren durch den Benutzer aktiviert.</li></ul>|
 |requestedDateTime          |DateTimeOffset |Schreibgeschützt. Die Zeit zu erstellen. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|roleAssignmentStartDateTime|DateTimeOffset |Die Startzeit für die rollenzuweisung. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|roleAssignmentEndDateTime|DateTimeOffset   |Die Endzeit für die rollenzuweisung. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |Zeitplan                   |[governanceSchedule](governanceschedule.md)|Das der Rolle Zuordnung Anforderung Zeitplan-Objekt.|
 |Grund                     |String         |Eine Nachricht stammt von Benutzern und Administratoren beim Erstellen der Anforderung zur, warum es erforderlich ist.|
 |status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |Der Status der Anforderung Zuordnung Rolle.|
@@ -74,8 +72,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "assignmentState": "String",
   "reason": "String",
   "requestedDateTime": "String (timestamp)",
-  "roleAssignmentStartDateTime": "String (timestamp)",
-  "roleAssignmentEndDateTime": "String (timestamp)",
   "schedule": {"@odata.type": "microsoft.graph.governanceSchedule"},
   "status": {"@odata.type": "microsoft.graph.governanceRoleAssignmentRequestStatus"},
   "linkedEligibleRoleAssignmentId": "String"

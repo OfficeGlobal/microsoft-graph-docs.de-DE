@@ -1,12 +1,12 @@
 ---
 title: Erstellen von governanceRoleAssignmentRequest
 description: Erstellen Sie eine Rolle Zuordnung Anforderung zur Darstellung der Operation in einer rollenzuweisung angezeigt werden soll. Die folgende Tabelle enthält die Vorgänge.
-ms.openlocfilehash: b0d9edab1182d4a6fa620cfb953df1cb8af20c66
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 775cc8e22e7d273bfe387e5be2cc183d3d919a38
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061016"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191172"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Erstellen von governanceRoleAssignmentRequest
 
@@ -42,17 +42,14 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /privilegedAccess/azureResources/roleAssignmentRequests
 ```
 
-## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode keine [OData-Abfrage-Parameter](/graph/query-parameters) **nicht** unterstützt.
-
-### <a name="request-headers"></a>Anforderungsheader
+## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 | Content-type  | application/json|
 
-### <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) -Objekts. 
+## <a name="request-body"></a>Anforderungstext
+Geben Sie im Textkörper Anforderung eine JSON-Darstellung eines [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) -Objekts. 
 
 | Eigenschaft     | Typ    |Erforderlich|  Beschreibung|
 |:---------------|:--------|:----------|:----------|
@@ -64,11 +61,11 @@ Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [GovernanceRoleAs
 |Grund|String| |Der Grund muss bereitgestellt werden, für die Rolle Zuordnung Anforderung zur Überwachung und Zweck überprüfen.|
 |Zeitplan|[governanceSchedule](../resources/governanceschedule.md)| | Den Zeitplan der Rolle Zuordnung Anforderung. Für Anforderungstyp `UserAdd`, `AdminAdd`, `AdminUpdate`, und `AdminExtend`, es ist erforderlich.|
 
-### <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201, Created` Antwortcode und eines [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) -Objekts in der Antworttext.
+## <a name="response"></a>Antwort
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) -Objekts in der Antworttext.
 
-## <a name="error-codes"></a>Fehlercodes
-Diese API folgt dem Standard von HTTP-Codes, zusätzlich zu den Fehlercodes, die in der folgenden Tabelle aufgeführt.
+### <a name="error-codes"></a>Fehlercodes
+Diese API gibt die standard-HTTP-Fehlercodes zurück. Darüber hinaus gibt auch die Fehlercodes in der folgenden Tabelle aufgeführten zurück.
 
 |Fehlercode     | Fehlermeldung              | Details |
 |:--------------------| :---------------------|:--------------------|
@@ -80,10 +77,13 @@ Diese API folgt dem Standard von HTTP-Codes, zusätzlich zu den Fehlercodes, die
 | 400 BadRequest | RoleAssignmentDoesNotExist    | Die [GovernanceRoleAssignment](../resources/governanceroleassignment.md) aktualisiert/erweitert werden angefordert ist im System nicht vorhanden.
 | 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | Die [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) entspricht nicht den Richtlinien für interne und kann nicht erstellt werden.
 
-## <a name="example-1"></a>Beispiel 1
+## <a name="examples"></a>Beispiele
+Die folgenden Beispiele zeigen, wie diese API verwendet.
+
+### <a name="example-1"></a>Beispiel 1
 In diesem Beispiel weisen Sie Administratoren Benutzer nawu@fimdev.net Rolle Abrechnung.
 
- >**Hinweis:** Neben der Berechtigung, dieses Beispiel erfordert den Requestor in mindestens einem `Active` Administrator rollenzuweisung (`owner` oder `user access administrator`) für die Ressource. 
+ >**Hinweis:** Neben der Berechtigung, dieses Beispiel erfordert, dass die anfordernde Person mindestens eine `Active` Administrator rollenzuweisung (`owner` oder `user access administrator`) für die Ressource. 
 
 | Eigenschaft     | Typ    |Erforderlich|  Wert |
 |:---------------|:--------|:----------|:----------|
@@ -137,8 +137,6 @@ Content-length: 226
     "type": "AdminAdd",
     "assignmentState": "Eligible",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": "2018-05-12T23:38:34.6007266Z",
-    "roleAssignmentEndDateTime": "2018-11-08T23:37:43.356Z",
     "reason": "Evaluate Only",
     "status": {
         "status": "InProgress",
@@ -167,7 +165,7 @@ Content-length: 226
 }
 ```
 
-## <a name="example-2"></a>Beispiel 2
+### <a name="example-2"></a>Beispiel 2
 In diesem Beispiel wird der Benutzer nawu@fimdev.net zu auswählbaren Abrechnung Rolle aktiviert.
 
 | Eigenschaft     | Typ    |Erforderlich|  Wert |
@@ -222,8 +220,6 @@ Content-type: application/json
     "type": "UserAdd",
     "assignmentState": "Active",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": "2018-05-12T23:29:29.5123911Z",
-    "roleAssignmentEndDateTime": "2018-05-13T08:28:43.537Z",
     "reason": "Activate the owner role",
     "status": {
         "status": "InProgress",
@@ -264,7 +260,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-3"></a>Beispiel 3
+### <a name="example-3"></a>Beispiel 3
 In diesem Beispiel deaktiviert die nawu@fimdev.net Benutzer die aktive Abrechnung Reader-Rolle.
 
 | Eigenschaft     | Typ    |Erforderlich|  Wert |
@@ -315,8 +311,6 @@ Content-length: 226
     "type": "UserRemove",
     "assignmentState": "Active",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": null,
-    "roleAssignmentEndDateTime": null,
     "reason": "Evaluate only",
     "schedule": null,
     "status": {
@@ -330,7 +324,7 @@ Content-length: 226
 ### <a name="example-4"></a>Beispiel 4
 In diesem Beispiel Entfernen von Administratoren die nawu@fimdev.net Benutzer aus der Rolle Leser Abrechnung.
 
- >**Hinweis:** Neben den Berechtigungsbereich erfordert in diesem Beispiel wird den Requestor in mindestens einem `Active` Administrator rollenzuweisung (`owner` oder `user access administrator`) für die Ressource.
+ >**Hinweis:** Neben der Berechtigung, dieses Beispiel erfordert, dass die anfordernde Person mindestens eine `Active` Administrator rollenzuweisung (`owner` oder `user access administrator`) für die Ressource.
  
 | Eigenschaft     | Typ    |Erforderlich|  Wert |
 |:---------------|:--------|:----------|:----------|
@@ -379,8 +373,6 @@ Content-length: 226
   "type":"AdminRemove",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":null,
-  "roleAssignmentEndDateTime":null,
   "reason":null,
   "status":{
     "status":"Closed",
@@ -394,7 +386,8 @@ Content-length: 226
 ### <a name="example-5"></a>Beispiel 5
 In diesem Beispiel aktualisieren Administratoren die rollenzuweisung für den Benutzer nawu@fimdev.net Besitzer.
 
- >**Hinweis:** Neben den Berechtigungsbereich erfordert in diesem Beispiel wird den Requestor in mindestens einem `Active` Administrator rollenzuweisung (`owner` oder `user access administrator`) für die Ressource. 
+ >**Hinweis:** Neben der Berechtigung, dieses Beispiel erfordert, dass die anfordernde Person mindestens eine `Active` Administrator rollenzuweisung (`owner` oder `user access administrator`) für die Ressource. 
+
 | Eigenschaft     | Typ    |Erforderlich|  Wert |
 |:---------------|:--------|:----------|:----------|
 |resourceId|String|Ja|\<resourceId\>|
@@ -447,8 +440,6 @@ Content-length: 226
   "type":"AdminUpdate",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":"2018-05-12T23:50:03.4755896Z",
-  "roleAssignmentEndDateTime":"2018-06-05T05:42:31Z",
   "reason":null,
   "status":{
     "status":"InProgress",
@@ -475,7 +466,7 @@ Content-length: 226
 ### <a name="example-6"></a>Beispiel 6
 In diesem Beispiel wird erweitert die ablaufende rollenzuweisung für Benutzer ANUJCUSER API Management Service Mitwirkenden.
 
- >**Hinweis:** Neben den Berechtigungsbereich erfordert in diesem Beispiel wird den Requestor in mindestens einem `Active` Administrator rollenzuweisung (`owner` oder `user access administrator`) für die Ressource.
+ >**Hinweis:** In Additon die Berechtigung, dieses Beispiel erfordert, dass die anfordernde Person mindestens eine `Active` Administrator rollenzuweisung (`owner` oder `user access administrator`) für die Ressource.
  
 | Eigenschaft     | Typ    |Erforderlich|  Wert |
 |:---------------|:--------|:----------|:----------|
@@ -530,8 +521,6 @@ Content-length: 226
   "type":"AdminExtend",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":"2018-05-12T23:54:09.7221332Z",
-  "roleAssignmentEndDateTime":"2018-08-10T23:53:55.327Z",
   "reason":"extend role assignment",
   "status":{
     "status":"InProgress",

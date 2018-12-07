@@ -3,7 +3,7 @@ title: Aktualisieren eines Bereichsformats in Excel mit Microsoft Graph
 description: In den folgenden Beispielen wird veranschaulicht, wie die Eigenschaften der RangeFormat-, RangeFill- und RangeFont-Eigenschaften eines bestimmten Bereichs aktualisiert werden können.
 ms.openlocfilehash: 17c8a8cc8e20887329ff79b4983f69e25d1e2dee
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092180"

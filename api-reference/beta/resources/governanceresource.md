@@ -1,12 +1,12 @@
 ---
 title: Ressourcentyp governanceResource
 description: Stellt die Ressourcen, die von privilegierten Identity Management (PIM) verwaltet werden konnte. Für Azure Ressourcen können sie ein Abonnement, eine Ressourcengruppe und eine Ressource, z. B. einen virtuellen Computer, eine SQL-Datenbank sein.
-ms.openlocfilehash: 9e47f1295f9498796d51414a0a97acbe51fe1aae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 6a048680c3b9bb614287e764d547a20bd09b5d25
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062421"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191130"
 ---
 # <a name="governanceresource-resource-type"></a>Ressourcentyp governanceResource
 
@@ -21,6 +21,7 @@ Stellt die Ressourcen, die von privilegierten Identity Management (PIM) verwalte
 |:---------------|:--------|:----------|
 |[List](../api/governanceresource-list.md) | [GovernanceResource](../resources/governanceresource.md) -Auflistung|Eine Auflistung von Ressourcen, denen der Requestor Zugriff auf hat aufgelistet.|
 |[Get](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |Eigenschaften lesen und Beziehungen einer Ressource Entität nach Id angegeben.|
+|[Register](../api/governanceresource-register.md) | |Registrieren einer nicht verwalteten Azure-Abonnement oder Management-Gruppe zum PIM-Dienst. |
 
 Nicht `POST`, `PUT`, `PATCH`, `DELETE` werden unterstützt, auf `roleDefinitions` Entität-Set für jetzt.
 
@@ -28,11 +29,12 @@ Nicht `POST`, `PUT`, `PATCH`, `DELETE` werden unterstützt, auf `roleDefinitions
 | Eigenschaft          |Typ         |Beschreibung|
 |:------------------|:----------|:----------|
 |id                 |String     |Die Id der Ressource. Es ist im GUID-Format.|
-|externalId           |String   |Die externe Id der Ressource, seiner ursprüngliche-Id in der externen Datenbank darstellt. Beispielsweise kann ein Abonnement Ressource externe Id "/ Abonnements/c14ae696-5e0c-4e5d-88cc-bef6637737ac" sein. |
+|externalId           |String   |Die externe Id der Ressource, die im externen System seine ursprüngliche Id darstellt. Beispielsweise kann ein Abonnement Ressource externe Id "/ Abonnements/c14ae696-5e0c-4e5d-88cc-bef6637737ac" sein. |
 |Typ               |Zeichenfolge     |Erforderlich. Der Ressourcentyp. Beispielsweise könnte der Typ für Azure Ressourcen sein "Abonnements", "ResourceGroup", "Microsoft.Sql/server".|
 |displayName        |String     |Der Anzeigename der Ressource.|
 |status             |String     |Der Status einer bestimmten Ressource. Beispielsweise könnte darstellen, ob die Ressource oder nicht gesperrt ist (Werte: `Active` / `Locked`). Hinweis: Diese Eigenschaft kann in der Zukunft verlängert werden, um weitere Szenarien unterstützen.|
-|onboardDateTime|DateTimeOffset      |Es stellt das Datum / Uhrzeit, wann die Ressource beginnt von PIM verwaltet werden.|
+|registeredDateTime|DateTimeOffset      |Stellt das Datum / Uhrzeit, wann die Ressource in PIM registriert ist.|
+|registeredRoot|String      |Die ExternalId Stamm Bereichs, der Ressource, die im PIM registriert ist. Der Stammgültigkeitsbereich kann die übergeordnete, Bandrotationsschema oder einer höheren Vorgänger Ressourcen sein.|
 |roleAssignmentCount|Int32      |Optional. Die Anzahl der rollenzuweisungen für die angegebene Ressource. Wenn die Eigenschaft erhalten möchten, geben Sie explizit labeltags verwenden `$select=roleAssignmentCount` in der Abfrage.|
 |roleDefinitionCount|Int32      |Optional. Die Anzahl der Rollendefinitionen für die angegebene Ressource. Wenn die Eigenschaft erhalten möchten, geben Sie explizit labeltags verwenden `$select=roleDefinitionCount` in der Abfrage.|
 |permissions|[governancePermission](../resources/governancepermission.md)      |Optional. Es stellt den Status des Antragstellers Zugriff auf die Ressource. Wenn die Eigenschaft erhalten möchten, geben Sie explizit labeltags verwenden `$select=permissions` in der Abfrage.|
@@ -63,7 +65,9 @@ Es folgt eine JSON-Darstellung der Ressource.
   "externalId": "String",
   "type": "String",
   "displayName": "String",
-  "status": "String"
+  "status": "String",
+  "registeredDateTime": "String (timestamp)",
+  "registeredRoot": "String"
 }
 
 ```
