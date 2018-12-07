@@ -1,30 +1,30 @@
 ---
 title: Warnung erhalten
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: a3c8acb8ab748636d7a79b7ce3995a61699f7946
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 5f5a7330476de71308680b41e87e51d5d228b2e0
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059355"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184483"
 ---
-# <a name="get-alert"></a><span data-ttu-id="dcbb7-104">Warnung erhalten</span><span class="sxs-lookup"><span data-stu-id="dcbb7-104">Get alert</span></span>
+# <a name="get-alert"></a><span data-ttu-id="63c21-104">Warnung erhalten</span><span class="sxs-lookup"><span data-stu-id="63c21-104">Get alert</span></span>
 
- > <span data-ttu-id="dcbb7-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="dcbb7-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="dcbb7-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="dcbb7-106">Use of these APIs in production applications is not supported.</span></span>
+ > <span data-ttu-id="63c21-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="63c21-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="63c21-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="63c21-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="dcbb7-107">Rufen Sie die Eigenschaften und die Beziehungen eines [Benachrichtigung](../resources/alert.md) -Objekts ab.</span><span class="sxs-lookup"><span data-stu-id="dcbb7-107">Retrieve the properties and relationships of an [alert](../resources/alert.md) object.</span></span>
+<span data-ttu-id="63c21-107">Rufen Sie die Eigenschaften und die Beziehungen eines [Benachrichtigung](../resources/alert.md) -Objekts ab.</span><span class="sxs-lookup"><span data-stu-id="63c21-107">Retrieve the properties and relationships of an [alert](../resources/alert.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="dcbb7-108">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="dcbb7-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="63c21-108">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="63c21-108">Permissions</span></span>
 
-<span data-ttu-id="dcbb7-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dcbb7-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="63c21-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="63c21-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dcbb7-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="dcbb7-111">Permission type</span></span>      | <span data-ttu-id="dcbb7-112">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="dcbb7-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="63c21-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="63c21-111">Permission type</span></span>      | <span data-ttu-id="63c21-112">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="63c21-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="dcbb7-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="dcbb7-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="dcbb7-114">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dcbb7-114">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
-|<span data-ttu-id="dcbb7-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="dcbb7-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="dcbb7-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="dcbb7-116">Not supported.</span></span>  |
-|<span data-ttu-id="dcbb7-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="dcbb7-117">Application</span></span> | <span data-ttu-id="dcbb7-118">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dcbb7-118">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
+|<span data-ttu-id="63c21-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="63c21-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="63c21-114">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="63c21-114">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
+|<span data-ttu-id="63c21-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="63c21-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="63c21-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="63c21-116">Not supported.</span></span>  |
+|<span data-ttu-id="63c21-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="63c21-117">Application</span></span> | <span data-ttu-id="63c21-118">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="63c21-118">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="dcbb7-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="dcbb7-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="63c21-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="63c21-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -32,25 +32,25 @@ ms.locfileid: "27059355"
 GET /security/alerts/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="dcbb7-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="dcbb7-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="63c21-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="63c21-120">Request headers</span></span>
 
-| <span data-ttu-id="dcbb7-121">Name</span><span class="sxs-lookup"><span data-stu-id="dcbb7-121">Name</span></span>      |<span data-ttu-id="dcbb7-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="dcbb7-122">Description</span></span>|
+| <span data-ttu-id="63c21-121">Name</span><span class="sxs-lookup"><span data-stu-id="63c21-121">Name</span></span>      |<span data-ttu-id="63c21-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="63c21-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="dcbb7-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="dcbb7-123">Authorization</span></span>  | <span data-ttu-id="dcbb7-p104">Bearer {code}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="dcbb7-p104">Bearer {code}. Required.</span></span>|
+| <span data-ttu-id="63c21-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="63c21-123">Authorization</span></span>  | <span data-ttu-id="63c21-p104">Bearer {code}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="63c21-p104">Bearer {code}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="dcbb7-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="dcbb7-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="63c21-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="63c21-126">Request body</span></span>
 
-<span data-ttu-id="dcbb7-127">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="dcbb7-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="63c21-127">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="63c21-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="dcbb7-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="dcbb7-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="63c21-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="63c21-128">Response</span></span>
 
-<span data-ttu-id="dcbb7-129">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine **Warnung** -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="dcbb7-129">If successful, this method returns a `200 OK` response code and an **alert** object in the response body.</span></span> <span data-ttu-id="dcbb7-130">Wenn ein Statuscode als 2xx oder 404 von einem Anbieter zurückgegeben wird, oder wenn von ein Anbieter Zeitlimit überschritten, die Antwort werden eine `206 Partial Content` Statuscode mit der Antwort Anbieter in der Kopfzeile einer Warnung.</span><span class="sxs-lookup"><span data-stu-id="dcbb7-130">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the providers response in a warning header.</span></span> <span data-ttu-id="dcbb7-131">Weitere Informationen finden Sie unter [Microsoft Graph Security-API-Fehlerantworten](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="dcbb7-131">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
+<span data-ttu-id="63c21-129">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine **Warnung** -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="63c21-129">If successful, this method returns a `200 OK` response code and an **alert** object in the response body.</span></span> <span data-ttu-id="63c21-130">Wenn ein Statuscode als 2xx oder 404 von einem Anbieter zurückgegeben wird, oder wenn von ein Anbieter Zeitlimit überschritten, die Antwort werden eine `206 Partial Content` Statuscode mit der Anbieter Antwort in der Kopfzeile einer Warnung.</span><span class="sxs-lookup"><span data-stu-id="63c21-130">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="63c21-131">Weitere Informationen finden Sie unter [Microsoft Graph Security-API-Fehlerantworten](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="63c21-131">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="dcbb7-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="dcbb7-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="63c21-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="63c21-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="dcbb7-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="dcbb7-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="63c21-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="63c21-133">Request</span></span>
 
-<span data-ttu-id="dcbb7-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="dcbb7-134">The following is an example of the request.</span></span>
+<span data-ttu-id="63c21-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="63c21-134">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_alert"
@@ -60,9 +60,9 @@ GET /security/alerts/{id}
 GET https://graph.microsoft.com/beta/security/alerts/{id}
 ```
 
-### <a name="response"></a><span data-ttu-id="dcbb7-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="dcbb7-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="63c21-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="63c21-135">Response</span></span>
 
-<span data-ttu-id="dcbb7-136">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="dcbb7-136">The following is an example of the response.</span></span>
+<span data-ttu-id="63c21-136">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="63c21-136">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
