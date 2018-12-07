@@ -1,12 +1,12 @@
 ---
 title: Anmeldung Ressourcentyp
 description: 'Diese Ressource werden Benutzer oder eine Anwendung Anmeldung Aktivitäten in Ihrem Verzeichnis. '
-ms.openlocfilehash: 2bc6c8b961f0626a6409d9be868235f285f48e52
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f176f707e87b3e88292c32fba3748b9e70110e87
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065006"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184539"
 ---
 # <a name="signin-resource-type"></a>Anmeldung Ressourcentyp
 Diese Ressource werden Benutzer oder eine Anwendung Anmeldung Aktivitäten in Ihrem Verzeichnis. 
@@ -23,12 +23,11 @@ Diese Ressource werden Benutzer oder eine Anwendung Anmeldung Aktivitäten in Ih
 |:---------------|:--------|:----------|
 |appDisplayName|String|Bezieht sich auf den Namen der Anwendung in der Azure-Verwaltungsportal angezeigt.|
 |appId|Zeichenfolge|Bezieht sich auf die eindeutige GUID, die Id der Anwendung in Azure Active Directory darstellt.|
-|authenticationProcessingDetails|`authenticationProcessingDetails`|Ausführliche Authentifizierung Prozessor zugeordnet.|
 |clientAppUsed|String|Enthält den älteren Client für die Anmeldung activty.E.g verwendet. enthält Browser, Exchange Active Sync, moderne Clients, IMAP, MAPI, SMTP, POP.|
 |appliedConditionalAccessPolicy|[ConditionalAccessPolicy](conditionalaccesspolicy.md) -Auflistung|Enthält eine Liste der bedingten Zugriffsrichtlinien, die von der entsprechenden Anmeldung Aktivität ausgelöst werden.|
-|conditionalAccessStatus|string| Enthält den Status der bedingten Richtlinie ausgelöst. Mögliche Werte: sind `success`, `failure`, `notApplied` und `unknownFutureValue`.|
+|conditionalAccessStatus|Zeichenfolge| Enthält den Status der bedingten Richtlinie ausgelöst. Mögliche Werte: sind `success`, `failure`, `notApplied` und `unknownFutureValue`.|
 |originalRequestId|String|Die Anforderung-Id der ersten Anforderung in der Reihenfolge für die Authentifizierung.|
-|isInteractive|Boolesch|Gibt an, ob eine Anmeldung interaktiv ist.|
+|isInteractive|Boolescher Wert|Gibt an, ob eine Anmeldung interaktiv ist.|
 |tokenIssuerName|String|Name der Identität Provider (z. B. sts.microsoft.com)|
 |tokenIssuerType|String|Stellt den Typ des IdentityProvider bereit. Mögliche Werte sind `AzureAD`, `ADFederationServices`, `UnknownFutureValue`.|
 |correlationId|String|Bezieht sich auf die ID, die vom Client gesendet wird, wenn der Anmeldung gestartet wird. Hiermit wird die entsprechende Aktivität-Anmeldung beim Aufrufen von Helpdesk oder Unterstützung bei der Problembehandlung.|
@@ -41,11 +40,11 @@ Diese Ressource werden Benutzer oder eine Anwendung Anmeldung Aktivitäten in Ih
 |riskDetail|`riskDetail`|Stellt die "Ursache" hinter einem bestimmten Zustand eines Benutzers riskant, Anmeldung oder ein Risikoereignis bereit. Die möglichen Werte sind: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Der Wert `none` bedeutet, dass keine Aktion in der Benutzer oder die Anmeldung bisher ausgeführt wurde.|
 |riskLevelAggregated|`riskLevel`|Enthält die aggregierten Risikostufe. Die möglichen Werte sind: `none`, `low`, `medium`, `high`, `hidden`, und `unknownFutureValue`. Der Wert `hidden` bedeutet, dass der Benutzer oder die Anmeldung wurde für den Schutz von Azure Active Directory-Identität nicht aktiviert.|
 |riskLevelDuringSignIn|`riskLevel`|Enthält die Risikostufe während der Anmeldung an. Die möglichen Werte sind: `none`, `low`, `medium`, `high`, `hidden`, und `unknownFutureValue`. Der Wert `hidden` bedeutet, dass der Benutzer oder die Anmeldung wurde für den Schutz von Azure Active Directory-Identität nicht aktiviert.|
-|riskEventTypes|`riskEventTypes`|Enthält eine Liste der Risiko Ereignistypen der Anmeldung zugeordnet. Die möglichen Werte sind: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecurePasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`und `unknownFutureValue`. Der Wert `hidden` bedeutet, dass der Benutzer oder die Anmeldung wurde für den Schutz von Azure Active Directory-Identität nicht aktiviert.|
+|riskEventTypes|`riskEventTypes`|Enthält eine Liste der Risiko Ereignistypen der Anmeldung zugeordnet. Die möglichen Werte sind: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`, `generic`, und `unknownFutureValue`.|
 |riskState|`riskState`|Stellt den 'Risiko Zustand"eines Benutzers riskant, Anmeldung oder ein Risikoereignis bereit. Die möglichen Werte sind: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |mfaDetail|[mfaDetail](mfadetail.md)|Enthält die mehrstufiger Authentifizierung das weiterführende Informationen wie mehrstufiger Authentifizierung das erforderlich, mehrstufiger Authentifizierung das Status für die entsprechenden anmelden.|
 |networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|Enthält Informationen zu den Speicherort im Netzwerk.|
-|riskLevel|string| Enthält die Risikostufe der Anmeldung zugeordnet. Mögliche Werte sind: `low`, `medium`, `high`.|
+|riskLevel|Zeichenfolge| Enthält die Risikostufe der Anmeldung zugeordnet. Mögliche Werte sind: `low`, `medium`, `high`.|
 |status|[signInStatus](signinstatus.md)|Enthält die Anmeldestatus. Mögliche Werte sind `Success` und `Failure`.|
 |userDisplayName|String|Gibt die Anzeige des Benutzers an.|
 |userId|String|Gibt die Benutzer-ID des Benutzers an.|
@@ -91,7 +90,14 @@ Es folgt eine JSON-Darstellung der Ressource.
   "tokenIssuerType": "String",
   "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
   "location": {"@odata.type": "microsoft.graph.signInLocation"},
-  "riskLevel": "string",
+  "riskDetail": "string",
+  "riskLevelAggregated": "string",
+  "riskLevelDuringSignIn": "string",
+  "riskState": "string",
+  "riskEventTypes": "string",
+  "resourceDisplayName": "string",
+  "resourceId": "string",
+  "authenticationMethodsUsed": "string",
   "status": {"@odata.type": "microsoft.graph.signInStatus"},
 }
 

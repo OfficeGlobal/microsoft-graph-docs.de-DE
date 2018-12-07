@@ -1,12 +1,12 @@
 ---
 title: Warnung erhalten
 description: " Rufen Sie die Eigenschaften und die Beziehungen eines alert-Objekts ab."
-ms.openlocfilehash: b5e85fe33f4896714c4100c22a26417091d154ee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b2c823257ffcb398639a89627b3a0e1cb407e085
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019098"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184476"
 ---
 # <a name="get-alert"></a>Warnung erhalten
 
@@ -42,7 +42,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine **Warnung** -Objekts in der Antworttext. Wenn ein Statuscode als 2xx oder 404 von einem Anbieter zurückgegeben wird, oder wenn von ein Anbieter Zeitlimit überschritten, die Antwort werden eine `206 Partial Content` Statuscode mit der Antwort Anbieter in der Kopfzeile einer Warnung. Weitere Informationen finden Sie unter [Microsoft Graph Security-API-Fehlerantworten](../resources/security-error-codes.md).
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine **Warnung** -Objekts in der Antworttext. Wenn ein Statuscode als 2xx oder 404 von einem Anbieter zurückgegeben wird, oder wenn von ein Anbieter Zeitlimit überschritten, die Antwort werden eine `206 Partial Content` Statuscode mit der Anbieter Antwort in der Kopfzeile einer Warnung. Weitere Informationen finden Sie unter [Microsoft Graph Security-API-Fehlerantworten](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Beispiel
 

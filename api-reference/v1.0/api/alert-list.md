@@ -1,12 +1,12 @@
 ---
 title: Warnungen auflisten
 description: Abrufen einer Liste der alert-Objekten.
-ms.openlocfilehash: c25784f62d37722fc997e57b9f15c9857133b964
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 07dcdd4279ef0f258396bbfa6ecc0fc15cbd7ef0
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018783"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184525"
 ---
 # <a name="list-alerts"></a>Warnungen auflisten
 
@@ -47,6 +47,8 @@ Diese Methode unterstützt die folgenden [Parameter für OData-Abfrage](/graph/q
 
 Um eine alternative Eigenschaftensatz zurückzugeben, verwenden Sie die OData `$select` Abfragen Parameter, um die Gruppe von Eigenschaften der **Benachrichtigung** an, Sie werden soll.  Wenn **AssignedTo**, **Kategorie**und **Schweregrad** Eigenschaften zurückgeben möchten, fügen Sie beispielsweise die folgenden für Ihre Abfrage: `$select=assignedTo,category,severity`.
 
+> **Hinweis:** `$top` darf maximal 1000 Warnungen und eine Kombination von `$top`  +  `$skip` 6000 Benachrichtigungen nicht überschreiten. Beispielsweise `/security/alerts?$top=10&$skip=5990` zurückgegebenen eine `200 OK` Antwortcode, aber `/security/alerts?$top=10&$skip=5991` zurückgegebenen eine `400 Bad Request` Antwortcode.  Weitere Informationen finden Sie unter [Microsoft Graph Security-API-Fehlerantworten](../resources/security-error-codes.md).
+
 ## <a name="request-headers"></a>Anforderungsheader
 
 | Name      |Beschreibung|
@@ -59,7 +61,7 @@ Geben Sie für diese Methode keinen Anforderungstext an. Textkörper der Anforde
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und Auflistung von Objekten im Antworttext **Benachrichtigung** . Wenn ein Statuscode als 2xx oder 404 von einem Anbieter zurückgegeben wird, oder wenn von ein Anbieter Zeitlimit überschritten, die Antwort werden eine `206 Partial Content` Statuscode mit der Antwort Anbieter in der Kopfzeile einer Warnung. Weitere Informationen finden Sie unter [Microsoft Graph Security-API-Fehlerantworten](../resources/security-error-codes.md).
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und Auflistung von Objekten im Antworttext **Benachrichtigung** . Wenn ein Statuscode als 2xx oder 404 von einem Anbieter zurückgegeben wird, oder wenn von ein Anbieter Zeitlimit überschritten, die Antwort werden eine `206 Partial Content` Statuscode mit der Anbieter Antwort in der Kopfzeile einer Warnung. Weitere Informationen finden Sie unter [Microsoft Graph Security-API-Fehlerantworten](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Beispiel
 

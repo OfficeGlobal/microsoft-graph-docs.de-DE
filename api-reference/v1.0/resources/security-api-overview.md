@@ -1,14 +1,14 @@
 ---
-title: Verwenden Sie die Microsoft Graph-Sicherheit API
+title: Verwenden der Sicherheits-API von Microsoft Graph
 description: 'Die Microsoft Graph-Security-API bietet eine einheitliche Schnittstelle und Schema für die Integration der Sicherheitsfunktionen von Microsoft und Ökosystems Partnern. Dies ermöglicht Kunden Sicherheit Geschäftsabläufe zu optimieren und besser Schutz gegen Bedrohungen im Internet zu erhöhen. Sicherheit-API von Microsoft Graph kann zum Senden von Abfragen an alle Onboarded Sicherheitsanbieter abzurufenden aggregierte Antworten als ein Verbundbenutzer Aggregation Sicherheitsdienst verwendet werden. Verwenden von Microsoft Graph Sicherheit API Anwendungen erstellen, die:'
-ms.openlocfilehash: 511abbc6221ee9efb58cbfb36082514d98f9b918
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b675ecd66081aec29f2727a394a91d9e2ee5fd5b
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020116"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184518"
 ---
-# <a name="use-the-microsoft-graph-security-api"></a>Verwenden Sie die Microsoft Graph-Sicherheit API
+# <a name="use-the-microsoft-graph-security-api"></a>Verwenden der Sicherheits-API von Microsoft Graph
 
 Die Microsoft Graph-Security-API bietet eine einheitliche Schnittstelle und Schema für die Integration der Sicherheitsfunktionen von Microsoft und Ökosystems Partnern. Dies ermöglicht Kunden Sicherheit Geschäftsabläufe zu optimieren und besser Schutz gegen Bedrohungen im Internet zu erhöhen. Sicherheit-API von Microsoft Graph kann zum Senden von Abfragen an alle Onboarded Sicherheitsanbieter abzurufenden aggregierte Antworten als ein Verbundbenutzer Aggregation Sicherheitsdienst verwendet werden. Verwenden von Microsoft Graph Sicherheit API Anwendungen erstellen, die:
 
@@ -25,14 +25,14 @@ Bei Benachrichtigungen handelt es sich um potenzielle Sicherheitsrisiken innerha
 
 Microsoft Graph Sicherheit Language-integrated Lösungen werden von die folgenden Sicherheitsanbieter Benachrichtigungen erhalten:
 
-- Azure-Sicherheitscenter
-- Azure Active Directory-Schutz
-- Azure Information Protection
-- Microsoft-Cloud-Anwendungssicherheit
-- Windows-Defender erweiterte Schutz
-- Microsoft Intune (private Preview)
-- Office 365 (bald verfügbar)
-- Azure erweiterte Threat Protection (bald verfügbar)
+- [Azure-Sicherheitscenter](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)
+- [Azure Active Directory-Schutz](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook)
+- [Microsoft-Cloud-Anwendungssicherheit](https://docs.microsoft.com/cloud-app-security/monitor-alerts )
+- [Windows-Defender erweiterte Schutz](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)
+- [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(Vorschau)**
+- Microsoft Intune **(private Preview)**
+- Office 365 **(bald verfügbar)**
+- Azure erweiterte Threat Protection **(bald verfügbar)**
 - Partnerlösungen wie Palo auch Netzwerke App-Framework
 
 > **Hinweis:** Neue Anbieter sind kontinuierlich Onboarding auf das Microsoft Graph Security-Ökosystem.
