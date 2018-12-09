@@ -3,19 +3,19 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Konvertieren in andere Formate
-ms.openlocfilehash: f3dfe3b01cac66754b9a8151a2bb46adee157741
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: d5fbeeb28e2c0d2bf23652f451f87d12b1a06435
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017285"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209705"
 ---
 # <a name="download-a-file-in-another-format"></a>Herunterladen einer Datei in einem anderen Format
 
 Mithilfe dieser API können Sie den Inhalt eines Elements in einem bestimmten Format abrufen.
 Nicht jede Datei kann in sämtliche Formate konvertiert werden.
 
-Wie Sie das Element in seinem ursprünglichen Format herunterladen können, erfahren Sie unter [Herunterladen des Inhalts von OneDrive-Elementen](driveitem-get-content.md).
+Wenn das Element im Originalformat herunterladen möchten, finden Sie unter [Herunterladen der Inhalt des Elements](driveitem-get-content.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -76,7 +76,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 
 ### <a name="error-responses"></a>Fehlerantworten
 
-Weitere Informationen dazu, wie Fehler zurückgegeben werden, finden Sie unter [Fehlerantworten][error-response].
+Weitere Informationen dazu, wie Fehler zurückgegeben werden, finden Sie im unter [Fehlerantworten][error-response].
 
 [error-response]: /graph/errors
 [file-facet]: ../resources/file.md

@@ -1,18 +1,18 @@
 ---
-title: Erstellen von Teams
-description: Erstellen Sie ein neues Team unter einer Gruppe.
-ms.openlocfilehash: 2e0331724006d18a0c02227427e7251b1d7e096d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+title: Erstellen von Teams aus Gruppe
+description: Erstellen Sie ein neues Team aus einer Gruppe.
+ms.openlocfilehash: 50915ff025a724565f1eaa4c37a01942133f9e4f
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065018"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209670"
 ---
-# <a name="create-team"></a>Erstellen von Teams
+# <a name="create-team-from-group"></a>Erstellen von Teams aus Gruppe
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-Erstellen Sie ein neues [Team](../resources/team.md) unter einer [Gruppe](../resources/group.md).
+Erstellen Sie ein neues [Team](../resources/team.md) aus einer [Gruppe](../resources/group.md).
 
 Um ein Team zu erstellen, muss die Gruppe einen mindestens einen Besitzer haben.
 
@@ -38,7 +38,7 @@ PUT /groups/{id}/team
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |
@@ -83,7 +83,7 @@ Content-type: application/json
 
 Nachfolgend sehen Sie ein Beispiel der Antwort. 
 
->**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+>**Hinweis:** Das hier gezeigte Antwortobjekt wurde möglicherweise zur besseren Lesbarkeit gekürzt. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "ignored",
   "truncated": true,

@@ -6289,6 +6289,8 @@ items:
                 href: api/device-post-registeredowners.md
               - name: Registrierten Benutzer erstellen
                 href: api/device-post-registeredusers.md
+              - name: Liste Gerätegruppen
+                href: api/device-list-memberof.md
           - name: Directory-Objekt
             href: resources/directoryobject.md
             items:
@@ -7411,6 +7413,8 @@ items:
             href: resources/team.md
             items:
               - name: Erstellen von Teams
+                href: api/team-post.md
+              - name: Erstellen von Teams aus Gruppe
                 href: api/team-put-teams.md
               - name: Get-team
                 href: api/team-get.md

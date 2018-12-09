@@ -1,12 +1,12 @@
 ---
 title: Abrufen von riskyUsers
 description: Rufen Sie die Eigenschaften und die Beziehungen eines **RiskyUsers** -Objekts ab.
-ms.openlocfilehash: f0a6ac24bf66184d0547e9284f5a35b84b9358b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 7212e99e53d990df9cd9fea7dae754a693edc745
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059132"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209684"
 ---
 # <a name="get-riskyusers"></a>Abrufen von riskyUsers
 
@@ -18,7 +18,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | IdentityrRskyUser.Read.All    |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | IdentityRiskyUser.Read.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
 |Anwendung | IdentityRiskyUser.Read.All |
 
