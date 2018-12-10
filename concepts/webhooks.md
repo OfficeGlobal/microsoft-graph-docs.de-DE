@@ -1,12 +1,12 @@
 ---
 title: Einrichten von Benachrichtigungen für Änderungen der Benutzerdaten
 description: Die Microsoft Graph-API verwendet einen Webhook-Mechanismus zum Übermitteln von Benachrichtigungen an Clients. Ein Client ist ein Webdienst, der eine eigene URL zum Empfangen von Benachrichtigungen konfiguriert. Client-Apps verwenden Benachrichtigungen, um bei Änderungen ihren Status zu aktualisieren.
-ms.openlocfilehash: faaa1be8330118f1cbebf5362903f0e114816b67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e9c0c33aa18735d183d88836d33a99c8f12da560
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092316"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184546"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Einrichten von Benachrichtigungen für Änderungen der Benutzerdaten
 
@@ -97,6 +97,8 @@ Content-Type: application/json
 ```
 
 Die Eigenschaften `changeType`, `notificationUrl`, `resource` und `expirationDateTime` sind erforderlich. Unter [subscription-Ressourcentyp](/graph/api/resources/subscription?view=graph-rest-1.0) finden Sie die Eigenschaftsdefinitionen und Werte.
+
+Die Eigenschaft `resource` gibt die Ressource an, deren Änderungen überwacht werden. Sie können z. B. ein Abonnement für einen bestimmten E-Mail-Ordner erstellen: `me/mailFolders('inbox')/messages` oder im Auftrag eines Benutzers mit der Zustimmung eines Administrators: `users/john.doe@onmicrosoft.com/mailFolders('inbox')/messages`.
 
 `clientState` ist zwar nicht erforderlich, muss aber eingeschlossen werden, um unserem empfohlenen Prozess zum Umgang mit Benachrichtigungen zu entsprechen. Durch das Festlegen dieser Eigenschaft können Sie bestätigen, dass die empfangenen Benachrichtigungen vom Microsoft Graph-Dienst stammen. Aus diesem Grund muss der Wert der Eigenschaft geheim bleiben und darf nur der Anwendung und dem Microsoft Graph-Dienst bekannt sein.
 
