@@ -1,12 +1,12 @@
 ---
 title: Ohne Benutzer zugreifen
 description: 'Einige Apps rufen Microsoft Graph mit ihrer eigenen Identität und nicht im Namen eines Benutzers auf. In vielen Fällen handelt es sich dabei um Hintergrunddienste oder Daemons, die auf einem Server ausgeführt werden, ohne dass ein Benutzer angemeldet ist. Ein Beispiel für eine solche App ist ein E-Mail-Archivierungsdienst, der nachts reaktiviert und ausgeführt wird. In einigen Fällen rufen Apps, bei deren Ausführung ein Benutzer angemeldet ist, Microsoft Graph auch unter ihrer eigenen Identität auf. Beispiel: Eine App muss Funktionen verwenden, die höhere Rechte in einer Organisation erfordern als diejenigen, die dem angemeldeten Benutzer zugewiesen sind.  '
-ms.openlocfilehash: 25eb9686153e997079de3f17f88d017c336d3a61
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 62bea47d8d4926a4d618ebc0c434b6fe2baad376
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092261"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222464"
 ---
 # <a name="get-access-without-a-user"></a>Ohne Benutzer zugreifen
 
@@ -121,7 +121,7 @@ Sie senden eine POST-Anforderung an den v2.0 `/token`-Endpunkt, um ein Zugriffst
 ```
 // Line breaks are for legibility only.
 
-POST /{tenant}/oauth2/v2.0/token HTTP/1.1
+POST https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token HTTP/1.1
 Host: login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 

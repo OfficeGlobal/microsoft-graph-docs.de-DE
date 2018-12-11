@@ -1,12 +1,12 @@
 ---
 title: Liste Kanäle
 description: Abrufen der Liste der Kanäle in dieser Gruppe.
-ms.openlocfilehash: a37ca4e6012dd287b1b637fe3ddb3cfc2aaf5518
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 024751f0d77889249d2f2dcf6b2bb1f709128db1
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059006"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222541"
 ---
 # <a name="list-channels"></a>Liste Kanäle
 
@@ -24,6 +24,8 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
 |Anwendung | Group.Read.All, Group.ReadWrite.All    |
 
+> **Hinweis**: Diese API unterstützt Administratorberechtigungen. Globale Administratoren und Microsoft-Teams Dienstadministratoren können Teams zugreifen, denen sie nicht Mitglied sind.
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -34,7 +36,7 @@ GET /teams/{id}/channels
 Diese Methode unterstützt die $filter $select, und $erweitern [OData-Abfrageparameter](/graph/query-parameters) helfen, die Antwort anzupassen.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

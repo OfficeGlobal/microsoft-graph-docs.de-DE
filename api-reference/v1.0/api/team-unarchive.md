@@ -1,12 +1,12 @@
 ---
 title: Entpackt team
 description: Wiederherstellen eines archivierten Teams. Dadurch wird die Möglichkeit zum Senden von Nachrichten und das Team Verhältnismäßigkeitsprinzips Mandanten und Team-Einstellungen Bearbeiten des Benutzers wiederhergestellt. Teams sind mithilfe des Archivs API archiviert.
-ms.openlocfilehash: 4a90be4c5b2488bf72123cabe1da3aacf856e9d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 7507a58ef75939110d0c740e20d8540838bda204
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017521"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222611"
 ---
 # <a name="unarchive-team"></a>Entpackt team
 
@@ -25,6 +25,8 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
 |Anwendung | Group.ReadWrite.All    |
 
+> **Hinweis**: Diese API unterstützt Administratorberechtigungen. Globale Administratoren und Microsoft-Teams Dienstadministratoren können Teams zugreifen, denen sie nicht Mitglied sind.
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -32,7 +34,7 @@ POST /teams/{id}/unarchive
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

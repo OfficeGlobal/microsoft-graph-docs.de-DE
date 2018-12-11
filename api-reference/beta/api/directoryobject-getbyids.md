@@ -1,12 +1,12 @@
 ---
 title: Directory-Objekte aus einer Liste von IDs abrufen
 description: Wählen Sie ' Abfrageoption ist nicht verfügbar für diesen Vorgang.
-ms.openlocfilehash: 87fa774910c1ea6795b6df65ee0f5538d12296bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e6f987a3269b209c5df71b4961cf73081286a76d
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059068"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222448"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Directory-Objekte aus einer Liste von IDs abrufen
 
@@ -16,7 +16,7 @@ Gibt die in einer Liste von IDs angegebenen Directory-Objekte zurück.  HINWEIS:
 
 Nachfolgend sind einige gängige Verwendungsmöglichkeiten für diese Funktion aufgeführt:
 
-* Auflösen von IDs, die von Funktionen zurückgegeben werden (die Sammlungen von IDs zurückgeben), z. B. [getMemberObjects](directoryobject-getmemberobjects.md) oder [getMemberGroups](directoryobject-getmembergroups.md) in ihre zugrunde liegenden Directory-Objekte.
+* Auflösen von IDs, die von Funktionen zurückgegeben werden (die Sammlungen von IDs zurückgeben), z. B. [getMemberObjects](/graph/api/directoryobject-getmemberobjects.md?view=graph-rest-beta) oder [getMemberGroups](/graph/api/directoryobject-getmembergroups.md?view=graph-rest-beta) in ihre zugrunde liegenden Directory-Objekte.
 * Auflösen von durch die Anwendung permanent in einem externen Speicher gespeicherten IDs in ihre zugrunde liegenden Verzeichnisobjekte
 
 ## <a name="permissions"></a>Berechtigungen
@@ -35,7 +35,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /directoryObjects/getById
+POST /directoryObjects/getByIds
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
@@ -52,7 +52,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Parameter   | Typ |Beschreibung|
 |:---------------|:--------|:----------|
 |ids|String collection| Eine Sammlung von IDs, für die Objekte zurückgegeben werden sollen. Sie können bis zu 1000 IDs angeben. |
-|types|String collection| Eine Auflistung von Ressourcentypen, die die Ressource zu durchsuchenden Sammlungen festlegt. Wenn nicht angegeben, ist die Standardeinstellung [DirectoryObject](../resources/directoryobject.md), die alle im Verzeichnis definierten Ressourcentypen enthält. Alle von abgeleitetes Objekt `directoryObject` können angegeben werden, in der Auflistung. Beispiel: [Benutzer](../resources/user.md), [Gruppe](../resources/group.md), [Gerät](../resources/device.md), und So weiter. Die Werte sind nicht Groß-/Kleinschreibung beachtet.|
+|types|String collection| Eine Auflistung von Ressourcentypen, die die Ressource zu durchsuchenden Sammlungen festlegt. Wenn nicht angegeben, ist die Standardeinstellung [DirectoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), die alle im Verzeichnis definierten Ressourcentypen enthält. Jedes Objekt, das von [DirectoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) abgeleitet wird, kann in der Auflistung angegeben werden. Beispiel: [Benutzer](/graph/api/resources/user?view=graph-rest-beta), [Gruppe](/graph/api/resources/group?view=graph-rest-beta), [Gerät](/graph/api/resources/device?view=graph-rest-beta), und So weiter. Suche nach Verweise mit einem Partner [Cloud Lösungsanbieter](https://partner.microsoft.com/en-us/cloud-solution-provider) Organisation [DirectoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta)angeben. Wenn nicht angegeben, ist die Standardeinstellung [DirectoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), die alle im Verzeichnis, außer für Verweise auf einer Partnerorganisation [Cloud Lösungsanbieter](https://partner.microsoft.com/en-us/cloud-solution-provider) definierten Ressourcentypen enthält. Die Werte sind nicht Groß-/Kleinschreibung beachtet.|
 
 ## <a name="response"></a>Antwort
 
@@ -64,7 +64,7 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das 
 
 <!-- {
   "blockType": "request",
-  "name": "directoryobject_getById"
+  "name": "directoryobject_getByIds"
 }-->
 
 ```http

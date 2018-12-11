@@ -1,12 +1,12 @@
 ---
 title: Registerkarte Channel hinzufügen
 description: 'Fügt (Pins) einer Registerkarte an den angegebenen Kanal innerhalb eines Teams. '
-ms.openlocfilehash: 1bf2021438cc9c0c74a2a4133e54a4fbc42fdf4d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: a32f0a289de08d49cfc12a9fa0cef60732f3364c
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018092"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222445"
 ---
 # <a name="add-tab-to-channel"></a>Registerkarte Channel hinzufügen
 
@@ -23,6 +23,8 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
 | Anwendung                            | Group.ReadWrite.All                         |
 
+> **Hinweis**: Diese API unterstützt Administratorberechtigungen. Globale Administratoren und Microsoft-Teams Dienstadministratoren können Teams zugreifen, denen sie nicht Mitglied sind.
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -30,7 +32,7 @@ POST /teams/{id}/channels/{id}/tabs
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

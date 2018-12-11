@@ -1,12 +1,12 @@
 ---
 title: Archiv-team
 description: 'Archivieren Sie das angegebene Team. '
-ms.openlocfilehash: 70a7015229784ffda78dc9020a0f847d68027d22
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 3e25a6b5cf5475eeacfb7b01e52775e0b483b2be
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058416"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222555"
 ---
 # <a name="archive-team"></a>Archiv-team
 
@@ -30,13 +30,15 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
 |Anwendung | Group.ReadWrite.All    |
 
+> **Hinweis**: Diese API unterstützt Administratorberechtigungen. Globale Administratoren und Microsoft-Teams Dienstadministratoren können Teams zugreifen, denen sie nicht Mitglied sind.
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{id}/archive
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

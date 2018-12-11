@@ -1,12 +1,12 @@
 ---
 title: Patch-Kanal
 description: Aktualisieren Sie die Eigenschaften des angegebenen Kanals.
-ms.openlocfilehash: 833b5cf4999f43e9de799691a9f6d7a98318d4fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: c7cc2db83fbab0e04f1620d71c4c7cf7a69b526f
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058317"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222380"
 ---
 # <a name="patch-channel"></a>Patch-Kanal
 
@@ -25,13 +25,15 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
 |Anwendung | Group.ReadWrite.All |
 
+> **Hinweis**: Diese API unterstützt Administratorberechtigungen. Globale Administratoren und Microsoft-Teams Dienstadministratoren können Teams zugreifen, denen sie nicht Mitglied sind.
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /teams/{id}/channels/{id}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

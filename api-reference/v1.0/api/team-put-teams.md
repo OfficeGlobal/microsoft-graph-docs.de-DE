@@ -1,12 +1,12 @@
 ---
 title: Erstellen von Teams
 description: Erstellen Sie ein neues Team unter einer Gruppe.
-ms.openlocfilehash: 7a51a9fd0d6252b6e29ab426d0b983e4cdeecefe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: d7afffb331bf4a1714083ebb5f95147ec48a65d0
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019283"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222548"
 ---
 # <a name="create-team"></a>Erstellen von Teams
 
@@ -28,6 +28,8 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
 |Anwendung | Group.ReadWrite.All |
 
+> **Hinweis**: Diese API unterstützt Administratorberechtigungen. Globale Administratoren und Microsoft-Teams Dienstadministratoren können Gruppen zugreifen, denen sie nicht Mitglied sind.
+
 ## <a name="http-request"></a>HTTP-Anforderung
 
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +40,7 @@ PUT /groups/{id}/team
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |
@@ -83,7 +85,7 @@ Content-type: application/json
 
 Nachfolgend sehen Sie ein Beispiel der Antwort. 
 
->**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+>**Hinweis:** Das hier gezeigte Antwortobjekt wurde möglicherweise zur besseren Lesbarkeit gekürzt. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "ignored",
   "truncated": true,

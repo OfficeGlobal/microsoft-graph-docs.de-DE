@@ -1,12 +1,12 @@
 ---
 title: Erste Registerkarte
 description: 'Abrufen der Eigenschaften und Beziehungen zwischen der angegebenen Registerkarte. '
-ms.openlocfilehash: 0a183d9bd55e0002a40335849549285d45fe9f69
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 6dcc850bb42487cd8ca7f9cc9f7330b59fa965cc
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016242"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222618"
 ---
 # <a name="get-tab"></a>Erste Registerkarte
 
@@ -23,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
 |Anwendung | Group.Read.All, Group.ReadWrite.All |
 
-> Nur die [Berechtigungen delegiert](/graph/permissions-reference) werden gegenwärtig unterstützt für diesen Vorgang.
+> **Hinweis**: Diese API unterstützt Administratorberechtigungen. Globale Administratoren und Microsoft-Teams Dienstadministratoren können Teams zugreifen, denen sie nicht Mitglied sind.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 ```http
@@ -35,7 +35,7 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 Diese Methode unterstützt die $select und $den [OData-Abfrageparameter](/graph/query-parameters) helfen, die Antwort anzupassen.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

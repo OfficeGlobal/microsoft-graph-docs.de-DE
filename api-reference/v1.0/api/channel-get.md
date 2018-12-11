@@ -1,12 +1,12 @@
 ---
 title: Abrufen von DDE-Kanal
 description: Rufen Sie die Eigenschaften und die Beziehungen eines Kanals ab.
-ms.openlocfilehash: 42f25d0866af9000cfb6f96952ac19e32af0e87c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: fd46e3f27c9da53a36107c3ec39c1ac5da1c0753
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016807"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222422"
 ---
 # <a name="get-channel"></a>Abrufen von DDE-Kanal
 
@@ -23,6 +23,8 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
 |Anwendung | Group.Read.All, Group.ReadWrite.All    |
 
+> **Hinweis**: Diese API unterstützt Administratorberechtigungen. Globale Administratoren und Microsoft-Teams Dienstadministratoren können Teams zugreifen, denen sie nicht Mitglied sind.
+
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -35,7 +37,7 @@ GET /teams/{id}/channels/{id}
 Diese Methode unterstützt die $filter $select, und $erweitern [OData-Abfrageparameter](/graph/query-parameters) helfen, die Antwort anzupassen.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

@@ -1,12 +1,12 @@
 ---
 title: Registerkarte "Aktualisieren"
 description: Aktualisieren Sie die Eigenschaften der angegebenen Registerkarte.
-ms.openlocfilehash: 6943e9ea4ff602b3fcd4dc8ac899d55cee120ecc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: bc25830411f93ed1644b86c1228f987c091db32a
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059727"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222562"
 ---
 # <a name="update-tab"></a>Registerkarte "Aktualisieren"
 
@@ -24,12 +24,15 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
 |Anwendung                            | Group.ReadWrite.All                         |
 
+> **Hinweis**: Diese API unterstützt Administratorberechtigungen. Globale Administratoren und Microsoft-Teams Dienstadministratoren können Teams zugreifen, denen sie nicht Mitglied sind.
+
 ## <a name="http-request"></a>HTTP-Anforderung
 ```http
 PATCH /teams/{id}/channels/{id}/tabs/{id}
 ```
+
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |
