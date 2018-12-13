@@ -1,30 +1,30 @@
 ---
 title: Liste apps im team
 description: Abrufen der Liste apps im angegebenen Team installiert.
-ms.openlocfilehash: 6a9deb01e4874861b798ffcae32bebd77899fad9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 214685302b9c3a09f06cb4d5c13525c222bf658f
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016643"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241048"
 ---
-# <a name="list-apps-in-team"></a><span data-ttu-id="442d8-103">Liste apps im team</span><span class="sxs-lookup"><span data-stu-id="442d8-103">List apps in team</span></span>
+# <a name="list-apps-in-team"></a><span data-ttu-id="61bd4-103">Liste apps im team</span><span class="sxs-lookup"><span data-stu-id="61bd4-103">List apps in team</span></span>
 
 
 
-<span data-ttu-id="442d8-104">Abrufen der Liste der in das angegebene [Team](../resources/team.md) [apps installiert](../resources/teamsappinstallation.md) .</span><span class="sxs-lookup"><span data-stu-id="442d8-104">Retrieve the list of [apps installed](../resources/teamsappinstallation.md) in the specified [team](../resources/team.md).</span></span>
+<span data-ttu-id="61bd4-104">Abrufen der Liste der in das angegebene [Team](../resources/team.md) [apps installiert](../resources/teamsappinstallation.md) .</span><span class="sxs-lookup"><span data-stu-id="61bd4-104">Retrieve the list of [apps installed](../resources/teamsappinstallation.md) in the specified [team](../resources/team.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="442d8-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="442d8-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="61bd4-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="61bd4-105">Permissions</span></span>
 
-<span data-ttu-id="442d8-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="442d8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="61bd4-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="61bd4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="442d8-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="442d8-108">Permission type</span></span>      | <span data-ttu-id="442d8-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="442d8-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="61bd4-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="61bd4-108">Permission type</span></span>      | <span data-ttu-id="61bd4-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="61bd4-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="442d8-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="442d8-110">Delegated (work or school account)</span></span> | <span data-ttu-id="442d8-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="442d8-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="442d8-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="442d8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="442d8-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="442d8-113">Not supported.</span></span>    |
-|<span data-ttu-id="442d8-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="442d8-114">Application</span></span> | <span data-ttu-id="442d8-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="442d8-115">Not supported.</span></span> |
+|<span data-ttu-id="61bd4-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="61bd4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="61bd4-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="61bd4-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="61bd4-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="61bd4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="61bd4-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="61bd4-113">Not supported.</span></span>    |
+|<span data-ttu-id="61bd4-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="61bd4-114">Application</span></span> | <span data-ttu-id="61bd4-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="61bd4-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="442d8-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="442d8-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="61bd4-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="61bd4-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -32,42 +32,42 @@ ms.locfileid: "27016643"
 GET /teams/{id}/installedApps
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="442d8-117">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="442d8-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="61bd4-117">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="61bd4-117">Optional query parameters</span></span>
 
-<span data-ttu-id="442d8-118">Diese Methode unterstützt die $filter $select, und $erweitern [OData-Abfrageparameter](/graph/query-parameters) helfen, die Antwort anzupassen.</span><span class="sxs-lookup"><span data-stu-id="442d8-118">This method supports the $filter, $select, and $expand [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="61bd4-118">Diese Methode unterstützt die $filter $select, und $erweitern [OData-Abfrageparameter](/graph/query-parameters) helfen, die Antwort anzupassen.</span><span class="sxs-lookup"><span data-stu-id="61bd4-118">This method supports the $filter, $select, and $expand [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="442d8-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="442d8-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="61bd4-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="61bd4-119">Request headers</span></span>
 
-| <span data-ttu-id="442d8-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="442d8-120">Header</span></span>       | <span data-ttu-id="442d8-121">Wert</span><span class="sxs-lookup"><span data-stu-id="442d8-121">Value</span></span> |
+| <span data-ttu-id="61bd4-120">Header</span><span class="sxs-lookup"><span data-stu-id="61bd4-120">Header</span></span>       | <span data-ttu-id="61bd4-121">Wert</span><span class="sxs-lookup"><span data-stu-id="61bd4-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="442d8-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="442d8-122">Authorization</span></span>  | <span data-ttu-id="442d8-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="442d8-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="61bd4-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="61bd4-122">Authorization</span></span>  | <span data-ttu-id="61bd4-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="61bd4-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="442d8-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="442d8-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="61bd4-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="61bd4-125">Request body</span></span>
 
-<span data-ttu-id="442d8-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="442d8-126">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="61bd4-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="61bd4-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="442d8-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="442d8-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="61bd4-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="61bd4-127">Response</span></span>
 
-<span data-ttu-id="442d8-128">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und Auflistung von Objekten im Antworttext [TeamsApp](../resources/teamsapp.md) .</span><span class="sxs-lookup"><span data-stu-id="442d8-128">If successful, this method returns a `200 OK` response code and collection of [teamsApp](../resources/teamsapp.md) objects in the response body.</span></span>
+<span data-ttu-id="61bd4-128">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und Auflistung von Objekten im Antworttext [TeamsApp](../resources/teamsapp.md) .</span><span class="sxs-lookup"><span data-stu-id="61bd4-128">If successful, this method returns a `200 OK` response code and collection of [teamsApp](../resources/teamsapp.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="442d8-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="442d8-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="61bd4-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="61bd4-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="442d8-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="442d8-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="61bd4-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="61bd4-130">Request</span></span>
 
-<span data-ttu-id="442d8-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="442d8-131">The following is an example of the request.</span></span>
+<span data-ttu-id="61bd4-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="61bd4-131">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_owners"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/installedApps
+GET /teams/{id}/installedApps
 ```
 
-### <a name="response"></a><span data-ttu-id="442d8-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="442d8-132">Response</span></span>
+### <a name="response"></a><span data-ttu-id="61bd4-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="61bd4-132">Response</span></span>
 
-<span data-ttu-id="442d8-133">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="442d8-133">The following is an example of the response.</span></span>
-><span data-ttu-id="442d8-134">**Hinweis:** im Response-Objekt dargestellten möglicherweise zur besseren Lesbarkeit gekürzt werden.</span><span class="sxs-lookup"><span data-stu-id="442d8-134">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="442d8-135">Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="442d8-135">All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="61bd4-133">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="61bd4-133">The following is an example of the response.</span></span>
+><span data-ttu-id="61bd4-134">**Hinweis:** im Response-Objekt dargestellten möglicherweise zur besseren Lesbarkeit gekürzt werden.</span><span class="sxs-lookup"><span data-stu-id="61bd4-134">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="61bd4-135">Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="61bd4-135">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,25 +89,25 @@ Content-length: 55
 }
 ```
 
-## <a name="example----getting-the-names-of-the-installed-apps"></a><span data-ttu-id="442d8-136">Beispiel: Abrufen der Namen der installierten apps</span><span class="sxs-lookup"><span data-stu-id="442d8-136">Example -- getting the names of the installed apps</span></span>
+## <a name="example----getting-the-names-of-the-installed-apps"></a><span data-ttu-id="61bd4-136">Beispiel: Abrufen der Namen der installierten apps</span><span class="sxs-lookup"><span data-stu-id="61bd4-136">Example -- getting the names of the installed apps</span></span>
 
-### <a name="request"></a><span data-ttu-id="442d8-137">Anforderung</span><span class="sxs-lookup"><span data-stu-id="442d8-137">Request</span></span>
+### <a name="request"></a><span data-ttu-id="61bd4-137">Anforderung</span><span class="sxs-lookup"><span data-stu-id="61bd4-137">Request</span></span>
 
-<span data-ttu-id="442d8-138">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="442d8-138">The following is an example of the request.</span></span>
+<span data-ttu-id="61bd4-138">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="61bd4-138">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_owners"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/installedApps?$expand=teamsAppDefinition
+GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps?$expand=teamsAppDefinition
 ```
 
-### <a name="response"></a><span data-ttu-id="442d8-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="442d8-139">Response</span></span>
+### <a name="response"></a><span data-ttu-id="61bd4-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="61bd4-139">Response</span></span>
 
-<span data-ttu-id="442d8-140">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="442d8-140">The following is an example of the response.</span></span>
+<span data-ttu-id="61bd4-140">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="61bd4-140">The following is an example of the response.</span></span>
 
-><span data-ttu-id="442d8-141">**Hinweis:** im Response-Objekt dargestellten möglicherweise zur besseren Lesbarkeit gekürzt werden.</span><span class="sxs-lookup"><span data-stu-id="442d8-141">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="442d8-142">Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="442d8-142">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="61bd4-141">**Hinweis:** im Response-Objekt dargestellten möglicherweise zur besseren Lesbarkeit gekürzt werden.</span><span class="sxs-lookup"><span data-stu-id="61bd4-141">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="61bd4-142">Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="61bd4-142">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
