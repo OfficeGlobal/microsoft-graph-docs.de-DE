@@ -1,12 +1,12 @@
 ---
 title: Anmeldung Ressourcentyp
 description: 'Diese Ressource werden Benutzer oder eine Anwendung Anmeldung Aktivitäten in Ihrem Verzeichnis. '
-ms.openlocfilehash: f176f707e87b3e88292c32fba3748b9e70110e87
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+ms.openlocfilehash: e1975b7f690e340931cb2a4f00c29cc95b805a2e
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184539"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241076"
 ---
 # <a name="signin-resource-type"></a>Anmeldung Ressourcentyp
 Diese Ressource werden Benutzer oder eine Anwendung Anmeldung Aktivitäten in Ihrem Verzeichnis. 
@@ -25,9 +25,9 @@ Diese Ressource werden Benutzer oder eine Anwendung Anmeldung Aktivitäten in Ih
 |appId|Zeichenfolge|Bezieht sich auf die eindeutige GUID, die Id der Anwendung in Azure Active Directory darstellt.|
 |clientAppUsed|String|Enthält den älteren Client für die Anmeldung activty.E.g verwendet. enthält Browser, Exchange Active Sync, moderne Clients, IMAP, MAPI, SMTP, POP.|
 |appliedConditionalAccessPolicy|[ConditionalAccessPolicy](conditionalaccesspolicy.md) -Auflistung|Enthält eine Liste der bedingten Zugriffsrichtlinien, die von der entsprechenden Anmeldung Aktivität ausgelöst werden.|
-|conditionalAccessStatus|Zeichenfolge| Enthält den Status der bedingten Richtlinie ausgelöst. Mögliche Werte: sind `success`, `failure`, `notApplied` und `unknownFutureValue`.|
+|conditionalAccessStatus|string| Enthält den Status der bedingten Richtlinie ausgelöst. Mögliche Werte: sind `success`, `failure`, `notApplied` und `unknownFutureValue`.|
 |originalRequestId|String|Die Anforderung-Id der ersten Anforderung in der Reihenfolge für die Authentifizierung.|
-|isInteractive|Boolescher Wert|Gibt an, ob eine Anmeldung interaktiv ist.|
+|isInteractive|Boolesch|Gibt an, ob eine Anmeldung interaktiv ist.|
 |tokenIssuerName|String|Name der Identität Provider (z. B. sts.microsoft.com)|
 |tokenIssuerType|String|Stellt den Typ des IdentityProvider bereit. Mögliche Werte sind `AzureAD`, `ADFederationServices`, `UnknownFutureValue`.|
 |correlationId|String|Bezieht sich auf die ID, die vom Client gesendet wird, wenn der Anmeldung gestartet wird. Hiermit wird die entsprechende Aktivität-Anmeldung beim Aufrufen von Helpdesk oder Unterstützung bei der Problembehandlung.|
@@ -37,14 +37,14 @@ Diese Ressource werden Benutzer oder eine Anwendung Anmeldung Aktivitäten in Ih
 |ipAddress|Zeichenfolge|Enthält die IP-Adresse des Clients aus, wo die Anmeldung aufgetreten.|
 |location|[signInLocation](signinlocation.md)|Enthält den Ort, Bundesland und 2 Buchstaben Ländercode aus, wo die Anmeldung aufgetreten.|
 |processingTimeInMilliseconds|Int|Stellt die Zeit in Millisekunden in AD STS Verarbeitung die Anforderung|
-|riskDetail|`riskDetail`|Stellt die "Ursache" hinter einem bestimmten Zustand eines Benutzers riskant, Anmeldung oder ein Risikoereignis bereit. Die möglichen Werte sind: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Der Wert `none` bedeutet, dass keine Aktion in der Benutzer oder die Anmeldung bisher ausgeführt wurde.|
-|riskLevelAggregated|`riskLevel`|Enthält die aggregierten Risikostufe. Die möglichen Werte sind: `none`, `low`, `medium`, `high`, `hidden`, und `unknownFutureValue`. Der Wert `hidden` bedeutet, dass der Benutzer oder die Anmeldung wurde für den Schutz von Azure Active Directory-Identität nicht aktiviert.|
-|riskLevelDuringSignIn|`riskLevel`|Enthält die Risikostufe während der Anmeldung an. Die möglichen Werte sind: `none`, `low`, `medium`, `high`, `hidden`, und `unknownFutureValue`. Der Wert `hidden` bedeutet, dass der Benutzer oder die Anmeldung wurde für den Schutz von Azure Active Directory-Identität nicht aktiviert.|
+|riskDetail|`riskDetail`|Stellt die "Ursache" hinter einem bestimmten Zustand eines Benutzers riskant, Anmeldung oder ein Risikoereignis bereit. Die möglichen Werte sind: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Der Wert `none` bedeutet, dass keine Aktion in der Benutzer oder die Anmeldung bisher ausgeführt wurde. **Hinweis:** Details für diese Eigenschaft sind nur für Azure AD Premium P2-Kunden verfügbar. Alle anderen Kunden zurückgegeben `hidden`.|
+|riskLevelAggregated|`riskLevel`|Enthält die aggregierten Risikostufe. Die möglichen Werte sind: `none`, `low`, `medium`, `high`, `hidden`, und `unknownFutureValue`. Der Wert `hidden` bedeutet, dass der Benutzer oder die Anmeldung wurde für den Schutz von Azure Active Directory-Identität nicht aktiviert. **Hinweis:** Details für diese Eigenschaft sind nur für Azure AD Premium P2-Kunden verfügbar. Alle anderen Kunden zurückgegeben `hidden`.|
+|riskLevelDuringSignIn|`riskLevel`|Enthält die Risikostufe während der Anmeldung an. Die möglichen Werte sind: `none`, `low`, `medium`, `high`, `hidden`, und `unknownFutureValue`. Der Wert `hidden` bedeutet, dass der Benutzer oder die Anmeldung wurde für den Schutz von Azure Active Directory-Identität nicht aktiviert. **Hinweis:** Details für diese Eigenschaft sind nur für Azure AD Premium P2-Kunden verfügbar. Alle anderen Kunden zurückgegeben `hidden`.|
 |riskEventTypes|`riskEventTypes`|Enthält eine Liste der Risiko Ereignistypen der Anmeldung zugeordnet. Die möglichen Werte sind: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`, `generic`, und `unknownFutureValue`.|
 |riskState|`riskState`|Stellt den 'Risiko Zustand"eines Benutzers riskant, Anmeldung oder ein Risikoereignis bereit. Die möglichen Werte sind: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |mfaDetail|[mfaDetail](mfadetail.md)|Enthält die mehrstufiger Authentifizierung das weiterführende Informationen wie mehrstufiger Authentifizierung das erforderlich, mehrstufiger Authentifizierung das Status für die entsprechenden anmelden.|
 |networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|Enthält Informationen zu den Speicherort im Netzwerk.|
-|riskLevel|Zeichenfolge| Enthält die Risikostufe der Anmeldung zugeordnet. Mögliche Werte sind: `low`, `medium`, `high`.|
+|riskLevel|string| Enthält die Risikostufe der Anmeldung zugeordnet. Mögliche Werte sind: `low`, `medium`, `high`.|
 |status|[signInStatus](signinstatus.md)|Enthält die Anmeldestatus. Mögliche Werte sind `Success` und `Failure`.|
 |userDisplayName|String|Gibt die Anzeige des Benutzers an.|
 |userId|String|Gibt die Benutzer-ID des Benutzers an.|

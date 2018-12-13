@@ -1,18 +1,21 @@
 ---
 title: Abrufen von riskyUsers
 description: Rufen Sie die Eigenschaften und die Beziehungen eines **RiskyUsers** -Objekts ab.
-ms.openlocfilehash: 7212e99e53d990df9cd9fea7dae754a693edc745
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+ms.openlocfilehash: 14a944012a8015ecf3c60f761edba680c2c7a68b
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209684"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241027"
 ---
 # <a name="get-riskyusers"></a>Abrufen von riskyUsers
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Rufen Sie die Eigenschaften und die Beziehungen eines **RiskyUsers** -Objekts ab.
+
+> **Hinweis:** Diese API ist eine Azure AD Premium P2-Lizenz erforderlich.
+
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 

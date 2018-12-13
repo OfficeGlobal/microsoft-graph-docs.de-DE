@@ -1,12 +1,12 @@
 ---
 title: Löschen von app-Teams
 description: Deinstalliert eine app aus dem angegebenen Team.
-ms.openlocfilehash: a1ba2ce7234796e3a2df508d40432a15690b1a63
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f9e04ad9d6672c3b9cfaaee9109b1bba0f7ab4c6
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016989"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241055"
 ---
 # <a name="delete-app-from-team"></a>Löschen von app-Teams
 
@@ -30,7 +30,7 @@ DELETE /teams/{id}/installedApps/{id}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 
@@ -49,7 +49,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "get_team"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
+DELETE /teams/{id}/installedApps/{id}
 ```
 #### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.

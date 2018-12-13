@@ -3,7 +3,7 @@ title: Übersicht über Microsoft Teams-APIs
 description: 'Microsoft Teams ist der ultimative Hub für Zusammenarbeit und intelligente Kommunikation. '
 ms.openlocfilehash: 1f210bf529769c96f22c2c7180d3736cdc9ed776
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092252"
@@ -21,7 +21,7 @@ Wenn Sie das neue Team zusammenbringen möchten, um das Unternehmensproblem zu b
 
 ![Automatisieren Sie Teamlebenszyklen, indem Sie ein Team erstellen, Mitglieder und Besitzer hinzufügen, Teameinstellungen konfigurieren, Kanäle hinzufügen, Apps installieren, Registerkarten hinzufügen und das Team zum entsprechenden Zeitpunkt archivieren oder löschen.](images/teams-lifecycle.png)
 
-Wenn das Unternehmensproblem gelöst wurde und Sie das Team nicht mehr benötigen, verwenden Sie die Microsoft Teams-API, um das Team zu [archivieren](/graph/api/team-archive?view=graph-rest-1.0) oder zu [löschen](/graph/api/group-delete?view=graph-rest-1.0). Wenn Sie die maximale Dauer des Teams bei der Erstellung kennen, legen Sie eine [Ablaufrichtlinie für die Office 365-Gruppe](https://support.office.com/de-DE/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US) für das Team fest, durch die das Team gemäß der Richtlinie automatisch entfernt wird.
+Wenn das Unternehmensproblem gelöst wurde und Sie das Team nicht mehr benötigen, verwenden Sie die Microsoft Teams-API, um das Team zu [archivieren](/graph/api/team-archive?view=graph-rest-1.0) oder zu [löschen](/graph/api/group-delete?view=graph-rest-1.0). Wenn Sie die maximale Dauer des Teams bei der Erstellung kennen, legen Sie eine [Ablaufrichtlinie für die Office 365-Gruppe](https://support.office.com/en-us/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US) für das Team fest, durch die das Team gemäß der Richtlinie automatisch entfernt wird.
 
 ### <a name="get-work-done-even-when-no-one-is-around"></a>Effizientes Arbeiten, auch wenn niemand zur Stelle ist
 

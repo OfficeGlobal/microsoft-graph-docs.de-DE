@@ -1,12 +1,12 @@
 ---
 title: Liste apps im team
 description: Abrufen der Liste apps im angegebenen Team installiert.
-ms.openlocfilehash: 6a9deb01e4874861b798ffcae32bebd77899fad9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 214685302b9c3a09f06cb4d5c13525c222bf658f
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016643"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241048"
 ---
 # <a name="list-apps-in-team"></a>Liste apps im team
 
@@ -38,7 +38,7 @@ Diese Methode unterstützt die $filter $select, und $erweitern [OData-Abfragepar
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 
@@ -61,7 +61,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/installedApps
+GET /teams/{id}/installedApps
 ```
 
 ### <a name="response"></a>Antwort
@@ -100,7 +100,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/installedApps?$expand=teamsAppDefinition
+GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps?$expand=teamsAppDefinition
 ```
 
 ### <a name="response"></a>Antwort
