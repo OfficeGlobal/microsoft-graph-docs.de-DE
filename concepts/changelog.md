@@ -1,12 +1,12 @@
 ---
 title: Änderungsprotokoll für Microsoft Graph
 description: Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschließlich der Version 1.0 und des Beta-Endpunkts von Microsoft Graph-APIs.
-ms.openlocfilehash: 03dc6e993ff219ca38b16c6db7bbbb5ebc0ccb48
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+ms.openlocfilehash: e8b4671d527bac65d1855c21d7612077ed18203e
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209768"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222660"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Änderungsprotokoll für Microsoft Graph
 
@@ -18,9 +18,10 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 ### <a name="directory-apis"></a>Verzeichnis-APIs
 
-| Änderungstyp | Version                                    | Beschreibung                              |
-| :---------- | :----------------------------------------- | :--------------------------------------- |
-| Ergänzungen    | Beta | Eigenschaft `createdDateTime` zur Ressource [organization](/graph/api/resources/organization?view=graph-rest-beta) hinzugefügt.|
+| **Änderungstyp** | **Version**   | **Beschreibung**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Ergänzungen | Beta | Neuer Ressourcentyp [DirectoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta) hinzugefügt.|
+| Ergänzungen | Beta | Eigenschaft `createdDateTime` zur Ressource [organization](/graph/api/resources/organization?view=graph-rest-beta) hinzugefügt.|
 | Ergänzung | v1.0 | Methode `memberOf` hinzugefügt, um die direkte [Mitgliedschaft](/graph/api/device-list-memberOf?view=graph-rest-1.0) eines [Geräts](/graph/api/resources/device?view=graph-rest-1.0) abzurufen. Diese Methode wurde zum Abrufen der Liste der Mitgliedschaften einschließlich geschachtelter Mitgliedschaften hinzugefügt.|
 
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams-APIs
@@ -43,7 +44,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Ergänzung |Beta| Neuer Enumerationsmember „unknownFutureValue“ in „teamsAsyncOperationStatus“ eingeführt.|
 |Ergänzung |Beta| Neuer Enumerationsmember „unknownFutureValue“ in „teamsAppDistributionMethod“ eingeführt.|
 |Ergänzung |Beta| Neuer Ressourcentyp [/teamsTemplates](/graph/api/resources/teamstemplate?view=graph-rest-beta) eingeführt.|
-
+|Ergänzungen | v1.0 | Unterstützung für Administratorberechtigungen für [team](/graph/api/resources/team?view=graph-rest-1.0), [channel](/graph/api/resources/channel?view=graph-rest-1.0) und [tab](/graph/api/resources/teamstab?view=graph-rest-1.0)-Vorgänge hinzugefügt. |
 
 ### <a name="privileged-identity-management-apis"></a>Privileged Identity Management-APIs
 
@@ -1626,7 +1627,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 | Ergänzungen        | Beta          | Die Funktionen [findRoomLists](/graph/api/user-findroomlists?view=graph-rest-beta) und [findRooms](/graph/api/user-findrooms?view=graph-rest-beta) wurden der [user](/graph/api/resources/user?view=graph-rest-beta)-Entität hinzugefügt. |
 | Ergänzungen        | Beta          | Die **locations**-Eigenschaft wurde der [event](/graph/api/resources/event?view=graph-rest-beta)-Entität zur Unterstützung der Organisation von Ereignissen hinzugefügt, an denen Teilnehmer von mehr als einem Ort teilnehmen können. |
 | Ergänzungen        | Beta          | Eigenschaft **locationType** wurde zum komplexen Typ [location](/graph/api/resources/location?view=graph-rest-beta) hinzugefügt. |
-| Ergänzungen        | Beta          | Eigenschaften **uniqueId** und **uniqueIdType** wurden zum komplexen Typ [location](/graph/api/resources/location?view=graph-rest-beta) hinzugefügt. Diese Eigenschaften dienen zu diesem Zeitpunkt nur der internen Verwendung. |
+| Ergänzungen        | Beta          | Eigenschaften **uniqueId** und **uniqueIdType** zum komplexen Typ [location](/graph/api/resources/location?view=graph-rest-beta) hinzugefügt. Diese Eigenschaften dienen zu diesem Zeitpunkt nur der internen Verwendung. |
 | Änderung          | v1.0 und Beta | Bei dieser Erweiterung des Verhaltens geht es um das Abrufen eines freigegebenen Kalenders oder seiner Ereignisinhalte, wenn ein Benutzer einen Kalender für den angemeldeten Benutzer freigegeben hat oder das Postfach des Benutzers an den angemeldeten Benutzer delegiert wurde. In solchen Fällen kann eine App die Benutzer-ID oder den Benutzerprinzipalnamen angeben, um [diesen freigegebenen Kalender abzurufen](/graph/api/calendar-get?view=graph-rest-1.0) oder [die Ereignisse in diesem freigegebenen Kalender abzurufen](/graph/api/user-list-events?view=graph-rest-1.0), solange der angemeldete Benutzer über delegierte Berechtigungen für die App verfügt. |
 
 ### <a name="outlook-contacts"></a>Outlook-Kontakte
@@ -2106,7 +2107,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 | :-------------- | :---------- | :--------------------------------------- |
 | Ergänzungen        | Beta        | Neue **Outlook**-Navigationseigenschaft hinzugefügt zu [Benutzer](/graph/api/resources/user?view=graph-rest-beta), um auf Outlook-Aufgaben zuzugreifen. |
 | Ergänzungen        | Beta        | Neue Entitäten – [outlookuser](/graph/api/resources/outlookuser?view=graph-rest-beta), [outlookTaskGroup](/graph/api/resources/outlooktaskgroup?view=graph-rest-beta), [outlookTaskFolder](/graph/api/resources/outlooktaskfolder?view=graph-rest-beta), und [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-beta) - und deren Methoden unterstützen, organisieren und zugreifen auf Outlook-Aufgaben. |
-| Ergänzungen        | Beta        | Outlook-Aufgaben unterstützen Anhänge ([attachment](/graph/api/resources/attachment?view=graph-rest-beta), [fileAttachment](/graph/api/resources/fileattachment?view=graph-rest-beta), [itemAttachment](/graph/api/resources/itemattachment?view=graph-rest-beta) und [referenceAttachment](/graph/api/resources/referenceattachment?view=graph-rest-beta)-Ressourcen). |
+| Ergänzung        | Beta        | Outlook-Aufgaben unterstützen Anhänge ([attachment](/graph/api/resources/attachment?view=graph-rest-beta), [fileAttachment](/graph/api/resources/fileattachment?view=graph-rest-beta), [itemAttachment](/graph/api/resources/itemattachment?view=graph-rest-beta) und [referenceAttachment](/graph/api/resources/referenceattachment?view=graph-rest-beta)-Ressourcen). |
 | Ergänzungen        | Beta        | Outlook-Aufgaben unterstützen [extended properties](/graph/api/resources/extended-properties-overview?view=graph-rest-beta) ([singleValueLegacyExtendedProperty](/graph/api/resources/singlevaluelegacyextendedproperty?view=graph-rest-beta) und [multiValueLegacyExtendedProperty](/graph/api/resources/multivaluelegacyextendedproperty?view=graph-rest-beta)-Ressourcen). |
 
 ### <a name="planner-apis"></a>Planner-APIs
@@ -2439,11 +2440,12 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 | **Änderungstyp** | **Version** | **Beschreibung**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Ergänzungen        | Beta        | Eine neue Deltafunktion zu folgenden Elemente hinzufügen, um [Delta Abfrage](delta-query-overview.md) auszuführen:<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Beispiele finden Sie unter Folgendem:<br/>[Inkrementelle Änderungen an Gruppen abrufen (Vorschau)](delta-query-groups.md)<br/>[Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen (Vorschau)](delta-query-messages.md)<br/>[Inkrementelle Änderungen an Benutzern abrufen (Vorschau)](delta-query-users.md) |
+| Ergänzungen        | Beta        | Eine neue Deltafunktion zu folgenden Elemente hinzufügen, um [Delta Abfrage](delta-query-overview.md) auszuführen:<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Beispiele finden Sie unter Folgendem:<br/>
+  [Inkrementelle Änderungen an Gruppen abrufen (Vorschau)](delta-query-groups.md)<br/>[Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen (Vorschau)](delta-query-messages.md)<br/>[Inkrementelle Änderungen an Benutzern abrufen (Vorschau)](delta-query-users.md) |
 
 ### <a name="excel-apis"></a>Excel-APIs
 
-| **Änderungstyp** | **Version** | **Description**                          |
+| **Änderungstyp** | **Version** | **Beschreibung**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Ergänzungen        | v1.0        | workbookPivotTable-Ressource, refresh- und refreshAll-Aktion für pivotTables, workbookRangeView-Ressource, visibleView-Aktion für den gefilterten Bereich zum Zurückgeben von workbookRangeView an den Benutzer, Abrufen der Sammlung rows und range-Ressource deaktiviert für visibleView, Funktionen columnsAfter, columnsBefore, resizedRange, rowsAbove und rowsBelow deaktiviert für range-Ressource und neue Tabelleneigenschaften hinzugefügt. |
 
