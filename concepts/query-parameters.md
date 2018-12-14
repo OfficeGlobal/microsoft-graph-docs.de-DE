@@ -1,16 +1,23 @@
 ---
 title: Verwenden von Abfrageparametern zum Anpassen von Antworten
 description: Microsoft Graph stellt optionale Abfrageparameter bereit, die Sie zum Festlegen und Steuern der in einer Antwort zurückgegebenen Datenmenge verwenden können. Die folgenden Abfrageparameter werden unterstützt.
-ms.openlocfilehash: e41a6e8d9cc42506985bd82f00bcdc4efaec8add
-ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
+ms.openlocfilehash: b79192a028be278ab38dc28f1d9d913b3bcb7209
+ms.sourcegitcommit: 9f953e0c4cd624ba31919bfd5e82bf3e33cb9e21
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27092347"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "27245106"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Verwenden von Abfrageparametern zum Anpassen von Antworten
 
-Microsoft Graph stellt optionale Abfrageparameter bereit, die Sie zum Festlegen und Steuern der in einer Antwort zurückgegebenen Datenmenge verwenden können. Die folgenden Abfrageparameter werden unterstützt.
+Microsoft Graph unterstützt optionale Abfrageparameter, die Sie zum Festlegen und Steuern der in einer Antwort zurückgegebenen Datenmenge verwenden können. Die Unterstützung der Abfrageparameter ist je nach API-Vorgang unterschiedlich, und je nach API sind v1.0- oder Beta-Endpunkte verfügbar. 
+
+> **Hinweis:** Bei den v1.0- und Beta-Endpunkten ist das `$`-Präfix optional. Sie können z. B. `filter` anstelle von `$filter` verwenden.
+
+Abfrageparameter können OData-System-Abfrageoptionen oder andere Abfrageparameter sein. 
+
+## <a name="odata-system-query-options"></a>OData-System-Abfrageoptionen
+Ein Microsoft Graph-API-Vorgang kann eine oder mehrere der folgenden OData-System-Abfrageoptionen unterstützen. Diese Abfrageparameter sind mit der [OData V4-Abfragesprache ][odata-query] kompatibel.
 
 >**Hinweis:** Klicken Sie auf die Beispiele, um sie im [Graph-Tester][graph-explorer] auszuprobieren.
 
@@ -24,14 +31,14 @@ Microsoft Graph stellt optionale Abfrageparameter bereit, die Sie zum Festlegen 
 | [$search](#search-parameter)       | Dient zum Zurückgeben von Ergebnissen basierend auf Suchkriterien. Wird derzeit in **messages**- und **person**-Sammlungen unterstützt.|[`/me/messages?$search=pizza`][search-example]
 | [$select](#select-parameter)       | Dient zum Filtern von Eigenschaften (Spalten).|[`/users?$select=givenName,surname`][select-example]
 | [$skip](#skip-parameter)           | Dient zum Indizieren in einem Resultset. Wird auch von einigen APIs zum Implementieren von Paging verwendet und kann zusammen mit `$top` zum manuellen Auslagern von Ergebnissen verwendet werden. | [`/me/messages?$skip=11`][skip-example]
-| [$skipToken](#skiptoken-parameter) | Dient zum Abrufen der nächsten Seite von Ergebnissen aus Resultsets, die mehrere Seiten umfassen. (Einige APIs verwenden stattdessen `$skip`.) | `/users?$skiptoken=X%274453707402000100000017...`|
 | [$top](#top-parameter)             | Dient zum Festlegen der Seitengröße von Ergebnissen. |[`/users?$top=2`][top-example]
 
 
+## <a name="other-query-parameters"></a>Andere Abfrageparameter
 
-Diese Parameter sind mit der [OData V4-Abfragesprache][odata-query] kompatibel. Nicht alle Parameter werden über alle Microsoft Graph-APIs hinweg unterstützt, und die Unterstützung kann zwischen dem `v1.0`- und dem `beta`-Endpunkt erheblich abweichen. 
-
-> **Hinweis: **Am `beta`- und `v1.0`-Endpunkt ist das `$`-Präfix optional. Sie können z. B. `filter` anstelle von `$filter` verwenden. 
+| Name                     | Beschreibung | Beispiel
+|:-------------------------|:------------|:---------|
+| [$skipToken](#skiptoken-parameter) | Dient zum Abrufen der nächsten Seite von Ergebnissen aus Resultsets, die mehrere Seiten umfassen. (Einige APIs verwenden stattdessen `$skip`.) | `/users?$skiptoken=X%274453707402000100000017...`|
 
 ## <a name="encoding-query-parameters"></a>Codieren von Abfrageparametern
 
