@@ -2,20 +2,20 @@ name: Referenz
 items:
   - name: Übersicht über Microsoft Graph
     href: /graph/overview?toc=./toc.json
-  - name: Authentifizierungstoken abrufen
+  - name: Abrufen von Authentifizierungstoken
     href: /graph/auth-overview?toc=./ref/toc.json
     items:
       - name: Registrieren der App
         href: /graph/auth-register-app-v2?toc=./ref/toc.json
-      - name: Im Namen eines Benutzers zugreifen
+      - name: Zugreifen im Namen eines Benutzers
         href: /graph/auth-v2-user?toc=./ref/toc.json
       - name: Ohne Benutzer zugreifen
         href: /graph/auth-v2-service?toc=./ref/toc.json
       - name: Berechtigungen
         href: /graph/permissions-reference?toc=./ref/toc.json
-      - name: Verwalten von app-Zugriff (CSP)
+      - name: Verwalten des App-Zugriffs (CSPs)
         href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
-  - name: Mithilfe der API
+  - name: Verwenden der API
     href: /graph/use-the-api?toc=./ref/toc.json
     items:
       - name: Paging
@@ -24,27 +24,27 @@ items:
         href: /graph/query-parameters?toc=./ref/toc.json
       - name: Batchanforderungen
         href: /graph/json-batching?toc=./ref/toc.json
-      - name: Drosselung
+      - name: Einschränkung
         href: /graph/throttling?toc=./ref/toc.json
-      - name: Ändern von Benachrichtigungen
+      - name: Benachrichtigungen ändern
         href: /graph/webhooks?toc=./ref/toc.json
-      - name: Nachverfolgen von Änderungen
+      - name: Änderungen nachverfolgen
         href: /graph/delta-query-overview?toc=./ref/toc.json
         items:
-          - name: Abrufen von Änderungen an Ereignissen (Beispiel)
+          - name: Änderungen an Ereignissen abrufen (Beispiel)
             href: /graph/delta-query-events?toc=./ref/toc.json
-          - name: Abrufen von Änderungen an Gruppen (Beispiel)
+          - name: Änderungen an Gruppen abrufen (Beispiel)
             href: /graph/delta-query-groups?toc=./ref/toc.json
-          - name: Abrufen von Änderungen an Nachrichten (Beispiel)
+          - name: Änderungen an Nachrichten abrufen (Beispiel)
             href: /graph/delta-query-messages?toc=./ref/toc.json
-          - name: Abrufen von Änderungen an Benutzer (Beispiel)
+          - name: Änderungen an Benutzern abrufen (Beispiel)
             href: /graph/delta-query-users?toc=./ref/toc.json
-      - name: Hinzufügen von benutzerdefinierten Daten
+      - name: Benutzerdefinierte Daten hinzufügen
         href: /graph/extensibility-overview?toc=./ref/toc.json
         items:
-          - name: Verwenden Sie die open-Erweiterungen (Beispiel)
+          - name: Offene Erweiterungen verwenden (Beispiel)
             href: /graph/extensibility-open-users?toc=./ref/toc.json
-          - name: Verwenden Sie-Erweiterungen (Beispiel)
+          - name: Schemaerweiterungen verwenden (Beispiel)
             href: /graph/extensibility-schema-groups?toc=./ref/toc.json
       - name: Ressourcen
         items:
@@ -97,7 +97,7 @@ items:
                 href: api/calendar-list-calendarview.md
               - name: Erinnerung anzeigen
                 href: api/user-reminderview.md
-              - name: Abrufen von Frei/Gebucht-Zeitplan
+              - name: Abrufen des Frei-/Gebucht-Zeitplans
                 href: api/calendar-getschedule.md
               - name: Suchen Sie nach Raumlisten
                 href: api/user-findroomlists.md
@@ -183,7 +183,7 @@ items:
                 href: api/mailfolder-post-messagerules.md
               - name: Abrufen von e-Mail-Infos
                 href: api/user-getmailtips.md
-          - name: Anmerkungen
+          - name: Hinweise
             href: resources/onenote.md
             items:
               - name: Notizbücher auflisten
@@ -434,7 +434,7 @@ items:
                 href: api/grouplifecyclepolicy-removegroup.md
               - name: Erneuern Gruppe
                 href: api/grouplifecyclepolicy-renewgroup.md
-          - name: Anmerkungen
+          - name: Hinweise
             href: resources/onenote.md
             items:
               - name: Notizbücher auflisten
@@ -583,9 +583,9 @@ items:
                 href: api/calendar-list-events.md
               - name: Ereignis erstellen
                 href: api/calendar-post-events.md
-              - name: Suchen Sie nach Besprechungszeiten
+              - name: Suchen von Besprechungszeiten
                 href: api/user-findmeetingtimes.md
-              - name: Abrufen von Frei/Gebucht-Zeitplan
+              - name: Abrufen des Frei-/Gebucht-Zeitplans
                 href: api/calendar-getschedule.md
               - name: Suchen Sie nach Raumlisten
                 href: api/user-findroomlists.md
@@ -6078,7 +6078,7 @@ items:
                 href: api/driveitem-createuploadsession.md
               - name: Search items
                 href: api/driveitem-search.md
-              - name: Nachverfolgen von Änderungen
+              - name: Änderungen nachverfolgen
                 href: api/driveitem-delta.md
               - name: Abrufen der Link Vorschau
                 href: api/driveitem-preview.md
@@ -6111,7 +6111,8 @@ items:
                 href: api/permission-update.md
               - name: Berechtigung löschen
                 href: api/permission-delete.md
-      - name: Identitäts- und
+      - name: |
+          Identität und Zugriff 
         href: resources/azure-ad-overview.md
         items:
           - name: Access Reviews (engl.)
@@ -6255,6 +6256,11 @@ items:
                 href: api/contract-get.md
               - name: Verträge auflisten
                 href: api/contract-list.md
+          - name: Datenvorgangs-Richtlinie
+            href: resources/datapolicyoperation.md
+            items:
+              - name: Abrufen der Datenvorgangs-Richtlinie
+                href: api/datapolicyoperation-get.md
           - name: Gelöschte Elemente
             href: resources/directory.md
             items:
@@ -6268,7 +6274,7 @@ items:
                 href: api/directory-deleteditems-restore.md
               - name: Gelöschte Listenelemente Benutzer gehören
                 href: api/directory-deleteditems-user-owned.md
-          - name: Ger?t
+          - name: Gerät
             href: resources/device.md
             items:
               - name: Geräte auflisten
@@ -6440,6 +6446,39 @@ items:
                 href: api/organization-get.md
               - name: Org Details aktualisieren
                 href: api/organization-update.md
+          - name: Organisatorische Kontakte
+            href: resources/orgcontact.md
+            items:
+              - name: Kontakt
+                href: resources/orgcontact.md
+                items:
+                  - name: Org von Kontakten
+                    href: api/orgcontact-list.md
+                  - name: Abrufen von Org Kontakt
+                    href: api/orgcontact-get.md
+                  - name: Org Kontakt aktualisieren
+                    href: api/orgcontact-update.md
+                  - name: Org Kontakt löschen
+                    href: api/orgcontact-delete.md
+              - name: Gruppen
+                href: resources/group.md
+                items:
+                  - name: memberOf auflisten
+                    href: api/orgcontact-list-memberof.md
+                  - name: Mitgliedergruppen abrufen
+                    href: api/orgcontact-getmembergroups.md
+                  - name: Mitgliedergruppen prüfen
+                    href: api/orgcontact-checkmembergroups.md
+              - name: Org-Hierarchie
+                href: resources/directoryobject.md
+                items:
+                  - name: Liste Mitarbeiter
+                    href: api/orgcontact-list-directreports.md
+              - name: Directory-Objekt
+                href: resources/directoryobject.md
+                items:
+                  - name: Mitgliedsobjekte abrufen
+                    href: api/orgcontact-getmemberobjects.md
           - name: Richtlinien
             href: resources/policy.md
             items:
@@ -6801,10 +6840,10 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Rufen Sie Mehrfachwert-Eigenschaft
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Anmerkungen
+      - name: Hinweise
         href: resources/onenote-api-overview.md
         items:
-          - name: Anmerkungen
+          - name: Hinweise
             href: resources/onenote.md
             items:
               - name: Notizbücher auflisten
@@ -6890,43 +6929,10 @@ items:
             items:
               - name: Ressource abrufen
                 href: api/resource-get.md
-      - name: Organisatorische Kontakte
-        href: resources/orgcontact.md
-        items:
-          - name: Contact
-            href: resources/orgcontact.md
-            items:
-              - name: Org von Kontakten
-                href: api/orgcontact-list.md
-              - name: Abrufen von Org Kontakt
-                href: api/orgcontact-get.md
-              - name: Org Kontakt aktualisieren
-                href: api/orgcontact-update.md
-              - name: Org Kontakt löschen
-                href: api/orgcontact-delete.md
-          - name: Gruppen
-            href: resources/group.md
-            items:
-              - name: memberOf auflisten
-                href: api/orgcontact-list-memberof.md
-              - name: Mitgliedergruppen abrufen
-                href: api/orgcontact-getmembergroups.md
-              - name: Mitgliedergruppen prüfen
-                href: api/orgcontact-checkmembergroups.md
-          - name: Org-Hierarchie
-            href: resources/directoryobject.md
-            items:
-              - name: Liste Mitarbeiter
-                href: api/orgcontact-list-directreports.md
-          - name: Directory-Objekt
-            href: resources/directoryobject.md
-            items:
-              - name: Mitgliedsobjekte abrufen
-                href: api/orgcontact-getmemberobjects.md
       - name: Persönliche Kontakte
         href: resources/contact.md
         items:
-          - name: Contact
+          - name: Kontakt
             href: resources/contact.md
             items:
               - name: Kontakte auflisten
@@ -7280,7 +7286,7 @@ items:
                 href: api/sitepage-delete.md
               - name: Seite "Veröffentlichen"
                 href: api/sitepage-publish.md
-      - name: Soziale intelligence
+      - name: Soziale Intelligenz
         href: resources/social-overview.md
         items:
           - name: Einblicke in die
@@ -7559,7 +7565,7 @@ items:
             items:
               - name: Pläne auflisten
                 href: api/plannergroup-list-plans.md
-          - name: Anmerkungen
+          - name: Hinweise
             href: resources/onenote.md
             items:
               - name: Notizbücher auflisten
@@ -7805,7 +7811,7 @@ items:
             href: api/schemaextension-update.md
           - name: Schemaerweiterung löschen
             href: api/schemaextension-delete.md
-      - name: Ändern von Benachrichtigungen
+      - name: Benachrichtigungen ändern
         href: resources/webhooks.md
         items:
           - name: Abonnement

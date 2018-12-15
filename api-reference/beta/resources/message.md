@@ -1,12 +1,12 @@
 ---
 title: Nachrichtenressourcentyp
 description: Eine Nachricht in einem Postfachordner.
-ms.openlocfilehash: 02c315bce639d2ee951d8f1aedca2e13231b0edf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 046516ae0ec469d7f30b33a1d4bc7c939749ff6d
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060585"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283682"
 ---
 # <a name="message-resource-type"></a>Nachrichtenressourcentyp
 
@@ -86,7 +86,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|Die Bcc:-Empfänger der Nachricht.|
-|body|[itemBody](itembody.md)|Der Text der Nachricht. Er kann im HTML- oder Textformat vorliegen.|
+|body|[itemBody](itembody.md)|Der Text der Nachricht. Es kann im HTML- oder Textformat sein. Erfahren Sie mehr über [sichere HTML-Code in den Textkörper einer Nachricht](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned).|
 |bodyPreview|String|Die ersten 255 Zeichen des Nachrichtentexts. Es ist im Textformat. Wenn die Nachricht Instanzen des Objekts [erwähnen](mention.md)enthält, würden diese Eigenschaft eine Verkettung von diesen erwähnungen sowie enthalten. |
 |categories|Zeichenfolgenauflistung|Die Kategorien, die mit der Nachricht verknüpft sind. Jeder Kategorie entspricht die **DisplayName** -Eigenschaft des ein [OutlookCategory](outlookcategory.md) für den Benutzer definiert. |
 |ccRecipients|[recipient](recipient.md) collection|Die Cc:-Empfänger der Nachricht.|
@@ -95,7 +95,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |conversationIndex|Binär|Der Index der Unterhaltung, zu der die E-Mail gehört.|
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht erstellt wurde.|
 |Flag|[followUpFlag](followupflag.md)|Der Wert des Flags, der den Status, das Startdatum, das Fälligkeitsdatum oder das Enddatum für die Nachricht angibt.|
-|Von|[Empfänger](recipient.md)|Der Postfachbesitzer und der Absender der Nachricht. Der Wert muss in das tatsächliche Postfach verwendet entsprechen.|
+|Von|[Empfänger](recipient.md)|Der Postfachbesitzer und der Absender der Nachricht. Der Wert muss in das tatsächliche Postfach verwendet entsprechen. Erfahren Sie mehr über [Einstellung der aus und Absender Eigenschaften](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) einer Nachricht.|
 |hasAttachments|Boolescher Wert|Gibt an, ob die Nachricht Anlagen enthält. Diese Eigenschaft enthält keine Inline-Anlagen, wenn eine Nachrichtalso  nur Inline-Anlagen enthält, ist diese Eigenschaft „false“. Um das Vorhandensein von Inline-Anlagen zu überprüfen, analysieren Sie die **body**-Eigenschaft so, dass nach einem `src`-Attribut, z. B. `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`, gesucht wird. |
 |id|String|Eindeutiger Bezeichner für die Nachricht (beachten Sie, dass sich dieser Wert ändern kann, wenn eine Nachricht verschoben oder geändert wird)|
 |Wichtigkeit|String| Wichtigkeit der Nachricht: `Low`, `Normal`, `High`.|
@@ -111,7 +111,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |parentFolderId|String|Der eindeutige Bezeichner für das übergeordnete mailFolder-Element der Nachricht.|
 |receivedDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht erhalten wurde.|
 |replyTo|[recipient](recipient.md) collection|Die E-Mail-Adressen, die beim Antworten verwendet werden sollen.|
-|sender|[Empfänger](recipient.md)|Das Konto, das tatsächlich verwendet wird, um die Nachricht zu generieren. In den meisten Fällen beträgt dieser Wert **von** -Eigenschaft identisch. Sie können diese Eigenschaft auf einen anderen Wert festlegen, beim Senden einer Nachricht von einem [freigegebenen Postfach](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)oder Senden einer Nachricht als [Delegieren](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). Der Wert muss in jedem Fall das tatsächliche Postfach verwendet entsprechen. |
+|sender|[Empfänger](recipient.md)|Das Konto, das tatsächlich verwendet wird, um die Nachricht zu generieren. In den meisten Fällen beträgt dieser Wert **von** -Eigenschaft identisch. Sie können diese Eigenschaft auf einen anderen Wert festlegen, beim Senden einer Nachricht von einem [freigegebenen Postfach](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)oder Senden einer Nachricht als [Delegieren](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). Der Wert muss in jedem Fall das tatsächliche Postfach verwendet entsprechen. Erfahren Sie mehr über [Einstellung der aus und Absender Eigenschaften](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) einer Nachricht.|
 |sentDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht gesendet wurde.|
 |Betreff|String|Der Betreff der Nachricht.|
 |toRecipients|[recipient](recipient.md) collection|Die An:-Empfänger der Nachricht.|
@@ -120,19 +120,6 @@ Es folgt eine JSON-Darstellung der Ressource.
 |unsubscribeEnabled|Boolescher Wert|Gibt an, ob die Nachricht zum Kündigen des Abonnements aktiviert ist.  Wenn der list-Unsubscribe-Header „rfc-2369“ entspricht, ist der Wert „true“.|
 |webLink|String|Die URL zum Öffnen der Nachricht in Outlook Web App.<br><br>Sie können am Ende der URL das Argument „ispopout“ anhängen, um zu ändern, wie die Nachricht angezeigt wird. Wenn „ispopout“ nicht vorhanden oder auf 1 festgelegt ist, wird die Nachricht in einem Popout-Fenster angezeigt. Wenn „ispopout“ auf 0 festgelegt ist, zeigt der Browser die Nachricht in Outlook Web App im Prüffensterbereich an.<br><br>Die Nachricht wird im Browser geöffnet, wenn Sie über Outlook Web App bei Ihrem Postfach angemeldet sind. Sie werden aufgefordert, sich anzumelden, wenn Sie noch nicht beim Browser angemeldet sind.<br><br>Auf diese URL kann von einem iFrame aus zugegriffen werden.|
 
-**Entfernen von Skript aus den body-Eigenschaft**
-
-Der Nachrichtentext im HTML- oder Textformat vorliegen. Wenn der Textkörper im HTML-Format vorliegt, werden standardmäßig alle potenziell unsicheren HTML-Elemente (z. B. JavaScript), die in der **body**-Eigenschaft eingebettet sind, vor dem Zurückgeben des Textkörperinhalts in einer REST-Antwort entfernt. Um den gesamten ursprünglichen HTML-Inhalt abzurufen, schließen Sie den folgenden HTTP-Anforderungsheader ein:
-```
-Prefer: outlook.allow-unsafe-html
-```
-
-**Festlegen der from- und sender-Eigenschaften**
-
-Beim Schreiben einer Nachricht stellen in den meisten Fällen die From- und Sender-Eigenschaften den gleichen angemeldeten Benutzer dar, es sei denn, eine der beiden Eigenschaften wird wie in den folgenden Szenarien beschrieben aktualisiert:
-
-- Die **from**-Eigenschaft kann geändert werden, wenn der Exchange-Administrator **sendAs**-Rechte des Postfachs anderen Benutzern zugewiesen hat. Der Administrator kann dies tun, indem er **Postfachberechtigungen** des Postfachbesitzers im Azure-Portal auswählt oder das Exchange Admin Center oder ein Windows PowerShell Add-ADPermission-Cmdlet verwendet. Dann können Sie programmgesteuert die **from**-Eigenschaft eines dieser Benutzer festlegen, die **sendAs**-Rechte für das Postfach haben.
-- Die **sender**-Eigenschaft kann geändert werden, wenn der Postfachbesitzer das Recht, Nachrichten von diesem Postfach aus zu senden, an einen oder mehrere Benutzer delegiert hat. Der Postfachbesitzer kann in Outlook an einen Stellvertreter delegieren. Wenn ein Stellvertreter eine Nachricht im Namen des Postfachbesitzers sendet, ist die **sender**-Eigenschaft auf das Konto des Stellvertreters festgelegt, während die **from**-Eigenschaft weiterhin den Postfachbesitzer angibt. Programmgesteuert können Sie die **sender**-Eigenschaft auf einen Benutzer festlegen, der Stellvertretungsrechte für dieses Postfach besitzt.
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|

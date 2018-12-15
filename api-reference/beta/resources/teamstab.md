@@ -1,12 +1,12 @@
 ---
 title: Ressourcentyp teamsTab
 description: 'Eine TeamsTab ist eine Registerkarte, hat fixiert an einen Kanal innerhalb eines Teams (angeschlossen). '
-ms.openlocfilehash: cba82432f6ade7baa591c3abb7e099ec7f6e9d5f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 102d4c0b766d8a0d9bdf22cb2ed76f5e06d87ad5
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061639"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283619"
 ---
 # <a name="teamstab-resource-type"></a>Ressourcentyp teamsTab
 
@@ -33,7 +33,7 @@ Eine TeamsTab ist eine [Registerkarte](../resources/teamstab.md) , hat fixiert a
 |  displayName            |   string                  |  Der Name der Registerkarte.     |
 |  name            |   string                  |  (Veraltet) Der Name der Registerkarte.     |
 |  teamsAppId           |   string             |  App-Definition-Bezeichner der Registerkarte. Dieser Wert kann nach der Erstellung der Registerkarte geändert werden.     |
-|  sortOrderIndex  |   Int                     |  Index der Reihenfolge für die Sortierung von Registerkarten     |
+|  sortOrderIndex  |   Int                     |  Index der Reihenfolge für die Sortierung von Registerkarten verwendet werden soll.     |
 |  webUrl          |   string                  |  Deep-Link-Url der Registerkarte-Instanz. Schreibgeschützt.     |
 |  Konfiguration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Container für benutzerdefinierte Einstellungen angewendet auf die Registerkarte an. Die Registerkarte gilt nur, wenn diese Eigenschaft festgelegt ist konfiguriert.     |
 
