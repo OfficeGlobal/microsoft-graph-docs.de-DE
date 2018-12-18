@@ -1,12 +1,13 @@
 ---
 title: resourceOperation aktualisieren
 description: Aktualisiert die Eigenschaften von Objekten des Typs resourceOperation.
-ms.openlocfilehash: b89cfb962c6c7f573b4f7f7c6862edd9a66fa833
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8050b91aee679f9dd29e78cbbad62f9f6352343e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065495"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317822"
 ---
 # <a name="update-resourceoperation"></a>resourceOperation aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

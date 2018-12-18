@@ -1,12 +1,13 @@
 ---
 title: 'RangeBorderCollection: ItemAt'
 description: Dient zum Abrufen eines Rahmenobjekts mithilfe seines Index.
-ms.openlocfilehash: e045f700e61301c5f0cf801827279b4b51b71b92
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 0faddd08657881af1aa70d98f45ec740c351744e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059424"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322113"
 ---
 # <a name="rangebordercollection-itemat"></a>RangeBorderCollection: ItemAt
 

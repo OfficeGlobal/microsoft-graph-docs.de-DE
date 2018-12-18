@@ -1,12 +1,13 @@
 ---
 title: iosLobApp erstellen
 description: Erstellt ein neues iosLobApp-Objekt.
-ms.openlocfilehash: c3a1d5f1f2b693abeba28ca1256eaf29143c9908
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8ea8c1637f963fa25c8afa20c21720870b63a462
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019793"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320734"
 ---
 # <a name="create-ioslobapp"></a>iosLobApp erstellen
 
@@ -32,9 +33,9 @@ POST /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,14 +1,15 @@
 ---
-title: Liste joinedTeams
+title: joinedTeams auflisten
 description: Abrufen des Teams für die der Microsoft-Teams, die der Benutzer ein direktes Mitglied ist.
-ms.openlocfilehash: fc5e7f01775e352c61802c457bfa9c41a218463a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 1e29b21adbf37128ccf8fe7ff9d70596c7b72499
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017808"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317745"
 ---
-# <a name="list-joinedteams"></a>Liste joinedTeams
+# <a name="list-joinedteams"></a>joinedTeams auflisten
 
 
 
@@ -38,7 +39,7 @@ GET /users/{id}/joinedTeams
 Die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) werden derzeit nicht unterstützt.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Accept  | application/json|

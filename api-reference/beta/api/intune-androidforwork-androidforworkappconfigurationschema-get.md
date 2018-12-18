@@ -1,12 +1,13 @@
 ---
 title: Abrufen von „androidForWorkAppConfigurationSchema“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs androidForWorkAppConfigurationSchema.
-ms.openlocfilehash: 9ece3217670089575ea596dd8fa7b02571cd527b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 94aea1a7fc058e3e318edf73ad45c6aebde8f3e5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061163"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316366"
 ---
 # <a name="get-androidforworkappconfigurationschema"></a>Abrufen von „androidForWorkAppConfigurationSchema“
 
@@ -36,9 +37,9 @@ GET /deviceManagement/androidForWorkAppConfigurationSchemas/{androidForWorkAppCo
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

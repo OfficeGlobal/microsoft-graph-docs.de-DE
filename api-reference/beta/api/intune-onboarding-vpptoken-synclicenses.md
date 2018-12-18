@@ -1,12 +1,13 @@
 ---
 title: syncLicenses-Aktion
 description: Synchronisiert Lizenzen, die einem bestimmten appleVolumePurchaseProgramToken zugeordnet sind
-ms.openlocfilehash: 36b0e141c398b17319711753928312a1353d2ab5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3bc0e1f13ebfa56d4c2c1fb06f08ddc0e9fcf238
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063845"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317129"
 ---
 # <a name="synclicenses-action"></a>syncLicenses-Aktion
 
@@ -34,9 +35,9 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/syncLicenses
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

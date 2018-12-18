@@ -1,12 +1,13 @@
 ---
 title: Geräte auflisten
 description: 'Dient zum Abrufen einer Liste von Geräten, die in dem Verzeichnis registriert sind. '
-ms.openlocfilehash: 3e8d6b61dd9eb59e3475fa8c5d095ea649f0b9f2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 04275c3d6356fbf28434b7bbe6ebfbd54f6bba8c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063117"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320286"
 ---
 # <a name="list-devices"></a>Geräte auflisten
 
@@ -34,7 +35,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

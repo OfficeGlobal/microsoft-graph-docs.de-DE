@@ -1,12 +1,13 @@
 ---
 title: Abrufen von „androidForWorkEnrollmentProfile“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs androidForWorkEnrollmentProfile.
-ms.openlocfilehash: 69f5d4df7ae847b49edfe66ba3e44adc96f0c818
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7983524b6992c68d01766d8c6015a05bbfe7342b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064046"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315876"
 ---
 # <a name="get-androidforworkenrollmentprofile"></a>Abrufen von „androidForWorkEnrollmentProfile“
 
@@ -36,9 +37,9 @@ GET /deviceManagement/androidForWorkEnrollmentProfiles/{androidForWorkEnrollment
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

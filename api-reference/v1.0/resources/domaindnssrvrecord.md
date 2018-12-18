@@ -1,12 +1,13 @@
 ---
 title: domainDnsSrvRecord-Ressourcentyp
 description: Stellt einen SRV-Eintrag dar, der der DNS-Zonendatei einer bestimmten Domäne im Mandanten hinzugefügt wird. Geerbt von der Entität DomainDnsRecord.
-ms.openlocfilehash: 1fd1123866d1674aec167de8bec8ef9a45be8d99
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: d8fbdb6a99e2a4c88b38d350ace3976842eb7f92
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017826"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318823"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>domainDnsSrvRecord-Ressourcentyp
 

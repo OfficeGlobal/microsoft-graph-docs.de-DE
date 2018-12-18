@@ -1,12 +1,13 @@
 ---
 title: Ereignis löschen
 description: Löschen eines event-Objekts.
-ms.openlocfilehash: 41623ad938a37ba762e843ab007f772ac8ae7504
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: b9867fb9847ca2971dfca217a48808cc5f962069
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064763"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318438"
 ---
 # <a name="delete-event"></a>Ereignis löschen
 
@@ -33,7 +34,7 @@ DELETE /groups/{id}/calendar/events/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

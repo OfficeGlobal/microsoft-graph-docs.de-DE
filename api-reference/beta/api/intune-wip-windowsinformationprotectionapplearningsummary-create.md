@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionAppLearningSummary erstellen
 description: Erstellen eines neuen windowsInformationProtectionAppLearningSummary-Objekts.
-ms.openlocfilehash: 671ab1efd631541871623fd1687639dd3d8d95ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 018d31a7ea356478bff2d416e13d2924931cc7cb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065033"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318753"
 ---
 # <a name="create-windowsinformationprotectionapplearningsummary"></a>windowsInformationProtectionAppLearningSummary erstellen
 
@@ -34,9 +35,9 @@ POST /deviceManagement/windowsInformationProtectionAppLearningSummaries
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

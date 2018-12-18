@@ -1,12 +1,13 @@
 ---
 title: 'Range: BoundingRect'
 description: .
-ms.openlocfilehash: 25a313fca1fe73c0717777b4dabc4c9b6eb9372f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 937a6cfa7cbb1d1d95f27139aaa12a8ae444f887
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058134"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317297"
 ---
 # <a name="range-boundingrect"></a>Range: BoundingRect
 

@@ -1,12 +1,13 @@
 ---
 title: Abrufen von roleScopeTag
 description: Lesen Sie Eigenschaften und Beziehungen des RoleScopeTag-Objekts.
-ms.openlocfilehash: 43804354b159a62a074ebe11bb6c24a08e0b3a6e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 788cfcce79bd451822c1c6a4c85d156a2cae9f1f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062880"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321049"
 ---
 # <a name="get-rolescopetag"></a>Abrufen von roleScopeTag
 
@@ -37,9 +38,9 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

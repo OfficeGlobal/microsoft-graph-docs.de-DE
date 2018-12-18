@@ -1,12 +1,13 @@
 ---
 title: remoteAssistancePartner aktualisieren
 description: Aktualisieren der Eigenschaften eines remoteAssistancePartner-Objekts.
-ms.openlocfilehash: 62647e197d7c4666ce177fff6c2f1fb7dd1271af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 119e5ab22ccd779635b66c06479024a4fc3f1ea6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060635"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317311"
 ---
 # <a name="update-remoteassistancepartner"></a>remoteAssistancePartner aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

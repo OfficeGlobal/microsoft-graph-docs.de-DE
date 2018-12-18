@@ -1,12 +1,13 @@
 ---
 title: telecomExpenseManagementPartner aktualisieren
 description: Aktualisieren der Eigenschaften eines telecomExpenseManagementPartner-Objekts.
-ms.openlocfilehash: 51c3ed10b0002b4ba1a2d70a3be0a3cde69a5a05
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5180ce7338bdffde0fb51f504882e2b82ca96cac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063173"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318725"
 ---
 # <a name="update-telecomexpensemanagementpartner"></a>telecomExpenseManagementPartner aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManageme
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

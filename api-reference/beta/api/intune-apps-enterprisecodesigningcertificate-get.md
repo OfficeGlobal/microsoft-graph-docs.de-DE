@@ -1,12 +1,13 @@
 ---
 title: Abrufen von enterpriseCodeSigningCertificate
 description: Lesen Sie Eigenschaften und Beziehungen des EnterpriseCodeSigningCertificate-Objekts.
-ms.openlocfilehash: f6b2967ec4149ff3a5d93251c1b96db616a39da2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2e6cd58c6cae8921d8fa117388ac774f006a8ae8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065792"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321868"
 ---
 # <a name="get-enterprisecodesigningcertificate"></a>Abrufen von enterpriseCodeSigningCertificate
 
@@ -36,9 +37,9 @@ GET /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSignin
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

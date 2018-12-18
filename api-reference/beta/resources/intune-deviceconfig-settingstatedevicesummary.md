@@ -1,12 +1,13 @@
 ---
 title: settingStateDeviceSummary-Ressourcentyp
 description: Zusammenfassung des Zustands der Gerätekonformitätsrichtlinien und -konfigurations-Einstellung
-ms.openlocfilehash: 9f2cca6be1773a7698dcc56fab00f9979e4ee071
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dff6f8966d321aa706fceabceb14a418ae8433f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059514"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318536"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>settingStateDeviceSummary-Ressourcentyp
 

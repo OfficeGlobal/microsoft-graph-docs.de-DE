@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „iosVppEBook“
 description: Listet die Eigenschaften und Beziehungen von Objekten des Typs iosVppEBook auf.
-ms.openlocfilehash: a0b69d40dcf5229a190d135cb5d154694d9d6771
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8c45486993b3f711017182fc781dc4c85358c238
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063276"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315813"
 ---
 # <a name="list-iosvppebooks"></a>Auflisten von „iosVppEBook“
 
@@ -34,9 +35,9 @@ GET /deviceAppManagement/managedEBooks
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

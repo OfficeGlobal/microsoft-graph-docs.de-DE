@@ -1,12 +1,13 @@
 ---
 title: Tabelle erstellen
 description: Verwenden Sie diese API zum Erstellen einer neuen Tabelle.
-ms.openlocfilehash: f82ea610a9c458a5cfbba9985cecba80d7ce3dc3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 75d4199b4c5cefcb17acccfedfb5c45a3f296de0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066092"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321623"
 ---
 # <a name="create-table"></a>Tabelle erstellen
 

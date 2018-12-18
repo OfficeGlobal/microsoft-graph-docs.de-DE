@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionNetworkLearningSummaries auflisten
 description: Auflisten von Eigenschaften und Beziehungen der windowsInformationProtectionNetworkLearningSummary-Objekte.
-ms.openlocfilehash: ce9ff2e2fb662408f911cb907f22a7dc72aede72
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fbbf5fe777d60ab2187b512629cee8fb3765ddd4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061342"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322302"
 ---
 # <a name="list-windowsinformationprotectionnetworklearningsummaries"></a>windowsInformationProtectionNetworkLearningSummaries auflisten
 
@@ -34,9 +35,9 @@ GET /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

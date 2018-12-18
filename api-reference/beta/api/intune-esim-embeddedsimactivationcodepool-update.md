@@ -1,12 +1,13 @@
 ---
 title: EmbeddedSIMActivationCodePool aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines EmbeddedSIMActivationCodePool-Objekts.
-ms.openlocfilehash: 50fc624840a19886e615f4acfe8b540c0fcf5ba0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 83a374ab748ec7b9f93c327b609a5213073f470b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061777"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318494"
 ---
 # <a name="update-embeddedsimactivationcodepool"></a>EmbeddedSIMActivationCodePool aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

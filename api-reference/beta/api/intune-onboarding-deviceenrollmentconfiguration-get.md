@@ -1,12 +1,13 @@
 ---
 title: deviceEnrollmentConfiguration abrufen
 description: Lesen von Eigenschaften und Beziehungen des deviceEnrollmentConfiguration-Objekts.
-ms.openlocfilehash: 80d965195988efb24eeb5642094ec222753c0eb8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 87b8afbac5e6e59b31bfa60ebf791529c9764f32
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27057967"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323625"
 ---
 # <a name="get-deviceenrollmentconfiguration"></a>deviceEnrollmentConfiguration abrufen
 
@@ -36,9 +37,9 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

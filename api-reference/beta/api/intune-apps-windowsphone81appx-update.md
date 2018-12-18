@@ -1,12 +1,13 @@
 ---
 title: WindowsPhone81AppX aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines windowsPhone81AppX-Objekts.
-ms.openlocfilehash: 3f3f17be9ba4df2b214b6167f7d54972c2f3994d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ebd110bd76797682ebd9a53b72e661e9e71d583
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064433"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321616"
 ---
 # <a name="update-windowsphone81appx"></a>WindowsPhone81AppX aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

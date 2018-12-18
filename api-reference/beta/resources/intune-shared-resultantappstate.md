@@ -1,12 +1,13 @@
 ---
 title: ResultantAppState Enum-Typ
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 7c3dd96aca4ed94a45a36b9a48a2908f805bb1f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7b45353867abe77143fb97755aff457e0c81deb8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064905"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319425"
 ---
 # <a name="resultantappstate-enum-type"></a>ResultantAppState Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27064905"
 
 Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |installiert|1|Die Anwendung wird ohne Fehler installiert.|
 |failed|2|Die Anwendung konnte nicht installiert werden.|

@@ -1,12 +1,13 @@
 ---
 title: WindowsPhone81StoreApp aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines windowsPhone81StoreApp-Objekts.
-ms.openlocfilehash: b4fe1d1992ac8dc003ae6ddcf8dd8244b3096c5b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f17bf43518c46397db4ad8c15a717b8f1b8c9fa5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060865"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316128"
 ---
 # <a name="update-windowsphone81storeapp"></a>WindowsPhone81StoreApp aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

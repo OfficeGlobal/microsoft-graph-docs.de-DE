@@ -1,12 +1,13 @@
 ---
 title: deviceManagementExchangeConnector aktualisieren
 description: Aktualisieren der Eigenschaften eines deviceManagementExchangeConnector-Objekts.
-ms.openlocfilehash: 602833b0ad956df635523bdd1732c25f84093d83
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 37fe0adbb2fb80e2a792b1a75a6b35235ab30f16
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060768"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317178"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>deviceManagementExchangeConnector aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

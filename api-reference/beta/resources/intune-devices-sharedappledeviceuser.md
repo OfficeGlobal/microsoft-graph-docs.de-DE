@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp sharedAppleDeviceUser
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 79ebc5ae520c1c9b40bffb6a86e95693c52fa1e6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4e16d691ed6286fb8046c0693292012e1e94a0ca
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060097"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315989"
 ---
 # <a name="sharedappledeviceuser-resource-type"></a>Ressourcentyp sharedAppleDeviceUser
 

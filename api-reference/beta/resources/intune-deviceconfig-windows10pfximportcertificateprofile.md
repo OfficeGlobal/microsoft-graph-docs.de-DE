@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windows10PFXImportCertificateProfile
 description: Deprecated
-ms.openlocfilehash: 7ad00afaca0da4ec4ba56d2a2e0d09b7bc9e9899
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d9fa2d45694f4c26187a402f769afcc53e27dac6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063951"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318375"
 ---
 # <a name="windows10pfximportcertificateprofile-resource-type"></a>Ressourcentyp windows10PFXImportCertificateProfile
 

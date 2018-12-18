@@ -1,12 +1,13 @@
 ---
 title: windowsDefenderAdvancedThreatProtectionConfiguration-Ressourcentyp
 description: Konfiguration von Windows Defender Advanced Threat Protection
-ms.openlocfilehash: acc1918757a738b8b4849574c6a819f44101e138
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 41b04630dde10b5b360530e7a7b5da9887838bfd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063497"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317248"
 ---
 # <a name="windowsdefenderadvancedthreatprotectionconfiguration-resource-type"></a>windowsDefenderAdvancedThreatProtectionConfiguration-Ressourcentyp
 

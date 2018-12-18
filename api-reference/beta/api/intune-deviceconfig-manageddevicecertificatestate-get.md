@@ -1,12 +1,13 @@
 ---
 title: Abrufen von managedDeviceCertificateState
 description: Lesen Sie Eigenschaften und Beziehungen des ManagedDeviceCertificateState-Objekts.
-ms.openlocfilehash: 30d5d07d238f537a550b73029e950446e183798f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 54f276e1639dd5514e7a5ee919a4235d344c6dc4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059495"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315911"
 ---
 # <a name="get-manageddevicecertificatestate"></a>Abrufen von managedDeviceCertificateState
 
@@ -52,9 +53,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

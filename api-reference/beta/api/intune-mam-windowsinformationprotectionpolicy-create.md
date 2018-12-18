@@ -1,12 +1,13 @@
 ---
 title: Erstellen von windowsInformationProtectionPolicy
 description: Erstellt neue Objekte des Typs windowsInformationProtectionPolicy.
-ms.openlocfilehash: ff73e12c1884c0b4ffbbbdd84dece73fd29cdfb6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 80615563dcc85b74a7f8d40f9c6752d4c16fdae8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064615"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323779"
 ---
 # <a name="create-windowsinformationprotectionpolicy"></a>Erstellen von windowsInformationProtectionPolicy
 
@@ -34,9 +35,9 @@ POST /deviceAppManagement/windowsInformationProtectionPolicies
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

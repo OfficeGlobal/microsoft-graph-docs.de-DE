@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionAppLockerFile erstellen
 description: Erstellen eines neuen windowsInformationProtectionAppLockerFile-Objekts.
-ms.openlocfilehash: 380b4b9358c3bc30337272ced4b92563978d7ffe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f2cbed922d6f2ac130169e5d9c85e3a5231184a5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062799"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317122"
 ---
 # <a name="create-windowsinformationprotectionapplockerfile"></a>windowsInformationProtectionAppLockerFile erstellen
 
@@ -37,9 +38,9 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „androidGeneralDeviceConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs androidGeneralDeviceConfiguration auf.
-ms.openlocfilehash: 3e0205bb65b52a9e57e52063ef5c6a47d4e6d205
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8e7fcf0b11e3e4cd21cce99ba0ab419c2f6c87e2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019379"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319530"
 ---
 # <a name="list-androidgeneraldeviceconfigurations"></a>Auflisten von „androidGeneralDeviceConfiguration“
 
@@ -32,9 +33,9 @@ GET /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: mobileThreatDefenseConnectors auflisten
 description: Listet die Eigenschaften und Beziehungen von Objekten des Typs mobileThreatDefenseConnector auf.
-ms.openlocfilehash: 12bec14500ab482730cc1c3247a571f4f93a292e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 18e2b3e9ed845a3fb55432a159569324a9cb0eaa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019572"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319180"
 ---
 # <a name="list-mobilethreatdefenseconnectors"></a>mobileThreatDefenseConnectors auflisten
 
@@ -32,9 +33,9 @@ GET /deviceManagement/mobileThreatDefenseConnectors
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

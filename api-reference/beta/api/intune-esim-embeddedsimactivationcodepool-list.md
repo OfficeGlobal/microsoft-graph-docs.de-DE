@@ -1,12 +1,13 @@
 ---
 title: Liste embeddedSIMActivationCodePools
 description: Listeneigenschaften und Beziehungen der EmbeddedSIMActivationCodePool-Objekte.
-ms.openlocfilehash: dfe24dd63df6765fab345a14e11e2a9e49e2b34f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fc0917aa70fca80a387aa46cdadc99643f112abb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064393"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316198"
 ---
 # <a name="list-embeddedsimactivationcodepools"></a>Liste embeddedSIMActivationCodePools
 
@@ -34,9 +35,9 @@ GET /deviceManagement/embeddedSIMActivationCodePools
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

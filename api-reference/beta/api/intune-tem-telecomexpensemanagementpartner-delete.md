@@ -1,12 +1,13 @@
 ---
 title: telecomExpenseManagementPartner löschen
 description: Löscht ein telecomExpenseManagementPartner-Objekt.
-ms.openlocfilehash: 6546abe170bbb3625ded6c667384f0f456369082
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d79296283b57097d2aa46ae062f4391e93e3ba46
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065881"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318977"
 ---
 # <a name="delete-telecomexpensemanagementpartner"></a>telecomExpenseManagementPartner löschen
 
@@ -34,9 +35,9 @@ DELETE /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagem
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

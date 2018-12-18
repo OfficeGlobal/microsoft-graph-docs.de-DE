@@ -1,12 +1,13 @@
 ---
 title: Abrufen von windows81SCEPCertificateProfile
 description: Lesen Sie Eigenschaften und Beziehungen des windows81SCEPCertificateProfile-Objekts.
-ms.openlocfilehash: 389914336d4d937306829336b155440fe8ac14d6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bb2f627738b3ab0e86826979f75f0863855e2142
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065503"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316282"
 ---
 # <a name="get-windows81scepcertificateprofile"></a>Abrufen von windows81SCEPCertificateProfile
 
@@ -38,9 +39,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

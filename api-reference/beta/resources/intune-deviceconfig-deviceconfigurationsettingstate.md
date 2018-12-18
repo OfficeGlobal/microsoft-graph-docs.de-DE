@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationSettingState-Ressourcentyp
 description: Status der Konfigurationseinstellungen für ein bestimmtes Gerät
-ms.openlocfilehash: 551b5ccb215492f48d9cd26bcf8b7e2cb80ed787
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ca50fe6a6186578739b166b1239a309824d1e51
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061595"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316114"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>deviceConfigurationSettingState-Ressourcentyp
 

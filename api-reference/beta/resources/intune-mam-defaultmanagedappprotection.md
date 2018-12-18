@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp „defaultManagedAppProtection“
 description: Diese Richtlinie wird verwendet, um detaillierte Verwaltungseinstellungen für eine festgelegte Gruppe von Apps zu konfigurieren, die für alle Benutzer greifen, die nicht unter eine Richtlinie des Typs „targetedManagedAppProtection“ fallen.
-ms.openlocfilehash: 2627ffdafe46d524f31c2a4068cd0c96665ebc8a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 17f5377df623d439fbd68342f26d9a570c676f55
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062677"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317045"
 ---
 # <a name="defaultmanagedappprotection-resource-type"></a>Ressourcentyp „defaultManagedAppProtection“
 

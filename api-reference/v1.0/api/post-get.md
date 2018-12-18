@@ -1,12 +1,13 @@
 ---
 title: Beitrag abrufen
 description: 'Dient zum Abrufen der Eigenschaften und der Beziehungen eines Beitrags in einem angegebenen Thread. Sie können das übergeordnete Element angeben. '
-ms.openlocfilehash: d9f697ac45bf0a817334bdcfd46febc74f10e107
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: f21f2a55e3bf456030131a2b14a6d9db5739a43f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016100"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320307"
 ---
 # <a name="get-post"></a>Beitrag abrufen
 
@@ -32,7 +33,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

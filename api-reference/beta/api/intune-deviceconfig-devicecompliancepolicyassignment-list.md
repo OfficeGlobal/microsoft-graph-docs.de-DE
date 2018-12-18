@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „deviceCompliancePolicyAssignment“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs deviceCompliancePolicyAssignment auf.
-ms.openlocfilehash: 5ef75a78265324493fc86fdac198b49c2d616edc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 38b9979bb6195865efaf3f5a186891b57805c656
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064083"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318733"
 ---
 # <a name="list-devicecompliancepolicyassignments"></a>Auflisten von „deviceCompliancePolicyAssignment“
 
@@ -34,9 +35,9 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

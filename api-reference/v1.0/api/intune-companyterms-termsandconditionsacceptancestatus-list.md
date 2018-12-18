@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „termsAndConditionsAcceptanceStatus“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs termsAndConditionsAcceptanceStatus auf.
-ms.openlocfilehash: 493af3465058651aca1e467a65c7c542fe7f6943
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c32cbde73a27ce88fdb6049cf2e3aacf869b1bdd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019183"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321112"
 ---
 # <a name="list-termsandconditionsacceptancestatuses"></a>Auflisten von „termsAndConditionsAcceptanceStatus“
 
@@ -32,9 +33,9 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatus
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

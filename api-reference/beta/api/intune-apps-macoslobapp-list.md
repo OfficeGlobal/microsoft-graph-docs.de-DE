@@ -1,12 +1,13 @@
 ---
 title: Liste macOSLobApps
 description: Listeneigenschaften und Beziehungen der MacOSLobApp-Objekte.
-ms.openlocfilehash: 80c7baf887c18fe341f4f00780157034de03f868
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bf65160d55f63808c93e9a8ca1aef6f4918423b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063035"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318564"
 ---
 # <a name="list-macoslobapps"></a>Liste macOSLobApps
 
@@ -34,9 +35,9 @@ GET /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: enrollmentConfigurationAssignment löschen
 description: Löscht ein enrollmentConfigurationAssignment-Objekt.
-ms.openlocfilehash: 5c8be65277b0ccade632009d5d470bd185fe3ee5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 909bae2ac95d05ad25ed760772a056d8d42ee39a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062895"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320321"
 ---
 # <a name="delete-enrollmentconfigurationassignment"></a>enrollmentConfigurationAssignment löschen
 
@@ -34,9 +35,9 @@ DELETE /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigu
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp „deviceAppManagement“
 description: Singleton-Entität, die als Container für alle Funktionen zur Verwaltung von Apps auf Geräten fungiert
-ms.openlocfilehash: 6c62729079b4ff1811618ab7a9a4b347ce527e87
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1c77a7c08f50f765d45d22fc95e2e086ac904c6e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065583"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317220"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Ressourcentyp „deviceAppManagement“
 

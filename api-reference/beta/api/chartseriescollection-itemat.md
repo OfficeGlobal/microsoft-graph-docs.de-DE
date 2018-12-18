@@ -1,12 +1,13 @@
 ---
 title: 'ChartSeriesCollection: ItemAt'
 description: Ruft eine Datenreihe anhand ihrer Position in der Sammlung ab.
-ms.openlocfilehash: 7699a1048efcd81531d646f14d11443db8fc67d6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: e1027919034688fd90380497a42b77707fa1de72
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061254"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316436"
 ---
 # <a name="chartseriescollection-itemat"></a>ChartSeriesCollection: ItemAt
 

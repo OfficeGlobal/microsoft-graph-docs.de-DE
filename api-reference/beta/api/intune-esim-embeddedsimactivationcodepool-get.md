@@ -1,12 +1,13 @@
 ---
 title: Abrufen von embeddedSIMActivationCodePool
 description: Lesen Sie Eigenschaften und Beziehungen des EmbeddedSIMActivationCodePool-Objekts.
-ms.openlocfilehash: 97752212df207e5c530c785b699382ac8c0f4a64
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f81a9d52e824d81b50be4de32a0ceee66a5db06c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059194"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318529"
 ---
 # <a name="get-embeddedsimactivationcodepool"></a>Abrufen von embeddedSIMActivationCodePool
 
@@ -36,9 +37,9 @@ GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodeP
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Abrufen von dataSharingConsent
 description: Lesen Sie Eigenschaften und Beziehungen des DataSharingConsent-Objekts.
-ms.openlocfilehash: baa1995d55c820ae3fe148320186265d6dbf81a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5cb961260d7d22479abc4c16acf83d6a91378d12
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060431"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317626"
 ---
 # <a name="get-datasharingconsent"></a>Abrufen von dataSharingConsent
 
@@ -36,9 +37,9 @@ GET /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

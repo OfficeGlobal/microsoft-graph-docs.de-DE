@@ -1,12 +1,13 @@
 ---
 title: Abrufen von networkIPv4ConfigurationManagementCondition
 description: Lesen Sie Eigenschaften und Beziehungen des networkIPv4ConfigurationManagementCondition-Objekts.
-ms.openlocfilehash: ab6b216b031b457206440f3b01ffffdf7e325248
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a13e202d1347705edd4d26e01a65668dba971f73
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063755"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319495"
 ---
 # <a name="get-networkipv4configurationmanagementcondition"></a>Abrufen von networkIPv4ConfigurationManagementCondition
 
@@ -37,9 +38,9 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

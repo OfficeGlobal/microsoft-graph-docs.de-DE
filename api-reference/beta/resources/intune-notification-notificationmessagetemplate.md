@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp „notificationMessageTemplate“
 description: " Abschnitt. Mit dem Objekt „notificationMessageTemplate“ können Sie eigene benutzerdefinierte Benachrichtigungen erstellen, aus denen Administratoren wählen können, wenn sie konfigurieren, welche Aktionen bei Verstößen gegen die Konformitätsrichtlinien ausgeführt werden sollen."
-ms.openlocfilehash: a7d38c1a8952b1d7b8fe170b179b5b6c3bc019a5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eae9d0ada0dcaf160b0b7dc8802af3ccbcfaa8f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063448"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316240"
 ---
 # <a name="notificationmessagetemplate-resource-type"></a>Ressourcentyp „notificationMessageTemplate“
 

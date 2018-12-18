@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp userSecurityState
 description: Statusinformationen über das Benutzerkonto enthält.
-ms.openlocfilehash: dbb4b6600cc11a75c84f2f0b233535d012309f88
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 5347ec599b88ffa65138c44cfb294339585484c8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018544"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319488"
 ---
 # <a name="usersecuritystate-resource-type"></a>Ressourcentyp userSecurityState
 

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp verwendet
-description: 'Einen Einblick, Dokumente, die von einem bestimmten Benutzer darstellt. Einblicke in die gibt, die zutreffenden Dokumente, die ein Benutzer anzeigen oder darauf zugreifen. Dazu gehören Dokumente in:'
-ms.openlocfilehash: 3c82d268a67ef52d0ddfdad9193558080048ad6b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Einen Einblick, Dokumente, die von einem bestimmten Benutzer darstellt. Einblicke in die gibt, die zutreffenden Dokumente, die ein Benutzer anzeigen oder darauf zugreifen.
+author: simonhult
+ms.openlocfilehash: 89eac33ad954905c77a26df669bb15a2cf471edd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063993"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323485"
 ---
 # <a name="used-resource-type"></a>Ressourcentyp verwendet
 

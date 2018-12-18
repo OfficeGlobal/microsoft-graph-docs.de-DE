@@ -1,12 +1,13 @@
 ---
 title: getEffectivePermissions-Funktion
 description: Noch nicht dokumentiert
-ms.openlocfilehash: dc2f9022a0f87e3869191ecea8a65ac9d60d6c9c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a4e188e9d8ec098f66274e9dbeecb852bb34914b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060722"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317857"
 ---
 # <a name="geteffectivepermissions-function"></a>getEffectivePermissions-Funktion
 
@@ -35,9 +36,9 @@ GET /deviceManagement/getEffectivePermissions
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

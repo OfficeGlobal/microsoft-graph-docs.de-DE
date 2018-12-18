@@ -1,12 +1,13 @@
 ---
 title: EducationSchool löschen
 description: Löschen einer Schule.
-ms.openlocfilehash: 6ae69b725021c2a3e0a2776e8593c4346c5c6e34
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: e104265f718ad69a84b9e2362962d72763e8fc54
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061612"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323065"
 ---
 # <a name="delete-educationschool"></a>EducationSchool löschen
 
@@ -29,7 +30,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 DELETE /education/schools/{id}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

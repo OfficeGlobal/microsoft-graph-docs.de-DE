@@ -1,12 +1,13 @@
 ---
 title: CalendarGroup erstellen
 description: Mit dieser API können Sie eine neue Ressource des Typs „CalendarGroup“ erstellen.
-ms.openlocfilehash: 2eb1f87a168a071822c90c778806bfc7e3569c03
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: a68be3470489b20667112b67d15f4472a3817d4b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066044"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319047"
 ---
 # <a name="create-calendargroup"></a>CalendarGroup erstellen
 
@@ -28,7 +29,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /users/{id | userPrincipalName}/calendarGroups
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

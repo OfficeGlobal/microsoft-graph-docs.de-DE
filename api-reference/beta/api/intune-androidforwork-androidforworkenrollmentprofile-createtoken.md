@@ -1,12 +1,13 @@
 ---
 title: Aktion „createToken“
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 01455efd98b93debcd32979ecccb3c2649ff605c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d1e62847aeea37f9d365bc7c66281aba90c0e031
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061504"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322162"
 ---
 # <a name="createtoken-action"></a>Aktion „createToken“
 
@@ -34,9 +35,9 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles/{androidForWorkEnrollmen
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

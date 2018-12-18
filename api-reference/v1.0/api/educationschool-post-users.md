@@ -1,12 +1,13 @@
 ---
 title: EducationUser zu einer educationSchool hinzufügen
 description: Hinzufügen eines Benutzers zu einer Schule.
-ms.openlocfilehash: 950dd0519c97277b61251229f56abfb18328c14e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: d7cabee054eddb6ac83bfdee5b0dea1ea25f9f36
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019542"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323079"
 ---
 # <a name="add-educationuser-to-an-educationschool"></a>EducationUser zu einer educationSchool hinzufügen
 
@@ -27,7 +28,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /education/schools/{id}/users/$ref
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

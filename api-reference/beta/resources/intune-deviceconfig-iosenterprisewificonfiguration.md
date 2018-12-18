@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp iosEnterpriseWiFiConfiguration
 description: Durch die Konfigurationen in dieses Profil bereitstellen, können Sie das Gerät iOS Verbindung zum gewünschten Wi-Fi-Endpunkt anweisen. Durch Angeben von erwartet, dass die Authentifizierungstypen-Methode und der Sicherheit durch Wi-Fi-Endpunkt, dass Sie die Wi-Fi-Verbindung nahtlos für Endbenutzer vornehmen können.
-ms.openlocfilehash: 156a93afd9c94db23c0983deeda3a50e5926577e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e13e4290c0f9c459cf6f1dd0917eada8c29ecf46
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060034"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320104"
 ---
 # <a name="iosenterprisewificonfiguration-resource-type"></a>Ressourcentyp iosEnterpriseWiFiConfiguration
 

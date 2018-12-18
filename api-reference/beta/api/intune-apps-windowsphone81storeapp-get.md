@@ -1,12 +1,13 @@
 ---
 title: Abrufen von windowsPhone81StoreApp
 description: Lesen Sie Eigenschaften und Beziehungen des windowsPhone81StoreApp-Objekts.
-ms.openlocfilehash: 65a242a1ac906ee07ac7be98afa945db10b9e048
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ea7a0fc6f379523cf6e5485578c9092ea9a5c02
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063278"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323219"
 ---
 # <a name="get-windowsphone81storeapp"></a>Abrufen von windowsPhone81StoreApp
 
@@ -38,9 +39,9 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

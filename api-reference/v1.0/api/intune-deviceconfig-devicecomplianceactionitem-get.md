@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceActionItem abrufen
 description: Lesen von Eigenschaften und Beziehungen des deviceComplianceActionItem-Objekts.
-ms.openlocfilehash: 1697c7316495751a6bea18028f6e3df6ddaa469e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aa887105f15ffabd12490811e1e4a4ea85ec7e4b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017570"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319740"
 ---
 # <a name="get-devicecomplianceactionitem"></a>deviceComplianceActionItem abrufen
 
@@ -34,9 +35,9 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/schedu
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

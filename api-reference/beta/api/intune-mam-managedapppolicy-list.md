@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „managedAppPolicy“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs managedAppPolicy auf.
-ms.openlocfilehash: e5aebca04c3368ed168fa16b6f3c9b8d19aacd71
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1883e49cb761861a00be27ed075c841e7a0ee177
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064638"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315953"
 ---
 # <a name="list-managedapppolicies"></a>Auflisten von „managedAppPolicy“
 
@@ -36,9 +37,9 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

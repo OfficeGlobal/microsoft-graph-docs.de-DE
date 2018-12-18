@@ -1,12 +1,13 @@
 ---
 title: Abrufen von windowsManagementAppHealthState
 description: Lesen Sie Eigenschaften und Beziehungen des WindowsManagementAppHealthState-Objekts.
-ms.openlocfilehash: be59679c926a0500f5b891e63f565fe67419d96d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 08a6964f44b8169867aa9514049cce9f0e8cd3f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062108"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316156"
 ---
 # <a name="get-windowsmanagementapphealthstate"></a>Abrufen von windowsManagementAppHealthState
 
@@ -36,9 +37,9 @@ GET /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementApp
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

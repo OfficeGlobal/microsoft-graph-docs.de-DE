@@ -1,12 +1,13 @@
 ---
 title: windows10AppType Enum-Typ
 description: Typ des Windows-10-Anwendung.
-ms.openlocfilehash: c3d0cada500c7724215c616535a11b8126f4f5fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c75f8d97ecaa3db4a917042b75dab49d8a313300
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063923"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321994"
 ---
 # <a name="windows10apptype-enum-type"></a>windows10AppType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27063923"
 
 Typ des Windows-10-Anwendung.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |Desktop|0|Desktop.|
 |universelle|1|Universal.|

@@ -1,12 +1,13 @@
 ---
 title: 'event: tentativelyAccept'
 description: Mit Vorbehalt annehmen Sie das angegebene Ereignis in einem Benutzerkalender ein.
-ms.openlocfilehash: 7e90f428f06c4bfaaaff063e38c9f159777a1e22
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 99e0060f087140869614737296c9684cf3f1c189
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058023"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318214"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
@@ -44,7 +45,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext

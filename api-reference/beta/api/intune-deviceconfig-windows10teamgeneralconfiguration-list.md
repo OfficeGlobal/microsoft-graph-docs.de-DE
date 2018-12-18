@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „windows10TeamGeneralConfiguration“
 description: Listet die Eigenschaften und Beziehungen von Objekten des Typs windows10TeamGeneralConfiguration auf.
-ms.openlocfilehash: 350f67c881d1c154df3bb9066c9cb23321817104
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8776e14c41930ce84ee765e4a92fb467fdd01cfc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062198"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315967"
 ---
 # <a name="list-windows10teamgeneralconfigurations"></a>Auflisten von „windows10TeamGeneralConfiguration“
 
@@ -35,9 +36,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

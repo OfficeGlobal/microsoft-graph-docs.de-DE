@@ -1,12 +1,13 @@
 ---
 title: ManagedDeviceEnrollmentFailureTrends-Funktion
 description: Metadaten für die Registrierung Trends Fehlerbericht
-ms.openlocfilehash: bebbebfff3b37ef940e55583e859736f6caf92cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 873169eb3532b149de337ff21afe4fb8c3f67fe1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065884"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316331"
 ---
 # <a name="manageddeviceenrollmentfailuretrends-function"></a>ManagedDeviceEnrollmentFailureTrends-Funktion
 
@@ -35,9 +36,9 @@ GET /reports/managedDeviceEnrollmentFailureTrends
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

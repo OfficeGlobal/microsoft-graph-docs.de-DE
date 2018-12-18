@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp educationSubmissionIndividualRecipient
 description: 'Eine Unterklasse der EducationSubmissionRecipient, der angibt, dass eine Übermittlung an eine Person in der Klasse zugewiesen ist.  '
-ms.openlocfilehash: 4b74defc1a21427b6169e399262d827561178e5f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 3447c91fe4f387508a3afdf80a7337786d46f860
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058855"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318802"
 ---
 # <a name="educationsubmissionindividualrecipient-resource-type"></a>Ressourcentyp educationSubmissionIndividualRecipient
 

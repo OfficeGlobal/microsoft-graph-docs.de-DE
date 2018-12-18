@@ -1,12 +1,13 @@
 ---
 title: WindowsPhone81VpnConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines windowsPhone81VpnConfiguration-Objekts.
-ms.openlocfilehash: 912badc4f71155bc031b6692b44fb22fa9c39747
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5decc13b53ba632dd8ee37134ff245c2e9c18ba2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062203"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317542"
 ---
 # <a name="update-windowsphone81vpnconfiguration"></a>WindowsPhone81VpnConfiguration aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

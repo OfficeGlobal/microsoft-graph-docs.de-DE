@@ -1,12 +1,13 @@
 ---
 title: iosLobApp löschen
 description: Löscht ein iosLobApp-Objekt.
-ms.openlocfilehash: 302ff4913acc3d38d26a2841a46e52fd99e3afa1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9c4da47e4e52d69fbb10515185a7fef33cee4721
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065974"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322295"
 ---
 # <a name="delete-ioslobapp"></a>iosLobApp löschen
 
@@ -36,9 +37,9 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

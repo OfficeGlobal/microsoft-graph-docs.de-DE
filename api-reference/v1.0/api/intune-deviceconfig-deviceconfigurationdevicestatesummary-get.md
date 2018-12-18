@@ -1,12 +1,13 @@
 ---
 title: Abrufen von „deviceConfigurationDeviceStateSummary“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs deviceConfigurationDeviceStateSummary.
-ms.openlocfilehash: ca280048ccd880241fab88ab41e82df17a088f64
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 580fa843641ca164ac7af0fa5cbf536cd23cb422
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018237"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322001"
 ---
 # <a name="get-deviceconfigurationdevicestatesummary"></a>Abrufen von „deviceConfigurationDeviceStateSummary“
 
@@ -34,9 +35,9 @@ GET /deviceManagement/deviceConfigurationDeviceStateSummaries
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

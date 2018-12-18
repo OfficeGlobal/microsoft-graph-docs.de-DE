@@ -1,12 +1,13 @@
 ---
 title: Erstellen von androidWorkProfileWiFiConfiguration
 description: Erstellen eines neuen AndroidWorkProfileWiFiConfiguration-Objekts.
-ms.openlocfilehash: 7aa7b97631589b44bc8da1145db908889794db1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1055da3819a8e1ce476cda180349d72187eb6353
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065409"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322134"
 ---
 # <a name="create-androidworkprofilewificonfiguration"></a>Erstellen von androidWorkProfileWiFiConfiguration
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: 'Rufen Sie: PlayPrompt'
 description: Wiedergabe einer Aufforderung in den Anruf.
-ms.openlocfilehash: a5fb5d34264298726add6cf2742d1319bfcb6c95
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 37192d916a1fe4365abafa0564329450a7c67077
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062770"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316583"
 ---
 # <a name="call-playprompt"></a>Rufen Sie: PlayPrompt
 

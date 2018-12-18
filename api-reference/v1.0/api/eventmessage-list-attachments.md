@@ -1,12 +1,13 @@
 ---
 title: Anlagen auflisten
 description: Mit dieser API können Sie eine Liste von Anlagenobjekten abrufen.
-ms.openlocfilehash: c9540db402a39cf8bf8f35318d06e7e699e9c7f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 30c3709abebc9ba2fa0633eef6bd7d415e633ab4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019418"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317738"
 ---
 # <a name="list-attachments"></a>Anlagen auflisten
 
@@ -32,7 +33,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

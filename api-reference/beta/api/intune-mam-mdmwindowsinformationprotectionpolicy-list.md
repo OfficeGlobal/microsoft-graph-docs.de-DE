@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „mdmWindowsInformationProtectionPolicy“
 description: Listet die Eigenschaften und Beziehungen von Objekten des Typs mdmWindowsInformationProtectionPolicy auf.
-ms.openlocfilehash: 0709b2d1ed2466cbcf222d5c0ede808e0c5c8c97
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fbdf6a180940018744d5026893c71f8a2e414985
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062199"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322211"
 ---
 # <a name="list-mdmwindowsinformationprotectionpolicies"></a>Auflisten von „mdmWindowsInformationProtectionPolicy“
 
@@ -34,9 +35,9 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

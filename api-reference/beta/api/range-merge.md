@@ -1,12 +1,13 @@
 ---
 title: 'Range: merge'
 description: Führt die Zellen des Bereichs in einen Bereich im Arbeitsblatt zusammen.
-ms.openlocfilehash: 8680afec198cebb820fc695cf7714494a2539cdc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 628acea9c86ff7cf8b460fb5db2abb7157c85146
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062071"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317339"
 ---
 # <a name="range-merge"></a>Range: merge
 

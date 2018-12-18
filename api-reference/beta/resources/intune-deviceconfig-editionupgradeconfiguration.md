@@ -1,12 +1,13 @@
 ---
 title: editionUpgradeConfiguration-Ressourcentyp
 description: Editionsupgradekonfiguration Windows 10
-ms.openlocfilehash: be4f07d1bd1648ac9610ee5f74da4b5be9bcbee6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 44931dc54d6737f71425430a791964f1623421de
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064057"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319915"
 ---
 # <a name="editionupgradeconfiguration-resource-type"></a>editionUpgradeConfiguration-Ressourcentyp
 

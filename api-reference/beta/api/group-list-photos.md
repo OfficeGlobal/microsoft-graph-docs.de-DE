@@ -1,12 +1,13 @@
 ---
 title: Auflisten von Fotos
 description: Mit dieser API können Sie eine Liste von Objekten des Typs profilePhoto abrufen.
-ms.openlocfilehash: c6f7ea9b530e08f2a3b348396e004a9b4341e4fd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 2597d532d28614bb595ffe44aa6705187619aa44
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060842"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315820"
 ---
 # <a name="list-photos"></a>Auflisten von Fotos
 
@@ -36,7 +37,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters)
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: DevicePlatformType Enum-Typ
 description: Plattformtypen unterstützt.
-ms.openlocfilehash: a5698a00b712606632e9b44783b5b9d1ffc3caab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6609ea65eb7469155f4e1bf3f8d6e5ccc424d338
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062983"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316219"
 ---
 # <a name="deviceplatformtype-enum-type"></a>DevicePlatformType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27062983"
 
 Plattformtypen unterstützt.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |Android (engl.)|0|Android.|
 |androidForWork|1|AndroidForWork.|
