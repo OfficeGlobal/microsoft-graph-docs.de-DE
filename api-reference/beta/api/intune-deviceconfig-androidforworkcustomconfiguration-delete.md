@@ -1,12 +1,13 @@
 ---
 title: AndroidForWorkCustomConfiguration löschen
 description: Löscht eine AndroidForWorkCustomConfiguration.
-ms.openlocfilehash: 4365b941af4c4f400336f771e8e15abeb7a87790
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7c2b304a5c707ae75dbffb53f25a0ff027afe6b8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064784"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345185"
 ---
 # <a name="delete-androidforworkcustomconfiguration"></a>AndroidForWorkCustomConfiguration löschen
 
@@ -36,9 +37,9 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

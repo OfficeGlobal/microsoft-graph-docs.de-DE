@@ -1,12 +1,13 @@
 ---
 title: Aktion „wipe“
 description: Mit dieser Aktion lässt sich ein Gerät zurücksetzen.
-ms.openlocfilehash: 841a0c5e968cb3fa9816b604cc3d2e335ca75a4c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9e83be9da2fe4b6614f7169a73e47c183590f9da
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061715"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326299"
 ---
 # <a name="wipe-action"></a>Aktion „wipe“
 
@@ -37,9 +38,9 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

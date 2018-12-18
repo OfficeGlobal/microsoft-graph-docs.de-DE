@@ -1,12 +1,13 @@
 ---
 title: Liste managementConditions
 description: Listeneigenschaften und Beziehungen der ManagementCondition-Objekte.
-ms.openlocfilehash: b9d7665e803c0102447d9a59ca43e3be2e1dcf7d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1a0ee53cf36569df8603d933f143713634e4b436
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063177"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344583"
 ---
 # <a name="list-managementconditions"></a>Liste managementConditions
 
@@ -35,9 +36,9 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

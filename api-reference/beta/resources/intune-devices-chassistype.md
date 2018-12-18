@@ -1,12 +1,13 @@
 ---
 title: ChassisType Enum-Typ
 description: Gerätetyp.
-ms.openlocfilehash: bdb11b41b5e4ebc5be32211b5b5498bcfa493c56
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2c65df4e324d186413936c44e611165b447df242
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065350"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327874"
 ---
 # <a name="chassistype-enum-type"></a>ChassisType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27065350"
 
 Gerätetyp.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannt.|
 |Desktop|1|Desktop.|

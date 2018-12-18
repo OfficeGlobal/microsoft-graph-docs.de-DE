@@ -1,12 +1,13 @@
 ---
 title: Team Ressourcentyp
 description: 'Ein Team in Microsoft-Teams ist eine Auflistung der Kanäle. '
-ms.openlocfilehash: 62a20629dc3e62da730a3821395af5cc2417d56f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 3bb6fde320dbab2c19f151015d7121c3fc840c97
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017216"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323870"
 ---
 # <a name="team-resource-type"></a>Team Ressourcentyp
 

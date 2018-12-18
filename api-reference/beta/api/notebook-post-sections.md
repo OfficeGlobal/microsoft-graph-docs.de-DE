@@ -1,12 +1,13 @@
 ---
 title: Abschnitt erstellen
 description: Mit dieser API können Sie eine neue Ressource des Typs section in dem angegebenen Notizbuch erstellen.
-ms.openlocfilehash: 15e7e5fc67a1d4c4f877b39127ef32afa642cd67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 026473c7bed93fa127fd8fc4db8c27cfcb47acdc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058370"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325767"
 ---
 # <a name="create-section"></a>Abschnitt erstellen
 
@@ -33,7 +34,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sections
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext

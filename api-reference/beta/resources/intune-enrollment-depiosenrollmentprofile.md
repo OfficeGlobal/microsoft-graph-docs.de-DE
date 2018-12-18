@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp depIOSEnrollmentProfile
 description: Die Ressource DepIOSEnrollmentProfile stellt eine bestimmte Apple Gerät Registrierung Programm (DEP) Registrierung Profil iOS-Konfiguration. Dieser Typ des Profils muss Apple DEP Seriennummer zugewiesen werden, bevor die entsprechende Geräte über Datenausführungsverhinderung registrieren können
-ms.openlocfilehash: f8ddb907d7dfc3fa43704b162a12c0607d607dd4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b95bd47a3bbb736d94be34d2b74324401990684a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063024"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329589"
 ---
 # <a name="depiosenrollmentprofile-resource-type"></a>Ressourcentyp depIOSEnrollmentProfile
 

@@ -1,12 +1,13 @@
 ---
 title: Abrufen von androidWorkProfileCustomConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidWorkProfileCustomConfiguration-Objekts.
-ms.openlocfilehash: 5bf113455df1d5047f92e78e617b168a27dc74d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4e12962e59bc45635b202aeda08e7e8c299bc51c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019186"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328567"
 ---
 # <a name="get-androidworkprofilecustomconfiguration"></a>Abrufen von androidWorkProfileCustomConfiguration
 
@@ -34,9 +35,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

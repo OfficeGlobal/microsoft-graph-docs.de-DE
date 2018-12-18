@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp educationSynchronizationLicenseAssignment
 description: Stellt die Lizenzinformationen Benutzerkonten zugewiesen. Die Ressource wird Lizenz Zuordnungen einrichten, beim Erstellen von neuen Benutzerkonten verwendet werden.
-ms.openlocfilehash: a324007dc4d6b5557db407c39d27a640f56ceb55
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 478d939c8f4c6a0bc1971d66afc4ecc7ae640e39
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064021"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344394"
 ---
 # <a name="educationsynchronizationlicenseassignment-resource-type"></a>Ressourcentyp educationSynchronizationLicenseAssignment
 

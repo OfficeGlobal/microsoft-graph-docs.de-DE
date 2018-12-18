@@ -1,12 +1,13 @@
 ---
 title: AndroidWorkProfileDefaultAppPermissionPolicyType Enum-Typ
 description: Android Arbeit Profil app Berechtigung Richtlinie Standardtyp.
-ms.openlocfilehash: f0d57bd8f21d09aef2e3f12fda5a9e05696393bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2c038adc67a83b98885af1b46c4c29c45aaaf0ba
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062964"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327181"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>AndroidWorkProfileDefaultAppPermissionPolicyType Enum-Typ
 
@@ -16,10 +17,10 @@ ms.locfileid: "27062964"
 
 Android Arbeit Profil app Berechtigung Richtlinie Standardtyp.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |deviceDefault|0|Gerät Standardwert, keine beabsichtigt.|
-|Aufforderung|1|Auffordern.|
+|prompt|1|Auffordern.|
 |autoGrant|2|Automatische erteilen.|
 |autoDeny|3|Automatische verweigern.|
 

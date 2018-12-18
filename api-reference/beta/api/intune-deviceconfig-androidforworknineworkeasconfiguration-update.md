@@ -1,12 +1,13 @@
 ---
 title: AndroidForWorkNineWorkEasConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidForWorkNineWorkEasConfiguration-Objekts.
-ms.openlocfilehash: 106629b2ae268c5a2107a70eee80226cacd981af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1779f81cc89681805305c7bb2bbe16f7a570accb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062766"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328210"
 ---
 # <a name="update-androidforworknineworkeasconfiguration"></a>AndroidForWorkNineWorkEasConfiguration aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

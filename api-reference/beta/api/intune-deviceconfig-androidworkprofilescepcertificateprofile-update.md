@@ -1,12 +1,13 @@
 ---
 title: AndroidWorkProfileScepCertificateProfile aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidWorkProfileScepCertificateProfile-Objekts.
-ms.openlocfilehash: ca613029cca2d50c9afd097544533278fa09a8cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 88554dab9fce21002ff87f04eb82d738e9e105dc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062666"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334027"
 ---
 # <a name="update-androidworkprofilescepcertificateprofile"></a>AndroidWorkProfileScepCertificateProfile aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

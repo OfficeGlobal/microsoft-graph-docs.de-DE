@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp androidWorkProfileTrustedRootCertificate
 description: Android vertrauenswürdige Stammzertifikat für Arbeit Profil Konfigurationsprofil
-ms.openlocfilehash: 309960ffe49e91d3da7e3db16c6482301fa12c54
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7932216362e52ff58fa2d77f30d991e32c147b9c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060233"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344114"
 ---
 # <a name="androidworkprofiletrustedrootcertificate-resource-type"></a>Ressourcentyp androidWorkProfileTrustedRootCertificate
 

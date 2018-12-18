@@ -1,12 +1,13 @@
 ---
 title: Abrufen von intuneBrandingProfile
 description: Lesen Sie Eigenschaften und Beziehungen des IntuneBrandingProfile-Objekts.
-ms.openlocfilehash: 2c1c4d16cdd6166de0f7170bdef7a038a7ebd98b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2c90dc24f85f6c259c48cdf0ba2e431ef5c8c55a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065661"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333572"
 ---
 # <a name="get-intunebrandingprofile"></a>Abrufen von intuneBrandingProfile
 
@@ -36,9 +37,9 @@ GET /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

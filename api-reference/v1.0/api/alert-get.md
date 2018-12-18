@@ -1,12 +1,13 @@
 ---
 title: Warnung erhalten
 description: " Rufen Sie die Eigenschaften und die Beziehungen eines alert-Objekts ab."
-ms.openlocfilehash: b2c823257ffcb398639a89627b3a0e1cb407e085
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: Preetikr
+ms.openlocfilehash: fe265f82e6013081a33abeaa25baa78e0e87fdcb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184476"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326124"
 ---
 # <a name="get-alert"></a>Warnung erhalten
 
@@ -34,7 +35,7 @@ GET /security/alerts/{alert_id}
 
 | Name      |Beschreibung|
 |:----------|:----------|
-| Authorization  | Bearer {code}. Erforderlich.|
+| Autorisierung  | Bearer {code}. Erforderlich.|
 
 ## <a name="request-body"></a>Anforderungstext
 

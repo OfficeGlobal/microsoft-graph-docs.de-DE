@@ -1,12 +1,13 @@
 ---
 title: resourceOperation abrufen
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs resourceOperation.
-ms.openlocfilehash: b5d449dc1eb113058e76fb40770f5acaeffe064b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f71ea2824b7e9475a95b1d449f7bb0117faadb1f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018605"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326005"
 ---
 # <a name="get-resourceoperation"></a>resourceOperation abrufen
 
@@ -34,9 +35,9 @@ GET /deviceManagement/resourceOperations/{resourceOperationId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

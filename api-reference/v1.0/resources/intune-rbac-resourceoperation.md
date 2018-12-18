@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp „resourceOperation“
 description: " Vorgang wird verwendet, um eine Sicherheitsgruppe AAD eine MobileApp Ressource zuordnen.  Ressourcenoperationen für integrierte Rollen können nicht geändert werden."
-ms.openlocfilehash: eeefdd8960df680b4011e773b73c0ecbffd718b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fa004e2f1f41ca03d4b505599ef36e3548c1ab67
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018274"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331465"
 ---
 # <a name="resourceoperation-resource-type"></a>Ressourcentyp „resourceOperation“
 

@@ -1,12 +1,13 @@
 ---
 title: 'Rufen Sie: SubscribeToTone'
 description: " Telefon."
-ms.openlocfilehash: c3793931c2f06e54cdac278f0f0539b42d7e622c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 41c72cdeeb1017313f9f64c4bd268a2184229984
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062687"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328301"
 ---
 # <a name="call-subscribetotone"></a>Rufen Sie: SubscribeToTone
 

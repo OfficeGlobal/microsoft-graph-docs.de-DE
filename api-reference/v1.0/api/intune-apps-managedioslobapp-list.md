@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „managedIOSLobApp“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs managedIOSLobApp auf.
-ms.openlocfilehash: 8abe28a64baae857a16f95bd005568602fd6f8f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3dc053035c66fd7be477d6d8991247d5137b23f9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018171"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331451"
 ---
 # <a name="list-managedioslobapps"></a>Auflisten von „managedIOSLobApp“
 
@@ -32,9 +33,9 @@ GET /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

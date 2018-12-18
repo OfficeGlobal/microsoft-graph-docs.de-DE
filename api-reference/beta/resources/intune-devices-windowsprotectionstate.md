@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windowsProtectionState
 description: Gerät Protection Status Entität.
-ms.openlocfilehash: dfdfb5f79f696e2f6f577f59b7597f16c89a5d56
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 636b969ddafde5976939df764ae1180e19a181c0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064913"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328077"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>Ressourcentyp windowsProtectionState
 

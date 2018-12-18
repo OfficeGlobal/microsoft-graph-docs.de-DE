@@ -1,12 +1,13 @@
 ---
 title: educationStudent-Ressourcentyp
 description: Zusätzliche Informationen, die einem vorhandenen educationUser hinzugefügt werden, wenn die primaryRole eines Benutzers `student` ist.
-ms.openlocfilehash: 4865831872f2ec9fe15c44692ed4e175c01befa5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: e24cf9adb9a4e7da70a3011b027e19a9d4cc4808
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016653"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344058"
 ---
 # <a name="educationstudent-resource-type"></a>educationStudent-Ressourcentyp
 

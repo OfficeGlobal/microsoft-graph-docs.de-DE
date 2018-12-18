@@ -1,12 +1,13 @@
 ---
 title: RangeBorder-Ressourcentyp
 description: Stellt den Rahmen eines Objekts dar.
-ms.openlocfilehash: 30d5548ba867dc652c700985d65a6db01ce8bc99
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: c6166e1cfebc0759ad25fda5c0e8ec471af07b11
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017052"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359150"
 ---
 # <a name="rangeborder-resource-type"></a>RangeBorder-Ressourcentyp
 
@@ -28,7 +29,7 @@ Stellt den Rahmen eines Objekts dar.
 |color|string|HTML-Farbcode, der die Farbe der Rahmenlinie, des Formulars #RRGGBB (z. B.  „FFA500“) oder als benannte HTML-Farbe (z. B. „orange“) darstellt.|
 |id|string|Stellt Rahmen Bezeichner. Die möglichen Werte sind: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Schreibgeschützt.|
 |sideIndex|string|Konstanter Wert, der angibt, die bestimmte Seiten des Rahmens. Die möglichen Werte sind: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Schreibgeschützt.|
-|style|string|Eine der Konstanten der Linienart die Linienart für den Rahmen angeben. Die möglichen Werte sind: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.|
+|Formatvorlage|string|Eine der Konstanten der Linienart die Linienart für den Rahmen angeben. Die möglichen Werte sind: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.|
 |weight|string|Gibt die Stärke des Rahmens um einen Bereich an. Die möglichen Werte sind: `Hairline`, `Thin`, `Medium`, `Thick`.|
 
 ## <a name="relationships"></a>Beziehungen

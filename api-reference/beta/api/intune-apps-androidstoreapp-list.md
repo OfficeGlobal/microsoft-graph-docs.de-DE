@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „androidStoreApp“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs androidStoreApp auf.
-ms.openlocfilehash: 86a10b5c1d8dd32c8c0df77fd567acfba83cdbf3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0f3e1b0ca33d6995cd8dbdc30207395e5f5075a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059035"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330933"
 ---
 # <a name="list-androidstoreapps"></a>Auflisten von „androidStoreApp“
 
@@ -34,9 +35,9 @@ GET /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

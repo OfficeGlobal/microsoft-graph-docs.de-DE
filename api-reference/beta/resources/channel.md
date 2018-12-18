@@ -1,12 +1,13 @@
 ---
 title: DDE-Kanal Ressourcentyp
 description: 'Ein Kanal ist eine Auflistung von ChatMessages innerhalb eines Teams. '
-ms.openlocfilehash: e69c0e7cdef347c59006b1dcce192e7949c2f07e
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: nkramer
+ms.openlocfilehash: 18a3293b757e641eab98b166a43ce023762ccc6d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209712"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326775"
 ---
 # <a name="channel-resource-type"></a>DDE-Kanal Ressourcentyp
 
@@ -23,7 +24,7 @@ Ein Kanal ist eine Auflistung von [ChatMessages](chatmessage.md) in einem [Team]
 |[Erstellen von DDE-Kanal](../api/channel-post.md) | [DDE-Kanal](channel.md) | Erstellen Sie einen neuen Kanal durch das Einbeziehen von den Anzeigenamen und die Beschreibung ein.|
 |[Abrufen von DDE-Kanal](../api/channel-get.md) | [DDE-Kanal](channel.md) | Lesen Sie Eigenschaften und Beziehungen des Kanals.|
 |[Aktualisieren der DDE-Kanal](../api/channel-patch.md) | [DDE-Kanal](channel.md) | Aktualisieren Sie die Eigenschaften des Kanals.|
-|[DDE-Kanal löschen](../api/channel-delete.md) | Keine | Löschen Sie einen Kanal.|
+|[DDE-Kanal löschen](../api/channel-delete.md) | Keines | Löschen Sie einen Kanal.|
 |[Liste Channel Nachrichten](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Abrufen von Nachrichten in einem Kanal |
 |[Chat Thread erstellen](../api/channel-post-chatthreads.md) | [ChatThread](chatthread.md) -Auflistung| Erstellen Sie einen Chat Thread in den angegebenen DDE-Kanal.|
 
@@ -33,8 +34,8 @@ Ein Kanal ist eine Auflistung von [ChatMessages](chatmessage.md) in einem [Team]
 |description|String|Optionale Beschreibung für den Kanal.|
 |displayName|String|Channel-Namen, die dem Benutzer in Microsoft-Teams, erscheint.|
 |id|String|Eindeutiger Bezeichner der Kanäle. Schreibgeschützt.|
-|isFavoriteByDefault|Boolescher Wert|Gibt an, ob der Kanal automatisch "Favoriten" für alle Mitglieder des Teams gekennzeichnet werden soll. Standard: `false`.|
-|E-Mail|Boolescher Wert| Die e-Mail-Adresse zum Senden von Nachrichten an den Kanal. Schreibgeschützt.|
+|isFavoriteByDefault|Boolesch|Gibt an, ob der Kanal automatisch "Favoriten" für alle Mitglieder des Teams gekennzeichnet werden soll. Standard: `false`.|
+|E-Mail|Boolesch| Die e-Mail-Adresse zum Senden von Nachrichten an den Kanal. Schreibgeschützt.|
 |webUrl|String|Ein Hyperlink, zu dem navigiert an den Kanal in Microsoft-Teams. Dies ist die URL, die Sie erhalten, wenn Sie mit der rechten Maustaste in eines Kanals in Microsoft-Teams, und wählen Sie Get-Link Kanal aus. Diese URL sollte als nicht transparentes Blob behandelt und nicht analysiert werden. Schreibgeschützt.|
 
 

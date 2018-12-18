@@ -1,12 +1,13 @@
 ---
 title: AndroidForWorkEnrollmentTarget Enum-Typ
 description: Android für Arbeit Gerätemanagement Zielgruppenadressierung Typ für das Konto
-ms.openlocfilehash: aa31e5d58b66326659b24022c89b0fef3e759771
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 75c446e65b8af1466bf1eb5988921c3e1a6b3ac9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062409"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333103"
 ---
 # <a name="androidforworkenrollmenttarget-enum-type"></a>AndroidForWorkEnrollmentTarget Enum-Typ
 
@@ -16,9 +17,9 @@ ms.locfileid: "27062409"
 
 Android für Arbeit Gerätemanagement Zielgruppenadressierung Typ für das Konto
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
-|n/v|0|Noch nicht dokumentiert|
+|Keine|0|Noch nicht dokumentiert|
 |all|1|Noch nicht dokumentiert|
 |Ziel|2|Noch nicht dokumentiert|
 |targetedAsEnrollmentRestrictions|3|Noch nicht dokumentiert|

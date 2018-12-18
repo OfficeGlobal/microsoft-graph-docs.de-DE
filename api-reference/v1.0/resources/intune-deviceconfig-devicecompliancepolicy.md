@@ -1,12 +1,13 @@
 ---
 title: deviceCompliancePolicy-Ressourcentyp
 description: 'Dies ist die Basisklasse für die Konformitätsrichtlinie. Konformitätsrichtlinien sind plattformspezifisch, und einzelne plattformspezifische Konformitätsrichtlinien erben von dieser Klasse. '
-ms.openlocfilehash: 4ab90446fea85389c74b05847bb5d4d6a21a3428
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e412a11331d2ae79ee4e1885150cbb1de006452b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018912"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328693"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>deviceCompliancePolicy-Ressourcentyp
 

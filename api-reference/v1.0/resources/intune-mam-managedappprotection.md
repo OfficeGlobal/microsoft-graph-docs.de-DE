@@ -1,12 +1,13 @@
 ---
 title: managedAppProtection-Ressourcentyp
 description: Diese Richtlinie wird verwendet, um detaillierte Verwaltungseinstellungen für eine bestimmte Gruppe von Apps zu konfigurieren.
-ms.openlocfilehash: ba912a7d009e51a824abb8ee43fe7738f77068e8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0a5e4df5f524a4a193434d54391c66ecb459829f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017873"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327139"
 ---
 # <a name="managedappprotection-resource-type"></a>managedAppProtection-Ressourcentyp
 

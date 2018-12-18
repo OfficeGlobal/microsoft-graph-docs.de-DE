@@ -1,12 +1,13 @@
 ---
 title: UnassignUserFromDevice Aktion
 description: Die Benutzer von einem Gerät Autopilot unassigns.
-ms.openlocfilehash: 93feafa6ff8dc18cee8d5f0535b6a6fabe61ca81
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9374111b9a73bdaa9ef25391c62bb1a5fbb38d8c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062939"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329736"
 ---
 # <a name="unassignuserfromdevice-action"></a>UnassignUserFromDevice Aktion
 
@@ -35,9 +36,9 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

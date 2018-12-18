@@ -1,12 +1,13 @@
 ---
 title: androidStoreApp löschen
 description: Löscht eine androidStoreApp.
-ms.openlocfilehash: 4769e1f95b5f61892147fb43b5d2a5cdacd9a3aa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c72a512e9d9c6a147e7c4671710b4821a0d2227d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017968"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329085"
 ---
 # <a name="delete-androidstoreapp"></a>androidStoreApp löschen
 
@@ -32,9 +33,9 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

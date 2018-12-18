@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp androidWorkProfileEasEmailProfileBase
 description: Basis für Android Arbeit Profil EAS E-Mail-Profile
-ms.openlocfilehash: 6adedd4775401f518657eee3773d7130f7612f73
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7a0f21794ef63f612bf87ba491d58c84269a590e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060762"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325375"
 ---
 # <a name="androidworkprofileeasemailprofilebase-resource-type"></a>Ressourcentyp androidWorkProfileEasEmailProfileBase
 

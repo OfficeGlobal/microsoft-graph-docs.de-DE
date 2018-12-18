@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windows10ImportedPFXCertificateProfile
 description: Windows-10-Desktop und Mobile PFX-Import-Zertifikat-Profil
-ms.openlocfilehash: bb9a196c417b016834d771a30245ff251d9579ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3fa2fd0824bd8ee9497d61222dd388a6c14543e4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061310"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324795"
 ---
 # <a name="windows10importedpfxcertificateprofile-resource-type"></a>Ressourcentyp windows10ImportedPFXCertificateProfile
 

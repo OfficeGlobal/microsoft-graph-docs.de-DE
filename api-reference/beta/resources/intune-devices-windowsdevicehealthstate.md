@@ -1,12 +1,13 @@
 ---
 title: WindowsDeviceHealthState Enum-Typ
 description: Endpoint Protection-Computerstatus
-ms.openlocfilehash: 601531dd71ee0d44e9f5ebc89eb018ba5e0f2675
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b794f8121132e396459f9198c644084690fe95b4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058008"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326327"
 ---
 # <a name="windowsdevicehealthstate-enum-type"></a>WindowsDeviceHealthState Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27058008"
 
 Endpoint Protection-Computerstatus
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |clean|0|Computer fehlerfrei ist und keine Aktion erforderlich ist|
 |fullScanPending|1|Computer befindet sich in ausstehen und vollständigen scan|

@@ -1,12 +1,13 @@
 ---
 title: managedDeviceOverview-Ressourcentyp
 description: Zusammenfassungsdaten für verwaltete Geräte
-ms.openlocfilehash: 0d99d16b8f6ca8f71e419f39f473571d80703dc1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c6c82338dfb696039d584f8a035a8e1427674fac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018631"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344072"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>managedDeviceOverview-Ressourcentyp
 

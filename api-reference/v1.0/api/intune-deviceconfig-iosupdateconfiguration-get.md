@@ -1,12 +1,13 @@
 ---
 title: iosUpdateConfiguration abrufen
 description: Lesen von Eigenschaften und Beziehungen des iosUpdateConfiguration-Objekts.
-ms.openlocfilehash: f6dfded1e1e809cb69ca976edd1fde31fd2937fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 09c27673f1ea379ece5d42348235b224bd80ec18
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016176"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344793"
 ---
 # <a name="get-iosupdateconfiguration"></a>iosUpdateConfiguration abrufen
 
@@ -34,9 +35,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

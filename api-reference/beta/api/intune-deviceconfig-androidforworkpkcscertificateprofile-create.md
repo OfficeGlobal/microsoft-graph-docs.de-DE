@@ -1,12 +1,13 @@
 ---
 title: Erstellen von androidForWorkPkcsCertificateProfile
 description: Erstellen eines neuen AndroidForWorkPkcsCertificateProfile-Objekts.
-ms.openlocfilehash: 6beae61dc6125aa1dd9b6b182c49c6af0a1163df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a2d8f8ec9bdb697d417922b917554a125afd2fbb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065004"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324668"
 ---
 # <a name="create-androidforworkpkcscertificateprofile"></a>Erstellen von androidForWorkPkcsCertificateProfile
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

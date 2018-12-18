@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „reportRoot“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs reportRoot.
-ms.openlocfilehash: a376cd399fbcb36b369839dc214b3e792bc8d104
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a8beb97dc236ec9a4db4584619184613268ce071
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017929"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326341"
 ---
 # <a name="update-reportroot"></a>Aktualisieren von „reportRoot“
 
@@ -34,9 +35,9 @@ PATCH /reports
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

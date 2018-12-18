@@ -1,12 +1,13 @@
 ---
 title: Abrufen von „auditEvent“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs auditEvent.
-ms.openlocfilehash: dbfa908d57c65c024f253cbc4b7d5e7071443180
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b47d376994ec6bd1e344234b6f08039f1ab35915
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065986"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324626"
 ---
 # <a name="get-auditevent"></a>Abrufen von „auditEvent“
 
@@ -36,9 +37,9 @@ GET /deviceManagement/auditEvents/{auditEventId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

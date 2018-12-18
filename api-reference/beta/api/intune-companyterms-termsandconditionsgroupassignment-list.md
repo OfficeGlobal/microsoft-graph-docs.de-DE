@@ -1,12 +1,13 @@
 ---
 title: Liste termsAndConditionsGroupAssignments
 description: Listeneigenschaften und Beziehungen der TermsAndConditionsGroupAssignment-Objekte.
-ms.openlocfilehash: 94d052d012680cb475c5a1a76ae323ae31965b6d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b37a75019e57d1ef4a5fb0a290f8bffba2e19fdc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064518"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326810"
 ---
 # <a name="list-termsandconditionsgroupassignments"></a>Liste termsAndConditionsGroupAssignments
 
@@ -34,9 +35,9 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignments
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

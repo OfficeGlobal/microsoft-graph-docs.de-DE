@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp networkIPv4ConfigurationManagementCondition
 description: Netzwerkeinstellungen für IPv4-Konfiguration-basiertes Management Bedingungen definiert werden können, die ausgelöst wird, wenn ein Gerät bestimmte IP-Adresse erkennt. Eine IP-Config Management Bedingungen werden nur als TRUE betrachtet werden, wenn die Netzwerkverbindung aktiv ist.
-ms.openlocfilehash: f8727fdf67f9602799b0ddacdb94c2c8570d72b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eba20d0ef5db1667cad2ffb85b9477c9044b28b9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064130"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344261"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>Ressourcentyp networkIPv4ConfigurationManagementCondition
 

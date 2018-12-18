@@ -1,12 +1,13 @@
 ---
 title: UploadDepToken Aktion
 description: Lädt ein neues Gerät Registrierung Programm Token hoch
-ms.openlocfilehash: 0230717d84e5d73834f8ce82a73e076f1b2e7142
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6fc303afa5efb5fab312732c95545b73004660a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062492"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330646"
 ---
 # <a name="uploaddeptoken-action"></a>UploadDepToken Aktion
 
@@ -34,9 +35,9 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/uploadDepT
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

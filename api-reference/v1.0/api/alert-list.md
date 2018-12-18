@@ -1,12 +1,13 @@
 ---
 title: Warnungen auflisten
 description: Abrufen einer Liste der alert-Objekten.
-ms.openlocfilehash: 07dcdd4279ef0f258396bbfa6ecc0fc15cbd7ef0
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: Preetikr
+ms.openlocfilehash: 64589fa04d4b6b11fb2ec435f6531df2e2f58a8a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184525"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324031"
 ---
 # <a name="list-alerts"></a>Warnungen auflisten
 
@@ -53,7 +54,7 @@ Um eine alternative Eigenschaftensatz zurückzugeben, verwenden Sie die OData `$
 
 | Name      |Beschreibung|
 |:----------|:----------|
-| Authorization  | Bearer {code}. Erforderlich.|
+| Autorisierung  | Bearer {code}. Erforderlich.|
 
 ## <a name="request-body"></a>Anforderungstext
 

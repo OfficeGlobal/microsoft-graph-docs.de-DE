@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp bitLockerSystemDrivePolicy
 description: BitLocker-Verschlüsselung Basis Richtlinien.
-ms.openlocfilehash: 60388f020750ebd7f187b07777440b013ae5f02a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ba1199970099bb841fc363a747abb5b8dcac2ec1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060580"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332284"
 ---
 # <a name="bitlockersystemdrivepolicy-resource-type"></a>Ressourcentyp bitLockerSystemDrivePolicy
 

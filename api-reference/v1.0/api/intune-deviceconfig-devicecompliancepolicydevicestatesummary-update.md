@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „deviceCompliancePolicyDeviceStateSummary“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceCompliancePolicyDeviceStateSummary.
-ms.openlocfilehash: 0cf0fe68f87bfe92536a5e13684818dabad1b2bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9447566f38c8e03f9804f0614ef0b3bf827fbc6c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017773"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343659"
 ---
 # <a name="update-devicecompliancepolicydevicestatesummary"></a>Aktualisieren von „deviceCompliancePolicyDeviceStateSummary“
 
@@ -32,9 +33,9 @@ PATCH /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

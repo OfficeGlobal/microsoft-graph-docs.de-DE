@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionNetworkLearningSummary abrufen
 description: Lesen von Eigenschaften und Beziehungen des windowsInformationProtectionNetworkLearningSummary-Objekts.
-ms.openlocfilehash: 36ae77d3d5942b975c6190755929fec2d8834589
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e6d72251a8a7c223690e6d3a2e13ab1e2d754076
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065886"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334867"
 ---
 # <a name="get-windowsinformationprotectionnetworklearningsummary"></a>windowsInformationProtectionNetworkLearningSummary abrufen
 
@@ -36,9 +37,9 @@ GET /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wind
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „mobileAppCategory“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs mobileAppCategory auf.
-ms.openlocfilehash: 7c18d2ee37b4012fdb19edfdc1efdbf01ce2200c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3bdfb847b850bb58c85134321f28aca4402ae5c2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019673"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324997"
 ---
 # <a name="list-mobileappcategories"></a>Auflisten von „mobileAppCategory“
 
@@ -33,9 +34,9 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

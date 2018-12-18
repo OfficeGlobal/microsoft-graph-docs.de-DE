@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp excludedApps
 description: Enthält Eigenschaften für die ausgeschlossenen Office365 Apps.
-ms.openlocfilehash: 05c1ed7f4789e1a27ddacf92dbd773b2f5a21847
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b8c9eff985783c953ff099dbf4d5ba00826652c4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060566"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344625"
 ---
 # <a name="excludedapps-resource-type"></a>Ressourcentyp excludedApps
 
@@ -18,7 +19,7 @@ Enthält Eigenschaften für die ausgeschlossenen Office365 Apps.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|Zugriff|Boolesch|Der Wert für die If MS Office Access davon ausgeschlossen werden soll.|
+|access|Boolesch|Der Wert für die If MS Office Access davon ausgeschlossen werden soll.|
 |Excel-|Boolesch|Der Wert für die If MS Office Excel davon ausgeschlossen werden soll.|
 |Groove|Boolesch|Der Wert für die If MS Office OneDrive for Business - Groove ausgeschlossen werden soll, oder nicht.|
 |infoPath|Boolesch|Der Wert für die If MS Office InfoPath davon ausgeschlossen werden soll.|

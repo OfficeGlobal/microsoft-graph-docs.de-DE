@@ -1,12 +1,13 @@
 ---
 title: iosStoreApp erstellen
 description: Erstellen eines neuen IosStoreApp-Objekts.
-ms.openlocfilehash: 0035d3b22565354d65be639b098027084a2de534
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9c7b39239861a29f640077c10188c84493d1a6b4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062664"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332816"
 ---
 # <a name="create-iosstoreapp"></a>iosStoreApp erstellen
 
@@ -34,9 +35,9 @@ POST /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „androidCustomConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs androidCustomConfiguration auf.
-ms.openlocfilehash: 33785c4cdbb1160fa64d23a9b0a107e29f8dc76f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e7673b7cef5291d629e0ed3dadf5aa5f707aaaf2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064718"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329729"
 ---
 # <a name="list-androidcustomconfigurations"></a>Auflisten von „androidCustomConfiguration“
 
@@ -35,9 +36,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

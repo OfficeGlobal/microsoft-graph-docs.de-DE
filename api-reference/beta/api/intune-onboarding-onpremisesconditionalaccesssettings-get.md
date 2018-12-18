@@ -1,12 +1,13 @@
 ---
 title: onpremisesConditionalAccessSettings abrufen
 description: Lesen von Eigenschaften und Beziehungen des onPremisesConditionalAccessSettings-Objekts.
-ms.openlocfilehash: 3cc90209a55fc051266f29decfd21a25ce43aa44
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 630c7edc640932f2c1cd651e5c54e8fc15c1b1dc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27057946"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325802"
 ---
 # <a name="get-onpremisesconditionalaccesssettings"></a>onpremisesConditionalAccessSettings abrufen
 
@@ -37,9 +38,9 @@ GET /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

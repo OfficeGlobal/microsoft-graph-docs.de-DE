@@ -1,12 +1,13 @@
 ---
 title: Chat Thread erstellen
 description: Erstellen Sie einen neuen Chat Thread in den angegebenen DDE-Kanal, durch die Stamm-Nachrichten bereitstellen.
-ms.openlocfilehash: 9a2a35a086c6689d1b76a56b70cd3637ec23c3a4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: fcd1c08c05b29d2150f4c436eac7765f40900920
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058352"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325613"
 ---
 # <a name="create-chat-thread"></a>Chat Thread erstellen
 
@@ -33,7 +34,7 @@ POST /teams/{id}/channels/{id}/chatThreads
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung eine JSON-Darstellung der ein [ChatThread](../resources/chatthread.md) -Objekt, das die RootMessage-Eigenschaft enthält.

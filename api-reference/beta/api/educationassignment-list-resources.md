@@ -1,12 +1,13 @@
 ---
 title: Liste educationAssignmentResources
 description: Rufen Sie alle Ressourcen, die diese Zuordnung zugeordnet.
-ms.openlocfilehash: 2092b7a98794bc8eaeac7e65eea5dced8ffa00d2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 31c921e4be2e2d3aed3b247d9fc5f2b55fe6a4f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060890"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330995"
 ---
 # <a name="list-educationassignmentresources"></a>Liste educationAssignmentResources
 
@@ -32,7 +33,7 @@ GET /education/classes/{id}/assignments/{id}/resources
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

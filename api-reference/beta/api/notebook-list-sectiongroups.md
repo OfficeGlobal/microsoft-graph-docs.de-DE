@@ -1,12 +1,13 @@
 ---
 title: sectionGroups auflisten
 description: Mit dieser API können Sie eine Liste von Abschnittsgruppen aus dem angegebenen Notizbuch abrufen.
-ms.openlocfilehash: cdb5ef5b1c98f9e1632ef1cd7c6c5d5885e8d682
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: faf096ff101c3c4abaeb95075bcc493910e3c18f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061010"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324381"
 ---
 # <a name="list-sectiongroups"></a>sectionGroups auflisten
 
@@ -40,7 +41,7 @@ Die Standardabfrage erweitert `parentNotebook` und wählt die zugehörigen Eigen
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 | Accept | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: remoteAssistancePartners auflisten
 description: Auflisten von Eigenschaften und Beziehungen der remoteAssistancePartner-Objekte.
-ms.openlocfilehash: 4f3095cf9f031a7dd6f0046fc9cdfdc28e2fb673
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 770e2935cc1ebab9eed75a70ed9adee34e07b9c7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018037"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331619"
 ---
 # <a name="list-remoteassistancepartners"></a>remoteAssistancePartners auflisten
 
@@ -32,9 +33,9 @@ GET /deviceManagement/remoteAssistancePartners
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

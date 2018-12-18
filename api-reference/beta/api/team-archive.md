@@ -1,12 +1,13 @@
 ---
 title: Archiv-team
 description: 'Archivieren Sie das angegebene Team. '
-ms.openlocfilehash: 3e25a6b5cf5475eeacfb7b01e52775e0b483b2be
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: 6e90b7ddaae68291a0d7e970618519ddaec660e7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222555"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332648"
 ---
 # <a name="archive-team"></a>Archiv-team
 

@@ -1,12 +1,13 @@
 ---
 title: DeviceManagementExchangeAccessRuleType Enum-Typ
 description: Kriterien fest, die den Typ des Geräts definiert werden auf diese Zugriffsregel angewendet.
-ms.openlocfilehash: 575f31cb8ba5bd31a9e5699580dc0624371e4d0b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8e0bc166de6396e1b56dd89a4545c9b12b2a71cf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064443"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328532"
 ---
 # <a name="devicemanagementexchangeaccessruletype-enum-type"></a>DeviceManagementExchangeAccessRuleType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27064443"
 
 Kriterien fest, die den Typ des Geräts definiert werden auf diese Zugriffsregel angewendet.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |Familie|0|Geräte-Produktfamilie|
 |model|1|Spezifische Modell des Geräts|

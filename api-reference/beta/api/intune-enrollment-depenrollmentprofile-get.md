@@ -1,12 +1,13 @@
 ---
 title: Abrufen von depEnrollmentProfile
 description: Lesen Sie Eigenschaften und Beziehungen des DepEnrollmentProfile-Objekts.
-ms.openlocfilehash: f58debdecc99051b2574f6d2065ab7dbf003dd25
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b09adb78cba269727e307238d5c0947918ed577a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062119"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325116"
 ---
 # <a name="get-depenrollmentprofile"></a>Abrufen von depEnrollmentProfile
 
@@ -36,9 +37,9 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

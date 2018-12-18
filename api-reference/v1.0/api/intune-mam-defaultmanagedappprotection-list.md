@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „defaultManagedAppProtection“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs defaultManagedAppProtection auf.
-ms.openlocfilehash: 12e4f948ab808150ca602bc0f0b21591540e080c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 73e4013e458e1ad540f75cf42ed00e638c781758
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018670"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343491"
 ---
 # <a name="list-defaultmanagedappprotections"></a>Auflisten von „defaultManagedAppProtection“
 
@@ -32,9 +33,9 @@ GET /deviceAppManagement/defaultManagedAppProtections
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

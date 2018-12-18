@@ -1,12 +1,13 @@
 ---
 title: 'Diagramm: Bild'
 description: Rendert das Diagramm als base64-codiertes Bild durch Skalierung, um es an die angegebenen Maße anzupassen.
-ms.openlocfilehash: 0930300413b68424d4d1613f0dbe76b531ae91f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 6a86e8df1c49fb02626ed7d0d468c3031742d615
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058376"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325536"
 ---
 # <a name="chart-image"></a>Diagramm: Bild
 

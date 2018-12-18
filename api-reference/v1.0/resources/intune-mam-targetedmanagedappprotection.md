@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp „targetedManagedAppProtection“
 description: Diese Richtlinie wird verwendet, um detaillierte Verwaltungseinstellungen für bestimmte Sicherheitsgruppen zu konfigurieren.
-ms.openlocfilehash: 5b330a9072ee1b42eeae2fb6f05a4afff7f8011b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 041d8d5db29940304f637e622c42fbd0664d7667
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016682"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327153"
 ---
 # <a name="targetedmanagedappprotection-resource-type"></a>Ressourcentyp „targetedManagedAppProtection“
 

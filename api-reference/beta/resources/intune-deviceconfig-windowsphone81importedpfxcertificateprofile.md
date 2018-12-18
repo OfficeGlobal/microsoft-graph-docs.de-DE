@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windowsPhone81ImportedPFXCertificateProfile
 description: Windows 8.1 Telefon- und Importieren von Mobile PFX-Zertifikat-Profil
-ms.openlocfilehash: 7cc37253925c47458fe1c024403619b30b8ec53f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 39268c92b83b46df457f792f68fd4504427271f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059025"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358758"
 ---
 # <a name="windowsphone81importedpfxcertificateprofile-resource-type"></a>Ressourcentyp windowsPhone81ImportedPFXCertificateProfile
 

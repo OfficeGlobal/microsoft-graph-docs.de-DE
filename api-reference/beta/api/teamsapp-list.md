@@ -1,12 +1,13 @@
 ---
 title: Liste der veröffentlichten apps aus dem Microsoft-Teams, app-Katalog
 description: 'Liste apps aus dem Microsoft-Teams, app-Katalog. '
-ms.openlocfilehash: 84b5576ed2a7d38783e45b1384c79f05c9ea418b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 77867d5b75721fcb169da6ad6a8ff39c46de196e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066041"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326467"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>Liste der veröffentlichten apps aus dem Microsoft-Teams, app-Katalog
 
@@ -37,7 +38,7 @@ Diese Methode unterstützt die $filter $select, und $erweitern [OData-Abfragepar
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile        | Wert           |
+| Header        | Wert           |
 |:--------------|:--------------  |
 | Authorization | Bearer {token}. Erforderlich.  |
 

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp „windowsUpdateForBusinessConfiguration“
 description: Diese Ressource enthält die Windows Update for Business-Konfiguration.
-ms.openlocfilehash: 38f7989e301935bf20159ea42559dea35aefb006
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9b9573ba3e0d2f4f78b05b9e903e8d2a42d548dd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066039"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343897"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>Ressourcentyp „windowsUpdateForBusinessConfiguration“
 

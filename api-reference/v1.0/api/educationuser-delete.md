@@ -1,12 +1,13 @@
 ---
 title: EducationUser löschen
 description: Löscht einen Benutzer.
-ms.openlocfilehash: d9e3cab7d34cdf418b3553d69881bb951217ae22
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 445bfb84a67dfe598ac2de696b49d07db447e0e0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017073"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328539"
 ---
 # <a name="delete-educationuser"></a>EducationUser löschen
 
@@ -28,7 +29,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 DELETE /education/users/{id}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

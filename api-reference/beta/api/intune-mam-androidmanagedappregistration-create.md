@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „androidManagedAppRegistration“
 description: Diese Methode erstellt ein neues Objekt des Typs androidManagedAppRegistration.
-ms.openlocfilehash: c7e88b7cb6f12e7784c2e33523dd7b5da8c53c75
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 074d8d01a086956af1f88e0d0315ccc84b84c9cf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062543"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326761"
 ---
 # <a name="create-androidmanagedappregistration"></a>Erstellen von „androidManagedAppRegistration“
 
@@ -34,9 +35,9 @@ POST /deviceAppManagement/managedAppRegistrations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

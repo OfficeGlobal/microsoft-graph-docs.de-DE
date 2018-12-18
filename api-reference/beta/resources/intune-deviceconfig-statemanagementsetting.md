@@ -1,12 +1,13 @@
 ---
 title: StateManagementSetting Enum-Typ
 description: State Management-Einstellung.
-ms.openlocfilehash: d2d480ee4f4a134cf0d145ddfbf47d8ed33fd19a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ddb2b281129c6882431714f0f8093b58db2464ee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065632"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325326"
 ---
 # <a name="statemanagementsetting-enum-type"></a>StateManagementSetting Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27065632"
 
 State Management-Einstellung.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Nicht konfiguriert.|
 |gesperrt|1|Blockiert.|

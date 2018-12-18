@@ -1,12 +1,13 @@
 ---
 title: Erstellen von androidWorkProfileGeneralDeviceConfiguration
 description: Erstellen eines neuen AndroidWorkProfileGeneralDeviceConfiguration-Objekts.
-ms.openlocfilehash: a13c277f3ee8b1b1d84ac916aae4c43380921cf4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6e59d79c7da9647cf85181d72998cf7f196f3d46
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019199"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328770"
 ---
 # <a name="create-androidworkprofilegeneraldeviceconfiguration"></a>Erstellen von androidWorkProfileGeneralDeviceConfiguration
 
@@ -32,9 +33,9 @@ POST /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: AndroidManagedStoreAppConfigurationSchema aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidManagedStoreAppConfigurationSchema-Objekts.
-ms.openlocfilehash: e762a909db958b62d1128ff1dae178181124990c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fcdacb235de85392ab39fb410b6b936fd7ce0195
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059283"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362629"
 ---
 # <a name="update-androidmanagedstoreappconfigurationschema"></a>AndroidManagedStoreAppConfigurationSchema aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidManag
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
