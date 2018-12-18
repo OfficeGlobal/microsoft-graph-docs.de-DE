@@ -1,50 +1,51 @@
 ---
 title: RangeFont abrufen
 description: Dient zum Abrufen der Eigenschaften und der Beziehungen des rangeFont-Objekts.
-ms.openlocfilehash: 32cb5b290da6170a955f6f29d6396e496315fbb8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 6e087bcaa8592d50ac33979e08e0f6b5764c6a80
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018765"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315372"
 ---
-# <a name="get-rangefont"></a><span data-ttu-id="81dcf-103">RangeFont abrufen</span><span class="sxs-lookup"><span data-stu-id="81dcf-103">Get RangeFont</span></span>
+# <a name="get-rangefont"></a><span data-ttu-id="b587f-103">RangeFont abrufen</span><span class="sxs-lookup"><span data-stu-id="b587f-103">Get RangeFont</span></span>
 
-<span data-ttu-id="81dcf-104">Dient zum Abrufen der Eigenschaften und der Beziehungen des rangeFont-Objekts.</span><span class="sxs-lookup"><span data-stu-id="81dcf-104">Retrieve the properties and relationships of rangefont object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="81dcf-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="81dcf-105">Permissions</span></span>
-<span data-ttu-id="81dcf-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="81dcf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b587f-104">Dient zum Abrufen der Eigenschaften und der Beziehungen des rangeFont-Objekts.</span><span class="sxs-lookup"><span data-stu-id="b587f-104">Retrieve the properties and relationships of rangefont object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="b587f-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="b587f-105">Permissions</span></span>
+<span data-ttu-id="b587f-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b587f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="81dcf-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="81dcf-108">Permission type</span></span>      | <span data-ttu-id="81dcf-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="81dcf-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b587f-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="b587f-108">Permission type</span></span>      | <span data-ttu-id="b587f-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="b587f-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="81dcf-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="81dcf-110">Delegated (work or school account)</span></span> | <span data-ttu-id="81dcf-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="81dcf-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="81dcf-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="81dcf-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="81dcf-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="81dcf-113">Not supported.</span></span>    |
-|<span data-ttu-id="81dcf-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="81dcf-114">Application</span></span> | <span data-ttu-id="81dcf-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="81dcf-115">Not supported.</span></span> |
+|<span data-ttu-id="b587f-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="b587f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b587f-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b587f-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="b587f-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="b587f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b587f-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="b587f-113">Not supported.</span></span>    |
+|<span data-ttu-id="b587f-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="b587f-114">Application</span></span> | <span data-ttu-id="b587f-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="b587f-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="81dcf-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="81dcf-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b587f-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="b587f-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names/{name}/range/format/font
 GET /workbook/worksheets/{id|name}/range(address='<address>')/format/font
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="81dcf-117">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="81dcf-117">Optional query parameters</span></span>
-<span data-ttu-id="81dcf-118">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="81dcf-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b587f-117">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="b587f-117">Optional query parameters</span></span>
+<span data-ttu-id="b587f-118">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="b587f-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="81dcf-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="81dcf-119">Request headers</span></span>
-| <span data-ttu-id="81dcf-120">Name</span><span class="sxs-lookup"><span data-stu-id="81dcf-120">Name</span></span>      |<span data-ttu-id="81dcf-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="81dcf-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b587f-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="b587f-119">Request headers</span></span>
+| <span data-ttu-id="b587f-120">Name</span><span class="sxs-lookup"><span data-stu-id="b587f-120">Name</span></span>      |<span data-ttu-id="b587f-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b587f-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="81dcf-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="81dcf-122">Authorization</span></span>  | <span data-ttu-id="81dcf-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="81dcf-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="81dcf-125">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="81dcf-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="81dcf-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="81dcf-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="b587f-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b587f-122">Authorization</span></span>  | <span data-ttu-id="b587f-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="b587f-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b587f-125">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="b587f-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="b587f-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="b587f-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="81dcf-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="81dcf-128">Request body</span></span>
-<span data-ttu-id="81dcf-129">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="81dcf-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b587f-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="b587f-128">Request body</span></span>
+<span data-ttu-id="b587f-129">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="b587f-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="81dcf-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="81dcf-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b587f-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="b587f-130">Response</span></span>
 
-<span data-ttu-id="81dcf-131">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und [WorkbookRangeFont](../resources/rangefont.md) -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="81dcf-131">If successful, this method returns a `200 OK` response code and [WorkbookRangeFont](../resources/rangefont.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="81dcf-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="81dcf-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="81dcf-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="81dcf-133">Request</span></span>
-<span data-ttu-id="81dcf-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="81dcf-134">Here is an example of the request.</span></span>
+<span data-ttu-id="b587f-131">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und [WorkbookRangeFont](../resources/rangefont.md) -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="b587f-131">If successful, this method returns a `200 OK` response code and [WorkbookRangeFont](../resources/rangefont.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="b587f-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b587f-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b587f-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="b587f-133">Request</span></span>
+<span data-ttu-id="b587f-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="b587f-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_rangefont"
@@ -52,8 +53,8 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/font
 ```
-##### <a name="response"></a><span data-ttu-id="81dcf-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="81dcf-135">Response</span></span>
-<span data-ttu-id="81dcf-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="81dcf-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="b587f-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="b587f-135">Response</span></span>
+<span data-ttu-id="b587f-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="b587f-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
