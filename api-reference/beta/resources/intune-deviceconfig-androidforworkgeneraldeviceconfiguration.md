@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp androidForWorkGeneralDeviceConfiguration
 description: Allgemeine Gerätekonfiguration Android für Arbeit.
-ms.openlocfilehash: 9979fa108970acbe4cf9c39f3f10f22a818b77d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3b8aa84ea4a59487c2d5889bb179ad0615663e24
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060815"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329442"
 ---
 # <a name="androidforworkgeneraldeviceconfiguration-resource-type"></a>Ressourcentyp androidForWorkGeneralDeviceConfiguration
 

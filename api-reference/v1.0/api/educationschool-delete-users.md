@@ -1,12 +1,13 @@
 ---
 title: EducationUser aus einer educationSchool entfernen
 description: Löschen eines Benutzers aus einer Schule.
-ms.openlocfilehash: dbc58a0cde4406fb28323bedf02a1902998e9b0d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: c8fc91aafa1de22d156d077b51bb081f8f940f00
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018449"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336771"
 ---
 # <a name="remove-educationuser-from-an-educationschool"></a>EducationUser aus einer educationSchool entfernen
 
@@ -27,7 +28,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 DELETE /education/schools/{id}/users/{userId}/$ref
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

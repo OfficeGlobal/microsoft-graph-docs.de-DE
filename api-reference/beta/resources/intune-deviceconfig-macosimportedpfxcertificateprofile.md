@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp macOSImportedPFXCertificateProfile
 description: Mac OS PFX-Import Zertifikatsprofil
-ms.openlocfilehash: dea9aa64e8c33aa4123d093e14d78f4dcd2f0f4a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6d16f2d7368233afeca35441260e4b9aa885e840
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058434"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341209"
 ---
 # <a name="macosimportedpfxcertificateprofile-resource-type"></a>Ressourcentyp macOSImportedPFXCertificateProfile
 

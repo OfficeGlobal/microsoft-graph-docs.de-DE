@@ -1,12 +1,13 @@
 ---
 title: MobileAppInstallStatus aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines MobileAppInstallStatus-Objekts.
-ms.openlocfilehash: bb3df95caeed90a883e2323898080a23c742f5eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dbf65aa07258b48a8ce64cf01db0a5ef00097f3a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065236"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336323"
 ---
 # <a name="update-mobileappinstallstatus"></a>MobileAppInstallStatus aktualisieren
 
@@ -35,9 +36,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

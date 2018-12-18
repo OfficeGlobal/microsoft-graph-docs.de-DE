@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp iosPkcsCertificateProfile
 description: iOS PKCS Zertifikatsprofil.
-ms.openlocfilehash: 3b37d7de7d96617cc43f1a82e8ab177a8836ccff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c2ccef7f519b7302c93e04480f0310da432b36c4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059016"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328147"
 ---
 # <a name="iospkcscertificateprofile-resource-type"></a>Ressourcentyp iosPkcsCertificateProfile
 

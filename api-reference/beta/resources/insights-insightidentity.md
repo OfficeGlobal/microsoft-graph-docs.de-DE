@@ -1,18 +1,17 @@
 ---
 title: insightIdentity
-description: " Ressourcentyp"
-ms.openlocfilehash: e13d08eb111844896c96b02ab22c52d2f598ce58
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Komplexer Typ, der Eigenschaften von gemeinsamen Elementen enthält.
+author: simonhult
+ms.openlocfilehash: 648242b827c0390029522955b0fe6347b98100c4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062749"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331332"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
-
- Ressourcentyp
 
 Komplexer Typ, der Eigenschaften von [gemeinsamen](insights-shared.md) Elementen enthält. 
 

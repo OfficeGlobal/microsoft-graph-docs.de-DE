@@ -1,12 +1,13 @@
 ---
 title: deviceManagementPartners auflisten
 description: Auflisten von Eigenschaften und Beziehungen der deviceManagementPartner-Objekte.
-ms.openlocfilehash: c308dc378fdcd0257b72b4a5948635ec0c1fa257
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a70a05e965becc15633522b9e38f1ea85fcdea7f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016824"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339809"
 ---
 # <a name="list-devicemanagementpartners"></a>deviceManagementPartners auflisten
 
@@ -32,9 +33,9 @@ GET /deviceManagement/deviceManagementPartners
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

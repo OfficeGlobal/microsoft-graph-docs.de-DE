@@ -1,12 +1,13 @@
 ---
 title: DeviceThreatProtectionLevel Enum-Typ
 description: Gerät Bedrohung Schutzebenen für das Gerät Threat Protection-API.
-ms.openlocfilehash: 900ae43f962e0a7d122588fa35db6827d4accfc2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8fdb336b60ad5f17bd5fcfb730c59238dbba55a9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060579"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336008"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>DeviceThreatProtectionLevel Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27060579"
 
 Gerät Bedrohung Schutzebenen für das Gerät Threat Protection-API.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht verfügbar|0|Standardwert. Nicht verwenden.|
 |gesichert|1|Gerät veränderte Anforderung: gesichert. Dies ist die sicherste Ebene und steht, die auf dem Gerät keine Viren gefunden wurden.|

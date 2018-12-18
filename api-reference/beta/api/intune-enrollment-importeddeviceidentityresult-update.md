@@ -1,12 +1,13 @@
 ---
 title: ImportedDeviceIdentityResult aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines ImportedDeviceIdentityResult-Objekts.
-ms.openlocfilehash: f6b875d19e789010a1a130dcb31ef115acb07cfc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4c698810bb3fe88f52d8fcba11d8c29aeb508fe6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061104"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332438"
 ---
 # <a name="update-importeddeviceidentityresult"></a>ImportedDeviceIdentityResult aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: DeviceType Enum-Typ
 description: Gerätetyp.
-ms.openlocfilehash: 44b9113f87c5ace7cab90f949ded3d091bee7191
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b1c610895cb5c8f3cd66267fbdfad95db7eac509
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065880"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336400"
 ---
 # <a name="devicetype-enum-type"></a>DeviceType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27065880"
 
 Gerätetyp.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |Desktop|0|Desktop.|
 |windowsRT|1|WindowsRT.|

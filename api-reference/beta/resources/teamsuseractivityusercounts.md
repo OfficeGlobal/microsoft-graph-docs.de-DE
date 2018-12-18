@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp teamsUserActivityUserCounts
 description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: f6478175252e99af2bfe5561d29eebe75b638eb2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: f4e10f1e34d4c6bdbed83279b98632c504630bc7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059095"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330457"
 ---
 # <a name="teamsuseractivityusercounts-resource-type"></a>Ressourcentyp teamsUserActivityUserCounts
 
