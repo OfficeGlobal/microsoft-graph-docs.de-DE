@@ -1,30 +1,31 @@
 ---
 title: Liste windows81SCEPCertificateProfiles
 description: Listeneigenschaften und Beziehungen der windows81SCEPCertificateProfile-Objekte.
-ms.openlocfilehash: 9f233f8c3b4a967d21ced809c8989df40e824b49
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b9f05ef49cb6e5cc5f347c419595276ce8164cdf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065470"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304501"
 ---
-# <a name="list-windows81scepcertificateprofiles"></a><span data-ttu-id="14eae-103">Liste windows81SCEPCertificateProfiles</span><span class="sxs-lookup"><span data-stu-id="14eae-103">List windows81SCEPCertificateProfiles</span></span>
+# <a name="list-windows81scepcertificateprofiles"></a><span data-ttu-id="72ba2-103">Liste windows81SCEPCertificateProfiles</span><span class="sxs-lookup"><span data-stu-id="72ba2-103">List windows81SCEPCertificateProfiles</span></span>
 
-> <span data-ttu-id="14eae-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="14eae-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="14eae-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="14eae-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="72ba2-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="72ba2-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="72ba2-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="72ba2-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="14eae-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="14eae-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="72ba2-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="72ba2-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="14eae-107">Listeneigenschaften und Beziehungen der [windows81SCEPCertificateProfile](../resources/intune-deviceconfig-windows81scepcertificateprofile.md) -Objekte.</span><span class="sxs-lookup"><span data-stu-id="14eae-107">List properties and relationships of the [windows81SCEPCertificateProfile](../resources/intune-deviceconfig-windows81scepcertificateprofile.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="14eae-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="14eae-108">Prerequisites</span></span>
-<span data-ttu-id="14eae-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="14eae-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="72ba2-107">Listeneigenschaften und Beziehungen der [windows81SCEPCertificateProfile](../resources/intune-deviceconfig-windows81scepcertificateprofile.md) -Objekte.</span><span class="sxs-lookup"><span data-stu-id="72ba2-107">List properties and relationships of the [windows81SCEPCertificateProfile](../resources/intune-deviceconfig-windows81scepcertificateprofile.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="72ba2-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="72ba2-108">Prerequisites</span></span>
+<span data-ttu-id="72ba2-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="72ba2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="14eae-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="14eae-111">Permission type</span></span>|<span data-ttu-id="14eae-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="14eae-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="72ba2-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="72ba2-111">Permission type</span></span>|<span data-ttu-id="72ba2-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="72ba2-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="14eae-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="14eae-113">Delegated (work or school account)</span></span>|<span data-ttu-id="14eae-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="14eae-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="14eae-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="14eae-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="14eae-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="14eae-116">Not supported.</span></span>|
-|<span data-ttu-id="14eae-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="14eae-117">Application</span></span>|<span data-ttu-id="14eae-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="14eae-118">Not supported.</span></span>|
+|<span data-ttu-id="72ba2-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="72ba2-113">Delegated (work or school account)</span></span>|<span data-ttu-id="72ba2-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="72ba2-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="72ba2-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="72ba2-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="72ba2-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="72ba2-116">Not supported.</span></span>|
+|<span data-ttu-id="72ba2-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="72ba2-117">Application</span></span>|<span data-ttu-id="72ba2-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="72ba2-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="14eae-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="14eae-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="72ba2-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="72ba2-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,27 +35,27 @@ GET /deviceManagement/deviceConfigurations
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="14eae-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="14eae-120">Request headers</span></span>
-|<span data-ttu-id="14eae-121">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="14eae-121">Header</span></span>|<span data-ttu-id="14eae-122">Wert</span><span class="sxs-lookup"><span data-stu-id="14eae-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="72ba2-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="72ba2-120">Request headers</span></span>
+|<span data-ttu-id="72ba2-121">Header</span><span class="sxs-lookup"><span data-stu-id="72ba2-121">Header</span></span>|<span data-ttu-id="72ba2-122">Wert</span><span class="sxs-lookup"><span data-stu-id="72ba2-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="14eae-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="14eae-123">Authorization</span></span>|<span data-ttu-id="14eae-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="14eae-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="14eae-125">Accept</span><span class="sxs-lookup"><span data-stu-id="14eae-125">Accept</span></span>|<span data-ttu-id="14eae-126">application/json</span><span class="sxs-lookup"><span data-stu-id="14eae-126">application/json</span></span>|
+|<span data-ttu-id="72ba2-123">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="72ba2-123">Authorization</span></span>|<span data-ttu-id="72ba2-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="72ba2-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="72ba2-125">Accept</span><span class="sxs-lookup"><span data-stu-id="72ba2-125">Accept</span></span>|<span data-ttu-id="72ba2-126">application/json</span><span class="sxs-lookup"><span data-stu-id="72ba2-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="14eae-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="14eae-127">Request body</span></span>
-<span data-ttu-id="14eae-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="14eae-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="72ba2-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="72ba2-127">Request body</span></span>
+<span data-ttu-id="72ba2-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="72ba2-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="14eae-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="14eae-129">Response</span></span>
-<span data-ttu-id="14eae-130">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [windows81SCEPCertificateProfile](../resources/intune-deviceconfig-windows81scepcertificateprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="14eae-130">If successful, this method returns a `200 OK` response code and a collection of [windows81SCEPCertificateProfile](../resources/intune-deviceconfig-windows81scepcertificateprofile.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="72ba2-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="72ba2-129">Response</span></span>
+<span data-ttu-id="72ba2-130">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [windows81SCEPCertificateProfile](../resources/intune-deviceconfig-windows81scepcertificateprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="72ba2-130">If successful, this method returns a `200 OK` response code and a collection of [windows81SCEPCertificateProfile](../resources/intune-deviceconfig-windows81scepcertificateprofile.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="14eae-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="14eae-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="14eae-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="14eae-132">Request</span></span>
-<span data-ttu-id="14eae-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="14eae-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="72ba2-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="72ba2-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="72ba2-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="72ba2-132">Request</span></span>
+<span data-ttu-id="72ba2-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="72ba2-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="14eae-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="14eae-134">Response</span></span>
-<span data-ttu-id="14eae-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="14eae-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="72ba2-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="72ba2-134">Response</span></span>
+<span data-ttu-id="72ba2-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="72ba2-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
