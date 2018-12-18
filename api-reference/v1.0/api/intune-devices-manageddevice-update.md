@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „managedDevice“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs managedDevice.
-ms.openlocfilehash: 4e4f0cc7213a20477227683431fdd8af6e06bb9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 85803f6d5474ecc0e0e2f05cf974d705d4d47737
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019781"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358751"
 ---
 # <a name="update-manageddevice"></a>Aktualisieren von „managedDevice“
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

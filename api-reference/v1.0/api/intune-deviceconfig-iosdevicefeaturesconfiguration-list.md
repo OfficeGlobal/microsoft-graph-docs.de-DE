@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „iosDeviceFeaturesConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs iosDeviceFeaturesConfiguration auf.
-ms.openlocfilehash: 2a284ffa457e5ef2289d731a034e0f02fa5c1515
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b9b5c96fa7da7f64d001fe83af74a02cd9546c93
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016905"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361621"
 ---
 # <a name="list-iosdevicefeaturesconfigurations"></a>Auflisten von „iosDeviceFeaturesConfiguration“
 
@@ -32,9 +33,9 @@ GET /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Liste officeClientConfigurationAssignments
 description: Listeneigenschaften und Beziehungen der OfficeClientConfigurationAssignment-Objekte.
-ms.openlocfilehash: 8c8447a7e6339b40e958e019ddd0b9eed17b8c9f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 34f926b0e02a963c1ab16ec7a0dd3eefcc06852c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058301"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360382"
 ---
 # <a name="list-officeclientconfigurationassignments"></a>Liste officeClientConfigurationAssignments
 
@@ -34,9 +35,9 @@ GET /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assi
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

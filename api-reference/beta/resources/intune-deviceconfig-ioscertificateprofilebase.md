@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp iosCertificateProfileBase
 description: iOS-Zertifikat-Profil Basiskalender.
-ms.openlocfilehash: 3df13175a7670c2f023399f91020122128e24377
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9f5fd22d67e01ab16f794945afd429757ab8a180
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060435"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361180"
 ---
 # <a name="ioscertificateprofilebase-resource-type"></a>Ressourcentyp iosCertificateProfileBase
 

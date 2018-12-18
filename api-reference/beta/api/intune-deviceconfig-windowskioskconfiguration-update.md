@@ -1,12 +1,13 @@
 ---
 title: WindowsKioskConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines WindowsKioskConfiguration-Objekts.
-ms.openlocfilehash: 87cc7db067f41e87d3ca4ae0ef77052cc9f0c53d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e399daa1f57ac7ddcbbd1add9e414392bb8e3789
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064888"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360053"
 ---
 # <a name="update-windowskioskconfiguration"></a>WindowsKioskConfiguration aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

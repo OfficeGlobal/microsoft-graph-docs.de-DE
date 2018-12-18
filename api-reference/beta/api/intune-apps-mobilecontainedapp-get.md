@@ -1,12 +1,13 @@
 ---
 title: Abrufen von mobileContainedApp
 description: Lesen Sie Eigenschaften und Beziehungen des MobileContainedApp-Objekts.
-ms.openlocfilehash: cb03323f3d56704c8e64c5bd1f710e2e278f128e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dac57ef838c56868a655968317df653f3b0f5488
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061181"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359248"
 ---
 # <a name="get-mobilecontainedapp"></a>Abrufen von mobileContainedApp
 
@@ -38,9 +39,9 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnivers
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

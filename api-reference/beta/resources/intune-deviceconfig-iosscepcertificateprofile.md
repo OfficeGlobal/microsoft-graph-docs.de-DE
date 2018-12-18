@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp iosScepCertificateProfile
 description: iOS SCEP Zertifikatsprofil.
-ms.openlocfilehash: 590672e873382fda048749622282be45315dbca4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 794c805c1e4ee0f6626ac07f3eb2e569212d90ea
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059917"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358730"
 ---
 # <a name="iosscepcertificateprofile-resource-type"></a>Ressourcentyp iosScepCertificateProfile
 

@@ -1,12 +1,13 @@
 ---
 title: Erstellen von androidManagedStoreAppConfiguration
 description: Erstellen eines neuen AndroidManagedStoreAppConfiguration-Objekts.
-ms.openlocfilehash: 2a9d9e7e9927f84999f018ce53dcad8c896554ba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1eb403a9547808969694b4e3712d4b2bcd1995f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060572"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361068"
 ---
 # <a name="create-androidmanagedstoreappconfiguration"></a>Erstellen von androidManagedStoreAppConfiguration
 
@@ -34,9 +35,9 @@ POST /deviceAppManagement/mobileAppConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

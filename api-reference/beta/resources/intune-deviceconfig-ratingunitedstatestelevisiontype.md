@@ -1,12 +1,13 @@
 ---
 title: RatingUnitedStatesTelevisionType Enum-Typ
 description: TV zum Bewerten Beschriftungen in US-Rufnummern
-ms.openlocfilehash: 7e962716e70c2cf88d70011843094ce9bebeb8b0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 40066b365a6b4d1dc2fb86be6d7940328a977faa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064536"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360837"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>RatingUnitedStatesTelevisionType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27064536"
 
 TV zum Bewerten Beschriftungen in US-Rufnummern
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |allAllowed|0|Standardwert, zulassen, dass alle TV Inhalt anzeigt.|
 |allBlocked|1|Lassen Sie nicht, dass alle TV Inhalt anzeigt.|

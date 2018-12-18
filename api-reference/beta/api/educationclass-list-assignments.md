@@ -1,12 +1,13 @@
 ---
 title: Liste Zuordnungen
 description: Abrufen einer Liste von Assignment-Objekten. Lehrer ist zulässig, um alle Assignment-Objekten für die Klasse finden Sie unter. Studenten können nur Arbeitsaufträge angezeigt, die ihnen zugewiesen sind.
-ms.openlocfilehash: 664356620e83534c5cd686e0d1df796bd3743a3e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: c7fbab429b238a0ae7f1814066eedfe793096f02
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060923"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361404"
 ---
 # <a name="list-assignments"></a>Liste Zuordnungen
 
@@ -32,7 +33,7 @@ GET /education/classes/{id}/assignments
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

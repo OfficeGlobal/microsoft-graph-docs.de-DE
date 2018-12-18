@@ -1,12 +1,13 @@
 ---
 title: Abrufen von androidManagedStoreAppConfigurationSchema
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidManagedStoreAppConfigurationSchema-Objekts.
-ms.openlocfilehash: dc0da9d8cf92a6c346178e44ee8fe08b81ce9f4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1c75c791c4db463eb0d6c796feb2d0e5479c33ac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060897"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360599"
 ---
 # <a name="get-androidmanagedstoreappconfigurationschema"></a>Abrufen von androidManagedStoreAppConfigurationSchema
 
@@ -36,9 +37,9 @@ GET /deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidManaged
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

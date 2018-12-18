@@ -1,12 +1,13 @@
 ---
 title: Abrufen von iosEduDeviceConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des IosEduDeviceConfiguration-Objekts.
-ms.openlocfilehash: 01968d55963682447358923061489ed731aed9a1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bd06e41b78c39ae05329c714874e7d5906f8ffe5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063569"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356098"
 ---
 # <a name="get-iosedudeviceconfiguration"></a>Abrufen von iosEduDeviceConfiguration
 
@@ -38,9 +39,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

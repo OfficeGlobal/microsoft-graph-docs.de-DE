@@ -1,12 +1,13 @@
 ---
 title: Abrufen von androidForWorkGmailEasConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidForWorkGmailEasConfiguration-Objekts.
-ms.openlocfilehash: d8ebc94ad231b4abf3d86b864462bd963de58b7e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bfc67d8971fe6dad67ae311c8fc12441f113f6f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065576"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360417"
 ---
 # <a name="get-androidforworkgmaileasconfiguration"></a>Abrufen von androidForWorkGmailEasConfiguration
 
@@ -38,9 +39,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

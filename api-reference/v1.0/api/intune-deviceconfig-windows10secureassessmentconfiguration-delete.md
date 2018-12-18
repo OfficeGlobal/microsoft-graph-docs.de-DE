@@ -1,12 +1,13 @@
 ---
 title: windows10SecureAssessmentConfiguration löschen
 description: Löscht ein windows10SecureAssessmentConfiguration-Objekt.
-ms.openlocfilehash: 9de2b46e5a89025fbd45aa0a91ae7487b885a9f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 69517aba33e89b97532e4b3683b129cbdb1cab72
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017387"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357764"
 ---
 # <a name="delete-windows10secureassessmentconfiguration"></a>windows10SecureAssessmentConfiguration löschen
 
@@ -32,9 +33,9 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

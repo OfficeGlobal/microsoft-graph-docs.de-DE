@@ -1,12 +1,13 @@
 ---
 title: Liste macOSImportedPFXCertificateProfiles
 description: Listeneigenschaften und Beziehungen der MacOSImportedPFXCertificateProfile-Objekte.
-ms.openlocfilehash: 4946b30b16bfbceb4155987eafa6ac77d62bd7fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4b0f47303a29506cc5457893c54abc7a0ce27470
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064191"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357841"
 ---
 # <a name="list-macosimportedpfxcertificateprofiles"></a>Liste macOSImportedPFXCertificateProfiles
 
@@ -35,9 +36,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp teamsApp
 description: Eine app in den Microsoft-Teams, app-Katalog.
-ms.openlocfilehash: f8a96355c572287fc8bacc48f9a72e5da8d0f380
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 207974800e44e0db29b8c42f260a1ac16a18902f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018541"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359584"
 ---
 # <a name="teamsapp-resource-type"></a>Ressourcentyp teamsApp
 
@@ -36,7 +37,7 @@ Benutzer können diese apps im Microsoft-Teams Store anzeigen, und diese apps in
 
 ### <a name="teamsappdistributionmethod-values"></a>TeamsAppDistributionMethod Werte
 
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |Speichern|0| Die app ist für alle Mandanten über Microsoft-Teams app Store verfügbar.|
 |Organisation|1|Die app ist nur in diesen Mandanten verfügbar.|

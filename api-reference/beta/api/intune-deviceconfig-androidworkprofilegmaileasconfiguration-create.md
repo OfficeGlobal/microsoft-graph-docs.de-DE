@@ -1,12 +1,13 @@
 ---
 title: Erstellen von androidWorkProfileGmailEasConfiguration
 description: Erstellen eines neuen AndroidWorkProfileGmailEasConfiguration-Objekts.
-ms.openlocfilehash: 1ab3c14457dc4de0d1fb07a3ee48698f747e5f5d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 867cd1bf2679746ca3b8e6da01062b9338ec78fa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062658"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360774"
 ---
 # <a name="create-androidworkprofilegmaileasconfiguration"></a>Erstellen von androidWorkProfileGmailEasConfiguration
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

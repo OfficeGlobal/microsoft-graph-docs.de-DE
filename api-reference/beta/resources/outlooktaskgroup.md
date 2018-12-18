@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp outlookTaskGroup
 description: 'Eine Gruppe von Ordnern (OutlookTaskFolder), die Outlook-Aufgaben (Auflistung von OutlookTask-Objekten) enthalten. '
-ms.openlocfilehash: 4896b114bf04b7e1703886453f21a4e015c9e7d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 9fed69e1401f2b11ae3630a3c4cef66fd9446920
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064942"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359395"
 ---
 # <a name="outlooktaskgroup-resource-type"></a>Ressourcentyp outlookTaskGroup
 

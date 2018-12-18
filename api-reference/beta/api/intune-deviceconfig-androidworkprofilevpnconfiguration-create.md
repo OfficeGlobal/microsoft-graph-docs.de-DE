@@ -1,12 +1,13 @@
 ---
 title: Erstellen von androidWorkProfileVpnConfiguration
 description: Erstellen eines neuen AndroidWorkProfileVpnConfiguration-Objekts.
-ms.openlocfilehash: c362b3fd3ff08f8c8ad8a78073439c077daa2de0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bc00b1b06c28385412a84cdfd7f37d6a8ab7f560
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062655"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358198"
 ---
 # <a name="create-androidworkprofilevpnconfiguration"></a>Erstellen von androidWorkProfileVpnConfiguration
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

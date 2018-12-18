@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „mobileAppContentFile“
 description: Diese Methode erstellt ein neues Objekt des Typs mobileAppContentFile.
-ms.openlocfilehash: eb464009ad897917c3a23c334c5428494e363808
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 456ac0f136c8d118dcc0b3fcbe165170da918aa6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061204"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356630"
 ---
 # <a name="create-mobileappcontentfile"></a>Erstellen von „mobileAppContentFile“
 
@@ -34,9 +35,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

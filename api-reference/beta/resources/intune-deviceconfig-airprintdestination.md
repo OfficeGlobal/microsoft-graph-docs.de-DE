@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp airPrintDestination
 description: Stellt ein AirPrint Ziel.
-ms.openlocfilehash: a1f30f5c71a8ee79bb537ad4ae1f20ce8a05d184
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 046f85c65d382b34e6920f30f6b2718f817371a9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060469"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361054"
 ---
 # <a name="airprintdestination-resource-type"></a>Ressourcentyp airPrintDestination
 

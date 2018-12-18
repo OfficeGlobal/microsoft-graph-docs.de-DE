@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „windows81CompliancePolicy“
 description: Diese Methode erstellt ein neues Objekt des Typs windows81CompliancePolicy.
-ms.openlocfilehash: a2e82d6040941365d5a5b03b2aa648f819d8b80c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 683c6c29cc27d314b00e24fdd6ffbd6d50c03735
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017228"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359444"
 ---
 # <a name="create-windows81compliancepolicy"></a>Erstellen von „windows81CompliancePolicy“
 
@@ -32,9 +33,9 @@ POST /deviceManagement/deviceCompliancePolicies
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Abrufen von androidWorkProfileTrustedRootCertificate
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidWorkProfileTrustedRootCertificate-Objekts.
-ms.openlocfilehash: 66e323258e2b9aa677d3b73ed2e4dbd31e9417fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 473568f12b90af2af6e085202243dff1257059b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058877"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360081"
 ---
 # <a name="get-androidworkprofiletrustedrootcertificate"></a>Abrufen von androidWorkProfileTrustedRootCertificate
 
@@ -38,9 +39,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

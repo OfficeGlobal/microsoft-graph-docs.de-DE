@@ -1,12 +1,13 @@
 ---
 title: Erstellen von windowsManagementAppHealthState
 description: Erstellen eines neuen WindowsManagementAppHealthState-Objekts.
-ms.openlocfilehash: e815a86001e75e2350e0ea1b5bb73a8dfd87f58a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5fec23dec7510c0b7b1a53b0be7d2dfe507959f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060627"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359080"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>Erstellen von windowsManagementAppHealthState
 
@@ -34,9 +35,9 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: WindowsAutopilotDeviceIdentity aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines WindowsAutopilotDeviceIdentity-Objekts.
-ms.openlocfilehash: 1cf603f9d970379fb55eac416ffab092ae94587c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b1ec7e17602becbf70d825711f2e2ea55b278fb5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063817"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356350"
 ---
 # <a name="update-windowsautopilotdeviceidentity"></a>WindowsAutopilotDeviceIdentity aktualisieren
 
@@ -35,9 +36,9 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

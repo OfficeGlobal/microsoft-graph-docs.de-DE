@@ -1,12 +1,13 @@
 ---
 title: Abrufen eines educationSynchronizationProfile
 description: Rufen Sie ein Schule Synchronisierung Datenprofil im Mandanten auf Grundlage des Bezeichners ab.
-ms.openlocfilehash: a62b938f3177f06a02a8a5ad1190d72b3f27dfd9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 6aa01f8c48bdaad58ae3a6a9c6ba719e91eb23a8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058014"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360851"
 ---
 # <a name="get-an-educationsynchronizationprofile"></a>Abrufen eines educationSynchronizationProfile
 
@@ -32,7 +33,7 @@ GET /synchronizationProfiles/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich.  |
+| Autorisierung  | string  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

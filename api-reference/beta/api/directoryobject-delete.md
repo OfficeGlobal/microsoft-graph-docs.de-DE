@@ -1,12 +1,13 @@
 ---
 title: directoryObject löschen
 description: Löschen Sie DirectoryObject.
-ms.openlocfilehash: a1377b0493c5c8a6833225faf33a16f596a23240
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: f53ffc488529c2af4b566ada52f213d1fc132c60
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061248"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361411"
 ---
 # <a name="delete-directoryobject"></a>directoryObject löschen
 
@@ -33,7 +34,7 @@ DELETE /directoryObjects/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: CertificateRevocationStatus Enum-Typ
 description: Status der Zertifikatsperre.
-ms.openlocfilehash: 5fb80b85cb6fe65e20439f8a3242b6bc74b30184
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d41845ba882136c15d944c8a7f91083e6fa47cdb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059606"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358226"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>CertificateRevocationStatus Enum-Typ
 
@@ -16,9 +17,9 @@ ms.locfileid: "27059606"
 
 Status der Zertifikatsperre.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
-|n/v|0|Nicht gesperrt.|
+|Keine|0|Nicht gesperrt.|
 |Ausstehende|1|OCSP ausstehende.|
 |ausgestellt|2|OCSP-Befehl ausgegeben.|
 |failed|3|OCSP ist fehlgeschlagen.|

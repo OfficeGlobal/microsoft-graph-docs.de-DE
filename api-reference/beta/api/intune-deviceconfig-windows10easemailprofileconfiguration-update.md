@@ -1,12 +1,13 @@
 ---
 title: Windows10EasEmailProfileConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines windows10EasEmailProfileConfiguration-Objekts.
-ms.openlocfilehash: 996669c391222b1f639ccffab247c7efe6f4efac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2a548a528542ab82c05bab177dda19c39cd0681b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058853"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360312"
 ---
 # <a name="update-windows10easemailprofileconfiguration"></a>Windows10EasEmailProfileConfiguration aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

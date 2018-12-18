@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windowsPhone81CertificateProfileBase
 description: " Zertifikatsprofil."
-ms.openlocfilehash: b8a2f7e8ea95cb516821294231643d76fcf718e7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: db312402463afe9d5071ee171a0cd6af2f091edc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059679"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360571"
 ---
 # <a name="windowsphone81certificateprofilebase-resource-type"></a>Ressourcentyp windowsPhone81CertificateProfileBase
 

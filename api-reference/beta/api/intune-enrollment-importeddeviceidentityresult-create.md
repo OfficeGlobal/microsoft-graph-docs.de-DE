@@ -1,12 +1,13 @@
 ---
 title: Erstellen von importedDeviceIdentityResult
 description: Erstellen eines neuen ImportedDeviceIdentityResult-Objekts.
-ms.openlocfilehash: 4dec2ac709274dd30e3412a299bb1b561c9514b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2613cd100ccb1803464907821d56eb75fc4024fb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065091"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359717"
 ---
 # <a name="create-importeddeviceidentityresult"></a>Erstellen von importedDeviceIdentityResult
 
@@ -34,9 +35,9 @@ POST /deviceManagement/importedDeviceIdentities
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: ComplianceStatus Enum-Typ
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 6b6b7631050205bde7add8b90bb79c047de68abe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 53f0005af81f52e2c3d6cb0de553bb127d9004b8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065744"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357477"
 ---
 # <a name="compliancestatus-enum-type"></a>ComplianceStatus Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27065744"
 
 Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Noch nicht dokumentiert|
 |notApplicable|1|Noch nicht dokumentiert|

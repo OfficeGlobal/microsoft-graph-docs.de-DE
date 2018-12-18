@@ -1,12 +1,13 @@
 ---
 title: detectedApp-Ressourcentyp
 description: Eine verwaltete oder nicht verwaltete App, die auf einem verwalteten Gerät installiert ist. Nicht verwaltete Apps werden nur für als unternehmenseigen gekennzeichnete Geräte angezeigt.
-ms.openlocfilehash: 756600ce2d48d77ec404bf3b8eb3ce123b142f3c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0b8e234651c0936fea71d8420b30fcc5d1c6fb7a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059416"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356896"
 ---
 # <a name="detectedapp-resource-type"></a>detectedApp-Ressourcentyp
 

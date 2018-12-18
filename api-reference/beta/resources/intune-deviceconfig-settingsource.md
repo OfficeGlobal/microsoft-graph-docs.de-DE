@@ -1,12 +1,13 @@
 ---
 title: settingSource-Ressourcentyp
 description: Noch nicht dokumentiert
-ms.openlocfilehash: b6fe26cfbc1c46a1a14291146c3a61803ed0417d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7e5fef3e780f6f72e1bd95867e0d5d2c59228ba2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062311"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359521"
 ---
 # <a name="settingsource-resource-type"></a>settingSource-Ressourcentyp
 

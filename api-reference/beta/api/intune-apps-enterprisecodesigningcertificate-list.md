@@ -1,12 +1,13 @@
 ---
 title: Liste enterpriseCodeSigningCertificates
 description: Listeneigenschaften und Beziehungen der EnterpriseCodeSigningCertificate-Objekte.
-ms.openlocfilehash: 89ffc3c073935c96b07bca72c650033d3664930f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 60790e451ac72f03e61286a1a12d1a2bcc8c9bd7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064529"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361509"
 ---
 # <a name="list-enterprisecodesigningcertificates"></a>Liste enterpriseCodeSigningCertificates
 
@@ -34,9 +35,9 @@ GET /deviceAppManagement/enterpriseCodeSigningCertificates
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

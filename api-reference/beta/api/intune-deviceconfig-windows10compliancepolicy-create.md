@@ -1,12 +1,13 @@
 ---
 title: windows10CompliancePolicy erstellen
 description: Erstellt neue Objekte des Typs windows10CompliancePolicy.
-ms.openlocfilehash: 76ba188743ede8609e3d116d0b05d9aa50621bc7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 50d1230a6e1580008e501745f9c7918da5031187
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065383"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360914"
 ---
 # <a name="create-windows10compliancepolicy"></a>windows10CompliancePolicy erstellen
 
@@ -34,9 +35,9 @@ POST /deviceManagement/deviceCompliancePolicies
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

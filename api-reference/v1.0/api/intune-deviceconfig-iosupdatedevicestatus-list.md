@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „iosUpdateDeviceStatus“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs iosUpdateDeviceStatus auf.
-ms.openlocfilehash: 4e7cbe8c1899aa4efa17da610be9f85ba6143872
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a708fe9a8e27cafd3ffe96123b0cc88ce12c0a2a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019469"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357932"
 ---
 # <a name="list-iosupdatedevicestatuses"></a>Auflisten von „iosUpdateDeviceStatus“
 
@@ -32,9 +33,9 @@ GET /deviceManagement/iosUpdateStatuses
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

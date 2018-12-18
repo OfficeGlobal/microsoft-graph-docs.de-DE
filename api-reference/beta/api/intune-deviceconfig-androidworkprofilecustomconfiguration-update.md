@@ -1,12 +1,13 @@
 ---
 title: AndroidWorkProfileCustomConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidWorkProfileCustomConfiguration-Objekts.
-ms.openlocfilehash: 70f733344a7aa79d851fe1275a04760645586765
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a8a16a0e4fd9cb8e2f6970a63b723dae6fdebb25
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060302"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357820"
 ---
 # <a name="update-androidworkprofilecustomconfiguration"></a>AndroidWorkProfileCustomConfiguration aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

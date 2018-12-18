@@ -1,12 +1,13 @@
 ---
 title: AndroidForWorkCompliancePolicy aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidForWorkCompliancePolicy-Objekts.
-ms.openlocfilehash: 7f50c338fe6967536bd2abc7e3e701589d8f6a90
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ca1030b26074825aa8bba2d8857be12e2e476bb1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063481"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358135"
 ---
 # <a name="update-androidforworkcompliancepolicy"></a>AndroidForWorkCompliancePolicy aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp androidForWorkImportedPFXCertificateProfile
 description: Android für Arbeit PFX-Zertifikatsprofil importieren
-ms.openlocfilehash: 7f4b73d2f584946d05ae0782ae9df14110fdec0e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d12f7324e1229ed8c8a280f1df90f6f9c60ff464
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061649"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356945"
 ---
 # <a name="androidforworkimportedpfxcertificateprofile-resource-type"></a>Ressourcentyp androidForWorkImportedPFXCertificateProfile
 

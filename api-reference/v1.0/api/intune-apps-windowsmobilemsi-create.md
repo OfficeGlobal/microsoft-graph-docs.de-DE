@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „windowsMobileMSI“
 description: Erstellen eines neuen windowsMobileMSI-Objekts.
-ms.openlocfilehash: 18415ddbcfaacdc4db91653a4f0988520905e6c3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a67458a860227f68dac2825fd286bc0a0d18c451
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019816"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360697"
 ---
 # <a name="create-windowsmobilemsi"></a>Erstellen von „windowsMobileMSI“
 
@@ -32,9 +33,9 @@ POST /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

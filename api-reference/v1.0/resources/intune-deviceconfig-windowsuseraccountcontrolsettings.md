@@ -1,12 +1,13 @@
 ---
 title: WindowsUserAccountControlSettings Enum-Typ
 description: Mögliche Werte für Windows-Benutzerkonto steuern Einstellungen.
-ms.openlocfilehash: 6bfbf4b08abb5c0105d788c652932e6b03061bdf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 33e9c914e9c816257cebbebe3754865c5ef17db7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017496"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358072"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>WindowsUserAccountControlSettings Enum-Typ
 
@@ -14,7 +15,7 @@ ms.locfileid: "27017496"
 
 Mögliche Werte für Windows-Benutzerkonto steuern Einstellungen.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
 |alwaysNotify|1|Immer benachrichtigen.|

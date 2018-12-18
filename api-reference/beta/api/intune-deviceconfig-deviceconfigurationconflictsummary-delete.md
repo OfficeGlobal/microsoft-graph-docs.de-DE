@@ -1,12 +1,13 @@
 ---
 title: DeviceConfigurationConflictSummary löschen
 description: Löscht eine DeviceConfigurationConflictSummary.
-ms.openlocfilehash: 2b33bb6fd277f72d0b026d98c269e147e780e8f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c0dba169b531a7fb5f01661c617cf01950d3e90b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058504"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357533"
 ---
 # <a name="delete-deviceconfigurationconflictsummary"></a>DeviceConfigurationConflictSummary löschen
 
@@ -34,9 +35,9 @@ DELETE /deviceManagement/deviceConfigurationConflictSummary/{deviceConfiguration
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

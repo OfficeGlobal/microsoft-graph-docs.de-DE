@@ -1,12 +1,13 @@
 ---
 title: managedAndroidStoreApp-Ressourcentyp
 description: Enthält Eigenschaften und geerbte Eigenschaften für Android Store-Apps, die Sie mit einer Intune-App-Schutzrichtlinie verwalten können.
-ms.openlocfilehash: ff510358c1dbfa1bd12acbab22af37c1fd48a4e7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aebbc1ab3e6f4675ae683efb679a42ed2021324a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062456"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357939"
 ---
 # <a name="managedandroidstoreapp-resource-type"></a>managedAndroidStoreApp-Ressourcentyp
 

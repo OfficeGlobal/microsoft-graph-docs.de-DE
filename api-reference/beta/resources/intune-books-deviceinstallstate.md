@@ -1,12 +1,13 @@
 ---
 title: deviceInstallState-Ressourcentyp
 description: Enthält Eigenschaften für den Installationsstatus für ein Gerät.
-ms.openlocfilehash: 944cb57d397ffe7b75f0a378680b0f1468b10f49
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fb11f93682093655a38ac554b2816348f9b0c6bc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064688"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360368"
 ---
 # <a name="deviceinstallstate-resource-type"></a>deviceInstallState-Ressourcentyp
 

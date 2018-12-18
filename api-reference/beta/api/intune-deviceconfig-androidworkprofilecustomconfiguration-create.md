@@ -1,12 +1,13 @@
 ---
 title: Erstellen von androidWorkProfileCustomConfiguration
 description: Erstellen eines neuen AndroidWorkProfileCustomConfiguration-Objekts.
-ms.openlocfilehash: f617eaab9c0df03cbd2febc67a38b87d7d79ab3f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f4f7a4824f713d9b1761b973bcd23575b8d53317
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061928"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355965"
 ---
 # <a name="create-androidworkprofilecustomconfiguration"></a>Erstellen von androidWorkProfileCustomConfiguration
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

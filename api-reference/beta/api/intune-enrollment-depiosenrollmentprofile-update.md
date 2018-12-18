@@ -1,12 +1,13 @@
 ---
 title: DepIOSEnrollmentProfile aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines DepIOSEnrollmentProfile-Objekts.
-ms.openlocfilehash: 75fbf56532a4145537b714a73626dd01554179a1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4c492955c17e20948b6088e8f87ed260bf6b07fd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063816"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358639"
 ---
 # <a name="update-depiosenrollmentprofile"></a>DepIOSEnrollmentProfile aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIo
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

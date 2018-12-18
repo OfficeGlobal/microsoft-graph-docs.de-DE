@@ -1,12 +1,13 @@
 ---
 title: GetMobileAppCount-Funktion
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 6dc6d290c25968fce6f8486fb6a3a28c39ea34c1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 35ff8211fee31938551cc8eb2fce72c79ce39bc9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065206"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358863"
 ---
 # <a name="getmobileappcount-function"></a>GetMobileAppCount-Funktion
 
@@ -34,9 +35,9 @@ GET /deviceAppManagement/mobileApps/getMobileAppCount
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

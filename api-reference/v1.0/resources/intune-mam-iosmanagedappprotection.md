@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp „iosManagedAppProtection“
 description: Diese Richtlinie wird verwendet, um detaillierte Verwaltungseinstellungen für bestimmte Sicherheitsgruppen sowie für festgelegte Gruppen von Apps auf einem iOS-Gerät zu konfigurieren.
-ms.openlocfilehash: e0f38dc23d41b05be5f2e2e2a94edb19f199a1c5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b0323564851548b31533f9ee0c4c6cd38ae25984
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017227"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359955"
 ---
 # <a name="iosmanagedappprotection-resource-type"></a>Ressourcentyp „iosManagedAppProtection“
 

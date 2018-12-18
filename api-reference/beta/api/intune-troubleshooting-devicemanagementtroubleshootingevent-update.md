@@ -1,12 +1,13 @@
 ---
 title: deviceManagementTroubleshootingEvent aktualisieren
 description: Aktualisieren der Eigenschaften eines deviceManagementTroubleshootingEvent-Objekts.
-ms.openlocfilehash: aba683521c34168c31991cda46ff3e965f73e320
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ec4cf8d98d51ec369739158c3cf8f6daf2e2ac8e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064377"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358807"
 ---
 # <a name="update-devicemanagementtroubleshootingevent"></a>deviceManagementTroubleshootingEvent aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

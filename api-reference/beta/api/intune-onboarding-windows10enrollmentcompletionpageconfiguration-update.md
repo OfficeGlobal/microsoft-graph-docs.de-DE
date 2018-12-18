@@ -1,12 +1,13 @@
 ---
 title: Windows10EnrollmentCompletionPageConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines windows10EnrollmentCompletionPageConfiguration-Objekts.
-ms.openlocfilehash: b3566d7b476c17557bdfc15f8ff9d86763123ab2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bcc62cc4bea069a6a29ce2d321578a86145a0446
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064230"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360046"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>Windows10EnrollmentCompletionPageConfiguration aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

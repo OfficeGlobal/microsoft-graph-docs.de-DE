@@ -1,12 +1,13 @@
 ---
 title: Erstellen von windows81WifiImportConfiguration
 description: Erstellen eines neuen windows81WifiImportConfiguration-Objekts.
-ms.openlocfilehash: 2e4c43c08ba326d89495650fa5125467237fbbeb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 377f7e44becbcc6e4e3816a843a8898700ac67b7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063796"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356497"
 ---
 # <a name="create-windows81wifiimportconfiguration"></a>Erstellen von windows81WifiImportConfiguration
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

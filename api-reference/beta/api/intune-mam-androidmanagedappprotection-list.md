@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „androidManagedAppProtection“
 description: Listet die Eigenschaften und Beziehungen von Objekten des Typs androidManagedAppProtection auf.
-ms.openlocfilehash: f662e710282ea718f8aefe38cdac7e0351bc0476
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e5ef8d09df2af166f5a672b06ac2dc3d3792fc82
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061366"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359654"
 ---
 # <a name="list-androidmanagedappprotections"></a>Auflisten von „androidManagedAppProtection“
 
@@ -34,9 +35,9 @@ GET /deviceAppManagement/androidManagedAppProtections
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

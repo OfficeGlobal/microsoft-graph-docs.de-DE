@@ -1,12 +1,13 @@
 ---
 title: RatingIrelandTelevisionType Enum-Typ
 description: TV zum Bewerten Bezeichnungen in Irland
-ms.openlocfilehash: b81a48a5f9ea74861eb0b6ed71c7cee52c3df5be
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 40bff39bc943257267a03fdc0ddf1b99fa06dd18
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065011"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360767"
 ---
 # <a name="ratingirelandtelevisiontype-enum-type"></a>RatingIrelandTelevisionType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27065011"
 
 TV zum Bewerten Bezeichnungen in Irland
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |allAllowed|0|Standardwert, zulassen, dass alle TV Inhalt anzeigt.|
 |allBlocked|1|Lassen Sie nicht, dass alle TV Inhalt anzeigt.|

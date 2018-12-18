@@ -1,12 +1,13 @@
 ---
 title: AndroidWorkProfileEnterpriseWiFiConfiguration löschen
 description: Löscht eine AndroidWorkProfileEnterpriseWiFiConfiguration.
-ms.openlocfilehash: 0959b627f811ef2fcf04bce890125c52229056cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fdeffb608c2097faae24b9f49f4b7cfe29e74ffe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060908"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360403"
 ---
 # <a name="delete-androidworkprofileenterprisewificonfiguration"></a>AndroidWorkProfileEnterpriseWiFiConfiguration löschen
 
@@ -36,9 +37,9 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

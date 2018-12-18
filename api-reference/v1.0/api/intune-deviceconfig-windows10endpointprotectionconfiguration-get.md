@@ -1,12 +1,13 @@
 ---
 title: Abrufen von „windows10EndpointProtectionConfiguration“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs windows10EndpointProtectionConfiguration.
-ms.openlocfilehash: f9df07db833088b5fd0329e0d30169181574be8b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7977003fc9d479f637c015e23ef3eafa50e011cf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017764"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361390"
 ---
 # <a name="get-windows10endpointprotectionconfiguration"></a>Abrufen von „windows10EndpointProtectionConfiguration“
 
@@ -34,9 +35,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

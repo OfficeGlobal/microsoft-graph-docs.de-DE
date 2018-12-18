@@ -1,12 +1,13 @@
 ---
 title: Gruppe abrufen
 description: Dient zum Abrufen der Eigenschaften und der Beziehungen eines Gruppenobjekts.
-ms.openlocfilehash: 5bd4635e3eb9004a33c60fee0c802e77fa15a709
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: dc61d3d42f95b47649183f2dbc0932b4b4327400
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065631"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358030"
 ---
 # <a name="get-group"></a>Gruppe abrufen
 
@@ -89,7 +90,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters)
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -142,7 +143,7 @@ Content-length: xxx
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](/graph/extensibility-open-users)
