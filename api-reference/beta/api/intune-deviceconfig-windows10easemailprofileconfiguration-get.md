@@ -1,12 +1,13 @@
 ---
 title: Abrufen von windows10EasEmailProfileConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des windows10EasEmailProfileConfiguration-Objekts.
-ms.openlocfilehash: c65abcfb8cd7219a7ab63013733a3bc5077483fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9990b00d68c0fd61fce0461a09574939dd52fe13
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058228"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352136"
 ---
 # <a name="get-windows10easemailprofileconfiguration"></a>Abrufen von windows10EasEmailProfileConfiguration
 
@@ -38,9 +39,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

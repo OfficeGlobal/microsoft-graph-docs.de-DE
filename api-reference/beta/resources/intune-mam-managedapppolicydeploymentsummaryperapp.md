@@ -1,12 +1,13 @@
 ---
 title: managedAppPolicyDeploymentSummaryPerApp-Ressourcentyp
 description: Zusammenfassung der Richtlinienbereitstellung pro App
-ms.openlocfilehash: 2555fd72bb5b7b3e4018d99a7ddbdd6627b2cef3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8786ff0600b59a2cb729d1d7b5b4c692ab1704de
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062972"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351338"
 ---
 # <a name="managedapppolicydeploymentsummaryperapp-resource-type"></a>managedAppPolicyDeploymentSummaryPerApp-Ressourcentyp
 

@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „androidStoreApp“
 description: Diese Methode erstellt ein neues Objekt des Typs androidStoreApp.
-ms.openlocfilehash: d77aae9acf30d60119d6c00a45530e5a857c0ac1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e1a43114170016b76ce19d6f2f27fbb5ae15a576
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016593"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351443"
 ---
 # <a name="create-androidstoreapp"></a>Erstellen von „androidStoreApp“
 
@@ -32,9 +33,9 @@ POST /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

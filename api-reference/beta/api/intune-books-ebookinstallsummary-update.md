@@ -1,12 +1,13 @@
 ---
 title: eBookInstallSummary aktualisieren
 description: Aktualisieren der Eigenschaften des eBookInstallSummary-Objekts.
-ms.openlocfilehash: a3484eed0a52278616039b7cc5e2427f4a0e1510
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b110646f51ce8c48e15bd8c5fbaa5e025952babc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065999"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350729"
 ---
 # <a name="update-ebookinstallsummary"></a>eBookInstallSummary aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

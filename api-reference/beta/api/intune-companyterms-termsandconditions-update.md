@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „termsAndConditions“
 description: Aktualisieren der Eigenschaften eines termsAndConditions-Objekts.
-ms.openlocfilehash: 448edf2ceb596d7b4905eb78c8e6d6a37403d3da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7394fe5f6838f7ca8c9d25a1b16ab5642bf03e81
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059910"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350099"
 ---
 # <a name="update-termsandconditions"></a>Aktualisieren von „termsAndConditions“
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

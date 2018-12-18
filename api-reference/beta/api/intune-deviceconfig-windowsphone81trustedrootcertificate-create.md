@@ -1,12 +1,13 @@
 ---
 title: Erstellen von windowsPhone81TrustedRootCertificate
 description: Erstellen eines neuen windowsPhone81TrustedRootCertificate-Objekts.
-ms.openlocfilehash: 2e9eed879d46fa8c07ebbbfa30109a095303020e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fcac922765e2d9f9c09030ca511d9f6a24b41e1b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065375"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352101"
 ---
 # <a name="create-windowsphone81trustedrootcertificate"></a>Erstellen von windowsPhone81TrustedRootCertificate
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Unterhaltungsthread erstellen
 description: 'Beginnt eine neue Gruppenunterhaltung, indem zunächst ein Thread erstellt wird. '
-ms.openlocfilehash: 4618a33cb22c327d9fe2b8400b99fa50959a6669
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: e3517c3a933d428a8ba5b719ba72d0967ce1ae71
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018163"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352003"
 ---
 # <a name="create-conversation-thread"></a>Unterhaltungsthread erstellen
 Beginnt eine neue Gruppenunterhaltung, indem zunächst ein Thread erstellt wird. 
@@ -30,7 +31,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /groups/{id}/threads
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

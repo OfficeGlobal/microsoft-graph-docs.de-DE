@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp androidWiFiConfiguration
 description: Durch die Konfigurationen in dieses Profil bereitstellen können Sie das Verbindung zum gewünschten Wi-Fi-Endpunkt Android-Gerät anweisen. Durch Angeben von erwartet, dass die Authentifizierungstypen-Methode und der Sicherheit durch Wi-Fi-Endpunkt, dass Sie die Wi-Fi-Verbindung nahtlos für Endbenutzer vornehmen können. Dieses Profil bietet eingeschränkten und einfacher Sicherheitstypen als Enterprise Wi-Fi-Profil.
-ms.openlocfilehash: 76bc5af2b6a4ee567da23ccf7b655f3fbaa65716
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a243bbd6e8fe132291b514c77ff85d820b824b92
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066033"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350407"
 ---
 # <a name="androidwificonfiguration-resource-type"></a>Ressourcentyp androidWiFiConfiguration
 

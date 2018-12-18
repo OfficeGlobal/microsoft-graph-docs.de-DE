@@ -1,12 +1,13 @@
 ---
 title: directoryRoles auflisten
 description: Mit dieser API können Sie alle Verzeichnisrollen abrufen, die in einem Mandanten aktiviert sind.
-ms.openlocfilehash: b7753fc62a7d3412e4f017eb644644561d1faf05
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 102360728e31e7fbec10c165ab026432a5b71585
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062772"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350743"
 ---
 # <a name="list-directoryroles"></a>directoryRoles auflisten
 
@@ -33,7 +34,7 @@ Die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

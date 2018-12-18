@@ -1,12 +1,13 @@
 ---
 title: Berechtigungen
 description: 'Ruft eine Liste der kürzlich gelöschter Objekte Besitz des angegebenen Benutzers.  '
-ms.openlocfilehash: affdd67d48056c4459e651fd5c64168d8356abe8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 9ce487d957f4bdaa2684d00865aeac7ea293ad67
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016578"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351170"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>**Gelöschte Listenelemente Besitz eines Benutzers**
 
@@ -52,7 +53,7 @@ Textkörper der Anforderung erfordert die folgenden Parameter:
 | Parameter    | Typ |Beschreibung|
 |:---------------|:--------|:----------|
 |userId|String|ID des Besitzers.|
-|Typ|String|Art der Objekte zurückgegeben. `Group` ist derzeit der einzige unterstützte Wert.|
+|type|String|Art der Objekte zurückgegeben. `Group` ist derzeit der einzige unterstützte Wert.|
 
 
 ## <a name="response"></a>Antwort

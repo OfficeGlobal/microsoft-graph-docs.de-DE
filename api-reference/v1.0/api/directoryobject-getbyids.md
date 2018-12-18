@@ -1,12 +1,13 @@
 ---
 title: Directory-Objekte aus einer Liste von IDs abrufen
 description: Wählen Sie ' Abfrageoption ist nicht verfügbar für diesen Vorgang.
-ms.openlocfilehash: 4a2b765d71fe799195a4afcd404ba21718fa87c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 78653f6db76092685de119390053624bbc6be882
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016199"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350505"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Directory-Objekte aus einer Liste von IDs abrufen
 
@@ -40,7 +41,7 @@ POST /directoryObjects/getByIds
 
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 | Content-Type  | string | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „userInstallStateSummary“
 description: Diese Methode erstellt ein neues Objekt des Typs userInstallStateSummary.
-ms.openlocfilehash: a4f942695588bdc821278578b9d3669a5d806f70
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1f90c76382379f1e448c02d5b83a415c9a97fc82
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064706"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350288"
 ---
 # <a name="create-userinstallstatesummary"></a>Erstellen von „userInstallStateSummary“
 
@@ -34,9 +35,9 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

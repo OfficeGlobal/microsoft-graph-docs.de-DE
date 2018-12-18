@@ -1,12 +1,13 @@
 ---
 title: 'group: checkMemberGroups'
 description: Überprüfen Sie die Mitgliedschaft in der angegebenen Liste von Gruppen. Diese Gruppen, denen zurückgegeben aus der Liste
-ms.openlocfilehash: d0dc617300e29950e820dd94701173829fa6bb7b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 6f31e4f53e99272c456f6bb4263054e9cb5a208f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017966"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352493"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -38,7 +39,7 @@ POST /groups/{id}/checkMemberGroups
 
 | Name          | Typ   | Beschreibung               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Erforderlich. |
+| Autorisierung | string | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 

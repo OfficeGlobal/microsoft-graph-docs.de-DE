@@ -1,12 +1,13 @@
 ---
 title: Erstellen von depEnrollmentProfile
 description: Erstellen eines neuen DepEnrollmentProfile-Objekts.
-ms.openlocfilehash: 52a099afe1322aa07f893190ebf7cc50ecde7a06
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5038013701692611272ffc922c81b37b16a55122
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060760"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350736"
 ---
 # <a name="create-depenrollmentprofile"></a>Erstellen von depEnrollmentProfile
 
@@ -34,9 +35,9 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

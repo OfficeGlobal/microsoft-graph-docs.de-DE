@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „iosManagedAppProtection“
 description: Aktualisiert die Eigenschaften von Objekten des Typs iosManagedAppProtection.
-ms.openlocfilehash: a13581907d0ebcbf3dcae4397a6c5ad08bf0e4b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e07e528ec496e6302573be0a392d039960e49596
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019672"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351296"
 ---
 # <a name="update-iosmanagedappprotection"></a>Aktualisieren von „iosManagedAppProtection“
 
@@ -32,9 +33,9 @@ PATCH /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

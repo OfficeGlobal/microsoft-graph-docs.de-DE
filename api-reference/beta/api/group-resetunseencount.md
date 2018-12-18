@@ -1,12 +1,13 @@
 ---
 title: 'group: resetUnseenCount'
 description: Zurücksetzen der UnseenCount der alle Beiträge, die der aktuelle Benutzer seit seinem letzten Besuch nicht erkannt wurde. Unterstützt nur die Office 365-Gruppen.
-ms.openlocfilehash: b6218176f097759870aad4a3a2908759862002e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: f63a3668bc9059819c09bdc43dd78a138196a241
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065422"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350155"
 ---
 # <a name="group-resetunseencount"></a>group: resetUnseenCount
 
@@ -29,7 +30,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /groups/{id}/resetUnseenCount
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Prefer | return=minimal. Wenn die Antwortkopfzeile „minimal“ in der Anforderungskopfzeile enthalten ist, gibt eine erfolgreiche Antwort den `204 No Content`-Code zurück.  Optional.  | 

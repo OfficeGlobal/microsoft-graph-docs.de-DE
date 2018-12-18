@@ -1,12 +1,13 @@
 ---
 title: Abrufen von mobileAppIntentAndState
 description: Lesen Sie Eigenschaften und Beziehungen des MobileAppIntentAndState-Objekts.
-ms.openlocfilehash: 837165f713aea00061b721a41003adc479a46b4d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 18a73a1ca4c8c832ff4d69c1a61c876f4d88e2a4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060702"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352668"
 ---
 # <a name="get-mobileappintentandstate"></a>Abrufen von mobileAppIntentAndState
 
@@ -36,9 +37,9 @@ GET /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

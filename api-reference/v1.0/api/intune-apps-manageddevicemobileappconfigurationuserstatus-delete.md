@@ -1,12 +1,13 @@
 ---
 title: managedDeviceMobileAppConfigurationUserStatus löschen
 description: Löscht ein managedDeviceMobileAppConfigurationUserStatus-Objekt.
-ms.openlocfilehash: 01bb4c6519efcc3cfaf05210d508fcdf2623e9a5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d812b4ea42be7210dcc80a3e4202d8b7e208d360
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017413"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351471"
 ---
 # <a name="delete-manageddevicemobileappconfigurationuserstatus"></a>managedDeviceMobileAppConfigurationUserStatus löschen
 
@@ -32,9 +33,9 @@ DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfi
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

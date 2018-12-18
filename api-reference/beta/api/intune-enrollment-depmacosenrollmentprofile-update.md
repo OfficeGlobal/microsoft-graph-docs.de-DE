@@ -1,12 +1,13 @@
 ---
 title: DepMacOSEnrollmentProfile aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines DepMacOSEnrollmentProfile-Objekts.
-ms.openlocfilehash: 7d0e7a8634d852395fd606e3053e5a2b5609e2a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 243deaa0724270a9ae152e2c98f831c9d79c825f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065101"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350477"
 ---
 # <a name="update-depmacosenrollmentprofile"></a>DepMacOSEnrollmentProfile aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMa
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

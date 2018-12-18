@@ -1,12 +1,13 @@
 ---
 title: Liste iosEnterpriseWiFiConfigurations
 description: Listeneigenschaften und Beziehungen der IosEnterpriseWiFiConfiguration-Objekte.
-ms.openlocfilehash: ecf945cc183b4d2be1106ba70dfa08e3fd8a8253
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: df091667230849d9bf88ba20bb67bd857e833820
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059192"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352332"
 ---
 # <a name="list-iosenterprisewificonfigurations"></a>Liste iosEnterpriseWiFiConfigurations
 
@@ -35,9 +36,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

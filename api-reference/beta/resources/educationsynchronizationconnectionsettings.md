@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp educationSynchronizationConnectionSettings
 description: 'Stellt die Einstellungen für die Anbieter-Verbindung dar. Dadurch wird das System wissen, wie Sie mit der Anbieter APIs verbinden. '
-ms.openlocfilehash: 27cdd377318d3294be9802b7cf28e940d0ada31c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 4e8b62a46fa6d14508a9d57ffedc46411910433d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062404"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350624"
 ---
 # <a name="educationsynchronizationconnectionsettings-resource-type"></a>Ressourcentyp educationSynchronizationConnectionSettings
 

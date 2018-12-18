@@ -1,12 +1,13 @@
 ---
 title: Erstellen von androidTrustedRootCertificate
 description: Erstellen eines neuen AndroidTrustedRootCertificate-Objekts.
-ms.openlocfilehash: 1031d88feebabd308347f505228729bf4fc44337
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bd2272b71b562584f880b538d4b2fc412374dda8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060304"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354943"
 ---
 # <a name="create-androidtrustedrootcertificate"></a>Erstellen von androidTrustedRootCertificate
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

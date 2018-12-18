@@ -1,12 +1,13 @@
 ---
 title: Abrufen von locationManagementCondition
 description: Lesen Sie Eigenschaften und Beziehungen des LocationManagementCondition-Objekts.
-ms.openlocfilehash: df713d68b45c0ad62bce5ade42a53bdc5d69bd83
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 86f64b039e99611d0bd0da913d68c9a897fbc4d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061762"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352717"
 ---
 # <a name="get-locationmanagementcondition"></a>Abrufen von locationManagementCondition
 
@@ -37,9 +38,9 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

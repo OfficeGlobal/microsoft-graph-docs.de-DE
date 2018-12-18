@@ -1,12 +1,13 @@
 ---
 title: VpnProviderType Enum-Typ
 description: Providertyp für VPN-app.
-ms.openlocfilehash: 133b1663ce3c72ba520dd5c1eeadf963154e9cc9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d8f002582879302bcbe0fb965110eaa5e674a689
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064326"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351597"
 ---
 # <a name="vpnprovidertype-enum-type"></a>VpnProviderType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27064326"
 
 Providertyp für VPN-app.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Für den Tunnel wird nicht explizit konfiguriert.|
 |appProxy|1|Tunnel Datenverkehr auf Anwendungsebene.|

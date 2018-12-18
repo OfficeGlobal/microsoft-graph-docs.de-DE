@@ -1,12 +1,13 @@
 ---
 title: ChartLegend abrufen
 description: Dient zum Abrufen der Eigenschaften und der Beziehungen des ChartLegend-Objekts.
-ms.openlocfilehash: c4899700c3889779a4adfcb3f5e03652741a9672
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 861675ad4f341861fff1e5792d8813eaa77f3cf5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062354"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350946"
 ---
 # <a name="get-chartlegend"></a>ChartLegend abrufen
 

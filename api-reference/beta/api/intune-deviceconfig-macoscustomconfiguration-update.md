@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „macOSCustomConfiguration“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs macOSCustomConfiguration.
-ms.openlocfilehash: f40e06a262cffd0445a3b2f4cfcd97804cad46e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 08f049395feda3215801f6fc8058300e453eaaf7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058496"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350260"
 ---
 # <a name="update-macoscustomconfiguration"></a>Aktualisieren von „macOSCustomConfiguration“
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp easEmailProfileConfigurationBase
 description: Diese Ressource repräsentiert das Konfigurationsprofil der Funktionen eines Apple-Geräts.
-ms.openlocfilehash: e721c0ae73d6bc547fc4a45030ccb05f730f86ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3c7be03c09a1aaebaf9b11e2e33eb91493f39e57
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063885"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352122"
 ---
 # <a name="easemailprofileconfigurationbase-resource-type"></a>Ressourcentyp easEmailProfileConfigurationBase
 

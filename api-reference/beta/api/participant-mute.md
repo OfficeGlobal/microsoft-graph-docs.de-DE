@@ -1,12 +1,13 @@
 ---
 title: 'Teilnehmer: stumm schalten'
 description: Stummschalten eines bestimmten Teilnehmers in den Anruf.
-ms.openlocfilehash: 939fd0fd94304318786b0ecb7ae72da28b55e4b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: ea84b2944b9a9dd75a72f05f6fa5c4327068e271
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060929"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350071"
 ---
 # <a name="participant-mute"></a>Teilnehmer: stumm schalten
 

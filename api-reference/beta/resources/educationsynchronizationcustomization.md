@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp educationSynchronizationCustomization
 description: 'Stellt Einstellungen zum Anpassen der Schule Daten profilsynchronisierung Ressource Entitäten bereit. Die Anpassung kann auf allen synchronisierten Entitäten angewendet werden. '
-ms.openlocfilehash: 51799e01e5ab48fc5e686d72d2bdb5c85f191e1e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: d4f67c9f56198350731c18fe3da8b512522c4d71
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059230"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350636"
 ---
 # <a name="educationsynchronizationcustomization-resource-type"></a>Ressourcentyp educationSynchronizationCustomization
 

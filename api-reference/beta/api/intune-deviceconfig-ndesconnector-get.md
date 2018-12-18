@@ -1,12 +1,13 @@
 ---
 title: Abrufen von ndesConnector
 description: Lesen Sie Eigenschaften und Beziehungen des NdesConnector-Objekts.
-ms.openlocfilehash: 3b9bc4efce46125e1d833da23ffc7cec4e8aae7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ccff6dd13e37ccee19b9f86b91adcf2f6bbc9960
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060104"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352794"
 ---
 # <a name="get-ndesconnector"></a>Abrufen von ndesConnector
 
@@ -36,9 +37,9 @@ GET /deviceManagement/ndesConnectors/{ndesConnectorId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

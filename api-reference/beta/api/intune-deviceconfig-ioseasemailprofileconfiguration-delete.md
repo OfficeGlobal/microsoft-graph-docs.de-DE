@@ -1,12 +1,13 @@
 ---
 title: IosEasEmailProfileConfiguration löschen
 description: Löscht eine IosEasEmailProfileConfiguration.
-ms.openlocfilehash: 48440de6dac5d691e5b76056a46e2f55acb4f097
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 79ccee60388816c2a3e6f095c6fdad44ebb32c6a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065145"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350463"
 ---
 # <a name="delete-ioseasemailprofileconfiguration"></a>IosEasEmailProfileConfiguration löschen
 
@@ -36,9 +37,9 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: 'RangeSort: apply'
 description: Führt einen Sortiervorgang aus.
-ms.openlocfilehash: 76432fb2614d92f5f3acbdc2261712085db5ec83
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 98585be62b8aa227ea5e648d1e24e2a09cb023d9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018230"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352108"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 

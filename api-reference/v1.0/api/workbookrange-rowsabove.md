@@ -1,12 +1,13 @@
 ---
 title: 'workbookRange: rowsAbove'
 description: Ruft eine bestimmte Anzahl von Zeilen oberhalb eines gegebenen Bereichs ab.
-ms.openlocfilehash: 9534a69f9afbc41c6d6803951d35b132f1685e54
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: d90d46cad9fa68b1270c8877fdad69fea3cedccf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017721"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351310"
 ---
 # <a name="workbookrange-rowsabove"></a>workbookRange: rowsAbove
 

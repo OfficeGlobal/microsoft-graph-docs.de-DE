@@ -1,12 +1,13 @@
 ---
 title: MacOSLobApp löschen
 description: Löscht eine MacOSLobApp.
-ms.openlocfilehash: 1c929910f8f9f46a2deef3c9c9d69df82985de43
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c53814b64793629bcafa5c9630c06576a9efb10b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058001"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350120"
 ---
 # <a name="delete-macoslobapp"></a>MacOSLobApp löschen
 
@@ -36,9 +37,9 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

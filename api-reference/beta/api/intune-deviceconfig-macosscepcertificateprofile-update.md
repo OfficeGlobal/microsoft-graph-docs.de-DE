@@ -1,12 +1,13 @@
 ---
 title: MacOSScepCertificateProfile aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines MacOSScepCertificateProfile-Objekts.
-ms.openlocfilehash: 459e3eaa90533320b5d6039802d9dca81958ef04
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1ab735b6c9d2703512a97080bc5500111c455764
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065397"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352444"
 ---
 # <a name="update-macosscepcertificateprofile"></a>MacOSScepCertificateProfile aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

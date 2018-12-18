@@ -1,12 +1,13 @@
 ---
 title: AdministrativeUnit abrufen
 description: Rufen Sie die Eigenschaften und die Beziehungen eines AdministrativeUnit-Objekts ab.
-ms.openlocfilehash: d6e19762a74883da3dcff1d8ea423dc06192dd46
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: ff087591191780edaaf88981654d3431ac1308d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059654"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351037"
 ---
 # <a name="get-administrativeunit"></a>AdministrativeUnit abrufen
 

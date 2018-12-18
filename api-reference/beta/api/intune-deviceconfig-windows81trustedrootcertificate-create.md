@@ -1,12 +1,13 @@
 ---
 title: Erstellen von windows81TrustedRootCertificate
 description: Erstellen eines neuen windows81TrustedRootCertificate-Objekts.
-ms.openlocfilehash: 299316e14810e205fef8f9761b6866dba246dd8b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 62703ff94b239b4daca1bca755a85c4ef8755ace
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064439"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350754"
 ---
 # <a name="create-windows81trustedrootcertificate"></a>Erstellen von windows81TrustedRootCertificate
 
@@ -34,9 +35,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

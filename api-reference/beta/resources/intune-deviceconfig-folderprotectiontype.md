@@ -1,12 +1,13 @@
 ---
 title: FolderProtectionType Enum-Typ
 description: Mögliche Werte für Ordnerschutz
-ms.openlocfilehash: a02f1602f8b9a962124fb7bf2a9731662a6f3057
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 93df62da9bb5d849cba86b52384f45bfe7bd760f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061020"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350603"
 ---
 # <a name="folderprotectiontype-enum-type"></a>FolderProtectionType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27061020"
 
 Mögliche Werte für Ordnerschutz
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |vom Typ userDefined|0|Gerät Standardwert, keine beabsichtigt.|
 |Aktivieren|1|Blockiert Funktionalität.|

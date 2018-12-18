@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp deviceManagementScript
 description: Intune bietet Kunden die Möglichkeit, ihre Powershell-Skripts auf der registrierten Windows 10 Azure Active Directory verbunden Geräten ausführen. Das Skript kann einmal oder in regelmäßigen Abständen ausgeführt werden.
-ms.openlocfilehash: c9d1a20eeaeb9b825fbdb553c702bf85ae272f25
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f35a0b4159c84535c4696f7b57c8486b866504b6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060800"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351422"
 ---
 # <a name="devicemanagementscript-resource-type"></a>Ressourcentyp deviceManagementScript
 

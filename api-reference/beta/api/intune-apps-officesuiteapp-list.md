@@ -1,12 +1,13 @@
 ---
 title: Liste officeSuiteApps
 description: Listeneigenschaften und Beziehungen der OfficeSuiteApp-Objekte.
-ms.openlocfilehash: 51cf3388150411ca6e414da2f68a9951ed5360f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2b6366da8bf36954fedaa9670f0de71ed723c06c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064040"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350666"
 ---
 # <a name="list-officesuiteapps"></a>Liste officeSuiteApps
 
@@ -34,9 +35,9 @@ GET /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp iosTrustedRootCertificate
 description: iOS vertrauenswürdige Stammzertifikat Konfigurationsprofil.
-ms.openlocfilehash: 82af20c4cbf285bb9501d36a64912cb9dcbbd665
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0ce68cc840e509b89b08698b2006370b60589f6a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058362"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350799"
 ---
 # <a name="iostrustedrootcertificate-resource-type"></a>Ressourcentyp iosTrustedRootCertificate
 

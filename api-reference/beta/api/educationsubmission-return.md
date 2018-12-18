@@ -1,12 +1,13 @@
 ---
 title: 'EducationSubmission: zurückgeben'
-description: " und gibt an, dass Feedback bereitgestellt wird oder Benotung erfolgt. Diese Aktion kann nur durch die Lehrer erfolgen."
-ms.openlocfilehash: de81f5429119556753462781f701fb7c936826b1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Diese Aktion können Sie die Qualität und Feedback dieser Übermittlung, die an die Student verfügbaren zugeordnet.
+author: dipakboyed
+ms.openlocfilehash: d73300328168baf9481b329b36f056aa27044b2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058039"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350876"
 ---
 # <a name="educationsubmission-return"></a>EducationSubmission: zurückgeben
 
@@ -30,7 +31,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/return
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp teamsAppDefinition
 description: Die Details einer Version von einer TeamsApp.
-ms.openlocfilehash: 34ec74c00dccca48df3b65758e1739cd29b19e7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 43bd4262008a29668739e78d4b598da1e77e3d4b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016396"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351639"
 ---
 # <a name="teamsappdefinition-resource-type"></a>Ressourcentyp teamsAppDefinition
 

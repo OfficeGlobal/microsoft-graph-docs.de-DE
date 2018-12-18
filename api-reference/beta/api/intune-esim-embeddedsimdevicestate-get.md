@@ -1,12 +1,13 @@
 ---
 title: Abrufen von embeddedSIMDeviceState
 description: Lesen Sie Eigenschaften und Beziehungen des EmbeddedSIMDeviceState-Objekts.
-ms.openlocfilehash: fef28c065e7c5ab4350145e736d05ac546a2908f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d9ffb9c915d29a096a39b4cc9499eb712def5892
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061023"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352010"
 ---
 # <a name="get-embeddedsimdevicestate"></a>Abrufen von embeddedSIMDeviceState
 
@@ -36,9 +37,9 @@ GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodeP
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „iosCustomConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs iosCustomConfiguration auf.
-ms.openlocfilehash: b46380d6839c38ace8eb7d63367c4773e2e065e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 09a0d9a22c124bdc4c5d9532b712b6ece0ba5987
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018332"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352311"
 ---
 # <a name="list-ioscustomconfigurations"></a>Auflisten von „iosCustomConfiguration“
 
@@ -32,9 +33,9 @@ GET /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
