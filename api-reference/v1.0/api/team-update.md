@@ -1,12 +1,13 @@
 ---
 title: Update-team
 description: Aktualisieren Sie die Eigenschaften des angegebenen Teams.
-ms.openlocfilehash: 23f65ef1cd1948941bd814a521bdaa0984553dff
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: ff2d4f9c32ff68f865c446fc5f86781f4527f075
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222604"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314266"
 ---
 # <a name="update-team"></a>Update-team
 

@@ -1,12 +1,13 @@
 ---
 title: MacOSTrustedRootCertificate aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines MacOSTrustedRootCertificate-Objekts.
-ms.openlocfilehash: b3a859cbc5218a24b1d1ebd13dfd9f6c5260fec7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d36b31d5211d0c4233ba6dd5811e5f98de9dd6fb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058038"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312852"
 ---
 # <a name="update-macostrustedrootcertificate"></a>MacOSTrustedRootCertificate aktualisieren
 
@@ -35,9 +36,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

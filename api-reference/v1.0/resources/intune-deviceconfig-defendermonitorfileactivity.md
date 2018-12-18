@@ -1,12 +1,13 @@
 ---
 title: DefenderMonitorFileActivity Enum-Typ
 description: Mögliche Werte für die Überwachung von Dateiaktivität.
-ms.openlocfilehash: 7784671f69712ce06a5aefa75048391cb097a89c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 87c8656c09482763b5e09f0ca746c7bddd069a21
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019761"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314763"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>DefenderMonitorFileActivity Enum-Typ
 
@@ -14,7 +15,7 @@ ms.locfileid: "27019761"
 
 Mögliche Werte für die Überwachung von Dateiaktivität.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
 |Deaktivieren|1|Überwachen der Dateiaktivität zu deaktivieren.|

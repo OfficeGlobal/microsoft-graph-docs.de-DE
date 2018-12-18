@@ -1,12 +1,13 @@
 ---
 title: EducationUsers auflisten
 description: Ruft eine Liste der Benutzer an einer Schule ab.
-ms.openlocfilehash: 77d19abc915566e8f048343b84473cf28a799367
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: d282c2df8f78b38e8e21adff115f1af8b11bc1db
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018462"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314217"
 ---
 # <a name="list-educationusers"></a>EducationUsers auflisten
 
@@ -30,7 +31,7 @@ GET /education/schools/{id}/users
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

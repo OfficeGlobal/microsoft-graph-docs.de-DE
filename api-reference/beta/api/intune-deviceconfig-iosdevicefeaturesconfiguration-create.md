@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „iosDeviceFeaturesConfiguration“
 description: Diese Methode erstellt ein neues Objekt des Typs iosDeviceFeaturesConfiguration.
-ms.openlocfilehash: 5dc9d13c4a87629631836ede691bd8e9d9940f5d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dcb9819505cf429f6217dc375fcbd0c3366dee89
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060878"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310885"
 ---
 # <a name="create-iosdevicefeaturesconfiguration"></a>Erstellen von „iosDeviceFeaturesConfiguration“
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

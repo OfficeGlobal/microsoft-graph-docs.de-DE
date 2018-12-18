@@ -1,12 +1,13 @@
 ---
 title: Abrufen des Status eines educationSynchronizationProfile
 description: Rufen Sie den Status eines bestimmten Schule Daten Synchronisierungsprofils im Mandanten. Die Antwort wird den Status der auszuführenden Synchronisierung hingewiesen.
-ms.openlocfilehash: 87ced84dc0960eb6d5808fb8d21bc40d9d9e64e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 8c48565e22df54e81f17110bb0b13654e0e69cd7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059004"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313573"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>Abrufen des Status eines educationSynchronizationProfile
 
@@ -32,7 +33,7 @@ GET /synchronizationProfiles/{id}/profileStatus
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich.  |
+| Autorisierung  | string  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

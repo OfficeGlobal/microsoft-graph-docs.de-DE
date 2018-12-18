@@ -1,12 +1,13 @@
 ---
 title: WipeManagedAppRegistrationByDeviceTag Aktion
 description: Diese Aktion stößt einen Zurücksetzungsvorgang für eine App-Registrierung mit dem jeweils angegebenen Gerätetag an.
-ms.openlocfilehash: 7ea037eecb0a581dd55d212fe541391f24d0819f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 54b5e969d66bff44d0ed19561546ebdc1bdb2c4c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065889"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312159"
 ---
 # <a name="wipemanagedappregistrationbydevicetag-action"></a>WipeManagedAppRegistrationByDeviceTag Aktion
 
@@ -38,9 +39,9 @@ POST /users/{usersId}/wipeManagedAppRegistrationByDeviceTag
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

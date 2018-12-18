@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „windowsUpdateForBusinessConfiguration“
 description: Diese Methode erstellt ein neues Objekt des Typs windowsUpdateForBusinessConfiguration.
-ms.openlocfilehash: 277a90794743c604666d134b26c023fb792c1fb8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4fa7cc29e439d4c160d752869ef2a877ef0a0e4a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017243"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315666"
 ---
 # <a name="create-windowsupdateforbusinessconfiguration"></a>Erstellen von „windowsUpdateForBusinessConfiguration“
 
@@ -32,9 +33,9 @@ POST /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

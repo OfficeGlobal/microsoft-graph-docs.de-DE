@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „deviceComplianceSettingState“
 description: Diese Methode erstellt ein neues Objekt des Typs deviceComplianceSettingState.
-ms.openlocfilehash: d9d1e8fb4d30fbb63381cdf90928ab815539ffca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4f7b8558a631f107f31ff393aca4d2951dfcccf4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27015977"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312327"
 ---
 # <a name="create-devicecompliancesettingstate"></a>Erstellen von „deviceComplianceSettingState“
 
@@ -32,9 +33,9 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

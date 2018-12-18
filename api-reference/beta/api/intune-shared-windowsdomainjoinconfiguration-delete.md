@@ -1,12 +1,13 @@
 ---
 title: WindowsDomainJoinConfiguration löschen
 description: Löscht eine WindowsDomainJoinConfiguration.
-ms.openlocfilehash: 79126f49689ce9a25b6a0efe8e99e2427225403f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3c30f871ed56556052e30965fa8f1e33be4e276d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065347"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315155"
 ---
 # <a name="delete-windowsdomainjoinconfiguration"></a>WindowsDomainJoinConfiguration löschen
 
@@ -37,9 +38,9 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

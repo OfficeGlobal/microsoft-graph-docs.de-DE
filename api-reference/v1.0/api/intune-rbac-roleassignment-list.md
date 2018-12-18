@@ -1,12 +1,13 @@
 ---
 title: roleAssignments auflisten
 description: Auflisten von Eigenschaften und Beziehungen der roleAssignment-Objekte.
-ms.openlocfilehash: 9fdf4589c04b29fcd95adc0f35da0808ca2966b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2899d5fd94ea084cbd314710e3a4baf20a4401f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016813"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314140"
 ---
 # <a name="list-roleassignments"></a>roleAssignments auflisten
 
@@ -32,9 +33,9 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

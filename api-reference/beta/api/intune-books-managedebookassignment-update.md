@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „managedEBookAssignment“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs managedEBookAssignment.
-ms.openlocfilehash: 2fecda839ad995c2e4727219239efaf9f3a60167
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9ac5d51413a9539667a11ee15e5789d359c94d9b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061493"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315764"
 ---
 # <a name="update-managedebookassignment"></a>Aktualisieren von „managedEBookAssignment“
 
@@ -34,9 +35,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

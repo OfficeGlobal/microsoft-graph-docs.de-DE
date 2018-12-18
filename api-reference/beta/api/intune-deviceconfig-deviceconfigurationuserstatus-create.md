@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „deviceConfigurationUserStatus“
 description: Diese Methode erstellt ein neues Objekt des Typs deviceConfigurationUserStatus.
-ms.openlocfilehash: 26cd6242558a8af1da665a2668e4cd07ddcd68b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2d12b141fd45b89e7330595594f1110c65f8b4d4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064943"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311648"
 ---
 # <a name="create-deviceconfigurationuserstatus"></a>Erstellen von „deviceConfigurationUserStatus“
 
@@ -42,9 +43,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

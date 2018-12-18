@@ -1,12 +1,13 @@
 ---
 title: acceptedSender entfernen
 description: 'Mit dieser API können Sie Benutzer oder Gruppen aus der Liste „acceptedSenders“ entfernen. '
-ms.openlocfilehash: e0b9b008c7a6fbc5726a25e53aaed7d1af7fd17f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 7028f2f63e340c9f5c3f300f6e3724a05f87d288
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060592"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313909"
 ---
 # <a name="remove-acceptedsender"></a>acceptedSender entfernen
 
@@ -30,7 +31,7 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile         | Wert                      |
+| Header         | Wert                      |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}. Erforderlich.  
 

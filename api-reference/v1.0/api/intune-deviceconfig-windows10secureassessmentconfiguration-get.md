@@ -1,12 +1,13 @@
 ---
 title: windows10SecureAssessmentConfiguration abrufen
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs windows10SecureAssessmentConfiguration.
-ms.openlocfilehash: e341ab9da5ea2727427c2101338061549fdc4f66
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7bdef0ef87bdc1af6e00ab950ee0d1601ab6b846
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017861"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313769"
 ---
 # <a name="get-windows10secureassessmentconfiguration"></a>windows10SecureAssessmentConfiguration abrufen
 
@@ -34,9 +35,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

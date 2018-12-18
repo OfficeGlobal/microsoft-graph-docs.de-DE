@@ -1,12 +1,13 @@
 ---
 title: Gerät abrufen
 description: Mit dieser API können Sie die Eigenschaften und Beziehungen eines Geräteobjekts abrufen.
-ms.openlocfilehash: 07ee10ccc6f3cfb7649df2cb3711bfff24115036
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 57032f29ace00a441aff7f68e9b61bd52e88e79b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019536"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310668"
 ---
 # <a name="get-device"></a>Gerät abrufen
 
@@ -34,7 +35,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: contactFolder aktualisieren
 description: Mit dieser API können Sie die Eigenschaften von Objekten des Typs „contactfolder“ aktualisieren.
-ms.openlocfilehash: 410dc0962278b63650637efb2ed67f7cf038b677
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 1bed74aa9efd6f8d82677d3c50feedc03fa34fe3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018347"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310717"
 ---
 # <a name="update-contactfolder"></a>contactFolder aktualisieren
 
@@ -27,7 +28,7 @@ PATCH /me/contactFolders/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json. Erforderlich.   |

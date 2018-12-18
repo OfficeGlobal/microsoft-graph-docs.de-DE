@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp Einstellungen
 description: 'Den aktuellen benutzereinstellungen. '
-ms.openlocfilehash: 291ec0b8d11a94d082534f5a890b556df89d665e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: c6a130dc9232114110735ebb0a98b0beeecbf835
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018542"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314497"
 ---
 # <a name="settings-resource-type"></a>Ressourcentyp Einstellungen
 

@@ -1,12 +1,13 @@
 ---
 title: AndroidTrustedRootCertificate aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidTrustedRootCertificate-Objekts.
-ms.openlocfilehash: 26e88ff939778ce6e3fec5f67282a51bba70d654
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c096af286e74e628bbf4ecd8b045b4fc71a2738a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060812"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312845"
 ---
 # <a name="update-androidtrustedrootcertificate"></a>AndroidTrustedRootCertificate aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

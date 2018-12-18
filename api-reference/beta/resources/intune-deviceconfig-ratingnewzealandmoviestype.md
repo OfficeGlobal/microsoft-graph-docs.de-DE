@@ -1,12 +1,13 @@
 ---
 title: RatingNewZealandMoviesType Enum-Typ
 description: Filme Bewertung Bezeichnungen in Neuseeland
-ms.openlocfilehash: eb32d047c4c24e2848e71ab7cc0947d57048d75d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b000dfbe56146365fcf61a0afefdd0cdc03816e0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058308"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312229"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>RatingNewZealandMoviesType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27058308"
 
 Filme Bewertung Bezeichnungen in Neuseeland
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |allAllowed|0|Standardwert, alle Filme Inhalte zulassen|
 |allBlocked|1|Alle Inhalte Filme nicht zulassen|

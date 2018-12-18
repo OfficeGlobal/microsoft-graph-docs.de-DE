@@ -1,12 +1,13 @@
 ---
 title: Besitzertyp Enum-Typ
 description: Besitzertyp des Geräts.
-ms.openlocfilehash: 0ead319b34a6bcee48f53621879bfbcf6bef87be
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4c73227a9dd85a8b26ea9d3bc3a2494effe429f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058482"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311004"
 ---
 # <a name="ownertype-enum-type"></a>Besitzertyp Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27058482"
 
 Besitzertyp des Geräts.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannt.|
 |company|1|Unternehmen gehören.|

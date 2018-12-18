@@ -1,12 +1,13 @@
 ---
 title: DefenderPromptForSampleSubmission Enum-Typ
 description: Mögliche Werte für den Benutzer für die Übermittlung Beispiele.
-ms.openlocfilehash: b70e86cb010395d5c3dfbd3266cc0cb7f6383fbd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 19498f587759df56ae671b119b59abe7e7acd62c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059907"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314931"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>DefenderPromptForSampleSubmission Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27059907"
 
 Mögliche Werte für den Benutzer für die Übermittlung Beispiele.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
 |alwaysPrompt|1|Immer auffordern.|

@@ -1,12 +1,13 @@
 ---
 title: Thread erstellen
 description: Dient zum Erstellen eines neuen Threads in der angegebenen Unterhaltung.
-ms.openlocfilehash: d545cc8fcc9ac78e9fcda1a7722bb622bf0d72ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 5fafbcae4a7dcf451d8bb707dd19456cc9da3f90
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059023"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313846"
 ---
 # <a name="create-thread"></a>Thread erstellen
 
@@ -35,7 +36,7 @@ POST /groups/{id}/conversations/{id}/threads
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [conversationThread](../resources/conversationthread.md)-Objekts an.

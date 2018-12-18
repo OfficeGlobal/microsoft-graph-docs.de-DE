@@ -1,12 +1,13 @@
 ---
 title: windowsMobileMSI aktualisieren
 description: Aktualisiert die Eigenschaften von Objekten des Typs windowsMobileMSI.
-ms.openlocfilehash: c1b5da5f4684908f3fa0f0c9deeb78557666247d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 859d32fbf053ba22c0bd59afe8ad24d6b05c84a1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066027"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310745"
 ---
 # <a name="update-windowsmobilemsi"></a>windowsMobileMSI aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

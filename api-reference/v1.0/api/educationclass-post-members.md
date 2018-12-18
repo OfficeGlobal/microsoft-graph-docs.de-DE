@@ -1,12 +1,13 @@
 ---
 title: Kursteilnehmer hinzufügen
 description: Hinzufügen eines Mitglieds zu einer Klasse.
-ms.openlocfilehash: 529d17d002a4ecc16472e06ae883f4d962516c78
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 112bfd3ff67dfe2dde42f8e51c015640662a4006
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016569"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313685"
 ---
 # <a name="add-a-student"></a>Kursteilnehmer hinzufügen
 
@@ -27,7 +28,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /education/classes/{id}/members/$ref
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

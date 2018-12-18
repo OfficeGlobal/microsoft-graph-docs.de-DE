@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionAppLockerFile löschen
 description: Löscht ein windowsInformationProtectionAppLockerFile-Objekt.
-ms.openlocfilehash: 45b2e02310f1c3bd3087d39c11467750b056123c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 184bf32cace77f344213b037b20bab82b7e509ad
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066117"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312089"
 ---
 # <a name="delete-windowsinformationprotectionapplockerfile"></a>windowsInformationProtectionAppLockerFile löschen
 
@@ -37,9 +38,9 @@ DELETE /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsI
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

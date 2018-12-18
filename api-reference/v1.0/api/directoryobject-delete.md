@@ -1,12 +1,13 @@
 ---
 title: directoryObject löschen
 description: Mit dieser API können Sie eine Ressource des Typs „directoryObject“ löschen.
-ms.openlocfilehash: 2ecd16163a7241b34adc74ebc1aa8c11406cb800
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: dec525e72b523e7bbe95996d4c863c68e01baa15
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019393"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313202"
 ---
 # <a name="delete-directoryobject"></a>directoryObject löschen
 
@@ -31,7 +32,7 @@ DELETE /directoryObjects/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

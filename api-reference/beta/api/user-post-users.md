@@ -1,12 +1,13 @@
 ---
 title: Benutzer erstellen
 description: Verwenden Sie diese API, um einen neuen Benutzer zu erstellen.
-ms.openlocfilehash: 17df752fb3767e82b72e46857e9ce6a2a8769db7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: ace74039d3740b51487252447ba3d56a018f745e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059235"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314854"
 ---
 # <a name="create-user"></a>Benutzer erstellen
 
@@ -29,7 +30,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /users
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

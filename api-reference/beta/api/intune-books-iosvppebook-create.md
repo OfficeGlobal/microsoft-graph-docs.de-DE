@@ -1,12 +1,13 @@
 ---
 title: iosVppEBook erstellen
 description: Erstellt neue Objekte des Typs iosVppEBook.
-ms.openlocfilehash: 403093fa69cff503022ba6104f27a1f8ccd96849
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d50e698668c177069934fe6eb33aec4f3475fe17
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064071"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314119"
 ---
 # <a name="create-iosvppebook"></a>iosVppEBook erstellen
 
@@ -34,9 +35,9 @@ POST /deviceAppManagement/managedEBooks
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

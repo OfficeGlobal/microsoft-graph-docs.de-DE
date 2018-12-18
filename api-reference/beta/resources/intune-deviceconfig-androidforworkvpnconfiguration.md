@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp androidForWorkVpnConfiguration
 description: Weisen Sie durch die Konfigurationen in dieses Profil bereitstellen das Android-Gerät zur gewünschten Endpunkt für VPN-Verbindung. Durch Angeben von erwartet die Authentifizierungstypen-Methode und der Sicherheit durch VPN-Endpunkt, dass Sie die VPN-Verbindung nahtlos für Endbenutzer vornehmen können.
-ms.openlocfilehash: 21535d2e8d54d7f24827b859e672ead43fe88a24
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ddfa2c994893da15475bae315ea659ec8d8971ef
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066037"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314665"
 ---
 # <a name="androidforworkvpnconfiguration-resource-type"></a>Ressourcentyp androidForWorkVpnConfiguration
 

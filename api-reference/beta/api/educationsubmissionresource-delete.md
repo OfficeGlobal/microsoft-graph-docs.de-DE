@@ -1,12 +1,13 @@
 ---
 title: EducationSubmissionResource löschen
-description: " die Ressource in den ursprünglichen Zustand. Wenn die Ressource nicht in der Zuweisung kopiert wurde aber aus der Student hinzugefügt wurde, wird die Ressource einfach gelöscht."
-ms.openlocfilehash: 9eb5b08e2e5481e707cc6c1e0b0f8339e3d22ad4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Löscht eine Ressource aus der Übermittlung an. Dies kann nur durch die Student erfolgen. Wenn die Ressource aus der Zuordnung kopiert wurde, wird eine neue Kopie der Ressource erstellt werden, nachdem die aktuelle Kopie gelöscht wurde.
+author: dipakboyed
+ms.openlocfilehash: d56df6cee3884556186554d9c24ae09ed802c4f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063097"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313272"
 ---
 # <a name="delete-educationsubmissionresource"></a>EducationSubmissionResource löschen
 
@@ -30,7 +31,7 @@ DELETE /educationClasses/assignments/{id}/submissions/{id}/resources/{id}
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

@@ -1,12 +1,13 @@
 ---
 title: Liste importedDeviceIdentities
 description: Listeneigenschaften und Beziehungen der ImportedDeviceIdentity-Objekte.
-ms.openlocfilehash: 9ef2b9a3cf874b41ab6db27d8f9bd4c61da67770
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7a57a4340417b7aa2b78055ffc9371ec78185a5f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064646"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315015"
 ---
 # <a name="list-importeddeviceidentities"></a>Liste importedDeviceIdentities
 
@@ -34,9 +35,9 @@ GET /deviceManagement/importedDeviceIdentities
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

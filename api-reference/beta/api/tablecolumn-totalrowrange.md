@@ -1,12 +1,13 @@
 ---
 title: 'TableColumn: TotalRowRange'
 description: Ruft das Bereichsobjekt ab, das mit der Ergebniszeile der Spalte verknüpft ist.
-ms.openlocfilehash: b4d6b3184d25751fdc082dafd1ca3a541adc69e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 8fe3e4cb209b91fa8ef04810a88f37f9ef9ea337
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065271"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313076"
 ---
 # <a name="tablecolumn-totalrowrange"></a>TableColumn: TotalRowRange
 

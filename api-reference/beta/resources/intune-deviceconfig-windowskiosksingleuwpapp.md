@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windowsKioskSingleUWPApp
 description: Die Klasse verwendet, um die UWP app-Informationen für die Konfiguration Kiosk identifizieren
-ms.openlocfilehash: 009d53d1439894b59a89a1f269df34c4dbb09ce1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd1dffd5a01b89db27132770d4c8ffe0094eed8f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063109"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312180"
 ---
 # <a name="windowskiosksingleuwpapp-resource-type"></a>Ressourcentyp windowsKioskSingleUWPApp
 

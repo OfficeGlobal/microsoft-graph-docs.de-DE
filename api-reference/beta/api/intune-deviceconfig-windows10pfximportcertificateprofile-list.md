@@ -1,12 +1,13 @@
 ---
 title: Liste windows10PFXImportCertificateProfiles
 description: Listeneigenschaften und Beziehungen der windows10PFXImportCertificateProfile-Objekte.
-ms.openlocfilehash: b53e4bed99bc1ea9a1704c403e512f549b0c843c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3332f23464b761da6a44841d9353d16ce59c6576
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065336"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313671"
 ---
 # <a name="list-windows10pfximportcertificateprofiles"></a>Liste windows10PFXImportCertificateProfiles
 
@@ -35,9 +36,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

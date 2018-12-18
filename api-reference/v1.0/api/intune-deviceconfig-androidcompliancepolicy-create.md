@@ -1,12 +1,13 @@
 ---
 title: androidCompliancePolicy erstellen
 description: Erstellt neue Objekte des Typs androidCompliancePolicy.
-ms.openlocfilehash: 4ed3111f8a9f4e71b2bc244eef341058ea57b674
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eb7859b2bbe6cd758ed0e7c1366afde1d0420464
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018107"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314917"
 ---
 # <a name="create-androidcompliancepolicy"></a>androidCompliancePolicy erstellen
 
@@ -32,9 +33,9 @@ POST /deviceManagement/deviceCompliancePolicies
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: WindowsSpotlightEnablementSettings Enum-Typ
 description: Ermöglicht es IT-Admind eine vordefinierten Standard-Suchmaschine für MDM gesteuerte Geräte festlegen
-ms.openlocfilehash: a9d2d1231abf57f47fb510ad0ebe603ff2fa5213
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e5ce0c09bd155e493a4df9a105edb12d09e8f9e7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016801"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312992"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>WindowsSpotlightEnablementSettings Enum-Typ
 
@@ -14,7 +15,7 @@ ms.locfileid: "27016801"
 
 Ermöglicht es IT-Admind eine vordefinierten Standard-Suchmaschine für MDM gesteuerte Geräte festlegen
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Spotlight auf Lock-Bildschirm ist nicht konfiguriert.|
 |deaktiviert|1|Deaktivieren des Windows-Spotlight für Sperren des Bildschirms|

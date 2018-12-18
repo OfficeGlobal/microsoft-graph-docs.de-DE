@@ -1,12 +1,13 @@
 ---
 title: RatingJapanTelevisionType Enum-Typ
 description: TV zum Bewerten Beschriftungen in Japan
-ms.openlocfilehash: b9962bc48f235c0ee1b9a08ab69d72677e746c01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1300119ceda0931354502dc881afc281bf7a3809
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017813"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311655"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>RatingJapanTelevisionType Enum-Typ
 
@@ -14,7 +15,7 @@ ms.locfileid: "27017813"
 
 TV zum Bewerten Beschriftungen in Japan
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |allAllowed|0|Standardwert, zulassen, dass alle TV Inhalt anzeigt.|
 |allBlocked|1|Lassen Sie nicht, dass alle TV Inhalt anzeigt.|

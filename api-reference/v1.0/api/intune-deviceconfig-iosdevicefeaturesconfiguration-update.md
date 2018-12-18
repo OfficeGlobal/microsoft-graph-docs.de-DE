@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „iosDeviceFeaturesConfiguration“
 description: Aktualisiert die Eigenschaften eines iosDeviceFeaturesConfiguration-Objekts.
-ms.openlocfilehash: 473e28586e51d858320605957e446d730023c8f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b2eff78663ce8f666161c653f3845932bbda1fca
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018389"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315568"
 ---
 # <a name="update-iosdevicefeaturesconfiguration"></a>Aktualisieren von „iosDeviceFeaturesConfiguration“
 
@@ -32,9 +33,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

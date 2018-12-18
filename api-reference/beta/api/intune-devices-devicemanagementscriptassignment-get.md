@@ -1,12 +1,13 @@
 ---
 title: Abrufen von deviceManagementScriptAssignment
 description: Lesen Sie Eigenschaften und Beziehungen des DeviceManagementScriptAssignment-Objekts.
-ms.openlocfilehash: 18ba1766771b8ecacd0da17b2b7342454ed5153c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 58360cb52c006c68e5a6da493a79fc86609dc5fc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063527"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310920"
 ---
 # <a name="get-devicemanagementscriptassignment"></a>Abrufen von deviceManagementScriptAssignment
 
@@ -36,9 +37,9 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignm
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

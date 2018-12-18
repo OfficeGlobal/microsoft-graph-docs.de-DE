@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp mobileAppInstallSummary
 description: Enthält Eigenschaften für die Zusammenfassung der Installation einer mobilen App.
-ms.openlocfilehash: bda3f798a86b38ca0d1224ce509c355a8aec998a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d998e0fe5b136afe7aa18741c5c91fcde9adcc37
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058622"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314784"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>Ressourcentyp mobileAppInstallSummary
 

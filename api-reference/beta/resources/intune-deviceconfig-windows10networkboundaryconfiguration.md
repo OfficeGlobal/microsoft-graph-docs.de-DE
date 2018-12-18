@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windows10NetworkBoundaryConfiguration
 description: Windows10 Grenze Netzwerkkonfiguration
-ms.openlocfilehash: 156634283a5117f9ebec00120b52afe247627b70
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7716eeaafc1b6821d31497ed8a8c9cdf9b887009
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058694"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311830"
 ---
 # <a name="windows10networkboundaryconfiguration-resource-type"></a>Ressourcentyp windows10NetworkBoundaryConfiguration
 

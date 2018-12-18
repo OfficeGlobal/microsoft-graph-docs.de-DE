@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „mobileAppContent“
 description: Diese Methode erstellt ein neues Objekt des Typs mobileAppContent.
-ms.openlocfilehash: 8aba68926a39a23e8adf0448679cb46ea4b79bb0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0cc1abf7a1e13a151117db9407b1a03d6f4524c1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019679"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312187"
 ---
 # <a name="create-mobileappcontent"></a>Erstellen von „mobileAppContent“
 
@@ -34,9 +35,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobile
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

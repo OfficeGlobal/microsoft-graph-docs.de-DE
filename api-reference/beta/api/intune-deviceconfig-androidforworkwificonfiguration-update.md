@@ -1,12 +1,13 @@
 ---
 title: AndroidForWorkWiFiConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidForWorkWiFiConfiguration-Objekts.
-ms.openlocfilehash: b12baaf0a003617798160aa9b45f6aeb937c3981
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f7ef59f0e68d92231b25b904cd87bf9c928d265f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064281"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315428"
 ---
 # <a name="update-androidforworkwificonfiguration"></a>AndroidForWorkWiFiConfiguration aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

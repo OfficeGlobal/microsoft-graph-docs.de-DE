@@ -1,12 +1,13 @@
 ---
 title: deviceCompliancePolicySettingStateSummary-Ressourcentyp
 description: Zusammenfassung des Zustands der Gerätekonformitätsrichtlinien-Einstellung für das Konto.
-ms.openlocfilehash: a4707e40ff90649f93cd673a3904caa8b4cd2b9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d070dd0021cd9529c55f6f4a31d8a61d0cb32413
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063193"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314952"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>deviceCompliancePolicySettingStateSummary-Ressourcentyp
 

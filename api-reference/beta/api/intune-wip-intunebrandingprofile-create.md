@@ -1,12 +1,13 @@
 ---
 title: Erstellen von intuneBrandingProfile
 description: Erstellen eines neuen IntuneBrandingProfile-Objekts.
-ms.openlocfilehash: 42a90e6a5488e8f9e37fa5c3a5fda18a9d4f424f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4058e30fe858c261a59b105652d198946b630222
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061435"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314875"
 ---
 # <a name="create-intunebrandingprofile"></a>Erstellen von intuneBrandingProfile
 
@@ -34,9 +35,9 @@ POST /deviceManagement/intuneBrandingProfiles
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

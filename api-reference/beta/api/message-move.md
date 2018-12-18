@@ -1,12 +1,13 @@
 ---
 title: 'message: move'
 description: Verschieben von Nachrichten in einen Ordner. Erstellt eine neue Kopie der Nachricht im Zielordner und die ursprüngliche Nachricht entfernt.
-ms.openlocfilehash: ea05cf2d07a9dc0719c4485f9dd940a0cc96ed24
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 46f62d8793a20db41d19c1677b3d6f48aa7dbd14
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063952"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311697"
 ---
 # <a name="message-move"></a>message: move
 
@@ -37,9 +38,9 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile | Wert |
+| Header | Wert |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Erforderlich. |
+| Autorisierung | `Bearer {token}`. Erforderlich. |
 | Content-Type | `application/json`. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext

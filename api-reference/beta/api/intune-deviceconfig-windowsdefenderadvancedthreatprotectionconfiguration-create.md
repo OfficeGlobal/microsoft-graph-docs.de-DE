@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „windowsDefenderAdvancedThreatProtectionConfiguration“
 description: Diese Methode erstellt ein neues Objekt des Typs windowsDefenderAdvancedThreatProtectionConfiguration.
-ms.openlocfilehash: 5188b30dc6d87f3d37064a5ac512341ad9919716
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ab9dbf4132c18e40e4a72194d1fe456a2777d02e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063416"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313307"
 ---
 # <a name="create-windowsdefenderadvancedthreatprotectionconfiguration"></a>Erstellen von „windowsDefenderAdvancedThreatProtectionConfiguration“
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

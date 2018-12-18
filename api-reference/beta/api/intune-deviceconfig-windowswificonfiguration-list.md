@@ -1,12 +1,13 @@
 ---
 title: Liste windowsWifiConfigurations
 description: Listeneigenschaften und Beziehungen der WindowsWifiConfiguration-Objekte.
-ms.openlocfilehash: 055eb6722ebaf049b2654a681711f3073b66faae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4e35f4e29237d8f20371553a1d4a5f4815744c0d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065315"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312383"
 ---
 # <a name="list-windowswificonfigurations"></a>Liste windowsWifiConfigurations
 
@@ -35,9 +36,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Mitglieder auflisten
 description: Verwenden Sie diese API zum Abrufen der Mitglieder Liste (Benutzer und Gruppen) in eine administrative Einheit.
-ms.openlocfilehash: c2d86992ccffd9d0ec4df90f5209ed5d6881ed16
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: d373c8353928d8e8d5d8b398aa09e62d457ba665
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060962"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311662"
 ---
 # <a name="list-members"></a>Mitglieder auflisten
 

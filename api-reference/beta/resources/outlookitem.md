@@ -1,12 +1,13 @@
 ---
 title: outlookItem-Ressourcentyp
 description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: 6de0b5f9f79f8c3f813cbd876fa22f6b43f71a53
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 4d375606a5104d48955561df3b904922a5daf042
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064748"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315022"
 ---
 # <a name="outlookitem-resource-type"></a>outlookItem-Ressourcentyp
 

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windows10PkcsCertificateProfile
 description: Windows-10-Desktop und Mobile PKCS Zertifikatsprofil
-ms.openlocfilehash: 65b9ea54da8cfabdab6f046e6f8e68b327174961
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0bc420b9c031df41515e99d088e095bd125db38b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063159"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315673"
 ---
 # <a name="windows10pkcscertificateprofile-resource-type"></a>Ressourcentyp windows10PkcsCertificateProfile
 

@@ -1,12 +1,13 @@
 ---
 title: Abrufen von windowsProtectionState
 description: Lesen Sie Eigenschaften und Beziehungen des WindowsProtectionState-Objekts.
-ms.openlocfilehash: 064b47a9595838d0e77a5378b6238e9f6fd227b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6baa42445c1f117b1f86ccc5fa726f4d6f939378
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060944"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315169"
 ---
 # <a name="get-windowsprotectionstate"></a>Abrufen von windowsProtectionState
 
@@ -37,9 +38,9 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

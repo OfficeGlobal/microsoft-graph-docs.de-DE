@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp advancedThreatProtectionOnboardingDeviceSettingState
 description: ATP Onboarding Zustand für ein bestimmtes Gerät.
-ms.openlocfilehash: 44dabd71706679a5ce55bdf14eef77dc905fbb54
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eecdcc1cbaf9c783da6dcf902281aa6394a842a2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060424"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310871"
 ---
 # <a name="advancedthreatprotectiononboardingdevicesettingstate-resource-type"></a>Ressourcentyp advancedThreatProtectionOnboardingDeviceSettingState
 

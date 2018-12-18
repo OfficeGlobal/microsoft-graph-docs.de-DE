@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp bitLockerRecoveryOptions
 description: BitLocker Wiederherstellungsoptionen.
-ms.openlocfilehash: 46af5b52d8305932d0d67ef57d6a1f356182a469
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c85ce3111ed88ce8e8bf54c98d5fd3122571a0be
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060202"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310605"
 ---
 # <a name="bitlockerrecoveryoptions-resource-type"></a>Ressourcentyp bitLockerRecoveryOptions
 

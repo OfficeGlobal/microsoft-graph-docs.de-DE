@@ -1,12 +1,13 @@
 ---
 title: DeviceConfigurationGroupAssignment aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines DeviceConfigurationGroupAssignment-Objekts.
-ms.openlocfilehash: 303ecefdccafc133c4680bc0fd7eb866b682fded
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ea879c7d267337a247455235f069206b7b3b2a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063239"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313881"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>DeviceConfigurationGroupAssignment aktualisieren
 
@@ -42,9 +43,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

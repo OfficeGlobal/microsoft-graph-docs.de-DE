@@ -1,12 +1,13 @@
 ---
 title: Erstellen von deviceManagementScript
 description: Erstellen eines neuen DeviceManagementScript-Objekts.
-ms.openlocfilehash: feb3463e679e77a1702a38f8cc7fd0edb28170d5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 862b9c3ba50f879e92e47b50e6efaf0bcf41927a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065676"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315435"
 ---
 # <a name="create-devicemanagementscript"></a>Erstellen von deviceManagementScript
 
@@ -34,9 +35,9 @@ POST /deviceManagement/deviceManagementScripts
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

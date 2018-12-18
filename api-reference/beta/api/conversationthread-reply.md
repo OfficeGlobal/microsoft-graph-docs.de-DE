@@ -1,12 +1,13 @@
 ---
 title: 'conversationThread: reply'
 description: 'Beantworten Sie ein Thread in einer gruppenunterhaltung, und fügen Sie eine neue Bereitstellung hinzu. Sie können die übergeordnete Unterhaltung angeben. '
-ms.openlocfilehash: 40557be0ca301569aae5404cc7288f72cd5872ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 9e439901fd2fa9c37ab30c746628e7fcd771edc2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062688"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314098"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
 
@@ -30,7 +31,7 @@ POST /groups/{id}/threads/{id}/reply
 POST /groups/{id}/conversations/{id}/threads/{id}/reply
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json. Erforderlich.   |

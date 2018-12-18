@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp iosImportedPFXCertificateProfile
 description: iOS Import PFX-Zertifikat-Profil
-ms.openlocfilehash: dbe6c45cb90df7defd57894027d9cca412496d94
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 32f88e982e193516269aa8715c4f7e2274295f70
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064026"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314721"
 ---
 # <a name="iosimportedpfxcertificateprofile-resource-type"></a>Ressourcentyp iosImportedPFXCertificateProfile
 

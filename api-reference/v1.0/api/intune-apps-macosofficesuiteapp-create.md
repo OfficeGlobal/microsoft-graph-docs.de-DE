@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „macOSOfficeSuiteApp“
 description: Diese Methode erstellt ein neues Objekt des Typs macOSOfficeSuiteApp.
-ms.openlocfilehash: 40df7156eb262e1d2a0696fa49d71db506a6cfba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1e4a2f4bbcbe32407df468fe8c89c57d30a3d815
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016221"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311858"
 ---
 # <a name="create-macosofficesuiteapp"></a>Erstellen von „macOSOfficeSuiteApp“
 
@@ -32,9 +33,9 @@ POST /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

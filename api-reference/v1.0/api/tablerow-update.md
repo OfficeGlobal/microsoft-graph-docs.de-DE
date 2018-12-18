@@ -1,12 +1,13 @@
 ---
 title: tablerow aktualisieren
 description: Dient zum Aktualisieren der Eigenschaften des tablerow-Objekts.
-ms.openlocfilehash: 1bfad780ed51ffc4d4c27abff980716aad5533f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 3990885ac237ccfe5e7a01c71353b0ec44d1a14d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016244"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314259"
 ---
 # <a name="update-tablerow"></a>tablerow aktualisieren
 

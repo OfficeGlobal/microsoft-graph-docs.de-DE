@@ -1,12 +1,13 @@
 ---
 title: Abrufen von „deviceManagementExchangeConnector“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs deviceManagementExchangeConnector.
-ms.openlocfilehash: 6036b44246aa27ff35e34ba63c1f31d0f51b2064
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 91c83f715e023079c439b64c002ae9fb317fdfeb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016500"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311921"
 ---
 # <a name="get-devicemanagementexchangeconnector"></a>Abrufen von „deviceManagementExchangeConnector“
 
@@ -34,9 +35,9 @@ GET /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

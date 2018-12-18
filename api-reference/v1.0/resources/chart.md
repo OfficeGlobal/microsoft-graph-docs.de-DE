@@ -1,12 +1,13 @@
 ---
 title: Chart-Ressourcentyp
 description: Steht für ein Diagrammobjekt in einer Arbeitsmappe.
-ms.openlocfilehash: bada94032dcc00e3f6294b20559f44044570f2ec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: c8cbc297c3906a913a6b5962ea8bb0a048d70005
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017532"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311746"
 ---
 # <a name="chart-resource-type"></a>Chart-Ressourcentyp
 

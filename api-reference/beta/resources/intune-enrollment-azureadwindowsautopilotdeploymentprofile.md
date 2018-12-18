@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp azureADWindowsAutopilotDeploymentProfile
 description: Windows Autopilot Bereitstellung Benutzerprofil
-ms.openlocfilehash: c7fa5c32a232b866c38823425616b32b4c4a1a9c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f459e810a0325bf69380021625ad19ea29c87490
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065568"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314756"
 ---
 # <a name="azureadwindowsautopilotdeploymentprofile-resource-type"></a>Ressourcentyp azureADWindowsAutopilotDeploymentProfile
 

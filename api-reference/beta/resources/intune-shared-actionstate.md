@@ -1,12 +1,13 @@
 ---
 title: ActionState Enum-Typ
 description: Status der Aktion auf dem Gerät
-ms.openlocfilehash: e0169bd690cdc8a26cc771948ebcf311f6fd6aa5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1f36c3a6709ade5860ff24cc8d10c2cb0294a471
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061388"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315106"
 ---
 # <a name="actionstate-enum-type"></a>ActionState Enum-Typ
 
@@ -16,9 +17,9 @@ ms.locfileid: "27061388"
 
 Status der Aktion auf dem Gerät
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
-|n/v|0|Nicht auf einen gültigen Action Zustand|
+|Keine|0|Nicht auf einen gültigen Action Zustand|
 |Ausstehende|1|Aktion steht noch aus|
 |abgebrochen|2|Aktion wurde abgebrochen.|
 |aktive|3|Aktion ist aktiv.|

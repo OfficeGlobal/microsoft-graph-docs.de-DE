@@ -1,12 +1,13 @@
 ---
 title: user-Ressourcentyp
 description: Stellt ein Azure AD-Benutzerkonto dar. Erbt von directoryObject.
-ms.openlocfilehash: 893a5bef5fd3a2fce730c5f971ceca523e260be3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 65d113ef86159ebc45160f2caa31fa51c9aa7571
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019549"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312481"
 ---
 # <a name="user-resource-type"></a>user-Ressourcentyp
 
@@ -88,7 +89,7 @@ Diese Ressource unterstützt Folgendes:
 |interests|Zeichenfolgenauflistung|Eine Liste für den Benutzer, um dessen Interessen zu beschreiben.|
 |jobTitle|String|Die Position des Benutzers. Unterstützt $filter.|
 |legalAgeGroupClassification|String| Wird von enterpriseanwendungen verwendet, um der Altersgruppe Legal des Benutzers zu bestimmen. Diese Eigenschaft ist schreibgeschützt und berechnete basierend auf `ageGroup` und `consentProvidedForMinor` Eigenschaften. Zulässige Werte: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` und `adult`. Verweisen Sie auf die [Legal Alter mitgliedergruppendefinitionen-Eigenschaft](#legal-age-group-property-definitions) für Weitere Informationen.)|
-|Mail|String|Die SMTP-Adresse des Benutzers, z. B. „jeff@contoso.onmicrosoft.com“. Schreibgeschützt. Unterstützt $filter.|
+|mail|String|Die SMTP-Adresse des Benutzers, z. B. „jeff@contoso.onmicrosoft.com“. Schreibgeschützt. Unterstützt $filter.|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|Einstellungen für das primäre Postfach des angemeldeten Benutzers. Sie können Einstellungen für das Senden von automatischen Antworten auf eingehende Nachrichten, das Gebietsschema und die Zeitzone [abrufen](../api/user-get-mailboxsettings.md) oder [aktualisieren](../api/user-update-mailboxsettings.md).|
 |mailNickname|String|Der E-Mail-Alias für den Benutzer. Diese Eigenschaft muss beim Erstellen eines Benutzers angegeben werden. Unterstützt $filter.|
 |mobilePhone|String|Die Nummer des primären Mobiltelefons für den Benutzer.|
@@ -437,7 +438,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](/graph/extensibility-open-users)

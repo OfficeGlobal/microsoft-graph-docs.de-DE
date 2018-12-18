@@ -1,12 +1,13 @@
 ---
 title: Liste cartToClassAssociations
 description: Listeneigenschaften und Beziehungen der CartToClassAssociation-Objekte.
-ms.openlocfilehash: 1a2ecfc81648e35e7b4d24788bc3bb6f1326d860
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4eabf95b942ed94d9ad37f588f3f7882e19f276e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060210"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315456"
 ---
 # <a name="list-carttoclassassociations"></a>Liste cartToClassAssociations
 
@@ -34,9 +35,9 @@ GET /deviceManagement/cartToClassAssociations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
