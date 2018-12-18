@@ -1,30 +1,31 @@
 ---
 title: Liste windows10NetworkBoundaryConfigurations
 description: Listeneigenschaften und Beziehungen der windows10NetworkBoundaryConfiguration-Objekte.
-ms.openlocfilehash: a9b16a37915ddbea536b0378c521a447852e7ef7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b00f450e05d99c2fad5943093622762fc5b24772
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062488"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355538"
 ---
-# <a name="list-windows10networkboundaryconfigurations"></a><span data-ttu-id="cc9ee-103">Liste windows10NetworkBoundaryConfigurations</span><span class="sxs-lookup"><span data-stu-id="cc9ee-103">List windows10NetworkBoundaryConfigurations</span></span>
+# <a name="list-windows10networkboundaryconfigurations"></a><span data-ttu-id="ad251-103">Liste windows10NetworkBoundaryConfigurations</span><span class="sxs-lookup"><span data-stu-id="ad251-103">List windows10NetworkBoundaryConfigurations</span></span>
 
-> <span data-ttu-id="cc9ee-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="cc9ee-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="cc9ee-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="cc9ee-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ad251-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="ad251-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ad251-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="ad251-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="cc9ee-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="cc9ee-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="ad251-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="ad251-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="cc9ee-107">Listeneigenschaften und Beziehungen der [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) -Objekte.</span><span class="sxs-lookup"><span data-stu-id="cc9ee-107">List properties and relationships of the [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="cc9ee-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="cc9ee-108">Prerequisites</span></span>
-<span data-ttu-id="cc9ee-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cc9ee-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ad251-107">Listeneigenschaften und Beziehungen der [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) -Objekte.</span><span class="sxs-lookup"><span data-stu-id="ad251-107">List properties and relationships of the [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="ad251-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="ad251-108">Prerequisites</span></span>
+<span data-ttu-id="ad251-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ad251-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cc9ee-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="cc9ee-111">Permission type</span></span>|<span data-ttu-id="cc9ee-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="cc9ee-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="ad251-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="ad251-111">Permission type</span></span>|<span data-ttu-id="ad251-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="ad251-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="cc9ee-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="cc9ee-113">Delegated (work or school account)</span></span>|<span data-ttu-id="cc9ee-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="cc9ee-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="cc9ee-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="cc9ee-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cc9ee-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="cc9ee-116">Not supported.</span></span>|
-|<span data-ttu-id="cc9ee-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="cc9ee-117">Application</span></span>|<span data-ttu-id="cc9ee-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="cc9ee-118">Not supported.</span></span>|
+|<span data-ttu-id="ad251-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="ad251-113">Delegated (work or school account)</span></span>|<span data-ttu-id="ad251-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="ad251-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="ad251-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="ad251-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ad251-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ad251-116">Not supported.</span></span>|
+|<span data-ttu-id="ad251-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="ad251-117">Application</span></span>|<span data-ttu-id="ad251-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ad251-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="cc9ee-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="cc9ee-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ad251-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="ad251-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,27 +35,27 @@ GET /deviceManagement/deviceConfigurations
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="cc9ee-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="cc9ee-120">Request headers</span></span>
-|<span data-ttu-id="cc9ee-121">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="cc9ee-121">Header</span></span>|<span data-ttu-id="cc9ee-122">Wert</span><span class="sxs-lookup"><span data-stu-id="cc9ee-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ad251-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="ad251-120">Request headers</span></span>
+|<span data-ttu-id="ad251-121">Header</span><span class="sxs-lookup"><span data-stu-id="ad251-121">Header</span></span>|<span data-ttu-id="ad251-122">Wert</span><span class="sxs-lookup"><span data-stu-id="ad251-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="cc9ee-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="cc9ee-123">Authorization</span></span>|<span data-ttu-id="cc9ee-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="cc9ee-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="cc9ee-125">Accept</span><span class="sxs-lookup"><span data-stu-id="cc9ee-125">Accept</span></span>|<span data-ttu-id="cc9ee-126">application/json</span><span class="sxs-lookup"><span data-stu-id="cc9ee-126">application/json</span></span>|
+|<span data-ttu-id="ad251-123">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="ad251-123">Authorization</span></span>|<span data-ttu-id="ad251-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="ad251-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="ad251-125">Accept</span><span class="sxs-lookup"><span data-stu-id="ad251-125">Accept</span></span>|<span data-ttu-id="ad251-126">application/json</span><span class="sxs-lookup"><span data-stu-id="ad251-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="cc9ee-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="cc9ee-127">Request body</span></span>
-<span data-ttu-id="cc9ee-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="cc9ee-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ad251-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="ad251-127">Request body</span></span>
+<span data-ttu-id="ad251-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="ad251-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cc9ee-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="cc9ee-129">Response</span></span>
-<span data-ttu-id="cc9ee-130">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="cc9ee-130">If successful, this method returns a `200 OK` response code and a collection of [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ad251-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="ad251-129">Response</span></span>
+<span data-ttu-id="ad251-130">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="ad251-130">If successful, this method returns a `200 OK` response code and a collection of [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cc9ee-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="cc9ee-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="cc9ee-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="cc9ee-132">Request</span></span>
-<span data-ttu-id="cc9ee-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="cc9ee-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="ad251-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ad251-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="ad251-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="ad251-132">Request</span></span>
+<span data-ttu-id="ad251-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="ad251-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="cc9ee-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="cc9ee-134">Response</span></span>
-<span data-ttu-id="cc9ee-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="cc9ee-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="ad251-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="ad251-134">Response</span></span>
+<span data-ttu-id="ad251-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="ad251-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
