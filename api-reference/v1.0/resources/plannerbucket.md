@@ -1,12 +1,13 @@
 ---
 title: plannerBucket-Ressourcentyp
 description: ) für Aufgaben in einem Plan in Office 365. Er ist in einem PlannerPlan enthalten und kann eine Auflistung von PlannerTasks haben.
-ms.openlocfilehash: 44bce1606fa7561bc52098fe0e6ba8f70d737a58
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: 09c9fab569a819f0545e5c851da12be98b45b150
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017055"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331444"
 ---
 # <a name="plannerbucket-resource-type"></a>plannerBucket-Ressourcentyp
 

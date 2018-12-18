@@ -1,12 +1,13 @@
 ---
 title: Erstellen von embeddedSIMActivationCodePoolAssignment
 description: Erstellen eines neuen EmbeddedSIMActivationCodePoolAssignment-Objekts.
-ms.openlocfilehash: a1a4e35f72cc853d46b64033080a05ddc7d44d6b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b0f453e3d940f8e2d57d7c19e2a0da6905e654cf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065304"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322330"
 ---
 # <a name="create-embeddedsimactivationcodepoolassignment"></a>Erstellen von embeddedSIMActivationCodePoolAssignment
 
@@ -34,9 +35,9 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

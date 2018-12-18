@@ -1,12 +1,13 @@
 ---
 title: Im Namen eines Benutzers zugreifen
 description: 'Um Microsoft Graph zum Lesen und Schreiben von Ressourcen im Namen eines Benutzers zu verwenden, muss Ihre App ein Zugriffstoken von Azure AD abrufen und das Token an Anforderungen anfügen, die die API an Microsoft Graph sendet. Welchen Authentifizierungsfluss genau Sie zum Abrufen von Zugriffstoken verwenden, ist davon abhängig, welche Art von App Sie entwickeln und ob Sie OpenID Connect zum Anmelden des Benutzers bei Ihrer App verwenden möchten. Ein Fluss, der häufig von systemeigenen und mobilen Apps und auch von einigen Web-Apps verwendet wird, ist der Fluss zur Erteilung von OAuth 2.0-Autorisierungscodes. In diesem Thema werden anhand eines Beispiels die einzelnen Schritte dieses Flusses erläutert. '
-ms.openlocfilehash: 136bb917595885f188c2ad6958dc107021b58d10
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: jackson-woods
+ms.openlocfilehash: 80c421898014be09d3ffbd2213bee9e4ec20cfb9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092281"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317318"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>Im Namen eines Benutzers zugreifen
 Um Microsoft Graph zum Lesen und Schreiben von Ressourcen im Namen eines Benutzers zu verwenden, muss Ihre App ein Zugriffstoken von Azure AD abrufen und das Token an Anforderungen anfügen, die die API an Microsoft Graph sendet. Welchen Authentifizierungsfluss genau Sie zum Abrufen von Zugriffstoken verwenden, ist davon abhängig, welche Art von App Sie entwickeln und ob Sie OpenID Connect zum Anmelden des Benutzers bei Ihrer App verwenden möchten. Ein Fluss, der häufig von systemeigenen und mobilen Apps und auch von einigen Web-Apps verwendet wird, ist der Fluss zur Erteilung von OAuth 2.0-Autorisierungscodes. In diesem Thema werden anhand eines Beispiels die einzelnen Schritte dieses Flusses erläutert. 

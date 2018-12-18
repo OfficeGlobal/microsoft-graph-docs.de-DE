@@ -1,12 +1,13 @@
 ---
 title: Autorisierung und die Sicherheits-API in Microsoft Graph
 description: Sicherheitsdaten, auf die über die Sicherheits-API in Microsoft Graph zugegriffen werden kann, sind vertraulich und sind sowohl durch Berechtigungen als auch durch Azure Active Directory (Azure AD)-Rollen geschützt.
-ms.openlocfilehash: c69621fa7059a96381bed76b58c4a77e80d984dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Preetikr
+ms.openlocfilehash: d9757b9e105174ac7c111216789d9d3dcba8f3c6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092149"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311711"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>Autorisierung und die Sicherheits-API in Microsoft Graph
 

@@ -1,12 +1,13 @@
 ---
 title: SideLoadingKey löschen
 description: Löscht eine SideLoadingKey.
-ms.openlocfilehash: 1047e2f52fa440f0c50d96bb6d13b8843d1e6b71
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9f1c311299d9c027ece81d4478aece98ba0e2052
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060756"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321749"
 ---
 # <a name="delete-sideloadingkey"></a>SideLoadingKey löschen
 
@@ -34,9 +35,9 @@ DELETE /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

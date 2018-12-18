@@ -1,12 +1,13 @@
 ---
 title: Abrufen von androidForWorkEnterpriseWiFiConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidForWorkEnterpriseWiFiConfiguration-Objekts.
-ms.openlocfilehash: 6022e8bccbeb2f126ab3e4a80b86ec9b50fcbc6b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 68862f02843a50e3673d0fbbb3d293664c1c3d7d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058267"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319894"
 ---
 # <a name="get-androidforworkenterprisewificonfiguration"></a>Abrufen von androidForWorkEnterpriseWiFiConfiguration
 
@@ -38,9 +39,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

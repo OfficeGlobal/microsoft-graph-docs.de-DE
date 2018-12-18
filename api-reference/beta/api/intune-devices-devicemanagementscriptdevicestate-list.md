@@ -1,12 +1,13 @@
 ---
 title: Liste deviceManagementScriptDeviceStates
 description: Listeneigenschaften und Beziehungen der DeviceManagementScriptDeviceState-Objekte.
-ms.openlocfilehash: 1c419663960c14a834360839861c6adaff146935
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 608342b19bac9ee142cd52f0b6424700dd91e0e9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058789"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318312"
 ---
 # <a name="list-devicemanagementscriptdevicestates"></a>Liste deviceManagementScriptDeviceStates
 
@@ -35,9 +36,9 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRun
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

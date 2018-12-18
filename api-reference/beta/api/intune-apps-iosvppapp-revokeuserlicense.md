@@ -1,12 +1,13 @@
 ---
 title: RevokeUserLicense Aktion
 description: REVOKE zugewiesen iOS VPP-Benutzerlizenz für die app zu reparieren.
-ms.openlocfilehash: 0222623ba5e1f3de0122a632a3ea9554bbd2c0ea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 94d8dff027421d5b3b1c763439dbcf4ec3d2391f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058950"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332809"
 ---
 # <a name="revokeuserlicense-action"></a>RevokeUserLicense Aktion
 
@@ -36,9 +37,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

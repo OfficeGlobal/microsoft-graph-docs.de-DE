@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „appleDeviceFeaturesConfigurationBase“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs appleDeviceFeaturesConfigurationBase auf.
-ms.openlocfilehash: c3391b8fa416f01b50f11c1dd387bb3da2060e31
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2faefe480dae789b420f25597b3dbb62d389d4cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060214"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327398"
 ---
 # <a name="list-appledevicefeaturesconfigurationbases"></a>Auflisten von „appleDeviceFeaturesConfigurationBase“
 
@@ -35,9 +36,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

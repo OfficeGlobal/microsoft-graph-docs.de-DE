@@ -1,12 +1,13 @@
 ---
 title: managedIOSLobApp aktualisieren
 description: Aktualisieren der Eigenschaften eines managedIOSLobApp-Objekts.
-ms.openlocfilehash: bda8e687025cd7ac594660076fcef4859633eb9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: af73dac3e1ccb785664f48a02837cec369b91297
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058013"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325508"
 ---
 # <a name="update-managedioslobapp"></a>managedIOSLobApp aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

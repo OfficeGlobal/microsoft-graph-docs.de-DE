@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp remoteActionAudit
 description: Bericht zu remote Aktionen auf den Geräten, die auf einen bestimmten Mandanten gehören initiiert wurden.
-ms.openlocfilehash: 9183330971e5c624d1e88532e4ea2c16691875da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 48d74cb088a2e16e244898834e3d717302713e6f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064235"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323478"
 ---
 # <a name="remoteactionaudit-resource-type"></a>Ressourcentyp remoteActionAudit
 

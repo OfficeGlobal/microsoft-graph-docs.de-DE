@@ -1,12 +1,13 @@
 ---
 title: Ereignis aktualisieren
 description: Aktualisieren eines event-Objekts.
-ms.openlocfilehash: e06f08b0c1f0703904c2418ac490be2100e39619
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: c8aacc7df62bf336c355801e89e1b6bea5c2b1f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018162"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321161"
 ---
 # <a name="update-event"></a>Ereignis aktualisieren
 Aktualisieren eines [event](../resources/event.md)-Objekts.
@@ -30,7 +31,7 @@ PATCH /groups/{id}/calendar/events/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.

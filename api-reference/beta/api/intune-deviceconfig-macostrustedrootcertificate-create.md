@@ -1,12 +1,13 @@
 ---
 title: Erstellen von macOSTrustedRootCertificate
 description: Erstellen eines neuen MacOSTrustedRootCertificate-Objekts.
-ms.openlocfilehash: 1926dae9b52f40c9f69600a6c8af39488846f576
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3ad2d5eaa0daaab6a71972f6aba1f4bca69486fd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064903"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321707"
 ---
 # <a name="create-macostrustedrootcertificate"></a>Erstellen von macOSTrustedRootCertificate
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

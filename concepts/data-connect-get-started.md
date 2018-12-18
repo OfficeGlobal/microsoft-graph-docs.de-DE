@@ -1,12 +1,13 @@
 ---
 title: Erste Schritte mit Microsoft Graph Data Connect (Vorschau)
 description: 'Bevor Sie Microsoft Graph Data Connect verwenden können, muss ein Office 365-Administrator zwei Aktionen ausgeführt haben, die beide die Steuerung von Datenbewegungen durch den Administrator mithilfe von PAM (Privileged Access Management) aktivieren. '
-ms.openlocfilehash: eb21f0d850f64694514c0ecd82f03de687606a56
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: ajacks-msft
+ms.openlocfilehash: 1cd8d5734b0fd8b48df8a49fe0a833583c21148d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092177"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312082"
 ---
 # <a name="get-started-with-microsoft-graph-data-connect-preview"></a>Erste Schritte mit Microsoft Graph Data Connect (Vorschau)
 

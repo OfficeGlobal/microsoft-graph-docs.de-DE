@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windowsKioskMultipleApps
 description: Die Klasse verwendet, um die Konfiguration der Multi-Mode app für die Kiosk-Konfiguration identifizieren
-ms.openlocfilehash: 2b52cbe343c4a8d81391ad448e8f10f64fef295e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 30591e15d29b06ffb807c8b435d0e3c8a6a1b0fa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060782"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330142"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>Ressourcentyp windowsKioskMultipleApps
 

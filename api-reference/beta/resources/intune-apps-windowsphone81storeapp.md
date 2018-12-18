@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windowsPhone81StoreApp
 description: Enthält Eigenschaften und geerbten Eigenschaften für Windows Phone 8.1 Store-apps.
-ms.openlocfilehash: c48edd3ebc7948161fe604fa659f294c1d82b8b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0ce242fd2337a9db602d361f8fceb05c126478fd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062656"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321217"
 ---
 # <a name="windowsphone81storeapp-resource-type"></a>Ressourcentyp windowsPhone81StoreApp
 

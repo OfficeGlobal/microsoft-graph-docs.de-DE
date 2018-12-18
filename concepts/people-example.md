@@ -2,12 +2,13 @@
 title: Verwenden der People API in Microsoft Graph zum Abrufen von Informationen über relevante Personen
 description: Microsoft Graph-Anwendungen können die People API zum Abrufen von Personen verwenden, die für einen Benutzer am relevantesten sind. Relevanz wird durch die Kommunikations- und Zusammenarbeitsmuster und Geschäftsbeziehungen des Benutzers bestimmt. Personen können lokale Kontakte, Kontakte aus sozialen Netzwerken, aus dem Verzeichnis Ihrer Organisation und Personen aus kürzlichen Unterhaltungen (z. B. E-Mail und Skype) sein. Neben Generierung dieser Einblicke bietet die People API auch Unterstützung für Fuzzyübereinstimmungen bei Suchvorgängen sowie die Möglichkeit, eine Liste der für einen Benutzer relevanten Benutzer in der Organisation des angemeldeten Benutzers abzurufen.
 ms.date: 12/04/2018
-ms.openlocfilehash: b01ca4538c3155bbb30224b1f92d6e7ae55c5878
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+author: simonhult
+ms.openlocfilehash: e5cfc5abb7bac06f0355ebc2a2b70460050aa7e8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156054"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306853"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Verwenden der People API in Microsoft Graph zum Abrufen von Informationen über relevante Personen
 

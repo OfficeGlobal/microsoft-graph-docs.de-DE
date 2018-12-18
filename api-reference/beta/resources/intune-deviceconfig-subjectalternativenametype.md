@@ -1,12 +1,13 @@
 ---
 title: SubjectAlternativeNameType Enum-Typ
 description: Subject Alternative Name-Optionen.
-ms.openlocfilehash: 385ee36111907dd2e48bc18a2efda9552eb61924
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2c1249c90998a24eca63da7d80e580ac497aa9b8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059619"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326656"
 ---
 # <a name="subjectalternativenametype-enum-type"></a>SubjectAlternativeNameType Enum-Typ
 
@@ -16,9 +17,9 @@ ms.locfileid: "27059619"
 
 Subject Alternative Name-Optionen.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
-|n/v|0|Kein alternativer Antragstellername.|
+|Keine|0|Kein alternativer Antragstellername.|
 |emailAddress|1|E-Mail-Adresse.|
 |userPrincipalName|2|Benutzerprinzipalname (User Principal Name, UPN)|
 |customAzureADAttribute|4|Benutzerdefinierte Azure AD-Attribut.|

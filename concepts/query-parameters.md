@@ -1,12 +1,13 @@
 ---
 title: Verwenden von Abfrageparametern zum Anpassen von Antworten
 description: Microsoft Graph stellt optionale Abfrageparameter bereit, die Sie zum Festlegen und Steuern der in einer Antwort zurückgegebenen Datenmenge verwenden können. Die folgenden Abfrageparameter werden unterstützt.
-ms.openlocfilehash: b79192a028be278ab38dc28f1d9d913b3bcb7209
-ms.sourcegitcommit: 9f953e0c4cd624ba31919bfd5e82bf3e33cb9e21
+author: piotrci
+ms.openlocfilehash: 6cdc4ce0f502e941e24a6197e7ba4b65cac13b20
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27245106"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311837"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Verwenden von Abfrageparametern zum Anpassen von Antworten
 

@@ -1,12 +1,13 @@
 ---
 title: Erstellen von windows10EnrollmentCompletionPageConfiguration
 description: Erstellen eines neuen windows10EnrollmentCompletionPageConfiguration-Objekts.
-ms.openlocfilehash: db276cefec8a764b2ad2ddcade93bae7a518f264
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f9e9fa454f7a48c31b8568bba8d7e63a80e99f81
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058708"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321525"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>Erstellen von windows10EnrollmentCompletionPageConfiguration
 
@@ -34,9 +35,9 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „windows10EnterpriseModernAppManagementConfiguration“
 description: Diese Methode erstellt ein neues Objekt des Typs windows10EnterpriseModernAppManagementConfiguration.
-ms.openlocfilehash: be13bf64b871d17a617c9da87b142f2858b2286a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 83a3d6207858f1d879edd51d873dcc9970fd7c2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061389"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321357"
 ---
 # <a name="create-windows10enterprisemodernappmanagementconfiguration"></a>Erstellen von „windows10EnterpriseModernAppManagementConfiguration“
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

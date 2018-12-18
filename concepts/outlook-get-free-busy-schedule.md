@@ -1,12 +1,13 @@
 ---
 title: Abrufen des Frei/Gebucht-Zeitplans für Benutzer und Ressourcen (Vorschau)
 description: Ein häufiges Szenario in einer Arbeits- oder Schulumgebung besteht darin, anzuzeigen, wann ein Benutzer für eine Besprechung verfügbar ist, oder die Verfügbarkeit eines Teams, Raums oder Geräts für einen Zeitraum zu durchsuchen.
-ms.openlocfilehash: 8a2dd9318bdd806c99d525ee41f46d78d1963b47
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 2f201ed552200f7c8dd55b368a504b4eca1e3ba5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092304"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317759"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources-preview"></a>Abrufen des Frei/Gebucht-Zeitplans für Benutzer und Ressourcen (Vorschau)
 

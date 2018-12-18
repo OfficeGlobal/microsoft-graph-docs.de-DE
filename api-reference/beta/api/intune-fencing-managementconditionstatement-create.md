@@ -1,12 +1,13 @@
 ---
 title: Erstellen von managementConditionStatement
 description: Erstellen eines neuen ManagementConditionStatement-Objekts.
-ms.openlocfilehash: a01d0233eff9d22b3174a8aa7bd382b9a1266ac2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5402faee0c7ace84957f3ff6a2ef65844f5a527e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059205"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327349"
 ---
 # <a name="create-managementconditionstatement"></a>Erstellen von managementConditionStatement
 
@@ -35,9 +36,9 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

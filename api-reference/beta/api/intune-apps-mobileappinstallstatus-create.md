@@ -1,12 +1,13 @@
 ---
 title: Erstellen von mobileAppInstallStatus
 description: Erstellen eines neuen MobileAppInstallStatus-Objekts.
-ms.openlocfilehash: 5aba88a33b5072f1426878eeaf32a0771ee250b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 12dfa8e7f827ef2d2933249a6089d000ef868769
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062350"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318109"
 ---
 # <a name="create-mobileappinstallstatus"></a>Erstellen von mobileAppInstallStatus
 
@@ -35,9 +36,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

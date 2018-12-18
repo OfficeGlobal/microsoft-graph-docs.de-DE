@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „deviceConfigurationUserOverview“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceConfigurationUserOverview.
-ms.openlocfilehash: b829a37590431061f5c3c0c2c576a2b334942e90
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8b8feeec14bf8e9e3eafca8770461da611d05ae1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020036"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322757"
 ---
 # <a name="update-deviceconfigurationuseroverview"></a>Aktualisieren von „deviceConfigurationUserOverview“
 
@@ -32,9 +33,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusO
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

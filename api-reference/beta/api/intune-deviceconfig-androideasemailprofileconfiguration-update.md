@@ -1,12 +1,13 @@
 ---
 title: AndroidEasEmailProfileConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidEasEmailProfileConfiguration-Objekts.
-ms.openlocfilehash: 77087b66a00ab8628ac1558e0c03cd6f7f52f48f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 824b93f9c53f7a11a19a72b6156b2a7cde196054
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064790"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318116"
 ---
 # <a name="update-androideasemailprofileconfiguration"></a>AndroidEasEmailProfileConfiguration aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

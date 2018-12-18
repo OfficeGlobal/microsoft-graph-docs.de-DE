@@ -1,12 +1,13 @@
 ---
 title: windowsMobileMSI abrufen
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs windowsMobileMSI.
-ms.openlocfilehash: bdfe5f8b000c15ae0b5d1fe12eb51ceebda1e433
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d73f2c0923a80e0417086cac7ca43e6598ce4460
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018286"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323177"
 ---
 # <a name="get-windowsmobilemsi"></a>windowsMobileMSI abrufen
 
@@ -34,9 +35,9 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

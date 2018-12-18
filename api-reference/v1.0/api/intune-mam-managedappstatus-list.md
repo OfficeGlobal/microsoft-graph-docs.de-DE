@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „managedAppStatus“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs managedAppStatus auf.
-ms.openlocfilehash: c31c745b420acf8fb7ae8397830dc9125a83d343
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1cf73098931b4ae0e7f7eddf5169f991d5b3d695
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018156"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319236"
 ---
 # <a name="list-managedappstatuses"></a>Auflisten von „managedAppStatus“
 
@@ -32,9 +33,9 @@ GET /deviceAppManagement/managedAppStatuses
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

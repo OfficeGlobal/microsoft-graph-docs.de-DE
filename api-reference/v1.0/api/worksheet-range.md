@@ -1,12 +1,13 @@
 ---
 title: 'Arbeitsblatt: Range'
 description: Ruft das durch die Adresse oder den Namen angegebene Bereichsobjekt ab.
-ms.openlocfilehash: ad829b9b18919e1ec5c560f521603826a42a2912
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: fec1ea97be1ca2c094af7e32deac0b6a37f4f086
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017524"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319866"
 ---
 # <a name="worksheet-range"></a>Arbeitsblatt: Range
 

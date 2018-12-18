@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „iosCustomConfiguration“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs iosCustomConfiguration.
-ms.openlocfilehash: 6151c93e83bd35db70d6c5428d55bde92e8027de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e7056ab274223fc65b4a8dbf600744b9adab77a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018093"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319957"
 ---
 # <a name="update-ioscustomconfiguration"></a>Aktualisieren von „iosCustomConfiguration“
 
@@ -32,9 +33,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

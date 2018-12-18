@@ -1,12 +1,13 @@
 ---
 title: Erstellen von mobileThreatDefenseConnector
 description: Erstellt neue Objekte des Typs mobileThreatDefenseConnector.
-ms.openlocfilehash: 1c8a81ce964a5ffbacadfc3cba62e9729f586b7b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e77b4684f2f330441b8d9ec1f7b14e8e788835a9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27057942"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330982"
 ---
 # <a name="create-mobilethreatdefenseconnector"></a>Erstellen von mobileThreatDefenseConnector
 
@@ -34,9 +35,9 @@ POST /deviceManagement/mobileThreatDefenseConnectors
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

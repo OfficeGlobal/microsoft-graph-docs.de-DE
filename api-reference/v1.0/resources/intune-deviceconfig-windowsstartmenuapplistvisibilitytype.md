@@ -1,12 +1,13 @@
 ---
 title: WindowsStartMenuAppListVisibilityType Enum-Typ
 description: Typ der Start Menü app Liste Sichtbarkeit.
-ms.openlocfilehash: a80f335f2278e658ba736006d24d9ac1c1ac3d12
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f63a9b0620fb08f9710575130ece1e3d02f6cf88
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017499"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330604"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>WindowsStartMenuAppListVisibilityType Enum-Typ
 
@@ -14,7 +15,7 @@ ms.locfileid: "27017499"
 
 Typ der Start Menü app Liste Sichtbarkeit.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |vom Typ userDefined|0|Benutzer definiert. Standardwert.|
 |Reduzieren|1|Reduzieren Sie die app-Liste im Menü Start.|

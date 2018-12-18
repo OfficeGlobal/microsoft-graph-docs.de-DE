@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „editionUpgradeConfiguration“
 description: Diese Methode erstellt ein neues Objekt des Typs editionUpgradeConfiguration.
-ms.openlocfilehash: 2c71c4514fd00c5ae50e5fe15b3a6b9c904e8ded
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9ea7bb6206b882f81cad3cfd62419dc887f04898
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016410"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332739"
 ---
 # <a name="create-editionupgradeconfiguration"></a>Erstellen von „editionUpgradeConfiguration“
 
@@ -32,9 +33,9 @@ POST /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

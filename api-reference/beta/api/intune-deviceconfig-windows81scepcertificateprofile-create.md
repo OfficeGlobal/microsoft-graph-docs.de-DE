@@ -1,12 +1,13 @@
 ---
 title: Erstellen von windows81SCEPCertificateProfile
 description: Erstellen eines neuen windows81SCEPCertificateProfile-Objekts.
-ms.openlocfilehash: 322adf44d72cd99070cad4d10485ad6b26fc3674
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c2345979f47b2eda8074417c652a203fdb16fd0e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062966"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319096"
 ---
 # <a name="create-windows81scepcertificateprofile"></a>Erstellen von windows81SCEPCertificateProfile
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

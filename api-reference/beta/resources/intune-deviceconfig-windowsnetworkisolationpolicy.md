@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windowsNetworkIsolationPolicy
 description: Windows-Isolation Netzwerkrichtlinien
-ms.openlocfilehash: 89c7db0453c76f6ec5016a4701bf357e27c579bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: af8cac99a359136bbc3d5d19842b56b57c80c6c9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061615"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323289"
 ---
 # <a name="windowsnetworkisolationpolicy-resource-type"></a>Ressourcentyp windowsNetworkIsolationPolicy
 

@@ -1,12 +1,13 @@
 ---
 title: deviceConfiguration-Ressourcentyp
 description: Gerätekonfiguration.
-ms.openlocfilehash: ccfd34fbc05de7815b8aa199da305f57917bdced
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7d1c765ff643950947f23192969078dd12028c2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063419"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315736"
 ---
 # <a name="deviceconfiguration-resource-type"></a>deviceConfiguration-Ressourcentyp
 

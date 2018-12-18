@@ -1,12 +1,13 @@
 ---
 title: WindowsAssignedAccessProfile aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines WindowsAssignedAccessProfile-Objekts.
-ms.openlocfilehash: bbe3aab584ff19af07728d4ebe594238ef8439f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 84cbc1aaaebf9383c3d113d7f309c61de0cdeb67
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060437"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331360"
 ---
 # <a name="update-windowsassignedaccessprofile"></a>WindowsAssignedAccessProfile aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

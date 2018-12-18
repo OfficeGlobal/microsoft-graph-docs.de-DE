@@ -1,12 +1,13 @@
 ---
 title: Integrieren von Warnungen der Microsoft Graph Security-API und IBM QRadar SIEM mithilfe von Azure Monitor
 description: Die Microsoft Graph Security-Anbieter können über einen einzelnen REST-Endpunkt verwaltet werden. Dieser Endpunkt kann auf Azure Monitor konfiguriert werden, der Connectors zu verschiedenen SIEM-Produkten unterstützt. Die Anweisungen in Schritt 1 und Schritt 2 dieses Artikels beziehen sich auf alle Azure Monitor-Connectors, die Nutzung über Event Hubs unterstützen. In diesem Artikel ist die End-to-End-Integration des QRadar SIEM-Connectors beschrieben.
-ms.openlocfilehash: 107435c463116c002c86955559209d2dffd4d688
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Preetikr
+ms.openlocfilehash: 663ff74741bdb3847cc0b47b56651c28bceef8f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092221"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309261"
 ---
 # <a name="integrate-microsoft-graph-security-api-alerts-with-ibm-qradar-siem-using-azure-monitor"></a>Integrieren von Warnungen der Microsoft Graph Security-API und IBM QRadar SIEM mithilfe von Azure Monitor
 
@@ -20,7 +21,7 @@ Der Integrationsvorgang umfasst die folgenden Schritte:
 
 Nachdem Sie diese Schritte durchgeführt haben, verbraucht Ihr IBM QRadar die Sicherheitswarnungen aller Sicherheitsprodukte, die in Microsoft Graph integriert sind und für die Ihr Mandant lizenziert ist. Alle neuen Sicherheitsprodukte, die Sie lizenzieren, senden ebenfalls Warnungen über diese Verbindung, und zwar in demselben Schema und ohne weiteren Integrationsaufwand.
 
-## <a name="step-1-set-up-an-event-hubs-namespace-in-azure-to-receive-security-alerts-for-your-tenant"></a>Schritt 1: Einrichten eines Event Hub-Namespaces in Azure zum Empfangen von Sicherheitswarnungen für Ihren Mandanten
+## <a name="step-1-set-up-an-event-hubs-namespace-in-azure-to-receive-security-alerts-for-your-tenant"></a>Schritt 1: Einrichten eines Event Hub-Namespace in Azure zum Empfangen von Sicherheitswarnungen für Ihren Mandanten
 
 Sie müssen zunächst einen [Microsoft Azure Event Hubs](https://docs.microsoft.com/de-DE/azure/event-hubs/)-Namespace und einen Event Hub erstellen. Dieser Namespace und Event Hub ist das Ziel für alle Sicherheitswarnungen in Ihrer Organisation. Ein Event Hub-Namespace ist eine logische Gruppierung von Event Hubs, die dieselbe Zugriffsrichtlinie verwenden. Beachten Sie einige Details zum Event Hub-Namespace und den Event Hubs, die Sie erstellen:
 
@@ -54,7 +55,7 @@ Sicherheitswarnungen sind Daten mit der höchsten Berechtigungsstufe, die in der
 > **Hinweis:** Derzeit unterstützt das Azure Monitor Diagnostics-Einstellungsblatt nicht die Konfiguration von Ressourcen auf Mandantenebene. Da es sich bei Warnungen der Microsoft Graph Security-API um eine Ressource auf Mandantenebene handelt, müssen Sie die Azure Resource Manager-API verwenden, um Azure Monitor zur Nutzung von Sicherheitswarnungen Ihrer Organisation zu konfigurieren.
 
 1. Registrieren Sie in Ihrem Azure-Abonnement (das Sie unter "Alle Dienste" finden) „microsoft.insights“ (Azure Monitor) als Ressourcenanbieter.  
- > **Hinweis:** Registrieren Sie „Microsoft.SecurityGraph“ (Microsoft Graph Security-API) in Ihrem Azure-Abonnement nicht als Ressourcenanbieter, da „Microsoft.SecurityGraph“ ein Anbieter auf Mandantenebene ist, wie oben erläutert. Die Konfiguration auf Mandantenebene wird als Teil von Nr. 6 weiter unten behandelt.
+ > **Hinweis:** Registrieren Sie „Microsoft.SecurityGraph“ (Microsoft Graph Security-API) in Ihrem Azure-Abonnement nicht als Ressourcenanbieter, da „Microsoft.SecurityGraph“ ein Anbieter auf Mandantenebene ist, wie oben erläutert. Die Konfiguration auf Mandantenebene werden ist Teil von Nr. 6 weiter unten.
 
 2. Um Azure Monitor mithilfe der Azure Resource Manager-API zu konfigurieren, besorgen Sie sich das [ARMClient](https://github.com/projectkudu/ARMClient)-Tool. Dieses Tool wird verwendet, um REST-API-Aufrufe über die Befehlszeile an das Azure-Portal zu senden.
 
@@ -85,7 +86,7 @@ Sicherheitswarnungen sind Daten mit der höchsten Berechtigungsstufe, die in der
   * **SUBSCRIPTION_ID** ist die Abonnement-ID des Azure-Abonnements, das die Ressourcengruppe hostet und der Event Hub-Namespace, an den Sie Sicherheitswarnungen von Ihrer Organisation senden.
   * **RESOURCE_GROUP** ist die Ressourcengruppe mit dem Ereignis Hub-Namespace, an den Sie Sicherheitswarnungen von Ihrer Organisation senden.
   * **EVENT_HUB_NAMESPACE** ist der Event Hub-Namespace, an den Sie Sicherheitswarnungen von Ihrer Organisation senden.
-  * **"days":** ist die Anzahl der Tage, die Nachrichten im Event Hub aufbewahrt werden sollen.
+  * **„days“:** ist die Anzahl der Tage, die Nachrichten im Event Hub aufbewahrt werden sollen.
   
 &nbsp;
 

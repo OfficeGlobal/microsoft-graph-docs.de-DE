@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „deviceManagement“
 description: Aktualisieren der Eigenschaften eines deviceManagement-Objekts.
-ms.openlocfilehash: 7f73d3fc944dcbc36709cd7f1b46e61bca271152
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1808c18fd5e305871e0be2e47def97938384488c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060716"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323765"
 ---
 # <a name="update-devicemanagement"></a>Aktualisieren von „deviceManagement“
 
@@ -55,9 +56,9 @@ PATCH /deviceManagement
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

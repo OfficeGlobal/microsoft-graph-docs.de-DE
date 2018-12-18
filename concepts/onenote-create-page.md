@@ -1,12 +1,13 @@
 ---
 title: Erstellen von OneNote-Seiten
 description: " Enterprise-Notizbücher in Office 365"
-ms.openlocfilehash: 73ff77b16aaf5927bf28d009ca8ee1274f954c06
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 68ae0fa13e70e53b184b3bf8eb9e6f93ea9ab82f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092345"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321105"
 ---
 # <a name="create-onenote-pages"></a>Erstellen von OneNote-Seiten
 

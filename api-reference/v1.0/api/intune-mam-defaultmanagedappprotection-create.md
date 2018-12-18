@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „defaultManagedAppProtection“
 description: Diese Methode erstellt ein neues Objekt des Typs defaultManagedAppProtection.
-ms.openlocfilehash: 1bea16e7d329014fd2b17f45918a00899a5418b3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c76afc8d9c9bd465b40e506117ec80ef1345045c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019638"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323191"
 ---
 # <a name="create-defaultmanagedappprotection"></a>Erstellen von „defaultManagedAppProtection“
 
@@ -32,9 +33,9 @@ POST /deviceAppManagement/defaultManagedAppProtections
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Erstellen von importedAppleDeviceIdentityResult
 description: Erstellen eines neuen ImportedAppleDeviceIdentityResult-Objekts.
-ms.openlocfilehash: 1f3b7091ba904843ed95a802ece9a5fa42e05b4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1560f8e05057327a6aafc5258e7c5c46b9bcb781
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063566"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316051"
 ---
 # <a name="create-importedappledeviceidentityresult"></a>Erstellen von importedAppleDeviceIdentityResult
 
@@ -34,9 +35,9 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

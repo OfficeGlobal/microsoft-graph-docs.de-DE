@@ -1,12 +1,13 @@
 ---
 title: Abrufen von windowsPrivacyDataAccessControlItem
 description: Lesen Sie Eigenschaften und Beziehungen des WindowsPrivacyDataAccessControlItem-Objekts.
-ms.openlocfilehash: e349240a82bdd292b7f94c25a57475b2fdcce468
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8f609db5e3e56e91c716dcce127c14b8de0db793
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059493"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326838"
 ---
 # <a name="get-windowsprivacydataaccesscontrolitem"></a>Abrufen von windowsPrivacyDataAccessControlItem
 
@@ -36,9 +37,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

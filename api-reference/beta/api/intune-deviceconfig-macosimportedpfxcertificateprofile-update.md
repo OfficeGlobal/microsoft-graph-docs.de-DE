@@ -1,12 +1,13 @@
 ---
 title: MacOSImportedPFXCertificateProfile aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines MacOSImportedPFXCertificateProfile-Objekts.
-ms.openlocfilehash: c3876462c1f462ca3af2ea5ca9f5518f33389700
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 842b680ad6f8d2337bfecfcd270252d216499807
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062194"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321966"
 ---
 # <a name="update-macosimportedpfxcertificateprofile"></a>MacOSImportedPFXCertificateProfile aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Abrufen von „deviceConfiguration“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs deviceConfiguration.
-ms.openlocfilehash: 104d50de7e409f41e97cb144ea2f52d746fb1c8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 147b102bb276b5c79840e565e1ba74edfcb3da12
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018975"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331472"
 ---
 # <a name="get-deviceconfiguration"></a>Abrufen von „deviceConfiguration“
 
@@ -34,9 +35,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

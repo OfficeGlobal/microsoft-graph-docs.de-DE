@@ -1,12 +1,13 @@
 ---
 title: AndroidManagedStoreAccountBindStatus Enum-Typ
 description: Binden der Status des Mandanten mit der Google EMM-API
-ms.openlocfilehash: 12bfcf1c4132760de30bb79db885caa754734f07
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c2c79b4fc3fafcfcf9681d9e4cce1808a3d3eb9a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059187"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332431"
 ---
 # <a name="androidmanagedstoreaccountbindstatus-enum-type"></a>AndroidManagedStoreAccountBindStatus Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27059187"
 
 Binden der Status des Mandanten mit der Google EMM-API
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |notBound|0|Noch nicht dokumentiert|
 |Gebunden|1|Noch nicht dokumentiert|

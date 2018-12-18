@@ -1,12 +1,13 @@
 ---
 title: Aktion „sync“
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 6f3e1101537ff3b49d1a4c3e7933f78f2e11cbe3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fb9fa6aa7cd2e33ba75922b32dada12d5e80b470
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066197"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330779"
 ---
 # <a name="sync-action"></a>Aktion „sync“
 
@@ -34,9 +35,9 @@ POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

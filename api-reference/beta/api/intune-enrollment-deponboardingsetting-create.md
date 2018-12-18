@@ -1,12 +1,13 @@
 ---
 title: Erstellen von depOnboardingSetting
 description: Erstellen eines neuen DepOnboardingSetting-Objekts.
-ms.openlocfilehash: 612afd3111af00cc8fd9819017b272ce5a38fe4d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 11f2e5217e4040a7d4345c9271b459e608075498
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065480"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330660"
 ---
 # <a name="create-deponboardingsetting"></a>Erstellen von depOnboardingSetting
 
@@ -34,9 +35,9 @@ POST /deviceManagement/depOnboardingSettings
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

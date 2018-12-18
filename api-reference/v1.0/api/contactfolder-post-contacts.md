@@ -1,12 +1,13 @@
 ---
 title: Kontakt erstellen
 description: Dient zum Hinzufügen eines Kontakts zum Stammordner der Kontakte oder zum Endpunkt `contacts` eines anderen Kontaktordners.
-ms.openlocfilehash: d17072285b52a70a8d30533c073678d9bf2ec95d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 29432762aca0ad8d80b8d755ae3c0f45e754cb45
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016879"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321441"
 ---
 # <a name="create-contact"></a>Kontakt erstellen
 
@@ -38,7 +39,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json. Erforderlich.   |

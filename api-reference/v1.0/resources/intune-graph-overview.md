@@ -1,12 +1,13 @@
 ---
 title: Verwenden der Graph-API für Intune
 description: " Hybridbereitstellungen Intune werden nicht unterstützt. "
-ms.openlocfilehash: 23f6550fca708b64357b7b5132a2a42060cfa4bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9ac823fcc1e3c09bfedc57d9caf4901c95aa9142
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27015981"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332732"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Arbeiten mit Intune in Microsoft Graph  
 
@@ -14,13 +15,13 @@ ms.locfileid: "27015981"
 
 Die Microsoft Graph-API für Intune ermöglicht Ihrem Mandanten den programmgesteuerten Zugriff auf Intune-Informationen; die API kann die gleichen Intune-Operationen ausführen, die auch im **Azure-Portal** verfügbar sind.  
 
-In Szenarien für die Verwaltung mobiler Geräte (MDM, Mobile Device Management) unterstützt die Graph-API für Intune eigenständige Bereitstellungen. [Hybride Intune-Bereitstellungen](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) werden nicht unterstützt. 
+Für mobiles Gerät Verwaltungsszenarien (MDM) unterstützt der Microsoft Graph-API für Intune Standalone-Bereitstellungen. Intune [hybridbereitstellungen](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) werden nicht unterstützt. 
 
-## <a name="using-the-intune-graph-api"></a>Verwenden der Graph-API für Intune
+## <a name="using-the-microsoft-graph-api-for-intune"></a>Verwenden das Microsoft Graph-API für Intune
 
-Intune stellt Daten auf die gleiche Weise für die Microsoft Graph-API bereit, wie es auch andere Clouddienste tun, mit detaillierten Informationen zu Entitäten und Möglichkeiten zur Beziehungsnavigation.Mithilfe der Microsoft Graph-API können Sie Informationen aus anderen Diensten und aus Intune miteinander kombinieren und so funktionsreiche, dienstübergreifende Anwendungen für IT-Experten oder Endbenutzer erstellen.     
+Intune stellt Daten auf die gleiche Weise für die Microsoft Graph-API bereit, wie es auch andere Clouddienste tun, mit detaillierten Informationen zu Entitäten und Möglichkeiten zur Beziehungsnavigation.Verwenden Sie die Microsoft Graph-API zum Kombinieren von Informationen aus anderen Dienste und Intune für IT-Experten oder Endbenutzer rich Cross-dienstanwendungen erstellen.     
 
-Das Beispiel unten demonstriert, wie Sie herausfinden können, ob auf dem Gerät eines Benutzers eine bestimmte Anwendung installiert ist: 
+Das folgende Beispiel zeigt, wie Sie ermitteln können, ob eine Anwendung auf das Gerät des Benutzers installiert ist: 
 
 1. Rufen Sie aus Azure Active Directory eine Liste der Geräte ab, die auf den Benutzer registriert sind: 
 
@@ -35,11 +36,11 @@ Das Beispiel unten demonstriert, wie Sie herausfinden können, ob auf dem Gerät
     https://graph.microsoft.com/deviceAppManagement/mobileApps/{id}/deviceStatuses/
 
 
-## <a name="using-permission-scopes"></a>Verwenden von Berechtigungsbereichen
+## <a name="using-permissions"></a>Verwenden von Berechtigungen
 
-Die Microsoft Graph-API steuert den Zugriff auf Ressourcen mithilfe von Berechtigungsbereichen. Als Entwickler müssen Sie die Berechtigungsbereiche angeben, die Sie für den Zugriff auf Intune-Ressourcen benötigen. In der Regel geben Sie die benötigten Berechtigungsbereiche im Azure Active Directory-Portal an. Weitere Informationen finden Sie im Artikel zu den Themen [Microsoft Graph-Berechtigungsbereiche](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) und [Intune-Berechtigungsbereiche](https://developer.microsoft.com/graph/docs/authorization/permission_scopes#permission-scopes-in-preview).
+Die Microsoft Graph-API steuert den Zugriff auf Ressourcen über Berechtigungen. Als Entwickler müssen Sie die Berechtigungen angeben, die Sie Intune-Ressourcen zugreifen müssen. Geben Sie in der Regel die Berechtigungen im Azure Active Directory-Portal. Weitere Informationen finden Sie unter [Microsoft Graph Berechtigungen Verweis](https://docs.microsoft.com/en-us/graph/permissions-reference).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 - Erfahren Sie, [wie Sie mit Azure AD](https://docs.microsoft.com/en-us/intune/intune-graph-apis) , um die Microsoft Graph-API für Intune zugreifen.  
-- Machen Sie sich die [PowerShell Intune Beispiele](https://github.com/microsoftgraph/powershell-intune-samples), die zeigen, wie Diagramm-API für Intune im Kontext des Beispiele verwenden.
+- Machen Sie sich die [PowerShell Intune Beispiele](https://github.com/microsoftgraph/powershell-intune-samples), die zeigen, wie die Microsoft Graph-API für Intune im Kontext des Beispiele verwenden.

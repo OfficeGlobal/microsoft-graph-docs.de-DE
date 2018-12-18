@@ -1,12 +1,13 @@
 ---
 title: ImportAppleDeviceIdentityList Aktion
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 11e639dd8f8da212ed0ceefdcbf95e054cecb616
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9ddd4ea6be25faaba089ee8e8d8b9a40edfbf9a5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058218"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325494"
 ---
 # <a name="importappledeviceidentitylist-action"></a>ImportAppleDeviceIdentityList Aktion
 
@@ -34,9 +35,9 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: AndroidForWorkMobileAppConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidForWorkMobileAppConfiguration-Objekts.
-ms.openlocfilehash: 48dde2fe301fafd76ceb09f32eb2aeec452f59c2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4e9874ef1becc3840320e85872451a8573b95f53
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062649"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320209"
 ---
 # <a name="update-androidforworkmobileappconfiguration"></a>AndroidForWorkMobileAppConfiguration aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

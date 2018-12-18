@@ -1,12 +1,13 @@
 ---
 title: windows81CompliancePolicy aktualsieren
 description: Aktualisiert die Eigenschaften von Objekten des Typs windows81CompliancePolicy.
-ms.openlocfilehash: 52e76e1be627633f6bba0a78c451afb8b184d265
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e212739d14b05ea8038bbeb1aeefca7660b6cc3f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018385"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332760"
 ---
 # <a name="update-windows81compliancepolicy"></a>windows81CompliancePolicy aktualsieren
 
@@ -32,9 +33,9 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

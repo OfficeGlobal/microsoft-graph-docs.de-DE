@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „deviceInstallState“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceInstallState.
-ms.openlocfilehash: bef58a3497a49fd027d67594ae8d8bcd26342d3a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1f674b1c732b5804fd83c89620612354e8daccfa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064522"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325634"
 ---
 # <a name="update-deviceinstallstate"></a>Aktualisieren von „deviceInstallState“
 
@@ -35,9 +36,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

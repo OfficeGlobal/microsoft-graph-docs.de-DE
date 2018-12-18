@@ -1,12 +1,13 @@
 ---
 title: UnaryManagementConditionExpressionOperatorType Enum-Typ
 description: Unterstützte Operatoren für unärer Operator Management Bedingungsausdrücke
-ms.openlocfilehash: ba324c8d9b3cc2470c3f05d94bce6d289f740621
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8444718cc93efd191727a4462338b4617ad4ed1e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064081"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320580"
 ---
 # <a name="unarymanagementconditionexpressionoperatortype-enum-type"></a>UnaryManagementConditionExpressionOperatorType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27064081"
 
 Unterstützte Operatoren für unärer Operator Management Bedingungsausdrücke
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |not|0|Die Auswertung des Operanden negiert.|
 

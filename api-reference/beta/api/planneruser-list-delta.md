@@ -1,12 +1,13 @@
 ---
 title: 'Planner: Delta'
 description: Ruft die Änderungen an-Objekten, denen der Benutzer abonniert ist.
-ms.openlocfilehash: 7c866946f0c9a873b99ee4efd6d9e2c7ce646be3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: dcc60ad9c1bc5ea9e56099d4bc79fb57d4e95374
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063492"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323366"
 ---
 # <a name="planner-delta"></a>Planner: Delta
 
@@ -79,7 +80,7 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 
->**Hinweis:** Das Antwortobjekt dargestellt möglicherweise zur besseren Lesbarkeit wurde verkürzt werden. Alle geänderten Eigenschaften werden von einem tatsächlichen Aufruf zurückgegeben.
+>**Hinweis:** Das gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Alle geänderten Eigenschaften werden von einem tatsächlichen Aufruf zurückgegeben.
 
 <!-- {
   "blockType": "response",

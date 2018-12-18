@@ -1,12 +1,13 @@
 ---
 title: AndroidDeviceOwnerSystemUpdateInstallType Enum-Typ
 description: Update-Systemtypen für Android-Gerät Besitzer.
-ms.openlocfilehash: e9f23fd96ed0965b6693776858082e2df4925f37
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e2dc66851e0fa98d52a3fec30385e0fd27e6f6ca
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062086"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323198"
 ---
 # <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>AndroidDeviceOwnerSystemUpdateInstallType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27062086"
 
 Update-Systemtypen für Android-Gerät Besitzer.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |deviceDefault|0|Gerät Standardverhalten in der Regel der Benutzer Systemupdates akzeptieren kann.|
 |Verschieben|1|Automatische Installation von Updates auf 30 Tage oben zu verschieben.|

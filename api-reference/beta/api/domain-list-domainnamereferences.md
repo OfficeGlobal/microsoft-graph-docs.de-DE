@@ -1,12 +1,13 @@
 ---
 title: domainNameReferences auflisten
 description: Dient zum Abrufen einer Liste von directoryObject-Objekten mit einem Verweis auf die Domäne. Die zurückgegebene Liste enthält alle Directory-Objekte, die von der Domäne abhängig sind.
-ms.openlocfilehash: 145fbf3221467d4802a93f4f5112b49eaa99b339
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: d100855bf55c31d1c51308c0fd2330461b44981e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060884"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322589"
 ---
 # <a name="list-domainnamereferences"></a>domainNameReferences auflisten
 

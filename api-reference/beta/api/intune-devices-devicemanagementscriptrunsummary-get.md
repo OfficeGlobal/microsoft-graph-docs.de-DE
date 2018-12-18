@@ -1,12 +1,13 @@
 ---
 title: Abrufen von deviceManagementScriptRunSummary
 description: Lesen Sie Eigenschaften und Beziehungen des DeviceManagementScriptRunSummary-Objekts.
-ms.openlocfilehash: ab9f62aefce2c71e2776c6dfca5f50105a2fbc3c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d09943bfd24eba10258a38f00bca4d37a4795885
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061265"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327272"
 ---
 # <a name="get-devicemanagementscriptrunsummary"></a>Abrufen von deviceManagementScriptRunSummary
 
@@ -36,9 +37,9 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSumm
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

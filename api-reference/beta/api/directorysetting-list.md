@@ -1,12 +1,13 @@
 ---
 title: Verzeichnis listeneinstellungen
 description: Abrufen einer Liste der Einstellung Verzeichnisobjekte.
-ms.openlocfilehash: 844d2102b9bfd98e2ba0a585a7eb04c8e46b6a52
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 2d3c7d24009fb0068376629aa50197678774f683
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059287"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319040"
 ---
 # <a name="list-directory-settings"></a>Verzeichnis listeneinstellungen
 

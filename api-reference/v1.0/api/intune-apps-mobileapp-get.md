@@ -1,12 +1,13 @@
 ---
 title: mobileApp abrufen
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs mobileApp.
-ms.openlocfilehash: 302f858a819522040eb8d378fd697981ab1dd2bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 65ed02218e28b64d3749834d4eee5d57a05e8d74
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018267"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323576"
 ---
 # <a name="get-mobileapp"></a>mobileApp abrufen
 
@@ -34,9 +35,9 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Abrufen von Outlook-Nachrichten in einem freigegebenen oder delegierten Ordner
 description: Diese Themen haben auch ähnliche Abschnitte – Ereignisse auflisten, Ereignis abrufen, Kontakte auflisten, Kontakt abrufen, Kontaktordner abrufen.
-ms.openlocfilehash: d9e04527879cb32f14dc8d74a814a54150c5b2d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: d90fa5d37fd7a07e4069bd5bcc0eb46f0cae29a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092250"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320111"
 ---
 # <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>Abrufen von Outlook-Nachrichten in einem freigegebenen oder delegierten Ordner
 

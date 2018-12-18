@@ -1,12 +1,13 @@
 ---
 title: DeviceManagementScript aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines DeviceManagementScript-Objekts.
-ms.openlocfilehash: d88579f130607b08b0d34620b701be5c239bc03f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e0eb397960a9ddae4041578761d5001b729f1464
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061280"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325312"
 ---
 # <a name="update-devicemanagementscript"></a>DeviceManagementScript aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

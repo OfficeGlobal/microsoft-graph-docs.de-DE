@@ -1,12 +1,13 @@
 ---
 title: Erstellen von educationSubmissionResource
 description: 'Fügt eine Ressource zur Ressourcenliste. Diese Aktion nur von den Teilnehmern möglich, dem diese Übermittlung zugewiesen ist. Diese Aktion nicht erfolgreich, wenn das Flag **AllowStudentsToAddResources** nicht festgelegt ist auf "true". Wenn der Aufrufer eine neue Ressource dateibasierten erstellen möchte, muss die Datei dem Ordner Ressourcen hochgeladen werden, die der Übermittlung zugeordnet ist. Die POST-Anforderung schlägt fehl, wenn die Datei nicht vorhanden ist oder nicht in diesem Ordner ist. '
-ms.openlocfilehash: c49022cc8ff830ad4842901be8a678875ea9b2a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 71d06e996213c133ed9c48d5d3e320a785e122ae
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064800"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321301"
 ---
 # <a name="create-educationsubmissionresource"></a>Erstellen von educationSubmissionResource
 
@@ -30,7 +31,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

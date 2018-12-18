@@ -1,12 +1,13 @@
 ---
 title: Abrufen von defaultDeviceCompliancePolicy
 description: Lesen Sie Eigenschaften und Beziehungen des DefaultDeviceCompliancePolicy-Objekts.
-ms.openlocfilehash: 9cadbaabf4186020ca40addd827c32e87a7b4359
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9d25f9074475f627d88449917fbe1615a0880119
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064075"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318221"
 ---
 # <a name="get-defaultdevicecompliancepolicy"></a>Abrufen von defaultDeviceCompliancePolicy
 
@@ -36,9 +37,9 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

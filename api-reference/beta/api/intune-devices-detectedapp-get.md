@@ -1,12 +1,13 @@
 ---
 title: Abrufen von „detectedApp“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs detectedApp.
-ms.openlocfilehash: d6dfc972bd1c3285dcf708430ff6c696a2ac4ec8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aeb35370a12a33a6a47f5608db64918ea4c010a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27057907"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331143"
 ---
 # <a name="get-detectedapp"></a>Abrufen von „detectedApp“
 
@@ -37,9 +38,9 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

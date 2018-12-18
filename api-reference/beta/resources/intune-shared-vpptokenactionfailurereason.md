@@ -1,12 +1,13 @@
 ---
 title: VppTokenActionFailureReason Enum-Typ
 description: Möglichen Typen der Gründe für ein Apple Volume Purchase Program token Aktion Fehler aufgetreten.
-ms.openlocfilehash: 0fece0417a5585540f15e3f8a8631fd30eaa414e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f36b92238b097f50990bbdb2f3c3584b2ff48901
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060749"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320964"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>VppTokenActionFailureReason Enum-Typ
 
@@ -16,9 +17,9 @@ ms.locfileid: "27060749"
 
 Möglichen Typen der Gründe für ein Apple Volume Purchase Program token Aktion Fehler aufgetreten.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
-|n/v|0|Keine.|
+|Keine|0|Keine.|
 |appleFailure|1|Apple Dienst ist ein Fehler aufgetreten.|
 |internalError|2|Ein interner Fehler ist aufgetreten.|
 |expiredVppToken|3|Ein Fehler aufgetreten, da das Token Apple Volume Purchase Program abgelaufen wurde.|

@@ -1,12 +1,13 @@
 ---
 title: ChartAxisTitle aktualisieren
 description: Dient zum Aktualisieren der Eigenschaften des ChartAxisTitle-Objekts.
-ms.openlocfilehash: 4c76f10c150c15107be47f099c817284ecce6a55
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: d0267b974820e109cc2f680c0e296a4bb86c3708
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060616"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322596"
 ---
 # <a name="update-chartaxistitle"></a>ChartAxisTitle aktualisieren
 

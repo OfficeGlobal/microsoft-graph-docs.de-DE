@@ -1,12 +1,13 @@
 ---
 title: groupAssignmentTarget-Ressourcentyp
 description: Stellt eine Zuweisung zu einer Gruppe dar.
-ms.openlocfilehash: 76ea8c56b8022dc832335c575ad52632894f1d60
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5371554d069237dc6bc017c29574423b415f4f33
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058844"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323135"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>groupAssignmentTarget-Ressourcentyp
 

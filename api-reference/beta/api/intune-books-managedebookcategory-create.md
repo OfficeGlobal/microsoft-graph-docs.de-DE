@@ -1,12 +1,13 @@
 ---
 title: Erstellen von managedEBookCategory
 description: Erstellen eines neuen ManagedEBookCategory-Objekts.
-ms.openlocfilehash: 8750e8c520e3a48b2da93d05b9f701c7760b6a15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dffb100162817db8ac733b8520dc0f026fb2b9f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064521"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325361"
 ---
 # <a name="create-managedebookcategory"></a>Erstellen von managedEBookCategory
 
@@ -35,9 +36,9 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/categories
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

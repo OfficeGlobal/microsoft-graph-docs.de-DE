@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp vppTokenLicenseSummary
 description: Lizenz-Zusammenfassung der eine bestimmte app in einem Token.
-ms.openlocfilehash: fba888c706b21a796615bf9bc2ea79968d5ad6d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7847c6265ed526d50215567918698c7732adf947
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059798"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319978"
 ---
 # <a name="vpptokenlicensesummary-resource-type"></a>Ressourcentyp vppTokenLicenseSummary
 

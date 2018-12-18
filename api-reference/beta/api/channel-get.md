@@ -1,12 +1,13 @@
 ---
 title: Abrufen von DDE-Kanal
 description: Rufen Sie die Eigenschaften und die Beziehungen eines Kanals ab.
-ms.openlocfilehash: a25f97c456ec92bfa1d15974d42698f6968b6338
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: e1c5a46b43fcb3245877fba9d8529e9396e62ba8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222415"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322722"
 ---
 # <a name="get-channel"></a>Abrufen von DDE-Kanal
 

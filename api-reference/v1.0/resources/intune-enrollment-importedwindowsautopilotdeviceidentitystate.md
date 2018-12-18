@@ -1,12 +1,13 @@
 ---
 title: importedWindowsAutopilotDeviceIdentityState-Ressourcentyp
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 6891c95a6c25c31c496c53520a22d5522995e29f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ad1715098a50f61d83c529688b4a83f915741d1a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018302"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332774"
 ---
 # <a name="importedwindowsautopilotdeviceidentitystate-resource-type"></a>importedWindowsAutopilotDeviceIdentityState-Ressourcentyp
 

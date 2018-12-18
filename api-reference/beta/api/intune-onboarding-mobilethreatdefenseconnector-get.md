@@ -1,12 +1,13 @@
 ---
 title: mobileThreatDefenseConnector abrufen
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs mobileThreatDefenseConnector.
-ms.openlocfilehash: 7b63cdd7fc9476ad36f8bf249e0b5a358414b9fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 07e0d8fc3a66f941925bb5a36ae7093abe2368b5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064195"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318659"
 ---
 # <a name="get-mobilethreatdefenseconnector"></a>mobileThreatDefenseConnector abrufen
 
@@ -36,9 +37,9 @@ GET /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnecto
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

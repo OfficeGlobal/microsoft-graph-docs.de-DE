@@ -1,12 +1,13 @@
 ---
 title: windows10CompliancePolicy löschen
 description: Löscht Objekte des Typs windows10CompliancePolicy.
-ms.openlocfilehash: e26504d3b410fe4b9dfeb9206b7deb4436a151b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4a42d28e9f4d8a0cc0d8558974abb56cf37c0454
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064476"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318487"
 ---
 # <a name="delete-windows10compliancepolicy"></a>windows10CompliancePolicy löschen
 
@@ -34,9 +35,9 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

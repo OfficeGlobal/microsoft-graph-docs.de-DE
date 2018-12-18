@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp androidForWorkCertificateProfileBase
 description: Android für Arbeit Zertifikatsprofil Basiskalender.
-ms.openlocfilehash: 5b8864b05685dfc971d7f30b7f112e72272165bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a4a664473c22a7e90fa43dc19e7343c358cc0d56
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059541"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326887"
 ---
 # <a name="androidforworkcertificateprofilebase-resource-type"></a>Ressourcentyp androidForWorkCertificateProfileBase
 

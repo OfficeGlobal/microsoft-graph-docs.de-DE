@@ -1,12 +1,13 @@
 ---
 title: EmbeddedSIMDeviceState aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines EmbeddedSIMDeviceState-Objekts.
-ms.openlocfilehash: 5a102bd686a65cf14bb078e1ae66df31bbe4dae5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7c377199caae31bb45d65f0ad557cb27fb3916b8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059832"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318522"
 ---
 # <a name="update-embeddedsimdevicestate"></a>EmbeddedSIMDeviceState aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Abrufen von managedEBookCategory
 description: Lesen Sie Eigenschaften und Beziehungen des ManagedEBookCategory-Objekts.
-ms.openlocfilehash: 6c97031aadcd373b0f5cfb520d775e4e999b423d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3a3ece59025b28ed26ffa03931d1de67c45ed140
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065990"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321959"
 ---
 # <a name="get-managedebookcategory"></a>Abrufen von managedEBookCategory
 
@@ -37,9 +38,9 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/categories/{managedEBook
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

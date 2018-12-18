@@ -1,12 +1,13 @@
 ---
 title: Erstellen von androidWorkProfileNineWorkEasConfiguration
 description: Erstellen eines neuen AndroidWorkProfileNineWorkEasConfiguration-Objekts.
-ms.openlocfilehash: 759d966e9faa985ed2f1b62c4ad9ef61ea0fd5d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 08a697d2f6aeb0464647c0c3d45bebbc775146a2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062310"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322715"
 ---
 # <a name="create-androidworkprofilenineworkeasconfiguration"></a>Erstellen von androidWorkProfileNineWorkEasConfiguration
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

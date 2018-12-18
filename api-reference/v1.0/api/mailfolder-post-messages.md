@@ -1,12 +1,13 @@
 ---
 title: Nachricht erstellen
 description: Mit dieser API können Sie in einem Objekt des Typs „mailfolder“ neue Nachrichten erstellen.
-ms.openlocfilehash: 4d901385559ed89b6215069b97ae2f323cc66cf6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: bb88a061a8e867f4cc15470073925c51fe6a3cf6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016878"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332543"
 ---
 # <a name="create-message"></a>Nachricht erstellen
 
@@ -27,7 +28,7 @@ POST /me/mailFolders/{id}/messages
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json. Erforderlich.   |

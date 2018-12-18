@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp win32LobAppPowerShellScriptDetection
 description: Enthält Eigenschaften, die PowerShell-Skript zum Erkennen von einer Win32-App
-ms.openlocfilehash: e5d87d3d2a90c0ac7f8ce6db7e14b105583a76f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7f69b2c066ae90cfcd805b3d3cfe57193046d440
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061957"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327573"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>Ressourcentyp win32LobAppPowerShellScriptDetection
 
