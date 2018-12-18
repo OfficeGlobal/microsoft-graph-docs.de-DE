@@ -1,48 +1,49 @@
 ---
 title: Abrufen von WorksheetProtection
 description: Dient zum Abrufen der Eigenschaften und der Beziehungen des worksheetProtection-Objekts.
-ms.openlocfilehash: c6c92eb6a9b54b13822d04ece516c0d97c5e8ee1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 335492707cc3411d39fa5c95b1668dd1768fd8cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016850"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320181"
 ---
-# <a name="get-worksheetprotection"></a><span data-ttu-id="685bf-103">Abrufen von WorksheetProtection</span><span class="sxs-lookup"><span data-stu-id="685bf-103">Get WorksheetProtection</span></span>
+# <a name="get-worksheetprotection"></a><span data-ttu-id="128f6-103">Abrufen von WorksheetProtection</span><span class="sxs-lookup"><span data-stu-id="128f6-103">Get WorksheetProtection</span></span>
 
-<span data-ttu-id="685bf-104">Dient zum Abrufen der Eigenschaften und der Beziehungen des worksheetProtection-Objekts.</span><span class="sxs-lookup"><span data-stu-id="685bf-104">Retrieve the properties and relationships of worksheetprotection object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="685bf-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="685bf-105">Permissions</span></span>
-<span data-ttu-id="685bf-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="685bf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="128f6-104">Dient zum Abrufen der Eigenschaften und der Beziehungen des worksheetProtection-Objekts.</span><span class="sxs-lookup"><span data-stu-id="128f6-104">Retrieve the properties and relationships of worksheetprotection object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="128f6-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="128f6-105">Permissions</span></span>
+<span data-ttu-id="128f6-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="128f6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="685bf-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="685bf-108">Permission type</span></span>      | <span data-ttu-id="685bf-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="685bf-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="128f6-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="128f6-108">Permission type</span></span>      | <span data-ttu-id="128f6-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="128f6-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="685bf-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="685bf-110">Delegated (work or school account)</span></span> | <span data-ttu-id="685bf-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="685bf-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="685bf-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="685bf-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="685bf-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="685bf-113">Not supported.</span></span>    |
-|<span data-ttu-id="685bf-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="685bf-114">Application</span></span> | <span data-ttu-id="685bf-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="685bf-115">Not supported.</span></span> |
+|<span data-ttu-id="128f6-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="128f6-110">Delegated (work or school account)</span></span> | <span data-ttu-id="128f6-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="128f6-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="128f6-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="128f6-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="128f6-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="128f6-113">Not supported.</span></span>    |
+|<span data-ttu-id="128f6-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="128f6-114">Application</span></span> | <span data-ttu-id="128f6-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="128f6-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="685bf-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="685bf-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="128f6-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="128f6-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/worksheets/{id|name}/protection
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="685bf-117">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="685bf-117">Optional query parameters</span></span>
-<span data-ttu-id="685bf-118">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="685bf-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="128f6-117">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="128f6-117">Optional query parameters</span></span>
+<span data-ttu-id="128f6-118">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="128f6-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="685bf-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="685bf-119">Request headers</span></span>
-| <span data-ttu-id="685bf-120">Name</span><span class="sxs-lookup"><span data-stu-id="685bf-120">Name</span></span>      |<span data-ttu-id="685bf-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="685bf-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="128f6-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="128f6-119">Request headers</span></span>
+| <span data-ttu-id="128f6-120">Name</span><span class="sxs-lookup"><span data-stu-id="128f6-120">Name</span></span>      |<span data-ttu-id="128f6-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="128f6-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="685bf-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="685bf-122">Authorization</span></span>  | <span data-ttu-id="685bf-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="685bf-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="685bf-125">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="685bf-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="685bf-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="685bf-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="128f6-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="128f6-122">Authorization</span></span>  | <span data-ttu-id="128f6-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="128f6-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="128f6-125">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="128f6-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="128f6-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="128f6-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="685bf-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="685bf-128">Request body</span></span>
-<span data-ttu-id="685bf-129">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="685bf-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="128f6-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="128f6-128">Request body</span></span>
+<span data-ttu-id="128f6-129">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="128f6-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="685bf-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="685bf-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="128f6-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="128f6-130">Response</span></span>
 
-<span data-ttu-id="685bf-131">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und [WorkbookWorksheetProtection](../resources/worksheetprotection.md) -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="685bf-131">If successful, this method returns a `200 OK` response code and [WorkbookWorksheetProtection](../resources/worksheetprotection.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="685bf-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="685bf-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="685bf-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="685bf-133">Request</span></span>
-<span data-ttu-id="685bf-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="685bf-134">Here is an example of the request.</span></span>
+<span data-ttu-id="128f6-131">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und [WorkbookWorksheetProtection](../resources/worksheetprotection.md) -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="128f6-131">If successful, this method returns a `200 OK` response code and [WorkbookWorksheetProtection](../resources/worksheetprotection.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="128f6-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="128f6-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="128f6-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="128f6-133">Request</span></span>
+<span data-ttu-id="128f6-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="128f6-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_worksheetprotection"
@@ -50,8 +51,8 @@ GET /workbook/worksheets/{id|name}/protection
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/protection
 ```
-##### <a name="response"></a><span data-ttu-id="685bf-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="685bf-135">Response</span></span>
-<span data-ttu-id="685bf-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="685bf-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="128f6-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="128f6-135">Response</span></span>
+<span data-ttu-id="128f6-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="128f6-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

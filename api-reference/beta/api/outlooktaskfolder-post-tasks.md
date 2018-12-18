@@ -1,52 +1,53 @@
 ---
 title: Erstellen von outlookTask
 description: Erstellen Sie eine Outlook-Aufgabe im angegebenen Ordner.
-ms.openlocfilehash: bb355c026bc56fb9d490bd76114ff2d552e24da9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 4d35c7de737e0de0f123dc9ee13f2f42e866d61d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058377"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322148"
 ---
-# <a name="create-outlooktask"></a><span data-ttu-id="e72ec-103">Erstellen von outlookTask</span><span class="sxs-lookup"><span data-stu-id="e72ec-103">Create outlookTask</span></span>
+# <a name="create-outlooktask"></a><span data-ttu-id="8a1e9-103">Erstellen von outlookTask</span><span class="sxs-lookup"><span data-stu-id="8a1e9-103">Create outlookTask</span></span>
 
-> <span data-ttu-id="e72ec-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="e72ec-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e72ec-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="e72ec-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="8a1e9-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="8a1e9-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8a1e9-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="8a1e9-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="e72ec-106">Erstellen Sie eine Outlook-Aufgabe im angegebenen Ordner.</span><span class="sxs-lookup"><span data-stu-id="e72ec-106">Create an Outlook task in the specified task folder.</span></span>
+<span data-ttu-id="8a1e9-106">Erstellen Sie eine Outlook-Aufgabe im angegebenen Ordner.</span><span class="sxs-lookup"><span data-stu-id="8a1e9-106">Create an Outlook task in the specified task folder.</span></span>
 
-<span data-ttu-id="e72ec-107">Die POST-Methode immer den Zeitbereich des **StartDateTime** und **DueDateTime** im Textkörper Anforderung ignoriert, und dann wird die Zeit in der angegebenen Zeitzone Mitternacht, vorausgesetzt.</span><span class="sxs-lookup"><span data-stu-id="e72ec-107">The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time to be always midnight in the specified time zone.</span></span>
+<span data-ttu-id="8a1e9-107">Die POST-Methode immer den Zeitbereich des **StartDateTime** und **DueDateTime** im Textkörper Anforderung ignoriert, und dann wird die Zeit in der angegebenen Zeitzone Mitternacht, vorausgesetzt.</span><span class="sxs-lookup"><span data-stu-id="8a1e9-107">The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time to be always midnight in the specified time zone.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e72ec-108">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="e72ec-108">Permissions</span></span>
-<span data-ttu-id="e72ec-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e72ec-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8a1e9-108">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="8a1e9-108">Permissions</span></span>
+<span data-ttu-id="8a1e9-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8a1e9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e72ec-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="e72ec-111">Permission type</span></span>      | <span data-ttu-id="e72ec-112">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="e72ec-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8a1e9-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="8a1e9-111">Permission type</span></span>      | <span data-ttu-id="8a1e9-112">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="8a1e9-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e72ec-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="e72ec-113">Delegated (work or school account)</span></span> | <span data-ttu-id="e72ec-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="e72ec-114">Not supported.</span></span>    |
-|<span data-ttu-id="e72ec-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="e72ec-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e72ec-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="e72ec-116">Not supported.</span></span>    |
-|<span data-ttu-id="e72ec-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="e72ec-117">Application</span></span> | <span data-ttu-id="e72ec-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="e72ec-118">Not supported.</span></span> |
+|<span data-ttu-id="8a1e9-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="8a1e9-113">Delegated (work or school account)</span></span> | <span data-ttu-id="8a1e9-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="8a1e9-114">Not supported.</span></span>    |
+|<span data-ttu-id="8a1e9-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="8a1e9-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8a1e9-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="8a1e9-116">Not supported.</span></span>    |
+|<span data-ttu-id="8a1e9-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="8a1e9-117">Application</span></span> | <span data-ttu-id="8a1e9-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="8a1e9-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e72ec-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="e72ec-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8a1e9-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="8a1e9-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks
 POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 ```
-## <a name="request-headers"></a><span data-ttu-id="e72ec-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="e72ec-120">Request headers</span></span>
-| <span data-ttu-id="e72ec-121">Name</span><span class="sxs-lookup"><span data-stu-id="e72ec-121">Name</span></span>       | <span data-ttu-id="e72ec-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e72ec-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8a1e9-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="8a1e9-120">Request headers</span></span>
+| <span data-ttu-id="8a1e9-121">Name</span><span class="sxs-lookup"><span data-stu-id="8a1e9-121">Name</span></span>       | <span data-ttu-id="8a1e9-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8a1e9-122">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="e72ec-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e72ec-123">Authorization</span></span>  | <span data-ttu-id="e72ec-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="e72ec-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="e72ec-126">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="e72ec-126">Prefer: outlook.timezone</span></span> | <span data-ttu-id="e72ec-127">Gibt die Zeitzone für Zeiteigenschaften in der Antwort, die in UTC wäre, wenn diese Kopfzeile nicht angegeben ist.</span><span class="sxs-lookup"><span data-stu-id="e72ec-127">Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified.</span></span> <span data-ttu-id="e72ec-128">Optional.</span><span class="sxs-lookup"><span data-stu-id="e72ec-128">Optional.</span></span>|
+| <span data-ttu-id="8a1e9-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="8a1e9-123">Authorization</span></span>  | <span data-ttu-id="8a1e9-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="8a1e9-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8a1e9-126">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="8a1e9-126">Prefer: outlook.timezone</span></span> | <span data-ttu-id="8a1e9-127">Gibt die Zeitzone für Zeiteigenschaften in der Antwort, die in UTC wäre, wenn diese Kopfzeile nicht angegeben ist.</span><span class="sxs-lookup"><span data-stu-id="8a1e9-127">Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified.</span></span> <span data-ttu-id="8a1e9-128">Optional.</span><span class="sxs-lookup"><span data-stu-id="8a1e9-128">Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e72ec-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="e72ec-129">Request body</span></span>
-<span data-ttu-id="e72ec-130">Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [OutlookTask](../resources/outlooktask.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="e72ec-130">In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8a1e9-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="8a1e9-129">Request body</span></span>
+<span data-ttu-id="8a1e9-130">Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [OutlookTask](../resources/outlooktask.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="8a1e9-130">In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e72ec-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="e72ec-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8a1e9-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="8a1e9-131">Response</span></span>
 
-<span data-ttu-id="e72ec-132">Wenn der Vorgang erfolgreich war, gibt diese Methode `201 Created` Antwortobjekt Code und [OutlookTask](../resources/outlooktask.md) im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="e72ec-132">If successful, this method returns `201 Created` response code and [outlookTask](../resources/outlooktask.md) object in the response body.</span></span>
+<span data-ttu-id="8a1e9-132">Wenn der Vorgang erfolgreich war, gibt diese Methode `201 Created` Antwortobjekt Code und [OutlookTask](../resources/outlooktask.md) im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="8a1e9-132">If successful, this method returns `201 Created` response code and [outlookTask](../resources/outlooktask.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e72ec-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e72ec-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e72ec-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="e72ec-134">Request</span></span>
-<span data-ttu-id="e72ec-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="e72ec-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8a1e9-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="8a1e9-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8a1e9-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="8a1e9-134">Request</span></span>
+<span data-ttu-id="8a1e9-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="8a1e9-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_outlooktask_from_outlooktaskfolder"
@@ -68,11 +69,11 @@ Content-length: 376
   }
 }
 ```
-<span data-ttu-id="e72ec-136">Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [OutlookTask](../resources/outlooktask.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="e72ec-136">In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="e72ec-137">Antwort</span><span class="sxs-lookup"><span data-stu-id="e72ec-137">Response</span></span>
-<span data-ttu-id="e72ec-138">Die POST-Methode ignoriert den Zeitanteil im Anforderungstext und geht davon aus, dass die Zeit immer Mitternacht in der angegebenen Zeitzone (PST) ist.</span><span class="sxs-lookup"><span data-stu-id="e72ec-138">The POST method ignores the time portion in the request body and assumes the time to be always midnight in the specified time zone (PST).</span></span> <span data-ttu-id="e72ec-139">Die POST-Methode konvertiert dann standardmäßig alle datumsbezogenen Eigenschaften in der Antwort in UTC.</span><span class="sxs-lookup"><span data-stu-id="e72ec-139">Then, by default, the POST method converts and shows all the date-related properties in UTC in the response.</span></span>
+<span data-ttu-id="8a1e9-136">Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [OutlookTask](../resources/outlooktask.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="8a1e9-136">In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="8a1e9-137">Antwort</span><span class="sxs-lookup"><span data-stu-id="8a1e9-137">Response</span></span>
+<span data-ttu-id="8a1e9-138">Die POST-Methode ignoriert den Zeitanteil im Anforderungstext und geht davon aus, dass die Zeit immer Mitternacht in der angegebenen Zeitzone (PST) ist.</span><span class="sxs-lookup"><span data-stu-id="8a1e9-138">The POST method ignores the time portion in the request body and assumes the time to be always midnight in the specified time zone (PST).</span></span> <span data-ttu-id="8a1e9-139">Die POST-Methode konvertiert dann standardmäßig alle datumsbezogenen Eigenschaften in der Antwort in UTC.</span><span class="sxs-lookup"><span data-stu-id="8a1e9-139">Then, by default, the POST method converts and shows all the date-related properties in UTC in the response.</span></span>
 
-<span data-ttu-id="e72ec-p106">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="e72ec-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="8a1e9-p106">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="8a1e9-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
