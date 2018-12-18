@@ -1,12 +1,13 @@
 ---
 title: ExtendQualityUpdatesPause Aktion
 description: Erweitern Sie für ein Windows-Update für Business Ring Qualität Updates anhalten.
-ms.openlocfilehash: ef54ebf7960de709a65cda169050adb378be7d94
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ea6f36922b438e5f643e073c4d5d2697a6f77efc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062140"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355608"
 ---
 # <a name="extendqualityupdatespause-action"></a>ExtendQualityUpdatesPause Aktion
 
@@ -36,9 +37,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
