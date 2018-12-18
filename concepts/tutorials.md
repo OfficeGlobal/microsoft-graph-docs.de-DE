@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph-Lernprogramme
 description: Microsoft Graph-Lernprogramme sind schrittweise Übungen, in denen Sie durch einfache Microsoft Graph-Konzepte geführt werden, einschließlich des Erstellens einer grundlegenden Anwendung, die die Azure Active Directory-Authentifizierung verwendet und über Microsoft Graph auf Daten zugreift.
-ms.openlocfilehash: 988e734e790533b13b670516d9304fed92b543c9
-ms.sourcegitcommit: 9f953e0c4cd624ba31919bfd5e82bf3e33cb9e21
+author: jasonjoh
+ms.openlocfilehash: a040f3b805b62de9245fc53a4e6e2abb3f805877
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27247746"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339669"
 ---
 # <a name="microsoft-graph-tutorials"></a>Microsoft Graph-Lernprogramme
 

@@ -1,12 +1,13 @@
 ---
 title: Erstellen von deviceConfigurationGroupAssignment
 description: Erstellen eines neuen DeviceConfigurationGroupAssignment-Objekts.
-ms.openlocfilehash: 3e349664a1458b13be357dbabf7e9a1a8e14025e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c07356d3cf63699fda95e2be6fe361841e0b0d95
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059222"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355104"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>Erstellen von deviceConfigurationGroupAssignment
 
@@ -42,9 +43,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

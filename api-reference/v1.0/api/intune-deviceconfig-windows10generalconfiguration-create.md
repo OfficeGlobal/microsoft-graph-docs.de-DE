@@ -1,12 +1,13 @@
 ---
 title: windows10GeneralConfiguration erstellen
 description: Erstellt ein neues windows10GeneralConfiguration-Objekt.
-ms.openlocfilehash: a727bb9da70b78e6e6c43957364e585c1b2b6f3a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7c4eaff2e9def33f4c79e4f42f0db30e2aa98d8a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019627"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356665"
 ---
 # <a name="create-windows10generalconfiguration"></a>windows10GeneralConfiguration erstellen
 
@@ -32,9 +33,9 @@ POST /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

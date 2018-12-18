@@ -1,12 +1,13 @@
 ---
 title: VppToken aktualisieren
 description: Aktualisieren der Eigenschaften eines vppToken-Objekts.
-ms.openlocfilehash: 2fdcb0d78b0690b63df429f43976647e93e6f25c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 420efbc72ae8ef19bde91ca4b7a2ec5592f4e87a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058522"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338752"
 ---
 # <a name="update-vpptoken"></a>VppToken aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

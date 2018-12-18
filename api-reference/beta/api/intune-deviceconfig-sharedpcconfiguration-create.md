@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „sharedPCConfiguration“
 description: Diese Methode erstellt ein neues Objekt des Typs sharedPCConfiguration.
-ms.openlocfilehash: 2cd92e4e2d3147cccbd9099d16ecfaaac0c8c656
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a9a4dce6a0ab13d8f28b9b7c532c02baf180bfa2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059224"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336099"
 ---
 # <a name="create-sharedpcconfiguration"></a>Erstellen von „sharedPCConfiguration“
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

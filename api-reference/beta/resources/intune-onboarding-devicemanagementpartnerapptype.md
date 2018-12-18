@@ -1,12 +1,13 @@
 ---
 title: DeviceManagementPartnerAppType Enum-Typ
 description: Partner-App-Typ.
-ms.openlocfilehash: fe23918c48e7cee23f9037344259c74a1b92ae77
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b7d54604aeb86c44a1964e1d24b3a1b131551149
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060444"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354292"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>DeviceManagementPartnerAppType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27060444"
 
 Partner-App-Typ.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Partner-App-Typ ist unbekannt.|
 |singleTenantApp|1|Partner App ist mit einem einzelnen Mandanten in AAD.|

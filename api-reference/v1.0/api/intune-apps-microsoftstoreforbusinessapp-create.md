@@ -1,12 +1,13 @@
 ---
 title: microsoftStoreForBusinessApp erstellen
 description: Erstellen eines neuen microsoftStoreForBusinessApp-Objekts.
-ms.openlocfilehash: 478bf95892628b4b3bc0195804a48c9d9cf415e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d27c5eed5d541d762e77b4eb45e2fe468b4529f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016965"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356063"
 ---
 # <a name="create-microsoftstoreforbusinessapp"></a>microsoftStoreForBusinessApp erstellen
 
@@ -32,9 +33,9 @@ POST /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

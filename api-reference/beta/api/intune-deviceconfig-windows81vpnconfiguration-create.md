@@ -1,12 +1,13 @@
 ---
 title: Erstellen von windows81VpnConfiguration
 description: Erstellen eines neuen windows81VpnConfiguration-Objekts.
-ms.openlocfilehash: 7bf50bacf245a020ba72084ead62a545d59a93c6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bf44310a218bdc04021d4a47b5a6c7a45c63eb49
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063977"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336463"
 ---
 # <a name="create-windows81vpnconfiguration"></a>Erstellen von windows81VpnConfiguration
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

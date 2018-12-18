@@ -1,12 +1,13 @@
 ---
 title: Notizbücher auflisten
 description: Mit dieser API können Sie eine Liste von Objekten des Typs notebook abrufen.
-ms.openlocfilehash: 0f9bf502973be0d178db70e42f25a0716263e323
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 7e6e45f84c3574815741f1f50394582fc692ccb0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060387"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355580"
 ---
 # <a name="list-notebooks"></a>Notizbücher auflisten
 
@@ -40,7 +41,7 @@ Gültige `expand`-Werte für Notizbücher sind `sections` und `sectionGroups`.
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 | Accept | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext

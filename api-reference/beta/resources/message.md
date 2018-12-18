@@ -1,12 +1,13 @@
 ---
 title: Nachrichtenressourcentyp
 description: Eine Nachricht in einem Postfachordner.
-ms.openlocfilehash: 046516ae0ec469d7f30b33a1d4bc7c939749ff6d
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+author: angelgolfer-ms
+ms.openlocfilehash: e0c1b539baa16c60904c5c9a726bac6cb5c7d557
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283682"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353669"
 ---
 # <a name="message-resource-type"></a>Nachrichtenressourcentyp
 

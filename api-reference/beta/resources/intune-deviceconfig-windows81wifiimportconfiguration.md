@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windows81WifiImportConfiguration
 description: " Konfiguration der Wi-Fi importieren. Durch dieses Profil konfigurieren können Sie Windows 8.1 (und höher) Geräte zur gewünschten Wi-Fi-Endpunkt Verbindung anweisen. Schließen Sie ein Windows 8.1-Gerät mit dem gewünschten Wi-Fi-Netzwerk, und Extrahieren von XML dieses Gerät später in diesem Wi-Fi-Profil einzubetten."
-ms.openlocfilehash: 226c2e6edd8c0678a5ef42d8a62309841f16c4e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c9cfc42217b4b3484791a79a761e64b4b6369395
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059554"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355881"
 ---
 # <a name="windows81wifiimportconfiguration-resource-type"></a>Ressourcentyp windows81WifiImportConfiguration
 

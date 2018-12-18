@@ -1,12 +1,13 @@
 ---
 title: Erstellen von networkIPv6ConfigurationManagementCondition
 description: Erstellen eines neuen networkIPv6ConfigurationManagementCondition-Objekts.
-ms.openlocfilehash: be69c9a69653bb35413446fe69d36016cb344ced
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b59a194ac7d7853ff958435406ff7e7af01a21b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061800"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356434"
 ---
 # <a name="create-networkipv6configurationmanagementcondition"></a>Erstellen von networkIPv6ConfigurationManagementCondition
 
@@ -35,9 +36,9 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

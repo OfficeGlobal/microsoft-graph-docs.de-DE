@@ -1,12 +1,13 @@
 ---
 title: AndroidWorkProfilePkcsCertificateProfile aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidWorkProfilePkcsCertificateProfile-Objekts.
-ms.openlocfilehash: fd9bed34c91d332e4f190799d0be59fe20a94f53
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dbd3adbcc15b7b46e51ff3a2874e340c78339ac2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061984"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355895"
 ---
 # <a name="update-androidworkprofilepkcscertificateprofile"></a>AndroidWorkProfilePkcsCertificateProfile aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

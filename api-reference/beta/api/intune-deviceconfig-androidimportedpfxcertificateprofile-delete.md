@@ -1,12 +1,13 @@
 ---
 title: AndroidImportedPFXCertificateProfile löschen
 description: Löscht eine AndroidImportedPFXCertificateProfile.
-ms.openlocfilehash: a803b040df1604a39feef533ff2882692f92f592
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d6a8b08748c4926c78d6759335a1aff3413b669b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059531"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335917"
 ---
 # <a name="delete-androidimportedpfxcertificateprofile"></a>AndroidImportedPFXCertificateProfile löschen
 
@@ -36,9 +37,9 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

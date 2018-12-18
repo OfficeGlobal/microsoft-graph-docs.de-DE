@@ -1,12 +1,13 @@
 ---
 title: Liste androidVpnConfigurations
 description: Listeneigenschaften und Beziehungen der AndroidVpnConfiguration-Objekte.
-ms.openlocfilehash: a55e7229b018db3731ff4622b328692ee33a1710
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a26fe24e4680153075a54614b241ce7103d3caf2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062590"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354831"
 ---
 # <a name="list-androidvpnconfigurations"></a>Liste androidVpnConfigurations
 
@@ -35,9 +36,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

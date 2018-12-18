@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationDeviceStatus abrufen
 description: Lesen von Eigenschaften und Beziehungen des deviceConfigurationDeviceStatus-Objekts.
-ms.openlocfilehash: 78862a9b0aff5f256d59fb03e0cf86447459ce1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aec946d5d0daf05989aaf970019563708df10bf6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058888"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357659"
 ---
 # <a name="get-deviceconfigurationdevicestatus"></a>deviceConfigurationDeviceStatus abrufen
 
@@ -44,9 +45,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

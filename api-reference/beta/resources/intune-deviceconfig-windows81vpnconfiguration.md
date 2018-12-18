@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windows81VpnConfiguration
 description: Durch die Konfigurationen in dieses Profil bereitstellen, können Sie die Windows 8.1 (und höher) Geräte zur gewünschten Endpunkt für VPN-Verbindung anweisen. Durch Angeben von erwartet die Authentifizierungstypen-Methode und der Sicherheit durch VPN-Endpunkt, dass Sie die VPN-Verbindung nahtlos für Endbenutzer vornehmen können.
-ms.openlocfilehash: aad145c59883fe535e86694d2ba60a7100faf93b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 97bb867fcd97b8d2c219353a2000d73120be4755
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065083"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356077"
 ---
 # <a name="windows81vpnconfiguration-resource-type"></a>Ressourcentyp windows81VpnConfiguration
 

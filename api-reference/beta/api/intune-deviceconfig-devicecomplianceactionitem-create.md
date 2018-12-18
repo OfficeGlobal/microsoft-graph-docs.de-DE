@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „deviceComplianceActionItem“
 description: Diese Methode erstellt ein neues Objekt des Typs deviceComplianceActionItem.
-ms.openlocfilehash: edb99b2fac02b95ebd2634749bdaa8d4acfec781
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 52dd6bca4aa4f91f68d6e986a69e061e899602e8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062633"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356119"
 ---
 # <a name="create-devicecomplianceactionitem"></a>Erstellen von „deviceComplianceActionItem“
 
@@ -34,9 +35,9 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

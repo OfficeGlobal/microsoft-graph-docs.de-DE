@@ -1,12 +1,13 @@
 ---
 title: DefenderScanType Enum-Typ
 description: Mögliche Werte für System überprüft den Typ.
-ms.openlocfilehash: 570ed3601990ac466499868532d18e46694536e1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c209ac69f56fb48282e9febd3c1be8e80d3ba9f2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060196"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344884"
 ---
 # <a name="defenderscantype-enum-type"></a>DefenderScanType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27060196"
 
 Mögliche Werte für System überprüft den Typ.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
 |deaktiviert|1|System-Überprüfung deaktiviert.|

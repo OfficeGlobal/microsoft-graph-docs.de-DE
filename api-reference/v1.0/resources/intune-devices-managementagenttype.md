@@ -1,12 +1,13 @@
 ---
 title: ManagementAgentType Enum-Typ
 description: Typ der Management Agent.
-ms.openlocfilehash: de837f712f69576ea7a862101d2cfaa30b8685d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b1f6db6eaea1a488831bec3d7ff61d6170414956
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018436"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355517"
 ---
 # <a name="managementagenttype-enum-type"></a>ManagementAgentType Enum-Typ
 
@@ -14,7 +15,7 @@ ms.locfileid: "27018436"
 
 Typ der Management Agent.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |EAS|1|Das Gerät wird vom Exchange-Server verwaltet.|
 |MDM|2|Das Gerät wird durch Intune MDM verwaltet.|

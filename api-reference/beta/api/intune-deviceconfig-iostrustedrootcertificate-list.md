@@ -1,12 +1,13 @@
 ---
 title: Liste iosTrustedRootCertificates
 description: Listeneigenschaften und Beziehungen der IosTrustedRootCertificate-Objekte.
-ms.openlocfilehash: aea16dbf0edb41a1f1c879f4decec28067652e4e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 644cc698a9d147ed14c85801a2c7699995d03e87
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060172"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355902"
 ---
 # <a name="list-iostrustedrootcertificates"></a>Liste iosTrustedRootCertificates
 
@@ -34,9 +35,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

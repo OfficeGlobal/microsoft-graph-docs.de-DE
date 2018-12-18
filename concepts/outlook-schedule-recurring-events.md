@@ -1,12 +1,13 @@
 ---
 title: Planen wiederkehrender Termine als wiederkehrende Ereignisse in Outlook
 description: Ereignisserien sind ein wichtiger Bestandteil der Kalenderfunktionen von Outlook. Ganz gleich, ob es sich um eine wöchentliche Besprechung mit Ihrem Vorgesetzten oder eine Abteilungsbesprechung handelt, die jeden zweiten Dienstag im Monat stattfindet, mit Ereignisserien können Sie ganz einfach eine Ereignisserie erstellen und der Server füllt den Kalender mit dem Rest der Serie.
-ms.openlocfilehash: 1af082a32d79f6011e93a7fc0c5fc9d553d16712
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 85d856cd9f59ee7df643ff74ed4b3dd9f48ba3a4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092167"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340075"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>Planen wiederkehrender Termine als wiederkehrende Ereignisse in Outlook
 

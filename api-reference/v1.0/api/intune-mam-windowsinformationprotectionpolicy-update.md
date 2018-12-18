@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von windowsInformationProtectionPolicy
 description: Aktualisiert die Eigenschaften von Objekten des Typs windowsInformationProtectionPolicy.
-ms.openlocfilehash: 15fc74d9f5155fdda9513812ab0dbbdb6770c879
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a785d7ff5f8a9f8d98dabe6e71843499a4917860
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019652"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356826"
 ---
 # <a name="update-windowsinformationprotectionpolicy"></a>Aktualisieren von windowsInformationProtectionPolicy
 
@@ -32,9 +33,9 @@ PATCH /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformat
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

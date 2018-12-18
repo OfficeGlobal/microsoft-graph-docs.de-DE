@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „androidGeneralDeviceConfiguration“
 description: Diese Methode erstellt ein neues Objekt des Typs androidGeneralDeviceConfiguration.
-ms.openlocfilehash: e28312afe09e150cb123e10767b373b9014f4f1a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 67bbdf997c2157c7e3161ee1c37a7cdf47ac2d25
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019001"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353753"
 ---
 # <a name="create-androidgeneraldeviceconfiguration"></a>Erstellen von „androidGeneralDeviceConfiguration“
 
@@ -32,9 +33,9 @@ POST /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

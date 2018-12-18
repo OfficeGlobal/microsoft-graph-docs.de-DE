@@ -1,12 +1,13 @@
 ---
 title: syncApps-Aktion
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 8c9e25c53204299e8c36d6d004ea2c2fd56066c5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7acfeada743a1bce70ec7de424f25ae7157deced
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062252"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338507"
 ---
 # <a name="syncapps-action"></a>syncApps-Aktion
 
@@ -34,9 +35,9 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/syncApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

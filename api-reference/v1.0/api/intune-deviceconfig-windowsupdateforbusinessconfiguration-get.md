@@ -1,12 +1,13 @@
 ---
 title: Abrufen von „windowsUpdateForBusinessConfiguration“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs windowsUpdateForBusinessConfiguration.
-ms.openlocfilehash: 6d48c9afe0b6d4cc0584caf188b2148b98dbdbcb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b0ddb0e650fb860d005268f26102de79e01026bb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018854"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344206"
 ---
 # <a name="get-windowsupdateforbusinessconfiguration"></a>Abrufen von „windowsUpdateForBusinessConfiguration“
 
@@ -34,9 +35,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

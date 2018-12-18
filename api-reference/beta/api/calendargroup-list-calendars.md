@@ -1,12 +1,13 @@
 ---
 title: Kalender auflisten
 description: Mit dieser API können Sie eine Liste der zu einer Kalendergruppe gehörenden Kalender abrufen.
-ms.openlocfilehash: 40792ef7a7af1c9cd9155650315c3c5964df6733
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: a6cf89b6c5670659d5864496118d125d3c60a903
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059651"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336680"
 ---
 # <a name="list-calendars"></a>Kalender auflisten
 
@@ -50,7 +51,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 
 | Name          | Typ   | Beschreibung               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Erforderlich. |
+| Autorisierung | string | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 

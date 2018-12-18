@@ -1,12 +1,13 @@
 ---
 title: Liste androidWorkProfileGeneralDeviceConfigurations
 description: Listeneigenschaften und Beziehungen der AndroidWorkProfileGeneralDeviceConfiguration-Objekte.
-ms.openlocfilehash: 72f6f8f354d37d72ae1e206ef9b44d07960a1b32
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 22a1383c77a0f70f8892e81b1cf825c1b0469130
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065582"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337611"
 ---
 # <a name="list-androidworkprofilegeneraldeviceconfigurations"></a>Liste androidWorkProfileGeneralDeviceConfigurations
 
@@ -35,9 +36,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

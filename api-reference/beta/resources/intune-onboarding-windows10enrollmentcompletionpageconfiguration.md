@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windows10EnrollmentCompletionPageConfiguration
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 630adf40f62ca7b47594439c71951e3a6a85b2d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 975fd7adeb33a0fd3f2c638087558beca76551b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061526"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356567"
 ---
 # <a name="windows10enrollmentcompletionpageconfiguration-resource-type"></a>Ressourcentyp windows10EnrollmentCompletionPageConfiguration
 

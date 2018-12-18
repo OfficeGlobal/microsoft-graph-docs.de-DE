@@ -1,12 +1,13 @@
 ---
 title: Kontakt löschen
 description: Mit dieser API können Sie Kontakte löschen.
-ms.openlocfilehash: d81eb136702afd94537ea4651015ad6bbcab5450
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 17c82b895b1e2011c8efbd15fa9394cf6434fbd8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016355"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354222"
 ---
 # <a name="delete-contact"></a>Kontakt löschen
 
@@ -37,7 +38,7 @@ DELETE /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

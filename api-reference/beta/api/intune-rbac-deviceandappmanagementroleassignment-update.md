@@ -1,12 +1,13 @@
 ---
 title: DeviceAndAppManagementRoleAssignment aktualisieren
 description: Aktualisieren der Eigenschaften eines deviceAndAppManagementRoleAssignment-Objekts.
-ms.openlocfilehash: 4844d13c21e3371385531d43c1160cf34d7a1a50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 79c7f35a52f7d0d853a77ec4186a957a287ec3ed
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060771"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357253"
 ---
 # <a name="update-deviceandappmanagementroleassignment"></a>DeviceAndAppManagementRoleAssignment aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

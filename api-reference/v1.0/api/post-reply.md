@@ -1,12 +1,13 @@
 ---
 title: 'post: reply'
 description: 'Dient zum Antworten auf einen Beitrag und zum Hinzufügen eines neuen Beitrags zum angegebenen Thread in einer Gruppenunterhaltung. Sie können angeben '
-ms.openlocfilehash: eabee7d41261566401f006c0ff794876f1b2d378
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: d20d7411a2456d30fc5c45f93a194db5574f2672
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018559"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353788"
 ---
 # <a name="post-reply"></a>post: reply
 
@@ -29,7 +30,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

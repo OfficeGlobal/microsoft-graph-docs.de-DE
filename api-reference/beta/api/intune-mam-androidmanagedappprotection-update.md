@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „androidManagedAppProtection“
 description: Aktualisiert die Eigenschaften von Objekten des Typs androidManagedAppProtection.
-ms.openlocfilehash: 8b01a9b1a3d30a0f141185fa0dae423d345cd3cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d2d601e314dcb2b22d6d659361bc1e605ee7c00b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064085"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338290"
 ---
 # <a name="update-androidmanagedappprotection"></a>Aktualisieren von „androidManagedAppProtection“
 
@@ -34,9 +35,9 @@ PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtec
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

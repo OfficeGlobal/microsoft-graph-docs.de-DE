@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp outlookTask
 description: 'Ein Outlook-Element, das eine Arbeitsaufgabe überwachen kann. '
-ms.openlocfilehash: c197591d40b4c65e9a7ab5e047e9a93c522e6400
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 959e7ee7d6b1844d4b66b8ab53747e26aa91d492
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059125"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335231"
 ---
 # <a name="outlooktask-resource-type"></a>Ressourcentyp outlookTask
 

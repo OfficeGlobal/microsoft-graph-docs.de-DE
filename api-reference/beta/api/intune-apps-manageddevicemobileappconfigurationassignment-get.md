@@ -1,12 +1,13 @@
 ---
 title: managedDeviceMobileAppConfigurationAssignment abrufen
 description: Lesen von Eigenschaften und Beziehungen des managedDeviceMobileAppConfigurationAssignment-Objekts.
-ms.openlocfilehash: 91d4089c93f9490ed654572032a648ab03dce14f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 935a8559879aa0f697eaf304f8f65b446f9b2c5f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064541"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332949"
 ---
 # <a name="get-manageddevicemobileappconfigurationassignment"></a>managedDeviceMobileAppConfigurationAssignment abrufen
 
@@ -36,9 +37,9 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

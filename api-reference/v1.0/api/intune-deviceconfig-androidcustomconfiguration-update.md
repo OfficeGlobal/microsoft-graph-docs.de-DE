@@ -1,12 +1,13 @@
 ---
 title: androidCustomConfiguration aktualisieren
 description: Aktualisieren der Eigenschaften eines androidCustomConfiguration-Objekts.
-ms.openlocfilehash: 36b19923166ae808b1a7c0cb06126082b3bb2381
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4ed0f4eb37ebee3c6915dafe271a2827e7b39c3e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019267"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356021"
 ---
 # <a name="update-androidcustomconfiguration"></a>androidCustomConfiguration aktualisieren
 
@@ -32,9 +33,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

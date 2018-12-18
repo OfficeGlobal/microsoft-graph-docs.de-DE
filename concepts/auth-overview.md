@@ -1,12 +1,13 @@
 ---
 title: Abrufen von Zugriffstoken zum Aufrufen von Microsoft Graph
 description: 'Zum Aufrufen von Microsoft Graph muss Ihre App ein Zugriffstoken von Azure Active Directory (Azure AD) abrufen, dem Cloudidentitätsdienst von Microsoft. Das Zugriffstoken enthält Informationen (bzw. Ansprüche) zu Ihrer App und die Berechtigungen, über die es für die Ressourcen und APIs verfügt, die über Microsoft Graph bereitgestellt werden. Um ein Zugriffstoken abzurufen, muss Ihre App sich bei Azure AD authentifizieren können und entweder durch einen Benutzer oder einen Administrator zum Zugreifen auf die benötigten Microsoft Graph-Ressourcen autorisiert werden. '
-ms.openlocfilehash: 2dc05d2edf1e5096b525d880b7d363f2e98721b0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: jackson-woods
+ms.openlocfilehash: 2352802393d3e36c611dfab1d767e6bd76d69d8b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092155"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334300"
 ---
 # <a name="get-access-tokens-to-call-microsoft-graph"></a>Abrufen von Zugriffstoken zum Aufrufen von Microsoft Graph
 

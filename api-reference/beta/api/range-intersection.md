@@ -1,12 +1,13 @@
 ---
 title: 'Range: Intersection'
 description: Ruft das Bereichsobjekt ab, das die rechteckige Schnittmenge der angegebenen Bereiche darstellt.
-ms.openlocfilehash: f1ebed2e29cb12cb3c81fbabc56c9c703b6350c4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 0ba9767c3c7d30ee5746b5a6723fd8103c1b8533
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061673"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344555"
 ---
 # <a name="range-intersection"></a>Range: Intersection
 

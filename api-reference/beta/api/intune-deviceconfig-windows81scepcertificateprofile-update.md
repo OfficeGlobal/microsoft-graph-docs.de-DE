@@ -1,12 +1,13 @@
 ---
 title: Windows81SCEPCertificateProfile aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines windows81SCEPCertificateProfile-Objekts.
-ms.openlocfilehash: 5714179b9e54d32d48dece053f5bb6e7fa8eaee7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 39571d85a1eb7d9a2d5d0a18f178fb2cb1be7e02
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061087"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338220"
 ---
 # <a name="update-windows81scepcertificateprofile"></a>Windows81SCEPCertificateProfile aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

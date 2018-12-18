@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „windows10EndpointProtectionConfiguration“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs windows10EndpointProtectionConfiguration.
-ms.openlocfilehash: e30091162446a8821d6cae9422e28a38024fcda6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 51cfade0d1e04a72cf57e73f967048548b621224
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060161"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338451"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>Aktualisieren von „windows10EndpointProtectionConfiguration“
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

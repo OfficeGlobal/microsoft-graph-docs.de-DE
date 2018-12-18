@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windows81CertificateProfileBase
 description: Gerätekonfiguration.
-ms.openlocfilehash: bbde7fda3116d78635e8a7103c0de22ac395011d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 673db07c56973f8bd44d27904c588327dffef631
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064282"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341034"
 ---
 # <a name="windows81certificateprofilebase-resource-type"></a>Ressourcentyp windows81CertificateProfileBase
 

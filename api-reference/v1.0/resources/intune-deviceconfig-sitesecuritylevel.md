@@ -1,12 +1,13 @@
 ---
 title: SiteSecurityLevel Enum-Typ
 description: Mögliche Werte für die Website Sicherheitsstufe.
-ms.openlocfilehash: 3750cb841c1ea8df470863e12c7ab5c25cb295e8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bfb429ec1b409e2ccc79d2b0cd029cd06d517b5b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018804"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335588"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>SiteSecurityLevel Enum-Typ
 
@@ -14,7 +15,7 @@ ms.locfileid: "27018804"
 
 Mögliche Werte für die Website Sicherheitsstufe.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
 |Niedrig|1|Niedrig|

@@ -1,12 +1,13 @@
 ---
 title: Abrufen von windowsAppX
 description: Lesen Sie Eigenschaften und Beziehungen des WindowsAppX-Objekts.
-ms.openlocfilehash: 53f42d37d45c42f6b4f65637a7da9b9f5a885826
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ee4ea8652acd1c64d9ee78e1ee22569c849c8220
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065179"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338885"
 ---
 # <a name="get-windowsappx"></a>Abrufen von windowsAppX
 
@@ -38,9 +39,9 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

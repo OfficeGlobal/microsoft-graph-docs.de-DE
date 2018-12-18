@@ -1,12 +1,13 @@
 ---
 title: Erstellen von macOSScepCertificateProfile
 description: Erstellen eines neuen MacOSScepCertificateProfile-Objekts.
-ms.openlocfilehash: a0dfb409217ce38fca9b966c642c09ff89887f61
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 30d6ea30d2fb7eaa9a3603f46143d8015e593eeb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065227"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355356"
 ---
 # <a name="create-macosscepcertificateprofile"></a>Erstellen von macOSScepCertificateProfile
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
