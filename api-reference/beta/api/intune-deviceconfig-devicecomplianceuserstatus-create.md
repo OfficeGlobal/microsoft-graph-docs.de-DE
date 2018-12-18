@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „deviceComplianceUserStatus“
 description: Diese Methode erstellt ein neues Objekt des Typs deviceComplianceUserStatus.
-ms.openlocfilehash: 03b2b221ba41c2b8812c6cb0d4e6ec9ab711b583
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 417c6a2e87e274119fdbb480a7a2c8204dc81d3f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064940"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328175"
 ---
 # <a name="create-devicecomplianceuserstatus"></a>Erstellen von „deviceComplianceUserStatus“
 
@@ -34,9 +35,9 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userS
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

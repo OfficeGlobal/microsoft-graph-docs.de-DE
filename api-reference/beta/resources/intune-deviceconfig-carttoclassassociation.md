@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp cartToClassAssociation
 description: CartToClassAssociation Schulungsräume Gerät Toilettengebäude zuzuordnen.
-ms.openlocfilehash: f177771cf6147771fc051d05e6fbb49d95b9feeb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f712759d82b5edf7d364658211f1f2142fb6eb87
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061215"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328280"
 ---
 # <a name="carttoclassassociation-resource-type"></a>Ressourcentyp cartToClassAssociation
 

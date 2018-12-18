@@ -1,12 +1,13 @@
 ---
 title: ImportedDeviceIdentity löschen
 description: Löscht eine ImportedDeviceIdentity.
-ms.openlocfilehash: 488eaaac6cc4b38be133b5e58e2d888123cc6c70
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e747e2331f12792c278a1bdc717527ff3222413d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062443"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338136"
 ---
 # <a name="delete-importeddeviceidentity"></a>ImportedDeviceIdentity löschen
 
@@ -34,9 +35,9 @@ DELETE /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

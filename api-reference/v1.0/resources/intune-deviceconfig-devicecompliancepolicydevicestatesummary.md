@@ -1,12 +1,13 @@
 ---
 title: deviceCompliancePolicyDeviceStateSummary-Ressourcentyp
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 78bf38263dd203f8e9a4db359f29d0481b7a26c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 229a03830fec065cbed9861ad1db07418c3fbfa8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016025"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329015"
 ---
 # <a name="devicecompliancepolicydevicestatesummary-resource-type"></a>deviceCompliancePolicyDeviceStateSummary-Ressourcentyp
 

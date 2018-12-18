@@ -1,12 +1,13 @@
 ---
 title: IosEducationDeviceConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines IosEducationDeviceConfiguration-Objekts.
-ms.openlocfilehash: 071d3162ca001eb3d52d75b5b6934c44df691bf0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c934fa3c6274ca6b0149958cde9e2e231c2236f1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063578"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325123"
 ---
 # <a name="update-ioseducationdeviceconfiguration"></a>IosEducationDeviceConfiguration aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

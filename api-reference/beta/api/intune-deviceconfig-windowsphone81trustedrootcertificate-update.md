@@ -1,12 +1,13 @@
 ---
 title: WindowsPhone81TrustedRootCertificate aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines windowsPhone81TrustedRootCertificate-Objekts.
-ms.openlocfilehash: f2daf3ce56b1a2a0308dcea58430e2ca5d6a2527
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 052bf31f8e0c20231ca657ec5ebb99eb303f4fcc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061057"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327839"
 ---
 # <a name="update-windowsphone81trustedrootcertificate"></a>WindowsPhone81TrustedRootCertificate aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

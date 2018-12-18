@@ -1,12 +1,13 @@
 ---
 title: Liste iosPkcsCertificateProfiles
 description: Listeneigenschaften und Beziehungen der IosPkcsCertificateProfile-Objekte.
-ms.openlocfilehash: 409c30373ed2e8d709a607ff6baa636f5fd23002
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 27e2668ef5af27920def194e3fa488fbdb337156
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058461"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329862"
 ---
 # <a name="list-iospkcscertificateprofiles"></a>Liste iosPkcsCertificateProfiles
 
@@ -35,9 +36,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

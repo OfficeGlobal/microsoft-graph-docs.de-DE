@@ -1,12 +1,13 @@
 ---
 title: 'Rufen Sie: ChangeScreenSharingRole'
 description: Starten Sie und beenden Sie die Freigabe Bildschirm in den Anruf. Diese API wird verwendet, um Bildschirm Freigeben von Inhalten mit den Teilnehmern für einen Anruf oder eine Besprechung zu ermöglichen.
-ms.openlocfilehash: f0aa69b43813bd248048ad1bd965dfbc4afc012b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 4b4c7e0afa452bef414dd466086463aa16c9d9cf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061547"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328364"
 ---
 # <a name="call-changescreensharingrole"></a>Rufen Sie: ChangeScreenSharingRole
 

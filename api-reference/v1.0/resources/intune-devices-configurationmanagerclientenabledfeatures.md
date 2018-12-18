@@ -1,12 +1,13 @@
 ---
 title: configurationManagerClientEnabledFeatures-Ressourcentyp
 description: Im Konfigurations-Manager-Client aktivierte Features
-ms.openlocfilehash: 54d5d40a50b2946fec1c69c619dc76bec1f32502
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fe975f2e8d537d1231a89eb9f2a44cdd8258fd1a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018812"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325144"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>configurationManagerClientEnabledFeatures-Ressourcentyp
 

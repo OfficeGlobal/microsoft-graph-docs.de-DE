@@ -1,12 +1,13 @@
 ---
 title: AppLockerApplicationControlType Enum-Typ
 description: Mögliche Werte Anwendungstypen AppLocker-Steuerelement
-ms.openlocfilehash: 150e3daa6b8deb2d1e17c3ea7caf345ba39446f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0d6190170d6f6695a3303047f9ccb193afd248f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060559"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330205"
 ---
 # <a name="applockerapplicationcontroltype-enum-type"></a>AppLockerApplicationControlType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27060559"
 
 Mögliche Werte Anwendungstypen AppLocker-Steuerelement
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Gerät Standardwert, keine Anwendung Steuerelementtyp ausgewählt.|
 |enforceComponentsAndStoreApps|1|Windows-Komponente und Store-apps zu erzwingen.|

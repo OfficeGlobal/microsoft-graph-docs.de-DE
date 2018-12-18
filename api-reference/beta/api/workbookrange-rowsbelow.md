@@ -1,12 +1,13 @@
 ---
 title: 'workbookRange: rowsBelow'
 description: Ruft eine bestimmte Anzahl von Zeilen unterhalb eines gegebenen Bereichs ab.
-ms.openlocfilehash: 530526a4a443d8a6d2985c9dea0724ed3f8c5b87
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: c6b7641dbc784c3c3fe7522308729877b7eb2ff9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059174"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337534"
 ---
 # <a name="workbookrange-rowsbelow"></a>workbookRange: rowsBelow
 

@@ -1,12 +1,13 @@
 ---
 title: ChartPointsCollection auflisten
 description: Dient zum Abrufen einer Liste von ChartPoint-Objekten.
-ms.openlocfilehash: d140f9cc3c24d92de47509654f01a839e2ce5828
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 1541e93505da09cbadb4434e4d24133f59a13de9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061932"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328217"
 ---
 # <a name="list-chartpointscollection"></a>ChartPointsCollection auflisten
 

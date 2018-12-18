@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „macOSGeneralDeviceConfiguration“
 description: Diese Methode erstellt ein neues Objekt des Typs macOSGeneralDeviceConfiguration.
-ms.openlocfilehash: f3f7c3d30c4b78eb7ce3652e6b343a310dcb03b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 38d1ba01fda9b568a37779e6ff20c75172eb9d69
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059860"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324941"
 ---
 # <a name="create-macosgeneraldeviceconfiguration"></a>Erstellen von „macOSGeneralDeviceConfiguration“
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp macOSWiFiConfiguration
 description: Durch die Konfigurationen in dieses Profil bereitstellen können Sie das Gerät Mac OS Verbindung zum gewünschten Wi-Fi-Endpunkt anweisen. Durch Angeben von erwartet, dass die Authentifizierungstypen-Methode und der Sicherheit durch Wi-Fi-Endpunkt, dass Sie die Wi-Fi-Verbindung nahtlos für Endbenutzer vornehmen können.
-ms.openlocfilehash: 79dd9cc4b9e98bb0aa3d65a2d15afb6867ecee63
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c2d9a8936d971b1a76491947131de59da16bdbd1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064053"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324171"
 ---
 # <a name="macoswificonfiguration-resource-type"></a>Ressourcentyp macOSWiFiConfiguration
 

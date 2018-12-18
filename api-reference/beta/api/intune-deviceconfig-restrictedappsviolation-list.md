@@ -1,12 +1,13 @@
 ---
 title: Liste restrictedAppsViolations
 description: Listeneigenschaften und Beziehungen der RestrictedAppsViolation-Objekte.
-ms.openlocfilehash: 9fdc7161ee9b34fe2bb8ac3bf59d8ad81d4ec348
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7c39927b681953296bb23715457a7353151e58b6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059179"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327818"
 ---
 # <a name="list-restrictedappsviolations"></a>Liste restrictedAppsViolations
 
@@ -34,9 +35,9 @@ GET /deviceManagement/deviceConfigurationRestrictedAppsViolations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
