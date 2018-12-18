@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „defaultManagedAppProtection“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs defaultManagedAppProtection.
-ms.openlocfilehash: a31e480bb057774db12420dbfc346d87b41df030
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 05ef6bbfa2fac0dc01d86b2ea3cd8dbf7a51781b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018268"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344373"
 ---
 # <a name="update-defaultmanagedappprotection"></a>Aktualisieren von „defaultManagedAppProtection“
 
@@ -32,9 +33,9 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

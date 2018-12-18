@@ -1,12 +1,13 @@
 ---
 title: CalendarGroup abrufen
 description: Mit dieser API können Sie die Eigenschaften und Beziehungen eines Kalendergruppenobjekts abrufen.
-ms.openlocfilehash: 0fdaefb75e2b93f84e2f7351b3067fdad2e01c58
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 28d59eeabbcf5dce70fc5ef5814a706d7955fa2a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059644"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343323"
 ---
 # <a name="get-calendargroup"></a>CalendarGroup abrufen
 
@@ -43,7 +44,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 
 | Name          | Typ   | Beschreibung               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Erforderlich. |
+| Autorisierung | string | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 

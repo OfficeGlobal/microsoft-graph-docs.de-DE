@@ -1,12 +1,13 @@
 ---
 title: IosEducationDeviceConfiguration löschen
 description: Löscht eine IosEducationDeviceConfiguration.
-ms.openlocfilehash: 1c909abc7e3b69f6979cf84a7d4725e1cbc69bd5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6cb888885a3c38660e79547587e2cc20a4533539
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063567"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338556"
 ---
 # <a name="delete-ioseducationdeviceconfiguration"></a>IosEducationDeviceConfiguration löschen
 
@@ -36,9 +37,9 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

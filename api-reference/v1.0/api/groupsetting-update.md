@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren einer Gruppeneinstellung
 description: Mit dieser API können Sie die Eigenschaften des jeweils angegebenen Gruppeneinstellungsobjekts aktualisieren.
-ms.openlocfilehash: b3f667de4fc49dfc734298262512bbdc3ddd8639
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 07ab3114ce4ed5d8d932ff9183c62823ddfcf632
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27015965"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339837"
 ---
 # <a name="update-a-group-setting"></a>Aktualisieren einer Gruppeneinstellung
 

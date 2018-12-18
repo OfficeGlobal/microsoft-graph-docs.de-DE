@@ -1,12 +1,13 @@
 ---
 title: Windows10EasEmailProfileConfiguration löschen
 description: Löscht eine windows10EasEmailProfileConfiguration.
-ms.openlocfilehash: 4664e10fd6c8e3ef4830d35c66824736ef4abac8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ca709bc7a1d2ffde0c0eb3f4da9188d98681906b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062470"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338339"
 ---
 # <a name="delete-windows10easemailprofileconfiguration"></a>Windows10EasEmailProfileConfiguration löschen
 
@@ -36,9 +37,9 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

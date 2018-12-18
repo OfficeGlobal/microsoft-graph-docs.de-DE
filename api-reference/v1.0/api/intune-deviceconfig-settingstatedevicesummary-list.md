@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „settingStateDeviceSummary“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs settingStateDeviceSummary auf.
-ms.openlocfilehash: 390af97482f0499923cad7850801eb2181de47ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4d2cb1153901bc934ae0b1f57c3d419a83ce2953
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019886"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342357"
 ---
 # <a name="list-settingstatedevicesummaries"></a>Auflisten von „settingStateDeviceSummary“
 
@@ -33,9 +34,9 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/device
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

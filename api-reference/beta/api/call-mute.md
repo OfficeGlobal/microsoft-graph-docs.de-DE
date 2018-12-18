@@ -1,12 +1,13 @@
 ---
 title: 'Rufen Sie: stumm schalten'
 description: Ermöglicht der Anwendung selbst stumm geschaltet werden sollen.
-ms.openlocfilehash: e5fb28a7d1c72182b6710cc0adda269156cbb3a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 54de4aa598500d1effa1c66c74e5809ad3570959
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061252"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341587"
 ---
 # <a name="call-mute"></a>Rufen Sie: stumm schalten
 

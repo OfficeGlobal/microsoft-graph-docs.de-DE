@@ -1,12 +1,13 @@
 ---
 title: Kalender erstellen
 description: Verwenden Sie diese API zum Erstellen eines neuen Kalenders für einen Benutzer.
-ms.openlocfilehash: 7cb1dbf60cacfb86ee79d9cf9d344dae878fd1f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 320a34a22db3e8467af5c30c79ce41c6d18fc05b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059796"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339928"
 ---
 # <a name="create-calendar"></a>Kalender erstellen
 
@@ -28,7 +29,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /users/{id | userPrincipalName}/calendars
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

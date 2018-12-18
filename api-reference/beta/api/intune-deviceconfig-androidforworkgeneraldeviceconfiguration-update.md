@@ -1,12 +1,13 @@
 ---
 title: AndroidForWorkGeneralDeviceConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidForWorkGeneralDeviceConfiguration-Objekts.
-ms.openlocfilehash: 83fba19cabdfc015e9e6dbde00187f7406881973
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 09f4dd4d17e00ec3515144ad925beeab971ac5a3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062802"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338528"
 ---
 # <a name="update-androidforworkgeneraldeviceconfiguration"></a>AndroidForWorkGeneralDeviceConfiguration aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

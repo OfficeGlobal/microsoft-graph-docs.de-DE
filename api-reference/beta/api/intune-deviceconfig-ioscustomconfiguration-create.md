@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „iosCustomConfiguration“
 description: Diese Methode erstellt ein neues Objekt des Typs iosCustomConfiguration.
-ms.openlocfilehash: 65cca8bdb096ba87bcf212bce07fa054e1a29dad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e22a670316ca7ffb4216c45cab5e8f3e6d7f3d65
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061829"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343309"
 ---
 # <a name="create-ioscustomconfiguration"></a>Erstellen von „iosCustomConfiguration“
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

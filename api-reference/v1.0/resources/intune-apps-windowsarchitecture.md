@@ -1,12 +1,13 @@
 ---
 title: WindowsArchitecture Enum-Typ
 description: Enthält Eigenschaften für Windows-Architektur.
-ms.openlocfilehash: 1f8cd49cb34c8bfb92476786e6d8d567469fec96
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c5559e47fad5e5490f601de00568b4d8ae0da827
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019459"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339711"
 ---
 # <a name="windowsarchitecture-enum-type"></a>WindowsArchitecture Enum-Typ
 
@@ -14,9 +15,9 @@ ms.locfileid: "27019459"
 
 Enthält Eigenschaften für Windows-Architektur.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
-|n/v|0|Keine Flags festgelegt.|
+|Keine|0|Keine Flags festgelegt.|
 |x86|1|Unabhängig davon, ob die X86 Windows Architekturtyp wird unterstützt.|
 |x64|2|Unabhängig davon, ob die X64 Windows Architekturtyp wird unterstützt.|
 |ARM|4|Unabhängig davon, ob der Arm-Windows-Architektur-Typ unterstützt wird.|

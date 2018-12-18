@@ -1,12 +1,13 @@
 ---
 title: Abrufen von educationAssignment
 description: " Lehrer können alle Zuordnungen in einer Klasse finden Sie unter."
-ms.openlocfilehash: 9819576d7194a15d47f4ecc2a1bda5fbf7d61751
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 384f99a48340e51c6d919b96471f31c9fbff27a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058012"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341909"
 ---
 # <a name="get-educationassignment"></a>Abrufen von educationAssignment
 
@@ -33,7 +34,7 @@ GET /education/classes/{id}/assignments/{id}
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

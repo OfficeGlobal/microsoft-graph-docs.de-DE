@@ -1,12 +1,13 @@
 ---
 title: 'Table: clearFilters'
 description: Löscht alle Filter, die derzeit in der Tabelle verwendet werden.
-ms.openlocfilehash: a7f560fad24727e1af49cb69ce754036f83b4345
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: c50d963c97845f09351bfb680d019dfefb7e7bd1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016961"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341741"
 ---
 # <a name="table-clearfilters"></a>Table: clearFilters
 

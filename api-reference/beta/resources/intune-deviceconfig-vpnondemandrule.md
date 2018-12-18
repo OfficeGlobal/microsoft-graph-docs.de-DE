@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp vpnOnDemandRule
 description: VPN-On-Demand Regeldefinition.
-ms.openlocfilehash: 366dd373d31b04d4f245c2394a7a6e476710cf84
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 72b85971dc9c613026bb9e720ca55165845e0c9e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060203"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352192"
 ---
 # <a name="vpnondemandrule-resource-type"></a>Ressourcentyp vpnOnDemandRule
 

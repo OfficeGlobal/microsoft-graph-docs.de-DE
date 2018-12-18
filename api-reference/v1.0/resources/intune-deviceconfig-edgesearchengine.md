@@ -1,12 +1,13 @@
 ---
 title: edgeSearchEngine-Ressourcentyp
 description: Ermöglicht es IT-Administratoren, eine vordefinierte standardmäßige Suchmaschine für MDM-gesteuerte Geräte festzulegen.
-ms.openlocfilehash: 4da5008eda31bb393ed25048c5d94724d2174e3f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0c49780ddd7d2174116f7a0821fa98681d3e5d2a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017735"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339732"
 ---
 # <a name="edgesearchengine-resource-type"></a>edgeSearchEngine-Ressourcentyp
 

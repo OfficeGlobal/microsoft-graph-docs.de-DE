@@ -1,12 +1,13 @@
 ---
 title: targetedManagedAppConfiguration-Ressourcentyp
 description: Konfiguration für das Übermitteln eines Satzes benutzerdefinierter Einstellungen an alle Benutzer in der Zielsicherheitsgruppe.
-ms.openlocfilehash: d854c632c03d4ffbfe85b24b8dcf27f9de2f4eff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ab50d04c6c04ff616019ce5ca42f4452fe11494
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019230"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339648"
 ---
 # <a name="targetedmanagedappconfiguration-resource-type"></a>targetedManagedAppConfiguration-Ressourcentyp
 

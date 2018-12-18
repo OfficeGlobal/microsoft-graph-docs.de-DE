@@ -1,12 +1,13 @@
 ---
 title: EducationAssignmentResource aktualisieren
 description: 'Aktualisieren Sie die Eigenschaften der Ressource einer Zuordnung zugeordnet. Zuordnungsfeld Resource-Objekten können nur Lehrer in einer Klasse geändert werden.  '
-ms.openlocfilehash: 761dc4f656a41d8d984443b17d87b1b0961a2a8b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 68c8f471462c489e9e655a1642731be3a8700ba4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059028"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343218"
 ---
 # <a name="update-educationassignmentresource"></a>EducationAssignmentResource aktualisieren
 
@@ -29,7 +30,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 PATCH /education/classes/{id}/assignments/{id}/resources/{id}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

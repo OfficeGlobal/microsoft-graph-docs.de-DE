@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp educationSynchronizationDataProvider
 description: 'SIS Quellschema darstellt. Dadurch wird das System wissen, wie Sie die eingehenden Daten das Schema Azure Active Directory (AD Azure) zuordnen. '
-ms.openlocfilehash: 621df58f19e1b266825b8e12edfbd9c09493efd1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 04cbd38a158475c3a039a755ff885a6796ae3bf1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062997"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339886"
 ---
 # <a name="educationsynchronizationdataprovider-resource-type"></a>Ressourcentyp educationSynchronizationDataProvider
 

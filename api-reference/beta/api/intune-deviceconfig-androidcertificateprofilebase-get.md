@@ -1,12 +1,13 @@
 ---
 title: Abrufen von androidCertificateProfileBase
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidCertificateProfileBase-Objekts.
-ms.openlocfilehash: 78ffcf7cf029f9bb4f4326e202d83eca1148198a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c2b0ef9f1dd5e4dd608b0fb7042af86d68ed2c4c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059245"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340180"
 ---
 # <a name="get-androidcertificateprofilebase"></a>Abrufen von androidCertificateProfileBase
 
@@ -39,9 +40,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

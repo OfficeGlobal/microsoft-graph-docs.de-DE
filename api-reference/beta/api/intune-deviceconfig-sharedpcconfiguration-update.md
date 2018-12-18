@@ -1,12 +1,13 @@
 ---
 title: sharedPCConfiguration aktualisieren
 description: Aktualisiert die Eigenschaften von Objekten des Typs sharedPCConfiguration.
-ms.openlocfilehash: 94b68e8d81bb73db979f1032fbc2c4efcdd668f2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f9fbaf72531b130e41c01609e4d28eb35a7d5d84
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062518"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338731"
 ---
 # <a name="update-sharedpcconfiguration"></a>sharedPCConfiguration aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

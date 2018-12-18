@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtection abrufen
 description: Liest die Eigenschaften und Beziehungen des windowsInformationProtection-Objekts auf.
-ms.openlocfilehash: ee829f128f7335f0a827486e2b1135e0ef2b500c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 99eaaa0ae6decd32ee95097c435a5ab6313cdb31
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064664"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341223"
 ---
 # <a name="get-windowsinformationprotection"></a>windowsInformationProtection abrufen
 
@@ -38,9 +39,9 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

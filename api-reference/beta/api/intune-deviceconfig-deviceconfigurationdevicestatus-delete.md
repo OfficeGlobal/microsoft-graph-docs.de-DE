@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationDeviceStatus löschen
 description: Löscht ein deviceConfigurationDeviceStatus-Objekt.
-ms.openlocfilehash: f3ee5b0c1cde88dd0416a8938bcc957a9773f0a4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 538b0a66df7fd9c214a5b136465c866ecf41c4dd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065396"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353242"
 ---
 # <a name="delete-deviceconfigurationdevicestatus"></a>deviceConfigurationDeviceStatus löschen
 
@@ -42,9 +43,9 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

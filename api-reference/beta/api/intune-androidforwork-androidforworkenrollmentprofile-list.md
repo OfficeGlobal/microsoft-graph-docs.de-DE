@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „androidForWorkEnrollmentProfile“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs androidForWorkEnrollmentProfile auf.
-ms.openlocfilehash: b12e93a6895ff9b7245082f3b2c3cfbe3f940461
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f01037e67a87ee38d6458dd8f2612473970e6680
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061507"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340789"
 ---
 # <a name="list-androidforworkenrollmentprofiles"></a>Auflisten von „androidForWorkEnrollmentProfile“
 
@@ -34,9 +35,9 @@ GET /deviceManagement/androidForWorkEnrollmentProfiles
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: 'Rufen Sie: ablehnen'
 description: Ablehnen eines eingehenden Anrufs an.
-ms.openlocfilehash: 4731d377021871569fcec895af832aeea66b3431
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 2516ead8d9fa158192a0d9c7c02ac8adb44f764a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061925"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343456"
 ---
 # <a name="call-reject"></a>Rufen Sie: ablehnen
 

@@ -1,12 +1,13 @@
 ---
 title: 'ChartCollection: ItemAt'
 description: Ruft ein Diagramm anhand seiner Position in der Sammlung ab.
-ms.openlocfilehash: dd685859be6b179e074d65e952b5dbda4bdbc7d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 0c32068abe2ccbea0a093d2a973bfd6dbf05e938
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019152"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341687"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 

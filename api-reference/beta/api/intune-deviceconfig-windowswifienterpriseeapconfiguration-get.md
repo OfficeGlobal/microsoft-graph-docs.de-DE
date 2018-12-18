@@ -1,12 +1,13 @@
 ---
 title: Abrufen von windowsWifiEnterpriseEAPConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des WindowsWifiEnterpriseEAPConfiguration-Objekts.
-ms.openlocfilehash: 8d4b718bdae430e21386a3fa035fe153340acfa6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f46acbf55be1f03d902760cfb523a7f3ce321da4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062133"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339984"
 ---
 # <a name="get-windowswifienterpriseeapconfiguration"></a>Abrufen von windowsWifiEnterpriseEAPConfiguration
 
@@ -38,9 +39,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

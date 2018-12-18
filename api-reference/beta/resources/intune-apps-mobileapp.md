@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp „mobileApp“
 description: Eine abstrakte Klasse, die grundlegende Eigenschaften von mobilen Intune-Apps enthält
-ms.openlocfilehash: 1c3c573d0802cd937cdb44d9a2fdacf5cdbc6e56
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e07f3d3c103ec5c6b2c03205f1d7ad5ef5cf2d09
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064673"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338955"
 ---
 # <a name="mobileapp-resource-type"></a>Ressourcentyp „mobileApp“
 

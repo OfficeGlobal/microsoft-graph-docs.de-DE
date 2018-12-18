@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „deviceAndAppManagementRoleAssignment“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs deviceAndAppManagementRoleAssignment auf.
-ms.openlocfilehash: 577b7b06b9c0017a40c3537e3e08636309458691
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c224d3c094330d948c2ce30a2213044a77a36428
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063369"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341895"
 ---
 # <a name="list-deviceandappmanagementroleassignments"></a>Auflisten von „deviceAndAppManagementRoleAssignment“
 
@@ -34,9 +35,9 @@ GET /deviceManagement/roleAssignments
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

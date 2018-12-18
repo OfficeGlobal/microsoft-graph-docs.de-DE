@@ -1,12 +1,13 @@
 ---
 title: iosStoreApp abrufen
 description: Lesen von Eigenschaften und Beziehungen des iosStoreApp-Objekts.
-ms.openlocfilehash: 39508db2bb510d6a708e0c099d7a767513ef83ba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dfe25e6b5f57ea8e862d9a9c86d40aa35ec0ca05
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016019"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340369"
 ---
 # <a name="get-iosstoreapp"></a>iosStoreApp abrufen
 
@@ -34,9 +35,9 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

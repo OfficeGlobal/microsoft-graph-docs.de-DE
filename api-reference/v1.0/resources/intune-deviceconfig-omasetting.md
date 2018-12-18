@@ -1,12 +1,13 @@
 ---
 title: omaSetting-Ressourcentyp
 description: Definition der OMA-Einstellungen.
-ms.openlocfilehash: 7ef8617ca4ce10ebeabf0d7a4655688e58925646
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 564912635fbcd5e2846965d3546a3830119db252
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017402"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340887"
 ---
 # <a name="omasetting-resource-type"></a>omaSetting-Ressourcentyp
 

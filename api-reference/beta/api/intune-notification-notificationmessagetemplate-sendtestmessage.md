@@ -1,12 +1,13 @@
 ---
 title: sendTestMessage-Aktion
 description: Sendet eine Testnachricht unter Verwendung des für das Standardgebietsschema festgelegten Objekts des Typs „notificationMessageTemplate“.
-ms.openlocfilehash: e64a3f6e392bf05c55287a4388019bbb8c8f2bbd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d6c39c74b570d78acc0d08bca20f90bae9b089b4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061405"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342371"
 ---
 # <a name="sendtestmessage-action"></a>sendTestMessage-Aktion
 
@@ -34,9 +35,9 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

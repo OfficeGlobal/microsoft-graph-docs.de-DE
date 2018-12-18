@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windows10VpnConfiguration
 description: Durch die Konfigurationen in dieses Profil bereitstellen können Sie das Windows-10-Gerät (desktop oder mobilen) zur gewünschten Endpunkt für VPN-Verbindung anweisen. Durch Angeben von erwartet die Authentifizierungstypen-Methode und der Sicherheit durch VPN-Endpunkt, dass Sie die VPN-Verbindung nahtlos für Endbenutzer vornehmen können.
-ms.openlocfilehash: 37e4c9cb18aefb81a0d6d8df3e7f6a6f1c298181
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1dbbdb5a7065214ab6a290215f2c6016f8ad74bb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058736"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340698"
 ---
 # <a name="windows10vpnconfiguration-resource-type"></a>Ressourcentyp windows10VpnConfiguration
 

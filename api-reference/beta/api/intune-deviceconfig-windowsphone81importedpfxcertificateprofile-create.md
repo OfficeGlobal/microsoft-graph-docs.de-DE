@@ -1,12 +1,13 @@
 ---
 title: Erstellen von windowsPhone81ImportedPFXCertificateProfile
 description: Erstellen eines neuen windowsPhone81ImportedPFXCertificateProfile-Objekts.
-ms.openlocfilehash: 1f2cc1865b136c5a3727b16a78efdb276beb7c3d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 925bfb3ded68140a41cce60c1907c3fe91725569
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063803"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350547"
 ---
 # <a name="create-windowsphone81importedpfxcertificateprofile"></a>Erstellen von windowsPhone81ImportedPFXCertificateProfile
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

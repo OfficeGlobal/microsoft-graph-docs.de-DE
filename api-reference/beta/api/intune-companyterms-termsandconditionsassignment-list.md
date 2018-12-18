@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „termsAndConditionsAssignment“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs termsAndConditionsAssignment auf.
-ms.openlocfilehash: 79a8533a556cfc78944948403f2cfa533284c748
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8f32698a82447e18b6086f565e0acf2f07055662
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065003"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340236"
 ---
 # <a name="list-termsandconditionsassignments"></a>Auflisten von „termsAndConditionsAssignment“
 
@@ -34,9 +35,9 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

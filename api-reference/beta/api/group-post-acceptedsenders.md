@@ -1,12 +1,13 @@
 ---
 title: acceptedSender erstellen
 description: Fügt einen neuen Benutzer oder eine neue Gruppe zur acceptedSender-Liste hinzu.
-ms.openlocfilehash: 7f58f1919ca592fd2ba00e091d714f020e81a6bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: bdf7eee53c16089685991334ce839abb4b3cadc0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063640"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338745"
 ---
 # <a name="create-acceptedsender"></a>acceptedSender erstellen
 
@@ -31,7 +32,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /groups/{id}/acceptedSenders/$ref
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

@@ -1,12 +1,13 @@
 ---
 title: Erstellen von windowsDomainJoinConfiguration
 description: Erstellen eines neuen WindowsDomainJoinConfiguration-Objekts.
-ms.openlocfilehash: 8069dfac727ee24d96f72875a4cec19fa42b8baa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d88dc21b8e94cf26794738b9bdb4cfe8b1fc4a3f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065461"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338759"
 ---
 # <a name="create-windowsdomainjoinconfiguration"></a>Erstellen von windowsDomainJoinConfiguration
 
@@ -37,9 +38,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: IosLobAppProvisioningConfigurationAssignment aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines IosLobAppProvisioningConfigurationAssignment-Objekts.
-ms.openlocfilehash: d58f10d47a27b89cd64d53cefcfb849fa5fd1ce9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0212d357ceee946e8515a5143ffd7bf7307a7773
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064532"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338878"
 ---
 # <a name="update-ioslobappprovisioningconfigurationassignment"></a>IosLobAppProvisioningConfigurationAssignment aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

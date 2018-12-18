@@ -1,12 +1,13 @@
 ---
 title: roleDefinition aktualisieren
 description: Aktualisiert die Eigenschaften von Objekten des Typs roleDefinition.
-ms.openlocfilehash: debf63b5d0b7116a1e8d1f9274868d97c3cb8931
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6629467c1756192b0569625b0e684ada0b6b8ae4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058776"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343190"
 ---
 # <a name="update-roledefinition"></a>roleDefinition aktualisieren
 
@@ -35,9 +36,9 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

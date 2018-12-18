@@ -1,12 +1,13 @@
 ---
 title: Gruppe löschen
 description: Löscht eine Gruppe.
-ms.openlocfilehash: 92a15366fefb6ab70c45f664daa28b75bcea5891
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: ba159e5ce603d1da75b424f69a01f7bf8a3b2332
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061178"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341867"
 ---
 # <a name="delete-group"></a>Gruppe löschen
 
@@ -34,7 +35,7 @@ DELETE /groups/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp activeDirectoryWindowsAutopilotDeploymentProfile
 description: Windows Autopilot Bereitstellung Benutzerprofil
-ms.openlocfilehash: dbb063424bd4ef482c8b24ebd21287afa46491ad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 65f3708fc59b3f9a125423e254285e825f95502f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065551"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340145"
 ---
 # <a name="activedirectorywindowsautopilotdeploymentprofile-resource-type"></a>Ressourcentyp activeDirectoryWindowsAutopilotDeploymentProfile
 

@@ -1,12 +1,13 @@
 ---
 title: ChartDataLabels-Ressourcentyp
 description: Stellt eine Sammlung aller Datenbeschriftungen an einem Diagrammpunkt dar.
-ms.openlocfilehash: f8cb4310ab9ca2e59325fbc4bd255ae161cc7892
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 39c95d0849d398df7d57f676cc392c157e6f43f5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016350"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339053"
 ---
 # <a name="chartdatalabels-resource-type"></a>ChartDataLabels-Ressourcentyp
 

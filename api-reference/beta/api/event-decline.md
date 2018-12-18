@@ -1,12 +1,13 @@
 ---
 title: 'event: decline'
 description: Einladung auf das angegebene Ereignis in einem Benutzerkalender abzulehnen.
-ms.openlocfilehash: 7012644f28dd6e1172ba8f71b58d6905fe62c1d2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 28ba5aab62c7ffff1e3775d346501ea362bb5e9e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059922"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342007"
 ---
 # <a name="event-decline"></a>event: decline
 
@@ -50,7 +51,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext

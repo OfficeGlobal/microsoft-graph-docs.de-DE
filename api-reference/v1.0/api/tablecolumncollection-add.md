@@ -1,12 +1,13 @@
 ---
 title: 'TableColumnCollection: add'
 description: Fügt der Tabelle eine neue Spalte hinzu.
-ms.openlocfilehash: 20d06afa207a930db1aeb9ecdf86f17a818b3987
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: c63b4007631aae5d53290a487c8252c32b1532c4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017408"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343351"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: add
 

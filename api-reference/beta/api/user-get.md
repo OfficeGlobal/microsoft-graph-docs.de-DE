@@ -1,12 +1,13 @@
 ---
 title: Benutzer abrufen
 description: Dient zum Abrufen der Eigenschaften und der Beziehungen des Benutzerobjekts.
-ms.openlocfilehash: f5392e25736fb93fd112413e00012eea78dc2449
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: eb2b3efe96e3fd4e4608ae045addaf8a1fe6911a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065649"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341573"
 ---
 # <a name="get-a-user"></a>Benutzer abrufen
 
@@ -33,7 +34,7 @@ GET /users/{id | userPrincipalName}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert|
+| Header       | Wert|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Erforderlich.|
 | Content-Type   | application/json |
@@ -84,7 +85,7 @@ Content-length: 491
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Preview)](/graph/extensibility-open-users)

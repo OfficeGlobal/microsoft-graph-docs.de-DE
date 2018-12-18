@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp androidForWorkCompliancePolicy
 description: Diese Klasse enthält kompatibilitätseinstellungen für Android für die Arbeit.
-ms.openlocfilehash: acc4f585b1fec448b5f801befb014f627bb7472f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cdef509d1ce2a043bc667e25e204f303eebdfa26
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061634"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341454"
 ---
 # <a name="androidforworkcompliancepolicy-resource-type"></a>Ressourcentyp androidForWorkCompliancePolicy
 

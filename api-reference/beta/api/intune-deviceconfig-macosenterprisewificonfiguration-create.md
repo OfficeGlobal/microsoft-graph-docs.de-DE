@@ -1,12 +1,13 @@
 ---
 title: Erstellen von macOSEnterpriseWiFiConfiguration
 description: Erstellen eines neuen MacOSEnterpriseWiFiConfiguration-Objekts.
-ms.openlocfilehash: 5fa8a3e0751d39d4fae329b369c56d836d31cd77
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ee7bc76c445679b163053885d815205672d3a30f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061628"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352269"
 ---
 # <a name="create-macosenterprisewificonfiguration"></a>Erstellen von macOSEnterpriseWiFiConfiguration
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

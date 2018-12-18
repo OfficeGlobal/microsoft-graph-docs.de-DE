@@ -1,12 +1,13 @@
 ---
 title: 'Range: UsedRange'
 description: Gibt den verwendeten Bereich des angegebenen Bereichsobjekts zurück.
-ms.openlocfilehash: 106c3e04f564bdfa529c0a5e6ad17cda3200d436
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: a2a4d4a2de3b86b8682421a62e4e0b6b2cb7c2b6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058133"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340705"
 ---
 # <a name="range-usedrange"></a>Range: UsedRange
 

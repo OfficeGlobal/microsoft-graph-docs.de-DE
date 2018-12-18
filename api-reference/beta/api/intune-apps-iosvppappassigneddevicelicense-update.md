@@ -1,12 +1,13 @@
 ---
 title: IosVppAppAssignedDeviceLicense aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines IosVppAppAssignedDeviceLicense-Objekts.
-ms.openlocfilehash: 8e2d623dd1d5c3b1f69fb62244a8eb20af3b3f95
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 69ccb35896864a29bf594da74afeb702a4b963bf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059257"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353228"
 ---
 # <a name="update-iosvppappassigneddevicelicense"></a>IosVppAppAssignedDeviceLicense aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/as
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

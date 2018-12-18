@@ -1,12 +1,13 @@
 ---
 title: ChartLineFormat-Ressourcentyp
 description: Kapselt die Formatierungsoptionen für Linienelemente.
-ms.openlocfilehash: 6646f985fd106ed738432852fec5a3bad187ab61
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: be9d0d3f30deb608aee9873866442e0478c0056a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062149"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352185"
 ---
 # <a name="chartlineformat-resource-type"></a>ChartLineFormat-Ressourcentyp
 

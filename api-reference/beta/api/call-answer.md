@@ -1,12 +1,13 @@
 ---
 title: 'Rufen Sie: Antwort'
 description: Beantworten eines eingehenden Anrufs an.
-ms.openlocfilehash: d2cf1030179d8822fd4620224addbabb95c5482f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: df864a6a9043853e7c9e5b1f5546c4ae502ec4d6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058692"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343204"
 ---
 # <a name="call-answer"></a>Rufen Sie: Antwort
 

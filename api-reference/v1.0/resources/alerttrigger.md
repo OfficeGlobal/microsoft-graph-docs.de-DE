@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp alertTrigger
 description: Enthält Informationen zu den Eigenschaften, die eine Erkennung ausgelöst (Eigenschaften sind in der Warnung Entität vorhanden).
-ms.openlocfilehash: b4af3be67669fd27f27e888cbc28b60b0c1c67a5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Preetikr
+ms.openlocfilehash: f0888e6caf78d806909f818a8b72fb21320e7796
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019345"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341267"
 ---
 # <a name="alerttrigger-resource-type"></a>Ressourcentyp alertTrigger
 
@@ -17,7 +18,7 @@ Enthält Informationen zu den Eigenschaften, die eine Erkennung ausgelöst (Eige
 | Eigenschaft   | Typ|Beschreibung|
 |:---------------|:--------|:----------|
 |name|String|Der Name der Eigenschaft, die als eine Erkennung Trigger.|
-|Typ|String|Typ der Eigenschaft im Schlüssel / Wert-Paar für Auslegung. String, Boolean, beispielsweise usw.|
+|type|String|Typ der Eigenschaft im Schlüssel / Wert-Paar für Auslegung. String, Boolean, beispielsweise usw.|
 |Wert|Zeichenfolge|Der Wert der Eigenschaft, die als eine Erkennung Trigger.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
