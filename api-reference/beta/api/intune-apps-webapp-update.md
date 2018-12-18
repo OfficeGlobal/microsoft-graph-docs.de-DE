@@ -1,12 +1,13 @@
 ---
 title: webApp aktualisieren
 description: Aktualisieren der Eigenschaften eines webApp-Objekts.
-ms.openlocfilehash: cdd5269257a52e3aa4c378743771dfd482ac224e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c64c12aa6e9d29576990ad5f4572250d8cca4023
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064606"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346151"
 ---
 # <a name="update-webapp"></a>webApp aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

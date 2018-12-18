@@ -1,12 +1,13 @@
 ---
 title: macOSDeviceFeaturesConfiguration-Ressourcentyp
 description: Featurekonfigurationsprofil für MacOS-Geräte
-ms.openlocfilehash: a268c7c4e11e8e5e1356da0212b8d5417ba71c04
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d6f3d5634fd2fb050e8d68341f9198dc751173e5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060515"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348167"
 ---
 # <a name="macosdevicefeaturesconfiguration-resource-type"></a>macOSDeviceFeaturesConfiguration-Ressourcentyp
 

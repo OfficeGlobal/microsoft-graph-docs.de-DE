@@ -1,12 +1,13 @@
 ---
 title: auditActor-Ressourcentyp
 description: Eine Klasse, die die Eigenschaften für den Audit-Akteur enthält.
-ms.openlocfilehash: f8a2858854a8efb07cd710c5bccb718dd504a81e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1b1f3a182aa710564bdf5e134a4ceabf22f3fb71
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27057901"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348930"
 ---
 # <a name="auditactor-resource-type"></a>auditActor-Ressourcentyp
 
@@ -18,7 +19,7 @@ Eine Klasse, die die Eigenschaften für den Audit-Akteur enthält.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|Typ|Zeichenfolge|Akteurtyp|
+|type|Zeichenfolge|Akteurtyp|
 |userPermissions|Zeichenfolgenauflistung|Liste der Benutzerberechtigungen, nachdem die Überwachung ausgeführt wurde.|
 |applicationId|Zeichenfolge|AAD-Anwendungs-ID|
 |applicationDisplayName|Zeichenfolge|Anwendungsname|

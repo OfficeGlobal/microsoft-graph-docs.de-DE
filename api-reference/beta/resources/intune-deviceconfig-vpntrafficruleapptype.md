@@ -1,12 +1,13 @@
 ---
 title: VpnTrafficRuleAppType Enum-Typ
 description: Gibt den Typ der app, die eine VPN-Datenverkehr Regel zugeordnet ist.
-ms.openlocfilehash: 05318911f5fea18b4d6351fd434fb8f6f75b2e11
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3ab20bf62029e57c93c80d5f49d964abb58a883d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060909"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347355"
 ---
 # <a name="vpntrafficruleapptype-enum-type"></a>VpnTrafficRuleAppType Enum-Typ
 
@@ -16,9 +17,9 @@ ms.locfileid: "27060909"
 
 Gibt den Typ der app, die eine VPN-Datenverkehr Regel zugeordnet ist.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
-|n/v|0|Die Regel Datenverkehr ist nicht mit einer app verknüpft.|
+|Keine|0|Die Regel Datenverkehr ist nicht mit einer app verknüpft.|
 |Desktop|1|Die Regel Datenverkehr ist desktop-app zugeordnet.|
 |universelle|2|Die Regel Datenverkehr ist eine universelle app zugeordnet.|
 

@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „deviceComplianceUserStatus“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs deviceComplianceUserStatus auf.
-ms.openlocfilehash: 687db5dba1add28b5753e04b25116438ec7f5e8e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aef65e47fea594cae0a47d7ae50c50f83120be21
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016391"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346116"
 ---
 # <a name="list-devicecomplianceuserstatuses"></a>Auflisten von „deviceComplianceUserStatus“
 
@@ -32,9 +33,9 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userSt
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Abrufen von Outlook-Ereignissen in einem freigegebenen oder delegierten Kalender
 description: In Outlook können Kunden einen Kalender mit anderen Benutzern teilen und sie Ereignisse in diesem Kalender anzeigen oder ändern lassen. Kunden können außerdem eine Stellvertretung für das Handeln in ihrem Auftrag erteilen, um Besprechungsanfragen zu empfangen oder zu beantworten oder um Elemente im Kalender zu erstellen oder zu ändern.
-ms.openlocfilehash: e05352e164b127adca1305dded5cbb00840eed52
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 8ceb6a49b971c5ad01f27b53c0f3cd3cf047865d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092229"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346564"
 ---
 # <a name="get-outlook-events-in-a-shared-or-delegated-calendar"></a>Abrufen von Outlook-Ereignissen in einem freigegebenen oder delegierten Kalender
 

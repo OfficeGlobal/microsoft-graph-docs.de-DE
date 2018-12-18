@@ -1,12 +1,13 @@
 ---
 title: 'mailFolder: move'
 description: Mit dieser API können Sie ein Objekt des Typs „mailfolder“ samt seinen Inhalten in ein anderes Objekt des Typs „mailfolder“ verschieben.
-ms.openlocfilehash: 8aeef43068bcd2f23df5d726e559d0c8268ae1ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 50c982a9c2277530c884ee2807543f858fd3b696
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065528"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348755"
 ---
 # <a name="mailfolder-move"></a>mailFolder: move
 
@@ -35,9 +36,9 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile | Wert |
+| Header | Wert |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Erforderlich. |
+| Autorisierung | `Bearer {token}`. Erforderlich. |
 | Content-Type | `application/json`. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext

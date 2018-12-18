@@ -1,12 +1,13 @@
 ---
 title: Arbeitsblätter auflisten
 description: Dient zum Abrufen einer Liste von Arbeitsblattobjekten.
-ms.openlocfilehash: 170137988debfb6e63bc5650fe17418bef042599
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 9aee30c0cebae535b6a588ac24344e1fb6e17e7d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019626"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340390"
 ---
 # <a name="list-worksheets"></a>Arbeitsblätter auflisten
 

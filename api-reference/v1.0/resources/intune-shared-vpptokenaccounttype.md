@@ -1,12 +1,13 @@
 ---
 title: VppTokenAccountType Enum-Typ
 description: Mögliche Arten von einem Apple Volume Purchase Program-Token.
-ms.openlocfilehash: ae1d4b8d92d034dca8c52fbb94576f5add72d051
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 002af5091eb0eb540b2bf31434a173670ab548fe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017271"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344016"
 ---
 # <a name="vpptokenaccounttype-enum-type"></a>VppTokenAccountType Enum-Typ
 
@@ -14,7 +15,7 @@ ms.locfileid: "27017271"
 
 Mögliche Arten von einem Apple Volume Purchase Program-Token.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |Business|0|Apple Volume Purchase Program Token ein Programm Business zugeordnet.|
 |Education|1|Apple Volume Purchase Program Token ein Schulungsprogramm zugeordnet.|

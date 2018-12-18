@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp win32LobAppReturnCode
 description: Enthält Eigenschaften Rückgabecode für eine Win32-App
-ms.openlocfilehash: 5f32e7e5953ade1036c49ac2fb45555fd353fa1d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1ac6b01240e25d1a0163148e61851d6e9405aa44
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059959"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346235"
 ---
 # <a name="win32lobappreturncode-resource-type"></a>Ressourcentyp win32LobAppReturnCode
 
@@ -19,7 +20,7 @@ Enthält Eigenschaften Rückgabecode für eine Win32-App
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |Rückgabecode|Int32|Rückgabecode.|
-|Typ|[win32LobAppReturnCodeType](../resources/intune-apps-win32lobappreturncodetype.md)|Der Typ der Rückgabecode. Mögliche Werte sind: `failed`, `success`, `softReboot`, `hardReboot` und `retry`.|
+|type|[win32LobAppReturnCodeType](../resources/intune-apps-win32lobappreturncodetype.md)|Der Typ der Rückgabecode. Mögliche Werte sind: `failed`, `success`, `softReboot`, `hardReboot` und `retry`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

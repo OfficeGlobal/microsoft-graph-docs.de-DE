@@ -1,12 +1,13 @@
 ---
 title: windows10MobileCompliancePolicy-Ressourcentyp
 description: Diese Klasse enthält Konformitätseinstellungen für Windows 10 Mobile.
-ms.openlocfilehash: 201cf88785d6b91fc5a5500f8e4282f57632f015
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 53a6ac9398660a909cef03909945b29048b14e29
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016156"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347026"
 ---
 # <a name="windows10mobilecompliancepolicy-resource-type"></a>windows10MobileCompliancePolicy-Ressourcentyp
 

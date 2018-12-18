@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „windows10CustomConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs windows10CustomConfiguration auf.
-ms.openlocfilehash: 2f081010c15fa1a4251395f9de3aabcf803dae18
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e5752b64ed8d67e6bc112ed2b41d516b303d4ce2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065125"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349728"
 ---
 # <a name="list-windows10customconfigurations"></a>Auflisten von „windows10CustomConfiguration“
 
@@ -35,9 +36,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

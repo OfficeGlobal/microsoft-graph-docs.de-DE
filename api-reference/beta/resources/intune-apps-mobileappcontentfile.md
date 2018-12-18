@@ -1,12 +1,13 @@
 ---
 title: mobileAppContentFile-Ressourcentyp
 description: Enthält Eigenschaften für eine einzelne Installationsdatei, die mit einer bestimmten mobileAppContent-Version verknüpft ist.
-ms.openlocfilehash: 72467995e4d586df54a6c3cb2295e37cd9b9c6ce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4fd72fd43355cda820113797af627be6bdb37a98
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063123"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348664"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>mobileAppContentFile-Ressourcentyp
 

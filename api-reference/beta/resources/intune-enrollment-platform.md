@@ -1,12 +1,13 @@
 ---
 title: Plattform Enum-Typ
 description: Noch nicht dokumentiert
-ms.openlocfilehash: c438d21158d116d7024d2a264c4acc9e39e3d8f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cb36f18d4d98208d230a89d5a9407dcf31785fb6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059252"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347467"
 ---
 # <a name="platform-enum-type"></a>Plattform Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27059252"
 
 Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekanntes Gerät-Plattform|
 |IOS|1|IOS-Geräte-Plattform|

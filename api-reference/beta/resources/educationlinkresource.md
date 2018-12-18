@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp educationLinkResource
 description: Eine Unterklasse der EducationResource. Diese Ressource ist ein Link, und ist nicht haben zusätzlichen Daten zugeordnet.
-ms.openlocfilehash: 314bd87998ada178484401b2122f0936f87e51a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 02a55eeea25ab2c27d6c5848fbc178ff535d5e33
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063532"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349804"
 ---
 # <a name="educationlinkresource-resource-type"></a>Ressourcentyp educationLinkResource
 

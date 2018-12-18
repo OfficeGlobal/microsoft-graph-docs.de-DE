@@ -1,12 +1,13 @@
 ---
 title: windows10VpnConnectionType Enum-Typ
 description: VPN-Verbindungstypen.
-ms.openlocfilehash: f2c9d6aed6145fd4c1fadae77f5d82004d894193
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0452eff174cf12fdd7508e5000ed3fcbd9a01eeb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060289"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346431"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>windows10VpnConnectionType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27060289"
 
 VPN-Verbindungstypen.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |pulseSecure|0|Pulse sichern.|
 |f5EdgeClient|1|F5-Edge-Client.|

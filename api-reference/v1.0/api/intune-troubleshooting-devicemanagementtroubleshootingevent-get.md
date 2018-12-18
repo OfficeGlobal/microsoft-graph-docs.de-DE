@@ -1,12 +1,13 @@
 ---
 title: deviceManagementTroubleshootingEvent abrufen
 description: Lesen von Eigenschaften und Beziehungen des deviceManagementTroubleshootingEvent-Objekts.
-ms.openlocfilehash: 070cfa444624fb3c376d8e316b01be91ed68b50f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 63600c8d6ca01ecbbafaf8d85c2b169192c12426
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019890"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349546"
 ---
 # <a name="get-devicemanagementtroubleshootingevent"></a>deviceManagementTroubleshootingEvent abrufen
 
@@ -34,9 +35,9 @@ GET /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEven
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

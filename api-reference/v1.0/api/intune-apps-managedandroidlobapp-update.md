@@ -1,12 +1,13 @@
 ---
 title: managedAndroidLobApp aktualisieren
 description: Aktualisieren der Eigenschaften eines managedAndroidLobApp-Objekts.
-ms.openlocfilehash: 8991efc1a3957100902a3801a284a17ee93c659a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7d121570b5d1a5de6529dcf5b163354849178366
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018134"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346263"
 ---
 # <a name="update-managedandroidlobapp"></a>managedAndroidLobApp aktualisieren
 
@@ -32,9 +33,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

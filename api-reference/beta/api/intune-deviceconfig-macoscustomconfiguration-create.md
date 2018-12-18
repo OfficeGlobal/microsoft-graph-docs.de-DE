@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „macOSCustomConfiguration“
 description: Diese Methode erstellt ein neues Objekt des Typs macOSCustomConfiguration.
-ms.openlocfilehash: fb261f0d35fa96f13a0c10402f78d5e2551520eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0169ba83335be2202ca3034df7205a407021d0c0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065801"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340250"
 ---
 # <a name="create-macoscustomconfiguration"></a>Erstellen von „macOSCustomConfiguration“
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

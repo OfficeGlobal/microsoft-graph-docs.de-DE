@@ -1,12 +1,13 @@
 ---
 title: educationUser-Ressourcentyp
 description: Ein Benutzer im System. Dies ist eine bildungsspezifische Variante des Benutzers mit derselben `id`, den Microsoft Graph vom nicht bildungsspezifischen `/users`-Endpunkt zurückgibt.
-ms.openlocfilehash: a5b16aa511530c4895dff8d81766595944812e08
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 10f11c8d621fc2558fa6a82ca1f5d2a0e2e3dc4a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27057957"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347264"
 ---
 # <a name="educationuser-resource-type"></a>educationUser-Ressourcentyp
 

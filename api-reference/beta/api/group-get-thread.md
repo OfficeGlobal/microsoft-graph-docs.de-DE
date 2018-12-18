@@ -1,12 +1,13 @@
 ---
 title: Unterhaltungsthread abrufen
 description: Abrufen eines thread-Objekts.
-ms.openlocfilehash: 8e0d04b2a28d2f816bb070bf6d8e6b3d32333348
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 615a606bbe0e58da233642c55baccb3f05dc3dd6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061158"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347726"
 ---
 # <a name="get-conversation-thread"></a>Unterhaltungsthread abrufen
 
@@ -33,7 +34,7 @@ GET /groups/{id}/threads/{id}
 Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

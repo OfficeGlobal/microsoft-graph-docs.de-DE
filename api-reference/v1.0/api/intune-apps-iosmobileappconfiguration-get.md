@@ -1,12 +1,13 @@
 ---
 title: iosMobileAppConfiguration abrufen
 description: Lesen von Eigenschaften und Beziehungen des iosMobileAppConfiguration-Objekts.
-ms.openlocfilehash: a85f570caa82ad803bf6ed8163ebe798da5c3d2f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7566b74e9a0277d0bd5e67b2e76e59faed28cf73
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019360"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348020"
 ---
 # <a name="get-iosmobileappconfiguration"></a>iosMobileAppConfiguration abrufen
 
@@ -34,9 +35,9 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

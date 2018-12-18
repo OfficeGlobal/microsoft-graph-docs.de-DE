@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp managementConditionStatement
 description: Eine Management Condition-Anweisung ist eine Gruppe von Management-Bedingungen, die aktivieren/Geräte-Anwendung Konfigurationen deaktivieren, wenn alle darin enthaltenen Management erfüllt werden.
-ms.openlocfilehash: 98b76ce96550d894f8b32f6f6174d5c565e322ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ca0966edd64166479361f42816e36fd278dbc6b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062510"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347677"
 ---
 # <a name="managementconditionstatement-resource-type"></a>Ressourcentyp managementConditionStatement
 

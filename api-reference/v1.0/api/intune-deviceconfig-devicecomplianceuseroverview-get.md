@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceUserOverview abrufen
 description: Lesen von Eigenschaften und Beziehungen des deviceComplianceUserOverview-Objekts.
-ms.openlocfilehash: 0a244c356075197223899a08364a64721ef1cfd8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6e007ce0161e8e31c7f5ba41e7325f403535564c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018298"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349799"
 ---
 # <a name="get-devicecomplianceuseroverview"></a>deviceComplianceUserOverview abrufen
 
@@ -34,9 +35,9 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userSt
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

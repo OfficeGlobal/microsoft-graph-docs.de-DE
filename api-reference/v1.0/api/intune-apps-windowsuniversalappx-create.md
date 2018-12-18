@@ -1,12 +1,13 @@
 ---
 title: windowsUniversalAppX erstellen
 description: Erstellen eines neuen windowsUniversalAppX-Objekts.
-ms.openlocfilehash: eee8edddb8376b33f4e357803d55bded0f604ae4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bd1c58c56a3d2801bc5d4aaa9ca34286d6bacedb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018191"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348426"
 ---
 # <a name="create-windowsuniversalappx"></a>windowsUniversalAppX erstellen
 
@@ -32,9 +33,9 @@ POST /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

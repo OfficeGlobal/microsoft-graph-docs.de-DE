@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „mdmWindowsInformationProtectionPolicy“
 description: Aktualisiert die Eigenschaften von Objekten des Typs mdmWindowsInformationProtectionPolicy.
-ms.openlocfilehash: dbb67e7615435ff0409eb5596399ad0fd2ca3cf0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2449409b4dfd7d18efcfe961ad65d44a2e9c48bd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016233"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346760"
 ---
 # <a name="update-mdmwindowsinformationprotectionpolicy"></a>Aktualisieren von „mdmWindowsInformationProtectionPolicy“
 
@@ -32,9 +33,9 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Berechtigungen
 description: 'Ruft eine Liste der kürzlich gelöschter Objekte Besitz des angegebenen Benutzers.  '
-ms.openlocfilehash: 6d455fc7646c7e9c2b3fb62f48e098a5daeacff2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 5363adb943ac8c240e0f168246f7d17b3addf086
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063126"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348482"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>**Gelöschte Listenelemente Besitz eines Benutzers**
 
@@ -34,7 +35,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| **Name**      | **Beschreibung**           |
+| **Name**      | **Description**           |
 | ------------- | ------------------------- |
 | Authorization | Bearer {token}. Erforderlich. |
 
@@ -52,7 +53,7 @@ Textkörper der Anforderung erfordert die folgenden Parameter:
 | Parameter    | Typ |Beschreibung|
 |:---------------|:--------|:----------|
 |userId|String|ID des Besitzers.|
-|Typ|String|Art der Objekte zurückgegeben. `Group` ist derzeit der einzige unterstützte Wert.|
+|type|String|Art der Objekte zurückgegeben. `Group` ist derzeit der einzige unterstützte Wert.|
 
 ## <a name="response"></a>Antwort
 

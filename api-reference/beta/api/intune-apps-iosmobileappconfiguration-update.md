@@ -1,12 +1,13 @@
 ---
 title: IosMobileAppConfiguration aktualisieren
 description: Aktualisieren der Eigenschaften eines iosMobileAppConfiguration-Objekts.
-ms.openlocfilehash: 4c5a3ffb604f8be1ef3564438b3f3df37ecc1055
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cd499a445ea2d662d88135c588a67b521a86dcda
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059278"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345962"
 ---
 # <a name="update-iosmobileappconfiguration"></a>IosMobileAppConfiguration aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

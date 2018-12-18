@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionAppLearningSummary-Ressourcentyp
 description: Windows Information Protection App Learning – Zusammenfassungsentität.
-ms.openlocfilehash: b4ee75adcc97f0384b608f4675ce5cfcbbcedbfe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 21cc9b1daae25ee6a0de18e0a8c3056df9d9ff82
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061788"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349294"
 ---
 # <a name="windowsinformationprotectionapplearningsummary-resource-type"></a>windowsInformationProtectionAppLearningSummary-Ressourcentyp
 

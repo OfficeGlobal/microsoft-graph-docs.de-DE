@@ -1,12 +1,13 @@
 ---
 title: 'Paging der Microsoft Graph-Daten in Ihrer App '
 description: 'odata.nextLink-Eigenschaft in der Antwort, die eine URL zur nächsten Seite mit Ergebnissen enthält. '
-ms.openlocfilehash: 9a9224a6dc710fa70ebec2448bf2eef2238968ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: piotrci
+ms.openlocfilehash: b5c6c6adafde4d1cce4135af1b1bb23d068aab27
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092299"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348944"
 ---
 # <a name="paging-microsoft-graph-data-in-your-app"></a>Paging der Microsoft Graph-Daten in Ihrer App 
 

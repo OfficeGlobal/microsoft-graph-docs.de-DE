@@ -1,12 +1,13 @@
 ---
 title: Personen auflisten
 description: Abrufen einer Liste von Person-Objekten sortiert nach ihrer Relevanz für den Benutzer, die durch des Benutzers Kommunikation und Zusammenarbeit Muster und geschäftliche Beziehungen bestimmt wird.
-ms.openlocfilehash: fc39f983251f668b4e1aa43ccb8be9cee5d23791
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: 64d24111f295fd076024a889d050c8c48c104295
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060410"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347656"
 ---
 # <a name="list-people"></a>Personen auflisten
 

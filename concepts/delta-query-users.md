@@ -1,12 +1,13 @@
 ---
 title: Dient zum Abrufen inkrementeller Änderungen für Benutzer.
 description: Mit der Delta-Abfrage können Sie Ergänzungen, Löschungen oder Aktualisierungen an Benutzern anhand einer Serie von Delta-Funktionsaufrufen abfragen. Mit der Delta-Abfrage können Sie Änderungen an Benutzern ermitteln, ohne den gesamten Satz von Benutzern von Microsoft Graph abrufen und Änderungen vergleichen zu müssen.
-ms.openlocfilehash: 4b0237d01ad806a72c80c55522b06d4b37dc3a44
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: piotrci
+ms.openlocfilehash: 7e00ea6b305cad379b618c4a3410bf832c29a298
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092189"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346473"
 ---
 # <a name="get-incremental-changes-for-users"></a>Dient zum Abrufen inkrementeller Änderungen für Benutzer.
 

@@ -1,12 +1,13 @@
 ---
 title: macOSGeneralDeviceConfiguration löschen
 description: Löscht ein macOSGeneralDeviceConfiguration-Objekt.
-ms.openlocfilehash: 2cd44678cb50e755ed41723f4c5a30554acac39b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6146eed9241b8595ee4dec9111048ada88248489
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065162"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346277"
 ---
 # <a name="delete-macosgeneraldeviceconfiguration"></a>macOSGeneralDeviceConfiguration löschen
 
@@ -36,9 +37,9 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

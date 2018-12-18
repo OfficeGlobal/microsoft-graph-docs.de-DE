@@ -1,12 +1,13 @@
 ---
 title: enrollmentTroubleshootingEvent aktualisieren
 description: Aktualisieren der Eigenschaften eines enrollmentTroubleshootingEvent-Objekts.
-ms.openlocfilehash: 3479c939e9dca2027a2a296c24b7ae8d00d1c597
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0104ee813b49549b11bf115065c0665824230a41
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016472"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347362"
 ---
 # <a name="update-enrollmenttroubleshootingevent"></a>enrollmentTroubleshootingEvent aktualisieren
 
@@ -32,9 +33,9 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: DepIOSEnrollmentProfile löschen
 description: Löscht eine DepIOSEnrollmentProfile.
-ms.openlocfilehash: 0ac2e431be73a7d5eb3298cded559bff53cc7571
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4580016f8340986149984b9bde2c63a1acc5b2a5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065092"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348034"
 ---
 # <a name="delete-depiosenrollmentprofile"></a>DepIOSEnrollmentProfile löschen
 
@@ -34,9 +35,9 @@ DELETE /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultI
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

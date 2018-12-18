@@ -1,12 +1,13 @@
 ---
 title: Range abrufen
 description: Dient zum Abrufen der Eigenschaften und der Beziehungen des Bereichsobjekts.
-ms.openlocfilehash: 58766240d62ade6905aef19f6e0f038674ef9d40
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 3914f018da434536dca280fac2536e93e5496ea9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017302"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347250"
 ---
 # <a name="get-range"></a>Range abrufen
 

@@ -1,12 +1,13 @@
 ---
 title: macOSCompliancePolicy aktualisieren
 description: Aktualisieren der Eigenschaften eines macOSCompliancePolicy-Objekts.
-ms.openlocfilehash: 73e6d4d3fb0d24699e22b87dc3489a17e1287bd7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 412e77f3c0c62f61ce0ab687861dd3cac4931c59
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062954"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348378"
 ---
 # <a name="update-macoscompliancepolicy"></a>macOSCompliancePolicy aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

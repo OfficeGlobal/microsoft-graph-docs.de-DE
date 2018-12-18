@@ -1,12 +1,13 @@
 ---
 title: Übersicht über die Persönliche Kontakte-API
 description: Über Outlook-Kontakte können Sie die Daten von persönlichen Kontakten speichern; sie sind Teil des Outlook-Messaging-Hubs in Office 365. Über Outlook können Sie E-Mails verwalten, Besprechungen planen, Informationen zu Benutzern in einer Organisation suchen, Onlineunterhaltungen initiieren, Dateien freigeben und in Gruppen zusammenarbeiten.
-ms.openlocfilehash: 0e8967fbb89b2d39e002826e9eb3f7f792c37a11
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: bccf32fd0cc3022a146e16590d915c4b85d60127
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092150"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347516"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Übersicht über die Persönliche Kontakte-API
 

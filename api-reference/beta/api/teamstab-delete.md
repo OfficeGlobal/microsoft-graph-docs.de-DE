@@ -1,12 +1,13 @@
 ---
 title: Registerkarte von Kanal löschen
 description: 'Entfernt (löst) einer Registerkarte aus der angegebenen Kanal innerhalb eines Teams. '
-ms.openlocfilehash: bcede601f036e8e3c40659b74a593c99e2e60af3
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: 7d8465f650d63f22625c1da2c56b3de4e065374b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222485"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349287"
 ---
 # <a name="delete-tab-from-channel"></a>Registerkarte von Kanal löschen
 

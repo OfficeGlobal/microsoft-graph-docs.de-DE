@@ -1,12 +1,13 @@
 ---
 title: managedMobileLobApp-Ressourcentyp
 description: Eine abstrakte Basisklasse mit Eigenschaften für alle verwalteten mobilen branchenspezifischen Apps.
-ms.openlocfilehash: 10e83378e23eab55352d40000448d055a2478211
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a89ebc3af31bdbc119808115305962e36c92f4be
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019064"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346340"
 ---
 # <a name="managedmobilelobapp-resource-type"></a>managedMobileLobApp-Ressourcentyp
 

@@ -1,12 +1,13 @@
 ---
 title: Verwenden der Planner-REST-API
 description: Sie können die Planner-API in Microsoft Graph zum Erstellen von Aufgaben, und weisen Sie diese Benutzer in einer Gruppe im Office 365.
-ms.openlocfilehash: b6161218e5d65c96972a8fd5dd929b124d84c949
-ms.sourcegitcommit: 02ead22efd4f10cd50f89c9f5aa3b6dfda96aeec
+author: TarkanSevilmis
+ms.openlocfilehash: a57bdce9c61046d05bc969ff69d31971a85cf537
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123966"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346739"
 ---
 # <a name="use-the-planner-rest-api"></a>Verwenden der Planner-REST-API
 

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp depMacOSEnrollmentProfile
 description: Die Ressource DepMacOSEnrollmentProfile stellt eine bestimmte Apple Gerät Registrierung Programm (DEP) Registrierung Profil Mac OS-Konfiguration. Dieser Typ des Profils muss Apple DEP Seriennummer zugewiesen werden, bevor die entsprechende Geräte über Datenausführungsverhinderung registrieren können
-ms.openlocfilehash: 66fad092e5c961997643aeff54466f35d1e5fa24
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 138acbdbdc8325a15d6532b836c9c8da9b1363de
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064250"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346088"
 ---
 # <a name="depmacosenrollmentprofile-resource-type"></a>Ressourcentyp depMacOSEnrollmentProfile
 

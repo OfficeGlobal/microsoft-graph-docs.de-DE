@@ -1,12 +1,13 @@
 ---
 title: WindowsPhoneXAP aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines WindowsPhoneXAP-Objekts.
-ms.openlocfilehash: 15039cc7946a7fc7f39451424b6d7d556d1e1992
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3593a2795c63dd74f09774c478af324604922c4e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065262"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348307"
 ---
 # <a name="update-windowsphonexap"></a>WindowsPhoneXAP aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

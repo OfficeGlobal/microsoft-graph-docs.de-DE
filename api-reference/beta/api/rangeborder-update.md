@@ -1,12 +1,13 @@
 ---
 title: rangeborder aktualisieren
 description: Dient zum Aktualisieren der Eigenschaften des rangeborder-Objekts.
-ms.openlocfilehash: ab026d857c7fac591993469f87da662cb4bec064
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 560848adf8e2ff663c3b3a223786c24ba3b53c42
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066115"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349301"
 ---
 # <a name="update-rangeborder"></a>rangeborder aktualisieren
 

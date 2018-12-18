@@ -1,12 +1,13 @@
 ---
 title: IosScepCertificateProfile aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines IosScepCertificateProfile-Objekts.
-ms.openlocfilehash: 76c6b1781a3af2eacaa5ecbd4886691ef6148a32
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c0e43039696317b2db4f85715c98846a049275e7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063240"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347747"
 ---
 # <a name="update-iosscepcertificateprofile"></a>IosScepCertificateProfile aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: user-Ressourcentyp
 description: Stellt ein Azure AD-Benutzerkonto dar. Erbt von directoryObject.
-ms.openlocfilehash: 496e349162ddffe918c2d293cc9032cff6fd14c4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: c9d776091bba18a9459505b7d35d7ff15479cffe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065062"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348202"
 ---
 # <a name="user-resource-type"></a>user-Ressourcentyp
 
@@ -30,7 +31,7 @@ Diese Ressource unterstützt Folgendes:
 |[Update user](../api/user-update.md) | [user](user.md) |Aktualisiert das Benutzerobjekt. |
 |[Delete user](../api/user-delete.md) | None |Löscht das Benutzerobjekt. |
 |[List messages](../api/user-list-messages.md) |[Message](message.md) collection| Ruft alle Nachrichten im Postfach des angemeldeten Benutzers ab.|
-|[Create Message](../api/user-post-messages.md) |[Message](message.md)| Erstellen Sie eine Nachricht, durch die Veröffentlichung auf der Nachrichten-Auflistung.|
+|[Create Message](../api/user-post-messages.md) |[Nachricht](message.md)| Erstellen Sie eine Nachricht, durch die Veröffentlichung auf der Nachrichten-Auflistung.|
 |[List mailFolders](../api/user-list-mailfolders.md) |[MailFolder](mailfolder.md) collection| Ruft die E-Mail-Ordner-Sammlung unter dem Stammordner des angemeldeten Benutzers ab. |
 |[Create mailFolder](../api/user-post-mailfolders.md) |[MailFolder](mailfolder.md)| Erstellt einen neuen MailFolder durch Veröffentlichung in der mailFolders-Sammlung.|
 |[sendMail](../api/user-sendmail.md)|None|Sendet die im Anforderungstext angegebene Nachricht.|
@@ -49,7 +50,7 @@ Diese Ressource unterstützt Folgendes:
 |[List manager](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Ruft den Benutzer oder Kontakt, der Vorgesetzter dieses Benutzers ist, aus der manager-Navigationseigenschaft ab.|
 |[List memberOf](../api/user-list-memberof.md) |[directoryObject](directoryobject.md)-Sammlung| Rufen Sie die Gruppen, Directory Rollen und administrative Einheiten, die der Benutzer ein direktes Mitglied in der Navigationseigenschaft Mitglied ist.|
 |[Transitive Mitglied Liste](../api/user-list-transitivememberof.md) |[directoryObject](directoryobject.md)-Sammlung| Auflisten der Gruppen, Directory Rollen und administrative Einheiten, denen der Benutzer Mitglied ist. Dieser Vorgang ist transitiv und enthält die Gruppen, denen der Benutzer ein geschachtelte Mitglied ist. |
-|[Liste joinedTeams](../api/user-list-joinedteams.md) |[Groups](group.md) -Auflistung| Rufen Sie die Microsoft-Teams, dass der Benutzer ein direktes Mitglied in der Navigationseigenschaft JoinedTeams ist.|
+|[joinedTeams auflisten](../api/user-list-joinedteams.md) |[Groups](group.md) -Auflistung| Rufen Sie die Microsoft-Teams, dass der Benutzer ein direktes Mitglied in der Navigationseigenschaft JoinedTeams ist.|
 |[List ownedDevices](../api/user-list-owneddevices.md) |[directoryObject](directoryobject.md) collection| Ruft die Geräte, die dem Benutzer gehören, aus der ownedDevices-Navigationseigenschaft ab.|
 |[List ownedObjects](../api/user-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| Ruft die Verzeichnisobjekte, die dem Benutzer gehören, aus der ownedDevices-Navigationseigenschaft ab.|
 |[plannerTasks auflisten](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md)-Sammlung| Möchten Sie dem Benutzer zugewiesene PlannerTasks erhalten.|
@@ -104,7 +105,7 @@ Diese Ressource unterstützt Folgendes:
 |jobTitle|String|Die Position des Benutzers. Unterstützt $filter.|
 |legalAgeGroupClassification|String| Wird von enterpriseanwendungen verwendet, um der Altersgruppe Legal des Benutzers zu bestimmen. Diese Eigenschaft ist schreibgeschützt und berechnete basierend auf `ageGroup` und `consentProvidedForMinor` Eigenschaften. Zulässige Werte: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` und `adult`. Verweisen Sie auf die [Legal Alter mitgliedergruppendefinitionen-Eigenschaft](#legal-age-group-property-definitions) für Weitere Informationen.)|
 |licenseAssignmentStates|[LicenseAssignmentState](licenseassignmentstate.md) -Auflistung|Status der Lizenz Zuordnungen für diesen Benutzer. Schreibgeschützt.|
-|Mail|String|Die SMTP-Adresse des Benutzers, z. B. „jeff@contoso.onmicrosoft.com“. Schreibgeschützt. Unterstützt $filter.|
+|mail|String|Die SMTP-Adresse des Benutzers, z. B. „jeff@contoso.onmicrosoft.com“. Schreibgeschützt. Unterstützt $filter.|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|Einstellungen für das primäre Postfach des angemeldeten Benutzers. Sie können [Abrufen](../api/user-get-mailboxsettings.md) oder [Aktualisieren von](../api/user-update-mailboxsettings.md) Einstellungen für automatische Antworten auf eingehende Nachrichten, Gebietsschema und Zeitzone senden.|
 |mailNickname|String|Der E-Mail-Alias für den Benutzer. Diese Eigenschaft muss beim Erstellen eines Benutzers angegeben werden. Unterstützt $filter.|
 |mobilePhone|String|Die Nummer des primären Mobiltelefons für den Benutzer.|
@@ -339,7 +340,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](/graph/extensibility-open-users)

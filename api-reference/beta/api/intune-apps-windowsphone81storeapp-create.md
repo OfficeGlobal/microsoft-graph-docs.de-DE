@@ -1,12 +1,13 @@
 ---
 title: Erstellen von windowsPhone81StoreApp
 description: Erstellen eines neuen windowsPhone81StoreApp-Objekts.
-ms.openlocfilehash: d937eb98ca1eec2d9b6f8fc562f926bc43c3b356
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2fe6f1bc2ee2884b5e9ab6251d63a30d2972ef2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064591"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345920"
 ---
 # <a name="create-windowsphone81storeapp"></a>Erstellen von windowsPhone81StoreApp
 
@@ -34,9 +35,9 @@ POST /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

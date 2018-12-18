@@ -1,12 +1,13 @@
 ---
 title: Erstellen von Anrufen
 description: Erstellen Sie einen neuen Anruf.
-ms.openlocfilehash: 863cde971859cf0b2b4eef8f400f3726eeac74d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: b083c9a40fd1376370f7321111c6fbf89d6ee432
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059103"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348769"
 ---
 # <a name="create-call"></a>Erstellen von Anrufen
 

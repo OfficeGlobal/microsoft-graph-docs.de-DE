@@ -1,12 +1,13 @@
 ---
 title: Gruppe aktualisieren
 description: Mit dieser API können Sie die Eigenschaften eines Gruppenobjekts aktualisieren.
-ms.openlocfilehash: 60adb8b5d5fa075cab0f8255b619cb1f4eeafda4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 11144b477d6a19ae876eed1f561ade4a139564a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019038"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347404"
 ---
 # <a name="update-group"></a>Gruppe aktualisieren
 
@@ -34,7 +35,7 @@ PATCH /groups/{id}
 
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 

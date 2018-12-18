@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windowsStoreApp
 description: Enthält Eigenschaften und geerbten Eigenschaften für Windows Store-apps.
-ms.openlocfilehash: 17b596a9874243f78c245e80df7a47791fe6472c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7c02681dcc8538116967a4b45e01485f9b69b75c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062223"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346494"
 ---
 # <a name="windowsstoreapp-resource-type"></a>Ressourcentyp windowsStoreApp
 

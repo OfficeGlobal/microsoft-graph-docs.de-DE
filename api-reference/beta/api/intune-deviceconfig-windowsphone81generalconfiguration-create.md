@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „windowsPhone81GeneralConfiguration“
 description: Diese Methode erstellt ein neues Objekt des Typs windowsPhone81GeneralConfiguration.
-ms.openlocfilehash: 3cabbe92b15ad3aa6c06d7edd5ac506876b0f618
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bec529f093a1c732ab214e9324d224ab89497d06
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065386"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349707"
 ---
 # <a name="create-windowsphone81generalconfiguration"></a>Erstellen von „windowsPhone81GeneralConfiguration“
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

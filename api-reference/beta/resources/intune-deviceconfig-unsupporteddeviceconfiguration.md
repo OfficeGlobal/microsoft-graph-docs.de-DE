@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp unsupportedDeviceConfiguration
 description: UnsupportedDeviceConfiguration wird verwendet, wenn ein anderes Modell-kompatiblen Untertyp des DeviceConfiguration eine Entität zugeordnet werden kann.
-ms.openlocfilehash: 3de9d03fa23cc016c72bbb8a707a021e30183705
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 18ed2926aaf321a39b8f2aa42e6ebf931bb42b3d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061826"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345304"
 ---
 # <a name="unsupporteddeviceconfiguration-resource-type"></a>Ressourcentyp unsupportedDeviceConfiguration
 

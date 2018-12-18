@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „managedAppOperation“
 description: Diese Methode erstellt ein neues Objekt des Typs managedAppOperation.
-ms.openlocfilehash: 083ecd75da542a80ce06213725db9594941504eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6d1aa54df40829d461ed62f9cbe30f8a00b1e305
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019567"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347110"
 ---
 # <a name="create-managedappoperation"></a>Erstellen von „managedAppOperation“
 
@@ -32,9 +33,9 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

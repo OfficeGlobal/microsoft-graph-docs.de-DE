@@ -1,12 +1,13 @@
 ---
 title: WindowsManagedDevice aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines WindowsManagedDevice-Objekts.
-ms.openlocfilehash: 3ff5569399cf541de93a5093f1060c5aeb77ff56
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d1aa637a513d45ad33a1a5990399cf35f4cb21ae
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065002"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347635"
 ---
 # <a name="update-windowsmanageddevice"></a>WindowsManagedDevice aktualisieren
 
@@ -37,9 +38,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

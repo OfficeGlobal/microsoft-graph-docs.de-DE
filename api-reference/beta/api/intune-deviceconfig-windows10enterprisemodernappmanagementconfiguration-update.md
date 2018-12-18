@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „windows10EnterpriseModernAppManagementConfiguration“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs windows10EnterpriseModernAppManagementConfiguration.
-ms.openlocfilehash: c576de414d07ab45826eadf94980ee7a889b414b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f01daf0847fc22d68b9ebe186ea164b8b8dfb65d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061062"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345689"
 ---
 # <a name="update-windows10enterprisemodernappmanagementconfiguration"></a>Aktualisieren von „windows10EnterpriseModernAppManagementConfiguration“
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

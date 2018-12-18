@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionPolicies auflisten
 description: Listet die Eigenschaften und Beziehungen von Objekten des Typs windowsInformationProtectionPolicy auf.
-ms.openlocfilehash: 98d6817bd53a695bdac1cf1902063e4c3c1252d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: df9404efbb2dd9200312dc1db217866e3dba53f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066121"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349742"
 ---
 # <a name="list-windowsinformationprotectionpolicies"></a>windowsInformationProtectionPolicies auflisten
 
@@ -34,9 +35,9 @@ GET /deviceAppManagement/windowsInformationProtectionPolicies
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

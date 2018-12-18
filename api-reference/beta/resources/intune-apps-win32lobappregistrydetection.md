@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp win32LobAppRegistryDetection
 description: Enthält Registrierungseigenschaften zum Erkennen von einer App Win32
-ms.openlocfilehash: d0cab24f2f0eb4d0ad82d60285a4d0aca9ea6dda
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5adeca1b569531d15657acc2a8960bab60580dc6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059199"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347740"
 ---
 # <a name="win32lobappregistrydetection-resource-type"></a>Ressourcentyp win32LobAppRegistryDetection
 

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp „windowsMobileMSI“
 description: Diese Ressource enthält die Eigenschaften und geerbten Eigenschaften einer branchenspezifischen Windows Mobile-MSI-App.
-ms.openlocfilehash: 4041dd8e8b43170318507c17ec5edc4986ab2ce2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 403000833a344eff62b6190d92a842fc89957f2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059408"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349385"
 ---
 # <a name="windowsmobilemsi-resource-type"></a>Ressourcentyp „windowsMobileMSI“
 

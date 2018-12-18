@@ -1,12 +1,13 @@
 ---
 title: Liste enrollmentProfiles
 description: Listeneigenschaften und Beziehungen der EnrollmentProfile-Objekte.
-ms.openlocfilehash: 8053cacd1f0f1e6f6335cc08675d8c38c5068ad5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5f19b43e171b9ab1159accbf700ab817b722743e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065087"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349448"
 ---
 # <a name="list-enrollmentprofiles"></a>Liste enrollmentProfiles
 
@@ -34,9 +35,9 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

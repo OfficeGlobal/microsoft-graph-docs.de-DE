@@ -1,12 +1,13 @@
 ---
 title: domainDnsTxtRecord-Ressourcentyp
 description: Stellt einen TXT-Eintrag dar, der der DNS-Zonendatei einer bestimmten Domäne im Mandanten hinzugefügt wird. Geerbt von der Entität DomainDnsRecord.
-ms.openlocfilehash: 2c49f42c2044d58855d293d39c0e5110091e4495
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: caefb97b39219c282c45949b504c3d0b91cdada9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065170"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349014"
 ---
 # <a name="domaindnstxtrecord-resource-type"></a>domainDnsTxtRecord-Ressourcentyp
 

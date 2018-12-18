@@ -1,12 +1,13 @@
 ---
 title: Win32LobApp aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines win32LobApp-Objekts.
-ms.openlocfilehash: ec543716bcbf387b9b880535702a832a25319302
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8c05da48719aa2e923ae767faec4979f23976e14
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065267"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348622"
 ---
 # <a name="update-win32lobapp"></a>Win32LobApp aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

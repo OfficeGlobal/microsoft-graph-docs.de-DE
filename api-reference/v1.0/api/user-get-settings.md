@@ -1,12 +1,13 @@
 ---
 title: Abrufen von Einstellungen
 description: Lesen Sie Benutzer- und Settings-Objekts.
-ms.openlocfilehash: c96054ba9fa32d7de9461e873f62db89cfe8a7e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 817cfff56b028e242f0cfb65b966ac6b3173059e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019665"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346837"
 ---
 # <a name="get-settings"></a>Abrufen von Einstellungen
 

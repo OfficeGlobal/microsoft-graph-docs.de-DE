@@ -1,12 +1,13 @@
 ---
 title: recoverPasscode-Aktion
 description: Kennung wiederherstellen
-ms.openlocfilehash: bb45900689b74dd38d3436a680c8e09d4681237e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c767c0fa657880b722d839dfd5aa0ea9279ce309
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018820"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348909"
 ---
 # <a name="recoverpasscode-action"></a>recoverPasscode-Aktion
 
@@ -34,9 +35,9 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

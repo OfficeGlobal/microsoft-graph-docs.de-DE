@@ -1,12 +1,13 @@
 ---
 title: onPremisesConditionalAccessSettings aktualisieren
 description: Aktualisieren der Eigenschaften eines onPremisesConditionalAccessSettings-Objekts.
-ms.openlocfilehash: 562d17e7ed8f8ddf9dd281be1d1b7fcfde5f530c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 255693dfa1bb53083f792da950333a5c05717f1b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016172"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346802"
 ---
 # <a name="update-onpremisesconditionalaccesssettings"></a>onPremisesConditionalAccessSettings aktualisieren
 
@@ -32,9 +33,9 @@ PATCH /deviceManagement/conditionalAccessSettings
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

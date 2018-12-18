@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp androidWorkProfilePkcsCertificateProfile
 description: Android Arbeit Profil PKCS Zertifikatsprofil
-ms.openlocfilehash: a6f8d9af24ebb763d33d4bbc8e2863e3d6934208
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1e2f19cbdbd3db75692a728e2102040659533fe1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060250"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345857"
 ---
 # <a name="androidworkprofilepkcscertificateprofile-resource-type"></a>Ressourcentyp androidWorkProfilePkcsCertificateProfile
 

@@ -1,12 +1,13 @@
 ---
 title: IosNotificationAlertType Enum-Typ
 description: Benachrichtigung Einstellungen Benachrichtigungstyp.
-ms.openlocfilehash: a9b26276ecd3edd5847cb5672831ac3cf8edf57c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4f2321515cc243edc9c14a79bb90713b124d16e5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062309"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347257"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>IosNotificationAlertType Enum-Typ
 
@@ -16,12 +17,12 @@ ms.locfileid: "27062309"
 
 Benachrichtigung Einstellungen Benachrichtigungstyp.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |deviceDefault|0|Gerät Standardwert, keine beabsichtigt.|
 |Banner|1|Bandbanner.|
 |modal|2|Modal.|
-|n/v|3|Keine.|
+|Keine|3|Keine.|
 
 
 

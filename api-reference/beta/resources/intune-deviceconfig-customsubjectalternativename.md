@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp customSubjectAlternativeName
 description: Benutzerdefinierte Subject Alternative Name-definition
-ms.openlocfilehash: 14d6c24cd5e8c087b81fa51194301da522d169b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5ed3f62cef38340ae7204b98e1fc984ba9bcb9cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061969"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349315"
 ---
 # <a name="customsubjectalternativename-resource-type"></a>Ressourcentyp customSubjectAlternativeName
 

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windowsDomainJoinConfiguration
 description: Windows-Domäne Gerätekonfiguration.
-ms.openlocfilehash: 26ed97579b92735ddff4087bcccbc08f0b988ad3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 545c69864c2f325fcf6817941191872746304abc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062661"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349357"
 ---
 # <a name="windowsdomainjoinconfiguration-resource-type"></a>Ressourcentyp windowsDomainJoinConfiguration
 

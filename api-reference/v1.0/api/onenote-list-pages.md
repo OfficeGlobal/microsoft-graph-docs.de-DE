@@ -1,12 +1,13 @@
 ---
 title: Seiten auflisten
 description: Mit dieser API können Sie eine Liste von Objekten des Typs page abrufen.
-ms.openlocfilehash: 5003d7cf785837cb65a1b0def2449d6094366e93
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: aeb2fe975a6a058ebf4165dcdec0fd1f133c02ca
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016449"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345500"
 ---
 # <a name="list-pages"></a>Seiten auflisten
 
@@ -38,7 +39,7 @@ Die Standardantwort erweitert `parentSection` und wählt die Eigenschaften `id`,
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 | Accept | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext

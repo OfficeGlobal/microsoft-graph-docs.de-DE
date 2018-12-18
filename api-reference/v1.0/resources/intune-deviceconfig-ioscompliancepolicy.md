@@ -1,12 +1,13 @@
 ---
 title: iosCompliancePolicy-Ressourcentyp
 description: Diese Klasse enthält Konformitätseinstellungen für iOS.
-ms.openlocfilehash: c8a0b997778df60dda94c571fa7796dcf521cca0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fdd6c4f6c6efdc8bbe1872cc4dd0c153a76c908f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018797"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347859"
 ---
 # <a name="ioscompliancepolicy-resource-type"></a>iosCompliancePolicy-Ressourcentyp
 

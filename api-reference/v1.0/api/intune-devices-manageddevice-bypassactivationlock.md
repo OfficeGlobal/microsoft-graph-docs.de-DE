@@ -1,12 +1,13 @@
 ---
 title: bypassActivationLock-Aktion
 description: Aktivierungssperre umgehen
-ms.openlocfilehash: 284efa6e1e15173ed028617334b5ee05237ad75f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 285c333b395956fbba156766652c9c8e08c8eef3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018668"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346949"
 ---
 # <a name="bypassactivationlock-action"></a>bypassActivationLock-Aktion
 
@@ -34,9 +35,9 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

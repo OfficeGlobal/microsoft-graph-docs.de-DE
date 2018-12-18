@@ -1,12 +1,13 @@
 ---
 title: TeamsAsyncOperationType Enum-Typ
 description: Arten von TeamsAsyncOperation. Elemente werden hier wie weitere Async hinzugefügt Vorgänge unterstützt werden.
-ms.openlocfilehash: 1911041f50a79874bd1ae2ab41f26b42e85b4250
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 4ae7f070ffcce377fb4112ed5a54b4ad22d7973f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058410"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346851"
 ---
 # <a name="teamsasyncoperationtype-enum-type"></a>TeamsAsyncOperationType Enum-Typ
 
@@ -16,7 +17,7 @@ Arten von [TeamsAsyncOperation](teamsasyncoperation.md). Elemente werden hier wi
 
 ## <a name="members"></a>Elemente
 
-| Element | Wert| Beschreibung |
+| Member | Wert| Beschreibung |
 |:---------------|:--------|:----------|
 |Ungültig|0|Ungültiger Wert.|
 |cloneTeam|1|Der Vorgang zum Klonen Sie ein Team.|

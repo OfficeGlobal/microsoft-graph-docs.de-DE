@@ -1,12 +1,13 @@
 ---
 title: Unterhaltungsthread aktualisieren
 description: Aktualisieren eines Thread-Objekts.
-ms.openlocfilehash: e66a65c42a3616968f528ba3c2a1dda0d160e7f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: db4b30d50bd616680f88949906cb96480668c612
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018141"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348594"
 ---
 # <a name="update-conversation-thread"></a>Unterhaltungsthread aktualisieren
 Aktualisieren eines [Thread](../resources/conversationthread.md)-Objekts.
@@ -29,7 +30,7 @@ PATCH /groups/{id}/threads/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.

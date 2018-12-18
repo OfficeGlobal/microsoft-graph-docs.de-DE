@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp managementCertificateWithThumbprint
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 320b6241e1ac5a9078ccc32f99f87e9fd337335e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 03846890822cae02a2eb04fc058895992119c98a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062976"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348937"
 ---
 # <a name="managementcertificatewiththumbprint-resource-type"></a>Ressourcentyp managementCertificateWithThumbprint
 

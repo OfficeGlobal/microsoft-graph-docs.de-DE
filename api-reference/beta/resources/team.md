@@ -1,12 +1,13 @@
 ---
 title: Team Ressourcentyp
 description: 'Ein Team in Microsoft-Teams ist eine Auflistung der Kanäle. '
-ms.openlocfilehash: 610aca1a95c877bd6246a501a8eea64ee761e58d
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: nkramer
+ms.openlocfilehash: 0ed654bf4c8d627dd9466f9263b121f85800b853
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209698"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345482"
 ---
 # <a name="team-resource-type"></a>Team Ressourcentyp
 
@@ -26,7 +27,7 @@ Weitere Informationen über das Arbeiten mit Gruppen und Membern im Teams finden
 |[Erstellen von Teams aus Gruppe](../api/team-put-teams.md) | [Team](team.md) | Erstellen Sie ein neues Team oder fügen Sie ein Team an eine vorhandene Gruppe hinzu.|
 |[Get-team](../api/team-get.md) | [Team](team.md) | Abrufen der Eigenschaften und Beziehungen zwischen dem angegebenen Team.|
 |[Update-team](../api/team-update.md) | [Team](team.md) |Aktualisieren Sie die Eigenschaften des angegebenen Teams. |
-|[Team löschen](/graph/api/group-delete?view=graph-rest-1.0) | Keine |Das Team und der zugeordneten Gruppe zu löschen. |
+|[Team löschen](/graph/api/group-delete?view=graph-rest-1.0) | Keines |Das Team und der zugeordneten Gruppe zu löschen. |
 |[Wenn Sie den Klon-team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Kopieren Sie das Team und dessen zugehörige Gruppe. |
 |[Archiv-team](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Platzieren Sie das Team in einem schreibgeschützten Zustand. |
 |[Entpackt team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Wiederherstellen Sie das Team eine Lese-/ Schreibzugriff Zustand. |
@@ -43,12 +44,12 @@ Weitere Informationen über das Arbeiten mit Gruppen und Membern im Teams finden
 |:---------------|:--------|:----------|
 |displayName|string| Der Name des Teams. |
 |description|string| Eine optionale Beschreibung für das Team. |
-|Klassifikation|Zeichenfolge| Eine optionale Bezeichnung. In der Regel werden die Daten oder Business Vertraulichkeit des Teams beschrieben. Dabei muss es sich um eine Reihe vorkonfigurierten im Verzeichnis für den Mandanten übereinstimmen. |
+|Klassifikation|string| Eine optionale Bezeichnung. In der Regel werden die Daten oder Business Vertraulichkeit des Teams beschrieben. Dabei muss es sich um eine Reihe vorkonfigurierten im Verzeichnis für den Mandanten übereinstimmen. |
 |Spezialisierung|[teamSpecialization](teamspecialization.md)| Optional. Gibt an, ob das Team für einen bestimmten Anwendungsfall vorgesehen ist.  Jedes Team Spezialisierung hat Zugriff zur eindeutigen Verhalten und seine Anwendungsfall Ziel Erfahrungen. |
 |visibility|[teamVisibilityType](teamvisibilitytype.md)| Der Sichtbarkeit von einer Gruppe und Team. Der Standardwert ist öffentlich. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |So konfigurieren Sie Einstellungen Verwenden von Giphy, Memes und Aufkleber im Team.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Einstellungen konfigurieren können, ob Gäste erstellen, aktualisieren oder Löschen von Kanälen im Team können.|
-|isArchived|Boolescher Wert|Gibt an, ob dieses Team im schreibgeschützten Modus ist. |
+|isArchived|Boolesch|Gibt an, ob dieses Team im schreibgeschützten Modus ist. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Einstellungen konfigurieren können, ob Mitglieder bestimmter Aktionen ausführen können beispielsweise Kanäle erstellen und Hinzufügen von Programmen, im Team.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |So konfigurieren Sie die messaging-Einstellungen und erwähnungen im Team.|
 |webUrl|Zeichenfolge (schreibgeschützt) | Ein Hyperlink, der an das Team in der Microsoft-Teams, Client gesendet wird. Dies ist die URL, die Sie erhalten, wenn Sie mit der rechten ein Team in der Microsoft-Teams, Client Maustaste und wählen Sie **Link an das Team abrufen**. Diese URL sollte als nicht transparentes Blob behandelt und nicht analysiert werden. |

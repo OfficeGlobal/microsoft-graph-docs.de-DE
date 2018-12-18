@@ -1,12 +1,13 @@
 ---
 title: Übersicht über die Microsoft Bookings-API (Vorschau)
 description: Microsoft Bookings bietet Online- und Mobilgeräte-Apps, die das Planen von Terminen für kleine Unternehmen und ihre Kunden vereinfachen. Kleine Unternehmen, die ihre Services auf Terminbasis anbieten, wie z. B. Autowerkstätten, Frisörsalons und Anwaltskanzleien, können von der Verwaltung ihrer Terminvereinbarungen profitieren, da sie so ihre Zeit mit wichtigeren Aufgaben verbringen können, um ihr Geschäft voranzutreiben. Microsoft Bookings steht für Unternehmen mit einem Office 365 Business Premium-Abonnement zur Verfügung.
-ms.openlocfilehash: 334b26b5f02e7060b0fddfe8264e138e9d3a2bdc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 7e76c72950ea889b0c6029568ef287ee1ae5eedb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092286"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339816"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Übersicht über die Microsoft Bookings-API (Vorschau)
 

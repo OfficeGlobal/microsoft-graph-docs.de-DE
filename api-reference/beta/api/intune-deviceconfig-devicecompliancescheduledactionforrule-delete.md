@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceScheduledActionForRule löschen
 description: Löscht ein deviceComplianceScheduledActionForRule-Objekt.
-ms.openlocfilehash: 72117c046f91b5fcb4e87f8206f08ff087d885bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 04abb9225cf25fbc7c6fca249ca2b78334d1e6c7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061834"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348145"
 ---
 # <a name="delete-devicecompliancescheduledactionforrule"></a>deviceComplianceScheduledActionForRule löschen
 
@@ -34,9 +35,9 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sch
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Gruppe aktualisieren
 description: Mit dieser API können Sie die Eigenschaften eines Gruppenobjekts aktualisieren.
-ms.openlocfilehash: 1a87bc3e6599d37cab25e3e98c9dcf63d7d078e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 801143f0bb0a0e5012cf946e52cf4fd4cff34556
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060656"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348433"
 ---
 # <a name="update-group"></a>Gruppe aktualisieren
 
@@ -36,7 +37,7 @@ PATCH /groups/{id}
 
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -105,7 +106,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 HTTP/1.1 204 No Content
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Preview)](/graph/extensibility-open-users)

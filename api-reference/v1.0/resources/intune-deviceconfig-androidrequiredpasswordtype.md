@@ -1,12 +1,13 @@
 ---
 title: AndroidRequiredPasswordType Enum-Typ
 description: Typ der Android erforderliche Kennwort.
-ms.openlocfilehash: f4f95308791aa443b6eb4b4fd38c70fe2d47b4b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e9b757dc86bf71462f7f987cedfcd9e04497880e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019112"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349217"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>AndroidRequiredPasswordType Enum-Typ
 
@@ -14,7 +15,7 @@ ms.locfileid: "27019112"
 
 Typ der Android erforderliche Kennwort.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |deviceDefault|0|Gerät Standardwert, keine beabsichtigt.|
 |Alphabetische|1|Alphabetische erforderliche Kennwort.|

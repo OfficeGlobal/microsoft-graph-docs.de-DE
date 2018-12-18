@@ -1,12 +1,13 @@
 ---
 title: TeamSpecialization Enum-Typ
 description: Beschreibt den speziellen Anwendungsfall für ein Team.
-ms.openlocfilehash: 8f50e158e6eedc964226478841c5322eefca9f77
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: nkramer
+ms.openlocfilehash: 2e17f03374457ff8ddd9d3941eb56bebbec2dde6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27210148"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348013"
 ---
 # <a name="teamspecialization-enum-type"></a>TeamSpecialization Enum-Typ
 
@@ -16,7 +17,7 @@ Gibt an, ob das [Team](../resources/team.md) für einen bestimmten Anwendungsfal
 
 ## <a name="members"></a>Elemente
 
-| Element             | Wert | Beschreibung                                                                |
+| Member             | Wert | Beschreibung                                                                |
 | :----------------- | :---- | :------------------------------------------------------------------------- |
 | Keine               | 0     | Standard-Typ für ein Team die die standard-Team-Erfahrung haben.          |
 | unknownFutureValue | 7     | Sentinel Wert als Platzhalter für zukünftige Erweiterung der Enumeration reserviert. |

@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „iosManagedAppProtection“
 description: Erstellt neue Objekte des Typs iosManagedAppProtection.
-ms.openlocfilehash: 3ee4d72e29fe8202bf01c54a18be7e666c489623
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a6d20d9e51906e65fe205d2b852c49759dd6d572
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016247"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345150"
 ---
 # <a name="create-iosmanagedappprotection"></a>Erstellen von „iosManagedAppProtection“
 
@@ -32,9 +33,9 @@ POST /deviceAppManagement/iosManagedAppProtections
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windowsPhone81SCEPCertificateProfile
 description: " SCEP Zertifikatsprofil"
-ms.openlocfilehash: 3408b518dc764f431025ba21f4b537424522847d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 28e78ef6e9b0e5cc1c54c2af88a05b913b7fdf70
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063435"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345878"
 ---
 # <a name="windowsphone81scepcertificateprofile-resource-type"></a>Ressourcentyp windowsPhone81SCEPCertificateProfile
 
