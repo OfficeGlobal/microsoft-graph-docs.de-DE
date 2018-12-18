@@ -1,12 +1,13 @@
 ---
 title: 'message: replyAll'
 description: 'Antworten Sie an alle Empfänger einer Nachricht durch einen Kommentar angeben und keine aktualisierbaren Eigenschaften ändern '
-ms.openlocfilehash: c79320229aad67a406a6519762c7cdd99af2ad50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 035212224bca5cb6d173be9ea447cf16406ebf36
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064623"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307189"
 ---
 # <a name="message-replyall"></a>message: replyAll
 
@@ -43,7 +44,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -52,7 +53,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |comment|String|Ein Kommentar, der eingefügt werden kann. Kann eine leere Zeichenfolge sein.|
-|message|[Nachricht](../resources/message.md)|Alle schreibbaren Eigenschaften, die in der Antwortnachricht aktualisiert.|
+|message|[message](../resources/message.md)|Alle schreibbaren Eigenschaften, die in der Antwortnachricht aktualisiert.|
 
 ## <a name="response"></a>Antwort
 

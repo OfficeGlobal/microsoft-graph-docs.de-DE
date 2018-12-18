@@ -1,12 +1,13 @@
 ---
 title: Windows81TrustedRootCertificate aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines windows81TrustedRootCertificate-Objekts.
-ms.openlocfilehash: c18c08e977d6fd034691836074e3f85b30e8f018
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ce95eda15d57a4e44b5c3c4756205638e2eb9cbb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059814"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307427"
 ---
 # <a name="update-windows81trustedrootcertificate"></a>Windows81TrustedRootCertificate aktualisieren
 
@@ -35,9 +36,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

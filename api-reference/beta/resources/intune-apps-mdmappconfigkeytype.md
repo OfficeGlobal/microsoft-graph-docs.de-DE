@@ -1,12 +1,13 @@
 ---
 title: MdmAppConfigKeyType Enum-Typ
 description: Wichtige Typen der App-Konfiguration.
-ms.openlocfilehash: 9857bd677819b1c67ebefb5af5811e4e71f98e2a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 60e1296b1e66101b04c6d25d9450d128dd41f672
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063345"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306531"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>MdmAppConfigKeyType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27063345"
 
 Wichtige Typen der App-Konfiguration.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |stringType|0|Noch nicht dokumentiert|
 |integerType|1|Noch nicht dokumentiert|

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windowsKioskLocalGroup
 description: Die Klasse verwendet, um eine lokale Gruppe für die Konfiguration Kiosk identifizieren
-ms.openlocfilehash: 456460e60bbf21130fc918f38922893e5430abe8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bb2e0cddd1c9b2530e1f146e966d707466c737d1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058619"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306846"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>Ressourcentyp windowsKioskLocalGroup
 

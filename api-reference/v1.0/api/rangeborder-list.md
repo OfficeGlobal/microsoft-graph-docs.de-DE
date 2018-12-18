@@ -1,12 +1,13 @@
 ---
 title: RangeBorderCollection auflisten
 description: Dient zum Abrufen einer Liste von rangeborder-Objekten.
-ms.openlocfilehash: efa7107a10e5b9cf3d8f6b9b29a8270519f9b6ba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: e4a63e60b5c088405f4418252151e8ce265aa21a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016506"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306174"
 ---
 # <a name="list-rangebordercollection"></a>RangeBorderCollection auflisten
 

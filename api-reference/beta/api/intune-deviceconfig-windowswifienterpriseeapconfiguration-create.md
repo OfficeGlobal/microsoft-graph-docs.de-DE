@@ -1,12 +1,13 @@
 ---
 title: Erstellen von windowsWifiEnterpriseEAPConfiguration
 description: Erstellen eines neuen WindowsWifiEnterpriseEAPConfiguration-Objekts.
-ms.openlocfilehash: 59b4a2d89bb04f70df82a07023a6253a39af2a9c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 03d8c3d44fb6782017e41571980e87ab6973e326
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061864"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310353"
 ---
 # <a name="create-windowswifienterpriseeapconfiguration"></a>Erstellen von windowsWifiEnterpriseEAPConfiguration
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

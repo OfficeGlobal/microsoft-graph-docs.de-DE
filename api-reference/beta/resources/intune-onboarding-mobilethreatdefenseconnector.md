@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp „mobileThreatDefenseConnector“
 description: Entität, die eine Verbindung zu einem Mobile Threat Defense-Partner repräsentiert
-ms.openlocfilehash: ee832f8e3acce151d51483522aa0c76b181e93d6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f47942cece4653de20b2c954249545f5dd691e3b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061773"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306629"
 ---
 # <a name="mobilethreatdefenseconnector-resource-type"></a>Ressourcentyp „mobileThreatDefenseConnector“
 

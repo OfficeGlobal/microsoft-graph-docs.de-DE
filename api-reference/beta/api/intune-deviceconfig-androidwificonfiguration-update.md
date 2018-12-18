@@ -1,12 +1,13 @@
 ---
 title: AndroidWiFiConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidWiFiConfiguration-Objekts.
-ms.openlocfilehash: bd4547590ba64b190737181abef95a6a47ac99e5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 31a91925ea406945800490f3385a6aea8ab27449
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063038"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307693"
 ---
 # <a name="update-androidwificonfiguration"></a>AndroidWiFiConfiguration aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

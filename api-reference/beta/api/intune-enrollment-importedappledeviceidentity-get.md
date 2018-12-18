@@ -1,12 +1,13 @@
 ---
 title: Abrufen von importedAppleDeviceIdentity
 description: Lesen Sie Eigenschaften und Beziehungen des ImportedAppleDeviceIdentity-Objekts.
-ms.openlocfilehash: bad76da11545d2fafef6843403077f31d87878a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fc4a68086620e8c152703af8da1d604e3a4da7f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060084"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310192"
 ---
 # <a name="get-importedappledeviceidentity"></a>Abrufen von importedAppleDeviceIdentity
 
@@ -36,9 +37,9 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedApp
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

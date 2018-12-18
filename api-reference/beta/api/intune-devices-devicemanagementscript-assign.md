@@ -1,12 +1,13 @@
 ---
 title: Aktion „assign“
 description: Noch nicht dokumentiert
-ms.openlocfilehash: aa1571614bdbe303ad2a22c3f74392972d858dca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0264f5aff78058887e6f219d08812eb6857737ed
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061733"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308176"
 ---
 # <a name="assign-action"></a>Aktion „assign“
 
@@ -34,9 +35,9 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assign
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

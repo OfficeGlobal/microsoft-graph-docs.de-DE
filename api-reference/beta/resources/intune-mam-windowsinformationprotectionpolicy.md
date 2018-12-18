@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp „windowsInformationProtectionPolicy“
 description: Diese Ressource repräsentiert eine Windows Information Protection-Richtlinie zur Verwendung ohne MDM-Lösung.
-ms.openlocfilehash: 3ab28196fba21491dbd68232923dbef01b1aff54
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 35030701e0f25c9fa671d0f37701c7d2d6f1d9ff
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064751"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309667"
 ---
 # <a name="windowsinformationprotectionpolicy-resource-type"></a>Ressourcentyp „windowsInformationProtectionPolicy“
 

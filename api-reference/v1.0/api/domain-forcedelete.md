@@ -1,12 +1,13 @@
 ---
 title: Domäne löschen erzwingen
 description: Löscht eine Domäne mithilfe eines asynchronen Vorgangs langer.
-ms.openlocfilehash: 20f00679998070b95af65292cadf83d76aa2add1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 85839d8bf7d36925661d0202c053574288763dc6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019940"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309114"
 ---
 # <a name="force-domain-deletion"></a>Domäne löschen erzwingen
 

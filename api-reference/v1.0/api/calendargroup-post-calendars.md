@@ -1,12 +1,13 @@
 ---
 title: Kalender erstellen
 description: Mit dieser API können Sie in einer Kalendergruppe einen neuen Kalender für einen Benutzer erstellen.
-ms.openlocfilehash: fad4b3ebf0488d6619cdd0550dd7c9456640e69f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 09b98abeaae5e908046aeac370c791e45a1e894d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018705"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306965"
 ---
 # <a name="create-calendar"></a>Kalender erstellen
 
@@ -42,7 +43,7 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile        | Wert                       |
+| Header        | Wert                       |
 | :------------ | :-------------------------- |
 | Authorization | Bearer {token}. Erforderlich.   |
 | Content-Type  | application/json. Erforderlich.  |

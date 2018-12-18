@@ -1,12 +1,13 @@
 ---
 title: Liste circularGeofenceManagementConditions
 description: Listeneigenschaften und Beziehungen der CircularGeofenceManagementCondition-Objekte.
-ms.openlocfilehash: 39acde133ee07051242ff48ed23b41feb7ba01a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b8f57677fc5c3017d069d2e1fae7da3eb70b2d7d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063336"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305978"
 ---
 # <a name="list-circulargeofencemanagementconditions"></a>Liste circularGeofenceManagementConditions
 
@@ -35,9 +36,9 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

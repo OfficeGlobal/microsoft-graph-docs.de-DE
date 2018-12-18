@@ -1,12 +1,13 @@
 ---
 title: Erstellen von iosImportedPFXCertificateProfile
 description: Erstellen eines neuen IosImportedPFXCertificateProfile-Objekts.
-ms.openlocfilehash: 1d5b73a3c3548b0e94dcf7e0675662a1ed8ca611
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cc8bad7c884b7231502d5fbf8fbab06fa896f48d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064516"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305964"
 ---
 # <a name="create-iosimportedpfxcertificateprofile"></a>Erstellen von iosImportedPFXCertificateProfile
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: WindowsManagementAppHealthSummary aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines WindowsManagementAppHealthSummary-Objekts.
-ms.openlocfilehash: e0f02a49b6585398d95d096aeb0b592438dbe68a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 274ffcc65706f7d730815d4a8350af2dee68f763
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061713"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307070"
 ---
 # <a name="update-windowsmanagementapphealthsummary"></a>WindowsManagementAppHealthSummary aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceAppManagement/windowsManagementApp/healthSummary
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „iosUpdateDeviceStatus“
 description: Diese Methode erstellt ein neues Objekt des Typs iosUpdateDeviceStatus.
-ms.openlocfilehash: 87c1d092d87ed2279d19f8f35f717501add37389
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aa953684b79b4bca2453f55de9be5754a29ba86c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018384"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309282"
 ---
 # <a name="create-iosupdatedevicestatus"></a>Erstellen von „iosUpdateDeviceStatus“
 
@@ -32,9 +33,9 @@ POST /deviceManagement/iosUpdateStatuses
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

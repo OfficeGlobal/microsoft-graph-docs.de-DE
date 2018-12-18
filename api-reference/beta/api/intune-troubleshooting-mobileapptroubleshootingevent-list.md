@@ -1,12 +1,13 @@
 ---
 title: Liste mobileAppTroubleshootingEvents
 description: Listeneigenschaften und Beziehungen der MobileAppTroubleshootingEvent-Objekte.
-ms.openlocfilehash: ff7bbad0564b0176c8c3196af47f97d607553ddf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cee6872731977fedddced00f3bad678d3b3e42da
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065885"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308673"
 ---
 # <a name="list-mobileapptroubleshootingevents"></a>Liste mobileAppTroubleshootingEvents
 
@@ -34,9 +35,9 @@ GET /users/{usersId}/mobileAppTroubleshootingEvents
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

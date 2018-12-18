@@ -1,12 +1,13 @@
 ---
 title: WindowsProtectionState aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines WindowsProtectionState-Objekts.
-ms.openlocfilehash: f1323baa9a6611e5f6057456fbbefbaddefa626e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8bdbe3d1841eb29f7616edcc5063cd025f282974
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063554"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308708"
 ---
 # <a name="update-windowsprotectionstate"></a>WindowsProtectionState aktualisieren
 
@@ -35,9 +36,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

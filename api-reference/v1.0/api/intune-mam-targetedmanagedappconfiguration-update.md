@@ -1,12 +1,13 @@
 ---
 title: targetedManagedAppConfiguration aktualisieren
 description: Aktualisieren der Eigenschaften eines targetedManagedAppConfiguration- Objekts.
-ms.openlocfilehash: 2157c6bb07562ca3aaff1a15737ec5dc6a7f19bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3207c0ffca215ae3a0669b28e60e624cd7630648
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019725"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310542"
 ---
 # <a name="update-targetedmanagedappconfiguration"></a>targetedManagedAppConfiguration aktualisieren
 
@@ -32,9 +33,9 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

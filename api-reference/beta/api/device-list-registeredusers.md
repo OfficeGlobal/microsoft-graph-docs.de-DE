@@ -1,12 +1,13 @@
 ---
 title: registeredUsers auflisten
 description: Dient zum Abrufen einer Liste von Benutzern, die registrierte Benutzer des Geräts sind.
-ms.openlocfilehash: 08c6cc2268daa31b0d365e0201536df3586a798c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 56bfac40f5103a6e6c459511d428c03b88cb523f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060555"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305852"
 ---
 # <a name="list-registeredusers"></a>registeredUsers auflisten
 
@@ -38,7 +39,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: importedWindowsAutopilotDeviceIdentity abrufen
 description: Lesen von Eigenschaften und Beziehungen des importedWindowsAutopilotDeviceIdentity-Objekts.
-ms.openlocfilehash: ab57d7006a1d3046d47ab664d6b36c74fe772efe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0f9d1c80fae8144dc37110345f9162e3c006f9fc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016386"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309359"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentity"></a>importedWindowsAutopilotDeviceIdentity abrufen
 
@@ -35,9 +36,9 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

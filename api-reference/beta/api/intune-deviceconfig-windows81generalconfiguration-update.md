@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „windows81GeneralConfiguration“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs windows81GeneralConfiguration.
-ms.openlocfilehash: 1469d204349694f453eb7571d90aa7a1ab427387
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ccb9f11e8efa96329cf9129b6894aca53419c6a7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063563"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308001"
 ---
 # <a name="update-windows81generalconfiguration"></a>Aktualisieren von „windows81GeneralConfiguration“
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

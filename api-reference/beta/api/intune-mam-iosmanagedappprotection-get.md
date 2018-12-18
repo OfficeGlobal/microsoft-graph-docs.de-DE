@@ -1,12 +1,13 @@
 ---
 title: Abrufen von „iosManagedAppProtection“
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs iosManagedAppProtection.
-ms.openlocfilehash: 2dd50cbc226b7a5c0888d14eeb0f20c3502f2378
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b913d26ae7022cff368984b65fbbf6eaa85aaad2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060460"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310206"
 ---
 # <a name="get-iosmanagedappprotection"></a>Abrufen von „iosManagedAppProtection“
 
@@ -36,9 +37,9 @@ GET /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: SyncWithAppleDeviceEnrollmentProgram Aktion
 description: Zwischen Apple Gerät Registrierung Programm und Intune synchronisiert
-ms.openlocfilehash: dd73335d4db56dea092f8d896859f7feb937d130
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 852a9ce3e7b9d349aee2e8b5d3baec732cd116f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058793"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308358"
 ---
 # <a name="syncwithappledeviceenrollmentprogram-action"></a>SyncWithAppleDeviceEnrollmentProgram Aktion
 
@@ -34,9 +35,9 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/syncWithAp
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

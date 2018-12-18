@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp teamsAsyncOperation
 description: 'Ein Microsoft-Teams, asynchroner Vorgang ist ein Vorgang, der die Lebensdauer der einzelnen API-Anforderung transcends. '
-ms.openlocfilehash: 66279b933202167f85ed7d1fc4709e8e61034537
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: f88f5eba32fbd0629bf66a61dca963a7815988fd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059520"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305558"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>Ressourcentyp teamsAsyncOperation
 

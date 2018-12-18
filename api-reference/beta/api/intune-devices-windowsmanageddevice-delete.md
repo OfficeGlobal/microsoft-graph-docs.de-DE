@@ -1,12 +1,13 @@
 ---
 title: WindowsManagedDevice löschen
 description: Löscht eine WindowsManagedDevice.
-ms.openlocfilehash: 01297cc37b0c60dd25cb98845f9d25e5a56e1b91
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 13960f29fc6317b4b74360b12c9063abddb62906
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062121"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310185"
 ---
 # <a name="delete-windowsmanageddevice"></a>WindowsManagedDevice löschen
 
@@ -37,9 +38,9 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devi
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

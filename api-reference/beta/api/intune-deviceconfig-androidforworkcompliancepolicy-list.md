@@ -1,12 +1,13 @@
 ---
 title: Liste androidForWorkCompliancePolicies
 description: Listeneigenschaften und Beziehungen der AndroidForWorkCompliancePolicy-Objekte.
-ms.openlocfilehash: 21ce1a7fc8104152d4e1bde8bdff1254f915cfa7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ecc46c6714af0220325879d0ae742a30f506b477
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065181"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310269"
 ---
 # <a name="list-androidforworkcompliancepolicies"></a>Liste androidForWorkCompliancePolicies
 
@@ -34,9 +35,9 @@ GET /deviceManagement/deviceCompliancePolicies
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

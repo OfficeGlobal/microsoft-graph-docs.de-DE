@@ -1,12 +1,13 @@
 ---
 title: Abrufen von managementConditionStatement
 description: Lesen Sie Eigenschaften und Beziehungen des ManagementConditionStatement-Objekts.
-ms.openlocfilehash: 8a89c1c83e1d38e061bcb738331f538a93e6c13d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1a5800fdeedd755240fae9c8691341f0fc20214a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064391"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308307"
 ---
 # <a name="get-managementconditionstatement"></a>Abrufen von managementConditionStatement
 
@@ -37,9 +38,9 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Abrufen von „managedDevice“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs managedDevice.
-ms.openlocfilehash: 3e07c63fe136d77668cc8e370131875eb782a9e0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 30d7faff117c7df1373fd38ee53149197346654f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064408"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307868"
 ---
 # <a name="get-manageddevice"></a>Abrufen von „managedDevice“
 
@@ -39,9 +40,9 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

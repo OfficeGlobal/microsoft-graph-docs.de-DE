@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windows10VpnProxyServer
 description: VPN-Proxy-Server.
-ms.openlocfilehash: cae448924087cba4b039eab92c83c8bffc94f9fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e21b964ab1bd648cd042a1364ecf5f0942ded085
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061332"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309457"
 ---
 # <a name="windows10vpnproxyserver-resource-type"></a>Ressourcentyp windows10VpnProxyServer
 

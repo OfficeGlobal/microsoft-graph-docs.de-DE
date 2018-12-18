@@ -1,12 +1,13 @@
 ---
 title: AndroidLobApp erstellen
 description: Erstellen eines neuen androidLobApp-Objekts.
-ms.openlocfilehash: 4e914ed0d21b81a3d57085180d484ef86f087e53
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6c0840b1da223effddd8f22687539e6f7258521b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019457"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309653"
 ---
 # <a name="create-androidlobapp"></a>AndroidLobApp erstellen
 
@@ -32,9 +33,9 @@ POST /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

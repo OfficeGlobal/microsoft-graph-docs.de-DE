@@ -1,12 +1,13 @@
 ---
 title: LocalSecurityOptionsAdministratorElevationPromptBehaviorType Enum-Typ
 description: Mögliche Werte für LocalSecurityOptionsAdministratorElevationPromptBehavior
-ms.openlocfilehash: 2959aebbb12bc567427c8a9b06a5ce2380933241
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 620e2030433bd0f7a72263fa16907ec18c86f5f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061597"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308750"
 ---
 # <a name="localsecurityoptionsadministratorelevationpromptbehaviortype-enum-type"></a>LocalSecurityOptionsAdministratorElevationPromptBehaviorType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27061597"
 
 Mögliche Werte für LocalSecurityOptionsAdministratorElevationPromptBehavior
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Nicht konfiguriert|
 |elevateWithoutPrompting|1|Zu erhöhen, ohne aufzufordern.|

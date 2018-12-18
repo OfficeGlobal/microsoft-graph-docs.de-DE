@@ -1,12 +1,13 @@
 ---
 title: TableRow-Ressourcentyp
 description: Stellt eine Zeile in einer Tabelle dar.
-ms.openlocfilehash: ca363f8202d61364c609144eaa2fc136ab8b2928
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: de83ec8cae87f159c6f1f9687bd093873558c150
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062218"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309884"
 ---
 # <a name="tablerow-resource-type"></a>TableRow-Ressourcentyp
 

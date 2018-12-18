@@ -1,12 +1,13 @@
 ---
 title: mobileAppContentFile aktualisieren
 description: Aktualisieren der Eigenschaften eines MobileAppContentFile-Objekts.
-ms.openlocfilehash: b3a25c3ccce6598f12d6742546cca0f61679a138
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7117fe10ca2f191607c6d5a4823cc39a9fcc8cb9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016695"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309604"
 ---
 # <a name="update-mobileappcontentfile"></a>mobileAppContentFile aktualisieren
 
@@ -32,9 +33,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

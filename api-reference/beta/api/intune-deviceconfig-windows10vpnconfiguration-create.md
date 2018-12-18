@@ -1,12 +1,13 @@
 ---
 title: Erstellen von windows10VpnConfiguration
 description: Erstellen eines neuen windows10VpnConfiguration-Objekts.
-ms.openlocfilehash: 18b11fd56a76a89d2432e3c07756dbf318876488
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 02cbb520f32e26a3f4303521491031b0d3aeb090
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065737"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308841"
 ---
 # <a name="create-windows10vpnconfiguration"></a>Erstellen von windows10VpnConfiguration
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

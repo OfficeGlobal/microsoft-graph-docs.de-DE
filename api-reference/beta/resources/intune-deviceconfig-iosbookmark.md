@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp iosBookmark
 description: iOS-URL-Textmarke
-ms.openlocfilehash: e2349e0d280c9798a03363ab90d378ff206c57bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e1577537e57365b2452e956e010f6c3f918bd743
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060419"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308400"
 ---
 # <a name="iosbookmark-resource-type"></a>Ressourcentyp iosBookmark
 

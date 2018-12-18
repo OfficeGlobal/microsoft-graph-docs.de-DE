@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp networkIPv6ConfigurationManagementCondition
 description: Netzwerkeinstellungen für IPv6-Konfiguration-basiertes Management Bedingungen definiert werden können, die ausgelöst wird, wenn ein Gerät bestimmte IP-Adresse erkennt. Eine IP-Config-Management-Bedingung wird nur als TRUE betrachtet werden, wenn die Netzwerkverbindung aktiv ist.
-ms.openlocfilehash: b62cd29b56764fa1affd97a373e68907f9c28ff1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: de74fddad090993f6829180ba6f5eaea9cdaf59a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058260"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305740"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>Ressourcentyp networkIPv6ConfigurationManagementCondition
 

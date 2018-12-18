@@ -1,12 +1,13 @@
 ---
 title: Anlagen auflisten
 description: Rufen Sie eine Liste der Attachment-Objekte, die eine Outlook-Aufgabe zugeordnet ist.
-ms.openlocfilehash: 11388a2a0bc2df1b0bb680e97326f7d0058c9e07
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: db27cfa94e90607e64bed0bf71f55dfbea14b7e5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062839"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309933"
 ---
 # <a name="list-attachments"></a>Anlagen auflisten
 

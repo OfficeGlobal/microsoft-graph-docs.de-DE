@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp „androidManagedAppProtection“
 description: Diese Richtlinie wird verwendet, um detaillierte Verwaltungseinstellungen für bestimmte Sicherheitsgruppen sowie für festgelegte Gruppen von Apps auf einem Android-Gerät zu konfigurieren.
-ms.openlocfilehash: 215de0589b2d055bd07a9dd13ba3a014c1d133b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 13db6d2185d30feeec8362b83f96b34ed83ffe0c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018397"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309289"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>Ressourcentyp „androidManagedAppProtection“
 

@@ -1,12 +1,13 @@
 ---
 title: AndroidDeviceOwnerWiFiSecurityType Enum-Typ
 description: Wi-Fi-Sicherheitstypen für Android-Gerät Besitzer.
-ms.openlocfilehash: 09654e6863677bc7eb0a88452487bef183c649cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 02f3830d82e08a10f6726cf1ebd2e7f04a2e8f2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064660"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306685"
 ---
 # <a name="androiddeviceownerwifisecuritytype-enum-type"></a>AndroidDeviceOwnerWiFiSecurityType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27064660"
 
 Wi-Fi-Sicherheitstypen für Android-Gerät Besitzer.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |Öffnen Sie|0|Öffnen Sie (keine Authentifizierung).|
 |WEP|1|WEP-Verschlüsselung.|

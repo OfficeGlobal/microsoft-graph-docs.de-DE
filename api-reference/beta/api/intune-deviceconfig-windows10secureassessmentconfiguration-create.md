@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „windows10SecureAssessmentConfiguration“
 description: Erstellen eines neuen windows10SecureAssessmentConfiguration-Objekts.
-ms.openlocfilehash: 79fbeb6633cc589a58bcb24349e417f61b07377e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 21964a84ac046adb7a27c511319a903ff2ab50f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058257"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308351"
 ---
 # <a name="create-windows10secureassessmentconfiguration"></a>Erstellen von „windows10SecureAssessmentConfiguration“
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

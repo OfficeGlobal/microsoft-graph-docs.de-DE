@@ -1,12 +1,13 @@
 ---
 title: WindowsWifiConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines WindowsWifiConfiguration-Objekts.
-ms.openlocfilehash: 9a989a13c64432450d5fcd3a385223fb5c8f318d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0cd1d8ba372daf63561bf94763994fedafb24f46
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27057956"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310283"
 ---
 # <a name="update-windowswificonfiguration"></a>WindowsWifiConfiguration aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

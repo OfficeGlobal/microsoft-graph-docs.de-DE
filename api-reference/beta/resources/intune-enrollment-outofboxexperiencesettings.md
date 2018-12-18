@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp outOfBoxExperienceSettings
 description: Erleben Sie die Einstellung im Lieferzustand
-ms.openlocfilehash: 7d685c7e229828309e2ee759396215c3cd8dfac9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 545fbe5c27063397a4d08c40729227804ebfc56d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065532"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308407"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>Ressourcentyp outOfBoxExperienceSettings
 

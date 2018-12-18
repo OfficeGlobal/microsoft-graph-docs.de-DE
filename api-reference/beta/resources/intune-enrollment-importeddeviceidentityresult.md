@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp importedDeviceIdentityResult
 description: Die Ressource ImportedDeviceIdentityResult stellt das Ergebnis der Versuch, eine Identität Gerät zu importieren.
-ms.openlocfilehash: cd7b70bb0535a02dfa4cf6b09a70fc22b1e7a469
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 060ebbebb38cd258e57ca30794e44e5e651d5fe2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063292"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310171"
 ---
 # <a name="importeddeviceidentityresult-resource-type"></a>Ressourcentyp importedDeviceIdentityResult
 

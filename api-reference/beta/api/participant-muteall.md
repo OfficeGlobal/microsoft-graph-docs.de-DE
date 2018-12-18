@@ -1,12 +1,13 @@
 ---
 title: 'Teilnehmer: MuteAll'
 description: Stummschalten Sie aller Teilnehmer in den Anruf.
-ms.openlocfilehash: f0da6f44801559fe7258d61fff9d5c87cc606702
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 26369f3dc0c6502950c46ed1f9befe80ea1a320a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059145"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310178"
 ---
 # <a name="participant-muteall"></a>Teilnehmer: MuteAll
 

@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationAssignment-Ressourcentyp
 description: Die Zuweisungsentität für die Gerätekonfiguration weist eine AAD-Gruppe einer bestimmten Gerätekonfiguration zu.
-ms.openlocfilehash: 75a1c3ceaecf3f19bfbcbeda1baf20ddedce606b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 26afc67312ab8544b395b5e20b89a01558fc75d9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016476"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306244"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>deviceConfigurationAssignment-Ressourcentyp
 

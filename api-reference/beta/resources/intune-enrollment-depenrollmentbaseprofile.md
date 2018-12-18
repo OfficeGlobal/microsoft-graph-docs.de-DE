@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp depEnrollmentBaseProfile
 description: Die Ressource DepEnrollmentBaseProfile stellt ein Apple Gerät Registrierung Programm (DEP) Registrierung-Profil. Dieser Typ des Profils muss Apple DEP Seriennummer zugewiesen werden, bevor die entsprechende Geräte über Datenausführungsverhinderung registrieren können
-ms.openlocfilehash: 172e0f0d4ed9b23f8c5a3d5226e24e4ac63b0527
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 26335fd3d35494b815dd43531ad54b4796dc861c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064926"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308372"
 ---
 # <a name="depenrollmentbaseprofile-resource-type"></a>Ressourcentyp depEnrollmentBaseProfile
 

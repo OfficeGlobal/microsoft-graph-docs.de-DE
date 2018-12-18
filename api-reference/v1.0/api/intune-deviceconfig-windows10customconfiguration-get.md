@@ -1,12 +1,13 @@
 ---
 title: windows10CustomConfiguration abrufen
 description: Lesen von Eigenschaften und Beziehungen des windows10CustomConfiguration-Objekts.
-ms.openlocfilehash: 60abc91cbb0d29b5839599814cca494574a1fee7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8a52f9cd7aeefc560ff786a6e51e2bbec3047494
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018028"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306370"
 ---
 # <a name="get-windows10customconfiguration"></a>windows10CustomConfiguration abrufen
 
@@ -34,9 +35,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: setPriority-Aktion
 description: Noch nicht dokumentiert
-ms.openlocfilehash: d041c5c27d3ae0a83839a50bb8b841f570a81cbb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3aa4363a89ed1d21a90d953ce476998bffb600ad
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065728"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307014"
 ---
 # <a name="setpriority-action"></a>setPriority-Aktion
 
@@ -34,9 +35,9 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

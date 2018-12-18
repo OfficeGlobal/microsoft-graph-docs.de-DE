@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „detectedApp“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs detectedApp auf.
-ms.openlocfilehash: 1e485f8fe0bb02818c8e5ed55b8ddd7da86379ec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 12d4d0a09581780e4b9c0c05ccaee4c3481171bc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063777"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307322"
 ---
 # <a name="list-detectedapps"></a>Auflisten von „detectedApp“
 
@@ -35,9 +36,9 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

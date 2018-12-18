@@ -1,12 +1,13 @@
 ---
 title: Benutzer löschen
 description: Löscht einen user.
-ms.openlocfilehash: 94c9909ef64f5b358c7e14d4d201a081db584851
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 950e267a929bc1c04627e94207bc933bff4466cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059148"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309436"
 ---
 # <a name="delete-user"></a>Benutzer löschen
 
@@ -40,9 +41,9 @@ DELETE /users/{usersId}
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: DepMacOSEnrollmentProfile löschen
 description: Löscht eine DepMacOSEnrollmentProfile.
-ms.openlocfilehash: 61b7ad694e5e8470ea2f66506d6b00de345b05fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bad8bc7869ccd4bf367038e53faba7c366a5846b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059321"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308540"
 ---
 # <a name="delete-depmacosenrollmentprofile"></a>DepMacOSEnrollmentProfile löschen
 
@@ -34,9 +35,9 @@ DELETE /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultM
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

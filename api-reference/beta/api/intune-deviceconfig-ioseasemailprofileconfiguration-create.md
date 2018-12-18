@@ -1,12 +1,13 @@
 ---
 title: Erstellen von iosEasEmailProfileConfiguration
 description: Erstellen eines neuen IosEasEmailProfileConfiguration-Objekts.
-ms.openlocfilehash: 78cf37fc63f6cc62d40ffc1ef3deda587b65aaf3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b17b2683d792cfd4044ac4a91d9367ec1f963e15
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061850"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306405"
 ---
 # <a name="create-ioseasemailprofileconfiguration"></a>Erstellen von iosEasEmailProfileConfiguration
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

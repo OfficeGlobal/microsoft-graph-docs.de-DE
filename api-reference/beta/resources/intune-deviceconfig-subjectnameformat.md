@@ -1,12 +1,13 @@
 ---
 title: SubjectNameFormat Enum-Typ
 description: Optionen für Antragstellernamen Format.
-ms.openlocfilehash: 7299558011c471f02e5c1149da6ac23183faa150
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 61aeddb1e751885c3a0ba39fd5628b71830dded5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058309"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307007"
 ---
 # <a name="subjectnameformat-enum-type"></a>SubjectNameFormat Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27058309"
 
 Optionen für Antragstellernamen Format.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |commonName|0|Allgemeiner Name.|
 |commonNameIncludingEmail|1|Allgemeiner Name, einschließlich E-Mail.|

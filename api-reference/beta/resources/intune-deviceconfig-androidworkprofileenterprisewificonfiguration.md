@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp androidWorkProfileEnterpriseWiFiConfiguration
 description: Durch die Konfigurationen in dieses Profil bereitstellen, können Sie das Gerät Android Arbeit Profil Verbindung zum gewünschten Wi-Fi-Endpunkt anweisen. Durch Angeben von erwartet, dass die Authentifizierungstypen-Methode und der Sicherheit durch Wi-Fi-Endpunkt, dass Sie die Wi-Fi-Verbindung nahtlos für Endbenutzer vornehmen können.
-ms.openlocfilehash: 1ee7bad1a6fe93c0e49a9c809c5d2fd1b47be9e1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9626ae3ce49dc474f80b4c83b978a4a7ed655239
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060264"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306132"
 ---
 # <a name="androidworkprofileenterprisewificonfiguration-resource-type"></a>Ressourcentyp androidWorkProfileEnterpriseWiFiConfiguration
 

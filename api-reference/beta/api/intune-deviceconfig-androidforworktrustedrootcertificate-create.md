@@ -1,12 +1,13 @@
 ---
 title: Erstellen von androidForWorkTrustedRootCertificate
 description: Erstellen eines neuen AndroidForWorkTrustedRootCertificate-Objekts.
-ms.openlocfilehash: 9fe6ca816e8450d4bc946f62f80d3927c2636221
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 07d74dbf4b8315ecbc00e6dac54cd5da8d98ba8e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064285"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307413"
 ---
 # <a name="create-androidforworktrustedrootcertificate"></a>Erstellen von androidForWorkTrustedRootCertificate
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

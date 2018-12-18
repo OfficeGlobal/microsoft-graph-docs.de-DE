@@ -1,12 +1,13 @@
 ---
 title: vppToken-Ressourcentyp
 description: Sie erwerben mehrere Lizenzen für iOS-Apps über das Apple Volume Purchase Program for Business oder Education. Dies umfasst das Einrichten eines Apple VPP-Kontos auf der Apple-Website und das Hochladen des Apple VPP Business- oder Education-Tokens in Intune. Dann können Sie Ihre Volumenlizenzierungsinformationen mit Intune synchronisieren und die volumenlizenzierte App-Nutzung nachverfolgen. Sie können mehrere Apple VPP Business- oder Education-Token hochladen.
-ms.openlocfilehash: 48b7b455cc4e8af99ccfb33dfa5cc7c4a7989e15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd4fdcda2af6964b7ad506d8f1b08b23586b4af9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064319"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306839"
 ---
 # <a name="vpptoken-resource-type"></a>vppToken-Ressourcentyp
 

@@ -1,12 +1,13 @@
 ---
 title: Abrufen von „managedDeviceMobileAppConfigurationDeviceSummary“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs managedDeviceMobileAppConfigurationDeviceSummary.
-ms.openlocfilehash: 426c2c65f6bbf0c8969ae98330ee04f6d4b7c4a1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c435fcb8c91b540fc8fa07b1ee9660bf193b7bc2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063283"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306034"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicesummary"></a>Abrufen von „managedDeviceMobileAppConfigurationDeviceSummary“
 
@@ -36,9 +37,9 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

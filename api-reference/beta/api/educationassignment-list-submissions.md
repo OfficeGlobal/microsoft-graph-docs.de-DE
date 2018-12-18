@@ -1,12 +1,13 @@
 ---
 title: Liste Übermittlungen
 description: Listen Sie alle Übermittlungen, die diese Zuordnung zugeordnet. Lehrer erhalten alle Übermittlungen, während nur ein Schüler Übermittlungen erhalten, denen sie zugeordnet sind.
-ms.openlocfilehash: b4b351fb96e7524fef8c17bba0ad6aeacd2b14db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: ac7bd47b4cbc4549f38239c4a68504bd20b3a2e8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058994"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308428"
 ---
 # <a name="list-submissions"></a>Liste Übermittlungen
 
@@ -32,7 +33,7 @@ GET /education/classes/{id}/assignments/{id}/submissions
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

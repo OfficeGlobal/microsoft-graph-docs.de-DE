@@ -1,12 +1,13 @@
 ---
 title: Educationschool-Eigenschaften aktualisieren
 description: Aktualisieren der Eigenschaften eines school-Objekts.
-ms.openlocfilehash: 5d57356abc728f75b33cf0b6650faff1e94cce6a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: fab3eea2896b96881512c1390583bd25b1139ea2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063929"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309240"
 ---
 # <a name="update-educationschool-properties"></a>Educationschool-Eigenschaften aktualisieren
 
@@ -29,7 +30,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 PATCH /education/schools/{id}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

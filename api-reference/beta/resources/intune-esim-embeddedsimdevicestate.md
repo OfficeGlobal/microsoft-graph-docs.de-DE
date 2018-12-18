@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp embeddedSIMDeviceState
 description: Beschreibt den eingebetteten SIM Code Bereitstellung Aktivierungsstatus in Bezug auf einem Gerät.
-ms.openlocfilehash: 03d5d5d5dea85b3ecccf98fe57bc0611e2986063
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ef7611e96b1b6f3bba0a3c59dead85ede41b2eda
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064466"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308456"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>Ressourcentyp embeddedSIMDeviceState
 

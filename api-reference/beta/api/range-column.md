@@ -1,12 +1,13 @@
 ---
 title: 'Range: Column'
 description: Ruft eine Spalte ab, die im Bereich enthalten ist.
-ms.openlocfilehash: dde991dff164f5abab34c0acccc4127ece76b673
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 6606562be4005528978696e2fe4e23fae991278d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063712"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310164"
 ---
 # <a name="range-column"></a>Range: Column
 

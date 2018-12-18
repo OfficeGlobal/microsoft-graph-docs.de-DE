@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp outlookTaskFolder
 description: 'Ein Ordner mit Outlook-Aufgaben (Auflistung von OutlookTask-Objekten). '
-ms.openlocfilehash: e3fb9d73dbd9458048749331d14f933d838d4243
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 505b6bf0fe172d701d85230b907727663595d9d3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063653"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306209"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>Ressourcentyp outlookTaskFolder
 

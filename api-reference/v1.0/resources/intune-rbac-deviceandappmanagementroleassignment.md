@@ -1,12 +1,13 @@
 ---
 title: deviceAndAppManagementRoleAssignment-Ressourcentyp
 description: Die Rollenzuweisungsressource. Rollenzuweisungen verknüpfen eine Rollendefinition mit Membern und Bereichen. Es kann eine oder mehrere Rollenzuweisungen pro Rolle geben. Dies gilt für benutzerdefinierte und integrierte Rollen.
-ms.openlocfilehash: 4e81c48435b941170442d7a1287a2157ebd764af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 23300e40afab6edd2033857e828ea0f65e52d604
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019305"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309310"
 ---
 # <a name="deviceandappmanagementroleassignment-resource-type"></a>deviceAndAppManagementRoleAssignment-Ressourcentyp
 

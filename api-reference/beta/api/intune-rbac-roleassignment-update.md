@@ -1,12 +1,13 @@
 ---
 title: roleAssignment aktualisieren
 description: Aktualisieren der Eigenschaften eines roleAssignment-Objekts.
-ms.openlocfilehash: 64ec4aa3c885ce2c9de475faef1e00fd14f2576d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 60d2fec52b4338229f53f8abd0d08f04f2c2d569
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060022"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308876"
 ---
 # <a name="update-roleassignment"></a>roleAssignment aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

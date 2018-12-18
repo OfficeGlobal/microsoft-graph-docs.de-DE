@@ -1,12 +1,13 @@
 ---
 title: Liste windows10PkcsCertificateProfiles
 description: Listeneigenschaften und Beziehungen der windows10PkcsCertificateProfile-Objekte.
-ms.openlocfilehash: e4d9cf9f584e361584b816041382a884c10635b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ca2cddc5459a61c18d0afbea38fcb61c0aa9cccb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061735"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308253"
 ---
 # <a name="list-windows10pkcscertificateprofiles"></a>Liste windows10PkcsCertificateProfiles
 
@@ -35,9 +36,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

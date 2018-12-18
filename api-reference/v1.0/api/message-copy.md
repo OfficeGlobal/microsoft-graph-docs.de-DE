@@ -1,12 +1,13 @@
 ---
 title: 'message: copy'
 description: Mit dieser API können Sie Nachrichten in Ordner kopieren.
-ms.openlocfilehash: 0883c847030eaf72f96a0ca4665bf002feba8ca2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 56517ce5233ab4327b57620fe8b240edd2acc45b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020037"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309296"
 ---
 # <a name="message-copy"></a>message: copy
 
@@ -35,9 +36,9 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile | Wert |
+| Header | Wert |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Erforderlich. |
+| Autorisierung | `Bearer {token}`. Erforderlich. |
 | Content-Type | `application/json`. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext

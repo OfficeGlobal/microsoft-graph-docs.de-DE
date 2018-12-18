@@ -1,12 +1,13 @@
 ---
 title: iosStoreAppAssignmentSettings-Ressourcentyp
 description: Enthält Eigenschaften zum Zuweisen einer mobilen iOS-Store-App zu einer Gruppe.
-ms.openlocfilehash: ec26e3367aabedfca009db003468164c468e9ecd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2f37a4b0cbcacb9e7223793628422fb7bad8a28c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017189"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306083"
 ---
 # <a name="iosstoreappassignmentsettings-resource-type"></a>iosStoreAppAssignmentSettings-Ressourcentyp
 

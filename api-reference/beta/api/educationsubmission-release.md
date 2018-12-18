@@ -1,12 +1,13 @@
 ---
 title: 'EducationSubmission: Freigeben'
 description: " und gibt an, dass die Benotung erfolgt. Diese Aktion kann nur durch die Lehrer erfolgen."
-ms.openlocfilehash: b521938737f9a3d8208c56ef5ee1b4091d075738
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 9a21c45198ccd0ef933d58721c2d594cf29443bc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060916"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308589"
 ---
 # <a name="educationsubmission-release"></a>EducationSubmission: Freigeben
 
@@ -30,7 +31,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/release
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

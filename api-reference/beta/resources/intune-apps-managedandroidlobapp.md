@@ -1,12 +1,13 @@
 ---
 title: managedAndroidLobApp-Ressourcentyp
 description: Enthält Eigenschaften und geerbte Eigenschaften für verwaltete branchenspezifische Android-Apps.
-ms.openlocfilehash: d97826ed17316ce25603ebc9af2c07588830c7fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 81e67659f787876b4faa02778e6487e099e2d7b0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062022"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308869"
 ---
 # <a name="managedandroidlobapp-resource-type"></a>managedAndroidLobApp-Ressourcentyp
 

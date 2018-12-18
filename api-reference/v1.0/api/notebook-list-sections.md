@@ -1,12 +1,13 @@
 ---
 title: Abschnitte auflisten
 description: Abrufen einer Liste von OnenoteSection-Objekten aus dem angegebenen Notizbuch.
-ms.openlocfilehash: a092630db8815117110c29420481a91aaac57164
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 06072dc31a18c6573dffef67d905da04afec1aa1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019197"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306293"
 ---
 # <a name="list-sections"></a>Abschnitte auflisten
 
@@ -39,7 +40,7 @@ Die Standardabfrage erweitert `parentNotebook` und wählt die zugehörigen Eigen
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 | Accept | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext

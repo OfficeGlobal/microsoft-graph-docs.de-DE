@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp win32LobAppFileSystemDetection
 description: Enthält Datei- oder Ordnerpfads zum Erkennen von einer Win32-App
-ms.openlocfilehash: 914c4f550b480bf16b2048945e66542311653338
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 26d65c8a1fcf70032c780b3e6e00a198a8ff2c30
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064680"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306874"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>Ressourcentyp win32LobAppFileSystemDetection
 

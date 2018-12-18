@@ -1,12 +1,13 @@
 ---
 title: 'workbookPivotTable: refreshAll'
 description: Aktualisiert das PivotTable-Objekt in einem gegebenen Arbeitsblatt.
-ms.openlocfilehash: c9a957efe49dd8d7c83716266c938057d214419d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 08a4015d58e68a3099448be91537b7970d5c1ddd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065742"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308225"
 ---
 # <a name="workbookpivottable-refreshall"></a>workbookPivotTable: refreshAll
 

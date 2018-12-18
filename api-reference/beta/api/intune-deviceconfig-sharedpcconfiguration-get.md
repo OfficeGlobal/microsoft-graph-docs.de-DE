@@ -1,12 +1,13 @@
 ---
 title: sharedPCConfiguration abrufen
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs sharedPCConfiguration.
-ms.openlocfilehash: 93e5eca4d4b26e214a3ba21129781c4479b9623b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8e370d81aca64fb7fe82e173603cf9dbdd270f3d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064877"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307847"
 ---
 # <a name="get-sharedpcconfiguration"></a>sharedPCConfiguration abrufen
 
@@ -38,9 +39,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
