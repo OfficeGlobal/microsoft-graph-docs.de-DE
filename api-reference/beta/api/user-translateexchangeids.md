@@ -1,12 +1,13 @@
 ---
 title: 'Benutzer: TranslateExchangeIds'
 description: Übersetzen Sie IDs von Outlook-bezogene Ressourcen zwischen den Formaten.
-ms.openlocfilehash: e18c59df5a7ecbaa16b954bf74221c8d8d1de5d3
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: dkershaw10
+ms.openlocfilehash: 6dd18fe041c2a303be4ad333b8beeaef168682b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184490"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360578"
 ---
 # <a name="user-translateexchangeids"></a>Benutzer: TranslateExchangeIds
 

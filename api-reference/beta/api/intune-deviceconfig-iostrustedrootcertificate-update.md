@@ -1,12 +1,13 @@
 ---
 title: IosTrustedRootCertificate aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines IosTrustedRootCertificate-Objekts.
-ms.openlocfilehash: 44a3c726c34c2bd5f5a5d7ccf17cb347aee9e598
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fdd707ad86603c3ef13ee75c27722abb9c85bd1e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061149"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355629"
 ---
 # <a name="update-iostrustedrootcertificate"></a>IosTrustedRootCertificate aktualisieren
 
@@ -35,9 +36,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

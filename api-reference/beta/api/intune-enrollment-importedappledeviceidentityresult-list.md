@@ -1,12 +1,13 @@
 ---
 title: Liste importedAppleDeviceIdentityResults
 description: Listeneigenschaften und Beziehungen der ImportedAppleDeviceIdentityResult-Objekte.
-ms.openlocfilehash: 83371cbc4dd16be4f3e38d680ae4fad7ba3b2f83
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a87b4174c74e198da2ef1e6c0e42a5c4973530ce
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064640"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357400"
 ---
 # <a name="list-importedappledeviceidentityresults"></a>Liste importedAppleDeviceIdentityResults
 
@@ -34,9 +35,9 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedApp
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

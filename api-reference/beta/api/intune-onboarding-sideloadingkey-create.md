@@ -1,12 +1,13 @@
 ---
 title: Erstellen von sideLoadingKey
 description: Erstellen eines neuen SideLoadingKey-Objekts.
-ms.openlocfilehash: c97b31fd37893433aeaea31539a7eaee021272ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6edce1838499a73c2c28199a87c46fa44a10fe1f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063854"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356308"
 ---
 # <a name="create-sideloadingkey"></a>Erstellen von sideLoadingKey
 
@@ -34,9 +35,9 @@ POST /deviceAppManagement/sideLoadingKeys
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

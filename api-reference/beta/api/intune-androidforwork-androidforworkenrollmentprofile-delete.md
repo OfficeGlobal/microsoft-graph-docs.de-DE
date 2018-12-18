@@ -1,12 +1,13 @@
 ---
 title: androidForWorkEnrollmentProfile löschen
 description: Löscht ein androidForWorkEnrollmentProfile-Objekt.
-ms.openlocfilehash: 599a25bd616c5c7bf44e61bc5b12fefaed429e90
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4a5e47062cf228f45d1d2b62bc1b13e17940cbd6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058934"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358835"
 ---
 # <a name="delete-androidforworkenrollmentprofile"></a>androidForWorkEnrollmentProfile löschen
 
@@ -34,9 +35,9 @@ DELETE /deviceManagement/androidForWorkEnrollmentProfiles/{androidForWorkEnrollm
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

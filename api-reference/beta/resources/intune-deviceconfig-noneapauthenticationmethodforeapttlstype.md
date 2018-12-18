@@ -1,12 +1,13 @@
 ---
 title: NonEapAuthenticationMethodForEapTtlsType Enum-Typ
 description: Nicht-EAP-Methoden für die Authentifizierung.
-ms.openlocfilehash: a8321f433be88ea96a258012f0ae1eb9b3da319b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 57d24189da1a6bc5f552ad32d2be9c4557539dab
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061324"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357267"
 ---
 # <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a>NonEapAuthenticationMethodForEapTtlsType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27061324"
 
 Nicht-EAP-Methoden für die Authentifizierung.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |unencryptedPassword|0|Unverschlüsselte Kennwort (PAP).|
 |challengeHandshakeAuthenticationProtocol|1|Herausforderung Handshake Authentication-Protokoll (CHAP).|

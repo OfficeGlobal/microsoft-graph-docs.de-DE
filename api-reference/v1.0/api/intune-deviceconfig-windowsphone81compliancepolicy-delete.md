@@ -1,12 +1,13 @@
 ---
 title: windowsPhone81CompliancePolicy löschen
 description: Löscht ein windowsPhone81CompliancePolicy-Objekt.
-ms.openlocfilehash: d0bece2e581f99d404c7d5ee2c6f459090f74ad4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b08ba8ee82eb2c3d31c1ec51e57710bd65441f0e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019777"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359899"
 ---
 # <a name="delete-windowsphone81compliancepolicy"></a>windowsPhone81CompliancePolicy löschen
 
@@ -32,9 +33,9 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Aktion „assign“
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 9a7d1fdbcfb494fa1e51f4d961498c87e936ca27
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: df7fb0c3a0ce96cbe1b7d44978bc79e7df71d2fd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064512"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358402"
 ---
 # <a name="assign-action"></a>Aktion „assign“
 
@@ -36,9 +37,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

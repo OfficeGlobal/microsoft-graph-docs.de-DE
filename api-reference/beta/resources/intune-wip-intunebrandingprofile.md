@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp intuneBrandingProfile
 description: Diese Entität enthält Daten, die bei der Anpassung der Mandant Ebene das Unternehmensportal Applications als auch die Endbenutzer Webportal verwendet werden.
-ms.openlocfilehash: b85f33731f91a5b239a00a2a537f5e0fdbef56a9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e37105653f441da6aeb8d549b7690b8044de3186
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058492"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357155"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>Ressourcentyp intuneBrandingProfile
 

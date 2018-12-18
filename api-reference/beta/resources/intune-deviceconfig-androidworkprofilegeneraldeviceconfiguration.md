@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp androidWorkProfileGeneralDeviceConfiguration
 description: Android Arbeit Profil allgemeine Gerätekonfiguration.
-ms.openlocfilehash: b3a6df051800966724754de93919889c2f4220de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4b784d2bbcafc01caf7d4fb6129f590641c32d32
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063920"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357911"
 ---
 # <a name="androidworkprofilegeneraldeviceconfiguration-resource-type"></a>Ressourcentyp androidWorkProfileGeneralDeviceConfiguration
 

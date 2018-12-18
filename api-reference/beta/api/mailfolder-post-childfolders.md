@@ -1,12 +1,13 @@
 ---
 title: Erstellen von mailFolder
 description: Verwenden Sie diese API, um eine neue untergeordnete MailFolder erstellen.
-ms.openlocfilehash: 44d9e9ebfd721a68734376342500ad1e2a182cda
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: e893f28878b14fa76d8cda16a5b37f795ed235f2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062531"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357274"
 ---
 # <a name="create-mailfolder"></a>Erstellen von mailFolder
 
@@ -37,9 +38,9 @@ Geben Sie in der Abfrage-URL als eine Ordner-ID oder den Ordnernamen einer bekan
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile | Wert |
+| Header | Wert |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Erforderlich. |
+| Autorisierung | `Bearer {token}`. Erforderlich. |
 | Content-Type | `application/json`. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext

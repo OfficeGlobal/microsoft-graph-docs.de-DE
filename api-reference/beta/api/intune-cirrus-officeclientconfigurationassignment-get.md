@@ -1,12 +1,13 @@
 ---
 title: Abrufen von officeClientConfigurationAssignment
 description: Lesen Sie Eigenschaften und Beziehungen des OfficeClientConfigurationAssignment-Objekts.
-ms.openlocfilehash: f0d68aab26f6f0704f7714bb9e897a7592f53801
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4aec74e0df54d86ccffd5fb216ebfc1781412f5c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058297"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356315"
 ---
 # <a name="get-officeclientconfigurationassignment"></a>Abrufen von officeClientConfigurationAssignment
 
@@ -36,9 +37,9 @@ GET /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assi
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Abrufen von androidForWorkPkcsCertificateProfile
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidForWorkPkcsCertificateProfile-Objekts.
-ms.openlocfilehash: 3549871def9abd10431471a26de0263669d30392
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8f81b1843121909e8faf86e23789622739fd6404
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061557"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354901"
 ---
 # <a name="get-androidforworkpkcscertificateprofile"></a>Abrufen von androidForWorkPkcsCertificateProfile
 
@@ -38,9 +39,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

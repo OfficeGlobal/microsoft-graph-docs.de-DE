@@ -1,12 +1,13 @@
 ---
 title: Abrufen von deviceManagementScriptUserState
 description: Lesen Sie Eigenschaften und Beziehungen des DeviceManagementScriptUserState-Objekts.
-ms.openlocfilehash: d5175a6dc2b5562ac142d505a9a9025c94143bc4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a1dbe0bf839c52dc8b1d8c4834188154a0bd1095
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065090"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356777"
 ---
 # <a name="get-devicemanagementscriptuserstate"></a>Abrufen von deviceManagementScriptUserState
 
@@ -36,9 +37,9 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRun
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

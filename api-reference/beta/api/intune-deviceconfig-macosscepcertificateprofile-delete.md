@@ -1,12 +1,13 @@
 ---
 title: MacOSScepCertificateProfile löschen
 description: Löscht eine MacOSScepCertificateProfile.
-ms.openlocfilehash: a1e864ef86b7755a7a56f0503accc6f1cf8ea0be
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6315068d7e2b66a26069431b69a3bd53cc3d3103
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063558"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356112"
 ---
 # <a name="delete-macosscepcertificateprofile"></a>MacOSScepCertificateProfile löschen
 
@@ -36,9 +37,9 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

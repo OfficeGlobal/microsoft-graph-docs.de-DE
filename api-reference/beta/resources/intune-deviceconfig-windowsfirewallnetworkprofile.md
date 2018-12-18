@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp „windowsFirewallNetworkProfile“
 description: Richtlinien im Windows-Firewall-Profil
-ms.openlocfilehash: eb27eefb636abfa274cd018a637ccc364ef227c9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ff128f004626d846ae27815b656522607cb3a07c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062102"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358359"
 ---
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>Ressourcentyp „windowsFirewallNetworkProfile“
 

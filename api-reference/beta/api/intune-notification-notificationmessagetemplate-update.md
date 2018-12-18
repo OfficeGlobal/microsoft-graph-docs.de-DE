@@ -1,12 +1,13 @@
 ---
 title: notificationMessageTemplate aktualisieren
 description: Aktualisiert die Eigenschaften von Objekten des Typs notificationMessageTemplate.
-ms.openlocfilehash: d86fd844165df3deb0f3a183e3d0d65b8b210d2d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 02c431370560dc9785e682bc7307ee530ae1d4fd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066128"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357358"
 ---
 # <a name="update-notificationmessagetemplate"></a>notificationMessageTemplate aktualisieren
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

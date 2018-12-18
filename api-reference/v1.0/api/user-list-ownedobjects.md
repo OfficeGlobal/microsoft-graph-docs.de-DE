@@ -1,12 +1,13 @@
 ---
 title: ownedObjects auflisten
 description: Mit dieser API können Sie eine Liste aller Verzeichnisobjekte abrufen, denen ein Benutzer als Besitzer zugewiesen ist.
-ms.openlocfilehash: d88340f26f3243d14fd89aa049888b2ff7ca87e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 44f22169b6653366301a9f829720d78539ab6af6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016243"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360361"
 ---
 # <a name="list-ownedobjects"></a>ownedObjects auflisten
 
@@ -28,7 +29,7 @@ GET /users/{id | userPrincipalName}/ownedObjects
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Accept  | application/json|

@@ -1,12 +1,13 @@
 ---
 title: Erstellen Sie eine Einstellung für die Verzeichnis auf Gruppen
 description: Verwenden Sie diese API, um eine neue Einstellung Verzeichnis für die Gruppe zu erstellen.
-ms.openlocfilehash: d8bb0750085a23df05100ec0072024d42247b3cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 2e400babc809bdc8d9277cad1bd41b8b714e4e92
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063912"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358996"
 ---
 # <a name="create-a-directory-setting-on-groups"></a>Erstellen Sie eine Einstellung für die Verzeichnis auf Gruppen
 
@@ -30,7 +31,7 @@ POST /groups/{id}/settings
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer <token>. Erforderlich|
+| Autorisierung  | Bearer <token>. Erforderlich|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [Verzeichnisberechtigungen](../resources/directorysetting.md) -Objekts.

@@ -1,12 +1,13 @@
 ---
 title: 'Ereignis: weiterleiten'
 description: 'Mit dieser Aktion kann der Organisator oder Teilnehmer einer Besprechung-Ereignisses zum Weiterleiten der '
-ms.openlocfilehash: 09a98f82e72eef7b223dfccb1f4433c3206f0f7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 77f2c99b1adc7fcece353120e4692b37fd65a78f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058019"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355993"
 ---
 # <a name="event-forward"></a>Ereignis: weiterleiten
 
@@ -49,7 +50,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext

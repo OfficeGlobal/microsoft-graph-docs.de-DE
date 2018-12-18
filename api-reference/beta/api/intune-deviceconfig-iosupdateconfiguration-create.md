@@ -1,12 +1,13 @@
 ---
 title: iosUpdateConfiguration erstellen
 description: Erstellen eines neuen iosUpdateConfiguration-Objekts.
-ms.openlocfilehash: 7787fb595869b74f3476f0050285206bd339fdde
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1b3077496ad606906ff842c0983632184e88c6c3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058513"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357554"
 ---
 # <a name="create-iosupdateconfiguration"></a>iosUpdateConfiguration erstellen
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

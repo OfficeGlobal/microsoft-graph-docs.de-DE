@@ -1,12 +1,13 @@
 ---
 title: VpnTrafficRuleRoutingPolicyType Enum-Typ
 description: Gibt die routing-Richtlinie für eine VPN-Datenverkehr Regel an.
-ms.openlocfilehash: df51851ef0820f5982a6689421503364e9064c78
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5aa3f44f0e4ccf177154f97e9849093c52728b2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060904"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343421"
 ---
 # <a name="vpntrafficruleroutingpolicytype-enum-type"></a>VpnTrafficRuleRoutingPolicyType Enum-Typ
 
@@ -16,9 +17,9 @@ ms.locfileid: "27060904"
 
 Gibt die routing-Richtlinie für eine VPN-Datenverkehr Regel an.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
-|n/v|0|Kein routing-Richtlinie angegeben.|
+|Keine|0|Kein routing-Richtlinie angegeben.|
 |splitTunnel|1|Netzwerkverkehr für das angegebene app werden über VPN weitergeleitet.|
 |forceTunnel|2|Durch das VPN werden alle Netzwerkdatenverkehr weitergeleitet.|
 
