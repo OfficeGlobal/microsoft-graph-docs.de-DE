@@ -1,28 +1,29 @@
 ---
 title: deviceAndAppManagementRoleDefinition löschen
 description: Löscht ein deviceAndAppManagementRoleDefinition-Objekt.
-ms.openlocfilehash: ed9f150a23fdf42342f4d45b68cfc2431aa9ed40
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 371e7a965dbaefef10bf6af09b006d2ba3412a60
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018069"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331290"
 ---
-# <a name="delete-deviceandappmanagementroledefinition"></a><span data-ttu-id="afd3e-103">deviceAndAppManagementRoleDefinition löschen</span><span class="sxs-lookup"><span data-stu-id="afd3e-103">Delete deviceAndAppManagementRoleDefinition</span></span>
+# <a name="delete-deviceandappmanagementroledefinition"></a><span data-ttu-id="f3f25-103">deviceAndAppManagementRoleDefinition löschen</span><span class="sxs-lookup"><span data-stu-id="f3f25-103">Delete deviceAndAppManagementRoleDefinition</span></span>
 
-> <span data-ttu-id="afd3e-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="afd3e-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f3f25-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="f3f25-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="afd3e-105">Löscht ein [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="afd3e-105">Deletes a [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="afd3e-106">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="afd3e-106">Prerequisites</span></span>
-<span data-ttu-id="afd3e-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="afd3e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f3f25-105">Löscht ein [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="f3f25-105">Deletes a [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f3f25-106">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="f3f25-106">Prerequisites</span></span>
+<span data-ttu-id="f3f25-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f3f25-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="afd3e-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="afd3e-109">Permission type</span></span>|<span data-ttu-id="afd3e-110">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="afd3e-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="f3f25-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="f3f25-109">Permission type</span></span>|<span data-ttu-id="f3f25-110">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="f3f25-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="afd3e-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="afd3e-111">Delegated (work or school account)</span></span>|<span data-ttu-id="afd3e-112">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="afd3e-112">DeviceManagementRBAC.ReadWrite.All</span></span>|
-|<span data-ttu-id="afd3e-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="afd3e-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="afd3e-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="afd3e-114">Not supported.</span></span>|
-|<span data-ttu-id="afd3e-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="afd3e-115">Application</span></span>|<span data-ttu-id="afd3e-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="afd3e-116">Not supported.</span></span>|
+|<span data-ttu-id="f3f25-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="f3f25-111">Delegated (work or school account)</span></span>|<span data-ttu-id="f3f25-112">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f3f25-112">DeviceManagementRBAC.ReadWrite.All</span></span>|
+|<span data-ttu-id="f3f25-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="f3f25-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f3f25-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="f3f25-114">Not supported.</span></span>|
+|<span data-ttu-id="f3f25-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="f3f25-115">Application</span></span>|<span data-ttu-id="f3f25-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="f3f25-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="afd3e-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="afd3e-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f3f25-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="f3f25-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -32,27 +33,27 @@ DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}
 DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/roleDefinition
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="afd3e-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="afd3e-118">Request headers</span></span>
-|<span data-ttu-id="afd3e-119">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="afd3e-119">Header</span></span>|<span data-ttu-id="afd3e-120">Wert</span><span class="sxs-lookup"><span data-stu-id="afd3e-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f3f25-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="f3f25-118">Request headers</span></span>
+|<span data-ttu-id="f3f25-119">Header</span><span class="sxs-lookup"><span data-stu-id="f3f25-119">Header</span></span>|<span data-ttu-id="f3f25-120">Wert</span><span class="sxs-lookup"><span data-stu-id="f3f25-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="afd3e-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="afd3e-121">Authorization</span></span>|<span data-ttu-id="afd3e-122">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="afd3e-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="afd3e-123">Accept</span><span class="sxs-lookup"><span data-stu-id="afd3e-123">Accept</span></span>|<span data-ttu-id="afd3e-124">application/json</span><span class="sxs-lookup"><span data-stu-id="afd3e-124">application/json</span></span>|
+|<span data-ttu-id="f3f25-121">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="f3f25-121">Authorization</span></span>|<span data-ttu-id="f3f25-122">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="f3f25-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f3f25-123">Accept</span><span class="sxs-lookup"><span data-stu-id="f3f25-123">Accept</span></span>|<span data-ttu-id="f3f25-124">application/json</span><span class="sxs-lookup"><span data-stu-id="f3f25-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="afd3e-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="afd3e-125">Request body</span></span>
-<span data-ttu-id="afd3e-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="afd3e-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f3f25-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="f3f25-125">Request body</span></span>
+<span data-ttu-id="f3f25-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="f3f25-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="afd3e-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="afd3e-127">Response</span></span>
-<span data-ttu-id="afd3e-128">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="afd3e-128">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="f3f25-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="f3f25-127">Response</span></span>
+<span data-ttu-id="f3f25-128">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="f3f25-128">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="afd3e-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="afd3e-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="afd3e-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="afd3e-130">Request</span></span>
-<span data-ttu-id="afd3e-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="afd3e-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f3f25-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f3f25-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="f3f25-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="f3f25-130">Request</span></span>
+<span data-ttu-id="f3f25-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="f3f25-131">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDefinitionId}
 ```
 
-### <a name="response"></a><span data-ttu-id="afd3e-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="afd3e-132">Response</span></span>
-<span data-ttu-id="afd3e-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="afd3e-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f3f25-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="f3f25-132">Response</span></span>
+<span data-ttu-id="f3f25-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="f3f25-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

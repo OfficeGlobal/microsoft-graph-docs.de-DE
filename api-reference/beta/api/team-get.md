@@ -1,53 +1,54 @@
 ---
 title: Get-team
 description: Abrufen der Eigenschaften und Beziehungen zwischen dem angegebenen Team.
-ms.openlocfilehash: 1b255e54f4c46f2efe06e59452011b4a1f78ed36
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: dfa59948a9bffce77c98a3462f919e75fe18042e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222471"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329232"
 ---
-# <a name="get-team"></a><span data-ttu-id="f7142-103">Get-team</span><span class="sxs-lookup"><span data-stu-id="f7142-103">Get team</span></span>
+# <a name="get-team"></a><span data-ttu-id="cb7f6-103">Get-team</span><span class="sxs-lookup"><span data-stu-id="cb7f6-103">Get team</span></span>
 
-> <span data-ttu-id="f7142-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="f7142-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f7142-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="f7142-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="cb7f6-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="cb7f6-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="cb7f6-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="cb7f6-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="f7142-106">Abrufen der Eigenschaften und Beziehungen des angegebenen [Team](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="f7142-106">Retrieve the properties and relationships of the specified [team](../resources/team.md).</span></span>
+<span data-ttu-id="cb7f6-106">Abrufen der Eigenschaften und Beziehungen des angegebenen [Team](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="cb7f6-106">Retrieve the properties and relationships of the specified [team](../resources/team.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f7142-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="f7142-107">Permissions</span></span>
-<span data-ttu-id="f7142-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f7142-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="cb7f6-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="cb7f6-107">Permissions</span></span>
+<span data-ttu-id="cb7f6-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cb7f6-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f7142-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="f7142-110">Permission type</span></span>      | <span data-ttu-id="f7142-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="f7142-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cb7f6-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="cb7f6-110">Permission type</span></span>      | <span data-ttu-id="cb7f6-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="cb7f6-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f7142-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="f7142-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f7142-113">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f7142-113">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="f7142-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="f7142-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f7142-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="f7142-115">Not supported.</span></span>    |
-|<span data-ttu-id="f7142-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="f7142-116">Application</span></span> | <span data-ttu-id="f7142-117">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f7142-117">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="cb7f6-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="cb7f6-112">Delegated (work or school account)</span></span> | <span data-ttu-id="cb7f6-113">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cb7f6-113">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="cb7f6-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="cb7f6-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cb7f6-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="cb7f6-115">Not supported.</span></span>    |
+|<span data-ttu-id="cb7f6-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="cb7f6-116">Application</span></span> | <span data-ttu-id="cb7f6-117">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cb7f6-117">Group.Read.All, Group.ReadWrite.All</span></span>    |
 
-> <span data-ttu-id="f7142-118">**Hinweis**: Diese API unterstützt Administratorberechtigungen.</span><span class="sxs-lookup"><span data-stu-id="f7142-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="f7142-119">Globale Administratoren und Microsoft-Teams Dienstadministratoren können Teams zugreifen, denen sie nicht Mitglied sind.</span><span class="sxs-lookup"><span data-stu-id="f7142-119">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="cb7f6-118">**Hinweis**: Diese API unterstützt Administratorberechtigungen.</span><span class="sxs-lookup"><span data-stu-id="cb7f6-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="cb7f6-119">Globale Administratoren und Microsoft-Teams Dienstadministratoren können Teams zugreifen, denen sie nicht Mitglied sind.</span><span class="sxs-lookup"><span data-stu-id="cb7f6-119">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="f7142-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="f7142-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cb7f6-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="cb7f6-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="f7142-121">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="f7142-121">Optional query parameters</span></span>
-<span data-ttu-id="f7142-122">Diese Methode unterstützt die $select und $erweitern [OData-Abfrageparameter](/graph/query-parameters) helfen, die Antwort anzupassen.</span><span class="sxs-lookup"><span data-stu-id="f7142-122">This method supports the $select and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="cb7f6-121">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="cb7f6-121">Optional query parameters</span></span>
+<span data-ttu-id="cb7f6-122">Diese Methode unterstützt die $select und $erweitern [OData-Abfrageparameter](/graph/query-parameters) helfen, die Antwort anzupassen.</span><span class="sxs-lookup"><span data-stu-id="cb7f6-122">This method supports the $select and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f7142-123">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="f7142-123">Request headers</span></span>
-| <span data-ttu-id="f7142-124">Header</span><span class="sxs-lookup"><span data-stu-id="f7142-124">Header</span></span>       | <span data-ttu-id="f7142-125">Wert</span><span class="sxs-lookup"><span data-stu-id="f7142-125">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="cb7f6-123">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="cb7f6-123">Request headers</span></span>
+| <span data-ttu-id="cb7f6-124">Header</span><span class="sxs-lookup"><span data-stu-id="cb7f6-124">Header</span></span>       | <span data-ttu-id="cb7f6-125">Wert</span><span class="sxs-lookup"><span data-stu-id="cb7f6-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="f7142-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="f7142-126">Authorization</span></span>  | <span data-ttu-id="f7142-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="f7142-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="cb7f6-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="cb7f6-126">Authorization</span></span>  | <span data-ttu-id="cb7f6-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="cb7f6-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="f7142-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="f7142-129">Request body</span></span>
-<span data-ttu-id="f7142-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="f7142-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cb7f6-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="cb7f6-129">Request body</span></span>
+<span data-ttu-id="cb7f6-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="cb7f6-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f7142-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="f7142-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cb7f6-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="cb7f6-131">Response</span></span>
 
-<span data-ttu-id="f7142-132">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und ein [Team](../resources/team.md) -Objekt aus der Antwort.</span><span class="sxs-lookup"><span data-stu-id="f7142-132">If successful, this method returns a `200 OK` response code and a [team](../resources/team.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="f7142-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f7142-133">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="f7142-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="f7142-134">Request</span></span>
-<span data-ttu-id="f7142-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="f7142-135">The following is an example of the request.</span></span>
+<span data-ttu-id="cb7f6-132">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und ein [Team](../resources/team.md) -Objekt aus der Antwort.</span><span class="sxs-lookup"><span data-stu-id="cb7f6-132">If successful, this method returns a `200 OK` response code and a [team](../resources/team.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="cb7f6-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="cb7f6-133">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="cb7f6-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="cb7f6-134">Request</span></span>
+<span data-ttu-id="cb7f6-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="cb7f6-135">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
@@ -55,10 +56,10 @@ GET /teams/{id}
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}
 ```
-#### <a name="response"></a><span data-ttu-id="f7142-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="f7142-136">Response</span></span>
-<span data-ttu-id="f7142-137">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="f7142-137">The following is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="cb7f6-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="cb7f6-136">Response</span></span>
+<span data-ttu-id="cb7f6-137">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="cb7f6-137">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="f7142-p105">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="f7142-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="cb7f6-p105">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="cb7f6-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "ignored",
   "truncated": true,
