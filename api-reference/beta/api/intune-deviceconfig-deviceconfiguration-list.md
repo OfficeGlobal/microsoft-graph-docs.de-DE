@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „deviceConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs deviceConfiguration auf.
-ms.openlocfilehash: a8503cc70786680eacbb845df56ba97ae81525d6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0c12465857c7e33386af41b1049cf24951fea561
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061837"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335301"
 ---
 # <a name="list-deviceconfigurations"></a>Auflisten von „deviceConfiguration“
 
@@ -35,9 +36,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

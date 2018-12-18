@@ -1,12 +1,13 @@
 ---
 title: Abrufen von „managedAppPolicy“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs managedAppPolicy.
-ms.openlocfilehash: 04daf977169d2e0c28ac034fc95807877d2d495c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 07f9078bb602adf800f818697627bdc3c174b819
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061071"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363788"
 ---
 # <a name="get-managedapppolicy"></a>Abrufen von „managedAppPolicy“
 
@@ -38,9 +39,9 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

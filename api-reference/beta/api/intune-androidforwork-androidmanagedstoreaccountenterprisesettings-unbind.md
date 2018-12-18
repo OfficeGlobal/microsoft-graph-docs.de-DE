@@ -1,12 +1,13 @@
 ---
 title: unbind-Aktion
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 6c5da4c2ddfefd716f3812aa16de61afe4354b26
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 52acd9ede8d72d2c28de1674d1d60ad67c1c06e2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061887"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338437"
 ---
 # <a name="unbind-action"></a>unbind-Aktion
 
@@ -34,9 +35,9 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/unbind
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

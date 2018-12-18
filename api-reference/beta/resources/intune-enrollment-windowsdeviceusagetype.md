@@ -1,12 +1,13 @@
 ---
 title: WindowsDeviceUsageType Enum-Typ
 description: Noch nicht dokumentiert
-ms.openlocfilehash: ee576d5f2f938231ebb14cf8a8b9692ab9d7d45a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f69d6699177dd722acf588c1f41e878df3aee644
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064072"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344359"
 ---
 # <a name="windowsdeviceusagetype-enum-type"></a>WindowsDeviceUsageType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27064072"
 
 Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |singleUser|0|Einzelbenutzer Gerätetyp|
 |shared|1|Freigegebene Gerätetyp|

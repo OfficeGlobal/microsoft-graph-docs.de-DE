@@ -1,12 +1,13 @@
 ---
 title: iosHomeScreenItem-Ressourcentyp
 description: Stellt ein Element auf dem iOS-Startbildschirm dar.
-ms.openlocfilehash: 57d6e3c748b99dce88f195ed6906e14fdf80157f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 168214da57f2cc903bac110709d721061d4298cd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016029"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362517"
 ---
 # <a name="ioshomescreenitem-resource-type"></a>iosHomeScreenItem-Ressourcentyp
 

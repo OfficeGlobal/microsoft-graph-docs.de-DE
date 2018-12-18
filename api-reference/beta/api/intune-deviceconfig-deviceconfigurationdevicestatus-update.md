@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „deviceConfigurationDeviceStatus“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceConfigurationDeviceStatus.
-ms.openlocfilehash: 3f5671c8e5019e065fd9e085856f28c39fef60f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1beed2860cdaf2509f5ca6cb3e5f7c4ea3d1e456
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060224"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357617"
 ---
 # <a name="update-deviceconfigurationdevicestatus"></a>Aktualisieren von „deviceConfigurationDeviceStatus“
 
@@ -42,9 +43,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

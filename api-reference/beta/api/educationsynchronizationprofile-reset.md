@@ -1,12 +1,13 @@
 ---
 title: Zurücksetzen Sie auf eine EducationSynchronizationProfile sync
 description: Setzen Sie die Synchronisierung eines bestimmten Schule Daten Synchronisierungsprofils im Mandanten zurück.
-ms.openlocfilehash: 4be91b7d6229148c51dc8fb1279a9078fb5cad7b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 29d21318737ceba3bd380eaf20a9500a6a711857
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062715"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362440"
 ---
 # <a name="reset-sync-on-an-educationsynchronizationprofile"></a>Zurücksetzen Sie auf eine EducationSynchronizationProfile sync
 
@@ -34,7 +35,7 @@ POST /synchronizationProfiles/{id}/reset
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich.  |
+| Autorisierung  | string  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

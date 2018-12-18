@@ -1,12 +1,13 @@
 ---
 title: ManagedEBookCategory löschen
 description: Löscht eine ManagedEBookCategory.
-ms.openlocfilehash: 959342895569a7f63f65c03a3793d3ebfff46cec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1333a93081ebc77f53345e07b68af6c30de19d7f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064709"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334006"
 ---
 # <a name="delete-managedebookcategory"></a>ManagedEBookCategory löschen
 
@@ -35,9 +36,9 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/categories/{managedEB
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

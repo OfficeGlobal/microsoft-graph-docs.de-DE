@@ -1,12 +1,13 @@
 ---
 title: Unterhaltung abrufen
 description: Mit dieser API können Sie die Eigenschaften und Beziehungen eines Unterhaltungsobjekts abrufen.
-ms.openlocfilehash: 46566229c839e089c415a1728f0ca3d54743df7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 505ea763be6c9a29cad962939ed59ff3e72f2b2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016697"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363683"
 ---
 # <a name="get-conversation"></a>Unterhaltung abrufen
 
@@ -29,7 +30,7 @@ GET /groups/{id}/conversations/{id}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

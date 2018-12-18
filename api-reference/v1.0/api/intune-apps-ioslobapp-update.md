@@ -1,12 +1,13 @@
 ---
 title: iosLobApp aktualisieren
 description: Aktualisieren der Eigenschaften eines iosLobApp-Objekts.
-ms.openlocfilehash: 159bdb4091d5ab0005ad0e9c1ba1720ee85a775e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cffa5603cf92bd8e45c95ebb805618c1293851eb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018190"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354264"
 ---
 # <a name="update-ioslobapp"></a>iosLobApp aktualisieren
 
@@ -32,9 +33,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

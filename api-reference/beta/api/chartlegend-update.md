@@ -1,12 +1,13 @@
 ---
 title: ChartLegend aktualisieren
 description: Dient zum Aktualisieren der Eigenschaften des ChartLegend-Objekts.
-ms.openlocfilehash: 7eb89f40e0f691e597d519070997f90729d8a2f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 05353f51fc7ba659c37fe3d185be48df889bfb55
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058325"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333995"
 ---
 # <a name="update-chartlegend"></a>ChartLegend aktualisieren
 

@@ -1,12 +1,13 @@
 ---
 title: onPremisesConditionalAccessSettings-Ressourcentyp
 description: Einzelne Entität, die die Exchange-Einstellungen für lokalen bedingten Zugriff für einen Mandanten darstellt.
-ms.openlocfilehash: 903a3e6a3fafd837fc8c5caf55eb57d23ddd0d2a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 534d76b00246763c6dec49149920a1f296148596
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018082"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353928"
 ---
 # <a name="onpremisesconditionalaccesssettings-resource-type"></a>onPremisesConditionalAccessSettings-Ressourcentyp
 

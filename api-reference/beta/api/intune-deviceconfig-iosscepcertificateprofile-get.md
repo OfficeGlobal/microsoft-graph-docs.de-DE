@@ -1,12 +1,13 @@
 ---
 title: Abrufen von iosScepCertificateProfile
 description: Lesen Sie Eigenschaften und Beziehungen des IosScepCertificateProfile-Objekts.
-ms.openlocfilehash: 5c352689e334ae3ad5ca5b8a614985bc4496e8fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a038f619ac9f5cf6d12b3f2506a83a5e07a827d0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061872"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332963"
 ---
 # <a name="get-iosscepcertificateprofile"></a>Abrufen von iosScepCertificateProfile
 
@@ -38,9 +39,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

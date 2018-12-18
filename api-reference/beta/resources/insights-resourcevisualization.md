@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp resourceVisualization
 description: Komplexer Typ mit Eigenschaften des Insights.
-ms.openlocfilehash: 3ed61a8547e072938fc073d90f2592baf4c08fba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: d0c54895468fc9a01017e448df57c09c654616e9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063205"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333537"
 ---
 # <a name="resourcevisualization-resource-type"></a>Ressourcentyp resourceVisualization
 
@@ -36,7 +37,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 | Eigenschaft              | Typ          | Beschreibung  |
 | -------------         |---------------| -------------|
 | title                 | String        | Text für das Element.               |
-| Typ              | String        | Medientyp für das Element. Kann zum Filtern von für eine bestimmte Datei auf Grundlage eines bestimmten Typs verwendet werden. Unterstützte Typen finden Sie weiter unten. |
+| type              | String        | Medientyp für das Element. Kann zum Filtern von für eine bestimmte Datei auf Grundlage eines bestimmten Typs verwendet werden. Unterstützte Typen finden Sie weiter unten. |
 | mediaType             | String        | Medientyp für das Element. Kann für verwendet werden, für die Filterung für einen bestimmten Typ der Datei basierend auf unterstützten IANA Media MIME-Typen. Beachten Sie, dass nicht alle Medien MIME-Typen unterstützt werden. |
 | Vorschaubild-URL       | String        | Eine URL für das Element des Vorschaubilds führende. |
 | previewText           | String        | Eine Vorschautext für das Element. |
@@ -56,14 +57,14 @@ Es folgt eine JSON-Darstellung der Ressource.
 -   Publisher
 -   Project
 -   Access
--   Mail
+-   E-Mail
 -   CSV
 -   Archiv
 -   XPS
 -   Audio
 -   Video
 -   Image
--   Web
+-   Netz
 -   Text
 -   XML
 -   Story
@@ -78,7 +79,7 @@ Unterstützten Typen können basierend auf Container unterscheiden sich aus dene
 
 -   OneDriveBusiness
 -   Website
--   Mail
+-   E-Mail
 -   Ablage
 -   Kasten
 -   GDrive

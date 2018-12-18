@@ -1,12 +1,13 @@
 ---
 title: 'workbookRangeView: Bereich'
 description: Geben Sie den Bereich zurück, der der rangeView-Ressource zugeordnet ist.
-ms.openlocfilehash: cebab10e1a8904cf453971e4c3f04badb4b712cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 6e9c0c0f36231a29689c24d721d8c8978e8f1bf0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016031"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362734"
 ---
 # <a name="workbookrangeview-range"></a>workbookRangeView: Bereich
 Geben Sie den Bereich zurück, der der rangeView-Ressource zugeordnet ist.

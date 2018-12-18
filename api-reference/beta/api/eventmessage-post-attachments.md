@@ -1,12 +1,13 @@
 ---
 title: Anlage hinzufügen
 description: Verwenden Sie diese API, um eine neue Anlage zu erstellen.
-ms.openlocfilehash: fdba426b8d461f94b676aac2da3af4996e6427c1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 0c5f82a04339c2171ad9b3b566a949b2397c40b0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058373"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356336"
 ---
 # <a name="add-attachment"></a>Anlage hinzufügen
 
@@ -40,7 +41,7 @@ POST /users/{id|userPrincipalName}/messages/{id}/attachments
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext

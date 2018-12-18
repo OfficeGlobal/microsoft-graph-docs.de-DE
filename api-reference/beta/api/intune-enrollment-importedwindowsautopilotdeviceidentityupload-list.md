@@ -1,12 +1,13 @@
 ---
 title: Liste importedWindowsAutopilotDeviceIdentityUploads
 description: Listeneigenschaften und Beziehungen der ImportedWindowsAutopilotDeviceIdentityUpload-Objekte.
-ms.openlocfilehash: 710bc72af1d674999c44b3608c7eec5cde0798b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c949a665a2d77e69ccd646c1da45f25a82953a7c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063794"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344534"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentityuploads"></a>Liste importedWindowsAutopilotDeviceIdentityUploads
 
@@ -34,9 +35,9 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

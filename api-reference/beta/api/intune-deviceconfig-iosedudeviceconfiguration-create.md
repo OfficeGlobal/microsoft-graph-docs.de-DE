@@ -1,12 +1,13 @@
 ---
 title: Erstellen von iosEduDeviceConfiguration
 description: Erstellen eines neuen IosEduDeviceConfiguration-Objekts.
-ms.openlocfilehash: 51aad445c40e89be6033a6444d375cd354d19c28
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f43fc2f753f4d1c5d83aef0b50f10a2cfabe0b84
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064225"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333929"
 ---
 # <a name="create-iosedudeviceconfiguration"></a>Erstellen von iosEduDeviceConfiguration
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

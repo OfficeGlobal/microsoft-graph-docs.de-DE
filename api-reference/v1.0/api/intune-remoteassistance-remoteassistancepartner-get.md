@@ -1,12 +1,13 @@
 ---
 title: remoteAssistancePartner abrufen
 description: Lesen von Eigenschaften und Beziehungen des remoteAssistancePartner-Objekts.
-ms.openlocfilehash: 66bb7dd5669706155e888bbc8e0196911a08ec8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5eb18d3d03267b0a77713c542d43fb1dd2532369
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019889"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334741"
 ---
 # <a name="get-remoteassistancepartner"></a>remoteAssistancePartner abrufen
 
@@ -34,9 +35,9 @@ GET /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

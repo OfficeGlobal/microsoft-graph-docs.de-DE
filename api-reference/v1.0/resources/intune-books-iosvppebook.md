@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp „iosVppEBook“
 description: Diese Klasse enthält die Eigenschaften eines iOS-VPP-E-Books.
-ms.openlocfilehash: 7d6641c4cfbd7e902342a37b7b8dd78081cd54dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a54c3a846be339dd1b7dcb98169e249122899d84
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016757"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362090"
 ---
 # <a name="iosvppebook-resource-type"></a>Ressourcentyp „iosVppEBook“
 

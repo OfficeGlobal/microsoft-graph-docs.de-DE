@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „mobileAppAssignment“
 description: Diese Methode erstellt ein neues Objekt des Typs mobileAppAssignment.
-ms.openlocfilehash: f08335f131c97e67cb93d8dafcbce4c39bbef2e8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 02fec89a615993bb409fbf3ae6c0a98799311bce
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016423"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333348"
 ---
 # <a name="create-mobileappassignment"></a>Erstellen von „mobileAppAssignment“
 
@@ -32,9 +33,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

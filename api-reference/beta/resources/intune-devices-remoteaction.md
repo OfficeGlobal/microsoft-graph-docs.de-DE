@@ -1,12 +1,13 @@
 ---
 title: RemoteAction Enum-Typ
 description: Remote Aktionen Intune unterstützt.
-ms.openlocfilehash: 8ab503538edd1005106be9d30e67b35b6bb59583
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7b301757ec5bb8c9c9a0336cbc83d6a458579916
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064238"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362559"
 ---
 # <a name="remoteaction-enum-type"></a>RemoteAction Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27064238"
 
 Remote Aktionen Intune unterstützt.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Benutzer versucht, eine unbekannte Aktion.|
 |factoryReset|1|Benutzer initiiert eine Aktion, die Factory Zurücksetzen eines Geräts. |

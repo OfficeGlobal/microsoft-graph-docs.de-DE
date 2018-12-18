@@ -1,12 +1,13 @@
 ---
 title: Erstellen von androidEasEmailProfileConfiguration
 description: Erstellen eines neuen AndroidEasEmailProfileConfiguration-Objekts.
-ms.openlocfilehash: e989bdec5ab9a02065e3bf9faa13bf4b16e448c9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 38e4e36917ac1679420261746713205f77693b73
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062279"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361971"
 ---
 # <a name="create-androideasemailprofileconfiguration"></a>Erstellen von androidEasEmailProfileConfiguration
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp hardwareInformation
 description: Hardwareinformationen für ein bestimmtes Gerät.
-ms.openlocfilehash: 90762426ef3d7b550b9a6fe89343e54d797b3a51
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c483aa800d920a50392d21c326cd20dea7b72e18
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062549"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334524"
 ---
 # <a name="hardwareinformation-resource-type"></a>Ressourcentyp hardwareInformation
 

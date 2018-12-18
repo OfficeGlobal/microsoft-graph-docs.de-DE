@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „windowsPhone81CustomConfiguration“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs windowsPhone81CustomConfiguration.
-ms.openlocfilehash: c1ebf557495da9bc71a20d484cb41dc6e7d44c49
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ddbe6e0f31ec20c8e876441269189906e342f16e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018303"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362608"
 ---
 # <a name="update-windowsphone81customconfiguration"></a>Aktualisieren von „windowsPhone81CustomConfiguration“
 
@@ -32,9 +33,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp educationIdentitySynchronizationConfiguration
 description: Abstrakte Basisklasse für alle Schule Daten Profil Identität Synchronisierung Konfigurationen. Abgeleiteten Klassen definieren Sie das Verhalten für das Synchronisieren von Identitäten. Im folgenden werden die abgeleiteten Typen.
-ms.openlocfilehash: 4476e3b50354fef024925823a8aa1b53ee5a5d3d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: d32eb2b06cb76c578edf4a80e73e5bf6ec6b4757
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062382"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334454"
 ---
 # <a name="educationidentitysynchronizationconfiguration-resource-type"></a>Ressourcentyp educationIdentitySynchronizationConfiguration
 

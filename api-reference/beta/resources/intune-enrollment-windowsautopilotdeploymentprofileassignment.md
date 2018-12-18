@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windowsAutopilotDeploymentProfileAssignment
 description: Eine Zuordnung eines Windows Autopilot Bereitstellung Profils an eine Gruppe AAD.
-ms.openlocfilehash: d750b2ef4069f0f77efd43735038d746c7dfae1e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b9141d9a3126d25dd6de5e342ebb463304e1ae02
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064900"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337121"
 ---
 # <a name="windowsautopilotdeploymentprofileassignment-resource-type"></a>Ressourcentyp windowsAutopilotDeploymentProfileAssignment
 

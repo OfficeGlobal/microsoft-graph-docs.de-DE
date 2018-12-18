@@ -1,12 +1,13 @@
 ---
 title: androidLobApp-Ressourcentyp
 description: Enthält Eigenschaften und geerbte Eigenschaften für branchenspezifische Android-Apps.
-ms.openlocfilehash: 1aabe7c2a328f9a433ef13bb08660954d632eb85
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6ded3a19ee34310f07c1f41eca07707798bbf768
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017213"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363732"
 ---
 # <a name="androidlobapp-resource-type"></a>androidLobApp-Ressourcentyp
 

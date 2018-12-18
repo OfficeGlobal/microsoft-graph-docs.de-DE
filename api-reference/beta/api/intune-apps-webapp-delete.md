@@ -1,12 +1,13 @@
 ---
 title: webApp löschen
 description: Löscht eine webApp.
-ms.openlocfilehash: 6538d2a7945a46ae250fc48e75870cb7f11b2bad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 30b3ed44ead828c07e304a9a6c5c046300f636a3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063099"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362447"
 ---
 # <a name="delete-webapp"></a>webApp löschen
 
@@ -36,9 +37,9 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

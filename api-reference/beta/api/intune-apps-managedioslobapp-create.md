@@ -1,12 +1,13 @@
 ---
 title: managedIOSLobApp erstellen
 description: Erstellen eines neuen managedIOSLobApp-Objekts.
-ms.openlocfilehash: 8e5e4bf9e4d713ce973394eaedfc626114ebc6da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c40e43864395c7bb7c86b1a424837f2b129468a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058010"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342812"
 ---
 # <a name="create-managedioslobapp"></a>managedIOSLobApp erstellen
 
@@ -34,9 +35,9 @@ POST /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: managedIOSStoreApp erstellen
 description: Erstellen eines neuen managedIOSStoreApp-Objekts.
-ms.openlocfilehash: 5b1d9a0292e457dc7be5ec97802b4dc8bbefb6a2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cfc72ef6fa4de29d8e6d48ef4786dd19a7ada3d1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063432"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335728"
 ---
 # <a name="create-managediosstoreapp"></a>managedIOSStoreApp erstellen
 
@@ -34,9 +35,9 @@ POST /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

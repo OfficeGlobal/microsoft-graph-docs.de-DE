@@ -1,12 +1,12 @@
 ---
 title: Abrufen von dataPolicyOperation
 description: Rufen Sie die Eigenschaften des DataPolicyOperation-Objekts ab.
-ms.openlocfilehash: fbc94719f9944adb25f7dd744cf0b15b179f3a5d
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+ms.openlocfilehash: bee3261526914848eea423a30f8f59b0d072a791
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156019"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362083"
 ---
 # <a name="get-datapolicyoperation"></a>Abrufen von dataPolicyOperation
 
@@ -17,9 +17,9 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) |  Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) |  User.Export.All und User.Read.All  |
 |Delegiert (persönliches Microsoft-Konto) |  Nicht zutreffend  |
-|Anwendung | Directory.Read.All, Directory.ReadWrite.All | 
+|Anwendung | User.Export.All und User.Read.All | 
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

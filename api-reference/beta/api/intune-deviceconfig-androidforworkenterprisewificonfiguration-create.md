@@ -1,12 +1,13 @@
 ---
 title: Erstellen von androidForWorkEnterpriseWiFiConfiguration
 description: Erstellen eines neuen AndroidForWorkEnterpriseWiFiConfiguration-Objekts.
-ms.openlocfilehash: 5600d70b237cd910060db7ed0f27ae3e0dedad69
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4c78878b7d065d4ced551b0c51f3b02b973d1cee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060850"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362776"
 ---
 # <a name="create-androidforworkenterprisewificonfiguration"></a>Erstellen von androidForWorkEnterpriseWiFiConfiguration
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

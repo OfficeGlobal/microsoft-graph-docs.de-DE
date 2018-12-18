@@ -1,12 +1,13 @@
 ---
 title: iosCompliancePolicy erstellen
 description: Erstellen eines neuen iosCompliancePolicy-Objekts.
-ms.openlocfilehash: 7dc80454e1b801ef22d02bd9955de681baaf3e9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c1084d5b3333ef9747edfbaf2a1830b14f6a5ccd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059246"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355377"
 ---
 # <a name="create-ioscompliancepolicy"></a>iosCompliancePolicy erstellen
 
@@ -34,9 +35,9 @@ POST /deviceManagement/deviceCompliancePolicies
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

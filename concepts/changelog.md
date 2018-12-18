@@ -1,12 +1,12 @@
 ---
 title: Änderungsprotokoll für Microsoft Graph
 description: Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschließlich der Version 1.0 und des Beta-Endpunkts von Microsoft Graph-APIs.
-ms.openlocfilehash: e8b4671d527bac65d1855c21d7612077ed18203e
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+ms.openlocfilehash: 4317439af246701f9a1de214198e74933ef55632
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222660"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283731"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Änderungsprotokoll für Microsoft Graph
 
@@ -16,6 +16,14 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 ## <a name="december-2018"></a>Dezember 2018
 
+### <a name="data-policy-api"></a>Datenrichtlinien-API
+
+| **Änderungstyp** | **Version** | **Beschreibung**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|Ergänzungen |v1.0| Neue Entität [dataPoliyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-1.0) hinzugefügt. Sie stellt eine übermittelte Datenrichtlinienoperation dar, zwecks Nachverfolgung.
+|Ergänzungen |v1.0| Aktion [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-1.0) zur Anwendung auf [Benutzer](/graph/api/resources/users?view=graph-rest-1.0) hinzugefügt. Diese Aktion sendet eine Anforderung für einen Datenrichtlinienvorgang zum Export der von Microsoft gespeicherten personenbezogenen Daten eines Benutzers. |
+|Ergänzungen |v1.0| Die Methode [dataPolicyOperations](/graph/api/datapolicyoperation-get?view=graph-rest-1.0) wurde hinzugefügt. Diese ruft Eigenschaften vom dataPolicyOperation-Objekt ab.|
+
 ### <a name="directory-apis"></a>Verzeichnis-APIs
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
@@ -23,6 +31,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 | Ergänzungen | Beta | Neuer Ressourcentyp [DirectoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta) hinzugefügt.|
 | Ergänzungen | Beta | Eigenschaft `createdDateTime` zur Ressource [organization](/graph/api/resources/organization?view=graph-rest-beta) hinzugefügt.|
 | Ergänzung | v1.0 | Methode `memberOf` hinzugefügt, um die direkte [Mitgliedschaft](/graph/api/device-list-memberOf?view=graph-rest-1.0) eines [Geräts](/graph/api/resources/device?view=graph-rest-1.0) abzurufen. Diese Methode wurde zum Abrufen der Liste der Mitgliedschaften einschließlich geschachtelter Mitgliedschaften hinzugefügt.|
+| Änderung    | Beta | Die Ressource [Organisationskontakte](/graph/api/resources/orgcontact?view=graph-rest-beta) wurde umstrukturiert. Die physischen Adresseigenschaften (`city`, `country`, `postalCode`, `streetAddress` und `state`) sowie `officeLocation` sind nun in einer `addresses`-Auflistung (des neuen Ressourcentyps [physicalOfficeAddress](/graph/api/resources/physicalofficeaddress?view=graph-rest-beta)) und `mobilePhone` enthalten, `businessPhones` und `faxNumber` sind nun in einer `phones`-Auflistung vorhanden. `companyName` und `imAddresses` wurden ebenfalls hinzugefügt.|
 
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams-APIs
 

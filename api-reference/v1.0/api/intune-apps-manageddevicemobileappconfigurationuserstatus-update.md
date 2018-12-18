@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „managedDeviceMobileAppConfigurationUserStatus“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs managedDeviceMobileAppConfigurationUserStatus.
-ms.openlocfilehash: 42cf0fad50b205adfe71c794a80ba358d0951b0b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 581b332687e591da13dc4705c6d9cede2a524a13
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017254"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355440"
 ---
 # <a name="update-manageddevicemobileappconfigurationuserstatus"></a>Aktualisieren von „managedDeviceMobileAppConfigurationUserStatus“
 
@@ -32,9 +33,9 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: IosEnterpriseWiFiConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines IosEnterpriseWiFiConfiguration-Objekts.
-ms.openlocfilehash: b49c80bffe7de912c6f79b7b238fd84cbc6c6292
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8e1411155e2c795ec40494fdf7a52fce7cfb62e2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062249"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333936"
 ---
 # <a name="update-iosenterprisewificonfiguration"></a>IosEnterpriseWiFiConfiguration aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceActionItem aktualisieren
 description: Aktualisieren der Eigenschaften eines deviceComplianceActionItem-Objekts.
-ms.openlocfilehash: 8bebd6a37726266bc3519f9597f0968f0049318c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c3d3124b01bd6c15ff0519baac0920d7e59cc9bd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27015974"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361831"
 ---
 # <a name="update-devicecomplianceactionitem"></a>deviceComplianceActionItem aktualisieren
 
@@ -32,9 +33,9 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sche
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

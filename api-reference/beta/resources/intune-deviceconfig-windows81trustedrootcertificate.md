@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windows81TrustedRootCertificate
 description: Windows 8.1 vertrauenswürdige Zertifikat Konfigurationsprofil
-ms.openlocfilehash: 2b29cbdd977119b5dfc54662beb394b08e00febe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 91c741ef1366bb8990db8a3cf5789cdf5ef7820e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063489"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339487"
 ---
 # <a name="windows81trustedrootcertificate-resource-type"></a>Ressourcentyp windows81TrustedRootCertificate
 

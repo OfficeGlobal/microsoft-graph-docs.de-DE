@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „windowsPhone81CompliancePolicy“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs windowsPhone81CompliancePolicy.
-ms.openlocfilehash: a022a6823af42e897b6ae6f68230c0e2ac7861e1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b017d25570b3cd220fa150b1be49516c02e3467a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016362"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362342"
 ---
 # <a name="update-windowsphone81compliancepolicy"></a>Aktualisieren von „windowsPhone81CompliancePolicy“
 
@@ -32,9 +33,9 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

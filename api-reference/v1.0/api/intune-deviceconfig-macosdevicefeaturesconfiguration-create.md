@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „macOSDeviceFeaturesConfiguration“
 description: Diese Methode erstellt ein neues Objekt des Typs macOSDeviceFeaturesConfiguration.
-ms.openlocfilehash: e8d6d16ce66e512d44cbae63ec41122b526ac471
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 15539bb2aebf1e05a8eec9c42262f3436a516919
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016088"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363662"
 ---
 # <a name="create-macosdevicefeaturesconfiguration"></a>Erstellen von „macOSDeviceFeaturesConfiguration“
 
@@ -32,9 +33,9 @@ POST /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Einstellungen für Updates
 description: 'Aktualisieren Sie die Eigenschaften des Settings-Objekts. '
-ms.openlocfilehash: 53b5fb2ce37aa9d80466face5ec03d1b54e87c09
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 61d44c1c726b91bc21d9fc5498cd2ba11a5a830b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064962"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363781"
 ---
 # <a name="update-settings"></a>Einstellungen für Updates
 
@@ -38,7 +39,7 @@ PATCH https://graph.microsoft.com/beta/users/{id | userPrincipalName}/settings/
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile       | Wert|
+| Header       | Wert|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

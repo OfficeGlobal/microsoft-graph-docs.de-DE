@@ -1,12 +1,13 @@
 ---
 title: Win32LobApp löschen
 description: Löscht eine win32LobApp.
-ms.openlocfilehash: 55ba2e17d8e53b05b2fe4f1a7108cfc6391168cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a5bd43c7196ddd8aa9bf769878eddbda69582415
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065984"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356448"
 ---
 # <a name="delete-win32lobapp"></a>Win32LobApp löschen
 
@@ -36,9 +37,9 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

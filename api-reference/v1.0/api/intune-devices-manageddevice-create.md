@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „managedDevice“
 description: Diese Methode erstellt ein neues Objekt des Typs managedDevice.
-ms.openlocfilehash: 9fa8efe9a4dd1a4ec753c25382f95f383bf0fe8f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fa37f7114dac2d990d5d5cd90fd26ae64555661d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016494"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340306"
 ---
 # <a name="create-manageddevice"></a>Erstellen von „managedDevice“
 
@@ -34,9 +35,9 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

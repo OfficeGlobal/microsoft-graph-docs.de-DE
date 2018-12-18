@@ -1,12 +1,13 @@
 ---
 title: macOSCompliancePolicy-Ressourcentyp
 description: Diese Klasse enthält Konformitätseinstellungen für Mac OS.
-ms.openlocfilehash: 3e91dbc6c9b5c3fdb8be3bbce899c7671a4715fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d8b210c5c8c0b5f961bc5a6079ed165667884fb5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016865"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340880"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>macOSCompliancePolicy-Ressourcentyp
 

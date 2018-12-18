@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp „androidCompliancePolicy“
 description: Diese Klasse enthält Konformitätseinstellungen für Android.
-ms.openlocfilehash: ea570fa49dd78830a77d28665e812f3a7bcf135c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 95b8e4aff038b1fbc547ee7364ea900875953d6d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016207"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334349"
 ---
 # <a name="androidcompliancepolicy-resource-type"></a>Ressourcentyp „androidCompliancePolicy“
 

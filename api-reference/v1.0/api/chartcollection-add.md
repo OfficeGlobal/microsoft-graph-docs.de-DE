@@ -1,12 +1,13 @@
 ---
 title: 'ChartCollection: add'
 description: Erstellt ein neues Diagramm.
-ms.openlocfilehash: c1b40146ecd6ca8bc26766d456893bc702d3b66e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: bfae5968c6a1131cb58bda80bd2587a68047bed9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017476"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332956"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 
@@ -37,7 +38,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Typ|string|Stellt den Typ eines Diagramms dar.  Die möglichen Werte sind: `ColumnClustered`, `ColumnStacked`, `ColumnStacked100`, `BarClustered`, `BarStacked`, `BarStacked100`, `LineStacked`, `LineStacked100`, `LineMarkers`, `LineMarkersStacked`, `LineMarkersStacked100`, `PieOfPie`, `etc.`.|
+|type|string|Stellt den Typ eines Diagramms dar.  Die möglichen Werte sind: `ColumnClustered`, `ColumnStacked`, `ColumnStacked100`, `BarClustered`, `BarStacked`, `BarStacked100`, `LineStacked`, `LineStacked100`, `LineMarkers`, `LineMarkersStacked`, `LineMarkersStacked100`, `PieOfPie`, `etc.`.|
 |sourceData|Json|Das den Quelldaten entsprechende Range-Objekt.|
 |seriesBy|string|Optional. Gibt an, dass die Möglichkeit Spalten und Zeilen als Datenreihen im Diagramm verwendet werden.  Die möglichen Werte sind: `Auto`, `Columns`, `Rows`.|
 

@@ -1,12 +1,13 @@
 ---
 title: Liste androidWorkProfileGmailEasConfigurations
 description: Listeneigenschaften und Beziehungen der AndroidWorkProfileGmailEasConfiguration-Objekte.
-ms.openlocfilehash: ddb3c3441403767ddea859d504a382d574fed736
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dc84777da8bdfac12d743c0225128db22e6c4024
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061897"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363669"
 ---
 # <a name="list-androidworkprofilegmaileasconfigurations"></a>Liste androidWorkProfileGmailEasConfigurations
 
@@ -35,9 +36,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

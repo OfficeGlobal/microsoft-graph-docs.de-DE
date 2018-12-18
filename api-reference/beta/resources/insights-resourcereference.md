@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp resourceReference
 description: Komplexer Typ mit Eigenschaften des Insights.
-ms.openlocfilehash: d171151a1c3547aa6863a7f70cc3a42ddec13e5d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: 2f1a44412eebbb7a74895c12db9a07696d6ee409
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062948"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363620"
 ---
 # <a name="resourcereference-resource-type"></a>Ressourcentyp resourceReference
 
@@ -32,4 +33,4 @@ Es folgt eine JSON-Darstellung der Ressource.
 | ------------- |-----------| -------------|
 | webUrl        | String    | Eine URL, die auf das verwiesene Element führende. |
 | id            | String    | Eindeutiger Bezeichner des Elements.           |
-| Typ          | String    | Ein String-Wert, der verwendet werden kann, um das Element, wie beispielsweise "microsoft.graph.driveItem" klassifizieren |
+| type          | String    | Ein String-Wert, der verwendet werden kann, um das Element, wie beispielsweise "microsoft.graph.driveItem" klassifizieren |

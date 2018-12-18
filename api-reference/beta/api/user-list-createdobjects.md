@@ -1,12 +1,13 @@
 ---
 title: createdObjects auflisten
 description: Mit dieser API können Sie eine Liste aller vom betreffenden Benutzer erstellten Verzeichnisobjekte abrufen.
-ms.openlocfilehash: 030de28bdd402720f2b5c62e9b276a080583f687
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: a7067926e5104c08d65a1753fc716787bed52fd5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062148"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342105"
 ---
 # <a name="list-createdobjects"></a>createdObjects auflisten
 
@@ -30,7 +31,7 @@ GET /users/{id | userPrincipalName}/createdObjects
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

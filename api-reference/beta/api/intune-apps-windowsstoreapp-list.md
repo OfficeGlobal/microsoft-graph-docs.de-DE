@@ -1,12 +1,13 @@
 ---
 title: Liste windowsStoreApps
 description: Listeneigenschaften und Beziehungen der WindowsStoreApp-Objekte.
-ms.openlocfilehash: 160dcd619cde68197438693c108e06834755a102
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fecffe62b54649cda7a6721aceeb33c8836e1e17
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061555"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333705"
 ---
 # <a name="list-windowsstoreapps"></a>Liste windowsStoreApps
 
@@ -34,9 +35,9 @@ GET /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

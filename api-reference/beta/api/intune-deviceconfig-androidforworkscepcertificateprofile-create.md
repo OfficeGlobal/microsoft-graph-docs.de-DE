@@ -1,12 +1,13 @@
 ---
 title: Erstellen von androidForWorkScepCertificateProfile
 description: Erstellen eines neuen AndroidForWorkScepCertificateProfile-Objekts.
-ms.openlocfilehash: 8d780cb50ef7fc272bb34f4112f8adfe9b596ad0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 77c73de03043c2632f83f17325f1ab2f566637ea
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059563"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355552"
 ---
 # <a name="create-androidforworkscepcertificateprofile"></a>Erstellen von androidForWorkScepCertificateProfile
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

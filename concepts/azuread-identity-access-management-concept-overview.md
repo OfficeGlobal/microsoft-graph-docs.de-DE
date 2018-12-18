@@ -1,12 +1,13 @@
 ---
 title: Überblick über die Azure AD-Identitäts- und Zugriffsverwaltungs-API
 description: 'Azure Active Directory (Azure AD) unterstützt die Zentralisierung der Identitäts- und Zugriffsvererwaltung (Identity and Access Management, IAM), um den sicheren und produktiven Zugriff zwischen Apps, Geräten, Diensten und der Infrastruktur zu gewährleisten. Unternehmen können mit Azure AD Identitäten verwalten und den Zugriff in lokalen, Hybrid- und Cloudumgebungen steuern.  '
-ms.openlocfilehash: f933e47f890f228865968d47040fdb1316607692
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+author: jackson-woods
+ms.openlocfilehash: 00fa42c22b0e8a3f497933cf6e893e690a24b2bd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156047"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337961"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Überblick über die Azure AD-Identitäts- und Zugriffsverwaltungs-API
 

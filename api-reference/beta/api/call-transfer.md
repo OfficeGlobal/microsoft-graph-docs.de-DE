@@ -1,12 +1,13 @@
 ---
 title: 'Rufen Sie: Übertragung'
 description: Weiterleiten eines aktiven Anrufs.
-ms.openlocfilehash: d02e028c4d7e3b51f3aee371e22d00b95841d9a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 1dc80e342b873c8ebcdb2051107836201e13fda4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062780"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362482"
 ---
 # <a name="call-transfer"></a>Rufen Sie: Übertragung
 

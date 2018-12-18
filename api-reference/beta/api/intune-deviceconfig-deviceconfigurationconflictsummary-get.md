@@ -1,12 +1,13 @@
 ---
 title: Abrufen von deviceConfigurationConflictSummary
 description: Lesen Sie Eigenschaften und Beziehungen des DeviceConfigurationConflictSummary-Objekts.
-ms.openlocfilehash: 85af2e1ffcacc5d3944680afdc6a80b4e72b1213
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b5f38a613d10ebfd610bc8bf71bfaa30243d0d5b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063375"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333971"
 ---
 # <a name="get-deviceconfigurationconflictsummary"></a>Abrufen von deviceConfigurationConflictSummary
 
@@ -36,9 +37,9 @@ GET /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationCon
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

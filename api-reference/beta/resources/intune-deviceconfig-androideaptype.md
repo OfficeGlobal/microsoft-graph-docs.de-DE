@@ -1,12 +1,13 @@
 ---
 title: AndroidEapType Enum-Typ
 description: Erweiterbare-Protokoll (EAP) Konfiguration Authentifizierungstypen.
-ms.openlocfilehash: 6d2f65ff4b2f61b17080869888bd6ef430349a70
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6a1133fa83c2daba414530eb46191f7263953bcd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060558"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333229"
 ---
 # <a name="androideaptype-enum-type"></a>AndroidEapType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27060558"
 
 Erweiterbare-Protokoll (EAP) Konfiguration Authentifizierungstypen.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |eapTls|13|Extensible Authentication Protocol-Transport Layer Security (EAP-TLS).|
 |eapTtls|21|Extensible Authentication Protocol getunnelt Transport Layer Security (EAP-TTLS).|

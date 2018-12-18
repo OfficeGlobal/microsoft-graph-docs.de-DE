@@ -1,12 +1,13 @@
 ---
 title: Berechtigungen
 description: 'Veröffentlichen einer app mit dem Microsoft-Teams, apps Katalog. '
-ms.openlocfilehash: ae8dcf5e20da2ac18bb036ad40916496d91136f1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 01d552a013b3d1324893bd775611e797253ff261
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064567"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335196"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>Veröffentlichen von apps in Ihrer Organisation app-Katalog
 
@@ -34,7 +35,7 @@ POST /appCatalogs/teamsApps
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile        | Wert           |
+| Header        | Wert           |
 |:--------------|:--------------  |
 | Authorization | Bearer {token}. Erforderlich.  |
 | Content-Type  | Anwendung/zip |

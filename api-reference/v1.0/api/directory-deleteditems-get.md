@@ -1,12 +1,13 @@
 ---
 title: Gelöschtes Element abrufen
 description: Abrufen der Eigenschaften eines kürzlich gelöschten Elements aus den gelöschten Elementen.
-ms.openlocfilehash: 513b9d8e48cbf4474024b61b7274aa9943daa025
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: e3a42fffba9a447661010ac9f6f5cff19df880c1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016189"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353711"
 ---
 # <a name="get-deleted-item"></a>Gelöschtes Element abrufen
 

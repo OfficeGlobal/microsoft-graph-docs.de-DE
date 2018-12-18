@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „androidManagedAppRegistration“
 description: Auflisten von Eigenschaften und Beziehungen der androidManagedAppRegistration-Objekte.
-ms.openlocfilehash: 208faffd512cfa517a999e6f3c043e1bc637a8e7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b3e3839ac84133c8213582429e9826cf1af2d249
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065523"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337394"
 ---
 # <a name="list-androidmanagedappregistrations"></a>Auflisten von „androidManagedAppRegistration“
 
@@ -34,9 +35,9 @@ GET /deviceAppManagement/managedAppRegistrations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

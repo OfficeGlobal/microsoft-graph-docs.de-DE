@@ -1,12 +1,13 @@
 ---
 title: windowsUniversalAppX-Ressourcentyp
 description: Enthält Eigenschaften und geerbte Eigenschaften für branchenspezifische Windows Universal-APPX-Apps.
-ms.openlocfilehash: 16108fe9b666fd087c685d02f9d48c092882f106
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 046c5c541d567f587ec1f7bffd95aa7bc437a1b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066036"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340642"
 ---
 # <a name="windowsuniversalappx-resource-type"></a>windowsUniversalAppX-Ressourcentyp
 

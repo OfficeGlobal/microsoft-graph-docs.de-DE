@@ -1,12 +1,13 @@
 ---
 title: Erstellen von androidWorkProfileCompliancePolicy
 description: Erstellen eines neuen AndroidWorkProfileCompliancePolicy-Objekts.
-ms.openlocfilehash: c823ef27ecd3e55646f010746b577f549510c1bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ef3b9b7d15eea1911a17747b845ca80341ae02a5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017512"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339305"
 ---
 # <a name="create-androidworkprofilecompliancepolicy"></a>Erstellen von androidWorkProfileCompliancePolicy
 
@@ -32,9 +33,9 @@ POST /deviceManagement/deviceCompliancePolicies
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

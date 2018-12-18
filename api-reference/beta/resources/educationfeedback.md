@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp educationFeedback
 description: Bewertung von Lehrer an einen Schüler. Diese Eigenschaft stellt sowohl den Text in das Feedback zusammen mit der, die an.
-ms.openlocfilehash: 4d9a08744ac818b4aadfac965a53655d498923ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 934d1ec104133257bb1b767e8922c2379e3fd11a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058141"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363592"
 ---
 # <a name="educationfeedback-resource-type"></a>Ressourcentyp educationFeedback
 

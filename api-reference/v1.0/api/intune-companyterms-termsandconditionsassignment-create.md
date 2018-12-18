@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „termsAndConditionsAssignment“
 description: Diese Methode erstellt ein neues Objekt des Typs termsAndConditionsAssignment.
-ms.openlocfilehash: 9e113ae57c4bebce3f4bcc016ab6afadc3186e0a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0a6cc4024487610fe4d243a2957d99a0522d800b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017493"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333334"
 ---
 # <a name="create-termsandconditionsassignment"></a>Erstellen von „termsAndConditionsAssignment“
 
@@ -32,9 +33,9 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

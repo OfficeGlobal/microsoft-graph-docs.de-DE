@@ -1,12 +1,13 @@
 ---
 title: mimeContent-Ressourcentyp
 description: Enthält die Eigenschaften für generischen MIME-Inhalt.
-ms.openlocfilehash: cc0d024c814588479e641114ad33d19a5e609ecd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 05088fa472c8f8a71adabbb0c807e7b2f0b80b09
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063860"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333495"
 ---
 # <a name="mimecontent-resource-type"></a>mimeContent-Ressourcentyp
 
@@ -18,7 +19,7 @@ Enthält die Eigenschaften für generischen MIME-Inhalt.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|Typ|String|Gibt den MIME-Typ des Inhalts an.|
+|type|Zeichenfolge|Gibt den MIME-Typ des Inhalts an.|
 |Wert|Binär|Das Bytearray, das den tatsächlichen Inhalt enthält.|
 
 ## <a name="relationships"></a>Beziehungen

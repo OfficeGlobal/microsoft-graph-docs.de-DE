@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp dataSharingConsent
 description: Datenfreigabe stimmen Informationen.
-ms.openlocfilehash: 152b367161dc9a734a20e007ac1b2c0d02d0c99f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 250ad388a5c619a6fd2753d172734145ea720776
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065920"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342935"
 ---
 # <a name="datasharingconsent-resource-type"></a>Ressourcentyp dataSharingConsent
 

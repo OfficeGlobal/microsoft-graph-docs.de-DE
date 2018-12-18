@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „androidCompliancePolicy“
 description: Aktualisieren der Eigenschaften eines androidCompliancePolicy-Objekts.
-ms.openlocfilehash: b5349395c3818df98f9451ee7aba18c58a369fdc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9833530e6494a88a25c52d9fb8bd878be04643a3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018518"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339312"
 ---
 # <a name="update-androidcompliancepolicy"></a>Aktualisieren von „androidCompliancePolicy“
 
@@ -32,9 +33,9 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: IosUpdatesInstallStatus Enum-Typ
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 1d864706910472c456ad6585793b09846bad6ccd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 364fc4f3b1c64d3fe8d37d1c6b96c877a56bbed7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016028"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353655"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>IosUpdatesInstallStatus Enum-Typ
 
@@ -14,7 +15,7 @@ ms.locfileid: "27016028"
 
 Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |Erfolgreich|0|Noch nicht dokumentiert|
 |Verfügbar|1|Noch nicht dokumentiert|

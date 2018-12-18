@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „androidManagedAppProtection“
 description: Erstellt neue Objekte des Typs androidManagedAppProtection.
-ms.openlocfilehash: 04d54857b9f7d0f0de642e8370df2ccf34de4e70
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f0b525fb9830963ca6ec0f07944d0378a5114344
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018430"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334615"
 ---
 # <a name="create-androidmanagedappprotection"></a>Erstellen von „androidManagedAppProtection“
 
@@ -32,9 +33,9 @@ POST /deviceAppManagement/androidManagedAppProtections
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

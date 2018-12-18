@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp importedAppleDeviceIdentityResult
 description: Die Ressource ImportedAppleDeviceIdentityResult stellt das Ergebnis der Versuch Apple-Geräte-Identitäten zu importieren.
-ms.openlocfilehash: 52499da9046ef49d62efcca257bd4f10fad77fad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 650dfca3cba7800c2cdc9eb0087e9d67b8dc0b29
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059575"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344562"
 ---
 # <a name="importedappledeviceidentityresult-resource-type"></a>Ressourcentyp importedAppleDeviceIdentityResult
 
