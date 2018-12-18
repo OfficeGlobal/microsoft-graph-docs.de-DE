@@ -1,49 +1,50 @@
 ---
 title: Liste favoritePlans
 description: Abrufen einer Liste der PlannerPlans, die von einem Benutzer als bevorzugten gekennzeichnet sind. Sie können einen Plan als bevorzugten markieren, durch die PlannerUser Ressource aktualisieren.
-ms.openlocfilehash: e9e3cf3cd348430a3512d15ac2e0cdc68d24d258
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: c0f82522c41977df1aa034dbd14a86749b10b803
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060366"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324584"
 ---
-# <a name="list-favoriteplans"></a><span data-ttu-id="3981a-104">Liste favoritePlans</span><span class="sxs-lookup"><span data-stu-id="3981a-104">List favoritePlans</span></span>
+# <a name="list-favoriteplans"></a><span data-ttu-id="545d5-104">Liste favoritePlans</span><span class="sxs-lookup"><span data-stu-id="545d5-104">List favoritePlans</span></span>
 
-> <span data-ttu-id="3981a-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="3981a-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="3981a-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="3981a-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="545d5-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="545d5-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="545d5-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="545d5-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="3981a-107">Abrufen einer Liste der [PlannerPlans](../resources/plannerplan.md) , die von einem Benutzer als bevorzugten gekennzeichnet sind.</span><span class="sxs-lookup"><span data-stu-id="3981a-107">Retrieve a list of [plannerPlans](../resources/plannerplan.md) that are marked as favorite by a user.</span></span> <span data-ttu-id="3981a-108">Sie können einen Plan als bevorzugten durch [Aktualisieren der Ressource PlannerUser](planneruser-update.md)markieren.</span><span class="sxs-lookup"><span data-stu-id="3981a-108">You can mark a plan as favorite by [updating the plannerUser resource](planneruser-update.md).</span></span>
+<span data-ttu-id="545d5-107">Abrufen einer Liste der [PlannerPlans](../resources/plannerplan.md) , die von einem Benutzer als bevorzugten gekennzeichnet sind.</span><span class="sxs-lookup"><span data-stu-id="545d5-107">Retrieve a list of [plannerPlans](../resources/plannerplan.md) that are marked as favorite by a user.</span></span> <span data-ttu-id="545d5-108">Sie können einen Plan als bevorzugten durch [Aktualisieren der Ressource PlannerUser](planneruser-update.md)markieren.</span><span class="sxs-lookup"><span data-stu-id="545d5-108">You can mark a plan as favorite by [updating the plannerUser resource](planneruser-update.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3981a-109">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="3981a-109">Permissions</span></span>
-<span data-ttu-id="3981a-p104">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3981a-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="545d5-109">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="545d5-109">Permissions</span></span>
+<span data-ttu-id="545d5-p104">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="545d5-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3981a-112">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="3981a-112">Permission type</span></span>      | <span data-ttu-id="3981a-113">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="3981a-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="545d5-112">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="545d5-112">Permission type</span></span>      | <span data-ttu-id="545d5-113">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="545d5-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3981a-114">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="3981a-114">Delegated (work or school account)</span></span> | <span data-ttu-id="3981a-115">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="3981a-115">Group.Read.All</span></span>    |
-|<span data-ttu-id="3981a-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="3981a-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3981a-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="3981a-117">Not supported.</span></span>    |
-|<span data-ttu-id="3981a-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="3981a-118">Application</span></span> | <span data-ttu-id="3981a-119">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="3981a-119">Not supported.</span></span> |
+|<span data-ttu-id="545d5-114">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="545d5-114">Delegated (work or school account)</span></span> | <span data-ttu-id="545d5-115">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="545d5-115">Group.Read.All</span></span>    |
+|<span data-ttu-id="545d5-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="545d5-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="545d5-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="545d5-117">Not supported.</span></span>    |
+|<span data-ttu-id="545d5-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="545d5-118">Application</span></span> | <span data-ttu-id="545d5-119">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="545d5-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3981a-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="3981a-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="545d5-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="545d5-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/favoritePlans
 GET /users/<id>/planner/favoritePlans
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="3981a-121">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="3981a-121">Optional query parameters</span></span>
-<span data-ttu-id="3981a-122">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="3981a-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="545d5-121">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="545d5-121">Optional query parameters</span></span>
+<span data-ttu-id="545d5-122">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="545d5-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="3981a-123">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="3981a-123">Request headers</span></span>
-| <span data-ttu-id="3981a-124">Name</span><span class="sxs-lookup"><span data-stu-id="3981a-124">Name</span></span>      |<span data-ttu-id="3981a-125">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3981a-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="545d5-123">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="545d5-123">Request headers</span></span>
+| <span data-ttu-id="545d5-124">Name</span><span class="sxs-lookup"><span data-stu-id="545d5-124">Name</span></span>      |<span data-ttu-id="545d5-125">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="545d5-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="3981a-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="3981a-126">Authorization</span></span>  | <span data-ttu-id="3981a-p105">Bearer {code}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="3981a-p105">Bearer {code}. Required.</span></span>|
+| <span data-ttu-id="545d5-126">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="545d5-126">Authorization</span></span>  | <span data-ttu-id="545d5-p105">Bearer {code}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="545d5-p105">Bearer {code}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3981a-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="3981a-129">Request body</span></span>
-<span data-ttu-id="3981a-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="3981a-130">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="3981a-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="3981a-131">Response</span></span>
-<span data-ttu-id="3981a-132">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [PlannerPlan](../resources/plannerplan.md) .</span><span class="sxs-lookup"><span data-stu-id="3981a-132">If successful, this method returns a `200 OK` response code and a collection of [plannerPlan](../resources/plannerplan.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="3981a-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="3981a-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="3981a-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="3981a-134">Request</span></span>
-<span data-ttu-id="3981a-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="3981a-135">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="545d5-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="545d5-129">Request body</span></span>
+<span data-ttu-id="545d5-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="545d5-130">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="545d5-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="545d5-131">Response</span></span>
+<span data-ttu-id="545d5-132">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [PlannerPlan](../resources/plannerplan.md) .</span><span class="sxs-lookup"><span data-stu-id="545d5-132">If successful, this method returns a `200 OK` response code and a collection of [plannerPlan](../resources/plannerplan.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="545d5-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="545d5-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="545d5-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="545d5-134">Request</span></span>
+<span data-ttu-id="545d5-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="545d5-135">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_favoriteplans"
@@ -51,10 +52,10 @@ GET /users/<id>/planner/favoritePlans
 ```http
 GET https://graph.microsoft.com/beta/me/planner/favoritePlans
 ```
-##### <a name="response"></a><span data-ttu-id="3981a-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="3981a-136">Response</span></span>
-<span data-ttu-id="3981a-137">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="3981a-137">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="545d5-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="545d5-136">Response</span></span>
+<span data-ttu-id="545d5-137">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="545d5-137">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="3981a-p106">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="3981a-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="545d5-p106">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="545d5-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
