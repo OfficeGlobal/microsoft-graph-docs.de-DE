@@ -1,12 +1,13 @@
 ---
 title: roleDefinition abrufen
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs roleDefinition.
-ms.openlocfilehash: 2a0cf39bf05dda6f427794aa4fd0abc5a007a53f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 77087011f30f5cdc261074bc58e1afe48a3f9d27
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019164"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303311"
 ---
 # <a name="get-roledefinition"></a>roleDefinition abrufen
 
@@ -35,9 +36,9 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

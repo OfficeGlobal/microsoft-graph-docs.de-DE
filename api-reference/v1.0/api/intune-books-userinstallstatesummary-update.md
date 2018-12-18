@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „userInstallStateSummary“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs userInstallStateSummary.
-ms.openlocfilehash: a5c3f1278a8c9696b65663eaaeafcb76e1e09840
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ead5cbb33e8a03f12ac94c256b67d12a08575d5f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016138"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303045"
 ---
 # <a name="update-userinstallstatesummary"></a>Aktualisieren von „userInstallStateSummary“
 
@@ -32,9 +33,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: SharedPCAccountDeletionPolicyType Enum-Typ
 description: Mögliche Werte für wann Konten auf einem freigegebenen PC gelöscht werden.
-ms.openlocfilehash: 48d36881646bce344d99bc3d1a15a2679ddeb11d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8789faeeec7772cd6115cae82691c62894446f59
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017679"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301001"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>SharedPCAccountDeletionPolicyType Enum-Typ
 
@@ -14,7 +15,7 @@ ms.locfileid: "27017679"
 
 Mögliche Werte für wann Konten auf einem freigegebenen PC gelöscht werden.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |Direktfenster|0|Löschen Sie sofort.|
 |diskSpaceThreshold|1|Löschen Sie Disk Space Schwellenwert.|

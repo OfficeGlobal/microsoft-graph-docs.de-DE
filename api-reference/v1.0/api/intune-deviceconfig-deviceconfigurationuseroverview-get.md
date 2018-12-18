@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationUserOverview abrufen
 description: Lesen von Eigenschaften und Beziehungen des deviceConfigurationUserOverview-Objekts.
-ms.openlocfilehash: 7aafa1b56b3bb7f308eac87ca95767837b443f81
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c70c1e188a35222a538db3162bc8272968f16fe5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018365"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302142"
 ---
 # <a name="get-deviceconfigurationuseroverview"></a>deviceConfigurationUserOverview abrufen
 
@@ -34,9 +35,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusOve
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

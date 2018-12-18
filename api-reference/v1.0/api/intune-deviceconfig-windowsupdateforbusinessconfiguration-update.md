@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „windowsUpdateForBusinessConfiguration“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs windowsUpdateForBusinessConfiguration.
-ms.openlocfilehash: 17538d2fb06af92e8b8f5ec63a023d6fe2c0bdbd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2b53fb170e0b399f5b42e6e5212f3ad0cb2a75a7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019740"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302177"
 ---
 # <a name="update-windowsupdateforbusinessconfiguration"></a>Aktualisieren von „windowsUpdateForBusinessConfiguration“
 
@@ -32,9 +33,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

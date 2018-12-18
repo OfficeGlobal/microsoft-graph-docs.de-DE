@@ -1,12 +1,13 @@
 ---
 title: WindowsPhone81StoreApp löschen
 description: Löscht eine windowsPhone81StoreApp.
-ms.openlocfilehash: 659baa2f7798cbdcacfa45cbc7f7b697d382ecd4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ca63eec42cadac7e76b6d9243f3e52b2abcdcc09
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063267"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302632"
 ---
 # <a name="delete-windowsphone81storeapp"></a>WindowsPhone81StoreApp löschen
 
@@ -36,9 +37,9 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

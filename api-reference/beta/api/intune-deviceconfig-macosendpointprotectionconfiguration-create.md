@@ -1,12 +1,13 @@
 ---
 title: Erstellen von macOSEndpointProtectionConfiguration
 description: Erstellen eines neuen MacOSEndpointProtectionConfiguration-Objekts.
-ms.openlocfilehash: 9f34936359cb3bee08a3427669bc1bc0c2fb7ac2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 49f50856b00229ab6df952847172cda9b7cd19f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062763"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302107"
 ---
 # <a name="create-macosendpointprotectionconfiguration"></a>Erstellen von macOSEndpointProtectionConfiguration
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

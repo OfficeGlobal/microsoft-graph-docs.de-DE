@@ -1,12 +1,13 @@
 ---
 title: Threads auflisten
 description: Ruft alle Threads einer Gruppe ab.
-ms.openlocfilehash: c805bfe2dac16b23311ebc58710525876cc3db9f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 8e46fd731b4abd2424c09fc5f226cc8769fc85d5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059299"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305222"
 ---
 # <a name="list-threads"></a>Threads auflisten
 
@@ -35,7 +36,7 @@ GET /groups/{id}/threads
 Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

@@ -1,12 +1,13 @@
 ---
 title: EducationClasses auflisten
 description: Abrufen einer Liste von Klassen im Besitz einer Schule.
-ms.openlocfilehash: de98692f13c280b1e5cb4b66d17335466bfe7a57
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 92cbc992876827b455efa9cf17aa43d549e95df0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019254"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27300861"
 ---
 # <a name="list-educationclasses"></a>EducationClasses auflisten
 
@@ -30,7 +31,7 @@ GET /education/schools/{id}/classes
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

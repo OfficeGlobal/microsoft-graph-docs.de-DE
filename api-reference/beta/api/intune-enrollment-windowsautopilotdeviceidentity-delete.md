@@ -1,12 +1,13 @@
 ---
 title: WindowsAutopilotDeviceIdentity löschen
 description: Löscht eine WindowsAutopilotDeviceIdentity.
-ms.openlocfilehash: 13068a446c191853fcc04a4cbe7dcb5fdb4b3c2b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5194536ef6526714819ee676ef063997b1a39895
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063559"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304277"
 ---
 # <a name="delete-windowsautopilotdeviceidentity"></a>WindowsAutopilotDeviceIdentity löschen
 
@@ -35,9 +36,9 @@ DELETE /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevic
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

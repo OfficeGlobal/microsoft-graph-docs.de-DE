@@ -1,12 +1,13 @@
 ---
 title: 'workbookRange: columnsAfter'
 description: Ruft eine bestimmte Anzahl von Spalten rechts vom gegebenen Bereich ab.
-ms.openlocfilehash: fc51d0485e3dfcbcb668fe6ce43bccbc6f781f21
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: f597d117a4b182656e636108b8a821e0db31be6f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059437"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305194"
 ---
 # <a name="workbookrange-columnsafter"></a>workbookRange: columnsAfter
 

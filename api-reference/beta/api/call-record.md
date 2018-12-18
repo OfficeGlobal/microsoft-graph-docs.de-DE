@@ -1,12 +1,13 @@
 ---
 title: 'Rufen Sie: Datensatz'
 description: Notieren Sie den Anruf.
-ms.openlocfilehash: 2d876b30205594e162ac9f5aa1b2068058efea7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 5de56ca417f5a6d06e8116802eeba2dd3d39e399
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060626"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303549"
 ---
 # <a name="call-record"></a>Rufen Sie: Datensatz
 

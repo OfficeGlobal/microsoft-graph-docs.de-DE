@@ -1,12 +1,13 @@
 ---
 title: Windows10PFXImportCertificateProfile aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines windows10PFXImportCertificateProfile-Objekts.
-ms.openlocfilehash: 087314950ead6e31fb8a74cff6b20ec9060d9935
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d5bc43583050bd0f48167360f360c656b0860a5e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065111"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302702"
 ---
 # <a name="update-windows10pfximportcertificateprofile"></a>Windows10PFXImportCertificateProfile aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

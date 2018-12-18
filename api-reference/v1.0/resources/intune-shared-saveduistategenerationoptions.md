@@ -1,12 +1,13 @@
 ---
 title: SavedUIStateGenerationOptions Enum-Typ
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 3d299e7d4c1d13ae432bcf704816d3701c6900c1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9074f057a9bc660551da4114c0fe6e2a481271b8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019978"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301281"
 ---
 # <a name="saveduistategenerationoptions-enum-type"></a>SavedUIStateGenerationOptions Enum-Typ
 
@@ -14,9 +15,9 @@ ms.locfileid: "27019978"
 
 Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
-|n/v|0|Noch nicht dokumentiert|
+|Keine|0|Noch nicht dokumentiert|
 |omitSilverlightPolicyReferences|1|Noch nicht dokumentiert|
 
 

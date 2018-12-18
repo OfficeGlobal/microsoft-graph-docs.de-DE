@@ -1,12 +1,13 @@
 ---
 title: Abrufen von mobileAppInstallStatus
 description: Lesen Sie Eigenschaften und Beziehungen des MobileAppInstallStatus-Objekts.
-ms.openlocfilehash: 0663b3cb13714be201fd9f6917a2a0689d84402b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 163e694d6b60d7d7d97408d33ebf682a88be6ea9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065603"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303423"
 ---
 # <a name="get-mobileappinstallstatus"></a>Abrufen von mobileAppInstallStatus
 
@@ -37,9 +38,9 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallSt
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

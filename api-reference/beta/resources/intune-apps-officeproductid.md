@@ -1,12 +1,13 @@
 ---
 title: OfficeProductId Enum-Typ
 description: Die Enumeration, die Office365 ProductIds anzugeben, die die Office365-Suite-SKUs darstellen.
-ms.openlocfilehash: 6b69a2477bb0f8779303f8d9f741f100501a3fe5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 228478b6814bed360cbba77539e5ee39343e2bfa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062415"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302793"
 ---
 # <a name="officeproductid-enum-type"></a>OfficeProductId Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27062415"
 
 Die Enumeration, die Office365 ProductIds anzugeben, die die Office365-Suite-SKUs darstellen.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |o365ProPlusRetail|0|Noch nicht dokumentiert|
 |o365BusinessRetail|1|Noch nicht dokumentiert|

@@ -1,12 +1,13 @@
 ---
 title: WebBrowserCookieSettings Enum-Typ
 description: Web-Browser-Cookie-Einstellungen.
-ms.openlocfilehash: 39ab701fe2929e4644c7d5d2f74ce73ca915193a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 10125208755409cf9917322428d29a49b87ed93f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019040"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303766"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>WebBrowserCookieSettings Enum-Typ
 
@@ -14,7 +15,7 @@ ms.locfileid: "27019040"
 
 Web-Browser-Cookie-Einstellungen.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |browserDefault|0|Standardwert Browser, keine beabsichtigt.|
 |blockAlways|1|Sperren Sie Cookies immer.|

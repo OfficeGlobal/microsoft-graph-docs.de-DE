@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windowsPhone81TrustedRootCertificate
 description: " Vertrauenswürdigen Stammzertifikats Konfigurationsprofil"
-ms.openlocfilehash: bb847c7cf09c19ff35a845b85eed6316134f6fd8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4c0f2aee5e48c4bb0f83e14e25f556cdfb5176aa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059545"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304039"
 ---
 # <a name="windowsphone81trustedrootcertificate-resource-type"></a>Ressourcentyp windowsPhone81TrustedRootCertificate
 

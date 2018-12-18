@@ -1,12 +1,13 @@
 ---
 title: EducationUser erstellen
 description: Erstellen eines neuen Benutzers.
-ms.openlocfilehash: 5bff21a62c0da0ecaf0e5972ee0b0b8e12a100bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 4d55d1678dca04e4ad8745e687931b6382f96486
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016977"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303500"
 ---
 # <a name="create-educationuser"></a>EducationUser erstellen
 
@@ -29,7 +30,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /education/users
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

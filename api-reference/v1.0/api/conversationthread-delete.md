@@ -1,12 +1,13 @@
 ---
 title: conversationThread löschen
 description: Mit dieser API können Sie Ressourcen des Typs „conversationThread“ löschen.
-ms.openlocfilehash: c817f80a311eab15f22b99461cd99443d635ea6e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 37ddcd5c08af3afb0e997af24163754d61a99ff6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017225"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304886"
 ---
 # <a name="delete-conversationthread"></a>conversationThread löschen
 
@@ -28,7 +29,7 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

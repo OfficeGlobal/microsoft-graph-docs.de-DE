@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp macOSFirewallApplication
 description: Stellt eine app in der Liste der Mac OS-Firewall-Anwendung
-ms.openlocfilehash: 6e016f2191fd9b366bbdf5dbaef5562284a6b5ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0d248194eed1b6e1841d2e4533aa1f79b772ccc0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059826"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302723"
 ---
 # <a name="macosfirewallapplication-resource-type"></a>Ressourcentyp macOSFirewallApplication
 

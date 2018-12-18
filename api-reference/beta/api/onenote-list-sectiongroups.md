@@ -1,12 +1,13 @@
 ---
 title: sectionGroups auflisten
 description: Mit dieser API können Sie eine Liste von Objekten des Typs sectionGroup abrufen.
-ms.openlocfilehash: c81d216917fef7032c210490ac6ba3a0ef922a30
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: eeadff91bab167ae9e3be2f4e80d42f1515d7c8e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066177"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305453"
 ---
 # <a name="list-sectiongroups"></a>sectionGroups auflisten
 
@@ -40,7 +41,7 @@ Die Standardabfrage erweitert `parentNotebook` und wählt die zugehörigen Eigen
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 | Accept | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext

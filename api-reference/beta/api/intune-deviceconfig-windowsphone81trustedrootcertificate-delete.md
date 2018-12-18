@@ -1,12 +1,13 @@
 ---
 title: WindowsPhone81TrustedRootCertificate löschen
 description: Löscht eine windowsPhone81TrustedRootCertificate.
-ms.openlocfilehash: 973deeca547ceff1ecd65721db764dee6efd0404
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5a290ccc5f8597c461d63f48ded49ef20fdcb082
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061743"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302422"
 ---
 # <a name="delete-windowsphone81trustedrootcertificate"></a>WindowsPhone81TrustedRootCertificate löschen
 
@@ -34,9 +35,9 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,12 @@
 ---
 title: Arbeiten mit Azure Active Directory-Ressourcen in Microsoft Graph
-description: 'Mit Microsoft Graph können Sie zugreifen, Azure Active Directory (AD Azure) Ressourcen zum Aktivieren von Szenarien wie verwalten Administratorrollen (Directory), externe Benutzer zu einer Organisation einladen, und, wenn Sie einen Cloud Lösung (CSP) sind, Ihre Kundendaten. Microsoft Graph bietet auch Methoden apps verwenden können, beispielsweise zum Ermitteln von Informationen über Benutzer transitiven Gruppe und Rollenmitgliedschaften. '
-ms.openlocfilehash: 4f33004e5bacf71c2e7cd3af5bad78448983dec7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Microsoft Graph für Azure Active Directory (AD Azure) bietet REST-APIs, mit denen Ihre Organisation, Ressourcen und Ressourcen verwalten.
+ms.openlocfilehash: 85f44df36057220e4ea26eb8d9342e9fd1df5bb6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066031"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305383"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Arbeiten mit Azure Active Directory-Ressourcen in Microsoft Graph
 
@@ -17,7 +17,7 @@ Mit Microsoft Graph Sie [Azure Active Directory (AD Azure)](https://docs.microso
 > **Hinweis**: Einige Azure AD-Ressourcen sind in anderen Abschnitten der API-Referenz dokumentiert. Weitere Informationen finden Sie unter [Benutzer](users.md) und [Gruppen](group.md).
 
 
-## <a name="authorization"></a>Authorization
+## <a name="authorization"></a>Autorisierung
  
 Zum Aufrufen der Microsoft Graph-APIs in Azure AD-Ressourcen benötigt Ihre App die entsprechenden Berechtigungen. Viele der APIs, die in Azure AD-Ressourcen verfügbar gemacht werden, erfordern eine der [ _Verzeichnis_berechtigungen](/graph/permissions-reference#directory-permissions). Verzeichnisberechtigungen verfügen über hohe Rechte und müssen immer vom Administrator genehmigt werden. 
 

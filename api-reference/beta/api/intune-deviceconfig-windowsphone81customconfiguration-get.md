@@ -1,12 +1,13 @@
 ---
 title: windowsPhone81CustomConfiguration abrufen
 description: Lesen von Eigenschaften und Beziehungen des windowsPhone81CustomConfiguration-Objekts.
-ms.openlocfilehash: d4b15ea2e94556d8a3abc9d8353c287d4bf2d3d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 04f34ab88a9f0b64e4d8a170ad5660ff5f7bd370
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060105"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301015"
 ---
 # <a name="get-windowsphone81customconfiguration"></a>windowsPhone81CustomConfiguration abrufen
 
@@ -38,9 +39,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

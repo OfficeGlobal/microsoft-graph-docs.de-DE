@@ -1,12 +1,13 @@
 ---
 title: MobileAppPublishingState Enum-Typ
 description: Gibt den Status Veröffentlichen einer app.
-ms.openlocfilehash: bea64eb6d882660c91b938c95004da3ad67792a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2415e2ba244d7766cbdc670c303643ec125c1091
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064145"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302331"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>MobileAppPublishingState Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27064145"
 
 Gibt den Status Veröffentlichen einer app.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |notPublished|0|Die app ist noch nicht veröffentlicht.|
 |Verarbeitung|1|Die app steht dienstseitige Verarbeitung an.|

@@ -1,12 +1,13 @@
 ---
 title: EnrollmentState Enum-Typ
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 8e8e20c0fd04e4da57eddfa7384052a6ab468152
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5e432f73ace1adbd529c910f70b97b7357a406e3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064084"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301295"
 ---
 # <a name="enrollmentstate-enum-type"></a>EnrollmentState Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27064084"
 
 Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Die Registrierung des Geräts ist unbekannt|
 |registriert|1|Gerät ist registriert.|

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp teamMessagingSettings
 description: So konfigurieren Sie die messaging-Einstellungen und erwähnungen im Team.
-ms.openlocfilehash: 6d1ca12b473f2773d4f56e12405b17e21b0bd0ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 387c2e3ccedc6f11f17d4868b1b0d3eaf67624fa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017201"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304550"
 ---
 # <a name="teammessagingsettings-resource-type"></a>Ressourcentyp teamMessagingSettings
 

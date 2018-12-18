@@ -1,12 +1,13 @@
 ---
 title: Verzeichnisrollenmitglied entfernen
 description: Mit dieser API können Sie Mitglieder aus einer Ressource des Typs „directoryRole“ entfernen.
-ms.openlocfilehash: 9ef64e3aa1833fe78e5a035f7bd8ef4692fa371b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: c2b0f8896ca2cc13ebb9f53900638875ade365bd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061247"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302415"
 ---
 # <a name="remove-directory-role-member"></a>Verzeichnisrollenmitglied entfernen
 
@@ -37,7 +38,7 @@ DELETE /directoryroles/{id}/members/{id}/$ref
 
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 

@@ -1,12 +1,13 @@
 ---
 title: managedIOSLobApp abrufen
 description: Lesen von Eigenschaften und Beziehungen des managedIOSLobApp-Objekts.
-ms.openlocfilehash: 565e3ce3c8d5210a102f239dd983745714b27d0f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 38e53954b9beba328fd5a6d86e2109b751b1c7f6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064546"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302009"
 ---
 # <a name="get-managedioslobapp"></a>managedIOSLobApp abrufen
 
@@ -38,9 +39,9 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

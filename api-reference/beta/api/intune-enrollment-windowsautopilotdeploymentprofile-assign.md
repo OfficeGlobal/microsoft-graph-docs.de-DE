@@ -1,12 +1,13 @@
 ---
 title: Aktion „assign“
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 470b62b5203772a44010ed3a0f56e242b6bb8b1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4e8193d7c642e1038d3e289745a655015d3020ad
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064169"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302485"
 ---
 # <a name="assign-action"></a>Aktion „assign“
 
@@ -36,9 +37,9 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

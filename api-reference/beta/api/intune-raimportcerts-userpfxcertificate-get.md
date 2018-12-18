@@ -1,12 +1,13 @@
 ---
 title: Abrufen von userPFXCertificate
 description: Lesen Sie Eigenschaften und Beziehungen des UserPFXCertificate-Objekts.
-ms.openlocfilehash: 852a9e5c52e688d8df968fc3fc2b0f3260578fdf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 19dd8ac9216585857524419d3da03a7f9784adb5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066206"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304494"
 ---
 # <a name="get-userpfxcertificate"></a>Abrufen von userPFXCertificate
 
@@ -36,9 +37,9 @@ GET /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

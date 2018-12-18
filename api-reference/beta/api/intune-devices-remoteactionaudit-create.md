@@ -1,12 +1,13 @@
 ---
 title: Erstellen von remoteActionAudit
 description: Erstellen eines neuen RemoteActionAudit-Objekts.
-ms.openlocfilehash: f39f1b289a081d89135fd7be230e2aecba6823c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2af2ca759463419e8619e5298b84ed002472e455
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062935"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302835"
 ---
 # <a name="create-remoteactionaudit"></a>Erstellen von remoteActionAudit
 
@@ -34,9 +35,9 @@ POST /deviceManagement/remoteActionAudits
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

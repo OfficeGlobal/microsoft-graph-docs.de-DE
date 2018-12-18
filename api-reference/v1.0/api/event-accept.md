@@ -1,12 +1,13 @@
 ---
 title: 'event: accept'
 description: Akzeptieren Sie das angegebene Ereignis in einem Benutzerkalender an.
-ms.openlocfilehash: c44d81953ca2834dc4d3bf5eea0bf4388766c1da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: bfd8aaf654b1bab15dc2c9b8db4ebaea5856cf1e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019136"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301596"
 ---
 # <a name="event-accept"></a>event: accept
 
@@ -42,7 +43,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext

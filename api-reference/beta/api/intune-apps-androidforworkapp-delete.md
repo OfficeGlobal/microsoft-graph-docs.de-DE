@@ -1,12 +1,13 @@
 ---
 title: AndroidForWorkApp löschen
 description: Löscht eine AndroidForWorkApp.
-ms.openlocfilehash: ff50960cc7f7b0a52946d94e87e08016a46e3b20
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 53ea38fe0e16f4222a9cf65395565787f63d2745
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060821"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304011"
 ---
 # <a name="delete-androidforworkapp"></a>AndroidForWorkApp löschen
 
@@ -36,9 +37,9 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

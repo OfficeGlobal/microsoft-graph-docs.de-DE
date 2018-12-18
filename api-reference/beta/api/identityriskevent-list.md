@@ -1,12 +1,13 @@
 ---
 title: Liste identityRiskEvents
 description: Abrufen einer Liste von Identityriskevent-Objekten.
-ms.openlocfilehash: 8581aefcdcfb479c607c83d3478d7d4f5af4e269
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: cloudhandler
+ms.openlocfilehash: ee730b2da90cd1d458bd3e3ad4c432db93fa4cea
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058923"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302779"
 ---
 # <a name="list-identityriskevents"></a>Liste identityRiskEvents
 

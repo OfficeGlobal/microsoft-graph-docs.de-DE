@@ -1,12 +1,13 @@
 ---
 title: SendCustomNotificationToCompanyPortal Aktion
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 1242b334fc07bddd599dbbec4f2e04fe4eb4cc34
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 549aff553416e6e8c5fa03382b7a4e513a4ede83
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062929"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305243"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>SendCustomNotificationToCompanyPortal Aktion
 
@@ -34,9 +35,9 @@ POST /deviceManagement/sendCustomNotificationToCompanyPortal
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

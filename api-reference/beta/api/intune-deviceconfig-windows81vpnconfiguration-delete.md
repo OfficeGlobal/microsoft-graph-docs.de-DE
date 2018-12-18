@@ -1,12 +1,13 @@
 ---
 title: Windows81VpnConfiguration löschen
 description: Löscht eine windows81VpnConfiguration.
-ms.openlocfilehash: bcd32541ccb3cd6150e9a8c3110e4e555a34d406
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c3b366f0f1d522963ced36d536a9bb39d02b2615
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059491"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304760"
 ---
 # <a name="delete-windows81vpnconfiguration"></a>Windows81VpnConfiguration löschen
 
@@ -36,9 +37,9 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

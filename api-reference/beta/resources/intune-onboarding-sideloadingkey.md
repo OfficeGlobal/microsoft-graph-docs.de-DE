@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp sideLoadingKey
 description: SideLoadingKey Entität ist für Windows 8 und Anwendungsservercomputern installiert Zeile des Geschäfts-Apps für einen Mandanten 8.1 Geräte erforderlich.
-ms.openlocfilehash: cac2360e2c50e64e1b421df4efaf53802d78558b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 66dc833ab46f8dc1c030a3ef97be78cd73ee3660
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065756"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304312"
 ---
 # <a name="sideloadingkey-resource-type"></a>Ressourcentyp sideLoadingKey
 

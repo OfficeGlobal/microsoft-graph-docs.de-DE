@@ -1,12 +1,13 @@
 ---
 title: iosMinimumOperatingSystem-Ressourcentyp
 description: Enthält die Eigenschaften des für eine mobile iOS-App mindestens erforderlichen Betriebssystems.
-ms.openlocfilehash: 686128d3412b63e5441adfd1ccf62d5fc7c23ab6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 867679282db71df4f50c119e4734796790ddc210
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058604"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301848"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>iosMinimumOperatingSystem-Ressourcentyp
 

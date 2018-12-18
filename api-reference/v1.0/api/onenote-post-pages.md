@@ -1,12 +1,13 @@
 ---
 title: Seite erstellen
 description: Dient zum Erstellen einer neuen OneNote-Seite im Standardabschnitt des Standardnotizbuchs.
-ms.openlocfilehash: 07f5eef560145a9aec1206d6966d1c113774444d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 7d8faf66d95bdeaf5e566a70026f1bc894cc2803
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016914"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303220"
 ---
 # <a name="create-page"></a>Seite erstellen
 
@@ -37,7 +38,7 @@ POST /sites/{id}/onenote/pages
 ## <a name="request-headers"></a>Anforderungsheader  
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string | `text/html` oder `application/xhtml+xml` für den HTML-Inhalt, auch für den erforderlichen Teil „Präsentation“ von mehrteiligen Anforderungen. Mehrteilige Anforderungen verwenden den Inhaltstyp `multipart/form-data; boundary=your-boundary`. |
 
 ## <a name="request-body"></a>Anforderungstext

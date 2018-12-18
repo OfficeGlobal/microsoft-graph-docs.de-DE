@@ -1,12 +1,13 @@
 ---
 title: MacOSLobApp aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines MacOSLobApp-Objekts.
-ms.openlocfilehash: ba1e7b3b277d0042ffad3a6fa146aed2e8bc03b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0e465f84c930362f1607f434388e0c5c108c177f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058679"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303640"
 ---
 # <a name="update-macoslobapp"></a>MacOSLobApp aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

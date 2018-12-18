@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „editionUpgradeConfiguration“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs editionUpgradeConfiguration.
-ms.openlocfilehash: ca438526cbb781a34690e93fe51aeed523f57b50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2ece07f1d0efbcf67f4c28a8fcc3dd2a0b349287
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27057950"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302114"
 ---
 # <a name="update-editionupgradeconfiguration"></a>Aktualisieren von „editionUpgradeConfiguration“
 
@@ -36,9 +37,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

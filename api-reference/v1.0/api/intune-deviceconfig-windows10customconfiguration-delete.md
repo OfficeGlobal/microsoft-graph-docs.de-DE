@@ -1,12 +1,13 @@
 ---
 title: windows10CustomConfiguration löschen
 description: Löscht ein windows10CustomConfiguration-Objekt.
-ms.openlocfilehash: 5dd5d76fb3339527d740ef0891e383510bf9f284
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 983bdc29dd5eeec2b8a743ba560cf73b34874f35
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016367"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302149"
 ---
 # <a name="delete-windows10customconfiguration"></a>windows10CustomConfiguration löschen
 
@@ -32,9 +33,9 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: logoutSharedAppleDeviceActiveUser-Aktion
 description: Aktiven Benutzer von freigegebenem Apple-Gerät abmelden
-ms.openlocfilehash: 6b155174e1e15e5ebc9b80c9390ed2ab2a804efc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7f88f050e38d7d352b43722a7e0a71fca2fa4fb6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27015966"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302065"
 ---
 # <a name="logoutsharedappledeviceactiveuser-action"></a>logoutSharedAppleDeviceActiveUser-Aktion
 
@@ -34,9 +35,9 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

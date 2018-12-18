@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp userAppInstallStatus
 description: Enthält Eigenschaften für den Installationsstatus für einen Benutzer.
-ms.openlocfilehash: 06d9be7bc6d5aa72bde80802b5f6bb282dc5707c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 024fff32aac2a268a2e0bbec81a6d46b31012a11
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064428"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302758"
 ---
 # <a name="userappinstallstatus-resource-type"></a>Ressourcentyp userAppInstallStatus
 

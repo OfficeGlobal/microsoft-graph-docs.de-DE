@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp configurationManagerClientHealthState
 description: Konfigurations-Manager-Client-Zustand
-ms.openlocfilehash: f2724f5d230ee539720e105daf1758bf727bee26
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8361d74f675cf1eaf70b78e2350aae2fc6e83554
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059518"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302786"
 ---
 # <a name="configurationmanagerclienthealthstate-resource-type"></a>Ressourcentyp configurationManagerClientHealthState
 

@@ -1,12 +1,13 @@
 ---
 title: managedAndroidLobApp erstellen
 description: Erstellen eines neuen managedAndroidLobApp-Objekts.
-ms.openlocfilehash: 0822bbc0679f1cb19ec8e4c3d217a3bf5661cdaf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2a86720eb942821bfd8ff47dbc71b934f12d9e7d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019464"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302373"
 ---
 # <a name="create-managedandroidlobapp"></a>managedAndroidLobApp erstellen
 
@@ -32,9 +33,9 @@ POST /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: edgeSearchEngineBase-Ressourcentyp
 description: Ermöglicht es IT-Administratoren, eine standardmäßige Suchmaschine für MDM-gesteuerte Geräte festzulegen. Benutzer können dies außer Kraft setzen und die standardmäßige Suchmaschine ändern, sofern die Richtlinie „AllowSearchEngineCustomization“ nicht festgelegt ist.
-ms.openlocfilehash: 505816652890cd72c61b91001dbce2061b76fc11
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ab7b02e9e158dd711347b27b916fc4bb97c1f2af
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016497"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301547"
 ---
 # <a name="edgesearchenginebase-resource-type"></a>edgeSearchEngineBase-Ressourcentyp
 

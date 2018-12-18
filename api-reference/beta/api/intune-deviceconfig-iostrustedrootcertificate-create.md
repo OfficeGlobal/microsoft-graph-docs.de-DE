@@ -1,12 +1,13 @@
 ---
 title: Erstellen von iosTrustedRootCertificate
 description: Erstellen eines neuen IosTrustedRootCertificate-Objekts.
-ms.openlocfilehash: a537984c84bb3457d3c404ad442a59dbd66c9bf3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: efb1a1107b2e7efcacb108ac3ccb1db9ad347c55
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066023"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305306"
 ---
 # <a name="create-iostrustedrootcertificate"></a>Erstellen von iosTrustedRootCertificate
 
@@ -34,9 +35,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

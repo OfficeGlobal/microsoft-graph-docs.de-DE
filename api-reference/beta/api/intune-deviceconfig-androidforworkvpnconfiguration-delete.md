@@ -1,12 +1,13 @@
 ---
 title: AndroidForWorkVpnConfiguration löschen
 description: Löscht eine AndroidForWorkVpnConfiguration.
-ms.openlocfilehash: 63e1eb2daeb7aa66c5202a5e1f7458d258a99005
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 48e7e0fb58e471833d3d1f8aeb3e5ed4ba886cdf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062617"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303094"
 ---
 # <a name="delete-androidforworkvpnconfiguration"></a>AndroidForWorkVpnConfiguration löschen
 
@@ -36,9 +37,9 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

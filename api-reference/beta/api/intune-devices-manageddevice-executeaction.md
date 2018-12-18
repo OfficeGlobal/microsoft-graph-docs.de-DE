@@ -1,12 +1,13 @@
 ---
 title: ExecuteAction-Aktion
 description: Noch nicht dokumentiert
-ms.openlocfilehash: 1358b95bbb61aaef71df44c87ab6aeb0bc210761
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8ab2749e694ac600c141e314018308efe34b4151
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065318"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305152"
 ---
 # <a name="executeaction-action"></a>ExecuteAction-Aktion
 
@@ -36,9 +37,9 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

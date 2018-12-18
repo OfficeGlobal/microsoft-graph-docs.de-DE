@@ -1,12 +1,13 @@
 ---
 title: Erstellen von windows10EasEmailProfileConfiguration
 description: Erstellen eines neuen windows10EasEmailProfileConfiguration-Objekts.
-ms.openlocfilehash: 8c3eed8547de75538cfce2a7260deaa0a67fa407
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a806605605b331d94e674e4a2035ea604f7d94cb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061105"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302408"
 ---
 # <a name="create-windows10easemailprofileconfiguration"></a>Erstellen von windows10EasEmailProfileConfiguration
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
