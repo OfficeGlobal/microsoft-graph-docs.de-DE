@@ -1,30 +1,31 @@
 ---
 title: enrollmentTroubleshootingEvent löschen
 description: Löscht ein enrollmentTroubleshootingEvent löschen-Objekt.
-ms.openlocfilehash: 233387852b2d7bacc011e1ca5e7fa5acd69ca182
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b611c1761b5e357dafa78fe99e7465aa18f1b55b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065846"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360900"
 ---
-# <a name="delete-enrollmenttroubleshootingevent"></a><span data-ttu-id="2ee44-103">enrollmentTroubleshootingEvent löschen</span><span class="sxs-lookup"><span data-stu-id="2ee44-103">Delete enrollmentTroubleshootingEvent</span></span>
+# <a name="delete-enrollmenttroubleshootingevent"></a><span data-ttu-id="5dd65-103">enrollmentTroubleshootingEvent löschen</span><span class="sxs-lookup"><span data-stu-id="5dd65-103">Delete enrollmentTroubleshootingEvent</span></span>
 
-> <span data-ttu-id="2ee44-104">**Wichtig:** Die APIs der /beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="2ee44-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2ee44-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="2ee44-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="5dd65-104">**Wichtig:** Die APIs der /beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="5dd65-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="5dd65-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="5dd65-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="2ee44-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="2ee44-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="5dd65-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="5dd65-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="2ee44-107">Löscht ein [enrollmentTroubleshootingEvent löschen](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="2ee44-107">Deletes a [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="2ee44-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="2ee44-108">Prerequisites</span></span>
-<span data-ttu-id="2ee44-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2ee44-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5dd65-107">Löscht ein [enrollmentTroubleshootingEvent löschen](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="5dd65-107">Deletes a [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5dd65-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="5dd65-108">Prerequisites</span></span>
+<span data-ttu-id="5dd65-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5dd65-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2ee44-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="2ee44-111">Permission type</span></span>|<span data-ttu-id="2ee44-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="2ee44-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="5dd65-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="5dd65-111">Permission type</span></span>|<span data-ttu-id="5dd65-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="5dd65-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="2ee44-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="2ee44-113">Delegated (work or school account)</span></span>|<span data-ttu-id="2ee44-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2ee44-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="2ee44-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="2ee44-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2ee44-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="2ee44-116">Not supported.</span></span>|
-|<span data-ttu-id="2ee44-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="2ee44-117">Application</span></span>|<span data-ttu-id="2ee44-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="2ee44-118">Not supported.</span></span>|
+|<span data-ttu-id="5dd65-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="5dd65-113">Delegated (work or school account)</span></span>|<span data-ttu-id="5dd65-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5dd65-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="5dd65-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="5dd65-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5dd65-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="5dd65-116">Not supported.</span></span>|
+|<span data-ttu-id="5dd65-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="5dd65-117">Application</span></span>|<span data-ttu-id="5dd65-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="5dd65-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2ee44-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="2ee44-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5dd65-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="5dd65-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -33,27 +34,27 @@ ms.locfileid: "27065846"
 DELETE /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2ee44-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="2ee44-120">Request headers</span></span>
-|<span data-ttu-id="2ee44-121">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="2ee44-121">Header</span></span>|<span data-ttu-id="2ee44-122">Wert</span><span class="sxs-lookup"><span data-stu-id="2ee44-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5dd65-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="5dd65-120">Request headers</span></span>
+|<span data-ttu-id="5dd65-121">Header</span><span class="sxs-lookup"><span data-stu-id="5dd65-121">Header</span></span>|<span data-ttu-id="5dd65-122">Wert</span><span class="sxs-lookup"><span data-stu-id="5dd65-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="2ee44-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="2ee44-123">Authorization</span></span>|<span data-ttu-id="2ee44-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="2ee44-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="2ee44-125">Accept</span><span class="sxs-lookup"><span data-stu-id="2ee44-125">Accept</span></span>|<span data-ttu-id="2ee44-126">application/json</span><span class="sxs-lookup"><span data-stu-id="2ee44-126">application/json</span></span>|
+|<span data-ttu-id="5dd65-123">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="5dd65-123">Authorization</span></span>|<span data-ttu-id="5dd65-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="5dd65-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="5dd65-125">Accept</span><span class="sxs-lookup"><span data-stu-id="5dd65-125">Accept</span></span>|<span data-ttu-id="5dd65-126">application/json</span><span class="sxs-lookup"><span data-stu-id="5dd65-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2ee44-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="2ee44-127">Request body</span></span>
-<span data-ttu-id="2ee44-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="2ee44-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5dd65-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="5dd65-127">Request body</span></span>
+<span data-ttu-id="5dd65-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="5dd65-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2ee44-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="2ee44-129">Response</span></span>
-<span data-ttu-id="2ee44-130">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2ee44-130">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="5dd65-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="5dd65-129">Response</span></span>
+<span data-ttu-id="5dd65-130">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5dd65-130">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2ee44-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="2ee44-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="2ee44-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="2ee44-132">Request</span></span>
-<span data-ttu-id="2ee44-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="2ee44-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="5dd65-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="5dd65-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="5dd65-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="5dd65-132">Request</span></span>
+<span data-ttu-id="5dd65-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="5dd65-133">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 ```
 
-### <a name="response"></a><span data-ttu-id="2ee44-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="2ee44-134">Response</span></span>
-<span data-ttu-id="2ee44-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2ee44-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="5dd65-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="5dd65-134">Response</span></span>
+<span data-ttu-id="5dd65-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5dd65-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
