@@ -1,56 +1,57 @@
 ---
 title: 'TableColumnCollection: add'
 description: Fügt der Tabelle eine neue Spalte hinzu.
-ms.openlocfilehash: 64b6fd2c91642c3f7dd6f5d3e6aaa89b526a28a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: a0897dc4eff387d14643b0a067ef92ad79755614
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065265"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350022"
 ---
-# <a name="tablecolumncollection-add"></a><span data-ttu-id="32269-103">TableColumnCollection: add</span><span class="sxs-lookup"><span data-stu-id="32269-103">TableColumnCollection: add</span></span>
+# <a name="tablecolumncollection-add"></a><span data-ttu-id="ae28e-103">TableColumnCollection: add</span><span class="sxs-lookup"><span data-stu-id="ae28e-103">TableColumnCollection: add</span></span>
 
-> <span data-ttu-id="32269-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="32269-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="32269-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="32269-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ae28e-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="ae28e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ae28e-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="ae28e-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="32269-106">Fügt der Tabelle eine neue Spalte hinzu.</span><span class="sxs-lookup"><span data-stu-id="32269-106">Adds a new column to the table.</span></span>
-## <a name="permissions"></a><span data-ttu-id="32269-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="32269-107">Permissions</span></span>
-<span data-ttu-id="32269-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="32269-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ae28e-106">Fügt der Tabelle eine neue Spalte hinzu.</span><span class="sxs-lookup"><span data-stu-id="ae28e-106">Adds a new column to the table.</span></span>
+## <a name="permissions"></a><span data-ttu-id="ae28e-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="ae28e-107">Permissions</span></span>
+<span data-ttu-id="ae28e-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ae28e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="32269-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="32269-110">Permission type</span></span>      | <span data-ttu-id="32269-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="32269-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ae28e-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="ae28e-110">Permission type</span></span>      | <span data-ttu-id="ae28e-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="ae28e-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="32269-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="32269-112">Delegated (work or school account)</span></span> | <span data-ttu-id="32269-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="32269-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="32269-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="32269-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="32269-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="32269-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="32269-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="32269-116">Application</span></span> | <span data-ttu-id="32269-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="32269-117">Not supported.</span></span> |
+|<span data-ttu-id="ae28e-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="ae28e-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ae28e-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ae28e-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="ae28e-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="ae28e-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ae28e-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ae28e-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="ae28e-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="ae28e-116">Application</span></span> | <span data-ttu-id="ae28e-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ae28e-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="32269-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="32269-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ae28e-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="ae28e-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/columns/add
 POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="32269-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="32269-119">Request headers</span></span>
-| <span data-ttu-id="32269-120">Name</span><span class="sxs-lookup"><span data-stu-id="32269-120">Name</span></span>       | <span data-ttu-id="32269-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="32269-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ae28e-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="ae28e-119">Request headers</span></span>
+| <span data-ttu-id="ae28e-120">Name</span><span class="sxs-lookup"><span data-stu-id="ae28e-120">Name</span></span>       | <span data-ttu-id="ae28e-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ae28e-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="32269-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="32269-122">Authorization</span></span>  | <span data-ttu-id="32269-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="32269-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="32269-125">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="32269-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="32269-p104">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="32269-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="ae28e-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ae28e-122">Authorization</span></span>  | <span data-ttu-id="ae28e-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="ae28e-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ae28e-125">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="ae28e-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="ae28e-p104">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="ae28e-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="32269-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="32269-128">Request body</span></span>
-<span data-ttu-id="32269-129">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="32269-129">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ae28e-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="ae28e-128">Request body</span></span>
+<span data-ttu-id="ae28e-129">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="ae28e-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="32269-130">Parameter</span><span class="sxs-lookup"><span data-stu-id="32269-130">Parameter</span></span>    | <span data-ttu-id="32269-131">Typ</span><span class="sxs-lookup"><span data-stu-id="32269-131">Type</span></span>   |<span data-ttu-id="32269-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="32269-132">Description</span></span>|
+| <span data-ttu-id="ae28e-130">Parameter</span><span class="sxs-lookup"><span data-stu-id="ae28e-130">Parameter</span></span>    | <span data-ttu-id="ae28e-131">Typ</span><span class="sxs-lookup"><span data-stu-id="ae28e-131">Type</span></span>   |<span data-ttu-id="ae28e-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ae28e-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="32269-133">Index</span><span class="sxs-lookup"><span data-stu-id="32269-133">index</span></span>|<span data-ttu-id="32269-134">number</span><span class="sxs-lookup"><span data-stu-id="32269-134">number</span></span>|<span data-ttu-id="32269-p105">Gibt die relative Position der neuen Spalte an. Die vorherige Spalte an dieser Position wird nach rechts verschoben. Der Indexwert sollte gleich oder kleiner als der letzten Spalten-Indexwert sein, damit er nicht dazu verwendet werden kann, eine Spalte an das Ende der Tabelle anzuhängen. Nullindiziert.</span><span class="sxs-lookup"><span data-stu-id="32269-p105">Specifies the relative position of the new column. The previous column at this position is shifted to the right. The index value should be equal to or less than the last column's index value, so it cannot be used to append a column at the end of the table. Zero-indexed.</span></span>|
-|<span data-ttu-id="32269-139">values</span><span class="sxs-lookup"><span data-stu-id="32269-139">values</span></span>|<span data-ttu-id="32269-140">(boolean or string or number)</span><span class="sxs-lookup"><span data-stu-id="32269-140">(boolean or string or number)</span></span>|<span data-ttu-id="32269-p106">Optional. Ein 2-dimensionales Array von unformatierten Werten der Tabellenspalte.</span><span class="sxs-lookup"><span data-stu-id="32269-p106">Optional. A 2-dimensional array of unformatted values of the table column.</span></span>|
+|<span data-ttu-id="ae28e-133">Index</span><span class="sxs-lookup"><span data-stu-id="ae28e-133">index</span></span>|<span data-ttu-id="ae28e-134">number</span><span class="sxs-lookup"><span data-stu-id="ae28e-134">number</span></span>|<span data-ttu-id="ae28e-p105">Gibt die relative Position der neuen Spalte an. Die vorherige Spalte an dieser Position wird nach rechts verschoben. Der Indexwert sollte gleich oder kleiner als der letzten Spalten-Indexwert sein, damit er nicht dazu verwendet werden kann, eine Spalte an das Ende der Tabelle anzuhängen. Nullindiziert.</span><span class="sxs-lookup"><span data-stu-id="ae28e-p105">Specifies the relative position of the new column. The previous column at this position is shifted to the right. The index value should be equal to or less than the last column's index value, so it cannot be used to append a column at the end of the table. Zero-indexed.</span></span>|
+|<span data-ttu-id="ae28e-139">values</span><span class="sxs-lookup"><span data-stu-id="ae28e-139">values</span></span>|<span data-ttu-id="ae28e-140">(boolean or string or number)</span><span class="sxs-lookup"><span data-stu-id="ae28e-140">(boolean or string or number)</span></span>|<span data-ttu-id="ae28e-p106">Optional. Ein 2-dimensionales Array von unformatierten Werten der Tabellenspalte.</span><span class="sxs-lookup"><span data-stu-id="ae28e-p106">Optional. A 2-dimensional array of unformatted values of the table column.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="32269-143">Antwort</span><span class="sxs-lookup"><span data-stu-id="32269-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ae28e-143">Antwort</span><span class="sxs-lookup"><span data-stu-id="ae28e-143">Response</span></span>
 
-<span data-ttu-id="32269-144">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [TableColumn](../resources/tablecolumn.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="32269-144">If successful, this method returns `200 OK` response code and [TableColumn](../resources/tablecolumn.md) object in the response body.</span></span>
+<span data-ttu-id="ae28e-144">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [TableColumn](../resources/tablecolumn.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="ae28e-144">If successful, this method returns `200 OK` response code and [TableColumn](../resources/tablecolumn.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="32269-145">Beispiel</span><span class="sxs-lookup"><span data-stu-id="32269-145">Example</span></span>
-<span data-ttu-id="32269-146">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="32269-146">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="32269-147">Anforderung</span><span class="sxs-lookup"><span data-stu-id="32269-147">Request</span></span>
-<span data-ttu-id="32269-148">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="32269-148">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="ae28e-145">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ae28e-145">Example</span></span>
+<span data-ttu-id="ae28e-146">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="ae28e-146">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="ae28e-147">Anforderung</span><span class="sxs-lookup"><span data-stu-id="ae28e-147">Request</span></span>
+<span data-ttu-id="ae28e-148">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="ae28e-148">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "tablecolumncollection_add"
@@ -70,8 +71,8 @@ Content-length: 51
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="32269-149">Antwort</span><span class="sxs-lookup"><span data-stu-id="32269-149">Response</span></span>
-<span data-ttu-id="32269-p107">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="32269-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ae28e-149">Antwort</span><span class="sxs-lookup"><span data-stu-id="ae28e-149">Response</span></span>
+<span data-ttu-id="ae28e-p107">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="ae28e-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
