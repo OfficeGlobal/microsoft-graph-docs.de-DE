@@ -1,47 +1,48 @@
 ---
 title: Abrufen von identityRiskEvent
 description: Rufen Sie die Eigenschaften und Beziehungen des Identityriskevent-Objekts ab.
-ms.openlocfilehash: 3e00f93fc80f68799687ba6e9b1ec25d803779dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: cloudhandler
+ms.openlocfilehash: 09c33e2d6df33c1a3375f05f44670592ebe1982b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060845"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363697"
 ---
-# <a name="get-identityriskevent"></a><span data-ttu-id="48640-103">Abrufen von identityRiskEvent</span><span class="sxs-lookup"><span data-stu-id="48640-103">Get identityRiskEvent</span></span>
+# <a name="get-identityriskevent"></a><span data-ttu-id="d93df-103">Abrufen von identityRiskEvent</span><span class="sxs-lookup"><span data-stu-id="d93df-103">Get identityRiskEvent</span></span>
 
-> <span data-ttu-id="48640-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="48640-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="48640-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="48640-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="d93df-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="d93df-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d93df-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="d93df-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="48640-106">Rufen Sie die Eigenschaften und Beziehungen des Identityriskevent-Objekts ab.</span><span class="sxs-lookup"><span data-stu-id="48640-106">Retrieve the properties and relationships of identityriskevent object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="48640-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="48640-107">Permissions</span></span>
-<span data-ttu-id="48640-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="48640-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d93df-106">Rufen Sie die Eigenschaften und Beziehungen des Identityriskevent-Objekts ab.</span><span class="sxs-lookup"><span data-stu-id="d93df-106">Retrieve the properties and relationships of identityriskevent object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d93df-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="d93df-107">Permissions</span></span>
+<span data-ttu-id="d93df-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d93df-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="48640-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="48640-110">Permission type</span></span>      | <span data-ttu-id="48640-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="48640-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d93df-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="d93df-110">Permission type</span></span>      | <span data-ttu-id="d93df-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="d93df-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="48640-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="48640-112">Delegated (work or school account)</span></span> | <span data-ttu-id="48640-113">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="48640-113">IdentityRiskEvent.Read.All</span></span>    |
-|<span data-ttu-id="48640-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="48640-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="48640-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="48640-115">Not supported.</span></span>    |
-|<span data-ttu-id="48640-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="48640-116">Application</span></span> | <span data-ttu-id="48640-117">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="48640-117">IdentityRiskEvent.Read.All</span></span> |
+|<span data-ttu-id="d93df-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="d93df-112">Delegated (work or school account)</span></span> | <span data-ttu-id="d93df-113">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="d93df-113">IdentityRiskEvent.Read.All</span></span>    |
+|<span data-ttu-id="d93df-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="d93df-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d93df-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="d93df-115">Not supported.</span></span>    |
+|<span data-ttu-id="d93df-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="d93df-116">Application</span></span> | <span data-ttu-id="d93df-117">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="d93df-117">IdentityRiskEvent.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="48640-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="48640-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d93df-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="d93df-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /identityRiskEvents/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="48640-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="48640-119">Request headers</span></span>
-| <span data-ttu-id="48640-120">Name</span><span class="sxs-lookup"><span data-stu-id="48640-120">Name</span></span>      |<span data-ttu-id="48640-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="48640-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d93df-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="d93df-119">Request headers</span></span>
+| <span data-ttu-id="d93df-120">Name</span><span class="sxs-lookup"><span data-stu-id="d93df-120">Name</span></span>      |<span data-ttu-id="d93df-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d93df-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="48640-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="48640-122">Authorization</span></span>  | <span data-ttu-id="48640-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="48640-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="48640-125">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="48640-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="48640-p104">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="48640-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="d93df-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="d93df-122">Authorization</span></span>  | <span data-ttu-id="d93df-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="d93df-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d93df-125">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="d93df-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="d93df-p104">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="d93df-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="48640-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="48640-128">Request body</span></span>
-<span data-ttu-id="48640-129">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="48640-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d93df-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="d93df-128">Request body</span></span>
+<span data-ttu-id="d93df-129">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="d93df-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="48640-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="48640-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d93df-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="d93df-130">Response</span></span>
 
-<span data-ttu-id="48640-131">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [IdentityRiskEvent](../resources/identityriskevent.md) im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="48640-131">If successful, this method returns a `200 OK` response code and [identityRiskEvent](../resources/identityriskevent.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="48640-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="48640-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="48640-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="48640-133">Request</span></span>
-<span data-ttu-id="48640-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="48640-134">Here is an example of the request.</span></span>
+<span data-ttu-id="d93df-131">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [IdentityRiskEvent](../resources/identityriskevent.md) im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="d93df-131">If successful, this method returns a `200 OK` response code and [identityRiskEvent](../resources/identityriskevent.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="d93df-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d93df-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d93df-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="d93df-133">Request</span></span>
+<span data-ttu-id="d93df-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="d93df-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_identityriskevent"
@@ -49,8 +50,8 @@ GET /identityRiskEvents/{id}
 ```http
 GET https://graph.microsoft.com/beta/identityRiskEvents/ec50e9fb-9da1-215b-e18c-b7e2a716b2a6-c2b6c2b9-dddc-acd0-2b39-d519d803dbc3-db69711e-9324-ec99-f010-6e63fb972e98
 ```
-##### <a name="response"></a><span data-ttu-id="48640-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="48640-135">Response</span></span>
-<span data-ttu-id="48640-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="48640-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d93df-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="d93df-135">Response</span></span>
+<span data-ttu-id="d93df-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="d93df-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
