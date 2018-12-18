@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windowsVpnConfiguration
 description: Windows-VPN-Konfigurationsprofil.
-ms.openlocfilehash: 4f6cb40858a3c1f38ec152ca2e957a9bbfba36d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3e627c54c7841ccd9e3f836c805038f26b0099d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062993"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331857"
 ---
 # <a name="windowsvpnconfiguration-resource-type"></a>Ressourcentyp windowsVpnConfiguration
 

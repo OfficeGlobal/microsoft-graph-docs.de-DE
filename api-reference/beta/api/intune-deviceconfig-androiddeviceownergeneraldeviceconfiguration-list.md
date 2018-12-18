@@ -1,12 +1,13 @@
 ---
 title: Liste androidDeviceOwnerGeneralDeviceConfigurations
 description: Listeneigenschaften und Beziehungen der AndroidDeviceOwnerGeneralDeviceConfiguration-Objekte.
-ms.openlocfilehash: 22fd0755ccd3eed718121984085d1f67dac0d21a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ad0b8a59ae5db2b1feb38922b8eece9af8132301
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058605"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335714"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>Liste androidDeviceOwnerGeneralDeviceConfigurations
 
@@ -35,9 +36,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

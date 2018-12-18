@@ -1,12 +1,13 @@
 ---
 title: Benutzer erstellen
 description: Dient zum Erstellen eines neuen Benutzerobjekts.
-ms.openlocfilehash: e79fc06543b2f5d6c827b4f0900c4ba972bf6e74
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9d71aeca95c1a8b3efa676cca80652fb7fd124fa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019030"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331640"
 ---
 # <a name="create-user"></a>Benutzer erstellen
 
@@ -36,9 +37,9 @@ POST /users
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

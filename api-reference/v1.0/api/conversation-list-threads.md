@@ -1,12 +1,13 @@
 ---
 title: Threads auflisten
 description: Dient zum Abrufen aller Threads in einer Gruppenunterhaltung.
-ms.openlocfilehash: 9d3a981b71b369e745acae0b362e5711a18f0272
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: e9203fce8d2b6b5b216d051bcb00193ced3da4a7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018523"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333005"
 ---
 # <a name="list-threads"></a>Threads auflisten
 
@@ -31,7 +32,7 @@ GET /groups/{id}/conversations/{id}/threads
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

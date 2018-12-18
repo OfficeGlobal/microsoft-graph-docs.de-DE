@@ -1,12 +1,13 @@
 ---
 title: Nachrichten senden
 description: Sendet die im Anforderungstext angegebene Nachricht. Die Nachricht wird dann automatisch im Ordner „Gesendete Elemente“ gespeichert.
-ms.openlocfilehash: 6d8150f7292747e7c1d182395f9a98b1a199389f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: a818ec5cc455b6ca78c920be57ad34155a03a1bc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016660"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333292"
 ---
 # <a name="send-mail"></a>Nachrichten senden
 
@@ -30,7 +31,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /users/{id | userPrincipalName}/sendMail
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

@@ -1,12 +1,13 @@
 ---
 title: Liste trendingAround
 description: Berechnete Insight, der die Liste der Elemente, um einen Benutzer Trend zurückgibt.
-ms.openlocfilehash: 769c6a20105442129a6c4993a58bf6dbddce1b61
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 2f2595cbaacc74053b23d6b26b64fb9a17e2924a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058726"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333831"
 ---
 # <a name="list-trendingaround"></a>Liste trendingAround
 
@@ -36,7 +37,7 @@ GET /drive/root/lastModifiedByUser/trendingAround
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile         | Wert                      |
+| Header         | Wert                      |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type   | application/json           |

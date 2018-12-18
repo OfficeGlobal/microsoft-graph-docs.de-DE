@@ -1,12 +1,13 @@
 ---
 title: 'TableColumn: Range'
 description: Ruft das Bereichsobjekt ab, das mit der gesamten Spalte verknüpft ist.
-ms.openlocfilehash: 9aaac59518feddc84a60197cab0ff097007d5c19
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ef3615d78ca4c4121d69db68e7cb3cdb6840ad01
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061007"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328931"
 ---
 # <a name="tablecolumn-range"></a>TableColumn: Range
 

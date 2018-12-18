@@ -1,12 +1,13 @@
 ---
 title: DeviceComplianceActionType Enum-Typ
 description: Geplante Aktion Typ Enum
-ms.openlocfilehash: 98e54f163663cc041a3e3c31123504c051884309
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9fd0a8bd045ad04fe0acf55f899e693d7fcce5d0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061205"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335686"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>DeviceComplianceActionType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27061205"
 
 Geplante Aktion Typ Enum
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |noAction|0|Keine Aktion|
 |Benachrichtigung|1|Benachrichtigung senden|

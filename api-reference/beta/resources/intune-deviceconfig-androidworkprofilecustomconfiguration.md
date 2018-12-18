@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp androidWorkProfileCustomConfiguration
 description: Android Arbeit Profil benutzerdefinierte Konfiguration
-ms.openlocfilehash: b3a78b84a7bdd6f43e5ef322b9c94cdbbbab7d87
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0c3231787e0eb4b72cc3fadfe8fe160ed47805f7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060623"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335693"
 ---
 # <a name="androidworkprofilecustomconfiguration-resource-type"></a>Ressourcentyp androidWorkProfileCustomConfiguration
 

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windowsAssignedAccessProfile
 description: Profil zugewiesenen Access für Windows.
-ms.openlocfilehash: 2fc23bfed54ef850050b177589d5b4c0c79c22cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6b01f362c31f6e2791a00d8ff02a7ecd5b798e3c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059412"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328791"
 ---
 # <a name="windowsassignedaccessprofile-resource-type"></a>Ressourcentyp windowsAssignedAccessProfile
 

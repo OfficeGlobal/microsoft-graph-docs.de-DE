@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp windowsManagedDevice
 description: Windows-Geräte, die verwaltet werden, oder über Intune Einschreibung
-ms.openlocfilehash: 753d6c40cb47ebd7c9e7fd0736ca8c574ceb80b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d432e4cdc4552117de56362df0fd632f6bc1719e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061567"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328938"
 ---
 # <a name="windowsmanageddevice-resource-type"></a>Ressourcentyp windowsManagedDevice
 

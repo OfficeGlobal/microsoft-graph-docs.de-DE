@@ -1,12 +1,13 @@
 ---
 title: WindowsPrivacyDataAccessLevel Enum-Typ
 description: Bestimmen Sie die Zugriffsebene für bestimmte Kategorie von Windows private Daten.
-ms.openlocfilehash: 09db03706795cc2aba4cc0c93dce87dc7069cd3c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6eb1c1ea6eff28d90979da3ff998fd8442df353a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065907"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332410"
 ---
 # <a name="windowsprivacydataaccesslevel-enum-type"></a>WindowsPrivacyDataAccessLevel Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27065907"
 
 Bestimmen Sie die Zugriffsebene für bestimmte Kategorie von Windows private Daten.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Keine Zugriffsebene angegeben, keine Intents. Gerät kann entweder wie in UserInControl oder ForceAllow Verhalten. Es kann die private Daten abhängen wurde Zugriff auf Windows-Versionen und anderen Faktoren.|
 |forceAllow|1|Apps dürfen die angegebenen private Daten zugreifen.|

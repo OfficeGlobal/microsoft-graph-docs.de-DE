@@ -1,12 +1,13 @@
 ---
 title: webApp erstellen
 description: Erstellen eines neuen webApp-Objekts.
-ms.openlocfilehash: ea048b1beb1c036ea8bc8c1bd4f6e904e446b87c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0ebe226b42fb0a35658a08107c9826a7401825db
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061588"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330926"
 ---
 # <a name="create-webapp"></a>webApp erstellen
 
@@ -34,9 +35,9 @@ POST /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

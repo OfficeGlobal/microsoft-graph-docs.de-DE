@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp userActivationCounts
 description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: 022b73310a54877889efebabbb6e8fc4ab71fb65
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 396f6182d000df6d701e8c0cbad3dd02a258c4c0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061139"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322918"
 ---
 # <a name="useractivationcounts-resource-type"></a>Ressourcentyp userActivationCounts
 

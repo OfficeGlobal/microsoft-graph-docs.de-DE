@@ -1,12 +1,13 @@
 ---
 title: iosVppEBook abrufen
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs iosVppEBook.
-ms.openlocfilehash: fd30838d4779813c3b9fe98ea11414b5f8bbaf06
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 96b3b5804950f4cb3a0d474f4926e62a5c386623
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019266"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334860"
 ---
 # <a name="get-iosvppebook"></a>iosVppEBook abrufen
 
@@ -34,9 +35,9 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

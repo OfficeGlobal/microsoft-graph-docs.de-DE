@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp eventMessageRequest
 description: Eine Nachricht, die eine Besprechungsanfrage darstellt.
-ms.openlocfilehash: b63778d868000c57d8a900b67d0554c6f6bef2bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: f32393e0811543e7630c16e6889b31ce3dbc5920
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064063"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335644"
 ---
 # <a name="eventmessagerequest-resource-type"></a>Ressourcentyp eventMessageRequest
 
@@ -110,7 +111,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |startDateTime|[DateTimeTimeZone](datetimetimezone.md)|Die Anfangszeit der angeforderten Besprechung.|
 |Betreff|String|Der Betreff der Nachricht.|
 |toRecipients|[recipient](recipient.md) collection|Die An:-Empfänger der Nachricht.|
-|Typ|String|Die Art der angeforderten Besprechung: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
+|type|String|Die Art der angeforderten Besprechung: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
 |uniqueBody|[itemBody](itembody.md)|Der Teil des Textkörpers der Nachricht, der für die aktuelle Nachricht eindeutig ist.|
 |webLink|String|Die URL zum Öffnen der Nachricht in Outlook Web App.<br><br>Sie können am Ende der URL das Argument „ispopout“ anhängen, um zu ändern, wie die Nachricht angezeigt wird. Wenn „ispopout“ nicht vorhanden oder auf 1 festgelegt ist, wird die Nachricht in einem Popout-Fenster angezeigt. Wenn „ispopout“ auf 0 festgelegt ist, zeigt der Browser die Nachricht in Outlook Web App im Prüffensterbereich an.<br><br>Die Nachricht wird im Browser geöffnet, wenn Sie über Outlook Web App bei Ihrem Postfach angemeldet sind. Sie werden aufgefordert, sich anzumelden, wenn Sie noch nicht beim Browser angemeldet sind.<br><br>Auf diese URL kann von einem iFrame aus zugegriffen werden.|
 

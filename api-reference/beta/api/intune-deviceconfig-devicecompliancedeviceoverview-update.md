@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „deviceComplianceDeviceOverview“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceComplianceDeviceOverview.
-ms.openlocfilehash: ef95ab3b197c228ac2e7a94857ae166c44eaf003
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 57237ed27f766c6cf8eab797cfa56735fde64aea
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058918"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333215"
 ---
 # <a name="update-devicecompliancedeviceoverview"></a>Aktualisieren von „deviceComplianceDeviceOverview“
 
@@ -34,9 +35,9 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

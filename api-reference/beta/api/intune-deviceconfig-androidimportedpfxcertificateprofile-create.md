@@ -1,12 +1,13 @@
 ---
 title: Erstellen von androidImportedPFXCertificateProfile
 description: Erstellen eines neuen AndroidImportedPFXCertificateProfile-Objekts.
-ms.openlocfilehash: 47e39175e43ea40496ac042e0a3683f9e45193dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 90065f5d5abff8d5ee98daabeb158f87f9f38c38
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060827"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335336"
 ---
 # <a name="create-androidimportedpfxcertificateprofile"></a>Erstellen von androidImportedPFXCertificateProfile
 
@@ -35,9 +36,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

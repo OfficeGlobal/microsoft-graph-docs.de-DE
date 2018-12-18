@@ -1,12 +1,13 @@
 ---
 title: 'Range: Row'
 description: Ruft eine Zelle ab, die im Bereich enthalten ist.
-ms.openlocfilehash: d27d604444760d31f4abed9f1c3b9ae958a34aee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: b90238e76bff546b975624bd3723764aa6c3b535
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063710"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335217"
 ---
 # <a name="range-row"></a>Range: Row
 

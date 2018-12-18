@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „termsAndConditions“
 description: Diese Methode erstellt ein neues Objekt des Typs termsAndConditions.
-ms.openlocfilehash: d5623b4ac2bff18098991aadfa7e72278747722d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1eaa9f8a24082813abb3ffbda2c188a1a4e632b4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016311"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334412"
 ---
 # <a name="create-termsandconditions"></a>Erstellen von „termsAndConditions“
 
@@ -32,9 +33,9 @@ POST /deviceManagement/termsAndConditions
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

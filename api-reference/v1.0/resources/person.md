@@ -1,12 +1,13 @@
 ---
 title: Personenressourcentyp
 description: Eine Ansammlung von Informationen über eine Person aus E-Mails, Kontakten und sozialen Netzwerken. Personen können lokale Kontakte, Kontakte aus sozialen Netzwerken, aus dem Verzeichnis Ihrer Organisation und Personen aus kürzlichen Unterhaltungen (z. B. E-Mail und Skype) sein.
-ms.openlocfilehash: 098e1bd67e151b8c08607ad358935ba45065c8d2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: 519f5ade493300bdaaafeade289cbefea687df58
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017057"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329456"
 ---
 # <a name="person-resource-type"></a>Personenressourcentyp
 
@@ -23,25 +24,25 @@ Eine Ansammlung von Informationen über eine Person aus E-Mails, Kontakten und s
 | Eigenschaft | Typ | Beschreibung |
 |:---------------|:--------|:----------|
 |birthday|String|Der Geburtstag der Person.|
-|companyName|String|Der Name des Unternehmens der Person.|
+|companyName|Zeichenfolge|Der Name des Unternehmens der Person.|
 |department|String|Die Abteilung der Person.|
-|displayName|String|Der Anzeigename der Person.|
+|displayName|Zeichenfolge|Der Anzeigename der Person.|
 |scoredEmailAddresses|[scoredEmailAddress](scoredemailaddress.md)-Sammlung|Die E-Mail-Adressen der Person.|
 |givenName|String|Der Vorname der Person.|
-|id|String|Eindeutiger Bezeichner für die Person. Schreibgeschützt.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für die Person. Schreibgeschützt.|
 |imAddress|String|Die VOIP-SIP-Adresse (Voice oder IP; Session Initiation Protocol) der Chatnachricht für den Benutzer. Schreibgeschützt.|
 |isFavorite|Boolesch|`true`, wenn der Benutzer diese Person als Favorit gekennzeichnet hat.|
-|jobTitle|String|Die Position der Person.|
+|jobTitle|Zeichenfolge|Die Position der Person.|
 |officeLocation|String|Der Bürostandort der Person.|
 |personNotes|String|Frei formatierbare Notizen, die der Benutzer zu dieser Person hinzugefügt hat.|
 |personType|[personType](persontype.md) |Der Personentyp.|
 |phones|[phone](phone.md)-Sammlung|Die Telefonnummern der Person.|
 |postalAddresses|[location](location.md)-Sammlung|Die Adressen der Person.|
 |profession|String|Der Beruf der Person.|
-|surname|String|Der Nachname der Person.|
+|surname|Zeichenfolge|Der Nachname der Person.|
 |userPrincipalName|String|Der Benutzerprinzipalname der Person. Der UPN ist ein Anmeldename der Person im Internetformat, der auf dem Internetstandard [RFC 822](https://www.ietf.org/rfc/rfc0822.txt) basiert. Gemäß der Konvention sollte er dem E-Mail-Namen der Person zugeordnet sein. Das allgemeine Format lautet alias@domäne.|
 |websites|[website](website.md)-Sammlung|Die Websites der Person.|
-|yomiCompany|String|Der phonetische japanische Firmenname des Unternehmens der Person.|
+|yomiCompany|Zeichenfolge|Der phonetische japanische Firmenname des Unternehmens der Person.|
 
 ## <a name="relationships"></a>Beziehungen
 

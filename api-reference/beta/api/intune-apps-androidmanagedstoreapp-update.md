@@ -1,12 +1,13 @@
 ---
 title: AndroidManagedStoreApp aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidManagedStoreApp-Objekts.
-ms.openlocfilehash: c3c2edde22e1b6538b08930507136e15d470e221
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2355b79b64c03da4f3be12e42d796b96ebbb31b6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064112"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336127"
 ---
 # <a name="update-androidmanagedstoreapp"></a>AndroidManagedStoreApp aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

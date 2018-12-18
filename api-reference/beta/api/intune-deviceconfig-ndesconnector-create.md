@@ -1,12 +1,13 @@
 ---
 title: Erstellen von ndesConnector
 description: Erstellen eines neuen NdesConnector-Objekts.
-ms.openlocfilehash: 0dd1ee403a03d72e5bd9c0dd8febcfb28a01a36e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 16580e9d69850139edd8f268bbaf3688b29d06e7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061373"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333600"
 ---
 # <a name="create-ndesconnector"></a>Erstellen von ndesConnector
 
@@ -34,9 +35,9 @@ POST /deviceManagement/ndesConnectors
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

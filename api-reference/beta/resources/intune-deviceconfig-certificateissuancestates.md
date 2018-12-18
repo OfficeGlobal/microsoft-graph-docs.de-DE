@@ -1,12 +1,13 @@
 ---
 title: CertificateIssuanceStates Enum-Typ
 description: Zertifikat Veröffentlichungslizenzen Zustand-Optionen.
-ms.openlocfilehash: 6335b6c6368e655c0a429b4c8fae3219b1bf8dbb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1076ce6cae423e8eed459c008e74e710e528e48d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062101"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328035"
 ---
 # <a name="certificateissuancestates-enum-type"></a>CertificateIssuanceStates Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27062101"
 
 Zertifikat Veröffentlichungslizenzen Zustand-Optionen.
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Noch nicht dokumentiert|
 |challengeIssued|1|Noch nicht dokumentiert|

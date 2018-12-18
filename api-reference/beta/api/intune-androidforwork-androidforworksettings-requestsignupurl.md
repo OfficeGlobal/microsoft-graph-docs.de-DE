@@ -1,12 +1,13 @@
 ---
 title: Aktion „requestSignupUrl“
 description: Noch nicht dokumentiert
-ms.openlocfilehash: d4d6084de274ccf9cf8bdf64fd198ef353e27f54
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5a6e057842befe22dd2ad7035a76d013aca45e4e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064511"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336043"
 ---
 # <a name="requestsignupurl-action"></a>Aktion „requestSignupUrl“
 
@@ -34,9 +35,9 @@ POST /deviceManagement/androidForWorkSettings/requestSignupUrl
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

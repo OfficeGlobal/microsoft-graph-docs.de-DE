@@ -1,12 +1,13 @@
 ---
 title: RatingCanadaMoviesType Enum-Typ
 description: Filme Bewertung Bezeichnungen in Kanada
-ms.openlocfilehash: 7a1a79b98641671605cea0f6e078ba3e0b48512e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fdedbd1b52c8ac8527119fb4957a26becd5c0a1b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017695"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336932"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>RatingCanadaMoviesType Enum-Typ
 
@@ -14,7 +15,7 @@ ms.locfileid: "27017695"
 
 Filme Bewertung Bezeichnungen in Kanada
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |allAllowed|0|Standardwert, alle Filme Inhalte zulassen|
 |allBlocked|1|Alle Inhalte Filme nicht zulassen|

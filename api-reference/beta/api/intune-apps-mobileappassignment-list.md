@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „mobileAppAssignment“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs mobileAppAssignment auf.
-ms.openlocfilehash: a8d90988a6338a4918569f119c9959dbbac2aa50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 91559a372bb0bf5f9f505e28c46d5a69acc09533
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065955"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336386"
 ---
 # <a name="list-mobileappassignments"></a>Auflisten von „mobileAppAssignment“
 
@@ -34,9 +35,9 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

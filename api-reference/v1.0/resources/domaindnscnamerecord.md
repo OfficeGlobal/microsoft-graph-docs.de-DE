@@ -1,12 +1,13 @@
 ---
 title: domainDnsCnameRecord-Ressourcentyp
 description: Stellt einen CNAME-Eintrag dar, der der DNS-Zonendatei einer bestimmten Domäne im Mandanten hinzugefügt wird. Geerbt von der Entität DomainDnsRecord.
-ms.openlocfilehash: 1c8df7148a4d843d5cd6278f5cbcc03358159424
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: bd1701e0757dc2facecb066beb7fe9108345a7f2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018503"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330835"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>domainDnsCnameRecord-Ressourcentyp
 

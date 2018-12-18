@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp educationFileSynchronizationVerificationMessage
 description: Stellt einen Fehler an den Client als Antwort auf eine Anforderung zum Starten der Synchronisierung für die CSV-basierte Schule datenprofile zurückgegeben. Die Ressource wird Fehler enthalten, die aus der Überprüfung. Benutzer müssen die Quelldaten beheben, bevor Sie die Anforderung für die Synchronisierung mit Azure Active Directory (AD Azure) neu starten.
-ms.openlocfilehash: cf685e0619c5600340df68ba86ecaef11a8a435d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: f2826f779aac3ba41146b6677f3d1e0364be92a1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058527"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336064"
 ---
 # <a name="educationfilesynchronizationverificationmessage-resource-type"></a>Ressourcentyp educationFileSynchronizationVerificationMessage
 

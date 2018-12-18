@@ -1,12 +1,13 @@
 ---
 title: Liste DDE-Kanal an Antworten
 description: Listen Sie alle Antworten einer Nachricht in einem Kanal eines Teams.
-ms.openlocfilehash: 7133f48233f2b164aa6643ba896dd0612645e7e8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: ac0447e8c0e29e21b60b52c78362c22b0acbd5de
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058058"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336631"
 ---
 # <a name="list-channel-message-replies"></a>Liste DDE-Kanal an Antworten
 
@@ -33,7 +34,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 Die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) werden derzeit nicht unterstützt.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

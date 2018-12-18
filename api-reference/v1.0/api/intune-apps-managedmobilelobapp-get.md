@@ -1,12 +1,13 @@
 ---
 title: managedMobileLobApp abrufen
 description: Lesen von Eigenschaften und Beziehungen des managedMobileLobApp-Objekts.
-ms.openlocfilehash: 5a177ad9761f569a604a5a0122a3a4bb8ad828d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b15f4337c8ff5669d50ada9335f1fde7b111f205
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019253"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325466"
 ---
 # <a name="get-managedmobilelobapp"></a>managedMobileLobApp abrufen
 
@@ -34,9 +35,9 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

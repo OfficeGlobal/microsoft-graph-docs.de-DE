@@ -1,12 +1,13 @@
 ---
 title: Gerät erstellen
 description: Erstellen Sie ein neues Gerät.
-ms.openlocfilehash: 33dc1f8da40e29e8c135cf24f35ec3ce52af9b06
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e2b52c67ee34df9a609fbb53972ee8b859e6889f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062790"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336141"
 ---
 # <a name="create-device"></a>Gerät erstellen
 
@@ -32,7 +33,7 @@ POST /devices
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [device](../resources/device.md)-Objekts an.

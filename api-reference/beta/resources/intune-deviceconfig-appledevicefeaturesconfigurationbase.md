@@ -1,12 +1,13 @@
 ---
 title: appleDeviceFeaturesConfigurationBase-Ressourcentyp
 description: Diese Ressource repräsentiert das Konfigurationsprofil der Funktionen eines Apple-Geräts.
-ms.openlocfilehash: b4201451bcee4a6000c454a3428a27de81e1ec58
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bac4446afad385d04f61bc8e96a7dca805c8604c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063185"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336393"
 ---
 # <a name="appledevicefeaturesconfigurationbase-resource-type"></a>appleDeviceFeaturesConfigurationBase-Ressourcentyp
 

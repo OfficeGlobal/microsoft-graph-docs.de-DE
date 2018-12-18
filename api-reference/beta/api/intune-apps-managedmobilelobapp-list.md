@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „managedMobileLobApp“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs managedMobileLobApp auf.
-ms.openlocfilehash: d4753d6b3ffdf27562455bbdb8545c02c2b52df0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 74e8d0916e3d2a8a09cf74ede1d996eb8ec8ed44
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064028"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332823"
 ---
 # <a name="list-managedmobilelobapps"></a>Auflisten von „managedMobileLobApp“
 
@@ -34,9 +35,9 @@ GET /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

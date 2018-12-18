@@ -1,12 +1,13 @@
 ---
 title: RoleScopeTag löschen
 description: Löscht eine RoleScopeTag.
-ms.openlocfilehash: cb4e58e29e8f6f994c22cca397b8071514e0f8f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fe141f3a435b591da1cbc6459ba88b3857ccf717
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062530"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329358"
 ---
 # <a name="delete-rolescopetag"></a>RoleScopeTag löschen
 
@@ -35,9 +36,9 @@ DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{rol
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

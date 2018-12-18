@@ -1,12 +1,13 @@
 ---
 title: VpnServer Ressourcentyp
 description: VPN-Server-Definition.
-ms.openlocfilehash: e89cc562c3fe0f6b353199ca7de639053177ab1f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a8f0e6bd38f243d0066da231ef07d1723961987b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061600"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328777"
 ---
 # <a name="vpnserver-resource-type"></a>VpnServer Ressourcentyp
 

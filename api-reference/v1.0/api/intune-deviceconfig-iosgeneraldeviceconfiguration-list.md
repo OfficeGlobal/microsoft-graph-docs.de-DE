@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „iosGeneralDeviceConfiguration“
 description: Listet die Eigenschaften und Beziehungen der macOSGeneralDeviceConfiguration-Objekte auf.
-ms.openlocfilehash: 0530689b0173676767db5ef6ed9dfb0ea346fe12
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4adebc3e61727241dbc6ec112c33731510ca933d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016909"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332046"
 ---
 # <a name="list-iosgeneraldeviceconfigurations"></a>Auflisten von „iosGeneralDeviceConfiguration“
 
@@ -32,9 +33,9 @@ GET /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph Sicherheit API Fehlerantworten
 description: Fehler in der Microsoft Graph Sicherheit API werden mithilfe des standard 206 teilweise von HTTP-Statuscodes zurückgegeben und über eine Warnung Header übermittelt werden.
-ms.openlocfilehash: 9ac124f763e7668471f89beffb968cb883217e80
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: Preetikr
+ms.openlocfilehash: 6685d69f202696e33422d9bd3a877cba02fd10dd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184504"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334419"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Microsoft Graph Sicherheit API Fehlerantworten
 

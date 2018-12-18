@@ -1,12 +1,13 @@
 ---
 title: Auflisten von „sharedPCConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs sharedPCConfiguration auf.
-ms.openlocfilehash: 26af855cab9faddbd3c24849067cbbfe3fc4d3a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: be131b94c61fe859ef66d05f88b76a6e024233d9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061120"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333432"
 ---
 # <a name="list-sharedpcconfigurations"></a>Auflisten von „sharedPCConfiguration“
 
@@ -35,9 +36,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

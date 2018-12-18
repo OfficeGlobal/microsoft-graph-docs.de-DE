@@ -1,12 +1,13 @@
 ---
 title: WindowsHelloForBusinessPinUsage Enum-Typ
 description: Windows Hello für Business Pin Verwendungsoptionen
-ms.openlocfilehash: 7f199a25d08f95e967c3bd48491a83ad7a54a1bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 91581880adbdb4074af7ecfd25f7e2e7387b60eb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018883"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336757"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>WindowsHelloForBusinessPinUsage Enum-Typ
 
@@ -14,7 +15,7 @@ ms.locfileid: "27018883"
 
 Windows Hello für Business Pin Verwendungsoptionen
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |zulässig|0|Noch nicht dokumentiert|
 |erforderlich|1|Noch nicht dokumentiert|

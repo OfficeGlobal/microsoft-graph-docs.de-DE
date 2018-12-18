@@ -1,12 +1,13 @@
 ---
 title: roleAssignment-Ressourcentyp
 description: Die Rollenzuweisungsressource. Rollenzuweisungen verknüpfen eine Rollendefinition mit Membern und Bereichen. Es kann eine oder mehrere Rollenzuweisungen pro Rolle geben. Dies gilt für benutzerdefinierte und integrierte Rollen.
-ms.openlocfilehash: 8af3c9778fefd2485948a48f1621c9d9e034c6db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6af73146c47ab3565722497146944a0b301e6a56
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018041"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329582"
 ---
 # <a name="roleassignment-resource-type"></a>roleAssignment-Ressourcentyp
 

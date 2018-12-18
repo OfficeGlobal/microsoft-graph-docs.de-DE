@@ -1,12 +1,13 @@
 ---
 title: managedAppStatusRaw-Ressourcentyp
 description: Stellt einen nicht typisierten Statusbericht über App-Schutz und -Konfiguration der Organisation dar.
-ms.openlocfilehash: ba2f398e54e27cb079dd575530d46a7bf287722d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9b7c957451e3fc92ad79ef10433e26bf39fd1c48
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058449"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331927"
 ---
 # <a name="managedappstatusraw-resource-type"></a>managedAppStatusRaw-Ressourcentyp
 

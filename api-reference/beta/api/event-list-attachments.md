@@ -1,12 +1,13 @@
 ---
 title: Anlagen auflisten
 description: Mit dieser API können Sie eine Liste der einem Ereignis angefügten Objekte des Typs attachment abrufen.
-ms.openlocfilehash: cc632ab14bf2c64628cdf5177da5601f4b04f4d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 051ab6fa9b2064ea62606f5d01de540600ed66c2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059645"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333873"
 ---
 # <a name="list-attachments"></a>Anlagen auflisten
 
@@ -71,7 +72,7 @@ GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: Abrufen von iosPkcsCertificateProfile
 description: Lesen Sie Eigenschaften und Beziehungen des IosPkcsCertificateProfile-Objekts.
-ms.openlocfilehash: 62c12b57509da4ab425dbc7cf74272c73ccb2ed2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 28beb185148a711d54b562f252828d6ec01db8d3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065940"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335700"
 ---
 # <a name="get-iospkcscertificateprofile"></a>Abrufen von iosPkcsCertificateProfile
 
@@ -38,9 +39,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

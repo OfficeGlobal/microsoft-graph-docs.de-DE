@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp androidTrustedRootCertificate
 description: Android vertrauenswürdige Stammzertifikat Konfigurationsprofil
-ms.openlocfilehash: 09761affbe478c815a26660853bbde2e5323140c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 064500dc27c7b76a2d6d77bb04d64e2e25c0ff36
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060609"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336036"
 ---
 # <a name="androidtrustedrootcertificate-resource-type"></a>Ressourcentyp androidTrustedRootCertificate
 

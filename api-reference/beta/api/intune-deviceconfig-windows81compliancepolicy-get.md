@@ -1,12 +1,13 @@
 ---
 title: windows81CompliancePolicy abrufen
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs windows81CompliancePolicy.
-ms.openlocfilehash: 2ebcf7861e50b9910c9cdc22cf949d2214904251
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5e191baa2d981b2721c6a271f075cdd9f5184354
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063979"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329743"
 ---
 # <a name="get-windows81compliancepolicy"></a>windows81CompliancePolicy abrufen
 
@@ -36,9 +37,9 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

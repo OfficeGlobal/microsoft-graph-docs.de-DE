@@ -1,12 +1,13 @@
 ---
 title: rejectedSenders auflisten
 description: 'Ruft eine Liste von Benutzern oder Gruppen ab, die sich in der Liste der rejectedSenders für diese Gruppe befinden. '
-ms.openlocfilehash: c3142f205442b6c14cb45e0d0706dd111e2ec2f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: aa79ec70982e75349c41ecb551cbf0150b82ad60
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060837"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336078"
 ---
 # <a name="list-rejectedsenders"></a>rejectedSenders auflisten
 
@@ -35,7 +36,7 @@ GET /groups/{id}/rejectedSenders
 Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 
