@@ -1,12 +1,13 @@
 ---
 title: Änderungsprotokoll für Microsoft Graph
 description: Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschließlich der Version 1.0 und des Beta-Endpunkts von Microsoft Graph-APIs.
-ms.openlocfilehash: 4317439af246701f9a1de214198e74933ef55632
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+author: jthake-msft
+ms.openlocfilehash: 4e8b70d5af01992e566c2d777db8f8a3c359f838
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283731"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358562"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Änderungsprotokoll für Microsoft Graph
 
