@@ -1,12 +1,13 @@
 ---
 title: Erstellen von „managedMobileApp“
 description: Diese Methode erstellt ein neues Objekt des Typs managedMobileApp.
-ms.openlocfilehash: 56eabc98d51e2717406b2aa4993e21b26aecd47d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8f431dd7d2f8e64ea9421f1558d3dca411b92c51
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017340"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354348"
 ---
 # <a name="create-managedmobileapp"></a>Erstellen von „managedMobileApp“
 
@@ -35,9 +36,9 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,12 +1,13 @@
 ---
 title: Ersteller-Besitzer
 description: Verwenden Sie diese API, um einen neuen Besitzer zu erstellen.
-ms.openlocfilehash: fdfbaf31b954b7621b7c59fc61741c12644aaf4b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 60aaec55b0cc2994bd9f001b1af81a64a6ddca14
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059659"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353445"
 ---
 # <a name="create-owner"></a>Ersteller-Besitzer
 
@@ -31,7 +32,7 @@ POST /applications/{id}/owners
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich.  |
+| Autorisierung  | string  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [directoryObject](../resources/directoryobject.md)-Objekts an.

@@ -1,12 +1,13 @@
 ---
 title: Besitzer auflisten
 description: Abrufen einer Liste von DirectoryObject-Objekten.
-ms.openlocfilehash: 2db43b62d1d30813ed80e6d612e5c0d2770e283d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 8b8cb478867639afa07f986c86f38e2460a17338
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058701"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325865"
 ---
 # <a name="list-owners"></a>Besitzer auflisten
 
@@ -33,7 +34,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich.  |
+| Autorisierung  | string  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

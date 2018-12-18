@@ -1,12 +1,13 @@
 ---
 title: 'TableRow: Range'
 description: Ruft das Bereichsobjekt ab, das mit der gesamten Zeile verknüpft ist.
-ms.openlocfilehash: 635ec3b29d35be33328481fd48713953f3da8743
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 1fc6b8e97e94c1642873419e0f50ee5ddb4a2a1b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058415"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354152"
 ---
 # <a name="tablerow-range"></a>TableRow: Range
 

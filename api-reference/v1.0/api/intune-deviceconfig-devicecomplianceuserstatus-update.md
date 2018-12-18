@@ -1,12 +1,13 @@
 ---
 title: Aktualisieren von „deviceComplianceUserStatus“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceComplianceUserStatus.
-ms.openlocfilehash: a3994c12cc4e28b034746b8af21ece4f63eb85dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ee15016b3055f4b51230cc17638151551c9f8c63
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017385"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353060"
 ---
 # <a name="update-devicecomplianceuserstatus"></a>Aktualisieren von „deviceComplianceUserStatus“
 
@@ -32,9 +33,9 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/user
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

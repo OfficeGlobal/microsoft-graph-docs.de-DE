@@ -1,12 +1,13 @@
 ---
 title: Abrufen von „roleAssignment“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs roleAssignment.
-ms.openlocfilehash: 828fefca1bb753e1fc7940398d1159c05de7795e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 73b06e6a3a2105edadcfae0799413ae9baa8bc2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058481"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354432"
 ---
 # <a name="get-roleassignment"></a>Abrufen von „roleAssignment“
 
@@ -36,9 +37,9 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

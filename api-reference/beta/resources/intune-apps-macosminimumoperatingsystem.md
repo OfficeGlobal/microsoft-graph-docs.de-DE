@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp macOSMinimumOperatingSystem
 description: Das Betriebssystem (mindestens) für eine Mac OS-app erforderlich.
-ms.openlocfilehash: 55ad4dfb5ba53abe3b312fc7b83cbcdd52c4cf60
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ff9d4e3fc375f17d7b3c3efdd4af16cd7e87ceb6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058766"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354775"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>Ressourcentyp macOSMinimumOperatingSystem
 

@@ -1,12 +1,13 @@
 ---
 title: Liste windowsAssignedAccessProfiles
 description: Listeneigenschaften und Beziehungen der WindowsAssignedAccessProfile-Objekte.
-ms.openlocfilehash: a8fdd5ce2aaba01f6e08f93326839847f63ff6bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c7c32f31c8adb86f03fc41502c3a7a4f1b11e90f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062930"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361320"
 ---
 # <a name="list-windowsassignedaccessprofiles"></a>Liste windowsAssignedAccessProfiles
 
@@ -34,9 +35,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

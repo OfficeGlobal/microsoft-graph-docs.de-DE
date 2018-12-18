@@ -1,12 +1,13 @@
 ---
 title: Abrufen von educationSubmission
 description: 'Abrufen einer bestimmten Übermittlung an. Eine Übermittlung-Objekt stellt einen Schüler Arbeit für eine Zuordnung dar. Ressourcen im Zusammenhang mit der Übermittlung darstellen diese arbeiten. Nur der Student, die Übermittlung zugewiesen ist, kann finden Sie unter und die Übermittlung geändert werden. Lehrer verfügt über Vollzugriff auf alle Übermittlungen. '
-ms.openlocfilehash: 016e8d2e04377ec24fa55ad940fb97364786f433
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 39e3591c0236d7a6fbc4896d4009fe5a00157d9d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061930"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353081"
 ---
 # <a name="get-educationsubmission"></a>Abrufen von educationSubmission
 
@@ -34,7 +35,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

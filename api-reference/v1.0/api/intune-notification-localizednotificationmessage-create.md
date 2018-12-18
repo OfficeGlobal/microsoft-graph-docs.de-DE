@@ -1,12 +1,13 @@
 ---
 title: localizedNotificationMessage erstellen
 description: Erstellen eines neuen localizedNotificationMessage-Objekts.
-ms.openlocfilehash: d4617438909c5d78e236f85e7a1d51cc68174b2c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8bc782f69e769e32acd29932b4f224c7cf764c04
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018969"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353543"
 ---
 # <a name="create-localizednotificationmessage"></a>localizedNotificationMessage erstellen
 
@@ -32,9 +33,9 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

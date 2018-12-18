@@ -1,12 +1,13 @@
 ---
 title: DefenderSecurityCenterITContactDisplayType Enum-Typ
 description: Mögliche Werte für defenderSecurityCenterITContactDisplay
-ms.openlocfilehash: d1977f0373540527f50009cb59b11b711da62d77
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 019bce4bc1c5b94da3cf1b8a3044638b0277f432
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059478"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327188"
 ---
 # <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>DefenderSecurityCenterITContactDisplayType Enum-Typ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27059478"
 
 Mögliche Werte für defenderSecurityCenterITContactDisplay
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Nicht konfiguriert|
 |displayInAppAndInNotifications|1|Anzeigen der app und Benachrichtigungen|

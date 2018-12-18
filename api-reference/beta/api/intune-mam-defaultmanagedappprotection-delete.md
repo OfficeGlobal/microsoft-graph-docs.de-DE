@@ -1,12 +1,13 @@
 ---
 title: defaultManagedAppProtection löschen
 description: Löscht Objekte des Typs defaultManagedAppProtection.
-ms.openlocfilehash: 3f4803662e67f4c643c2e2abf1d51f987a9f5ff2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d5b77782052be135f7caf8d084409cfa766c156f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062926"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354712"
 ---
 # <a name="delete-defaultmanagedappprotection"></a>defaultManagedAppProtection löschen
 
@@ -34,9 +35,9 @@ DELETE /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProte
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

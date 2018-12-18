@@ -1,12 +1,13 @@
 ---
 title: ApplicationGuardBlockFileTransferType Enum-Typ
 description: Mögliche Werte für applicationGuardBlockFileTransfer
-ms.openlocfilehash: ba0143a86dfd51f9a981e7ea4d399ac48e37d167
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5ec313ea62341734152382f3ff7852bf8bc051bb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27015970"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326621"
 ---
 # <a name="applicationguardblockfiletransfertype-enum-type"></a>ApplicationGuardBlockFileTransferType Enum-Typ
 
@@ -14,7 +15,7 @@ ms.locfileid: "27015970"
 
 Mögliche Werte für applicationGuardBlockFileTransfer
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Nicht konfiguriert|
 |blockImageAndTextFile|1|Blockieren der Zwischenablage zum Übertragen von Text und Bild-Datei|

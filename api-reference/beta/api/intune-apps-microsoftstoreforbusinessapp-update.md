@@ -1,12 +1,13 @@
 ---
 title: microsoftStoreForBusinessApp aktualisieren
 description: Aktualisieren der Eigenschaften eines microsoftStoreForBusinessApp-Objekts.
-ms.openlocfilehash: e311001d289c96e1f086fb0551ef6a2c3135abb4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bfcb051c93afd5dc0af2076a27f619e9719a7b33
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063424"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361775"
 ---
 # <a name="update-microsoftstoreforbusinessapp"></a>microsoftStoreForBusinessApp aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

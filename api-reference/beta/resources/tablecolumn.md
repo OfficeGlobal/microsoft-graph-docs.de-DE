@@ -1,12 +1,13 @@
 ---
 title: TableColumn-Ressourcentyp
 description: Stellt eine Spalte in einer Tabelle dar.
-ms.openlocfilehash: 0195bde59ee2116b064b47b9659f682877efc16b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: b68051403bf57d84b51850255c8f98c0b76ea9c0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061685"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354649"
 ---
 # <a name="tablecolumn-resource-type"></a>TableColumn-Ressourcentyp
 

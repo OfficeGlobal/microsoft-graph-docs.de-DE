@@ -1,12 +1,13 @@
 ---
 title: memberOf auflisten
 description: 'Dient zum Abrufen von Gruppen- und Verzeichnisrollen, vondenen der Benutzer ein direktes Mitglied ist. '
-ms.openlocfilehash: 6d884868be083a3d547002760560816e10984436
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 25f5d8d01f97bd2a3afe90f596dfb7c18eaad857
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019660"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327132"
 ---
 # <a name="list-memberof"></a>memberOf auflisten
 
@@ -30,7 +31,7 @@ GET /users/{id | userPrincipalName}/memberOf
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort. $filter wird nicht unterstützt. 
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Accept  | application/json|

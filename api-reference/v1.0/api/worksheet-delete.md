@@ -1,12 +1,13 @@
 ---
 title: 'Arbeitsblatt: Löschen'
 description: Löscht das Arbeitsblatt aus der Arbeitsmappe.
-ms.openlocfilehash: 7943289a9defe9ece38ecad868dff0e86af2786b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 018a93474338004a61b52f6a281cc55429637773
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019119"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325795"
 ---
 # <a name="worksheet-delete"></a>Arbeitsblatt: Löschen
 

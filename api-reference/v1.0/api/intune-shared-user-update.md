@@ -1,12 +1,13 @@
 ---
 title: Benutzer aktualisieren
 description: Mit dieser API können Sie die Eigenschaften eines Benutzerobjekts aktualisieren.
-ms.openlocfilehash: cfb8a7d46d8383cdaae4f012cff4ed0a0ad93594
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dae6d6d16bfb1f849fa7a3a4e35e4c641718c70e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018495"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329428"
 ---
 # <a name="update-user"></a>Benutzer aktualisieren
 
@@ -36,9 +37,9 @@ PATCH /users/{usersId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

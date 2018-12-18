@@ -1,12 +1,13 @@
 ---
 title: androidStoreApp-Ressourcentyp
 description: Enthält Eigenschaften und geerbte Eigenschaften für Android Store-Apps.
-ms.openlocfilehash: 2dd1bd2f0191d64959e798ad500199b395d0ae70
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8dc3a093aa17fc9eb97a062d24d49be69e9e439d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018603"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325886"
 ---
 # <a name="androidstoreapp-resource-type"></a>androidStoreApp-Ressourcentyp
 

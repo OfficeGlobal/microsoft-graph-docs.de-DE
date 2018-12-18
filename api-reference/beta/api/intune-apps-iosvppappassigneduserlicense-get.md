@@ -1,12 +1,13 @@
 ---
 title: Abrufen von iosVppAppAssignedUserLicense
 description: Lesen Sie Eigenschaften und Beziehungen des IosVppAppAssignedUserLicense-Objekts.
-ms.openlocfilehash: b130641a81be1ee3d612a75527f37cabee817722
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4189cdc8df0ad8d3358087694d54b0d8d499a7ee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060562"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353074"
 ---
 # <a name="get-iosvppappassigneduserlicense"></a>Abrufen von iosVppAppAssignedUserLicense
 
@@ -36,9 +37,9 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assi
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

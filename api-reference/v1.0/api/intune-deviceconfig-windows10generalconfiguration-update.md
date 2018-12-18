@@ -1,12 +1,13 @@
 ---
 title: windows10GeneralConfiguration aktualisieren
 description: Aktualisiert die Eigenschaften eines windows10GeneralConfiguration-Objekts.
-ms.openlocfilehash: 6adb423cc0e2eb62ec9ade84bfa29556178cc294
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a289d0254d3a1c27abdc084a0b506d0b75b0c299
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019012"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354525"
 ---
 # <a name="update-windows10generalconfiguration"></a>windows10GeneralConfiguration aktualisieren
 
@@ -32,9 +33,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

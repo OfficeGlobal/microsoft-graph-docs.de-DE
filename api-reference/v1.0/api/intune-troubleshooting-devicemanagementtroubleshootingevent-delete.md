@@ -1,12 +1,13 @@
 ---
 title: deviceManagementTroubleshootingEvent löschen
 description: Löscht ein deviceManagementTroubleshootingEvent-Objekt.
-ms.openlocfilehash: 2b15347c3b0eb7fe8250259f91f4f2a56707597b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 41cbe97d5b0ff3e283012cf5d85eff1f0d26d880
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019942"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326586"
 ---
 # <a name="delete-devicemanagementtroubleshootingevent"></a>deviceManagementTroubleshootingEvent löschen
 
@@ -32,9 +33,9 @@ DELETE /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingE
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

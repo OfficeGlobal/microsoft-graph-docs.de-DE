@@ -1,12 +1,13 @@
 ---
 title: Löschen Sie eine Einstellung für die directory
 description: Eine Einstellung für die Verzeichnis zu löschen.
-ms.openlocfilehash: 442c4f0433dd1595708b478f527bf881a055713d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 94359db03bfd58af659b4891295063477fc658e5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063128"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353039"
 ---
 # <a name="delete-a-directory-setting"></a>Löschen Sie eine Einstellung für die directory
 

@@ -1,12 +1,13 @@
 ---
 title: Erstellen von windowsAppX
 description: Erstellen eines neuen WindowsAppX-Objekts.
-ms.openlocfilehash: bf4445303a49e23e892514524913e602fa69e917
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9a7f2f0327fb8b0b8f2971efe58c6d3bdb5e03ba
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064088"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361950"
 ---
 # <a name="create-windowsappx"></a>Erstellen von windowsAppX
 
@@ -34,9 +35,9 @@ POST /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
