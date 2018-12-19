@@ -1,12 +1,13 @@
 ---
 title: Übersicht über Informationen aus sozialen Netzwerken und deren Analyse in Microsoft Graph
-description: 'Die mehreren hundert Millionen Benutzer von Microsoft 365-Clouddiensten sind Teil des Herzstücks von Microsoft Graph. Die Daten der Benutzer werden sorgfältig verwaltet, geschützt und mit der entsprechenden Berechtigung durch die Dienste von Microsoft Graph zur Verfügung gestellt, um die Produktivität und Kreativität in Unternehmen zu fördern. Benutzerdaten sind in Microsoft Graph zahlreich vorhanden, aber die Daten, die sich aus den sozialen Interaktionen des Benutzers ableiten, sind besonders interessant. Sie bieten intelligente Einblicke, die Antworten auf Fragen wie die folgenden bieten:'
-ms.openlocfilehash: 518d7cb773ae32199c38f2eb8459d785b2750f18
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Die mehreren hundert Millionen Benutzer von Microsoft 365-Clouddiensten sind Teil des Herzstücks von Microsoft Graph. Die Daten der Benutzer werden sorgfältig verwaltet, geschützt und mit der entsprechenden Berechtigung durch die Dienste von Microsoft Graph zur Verfügung gestellt, um die Produktivität und Kreativität in Unternehmen zu fördern. Benutzerdaten sind in Microsoft Graph zahlreich vorhanden, aber die Daten, die sich aus den sozialen Interaktionen des Benutzers ableiten, sind besonders interessant.
+author: simonhult
+ms.openlocfilehash: b4fd267f577f8427bd13ba314183d7f9b345c8d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092276"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314588"
 ---
 # <a name="overview-of-social-intelligence-and-analytics-in-microsoft-graph"></a>Übersicht über Informationen aus sozialen Netzwerken und deren Analyse in Microsoft Graph
 

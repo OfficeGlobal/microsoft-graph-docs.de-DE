@@ -1,12 +1,13 @@
 ---
 title: Übersicht über Microsoft Graph
-description: " Sicherheit und Windows 10. "
-ms.openlocfilehash: 7d8ed0d16ed24e20d1b48a1e44f573dce24d838f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Microsoft Graph ist das Gateway zu Daten und Intelligence in Microsoft 365. Microsoft Graph bietet ein einheitliches Programmiermodell, das Sie verwenden können, um die enorme Menge von Daten in Office 365, Enterprise Mobility + Security und Windows 10 zu nutzen.
+author: jthake-msft
+ms.openlocfilehash: 754580e0f5a6af628a2bf18c11a0a20d3c2d1329
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092214"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349042"
 ---
 # <a name="overview-of-microsoft-graph"></a>Übersicht über Microsoft Graph
 
