@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp appHostedMediaConfig
 description: Medienstapel, die von der Anwendung gehostet wird.
-ms.openlocfilehash: 39080a8fdb5688ed9f1a5a8daba43266a0e7003e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: b96d6ff836ab36e5561c9ba3958123178e2fbde9
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059439"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380128"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>Ressourcentyp appHostedMediaConfig
 
@@ -18,8 +19,8 @@ Medienstapel, die von der Anwendung gehostet wird.
 
 | Eigenschaft                          | Typ    | Beschreibung                                                     |
 | :-------------------------------- | :------ | :---------------------------------------------------------------|
-| BLOB                              | String  | Die Medien Konfiguration Blob vom smart Media-Agent generiert.    |
-| removeFromDefaultAudioGroup       | Boolesch | Entfernen von Audio aus der Standardgruppe audio                       |
+| BLOB                              | Zeichenfolge  | Die Medien Konfiguration Blob vom smart Media-Agent generiert.    |
+| removeFromDefaultAudioGroup       | Boolescher Wert | Entfernen von Audio aus der Standardgruppe audio                       |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

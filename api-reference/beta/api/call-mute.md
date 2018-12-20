@@ -2,12 +2,12 @@
 title: 'Rufen Sie: stumm schalten'
 description: Ermöglicht der Anwendung selbst stumm geschaltet werden sollen.
 author: VinodRavichandran
-ms.openlocfilehash: 54de4aa598500d1effa1c66c74e5809ad3570959
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: dc1baddb65521f4874f108dd28c7e9ec7b778a25
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341587"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380168"
 ---
 # <a name="call-mute"></a>Rufen Sie: stumm schalten
 
@@ -41,7 +41,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
-|clientContext|String|Der Clientkontext.|
+|clientContext|Zeichenfolge|Der Clientkontext.|
 
 ## <a name="response"></a>Antwort
 Wenn der Vorgang erfolgreich war, gibt diese Methode `200 OK` Antwortcode und eines [CommsOperation](../resources/commsoperation.md) -Objekts in der Antworttext.
@@ -54,7 +54,7 @@ Das folgende Beispiel zeigt die Antwort.
 
 <!-- {
   "blockType": "request",
-  "name": "call_mute"
+  "name": "call-mute"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/mute

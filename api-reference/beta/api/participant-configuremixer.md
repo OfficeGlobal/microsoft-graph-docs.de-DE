@@ -2,12 +2,12 @@
 title: 'Teilnehmer: ConfigureMixer'
 description: Konfigurieren Sie, wie Audio für andere Teilnehmer an einer Unterhaltung mit mehreren Teilnehmern gemischt wird.
 author: VinodRavichandran
-ms.openlocfilehash: e300d842ce0bad870160d2f3788b059de6d41784
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: c15cbc8a8de5a9ba7d7f3c20d20f99bf61006dbf
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351989"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380464"
 ---
 # <a name="participant-configuremixer"></a>Teilnehmer: ConfigureMixer
 
@@ -22,7 +22,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | :-------------- | :------------------------------------------ |
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt        |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt        |
-| Anwendung     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Application     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
 |participantMixerLevels|[ParticipantMixerLevel](../resources/participantmixerlevel.md) -Auflistung| Konfiguration der Mixer Ebenen für gegebene audio-Teilnehmer.|
-|clientContext|String|Der Clientkontext.|
+|clientContext|Zeichenfolge|Der Clientkontext.|
 
 ## <a name="response"></a>Antwort
 Gibt `202 Accepted` Antwortcode und ein Location-Header mit einem Uri, um die [CommsOperation](../resources/commsoperation.md) für diese Anforderung erstellt.
@@ -55,7 +55,7 @@ Das folgende Beispiel zeigt die Antwort.
 
 <!-- {
   "blockType": "request",
-  "name": "participant_configureMixer"
+  "name": "participant-configureMixer"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/configureMixer

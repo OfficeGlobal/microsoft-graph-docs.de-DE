@@ -1,13 +1,13 @@
 ---
 title: Erstellen von Anrufen
 description: Erstellen Sie einen neuen Anruf.
-author: lleonard-msft
-ms.openlocfilehash: b083c9a40fd1376370f7321111c6fbf89d6ee432
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: VinodRavichandran
+ms.openlocfilehash: a2d34ccf3d77d165b8a92114353d5f6cb8bed674
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348769"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380387"
 ---
 # <a name="create-call"></a>Erstellen von Anrufen
 
@@ -22,7 +22,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt                                                                           |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                                                                           |
-| Anwendung                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
+| Application                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
 
 > **Hinweis:** Für einen Anruf mit Medien app gehostet wird benötigen Sie die Berechtigung Calls.AccessMedia.All mit einem der in der vorherigen Tabelle aufgelisteten Berechtigungen.
 
@@ -57,7 +57,7 @@ Das folgende Beispiel zeigt die Antwort.
 
 <!-- {
   "blockType": "request",
-  "name": "create_call_from_application"
+  "name": "create-call-from-application"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -115,6 +115,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 
 {
   "id": "57DAB8B1894C409AB240BD8BEAE78896",

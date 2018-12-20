@@ -1,22 +1,25 @@
 ---
 title: Ressourcentyp meetingInfo
-description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: c89b96be24211c9f9cce84c905a0b2857a92cd5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Besprechungsinformationen, die zum Erstellen oder teilnehmen an einer Besprechung angegeben.
+author: VinodRavichandran
+ms.openlocfilehash: f8039f05a2f25e254f7aefd740055babc1598dc1
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062200"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380310"
 ---
 # <a name="meetinginfo-resource-type"></a>Ressourcentyp meetingInfo
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
+Besprechungsinformationen, die zum Erstellen oder teilnehmen an einer Besprechung angegeben.
+
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft       | Typ    | Beschreibung|
 |:---------------|:--------|:----------|
-| allowConversationWithoutHost | Boolesch |  |
+| allowConversationWithoutHost | Boolescher Wert |  |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

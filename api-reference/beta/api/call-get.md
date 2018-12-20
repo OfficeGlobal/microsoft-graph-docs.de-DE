@@ -2,12 +2,12 @@
 title: Abrufen von Anrufen
 description: Rufen Sie die Eigenschaften und die Beziehungen eines Anrufs-Objekts ab.
 author: VinodRavichandran
-ms.openlocfilehash: f2e3ee4b18dadfaeddd4df89745b469648644a36
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: df97b69f87a1562e56a96d84de1af740ab0aff65
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316548"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380324"
 ---
 # <a name="get-call"></a>Abrufen von Anrufen
 
@@ -32,7 +32,7 @@ GET /applications/{id}/calls/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrage-Parameter](/graph/query-parameters) , mit denen die Antwort anpassen.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name          | Beschreibung               |
@@ -52,7 +52,7 @@ Das folgende Beispiel zeigt die Antwort.
 
 <!-- {
   "blockType": "request",
-  "name": "get_call"
+  "name": "get-call"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}
@@ -118,6 +118,7 @@ Content-Length: 2821
   },
   "meetingCapability": {
     "allowAnonymousUsersToDialOut": true,
+    "allowAnonymousUsersToStartMeeting": true,
     "autoAdmittedUsers": "everyoneInCompany"
   },
   "meetingInfo": {

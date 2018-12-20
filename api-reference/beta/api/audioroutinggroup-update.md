@@ -2,12 +2,12 @@
 title: Audio Routinggruppe aktualisieren
 description: Inhaltsquellen und der Empfänger von einer AudioRoutingGroup zu ändern.
 author: VinodRavichandran
-ms.openlocfilehash: ae9e67a9f116a9c1e9dec2b5d742f13917374718
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: f1fac21e2d52818ee068bfe64e8db7853332d993
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336687"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380366"
 ---
 # <a name="update-audio-routing-group"></a>Audio Routinggruppe aktualisieren
 
@@ -22,7 +22,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | :-------------- | :--------------------------------------------------------- |
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt                       |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                       |
-| Anwendung     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Application     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -55,7 +55,7 @@ Das folgende Beispiel zeigt die Antwort.
 
 <!-- {
   "blockType": "request",
-  "name": "update_audioRoutingGroup"
+  "name": "update-audioRoutingGroup"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}

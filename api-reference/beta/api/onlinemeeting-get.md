@@ -1,12 +1,13 @@
 ---
 title: Get-Onlinebesprechung
 description: Rufen Sie die Eigenschaften und die Beziehungen eines **OnlineMeeting** -Objekts ab.
-ms.openlocfilehash: 117b1f76212be0ece00d0e1c82f2106faf1fd275
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: bfae4273aba0583e6c10a7e10f9c67865326bacf
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062059"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380380"
 ---
 # <a name="get-online-meeting"></a>Get-Onlinebesprechung
 
@@ -25,7 +26,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:---------------------------------------|:------------------------------------------------------|
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt.                                        |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt.                                        |
-| Anwendung                            | OnlineMeetings.Read.All OnlineMeetings.ReadWrite.All |
+| Application                            | OnlineMeetings.Read.All OnlineMeetings.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +36,7 @@ GET /applications/{id}/onlineMeetings/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrage-Parameter](/graph/query-parameters) , mit denen die Antwort anpassen.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name          | Beschreibung               |
@@ -55,7 +56,7 @@ Das folgende Beispiel zeigt die Antwort.
 
 <!-- {
   "blockType": "request",
-  "name": "get_onlineMeeting"
+  "name": "get-onlineMeeting"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}

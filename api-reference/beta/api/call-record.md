@@ -2,12 +2,12 @@
 title: 'Rufen Sie: Datensatz'
 description: Notieren Sie den Anruf.
 author: VinodRavichandran
-ms.openlocfilehash: 5de56ca417f5a6d06e8116802eeba2dd3d39e399
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 44b204a1185881cc9e1c96867e906c658c0d5ed9
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303549"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380520"
 ---
 # <a name="call-record"></a>Rufen Sie: Datensatz
 
@@ -22,7 +22,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | :-------------- | :------------------------------------------ |
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt        |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt        |
-| Anwendung     | Calls.AccessMedia.All                       |
+| Application     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -42,14 +42,14 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
 |fordert|[Mediaprompt](../resources/mediaprompt.md) -Auflistung | Auflistung von Ansagen wiedergegeben (falls vorhanden) vor der Aufzeichnung startet. Kunden die Möglichkeit, geben Sie "PlayPrompt" Aktion separat oder als Teil des "Aufzeichnen" - hauptsächlich alle Datensätze einer Aufforderung vorangestellt werden |
-|bargeInAllowed|Boolesch| Benutzern Sie die Eingabe Auswahl, bevor Aufforderung beendet wurde.                                                                 |
+|bargeInAllowed|Boolescher Wert| Benutzern Sie die Eingabe Auswahl, bevor Aufforderung beendet wurde.                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| Maximale anfänglichen Silence zulässig, von dem Zeitpunkt wir den Eintrag Vorgang bevor wir Timeout und Fehlschlagen des Vorgangs zu starten. Wenn wir eine Aufforderung spielen, startet dieser Zeitgeber nach Aufforderung abgeschlossen ist. |
 |maxSilenceTimeoutInSeconds|Int32| Die maximale Silence Timeout in Sekunden.|
 |maxRecordDurationInSeconds|Int32| Die maximale Anzahl von Datensätzen Dauer in Sekunden.|
-|playBeep|Boolesch| Gibt einen Signalton nach Wiedergabe der Eingabeaufforderung aus.|
-|streamWhileRecording|Boolesch|Wenn es sich bei Festlegung auf true festgelegt ist, einen Speicherort der Ressource bereitgestellt werden, sobald die Aufzeichnung gestartet wird. |
+|playBeep|Boolescher Wert| Gibt einen Signalton nach Wiedergabe der Eingabeaufforderung aus.|
+|streamWhileRecording|Boolescher Wert|Wenn es sich bei Festlegung auf true festgelegt ist, einen Speicherort der Ressource bereitgestellt werden, sobald die Aufzeichnung gestartet wird. |
 |stopTones|Collection von Objekten des Typs „String“|Beenden Sie Töne angegeben, um die Aufzeichnung zu beenden.|
-|clientContext|String|Der Clientkontext.|
+|clientContext|Zeichenfolge|Der Clientkontext.|
 
 ## <a name="response"></a>Antwort
 Gibt `202 Accepted` Antwortcode und ein Location-Header mit einem Uri, um die [CommsOperation](../resources/commsoperation.md) für diese Anforderung erstellt.
@@ -62,7 +62,7 @@ Das folgende Beispiel zeigt die Antwort.
 
 <!-- {
   "blockType": "request",
-  "name": "call_record"
+  "name": "call-record"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/record

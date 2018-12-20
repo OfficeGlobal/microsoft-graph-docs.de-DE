@@ -2,12 +2,12 @@
 title: 'Rufen Sie: Antwort'
 description: Beantworten eines eingehenden Anrufs an.
 author: VinodRavichandran
-ms.openlocfilehash: df864a6a9043853e7c9e5b1f5546c4ae502ec4d6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: c7de038e2323ab844590c884e15a639a3839dd86
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343204"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380513"
 ---
 # <a name="call-answer"></a>Rufen Sie: Antwort
 
@@ -22,7 +22,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | :-------------- | :-----------------------------------------------------------|
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt                        |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                        |
-| Anwendung     | Keines                                                        |
+| Application     | Keine                                                        |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter        | Typ                                     |Beschreibung                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |Der Rückruf oder Abonnement-ID auf dem Rückrufe zugestellt werden. (Erforderlich)                                                               |
+|callbackUri       |Zeichenfolge                                    |Der Rückruf oder Abonnement-ID auf dem Rückrufe zugestellt werden. (Erforderlich)                                                               |
 |acceptedModalities|Collection von Objekten des Typs „String“                         |Die Liste der akzeptieren Modalitäten. Mögliche Werte sind: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`. (Erforderlich) |
 |mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|Die Medienkonfiguration. (Erforderlich)                                                                                                            |
 
@@ -56,7 +56,7 @@ Das folgende Beispiel zeigt die Antwort.
 
 <!-- {
   "blockType": "request",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/answer
@@ -167,7 +167,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```json
 {
@@ -320,7 +320,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```json
 {

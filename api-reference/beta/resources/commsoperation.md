@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp commsOperation
 description: Der Status der bestimmte langer Vorgänge.
-ms.openlocfilehash: d9adf240bff566dc0af5e369da24c7f8658a6c1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 09d3f81e8f6307850d94cfab43f98426dae47a5f
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062853"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380352"
 ---
 # <a name="commsoperation-resource-type"></a>Ressourcentyp commsOperation
 
@@ -21,9 +22,9 @@ Keine
 
 | Eigenschaft           | Typ                        | Beschreibung                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| clientContext      | String                      | Der Clientkontext.                                                             |
+| clientContext      | Zeichenfolge                      | Der Clientkontext.                                                             |
 | createdDateTime    | DateTimeOffset              | Die Startzeit des Vorgangs.                                                |
-| id                 | String                      | Die Vorgangs-ID. Schreibgeschützt. Server generiert wurde.                                  |
+| id                 | Zeichenfolge                      | Die Vorgangs-ID. Schreibgeschützt. Server generiert wurde.                                  |
 | lastActionDateTime | DateTimeOffset              | Der Zeitpunkt der letzten Aktion des Vorgangs.                                   |
 | resultInfo         | [resultInfo](resultinfo.md) | Informationen zu den Ergebnissen. Schreibgeschützt. Server generiert wurde.                            |
 | status             | String                      | Mögliche Werte: `notStarted`, `running`, `completed`, `failed`. Schreibgeschützt. |

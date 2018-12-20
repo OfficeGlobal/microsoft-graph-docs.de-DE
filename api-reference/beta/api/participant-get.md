@@ -1,12 +1,13 @@
 ---
 title: Abrufen der Teilnehmer
 description: Rufen Sie die Eigenschaften und die Beziehungen eines **Teilnehmers** -Objekts ab.
-ms.openlocfilehash: 4e97278b7ac93d784884c789f4da089e63e195ad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 8a306c3397a10222692022999194fe12c9501f87
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058754"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380191"
 ---
 # <a name="get-participant"></a>Abrufen der Teilnehmer
 
@@ -21,7 +22,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | :-------------- | :------------------------------------------ |
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt        |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt        |
-| Anwendung     | Keines                                        |
+| Application     | Keine                                        |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -31,7 +32,7 @@ GET /applications/{id}/calls/{id}/participants/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrage-Parameter](/graph/query-parameters) , mit denen die Antwort anpassen.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name          | Beschreibung               |
@@ -50,7 +51,7 @@ Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode 
 Das folgende Beispiel zeigt die Antwort.
 <!-- {
   "blockType": "request",
-  "name": "get_participant"
+  "name": "get-participant"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}

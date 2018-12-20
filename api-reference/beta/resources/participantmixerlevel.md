@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp participantMixerLevel
 description: Konfiguration der Mixer Ebenen zur angegebenen audio-Teilnehmer
-ms.openlocfilehash: 920c22cf423391d2efcdf7177fdc7491250d0f19
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 9d5a5d740fbdf250f90b28539221e8231c0bf38c
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065793"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380142"
 ---
 # <a name="participantmixerlevel-resource-type"></a>Ressourcentyp participantMixerLevel
 
@@ -20,7 +21,7 @@ Konfiguration der Mixer Ebenen zur angegebenen audio-Teilnehmer
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
 | Vermeiden von                | [audioDuckingConfiguration](audioduckingconfiguration.md) | Konfiguration der benutzerdefinierte Mischung (welchen Phasen an- und Abmelden) andere Quellen für diese Teilnehmer zu vermeiden.       |
 | exclusiveMode          | Boolean                                                   | Gibt an, ob von der Mischung Quellen ohne explizite Quellebene entfernt werden soll.                       |
-| Teilnehmer            | String                                                    | Die Teilnehmer für den Mischer konfiguriert wird.                                             |
+| Teilnehmer            | Zeichenfolge                                                    | Die Teilnehmer für den Mischer konfiguriert wird.                                             |
 | sourceLevels           | [AudioSourceLevel](audiosourcelevel.md) -Auflistung        | Konfiguration für andere Datenquellen.                                                              |
 
 ## <a name="json-representation"></a>JSON-Darstellung

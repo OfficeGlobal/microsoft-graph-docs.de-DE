@@ -1,12 +1,13 @@
 ---
 title: 'Rufen Sie: UpdateMetadata'
 description: Aktualisieren Sie den Beginn des Debuggings Metadaten zu einem Anruf.
-ms.openlocfilehash: fbd43db654294c92d05a8c4c6f12d2118298ff5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: b81b41b827aee17fbc2ebed2dee56c15c5376a88
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059957"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380541"
 ---
 # <a name="call-updatemetadata"></a>Rufen Sie: UpdateMetadata
 
@@ -21,7 +22,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:---------------------------------------|:--------------------------------------------|
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt                               |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                               |
-| Anwendung     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Application     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -40,8 +41,8 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
-|metadata|String|Ein Blob von Daten von den Teilnehmer in der Teilnehmerliste einer bereitgestellt.|
-|clientContext|String|Der Clientkontext.|
+|metadata|Zeichenfolge|Ein Blob von Daten von den Teilnehmer in der Teilnehmerliste einer bereitgestellt.|
+|clientContext|Zeichenfolge|Der Clientkontext.|
 
 ## <a name="response"></a>Antwort
 Gibt `202 Accepted` Antwortcode und ein Location-Header mit einem Uri, um die [CommsOperation](../resources/commsoperation.md) für diese Anforderung erstellt.
@@ -54,7 +55,7 @@ Das folgende Beispiel zeigt die Antwort.
 
 <!-- {
   "blockType": "request",
-  "name": "call_updateMetadata"
+  "name": "call-updateMetadata"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/updateMetadata

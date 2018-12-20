@@ -1,13 +1,13 @@
 ---
 title: 'Rufen Sie: SubscribeToTone'
-description: " Telefon."
+description: Abonnieren Sie DTMF (Dual-Tone Multi-Frequency Signaldaten). Dadurch können Sie benachrichtigt werden, wenn der Benutzer auf einem Telefon mit 'Tonwahl' drückt.
 author: VinodRavichandran
-ms.openlocfilehash: 41c72cdeeb1017313f9f64c4bd268a2184229984
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 82f7632736dc187fae1313224a6cb6f4807e0dd1
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328301"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380436"
 ---
 # <a name="call-subscribetotone"></a>Rufen Sie: SubscribeToTone
 
@@ -22,7 +22,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | :-------------- | :------------------------------------------ |
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt        |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt        |
-| Anwendung     | Calls.AccessMedia.All                       |
+| Application     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter      | Typ    | Beschreibung |
 |:---------------|:--------|:------------|
-| clientContext  | String  | Der Clientkontext. |
+| clientContext  | Zeichenfolge  | Der Clientkontext. |
 
 ## <a name="response"></a>Antwort
 Gibt `202 Accepted` Antwortcode und ein Location-Header mit einem Uri, um die [CommsOperation](../resources/commsoperation.md) für diese Anforderung erstellt.
@@ -54,7 +54,7 @@ Das folgende Beispiel zeigt die Antwort.
 
 <!-- {
   "blockType": "request",
-  "name": "call_subscribeToTone"
+  "name": "call-subscribeToTone"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/subscribeToTone

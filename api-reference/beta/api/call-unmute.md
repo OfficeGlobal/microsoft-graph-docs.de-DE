@@ -2,12 +2,12 @@
 title: 'Rufen Sie: stummschaltung aufheben'
 description: Ermöglicht die Anwendung selbst stummschaltung aufheben.
 author: VinodRavichandran
-ms.openlocfilehash: 7ac86b12363e692930597e3394ca0f78b30b0dee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: abd5abdf0e91a24e2f8de4d5fbb3fa0cc1d7b243
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343470"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380401"
 ---
 # <a name="call-unmute"></a>Rufen Sie: stummschaltung aufheben
 
@@ -41,7 +41,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
-|clientContext|String|Der Clientkontext.|
+|clientContext|Zeichenfolge|Der Clientkontext.|
 
 ## <a name="response"></a>Antwort
 Wenn der Vorgang erfolgreich war, gibt diese Methode `200 OK` Antwortobjekt Code und [CommsOperation](../resources/commsoperation.md) im Antworttext.
@@ -54,7 +54,7 @@ Das folgende Beispiel zeigt die Antwort.
 
 <!-- {
   "blockType": "request",
-  "name": "call_unmute"
+  "name": "call-unmute"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/unmute

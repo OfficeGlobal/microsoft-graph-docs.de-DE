@@ -1,13 +1,13 @@
 ---
 title: Erstellen von online-Besprechung
 description: Erstellt eine onlinebesprechung im Auftrag eines Benutzers im Textkörper Anforderung angegeben.
-author: lleonard-msft
-ms.openlocfilehash: 4a68e25156353b41c3ff43685d7b021a2454a927
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: VinodRavichandran
+ms.openlocfilehash: 7b40bd2b9bedcee4777138403eb895f972bab9fb
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331430"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380331"
 ---
 # <a name="create-online-meeting"></a>Erstellen von online-Besprechung
 
@@ -24,7 +24,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:---------------------------------------|:--------------------------------------------|
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt                               |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                               |
-| Anwendung                            | OnlineMeetings.ReadWrite.All                |
+| Application                            | OnlineMeetings.ReadWrite.All                |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ Das folgende Beispiel zeigt die Antwort.
 
 <!-- {
   "blockType": "request",
-  "name": "create_onlineMeeting_from_application"
+  "name": "create-onlinemeeting-from-application"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/onlineMeetings

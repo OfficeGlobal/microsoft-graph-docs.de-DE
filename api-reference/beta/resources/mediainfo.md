@@ -1,22 +1,25 @@
 ---
 title: Ressourcentyp mediaInfo
-description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: 961ce2375b742b2a657db28ec11d5439985583d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Die Medieninformationen für die Aktionen für aufgefordert wird.
+author: VinodRavichandran
+ms.openlocfilehash: ea2eaa9e8e85da737df4c0c0170457fb3350820b
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064683"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380275"
 ---
 # <a name="mediainfo-resource-type"></a>Ressourcentyp mediaInfo
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
+Die Medieninformationen für die Aktionen für aufgefordert wird.
+
 ## <a name="properties"></a>Eigenschaften
-| Eigenschaft   | Typ    |Beschreibung|
-|:---------------|:--------|:----------|
-| resourceId     | Zeichenfolge  |           |
-| uri            | String  |           |
+| Eigenschaft       | Typ    | Beschreibung                      |
+|:---------------|:--------|:---------------------------------|
+| resourceId     | Zeichenfolge  | Eindeutige Identität der Ressource. |
+| uri            | Zeichenfolge  | Pfad zu der Ressource.            |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

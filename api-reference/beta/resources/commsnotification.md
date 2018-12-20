@@ -1,22 +1,25 @@
 ---
-title: Benachrichtigung Ressourcentyp
-description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: c09927cbe133c945b83a3bfc1b0eb74ef00bce2b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+title: Ressourcentyp commsNotification
+description: Communications Benachrichtigung Basistyp, der von Änderungen benachrichtigen Communications-Server veröffentlicht wird.
+author: VinodRavichandran
+ms.openlocfilehash: 65cb2884b98d25008779fcb80968a7b4d0481033
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064597"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380268"
 ---
-# <a name="notification-resource-type"></a>Benachrichtigung Ressourcentyp
+# <a name="commsnotification-resource-type"></a>Ressourcentyp commsNotification
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+
+Communications Benachrichtigung Basistyp, der von Änderungen benachrichtigen Communications-Server veröffentlicht wird.
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft       | Typ    | Beschreibung                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
-| changeType     | String  | Mögliche Werte sind: `created`, `updated` und `deleted`.      |
-| resource       | String  | Der URI der Ressource, die geändert wurde.                      |
+| changeType     | Zeichenfolge  | Mögliche Werte sind: `created`, `updated` und `deleted`.      |
+| resource       | Zeichenfolge  | Der URI der Ressource, die geändert wurde.                      |
 
 > **Hinweis:** `resourceData` als zusätzliche Daten verfügbar ist. Es ist eine Entität oder Collection(entity) abhängig von der Anzahl der Änderungen in der Benachrichtigung gepackt.
 
@@ -90,7 +93,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "notification resource",
+  "description": "commsNotification resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

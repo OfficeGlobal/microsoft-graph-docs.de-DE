@@ -1,23 +1,26 @@
 ---
 title: Ressourcentyp recordingInfo
-description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: 92af3fcb52ab08f3f25a2c16cc720a4053a9bdfa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Aufzeichnung von Informationen für einen Teilnehmer.
+author: VinodRavichandran
+ms.openlocfilehash: 709edcc6d473ce610cbba7f628e4ebc5057b779c
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061464"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380303"
 ---
 # <a name="recordinginfo-resource-type"></a>Ressourcentyp recordingInfo
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+
+Aufzeichnung von Informationen für einen Teilnehmer.
 
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft       | Typ    | Beschreibung|
 |:---------------|:--------|:----------|
 | initiatedBy | [participantInfo](participantinfo.md) | Der Teilnehmer, der die Aufzeichnung initiiert hat. |
-| status | String | Mögliche Werte sind: `recordingCapable`, `notRecording` und `startedRecording`. |
+| status | Zeichenfolge | Mögliche Werte sind: `recordingCapable`, `notRecording` und `startedRecording`. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

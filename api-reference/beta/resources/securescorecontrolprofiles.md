@@ -1,12 +1,12 @@
 ---
 title: Ressourcentyp secureScoreControlProfiles
 description: Stellt einen Mandanten sichere Faktor pro Steuerelementdaten. In der Standardeinstellung alle Steuerelemente für einen Mandanten zurückgegeben und einzelne Steuerelemente können explizit abrufen.
-ms.openlocfilehash: e02c9ae3b1431b131576e2e0e115377dd3480bc2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 3e7dc463d7521e1980b41034ae4121ab610dd8f5
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063544"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380583"
 ---
 # <a name="securescorecontrolprofiles-resource-type"></a>Ressourcentyp secureScoreControlProfiles
 
@@ -19,33 +19,31 @@ Stellt einen Mandanten sichere Faktor pro Steuerelementdaten. In der Standardein
 
 | Methode   | Rückgabetyp|Beschreibung|
 |:---------------|:--------|:----------|
-|[Liste secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfiles](securescorecontrolprofiles.md) |Lesen Sie Eigenschaften und Metadaten eines SecureScoreControlProfiles-Objekts.|
+|[List secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfiles](securescorecontrolprofiles.md) |Lesen Sie Eigenschaften und Metadaten eines SecureScoreControlProfiles-Objekts.|
 
 
 ## <a name="properties"></a>Eigenschaften
 
 |Name |Typ |Beschreibung |
 |:--|:--|:--|
-|   azureTenantId   |   String  |   GUID-Zeichenfolge für Mandanten-ID ein.  |
-|   Steuerelementname |   String  |   Name des Steuerelements. |
-|   title   |   String  |   Titel des Steuerelements.   |
-|   controlCategory |   String  |   Steuerelement-Aktionskategorie (Konto, Daten, Gerät, Apps, Infrastruktur).  |
+|   azureTenantId   |   Zeichenfolge  |   GUID-Zeichenfolge für Mandanten-ID ein.  |
+|   Steuerelementname |   Zeichenfolge  |   Name des Steuerelements. |
+|   title   |   Zeichenfolge  |   Titel des Steuerelements.   |
+| complianceInformation | [ComplianceInformation](complianceinformation.md) -Auflistung | Die Auflistung der Informationen im Zusammenhang mit Compliance secure Score-Steuerelement |
+|   controlCategory |   Zeichenfolge  |   Steuerelement-Aktionskategorie (Konto, Daten, Gerät, Apps, Infrastruktur).  |
 |   actionType  |   String  |   Steuerelementtyp Aktion (Config überprüfen, Verhalten). |
-|   service |   String  |   Dienst, der das Steuerelement (Exchange, Sharepoint, Azure AD) besitzt. |
-|   MaxErgebnis |  String  |   Aktuelle abgerufen max Score am angegebenen Datum.   |
-|   Tier |  String  |   Steuerelement-Tier (Quad-Core, mehrstufige im Detail, erweiterte.)    |
-|   userImpact |    String  | Beeinträchtigung für die Benutzer Implementieren von Steuerelement (niedrig, Mittel, hoch).    |
-|   implementationCost |    String  |   Ressourcenkosten Implemmentating-Steuerelements (niedrig, Mittel, hoch). |
+|   service |   Zeichenfolge  |   Dienst, der das Steuerelement (Exchange, Sharepoint, Azure AD) besitzt. |
+|   MaxErgebnis |  Zeichenfolge  |   Aktuelle abgerufen max Score am angegebenen Datum.   |
+|   Tier |  Zeichenfolge  |   Steuerelement-Tier (Quad-Core, mehrstufige im Detail, erweiterte.)    |
+|   userImpact |    Zeichenfolge  | Beeinträchtigung für die Benutzer Implementieren von Steuerelement (niedrig, Mittel, hoch).    |
+|   implementationCost |    Zeichenfolge  |   Ressourcenkosten Implemmentating-Steuerelements (niedrig, Mittel, hoch). |
 |   rank |  Int32   |   Microsoft Stapel ranking des Steuerelements.   |
 |   Bedrohungen |   Zeichenfolgenauflistung   |   Liste der Bedrohungen für das Steuerelement reduziert (AccountBreach, DataDeletion, DataExfiltration, DataSpillage, ElevationOfPrivilege, MaliciousInsider, PasswordCracking, PhishingOrWhaling, spoofing). |
-|   veraltet |    Boolesch |   Flag, das angibt, ob ein Steuerelement abgeschrieben wird.   |
-|   Wartung |   String  |   Beschreibung, wie das Steuerelement helfen warten. |
-|   remediationImpact | String  |   Beschreibung der Auswirkung auf den Benutzer von der Wartung. |
-|   actionUrl | String  |   URL zu, in dem das Steuerelement verarbeitet werden kann. |
-|   controlStateUpdates |   String  |   Kennzeichnung, die angibt, für der Mandanten ein Steuerelement markiert wurde (ignorieren, ThirdParty, überprüft) (unterstützt [Aktualisieren](../api/securescorecontrolprofiles-update.md)). |
-|   tenantNote |    String  |   Mandanten kann pro Steuerelement Kommentare (unterstützt [Aktualisieren](../api/securescorecontrolprofiles-update.md)) festlegen. |
-|   assignedTo |    String  |   Mandanten kann das Steuerelement an eine Person (unterstützt [Aktualisieren](../api/securescorecontrolprofiles-update.md)) zuweisen. |
-|   updatedBy | String  |   User principal Name des, die der Zustand eines Steuerelements geändert. |
+|   veraltet |    Boolescher Wert |   Flag, das angibt, ob ein Steuerelement abgeschrieben wird.   |
+|   Wartung |   Zeichenfolge  |   Beschreibung, wie das Steuerelement helfen warten. |
+|   remediationImpact | Zeichenfolge  |   Beschreibung der Auswirkung auf den Benutzer von der Wartung. |
+|   actionUrl | Zeichenfolge  |   URL zu, in dem das Steuerelement verarbeitet werden kann. |
+|   controlStateUpdates |   [SecureScoreControlStateUpdate](securescorecontrolstateupdate.md) -Auflistung |    Kennzeichnung, die angibt, für der Mandanten ein Steuerelement markiert wurde (ignorieren, ThirdParty, überprüft) (unterstützt [Aktualisieren](../api/securescorecontrolprofiles-update.md)). |
 
 ## <a name="relationships"></a>Beziehungen
 

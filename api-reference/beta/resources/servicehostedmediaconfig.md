@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp serviceHostedMediaConfig
 description: Der Typ des ServiceHostedMediaConfig.
-ms.openlocfilehash: 111988574b1f16a9e53bf9db44e44da12e7bbab5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 544c1d3bce934064092e0f9c74b888686e49d426
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061470"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380317"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>Ressourcentyp serviceHostedMediaConfig
 
@@ -19,7 +20,7 @@ Der Typ des ServiceHostedMediaConfig.
 | Eigenschaft                    | Typ                                                        | Beschreibung                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
 | preFetchMedia               | [MediaInfo](mediainfo.md) -Auflistung                        | Die Liste der Media vorab abgerufen werden sollen.                   |
-| removeFromDefaultAudioGroup | Boolesch                                                     | Audio Standardgruppe Self Teilnehmer aufheben. |
+| removeFromDefaultAudioGroup | Boolescher Wert                                                     | Audio Standardgruppe Self Teilnehmer aufheben. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

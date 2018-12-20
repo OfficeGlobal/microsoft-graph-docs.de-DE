@@ -2,12 +2,12 @@
 title: 'Rufen Sie: CancelMediaProcessing'
 description: Bricht Media Verarbeitung für alle laufenden Vorgänge PlayPrompt oder DNS-Eintrags.
 author: VinodRavichandran
-ms.openlocfilehash: 9d7432670030ed1505c9be95a801e6c453087df3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 5e95e4a1b56d7cea806e1a3d588403d81c200923
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328273"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380555"
 ---
 # <a name="call-cancelmediaprocessing"></a>Rufen Sie: CancelMediaProcessing
 
@@ -41,8 +41,8 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter      | Typ    | Beschreibung                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| all            | Boolesch | Das Flag, der angibt, ob alle Vorgänge oder aktuellen beenden. |
-| clientContext  | String  | Der Clientkontext.                                            |
+| all            | Boolescher Wert | Das Flag, der angibt, ob alle Vorgänge oder aktuellen beenden. |
+| clientContext  | Zeichenfolge  | Der Clientkontext.                                            |
 
 ## <a name="response"></a>Antwort
 Gibt `202 Accepted` Antwortcode und ein Location-Header mit einem Uri, um die [CommsOperation](../resources/commsoperation.md) für diese Anforderung erstellt.
@@ -55,7 +55,7 @@ Das folgende Beispiel zeigt die Antwort.
 
 <!-- {
   "blockType": "request",
-  "name": "call_cancelMediaProcessing"
+  "name": "call-cancelMediaProcessing"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/cancelMediaProcessing

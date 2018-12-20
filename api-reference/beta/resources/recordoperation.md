@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp recordOperation
 description: Der RecordOperation-Typ
-ms.openlocfilehash: 5863e5ef84b00c65cd0806af8a3364fe3d1ab73f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 54b39f30df1dd53a95260b549ae9fab2eedddfd8
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059494"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380422"
 ---
 # <a name="recordoperation-resource-type"></a>Ressourcentyp recordOperation
 
@@ -18,13 +19,13 @@ Der RecordOperation-Typ
 
 | Eigenschaft                       | Typ                        | Beschreibung                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientContext                  | String                      | Der Clientkontext.                                                                                                                               |
-| completionReason               | String                      | Mögliche Werte: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError`. |
+| clientContext                  | Zeichenfolge                      | Der Clientkontext.                                                                                                                               |
+| completionReason               | Zeichenfolge                      | Mögliche Werte: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError`, `none`. |
 | createdDateTime                | DateTimeOffset              | Die Uhrzeit der Erstellung die Aufzeichnung.                                                                                                          |
-| id                             | String                      | Die Id des Server-Vorgang. Schreibgeschützt. Server generiert wurde.                                                                                             |
+| id                             | Zeichenfolge                      | Die Id des Server-Vorgang. Schreibgeschützt. Server generiert wurde.                                                                                             |
 | lastActionDateTime             | DateTimeOffset              | Der Zeitpunkt der letzten Aktion des Vorgangs.                                                                                                     |
-| recordResourceLocation         | String                      | Der Speicherort, in dem die Aufzeichnung gespeichert ist.                                                                                                      |
-| recordResourceAccessToken      | String                      | Das Zugriffstoken zum Abrufen der aufzeichnungs erforderlich sind.                                                                                              |
+| recordResourceAccessToken      | Zeichenfolge                      | Das Zugriffstoken zum Abrufen der aufzeichnungs erforderlich sind.                                                                                              |
+| recordResourceLocation         | Zeichenfolge                      | Der Speicherort, in dem die Aufzeichnung gespeichert ist.                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | Informationen zu den Ergebnissen.  Schreibgeschützt. Server generiert wurde.                                                                                             |
 | status                         | String                      | Mögliche Werte: `notStarted`, `running`, `completed`, `failed`. Schreibgeschützt. Server generiert wurde.                                                 |
 
@@ -45,12 +46,12 @@ Es folgt eine JSON-Darstellung der Ressource.
 ```json
 {
   "clientContext": "String",
-  "completionReason": "operationCanceled | stopToneDetected | maxRecordDurationReached | initialSilenceTimeout | maxSilenceTimeout | playPromptFailed | playBeepFailed | mediaReceiveTimeout | unspecifiedError",
+  "completionReason": "operationCanceled | stopToneDetected | maxRecordDurationReached | initialSilenceTimeout | maxSilenceTimeout | playPromptFailed | playBeepFailed | mediaReceiveTimeout | unspecifiedError | none",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "recordResourceLocation": "String",
   "recordResourceAccessToken": "String",
+  "recordResourceLocation": "String",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
 }
@@ -67,8 +68,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 {
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "recordResourceLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "recordResourceAccessToken": "<access-token>",
+  "recordResourceLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "status": "completed"
 }
 ```

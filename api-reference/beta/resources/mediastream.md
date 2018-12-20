@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp mediaStream
 description: Der Typ des MediaStream.
-ms.openlocfilehash: 28eb98a3ab1be67c60c6ebd35deb7618f1618be3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: f870611700289f0254272b78e18e344d02dd123e
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065724"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380296"
 ---
 # <a name="mediastream-resource-type"></a>Ressourcentyp mediaStream
 
@@ -18,11 +19,11 @@ Der Typ des MediaStream.
 
 | Eigenschaft    | Typ    | Beschreibung                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
-| Richtung   | String  | Die Richtung. Die möglichen Werte sind `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.                  |
+| Richtung   | Zeichenfolge  | Die Richtung. Die möglichen Werte sind `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.                  |
 | label       | String  | Die Bezeichnung des Media-Stream.                                                                                       |
-| mediaType   | String  | Geben Sie das Medium. Die mögliche Werte sind `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
-| serverMuted | Boolesch | Wenn vom Server die Medien stummgeschaltet sind.                                                                          |
-| sourceId    | String  | Die Quell-ID.                                                                                                |
+| mediaType   | Zeichenfolge  | Geben Sie das Medium. Die mögliche Werte sind `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
+| serverMuted | Boolescher Wert | Wenn vom Server die Medien stummgeschaltet sind.                                                                          |
+| sourceId    | Zeichenfolge  | Die Quell-ID.                                                                                                |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

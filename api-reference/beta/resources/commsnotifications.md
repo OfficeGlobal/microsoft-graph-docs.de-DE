@@ -1,22 +1,25 @@
 ---
-title: Benachrichtigungen Ressourcentyp
-description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: 96246491c386971fe18184f26269d4abe3af6e6e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+title: Ressourcentyp commsNotifications
+description: Liste der Benachrichtigungen für mehrere Benachrichtigungen gesendet werden in einem einzelnen Batch von den Communications-Servern verwendet.
+author: VinodRavichandran
+ms.openlocfilehash: 052520a99081e5c09cd6e3ec3b74f74e9527d38d
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065832"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380450"
 ---
-# <a name="notifications-resource-type"></a>Benachrichtigungen Ressourcentyp
+# <a name="commsnotifications-resource-type"></a>Ressourcentyp commsNotifications
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
+Liste der Benachrichtigungen für mehrere Benachrichtigungen gesendet werden in einem einzelnen Batch von den Communications-Servern verwendet.
+
 ## <a name="properties"></a>Eigenschaften
 
-| Eigenschaft       | Typ                                       | Beschreibung |
-|:---------------|:-------------------------------------------|:------------|
-| Wert          | [Benachrichtigung](commsnotification.md) -Auflistung | Die Benachrichtigung über eine Änderung in der Ressource. |
+| Eigenschaft       | Typ                                                 | Beschreibung                                   |
+|:---------------|:-----------------------------------------------------|:----------------------------------------------|
+| Wert          | [CommsNotification](commsnotification.md) -Auflistung | Die Benachrichtigung über eine Änderung in der Ressource. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -39,7 +42,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "notifications resource",
+  "description": "commsNotifications resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

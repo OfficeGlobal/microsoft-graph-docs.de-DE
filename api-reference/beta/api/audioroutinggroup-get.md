@@ -2,12 +2,12 @@
 title: Abrufen von audio Routinggruppe
 description: Rufen Sie die Eigenschaften und die Beziehungen eines AudioRoutingGroup-Objekts ab.
 author: VinodRavichandran
-ms.openlocfilehash: e6aca0300287e502fd065d69db1ce4855a42b823
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 5f9a7771f31350dc30ed96e9eb81b40cc855b380
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331423"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380429"
 ---
 # <a name="get-audio-routing-group"></a>Abrufen von audio Routinggruppe
 
@@ -22,7 +22,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:---------------------------------------|:--------------------------------------------|
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt                               |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                               |
-| Anwendung     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Application                            | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -32,7 +32,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrage-Parameter](/graph/query-parameters) , mit denen die Antwort anpassen.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name          | Beschreibung               |
@@ -52,7 +52,7 @@ Das folgende Beispiel zeigt die Antwort.
 
 <!-- {
   "blockType": "request",
-  "name": "get_audioRoutingGroup"
+  "name": "get-audioRoutingGroup"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}

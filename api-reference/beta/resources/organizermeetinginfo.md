@@ -1,22 +1,25 @@
 ---
 title: Ressourcentyp organizerMeetingInfo
-description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: 00a7978c44c82ddd6b34802f29188a554e7e0b4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Besprechungsinformationen, die den Organisator der Besprechung enthält.
+author: VinodRavichandran
+ms.openlocfilehash: 296b20125908caf73221c2a8380e91931deb7e61
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062012"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380212"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>Ressourcentyp organizerMeetingInfo
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
+Besprechungsinformationen, die den Organisator der Besprechung enthält.
+
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft                     | Typ                          | Beschreibung                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| allowConversationWithoutHost | Boolesch                       | Gibt an, ob eine Unterhaltung fortgesetzt werden kann, sobald der Host der Unterhaltung verlässt. |
+| allowConversationWithoutHost | Boolescher Wert                       | Gibt an, ob eine Unterhaltung fortgesetzt werden kann, sobald der Host der Unterhaltung verlässt. |
 | organizer                    | [identitySet](identityset.md) | Der Organisator Azure Active Directory-Identität.  |
 
 ## <a name="json-representation"></a>JSON-Darstellung

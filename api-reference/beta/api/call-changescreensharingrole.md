@@ -2,12 +2,12 @@
 title: 'Rufen Sie: ChangeScreenSharingRole'
 description: Starten Sie und beenden Sie die Freigabe Bildschirm in den Anruf. Diese API wird verwendet, um Bildschirm Freigeben von Inhalten mit den Teilnehmern für einen Anruf oder eine Besprechung zu ermöglichen.
 author: VinodRavichandran
-ms.openlocfilehash: 4b4c7e0afa452bef414dd466086463aa16c9d9cf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: a0f745fa6af1dbf97c19e95a70ca37350dacc408
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328364"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380461"
 ---
 # <a name="call-changescreensharingrole"></a>Rufen Sie: ChangeScreenSharingRole
 
@@ -22,7 +22,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:---------------------------------------|:--------------------------------------------|
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt                               |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                               |
-| Anwendung                            | Calls.AccessMedia.All                       |
+| Application                            | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
-|role|String|Mögliche Werte sind: 'Viewer', 'Mitbenutzenden'|
+|role|Zeichenfolge|Mögliche Werte sind: 'Viewer', 'Mitbenutzenden'|
 
 ## <a name="response"></a>Antwort
 Gibt `202 Accepted` Antwortcode.
@@ -54,7 +54,7 @@ Das folgende Beispiel zeigt die Antwort.
 
 <!-- {
   "blockType": "request",
-  "name": "call_changeScreenSharingRole"
+  "name": "call-changeScreenSharingRole"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/changeScreenSharingRole

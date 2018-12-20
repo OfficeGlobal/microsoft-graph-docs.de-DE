@@ -2,12 +2,12 @@
 title: 'Teilnehmer: einladen'
 description: Einladen von Teilnehmern zum aktiven Anruf.
 author: VinodRavichandran
-ms.openlocfilehash: 8c09f3981c6af90680cd9e42d00184e28bc65d55
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 732bd115fcf473825e1c1e24e10fb2edd6f04f04
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335280"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380527"
 ---
 # <a name="participant-invite"></a>Teilnehmer: einladen
 
@@ -22,7 +22,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | :-------------- | :--------------------------------------------------------- |
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt                       |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                       |
-| Anwendung     | Calls.InitiateGroupCalls.All                               |
+| Application     | Calls.InitiateGroupCalls.All                               |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
 |participants|[InvitationParticipantInfo](../resources/invitationparticipantinfo.md) -Auflistung| Die Teilnehmer einladen.|
-|clientContext|String|Der Clientkontext.|
+|clientContext|Zeichenfolge|Der Clientkontext.|
 
 ## <a name="response"></a>Antwort
 Gibt `202 Accepted` Antwortcode und ein Location-Header mit einem Uri, um die [CommsOperation](../resources/commsoperation.md) für diese Anforderung erstellt.
@@ -54,7 +54,7 @@ In den folgenden Beispielen gezeigt, wie diese API-aufrufen.
 Das folgende Beispiel zeigt die Antwort.
 <!-- {
   "blockType": "request",
-  "name": "participant_invite"
+  "name": "participant-invite"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/invite

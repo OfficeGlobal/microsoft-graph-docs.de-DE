@@ -1,22 +1,25 @@
 ---
 title: Ressourcentyp mediaConfig
-description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: a04670d4c13299bde00c3812b9ecb996885330d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Die Medienkonfiguration für die Verbindung zu einem Anruf verwendet.
+author: VinodRavichandran
+ms.openlocfilehash: 1b68d9236ba78ae1a83228b3382c96fc81516d1f
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058448"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380261"
 ---
 # <a name="mediaconfig-resource-type"></a>Ressourcentyp mediaConfig
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
+Die Medienkonfiguration für die Verbindung zu einem Anruf verwendet.
+
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft       | Typ    | Beschreibung|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | Boolesch |  |
+| removeFromDefaultAudioGroup | Boolescher Wert |  |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp meetingCapability
 description: Enthält die Funktionen einer Besprechung
-ms.openlocfilehash: 438193d08ab5542f07d4cbf61704520d81433e50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 1a6f172922c0efbc9ad93e32141e364e2d0fc711
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061416"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380247"
 ---
 # <a name="meetingcapability-resource-type"></a>Ressourcentyp meetingCapability
 
@@ -16,10 +17,11 @@ Enthält die Funktionen einer Besprechung
 
 ## <a name="properties"></a>Eigenschaften
 
-| Eigenschaft       | Typ    | Beschreibung|
-|:---------------|:--------|:----------|
-| allowAnonymousUsersToDialOut | Boolesch | Gibt an, ob anonyme Benutzer als Client-Anschluss in einer Besprechung zulässig ist. |
-| autoAdmittedUsers | String | Mögliche Werte: `everyoneInCompany`, `everyone`. |
+| Eigenschaft                          | Typ    | Beschreibung                                                        |
+|:----------------------------------|:--------|:-------------------------------------------------------------------|
+| allowAnonymousUsersToDialOut      | Boolescher Wert | Gibt an, ob anonyme Benutzer als Client-Anschluss in einer Besprechung zulässig ist. |
+| allowAnonymousUsersToStartMeeting | Boolescher Wert | Gibt an, ob anonyme Benutzer zugelassen sind, um eine Besprechung zu starten.  |
+| autoAdmittedUsers                 | String  | Mögliche Werte: `everyoneInCompany`, `everyone`.              |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -35,6 +37,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ```json
 {
   "allowAnonymousUsersToDialOut": true,
+  "allowAnonymousUsersToStartMeeting": true,
   "autoAdmittedUsers": "everyoneInCompany | everyone"
 }
 ```

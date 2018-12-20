@@ -1,12 +1,13 @@
 ---
 title: Teilnehmerliste Ressourcentyp
 description: Der Typ Teilnehmer.
-ms.openlocfilehash: dcb456df0c7269bab91dcf593e674307db5358b8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 3fcc5fc5d95ded3b5424370cd180fde38c1a65be
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062642"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380394"
 ---
 # <a name="participant-resource-type"></a>Teilnehmerliste Ressourcentyp
 
@@ -28,12 +29,12 @@ Der Typ Teilnehmer.
 
 | Eigenschaft             | Typ                                     | Beschreibung                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | String                                   | Die Teilnehmer-Id.                                          |
+| id                   | Zeichenfolge                                   | Die Teilnehmer-Id.                                          |
 | Info                 | [participantInfo](participantinfo.md)    | Die Teilnehmer des Teilnehmers.                          |
 | isInLobby            | Boolean                                  | True, wenn der Teilnehmer in der Lobby ist                          |
 | isMuted              | Boolean                                  | True, wenn der Teilnehmer stumm geschaltet ist (Client oder Server stumm geschaltet)    |
 | mediaStreams         | [MediaStream](mediastream.md) -Auflistung | Die Liste der Mediendatenströme.                                   |
-| Metadaten             | String                                   | Blob-Daten von den Teilnehmer in der Teilnehmerliste einer     |
+| Metadaten             | Zeichenfolge                                   | Blob-Daten von den Teilnehmer in der Teilnehmerliste einer     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Informationen zu gibt an, ob der Teilnehmer Aufzeichnung Funktionalität verfügt. |
 
 ## <a name="relationships"></a>Beziehungen

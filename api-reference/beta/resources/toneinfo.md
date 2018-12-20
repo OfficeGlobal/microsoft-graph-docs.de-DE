@@ -1,23 +1,26 @@
 ---
 title: Ressourcentyp toneInfo
-description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: b4ed9667c2e2156f52703c6fa15f4937ead5cef4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Ein einzelnes DTMF-Ereignis.
+author: VinodRavichandran
+ms.openlocfilehash: 0ae78a9a4721c88767ebc460a99c7cdea30f44c5
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065439"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380338"
 ---
 # <a name="toneinfo-resource-type"></a>Ressourcentyp toneInfo
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+
+Ein einzelnes DTMF-Ereignis.
 
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft       | Typ    | Beschreibung|
 |:---------------|:--------|:----------|
 | sequenceId | Int64 | Ein inkrementelle Bezeichner für eine Sortierung DTMF-Ereignisse verwendet. |
-| Tone | String | Mögliche Werte sind: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`, `flash`. |
+| Tone | Zeichenfolge | Mögliche Werte sind: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`, `flash`. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
