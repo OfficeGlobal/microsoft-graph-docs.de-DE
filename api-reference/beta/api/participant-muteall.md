@@ -2,59 +2,59 @@
 title: 'Teilnehmer: MuteAll'
 description: Stummschalten Sie aller Teilnehmer in den Anruf.
 author: VinodRavichandran
-ms.openlocfilehash: 26369f3dc0c6502950c46ed1f9befe80ea1a320a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: fb395fd5a49a0a13616d32de9645f3899e4641d2
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310178"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380499"
 ---
-# <a name="participant-muteall"></a><span data-ttu-id="d5136-103">Teilnehmer: MuteAll</span><span class="sxs-lookup"><span data-stu-id="d5136-103">participant: muteAll</span></span>
+# <a name="participant-muteall"></a><span data-ttu-id="0bf53-103">Teilnehmer: MuteAll</span><span class="sxs-lookup"><span data-stu-id="0bf53-103">participant: muteAll</span></span>
 
-> <span data-ttu-id="d5136-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="d5136-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d5136-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="d5136-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0bf53-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="0bf53-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="0bf53-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="0bf53-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="d5136-106">Stummschalten Sie aller Teilnehmer in den Anruf.</span><span class="sxs-lookup"><span data-stu-id="d5136-106">Mute all participants in the call.</span></span>
+<span data-ttu-id="0bf53-106">Stummschalten Sie aller Teilnehmer in den Anruf.</span><span class="sxs-lookup"><span data-stu-id="0bf53-106">Mute all participants in the call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d5136-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="d5136-107">Permissions</span></span>
-<span data-ttu-id="d5136-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d5136-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="0bf53-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="0bf53-107">Permissions</span></span>
+<span data-ttu-id="0bf53-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0bf53-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="d5136-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="d5136-110">Permission type</span></span>                        | <span data-ttu-id="d5136-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="d5136-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="0bf53-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="0bf53-110">Permission type</span></span>                        | <span data-ttu-id="0bf53-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="0bf53-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="d5136-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="d5136-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="d5136-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="d5136-113">Not Supported</span></span>                               |
-| <span data-ttu-id="d5136-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="d5136-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d5136-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="d5136-115">Not Supported</span></span>                               |
-| <span data-ttu-id="d5136-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="d5136-116">Application</span></span>                            | <span data-ttu-id="d5136-117">Keines</span><span class="sxs-lookup"><span data-stu-id="d5136-117">None</span></span>                                        |
+| <span data-ttu-id="0bf53-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="0bf53-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="0bf53-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="0bf53-113">Not Supported</span></span>                               |
+| <span data-ttu-id="0bf53-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="0bf53-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0bf53-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="0bf53-115">Not Supported</span></span>                               |
+| <span data-ttu-id="0bf53-116">Application</span><span class="sxs-lookup"><span data-stu-id="0bf53-116">Application</span></span>                            | <span data-ttu-id="0bf53-117">Keine</span><span class="sxs-lookup"><span data-stu-id="0bf53-117">None</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="d5136-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="d5136-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0bf53-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="0bf53-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/muteAll
 POST /applications/{id}/calls/{id}/participants/muteAll
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d5136-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="d5136-119">Request headers</span></span>
-| <span data-ttu-id="d5136-120">Name</span><span class="sxs-lookup"><span data-stu-id="d5136-120">Name</span></span>          | <span data-ttu-id="d5136-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d5136-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="0bf53-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="0bf53-119">Request headers</span></span>
+| <span data-ttu-id="0bf53-120">Name</span><span class="sxs-lookup"><span data-stu-id="0bf53-120">Name</span></span>          | <span data-ttu-id="0bf53-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="0bf53-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="d5136-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="d5136-122">Authorization</span></span> | <span data-ttu-id="d5136-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="d5136-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0bf53-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="0bf53-122">Authorization</span></span> | <span data-ttu-id="0bf53-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="0bf53-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d5136-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="d5136-125">Request body</span></span>
-<span data-ttu-id="d5136-126">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="d5136-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0bf53-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="0bf53-125">Request body</span></span>
+<span data-ttu-id="0bf53-126">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="0bf53-126">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="d5136-127">Parameter</span><span class="sxs-lookup"><span data-stu-id="d5136-127">Parameter</span></span>      | <span data-ttu-id="d5136-128">Typ</span><span class="sxs-lookup"><span data-stu-id="d5136-128">Type</span></span>    |<span data-ttu-id="d5136-129">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d5136-129">Description</span></span>|
+| <span data-ttu-id="0bf53-127">Parameter</span><span class="sxs-lookup"><span data-stu-id="0bf53-127">Parameter</span></span>      | <span data-ttu-id="0bf53-128">Typ</span><span class="sxs-lookup"><span data-stu-id="0bf53-128">Type</span></span>    |<span data-ttu-id="0bf53-129">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="0bf53-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d5136-130">participants</span><span class="sxs-lookup"><span data-stu-id="d5136-130">participants</span></span>|<span data-ttu-id="d5136-131">Collection von Objekten des Typs „String“</span><span class="sxs-lookup"><span data-stu-id="d5136-131">String collection</span></span>|<span data-ttu-id="d5136-132">Die Teilnehmer stummgeschaltet werden.</span><span class="sxs-lookup"><span data-stu-id="d5136-132">The participants to be muted.</span></span>|
-|<span data-ttu-id="d5136-133">clientContext</span><span class="sxs-lookup"><span data-stu-id="d5136-133">clientContext</span></span>|<span data-ttu-id="d5136-134">String</span><span class="sxs-lookup"><span data-stu-id="d5136-134">String</span></span>|<span data-ttu-id="d5136-135">Der Clientkontext.</span><span class="sxs-lookup"><span data-stu-id="d5136-135">The client context.</span></span>|
+|<span data-ttu-id="0bf53-130">participants</span><span class="sxs-lookup"><span data-stu-id="0bf53-130">participants</span></span>|<span data-ttu-id="0bf53-131">Collection von Objekten des Typs „String“</span><span class="sxs-lookup"><span data-stu-id="0bf53-131">String collection</span></span>|<span data-ttu-id="0bf53-132">Die Teilnehmer stummgeschaltet werden.</span><span class="sxs-lookup"><span data-stu-id="0bf53-132">The participants to be muted.</span></span>|
+|<span data-ttu-id="0bf53-133">clientContext</span><span class="sxs-lookup"><span data-stu-id="0bf53-133">clientContext</span></span>|<span data-ttu-id="0bf53-134">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="0bf53-134">String</span></span>|<span data-ttu-id="0bf53-135">Der Clientkontext.</span><span class="sxs-lookup"><span data-stu-id="0bf53-135">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="d5136-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="d5136-136">Response</span></span>
-<span data-ttu-id="d5136-137">Wenn der Vorgang erfolgreich war, gibt diese Methode `200 OK` Antwortobjekt Code und [CommsOperation](../resources/commsoperation.md) im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="d5136-137">If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="0bf53-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="0bf53-136">Response</span></span>
+<span data-ttu-id="0bf53-137">Wenn der Vorgang erfolgreich war, gibt diese Methode `200 OK` Antwortobjekt Code und [CommsOperation](../resources/commsoperation.md) im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="0bf53-137">If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d5136-138">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d5136-138">Example</span></span>
-<span data-ttu-id="d5136-139">Das folgende Beispiel illustriert, wie Sie diese API aufrufen können.</span><span class="sxs-lookup"><span data-stu-id="d5136-139">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="0bf53-138">Beispiel</span><span class="sxs-lookup"><span data-stu-id="0bf53-138">Example</span></span>
+<span data-ttu-id="0bf53-139">Das folgende Beispiel illustriert, wie Sie diese API aufrufen können.</span><span class="sxs-lookup"><span data-stu-id="0bf53-139">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="d5136-140">Anforderung</span><span class="sxs-lookup"><span data-stu-id="d5136-140">Request</span></span>
-<span data-ttu-id="d5136-141">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="d5136-141">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="0bf53-140">Anforderung</span><span class="sxs-lookup"><span data-stu-id="0bf53-140">Request</span></span>
+<span data-ttu-id="0bf53-141">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="0bf53-141">The following example shows the request.</span></span>
 <!-- {
   "blockType": "request",
-  "name": "participant_muteAll"
+  "name": "participant-muteAll"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/muteAll
@@ -69,9 +69,9 @@ Content-Length: 81
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="d5136-142">Antwort</span><span class="sxs-lookup"><span data-stu-id="d5136-142">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="0bf53-142">Antwort</span><span class="sxs-lookup"><span data-stu-id="0bf53-142">Response</span></span>
 
-> <span data-ttu-id="d5136-p104">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="d5136-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="0bf53-p104">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="0bf53-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

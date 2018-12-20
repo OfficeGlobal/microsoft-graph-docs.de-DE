@@ -2,64 +2,64 @@
 title: 'Rufen Sie: Umleiten'
 description: Umleiten eines eingehenden Anrufs an.
 author: VinodRavichandran
-ms.openlocfilehash: dd24c1b3841152f8bd088f89c95ff8786cefb47c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 9fff752f07f66cf3c236982495897234c9a1c38d
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309100"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380219"
 ---
-# <a name="call-redirect"></a><span data-ttu-id="a5201-103">Rufen Sie: Umleiten</span><span class="sxs-lookup"><span data-stu-id="a5201-103">call: redirect</span></span>
+# <a name="call-redirect"></a><span data-ttu-id="63d6b-103">Rufen Sie: Umleiten</span><span class="sxs-lookup"><span data-stu-id="63d6b-103">call: redirect</span></span>
 
-> <span data-ttu-id="a5201-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="a5201-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a5201-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="a5201-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="63d6b-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="63d6b-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="63d6b-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="63d6b-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="a5201-106">Umleiten eines eingehenden Anrufs an.</span><span class="sxs-lookup"><span data-stu-id="a5201-106">Redirect an incoming call.</span></span>
+<span data-ttu-id="63d6b-106">Umleiten eines eingehenden Anrufs an.</span><span class="sxs-lookup"><span data-stu-id="63d6b-106">Redirect an incoming call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a5201-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="a5201-107">Permissions</span></span>
-<span data-ttu-id="a5201-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a5201-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="63d6b-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="63d6b-107">Permissions</span></span>
+<span data-ttu-id="63d6b-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="63d6b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="a5201-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="a5201-110">Permission type</span></span> | <span data-ttu-id="a5201-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="a5201-111">Permissions (from least to most privileged)</span></span>         |
+| <span data-ttu-id="63d6b-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="63d6b-110">Permission type</span></span> | <span data-ttu-id="63d6b-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="63d6b-111">Permissions (from least to most privileged)</span></span>         |
 | :-------------- | :-------------------------------------------------- |
-| <span data-ttu-id="a5201-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="a5201-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="a5201-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="a5201-113">Not Supported</span></span>                |
-| <span data-ttu-id="a5201-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="a5201-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a5201-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="a5201-115">Not Supported</span></span>                |
-| <span data-ttu-id="a5201-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="a5201-116">Application</span></span>     | <span data-ttu-id="a5201-117">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="a5201-117">Calls.Initiate.All</span></span>                                  |
+| <span data-ttu-id="63d6b-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="63d6b-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="63d6b-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="63d6b-113">Not Supported</span></span>                |
+| <span data-ttu-id="63d6b-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="63d6b-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="63d6b-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="63d6b-115">Not Supported</span></span>                |
+| <span data-ttu-id="63d6b-116">Application</span><span class="sxs-lookup"><span data-stu-id="63d6b-116">Application</span></span>     | <span data-ttu-id="63d6b-117">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="63d6b-117">Calls.Initiate.All</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="a5201-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="a5201-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="63d6b-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="63d6b-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/redirect
 POST /applications/{id}/calls/{id}/redirect
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a5201-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="a5201-119">Request headers</span></span>
-| <span data-ttu-id="a5201-120">Name</span><span class="sxs-lookup"><span data-stu-id="a5201-120">Name</span></span>          | <span data-ttu-id="a5201-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a5201-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="63d6b-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="63d6b-119">Request headers</span></span>
+| <span data-ttu-id="63d6b-120">Name</span><span class="sxs-lookup"><span data-stu-id="63d6b-120">Name</span></span>          | <span data-ttu-id="63d6b-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="63d6b-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="a5201-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a5201-122">Authorization</span></span> | <span data-ttu-id="a5201-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="a5201-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="63d6b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="63d6b-122">Authorization</span></span> | <span data-ttu-id="63d6b-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="63d6b-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a5201-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="a5201-125">Request body</span></span>
-<span data-ttu-id="a5201-126">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="a5201-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="63d6b-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="63d6b-125">Request body</span></span>
+<span data-ttu-id="63d6b-126">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="63d6b-126">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="a5201-127">Parameter</span><span class="sxs-lookup"><span data-stu-id="a5201-127">Parameter</span></span>      | <span data-ttu-id="a5201-128">Typ</span><span class="sxs-lookup"><span data-stu-id="a5201-128">Type</span></span>    |<span data-ttu-id="a5201-129">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a5201-129">Description</span></span>|
+| <span data-ttu-id="63d6b-127">Parameter</span><span class="sxs-lookup"><span data-stu-id="63d6b-127">Parameter</span></span>      | <span data-ttu-id="63d6b-128">Typ</span><span class="sxs-lookup"><span data-stu-id="63d6b-128">Type</span></span>    |<span data-ttu-id="63d6b-129">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="63d6b-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a5201-130">Ziele</span><span class="sxs-lookup"><span data-stu-id="a5201-130">targets</span></span>|<span data-ttu-id="a5201-131">[InvitationParticipantInfo](../resources/invitationparticipantinfo.md) -Auflistung</span><span class="sxs-lookup"><span data-stu-id="a5201-131">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="a5201-132">Die Teilnehmer Ziel des Vorgangs umleiten.</span><span class="sxs-lookup"><span data-stu-id="a5201-132">The target participants of the redirect operation.</span></span>|
-|<span data-ttu-id="a5201-133">targetDisposition</span><span class="sxs-lookup"><span data-stu-id="a5201-133">targetDisposition</span></span>|<span data-ttu-id="a5201-134">String</span><span class="sxs-lookup"><span data-stu-id="a5201-134">String</span></span>|<span data-ttu-id="a5201-135">Der Wert ist:`default`</span><span class="sxs-lookup"><span data-stu-id="a5201-135">The possible value is: `default`</span></span>|
-|<span data-ttu-id="a5201-136">timeout</span><span class="sxs-lookup"><span data-stu-id="a5201-136">timeout</span></span>|<span data-ttu-id="a5201-137">Int32</span><span class="sxs-lookup"><span data-stu-id="a5201-137">Int32</span></span>|<span data-ttu-id="a5201-138">Das Zeitlimit in Sekunden für den Umleitungsvorgang.</span><span class="sxs-lookup"><span data-stu-id="a5201-138">The timeout in seconds for the redirect operation.</span></span>|
-|<span data-ttu-id="a5201-139">maskCallee</span><span class="sxs-lookup"><span data-stu-id="a5201-139">maskCallee</span></span>|<span data-ttu-id="a5201-140">Boolesch</span><span class="sxs-lookup"><span data-stu-id="a5201-140">Boolean</span></span>|<span data-ttu-id="a5201-141">Gibt an, ob der aufgerufene maskieren.</span><span class="sxs-lookup"><span data-stu-id="a5201-141">Indicates whether to mask the callee.</span></span>|
-|<span data-ttu-id="a5201-142">maskCaller</span><span class="sxs-lookup"><span data-stu-id="a5201-142">maskCaller</span></span>|<span data-ttu-id="a5201-143">Boolesch</span><span class="sxs-lookup"><span data-stu-id="a5201-143">Boolean</span></span>|<span data-ttu-id="a5201-144">Gibt an, ob den Anrufer maskieren.</span><span class="sxs-lookup"><span data-stu-id="a5201-144">Indicates whether to mask the caller.</span></span>|
+|<span data-ttu-id="63d6b-130">Ziele</span><span class="sxs-lookup"><span data-stu-id="63d6b-130">targets</span></span>|<span data-ttu-id="63d6b-131">[InvitationParticipantInfo](../resources/invitationparticipantinfo.md) -Auflistung</span><span class="sxs-lookup"><span data-stu-id="63d6b-131">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="63d6b-132">Die Teilnehmer Ziel des Vorgangs umleiten.</span><span class="sxs-lookup"><span data-stu-id="63d6b-132">The target participants of the redirect operation.</span></span>|
+|<span data-ttu-id="63d6b-133">targetDisposition</span><span class="sxs-lookup"><span data-stu-id="63d6b-133">targetDisposition</span></span>|<span data-ttu-id="63d6b-134">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="63d6b-134">String</span></span>|<span data-ttu-id="63d6b-135">Der Wert ist:`default`</span><span class="sxs-lookup"><span data-stu-id="63d6b-135">The possible value is: `default`</span></span>|
+|<span data-ttu-id="63d6b-136">timeout</span><span class="sxs-lookup"><span data-stu-id="63d6b-136">timeout</span></span>|<span data-ttu-id="63d6b-137">Int32</span><span class="sxs-lookup"><span data-stu-id="63d6b-137">Int32</span></span>|<span data-ttu-id="63d6b-138">Das Zeitlimit in Sekunden für den Umleitungsvorgang.</span><span class="sxs-lookup"><span data-stu-id="63d6b-138">The timeout in seconds for the redirect operation.</span></span>|
+|<span data-ttu-id="63d6b-139">maskCallee</span><span class="sxs-lookup"><span data-stu-id="63d6b-139">maskCallee</span></span>|<span data-ttu-id="63d6b-140">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="63d6b-140">Boolean</span></span>|<span data-ttu-id="63d6b-141">Gibt an, ob der aufgerufene maskieren.</span><span class="sxs-lookup"><span data-stu-id="63d6b-141">Indicates whether to mask the callee.</span></span>|
+|<span data-ttu-id="63d6b-142">maskCaller</span><span class="sxs-lookup"><span data-stu-id="63d6b-142">maskCaller</span></span>|<span data-ttu-id="63d6b-143">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="63d6b-143">Boolean</span></span>|<span data-ttu-id="63d6b-144">Gibt an, ob den Anrufer maskieren.</span><span class="sxs-lookup"><span data-stu-id="63d6b-144">Indicates whether to mask the caller.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="a5201-145">Antwort</span><span class="sxs-lookup"><span data-stu-id="a5201-145">Response</span></span>
-<span data-ttu-id="a5201-146">Gibt `202 Accepted` Antwortcode</span><span class="sxs-lookup"><span data-stu-id="a5201-146">Returns `202 Accepted` response code</span></span>
+## <a name="response"></a><span data-ttu-id="63d6b-145">Antwort</span><span class="sxs-lookup"><span data-stu-id="63d6b-145">Response</span></span>
+<span data-ttu-id="63d6b-146">Gibt `202 Accepted` Antwortcode</span><span class="sxs-lookup"><span data-stu-id="63d6b-146">Returns `202 Accepted` response code</span></span>
 
-## <a name="examples"></a><span data-ttu-id="a5201-147">Beispiele</span><span class="sxs-lookup"><span data-stu-id="a5201-147">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="63d6b-147">Beispiele</span><span class="sxs-lookup"><span data-stu-id="63d6b-147">Examples</span></span>
 
-### <a name="redirect-a-call"></a><span data-ttu-id="a5201-148">Umleiten eines Anrufs</span><span class="sxs-lookup"><span data-stu-id="a5201-148">Redirect a call</span></span>
+### <a name="redirect-a-call"></a><span data-ttu-id="63d6b-148">Umleiten eines Anrufs</span><span class="sxs-lookup"><span data-stu-id="63d6b-148">Redirect a call</span></span>
 
-##### <a name="request"></a><span data-ttu-id="a5201-149">Anforderung</span><span class="sxs-lookup"><span data-stu-id="a5201-149">Request</span></span>
-<span data-ttu-id="a5201-150">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="a5201-150">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="63d6b-149">Anforderung</span><span class="sxs-lookup"><span data-stu-id="63d6b-149">Request</span></span>
+<span data-ttu-id="63d6b-150">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="63d6b-150">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
-  "name": "call_redirect"
+  "name": "call-redirect"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/redirect
@@ -88,9 +88,9 @@ Content-Length: 515
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="a5201-151">Antwort</span><span class="sxs-lookup"><span data-stu-id="a5201-151">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="63d6b-151">Antwort</span><span class="sxs-lookup"><span data-stu-id="63d6b-151">Response</span></span>
 
-> <span data-ttu-id="a5201-p104">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="a5201-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="63d6b-p104">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="63d6b-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -101,9 +101,9 @@ Content-Length: 515
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="forward-a-call"></a><span data-ttu-id="a5201-154">Weiterleiten eines Anrufs</span><span class="sxs-lookup"><span data-stu-id="a5201-154">Forward a call</span></span>
+### <a name="forward-a-call"></a><span data-ttu-id="63d6b-154">Weiterleiten eines Anrufs</span><span class="sxs-lookup"><span data-stu-id="63d6b-154">Forward a call</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="a5201-155">Benachrichtigung - eingehende</span><span class="sxs-lookup"><span data-stu-id="a5201-155">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="63d6b-155">Benachrichtigung - eingehende</span><span class="sxs-lookup"><span data-stu-id="63d6b-155">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -156,7 +156,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="a5201-156">Anforderung</span><span class="sxs-lookup"><span data-stu-id="a5201-156">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="63d6b-156">Anforderung</span><span class="sxs-lookup"><span data-stu-id="63d6b-156">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls/57DAB8B1894C409AB240BD8BEAE78896/redirect
@@ -183,13 +183,13 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="a5201-157">Antwort</span><span class="sxs-lookup"><span data-stu-id="a5201-157">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="63d6b-157">Antwort</span><span class="sxs-lookup"><span data-stu-id="63d6b-157">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---redirecting"></a><span data-ttu-id="a5201-158">Benachrichtigung - Umleitung</span><span class="sxs-lookup"><span data-stu-id="a5201-158">Notification - redirecting</span></span>
+##### <a name="notification---redirecting"></a><span data-ttu-id="63d6b-158">Benachrichtigung - Umleitung</span><span class="sxs-lookup"><span data-stu-id="63d6b-158">Notification - redirecting</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -218,7 +218,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="a5201-159">Benachrichtigung - beendet</span><span class="sxs-lookup"><span data-stu-id="a5201-159">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="63d6b-159">Benachrichtigung - beendet</span><span class="sxs-lookup"><span data-stu-id="63d6b-159">Notification - terminated</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls

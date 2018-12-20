@@ -1,26 +1,29 @@
 ---
 title: Ressourcentyp mediaConfig
-description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: a04670d4c13299bde00c3812b9ecb996885330d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Die Medienkonfiguration für die Verbindung zu einem Anruf verwendet.
+author: VinodRavichandran
+ms.openlocfilehash: 1b68d9236ba78ae1a83228b3382c96fc81516d1f
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058448"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380261"
 ---
-# <a name="mediaconfig-resource-type"></a><span data-ttu-id="85766-103">Ressourcentyp mediaConfig</span><span class="sxs-lookup"><span data-stu-id="85766-103">mediaConfig resource type</span></span>
+# <a name="mediaconfig-resource-type"></a><span data-ttu-id="8db98-103">Ressourcentyp mediaConfig</span><span class="sxs-lookup"><span data-stu-id="8db98-103">mediaConfig resource type</span></span>
 
-> <span data-ttu-id="85766-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="85766-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="85766-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="85766-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="8db98-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="8db98-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8db98-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="8db98-105">Use of these APIs in production applications is not supported.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="85766-106">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="85766-106">Properties</span></span>
+<span data-ttu-id="8db98-106">Die Medienkonfiguration für die Verbindung zu einem Anruf verwendet.</span><span class="sxs-lookup"><span data-stu-id="8db98-106">The media configuration used to connect to a call.</span></span>
 
-| <span data-ttu-id="85766-107">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="85766-107">Property</span></span>       | <span data-ttu-id="85766-108">Typ</span><span class="sxs-lookup"><span data-stu-id="85766-108">Type</span></span>    | <span data-ttu-id="85766-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="85766-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="8db98-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="8db98-107">Properties</span></span>
+
+| <span data-ttu-id="8db98-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="8db98-108">Property</span></span>       | <span data-ttu-id="8db98-109">Typ</span><span class="sxs-lookup"><span data-stu-id="8db98-109">Type</span></span>    | <span data-ttu-id="8db98-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8db98-110">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="85766-110">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="85766-110">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="85766-111">Boolesch</span><span class="sxs-lookup"><span data-stu-id="85766-111">Boolean</span></span> |  |
+| <span data-ttu-id="8db98-111">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="8db98-111">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="8db98-112">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="8db98-112">Boolean</span></span> |  |
 
-## <a name="json-representation"></a><span data-ttu-id="85766-112">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="85766-112">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8db98-113">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="8db98-113">JSON representation</span></span>
 
-<span data-ttu-id="85766-113">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="85766-113">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="8db98-114">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="8db98-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
