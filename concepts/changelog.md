@@ -2,12 +2,12 @@
 title: Änderungsprotokoll für Microsoft Graph
 description: Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschließlich der Version 1.0 und des Beta-Endpunkts von Microsoft Graph-APIs.
 author: jthake-msft
-ms.openlocfilehash: 57bdb5da28edb2f3493e8f564316a19399bb9a70
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+ms.openlocfilehash: e4afc0f2b3a0302493f2d4d25f5c90777d5ffe73
+ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380597"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "27413197"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Änderungsprotokoll für Microsoft Graph
 
@@ -356,7 +356,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 | **Änderungstyp** | **Version** | **Beschreibung**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | Ergänzungen        | Beta       | Secure Score-APIs wurden zur [Sicherheits-API](/graph/api/resources/securescore-api-overview?view=graph-rest-beta) hinzugefügt, einschließlich der folgenden Ressourcen und Operationen:<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (und verknüpfte Entitäten)<br/>[List secureScores](/graph/api/securescores-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)<br/>[List secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta)<br/>[Update secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta) |
-| Ergänzungen        | Beta        | Der neue komplexe Typ [secureScoreControlStateUpdate](/graph/api/resources/secureScoreControlStateUpdate/team?view=graph-rest-beta) wurde eingeführt. |
+| Ergänzungen        | Beta        | Der neue komplexe Typ [secureScoreControlStateUpdate](/graph/api/resources/securescorecontrolstateupdate?view=graph-rest-beta) wurde eingeführt. |
 
 
 
