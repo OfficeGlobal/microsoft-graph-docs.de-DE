@@ -1,13 +1,13 @@
 ---
 title: Abrufen von Outlook-Kontakten in einem freigegebenen Ordner
-description: " es gibt außerdem "
+description: In Outlook können Kunden Ordner für andere freigeben und den Zugriff zum Lesen, Erstellen oder Ändern auf einzelne Kontaktordner erteilen. In Outlook kann ein Kunde auch einen anderen Benutzer delegieren, um im Auftrag des Kunden zu handeln.
 author: angelgolfer-ms
-ms.openlocfilehash: a3dd8cff5cac88d3ef273b63f40bc8af87910aa1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: d0dc5be8df709c3d736ff0baa55667926cfc5936
+ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315176"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "27413155"
 ---
 # <a name="get-outlook-contacts-in-a-shared-folder"></a>Abrufen von Outlook-Kontakten in einem freigegebenen Ordner
 
@@ -16,6 +16,8 @@ In Outlook können Kunden Ordner für andere freigeben und den Zugriff zum Lesen
 Programmgesteuert unterstützt Microsoft Graph das Abrufen von Kontakten in Kontaktordnern, die andere Benutzer freigegeben haben, sowie das Abrufen der freigegebenen Ordner selbst. Die Unterstützung gilt auch für Ordner in einem delegierten Postfach.
 
 Beispielsweise hat Adrian für John einen benutzerdefinierten Kontaktordner freigegeben und John Lesezugriff erteilt. Wenn John sich in Ihrer App angemeldet und delegierte Berechtigungen (Contacts.Read.Shared oder Contacts.ReadWrite.Shared) bereitgestellt hat, kann Ihre App auf Adrians benutzerdefinierten Kontaktordner und auf die Kontakte in diesem Ordner zugreifen, wie nachstehend beschrieben.
+
+> **Hinweis** Mithilfe der Freigabeberechtigungen (Contacts.Read.Shared oder Contacts.ReadWrite.Shared) können Sie Kontakte in einem freigegebenen oder delegierten Ordner lesen oder schreiben. [Das Abonnieren von Änderungsbenachrichtigungen](webhooks.md) wird für Elemente in solchen Ordnern nicht unterstützt. Verwenden Sie zum Einrichten von Änderungsbenachrichtigungsabonnements für Kontakte in einem freigegebenen, delegierten oder einem Kontaktordner eines anderen Benutzers im Mandanten die Berechtigung „Contacts.Read“.
 
 ## <a name="get-a-contact-in-the-shared-folder"></a>Abrufen eines Kontakts im freigegebenen Ordner
 

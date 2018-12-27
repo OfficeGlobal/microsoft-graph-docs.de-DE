@@ -1,25 +1,23 @@
 ---
 title: Abrufen von Outlook-Nachrichten in einem freigegebenen oder delegierten Ordner
-description: Diese Themen haben auch ähnliche Abschnitte – Ereignisse auflisten, Ereignis abrufen, Kontakte auflisten, Kontakt abrufen, Kontaktordner abrufen.
+description: In Outlook können Kunden E-Mail-Ordner für andere freigeben und „Lesen“-, „Erstellen“- oder „Ändern“-Zugriff auf einzelne Ordner gewähren. In Outlook kann ein Kunde auch einen anderen Benutzer delegieren, um im Auftrag des Kunden zu handeln.
 author: angelgolfer-ms
-ms.openlocfilehash: d90fa5d37fd7a07e4069bd5bcc0eb46f0cae29a6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: cdb2228c64647497674402825577942323c3d2ff
+ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320111"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "27413176"
 ---
 # <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>Abrufen von Outlook-Nachrichten in einem freigegebenen oder delegierten Ordner
-
-<!-- remove similar content in other topics when ready to publish - list messages, get message, get mail folder.
-These topics also have similar section - list events, get event, get calendar, list contacts, get contact, get contact folder.
--->
 
 In Outlook können Kunden E-Mail-Ordner für andere freigeben und „Lesen“-, „Erstellen“- oder „Ändern“-Zugriff auf einzelne Ordner gewähren. In Outlook kann ein Kunde auch einen anderen Benutzer delegieren, im Auftrag des Kunden zu handeln und auf bestimmte E-Mail-Ordner oder das gesamte Kundenpostfach zugreifen. Dies wird in Outlook auch als „Delegierung“ bezeichnet.
 
 Programmgesteuert unterstützt Microsoft Graph das Abrufen von Nachrichten in E-Mail-Ordnern, die andere Benutzer freigegeben haben, sowie das Abrufen der freigegebenen Ordner selbst. Die Unterstützung gilt auch für Ordner, die delegiert wurden.
 
 Beispielsweise hat Garth John Lesezugriff auf den Posteingang von Garth erteilt. Wenn John sich in Ihrer App angemeldet und delegierte Berechtigungen (Mail.Read.Shared oder Mail.ReadWrite.Shared) bereitgestellt hat, kann Ihre App auf Garths Mail und Posteingang zugreifen, wie nachstehend beschrieben.
+
+> **Hinweis** Mithilfe der Freigabeberechtigungen (Mail.Read.Shared oder Mail.ReadWrite.Shared) können Sie Ereignisse in einem freigegebenen oder delegierten Ordner lesen oder schreiben. [Das Abonnieren von Änderungsbenachrichtigungen](webhooks.md) wird für Elemente in solchen Ordnern nicht unterstützt. Verwenden Sie zum Einrichten von Änderungsbenachrichtigungsabonnements für Nachrichten in einem freigegebenen, delegierten oder einem Postfachordner eines anderen Benutzers im Mandanten die Berechtigung „Mail.Read“.
 
 ## <a name="get-a-message-in-the-shared-folder"></a>Abrufen einer Nachricht im freigegebenen Ordner
 
