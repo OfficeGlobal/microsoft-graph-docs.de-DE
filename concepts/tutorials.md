@@ -15,15 +15,24 @@ Microsoft Graph-Lernprogramme sind schrittweise Übungen, in denen Sie durch ein
 
 Die folgenden Lernprogramme sind zurzeit verfügbar:
 
-- [Angular](https://docs.microsoft.com/graph/tutorials/angular/)
-- [ASP.NET](https://docs.microsoft.com/graph/tutorials/aspnet/)
-- [Microsoft Flow](https://docs.microsoft.com/graph/tutorials/flow/)
-- [Node.js](https://docs.microsoft.com/graph/tutorials/node/)
-- [PHP](https://docs.microsoft.com/graph/tutorials/php/)
-- [Python](https://docs.microsoft.com/graph/tutorials/python/)
-- [Ruby](https://docs.microsoft.com/graph/tutorials/ruby/)
-- [React](https://docs.microsoft.com/graph/tutorials/react/)
-- [UWP](https://docs.microsoft.com/graph/tutorials/uwp/)
+- 
+  [Angular](https://docs.microsoft.com/graph/tutorials/angular/)
+- 
+  [ASP.NET](https://docs.microsoft.com/graph/tutorials/aspnet/)
+- 
+  [Microsoft Flow](https://docs.microsoft.com/graph/tutorials/flow/)
+- 
+  [Node.js](https://docs.microsoft.com/graph/tutorials/node/)
+- 
+  [PHP](https://docs.microsoft.com/graph/tutorials/php/)
+- 
+  [Python](https://docs.microsoft.com/graph/tutorials/python/)
+- 
+  [Ruby](https://docs.microsoft.com/graph/tutorials/ruby/)
+- 
+  [React](https://docs.microsoft.com/graph/tutorials/react/)
+- 
+  [UWP](https://docs.microsoft.com/graph/tutorials/uwp/)
 
 Wird Ihre bevorzugte Sprache oder Plattform nicht angezeigt? Fordern Sie auf [UserVoice](https://officespdev.uservoice.com/forums/224641-feature-requests-and-feedback/category/101632-microsoft-graph-o365-rest-apis) ein Lernprogramm dafür an.
 
