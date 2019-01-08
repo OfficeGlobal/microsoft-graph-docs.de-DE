@@ -1,12 +1,12 @@
 ---
 title: Liste privilegedApproval
 description: Abrufen einer Liste von Privilegedapproval-Objekten.
-ms.openlocfilehash: 69e558a734f86dd72b35e61d9f8ceab52b9f981e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 35b3e2cf6b4034731c8ddf9d1af41e129acbfe3f
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064585"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748171"
 ---
 # <a name="list-privilegedapproval"></a>Liste privilegedApproval
 
@@ -21,7 +21,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.AccessAsUser.All    |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | PrivilegedAccess.ReadWrite.AzureAD Directory.AccessAsUser.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
 |Anwendung | Nicht unterstützt |
 

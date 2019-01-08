@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Synchronisieren der Inhalte eines Laufwerks
-ms.openlocfilehash: d1fa3cb1e28a22f8cd8b016b9f6a93ff9ec41583
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 0c884c69a7c162fb5009dfda80e8def4ee201033
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018469"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748549"
 ---
 # <a name="track-changes-for-a-drive"></a>Laufwerksänderungen nachverfolgen
 
@@ -46,7 +46,7 @@ GET /users/{userId}/drive/root/delta
 
 ## <a name="function-parameters"></a>Funktionsparameter
 
-| Name   | Wert  | Beschreibung                                                                                                                          |
+| Parameter   | Typ  | Beschreibung                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
 | token  | string | Optional. Wenn Sie nicht angegeben ist, zählt aktuellen Status der Hierarchie. Wenn `latest`, gibt eine leere Antwort mit dem neuesten Delta-Token. Wenn eine frühere Delta-Token gibt neuen Status seit Token zurück.
 
@@ -205,10 +205,9 @@ Content-type: application/json
 * In OneDrive for Business und SharePoint wird `delta` nur für den Ordner `root` unterstützt, für andere Ordner auf einem Laufwerk jedoch nicht.
 
 * Delta gibt keine der folgenden „DriveItem“-Eigenschaften zurück:
-
-* **cTag**
-* **lastModifiedBy**
-* **size**
+  * **cTag**
+  * **lastModifiedBy**
+  * **size**
 
 ## <a name="error-responses"></a>Fehlerantworten
 

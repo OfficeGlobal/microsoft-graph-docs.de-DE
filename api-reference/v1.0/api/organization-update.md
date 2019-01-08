@@ -1,16 +1,17 @@
 ---
 title: Organisation aktualisieren
 description: Mit dieser API können Sie die Eigenschaften der aktuell authentifizierten Organisation aktualisieren.
-ms.openlocfilehash: ac07f3ded31f8d6c7169d24208ed7e8cf967e07a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b9601b9b6fa7e961a807c009e6fd4acb00fd8b47
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019193"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748528"
 ---
 # <a name="update-organization"></a>Organisation aktualisieren
 
-Mit dieser API können Sie die Eigenschaften der aktuell authentifizierten Organisation aktualisieren.
+Mit dieser API können Sie die Eigenschaften der aktuell authentifizierten Organisation aktualisieren. In diesem Fall `organization` versteht man eine Auflistung von genau einen Datensatz, und so dessen **ID** in der Anforderung muss angegeben werden.  Die **ID** wird auch als die **TenantId** der Organisation.
+
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -27,7 +28,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /organization
+PATCH /organization/{id}
 
 ```
 
@@ -38,6 +39,7 @@ PATCH /organization
 | Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.
 
 | Eigenschaft     | Typ   |Beschreibung|
@@ -62,7 +64,7 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zu
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/organization
+PATCH https://graph.microsoft.com/v1.0/organization/{id}
 Content-type: application/json
 Content-length: 411
 

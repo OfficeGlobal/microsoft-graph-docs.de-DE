@@ -1,12 +1,12 @@
 ---
 title: Aktualisieren der Outlook-Kategorie
 description: 'Aktualisieren Sie die schreibbare Eigenschaft, **color**, des angegebenen outlookCategory-Objekts. Die **DisplayName** -Eigenschaft kann nicht geändert werden. '
-ms.openlocfilehash: 1b664ef4414a798fe3f8ee2cd517a75f96ff3dc6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: c69dc260127938bd4afa33e7406ac38862ef837d
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019849"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748248"
 ---
 # <a name="update-outlook-category"></a>Aktualisieren der Outlook-Kategorie
 
@@ -28,8 +28,6 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 PATCH /me/outlook/masterCategories/{id}
 PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```
-## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|

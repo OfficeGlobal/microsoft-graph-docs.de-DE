@@ -1,22 +1,20 @@
 ---
 title: organization-Ressourcentyp
 description: 'Stellt eine Azure Active Directory-Mandanten. '
-ms.openlocfilehash: 053656eb042ca04f2d487d47ee62624875fa4e17
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+ms.openlocfilehash: 1d13d10c79d2dfc39ec187265533cb6ea17a683b
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191144"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748570"
 ---
 # <a name="organization-resource-type"></a>organization-Ressourcentyp
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-Stellt eine Azure Active Directory-Mandanten. 
+Stellt dar, bei dem der Benutzer oder die Anwendung in angemeldet ist Azure Active Directory-Mandanten. Nur die Lese- und Aktualisierungsvorgänge werden für diese Ressource unterstützt. Erstellen und Delete werden nicht unterstützt. Erbt von [directoryObject](directoryobject.md).
 
 Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe von [Erweiterungen](/graph/extensibility-overview) eigene Daten hinzuzufügen.
-
-Nur die Lese- und Aktualisierungsvorgänge werden auf Mandanten unterstützt. Erstellen und Delete werden nicht unterstützt. Erbt von [directoryObject](directoryobject.md).
 
 ## <a name="methods"></a>Methoden
 
@@ -34,16 +32,17 @@ Nur die Lese- und Aktualisierungsvorgänge werden auf Mandanten unterstützt. Er
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |assignedPlans|[assignedPlan](assignedplan.md)-Sammlung|Die Sammlung von Serviceplänen, die dem Mandanten zugeordnet sind. Lässt keine Nullwerte zu.            |
+| businessPhones                      | Zeichenfolgenauflistung                                         | Telefonnummer für die Organisation. **Hinweis:** Obwohl dies eine String-Sammlung ist, kann nur eine Nummer für diese Eigenschaft festgelegt werden.                                                                                            |
 |Ort|Zeichenfolge| Der Name der Stadt aus der Unternehmensadresse |
 |companyLastDirSyncTime|DateTimeOffset|Zeit und Datum der letzten Synchronisierung des Mandanten mit dem lokalen Verzeichnis. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |Land|Zeichenfolge| Der Name des Landes/der Region aus der Unternehmensadresse |
 |countryLetterCode|Zeichenfolge| Landes-/Regionsabkürzung für das Unternehmen |
 |createdDateTime|DateTimeOffset| Zeitstempel der Erstellung der Organisation. Der Wert kann nicht geändert werden und wird automatisch aufgefüllt, wenn die Organisation erstellt wird. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. |
-|deletionTimestamp|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
+| deletedDateTime                    | DateTimeOffset                                                    | Datum und Uhrzeit des darstellt, wenn es sich bei der Azure AD-Mandanten mit ISO 8601-Format gelöscht wurde, und ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.                                                                                     |
 |dirSyncEnabled|Boolean|**true**, wenn das Objekt aus einem lokalen Verzeichnis synchronisiert wird; **false**, wenn das Objekt ursprünglich aus einem lokalen Verzeichnis synchronisiert wurde, aber nicht mehr synchronisiert wird; **NULL**, wenn dieses Objekt nie aus einem lokalen Verzeichnis synchronisiert wurde (Standard).|
 |displayName|String|Der Anzeigename für den Mandanten.|
 |id|String|Der eindeutige Bezeichner für den Mandanten. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
-|isMultipleDataLocationsForServicesEnabled|Boolescher Wert|**true,** Wenn Organisation Multi-Geo aktiviert ist; **"false"** Wenn Organisation nicht aktiviert Multi-Geo. **null** (Standard). Schreibgeschützt. Weitere Informationen finden Sie unter [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
+|isMultipleDataLocationsForServicesEnabled|Boolesch|**true,** Wenn Organisation Multi-Geo aktiviert ist; **"false"** Wenn Organisation nicht aktiviert Multi-Geo. **null** (Standard). Schreibgeschützt. Weitere Informationen finden Sie unter [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |marketingNotificationEmails|Zeichenfolgenauflistung| Lässt keine Nullwerte zu.            |
 |objectType|String|Eine Zeichenfolge, die den Objekttyp identifiziert. Für Mandanten ist der Wert immer „Unternehmen“. |
 |postalCode|Zeichenfolge| Die Postleitzahl aus der Unternehmensadresse |
@@ -56,11 +55,13 @@ Nur die Lese- und Aktualisierungsvorgänge werden auf Mandanten unterstützt. Er
 |state|Zeichenfolge| Der das Bundesland aus der Unternehmensadresse |
 |street|Zeichenfolge| Der Straßenname aus der Unternehmensadresse |
 |technicalNotificationMails|Zeichenfolgenauflistung| Lässt keine Nullwerte zu. |
-|telephoneNumber|Zeichenfolge| Die Telefonnummer des Unternehmens |
 |verifiedDomains|[VerifiedDomain-Sammlung](verifieddomain.md)|Die Sammlung von Domänen, die diesem Mandanten zugeordnet sind. Lässt keine Nullwerte zu.            |
 
 ## <a name="relationships"></a>Beziehungen
-| Erweiterungen | [Erweiterung](extension.md) -Auflistung | Die Auflistung der open-Erweiterungen für die Ressource für die Organisation definiert. NULL-Werte zulässt. |
+
+| Beziehung     | Typ   |Beschreibung|
+|:---------------|:--------|:----------|
+|Erweiterungen|[extension](extension.md)-Sammlung|Die Auflistung der open-Erweiterungen für die Ressource für die Organisation definiert. Lässt Nullwerte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -82,10 +83,13 @@ Es folgt eine JSON-Darstellung der Ressource.
   "city": "string",
   "country": "string",
   "countryLetterCode": "string",
+  "createdDateTime": "String (timestamp)",
+  "deletedDateTime": "String (timestamp)",
   "displayName": "string",
   "id": "string (identifier)",
   "isMultipleDataLocationsForServicesEnabled": "boolean",
   "marketingNotificationEmails": ["string"],
+  "objectType": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
@@ -99,7 +103,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "technicalNotificationMails": ["string"],
   "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
 }
-
 ```
 
 ## <a name="see-also"></a>Weitere Artikel

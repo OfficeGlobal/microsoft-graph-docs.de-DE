@@ -2,12 +2,12 @@
 title: Nachrichtenressourcentyp
 description: Eine Nachricht in einem Postfachordner.
 author: angelgolfer-ms
-ms.openlocfilehash: e0c1b539baa16c60904c5c9a726bac6cb5c7d557
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: d6bef72e1ac7634bee7f78a645828f0f73f9d09e
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353669"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748479"
 ---
 # <a name="message-resource-type"></a>Nachrichtenressourcentyp
 
@@ -128,8 +128,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 |Anlagen|[Anlagensammlung](attachment.md)|Die [fileAttachment](fileattachment.md)- und [itemAttachment](itemattachment.md)-Anlagen der Nachricht.|
 |Erweiterungen|[Erweiterungssammlung](extension.md)| Die Auflistung der open-Erweiterungen für die Nachricht definiert ist. Lässt Nullwerte zu.|
 |Erwähnungen|[Erwähnungssammlung](mention.md) | Eine Sammlung von Erwähnungen in der Nachricht, sortiert nach **createdDateTime** vom neuesten zum ältesten Element. Standardmäßig gibt `GET` /message diese Eigenschaft nicht zurück, es sei denn, Sie wenden `$expand` auf die Eigenschaft an.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten mehrwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt NULL-Werte zu.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten einwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt Nullwerte zu.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Auflistung der Mehrfachwert erweiterte Eigenschaften für die Nachricht definiert ist. Lässt Nullwerte zu.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Auflistung der einwertig erweiterte Eigenschaften für die Nachricht definiert ist. Lässt Nullwerte zu.|
 
 ## <a name="methods"></a>Methoden
 

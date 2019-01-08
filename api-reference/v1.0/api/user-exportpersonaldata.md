@@ -1,12 +1,12 @@
 ---
 title: 'Benutzer: ExportPersonalData'
 description: Fordert die Daten Richtlinie Vorgang, versucht ein Unternehmensadministrator, eine Organisationseinheit Benutzerdaten exportieren.
-ms.openlocfilehash: 7d41d6d855fee992a4ff3a542e6c11f692adcfe3
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+ms.openlocfilehash: 9308e955e83ccad5779d8261537306a5220d8086
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27284133"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748213"
 ---
 # <a name="user-exportpersonaldata"></a>Benutzer: ExportPersonalData
 
@@ -42,7 +42,12 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 |storageLocation|String|Dies ist die URL einer gemeinsamen Zugriff Signatur (SAS) ein Konto Azure-Speicher an, in dem Daten exportiert werden sollen.|
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202 Accepted` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
+Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202 Accepted` zurückgegeben. Es gibt keine Suchzeichenfolge im Antworttext zurück. Die Antwort enthält die folgenden Antwortheader.
+
+| Name       | Beschreibung|
+|:---------------|:----------|
+| Location  | URL, die den Status der Anforderung überprüfen. |
+| Wiederholen Sie den Vorgang nach  | Der Zeitraum in Sekunden. Anforderung Maker warten soll lange nach der Übermittlung einer Anforderung an den Status überprüfen. |
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
@@ -59,8 +64,14 @@ Content-length: 48
   "storageLocation": "storageLocation-value"
 }
 ```
-
 ##### <a name="response"></a>Antwort
+
+```
+{
+  Location: https://graph.microsoft.com/v1.0/dataPolicyOperations/d007e3da-cd9b-4b02-8d66-422403c53e3f
+  Retry-After: 60
+}
+```
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -69,6 +80,7 @@ Content-length: 48
 ```http
 HTTP/1.1 202 Accepted
 ```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

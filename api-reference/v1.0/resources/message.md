@@ -2,12 +2,12 @@
 title: Nachrichtenressourcentyp
 description: Dieser Ressourcentyp stellt eine Nachricht in einem mailFolder-Objekt dar.
 author: angelgolfer-ms
-ms.openlocfilehash: a77a50835dcba41555fa646c94c66d05b15e3e48
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 57183290f872f56684e8b629b83bb31151bff134
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310290"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748577"
 ---
 # <a name="message-resource-type"></a>Nachrichtenressourcentyp
 
@@ -92,9 +92,9 @@ Diese Ressource unterstützt Folgendes:
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |attachments|[attachment](attachment.md)-Sammlung|Die [fileAttachment](fileattachment.md)- und [itemAttachment](itemattachment.md)-Anlagen der Nachricht.|
-|Erweiterungen|[extension](extension.md)-Sammlung|Die Sammlung der für die Nachricht definierten offenen Erweiterungen. Schreibgeschützt. Lässt NULL-Werte zu.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten mehrwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt NULL-Werte zu.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten einwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt Nullwerte zu.|
+|Erweiterungen|[extension](extension.md)-Sammlung|Die Auflistung der open-Erweiterungen für die Nachricht definiert ist. Lässt Nullwerte zu.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Auflistung der Mehrfachwert erweiterte Eigenschaften für die Nachricht definiert ist. Lässt Nullwerte zu.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Auflistung der einwertig erweiterte Eigenschaften für die Nachricht definiert ist. Lässt Nullwerte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

@@ -1,16 +1,16 @@
 ---
 title: 'Benutzer: ExportPersonalData'
 description: Fordert die Daten Richtlinie Vorgang, versucht ein Unternehmensadministrator, eine Organisationseinheit Benutzerdaten exportieren.
-ms.openlocfilehash: 27a299a4cfa6ccc3016a1f706b452840aa5dc396
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: ffde9af132fbb15706fe54af8a6b3aaeba07d12b
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329125"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748269"
 ---
 # <a name="user-exportpersonaldata"></a>Benutzer: ExportPersonalData
 
-Fordert die Daten Richtlinie Vorgang, versucht ein Unternehmensadministrator, eine Organisationseinheit Benutzerdaten exportieren.
+Fordert die Daten Richtlinie Vorgang, mit einem Unternehmensadministrator vorgenommenen Änderungen für eine Organisationseinheit Benutzerdaten exportieren.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -21,7 +21,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Delegiert (persönliches Microsoft-Konto) |  Nicht zutreffend  |
 |Anwendung | User.Export.All und User.Read.All |
 
->Hinweis: Export kann nur ein Unternehmensadministrator erfolgen bei Verwendung die delegierte Berechtigung.
+>**Hinweis:** Export kann nur von einem Unternehmensadministrator ausgeführt werden, wenn die delegierte Berechtigung verwendet wird.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -30,19 +30,25 @@ POST /users/<id>/exportPersonalData
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Name       | Beschreibung|
+| Name       | Beschreibung |
 |:---------------|:----------|
 | Authorization  | Bearer {token}|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
-| Parameter    | Typ   |Beschreibung|
+| Parameter    | Typ   |Beschreibung |
 |:---------------|:--------|:----------|
 |storageLocation|String|Dies ist die URL einer gemeinsamen Zugriff Signatur (SAS) ein Konto Azure-Speicher an, in dem Daten exportiert werden sollen.|
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200, OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
+Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202 Accepted` zurückgegeben. Es gibt keine Suchzeichenfolge im Antworttext zurück. Die Antwort enthält die folgenden Kopfzeilen.
+
+| Name       | Beschreibung |
+|:---------------|:----------|
+| Location  | URL, die den Status der Anforderung überprüfen. |
+| Wiederholen Sie den Vorgang nach  | Der Zeitraum in Sekunden. Anforderung Maker warten soll lange nach der Übermittlung einer Anforderung an den Status überprüfen. |
+
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
@@ -59,15 +65,22 @@ Content-length: 48
   "storageLocation": "storageLocation-value"
 }
 ```
-
 ##### <a name="response"></a>Antwort
+
+```
+{
+  Location: https://graph.microsoft.com/beta/dataPolicyOperations/d007e3da-cd9b-4b02-8d66-422403c53e3f
+  Retry-After: 60
+}
+```
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.none"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

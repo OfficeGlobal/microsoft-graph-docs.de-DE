@@ -1,12 +1,12 @@
 ---
 title: Organisation abrufen
 description: Mit dieser API können Sie die Eigenschaften und Beziehungen der jeweils aktuell authentifizierten Organisation abrufen.
-ms.openlocfilehash: 899021e5d38bca660b599222adfdb0bb5586eb6f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f3d2ca5c6881a06f397101a0050fe29f8a646614
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062062"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748283"
 ---
 # <a name="get-organization"></a>Organisation abrufen
 
@@ -17,6 +17,7 @@ Mit dieser API können Sie die Eigenschaften und Beziehungen der jeweils aktuell
 Da die Ressource **Organisation** [Extensions](/graph/extensibility-overview)unterstützt, können Sie auch die `GET` Vorgang zum Abrufen von benutzerdefinierten Eigenschaften und Erweiterungsdaten in einer Instanz der **Organisation** .
 
 ## <a name="permissions"></a>Berechtigungen
+
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten) |
@@ -28,62 +29,80 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 > Hinweis: Anwendungen, denen die User.Read-Berechtigung gewährt wurde, können nur die *id*-, *displayName*- und *verifiedDomains*-Eigenschaften der Organisation lesen.  Alle anderen Eigenschaften geben `null`-Werte zurück. Verwenden Sie zum Lesen aller Eigenschaften Directory.Read.All.
 
 ## <a name="http-request"></a>HTTP-Anforderung
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /organization
-
 ```
+
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
+
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
+
 ## <a name="request-headers"></a>Anforderungsheader
+
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [organization](../resources/organization.md)-Objekt im Antworttext zurückgegeben.
+
 ## <a name="example"></a>Beispiel
+
 ##### <a name="request"></a>Anforderung
+
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
   "name": "get_organization"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/organization
 ```
+
 ##### <a name="response"></a>Antwort
+
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.organization"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 411
 
 {
-  "assignedPlans": [
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization",
+  "value": [
     {
-      "assignedDateTime": "2016-10-19T10:37:00Z",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
+      "assignedPlans": [
+        {
+          "assignedDateTime": "datetime-value",
+          "capabilityStatus": "capabilityStatus-value",
+          "service": "service-value",
+          "servicePlanId": "servicePlanId-value"
+        }
+      ],
+      "businessPhones": [
+        "businessPhones-value"
+      ],
+      "city": "city-value",
+      "country": "country-value",
+      "countryLetterCode": "countryLetterCode-value",
+      "displayName": "displayName-value"
     }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "country": "country-value",
-  "countryLetterCode": "countryLetterCode-value",
-  "displayName": "displayName-value"
+  ]
 }
 ```
 

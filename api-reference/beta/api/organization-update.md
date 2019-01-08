@@ -1,19 +1,21 @@
 ---
 title: Organisation aktualisieren
 description: Mit dieser API können Sie die Eigenschaften der aktuell authentifizierten Organisation aktualisieren.
-ms.openlocfilehash: 62e03d7bee58f14acc5d5ace12d55f95d1d07a2d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: a7b9521ccd39cb7cb64236c7d563a8a5c08d64a3
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060009"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748563"
 ---
 # <a name="update-organization"></a>Organisation aktualisieren
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-Mit dieser API können Sie die Eigenschaften der aktuell authentifizierten Organisation aktualisieren.
+Mit dieser API können Sie die Eigenschaften der aktuell authentifizierten Organisation aktualisieren. In diesem Fall `organization` versteht man eine Auflistung von genau einen Datensatz, und so dessen **ID** in der Anforderung muss angegeben werden.  Die **ID** wird auch als die **TenantId** der Organisation.
+
 ## <a name="permissions"></a>Berechtigungen
+
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten) |
@@ -23,17 +25,21 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Anwendung | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /organization
 
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /organization/{id}
 ```
+
 ## <a name="request-headers"></a>Anforderungsheader
+
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.
 
 | Eigenschaft     | Typ   |Beschreibung|
@@ -57,8 +63,9 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "blockType": "request",
   "name": "update_organization"
 }-->
+
 ```http
-PATCH https://graph.microsoft.com/beta/organization
+PATCH https://graph.microsoft.com/beta/organization/{id}
 Content-type: application/json
 Content-length: 411
 
@@ -74,21 +81,25 @@ Content-length: 411
   "technicalNotificationMails" : ["tech@contoso.com"]
 }
 ```
+
 ##### <a name="response"></a>Antwort
+
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeunit"
+  "@odata.type": "microsoft.graph.organization"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Preview)](/graph/extensibility-open-users)
+
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->

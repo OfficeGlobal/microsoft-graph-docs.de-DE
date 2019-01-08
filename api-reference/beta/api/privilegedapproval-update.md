@@ -1,12 +1,12 @@
 ---
 title: Privilegedapproval aktualisieren
 description: Aktualisieren Sie die Eigenschaften des Privilegedapproval-Objekts.
-ms.openlocfilehash: 566351ba89d0173718320640e6fa45b0650aaf0e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b50f5fb5e50bc47c94b759ea1253c9c9117bfe5d
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059329"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748353"
 ---
 # <a name="update-privilegedapproval"></a>Privilegedapproval aktualisieren
 
@@ -19,7 +19,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.AccessAsUser.All    |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | PrivilegedAccess.ReadWrite.AzureAD Directory.AccessAsUser.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
 |Anwendung | Nicht unterstützt |
 
@@ -50,7 +50,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und aktualisierte [PrivilegedApproval](../resources/privilegedapproval.md) -Objekts in der Antworttext.
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen `204 No Content` Antwortcode
 
 Beachten Sie, dass der Mandant muss auf den PIM registriert werden. Andernfalls wird der Statuscode HTTP 403 Verboten zurückgegeben werden soll.
 
@@ -62,16 +62,13 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "update_privilegedapproval"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/privilegedApproval/<id>
+PATCH https://graph.microsoft.com/beta/privilegedApproval{request-id}
 Content-type: application/json
 Content-length: 180
 
 {
-  "userId": "userId-value",
-  "roleId": "roleId-value",
-  "approvalType": "approvalType-value",
   "approvalState": "approvalState-value",
-  "approvalDuration": "datetime-value"
+  "approverReason": "approverReason-value"
 }
 ```
 ##### <a name="response"></a>Antwort
@@ -82,18 +79,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
   "@odata.type": "microsoft.graph.privilegedApproval"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 200
-
-{
-  "id": "id-value",
-  "userId": "userId-value",
-  "roleId": "roleId-value",
-  "approvalType": "approvalType-value",
-  "approvalState": "approvalState-value",
-  "approvalDuration": "datetime-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

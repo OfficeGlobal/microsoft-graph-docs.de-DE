@@ -2,18 +2,18 @@
 title: 'user: reminderView'
 description: 'Diese API gibt eine Liste von Kalendererinnerungen zurück, die im Zeitraum zwischen dem angegebenen Startdatum und dem angegebenen Enddatum liegen. '
 author: dkershaw10
-ms.openlocfilehash: 875e71e03cf3d43e3f7fadabfea65cecd1e3761c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 9f71617d1775579e913df814a2e9aecd61ba7402
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352549"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748241"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-Diese API gibt eine Liste von Kalendererinnerungen zurück, die im Zeitraum zwischen dem angegebenen Startdatum und dem angegebenen Enddatum liegen. 
+Eine Liste der Erinnerungen Ereignis in einem Benutzerkalender innerhalb der angegebenen Start- und Endzeiten zurückzugeben. 
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -39,7 +39,7 @@ Stellen Sie in der URL der Anforderung die folgenden Funktionsparameter mit Wert
 |endDateTime|String|Das Enddatum und die Uhrzeit des Ereignisses, für das die Erinnerung eingerichtet ist. Der Wert wird im ISO 8601-Format dargestellt, z. B. „2015-11-08T20:00:00.0000000“.|
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert|
+| Kopfzeile       | Wert|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type   | application/json |

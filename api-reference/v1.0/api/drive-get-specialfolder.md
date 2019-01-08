@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Spezielle Ordner abgerufen
-ms.openlocfilehash: 31d8abe09e89f4a040df473682217f2f4fc0b596
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 758d46b8237ecd2ce94d4e3a270a188300817fcf
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018255"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748255"
 ---
 # <a name="get-a-special-folder-by-name"></a>Speziellen Ordner nach Name abrufen
 
@@ -55,7 +55,7 @@ Im Folgenden sind Namen für spezielle Ordner aufgelistet, die in OneDrive und O
 
 Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters) von `$expand` und `$select` zur Anpassung der Antwort.
 
-## <a name="http-response"></a>HTTP-Antwort
+## <a name="response"></a>Antwort
 
 Die Methode gibt den Antwortcode `200 OK` und das aktualisierte [driveItem](../resources/driveitem.md)-Objekt im Antworttext zurück.
 
@@ -89,7 +89,7 @@ Um die untergeordneten Elemente eines speziellen Ordners anzufordern, können Si
 GET /me/drive/special/{special-folder-name}/children
 ```
 
-### <a name="http-response"></a>HTTP-Antwort
+### <a name="response"></a>Antwort
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true} -->
 

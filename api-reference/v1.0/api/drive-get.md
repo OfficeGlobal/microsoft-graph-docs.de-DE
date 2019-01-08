@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Laufwerk abrufen
-ms.openlocfilehash: 6ff71104c18a5a9354d18689c62a96be72b7fe12
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 67d5dd612073db96ebcc5bf9c19aa004a034243c
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017295"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748423"
 ---
 # <a name="get-drive"></a>Laufwerk abrufen
 
@@ -116,7 +116,7 @@ GET /drives/{drive-id}
 
 Diese Methode unterstützt die [$select-Abfrageparameter] [ odata-query-parameters] zum Modellieren der Antwort.
 
-## <a name="http-response"></a>HTTP-Antwort
+## <a name="response"></a>Antwort
 
 Diese Methoden gebeneine [Drive-Ressource][drive-resource] für das entsprechende Laufwerk im Antworttext zurück.
 

@@ -2,24 +2,30 @@
 title: Ressourcentyp „event“
 description: Ein Ereignis in einem Kalender
 author: angelgolfer-ms
-ms.openlocfilehash: 45b5131b14e9bf50c8dc0bc3db869b706a3068ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: e60b070ab6b02ca0373d4aebcef4202f42a4f1a5
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340649"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748486"
 ---
 # <a name="event-resource-type"></a>Ressourcentyp „event“
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-Ein Ereignis in einem Kalender
+Ein Ereignis in einem Kalender des [Benutzers](user.md) oder Standardkalender einer Office 365- [Gruppe](group.md).
 
 Diese Ressource unterstützt Folgendes:
 
 - Hinzufügen von Ihren eigenen Daten zu benutzerdefinierten Eigenschaften als [Extensions](/graph/extensibility-overview).
 - Abonnieren von [Benachrichtigungen zu ändern](/graph/webhooks).
 - Verwenden einer [Delta-Abfrage](/graph/delta-query-overview) zum Nachverfolgen von inkrementellen Hinzufügungen, Löschungen und Aktualisierungen durch Bereitstellen der [delta](../api/event-delta.md)-Funktion.
+
+> **Hinweis:** Es gibt einige kleinere Unterschiede bei der Verarbeitung von Benutzerkalender, Gruppenkalender und deren Ereignisse interagieren können:
+
+ - Sie können nur Benutzerkalender in einer [CalendarGroup](calendargroup.md)organisieren.
+ - Outlook akzeptiert automatisch alle Besprechungsanfragen für Gruppen. Sie können für Kalender nur _Benutzer_ [annehmen](../api/event-accept.md), [mit Vorbehalt annehmen](../api/event-tentativelyaccept.md)oder [Ablehnen](../api/event-decline.md) von Besprechungsanfragen.
+  - Outlook unterstützt keine Erinnerungen für Ereignisse gruppieren. Sie können für _Benutzer_ Kalender nur [erneut erinnern](../api/event-snoozereminder.md) oder eine [Erinnerung](reminder.md) [zu schließen](../api/event-dismissreminder.md) .
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -141,14 +147,14 @@ Es folgt eine JSON-Darstellung der Ressource.
 |[Get event](../api/event-get.md) | [event](event.md) |Liest die Eigenschaften und Beziehungen eines Ereignisobjekts.|
 |[Update](../api/event-update.md) | [event](event.md)   |Aktualisiert das Ereignisobjekt. |
 |[Delete](../api/event-delete.md) | Keine |Löscht das Ereignisobjekt. |
-|[cancel](../api/event-cancel.md) | Keines | Absage aus dem Organizer an alle Teilnehmer senden und Abbrechen an der angegebenen Besprechung. |
-|[accept](../api/event-accept.md)|Keiner|Nimmt das angegebene Ereignis an.|
-|[tentativelyAccept](../api/event-tentativelyaccept.md)|Keiner|Nimmt das angegebene Ereignis mit Vorbehalt an.|
-|[decline](../api/event-decline.md)|Keiner|Lehnt die Einladung zu dem angegebenen Ereignis ab.|
+|[cancel](../api/event-cancel.md) | Keine | Absage aus dem Organizer an alle Teilnehmer senden und Abbrechen an der angegebenen Besprechung. |
+|[accept](../api/event-accept.md)|Keiner|Akzeptieren Sie das angegebene Ereignis in einem Benutzerkalender an.|
+|[tentativelyAccept](../api/event-tentativelyaccept.md)|Keiner|Mit Vorbehalt annehmen Sie das angegebene Ereignis in einem Benutzerkalender ein.|
+|[decline](../api/event-decline.md)|Keiner|Einladung auf das angegebene Ereignis in einem Benutzerkalender abzulehnen.|
 |[forward](../api/event-forward.md)|Keine|Ermöglicht den Organisator oder eines Ereignisses Besprechung Teilnehmer Weiterleiten einer Besprechungsanfrage an einem neuen Empfänger.|
 |[delta](../api/event-delta.md)|[event](event.md)-Sammlung|Dient zum Abrufen einer Reihe von Ereignissen, die in einer **calendarView** (ein Bereich von Ereignissen) im primären Kalender des Benutzers hinzugefügt, gelöscht oder aktualisiert wurden.|
-|[dismissReminder](../api/event-dismissreminder.md)|Keiner|Schließt die Erinnerung an das angegebene Ereignis.|
-|[snoozeReminder](../api/event-snoozereminder.md)|Keiner|Legt fest, dass erneut an das Ereignis erinnert werden soll.|
+|[dismissReminder](../api/event-dismissreminder.md)|Keiner|Schließen Sie die Erinnerung für das angegebene Ereignis in einem Benutzerkalender an.|
+|[snoozeReminder](../api/event-snoozereminder.md)|Keiner|Verschieben Sie eine Erinnerung für das angegebene Ereignis in einem Benutzerkalender bis zu einem neuen Zeitpunkt.|
 |[List instances](../api/event-list-instances.md) |[Event](event.md) collection| Ruft eine Ereignisobjektsammlung ab.|
 |**Anlagen**| | |
 |[Anlagen auflisten](../api/event-list-attachments.md) |[Anlagensammlung](attachment.md)| Ruft alle Anlagen für ein Ereignis ab.|

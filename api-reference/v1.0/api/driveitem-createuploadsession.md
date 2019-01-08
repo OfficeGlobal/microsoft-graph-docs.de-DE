@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Wiederaufnehmbarer Dateien-Upload
-ms.openlocfilehash: 26fd4c612b6ce26d1a674d186f8da71deedd1244
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: aa62d92700ebe483fd23c7b3d7c2037c5b9950c0
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017097"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748584"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Hochladen großer Dateien mit einer Uploadsitzung
 
@@ -329,7 +329,7 @@ If-Match: {etag or ctag}
 
 **Hinweis:** Sie können den `@microsoft.graph.conflictBehavior`- und `if-match`-Header wie erwartet in diesem Aufruf verwenden.
 
-### <a name="http-response"></a>HTTP-Antwort
+### <a name="response"></a>Antwort
 
 Wenn mithilfe der neuen Metadaten ein Commit für die Datei durchgeführt werden kann, wird die Fehlerantwort `HTTP 201 Created` oder `HTTP 200 OK` mit den Elementmetadaten für die hochgeladene Datei zurückgegeben.
 

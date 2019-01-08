@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SharePoint-Website nach Pfad abrufen
-ms.openlocfilehash: 4e037bb066a113962ff35662e781b388c81ca143
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 7d63fd3651ab870318af46a298d6b945f331eda8
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061337"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748276"
 ---
 # <a name="get-a-site-resource-by-path"></a>Site-Ressource nach Pfad abrufen
 
@@ -48,7 +48,7 @@ So greifen Sie mit einem relativen Pfad auf die SharePoint-Stammwebsite zu:
 GET /sites/{hostname}:/{relative-path}
 ```
 
-## <a name="http-response"></a>HTTP-Antwort
+## <a name="response"></a>Antwort
 
 Diese Methode gibt eine [site][]-Ressource für die Website zurück, auf die vom eindeutigen Bezeichner verwiesen wird.
 

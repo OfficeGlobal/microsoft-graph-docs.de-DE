@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Nach Dateien suchen
-ms.openlocfilehash: 73ddc65e45be2c0abafdcca24a63c6cdbb4bb6ba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 591aa271a9e5a1d9ae69af2e5d8f6ea9ba7fe74b
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018925"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748220"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Suchen nach DriveItems innerhalb eines Laufwerks
 
@@ -43,9 +43,9 @@ Diese Methode unterstützt die `$expand`, `$select`, `$skipToken`, `$top` und `$
 
 ## <a name="function-parameters"></a>Funktionsparameter
 
-| Name | Wert  | Beschreibung                                                                                                                          |
+| Parameter | Typ  | Beschreibung                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| `q`  | string | Der zum Durchsuchen der Elemente verwendete Abfragetext. Werte werden möglicherweise mit mehreren Feldern wie Dateiname, Metadaten und Dateiinhalt abgeglichen. |
+| q  | string | Der zum Durchsuchen der Elemente verwendete Abfragetext. Werte werden möglicherweise mit mehreren Feldern wie Dateiname, Metadaten und Dateiinhalt abgeglichen. |
 
 ## <a name="example"></a>Beispiel
 
