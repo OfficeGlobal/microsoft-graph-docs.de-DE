@@ -3,31 +3,31 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Nach Dateien suchen
-ms.openlocfilehash: d829df35d9cd766c2273d694148671802ca58bed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 8dc02d1d1469865fc952fb6394dba17e0386f510
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059031"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748416"
 ---
-# <a name="search-for-a-driveitems-within-a-drive"></a><span data-ttu-id="f5705-102">Suchen nach DriveItems innerhalb eines Laufwerks</span><span class="sxs-lookup"><span data-stu-id="f5705-102">Search for a DriveItems within a drive</span></span>
+# <a name="search-for-a-driveitems-within-a-drive"></a><span data-ttu-id="5c80c-102">Suchen nach DriveItems innerhalb eines Laufwerks</span><span class="sxs-lookup"><span data-stu-id="5c80c-102">Search for a DriveItems within a drive</span></span>
 
-> <span data-ttu-id="f5705-103">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="f5705-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f5705-104">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="f5705-104">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="5c80c-103">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="5c80c-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="5c80c-104">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="5c80c-104">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="f5705-105">Durchsuchen Sie die Hierarchie der Elemente nach Elementen, die mit einer Abfrage übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="f5705-105">Search the hierarchy of items for items matching a query.</span></span>
-<span data-ttu-id="f5705-106">Sie können innerhalb einer Ordnerhierarchie, eines gesamten Laufwerks oder innerhalb von für den aktuellen Benutzer freigegebenen Dateien suchen.</span><span class="sxs-lookup"><span data-stu-id="f5705-106">You can search within a folder hierarchy, a whole drive, or files shared with the current user.</span></span>
+<span data-ttu-id="5c80c-105">Durchsuchen Sie die Hierarchie der Elemente nach Elementen, die mit einer Abfrage übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="5c80c-105">Search the hierarchy of items for items matching a query.</span></span>
+<span data-ttu-id="5c80c-106">Sie können innerhalb einer Ordnerhierarchie, eines gesamten Laufwerks oder innerhalb von für den aktuellen Benutzer freigegebenen Dateien suchen.</span><span class="sxs-lookup"><span data-stu-id="5c80c-106">You can search within a folder hierarchy, a whole drive, or files shared with the current user.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f5705-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="f5705-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="5c80c-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="5c80c-107">Permissions</span></span>
 
-<span data-ttu-id="f5705-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f5705-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5c80c-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5c80c-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f5705-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="f5705-110">Permission type</span></span>      | <span data-ttu-id="f5705-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="f5705-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5c80c-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="5c80c-110">Permission type</span></span>      | <span data-ttu-id="5c80c-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="5c80c-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f5705-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="f5705-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f5705-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f5705-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="f5705-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="f5705-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f5705-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f5705-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="f5705-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="f5705-116">Application</span></span> | <span data-ttu-id="f5705-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f5705-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="5c80c-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="5c80c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="5c80c-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5c80c-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="5c80c-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="5c80c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5c80c-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5c80c-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="5c80c-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="5c80c-116">Application</span></span> | <span data-ttu-id="5c80c-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5c80c-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f5705-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="f5705-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5c80c-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="5c80c-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,21 +39,21 @@ GET /sites/{site-id}/drive/root/search(q='{search-text}')
 GET /users/{user-id}/drive/root/search(q='{search-text}')
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="f5705-119">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="f5705-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="5c80c-119">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="5c80c-119">Optional query parameters</span></span>
 
-<span data-ttu-id="f5705-120">Diese Methode unterstützt die `$expand`, `$select`, `$skipToken`, `$top` und `$orderby` [OData-Abfrageparameter](/graph/query-parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="f5705-120">This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="5c80c-120">Diese Methode unterstützt die `$expand`, `$select`, `$skipToken`, `$top` und `$orderby` [OData-Abfrageparameter](/graph/query-parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="5c80c-120">This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="function-parameters"></a><span data-ttu-id="f5705-121">Funktionsparameter</span><span class="sxs-lookup"><span data-stu-id="f5705-121">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="5c80c-121">Funktionsparameter</span><span class="sxs-lookup"><span data-stu-id="5c80c-121">Function parameters</span></span>
 
-| <span data-ttu-id="f5705-122">Name</span><span class="sxs-lookup"><span data-stu-id="f5705-122">Name</span></span> | <span data-ttu-id="f5705-123">Wert</span><span class="sxs-lookup"><span data-stu-id="f5705-123">Value</span></span>  | <span data-ttu-id="f5705-124">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f5705-124">Description</span></span>                                                                                                                          |
+| <span data-ttu-id="5c80c-122">Parameter</span><span class="sxs-lookup"><span data-stu-id="5c80c-122">Parameter</span></span> | <span data-ttu-id="5c80c-123">Typ</span><span class="sxs-lookup"><span data-stu-id="5c80c-123">Type</span></span>  | <span data-ttu-id="5c80c-124">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="5c80c-124">Description</span></span>                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| `q`  | <span data-ttu-id="f5705-125">string</span><span class="sxs-lookup"><span data-stu-id="f5705-125">string</span></span> | <span data-ttu-id="f5705-p104">Der zum Durchsuchen der Elemente verwendete Abfragetext. Werte werden möglicherweise mit mehreren Feldern wie Dateiname, Metadaten und Dateiinhalt abgeglichen.</span><span class="sxs-lookup"><span data-stu-id="f5705-p104">The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content.</span></span> |
+| <span data-ttu-id="5c80c-125">q</span><span class="sxs-lookup"><span data-stu-id="5c80c-125">q</span></span>  | <span data-ttu-id="5c80c-126">string</span><span class="sxs-lookup"><span data-stu-id="5c80c-126">string</span></span> | <span data-ttu-id="5c80c-p104">Der zum Durchsuchen der Elemente verwendete Abfragetext. Werte werden möglicherweise mit mehreren Feldern wie Dateiname, Metadaten und Dateiinhalt abgeglichen.</span><span class="sxs-lookup"><span data-stu-id="5c80c-p104">The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content.</span></span> |
 
-## <a name="example"></a><span data-ttu-id="f5705-128">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f5705-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5c80c-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="5c80c-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="f5705-129">Anforderung</span><span class="sxs-lookup"><span data-stu-id="f5705-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="5c80c-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="5c80c-130">Request</span></span>
 
-<span data-ttu-id="f5705-130">Es folgt ein Beispiel für die Anforderung zum Durchsuchen von OneDrive des aktuellen Benutzers</span><span class="sxs-lookup"><span data-stu-id="f5705-130">Here is an example of the request searching the current user's OneDrive</span></span>
+<span data-ttu-id="5c80c-131">Es folgt ein Beispiel für die Anforderung zum Durchsuchen von OneDrive des aktuellen Benutzers</span><span class="sxs-lookup"><span data-stu-id="5c80c-131">Here is an example of the request searching the current user's OneDrive</span></span>
 
 <!-- { "blockType": "request", "name": "item_search" }-->
 
@@ -61,11 +61,11 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 GET /me/drive/root/search(q='{search-query}')
 ```
 
-### <a name="response"></a><span data-ttu-id="f5705-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="f5705-131">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5c80c-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="5c80c-132">Response</span></span>
 
-<span data-ttu-id="f5705-p105">Diese Methode gibt ein Objekt mit einer Sammlung von [DriveItems](../resources/driveitem.md)-Elementen zurück, die den Suchkriterien entsprechen. Wenn keine Elemente gefunden werden, wird eine leere Sammlung zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="f5705-p105">This method returns an object containing an collection of [DriveItems](../resources/driveitem.md) that match the search criteria. If no items were found, an empty collection is returned.</span></span>
+<span data-ttu-id="5c80c-p105">Diese Methode gibt ein Objekt mit einer Sammlung von [DriveItems](../resources/driveitem.md)-Elementen zurück, die den Suchkriterien entsprechen. Wenn keine Elemente gefunden werden, wird eine leere Sammlung zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5c80c-p105">This method returns an object containing an collection of [DriveItems](../resources/driveitem.md) that match the search criteria. If no items were found, an empty collection is returned.</span></span>
 
-<span data-ttu-id="f5705-p106">Wenn diese Methode zu viele Ergebnisse zurückgibt, ist die Antwort seitennummeriert und enthält eine **@odata.nextLink**-Eigenschaft mit einer URL zur nächsten Ergebnisseite. Sie können den `$top`-Abfrageparameter zum Angeben der Anzahl der Elemente auf einer Seite verwenden.</span><span class="sxs-lookup"><span data-stu-id="f5705-p106">If there are too many matches the response will be paged and an **@odata.nextLink** property will contain a URL to the next page of results. You can use the `$top` query parameter to specify the number of items in the page.</span></span>
+<span data-ttu-id="5c80c-p106">Wenn diese Methode zu viele Ergebnisse zurückgibt, ist die Antwort seitennummeriert und enthält eine **@odata.nextLink**-Eigenschaft mit einer URL zur nächsten Ergebnisseite. Sie können den `$top`-Abfrageparameter zum Angeben der Anzahl der Elemente auf einer Seite verwenden.</span><span class="sxs-lookup"><span data-stu-id="5c80c-p106">If there are too many matches the response will be paged and an **@odata.nextLink** property will contain a URL to the next page of results. You can use the `$top` query parameter to specify the number of items in the page.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 
@@ -92,11 +92,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="searching-for-items-a-user-can-access"></a><span data-ttu-id="f5705-136">Suchen nach Elementen, auf die Benutzer zugreifen können</span><span class="sxs-lookup"><span data-stu-id="f5705-136">Searching for items a user can access</span></span>
+## <a name="searching-for-items-a-user-can-access"></a><span data-ttu-id="5c80c-137">Suchen nach Elementen, auf die Benutzer zugreifen können</span><span class="sxs-lookup"><span data-stu-id="5c80c-137">Searching for items a user can access</span></span>
 
-<span data-ttu-id="f5705-p107">Neben Elementen in einem Laufwerk kann Ihre App die Suche auf Elemente erweitern, die für den aktuellen Benutzer freigegeben wurden. Verwenden Sie zum Erweitern des Suchbereichs die **search**-Methode für die [Laufwerk](../resources/drive.md)ressource.</span><span class="sxs-lookup"><span data-stu-id="f5705-p107">In addition to searching for items within a drive, your app can search more broadly to include items shared with the current user. To broaden the search scope, use the **search** method on the [Drive](../resources/drive.md) resource.</span></span>
+<span data-ttu-id="5c80c-p107">Neben Elementen in einem Laufwerk kann Ihre App die Suche auf Elemente erweitern, die für den aktuellen Benutzer freigegeben wurden. Verwenden Sie zum Erweitern des Suchbereichs die **search**-Methode für die [Laufwerk](../resources/drive.md)ressource.</span><span class="sxs-lookup"><span data-stu-id="5c80c-p107">In addition to searching for items within a drive, your app can search more broadly to include items shared with the current user. To broaden the search scope, use the **search** method on the [Drive](../resources/drive.md) resource.</span></span>
 
-### <a name="example"></a><span data-ttu-id="f5705-139">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f5705-139">Example</span></span>
+### <a name="example"></a><span data-ttu-id="5c80c-140">Beispiel</span><span class="sxs-lookup"><span data-stu-id="5c80c-140">Example</span></span>
 
 <!-- { "blockType": "request", "name": "item_search_all" }-->
 
@@ -104,9 +104,9 @@ Content-type: application/json
 GET /me/drive/search(q='{search-query}')
 ```
 
-### <a name="response"></a><span data-ttu-id="f5705-140">Antwort</span><span class="sxs-lookup"><span data-stu-id="f5705-140">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5c80c-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="5c80c-141">Response</span></span>
 
-<span data-ttu-id="f5705-p108">Die Antworten können beim Durchsuchen der **Laufwerk**ressource Elemente enthalten, die sich außerhalb des Laufwerks befinden (Elemente, die für den aktuellen Benutzer freigegeben sind). Diese Elemente enthalten das [**remoteItem**](../resources/remoteitem.md)-Facet, das angibt, dass sie außerhalb des Ziellaufwerks gespeichert sind.</span><span class="sxs-lookup"><span data-stu-id="f5705-p108">Responses when searching from the **drive** resource may include items outside of the drive (items shared with the current user). These items will include the [**remoteItem**](../resources/remoteitem.md) facet to indicate they are stored outside of the target drive.</span></span> 
+<span data-ttu-id="5c80c-p108">Die Antworten können beim Durchsuchen der **Laufwerk**ressource Elemente enthalten, die sich außerhalb des Laufwerks befinden (Elemente, die für den aktuellen Benutzer freigegeben sind). Diese Elemente enthalten das [**remoteItem**](../resources/remoteitem.md)-Facet, das angibt, dass sie außerhalb des Ziellaufwerks gespeichert sind.</span><span class="sxs-lookup"><span data-stu-id="5c80c-p108">Responses when searching from the **drive** resource may include items outside of the drive (items shared with the current user). These items will include the [**remoteItem**](../resources/remoteitem.md) facet to indicate they are stored outside of the target drive.</span></span> 
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
@@ -134,9 +134,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="error-responses"></a><span data-ttu-id="f5705-143">Fehlerantworten</span><span class="sxs-lookup"><span data-stu-id="f5705-143">Error responses</span></span>
+## <a name="error-responses"></a><span data-ttu-id="5c80c-144">Fehlerantworten</span><span class="sxs-lookup"><span data-stu-id="5c80c-144">Error responses</span></span>
 
-<span data-ttu-id="f5705-144">Weitere Informationen dazu, wie Fehler zurückgegeben werden, finden Sie im unter [Fehlerantworten][error-response].</span><span class="sxs-lookup"><span data-stu-id="f5705-144">See [Error Responses][error-response] for more information about how errors are returned.</span></span>
+<span data-ttu-id="5c80c-145">Weitere Informationen dazu, wie Fehler zurückgegeben werden, finden Sie im unter [Fehlerantworten][error-response].</span><span class="sxs-lookup"><span data-stu-id="5c80c-145">See [Error Responses][error-response] for more information about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md

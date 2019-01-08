@@ -172,7 +172,7 @@ items:
                 href: api/mailfolder-post-messagerules.md
               - name: Abrufen von e-Mail-Infos
                 href: api/user-getmailtips.md
-          - name: Hinweise
+          - name: Anmerkungen
             href: resources/onenote.md
             items:
               - name: Notizbücher auflisten
@@ -387,7 +387,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Rufen Sie Mehrfachwert-Eigenschaft
                     href: api/multivaluelegacyextendedproperty-get.md
-          - name: Hinweise
+          - name: Anmerkungen
             href: resources/onenote.md
             items:
               - name: Notizbücher auflisten
@@ -535,7 +535,7 @@ items:
               - name: Suchen von Besprechungszeiten
                 href: api/user-findmeetingtimes.md
           - name: Kalenderansicht
-            href: api/user-list-calendarview.md
+            href: api/calendar-list-calendarview.md
             items:
               - name: Liste Kalenderansicht
                 href: api/calendar-list-calendarview.md
@@ -3319,10 +3319,10 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Rufen Sie Mehrfachwert-Eigenschaft
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Hinweise
+      - name: Anmerkungen
         href: resources/onenote-api-overview.md
         items:
-          - name: Hinweise
+          - name: Anmerkungen
             href: resources/onenote.md
             items:
               - name: Notizbücher auflisten
@@ -3955,7 +3955,7 @@ items:
             items:
               - name: Pläne auflisten
                 href: api/plannergroup-list-plans.md
-          - name: Hinweise
+          - name: Anmerkungen
             href: resources/onenote.md
             items:
               - name: Notizbücher auflisten
