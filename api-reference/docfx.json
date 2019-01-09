@@ -212,12 +212,11 @@
       "extendBreadcrumb": true,
       "author": "jthake-msft",
       "ms.author": "jthake-msft",
-      "ms.suite": "microsoft graph",
       "bilingual_type": "hover over",
+      "ms.suite": "microsoft graph",
       "ms.date": "11/27/2018",
       "uhfHeaderId": "MSDocsHeader-MSGraph",
-      "searchScope": ["graph"],
-      "hideScope": true
+      "searchScope": ["graph"]
     },
     "fileMetadata": {
       "breadcrumb_path": {
