@@ -1,12 +1,12 @@
 ---
 title: Abrufen von outlookTask
 description: Rufen Sie die Eigenschaften und Beziehungen zwischen Outlook-Aufgaben in das Postfach des Benutzers an.
-ms.openlocfilehash: d7d985614a37f0a4a70a074f63f4182130948495
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f528ccbf3fa27b6c4cd6226e63f1feedab1954e4
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058681"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771681"
 ---
 # <a name="get-outlooktask"></a>Abrufen von outlookTask
 
@@ -17,6 +17,7 @@ Rufen Sie die Eigenschaften und Beziehungen zwischen Outlook-Aufgaben in das Pos
 Standardmäßig wird dieses Vorgangs (und die POST, PATCH und [Abschließen von](../api/outlooktask-complete.md) Aufgabe Vorgänge) datumsspezifische Eigenschaften in UTC zurückgegeben. Sie können mit dem `Prefer: outlook.timezone`-Header alle datumsbezogenen Eigenschaften in der Antwort in einer anderen Zeitzone als UTC darstellen.
 
 ## <a name="permissions"></a>Berechtigungen
+
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
@@ -26,46 +27,58 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Anwendung | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
+GET /me/outlook/tasks/{id}
 GET /users/{id|userPrincipalName}/outlook/tasks/{id}
-GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}
-GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
+
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
+
 | Name      |Beschreibung|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Erforderlich. |
 | Prefer: outlook.timezone | Gibt die Zeitzone für Zeiteigenschaften in der Antwort, die in UTC wäre, wenn diese Kopfzeile nicht angegeben ist. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
 Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [OutlookTask](../resources/outlooktask.md) im Antworttext.
+
 ## <a name="example-1"></a>Beispiel 1
-##### <a name="request"></a>Anforderung
+
+### <a name="request"></a>Anforderung
+
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
   "name": "get_outlooktask"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MTrgAAA=')
 ```
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. Standardmäßig sind die Datums-/Uhrzeiteigenschaften in der Antwort in UTC angegeben. 
 
-Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+### <a name="response"></a>Antwort
+
+Nachfolgend sehen Sie ein Beispiel der Antwort. Standardmäßig sind die Datums-/Uhrzeiteigenschaften in der Antwort in UTC angegeben.
+
+> **Hinweis:** Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.outlookTask"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -104,28 +117,32 @@ Content-length: 376
 }
 ```
 
-
 ## <a name="example-2"></a>Beispiel 2
-##### <a name="request"></a>Anforderung
-In diesem Beispiel wird die `Prefer: outlook.timezone` Header zum Anzeigen von Datum / Uhrzeit-Eigenschaften in der Antwort angeben  
-in der Pacific Standard Time.
+
+### <a name="request"></a>Anforderung
+
+In diesem Beispiel wird die `Prefer: outlook.timezone` Header zum Anzeigen von Datum / Uhrzeit-Eigenschaften in der Pacific Standard Time-Antwort angeben.
 <!-- {
   "blockType": "request",
   "name": "get_outlooktask"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MHgwAAA=')
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
-##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. Die Datum-Uhrzeit-Eigenschaften in der Antwort werden in der angegebenen Pacific Standard Time angezeigt. 
 
-Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+### <a name="response"></a>Antwort
+
+Nachfolgend sehen Sie ein Beispiel der Antwort. Die Datum-Uhrzeit-Eigenschaften in der Antwort werden in der angegebenen Pacific Standard Time angezeigt.
+
+> **Hinweis:** Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.outlookTask"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

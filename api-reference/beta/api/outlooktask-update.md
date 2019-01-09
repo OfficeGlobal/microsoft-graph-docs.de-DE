@@ -2,12 +2,12 @@
 title: Outlooktask aktualisieren
 description: Schreibbare Eigenschaften einer Outlook-Aufgabe zu ändern.
 author: angelgolfer-ms
-ms.openlocfilehash: 0a162c81ef32cb35e930b000678234ede20e4874
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 0cd4907c4ab1cb517ab2611cc4dc30431e496440
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325704"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771730"
 ---
 # <a name="update-outlooktask"></a>Outlooktask aktualisieren
 
@@ -20,6 +20,7 @@ Die **CompletedDateTime** -Eigenschaft kann durch **die Aktivität** oder expliz
 Standardmäßig wird dieses Vorgangs (und die POST, GET und [Abschließen von](../api/outlooktask-complete.md) Aufgabe Vorgänge) datumsspezifische Eigenschaften in UTC zurückgegeben. Sie können mit dem `Prefer: outlook.timezone`-Header alle datumsbezogenen Eigenschaften in der Antwort in einer anderen Zeitzone als UTC darstellen.
 
 ## <a name="permissions"></a>Berechtigungen
+
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
@@ -29,27 +30,31 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Anwendung | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
+PATCH /me/outlook/tasks/{id}
 PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
-PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}
-PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}
 ```
-## <a name="optional-request-headers"></a>Optionale Anforderungsheader
+
+## <a name="request-headers"></a>Anforderungsheader
+
 | Name       | Beschreibung|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}. Erforderlich. |
 | Prefer: outlook.timezone | Gibt die Zeitzone für Zeiteigenschaften in der Antwort, die in UTC wäre, wenn diese Kopfzeile nicht angegeben ist. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.
 
-| Eigenschaft     | Typ   |Beschreibung|
+| Eigenschaft | Typ | Beschreibung |
 |:---------------|:--------|:----------|
-|assignedTo|String|Der Name der Person, die die Aufgabe zugewiesen wurde.|
+|assignedTo|Zeichenfolge|Der Name der Person, die die Aufgabe zugewiesen wurde.|
 |body|[itemBody](../resources/itembody.md)|Der Hauptteil der Aufgabe, die in der Regel Informationen zum Vorgang enthält. Beachten Sie, dass nur HTML-Typ unterstützt wird.|
 |categories|Zeichenfolgenauflistung|Die Kategorien, die dem Vorgang zugeordnet.|
-|changeKey|String|Die Version des Vorgangs.|
+|changeKey|Zeichenfolge|Die Version des Vorgangs.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Das Datum in der angegebenen Zeitzone, dass der Vorgang abgeschlossen wurde.|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung die Aufgabe. Standardmäßig ist es in UTC. Sie können eine benutzerdefinierte Zeitzone in der Kopfzeile der Anforderung bereitstellen. Wert der Eigenschaft verwendet die ISO 8601-Format. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Das Datum in der angegebenen Zeitzone, die die Aufgabe fertig gestellt werden.|
@@ -57,25 +62,29 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |Wichtigkeit|string|Die Wichtigkeit des Ereignisses. Mögliche Werte sind: `low`, `normal` und `high`.|
 |isReminderOn|Boolean|Legen Sie auf true zurück, wenn eine Warnung festgelegt ist, um die Benutzer über die Aufgabe zu erinnern.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten die Aufgabe Änderung. Standardmäßig ist es in UTC. Sie können eine benutzerdefinierte Zeitzone in der Kopfzeile der Anforderung bereitstellen. Wert der Eigenschaft um ISO 8601-Format verwendet und ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
-|owner|String|Der Name der Person, die die Aufgabe erstellt.|
-|parentFolderId|String|Der eindeutige Bezeichner für die Aufgabe übergeordneten Ordner.|
+|owner|Zeichenfolge|Der Name der Person, die die Aufgabe erstellt.|
+|parentFolderId|Zeichenfolge|Der eindeutige Bezeichner für die Aufgabe übergeordneten Ordner.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Das Serienmuster für den Vorgang.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Datum und Zeit für eine Erinnerung des Vorgangs erfolgt.|
 |sensitivity|string|Gibt die Ebene des Datenschutzes für den Vorgang an. Mögliche Werte: sind `normal`, `personal`, `private` und `confidential`.|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Das Datum in der angegebenen Zeitzone, wenn der Vorgang zu beginnen.|
 |status|string|Gibt das Bundesland oder den Fortschritt des Vorgangs. Mögliche Werte sind: `notStarted`, `inProgress`, `completed`, `waitingOnOthers` und `deferred`.|
-|Betreff|String|Eine kurze Beschreibung oder Titel des Vorgangs.|
+|Betreff|Zeichenfolge|Eine kurze Beschreibung oder Titel des Vorgangs.|
 
 ## <a name="response"></a>Antwort
 
 Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und aktualisierte [OutlookTask](../resources/outlooktask.md) -Objekts in der Antworttext.
+
 ## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
+
+### <a name="request"></a>Anforderung
+
 Das folgende Beispiel ändert die Eigenschaft **DueDateTime** und verwendet die `Prefer: outlook.timezone` Header die datumsspezifische Eigenschaften in der Antwort in der Eastern Standard Time (EST) Ausdrücken angeben.
 <!-- {
   "blockType": "request",
   "name": "update_outlooktask"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MTHgwAAA=')
 
@@ -90,13 +99,16 @@ Content-length: 76
   }
 }
 ```
-##### <a name="response"></a>Antwort
+
+### <a name="response"></a>Antwort
+
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.outlookTask"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

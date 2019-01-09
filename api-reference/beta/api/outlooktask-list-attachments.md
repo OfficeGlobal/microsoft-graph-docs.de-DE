@@ -2,19 +2,21 @@
 title: Anlagen auflisten
 description: Rufen Sie eine Liste der Attachment-Objekte, die eine Outlook-Aufgabe zugeordnet ist.
 author: angelgolfer-ms
-ms.openlocfilehash: db27cfa94e90607e64bed0bf71f55dfbea14b7e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: b998f6f7d3356728400cc7c609dd1014467ae4d6
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309933"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771793"
 ---
 # <a name="list-attachments"></a>Anlagen auflisten
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Rufen Sie eine Liste der [Attachment](../resources/attachment.md) -Objekte, die eine Outlook-Aufgabe zugeordnet ist.
+
 ## <a name="permissions"></a>Berechtigungen
+
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
@@ -24,37 +26,48 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Anwendung | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
+GET /me/outlook/tasks/{id}/attachments
 GET /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
-GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}/attachments
-GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}/attachments
 ```
+
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
+
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
+
 | Name      |Beschreibung|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
 Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und Auflistung von [Attachment](../resources/attachment.md) -Objekte in der Antworttext.
+
 ## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
+
+### <a name="request"></a>Anforderung
+
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
   "name": "get_attachments"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 ```
-##### <a name="response"></a>Antwort
+
+### <a name="response"></a>Antwort
+
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
@@ -62,6 +75,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
   "@odata.type": "microsoft.graph.attachment",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

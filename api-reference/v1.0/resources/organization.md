@@ -1,12 +1,12 @@
 ---
 title: organization-Ressourcentyp
 description: " Erstellen und Delete werden nicht unterstützt. Erbt von directoryObject."
-ms.openlocfilehash: b98455c52d963d4e523253dc2a3b75137be9e854
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+ms.openlocfilehash: 5651e300c4ebfc7adbbccc7aef485a43263b4830
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748332"
+ms.locfileid: "27771737"
 ---
 # <a name="organization-resource-type"></a>organization-Ressourcentyp
 
@@ -37,8 +37,8 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 | countryLetterCode                    | Zeichenfolge                                                            | Landes-/Regionsabkürzung für das Unternehmen                                                                                                                                                                                                                                     |
 |createdDateTime|DateTimeOffset| Zeitstempel der Erstellung der Organisation. Der Wert kann nicht geändert werden und wird automatisch aufgefüllt, wenn die Organisation erstellt wird. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. |
 | deletedDateTime                    | DateTimeOffset                                                    | Datum und Uhrzeit des darstellt, wenn es sich bei der Azure AD-Mandanten mit ISO 8601-Format gelöscht wurde, und ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.                                                                                     |
-| displayName                          | String                                                            | Der Anzeigename für den Mandanten.                                                                                                                                                                                                                                                     |
-| id                                   | String                                                            | Der eindeutige Bezeichner für den Mandanten. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.                                                                                                                                                            |
+| displayName                          | Zeichenfolge                                                            | Der Anzeigename für den Mandanten.                                                                                                                                                                                                                                                     |
+| id                                   | Zeichenfolge                                                            | Die Mandanten-ID eine eindeutige ID, die Organisation (oder des Mandanten) darstellt. Geerbt von [directoryObject](directoryobject.md). Schlüssel. Lässt keine Nullwerte zu. Schreibgeschützt.                                                                                                                                                            |
 |isMultipleDataLocationsForServicesEnabled|Boolesch|**true,** Wenn Organisation Multi-Geo aktiviert ist; **"false"** Wenn Organisation nicht aktiviert Multi-Geo. **null** (Standard). Schreibgeschützt. Weitere Informationen finden Sie unter [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 | marketingNotificationEmails          | Zeichenfolgenauflistung                                                 | Lässt keine Nullwerte zu.                                                                                                                                                                                                                                                                        |
 | onPremisesLastSyncDateTime               | DateTimeOffset                                                    | Uhrzeit und Datum der letzten Synchronisierung des Mandanten mit dem lokalen Verzeichnis. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. |

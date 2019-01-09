@@ -2,19 +2,21 @@
 title: Anlage hinzufügen
 description: Verwenden Sie diese API, um eine Anlage auf ein Ereignis hinzuzufügen. Seit dort
 author: angelgolfer-ms
-ms.openlocfilehash: 2f55646c8f0f115640ced91a90ef16d40599b3b3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 071ecdecf3ac7fd835c7c5004463661b685be003
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355958"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771772"
 ---
 # <a name="add-attachment"></a>Anlage hinzufügen
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Verwenden Sie diese API zum Hinzufügen einer [Anlage](../resources/attachment.md) zu einem Ereignis. Da es derzeit eine Beschränkung von 4 MB für die Gesamtgröße jeder REST-Anforderung gibt, wird hierdurch die Größe der Anlage, die Sie hinzufügen können, auf unter 4 MB beschränkt.
+
 ## <a name="permissions"></a>Berechtigungen
+
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
@@ -24,47 +26,27 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Anwendung | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-Anforderung
-Anlagen für ein [Ereignis](../resources/event.md) in der Benutzer als [Kalender](../resources/calendar.md).
 
-<!--
-Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
--->
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/events/{id}/attachments
 POST /users/{id | userPrincipalName}/events/{id}/attachments
-
-POST /me/calendar/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendar/events/{id}/attachments
 ```
 
 <!--
 POST /groups/{id}/events/{id}/attachments
-POST /groups/{id}/calendar/events/{id}/attachments
 -->
 
-Anlagen für ein [Ereignis](../resources/event.md) in einem [Kalender](../resources/calendar.md) aus der standardmäßigen [calendarGroup](../resources/calendargroup.md) des Benutzers.
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
-
-POST /me/calendargroup/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
-```
-Anlagen für ein [Ereignis](../resources/event.md) in einem [Kalender](../resources/calendar.md) aus der [calendarGroup](../resources/calendargroup.md) eines Benutzers.
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-```
 ## <a name="request-headers"></a>Anforderungsheader
+
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie im Anforderungstext eine JSON-Darstellung des [attachment](../resources/attachment.md)-Objekts an.
 
 ## <a name="response"></a>Antwort
@@ -73,33 +55,37 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und
 
 ## <a name="example-file-attachment"></a>Beispiel (Dateianlage)
 
-##### <a name="request"></a>Anforderung
+### <a name="request"></a>Anforderung
+
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_event"
 }-->
+
 ```http
-POST https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAt9AHjAAA=')/attachments 
+POST https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAt9AHjAAA=')/attachments
 Content-type: application/json
 Content-length: 151
 
 {
     "@odata.type": "#microsoft.graph.fileAttachment",
     "name": "menu.txt",
-    "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="   
+    "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
 
 Geben Sie im Anforderungstext eine JSON-Darstellung des [attachment](../resources/attachment.md)-Objekts an.
 
-##### <a name="response"></a>Antwort
+### <a name="response"></a>Antwort
+
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
+
 ```http
 HTTP 201 Created
 Content-Length: 735
@@ -121,7 +107,7 @@ Content-Length: 735
 
 ## <a name="example-item-attachment"></a>Beispiel (Elementanlage)
 
-##### <a name="request"></a>Anforderung
+### <a name="request"></a>Anforderung
 
 Nachfolgend finden Sie ein Beispiel, in dem ein Ereignis als Elementanlage an ein anderes Element angefügt wird.
 
@@ -129,6 +115,7 @@ Nachfolgend finden Sie ein Beispiel, in dem ein Ereignis als Elementanlage an ei
   "blockType": "request",
   "name": "create_item_attachment_from_event"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/events/{AAMkAGI1AAAt9AHjAAA=}/attachments
 Content-type: application/json
@@ -136,7 +123,7 @@ Content-length: 600
 
 {
   "@odata.type": "#microsoft.graph.itemAttachment",
-  "name": "Holiday event", 
+  "name": "Holiday event",
   "item": {
         "@odata.type": "microsoft.graph.event",
         "subject": "Discuss gifts for children",
@@ -156,13 +143,15 @@ Content-length: 600
 }
 ```
 
-##### <a name="response"></a>Antwort
+### <a name="response"></a>Antwort
+
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
+
 ```http
 HTTP 201 Created
 Content-type: application/json
@@ -183,7 +172,8 @@ Content-length: 162
 
 ## <a name="example-reference-attachment"></a>Beispiel (Verweisanlage)
 
-##### <a name="request"></a>Anforderung
+### <a name="request"></a>Anforderung
+
 Hier ist ein Beispiel für eine Anforderung, die eine Anlage Verweis auf ein vorhandenes Ereignis hinzugefügt.
 Das Attachment-Objekt verweist auf einen Ordner auf OneDrive.
 <!-- {
@@ -192,28 +182,30 @@ Das Attachment-Objekt verweist auf einen Ordner auf OneDrive.
   "@odata.type": "microsoft.graph.referenceAttachment"
 }-->
 
-```
+```http
 POST https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments
 Content-type: application/json
 Content-length: 319
 
-{ 
-    "@odata.type": "#microsoft.graph.referenceAttachment", 
-    "name": "Personal pictures", 
-    "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics", 
-    "providerType": "oneDriveConsumer", 
-    "permission": "Edit", 
-    "isFolder": "True" 
-} 
+{
+    "@odata.type": "#microsoft.graph.referenceAttachment",
+    "name": "Personal pictures",
+    "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
+    "providerType": "oneDriveConsumer",
+    "permission": "Edit",
+    "isFolder": "True"
+}
 ```
 
-##### <a name="response"></a>Antwort
+### <a name="response"></a>Antwort
+
 Es folgt ein Beispiel einer vollständigen Antwort.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
+
 ```http
 HTTP 201 Created
 

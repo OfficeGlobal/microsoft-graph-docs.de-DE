@@ -1,12 +1,12 @@
 ---
 title: organization-Ressourcentyp
 description: 'Stellt eine Azure Active Directory-Mandanten. '
-ms.openlocfilehash: 1d13d10c79d2dfc39ec187265533cb6ea17a683b
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+ms.openlocfilehash: 2e9a9a32411164e270e2eb3a8830fa811ba5f9cb
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748570"
+ms.locfileid: "27771828"
 ---
 # <a name="organization-resource-type"></a>organization-Ressourcentyp
 
@@ -40,11 +40,11 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 |createdDateTime|DateTimeOffset| Zeitstempel der Erstellung der Organisation. Der Wert kann nicht geändert werden und wird automatisch aufgefüllt, wenn die Organisation erstellt wird. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. |
 | deletedDateTime                    | DateTimeOffset                                                    | Datum und Uhrzeit des darstellt, wenn es sich bei der Azure AD-Mandanten mit ISO 8601-Format gelöscht wurde, und ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.                                                                                     |
 |dirSyncEnabled|Boolean|**true**, wenn das Objekt aus einem lokalen Verzeichnis synchronisiert wird; **false**, wenn das Objekt ursprünglich aus einem lokalen Verzeichnis synchronisiert wurde, aber nicht mehr synchronisiert wird; **NULL**, wenn dieses Objekt nie aus einem lokalen Verzeichnis synchronisiert wurde (Standard).|
-|displayName|String|Der Anzeigename für den Mandanten.|
-|id|String|Der eindeutige Bezeichner für den Mandanten. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
+|displayName|Zeichenfolge|Der Anzeigename für den Mandanten.|
+|id|Zeichenfolge|Die Mandanten-ID eine eindeutige ID, die Organisation (oder des Mandanten) darstellt. Geerbt von [directoryObject](directoryobject.md). Schlüssel. Lässt keine Nullwerte zu. Schreibgeschützt.|
 |isMultipleDataLocationsForServicesEnabled|Boolesch|**true,** Wenn Organisation Multi-Geo aktiviert ist; **"false"** Wenn Organisation nicht aktiviert Multi-Geo. **null** (Standard). Schreibgeschützt. Weitere Informationen finden Sie unter [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |marketingNotificationEmails|Zeichenfolgenauflistung| Lässt keine Nullwerte zu.            |
-|objectType|String|Eine Zeichenfolge, die den Objekttyp identifiziert. Für Mandanten ist der Wert immer „Unternehmen“. |
+|objectType|Zeichenfolge|Eine Zeichenfolge, die den Objekttyp identifiziert. Für Mandanten ist der Wert immer „Unternehmen“. |
 |postalCode|Zeichenfolge| Die Postleitzahl aus der Unternehmensadresse |
 |preferredLanguage|Zeichenfolge| Die bevorzugte Sprache für das Unternehmen. Muss im ISO 639-1-Code angegeben werden. Beispiel: „en“. |
 |privacyProfile|[privacyProfile](privacyprofile.md)| Das Datenschutzprofil einer Organisation.            |

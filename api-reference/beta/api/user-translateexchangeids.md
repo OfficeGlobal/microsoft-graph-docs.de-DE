@@ -2,12 +2,12 @@
 title: 'Benutzer: TranslateExchangeIds'
 description: Übersetzen Sie IDs von Outlook-bezogene Ressourcen zwischen den Formaten.
 author: dkershaw10
-ms.openlocfilehash: 6dd18fe041c2a303be4ad333b8beeaef168682b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: ca8b8b1f587e545c3ebfb46efecd9c1c093a942a
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360578"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771821"
 ---
 # <a name="user-translateexchangeids"></a>Benutzer: TranslateExchangeIds
 
@@ -54,9 +54,16 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 |:-------|:------------|
 | entryId | Das Format von binären Eintrag ID von MAPI-Clients verwendet wird. |
 | ewsId | Das ID-Format wird von Exchange-Webdienste-Clients verwendet. |
-| immutableEntryId | MAPI-kompatibles unveränderlich ID Format. |
+| immutableEntryId | Die MAPI-kompatibles unveränderlich ID Binärformat. |
 | restId | Das ID-Standardformat, von Microsoft Graph verwendet. |
 | restImmutableEntryId | Unveränderlich ID Format wird von Microsoft Graph. |
+
+Die binären Dateiformate (`entryId` und `immutableEntryId`) base64-codierte URL-sichere sind. URL-Safeness wird durch Ändern der base64-Codierung binäre Daten auf folgende Weise implementiert:
+
+- Ersetzen Sie `+` mit`-`
+- Ersetzen Sie `/` mit`_`
+- Entfernen Sie alle nachfolgenden Füllzeichen (`=`)
+- Eine ganze Zahl an das Ende der Zeichenfolge, die angibt, wie viele Füllzeichen aus der ursprünglichen Datei hinzufügen (`0`, `1`, oder `2`)
 
 ## <a name="response"></a>Antwort
 
@@ -66,7 +73,7 @@ Wenn der Vorgang erfolgreich war, gibt diese Methode `200 OK` Antwortcode und ei
 
 Das folgende Beispiel zeigt, wie mehrere Bezeichner der REST-API-Standardformat konvertiert (`restId`) in das unveränderlich REST-Format (`restImmutableEntryId`).
 
-##### <a name="request"></a>Anforderung
+### <a name="request"></a>Anforderung
 
 Hier sehen Sie die Beispielanforderung:
 <!-- {
@@ -88,7 +95,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Antwort
+### <a name="response"></a>Antwort
 
 Nachfolgend finden Sie die Beispielantwort
 <!-- {
