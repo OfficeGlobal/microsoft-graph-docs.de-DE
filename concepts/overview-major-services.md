@@ -34,7 +34,7 @@ Mit den Benutzern und Gruppen als Basis bildet Microsoft Graph ein Netzwerk von 
 
 ### <a name="services-and-features"></a>Dienste und Features
 
-Einige Dienste werden in Microsoft Graph erstmal zur Verfügung gestellt, andere sind bereits länger als eigenständige Dienste bekannt und sind nun Bestandteil von Microsoft Graph. Die API-Sätze folgen einem optimierten Design, wie in den [Microsoft-REST-API-Richtlinien](https://github.com/Microsoft/api-guidelines) dargelegt. Auf sie kann nun über einen einzelnen Microsoft Graph-REST-Endpunkt zugegriffen werden`https://graph.microsoft.com`. Im restlichen Teil dieses Artikels sind die wichtigsten Dienste und Features nach Kategorie aufgelistet. 
+Einige Dienste werden in Microsoft Graph erstmals zur Verfügung gestellt, andere sind bereits länger als eigenständige Dienste bekannt und sind nun Bestandteil von Microsoft Graph. Die API-Sätze folgen einem optimierten Design, wie in den [Microsoft-REST-API-Richtlinien](https://github.com/Microsoft/api-guidelines) dargelegt. Auf sie kann nun über einen einzelnen Microsoft Graph-REST-Endpunkt zugegriffen werden`https://graph.microsoft.com`. Im restlichen Teil dieses Artikels sind die wichtigsten Dienste und Features nach Kategorie aufgelistet. 
 
 
 ## <a name="identity-and-access-management"></a>Identitäts- und Zugriffsverwaltung
