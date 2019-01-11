@@ -2,30 +2,31 @@
 title: DeviceManagementScriptUserState aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines DeviceManagementScriptUserState-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 4a2601df84b022d13fd45ef3c506a4ee229fe6ad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e5c3f991a8deaa3a68e7434426cc51c7ea205ef3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307833"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806909"
 ---
-# <a name="update-devicemanagementscriptuserstate"></a><span data-ttu-id="54619-103">DeviceManagementScriptUserState aktualisieren</span><span class="sxs-lookup"><span data-stu-id="54619-103">Update deviceManagementScriptUserState</span></span>
+# <a name="update-devicemanagementscriptuserstate"></a><span data-ttu-id="c7fed-103">DeviceManagementScriptUserState aktualisieren</span><span class="sxs-lookup"><span data-stu-id="c7fed-103">Update deviceManagementScriptUserState</span></span>
 
-> <span data-ttu-id="54619-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="54619-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="54619-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="54619-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="c7fed-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="c7fed-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c7fed-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="c7fed-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="54619-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="54619-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="c7fed-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="c7fed-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="54619-107">Aktualisieren Sie die Eigenschaften eines [DeviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="54619-107">Update the properties of a [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="54619-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="54619-108">Prerequisites</span></span>
-<span data-ttu-id="54619-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="54619-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c7fed-107">Aktualisieren Sie die Eigenschaften eines [DeviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="c7fed-107">Update the properties of a [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="c7fed-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="c7fed-108">Prerequisites</span></span>
+<span data-ttu-id="c7fed-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c7fed-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="54619-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="54619-111">Permission type</span></span>|<span data-ttu-id="54619-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="54619-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="c7fed-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c7fed-111">Permission type</span></span>|<span data-ttu-id="c7fed-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c7fed-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="54619-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="54619-113">Delegated (work or school account)</span></span>|<span data-ttu-id="54619-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="54619-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="54619-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="54619-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="54619-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="54619-116">Not supported.</span></span>|
-|<span data-ttu-id="54619-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="54619-117">Application</span></span>|<span data-ttu-id="54619-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="54619-118">Not supported.</span></span>|
+|<span data-ttu-id="c7fed-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c7fed-113">Delegated (work or school account)</span></span>|<span data-ttu-id="c7fed-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c7fed-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="c7fed-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c7fed-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c7fed-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c7fed-116">Not supported.</span></span>|
+|<span data-ttu-id="c7fed-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c7fed-117">Application</span></span>|<span data-ttu-id="c7fed-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c7fed-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="54619-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="54619-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c7fed-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c7fed-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,32 +35,32 @@ ms.locfileid: "27307833"
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates/{deviceManagementScriptUserStateId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="54619-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="54619-120">Request headers</span></span>
-|<span data-ttu-id="54619-121">Header</span><span class="sxs-lookup"><span data-stu-id="54619-121">Header</span></span>|<span data-ttu-id="54619-122">Wert</span><span class="sxs-lookup"><span data-stu-id="54619-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c7fed-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="c7fed-120">Request headers</span></span>
+|<span data-ttu-id="c7fed-121">Header</span><span class="sxs-lookup"><span data-stu-id="c7fed-121">Header</span></span>|<span data-ttu-id="c7fed-122">Wert</span><span class="sxs-lookup"><span data-stu-id="c7fed-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="54619-123">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="54619-123">Authorization</span></span>|<span data-ttu-id="54619-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="54619-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="54619-125">Accept</span><span class="sxs-lookup"><span data-stu-id="54619-125">Accept</span></span>|<span data-ttu-id="54619-126">application/json</span><span class="sxs-lookup"><span data-stu-id="54619-126">application/json</span></span>|
+|<span data-ttu-id="c7fed-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="c7fed-123">Authorization</span></span>|<span data-ttu-id="c7fed-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="c7fed-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="c7fed-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="c7fed-125">Accept</span></span>|<span data-ttu-id="c7fed-126">application/json</span><span class="sxs-lookup"><span data-stu-id="c7fed-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="54619-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="54619-127">Request body</span></span>
-<span data-ttu-id="54619-128">Geben Sie im Textkörper Anforderung für das Objekt [DeviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) eine JSON-Darstellung.</span><span class="sxs-lookup"><span data-stu-id="54619-128">In the request body, supply a JSON representation for the [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c7fed-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c7fed-127">Request body</span></span>
+<span data-ttu-id="c7fed-128">Geben Sie im Textkörper Anforderung für das Objekt [DeviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) eine JSON-Darstellung.</span><span class="sxs-lookup"><span data-stu-id="c7fed-128">In the request body, supply a JSON representation for the [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) object.</span></span>
 
-<span data-ttu-id="54619-129">In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die [DeviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)erstellen.</span><span class="sxs-lookup"><span data-stu-id="54619-129">The following table shows the properties that are required when you create the [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md).</span></span>
+<span data-ttu-id="c7fed-129">In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die [DeviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)erstellen.</span><span class="sxs-lookup"><span data-stu-id="c7fed-129">The following table shows the properties that are required when you create the [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md).</span></span>
 
-|<span data-ttu-id="54619-130">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="54619-130">Property</span></span>|<span data-ttu-id="54619-131">Typ</span><span class="sxs-lookup"><span data-stu-id="54619-131">Type</span></span>|<span data-ttu-id="54619-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="54619-132">Description</span></span>|
+|<span data-ttu-id="c7fed-130">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="c7fed-130">Property</span></span>|<span data-ttu-id="c7fed-131">Typ</span><span class="sxs-lookup"><span data-stu-id="c7fed-131">Type</span></span>|<span data-ttu-id="c7fed-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c7fed-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="54619-133">id</span><span class="sxs-lookup"><span data-stu-id="54619-133">id</span></span>|<span data-ttu-id="54619-134">String</span><span class="sxs-lookup"><span data-stu-id="54619-134">String</span></span>|<span data-ttu-id="54619-135">Das Gerät Management Skript Zustand Benutzerentität-Taste.</span><span class="sxs-lookup"><span data-stu-id="54619-135">Key of the device management script user state entity.</span></span>|
-|<span data-ttu-id="54619-136">successDeviceCount</span><span class="sxs-lookup"><span data-stu-id="54619-136">successDeviceCount</span></span>|<span data-ttu-id="54619-137">Int32</span><span class="sxs-lookup"><span data-stu-id="54619-137">Int32</span></span>|<span data-ttu-id="54619-138">Anzahl der Erfolg Geräte für bestimmte Benutzer.</span><span class="sxs-lookup"><span data-stu-id="54619-138">Success device count for specific user.</span></span>|
-|<span data-ttu-id="54619-139">errorDeviceCount</span><span class="sxs-lookup"><span data-stu-id="54619-139">errorDeviceCount</span></span>|<span data-ttu-id="54619-140">Int32</span><span class="sxs-lookup"><span data-stu-id="54619-140">Int32</span></span>|<span data-ttu-id="54619-141">Anzahl der Fehler Geräte für bestimmte Benutzer.</span><span class="sxs-lookup"><span data-stu-id="54619-141">Error device count for specific user.</span></span>|
-|<span data-ttu-id="54619-142">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="54619-142">userPrincipalName</span></span>|<span data-ttu-id="54619-143">String</span><span class="sxs-lookup"><span data-stu-id="54619-143">String</span></span>|<span data-ttu-id="54619-144">Prinzip-Benutzernamen eines bestimmten Benutzers.</span><span class="sxs-lookup"><span data-stu-id="54619-144">User principle name of specific user.</span></span>|
+|<span data-ttu-id="c7fed-133">id</span><span class="sxs-lookup"><span data-stu-id="c7fed-133">id</span></span>|<span data-ttu-id="c7fed-134">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="c7fed-134">String</span></span>|<span data-ttu-id="c7fed-135">Das Gerät Management Skript Zustand Benutzerentität-Taste.</span><span class="sxs-lookup"><span data-stu-id="c7fed-135">Key of the device management script user state entity.</span></span>|
+|<span data-ttu-id="c7fed-136">successDeviceCount</span><span class="sxs-lookup"><span data-stu-id="c7fed-136">successDeviceCount</span></span>|<span data-ttu-id="c7fed-137">Int32</span><span class="sxs-lookup"><span data-stu-id="c7fed-137">Int32</span></span>|<span data-ttu-id="c7fed-138">Anzahl der Erfolg Geräte für bestimmte Benutzer.</span><span class="sxs-lookup"><span data-stu-id="c7fed-138">Success device count for specific user.</span></span>|
+|<span data-ttu-id="c7fed-139">errorDeviceCount</span><span class="sxs-lookup"><span data-stu-id="c7fed-139">errorDeviceCount</span></span>|<span data-ttu-id="c7fed-140">Int32</span><span class="sxs-lookup"><span data-stu-id="c7fed-140">Int32</span></span>|<span data-ttu-id="c7fed-141">Anzahl der Fehler Geräte für bestimmte Benutzer.</span><span class="sxs-lookup"><span data-stu-id="c7fed-141">Error device count for specific user.</span></span>|
+|<span data-ttu-id="c7fed-142">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="c7fed-142">userPrincipalName</span></span>|<span data-ttu-id="c7fed-143">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="c7fed-143">String</span></span>|<span data-ttu-id="c7fed-144">Prinzip-Benutzernamen eines bestimmten Benutzers.</span><span class="sxs-lookup"><span data-stu-id="c7fed-144">User principle name of specific user.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="54619-145">Antwort</span><span class="sxs-lookup"><span data-stu-id="54619-145">Response</span></span>
-<span data-ttu-id="54619-146">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [DeviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="54619-146">If successful, this method returns a `200 OK` response code and an updated [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c7fed-145">Antwort</span><span class="sxs-lookup"><span data-stu-id="c7fed-145">Response</span></span>
+<span data-ttu-id="c7fed-146">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [DeviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="c7fed-146">If successful, this method returns a `200 OK` response code and an updated [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="54619-147">Beispiel</span><span class="sxs-lookup"><span data-stu-id="54619-147">Example</span></span>
-### <a name="request"></a><span data-ttu-id="54619-148">Anforderung</span><span class="sxs-lookup"><span data-stu-id="54619-148">Request</span></span>
-<span data-ttu-id="54619-149">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="54619-149">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c7fed-147">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c7fed-147">Example</span></span>
+### <a name="request"></a><span data-ttu-id="c7fed-148">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c7fed-148">Request</span></span>
+<span data-ttu-id="c7fed-149">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="c7fed-149">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates/{deviceManagementScriptUserStateId}
 Content-type: application/json
@@ -72,8 +73,8 @@ Content-length: 110
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="54619-150">Antwort</span><span class="sxs-lookup"><span data-stu-id="54619-150">Response</span></span>
-<span data-ttu-id="54619-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="54619-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="c7fed-150">Antwort</span><span class="sxs-lookup"><span data-stu-id="c7fed-150">Response</span></span>
+<span data-ttu-id="c7fed-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c7fed-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
