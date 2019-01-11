@@ -1,12 +1,13 @@
 ---
 title: Mitgliedsobjekte abrufen
 description: " Gibt alle Gruppen und Verzeichnisrollen zurück, in denen ein Benutzer-, Gruppen- oder Verzeichnisobjekt Mitglied ist. Diese Funktion ist transitiv. "
-ms.openlocfilehash: b9e0cd4221f4016ccc98302d194ceef8b1622707
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b7c4c09991d31141e12fb6cd900309f81e22f8e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018251"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815911"
 ---
 # <a name="get-member-objects"></a>Mitgliedsobjekte abrufen
 

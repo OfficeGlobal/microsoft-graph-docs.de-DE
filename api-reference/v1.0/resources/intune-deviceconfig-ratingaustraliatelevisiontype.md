@@ -2,12 +2,13 @@
 title: RatingAustraliaTelevisionType Enum-Typ
 description: TV zum Bewerten Bezeichnungen in Australien
 author: tfitzmac
-ms.openlocfilehash: 8444f7db49cc8a0453f58d4710334f0876e570c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 176e1d863fd2aa94ea48a2bf8aab515228ac31ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323058"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844688"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>RatingAustraliaTelevisionType Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27323058"
 
 TV zum Bewerten Bezeichnungen in Australien
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |allAllowed|0|Standardwert, zulassen, dass alle TV Inhalt anzeigt.|
 |allBlocked|1|Lassen Sie nicht, dass alle TV Inhalt anzeigt.|

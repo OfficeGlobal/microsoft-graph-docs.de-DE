@@ -2,12 +2,13 @@
 title: Erstellen von microsoftStoreForBusinessContainedApp
 description: Erstellen eines neuen MicrosoftStoreForBusinessContainedApp-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 7fb904075510dd381ab66346a773af2a960bc67b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ac782261c00008bf9b4ab552932f8f841a9965bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328105"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843295"
 ---
 # <a name="create-microsoftstoreforbusinesscontainedapp"></a>Erstellen von microsoftStoreForBusinessContainedApp
 
@@ -37,10 +38,10 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt MicrosoftStoreForBusinessContainedApp eine JSON-Darstellung.

@@ -2,12 +2,13 @@
 title: AndroidForWorkScepCertificateProfile löschen
 description: Löscht eine AndroidForWorkScepCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: cd6983c34ec0756977f1db08fd73f46ff0ef70cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5705e543bf32237823cae3abd72a27d2680538f7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337604"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842287"
 ---
 # <a name="delete-androidforworkscepcertificateprofile"></a>AndroidForWorkScepCertificateProfile löschen
 
@@ -37,10 +38,10 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

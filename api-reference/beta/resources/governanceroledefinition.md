@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp governanceRoleDefinition
 description: Stellt die Rollendefinitionen. Für Azure Ressourcen können sie Azure RBAC-Rollen, wie Besitzer, Leser, Autor darstellen.
-ms.openlocfilehash: 057d74276b41abad47eb60ce48a99f1160c401ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3f94dd1a741545760951875fbc064307823a65dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059779"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842450"
 ---
 # <a name="governanceroledefinition-resource-type"></a>Ressourcentyp governanceRoleDefinition
 

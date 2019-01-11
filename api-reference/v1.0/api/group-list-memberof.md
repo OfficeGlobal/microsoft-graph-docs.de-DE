@@ -2,12 +2,13 @@
 title: memberOf auflisten
 description: 'Dient zum Abrufen von Gruppen, von denen die Gruppe ein direktes Mitglied ist. '
 author: dkershaw10
-ms.openlocfilehash: 5cd563c8697a0d93ca2d11c42b3b8c19b0ce7ec9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: d7cfb9e21b05abc24b792e5e1288953c41492901
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323583"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840292"
 ---
 # <a name="list-memberof"></a>memberOf auflisten
 Dient zum Abrufen von Gruppen, von denen die Gruppe ein direktes Mitglied ist. 
@@ -35,7 +36,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters)
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

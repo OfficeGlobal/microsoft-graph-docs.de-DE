@@ -2,12 +2,13 @@
 title: Auflisten von „managedApp“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs managedApp auf.
 author: tfitzmac
-ms.openlocfilehash: 86062047c11a44fa6586f1c0582dce78445291ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b0669ec4c1e2c0eddd8217f30dc2f7705662fc1b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362118"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843127"
 ---
 # <a name="list-managedapps"></a>Auflisten von „managedApp“
 
@@ -33,10 +34,10 @@ GET /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: ManagedDeviceEnrollmentFailureDetails-Funktion
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: e95a0590ee08fb29d2ae95cb68f0bded658ecf18
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7e3ad342ad19314e10ae5e2987143646e5796c3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357057"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840369"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>ManagedDeviceEnrollmentFailureDetails-Funktion
 
@@ -34,10 +35,10 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie in der Anforderungs-URL die folgenden Abfrageparameter mit Werten an.

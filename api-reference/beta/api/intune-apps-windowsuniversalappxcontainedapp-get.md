@@ -2,12 +2,13 @@
 title: Abrufen von windowsUniversalAppXContainedApp
 description: Lesen Sie Eigenschaften und Beziehungen des WindowsUniversalAppXContainedApp-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 78d4d015be2e614ddd1d5463824b49281c375d86
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 15df29f43545dd6c188a960cffcbf2a7a569e0ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311179"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842756"
 ---
 # <a name="get-windowsuniversalappxcontainedapp"></a>Abrufen von windowsUniversalAppXContainedApp
 
@@ -39,10 +40,10 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnivers
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

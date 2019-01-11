@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp androidDeviceOwnerEnrollmentProfile
 description: Registrierungsprofil zur Registrierung von COSU-Geräten, die Google Cloud Management verwenden
-ms.openlocfilehash: 0ca468a624f5b1793b09eb6b4d9d9e003cae3ac7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 17d8d00fb0c21d9474607e0cc388ce38687af0ce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059202"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841874"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>Ressourcentyp androidDeviceOwnerEnrollmentProfile
 
@@ -21,7 +22,7 @@ Registrierungsprofil zur Registrierung von COSU-Geräten, die Google Cloud Man
 |[Liste androidDeviceOwnerEnrollmentProfiles](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-list.md)|[AndroidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) -Auflistung|Listeneigenschaften und Beziehungen der [AndroidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) -Objekte.|
 |[Abrufen von androidDeviceOwnerEnrollmentProfile](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-get.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)|Lesen Sie Eigenschaften und Beziehungen des [AndroidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) -Objekts.|
 |[Erstellen von androidDeviceOwnerEnrollmentProfile](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-create.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)|Erstellen eines neuen [AndroidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) -Objekts.|
-|[AndroidDeviceOwnerEnrollmentProfile löschen](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-delete.md)|Keines|Löscht eine [AndroidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md).|
+|[AndroidDeviceOwnerEnrollmentProfile löschen](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-delete.md)|Keine|Löscht eine [AndroidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md).|
 |[AndroidDeviceOwnerEnrollmentProfile aktualisieren](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-update.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)|Aktualisieren Sie die Eigenschaften eines [AndroidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) -Objekts.|
 |[Aktion „revokeToken“](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md)|Keiner|Noch nicht dokumentiert|
 |[Aktion „createToken“](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md)|Keiner|Noch nicht dokumentiert|

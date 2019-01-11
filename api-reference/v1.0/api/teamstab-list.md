@@ -2,12 +2,13 @@
 title: Liste der Registerkarten im Kanal
 description: 'Rufen Sie die Liste der Registerkarten in den angegebenen Kanal innerhalb eines Teams ab. '
 author: nkramer
-ms.openlocfilehash: b8d5c55fa02d859a419823ad171fbcc9221a609e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 628dcf57656782f2d921876dccb70173ef7b4623
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344569"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842882"
 ---
 # <a name="list-tabs-in-channel"></a>Liste der Registerkarten im Kanal
 
@@ -37,7 +38,7 @@ GET /teams/{id}/channels/{id}/tabs
 Diese Methode unterstützt die $filter $select, und $erweitern [OData-Abfrageparameter](/graph/query-parameters) helfen, die Antwort anzupassen.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

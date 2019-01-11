@@ -2,12 +2,13 @@
 title: deviceComplianceUserStatus-Ressourcentyp
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: caed46772cd17a08b7da68a696914153cb47878a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e3ea0e4fc1cc736457992be3ed00de7e6a8ccc51
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302310"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839879"
 ---
 # <a name="devicecomplianceuserstatus-resource-type"></a>deviceComplianceUserStatus-Ressourcentyp
 

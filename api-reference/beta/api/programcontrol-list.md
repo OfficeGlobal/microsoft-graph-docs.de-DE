@@ -1,12 +1,13 @@
 ---
 title: Liste programControls
 description: In Azure AD Access Feature überprüft, eine Liste aller der ProgramControl-Objekte in allen Programmen im Mandanten.
-ms.openlocfilehash: 7e1dcb197a546e3aa823b731a9e7954803b36c2a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bc56fd5013bcf0013007b9d4264ab89eca02d43b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059134"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843953"
 ---
 # <a name="list-programcontrols"></a>Liste programControls
 
@@ -50,7 +51,7 @@ GET https://graph.microsoft.com/beta/programControls
 ```
 
 ##### <a name="response"></a>Antwort
->**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+>**Hinweis:** Das hier gezeigte Antwortobjekt wurde möglicherweise zur besseren Lesbarkeit gekürzt. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "response",
   "truncated": true,

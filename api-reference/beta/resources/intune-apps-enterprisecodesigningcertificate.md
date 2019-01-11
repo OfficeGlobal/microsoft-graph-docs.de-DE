@@ -2,12 +2,13 @@
 title: Ressourcentyp enterpriseCodeSigningCertificate
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: f16dbbf59af238e631e282d7e4d92dad46a7083b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 14ed023a831257dc28a9922e1e698a79ec13c951
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328700"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842133"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>Ressourcentyp enterpriseCodeSigningCertificate
 
@@ -22,7 +23,7 @@ Noch nicht dokumentiert.
 |[Liste enterpriseCodeSigningCertificates](../api/intune-apps-enterprisecodesigningcertificate-list.md)|[EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Auflistung|Listeneigenschaften und Beziehungen der [EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Objekte.|
 |[Abrufen von enterpriseCodeSigningCertificate](../api/intune-apps-enterprisecodesigningcertificate-get.md)|[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)|Lesen Sie Eigenschaften und Beziehungen des [EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Objekts.|
 |[Erstellen von enterpriseCodeSigningCertificate](../api/intune-apps-enterprisecodesigningcertificate-create.md)|[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)|Erstellen eines neuen [EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Objekts.|
-|[EnterpriseCodeSigningCertificate löschen](../api/intune-apps-enterprisecodesigningcertificate-delete.md)|Keines|Löscht eine [EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md).|
+|[EnterpriseCodeSigningCertificate löschen](../api/intune-apps-enterprisecodesigningcertificate-delete.md)|Keine|Löscht eine [EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md).|
 |[EnterpriseCodeSigningCertificate aktualisieren](../api/intune-apps-enterprisecodesigningcertificate-update.md)|[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)|Aktualisieren Sie die Eigenschaften eines [EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

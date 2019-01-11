@@ -2,12 +2,13 @@
 title: Ressourcentyp iosSingleSignOnSettings
 description: iOS Kerberos-Authentifizierungseinstellungen für einmaliges Anmelden
 author: tfitzmac
-ms.openlocfilehash: 6bde13865c1d6b34c433a92005681b247b99d984
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 17c2e100f9762334173ca6ca7049d1e5933f8616
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347369"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841062"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>Ressourcentyp iosSingleSignOnSettings
 

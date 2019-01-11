@@ -1,12 +1,13 @@
 ---
 title: Warnung Ressourcentyp
 description: Stellt die potenzielle Sicherheitsrisiken in Mandant des Kunden, die von Microsoft oder Partner sicherheitslösungen angegeben haben. Verwenden Sie Warnungen zu vereinheitlichen und Problem sicherheitsverwaltung über alle integrierten Lösungen zu optimieren. Finden Sie weitere Informationen finden Sie unter der Beispielabfragen im Graph-Explorer.
-ms.openlocfilehash: 6ee0018f44c6c512934a78567879a0ba4e0f48d7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b7821fbbec382b5829275682bf697985787616e7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016091"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840439"
 ---
 # <a name="alert-resource-type"></a>Warnung Ressourcentyp
 

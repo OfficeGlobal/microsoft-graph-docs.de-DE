@@ -2,12 +2,13 @@
 title: RatingUnitedStatesMoviesType Enum-Typ
 description: Filme Bewertung Beschriftungen in US-Rufnummern
 author: tfitzmac
-ms.openlocfilehash: b7c3e4e03787db01ef82cca2ff6e4de46e150915
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7feef450211eb168a9d554827199c7cf67f7cc50
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357876"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844380"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>RatingUnitedStatesMoviesType Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27357876"
 
 Filme Bewertung Beschriftungen in US-Rufnummern
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |allAllowed|0|Standardwert, alle Filme Inhalte zulassen|
 |allBlocked|1|Alle Inhalte Filme nicht zulassen|

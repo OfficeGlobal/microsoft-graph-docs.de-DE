@@ -2,12 +2,13 @@
 title: Erstellen von managementConditionStatement
 description: Erstellen eines neuen ManagementConditionStatement-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 5402faee0c7ace84957f3ff6a2ef65844f5a527e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da085e2aa384e2ee3d4eedd611cfe14945b8fe1d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327349"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806440"
 ---
 # <a name="create-managementconditionstatement"></a>Erstellen von managementConditionStatement
 
@@ -36,10 +37,10 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt ManagementConditionStatement eine JSON-Darstellung.

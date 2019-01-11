@@ -2,12 +2,13 @@
 title: fileEncryptionInfo-Ressourcentyp
 description: Enthält Eigenschaften für Dateiverschlüsselungsinformationen für die Inhaltsversion einer branchenspezifischen App.
 author: tfitzmac
-ms.openlocfilehash: c58865e746afcde8167c8d905c3b4064d8690a95
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ed56f695da8dece64702472cd3822603e02dd8b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309184"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840691"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>fileEncryptionInfo-Ressourcentyp
 

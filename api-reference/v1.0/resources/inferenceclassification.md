@@ -1,12 +1,13 @@
 ---
 title: inferenceClassification-Ressourcentyp
 description: 'Klassifizierung der Nachrichten eines Benutzers, um den Fokus auf die Nachrichten zu legen, die für den Benutzer relevanter oder wichtiger sind. '
-ms.openlocfilehash: 0fb1e01ad9710a0ff5f2de7f63808a6f3e988c13
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8dfd76b31e452532181b46cdb0b5c321e92273a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016874"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840726"
 ---
 # <a name="inferenceclassification-resource-type"></a>inferenceClassification-Ressourcentyp
 

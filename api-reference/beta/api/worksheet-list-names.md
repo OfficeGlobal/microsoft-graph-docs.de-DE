@@ -2,12 +2,13 @@
 title: Namen auflisten
 description: 'Dient zum Abrufen einer Liste von benannten Elementen, die mit dem Arbeitsblatt verknüpft sind. '
 author: lumine2008
-ms.openlocfilehash: d59693e4e946beae5b882fae543f1c5d644bd66b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a0213f18d8364e495152169e41e73938e3b62a86
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354355"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842700"
 ---
 # <a name="list-names"></a>Namen auflisten
 

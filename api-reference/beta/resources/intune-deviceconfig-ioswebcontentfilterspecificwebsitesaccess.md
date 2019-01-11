@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp iosWebContentFilterSpecificWebsitesAccess
 description: Stellt eine iOS Web Content Filter Einstellungstyp, mit dem URL Textmarken in integrierten iOS-Browser installiert werden. Ein Beispielszenario ist im Kursraum, in dem Lehrer die Teilnehmer auf Websites durch Browser Lesezeichen in ihrer iOS-Geräte und keinen Zugriff auf andere Websites konfiguriert navigieren soll.
-ms.openlocfilehash: c5e23905ab9e5b692500544161fc052dd606da5d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0dc3023c37311dc5fdeb2700b8a0fec58bdb4725
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062437"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844954"
 ---
 # <a name="ioswebcontentfilterspecificwebsitesaccess-resource-type"></a>Ressourcentyp iosWebContentFilterSpecificWebsitesAccess
 

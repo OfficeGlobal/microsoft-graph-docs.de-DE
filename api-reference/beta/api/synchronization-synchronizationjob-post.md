@@ -1,12 +1,13 @@
 ---
 title: Erstellen von synchronizationJob
 description: Erstellen Sie neue Synchronisierungsauftrag mit ein Standardschema für die Synchronisierung aus. Der Auftrag wird in deaktiviertem Zustand erstellt. Rufen Sie Start Auftrag zur Synchronisierung starten.
-ms.openlocfilehash: 3c7e3c3a9c89f95b031cd45d38848e0f2f451de7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 04b8e383c923968b150067c9d2c3a65ce32bd9c0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065270"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842224"
 ---
 # <a name="create-synchronizationjob"></a>Erstellen von synchronizationJob
 

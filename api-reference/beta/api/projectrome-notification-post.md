@@ -1,12 +1,13 @@
 ---
 title: Erstellen Sie und senden Sie eine Benachrichtigung
 description: 'Erstellen Sie und senden Sie eine Benachrichtigung für einen Benutzer über Microsoft Graph. Die Benachrichtigung wird in der Microsoft Graph-Benachrichtigung feed Store gespeichert und an alle Geräte-Endpunkten, bei denen der Benutzer, in angemeldet ist allen app-Clients gesendet.  '
-ms.openlocfilehash: 7855d8b369a2efc6dada33c66c12ae76384a2760
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 67906aa56ace21d9d03cfe47c17acda38d8c680f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063500"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843898"
 ---
 # <a name="create-and-send-a-notification"></a>Erstellen Sie und senden Sie eine Benachrichtigung
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.

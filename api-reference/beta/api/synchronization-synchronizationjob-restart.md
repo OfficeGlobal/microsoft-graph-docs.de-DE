@@ -1,12 +1,13 @@
 ---
 title: Starten Sie SynchronizationJob neu
 description: Starten Sie den Synchronisierungsauftrag erzwingen, um alle Objekte im Verzeichnis erneut zu verarbeiten. Optional löscht vorhandene Synchronisierungsstatus und vorherigen Fehler.
-ms.openlocfilehash: 0b7ebfcd7b13400225d9ea149442207ecd994a8d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 154ae4234eea6fb3499d36720e71b40cac727f9c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064384"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841027"
 ---
 # <a name="restart-synchronizationjob"></a>Starten Sie SynchronizationJob neu
 

@@ -2,12 +2,13 @@
 title: ManagedDevicePartnerReportedHealthState Enum-Typ
 description: Verfügbare Zustände für das Gerät Health-API
 author: tfitzmac
-ms.openlocfilehash: 56935f924c0796fe0db1be7b34a4782b5072784f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9c714c9ed2b070106a37b41712eeb29210d98e60
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301078"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841251"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>ManagedDevicePartnerReportedHealthState Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27301078"
 
 Verfügbare Zustände für das Gerät Health-API
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Gerät Integritätsstatus ist noch nicht gemeldet.|
 |aktiviert|1|Gerät von einem mobilen Threat Defense Partner aktiviert wurde, aber noch nicht Health gemeldet.|

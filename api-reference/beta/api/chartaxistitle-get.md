@@ -2,12 +2,13 @@
 title: ChartAxisTitle abrufen
 description: Dient zum Abrufen der Eigenschaften und der Beziehungen des ChartAxisTitle-Objekts.
 author: lumine2008
-ms.openlocfilehash: 5928474dfc2ef98cab5d0f540d7314bb2c629b9c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ee72371dc94714ff2971372e6a9ccd7742403cb0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356553"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843855"
 ---
 # <a name="get-chartaxistitle"></a>ChartAxisTitle abrufen
 

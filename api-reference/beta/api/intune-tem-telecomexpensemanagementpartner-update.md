@@ -2,12 +2,13 @@
 title: telecomExpenseManagementPartner aktualisieren
 description: Aktualisieren der Eigenschaften eines telecomExpenseManagementPartner-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 5180ce7338bdffde0fb51f504882e2b82ca96cac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5c97b2c5b864914c9f8434ce4616f3bd5803ca08
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318725"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840650"
 ---
 # <a name="update-telecomexpensemanagementpartner"></a>telecomExpenseManagementPartner aktualisieren
 
@@ -35,10 +36,10 @@ PATCH /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManageme
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md)-Objekts an.
@@ -50,8 +51,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |id|String|Eindeutiger Bezeichner des TEM-Partners|
 |displayName|String|Anzeigename des TEM-Partners|
 |url|String|Die URL für die Verwaltungssteuerung des TEM-Partners, mit der ein Administrator den TEM-Dienst konfigurieren kann.|
-|appAuthorized|Boolescher Wert|Gibt an, ob die AAD-App des Partners für den Zugriff auf Intune autorisiert wurde.|
-|enabled|Boolescher Wert|Gibt an, ob die Intune-Verbindung mit dem TEM-Dienst derzeit aktiviert oder deaktiviert ist.|
+|appAuthorized|Boolean|Gibt an, ob die AAD-App des Partners für den Zugriff auf Intune autorisiert wurde.|
+|enabled|Boolean|Gibt an, ob die Intune-Verbindung mit dem TEM-Dienst derzeit aktiviert oder deaktiviert ist.|
 |lastConnectionDateTime|DateTimeOffset|Zeitstempel der letzten vom TEM-Partner an Intune gesendeten Anforderung|
 
 

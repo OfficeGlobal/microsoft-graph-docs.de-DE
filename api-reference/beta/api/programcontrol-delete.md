@@ -1,12 +1,13 @@
 ---
 title: ProgramControl löschen
 description: In Azure AD zugreifen auf Berichte-Funktion, löschen Sie ein ProgramControl-Objekt zu.  Dies hebt die Verknüpfung mit einer Access-Überprüfung aus einem Programm.
-ms.openlocfilehash: a7f21cd4c18ecda2ce15a6dd76d87322f75e4af0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 782cc8f336e84f82d937e3180d7de6af69e67e52
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060673"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843918"
 ---
 # <a name="delete-programcontrol"></a>ProgramControl löschen
 

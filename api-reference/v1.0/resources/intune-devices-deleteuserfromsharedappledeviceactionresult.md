@@ -2,12 +2,13 @@
 title: deleteUserFromSharedAppleDeviceActionResult-Ressourcentyp
 description: Benutzer von freigegebenem Apple-Gerät löschen – Aktionsergebnis
 author: tfitzmac
-ms.openlocfilehash: 2dc6dbdeb8bb72314b25f695f82e4f4dfff0b8fd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1c6e014f0461c1e6a72a4d67791c27dc401f87f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356035"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804949"
 ---
 # <a name="deleteuserfromsharedappledeviceactionresult-resource-type"></a>deleteUserFromSharedAppleDeviceActionResult-Ressourcentyp
 

@@ -1,12 +1,13 @@
 ---
 title: Instanzen auflisten
 description: Rufen Sie die Instanzen (vorkommen) eines Ereignisses für einen angegebenen Zeitraum. Wenn das Ereignis gehört zu einer `SeriesMaster` eingeben, gibt die
-ms.openlocfilehash: 101cc2988b96a0e865e448686095a187619c46ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 79f6f5832a30f37a4f66e07eb44c2d31a39f7546
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063094"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843442"
 ---
 # <a name="list-instances"></a>Listeninstanzen
 

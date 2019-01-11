@@ -2,12 +2,13 @@
 title: Ressourcentyp win32LobApp
 description: Enthält Eigenschaften und geerbten Eigenschaften für Win32-apps.
 author: tfitzmac
-ms.openlocfilehash: c0941db87aeb5f2414d7e1c06729461de3483bc9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6cd1a0d715ba4c9ebcd26d88edcefcd0136bf919
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323093"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842770"
 ---
 # <a name="win32lobapp-resource-type"></a>Ressourcentyp win32LobApp
 
@@ -25,7 +26,7 @@ Erbt von [mobileLobApp](../resources/intune-apps-mobilelobapp.md).
 |[Liste win32LobApps](../api/intune-apps-win32lobapp-list.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md) -Auflistung|Listeneigenschaften und Beziehungen der [win32LobApp](../resources/intune-apps-win32lobapp.md) -Objekte.|
 |[Abrufen von win32LobApp](../api/intune-apps-win32lobapp-get.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Lesen Sie Eigenschaften und Beziehungen des [win32LobApp](../resources/intune-apps-win32lobapp.md) -Objekts.|
 |[Erstellen von win32LobApp](../api/intune-apps-win32lobapp-create.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Erstellen eines neuen [win32LobApp](../resources/intune-apps-win32lobapp.md) -Objekts.|
-|[Win32LobApp löschen](../api/intune-apps-win32lobapp-delete.md)|Keines|Löscht eine [win32LobApp](../resources/intune-apps-win32lobapp.md).|
+|[Win32LobApp löschen](../api/intune-apps-win32lobapp-delete.md)|Keine|Löscht eine [win32LobApp](../resources/intune-apps-win32lobapp.md).|
 |[Win32LobApp aktualisieren](../api/intune-apps-win32lobapp-update.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Aktualisieren Sie die Eigenschaften eines [win32LobApp](../resources/intune-apps-win32lobapp.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
@@ -38,7 +39,7 @@ Erbt von [mobileLobApp](../resources/intune-apps-mobilelobapp.md).
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Das große Symbol, das in den App-Details angezeigt und für den Upload des Symbols verwendet werden soll. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|isFeatured|Boolescher Wert|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|isFeatured|Boolean|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |privacyInformationUrl|String|URL zur Datenschutzerklärung. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |informationUrl|String|URL zur Seite mit weiteren Informationen. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|String|Der Besitzer der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|

@@ -1,12 +1,13 @@
 ---
 title: Erstellen von mailSearchFolder
 description: Verwenden Sie diese API, um eine neue MailSearchFolder in das angegebene Postfach des Benutzers zu erstellen.
-ms.openlocfilehash: a35827a6b9164c8d4c1c0fe54a1897b2271fc5d6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 07c6b96bc2dec35d06b5563673012ca0eafb3885
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064148"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840187"
 ---
 # <a name="create-mailsearchfolder"></a>Erstellen von mailSearchFolder
 
@@ -50,7 +51,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 |:----------|:-----|:------------|
 | @odata.type | String | Der Typ des zu erstellenden Ordners. Legen Sie auf "microsoft.graph.mailSearchFolder". |
 | displayName | String | Der Anzeigename für den neuen Ordner.|
-| includeNestedFolders | Boolesch | Wie sollte die Hierarchie der Postfach-Ordner durchlaufen werden. `true`bedeutet, dass eine umfassende Suche sollte erledigen `false` bedeutet, dass eine flache Suche sollte stattdessen durchgeführt werden. |
+| includeNestedFolders | Boolean | Wie sollte die Hierarchie der Postfach-Ordner durchlaufen werden. `true`bedeutet, dass eine umfassende Suche sollte erledigen `false` bedeutet, dass eine flache Suche sollte stattdessen durchgeführt werden. |
 | sourceFolderIDs | Collection von Objekten des Typs „String“ | Die Postfachordner, die durchsucht werden soll. |
 | filterQuery | String | Der OData-Abfrage Nachrichten gefiltert werden soll. |
 

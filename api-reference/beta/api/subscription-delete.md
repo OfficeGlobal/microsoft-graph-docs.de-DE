@@ -1,12 +1,13 @@
 ---
 title: Abonnement löschen
 description: Mit dieser API können Sie Abonnements löschen.
-ms.openlocfilehash: be2c32f0915e8718203e46489be9861bf0f05451
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1e2efb9835e5e625bdac0385b5011cfe5c8c64b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059732"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842049"
 ---
 # <a name="delete-subscription"></a>Abonnement löschen
 

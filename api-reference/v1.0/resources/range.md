@@ -1,12 +1,13 @@
 ---
 title: Range-Ressourcentyp
 description: Ein Bereich stellt einen Satz von einer oder mehrerer zusammenhängender Zellen wie z. B. eine Zelle, eine Zeile oder eine Spalte, ein Block von Zellen usw. dar.
-ms.openlocfilehash: d0b46587379383350fd6714b3c532dc191b641fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 65cbea6b0e025d5d4d574ebf1db3b924e042f497
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019198"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806538"
 ---
 # <a name="range-resource-type"></a>Range-Ressourcentyp
 
@@ -35,7 +36,7 @@ Ein Bereich stellt einen Satz von einer oder mehrerer zusammenhängender Zellen 
 |[Rowsabove](../api/workbookrange-rowsabove.md)|[workbookRangeView](workbookrangeview.md)|Ruft eine bestimmte Anzahl von Zeilen oberhalb eines gegebenen Bereichs ab.|
 |[Rowsbelow](../api/workbookrange-rowsbelow.md)|[workbookRangeView](workbookrangeview.md)|Ruft eine bestimmte Anzahl von Zeilen unterhalb eines gegebenen Bereichs ab.|
 |[Usedrange](../api/range-usedrange.md)|[Range](range.md)|Gibt den verwendeten Bereich des angegebenen Bereichsobjekts zurück.|
-|[Löschen](../api/range-clear.md)|Keine|Löscht Bereichswerte, Format, Füllung, Rahmen usw.|
+|[Clear](../api/range-clear.md)|Keine|Löscht Bereichswerte, Format, Füllung, Rahmen usw.|
 |[Delete](../api/range-delete.md)|Keine|Löscht die dem Bereich zugeordneten Zellen.|
 |[Einfügen](../api/range-insert.md)|[Range](range.md)|Fügt eine Zelle oder einen Zellbereich in das Arbeitsblatt anstelle dieses Bereichs ein, und verschiebt die anderen Zellen, um Platz zu schaffen. Gibt ein neues Bereichsobjekt in dem nun leeren Bereich zurück.|
 |[Merge](../api/range-merge.md)|Keine|Führt die Zellen des Bereichs in einen Bereich im Arbeitsblatt zusammen.|
@@ -67,7 +68,7 @@ Ein Bereich stellt einen Satz von einer oder mehrerer zusammenhängender Zellen 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Format|[WorkbookRangeFormat](rangeformat.md)|Gibt ein Formatobjekt zurück, das die Schriftart des Bereichs, Füllung, den Rahmen, die Ausrichtung und andere Eigenschaften verschachtelt. Schreibgeschützt.|
+|format|[WorkbookRangeFormat](rangeformat.md)|Gibt ein Formatobjekt zurück, das die Schriftart des Bereichs, Füllung, den Rahmen, die Ausrichtung und andere Eigenschaften verschachtelt. Schreibgeschützt.|
 |sort|[WorkbookRangeSort](rangesort.md)|Das Arbeitsblatt, das den aktuellen Bereich enthält. Schreibgeschützt.|
 |Arbeitsblatt|[WorkbookWorksheet](worksheet.md)|Das Arbeitsblatt, das den aktuellen Bereich enthält. Schreibgeschützt.|
 

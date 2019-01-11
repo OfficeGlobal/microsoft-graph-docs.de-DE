@@ -2,12 +2,13 @@
 title: Abrufen von iosEnterpriseWiFiConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des IosEnterpriseWiFiConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: c9e75d76b9c4deac53894268e6a7c9a8682d0061
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9707e8daa6b987c2e36a34a6a4b66a501e2be874
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362510"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841734"
 ---
 # <a name="get-iosenterprisewificonfiguration"></a>Abrufen von iosEnterpriseWiFiConfiguration
 
@@ -39,10 +40,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

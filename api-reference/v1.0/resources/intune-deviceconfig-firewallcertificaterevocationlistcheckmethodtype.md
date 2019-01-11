@@ -2,12 +2,13 @@
 title: FirewallCertificateRevocationListCheckMethodType Enum-Typ
 description: Mögliche Werte für firewallCertificateRevocationListCheckMethod
 author: tfitzmac
-ms.openlocfilehash: ab496b5deb8f096bdc48a2b50a1af994c8ec8d5b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2beee8f7c4f049aa1918b7e1516c3ce586a8cad0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353662"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839949"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>FirewallCertificateRevocationListCheckMethodType Enum-Typ
 
@@ -15,10 +16,10 @@ ms.locfileid: "27353662"
 
 Mögliche Werte für firewallCertificateRevocationListCheckMethod
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |deviceDefault|0|Überschreiben Sie keinen Wert von Intune, konfiguriert nicht den Standardwert für den Benutzer konfigurierten Gerät|
-|Keine|1|Zertifikatsperrliste nicht prüfen|
+|n/v|1|Zertifikatsperrliste nicht prüfen|
 |Versuchen Sie|2|Versuchen Sie Zertifikatsperrlistenprüfung und zulassen Sie ein Zertifikat nur, wenn das Zertifikat mithilfe der Kontrollkästchen bestätigt wird|
 |erfordern|3|Erfordern Sie eine erfolgreiche Zertifikatsperrlistenprüfung, bevor Sie ein Zertifikat|
 

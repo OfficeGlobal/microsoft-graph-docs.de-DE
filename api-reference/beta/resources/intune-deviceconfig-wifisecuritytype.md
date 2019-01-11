@@ -2,12 +2,13 @@
 title: WiFiSecurityType Enum-Typ
 description: Wi-Fi-Sicherheitstypen.
 author: tfitzmac
-ms.openlocfilehash: 291bc3660971a90ea113959368542e715a86b570
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 90290b9b47154b95aca81d931fa66e7984688db1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329190"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839921"
 ---
 # <a name="wifisecuritytype-enum-type"></a>WiFiSecurityType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27329190"
 
 Wi-Fi-Sicherheitstypen.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |Öffnen Sie|0|Öffnen Sie (keine Authentifizierung).|
 |wpaPersonal|1|WPA-Persönlich.|

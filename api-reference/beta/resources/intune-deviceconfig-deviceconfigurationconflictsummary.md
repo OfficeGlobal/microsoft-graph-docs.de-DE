@@ -2,12 +2,13 @@
 title: Ressourcentyp deviceConfigurationConflictSummary
 description: Zusammenfassung für einen Satz von Richtlinien für die Konfiguration von Geräte Konflikt.
 author: tfitzmac
-ms.openlocfilehash: 1c0caefc497c18fe7a8504324e048cec0e53bd3c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f8d84a4240059ff9772fefd9737ad27d8fbae7a8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308988"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843337"
 ---
 # <a name="deviceconfigurationconflictsummary-resource-type"></a>Ressourcentyp deviceConfigurationConflictSummary
 
@@ -22,7 +23,7 @@ Zusammenfassung für einen Satz von Richtlinien für die Konfiguration von Gerä
 |[Liste deviceConfigurationConflictSummaries](../api/intune-deviceconfig-deviceconfigurationconflictsummary-list.md)|[DeviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) -Auflistung|Listeneigenschaften und Beziehungen der [DeviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) -Objekte.|
 |[Abrufen von deviceConfigurationConflictSummary](../api/intune-deviceconfig-deviceconfigurationconflictsummary-get.md)|[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)|Lesen Sie Eigenschaften und Beziehungen des [DeviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) -Objekts.|
 |[Erstellen von deviceConfigurationConflictSummary](../api/intune-deviceconfig-deviceconfigurationconflictsummary-create.md)|[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)|Erstellen eines neuen [DeviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) -Objekts.|
-|[DeviceConfigurationConflictSummary löschen](../api/intune-deviceconfig-deviceconfigurationconflictsummary-delete.md)|Keines|Löscht eine [DeviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md).|
+|[DeviceConfigurationConflictSummary löschen](../api/intune-deviceconfig-deviceconfigurationconflictsummary-delete.md)|Keine|Löscht eine [DeviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md).|
 |[DeviceConfigurationConflictSummary aktualisieren](../api/intune-deviceconfig-deviceconfigurationconflictsummary-update.md)|[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)|Aktualisieren Sie die Eigenschaften eines [DeviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

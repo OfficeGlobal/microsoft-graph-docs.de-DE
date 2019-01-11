@@ -2,12 +2,13 @@
 title: AndroidForWorkBindStatus Enum-Typ
 description: Binden der Status des Mandanten mit der Google EMM-API
 author: tfitzmac
-ms.openlocfilehash: 56ec9c1d501d54a10f1fc8880086a56061fa865b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c5959549aabe5d5059fe8929e2505515b781c21c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360886"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841881"
 ---
 # <a name="androidforworkbindstatus-enum-type"></a>AndroidForWorkBindStatus Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27360886"
 
 Binden der Status des Mandanten mit der Google EMM-API
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |notBound|0|Noch nicht dokumentiert|
 |Gebunden|1|Noch nicht dokumentiert|

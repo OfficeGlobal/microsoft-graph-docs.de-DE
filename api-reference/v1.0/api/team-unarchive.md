@@ -1,12 +1,13 @@
 ---
 title: Entpackt team
 description: Wiederherstellen eines archivierten Teams. Dadurch wird die Möglichkeit zum Senden von Nachrichten und das Team Verhältnismäßigkeitsprinzips Mandanten und Team-Einstellungen Bearbeiten des Benutzers wiederhergestellt. Teams sind mithilfe des Archivs API archiviert.
-ms.openlocfilehash: 7507a58ef75939110d0c740e20d8540838bda204
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+localization_priority: Normal
+ms.openlocfilehash: f203e10c4f82379efcc6da3aff96bc1bc5bf702e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222611"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840082"
 ---
 # <a name="unarchive-team"></a>Entpackt team
 
@@ -34,7 +35,7 @@ POST /teams/{id}/unarchive
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

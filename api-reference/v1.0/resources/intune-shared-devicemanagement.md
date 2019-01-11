@@ -1,12 +1,13 @@
 ---
 title: deviceManagement-Ressourcentyp
 description: 'Die Ressource DeviceManagement stellt einen Container, deren Inhalt variieren nach Workflow je, einschließlich:  '
-ms.openlocfilehash: 4e092c3d1ae318da47f52e6ccfb2d5efe577e8eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e7517ac2c9560723c6c3c4dce2dc070b1ec96af3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018894"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822204"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement-Ressourcentyp
 

@@ -2,12 +2,13 @@
 title: Ressourcentyp teamsApp
 description: Eine app in den Microsoft-Teams, app-Katalog.
 author: nkramer
-ms.openlocfilehash: b0f3bb42bb90c2c3f0211c5a7092fa7fdb9b10b5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b02af5148e40cddd6079de3479767110a9877e4f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305327"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841573"
 ---
 # <a name="teamsapp-resource-type"></a>Ressourcentyp teamsApp
 
@@ -24,7 +25,7 @@ Benutzer können diese apps im Microsoft-Teams Store anzeigen, und diese apps in
 |[Liste der veröffentlichten apps](../api/teamsapp-list.md) | [TeamsApp](teamsapp.md) -Auflistung | Veröffentlichte apps aus dem Microsoft-Teams, apps Katalog aufgelistet.|
 |[Veröffentlichen einer app](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Veröffentlichen einer app in Ihrer Organisation app-Katalog.|
 |[Aktualisieren einer veröffentlichten Anwendung](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Aktualisieren einer veröffentlichten-app in Ihrer Organisation app-Katalog.|
-|[Entfernen einer veröffentlichten Anwendung](../api/teamsapp-delete.md) | Keines | Entfernen Sie eine veröffentlichte app aus Ihrer Organisation app-Katalog.|
+|[Entfernen einer veröffentlichten Anwendung](../api/teamsapp-delete.md) | Keine | Entfernen Sie eine veröffentlichte app aus Ihrer Organisation app-Katalog.|
 
 ## <a name="properties"></a>Eigenschaften
 
@@ -37,7 +38,7 @@ Benutzer können diese apps im Microsoft-Teams Store anzeigen, und diese apps in
 
 ### <a name="teamsappdistributionmethod-values"></a>TeamsAppDistributionMethod Werte
 
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |Speichern|0| Die app ist für alle Mandanten über Microsoft-Teams app Store verfügbar.|
 |Organisation|1|Die app ist nur in diesen Mandanten verfügbar.|

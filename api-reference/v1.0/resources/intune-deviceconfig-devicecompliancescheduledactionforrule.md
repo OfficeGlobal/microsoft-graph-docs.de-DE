@@ -2,12 +2,13 @@
 title: deviceComplianceScheduledActionForRule-Ressourcentyp
 description: Geplante Aktion für eine Regel
 author: tfitzmac
-ms.openlocfilehash: 36907817adea4a457f13fce57345d68b866be116
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7a811a5825c516f2847838085812dc3daf75713a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315617"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839998"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>deviceComplianceScheduledActionForRule-Ressourcentyp
 

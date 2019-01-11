@@ -2,12 +2,13 @@
 title: Aktion „wipe“
 description: Mit dieser Aktion lässt sich ein Gerät zurücksetzen.
 author: tfitzmac
-ms.openlocfilehash: 9e83be9da2fe4b6614f7169a73e47c183590f9da
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 91b04311692609687792ce22c5cc81074239ba23
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326299"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842840"
 ---
 # <a name="wipe-action"></a>Aktion „wipe“
 
@@ -38,10 +39,10 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.
@@ -51,7 +52,7 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |keepEnrollmentData|Boolean|Noch nicht dokumentiert|
-|keepUserData|Boolescher Wert|Noch nicht dokumentiert|
+|keepUserData|Boolean|Noch nicht dokumentiert|
 |macOsUnlockCode|String|Noch nicht dokumentiert|
 
 

@@ -2,12 +2,13 @@
 title: Ressourcentyp bitLockerRecoveryOptions
 description: BitLocker Wiederherstellungsoptionen.
 author: tfitzmac
-ms.openlocfilehash: c85ce3111ed88ce8e8bf54c98d5fd3122571a0be
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eae2052f71d1b1d048072c70dc76437811c1cd8f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310605"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806454"
 ---
 # <a name="bitlockerrecoveryoptions-resource-type"></a>Ressourcentyp bitLockerRecoveryOptions
 
@@ -19,13 +20,13 @@ BitLocker Wiederherstellungsoptionen.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|blockDataRecoveryAgent|Boolesch|Gibt an, ob zertifikatbasierte Datenwiederherstellungsagent blockiert.|
+|blockDataRecoveryAgent|Boolean|Gibt an, ob zertifikatbasierte Datenwiederherstellungsagent blockiert.|
 |recoveryPasswordUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Gibt an, ob Benutzer zugelassen oder erforderlich, um ein Wiederherstellungskennwort 48 Ziffern generieren für feste oder Systemdatenträger. Mögliche Werte sind: `blocked`, `required` und `allowed`.|
 |recoveryKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Gibt an, ob Benutzer zugelassen oder erforderlich, um eine 256-Bit-Wiederherstellungsschlüssel generieren für feste oder Systemdatenträger. Mögliche Werte sind: `blocked`, `required` und `allowed`.|
-|hideRecoveryOptions|Boolesch|Gibt an, ob Wiederherstellungsoptionen BitLocker-Setup-Assistenten enthält die feste zulassen oder Systemdatenträger.|
-|enableRecoveryInformationSaveToStore|Boolesch|Gibt an, ob BitLocker-Wiederherstellungsinformationen in AD DS speichern können.|
+|hideRecoveryOptions|Boolean|Gibt an, ob Wiederherstellungsoptionen BitLocker-Setup-Assistenten enthält die feste zulassen oder Systemdatenträger.|
+|enableRecoveryInformationSaveToStore|Boolean|Gibt an, ob BitLocker-Wiederherstellungsinformationen in AD DS speichern können.|
 |recoveryInformationToStore|[bitLockerRecoveryInformationType](../resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md)|Konfigurieren Sie, welche Teile der BitLocker-Wiederherstellungsinformationen in AD DS gespeichert sind. Mögliche Werte sind: `passwordAndKey` und `passwordOnly`.|
-|enableBitLockerAfterRecoveryInformationToStore|Boolesch|Gibt an, ob BitLocker aktivieren, bis Wiederherstellungsinformationen in AD DS gespeichert wird.|
+|enableBitLockerAfterRecoveryInformationToStore|Boolean|Gibt an, ob BitLocker aktivieren, bis Wiederherstellungsinformationen in AD DS gespeichert wird.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

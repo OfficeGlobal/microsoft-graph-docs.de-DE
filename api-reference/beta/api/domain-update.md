@@ -2,12 +2,13 @@
 title: Domäne aktualisieren
 description: Dient zum Aktualisieren der Eigenschaften eines Domänenobjekts.
 author: lleonard-msft
-ms.openlocfilehash: ebb58ac0c1daa23d7c8c8eb08743d3856798a4ae
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7815d86a733d597860ed986b926972e328598f65
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361439"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843519"
 ---
 # <a name="update-domain"></a>Domäne aktualisieren
 

@@ -2,12 +2,13 @@
 title: Ressourcentyp remoteActionAudit
 description: Bericht zu remote Aktionen auf den Geräten, die auf einen bestimmten Mandanten gehören initiiert wurden.
 author: tfitzmac
-ms.openlocfilehash: 48d74cb088a2e16e244898834e3d717302713e6f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7624610ed35a583e0ec11582caa1dccda5ce4ce7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323478"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840810"
 ---
 # <a name="remoteactionaudit-resource-type"></a>Ressourcentyp remoteActionAudit
 
@@ -22,7 +23,7 @@ Bericht zu remote Aktionen auf den Geräten, die auf einen bestimmten Mandanten 
 |[Liste remoteActionAudits](../api/intune-devices-remoteactionaudit-list.md)|[RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md) -Auflistung|Listeneigenschaften und Beziehungen der [RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md) -Objekte.|
 |[Abrufen von remoteActionAudit](../api/intune-devices-remoteactionaudit-get.md)|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|Lesen Sie Eigenschaften und Beziehungen des [RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md) -Objekts.|
 |[Erstellen von remoteActionAudit](../api/intune-devices-remoteactionaudit-create.md)|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|Erstellen eines neuen [RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md) -Objekts.|
-|[RemoteActionAudit löschen](../api/intune-devices-remoteactionaudit-delete.md)|Keines|Löscht eine [RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md).|
+|[RemoteActionAudit löschen](../api/intune-devices-remoteactionaudit-delete.md)|Keine|Löscht eine [RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md).|
 |[RemoteActionAudit aktualisieren](../api/intune-devices-remoteactionaudit-update.md)|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|Aktualisieren Sie die Eigenschaften eines [RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

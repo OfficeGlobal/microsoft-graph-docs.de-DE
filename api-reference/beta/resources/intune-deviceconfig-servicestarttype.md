@@ -2,12 +2,13 @@
 title: ServiceStartType Enum-Typ
 description: Mögliche Werte für Xbox Dienst starten Typ
 author: tfitzmac
-ms.openlocfilehash: f859e0620abe9953f974778d3a816d7814572476
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 89cb74a05fcda01c97806f060b5ca9cf4a9fe437
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308064"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839991"
 ---
 # <a name="servicestarttype-enum-type"></a>ServiceStartType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27308064"
 
 Mögliche Werte für Xbox Dienst starten Typ
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |Manuell|0|Manueller Dienst Start type(default)|
 |Automatisch|1|Automatische Start Diensttyp|

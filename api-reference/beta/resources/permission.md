@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Berechtigung
-ms.openlocfilehash: 195d4840fdb25339eda3858c0bac2395ee9b1c4a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 34798437f1bf27c68c390b0f04618985de5cecf3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064970"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843316"
 ---
 # <a name="permission-resource-type"></a>Berechtigung Ressourcentyp
 
@@ -70,7 +71,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 | roles               | Collection(String)          | Die Art der Berechtigung z, B. `read` Nachfolgend finden Sie die vollständige Liste von Rollen. Schreibgeschützt.
 | shareId             | String                      | Ein eindeutiges Token, das Zugriff auf diese über die **[API teilt][]** des freigegebenen Elements verwendet werden können. Schreibgeschützt.
 | expirationDateTime  | DateTimeOffset              | Ein Format JJJJ-MM-TTThh von DateTimeOffset gibt den Ablaufzeitpunkt der Berechtigung. DateTime.MinValue gibt es für diese Berechtigung, kein Ablaufdatum festgelegt ist. Optional.
-| hasPassword         | Boolesch                     | Dies gibt an, ob das Kennwort für diese Berechtigung festgelegt ist, diese nur als Antwort angezeigt wird. Optional und nur-Lese und für OneDrive Personal nur.
+| hasPassword         | Boolean                     | Dies gibt an, ob das Kennwort für diese Berechtigung festgelegt ist, diese nur als Antwort angezeigt wird. Optional und nur-Lese und für OneDrive Personal nur.
 
 ### <a name="roles-enumeration-values"></a>Werte des Rollen-enumeration
 
