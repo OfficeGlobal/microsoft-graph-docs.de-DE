@@ -2,12 +2,13 @@
 title: AndroidForWorkMobileAppConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidForWorkMobileAppConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 4e9874ef1becc3840320e85872451a8573b95f53
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e7e593a146b075900e7ce3a59ce5bf49a9f05c02
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320209"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838101"
 ---
 # <a name="update-androidforworkmobileappconfiguration"></a>AndroidForWorkMobileAppConfiguration aktualisieren
 
@@ -35,10 +36,10 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [AndroidForWorkMobileAppConfiguration](../resources/intune-apps-androidforworkmobileappconfiguration.md) eine JSON-Darstellung.

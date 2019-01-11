@@ -1,12 +1,13 @@
 ---
 title: Zeitstempel Ressourcentyp
 description: Datum und Uhrzeit Informationen für einen Punkt in der Zeit.
-ms.openlocfilehash: 24326f0c104dd4ee2be80016ce798cc843288975
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b3e6e7384c9efdcb0e606f91d7357272f27ceaa1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061681"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830226"
 ---
 # <a name="timestamp-resource-type"></a>Zeitstempel Ressourcentyp
 

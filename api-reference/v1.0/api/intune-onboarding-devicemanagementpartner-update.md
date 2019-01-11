@@ -2,12 +2,13 @@
 title: deviceManagementPartner aktualisieren
 description: Aktualisieren der Eigenschaften eines deviceManagementPartner-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 50f73894bc1ae73671c58c50e78a0bee484d7d04
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c8e9425968d00805eb8640ff3a7e19380a92c6dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353879"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838780"
 ---
 # <a name="update-devicemanagementpartner"></a>deviceManagementPartner aktualisieren
 
@@ -33,10 +34,10 @@ PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) an.
@@ -51,7 +52,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Partner-App-Typ. Mögliche Werte sind: `unknown`, `singleTenantApp` und `multiTenantApp`.|
 |singleTenantAppId|String|ID der Partner-App mit einem einzelnen Mandanten|
 |displayName|String|Anzeigename für Partner|
-|isConfigured|Boolescher Wert|Gibt an, ob Geräteverwaltungspartner konfiguriert ist.|
+|isConfigured|Boolean|Gibt an, ob Geräteverwaltungspartner konfiguriert ist.|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|DateTime in UTC, zu der PartnerDevices entfernt werden|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|DateTime in UTC, zu der PartnerDevices als nicht kompatibel gekennzeichnet werden|
 

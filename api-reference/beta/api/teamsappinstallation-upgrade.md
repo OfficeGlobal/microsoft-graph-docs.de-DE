@@ -2,12 +2,13 @@
 title: Aktualisieren einer app in einem team
 description: Führt ein Upgrade für eine app-Installation in ein team
 author: nkramer
-ms.openlocfilehash: 1e3ebffa9786d170424dd60618f553c515154140
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 194763ea8464dd0651c3af1cef73e479b403d083
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341440"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831374"
 ---
 # <a name="upgrade-an-app-in-a-team"></a>Aktualisieren einer app in einem team
 
@@ -32,7 +33,7 @@ POST /teams/{id}/installedApps/{id}/upgrade
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

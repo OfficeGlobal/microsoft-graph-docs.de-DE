@@ -2,12 +2,13 @@
 title: disconnect-Aktion
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 99fbd3bc1f16a96252deaf573c545115bab8106d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9f49aa57400d15410c31cc4a45793ef0e230ab5f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329974"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808197"
 ---
 # <a name="disconnect-action"></a>disconnect-Aktion
 
@@ -35,10 +36,10 @@ POST /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}/disc
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

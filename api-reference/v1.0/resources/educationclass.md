@@ -1,12 +1,13 @@
 ---
 title: educationClass-Ressourcentyp
 description: 'Stellt eine Klasse in einer Schule dar. Die **educationClass**-Ressource entspricht der Office 365-Gruppe und hat die gleiche ID. Kursteilnehmer sind reguläre Mitglieder der Klasse, Lehrer sind Besitzer und verfügen über entsprechende Rechte. Damit Office-Benutzeroberflächen ordnungsgemäß funktionieren, müssen Lehrer Mitglieder der Sammlungen der Lehrkräfte wie auch der Mitglieder sein.  '
-ms.openlocfilehash: 4d61ca209b61b8b2b65fbe92b7ba16854e11fb37
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 97cf3b63cfb25a4c50df03c9c10212bd774c8b61
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018673"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831845"
 ---
 # <a name="educationclass-resource-type"></a>educationClass-Ressourcentyp
 
@@ -49,7 +50,7 @@ Stellt eine Klasse in einer Schule dar. Die **educationClass**-Ressource entspri
 |members|[educationUser](../resources/educationuser.md)-Sammlung| Alle Benutzer in der Klasse. Lässt Nullwerte zu.|
 |schools|[educationSchool](../resources/educationschool.md)-Sammlung| Alle Schulen, denen dieser Klasse zugeordnet ist. Lässt Nullwerte zu.|
 |teachers|[educationUser](../resources/educationuser.md)-Sammlung|  Alle Lehrer in der Klasse. Lässt Nullwerte zu.|
-|group|[Gruppe](../resources/group.md)| Die Directory-Gruppe, die diese Klasse entspricht.|
+|group|[group](../resources/group.md)| Die Directory-Gruppe, die diese Klasse entspricht.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

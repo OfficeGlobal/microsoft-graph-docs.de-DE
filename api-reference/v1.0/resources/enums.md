@@ -1,12 +1,13 @@
 ---
 title: TimeZoneStandard Werte
 description: " Wert"
-ms.openlocfilehash: 7212a3ca1394ce73357aa9c22550a79f638ea973
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6f9a08a7f20ff9b4f5463c6d7e4877568c49eee1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016938"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825732"
 ---
 ### <a name="timezonestandard-values"></a>TimeZoneStandard Werte
 
@@ -241,7 +242,7 @@ ms.locfileid: "27016938"
 | Besitzer       | 0
 | Mitwirkender | 1
 | Reader      | 2
-| Keines        | -1
+| Keine        | -1
 
 
 ### <a name="operationstatus-values"></a>OperationStatus Werte
@@ -251,7 +252,7 @@ ms.locfileid: "27016938"
 | NotStarted
 | Wird ausgeführt
 | Completed
-| Fehlgeschlagen
+| Failed
 
 
 ### <a name="onenotepatchactiontype-values"></a>OnenotePatchActionType Werte
@@ -269,7 +270,7 @@ ms.locfileid: "27016938"
 | Wert
 |:-------------------------
 | After
-| Vor dem
+| Before
 
 
 ### <a name="phonetype-values"></a>PhoneType Werte
@@ -278,7 +279,7 @@ ms.locfileid: "27016938"
 |:-------------------------
 | privat
 | Business
-| mobile
+| Mobile
 | andere
 | Assistent
 | Fax (privat)
@@ -315,7 +316,7 @@ ms.locfileid: "27016938"
 | Wert
 |:-------------------------
 | erste
-| second
+| Sekunde
 | Dritte
 | vierte
 | letzte

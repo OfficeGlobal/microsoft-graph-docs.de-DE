@@ -2,12 +2,13 @@
 title: eventMessage löschen
 description: Mit dieser API können Sie Ressourcen des Typs „eventMessage“ löschen.
 author: angelgolfer-ms
-ms.openlocfilehash: 13ca9c908dc1b00a355c33f69951e04b80f26e0a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fb6f00b642a919e63250074dc6f447be7997a722
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337716"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831276"
 ---
 # <a name="delete-eventmessage"></a>eventMessage löschen
 
@@ -33,7 +34,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: Beitragsressourcentyp
 description: Stellt ein einzelnes Post-Element innerhalb einer ConverstaionThread Entität.
 author: dkershaw10
-ms.openlocfilehash: 6030bd5ef3c59edbad9712b549531a193b808b14
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1912917347697a6f78876175e6fe9f9c160869e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363718"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834041"
 ---
 # <a name="post-resource-type"></a>Beitragsressourcentyp
 
@@ -69,7 +70,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |conversationThreadId|String|Eindeutige ID des Unterhaltungsthreads. Schreibgeschützt.|
 |createdDateTime|DateTimeOffset|Gibt an, wann der Beitrag erstellt wurde. Der DateTimeOffset-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |Von|[Empfänger](recipient.md)|Wird in Zugriffsszenarien mit Stellvertretungen verwendet. Gibt an, wer die Nachricht im Auftrag eines anderen Benutzers veröffentlicht hat. Dies ist eine Standardeigenschaft.|
-|hasAttachments|Boolescher Wert|Gibt an, ob der Beitrag mindestens eine Anlage enthält. Dies ist eine Standardeigenschaft.|
+|hasAttachments|Boolean|Gibt an, ob der Beitrag mindestens eine Anlage enthält. Dies ist eine Standardeigenschaft.|
 |id|String| Schreibgeschützt|
 |importance | String | Die Bedeutung der einer Gruppe Post: `low`, `normal`, `high`. |
 |lastModifiedDateTime|DateTimeOffset|Gibt an, wann der Beitrag zuletzt geändert wurde. Der DateTimeOffset-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|

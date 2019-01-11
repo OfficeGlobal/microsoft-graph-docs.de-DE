@@ -2,12 +2,13 @@
 title: EnterpriseCodeSigningCertificate aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines EnterpriseCodeSigningCertificate-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 4cf0eb5607af176e1c0cb0a6418f01339b2bb96f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5272c0ff0e18fd7200e85ff51575c10825dbf7f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332802"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829316"
 ---
 # <a name="update-enterprisecodesigningcertificate"></a>EnterpriseCodeSigningCertificate aktualisieren
 
@@ -35,10 +36,10 @@ PATCH /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSign
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) eine JSON-Darstellung.

@@ -2,12 +2,13 @@
 title: Abrufen von deviceManagementExchangeOnPremisesPolicy
 description: Lesen Sie Eigenschaften und Beziehungen des DeviceManagementExchangeOnPremisesPolicy-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 03e7bfcb1a09fd01d83e0dabcd99e31d69537446
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a587e369fc99f1f6b3a0ec7478271e1669a19aba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357330"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832942"
 ---
 # <a name="get-devicemanagementexchangeonpremisespolicy"></a>Abrufen von deviceManagementExchangeOnPremisesPolicy
 
@@ -38,10 +39,10 @@ GET /deviceManagement/exchangeOnPremisesPolicies/{deviceManagementExchangeOnPrem
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

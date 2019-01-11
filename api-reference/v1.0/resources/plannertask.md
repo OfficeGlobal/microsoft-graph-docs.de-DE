@@ -1,12 +1,13 @@
 ---
 title: plannerTask-Ressourcentyp
 description: Die **plannerTask**-Ressource stellt eine Planer-Aufgabe in Office 365 dar. Eine Planner-Aufgabe ist in einem Plan enthalten und kann einem Bucket in einem Plan zugewiesen werden. Jedes Aufgabenobjekt verfügt über ein details-Objekt, das weitere Informationen über die Aufgabe enthalten kann. Weitere Informationen zu Beziehungen zwischen Gruppe, Plan und Aufgabe finden Sie in der Übersicht.
-ms.openlocfilehash: 75fedd01913d89121912b336420d4cc063165250
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: a4c9ffc9c3bcd3e4a7b9df3348cdfe355a648a8d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019320"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832256"
 ---
 # <a name="plannertask-resource-type"></a>plannerTask-Ressourcentyp
 

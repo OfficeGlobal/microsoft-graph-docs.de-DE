@@ -2,12 +2,13 @@
 title: managedAndroidStoreApp abrufen
 description: Lesen von Eigenschaften und Beziehungen des managedAndroidStoreApp-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 3db0444cdfddb140ed69d9cfd432b8e5262acde3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b438393890a1ddad7c094e1676982d7b7cacfba5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312369"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838283"
 ---
 # <a name="get-managedandroidstoreapp"></a>managedAndroidStoreApp abrufen
 
@@ -39,10 +40,10 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

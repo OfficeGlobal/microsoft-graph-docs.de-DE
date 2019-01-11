@@ -2,12 +2,13 @@
 title: CalendarGroup löschen
 description: Dient zum Löschen einer anderen Kalendergruppe als der Standardkalendergruppe.
 author: angelgolfer-ms
-ms.openlocfilehash: dcb788f29b9e4b00408f4177f5785e6441084332
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8f2623077c49a38f121db331f96185d2d91c8032
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342868"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839627"
 ---
 # <a name="delete-calendargroup"></a>CalendarGroup löschen
 
@@ -36,7 +37,7 @@ DELETE /users/{id | userPrincipalName}/calendarGroups/{id}
 
 | Name          | Typ   | Beschreibung               |
 | :------------ | :----- | :------------------------ |
-| Autorisierung | string | Bearer {token}. Erforderlich. |
+| Authorization | string | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 

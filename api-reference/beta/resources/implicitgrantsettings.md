@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp implicitGrantSettings
 description: Gibt an, ob dieser Webanwendung mithilfe des impliziten OAuth 2.0-Fluss Token angefordert werden kann. Separate Eigenschaften sind verfügbar als Teil der implizite Ablauf Token-ID und Zugriff anfordern. Um implizite Ablauf aktivieren, mindestens eine der folgenden Eigenschaften festgelegt werden muss auf "true".
-ms.openlocfilehash: 018cd422b56724811e1913ff0e94aea16d7c68f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 93a54ac0c0e4c6c32ebb99c9747d44d75f98af07
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060472"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834265"
 ---
 # <a name="implicitgrantsettings-resource-type"></a>Ressourcentyp implicitGrantSettings
 
@@ -18,8 +19,8 @@ Gibt an, ob dieser Webanwendung mithilfe des impliziten OAuth 2.0-Fluss Token an
 
 | Eigenschaft | Typ | Beschreibung |
 |:---------|:-----|:------------|
-|enableIdTokenIssuance| Boolesch | Gibt an, ob diese Web Application ein Token-ID mithilfe des impliziten OAuth 2.0-Fluss anfordern kann.|
-|enableAccessTokenIssuance| Boolesch | Gibt an, ob diese Web Application ein Zugriffstoken mit den impliziten OAuth 2.0-Fluss anfordern kann.|
+|enableIdTokenIssuance| Boolean | Gibt an, ob diese Web Application ein Token-ID mithilfe des impliziten OAuth 2.0-Fluss anfordern kann.|
+|enableAccessTokenIssuance| Boolean | Gibt an, ob diese Web Application ein Zugriffstoken mit den impliziten OAuth 2.0-Fluss anfordern kann.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

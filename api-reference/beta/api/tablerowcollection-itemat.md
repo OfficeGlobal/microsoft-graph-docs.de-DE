@@ -2,12 +2,13 @@
 title: 'TableRowCollection: ItemAt'
 description: Ruft eine Zeile anhand ihrer Position in der Auflistung ab.
 author: lumine2008
-ms.openlocfilehash: 3a093dd9ee56d4377cdad1c9ba37c02790ffa1d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 01b0d1e5ba480479752ca3ac9469697ca49ca5c5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834181"
 ---
 # <a name="tablerowcollection-itemat"></a>TableRowCollection: ItemAt
 

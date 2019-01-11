@@ -2,12 +2,13 @@
 title: Audio Routinggruppe löschen
 description: Löschen der angegebenen audio Routinggruppe.
 author: VinodRavichandran
-ms.openlocfilehash: a21c90722b63d582f3c76ff518bcc68837135593
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: e8c5d28d2bdb620dc32e5c31d6926ed8b9e1c34e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380373"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829519"
 ---
 # <a name="delete-audio-routing-group"></a>Audio Routinggruppe löschen
 
@@ -22,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | :-------------- | :------------------------------------------- |
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt        |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt        |
-| Application     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Anwendung     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

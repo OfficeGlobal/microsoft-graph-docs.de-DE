@@ -1,12 +1,13 @@
 ---
 title: Typ der Benutzeridentität
 description: 'Für die Azure AD zugreifen Reviews (engl.), diesen Typ eine Benutzeridentität Azure AD für Bearbeiter die Überprüfung einer Access darstellt.  '
-ms.openlocfilehash: 6cbbe7aa017572bcd753a57edbf82751ac4986a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5b629fff4c5cecd513777cc5004646aac5f1c85b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061146"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839641"
 ---
 # <a name="useridentity-type"></a>Typ der Benutzeridentität
 

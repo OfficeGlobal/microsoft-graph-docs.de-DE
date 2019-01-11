@@ -2,12 +2,13 @@
 title: ChartAxis-Ressourcentyp
 description: Stellt eine einzelne Achse in einem Diagramm dar.
 author: lumine2008
-ms.openlocfilehash: 39c71e9fa832ffb967a1ef147ccd7e07d6b9aaec
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 57c8e28633d4fc60f60f456e34a6a0cafef22252
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344366"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829085"
 ---
 # <a name="chartaxis-resource-type"></a>ChartAxis-Ressourcentyp
 
@@ -33,7 +34,7 @@ Stellt eine einzelne Achse in einem Diagramm dar.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Format|[WorkbookChartAxisFormat](chartaxisformat.md)|Stellt die Formatierung für ein Diagrammobjekt dar, einschließlich Linien- und Schriftartformatierung. Schreibgeschützt.|
+|format|[WorkbookChartAxisFormat](chartaxisformat.md)|Stellt die Formatierung für ein Diagrammobjekt dar, einschließlich Linien- und Schriftartformatierung. Schreibgeschützt.|
 |majorGridlines|[WorkbookChartGridlines](chartgridlines.md)|Gibt ein Gitternetzlinien-Objekt zurück, das die Hauptgitternetzlinien für die angegebene Achse darstellt. Schreibgeschützt.|
 |minorGridlines|[WorkbookChartGridlines](chartgridlines.md)|Gibt ein Gitternetzlinien-Objekt zurück, das die Hilfsgitternetzlinien für die angegebene Achse darstellt. Schreibgeschützt.|
 |title|[WorkbookChartAxisTitle](chartaxistitle.md)|Stellt den Achsentitel dar. Schreibgeschützt.|

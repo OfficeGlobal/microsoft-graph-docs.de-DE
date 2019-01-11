@@ -2,12 +2,13 @@
 title: Aktualisieren von „managedDeviceMobileAppConfigurationUserStatus“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs managedDeviceMobileAppConfigurationUserStatus.
 author: tfitzmac
-ms.openlocfilehash: e76c6ef607c97cb0f2fb4572cbea4009bc80fd7c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 23e44eeb6773c24e8959a399231fa5fa4aca5ab0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310535"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838388"
 ---
 # <a name="update-manageddevicemobileappconfigurationuserstatus"></a>Aktualisieren von „managedDeviceMobileAppConfigurationUserStatus“
 
@@ -36,10 +37,10 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md) an.

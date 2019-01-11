@@ -2,12 +2,13 @@
 title: DepTokenType Enum-Typ
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 590d8027e0431fbc38f09da6dcbd2f7647c05d1f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f61a52eca40f308adbc503d3e05ba7d23de95a9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310367"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837709"
 ---
 # <a name="deptokentype-enum-type"></a>DepTokenType Enum-Typ
 
@@ -17,9 +18,9 @@ ms.locfileid: "27310367"
 
 Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Keine|0|Token-Typ ist None.|
+|n/v|0|Token-Typ ist None.|
 |Datenausführungsverhinderung|1|Token-Typ ist Datenausführungsverhinderung.|
 |appleSchoolManager|2|Token-Typ ist Apple School-Manager|
 

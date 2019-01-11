@@ -1,12 +1,13 @@
 ---
 title: Geschäftsbedingungen des Unternehmens in Microsoft Intune
 description: Sie können die allgemeinen Geschäftsbedingungen von Intune für Benutzergruppen bereitstellen, um zu erläutern, wie sich die Registrierung, der Zugriff auf Arbeitsressourcen und die Unternehmensportal-App auf Geräte und Benutzer auswirken. Benutzer müssen die allgemeinen Geschäftsbedingungen akzeptieren, bevor sie das Unternehmensportal zum Registrieren und zum Zugriff auf ihre Arbeit nutzen können.
-ms.openlocfilehash: 39f73700fd84537566454c9dcb3bc9fd17523c43
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 58e8d766d9249ace73193e1e06350956c2c09684
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064690"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828049"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Geschäftsbedingungen des Unternehmens in Microsoft Intune
 

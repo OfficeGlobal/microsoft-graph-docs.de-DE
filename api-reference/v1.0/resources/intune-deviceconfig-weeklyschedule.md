@@ -2,12 +2,13 @@
 title: WeeklySchedule Enum-Typ
 description: Mögliche Werte für einem wöchentlichen Plan.
 author: tfitzmac
-ms.openlocfilehash: 8154233497496627d20cb08fbeb28b6e147f548b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0007be7c16a258536755ee67def4ea37f507d460
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320244"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834006"
 ---
 # <a name="weeklyschedule-enum-type"></a>WeeklySchedule Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27320244"
 
 Mögliche Werte für einem wöchentlichen Plan.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
 |alltägliche|1|Täglich.|

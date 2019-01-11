@@ -2,12 +2,13 @@
 title: Auflisten von „mobileAppContent“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs mobileAppContent auf.
 author: tfitzmac
-ms.openlocfilehash: 4aa3000ab6e705d4cc3fafa857f6e4d16bb32ce3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7fc06ee7a702eed2f1226335acb94ccf7edc3a18
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326355"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829813"
 ---
 # <a name="list-mobileappcontents"></a>Auflisten von „mobileAppContent“
 
@@ -35,10 +36,10 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobileL
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

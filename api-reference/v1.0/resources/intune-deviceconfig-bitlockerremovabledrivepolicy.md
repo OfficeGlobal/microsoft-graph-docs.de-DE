@@ -2,12 +2,13 @@
 title: bitLockerRemovableDrivePolicy-Ressourcentyp
 description: BitLocker-Richtlinien für Wechseldatenträger.
 author: tfitzmac
-ms.openlocfilehash: 77f4161f7cd7aef61ee257ba665ab19e03ff4dc8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fc9fe3350fd9f4b5c5808de2c35fa3451943e449
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340012"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830835"
 ---
 # <a name="bitlockerremovabledrivepolicy-resource-type"></a>bitLockerRemovableDrivePolicy-Ressourcentyp
 

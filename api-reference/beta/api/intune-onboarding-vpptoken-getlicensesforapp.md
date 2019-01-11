@@ -2,12 +2,13 @@
 title: GetLicensesForApp-Funktion
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 20b4e17645e86a630b2f07f97ccd27fa47f84539
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a568350cacac5ca640857aeaa8fb6f6d91e5b3fc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327881"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831472"
 ---
 # <a name="getlicensesforapp-function"></a>GetLicensesForApp-Funktion
 
@@ -35,10 +36,10 @@ GET /deviceAppManagement/vppTokens/getLicensesForApp
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie in der Anforderungs-URL die folgenden Abfrageparameter mit Werten an.

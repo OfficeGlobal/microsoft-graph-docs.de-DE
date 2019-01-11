@@ -2,12 +2,13 @@
 title: directoryRole abrufen
 description: Mit dieser API können Sie die Eigenschaften eines Objekts des Typs „directoryRole“ abrufen.
 author: lleonard-msft
-ms.openlocfilehash: b5f25179c18a28aa3c12dd54c7230b5444dff3f8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f8ff306359675f7bc2c569f507dbcb3baf33b384
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305299"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832228"
 ---
 # <a name="get-directoryrole"></a>directoryRole abrufen
 
@@ -33,7 +34,7 @@ Die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

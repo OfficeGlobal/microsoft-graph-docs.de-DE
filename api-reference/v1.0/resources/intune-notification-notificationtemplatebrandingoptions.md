@@ -2,12 +2,13 @@
 title: NotificationTemplateBrandingOptions Enum-Typ
 description: Optionen für die Nachrichtenvorlage Branding. Das Branding wird in der Intune-Verwaltungskonsole definiert.
 author: tfitzmac
-ms.openlocfilehash: 42e99bc4ca2928daf489f4a1a6e9daa2a3d9838a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 982aee74888b02fd07bc021f14b6b4c9d7157757
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353935"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830079"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>NotificationTemplateBrandingOptions Enum-Typ
 
@@ -15,9 +16,9 @@ ms.locfileid: "27353935"
 
 Optionen für die Nachrichtenvorlage Branding. Das Branding wird in der Intune-Verwaltungskonsole definiert.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Keine|0|Keine Branding.|
+|n/v|0|Keine Branding.|
 |includeCompanyLogo|1|Enthalten Sie Firmenlogo.|
 |includeCompanyName|2|Einschließen von Firmennamen.|
 |includeContactInformation|4|Enthalten Sie Kontaktinformationen.|

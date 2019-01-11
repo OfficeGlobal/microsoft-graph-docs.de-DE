@@ -2,12 +2,13 @@
 title: Erstellen von mobileAppProvisioningConfigGroupAssignment
 description: Erstellen eines neuen MobileAppProvisioningConfigGroupAssignment-Objekts.
 author: tfitzmac
-ms.openlocfilehash: d97b8cd59a0ad170b93fb5127ab276ef2dd29003
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0cc03def8a3df440c1a4d98ee60dd30554a7086d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331003"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838038"
 ---
 # <a name="create-mobileappprovisioningconfiggroupassignment"></a>Erstellen von mobileAppProvisioningConfigGroupAssignment
 
@@ -35,10 +36,10 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt MobileAppProvisioningConfigGroupAssignment eine JSON-Darstellung.

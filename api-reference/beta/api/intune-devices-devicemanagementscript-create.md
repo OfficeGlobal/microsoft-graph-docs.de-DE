@@ -2,12 +2,13 @@
 title: Erstellen von deviceManagementScript
 description: Erstellen eines neuen DeviceManagementScript-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 862b9c3ba50f879e92e47b50e6efaf0bcf41927a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4a9f62c4e67b73dd5dc37e6cd5c46c2e6a4ad396
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315435"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838031"
 ---
 # <a name="create-devicemanagementscript"></a>Erstellen von deviceManagementScript
 
@@ -35,10 +36,10 @@ POST /deviceManagement/deviceManagementScripts
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt DeviceManagementScript eine JSON-Darstellung.
@@ -55,7 +56,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |createdDateTime|DateTimeOffset|Datum und Zeit für das Gerät Management-Skript erstellt wurde.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Geräts Management-Skripts.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Gibt den Typ des Ausführungskontexts, den das Gerät Management-Skript in ausgeführt wird. Mögliche Werte sind: `system` und `user`.|
-|enforceSignatureCheck|Boolesch|Geben Sie an, ob die Signatur Skript muss aktiviert sein.|
+|enforceSignatureCheck|Boolean|Geben Sie an, ob die Signatur Skript muss aktiviert sein.|
 |fileName|String|Dateiname des Skripts.|
 
 

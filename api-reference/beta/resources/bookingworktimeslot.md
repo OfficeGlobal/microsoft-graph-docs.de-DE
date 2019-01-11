@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp bookingWorkTimeSlot
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: 61436ca3e94ab15c44fc1898827a3de511c8ee94
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 69a802e4addd3c0cb821a630707a62724ea984a2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061084"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839557"
 ---
 # <a name="bookingworktimeslot-resource-type"></a>Ressourcentyp bookingWorkTimeSlot
 

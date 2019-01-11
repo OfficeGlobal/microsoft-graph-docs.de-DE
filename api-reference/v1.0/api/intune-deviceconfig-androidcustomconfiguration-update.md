@@ -2,12 +2,13 @@
 title: androidCustomConfiguration aktualisieren
 description: Aktualisieren der Eigenschaften eines androidCustomConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 4ed0f4eb37ebee3c6915dafe271a2827e7b39c3e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 78b01b09266aaef7d627f5cf1d4ba4899c2dc41b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356021"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831241"
 ---
 # <a name="update-androidcustomconfiguration"></a>androidCustomConfiguration aktualisieren
 
@@ -33,10 +34,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs [androidCustomConfiguration](../resources/intune-deviceconfig-androidcustomconfiguration.md) an.

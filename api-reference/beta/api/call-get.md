@@ -2,12 +2,13 @@
 title: Abrufen von Anrufen
 description: Rufen Sie die Eigenschaften und die Beziehungen eines Anrufs-Objekts ab.
 author: VinodRavichandran
-ms.openlocfilehash: df97b69f87a1562e56a96d84de1af740ab0aff65
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: c209c263f2dfcffe274bf726296d7e6c427afa6d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380324"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833551"
 ---
 # <a name="get-call"></a>Abrufen von Anrufen
 

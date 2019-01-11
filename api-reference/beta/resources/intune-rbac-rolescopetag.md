@@ -2,12 +2,13 @@
 title: Ressourcentyp roleScopeTag
 description: Rolle Bereich Tag
 author: tfitzmac
-ms.openlocfilehash: 49059ceddcd043f39f51c563c85ba8986b6fc61b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a48f74b9ecdb7a5f6eec87581fb0826160c4334b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354768"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830065"
 ---
 # <a name="rolescopetag-resource-type"></a>Ressourcentyp roleScopeTag
 
@@ -22,7 +23,7 @@ Rolle Bereich Tag
 |[Liste roleScopeTags](../api/intune-rbac-rolescopetag-list.md)|[RoleScopeTag](../resources/intune-rbac-rolescopetag.md) -Auflistung|Listeneigenschaften und Beziehungen der [RoleScopeTag](../resources/intune-rbac-rolescopetag.md) -Objekte.|
 |[Abrufen von roleScopeTag](../api/intune-rbac-rolescopetag-get.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Lesen Sie Eigenschaften und Beziehungen des [RoleScopeTag](../resources/intune-rbac-rolescopetag.md) -Objekts.|
 |[Erstellen von roleScopeTag](../api/intune-rbac-rolescopetag-create.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Erstellen eines neuen [RoleScopeTag](../resources/intune-rbac-rolescopetag.md) -Objekts.|
-|[RoleScopeTag löschen](../api/intune-rbac-rolescopetag-delete.md)|Keines|Löscht eine [RoleScopeTag](../resources/intune-rbac-rolescopetag.md).|
+|[RoleScopeTag löschen](../api/intune-rbac-rolescopetag-delete.md)|Keine|Löscht eine [RoleScopeTag](../resources/intune-rbac-rolescopetag.md).|
 |[RoleScopeTag aktualisieren](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Aktualisieren Sie die Eigenschaften eines [RoleScopeTag](../resources/intune-rbac-rolescopetag.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

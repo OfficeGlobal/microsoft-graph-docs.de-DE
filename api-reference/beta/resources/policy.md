@@ -1,12 +1,13 @@
 ---
 title: richtlinienressourcentyp
 description: 'Stellt eine Azure AD-Richtlinie. Richtlinien sind benutzerdefinierte Regeln, die erzwungen werden können, klicken Sie auf Anwendungen, Dienstprinzipale, Gruppen oder die gesamte Organisation, den, der Sie zugeordnet sind. Derzeit nur einen Typ der Richtlinie zur Verfügung stehen:'
-ms.openlocfilehash: 05f4539d069c290a410d313102eeb7f87ce7eac2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cc82dc32056b9da5c2ca1144e58b5b9e1fe326f1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064798"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830926"
 ---
 # <a name="policy-resource-type"></a>richtlinienressourcentyp
 
@@ -23,9 +24,9 @@ Mit dieser Richtlinie wird ausführlich beschrieben.
 |:---------------|:--------|:----------|
 | [Abrufen von Gruppenrichtlinien](../api/policy-get.md) |Richtlinie|Liest Eigenschaften und Beziehungen des Benutzerobjekts.|
 |[Richtlinie erstellen](../api/policy-post.md)|Richtlinie|Erstellen Sie ein neues Gruppenrichtlinienobjekt.|
-|[Update-Richtlinie](../api/policy-update.md)|Keines|Group Policy Object zu aktualisieren.|
-|[Löschrichtlinie](../api/policy-delete.md)|Keines|Löschen Sie Richtlinienobjekt.|
-|[Zuweisen der Richtlinie](../api/policy-assign.md)|Keines|Zuweisen einer Richtlinie zu einer Anwendung Dienstprinzipal.|
+|[Update-Richtlinie](../api/policy-update.md)|Keine|Group Policy Object zu aktualisieren.|
+|[Löschrichtlinie](../api/policy-delete.md)|Keine|Löschen Sie Richtlinienobjekt.|
+|[Zuweisen der Richtlinie](../api/policy-assign.md)|Keine|Zuweisen einer Richtlinie zu einer Anwendung Dienstprinzipal.|
 |[Listenrichtlinien](../api/policy-list.md)|Auflistung von Gruppenrichtlinien|Rufen Sie aller Gruppenrichtlinienobjekte in der Organisation ab.|
 |[Zugewiesen-Listenrichtlinien](../api/policy-list-assigned.md)|Auflistung von Gruppenrichtlinien|Rufen Sie alle Richtlinienobjekte an eine Anwendung oder Dienstprinzipal zugewiesen.|
 
@@ -34,8 +35,8 @@ Mit dieser Richtlinie wird ausführlich beschrieben.
 |:---------------|:--------|:----------|
 |definition|String|Die Version der bestimmte Richtlinie Zeichenfolge. Siehe unten. Erforderlich.|
 |displayName|String|Ein benutzerdefinierter Name für die Richtlinie ein. Erforderlich.|
-|IsOrganizationDefault|Boolesch|Wenn auf true ist, aktivieren Sie diese Richtlinie festgelegt. Viele Richtlinien für den gleichen Richtlinientyp kann, jedoch nur eine Organisation standardmäßig aktiviert werden kann. Optional, ist Standardwert false.|
-|Typ|String|Gibt den Typ der Richtlinie an. Derzeit muss "TokenLifetimePolicy". Erforderlich.|
+|IsOrganizationDefault|Boolean|Wenn auf true ist, aktivieren Sie diese Richtlinie festgelegt. Viele Richtlinien für den gleichen Richtlinientyp kann, jedoch nur eine Organisation standardmäßig aktiviert werden kann. Optional, ist Standardwert false.|
+|type|String|Gibt den Typ der Richtlinie an. Derzeit muss "TokenLifetimePolicy". Erforderlich.|
 
 #### <a name="common-relationships"></a>Allgemeine Beziehungen
 |Beziehung|Typ|Beschreibung|
@@ -65,7 +66,7 @@ Die folgenden Eigenschaften bilden das JSON-Objekt, das eine Richtlinie Gültigk
 |MaxAgeMultiFactor|String|Aktualisierungstoken verwenden, um neue Access/aktualisieren abzurufen token-Paare nach dem letzten Mal, das Sie authentifiziert, erfolgreich mit mehreren Faktoren kann Steuerelemente wie lange ein Benutzer weiterhin.|10 Minuten|erst gesperrt|365 Tage oder erst gesperrt|
 |MaxAgeSessionSingleFactor|String|Steuerelemente wie lange kann Benutzer weiterhin Sitzungstoken verwenden, um neue ID-Sitzung-Token abzurufen, nach dem Zeitpunkt der letzten sie mit nur einem einzigen Faktor erfolgreich authentifiziert. Da einfache weniger als mehrstufige Authentifizierung sicher angesehen wird, wird empfohlen, dass diese Richtlinie auf einen Wert gleich oder kleiner als der MultiFactorSessionTokenMaxAge festgelegt ist|10 Minuten|erst gesperrt|365 oder erst gesperrt|
 |MaxAgeSessionMultiFactor|String|Steuerelemente wie lange kann Benutzer weiterhin Sitzungstoken verwenden, um neue ID-Sitzung Token nach dem Zeitpunkt der letzten abrufen, die sie mit mehreren Faktoren erfolgreich authentifiziert.|10 Minuten|erst gesperrt|365 oder erst gesperrt|
-|Version|Ganze Zahl|Der Wert 1 festgelegt. Erforderlich.|Keines|Keines|Keine|
+|Version|Ganze Zahl|Der Wert 1 festgelegt. Erforderlich.|Keine|Keine|Keine|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

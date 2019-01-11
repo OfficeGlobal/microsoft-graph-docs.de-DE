@@ -2,12 +2,13 @@
 title: Erstellen von windowsAutopilotDeviceIdentity
 description: Erstellen eines neuen WindowsAutopilotDeviceIdentity-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 1e4a9d43755fff787efa08a8c727e6ddc35fa904
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6dbefc09b95aefdb652174cc9a1d1e4af45387cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316016"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827258"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Erstellen von windowsAutopilotDeviceIdentity
 
@@ -36,10 +37,10 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt WindowsAutopilotDeviceIdentity eine JSON-Darstellung.

@@ -1,12 +1,13 @@
 ---
 title: GovernanceResource registrieren
 description: Registrieren Sie ein Objekt nicht verwalteten GovernanceResource in PIM.
-ms.openlocfilehash: 53452202b58c2d2187b6876eabfaae1ae646710d
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: ce439d53eb9f017340f561ca509e8da43dbafbfc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27195297"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837751"
 ---
 # <a name="register-governanceresource"></a>GovernanceResource registrieren
 

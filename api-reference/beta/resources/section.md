@@ -1,12 +1,13 @@
 ---
 title: section-Ressourcentyp
 description: Ein Abschnitt in einem OneNote-Notizbuch. Abschnitte können Seiten enthalten.
-ms.openlocfilehash: c07f8f2e5c9f9f9d367cbc1186983c0870b2e979
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 181fa3399f13d0490d9cd7d4599d8208633107b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058828"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831855"
 ---
 # <a name="section-resource-type"></a>section-Ressourcentyp
 
@@ -49,7 +50,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |createdBy|[identitySet](identityset.md)|Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.|
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit der Erstellung des Abschnitts. Der Zeitstempel stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
 |id|String|Der eindeutige Bezeichner des Abschnitts.  Schreibgeschützt.|
-|isDefault|Boolescher Wert|Gibt an, ob dies der Standardabschnitt des Benutzers ist. Schreibgeschützt.|
+|isDefault|Boolean|Gibt an, ob dies der Standardabschnitt des Benutzers ist. Schreibgeschützt.|
 |lastModifiedBy|[identitySet](identityset.md)|Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.|
 |lastModifiedDateTime|DateTimeOffset|Das Datum und die Uhrzeit der letzten Änderung des Abschnitts. Der Zeitstempel stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
 |links|[SectionLinks](sectionlinks.md)|Links zum Öffnen des Abschnitts. Der Link `oneNoteClientURL` öffnet den Abschnitt im systemeigenen OneNote-Client, sofern er installiert ist. Der Link `oneNoteWebURL` öffnet den Abschnitt in OneNote Online.|

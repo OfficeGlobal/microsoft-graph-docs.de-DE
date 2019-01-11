@@ -2,12 +2,13 @@
 title: mediaContentRatingUnitedKingdom-Ressourcentyp
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 0fcd17f27d999f933ce6824f8a49018013341c7b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0a3f1caa48b7890fa25b356d6105b21638033f3f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315533"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829939"
 ---
 # <a name="mediacontentratingunitedkingdom-resource-type"></a>mediaContentRatingUnitedKingdom-Ressourcentyp
 

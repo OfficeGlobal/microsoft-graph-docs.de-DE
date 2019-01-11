@@ -1,14 +1,15 @@
 ---
-title: Liste secureScores
+title: List secureScores
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: f5466e24d6b523809a72f712666063808987e530
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6bf0a1e1964c93043bad4a81ab812786627ea737
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059737"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831815"
 ---
-# <a name="list-securescores"></a>Liste secureScores
+# <a name="list-securescores"></a>List secureScores
 
  > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 

@@ -2,12 +2,13 @@
 title: mobileAppAssignment abrufen
 description: Lesen von Eigenschaften und Beziehungen des mobileAppAssignment-Objekts.
 author: tfitzmac
-ms.openlocfilehash: ca8905962126d53b476bde8d8322024fa8cbb3b5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 790b6e6a8c0f970c7f4b0aa13ed739cec585d9d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334895"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831122"
 ---
 # <a name="get-mobileappassignment"></a>mobileAppAssignment abrufen
 
@@ -35,10 +36,10 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignme
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: Auflisten von „windows10EnterpriseModernAppManagementConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs windows10EnterpriseModernAppManagementConfiguration auf.
 author: tfitzmac
-ms.openlocfilehash: c5a5155f45888bb06fef1a2e1513dfbc12395d71
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eba2ef62abe1cafb1de9c7eaeda189a3411c4d25
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311326"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839032"
 ---
 # <a name="list-windows10enterprisemodernappmanagementconfigurations"></a>Auflisten von „windows10EnterpriseModernAppManagementConfiguration“
 
@@ -33,10 +34,10 @@ GET /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

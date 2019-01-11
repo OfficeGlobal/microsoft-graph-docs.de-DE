@@ -2,12 +2,13 @@
 title: roleDefinitions auflisten
 description: Listet die Eigenschaften und Beziehungen von Objekten des Typs roleDefinition auf.
 author: tfitzmac
-ms.openlocfilehash: 2aa23644d075c03aeb5b19551672214f15e0f4bd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 117ee436ad63d0d28654935ab0271ff3700821b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319649"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837702"
 ---
 # <a name="list-roledefinitions"></a>roleDefinitions auflisten
 
@@ -33,10 +34,10 @@ GET /deviceManagement/roleDefinitions
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

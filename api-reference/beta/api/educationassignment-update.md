@@ -1,12 +1,13 @@
 ---
 title: Educationassignment aktualisieren
 description: Aktualisieren Sie das Assignment-Objekt. Nur Lehrer in der Klasse ist dies möglich. Beachten Sie, dass eine Anforderung PATCH zum Ändern des Status einer Zuordnung verwendet werden können. Verwenden Sie die Veröffentlichungsaktion zum Ändern des Zuordnungsstatus.
-ms.openlocfilehash: 8b23b7ac4b971856ed7a96b4991fca2e5220d069
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 78d5b526468fbdf35c3529084f878f8c35216c99
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060894"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838290"
 ---
 # <a name="update-educationassignment"></a>Educationassignment aktualisieren
 
@@ -39,8 +40,8 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|allowLateSubmissions|Boolesch| Gibt an, ob nach dem Fälligkeitsdatum Übermittlungen gesendet werden können.|
-|allowStudentsToAddResourcesToSubmission|Boolesch| Gibt an, ob eine Student Ressourcen zu einer Übermittlung hinzufügen kann. Angegeben, ob die Ressourcenliste Zuordnung der einzige Elemente auf der Übermittlung stammt. |
+|allowLateSubmissions|Boolean| Gibt an, ob nach dem Fälligkeitsdatum Übermittlungen gesendet werden können.|
+|allowStudentsToAddResourcesToSubmission|Boolean| Gibt an, ob eine Student Ressourcen zu einer Übermittlung hinzufügen kann. Angegeben, ob die Ressourcenliste Zuordnung der einzige Elemente auf der Übermittlung stammt. |
 |assignDateTime|DateTimeOffset| Datum, an dem die Zuordnung für Studenten veröffentlicht werden soll. |
 |assignTo|educationAssignmentRecipient| Teilnehmer, die die Zuordnung zu erhalten.|
 |displayName|String| Name der Zuordnung. |

@@ -1,12 +1,13 @@
 ---
 title: Liste privilegedRoleAssignments
 description: Abrufen einer Liste von PrivilegedRoleAssignment-Objekten, die alle rollenzuweisungen für die Organisation entsprechen.
-ms.openlocfilehash: 7642768348e2fff43f52c6865cabf85aa16ef893
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ee6fac823e4d05eb13ada0a3ad1082ba1a78a7e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064157"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838661"
 ---
 # <a name="list-privilegedroleassignments"></a>Liste privilegedRoleAssignments
 

@@ -2,12 +2,13 @@
 title: Ressourcentyp educationOrganization
 description: Abstrakte Entität verwendet, um die Kompatibilität zwischen verschiedenen Organisationstypen innerhalb der Education Sektor modellieren.
 author: mmast-msft
-ms.openlocfilehash: e4c0f69d63108cc88b88f530e99cbd55b23f49ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b0b65978b3b415af407c886095c4b31c7aaffab9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326145"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831934"
 ---
 # <a name="educationorganization-resource-type"></a>Ressourcentyp educationOrganization
 

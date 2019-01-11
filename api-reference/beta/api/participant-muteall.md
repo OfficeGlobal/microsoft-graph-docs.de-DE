@@ -2,12 +2,13 @@
 title: 'Teilnehmer: MuteAll'
 description: Stummschalten Sie aller Teilnehmer in den Anruf.
 author: VinodRavichandran
-ms.openlocfilehash: fb395fd5a49a0a13616d32de9645f3899e4641d2
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 7141c5f8ee190fd3df8cca3f30f14c537165986b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380499"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837807"
 ---
 # <a name="participant-muteall"></a>Teilnehmer: MuteAll
 
@@ -22,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:---------------------------------------|:--------------------------------------------|
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt                               |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                               |
-| Application                            | Keine                                        |
+| Anwendung                            | Keine                                        |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +43,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
 |participants|Collection von Objekten des Typs „String“|Die Teilnehmer stummgeschaltet werden.|
-|clientContext|Zeichenfolge|Der Clientkontext.|
+|clientContext|String|Der Clientkontext.|
 
 ## <a name="response"></a>Antwort
 Wenn der Vorgang erfolgreich war, gibt diese Methode `200 OK` Antwortobjekt Code und [CommsOperation](../resources/commsoperation.md) im Antworttext.

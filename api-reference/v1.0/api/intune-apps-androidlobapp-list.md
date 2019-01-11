@@ -2,12 +2,13 @@
 title: Auflisten von „androidLobApp“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs androidLobApp auf.
 author: tfitzmac
-ms.openlocfilehash: 0fc6231d21b3a33b7fc9e4afec2b2a6bc9ee4e47
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9b7338dfecfacf732816af2f2b6867485930ad8b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326516"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833593"
 ---
 # <a name="list-androidlobapps"></a>Auflisten von „androidLobApp“
 
@@ -33,10 +34,10 @@ GET /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

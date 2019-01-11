@@ -2,12 +2,13 @@
 title: MobileAppIntentAndState aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines MobileAppIntentAndState-Objekts.
 author: tfitzmac
-ms.openlocfilehash: d219e6d9d146f71c4979973e7f6510010fe2fa92
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dd43c13d8e166563e60cb36cdcad980e25124aa5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303185"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827097"
 ---
 # <a name="update-mobileappintentandstate"></a>MobileAppIntentAndState aktualisieren
 
@@ -35,10 +36,10 @@ PATCH /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [MobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) eine JSON-Darstellung.

@@ -2,12 +2,13 @@
 title: deviceManagementTroubleshootingEvents auflisten
 description: Auflisten von Eigenschaften und Beziehungen der deviceManagementTroubleshootingEvent-Objekte.
 author: tfitzmac
-ms.openlocfilehash: 670f01d0d4aee165d632b61c7266fb229085f704
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 11f8b55dff577f1f8f33a62ec0d2d20db3fc666f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337254"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828427"
 ---
 # <a name="list-devicemanagementtroubleshootingevents"></a>deviceManagementTroubleshootingEvents auflisten
 
@@ -33,10 +34,10 @@ GET /deviceManagement/troubleshootingEvents
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

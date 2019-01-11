@@ -1,12 +1,13 @@
 ---
 title: Liste AccessReview Bearbeiter
 description: In Azure AD Access Feature überprüft, die Bearbeiter eines AccessReview-Objekts abrufen.
-ms.openlocfilehash: 24c8b3dacbbe1a5868c9ba82141f37b006dc7a75
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 042887944902be9a603ae0581835c8d55355f8a2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059656"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829372"
 ---
 # <a name="list-accessreview-reviewers"></a>Liste AccessReview Bearbeiter
 
@@ -50,7 +51,7 @@ GET https://graph.microsoft.com/beta/accessReviews('2b83cc42-09db-46f6-8c6e-16fe
 ```
 
 ##### <a name="response"></a>Antwort
->**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+>**Hinweis:** Das hier gezeigte Antwortobjekt wurde möglicherweise zur besseren Lesbarkeit gekürzt. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "response",
   "truncated": true,

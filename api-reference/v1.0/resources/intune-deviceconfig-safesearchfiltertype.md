@@ -2,12 +2,13 @@
 title: SafeSearchFilterType Enum-Typ
 description: Gibt an, welche sicheres Suchen (Filterung Versender nicht jugendfreier Inhalte) erforderlich ist
 author: tfitzmac
-ms.openlocfilehash: eb0c7cfb862364ddc4703c89d19ea844ada6466d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 28aea918c35bb9d90f514e4a8838f219c212405b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343197"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830856"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>SafeSearchFilterType Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27343197"
 
 Gibt an, welche sicheres Suchen (Filterung Versender nicht jugendfreier Inhalte) erforderlich ist
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
 |Strict|1|Strict, höchsten Filtern anhand der Versender nicht jugendfreier Inhalte.|

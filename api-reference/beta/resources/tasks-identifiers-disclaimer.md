@@ -1,12 +1,13 @@
 ---
 title: Bezeichner in Aufgaben
 description: 'Bezeichner für Objekte in Aufgaben sind Zeichenfolgenwerte Dienst generiert. . Die Werte sind 28 Zeichen lang sein und Groß-/Kleinschreibung beachtet. Wenn als übergeben, wird der Dienst eine einfache Format Validierung des Bezeichners, vorgehen, wenn Format Überprüfung fehlschlägt, die Anrufer ungültige Anforderung (400) Fehler, der angibt, des Problems beantwortet werden. Diese Fehlermeldung gibt einen Fehler in der aufrufenden Anwendung, wie an:'
-ms.openlocfilehash: d57ca282de87c2bce42b37d0be6d08dbe128c522
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fb66f0a610d6fe7d383e078674ca349776ddb4e9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065797"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836666"
 ---
 # <a name="identifiers-in-tasks"></a>Bezeichner in Aufgaben
 

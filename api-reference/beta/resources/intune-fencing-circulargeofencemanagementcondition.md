@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp circularGeofenceManagementCondition
 description: Enthält Informationen zum Definieren einer kreisförmige Geo-Zauns Management Bedingung ein Interessenbereich zum Überwachen.
-ms.openlocfilehash: 0ae10d226b48772bb70e975496295afd2d67229d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: de1f924cf1e56cbb1084122b01b001e21dd6b5f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062219"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828889"
 ---
 # <a name="circulargeofencemanagementcondition-resource-type"></a>Ressourcentyp circularGeofenceManagementCondition
 
@@ -24,7 +25,7 @@ Erbt vom [locationManagementCondition](../resources/intune-fencing-locationmanag
 |[Liste circularGeofenceManagementConditions](../api/intune-fencing-circulargeofencemanagementcondition-list.md)|[CircularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md) -Auflistung|Listeneigenschaften und Beziehungen der [CircularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md) -Objekte.|
 |[Abrufen von circularGeofenceManagementCondition](../api/intune-fencing-circulargeofencemanagementcondition-get.md)|[circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md)|Lesen Sie Eigenschaften und Beziehungen des [CircularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md) -Objekts.|
 |[Erstellen von circularGeofenceManagementCondition](../api/intune-fencing-circulargeofencemanagementcondition-create.md)|[circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md)|Erstellen eines neuen [CircularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md) -Objekts.|
-|[CircularGeofenceManagementCondition löschen](../api/intune-fencing-circulargeofencemanagementcondition-delete.md)|Keines|Löscht eine [CircularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md).|
+|[CircularGeofenceManagementCondition löschen](../api/intune-fencing-circulargeofencemanagementcondition-delete.md)|Keine|Löscht eine [CircularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md).|
 |[CircularGeofenceManagementCondition aktualisieren](../api/intune-fencing-circulargeofencemanagementcondition-update.md)|[circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md)|Aktualisieren Sie die Eigenschaften eines [CircularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

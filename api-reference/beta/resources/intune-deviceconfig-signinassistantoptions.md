@@ -2,12 +2,13 @@
 title: SignInAssistantOptions Enum-Typ
 description: Werte für die SignInAssistantSettings.
 author: tfitzmac
-ms.openlocfilehash: 97bcb162168964283e2e741f33980a7cf2904e7f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f80b67a40d0b551386b9f03273efb26e294d3520
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302121"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825396"
 ---
 # <a name="signinassistantoptions-enum-type"></a>SignInAssistantOptions Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27302121"
 
 Werte für die SignInAssistantSettings.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Nicht konfiguriert - Wlidsvc, den Start auf SERVICE_DEMAND_START festgelegt wird.|
 |deaktiviert|1|Deaktiviert - wird Wlidsvc Start auf SERVICE_DISABLED festgelegt werden.|

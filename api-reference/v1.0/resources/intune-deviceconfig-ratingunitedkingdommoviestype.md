@@ -2,12 +2,13 @@
 title: RatingUnitedKingdomMoviesType Enum-Typ
 description: Filme Bewertung Beschriftungen in Großbritannien
 author: tfitzmac
-ms.openlocfilehash: 6593ff7f65e49b103c0a7004f3f701bbe9590a2a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b8c659ea3484111261b3fd0e7e69ba5b3286cb38
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334482"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834391"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>RatingUnitedKingdomMoviesType Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27334482"
 
 Filme Bewertung Beschriftungen in Großbritannien
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |allAllowed|0|Standardwert, alle Filme Inhalte zulassen|
 |allBlocked|1|Alle Inhalte Filme nicht zulassen|

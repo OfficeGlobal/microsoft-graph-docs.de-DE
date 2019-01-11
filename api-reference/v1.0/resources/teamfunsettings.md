@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp teamFunSettings
 description: So konfigurieren Sie Einstellungen Verwenden von Giphy, Memes und Aufkleber im Team.
-ms.openlocfilehash: ef816d027f015155cc09195c359523c83589725e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3257e54744ef14a94a0570ae45afd271c1514bb0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016408"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825599"
 ---
 # <a name="teamfunsettings-resource-type"></a>Ressourcentyp teamFunSettings
 
@@ -17,10 +18,10 @@ Einstellungen zum Konfigurieren der Verwendung von Giphy, Memes und Aufkleber in
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|allowGiphy|Boolesch|Wenn auf "true" ermöglicht Giphy Verwendung festgelegt.|
+|allowGiphy|Boolean|Wenn auf "true" ermöglicht Giphy Verwendung festgelegt.|
 |giphyContentRating|Zeichenfolge (Aufzählung)|Giphy bewerten. Mögliche Werte sind: `moderate` und `strict`.|
-|allowStickersAndMemes|Boolesch|Wenn Festlegung auf "true" ermöglicht Benutzern das Aufkleber und Memes enthalten.|
-|allowCustomMemes|Boolesch|Wenn auf "true" ermöglicht Benutzern das Einschließen von benutzerdefinierten Memes festgelegt.|
+|allowStickersAndMemes|Boolean|Wenn Festlegung auf "true" ermöglicht Benutzern das Aufkleber und Memes enthalten.|
+|allowCustomMemes|Boolean|Wenn auf "true" ermöglicht Benutzern das Einschließen von benutzerdefinierten Memes festgelegt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

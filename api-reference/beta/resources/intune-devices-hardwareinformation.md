@@ -2,12 +2,13 @@
 title: Ressourcentyp hardwareInformation
 description: Hardwareinformationen für ein bestimmtes Gerät.
 author: tfitzmac
-ms.openlocfilehash: c483aa800d920a50392d21c326cd20dea7b72e18
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2684f1ff7e7a6407942ac61fae7d45ead16820d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334524"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831823"
 ---
 # <a name="hardwareinformation-resource-type"></a>Ressourcentyp hardwareInformation
 
@@ -34,9 +35,9 @@ Hardwareinformationen für ein bestimmtes Gerät.
 |cellularTechnology|String|Mobilfunk-Technologie des Geräts|
 |wifiMac|String|WLAN-MAC-Adresse des Geräts|
 |operatingSystemLanguage|String|Die Sprache des Betriebssystems des Geräts|
-|isSupervised|Boolescher Wert|Überwachten Modus des Geräts|
-|isEncrypted|Boolescher Wert|Status der Verschlüsselung des Geräts|
-|isSharedDevice|Boolesch|Freigegebene iPad|
+|isSupervised|Boolean|Überwachten Modus des Geräts|
+|isEncrypted|Boolean|Status der Verschlüsselung des Geräts|
+|isSharedDevice|Boolean|Freigegebene iPad|
 |sharedDeviceCachedUsers|[SharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md) -Auflistung|Alle Benutzer auf dem freigegebenen Apple-Gerät|
 |tpmSpecificationVersion|String|Zeichenfolge, die die Spezifikation, Version angibt.|
 |operatingSystemEdition|String|Zeichenfolge, die die Betriebssystem Edition angibt.|

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp chatThread
 description: Eine ChatThread ist eine Auflistung von ChatMessages in Microsoft-Teams.
-ms.openlocfilehash: ef8f118ae4354a5e4197802708aecfa1fb6f8cb8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 5060d7ea846f5aedec5551aaf247642a36f73c1c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064966"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833243"
 ---
 # <a name="chatthread-resource-type"></a>Ressourcentyp chatThread
 

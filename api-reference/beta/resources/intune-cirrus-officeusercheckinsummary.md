@@ -2,12 +2,13 @@
 title: Ressourcentyp officeUserCheckinSummary
 description: Entität, die Mandanten Einchecken Stats beschreibt.
 author: tfitzmac
-ms.openlocfilehash: 5064882f74a13feca726a6ebb91c34cf9a85af86
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c2470b1e531f1b268d6797fe2692baf0031728b3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306328"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834021"
 ---
 # <a name="officeusercheckinsummary-resource-type"></a>Ressourcentyp officeUserCheckinSummary
 

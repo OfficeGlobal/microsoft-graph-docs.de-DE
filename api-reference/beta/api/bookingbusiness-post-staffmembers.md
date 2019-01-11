@@ -1,12 +1,13 @@
 ---
 title: Erstellen von bookingStaffMember
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: 01983d5a0831b47c2eddfa45dad917f30bdd7b8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 43935dbeeda30fb5f69b799993f772ffffa3eeed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060031"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838773"
 ---
 # <a name="create-bookingstaffmember"></a>Erstellen von bookingStaffMember
 
@@ -38,7 +39,7 @@ Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [BookingStaffMemb
 
 - **displayName**
 - **emailAddress**
-- **role**
+- **Rolle**
 
 
 ## <a name="response"></a>Antwort

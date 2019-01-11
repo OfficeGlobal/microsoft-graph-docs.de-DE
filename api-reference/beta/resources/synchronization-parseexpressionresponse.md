@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp parseExpressionResponse
 description: 'Stellt die Antwort von der [SynchronizationSchema: ParseExpression](../api/synchronization_synchronizationschema_parseexpression.md) Aktion.'
-ms.openlocfilehash: 625df0ca16135eaa35c5b679c79dea582c4012e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 550a46b0c27c2ca8d2d4c01baa975d8a204546f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065190"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832949"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>Ressourcentyp parseExpressionResponse
 
@@ -19,9 +20,9 @@ Stellt die Antwort von der [SynchronizationSchema: ParseExpression](../api/synch
 |:---------------|:--------|:----------|
 |error|OData.Error|Fehlerdetails, wenn die Auswertung von Ausdrücken ein Fehler aufgetreten.|
 |evaluationResult|Collection von Objekten des Typs „String“|Eine Auflistung von Werten, die mit der Auswertung des Ausdrucks.|
-|evaluationSucceeded|Boolesch|`true`Wenn die Auswertung erfolgreich war.|
+|evaluationSucceeded|Boolean|`true`Wenn die Auswertung erfolgreich war.|
 |parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|Ein [AttributeMappingSource](synchronization-attributemappingsource.md) -Objekt, das den analysierten Ausdruck darstellt.|
-|parsingSucceeded|Boolesch|`true`Wenn der Ausdruck erfolgreich analysiert wurde.|
+|parsingSucceeded|Boolean|`true`Wenn der Ausdruck erfolgreich analysiert wurde.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

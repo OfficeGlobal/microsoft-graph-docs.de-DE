@@ -2,12 +2,13 @@
 title: Erstellen von embeddedSIMDeviceState
 description: Erstellen eines neuen EmbeddedSIMDeviceState-Objekts.
 author: tfitzmac
-ms.openlocfilehash: bacf4e0beb240a9c6e60792c7d2a853ac37dcce4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 27bf12ff0bcb2ed61f5bb689a1994373d9efd551
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340971"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832878"
 ---
 # <a name="create-embeddedsimdevicestate"></a>Erstellen von embeddedSIMDeviceState
 
@@ -35,10 +36,10 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt EmbeddedSIMDeviceState eine JSON-Darstellung.

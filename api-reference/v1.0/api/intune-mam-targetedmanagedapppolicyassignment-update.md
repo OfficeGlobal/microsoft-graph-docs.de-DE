@@ -2,12 +2,13 @@
 title: targetedManagedAppPolicyAssignment aktualisieren
 description: Aktualisieren der Eigenschaften eines targetedManagedAppPolicyAssignment-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 5dfe8353658b50a827d4e47d99332117eb3dd57e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ba9b7d362360cf12b7af4627721892ef68143efa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334762"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829946"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>targetedManagedAppPolicyAssignment aktualisieren
 
@@ -37,10 +38,10 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md)-Objekts an.

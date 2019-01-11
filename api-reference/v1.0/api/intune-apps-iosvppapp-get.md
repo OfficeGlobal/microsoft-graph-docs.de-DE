@@ -2,12 +2,13 @@
 title: iosVppApp abrufen
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs iosVppApp.
 author: tfitzmac
-ms.openlocfilehash: a908fcecb64bbe9624e837b4ab61454e61054338
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fdfb2e6e6c116058eea43d92a15adb886d73a463
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358492"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834986"
 ---
 # <a name="get-iosvppapp"></a>iosVppApp abrufen
 
@@ -35,10 +36,10 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

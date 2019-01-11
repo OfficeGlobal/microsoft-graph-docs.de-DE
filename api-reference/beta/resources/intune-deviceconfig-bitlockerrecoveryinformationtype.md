@@ -2,12 +2,13 @@
 title: BitLockerRecoveryInformationType Enum-Typ
 description: BitLockerRecoveryInformationType-Typen
 author: tfitzmac
-ms.openlocfilehash: 4844168823c4f6da1e8444c4cffde6affc47eaad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 14618bcf74112168e0451056bcb8939d09e7366c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357561"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831052"
 ---
 # <a name="bitlockerrecoveryinformationtype-enum-type"></a>BitLockerRecoveryInformationType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27357561"
 
 BitLockerRecoveryInformationType-Typen
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |passwordAndKey|1|Speichern von Kennwörtern Recovery und wichtige Pakete.|
 |passwordOnly|2|Wiederherstellen von Kennwörtern zu speichern.|

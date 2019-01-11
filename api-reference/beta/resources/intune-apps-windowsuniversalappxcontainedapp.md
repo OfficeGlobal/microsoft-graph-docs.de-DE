@@ -2,12 +2,13 @@
 title: Ressourcentyp windowsUniversalAppXContainedApp
 description: Eine Klasse, die eine app enthaltene einer App WindowsUniversalAppX darstellt.
 author: tfitzmac
-ms.openlocfilehash: 19afa6a677d51613b6a4a18368c53cc5a12a4df7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7b9c814b73ce08bacdba97b40b5b7f07362606e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360144"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837716"
 ---
 # <a name="windowsuniversalappxcontainedapp-resource-type"></a>Ressourcentyp windowsUniversalAppXContainedApp
 
@@ -25,7 +26,7 @@ Erbt vom [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)
 |[Liste windowsUniversalAppXContainedApps](../api/intune-apps-windowsuniversalappxcontainedapp-list.md)|[WindowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) -Auflistung|Listeneigenschaften und Beziehungen der [WindowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) -Objekte.|
 |[Abrufen von windowsUniversalAppXContainedApp](../api/intune-apps-windowsuniversalappxcontainedapp-get.md)|[windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md)|Lesen Sie Eigenschaften und Beziehungen des [WindowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) -Objekts.|
 |[Erstellen von windowsUniversalAppXContainedApp](../api/intune-apps-windowsuniversalappxcontainedapp-create.md)|[windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md)|Erstellen eines neuen [WindowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) -Objekts.|
-|[WindowsUniversalAppXContainedApp löschen](../api/intune-apps-windowsuniversalappxcontainedapp-delete.md)|Keines|Löscht eine [WindowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md).|
+|[WindowsUniversalAppXContainedApp löschen](../api/intune-apps-windowsuniversalappxcontainedapp-delete.md)|Keine|Löscht eine [WindowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md).|
 |[WindowsUniversalAppXContainedApp aktualisieren](../api/intune-apps-windowsuniversalappxcontainedapp-update.md)|[windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md)|Aktualisieren Sie die Eigenschaften eines [WindowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

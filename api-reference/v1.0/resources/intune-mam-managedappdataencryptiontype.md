@@ -2,12 +2,13 @@
 title: ManagedAppDataEncryptionType Enum-Typ
 description: Stellt die Ebene an die app-Daten für verwaltete apps verschlüsselt werden
 author: tfitzmac
-ms.openlocfilehash: 3cbb733eb578ca839e32851d8a6d217f69d6799d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f57904d45b24f6aaae9d67394facb07692add67e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330324"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834146"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>ManagedAppDataEncryptionType Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27330324"
 
 Stellt die Ebene an die app-Daten für verwaltete apps verschlüsselt werden
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |useDeviceSettings|0|App-Daten werden verschlüsselt basierend auf die Standardeinstellungen auf dem Gerät.|
 |afterDeviceRestart|1|App-Daten werden verschlüsselt, wenn das Gerät neu gestartet wird.|

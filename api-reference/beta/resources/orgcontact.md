@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp orgContact
 description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: 90d25d3ef7688372e4e961220bc454a2b5607344
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: bdf63762a4bb632dccc3578963f42b91d7127fe1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283668"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832970"
 ---
 # <a name="orgcontact-resource-type"></a>Ressourcentyp orgContact
 
@@ -41,7 +42,7 @@ ms.locfileid: "27283668"
 | mailNickname                 | String                                                     | E-Mail-Alias (e-Mail-Adresse vor dem ausstehenden Teil der @-Zeichen) für diesen Kontakt Organisationseinheit.                                                                                                                                                                                                                                                                                |
 | onPremisesLastSyncDateTime   | DateTimeOffset                                             | Datum und Uhrzeit, wann diese Organisationseinheit Kontakt zuletzt, synchronisiert aus lokalen AD. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Beispielsweise könnte Uhr UTC auf 1 Jan 2014 wie folgt aussehen: "2014-01-01T00:00:00Z'.   |
 | onPremisesProvisioningErrors |[OnPremisesProvisioningError](onpremisesprovisioningerror.md) -Auflistung       | Liste der Fehler für diesen Kontakt Organisationseinheit provisioning Synchronisierung.                                                                                                                                                                                                                                                                                                |
-|onPremisesSyncEnabled|Boolescher Wert|**true,** Wenn dieses Objekt aus einem lokalen Verzeichnis synchronisiert ist. **false,** Wenn dieses Objekt wurde ist aus einem lokalen Verzeichnis synchronisiert, aber nicht mehr synchronisiert und jetzt gesteuert im Exchange; **null,** Wenn dieses Objekt aus einem lokalen Verzeichnis (Standard) nie synchronisiert wurden.|
+|onPremisesSyncEnabled|Boolean|**true,** Wenn dieses Objekt aus einem lokalen Verzeichnis synchronisiert ist. **false,** Wenn dieses Objekt wurde ist aus einem lokalen Verzeichnis synchronisiert, aber nicht mehr synchronisiert und jetzt gesteuert im Exchange; **null,** Wenn dieses Objekt aus einem lokalen Verzeichnis (Standard) nie synchronisiert wurden.|
 | phones                       | [phone](phone.md)-Sammlung                            | Liste der Telefone für diesen Kontakt Organisationseinheit. Telefon-Typen können Mobile, Geschäfts- und geschäftlich Fax sein. Nur eine der einzelnen Typen kann jemals in der Auflistung vorhanden sein.                                                                                                                       |
 | proxyAddresses               | Zeichenfolgenauflistung                                         | Beispiel: ["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]. Der **any** -Operator ist für Filterausdrücke auf mehrwertige Eigenschaften erforderlich. Unterstützt \$Filter.                                                                                                                                                                               |
 | surname                      | String                                                     | Nachname für diesen Kontakt Organisationseinheit.                          |

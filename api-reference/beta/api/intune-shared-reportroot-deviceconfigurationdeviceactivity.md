@@ -2,12 +2,13 @@
 title: deviceConfigurationDeviceActivity-Funktion
 description: Metadaten für den Gerätekonfigurations-Geräteaktivitätsbericht
 author: tfitzmac
-ms.openlocfilehash: 348df7182b724858ef06edaa50f318b0b6238d42
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ef5a8367ec47242138cdf13cb30447c844bd050e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351919"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831755"
 ---
 # <a name="deviceconfigurationdeviceactivity-function"></a>deviceConfigurationDeviceActivity-Funktion
 
@@ -36,10 +37,10 @@ GET /reports/deviceConfigurationDeviceActivity
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: Abrufen von educationAssignmentResource
 description: 'Rufen Sie die Eigenschaften einer bestimmten Ressource an einer Zuordnung.  '
 author: dipakboyed
-ms.openlocfilehash: 25c448f3247631c9129a837bd00842588bf152d9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da96f7476e6feda2f27b0653393de8c2eaac3022
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358814"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832956"
 ---
 # <a name="get-educationassignmentresource"></a>Abrufen von educationAssignmentResource
 
@@ -32,7 +33,7 @@ GET /education/classes/{id}/assignments/{id}/resources/{id}
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

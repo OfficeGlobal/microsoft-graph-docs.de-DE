@@ -1,12 +1,13 @@
 ---
 title: Liste orgContacts
 description: Die Liste der Organisationseinheit Kontakte für diese Organisation abgerufen.
-ms.openlocfilehash: 01be5350898bed181f2e1d304bf58f8ec1e4e47f
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: 0b4dc4a099562b8817396bee8f3141fa32c28572
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283626"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831976"
 ---
 # <a name="list-orgcontacts"></a>Liste orgContacts
 
@@ -34,7 +35,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp managementCondition
 description: Management Bedingungen sind Ereignisse, die dynamisch wie Geo-Klammern, ausgelöst werden, können Zeit Klammern und Netzwerk Klammern.
-ms.openlocfilehash: 3c2bc1d7594e61642b96398bfb55d6aa38f3283d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a836aeaa660de8f02c4e441e9eb390e1513c917c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060175"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834111"
 ---
 # <a name="managementcondition-resource-type"></a>Ressourcentyp managementCondition
 

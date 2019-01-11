@@ -2,12 +2,13 @@
 title: VppTokenState Enum-Typ
 description: Möglichen Zuständen ein Token Apple Volume Purchase Program zugeordnet.
 author: tfitzmac
-ms.openlocfilehash: e034f9712e2ef40b40b209935ed96f07b35cdbb9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 89d28a07bb2c6abea2e2a10d9b5a0961e5efecff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321182"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834027"
 ---
 # <a name="vpptokenstate-enum-type"></a>VppTokenState Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27321182"
 
 Möglichen Zuständen ein Token Apple Volume Purchase Program zugeordnet.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Standardzustand.|
 |gültige|1|Das Token ist ungültig.|

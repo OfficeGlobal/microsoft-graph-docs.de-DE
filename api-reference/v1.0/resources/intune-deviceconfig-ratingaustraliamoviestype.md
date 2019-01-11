@@ -2,12 +2,13 @@
 title: RatingAustraliaMoviesType Enum-Typ
 description: Filme Bewertung Bezeichnungen in Australien
 author: tfitzmac
-ms.openlocfilehash: 4e5d99b085e92d8e83c8d5c0951cf75a1efcb171
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fe95e91077514022360d273dead76e694af3169b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327307"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829540"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>RatingAustraliaMoviesType Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27327307"
 
 Filme Bewertung Bezeichnungen in Australien
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |allAllowed|0|Standardwert, alle Filme Inhalte zulassen|
 |allBlocked|1|Alle Inhalte Filme nicht zulassen|

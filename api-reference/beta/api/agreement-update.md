@@ -1,12 +1,13 @@
 ---
 title: Vereinbarung aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines Objekts zu.
-ms.openlocfilehash: b9405a8c469876a349b5c1b0c00e6f6a5f225e72
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b16a503b33193fa453ca52481854879ae4dcd121
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059077"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838731"
 ---
 # <a name="update-agreement"></a>Vereinbarung aktualisieren
 
@@ -38,7 +39,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 | Eigenschaft     | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
 |displayName|String|Der Anzeigename der Vereinbarung.|
-|isViewingBeforeAcceptanceRequired|Boolesch|Gibt an, ob der Benutzer hat zu erweitern und vor dem akzeptieren die Vereinbarung anzuzeigen.|
+|isViewingBeforeAcceptanceRequired|Boolean|Gibt an, ob der Benutzer hat zu erweitern und vor dem akzeptieren die Vereinbarung anzuzeigen.|
 
 ## <a name="response"></a>Antwort
 Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [Vereinbarung](../resources/agreement.md) -Objekts in der Antworttext.

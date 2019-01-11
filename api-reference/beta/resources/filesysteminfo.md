@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: fileSystemInfo
-ms.openlocfilehash: 08a79a265e8d4dbda3017a1ff8a32c5e4cab51ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d9d69f00c8c52352acdd00ff4d6adc41908fffe7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058852"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835833"
 ---
 # <a name="filesysteminfo-facet"></a>FileSystemInfo-Facet
 
@@ -44,7 +45,7 @@ Das Facet ist verfügbar für die Eigenschaft „fileSystemInfo“ von Ressource
 | **lastAccessedDateTime** | DateTimeOffset | Das UTC-Datum und die UTC-Uhrzeit des letzten Zugriffs auf die Datei. Nur für die [Liste der zuletzt verwendeten Dateien](../api/drive-recent.md) verfügbar. |
 | **lastModifiedDateTime** | DateTimeOffset | Das UTC-Datum und die UTC-Uhrzeit der letzten Änderung der Datei auf einem Client.                                                        |
 
-## <a name="notes"></a>Hinweise
+## <a name="notes"></a>Anmerkungen
 
 Werte für **createdDateTime** und **lastModifiedDateTime** unterscheiden sich von den gleichen Eigenschaften auf der Ressource [DriveItem](driveitem.md). Die Werte für die Ressource DriveItem sind Erstellungsdatum und -uhrzeit, wie sie vom Dienst erfasst werden. Die in der Ressource **FileSystemInfo** gespeicherten Werte werden vom Client bereitgestellt.
 
