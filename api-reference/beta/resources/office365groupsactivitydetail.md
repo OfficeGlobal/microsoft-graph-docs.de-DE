@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp office365GroupsActivityDetail
 description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: a849932d646be61f3cedec76ecdafdaca941baaf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 94dc10064c0005770294c8f783c77d41ce0c479b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058919"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894271"
 ---
 # <a name="office365groupsactivitydetail-resource-type"></a>Ressourcentyp office365GroupsActivityDetail
 
@@ -15,11 +16,11 @@ ms.locfileid: "27058919"
 | Eigenschaft                          | Typ    | Beschreibung                              |
 | :-------------------------------- | :------ | ---------------------------------------- |
 | reportRefreshDate                 | Datum    | Das aktuelle Datum des Inhalts.          |
-| groupDisplayName                  | String  | Der Anzeigename der Gruppe.           |
-| isDeleted                         | Boolesch | Ob dieser Benutzer gelöschte oder weiche wurde gelöscht. |
-| ownerPrincipalName                | String  | Der Gruppe Besitzer principal Name.          |
+| groupDisplayName                  | Zeichenfolge  | Der Anzeigename der Gruppe.           |
+| isDeleted                         | Boolescher Wert | Ob dieser Benutzer gelöschte oder weiche wurde gelöscht. |
+| ownerPrincipalName                | Zeichenfolge  | Der Gruppe Besitzer principal Name.          |
 | lastActivityDate                  | Datum    | Datum der letzten Aktivität für die folgenden Szenarien: Postfach empfangene e-Mails; gruppieren Benutzer angezeigt, bearbeitet, freigegebene oder Dateien in SharePoint-Dokumentbibliothek synchronisiert; SharePoint-Seiten angezeigt; Benutzer gebucht, lesen oder gefallen Nachrichten in Yammer-Gruppen. |
-| groupType                         | String  | Der Gruppentyp. Mögliche Werte sind: **öffentlich** oder **Privat**. |
+| groupType                         | Zeichenfolge  | Der Gruppentyp. Mögliche Werte sind: **öffentlich** oder **Privat**. |
 | memberCount                       | Int64   | Die Gruppe Elementanzahl.                  |
 | externalMemberCount               | Int64   | Die Gruppe externe Elementanzahl.         |
 | exchangeReceivedEmailCount        | Int64   | Die Anzahl der e-Mail, die das Gruppenpostfach empfangen. |
@@ -31,7 +32,7 @@ ms.locfileid: "27058919"
 | exchangeMailboxStorageUsedInBytes | Int64   | Der Speicher des Postfachs Gruppe verwendet.   |
 | sharePointTotalFileCount          | Int64   | Die Gesamtzahl der Dateien in der Website der SharePoint-Gruppe. |
 | sharePointSiteStorageUsedInBytes  | Int64   | Die Speicherung von SharePoint-Gruppe der Website verwendet. |
-| reportPeriod                      | String  | Die Anzahl der Tage, die der Bericht wird behandelt.    |
+| reportPeriod                      | Zeichenfolge  | Die Anzahl der Tage, die der Bericht wird behandelt.    |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

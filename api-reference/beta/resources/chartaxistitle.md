@@ -2,12 +2,13 @@
 title: ChartAxisTitle-Ressourcentyp
 description: Stellt den Titel einer Diagrammachse dar.
 author: lumine2008
-ms.openlocfilehash: f787e4572c0b0f499740e2ba1e790fec1ce7ba61
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a78219e5833f7f85cde571dc984959b642ebe4d4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357295"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894180"
 ---
 # <a name="chartaxistitle-resource-type"></a>ChartAxisTitle-Ressourcentyp
 
@@ -32,7 +33,7 @@ Stellt den Titel einer Diagrammachse dar.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Format|[ChartAxisTitleFormat](chartaxistitleformat.md)|Stellt die Formatierung des Diagrammachsentitels dar. Schreibgeschützt.|
+|format|[ChartAxisTitleFormat](chartaxistitleformat.md)|Stellt die Formatierung des Diagrammachsentitels dar. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

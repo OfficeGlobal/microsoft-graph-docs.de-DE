@@ -2,12 +2,13 @@
 title: 'notebook: getRecentNotebooks'
 description: Rufen Sie eine Liste der recentNotebook-Instanzen ab, auf die vom angemeldeten Benutzer zugegriffen wurde.
 author: Jewan-microsoft
-ms.openlocfilehash: ca0f39b3a7184e667b8ed848ac89ffd78ae096f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6c6d6920636f3d5aa6201bb1183437906bad6cfd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354138"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894292"
 ---
 # <a name="notebook-getrecentnotebooks"></a>notebook: getRecentNotebooks
 
@@ -41,7 +42,7 @@ Der `<id | userPrincipalName>` für den Benutzer muss mit dem im Autorisierungst
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
-| Autorisierung  | Bearer {code}|
+| Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

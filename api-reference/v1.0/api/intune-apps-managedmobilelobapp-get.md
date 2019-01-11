@@ -2,12 +2,13 @@
 title: managedMobileLobApp abrufen
 description: Lesen von Eigenschaften und Beziehungen des managedMobileLobApp-Objekts.
 author: tfitzmac
-ms.openlocfilehash: b15f4337c8ff5669d50ada9335f1fde7b111f205
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 84468e386095bc8e5181687f40343f24fb5d11ee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325466"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894110"
 ---
 # <a name="get-managedmobilelobapp"></a>managedMobileLobApp abrufen
 
@@ -37,8 +38,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: onenoteOperation abrufen
 description: 'Dient zum Abrufen des Status eines lange dauernden OneNote-Vorgangs. Dies gilt für Vorgänge, die den Header **Operation-Location** in der Antwort zurückgeben, z. B. `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.   '
-ms.openlocfilehash: 67f11fb29d34b0d8cd2968cdc1dd5addabb3c0a2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c402c5d334ab3b1fb34b2991ffcdb94c89bd5da3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018817"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894327"
 ---
 # <a name="get-onenoteoperation"></a>onenoteOperation abrufen
 
@@ -42,7 +43,7 @@ Keine.
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
-| Accept | string | `application/json` |
+| Annehmen | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

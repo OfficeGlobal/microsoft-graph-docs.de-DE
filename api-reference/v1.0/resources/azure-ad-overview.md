@@ -1,12 +1,13 @@
 ---
 title: Arbeiten mit Azure Active Directory-Ressourcen in Microsoft Graph
 description: 'Mit Microsoft Graph können Sie auf Azure Active Directory (Azure AD)-Ressourcen zugreifen, um z. B. folgende Szenarios zu unterstützen: Verwalten von Administratorrollen (Verzeichnisrollen), Einladen von Benutzern, die nicht zu einer Organisation gehören, und als Cloud-Lösungsanbieter (CSP) auch Verwalten der Daten Ihrer Kunden. Microsoft Graph bietet auch Methoden, die von Apps verwendet werden können, um beispielsweise Informationen über transitive Gruppen- und Rollenmitgliedschaften zu ermitteln. '
-ms.openlocfilehash: 737415f04bea5e149e1b3d9ba6d41c195cfb25fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 5269725a130a2aada958ec5998f21bc6489696b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018016"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894334"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Arbeiten mit Azure Active Directory-Ressourcen in Microsoft Graph
 

@@ -2,12 +2,13 @@
 title: sharedPCConfiguration abrufen
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs sharedPCConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 477103638c0d0315ee285c21b4572328038759fa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e727f30beb46d58aa64051d4470f9f168fc38bc3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344758"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894068"
 ---
 # <a name="get-sharedpcconfiguration"></a>sharedPCConfiguration abrufen
 
@@ -37,8 +38,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

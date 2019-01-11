@@ -2,12 +2,13 @@
 title: Educationclass-Eigenschaften aktualisieren
 description: Dient zum Aktualisieren der Eigenschaften einer Klasse.
 author: mmast-msft
-ms.openlocfilehash: 9a11ae5e1a2139df4ade3417c940d00dea2d1888
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ad91ddafc669e641cb21fb91bccfda4a1eea4dd1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358709"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894075"
 ---
 # <a name="update-educationclass-properties"></a>Educationclass-Eigenschaften aktualisieren
 

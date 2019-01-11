@@ -2,12 +2,13 @@
 title: omaSettingStringXml-Ressourcentyp
 description: Zeichenfolgen-XML-Definition der OMA-Einstellungen
 author: tfitzmac
-ms.openlocfilehash: 5582ca84a9d6c918ce7b8dea5a21f616804da4ca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 976c95ed9ffa6674ddc185bb1723c7d7f9d054f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323786"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894019"
 ---
 # <a name="omasettingstringxml-resource-type"></a>omaSettingStringXml-Ressourcentyp
 
@@ -23,7 +24,7 @@ Erbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |displayName|Zeichenfolge|Anzeigename Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|String|Beschreibung. Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|Zeichenfolge|Beschreibung. Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|Zeichenfolge|OMA Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |fileName|Zeichenfolge|Die dem Dateinamen zugeordnete Werteigenschaft (*.xml).|
 |value|Binär|Wert (UTF8-codiertes Bytearray)|

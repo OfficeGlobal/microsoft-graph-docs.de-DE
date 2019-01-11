@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp fileSecurityState
 description: Enthält Informationen zur Datei (nicht verarbeiten) im Zusammenhang mit der Benachrichtigung.
-ms.openlocfilehash: d1358d7fe0d5565845201781e32b3da14a89f412
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 14ffa41b395bde04972f0af0436297aa4d038524
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019795"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894096"
 ---
 # <a name="filesecuritystate-resource-type"></a>Ressourcentyp fileSecurityState
 
@@ -17,9 +18,9 @@ Enthält Informationen zur Datei (nicht verarbeiten) im Zusammenhang mit der Ben
 | Eigenschaft   | Typ|Beschreibung|
 |:---------------|:--------|:----------|
 |fileHash|[fileHash](filehash.md)|Komplexer Typ mit Dateihashes (cryptographic und der Speicherort).|
-|name|String|Der Dateiname (ohne Pfad).|
-|Pfad|String|Vollständiger Dateipfad der die Datei/ImageFile.|
-|riskScore|String|Anbieter generiert/berechnet riskieren Bewertung der alert-Datei. Empfohlene Wertebereich von 0 bis 1, die den Prozentsatz entspricht.|
+|name|Zeichenfolge|Der Dateiname (ohne Pfad).|
+|Pfad|Zeichenfolge|Vollständiger Dateipfad der die Datei/ImageFile.|
+|riskScore|Zeichenfolge|Anbieter generiert/berechnet riskieren Bewertung der alert-Datei. Empfohlene Wertebereich von 0 bis 1, die den Prozentsatz entspricht.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

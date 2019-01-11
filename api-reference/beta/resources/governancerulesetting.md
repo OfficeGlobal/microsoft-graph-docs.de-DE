@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp governanceRuleSetting
 description: Stellt die Regeln, denen die rolleneinstellungen bestehen.
-ms.openlocfilehash: 486b5163c59772c971cfc1d61a98817b7f0c16f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7554c96daec70a95cde5ab0c3faedfba74764cff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062344"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894257"
 ---
 # <a name="governancerulesetting-resource-type"></a>Ressourcentyp governanceRuleSetting
 
@@ -18,8 +19,8 @@ Stellt die Regeln, denen die rolleneinstellungen bestehen.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft      | Typ         |Beschreibung|
 |:-------------|:-------------|:----------|
-|ruleIdentifier|String        |Die Id der Regel. Beispielsweise ``ExpirationRule`` und ``MfaRule``.|
-|setting       |String        |Die Einstellungen der Regel. Der Wert ist eine JSON-Zeichenfolge mit einer Liste von Paaren im Format Parameter_Name:Parameter_Value. Beispielsweise gibt `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
+|ruleIdentifier|Zeichenfolge        |Die Id der Regel. Beispielsweise ``ExpirationRule`` und ``MfaRule``.|
+|setting       |Zeichenfolge        |Die Einstellungen der Regel. Der Wert ist eine JSON-Zeichenfolge mit einer Liste von Paaren im Format Parameter_Name:Parameter_Value. Beispielsweise gibt `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

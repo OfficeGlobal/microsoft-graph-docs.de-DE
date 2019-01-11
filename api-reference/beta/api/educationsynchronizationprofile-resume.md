@@ -2,12 +2,13 @@
 title: Sync auf ein EducationSynchronizationProfile fortsetzen
 description: Setzen Sie die Synchronisierung eines bestimmten Schule Daten Synchronisierungsprofils im Mandanten fort.
 author: mmast-msft
-ms.openlocfilehash: fd148db59d34f6455ba01e721453972f9cf65be4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c68fb6d042d92fd0f1334dc498b175c27cbc4ced
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305649"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894208"
 ---
 # <a name="resume-sync-on-an-educationsynchronizationprofile"></a>Sync auf ein EducationSynchronizationProfile fortsetzen
 
@@ -33,7 +34,7 @@ POST /synchronizationProfiles/{id}/resume
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich.  |
+| Authorization  | string  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

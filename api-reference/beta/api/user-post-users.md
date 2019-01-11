@@ -2,12 +2,13 @@
 title: Benutzer erstellen
 description: Verwenden Sie diese API, um einen neuen Benutzer zu erstellen.
 author: dkershaw10
-ms.openlocfilehash: ace74039d3740b51487252447ba3d56a018f745e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 927ea3cdbc6ad8e3f5b5df592288493bd8f17896
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314854"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894586"
 ---
 # <a name="create-user"></a>Benutzer erstellen
 
@@ -106,7 +107,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Preview)](/graph/extensibility-open-users)

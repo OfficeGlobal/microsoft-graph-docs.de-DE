@@ -2,12 +2,13 @@
 title: RequiredPasswordType Enum-Typ
 description: Mögliche Werte der erforderlichen Kennwörter.
 author: tfitzmac
-ms.openlocfilehash: 46ccd54a5a34b0fa3ce9e4eceec65d3cecf717b2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2e4be0a9f1cfeb023957556b92635dd249419f14
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314476"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894012"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>RequiredPasswordType Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27314476"
 
 Mögliche Werte der erforderlichen Kennwörter.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |deviceDefault|0|Gerät Standardwert, keine beabsichtigt.|
 |Alphanumerisch|1|Alphanumerisches Kennwort erforderlich.|

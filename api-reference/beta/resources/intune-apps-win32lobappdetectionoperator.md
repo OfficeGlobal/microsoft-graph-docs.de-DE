@@ -2,12 +2,13 @@
 title: win32LobAppDetectionOperator Enum-Typ
 description: Enthält Eigenschaften für die Erkennung Operator.
 author: tfitzmac
-ms.openlocfilehash: b2c2d9398e9b5540e8da642b3d78f3709d24c93b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0eaeb6fde80b24e69794bd21d976ae3447b6df81
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315883"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894264"
 ---
 # <a name="win32lobappdetectionoperator-enum-type"></a>win32LobAppDetectionOperator Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27315883"
 
 Enthält Eigenschaften für die Erkennung Operator.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Nicht konfiguriert.|
 |gleich|1|Operator gleich.|

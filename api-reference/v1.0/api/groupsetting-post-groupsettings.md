@@ -1,12 +1,13 @@
 ---
 title: Erstellen einer Gruppeneinstellung
 description: Verwenden Sie diese API zum Erstellen einer neuen Einstellung, basierend auf den Vorlagen, die in groupSettingTemplates zur Verfügung stehen. Diese Einstellungen können auf Mandantenebene oder auf Gruppenebene erfolgen. Die Erstellungsanforderung muss settingValues für alle Einstellungen bereitstellen, die in der Vorlage definiert sind. Bei gruppenspezifischen Einstellungen kann nur die Einstellung, die regelt, ob die Mitglieder einer Gruppe Gastbenutzer einladen können, festgelegt werden. Dies steuert dieses Verhalten, sobald die Möglichkeit zum Hinzufügen von Gastbenutzern zu einer Gruppe allgemein verfügbar ist.
-ms.openlocfilehash: b17ccd32934e1b26475175ec89da48fb8ea4b744
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c5ba428380e6503f8d54682709d36e12b7ff4de3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017969"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894537"
 ---
 # <a name="create-a-group-setting"></a>Erstellen einer Gruppeneinstellung
 

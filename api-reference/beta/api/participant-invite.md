@@ -2,12 +2,13 @@
 title: 'Teilnehmer: einladen'
 description: Einladen von Teilnehmern zum aktiven Anruf.
 author: VinodRavichandran
-ms.openlocfilehash: 732bd115fcf473825e1c1e24e10fb2edd6f04f04
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: d87e7863583c45a200bb2d077134b66500b23b08
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380527"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894313"
 ---
 # <a name="participant-invite"></a>Teilnehmer: einladen
 
@@ -22,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | :-------------- | :--------------------------------------------------------- |
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt                       |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                       |
-| Application     | Calls.InitiateGroupCalls.All                               |
+| Anwendung     | Calls.InitiateGroupCalls.All                               |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

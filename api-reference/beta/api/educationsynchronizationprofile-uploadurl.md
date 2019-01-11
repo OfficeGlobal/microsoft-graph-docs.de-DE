@@ -2,12 +2,13 @@
 title: 'EducationSynchronizationProfile: UploadUrl'
 description: Abrufen einer gemeinsamen Zugriff Signatur (SAS) für das Hochladen von Quelldateien in Azure Blob-Speicher für ein bestimmtes Schule Synchronisierung Datenprofil im Mandanten. Das Token SAS hat eine Gültigkeit von einer Stunde.
 author: mmast-msft
-ms.openlocfilehash: 15a4536e21307067ac55783edd9eac675ae4144b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2f6b10bda218bafbe18698defed138c39a45cc7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341062"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894145"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>EducationSynchronizationProfile: UploadUrl
 
@@ -37,7 +38,7 @@ GET /synchronizationProfiles/{id}/uploadUrl
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich.  |
+| Authorization  | string  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
