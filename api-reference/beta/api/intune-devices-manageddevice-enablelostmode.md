@@ -2,12 +2,13 @@
 title: EnableLostMode Aktion
 description: Verloren-Modus aktivieren
 author: tfitzmac
-ms.openlocfilehash: b75df200a57f5861515f1e5d3c867df8b3f08276
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f8ba6a21466c2a612920754e18a0252ef8f2b826
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359479"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807245"
 ---
 # <a name="enablelostmode-action"></a>EnableLostMode Aktion
 
@@ -38,10 +39,10 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.

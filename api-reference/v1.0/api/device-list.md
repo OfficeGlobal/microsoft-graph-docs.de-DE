@@ -2,12 +2,13 @@
 title: Geräte auflisten
 description: Mit dieser API können Sie eine Liste der in einer Organisation registrierten Geräteobjekte abrufen.
 author: tfitzmac
-ms.openlocfilehash: a17dcdd3fc15a04276095b2f356cc780ae6a8fee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 433938618d936ff48b83c74febe847ef6e7f7512
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314378"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805096"
 ---
 # <a name="list-devices"></a>Geräte auflisten
 
@@ -33,7 +34,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

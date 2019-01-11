@@ -2,12 +2,13 @@
 title: Ressourcentyp tokenMeetingInfo
 description: Der Typ des TokenMeetingInfo.
 author: VinodRavichandran
-ms.openlocfilehash: 6fa66fef6f401db848a9ed3e92c5a1003a5294b6
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 9a618906df450ce58f7428a76367e896b315591a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380548"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806979"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>Ressourcentyp tokenMeetingInfo
 
@@ -19,7 +20,7 @@ Der Typ des TokenMeetingInfo.
 
 | Eigenschaft                     | Typ    | Beschreibung                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| allowConversationWithoutHost | Boolescher Wert | Gibt an, ob eine Unterhaltung fortgesetzt werden kann, sobald der Host der Unterhaltung verlässt. |
+| allowConversationWithoutHost | Boolean | Gibt an, ob eine Unterhaltung fortgesetzt werden kann, sobald der Host der Unterhaltung verlässt. |
 | token                        | String  | Das Token an der Besprechung teilnehmen/aktivieren.                                        |
 
 ## <a name="json-representation"></a>JSON-Darstellung
