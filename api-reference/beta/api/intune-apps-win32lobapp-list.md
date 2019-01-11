@@ -2,30 +2,31 @@
 title: Liste win32LobApps
 description: Listeneigenschaften und Beziehungen der win32LobApp-Objekte.
 author: tfitzmac
-ms.openlocfilehash: 1b26ac4dffa7e93598a16189086a51f9f8663d15
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 809bdf388d33641e6b797c7dd934d856dcdd227b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333635"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864610"
 ---
-# <a name="list-win32lobapps"></a><span data-ttu-id="d2533-103">Liste win32LobApps</span><span class="sxs-lookup"><span data-stu-id="d2533-103">List win32LobApps</span></span>
+# <a name="list-win32lobapps"></a><span data-ttu-id="01f60-103">Liste win32LobApps</span><span class="sxs-lookup"><span data-stu-id="01f60-103">List win32LobApps</span></span>
 
-> <span data-ttu-id="d2533-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="d2533-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d2533-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="d2533-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="01f60-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="01f60-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="01f60-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="01f60-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="d2533-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="d2533-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="01f60-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="01f60-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="d2533-107">Listeneigenschaften und Beziehungen der [win32LobApp](../resources/intune-apps-win32lobapp.md) -Objekte.</span><span class="sxs-lookup"><span data-stu-id="d2533-107">List properties and relationships of the [win32LobApp](../resources/intune-apps-win32lobapp.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="d2533-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="d2533-108">Prerequisites</span></span>
-<span data-ttu-id="d2533-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d2533-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="01f60-107">Listeneigenschaften und Beziehungen der [win32LobApp](../resources/intune-apps-win32lobapp.md) -Objekte.</span><span class="sxs-lookup"><span data-stu-id="01f60-107">List properties and relationships of the [win32LobApp](../resources/intune-apps-win32lobapp.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="01f60-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="01f60-108">Prerequisites</span></span>
+<span data-ttu-id="01f60-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="01f60-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d2533-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="d2533-111">Permission type</span></span>|<span data-ttu-id="d2533-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="d2533-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="01f60-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="01f60-111">Permission type</span></span>|<span data-ttu-id="01f60-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="01f60-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="d2533-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="d2533-113">Delegated (work or school account)</span></span>|<span data-ttu-id="d2533-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="d2533-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="d2533-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="d2533-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d2533-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="d2533-116">Not supported.</span></span>|
-|<span data-ttu-id="d2533-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="d2533-117">Application</span></span>|<span data-ttu-id="d2533-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="d2533-118">Not supported.</span></span>|
+|<span data-ttu-id="01f60-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="01f60-113">Delegated (work or school account)</span></span>|<span data-ttu-id="01f60-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="01f60-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="01f60-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="01f60-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="01f60-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="01f60-116">Not supported.</span></span>|
+|<span data-ttu-id="01f60-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="01f60-117">Application</span></span>|<span data-ttu-id="01f60-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="01f60-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="d2533-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="d2533-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="01f60-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="01f60-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,27 +35,27 @@ ms.locfileid: "27333635"
 GET /deviceAppManagement/mobileApps
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d2533-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="d2533-120">Request headers</span></span>
-|<span data-ttu-id="d2533-121">Header</span><span class="sxs-lookup"><span data-stu-id="d2533-121">Header</span></span>|<span data-ttu-id="d2533-122">Wert</span><span class="sxs-lookup"><span data-stu-id="d2533-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="01f60-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="01f60-120">Request headers</span></span>
+|<span data-ttu-id="01f60-121">Header</span><span class="sxs-lookup"><span data-stu-id="01f60-121">Header</span></span>|<span data-ttu-id="01f60-122">Wert</span><span class="sxs-lookup"><span data-stu-id="01f60-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="d2533-123">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="d2533-123">Authorization</span></span>|<span data-ttu-id="d2533-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="d2533-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="d2533-125">Accept</span><span class="sxs-lookup"><span data-stu-id="d2533-125">Accept</span></span>|<span data-ttu-id="d2533-126">application/json</span><span class="sxs-lookup"><span data-stu-id="d2533-126">application/json</span></span>|
+|<span data-ttu-id="01f60-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="01f60-123">Authorization</span></span>|<span data-ttu-id="01f60-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="01f60-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="01f60-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="01f60-125">Accept</span></span>|<span data-ttu-id="01f60-126">application/json</span><span class="sxs-lookup"><span data-stu-id="01f60-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d2533-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="d2533-127">Request body</span></span>
-<span data-ttu-id="d2533-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="d2533-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="01f60-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="01f60-127">Request body</span></span>
+<span data-ttu-id="01f60-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="01f60-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d2533-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="d2533-129">Response</span></span>
-<span data-ttu-id="d2533-130">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [win32LobApp](../resources/intune-apps-win32lobapp.md) .</span><span class="sxs-lookup"><span data-stu-id="d2533-130">If successful, this method returns a `200 OK` response code and a collection of [win32LobApp](../resources/intune-apps-win32lobapp.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="01f60-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="01f60-129">Response</span></span>
+<span data-ttu-id="01f60-130">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [win32LobApp](../resources/intune-apps-win32lobapp.md) .</span><span class="sxs-lookup"><span data-stu-id="01f60-130">If successful, this method returns a `200 OK` response code and a collection of [win32LobApp](../resources/intune-apps-win32lobapp.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d2533-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d2533-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="d2533-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="d2533-132">Request</span></span>
-<span data-ttu-id="d2533-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="d2533-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="01f60-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="01f60-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="01f60-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="01f60-132">Request</span></span>
+<span data-ttu-id="01f60-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="01f60-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ```
 
-### <a name="response"></a><span data-ttu-id="d2533-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="d2533-134">Response</span></span>
-<span data-ttu-id="d2533-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="d2533-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="01f60-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="01f60-134">Response</span></span>
+<span data-ttu-id="01f60-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="01f60-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
