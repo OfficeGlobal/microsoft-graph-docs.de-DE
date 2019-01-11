@@ -2,50 +2,51 @@
 title: 'TableColumn: Range'
 description: Ruft das Bereichsobjekt ab, das mit der gesamten Spalte verknüpft ist.
 author: lumine2008
-ms.openlocfilehash: ef3615d78ca4c4121d69db68e7cb3cdb6840ad01
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fa8c471f4c884e159b7194e2012b4af894a82bf2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328931"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868397"
 ---
-# <a name="tablecolumn-range"></a><span data-ttu-id="6b9fa-103">TableColumn: Range</span><span class="sxs-lookup"><span data-stu-id="6b9fa-103">TableColumn: Range</span></span>
+# <a name="tablecolumn-range"></a><span data-ttu-id="166ab-103">TableColumn: Range</span><span class="sxs-lookup"><span data-stu-id="166ab-103">TableColumn: Range</span></span>
 
-> <span data-ttu-id="6b9fa-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="6b9fa-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6b9fa-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="6b9fa-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="166ab-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="166ab-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="166ab-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="166ab-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="6b9fa-106">Ruft das Bereichsobjekt ab, das mit der gesamten Spalte verknüpft ist.</span><span class="sxs-lookup"><span data-stu-id="6b9fa-106">Gets the range object associated with the entire column.</span></span>
-## <a name="permissions"></a><span data-ttu-id="6b9fa-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="6b9fa-107">Permissions</span></span>
-<span data-ttu-id="6b9fa-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6b9fa-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="166ab-106">Ruft das Bereichsobjekt ab, das mit der gesamten Spalte verknüpft ist.</span><span class="sxs-lookup"><span data-stu-id="166ab-106">Gets the range object associated with the entire column.</span></span>
+## <a name="permissions"></a><span data-ttu-id="166ab-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="166ab-107">Permissions</span></span>
+<span data-ttu-id="166ab-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="166ab-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6b9fa-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="6b9fa-110">Permission type</span></span>      | <span data-ttu-id="6b9fa-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="6b9fa-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="166ab-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="166ab-110">Permission type</span></span>      | <span data-ttu-id="166ab-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="166ab-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6b9fa-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="6b9fa-112">Delegated (work or school account)</span></span> | <span data-ttu-id="6b9fa-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6b9fa-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="6b9fa-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="6b9fa-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6b9fa-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6b9fa-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="6b9fa-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="6b9fa-116">Application</span></span> | <span data-ttu-id="6b9fa-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="6b9fa-117">Not supported.</span></span> |
+|<span data-ttu-id="166ab-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="166ab-112">Delegated (work or school account)</span></span> | <span data-ttu-id="166ab-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="166ab-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="166ab-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="166ab-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="166ab-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="166ab-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="166ab-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="166ab-116">Application</span></span> | <span data-ttu-id="166ab-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="166ab-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6b9fa-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="6b9fa-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="166ab-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="166ab-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/columns/{id|name}/Range
 POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="6b9fa-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="6b9fa-119">Request headers</span></span>
-| <span data-ttu-id="6b9fa-120">Name</span><span class="sxs-lookup"><span data-stu-id="6b9fa-120">Name</span></span>       | <span data-ttu-id="6b9fa-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6b9fa-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="166ab-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="166ab-119">Request headers</span></span>
+| <span data-ttu-id="166ab-120">Name</span><span class="sxs-lookup"><span data-stu-id="166ab-120">Name</span></span>       | <span data-ttu-id="166ab-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="166ab-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="6b9fa-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="6b9fa-122">Authorization</span></span>  | <span data-ttu-id="6b9fa-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="6b9fa-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="6b9fa-125">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="6b9fa-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="6b9fa-p104">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="6b9fa-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="166ab-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="166ab-122">Authorization</span></span>  | <span data-ttu-id="166ab-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="166ab-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="166ab-125">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="166ab-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="166ab-p104">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="166ab-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6b9fa-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="6b9fa-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="166ab-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="166ab-128">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="6b9fa-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="6b9fa-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="166ab-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="166ab-129">Response</span></span>
 
-<span data-ttu-id="6b9fa-130">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [Range](../resources/range.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="6b9fa-130">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="166ab-130">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [Range](../resources/range.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="166ab-130">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6b9fa-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6b9fa-131">Example</span></span>
-<span data-ttu-id="6b9fa-132">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="6b9fa-132">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="6b9fa-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="6b9fa-133">Request</span></span>
-<span data-ttu-id="6b9fa-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="6b9fa-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="166ab-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="166ab-131">Example</span></span>
+<span data-ttu-id="166ab-132">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="166ab-132">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="166ab-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="166ab-133">Request</span></span>
+<span data-ttu-id="166ab-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="166ab-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "tablecolumn_range"
@@ -54,8 +55,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/Range
 ```
 
-##### <a name="response"></a><span data-ttu-id="6b9fa-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="6b9fa-135">Response</span></span>
-<span data-ttu-id="6b9fa-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="6b9fa-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="166ab-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="166ab-135">Response</span></span>
+<span data-ttu-id="166ab-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="166ab-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
