@@ -2,12 +2,13 @@
 title: Abrufen von „mdmWindowsInformationProtectionPolicy“
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs mdmWindowsInformationProtectionPolicy.
 author: tfitzmac
-ms.openlocfilehash: 823e54124077f0485e8c86b18304852d0ef0cf8c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4f9745297ea04001e403d3d0ba331cea79d7fa81
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329344"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809436"
 ---
 # <a name="get-mdmwindowsinformationprotectionpolicy"></a>Abrufen von „mdmWindowsInformationProtectionPolicy“
 
@@ -37,10 +38,10 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

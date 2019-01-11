@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp leakedCredentialsRiskEvent
 description: Ein Risikoereignis von Azure Active Directory-Identität Protection, in dem ein Konto Anmeldeinformationen in der Natur erkannt wurden, erkannt. Umfassende Informationen zum Risiko-Ereignissen finden Sie in der Dokumentation zu Azure AD-Schutz.
-ms.openlocfilehash: 2404564726c3ca7ee1f577b3d81daaa339941406
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7a8f2a8cf72b713fab30887fcc4d81b8a88e71ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064482"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815981"
 ---
 # <a name="leakedcredentialsriskevent-resource-type"></a>Ressourcentyp leakedCredentialsRiskEvent
 

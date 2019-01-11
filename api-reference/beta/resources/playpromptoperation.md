@@ -2,12 +2,13 @@
 title: Ressourcentyp playPromptOperation
 description: Abrufen des Ergebnisses der Aktion PlayPrompt PlayPrompt-Vorgang.
 author: VinodRavichandran
-ms.openlocfilehash: d63b8f6cfa96706104cd7baaa08475974b12ca13
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: bc18b8f64dedd3fa4d758778bbee37c6bcfd46c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380952"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814378"
 ---
 # <a name="playpromptoperation-resource-type"></a>Ressourcentyp playPromptOperation
 
@@ -19,10 +20,10 @@ Abrufen des Ergebnisses der Aktion PlayPrompt PlayPrompt-Vorgang.
 
 | Eigenschaft            | Typ                        | Beschreibung|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| clientContext       | Zeichenfolge                      | Der Clientkontext.                                                                |
-| completionReason    | Zeichenfolge                      | Mögliche Werte sind: `unknown`, `completedSuccessfully` und `mediaOperationCanceled`. |
+| clientContext       | String                      | Der Clientkontext.                                                                |
+| completionReason    | String                      | Mögliche Werte sind: `unknown`, `completedSuccessfully` und `mediaOperationCanceled`. |
 | createdDateTime     | DateTimeOffset              | Die Startzeit des Vorgangs.                                                   |
-| id                  | Zeichenfolge                      | Schreibgeschützt.                                                                         |
+| id                  | String                      | Schreibgeschützt.                                                                         |
 | lastActionDateTime  | DateTimeOffset              | Der Zeitpunkt der letzten Aktion des Vorgangs.                                      |
 | resultInfo          | [resultInfo](resultInfo.md) | Informationen zu den Ergebnissen. Schreibgeschützt. Server generiert wurde.                               |
 | status              | String                      | Mögliche Werte: `notStarted`, `running`, `completed`, `failed`.               |

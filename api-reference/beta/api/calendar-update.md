@@ -1,12 +1,13 @@
 ---
 title: Kalender aktualisieren
 description: 'Aktualisieren Sie die Eigenschaften eines calendar-Objekts. Der Kalender möglich für einen Benutzer, '
-ms.openlocfilehash: dd4acac15fc0c373e244bef65ccd630412127072
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 48a3dd1630ce28aae1f8749cec7a1a4bbd5d6b83
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059664"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814371"
 ---
 # <a name="update-calendar"></a>Kalender aktualisieren
 
@@ -54,7 +55,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |color|String|Gibt das Farbdesign an, um den Kalender von anderen Kalendern in einer Benutzeroberfläche zu unterscheiden. Die Eigenschaftswerte sind: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
-|isDefaultCalendar|Boolesch|True, wenn der Kalender ist anderweitig des Benutzers Standardkalender, false.|
+|isDefaultCalendar|Boolean|True, wenn der Kalender ist anderweitig des Benutzers Standardkalender, false.|
 |name|String|Der Kalendername.|
 
 ## <a name="response"></a>Antwort

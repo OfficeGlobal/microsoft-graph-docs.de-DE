@@ -2,12 +2,13 @@
 title: roleDefinition abrufen
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs roleDefinition.
 author: tfitzmac
-ms.openlocfilehash: 77087011f30f5cdc261074bc58e1afe48a3f9d27
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8d4df6a9a3acdfc4f4e1ff97f4eb8f8b189e1a0d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303311"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805215"
 ---
 # <a name="get-roledefinition"></a>roleDefinition abrufen
 
@@ -36,10 +37,10 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

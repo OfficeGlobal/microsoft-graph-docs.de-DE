@@ -2,12 +2,13 @@
 title: Auflisten von „managedDeviceMobileAppConfigurationAssignment“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs managedDeviceMobileAppConfigurationAssignment auf.
 author: tfitzmac
-ms.openlocfilehash: fa08d0475de11615093b4d6a380e2096b64573b5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: af96468bf5d6fcc1c1f1fd881a8d4567e8ed565b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324423"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809093"
 ---
 # <a name="list-manageddevicemobileappconfigurationassignments"></a>Auflisten von „managedDeviceMobileAppConfigurationAssignment“
 
@@ -35,10 +36,10 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

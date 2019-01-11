@@ -2,12 +2,13 @@
 title: DeviceConfigurationConflictSummary aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines DeviceConfigurationConflictSummary-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 46290062b73a13cad575535cf28cb073f3a952be
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4fb01b5fe7321d25e6b1d7e346a029e830375247
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311501"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812761"
 ---
 # <a name="update-deviceconfigurationconflictsummary"></a>DeviceConfigurationConflictSummary aktualisieren
 
@@ -35,10 +36,10 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [DeviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) eine JSON-Darstellung.

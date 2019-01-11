@@ -2,12 +2,13 @@
 title: Kalender löschen
 description: Mit dieser API können Sie Kalender löschen (nicht jedoch den Standardkalender).
 author: angelgolfer-ms
-ms.openlocfilehash: d8e2a7aaaff9f4489d5ef1cbcae97bcdbceb8f17
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4621314f179ddc1eac47b5f178ff50af670972db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348790"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809492"
 ---
 # <a name="delete-calendar"></a>Kalender löschen
 
@@ -40,7 +41,7 @@ DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name           |  Typ    | Beschreibung|
 |:---------------|:---------|:----------|
-| Autorisierung  |  string  | Bearer {token}. Erforderlich. |
+| Authorization  |  string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

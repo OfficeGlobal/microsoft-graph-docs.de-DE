@@ -2,12 +2,13 @@
 title: registeredUser erstellen
 description: Mit dieser API können Sie einem Gerät einen registrierten Benutzer hinzufügen.
 author: tfitzmac
-ms.openlocfilehash: 765e82106fdfd23a6805a0bbda176635b279557d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 00adeaa417c538753121a322c7d6da634f680ade
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353746"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811858"
 ---
 # <a name="create-registereduser"></a>registeredUser erstellen
 
@@ -32,7 +33,7 @@ POST /devices/{id}/registeredUsers/$ref
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [directoryObject](../resources/directoryobject.md)-Objekts an.

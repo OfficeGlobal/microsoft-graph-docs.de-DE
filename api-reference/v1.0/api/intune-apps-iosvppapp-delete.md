@@ -2,12 +2,13 @@
 title: iosVppApp löschen
 description: Löscht Objekte des Typs iosVppApp.
 author: tfitzmac
-ms.openlocfilehash: b2b5aab5eff459c848b588a7922446a5c706076f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 445074b91ee60c844f150d2260362fe303873cd5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360123"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811900"
 ---
 # <a name="delete-iosvppapp"></a>iosVppApp löschen
 
@@ -33,10 +34,10 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

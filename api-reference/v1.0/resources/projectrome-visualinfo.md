@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp visualInfo
 description: Einen komplexen Typ für die **VisualElements** -Eigenschaft im Aktivitätsobjekt darstellt.
-ms.openlocfilehash: f77e25a7aad7d4357f6444fbdbd0f06a5cffd023
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: be40c4718944f1a739a9532a02c3d249514a2a13
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017901"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816478"
 ---
 # <a name="visualinfo-resource-type"></a>Ressourcentyp visualInfo
 

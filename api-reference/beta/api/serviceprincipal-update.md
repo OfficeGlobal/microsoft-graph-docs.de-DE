@@ -1,12 +1,13 @@
 ---
 title: Serviceprincipal aktualisieren
 description: Aktualisieren Sie die Eigenschaften des Serviceprincipal-Objekts.
-ms.openlocfilehash: a24a8c949d48f577a3d7fe6208a1422819772801
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a8d4eebe64ac9c0c658ae9c43e2e92045be67424
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065668"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813027"
 ---
 # <a name="update-serviceprincipal"></a>Serviceprincipal aktualisieren
 
@@ -37,10 +38,10 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolescher Wert|                **true,** Wenn das Dienstkonto für den Prinzipal aktiviert ist. anderenfalls **false**.            |
+|accountEnabled|Boolean|                **true,** Wenn das Dienstkonto für den Prinzipal aktiviert ist. anderenfalls **false**.            |
 |appDisplayName|String|Der Anzeigename, der von der zugeordneten Anwendung verfügbar gemacht werden.|
 |appId|Zeichenfolge|Der eindeutige Bezeichner für die zugewiesene Anwendung (dessen **AppId** -Eigenschaft).|
-|appRoleAssignmentRequired|Boolesch|Gibt an, ob ein **AppRoleAssignment** für einen Benutzer oder Gruppe erforderlich ist, bevor Azure AD einen Benutzer oder eine Zugriffstoken an die Anwendung ausstellt.                            **Notes**: erfordert Version 1.5 oder neuere, nicht NULL-Werte zulässt.            |
+|appRoleAssignmentRequired|Boolean|Gibt an, ob ein **AppRoleAssignment** für einen Benutzer oder Gruppe erforderlich ist, bevor Azure AD einen Benutzer oder eine Zugriffstoken an die Anwendung ausstellt.                            **Notes**: erfordert Version 1.5 oder neuere, nicht NULL-Werte zulässt.            |
 |appRoles|appRole|Die Rollen der Anwendung von der zugeordneten Anwendung verfügbar gemacht werden. Weitere Informationen finden Sie in der Definition der **AppRoles** -Eigenschaft in der Anwendung Entität **Notes**: erfordert Version 1.5 oder neuere, nicht NULL-Werte zulässt.            |
 |displayName|String|Der Anzeigename für den Dienstprinzipal.|
 |errorUrl|String|            |

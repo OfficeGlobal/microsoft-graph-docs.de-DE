@@ -1,12 +1,13 @@
 ---
 title: Bookingappointment aktualisieren
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: fd63d11bf7a33751b6a271c57d0f871b5e6d474f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: baedaf0e894dfdda96c43ff9dc0cb47ce796db9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060674"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809681"
 ---
 # <a name="update-bookingappointment"></a>Bookingappointment aktualisieren
 
@@ -50,7 +51,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |invoiceId|String|Die ID der Rechnung.|
 |invoiceStatus|string| Der Status der Rechnung. Mögliche Werte sind: `draft`, `reviewing`, `open`, `canceled`, `paid` und `corrective`.|
 |invoiceUrl|String|Die URL der Rechnung in Microsoft Bookings.|
-|optOutOfCustomerEmail|Boolesch|True gibt an, dass die [BookingCustomer](../resources/bookingcustomer.md) für diesen Termin nicht möchte einer Bestätigung für diesen Termin.|
+|optOutOfCustomerEmail|Boolean|True gibt an, dass die [BookingCustomer](../resources/bookingcustomer.md) für diesen Termin nicht möchte einer Bestätigung für diesen Termin.|
 |postBuffer|Duration|Der Zeitraum, nach den Termin enden, für die Bereinigung als Beispiel zu reservieren. Der Wert wird im Format [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) ausgedrückt. |
 |preBuffer|Duration|Die Zeitspanne, vor dem Beginn des Termins für die Vorbereitung, als Beispiel zu reservieren. Der Wert wird im Format [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) ausgedrückt.|
 |Preis|Gleitkommawert mit doppelter Genauigkeit|Die regulären Preis für einen Termin für die angegebene [BookingService](../resources/bookingservice.md).|

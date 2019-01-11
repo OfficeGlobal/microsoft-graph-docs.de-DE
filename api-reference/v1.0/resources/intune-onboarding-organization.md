@@ -2,12 +2,13 @@
 title: organization-Ressourcentyp
 description: Die organization-Ressource stellt eine Instanz der globalen Einstellungen und Ressourcen dar, die auf Mandantenebene ausgeführt und bereitgestellt werden.
 author: tfitzmac
-ms.openlocfilehash: da2d127dc5ba44187d8a3a066f5fe261d3dee859
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b87866520e62850f169861f4fac0a9a2454ea3d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322848"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814434"
 ---
 # <a name="organization-resource-type"></a>organization-Ressourcentyp
 

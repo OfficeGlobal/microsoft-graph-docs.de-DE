@@ -2,12 +2,13 @@
 title: IntendedPurpose Enum-Typ
 description: Importoptionen PFX.
 author: tfitzmac
-ms.openlocfilehash: 01332515afadc9b8779bdc5210009ed382cb352c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c698b9ca0de6e2a7ba52e85a7d5d2ae3434bf5f1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356973"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814798"
 ---
 # <a name="intendedpurpose-enum-type"></a>IntendedPurpose Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27356973"
 
 Importoptionen PFX.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht zugewiesene|1|Nicht zugewiesene|
 |smimeEncryption|2|SmimeEncryption|

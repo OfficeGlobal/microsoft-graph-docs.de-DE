@@ -1,12 +1,13 @@
 ---
 title: Approleassignment aktualisieren
 description: Aktualisieren Sie die Eigenschaften des Approleassignment-Objekts.
-ms.openlocfilehash: 3c861afde396d9cab2f745c15c7de1d9a81c5dcc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3d0f95e5413354a28e7b9b26e9b440f147c45931
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058710"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809632"
 ---
 # <a name="update-approleassignment"></a>Approleassignment aktualisieren
 

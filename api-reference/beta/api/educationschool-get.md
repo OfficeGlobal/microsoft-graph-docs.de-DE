@@ -2,12 +2,13 @@
 title: EducationSchool abrufen
 description: Abrufen der Eigenschaften und Beziehungen des Schulobjekts.
 author: mmast-msft
-ms.openlocfilehash: 143d55ce3500f855fd912362f578d385347497c1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f077cf3e614d6809a60e9fce03d82d0dee82f95b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313489"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813300"
 ---
 # <a name="get-educationschool"></a>EducationSchool abrufen
 
@@ -35,7 +36,7 @@ GET /education/users/schools
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

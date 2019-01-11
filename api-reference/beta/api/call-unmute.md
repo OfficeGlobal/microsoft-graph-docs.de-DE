@@ -2,12 +2,13 @@
 title: 'Rufen Sie: stummschaltung aufheben'
 description: Ermöglicht die Anwendung selbst stummschaltung aufheben.
 author: VinodRavichandran
-ms.openlocfilehash: abd5abdf0e91a24e2f8de4d5fbb3fa0cc1d7b243
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 3f010b7b7fb790b40455c8e09b785ffe29af0983
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380401"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813678"
 ---
 # <a name="call-unmute"></a>Rufen Sie: stummschaltung aufheben
 
@@ -41,7 +42,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
-|clientContext|Zeichenfolge|Der Clientkontext.|
+|clientContext|String|Der Clientkontext.|
 
 ## <a name="response"></a>Antwort
 Wenn der Vorgang erfolgreich war, gibt diese Methode `200 OK` Antwortobjekt Code und [CommsOperation](../resources/commsoperation.md) im Antworttext.

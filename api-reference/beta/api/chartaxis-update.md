@@ -2,12 +2,13 @@
 title: ChartAxis aktualisieren
 description: Dient zum Aktualisieren der Eigenschaften des ChartAxis-Objekts.
 author: lumine2008
-ms.openlocfilehash: bc6bea839751641530a3c3945307db2a206b7725
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 843aad2b3d6ea822078834439a085ba4bb10bf8b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325487"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813699"
 ---
 # <a name="update-chartaxis"></a>ChartAxis aktualisieren
 

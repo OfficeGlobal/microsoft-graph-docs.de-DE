@@ -2,12 +2,13 @@
 title: Anlage hinzufügen
 description: 'Verwenden Sie diese API zum Hinzufügen einer Anlage zu einer Nachricht. '
 author: angelgolfer-ms
-ms.openlocfilehash: 868ce046a37d027c675b005cef013892deffe2a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 089a82883adb1f0e5373d03a55fc0842b791aee3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314616"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814805"
 ---
 # <a name="add-attachment"></a>Anlage hinzufügen
 
@@ -52,7 +53,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext

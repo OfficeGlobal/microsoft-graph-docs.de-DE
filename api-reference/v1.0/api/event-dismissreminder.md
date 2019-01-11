@@ -2,12 +2,13 @@
 title: 'event: dismissReminder'
 description: Schließen Sie eine Erinnerung, die in einem Benutzerkalender für ein Ereignis ausgelöst wurde.
 author: angelgolfer-ms
-ms.openlocfilehash: 1075ee86ee174bab23bd0436c69da37f1f001d66
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1165dbf036848ee01ad80a1080a01e9b344fc399
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357778"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811571"
 ---
 # <a name="event-dismissreminder"></a>event: dismissReminder
 
@@ -48,7 +49,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 <br/>
 

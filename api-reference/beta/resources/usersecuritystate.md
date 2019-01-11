@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp userSecurityState
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: f530ac1a657b4049c17bdcdd40f1dd5ea734f278
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dd471b06f20327eb38734276ea0562ab35db6358
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061831"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810115"
 ---
 # <a name="usersecuritystate-resource-type"></a>Ressourcentyp userSecurityState
 
@@ -22,7 +23,7 @@ Statusinformationen über das Benutzerkonto enthält.
 |accountName|String|Kontoname des Benutzerkontos (ohne Active Directory-Domäne oder DNS-Domäne) - (auch als bezeichnet `mailNickName`).|
 |Domänname|Zeichenfolge|NetBIOS/Active Directory-Domäne des Benutzerkontos (d. h., im Format Domäne\Konto).|
 |emailRole|emailRole|Für e-Mail-bezogene Alerts - des Benutzerkontos e-Mail 'Role'. Mögliche Werte sind: `unknown`, `sender` und `recipient`.|
-|isVpn|Boolesch|Gibt an, ob der Benutzer über ein VPN angemeldet.|
+|isVpn|Boolean|Gibt an, ob der Benutzer über ein VPN angemeldet.|
 |logonDateTime|DateTimeOffset|Zeitpunkt der Anmeldung bei der aufgetreten ist. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
 |logonId|String|Benutzer-ID|
 |logonIp|String|IP-Adresse, die von die Anforderung-Anmeldung stammt.|

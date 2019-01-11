@@ -1,12 +1,13 @@
 ---
 title: plannerAppliedCategories-Ressourcentyp
 description: Die Ressource **AppliedCategoriesCollection** stellt die Auflistung von Kategorien (oder Etiketten), die mit einer Aufgabe angewendet wurden. Es ist Teil des PlannerTask-Objekts.
-ms.openlocfilehash: 77a322ea3c7cd694e8ca42368cac82a639a42440
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5601c3b0d49e7504c16a8ee517b60f3c98c84fee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019815"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814781"
 ---
 # <a name="plannerappliedcategories-resource-type"></a>plannerAppliedCategories-Ressourcentyp
 

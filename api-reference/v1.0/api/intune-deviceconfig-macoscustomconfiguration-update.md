@@ -2,12 +2,13 @@
 title: Aktualisieren von „macOSCustomConfiguration“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs macOSCustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 3d27b4e0821317e719dc9a7bbdae41c95721678f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 733428184ccca9dafbf343683c296708ef016ccb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314357"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809527"
 ---
 # <a name="update-macoscustomconfiguration"></a>Aktualisieren von „macOSCustomConfiguration“
 
@@ -33,10 +34,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) an.

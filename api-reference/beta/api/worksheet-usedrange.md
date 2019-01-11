@@ -1,12 +1,13 @@
 ---
 title: 'Arbeitsblatt: UsedRange'
 description: Der verwendete Bereich ist der kleinste Bereich, der mindestens eine der Zellen umfasst, die einen Wert enthalten oder denen eine Formatierung zugewiesen wurde. Wenn das Arbeitsblatt leer ist, gibt diese Funktion die oberste linke Zelle zurück.
-ms.openlocfilehash: 424d8226a8f109242956b139670ed674ae50b43d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b3ac4919b9af0a9e655b449a986962838e1b32d7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059600"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815036"
 ---
 # <a name="worksheet-usedrange"></a>Arbeitsblatt: UsedRange
 

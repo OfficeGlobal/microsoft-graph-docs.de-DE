@@ -2,12 +2,13 @@
 title: Ressourcentyp contact
 description: Ein Kontakt ist ein Element in Outlook, in dem Sie Informationen über die Personen und Organisationen, mit denen Sie kommunizieren, organisieren und speichern können. Kontakte sind in Kontaktordnern enthalten.
 author: angelgolfer-ms
-ms.openlocfilehash: 761fdd3ed6f9c4c9982c1bb7c23bfbff28409ce9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 933d8a8fb5f55df487b90b537bed91d4ff79146b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354187"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815456"
 ---
 # <a name="contact-resource-type"></a>Ressourcentyp contact
 

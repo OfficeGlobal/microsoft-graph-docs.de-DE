@@ -2,12 +2,13 @@
 title: Abrufen von androidScepCertificateProfile
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidScepCertificateProfile-Objekts.
 author: tfitzmac
-ms.openlocfilehash: ccfe35eb5bff25ee41afc73b7e01a1cd128884a7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d5eb50b9ad55b2756b88989067ef45ff5528466f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349616"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813013"
 ---
 # <a name="get-androidscepcertificateprofile"></a>Abrufen von androidScepCertificateProfile
 
@@ -39,10 +40,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

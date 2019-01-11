@@ -2,12 +2,13 @@
 title: 'WorksheetProtection: Schützen'
 description: Schützen ein Arbeitsblatt. Wird ausgelöst, wenn das Arbeitsblatt geschützt ist.
 author: lumine2008
-ms.openlocfilehash: ac438fd76587f33aaa26928b34423bd2980e3560
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 03d2c9edf6f814f7bd5e460d340b07e714eb18ee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308043"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816156"
 ---
 # <a name="worksheetprotection-protect"></a>WorksheetProtection: Schützen
 

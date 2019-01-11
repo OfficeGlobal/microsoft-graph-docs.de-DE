@@ -2,12 +2,13 @@
 title: Ressourcentyp „windowsUpdateForBusinessConfiguration“
 description: Diese Ressource enthält die Windows Update for Business-Konfiguration.
 author: tfitzmac
-ms.openlocfilehash: 9b9573ba3e0d2f4f78b05b9e903e8d2a42d548dd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c8376508e701262deca7fdacdd49add179d7dae5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343897"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815477"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>Ressourcentyp „windowsUpdateForBusinessConfiguration“
 
@@ -27,8 +28,8 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |[Erstellen von „windowsUpdateForBusinessConfiguration“](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-create.md)|[windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md)|Erstellt neue Objekte des Typs [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md).|
 |[Löschen von „windowsUpdateForBusinessConfiguration“](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-delete.md)|Keiner|Löscht Objekte des Typs [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md).|
 |[Aktualisieren von „windowsUpdateForBusinessConfiguration“](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-update.md)|[windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md)|Aktualisiert die Eigenschaften von Objekten des Typs [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md).|
-|[ExtendFeatureUpdatesPause Aktion](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-extendfeatureupdatespause.md)|Keines|Erweitern Sie für ein Windows-Update für Business Ring Feature Updates anhalten.|
-|[ExtendQualityUpdatesPause Aktion](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-extendqualityupdatespause.md)|Keines|Erweitern Sie für ein Windows-Update für Business Ring Qualität Updates anhalten.|
+|[ExtendFeatureUpdatesPause Aktion](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-extendfeatureupdatespause.md)|Keine|Erweitern Sie für ein Windows-Update für Business Ring Feature Updates anhalten.|
+|[ExtendQualityUpdatesPause Aktion](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-extendqualityupdatespause.md)|Keine|Erweitern Sie für ein Windows-Update für Business Ring Qualität Updates anhalten.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
@@ -36,7 +37,7 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolesch|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -54,13 +55,13 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Aussetzung der Qualitätsupdates|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Aussetzung der Funktionsupdates|
 |businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|Bestimmt, welche Geräte Branch ihre Updates von erhält. Mögliche Werte sind: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow` und `windowsInsiderBuildRelease`.|
-|skipChecksBeforeRestart|Boolesch|Legen Sie vor dem Neustart alle Kontrollkästchen überspringen: Batterie Level = 40 %, Anwesenheitsinformationen des Benutzers, Anzeige benötigt, Präsentationsmodus, Vollbildmodus, Telefonanruf Zustand, Spiel Modus usw.. |
+|skipChecksBeforeRestart|Boolean|Legen Sie vor dem Neustart alle Kontrollkästchen überspringen: Batterie Level = 40 %, Anwesenheitsinformationen des Benutzers, Anzeige benötigt, Präsentationsmodus, Vollbildmodus, Telefonanruf Zustand, Spiel Modus usw.. |
 |updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|Die Installation des Updates auf den Wochen des Monats geplant. Mögliche Werte sind: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek` und `everyWeek`.|
 |qualityUpdatesPauseStartDateTime|String|Qualität Updates anhalten starten datetime|
 |featureUpdatesPauseStartDateTime|String|Feature Updates anhalten starten datetime|
 |featureUpdatesRollbackWindowInDays|Int32|Die Anzahl der Tage nach einer Aktualisierung der Features für die ein Rollback gültig ist.|
-|qualityUpdatesWillBeRolledBack|Boolesch|Gibt an, ob Rollback Qualität Updates auf dem nächsten Gerät|
-|featureUpdatesWillBeRolledBack|Boolesch|Gibt an, ob Rollback-Feature-Updates auf das nächste Gerät|
+|qualityUpdatesWillBeRolledBack|Boolean|Gibt an, ob Rollback Qualität Updates auf dem nächsten Gerät|
+|featureUpdatesWillBeRolledBack|Boolean|Gibt an, ob Rollback-Feature-Updates auf das nächste Gerät|
 |qualityUpdatesRollbackStartDateTime|DateTimeOffset|Qualität Updates Rollback starten datetime|
 |featureUpdatesRollbackStartDateTime|DateTimeOffset|Feature Updates Rollback starten datetime|
 |engagedRestartDeadlineInDays|Int32|Stichtag in Tagen, bevor Sie automatisch planen und Ausführen von ein ausstehender Neustart außerhalb von aktiven Stunden mit gültigen Bereich von 2 bis 30 Tage|

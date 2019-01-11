@@ -2,12 +2,13 @@
 title: Auflisten von „editionUpgradeConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs editionUpgradeConfiguration auf.
 author: tfitzmac
-ms.openlocfilehash: e3dc33fbecf05f65eac49adf50c747ce5545ed3c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6e6582cbe60a86a06ebc6cb4a1f4fe7465346b0b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355090"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810612"
 ---
 # <a name="list-editionupgradeconfigurations"></a>Auflisten von „editionUpgradeConfiguration“
 
@@ -33,10 +34,10 @@ GET /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: Berechtigungen
 description: 'Aktualisieren einer app zuvor in der Microsoft-Teams, app-Katalog veröffentlicht. '
 author: nkramer
-ms.openlocfilehash: ac1e59afe68823c52ef088c058fa7be56a4c8f5a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 305711206200e7f515ecdb4caff290e8a5a27269
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353725"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814644"
 ---
 # <a name="update-apps-published-to-your-organizations-app-catalog"></a>Aktualisieren von apps in Ihrer Organisation app-Katalog veröffentlicht
 
@@ -35,7 +36,7 @@ PUT /appCatalogs/teamsApps/{id}
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Header        | Wert           |
+| Kopfzeile        | Wert           |
 |:--------------|:--------------  |
 | Authorization | Bearer {token}. Erforderlich.  |
 | Content-Type  | Anwendung/zip |

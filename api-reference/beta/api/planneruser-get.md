@@ -1,12 +1,13 @@
 ---
 title: Abrufen von plannerUser
 description: 'Rufen Sie die Eigenschaften und die Beziehungen eines PlannerUser-Objekts ab. Die zurückgegebenen Eigenschaften des Benutzers bevorzugten Pläne enthalten und zuletzt angezeigte Pläne. '
-ms.openlocfilehash: fca4b37560ad0c6cd7e05aee56ebdeb1e6509101
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1abffddb2ddbefdcd0aaeddedffe94ae8ad605d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058672"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810640"
 ---
 # <a name="get-planneruser"></a>Abrufen von plannerUser
 

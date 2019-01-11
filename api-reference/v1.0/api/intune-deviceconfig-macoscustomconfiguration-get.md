@@ -2,12 +2,13 @@
 title: Abrufen von „macOSCustomConfiguration“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs macOSCustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 7f805f06bbd669b3ef82e2c487f9c7906f0065d1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 265a8f6a10d4557301ee56c5ceab3fdfb335a767
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348391"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809366"
 ---
 # <a name="get-macoscustomconfiguration"></a>Abrufen von „macOSCustomConfiguration“
 
@@ -35,10 +36,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

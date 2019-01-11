@@ -2,12 +2,13 @@
 title: Ressourcentyp iosScepCertificateProfile
 description: iOS SCEP Zertifikatsprofil.
 author: tfitzmac
-ms.openlocfilehash: 794c805c1e4ee0f6626ac07f3eb2e569212d90ea
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 158a9defdf8291c0e3887c870b351e2732238f43
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358730"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814987"
 ---
 # <a name="iosscepcertificateprofile-resource-type"></a>Ressourcentyp iosScepCertificateProfile
 
@@ -25,7 +26,7 @@ Erbt vom [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertifi
 |[Liste iosScepCertificateProfiles](../api/intune-deviceconfig-iosscepcertificateprofile-list.md)|[IosScepCertificateProfile](../resources/intune-deviceconfig-iosscepcertificateprofile.md) -Auflistung|Listeneigenschaften und Beziehungen der [IosScepCertificateProfile](../resources/intune-deviceconfig-iosscepcertificateprofile.md) -Objekte.|
 |[Abrufen von iosScepCertificateProfile](../api/intune-deviceconfig-iosscepcertificateprofile-get.md)|[iosScepCertificateProfile](../resources/intune-deviceconfig-iosscepcertificateprofile.md)|Lesen Sie Eigenschaften und Beziehungen des [IosScepCertificateProfile](../resources/intune-deviceconfig-iosscepcertificateprofile.md) -Objekts.|
 |[Erstellen von iosScepCertificateProfile](../api/intune-deviceconfig-iosscepcertificateprofile-create.md)|[iosScepCertificateProfile](../resources/intune-deviceconfig-iosscepcertificateprofile.md)|Erstellen eines neuen [IosScepCertificateProfile](../resources/intune-deviceconfig-iosscepcertificateprofile.md) -Objekts.|
-|[IosScepCertificateProfile löschen](../api/intune-deviceconfig-iosscepcertificateprofile-delete.md)|Keines|Löscht eine [IosScepCertificateProfile](../resources/intune-deviceconfig-iosscepcertificateprofile.md).|
+|[IosScepCertificateProfile löschen](../api/intune-deviceconfig-iosscepcertificateprofile-delete.md)|Keine|Löscht eine [IosScepCertificateProfile](../resources/intune-deviceconfig-iosscepcertificateprofile.md).|
 |[IosScepCertificateProfile aktualisieren](../api/intune-deviceconfig-iosscepcertificateprofile-update.md)|[iosScepCertificateProfile](../resources/intune-deviceconfig-iosscepcertificateprofile.md)|Aktualisieren Sie die Eigenschaften eines [IosScepCertificateProfile](../resources/intune-deviceconfig-iosscepcertificateprofile.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
@@ -34,7 +35,7 @@ Erbt vom [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertifi
 |id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolesch|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|

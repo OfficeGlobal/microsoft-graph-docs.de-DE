@@ -1,12 +1,13 @@
 ---
 title: iosCustomConfiguration-Ressourcentyp
 description: Dieses Thema enthält eine Beschreibung der deklarierten Methoden, Eigenschaften und Beziehungen, die von der Ressource iosCustomConfiguration verfügbar gemacht werden.
-ms.openlocfilehash: edc5986265b2d726608dd1904a3b6801ac270927
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5ff2a6b8422241e69b76dcb32662359e93351da2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018238"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815008"
 ---
 # <a name="ioscustomconfiguration-resource-type"></a>iosCustomConfiguration-Ressourcentyp
 

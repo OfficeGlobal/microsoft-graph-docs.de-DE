@@ -1,12 +1,13 @@
 ---
 title: Liste Benutzer Mitglied
 description: Abrufen von Gruppen, Directory Rollen und administrative Einheiten, denen der Benutzer ein direktes Mitglied ist. Dieser Vorgang ist nicht transitiv.
-ms.openlocfilehash: 0d22189f35e41798929c10d63219a5f5688c42c9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a00cba40c556aafdf22c66507f4f5d1885feae30
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062229"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809975"
 ---
 # <a name="list-user-memberof"></a>Liste Benutzer Mitglied
 
@@ -38,7 +39,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 | Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
-| Accept  | application/json|
+| Annehmen  | application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 

@@ -1,12 +1,13 @@
 ---
 title: Liste staffMembers
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: a2b04aba32d3bbc51dc380f51b54a2700114fd20
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fdbf1c60731627e518bc5d13ad46abfbf6f39b69
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060030"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809562"
 ---
 # <a name="list-staffmembers"></a>Liste staffMembers
 

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp educationAssignment
 description: Die Ressource **EducationAssignment** stellt einen Vorgang oder eine Arbeitsschritt Mitglied Student oder ein Team in einer Klasse als Teil ihrer Studie zugewiesen. Nur Lehrer oder Team Besitzer können Zuordnungen erstellen. Zuordnungen enthalten, Handzettel und Aufgaben, die die Lehrer den Teilnehmern an arbeiten möchte. Jeder Student Zuordnung hat offenem zugeordnet, die keine Arbeit enthält, die ihre Lehrer aufgefordert werden, die deaktiviert werden. Lehrer kann Bewertungen und Feedback der Übermittlung von den Teilnehmern Unternehmensadministrator hinzufügen.
-ms.openlocfilehash: c95197edd5f1ed821ca83171d74f0beee300eb1e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d9d7b11dcd476f0fdd2bbb24364dd0e1e026f200
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061810"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812453"
 ---
 # <a name="educationassignment-resource-type"></a>Ressourcentyp educationAssignment
 
@@ -35,8 +36,8 @@ Die Zuordnung APIs werden in den Klassennamespace verfügbar gemacht.
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |id|String| Schreibgeschützt.|
-|allowLateSubmissions|Boolesch| Bestimmt, ob nach dem Fälligkeitsdatum Studenten übermitteln können. Wenn diese Eigenschaft nicht bei der Erstellung angegeben wird, wird standardmäßig auf "true". |
-|allowStudentsToAddResourcesToSubmission|Boolesch| Gibt an, ob die eigene Ressourcen einer Übermittlung hinzugefügt werden können oder wenn sie nur Ressourcen hinzugefügt werden die Lehrer ändern können. |
+|allowLateSubmissions|Boolean| Bestimmt, ob nach dem Fälligkeitsdatum Studenten übermitteln können. Wenn diese Eigenschaft nicht bei der Erstellung angegeben wird, wird standardmäßig auf "true". |
+|allowStudentsToAddResourcesToSubmission|Boolean| Gibt an, ob die eigene Ressourcen einer Übermittlung hinzugefügt werden können oder wenn sie nur Ressourcen hinzugefügt werden die Lehrer ändern können. |
 |assignDateTime|DateTimeOffset|Das Datum, wenn die Zuordnung aktiv werden sollen.  Wenn in der Zukunft wird die Zuordnung nicht zum Schüler bis zum aktuellen Datum angezeigt.  Der **Zeitstempel** Typ stellt Informationen zum Datum und Uhrzeit mit ISO 8601-Format dar und ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| Welche Benutzer oder die gesamte Klasse sollte ein Objekt zum Absenden erhalten, nachdem die Zuordnung veröffentlicht wird. |
 |assignedDateTime|DateTimeOffset|Auf der Zeitachse Studenten wird der Zeitpunkt, den die Zuordnung in Studenten und die Zuordnung veröffentlicht wurde.  Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|

@@ -2,12 +2,13 @@
 title: Ressourcentyp dataSharingConsent
 description: Datenfreigabe stimmen Informationen.
 author: tfitzmac
-ms.openlocfilehash: 250ad388a5c619a6fd2753d172734145ea720776
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e199674606b677e11ac610219b16ab8d5dbf2015
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342935"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816366"
 ---
 # <a name="datasharingconsent-resource-type"></a>Ressourcentyp dataSharingConsent
 
@@ -22,7 +23,7 @@ Datenfreigabe stimmen Informationen.
 |[Liste dataSharingConsents](../api/intune-devices-datasharingconsent-list.md)|[DataSharingConsent](../resources/intune-devices-datasharingconsent.md) -Auflistung|Listeneigenschaften und Beziehungen der [DataSharingConsent](../resources/intune-devices-datasharingconsent.md) -Objekte.|
 |[Abrufen von dataSharingConsent](../api/intune-devices-datasharingconsent-get.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)|Lesen Sie Eigenschaften und Beziehungen des [DataSharingConsent](../resources/intune-devices-datasharingconsent.md) -Objekts.|
 |[Erstellen von dataSharingConsent](../api/intune-devices-datasharingconsent-create.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)|Erstellen eines neuen [DataSharingConsent](../resources/intune-devices-datasharingconsent.md) -Objekts.|
-|[DataSharingConsent löschen](../api/intune-devices-datasharingconsent-delete.md)|Keines|Löscht eine [DataSharingConsent](../resources/intune-devices-datasharingconsent.md).|
+|[DataSharingConsent löschen](../api/intune-devices-datasharingconsent-delete.md)|Keine|Löscht eine [DataSharingConsent](../resources/intune-devices-datasharingconsent.md).|
 |[DataSharingConsent aktualisieren](../api/intune-devices-datasharingconsent-update.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)|Aktualisieren Sie die Eigenschaften eines [DataSharingConsent](../resources/intune-devices-datasharingconsent.md) -Objekts.|
 |[ConsentToDataSharing Aktion](../api/intune-devices-datasharingconsent-consenttodatasharing.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)|Noch nicht dokumentiert|
 
@@ -32,7 +33,7 @@ Datenfreigabe stimmen Informationen.
 |id|String|Die Daten sharing Zustimmung Id|
 |von Ihnen eingegebene Dienstanzeigename|String|Der Anzeigename der Dienst Workflow|
 |termsUrl|String|Die TermsUrl für die Datenfreigabe Zustimmung|
-|erteilt|Boolesch|Den gewährten Status für die Datenfreigabe Zustimmung|
+|erteilt|Boolean|Den gewährten Status für die Datenfreigabe Zustimmung|
 |grantDateTime|DateTimeOffset|Die Zeit Zustimmung wurde für dieses Konto erteilt.|
 |grantedByUpn|String|Den Upn des Benutzers, der für dieses Konto Zustimmung eingeholt|
 |grantedByUserId|String|Die Benutzer-ID des Benutzers, der für dieses Konto Zustimmung eingeholt|

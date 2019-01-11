@@ -2,12 +2,13 @@
 title: deviceCompliancePolicyDeviceStateSummary abrufen
 description: Lesen von Beziehungen und Eigenschaften des deviceCompliancePolicyDeviceStateSummary-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 48dfe674bbc67005afe4e41a3c666157b77a292d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1306501b6ea303fd3ff816af4ae0102b17b8cae6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328098"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812789"
 ---
 # <a name="get-devicecompliancepolicydevicestatesummary"></a>deviceCompliancePolicyDeviceStateSummary abrufen
 
@@ -37,10 +38,10 @@ GET /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

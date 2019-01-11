@@ -2,12 +2,13 @@
 title: Ressourcentyp managedDeviceCleanupSettings
 description: Definieren Sie die Regel aus, wenn der Administrator die Geräte bereinigt werden möchte.
 author: tfitzmac
-ms.openlocfilehash: 84650c4d2d182fe0da30ced56786a2c0216a6358
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 755fc90b957427c4b9f8ee9007decea320141601
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304088"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808974"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>Ressourcentyp managedDeviceCleanupSettings
 

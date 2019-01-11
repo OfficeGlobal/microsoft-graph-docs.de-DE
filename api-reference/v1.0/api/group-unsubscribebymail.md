@@ -1,12 +1,13 @@
 ---
 title: 'group: unsubscribeByMail'
 description: 'Durch Aufrufen dieser Methode wird verhindert, dass der aktuelle Benutzer E-Mail-Benachrichtigungen für diese Gruppe über neue Beiträge, Ereignisse und Dateien in dieser Gruppe erhält. Wird nur für Office 365-Gruppen unterstützt. '
-ms.openlocfilehash: 8e5b6c88db6e55f777c7b2a9225731514796f9af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 13f51b79d06deb9377d3f7c39838143375f399c5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017444"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814574"
 ---
 # <a name="group-unsubscribebymail"></a>group: unsubscribeByMail
 Durch Aufrufen dieser Methode wird verhindert, dass der aktuelle Benutzer E-Mail-Benachrichtigungen für diese Gruppe über neue Beiträge, Ereignisse und Dateien in dieser Gruppe erhält. Wird nur für Office 365-Gruppen unterstützt. 

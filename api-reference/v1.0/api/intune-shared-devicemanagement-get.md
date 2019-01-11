@@ -2,12 +2,13 @@
 title: deviceManagement abrufen
 description: Lesen von Eigenschaften und Beziehungen des deviceManagement-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 65b13da27c16d6b4d9976eb2f7d0d326dfd872c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 89156113d0b357bc0d7a76cadad8c2ab7e2e4b91
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334339"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816268"
 ---
 # <a name="get-devicemanagement"></a>deviceManagement abrufen
 
@@ -50,10 +51,10 @@ GET /deviceManagement
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

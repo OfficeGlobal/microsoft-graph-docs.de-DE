@@ -2,12 +2,13 @@
 title: Gerät erstellen
 description: Mit dieser API können Sie ein neues Gerät in der Organisation registrieren.
 author: tfitzmac
-ms.openlocfilehash: 99fb7e7b8cb5ad9fc80b28403e1f4fb41c667376
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e0dafeb56b6551070bc157ee53b4a9f7f6ac984e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314301"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811809"
 ---
 # <a name="create-device"></a>Gerät erstellen
 
@@ -32,7 +33,7 @@ POST /devices
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Content-type | string | application/json |
 
 ## <a name="request-body"></a>Anforderungstext

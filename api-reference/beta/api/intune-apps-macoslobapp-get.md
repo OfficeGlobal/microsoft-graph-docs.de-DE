@@ -2,12 +2,13 @@
 title: Abrufen von macOSLobApp
 description: Lesen Sie Eigenschaften und Beziehungen des MacOSLobApp-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 539f11276c2e2899dba5e594050c4d126b59d8db
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fdb3517e19f779e2e9149fc90938244ab20f8151
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302618"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809086"
 ---
 # <a name="get-macoslobapp"></a>Abrufen von macOSLobApp
 
@@ -39,10 +40,10 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

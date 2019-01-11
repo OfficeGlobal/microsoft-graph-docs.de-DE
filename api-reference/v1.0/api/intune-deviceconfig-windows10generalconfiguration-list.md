@@ -2,12 +2,13 @@
 title: Auflisten von „windows10GeneralConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs windows10GeneralConfiguration auf.
 author: tfitzmac
-ms.openlocfilehash: 5557a8bc16a1af01e1a024ee956caa1fbe2ed583
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5d988b02c7fce0c3ef11f0c4ac4b3c12360fff1a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307378"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809667"
 ---
 # <a name="list-windows10generalconfigurations"></a>Auflisten von „windows10GeneralConfiguration“
 
@@ -33,10 +34,10 @@ GET /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

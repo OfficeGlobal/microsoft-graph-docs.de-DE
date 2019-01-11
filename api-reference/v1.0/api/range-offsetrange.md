@@ -1,12 +1,13 @@
 ---
 title: 'Range: OffsetRange'
 description: Ruft ein Objekt ab, das einen Bereich darstellt, der aus dem angegebenen Bereich versetzt ist. Die Dimension des zurückgegebenen Bereichs entspricht diesem Bereich. Wenn der resultierende Bereich außerhalb des Arbeitsblatt-Rasters erzwungen wird, wird eine Ausnahme ausgelöst.
-ms.openlocfilehash: fcbc13fa17e0df97eceb4705e7775d733d1728dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7364420e660612995300e4fba964dc29de656be2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019623"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815918"
 ---
 # <a name="range-offsetrange"></a>Range: OffsetRange
 

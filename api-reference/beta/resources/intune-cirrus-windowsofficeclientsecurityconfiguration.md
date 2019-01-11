@@ -2,12 +2,13 @@
 title: Ressourcentyp windowsOfficeClientSecurityConfiguration
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 51c07fa58e392523940687dd178dd2aebe94f327
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b8ade947f562b0b3839afb36c04c1740fc502f07
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318837"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815127"
 ---
 # <a name="windowsofficeclientsecurityconfiguration-resource-type"></a>Ressourcentyp windowsOfficeClientSecurityConfiguration
 
@@ -25,7 +26,7 @@ Erbt vom [officeClientConfiguration](../resources/intune-cirrus-officeclientconf
 |[Liste windowsOfficeClientSecurityConfigurations](../api/intune-cirrus-windowsofficeclientsecurityconfiguration-list.md)|[WindowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md) -Auflistung|Listeneigenschaften und Beziehungen der [WindowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md) -Objekte.|
 |[Abrufen von windowsOfficeClientSecurityConfiguration](../api/intune-cirrus-windowsofficeclientsecurityconfiguration-get.md)|[windowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md)|Lesen Sie Eigenschaften und Beziehungen des [WindowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md) -Objekts.|
 |[Erstellen von windowsOfficeClientSecurityConfiguration](../api/intune-cirrus-windowsofficeclientsecurityconfiguration-create.md)|[windowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md)|Erstellen eines neuen [WindowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md) -Objekts.|
-|[WindowsOfficeClientSecurityConfiguration löschen](../api/intune-cirrus-windowsofficeclientsecurityconfiguration-delete.md)|Keines|Löscht eine [WindowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md).|
+|[WindowsOfficeClientSecurityConfiguration löschen](../api/intune-cirrus-windowsofficeclientsecurityconfiguration-delete.md)|Keine|Löscht eine [WindowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md).|
 |[WindowsOfficeClientSecurityConfiguration aktualisieren](../api/intune-cirrus-windowsofficeclientsecurityconfiguration-update.md)|[windowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md)|Aktualisieren Sie die Eigenschaften eines [WindowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

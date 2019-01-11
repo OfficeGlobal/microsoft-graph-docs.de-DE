@@ -2,12 +2,13 @@
 title: windowsInformationProtectionStoreApp-Ressourcentyp
 description: Store-App für Windows-Informationsschutz
 author: tfitzmac
-ms.openlocfilehash: b5f13b77a5fbd9464ac968034fb19ae4e6327b9e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4e78aa854b15763cade9a4d6020f1737bbca1642
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344667"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814476"
 ---
 # <a name="windowsinformationprotectionstoreapp-resource-type"></a>windowsInformationProtectionStoreApp-Ressourcentyp
 
@@ -24,7 +25,7 @@ Erbt von [windowsInformationProtectionApp](../resources/intune-mam-windowsinform
 |description|String|Die Beschreibung der App. Geerbt von [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
 |publisherName|String|Der Name des Herausgebers, geerbt von [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
 |productName|String|Der Produktname. Geerbt von [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
-|denied|Boolescher Wert|Bei „true“ wird der App der Schutz oder eine Ausnahme verweigert. Geerbt von [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
+|denied|Boolean|Bei „true“ wird der App der Schutz oder eine Ausnahme verweigert. Geerbt von [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

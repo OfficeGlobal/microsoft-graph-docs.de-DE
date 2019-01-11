@@ -2,12 +2,13 @@
 title: detectedApp löschen
 description: Löscht ein detectedApp-Objekt.
 author: tfitzmac
-ms.openlocfilehash: 1503e3bf7191d0c8088eb4e32d0190970f01d6f1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5813194fe3b24f115525bd7be9463a343e21f8eb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334657"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809317"
 ---
 # <a name="delete-detectedapp"></a>detectedApp löschen
 
@@ -33,10 +34,10 @@ DELETE /deviceManagement/detectedApps/{detectedAppId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp androidForWorkMobileAppConfiguration
 description: Enthält Eigenschaften, geerbten Eigenschaften und Aktionen für AFW mobile app Konfigurationen.
-ms.openlocfilehash: d6d8191f4cd73efd1d11ac3bc9f799350204d9cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c8c6891e76908b4e041f5ef5fe7080d9d7a6894c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063875"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810507"
 ---
 # <a name="androidforworkmobileappconfiguration-resource-type"></a>Ressourcentyp androidForWorkMobileAppConfiguration
 
@@ -24,7 +25,7 @@ Erbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-managedd
 |[Liste androidForWorkMobileAppConfigurations](../api/intune-apps-androidforworkmobileappconfiguration-list.md)|[AndroidForWorkMobileAppConfiguration](../resources/intune-apps-androidforworkmobileappconfiguration.md) -Auflistung|Listeneigenschaften und Beziehungen der [AndroidForWorkMobileAppConfiguration](../resources/intune-apps-androidforworkmobileappconfiguration.md) -Objekte.|
 |[Abrufen von androidForWorkMobileAppConfiguration](../api/intune-apps-androidforworkmobileappconfiguration-get.md)|[androidForWorkMobileAppConfiguration](../resources/intune-apps-androidforworkmobileappconfiguration.md)|Lesen Sie Eigenschaften und Beziehungen des [AndroidForWorkMobileAppConfiguration](../resources/intune-apps-androidforworkmobileappconfiguration.md) -Objekts.|
 |[Erstellen von androidForWorkMobileAppConfiguration](../api/intune-apps-androidforworkmobileappconfiguration-create.md)|[androidForWorkMobileAppConfiguration](../resources/intune-apps-androidforworkmobileappconfiguration.md)|Erstellen eines neuen [AndroidForWorkMobileAppConfiguration](../resources/intune-apps-androidforworkmobileappconfiguration.md) -Objekts.|
-|[AndroidForWorkMobileAppConfiguration löschen](../api/intune-apps-androidforworkmobileappconfiguration-delete.md)|Keines|Löscht eine [AndroidForWorkMobileAppConfiguration](../resources/intune-apps-androidforworkmobileappconfiguration.md).|
+|[AndroidForWorkMobileAppConfiguration löschen](../api/intune-apps-androidforworkmobileappconfiguration-delete.md)|Keine|Löscht eine [AndroidForWorkMobileAppConfiguration](../resources/intune-apps-androidforworkmobileappconfiguration.md).|
 |[AndroidForWorkMobileAppConfiguration aktualisieren](../api/intune-apps-androidforworkmobileappconfiguration-update.md)|[androidForWorkMobileAppConfiguration](../resources/intune-apps-androidforworkmobileappconfiguration.md)|Aktualisieren Sie die Eigenschaften eines [AndroidForWorkMobileAppConfiguration](../resources/intune-apps-androidforworkmobileappconfiguration.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

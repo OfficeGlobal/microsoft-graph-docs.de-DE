@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getSkypeForBusinessPeerToPeerActivityMinuteCounts'
 description: Erhalten Sie Informationen über die Dauer (in Minuten) und die Art der in Ihrem Unternehmen gehaltenen Peer-to-Peer-Sitzungen. Zu den Sitzungsarten gehören Audio und Video.
-ms.openlocfilehash: 9ca15c11711071269f3fdceb2dd2b061c4602f13
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dfd047e4b75191b11f0c8a284c889bd5a6437139
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019350"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814780"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivityminutecounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityMinuteCounts
 

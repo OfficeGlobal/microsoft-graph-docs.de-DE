@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp bookingService
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: bb42768cb913abca7c17e6d617670a3a035ec16a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 63eae84249501426c43ad73326cbf005009753be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059488"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815442"
 ---
 # <a name="bookingservice-resource-type"></a>Ressourcentyp bookingService
 
@@ -36,7 +37,7 @@ Stellt Informationen zu einem bestimmten Dienst stammt von einer [BookingBusines
 |displayName|String|Ein Dienstname.|
 |emailAddress|String|Eine e-Mail-Adresse|
 |id|String|Die ID des Diensts aus, in einen GUID-Format. Schreibgeschützt.|
-|isHiddenFromCustomers|Boolesch|"True" bedeutet, dass dieser Dienst nicht verfügbar für Kunden für buchen ist.|
+|isHiddenFromCustomers|Boolean|"True" bedeutet, dass dieser Dienst nicht verfügbar für Kunden für buchen ist.|
 |notes|String|Weitere Informationen zu diesem Dienst.|
 |postBuffer|Duration|Die Zeit bis zur Puffer nach eines Termins für diesen Dienst beendet, und vor dem nächsten Kunden Termin gebucht werden kann.|
 |preBuffer|Duration|Die Zeit zum Zwischenspeichern, bevor Sie ein Termin für diesen Dienst starten kann.|

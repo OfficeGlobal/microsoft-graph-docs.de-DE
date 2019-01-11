@@ -2,12 +2,13 @@
 title: DeviceEnrollmentType Enum-Typ
 description: Mögliche Methoden zum Hinzufügen eines mobilen Geräts zu Management.
 author: tfitzmac
-ms.openlocfilehash: 4a7eaa63a59efe756fc2cb7216ddbe7384e4858c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5d301c62b5e740976337ab98c5b1f4ea264eb860
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346984"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814427"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>DeviceEnrollmentType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27346984"
 
 Mögliche Methoden zum Hinzufügen eines mobilen Geräts zu Management.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Standardwert, Registrierung Typ wurde nicht aufgelistet.|
 |userEnrollment|1|Benutzer gesteuerten Registrierung über BYOD Kanal.|

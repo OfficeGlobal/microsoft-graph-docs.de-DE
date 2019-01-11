@@ -1,12 +1,13 @@
 ---
 title: ListItemVersion-Ressourcentyp
 description: Die **ListItemVersion**-Ressource stellt eine frühere Version der ListItem-Ressource dar.
-ms.openlocfilehash: f036ea217abe766806e7f3c6b24bee4394f54889
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 41dcbeee3f098b6c156a7ddfe484ef42cca8b6d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016118"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810682"
 ---
 # <a name="listitemversion-resource-type"></a>ListItemVersion-Ressourcentyp
 

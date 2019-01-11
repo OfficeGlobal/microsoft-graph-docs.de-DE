@@ -2,12 +2,13 @@
 title: managedAppOperation löschen
 description: Löscht ein managedAppOperation-Objekt.
 author: tfitzmac
-ms.openlocfilehash: 32e26f3c71537f75a62cab9c5fe7c9b8a8f8d127
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4efb319ede18a2a38f7d881f3d6be56ef8fbbaac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304270"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816450"
 ---
 # <a name="delete-managedappoperation"></a>managedAppOperation löschen
 
@@ -35,10 +36,10 @@ DELETE /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/o
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

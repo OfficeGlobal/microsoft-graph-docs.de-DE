@@ -1,12 +1,13 @@
 ---
 title: Mitgliedergruppen abrufen
 description: Gibt alle Gruppen zurück, in denen das angegebene Benutzer-, Gruppen- oder Verzeichnisobjekt Mitglied ist. Diese Funktion ist transitiv.
-ms.openlocfilehash: 370de10e1bba582270290877ba508ec4eebf47ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b3556140aa0113c403f80d95e0a258be03f27125
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019403"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814651"
 ---
 # <a name="get-member-groups"></a>Mitgliedergruppen abrufen
 

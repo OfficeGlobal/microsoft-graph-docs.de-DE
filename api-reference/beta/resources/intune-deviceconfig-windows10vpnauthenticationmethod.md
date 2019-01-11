@@ -2,12 +2,13 @@
 title: windows10VpnAuthenticationMethod Enum-Typ
 description: Windows-10-VPN-Verbindungstypen.
 author: tfitzmac
-ms.openlocfilehash: 311d69bf10950064e16e69f9d296edfed4535bd9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b3613436b5df458f05fefc9037b8aadbc1265385
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328728"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810969"
 ---
 # <a name="windows10vpnauthenticationmethod-enum-type"></a>windows10VpnAuthenticationMethod Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27328728"
 
 Windows-10-VPN-Verbindungstypen.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |certificate|0|Die Authentifizierung mit einem Zertifikat.|
 |usernameAndPassword|1|Verwenden Sie Benutzername und Kennwort für die Authentifizierung.|

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp userPFXCertificate
 description: Entität, die kapselt alle Informationen für einen Benutzer PFX-Zertifikate erforderlich sind.
-ms.openlocfilehash: 89040cafa976c88ce84cb8f73bc8a68e2cdfbdf2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 87516c48e53c8117c9efa119fb6cab62844e6b68
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062587"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809996"
 ---
 # <a name="userpfxcertificate-resource-type"></a>Ressourcentyp userPFXCertificate
 
@@ -21,7 +22,7 @@ Entität, die kapselt alle Informationen für einen Benutzer PFX-Zertifikate erf
 |[Liste userPFXCertificates](../api/intune-raimportcerts-userpfxcertificate-list.md)|[UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) -Auflistung|Listeneigenschaften und Beziehungen der [UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) -Objekte.|
 |[Abrufen von userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-get.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Lesen Sie Eigenschaften und Beziehungen des [UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) -Objekts.|
 |[Erstellen von userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-create.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Erstellen eines neuen [UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) -Objekts.|
-|[UserPFXCertificate löschen](../api/intune-raimportcerts-userpfxcertificate-delete.md)|Keines|Löscht eine [UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md).|
+|[UserPFXCertificate löschen](../api/intune-raimportcerts-userpfxcertificate-delete.md)|Keine|Löscht eine [UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md).|
 |[UserPFXCertificate aktualisieren](../api/intune-raimportcerts-userpfxcertificate-update.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Aktualisieren Sie die Eigenschaften eines [UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

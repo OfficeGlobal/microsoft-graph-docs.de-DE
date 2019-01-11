@@ -2,12 +2,13 @@
 title: deviceConfigurationDeviceStatus löschen
 description: Löscht ein deviceConfigurationDeviceStatus-Objekt.
 author: tfitzmac
-ms.openlocfilehash: c46b5cab776e1a047339f9280d73ee8924327124
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 38d777bc1f2b9c0bcbc23271d634294cddf9be02
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307308"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810605"
 ---
 # <a name="delete-deviceconfigurationdevicestatus"></a>deviceConfigurationDeviceStatus löschen
 
@@ -33,10 +34,10 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStat
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

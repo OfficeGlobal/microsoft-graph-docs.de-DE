@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp bookingSchedulingPolicy
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: 7a16e9a2ec4e64978dd3c20f7510cfd42d76e826
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 15f9e0dea22a7cfb5eab437bcc023fe3387bb2ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061566"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805362"
 ---
 # <a name="bookingschedulingpolicy-resource-type"></a>Ressourcentyp bookingSchedulingPolicy
 
@@ -17,10 +18,10 @@ Repräsentiert den Satz von Richtlinien, die bestimmen, wie Termine in einem Kal
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|allowStaffSelection|Boolesch|"True" If Kunden für die Buchen eine bestimmte Person auswählen können.|
+|allowStaffSelection|Boolean|"True" If Kunden für die Buchen eine bestimmte Person auswählen können.|
 |maximumAdvance|Duration|Maximale Anzahl der Tage im voraus, die ein buchen hergestellt werden kann. Es folgt das [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) -Format.|
 |minimumLeadTime|Duration|Die minimale Zeitspanne vor dem Buchungen und-absagen vorgenommen werden müssen. Es folgt das [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) -Format.|
-|sendConfirmationsToOwner|Boolesch| True, wenn das Unternehmen per e-Mail benachrichtigen, wenn ein buchen erstellt oder geändert wird. Verwenden Sie die e-Mail-Adresse in der **e-Mail** -Eigenschaft der Entität **BookingBusiness** für das Unternehmen angegeben. |
+|sendConfirmationsToOwner|Boolean| True, wenn das Unternehmen per e-Mail benachrichtigen, wenn ein buchen erstellt oder geändert wird. Verwenden Sie die e-Mail-Adresse in der **e-Mail** -Eigenschaft der Entität **BookingBusiness** für das Unternehmen angegeben. |
 |timeSlotInterval|Duration|Dauer der jedes Zeitintervall im [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) -Format gekennzeichnet.|
 
 ## <a name="json-representation"></a>JSON-Darstellung

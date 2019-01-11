@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp iosEasEmailProfileConfiguration
 description: Durch die Bereitstellung von Konfigurationen in dieses Profil können Sie anweisen, den systemeigene e-Mail-Client auf iOS-Geräte zur Kommunikation mit einem Exchange-Server und Abrufen von e-Mails, Kontakte, Kalender, Erinnerungen und Notizen. Darüber hinaus können Sie auch angeben wie viel e-Mails zu synchronisieren und wie oft das Gerät synchronisiert werden sollte.
-ms.openlocfilehash: 4ce93ed8963a6ee82775adbfc8edd14a15b4188d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 32758fb8dd9aa02b93eb8129894f60a1fabce768
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059470"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814994"
 ---
 # <a name="ioseasemailprofileconfiguration-resource-type"></a>Ressourcentyp iosEasEmailProfileConfiguration
 
@@ -24,7 +25,7 @@ Erbt vom [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-eas
 |[Liste iosEasEmailProfileConfigurations](../api/intune-deviceconfig-ioseasemailprofileconfiguration-list.md)|[IosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) -Auflistung|Listeneigenschaften und Beziehungen der [IosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) -Objekte.|
 |[Abrufen von iosEasEmailProfileConfiguration](../api/intune-deviceconfig-ioseasemailprofileconfiguration-get.md)|[iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md)|Lesen Sie Eigenschaften und Beziehungen des [IosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) -Objekts.|
 |[Erstellen von iosEasEmailProfileConfiguration](../api/intune-deviceconfig-ioseasemailprofileconfiguration-create.md)|[iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md)|Erstellen eines neuen [IosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) -Objekts.|
-|[IosEasEmailProfileConfiguration löschen](../api/intune-deviceconfig-ioseasemailprofileconfiguration-delete.md)|Keines|Löscht eine [IosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md).|
+|[IosEasEmailProfileConfiguration löschen](../api/intune-deviceconfig-ioseasemailprofileconfiguration-delete.md)|Keine|Löscht eine [IosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md).|
 |[IosEasEmailProfileConfiguration aktualisieren](../api/intune-deviceconfig-ioseasemailprofileconfiguration-update.md)|[iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md)|Aktualisieren Sie die Eigenschaften eines [IosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
@@ -33,7 +34,7 @@ Erbt vom [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-eas
 |id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolesch|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -44,16 +45,16 @@ Erbt vom [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-eas
 |customDomainName|String|Benutzerdefinierte Domäne Name-Wert beim Generieren von einem e-Mail-Profil vor der Installation auf dem Gerät verwendet. Geerbt von [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
 |accountName|String|Name des Benutzerkontos.|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Authentifizierungsmethode für dieses E-Mail-Profil. Mögliche Werte sind: `usernameAndPassword` und `certificate`.|
-|blockMovingMessagesToOtherEmailAccounts|Boolesch|Gibt an, ob das Verschieben von Nachrichten an andere e-Mail-Konten zu blockieren.|
-|blockSendingEmailFromThirdPartyApps|Boolesch|Gibt an, ob sendende e-Mail von Drittanbieter-apps zu sperren.|
-|blockSyncingRecentlyUsedEmailAddresses|Boolesch|Gibt an, ob Synchronisierung zuletzt verwendete e-Mail-Adressen, beispielsweise - blockieren, wenn die neue e-Mails verfassen.|
+|blockMovingMessagesToOtherEmailAccounts|Boolean|Gibt an, ob das Verschieben von Nachrichten an andere e-Mail-Konten zu blockieren.|
+|blockSendingEmailFromThirdPartyApps|Boolean|Gibt an, ob sendende e-Mail von Drittanbieter-apps zu sperren.|
+|blockSyncingRecentlyUsedEmailAddresses|Boolean|Gibt an, ob Synchronisierung zuletzt verwendete e-Mail-Adressen, beispielsweise - blockieren, wenn die neue e-Mails verfassen.|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|Dauer der Zeit e-Mail sollte wieder auf synchronisiert werden. . Mögliche Werte sind: `userDefined`, `oneDay`, `threeDays`, `oneWeek`, `twoWeeks`, `oneMonth` und `unlimited`.|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|E-Mail-Attribut, das aus AAD entnommen und vor der Installation auf dem Gerät an dieses Profil eingefügt wird. Mögliche Werte sind: `userPrincipalName` und `primarySmtpAddress`.|
 |hostName|String|Exchange-Speicherort (URL), die die systemeigene Mail-app stellt eine Verbindung zur.|
-|requireSmime|Boolesch|Gibt an, ob S/MIME-Zertifikat verwenden.|
-|smimeEnablePerMessageSwitch|Boolesch|Gibt an, ob unverschlüsselte-e-Mails zu ermöglichen.|
-|requireSsl|Boolesch|Gibt an, ob SSL verwendet.|
-|useOAuth|Boolesch|Gibt an, ob die Verbindung OAuth für die Authentifizierung verwenden soll.|
+|requireSmime|Boolean|Gibt an, ob S/MIME-Zertifikat verwenden.|
+|smimeEnablePerMessageSwitch|Boolean|Gibt an, ob unverschlüsselte-e-Mails zu ermöglichen.|
+|requireSsl|Boolean|Gibt an, ob SSL verwendet.|
+|useOAuth|Boolean|Gibt an, ob die Verbindung OAuth für die Authentifizierung verwenden soll.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

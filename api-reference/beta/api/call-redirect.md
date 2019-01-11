@@ -2,12 +2,13 @@
 title: 'Rufen Sie: Umleiten'
 description: Umleiten eines eingehenden Anrufs an.
 author: VinodRavichandran
-ms.openlocfilehash: 9fff752f07f66cf3c236982495897234c9a1c38d
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: f581a5ce95368e7d852a5b1435ef05bf940f607c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380219"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809471"
 ---
 # <a name="call-redirect"></a>Rufen Sie: Umleiten
 
@@ -22,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | :-------------- | :-------------------------------------------------- |
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt                |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                |
-| Application     | Calls.Initiate.All                                  |
+| Anwendung     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -42,10 +43,10 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
 |Ziele|[InvitationParticipantInfo](../resources/invitationparticipantinfo.md) -Auflistung|Die Teilnehmer Ziel des Vorgangs umleiten.|
-|targetDisposition|Zeichenfolge|Der Wert ist:`default`|
+|targetDisposition|String|Der Wert ist:`default`|
 |timeout|Int32|Das Zeitlimit in Sekunden für den Umleitungsvorgang.|
-|maskCallee|Boolescher Wert|Gibt an, ob der aufgerufene maskieren.|
-|maskCaller|Boolescher Wert|Gibt an, ob den Anrufer maskieren.|
+|maskCallee|Boolean|Gibt an, ob der aufgerufene maskieren.|
+|maskCaller|Boolean|Gibt an, ob den Anrufer maskieren.|
 
 ## <a name="response"></a>Antwort
 Gibt `202 Accepted` Antwortcode

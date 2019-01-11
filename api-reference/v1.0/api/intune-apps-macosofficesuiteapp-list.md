@@ -2,12 +2,13 @@
 title: Auflisten von „macOSOfficeSuiteApp“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs macOSOfficeSuiteApp auf.
 author: tfitzmac
-ms.openlocfilehash: 3536fc65d96c2d4c019a03c0bba4dfb51adfd16d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b668d7a052d124b798abd8f2a0aadaab77f6153a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302541"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813321"
 ---
 # <a name="list-macosofficesuiteapps"></a>Auflisten von „macOSOfficeSuiteApp“
 
@@ -33,10 +34,10 @@ GET /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

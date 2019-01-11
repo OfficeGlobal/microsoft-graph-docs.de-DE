@@ -1,12 +1,13 @@
 ---
 title: Arbeiten mit Azure Active Directory-Ressourcen in Microsoft Graph
 description: Microsoft Graph für Azure Active Directory (AD Azure) bietet REST-APIs, mit denen Ihre Organisation, Ressourcen und Ressourcen verwalten.
-ms.openlocfilehash: 85f44df36057220e4ea26eb8d9342e9fd1df5bb6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: ac4b927a8420cbf8d654dd7f02ca2c232f717296
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305383"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813622"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Arbeiten mit Azure Active Directory-Ressourcen in Microsoft Graph
 
@@ -17,7 +18,7 @@ Mit Microsoft Graph Sie [Azure Active Directory (AD Azure)](https://docs.microso
 > **Hinweis**: Einige Azure AD-Ressourcen sind in anderen Abschnitten der API-Referenz dokumentiert. Weitere Informationen finden Sie unter [Benutzer](users.md) und [Gruppen](group.md).
 
 
-## <a name="authorization"></a>Autorisierung
+## <a name="authorization"></a>Authorization
  
 Zum Aufrufen der Microsoft Graph-APIs in Azure AD-Ressourcen benötigt Ihre App die entsprechenden Berechtigungen. Viele der APIs, die in Azure AD-Ressourcen verfügbar gemacht werden, erfordern eine der [ _Verzeichnis_berechtigungen](/graph/permissions-reference#directory-permissions). Verzeichnisberechtigungen verfügen über hohe Rechte und müssen immer vom Administrator genehmigt werden. 
 

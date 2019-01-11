@@ -2,12 +2,13 @@
 title: Aktualisieren von „userInstallStateSummary“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs userInstallStateSummary.
 author: tfitzmac
-ms.openlocfilehash: ead5cbb33e8a03f12ac94c256b67d12a08575d5f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb1a7b16b8b859284b41b35e2e2f1eaafd045c7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303045"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812166"
 ---
 # <a name="update-userinstallstatesummary"></a>Aktualisieren von „userInstallStateSummary“
 
@@ -33,10 +34,10 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) an.

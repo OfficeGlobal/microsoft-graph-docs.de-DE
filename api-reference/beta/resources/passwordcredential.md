@@ -1,12 +1,13 @@
 ---
 title: PasswordCredential Ressourcentyp
 description: Eine Anwendung oder ein Dienst Prinzipal zugeordnete Kennwort Anmeldeinformationen enthält. Die **PasswordCredentials** -Eigenschaft der Entität ServicePrincipal und der Anwendung Entität ist eine Auflistung von **PasswordCredential**.
-ms.openlocfilehash: 79d3f76606533cf639f52ed22cd93f353e18e977
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5cb995c00a7dcfcfb4bda331e24dcb4d732f04f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058227"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814441"
 ---
 # <a name="passwordcredential-resource-type"></a>PasswordCredential Ressourcentyp
 
