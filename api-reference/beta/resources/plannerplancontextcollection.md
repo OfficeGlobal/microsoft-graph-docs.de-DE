@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp plannerPlanContextCollection
 description: Die Ressource **PlannerPlanContextCollection** stellt die Auflistung von externen Kontexten mit denen ein Plans verknüpft ist. Diese Ressource ist ein offener Typ und ist Teil des PlannerPlan-Objekts. Der Wert in der Eigenschaft-Wert-Paar ist das PlannerPlanContext-Objekt.
-ms.openlocfilehash: ae17e604bf3d59b7b825fe36a8f93f05d5cc835f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 51a09353993a61324f31a03c8ffadd5462cac692
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061820"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805453"
 ---
 # <a name="plannerplancontextcollection-resource-type"></a>Ressourcentyp plannerPlanContextCollection
 

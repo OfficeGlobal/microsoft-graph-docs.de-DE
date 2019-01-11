@@ -2,12 +2,13 @@
 title: Liste deviceConfigurationGroupAssignments
 description: Listeneigenschaften und Beziehungen der DeviceConfigurationGroupAssignment-Objekte.
 author: tfitzmac
-ms.openlocfilehash: a1dce979ab078d22c755b77724abfd274a1872cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 34e222c249f25f854c5b5183fccbbb46738c4f10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361432"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807784"
 ---
 # <a name="list-deviceconfigurationgroupassignments"></a>Liste deviceConfigurationGroupAssignments
 
@@ -45,8 +46,8 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

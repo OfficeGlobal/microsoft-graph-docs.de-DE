@@ -2,12 +2,13 @@
 title: DeviceConfigurationGroupAssignment aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines DeviceConfigurationGroupAssignment-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 7ea879c7d267337a247455235f069206b7b3b2a0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4742cfb5fb61b94eda6b299927160d0e51f6ab98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313881"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822990"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>DeviceConfigurationGroupAssignment aktualisieren
 
@@ -43,10 +44,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [DeviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) eine JSON-Darstellung.
@@ -55,9 +56,9 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|targetGroupId|String|Die Id der Gruppe AAD sind wir Gerätekonfiguration zu adressieren.|
-|excludeGroup|Boolesch|Gibt an, ob diese Gruppe ist ausgeschlossen werden soll. Die Standardeinstellungen, dass die Gruppe eingeschlossen werden sollen|
+|id|Zeichenfolge|Schlüssel der Entität|
+|targetGroupId|Zeichenfolge|Die Id der Gruppe AAD sind wir Gerätekonfiguration zu adressieren.|
+|excludeGroup|Boolescher Wert|Gibt an, ob diese Gruppe ist ausgeschlossen werden soll. Die Standardeinstellungen, dass die Gruppe eingeschlossen werden sollen|
 
 
 

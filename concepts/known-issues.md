@@ -2,12 +2,12 @@
 title: Bekannte Probleme in Microsoft Graph
 description: Dieser Artikel beschreibt bekannte Probleme in Microsoft Graph. Informationen zu den neuesten Updates finden Sie im Microsoft Graph-Änderungsprotokoll.
 author: jthake-msft
-ms.openlocfilehash: e39cdb13a93c19a4a4829c69dc4b1090fd67d206
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 314b1cf1adab9f7454b6b7e3a3c3acf492d0648c
+ms.sourcegitcommit: 6e34c6995e4217a471950d76fdcf0731e6a17d0e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329162"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27791659"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Bekannte Probleme in Microsoft Graph
 
@@ -38,19 +38,9 @@ Bekannte Probleme bei der Verwendung der Delta-Abfrage finden Sie im Abschnitt [
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-### <a name="application-permissions"></a>Anwendungsberechtigungen
-
-Beim Vornehmen von Änderungen an Teams und Kanälen mithilfe von Anwendungsberechtigungen rendert Microsoft Teams die im Kanal "Allgemein" veröffentlichte Steuerungsnachricht mit leerem Namen anstelle des Anwendungsnamens. Dieses Problem wird in einem zukünftigen Update behoben. Durch den Fix werden bereits veröffentlichte Steuerungsnachrichten rückwirkend aktualisiert.
-
 ### <a name="create-chat-thread-api"></a>Chatthread-API erstellen
 
 Die aktuelle API zum [Erstellen eines Chatthreads](/graph/api/channel-post-chatthreads?view=graph-rest-beta) wird durch eine funktionsreichere API ersetzt, die mit dem Schema zum [Auflisten von Kanalnachrichten](/graph/api/channel-list-messages?view=graph-rest-beta) konsistent ist.
-
-### <a name="graph-explorer-and-v10"></a>Graph Explorer und v1.0
-
-Die Beispielabfragen für Graph Explorer wurden noch nicht für v1.0 aktualisiert.
-Sie können trotzdem Abfragen für Version 1.0 in das Textfeld oben eingeben.
-Achten Sie darauf, dass Graph Explorer mit den entsprechenden Berechtigungen eingerichtet ist, wie etwa "Group.ReadWrite.All" und "User.Read.All".
 
 ### <a name="graph-explorer-and-global-admins"></a>Graph-Explorer und globale Administratoren
 

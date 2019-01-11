@@ -2,12 +2,13 @@
 title: Aktualisieren von „deviceInstallState“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceInstallState.
 author: tfitzmac
-ms.openlocfilehash: 1f674b1c732b5804fd83c89620612354e8daccfa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a4308608cb4778411fc2d07c52a3a4f2c3a6c926
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325634"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823072"
 ---
 # <a name="update-deviceinstallstate"></a>Aktualisieren von „deviceInstallState“
 
@@ -36,10 +37,10 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceInstallState](../resources/intune-books-deviceinstallstate.md) an.
@@ -48,13 +49,13 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |deviceName|String|Name des Geräts|
 |deviceId|String|ID des Geräts|
 |lastSyncDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Synchronisierung|
 |installState|[installState](../resources/intune-books-installstate.md)|Installationsstatus des E-Books. Mögliche Werte sind: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed` und `unknown`.|
 |errorCode|String|Fehlercode von Installationsfehlern|
-|osVersion|String|Betriebssystemversion|
+|osVersion|Zeichenfolge|Betriebssystemversion|
 |osDescription|String|Beschreibung des Betriebssystems|
 |userName|String|Name des Gerätebenutzers|
 

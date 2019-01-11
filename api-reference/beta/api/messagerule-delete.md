@@ -2,12 +2,13 @@
 title: Löschen von messageRule
 description: Löschen des angegebenen MessageRule-Objekts.
 author: angelgolfer-ms
-ms.openlocfilehash: e10cebf6b2758a21a8bf70e505edcebb7f27082c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 85f48f1f293b898cf911488961dade4a1e9962cc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305376"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807294"
 ---
 # <a name="delete-messagerule"></a>Löschen von messageRule
 

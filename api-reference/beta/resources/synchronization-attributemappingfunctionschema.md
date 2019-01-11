@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp attributeMappingFunctionSchema
 description: Beschreibt eine Funktion, die in eine Zuordnung Attribut verwendet werden kann, während der Synchronisierung Werte umgewandelt.
-ms.openlocfilehash: 9760669bb29700bfa79c1cd375857b4fd673879b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7273534d281d8ea5eaf3709b530776295cd9c767
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062042"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822162"
 ---
 # <a name="attributemappingfunctionschema-resource-type"></a>Ressourcentyp attributeMappingFunctionSchema
 
@@ -24,7 +25,7 @@ Beschreibt eine Funktion, die in eine [Zuordnung zwischen Attributen](synchroniz
 
 | Eigenschaft                   | Typ                      | Beschreibung    |
 |:---------------------------|:-------------------------|:---------------|
-|name                        |String                    |Name des Operators. |
+|name                        |Zeichenfolge                    |Name des Operators. |
 |parameters                  |[AttributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md) -Auflistung  |Auflistung von Funktionsparametern.|
 
 ## <a name="json-representation"></a>JSON-Darstellung

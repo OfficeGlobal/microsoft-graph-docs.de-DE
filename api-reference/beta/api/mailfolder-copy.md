@@ -2,12 +2,13 @@
 title: 'mailFolder: copy'
 description: Mit dieser API können Sie ein Objekt des Typs „mailfolder“ samt seinem Inhalt in ein anderes Objekt des Typs „mailfolder“ kopieren.
 author: angelgolfer-ms
-ms.openlocfilehash: 74a9c072089f3bd76439ce0fa7bd15f28f8cae2a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 34078b54d5e02ed6ba569cc97a11edc738c0a187
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335623"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805733"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
 
@@ -38,7 +39,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 
 | Header | Wert |
 |:-------|:------|
-| Autorisierung | `Bearer {token}`. Erforderlich. |
+| Authorization | `Bearer {token}`. Erforderlich. |
 | Content-Type | `application/json`. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -47,7 +48,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter | Typ | Beschreibung |
 |:----------|:-----|:------------|
-|destinationId|String|Die Ordner-ID oder den Ordnernamen einer bekannten. Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).|
+|destinationId|Zeichenfolge|Die Ordner-ID oder den Ordnernamen einer bekannten. Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).|
 
 ## <a name="response"></a>Antwort
 

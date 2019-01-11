@@ -2,12 +2,13 @@
 title: Liste Gerätegruppen
 description: Rufen Sie die Gruppen, denen dieses Gerät ein direktes Mitglied ist. Dieser Vorgang ist nicht transitiv.
 author: tfitzmac
-ms.openlocfilehash: a73bc3c2db80169634f8217418026c0e5c34a033
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a189b6fc0c06862b444d741767c20a46f0fa115a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306923"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804809"
 ---
 # <a name="list-device-groups"></a>Liste Gerätegruppen
 
@@ -31,10 +32,10 @@ GET /devices/{id}/memberOf
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
-| Accept  | application/json|
+| Annehmen  | application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

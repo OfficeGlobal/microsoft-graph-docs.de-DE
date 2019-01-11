@@ -2,12 +2,13 @@
 title: Auflisten von „localizedNotificationMessage“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs localizedNotificationMessage auf.
 author: tfitzmac
-ms.openlocfilehash: 070488840f04f21b8a96c8532c9f863ee5934299
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ac56d692f0c9e4cd4e24a8ebb511d5dfba0ed7ef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323975"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823611"
 ---
 # <a name="list-localizednotificationmessages"></a>Auflisten von „localizedNotificationMessage“
 
@@ -37,8 +38,8 @@ GET /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateI
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

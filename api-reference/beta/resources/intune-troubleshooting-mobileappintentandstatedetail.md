@@ -2,12 +2,13 @@
 title: Ressourcentyp mobileAppIntentAndStateDetail
 description: Mobile App beabsichtigt und Installationsstatus für ein bestimmtes Gerät.
 author: tfitzmac
-ms.openlocfilehash: 6a0a52d1cf8576778060c6f7b5e337e6e7a115e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ad20ef00cbc8e5295a96107fbce2f5e7f1cb978a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339221"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805810"
 ---
 # <a name="mobileappintentandstatedetail-resource-type"></a>Ressourcentyp mobileAppIntentAndStateDetail
 
@@ -20,9 +21,9 @@ Mobile App beabsichtigt und Installationsstatus für ein bestimmtes Gerät.
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |applicationId|Zeichenfolge|MobieApp-Bezeichner.|
-|displayName|String|Der vom Administrator bereitgestellte oder importierte Titel der App.|
+|displayName|Zeichenfolge|Der vom Administrator bereitgestellte oder importierte Titel der App.|
 |mobileAppIntent|[mobileAppIntent](../resources/intune-troubleshooting-mobileappintent.md)|Mobile App beabsichtigt. Mögliche Werte sind: `available`, `notAvailable`, `requiredInstall`, `requiredUninstall`, `requiredAndAvailableInstall`, `availableInstallWithoutEnrollment` und `exclude`.|
-|displayVersion|String|Menschen lesbare Version der Anwendung|
+|displayVersion|Zeichenfolge|Menschen lesbare Version der Anwendung|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|Der Installationsstatus der app. Mögliche Werte sind: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown` und `notApplicable`.|
 |supportedDeviceTypes|[MobileAppSupportedDeviceType](../resources/intune-troubleshooting-mobileappsupporteddevicetype.md) -Auflistung|Die unterstützten Plattformen für die app.|
 

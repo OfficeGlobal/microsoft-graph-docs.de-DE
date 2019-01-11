@@ -1,12 +1,13 @@
 ---
 title: deviceManagement-Ressourcentyp
 description: 'Die Ressource DeviceManagement stellt einen Container, deren Inhalt variieren nach Workflow je, einschließlich:  '
-ms.openlocfilehash: 14303da517e26158d1432a67076e64424a40253c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 72c8cde688e95d3ffda07e6e698e8fd5f0f08fc0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061881"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823247"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement-Ressourcentyp
 
@@ -51,10 +52,10 @@ Die Ressource DeviceManagement stellt einen Container, deren Inhalt variieren na
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für das Gerät.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für das Gerät.|
 |**deviceConfiguration**|
 |intuneAccountId|Guid|Intune Konto-ID für die angegebenen Mandanten|
-|legacyPcManangementEnabled|Boolesch|Die Eigenschaft zum Aktivieren von nicht-MDM verwaltet legacy PC-Verwaltung für dieses Konto. Diese Eigenschaft ist schreibgeschützt.|
+|legacyPcManangementEnabled|Boolescher Wert|Die Eigenschaft zum Aktivieren von nicht-MDM verwaltet legacy PC-Verwaltung für dieses Konto. Diese Eigenschaft ist schreibgeschützt.|
 |maximumDepTokens|Int32|Maximal zulässige Anzahl von DEP Token pro Mandant.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Einstellungen auf Kontoebene|
 |**deviceManagement**|

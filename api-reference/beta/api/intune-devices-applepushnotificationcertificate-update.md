@@ -2,12 +2,13 @@
 title: Aktualisieren von „applePushNotificationCertificate“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs applePushNotificationCertificate.
 author: tfitzmac
-ms.openlocfilehash: fb89ee3eb12e33dc2f1d7fc968aee8688d7aff99
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b9eaca912e32c8575c692746040fc23535906466
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329715"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821749"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Aktualisieren von „applePushNotificationCertificate“
 
@@ -35,10 +36,10 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) an.
@@ -52,8 +53,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |topicIdentifier|String|Thema-ID|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Apple Push Notification-Zertifikats|
 |expirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs des Apple Push Notification-Zertifikats|
-|certificateUploadStatus|String|Der Status des Zertifikats hochladen.|
-|certificateUploadFailureReason|String|Der Grund dafür ist das Zertifikat Upload ist fehlgeschlagen.|
+|certificateUploadStatus|Zeichenfolge|Der Status des Zertifikats hochladen.|
+|certificateUploadFailureReason|Zeichenfolge|Der Grund dafür ist das Zertifikat Upload ist fehlgeschlagen.|
 |certificate|String|Noch nicht dokumentiert|
 
 

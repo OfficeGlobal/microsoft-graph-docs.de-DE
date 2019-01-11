@@ -2,12 +2,13 @@
 title: AndroidDeviceOwnerEnrollmentProfile aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidDeviceOwnerEnrollmentProfile-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 136b11dd16023b3394d5c5cf084123acbef93c6d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 18ecb9728cd1f178112bc8542f147edc8af472a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361880"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814154"
 ---
 # <a name="update-androiddeviceownerenrollmentprofile"></a>AndroidDeviceOwnerEnrollmentProfile aktualisieren
 
@@ -35,10 +36,10 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [AndroidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) eine JSON-Darstellung.
@@ -47,17 +48,17 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|accountId|String|Mandanten-GUID, zu der das Registrierungsprofil gehört|
-|id|String|Eindeutige GUID des Registrierungsprofils|
-|displayName|String|Anzeigename des Registrierungsprofils|
-|description|String|Beschreibung des Registrierungsprofils|
+|accountId|Zeichenfolge|Mandanten-GUID, zu der das Registrierungsprofil gehört|
+|id|Zeichenfolge|Eindeutige GUID des Registrierungsprofils|
+|displayName|Zeichenfolge|Anzeigename des Registrierungsprofils|
+|description|Zeichenfolge|Beschreibung des Registrierungsprofils|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Registrierungsprofils|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Registrierungsprofils|
-|tokenValue|String|Wert des zuletzt für das Registrierungsprofil erstellten Tokens|
+|tokenValue|Zeichenfolge|Wert des zuletzt für das Registrierungsprofil erstellten Tokens|
 |tokenCreationDateTime|DateTimeOffset|Datum-Uhrzeit das zuletzt erstellte Token erstellt wurde.|
 |tokenExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs des zuletzt erstellten Tokens|
 |enrolledDeviceCount|Int32|Gesamtzahl der mit dem Registrierungsprofil registrierten Android-Geräte|
-|qrCodeContent|String|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird|
+|qrCodeContent|Zeichenfolge|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird|
 
 

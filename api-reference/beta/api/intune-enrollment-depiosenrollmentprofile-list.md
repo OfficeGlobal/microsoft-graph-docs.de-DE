@@ -2,12 +2,13 @@
 title: Liste depIOSEnrollmentProfiles
 description: Listeneigenschaften und Beziehungen der DepIOSEnrollmentProfile-Objekte.
 author: tfitzmac
-ms.openlocfilehash: d853d119909429d85943494967f5b8a201ac680c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ade3539e14d39ba6285662bfa7e876726252c5e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350449"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817178"
 ---
 # <a name="list-depiosenrollmentprofiles"></a>Liste depIOSEnrollmentProfiles
 
@@ -35,10 +36,10 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: Abrufen von androidWorkProfileEasEmailProfileBase
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidWorkProfileEasEmailProfileBase-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 5617fb07f0330700f1915cc8282482be1d5a16c5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6f57a739e2a6588ceefd5a3e2cc9ad11aac3fcfa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308197"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807399"
 ---
 # <a name="get-androidworkprofileeasemailprofilebase"></a>Abrufen von androidWorkProfileEasEmailProfileBase
 
@@ -41,8 +42,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

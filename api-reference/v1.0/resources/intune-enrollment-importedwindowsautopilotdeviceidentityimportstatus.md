@@ -2,12 +2,13 @@
 title: ImportedWindowsAutopilotDeviceIdentityImportStatus Enum-Typ
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 626bb1efd27042b09f5ae24d5d16158aa8496993
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1f9a6bf0ad922f1196b761a72e215e34f02d2930
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336435"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806006"
 ---
 # <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>ImportedWindowsAutopilotDeviceIdentityImportStatus Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27336435"
 
 Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannte Status.|
 |Ausstehende|1|Ausstehend.|

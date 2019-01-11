@@ -2,12 +2,13 @@
 title: Liste Zuordnungen
 description: Abrufen einer Liste von Assignment-Objekten. Lehrer ist zulässig, um alle Assignment-Objekten für die Klasse finden Sie unter. Studenten können nur Arbeitsaufträge angezeigt, die ihnen zugewiesen sind.
 author: mmast-msft
-ms.openlocfilehash: c7fbab429b238a0ae7f1814066eedfe793096f02
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a58406f26b45ccf3b16b6ff6bfa17e38b52590e7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361404"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823919"
 ---
 # <a name="list-assignments"></a>Liste Zuordnungen
 

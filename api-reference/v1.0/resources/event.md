@@ -2,12 +2,13 @@
 title: Ressourcentyp „event“
 description: Ein Ereignis in einem Kalender
 author: angelgolfer-ms
-ms.openlocfilehash: 3bb597f8e8e157f0a75b2538b233ee57934827c5
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: d083d860d77fe5bf777d14041de21ecc3308d838
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748514"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811739"
 ---
 # <a name="event-resource-type"></a>Ressourcentyp „event“
 
@@ -58,14 +59,14 @@ Diese Ressource unterstützt Folgendes:
 |:---------------|:--------|:----------|
 |attendees|[attendee](attendee.md) collection|Die Sammlung der Teilnehmer des Ereignisses|
 |body|[itemBody](itembody.md)|Der Text der Nachricht, die dem Ereignis zugeordnet ist. Er kann im HTML- oder Textformat vorliegen.|
-|bodyPreview|String|Die Vorschau der Nachricht, die dem Ereignis zugeordnet ist. Liegt im Textformat vor.|
+|bodyPreview|Zeichenfolge|Die Vorschau der Nachricht, die dem Ereignis zugeordnet ist. Liegt im Textformat vor.|
 |categories|String collection|Die Kategorien, die dem Ereignis zugeordnet sind|
-|changeKey|String|Gibt die Version des Ereignisobjekts an. Jedes Mal, wenn das Ereignis geändert wird, wird auch die Eigenschaft „changeKey“ geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
+|changeKey|Zeichenfolge|Gibt die Version des Ereignisobjekts an. Jedes Mal, wenn das Ereignis geändert wird, wird auch die Eigenschaft „changeKey“ geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
 |createdDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |end|[dateTimeTimeZone](datetimetimezone.md)|Datum, Uhrzeit und Zeitzone für das Ende des Ereignisses|
 |hasAttachments|Boolean|„true“, wenn das Ereignis Anlagen hat|
 |iCalUId|String|Ein eindeutiger Bezeichner, der für alle Instanzen eines Ereignisses in unterschiedlichen Kalendern verwendet wird Schreibgeschützt.|
-|id|String| Schreibgeschützt|
+|id|Zeichenfolge| Schreibgeschützt|
 |importance|Wichtigkeit|Die Wichtigkeit des Ereignisses. Die möglichen Werte sind: `low`, `normal`, `high`.|
 |isAllDay|Boolean|„true“, wenn das Ereignis ein ganztägiges Ereignis ist|
 |isCancelled|Boolean|„true“, wenn das Ereignis abgesagt wurde|
@@ -74,7 +75,7 @@ Diese Ressource unterstützt Folgendes:
 |lastModifiedDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |location|[location](location.md)|Der Ort des Ereignisses.|
 |locations|[location](location.md)-Sammlung|Die Orte, an denen die Veranstaltung stattfindet. Die Eigenschaften **location** und **locations** entsprechen sich immer gegenseitig. Wenn Sie die **location**-Eigenschaft aktualisieren, werden alle früheren Orte in der **locations**-Sammlung entfernt und durch den neuen **location**-Wert ersetzt. |
-|onlineMeetingUrl|String|Eine URL für eine Onlinebesprechung Die Eigenschaft wird nur beim Organisator ein Ereignisses, wie eine onlinebesprechung umwandeln, wie etwa einer Besprechung Skype angibt festgelegt. Schreibgeschützt.|
+|onlineMeetingUrl|Zeichenfolge|Eine URL für eine Onlinebesprechung Die Eigenschaft wird nur beim Organisator ein Ereignisses, wie eine onlinebesprechung umwandeln, wie etwa einer Besprechung Skype angibt festgelegt. Schreibgeschützt.|
 |organizer|[recipient](recipient.md)|Der Organisator des Ereignisses|
 |originalEndTimeZone|String|Die Zeitzone, die bei der Erstellung des Ereignisses für das Ereignisende festgelegt wurde. Der Wert `tzone://Microsoft/Custom` gibt an, dass eine ältere benutzerdefinierte Zeitzone in Outlook Desktop festgelegt wurde.|
 |originalStart|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
@@ -87,7 +88,7 @@ Diese Ressource unterstützt Folgendes:
 |seriesMasterId|String|Die ID für die Datenreihe master Terminserie, wenn dieses Ereignis Teil einer Serie ist.|
 |showAs|freeBusyStatus|Der anzuzeigende Status. Die möglichen Werte sind: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |start|[dateTimeTimeZone](datetimetimezone.md)|Datum, Uhrzeit und Zeitzone für den Beginn des Ereignisses|
-|subject|String|Der Text der Betreffzeile des Ereignisses|
+|subject|Zeichenfolge|Der Text der Betreffzeile des Ereignisses|
 |type|eventType|Der Ereignistyp. Die möglichen Werte sind: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Schreibgeschützt.|
 |webLink|String|Die URL zum Öffnen des Ereignisses in Outlook Web App:<br/><br/>Das Ereignis wird im Browser geöffnet, wenn Sie über Outlook Web App bei Ihrem Postfach angemeldet sind. Sie werden aufgefordert, sich anzumelden, wenn Sie noch nicht beim Browser angemeldet sind.<br/><br/>Auf diese URL kann von einem iFrame aus zugegriffen werden.|
 

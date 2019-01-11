@@ -2,12 +2,13 @@
 title: DepOnboardingSetting löschen
 description: Löscht eine DepOnboardingSetting.
 author: tfitzmac
-ms.openlocfilehash: 718fad673fc0e916c2687c368d7c542a42acdbde
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bab4dae945307dc9211eb5559d50176fddf467d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341013"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806818"
 ---
 # <a name="delete-deponboardingsetting"></a>DepOnboardingSetting löschen
 
@@ -37,8 +38,8 @@ DELETE /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: 'group: delta'
 description: Get neu erstellt, aktualisiert oder Gruppen, einschließlich der Gruppenmitgliedschaft ändert, ohne zum Ausführen eines alles Lesen der ganzen Gruppe-Auflistung gelöscht. Einzelheiten finden Sie unter Delta-Abfrage verwenden.
-ms.openlocfilehash: c893f72fbd85e69db75121b0d9ef6c69a582afda
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d9032b6066184ddf993f7fa4645cae00ed1d48b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019943"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815141"
 ---
 # <a name="group-delta"></a>group: delta
 Get neu erstellt, aktualisiert oder Gruppen, einschließlich der Gruppenmitgliedschaft ändert, ohne zum Ausführen eines alles Lesen der ganzen Gruppe-Auflistung gelöscht. Einzelheiten finden Sie unter [Delta-Abfrage verwenden](/graph/delta-query-overview) .

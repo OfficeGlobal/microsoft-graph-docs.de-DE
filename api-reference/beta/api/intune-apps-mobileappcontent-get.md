@@ -2,12 +2,13 @@
 title: mobileAppContent abrufen
 description: Lesen von Eigenschaften und Beziehungen des mobileAppContent-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 332eaf13e64eb6b68eaa41c8ad69d4675692a868
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3ceeccb24512564c8b6a5ae9a6c7724c61881247
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356420"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823150"
 ---
 # <a name="get-mobileappcontent"></a>mobileAppContent abrufen
 
@@ -41,8 +42,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

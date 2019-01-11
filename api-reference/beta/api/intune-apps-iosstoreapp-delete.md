@@ -2,12 +2,13 @@
 title: iosStoreApp löschen
 description: Löscht ein iosStoreApp-Objekt.
 author: tfitzmac
-ms.openlocfilehash: 9ea03ef5429c486e2ae8e93fbc4f394ef3219771
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 25609e0799f2e46b73c14e7ced0967866fa19f22
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338836"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812894"
 ---
 # <a name="delete-iosstoreapp"></a>iosStoreApp löschen
 
@@ -39,8 +40,8 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: DeviceGuardVirtualizationBasedSecurityHardwareRequirementState Enum-Typ
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: a14fa73e681b36d1676b789e598ab497bc0d2aaa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 78f849685846e64177197d7489129a95e9dde39e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360557"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808141"
 ---
 # <a name="deviceguardvirtualizationbasedsecurityhardwarerequirementstate-enum-type"></a>DeviceGuardVirtualizationBasedSecurityHardwareRequirementState Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27360557"
 
 Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |meetHardwareRequirements|0|System erfüllt die Hardwarekonfiguration|
 |secureBootRequired|1|Sichere Boot erforderlich|

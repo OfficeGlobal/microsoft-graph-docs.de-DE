@@ -2,12 +2,13 @@
 title: directoryRoleTemplate abrufen
 description: Mit dieser API können Sie die Eigenschaften und Beziehungen eines Objekts des Typs „directoryroletemplate“ abrufen.
 author: lleonard-msft
-ms.openlocfilehash: 1b001f0f648b1ac23c7f7b9445ee5f0f3b6a2354
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d67b539fa01d03e8a22c7153e20282d3f56907bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333817"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811326"
 ---
 # <a name="get-directoryroletemplate"></a>directoryRoleTemplate abrufen
 
@@ -32,7 +33,7 @@ Die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

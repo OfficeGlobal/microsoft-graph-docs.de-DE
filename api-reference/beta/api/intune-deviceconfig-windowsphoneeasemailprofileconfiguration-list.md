@@ -2,12 +2,13 @@
 title: Liste windowsPhoneEASEmailProfileConfigurations
 description: Listeneigenschaften und Beziehungen der WindowsPhoneEASEmailProfileConfiguration-Objekte.
 author: tfitzmac
-ms.openlocfilehash: 299752c983a5fc19b39e3d9b33f3786a201dfcb5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7cff80f2c1e22cf8c84b872e9d006251225486c4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301344"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807567"
 ---
 # <a name="list-windowsphoneeasemailprofileconfigurations"></a>Liste windowsPhoneEASEmailProfileConfigurations
 
@@ -38,8 +39,8 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: mobileAppContentFile aktualisieren
 description: Aktualisieren der Eigenschaften eines MobileAppContentFile-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 7117fe10ca2f191607c6d5a4823cc39a9fcc8cb9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ee36235a7de5e08b90959b2abaa83ac370371f55
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309604"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811249"
 ---
 # <a name="update-mobileappcontentfile"></a>mobileAppContentFile aktualisieren
 
@@ -35,8 +36,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) an.

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp emailAppUsageAppsUserCounts
 description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: e588a671129c6aa131bce781e3a6db0d44128f6d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: efbc4ce75293237813e9a835cb45ff0bf0ec4b26
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061008"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807819"
 ---
 # <a name="emailappusageappsusercounts-resource-type"></a>Ressourcentyp emailAppUsageAppsUserCounts
 
@@ -24,7 +25,7 @@ ms.locfileid: "27061008"
 | pop3App           | Int64  |
 | imap4App          | Int64  |
 | smtpApp           | Int64  |
-| reportPeriod      | String |
+| reportPeriod      | Zeichenfolge |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

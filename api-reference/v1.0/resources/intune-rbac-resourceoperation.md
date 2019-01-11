@@ -2,12 +2,13 @@
 title: Ressourcentyp „resourceOperation“
 description: " Vorgang wird verwendet, um eine Sicherheitsgruppe AAD eine MobileApp Ressource zuordnen.  Ressourcenoperationen für integrierte Rollen können nicht geändert werden."
 author: tfitzmac
-ms.openlocfilehash: fa004e2f1f41ca03d4b505599ef36e3548c1ab67
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 47dccffe445024e9e6b086b17f87789316db6585
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331465"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811851"
 ---
 # <a name="resourceoperation-resource-type"></a>Ressourcentyp „resourceOperation“
 
@@ -26,10 +27,10 @@ Dieser Ressourcentyp definiert eine Operation oder eine Aktion, die auf eine Int
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Ressourcenoperation. Er ist schreibgeschützt und wird automatisch generiert.|
-|resourceName|String|Name der Ressource, auf die die Operation angewendet wird|
-|actionName|String|Typ von Aktion, den die Operation ausführen wird. Der Wert für „actionName“ sollte prägnant sein und aus möglichst wenigen Wörtern bestehen.|
-|description|String|Beschreibung der Ressourcenoperation. Diese Beschreibung wird angezeigt, wenn der Benutzer im Azure-Portal den Mauszeiger auf der Operation platziert.|
+|id|Zeichenfolge|Schlüssel der Ressourcenoperation. Er ist schreibgeschützt und wird automatisch generiert.|
+|resourceName|Zeichenfolge|Name der Ressource, auf die die Operation angewendet wird|
+|actionName|Zeichenfolge|Typ von Aktion, den die Operation ausführen wird. Der Wert für „actionName“ sollte prägnant sein und aus möglichst wenigen Wörtern bestehen.|
+|description|Zeichenfolge|Beschreibung der Ressourcenoperation. Diese Beschreibung wird angezeigt, wenn der Benutzer im Azure-Portal den Mauszeiger auf der Operation platziert.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

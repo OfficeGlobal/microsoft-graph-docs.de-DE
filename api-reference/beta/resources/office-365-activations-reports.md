@@ -1,12 +1,13 @@
 ---
 title: Office 365-Aktivierungsberichte
 description: Der Office 365 Activation Bericht bietet eine Ansicht, von der Benutzer ihre Office 365-Abonnements auf mindestens ein Gerät aktiviert haben. Es bietet eine Aufschlüsselung der Office 365 ProPlus, Project und Visio Pro für Office 365-Abonnement Aktivierungen als auch die Aufgliederung der Aktivierungen über Desktop und Geräte. In diesem Bericht konnte können Sie die Benutzer zu identifizieren, die möglicherweise zusätzliche Unterstützung für ihre Office-Abonnement zu aktivieren.
-ms.openlocfilehash: 745ca24de47f576522f2f81e3f9d7b70921d81ea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2576579879e60573a9ed70f805fe07532bab8ad8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064774"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822218"
 ---
 # <a name="office-365-activations-reports"></a>Office 365-Aktivierungsberichte
 

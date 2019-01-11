@@ -2,12 +2,13 @@
 title: macOSCompliancePolicy-Ressourcentyp
 description: Diese Klasse enthält Konformitätseinstellungen für Mac OS.
 author: tfitzmac
-ms.openlocfilehash: d8b210c5c8c0b5f961bc5a6079ed165667884fb5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 93fa2f617a22a63524572193cb02fbb1e370e17e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340880"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810990"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>macOSCompliancePolicy-Ressourcentyp
 
@@ -46,12 +47,12 @@ Sie erbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecom
 |osMinimumVersion|String|Mindestversion von IOS.|
 |osMaximumVersion|String|Höchstversion von IOS.|
 |systemIntegrityProtectionEnabled|Boolean|Gibt an, ob auf Geräten der Systemintegritätsschutz aktiviert sein muss.|
-|deviceThreatProtectionEnabled|Boolescher Wert|Legt fest, dass auf Geräten der Gerätebedrohungsschutz aktiviert sein muss.|
+|deviceThreatProtectionEnabled|Boolean|Legt fest, dass auf Geräten der Gerätebedrohungsschutz aktiviert sein muss.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Legt die Mindestrisikostufe fest, ab der Mobile Threat Protection einen Konformitätsverstoß melden soll. Mögliche Werte sind: `unavailable`, `secured`, `low`, `medium`, `high` und `notSet`.|
 |storageRequireEncryption|Boolean|Gibt an, ob auf Mac OS-Geräten die Verschlüsselung erforderlich ist.|
-|firewallEnabled|Boolesch|Gibt an, ob die Firewall oder nicht aktiviert werden soll.|
-|firewallBlockAllIncoming|Boolesch|Entspricht der Option "Alle eingehende Verbindungen blockieren".|
-|firewallEnableStealthMode|Boolesch|Entspricht "Enable Tarnmodus."|
+|firewallEnabled|Boolean|Gibt an, ob die Firewall oder nicht aktiviert werden soll.|
+|firewallBlockAllIncoming|Boolean|Entspricht der Option "Alle eingehende Verbindungen blockieren".|
+|firewallEnableStealthMode|Boolean|Entspricht "Enable Tarnmodus."|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

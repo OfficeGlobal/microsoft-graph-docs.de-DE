@@ -2,12 +2,13 @@
 title: deviceCategory-Ressourcentyp
 description: Diese Kategorien können dann in der Intune Azure-Konsole auf ein Gerät angewendet oder bei der Geräteregistrierung von einem Benutzer ausgewählt werden. Sie können basierend auf Gerätekategorien Berichte filtern und dynamische Azure Active Directory-Gerätegruppen erstellen.
 author: tfitzmac
-ms.openlocfilehash: 9e40f656a7ce4d511cdb4c597c2419e8cf886c12
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 80f8f1f36198ecfab1021e30cb2f28fa4377852c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353613"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810836"
 ---
 # <a name="devicecategory-resource-type"></a>deviceCategory-Ressourcentyp
 

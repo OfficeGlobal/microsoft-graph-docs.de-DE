@@ -2,12 +2,13 @@
 title: GetAssignedRoleIdsForLoggedInUser-Funktion
 description: Ruft die zugewiesenen Rollendefinitionen und rollenzuweisungen des aktuell authentifizierten Benutzers ab.
 author: tfitzmac
-ms.openlocfilehash: 0e9cf6e45c0f7ce7e321d746d12648a598109df5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 532438aa67afff2a0f215ec951e9d3eaa933b80b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331094"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806692"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>GetAssignedRoleIdsForLoggedInUser-Funktion
 
@@ -38,8 +39,8 @@ GET /deviceManagement/getAssignedRoleIdsForLoggedInUser
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: CertificateStatus Enum-Typ
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: e771bec404fa2906b2cf2affd974846481da9ea0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2c4e62bab954812a46a05b2ee75c98f2adb63c99
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312208"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804683"
 ---
 # <a name="certificatestatus-enum-type"></a>CertificateStatus Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27312208"
 
 Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |notProvisioned|0|Noch nicht dokumentiert|
 |Bereitgestellt|1|Noch nicht dokumentiert|

@@ -2,12 +2,13 @@
 title: Ressourcentyp noMediaConfig
 description: Medienkonfiguration für, die keine Medien angibt.
 author: VinodRavichandran
-ms.openlocfilehash: 29d5230150a035d8ed2dd1223f66df4a8f4f30f2
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: c7bf75b2033c7b3340bde01b782b7eabe5ab0e76
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380183"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806461"
 ---
 # <a name="nomediaconfig-resource-type"></a>Ressourcentyp noMediaConfig
 

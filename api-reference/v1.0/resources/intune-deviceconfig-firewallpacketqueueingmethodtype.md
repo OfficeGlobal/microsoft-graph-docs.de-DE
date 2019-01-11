@@ -2,12 +2,13 @@
 title: FirewallPacketQueueingMethodType Enum-Typ
 description: Mögliche Werte für firewallPacketQueueingMethod
 author: tfitzmac
-ms.openlocfilehash: 9f3d63b7e58b6f9c5ba369c3ceb12d06704c4725
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1303287e521cf0b542047e8acaf122bc08a770a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304557"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823219"
 ---
 # <a name="firewallpacketqueueingmethodtype-enum-type"></a>FirewallPacketQueueingMethodType Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27304557"
 
 Mögliche Werte für firewallPacketQueueingMethod
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |deviceDefault|0|Überschreiben Sie keinen Wert von Intune, konfiguriert nicht den Standardwert für den Benutzer konfigurierten Gerät|
 |deaktiviert|1|Paket Warteschlangen deaktivieren|

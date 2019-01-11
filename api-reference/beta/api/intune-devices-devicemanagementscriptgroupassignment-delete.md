@@ -2,12 +2,13 @@
 title: DeviceManagementScriptGroupAssignment löschen
 description: Löscht eine DeviceManagementScriptGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: bec5ef8159e88899a3b5161889c32da3a13a640a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: df7b588b432bb90f01d2d74b13928fa11409aba4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312334"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808057"
 ---
 # <a name="delete-devicemanagementscriptgroupassignment"></a>DeviceManagementScriptGroupAssignment löschen
 
@@ -37,8 +38,8 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/grou
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

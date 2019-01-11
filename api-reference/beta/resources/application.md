@@ -1,12 +1,13 @@
 ---
 title: Anwendung Ressourcentyp
 description: 'Stellt eine Anwendung dar. Jede Anwendung, die Authentifizierung mit Azure Active Directory (AD Azure) mit dem Konfigurieren beauftragt muss in einem Verzeichnis registriert werden. Registrierung Anwendung umfasst darüber informiert Azure AD über die Anwendung, einschließlich der URL, in dem es wurde gefunden, die URL zum Senden von Antworten nach der Authentifizierung, den URI zum Identifizieren der Anwendung und vieles mehr. Weitere Informationen finden Sie unter Grundlagen der Registrieren einer Anwendung in Azure Active Directory. Erbt von directoryObject. '
-ms.openlocfilehash: 66da35183b84d42d69d603cc840ba948d60d7bed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b64de5670ccb9deebbabe32bb691d15b5a621f30
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062798"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805670"
 ---
 # <a name="application-resource-type"></a>Anwendung Ressourcentyp
 
@@ -28,7 +29,7 @@ Diese Ressource unterstützt Folgendes:
 |[Erstellen der Anwendung](../api/application-post-applications.md) | Anwendung | (Register) erstellt eine neue Anwendung.|
 |[Liste applications](../api/application-list.md) | Anwendung | Abrufen der Liste der Programme in der Organisation. |
 |[Aktualisieren der Anwendung](../api/application-update.md) | Anwendung |Application-Objekt zu aktualisieren. |
-|[Löschen der Anwendung](../api/application-delete.md) | Keines |Application-Objekt zu löschen. |
+|[Löschen der Anwendung](../api/application-delete.md) | Keine |Application-Objekt zu löschen. |
 |[Zugewiesen-Listenrichtlinien](../api/policy-list-assigned.md)| Auflistung von [Gruppenrichtlinien](policy.md)| Rufen Sie alle Richtlinien, die auf dieses Objekt zugewiesen.|
 |[Ersteller-Besitzer](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Erstellen Sie einen neuen Besitzer durch die Veröffentlichung auf der Besitzer-Auflistung.|
 |[Besitzer auflisten](../api/application-list-owners.md) |[directoryObject](directoryobject.md)-Sammlung| Abrufen eines Besitzers Auflistung-Objekts.|
@@ -45,11 +46,11 @@ Diese Ressource unterstützt Folgendes:
 |appRoles|[AppRole](approle.md) -Auflistung|Die Auflistung der Anwendungsrollen, die eine Anwendung deklarieren kann. Diese Funktionen können Benutzer, Gruppen oder Dienstprinzipale zugewiesen werden. Lässt keine Nullwerte zu.|
 |createdDateTime|DateTimeOffset| Das Datum und die Zeit, die die Anwendung registriert wurde. |
 |deletedDateTime|DateTimeOffset| Das Datum und die Zeit, die die Anwendung gelöscht wurde. |
-|displayName|String|Der Anzeigename für die Anwendung. |
-|id|String|Der eindeutige Bezeichner für die Anwendung. Geerbt von [directoryObject](directoryobject.md). Schlüssel. Lässt keine Nullwerte zu. Schreibgeschützt. |
+|displayName|Zeichenfolge|Der Anzeigename für die Anwendung. |
+|id|Zeichenfolge|Der eindeutige Bezeichner für die Anwendung. Geerbt von [directoryObject](directoryobject.md). Schlüssel. Lässt keine Nullwerte zu. Schreibgeschützt. |
 |identifierUris|Collection von Objekten des Typs „String“| Die URIs, die die Anwendung zu bestimmen. Weitere Informationen finden Sie unter [Application Objects und Service Principal-Objekte](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). Der *any* -Operator ist für Filterausdrücke auf mehrwertige Eigenschaften erforderlich. Lässt keine Nullwerte zu. |
 |Info|[informationalUrl](informationalurl.md)| Grundlegende Profilinformationen der Anwendung. |
-|isFallbackPublicClient|Boolesch| Gibt an, welche fallback app als öffentliche Client wie eine installierte app auf einem mobilen Gerät ausführen. Der Standardwert ist *false,* was den fallback-app-Typ bedeutet vertrauliche Client wie Web app. Es gibt bestimmte Szenarien Azure AD kann nicht, in dem den Client-app-Typ (z. B. [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) Fluss, in dem sie konfiguriert ist, ohne eine umleitungs-URI) ermitteln. In diesen Fällen wird Azure AD app Type basierend auf dem Wert dieser Eigenschaft interpretiert.|
+|isFallbackPublicClient|Boolescher Wert| Gibt an, welche fallback app als öffentliche Client wie eine installierte app auf einem mobilen Gerät ausführen. Der Standardwert ist *false,* was den fallback-app-Typ bedeutet vertrauliche Client wie Web app. Es gibt bestimmte Szenarien Azure AD kann nicht, in dem den Client-app-Typ (z. B. [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) Fluss, in dem sie konfiguriert ist, ohne eine umleitungs-URI) ermitteln. In diesen Fällen wird Azure AD app Type basierend auf dem Wert dieser Eigenschaft interpretiert.|
 |keyCredentials|[KeyCredential](keycredential.md) -Auflistung|Die Auflistung der wichtigsten Anmeldeinformationen der Anwendung nicht zugeordnete NULL-Werte zulässt. |
 |logo|Stream|Das Hauptfenster Logo für die Anwendung. Lässt keine Nullwerte zu. |
 |optionalClaims|optionalClaims| Reserviert für zukünftige Verwendung. |
@@ -57,11 +58,11 @@ Diese Ressource unterstützt Folgendes:
 |parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) |Gibt die Altersfreigabe Einstellungen für eine Anwendung.|
 |passwordCredentials|[PasswordCredential](passwordcredential.md) -Auflistung|Die Auflistung von Anmeldeinformationen, die mit der Anwendung verbunden sind. Lässt keine Nullwerte zu.|
 |publicClient|[publicClient](publicclient.md)| Gibt die Einstellungen für installierte Clients wie desktop oder mobilen Geräten. |
-|publisherDomain| String | Die überprüften Publisher-Domäne für die Anwendung. Schreibgeschützt.|
+|publisherDomain| Zeichenfolge | Die überprüften Publisher-Domäne für die Anwendung. Schreibgeschützt.|
 |requiredResourceAccess|[RequiredResourceAccess](requiredresourceaccess.md) -Auflistung|Gibt die Ressourcen, die diese Anwendung benötigt Zugriff auf und den Satz von OAuth berechtigungsbereiche und Anwendungsrollen, die unter jeder dieser Ressourcen benötigt werden. Diese vor Konfiguration erforderlichen Ressourcenzugriff Laufwerke der Zustimmung wünschen. Lässt keine Nullwerte zu.|
-|signInAudience | String | Gibt an, welche Microsoft-Konten für die aktuelle Anwendung unterstützt werden. Unterstützte Werte sind:<ul><li>**AzureADMyOrg**: Benutzer mit einer Microsoft arbeiten oder Schule Konto in meiner Organisation Azure AD-Mandanten (d. h. mit einem einzelnen Mandanten)</li><li>**AzureADMultipleOrgs**: Benutzer mit einer Microsoft arbeiten oder Schule Konto in der Organisation Azure AD-Mandanten (d. h. mit mehreren Mandanten)</li> <li>**AzureADandPersonalMicrosoftAccount**: Benutzer mit einem persönlichen Microsoft-Konto oder ein Konto arbeiten oder Schule in der Organisation Azure AD-Mandanten</li></ul> | `AzureADandPersonalMicrosoftAccount` |
+|signInAudience | Zeichenfolge | Gibt an, welche Microsoft-Konten für die aktuelle Anwendung unterstützt werden. Unterstützte Werte sind:<ul><li>**AzureADMyOrg**: Benutzer mit einer Microsoft arbeiten oder Schule Konto in meiner Organisation Azure AD-Mandanten (d. h. mit einem einzelnen Mandanten)</li><li>**AzureADMultipleOrgs**: Benutzer mit einer Microsoft arbeiten oder Schule Konto in der Organisation Azure AD-Mandanten (d. h. mit mehreren Mandanten)</li> <li>**AzureADandPersonalMicrosoftAccount**: Benutzer mit einem persönlichen Microsoft-Konto oder ein Konto arbeiten oder Schule in der Organisation Azure AD-Mandanten</li></ul> | `AzureADandPersonalMicrosoftAccount` |
 |-Tags hinzugefügtes Markup|Collection von Objekten des Typs „String“| Benutzerdefinierte Zeichenfolgen, die zum Kategorisieren und Identifizieren der Anwendung verwendet werden können. |
-|web|[web](web.md)| Gibt die Einstellungen für eine Webanwendung. |
+|web|[Web](web.md)| Gibt die Einstellungen für eine Webanwendung. |
 
 ## <a name="relationships"></a>Beziehungen
 

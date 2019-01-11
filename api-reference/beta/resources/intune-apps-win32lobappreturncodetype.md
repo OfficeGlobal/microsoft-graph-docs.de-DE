@@ -2,12 +2,13 @@
 title: win32LobAppReturnCodeType Enum-Typ
 description: Gibt den Typ der Rückgabecode.
 author: tfitzmac
-ms.openlocfilehash: 31023cb2d8f5a0f645f31890e56ab9a55641bbf6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 684aa4f717adb0841c9f6c983c39afee2bf7210a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357953"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807301"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>win32LobAppReturnCodeType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27357953"
 
 Gibt den Typ der Rückgabecode.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |failed|0|Fehler bei.|
 |Erfolgreich|1|Erfolg.|

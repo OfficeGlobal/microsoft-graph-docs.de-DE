@@ -2,12 +2,13 @@
 title: EnrollmentProfile aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines EnrollmentProfile-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 1f268d07e3636682d77edb238c59e2acaa7ec7d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9a5628ad6aff7926d4248e76e5203a9419fc1727
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308316"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822596"
 ---
 # <a name="update-enrollmentprofile"></a>EnrollmentProfile aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) eine JSON-Darstellung.
@@ -48,11 +49,11 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|GUID des Objekts|
-|displayName|String|Name des Profils|
-|description|String|Beschreibung des Profils|
-|requiresUserAuthentication|Boolesch|Gibt an, ob das Profil eine Benutzerauthentifizierung erfordert|
-|configurationEndpointUrl|String|Endpunkt-Url für die Registrierung zu verwendende Konfiguration|
-|enableAuthenticationViaCompanyPortal|Boolesch|Gibt an, dass die Authentifizierung mit Apple Setup-Assistenten anstelle von Unternehmensportal.|
+|displayName|Zeichenfolge|Name des Profils|
+|description|Zeichenfolge|Beschreibung des Profils|
+|requiresUserAuthentication|Boolescher Wert|Gibt an, ob das Profil eine Benutzerauthentifizierung erfordert|
+|configurationEndpointUrl|Zeichenfolge|Endpunkt-Url für die Registrierung zu verwendende Konfiguration|
+|enableAuthenticationViaCompanyPortal|Boolescher Wert|Gibt an, dass die Authentifizierung mit Apple Setup-Assistenten anstelle von Unternehmensportal.|
 
 
 

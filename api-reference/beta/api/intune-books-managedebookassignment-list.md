@@ -2,12 +2,13 @@
 title: Auflisten von „managedEBookAssignment“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs managedEBookAssignment auf.
 author: tfitzmac
-ms.openlocfilehash: 43625693f6510eb632f4c361cebab07066ae058f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bdcfbca3e08e87eb6811162a1c2a9ea833b29d3f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340579"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808085"
 ---
 # <a name="list-managedebookassignments"></a>Auflisten von „managedEBookAssignment“
 
@@ -35,10 +36,10 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

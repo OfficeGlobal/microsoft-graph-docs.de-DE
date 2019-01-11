@@ -1,12 +1,13 @@
 ---
 title: educationSynchronizationOAuth2ClientCredentialsConnectionSettings-Ressource
 description: Wenn OAuth2 Client Anmeldeinformationen Grant in Verbindung mit den Datenanbieter bestimmt ist, sollte dieser Einstellungen Verbindungstyp So richten Sie das Profil ein verwendet werden.
-ms.openlocfilehash: 901fabb802d4ed5fa0c99538e52b9a07199eb298
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 49a0a267ddb3a8f3a954888679806ea7913e24f0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063873"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822582"
 ---
 # <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a>educationSynchronizationOAuth2ClientCredentialsConnectionSettings-Ressource
 
@@ -20,8 +21,8 @@ Wenn [OAuth2 Client Anmeldeinformationen Grant](https://tools.ietf.org/html/rfc6
 
 | Eigenschaft | Typ | Beschreibung |
 |:-|:-|:-|
-| **tokenUrl** | String | Die URL für den Datenanbieter Zugriffstoken abgerufen. |
-| **scope** | String | [Der Bereich der Access-Anforderung](https://tools.ietf.org/html/rfc6749#section-3.3). |
+| **tokenUrl** | Zeichenfolge | Die URL für den Datenanbieter Zugriffstoken abgerufen. |
+| **scope** | Zeichenfolge | [Der Bereich der Access-Anforderung](https://tools.ietf.org/html/rfc6749#section-3.3). |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 <!-- {

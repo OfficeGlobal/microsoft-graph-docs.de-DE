@@ -2,12 +2,13 @@
 title: Abrufen von managementConditionStatement
 description: Lesen Sie Eigenschaften und Beziehungen des ManagementConditionStatement-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 1a5800fdeedd755240fae9c8691341f0fc20214a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2f8791cd65f2344350168f6192bdaad6230349b2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308307"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817003"
 ---
 # <a name="get-managementconditionstatement"></a>Abrufen von managementConditionStatement
 
@@ -40,8 +41,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

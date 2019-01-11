@@ -2,12 +2,13 @@
 title: Liste deviceManagementScriptGroupAssignments
 description: Listeneigenschaften und Beziehungen der DeviceManagementScriptGroupAssignment-Objekte.
 author: tfitzmac
-ms.openlocfilehash: 1d57bdb9de953b080d88836d6de7ae25b7ec3feb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4773bb8431627f3bb23dc6e1b9584a4c6067de40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327363"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816989"
 ---
 # <a name="list-devicemanagementscriptgroupassignments"></a>Liste deviceManagementScriptGroupAssignments
 
@@ -37,8 +38,8 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAs
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

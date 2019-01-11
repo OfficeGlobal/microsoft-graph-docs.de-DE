@@ -2,12 +2,13 @@
 title: MobileAppInstallStatus aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines MobileAppInstallStatus-Objekts.
 author: tfitzmac
-ms.openlocfilehash: dbf65aa07258b48a8ce64cf01db0a5ef00097f3a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a60bcf69ded37ea0b4a04430c6a837bb6df95100
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336323"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817948"
 ---
 # <a name="update-mobileappinstallstatus"></a>MobileAppInstallStatus aktualisieren
 
@@ -38,8 +39,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [MobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) eine JSON-Darstellung.
@@ -48,19 +49,19 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|deviceName|String|Gerätename|
-|deviceId|String|Geräte-ID|
+|id|Zeichenfolge|Schlüssel der Entität|
+|deviceName|Zeichenfolge|Gerätename|
+|deviceId|Zeichenfolge|Geräte-ID|
 |lastSyncDateTime|DateTimeOffset|Letzte Synchronisierung Datum-Zeit|
 |mobileAppInstallStatusValue|[resultantAppState](../resources/intune-shared-resultantappstate.md)|Der Installationsstatus der app. Mögliche Werte sind: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown` und `notApplicable`.|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|Der Installationsstatus der app. Mögliche Werte sind: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown` und `notApplicable`.|
 |installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Die Details der Installation Zustand der app. Mögliche Werte: `noAdditionalDetails`, `seeInstallErrorCode`, `seeUninstallErrorCode`, `pendingReboot`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
 |errorCode|Int32|Der Fehler im code für die Installation oder Deinstallieren von Fehlern.|
-|osVersion|String|Version des Betriebssystems|
+|osVersion|Zeichenfolge|Version des Betriebssystems|
 |osDescription|String|OS Beschreibung|
-|userName|String|Name des Aufnahmegeräts Benutzer|
-|userPrincipalName|String|Benutzerprinzipalname|
-|displayVersion|String|Menschen lesbare Version der Anwendung|
+|userName|Zeichenfolge|Name des Aufnahmegeräts Benutzer|
+|userPrincipalName|Zeichenfolge|Benutzerprinzipalname|
+|displayVersion|Zeichenfolge|Menschen lesbare Version der Anwendung|
 
 
 

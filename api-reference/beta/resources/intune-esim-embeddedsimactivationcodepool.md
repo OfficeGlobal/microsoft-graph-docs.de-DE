@@ -2,12 +2,13 @@
 title: Ressourcentyp embeddedSIMActivationCodePool
 description: Ein Pool stellt eine Gruppe von eingebetteten SIM Aktivierungscodes.
 author: tfitzmac
-ms.openlocfilehash: 9f756488d4e00e3d69bebf0e484f01aeec5650a7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d6b5d67f90b8f0da701493380b2c3668b6d87f6c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307140"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823513"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>Ressourcentyp embeddedSIMActivationCodePool
 
@@ -22,15 +23,15 @@ Ein Pool stellt eine Gruppe von eingebetteten SIM Aktivierungscodes.
 |[Liste embeddedSIMActivationCodePools](../api/intune-esim-embeddedsimactivationcodepool-list.md)|[EmbeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) -Auflistung|Listeneigenschaften und Beziehungen der [EmbeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) -Objekte.|
 |[Abrufen von embeddedSIMActivationCodePool](../api/intune-esim-embeddedsimactivationcodepool-get.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|Lesen Sie Eigenschaften und Beziehungen des [EmbeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) -Objekts.|
 |[Erstellen von embeddedSIMActivationCodePool](../api/intune-esim-embeddedsimactivationcodepool-create.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|Erstellen eines neuen [EmbeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) -Objekts.|
-|[EmbeddedSIMActivationCodePool löschen](../api/intune-esim-embeddedsimactivationcodepool-delete.md)|Keines|Löscht eine [EmbeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md).|
+|[EmbeddedSIMActivationCodePool löschen](../api/intune-esim-embeddedsimactivationcodepool-delete.md)|Keine|Löscht eine [EmbeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md).|
 |[EmbeddedSIMActivationCodePool aktualisieren](../api/intune-esim-embeddedsimactivationcodepool-update.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|Aktualisieren Sie die Eigenschaften eines [EmbeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) -Objekts.|
 |[assign-Aktion](../api/intune-esim-embeddedsimactivationcodepool-assign.md)|[EmbeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) -Auflistung|Noch nicht dokumentiert|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für den eingebetteten SIM Aktivierung Code Pool. System generierten Wert, die beim Erstellen zugewiesen.|
-|displayName|String|Der Administrator definierten Namen des eingebetteten SIM Aktivierung Code Pools.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für den eingebetteten SIM Aktivierung Code Pool. System generierten Wert, die beim Erstellen zugewiesen.|
+|displayName|Zeichenfolge|Der Administrator definierten Namen des eingebetteten SIM Aktivierung Code Pools.|
 |createdDateTime|DateTimeOffset|Der Zeitpunkt, zu der eingebettete SIM Aktivierung Code Pool erstellt wurde. Generierte Service-Seite.|
 |modifiedDateTime|DateTimeOffset|Der Zeitpunkt der letzten Änderung der eingebettete SIM Aktivierung Code Pool. Aktualisierte Service-Seite.|
 |activationCodes|[EmbeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md) -Auflistung|Die Aktivierungscodes in diesem Pool angehören. Diese Navigationseigenschaft wird verwendet, um die Aktivierungscodes Intune buchen aber kann nicht zum Lesen von Aktivierungscodes aus Intune verwendet werden.|

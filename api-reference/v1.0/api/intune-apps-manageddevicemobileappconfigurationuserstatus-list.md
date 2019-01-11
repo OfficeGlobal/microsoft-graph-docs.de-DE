@@ -2,12 +2,13 @@
 title: Auflisten von „managedDeviceMobileAppConfigurationUserStatus“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs managedDeviceMobileAppConfigurationUserStatus auf.
 author: tfitzmac
-ms.openlocfilehash: 8db43a69e0825ff27de9a926524b1d5e762f846c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c55c2966aeae77a3f7dd206600f2066745b551b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319691"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822519"
 ---
 # <a name="list-manageddevicemobileappconfigurationuserstatuses"></a>Auflisten von „managedDeviceMobileAppConfigurationUserStatus“
 
@@ -33,10 +34,10 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

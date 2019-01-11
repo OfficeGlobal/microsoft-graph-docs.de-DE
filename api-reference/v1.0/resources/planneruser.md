@@ -1,12 +1,13 @@
 ---
 title: plannerUser-Ressourcentyp
 description: Die Ressource **PlannerUser** bieten Zugriff auf Ressourcen Planner für einen Benutzer. Es enthält keine verwendbaren Eigenschaften.
-ms.openlocfilehash: 777886a61d702198ec03ea844fb9fced761047ba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 733c20d45e1c0b1e0e454b2c5ae03105a9ab5d24
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018106"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805943"
 ---
 # <a name="planneruser-resource-type"></a>plannerUser-Ressourcentyp
 
@@ -23,7 +24,7 @@ Die **plannerUser**-Ressource bietet einem [Benutzer](user.md) Zugriff auf Plann
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|String| Schreibgeschützt. Bezeichner der plannerUser-Ressource.|
+|id|Zeichenfolge| Schreibgeschützt. Bezeichner der plannerUser-Ressource.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|

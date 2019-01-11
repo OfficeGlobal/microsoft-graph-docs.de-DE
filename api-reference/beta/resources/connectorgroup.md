@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp connectorGroup
 description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: a3131b887216f1f400f70ed8d607477f65793cc7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 211efe5d8caae57457a6a5cc4fa95d145cd176f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063207"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823191"
 ---
 # <a name="connectorgroup-resource-type"></a>Ressourcentyp connectorGroup
 
@@ -30,7 +31,7 @@ ms.locfileid: "27063207"
 |connectorGroupType|string| Der Typ des Connectors, die mit der Gruppe verwendet werden. Mögliche Werte sind: `applicationProxy`.|
 |id|String| Die Objekt-Id der connectorGroup|
 |isDefault|Boolescher Wert| Gibt an, ob die ConnectorGroup der Standardgruppe Connector. Nur ein einzelner Connector Gruppe kann die Standard-ConnectorGroup und wird vom System festgelegt.|
-|name|String| Der Name der ConnectorGroup zugeordnet.|
+|name|Zeichenfolge| Der Name der ConnectorGroup zugeordnet.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|

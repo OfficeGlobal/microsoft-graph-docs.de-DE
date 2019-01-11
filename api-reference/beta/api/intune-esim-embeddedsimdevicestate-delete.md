@@ -2,12 +2,13 @@
 title: EmbeddedSIMDeviceState löschen
 description: Löscht eine EmbeddedSIMDeviceState.
 author: tfitzmac
-ms.openlocfilehash: a99ee168896971e4051f93aaea527aa4c24a1f07
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9a7acebbf76e0719967582fa5a4922a8d409af2e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338962"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819103"
 ---
 # <a name="delete-embeddedsimdevicestate"></a>EmbeddedSIMDeviceState löschen
 
@@ -35,10 +36,10 @@ DELETE /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCo
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

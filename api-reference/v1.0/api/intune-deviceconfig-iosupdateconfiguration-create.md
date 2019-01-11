@@ -2,12 +2,13 @@
 title: iosUpdateConfiguration erstellen
 description: Erstellen eines neuen iosUpdateConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 5eccada804cccaa4df4b9be29d5550a66a35e990
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 400db047bdc4c4118d38e915cf90e8481d7d02dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320567"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806958"
 ---
 # <a name="create-iosupdateconfiguration"></a>iosUpdateConfiguration erstellen
 
@@ -35,8 +36,8 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des iosUpdateConfiguration-Objekts an.

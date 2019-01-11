@@ -2,12 +2,13 @@
 title: Ressourcentyp „notificationMessageTemplate“
 description: " Abschnitt. Mit dem Objekt „notificationMessageTemplate“ können Sie eigene benutzerdefinierte Benachrichtigungen erstellen, aus denen Administratoren wählen können, wenn sie konfigurieren, welche Aktionen bei Verstößen gegen die Konformitätsrichtlinien ausgeführt werden sollen."
 author: tfitzmac
-ms.openlocfilehash: 110fdfd12c7fc8f556b276581c470d688ae4a35d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bf7e15318402a8b2aef24f6a254d12668fda94b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358093"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805440"
 ---
 # <a name="notificationmessagetemplate-resource-type"></a>Ressourcentyp „notificationMessageTemplate“
 
@@ -27,10 +28,10 @@ Benachrichtigungs-E-Mails sind Nachrichten, die an Endbenutzer gesendet werden, 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
-|displayName|String|Anzeigename für die Benachrichtigungs-E-Mail-Vorlage|
-|defaultLocale|String|Standardgebietsschema, das verwendet wird, wenn das angeforderte Gebietsschema nicht verfügbar ist|
+|displayName|Zeichenfolge|Anzeigename für die Benachrichtigungs-E-Mail-Vorlage|
+|defaultLocale|Zeichenfolge|Standardgebietsschema, das verwendet wird, wenn das angeforderte Gebietsschema nicht verfügbar ist|
 |brandingOptions|[notificationTemplateBrandingOptions](../resources/intune-notification-notificationtemplatebrandingoptions.md)|Optionen für das Branding der Nachrichtenvorlage. Das Branding wird in der Intune-Verwaltungskonsole definiert. Mögliche Werte sind: `none`, `includeCompanyLogo`, `includeCompanyName` und `includeContactInformation`.|
 
 ## <a name="relationships"></a>Beziehungen

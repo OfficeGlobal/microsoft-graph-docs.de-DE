@@ -2,12 +2,13 @@
 title: settingSource-Ressourcentyp
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: a0ac952dcf48abcfc9daad7e107f63e75b565840
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 277b103550df042491ccadb6ab0176fbca3fff5a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333502"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804550"
 ---
 # <a name="settingsource-resource-type"></a>settingSource-Ressourcentyp
 
@@ -17,8 +18,8 @@ Noch nicht dokumentiert
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Noch nicht dokumentiert|
-|displayName|String|Noch nicht dokumentiert.|
+|id|Zeichenfolge|Noch nicht dokumentiert|
+|displayName|Zeichenfolge|Noch nicht dokumentiert.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

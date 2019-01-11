@@ -2,12 +2,13 @@
 title: WindowsPhone81AppX aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines windowsPhone81AppX-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 7ebd110bd76797682ebd9a53b72e661e9e71d583
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2d7f295c5d2e6441c550b74c316f598d7c1ffed1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321616"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823261"
 ---
 # <a name="update-windowsphone81appx"></a>WindowsPhone81AppX aktualisieren
 
@@ -39,8 +40,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) eine JSON-Darstellung.

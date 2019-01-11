@@ -2,12 +2,13 @@
 title: Aktualisieren von „deviceCompliancePolicyDeviceStateSummary“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceCompliancePolicyDeviceStateSummary.
 author: tfitzmac
-ms.openlocfilehash: 9447566f38c8e03f9804f0614ef0b3bf827fbc6c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 35f55096ed9307bc4a4c29cf98418b8f36b45cbd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343659"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807434"
 ---
 # <a name="update-devicecompliancepolicydevicestatesummary"></a>Aktualisieren von „deviceCompliancePolicyDeviceStateSummary“
 
@@ -33,10 +34,10 @@ PATCH /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md) an.
@@ -47,7 +48,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |:---|:---|:---|
 |inGracePeriodCount|Int32|Anzahl von Geräten, die sich in der Toleranzperiode befinden|
 |configManagerCount|Int32|Anzahl von Geräten, deren Konformität mit System Center Configuration Manager verwaltet wird|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |unknownDeviceCount|Int32|Anzahl von unbekannten Geräten|
 |notApplicableDeviceCount|Int32|Anzahl der ausgenommenen Geräte|
 |compliantDeviceCount|Int32|Anzahl von konformen Geräten|

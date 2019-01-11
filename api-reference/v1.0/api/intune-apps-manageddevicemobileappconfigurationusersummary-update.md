@@ -2,12 +2,13 @@
 title: Aktualisieren von „managedDeviceMobileAppConfigurationUserSummary“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs managedDeviceMobileAppConfigurationUserSummary.
 author: tfitzmac
-ms.openlocfilehash: 35bcbfd5970b263b6fc0b76b0624361466dbbd68
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 58c4cb4644dbfdf4e6b52b7536990e1eb9563d14
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359465"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821770"
 ---
 # <a name="update-manageddevicemobileappconfigurationusersummary"></a>Aktualisieren von „managedDeviceMobileAppConfigurationUserSummary“
 
@@ -33,10 +34,10 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) an.
@@ -45,7 +46,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |pendingCount|Int32|Anzahl der ausstehenden Benutzer|
 |notApplicableCount|Int32|Anzahl der Benutzer nicht zutreffend|
 |successCount|Int32|Anzahl der erfolgreichen Benutzer|

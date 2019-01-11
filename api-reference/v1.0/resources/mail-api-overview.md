@@ -1,12 +1,13 @@
 ---
 title: Verwenden Sie die Outlook-Mail-REST-API
 description: Microsoft Graph können Ihre app autorisierten Zugriff auf Outlook-Mail-Daten des Benutzers in einem persönlichen oder Organisation Konto zu erhalten.
-ms.openlocfilehash: c17ecfb9cc4f2ac313ef176ff7f21d276e75cc37
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 7085f0316e27aabc54556ddfeb7c9934105b042d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018065"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805922"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Verwenden Sie die Outlook-Mail-REST-API
 
@@ -51,7 +52,7 @@ Die Microsoft Graph-API stellt zudem Methoden und Aktionen bereit, die allgemein
 | Benachrichtigung über Änderungen an Nachrichten in einem Ordner erhalten | [subscription](../resources/subscription.md) | [Arbeiten mit Webhooks in Microsoft Graph](../resources/webhooks.md) |
 | Nachrichten oder eine E-Mail-Ordnerhierarchie synchronisieren | [message](../resources/message.md) | [Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen](/graph/delta-query-messages) |
 | **App-Entwicklung** | | |
-| Hinzufügen von benutzerdefinierten app-Daten als Internet Nachrichtenkopfzeilen einer Nachricht | [Nachricht](../resources/message.md) | Hinzufügen von benutzerdefinierten Daten an die **InternetMessageHeaders** -Eigenschaft der Nachricht. |
+| Hinzufügen von benutzerdefinierten app-Daten als Internet Nachrichtenkopfzeilen einer Nachricht | [message](../resources/message.md) | Hinzufügen von benutzerdefinierten Daten an die **InternetMessageHeaders** -Eigenschaft der Nachricht. |
 | Benutzerdefinierte App-Daten mithilfe von Erweiterungen zu einer Nachricht hinzufügen | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview) |
 | Auf benutzerdefinierte Daten für nicht ausreichend verfügbare Outlook-MAPI-Eigenschaften zugreifen | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Übersicht über erweiterte Outlook-Eigenschaften](../resources/extended-properties-overview.md) |
 

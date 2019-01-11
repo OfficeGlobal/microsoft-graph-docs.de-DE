@@ -2,12 +2,13 @@
 title: Aktualisieren der Anwendung
 description: Aktualisieren Sie die Eigenschaften des Application-Objekts.
 author: lleonard-msft
-ms.openlocfilehash: e664e212f81bab9f4e8b49bce60b4ec045fa5787
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fafc1a339b96bfffdfbce24566b69bbd776825db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316688"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819005"
 ---
 # <a name="update-application"></a>Aktualisieren der Anwendung
 
@@ -32,14 +33,14 @@ PATCH /applications/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich.  |
+| Authorization  | string  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|allowPublicClient|Boolesch| Gibt an, ob die Anwendung als öffentliche Client fungieren kann. Beispielsweise eine installierte Anwendung, die auf einem mobilen Gerät ausgeführt. Der Standardwert lautet *False*. |
+|allowPublicClient|Boolean| Gibt an, ob die Anwendung als öffentliche Client fungieren kann. Beispielsweise eine installierte Anwendung, die auf einem mobilen Gerät ausgeführt. Der Standardwert lautet *False*. |
 |API|[API](../resources/api.md)| Gibt die Einstellungen für eine API-Anwendung. |
 |appRoles|[AppRole](../resources/approle.md) -Auflistung|Die Auflistung der Anwendungsrollen, die eine Anwendung deklarieren kann. Diese Funktionen können Benutzer, Gruppen oder Dienstprinzipale zugewiesen werden. Lässt keine Nullwerte zu.|
 |applicationAliases|Collection von Objekten des Typs „String“| Die URIs, die die Anwendung zu bestimmen. Weitere Informationen finden Sie unter [Application Objects und Service Principal-Objekte](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). Der *any* -Operator ist für Filterausdrücke auf mehrwertige Eigenschaften erforderlich. Lässt keine Nullwerte zu. |

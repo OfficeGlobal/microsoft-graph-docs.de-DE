@@ -2,12 +2,13 @@
 title: memberOf auflisten
 description: 'Dient zum Abrufen von Gruppen- und Verzeichnisrollen, vondenen der Benutzer ein direktes Mitglied ist. '
 author: dkershaw10
-ms.openlocfilehash: 25f5d8d01f97bd2a3afe90f596dfb7c18eaad857
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: cd43e3853d25a55ac8c41f170736a8c37477906e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327132"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811375"
 ---
 # <a name="list-memberof"></a>memberOf auflisten
 
@@ -34,7 +35,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 | Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
-| Accept  | application/json|
+| Annehmen  | application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

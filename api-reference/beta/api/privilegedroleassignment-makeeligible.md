@@ -1,12 +1,13 @@
 ---
 title: 'PrivilegedRoleAssignment: MakeEligible'
 description: Stellen Sie die rollenzuweisung als geeignet. Wenn die rollenzuweisung bereits vor dem Aufruf berechtigt ist, hat keine Auswirkung. Wenn die rollenzuweisung dauerhaft gelöscht wird und der Requestor unterscheidet sich von den Zielbenutzer, die rollenzuweisung wird sind berechtigt, und die Rolle wird für die Zielbenutzer deaktiviert werden. Wenn der Requestor der Zielbenutzer ist und die Rolle Sicherheitsadministrator oder privilegierten Rollen-Administrator ist, wird die Rolle mit den standardmäßigen Gültigkeitszeitraum aktiviert werden.
-ms.openlocfilehash: f39f508c7aeae4d85db92b43f406cd3497533e38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 90f606ed1550f6341251e5185e620c29838a9ac9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058777"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822589"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>PrivilegedRoleAssignment: MakeEligible
 

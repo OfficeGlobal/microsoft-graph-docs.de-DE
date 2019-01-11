@@ -2,12 +2,13 @@
 title: editionUpgradeConfiguration löschen
 description: Löscht ein editionUpgradeConfiguration-Objekt.
 author: tfitzmac
-ms.openlocfilehash: fdb8319e5e14857be2fc06721cf991d913ee6eb4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5cb91c0fe87f79ef814d0bd047964134da3c5a29
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340397"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805327"
 ---
 # <a name="delete-editionupgradeconfiguration"></a>editionUpgradeConfiguration löschen
 
@@ -35,8 +36,8 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

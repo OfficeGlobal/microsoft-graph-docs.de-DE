@@ -2,12 +2,13 @@
 title: Liste windowsWifiEnterpriseEAPConfigurations
 description: Listeneigenschaften und Beziehungen der WindowsWifiEnterpriseEAPConfiguration-Objekte.
 author: tfitzmac
-ms.openlocfilehash: 9f9755f9cdb58c9fe46dc38d398359542765dd94
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 39991c4a7b0f8238f898f17602e59534f042de0c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304347"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806867"
 ---
 # <a name="list-windowswifienterpriseeapconfigurations"></a>Liste windowsWifiEnterpriseEAPConfigurations
 
@@ -38,8 +39,8 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

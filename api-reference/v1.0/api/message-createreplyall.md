@@ -1,12 +1,13 @@
 ---
 title: 'message: createReplyAll'
 description: Erstellen Sie einen Entwurf, um dem Absender und allen Empfängern der angegebenen Nachricht zu antworten. Anschließend können Sie den Entwurf aktualisieren, um den Antwortinhalt zum **Text** hinzuzufügen, oder andere Nachrichteneigenschaften ändern. Sie können den Entwurf auch einfach senden.
-ms.openlocfilehash: a48e5bf7f3ae330ff31a2b8d2827259798186c64
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d09de032dc515173219a00b19a64d64ba0b72195
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019902"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804781"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
