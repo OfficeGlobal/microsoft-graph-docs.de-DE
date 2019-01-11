@@ -2,12 +2,13 @@
 title: Ressourcentyp „windowsMobileMSI“
 description: Diese Ressource enthält die Eigenschaften und geerbten Eigenschaften einer branchenspezifischen Windows Mobile-MSI-App.
 author: tfitzmac
-ms.openlocfilehash: cb1a7cc2077ea7f02d2581c4dee2ce1ab8ba0ed7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 123b449e2dd94582bbd2c485a121a81f91f58e94
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329197"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888340"
 ---
 # <a name="windowsmobilemsi-resource-type"></a>Ressourcentyp „windowsMobileMSI“
 
@@ -36,7 +37,7 @@ Sie erbt von [mobileLobApp](../resources/intune-apps-mobilelobapp.md).
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Das große Symbol, das in den App-Details angezeigt und für den Upload des Symbols verwendet werden soll. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|isFeatured|Boolescher Wert|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|isFeatured|Boolean|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |privacyInformationUrl|String|URL zur Datenschutzerklärung. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |informationUrl|String|URL zur Seite mit weiteren Informationen. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|String|Der Besitzer der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -49,7 +50,7 @@ Sie erbt von [mobileLobApp](../resources/intune-apps-mobilelobapp.md).
 |commandLine|String|Befehlszeile|
 |productCode|String|Produktcode|
 |productVersion|String|Produktversion der branchenspezifischen Windows Mobile-MSI-App.|
-|ignoreVersionDetection|Boolescher Wert|Boolescher Wert, der steuert, ob nach der Installation der App auf einem Gerät die App-Version zur Erkennung der App verwendet werden soll. Setzen Sie diese Eigenschaft auf „true“ bei branchenspezifischen Windows Mobile-MSI-Apps, die sich selbstständig aktualisieren.|
+|ignoreVersionDetection|Boolean|Boolescher Wert, der steuert, ob nach der Installation der App auf einem Gerät die App-Version zur Erkennung der App verwendet werden soll. Setzen Sie diese Eigenschaft auf „true“ bei branchenspezifischen Windows Mobile-MSI-Apps, die sich selbstständig aktualisieren.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

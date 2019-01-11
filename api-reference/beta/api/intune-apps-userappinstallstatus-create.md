@@ -2,12 +2,13 @@
 title: Erstellen von userAppInstallStatus
 description: Erstellen eines neuen UserAppInstallStatus-Objekts.
 author: tfitzmac
-ms.openlocfilehash: ef110f5ce911e7e2244ebe2a50bcad194421ecea
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7cbf61af7c9d25070c9b95f227b4db74f367d261
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308484"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891665"
 ---
 # <a name="create-userappinstallstatus"></a>Erstellen von userAppInstallStatus
 
@@ -37,8 +38,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt UserAppInstallStatus eine JSON-Darstellung.
@@ -47,9 +48,9 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |userName|String|Name des Benutzers|
-|userPrincipalName|String|Benutzerprinzipalname.|
+|userPrincipalName|Zeichenfolge|Benutzerprinzipalname.|
 |installedDeviceCount|Int32|Anzahl der installierten Geräte|
 |failedDeviceCount|Int32|Anzahl der fehlgeschlagenen Geräte|
 |notInstalledDeviceCount|Int32|Anzahl der nicht installierten Geräte|

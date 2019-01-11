@@ -2,12 +2,13 @@
 title: WindowsAppStartLayoutTileSize Enum-Typ
 description: Die Kachelgröße des Windows-app in der Start-Layout.
 author: tfitzmac
-ms.openlocfilehash: ef00ebd06528fdd8f5d832d11ef34ee9f0093a3b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dde8aff258e495fce58baafc40e44ba3041d2bc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313496"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891434"
 ---
 # <a name="windowsappstartlayouttilesize-enum-type"></a>WindowsAppStartLayoutTileSize Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27313496"
 
 Die Kachelgröße des Windows-app in der Start-Layout.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |hidden|0|Ausgeblendet.|
 |small|1|Kleine 1 x 1.|

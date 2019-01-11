@@ -2,12 +2,13 @@
 title: windowsDefenderAdvancedThreatProtectionConfiguration löschen
 description: Löscht ein windowsDefenderAdvancedThreatProtectionConfiguration-Objekt.
 author: tfitzmac
-ms.openlocfilehash: 7c70d9995328c7ab70136f8a536765a0635ad5e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 70e424306ea3dacd64f120ce8d99e341da699dc1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355139"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890713"
 ---
 # <a name="delete-windowsdefenderadvancedthreatprotectionconfiguration"></a>windowsDefenderAdvancedThreatProtectionConfiguration löschen
 
@@ -39,8 +40,8 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

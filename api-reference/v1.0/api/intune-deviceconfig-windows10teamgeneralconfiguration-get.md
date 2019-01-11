@@ -2,12 +2,13 @@
 title: Abrufen von „windows10TeamGeneralConfiguration“
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs windows10TeamGeneralConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 6001efb602ecbf646425c5fd659d3fb508879cc4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 340dc198543d67c8829b06d149bb77a9f11955bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304956"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889082"
 ---
 # <a name="get-windows10teamgeneralconfiguration"></a>Abrufen von „windows10TeamGeneralConfiguration“
 
@@ -37,8 +38,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

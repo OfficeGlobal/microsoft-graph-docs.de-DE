@@ -2,12 +2,13 @@
 title: Pause-Synchronisierung auf ein educationSynchronizationProfile
 description: Halten Sie die Synchronisierung eines bestimmten Schule Daten Synchronisierungsprofils im Mandanten.
 author: mmast-msft
-ms.openlocfilehash: 14e94cf4a083e8f37b03f96b287a75aa40b7afed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 97ded3f4fdf30e6bc56345abcc71f3466ef4ff61
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313286"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892318"
 ---
 # <a name="pause-sync-on-an-educationsynchronizationprofile"></a>Pause-Synchronisierung auf ein educationSynchronizationProfile
 
@@ -33,7 +34,7 @@ POST /synchronizationProfiles/{id}/pause
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich.  |
+| Authorization  | string  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

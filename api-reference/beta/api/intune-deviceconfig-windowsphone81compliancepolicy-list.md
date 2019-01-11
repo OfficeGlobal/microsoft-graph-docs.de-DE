@@ -2,12 +2,13 @@
 title: Auflisten von „windowsPhone81CompliancePolicy“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs windowsPhone81CompliancePolicy auf.
 author: tfitzmac
-ms.openlocfilehash: c7ce1588e9be2258f81b89c961b5eb67cb499ee6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6f5dc8242d3f76cf9c96e9d7232542f147a94a8c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361551"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890405"
 ---
 # <a name="list-windowsphone81compliancepolicies"></a>Auflisten von „windowsPhone81CompliancePolicy“
 
@@ -37,8 +38,8 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

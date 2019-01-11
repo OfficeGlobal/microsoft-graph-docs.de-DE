@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp businessFlowTemplate
 description: In Azure AD Access Feature, überprüft die `businesFlowTemplate` stellt eine Azure AD Business Flow-Vorlage. Der Bezeichner der Vorlage, beispielsweise zum Überprüfen der Gast Mitglieder einer Gruppe ist vom Anrufer bereitgestellt wird, wenn eine Überprüfung Access erstellen.
-ms.openlocfilehash: 8faf1a1381f5cdcf4bfaab78adc7a6554479b427
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cad361d6c2d2aba70b2623ddf272e1eba42fd93b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064878"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889026"
 ---
 # <a name="businessflowtemplate-resource-type"></a>Ressourcentyp businessFlowTemplate
 
@@ -34,7 +35,7 @@ Der Fluss Vorlage Geschäftsobjekte sind automatisch generiert, wenn die Onboard
 
 Keine.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|

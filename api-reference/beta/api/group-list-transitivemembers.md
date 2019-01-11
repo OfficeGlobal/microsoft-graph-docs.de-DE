@@ -1,12 +1,13 @@
 ---
 title: Transitive Gruppenmitglieder Liste
 description: Rufen Sie eine Liste der Mitglieder der Gruppe. Eine Gruppe kann Benutzer, Kontakte, Geräte, Dienstprinzipale und anderen Gruppen als Mitglieder haben. Dieser Vorgang ist transitiv und gibt eine Liste aller geschachtelten Elemente ebenfalls zurück.
-ms.openlocfilehash: 703515f4549e409d3711699c79671ed0b1a93cb3
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: a89894bf17d12f7cd23350f466e9e1272fa0cb6a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748556"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892218"
 ---
 # <a name="list-group-transitive-members"></a>Transitive Gruppenmitglieder Liste
 

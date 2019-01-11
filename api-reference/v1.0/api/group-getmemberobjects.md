@@ -1,12 +1,13 @@
 ---
 title: 'group: getMemberObjects'
 description: 'Diese API gibt alle Gruppen zurück, in denen die angegebene Gruppe Mitglied ist. Die Überprüfung ist transitiv. Hinweis: Gruppen können nicht Mitglieder von Verzeichnisrollen sein, es werden daher keine Verzeichnisrollen zurückgegeben.'
-ms.openlocfilehash: 59f3408434c77290552080b6b7b99a20e6fe19db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fac39adebc8220458b3fcd0a46a5de5f6e27ab4a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018143"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891259"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 Diese API gibt alle Gruppen zurück, in denen die angegebene Gruppe Mitglied ist. Die Überprüfung ist transitiv. Hinweis: Gruppen können nicht Mitglieder von Verzeichnisrollen sein, es werden daher keine Verzeichnisrollen zurückgegeben.

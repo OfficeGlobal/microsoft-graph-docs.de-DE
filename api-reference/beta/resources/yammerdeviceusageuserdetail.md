@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp yammerDeviceUsageUserDetail
 description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: 8812b61d974815fd1cdf1bbe1549a21193e5a2f4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0f4d543ec8a96eaa4e237a1db1367efdc625c4e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065433"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892015"
 ---
 # <a name="yammerdeviceusageuserdetail-resource-type"></a>Ressourcentyp yammerDeviceUsageUserDetail
 
@@ -15,18 +16,18 @@ ms.locfileid: "27065433"
 | Eigenschaft          | Typ    |
 | :---------------- | :------ |
 | reportRefreshDate | Datum    |
-| userPrincipalName | String  |
-| displayName       | String  |
-| userState         | String  |
+| userPrincipalName | Zeichenfolge  |
+| displayName       | Zeichenfolge  |
+| userState         | Zeichenfolge  |
 | stateChangeDate   | Datum    |
 | lastActivityDate  | Datum    |
-| usedWeb           | Boolesch |
-| usedWindowsPhone  | Boolesch |
-| usedAndroidPhone  | Boolesch |
-| usediPhone        | Boolesch |
-| usediPad          | Boolesch |
-| usedOthers        | Boolesch |
-| reportPeriod      | String  |
+| usedWeb           | Boolescher Wert |
+| usedWindowsPhone  | Boolescher Wert |
+| usedAndroidPhone  | Boolescher Wert |
+| usediPhone        | Boolescher Wert |
+| usediPad          | Boolescher Wert |
+| usedOthers        | Boolescher Wert |
+| reportPeriod      | Zeichenfolge  |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

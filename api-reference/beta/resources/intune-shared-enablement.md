@@ -2,12 +2,13 @@
 title: Aktivierung von Steuerelementen Enum-Typ
 description: 'Werte verwendet, um den Status eines Geräts angeben. '
 author: tfitzmac
-ms.openlocfilehash: 5b1d494fd116eab437b4654d396b029e1384a817
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c77da7026640e9ad0a6f6f08f077d509cb411f22
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356889"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888256"
 ---
 # <a name="enablement-enum-type"></a>Aktivierung von Steuerelementen Enum-Typ
 
@@ -20,7 +21,7 @@ Werte verwendet, um den Status eines Geräts angeben.
 Beachten Sie, dass es ein Unterschied zwischen deaktiviert und nicht konfiguriert.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Gerät Standardwert, keine beabsichtigt.|
 |enabled|1|Aktiviert die Einstellung auf dem Gerät.|

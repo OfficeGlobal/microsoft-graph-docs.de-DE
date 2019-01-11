@@ -2,12 +2,13 @@
 title: Auflisten von „windowsInformationProtection“
 description: Listet die Eigenschaften und Beziehungen der windowsInformationProtection-Objekte auf.
 author: tfitzmac
-ms.openlocfilehash: e26ab1c5d67e775ce0be04039892f153b73d42f6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc8b9245bf71b8c7c81ea3a51e260ff3bca557da
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353802"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889831"
 ---
 # <a name="list-windowsinformationprotections"></a>Auflisten von „windowsInformationProtection“
 
@@ -37,8 +38,8 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

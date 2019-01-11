@@ -2,12 +2,13 @@
 title: TermsAndConditionsGroupAssignment aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines TermsAndConditionsGroupAssignment-Objekts.
 author: tfitzmac
-ms.openlocfilehash: ccce1cad1bcddd68e69ba3cdcb417b0aabbe7136
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 003713e436e20dbcec9ee6ec1ab6999256fee0b2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349658"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891210"
 ---
 # <a name="update-termsandconditionsgroupassignment"></a>TermsAndConditionsGroupAssignment aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignmen
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [TermsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) eine JSON-Darstellung.
@@ -48,7 +49,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|Eindeutiger Bezeichner der Entität|
-|targetGroupId|String|Eindeutiger Bezeichner der einer Gruppe, der die Richtlinie T & C zugewiesen ist.|
+|targetGroupId|Zeichenfolge|Eindeutiger Bezeichner der einer Gruppe, der die Richtlinie T & C zugewiesen ist.|
 
 
 

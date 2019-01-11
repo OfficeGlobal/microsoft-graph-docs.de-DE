@@ -2,12 +2,13 @@
 title: DeviceGuardLocalSystemAuthorityCredentialGuardState Enum-Typ
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: cc3b563fa83f4551f154b9e732f9d473703ca9fb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 42a39d982ddaff1283ba4e2126e1c4d25dab2813
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314483"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891553"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardstate-enum-type"></a>DeviceGuardLocalSystemAuthorityCredentialGuardState Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27314483"
 
 Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |Ausführen|0|Wird ausgeführt|
 |rebootRequired|1|Neustart erforderlich|

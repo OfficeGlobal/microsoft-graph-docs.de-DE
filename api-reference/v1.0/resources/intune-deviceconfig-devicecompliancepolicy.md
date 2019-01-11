@@ -2,12 +2,13 @@
 title: deviceCompliancePolicy-Ressourcentyp
 description: 'Dies ist die Basisklasse für die Konformitätsrichtlinie. Konformitätsrichtlinien sind plattformspezifisch, und einzelne plattformspezifische Konformitätsrichtlinien erben von dieser Klasse. '
 author: tfitzmac
-ms.openlocfilehash: e412a11331d2ae79ee4e1885150cbb1de006452b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d2ab919a24c7c2819963ce047612f5a829913060
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328693"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834412"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>deviceCompliancePolicy-Ressourcentyp
 
@@ -25,11 +26,11 @@ Dies ist die Basisklasse für die Konformitätsrichtlinie. Konformitätsrichtlin
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität.|
+|id|Zeichenfolge|Schlüssel der Entität.|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts|
-|description|String|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration|
+|description|Zeichenfolge|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
-|displayName|String|Vom Administrator bereitgestellter Name der Gerätekonfiguration|
+|displayName|Zeichenfolge|Vom Administrator bereitgestellter Name der Gerätekonfiguration|
 |version|Int32|Version der Gerätekonfiguration.|
 
 ## <a name="relationships"></a>Beziehungen

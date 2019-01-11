@@ -1,12 +1,13 @@
 ---
 title: plannerTaskDetails-Ressourcentyp
 description: Die **plannerTaskDetails**-Ressource stellt die zusätzlichen Informationen zu einer Aufgabe dar. Jedes task-Objekt hat ein Detailobjekt.
-ms.openlocfilehash: 3d5ab0b3a2f0c2e6c1abf284d5a87c2726c7aa15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0bec5b47d1472eae43906841c5074e4080672817
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066002"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888165"
 ---
 # <a name="plannertaskdetails-resource-type"></a>plannerTaskDetails-Ressourcentyp
 

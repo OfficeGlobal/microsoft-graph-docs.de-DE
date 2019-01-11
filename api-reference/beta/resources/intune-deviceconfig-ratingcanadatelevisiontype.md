@@ -2,12 +2,13 @@
 title: RatingCanadaTelevisionType Enum-Typ
 description: TV zum Bewerten Bezeichnungen in Kanada
 author: tfitzmac
-ms.openlocfilehash: fdd587a5a0917aea9a8ec028f30b13d1548e6981
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ae8eb2232b2efcf38c26ecd6d0a5f3c830913e36
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316947"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890209"
 ---
 # <a name="ratingcanadatelevisiontype-enum-type"></a>RatingCanadaTelevisionType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27316947"
 
 TV zum Bewerten Bezeichnungen in Kanada
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |allAllowed|0|Standardwert, zulassen, dass alle TV Inhalt anzeigt.|
 |allBlocked|1|Lassen Sie nicht, dass alle TV Inhalt anzeigt.|

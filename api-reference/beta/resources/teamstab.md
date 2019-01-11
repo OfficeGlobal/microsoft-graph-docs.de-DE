@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp teamsTab
 description: 'Eine TeamsTab ist eine Registerkarte, hat fixiert an einen Kanal innerhalb eines Teams (angeschlossen). '
-ms.openlocfilehash: 102d4c0b766d8a0d9bdf22cb2ed76f5e06d87ad5
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: 34afb140ef1fceec9ac48d851725626bf9d452f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283619"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890566"
 ---
 # <a name="teamstab-resource-type"></a>Ressourcentyp teamsTab
 
@@ -21,7 +22,7 @@ Eine TeamsTab ist eine [Registerkarte](../resources/teamstab.md) , hat fixiert a
 |[Registerkarten](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Listen Registerkarten fixiert zu einem Kanal.|
 |[Erste Registerkarte](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Liest eine Registerkarte an einen Kanal fixiert.|
 |[Registerkarte hinzufügen](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Fügt (Pins) einer Registerkarte zu einem Kanal.|
-|[Registerkarte entfernen](../api/teamstab-delete.md) | Keines | Entfernt (löst) einer Registerkarte aus einem Kanal.|
+|[Registerkarte entfernen](../api/teamstab-delete.md) | Keine | Entfernt (löst) einer Registerkarte aus einem Kanal.|
 |[Registerkarte "Aktualisieren"](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Aktualisiert die Registerkarte Eigenschaften.|
 
 
@@ -33,7 +34,7 @@ Eine TeamsTab ist eine [Registerkarte](../resources/teamstab.md) , hat fixiert a
 |  displayName            |   string                  |  Der Name der Registerkarte.     |
 |  name            |   string                  |  (Veraltet) Der Name der Registerkarte.     |
 |  teamsAppId           |   string             |  App-Definition-Bezeichner der Registerkarte. Dieser Wert kann nach der Erstellung der Registerkarte geändert werden.     |
-|  sortOrderIndex  |   Int                     |  Index der Reihenfolge für die Sortierung von Registerkarten verwendet werden soll.     |
+|  sortOrderIndex  |   int                     |  Index der Reihenfolge für die Sortierung von Registerkarten verwendet werden soll.     |
 |  webUrl          |   string                  |  Deep-Link-Url der Registerkarte-Instanz. Schreibgeschützt.     |
 |  Konfiguration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Container für benutzerdefinierte Einstellungen angewendet auf die Registerkarte an. Die Registerkarte gilt nur, wenn diese Eigenschaft festgelegt ist konfiguriert.     |
 

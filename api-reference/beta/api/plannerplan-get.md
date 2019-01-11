@@ -1,12 +1,13 @@
 ---
 title: plannerPlan abrufen
 description: Dient zum Abrufen der Eigenschaften und der Beziehungen eines **plannerplan**-Objekts.
-ms.openlocfilehash: 5b8ad9f212a3e5010ac7479ddfafca250bbb2f01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7b6e26509f9f06bd937634e3302540035bcf4d2b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066103"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889411"
 ---
 # <a name="get-plannerplan"></a>plannerPlan abrufen
 

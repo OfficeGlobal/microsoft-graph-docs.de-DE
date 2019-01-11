@@ -2,12 +2,13 @@
 title: WindowsDeliveryOptimizationMode Enum-Typ
 description: Übermittlung Optimierung Modus für Peer-Verteilung
 author: tfitzmac
-ms.openlocfilehash: ae61d7dde5fc02ff329eaf9cc970ee7078c3a254
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: af266b55fd58f788965d33d0d807511d263f6195
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360158"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888179"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>WindowsDeliveryOptimizationMode Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27360158"
 
 Übermittlung Optimierung Modus für Peer-Verteilung
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |vom Typ userDefined|0|Ermöglicht es dem Benutzer festgelegt.|
 |httpOnly|1|Nur HTTP keine peering|

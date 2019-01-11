@@ -2,12 +2,13 @@
 title: Abrufen von „mobileAppCategory“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs mobileAppCategory.
 author: tfitzmac
-ms.openlocfilehash: 99ed0bb0159bd39efe417aa66950a13a5d2dbcfe
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3ef51f39e1844769d7b4342573d52e4a46b05a0a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349903"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892309"
 ---
 # <a name="get-mobileappcategory"></a>Abrufen von „mobileAppCategory“
 
@@ -40,8 +41,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

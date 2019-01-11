@@ -2,12 +2,13 @@
 title: deviceComplianceDeviceOverview-Ressourcentyp
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 17e37af04c61d29938dfe0dc33f12c025973d7b8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bc512ceedb6b32e8eac663859a7c5f0b47c1c2c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332277"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833250"
 ---
 # <a name="devicecompliancedeviceoverview-resource-type"></a>deviceComplianceDeviceOverview-Ressourcentyp
 
@@ -25,7 +26,7 @@ Noch nicht dokumentiert.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |pendingCount|Int32|Anzahl der ausstehenden Geräte|
 |notApplicableCount|Int32|Anzahl der ausgenommenen Geräte|
 |notApplicablePlatformCount|Int32|Anzahl der Geräte, die aufgrund von Konflikt Plattform und Richtlinie nicht zutreffend|

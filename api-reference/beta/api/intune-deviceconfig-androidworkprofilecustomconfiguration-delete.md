@@ -2,12 +2,13 @@
 title: AndroidWorkProfileCustomConfiguration löschen
 description: Löscht eine AndroidWorkProfileCustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 0c80f2932c71c879835b3797f8f54fe14c0bbd2f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 77a3229b173818cd999b635b7db4b23fd4c9db39
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307994"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890811"
 ---
 # <a name="delete-androidworkprofilecustomconfiguration"></a>AndroidWorkProfileCustomConfiguration löschen
 
@@ -39,8 +40,8 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

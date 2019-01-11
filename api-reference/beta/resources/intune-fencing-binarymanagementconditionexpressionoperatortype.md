@@ -2,12 +2,13 @@
 title: BinaryManagementConditionExpressionOperatorType Enum-Typ
 description: Unterstützte binäre Operatoren für Management Bedingungsausdrücke.
 author: tfitzmac
-ms.openlocfilehash: 4b8fb4f1434f222c15bde5fd74261f021d282535
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b836dba7c45eacf0f2d8ffe425b301733e60759
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346956"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891070"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>BinaryManagementConditionExpressionOperatorType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27346956"
 
 Unterstützte binäre Operatoren für Management Bedingungsausdrücke.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |oder|0|Eine Reihe von Operanden als True ausgewertet, nur, wenn eine oder mehrere der Operanden "true" ist.|
 |und|1|Eine Reihe von Operanden als True ausgewertet, wenn alle Operanden "true" sind.|

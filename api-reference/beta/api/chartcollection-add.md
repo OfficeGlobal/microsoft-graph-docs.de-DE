@@ -2,12 +2,13 @@
 title: 'ChartCollection: add'
 description: Erstellt ein neues Diagramm.
 author: lumine2008
-ms.openlocfilehash: 704afc9890e3921c69cdd7b746c0e362c4627511
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 51ad28568abe7445a85f813698736130f04ac48e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325550"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892421"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 

@@ -2,12 +2,13 @@
 title: AndroidWorkProfileRequiredPasswordType Enum-Typ
 description: Android Arbeit Profil erforderliche Kennworttyp.
 author: tfitzmac
-ms.openlocfilehash: 8d41b4c516ee4aa393ea3a26034e5f575b58fa02
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8e211fd0f793f710c31a303a73662af556c0794a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330233"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891525"
 ---
 # <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>AndroidWorkProfileRequiredPasswordType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27330233"
 
 Android Arbeit Profil erforderliche Kennworttyp.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |deviceDefault|0|Gerät Standardwert, keine beabsichtigt.|
 |lowSecurityBiometric|1|Niedrige Sicherheit Biometrik basierend erforderliche Kennwort.|

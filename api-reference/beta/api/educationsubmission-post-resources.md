@@ -2,12 +2,13 @@
 title: Erstellen von educationSubmissionResource
 description: 'Fügt eine Ressource zur Ressourcenliste. Diese Aktion nur von den Teilnehmern möglich, dem diese Übermittlung zugewiesen ist. Diese Aktion nicht erfolgreich, wenn das Flag **AllowStudentsToAddResources** nicht festgelegt ist auf "true". Wenn der Aufrufer eine neue Ressource dateibasierten erstellen möchte, muss die Datei dem Ordner Ressourcen hochgeladen werden, die der Übermittlung zugeordnet ist. Die POST-Anforderung schlägt fehl, wenn die Datei nicht vorhanden ist oder nicht in diesem Ordner ist. '
 author: dipakboyed
-ms.openlocfilehash: 71d06e996213c133ed9c48d5d3e320a785e122ae
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 585ece0dd8239c5a3107420b88cf2103fe5fb7eb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321301"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888116"
 ---
 # <a name="create-educationsubmissionresource"></a>Erstellen von educationSubmissionResource
 

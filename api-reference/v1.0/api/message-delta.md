@@ -1,12 +1,13 @@
 ---
 title: 'message: delta'
 description: Dient zum Abrufen eines Satzes von Nachrichten, die einem bestimmten Ordner hinzugefügt bzw. daraus gelöscht oder darin aktualisiert wurden.
-ms.openlocfilehash: 31d8c1c0129257d2cd125ce7e349f9f361eff5ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b0e5e5a295d7be92e1d4d45f2e079493f1633a45
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017797"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888361"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -110,7 +111,7 @@ Content-length: 337
 }
 ```
 
-### <a name="see-also"></a>Siehe auch
+### <a name="see-also"></a>Weitere Artikel
 
 - [Verwenden einer Delta-Abfrage zum Nachverfolgen von Änderungen in Microsoft Graph-Daten](/graph/delta-query-overview)
 - [Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen](/graph/delta-query-messages)

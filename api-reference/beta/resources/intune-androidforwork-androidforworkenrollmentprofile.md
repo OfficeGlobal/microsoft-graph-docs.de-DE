@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp „androidForWorkEnrollmentProfile“
 description: Registrierungsprofil zur Registrierung von COSU-Geräten, die Google Cloud Management verwenden
-ms.openlocfilehash: c79c2b63d71caa75941c3bba07832d98e8becdc4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a10e3a153cc21837ab015ab0c08e8c8b6ee0ac9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890972"
 ---
 # <a name="androidforworkenrollmentprofile-resource-type"></a>Ressourcentyp „androidForWorkEnrollmentProfile“
 
@@ -29,16 +30,16 @@ Registrierungsprofil zur Registrierung von COSU-Geräten, die Google Cloud Man
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|accountId|String|Mandanten-GUID, zu der das Registrierungsprofil gehört|
-|id|String|Eindeutige GUID des Registrierungsprofils|
-|displayName|String|Anzeigename des Registrierungsprofils|
-|description|String|Beschreibung des Registrierungsprofils|
+|accountId|Zeichenfolge|Mandanten-GUID, zu der das Registrierungsprofil gehört|
+|id|Zeichenfolge|Eindeutige GUID des Registrierungsprofils|
+|displayName|Zeichenfolge|Anzeigename des Registrierungsprofils|
+|description|Zeichenfolge|Beschreibung des Registrierungsprofils|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Registrierungsprofils|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Registrierungsprofils|
-|tokenValue|String|Wert des zuletzt für das Registrierungsprofil erstellten Tokens|
+|tokenValue|Zeichenfolge|Wert des zuletzt für das Registrierungsprofil erstellten Tokens|
 |tokenExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs des zuletzt erstellten Tokens|
 |enrolledDeviceCount|Int32|Gesamtzahl der mit dem Registrierungsprofil registrierten Android-Geräte|
-|qrCodeContent|String|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird|
+|qrCodeContent|Zeichenfolge|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird|
 
 ## <a name="relationships"></a>Beziehungen

@@ -2,12 +2,13 @@
 title: Ressourcentyp windowsAutopilotDeploymentProfile
 description: Windows Autopilot Bereitstellung Benutzerprofil
 author: tfitzmac
-ms.openlocfilehash: 9534a9c252c3ab678bf2dea83d497c9541f30c47
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1538497dc5105dcd2e7f0c9ff7fdf83c3ddec56e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301442"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892197"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>Ressourcentyp windowsAutopilotDeploymentProfile
 
@@ -25,16 +26,16 @@ Windows Autopilot Bereitstellung Benutzerprofil
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Profil-Taste|
-|displayName|String|Name des Profils|
-|description|String|Beschreibung des Profils|
-|language|String|Auf dem Gerät konfigurierten Sprache|
+|id|Zeichenfolge|Profil-Taste|
+|displayName|Zeichenfolge|Name des Profils|
+|description|Zeichenfolge|Beschreibung des Profils|
+|language|Zeichenfolge|Auf dem Gerät konfigurierten Sprache|
 |createdDateTime|DateTimeOffset|Erstellungszeit Profil|
 |lastModifiedDateTime|DateTimeOffset|Profil Zeitpunkt der letzten Änderung|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Erleben Sie die Einstellung im Lieferzustand|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Registrierung Status Bildschirm Einstellung|
-|extractHardwareHash|Boolesch|Extraktion von HardwareHash für das Profil|
-|deviceNameTemplate|String|Die Vorlage verwendet, um das Gerät AutoPilot nennen. Dies kann ein benutzerdefinierter Text und kann auch die Seriennummer des Geräts, oder aber eine zufällig erzeugte Zahl enthalten. Die gesamte Länge des Texts von der Vorlage generierte kann nicht mehr als 15 Zeichen sein.|
+|extractHardwareHash|Boolescher Wert|Extraktion von HardwareHash für das Profil|
+|deviceNameTemplate|Zeichenfolge|Die Vorlage verwendet, um das Gerät AutoPilot nennen. Dies kann ein benutzerdefinierter Text und kann auch die Seriennummer des Geräts, oder aber eine zufällig erzeugte Zahl enthalten. Die gesamte Länge des Texts von der Vorlage generierte kann nicht mehr als 15 Zeichen sein.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

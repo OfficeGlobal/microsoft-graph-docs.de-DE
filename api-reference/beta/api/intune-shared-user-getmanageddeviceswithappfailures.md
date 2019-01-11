@@ -2,12 +2,13 @@
 title: GetManagedDevicesWithAppFailures-Funktion
 description: Ruft die Liste der Geräte mit fehlerhaften apps
 author: tfitzmac
-ms.openlocfilehash: 147ee26644c3e2c425f70434516e13b03407891b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cafda91617bfd183606877bfda352370f2364c9f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352955"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890069"
 ---
 # <a name="getmanageddeviceswithappfailures-function"></a>GetManagedDevicesWithAppFailures-Funktion
 
@@ -36,10 +37,10 @@ GET /users/{usersId}/getManagedDevicesWithAppFailures
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

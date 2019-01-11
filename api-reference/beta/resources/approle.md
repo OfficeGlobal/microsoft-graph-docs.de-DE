@@ -1,12 +1,13 @@
 ---
 title: AppRole Ressourcentyp
 description: Stellt eine Anwendungsrolle, die von einer Clientanwendung aus einer anderen Anwendung aufrufen angefordert werden kann oder, die verwendet werden kann, eine Anwendung Benutzern oder Gruppen in einer angegebenen Anwendungsrolle zugewiesen. Die **AppRoles** -Eigenschaft der Entität ServicePrincipal und der Anwendung Entität ist eine Auflistung von **AppRole**.
-ms.openlocfilehash: f87ef6f40fbeb18ec4b3a2373fb2a19e14da84a4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 26fe11fc4f0c362de002c205c7e3b95a6ec4a314
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059589"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891546"
 ---
 # <a name="approle-resource-type"></a>AppRole Ressourcentyp
 
@@ -44,8 +45,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |allowedMemberTypes|Collection von Objekten des Typs „String“|Gibt an, ob diese app Rollendefinition zugewiesen werden kann, Benutzer und Gruppen mit der Einstellung auf "Benutzer" oder in andere Anwendungen (, die diese Anwendung in Filterdaemon Service Szenarien zugreifen) mit der Einstellung auf "Application" oder beide.|
-|description|String|Berechtigung Hilfetext, die in die Zuordnung der Admin-app angezeigt wird und die Erfahrungen stimmen.|
-|displayName|String|Der Anzeigename für die Berechtigung, die in der Admin Zustimmung und app-Zuordnung Erfahrungen angezeigt wird.|
+|description|Zeichenfolge|Berechtigung Hilfetext, die in die Zuordnung der Admin-app angezeigt wird und die Erfahrungen stimmen.|
+|displayName|Zeichenfolge|Der Anzeigename für die Berechtigung, die in der Admin Zustimmung und app-Zuordnung Erfahrungen angezeigt wird.|
 |id|Guid|Eindeutiger Rollenbezeichner innerhalb der **AppRoles** -Auflistung.|
 |isEnabled|Boolescher Wert|Beim Erstellen oder Aktualisieren einer Rollendefinition, muss dies auf **true** festgelegt werden (die Standardeinstellung ist). Um eine Rolle zu löschen, muss dieser zunächst auf **false**festgelegt werden.  An dieser Stelle kann diese Rolle im Gespräch nachfolgende entfernt werden.|
 |Wert|Zeichenfolge|Gibt den Wert des Anspruchs Rollen, die die Anwendung erwarten in die Authentifizierung und Zugriffsteuerung Token an.|

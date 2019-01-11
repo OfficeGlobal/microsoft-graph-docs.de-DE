@@ -2,12 +2,13 @@
 title: MacOSGatekeeperAppSources Enum-Typ
 description: App-Optionen für Mac OS Gatekeeper Quelle.
 author: tfitzmac
-ms.openlocfilehash: 323c913cf9136e26a060d98e399806370700094d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6c784dba6a79b6a9d406e3632d2ac4beaf2a47ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342833"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888368"
 ---
 # <a name="macosgatekeeperappsources-enum-type"></a>MacOSGatekeeperAppSources Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27342833"
 
 App-Optionen für Mac OS Gatekeeper Quelle.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Gerät Standardwert, keine beabsichtigt.|
 |macAppStore|1|Nur apps aus der Mac-AppStore können ausgeführt werden.|

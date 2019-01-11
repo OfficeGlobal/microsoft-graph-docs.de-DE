@@ -2,12 +2,13 @@
 title: Abrufen von „deviceCategory“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs deviceCategory.
 author: tfitzmac
-ms.openlocfilehash: 4a43f0d2551e98ce0a51e28764c90b234015ec29
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5e64e507782fe88f9dbc28517ac2799cf2957922
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331066"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890573"
 ---
 # <a name="get-devicecategory"></a>Abrufen von „deviceCategory“
 
@@ -59,8 +60,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 

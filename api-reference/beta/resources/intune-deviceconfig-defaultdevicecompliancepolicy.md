@@ -2,12 +2,13 @@
 title: Ressourcentyp defaultDeviceCompliancePolicy
 description: Breites Gerät Compliance Regeln für die Standardrichtlinie, die erzwungen werden berücksichtigt werden.
 author: tfitzmac
-ms.openlocfilehash: fb5b10153e9684287e43140c4196835869431c57
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4629a5fb4dbf49c9ff94a7a9606ac2ec36c71986
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336407"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891455"
 ---
 # <a name="defaultdevicecompliancepolicy-resource-type"></a>Ressourcentyp defaultDeviceCompliancePolicy
 
@@ -25,7 +26,7 @@ Sie erbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecom
 |[Liste defaultDeviceCompliancePolicies](../api/intune-deviceconfig-defaultdevicecompliancepolicy-list.md)|[DefaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md) -Auflistung|Listeneigenschaften und Beziehungen der [DefaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md) -Objekte.|
 |[Abrufen von defaultDeviceCompliancePolicy](../api/intune-deviceconfig-defaultdevicecompliancepolicy-get.md)|[defaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md)|Lesen Sie Eigenschaften und Beziehungen des [DefaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md) -Objekts.|
 |[Erstellen von defaultDeviceCompliancePolicy](../api/intune-deviceconfig-defaultdevicecompliancepolicy-create.md)|[defaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md)|Erstellen eines neuen [DefaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md) -Objekts.|
-|[DefaultDeviceCompliancePolicy löschen](../api/intune-deviceconfig-defaultdevicecompliancepolicy-delete.md)|Keines|Löscht eine [DefaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md).|
+|[DefaultDeviceCompliancePolicy löschen](../api/intune-deviceconfig-defaultdevicecompliancepolicy-delete.md)|Keine|Löscht eine [DefaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md).|
 |[DefaultDeviceCompliancePolicy aktualisieren](../api/intune-deviceconfig-defaultdevicecompliancepolicy-update.md)|[defaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md)|Aktualisieren Sie die Eigenschaften eines [DefaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

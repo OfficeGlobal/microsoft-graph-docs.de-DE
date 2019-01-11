@@ -2,12 +2,13 @@
 title: GetMobileAppCount-Funktion
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 35ff8211fee31938551cc8eb2fce72c79ce39bc9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ae67ba630ddd387d1c03cb599c99a7ed38717145
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358863"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891861"
 ---
 # <a name="getmobileappcount-function"></a>GetMobileAppCount-Funktion
 
@@ -37,8 +38,8 @@ GET /deviceAppManagement/mobileApps/getMobileAppCount
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie in der Anforderungs-URL die folgenden Abfrageparameter mit Werten an.
@@ -46,7 +47,7 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|status|String|Noch nicht dokumentiert|
+|status|Zeichenfolge|Noch nicht dokumentiert|
 
 
 

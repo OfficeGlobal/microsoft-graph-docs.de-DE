@@ -2,12 +2,13 @@
 title: managedMobileApp löschen
 description: Löscht ein managedMobileApp-Objekt.
 author: tfitzmac
-ms.openlocfilehash: ea2efb72282ad60e09e3f33370ea6edf0036961a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b678efab2333a759edaf620fe19193f589ca7e10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358947"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890440"
 ---
 # <a name="delete-managedmobileapp"></a>managedMobileApp löschen
 
@@ -40,8 +41,8 @@ DELETE /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedApp
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

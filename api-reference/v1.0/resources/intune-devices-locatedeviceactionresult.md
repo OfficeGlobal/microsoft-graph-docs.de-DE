@@ -2,12 +2,13 @@
 title: locateDeviceActionResult-Ressourcentyp
 description: Gerät suchen – Aktionsergebnis
 author: tfitzmac
-ms.openlocfilehash: a12919e273f8e84d177ec3982756cb20363ffffe
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f6a4db661c706f62f170ae0a869d491d26d602eb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306314"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888193"
 ---
 # <a name="locatedeviceactionresult-resource-type"></a>locateDeviceActionResult-Ressourcentyp
 

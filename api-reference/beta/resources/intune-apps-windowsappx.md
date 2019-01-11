@@ -2,12 +2,13 @@
 title: Ressourcentyp windowsAppX
 description: Enthält Eigenschaften und geerbten Eigenschaften für Windows AppX Line Of Business apps.
 author: tfitzmac
-ms.openlocfilehash: 372c1c2827e3d873d0266715502a837dca27d76b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a39c93aaec3d27a75775a3760eedf9a85bcb8fd5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336029"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889341"
 ---
 # <a name="windowsappx-resource-type"></a>Ressourcentyp windowsAppX
 
@@ -25,7 +26,7 @@ Erbt von [mobileLobApp](../resources/intune-apps-mobilelobapp.md).
 |[Liste windowsAppXs](../api/intune-apps-windowsappx-list.md)|[WindowsAppX](../resources/intune-apps-windowsappx.md) -Auflistung|Listeneigenschaften und Beziehungen der [WindowsAppX](../resources/intune-apps-windowsappx.md) -Objekte.|
 |[Abrufen von windowsAppX](../api/intune-apps-windowsappx-get.md)|[windowsAppX](../resources/intune-apps-windowsappx.md)|Lesen Sie Eigenschaften und Beziehungen des [WindowsAppX](../resources/intune-apps-windowsappx.md) -Objekts.|
 |[Erstellen von windowsAppX](../api/intune-apps-windowsappx-create.md)|[windowsAppX](../resources/intune-apps-windowsappx.md)|Erstellen eines neuen [WindowsAppX](../resources/intune-apps-windowsappx.md) -Objekts.|
-|[WindowsAppX löschen](../api/intune-apps-windowsappx-delete.md)|Keines|Löscht eine [WindowsAppX](../resources/intune-apps-windowsappx.md).|
+|[WindowsAppX löschen](../api/intune-apps-windowsappx-delete.md)|Keine|Löscht eine [WindowsAppX](../resources/intune-apps-windowsappx.md).|
 |[WindowsAppX aktualisieren](../api/intune-apps-windowsappx-update.md)|[windowsAppX](../resources/intune-apps-windowsappx.md)|Aktualisieren Sie die Eigenschaften eines [WindowsAppX](../resources/intune-apps-windowsappx.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
@@ -38,7 +39,7 @@ Erbt von [mobileLobApp](../resources/intune-apps-mobilelobapp.md).
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Das große Symbol, das in den App-Details angezeigt und für den Upload des Symbols verwendet werden soll. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|isFeatured|Boolescher Wert|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|isFeatured|Boolean|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |privacyInformationUrl|String|URL zur Datenschutzerklärung. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |informationUrl|String|URL zur Seite mit weiteren Informationen. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|String|Der Besitzer der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -53,7 +54,7 @@ Erbt von [mobileLobApp](../resources/intune-apps-mobilelobapp.md).
 |identityName|String|Identitätsname|
 |identityPublisherHash|String|Der Hash des Identitätsherausgebers.|
 |identityResourceIdentifier|String|Der Identitätsressourcenbezeichner.|
-|isBundle|Boolescher Wert|Gibt an, ob die App ein Bundle ist.|
+|isBundle|Boolean|Gibt an, ob die App ein Bundle ist.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Der Wert für die Mindestversion des verwendbaren Betriebssystems.|
 |identityVersion|String|Die Version der Identität|
 

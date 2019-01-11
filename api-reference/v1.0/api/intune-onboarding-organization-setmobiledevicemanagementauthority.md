@@ -2,12 +2,13 @@
 title: setMobileDeviceManagementAuthority-Aktion
 description: Autorität für die Verwaltung mobiler Geräte festlegen
 author: tfitzmac
-ms.openlocfilehash: 4292820d5a1844c9bb4dada571514932a29a77eb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8b488b500ac203dfed0582eadc738c15ecf41950
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318658"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889796"
 ---
 # <a name="setmobiledevicemanagementauthority-action"></a>setMobileDeviceManagementAuthority-Aktion
 
@@ -35,8 +36,8 @@ POST /organization/{organizationId}/setMobileDeviceManagementAuthority
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

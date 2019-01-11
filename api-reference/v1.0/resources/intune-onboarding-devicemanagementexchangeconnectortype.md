@@ -2,12 +2,13 @@
 title: DeviceManagementExchangeConnectorType Enum-Typ
 description: Der Typ des Exchange-Connectors.
 author: tfitzmac
-ms.openlocfilehash: 333a5a7c6f73fead263edbdf3edafeefc3514ed1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 07449df53aa65036ae55e63c514c1687fbbab86a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306734"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888515"
 ---
 # <a name="devicemanagementexchangeconnectortype-enum-type"></a>DeviceManagementExchangeConnectorType Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27306734"
 
 Der Typ des Exchange-Connectors.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |"lokal"|0|Stellt eine Verbindung zum lokalen Exchange-Umgebung.|
 |gehostet|1|Stellt eine Verbindung mit Office 365 mit mehreren Mandanten Exchange-Umgebung|

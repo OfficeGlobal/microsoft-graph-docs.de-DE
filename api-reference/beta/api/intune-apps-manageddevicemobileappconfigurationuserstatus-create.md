@@ -2,12 +2,13 @@
 title: Erstellen von „managedDeviceMobileAppConfigurationUserStatus“
 description: Diese Methode erstellt ein neues Objekt des Typs managedDeviceMobileAppConfigurationUserStatus.
 author: tfitzmac
-ms.openlocfilehash: 9fdd6a55f0a82de852e44e7ffdc0720830659c3b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 31ba14dc9ceffebd0d30522e0dd9adba16990377
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345773"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892449"
 ---
 # <a name="create-manageddevicemobileappconfigurationuserstatus"></a>Erstellen von „managedDeviceMobileAppConfigurationUserStatus“
 
@@ -38,8 +39,8 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „managedDeviceMobileAppConfigurationUserStatus“ an.

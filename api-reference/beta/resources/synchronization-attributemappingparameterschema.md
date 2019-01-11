@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp attributeMappingParameterSchema
 description: Beschreibt einen einzelnen Parameter in einer AttributeMappingFunctionSchema verwendet.
-ms.openlocfilehash: 164387a345f245f390d24b89a349e02ee2242041
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 083f89ebc5a74e6fd58a33925b2bfa46801b7961
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064838"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892169"
 ---
 # <a name="attributemappingparameterschema-resource-type"></a>Ressourcentyp attributeMappingParameterSchema
 
@@ -18,10 +19,10 @@ Beschreibt einen einzelnen Parameter in einer [AttributeMappingFunctionSchema](.
 
 | Eigenschaft                   | Typ                      | Beschreibung    |
 |:---------------------------|:-------------------------|:---------------|
-|allowMultipleOccurrences    |Boolesch                   |Der angegebene Parameter kann mehrere Male bereitgestellt werden (beispielsweise Eingabe mehrere Zeichenfolgen der `Concatenate(string,string,...)` Funktion). |
+|allowMultipleOccurrences    |Boolean                   |Der angegebene Parameter kann mehrere Male bereitgestellt werden (beispielsweise Eingabe mehrere Zeichenfolgen der `Concatenate(string,string,...)` Funktion). |
 |name                        |String                    |Name des Parameters. |
-|erforderlich                    |Boolesch                   |`true`Wenn der Parameter erforderlich ist. andernfalls `false`. |
-|Typ                        |Zeichenfolge                    |Mögliche Werte: `Boolean`, `Binary`, `Reference`, `Integer`, `String`. Der Standardwert lautet `String`.|
+|erforderlich                    |Boolean                   |`true`Wenn der Parameter erforderlich ist. andernfalls `false`. |
+|type                        |Zeichenfolge                    |Mögliche Werte: `Boolean`, `Binary`, `Reference`, `Integer`, `String`. Der Standardwert lautet `String`.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

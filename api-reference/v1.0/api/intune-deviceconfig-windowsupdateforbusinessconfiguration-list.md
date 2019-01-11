@@ -2,12 +2,13 @@
 title: Auflisten von „windowsUpdateForBusinessConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs windowsUpdateForBusinessConfiguration auf.
 author: tfitzmac
-ms.openlocfilehash: 071271816d1241e30d202e22c5ce9488c368c566
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4bcc2ffd2d39bd9b759578fd8786fc0675555e95
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325025"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889061"
 ---
 # <a name="list-windowsupdateforbusinessconfigurations"></a>Auflisten von „windowsUpdateForBusinessConfiguration“
 
@@ -35,8 +36,8 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

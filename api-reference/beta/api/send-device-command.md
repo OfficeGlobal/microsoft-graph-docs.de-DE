@@ -1,12 +1,13 @@
 ---
 title: Gerätebefehl senden
 description: 'Diese API ermöglicht die Project-ROM-Funktionen, die ein Gerät mit einem Microsoft-Konto verknüpften Befehl. Nach dem Gespräch GET auf macht `me/devices`, übergeben Sie die ID des Geräts einen Befehl auf Ihrem Gerät ausgeben. Zwei Arten von Befehle werden unterstützt: LaunchURI und AppServices. Wenn Sie LaunchURI verwenden, geben Sie den Parameter *Typ* und *Nutzlast* . Geben Sie für einen Anruf AppService die '
-ms.openlocfilehash: bf330ab1234ef6ce22c6a43711621827b628a7ac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 54349e2f43a776523614b0cd2abbc209e89305fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062085"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891987"
 ---
 # <a name="send-device-command"></a>Gerätebefehl senden
 
@@ -36,10 +37,10 @@ POST me/devices/{id}/commands
 ## <a name="request-headers"></a>Anforderungsheader
 
 
-| Kopfzeile |Wert
+| Header |Wert
 |:----|:------|
 |Authorization| Bearer {token}. Erforderlich. |
-|Accept | application/json |
+|Annehmen | application/json |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -81,13 +82,13 @@ HTTP/1.1 201 OK
 |:----|:------|:------|
 |payload | Microsoft.Graph.JSON| Nutzlast zum Senden an ein app-Dienst oder um einen URI auf einem Gerät zu starten. |
 |responsePayload | Microsoft.Graph.JSON| Nutzlast von Zielgerät zurückgegeben. |
-|postBackURI | String | Postback URI, um nachfolgende Benachrichtigungen von Updates zu senden. |
-|packageFamilyName | String | Windows Paket Familienname der Anwendung. |
-|appServiceName | String | Name des app-Dienst von der Zielanwendung definiert. Erforderlich, wenn einen app-Dienst zu starten. |
-|Typ| String | LaunchURI oder AppService. |
-|id| String | Die ID eines Befehls, der an das Gerät gesendet wurde. |
-|actionStatus | String | Der [Status](get-device-command-status.md) eines Befehls. |
-|error| String| Alle Fehler im Zusammenhang mit der Anforderung aus der Zielanwendung. |
+|postBackURI | Zeichenfolge | Postback URI, um nachfolgende Benachrichtigungen von Updates zu senden. |
+|packageFamilyName | Zeichenfolge | Windows Paket Familienname der Anwendung. |
+|appServiceName | Zeichenfolge | Name des app-Dienst von der Zielanwendung definiert. Erforderlich, wenn einen app-Dienst zu starten. |
+|type| Zeichenfolge | LaunchURI oder AppService. |
+|id| Zeichenfolge | Die ID eines Befehls, der an das Gerät gesendet wurde. |
+|actionStatus | Zeichenfolge | Der [Status](get-device-command-status.md) eines Befehls. |
+|error| Zeichenfolge| Alle Fehler im Zusammenhang mit der Anforderung aus der Zielanwendung. |
 
 ## <a name="launch-uri-example"></a>Starten Sie die URI-Beispiel
 

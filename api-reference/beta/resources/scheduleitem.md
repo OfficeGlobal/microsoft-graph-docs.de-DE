@@ -1,12 +1,13 @@
 ---
 title: von ScheduleItem Ressourcentyp
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: a7a31f47cde92549a72299b22a40b10c6f7845c6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e5d14826a27153af27648484554ec864d62ed6c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063538"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890433"
 ---
 # <a name="scheduleitem-resource-type"></a>von ScheduleItem Ressourcentyp
 
@@ -18,11 +19,11 @@ Ein Element, das beschreibt die Verfügbarkeit eines Benutzers auf ein Ereignis 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |Das Datum, Uhrzeit und Zeitzone, die das zugehörige Ereignis endet. |
-|isPrivate |Boolesch |Die Vertraulichkeit des entsprechenden Ereignisses. True, wenn das Ereignis markiert wird `private`false andernfalls. |
-|location |String | Der Speicherort, an dem entsprechenden Ereigniscode gehalten oder teilnahmen aus. Optional.|
+|isPrivate |Boolescher Wert |Die Vertraulichkeit des entsprechenden Ereignisses. True, wenn das Ereignis markiert wird `private`false andernfalls. |
+|location |Zeichenfolge | Der Speicherort, an dem entsprechenden Ereigniscode gehalten oder teilnahmen aus. Optional.|
 |start |[dateTimeTimeZone](datetimetimezone.md) |Das Datum, Uhrzeit und Zeitzone, die das zugehörige Ereignis beginnt. |
-|status |String | Der Verfügbarkeitsstatus des Benutzers oder der Ressource während des entsprechenden Ereignisses. Die möglichen Werte sind: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
-|Betreff |String | Die Betreffzeile das entsprechende Ereignis. Optional.|
+|status |Zeichenfolge | Der Verfügbarkeitsstatus des Benutzers oder der Ressource während des entsprechenden Ereignisses. Die möglichen Werte sind: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
+|Betreff |Zeichenfolge | Die Betreffzeile das entsprechende Ereignis. Optional.|
 
 
 ## <a name="json-representation"></a>JSON-Darstellung

@@ -1,12 +1,13 @@
 ---
 title: " Ressourcentyp controlScore"
 description: Diese Ressource enthält einen Mandanten Score und eine Beschreibung für ein einzelnes Steuerelement.
-ms.openlocfilehash: 67059c1a7382416411709f02c609c90b20a673b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d8c2d73205f00a9dd5f2f28fcee3c33778bb3276
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059474"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891469"
 ---
 #  <a name="controlscore-resource-type"></a>Ressourcentyp controlScore
 
@@ -14,10 +15,10 @@ Diese Ressource enthält einen Mandanten Score und eine Beschreibung für ein ei
 
 |Name |Typ |Beschreibung |
 |:--|:--|:--|
-|   Steuerelementname |   String  |   Eindeutiger Name des Steuerelements |
+|   Steuerelementname |   Zeichenfolge  |   Eindeutiger Name des Steuerelements |
 |   score   |   Gleitkommawert mit doppelter Genauigkeit  |  Mandanten erreicht Score für das Steuerelement (Dies hängt Tag je nach Mandant Vorgänge auf das Steuerelement). |
-|   controlCategory |   String  |  Steuerelement-Aktionskategorie (Identität, Daten, Gerät, Apps, Infrastruktur). |
-|   description |   String  |  Beschreibung des Steuerelements. |
+|   controlCategory |   Zeichenfolge  |  Steuerelement-Aktionskategorie (Identität, Daten, Gerät, Apps, Infrastruktur). |
+|   description |   Zeichenfolge  |  Beschreibung des Steuerelements. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

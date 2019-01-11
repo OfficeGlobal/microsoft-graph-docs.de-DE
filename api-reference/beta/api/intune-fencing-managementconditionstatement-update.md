@@ -2,12 +2,13 @@
 title: ManagementConditionStatement aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines ManagementConditionStatement-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 56de75540fa774f32fab7b6edf2795f3ac0d5351
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 33bee3fe6e386d9d426eb0763ccb608cbc6242e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333446"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829449"
 ---
 # <a name="update-managementconditionstatement"></a>ManagementConditionStatement aktualisieren
 
@@ -38,8 +39,8 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [ManagementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) eine JSON-Darstellung.
@@ -48,13 +49,13 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für die Verwaltung Condition-Anweisung. System generierten Wert, die beim Erstellen zugewiesen.|
-|displayName|String|Der Administrator definierter Name der Bedingung-Anweisung Management.|
-|description|String|Der Administrator definiert die Beschreibung der Management Condition-Anweisung.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für die Verwaltung Condition-Anweisung. System generierten Wert, die beim Erstellen zugewiesen.|
+|displayName|Zeichenfolge|Der Administrator definierter Name der Bedingung-Anweisung Management.|
+|description|Zeichenfolge|Der Administrator definiert die Beschreibung der Management Condition-Anweisung.|
 |createdDateTime|DateTimeOffset|Der Zeitpunkt, an die Management Condition-Anweisung erstellt wurde. Generierte Service-Seite.|
 |modifiedDateTime|DateTimeOffset|Der Zeitpunkt der letzten Änderung die Management Condition-Anweisung. Aktualisierte Service-Seite.|
 |Ausdruck|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|Die Verwaltung Bedingungsausdruck-Anweisung verwendet, um ausgewertet werden soll, wenn eine Management Anweisung Bedingung wurde aktiviert/deaktiviert.|
-|eTag|String|ETag der Management Condition-Anweisung. Aktualisierte Service-Seite.|
+|eTag|Zeichenfolge|ETag der Management Condition-Anweisung. Aktualisierte Service-Seite.|
 |applicablePlatforms|[DevicePlatformType](../resources/intune-shared-deviceplatformtype.md) -Auflistung|Die entsprechenden Plattformen für diese Management Condition-Anweisung.
 Dieser Wert ergibt Suche die Management Bedingungen verknüpft ist, für die Verwaltung von Bedingung-Anweisung die Warteschlange gestellt und Schnittpunkt der Plattformen. Mögliche Werte sind: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater` und `androidWorkProfile`.|
 

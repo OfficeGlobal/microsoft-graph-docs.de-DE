@@ -1,12 +1,13 @@
 ---
 title: extensionSchemaProperty-Ressourcentyp
 description: Verwenden Sie die **extensionSchemaProperty**-Ressource, um den Namen und den Typ einer Eigenschaft im Rahmen einer schemaExtension-Definition zu definieren.
-ms.openlocfilehash: f699ccebefc849a7bf9cacc6dbda61cbcbb9896d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 44769bab4a4f4b40a80d896bed2311554ea5e8ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059760"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889859"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>extensionSchemaProperty-Ressourcentyp
 
@@ -18,8 +19,8 @@ Verwenden Sie die **extensionSchemaProperty**-Ressource, um den Namen und den Ty
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|name|String| Der Name der stark typisierten-Eigenschaft als Teil einer schemaerweiterung definiert.|
-|Typ|String| Der Typ der Eigenschaft, die im Rahmen der Schemaerweiterung definiert wird.  Zulässige Werte sind *Binary, Boolean, DateTime, Integer* oder *String*.  Weitere Einzelheiten finden Sie in der Tabelle unten.|
+|name|Zeichenfolge| Der Name der stark typisierten-Eigenschaft als Teil einer schemaerweiterung definiert.|
+|type|String| Der Typ der Eigenschaft, die im Rahmen der Schemaerweiterung definiert wird.  Zulässige Werte sind *Binary, Boolean, DateTime, Integer* oder *String*.  Weitere Einzelheiten finden Sie in der Tabelle unten.|
 
 #### <a name="supported-property-data-types"></a>Unterstützte Datentypen für Eigenschaften 
 Die folgenden Datentypen werden beim Definieren einer Eigenschaft in einer Schemaerweiterung unterstützt:
@@ -30,7 +31,7 @@ Die folgenden Datentypen werden beim Definieren einer Eigenschaft in einer Schem
 | Boolescher Wert | Nicht unterstützt für Nachrichten, Ereignisse und Beiträge. |
 | DateTime | Muss im ISO 8601-Format angegeben werden. Wird in UTC gespeichert. |
 | Ganze Zahl | 32-Bit-Wert. Nicht unterstützt für Nachrichten, Ereignisse und Beiträge. |
-| String | Maximal 256 Zeichen. |
+| Zeichenfolge | Maximal 256 Zeichen. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

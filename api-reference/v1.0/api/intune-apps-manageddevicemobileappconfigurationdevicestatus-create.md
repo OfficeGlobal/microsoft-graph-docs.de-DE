@@ -2,12 +2,13 @@
 title: Erstellen von managedDeviceMobileAppConfigurationDeviceStatus
 description: Erstellen eines neuen ManagedDeviceMobileAppConfigurationDeviceStatus-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 8a9b709104119622b2555c2a05548789de134363
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2871583d7fb68ec0004b2a97390b085416ed4495
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318036"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828868"
 ---
 # <a name="create-manageddevicemobileappconfigurationdevicestatus"></a>Erstellen von managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -35,8 +36,8 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt ManagedDeviceMobileAppConfigurationDeviceStatus eine JSON-Darstellung.
@@ -45,14 +46,14 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|deviceDisplayName|String|Gerätename, der dem Objekt des Typs „DevicePolicyStatus“ zugeordnet ist|
-|userName|String|Gemeldeter Benutzername|
-|deviceModel|String|Gemeldetes Gerätemodell|
+|id|Zeichenfolge|Schlüssel der Entität|
+|deviceDisplayName|Zeichenfolge|Gerätename, der dem Objekt des Typs „DevicePolicyStatus“ zugeordnet ist|
+|userName|Zeichenfolge|Gemeldeter Benutzername|
+|deviceModel|Zeichenfolge|Gemeldetes Gerätemodell|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Toleranzperiode für die Gerätekonformität|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Konformitätsstatus des Richtlinienberichts. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Richtlinienberichts|
-|userPrincipalName|String|Benutzerprinzipalname|
+|userPrincipalName|Zeichenfolge|Benutzerprinzipalname|
 
 
 

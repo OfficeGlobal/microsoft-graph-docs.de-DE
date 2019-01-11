@@ -2,12 +2,13 @@
 title: deviceAndAppManagementRoleAssignment löschen
 description: Löscht ein deviceAndAppManagementRoleAssignment-Objekt.
 author: tfitzmac
-ms.openlocfilehash: 2e148b579cf3f10df9d3a682c89b94fbb806e4a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 48bd2956240af99a2b73bb8811f55aff75bc9221
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329332"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891364"
 ---
 # <a name="delete-deviceandappmanagementroleassignment"></a>deviceAndAppManagementRoleAssignment löschen
 
@@ -37,8 +38,8 @@ DELETE /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

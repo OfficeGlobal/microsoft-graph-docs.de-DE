@@ -2,12 +2,13 @@
 title: Abrufen von „softwareUpdateStatusSummary“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs softwareUpdateStatusSummary.
 author: tfitzmac
-ms.openlocfilehash: 4f490db4042c03233f2613e44b6a6f90460f9345
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3c03096e64b75df89f131a01344e1adb6a1bee44
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354026"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890272"
 ---
 # <a name="get-softwareupdatestatussummary"></a>Abrufen von „softwareUpdateStatusSummary“
 
@@ -37,8 +38,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

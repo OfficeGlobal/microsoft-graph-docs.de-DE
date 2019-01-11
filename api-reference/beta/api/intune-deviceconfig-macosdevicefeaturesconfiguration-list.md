@@ -2,12 +2,13 @@
 title: Auflisten von „macOSDeviceFeaturesConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs macOSDeviceFeaturesConfiguration auf.
 author: tfitzmac
-ms.openlocfilehash: 8ac4c7ad035f973ebd0ad4a5c3d17a51a8f75f5c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d30d6b460c3cdc55677dba85737917e4bec697a3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325515"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891091"
 ---
 # <a name="list-macosdevicefeaturesconfigurations"></a>Auflisten von „macOSDeviceFeaturesConfiguration“
 
@@ -38,8 +39,8 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

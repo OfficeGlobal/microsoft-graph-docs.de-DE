@@ -1,12 +1,13 @@
 ---
 title: sectionGroups auflisten
 description: Mit dieser API können Sie eine Liste von Abschnittsgruppen aus der angegebenen Abschnittsgruppe abrufen.
-ms.openlocfilehash: 11bdb6704a19fef2e704c8b7037ff1a5e33b36ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a1389a805d87c549579d00da2e7b3c9b736046ce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018234"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888354"
 ---
 # <a name="list-sectiongroups"></a>sectionGroups auflisten
 
@@ -39,7 +40,7 @@ Die Standardabfrage erweitert `parentNotebook` und wählt die zugehörigen Eigen
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
-| Accept | string | `application/json` |
+| Annehmen | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

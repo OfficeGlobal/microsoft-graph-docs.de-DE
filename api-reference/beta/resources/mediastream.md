@@ -2,12 +2,13 @@
 title: Ressourcentyp mediaStream
 description: Der Typ des MediaStream.
 author: VinodRavichandran
-ms.openlocfilehash: f870611700289f0254272b78e18e344d02dd123e
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 7e56448c2c6d284e7a5904f1b0af414166782907
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380296"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889614"
 ---
 # <a name="mediastream-resource-type"></a>Ressourcentyp mediaStream
 

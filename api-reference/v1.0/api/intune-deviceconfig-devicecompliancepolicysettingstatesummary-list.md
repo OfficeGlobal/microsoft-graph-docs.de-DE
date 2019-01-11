@@ -2,12 +2,13 @@
 title: Auflisten von „deviceCompliancePolicySettingStateSummary“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs deviceCompliancePolicySettingStateSummary auf.
 author: tfitzmac
-ms.openlocfilehash: 1a93aaaf6c4c1373069e0cf0459bb39e0e1fc069
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3125a764386890a718037387ab37508bef7f224c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337261"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888298"
 ---
 # <a name="list-devicecompliancepolicysettingstatesummaries"></a>Auflisten von „deviceCompliancePolicySettingStateSummary“
 
@@ -33,10 +34,10 @@ GET /deviceManagement/deviceCompliancePolicySettingStateSummaries
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: LostModeState Enum-Typ
 description: Status der verlorenen-Modus, der angibt, ob verloren Modus aktiviert oder deaktiviert ist
-ms.openlocfilehash: 5e106a8d93381bcda24451ed5d8f1db1bfeeb115
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 667d4f088dafaec5ba040f592a478a30ee51c298
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064431"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890265"
 ---
 # <a name="lostmodestate-enum-type"></a>LostModeState Enum-Typ
 

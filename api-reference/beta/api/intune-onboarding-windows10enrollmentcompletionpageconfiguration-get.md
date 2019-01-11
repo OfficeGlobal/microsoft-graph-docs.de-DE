@@ -2,12 +2,13 @@
 title: Abrufen von windows10EnrollmentCompletionPageConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des windows10EnrollmentCompletionPageConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: a24f5ae9ff86e6aa7e827d5bd6c63f4d667f03ca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bfe21ca19b86ec960c647e6052badb975ec43874
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351743"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890517"
 ---
 # <a name="get-windows10enrollmentcompletionpageconfiguration"></a>Abrufen von windows10EnrollmentCompletionPageConfiguration
 
@@ -39,8 +40,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

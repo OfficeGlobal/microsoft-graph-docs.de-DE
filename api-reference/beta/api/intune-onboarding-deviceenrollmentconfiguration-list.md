@@ -2,12 +2,13 @@
 title: Auflisten von „deviceEnrollmentConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs deviceEnrollmentConfiguration auf.
 author: tfitzmac
-ms.openlocfilehash: da1be6eb416e50654716fcd61a26443908ebc450
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 440f993e235789447dc200a4ce4851610a6798d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351835"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891931"
 ---
 # <a name="list-deviceenrollmentconfigurations"></a>Auflisten von „deviceEnrollmentConfiguration“
 
@@ -37,8 +38,8 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

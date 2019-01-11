@@ -1,12 +1,13 @@
 ---
 title: Web-Ressourcentyp
 description: Gibt die Einstellungen für eine Webanwendung.
-ms.openlocfilehash: c040de0c323e57f20e04dcf662ea088b1018c144
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 26efe59eda739597e7193fa1ff79443f3d64b5a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064069"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890202"
 ---
 # <a name="web-resource-type"></a>Web-Ressourcentyp
 
@@ -19,8 +20,8 @@ Gibt die Einstellungen für eine Webanwendung.
 | Eigenschaft | Typ | Beschreibung |
 |:---------|:-----|:------------|
 |implicitGrantSettings|[implicitGrantSettings](implicitgrantsettings.md)| Gibt an, ob dieser Webanwendung mithilfe des impliziten OAuth 2.0-Fluss Token angefordert werden kann.|
-|logoutUrl|String| Gibt die URL, die von Microsoft Autorisierungsdienst Abmelden ein Benutzer mit der [Vorderseite-Kanal](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [Back-Kanal](https://openid.net/specs/openid-connect-backchannel-1_0.html) oder SAML Abmeldung Protokolle verwendet werden soll. |
-|oauth2AllowImplicitFlow|Boolesch| Veraltet. Nicht verwenden. | 
+|logoutUrl|Zeichenfolge| Gibt die URL, die von Microsoft Autorisierungsdienst Abmelden ein Benutzer mit der [Vorderseite-Kanal](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [Back-Kanal](https://openid.net/specs/openid-connect-backchannel-1_0.html) oder SAML Abmeldung Protokolle verwendet werden soll. |
+|oauth2AllowImplicitFlow|Boolescher Wert| Veraltet. Nicht verwenden. | 
 |redirectUris|Collection von Objekten des Typs „String“| Gibt die URLs der Benutzertoken für die Anmeldung an gesendet werden, oder die Umleitung, URIs, dass OAuth 2.0 Autorisierungscodes und Zugriffstoken gesendet werden. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
