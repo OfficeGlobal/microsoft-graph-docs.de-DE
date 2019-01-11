@@ -2,12 +2,13 @@
 title: Ressourcentyp teamMessagingSettings
 description: So konfigurieren Sie die messaging-Einstellungen und erwähnungen im Team.
 author: nkramer
-ms.openlocfilehash: 94a102e6d0937651c990e61f4895c715b3c4bd95
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 06aca84355a07052dcea316145dfff437eee743b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344247"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848258"
 ---
 # <a name="teammessagingsettings-resource-type"></a>Ressourcentyp teamMessagingSettings
 
@@ -18,11 +19,11 @@ So konfigurieren Sie die messaging-Einstellungen und erwähnungen im [Team](team
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|allowUserEditMessages|Boolesch|Wenn es sich bei Festlegung auf true können Benutzer ihre Nachrichten bearbeiten kann.|
-|allowUserDeleteMessages|Boolesch|Bei Festlegung auf true können Benutzer ihre Nachrichten löschen kann.|
-|allowOwnerDeleteMessages|Boolesch|Bei Festlegung auf "true" Websitebesitzer eine beliebige Nachricht löschen kann.|
-|allowTeamMentions|Boolesch|Wenn Festlegung auf "true", "@team erwähnungen sind zulässig.|
-|allowChannelMentions|Boolesch|Wenn Festlegung auf "true", "@channel erwähnungen sind zulässig.|
+|allowUserEditMessages|Boolean|Wenn es sich bei Festlegung auf true können Benutzer ihre Nachrichten bearbeiten kann.|
+|allowUserDeleteMessages|Boolean|Bei Festlegung auf true können Benutzer ihre Nachrichten löschen kann.|
+|allowOwnerDeleteMessages|Boolean|Bei Festlegung auf "true" Websitebesitzer eine beliebige Nachricht löschen kann.|
+|allowTeamMentions|Boolean|Wenn Festlegung auf "true", "@team erwähnungen sind zulässig.|
+|allowChannelMentions|Boolean|Wenn Festlegung auf "true", "@channel erwähnungen sind zulässig.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

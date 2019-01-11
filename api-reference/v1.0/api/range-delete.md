@@ -2,12 +2,13 @@
 title: 'Range: delete'
 description: Löscht die einem Bereich zugeordneten Zellen.
 author: lumine2008
-ms.openlocfilehash: 8abcc24161aef5dbb8fa40e028b21b9e54c0ff39
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c08b570ff6dcd0694b2dc1fb9031149cc5ed7402
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335616"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846641"
 ---
 # <a name="range-delete"></a>Range: delete
 

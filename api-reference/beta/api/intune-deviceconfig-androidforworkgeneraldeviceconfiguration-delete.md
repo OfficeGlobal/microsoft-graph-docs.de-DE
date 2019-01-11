@@ -2,12 +2,13 @@
 title: AndroidForWorkGeneralDeviceConfiguration löschen
 description: Löscht eine AndroidForWorkGeneralDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 1bfc9ce5d29bc2b6324df633c595fff43f183f0d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: acd09f6a3c80d66698bd23fc752e39fd5ea7f473
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327293"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853214"
 ---
 # <a name="delete-androidforworkgeneraldeviceconfiguration"></a>AndroidForWorkGeneralDeviceConfiguration löschen
 
@@ -37,10 +38,10 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

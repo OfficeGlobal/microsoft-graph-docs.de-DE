@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActivityStat
-ms.openlocfilehash: 067cf88773b5f5d69b2b3538a2ddeab6741631a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d0917d0100d33abee1095e2a7d06a4732d382937
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058467"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854250"
 ---
 # <a name="itemactivitystat-resource-type"></a>Ressourcentyp itemActivityStat
 
@@ -45,14 +46,14 @@ Die Ressource **ItemActivityStat** enthält Informationen zu Aktivitäten, die i
 | Eigenschaft         | Typ                    | Beschreibung
 |:-----------------|:------------------------|:----------------------------------------
 | incompleteData   | [incompleteData][]      | Gibt an, dass die Statistiken in diesem Zeitraum auf unvollständiger Daten basieren. Schreibgeschützt.
-| isTrending       | Boolesch                 | Gibt an, ob das Element "Trend." Schreibgeschützt.
+| isTrending       | Boolean                 | Gibt an, ob das Element "Trend." Schreibgeschützt.
 | startDateTime    | DateTimeOffset          | Wenn das Intervall gestartet wird. Schreibgeschützt.
 | endDateTime      | DateTimeOffset          | Wenn das Intervall endet. Schreibgeschützt.
 | create           | [itemActionStat][]      | Statistiken zum **Erstellen von** Aktionen in diesem Zeitraum. Schreibgeschützt.
 | Bearbeiten             | [itemActionStat][]      | Statistiken zum **Bearbeiten von** Aktionen in diesem Zeitraum. Schreibgeschützt.
 | Löschen           | [itemActionStat][]      | Statistiken zu **Löschaktionen in diesem Zeitraum** . Schreibgeschützt.
 | verschieben             | [itemActionStat][]      | Statistiken zu **Verschieben** Aktionen in diesem Zeitraum. Schreibgeschützt.
-| Zugriff           | [itemActionStat][]      | Statistiken zu **Access** -Aktionen in diesem Zeitraum. Schreibgeschützt.
+| access           | [itemActionStat][]      | Statistiken zu **Access** -Aktionen in diesem Zeitraum. Schreibgeschützt.
 
 [itemActionStat]: itemactionstat.md
 [incompleteData]: incompletedata.md
@@ -65,7 +66,7 @@ Die Ressource **ItemActivityStat** enthält Informationen zu Aktivitäten, die i
 
 [itemActivity]: itemactivity.md
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 <!-- {
   "type": "#page.annotation",

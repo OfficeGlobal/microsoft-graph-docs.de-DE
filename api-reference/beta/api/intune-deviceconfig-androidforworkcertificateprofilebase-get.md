@@ -2,12 +2,13 @@
 title: Abrufen von androidForWorkCertificateProfileBase
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidForWorkCertificateProfileBase-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 68a74d14de0465c9bd62b20482523b30df1cc458
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da5ada5ba731d0e910757f59a404195007a59db7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315141"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848755"
 ---
 # <a name="get-androidforworkcertificateprofilebase"></a>Abrufen von androidForWorkCertificateProfileBase
 
@@ -40,10 +41,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

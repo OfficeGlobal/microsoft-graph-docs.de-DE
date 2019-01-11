@@ -2,12 +2,13 @@
 title: Anlage hinzufügen
 description: Verwenden Sie diese API, um eine Anlage auf einen Beitrag hinzuzufügen. Seit dort
 author: dkershaw10
-ms.openlocfilehash: 15db2de825bf8f0b8fdc68094672f4f4fc7a9ae5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cca12c8d8ed3658e0087327dda87443de63a1982
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346487"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845794"
 ---
 # <a name="add-attachment"></a>Anlage hinzufügen
 
@@ -37,7 +38,7 @@ POST /groups/{id}/threads/{id}/posts/{id}/attachments
 POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

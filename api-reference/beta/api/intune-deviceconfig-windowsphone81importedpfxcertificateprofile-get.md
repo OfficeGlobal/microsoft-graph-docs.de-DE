@@ -2,12 +2,13 @@
 title: Abrufen von windowsPhone81ImportedPFXCertificateProfile
 description: Lesen Sie Eigenschaften und Beziehungen des windowsPhone81ImportedPFXCertificateProfile-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 7395d699f8d9b28f1a87997a5272d46d7fdca1e4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c7d0a452423800f6b6f0fddddbfec39fa49149ac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352024"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847215"
 ---
 # <a name="get-windowsphone81importedpfxcertificateprofile"></a>Abrufen von windowsPhone81ImportedPFXCertificateProfile
 
@@ -39,10 +40,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: Erstellen von „deviceCompliancePolicyAssignment“
 description: Diese Methode erstellt ein neues Objekt des Typs deviceCompliancePolicyAssignment.
 author: tfitzmac
-ms.openlocfilehash: ee54fecbbddb4fc02b6a6c7b39d8cdc3633d59ce
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3c181e7362528fe0231e2e744f59ac82d7ee333e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325417"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847957"
 ---
 # <a name="create-devicecompliancepolicyassignment"></a>Erstellen von „deviceCompliancePolicyAssignment“
 
@@ -35,10 +36,10 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assig
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „deviceCompliancePolicyAssignment“ an.

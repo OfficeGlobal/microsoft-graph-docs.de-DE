@@ -1,12 +1,13 @@
 ---
 title: 'EducationAssignment: Veröffentlichen'
 description: Diese Aktion, die den Status einer Zuordnung aus der ursprünglichen Entwurfsstatus in der veröffentlichten Status geändert wird. Nur in der Klasse Lehrer kann diese aufrufen. Eine Zuordnung im Status "Entwurf" ist, Studenten die Zuordnung werden nicht angezeigt, noch werden die Übermittlung Objekte vorhanden sein. Wenn Sie diese API aufrufen, Übermittlung Objekte erstellt werden, und die Zuordnung in der Student-Liste angezeigt wird.
-ms.openlocfilehash: d5de5a45d437662dbcd2bf869aef93502a3669f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 09261da506113f53c6b6b9ff98af69c7dba4c784
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058995"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854740"
 ---
 # <a name="educationassignment-publish"></a>EducationAssignment: Veröffentlichen
 

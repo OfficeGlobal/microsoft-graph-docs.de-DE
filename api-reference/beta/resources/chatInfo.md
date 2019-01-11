@@ -2,12 +2,13 @@
 title: Ressourcentyp chatInfo
 description: Informationen zu einer Nachricht in Microsoft-Teams.
 author: VinodRavichandran
-ms.openlocfilehash: 45af1a7e178286c77ed4bf90528eb602fd48a6bb
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: c2cc0dd288abdab7852017600c4c55b9a40b0aa7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380415"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852941"
 ---
 # <a name="chatinfo-resource-type"></a>Ressourcentyp chatInfo
 
@@ -19,9 +20,9 @@ Informationen zu einer Nachricht in Microsoft-Teams.
 
 | Eigenschaft            | Typ    | Beschreibung|
 |:--------------------|:--------|:-----------|
-| messageId           | Zeichenfolge  | Der eindeutige Bezeichner für eine Nachricht in einem Microsoft-Teams Kanal. |
-| replyChainMessageId | Zeichenfolge  | Die ID der Antwort-Nachricht. |
-| threadId            | Zeichenfolge  | Der eindeutige Bezeichner für ein Thread im Microsoft-Teams. |
+| messageId           | String  | Der eindeutige Bezeichner für eine Nachricht in einem Microsoft-Teams Kanal. |
+| replyChainMessageId | String  | Die ID der Antwort-Nachricht. |
+| threadId            | String  | Der eindeutige Bezeichner für ein Thread im Microsoft-Teams. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

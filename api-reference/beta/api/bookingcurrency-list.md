@@ -1,12 +1,13 @@
 ---
 title: Liste bookingCurrencies
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: 146fc1197a8ef206e78304d81c30878a67eeafad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 809ee9222f8ae997633becbe13f87539dd816b1f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058093"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849217"
 ---
 # <a name="list-bookingcurrencies"></a>Liste bookingCurrencies
 

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp filterOperatorSchema
 description: Beschreibt einen Operator, der in einem Filter verwendet werden kann.
-ms.openlocfilehash: 1a4e21aea2b65073a00c9797065f6788a66e2334
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0d26fb58b77369b70ab185fa8ad5214d6b6c1e71
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059369"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848279"
 ---
 # <a name="filteroperatorschema-resource-type"></a>Ressourcentyp filterOperatorSchema
 

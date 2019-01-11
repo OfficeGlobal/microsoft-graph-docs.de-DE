@@ -2,12 +2,13 @@
 title: ChartFill-Ressourcentyp
 description: Die Füllung für ein Diagrammelement.
 author: lumine2008
-ms.openlocfilehash: 089d8056aa73bd834957c8fce0a6dc0b68491407
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8d3fcd707cfedb8b5c122bca1cab6dc52351e2e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325781"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845178"
 ---
 # <a name="chartfill-resource-type"></a>ChartFill-Ressourcentyp
 
@@ -20,7 +21,7 @@ Die Füllung für ein Diagrammelement.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Löschen](../api/chartfill-clear.md)|Keine|Entfernen der Füllfarbe eines Diagrammelements|
+|[Clear](../api/chartfill-clear.md)|Keine|Entfernen der Füllfarbe eines Diagrammelements|
 |[Setsolidcolor](../api/chartfill-setsolidcolor.md)|Keine|Legt die Füllung eines Diagrammelements auf einfarbige Füllung fest.|
 
 ## <a name="properties"></a>Eigenschaften

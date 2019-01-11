@@ -2,12 +2,13 @@
 title: UpdatePriorities Aktion
 description: Aktualisieren Sie die Richtlinie Prioritäten.
 author: tfitzmac
-ms.openlocfilehash: d8c493200d5ed1c0e6eb2228a1e74337237e73e9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2aeffb76268266f239413437369cefddadb72cab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302590"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853158"
 ---
 # <a name="updatepriorities-action"></a>UpdatePriorities Aktion
 
@@ -35,10 +36,10 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.

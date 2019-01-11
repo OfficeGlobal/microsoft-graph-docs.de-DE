@@ -2,12 +2,13 @@
 title: Liste Gruppe Mitglied
 description: Rufen Sie Gruppen und administrative Einheiten, denen die Gruppe ein direktes Mitglied ist.
 author: dkershaw10
-ms.openlocfilehash: fa8977cd128fdb51296b31dac2ee959aea8c80b8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8a1badf9e52c9d0bc3319178f36d62d1327d3c63
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335931"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853333"
 ---
 # <a name="list-group-memberof"></a>Liste Gruppe Mitglied
 
@@ -39,7 +40,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters)
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

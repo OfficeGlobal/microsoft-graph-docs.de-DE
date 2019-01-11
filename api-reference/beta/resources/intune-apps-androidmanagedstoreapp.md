@@ -2,12 +2,13 @@
 title: Ressourcentyp androidManagedStoreApp
 description: Enthält Eigenschaften und geerbten Eigenschaften für Android verwaltete Store-Apps.
 author: tfitzmac
-ms.openlocfilehash: 156e765507f0b1eb4ab11bd919c7710cbc6535c8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6139264059c3c9443d5ee4f652ea7b01d7e31554
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301750"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845367"
 ---
 # <a name="androidmanagedstoreapp-resource-type"></a>Ressourcentyp androidManagedStoreApp
 
@@ -25,7 +26,7 @@ Sie erbt von [mobileApp](../resources/intune-apps-mobileapp.md).
 |[Liste androidManagedStoreApps](../api/intune-apps-androidmanagedstoreapp-list.md)|[AndroidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md) -Auflistung|Listeneigenschaften und Beziehungen der [AndroidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md) -Objekte.|
 |[Abrufen von androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-get.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|Lesen Sie Eigenschaften und Beziehungen des [AndroidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md) -Objekts.|
 |[Erstellen von androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-create.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|Erstellen eines neuen [AndroidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md) -Objekts.|
-|[AndroidManagedStoreApp löschen](../api/intune-apps-androidmanagedstoreapp-delete.md)|Keines|Löscht eine [AndroidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md).|
+|[AndroidManagedStoreApp löschen](../api/intune-apps-androidmanagedstoreapp-delete.md)|Keine|Löscht eine [AndroidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md).|
 |[AndroidManagedStoreApp aktualisieren](../api/intune-apps-androidmanagedstoreapp-update.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|Aktualisieren Sie die Eigenschaften eines [AndroidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
@@ -38,7 +39,7 @@ Sie erbt von [mobileApp](../resources/intune-apps-mobileapp.md).
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Das große Symbol, das in den App-Details angezeigt und für den Upload des Symbols verwendet werden soll. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|isFeatured|Boolescher Wert|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|isFeatured|Boolean|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |privacyInformationUrl|String|URL zur Datenschutzerklärung. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |informationUrl|String|URL zur Seite mit weiteren Informationen. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|String|Der Besitzer der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|

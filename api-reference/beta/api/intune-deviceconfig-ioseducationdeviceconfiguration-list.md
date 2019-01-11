@@ -2,12 +2,13 @@
 title: Liste iosEducationDeviceConfigurations
 description: Listeneigenschaften und Beziehungen der IosEducationDeviceConfiguration-Objekte.
 author: tfitzmac
-ms.openlocfilehash: 9801e7603e49343f58f94e4267b05d3d75c5d880
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a26fb7ed8db98a6659b6d1fb9a1686abb4165ca5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311060"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847873"
 ---
 # <a name="list-ioseducationdeviceconfigurations"></a>Liste iosEducationDeviceConfigurations
 
@@ -36,10 +37,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

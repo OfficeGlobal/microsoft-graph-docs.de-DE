@@ -2,12 +2,13 @@
 title: AppManagementLevel Enum-Typ
 description: Verwaltung von Ebenen für apps
 author: tfitzmac
-ms.openlocfilehash: e552055d7abd7f61c71243aa696acbbd263008e0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 760d745a6f449ac5f2458db50e40953ead783e83
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301337"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846998"
 ---
 # <a name="appmanagementlevel-enum-type"></a>AppManagementLevel Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27301337"
 
 Verwaltung von Ebenen für apps
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |ohne Angabe dieses Parameters|0|Unspecified|
 |nicht verwaltete|1|Nicht verwaltete|

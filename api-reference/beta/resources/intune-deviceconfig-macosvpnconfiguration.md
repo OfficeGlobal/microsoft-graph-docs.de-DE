@@ -2,12 +2,13 @@
 title: Ressourcentyp macOSVpnConfiguration
 description: Durch die Konfigurationen in dieses Profil bereitstellen, können Sie das Gerät Mac zur gewünschten Endpunkt für VPN-Verbindung anweisen. Durch Angeben von erwartet die Authentifizierungstypen-Methode und der Sicherheit durch VPN-Endpunkt, dass Sie die VPN-Verbindung nahtlos für Endbenutzer vornehmen können.
 author: tfitzmac
-ms.openlocfilehash: 94eccf6ee98acc4160797956518a80020baa36ad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2bc4ae56f7b355cec5edc27007ece27f2b3a7d9c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315442"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851632"
 ---
 # <a name="macosvpnconfiguration-resource-type"></a>Ressourcentyp macOSVpnConfiguration
 
@@ -25,7 +26,7 @@ Erbt vom [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfig
 |[Liste macOSVpnConfigurations](../api/intune-deviceconfig-macosvpnconfiguration-list.md)|[MacOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md) -Auflistung|Listeneigenschaften und Beziehungen der [MacOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md) -Objekte.|
 |[Abrufen von macOSVpnConfiguration](../api/intune-deviceconfig-macosvpnconfiguration-get.md)|[macOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md)|Lesen Sie Eigenschaften und Beziehungen des [MacOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md) -Objekts.|
 |[Erstellen von macOSVpnConfiguration](../api/intune-deviceconfig-macosvpnconfiguration-create.md)|[macOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md)|Erstellen eines neuen [MacOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md) -Objekts.|
-|[MacOSVpnConfiguration löschen](../api/intune-deviceconfig-macosvpnconfiguration-delete.md)|Keines|Löscht eine [MacOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md).|
+|[MacOSVpnConfiguration löschen](../api/intune-deviceconfig-macosvpnconfiguration-delete.md)|Keine|Löscht eine [MacOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md).|
 |[MacOSVpnConfiguration aktualisieren](../api/intune-deviceconfig-macosvpnconfiguration-update.md)|[macOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md)|Aktualisieren Sie die Eigenschaften eines [MacOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
@@ -34,7 +35,7 @@ Erbt vom [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfig
 |id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolesch|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -48,13 +49,13 @@ Erbt vom [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfig
 |Bezeichner|String|Bezeichner von VPN-Anbieter bereitgestellt, wenn Verbindungstyp auf benutzerdefinierte VPN festgelegt ist. Beispiel: Cisco AnyConnect verwendet eine Kennung des dem Formular com.cisco.anyconnect.applevpn.plugin Inherited aus [AppleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |customData|[KeyValue](../resources/intune-deviceconfig-keyvalue.md) -Auflistung|Benutzerdefinierte Daten beim Verbindungstyp auf benutzerdefinierte VPN festgelegt ist. Verwenden Sie dieses Feld, um von Intune, nicht jedoch in Ihre VPN-Lösung verfügbar unterstützten Funktionen zu aktivieren. Wenden Sie sich an Ihrer VPN-Hersteller, um Informationen zum Hinzufügen dieser Schlüssel/Wert-Paare. Diese Sammlung kann maximal 25 Elemente enthalten. Geerbt von [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |customKeyValueData|[keyValuePair](../resources/intune-shared-keyvaluepair.md)-Sammlung|Benutzerdefinierte Daten beim Verbindungstyp auf benutzerdefinierte VPN festgelegt ist. Verwenden Sie dieses Feld, um von Intune, nicht jedoch in Ihre VPN-Lösung verfügbar unterstützten Funktionen zu aktivieren. Wenden Sie sich an Ihrer VPN-Hersteller, um Informationen zum Hinzufügen dieser Schlüssel/Wert-Paare. Diese Sammlung kann maximal 25 Elemente enthalten. Geerbt von [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|enableSplitTunneling|Boolesch|Senden Sie alle Netzwerkdatenverkehr über VPN. Geerbt von [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|enableSplitTunneling|Boolean|Senden Sie alle Netzwerkdatenverkehr über VPN. Geerbt von [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentifizierungsmethode für diese VPN-Verbindung. Geerbt von [AppleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md). Mögliche Werte sind: `certificate` und `usernameAndPassword`.|
-|enablePerApp|Boolesch|Dies auf True festlegen, erstellt pro App VPN-Nutzlast, später Apps zugeordnet sein kann, die diese VPN-Verbindung auf iOS-Gerät des Endbenutzers auslösen kann. Geerbt von [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|enablePerApp|Boolean|Dies auf True festlegen, erstellt pro App VPN-Nutzlast, später Apps zugeordnet sein kann, die diese VPN-Verbindung auf iOS-Gerät des Endbenutzers auslösen kann. Geerbt von [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |safariDomains|Collection von Objekten des Typs „String“|Safari Domänen, wenn diese VPN pro App-Einstellung aktiviert ist. Zusätzlich zu den apps dieses VPN zugeordnet angegeben Safari Domänen Hier wird auch können Sie diese VPN-Verbindung zu lösen. Geerbt von [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |onDemandRules|[VpnOnDemandRule](../resources/intune-deviceconfig-vpnondemandrule.md) -Auflistung|Bei Bedarf Regeln. Diese Collection darf maximal 500 Elemente enthalten. Geerbt von [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Proxy-Server. Geerbt von [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|optInToDeviceIdSharing|Boolesch|Opt-In, das das Gerät Id Drittanbieter-VPN-Clients für die Verwendung während der Network Access Control Validierung Freigabe. Geerbt von [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|optInToDeviceIdSharing|Boolean|Opt-In, das das Gerät Id Drittanbieter-VPN-Clients für die Verwendung während der Network Access Control Validierung Freigabe. Geerbt von [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

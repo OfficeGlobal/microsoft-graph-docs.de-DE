@@ -2,12 +2,13 @@
 title: AndroidWorkProfileVpnConfiguration löschen
 description: Löscht eine AndroidWorkProfileVpnConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 197cf31631d9baaf64cf8e87477d4a3698960ff3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dcd3b460df165cf3ab165a1a6c0bae35866e4995
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317780"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854327"
 ---
 # <a name="delete-androidworkprofilevpnconfiguration"></a>AndroidWorkProfileVpnConfiguration löschen
 
@@ -37,10 +38,10 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

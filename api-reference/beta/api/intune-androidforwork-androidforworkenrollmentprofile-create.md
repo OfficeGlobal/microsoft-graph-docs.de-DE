@@ -2,12 +2,13 @@
 title: Erstellen von „androidForWorkEnrollmentProfile“
 description: Erstellen eines neuen androidForWorkEnrollmentProfile-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 794179968afc4f39c809373b3425c076f7a591a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2890bba72a16933e0a45009a573044b65c099e9a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355975"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854201"
 ---
 # <a name="create-androidforworkenrollmentprofile"></a>Erstellen von „androidForWorkEnrollmentProfile“
 
@@ -35,10 +36,10 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des androidForWorkEnrollmentProfile-Objekts an.

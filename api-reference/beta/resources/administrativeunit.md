@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp administrativeUnit
 description: Eine administrative Einheit enthält einen konzeptionellen Container für Benutzer- und Verzeichnisobjekte. Verwenden von administrativen Einheiten, ein Unternehmensadministrator delegieren kann jetzt administrative Aufgaben zum Verwalten von Benutzern und Gruppen innerhalb oder auf eine administrative Einheit an einen Administrator regionalen oder auf Abteilungsebene bereichsbezogenen.
-ms.openlocfilehash: 8c0acd25c231707d2a7188ab2e1c2b0d2035816f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 523214d7bd319d940f042d461b4903ff1f1475e1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058184"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845409"
 ---
 # <a name="administrativeunit-resource-type"></a>Ressourcentyp administrativeUnit
 
@@ -29,7 +30,7 @@ Dieses Thema enthält eine Beschreibung der deklarierte Eigenschaften und Naviga
 |[Liste administrativeUnits](../api/administrativeunit-list.md) | [AdministrativeUnit](administrativeunit.md) -Auflistung |Aller AdministrativeUnits-Listeneigenschaften.|
 |[AdministrativeUnit abrufen](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |Lesen Sie Eigenschaften und die Beziehungen eines bestimmten AdministrativeUnit-Objekts.|
 |[AdminstrativeUnit aktualisieren](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)  |AdministrativeUnit-Objekt zu aktualisieren. |
-|[AdminstrativeUnit löschen](../api/administrativeunit-delete.md) | Keines |AdministrativeUnit-Objekt zu löschen. |
+|[AdminstrativeUnit löschen](../api/administrativeunit-delete.md) | Keine |AdministrativeUnit-Objekt zu löschen. |
 |[Ein Mitglied hinzufügen](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Fügen Sie ein Mitglied (Benutzer oder Gruppe).|
 |[Mitglieder auflisten](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md)-Sammlung| Rufen Sie die Liste der Elemente (Benutzer und Gruppen).|
 |[Abrufen eines Elements](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Rufen Sie ein bestimmtes Element.|
@@ -82,7 +83,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ```
 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](/graph/extensibility-open-users)

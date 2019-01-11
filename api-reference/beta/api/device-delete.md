@@ -2,12 +2,13 @@
 title: Gerät löschen
 description: Mit dieser API können Sie registrierte Geräte löschen.
 author: tfitzmac
-ms.openlocfilehash: e171656e0d4ab32f140c1b53f5ea42e8424cb2e9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c2b34cffbff6b3c627ed13d6e4b2917f6f36f4f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311522"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854572"
 ---
 # <a name="delete-device"></a>Gerät löschen
 
@@ -37,7 +38,7 @@ DELETE /devices/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

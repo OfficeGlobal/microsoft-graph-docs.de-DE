@@ -1,12 +1,13 @@
 ---
 title: Verwenden Sie die Benachrichtigungen REST-API in Microsoft Graph
 description: Die API-Benachrichtigungen in Microsoft Graph können Sie um Pushbenachrichtigungen an einen Benutzer zu senden. Einfach Adressieren eines Benutzerkontos, um eine Benachrichtigung gesendet, und die Plattform bietet, die Benachrichtigung an alle Geräte Endpunkte. Benachrichtigungen API Anfragen werden ausgeführt, im Auftrag eines Benutzers über delegierten Berechtigungen und die [Benachrichtigung über die Berechtigung]( /graph/permissions_reference), der mit einer Microsoft-Konten verwendet werden kann oder Arbeit oder Schule Konten.
-ms.openlocfilehash: 07b59fb7d7eae2e626b58325e82999bbd36c5489
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 04787cb9a9b589036020651934041b4fc399adb1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061525"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853025"
 ---
 # <a name="use-the-notifications-rest-api-in-microsoft-graph"></a>Verwenden Sie die Benachrichtigungen REST-API in Microsoft Graph
 

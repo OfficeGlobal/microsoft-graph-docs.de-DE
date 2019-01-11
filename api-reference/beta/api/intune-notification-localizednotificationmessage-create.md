@@ -2,12 +2,13 @@
 title: localizedNotificationMessage erstellen
 description: Erstellen eines neuen localizedNotificationMessage-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 8070921493ec7430ee31376b0788d59013595184
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 555cfa1c6c34a99bf001b9c3b1f462f1a7d3e41c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324360"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853975"
 ---
 # <a name="create-localizednotificationmessage"></a>localizedNotificationMessage erstellen
 
@@ -35,10 +36,10 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON Darstellung für das localizedNotificationMessage-Objekt an.
@@ -52,7 +53,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |Gebietsschema|String|Das Gebietsschema für das diese Nachricht bestimmt ist.|
 |Betreff|String|Die Vorlage für den Betreff der Nachricht.|
 |messageTemplate|String|Die Vorlage für den Inhalt der Nachricht.|
-|isDefault|Boolescher Wert|Die Kennzeichnung gibt an, ob dies das Standard-Gebietsschema für die Fallbacksprache ist. Dieser Kennzeichnung kann nur festgelegt werden. Um die Festlegung aufzuheben, setzen Sie diese Eigenschaft bei einer anderen lokalisierten Benachrichtigung auf „true“.|
+|isDefault|Boolean|Die Kennzeichnung gibt an, ob dies das Standard-Gebietsschema für die Fallbacksprache ist. Dieser Kennzeichnung kann nur festgelegt werden. Um die Festlegung aufzuheben, setzen Sie diese Eigenschaft bei einer anderen lokalisierten Benachrichtigung auf „true“.|
 
 
 

@@ -2,12 +2,13 @@
 title: RemoteAssistanceOnboardingStatus Enum-Typ
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 88472833f47ac2cea862d6780c46223fb5f09525
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ff61d48f9d7991400d909c91c02751bc37b5ec03
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304067"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846578"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>RemoteAssistanceOnboardingStatus Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27304067"
 
 Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |notOnboarded|0|Noch nicht dokumentiert|
 |Onboarding|1|Noch nicht dokumentiert|

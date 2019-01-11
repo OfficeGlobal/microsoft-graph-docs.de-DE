@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp synchronizationSchema
 description: Definiert, welche Objekte werden synchronisiert, und wie diese synchronisiert werden soll. Das Synchronisierungsschema enthält die meisten der Setupinformationen für einen bestimmten Synchronisierungsauftrag. Sie werden in der Regel anpassen einiger Attribut Zuordnungen oder Hinzufügen eines Gültigkeitsbereichs Filters zum Synchronisieren von nur Objekte, die eine bestimmte Bedingung erfüllen.
-ms.openlocfilehash: 13e57db5f78af2d3f0a8243d247fe5c3f3d5e0af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 696bdbbc6fa2d96965d11a12fb09fdfc0ce16106
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061461"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847320"
 ---
 # <a name="synchronizationschema-resource-type"></a>Ressourcentyp synchronizationSchema
 
@@ -33,8 +34,8 @@ In den folgenden Abschnitten werden die allgemeinen Komponenten des Synchronisie
 | Methode        | Rückgabetyp               | Beschreibung                  |
 |:--------------|:--------------------------|:-----------------------------|
 |[Get-schema](../api/synchronization-synchronizationschema-get.md)    |[synchronizationSchema](synchronization-synchronizationschema.md)   |Lesen Sie Eigenschaften und Beziehungen des **SynchronizationSchema** -Objekts.|
-|[Aktualisieren des Schemas](../api/synchronization-synchronizationschema-update.md)    |Keines   |Aktualisieren Sie das Synchronisierungsschema. |
-|[Schema löschen](../api/synchronization-synchronizationschema-delete.md)    |Keines   |Löschen Sie das angepasste Schema, das Schema auf die Standardkonfiguration zurücksetzen. |
+|[Aktualisieren des Schemas](../api/synchronization-synchronizationschema-update.md)    |Keine   |Aktualisieren Sie das Synchronisierungsschema. |
+|[Schema löschen](../api/synchronization-synchronizationschema-delete.md)    |Keine   |Löschen Sie das angepasste Schema, das Schema auf die Standardkonfiguration zurücksetzen. |
 |[Liste Filteroperatoren](../api/synchronization-synchronizationschema-filteroperators.md)    |[FilterOperatorSchema](../resources/synchronization-filteroperatorschema.md) -Auflistung   |Alle in den Gültigkeitsbereichen Filtern unterstützte Operatoren aufgelistet. |
 |[List-Attribut Zuordnen von Funktionen](../api/synchronization-synchronizationschema-functions.md)    |[AttributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) -Auflistung   |Listen Sie alle Funktionen, die in das Attribut Zuordnung Ausdrücken unterstützt. |
 |[Analysieren von Attribut Zuordnung Ausdruck](../api/synchronization-synchronizationschema-parseexpression.md)|[parseExpressionResponse](synchronization-parseexpressionresponse.md)|Ein Zeichenfolgenausdruck in einem [AttributeMappingSource analysieren|(.. / resources/synchronization_attributemappingsource.md) Objekt.|

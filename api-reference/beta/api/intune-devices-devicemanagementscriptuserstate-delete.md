@@ -2,12 +2,13 @@
 title: DeviceManagementScriptUserState löschen
 description: Löscht eine DeviceManagementScriptUserState.
 author: tfitzmac
-ms.openlocfilehash: 2aa88ae9fa443feca4c9e36dfa6f676d773afee8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d026e0277b06d50c0848f594a713f026dc864401
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310927"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848797"
 ---
 # <a name="delete-devicemanagementscriptuserstate"></a>DeviceManagementScriptUserState löschen
 
@@ -35,10 +36,10 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/user
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

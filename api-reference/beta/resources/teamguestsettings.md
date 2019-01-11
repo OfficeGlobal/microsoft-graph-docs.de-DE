@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp teamGuestSettings
 description: Einstellungen konfigurieren können, ob Gäste erstellen, aktualisieren oder Löschen von Kanälen im Team können.
-ms.openlocfilehash: 744e19165121d101a720a86bec0242fc31137768
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 15644f3761329589a4d770e777ae5fd63751e6be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061815"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851541"
 ---
 # <a name="teamguestsettings-resource-type"></a>Ressourcentyp teamGuestSettings
 
@@ -17,8 +18,8 @@ Einstellungen konfigurieren können, ob Gäste erstellen, aktualisieren oder Lö
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|Boolesch|Wenn Festlegung auf "true" Gäste hinzufügen und Kanäle aktualisieren kann.|
-|allowDeleteChannels|Boolesch|Bei Festlegung auf "true" Gäste Kanäle löschen kann.|
+|allowCreateUpdateChannels|Boolean|Wenn Festlegung auf "true" Gäste hinzufügen und Kanäle aktualisieren kann.|
+|allowDeleteChannels|Boolean|Bei Festlegung auf "true" Gäste Kanäle löschen kann.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

@@ -1,12 +1,13 @@
 ---
 title: 'outlookUser: supportedTimeZones'
 description: Abrufen der Liste von Zeitzonen, die für den Benutzer unterstützt werden, wie auf dem Postfachserver des Benutzers konfiguriert.
-ms.openlocfilehash: 9feb5e883b1516cdefe9e1b439bf59a0f3b9dd8f
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 9c44d79cbadebb5842bb3940e3ca41ae14672375
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748472"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852003"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 

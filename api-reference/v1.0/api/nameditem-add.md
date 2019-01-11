@@ -1,12 +1,13 @@
 ---
 title: Benanntes Element hinzufügen
 description: Fügt einen neuen Namen zu der Auflistung des angegebenen Bereichs unter Verwendung des Gebietsschemas des Benutzers für die Formel hinzu.
-ms.openlocfilehash: f97d9589cc29203d660eedf6b323d1ba90794b22
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: eab6116768523d021577bef345151c3e62681fe5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018738"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852612"
 ---
 # <a name="add-named-item"></a>Benanntes Element hinzufügen
 

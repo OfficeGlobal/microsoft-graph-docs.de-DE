@@ -2,12 +2,13 @@
 title: Liste Trend
 description: Berechnete Insight, der die Liste der Elemente, um den Benutzer Trend zurückgibt.
 author: simonhult
-ms.openlocfilehash: de169f9960a1694e452b8dcfd16aafde89d3ac29
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 86b9daf96529d50d8767f234c3b1a6d9526eaac4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343414"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854789"
 ---
 # <a name="list-trending"></a>Liste Trend
 
@@ -46,10 +47,10 @@ Finden Sie die verfügbaren Containertypen und Typen, die Sie nach [ResourceVisu
 
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       |  Wert|
+| Kopfzeile       |  Wert|
 |:-------------|:------|
 | Authorization  | Bearer {token}. Erforderlich.|
-| Accept  | application/json|
+| Annehmen  | application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

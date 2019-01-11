@@ -1,12 +1,13 @@
 ---
 title: Gemeinsam genutzten Ressourcen in Microsoft Intune
 description: Diese Endpunkte werden in mehreren Microsoft Graph-API für Intune Workflows verwendet.  Die Absicht, den Zweck und die erforderlichen Berechtigungen für eine bestimmte Ressource verwenden variiert je nach den bestimmten Workflow und dem Kontext des zugrunde liegenden Anrufs.  Darüber hinaus werden bestimmte Methoden, Eigenschaften und Aktionen nur für bestimmte Workflows unterstützt.
-ms.openlocfilehash: a0e896b2aed219679ec45804dc94b22b7cb9d727
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c381ba84c9240a2b8e7428a3c055b8baf35fb243
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065565"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852626"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Gemeinsam genutzten Ressourcen in Microsoft Intune
 
@@ -47,7 +48,7 @@ Die folgenden Ressourcen: Grafik werden sowohl Intune Workflows verwendet:
 - [Führen Sie Zustand](intune-shared-runstate.md)
 - [Gespeichert von Benutzeroberflächenoptionen Zustand-Generierung](intune-shared-saveduistategenerationoptions.md)
 - [URI](intune-shared-uri.md)
-- [User](intune-shared-user.md)
+- [Benutzer](intune-shared-user.md)
 - [VPP token Kontotyp](intune-shared-vpptokenaccounttype.md)
 - [VPP token Aktion Fehlerursache](intune-shared-vpptokenactionfailurereason.md)
 - [Windows-Domäne Join-Konfiguration](intune-shared-windowsdomainjoinconfiguration.md)

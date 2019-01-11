@@ -2,12 +2,13 @@
 title: WindowsAutopilotDeviceIdentity aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines WindowsAutopilotDeviceIdentity-Objekts.
 author: tfitzmac
-ms.openlocfilehash: b1ec7e17602becbf70d825711f2e2ea55b278fb5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ea1200951231b43b2d2fd9242c241a54518fb1c9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356350"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853536"
 ---
 # <a name="update-windowsautopilotdeviceidentity"></a>WindowsAutopilotDeviceIdentity aktualisieren
 
@@ -36,10 +37,10 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [WindowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) eine JSON-Darstellung.

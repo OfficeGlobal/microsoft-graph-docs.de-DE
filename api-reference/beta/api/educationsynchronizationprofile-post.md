@@ -2,12 +2,13 @@
 title: Erstellen einer educationSynchronizationProfile
 description: 'Erstellen Sie eine Anforderung für ein neues Schule Daten Synchronisierung Profil im Mandanten. Abfragen des Status, um den Status des Profils abzurufen. '
 author: mmast-msft
-ms.openlocfilehash: 20c4a7f4dd1512a52bed4a12d1642b8d1138d0e3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c5ce12f43af4e32691c34038a9a0c0527d314c06
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345311"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853851"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>Erstellen einer educationSynchronizationProfile
 
@@ -33,7 +34,7 @@ POST /synchronizationProfiles
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich.  |
+| Authorization  | string  | Bearer {token}. Erforderlich.  |
 | Content-Type | string | Application/Json. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext

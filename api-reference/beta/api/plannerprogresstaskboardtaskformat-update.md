@@ -1,12 +1,13 @@
 ---
 title: plannerProgressTaskBoardTaskFormat aktualisieren
 description: Dient zum Aktualisieren der Eigenschaften eines **plannerProgressTaskBoardTaskFormat**-Objekts.
-ms.openlocfilehash: 628b17075e02bfad5859f68c118f742a11691a53
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4fedbf9bc5edf90b78545a7e7dec29257b471fd5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058673"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846396"
 ---
 # <a name="update-plannerprogresstaskboardtaskformat"></a>plannerProgressTaskBoardTaskFormat aktualisieren
 

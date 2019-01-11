@@ -1,12 +1,13 @@
 ---
 title: Vereinbarung Ressourcentyp
 description: Stellt einen Mandanten anpassbare Vertragsbedingungen verwenden, die erstellt und mit Azure Active Directory (AD Azure) verwaltet wird. Sie können die folgenden Methoden zum Erstellen und Verwalten des Azure Active Directory Ausdrücken verwenden Features gemäß Ihrem Szenario.
-ms.openlocfilehash: 2e5c9087cd809f9c067150654d420fda533ca61b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8c082ed6229b44cc3a3d4cba6dd8645feee5d07c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060471"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845346"
 ---
 # <a name="agreement-resource-type"></a>Vereinbarung Ressourcentyp
 
@@ -22,7 +23,7 @@ Stellt einen Mandanten anpassbare Vertragsbedingungen verwenden, die erstellt un
 | [Vereinbarungen zur Liste](../api/agreement-list.md) | [Vereinbarung](agreement.md) -Auflistung | Rufen Sie eine Auflistung der Vereinbarung-Objekts. |
 | [Abrufen der Vereinbarung](../api/agreement-get.md) | [Vereinbarung](agreement.md) | Lesen Sie Eigenschaften und Beziehungen eines Vereinbarung-Objekts. |
 | [Vereinbarung aktualisieren](../api/agreement-update.md) | [Vereinbarung](agreement.md) | Ein Objekt zu aktualisieren. |
-| [Vereinbarung löschen](../api/agreement-delete.md) | Keines | Ein Objekt zu löschen. |
+| [Vereinbarung löschen](../api/agreement-delete.md) | Keine | Ein Objekt zu löschen. |
 <!--
 | [Create agreementFile](../api/agreement-post-files.md) | [agreementFile](agreementfile.md) | Create a new agreementFile by posting to the files collection. |
 | [List files](../api/agreement-list-files.md) | [agreementFile](agreementfile.md) collection | Get an agreementFile object collection. |
@@ -33,7 +34,7 @@ Stellt einen Mandanten anpassbare Vertragsbedingungen verwenden, die erstellt un
 |:-------------|:------------|:------------|
 |displayName|String|Der Anzeigename der Vereinbarung.|
 |id|String| Schreibgeschützt.|
-|isViewingBeforeAcceptanceRequired|Boolesch|Gibt an, ob der Benutzer zu erweitern und vor dem akzeptieren die Vereinbarung anzuzeigen.|
+|isViewingBeforeAcceptanceRequired|Boolean|Gibt an, ob der Benutzer zu erweitern und vor dem akzeptieren die Vereinbarung anzuzeigen.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ        | Beschreibung |

@@ -2,12 +2,13 @@
 title: Liste userAppInstallStatuses
 description: Listeneigenschaften und Beziehungen der UserAppInstallStatus-Objekte.
 author: tfitzmac
-ms.openlocfilehash: 0aeef4d97e63c42e11fefdb84a4dfb6138fdc6a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6d6c0fb5a35dc2bdd712df53305020102cd82e15
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325424"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853760"
 ---
 # <a name="list-userappinstallstatuses"></a>Liste userAppInstallStatuses
 
@@ -35,10 +36,10 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

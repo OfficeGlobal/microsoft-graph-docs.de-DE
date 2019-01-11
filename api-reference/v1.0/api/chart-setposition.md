@@ -2,12 +2,13 @@
 title: 'Chart: setPosition'
 description: Positioniert das Diagramm im Verhältnis zu den Zellen im Arbeitsblatt.
 author: lumine2008
-ms.openlocfilehash: a83657a4654099dc1b52e55e2e627d14ef8c7aff
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d32f673818bda97f509ab66e31edf7a828b83322
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324591"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846935"
 ---
 # <a name="chart-setposition"></a>Chart: setPosition
 

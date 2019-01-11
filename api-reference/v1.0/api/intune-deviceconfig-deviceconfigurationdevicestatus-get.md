@@ -2,12 +2,13 @@
 title: deviceConfigurationDeviceStatus abrufen
 description: Lesen von Eigenschaften und Beziehungen des deviceConfigurationDeviceStatus-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 8bafdda535bd6737454370bd640efc3c9f7869b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6ff7dea3f9e61f04a8553e8d78ddab689f3304bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339270"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852248"
 ---
 # <a name="get-deviceconfigurationdevicestatus"></a>deviceConfigurationDeviceStatus abrufen
 
@@ -35,10 +36,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatuse
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

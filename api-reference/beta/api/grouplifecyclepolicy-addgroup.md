@@ -2,12 +2,13 @@
 title: 'groupLifecyclePolicy: addGroup'
 description: Fügt eine Gruppe zu einer Lebenszyklusrichtlinie hinzu.
 author: dkershaw10
-ms.openlocfilehash: 57af4383c471832acbffb4136a057c91a1d061d0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ac0bf455ba2d4aa5f1f6add5827124581ce663b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327909"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853361"
 ---
 # <a name="grouplifecyclepolicy-addgroup"></a>groupLifecyclePolicy: addGroup
 

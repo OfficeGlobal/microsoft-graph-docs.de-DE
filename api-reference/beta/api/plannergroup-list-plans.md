@@ -1,12 +1,13 @@
 ---
 title: Pläne auflisten
 description: Abrufen einer Liste von **PlannerPlan** -Objekten, die ein Group-Objekt gehören.
-ms.openlocfilehash: fd1dd605952dbc4627e6c87a130e3b478f7f0947
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ef6a6b054b874fdffd07355f29ef215f68fbba6e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064608"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853417"
 ---
 # <a name="list-plans"></a>Pläne auflisten
 

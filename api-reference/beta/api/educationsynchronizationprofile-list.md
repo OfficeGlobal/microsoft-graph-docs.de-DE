@@ -2,12 +2,13 @@
 title: Liste educationSynchronizationProfiles
 description: Abrufen der Auflistung der Schule Daten Synchronisierungsprofile in den Mandanten an.
 author: mmast-msft
-ms.openlocfilehash: d7ee2b643259eec6c9106ab6ff89245ab79a3044
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9b234ac8a6a99f5cc32a3f4416975ea77f4c66ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303101"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853669"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>Liste educationSynchronizationProfiles
 
@@ -36,7 +37,7 @@ Diese Methode unterstützt die folgenden [Parameter für OData-Abfrage](https://
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich.  |
+| Authorization  | string  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

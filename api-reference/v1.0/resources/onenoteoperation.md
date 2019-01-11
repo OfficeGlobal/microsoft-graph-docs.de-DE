@@ -2,12 +2,13 @@
 title: onenoteOperation-Ressourcentyp
 description: Der Status bestimmter lange dauernder OneNote-Vorgänge.
 author: Jewan-microsoft
-ms.openlocfilehash: bbb7b9457ce5a3d7ba9faf45d893ae86cdfd8b32
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 89c1d1ac3404653ae3996a95bdf40c22fdd3b7c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326908"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845934"
 ---
 # <a name="onenoteoperation-resource-type"></a>onenoteOperation-Ressourcentyp
 

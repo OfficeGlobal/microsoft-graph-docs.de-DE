@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp hostSecurityState
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: ae64d4e0f13e39cb344fd54f5e600cfbfe0dc4f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1ae1436dd9771d34c37542eb756f81a4f8f0306a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061563"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853375"
 ---
 # <a name="hostsecuritystate-resource-type"></a>Ressourcentyp hostSecurityState
 
@@ -19,9 +20,9 @@ Enthält Statusinformationen über den Host (einschließlich der Geräte, Comput
 | Eigenschaft   | Typ|Beschreibung|
 |:---------------|:--------|:----------|
 |FQDN|String|Host-FQDN (Fully Qualified Domain Name) (beispielsweise machine.company.com).|
-|isAzureAadJoined|Boolesch|True, wenn der Host Domäne Azure Active Directory Domain Services beigetreten ist.|
-|isAzureAadRegistered|Boolesch|True, wenn der Host mit Azure Active Directory Gerät-Registrierung (BYOD Geräte - d. h., nicht vollständig durch Enterprise verwaltet) registriert.|
-|isHybridAzureDomainJoined|Boolesch|True, wenn der Host der Domäne mit einer lokalen Active Directory-Domäne verbunden ist.|
+|isAzureAadJoined|Boolean|True, wenn der Host Domäne Azure Active Directory Domain Services beigetreten ist.|
+|isAzureAadRegistered|Boolean|True, wenn der Host mit Azure Active Directory Gerät-Registrierung (BYOD Geräte - d. h., nicht vollständig durch Enterprise verwaltet) registriert.|
+|isHybridAzureDomainJoined|Boolean|True, wenn der Host der Domäne mit einer lokalen Active Directory-Domäne verbunden ist.|
 |netBiosName|String|Der Name der lokalen Host ohne den DNS-Domänennamen.|
 |Betriebssystem|String|Host-Betriebssystem. (Z. B. Windows10, Mac OS, RHEL, usw.).|
 |Priv.IP-Adresse|String|Private (nicht-routingfähige) IPv4 oder IPv6-Adresse (siehe [RFC 1918](https://tools.ietf.org/html/rfc1918)) zum Zeitpunkt der Warnung.|

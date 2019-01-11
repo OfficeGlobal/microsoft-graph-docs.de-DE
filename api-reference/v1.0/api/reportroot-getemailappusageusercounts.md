@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getEmailAppUsageUserCounts'
 description: Rufen Sie die Anzahl der eindeutigen Benutzer ab, die über eine E-Mail-App mit Exchange Online verbunden sind.
-ms.openlocfilehash: 44dab7d2830279fab2ed4c449039e8639030400e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 58b21e9d3619f3769395316e31d26891eeaf9f5a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016363"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852591"
 ---
 # <a name="reportroot-getemailappusageusercounts"></a>reportRoot: getEmailAppUsageUserCounts
 

@@ -1,12 +1,13 @@
 ---
 title: Mitgliedergruppen prüfen
 description: Überprüfen Sie die Mitgliedschaft in einer angegebenen Liste von Gruppen und gibt aus dieser Liste dieser Gruppen
-ms.openlocfilehash: b7baccd19b9d5a84ecbca4d75bca053eb51bc3f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cfa9f1a50ffd284233707799a8d05d6b5c46dfc1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058028"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854040"
 ---
 # <a name="check-member-groups"></a>Mitgliedergruppen prüfen
 

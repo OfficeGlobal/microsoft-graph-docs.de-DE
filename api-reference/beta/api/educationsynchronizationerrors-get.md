@@ -2,12 +2,13 @@
 title: Abrufen von educationSynchronizationErrors
 description: 'Rufen Sie die Fehler, die während der Validierung und/oder während der Synchronisierung eines bestimmten Schule Daten Synchronisierungsprofils im Mandanten. '
 author: mmast-msft
-ms.openlocfilehash: afd494f77e8298007c70643321c05660569ee1ad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1b0504ae8ef7c463afb4041a89bfb4229833b63e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322155"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854005"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Abrufen von educationSynchronizationErrors
 
@@ -33,7 +34,7 @@ Diese Methode unterstützt die folgenden [Parameter für OData-Abfrage](https://
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich.  |
+| Authorization  | string  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

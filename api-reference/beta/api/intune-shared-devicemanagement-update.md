@@ -2,12 +2,13 @@
 title: Aktualisieren von „deviceManagement“
 description: Aktualisieren der Eigenschaften eines deviceManagement-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 1808c18fd5e305871e0be2e47def97938384488c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cd202c2a015b25234a7bf6ffdbedbd1b9f17eacd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323765"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846830"
 ---
 # <a name="update-devicemanagement"></a>Aktualisieren von „deviceManagement“
 
@@ -56,10 +57,10 @@ PATCH /deviceManagement
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -72,7 +73,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |id|String|Eindeutiger Bezeichner für das Gerät.|
 |**deviceConfiguration**|
 |intuneAccountId|GUID|Intune Konto-ID für die angegebenen Mandanten|
-|legacyPcManangementEnabled|Boolesch|Die Eigenschaft zum Aktivieren von nicht-MDM verwaltet legacy PC-Verwaltung für dieses Konto. Diese Eigenschaft ist schreibgeschützt.|
+|legacyPcManangementEnabled|Boolean|Die Eigenschaft zum Aktivieren von nicht-MDM verwaltet legacy PC-Verwaltung für dieses Konto. Diese Eigenschaft ist schreibgeschützt.|
 |maximumDepTokens|Int32|Maximal zulässige Anzahl von DEP Token pro Mandant.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Einstellungen auf Kontoebene|
 |**deviceManagement**|

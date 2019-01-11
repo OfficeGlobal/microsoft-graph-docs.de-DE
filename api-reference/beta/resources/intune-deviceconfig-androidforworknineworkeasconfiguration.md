@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp androidForWorkNineWorkEasConfiguration
 description: Durch die Bereitstellung von Konfigurationen in dieses Profil können Sie anweisen den neun Arbeit e-Mail-Client auf Geräten Android Arbeit für die Kommunikation mit einem Exchange-Server und Abrufen von e-Mails, Kontakte, Kalender, Aufgaben und Notizen. Darüber hinaus können Sie auch angeben wie viel e-Mails zu synchronisieren und wie oft das Gerät synchronisiert werden sollte.
-ms.openlocfilehash: 6829e6a20b87b56937f0b646ee70c986747da5a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 951c033fd8ee1f65b48b99045d4b9da86443a50e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060253"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848895"
 ---
 # <a name="androidforworknineworkeasconfiguration-resource-type"></a>Ressourcentyp androidForWorkNineWorkEasConfiguration
 
@@ -24,7 +25,7 @@ Erbt vom [androidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-an
 |[Liste androidForWorkNineWorkEasConfigurations](../api/intune-deviceconfig-androidforworknineworkeasconfiguration-list.md)|[AndroidForWorkNineWorkEasConfiguration](../resources/intune-deviceconfig-androidforworknineworkeasconfiguration.md) -Auflistung|Listeneigenschaften und Beziehungen der [AndroidForWorkNineWorkEasConfiguration](../resources/intune-deviceconfig-androidforworknineworkeasconfiguration.md) -Objekte.|
 |[Abrufen von androidForWorkNineWorkEasConfiguration](../api/intune-deviceconfig-androidforworknineworkeasconfiguration-get.md)|[androidForWorkNineWorkEasConfiguration](../resources/intune-deviceconfig-androidforworknineworkeasconfiguration.md)|Lesen Sie Eigenschaften und Beziehungen des [AndroidForWorkNineWorkEasConfiguration](../resources/intune-deviceconfig-androidforworknineworkeasconfiguration.md) -Objekts.|
 |[Erstellen von androidForWorkNineWorkEasConfiguration](../api/intune-deviceconfig-androidforworknineworkeasconfiguration-create.md)|[androidForWorkNineWorkEasConfiguration](../resources/intune-deviceconfig-androidforworknineworkeasconfiguration.md)|Erstellen eines neuen [AndroidForWorkNineWorkEasConfiguration](../resources/intune-deviceconfig-androidforworknineworkeasconfiguration.md) -Objekts.|
-|[AndroidForWorkNineWorkEasConfiguration löschen](../api/intune-deviceconfig-androidforworknineworkeasconfiguration-delete.md)|Keines|Löscht eine [AndroidForWorkNineWorkEasConfiguration](../resources/intune-deviceconfig-androidforworknineworkeasconfiguration.md).|
+|[AndroidForWorkNineWorkEasConfiguration löschen](../api/intune-deviceconfig-androidforworknineworkeasconfiguration-delete.md)|Keine|Löscht eine [AndroidForWorkNineWorkEasConfiguration](../resources/intune-deviceconfig-androidforworknineworkeasconfiguration.md).|
 |[AndroidForWorkNineWorkEasConfiguration aktualisieren](../api/intune-deviceconfig-androidforworknineworkeasconfiguration-update.md)|[androidForWorkNineWorkEasConfiguration](../resources/intune-deviceconfig-androidforworknineworkeasconfiguration.md)|Aktualisieren Sie die Eigenschaften eines [AndroidForWorkNineWorkEasConfiguration](../resources/intune-deviceconfig-androidforworknineworkeasconfiguration.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
@@ -33,7 +34,7 @@ Erbt vom [androidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-an
 |id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolesch|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -42,11 +43,11 @@ Erbt vom [androidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-an
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|Dauer des Zeit-e-Mail-sollte mit synchronisiert werden. Geerbt von [AndroidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md). Mögliche Werte sind: `userDefined`, `oneDay`, `threeDays`, `oneWeek`, `twoWeeks`, `oneMonth` und `unlimited`.|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|E-Mail-Attribut, das aus AAD entnommen und vor der Installation auf dem Gerät an dieses Profil eingefügt wird. Geerbt von [AndroidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md). Mögliche Werte sind: `userPrincipalName` und `primarySmtpAddress`.|
 |hostName|String|Exchange-Speicherort (URL), die die Mail-app mit verbindet. Geerbt von [androidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md)|
-|requireSsl|Boolesch|Gibt an, ob SSL verwendet. Geerbt von [androidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md)|
+|requireSsl|Boolean|Gibt an, ob SSL verwendet. Geerbt von [androidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md)|
 |usernameSource|[androidUsernameSource](../resources/intune-deviceconfig-androidusernamesource.md)|Username-Attribut, das aus AAD entnommen und vor der Installation auf dem Gerät an dieses Profil eingefügt wird. Geerbt von [AndroidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md). Mögliche Werte: sind `username`, `userPrincipalName`, `samAccountName` und `primarySmtpAddress`.|
-|syncCalendar|Boolesch|Schaltet den Kalender wird synchronisiert. Wenn der Wert false im Kalender auf dem Gerät deaktiviert ist.|
-|syncContacts|Boolesch|Schaltet die Kontakte werden synchronisiert. Wenn es sich bei Festlegung auf "false" Kontakte auf dem Gerät deaktiviert sind.|
-|syncTasks|Boolesch|Schaltet Aufgaben werden synchronisiert. Wenn es sich bei Festlegung auf "false" Aufgaben auf dem Gerät deaktiviert sind.|
+|syncCalendar|Boolean|Schaltet den Kalender wird synchronisiert. Wenn der Wert false im Kalender auf dem Gerät deaktiviert ist.|
+|syncContacts|Boolean|Schaltet die Kontakte werden synchronisiert. Wenn es sich bei Festlegung auf "false" Kontakte auf dem Gerät deaktiviert sind.|
+|syncTasks|Boolean|Schaltet Aufgaben werden synchronisiert. Wenn es sich bei Festlegung auf "false" Aufgaben auf dem Gerät deaktiviert sind.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

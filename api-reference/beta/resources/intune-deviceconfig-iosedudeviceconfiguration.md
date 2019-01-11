@@ -2,12 +2,13 @@
 title: Ressourcentyp iosEduDeviceConfiguration
 description: iOS Education Gerätekonfiguration
 author: tfitzmac
-ms.openlocfilehash: 6ec5619f28d75e97080cdea81d547bf0a1a94a2a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 711c3acf8a462d57b5e5abfa2d453862a1145688
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313587"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854047"
 ---
 # <a name="iosedudeviceconfiguration-resource-type"></a>Ressourcentyp iosEduDeviceConfiguration
 
@@ -25,7 +26,7 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |[Liste iosEduDeviceConfigurations](../api/intune-deviceconfig-iosedudeviceconfiguration-list.md)|[IosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) -Auflistung|Listeneigenschaften und Beziehungen der [IosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) -Objekte.|
 |[Abrufen von iosEduDeviceConfiguration](../api/intune-deviceconfig-iosedudeviceconfiguration-get.md)|[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)|Lesen Sie Eigenschaften und Beziehungen des [IosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) -Objekts.|
 |[Erstellen von iosEduDeviceConfiguration](../api/intune-deviceconfig-iosedudeviceconfiguration-create.md)|[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)|Erstellen eines neuen [IosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) -Objekts.|
-|[IosEduDeviceConfiguration löschen](../api/intune-deviceconfig-iosedudeviceconfiguration-delete.md)|Keines|Löscht eine [IosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md).|
+|[IosEduDeviceConfiguration löschen](../api/intune-deviceconfig-iosedudeviceconfiguration-delete.md)|Keine|Löscht eine [IosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md).|
 |[IosEduDeviceConfiguration aktualisieren](../api/intune-deviceconfig-iosedudeviceconfiguration-update.md)|[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)|Aktualisieren Sie die Eigenschaften eines [IosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
@@ -34,7 +35,7 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolesch|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|

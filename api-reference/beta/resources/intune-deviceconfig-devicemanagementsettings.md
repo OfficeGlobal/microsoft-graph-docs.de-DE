@@ -2,12 +2,13 @@
 title: deviceManagementSettings-Ressourcentyp
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 048755ef068bf28381e84067a9eff5d5cbe88ad6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f973f2645b37375641bc536b5ace0fa508fb0b0e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334888"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854418"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>deviceManagementSettings-Ressourcentyp
 
@@ -22,7 +23,7 @@ Noch nicht dokumentiert
 |deviceComplianceCheckinThresholdDays|Int32|Die Anzahl von Tagen, die ein Gerät ohne Einchecken konform bleiben kann. Gültige Werte: 0 bis 120|
 |isScheduledActionEnabled|Boolean|Gibt an, ob das Feature für eine geplante Aktion für die Regel aktiviert ist.|
 |secureByDefault|Boolean|Ist dies auf „true“ gesetzt, sollte das Gerät als nicht konform gelten, wenn keine Konformitätsrichtlinie verfolgt wird.|
-|enhancedJailBreak|Boolesch|Ist Feature aktiviert ist oder nicht erweiterten Jailbreak Erkennung.|
+|enhancedJailBreak|Boolean|Ist Feature aktiviert ist oder nicht erweiterten Jailbreak Erkennung.|
 |deviceInactivityBeforeRetirementInDay|Int32|Wenn das Gerät nicht prüft für die angegebene Anzahl von Tagen, möglicherweise die Mandantendaten entfernt, und das Gerät werden nicht in die Verwaltung. Gültige Werte 30 bis 270|
 
 ## <a name="relationships"></a>Beziehungen

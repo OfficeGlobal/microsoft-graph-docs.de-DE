@@ -1,12 +1,13 @@
 ---
 title: 'DirectoryObject: Delta'
 description: 'Get neu erstellt, aktualisiert oder gelöscht Verzeichnisobjekten der folgenden Typen: Benutzer, Gruppe oder Organisation Kontakt in einer einzelnen Delta-Abfrage. Finden Sie unter Nachverfolgen von Änderungen für Details.'
-ms.openlocfilehash: 98674a141c0567defb06da7b1ccd95a209aaa4f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 823107bce56d77c4e9c29a77405ac014443f5190
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060016"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854495"
 ---
 # <a name="directoryobject-delta"></a>DirectoryObject: Delta
 
@@ -116,7 +117,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta
 
 Im folgenden ist ein Beispiel für die Antwort aus, wenn mit `deltaLink` von der Initialisierung Abfrage abgerufen. Nicht `isOf` Filter verwendet wurde, damit alle Typen von DirectoryObject abgeleitete zurückgegeben werden.
 
->**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+>**Hinweis:** Das hier gezeigte Antwortobjekt wurde möglicherweise zur besseren Lesbarkeit gekürzt. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 
 <!-- {
   "blockType": "response",

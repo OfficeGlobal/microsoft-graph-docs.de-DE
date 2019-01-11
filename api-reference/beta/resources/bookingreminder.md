@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp bookingReminder
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: f5f7b30c296433dd96ffa14a75e3f0286e8a16a1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1f1708d4ac9606ad5c862cb9b1bc73e1ddcfec4a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062340"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853865"
 ---
 # <a name="bookingreminder-resource-type"></a>Ressourcentyp bookingReminder
 

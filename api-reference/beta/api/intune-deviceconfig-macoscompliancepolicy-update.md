@@ -2,12 +2,13 @@
 title: macOSCompliancePolicy aktualisieren
 description: Aktualisieren der Eigenschaften eines macOSCompliancePolicy-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 412e77f3c0c62f61ce0ab687861dd3cac4931c59
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 93bf199d9024ebadd9a8960d53d9185a3dadd10c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348378"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852241"
 ---
 # <a name="update-macoscompliancepolicy"></a>macOSCompliancePolicy aktualisieren
 
@@ -35,10 +36,10 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md)-Objekts an.
@@ -65,13 +66,13 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |osMinimumVersion|String|Mindestversion von IOS.|
 |osMaximumVersion|String|Höchstversion von IOS.|
 |systemIntegrityProtectionEnabled|Boolean|Gibt an, ob auf Geräten der Systemintegritätsschutz aktiviert sein muss.|
-|deviceThreatProtectionEnabled|Boolescher Wert|Legt fest, dass auf Geräten der Gerätebedrohungsschutz aktiviert sein muss.|
+|deviceThreatProtectionEnabled|Boolean|Legt fest, dass auf Geräten der Gerätebedrohungsschutz aktiviert sein muss.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Legt die Mindestrisikostufe fest, ab der Mobile Threat Protection einen Konformitätsverstoß melden soll. Mögliche Werte sind: `unavailable`, `secured`, `low`, `medium`, `high` und `notSet`.|
 |storageRequireEncryption|Boolean|Gibt an, ob auf Mac OS-Geräten die Verschlüsselung erforderlich ist.|
 |gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|System und den Datenschutz, der bestimmt, welche Download Speicherorte apps auf einem Mac OS-Gerät aus ausgeführt werden können. Mögliche Werte: sind `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers` und `anywhere`.|
-|firewallEnabled|Boolesch|Gibt an, ob die Firewall oder nicht aktiviert werden soll.|
-|firewallBlockAllIncoming|Boolesch|Entspricht der Option "Alle eingehende Verbindungen blockieren".|
-|firewallEnableStealthMode|Boolesch|Entspricht "Enable Tarnmodus."|
+|firewallEnabled|Boolean|Gibt an, ob die Firewall oder nicht aktiviert werden soll.|
+|firewallBlockAllIncoming|Boolean|Entspricht der Option "Alle eingehende Verbindungen blockieren".|
+|firewallEnableStealthMode|Boolean|Entspricht "Enable Tarnmodus."|
 
 
 
