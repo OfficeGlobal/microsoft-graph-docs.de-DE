@@ -2,12 +2,13 @@
 title: targetedManagedAppProtections auflisten
 description: Listet die Eigenschaften und Beziehungen von Objekten des Typs targetedManagedAppProtection auf.
 author: tfitzmac
-ms.openlocfilehash: 11bae99884d85d268a83cd04277687fcd1fe5151
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc9ede48143879e1cefbaed56a195f5c0a1e7bab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349378"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834867"
 ---
 # <a name="list-targetedmanagedappprotections"></a>targetedManagedAppProtections auflisten
 
@@ -37,10 +38,10 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: Erstellen von governanceRoleAssignmentRequest
 description: Erstellen Sie eine Rolle Zuordnung Anforderung zur Darstellung der Operation in einer rollenzuweisung angezeigt werden soll. Die folgende Tabelle enthält die Vorgänge.
-ms.openlocfilehash: 775cc8e22e7d273bfe387e5be2cc183d3d919a38
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 09adb824147dba745649efc7589ca763f815278d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191172"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823772"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Erstellen von governanceRoleAssignmentRequest
 
@@ -53,12 +54,12 @@ Geben Sie im Textkörper Anforderung eine JSON-Darstellung eines [GovernanceRole
 
 | Eigenschaft     | Typ    |Erforderlich|  Beschreibung|
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Ja|Die ID der Ressource.|
+|resourceId|Zeichenfolge|Ja|Die ID der Ressource.|
 |roleDefinitionId|String|Ja|Die ID der Rollendefinition.|
 |subjectId|String|Ja|Die ID des Betreffs.|
 |assignmentState|String|Ja|Der Status der Zuordnung. Der Wert kann sein ``Eligible`` und ``Active``.|
-|Typ|String|Ja|Der Anforderungstyp. Der Wert kann sein `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`und `AdminExtend`.|
-|Grund|String| |Der Grund muss bereitgestellt werden, für die Rolle Zuordnung Anforderung zur Überwachung und Zweck überprüfen.|
+|type|String|Ja|Der Anforderungstyp. Der Wert kann sein `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`und `AdminExtend`.|
+|Grund|Zeichenfolge| |Der Grund muss bereitgestellt werden, für die Rolle Zuordnung Anforderung zur Überwachung und Zweck überprüfen.|
 |Zeitplan|[governanceSchedule](../resources/governanceschedule.md)| | Den Zeitplan der Rolle Zuordnung Anforderung. Für Anforderungstyp `UserAdd`, `AdminAdd`, `AdminUpdate`, und `AdminExtend`, es ist erforderlich.|
 
 ## <a name="response"></a>Antwort
@@ -87,12 +88,12 @@ In diesem Beispiel weisen Sie Administratoren Benutzer nawu@fimdev.net Rolle Abr
 
 | Eigenschaft     | Typ    |Erforderlich|  Wert |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Ja|\<resourceId\>|
+|resourceId|Zeichenfolge|Ja|\<resourceId\>|
 |roleDefinitionId|String|Ja|\<roleDefinitionId\>|
 |subjectId|String|Ja|\<subjectId\>|
 |assignmentState|String|Ja| Berechtigte / Active|
-|Typ|String|Ja| AdminAdd|
-|Grund|String| hängt von der Rolle Einstellungen||
+|type|String|Ja| AdminAdd|
+|Grund|Zeichenfolge| hängt von der Rolle Einstellungen||
 |Zeitplan|[governanceSchedule](../resources/governanceschedule.md)|Ja|        |
 ##### <a name="request"></a>Anforderung
 <!-- {
@@ -170,12 +171,12 @@ In diesem Beispiel wird der Benutzer nawu@fimdev.net zu auswählbaren Abrechnung
 
 | Eigenschaft     | Typ    |Erforderlich|  Wert |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Ja|\<resourceId\>|
+|resourceId|Zeichenfolge|Ja|\<resourceId\>|
 |roleDefinitionId|String|Ja|\<roleDefinitionId\>|
 |subjectId|String|Ja|\<subjectId\>|
 |assignmentState|String|Ja| Aktiv|
-|Typ|String|Ja| UserAdd|
-|Grund|String| hängt von der Rolle Einstellungen||
+|type|String|Ja| UserAdd|
+|Grund|Zeichenfolge| hängt von der Rolle Einstellungen||
 |Zeitplan|[governanceSchedule](../resources/governanceschedule.md)|Ja|        |
 ##### <a name="request"></a>Anforderung
 <!-- {
@@ -265,11 +266,11 @@ In diesem Beispiel deaktiviert die nawu@fimdev.net Benutzer die aktive Abrechnun
 
 | Eigenschaft     | Typ    |Erforderlich|  Wert |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Ja|\<resourceId\>|
+|resourceId|Zeichenfolge|Ja|\<resourceId\>|
 |roleDefinitionId|String|Ja|\<roleDefinitionId\>|
 |subjectId|String|Ja|\<subjectId\>|
 |assignmentState|String|Ja| Aktiv|
-|Typ|String|Ja| UserRemove|
+|type|String|Ja| UserRemove|
 |Grund|String| Nein||
 |Zeitplan|[governanceSchedule](../resources/governanceschedule.md)|Nein|        |
 ##### <a name="request"></a>Anforderung
@@ -328,11 +329,11 @@ In diesem Beispiel Entfernen von Administratoren die nawu@fimdev.net Benutzer au
  
 | Eigenschaft     | Typ    |Erforderlich|  Wert |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Ja|\<resourceId\>|
+|resourceId|Zeichenfolge|Ja|\<resourceId\>|
 |roleDefinitionId|String|Ja|\<roleDefinitionId\>|
 |subjectId|String|Ja|\<subjectId\>|
 |assignmentState|String|Ja| Berechtigte / Active|
-|Typ|String|Ja| AdminRemove|
+|type|String|Ja| AdminRemove|
 |Grund|String| Nein||
 |Zeitplan|[governanceSchedule](../resources/governanceschedule.md)|Nein|        |
 ##### <a name="request"></a>Anforderung
@@ -390,12 +391,12 @@ In diesem Beispiel aktualisieren Administratoren die rollenzuweisung für den Be
 
 | Eigenschaft     | Typ    |Erforderlich|  Wert |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Ja|\<resourceId\>|
+|resourceId|Zeichenfolge|Ja|\<resourceId\>|
 |roleDefinitionId|String|Ja|\<roleDefinitionId\>|
 |subjectId|String|Ja|\<subjectId\>|
 |assignmentState|String|Ja| Berechtigte / Active|
-|Typ|String|Ja| AdminUpdate|
-|Grund|String| hängt von roleSettings||
+|type|String|Ja| AdminUpdate|
+|Grund|Zeichenfolge| hängt von roleSettings||
 |Zeitplan|[governanceSchedule](../resources/governanceschedule.md)|Ja|        |
 ##### <a name="request"></a>Anforderung
 <!-- {
@@ -470,12 +471,12 @@ In diesem Beispiel wird erweitert die ablaufende rollenzuweisung für Benutzer A
  
 | Eigenschaft     | Typ    |Erforderlich|  Wert |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Ja|\<resourceId\>|
+|resourceId|Zeichenfolge|Ja|\<resourceId\>|
 |roleDefinitionId|String|Ja|\<roleDefinitionId\>|
 |subjectId|String|Ja|\<subjectId\>|
 |assignmentState|String|Ja| Berechtigte / Active |
-|Typ|String|Ja| AdminExtend|
-|Grund|String| hängt von roleSettings||
+|type|String|Ja| AdminExtend|
+|Grund|Zeichenfolge| hängt von roleSettings||
 |Zeitplan|[governanceSchedule](../resources/governanceschedule.md)|Ja|        |
 ##### <a name="request"></a>Anforderung
 <!-- {

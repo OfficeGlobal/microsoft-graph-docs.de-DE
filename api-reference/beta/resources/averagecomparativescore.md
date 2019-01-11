@@ -1,12 +1,13 @@
 ---
 title: " Ressourcentyp averageComparativeScore"
 description: Diese Ressource enthält verschiedene unterschiedliche Faktoren, die von unterschiedlichen Bereichen (beispielsweise Durchschnitt von Branche vertikal, durchschnittliche vom Unternehmen Arbeitsplatz Größe usw.) und Steuerelement Kategorie (Identität, Daten, Gerät, Apps, Infrastruktur) basiert.
-ms.openlocfilehash: 08e4ec60788b21476d8f1491ab5548c7a4ca2e01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c32c1349edd70e80c1bf0fb12a36bd07e06ed39f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059442"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834594"
 ---
 #  <a name="averagecomparativescore-resource-type"></a>Ressourcentyp averageComparativeScore
 
@@ -14,7 +15,7 @@ Diese Ressource enthält verschiedene unterschiedliche Faktoren, die von untersc
 
 |Eigenschaft |Typ |Beschreibung |
 |:--|:--|:--|
-|   Basis   |   String  |   Typ des Gültigkeitsbereichs (durch AllTenants TotalSeats, IndustryTypes).  |
+|   Basis   |   Zeichenfolge  |   Typ des Gültigkeitsbereichs (durch AllTenants TotalSeats, IndustryTypes).  |
 |   averageScore    |   Gleitkommawert mit doppelter Genauigkeit  | Durchschnittliche Punktzahl innerhalb der angegebenen Basis. |
 |   deviceScore |   Gleitkommawert mit doppelter Genauigkeit  | Durchschnittliche Punktzahl innerhalb der angegebenen Basis. |
 |   dataScore   |   Gleitkommawert mit doppelter Genauigkeit  | Durchschnittliche Punktzahl innerhalb der angegebenen Basis. |

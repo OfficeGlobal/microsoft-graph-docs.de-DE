@@ -2,12 +2,13 @@
 title: Aktion „assign“
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 1f47faca161f1db194307ca6b5f066423bb93f57
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 540037998280858e50cf1ee6a9996664ff45d1c3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330808"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836974"
 ---
 # <a name="assign-action"></a>Aktion „assign“
 
@@ -39,8 +40,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.

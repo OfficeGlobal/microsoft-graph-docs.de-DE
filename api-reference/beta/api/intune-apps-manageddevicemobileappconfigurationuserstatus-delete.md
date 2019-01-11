@@ -2,12 +2,13 @@
 title: managedDeviceMobileAppConfigurationUserStatus löschen
 description: Löscht ein managedDeviceMobileAppConfigurationUserStatus-Objekt.
 author: tfitzmac
-ms.openlocfilehash: da10106643b51091235de760b6478e4967bd11bf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 381b6982d80f2e3f9017d3f3a5c490142c5115a2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343148"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823849"
 ---
 # <a name="delete-manageddevicemobileappconfigurationuserstatus"></a>managedDeviceMobileAppConfigurationUserStatus löschen
 
@@ -38,8 +39,8 @@ DELETE /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvis
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

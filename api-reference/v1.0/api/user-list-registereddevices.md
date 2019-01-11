@@ -1,12 +1,13 @@
 ---
 title: registeredDevices auflisten
 description: Mit dieser API können Sie eine Liste aller registrierten Geräte eines Benutzers abrufen.
-ms.openlocfilehash: be157572183b165dfb3bd6e23fd7b7a46f29e94a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 63d6f3333be40a6e62cfe0622030ff39e5482707
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018200"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834825"
 ---
 # <a name="list-registereddevices"></a>registeredDevices auflisten
 
@@ -28,10 +29,10 @@ GET /users/{id | userPrincipalName}/registeredDevices
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
-| Accept  | application/json|
+| Annehmen  | application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

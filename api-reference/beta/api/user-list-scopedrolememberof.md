@@ -2,12 +2,13 @@
 title: scopedAdministratorOf auflisten
 description: Abrufen einer Liste der ScopedRoleMembership für den Benutzer.
 author: dkershaw10
-ms.openlocfilehash: 48aead850e7f7b90a38229da1016007aeec40a9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2969fcab8f5df4cdf9bfc21d18aa8916b39ca20f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357344"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836148"
 ---
 # <a name="list-scopedadministratorof"></a>scopedAdministratorOf auflisten
 
@@ -35,7 +36,7 @@ GET /users/{id}/scopedAdministratorOf
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

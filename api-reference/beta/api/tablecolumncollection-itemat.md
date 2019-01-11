@@ -2,12 +2,13 @@
 title: 'TableColumnCollection: ItemAt'
 description: Ruft eine Spalte anhand ihrer Position in der Auflistung ab.
 author: lumine2008
-ms.openlocfilehash: bcb72a511bfed9adcc0219a5b85402b1931a795d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0cd2c587c8520fc7c76f98f07d540ab0cd934baf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314063"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836162"
 ---
 # <a name="tablecolumncollection-itemat"></a>TableColumnCollection: ItemAt
 

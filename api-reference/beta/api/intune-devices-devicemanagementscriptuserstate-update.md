@@ -2,12 +2,13 @@
 title: DeviceManagementScriptUserState aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines DeviceManagementScriptUserState-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 4a2601df84b022d13fd45ef3c506a4ee229fe6ad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e5c3f991a8deaa3a68e7434426cc51c7ea205ef3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307833"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806909"
 ---
 # <a name="update-devicemanagementscriptuserstate"></a>DeviceManagementScriptUserState aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [DeviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) eine JSON-Darstellung.
@@ -47,10 +48,10 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Das Gerät Management Skript Zustand Benutzerentität-Taste.|
+|id|Zeichenfolge|Das Gerät Management Skript Zustand Benutzerentität-Taste.|
 |successDeviceCount|Int32|Anzahl der Erfolg Geräte für bestimmte Benutzer.|
 |errorDeviceCount|Int32|Anzahl der Fehler Geräte für bestimmte Benutzer.|
-|userPrincipalName|String|Prinzip-Benutzernamen eines bestimmten Benutzers.|
+|userPrincipalName|Zeichenfolge|Prinzip-Benutzernamen eines bestimmten Benutzers.|
 
 
 

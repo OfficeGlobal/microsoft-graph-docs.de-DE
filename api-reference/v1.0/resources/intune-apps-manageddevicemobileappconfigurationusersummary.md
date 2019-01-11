@@ -1,12 +1,13 @@
 ---
 title: managedDeviceMobileAppConfigurationUserSummary-Ressourcentyp
 description: Enthält Eigenschaften, geerbte Eigenschaften und Aktionen für eine Zusammenfassung des Benutzerstatus von MDM-Konfigurationen mobiler Apps.
-ms.openlocfilehash: 7d49218220854b2d8bba38b74d2103adace810ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e543c6d70906b678e90ba1598c46a039430745e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016882"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836225"
 ---
 # <a name="manageddevicemobileappconfigurationusersummary-resource-type"></a>managedDeviceMobileAppConfigurationUserSummary-Ressourcentyp
 
@@ -22,7 +23,7 @@ Enthält Eigenschaften, geerbte Eigenschaften und Aktionen für eine Zusammenfas
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |pendingCount|Int32|Anzahl der ausstehenden Benutzer|
 |notApplicableCount|Int32|Anzahl der Benutzer nicht zutreffend|
 |successCount|Int32|Anzahl der erfolgreichen Benutzer|

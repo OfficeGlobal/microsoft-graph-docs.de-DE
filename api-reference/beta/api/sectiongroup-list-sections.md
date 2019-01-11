@@ -1,12 +1,13 @@
 ---
 title: Abschnitte auflisten
 description: Mit dieser API können Sie eine Liste von Objekten des Typs section aus der angegebenen Abschnittsgruppe abrufen.
-ms.openlocfilehash: 2660cd35c103017ff4f3aa6e070f151b290658aa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cf31f8e132019b8afce204d0058516fd330f45d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062834"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836099"
 ---
 # <a name="list-sections"></a>Abschnitte auflisten
 
@@ -42,7 +43,7 @@ Die Standardabfrage erweitert `parentNotebook` und wählt die zugehörigen Eigen
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
-| Accept | string | `application/json` |
+| Annehmen | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: extension-Ressourcentyp
 description: Ein abstrakter Typ für die Unterstützung des offenen Typs openTypeExtension von OData v4.
-ms.openlocfilehash: 1b3d735e0997ca128b539bff9a05c9c7c56799df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2633c8a28c1be1a670a80834ce869b5156fc1de9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016255"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834671"
 ---
 # <a name="extension-resource-type"></a>extension-Ressourcentyp
 
@@ -36,7 +37,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|String| Schreibgeschützt.|
+|id|Zeichenfolge| Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

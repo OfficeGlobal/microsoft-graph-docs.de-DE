@@ -2,12 +2,13 @@
 title: Anlagen auflisten
 description: Mit dieser API können Sie eine Liste der einer Nachricht angefügten Objekte des Typs attachment abrufen.
 author: angelgolfer-ms
-ms.openlocfilehash: 9f083af679335eb0bf54fa9bd0eadfaa7a5a1250
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0d89d05c80a8d2437f4940ace2a046f93ba67b82
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350866"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806685"
 ---
 # <a name="list-attachments"></a>Anlagen auflisten
 
@@ -50,7 +51,7 @@ GET https://graph.microsoft.com/beta/me/messages/{id}?$expand=attachments
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

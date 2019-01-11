@@ -2,12 +2,13 @@
 title: windows10GeneralConfiguration erstellen
 description: Erstellt ein neues windows10GeneralConfiguration-Objekt.
 author: tfitzmac
-ms.openlocfilehash: 7c4eaff2e9def33f4c79e4f42f0db30e2aa98d8a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 13e2dc362bb45e8948244f7d29c1ff74e164fb88
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356665"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835784"
 ---
 # <a name="create-windows10generalconfiguration"></a>windows10GeneralConfiguration erstellen
 
@@ -33,10 +34,10 @@ POST /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des windows10GeneralConfiguration-Objekts an.
@@ -45,18 +46,18 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|enterpriseCloudPrintDiscoveryEndPoint|String|Der Endpunkt zur Ermittlung von Clouddruckern.|
-|enterpriseCloudPrintOAuthAuthority|String|Authentifizierungsendpunkt zum Abrufen von OAuth-Token.|
+|enterpriseCloudPrintDiscoveryEndPoint|Zeichenfolge|Der Endpunkt zur Ermittlung von Clouddruckern.|
+|enterpriseCloudPrintOAuthAuthority|Zeichenfolge|Authentifizierungsendpunkt zum Abrufen von OAuth-Token.|
 |enterpriseCloudPrintOAuthClientIdentifier|String|GUID einer Clientanwendung, die berechtigt ist, OAuth-Token von der OAuth Authority.|
-|enterpriseCloudPrintResourceIdentifier|String|OAuth-Ressourcen-URI für den Druckdienst, wie im Azure-Portal konfiguriert.|
+|enterpriseCloudPrintResourceIdentifier|Zeichenfolge|OAuth-Ressourcen-URI für den Druckdienst, wie im Azure-Portal konfiguriert.|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|Maximale Anzahl von Druckern, die von einem Ermittlungsendpunkt abgefragt werden sollen. Dies ist nur eine Mobileinstellung. Gültige Werte: 1 bis 65535.|
-|enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|OAuth-Ressourcen-URI für Druckerermittlungsdienst, wie im Azure-Portal konfiguriert.|
+|enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|Zeichenfolge|OAuth-Ressourcen-URI für Druckerermittlungsdienst, wie im Azure-Portal konfiguriert.|
 |searchBlockDiacritics|Boolescher Wert|Gibt an, ob die Suche diakritische Zeichen verwenden kann.|
 |searchDisableAutoLanguageDetection|Boolescher Wert|Gibt an, ob die automatische Spracherkennung bei der Indizierung von Inhalten und Eigenschaften verwendet werden soll.|
 |searchDisableIndexingEncryptedItems|Boolescher Wert|Gibt an, ob die Indizierung WIP-geschützter Elemente blockiert werden soll, um zu verhindern, dass diese in Suchergebnissen für Cortana oder Explorer angezeigt werden.|
@@ -250,7 +251,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |experienceBlockErrorDialogWhenNoSIM|Boolescher Wert|Gibt an, ob das Fehlerdialogfeld angezeigt werden soll, wenn keine SIM-Karte erkannt wird.|
 |experienceBlockTaskSwitcher|Boolescher Wert|Gibt an, ob die Programmumschaltung auf dem Gerät aktiviert werden soll.|
 |logonBlockFastUserSwitching|Boolescher Wert|Verhindert, dass schnell zwischen Benutzern umgeschaltet werden kann, die gleichzeitig ohne Abmelden angemeldet sind.|
-|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Boolesch|Gibt an, ob das Gerät für die Verbindung mit dem Netzwerk erforderlich ist.|
+|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Boolescher Wert|Gibt an, ob das Gerät für die Verbindung mit dem Netzwerk erforderlich ist.|
 
 
 

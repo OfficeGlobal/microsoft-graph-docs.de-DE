@@ -2,12 +2,13 @@
 title: ChartSeries-Ressourcentyp
 description: Stellt eine Datenreihe in einem Diagramm dar.
 author: lumine2008
-ms.openlocfilehash: 60cd3e29f1b2c2f106fae0fdfb76b18657d68120
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a3a19793629a5e100830565e224541930e2180de
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314490"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834895"
 ---
 # <a name="chartseries-resource-type"></a>ChartSeries-Ressourcentyp
 
@@ -33,7 +34,7 @@ Stellt eine Datenreihe in einem Diagramm dar.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Format|[WorkbookChartSeriesFormat](chartseriesformat.md)|Stellt die Formatierung für eine Diagrammdatenreihe dar, einschließlich Füllung und Linienformatierung. Schreibgeschützt.|
+|format|[WorkbookChartSeriesFormat](chartseriesformat.md)|Stellt die Formatierung für eine Diagrammdatenreihe dar, einschließlich Füllung und Linienformatierung. Schreibgeschützt.|
 |points|[WorkbookChartPoint](chartpoint.md) -Auflistung|Stellt eine Sammlung aller Punkte in der Datenreihe dar. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung

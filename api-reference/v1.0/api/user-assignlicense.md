@@ -2,12 +2,13 @@
 title: assignLicense
 description: Fügt Abonnements für den Benutzer hinzu bzw. entfernt sie. Sie können auch bestimmte Pläne aktivieren oder deaktivieren, die mit einem Abonnement verknüpft sind.
 author: dkershaw10
-ms.openlocfilehash: 26c65c0597d5c066af1388087aef07e181076e7b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: a32ca24157581c04c2a1dd591d438769956bd43a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326397"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835203"
 ---
 # <a name="assignlicense"></a>assignLicense
 Fügt Abonnements für den Benutzer hinzu bzw. entfernt sie. Sie können auch bestimmte Pläne aktivieren oder deaktivieren, die mit einem Abonnement verknüpft sind.

@@ -2,12 +2,13 @@
 title: Abrufen von iosEduDeviceConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des IosEduDeviceConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: bd06e41b78c39ae05329c714874e7d5906f8ffe5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4bbc011a2cb9596d2aa384936847f4c8b361957a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356098"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836869"
 ---
 # <a name="get-iosedudeviceconfiguration"></a>Abrufen von iosEduDeviceConfiguration
 
@@ -39,10 +40,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

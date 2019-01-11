@@ -2,12 +2,13 @@
 title: Ressourcentyp meetingParticipantInfo
 description: Informationen über einen Teilnehmer an einer Besprechung.
 author: VinodRavichandran
-ms.openlocfilehash: 2bbb410ea26640ec05d66b5beb0c4b4ea24a42bd
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: d7b5ae17bd3bfb566bce0da9814b86aab98173da
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380198"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834258"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>Ressourcentyp meetingParticipantInfo
 
@@ -20,7 +21,7 @@ Informationen über einen Teilnehmer an einer Besprechung.
 | Eigenschaft       | Typ                          | Beschreibung                              |
 |:---------------|:------------------------------|:-----------------------------------------|
 | Identität       | [identitySet](identityset.md) | Identitätsinformationen des Teilnehmers. |
-| UPN            | Zeichenfolge                        | Benutzerprinzipalname des Teilnehmers.  |
+| UPN            | String                        | Benutzerprinzipalname des Teilnehmers.  |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
