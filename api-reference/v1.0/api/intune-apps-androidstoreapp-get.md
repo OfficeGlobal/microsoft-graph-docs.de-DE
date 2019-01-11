@@ -2,12 +2,13 @@
 title: Abrufen von „androidStoreApp“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs androidStoreApp.
 author: tfitzmac
-ms.openlocfilehash: 8ab705f2b8c009ecc7ab6f27257b6bf4572188fa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2339db20fe0359fc3949671c75a3330cf98488e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351464"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833499"
 ---
 # <a name="get-androidstoreapp"></a>Abrufen von „androidStoreApp“
 
@@ -37,8 +38,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
