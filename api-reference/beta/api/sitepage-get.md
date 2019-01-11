@@ -3,42 +3,43 @@ author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
 title: Abrufen einer Seite in einer Website
-ms.openlocfilehash: e2c2c9126700bebc0be6b9583805a86a8c256a5d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a212dab1c7a15a51d525b332ca5822da8fe28bdd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060642"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806671"
 ---
-# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="2bcef-102">Abrufen einer Seite in der Liste der Website-Seiten einer Website</span><span class="sxs-lookup"><span data-stu-id="2bcef-102">Get a page in the site pages list of a site</span></span>
+# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="7f7f5-102">Abrufen einer Seite in der Liste der Website-Seiten einer Website</span><span class="sxs-lookup"><span data-stu-id="7f7f5-102">Get a page in the site pages list of a site</span></span>
 
-> <span data-ttu-id="2bcef-103">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="2bcef-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2bcef-104">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="2bcef-104">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="7f7f5-103">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="7f7f5-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="7f7f5-104">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="7f7f5-104">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="2bcef-105">Gibt die Metadaten für eine [SitePage][] in der Website-Seiten- [Liste][] in einer [Website][]zurück.</span><span class="sxs-lookup"><span data-stu-id="2bcef-105">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
+<span data-ttu-id="7f7f5-105">Gibt die Metadaten für eine [SitePage][] in der Website-Seiten- [Liste][] in einer [Website][]zurück.</span><span class="sxs-lookup"><span data-stu-id="7f7f5-105">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="2bcef-109">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="2bcef-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7f7f5-109">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="7f7f5-109">Permissions</span></span>
 
-<span data-ttu-id="2bcef-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2bcef-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7f7f5-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7f7f5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2bcef-112">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="2bcef-112">Permission type</span></span>      | <span data-ttu-id="2bcef-113">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="2bcef-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7f7f5-112">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="7f7f5-112">Permission type</span></span>      | <span data-ttu-id="7f7f5-113">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="7f7f5-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2bcef-114">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="2bcef-114">Delegated (work or school account)</span></span> | <span data-ttu-id="2bcef-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2bcef-115">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="2bcef-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="2bcef-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2bcef-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="2bcef-117">Not supported.</span></span>    |
-|<span data-ttu-id="2bcef-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="2bcef-118">Application</span></span> | <span data-ttu-id="2bcef-119">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2bcef-119">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="7f7f5-114">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="7f7f5-114">Delegated (work or school account)</span></span> | <span data-ttu-id="7f7f5-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7f7f5-115">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7f7f5-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="7f7f5-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7f7f5-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="7f7f5-117">Not supported.</span></span>    |
+|<span data-ttu-id="7f7f5-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="7f7f5-118">Application</span></span> | <span data-ttu-id="7f7f5-119">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7f7f5-119">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2bcef-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="2bcef-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7f7f5-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="7f7f5-120">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/pages/{page-id}
 ```
 
-## <a name="example"></a><span data-ttu-id="2bcef-121">Beispiel</span><span class="sxs-lookup"><span data-stu-id="2bcef-121">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7f7f5-121">Beispiel</span><span class="sxs-lookup"><span data-stu-id="7f7f5-121">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="2bcef-122">Anforderung</span><span class="sxs-lookup"><span data-stu-id="2bcef-122">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="7f7f5-122">Anforderung</span><span class="sxs-lookup"><span data-stu-id="7f7f5-122">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
@@ -46,7 +47,7 @@ GET /sites/{site-id}/pages/{page-id}
 GET /sites/{site-id}/pages/{page-id}
 ```
 
-##### <a name="response"></a><span data-ttu-id="2bcef-123">Antwort</span><span class="sxs-lookup"><span data-stu-id="2bcef-123">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="7f7f5-123">Antwort</span><span class="sxs-lookup"><span data-stu-id="7f7f5-123">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
