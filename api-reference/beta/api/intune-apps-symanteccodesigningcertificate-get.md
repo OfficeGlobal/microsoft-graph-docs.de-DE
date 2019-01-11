@@ -2,12 +2,13 @@
 title: Abrufen von symantecCodeSigningCertificate
 description: Lesen Sie Eigenschaften und Beziehungen des SymantecCodeSigningCertificate-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 76e965e3f8281bcfc8dab5a56e7f9a7491a31574
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4ec92d04b65d10dec1ec8cb91aaae01e3323e197
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361285"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819316"
 ---
 # <a name="get-symanteccodesigningcertificate"></a>Abrufen von symantecCodeSigningCertificate
 
@@ -37,10 +38,10 @@ GET /deviceAppManagement/symantecCodeSigningCertificate
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

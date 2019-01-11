@@ -1,12 +1,13 @@
 ---
 title: Datenerweiterung abrufen
 description: Dieser Artikel beschreibt, wie Sie eine offene Erweiterung (openTypeExtension-Objekt) basierend auf ihrem Namen oder ihrem vollqualifizierten Namen abrufen können.
-ms.openlocfilehash: 1de9921bb9b2275d852de6fa92c1b6230a671555
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 19b59bcbcbbe829f6a1a9a323676c07f26f97f09
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27015985"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819516"
 ---
 # <a name="get-open-extension"></a>Datenerweiterung abrufen
 
@@ -28,10 +29,10 @@ Je nach der Ressource, die die Erweiterung und die Berechtigung enthält Typ (de
 |:-----|:-----|:-----|:-----|
 | [Gerät](../resources/device.md) | Directory.Read.All | Nicht unterstützt | Device.ReadWrite.All |
 | [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-| [Gruppe](../resources/group.md) | Group.Read.All | Nicht unterstützt | Group.Read.All |
+| [group](../resources/group.md) | Group.Read.All | Nicht unterstützt | Group.Read.All |
 | [group event](../resources/event.md) | Group.Read.All | Nicht unterstützt | Nicht unterstützt |
 | [group post](../resources/post.md) | Group.Read.All | Nicht unterstützt | Group.Read.All |
-| [Nachricht](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
 | [organization](../resources/organization.md) | User.Read | Nicht unterstützt | Nicht unterstützt |
 | [personal contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [Benutzer](../resources/user.md) | User.Read | User.Read | User.Read.All |

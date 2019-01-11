@@ -1,12 +1,13 @@
 ---
 title: customTimeZone-Ressourcentyp
 description: Stellt eine Zeitzone dar, in der der Übergang von Standardzeit zu Sommerzeit oder umgekehrt nicht Standard ist.
-ms.openlocfilehash: 83375c96e4247cb0ddf2d17b1bede2c295f0b27f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bad1a190581592d2d9465284bf8ab1c41fe2370a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058250"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818274"
 ---
 # <a name="customtimezone-resource-type"></a>customTimeZone-Ressourcentyp
 

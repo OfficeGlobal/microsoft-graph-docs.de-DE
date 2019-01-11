@@ -1,12 +1,13 @@
 ---
 title: Erweiterte einwertige Eigenschaft erstellen
 description: 'Dient zum Erstellen einer oder mehrerer erweiterter einwertiger Eigenschaften in einer neuen oder vorhandenen Instanz einer Ressource. '
-ms.openlocfilehash: 3dee727cb238241aba971cb077495f02514b77dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cf98c3e2b43192e5c8b636d2f67fc471af82da6b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018390"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819866"
 ---
 # <a name="create-single-value-extended-property"></a>Erweiterte einwertige Eigenschaft erstellen
 
@@ -19,7 +20,7 @@ Die folgenden Benutzerressourcen werden unterstützt:
 - [contactFolder](../resources/contactfolder.md) 
 - [Ereignis](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [Nachricht](../resources/message.md)
+- [message](../resources/message.md)
 
 Darüber hinaus werden die folgenden Gruppenressourcen unterstützt:
 

@@ -2,12 +2,13 @@
 title: iosUpdateDeviceStatus aktualisieren
 description: Aktualisieren der Eigenschaften eines iosUpdateDeviceStatus-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 623417eb92a557745c9c1d1d04cc5b7f9677bd6c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0f3b6e10719ac13bb8fb483a837154cd83da553a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359304"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820363"
 ---
 # <a name="update-iosupdatedevicestatus"></a>iosUpdateDeviceStatus aktualisieren
 
@@ -33,10 +34,10 @@ PATCH /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON Darstellung für das Objekt des Typs [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) an.

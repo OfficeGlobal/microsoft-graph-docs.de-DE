@@ -2,12 +2,13 @@
 title: WindowsInformationProtectionEnforcementLevel Enum-Typ
 description: Mögliche Werte für WIP Erzwingung Schutzebenen
 author: tfitzmac
-ms.openlocfilehash: 84f60f0e4f59206d420219e8547160c85202f9cf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b3ffff4e1d78ed8796f4b5be8768db99d6b4ae3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313265"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820188"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>WindowsInformationProtectionEnforcementLevel Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27313265"
 
 Mögliche Werte für WIP Erzwingung Schutzebenen
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |noProtection|0|Kein Schutz Erzwingung|
 |encryptAndAuditOnly|1|Verschlüsseln und überwachen nur|

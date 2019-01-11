@@ -2,12 +2,13 @@
 title: Abrufen von „deviceEnrollmentPlatformRestrictionsConfiguration“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs deviceEnrollmentPlatformRestrictionsConfiguration.
 author: tfitzmac
-ms.openlocfilehash: da7f93e75c81034057cae2cdffda64b2ce9c1f85
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1e808938328cace1add367faa163e57f5a083cc5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301239"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821940"
 ---
 # <a name="get-deviceenrollmentplatformrestrictionsconfiguration"></a>Abrufen von „deviceEnrollmentPlatformRestrictionsConfiguration“
 
@@ -37,10 +38,10 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

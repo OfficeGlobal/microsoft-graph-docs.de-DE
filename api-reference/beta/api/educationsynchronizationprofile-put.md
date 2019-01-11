@@ -2,12 +2,13 @@
 title: Aktualisieren einer educationSynchronizationProfile
 description: Aktualisieren Sie die Eigenschaften für ein vorhandenes Schule Daten Synchronisierung Profil im Mandanten.
 author: mmast-msft
-ms.openlocfilehash: 17bf46eb4ebd6783f7bafba828ff1bcb7ad5ac48
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b9f5ee2866d1e898035355a389b0358347d4d00b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361467"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818529"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>Aktualisieren einer educationSynchronizationProfile
 
@@ -33,7 +34,7 @@ PUT /synchronizationProfiles
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich.  |
+| Authorization  | string  | Bearer {token}. Erforderlich.  |
 | Content-Type | string | application/json. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext

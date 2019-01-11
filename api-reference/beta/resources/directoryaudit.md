@@ -2,12 +2,13 @@
 title: Ressourcentyp directoryAudit
 description: Diese Ressource stellt die Directory Audit Elemente mit seiner Sammlung
 author: lleonard-msft
-ms.openlocfilehash: 5cbfc1320f721afd71ed3f196bb94a5c716d2c5c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: f3b1aa12c18205379220a924be81b53bf6014900
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312789"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820510"
 ---
 # <a name="directoryaudit-resource-type"></a>Ressourcentyp directoryAudit
 Diese Ressource stellt die Directory Audit Elemente mit seiner Sammlung

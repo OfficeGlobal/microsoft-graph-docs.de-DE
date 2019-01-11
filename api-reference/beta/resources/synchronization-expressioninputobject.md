@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp expressionInputObject
 description: 'Stellt ein Objekt als Eingabe Testdaten verwendet werden bei der [SynchronizationSchema: ParseExpression](../api/synchronization_synchronizationschema_parseexpression.md) Aktion ausführt Ausdruck in Bezug auf.'
-ms.openlocfilehash: 06b7344f7e6418db0557f2b12dfa7e964b9d5ab7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: acf0fa5125d863224de6df76d46109b9888f8ddf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064998"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820111"
 ---
 # <a name="expressioninputobject-resource-type"></a>Ressourcentyp expressionInputObject
 

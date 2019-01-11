@@ -1,12 +1,13 @@
 ---
 title: Abrufen von bookingCustomer
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: 81037f38c65fe12bb97484170b5fb87b44221d57
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4c17b1d80b6f105c35554012313736fee46b0b36
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058066"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818711"
 ---
 # <a name="get-bookingcustomer"></a>Abrufen von bookingCustomer
 

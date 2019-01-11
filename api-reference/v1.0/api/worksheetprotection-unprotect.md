@@ -2,12 +2,13 @@
 title: 'WorksheetProtection: Schutz aufheben'
 description: Schutz eines Arbeitsblatts aufheben.
 author: lumine2008
-ms.openlocfilehash: b64c85d6d8f7c37b71c2082f1730045eeb6a055a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 662f047966f0d0e94c3facea8c3badbd8c775cdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319992"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823394"
 ---
 # <a name="worksheetprotection-unprotect"></a>WorksheetProtection: Schutz aufheben
 

@@ -2,12 +2,13 @@
 title: DayOfWeek Enum-Typ
 description: Mögliche Werte für einen Wochentag
 author: tfitzmac
-ms.openlocfilehash: d133d0f020e4b4e07ed26570569b8c97f7c1e3fb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 03f9a7816c9361b5baed52756816629efa544831
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309800"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820419"
 ---
 # <a name="dayofweek-enum-type"></a>DayOfWeek Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27309800"
 
 Mögliche Werte für einen Wochentag
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |Sonntag|0|Sonntag.|
 |Montag|1|Montag.|

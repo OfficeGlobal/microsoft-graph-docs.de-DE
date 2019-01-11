@@ -2,12 +2,13 @@
 title: mobileAppCategory löschen
 description: Löscht eine mobileAppCategory.
 author: tfitzmac
-ms.openlocfilehash: 8737606ce8381189749dfa6a0807a2b12b8b14f3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bf8d03f9c5b2dac5bc6b030ba63e73eb3d91ec2b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302646"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817955"
 ---
 # <a name="delete-mobileappcategory"></a>mobileAppCategory löschen
 
@@ -36,10 +37,10 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCatego
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

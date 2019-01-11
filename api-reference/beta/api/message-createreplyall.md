@@ -1,12 +1,13 @@
 ---
 title: 'message: createReplyAll'
 description: 'Erstellen Sie ein Entwurfs oder eine allen Antworten-Nachricht enthalten einen Kommentar oder aktualisieren Sie die Nachrichteneigenschaften '
-ms.openlocfilehash: 85cdef106fcd84764fe0d5f86d24ecef6b6ed29e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2d56f79b415232954434841d89cbdc95bafc1c6b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062079"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816926"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -50,7 +51,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |comment|String|Ein Kommentar, der eingefügt werden kann. Kann eine leere Zeichenfolge sein.|
-|message|[Nachricht](../resources/message.md)|Alle schreibbaren Eigenschaften, in die allen Antworten-Nachricht zu aktualisieren.|
+|message|[message](../resources/message.md)|Alle schreibbaren Eigenschaften, in die allen Antworten-Nachricht zu aktualisieren.|
 
 ## <a name="response"></a>Antwort
 

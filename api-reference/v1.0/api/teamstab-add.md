@@ -2,12 +2,13 @@
 title: Registerkarte Channel hinzufügen
 description: 'Fügt (Pins) einer Registerkarte an den angegebenen Kanal innerhalb eines Teams. '
 author: nkramer
-ms.openlocfilehash: 2e99e2297fd21f651b9461798c1a2236f9ffb321
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 13fbe0c259b990e2731e2ea6876ec94585e09978
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337506"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815519"
 ---
 # <a name="add-tab-to-channel"></a>Registerkarte Channel hinzufügen
 
@@ -33,7 +34,7 @@ POST /teams/{id}/channels/{id}/tabs
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

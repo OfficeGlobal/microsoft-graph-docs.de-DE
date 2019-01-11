@@ -2,12 +2,13 @@
 title: Erstellen von cartToClassAssociation
 description: Erstellen eines neuen CartToClassAssociation-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 3ed7ef088acca7908ece1e0b5e61797bb54a2e9b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6e3582f3f38258db75236b6cc877a64471da4b85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330653"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822708"
 ---
 # <a name="create-carttoclassassociation"></a>Erstellen von cartToClassAssociation
 
@@ -35,10 +36,10 @@ POST /deviceManagement/cartToClassAssociations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt CartToClassAssociation eine JSON-Darstellung.
@@ -47,12 +48,12 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität.|
+|id|Zeichenfolge|Schlüssel der Entität.|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
 |Version|Int32|Version der CartToClassAssociation.|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt).|
-|description|String|Admin bereitgestellte Beschreibung für die CartToClassAssociation.|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt).|
+|description|Zeichenfolge|Admin bereitgestellte Beschreibung für die CartToClassAssociation.|
 |deviceCartIds|Collection von Objekten des Typs „String“|Bezeichner des Geräts Toilettengebäude Klassen zugeordnet werden soll.|
 |classroomIds|Collection von Objekten des Typs „String“|Die IDs der Schulungsräume Gerät Toilettengebäude zugeordnet werden soll.|
 

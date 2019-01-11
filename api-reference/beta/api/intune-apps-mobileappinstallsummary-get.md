@@ -2,12 +2,13 @@
 title: Abrufen von mobileAppInstallSummary
 description: Lesen Sie Eigenschaften und Beziehungen des MobileAppInstallSummary-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 6f44cb4ae473ad8306f2fa3a4e61f93da900b380
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aaf1d3a0a1c64fb71e336de4e2a9c37142e72b86
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345801"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818116"
 ---
 # <a name="get-mobileappinstallsummary"></a>Abrufen von mobileAppInstallSummary
 
@@ -37,10 +38,10 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

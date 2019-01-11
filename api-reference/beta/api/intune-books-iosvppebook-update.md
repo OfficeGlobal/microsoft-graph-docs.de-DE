@@ -2,12 +2,13 @@
 title: Aktualisieren von „iosVppEBook“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs iosVppEBook.
 author: tfitzmac
-ms.openlocfilehash: 275b8fa6f1c60b0381df09716da8ccf5985611df
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b8af46ca4e5e75e362043cfc74fc2745072ac033
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358380"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823380"
 ---
 # <a name="update-iosvppebook"></a>Aktualisieren von „iosVppEBook“
 
@@ -35,10 +36,10 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [iosVppEBook](../resources/intune-books-iosvppebook.md) an.

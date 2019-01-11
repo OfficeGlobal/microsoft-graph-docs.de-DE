@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp plannerPlanContext
 description: Die Ressource **PlannerPlanContext** stellt die Beziehung zwischen einem PlannerPlan zu einer Benutzeroberfläche außerhalb Planner dar. Pläne in Planner können in anderen Erfahrungen, beispielsweise Microsoft-Teams, zum Nachverfolgen von Arbeit im Zusammenhang mit dieser Erfahrungen verfügbar gemacht werden.
-ms.openlocfilehash: 84512c03081a3e1fd2b15456c64cecf3f9c39435
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fb86dc2e6fb16fe4e8c2a77d52b3a03f94a1d08a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062299"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820979"
 ---
 # <a name="plannerplancontext-resource-type"></a>Ressourcentyp plannerPlanContext
 

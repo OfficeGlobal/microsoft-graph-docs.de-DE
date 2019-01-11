@@ -2,12 +2,13 @@
 title: Ressourcentyp officeConfiguration
 description: Singleton-Entität, die als Container für alle Geräteverwaltungsfunktionen dient.
 author: tfitzmac
-ms.openlocfilehash: bf74789d4debda00b21173ff2974db8224cd15f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 096a54db296181e58020bb9bc694056c0b9e949a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305544"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817258"
 ---
 # <a name="officeconfiguration-resource-type"></a>Ressourcentyp officeConfiguration
 

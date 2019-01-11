@@ -1,12 +1,13 @@
 ---
 title: E-Mail-Aktivitätsberichte
 description: Mithilfe der E-Mail-Aktivitätsberichte erhalten Sie eine allgemeine Übersicht über den E-Mail-Verkehr innerhalb Ihrer Organisation. Sie können auch das Widget E-Mail-Aktivitäten nutzen, um sich über Trends und Details bezüglich der E-Mail-Aktivität pro Benutzer in Ihrer Organisation zu informieren.
-ms.openlocfilehash: 94ec22ce024485f33f6ba47f90a4023845795b33
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 7ba0a381006a0eba3c0aec8adc864f8c15c5a5f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019779"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821427"
 ---
 # <a name="email-activity-reports"></a>E-Mail-Aktivitätsberichte
 

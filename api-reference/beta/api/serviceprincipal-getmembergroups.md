@@ -1,12 +1,13 @@
 ---
 title: 'ServicePrincipal: GetMemberGroups'
 description: Rufen Sie die Liste der Gruppen, bei denen diese Dienstprinzipal ein Mitglied ist.  Die Überprüfung ist transitiv.
-ms.openlocfilehash: 3ea35e86269f370a3f4fc500555ae04705c038fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6d552b410da23e5675257340ddc61cb4abbcd5e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058414"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817647"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>ServicePrincipal: GetMemberGroups
 
@@ -40,7 +41,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolescher Wert|Festgelegt auf **false**. Die Option, dass nur Gruppen mit aktivierter Sicherheit zurückgegeben werden, wird nur für Benutzer unterstützt.|
+|securityEnabledOnly|Boolean|Festgelegt auf **false**. Die Option, dass nur Gruppen mit aktivierter Sicherheit zurückgegeben werden, wird nur für Benutzer unterstützt.|
 
 ## <a name="response"></a>Antwort
 

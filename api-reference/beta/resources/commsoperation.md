@@ -2,12 +2,13 @@
 title: Ressourcentyp commsOperation
 description: Der Status der bestimmte langer Vorgänge.
 author: VinodRavichandran
-ms.openlocfilehash: 09d3f81e8f6307850d94cfab43f98426dae47a5f
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: d70ad6535d5ae829de4b9bac3c5b9fea9b53188b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380352"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821448"
 ---
 # <a name="commsoperation-resource-type"></a>Ressourcentyp commsOperation
 
@@ -22,9 +23,9 @@ Keine
 
 | Eigenschaft           | Typ                        | Beschreibung                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| clientContext      | Zeichenfolge                      | Der Clientkontext.                                                             |
+| clientContext      | String                      | Der Clientkontext.                                                             |
 | createdDateTime    | DateTimeOffset              | Die Startzeit des Vorgangs.                                                |
-| id                 | Zeichenfolge                      | Die Vorgangs-ID. Schreibgeschützt. Server generiert wurde.                                  |
+| id                 | String                      | Die Vorgangs-ID. Schreibgeschützt. Server generiert wurde.                                  |
 | lastActionDateTime | DateTimeOffset              | Der Zeitpunkt der letzten Aktion des Vorgangs.                                   |
 | resultInfo         | [resultInfo](resultinfo.md) | Informationen zu den Ergebnissen. Schreibgeschützt. Server generiert wurde.                            |
 | status             | String                      | Mögliche Werte: `notStarted`, `running`, `completed`, `failed`. Schreibgeschützt. |

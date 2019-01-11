@@ -2,12 +2,13 @@
 title: userInstallStateSummary-Ressourcentyp
 description: Enthält Eigenschaften für die Zusammenfassung des Installationsstatus für einen Benutzer.
 author: tfitzmac
-ms.openlocfilehash: 3d8976cd7db7baabaec60bdf3fe2ed18094156c1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c87ca0ab41a95a6a1d214e83eb94a03a4f2330a4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314385"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820769"
 ---
 # <a name="userinstallstatesummary-resource-type"></a>userInstallStateSummary-Ressourcentyp
 

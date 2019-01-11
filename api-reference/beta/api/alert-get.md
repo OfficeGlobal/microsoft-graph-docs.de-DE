@@ -1,12 +1,13 @@
 ---
 title: Warnung erhalten
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: 5f5a7330476de71308680b41e87e51d5d228b2e0
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+localization_priority: Normal
+ms.openlocfilehash: b8e3acbabab70c04f2dfa479b39f458950dfb6b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184483"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820244"
 ---
 # <a name="get-alert"></a>Warnung erhalten
 

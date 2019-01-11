@@ -2,12 +2,13 @@
 title: deviceComplianceActionItem löschen
 description: Löscht ein Objekt des Typs deviceComplianceActionItem.
 author: tfitzmac
-ms.openlocfilehash: 5455740172bf77c94db1899edad7bf1e6d8984cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4650d42687fc1eb08b0d22d5c8f57357ecb23d2c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337996"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817486"
 ---
 # <a name="delete-devicecomplianceactionitem"></a>deviceComplianceActionItem löschen
 
@@ -35,10 +36,10 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sch
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: Bezeichner in Planner
 description: 'Bezeichner in Planner-Objekte sind Zeichenfolgenwerte Dienst generiert. Die Werte sind 28 Zeichen lang sein und Groß-/Kleinschreibung beachtet. Wenn als übergeben, wird der Dienst eine einfache Format Validierung des Bezeichners, vorgehen, wenn Format Überprüfung fehlschlägt, die Anrufer ungültige Anforderung (400) Fehler, der angibt, des Problems beantwortet werden. Diese Fehlermeldung gibt einen Fehler in der aufrufenden Anwendung, wie an:'
-ms.openlocfilehash: a4b2eed7dafbd289da877ed64a74093cbf64781d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6efb1192de87082cae99fbcc058607a2239a618c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019331"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816590"
 ---
 # <a name="identifiers-in-planner"></a>Bezeichner in Planner
 

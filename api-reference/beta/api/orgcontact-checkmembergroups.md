@@ -1,12 +1,13 @@
 ---
 title: 'OrgContact: CheckMemberGroups'
 description: Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema Berechtigungen.
-ms.openlocfilehash: d064775772bb05963e3cd789346e32bf80b7587c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: eea07a97a4ed12d5c8659875c449d4b019392475
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062055"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821385"
 ---
 # <a name="orgcontact-checkmembergroups"></a>OrgContact: CheckMemberGroups
 

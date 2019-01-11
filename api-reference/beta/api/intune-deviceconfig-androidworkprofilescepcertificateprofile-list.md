@@ -2,12 +2,13 @@
 title: Liste androidWorkProfileScepCertificateProfiles
 description: Listeneigenschaften und Beziehungen der AndroidWorkProfileScepCertificateProfile-Objekte.
 author: tfitzmac
-ms.openlocfilehash: 2d69805bdf89db93aebaef15bb0c6f80d9cec75f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3125d9f2d467b92ee1798476385e0873c2c1e51d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304438"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812425"
 ---
 # <a name="list-androidworkprofilescepcertificateprofiles"></a>Liste androidWorkProfileScepCertificateProfiles
 
@@ -36,10 +37,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: Erstellen von „deviceComplianceDeviceStatus“
 description: Diese Methode erstellt ein neues Objekt des Typs deviceComplianceDeviceStatus.
 author: tfitzmac
-ms.openlocfilehash: 5fe754290e8fbc218bb0011034ae471f0e5fe84a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 060cfccf7de96d05a548c49a7e9df8c7560fe223
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334536"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821224"
 ---
 # <a name="create-devicecompliancedevicestatus"></a>Erstellen von „deviceComplianceDeviceStatus“
 
@@ -33,10 +34,10 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „deviceComplianceDeviceStatus“ an.

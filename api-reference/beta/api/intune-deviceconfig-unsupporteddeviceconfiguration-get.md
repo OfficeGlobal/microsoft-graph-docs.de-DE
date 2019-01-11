@@ -2,12 +2,13 @@
 title: Abrufen von unsupportedDeviceConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des UnsupportedDeviceConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 9b6b350356d59b3792ca533c3fa65053e7113fa7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ebff30e34436239a5c7ffec4d03cb83966a59d98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355937"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817410"
 ---
 # <a name="get-unsupporteddeviceconfiguration"></a>Abrufen von unsupportedDeviceConfiguration
 
@@ -39,10 +40,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

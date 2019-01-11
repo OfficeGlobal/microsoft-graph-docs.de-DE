@@ -2,12 +2,13 @@
 title: Nachrichtenressourcentyp
 description: Eine Nachricht in einem Postfachordner.
 author: angelgolfer-ms
-ms.openlocfilehash: d6bef72e1ac7634bee7f78a645828f0f73f9d09e
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: b6d5e3b66209515d03ad7e60a56bbde2c62442e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748479"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817283"
 ---
 # <a name="message-resource-type"></a>Nachrichtenressourcentyp
 
@@ -103,10 +104,10 @@ Es folgt eine JSON-Darstellung der Ressource.
 |inferenceClassification|String| Die Klassifizierung der Nachricht für den Benutzer, basierend auf der abgeleiteten Relevanz oder Wichtigkeit oder auf einer expliziten Außerkraftsetzung. Mögliche Werte: `focused`, `other`.|
 |internetMessageHeaders | [internetinternetMessageHeaders](internetmessageheader.md)-Sammlung | Eine Auflistung von Nachrichtenkopfzeilen von [RFC5322](https://www.ietf.org/rfc/rfc5322.txt)definiert. Der Satz enthält Nachrichtenkopfzeilen zurück, der den Netzwerkpfad durch eine Nachricht vom Absender an den Empfänger angibt. Sie können auch benutzerdefinierte Nachrichtenkopfzeilen enthalten, die die app-Daten für die Nachricht enthalten. |
 |internetMessageId | String | Die Nachrichten-ID im Format durch [RFC5322](https://www.ietf.org/rfc/rfc5322.txt)angegeben. Aktualisierbare nur, wenn **IsDraft** auf true festgelegt ist.|
-|isDeliveryReceiptRequested|Boolescher Wert|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
-|isDraft|Boolescher Wert|Gibt an, ob die Nachricht ein Entwurf ist. Eine Nachricht ist ein Entwurf, solange sie noch nicht gesendet wurde.|
-|isRead|Boolescher Wert|Gibt an, ob die Nachricht gelesen wurde.|
-|isReadReceiptRequested|Boolescher Wert|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
+|isDeliveryReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
+|isDraft|Boolean|Gibt an, ob die Nachricht ein Entwurf ist. Eine Nachricht ist ein Entwurf, solange sie noch nicht gesendet wurde.|
+|isRead|Boolean|Gibt an, ob die Nachricht gelesen wurde.|
+|isReadReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
 |lastModifiedDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht zuletzt geändert wurde.|
 |mentionsPreview|[mentionsPreview](mentionspreview.md)|Informationen zu Erwähnungen in der Nachricht. Bei der Verarbeitung einer `GET` /messages-Anforderung legt der Server diese Eigenschaft fest und fügt sie standardmäßig in die Antwort ein. Der Server gibt Null zurück, wenn es in der Nachricht keine Erwähnungen gibt. Optional. |
 |parentFolderId|String|Der eindeutige Bezeichner für das übergeordnete mailFolder-Element der Nachricht.|

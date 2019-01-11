@@ -2,12 +2,13 @@
 title: VppToken löschen
 description: Löschen eines VppToken.
 author: tfitzmac
-ms.openlocfilehash: f81bc4ab923e2a7a105fa9ee598e0ef7d6f8acaf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 408867fd55e5bdeb930f09b090e1a918e8476677
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333558"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816614"
 ---
 # <a name="delete-vpptoken"></a>VppToken löschen
 
@@ -35,10 +36,10 @@ DELETE /deviceAppManagement/vppTokens/{vppTokenId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

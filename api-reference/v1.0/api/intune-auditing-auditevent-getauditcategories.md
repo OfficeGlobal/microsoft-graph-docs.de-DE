@@ -2,12 +2,13 @@
 title: getAuditCategories-Funktion
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 03aa26dbb05469926e00542c0005afcee5f5907e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a80439fd9e2f9be2e18af9ffeb669d4bd7ae2d54
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337226"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815470"
 ---
 # <a name="getauditcategories-function"></a>getAuditCategories-Funktion
 
@@ -33,10 +34,10 @@ GET /deviceManagement/auditEvents/getAuditCategories
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

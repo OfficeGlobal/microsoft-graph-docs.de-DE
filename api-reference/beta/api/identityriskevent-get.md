@@ -2,12 +2,13 @@
 title: Abrufen von identityRiskEvent
 description: Rufen Sie die Eigenschaften und Beziehungen des Identityriskevent-Objekts ab.
 author: cloudhandler
-ms.openlocfilehash: 09c33e2d6df33c1a3375f05f44670592ebe1982b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aaec2759ee3dd6b1e4b12a77124560c5b0985c42
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363697"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818032"
 ---
 # <a name="get-identityriskevent"></a>Abrufen von identityRiskEvent
 

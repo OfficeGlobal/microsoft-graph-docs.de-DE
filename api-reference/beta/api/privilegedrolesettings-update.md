@@ -1,12 +1,13 @@
 ---
 title: PrivilegedRoleSettings aktualisieren
 description: Aktualisieren Sie die rolleneinstellungen für die bestimmten Rolle-Einstellung. Ein PrivilegedRoleSettings-Objekt wird zurückgegeben.
-ms.openlocfilehash: 0e0f6b7253a1c1d8570c0b91fac4b08bbd39dfff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7c117abfe774eae60e42dcbc5f748c10cacf5cd6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065376"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819317"
 ---
 # <a name="update-privilegedrolesettings"></a>PrivilegedRoleSettings aktualisieren
 
@@ -46,13 +47,13 @@ Die folgende Tabelle enthält die Eigenschaften, die Sie angeben können, wenn S
 |elevationDuration|duration|Die Dauer, wenn die Rolle aktiviert ist. Erforderlich.|
 |id|string|Der eindeutige Bezeichner für die rolleneinstellungen. Schreibgeschützt. Erforderlich.|
 |isMfaOnElevationConfigurable|Boolean|**true,** Wenn MfaOnElevation konfigurierbar ist. **false,** Wenn MfaOnElevation nicht konfigurierbar ist. Erforderlich.|
-|lastGlobalAdmin|Boolesch|Nur für internen Gebrauch.|
+|lastGlobalAdmin|Boolean|Nur für internen Gebrauch.|
 |maxElavationDuration|duration|Maximale Speicherdauer für die aktivierte Rolle. Erforderlich.|
-|mfaOnElevation|Boolesch|**true,** Wenn mehrstufiger Authentifizierung das erforderlich ist, um die Rolle zu aktivieren. **false,** Wenn mehrstufiger Authentifizierung das nicht erforderlich ist, um die Rolle zu aktivieren. Erforderlich.|
+|mfaOnElevation|Boolean|**true,** Wenn mehrstufiger Authentifizierung das erforderlich ist, um die Rolle zu aktivieren. **false,** Wenn mehrstufiger Authentifizierung das nicht erforderlich ist, um die Rolle zu aktivieren. Erforderlich.|
 |minElevationDuration|duration|Minimale Dauer für die aktivierte Rolle. Erforderlich.|
-|notificationToUserOnElevation|Boolesch|**true,** Wenn für den Endbenutzer Benachrichtigung senden, wenn die Rolle aktiviert ist. **false,** Wenn keine Benachrichtigung senden, wenn die Rolle aktiviert ist. Erforderlich.|
-|ticketingInfoOnElevation|Boolesch|**true,** Wenn die Informationen zur erforderlichen wann ist die Rolle zu aktivieren. **false,** Wenn die Informationen zur nicht erforderlich bei ist die Rolle zu aktivieren. Erforderlich.|
-|approvalOnElevation|Boolesch|**true,** Wenn die Genehmigung erforderlich wann ist die Rolle zu aktivieren. **false,** Wenn die Genehmigung ist nicht erforderlich bei die Rolle zu aktivieren. Erforderlich.|
+|notificationToUserOnElevation|Boolean|**true,** Wenn für den Endbenutzer Benachrichtigung senden, wenn die Rolle aktiviert ist. **false,** Wenn keine Benachrichtigung senden, wenn die Rolle aktiviert ist. Erforderlich.|
+|ticketingInfoOnElevation|Boolean|**true,** Wenn die Informationen zur erforderlichen wann ist die Rolle zu aktivieren. **false,** Wenn die Informationen zur nicht erforderlich bei ist die Rolle zu aktivieren. Erforderlich.|
+|approvalOnElevation|Boolean|**true,** Wenn die Genehmigung erforderlich wann ist die Rolle zu aktivieren. **false,** Wenn die Genehmigung ist nicht erforderlich bei die Rolle zu aktivieren. Erforderlich.|
 |approverIds|Array|Liste der Genehmigung-IDs, wenn die Genehmigung für die Aktivierung erforderlich ist.|
 
 ## <a name="response"></a>Antwort

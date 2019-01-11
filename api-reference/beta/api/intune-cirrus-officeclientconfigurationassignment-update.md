@@ -2,12 +2,13 @@
 title: OfficeClientConfigurationAssignment aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines OfficeClientConfigurationAssignment-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 78b0ae28bc61bc0d8d8c083502c6f6ef2cf7d0fb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f3d2fab5dc8793f566973e2d3e2d9bf968cbf30a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343035"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817528"
 ---
 # <a name="update-officeclientconfigurationassignment"></a>OfficeClientConfigurationAssignment aktualisieren
 
@@ -35,10 +36,10 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/as
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [OfficeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) eine JSON-Darstellung.

@@ -2,12 +2,13 @@
 title: appleDeviceFeaturesConfigurationBase abrufen
 description: Lesen der Eigenschaften und Beziehungen des appleDeviceFeaturesConfigurationBase-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 096291a17ded6afc90816d862eb1ae1bcc8408e4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b1f5368ae0ab2cb9c2863f29554658e1e7f98612
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312418"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819901"
 ---
 # <a name="get-appledevicefeaturesconfigurationbase"></a>appleDeviceFeaturesConfigurationBase abrufen
 
@@ -35,10 +36,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

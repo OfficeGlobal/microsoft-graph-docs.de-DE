@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp convertIdResult
 description: Das Ergebnis einer ID formatkonvertierung, die von der Funktion TranslateExchangeIds durchgeführt.
-ms.openlocfilehash: 3a17399ffe44c43c78f7b50933b2e847a3e64f32
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7e1878de3d3b7ddee36d799c928d6a130b578200
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059472"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821455"
 ---
 # <a name="convertidresult-resource-type"></a>Ressourcentyp convertIdResult
 

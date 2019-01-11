@@ -2,12 +2,13 @@
 title: EmailSyncDuration Enum-Typ
 description: Mögliche Werte für die Dauer der e-Mail-Synchronisierung.
 author: tfitzmac
-ms.openlocfilehash: 512e20ad13c13fdf92e45cfe0a37792d97e17fbb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d83a1ceb82820ddc44d8753e8ed05e00de09e36e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361166"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819383"
 ---
 # <a name="emailsyncduration-enum-type"></a>EmailSyncDuration Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27361166"
 
 Mögliche Werte für die Dauer der e-Mail-Synchronisierung.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
 |oneDay|1|Synchronisieren von e-Mail für einen Tag.|

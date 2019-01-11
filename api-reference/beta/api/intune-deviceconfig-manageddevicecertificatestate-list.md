@@ -2,12 +2,13 @@
 title: Liste managedDeviceCertificateStates
 description: Listeneigenschaften und Beziehungen der ManagedDeviceCertificateState-Objekte.
 author: tfitzmac
-ms.openlocfilehash: 7e5ac9bde17c20fe0a9aab2d5d88149a8c578cef
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e3e47a0d363ad50411f15d2b95f36d3e523569f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308232"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812138"
 ---
 # <a name="list-manageddevicecertificatestates"></a>Liste managedDeviceCertificateStates
 
@@ -51,10 +52,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

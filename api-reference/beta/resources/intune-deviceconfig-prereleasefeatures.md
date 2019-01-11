@@ -2,12 +2,13 @@
 title: PrereleaseFeatures Enum-Typ
 description: Mögliche Werte für Vorabversion Features.
 author: tfitzmac
-ms.openlocfilehash: d2a01822250854f2bb71542e5057de0b11405abf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 78faf2e9360154b3562cbc52c97ff5f6c4e75219
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342196"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821256"
 ---
 # <a name="prereleasefeatures-enum-type"></a>PrereleaseFeatures Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27342196"
 
 Mögliche Werte für Vorabversion Features.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
 |settingsOnly|1|Einstellungen nur Vorabversion Features.|

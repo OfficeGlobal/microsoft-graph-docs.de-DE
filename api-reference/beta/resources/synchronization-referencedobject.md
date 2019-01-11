@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp referencedObject
 description: Beschreibt einen Verweis auf ein anderes Objekt in der gleichen Verzeichnis Definition definiert.
-ms.openlocfilehash: 63645048fd8ba6ad949da43baa261b2842ea4016
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5a2aa2dcc358c856c18ea2ce9871ec634194ce54
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065371"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821035"
 ---
 # <a name="referencedobject-resource-type"></a>Ressourcentyp referencedObject
 

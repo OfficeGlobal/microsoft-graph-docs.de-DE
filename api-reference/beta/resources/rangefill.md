@@ -2,12 +2,13 @@
 title: RangeFill-Ressourcentyp
 description: Stellt den Hintergrund eines Bereichsobjekts dar.
 author: lumine2008
-ms.openlocfilehash: 21d40b1ec65ad49241af30912c3c05e114c7008d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8ceab66373331b6e144b69119d521a3e5ddccdc7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323709"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817759"
 ---
 # <a name="rangefill-resource-type"></a>RangeFill-Ressourcentyp
 
@@ -22,7 +23,7 @@ Stellt den Hintergrund eines Bereichsobjekts dar.
 |:---------------|:--------|:----------|
 |[RangeFill abrufen](../api/rangefill-get.md) | [RangeFill](rangefill.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des rangeFill-Objekts.|
 |[Update](../api/rangefill-update.md) | [RangeFill](rangefill.md)   |Dient zum Aktualisieren des RangeFill-Objekts. |
-|[Löschen](../api/rangefill-clear.md)|Keine|Setzt den Hintergrund des Bereichs zurück.|
+|[Clear](../api/rangefill-clear.md)|Keine|Setzt den Hintergrund des Bereichs zurück.|
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|

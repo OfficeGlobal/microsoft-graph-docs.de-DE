@@ -2,12 +2,13 @@
 title: Erstellen von deviceConfigurationConflictSummary
 description: Erstellen eines neuen DeviceConfigurationConflictSummary-Objekts.
 author: tfitzmac
-ms.openlocfilehash: f39d272d817ca2244f5b0d932fc9c955a1253b27
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e120e6ce3070012eb1dffcfb06cf77040c0f44cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323107"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812418"
 ---
 # <a name="create-deviceconfigurationconflictsummary"></a>Erstellen von deviceConfigurationConflictSummary
 
@@ -35,10 +36,10 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt DeviceConfigurationConflictSummary eine JSON-Darstellung.

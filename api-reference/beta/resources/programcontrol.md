@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp programControl
 description: In Azure AD Access Feature überprüft, und das Programm Control-Objekt stellt ein Steuerelement, Verknüpfen einer Access-Überprüfung an ein Programm dar.
-ms.openlocfilehash: 03e70ffdf0607eeb11abaf1b12065b4092294d23
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ddf6e978277ca1801f9126597ac4b3561fe5bfb7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061148"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817822"
 ---
 # <a name="programcontrol-resource-type"></a>Ressourcentyp programControl
 

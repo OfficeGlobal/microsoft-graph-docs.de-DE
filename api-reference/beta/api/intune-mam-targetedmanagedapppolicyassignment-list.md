@@ -2,12 +2,13 @@
 title: Auflisten von „targetedManagedAppPolicyAssignment“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs targetedManagedAppPolicyAssignment auf.
 author: tfitzmac
-ms.openlocfilehash: fc2279c4344a86867679e37ba6fa96cf9e457f07
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a9ed6fd48467408ba940157530d8b9925515f3d5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342896"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822001"
 ---
 # <a name="list-targetedmanagedapppolicyassignments"></a>Auflisten von „targetedManagedAppPolicyAssignment“
 
@@ -39,10 +40,10 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

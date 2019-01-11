@@ -2,12 +2,13 @@
 title: MdmAuthority Enum-Typ
 description: Autorität für die Verwaltung mobiler Geräte.
 author: tfitzmac
-ms.openlocfilehash: d4efb5f0debb5c18fac78e4ce0381d91848bc08f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bb5eb293783910b79809c48c970bb1547b25dd4b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344142"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816793"
 ---
 # <a name="mdmauthority-enum-type"></a>MdmAuthority Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27344142"
 
 Autorität für die Verwaltung mobiler Geräte.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannt|
 |Intune|1|Intune|

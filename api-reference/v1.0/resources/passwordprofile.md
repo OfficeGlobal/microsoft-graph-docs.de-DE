@@ -1,12 +1,13 @@
 ---
 title: passwordProfile-Ressourcentyp
 description: Enthält das einem Benutzer zugewiesene Kennwortprofil. Die **passwordProfile**-Eigenschaft der user-Entität ist ein **asswordProfile**-Objekt.
-ms.openlocfilehash: ee933b75b3dc536cbfcb33502cdda0d63680174c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 80d774906fb4897f57b943af827cfbc32e90511f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018776"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819663"
 ---
 # <a name="passwordprofile-resource-type"></a>passwordProfile-Ressourcentyp
 

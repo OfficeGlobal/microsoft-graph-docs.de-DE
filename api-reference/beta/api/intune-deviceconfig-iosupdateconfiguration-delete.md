@@ -2,12 +2,13 @@
 title: iosUpdateConfiguration löschen
 description: Löscht ein iosUpdateConfiguration-Objekt.
 author: tfitzmac
-ms.openlocfilehash: 75240ac580c70418d4114ba28b7c427338070ab6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 22a3141e9444e933586513f722f6f2c390a02f93
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330436"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817969"
 ---
 # <a name="delete-iosupdateconfiguration"></a>iosUpdateConfiguration löschen
 
@@ -37,10 +38,10 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

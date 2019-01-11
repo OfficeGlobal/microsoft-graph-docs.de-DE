@@ -1,12 +1,13 @@
 ---
 title: plannerAssignedToTaskBoardTaskFormat-Ressourcentyp
 description: Die **plannerAssignedToTaskBoardTaskFormat** Ressource stellt die Informationen dar, die zum korrekten Rendern einer Aufgabe in der Ansicht „ZugewiesenAn“ des Task Board verwendet werden (eine Ansicht, die nach Benutzern organisiert ist, denen Aufgaben zugewiesen sind). Jeder Aufgabe ist ein **plannerAssignedToTaskBoardTaskFormat**-Objekt zugeordnet.
-ms.openlocfilehash: 8fc96d6fa7d4f05f6bc81f7030ebe766bf769e40
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bae551e009faeb40418f10a082bb8955846e8901
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062290"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818081"
 ---
 # <a name="plannerassignedtotaskboardtaskformat-resource-type"></a>plannerAssignedToTaskBoardTaskFormat-Ressourcentyp
 
