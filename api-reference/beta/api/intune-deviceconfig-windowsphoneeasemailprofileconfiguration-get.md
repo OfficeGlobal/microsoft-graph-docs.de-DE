@@ -2,12 +2,13 @@
 title: Abrufen von windowsPhoneEASEmailProfileConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des WindowsPhoneEASEmailProfileConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 4a25e9c7ed4855ac6b2f3ee528bcc5e6ca355f52
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3f17d78f332558050656687e111c3c90f042b386
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313013"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868460"
 ---
 # <a name="get-windowsphoneeasemailprofileconfiguration"></a>Abrufen von windowsPhoneEASEmailProfileConfiguration
 
@@ -41,8 +42,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

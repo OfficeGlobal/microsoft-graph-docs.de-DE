@@ -2,12 +2,13 @@
 title: directoryObject abrufen
 description: Mit dieser API können Sie die Eigenschaften und Beziehungen eines Objekts des Typs „directoryObject“ abrufen.
 author: lleonard-msft
-ms.openlocfilehash: 452d88e5443a4fdf0f9c48cad127b3882a82217b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 03dd201bf769ef32e8f8a43c03679d169b93ad6d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316856"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806111"
 ---
 # <a name="get-directoryobject"></a>directoryObject abrufen
 
@@ -31,7 +32,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

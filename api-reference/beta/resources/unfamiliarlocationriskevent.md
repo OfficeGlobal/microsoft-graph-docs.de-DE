@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp unfamiliarLocationRiskEvent
 description: Ein Risikoereignis von Azure Active Directory-Identität Protection ein Konto anmelden, in dem versucht wird, von einem neuen Speicherort für diesen Benutzer erkannt. Umfassende Informationen zum Risiko-Ereignissen finden Sie in der Dokumentation zu Azure AD-Schutz.
-ms.openlocfilehash: 7fa75c28fcc6432a5f8e32bff695e32d76c5acdc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 130d68bfb23bdb23b6a9de81fa988d38db1d8c10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059392"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868740"
 ---
 # <a name="unfamiliarlocationriskevent-resource-type"></a>Ressourcentyp unfamiliarLocationRiskEvent
 

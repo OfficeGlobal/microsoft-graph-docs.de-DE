@@ -2,12 +2,13 @@
 title: Aktualisieren von „deviceCompliancePolicySettingStateSummary“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceCompliancePolicySettingStateSummary.
 author: tfitzmac
-ms.openlocfilehash: d85aa50045c3378a2a4da7826dcaa3fb968664ce
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b739f136252658385a3ef94edd959c855d2f0032
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345073"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873788"
 ---
 # <a name="update-devicecompliancepolicysettingstatesummary"></a>Aktualisieren von „deviceCompliancePolicySettingStateSummary“
 
@@ -37,8 +38,8 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md) an.
@@ -47,9 +48,9 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|setting|String|Klassenname und Eigenschaftenname der Einstellung|
-|settingName|String|Name der Einstellung|
+|id|Zeichenfolge|Schlüssel der Entität|
+|setting|Zeichenfolge|Klassenname und Eigenschaftenname der Einstellung|
+|settingName|Zeichenfolge|Name der Einstellung|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Einstellung-Plattform. Mögliche Werte: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |unknownDeviceCount|Int32|Anzahl von unbekannten Geräten|
 |notApplicableDeviceCount|Int32|Anzahl der ausgenommenen Geräte|

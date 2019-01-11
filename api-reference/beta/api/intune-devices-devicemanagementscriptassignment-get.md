@@ -2,12 +2,13 @@
 title: Abrufen von deviceManagementScriptAssignment
 description: Lesen Sie Eigenschaften und Beziehungen des DeviceManagementScriptAssignment-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 58360cb52c006c68e5a6da493a79fc86609dc5fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 114f6fa7661f3dadb557af7682a937956444f1a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310920"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874774"
 ---
 # <a name="get-devicemanagementscriptassignment"></a>Abrufen von deviceManagementScriptAssignment
 
@@ -39,8 +40,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: macOSOfficeSuiteApp abrufen
 description: Lesen von Eigenschaften und Beziehungen des macOSOfficeSuiteApp-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 04cc1c85e627bb0c06a71be0b82b97cfa96764b4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ca297c0612a39dcf2e8df6c032d0a528259389df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356721"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870154"
 ---
 # <a name="get-macosofficesuiteapp"></a>macOSOfficeSuiteApp abrufen
 
@@ -41,8 +42,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: remoteAssistancePartner aktualisieren
 description: Aktualisieren der Eigenschaften eines remoteAssistancePartner-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 72896212da0be4fe3640d85c91c072fa89e77fed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 16b7c3f9d3125ca688f08faa22772c4335e02a8f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346305"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871400"
 ---
 # <a name="update-remoteassistancepartner"></a>remoteAssistancePartner aktualisieren
 
@@ -35,8 +36,8 @@ PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md)-Objekts an.
@@ -45,9 +46,9 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Der eindeutige Bezeichner des Partners.|
-|displayName|String|Der Anzeigename des Partners.|
-|onboardingUrl|String|Die URL des Onboarding-Portals des Partners, in dem ein Administrator den Remoteunterstützungsdienst konfigurieren kann.|
+|id|Zeichenfolge|Der eindeutige Bezeichner des Partners.|
+|displayName|Zeichenfolge|Der Anzeigename des Partners.|
+|onboardingUrl|Zeichenfolge|Die URL des Onboarding-Portals des Partners, in dem ein Administrator den Remoteunterstützungsdienst konfigurieren kann.|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|TBD. Mögliche Werte sind: `notOnboarded`, `onboarding` und `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Zeitstempel der letzten vom TEM-Partner an Intune gesendeten Anforderung|
 

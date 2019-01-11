@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp „locationConstraintItem“
 description: Die vom Client definierten Bedingungen für den Ort einer Besprechung.
-ms.openlocfilehash: f29ff1283d876e726e27473485a183956137f981
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4c44a97a3ed0d5bcf56204fab1527c7e4b58455d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058454"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874081"
 ---
 # <a name="locationconstraintitem-resource-type"></a>Ressourcentyp „locationConstraintItem“
 
@@ -44,9 +45,9 @@ Es folgt eine JSON-Darstellung der Ressource.
 |:---------------|:--------|:----------|
 | address | [physicalAddress](physicaladdress.md) |Die Adresse des Orts. |
 | Koordinaten | [outlookGeoCoordinates](outlookgeocoordinates.md) | Die geografischen Koordinaten und die Erhebung des Orts. |
-| displayName  | String | Der Name, der mit dem Ort verknüpft ist                       |
+| displayName  | Zeichenfolge | Der Name, der mit dem Ort verknüpft ist                       |
 | locationEmailAddress | String | Optionale E-Mail-Adresse des Orts. |
-| locationUri | String | Optionaler URI, der den Ort darstellt. |
+| locationUri | Zeichenfolge | Optionaler URI, der den Ort darstellt. |
 | resolveAvailability | Boolescher Wert | Wenn „true“ gesetzt ist und die angegebene Ressource gebucht ist, sucht [findMeetingTimes](../api/user-findmeetingtimes.md) nach einer anderen, freien Ressource. Wenn „false“ gesetzt ist und die angegebene Ressource gebucht ist, gibt **findMeetingTimes** die Ressource mit dem höchsten Wert aus dem Cache des Benutzers zurück, ohne zu prüfen, ob diese Ressource frei ist. Der Standardwert ist „true“. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

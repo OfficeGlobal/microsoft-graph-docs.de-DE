@@ -2,12 +2,13 @@
 title: Erstellen von networkIPv4ConfigurationManagementCondition
 description: Erstellen eines neuen networkIPv4ConfigurationManagementCondition-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 60d79584af38ca709d597b4919a7e6dc4171ff73
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 06ec52303deb9bb000441dd0c4c47707a6e41863
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356364"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824759"
 ---
 # <a name="create-networkipv4configurationmanagementcondition"></a>Erstellen von networkIPv4ConfigurationManagementCondition
 
@@ -38,8 +39,8 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt networkIPv4ConfigurationManagementCondition eine JSON-Darstellung.
@@ -48,17 +49,17 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für die Bedingung Management. System generierten Wert, die beim Erstellen zugewiesen. Geerbt von [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|uniqueName|String|Eindeutiger Name für die Bedingung Management. In Management Bedingung Ausdrücken verwendet. Geerbt von [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|displayName|String|Der Administrator definierter Name der Bedingung Management. Geerbt von [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|description|String|Der Administrator definiert die Beschreibung der Bedingung Management. Geerbt von [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|id|Zeichenfolge|Eindeutiger Bezeichner für die Bedingung Management. System generierten Wert, die beim Erstellen zugewiesen. Geerbt von [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|uniqueName|Zeichenfolge|Eindeutiger Name für die Bedingung Management. In Management Bedingung Ausdrücken verwendet. Geerbt von [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|displayName|Zeichenfolge|Der Administrator definierter Name der Bedingung Management. Geerbt von [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|description|Zeichenfolge|Der Administrator definiert die Beschreibung der Bedingung Management. Geerbt von [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |createdDateTime|DateTimeOffset|Der Zeitpunkt, an die Bedingung Management erstellt wurde. Generierte Service-Seite. Geerbt von [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|Die Zeit, die die Bedingung Management zuletzt geändert wurde. Aktualisierte Service-Seite. Geerbt von [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|eTag|String|ETag der Bedingung Management. Aktualisierte Service-Seite. Geerbt von [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|eTag|Zeichenfolge|ETag der Bedingung Management. Aktualisierte Service-Seite. Geerbt von [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|[DevicePlatformType](../resources/intune-shared-deviceplatformtype.md) -Auflistung|Die entsprechenden Plattformen für diese Bedingung Management. Geerbt von [ManagementCondition](../resources/intune-fencing-managementcondition.md). Mögliche Werte sind: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater` und `androidWorkProfile`.|
-|ipV4Prefix|String|Das IPv4-Subnetz mit verbunden sein. Diese Vorgaben unter 10.0.0.0/8|
-|ipV4Gateway|String|Das Gateway IPv4-Adresse. z. B. 10.0.0.0|
-|ipV4DHCPServer|String|Die IPv4-Adresse des DHCP-Servers für den Adapter.|
+|ipV4Prefix|Zeichenfolge|Das IPv4-Subnetz mit verbunden sein. Diese Vorgaben unter 10.0.0.0/8|
+|ipV4Gateway|Zeichenfolge|Das Gateway IPv4-Adresse. z. B. 10.0.0.0|
+|ipV4DHCPServer|Zeichenfolge|Die IPv4-Adresse des DHCP-Servers für den Adapter.|
 |ipV4DNSServerList|Collection von Objekten des Typs „String“|Die IPv4-DNS-Server für den Adapter konfiguriert.|
 |dnsSuffixList|Collection von Objekten des Typs „String“|Gültige DNS-Suffixe für das aktuelle Netzwerk. Diese Vorgaben unter seattle.contoso.com|
 

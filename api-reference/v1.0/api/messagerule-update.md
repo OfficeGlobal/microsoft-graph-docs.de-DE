@@ -2,12 +2,13 @@
 title: Regel aktualisieren
 description: Ändern Sie die schreibbaren Eigenschaften in einem messageRule-Objekt, und speichern Sie die Änderungen.
 author: angelgolfer-ms
-ms.openlocfilehash: 3ff8910130099a53328c2161c34ec3f1186e0fb6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f9263b237d27ba1e938e5e6ecbb7ed558f80a9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309478"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871285"
 ---
 # <a name="update-rule"></a>Regel aktualisieren
 

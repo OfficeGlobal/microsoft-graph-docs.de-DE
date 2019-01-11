@@ -2,12 +2,13 @@
 title: Ressourcentyp teamsAppInstallation
 description: 'Eine TeamsApp in einem Team installiert. '
 author: nkramer
-ms.openlocfilehash: cab42c3bc2bde2e20dff3478d432d70e1563d248
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5eca63cb3385fa03f8dffadff0482dc79a1dcfe3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341797"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871512"
 ---
 # <a name="teamsappinstallation-resource-type"></a>Ressourcentyp teamsAppInstallation
 
@@ -21,8 +22,8 @@ Eine [TeamsApp](teamsapp.md) in einem [Team](team.md)installiert. Alle Bots, die
 |:---------------|:--------|:----------|
 |[Liste apps](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | Listet die apps in einem Team installiert.|
 |[Hinzufügen der app](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsapp.md) | Fügt (installiert) einer app zu einem Team.|
-|[Entfernen der app](../api/teamsappinstallation-delete.md) | Keines | Entfernt (deinstalliert) einer app aus einem Team.|
-|[Aktualisieren der app](../api/teamsappinstallation-delete.md) | Keines | Upgrades auf die neueste Version der app.|
+|[Entfernen der app](../api/teamsappinstallation-delete.md) | Keine | Entfernt (deinstalliert) einer app aus einem Team.|
+|[Aktualisieren der app](../api/teamsappinstallation-delete.md) | Keine | Upgrades auf die neueste Version der app.|
 
 ## <a name="properties"></a>Eigenschaften
 

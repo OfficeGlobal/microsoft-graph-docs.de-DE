@@ -2,12 +2,13 @@
 title: deviceConfigurationDeviceStatus-Ressourcentyp
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 04b8190e5ad61e25fa0d26e420d65b464f6d5d45
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f589294dc78a0bba7c0574d5d2a134f96dc7f62b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341356"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824752"
 ---
 # <a name="deviceconfigurationdevicestatus-resource-type"></a>deviceConfigurationDeviceStatus-Ressourcentyp
 
@@ -28,15 +29,15 @@ Noch nicht dokumentiert.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|deviceDisplayName|String|Gerätename, der dem Objekt des Typs „DevicePolicyStatus“ zugeordnet ist|
-|userName|String|Gemeldeter Benutzername|
-|deviceModel|String|Gemeldetes Gerätemodell|
+|id|Zeichenfolge|Schlüssel der Entität|
+|deviceDisplayName|Zeichenfolge|Gerätename, der dem Objekt des Typs „DevicePolicyStatus“ zugeordnet ist|
+|userName|Zeichenfolge|Gemeldeter Benutzername|
+|deviceModel|Zeichenfolge|Gemeldetes Gerätemodell|
 |Plattform|Int32|Plattform des Geräts, das gemeldet wird|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Toleranzperiode für die Gerätekonformität|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Konformitätsstatus des Richtlinienberichts. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Richtlinienberichts|
-|userPrincipalName|String|Benutzer-Prinzipalname|
+|userPrincipalName|Zeichenfolge|Benutzer-Prinzipalname|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

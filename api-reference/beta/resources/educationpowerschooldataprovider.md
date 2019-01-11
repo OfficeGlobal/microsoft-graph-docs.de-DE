@@ -2,12 +2,13 @@
 title: EducationPowerSchoolDataProvider-Ressource
 description: Verwendet, um die Synchronisierung Schule Datenprofil einrichten, wenn PowerSchool als Eingabe Quelle verwendet wird.
 author: mmast-msft
-ms.openlocfilehash: 714866d03c70aae8ea03a27b63fb3efbb4fa5ba4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 48a23a2e2a50e2e235b5722466c67094275236a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312803"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868782"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>EducationPowerSchoolDataProvider-Ressource
 
@@ -21,12 +22,12 @@ Verwendet, um die Synchronisierung Schule Datenprofil einrichten, wenn [PowerSch
 
 | Eigenschaft | Typ | Beschreibung |
 |:-|:-|:-|
-| **connectionUrl** | String | Die Verbindungs-URL für die PowerSchool-Instanz. |
-| **clientId** | String |  Die Client-ID, die zum Verbinden mit PowerSchool. |
-| **clientSecret** | String |  Der geheime Clientschlüssel zum Authentifizieren der Verbindungs zu der Instanz PowerSchool. |
+| **connectionUrl** | Zeichenfolge | Die Verbindungs-URL für die PowerSchool-Instanz. |
+| **clientId** | Zeichenfolge |  Die Client-ID, die zum Verbinden mit PowerSchool. |
+| **clientSecret** | Zeichenfolge |  Der geheime Clientschlüssel zum Authentifizieren der Verbindungs zu der Instanz PowerSchool. |
 | **schoolsIds** | Collection von Objekten des Typs „String“ |  Die Liste der Schulen synchronisieren. |
-| **schoolYear** | String |  Das Jahr Schule synchronisieren. |
-| **allowTeachersInMultipleSchools** | Boolesch |  Gibt an, ob die Quelle mehrere Bezeichner für eine einzelne Student oder Lehrer verfügt. |
+| **schoolYear** | Zeichenfolge |  Das Jahr Schule synchronisieren. |
+| **allowTeachersInMultipleSchools** | Boolescher Wert |  Gibt an, ob die Quelle mehrere Bezeichner für eine einzelne Student oder Lehrer verfügt. |
 | **Anpassungen** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Optional Anpassung der Synchronisierung Profil angewendet werden soll.|
 
 ## <a name="json-representation"></a>JSON-Darstellung

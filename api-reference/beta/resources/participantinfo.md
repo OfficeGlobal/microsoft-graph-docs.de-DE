@@ -2,12 +2,13 @@
 title: Ressourcentyp participantInfo
 description: Enthält zusätzliche Eigenschaften über die Teilnehmerliste Identität
 author: VinodRavichandran
-ms.openlocfilehash: 335626d1c34e2c54a86b0494e931c2da3fe283e7
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 94bbc587f26f8b5122571899eb235d9c1fc27e90
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380492"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870665"
 ---
 # <a name="participantinfo-resource-type"></a>Ressourcentyp participantInfo
 

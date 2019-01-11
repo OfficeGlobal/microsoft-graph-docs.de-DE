@@ -2,12 +2,13 @@
 title: DeviceManagementScriptGroupAssignment aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines DeviceManagementScriptGroupAssignment-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 552cc4b4c4c90f10640e917c1e2cb55428bf5500
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d6988bec87e9470e3c46a7c47c483529ca1e2c86
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340691"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869237"
 ---
 # <a name="update-devicemanagementscriptgroupassignment"></a>DeviceManagementScriptGroupAssignment aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/group
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [DeviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) eine JSON-Darstellung.
@@ -47,8 +48,8 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Taste der Gerät Management Skript Gruppe Zuordnung Entität.|
-|targetGroupId|String|Die Id des Azure Active Directory-Gruppe verwenden wir das Skript Inhaltsadressierung für.|
+|id|Zeichenfolge|Taste der Gerät Management Skript Gruppe Zuordnung Entität.|
+|targetGroupId|Zeichenfolge|Die Id des Azure Active Directory-Gruppe verwenden wir das Skript Inhaltsadressierung für.|
 
 
 

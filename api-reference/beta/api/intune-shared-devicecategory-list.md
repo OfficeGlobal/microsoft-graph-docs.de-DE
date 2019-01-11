@@ -2,12 +2,13 @@
 title: Auflisten von „deviceCategory“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs deviceCategory auf.
 author: tfitzmac
-ms.openlocfilehash: c5cc37f375a56d1e1ca005841af83936760deb69
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9f3b484a3a518028e826f34092e7295a8a9d7d6b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327160"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868530"
 ---
 # <a name="list-devicecategories"></a>Auflisten von „deviceCategory“
 
@@ -39,8 +40,8 @@ GET /deviceManagement/deviceCategories
 
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 

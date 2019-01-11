@@ -2,12 +2,13 @@
 title: Benutzer auflisten
 description: Dient zum Abrufen einer Liste von Benutzerobjekten. Diese Benutzerobjekte enthalten schulungsspezifische Eigenschaften.
 author: mmast-msft
-ms.openlocfilehash: 54cabab078fb3564f26f8d150c9931ece5fe6b6c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7c0a2edc0545f7d2159fec356c9b1d299082cefe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322778"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870903"
 ---
 # <a name="list-users"></a>Benutzer auflisten
 
@@ -31,7 +32,7 @@ GET /education/users
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

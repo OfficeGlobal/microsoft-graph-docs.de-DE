@@ -2,12 +2,13 @@
 title: exclusionGroupAssignmentTarget-Ressourcentyp
 description: Steht für eine Gruppe, die aus einer Zuweisung ausgeschlossen werden sollte.
 author: tfitzmac
-ms.openlocfilehash: 783231c451668169ba85e8ce1cfecd669b5c0b7d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ce17f38b3ab604a11710c64992a046f6d71a6659
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343183"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870707"
 ---
 # <a name="exclusiongroupassignmenttarget-resource-type"></a>exclusionGroupAssignmentTarget-Ressourcentyp
 

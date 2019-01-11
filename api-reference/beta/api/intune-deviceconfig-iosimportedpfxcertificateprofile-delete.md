@@ -2,12 +2,13 @@
 title: IosImportedPFXCertificateProfile löschen
 description: Löscht eine IosImportedPFXCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: 72bd9b8a101e3c3c2d0c1c97ec24adfa7a874090
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5a9f1efb8c825c0d87bd9d16180c41aa96e1cf64
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361768"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869188"
 ---
 # <a name="delete-iosimportedpfxcertificateprofile"></a>IosImportedPFXCertificateProfile löschen
 
@@ -39,8 +40,8 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: Erstellen von deviceManagementScriptDeviceState
 description: Erstellen eines neuen DeviceManagementScriptDeviceState-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 2b809c82e077bc75c354d3b8b1c09548eaacad64
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d4f2dcd346aaef4d71b0309f65b7f6a7005c4346
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304851"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874256"
 ---
 # <a name="create-devicemanagementscriptdevicestate"></a>Erstellen von deviceManagementScriptDeviceState
 
@@ -38,8 +39,8 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt DeviceManagementScriptDeviceState eine JSON-Darstellung.
@@ -48,12 +49,12 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Taste der Gerät Management Skript Gerät Zustand Entität.|
+|id|Zeichenfolge|Taste der Gerät Management Skript Gerät Zustand Entität.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Status der letzten Ausführung des Skripts Management Gerät. Mögliche Werte sind: `unknown`, `success` und `fail`.|
-|resultMessage|String|Details der Ausgabe.|
+|resultMessage|Zeichenfolge|Details der Ausgabe.|
 |lastStateUpdateDateTime|DateTimeOffset|Zeitpunkt führt das Gerät Management-Skript aus.|
 |errorCode|Int32|Fehlercode, fehlerhafte Ausführung des Skripts Management Gerät entspricht.|
-|errorDescription|String|Fehlerhafte Ausführung des Skripts Management Gerät entsprechend der Beschreibung des Fehlers.|
+|errorDescription|Zeichenfolge|Fehlerhafte Ausführung des Skripts Management Gerät entsprechend der Beschreibung des Fehlers.|
 
 
 

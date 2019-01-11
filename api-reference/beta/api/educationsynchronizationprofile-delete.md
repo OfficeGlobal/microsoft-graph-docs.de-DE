@@ -2,12 +2,13 @@
 title: Löschen einer educationSynchronizationProfile
 description: Löschen Sie eine Schule Synchronisierung Datenprofil im Mandanten auf Grundlage des Bezeichners.
 author: mmast-msft
-ms.openlocfilehash: b0287133d579915279e0f9a02bf49dd981ccf419
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09cc19b22cfa433cef39c81a6cbeadeddcf52ace
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343302"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870364"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>Löschen einer educationSynchronizationProfile
 
@@ -31,7 +32,7 @@ DELETE /synchronizationProfiles/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich.  |
+| Authorization  | string  | Bearer {token}. Erforderlich.  |
 |Delegierte (Persönliches Microsoft-Konto|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 

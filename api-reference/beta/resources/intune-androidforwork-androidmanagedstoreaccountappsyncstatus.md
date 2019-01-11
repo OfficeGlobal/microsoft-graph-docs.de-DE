@@ -2,12 +2,13 @@
 title: AndroidManagedStoreAccountAppSyncStatus Enum-Typ
 description: Synchronisierungsstatus des Mandanten mit der Google EMM-API
 author: tfitzmac
-ms.openlocfilehash: 38131e49734cc76809729dcedf7c133d4f624af5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5ff3f0bdba77a7451d141799aa2f60212983d4db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355489"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873458"
 ---
 # <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a>AndroidManagedStoreAccountAppSyncStatus Enum-Typ
 
@@ -17,14 +18,14 @@ ms.locfileid: "27355489"
 
 Synchronisierungsstatus des Mandanten mit der Google EMM-API
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |Erfolgreich|0|Noch nicht dokumentiert|
 |credentialsNotValid|1|Noch nicht dokumentiert|
 |androidForWorkApiError|2|Noch nicht dokumentiert|
 |managementServiceError|3|Noch nicht dokumentiert|
 |UnknownError ab|4|Noch nicht dokumentiert|
-|Keine|5|Noch nicht dokumentiert|
+|n/v|5|Noch nicht dokumentiert|
 
 
 

@@ -2,12 +2,13 @@
 title: childFolders auflisten
 description: Mit dieser API können Sie eine Sammlung von untergeordneten Ordnern im jeweils angegebenen Kontaktordner abrufen.
 author: angelgolfer-ms
-ms.openlocfilehash: f5a6d351ad6832f7eea4067574d830d1bde80a23
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6238d3dbbe194b17e8170d888b70494e24d4c89a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325452"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870181"
 ---
 # <a name="list-childfolders"></a>childFolders auflisten
 
@@ -34,7 +35,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: plannerChecklistItem-Ressourcentyp
 description: Die Ressource **PlannerChecklistItem** stellt ein Element in der Prüfliste eines Vorgangs dar. Die Checkliste für einen Vorgang wird durch das ChecklistItems-Objekt dargestellt.
-ms.openlocfilehash: 846c1877fb421c9070eff7c041983367a7beb29b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 116d85ecfad403409933ea485c71dd0f1ebeae9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061428"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866479"
 ---
 # <a name="plannerchecklistitem-resource-type"></a>plannerChecklistItem-Ressourcentyp
 

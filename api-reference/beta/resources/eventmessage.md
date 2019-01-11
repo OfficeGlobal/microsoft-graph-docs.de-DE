@@ -1,12 +1,13 @@
 ---
 title: eventMessage-Ressourcentyp
 description: 'Eine Nachricht, die für eine Besprechungsanfrage, -absage oder -antwort steht (diese kann folgende umfassen: Zusage, Zusage mit Vorbehalt oder Absage). '
-ms.openlocfilehash: ab63a2d216b5ff12e88e887cb054ca3cb562620e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2a6b1768a97d07ed534699f6bbef7f4f1337a2b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059871"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872681"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage-Ressourcentyp
 
@@ -107,11 +108,11 @@ Es folgt eine JSON-Darstellung der Ressource.
 |internetMessageHeaders | [internetinternetMessageHeaders](internetmessageheader.md)-Sammlung | Die Sammlung von Nachrichtenkopfzeilen, definiert von [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), die Informationen des von einer Nachricht vom Absender bis zum Empfänger verwendeten Pfads einer Nachricht liefert. Schreibgeschützt.|
 |internetMessageId |String |Die Nachrichten-ID im Format durch [RFC5322](https://www.ietf.org/rfc/rfc5322.txt)angegeben. |
 |isAllDay |Boolean|Gibt an, ob das Ereignis den ganzen Tag dauert. Anpassen dieser Eigenschaft erfordert die **StartDateTime** und **EndDateTime** Eigenschaften des Ereignisses sowie anpassen.|
-|isDeliveryReceiptRequested|Boolescher Wert|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
-|isDraft|Boolescher Wert|Gibt an, ob die Nachricht ein Entwurf ist. Eine Nachricht ist ein Entwurf, solange sie noch nicht gesendet wurde.|
-|isOutOfDate|Boolesch|Gibt an, ob diese Besprechungsanfrage von einer neueren Anforderung veralteten vorgenommen wurden.|
-|isRead|Boolescher Wert|Gibt an, ob die Nachricht gelesen wurde.|
-|isReadReceiptRequested|Boolescher Wert|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
+|isDeliveryReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
+|isDraft|Boolean|Gibt an, ob die Nachricht ein Entwurf ist. Eine Nachricht ist ein Entwurf, solange sie noch nicht gesendet wurde.|
+|isOutOfDate|Boolean|Gibt an, ob diese Besprechungsanfrage von einer neueren Anforderung veralteten vorgenommen wurden.|
+|isRead|Boolean|Gibt an, ob die Nachricht gelesen wurde.|
+|isReadReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
 |lastModifiedDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht zuletzt geändert wurde.|
 |location|[location](location.md)|Der Speicherort der angeforderten Besprechung.|
 |meetingMessageType|String| Der Typ der Ereignisnachricht: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
@@ -124,7 +125,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|Die Anfangszeit der angeforderten Besprechung.|
 |Betreff|String|Der Betreff der Nachricht.|
 |toRecipients|[recipient](recipient.md) collection|Die An:-Empfänger der Nachricht.|
-|Typ|String|Die Art der angeforderten Besprechung: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
+|type|String|Die Art der angeforderten Besprechung: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
 |uniqueBody|[itemBody](itembody.md)|Der Teil des Textkörpers der Nachricht, der für die aktuelle Nachricht eindeutig ist.|
 |UnsubscribeData|Zeichenfolge|Die gültigen Einträge, die vom List-Unsubscribe-Header analysiert werden.  Dies sind die Daten für den E-Mail-Befehl im List-Unsubscribe-Header, wenn die UnsubscribeeEnabled-Eigenschaft „true“ ist.|
 |UnsubscribeEnabled|Boolescher Wert|Gibt an, ob die Nachricht zum Kündigen des Abonnements aktiviert ist.  Wenn der list-Unsubscribe-Header „rfc-2369“ entspricht, ist der Wert „true“.|

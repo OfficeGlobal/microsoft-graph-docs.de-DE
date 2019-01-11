@@ -2,12 +2,13 @@
 title: Abrufen von „deviceCategory“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs deviceCategory.
 author: tfitzmac
-ms.openlocfilehash: c69e3ecf97889636dd00deab213caf116233f6b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ba5fdee5ba2290b25bdf9485b94307f0f637649a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309699"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872191"
 ---
 # <a name="get-devicecategory"></a>Abrufen von „deviceCategory“
 
@@ -42,10 +43,10 @@ GET /deviceManagement/deviceCategories/{deviceCategoryId}
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

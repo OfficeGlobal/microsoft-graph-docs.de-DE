@@ -1,12 +1,13 @@
 ---
 title: Aufgaben auflisten
 description: Dient zum Abrufen einer Liste von **plannertask**-Objekten.
-ms.openlocfilehash: ad0074fce8e8c9c7a247f02a9406917d713a5ec5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b7f58c3505b9f2723d0f21eeea037cbafc73aa60
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058665"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868326"
 ---
 # <a name="list-tasks"></a>Aufgaben auflisten
 

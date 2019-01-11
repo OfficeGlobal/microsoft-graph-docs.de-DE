@@ -2,12 +2,13 @@
 title: Aktualisieren von „managedEBookAssignment“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs managedEBookAssignment.
 author: tfitzmac
-ms.openlocfilehash: 9ac5d51413a9539667a11ee15e5789d359c94d9b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fe5b44bbbbc11083166d8c225bb2b38bc8730ccc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315764"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869839"
 ---
 # <a name="update-managedebookassignment"></a>Aktualisieren von „managedEBookAssignment“
 
@@ -37,8 +38,8 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) an.
@@ -47,7 +48,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Zuweisungsziel für das E-Book|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|Installationspriorität für das E-Book. Mögliche Werte sind: `available`, `required`, `uninstall` und `availableWithoutEnrollment`.|
 

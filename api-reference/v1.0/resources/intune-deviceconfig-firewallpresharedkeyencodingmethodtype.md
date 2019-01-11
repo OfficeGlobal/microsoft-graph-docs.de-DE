@@ -2,12 +2,13 @@
 title: FirewallPreSharedKeyEncodingMethodType Enum-Typ
 description: Mögliche Werte für firewallPreSharedKeyEncodingMethod
 author: tfitzmac
-ms.openlocfilehash: b8ab119c58aec6e62c0a32ccf310f43eab029573
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bba6033985f2b960a272134614d98acc7203a9d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343589"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871750"
 ---
 # <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>FirewallPreSharedKeyEncodingMethodType Enum-Typ
 
@@ -15,10 +16,10 @@ ms.locfileid: "27343589"
 
 Mögliche Werte für firewallPreSharedKeyEncodingMethod
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |deviceDefault|0|Überschreiben Sie keinen Wert von Intune, konfiguriert nicht den Standardwert für den Benutzer konfigurierten Gerät|
-|Keine|1|Vorinstallierter Schlüssel ist nicht codiert. Stattdessen wird es in seinem Breitzeichen-Format gespeichert|
+|n/v|1|Vorinstallierter Schlüssel ist nicht codiert. Stattdessen wird es in seinem Breitzeichen-Format gespeichert|
 |utF8|2|Vorinstallierten Schlüssel mit UTF-8-Codierung|
 
 

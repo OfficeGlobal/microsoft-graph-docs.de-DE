@@ -1,12 +1,13 @@
 ---
 title: recurrenceRange-Ressourcentyp
 description: 'Beschreibt den Datumsbereich, über den sich ein wiederkehrendes Ereignis wiederholt. '
-ms.openlocfilehash: 0e255c28ea2d1e72ae3219e082b3e62b166b1f4c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4129b698e48b01e0208b88fbdc57fb777835cd4e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018944"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872989"
 ---
 # <a name="recurrencerange-resource-type"></a>recurrenceRange-Ressourcentyp
 

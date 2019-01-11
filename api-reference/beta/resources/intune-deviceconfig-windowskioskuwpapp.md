@@ -2,12 +2,13 @@
 title: Ressourcentyp windowsKioskUWPApp
 description: Die Basisklasse für einen Typ von apps
 author: tfitzmac
-ms.openlocfilehash: 328a91065692a7b315ade5dae86c15d6def320eb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8f456841962b399a1e9687017a0a8eaeb07a4ba7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305180"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871862"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>Ressourcentyp windowsKioskUWPApp
 
@@ -23,10 +24,10 @@ Erbt vom [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappb
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Die app-Kachelgröße für die Start-Layout Inherited aus [WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Mögliche Werte sind: `hidden`, `small`, `medium`, `wide` und `large`.|
-|name|String|Stellt den Anzeigenamen einer App Inherited aus [WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md) dar.|
-|appUserModelId|String|Dies ist die einzige Anwendung Benutzer Modell ID (AUMID), die Verwendung im Kioskmodus gestartet werden|
+|name|Zeichenfolge|Stellt den Anzeigenamen einer App Inherited aus [WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md) dar.|
+|appUserModelId|Zeichenfolge|Dies ist die einzige Anwendung Benutzer Modell ID (AUMID), die Verwendung im Kioskmodus gestartet werden|
 |appId|Zeichenfolge|Dies verweist auf eine Intune-App, die Ziel ein, um dieselben Zuweisungen als Kiosk-Konfiguration werden|
-|containedAppId|String|Dies wird auf einer enthaltenen App aus einer Intune App|
+|containedAppId|Zeichenfolge|Dies wird auf einer enthaltenen App aus einer Intune App|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

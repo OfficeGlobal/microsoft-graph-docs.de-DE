@@ -1,12 +1,13 @@
 ---
 title: E-Mail-App-Verwendungsbericht
 description: In den E-Mail-App-Verwendungsberichten erfahren Sie, wie viele E-Mail-Apps für die Verbindung mit Exchange Online verwendet werden. Sie können auch nachsehen, welche Versionen von Outlook-Apps verwendet werden, sodass Sie Benutzer informieren können, die auf unterstützte Outlook-Versionen upgraden sollten.
-ms.openlocfilehash: 87f04af05aeb55758ec2bdb01fa4f909c7ffa788
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3288d987719dd7ba005b0c6bb23231e367b2ad37
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016348"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869986"
 ---
 # <a name="email-app-usage-reports"></a>E-Mail-App-Verwendungsbericht
 

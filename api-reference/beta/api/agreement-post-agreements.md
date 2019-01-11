@@ -1,12 +1,13 @@
 ---
 title: Vereinbarung erstellen
 description: Erstellen eines neuen Vereinbarung-Objekts.
-ms.openlocfilehash: bfcab53b4233d133309c99a4825e184a42670458
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4768912a7c5be722878d6b910d6d68ded460c702
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059370"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870637"
 ---
 # <a name="create-agreement"></a>Vereinbarung erstellen
 
@@ -39,11 +40,11 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen e
 
 | Eigenschaft     | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
-|displayName|String|Der Anzeigename der Vereinbarung.|
-|isViewingBeforeAcceptanceRequired|Boolesch|Gibt an, ob der Benutzer zu erweitern und vor dem akzeptieren die Vereinbarung anzuzeigen.|
-|Dateien/fileName|String|Name der Datei Vereinbarung (beispielsweise TOU.pdf).|
-|Dateien/isDefault|Boolesch|Gibt an, ob dies Vereinbarung Standarddatei ist, wenn keiner der Kultur die Client-Vorgabe übereinstimmt. Wenn keine der Datei als Standard angegeben ist, wird der ersten als Standard behandelt.|
-|Dateien/Sprache|String|Kultur der Vereinbarung Datei im Format languagecode2-Land/regioncode2. languagecode2 ist eine zwei-Code aus Kleinbuchstaben ISO 639-1 abgeleitet. Land/regioncode2 ISO 3166 abgeleitet ist und in der Regel besteht aus zwei Großbuchstaben oder ein Sprachtag BCP 47 (z. B. En-US).|
+|displayName|Zeichenfolge|Der Anzeigename der Vereinbarung.|
+|isViewingBeforeAcceptanceRequired|Boolescher Wert|Gibt an, ob der Benutzer zu erweitern und vor dem akzeptieren die Vereinbarung anzuzeigen.|
+|Dateien/fileName|Zeichenfolge|Name der Datei Vereinbarung (beispielsweise TOU.pdf).|
+|Dateien/isDefault|Boolescher Wert|Gibt an, ob dies Vereinbarung Standarddatei ist, wenn keiner der Kultur die Client-Vorgabe übereinstimmt. Wenn keine der Datei als Standard angegeben ist, wird der ersten als Standard behandelt.|
+|Dateien/Sprache|Zeichenfolge|Kultur der Vereinbarung Datei im Format languagecode2-Land/regioncode2. languagecode2 ist eine zwei-Code aus Kleinbuchstaben ISO 639-1 abgeleitet. Land/regioncode2 ISO 3166 abgeleitet ist und in der Regel besteht aus zwei Großbuchstaben oder ein Sprachtag BCP 47 (z. B. En-US).|
 |Dateien/FileData/data|Binär|Daten, die rechtliche Hinweise das PDF-Dokument darstellt.|
 
 ## <a name="response"></a>Antwort

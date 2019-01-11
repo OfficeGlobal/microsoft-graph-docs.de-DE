@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp educationAssignmentResource
 description: Ein Wrapperobjekt, die Ressourcen, die einer Zuordnung zugeordnet speichert. Der Wrapper fügt die Eigenschaft **DistributeForStudentWork** hinzu und gibt an, dass diese Ressource wird
-ms.openlocfilehash: 6907af5e4408248487b118c390bb2ec209700124
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 55d978ceb2a3df613ded09682bbdc42009f4e204
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062224"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868838"
 ---
 # <a name="educationassignmentresource-resource-type"></a>Ressourcentyp educationAssignmentResource
 
@@ -26,8 +27,8 @@ Ein Wrapperobjekt, die Ressourcen, die einer Zuordnung zugeordnet speichert. Der
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolesch|Gibt an, ob diese Ressource in jeder Studentenübermittlung für Änderung und Übermittlung kopiert werden sollen.|
-|id|String| Die ID der Ressource. Schreibgeschützt.|
+|distributeForStudentWork|Boolescher Wert|Gibt an, ob diese Ressource in jeder Studentenübermittlung für Änderung und Übermittlung kopiert werden sollen.|
+|id|Zeichenfolge| Die ID der Ressource. Schreibgeschützt.|
 |resource|[educationResource](educationresource.md)|Resource-Objekt, das diese Zuordnung zugeordnet wurde.|
 
 ## <a name="relationships"></a>Beziehungen

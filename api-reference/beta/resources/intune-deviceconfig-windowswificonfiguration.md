@@ -2,12 +2,13 @@
 title: Ressourcentyp windowsWifiConfiguration
 description: Gerätekonfiguration.
 author: tfitzmac
-ms.openlocfilehash: 5c8f7df3ef1c80e2d6204ca4acb2996200af5fa2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 50f73a6a736aea5cac06c05d360c8f0c80bb41ce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359185"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872716"
 ---
 # <a name="windowswificonfiguration-resource-type"></a>Ressourcentyp windowsWifiConfiguration
 
@@ -25,7 +26,7 @@ Erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |[Liste windowsWifiConfigurations](../api/intune-deviceconfig-windowswificonfiguration-list.md)|[WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md) -Auflistung|Listeneigenschaften und Beziehungen der [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md) -Objekte.|
 |[Abrufen von windowsWifiConfiguration](../api/intune-deviceconfig-windowswificonfiguration-get.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|Lesen Sie Eigenschaften und Beziehungen des [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md) -Objekts.|
 |[Erstellen von windowsWifiConfiguration](../api/intune-deviceconfig-windowswificonfiguration-create.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|Erstellen eines neuen [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md) -Objekts.|
-|[WindowsWifiConfiguration löschen](../api/intune-deviceconfig-windowswificonfiguration-delete.md)|Keines|Löscht eine [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md).|
+|[WindowsWifiConfiguration löschen](../api/intune-deviceconfig-windowswificonfiguration-delete.md)|Keine|Löscht eine [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md).|
 |[WindowsWifiConfiguration aktualisieren](../api/intune-deviceconfig-windowswificonfiguration-update.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|Aktualisieren Sie die Eigenschaften eines [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
@@ -34,7 +35,7 @@ Erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolesch|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -44,14 +45,14 @@ Erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|Geben Sie den gemessenen Verbindungstyp des Grenzwert für die WLAN-Verbindung. Mögliche Werte sind: `unrestricted`, `fixed` und `variable`.|
 |SSID|String|Geben Sie die SSID des WLAN-Verbindung.|
 |Netzwerkname|String|Geben Sie den Namen der Netzwerk-Konfiguration.|
-|connectAutomatically|Boolesch|Geben Sie an, ob die WLAN-Verbindung automatisch im Bereich eine Verbindung herstellen soll.|
-|connectToPreferredNetwork|Boolesch|Geben Sie an, ob die WLAN-Verbindung zu bevorzugten Netzwerken, wenn bereits mit diesem verbunden eine Verbindung herstellen soll.  Erfordert ConnectAutomatically auf true festgelegt ist.|
-|connectWhenNetworkNameIsHidden|Boolesch|Geben Sie an, ob die WLAN-Verbindung automatisch verbinden sollte, auch wenn die SSID nicht übertragen wird.|
+|connectAutomatically|Boolean|Geben Sie an, ob die WLAN-Verbindung automatisch im Bereich eine Verbindung herstellen soll.|
+|connectToPreferredNetwork|Boolean|Geben Sie an, ob die WLAN-Verbindung zu bevorzugten Netzwerken, wenn bereits mit diesem verbunden eine Verbindung herstellen soll.  Erfordert ConnectAutomatically auf true festgelegt ist.|
+|connectWhenNetworkNameIsHidden|Boolean|Geben Sie an, ob die WLAN-Verbindung automatisch verbinden sollte, auch wenn die SSID nicht übertragen wird.|
 |proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Geben Sie die Proxyeinstellung für Wi-Fi-Konfiguration. Mögliche Werte sind: `none`, `manual` und `automatic`.|
 |proxyManualAddress|String|Geben Sie die IP-Adresse des Proxyservers ein.|
 |proxyManualPort|Int32|Geben Sie den Port für den Proxyserver ein.|
 |proxyAutomaticConfigurationUrl|String|Geben Sie die URL für das Skript Server Proxykonfiguration.|
-|forceFIPSCompliance|Boolesch|Gibt an, ob FIPS-Konformität zu erzwingen.|
+|forceFIPSCompliance|Boolean|Gibt an, ob FIPS-Konformität zu erzwingen.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

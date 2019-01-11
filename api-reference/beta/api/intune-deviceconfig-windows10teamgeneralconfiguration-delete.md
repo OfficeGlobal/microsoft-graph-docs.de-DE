@@ -2,12 +2,13 @@
 title: windows10TeamGeneralConfiguration löschen
 description: Löscht Objekte des Typs windows10TeamGeneralConfiguration.
 author: tfitzmac
-ms.openlocfilehash: b4badd2b6a4718519a40bbce06fee138fad80e08
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2a979d4c1e39f520a0e232bcc447abb4cd3b09e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302457"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873430"
 ---
 # <a name="delete-windows10teamgeneralconfiguration"></a>windows10TeamGeneralConfiguration löschen
 
@@ -39,8 +40,8 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

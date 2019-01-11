@@ -2,12 +2,13 @@
 title: Ressourcentyp „androidForWorkSettings“
 description: Einstellungen für Android for Work
 author: tfitzmac
-ms.openlocfilehash: 2a3bedbed986e10c0df1cae94d3302d16607e3f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d96ebd30985b4bea50cf236b3315114db4c3e216
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361712"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873793"
 ---
 # <a name="androidforworksettings-resource-type"></a>Ressourcentyp „androidForWorkSettings“
 
@@ -29,16 +30,16 @@ Einstellungen für Android for Work
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Android for Work-Einstellungsbezeichner.|
+|id|Zeichenfolge|Android for Work-Einstellungsbezeichner.|
 |bindStatus|[androidForWorkBindStatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|Status des Mandanten mit der Google EMM-API zu binden. Mögliche Werte: sind `notBound`, `bound`, `boundAndValidated` und `unbinding`.|
 |lastAppSyncDateTime|DateTimeOffset|Zeitpunkt, zu dem zuletzt eine App-Synchronisierung abgeschlossen wurde.|
 |lastAppSyncStatus|[androidForWorkSyncStatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|Letzte Anwendung Sync Ergebnis. Mögliche Werte sind: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError` und `none`.|
-|ownerUserPrincipalName|String|Besitzer-UPN, der das Unternehmen erstellt hat|
-|ownerOrganizationName|String|Organisationsname, der beim Android for Work-Onboarding verwendet wird|
+|ownerUserPrincipalName|Zeichenfolge|Besitzer-UPN, der das Unternehmen erstellt hat|
+|ownerOrganizationName|Zeichenfolge|Organisationsname, der beim Android for Work-Onboarding verwendet wird|
 |lastModifiedDateTime|DateTimeOffset|Zeitpunkt, zu dem die Android for Work-Einstellungen zuletzt geändert wurden|
 |enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|Gibt an, welche Benutzer Geräte in Android für die Verwaltung von Geräten registrieren können. Mögliche Werte: sind `none`, `all`, `targeted` und `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|Zeichenfolgenauflistung|Gibt an, welche AAD-Gruppen Geräte in der Android for Work-Geräteverwaltung registrieren dürfen, wenn die Eigenschaft „enrollmentTarget“ auf „Targeted“ gesetzt ist.|
-|deviceOwnerManagementEnabled|Boolesch|Gibt an, ob dieses Konto für Android Besitzer Gerätemanagement mit CloudDPC flighting ist.|
+|deviceOwnerManagementEnabled|Boolescher Wert|Gibt an, ob dieses Konto für Android Besitzer Gerätemanagement mit CloudDPC flighting ist.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

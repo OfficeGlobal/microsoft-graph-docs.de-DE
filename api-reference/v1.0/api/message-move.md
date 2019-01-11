@@ -2,12 +2,13 @@
 title: 'message: move'
 description: Verschieben von Nachrichten in einen Ordner. Erstellt eine neue Kopie der Nachricht im Zielordner und die ursprüngliche Nachricht entfernt.
 author: angelgolfer-ms
-ms.openlocfilehash: fd091e02251ed673fd4f226f2e5e3fa2c14f647b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 342c11e844d93ec9bf91b2a40db601e7c4a6b049
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324402"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870588"
 ---
 # <a name="message-move"></a>message: move
 
@@ -38,7 +39,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | Header | Wert |
 |:-------|:------|
-| Autorisierung | `Bearer {token}`. Erforderlich. |
+| Authorization | `Bearer {token}`. Erforderlich. |
 | Content-Type | `application/json`. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -47,7 +48,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter   | Typ |Beschreibung|
 |:---------------|:--------|:----------|
-|destinationId|String|Die Ziel-Ordner-ID oder den Ordnernamen einer bekannten. Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).|
+|destinationId|Zeichenfolge|Die Ziel-Ordner-ID oder den Ordnernamen einer bekannten. Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).|
 
 ## <a name="response"></a>Antwort
 

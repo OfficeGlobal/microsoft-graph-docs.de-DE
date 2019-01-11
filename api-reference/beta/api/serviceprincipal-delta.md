@@ -1,12 +1,13 @@
 ---
 title: 'ServicePrincipal: Delta'
 description: Get neu erstellt, aktualisiert oder gelöscht Dienstprinzipale ohne ein alles Lesen der gesamte Ressource Auflistung ausführen. Einzelheiten finden Sie unter Delta-Abfrage verwenden.
-ms.openlocfilehash: 27653df1444ca83ef819d51813a813b169f3ad7e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f1801f98950f132e8fdc94770d616fc2e523a2de
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062922"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868292"
 ---
 # <a name="serviceprincipal-delta"></a>ServicePrincipal: Delta
 

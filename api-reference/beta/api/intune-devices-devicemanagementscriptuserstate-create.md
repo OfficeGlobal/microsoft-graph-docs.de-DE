@@ -2,12 +2,13 @@
 title: Erstellen von deviceManagementScriptUserState
 description: Erstellen eines neuen DeviceManagementScriptUserState-Objekts.
 author: tfitzmac
-ms.openlocfilehash: fbe9c964296854a92e62a86743d06d8577b675f8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 76be7695b64b660ec4da3b2d4d19928ea7b57bff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347579"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873353"
 ---
 # <a name="create-devicemanagementscriptuserstate"></a>Erstellen von deviceManagementScriptUserState
 
@@ -37,8 +38,8 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt DeviceManagementScriptUserState eine JSON-Darstellung.
@@ -47,10 +48,10 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Das Gerät Management Skript Zustand Benutzerentität-Taste.|
+|id|Zeichenfolge|Das Gerät Management Skript Zustand Benutzerentität-Taste.|
 |successDeviceCount|Int32|Anzahl der Erfolg Geräte für bestimmte Benutzer.|
 |errorDeviceCount|Int32|Anzahl der Fehler Geräte für bestimmte Benutzer.|
-|userPrincipalName|String|Prinzip-Benutzernamen eines bestimmten Benutzers.|
+|userPrincipalName|Zeichenfolge|Prinzip-Benutzernamen eines bestimmten Benutzers.|
 
 
 

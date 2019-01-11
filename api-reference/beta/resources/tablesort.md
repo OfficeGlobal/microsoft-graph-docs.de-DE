@@ -2,12 +2,13 @@
 title: TableSort-Ressourcentyp
 description: Verwaltet Sortiervorgänge für Table-Objekte.
 author: lumine2008
-ms.openlocfilehash: 52ee5288698b236f7ee4d29eb75fdac5ad14fa0f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7e3eae5ef21bc8d8ea1fba395b369ea35d1f80b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339823"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873045"
 ---
 # <a name="tablesort-resource-type"></a>TableSort-Ressourcentyp
 
@@ -22,7 +23,7 @@ Verwaltet Sortiervorgänge für Table-Objekte.
 |:---------------|:--------|:----------|
 |[Get TableSort](../api/tablesort-get.md) | [TableSort](tablesort.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des tableSort-Objekts.|
 |[Apply](../api/tablesort-apply.md)|Keine|Führt einen Sortiervorgang aus.|
-|[Löschen](../api/tablesort-clear.md)|Keine|Löscht die Sortierung, die derzeit in der Tabelle enthalten ist. Dies ändert nicht die Sortierung der Tabelle, löscht jedoch den Zustand der Kopfzeilen-Schaltflächen.|
+|[Clear](../api/tablesort-clear.md)|Keine|Löscht die Sortierung, die derzeit in der Tabelle enthalten ist. Dies ändert nicht die Sortierung der Tabelle, löscht jedoch den Zustand der Kopfzeilen-Schaltflächen.|
 |[Reapply](../api/tablesort-reapply.md)|Keine|Wendet die aktuellen Sortierparameter erneut auf die Tabelle an.|
 
 ## <a name="properties"></a>Eigenschaften

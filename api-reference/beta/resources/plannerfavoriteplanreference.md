@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp plannerFavoritePlanReference
 description: 'Die Ressource **PlannerFavoritePlanReference** Repesents Geben Sie einen Verweis auf eine PlannerPlan, die markiert wurde als Favoriten des Benutzers. '
-ms.openlocfilehash: bd399572dfce54ee7e46da6af60eb661484519de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b17846eaa1b9a9859d23735d18a191cae4872542
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060010"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871323"
 ---
 # <a name="plannerfavoriteplanreference-resource-type"></a>Ressourcentyp plannerFavoritePlanReference
 
@@ -20,8 +21,8 @@ Es wird empfohlen, dass Clients benachrichtigen Sie Benutzer bei Diskrepanzen un
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|orderHint|String|Hinweis, der zum Anordnen von Elementen dieses Typs in einer Listenansicht verwendet wird. Das Format ist unter [Verwenden von Anordnungshinweisen in Planner](planner-order-hint-format.md) definiert.|
-|planTitle|String|Titel des Plans zur Zeit, dass der Benutzer als Favoriten markiert.|
+|orderHint|Zeichenfolge|Hinweis, der zum Anordnen von Elementen dieses Typs in einer Listenansicht verwendet wird. Das Format ist unter [Verwenden von Anordnungshinweisen in Planner](planner-order-hint-format.md) definiert.|
+|planTitle|Zeichenfolge|Titel des Plans zur Zeit, dass der Benutzer als Favoriten markiert.|
 
 
 ## <a name="json-representation"></a>JSON-Darstellung

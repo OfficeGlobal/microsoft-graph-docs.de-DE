@@ -2,12 +2,13 @@
 title: Benutzer abrufen
 description: Lesen von Eigenschaften und Beziehungen des user-Objekts.
 author: tfitzmac
-ms.openlocfilehash: cf0ee7b2c6d9cf13176f65c174ee4b6ac986984b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9e6fac98b30c9a66e159dabd816a5e5bbe350f4a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359689"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869783"
 ---
 # <a name="get-user"></a>Benutzer abrufen
 
@@ -49,8 +50,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 

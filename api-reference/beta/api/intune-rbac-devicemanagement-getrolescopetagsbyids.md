@@ -2,12 +2,13 @@
 title: GetRoleScopeTagsByIds-Funktion
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 6b2efeff02b7404aefce1e6acbfbc3a0aca663f8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dd5389c4cece513bfaea434192fd612dd60bc239
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351800"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868334"
 ---
 # <a name="getrolescopetagsbyids-function"></a>GetRoleScopeTagsByIds-Funktion
 
@@ -37,8 +38,8 @@ GET /deviceManagement/getRoleScopeTagsByIds
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie in der Anforderungs-URL die folgenden Abfrageparameter mit Werten an.

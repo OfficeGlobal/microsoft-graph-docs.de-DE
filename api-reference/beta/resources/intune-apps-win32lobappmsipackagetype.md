@@ -2,12 +2,13 @@
 title: win32LobAppMsiPackageType Enum-Typ
 description: Gibt das Paket eine MSI-Win32LobApp an.
 author: tfitzmac
-ms.openlocfilehash: 7caf13d48dda3cf8e1b88605c575ae5f6322c6fe
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fdb47ae6b068644ad5f1edb2316ce9b74821c0d5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335679"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872576"
 ---
 # <a name="win32lobappmsipackagetype-enum-type"></a>win32LobAppMsiPackageType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27335679"
 
 Gibt das Paket eine MSI-Win32LobApp an.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |perMachine|0|Gibt eine maschinenbasierte app-Paket an.|
 |perUser|1|Gibt eine benutzerbasierte app-Paket an.|

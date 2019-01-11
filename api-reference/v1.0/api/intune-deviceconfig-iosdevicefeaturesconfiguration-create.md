@@ -2,12 +2,13 @@
 title: Erstellen von „iosDeviceFeaturesConfiguration“
 description: Diese Methode erstellt ein neues Objekt des Typs iosDeviceFeaturesConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 9467e42e16d88e0d1bfa02ea0996a8930d5d6cdd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f81c159e258f76fca5bf4cc65892a8db768ace32
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307420"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867004"
 ---
 # <a name="create-iosdevicefeaturesconfiguration"></a>Erstellen von „iosDeviceFeaturesConfiguration“
 
@@ -35,8 +36,8 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „iosDeviceFeaturesConfiguration“ an.
@@ -45,14 +46,14 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|assetTagTemplate|String|Bestandskennzeicheninformationen zum Gerät. Sie werden im Anmeldefenster und im Sperrbildschirm angezeigt.|
-|lockScreenFootnote|String|Fußnote, die im Anmeldefenster und im Sperrbildschirm angezeigt wird. Verfügbar ab iOS 9.3.1.|
+|assetTagTemplate|Zeichenfolge|Bestandskennzeicheninformationen zum Gerät. Sie werden im Anmeldefenster und im Sperrbildschirm angezeigt.|
+|lockScreenFootnote|Zeichenfolge|Fußnote, die im Anmeldefenster und im Sperrbildschirm angezeigt wird. Verfügbar ab iOS 9.3.1.|
 |homeScreenDockIcons|Collection von Objekten des Typs [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|Liste der Apps und Ordner, die im Home-Bildschirm-Dock angezeigt werden sollen. Diese Collection darf maximal 500 Elemente enthalten.|
 |homeScreenPages|Collection von Objekten des Typs [iosHomeScreenPage](../resources/intune-deviceconfig-ioshomescreenpage.md)|Liste der Seiten auf dem Home-Bildschirm. Diese Collection darf maximal 500 Elemente enthalten.|
 |notificationSettings|Collection von Objekten des Typs [iosNotificationSettings](../resources/intune-deviceconfig-iosnotificationsettings.md)|Benachrichtigungseinstellungen für jede Bundle-ID. Gilt nur für Geräte im Betreuungsmodus (iOS 9.3 und höher). Diese Collection darf maximal 500 Elemente enthalten.|

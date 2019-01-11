@@ -2,12 +2,13 @@
 title: Ressourcentyp mobileAppTroubleshootingAppPolicyCreationHistory
 description: Historienelement im Mobile App Problembehandlung Ereignis enthaltenen.
 author: tfitzmac
-ms.openlocfilehash: 6d0192e8dde3cfc858629f7ae79e4b7de786740a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dd7880a6d931fafda46ab4adf0668835438ddcb8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301456"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870105"
 ---
 # <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>Ressourcentyp mobileAppTroubleshootingAppPolicyCreationHistory
 

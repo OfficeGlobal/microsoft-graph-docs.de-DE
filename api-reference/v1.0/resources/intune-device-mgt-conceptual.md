@@ -2,12 +2,13 @@
 title: Geräteverwaltung in Microsoft Intune
 description: ''
 author: tfitzmac
-ms.openlocfilehash: 3672513defc25d63e18e7432c3883340d31ae264
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 72ff8234696c8a6d1f74bd7468d24e98c54e5052
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341566"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868362"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Geräteverwaltung in Microsoft Intune
 

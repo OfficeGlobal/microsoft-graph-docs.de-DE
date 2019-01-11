@@ -2,12 +2,13 @@
 title: omaSettingBase64-Ressourcentyp
 description: Base64-Definition der OMA-Einstellungen
 author: tfitzmac
-ms.openlocfilehash: ee25db94cc1426194166a7c66b9a8a626d62c3e4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f5b21705d4cabedc24009df794d958c6187af473
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304074"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869818"
 ---
 # <a name="omasettingbase64-resource-type"></a>omaSettingBase64-Ressourcentyp
 
@@ -23,7 +24,7 @@ Erbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |displayName|Zeichenfolge|Anzeigename Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|String|Beschreibung. Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|Zeichenfolge|Beschreibung. Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|Zeichenfolge|OMA Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |fileName|Zeichenfolge|Die dem Dateinamen zugeordnete Werteigenschaft (*.cer | .CRT | p7b | * .bin).|
 |Wert|Zeichenfolge|Wert (Base64-codierte Zeichenfolge)|

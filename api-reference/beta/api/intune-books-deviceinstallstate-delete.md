@@ -2,12 +2,13 @@
 title: deviceInstallState löschen
 description: Löscht ein deviceInstallState-Objekt.
 author: tfitzmac
-ms.openlocfilehash: b018fd8494c93ff78d79e155e15236d9856a694d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f415b478ff7453a6a1ac7abcdd496ca80f6e4502
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325298"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874151"
 ---
 # <a name="delete-deviceinstallstate"></a>deviceInstallState löschen
 
@@ -38,8 +39,8 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{use
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: AndroidWorkProfileCrossProfileDataSharingType Enum-Typ
 description: Android Arbeit Profil schneidet Profildaten Typ Freigabe.
 author: tfitzmac
-ms.openlocfilehash: 278d9af142128003cf05b69f1cce340eb155f973
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 138834bcfa9bfd4f64f3eb9e801c975eb16b38c2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308151"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871960"
 ---
 # <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>AndroidWorkProfileCrossProfileDataSharingType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27308151"
 
 Android Arbeit Profil schneidet Profildaten Typ Freigabe.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |deviceDefault|0|Gerät Standardwert, keine beabsichtigt.|
 |preventAny|1|Verhindern, dass alle Freigabe.|

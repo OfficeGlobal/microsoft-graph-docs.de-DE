@@ -2,12 +2,13 @@
 title: ResultantAppStateDetail Enum-Typ
 description: Enum angibt, Weitere Einzelheiten zu warum eine Anwendung für einen bestimmten hat Installationsstatus.
 author: tfitzmac
-ms.openlocfilehash: e06e8afb6ebb5e22abf11d9cd53150bed5288052
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5c5eb8c921be7c14a45c979a57ffcaa0704d9b4b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352528"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874144"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>ResultantAppStateDetail Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27352528"
 
 Enum angibt, Weitere Einzelheiten zu warum eine Anwendung für einen bestimmten hat Installationsstatus.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |noAdditionalDetails|0|Es sind keine weiteren Details verfügbar.|
 |seeInstallErrorCode|2000|Anwendung konnte nicht installiert werden. Finden Sie unter Error Code-Eigenschaft für weitere Details.|

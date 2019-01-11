@@ -2,12 +2,13 @@
 title: WindowsAssignedAccessProfile aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines WindowsAssignedAccessProfile-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 84cbc1aaaebf9383c3d113d7f309c61de0cdeb67
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4bfa70208a456d7b7d2a2d0ae524d9edd9508cab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331360"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867046"
 ---
 # <a name="update-windowsassignedaccessprofile"></a>WindowsAssignedAccessProfile aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [WindowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md) eine JSON-Darstellung.
@@ -47,9 +48,9 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|Profilname|String|Dies ist ein Anzeigename zur Identifizierung einer Gruppe von Anwendungen, das Layout von diese apps auf das Startmenü und die Benutzer, die diese Konfiguration Kiosk zugewiesen ist.|
-|showTaskBar|Boolesch|Mit dieser Einstellung kann den Administrator an, ob der Taskleiste oder nicht angezeigt wird.|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Profilname|Zeichenfolge|Dies ist ein Anzeigename zur Identifizierung einer Gruppe von Anwendungen, das Layout von diese apps auf das Startmenü und die Benutzer, die diese Konfiguration Kiosk zugewiesen ist.|
+|showTaskBar|Boolescher Wert|Mit dieser Einstellung kann den Administrator an, ob der Taskleiste oder nicht angezeigt wird.|
 |appUserModelIds|Collection von Objekten des Typs „String“|Dies sind die einzige Windows Store-Apps, die über das Startmenü gestartet werden.|
 |desktopAppPaths|Collection von Objekten des Typs „String“|Dies sind die Pfade der Desktop-Apps, die auf das Startmenü zur Verfügung stehen, und die einzige apps des Benutzers kann zu starten.|
 |userAccounts|Collection von Objekten des Typs „String“|Die Benutzerkonten, die mit dieser Konfiguration Kiosk gesperrt werden.|

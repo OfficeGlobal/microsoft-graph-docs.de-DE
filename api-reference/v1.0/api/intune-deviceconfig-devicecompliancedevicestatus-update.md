@@ -2,12 +2,13 @@
 title: Aktualisieren von „deviceComplianceDeviceStatus“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceComplianceDeviceStatus.
 author: tfitzmac
-ms.openlocfilehash: 5f894c325e6f7732cb41b7472e85e3dbb8361e3b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f2b1569c872951d4f6b522f9118e6c01f249855d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343680"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871974"
 ---
 # <a name="update-devicecompliancedevicestatus"></a>Aktualisieren von „deviceComplianceDeviceStatus“
 
@@ -35,8 +36,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceComplianceDeviceStatus](../resources/intune-deviceconfig-devicecompliancedevicestatus.md) an.
@@ -45,14 +46,14 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|deviceDisplayName|String|Gerätename, der dem Objekt des Typs „DevicePolicyStatus“ zugeordnet ist|
-|userName|String|Gemeldeter Benutzername|
-|deviceModel|String|Gemeldetes Gerätemodell|
+|id|Zeichenfolge|Schlüssel der Entität|
+|deviceDisplayName|Zeichenfolge|Gerätename, der dem Objekt des Typs „DevicePolicyStatus“ zugeordnet ist|
+|userName|Zeichenfolge|Gemeldeter Benutzername|
+|deviceModel|Zeichenfolge|Gemeldetes Gerätemodell|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Toleranzperiode für die Gerätekonformität|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Konformitätsstatus des Richtlinienberichts. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Richtlinienberichts|
-|userPrincipalName|String|Benutzerprinzipalname|
+|userPrincipalName|Zeichenfolge|Benutzerprinzipalname|
 
 
 

@@ -2,12 +2,13 @@
 title: windows10EditionType Enum-Typ
 description: Windows-10-Edition-Typ.
 author: tfitzmac
-ms.openlocfilehash: cc7d198e523fe01a4e10887bc0a8cbb13bac345a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 487f2c90926f509071aa361a578c1facc841fe28
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327790"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872261"
 ---
 # <a name="windows10editiontype-enum-type"></a>windows10EditionType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27327790"
 
 Windows-10-Edition-Typ.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |windows10Enterprise|0|Windows 10 Enterprise|
 |windows10EnterpriseN|1|Windows 10 EnterpriseN|

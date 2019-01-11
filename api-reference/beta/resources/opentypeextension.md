@@ -1,12 +1,13 @@
 ---
 title: openTypeExtension-Ressourcentyp (offene Erweiterungen)
 description: Open-Erweiterungen (vormals Office 365 Daten Extensions) bieten eine einfache Möglichkeit nicht typisierte Eigenschaften auf eine Ressource in Microsoft Graph direkt hinzufügen.
-ms.openlocfilehash: f28ab43ddb3fd55efbca6738a0369fde37c906db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4bab83766d1fc44e96043689677713cb59084f4f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060805"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870959"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension-Ressourcentyp (offene Erweiterungen)
 
@@ -69,8 +70,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 | Eigenschaft | Typ | Beschreibung |
 |:---------------|:--------|:----------|
-|extensionName|String|Ein eindeutiger Textbezeichner für eine OpenType-Datenerweiterung. Erforderlich. |
-|id|String| Eine vollqualifizierte ID, die den Erweiterungstyp mit dem **extensionName**-Element verkettet. Schreibgeschützt.|
+|extensionName|Zeichenfolge|Ein eindeutiger Textbezeichner für eine OpenType-Datenerweiterung. Erforderlich. |
+|id|Zeichenfolge| Eine vollqualifizierte ID, die den Erweiterungstyp mit dem **extensionName**-Element verkettet. Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen
 

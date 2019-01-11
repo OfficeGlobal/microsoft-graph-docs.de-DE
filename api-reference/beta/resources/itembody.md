@@ -1,12 +1,13 @@
 ---
 title: itemBody-Ressourcentyp
 description: Stellt Eigenschaften des Textkörpers eines Elements dar, z. B. eine Nachricht, ein Ereignis oder ein Gruppenbeitrag.
-ms.openlocfilehash: 4ceada2ffe8106c270aa262d32ff85e349a8e657
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 791906c8442250d05d1b94b9eb9b19320f45e9c9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058216"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872142"
 ---
 # <a name="itembody-resource-type"></a>itemBody-Ressourcentyp
 
@@ -17,7 +18,7 @@ Stellt Eigenschaften des Textkörpers eines Elements dar, z. B. eine Nachricht, 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Inhalt|String|Der Inhalt des Elements.|
+|Inhalt|Zeichenfolge|Der Inhalt des Elements.|
 |contentType|Zeichenfolge|Der Typ des Inhalts. Mögliche Werte sind `Text` und `HTML`.|
 
 ## <a name="json-representation"></a>JSON-Darstellung

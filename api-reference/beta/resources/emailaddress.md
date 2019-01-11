@@ -1,12 +1,13 @@
 ---
 title: emailAddress-Ressourcentyp
 description: Stellt den Namen und die SMTP-Adresse einer Instanz einer Entität, beispielsweise eine Nachricht Empfänger oder Kalender Besitzer.
-ms.openlocfilehash: f607fe4ce01b9a3c3f5e7af5aa1638fef3840177
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5286334378aa5d208cf171ecab0bdc1777a4073b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059178"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871225"
 ---
 # <a name="emailaddress-resource-type"></a>emailAddress-Ressourcentyp
 
@@ -17,8 +18,8 @@ Stellt den Namen und die SMTP-Adresse einer Instanz einer Entität, beispielswei
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|address|String|Die e-Mail-Adresse einer Instanz einer Entität.|
-|name|String|Der Anzeigename einer Instanz einer Entität.|
+|address|Zeichenfolge|Die e-Mail-Adresse einer Instanz einer Entität.|
+|name|Zeichenfolge|Der Anzeigename einer Instanz einer Entität.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

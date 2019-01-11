@@ -2,12 +2,13 @@
 title: Ressourcentyp termsAndConditionsGroupAssignment
 description: C) Richtlinie zu einer bestimmten Gruppe. Benutzer in der Gruppe müssen die Nutzungsbedingungen annehmen, um Geräte in Intune registrieren zu lassen.
 author: tfitzmac
-ms.openlocfilehash: 044d82e00e2da81c59de5cdb26b9441da351db8a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9ae49e1223c4b74fb8da8da7f5b42533fd33c8c0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327615"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874220"
 ---
 # <a name="termsandconditionsgroupassignment-resource-type"></a>Ressourcentyp termsAndConditionsGroupAssignment
 
@@ -22,14 +23,14 @@ Eine Entität TermsAndConditionsGroupAssignment stellt die Zuweisung einer besti
 |[Liste termsAndConditionsGroupAssignments](../api/intune-companyterms-termsandconditionsgroupassignment-list.md)|[TermsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) -Auflistung|Listeneigenschaften und Beziehungen der [TermsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) -Objekte.|
 |[Abrufen von termsAndConditionsGroupAssignment](../api/intune-companyterms-termsandconditionsgroupassignment-get.md)|[termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md)|Lesen Sie Eigenschaften und Beziehungen des [TermsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) -Objekts.|
 |[Erstellen von termsAndConditionsGroupAssignment](../api/intune-companyterms-termsandconditionsgroupassignment-create.md)|[termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md)|Erstellen eines neuen [TermsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) -Objekts.|
-|[TermsAndConditionsGroupAssignment löschen](../api/intune-companyterms-termsandconditionsgroupassignment-delete.md)|Keines|Löscht eine [TermsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md).|
+|[TermsAndConditionsGroupAssignment löschen](../api/intune-companyterms-termsandconditionsgroupassignment-delete.md)|Keine|Löscht eine [TermsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md).|
 |[TermsAndConditionsGroupAssignment aktualisieren](../api/intune-companyterms-termsandconditionsgroupassignment-update.md)|[termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md)|Aktualisieren Sie die Eigenschaften eines [TermsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|Eindeutiger Bezeichner der Entität|
-|targetGroupId|String|Eindeutiger Bezeichner der einer Gruppe, der die Richtlinie T & C zugewiesen ist.|
+|targetGroupId|Zeichenfolge|Eindeutiger Bezeichner der einer Gruppe, der die Richtlinie T & C zugewiesen ist.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

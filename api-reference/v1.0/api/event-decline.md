@@ -2,12 +2,13 @@
 title: 'event: decline'
 description: Einladung auf das angegebene Ereignis in einem Benutzerkalender abzulehnen.
 author: angelgolfer-ms
-ms.openlocfilehash: 22051dc7f27a99a71748d20877cff6b562da6335
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c96e04bfc3547d1ff4323fbba3e4d2cde527095e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322344"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806202"
 ---
 # <a name="event-decline"></a>event: decline
 
@@ -50,7 +51,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -59,7 +60,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|comment|String|In der Antwort enthaltener Text. Optional.|
+|comment|Zeichenfolge|In der Antwort enthaltener Text. Optional.|
 |sendResponse|Boolescher Wert|`true`,wenn eine Antwort an den Organisator gesendet werden soll; andernfalls `false`. Optional. Der Standardwert lautet `true`.|
 
 ## <a name="response"></a>Antwort

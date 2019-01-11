@@ -2,12 +2,13 @@
 title: Auflisten von „managedAppRegistration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs managedAppRegistration auf.
 author: tfitzmac
-ms.openlocfilehash: 7a5647f25ecda2b9087e635e5f125880ee6056a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2859ab6bef11ddbb614fbbd9596356ecdc7813c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356175"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872898"
 ---
 # <a name="list-managedappregistrations"></a>Auflisten von „managedAppRegistration“
 
@@ -37,8 +38,8 @@ GET /deviceAppManagement/managedAppRegistrations
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

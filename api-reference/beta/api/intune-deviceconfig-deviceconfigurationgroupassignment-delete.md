@@ -2,12 +2,13 @@
 title: DeviceConfigurationGroupAssignment löschen
 description: Löscht eine DeviceConfigurationGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: 092ad9d684b6d04d3be7f151d759343fea44cc08
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 227ca3e27acf0880da41dcfcd5c19f8ac31f1aad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361418"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868852"
 ---
 # <a name="delete-deviceconfigurationgroupassignment"></a>DeviceConfigurationGroupAssignment löschen
 
@@ -45,8 +46,8 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

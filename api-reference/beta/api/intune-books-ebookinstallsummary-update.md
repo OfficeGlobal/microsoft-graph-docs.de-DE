@@ -2,12 +2,13 @@
 title: eBookInstallSummary aktualisieren
 description: Aktualisieren der Eigenschaften des eBookInstallSummary-Objekts.
 author: tfitzmac
-ms.openlocfilehash: b110646f51ce8c48e15bd8c5fbaa5e025952babc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d877e2c0af7df6c0d5c8743c1d43fd8c7d6298a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350729"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874634"
 ---
 # <a name="update-ebookinstallsummary"></a>eBookInstallSummary aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs [eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md) an.
@@ -47,7 +48,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |installedDeviceCount|Int32|Die Anzahl der Geräte, auf denen das Buch erfolgreich installiert wurde.|
 |failedDeviceCount|Int32|Die Anzahl der Geräte, auf denen die Installation des Buchs fehlgeschlagen ist.|
 |notInstalledDeviceCount|Int32|Die Anzahl von Geräten, auf denen das Buch nicht installiert ist.|

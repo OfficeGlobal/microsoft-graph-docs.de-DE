@@ -2,12 +2,13 @@
 title: ChartLineFormat-Ressourcentyp
 description: Kapselt die Formatierungsoptionen für Linienelemente.
 author: lumine2008
-ms.openlocfilehash: be9d0d3f30deb608aee9873866442e0478c0056a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b2b7e8bd5c0b489ed42baaa3939f7a839c74c3e7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352185"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871134"
 ---
 # <a name="chartlineformat-resource-type"></a>ChartLineFormat-Ressourcentyp
 
@@ -22,7 +23,7 @@ Kapselt die Formatierungsoptionen für Linienelemente.
 |:---------------|:--------|:----------|
 |[ChartLineFormat abrufen](../api/chartlineformat-get.md) | [ChartLineFormat](chartlineformat.md) |Dient zum Lesen der Eigenschaften und Beziehungen eines chartLineFormat-Objekts.|
 |[Update](../api/chartlineformat-update.md) | [ChartLineFormat](chartlineformat.md) |Dient zum Aktualisieren des ChartLineFormat-Objekts. |
-|[Löschen](../api/chartlineformat-clear.md)|Keine|Löschen der Linienformatierung eines Diagrammelements.|
+|[Clear](../api/chartlineformat-clear.md)|Keine|Löschen der Linienformatierung eines Diagrammelements.|
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|

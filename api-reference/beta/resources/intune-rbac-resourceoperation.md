@@ -2,12 +2,13 @@
 title: Ressourcentyp „resourceOperation“
 description: " Vorgang wird verwendet, um eine Sicherheitsgruppe AAD eine MobileApp Ressource zuordnen.  Ressourcenoperationen für integrierte Rollen können nicht geändert werden."
 author: tfitzmac
-ms.openlocfilehash: 9108181fe4d1c3cf241d879d5c1e4315d84d4eeb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 20bdb309883c4aa713e94ac1346441544f67c774
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323296"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871701"
 ---
 # <a name="resourceoperation-resource-type"></a>Ressourcentyp „resourceOperation“
 
@@ -29,12 +30,12 @@ Dieser Ressourcentyp definiert eine Operation oder eine Aktion, die auf eine Int
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Ressourcenoperation. Er ist schreibgeschützt und wird automatisch generiert.|
-|resource|String|Resource-Kategorie, zu dem dieser Vorgang gehört.|
-|resourceName|String|Name der Ressource, auf die die Operation angewendet wird|
-|actionName|String|Typ von Aktion, den die Operation ausführen wird. Der Wert für „actionName“ sollte prägnant sein und aus möglichst wenigen Wörtern bestehen.|
-|description|String|Beschreibung der Ressourcenoperation. Diese Beschreibung wird angezeigt, wenn der Benutzer im Azure-Portal den Mauszeiger auf der Operation platziert.|
-|enabledForScopeValidation|Boolesch|Bestimmt, ob die Berechtigung für pro Rollenzuweisung definierten Bereiche nicht überprüft wird.|
+|id|Zeichenfolge|Schlüssel der Ressourcenoperation. Er ist schreibgeschützt und wird automatisch generiert.|
+|resource|Zeichenfolge|Resource-Kategorie, zu dem dieser Vorgang gehört.|
+|resourceName|Zeichenfolge|Name der Ressource, auf die die Operation angewendet wird|
+|actionName|Zeichenfolge|Typ von Aktion, den die Operation ausführen wird. Der Wert für „actionName“ sollte prägnant sein und aus möglichst wenigen Wörtern bestehen.|
+|description|Zeichenfolge|Beschreibung der Ressourcenoperation. Diese Beschreibung wird angezeigt, wenn der Benutzer im Azure-Portal den Mauszeiger auf der Operation platziert.|
+|enabledForScopeValidation|Boolescher Wert|Bestimmt, ob die Berechtigung für pro Rollenzuweisung definierten Bereiche nicht überprüft wird.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

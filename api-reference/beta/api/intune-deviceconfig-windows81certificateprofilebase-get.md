@@ -2,12 +2,13 @@
 title: Abrufen von windows81CertificateProfileBase
 description: Lesen Sie Eigenschaften und Beziehungen des windows81CertificateProfileBase-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 8c5ff7dd258f69546093d084b8159a5396376621
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c89185b9211cf502c072a8ba4a3e28a199dcf5e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341937"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868733"
 ---
 # <a name="get-windows81certificateprofilebase"></a>Abrufen von windows81CertificateProfileBase
 
@@ -39,10 +40,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

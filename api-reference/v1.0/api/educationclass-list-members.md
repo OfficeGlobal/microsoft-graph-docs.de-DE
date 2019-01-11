@@ -1,12 +1,13 @@
 ---
 title: Mitglieder auflisten
 description: 'Abrufen der Lehrer und Kursteilnehmer für eine Klasse. Hinweis: Wenn das delegierte Token verwendet wird, werden Mitglieder nur anderen Mitgliedern der Klasse angezeigt.'
-ms.openlocfilehash: 8543f429fec359fe91275c8636e2eded686c9db5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1326af76400960c42bbab6a952d31ebc32d97538
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019406"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873304"
 ---
 # <a name="list-members"></a>Mitglieder auflisten
 
@@ -30,7 +31,7 @@ GET /education/classes/{id}/members
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

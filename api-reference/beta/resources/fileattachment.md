@@ -1,12 +1,13 @@
 ---
 title: fileAttachment-Ressourcentyp
 description: Eine Datei (beispielsweise eine Textdatei oder Word-Dokument), ein Ereignis zugeordnet ist,
-ms.openlocfilehash: 2a43ebbc78d831e907bfd19d647e4b7e398abe90
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7f7270bd5392e2d880daeb45491f4c65e9fca198
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062339"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869279"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment-Ressourcentyp
 
@@ -32,13 +33,13 @@ Abgeleitet von [attachment](attachment.md).
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |contentBytes|Binär|Der base64-codierte Inhalt der Datei.|
-|contentId|String|Die ID der Anlage im Exchange-Speicher.|
-|contentLocation|String|Der URI (Uniform Resource Identifier), der dem Speicherort des Anlageninhalts entspricht.|
-|contentType|String|Der Inhaltstyp der Anlage.|
-|id|String|Die Anlagen-ID.|
+|contentId|Zeichenfolge|Die ID der Anlage im Exchange-Speicher.|
+|contentLocation|Zeichenfolge|Der URI (Uniform Resource Identifier), der dem Speicherort des Anlageninhalts entspricht.|
+|contentType|Zeichenfolge|Der Inhaltstyp der Anlage.|
+|id|Zeichenfolge|Die Anlagen-ID.|
 |isInline|Boolean|True, wenn es sich um eine Inlineanlage handelt.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Anlage.|
-|name|String|Der Name, der den Text darstellt, der unter dem Symbol für die eingebettete Anlage angezeigt wird. Dies muss nicht der tatsächliche Dateiname sein.|
+|name|Zeichenfolge|Der Name, der den Text darstellt, der unter dem Symbol für die eingebettete Anlage angezeigt wird. Dies muss nicht der tatsächliche Dateiname sein.|
 |size|Int32|Die Größe der Anlage in Byte.|
 
 ## <a name="relationships"></a>Beziehungen

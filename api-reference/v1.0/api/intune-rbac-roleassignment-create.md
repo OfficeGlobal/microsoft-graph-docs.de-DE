@@ -2,12 +2,13 @@
 title: roleAssignment erstellen
 description: Erstellen eines neuen roleAssignment-Objekts.
 author: tfitzmac
-ms.openlocfilehash: ac3a8ee5b007c918a9b655cb2f396c872f9f2d92
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 769deaffbb153fe54bfe2e32c936868f9480efc6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362237"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871029"
 ---
 # <a name="create-roleassignment"></a>roleAssignment erstellen
 
@@ -35,8 +36,8 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs roleAssignment an.
@@ -45,7 +46,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert.|
+|id|Zeichenfolge|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert.|
 |displayName|String|Der Anzeigename der Rollenzuweisung.|
 |description|String|Beschreibung der Rollenzuweisung.|
 |resourceScopes|String collection|Liste der IDs der Rollenbereichsmitglieder-Sicherheitsgruppen.  Dies sind IDs aus Azure Active Directory.|

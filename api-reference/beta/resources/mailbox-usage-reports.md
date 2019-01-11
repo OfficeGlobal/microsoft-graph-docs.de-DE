@@ -1,12 +1,13 @@
 ---
 title: Postfach-Verwendungsberichte
 description: Sie erhalten Informationen zu Benutzern mit einem Postfach und ihrer Ebene der Aktivität, die in erster Linie auf gesendeten und empfangenen e-Mails basiert. Sie können auch sehen, wie viel Speicherplatz jedes Postfach beansprucht und wie viele Postfächer sich den  Speicherkontingenten nähern.
-ms.openlocfilehash: 77814784d75bb7056336c873ad7f2eb0fddc04f4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2f165ea0c9c52e1cc2f4d5fab4b8f3597fd502d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062205"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870147"
 ---
 # <a name="mailbox-usage-reports"></a>Postfach-Verwendungsberichte
 

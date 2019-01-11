@@ -3,12 +3,13 @@ author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
 title: SitePage
-ms.openlocfilehash: 65cfe61dadd1708abffe2d01abbbb15f40d158ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d4673138106e23afedb5ff0f28d8ce72fa2797b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063802"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871491"
 ---
 # <a name="sitepage-resource"></a>SitePage-Ressource
 
@@ -75,7 +76,7 @@ Es folgt eine JSON-Darstellung einer **SitePage** Ressource.
 
 Die Ressource **SitePage** hat die folgenden Eigenschaften.
 
-| Eigenschaftsname    | Typ                         | Beschreibung
+| Eigenschaftenname    | Typ                         | Beschreibung
 |:-----------------|:-----------------------------|:---------------------------
 | contentType      | [contentTypeInfo][]          | Der Inhaltstyp der Seite.
 
@@ -83,7 +84,7 @@ Die Ressource **SitePage** hat die folgenden Eigenschaften.
 
 Die Ressource **SitePage** hat die folgenden Felder Content.
 
-| Eigenschaftsname      | Typ                       | Beschreibung
+| Eigenschaftenname      | Typ                       | Beschreibung
 |:-------------------|:---------------------------|:---------------------------
 | title              | string                     | Der Titel der Seite.
 | pageLayout         | string                     | Der Name des auf der Seite auf das Seitenlayout.
@@ -93,7 +94,7 @@ Die Ressource **SitePage** hat die folgenden Felder Content.
 
 Die Ressource **SitePage** hat die folgende authoring-bezogenen Metadaten. Die PublishingState-Eigenschaft wird die Seite Status wie ausgecheckt oder veröffentlicht authoring widerspiegeln.
 
-| Eigenschaftsname          | Typ                   | Beschreibung
+| Eigenschaftenname          | Typ                   | Beschreibung
 |:-----------------------|:-----------------------|:---------------------------
 | publishingState        | [publicationFacet][]   | Den Veröffentlichungsstatus und die MM.mm Version der Seite.
 

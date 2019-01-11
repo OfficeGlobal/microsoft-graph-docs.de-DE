@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp privilegedApproval
 description: Stellt eine Genehmigung, die für die erste in einer Rolle in privilegierten Identity Management angefordert wird.
-ms.openlocfilehash: 3f900ef4a141b2f71c303becd49789b86cefb1b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dee8cffba02270308c6786b2549b66aa5ad9dfa8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062033"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868348"
 ---
 # <a name="privilegedapproval-resource-type"></a>Ressourcentyp privilegedApproval
 
@@ -30,14 +31,14 @@ Stellt eine Genehmigung, die für die erste in einer Rolle in privilegierten Ide
 |:---------------|:--------|:----------|
 |approvalDuration|Duration||
 |approvalState|string| Mögliche Werte sind: `pending`, `approved`, `denied`, `aborted` und `canceled`.|
-|approvalType|String||
-|approverReason|String||
+|approvalType|Zeichenfolge||
+|approverReason|Zeichenfolge||
 |endDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|id|String| Schreibgeschützt.|
-|requestorReason|String||
-|roleId|String||
+|id|Zeichenfolge| Schreibgeschützt.|
+|requestorReason|Zeichenfolge||
+|roleId|Zeichenfolge||
 |startDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|userId|String||
+|userId|Zeichenfolge||
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|

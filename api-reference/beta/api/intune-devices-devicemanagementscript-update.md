@@ -2,12 +2,13 @@
 title: DeviceManagementScript aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines DeviceManagementScript-Objekts.
 author: tfitzmac
-ms.openlocfilehash: e0eb397960a9ddae4041578761d5001b729f1464
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aaca6501f0a1c0fd206583af4e976b9afe9ac2cc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325312"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869293"
 ---
 # <a name="update-devicemanagementscript"></a>DeviceManagementScript aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md) eine JSON-Darstellung.
@@ -47,16 +48,16 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für das Gerät Management-Skript.|
-|displayName|String|Name des Skripts Management Gerät.|
-|description|String|Optionale Beschreibung für das Gerät Management-Skript.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für das Gerät Management-Skript.|
+|displayName|Zeichenfolge|Name des Skripts Management Gerät.|
+|description|Zeichenfolge|Optionale Beschreibung für das Gerät Management-Skript.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Das Intervall für das Skript ausgeführt wird. Wenn nicht definiert das Skript einmal ausgeführt wird|
 |scriptContent|Binär|Der Skriptinhalt.|
 |createdDateTime|DateTimeOffset|Datum und Zeit für das Gerät Management-Skript erstellt wurde.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Geräts Management-Skripts.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Gibt den Typ des Ausführungskontexts, den das Gerät Management-Skript in ausgeführt wird. Mögliche Werte sind: `system` und `user`.|
-|enforceSignatureCheck|Boolesch|Geben Sie an, ob die Signatur Skript muss aktiviert sein.|
-|fileName|String|Dateiname des Skripts.|
+|enforceSignatureCheck|Boolescher Wert|Geben Sie an, ob die Signatur Skript muss aktiviert sein.|
+|fileName|Zeichenfolge|Dateiname des Skripts.|
 
 
 

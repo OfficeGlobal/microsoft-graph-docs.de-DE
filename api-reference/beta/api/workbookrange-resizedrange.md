@@ -1,12 +1,13 @@
 ---
 title: 'workbookRange: resizedRange'
 description: Ruft ein Range-Objekt ähnlich dem aktuellen Range-Objekt ab, dessen untere rechte Ecke jedoch um eine bestimmte Anzahl von Zeilen und Spalten erweitert (oder verkleinert) ist.
-ms.openlocfilehash: cd2851e1b4f65162fca6e617878851b2cc8e910b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fa8e8afcb230191da0ccfc69893f9ce5898eae57
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060465"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870378"
 ---
 # <a name="workbookrange-resizedrange"></a>workbookRange: resizedRange
 
