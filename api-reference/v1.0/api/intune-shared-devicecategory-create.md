@@ -2,12 +2,13 @@
 title: deviceCategory erstellen
 description: Erstellen eines neuen deviceCategory-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 1c01fd7c953a0b0fd148390d80aa27acb010daa3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 59b6b581120f003167dafe230a2b9a8a485b4d74
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362013"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843274"
 ---
 # <a name="create-devicecategory"></a>deviceCategory erstellen
 
@@ -36,8 +37,8 @@ POST /deviceManagement/deviceCategories
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekt des Typs deviceCategory an.
@@ -46,7 +47,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für die Gerätekategorie. Schreibgeschützt.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für die Gerätekategorie. Schreibgeschützt.|
 |**Onboarding**|
 |displayName|String|Der Anzeigename für die Gerätekategorie.|
 |description|String|Optionale Beschreibung für die Gerätekategorie.|

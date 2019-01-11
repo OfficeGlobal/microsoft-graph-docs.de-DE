@@ -2,12 +2,13 @@
 title: AdvancedThreatProtectionOnboardingStateSummary aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AdvancedThreatProtectionOnboardingStateSummary-Objekts.
 author: tfitzmac
-ms.openlocfilehash: a31dae3c1f79332ae03324d1ecbb604451bc7959
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 67d127ae3fb4545857dca2719fd2ae8417a400fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340026"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837069"
 ---
 # <a name="update-advancedthreatprotectiononboardingstatesummary"></a>AdvancedThreatProtectionOnboardingStateSummary aktualisieren
 
@@ -35,10 +36,10 @@ PATCH /deviceManagement/advancedThreatProtectionOnboardingStateSummary
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [AdvancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) eine JSON-Darstellung.
@@ -47,7 +48,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner|
+|id|Zeichenfolge|Eindeutiger Bezeichner|
 |unknownDeviceCount|Int32|Anzahl von unbekannten Geräten|
 |notApplicableDeviceCount|Int32|Anzahl der ausgenommenen Geräte|
 |compliantDeviceCount|Int32|Anzahl von konformen Geräten|

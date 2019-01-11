@@ -2,12 +2,13 @@
 title: Abrufen der Anwendung
 description: Rufen Sie die Eigenschaften und Beziehungen des Application-Objekts ab.
 author: lleonard-msft
-ms.openlocfilehash: a041cbc4e97a59500106542b88e754b9c495f985
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 0b83a2ee5ed94d9e793a8f1a37f5fb41acaedaf3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303493"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849707"
 ---
 # <a name="get-application"></a>Abrufen der Anwendung
 
@@ -35,7 +36,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich.  |
+| Authorization  | string  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

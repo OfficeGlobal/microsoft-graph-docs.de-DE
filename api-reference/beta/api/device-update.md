@@ -2,12 +2,13 @@
 title: Gerät aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines Geräts.
 author: tfitzmac
-ms.openlocfilehash: df86581c1edb531e822204698486358fac29f106
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 37c9dc2d363ad2b2b6f91bc04879250bab6f0ad2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356560"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849567"
 ---
 # <a name="update-device"></a>Gerät aktualisieren
 
@@ -37,7 +38,7 @@ PATCH /devices/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 

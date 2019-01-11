@@ -1,12 +1,13 @@
 ---
 title: 'Kalender: GetSchedule'
 description: Rufen Sie die Frei/Gebucht-Verfügbarkeitsinformationen für eine Auflistung von Benutzern, Verteilerlisten oder Ressourcen für einen angegebenen Zeitraum.
-ms.openlocfilehash: 5122cf34530f18f872e80863f259f348193d252e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 08a584d4ce8cb9967856610408aebedc08f7b123
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059680"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844562"
 ---
 # <a name="calendar-getschedule"></a>Kalender: GetSchedule
 
@@ -42,7 +43,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|availabilityViewInterval|String|Stellt die Dauer der ein Zeitintervall in einer **AvailabilityView** in der Antwort. Der Standardwert ist 30 Minuten, mindestens 6, Maximum liegt bei 1440. Optional.|
+|availabilityViewInterval|Zeichenfolge|Stellt die Dauer der ein Zeitintervall in einer **AvailabilityView** in der Antwort. Der Standardwert ist 30 Minuten, mindestens 6, Maximum liegt bei 1440. Optional.|
 |endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Das Datum, Uhrzeit und Zeitzone, die die Periode endet.|
 |Zeitpläne|Collection von Objekten des Typs „String“|Eine Auflistung von SMTP-Adressen von Benutzern, Verteilerlisten oder Ressourcen zum Abrufen von Verfügbarkeitsinformationen für.|
 |startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Das Datum, Uhrzeit und Zeitzone, die der Zeitraum beginnt.|

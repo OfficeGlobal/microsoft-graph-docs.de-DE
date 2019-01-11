@@ -1,12 +1,13 @@
 ---
 title: passwordProfile-Ressourcentyp
 description: Enthält das einem Benutzer zugewiesene Kennwortprofil. Die **passwordProfile**-Eigenschaft der user-Entität ist ein **asswordProfile**-Objekt.
-ms.openlocfilehash: 71a91f0848ba8218d16a59c9e1f867d14e5cad9b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 11930b046fafaf89f8db751891b9b7f2f72fd99d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065993"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839004"
 ---
 # <a name="passwordprofile-resource-type"></a>passwordProfile-Ressourcentyp
 
@@ -19,7 +20,7 @@ Enthält das einem Benutzer zugewiesene Kennwortprofil. Die **passwordProfile**-
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |forceChangePasswordNextSignIn|Boolescher Wert| Wenn **true**, bei der nächsten Anmeldung, die Benutzer ihre Kennwörter ändern müssen. Nach der kennwortänderung einer diese Eigenschaft wird automatisch auf zurückgesetzt ***"false"**. Wenn dies nicht festgelegt, Standard ist **false**. |
-|forceChangePasswordNextSignInWithMfa|Boolesch| Wenn **true**, bei der nächsten Anmeldung, die Benutzer ausführen müssen, erzwungen eine mehrstufige Authentifizierung (mehrstufiger Authentifizierung das), bevor Sie ihr Kennwort ändern. Das Verhalten ist identisch mit **ForceChangePasswordNextSignIn** , mit der Ausnahme, dass der Benutzer aufgefordert wird, eine mehrstufige Authentifizierung zuerst ausführen, bevor das Kennwort ändern. Nach dem Kennwort zu ändern wird diese Eigenschaft automatisch auf **false**zurückgesetzt. Wenn dies nicht festgelegt, Standard ist **false**. |
+|forceChangePasswordNextSignInWithMfa|Boolescher Wert| Wenn **true**, bei der nächsten Anmeldung, die Benutzer ausführen müssen, erzwungen eine mehrstufige Authentifizierung (mehrstufiger Authentifizierung das), bevor Sie ihr Kennwort ändern. Das Verhalten ist identisch mit **ForceChangePasswordNextSignIn** , mit der Ausnahme, dass der Benutzer aufgefordert wird, eine mehrstufige Authentifizierung zuerst ausführen, bevor das Kennwort ändern. Nach dem Kennwort zu ändern wird diese Eigenschaft automatisch auf **false**zurückgesetzt. Wenn dies nicht festgelegt, Standard ist **false**. |
 |password|String|Das Kennwort für den Benutzer.. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Sie kann aktualisiert werden, aber der Benutzer muss das Kennwort bei der nächsten Anmeldung ändern. Das Kennwort muss den Mindestanforderungen entsprechen, wie von der **passwordPolicies**-Eigenschaft des Benutzers angegeben.  Standardmäßig ist ein sicheres Kennwort erforderlich.|
 
 ## <a name="json-representation"></a>JSON-Darstellung

@@ -2,12 +2,13 @@
 title: List-Ressourcen
 description: Listen Sie die Ressourcen dieses Übermittlung zugeordnet. Das **SubmissionResource** -Objekt ist ein Wrapper für die tatsächliche Resource-Objekt der Student gearbeitet wird. Der Wrapper enthält auch einen Zeiger auf die Ressourcen für die Zuordnung, wenn dies in der Zuweisung während des Aktivierungsvorgangs zuweisen kopiert wurde. Diese Ressourcen sind die Arbeitskopie der Zuordnung. Die **SubmittedResources** sind die Ressourcen, die offiziell gesendet wurden, sortiert werden.
 author: dipakboyed
-ms.openlocfilehash: d63c731798003a2312ee5fbff534cde88d4b9ecf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7476144159a8f2bd6c4600fe5a2eb80076bc7f7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341069"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843981"
 ---
 # <a name="list-resources"></a>List-Ressourcen
 

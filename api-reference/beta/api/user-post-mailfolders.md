@@ -1,12 +1,13 @@
 ---
 title: MailFolder erstellen
 description: Mit dieser API können Sie neue E-Mail-Ordner im Stammordner des Postfachs eines Benutzers erstellen.
-ms.openlocfilehash: 6e6b42197dcb5b968a59303d2e9c8c8b1ddf6feb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fd625e221eea67d08407dc332d47880ce21f21e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064590"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838423"
 ---
 # <a name="create-mailfolder"></a>MailFolder erstellen
 
@@ -28,7 +29,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /users/{id | userPrincipalName}/mailFolders
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |
@@ -38,7 +39,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an. *
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|displayName|String|Der Anzeigename für den neuen Ordner.|
+|displayName|Zeichenfolge|Der Anzeigename für den neuen Ordner.|
 
 ## <a name="response"></a>Antwort
 

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp modifiedProperty
 description: Gibt an, die geänderten Eigenschaften mit vorherigen und neuen Wert für eine Ressource in Azure AD, die geändert wird.
-ms.openlocfilehash: c504969ee12798969aa39490e79cb5b60bdb5435
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 91e5df357a40b2e44bb26edc5fb3bf6965a260e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060769"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844454"
 ---
 # <a name="modifiedproperty-resource-type"></a>Ressourcentyp modifiedProperty
 Gibt an, die geänderten Eigenschaften mit vorherigen und neuen Wert für eine Ressource in Azure AD, die geändert wird.
@@ -16,7 +17,7 @@ Gibt an, die geänderten Eigenschaften mit vorherigen und neuen Wert für eine R
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|displayName|String|Gibt den Eigenschaftennamen des Zielattributs, die geändert wurde.|
+|displayName|Zeichenfolge|Gibt den Eigenschaftennamen des Zielattributs, die geändert wurde.|
 |newValue|Zeichenfolge|Gibt den aktualisierten Wert für die Eigenschaft an.|
 |oldValue|Zeichenfolge|Gibt den vorherigen Wert (vor der Aktualisierung) für die Eigenschaft.|
 

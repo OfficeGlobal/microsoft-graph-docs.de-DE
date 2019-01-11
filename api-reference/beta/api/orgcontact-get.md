@@ -1,12 +1,13 @@
 ---
 title: Abrufen von orgContact
 description: Rufen Sie die Eigenschaften und Beziehungen des Orgcontact-Objekts ab.
-ms.openlocfilehash: 9297297bf341d622070c6ca200d99087588a8ce6
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: 4a806c48ef7fc9adc4a8eb94bc7c28e3add78d14
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283612"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842931"
 ---
 # <a name="get-orgcontact"></a>Abrufen von orgContact
 
@@ -33,7 +34,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

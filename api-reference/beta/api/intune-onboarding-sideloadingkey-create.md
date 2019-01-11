@@ -2,12 +2,13 @@
 title: Erstellen von sideLoadingKey
 description: Erstellen eines neuen SideLoadingKey-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 6edce1838499a73c2c28199a87c46fa44a10fe1f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 178236e03d508eb8a5017b67a1795fceca72bdee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356308"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838871"
 ---
 # <a name="create-sideloadingkey"></a>Erstellen von sideLoadingKey
 
@@ -37,8 +38,8 @@ POST /deviceAppManagement/sideLoadingKeys
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt SideLoadingKey eine JSON-Darstellung.
@@ -47,12 +48,12 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Seite laden wichtige eindeutigen Bezeichner ab.|
+|id|Zeichenfolge|Seite laden wichtige eindeutigen Bezeichner ab.|
 |Wert|Zeichenfolge|Seite Laden von Schlüssel-Wert ist es 5 x 5-Wert durch Hiphens getrennt.|
-|displayName|String|Seite laden Schlüsselname der ITPro Admins angezeigt.|
-|description|String|Seite laden Schlüssel Beschreibung der ITPro Admins angezeigt.|
+|displayName|Zeichenfolge|Seite laden Schlüsselname der ITPro Admins angezeigt.|
+|description|Zeichenfolge|Seite laden Schlüssel Beschreibung der ITPro Admins angezeigt.|
 |totalActivation|Int32|Seite laden Key insgesamt Aktivierung der ITPro Admins angezeigt.|
-|lastUpdatedDateTime|String|Seite laden Schlüssel aktualisiert Datum der letzten die ITPro Admins angezeigt.|
+|lastUpdatedDateTime|Zeichenfolge|Seite laden Schlüssel aktualisiert Datum der letzten die ITPro Admins angezeigt.|
 
 
 

@@ -2,12 +2,13 @@
 title: Abrufen von macOSCertificateProfileBase
 description: Lesen Sie Eigenschaften und Beziehungen des MacOSCertificateProfileBase-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 3f552c982a12cffc7fc089a30ba3a8cf540bb318
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 74462445eec8b7f71636dc86c4d66ccc75121c02
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318256"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842616"
 ---
 # <a name="get-macoscertificateprofilebase"></a>Abrufen von macOSCertificateProfileBase
 
@@ -40,8 +41,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

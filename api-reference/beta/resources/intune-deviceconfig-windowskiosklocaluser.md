@@ -2,12 +2,13 @@
 title: Ressourcentyp windowsKioskLocalUser
 description: Die Klasse verwendet, um ein lokales Konto für die Konfiguration Kiosk identifizieren
 author: tfitzmac
-ms.openlocfilehash: 5ac98147172fd08fc9914a7d9302e3b074ca3246
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7ab6a9dc0e3ea63ed5d9f60bb48b005aa98acab1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310822"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844555"
 ---
 # <a name="windowskiosklocaluser-resource-type"></a>Ressourcentyp windowsKioskLocalUser
 

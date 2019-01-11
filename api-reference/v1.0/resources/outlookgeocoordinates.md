@@ -1,12 +1,13 @@
 ---
 title: outlookGeoCoordinates-Ressourcentyp
 description: Die geografischen Koordinaten, die Erhebung und deren Genauigkeitsgrad für einen physischen Ort.
-ms.openlocfilehash: 232c40bde9484c74500370a321f0f465150061d9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b6c3c8d6336cd301caba0def2853f498f488816b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018454"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837429"
 ---
 # <a name="outlookgeocoordinates-resource-type"></a>outlookGeoCoordinates-Ressourcentyp
 

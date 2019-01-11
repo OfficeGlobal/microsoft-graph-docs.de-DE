@@ -2,12 +2,13 @@
 title: iosLobApp abrufen
 description: Liest die Beziehungen und Eigenschaften des iosLobApp-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 6100193f25894ce85cb373bb232911f44a53c224
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 629a671d3261b8d8e884178a9d018879aa0bda0c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329267"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836463"
 ---
 # <a name="get-ioslobapp"></a>iosLobApp abrufen
 
@@ -37,8 +38,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

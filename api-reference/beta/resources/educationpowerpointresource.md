@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp educationPowerPointResource
 description: 'Eine Unterklasse der EducationResource. Hierbei handelt es sich um eine PowerPoint-Ressource. PowerPoint-Datei muss im Zusammenhang mit **FileResource** Verzeichnis hochgeladen werden die '
-ms.openlocfilehash: a83a78449ecb7c64f62557ddfa642ab02b55c206
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 763a529e97b12c93d8f10aa6855c20818c02da67
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063541"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845458"
 ---
 # <a name="educationpowerpointresource-resource-type"></a>Ressourcentyp educationPowerPointResource
 
@@ -18,7 +19,7 @@ Eine Unterklasse der [EducationResource](educationresource.md). Hierbei handelt 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|fileUrl|String|Speicherort der Datei auf dem Datenträger.|
+|fileUrl|Zeichenfolge|Speicherort der Datei auf dem Datenträger.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

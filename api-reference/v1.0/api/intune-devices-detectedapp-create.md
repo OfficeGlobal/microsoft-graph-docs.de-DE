@@ -2,12 +2,13 @@
 title: Erstellen von „detectedApp“
 description: Diese Methode erstellt ein neues Objekt des Typs detectedApp.
 author: tfitzmac
-ms.openlocfilehash: 60c47746e49429e37a5a40a5c86714d209ff6c3d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 41d7cd2c7b078baae265ecd9a9c4244b7191fedc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355482"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846326"
 ---
 # <a name="create-detectedapp"></a>Erstellen von „detectedApp“
 
@@ -35,8 +36,8 @@ POST /deviceManagement/detectedApps
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „detectedApp“ an.

@@ -1,12 +1,13 @@
 ---
 title: 'ServicePrincipal: GetMemberObjects'
 description: Rufen Sie die Liste der Gruppen und Directory Rollen, denen dieser Dienst principal ein Mitglied ist.  Diese Überprüfung ist transitiv.
-ms.openlocfilehash: 82fd1791b32c54a4670977e7ca5a66bdd92c1c14
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 46c23e18d2484b3dff38ed8791f203e823c4cc9c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062908"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842119"
 ---
 # <a name="serviceprincipal-getmemberobjects"></a>ServicePrincipal: GetMemberObjects
 

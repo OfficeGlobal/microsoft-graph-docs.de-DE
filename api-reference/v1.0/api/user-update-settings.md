@@ -2,12 +2,13 @@
 title: Einstellungen für Updates
 description: 'Aktualisieren Sie die Eigenschaften des Settings-Objekts. '
 author: dkershaw10
-ms.openlocfilehash: 571acf47852e703ee3bb20bd0c37cc5736cc4f1f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f39c0a2e98951bb61b0a9af1b5a1a196248d6118
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320251"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836246"
 ---
 # <a name="update-settings"></a>Einstellungen für Updates
 
@@ -48,7 +49,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Boolesch|"True" eingestellt deaktiviere Delegieren des Zugriffs auf [Trending](/graph/api/resources/insights-trending?view=graph-rest-beta) API und Zugriff auf Dokumente in Office eingegangen für den Benutzer zu deaktivieren. Einstellung auch auf True wirkt sich auf die Relevanz des Inhalts angezeigt in Office 365 – beispielsweise vorgeschlagene in SharePoint-Startseite und in der Ansicht Discover in OneDrive für Unternehmen weniger relevante Ergebnisse anzeigen. Diese Einstellung entspricht dem Steuerelementzustand in [Office ausführlicher behandelt](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
+|contributionToContentDiscoveryDisabled|Boolescher Wert|"True" eingestellt deaktiviere Delegieren des Zugriffs auf [Trending](/graph/api/resources/insights-trending?view=graph-rest-beta) API und Zugriff auf Dokumente in Office eingegangen für den Benutzer zu deaktivieren. Einstellung auch auf True wirkt sich auf die Relevanz des Inhalts angezeigt in Office 365 – beispielsweise vorgeschlagene in SharePoint-Startseite und in der Ansicht Discover in OneDrive für Unternehmen weniger relevante Ergebnisse anzeigen. Diese Einstellung entspricht dem Steuerelementzustand in [Office ausführlicher behandelt](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
 
 ## <a name="example"></a>Beispiel 
 

@@ -1,12 +1,13 @@
 ---
 title: Anlage abrufen
 description: 'Lesen Sie die Eigenschaften und Beziehungen einer Anlage, die auf ein Ereignis zugeordnet ist, '
-ms.openlocfilehash: 7405078f2c6408053e499a5fbb6aaac02f87f440
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b04f2a1d34d63c800854d3a9454d34ca3d1f2f7a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019981"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845759"
 ---
 # <a name="get-attachment"></a>Anlage abrufen
 

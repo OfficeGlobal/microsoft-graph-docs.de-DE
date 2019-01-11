@@ -2,12 +2,13 @@
 title: Ressourcentyp windowsKioskActiveDirectoryGroup
 description: Die Klasse, die zur Identifizierung einer Azure-Directory-Gruppe für die Kiosk-Konfiguration
 author: tfitzmac
-ms.openlocfilehash: 618b93182d17d485a35d2567f45c218c6117658f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc9db9aa120411c423492efa162973e33cc4c303
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331774"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850526"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>Ressourcentyp windowsKioskActiveDirectoryGroup
 

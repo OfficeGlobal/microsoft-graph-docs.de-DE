@@ -2,12 +2,13 @@
 title: Ressourcentyp conversationThread
 description: Ein conversationThread ist eine Sammlung von Beiträgen.
 author: dkershaw10
-ms.openlocfilehash: 10fc07863c0650cb3a92032d5de10da6cd7011c7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1101bb56e69b6418cfd57e719cf1633fa76b161c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323737"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845269"
 ---
 # <a name="conversationthread-resource-type"></a>Ressourcentyp conversationThread
 
@@ -32,14 +33,14 @@ Die Empfängersammlung des letzten Beitrags besteht aus den aggregierten Empfän
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|String| Schreibgeschützt.|
+|id|Zeichenfolge| Schreibgeschützt.|
 |toRecipients|[recipient](recipient.md)-Sammlung|Die An:-Empfänger des Threads.|
 |ccRecipients|[recipient](recipient.md)-Sammlung|Die Cc:-Empfänger des Threads.|
-|Thema|String|Das Thema der Unterhaltung. Diese Eigenschaft kann festgelegt werden, wenn die Unterhaltung erstellt wird, sie kann jedoch nicht aktualisiert werden.||
+|Thema|Zeichenfolge|Das Thema der Unterhaltung. Diese Eigenschaft kann festgelegt werden, wenn die Unterhaltung erstellt wird, sie kann jedoch nicht aktualisiert werden.||
 |hasAttachments|Boolean|Gibt an, ob einer der Beiträge innerhalb dieses Threads über mindestens eine Anlage verfügt.|
 |lastDeliveredDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |uniqueSenders|Zeichenfolgenauflistung|Alle Benutzer, die eine Nachricht an diesen Thread gesendet haben.|
-|Vorschau|String|Eine kurze Zusammenfassung aus dem Text des neuesten Beitrags in dieser Unterhaltung.|
+|Vorschau|Zeichenfolge|Eine kurze Zusammenfassung aus dem Text des neuesten Beitrags in dieser Unterhaltung.|
 |isLocked|Boolean|Zeigt an, ob der Thread gesperrt ist.|
 
 ## <a name="relationships"></a>Beziehungen

@@ -2,12 +2,13 @@
 title: Abrufen der Teilnehmer
 description: Rufen Sie die Eigenschaften und die Beziehungen eines **Teilnehmers** -Objekts ab.
 author: VinodRavichandran
-ms.openlocfilehash: 8a306c3397a10222692022999194fe12c9501f87
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: bdcf52f844ea000458d35aa211e7c32a5c6566e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380191"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837695"
 ---
 # <a name="get-participant"></a>Abrufen der Teilnehmer
 
@@ -22,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | :-------------- | :------------------------------------------ |
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt        |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt        |
-| Application     | Keine                                        |
+| Anwendung     | Keine                                        |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

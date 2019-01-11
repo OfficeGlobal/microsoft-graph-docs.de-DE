@@ -2,12 +2,13 @@
 title: removeAllDevicesFromManagement-Aktion
 description: Die Verwaltung aller Geräte für diesen Benutzer einstellen.
 author: tfitzmac
-ms.openlocfilehash: 8d563466074075365c94ed69358f72cf24783bea
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3f43d941775f726c73981b387ef60fd9e26cc955
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339753"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849644"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>removeAllDevicesFromManagement-Aktion
 
@@ -37,8 +38,8 @@ POST /users/{usersId}/removeAllDevicesFromManagement
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: BitLockerEncryptionMethod Enum-Typ
 description: BitLockerEncryptionMethod-Typen
 author: tfitzmac
-ms.openlocfilehash: 2660214952924210e7fafe45a99fb3449b8281a7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 48def7fc93fb2f4d50659070d77843e55e2cc4db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359598"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839263"
 ---
 # <a name="bitlockerencryptionmethod-enum-type"></a>BitLockerEncryptionMethod Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27359598"
 
 BitLockerEncryptionMethod-Typen
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |aesCbc128|3|AES-CBC 128-Bit.|
 |aesCbc256|4|AES-CBC 256-Bit.|

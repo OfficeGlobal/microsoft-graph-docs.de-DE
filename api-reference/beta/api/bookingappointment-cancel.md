@@ -1,12 +1,13 @@
 ---
 title: 'BookingAppointment: Abbrechen'
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: 4cd7b511f997f32c134f70a976cd94c2ed910fb1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ffb800b5084177b05b62e1ba14b475b8a760d766
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058090"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844478"
 ---
 # <a name="bookingappointment-cancel"></a>BookingAppointment: Abbrechen
 
@@ -39,7 +40,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|cancellationMessage|String|Eine Meldung mit dem Kunden zu bestätigen, dass der Termin abgebrochen wurde.|
+|cancellationMessage|Zeichenfolge|Eine Meldung mit dem Kunden zu bestätigen, dass der Termin abgebrochen wurde.|
 
 ## <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.

@@ -2,12 +2,13 @@
 title: AndroidWorkProfileCompliancePolicy löschen
 description: Löscht eine AndroidWorkProfileCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 6168f64e9f55312d2bc4916566afaa9101324abb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7c898b948a5a4b3b36064553e70300aaae2620bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304137"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850806"
 ---
 # <a name="delete-androidworkprofilecompliancepolicy"></a>AndroidWorkProfileCompliancePolicy löschen
 
@@ -35,8 +36,8 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

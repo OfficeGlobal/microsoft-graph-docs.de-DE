@@ -2,12 +2,13 @@
 title: Ressourcentyp androidTrustedRootCertificate
 description: Android vertrauenswürdige Stammzertifikat Konfigurationsprofil
 author: tfitzmac
-ms.openlocfilehash: 064500dc27c7b76a2d6d77bb04d64e2e25c0ff36
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 63f4b71525d334dc83376f171bf573242e84cb40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336036"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850239"
 ---
 # <a name="androidtrustedrootcertificate-resource-type"></a>Ressourcentyp androidTrustedRootCertificate
 
@@ -25,22 +26,22 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |[Liste androidTrustedRootCertificates](../api/intune-deviceconfig-androidtrustedrootcertificate-list.md)|[AndroidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md) -Auflistung|Listeneigenschaften und Beziehungen der [AndroidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md) -Objekte.|
 |[Abrufen von androidTrustedRootCertificate](../api/intune-deviceconfig-androidtrustedrootcertificate-get.md)|[androidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md)|Lesen Sie Eigenschaften und Beziehungen des [AndroidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md) -Objekts.|
 |[Erstellen von androidTrustedRootCertificate](../api/intune-deviceconfig-androidtrustedrootcertificate-create.md)|[androidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md)|Erstellen eines neuen [AndroidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md) -Objekts.|
-|[AndroidTrustedRootCertificate löschen](../api/intune-deviceconfig-androidtrustedrootcertificate-delete.md)|Keines|Löscht eine [AndroidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md).|
+|[AndroidTrustedRootCertificate löschen](../api/intune-deviceconfig-androidtrustedrootcertificate-delete.md)|Keine|Löscht eine [AndroidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md).|
 |[AndroidTrustedRootCertificate aktualisieren](../api/intune-deviceconfig-androidtrustedrootcertificate-update.md)|[androidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md)|Aktualisieren Sie die Eigenschaften eines [AndroidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolesch|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolescher Wert|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |trustedRootCertificate|Binär|Vertrauenswürdiges Zertifikat|
-|Aus|String|Der Dateiname in der Benutzeroberfläche angezeigt.|
+|Aus|Zeichenfolge|Der Dateiname in der Benutzeroberfläche angezeigt.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

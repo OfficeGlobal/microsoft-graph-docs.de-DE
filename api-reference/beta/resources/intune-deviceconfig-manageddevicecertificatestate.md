@@ -2,12 +2,13 @@
 title: Ressourcentyp managedDeviceCertificateState
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: f26eb40d371c59a65f58bc87ac5a24d38f47a959
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 087bd1e6ed1eb9c065d1c2f0f3a03941d77cc7bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358387"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844044"
 ---
 # <a name="manageddevicecertificatestate-resource-type"></a>Ressourcentyp managedDeviceCertificateState
 
@@ -22,7 +23,7 @@ Noch nicht dokumentiert.
 |[Liste managedDeviceCertificateStates](../api/intune-deviceconfig-manageddevicecertificatestate-list.md)|[ManagedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) -Auflistung|Listeneigenschaften und Beziehungen der [ManagedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) -Objekte.|
 |[Abrufen von managedDeviceCertificateState](../api/intune-deviceconfig-manageddevicecertificatestate-get.md)|[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)|Lesen Sie Eigenschaften und Beziehungen des [ManagedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) -Objekts.|
 |[Erstellen von managedDeviceCertificateState](../api/intune-deviceconfig-manageddevicecertificatestate-create.md)|[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)|Erstellen eines neuen [ManagedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) -Objekts.|
-|[ManagedDeviceCertificateState löschen](../api/intune-deviceconfig-manageddevicecertificatestate-delete.md)|Keines|Löscht eine [ManagedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md).|
+|[ManagedDeviceCertificateState löschen](../api/intune-deviceconfig-manageddevicecertificatestate-delete.md)|Keine|Löscht eine [ManagedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md).|
 |[ManagedDeviceCertificateState aktualisieren](../api/intune-deviceconfig-manageddevicecertificatestate-update.md)|[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)|Aktualisieren Sie die Eigenschaften eines [ManagedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

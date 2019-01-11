@@ -2,12 +2,13 @@
 title: WindowsUpdateType Enum-Typ
 description: Welche Geräte Branch erhält ihre Updates aus
 author: tfitzmac
-ms.openlocfilehash: 415dde619529ffa9bb40ab2cea36665558bb0ee9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 198b5f8db5698d309199964e4cb69f8981ceeb1a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340838"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838969"
 ---
 # <a name="windowsupdatetype-enum-type"></a>WindowsUpdateType Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27340838"
 
 Welche Geräte Branch erhält ihre Updates aus
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |vom Typ userDefined|0|Ermöglicht es dem Benutzer festgelegt.|
 |all|1|Semikolons jährlichen Channel (Ziel). Gerät Ruft alle anwendbaren Feature Updates aus Semikolons jährlichen Channel (gezielte) ab.|

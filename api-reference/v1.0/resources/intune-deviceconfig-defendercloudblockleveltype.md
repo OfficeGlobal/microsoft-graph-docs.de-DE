@@ -2,12 +2,13 @@
 title: DefenderCloudBlockLevelType Enum-Typ
 description: Mögliche Werte für die Cloud Blockebene
 author: tfitzmac
-ms.openlocfilehash: 19c101cc82673009a39d6545f7340fabf65b287a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 283bb12c775b1215a1bcfecf4f248882a56573aa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326614"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839501"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>DefenderCloudBlockLevelType Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27326614"
 
 Mögliche Werte für die Cloud Blockebene
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Der Standardwert, verwendet die standardmäßigen Windows Defender Antivirus Blockierung Ebene und bietet starken Erkennung ohne das Risiko von erkennen erhöhen legitime Dateien|
 |hohe|1|Besonders weist eine starke Sicherheitsstufe Erkennung.|

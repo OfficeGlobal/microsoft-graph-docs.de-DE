@@ -1,12 +1,13 @@
 ---
 title: 'TableCollection: add'
 description: Erstellen Sie eine neue Tabelle. Die Bereichsquelladresse bestimmt das Arbeitsblatt, unter dem die Tabelle hinzugefügt wird. Wenn die Tabelle nicht hinzugefügt werden kann, (z. B. da die Adresse ungültig ist oder sich die Tabelle mit einer anderen Tabelle überlappen würde), wird ein Fehler ausgelöst.
-ms.openlocfilehash: 634f60fc6bf2b83172cbd13908bb0706bc115008
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 15071ab040fd19e6b3af3ac147395737389aaa9f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018308"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844800"
 ---
 # <a name="tablecollection-add"></a>TableCollection: add
 

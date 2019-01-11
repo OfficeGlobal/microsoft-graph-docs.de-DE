@@ -2,12 +2,13 @@
 title: AndroidWorkProfileGeneralDeviceConfiguration löschen
 description: Löscht eine AndroidWorkProfileGeneralDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 4d9fc28fd367afed7e647af43ecee09cd37a85ae
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0db271165ec8b7d75afb2c57f8869f97417f0b62
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350344"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839851"
 ---
 # <a name="delete-androidworkprofilegeneraldeviceconfiguration"></a>AndroidWorkProfileGeneralDeviceConfiguration löschen
 
@@ -35,8 +36,8 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: Datenerweiterung abrufen
 description: Dieser Artikel beschreibt, wie Sie eine offene Erweiterung (openTypeExtension-Objekt) basierend auf ihrem Namen oder ihrem vollqualifizierten Namen abrufen können.
-ms.openlocfilehash: 599422384ed7e821f0ca50235fd164594bccd4d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ca2acb78d5a4731b57614476f11a6235a3b784bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065093"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844002"
 ---
 # <a name="get-open-extension"></a>Datenerweiterung abrufen
 
@@ -30,10 +31,10 @@ Je nach der Ressource, die die Erweiterung und die Berechtigung enthält Typ (de
 |:-----|:-----|:-----|:-----|
 | [Gerät](../resources/device.md) | Directory.Read.All | Nicht unterstützt | Device.ReadWrite.All |
 | [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-| [Gruppe](../resources/group.md) | Group.Read.All | Nicht unterstützt | Group.Read.All |
+| [group](../resources/group.md) | Group.Read.All | Nicht unterstützt | Group.Read.All |
 | [group event](../resources/event.md) | Group.Read.All | Nicht unterstützt | Nicht unterstützt |
 | [group post](../resources/post.md) | Group.Read.All | Nicht unterstützt | Group.Read.All |
-| [Nachricht](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
 | [organization](../resources/organization.md) | User.Read | Nicht unterstützt | Nicht unterstützt |
 | [personal contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [Benutzer](../resources/user.md) | User.Read | User.Read | User.Read.All |
@@ -111,7 +112,7 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 
 Stellen Sie sicher, dass Sie für die Leerzeichen in der `$filter`-Zeichenfolge die [URL-Codierung](https://www.w3schools.com/tags/ref_urlencode.asp) verwenden.
 
-|**Name**|**Wert**|**Beschreibung**|
+|**Name**|**Value**|**Beschreibung**|
 |:---------------|:--------|:-------|
 |$filter|string|Gibt Erweiterungen zurück, deren **id** dem Wert des Parameters `extensionId` entspricht.|
 |$filter with **any** operator|string|Gibt Instanzen einer Ressourcensammlung zurück, die eine Erweiterung enthalten, deren **id** dem Wert des Parameters `extensionId` entspricht.|

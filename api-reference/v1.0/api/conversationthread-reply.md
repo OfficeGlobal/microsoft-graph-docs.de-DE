@@ -2,12 +2,13 @@
 title: 'conversationThread: reply'
 description: 'Beantworten Sie ein Thread in einer gruppenunterhaltung, und fügen Sie eine neue Bereitstellung hinzu. Sie können die übergeordnete Unterhaltung angeben. '
 author: dkershaw10
-ms.openlocfilehash: c31b6dd08aa888c44a8c12044848e96ffd05de57
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e9990e97b4d22e5d2374dfd007446fb114d9c6f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353718"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845655"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
 

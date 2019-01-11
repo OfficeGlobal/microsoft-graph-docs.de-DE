@@ -2,12 +2,13 @@
 title: checkMemberGroups
 description: Überprüfen Sie die Mitgliedschaft in der angegebenen Liste von Gruppen. Diese Gruppen, denen zurückgegeben aus der Liste
 author: dkershaw10
-ms.openlocfilehash: 613faacdbd2651700f264cdf89ec396b54752b76
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1c9f4da03eee8cf0bc5f1ae15a0886aa42267c7d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310598"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845235"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -39,7 +40,7 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Header        | Wert                     |
+| Kopfzeile        | Wert                     |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Erforderlich. |
 | Content-Type  | application/json          |
@@ -50,7 +51,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter | Typ   | Beschreibung           |
 | :-------- | :----- | :-------------------- |
-| groupIds  | String | Ein Array von Gruppen-IDs |
+| groupIds  | Zeichenfolge | Ein Array von Gruppen-IDs |
 
 ## <a name="response"></a>Antwort
 

@@ -1,12 +1,13 @@
 ---
 title: SendReminder accessReview
 description: 'Zugriff auf in Azure AD Feature Reviews (engl.), senden Sie eine Erinnerung an die Bearbeiter eine derzeit aktive AccessReview.  Das Zielobjekt kann entweder eine einmalige Access Überprüfung oder eine Instanz einer wiederkehrenden Access Überprüfung sein. '
-ms.openlocfilehash: fd8c204db207ae9f58c4dd5e6337e65efe160824
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3fa5c648a1b159a54560ad03f70a4f0251624119
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060953"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844198"
 ---
 # <a name="sendreminder-accessreview"></a>SendReminder accessReview
 

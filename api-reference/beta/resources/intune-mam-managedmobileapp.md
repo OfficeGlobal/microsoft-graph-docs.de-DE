@@ -2,12 +2,13 @@
 title: managedMobileApp-Ressourcentyp
 description: Der Bezeichner für die Bereitstellung einer App
 author: tfitzmac
-ms.openlocfilehash: f6cb1c74ef46bd08de695d1447c2b88cfeaee187
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: acd69164becf0b0199c9ddc845b8e45afb4420a2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308792"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838416"
 ---
 # <a name="managedmobileapp-resource-type"></a>managedMobileApp-Ressourcentyp
 
@@ -29,8 +30,8 @@ Der Bezeichner für die Bereitstellung einer App
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Bezeichner der App mit dem zugehörigen Betriebssystemtyp|
-|id|String|Schlüssel der Entität|
-|Version|String|Version der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Version|Zeichenfolge|Version der Entität|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

@@ -2,12 +2,13 @@
 title: Ressourcentyp educationSynchronizationConnectionSettings
 description: 'Stellt die Einstellungen für die Anbieter-Verbindung dar. Dadurch wird das System wissen, wie Sie mit der Anbieter APIs verbinden. '
 author: mmast-msft
-ms.openlocfilehash: 4e8b62a46fa6d14508a9d57ffedc46411910433d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 17fedb5094016bd3df3bd8262390eaa7eeb37537
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350624"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841769"
 ---
 # <a name="educationsynchronizationconnectionsettings-resource-type"></a>Ressourcentyp educationSynchronizationConnectionSettings
 
@@ -27,5 +28,5 @@ Stellt die Einstellungen für die Anbieter-Verbindung dar. Dadurch wird das Syst
 
 | Eigenschaft | Typ | Beschreibung |
 |:-|:-|:-|
-| **clientId** | String |  Client-ID für die Verbindung an den Anbieter verwendet. |
-| **clientSecret** | String |  Geheimer Clientschlüssel zum Authentifizieren der Verbindungs an den Anbieter. |
+| **clientId** | Zeichenfolge |  Client-ID für die Verbindung an den Anbieter verwendet. |
+| **clientSecret** | Zeichenfolge |  Geheimer Clientschlüssel zum Authentifizieren der Verbindungs an den Anbieter. |

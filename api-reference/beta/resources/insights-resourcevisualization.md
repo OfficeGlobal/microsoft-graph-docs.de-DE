@@ -2,12 +2,13 @@
 title: Ressourcentyp resourceVisualization
 description: Komplexer Typ mit Eigenschaften des Insights.
 author: simonhult
-ms.openlocfilehash: d0c54895468fc9a01017e448df57c09c654616e9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7600c843e36e3bce6c8a4182e0bfda14ad21d7b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333537"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844975"
 ---
 # <a name="resourcevisualization-resource-type"></a>Ressourcentyp resourceVisualization
 
@@ -64,7 +65,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 -   Audio
 -   Video
 -   Image
--   Netz
+-   Web
 -   Text
 -   XML
 -   Story

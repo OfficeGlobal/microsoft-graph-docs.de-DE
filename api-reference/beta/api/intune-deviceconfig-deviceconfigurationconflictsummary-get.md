@@ -2,12 +2,13 @@
 title: Abrufen von deviceConfigurationConflictSummary
 description: Lesen Sie Eigenschaften und Beziehungen des DeviceConfigurationConflictSummary-Objekts.
 author: tfitzmac
-ms.openlocfilehash: b5f38a613d10ebfd610bc8bf71bfaa30243d0d5b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b75cd22b38fd64e1d0fe346805aba0ae4957580
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333971"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847740"
 ---
 # <a name="get-deviceconfigurationconflictsummary"></a>Abrufen von deviceConfigurationConflictSummary
 
@@ -39,8 +40,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

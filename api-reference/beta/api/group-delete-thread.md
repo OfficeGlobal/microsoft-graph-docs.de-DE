@@ -2,12 +2,13 @@
 title: Unterhaltungsthread löschen
 description: Löschen eines thread-Objekts.
 author: dkershaw10
-ms.openlocfilehash: eec28f92fcdee1755b1e000225ea9458241f01c6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0b70cd880ed8e14291faa466431628011e01922a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352948"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837596"
 ---
 # <a name="delete-conversation-thread"></a>Unterhaltungsthread löschen
 
@@ -33,7 +34,7 @@ DELETE /groups/{id}/threads/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: provisionedPlan-Ressourcentyp
 description: Die **ProvisionedPlans**-Eigenschaft der user-Entität und der oganization-Entität ist eine Sammlung von **provisionedPlan**.
-ms.openlocfilehash: efaf4dc2916189e2bf6a8078a693059369f7cb2b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7bed57761777e637fdc2e567d10aa7f741a86663
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061726"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837254"
 ---
 # <a name="provisionedplan-resource-type"></a>provisionedPlan-Ressourcentyp
 
@@ -18,9 +19,9 @@ Die **ProvisionedPlans**-Eigenschaft der [user](user.md)-Entität und der [ogani
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|capabilityStatus|String|Z. B. „Aktiviert“.|
-|provisioningStatus|String|Z. B. „Erfolgreich“.|
-|service|String|Der Name des Diensts. z. B. „AccessControlS2S“|
+|capabilityStatus|Zeichenfolge|Z. B. „Aktiviert“.|
+|provisioningStatus|Zeichenfolge|Z. B. „Erfolgreich“.|
+|service|Zeichenfolge|Der Name des Diensts. z. B. „AccessControlS2S“|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

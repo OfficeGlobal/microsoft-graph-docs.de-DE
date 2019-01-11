@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp bookingPerson
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: d20f6ee9e14723a80f012cfffb1e4b8214f89739
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 606e0e0d1d851fac16b25310b278ca524124eb00
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063102"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845577"
 ---
 # <a name="bookingperson-resource-type"></a>Ressourcentyp bookingPerson
 
@@ -17,9 +18,9 @@ Dies ist ein Basistyp für eine Person in einem Unternehmen Microsoft Bookings, 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|displayName|String|Ein Name für die abgeleitete Entität, welche mit Kunden Schnittstellen.|
-|emailAddress|String|Die e-Mail-Adresse der Person ein.|
-|id|String| Die ID für die abgeleitete Entität. Schreibgeschützt.|
+|displayName|Zeichenfolge|Ein Name für die abgeleitete Entität, welche mit Kunden Schnittstellen.|
+|emailAddress|Zeichenfolge|Die e-Mail-Adresse der Person ein.|
+|id|Zeichenfolge| Die ID für die abgeleitete Entität. Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

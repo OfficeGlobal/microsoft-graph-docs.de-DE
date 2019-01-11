@@ -2,12 +2,13 @@
 title: Ereignis erstellen
 description: Mit dieser API können Sie neue Ereignisse im Standardkalender oder dem jeweils angegebenen Kalender erstellen.
 author: angelgolfer-ms
-ms.openlocfilehash: 136a4b6ead8789a162403364b5fc2d9d7a4a9997
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 52a8db47af0adb9850d46400b77eb1e997e31fc9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336736"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838850"
 ---
 # <a name="create-event"></a>Ereignis erstellen
 

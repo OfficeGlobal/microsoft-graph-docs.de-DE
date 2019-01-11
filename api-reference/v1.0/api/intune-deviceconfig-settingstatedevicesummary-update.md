@@ -2,12 +2,13 @@
 title: Aktualisieren von „settingStateDeviceSummary“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs settingStateDeviceSummary.
 author: tfitzmac
-ms.openlocfilehash: 531b8f80aff08e2b8e4faa1444ecc0b264d39a4d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3927f039164c8b8e5be4092615cd213f505d7e76
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323590"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845836"
 ---
 # <a name="update-settingstatedevicesummary"></a>Aktualisieren von „settingStateDeviceSummary“
 
@@ -36,8 +37,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) an.
@@ -46,9 +47,9 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|settingName|String|Name der Einstellung|
-|instancePath|String|Name des zur Einstellung gehörenden Objekts des Typs „InstancePath“|
+|id|Zeichenfolge|Schlüssel der Entität|
+|settingName|Zeichenfolge|Name der Einstellung|
+|instancePath|Zeichenfolge|Name des zur Einstellung gehörenden Objekts des Typs „InstancePath“|
 |unknownDeviceCount|Int32|Anzahl der Geräte mit Meldung „Unknown“ für die Einstellung|
 |notApplicableDeviceCount|Int32|Anzahl der Geräte mit Meldung „Not Applicable“ für die Einstellung|
 |compliantDeviceCount|Int32|Anzahl der Geräte mit Meldung „Compliant“ für die Einstellung|

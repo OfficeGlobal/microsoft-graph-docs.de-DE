@@ -2,12 +2,13 @@
 title: deviceConfigurationSettingState-Ressourcentyp
 description: Status der Konfigurationseinstellungen für ein bestimmtes Gerät
 author: tfitzmac
-ms.openlocfilehash: 545cb9bf0be410a5e9a0e25dbc242399c6dbc61f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: beed55d68c3ef7005a307d75fc1ee58ea78ed8d6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320643"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845843"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>deviceConfigurationSettingState-Ressourcentyp
 
@@ -17,18 +18,18 @@ Status der Konfigurationseinstellungen für ein bestimmtes Gerät
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|setting|String|Die gemeldete Einstellung|
-|settingName|String|Lokalisierter/benutzerfreundlicher Name der Einstellung, die gemeldet wird|
-|instanceDisplayName|String|Name der Einstellungsinstanz, die gemeldet wird.|
+|setting|Zeichenfolge|Die gemeldete Einstellung|
+|settingName|Zeichenfolge|Lokalisierter/benutzerfreundlicher Name der Einstellung, die gemeldet wird|
+|instanceDisplayName|Zeichenfolge|Name der Einstellungsinstanz, die gemeldet wird.|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
 |errorCode|Int64|Fehlercode für die Einstellung|
-|errorDescription|String|Fehlerbeschreibung|
-|userId|String|UserId|
-|userName|String|UserName|
-|userEmail|String|UserEmail|
-|userPrincipalName|String|Benutzer-Prinzipalname|
+|errorDescription|Zeichenfolge|Fehlerbeschreibung|
+|userId|Zeichenfolge|UserId|
+|userName|Zeichenfolge|UserName|
+|userEmail|Zeichenfolge|UserEmail|
+|userPrincipalName|Zeichenfolge|Benutzer-Prinzipalname|
 |sources|[settingSource](../resources/intune-deviceconfig-settingsource.md)-Sammlung|Beitragende Richtlinien|
-|currentValue|String|Aktueller Wert der Einstellung auf dem Gerät|
+|currentValue|Zeichenfolge|Aktueller Wert der Einstellung auf dem Gerät|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

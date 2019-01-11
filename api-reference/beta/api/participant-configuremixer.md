@@ -2,12 +2,13 @@
 title: 'Teilnehmer: ConfigureMixer'
 description: Konfigurieren Sie, wie Audio für andere Teilnehmer an einer Unterhaltung mit mehreren Teilnehmern gemischt wird.
 author: VinodRavichandran
-ms.openlocfilehash: c15cbc8a8de5a9ba7d7f3c20d20f99bf61006dbf
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 6fa8e7395eb39a3d0a2c05daa8eb215377f3976f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380464"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836288"
 ---
 # <a name="participant-configuremixer"></a>Teilnehmer: ConfigureMixer
 
@@ -22,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | :-------------- | :------------------------------------------ |
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt        |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt        |
-| Application     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Anwendung     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

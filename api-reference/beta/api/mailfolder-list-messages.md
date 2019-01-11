@@ -1,12 +1,13 @@
 ---
 title: Nachrichten auflisten
 description: Listen Sie aller Nachrichten im Postfach des angemeldeten Benutzers oder diese Nachrichten in einem angegebenen Ordner im Postfach oder Laufwerk auf.
-ms.openlocfilehash: 8ecbe3df28169ba10deff3369a26cedc78dd3e8b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d35489a45e84fdba484e721989900217b23eb08c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060738"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849889"
 ---
 # <a name="list-messages"></a>Nachrichten auflisten
 
