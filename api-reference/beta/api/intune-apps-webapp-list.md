@@ -2,12 +2,13 @@
 title: Auflisten von „webApp“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs webApp auf.
 author: tfitzmac
-ms.openlocfilehash: 08a1ced13d785e1a33b4b719aecb9b5b6947f0c8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b0bf7559c218a34dd4186710f128d07a192c78fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337926"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883188"
 ---
 # <a name="list-webapps"></a>Auflisten von „webApp“
 
@@ -37,8 +38,8 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

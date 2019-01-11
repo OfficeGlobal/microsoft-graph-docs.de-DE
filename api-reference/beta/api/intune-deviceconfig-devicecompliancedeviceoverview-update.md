@@ -2,12 +2,13 @@
 title: Aktualisieren von „deviceComplianceDeviceOverview“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceComplianceDeviceOverview.
 author: tfitzmac
-ms.openlocfilehash: 57237ed27f766c6cf8eab797cfa56735fde64aea
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1bcbcd81d70eb01613d33a9acf44737ae9519583
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333215"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882103"
 ---
 # <a name="update-devicecompliancedeviceoverview"></a>Aktualisieren von „deviceComplianceDeviceOverview“
 
@@ -37,8 +38,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceComplianceDeviceOverview](../resources/intune-deviceconfig-devicecompliancedeviceoverview.md) an.

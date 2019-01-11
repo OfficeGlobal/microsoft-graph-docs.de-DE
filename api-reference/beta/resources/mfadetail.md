@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp mfaDetail
 description: 'Gibt Details für eine bestimmte Anmeldung mehrstufiger Authentifizierung das an. Sie enthält die Authentifizierungsmethode für die Anmeldung sowie Details Auth (zum Beispiel: Telefon, SMS oder Voicemail) '
-ms.openlocfilehash: a377c8648ebc8a6e3eb10fb6b0b87df066f8f2cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5069045fd202d443a94a80f7333f12ab5e707ada
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061419"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883741"
 ---
 # <a name="mfadetail-resource-type"></a>Ressourcentyp mfaDetail
 Gibt Details für eine bestimmte Anmeldung mehrstufiger Authentifizierung das an. Sie enthält die Authentifizierungsmethode für die Anmeldung sowie Details Auth (zum Beispiel: Telefon, SMS oder Voicemail) 
@@ -16,8 +17,8 @@ Gibt Details für eine bestimmte Anmeldung mehrstufiger Authentifizierung das an
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|authDetail|String|Gibt an, für die entsprechende Aktivität-in den Details der mehrstufiger Authentifizierung das Auth der mehrstufiger Authentifizierung das erforderlich ist, "Yes".|
-|Authentifizierungsmethode|String|Gibt die mehrstufiger Authentifizierung das Auth-Methoden (SMS, Telefon- und Authentifizierungsserver App sind einige der Wert) für die entsprechende Aktivität-Anmeldung bei das mehrstufiger Authentifizierung das erforderliche Feld ist "Yes" an.|
+|authDetail|Zeichenfolge|Gibt an, für die entsprechende Aktivität-in den Details der mehrstufiger Authentifizierung das Auth der mehrstufiger Authentifizierung das erforderlich ist, "Yes".|
+|Authentifizierungsmethode|Zeichenfolge|Gibt die mehrstufiger Authentifizierung das Auth-Methoden (SMS, Telefon- und Authentifizierungsserver App sind einige der Wert) für die entsprechende Aktivität-Anmeldung bei das mehrstufiger Authentifizierung das erforderliche Feld ist "Yes" an.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

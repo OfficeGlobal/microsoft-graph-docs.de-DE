@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp governanceRoleAssignment
 description: Stellt die Zuordnung eines Benutzers oder einer Gruppe zu einer Rolle dar.
-ms.openlocfilehash: 3b0520f4641c961358b2db990914fbdf8de254f8
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: d873b122f319ca82882727f065818b33f7f9d44d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191137"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882691"
 ---
 # <a name="governanceroleassignment-resource-type"></a>Ressourcentyp governanceRoleAssignment
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.

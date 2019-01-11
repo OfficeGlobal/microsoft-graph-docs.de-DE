@@ -2,12 +2,13 @@
 title: ManagedDeviceEnrollmentAbandonmentSummary-Funktion
 description: Metadaten für die Registrierung Aufgabe Zusammenfassungsbericht
 author: tfitzmac
-ms.openlocfilehash: 133f04da7256ec8f1bbec93c9614ce1dfcd477a0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c96df67827857e763d67329ce83a81d3bfa39720
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349511"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885400"
 ---
 # <a name="manageddeviceenrollmentabandonmentsummary-function"></a>ManagedDeviceEnrollmentAbandonmentSummary-Funktion
 
@@ -38,8 +39,8 @@ GET /reports/managedDeviceEnrollmentAbandonmentSummary
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie in der Anforderungs-URL die folgenden Abfrageparameter mit Werten an.
@@ -49,8 +50,8 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion
 |:---|:---|:---|
 |skip|Int32|Noch nicht dokumentiert|
 |Nach oben|Int32|Noch nicht dokumentiert|
-|filter|String|Noch nicht dokumentiert|
-|skipToken|String|Noch nicht dokumentiert|
+|filter|Zeichenfolge|Noch nicht dokumentiert|
+|skipToken|Zeichenfolge|Noch nicht dokumentiert|
 
 
 

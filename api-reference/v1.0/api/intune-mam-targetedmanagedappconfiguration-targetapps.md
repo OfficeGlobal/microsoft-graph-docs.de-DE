@@ -2,12 +2,13 @@
 title: targetApps-Aktion
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 4f080244cf290a5bc35f76e9cb63dc93942ed0e3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f9e7ceaa79021b1fe3dea5ff9fb0d0080201a3cd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323121"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887360"
 ---
 # <a name="targetapps-action"></a>targetApps-Aktion
 
@@ -35,8 +36,8 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.

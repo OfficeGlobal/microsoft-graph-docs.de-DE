@@ -2,12 +2,13 @@
 title: So schützen Sie Daten in Unternehmens-Apps mit Microsoft Intune
 description: Die App-Schutz-Richtlinien von Microsoft Intune schützen die Daten Ihres Unternehmens und verhindern Datenverlust.
 author: tfitzmac
-ms.openlocfilehash: 3d3b9d5d6a9169146c5a6c1dd3ab0473f7eabf4f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5a5c2b532474c2d9e9704bd076a6b65c9b1bc31a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318011"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886933"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>So schützen Sie Daten in Unternehmens-Apps mit Microsoft Intune
 

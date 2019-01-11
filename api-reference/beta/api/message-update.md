@@ -2,12 +2,13 @@
 title: Nachricht aktualisieren
 description: Mit dieser API können Sie die Eigenschaften eines Nachrichtenobjekts aktualisieren.
 author: angelgolfer-ms
-ms.openlocfilehash: 04a52e28728eda7d778ac76cdc69080cd5b9edf5
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: fd0573ecb2e5410d8bbe0d0c557d4f3f78e0f131
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748542"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883047"
 ---
 # <a name="update-message"></a>Nachricht aktualisieren
 
@@ -46,7 +47,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |categories|Zeichenfolgenauflistung|Die Kategorien, die mit der Nachricht verknüpft sind.|
 |ccRecipients|Recipient collection|Die Cc-Empfänger der Nachricht. |
 |Von|Empfänger|Der Postfachbesitzer und der Absender der Nachricht. Muss das tatsächliche Postfach verwendet entsprechen. |
-|Wichtigkeit|String|Wichtigkeit der Nachricht Mögliche Werte: `Low`, `Normal`, `High`.|
+|Wichtigkeit|Zeichenfolge|Wichtigkeit der Nachricht Mögliche Werte: `Low`, `Normal`, `High`.|
 |inferenceClassification | String | Die Klassifizierung der Nachricht für den Benutzer, basierend auf der abgeleiteten Relevanz oder Wichtigkeit oder auf einer expliziten Außerkraftsetzung. Mögliche Werte sind: `focused` oder `other`. |
 |internetMessageId |String |Die Nachrichten-ID im von [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) angegebenen Format. Aktualisierbare nur, wenn IsDraft = True.|
 |isDeliveryReceiptRequested|Boolescher Wert|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
@@ -56,7 +57,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |replyTo|Recipient collection|Die E-Mail-Adressen, die beim Antworten verwendet werden sollen. Aktualisierbare nur, wenn IsDraft = True.|
 |sender|Empfänger|Das Konto, das tatsächlich verwendet wird, um die Nachricht zu generieren. Aktualisierbare beim Senden einer Nachricht von einem [freigegebenen Postfach](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)oder Senden einer Nachricht als [Delegieren](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). Der Wert muss in jedem Fall das tatsächliche Postfach verwendet entsprechen.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)-Sammlung| Die Auflistung der einwertig erweiterte Eigenschaften für die Nachricht definiert ist. Lässt Nullwerte zu.|
-|Betreff|String|Der Betreff der Nachricht. Aktualisierbare nur, wenn IsDraft = True.|
+|Betreff|Zeichenfolge|Der Betreff der Nachricht. Aktualisierbare nur, wenn IsDraft = True.|
 |toRecipients|Recipient collection|Die an-Empfänger der Nachricht. |
 
 Da die **message**-Ressource [Erweiterungen](/graph/extensibility-overview) unterstützt, erlaubt der `PATCH`-Vorgang das Hinzufügen, Aktualisieren oder Löschen eigener App-spezifischer Daten in den benutzerdefinierten Eigenschaften von Erweiterungen in vorhandenen **message**-Instanzen.

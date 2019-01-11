@@ -2,12 +2,13 @@
 title: VppTokenSyncStatus Enum-Typ
 description: Mögliche Sync Status mit einem Apple Volume Purchase Program Token verknüpft ist.
 author: tfitzmac
-ms.openlocfilehash: 18a0fcf9f4d22d7904cb76d1fc45d80b14dfc7d9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 721fe355d2eb29f0d9b258be175aa42345b34800
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344240"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883690"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>VppTokenSyncStatus Enum-Typ
 
@@ -17,9 +18,9 @@ ms.locfileid: "27344240"
 
 Mögliche Sync Status mit einem Apple Volume Purchase Program Token verknüpft ist.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Keine|0|Standardstatus.|
+|n/v|0|Standardstatus.|
 |in Bearbeitung|1|Letzte Synchronisierung ausgeführt.|
 |abgeschlossen|2|Letzte Synchronisierung erfolgreich abgeschlossen wurde.|
 |failed|3|Fehler bei der letzten Synchronisierung.|

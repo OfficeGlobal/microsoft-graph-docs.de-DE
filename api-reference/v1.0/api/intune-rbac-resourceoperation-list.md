@@ -2,12 +2,13 @@
 title: resourceOperations auflisten
 description: Listet die Eigenschaften und Beziehungen von Objekten des Typs resourceOperation auf.
 author: tfitzmac
-ms.openlocfilehash: af691d9f0563fa3b9805a512f234b35d1bad4d74
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b8ef5899d4c34c514f4610011616df83980cb4a9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319194"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883097"
 ---
 # <a name="list-resourceoperations"></a>resourceOperations auflisten
 
@@ -35,8 +36,8 @@ GET /deviceManagement/resourceOperations
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

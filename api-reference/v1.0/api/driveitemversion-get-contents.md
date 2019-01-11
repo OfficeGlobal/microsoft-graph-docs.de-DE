@@ -1,12 +1,13 @@
 ---
 title: Herunterladen von Inhalt einer Ressource DriveItemVersion
 description: Rufen Sie die Inhalte einer bestimmten DriveItem-Version ab.
-ms.openlocfilehash: 3f8f7ca6202be0ac8882cc513aac178dc1ac632f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1b6027e6f9b3e8b771bfe410045e63d023955674
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016980"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883965"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource"></a>Herunterladen von Inhalt einer Ressource DriveItemVersion
 

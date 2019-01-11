@@ -1,13 +1,14 @@
 ---
-title: Members
+title: Mitglieder
 description: 'Beschreibt die Sichtbarkeit eines Teams. '
 author: nkramer
-ms.openlocfilehash: 5f03eb52a5eb7aa672998897e11fb5d3a358bf9a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 21f53b1d7631cde46f1bd70afcbb1346f9199d9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305292"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884539"
 ---
 # <a name="teamvisibilitytype-enum-type"></a>TeamVisibilityType Enum-Typ
 
@@ -17,7 +18,7 @@ Beschreibt die Sichtbarkeit eines [Team](../resources/team.md).
 
 ## <a name="members"></a>Elemente
 
-| Member | Wert| Beschreibung |
+| Element | Wert| Beschreibung |
 |:---------------|:--------|:----------|
 |Private|0|Jeder Benutzer kann das Team anzeigen, aber nur der Besitzer Hinzufügen eines Benutzers an das Team.|
 |Öffentlich|1|Jeder kann das Team teilnehmen.|

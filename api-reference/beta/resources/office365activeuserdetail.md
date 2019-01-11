@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp office365ActiveUserDetail
 description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: 95912e736459894a69f8e2e1a18c2aaf672a19a9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 462858f42b48560db4cd2f311ffdffd911504afe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060843"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833957"
 ---
 # <a name="office365activeuserdetail-resource-type"></a>Ressourcentyp office365ActiveUserDetail
 
@@ -15,16 +16,16 @@ ms.locfileid: "27060843"
 | Eigenschaft                          | Typ              | Beschreibung                              |
 | :-------------------------------- | :---------------- | ---------------------------------------- |
 | reportRefreshDate                 | Datum              | Das aktuelle Datum des Inhalts.          |
-| userPrincipalName                 | String            | Der Benutzerprinzipalname (UPN) des Benutzers. Der Benutzerprinzipalname ist ein Internet-Schreibweise Anmeldenamen für den Benutzer anhand der Internetstandard RFC 822. Standardmäßig sollte dies der Name des Benutzers e-Mail zuordnen. Das Standardformat ist alias@domain, wobei muss Domäne in den Mandanten-Auflistung der überprüften Domänen vorhanden sein. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. |
+| userPrincipalName                 | Zeichenfolge            | Der Benutzerprinzipalname (UPN) des Benutzers. Der Benutzerprinzipalname ist ein Internet-Schreibweise Anmeldenamen für den Benutzer anhand der Internetstandard RFC 822. Standardmäßig sollte dies der Name des Benutzers e-Mail zuordnen. Das Standardformat ist alias@domain, wobei muss Domäne in den Mandanten-Auflistung der überprüften Domänen vorhanden sein. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. |
 | displayName                       | Zeichenfolge            | Der Name des Benutzers, der im Adressbuch angezeigt wird. Dies ist normalerweise eine Kombination aus dem Vornamen, der Initiale des weiteren Vornamens und des Nachnamens. Diese Eigenschaft ist beim Erstellen eines Benutzers erforderlich und kann nicht bei Updates deaktiviert werden. |
-| isDeleted                         | Boolesch           | Ob dieser Benutzer gelöschte oder weiche wurde gelöscht. |
+| isDeleted                         | Boolescher Wert           | Ob dieser Benutzer gelöschte oder weiche wurde gelöscht. |
 | deletedDate                       | Datum              | Das Datum, wenn der Löschvorgang erfolgt. Standardwert ist "null", wenn der Benutzer nicht gelöscht wurde. |
-| hasExchangeLicense                | Boolesch           | Gibt an, ob der Benutzer eine Exchange-Lizenz zugewiesen wurde. |
-| hasOneDriveLicense                | Boolesch           | Gibt an, ob der Benutzer eine OneDrive-Lizenz zugewiesen wurde. |
-| hasSharePointLicense              | Boolesch           | Gibt an, ob der Benutzer eine SharePoint-Lizenz zugewiesen wurde. |
-| hasSkypeForBusinessLicense        | Boolesch           | Gibt an, ob der Benutzer eine Lizenz für Business Skype zugewiesen wurde. |
-| hasYammerLicense                  | Boolesch           | Gibt an, ob der Benutzer eine Lizenz für Yammer zugewiesen wurde. |
-| hasTeamsLicense                   | Boolesch           | Gibt an, ob der Benutzer eine Lizenz Teams zugewiesen wurde. |
+| hasExchangeLicense                | Boolescher Wert           | Gibt an, ob der Benutzer eine Exchange-Lizenz zugewiesen wurde. |
+| hasOneDriveLicense                | Boolescher Wert           | Gibt an, ob der Benutzer eine OneDrive-Lizenz zugewiesen wurde. |
+| hasSharePointLicense              | Boolescher Wert           | Gibt an, ob der Benutzer eine SharePoint-Lizenz zugewiesen wurde. |
+| hasSkypeForBusinessLicense        | Boolescher Wert           | Gibt an, ob der Benutzer eine Lizenz für Business Skype zugewiesen wurde. |
+| hasYammerLicense                  | Boolescher Wert           | Gibt an, ob der Benutzer eine Lizenz für Yammer zugewiesen wurde. |
+| hasTeamsLicense                   | Boolescher Wert           | Gibt an, ob der Benutzer eine Lizenz Teams zugewiesen wurde. |
 | exchangeLastActivityDate          | Datum              | Das Datum, Benutzer zuletzt lesen oder e-Mail gesendet. |
 | oneDriveLastActivityDate          | Datum              | Das Datum, wenn Benutzer zuletzt angezeigt oder bearbeitet Dateien, gemeinsam genutzte Dateien intern oder extern oder synchronisiert Dateien. |
 | sharePointLastActivityDate        | Datum              | Das Datum, Benutzer zuletzt angezeigt oder bearbeitet Dateien, gemeinsam genutzte Dateien intern oder extern, synchronisiert Dateien oder SharePoint-Seiten angezeigt. |

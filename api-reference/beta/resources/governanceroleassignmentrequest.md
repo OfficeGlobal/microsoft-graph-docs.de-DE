@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp governanceRoleAssignmentRequest
 description: Stellt die Anforderung für Role Assignment Vorgänge in Privilegd Identity Management.
-ms.openlocfilehash: b3f3c7b3ec324b9b3df24cc0c53eaa6d1cda7a4c
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 036e44a34d3c5373bcedba305eba6bd686c28601
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191123"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885092"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>Ressourcentyp governanceRoleAssignmentRequest
 
@@ -29,17 +30,17 @@ Stellt die Anforderung für Role Assignment Vorgänge in Privilegd Identity Mana
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft                  | Typ          |Beschreibung|
 |:--------------------------|:--------------|:----------|
-|id                         |String         |Die Id der Rolle Zuordnung Anforderung.|
+|id                         |Zeichenfolge         |Die Id der Rolle Zuordnung Anforderung.|
 |resourceId                 |Zeichenfolge         |Erforderlich. Die Id der Ressource dem die Rolle Zuordnung Anforderung zugeordnet ist.|
 |roleDefinitionId           |Zeichenfolge         |Erforderlich. Die Id der Rollendefinition, dem die Rolle Zuordnung Anforderung zugeordnet ist.|
 |subjectId                  |Zeichenfolge         |Erforderlich. Die Id des Betreffs, dem die Rolle Zuordnung Anforderung zugeordnet ist.|
-|Typ                       |Zeichenfolge         |Erforderlich. Darstellen der den Typ des Vorgangs für die rollenzuweisung. Der Wert kann sein <ul><li>`AdminAdd`: Administratoren Benutzer/Gruppen zu Rollen zuweisen;</li><li>`UserAdd`: Benutzer aktivieren zu auswählbaren Zuordnungen;</li><li> `AdminUpdate`: Administratoren Ändern vorhandener rollenzuweisungen</li><li>`AdminRemove`: Administratoren Benutzer/Gruppen aus Rollen entfernen;<li>`UserRemove`: Benutzer deaktivieren aktive Zuordnungen;<li>`UserExtend`: Benutzer erfordern, deren ablaufenden Aufgaben zu erweitern.</li><li>`AdminExtend`: Administratoren erweitern ablaufende Zuordnungen.</li><li>`UserRenew`: Benutzer anfordern, um deren abgelaufenen Aufgaben zu erneuern.</li><li>`AdminRenew`: Administratoren erweitern ablaufende Zuordnungen.</li></ul>|
+|type                       |Zeichenfolge         |Erforderlich. Darstellen der den Typ des Vorgangs für die rollenzuweisung. Der Wert kann sein <ul><li>`AdminAdd`: Administratoren Benutzer/Gruppen zu Rollen zuweisen;</li><li>`UserAdd`: Benutzer aktivieren zu auswählbaren Zuordnungen;</li><li> `AdminUpdate`: Administratoren Ändern vorhandener rollenzuweisungen</li><li>`AdminRemove`: Administratoren Benutzer/Gruppen aus Rollen entfernen;<li>`UserRemove`: Benutzer deaktivieren aktive Zuordnungen;<li>`UserExtend`: Benutzer erfordern, deren ablaufenden Aufgaben zu erweitern.</li><li>`AdminExtend`: Administratoren erweitern ablaufende Zuordnungen.</li><li>`UserRenew`: Benutzer anfordern, um deren abgelaufenen Aufgaben zu erneuern.</li><li>`AdminRenew`: Administratoren erweitern ablaufende Zuordnungen.</li></ul>|
 |assignmentState|Zeichenfolge  |Erforderlich. Der Status der Zuordnung. Der Wert kann sein <ul><li> `Eligible`für die Zuweisung von zu auswählbaren</li><li> `Active`-Wenn sie direkt zugeordnet ist `Active` von Administratoren, oder bei einer Zuordnung zu auswählbaren durch den Benutzer aktiviert.</li></ul>|
 |requestedDateTime          |DateTimeOffset |Schreibgeschützt. Die Zeit zu erstellen. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |Zeitplan                   |[governanceSchedule](governanceschedule.md)|Das der Rolle Zuordnung Anforderung Zeitplan-Objekt.|
-|Grund                     |String         |Eine Nachricht stammt von Benutzern und Administratoren beim Erstellen der Anforderung zur, warum es erforderlich ist.|
+|Grund                     |Zeichenfolge         |Eine Nachricht stammt von Benutzern und Administratoren beim Erstellen der Anforderung zur, warum es erforderlich ist.|
 |status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |Der Status der Anforderung Zuordnung Rolle.|
-|linkedEligibleRoleAssignmentId|String        |Ist dies eine Anforderung für die Aktivierung der Rolle, stellt Sie die Id des der `eligible assignment` verwiesen wird; Andernfalls ist der Wert `null`. |
+|linkedEligibleRoleAssignmentId|Zeichenfolge        |Ist dies eine Anforderung für die Aktivierung der Rolle, stellt Sie die Id des der `eligible assignment` verwiesen wird; Andernfalls ist der Wert `null`. |
 
 
 

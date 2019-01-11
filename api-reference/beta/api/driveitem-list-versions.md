@@ -1,12 +1,13 @@
 ---
 title: Auflisten von Versionen einer DriveItem
 description: OneDrive und SharePoint können auch so konfiguriert werden, dass für Dateien ein Verlauf beibehalten wird.
-ms.openlocfilehash: a0092fa244543fbc2233cd9de20ecebd2938fd79
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 230c0aa319daa1f17534a91ab54655a9b13375c1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060886"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883790"
 ---
 # <a name="listing-versions-of-a-driveitem"></a>Auflisten von Versionen einer DriveItem
 

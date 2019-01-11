@@ -1,12 +1,13 @@
 ---
 title: Organisation auflisten
 description: Mit dieser API können Sie eine Liste von Organisationsobjekten abrufen.
-ms.openlocfilehash: 01a6b08b241fcf28edc9b387a00693acfa7beb71
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7087ea0ef7e3885334b33d53416d5e4b6fc750a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065027"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882796"
 ---
 # <a name="list-organization"></a>Organisation auflisten
 

@@ -1,12 +1,13 @@
 ---
 title: 'user: delta'
 description: Get neu erstellt, aktualisiert oder Benutzer ohne Durchführung ein alles Lesen der gesamten Benutzer-Auflistung gelöscht. Finden Sie unter Nachverfolgen von Änderungen für Details.
-ms.openlocfilehash: c460a15a63405a5f913096744b5eb150493c715d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: a1c923ced46de39085fabbdc8e58dde167741ed5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020150"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885806"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -113,7 +114,7 @@ GET https://graph.microsoft.com/v1.0/users/delta
 
 Im folgenden ist ein Beispiel für die Antwort aus, wenn mit `deltaLink` von der Initialisierung Abfrage abgerufen.
 
->**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+>**Hinweis:** Das hier gezeigte Antwortobjekt wurde möglicherweise zur besseren Lesbarkeit gekürzt. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 
 <!-- {
   "blockType": "response",

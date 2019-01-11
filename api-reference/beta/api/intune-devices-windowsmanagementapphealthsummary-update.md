@@ -2,12 +2,13 @@
 title: WindowsManagementAppHealthSummary aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines WindowsManagementAppHealthSummary-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 274ffcc65706f7d730815d4a8350af2dee68f763
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 068e99b09d2204c3e33955a2407e9bbac3ff31b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307070"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887192"
 ---
 # <a name="update-windowsmanagementapphealthsummary"></a>WindowsManagementAppHealthSummary aktualisieren
 
@@ -35,10 +36,10 @@ PATCH /deviceAppManagement/windowsManagementApp/healthSummary
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [WindowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) eine JSON-Darstellung.
@@ -47,7 +48,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Windows Management app Health Zusammenfassung Entität.|
+|id|Zeichenfolge|Schlüssel der Windows Management app Health Zusammenfassung Entität.|
 |healthyDeviceCount|Int32|Anzahl der fehlerfrei Geräte.|
 |unhealthyDeviceCount|Int32|Anzahl der fehlerhaften Geräte.|
 |unknownDeviceCount|Int32|Anzahl der unbekannten Geräte.|

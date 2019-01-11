@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp governanceSchedule
 description: 'Stellt den Zeitplan für einen GovernanceRoleAssignmentRequest dar. Der Zeitplan für eine Rolle Zuordnung Anforderung steuert beim Ausführen dieses Vorgangs Rolle Zuordnung für die rollenzuweisung beenden und wie häufig die Rolle Zuordnung Operation durchzuführen. '
-ms.openlocfilehash: 6eff3977aa7806c975f968b8706f2e8c21e5d99e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8bf36b786adbd8064ee0c00c0ce293408c6e2b7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063203"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882313"
 ---
 # <a name="governanceschedule-resource-type"></a>Ressourcentyp governanceSchedule
 
@@ -21,7 +22,7 @@ Stellt den Zeitplan für einen [GovernanceRoleAssignmentRequest](../resources/go
 |:---------------|:--------|:----------|
 |startDateTime|DateTimeOffset|Die Anfangszeit der rollenzuweisung. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |endDateTime|DateTimeOffset|Die Endzeit der rollenzuweisung. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. *Hinweis: Wenn der Wert ist `null`, es gibt eine permanente Zuordnung an.*|
-|Typ|String|Die rollenzuweisung planen Typ. Nur `Once` wird jetzt unterstützt.
+|type|Zeichenfolge|Die rollenzuweisung planen Typ. Nur `Once` wird jetzt unterstützt.
 |duration|Duration|Die Dauer einer rollenzuweisung. Es ist eine TimeSpan-Format.|
 
 ## <a name="json-representation"></a>JSON-Darstellung

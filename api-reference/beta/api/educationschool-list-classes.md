@@ -2,12 +2,13 @@
 title: EducationClasses auflisten
 description: Abrufen einer Liste von Klassen im Besitz einer Schule.
 author: mmast-msft
-ms.openlocfilehash: e1c4681b9194defc2362e4f24ad1593e8885680c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4d4dacca2530b183639222aba6d7d306b64b07dc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330730"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883566"
 ---
 # <a name="list-educationclasses"></a>EducationClasses auflisten
 

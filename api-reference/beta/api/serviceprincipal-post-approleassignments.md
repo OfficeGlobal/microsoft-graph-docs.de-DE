@@ -1,12 +1,13 @@
 ---
 title: Erstellen von appRoleAssignment
 description: Verwenden Sie diese API, um eine neue AppRoleAssignment erstellen.
-ms.openlocfilehash: f75d20927d3452dcc8f0fc79cb330366d65da745
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ce498312f294ff11b97f12b136a6f48ebb4d3791
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064562"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886982"
 ---
 # <a name="create-approleassignment"></a>Erstellen von appRoleAssignment
 

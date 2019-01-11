@@ -2,12 +2,13 @@
 title: 'WorksheetCollection: Hinzufügen'
 description: .Activate() darauf.
 author: lumine2008
-ms.openlocfilehash: 560a66c4beb589fbb736f0aa27784827740c0440
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: df5cf2fcdd406802e370fc292480fc012cbc6e8e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363578"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882761"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: Hinzufügen
 

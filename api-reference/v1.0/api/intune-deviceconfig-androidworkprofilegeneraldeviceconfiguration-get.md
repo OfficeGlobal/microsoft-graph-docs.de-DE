@@ -2,12 +2,13 @@
 title: Abrufen von androidWorkProfileGeneralDeviceConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidWorkProfileGeneralDeviceConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 61a8516a2f6dc5263c3976c0827f4acfd758831d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d1ce36a8684a269be92523c590f07b2065673def
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27300833"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883839"
 ---
 # <a name="get-androidworkprofilegeneraldeviceconfiguration"></a>Abrufen von androidWorkProfileGeneralDeviceConfiguration
 
@@ -37,8 +38,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

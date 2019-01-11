@@ -2,12 +2,13 @@
 title: iosDeviceType-Ressourcentyp
 description: Enthält die Eigenschaften der möglichen iOS-Gerätetypen, auf denen die mobile App ausgeführt werden kann.
 author: tfitzmac
-ms.openlocfilehash: c9f691c2fdeb25bad54c105450c71dd7c65f30b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8d475b129fa74439c1d5876b96579d556540177f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342756"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884882"
 ---
 # <a name="iosdevicetype-resource-type"></a>iosDeviceType-Ressourcentyp
 

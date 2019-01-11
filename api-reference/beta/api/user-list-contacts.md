@@ -1,12 +1,13 @@
 ---
 title: Kontakte auflisten
 description: Rufen Sie Kontakte in das Postfach des Benutzers.
-ms.openlocfilehash: 649adacf88b13e080ae02ca67986b448f3426cac
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+localization_priority: Normal
+ms.openlocfilehash: b78009d44fd442bab31b9911056023256a1d5102
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209740"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886618"
 ---
 # <a name="list-contacts"></a>Kontakte auflisten
 

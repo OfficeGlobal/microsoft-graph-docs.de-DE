@@ -2,12 +2,13 @@
 title: 'Range: unmerge'
 description: Hebt den Zellverbund des Bereichs in einzelne Zellen auf.
 author: lumine2008
-ms.openlocfilehash: 65192bedaa1f61f3e6b66bc5a593ba7c2d8b31f6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0290145b9ff6790115f384f5d011841227c10192
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357190"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886527"
 ---
 # <a name="range-unmerge"></a>Range: unmerge
 

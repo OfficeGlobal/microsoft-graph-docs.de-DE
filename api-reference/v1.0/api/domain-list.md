@@ -2,12 +2,13 @@
 title: Domänen auflisten
 description: Mit dieser API können Sie eine Liste von Domänenobjekten abrufen.
 author: lleonard-msft
-ms.openlocfilehash: 3b928a41f54ef20fbc5d3d217e6f97182d5c4b8c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da92dd436da728803a64599809c6954d3c851c6d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346662"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886786"
 ---
 # <a name="list-domains"></a>Domänen auflisten
 
@@ -34,7 +35,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 | Name      |Beschreibung|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Erforderlich.|
-| Accept         | application/json; |
+| Annehmen         | application/json; |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: Ressourcentyp mediaPrompt
 description: Der Typ des MediaPrompt.
 author: VinodRavichandran
-ms.openlocfilehash: 4782772f463a613a759ad3b2b25cb05e7e160555
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 31e1e0e1d842c758cddfb78a39b2dcc185e97ec9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380289"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884266"
 ---
 # <a name="mediaprompt-resource-type"></a>Ressourcentyp mediaPrompt
 
@@ -19,7 +20,7 @@ Der Typ des MediaPrompt.
 
 | Eigenschaft    | Typ                      | Beschreibung                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| Schleife        | Int32                     | Die Anzahl der Schleifen. Wert 0 gibt an, dass Endlosschleife ausgeführt. Der Standardwert lautet `1`. |
+| Schleife        | Int32                     | Die Anzahl der Schleifen. Wert 0 gibt an, dass Endlosschleife ausgeführt. Der Standardwert ist `1`. |
 | mediaInfo   | [mediaInfo](mediainfo.md) | Die Medieninformationen                                                           |
 
 ## <a name="json-representation"></a>JSON-Darstellung

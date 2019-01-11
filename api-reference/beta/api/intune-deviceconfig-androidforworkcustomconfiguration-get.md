@@ -2,12 +2,13 @@
 title: Abrufen von androidForWorkCustomConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidForWorkCustomConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 3b80e8b7ea5d05d22d2a42121539decb8e973384
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 96efea858887aad76bb969ce030da82a09286a2b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317598"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882845"
 ---
 # <a name="get-androidforworkcustomconfiguration"></a>Abrufen von androidForWorkCustomConfiguration
 
@@ -41,8 +42,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

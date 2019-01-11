@@ -2,12 +2,13 @@
 title: windows10CompliancePolicy abrufen
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs windows10CompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 58208e40cba356cec312d07bf98e945a2ef4ebf6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7ac0a3ce1c9225d48045a5c3c35992719e51ce16
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307966"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886926"
 ---
 # <a name="get-windows10compliancepolicy"></a>windows10CompliancePolicy abrufen
 
@@ -37,10 +38,10 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: Connector-Ressourcentyp
 description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: 6d4cb7e5ca1a5384dbb6c8be92e7ce4eb107388a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 98fa998a37b01ad64e556b229912932f4d1cfc75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064598"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884623"
 ---
 # <a name="connector-resource-type"></a>Connector-Ressourcentyp
 
@@ -29,9 +30,9 @@ ms.locfileid: "27064598"
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|externalIp|String|Externe IP-Adresse als ermittelte vom Dienst für den Connectorcomputer. Schreibgeschützt.|
-|id|String| Die Objekt-Id der Verbindung. <BR>Schreibgeschützt.|
-|Computername|String| Der Name des Computers, der der Connector ausgeführt wird. <BR>Schreibgeschützt.|
+|externalIp|Zeichenfolge|Externe IP-Adresse als ermittelte vom Dienst für den Connectorcomputer. Schreibgeschützt.|
+|id|Zeichenfolge| Die Objekt-Id der Verbindung. <BR>Schreibgeschützt.|
+|Computername|Zeichenfolge| Der Name des Computers, der der Connector ausgeführt wird. <BR>Schreibgeschützt.|
 |status|string| Gibt den Status der Verbindung. Mögliche Werte sind: `active` und `inactive`. Schreibgeschützt. |
 
 ## <a name="relationships"></a>Beziehungen

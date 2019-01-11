@@ -2,12 +2,13 @@
 title: WindowsPhone81AppXBundle löschen
 description: Löscht eine windowsPhone81AppXBundle.
 author: tfitzmac
-ms.openlocfilehash: e63d69255866565807ac23e3f6801bdd97be9861
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b2b4cb1df708f6773a67dab134fe6f1989d16574
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318900"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887108"
 ---
 # <a name="delete-windowsphone81appxbundle"></a>WindowsPhone81AppXBundle löschen
 
@@ -39,8 +40,8 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

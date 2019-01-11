@@ -1,12 +1,13 @@
 ---
 title: Verwendungsberichte für Yammer-Gerät
 description: Die Verwendungsberichte für das Yammer-Gerät geben Aufschluss darüber, welche Geräte Ihre Benutzer für die Nutzung von Yammer verwenden. Sie können sich die Anzahl der Benutzer nach Gerätetyp für einen gewählten Zeitraum ansehen und Details für einzelne Benutzer anzeigen.
-ms.openlocfilehash: da94fb91d3feb17052cf02b09e27cdc70b7f734b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f8effbe250b352d290e04c0e23c5454447ebf4d4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064136"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885680"
 ---
 # <a name="yammer-device-usage-reports"></a>Verwendungsberichte für Yammer-Gerät
 

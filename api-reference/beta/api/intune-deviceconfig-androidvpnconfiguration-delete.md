@@ -2,12 +2,13 @@
 title: AndroidVpnConfiguration löschen
 description: Löscht eine AndroidVpnConfiguration.
 author: tfitzmac
-ms.openlocfilehash: a035edf78c9abce8cc4eac837e8b259771a1d71d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dab1f85298a7728d7a1bec152178066c68ff1a6b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315680"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887031"
 ---
 # <a name="delete-androidvpnconfiguration"></a>AndroidVpnConfiguration löschen
 
@@ -37,10 +38,10 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

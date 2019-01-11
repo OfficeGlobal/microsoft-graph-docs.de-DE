@@ -1,12 +1,13 @@
 ---
 title: 'group: getMemberGroups'
 description: Gibt alle Gruppen zurück, bei denen die Gruppe Mitglied ist von. Die Überprüfung ist transitiv; im Gegensatz zum Lesen der Navigationseigenschaft Mitglied, die nur die Gruppen zurückgibt, deren direktes Mitglied die Gruppe ist.
-ms.openlocfilehash: 6a68bf620561ff9e2212423dee8a37075e9e09e1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0c5162e79921e6069d22861060e6c652d1a7de3f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059305"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887207"
 ---
 # <a name="group-getmembergroups"></a>group: getMemberGroups
 

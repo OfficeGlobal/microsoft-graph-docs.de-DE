@@ -1,12 +1,13 @@
 ---
 title: SecurityNetworkProtocol Enum-Typ
 description: Mögliche Werte für das Netzwerkprotokoll.
-ms.openlocfilehash: c0d676bc8c03faeee5ce8cf3265991304de31766
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 49437c67ec84bf90403658e9a188675c22a4e369
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016925"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884630"
 ---
 # <a name="securitynetworkprotocol-enum-type"></a>SecurityNetworkProtocol Enum-Typ
 

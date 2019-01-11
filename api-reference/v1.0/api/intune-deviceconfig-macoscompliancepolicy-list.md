@@ -2,12 +2,13 @@
 title: Auflisten von „macOSCompliancePolicy“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs macOSCompliancePolicy auf.
 author: tfitzmac
-ms.openlocfilehash: 0e283b8a2540968cf6a10ef0ae9be740a32c9d71
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e6c32e5b9ee4f582168d30c8efa674becd4846f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327503"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888074"
 ---
 # <a name="list-macoscompliancepolicies"></a>Auflisten von „macOSCompliancePolicy“
 
@@ -35,8 +36,8 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

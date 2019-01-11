@@ -2,12 +2,13 @@
 title: Erstellen von ndesConnector
 description: Erstellen eines neuen NdesConnector-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 16580e9d69850139edd8f268bbaf3688b29d06e7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: be52a9b8b3b11a56c89c4c90ab42ef136017847d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333600"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832277"
 ---
 # <a name="create-ndesconnector"></a>Erstellen von ndesConnector
 
@@ -37,8 +38,8 @@ POST /deviceManagement/ndesConnectors
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt NdesConnector eine JSON-Darstellung.
@@ -47,10 +48,10 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Der Schlüssel des NDES Connectors.|
+|id|Zeichenfolge|Der Schlüssel des NDES Connectors.|
 |lastConnectionDateTime|DateTimeOffset|Letzte Verbindungszeit für den Ndes Connector|
 |state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|NDES Connector Status. Mögliche Werte sind: `none`, `active` und `inactive`.|
-|displayName|String|Der Anzeigename der Verbindung Ndes.|
+|displayName|Zeichenfolge|Der Anzeigename der Verbindung Ndes.|
 
 
 

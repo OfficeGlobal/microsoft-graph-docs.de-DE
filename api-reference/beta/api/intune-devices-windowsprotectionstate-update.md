@@ -2,12 +2,13 @@
 title: WindowsProtectionState aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines WindowsProtectionState-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 8bdbe3d1841eb29f7616edcc5063cd025f282974
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 97a11b8a3a26bea6f59cf0791bc8f5356f6fdb85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308708"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886870"
 ---
 # <a name="update-windowsprotectionstate"></a>WindowsProtectionState aktualisieren
 
@@ -38,8 +39,8 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [WindowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) eine JSON-Darstellung.
@@ -48,23 +49,23 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Der eindeutige Bezeichner für das Gerät Protection Status-Objekt. Dies ist die Geräte-Id des Geräts|
-|malwareProtectionEnabled|Boolesch|Anti-Malware ist oder nicht aktiviert|
+|id|Zeichenfolge|Der eindeutige Bezeichner für das Gerät Protection Status-Objekt. Dies ist die Geräte-Id des Geräts|
+|malwareProtectionEnabled|Boolescher Wert|Anti-Malware ist oder nicht aktiviert|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Zustand des Computers (wie bereinigen oder ausstehende vollständigen Scan oder Ausstehender Neustart usw.). Mögliche Werte sind: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending` und `critical`.|
-|realTimeProtectionEnabled|Boolesch|Echtzeit-Schutz ist oder nicht aktiviert?|
-|networkInspectionSystemEnabled|Boolesch|Netzwerk-Prüfung System aktiviert ist oder nicht?|
-|quickScanOverdue|Boolesch|Quick scan überfällige oder nicht?|
-|fullScanOverdue|Boolesch|Des vollständigen Scan überfällige oder nicht?|
-|signatureUpdateOverdue|Boolesch|Signatur veraltet oder nicht?|
-|rebootRequired|Boolesch|Neustart erforderlich oder nicht?|
-|fullScanRequired|Boolesch|Vollständigen Scan erforderlich oder nicht?|
-|%ENGINEVERSION%|String|Aktuelle Endpoint Protection Datenbankmodul, version|
-|signatureVersion|String|Aktuelle Version der Malware-Definitionen|
-|antiMalwareVersion|String|Aktuelle anti-Malware-version|
+|realTimeProtectionEnabled|Boolescher Wert|Echtzeit-Schutz ist oder nicht aktiviert?|
+|networkInspectionSystemEnabled|Boolescher Wert|Netzwerk-Prüfung System aktiviert ist oder nicht?|
+|quickScanOverdue|Boolescher Wert|Quick scan überfällige oder nicht?|
+|fullScanOverdue|Boolescher Wert|Des vollständigen Scan überfällige oder nicht?|
+|signatureUpdateOverdue|Boolescher Wert|Signatur veraltet oder nicht?|
+|rebootRequired|Boolescher Wert|Neustart erforderlich oder nicht?|
+|fullScanRequired|Boolescher Wert|Vollständigen Scan erforderlich oder nicht?|
+|%ENGINEVERSION%|Zeichenfolge|Aktuelle Endpoint Protection Datenbankmodul, version|
+|signatureVersion|Zeichenfolge|Aktuelle Version der Malware-Definitionen|
+|antiMalwareVersion|Zeichenfolge|Aktuelle anti-Malware-version|
 |lastQuickScanDateTime|DateTimeOffset|Letzte schnell-Scan datetime|
 |lastFullScanDateTime|DateTimeOffset|Letzte schnell-Scan datetime|
-|lastQuickScanSignatureVersion|String|Letzte schnell-Scan Signatur-version|
-|lastFullScanSignatureVersion|String|Letzte vollständige Überprüfung Signatur-version|
+|lastQuickScanSignatureVersion|Zeichenfolge|Letzte schnell-Scan Signatur-version|
+|lastFullScanSignatureVersion|Zeichenfolge|Letzte vollständige Überprüfung Signatur-version|
 |lastReportedDateTime|DateTimeOffset|Letzte Gerät Integritätsstatus gemeldet Zeit|
 
 

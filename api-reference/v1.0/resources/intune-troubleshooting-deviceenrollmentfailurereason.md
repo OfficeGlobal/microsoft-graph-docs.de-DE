@@ -2,12 +2,13 @@
 title: DeviceEnrollmentFailureReason Enum-Typ
 description: Oberste Ebene Fehler Kategorien für die Registrierung.
 author: tfitzmac
-ms.openlocfilehash: 6adf8918762832dd961a7cd3f2b625f2394c54cb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5dd7ba949c95d507d956dd7f315b3c19e0759c20
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343953"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885526"
 ---
 # <a name="deviceenrollmentfailurereason-enum-type"></a>DeviceEnrollmentFailureReason Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27343953"
 
 Oberste Ebene Fehler Kategorien für die Registrierung.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Der Standardwert, Fehlerursache ist unbekannt.|
 |Authentifizierung|1|Fehler bei der Authentifizierung|

@@ -1,12 +1,13 @@
 ---
 title: 'group: removeFavorite'
 description: Entfernt die Gruppe aus der Liste der Favoritengruppen des aktuellen Benutzers. Wird nur für Office 365-Gruppen unterstützt.
-ms.openlocfilehash: 718559a3cd5f429bd0409c8644fab7a0d194e03d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7299c89bc95ce267adf0149cbf3ff3f76c3a52ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059989"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887262"
 ---
 # <a name="group-removefavorite"></a>group: removeFavorite
 
@@ -30,7 +31,7 @@ POST /groups/{id}/removeFavorite
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Prefer | return=minimal. Wenn die Antwortkopfzeile „minimal“ in der Anforderungskopfzeile enthalten ist, gibt eine erfolgreiche Antwort den `204 No Content`-Code zurück.  Optional.  | 

@@ -1,12 +1,13 @@
 ---
 title: FilterClause Ressourcentyp
 description: Stellt eine einzelne Assertion, die ein Objekt Candidate erfüllen muss, und wird ausgewertet entweder `true` (Objekt erfüllt die Assertion) oder `false` (Objekt erfüllt die Assertion nicht).
-ms.openlocfilehash: 0861324849f224c4e750f0c7b926464280b9a377
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 89807a6086f661388c8d5b1d5f82bfe973c3af39
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059365"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833859"
 ---
 # <a name="filterclause-resource-type"></a>FilterClause Ressourcentyp
 
@@ -17,8 +18,8 @@ Stellt eine einzelne Assertion, die ein Objekt Candidate erfüllen muss, und wir
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|operatorName|String|Name des Operators auf den Quell- und Ziel-Operanden angewendet werden soll. Einer der unterstützten Operatoren muss sein. Unterstützte Operatoren können ermittelt werden.|
-|sourceOperandName|String|Name der Datenquelle Operand (Operand getesteten). Der Name der Operand muss einem den Attributnamen im Quellobjekt übereinstimmen.|
+|operatorName|Zeichenfolge|Name des Operators auf den Quell- und Ziel-Operanden angewendet werden soll. Einer der unterstützten Operatoren muss sein. Unterstützte Operatoren können ermittelt werden.|
+|sourceOperandName|Zeichenfolge|Name der Datenquelle Operand (Operand getesteten). Der Name der Operand muss einem den Attributnamen im Quellobjekt übereinstimmen.|
 |targetOperand|[filterOperand](synchronization-filteroperand.md)|Werte, denen mit der Quelloperanden getestet wird.|
 
 ## <a name="json-representation"></a>JSON-Darstellung

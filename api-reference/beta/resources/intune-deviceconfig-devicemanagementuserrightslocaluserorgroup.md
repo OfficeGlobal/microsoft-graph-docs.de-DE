@@ -2,12 +2,13 @@
 title: Ressourcentyp deviceManagementUserRightsLocalUserOrGroup
 description: Stellt Informationen für einen lokalen Benutzer oder eine Gruppe, die zum Festlegen von Benutzerrechten an.
 author: tfitzmac
-ms.openlocfilehash: baabd2f3bb9e3bce44d172cd83f61f57c5c2c98d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d795e2b259c71612b1d0720796b6ad76145bb36d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303731"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885741"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>Ressourcentyp deviceManagementUserRightsLocalUserOrGroup
 
@@ -19,9 +20,9 @@ Stellt Informationen für einen lokalen Benutzer oder eine Gruppe, die zum Festl
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|name|String|Der Name des lokalen Benutzers oder der Gruppe.|
-|description|String|Der Admin-Beschreibung des lokalen Benutzers oder der Gruppe.|
-|securityIdentifier|String|Die Sicherheits-ID der lokalen Benutzer oder Gruppen (z. B. * S-1-5-32-544).|
+|name|Zeichenfolge|Der Name des lokalen Benutzers oder der Gruppe.|
+|description|Zeichenfolge|Der Admin-Beschreibung des lokalen Benutzers oder der Gruppe.|
+|securityIdentifier|Zeichenfolge|Die Sicherheits-ID der lokalen Benutzer oder Gruppen (z. B. * S-1-5-32-544).|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

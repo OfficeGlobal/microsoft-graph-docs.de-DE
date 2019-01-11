@@ -2,12 +2,13 @@
 title: Auflisten von groupLifecyclePolicies
 description: Ruft eine Liste der groupLifecyclePolicy-Objekte ab, zu der eine Gruppe gehört.
 author: dkershaw10
-ms.openlocfilehash: 9433716e8c2a6f91a15ca23a7aa915974d757bd7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1b9559078e7859dc8b90240e513a8f4e03bccb69
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311046"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883223"
 ---
 # <a name="list-grouplifecyclepolicies"></a>Auflisten von groupLifecyclePolicies
 

@@ -1,12 +1,13 @@
 ---
 title: 'group: unsubscribeByMail'
 description: 'Durch Aufrufen dieser Methode wird den aktuellen Benutzer Empfang von e-Mail-Benachrichtigungen für diese Gruppe über neue Beiträge, Ereignisse und die Dateien in dieser Gruppe deaktiviert. Unterstützt nur die Office 365-Gruppen. '
-ms.openlocfilehash: 4891b3c4f8908c61cdbc46ce8bc43f9e51cc4e16
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a9c4777a511010ac42bcc31b2fa0a6dc754ac23f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060601"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887528"
 ---
 # <a name="group-unsubscribebymail"></a>group: unsubscribeByMail
 
@@ -30,7 +31,7 @@ POST /groups/{id}/unsubscribeByMail
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Prefer | return=minimal. Wenn die Antwortkopfzeile „minimal“ in der Anforderungskopfzeile enthalten ist, gibt eine erfolgreiche Antwort den `204 No Content`-Code zurück.  Optional.  | 

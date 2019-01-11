@@ -2,12 +2,13 @@
 title: Ressourcentyp directoryObjectPartnerReference
 description: Stellt einen Verweis auf ein Verzeichnisobjekt in einem Partner-Mandanten. Erbt von directoryObject.
 author: lleonard-msft
-ms.openlocfilehash: 37a60c126ef74f3073f258ba799cf276fda4f5cf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 46d0f749ac77e7d51e03314e78cfccf494dcc6fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336946"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884861"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>Ressourcentyp directoryObjectPartnerReference
 
@@ -19,11 +20,11 @@ Stellt einen Verweis auf ein Verzeichnisobjekt in einer Partnerorganisation. Erb
 
 | Eigenschaft | Typ | Beschreibung |
 |:---------------|:--------|:----------|
-|description|String| Beschreibung des zurückgegebenen Objekts. Schreibgeschützt. |
-|displayName|String| Name des Directory-Objekts zurückgegeben wird, wie die Gruppe oder eine andere Anwendung. Schreibgeschützt. |
+|description|Zeichenfolge| Beschreibung des zurückgegebenen Objekts. Schreibgeschützt. |
+|displayName|Zeichenfolge| Name des Directory-Objekts zurückgegeben wird, wie die Gruppe oder eine andere Anwendung. Schreibgeschützt. |
 |externalPartnerTenantId|Guid| Die Mandanten-ID für den Mandanten Partner. Schreibgeschützt. |
-|id|String| Der eindeutige Bezeichner für die Ressource. Geerbt von [directoryObject](directoryobject.md?view=graph-rest-beta). Schreibgeschützt. |
-|objectType|String| Der Typ des Objekts im Mandanten Partner verwiesen wird. Schreibgeschützt. |
+|id|Zeichenfolge| Der eindeutige Bezeichner für die Ressource. Geerbt von [directoryObject](directoryobject.md?view=graph-rest-beta). Schreibgeschützt. |
+|objectType|Zeichenfolge| Der Typ des Objekts im Mandanten Partner verwiesen wird. Schreibgeschützt. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -45,7 +46,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Directory-Objekte aus einer Liste von IDs abrufen](/graph/api/directoryobject-getbyids?view=graph-rest-beta)
 

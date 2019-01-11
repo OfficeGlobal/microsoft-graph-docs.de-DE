@@ -2,12 +2,13 @@
 title: EmbeddedSIMDeviceStateValue Enum-Typ
 description: Beschreibt die verschiedenen Zustände für einen eingebetteten SIM Aktivierungscode.
 author: tfitzmac
-ms.openlocfilehash: 51e550669d9cd29d7d5bb246fe2cba017b02187c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a3974c0df65ef9f59242f390b7166e11c3e0c592
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320594"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886058"
 ---
 # <a name="embeddedsimdevicestatevalue-enum-type"></a>EmbeddedSIMDeviceStateValue Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27320594"
 
 Beschreibt die verschiedenen Zustände für einen eingebetteten SIM Aktivierungscode.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |notEvaluated|0|Legt fest, dass der eingebettete SIM Aktivierungscode kostenlosen und verfügbar ist, ein Gerät zugewiesen werden soll.|
 |failed|1|Legt fest, dass Intune Service konnte nicht an einem Gerät dieses Profil übermitteln.|

@@ -2,12 +2,13 @@
 title: AndroidDeviceOwnerGeneralDeviceConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidDeviceOwnerGeneralDeviceConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: bf81569d5af7e223ff24e34bc031a19633d22edd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bb4ce71c059f9fdcfa971237b46a28473059e742
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340096"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887605"
 ---
 # <a name="update-androiddeviceownergeneraldeviceconfiguration"></a>AndroidDeviceOwnerGeneralDeviceConfiguration aktualisieren
 
@@ -37,10 +38,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [AndroidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) eine JSON-Darstellung.
@@ -49,54 +50,54 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolesch|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolescher Wert|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|accountsBlockModification|Boolesch|Gibt an, ob das Hinzufügen oder Entfernen von Konten deaktiviert ist.|
-|appsAllowInstallFromUnknownSources|Boolesch|Gibt an, ob der Benutzer berechtigt ist, um das Festlegen von unbekannten Quellen zu ermöglichen.|
+|accountsBlockModification|Boolescher Wert|Gibt an, ob das Hinzufügen oder Entfernen von Konten deaktiviert ist.|
+|appsAllowInstallFromUnknownSources|Boolescher Wert|Gibt an, ob der Benutzer berechtigt ist, um das Festlegen von unbekannten Quellen zu ermöglichen.|
 |appsAutoUpdatePolicy|[androidDeviceOwnerAppAutoUpdatePolicyType](../resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)|Gibt den Wert des app-Richtlinie für die automatische Aktualisierung. Mögliche Werte sind: `notConfigured`, `userChoice`, `never`, `wiFiOnly` und `always`.|
 |appsDefaultPermissionPolicy|[androidDeviceOwnerDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)|Gibt die Berechtigungsrichtlinie für Anforderungen für Laufzeitberechtigungen an, ob eine nicht für die app speziell definiert ist. Mögliche Werte: sind `deviceDefault`, `prompt`, `autoGrant` und `autoDeny`.|
-|bluetoothBlockConfiguration|Boolesch|Gibt an, ob vom Bluetooth konfigurieren einen Benutzer blockieren.|
-|bluetoothBlockContactSharing|Boolesch|Gibt an, ob einen Benutzer von der Freigabe von Kontakten über Bluetooth blockieren.|
+|bluetoothBlockConfiguration|Boolescher Wert|Gibt an, ob vom Bluetooth konfigurieren einen Benutzer blockieren.|
+|bluetoothBlockContactSharing|Boolescher Wert|Gibt an, ob einen Benutzer von der Freigabe von Kontakten über Bluetooth blockieren.|
 |cameraBlocked|Boolescher Wert|Gibt an, ob die Verwendung der Kamera zu deaktivieren.|
 |cellularBlockWifiTethering|Boolescher Wert|Gibt an, ob WLAN-Tethering blockiert werden soll.|
-|dataRoamingBlocked|Boolesch|Gibt an, ob einen Benutzer von servergespeicherten Daten blockieren.|
-|dateTimeConfigurationBlocked|Boolesch|Gibt an, ob die Benutzer manuell ändern, die Datums- oder Uhrzeitwerte auf dem Gerät blockieren|
+|dataRoamingBlocked|Boolescher Wert|Gibt an, ob einen Benutzer von servergespeicherten Daten blockieren.|
+|dateTimeConfigurationBlocked|Boolescher Wert|Gibt an, ob die Benutzer manuell ändern, die Datums- oder Uhrzeitwerte auf dem Gerät blockieren|
 |factoryResetDeviceAdministratorEmails|Collection von Objekten des Typs „String“|Liste der Google-Konto-e-Mails, die erforderlich sind, um zu authentifizieren, nachdem ein Gerät ist Factory zurückzusetzen, bevor eingerichtet werden kann.|
 |factoryResetBlocked|Boolescher Wert|Gibt an, ob die Option zum Factory in den Einstellungen deaktiviert ist.|
 |kioskModeApps|Collection von Objekten des Typs [appListItem](../resources/intune-deviceconfig-applistitem.md)|Eine Liste der verwalteten apps, die das Gerät bei im Kioskmodus zurückgekehrt ist angezeigt werden. Diese Collection darf maximal 500 Elemente enthalten.|
-|microphoneForceMute|Boolesch|Gibt an, ob blockieren Aufheben der stummschaltung für das Mikrofon auf dem Gerät.|
-|networkEscapeHatchAllowed|Boolesch|Gibt an, ob das Gerät zulässig, eine Verbindung mit einer temporären-Verbindung beim Starten.|
-|nfcBlockOutgoingBeam|Boolesch|Gibt an, ob ausgehende Balken NFK blockieren.|
-|passwordBlockKeyguard|Boolesch|Gibt an, ob die Keyguard deaktiviert ist.|
+|microphoneForceMute|Boolescher Wert|Gibt an, ob blockieren Aufheben der stummschaltung für das Mikrofon auf dem Gerät.|
+|networkEscapeHatchAllowed|Boolescher Wert|Gibt an, ob das Gerät zulässig, eine Verbindung mit einer temporären-Verbindung beim Starten.|
+|nfcBlockOutgoingBeam|Boolescher Wert|Gibt an, ob ausgehende Balken NFK blockieren.|
+|passwordBlockKeyguard|Boolescher Wert|Gibt an, ob die Keyguard deaktiviert ist.|
 |passwordExpirationDays|Int32|Gibt die Zeitspanne in Sekunden an, die für ein Kennwort festgelegt werden kann, bevor sie abläuft und ein neues Kennwort erforderlich. Gültige Werte: 1 bis 365.|
 |passwordMinimumLength|Int32|Gibt die minimale Länge des Kennworts auf dem Gerät erforderlich. Gültige Werte: 4 bis 16.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Zeit in Millisekunden vor dem Timeout der Bildschirm Inaktivität.|
 |passwordPreviousPasswordCountToBlock|Int32|Gibt die Länge des Kennwortverlauf, wobei der Benutzer nicht möglich wird ein neues Kennwort eingeben, das im Verlauf jedes beliebige Kennwort identisch ist. Gültige Werte: 0 bis 24.|
 |passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Gibt die Mindestlänge für Kennwort Qualität auf dem Gerät erforderlich. Mögliche Werte sind: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric` und `alphanumericWithSymbols`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Gibt an, wie oft ein Benutzer ein ungültiges Kennwort eingeben kann, bevor das Gerät bereinigt wird. Gültige Werte: 4 bis 11.|
-|safeBootBlocked|Boolesch|Gibt an, ob neu gestartet, dass das Gerät in abgesicherten Modus deaktiviert ist.|
+|safeBootBlocked|Boolescher Wert|Gibt an, ob neu gestartet, dass das Gerät in abgesicherten Modus deaktiviert ist.|
 |screenCaptureBlocked|Boolescher Wert|Gibt an, ob die Funktion auszuführende Screenshots deaktivieren.|
-|securityAllowDebuggingFeatures|Boolesch|Gibt an, ob die Benutzer aus der debugging-Funktionen auf dem Gerät aktivieren blockieren.|
+|securityAllowDebuggingFeatures|Boolescher Wert|Gibt an, ob die Benutzer aus der debugging-Funktionen auf dem Gerät aktivieren blockieren.|
 |securityRequireVerifyApps|Boolescher Wert|Gibt an, ob überprüfen apps ist erforderlich.|
-|statusBarBlocked|Boolesch|Gibt an, ob oder den Status Leiste deaktiviert ist, einschließlich Benachrichtigungen, schnelle Einstellungen und anderen Bildschirm überlagert.|
+|statusBarBlocked|Boolescher Wert|Gibt an, ob oder den Status Leiste deaktiviert ist, einschließlich Benachrichtigungen, schnelle Einstellungen und anderen Bildschirm überlagert.|
 |stayOnModes|[AndroidDeviceOwnerBatteryPluggedMode](../resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md) -Auflistung|Liste der Modi, in denen der Anzeige des Geräts eingeschaltet, verbleibt. Diese Sammlung kann maximal 4 Elemente enthalten. Mögliche Werte: sind `notConfigured`, `ac`, `usb` und `wireless`.|
-|storageAllowUsb|Boolesch|Gibt an, ob USB-Massenspeichergerät zulassen.|
-|storageBlockExternalMedia|Boolesch|Gibt an, ob externe Medien zu blockieren.|
-|storageBlockUsbFileTransfer|Boolesch|Gibt an, ob USB-Dateiübertragung zu blockieren.|
+|storageAllowUsb|Boolescher Wert|Gibt an, ob USB-Massenspeichergerät zulassen.|
+|storageBlockExternalMedia|Boolescher Wert|Gibt an, ob externe Medien zu blockieren.|
+|storageBlockUsbFileTransfer|Boolescher Wert|Gibt an, ob USB-Dateiübertragung zu blockieren.|
 |systemUpdateWindowStartMinutesAfterMidnight|Int32|Gibt die Anzahl der Minuten nach Mitternacht, die das System Update Fenster beginnt. Gültige Werte von 0 bis 1440|
 |systemUpdateWindowEndMinutesAfterMidnight|Int32|Gibt die Anzahl der Minuten nach Mitternacht, die das System Update Fenster endet. Gültige Werte von 0 bis 1440|
 |systemUpdateInstallType|[androidDeviceOwnerSystemUpdateInstallType](../resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)|Der Typ des Systemkonfiguration Update. Mögliche Werte: sind `deviceDefault`, `postpone`, `windowed` und `automatic`.|
-|usersBlockAdd|Boolesch|Gibt an, ob Hinzufügen von Benutzern und Profile deaktiviert ist.|
-|usersBlockRemove|Boolesch|Gibt an, ob Entfernen von anderen Benutzern vom Gerät zu deaktivieren.|
-|volumeBlockAdjustment|Boolesch|Gibt an, ob anpassen, dass die Hauptlautstärke deaktiviert ist.|
-|wifiBlockEditConfigurations|Boolesch|Gibt an, ob die Benutzer durch die Bearbeitung von Einstellungen für die WLAN-Verbindung zu blockieren.|
-|wifiBlockEditPolicyDefinedConfigurations|Boolesch|Gibt an, ob die Benutzer bearbeiten können nur die von der Richtlinie definierten Netzwerke blockieren.|
+|usersBlockAdd|Boolescher Wert|Gibt an, ob Hinzufügen von Benutzern und Profile deaktiviert ist.|
+|usersBlockRemove|Boolescher Wert|Gibt an, ob Entfernen von anderen Benutzern vom Gerät zu deaktivieren.|
+|volumeBlockAdjustment|Boolescher Wert|Gibt an, ob anpassen, dass die Hauptlautstärke deaktiviert ist.|
+|wifiBlockEditConfigurations|Boolescher Wert|Gibt an, ob die Benutzer durch die Bearbeitung von Einstellungen für die WLAN-Verbindung zu blockieren.|
+|wifiBlockEditPolicyDefinedConfigurations|Boolescher Wert|Gibt an, ob die Benutzer bearbeiten können nur die von der Richtlinie definierten Netzwerke blockieren.|
 
 
 

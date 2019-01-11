@@ -2,12 +2,13 @@
 title: Ressourcentyp verwendet
 description: Einen Einblick, Dokumente, die von einem bestimmten Benutzer darstellt. Einblicke in die gibt, die zutreffenden Dokumente, die ein Benutzer anzeigen oder darauf zugreifen.
 author: simonhult
-ms.openlocfilehash: 89eac33ad954905c77a26df669bb15a2cf471edd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb41fcb7cef5c9e39f9100ebd1d8c2640f06e2d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323485"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885533"
 ---
 # <a name="used-resource-type"></a>Ressourcentyp verwendet
 
@@ -28,7 +29,7 @@ Einen Einblick, Dokumente, die von einem bestimmten Benutzer darstellt. Einblick
 
 | Eigenschaft              | Typ                      | Beschreibung  |
 | -------------         |---------------            | -------------|
-| id                    | String                    | Eindeutiger Bezeichner der Beziehung. Schreibgeschützt.        |
+| id                    | Zeichenfolge                    | Eindeutiger Bezeichner der Beziehung. Schreibgeschützt.        |
 | lastUsed              | [usageDetails](insights-usagedetails.md)              | Wenn das Element zuletzt Informationen angezeigt und vom Benutzer geändert. Schreibgeschützt.     |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | Eigenschaften, die Sie verwenden können, um das Dokument in Ihre Erfahrung visualisieren. Schreibgeschützt.      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | Referenz-Eigenschaften des Dokuments verwendete, wie die Url und den Typ des Dokuments. Schreibgeschützt.     |

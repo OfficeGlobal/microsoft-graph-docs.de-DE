@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp scopedRoleMembership
 description: Ein Bereich Rollenmitgliedschaften beschreibt eines Benutzers Mitgliedschaft einer Directory-Rolle, die weiter an eine Administrative Einheit (AU) begrenzt ist.  Dies bietet einen Mechanismus, um einen Mandanten gesamte Unternehmen Adminsistrator zum Delegieren der administrativer Berechtigungen zu einem Benutzer das Verwalten von Benutzern und Gruppen in einer Teilmenge der Organisation (der Teilmenge von einer AU definiert wird) zu ermöglichen.
-ms.openlocfilehash: bd635a5b1b06b98657ba24c397e2f67afb76fa8f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a83acf82eadd9798a86a1a6456d5b2c4ca60be73
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061462"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884798"
 ---
 # <a name="scopedrolemembership-resource-type"></a>Ressourcentyp scopedRoleMembership
 

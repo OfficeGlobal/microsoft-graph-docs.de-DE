@@ -1,12 +1,13 @@
 ---
 title: 'EducationAssignment: GetResourcesFolderUrl'
 description: 'Diese Funktion gibt die OneDrive-URL, in dem alle dateibasierten Ressourcen (Word, Excel usw.) hochgeladen werden soll.  '
-ms.openlocfilehash: 129fa76d57e2016141397f967e833c765e737b19
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4352fb051573f91ef93e781a1a06ba984b17a9ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063060"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887388"
 ---
 # <a name="educationassignment-getresourcesfolderurl"></a>EducationAssignment: GetResourcesFolderUrl
 
@@ -31,7 +32,7 @@ POST /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

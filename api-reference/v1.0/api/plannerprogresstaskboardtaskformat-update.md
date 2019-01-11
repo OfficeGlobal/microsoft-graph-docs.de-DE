@@ -1,12 +1,13 @@
 ---
 title: plannerProgressTaskBoardTaskFormat aktualisieren
 description: Dient zum Aktualisieren der Eigenschaften eines **plannerProgressTaskBoardTaskFormat**-Objekts.
-ms.openlocfilehash: ed1f7f3df75415dd2fd08276fcfa461241b87276
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2964fe7f6002075bf3a18fa39be149e34fe55031
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018746"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815260"
 ---
 # <a name="update-plannerprogresstaskboardtaskformat"></a>plannerProgressTaskBoardTaskFormat aktualisieren
 
@@ -36,7 +37,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|orderHint|String|Hinweiswert, der verwendet wird, um die Aufgaben in der Ansicht „Fortschritt“ des Task Board anzuordnen. Das Format ist wie [hier](../resources/planner-order-hint-format.md) beschrieben definiert.|
+|orderHint|Zeichenfolge|Hinweiswert, der verwendet wird, um die Aufgaben in der Ansicht „Fortschritt“ des Task Board anzuordnen. Das Format ist wie [hier](../resources/planner-order-hint-format.md) beschrieben definiert.|
 
 ## <a name="response"></a>Antwort
 

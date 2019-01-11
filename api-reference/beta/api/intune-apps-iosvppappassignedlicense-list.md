@@ -2,12 +2,13 @@
 title: Liste iosVppAppAssignedLicenses
 description: Listeneigenschaften und Beziehungen der IosVppAppAssignedLicense-Objekte.
 author: tfitzmac
-ms.openlocfilehash: ee5787593a841246165ad10673a772b6e24ddf09
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b02e35b7f0d2a6f64c2e1e891db6a6ae066be90b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358184"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883213"
 ---
 # <a name="list-iosvppappassignedlicenses"></a>Liste iosVppAppAssignedLicenses
 
@@ -37,8 +38,8 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assi
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

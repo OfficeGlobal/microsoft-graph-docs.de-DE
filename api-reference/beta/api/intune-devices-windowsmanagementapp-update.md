@@ -2,12 +2,13 @@
 title: WindowsManagementApp aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines WindowsManagementApp-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 4e14dc250167fed09969cea82b8291ce4bd9bf97
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 182dd2ef39a322c38497dd8b714945724bf5b12e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337520"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886751"
 ---
 # <a name="update-windowsmanagementapp"></a>WindowsManagementApp aktualisieren
 
@@ -35,10 +36,10 @@ PATCH /deviceAppManagement/windowsManagementApp
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [WindowsManagementApp](../resources/intune-devices-windowsmanagementapp.md) eine JSON-Darstellung.

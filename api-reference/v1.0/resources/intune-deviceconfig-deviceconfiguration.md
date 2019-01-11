@@ -2,12 +2,13 @@
 title: deviceConfiguration-Ressourcentyp
 description: Gerätekonfiguration.
 author: tfitzmac
-ms.openlocfilehash: 5624b52c4c92f49b5ce5300cd3e1abc45afe2e9a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 255826460a81544d27620807d569ce3857e1034e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311669"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884042"
 ---
 # <a name="deviceconfiguration-resource-type"></a>deviceConfiguration-Ressourcentyp
 
@@ -24,11 +25,11 @@ Gerätekonfiguration.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |lastModifiedDateTime|DateTimeOffset|DateTime der letzten Änderung des Objekts.|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts|
-|description|String|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration.|
-|displayName|String|Vom Administrator bereitgestellter Name der Gerätekonfiguration|
+|description|Zeichenfolge|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration.|
+|displayName|Zeichenfolge|Vom Administrator bereitgestellter Name der Gerätekonfiguration|
 |version|Int32|Version der Gerätekonfiguration.|
 
 ## <a name="relationships"></a>Beziehungen

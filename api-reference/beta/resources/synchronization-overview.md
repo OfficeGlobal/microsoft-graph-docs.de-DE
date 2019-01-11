@@ -1,12 +1,13 @@
 ---
 title: Azure AD-Synchronisierung API (Übersicht)
 description: ') können Sie die Erstellung automatisieren Wartung und Entfernen von Identitäten in cloud (Software als Dienst oder SaaS) Anwendungen wie Ablage, Vertriebs, ServiceNow und vieles mehr. Die Synchronisierung-APIs können in Microsoft Graph Sie programmgesteuert verwalten Identität Synchronisierung einschließlich:'
-ms.openlocfilehash: ff3acb00801c9b04b8257345b06100297e11710c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: aada94f39c67fb1174924d49c6e57650f4961cc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064792"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884686"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Azure AD-Synchronisierung API (Übersicht)
 
@@ -68,7 +69,7 @@ Im folgenden Beispiel wird gezeigt, wie Service principal-Objekt nach dem Anzeig
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
 ```
 
-**Response**
+**Antwort**
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -190,7 +191,7 @@ HTTP/1.1 200 OK
     "synchronizationRules": []
 }
 ```
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 * [Konfigurieren der Synchronisierung mit Verzeichnis Extension-Attribute](../resources/synchronization-configure-with-directory-extension-attributes.md)
 * [Konfigurieren der Synchronisierung mit benutzerdefinierten Ziel-Attribute](../resources/synchronization-configure-with-custom-target-attributes.md)

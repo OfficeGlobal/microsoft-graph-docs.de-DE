@@ -2,12 +2,13 @@
 title: Ressourcentyp contactFolder
 description: Ein Ordner, der Kontakte enthält.
 author: angelgolfer-ms
-ms.openlocfilehash: 4630547bdee34d6e012c3747dba248eef9f908b9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 14d7ddef1f8acae183e406f85582153905130cda
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320272"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886107"
 ---
 # <a name="contactfolder-resource-type"></a>Ressourcentyp contactFolder
 
@@ -36,9 +37,9 @@ Diese Ressource unterstützt die Verwendung einer [Delta-Abfrage](/graph/delta-q
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|displayName|String|Der Anzeigename des Ordners.|
-|id|String|Eindeutiger Bezeichner des Kontaktordners. Schreibgeschützt.|
-|parentFolderId|String|Die ID des übergeordneten Ordners des Ordners.|
+|displayName|Zeichenfolge|Der Anzeigename des Ordners.|
+|id|Zeichenfolge|Eindeutiger Bezeichner des Kontaktordners. Schreibgeschützt.|
+|parentFolderId|Zeichenfolge|Die ID des übergeordneten Ordners des Ordners.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
@@ -92,7 +93,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Verwenden einer Delta-Abfrage zum Nachverfolgen von Änderungen in Microsoft Graph-Daten](/graph/delta-query-overview)
 - [Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen](/graph/delta-query-messages)

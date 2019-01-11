@@ -1,12 +1,13 @@
 ---
 title: conversationThread aktualisieren
 description: Mit dieser API können Sie Threads sperren oder entsperren und so steuern, ob weiterhin in ihnen gepostet werden darf.
-ms.openlocfilehash: 0d9de78717aeb35afa5b114f07430d9fc3e5e8fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 49c5f26c9e7e995959b5d74f86d4a8a515708e24
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062696"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887521"
 ---
 # <a name="update-conversationthread"></a>conversationThread aktualisieren
 
@@ -30,7 +31,7 @@ PATCH /groups/{id}/conversations/{id}/threads/{id}
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json. Erforderlich.   |

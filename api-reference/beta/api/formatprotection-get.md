@@ -1,12 +1,13 @@
 ---
 title: FormatProtection abrufen
 description: Dient zum Abrufen der Eigenschaften und der Beziehungen des formatProtection-Objekts.
-ms.openlocfilehash: 341206df02f966d6458ed1812b33443e23e71daf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c8588e6fc33c1fe5b1bf761a6408b1e3d2f77b8f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060893"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883699"
 ---
 # <a name="get-formatprotection"></a>FormatProtection abrufen
 

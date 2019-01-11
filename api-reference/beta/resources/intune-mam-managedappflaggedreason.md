@@ -2,12 +2,13 @@
 title: ManagedAppFlaggedReason Enum-Typ
 description: Der Grund für den ein Benutzer markiert wurde
 author: tfitzmac
-ms.openlocfilehash: 395cd446863b88fade45c7160302cd05132f1d52
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 15c4041b4511ab71ac16520297d5c8bb3e63b4e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888039"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>ManagedAppFlaggedReason Enum-Typ
 
@@ -17,9 +18,9 @@ ms.locfileid: "27358422"
 
 Der Grund für den ein Benutzer markiert wurde
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Keine|0|Kein Problem.|
+|n/v|0|Kein Problem.|
 |rootedDevice|1|Die app-Registrierung wird auf einem Gerät Stamm/entsperrt ausgeführt.|
 
 

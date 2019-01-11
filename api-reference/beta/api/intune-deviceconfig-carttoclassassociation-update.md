@@ -2,12 +2,13 @@
 title: CartToClassAssociation aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines CartToClassAssociation-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 43b272a5fa2871daebbf7cfeea890ba0b9e204e8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da569d1452cff24b5e93d92eb96cbd5047fe6e0d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343015"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883993"
 ---
 # <a name="update-carttoclassassociation"></a>CartToClassAssociation aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [CartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) eine JSON-Darstellung.
@@ -47,12 +48,12 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität.|
+|id|Zeichenfolge|Schlüssel der Entität.|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
 |Version|Int32|Version der CartToClassAssociation.|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt).|
-|description|String|Admin bereitgestellte Beschreibung für die CartToClassAssociation.|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt).|
+|description|Zeichenfolge|Admin bereitgestellte Beschreibung für die CartToClassAssociation.|
 |deviceCartIds|Collection von Objekten des Typs „String“|Bezeichner des Geräts Toilettengebäude Klassen zugeordnet werden soll.|
 |classroomIds|Collection von Objekten des Typs „String“|Die IDs der Schulungsräume Gerät Toilettengebäude zugeordnet werden soll.|
 

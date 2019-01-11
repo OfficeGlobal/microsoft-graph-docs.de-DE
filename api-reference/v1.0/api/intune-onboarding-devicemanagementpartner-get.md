@@ -2,12 +2,13 @@
 title: deviceManagementPartner abrufen
 description: Lesen von Eigenschaften und Beziehungen des deviceManagementPartner-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 6ab545598d8cbdc985510e6d7bd87e6a9804c42e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5696ce5ad5a723ef7940c01353270fce50df2f2e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334041"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884231"
 ---
 # <a name="get-devicemanagementpartner"></a>deviceManagementPartner abrufen
 
@@ -37,8 +38,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

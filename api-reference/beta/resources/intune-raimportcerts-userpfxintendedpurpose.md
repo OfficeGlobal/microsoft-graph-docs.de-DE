@@ -2,12 +2,13 @@
 title: UserPfxIntendedPurpose Enum-Typ
 description: Werte für den beabsichtigten Zweck des eine PFX-Benutzerzertifikat unterstützt.
 author: tfitzmac
-ms.openlocfilehash: 285bf4b9d8cdca2ef477a7dde591ab373c600821
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 89d2402b0a652cdb94a392b5ec0b6997b972b6be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341328"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885862"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>UserPfxIntendedPurpose Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27341328"
 
 Werte für den beabsichtigten Zweck des eine PFX-Benutzerzertifikat unterstützt.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht zugewiesene|0|Noch nicht dokumentiert|
 |smimeEncryption|1|Noch nicht dokumentiert|

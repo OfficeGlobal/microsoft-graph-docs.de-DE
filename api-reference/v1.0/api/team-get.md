@@ -2,12 +2,13 @@
 title: Get-team
 description: Abrufen der Eigenschaften und Beziehungen zwischen dem angegebenen Team.
 author: nkramer
-ms.openlocfilehash: e91140b50a1120667a3df579d0e20144de776e59
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 3efec6e9b767d026d0a7626c2da257feaa20fde3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329036"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887080"
 ---
 # <a name="get-team"></a>Get-team
 
@@ -37,7 +38,7 @@ GET /teams/{id}
 Diese Methode unterstützt die $select und $erweitern [OData-Abfrageparameter](/graph/query-parameters) helfen, die Antwort anzupassen.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 
