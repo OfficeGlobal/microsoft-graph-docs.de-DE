@@ -2,30 +2,31 @@
 title: deviceEnrollmentWindowsHelloForBusinessConfiguration löschen
 description: Löscht ein deviceEnrollmentWindowsHelloForBusinessConfiguration-Objekt.
 author: tfitzmac
-ms.openlocfilehash: 7e2490006abfb2af82a1d39439dd2c829d73a52a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9896c891a7399f9931736688308f48259ee33d28
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344527"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849091"
 ---
-# <a name="delete-deviceenrollmentwindowshelloforbusinessconfiguration"></a><span data-ttu-id="16a65-103">deviceEnrollmentWindowsHelloForBusinessConfiguration löschen</span><span class="sxs-lookup"><span data-stu-id="16a65-103">Delete deviceEnrollmentWindowsHelloForBusinessConfiguration</span></span>
+# <a name="delete-deviceenrollmentwindowshelloforbusinessconfiguration"></a><span data-ttu-id="e7d1b-103">deviceEnrollmentWindowsHelloForBusinessConfiguration löschen</span><span class="sxs-lookup"><span data-stu-id="e7d1b-103">Delete deviceEnrollmentWindowsHelloForBusinessConfiguration</span></span>
 
-> <span data-ttu-id="16a65-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="16a65-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="16a65-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="16a65-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e7d1b-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="e7d1b-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e7d1b-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="e7d1b-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="16a65-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="16a65-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="e7d1b-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="e7d1b-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="16a65-107">Löscht ein [deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="16a65-107">Deletes a [deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="16a65-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="16a65-108">Prerequisites</span></span>
-<span data-ttu-id="16a65-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="16a65-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e7d1b-107">Löscht ein [deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="e7d1b-107">Deletes a [deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="e7d1b-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="e7d1b-108">Prerequisites</span></span>
+<span data-ttu-id="e7d1b-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e7d1b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="16a65-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="16a65-111">Permission type</span></span>|<span data-ttu-id="16a65-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="16a65-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="e7d1b-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="e7d1b-111">Permission type</span></span>|<span data-ttu-id="e7d1b-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="e7d1b-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="16a65-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="16a65-113">Delegated (work or school account)</span></span>|<span data-ttu-id="16a65-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="16a65-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="16a65-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="16a65-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="16a65-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="16a65-116">Not supported.</span></span>|
-|<span data-ttu-id="16a65-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="16a65-117">Application</span></span>|<span data-ttu-id="16a65-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="16a65-118">Not supported.</span></span>|
+|<span data-ttu-id="e7d1b-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="e7d1b-113">Delegated (work or school account)</span></span>|<span data-ttu-id="e7d1b-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e7d1b-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="e7d1b-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="e7d1b-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e7d1b-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="e7d1b-116">Not supported.</span></span>|
+|<span data-ttu-id="e7d1b-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="e7d1b-117">Application</span></span>|<span data-ttu-id="e7d1b-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="e7d1b-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="16a65-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="16a65-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e7d1b-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="e7d1b-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,27 +35,27 @@ ms.locfileid: "27344527"
 DELETE /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="16a65-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="16a65-120">Request headers</span></span>
-|<span data-ttu-id="16a65-121">Header</span><span class="sxs-lookup"><span data-stu-id="16a65-121">Header</span></span>|<span data-ttu-id="16a65-122">Wert</span><span class="sxs-lookup"><span data-stu-id="16a65-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e7d1b-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="e7d1b-120">Request headers</span></span>
+|<span data-ttu-id="e7d1b-121">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="e7d1b-121">Header</span></span>|<span data-ttu-id="e7d1b-122">Wert</span><span class="sxs-lookup"><span data-stu-id="e7d1b-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="16a65-123">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="16a65-123">Authorization</span></span>|<span data-ttu-id="16a65-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="16a65-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="16a65-125">Accept</span><span class="sxs-lookup"><span data-stu-id="16a65-125">Accept</span></span>|<span data-ttu-id="16a65-126">application/json</span><span class="sxs-lookup"><span data-stu-id="16a65-126">application/json</span></span>|
+|<span data-ttu-id="e7d1b-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e7d1b-123">Authorization</span></span>|<span data-ttu-id="e7d1b-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="e7d1b-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="e7d1b-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="e7d1b-125">Accept</span></span>|<span data-ttu-id="e7d1b-126">application/json</span><span class="sxs-lookup"><span data-stu-id="e7d1b-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="16a65-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="16a65-127">Request body</span></span>
-<span data-ttu-id="16a65-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="16a65-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e7d1b-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="e7d1b-127">Request body</span></span>
+<span data-ttu-id="e7d1b-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="e7d1b-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="16a65-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="16a65-129">Response</span></span>
-<span data-ttu-id="16a65-130">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="16a65-130">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="e7d1b-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="e7d1b-129">Response</span></span>
+<span data-ttu-id="e7d1b-130">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="e7d1b-130">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="16a65-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="16a65-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="16a65-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="16a65-132">Request</span></span>
-<span data-ttu-id="16a65-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="16a65-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e7d1b-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e7d1b-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="e7d1b-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="e7d1b-132">Request</span></span>
+<span data-ttu-id="e7d1b-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="e7d1b-133">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="16a65-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="16a65-134">Response</span></span>
-<span data-ttu-id="16a65-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="16a65-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="e7d1b-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="e7d1b-134">Response</span></span>
+<span data-ttu-id="e7d1b-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="e7d1b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

@@ -2,28 +2,29 @@
 title: Ereignis löschen
 description: Mit dieser API können Sie Ereignisse löschen.
 author: angelgolfer-ms
-ms.openlocfilehash: f5135d3359c91b78a20c26bed77c4ccc6cb2accd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8754e210e90300398dbd38ce5e391ae2410d8316
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311424"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848909"
 ---
-# <a name="delete-event"></a><span data-ttu-id="de06d-103">Ereignis löschen</span><span class="sxs-lookup"><span data-stu-id="de06d-103">Delete event</span></span>
+# <a name="delete-event"></a><span data-ttu-id="67edb-103">Ereignis löschen</span><span class="sxs-lookup"><span data-stu-id="67edb-103">Delete event</span></span>
 
-> <span data-ttu-id="de06d-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="de06d-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="de06d-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="de06d-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="67edb-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="67edb-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="67edb-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="67edb-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="de06d-106">Mit dieser API können Sie Ereignisse löschen.</span><span class="sxs-lookup"><span data-stu-id="de06d-106">Delete event.</span></span>
-## <a name="permissions"></a><span data-ttu-id="de06d-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="de06d-107">Permissions</span></span>
-<span data-ttu-id="de06d-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="de06d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="67edb-106">Mit dieser API können Sie Ereignisse löschen.</span><span class="sxs-lookup"><span data-stu-id="67edb-106">Delete event.</span></span>
+## <a name="permissions"></a><span data-ttu-id="67edb-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="67edb-107">Permissions</span></span>
+<span data-ttu-id="67edb-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="67edb-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="de06d-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="de06d-110">Permission type</span></span>      | <span data-ttu-id="de06d-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="de06d-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="67edb-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="67edb-110">Permission type</span></span>      | <span data-ttu-id="67edb-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="67edb-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="de06d-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="de06d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="de06d-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="de06d-113">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="de06d-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="de06d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="de06d-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="de06d-115">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="de06d-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="de06d-116">Application</span></span> | <span data-ttu-id="de06d-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="de06d-117">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="67edb-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="67edb-112">Delegated (work or school account)</span></span> | <span data-ttu-id="67edb-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="67edb-113">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="67edb-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="67edb-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="67edb-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="67edb-115">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="67edb-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="67edb-116">Application</span></span> | <span data-ttu-id="67edb-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="67edb-117">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="de06d-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="de06d-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="67edb-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="67edb-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/events/{id}
@@ -43,21 +44,21 @@ DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
 DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}
 DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="de06d-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="de06d-119">Request headers</span></span>
-| <span data-ttu-id="de06d-120">Name</span><span class="sxs-lookup"><span data-stu-id="de06d-120">Name</span></span>       | <span data-ttu-id="de06d-121">Typ</span><span class="sxs-lookup"><span data-stu-id="de06d-121">Type</span></span> | <span data-ttu-id="de06d-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="de06d-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="67edb-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="67edb-119">Request headers</span></span>
+| <span data-ttu-id="67edb-120">Name</span><span class="sxs-lookup"><span data-stu-id="67edb-120">Name</span></span>       | <span data-ttu-id="67edb-121">Typ</span><span class="sxs-lookup"><span data-stu-id="67edb-121">Type</span></span> | <span data-ttu-id="67edb-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="67edb-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="de06d-123">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="de06d-123">Authorization</span></span>  | <span data-ttu-id="de06d-124">string</span><span class="sxs-lookup"><span data-stu-id="de06d-124">string</span></span>  | <span data-ttu-id="de06d-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="de06d-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="67edb-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="67edb-123">Authorization</span></span>  | <span data-ttu-id="67edb-124">string</span><span class="sxs-lookup"><span data-stu-id="67edb-124">string</span></span>  | <span data-ttu-id="67edb-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="67edb-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="de06d-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="de06d-127">Request body</span></span>
-<span data-ttu-id="de06d-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="de06d-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="67edb-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="67edb-127">Request body</span></span>
+<span data-ttu-id="67edb-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="67edb-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="de06d-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="de06d-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="67edb-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="67edb-129">Response</span></span>
 
-<span data-ttu-id="de06d-p104">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="de06d-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="67edb-p104">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="67edb-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="de06d-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="de06d-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="de06d-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="de06d-133">Request</span></span>
-<span data-ttu-id="de06d-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="de06d-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="67edb-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="67edb-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="67edb-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="67edb-133">Request</span></span>
+<span data-ttu-id="67edb-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="67edb-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_event"
@@ -65,8 +66,8 @@ DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ```http
 DELETE https://graph.microsoft.com/beta/me/events/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="de06d-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="de06d-135">Response</span></span>
-<span data-ttu-id="de06d-136">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="de06d-136">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="67edb-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="67edb-135">Response</span></span>
+<span data-ttu-id="67edb-136">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="67edb-136">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
