@@ -2,12 +2,13 @@
 title: WindowsAutopilotProfileAssignmentDetailedStatus Enum-Typ
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: aa8d5e32720f7c2d6666085edd554f9dd7599b01
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b8aef05c73fdedec5378a2b2ba5e40e4d52663c4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357806"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827265"
 ---
 # <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>WindowsAutopilotProfileAssignmentDetailedStatus Enum-Typ
 
@@ -17,9 +18,9 @@ ms.locfileid: "27357806"
 
 Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Keine|0|Keine Zuweisung detaillierter status|
+|n/v|0|Keine Zuweisung detaillierter status|
 |hardwareRequirementsNotMet|1|Die Hardware sind nicht erfüllt. Dies kann vorkommen, wenn ein Self Bereitstellen von AutoPilot Profil zu einem Gerät ohne TPM 2.0 zugewiesen ist.|
 
 

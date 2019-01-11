@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp cloudAppSecurityState
 description: Statusinformationen über die Cloudanwendung (DestinationServiceName, DestinationServiceIp) enthält.
-ms.openlocfilehash: 915044c3084e3d9a9435d602ecc7ec809d2168f2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ff76adf1d3879c3dac3f19ae122d82c9523d5193
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019783"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876804"
 ---
 # <a name="cloudappsecuritystate-resource-type"></a>Ressourcentyp cloudAppSecurityState
 

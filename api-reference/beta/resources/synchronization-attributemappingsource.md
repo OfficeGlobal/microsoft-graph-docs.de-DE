@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp attributeMappingSource
 description: 'Definiert, wie ein Wert sein sollte extrahiert haben (oder transformiert), aus dem Quellobjekt. Beispielsweise kann ein einfaches Wert aus einem gegebenen Attribut für das Quellobjekt sein oder einen komplexeren Ausdruck Zeichenfolge Verkettung/Extraction/Ersatz von basierend auf verschiedene Attribute für Datenquellen sind möglich. '
-ms.openlocfilehash: aeb39c829d7be081fe9ee08aa5845e6ced1194dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a7c1493f27f34230d4305fe95b2d2f03a5ad25e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061491"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825011"
 ---
 # <a name="attributemappingsource-resource-type"></a>Ressourcentyp attributeMappingSource
 
@@ -21,7 +22,7 @@ Definiert, wie ein Wert sein sollte extrahiert haben (oder transformiert), aus d
 |Ausdruck             |String                     |Entsprechende Ausdruck Darstellung dieses **AttributeMappingSource** -Objekts.|
 |name                   |String                     |Name-Parameter der Zuordnungsquelle. Je nach der Wert der **Type** -Eigenschaft kann dies der Name der Funktion, die den Namen der Source-Attribut oder einen konstanten Wert geeignet sein. |
 |parameters             |[StringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) -Auflistung | Wenn dieses Objekt eine Funktion darstellt, werden Funktionsparameter aufgelistet. Parameter bestehen aus **AttributeMappingSource** Objekte selbst komplexe Ausdrücke zulassen. **Typ** ist nicht `Function`, wird diese Eigenschaft Array Null/leer sein. |
-|Typ                   | String                    |Der Typ des in diesem Attribut Zuordnungsquelle. Mögliche Werte sind: `Attribute`, `Constant` und `Function`. Der Standardwert lautet `Attribute`.| 
+|type                   | String                    |Der Typ des in diesem Attribut Zuordnungsquelle. Mögliche Werte sind: `Attribute`, `Constant` und `Function`. Der Standardwert lautet `Attribute`.| 
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

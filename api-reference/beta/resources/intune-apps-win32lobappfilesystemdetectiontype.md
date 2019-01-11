@@ -2,12 +2,13 @@
 title: win32LobAppFileSystemDetectionType Enum-Typ
 description: Enthält alle unterstützten Erkennung Typ des Dateisystems.
 author: tfitzmac
-ms.openlocfilehash: 240d5e93400ce44dca97d72688e3e5ae9f386278
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1748b98732e77c8da7360dbd7a4474235da31925
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354012"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846564"
 ---
 # <a name="win32lobappfilesystemdetectiontype-enum-type"></a>win32LobAppFileSystemDetectionType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27354012"
 
 Enthält alle unterstützten Erkennung Typ des Dateisystems.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Nicht konfiguriert.|
 |vorhanden ist|1|Gibt an, ob die angegebene Datei oder ein Ordner vorhanden.|

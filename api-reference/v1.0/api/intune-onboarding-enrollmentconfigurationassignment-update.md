@@ -2,12 +2,13 @@
 title: enrollmentConfigurationAssignment aktualisieren
 description: Aktualisieren der Eigenschaften eines enrollmentConfigurationAssignment-Objekts.
 author: tfitzmac
-ms.openlocfilehash: c05856fbdcd3f5930ac5c40b10c53c7dedbc97ef
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2e6d23c54f0864772ccc75b6dc63078dc5abf361
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339564"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875929"
 ---
 # <a name="update-enrollmentconfigurationassignment"></a>enrollmentConfigurationAssignment aktualisieren
 
@@ -33,10 +34,10 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) an.

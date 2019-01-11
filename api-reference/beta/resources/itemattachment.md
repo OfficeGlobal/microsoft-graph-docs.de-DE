@@ -1,12 +1,13 @@
 ---
 title: itemAttachment-Ressourcentyp
 description: Ein Kontakt, ein Ereignis oder eine Nachricht, die mit einem anderen Ereignis zugeordnet ist,
-ms.openlocfilehash: fd8638a7d263c2ebbe09c77f717af989e1dd5a0e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f7372db19a545bd7d6ae39121fd14be4c9f4436b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063568"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825004"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment-Ressourcentyp
 
@@ -28,7 +29,7 @@ Abgeleitet von [attachment](attachment.md).
 |:---------------|:--------|:----------|
 |contentType|String|Der Inhaltstyp der Anlage.|
 |id|String| Die Anlagen-ID.|
-|isInline|Boolescher Wert|Legen Sie diesen auf „true“ fest, wenn es sich um eine Inlineanlage handelt, z. B. ein eingebettetes Bild innerhalb des Textkörpers des Elements.|
+|isInline|Boolean|Legen Sie diesen auf „true“ fest, wenn es sich um eine Inlineanlage handelt, z. B. ein eingebettetes Bild innerhalb des Textkörpers des Elements.|
 |lastModifiedDateTime|DateTimeOffset|Letzte Uhrzeit und letztes Datum der Änderung der Anlage.|
 |name|String|Der Anzeigename der Anlage.|
 |size|Int32|Die Größe der Anlage in Byte.|

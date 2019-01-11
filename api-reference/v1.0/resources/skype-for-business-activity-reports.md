@@ -1,12 +1,13 @@
 ---
 title: Skype for Business-Aktivitätsberichte
 description: Sie können die Skype für Business-Aktivitätsberichte verwenden, um Details über die Aktivitäten in Ihrer Organisation zu erhalten. Diese Details können Ihnen bei der Suche, Planung und Durchführung anderer Geschäftsentscheidungen innerhalb Ihrer Organisation helfen.
-ms.openlocfilehash: b2a60303364a611d3a103d9f3fec076bf960c8b1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 775c8d77399369fba5c2a333f7be85d80c16cd4d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019655"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825711"
 ---
 # <a name="skype-for-business-activity-reports"></a>Skype for Business-Aktivitätsberichte
 

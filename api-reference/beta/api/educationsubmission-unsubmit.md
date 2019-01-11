@@ -2,12 +2,13 @@
 title: 'EducationSubmission: unsubmit'
 description: 'Eine Aktion, die angibt, dass auf der Übermittlung der Zuordnung arbeiten, nachdem sie, in aktiviert wurde ein Schüler möchte. Diese Aktion kann nur durch die Student übernommen werden. '
 author: dipakboyed
-ms.openlocfilehash: a61f2e9c05691266ae9248ca95700f173e0ee0b0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 853dce22c7c79ffda7b823794259fa7be0363d02
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304228"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829218"
 ---
 # <a name="educationsubmission-unsubmit"></a>EducationSubmission: unsubmit
 
@@ -31,7 +32,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

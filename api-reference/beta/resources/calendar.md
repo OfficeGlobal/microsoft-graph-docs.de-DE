@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp calendar
 description: Ein Kalender, der ein Container für Ereignisse ist. Dies kann ein Kalender für einen Benutzer oder der Standardkalender einer Office 365-Gruppe sein.
-ms.openlocfilehash: 90be98acace678b45626f812150362dfeed1f52d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: baa681d57109654aa29eed11cef4768d1599ba13
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065900"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830674"
 ---
 # <a name="calendar-resource-type"></a>Ressourcentyp calendar
 
@@ -42,16 +43,16 @@ Ein Kalender, der ein Container für Ereignisse ist. Dies kann ein Kalender für
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|canEdit |Boolescher Wert |„True“, wenn der Benutzer in den Kalender schreiben kann, andernfalls „false“. Diese Eigenschaft ist für den Benutzer, der den Kalender erstellt hat, „true“. Diese Eigenschaft ist auch für einen Benutzer „true“, für den ein Kalender freigegeben wurde und der Schreibzugriff hat. |
-|canShare |Boolescher Wert |„True“, wenn der Benutzer die Berechtigung zum Freigeben des Kalenders hat, andernfalls „false“. Nur der Benutzer, der den Kalender erstellt hat, kann ihn freigeben. |
+|canEdit |Boolean |„True“, wenn der Benutzer in den Kalender schreiben kann, andernfalls „false“. Diese Eigenschaft ist für den Benutzer, der den Kalender erstellt hat, „true“. Diese Eigenschaft ist auch für einen Benutzer „true“, für den ein Kalender freigegeben wurde und der Schreibzugriff hat. |
+|canShare |Boolean |„True“, wenn der Benutzer die Berechtigung zum Freigeben des Kalenders hat, andernfalls „false“. Nur der Benutzer, der den Kalender erstellt hat, kann ihn freigeben. |
 |canViewPrivateItems |Boolean |„True“, wenn der Benutzer Elemente im Kalender lesen kann, die als „privat“ markiert wurden, andernfalls „false“. |
 |changeKey|Zeichenfolge|Gibt die Version des Kalenderobjekts an. Jedes Mal, wenn der Kalender geändert wird, wird auch „changeKey“ geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen. Schreibgeschützt.|
 |color|String|Gibt das Farbdesign an, um den Kalender von anderen Kalendern in einer Benutzeroberfläche zu unterscheiden. Die Eigenschaftswerte sind: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |hexColor|String|Eine Farbe, die im Kalender darstellt. Die Farbe wird durch eine hexadezimale Zahl 6 Ziffern, 3-Byte dargestellt. Jedes Byte stellt einen der Rot-, Grün- und blauen-Komponenten der Farbe im Bereich 00 bis FF in hexadezimaler Schreibweise dar. |
 |id|String|Eindeutiger Bezeichner für die Gruppe. Schreibgeschützt.|
-|isDefaultCalendar|Boolesch|True, wenn der Kalender ist anderweitig des Benutzers Standardkalender, false.|
+|isDefaultCalendar|Boolean|True, wenn der Kalender ist anderweitig des Benutzers Standardkalender, false.|
 |isShared |Boolean |True, wenn der Benutzer den Kalender mit anderen Benutzern false andernfalls freigegeben hat. Da nur der Benutzer, die der Kalender erstellt freigegeben werden kann, **IsShared** und **IsSharedWithMe** true für denselben Benutzer nicht möglich. |
-|isSharedWithMe |Boolesch |True, wenn der Benutzer diesen Kalender, false, andernfalls freigegeben. Diese Eigenschaft ist immer false für einen Kalenderbesitzer.  |
+|isSharedWithMe |Boolean |True, wenn der Benutzer diesen Kalender, false, andernfalls freigegeben. Diese Eigenschaft ist immer false für einen Kalenderbesitzer.  |
 |name|String|Der Kalendername.|
 |owner |[emailAddress](emailaddress.md) | Wenn festgelegt, stellt dies den Benutzer dar, der den Kalender erstellt oder hinzugefügt hat. Für einen Kalender, den der Benutzer erstellt oder hinzugefügt hat, wird die Eigenschaft **owner** auf den Benutzer festgelegt. Für einen Kalender, der für den Benutzer freigegeben wurde, wird die Eigenschaft **owner** auf die Person festgelegt, die den Kalender für den Benutzer freigegeben hat. |
 

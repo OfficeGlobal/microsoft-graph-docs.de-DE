@@ -1,12 +1,13 @@
 ---
 title: Bookingstaffmember aktualisieren
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: 99501f31ccd2b810d6a0c7f836d5b70bb98f223b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4ba2ea126f916b6bd91b83bdd81e24d30fae8ac4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059123"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824983"
 ---
 # <a name="update-bookingstaffmember"></a>Bookingstaffmember aktualisieren
 
@@ -37,12 +38,12 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Boolesch|True gibt an, wenn der Mitarbeiter Office 365-Benutzer ist, die API Buchungen der Mitarbeiter persönlichen Kalender in Office 365 sowie die **WorkingHours** -Eigenschaft verwendet, um Verfügbarkeit zu ermitteln. |
+|availabilityIsAffectedByPersonalCalendar|Boolean|True gibt an, wenn der Mitarbeiter Office 365-Benutzer ist, die API Buchungen der Mitarbeiter persönlichen Kalender in Office 365 sowie die **WorkingHours** -Eigenschaft verwendet, um Verfügbarkeit zu ermitteln. |
 |colorIndex|Int32|Identifiziert eine Farbe, um die Mitarbeiter darstellen. Die Farbe entspricht der Farbpalette in der Detailseite für **Mitarbeiter** in der app Buchungen.|
 |displayName|String|Der Name des Mitarbeiters, wie Kunden angezeigt.|
 |emailAddress|String|Die e-Mail-Adresse des Mitarbeiters. Dies kann in der gleichen Office 365-Mandanten als das Unternehmen oder in eine andere e-Mail-Domäne sein. Diese e-Mail-Adresse wird verwendet, wenn die **SendConfirmationsToOwner** -Eigenschaft festgelegt ist, auf "true" in der scheduling Richtlinie des Unternehmens.|
 |role|string| Die Rolle des Mitarbeiters im Unternehmen. Mögliche Werte: sind `guest`, `administrator`, `viewer` und `externalGuest`.|
-|useBusinessHours|Boolesch|"True" bedeutet, dass die Mitarbeiter Verfügbarkeit durch die **BusinessHours** -Eigenschaft des Unternehmens bestimmt wird. False bedeutet, dass die Verfügbarkeit durch die Einstellung für die Mitarbeiter **WorkingHouse** -Eigenschaft bestimmt wird.|
+|useBusinessHours|Boolean|"True" bedeutet, dass die Mitarbeiter Verfügbarkeit durch die **BusinessHours** -Eigenschaft des Unternehmens bestimmt wird. False bedeutet, dass die Verfügbarkeit durch die Einstellung für die Mitarbeiter **WorkingHouse** -Eigenschaft bestimmt wird.|
 |workingHours|[BookingWorkHours](../resources/bookingworkhours.md) -Auflistung|Der Bereich der Stunden jeden Tag der Woche, die der Mitarbeiter für buchen verfügbar ist.|
 
 ## <a name="response"></a>Antwort

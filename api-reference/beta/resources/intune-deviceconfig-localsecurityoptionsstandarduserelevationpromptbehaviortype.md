@@ -2,12 +2,13 @@
 title: LocalSecurityOptionsStandardUserElevationPromptBehaviorType Enum-Typ
 description: Mögliche Werte für LocalSecurityOptionsStandardUserElevationPromptBehavior
 author: tfitzmac
-ms.openlocfilehash: fcd5e4794fd1b8ea2887c744201f4804a003f3e3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 29b6e3d25450420eec63ff2d574dfc5c0f23fd8a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303591"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877105"
 ---
 # <a name="localsecurityoptionsstandarduserelevationpromptbehaviortype-enum-type"></a>LocalSecurityOptionsStandardUserElevationPromptBehaviorType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27303591"
 
 Mögliche Werte für LocalSecurityOptionsStandardUserElevationPromptBehavior
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Nicht konfiguriert|
 |automaticallyDenyElevationRequests|1|Ablehnen Sie automatisch Elevation-Anforderungen|

@@ -2,12 +2,13 @@
 title: Ressourcentyp meetingCapability
 description: Enthält die Funktionen einer Besprechung
 author: VinodRavichandran
-ms.openlocfilehash: 1a6f172922c0efbc9ad93e32141e364e2d0fc711
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 3a7f291c81522d33bffbcce6e97a407f09234db5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380247"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825809"
 ---
 # <a name="meetingcapability-resource-type"></a>Ressourcentyp meetingCapability
 
@@ -19,8 +20,8 @@ Enthält die Funktionen einer Besprechung
 
 | Eigenschaft                          | Typ    | Beschreibung                                                        |
 |:----------------------------------|:--------|:-------------------------------------------------------------------|
-| allowAnonymousUsersToDialOut      | Boolescher Wert | Gibt an, ob anonyme Benutzer als Client-Anschluss in einer Besprechung zulässig ist. |
-| allowAnonymousUsersToStartMeeting | Boolescher Wert | Gibt an, ob anonyme Benutzer zugelassen sind, um eine Besprechung zu starten.  |
+| allowAnonymousUsersToDialOut      | Boolean | Gibt an, ob anonyme Benutzer als Client-Anschluss in einer Besprechung zulässig ist. |
+| allowAnonymousUsersToStartMeeting | Boolean | Gibt an, ob anonyme Benutzer zugelassen sind, um eine Besprechung zu starten.  |
 | autoAdmittedUsers                 | String  | Mögliche Werte: `everyoneInCompany`, `everyone`.              |
 
 ## <a name="json-representation"></a>JSON-Darstellung

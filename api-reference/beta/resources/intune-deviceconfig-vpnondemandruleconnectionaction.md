@@ -2,12 +2,13 @@
 title: VpnOnDemandRuleConnectionAction Enum-Typ
 description: VPN auf Abruf Verbindung Regelaktion.
 author: tfitzmac
-ms.openlocfilehash: e647f0e32845d9de0209d8acdb42ebe4397176e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a6f89cee571182330164456f40c23443652bcb40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317255"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869559"
 ---
 # <a name="vpnondemandruleconnectionaction-enum-type"></a>VpnOnDemandRuleConnectionAction Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27317255"
 
 VPN auf Abruf Verbindung Regelaktion.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |connect|0|Eine Verbindung herstellen.|
 |evaluateConnection|1|Bewerten der Verbindung.|

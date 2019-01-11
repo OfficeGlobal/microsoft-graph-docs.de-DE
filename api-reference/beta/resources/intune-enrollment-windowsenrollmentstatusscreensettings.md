@@ -2,12 +2,13 @@
 title: Ressourcentyp windowsEnrollmentStatusScreenSettings
 description: Registrierung Status Bildschirm Einstellung
 author: tfitzmac
-ms.openlocfilehash: 8ccf2565d722a09de5f08ebe7333436729ce1b2e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7263fdd8ab3d9a39d5081322c62cfcf76a4c7aa0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346928"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877448"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>Ressourcentyp windowsEnrollmentStatusScreenSettings
 
@@ -19,13 +20,13 @@ Registrierung Status Bildschirm Einstellung
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|hideInstallationProgress|Boolesch|Zeigen Sie an oder blenden Sie des installationsfortschritts für Benutzer aus|
-|allowDeviceUseBeforeProfileAndAppInstallComplete|Boolesch|Zulassen Sie oder blockieren Sie Benutzer für die Verwendung von Gerät vor dem Profil- und app-Installation abgeschlossen|
-|blockDeviceSetupRetryByUser|Boolesch|Ermöglicht es dem Benutzer, das von Setup auf Installationsfehler wiederholen|
-|allowLogCollectionOnInstallFailure|Boolesch|Zulassen Sie oder blockieren Sie Log-Auflistung auf Installationsfehler|
+|hideInstallationProgress|Boolean|Zeigen Sie an oder blenden Sie des installationsfortschritts für Benutzer aus|
+|allowDeviceUseBeforeProfileAndAppInstallComplete|Boolean|Zulassen Sie oder blockieren Sie Benutzer für die Verwendung von Gerät vor dem Profil- und app-Installation abgeschlossen|
+|blockDeviceSetupRetryByUser|Boolean|Ermöglicht es dem Benutzer, das von Setup auf Installationsfehler wiederholen|
+|allowLogCollectionOnInstallFailure|Boolean|Zulassen Sie oder blockieren Sie Log-Auflistung auf Installationsfehler|
 |customErrorMessage|String|Legen Sie benutzerdefinierte Fehlermeldung nach einem Installationsfehler anzeigen|
 |installProgressTimeoutInMinutes|Int32|Legen Sie die Installation des Fortschritts Timeout in Minuten|
-|allowDeviceUseOnInstallFailure|Boolesch|Ermöglicht es dem Benutzer weiterhin verwenden das Gerät auf Installationsfehler|
+|allowDeviceUseOnInstallFailure|Boolean|Ermöglicht es dem Benutzer weiterhin verwenden das Gerät auf Installationsfehler|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

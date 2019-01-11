@@ -1,12 +1,13 @@
 ---
 title: Verwendungsberichte für Skype for Business-Gerät
 description: Erhalten Sie Informationen über die Arten von Clients und Geräten, die verwendet werden in Ihrer Organisation. Diese Details sind sehr hilfreich, wenn Sie andere Geschäftsentscheidungen für Ihre Organisation in Erwägung ziehen, planen und durchführen.
-ms.openlocfilehash: 7b77a78026475f8690f5ea47cc70db86b654450f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9b9d0204bb7536f0a567aef006ed48a38cb6fe29
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063542"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825018"
 ---
 # <a name="skype-for-business-device-usage-reports"></a>Verwendungsberichte für Skype for Business-Gerät
 

@@ -2,12 +2,13 @@
 title: Ressourcentyp windowsPhone81AppXBundle
 description: Enthält Eigenschaften und geerbten Eigenschaften für Windows Phone 8.1 AppX Bundle Line Of Business apps.
 author: tfitzmac
-ms.openlocfilehash: 76bdf536ba7b895e347555fbd84d4af23bde3ff9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c12bcc3afa8e7e7e681c786f5a24e9448ba3e18a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331283"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825032"
 ---
 # <a name="windowsphone81appxbundle-resource-type"></a>Ressourcentyp windowsPhone81AppXBundle
 
@@ -25,7 +26,7 @@ Erbt vom [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)
 |[Liste windowsPhone81AppXBundles](../api/intune-apps-windowsphone81appxbundle-list.md)|[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md) -Auflistung|Listeneigenschaften und Beziehungen der [windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md) -Objekte.|
 |[Abrufen von windowsPhone81AppXBundle](../api/intune-apps-windowsphone81appxbundle-get.md)|[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)|Lesen Sie Eigenschaften und Beziehungen des [windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md) -Objekts.|
 |[Erstellen von windowsPhone81AppXBundle](../api/intune-apps-windowsphone81appxbundle-create.md)|[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)|Erstellen eines neuen [windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md) -Objekts.|
-|[WindowsPhone81AppXBundle löschen](../api/intune-apps-windowsphone81appxbundle-delete.md)|Keines|Löscht eine [windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md).|
+|[WindowsPhone81AppXBundle löschen](../api/intune-apps-windowsphone81appxbundle-delete.md)|Keine|Löscht eine [windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md).|
 |[WindowsPhone81AppXBundle aktualisieren](../api/intune-apps-windowsphone81appxbundle-update.md)|[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)|Aktualisieren Sie die Eigenschaften eines [windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
@@ -38,7 +39,7 @@ Erbt vom [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Das große Symbol, das in den App-Details angezeigt und für den Upload des Symbols verwendet werden soll. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|isFeatured|Boolescher Wert|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|isFeatured|Boolean|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |privacyInformationUrl|String|URL zur Datenschutzerklärung. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |informationUrl|String|URL zur Seite mit weiteren Informationen. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|String|Der Besitzer der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|

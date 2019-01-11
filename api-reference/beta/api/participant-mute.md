@@ -2,12 +2,13 @@
 title: 'Teilnehmer: stumm schalten'
 description: Stummschalten eines bestimmten Teilnehmers in den Anruf.
 author: VinodRavichandran
-ms.openlocfilehash: 99a993ae67bb7b3cf49d1a4a9a50fd7cb9aee894
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: ab8c0ee24b1175a77ad157f51437a29b99404392
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380233"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808225"
 ---
 # <a name="participant-mute"></a>Teilnehmer: stumm schalten
 
@@ -22,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | :-------------- | :------------------------------------------ |
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt        |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt        |
-| Application     | Keine                                        |
+| Anwendung     | Keine                                        |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +42,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
-|clientContext|Zeichenfolge|Der Clientkontext.|
+|clientContext|String|Der Clientkontext.|
 
 ## <a name="response"></a>Antwort
 Wenn der Vorgang erfolgreich war, gibt diese Methode `200 OK` Antwortobjekt Code und [CommsOperation](../resources/commsoperation.md) im Antworttext.

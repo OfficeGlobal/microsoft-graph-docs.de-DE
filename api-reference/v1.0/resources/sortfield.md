@@ -1,12 +1,13 @@
 ---
 title: SortField-Ressourcentyp
 description: Stellt eine Bedingung in einem Sortiervorgang dar.
-ms.openlocfilehash: b6fc87e03b63a3e1cc34beef61a7538a913a118a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2c1b9a272fd024455d1297c5f59ca7684283e1a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018843"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825970"
 ---
 # <a name="sortfield-resource-type"></a>SortField-Ressourcentyp
 

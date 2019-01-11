@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp androidManagedStoreAppConfiguration
 description: Enthält Eigenschaften, geerbten Eigenschaften und Aktionen für Android Enterprise mobile app Konfigurationen.
-ms.openlocfilehash: e9e92065d46d311f3e6891f9dc13fa0ab60ff2b3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 53d8ad4e566bac9d96c467e459ac08bc2e4d011d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059812"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866353"
 ---
 # <a name="androidmanagedstoreappconfiguration-resource-type"></a>Ressourcentyp androidManagedStoreAppConfiguration
 
@@ -24,7 +25,7 @@ Erbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-managedd
 |[Liste androidManagedStoreAppConfigurations](../api/intune-apps-androidmanagedstoreappconfiguration-list.md)|[AndroidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) -Auflistung|Listeneigenschaften und Beziehungen der [AndroidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) -Objekte.|
 |[Abrufen von androidManagedStoreAppConfiguration](../api/intune-apps-androidmanagedstoreappconfiguration-get.md)|[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Lesen Sie Eigenschaften und Beziehungen des [AndroidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) -Objekts.|
 |[Erstellen von androidManagedStoreAppConfiguration](../api/intune-apps-androidmanagedstoreappconfiguration-create.md)|[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Erstellen eines neuen [AndroidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) -Objekts.|
-|[AndroidManagedStoreAppConfiguration löschen](../api/intune-apps-androidmanagedstoreappconfiguration-delete.md)|Keines|Löscht eine [AndroidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md).|
+|[AndroidManagedStoreAppConfiguration löschen](../api/intune-apps-androidmanagedstoreappconfiguration-delete.md)|Keine|Löscht eine [AndroidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md).|
 |[AndroidManagedStoreAppConfiguration aktualisieren](../api/intune-apps-androidmanagedstoreappconfiguration-update.md)|[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Aktualisieren Sie die Eigenschaften eines [AndroidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

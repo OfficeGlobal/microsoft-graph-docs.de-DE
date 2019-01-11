@@ -2,12 +2,13 @@
 title: Erstellen von importedDeviceIdentityResult
 description: Erstellen eines neuen ImportedDeviceIdentityResult-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 2613cd100ccb1803464907821d56eb75fc4024fb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d5c9494b4170493ef25bee0d72091c49ecde098d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359717"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829442"
 ---
 # <a name="create-importeddeviceidentityresult"></a>Erstellen von importedDeviceIdentityResult
 
@@ -35,10 +36,10 @@ POST /deviceManagement/importedDeviceIdentities
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt ImportedDeviceIdentityResult eine JSON-Darstellung.
@@ -56,7 +57,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |description|String|Die Beschreibung des Geräts Inherited aus [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Der Zustand des Geräts in Intune geerbt von [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Mögliche Werte sind: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted` und `blocked`.|
 |Plattform|[Plattform](../resources/intune-enrollment-platform.md)|Die Plattform des Geräts. Geerbt von [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Mögliche Werte sind: `unknown`, `ios`, `android`, `windows`, `windowsMobile` und `macOS`.|
-|status|Boolesch|Status der importierten Gerät Identität|
+|status|Boolean|Status der importierten Gerät Identität|
 
 
 

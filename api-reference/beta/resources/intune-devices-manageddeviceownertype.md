@@ -2,12 +2,13 @@
 title: ManagedDeviceOwnerType Enum-Typ
 description: Besitzertyp des Geräts.
 author: tfitzmac
-ms.openlocfilehash: 36f004c77511a26bf063206b5dcd85d288a2b13b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 28a85cf3c74fe5c7d2d56136c85088a2a9d1ec1a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354250"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848223"
 ---
 # <a name="manageddeviceownertype-enum-type"></a>ManagedDeviceOwnerType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27354250"
 
 Besitzertyp des Geräts.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannt.|
 |company|1|Unternehmen gehören.|

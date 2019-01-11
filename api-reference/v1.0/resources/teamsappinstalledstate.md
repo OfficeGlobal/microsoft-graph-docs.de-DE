@@ -1,13 +1,14 @@
 ---
-title: Members
+title: Mitglieder
 description: Wird den aktuelle Installationsstatus von einer TeamsApp beschrieben.
 author: nkramer
-ms.openlocfilehash: 52da05b61d1ef94f1dbc9b799c53b39049205fb7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: db2b21dc63399031f129ab06273c6cc1aef7928e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346354"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826173"
 ---
 #<a name="teamsappinstalledstate-enum-type"></a>TeamsAppInstalledState Enum-Typ
 
@@ -17,7 +18,7 @@ Wird den aktuelle Installationsstatus von einer [TeamsApp](teamsapp.md)beschrieb
 
 ## <a name="members"></a>Elemente
 
-| Member | Wert| Beschreibung |
+| Element | Wert| Beschreibung |
 |:---------------|:--------|:----------|
 |notInstalled|0|App wird an das Team nicht installiert.|
 |installiert|1|App wird normalerweise installiert.|

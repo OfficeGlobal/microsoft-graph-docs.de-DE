@@ -2,12 +2,13 @@
 title: Abrufen von „androidManagedAppProtection“
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs androidManagedAppProtection.
 author: tfitzmac
-ms.openlocfilehash: 1342ae17333f86b7512ffbc4af1f8d97cce6cbfa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 40fc43036a4bd6deed7d4bb7f05eb9d6866b9fae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330135"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825039"
 ---
 # <a name="get-androidmanagedappprotection"></a>Abrufen von „androidManagedAppProtection“
 
@@ -35,10 +36,10 @@ GET /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtecti
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

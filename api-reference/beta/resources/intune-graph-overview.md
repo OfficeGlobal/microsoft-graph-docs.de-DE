@@ -2,12 +2,13 @@
 title: Verwenden der Graph-API für Intune
 description: " Hybridbereitstellungen Intune werden nicht unterstützt. "
 author: tfitzmac
-ms.openlocfilehash: cecce61dba0ddfc044c2e06e0e16d68401fcafb5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 606c2324476492f8dc9271646d0109bb3d57de99
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357246"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869713"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Arbeiten mit Intune in Microsoft Graph  
 

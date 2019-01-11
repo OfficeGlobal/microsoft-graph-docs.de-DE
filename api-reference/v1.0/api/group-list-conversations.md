@@ -2,12 +2,13 @@
 title: Unterhaltungen auflisten
 description: Mit dieser API können Sie eine Liste aller Unterhaltungen in einer Gruppe abrufen.
 author: dkershaw10
-ms.openlocfilehash: 81b5b8deb9389d5aff6be9e537bb65ef43d366b9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6bd3e82f4da42a0d975366e9c1540d4ac78e38ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321399"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829799"
 ---
 # <a name="list-conversations"></a>Unterhaltungen auflisten
 Mit dieser API können Sie eine Liste aller [Unterhaltungen](../resources/conversation.md) in einer Gruppe abrufen.
@@ -31,7 +32,7 @@ GET /groups/{id}/conversations
 Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

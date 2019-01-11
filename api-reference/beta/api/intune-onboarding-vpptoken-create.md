@@ -2,12 +2,13 @@
 title: VppToken erstellen
 description: Erstellen Sie ein neues VppToken-Objekt.
 author: tfitzmac
-ms.openlocfilehash: ab4c4c061f7a527583768382f309ef8c9adcb709
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 015cb03b806d3cd4fc79f690c4ad5e1aa11a072a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353004"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846921"
 ---
 # <a name="create-vpptoken"></a>VppToken erstellen
 
@@ -35,10 +36,10 @@ POST /deviceAppManagement/vppTokens
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des vppToken-Objekts an.
@@ -60,10 +61,10 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Aktueller Synchronisierungsstatus seit der letzten Synchronisierung der Anwendung, die mit dem Apple Volume Purchase Program-Token durchgeführt wurde. Mögliche Werte sind: `none`, `inProgress`, `completed`, `failed`. Mögliche Werte sind: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Angabe, ob Anwendungen für das VPP-Token automatisch aktualisiert werden.|
 |countryOrRegion|String|Angabe, ob Anwendungen für das VPP-Token automatisch aktualisiert werden.|
-|dataSharingConsentGranted|Boolesch|Stimmen Sie für Datenfreigaben über die Apple Volume Purchase Program gewährt.|
+|dataSharingConsentGranted|Boolean|Stimmen Sie für Datenfreigaben über die Apple Volume Purchase Program gewährt.|
 |displayName|String|Ein Administrator angegebene token Anzeigenamen.|
 |locationName|String|Token Speicherort von Apple VPP zurückgegeben.|
-|claimTokenManagementFromExternalMdm|Boolesch|Admin stimmen ausgibt token Management von externen MDM zulassen|
+|claimTokenManagementFromExternalMdm|Boolean|Admin stimmen ausgibt token Management von externen MDM zulassen|
 
 
 

@@ -2,12 +2,13 @@
 title: Ressourcentyp mobileAppTroubleshootingEvent
 description: Ereignis, das eine Anwendung für Benutzer Geräte darstellt installieren Status.
 author: tfitzmac
-ms.openlocfilehash: 92b16d0dd3678aed8cec810f27172e05f37f1ad8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8441015f594d227066db39f3f643cc8136637668
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314400"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846368"
 ---
 # <a name="mobileapptroubleshootingevent-resource-type"></a>Ressourcentyp mobileAppTroubleshootingEvent
 
@@ -25,7 +26,7 @@ Erbt von [deviceManagementTroubleshootingEvent](../resources/intune-troubleshoot
 |[Liste mobileAppTroubleshootingEvents](../api/intune-troubleshooting-mobileapptroubleshootingevent-list.md)|[MobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md) -Auflistung|Listeneigenschaften und Beziehungen der [MobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md) -Objekte.|
 |[Abrufen von mobileAppTroubleshootingEvent](../api/intune-troubleshooting-mobileapptroubleshootingevent-get.md)|[mobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md)|Lesen Sie Eigenschaften und Beziehungen des [MobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md) -Objekts.|
 |[Erstellen von mobileAppTroubleshootingEvent](../api/intune-troubleshooting-mobileapptroubleshootingevent-create.md)|[mobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md)|Erstellen eines neuen [MobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md) -Objekts.|
-|[MobileAppTroubleshootingEvent löschen](../api/intune-troubleshooting-mobileapptroubleshootingevent-delete.md)|Keines|Löscht eine [MobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md).|
+|[MobileAppTroubleshootingEvent löschen](../api/intune-troubleshooting-mobileapptroubleshootingevent-delete.md)|Keine|Löscht eine [MobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md).|
 |[MobileAppTroubleshootingEvent aktualisieren](../api/intune-troubleshooting-mobileapptroubleshootingevent-update.md)|[mobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md)|Aktualisieren Sie die Eigenschaften eines [MobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

@@ -2,12 +2,13 @@
 title: Liste windowsPhone81CertificateProfileBases
 description: Listeneigenschaften und Beziehungen der windowsPhone81CertificateProfileBase-Objekte.
 author: tfitzmac
-ms.openlocfilehash: 0bd57e78fd1a89e087767cd93ba92792afbdb2a0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9fe08d72fa64fd62c5fec3ca4e9efc2740231e3e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346256"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877637"
 ---
 # <a name="list-windowsphone81certificateprofilebases"></a>Liste windowsPhone81CertificateProfileBases
 
@@ -36,10 +37,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

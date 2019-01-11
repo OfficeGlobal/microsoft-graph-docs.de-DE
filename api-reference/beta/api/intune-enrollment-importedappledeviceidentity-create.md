@@ -2,12 +2,13 @@
 title: Erstellen von importedAppleDeviceIdentity
 description: Erstellen eines neuen ImportedAppleDeviceIdentity-Objekts.
 author: tfitzmac
-ms.openlocfilehash: f329e520659bea7332a84c78ed32f1abf071744d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d1c88a7d1621cc386ea5fd299d6fc1b014cb7b05
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338871"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848419"
 ---
 # <a name="create-importedappledeviceidentity"></a>Erstellen von importedAppleDeviceIdentity
 
@@ -35,10 +36,10 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt ImportedAppleDeviceIdentity eine JSON-Darstellung.
@@ -51,7 +52,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |serialNumber|String|Seriennummer des Geräts|
 |requestedEnrollmentProfileId|String|Registrierung Profil Id Admin beabsichtigt, auf dem Gerät während der nächsten Registrierung anwenden|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|Das Zeit Registrierung Profil zugewiesen wurde das Gerät|
-|isSupervised|Boolescher Wert|Gibt an, ob das Gerät Apple überwacht wird. Weitere Informationen finden Sie unter:https://support.apple.com/en-us/HT202837|
+|isSupervised|Boolean|Gibt an, ob das Gerät Apple überwacht wird. Weitere Informationen finden Sie unter:https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple Gerät Discovery-Quelle. Mögliche Werte sind: `unknown`, `adminImport` und `deviceEnrollmentProgram`.|
 |createdDateTime|DateTimeOffset|Erstellte Datum-Uhrzeit des Geräts|
 |lastContactedDateTime|DateTimeOffset|Letzte kontaktiert Datum-Uhrzeit des Geräts|

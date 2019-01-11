@@ -2,12 +2,13 @@
 title: Abrufen von „managedEBookAssignment“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs managedEBookAssignment.
 author: tfitzmac
-ms.openlocfilehash: df8147dfafd928e89c32850a0f8b4b9cdb57f2dc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ec389e6b171b69605b75b7e1d442ea3daaff5f29
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335942"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828791"
 ---
 # <a name="get-managedebookassignment"></a>Abrufen von „managedEBookAssignment“
 
@@ -37,10 +38,10 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBoo
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

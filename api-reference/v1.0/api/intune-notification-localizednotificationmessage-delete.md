@@ -2,12 +2,13 @@
 title: localizedNotificationMessage löschen
 description: Löschen einer localizedNotificationMessage.
 author: tfitzmac
-ms.openlocfilehash: c77aa563734ca9c57a64b2316de87928f571eee7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 02e20332549df460059ac4f992207d4c426af809
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346102"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825963"
 ---
 # <a name="delete-localizednotificationmessage"></a>localizedNotificationMessage löschen
 
@@ -33,10 +34,10 @@ DELETE /deviceManagement/notificationMessageTemplates/{notificationMessageTempla
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

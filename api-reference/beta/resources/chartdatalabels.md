@@ -2,12 +2,13 @@
 title: ChartDataLabels-Ressourcentyp
 description: Stellt eine Sammlung aller Datenbeschriftungen an einem Diagrammpunkt dar.
 author: lumine2008
-ms.openlocfilehash: ef1880fcbf1f74f99f6b323c06b8fd35812f340a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7e45db4129422c32af809d46c076b2f6d82eff89
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352178"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876195"
 ---
 # <a name="chartdatalabels-resource-type"></a>ChartDataLabels-Ressourcentyp
 
@@ -38,7 +39,7 @@ Stellt eine Sammlung aller Datenbeschriftungen an einem Diagrammpunkt dar.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Format|[ChartDataLabelFormat](chartdatalabelformat.md)|Stellt das Format der Diagrammdatenbeschriftungen dar, einschließlich Füllung und Formatierung der Schriftart. Schreibgeschützt.|
+|format|[ChartDataLabelFormat](chartdatalabelformat.md)|Stellt das Format der Diagrammdatenbeschriftungen dar, einschließlich Füllung und Formatierung der Schriftart. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

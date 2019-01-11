@@ -2,12 +2,13 @@
 title: RatingUnitedKingdomTelevisionType Enum-Typ
 description: TV zum Bewerten Beschriftungen in Großbritannien
 author: tfitzmac
-ms.openlocfilehash: f023cc582dc1e73a00694222880d46fc1f3e3a67
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 03d09d6b8083e83f29476594cb2012f19a78fff2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333278"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865569"
 ---
 # <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>RatingUnitedKingdomTelevisionType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27333278"
 
 TV zum Bewerten Beschriftungen in Großbritannien
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |allAllowed|0|Standardwert, zulassen, dass alle TV Inhalt anzeigt.|
 |allBlocked|1|Lassen Sie nicht, dass alle TV Inhalt anzeigt.|

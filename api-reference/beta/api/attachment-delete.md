@@ -1,12 +1,13 @@
 ---
 title: Anlage löschen
 description: Löschen Sie eine Anlage aus einer Kalenderereignis, Nachricht, Outlook-Aufgabe oder Post.
-ms.openlocfilehash: dbabde6b1783e477e3a15db3ea4d138be6e41b12
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: c8af55d2237dd481e89b888d9bc025e6a1093695
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771786"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824941"
 ---
 # <a name="delete-attachment"></a>Anlage löschen
 

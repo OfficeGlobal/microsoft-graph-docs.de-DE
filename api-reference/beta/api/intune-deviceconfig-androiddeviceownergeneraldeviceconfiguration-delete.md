@@ -2,12 +2,13 @@
 title: AndroidDeviceOwnerGeneralDeviceConfiguration löschen
 description: Löscht eine AndroidDeviceOwnerGeneralDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: a557c378f0956e7bb1e8babcb4048eaffa072afa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: db7af88e47f17dad7829a7cb2872a5335b8df119
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335259"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807595"
 ---
 # <a name="delete-androiddeviceownergeneraldeviceconfiguration"></a>AndroidDeviceOwnerGeneralDeviceConfiguration löschen
 
@@ -37,10 +38,10 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

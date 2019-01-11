@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp „windows10SecureAssessmentConfiguration“
 description: In diesem Artikel werden die deklarierten Methoden, Eigenschaften und Beziehungen beschrieben, die von der Ressource „secureAssessment“ verfügbar gemacht werden.
-ms.openlocfilehash: c4051350182c3a3876d6be101d39b8d11d058732
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 954bc43a6b179e2b5a680dfe4f6368b5990312e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019880"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846025"
 ---
 # <a name="windows10secureassessmentconfiguration-resource-type"></a>Ressourcentyp „windows10SecureAssessmentConfiguration“
 
@@ -36,9 +37,9 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |launchUri|String|URL zu einer Bewertung, die automatisch geladen wird, sobald der Browser für sichere Bewertungen gestartet wird. Die URL muss eine gültige URL sein (http\[s\]://msdn.microsoft.com/).|
 |configurationAccount|String|Konto, mit dem das Windows-Gerät für den Test konfiguriert wurde. Der Benutzer kann ein Domänenkonto (Domäne\Benutzername), ein AAD-Konto (benutzername@mandant.com) oder ein lokales Konto (Benutzername) sein.|
-|allowPrinting|Boolescher Wert|Gibt an, ob während des Tests über die App gedruckt werden darf.|
-|allowScreenCapture|Boolescher Wert|Gibt an, ob während des Tests über die App Screenshots angefertigt werden dürfen.|
-|allowTextSuggestion|Boolescher Wert|Gibt an, ob während des Tests Wortvorschläge angezeigt werden dürfen.|
+|allowPrinting|Boolean|Gibt an, ob während des Tests über die App gedruckt werden darf.|
+|allowScreenCapture|Boolean|Gibt an, ob während des Tests über die App Screenshots angefertigt werden dürfen.|
+|allowTextSuggestion|Boolean|Gibt an, ob während des Tests Wortvorschläge angezeigt werden dürfen.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

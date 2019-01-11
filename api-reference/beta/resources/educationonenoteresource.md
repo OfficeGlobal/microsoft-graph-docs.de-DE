@@ -2,12 +2,13 @@
 title: Ressourcentyp educationOneNoteResource
 description: 'Eine Unterklasse der EducationResource. Dies ist den Speicherort der OneNote-Seite.  '
 author: mmast-msft
-ms.openlocfilehash: dc6fc6a71da12a27cb589e072371814e4bc33cc1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9dea19683786d22c48af2eedd6239ffe76441ef2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359864"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825928"
 ---
 # <a name="educationonenoteresource-resource-type"></a>Ressourcentyp educationOneNoteResource
 
@@ -18,8 +19,8 @@ Eine Unterklasse der [EducationResource](educationresource.md). Dies ist den Spe
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|pageUrl|String|Die Microsoft Graph-URL zu der Seite in OneNote.|
-|sectionName|String|Im Abschnittsname, die Verteilung in kopiert werden sollte oder in kopiert wurden.|
+|pageUrl|Zeichenfolge|Die Microsoft Graph-URL zu der Seite in OneNote.|
+|sectionName|Zeichenfolge|Im Abschnittsname, die Verteilung in kopiert werden sollte oder in kopiert wurden.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

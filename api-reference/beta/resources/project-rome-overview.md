@@ -1,12 +1,13 @@
 ---
 title: 'Verwenden Sie die Microsoft Graph-API Project ROM entwickelt '
 description: 'Project-ROM ist eine Microsoft-Initiative eine Plattform zu erstellen, mit die app-Entwickler umfangreiche Cross-Gerät Erfahrungen erstellen können. Project-ROM kann verschiedene Funktionen, die verschiedene Dienste und Clientendpunkte verbinden, wenn der Benutzer bei sich mit den gleichen Microsoft-Konto oder arbeiten oder Schule Konto. Dadurch können Sie Cross-Gerät und plattformübergreifende Erfahrungen implementieren, die um Benutzeraufgaben statt Geräte zentriert wird. '
-ms.openlocfilehash: f779c04a76331d27fdcae6436e758bacfc052f8e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9f3b923bff5bad93036a1784090c8ce00763650f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060446"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830002"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Verwenden Sie die Microsoft Graph-API Project ROM entwickelt 
 

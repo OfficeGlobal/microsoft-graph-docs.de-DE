@@ -1,12 +1,13 @@
 ---
 title: e-Mail-Ressourcentyp
 description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: c0baf89485e0d8f98918a227f83b622781752c3e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 02eb37c065cc8d664caf97f1f86da0efeaac09e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27057947"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830058"
 ---
 # <a name="email-resource-type"></a>e-Mail-Ressourcentyp
 

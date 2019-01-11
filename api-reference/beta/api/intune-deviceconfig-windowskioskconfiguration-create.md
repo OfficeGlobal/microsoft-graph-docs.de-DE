@@ -2,12 +2,13 @@
 title: Erstellen von windowsKioskConfiguration
 description: Erstellen eines neuen WindowsKioskConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 35630494206a234e248935a75483afa2da969ed4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 75e500ae8cf8ce272ee8571de24f18723f0594e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327538"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868376"
 ---
 # <a name="create-windowskioskconfiguration"></a>Erstellen von windowsKioskConfiguration
 
@@ -36,10 +37,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt WindowsKioskConfiguration eine JSON-Darstellung.
@@ -51,16 +52,16 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolesch|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |kioskProfiles|[WindowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) -Auflistung|Diese Richtlinie ermöglicht zum Definieren einer Liste von Kiosk-Profilen für eine Kiosk-Konfiguration. Diese Collection darf maximal 500 Elemente enthalten.|
 |kioskBrowserDefaultUrl|String|Geben Sie den Standard-URL der Browser navigieren soll auf starten.|
-|kioskBrowserEnableHomeButton|Boolesch|Aktivieren des Kiosk-Browsers home-Schaltfläche. Die home-Schaltfläche ist standardmäßig deaktiviert.|
-|kioskBrowserEnableNavigationButtons|Boolesch|Aktivieren des Kiosk-Browsers Navigation buttons(forward/back). Die Navigationsschaltflächen werden standardmäßig deaktiviert.|
-|kioskBrowserEnableEndSessionButton|Boolesch|Aktivieren des Kiosk-Browsers End Sitzung Schaltfläche. Die Schaltfläche Beenden Sitzung ist standardmäßig deaktiviert.|
+|kioskBrowserEnableHomeButton|Boolean|Aktivieren des Kiosk-Browsers home-Schaltfläche. Die home-Schaltfläche ist standardmäßig deaktiviert.|
+|kioskBrowserEnableNavigationButtons|Boolean|Aktivieren des Kiosk-Browsers Navigation buttons(forward/back). Die Navigationsschaltflächen werden standardmäßig deaktiviert.|
+|kioskBrowserEnableEndSessionButton|Boolean|Aktivieren des Kiosk-Browsers End Sitzung Schaltfläche. Die Schaltfläche Beenden Sitzung ist standardmäßig deaktiviert.|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|Geben Sie die Anzahl der Minuten, die Sitzung im Leerlauf befindet, bis der Kiosk-Browser in einen neuen Status neu gestartet wird.  Gültige Werte sind 1 und 1440. Gültige Werte 1 bis 1440|
 |kioskBrowserBlockedURLs|Collection von Objekten des Typs „String“|Geben Sie die URLs, die nicht die Kiosk-Browser navigieren soll|
 |kioskBrowserBlockedUrlExceptions|Collection von Objekten des Typs „String“|Geben Sie die URLs, die im Browser Kiosk zulässig ist, zu dem navigiert|

@@ -2,12 +2,13 @@
 title: Ereignis erstellen
 description: Mit dieser API können Sie einen neuen Termin erstellen.
 author: dkershaw10
-ms.openlocfilehash: c4ae4dba933b8c3a607e3c773d89756d59e06fd9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 5dcd32f122441d4005c7b753142cf6060630e1b2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322946"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875523"
 ---
 # <a name="create-event"></a>Ereignis erstellen
 Mit dieser API können Sie einen neuen [Termin](../resources/event.md) erstellen.
@@ -29,7 +30,7 @@ POST /groups/{id}/calendar/events
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

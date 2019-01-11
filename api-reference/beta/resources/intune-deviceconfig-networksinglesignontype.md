@@ -2,12 +2,13 @@
 title: NetworkSingleSignOnType Enum-Typ
 description: Wi-Fi-Netzwerk SSO-Einstellungen für gesperrte.
 author: tfitzmac
-ms.openlocfilehash: d88f9a4c4d0bde58c3093a736a767acc0d2abe33
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: abd333ffd59a3a287f371109f71bc1e3177a2b6e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345262"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877147"
 ---
 # <a name="networksinglesignontype-enum-type"></a>NetworkSingleSignOnType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27345262"
 
 Wi-Fi-Netzwerk SSO-Einstellungen für gesperrte.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |deaktiviert|0|Deaktiviert|
 |Voranmeldung|1|Vor der Anmeldung|

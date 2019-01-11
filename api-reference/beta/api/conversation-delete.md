@@ -2,12 +2,13 @@
 title: Unterhaltung löschen
 description: Mit dieser API können Sie Unterhaltungen löschen.
 author: dkershaw10
-ms.openlocfilehash: f62f009ae5de99df7fceb8414c54276ed4b3929d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a52735b7c67fb52906e9afcafb98629168f70f89
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359178"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829267"
 ---
 # <a name="delete-conversation"></a>Unterhaltung löschen
 
@@ -29,7 +30,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 DELETE /groups/{id}/conversations/{id}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

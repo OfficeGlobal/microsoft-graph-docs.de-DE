@@ -2,12 +2,13 @@
 title: EapType Enum-Typ
 description: Extensible Authentication-Protokoll (EAP) Konfigurationstypen.
 author: tfitzmac
-ms.openlocfilehash: e95924209b8137a1c5d35896c0195e9e962d7af9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 92c1cddd42f16556cbba51be7eb06a0f75c537a3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319544"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828896"
 ---
 # <a name="eaptype-enum-type"></a>EapType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27319544"
 
 Extensible Authentication-Protokoll (EAP) Konfigurationstypen.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |eapTls|13|EAP-Transport Layer Security (EAP-TLS).|
 |Sprung|17|Einfache Extensible Authentication-Protokoll (SPRUNG).|

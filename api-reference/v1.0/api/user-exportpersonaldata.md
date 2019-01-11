@@ -1,12 +1,13 @@
 ---
 title: 'Benutzer: ExportPersonalData'
 description: Fordert die Daten Richtlinie Vorgang, versucht ein Unternehmensadministrator, eine Organisationseinheit Benutzerdaten exportieren.
-ms.openlocfilehash: 9308e955e83ccad5779d8261537306a5220d8086
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: db20b0cb7eb11358298ce5b9fc59357a18fcb9be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748213"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869685"
 ---
 # <a name="user-exportpersonaldata"></a>Benutzer: ExportPersonalData
 

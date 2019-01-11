@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp onPremisesProvisioningError
 description: Stellt verzeichnissynchronisierungsfehlern für die Benutzer- und Entitäten dar, bei der lokalen Verzeichnisse zu Azure Active Directory-Synchronisierung.
-ms.openlocfilehash: 7d5b15d99559ddf5b7692b7eac9664de7ec50f1e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c8989a78dfb60a6c7c25a66a9f1e619dcbdca15d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019999"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830667"
 ---
 # <a name="onpremisesprovisioningerror-resource-type"></a>Ressourcentyp onPremisesProvisioningError
 

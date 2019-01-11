@@ -2,12 +2,13 @@
 title: Liste sideLoadingKeies
 description: Listeneigenschaften und Beziehungen der SideLoadingKey-Objekte.
 author: tfitzmac
-ms.openlocfilehash: d18a9dbffea23408f7ba32c89620bcf340fe47e7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f0aef5a2762d2b1681ef39d9394d753164355d34
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311123"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829407"
 ---
 # <a name="list-sideloadingkeies"></a>Liste sideLoadingKeies
 
@@ -35,10 +36,10 @@ GET /deviceAppManagement/sideLoadingKeys
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

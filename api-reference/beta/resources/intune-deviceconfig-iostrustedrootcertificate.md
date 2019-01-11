@@ -2,12 +2,13 @@
 title: Ressourcentyp iosTrustedRootCertificate
 description: iOS vertrauenswürdige Stammzertifikat Konfigurationsprofil.
 author: tfitzmac
-ms.openlocfilehash: 0ce68cc840e509b89b08698b2006370b60589f6a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2e4018d251bc7b509c7715465e2e71c414fcb8b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350799"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826894"
 ---
 # <a name="iostrustedrootcertificate-resource-type"></a>Ressourcentyp iosTrustedRootCertificate
 
@@ -25,7 +26,7 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |[Liste iosTrustedRootCertificates](../api/intune-deviceconfig-iostrustedrootcertificate-list.md)|[IosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md) -Auflistung|Listeneigenschaften und Beziehungen der [IosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md) -Objekte.|
 |[Abrufen von iosTrustedRootCertificate](../api/intune-deviceconfig-iostrustedrootcertificate-get.md)|[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)|Lesen Sie Eigenschaften und Beziehungen des [IosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md) -Objekts.|
 |[Erstellen von iosTrustedRootCertificate](../api/intune-deviceconfig-iostrustedrootcertificate-create.md)|[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)|Erstellen eines neuen [IosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md) -Objekts.|
-|[IosTrustedRootCertificate löschen](../api/intune-deviceconfig-iostrustedrootcertificate-delete.md)|Keines|Löscht eine [IosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md).|
+|[IosTrustedRootCertificate löschen](../api/intune-deviceconfig-iostrustedrootcertificate-delete.md)|Keine|Löscht eine [IosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md).|
 |[IosTrustedRootCertificate aktualisieren](../api/intune-deviceconfig-iostrustedrootcertificate-update.md)|[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)|Aktualisieren Sie die Eigenschaften eines [IosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
@@ -34,7 +35,7 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolesch|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|

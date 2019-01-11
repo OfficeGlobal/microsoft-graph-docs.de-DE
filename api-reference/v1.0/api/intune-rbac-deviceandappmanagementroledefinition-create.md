@@ -2,12 +2,13 @@
 title: deviceAndAppManagementRoleDefinition erstellen
 description: Erstellen eines neuen deviceAndAppManagementRoleDefinition-Objekts.
 author: tfitzmac
-ms.openlocfilehash: ad338b53aa49d140e36754d36a92f1eda4a6000a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f1eb68651a32f10d2b8daaab4fe7eaac0b8b2666
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348517"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826033"
 ---
 # <a name="create-deviceandappmanagementroledefinition"></a>deviceAndAppManagementRoleDefinition erstellen
 
@@ -33,10 +34,10 @@ POST /deviceManagement/roleDefinitions
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des deviceAndAppManagementRoleDefinition-Objekts an.
@@ -49,7 +50,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |displayName|String|Anzeigename der Rollendefinition Geerbt von [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |description|String|Beschreibung der Rollendefinition Geerbt von [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |rolePermissions|Sammlung von Objekten des Typs [rolePermission](../resources/intune-rbac-rolepermission.md)|Liste der Rollenberechtigungen, die dieser Rolle erteilt wurden. Diese müssen mit dem Wert für „actionName“ übereinstimmen, der als Teil von „rolePermission“ festgelegt wurde. Geerbt von [roleDefinition](../resources/intune-rbac-roledefinition.md)|
-|isBuiltIn|Boolescher Wert|Rollentyp. Ist auf „True“ gesetzt, wenn es sich um eine integrierte Rolle handelt, und auf „False“, wenn es sich um eine benutzerdefinierte Rollendefinition handelt. Geerbt von [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|isBuiltIn|Boolean|Rollentyp. Ist auf „True“ gesetzt, wenn es sich um eine integrierte Rolle handelt, und auf „False“, wenn es sich um eine benutzerdefinierte Rollendefinition handelt. Geerbt von [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 
 
 

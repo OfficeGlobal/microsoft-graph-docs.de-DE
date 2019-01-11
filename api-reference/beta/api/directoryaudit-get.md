@@ -1,12 +1,13 @@
 ---
 title: Abrufen von directoryAudit
 description: Ein bestimmtes Azure Active Directory Audit Log-Element enthält (oder ruft). Durch verschiedene Dienste innerhalb von Azure Active Directory wie Benutzer, App, Gerät und Verwaltung von Gruppen, privilegierten Identity Management, Access Bewertungen, rechtlichen Hinweise, Schutz, Kennwortverwaltung (SSPR und Admin das Zurücksetzen von Kennwörtern generiert Überwachungsprotokolle enthält ), Self-service Gruppe Management usw....
-ms.openlocfilehash: 98d7319f2910c29934494d74c618d284454afb58
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e85c0c14e4f6c6a0aa3b8beca1ef9d05f4b82aa0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060883"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809269"
 ---
 # <a name="get-directoryaudit"></a>Abrufen von directoryAudit
 Ein bestimmtes Azure Active Directory Audit Log-Element enthält (oder ruft). Durch verschiedene Dienste innerhalb von Azure Active Directory wie Benutzer, App, Gerät und Verwaltung von Gruppen, privilegierten Identity Management, Access Bewertungen, rechtlichen Hinweise, Schutz, Kennwortverwaltung (SSPR und Admin das Zurücksetzen von Kennwörtern generiert Überwachungsprotokolle enthält ), Self-service Gruppe Management usw....

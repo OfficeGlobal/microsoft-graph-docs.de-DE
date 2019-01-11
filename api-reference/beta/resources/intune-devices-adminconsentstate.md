@@ -2,12 +2,13 @@
 title: AdminConsentState Enum-Typ
 description: Admin Zustimmung Zustand.
 author: tfitzmac
-ms.openlocfilehash: d8a22d29157e09b3c038232a34f854da49e9cb4b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 40f2c30327f7e8af3792c4332fb5605159a28628
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353781"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876797"
 ---
 # <a name="adminconsentstate-enum-type"></a>AdminConsentState Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27353781"
 
 Admin Zustimmung Zustand.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Admin noch das Element nicht konfiguriert werden.|
 |erteilt|1|Admin erteilt Element|

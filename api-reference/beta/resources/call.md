@@ -2,12 +2,13 @@
 title: Rufen Sie Ressourcentyp
 description: Die Ressource **aufrufen,** wird erstellt, wenn ein eingehender Anruf für die Anwendung vorhanden ist oder die Anwendung einen neuen ausgehenden Anruf über erstellt eine `POST` auf `app/calls`.
 author: VinodRavichandran
-ms.openlocfilehash: 3acc0b04a5cb4357857c948a4b28feef22863a02
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Priority
+ms.openlocfilehash: d2748b410352effb7119a569bdf48c86f2f7c2ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380569"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810703"
 ---
 # <a name="call-resource-type"></a>Rufen Sie Ressourcentyp
 
