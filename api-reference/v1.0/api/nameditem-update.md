@@ -1,50 +1,51 @@
 ---
 title: nameditem aktualisieren
 description: Dient zum Aktualisieren der Eigenschaften des nameditem-Objekts.
-ms.openlocfilehash: 9ec62a87d007d7647aba89fddd7d9a7705434588
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 59919e030d06e4c84242396d61c68d601433cc7a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019392"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838710"
 ---
-# <a name="update-nameditem"></a><span data-ttu-id="7b2f4-103">nameditem aktualisieren</span><span class="sxs-lookup"><span data-stu-id="7b2f4-103">Update nameditem</span></span>
+# <a name="update-nameditem"></a><span data-ttu-id="2bec9-103">nameditem aktualisieren</span><span class="sxs-lookup"><span data-stu-id="2bec9-103">Update nameditem</span></span>
 
-<span data-ttu-id="7b2f4-104">Dient zum Aktualisieren der Eigenschaften des nameditem-Objekts.</span><span class="sxs-lookup"><span data-stu-id="7b2f4-104">Update the properties of nameditem object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="7b2f4-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="7b2f4-105">Permissions</span></span>
-<span data-ttu-id="7b2f4-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7b2f4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2bec9-104">Dient zum Aktualisieren der Eigenschaften des nameditem-Objekts.</span><span class="sxs-lookup"><span data-stu-id="2bec9-104">Update the properties of nameditem object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="2bec9-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="2bec9-105">Permissions</span></span>
+<span data-ttu-id="2bec9-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2bec9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7b2f4-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="7b2f4-108">Permission type</span></span>      | <span data-ttu-id="7b2f4-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="7b2f4-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2bec9-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="2bec9-108">Permission type</span></span>      | <span data-ttu-id="2bec9-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="2bec9-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7b2f4-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="7b2f4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7b2f4-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7b2f4-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="7b2f4-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="7b2f4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7b2f4-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="7b2f4-113">Not supported.</span></span>    |
-|<span data-ttu-id="7b2f4-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="7b2f4-114">Application</span></span> | <span data-ttu-id="7b2f4-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="7b2f4-115">Not supported.</span></span> |
+|<span data-ttu-id="2bec9-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="2bec9-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2bec9-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2bec9-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="2bec9-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="2bec9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2bec9-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="2bec9-113">Not supported.</span></span>    |
+|<span data-ttu-id="2bec9-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="2bec9-114">Application</span></span> | <span data-ttu-id="2bec9-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="2bec9-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7b2f4-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="7b2f4-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2bec9-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="2bec9-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names/{name}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="7b2f4-117">Optionale Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="7b2f4-117">Optional request headers</span></span>
-| <span data-ttu-id="7b2f4-118">Name</span><span class="sxs-lookup"><span data-stu-id="7b2f4-118">Name</span></span>       | <span data-ttu-id="7b2f4-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7b2f4-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="2bec9-117">Optionale Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="2bec9-117">Optional request headers</span></span>
+| <span data-ttu-id="2bec9-118">Name</span><span class="sxs-lookup"><span data-stu-id="2bec9-118">Name</span></span>       | <span data-ttu-id="2bec9-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2bec9-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="7b2f4-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="7b2f4-120">Authorization</span></span>  | <span data-ttu-id="7b2f4-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="7b2f4-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7b2f4-123">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="7b2f4-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="7b2f4-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="7b2f4-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="2bec9-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="2bec9-120">Authorization</span></span>  | <span data-ttu-id="2bec9-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="2bec9-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2bec9-123">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="2bec9-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="2bec9-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="2bec9-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7b2f4-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="7b2f4-126">Request body</span></span>
-<span data-ttu-id="7b2f4-p104">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.</span><span class="sxs-lookup"><span data-stu-id="7b2f4-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2bec9-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="2bec9-126">Request body</span></span>
+<span data-ttu-id="2bec9-p104">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.</span><span class="sxs-lookup"><span data-stu-id="2bec9-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="7b2f4-130">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="7b2f4-130">Property</span></span>     | <span data-ttu-id="7b2f4-131">Typ</span><span class="sxs-lookup"><span data-stu-id="7b2f4-131">Type</span></span>   |<span data-ttu-id="7b2f4-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7b2f4-132">Description</span></span>|
+| <span data-ttu-id="2bec9-130">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="2bec9-130">Property</span></span>     | <span data-ttu-id="2bec9-131">Typ</span><span class="sxs-lookup"><span data-stu-id="2bec9-131">Type</span></span>   |<span data-ttu-id="2bec9-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2bec9-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7b2f4-133">visible</span><span class="sxs-lookup"><span data-stu-id="7b2f4-133">visible</span></span>|<span data-ttu-id="7b2f4-134">boolean</span><span class="sxs-lookup"><span data-stu-id="7b2f4-134">boolean</span></span>|<span data-ttu-id="7b2f4-135">Gibt an, ob das Objekt sichtbar ist.</span><span class="sxs-lookup"><span data-stu-id="7b2f4-135">Specifies whether the object is visible or not.</span></span>|
-|<span data-ttu-id="7b2f4-136">comment</span><span class="sxs-lookup"><span data-stu-id="7b2f4-136">comment</span></span>|   <span data-ttu-id="7b2f4-137">string</span><span class="sxs-lookup"><span data-stu-id="7b2f4-137">string</span></span>  |<span data-ttu-id="7b2f4-138">Stellt den Kommentar dar, der mit diesem Namen verknüpft ist.</span><span class="sxs-lookup"><span data-stu-id="7b2f4-138">Represents the comment associated with this name.</span></span>|
+|<span data-ttu-id="2bec9-133">visible</span><span class="sxs-lookup"><span data-stu-id="2bec9-133">visible</span></span>|<span data-ttu-id="2bec9-134">boolean</span><span class="sxs-lookup"><span data-stu-id="2bec9-134">boolean</span></span>|<span data-ttu-id="2bec9-135">Gibt an, ob das Objekt sichtbar ist.</span><span class="sxs-lookup"><span data-stu-id="2bec9-135">Specifies whether the object is visible or not.</span></span>|
+|<span data-ttu-id="2bec9-136">comment</span><span class="sxs-lookup"><span data-stu-id="2bec9-136">comment</span></span>|   <span data-ttu-id="2bec9-137">string</span><span class="sxs-lookup"><span data-stu-id="2bec9-137">string</span></span>  |<span data-ttu-id="2bec9-138">Stellt den Kommentar dar, der mit diesem Namen verknüpft ist.</span><span class="sxs-lookup"><span data-stu-id="2bec9-138">Represents the comment associated with this name.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="7b2f4-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="7b2f4-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2bec9-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="2bec9-139">Response</span></span>
 
-<span data-ttu-id="7b2f4-140">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und aktualisierte [WorkbookNamedItem](../resources/nameditem.md) -Objekt aus der Antwort.</span><span class="sxs-lookup"><span data-stu-id="7b2f4-140">If successful, this method returns a `200 OK` response code and updated [WorkbookNamedItem](../resources/nameditem.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="7b2f4-141">Beispiel</span><span class="sxs-lookup"><span data-stu-id="7b2f4-141">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7b2f4-142">Anforderung</span><span class="sxs-lookup"><span data-stu-id="7b2f4-142">Request</span></span>
-<span data-ttu-id="7b2f4-143">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="7b2f4-143">Here is an example of the request.</span></span>
+<span data-ttu-id="2bec9-140">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und aktualisierte [WorkbookNamedItem](../resources/nameditem.md) -Objekt aus der Antwort.</span><span class="sxs-lookup"><span data-stu-id="2bec9-140">If successful, this method returns a `200 OK` response code and updated [WorkbookNamedItem](../resources/nameditem.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="2bec9-141">Beispiel</span><span class="sxs-lookup"><span data-stu-id="2bec9-141">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2bec9-142">Anforderung</span><span class="sxs-lookup"><span data-stu-id="2bec9-142">Request</span></span>
+<span data-ttu-id="2bec9-143">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="2bec9-143">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_nameditem"
@@ -63,8 +64,8 @@ Content-length: 87
   "visible": true
 }
 ```
-##### <a name="response"></a><span data-ttu-id="7b2f4-144">Antwort</span><span class="sxs-lookup"><span data-stu-id="7b2f4-144">Response</span></span>
-<span data-ttu-id="7b2f4-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="7b2f4-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="2bec9-144">Antwort</span><span class="sxs-lookup"><span data-stu-id="2bec9-144">Response</span></span>
+<span data-ttu-id="2bec9-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2bec9-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

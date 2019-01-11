@@ -2,26 +2,27 @@
 title: 'ChartLineFormat: clear'
 description: Dient zum Löschen der Linienformatierung eines Diagrammelements.
 author: lumine2008
-ms.openlocfilehash: 7e68d953ebc68d55c899eec6304255dfca0667a6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a89b0f178ff0de8f1fe54bd8d3b7c01deaece91b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331759"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836596"
 ---
-# <a name="chartlineformat-clear"></a><span data-ttu-id="e94bb-103">ChartLineFormat: clear</span><span class="sxs-lookup"><span data-stu-id="e94bb-103">ChartLineFormat: clear</span></span>
+# <a name="chartlineformat-clear"></a><span data-ttu-id="3bd16-103">ChartLineFormat: clear</span><span class="sxs-lookup"><span data-stu-id="3bd16-103">ChartLineFormat: clear</span></span>
 
-<span data-ttu-id="e94bb-104">Dient zum Löschen der Linienformatierung eines Diagrammelements.</span><span class="sxs-lookup"><span data-stu-id="e94bb-104">Clear the line format of a chart element.</span></span>
-## <a name="permissions"></a><span data-ttu-id="e94bb-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="e94bb-105">Permissions</span></span>
-<span data-ttu-id="e94bb-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e94bb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3bd16-104">Dient zum Löschen der Linienformatierung eines Diagrammelements.</span><span class="sxs-lookup"><span data-stu-id="3bd16-104">Clear the line format of a chart element.</span></span>
+## <a name="permissions"></a><span data-ttu-id="3bd16-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="3bd16-105">Permissions</span></span>
+<span data-ttu-id="3bd16-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3bd16-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e94bb-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="e94bb-108">Permission type</span></span>      | <span data-ttu-id="e94bb-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="e94bb-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3bd16-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="3bd16-108">Permission type</span></span>      | <span data-ttu-id="3bd16-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="3bd16-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e94bb-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="e94bb-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e94bb-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e94bb-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="e94bb-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="e94bb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e94bb-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="e94bb-113">Not supported.</span></span>    |
-|<span data-ttu-id="e94bb-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="e94bb-114">Application</span></span> | <span data-ttu-id="e94bb-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="e94bb-115">Not supported.</span></span> |
+|<span data-ttu-id="3bd16-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="3bd16-110">Delegated (work or school account)</span></span> | <span data-ttu-id="3bd16-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3bd16-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="3bd16-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="3bd16-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3bd16-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="3bd16-113">Not supported.</span></span>    |
+|<span data-ttu-id="3bd16-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="3bd16-114">Application</span></span> | <span data-ttu-id="3bd16-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="3bd16-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e94bb-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="e94bb-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3bd16-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="3bd16-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line/clear
@@ -29,22 +30,22 @@ POST /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/line/
 POST /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorgridlines/format/line/clear
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="e94bb-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="e94bb-117">Request headers</span></span>
-| <span data-ttu-id="e94bb-118">Name</span><span class="sxs-lookup"><span data-stu-id="e94bb-118">Name</span></span>       | <span data-ttu-id="e94bb-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e94bb-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3bd16-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="3bd16-117">Request headers</span></span>
+| <span data-ttu-id="3bd16-118">Name</span><span class="sxs-lookup"><span data-stu-id="3bd16-118">Name</span></span>       | <span data-ttu-id="3bd16-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3bd16-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="e94bb-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="e94bb-120">Authorization</span></span>  | <span data-ttu-id="e94bb-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="e94bb-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="e94bb-123">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="e94bb-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="e94bb-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="e94bb-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="3bd16-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="3bd16-120">Authorization</span></span>  | <span data-ttu-id="3bd16-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="3bd16-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3bd16-123">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="3bd16-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="3bd16-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="3bd16-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e94bb-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="e94bb-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3bd16-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="3bd16-126">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="e94bb-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="e94bb-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3bd16-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="3bd16-127">Response</span></span>
 
-<span data-ttu-id="e94bb-p104">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200 OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="e94bb-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="3bd16-p104">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200 OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="3bd16-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e94bb-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e94bb-130">Example</span></span>
-<span data-ttu-id="e94bb-131">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="e94bb-131">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="e94bb-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="e94bb-132">Request</span></span>
-<span data-ttu-id="e94bb-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="e94bb-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="3bd16-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="3bd16-130">Example</span></span>
+<span data-ttu-id="3bd16-131">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="3bd16-131">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="3bd16-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="3bd16-132">Request</span></span>
+<span data-ttu-id="3bd16-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="3bd16-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chartlineformat_clear"
@@ -53,8 +54,8 @@ POST /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorgridlines
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line/clear
 ```
 
-##### <a name="response"></a><span data-ttu-id="e94bb-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="e94bb-134">Response</span></span>
-<span data-ttu-id="e94bb-135">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="e94bb-135">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="3bd16-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="3bd16-134">Response</span></span>
+<span data-ttu-id="3bd16-135">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="3bd16-135">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
