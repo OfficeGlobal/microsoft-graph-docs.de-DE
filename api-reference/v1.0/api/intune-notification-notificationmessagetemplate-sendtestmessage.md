@@ -2,28 +2,29 @@
 title: sendTestMessage-Aktion
 description: Sendet eine Testnachricht unter Verwendung des für das Standardgebietsschema festgelegten Objekts des Typs „notificationMessageTemplate“.
 author: tfitzmac
-ms.openlocfilehash: 4495b4064f18739744d0f1f5f8709f28373d5f89
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8ca3eda7f085e80090c172d7612936ec7cd1275e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362755"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889887"
 ---
-# <a name="sendtestmessage-action"></a><span data-ttu-id="f1011-103">sendTestMessage-Aktion</span><span class="sxs-lookup"><span data-stu-id="f1011-103">sendTestMessage action</span></span>
+# <a name="sendtestmessage-action"></a><span data-ttu-id="eaee8-103">sendTestMessage-Aktion</span><span class="sxs-lookup"><span data-stu-id="eaee8-103">sendTestMessage action</span></span>
 
-> <span data-ttu-id="f1011-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="f1011-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="eaee8-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="eaee8-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="f1011-105">Sendet eine Testnachricht unter Verwendung des für das Standardgebietsschema festgelegten Objekts des Typs „notificationMessageTemplate“.</span><span class="sxs-lookup"><span data-stu-id="f1011-105">Sends test message using the specified notificationMessageTemplate in the default locale</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="f1011-106">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="f1011-106">Prerequisites</span></span>
-<span data-ttu-id="f1011-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f1011-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="eaee8-105">Sendet eine Testnachricht unter Verwendung des für das Standardgebietsschema festgelegten Objekts des Typs „notificationMessageTemplate“.</span><span class="sxs-lookup"><span data-stu-id="eaee8-105">Sends test message using the specified notificationMessageTemplate in the default locale</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="eaee8-106">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="eaee8-106">Prerequisites</span></span>
+<span data-ttu-id="eaee8-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="eaee8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f1011-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="f1011-109">Permission type</span></span>|<span data-ttu-id="f1011-110">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="f1011-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="eaee8-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="eaee8-109">Permission type</span></span>|<span data-ttu-id="eaee8-110">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="eaee8-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="f1011-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="f1011-111">Delegated (work or school account)</span></span>|<span data-ttu-id="f1011-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f1011-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="f1011-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="f1011-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f1011-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="f1011-114">Not supported.</span></span>|
-|<span data-ttu-id="f1011-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="f1011-115">Application</span></span>|<span data-ttu-id="f1011-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="f1011-116">Not supported.</span></span>|
+|<span data-ttu-id="eaee8-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="eaee8-111">Delegated (work or school account)</span></span>|<span data-ttu-id="eaee8-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="eaee8-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="eaee8-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="eaee8-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="eaee8-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="eaee8-114">Not supported.</span></span>|
+|<span data-ttu-id="eaee8-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="eaee8-115">Application</span></span>|<span data-ttu-id="eaee8-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="eaee8-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="f1011-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="f1011-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="eaee8-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="eaee8-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -32,27 +33,27 @@ ms.locfileid: "27362755"
 POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/sendTestMessage
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f1011-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="f1011-118">Request headers</span></span>
-|<span data-ttu-id="f1011-119">Header</span><span class="sxs-lookup"><span data-stu-id="f1011-119">Header</span></span>|<span data-ttu-id="f1011-120">Wert</span><span class="sxs-lookup"><span data-stu-id="f1011-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="eaee8-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="eaee8-118">Request headers</span></span>
+|<span data-ttu-id="eaee8-119">Header</span><span class="sxs-lookup"><span data-stu-id="eaee8-119">Header</span></span>|<span data-ttu-id="eaee8-120">Wert</span><span class="sxs-lookup"><span data-stu-id="eaee8-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="f1011-121">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="f1011-121">Authorization</span></span>|<span data-ttu-id="f1011-122">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="f1011-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="f1011-123">Accept</span><span class="sxs-lookup"><span data-stu-id="f1011-123">Accept</span></span>|<span data-ttu-id="f1011-124">application/json</span><span class="sxs-lookup"><span data-stu-id="f1011-124">application/json</span></span>|
+|<span data-ttu-id="eaee8-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="eaee8-121">Authorization</span></span>|<span data-ttu-id="eaee8-122">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="eaee8-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="eaee8-123">Annehmen</span><span class="sxs-lookup"><span data-stu-id="eaee8-123">Accept</span></span>|<span data-ttu-id="eaee8-124">application/json</span><span class="sxs-lookup"><span data-stu-id="eaee8-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f1011-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="f1011-125">Request body</span></span>
-<span data-ttu-id="f1011-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="f1011-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="eaee8-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="eaee8-125">Request body</span></span>
+<span data-ttu-id="eaee8-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="eaee8-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f1011-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="f1011-127">Response</span></span>
-<span data-ttu-id="f1011-128">Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` zurück.</span><span class="sxs-lookup"><span data-stu-id="f1011-128">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="eaee8-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="eaee8-127">Response</span></span>
+<span data-ttu-id="eaee8-128">Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` zurück.</span><span class="sxs-lookup"><span data-stu-id="eaee8-128">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f1011-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f1011-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="f1011-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="f1011-130">Request</span></span>
-<span data-ttu-id="f1011-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="f1011-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="eaee8-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="eaee8-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="eaee8-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="eaee8-130">Request</span></span>
+<span data-ttu-id="eaee8-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="eaee8-131">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/sendTestMessage
 ```
 
-### <a name="response"></a><span data-ttu-id="f1011-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="f1011-132">Response</span></span>
-<span data-ttu-id="f1011-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="f1011-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="eaee8-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="eaee8-132">Response</span></span>
+<span data-ttu-id="eaee8-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="eaee8-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
