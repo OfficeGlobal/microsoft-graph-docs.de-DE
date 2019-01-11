@@ -1,12 +1,13 @@
 ---
 title: groupLifecyclePolicy-Ressourcentyp
 description: Steht für eine Lebenszyklusrichtlinie für eine Office 365-Gruppe. Eine Lebenszyklusrichtlinie für eine Gruppe ermöglicht Administratoren das Festlegen eines Ablaufzeitraums für Gruppen. Zum Beispiel nach 180 Tagen läuft eine Gruppe ab. Wenn eine Gruppe den Ablaufzeitpunkt erreicht, müssen Besitzer der Gruppe die Gruppe in einem vom Administrator definierten Zeitintervall verlängern. Sobald die Gruppe verlängert wurde, wird der Ablaufzeitraum für die Gruppe um die Anzahl der Tage verlängert, die in der Richtlinie definiert sind. Der neue Ablaufzeitraum für die Gruppe lautet dann beispielsweise 180 Tage ab Verlängerung. Wenn die Gruppe nicht verlängert wird, läuft sie ab und wird gelöscht. Die Gruppe kann innerhalb von 30 Tagen nach Löschung wiederhergestellt werden.
-ms.openlocfilehash: c4a4d5b495f3bbb0d0c55b61a259f2105d0fea9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 271a3421599eaa58487cc7917c8dfaf4c382050d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061583"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861684"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>groupLifecyclePolicy-Ressourcentyp
 
@@ -22,7 +23,7 @@ Steht für eine Lebenszyklusrichtlinie für eine Office 365-Gruppe. Eine Lebensz
 |[Delete groupLifecyclePolicy](../api/grouplifecyclepolicy-delete.md) | Keine | Löscht ein groupLifecyclePolicy-Objekt. |
 |[Add a group to a groupLifecyclePolicy](../api/grouplifecyclepolicy-addgroup.md)|Keine| Fügt eine Gruppe zu einer Lebenszyklusrichtlinie hinzu. |
 |[Remove a group from a groupLifecyclePolicy](../api/grouplifecyclepolicy-removegroup.md)|Keine| Entfernt eine Gruppe aus einer Lebenszyklusrichtlinie. |
-|[Erneuern einer Gruppe](../api/grouplifecyclepolicy-renewgroup.md)|Keines| Erneuern einer Gruppe Ablaufdatum. |
+|[Erneuern einer Gruppe](../api/grouplifecyclepolicy-renewgroup.md)|Keine| Erneuern einer Gruppe Ablaufdatum. |
 
 ## <a name="properties"></a>Eigenschaften
 

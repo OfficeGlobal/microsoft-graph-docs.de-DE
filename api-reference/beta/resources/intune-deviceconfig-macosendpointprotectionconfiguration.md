@@ -2,12 +2,13 @@
 title: Ressourcentyp macOSEndpointProtectionConfiguration
 description: Mac OS Endpoint Protection Konfigurationsprofil.
 author: tfitzmac
-ms.openlocfilehash: 3cf6e9fd4c46eaef61e6f539be145a145981f3e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c94580ba513383403eafba6f24ebc9c2d5aa9e13
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326271"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808484"
 ---
 # <a name="macosendpointprotectionconfiguration-resource-type"></a>Ressourcentyp macOSEndpointProtectionConfiguration
 
@@ -25,7 +26,7 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |[Liste macOSEndpointProtectionConfigurations](../api/intune-deviceconfig-macosendpointprotectionconfiguration-list.md)|[MacOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md) -Auflistung|Listeneigenschaften und Beziehungen der [MacOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md) -Objekte.|
 |[Abrufen von macOSEndpointProtectionConfiguration](../api/intune-deviceconfig-macosendpointprotectionconfiguration-get.md)|[macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md)|Lesen Sie Eigenschaften und Beziehungen des [MacOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md) -Objekts.|
 |[Erstellen von macOSEndpointProtectionConfiguration](../api/intune-deviceconfig-macosendpointprotectionconfiguration-create.md)|[macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md)|Erstellen eines neuen [MacOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md) -Objekts.|
-|[MacOSEndpointProtectionConfiguration löschen](../api/intune-deviceconfig-macosendpointprotectionconfiguration-delete.md)|Keines|Löscht eine [MacOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md).|
+|[MacOSEndpointProtectionConfiguration löschen](../api/intune-deviceconfig-macosendpointprotectionconfiguration-delete.md)|Keine|Löscht eine [MacOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md).|
 |[MacOSEndpointProtectionConfiguration aktualisieren](../api/intune-deviceconfig-macosendpointprotectionconfiguration-update.md)|[macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md)|Aktualisieren Sie die Eigenschaften eines [MacOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
@@ -34,16 +35,16 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolesch|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|System und den Datenschutz, der bestimmt, welche Download Speicherorte apps auf einem Mac OS-Gerät aus ausgeführt werden können. Mögliche Werte: sind `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers` und `anywhere`.|
-|gatekeeperBlockOverride|Boolesch|Wenn auf True festgelegt, der Benutzer außer Kraft setzen für Gatekeeper deaktiviert wird.|
-|firewallEnabled|Boolesch|Gibt an, ob die Firewall oder nicht aktiviert werden soll.|
-|firewallBlockAllIncoming|Boolesch|Entspricht der Option "Alle eingehende Verbindungen blockieren".|
-|firewallEnableStealthMode|Boolesch|Entspricht "Enable Tarnmodus."|
+|gatekeeperBlockOverride|Boolean|Wenn auf True festgelegt, der Benutzer außer Kraft setzen für Gatekeeper deaktiviert wird.|
+|firewallEnabled|Boolean|Gibt an, ob die Firewall oder nicht aktiviert werden soll.|
+|firewallBlockAllIncoming|Boolean|Entspricht der Option "Alle eingehende Verbindungen blockieren".|
+|firewallEnableStealthMode|Boolean|Entspricht "Enable Tarnmodus."|
 |firewallApplications|[MacOSFirewallApplication](../resources/intune-deviceconfig-macosfirewallapplication.md) -Auflistung|Liste von Anwendungen mit Firewalleinstellungen. Firewalleinstellungen für Applikationen nicht in dieser Liste werden vom Benutzer festgelegt. Diese Sammlung darf maximal 500 Elemente enthalten.|
 
 ## <a name="relationships"></a>Beziehungen

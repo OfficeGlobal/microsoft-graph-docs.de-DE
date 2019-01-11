@@ -2,12 +2,13 @@
 title: iosMobileAppConfiguration erstellen
 description: Erstellen eines neuen iosMobileAppConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: e61a90540e0541fd9b14f4cad33e8ea9f95a803a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dd5c5aabb8e23e4e9d4adf781c59847f5edc10eb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315785"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854362"
 ---
 # <a name="create-iosmobileappconfiguration"></a>iosMobileAppConfiguration erstellen
 
@@ -35,10 +36,10 @@ POST /deviceAppManagement/mobileAppConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs iosMobileAppConfiguration an.

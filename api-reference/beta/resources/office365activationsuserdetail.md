@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp office365ActivationsUserDetail
 description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: 9cf0f7f841584654176c0069fb0403a86615bfd5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f87a5b32b08466428f0f6f0246a4b8d4c20e97be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060316"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877336"
 ---
 # <a name="office365activationsuserdetail-resource-type"></a>Ressourcentyp office365ActivationsUserDetail
 

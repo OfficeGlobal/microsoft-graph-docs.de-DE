@@ -2,12 +2,13 @@
 title: Erstellen von „managedDevice“
 description: Diese Methode erstellt ein neues Objekt des Typs managedDevice.
 author: tfitzmac
-ms.openlocfilehash: fa37f7114dac2d990d5d5cd90fd26ae64555661d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b3dc59421e8419b0c8f861e8e9c09fab473ea5c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340306"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873395"
 ---
 # <a name="create-manageddevice"></a>Erstellen von „managedDevice“
 
@@ -35,10 +36,10 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „managedDevice“ an.
@@ -66,12 +67,12 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Verwaltungskanal des Geräts. Intune, EAS usw. Mögliche Werte sind: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf` und `googleCloudDevicePolicyController`.|
 |osVersion|String|Auf dem Gerät installierte Betriebssystemversion.
 |
-|easActivated|Boolescher Wert|Gibt an, ob für das Gerät Exchange ActiveSync aktiviert ist.|
+|easActivated|Boolean|Gibt an, ob für das Gerät Exchange ActiveSync aktiviert ist.|
 |easDeviceId|String|Exchange ActiveSync-ID des Geräts.
 |
 |easActivationDateTime|DateTimeOffset|Datum und Uhrzeit der Exchange ActiveSync-Aktivierung für das Gerät.
 |
-|azureADRegistered|Boolescher Wert|Gibt an, ob das Gerät in Azure Active Directory registriert ist.|
+|azureADRegistered|Boolean|Gibt an, ob das Gerät in Azure Active Directory registriert ist.|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-devices-deviceenrollmenttype.md)|Registrierungstyp des Geräts. Mögliche Werte: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |activationLockBypassCode|String|Code, der die Umgehung der Aktivierungssperre des Geräts ermöglicht|
 |emailAddress|String|E-Mail-Adressen des Benutzers, der dem Gerät zugeordnet ist.
@@ -80,7 +81,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Registrierungsstatus des Geräts. Mögliche Werte sind: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset` und `notRegisteredPendingEnrollment`, `unknown`.|
 |deviceCategoryDisplayName|String|Anzeigename der Gerätekategorie.
 |
-|isSupervised|Boolescher Wert|Überwachungsstatus des Geräts.
+|isSupervised|Boolean|Überwachungsstatus des Geräts.
 |
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Verbindung des Geräts mit Exchange|
 |exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Zugriffsstatus des Geräts in Exchange. Mögliche Werte sind: `none`, `unknown`, `allowed`, `blocked` und `quarantined`.|
@@ -89,7 +90,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |
 |remoteAssistanceSessionErrorDetails|String|Fehlerzeichenfolge zur Beschreibung von Fehlern beim Erstellen von Objekten für Remoteunterstützungssitzungen.
 |
-|isEncrypted|Boolescher Wert|Verschlüsselungsstatus des Geräts.
+|isEncrypted|Boolean|Verschlüsselungsstatus des Geräts.
 |
 |userPrincipalName|String|Benutzerprinzipalname für das Gerät.
 |

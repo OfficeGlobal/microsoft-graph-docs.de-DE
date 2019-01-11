@@ -2,12 +2,13 @@
 title: Auflisten von „managedAppStatusRaw“
 description: Auflisten von Eigenschaften und Beziehungen der managedAppStatusRaw-Objekte.
 author: tfitzmac
-ms.openlocfilehash: 5be953f243ffc0c24d72387dbea11513d8d202cb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7dd30f4731042307f543bde7420795b95bc496bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301666"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828798"
 ---
 # <a name="list-managedappstatusraws"></a>Auflisten von „managedAppStatusRaw“
 
@@ -33,10 +34,10 @@ GET /deviceAppManagement/managedAppStatuses
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

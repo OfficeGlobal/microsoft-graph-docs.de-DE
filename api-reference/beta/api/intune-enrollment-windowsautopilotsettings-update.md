@@ -2,12 +2,13 @@
 title: WindowsAutopilotSettings aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines WindowsAutopilotSettings-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 281a0ff6412151e284c566444886092e2566b491
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8087ce2a3d7fd02eb6cc118d75082382bcddd58d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316086"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877651"
 ---
 # <a name="update-windowsautopilotsettings"></a>WindowsAutopilotSettings aktualisieren
 
@@ -35,10 +36,10 @@ PATCH /deviceManagement/windowsAutopilotSettings
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [WindowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) eine JSON-Darstellung.

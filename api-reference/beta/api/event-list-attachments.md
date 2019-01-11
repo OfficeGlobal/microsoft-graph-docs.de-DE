@@ -2,12 +2,13 @@
 title: Anlagen auflisten
 description: Mit dieser API können Sie eine Liste der einem Ereignis angefügten Objekte des Typs attachment abrufen.
 author: angelgolfer-ms
-ms.openlocfilehash: 57545b89adc5cbb3c20ab782de04438b7b5ba9bf
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: d05bb4194a60346b97e6be368d6790fdebf8e12b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771800"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854705"
 ---
 # <a name="list-attachments"></a>Anlagen auflisten
 

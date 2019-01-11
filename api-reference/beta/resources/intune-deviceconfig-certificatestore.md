@@ -2,12 +2,13 @@
 title: CertificateStore Enum-Typ
 description: CertificateStore Typen
 author: tfitzmac
-ms.openlocfilehash: 32a40db850d5b725e12e7244a00b9c7fcee139de
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a44db5ddd4266dc2e6d437f8499078ba299d0227
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316919"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807602"
 ---
 # <a name="certificatestore-enum-type"></a>CertificateStore Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27316919"
 
 CertificateStore Typen
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |user|1|Noch nicht dokumentiert|
 |Computer|2|Noch nicht dokumentiert|

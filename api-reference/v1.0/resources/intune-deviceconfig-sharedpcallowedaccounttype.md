@@ -2,12 +2,13 @@
 title: SharedPCAllowedAccountType Enum-Typ
 description: Typ der Konten, die an den PC freigeben dürfen.
 author: tfitzmac
-ms.openlocfilehash: c85940d71c60a909ff0eda6cef4b1dd2c0942c3f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2fd7861987990a058ebac0c5b1543debb4522aa4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314567"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859990"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>SharedPCAllowedAccountType Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27314567"
 
 Typ der Konten, die an den PC freigeben dürfen.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |Gast|1|Nur Gastkonten. Standardwert.|
 |domain|2|Nur Domäne Konten.|

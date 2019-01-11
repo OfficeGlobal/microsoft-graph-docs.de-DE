@@ -2,12 +2,13 @@
 title: Ressourcentyp mobileContainedApp
 description: Eine abstrakte Klasse, die eine enthaltene-app in einem MobileApp fungiert als Paket darstellt.
 author: tfitzmac
-ms.openlocfilehash: 314225c46247bd122c825f0f883378513445ce0a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b81ee4ca194d1d01e3d834b3287f6b400e712a27
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340796"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826285"
 ---
 # <a name="mobilecontainedapp-resource-type"></a>Ressourcentyp mobileContainedApp
 

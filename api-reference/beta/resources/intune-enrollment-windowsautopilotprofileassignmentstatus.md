@@ -2,12 +2,13 @@
 title: WindowsAutopilotProfileAssignmentStatus Enum-Typ
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 255aab9770305baa29e73278b3bfceec1079351a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 48d08ad4d4c80c3d5a68cca5af36c958deaac819
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321000"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869643"
 ---
 # <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>WindowsAutopilotProfileAssignmentStatus Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27321000"
 
 Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannte Zuordnungsstatus|
 |assignedInSync|1|Zugewiesene erfolgreich in Intune und Synchronisierung mit Windows automatische Pilotprogramm|

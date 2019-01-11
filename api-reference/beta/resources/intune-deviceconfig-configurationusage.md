@@ -2,12 +2,13 @@
 title: ConfigurationUsage Enum-Typ
 description: Mögliche Werte der Liste ConfigurationUsage.
 author: tfitzmac
-ms.openlocfilehash: 7ecfbb77404e3f50c484680c7e3868ae3da3c228
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2bbbd0b88ff4c81c141a687b106ac1795f75b6b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311641"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808316"
 ---
 # <a name="configurationusage-enum-type"></a>ConfigurationUsage Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27311641"
 
 Mögliche Werte der Liste ConfigurationUsage.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |gesperrt|0|Nicht zulässig.|
 |erforderlich|1|Erforderlich.|

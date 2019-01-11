@@ -2,12 +2,13 @@
 title: Verwendet wird
 description: Berechnete Insight, der die Liste der Dateien mit einem Benutzer zurückgibt.
 author: simonhult
-ms.openlocfilehash: 17f47e4e82d5cb038438b5d164c76371221de11a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a04c49447f0b615c39ad46aeede897fb2b281b5c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342497"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854191"
 ---
 # <a name="list-used"></a>Verwendet wird
 
@@ -48,10 +49,10 @@ Finden Sie die verfügbaren Containertypen und Typen, die Sie nach [ResourceVisu
 
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       |  Wert|
+| Kopfzeile       |  Wert|
 |:-------------|:------|
 | Authorization  | Bearer {token}. Erforderlich.|
-| Accept  | application/json|
+| Annehmen  | application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

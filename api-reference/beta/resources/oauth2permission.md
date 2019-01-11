@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp oAuth2Permission
 description: Stellt ein OAuth 2.0 delegiert Berechtigungsbereich. Die angegebene OAuth 2.0-Clientanwendungen (über die **RequiredResourceAccess** -Auflistung für das Application-Objekt) delegierte berechtigungsbereiche angefordert werden können beim Aufruf von einer Anwendung für die Ressource. Die **AppRoles** -Eigenschaft der Entität ServicePrincipal und der Anwendung Entität ist eine Auflistung von **oAuth2Permission**.
-ms.openlocfilehash: 4a790c935dd84fb7bd4e1422ca59914d9a319ae9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 420a7b181aa2590d3c5bc8eaa7f104251915ae0f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063633"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829708"
 ---
 # <a name="oauth2permission-resource-type"></a>Ressourcentyp oAuth2Permission
 
@@ -48,7 +49,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |adminConsentDisplayName|String|Der Anzeigename für die Berechtigung, die in der Admin Zustimmung und app-Zuordnung Erfahrungen angezeigt wird.|
 |id|Guid|Eindeutige Berechtigungen Bereichsbezeichner innerhalb der oauth2Permissions-Auflistung.|
 |isEnabled|Boolescher Wert|Beim Erstellen oder aktualisieren eine Berechtigung, muss diese Eigenschaft auf **true** festgelegt werden (die Standardeinstellung ist). Um eine Berechtigung zu löschen, muss zuerst diese Eigenschaft auf **false**festgelegt werden.  An dieser Stelle kann im Gespräch nachfolgende die Berechtigung entfernt werden.|
-|Typ|String|Gibt an, von einem Endbenutzer gibt an, ob diese Berechtigung Bereich zugestimmt kann oder gibt an, ob eine gesamte Mandanten Berechtigung ist, die ein Unternehmensadministrator zugestimmt werden muss.  Mögliche Werte sind "User" oder "Admin".|
+|type|String|Gibt an, von einem Endbenutzer gibt an, ob diese Berechtigung Bereich zugestimmt kann oder gibt an, ob eine gesamte Mandanten Berechtigung ist, die ein Unternehmensadministrator zugestimmt werden muss.  Mögliche Werte sind "User" oder "Admin".|
 |userConsentDescription|String|Berechtigung Hilfe in Zustimmung des Endbenutzers angezeigte Text.|
 |userConsentDisplayName|String|Der Anzeigename für die Berechtigung, die in Zustimmung des Endbenutzers angezeigt wird.|
 |Wert|Zeichenfolge|Der Wert des Bereichs geltend, dass die Anwendung für die Ressource in das OAuth 2.0-Zugriffstoken erwarten.|

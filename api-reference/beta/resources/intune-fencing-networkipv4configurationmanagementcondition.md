@@ -2,12 +2,13 @@
 title: Ressourcentyp networkIPv4ConfigurationManagementCondition
 description: Netzwerkeinstellungen für IPv4-Konfiguration-basiertes Management Bedingungen definiert werden können, die ausgelöst wird, wenn ein Gerät bestimmte IP-Adresse erkennt. Eine IP-Config Management Bedingungen werden nur als TRUE betrachtet werden, wenn die Netzwerkverbindung aktiv ist.
 author: tfitzmac
-ms.openlocfilehash: eba20d0ef5db1667cad2ffb85b9477c9044b28b9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6964f3e84deacdd20a1c5909fb6bd8c87ddcd8f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344261"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847299"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>Ressourcentyp networkIPv4ConfigurationManagementCondition
 
@@ -25,7 +26,7 @@ Erbt vom [networkManagementCondition](../resources/intune-fencing-networkmanagem
 |[Liste networkIPv4ConfigurationManagementConditions](../api/intune-fencing-networkipv4configurationmanagementcondition-list.md)|[networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) -Auflistung|Listeneigenschaften und Beziehungen der [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) -Objekte.|
 |[Abrufen von networkIPv4ConfigurationManagementCondition](../api/intune-fencing-networkipv4configurationmanagementcondition-get.md)|[networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md)|Lesen Sie Eigenschaften und Beziehungen des [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) -Objekts.|
 |[Erstellen von networkIPv4ConfigurationManagementCondition](../api/intune-fencing-networkipv4configurationmanagementcondition-create.md)|[networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md)|Erstellen eines neuen [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) -Objekts.|
-|[NetworkIPv4ConfigurationManagementCondition löschen](../api/intune-fencing-networkipv4configurationmanagementcondition-delete.md)|Keines|Löscht eine [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md).|
+|[NetworkIPv4ConfigurationManagementCondition löschen](../api/intune-fencing-networkipv4configurationmanagementcondition-delete.md)|Keine|Löscht eine [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md).|
 |[NetworkIPv4ConfigurationManagementCondition aktualisieren](../api/intune-fencing-networkipv4configurationmanagementcondition-update.md)|[networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md)|Aktualisieren Sie die Eigenschaften eines [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

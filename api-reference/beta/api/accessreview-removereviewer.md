@@ -1,12 +1,13 @@
 ---
 title: AccessReview Reviewer entfernen
 description: 'In Azure AD Access Feature überprüft, und Aktualisieren eines vorhandenen AccessReview-Objekts, um einen Benutzer als Bearbeiter zu entfernen.  Dieser Vorgang ist nur zulässig für eine Access-Überprüfung, die noch nicht abgeschlossen ist, und nur für eine Access-Überprüfung, wobei die Bearbeiter explizit angegeben werden. Dieser Vorgang ist nicht zulässig für eine Access-Überprüfung in der Benutzer ihre eigenen Access überprüfen und nicht für die direkte Verwendung für eine Access-Überprüfung in der Gruppenbesitzer als Bearbeiter zugewiesen werden. '
-ms.openlocfilehash: 2f2e1be904b98ed4dc2b3b34088b344e05b03473
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d33c1c2409b866a48d0684612f8c878e14dedb68
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059652"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866024"
 ---
 # <a name="remove-accessreview-reviewer"></a>AccessReview Reviewer entfernen
 

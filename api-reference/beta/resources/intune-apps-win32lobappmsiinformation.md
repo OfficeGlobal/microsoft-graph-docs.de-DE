@@ -2,12 +2,13 @@
 title: Ressourcentyp win32LobAppMsiInformation
 description: Enthält die MSI-app-Eigenschaften für eine Win32-App.
 author: tfitzmac
-ms.openlocfilehash: 1753df68ab1f4b0e1649c16a4a7fa0ad49941bf9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e43b3dc9e46ed193b7547a7ce85863253445d30c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326138"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846515"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>Ressourcentyp win32LobAppMsiInformation
 
@@ -22,7 +23,7 @@ Enthält die MSI-app-Eigenschaften für eine Win32-App.
 |productCode|String|Der MSI-Produktcode.|
 |productVersion|String|Der MSI-Version des Produkts.|
 |upgradeCode|String|Die MSI-Datei aktualisieren von Code.|
-|requiresReboot|Boolesch|Gibt an, ob erfordert die MSI-app für den Computer neu starten, um die Installation abzuschließen.|
+|requiresReboot|Boolean|Gibt an, ob erfordert die MSI-app für den Computer neu starten, um die Installation abzuschließen.|
 |packageType|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|Der Typ des MSI-Paket. Mögliche Werte sind: `perMachine`, `perUser` und `dualPurpose`.|
 
 ## <a name="relationships"></a>Beziehungen

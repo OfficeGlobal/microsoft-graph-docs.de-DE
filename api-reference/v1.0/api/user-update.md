@@ -2,12 +2,13 @@
 title: Benutzer aktualisieren
 description: Mit dieser API können Sie die Eigenschaften eines Benutzerobjekts aktualisieren.
 author: dkershaw10
-ms.openlocfilehash: 1242c16ba0e99670e774c10072528125e12dc0fd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: cda0ddd32331edb4274404d3862e044a735dc7d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307532"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849112"
 ---
 # <a name="update-user"></a>Benutzer aktualisieren
 
@@ -29,7 +30,7 @@ Zum Aktualisieren der Eigenschaft „passwordProfile“ ist die folgende Berecht
 PATCH /users/{id | userPrincipalName}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert|
+| Kopfzeile       | Wert|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

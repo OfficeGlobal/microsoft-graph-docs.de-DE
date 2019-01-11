@@ -2,12 +2,13 @@
 title: Element endgültig löschen
 description: Dauerhaftes Löschen eines Elements aus dem Ordner Gelöschte Elemente.
 author: lleonard-msft
-ms.openlocfilehash: cdea85ee1b46b4d3c7156a599081a93f31318eac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a5f9bfb7a235386abb6f0e885aa9ada5f1e32517
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336470"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853973"
 ---
 # <a name="permanently-delete-item"></a>Element endgültig löschen
 

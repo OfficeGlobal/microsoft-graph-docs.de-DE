@@ -2,12 +2,13 @@
 title: ApplicationGuardEnabledOptions Enum-Typ
 description: Mögliche Werte für ApplicationGuardEnabledOptions
 author: tfitzmac
-ms.openlocfilehash: 9dd5327bb964f27706a0671a4cca41dda5b10780
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 599bae33fb5d76305256aeab2c3b339494f1143f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311970"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852521"
 ---
 # <a name="applicationguardenabledoptions-enum-type"></a>ApplicationGuardEnabledOptions Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27311970"
 
 Mögliche Werte für ApplicationGuardEnabledOptions
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Nicht konfiguriert|
 |enabledForEdge|1|Für einen Edgeserver aktiviert|

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp alertTrigger
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: 353f7dd09b11a2bfc509b53665c7f13ec390c80a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e375538806f09f85539f7a03e31c8a1ae041afdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058143"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866647"
 ---
 # <a name="alerttrigger-resource-type"></a>Ressourcentyp alertTrigger
 
@@ -19,7 +20,7 @@ Enthält Informationen zu den Eigenschaften, die eine Erkennung ausgelöst (Eige
 | Eigenschaft   | Typ|Beschreibung|
 |:---------------|:--------|:----------|
 |name|String|Der Name der Eigenschaft, die als eine Erkennung Trigger.|
-|Typ|String|Typ der Eigenschaft im Schlüssel / Wert-Paar für Auslegung. String, Boolean, beispielsweise usw.|
+|type|String|Typ der Eigenschaft im Schlüssel / Wert-Paar für Auslegung. String, Boolean, beispielsweise usw.|
 |Wert|Zeichenfolge|Der Wert der Eigenschaft, die als eine Erkennung Trigger.|
 
 ## <a name="json-representation"></a>JSON-Darstellung

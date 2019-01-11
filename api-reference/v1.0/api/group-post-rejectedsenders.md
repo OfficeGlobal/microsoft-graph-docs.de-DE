@@ -2,12 +2,13 @@
 title: rejectedSender erstellen
 description: Fügt einen neuen Benutzer oder eine neue Gruppe zur rejectedSender-Liste hinzu.
 author: dkershaw10
-ms.openlocfilehash: 26965d41c2f5f688303a19f94d717b62713e6482
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dbdf31c34fb9934ff705bc8d2be03efda8f4de12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354866"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826915"
 ---
 # <a name="create-rejectedsender"></a>rejectedSender erstellen
 Fügt einen neuen Benutzer oder eine neue Gruppe zur rejectedSender-Liste hinzu.
@@ -29,7 +30,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /groups/{id}/rejectedSenders/$ref
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

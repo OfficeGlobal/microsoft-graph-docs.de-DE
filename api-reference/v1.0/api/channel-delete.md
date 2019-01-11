@@ -2,12 +2,13 @@
 title: DDE-Kanal löschen
 description: Löschen Sie den Kanal.
 author: nkramer
-ms.openlocfilehash: e3500c536deca45b7444e149477c399cf1609a52
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5e0996f067eb08928baee11ef5c3dd09efcabaca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359556"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808211"
 ---
 # <a name="delete-channel"></a>DDE-Kanal löschen
 
@@ -36,7 +37,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 DELETE /teams/{id}/channels/{id}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

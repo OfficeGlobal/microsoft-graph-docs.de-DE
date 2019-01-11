@@ -2,12 +2,13 @@
 title: Ressourcentyp deviceManagementExchangeOnPremisesPolicy
 description: Singleton-Entität, die die für einen Mandanten konfigurierte Richtlinie für Exchange Verbindungspfad darstellt.
 author: tfitzmac
-ms.openlocfilehash: 84ef0e5794ed6cf7986bde7d08b876e54e7a6c8b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da4e17bc6051b8b03158da19ddb876457c7853d7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337212"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854999"
 ---
 # <a name="devicemanagementexchangeonpremisespolicy-resource-type"></a>Ressourcentyp deviceManagementExchangeOnPremisesPolicy
 

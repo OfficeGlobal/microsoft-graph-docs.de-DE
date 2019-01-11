@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Paket
-ms.openlocfilehash: 12ae750a0f4fbe0e951554308d4041928c31a16d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6f518058c6a68716f482bd9b6a870457de3d71a3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018928"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866416"
 ---
 # <a name="package-resource-type"></a>Package-Ressourcentyp
 
@@ -31,9 +32,9 @@ DriveItems mit dem **package**-Facet enthalten keine **folder**- oder **file**-F
 
 | Eigenschaftenname | Typ   | Beschreibung                                                                                                                                                                      |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Typ          | string | Eine Zeichenfolge, die den Typ des Pakets angibt. Während `oneNote` ist der einzige Wert derzeit definiert sind, sollten Sie erwarten, andere Pakettypen zurückgegeben werden, und sie entsprechend behandelt. |
+| type          | string | Eine Zeichenfolge, die den Typ des Pakets angibt. Während `oneNote` ist der einzige Wert derzeit definiert sind, sollten Sie erwarten, andere Pakettypen zurückgegeben werden, und sie entsprechend behandelt. |
 
-## <a name="remarks"></a>Hinweise 
+## <a name="remarks"></a>Bemerkungen 
 
 Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).
 

@@ -2,12 +2,13 @@
 title: Ressourcentyp androidForWorkApp
 description: Enthält Eigenschaften und geerbten Eigenschaften für Android für die Arbeit (AFW) Apps.
 author: tfitzmac
-ms.openlocfilehash: 1e754d6f893d536fbc52e492c87e163766afaffb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d62dded43d1ea622bd27a122d6535d71fae0cd6e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340628"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861439"
 ---
 # <a name="androidforworkapp-resource-type"></a>Ressourcentyp androidForWorkApp
 
@@ -25,7 +26,7 @@ Sie erbt von [mobileApp](../resources/intune-apps-mobileapp.md).
 |[Liste androidForWorkApps](../api/intune-apps-androidforworkapp-list.md)|[AndroidForWorkApp](../resources/intune-apps-androidforworkapp.md) -Auflistung|Listeneigenschaften und Beziehungen der [AndroidForWorkApp](../resources/intune-apps-androidforworkapp.md) -Objekte.|
 |[Abrufen von androidForWorkApp](../api/intune-apps-androidforworkapp-get.md)|[androidForWorkApp](../resources/intune-apps-androidforworkapp.md)|Lesen Sie Eigenschaften und Beziehungen des [AndroidForWorkApp](../resources/intune-apps-androidforworkapp.md) -Objekts.|
 |[Erstellen von androidForWorkApp](../api/intune-apps-androidforworkapp-create.md)|[androidForWorkApp](../resources/intune-apps-androidforworkapp.md)|Erstellen eines neuen [AndroidForWorkApp](../resources/intune-apps-androidforworkapp.md) -Objekts.|
-|[AndroidForWorkApp löschen](../api/intune-apps-androidforworkapp-delete.md)|Keines|Löscht eine [AndroidForWorkApp](../resources/intune-apps-androidforworkapp.md).|
+|[AndroidForWorkApp löschen](../api/intune-apps-androidforworkapp-delete.md)|Keine|Löscht eine [AndroidForWorkApp](../resources/intune-apps-androidforworkapp.md).|
 |[AndroidForWorkApp aktualisieren](../api/intune-apps-androidforworkapp-update.md)|[androidForWorkApp](../resources/intune-apps-androidforworkapp.md)|Aktualisieren Sie die Eigenschaften eines [AndroidForWorkApp](../resources/intune-apps-androidforworkapp.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
@@ -38,7 +39,7 @@ Sie erbt von [mobileApp](../resources/intune-apps-mobileapp.md).
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Das große Symbol, das in den App-Details angezeigt und für den Upload des Symbols verwendet werden soll. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|isFeatured|Boolescher Wert|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|isFeatured|Boolean|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |privacyInformationUrl|String|URL zur Datenschutzerklärung. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |informationUrl|String|URL zur Seite mit weiteren Informationen. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|String|Der Besitzer der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|

@@ -2,12 +2,13 @@
 title: Abrufen von mobileAppTroubleshootingEvent
 description: Lesen Sie Eigenschaften und Beziehungen des MobileAppTroubleshootingEvent-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 24adc2e292dce5d28737dde5ec545dfd08d3f5c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f22e0909b53695b7edde6f8469176c2ae2ead25
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312166"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861726"
 ---
 # <a name="get-mobileapptroubleshootingevent"></a>Abrufen von mobileAppTroubleshootingEvent
 
@@ -37,10 +38,10 @@ GET /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEve
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

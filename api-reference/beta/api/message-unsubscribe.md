@@ -2,12 +2,13 @@
 title: 'Meldung: Melden Sie sich ab'
 description: Fordert die e-Mail im Namen des angemeldeten Benutzers an eine e-Mail-Verteilerliste kündigen. Verwendet die Informationen in der `List-Unsubscribe` Kopfzeile.
 author: angelgolfer-ms
-ms.openlocfilehash: e516a8aa68bde02f056e503da9c85d4e7a6f62fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f66c24e2900ca4c881d08a402698dacbaf5af5f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357225"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877686"
 ---
 # <a name="message-unsubscribe"></a>Meldung: Melden Sie sich ab
 
@@ -42,7 +43,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/unsubscribe
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

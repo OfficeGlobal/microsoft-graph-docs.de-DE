@@ -2,12 +2,13 @@
 title: Anruf löschen
 description: Löschen oder einen aktiven Anruf Auflegen.
 author: VinodRavichandran
-ms.openlocfilehash: ae12a6ee937075745957cfccbd4adcbd4dc2f5f8
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 1d7c1ef73282a74c1934a0dbaebf1743bdff44ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380254"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848685"
 ---
 # <a name="delete-call"></a>Anruf löschen
 

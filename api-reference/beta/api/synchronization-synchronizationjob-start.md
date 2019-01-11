@@ -1,12 +1,13 @@
 ---
 title: SynchronizationJob starten
 description: Starten Sie eine vorhandene Synchronisierungsauftrag. Wenn der Auftrag angehalten ist, wird Verarbeitung Änderungen an der Stelle fortgesetzt, in dem er angehalten wurde. Wenn der Auftrag in Quarantäne befindet, wird der Quarantänestatus gelöscht.
-ms.openlocfilehash: c9f326a2c00564f25fb0ff982ede7e8454e14c8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 478f29d1c49cf6cc820fcc52393f4721ff94caac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065034"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826215"
 ---
 # <a name="start-synchronizationjob"></a>SynchronizationJob starten
 

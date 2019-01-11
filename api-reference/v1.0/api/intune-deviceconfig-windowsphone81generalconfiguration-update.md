@@ -2,12 +2,13 @@
 title: Aktualisieren von „windowsPhone81GeneralConfiguration“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs windowsPhone81GeneralConfiguration.
 author: tfitzmac
-ms.openlocfilehash: bbc7208465f625a105bc793681bfd28f8a4f6082
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c4393c3a8cf1f55dd199a69cc58cab5094c1b710
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352143"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827538"
 ---
 # <a name="update-windowsphone81generalconfiguration"></a>Aktualisieren von „windowsPhone81GeneralConfiguration“
 
@@ -33,10 +34,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [windowsPhone81GeneralConfiguration](../resources/intune-deviceconfig-windowsphone81generalconfiguration.md) an.
@@ -58,11 +59,11 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |cellularBlockWifiTethering|Boolean|Gibt an, ob WLAN-Tethering blockiert werden soll. Hat keine Auswirkungen, wenn die WLAN-Funktion blockiert ist.|
 |compliantAppsList|Collection von Objekten des Typs [appListItem](../resources/intune-deviceconfig-applistitem.md)|Liste aller Apps, für die die Konformitätsrichtlinie gilt (Zulassungsliste oder Sperrliste, gesteuert über „compliantAppListType“). Diese Collection darf maximal 10.000 Elemente enthalten.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Typ der in „compliantAppsList“ definierten Liste. Mögliche Werte sind: `none`, `appsInListCompliant` und `appsNotInListCompliant`.|
-|diagnosticDataBlockSubmission|Boolescher Wert|Gibt an, ob die Übermittlung von Diagnosedaten blockiert werden soll.|
+|diagnosticDataBlockSubmission|Boolean|Gibt an, ob die Übermittlung von Diagnosedaten blockiert werden soll.|
 |emailBlockAddingAccounts|Boolean|Gibt an, ob benutzerdefinierte E-Mail-Konten blockiert werden sollen.|
-|locationServicesBlocked|Boolescher Wert|Gibt an, ob die Ortungsdienste blockiert werden sollen.|
+|locationServicesBlocked|Boolean|Gibt an, ob die Ortungsdienste blockiert werden sollen.|
 |microsoftAccountBlocked|Boolean|Gibt an, ob die Verwendung eines Microsoft-Kontos erlaubt ist.|
-|nfcBlocked|Boolescher Wert|Gibt an, ob NFC (Near Field Communication) blockiert werden soll.|
+|nfcBlocked|Boolean|Gibt an, ob NFC (Near Field Communication) blockiert werden soll.|
 |passwordBlockSimple|Boolean|Gibt an, ob die Kalendersynchronisierung blockiert werden soll.|
 |passwordExpirationDays|Int32|Zeit in Tagen bis zum Ablaufen des Kennworts.|
 |passwordMinimumLength|Int32|Mindestlänge von Kennwörtern.|
@@ -71,11 +72,11 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |passwordPreviousPasswordBlockCount|Int32|Anzahl der zuletzt verwendeten Kennwörter, die nicht erneut verwendet werden dürfen. Gültige Werte: 0 bis 24.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Legt fest, nach wie vielen fehlgeschlagenen Anmeldeversuchen eine Zurücksetzung auf die Werkseinstellungen durchgeführt wird.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Geforderter Kennworttyp. Mögliche Werte sind: `deviceDefault`, `alphanumeric` und `numeric`.|
-|passwordRequired|Boolescher Wert|Gibt an, ob ein Kennwort erforderlich ist.|
-|screenCaptureBlocked|Boolescher Wert|Gibt an, ob Screenshots blockiert werden sollen.|
+|passwordRequired|Boolean|Gibt an, ob ein Kennwort erforderlich ist.|
+|screenCaptureBlocked|Boolean|Gibt an, ob Screenshots blockiert werden sollen.|
 |storageBlockRemovableStorage|Boolean|Gibt an, ob Wechselmedien blockiert werden sollen.|
 |storageRequireEncryption|Boolean|Gibt an, ob Verschlüsselung erforderlich ist.|
-|webBrowserBlocked|Boolescher Wert|Gibt an, ob der Webbrowser blockiert werden soll.|
+|webBrowserBlocked|Boolean|Gibt an, ob der Webbrowser blockiert werden soll.|
 |wifiBlocked|Boolean|Gibt an, ob die WLAN-Funktion blockiert werden soll.|
 |wifiBlockAutomaticConnectHotspots|Boolean|Gibt an, ob die automatische Herstellung einer Verbindung zu WLAN-Hotspots blockiert werden soll. Hat keine Auswirkungen, wenn die WLAN-Funktion blockiert ist.|
 |wifiBlockHotspotReporting|Boolean|Gibt an, ob die Erstellung von Berichten zu WLAN-Hotspots blockiert werden soll. Hat keine Auswirkungen, wenn die WLAN-Funktion blockiert ist.|

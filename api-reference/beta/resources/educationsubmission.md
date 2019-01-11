@@ -2,12 +2,13 @@
 title: Ressourcentyp educationSubmission
 description: Übermittlungen gehören eine Zuordnung. Eine Übermittlung stellt die Ressourcen, die eine einzelne (oder Gruppe) aktivieren im für eine Zuordnung und Note/Feedback zurückgegeben wird.
 author: dipakboyed
-ms.openlocfilehash: 5535aef4db988e0f4c4417128b5b53bbed884cc2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 92d0799b0052383d1ec12511ce98b3263245da9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328021"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847817"
 ---
 # <a name="educationsubmission-resource-type"></a>Ressourcentyp educationSubmission
 

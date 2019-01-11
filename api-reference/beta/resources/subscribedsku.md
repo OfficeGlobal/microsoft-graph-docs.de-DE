@@ -1,12 +1,13 @@
 ---
 title: subscribedSku-Ressourcentyp
 description: " Erstellen, Update und Delete werden nicht unterstützt. Abfrageausdrücke Filter werden nicht unterstützt. Erbt von directoryObject."
-ms.openlocfilehash: ab9b64d8de67379aa002ffeec78edd327b15b222
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 07f40c766d7f46974cf99b9954f63a61c2c0c621
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064767"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829603"
 ---
 # <a name="subscribedsku-resource-type"></a>subscribedSku-Ressourcentyp
 

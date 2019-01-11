@@ -2,12 +2,13 @@
 title: 'Rufen Sie: Übertragung'
 description: Weiterleiten eines aktiven Anrufs.
 author: VinodRavichandran
-ms.openlocfilehash: 71d250453051c705dcc0646a8e4ad298253d0ee6
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 5e1a26a1b3da1af8666d8fc5bcbba619c9fad97b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380506"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824899"
 ---
 # <a name="call-transfer"></a>Rufen Sie: Übertragung
 
@@ -22,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | :-------------- | :-------------------------------------------------- |
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt                |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                |
-| Application     | Calls.Initiate.All                                  |
+| Anwendung     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +43,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Der Teilnehmer, der das Ziel der Übertragung ist.|
-|clientContext|Zeichenfolge|Der Clientkontext.|
+|clientContext|String|Der Clientkontext.|
 
 ## <a name="response"></a>Antwort
 Gibt `202 Accepted` Antwortcode.

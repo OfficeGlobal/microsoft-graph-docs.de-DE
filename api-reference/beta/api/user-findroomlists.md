@@ -2,12 +2,13 @@
 title: 'Benutzer: FindRoomLists'
 description: Abrufen von Raumlisten in einem Mandanten definiert.
 author: dkershaw10
-ms.openlocfilehash: f96f8e5c6349e87d2d71820b7b7cd3b0367908f9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 55ff393e828d324035050e33cf194cb49d302080
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310773"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855734"
 ---
 # <a name="user-findroomlists"></a>Benutzer: FindRoomLists
 
@@ -40,7 +41,7 @@ GET /users/<id>/findRoomLists
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung |
 |:---------------|:----------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Content-Type  | string  | application/json. Erforderlich.  |
 
 

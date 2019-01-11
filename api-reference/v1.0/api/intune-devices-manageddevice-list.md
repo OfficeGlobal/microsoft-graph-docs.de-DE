@@ -2,12 +2,13 @@
 title: Auflisten von „managedDevice“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs managedDevice auf.
 author: tfitzmac
-ms.openlocfilehash: 1c0d44aa3589af1b0a2a82dfe9c1b9300361a34b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1f870ad57cd959acfff7ab02cb0e29e904fcb076
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349280"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830702"
 ---
 # <a name="list-manageddevices"></a>Auflisten von „managedDevice“
 
@@ -35,10 +36,10 @@ GET /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

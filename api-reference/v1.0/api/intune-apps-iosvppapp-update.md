@@ -2,12 +2,13 @@
 title: iosVppApp aktualisieren
 description: Aktualisiert die Eigenschaften von Objekten des Typs iosVppApp.
 author: tfitzmac
-ms.openlocfilehash: 05da16de7fc9d9cf5c556fd48f29d327bd6cd6eb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b93a85cf49eb700259c18c036ca7448fc3e9ad24
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348006"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873528"
 ---
 # <a name="update-iosvppapp"></a>iosVppApp aktualisieren
 
@@ -33,10 +34,10 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [iosVppApp](../resources/intune-apps-iosvppapp.md)-Objekts an.
@@ -52,7 +53,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Das große Symbol, das in den App-Details angezeigt und für den Upload des Symbols verwendet werden soll. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|isFeatured|Boolescher Wert|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|isFeatured|Boolean|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |privacyInformationUrl|String|URL zur Datenschutzerklärung. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |informationUrl|String|URL zur Seite mit weiteren Informationen. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|String|Der Besitzer der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -62,13 +63,13 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |usedLicenseCount|Int32|Anzahl von VPP-Lizenzen, die aktuell verwendet werden.|
 |totalLicenseCount|Int32|Gesamtanzahl von VPP-Lizenzen.|
 |releaseDateTime|DateTimeOffset|Datum und Uhrzeit der Veröffentlichung der VPP-Anwendung.|
-|appStoreUrl|String|Store-URL|
+|appStoreUrl|Zeichenfolge|Store-URL|
 |licensingType|[vppLicensingType](../resources/intune-apps-vpplicensingtype.md)|Unterstützter Lizenztyp|
 |applicableDeviceType|[iosDeviceType](../resources/intune-apps-iosdevicetype.md)|Gültiger iOS-Gerätetyp|
-|vppTokenOrganizationName|String|Organisation, die dem Apple Volume Purchase Program-Token zugeordnet ist|
+|vppTokenOrganizationName|Zeichenfolge|Organisation, die dem Apple Volume Purchase Program-Token zugeordnet ist|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|Volume Purchase Program-Typ, dem das angegebene Apple Volume Purchase Program-Token zugeordnet ist. Mögliche Werte sind: `business` und `education`. Mögliche Werte sind: `business` und `education`.|
-|vppTokenAppleId|String|Apple-ID, die dem Apple Volume Purchase Program-Token zugeordnet ist|
-|bundleId|String|Identitätsname|
+|vppTokenAppleId|Zeichenfolge|Apple-ID, die dem Apple Volume Purchase Program-Token zugeordnet ist|
+|bundleId|Zeichenfolge|Identitätsname|
 
 
 

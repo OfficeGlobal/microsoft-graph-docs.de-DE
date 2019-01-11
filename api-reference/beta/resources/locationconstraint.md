@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp „locationConstraint“
 description: Die vom Client definierten Bedingungen für den Ort einer Besprechung
-ms.openlocfilehash: d151ea97aa65aabdb759be4cb90b577606c648a5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b1ff078efd5608fa388587003cf904c2b995f12e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059848"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851527"
 ---
 # <a name="locationconstraint-resource-type"></a>Ressourcentyp „locationConstraint“
 
@@ -37,7 +38,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|isRequired|Boolescher Wert|Der Client fordert den Dienst auf, in der Antwort einen Besprechungsort für die Besprechung anzugeben. Ist diese Eigenschaft auf „true“ gesetzt und alle Ressourcen sind gebucht, gibt [findMeetingTimes](../api/user-findmeetingtimes.md) keine Besprechungsterminvorschläge zurück. Ist diese Eigenschaft auf „false“ gesetzt und alle Ressourcen sind gebucht, sucht **findMeetingTimes** trotzdem nach Besprechungsterminen, jedoch nicht nach Orten. |
+|isRequired|Boolean|Der Client fordert den Dienst auf, in der Antwort einen Besprechungsort für die Besprechung anzugeben. Ist diese Eigenschaft auf „true“ gesetzt und alle Ressourcen sind gebucht, gibt [findMeetingTimes](../api/user-findmeetingtimes.md) keine Besprechungsterminvorschläge zurück. Ist diese Eigenschaft auf „false“ gesetzt und alle Ressourcen sind gebucht, sucht **findMeetingTimes** trotzdem nach Besprechungsterminen, jedoch nicht nach Orten. |
 |locations|[locationConstraintItem](locationconstraintitem.md) collection|Einschränkungsinformationen für einen oder mehrere Orte, die der Kunde für die Besprechung anfordert|
 |suggestLocation|Boolean|Der Client fordert den Dienst auf, einen oder mehrere Besprechungsorte vorzuschlagen.|
 

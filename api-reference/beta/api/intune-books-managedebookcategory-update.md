@@ -2,12 +2,13 @@
 title: ManagedEBookCategory aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines ManagedEBookCategory-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 5dea4bce1750617367f972f64a734ac151d2676f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ef8970fb32b94b17b9277c3d30fc72bbc582ea87
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333656"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853193"
 ---
 # <a name="update-managedebookcategory"></a>ManagedEBookCategory aktualisieren
 
@@ -36,10 +37,10 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/categories/{managedEBo
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [ManagedEBookCategory](../resources/intune-books-managedebookcategory.md) eine JSON-Darstellung.

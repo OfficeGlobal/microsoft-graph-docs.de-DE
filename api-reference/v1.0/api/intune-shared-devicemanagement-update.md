@@ -2,12 +2,13 @@
 title: Aktualisieren von „deviceManagement“
 description: Aktualisieren der Eigenschaften eines deviceManagement-Objekts.
 author: tfitzmac
-ms.openlocfilehash: d8a84c61751fdbc8267b846a70adb44d2affbfa2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e88b6379e340865adeb41bb0430fd8eecc8f0b69
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331668"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860683"
 ---
 # <a name="update-devicemanagement"></a>Aktualisieren von „deviceManagement“
 
@@ -46,10 +47,10 @@ PATCH /deviceManagement
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceManagement](../resources/intune-shared-devicemanagement.md) an.

@@ -2,12 +2,13 @@
 title: deviceEnrollmentPlatformRestrictionsConfiguration erstellen
 description: Erstellen eines neuen deviceEnrollmentPlatformRestrictionsConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: af34d4d845a3b0804391a1ba5b4f1dd3aa70730f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 82ff5652cb70cb05f8df5620ba1ef59f601d6645
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358772"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846928"
 ---
 # <a name="create-deviceenrollmentplatformrestrictionsconfiguration"></a>deviceEnrollmentPlatformRestrictionsConfiguration erstellen
 
@@ -35,10 +36,10 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des deviceEnrollmentPlatformRestrictionsConfiguration-Objekts an.

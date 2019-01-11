@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp synchronizationError
 description: Stellt einen Fehler, der während der Synchronisation aufgetreten sind.
-ms.openlocfilehash: a1e3725151a4e36772cd3b6079f787370f4c85dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cc6b58444ac56303bfd2e41f1fcae17658f6aea9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058917"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847243"
 ---
 # <a name="synchronizationerror-resource-type"></a>Ressourcentyp synchronizationError
 
@@ -21,7 +22,7 @@ Stellt einen Fehler, der während der Synchronisation aufgetreten sind.
 |:---------------|:--------|:----------|
 |code|String||
 |message|String||
-|tenantActionable|Boolesch||
+|tenantActionable|Boolean||
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

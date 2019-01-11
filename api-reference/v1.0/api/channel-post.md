@@ -1,12 +1,13 @@
 ---
 title: Erstellen von DDE-Kanal
 description: Erstellen Sie einen neuen Kanal in einem Microsoft-Team, wie im Textkörper Anforderung angegeben.
-ms.openlocfilehash: 9fb327e947585732e9a17151d4cc06e8d50c4bf1
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+localization_priority: Priority
+ms.openlocfilehash: d80659a3ecb69a33a9ea3a23a9ce94f13d6b95a4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222583"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847593"
 ---
 # <a name="create-channel"></a>Erstellen von DDE-Kanal
 
@@ -34,7 +35,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /teams/{id}/channels
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

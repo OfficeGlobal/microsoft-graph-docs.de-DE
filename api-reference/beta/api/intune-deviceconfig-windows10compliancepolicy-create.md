@@ -2,12 +2,13 @@
 title: windows10CompliancePolicy erstellen
 description: Erstellt neue Objekte des Typs windows10CompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 50d1230a6e1580008e501745f9c7918da5031187
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ee738bc07ab0d246ecb5a61df244b08287a58d4c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360914"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847803"
 ---
 # <a name="create-windows10compliancepolicy"></a>windows10CompliancePolicy erstellen
 
@@ -35,10 +36,10 @@ POST /deviceManagement/deviceCompliancePolicies
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des windows10CompliancePolicy-Objekts an.
@@ -68,22 +69,22 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |osMaximumVersion|String|Maximalversion von Windows 10|
 |mobileOsMinimumVersion|String|Mindestversion von Windows Phone|
 |mobileOsMaximumVersion|String|Maximalversion von Windows Phone|
-|earlyLaunchAntiMalwareDriverEnabled|Boolescher Wert|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: Der Treiber für Antischadsoftware-Frühstart ist aktiviert.|
-|bitLockerEnabled|Boolescher Wert|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: BitLocker ist aktiviert.|
-|secureBootEnabled|Boolescher Wert|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: Die Option „Sicherer Start“ ist aktiviert.|
-|codeIntegrityEnabled|Boolescher Wert|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss.|
-|storageRequireEncryption|Boolescher Wert|Legt fest, dass auf Windows-Geräten Verschlüsselung gefordert wird.|
-|activeFirewallRequired|Boolesch|Erfordern Sie active Firewall auf Windows-Geräten.|
-|defenderEnabled|Boolesch|Benötigen Sie Windows Defender Modul auf Windows-Geräten.|
+|earlyLaunchAntiMalwareDriverEnabled|Boolean|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: Der Treiber für Antischadsoftware-Frühstart ist aktiviert.|
+|bitLockerEnabled|Boolean|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: BitLocker ist aktiviert.|
+|secureBootEnabled|Boolean|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: Die Option „Sicherer Start“ ist aktiviert.|
+|codeIntegrityEnabled|Boolean|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss.|
+|storageRequireEncryption|Boolean|Legt fest, dass auf Windows-Geräten Verschlüsselung gefordert wird.|
+|activeFirewallRequired|Boolean|Erfordern Sie active Firewall auf Windows-Geräten.|
+|defenderEnabled|Boolean|Benötigen Sie Windows Defender Modul auf Windows-Geräten.|
 |defenderVersion|String|Benötigen Sie mindestens Version von Windows Defender Modul auf Windows-Geräten.|
-|signatureOutOfDate|Boolesch|Benötigen Sie Windows Defender Modul Signatur, um auf Windows-Geräten Stand sein.|
-|rtpEnabled|Boolesch|Benötigen Sie Windows Defender Modul Real-Time Schutz auf Windows-Geräten.|
-|antivirusRequired|Boolesch|Erfordern Sie Antivirus-Lösung mit Windows Decurity Center befinden registriert und Überwachung (z. B. Symantec, Windows Defender).|
-|antiSpywareRequired|Boolesch|Erfordern Sie AntiSpyware-Lösung mit Windows Decurity Center befinden registriert und Überwachung (z. B. Symantec, Windows Defender).|
+|signatureOutOfDate|Boolean|Benötigen Sie Windows Defender Modul Signatur, um auf Windows-Geräten Stand sein.|
+|rtpEnabled|Boolean|Benötigen Sie Windows Defender Modul Real-Time Schutz auf Windows-Geräten.|
+|antivirusRequired|Boolean|Erfordern Sie Antivirus-Lösung mit Windows Decurity Center befinden registriert und Überwachung (z. B. Symantec, Windows Defender).|
+|antiSpywareRequired|Boolean|Erfordern Sie AntiSpyware-Lösung mit Windows Decurity Center befinden registriert und Überwachung (z. B. Symantec, Windows Defender).|
 |validOperatingSystemBuildRanges|[OperatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md) -Auflistung|Das gültige Betriebssystem erstellen Bereiche auf Windows-Geräten. Diese Collection darf maximal 10.000 Elemente enthalten.|
-|deviceThreatProtectionEnabled|Boolescher Wert|Legt fest, dass auf Geräten der Gerätebedrohungsschutz aktiviert sein muss.|
+|deviceThreatProtectionEnabled|Boolean|Legt fest, dass auf Geräten der Gerätebedrohungsschutz aktiviert sein muss.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Erfordern Sie Gerät Bedrohung minimalem Risiko Mail-Schutzstufe Kompatibilität vorgesehenen Unwichtigstes. Mögliche Werte sind: `unavailable`, `secured`, `low`, `medium`, `high` und `notSet`.|
-|configurationManagerComplianceRequired|Boolesch|SCCM Compliance Zustand berücksichtigt für Intune Compliance Zustand berücksichtigen müssen.|
+|configurationManagerComplianceRequired|Boolean|SCCM Compliance Zustand berücksichtigt für Intune Compliance Zustand berücksichtigen müssen.|
 
 
 

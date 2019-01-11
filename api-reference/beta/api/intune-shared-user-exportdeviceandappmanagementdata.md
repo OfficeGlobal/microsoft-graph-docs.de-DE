@@ -2,12 +2,13 @@
 title: ExportDeviceAndAppManagementData-Funktion
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 3ec79080a2e4f6f5da3622dedfedc486231703ee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c7c4bc294d382cf1e1917a2c5a607a7c90107856
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352220"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872846"
 ---
 # <a name="exportdeviceandappmanagementdata-function"></a>ExportDeviceAndAppManagementData-Funktion
 
@@ -40,10 +41,10 @@ GET /users/{usersId}/exportDeviceAndAppManagementData
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 

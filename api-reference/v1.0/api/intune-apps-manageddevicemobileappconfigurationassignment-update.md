@@ -2,12 +2,13 @@
 title: Aktualisieren von „managedDeviceMobileAppConfigurationAssignment“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs managedDeviceMobileAppConfigurationAssignment.
 author: tfitzmac
-ms.openlocfilehash: a9c1c7b1f0af2ec49080d6b6e225d3923b7f37b5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 58d28cb3e80f127f164e65861a15c230ef2d45fb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301435"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864232"
 ---
 # <a name="update-manageddevicemobileappconfigurationassignment"></a>Aktualisieren von „managedDeviceMobileAppConfigurationAssignment“
 
@@ -33,10 +34,10 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) an.

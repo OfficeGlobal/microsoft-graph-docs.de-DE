@@ -2,12 +2,13 @@
 title: directoryRoleTemplates auflisten
 description: Abrufen einer Liste von Directoryroletemplate-Objekten.
 author: lleonard-msft
-ms.openlocfilehash: bc61c7b4c41fd3d5a6a884cf27c6f86c09aabf94
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a61127b7fdd31ce55f44a42ac847c5ac50932cf6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346130"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848566"
 ---
 # <a name="list-directoryroletemplates"></a>directoryRoleTemplates auflisten
 
@@ -34,7 +35,7 @@ Die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

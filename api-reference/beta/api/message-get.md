@@ -2,12 +2,13 @@
 title: Nachricht abrufen
 description: Rufen Sie die Eigenschaften und Beziehungen des Message-Objekts ab.
 author: angelgolfer-ms
-ms.openlocfilehash: 8408e9ef0347721978eb1be00c64ce1f66f882d1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5c83d0e9a59a69ebf0e20cfa0f883301b827c84f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352676"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852388"
 ---
 # <a name="get-message"></a>Nachricht abrufen
 
@@ -62,7 +63,7 @@ Sie können die `$expand` erweitert Abfragezeichenfolgen-Parameter auf Navigatio
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Besser: outlook.body-content-type | string | Das Format, in der die **body**- und **uniqueBody**-Eigenschaften zurückgegeben werden sollen. Werte können „Text“ oder „html“ sein. Als Bestätigung wird eine `Preference-Applied`-Kopfzeile zurückgegeben, wenn diese `Prefer`-Kopfzeile angegeben ist. Wenn die Kopfzeile nicht angegeben ist, werden die **body**- und **uniqueBody**-Eigenschaften im HTML-Format zurückgegeben. Optional. |
 
 ## <a name="request-body"></a>Anforderungstext

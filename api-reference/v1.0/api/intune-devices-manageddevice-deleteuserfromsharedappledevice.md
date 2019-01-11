@@ -2,12 +2,13 @@
 title: deleteUserFromSharedAppleDevice-Aktion
 description: Benutzer von freigegebenem Apple-Gerät löschen
 author: tfitzmac
-ms.openlocfilehash: e2b2eb30f54c3e1efe53c3b99049cfccb3e3aa98
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dbbd42b2efc7b0c7e5367f7f3692f01c7fc6661e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329883"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830576"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>deleteUserFromSharedAppleDevice-Aktion
 
@@ -35,10 +36,10 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.

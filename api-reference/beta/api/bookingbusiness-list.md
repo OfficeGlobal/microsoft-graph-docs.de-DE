@@ -1,12 +1,13 @@
 ---
 title: Liste bookingBusinesses
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: 8c1a27c5e3c90d96bab9bc2e007d49e0dee9ce0e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 270bda6aca601951ea56a9ddf9364d1459496699
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059381"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849210"
 ---
 # <a name="list-bookingbusinesses"></a>Liste bookingBusinesses
 

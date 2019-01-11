@@ -2,12 +2,13 @@
 title: Ressourcentyp resultInfo
 description: Der Typ des ResultInfo.
 author: VinodRavichandran
-ms.openlocfilehash: db208ed214213ec906dac18b65140f010014fc6c
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: ca814fd5c44f0f811099faed53354d08ce8befdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380408"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855279"
 ---
 # <a name="resultinfo-resource-type"></a>Ressourcentyp resultInfo
 
@@ -19,9 +20,9 @@ Der Typ des ResultInfo.
 
 | Eigenschaft | Typ   | Beschreibung          |
 | :------- | :----- | :------------------  |
-| code     | Zeichenfolge | Der Ergebniscode.     |
-| message  | Zeichenfolge | Die Nachricht.         |
-| subCode  | Zeichenfolge | Der untergeordneten Ergebniscode. |
+| code     | String | Der Ergebniscode.     |
+| message  | String | Die Nachricht.         |
+| subCode  | String | Der untergeordneten Ergebniscode. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
