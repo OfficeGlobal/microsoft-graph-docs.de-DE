@@ -2,12 +2,13 @@
 title: GetTopMobileApps-Funktion
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 03157e744358f4d76e781d33ae056104cf0a1130
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d4f9299e2de7dca455d192637eba84ccc553d434
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322729"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879499"
 ---
 # <a name="gettopmobileapps-function"></a>GetTopMobileApps-Funktion
 
@@ -37,8 +38,8 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie in der Anforderungs-URL die folgenden Abfrageparameter mit Werten an.
@@ -46,7 +47,7 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|status|String|Noch nicht dokumentiert|
+|status|Zeichenfolge|Noch nicht dokumentiert|
 |count|Int64|Noch nicht dokumentiert|
 
 

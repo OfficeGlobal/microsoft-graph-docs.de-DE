@@ -2,12 +2,13 @@
 title: androidMinimumOperatingSystem-Ressourcentyp
 description: Enthält die Eigenschaften des für eine mobile Android-App mindestens erforderlichen Betriebssystems.
 author: tfitzmac
-ms.openlocfilehash: 6b2533b5b92da20410c3657df9d7194fb6b08e86
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 96b68aa12a1cbd0abe2b7761b44a0ef9a5863048
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357512"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875866"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>androidMinimumOperatingSystem-Ressourcentyp
 
@@ -27,9 +28,9 @@ Enthält die Eigenschaften des für eine mobile Android-App mindestens erforderl
 |v4_4|Boolescher Wert|Version 4.4 oder höher|
 |v5_0|Boolescher Wert|Version 5.0 oder höher|
 |v5_1|Boolescher Wert|Version 5.1 oder höher|
-|v6_0|Boolesch|Version 6.0 oder höher.|
-|v7_0|Boolesch|Version 7.0 oder höher.|
-|v7_1|Boolesch|Version 7.1 oder später.|
+|v6_0|Boolescher Wert|Version 6.0 oder höher.|
+|v7_0|Boolescher Wert|Version 7.0 oder höher.|
+|v7_1|Boolescher Wert|Version 7.1 oder später.|
 |v8_0|Boolescher Wert|Version 8.0 oder höher|
 |v8_1|Boolescher Wert|Version 8.1 oder höher.|
 |v9_0|Boolescher Wert|Version 9.0 oder höher|

@@ -2,12 +2,13 @@
 title: Liste androidForWorkMobileAppConfigurations
 description: Listeneigenschaften und Beziehungen der AndroidForWorkMobileAppConfiguration-Objekte.
 author: tfitzmac
-ms.openlocfilehash: d727f5752d863bcc5efd803031ceff4cbd71c975
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4d8ae140fae118ec7778b0188706a518485fbbc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318543"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879261"
 ---
 # <a name="list-androidforworkmobileappconfigurations"></a>Liste androidForWorkMobileAppConfigurations
 
@@ -35,10 +36,10 @@ GET /deviceAppManagement/mobileAppConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

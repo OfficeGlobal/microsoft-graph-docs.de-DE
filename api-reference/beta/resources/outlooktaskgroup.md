@@ -2,12 +2,13 @@
 title: Ressourcentyp outlookTaskGroup
 description: 'Eine Gruppe von Ordnern (OutlookTaskFolder), die Outlook-Aufgaben (Auflistung von OutlookTask-Objekten) enthalten. '
 author: angelgolfer-ms
-ms.openlocfilehash: 9fed69e1401f2b11ae3630a3c4cef66fd9446920
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5e885c4c8cc2abe4b3890635e010d495267dc877
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359395"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878771"
 ---
 # <a name="outlooktaskgroup-resource-type"></a>Ressourcentyp outlookTaskGroup
 
@@ -31,11 +32,11 @@ In Outlook eine Aufgabe Standardgruppe vorhanden ist `My Tasks` das Umbenennen o
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|changeKey|String|Die Version der Aufgabengruppe.|
+|changeKey|Zeichenfolge|Die Version der Aufgabengruppe.|
 |groupKey|Edm.Guid|Der eindeutige GUID-Bezeichner für die Aufgabengruppe.|
-|id|String|Der eindeutige Zeichenfolgenbezeichner der Aufgabengruppe. Schreibgeschützt.|
-|isDefaultGroup|Boolesch|True, wenn die "Task Group" der Standardproxygruppe für die Aufgabe ist.|
-|name|String|Der Name der Aufgabengruppe.|
+|id|Zeichenfolge|Der eindeutige Zeichenfolgenbezeichner der Aufgabengruppe. Schreibgeschützt.|
+|isDefaultGroup|Boolescher Wert|True, wenn die "Task Group" der Standardproxygruppe für die Aufgabe ist.|
+|name|Zeichenfolge|Der Name der Aufgabengruppe.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|

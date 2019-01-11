@@ -2,12 +2,13 @@
 title: Ressourcentyp teamsApp
 description: Eine app in den Microsoft-Teams, app-Katalog.
 author: nkramer
-ms.openlocfilehash: 207974800e44e0db29b8c42f260a1ac16a18902f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 8f3e5b094b46376bd9ad5e9e888d76f8a995fed3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359584"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880829"
 ---
 # <a name="teamsapp-resource-type"></a>Ressourcentyp teamsApp
 
@@ -24,7 +25,7 @@ Benutzer können diese apps im Microsoft-Teams Store anzeigen, und diese apps in
 |[Liste der veröffentlichten apps](../api/teamsapp-list.md) | [TeamsApp](teamsapp.md) -Auflistung | Veröffentlichte apps aus dem Microsoft-Teams, apps Katalog aufgelistet.|
 |[Veröffentlichen einer app](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Veröffentlichen einer app in Ihrer Organisation app-Katalog.|
 |[Aktualisieren einer veröffentlichten Anwendung](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Aktualisieren einer veröffentlichten-app in Ihrer Organisation app-Katalog.|
-|[Entfernen einer veröffentlichten Anwendung](../api/teamsapp-delete.md) | Keines | Entfernen Sie eine veröffentlichte app aus Ihrer Organisation app-Katalog.|
+|[Entfernen einer veröffentlichten Anwendung](../api/teamsapp-delete.md) | Keine | Entfernen Sie eine veröffentlichte app aus Ihrer Organisation app-Katalog.|
 
 ## <a name="properties"></a>Eigenschaften
 
@@ -37,7 +38,7 @@ Benutzer können diese apps im Microsoft-Teams Store anzeigen, und diese apps in
 
 ### <a name="teamsappdistributionmethod-values"></a>TeamsAppDistributionMethod Werte
 
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |Speichern|0| Die app ist für alle Mandanten über Microsoft-Teams app Store verfügbar.|
 |Organisation|1|Die app ist nur in diesen Mandanten verfügbar.|
@@ -66,7 +67,7 @@ Benutzer können diese apps im Microsoft-Teams Store anzeigen, und diese apps in
 }
 ```
 
-# <a name="see-also"></a>Siehe auch
+# <a name="see-also"></a>Weitere Artikel
 
 - [teamsAppInstallation](teamsappinstallation.md)
 - [teamsAppDefinition](teamsappdefinition.md)

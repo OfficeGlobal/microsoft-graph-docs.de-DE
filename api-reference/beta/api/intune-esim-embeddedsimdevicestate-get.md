@@ -2,12 +2,13 @@
 title: Abrufen von embeddedSIMDeviceState
 description: Lesen Sie Eigenschaften und Beziehungen des EmbeddedSIMDeviceState-Objekts.
 author: tfitzmac
-ms.openlocfilehash: d9ffb9c915d29a096a39b4cc9499eb712def5892
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: de2b5c5d04239eb5d4086c4399043d373bf7de66
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352010"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877441"
 ---
 # <a name="get-embeddedsimdevicestate"></a>Abrufen von embeddedSIMDeviceState
 
@@ -39,8 +40,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

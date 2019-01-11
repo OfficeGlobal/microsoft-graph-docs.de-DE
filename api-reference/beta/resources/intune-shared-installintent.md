@@ -2,12 +2,13 @@
 title: InstallIntent Enum-Typ
 description: Mögliche Werte für die Installation Absicht durch den Administrator ausgewählt
 author: tfitzmac
-ms.openlocfilehash: c32bafd0e9cc2b4325b9674a17ac8d14272bce9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fd64622fd9471c0aff9f9d50ef9c0ad1a9e2ef63
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305838"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874977"
 ---
 # <a name="installintent-enum-type"></a>InstallIntent Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27305838"
 
 Mögliche Werte für die Installation Absicht durch den Administrator ausgewählt
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |Verfügbar|0|Verfügbare Install beabsichtigt.|
 |erforderlich|1|Installieren der erforderlichen beabsichtigt.|

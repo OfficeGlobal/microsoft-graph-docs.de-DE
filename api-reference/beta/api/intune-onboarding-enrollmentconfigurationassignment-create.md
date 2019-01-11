@@ -2,12 +2,13 @@
 title: enrollmentConfigurationAssignment erstellen
 description: Erstellen eines neuen enrollmentConfigurationAssignment-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 2fcbecdb5f1333326888e86c74aab1b03252ccd2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5541b89a01ea0384506803f605ee33abc6fe32aa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344464"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873829"
 ---
 # <a name="create-enrollmentconfigurationassignment"></a>enrollmentConfigurationAssignment erstellen
 
@@ -37,8 +38,8 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs enrollmentConfigurationAssignment an.
@@ -47,7 +48,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Noch nicht dokumentiert.|
+|id|Zeichenfolge|Noch nicht dokumentiert.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Noch nicht dokumentiert.|
 
 

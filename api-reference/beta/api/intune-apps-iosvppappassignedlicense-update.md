@@ -2,12 +2,13 @@
 title: IosVppAppAssignedLicense aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines IosVppAppAssignedLicense-Objekts.
 author: tfitzmac
-ms.openlocfilehash: e15aba6cf5ca5225210e946f04a6b1bff82cdd83
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 226a192e5a3da8071b5c31a523f97c60ecec8b09
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322323"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879156"
 ---
 # <a name="update-iosvppappassignedlicense"></a>IosVppAppAssignedLicense aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/as
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [IosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) eine JSON-Darstellung.
@@ -47,11 +48,11 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|userEmailAddress|String|Die e-Mail-Adresse des Benutzers.|
-|userId|String|Die Benutzer-ID.|
-|userName|String|Der Benutzername.|
-|userPrincipalName|String|Der Benutzerprinzipalname.|
+|id|Zeichenfolge|Schlüssel der Entität|
+|userEmailAddress|Zeichenfolge|Die e-Mail-Adresse des Benutzers.|
+|userId|Zeichenfolge|Die Benutzer-ID.|
+|userName|Zeichenfolge|Der Benutzername.|
+|userPrincipalName|Zeichenfolge|Der Benutzerprinzipalname.|
 
 
 

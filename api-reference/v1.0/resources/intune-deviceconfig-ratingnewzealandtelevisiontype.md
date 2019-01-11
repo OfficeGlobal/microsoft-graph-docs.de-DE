@@ -2,12 +2,13 @@
 title: RatingNewZealandTelevisionType Enum-Typ
 description: TV zum Bewerten Bezeichnungen in Neuseeland
 author: tfitzmac
-ms.openlocfilehash: fd390f678cf2d44239fbc86abda369c22a396504
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fcafb9c202f9392d5dc3ba834e7c7e78d2592972
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311900"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875488"
 ---
 # <a name="ratingnewzealandtelevisiontype-enum-type"></a>RatingNewZealandTelevisionType Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27311900"
 
 TV zum Bewerten Bezeichnungen in Neuseeland
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |allAllowed|0|Standardwert, zulassen, dass alle TV Inhalt anzeigt.|
 |allBlocked|1|Lassen Sie nicht, dass alle TV Inhalt anzeigt.|

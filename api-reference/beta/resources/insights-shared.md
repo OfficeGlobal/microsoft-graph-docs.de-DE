@@ -2,12 +2,13 @@
 title: freigegebene Ressource-Typ
 description: 'Einen Einblick, freigegebene mit oder von einem bestimmten Benutzer Dateien darstellt. Die folgenden freigegebenen Dateien werden unterstützt:'
 author: simonhult
-ms.openlocfilehash: fc48fe3c591d981bd6229c26aaccb85552f4836f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 289523f836d7b8080f7317e4d11301c71314ba93
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315806"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880612"
 ---
 # <a name="shared-resource-type"></a>freigegebene Ressource-Typ
 
@@ -30,7 +31,7 @@ Einen Einblick, freigegebene mit oder von einem bestimmten Benutzer Dateien dars
 
 | Eigenschaft              | Typ                      | Beschreibung  |
 | -------------         |---------------            | -------------|
-| id                    | String                    | Eindeutiger Bezeichner der Beziehung. Schreibgeschützt.        |
+| id                    | Zeichenfolge                    | Eindeutiger Bezeichner der Beziehung. Schreibgeschützt.        |
 | lastShared            | [sharingDetail](insights-sharingdetail.md)                | Informationen zu freigegebenen Elements. Schreibgeschützt.        |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | Eigenschaften, die Sie verwenden können, um das Dokument in Ihre Erfahrung visualisieren. Schreibgeschützt.      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | Referenz-Eigenschaften des freigegebenen Dokuments, wie die Url und den Typ des Dokuments. Schreibgeschützt.       |

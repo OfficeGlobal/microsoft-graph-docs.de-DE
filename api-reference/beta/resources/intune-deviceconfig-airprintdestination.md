@@ -2,12 +2,13 @@
 title: Ressourcentyp airPrintDestination
 description: Stellt ein AirPrint Ziel.
 author: tfitzmac
-ms.openlocfilehash: 046f85c65d382b34e6920f30f6b2718f817371a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6d1548737956d35d42fc077afe92de1885a54581
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361054"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878589"
 ---
 # <a name="airprintdestination-resource-type"></a>Ressourcentyp airPrintDestination
 
@@ -20,9 +21,9 @@ Stellt ein AirPrint Ziel.
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |ipAddress|Zeichenfolge|Die IP-Adresse des Ziels AirPrint.|
-|Http://|String|Der Pfad der Ressource mit dem Drucker verknüpft ist. Dies entspricht dem Rp-Parameter, der die _ipps.tcp Bonjour Datensatz. Beispiel: Drucker/Canon_MG5300_series, Drucker/Xerox_Phaser_7600, Ipp/Epson_IPP_Printer drucken.|
+|Http://|Zeichenfolge|Der Pfad der Ressource mit dem Drucker verknüpft ist. Dies entspricht dem Rp-Parameter, der die _ipps.tcp Bonjour Datensatz. Beispiel: Drucker/Canon_MG5300_series, Drucker/Xerox_Phaser_7600, Ipp/Epson_IPP_Printer drucken.|
 |port|Int32|Der Überwachungsport des Ziels AirPrint. Wenn dieser Schlüssel nicht angegeben ist, wird AirPrint den Standardport verwenden. In iOS 11.0 und höher verfügbar.|
-|forceTls|Boolesch|Wenn true AirPrint Verbindungen von Transport Layer Security (TLS) gesichert werden. Standard ist false. In iOS 11.0 und höher verfügbar.|
+|forceTls|Boolescher Wert|Wenn true AirPrint Verbindungen von Transport Layer Security (TLS) gesichert werden. Standard ist false. In iOS 11.0 und höher verfügbar.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

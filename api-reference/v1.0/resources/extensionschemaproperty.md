@@ -1,12 +1,13 @@
 ---
 title: extensionSchemaProperty-Ressourcentyp
 description: Verwenden Sie die **extensionSchemaProperty**-Ressource, um den Namen und den Typ einer Eigenschaft im Rahmen einer schemaExtension-Definition zu definieren.
-ms.openlocfilehash: 1ea2fca1812765aab49d548dd3cd3ed0575e30aa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 384f60c323ca6c6fb23d2f4811a6d2cb918bf844
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016664"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880570"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>extensionSchemaProperty-Ressourcentyp
 

@@ -2,12 +2,13 @@
 title: Erstellen von androidManagedStoreAppConfigurationSchema
 description: Erstellen eines neuen AndroidManagedStoreAppConfigurationSchema-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 6e8cb3cc56eb1e6f0cded7539b86aea24194fba1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c3cf700bb835df981c419fc15b56ef5fbc905fea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327734"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874543"
 ---
 # <a name="create-androidmanagedstoreappconfigurationschema"></a>Erstellen von androidManagedStoreAppConfigurationSchema
 
@@ -37,8 +38,8 @@ POST /deviceManagement/androidManagedStoreAppConfigurationSchemas
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt AndroidManagedStoreAppConfigurationSchema eine JSON-Darstellung.
@@ -47,7 +48,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität (Name des Android-Pakets der Anwendung), der das Schema entspricht|
+|id|Zeichenfolge|Schlüssel der Entität (Name des Android-Pakets der Anwendung), der das Schema entspricht|
 |exampleJson|Binär|UTF8-codiertes Bytearray mit der diesem Schema entsprechenden JSON-Beispielzeichenfolge, das veranschaulicht, wie die Konfiguration für diese App festgelegt werden soll|
 |schemaItems|[AndroidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) -Auflistung|Collection von Elementen, die jeweils eine benannte Konfigurationsoption im Schema darstellen|
 

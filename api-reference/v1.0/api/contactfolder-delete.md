@@ -2,12 +2,13 @@
 title: contactFolder löschen
 description: Mit dieser API können Sie Ressourcen des Typs „contactFolder“ löschen (nicht jedoch die als Standardordner festgelegte Ressource des Typs „contactFolder“).
 author: angelgolfer-ms
-ms.openlocfilehash: 3111958deba7f18585d0594bd718ebd3155ac517
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c97cd4a049b6122cbc0e708ed114f0cc822658ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304963"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871428"
 ---
 # <a name="delete-contactfolder"></a>contactFolder löschen
 
@@ -30,7 +31,7 @@ DELETE /users/{id | userPrincipalName}/contactFolders/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

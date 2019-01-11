@@ -2,12 +2,13 @@
 title: macOSDeviceFeaturesConfiguration löschen
 description: Löscht ein macOSDeviceFeaturesConfiguration-Objekt.
 author: tfitzmac
-ms.openlocfilehash: ff436f0071346d89ab89ce68f8d99e00093d2b2f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a0c85766a02ecba992ebd2e131d33e93f9f71c07
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301365"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878575"
 ---
 # <a name="delete-macosdevicefeaturesconfiguration"></a>macOSDeviceFeaturesConfiguration löschen
 
@@ -39,8 +40,8 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

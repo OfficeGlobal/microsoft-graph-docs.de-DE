@@ -2,12 +2,13 @@
 title: managedEBookAssignment-Ressourcentyp
 description: Enthält Eigenschaften zum Zuweisen eines E-Books zu einer Gruppe.
 author: tfitzmac
-ms.openlocfilehash: d5b9d7a3d4574c2098dbe694eb208894c4262514
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 75caa5561e1bb7d447da2943d3f9f9b4909694e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362762"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880654"
 ---
 # <a name="managedebookassignment-resource-type"></a>managedEBookAssignment-Ressourcentyp
 
@@ -26,7 +27,7 @@ Enthält Eigenschaften zum Zuweisen eines E-Books zu einer Gruppe.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Zuweisungsziel für das E-Book|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|Installationspriorität für das E-Book. Mögliche Werte: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 

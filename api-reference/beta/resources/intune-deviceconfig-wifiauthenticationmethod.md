@@ -2,12 +2,13 @@
 title: WiFiAuthenticationMethod Enum-Typ
 description: Wi-Fi-Authentifizierungsmethode.
 author: tfitzmac
-ms.openlocfilehash: f0e7dc7e5ef19d79035bec59d9f7a1824881923e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 15abeae8d3029e823439020857e045ef13f1b7b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336897"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878834"
 ---
 # <a name="wifiauthenticationmethod-enum-type"></a>WiFiAuthenticationMethod Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27336897"
 
 Wi-Fi-Authentifizierungsmethode.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |certificate|0|Verwenden Sie ein Zertifikat Identität für die Authentifizierung.|
 |usernameAndPassword|1|Verwenden Sie Benutzername und Kennwort für die Authentifizierung.|

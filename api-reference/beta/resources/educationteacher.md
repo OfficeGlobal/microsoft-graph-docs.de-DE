@@ -2,12 +2,13 @@
 title: educationTeacher-Ressourcentyp
 description: Zusätzliche Informationen, die einem vorhandenen educationUser hinzugefügt werden, wenn die primaryRole eines Benutzers `teacher` ist.
 author: mmast-msft
-ms.openlocfilehash: ca174381fe8722c5b96848ced1d0e09b469068f9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eece9080c34855d4546321b7605b47f4b2f231a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351660"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875964"
 ---
 # <a name="educationteacher-resource-type"></a>educationTeacher-Ressourcentyp
 

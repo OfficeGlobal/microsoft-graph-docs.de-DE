@@ -1,12 +1,13 @@
 ---
 title: 'DirectoryObject: ValidateProperties'
 description: Überprüfen Sie, ob eine Office 365-Gruppe Display Name oder die e-Mail-Spitzname naming Richtlinien entspricht.  Clients können mithilfe der API bestimmen, ob ein Anzeigename oder e-Mail-Spitzname ist gültig, bevor Sie versuchen, eine Office 365-Gruppe zu **Erstellen** . Verwenden Sie zum Überprüfen von Eigenschaften einer vorhandenen Gruppe, die ValidateProperties-Funktion für Gruppen.
-ms.openlocfilehash: 82592eff14829fdd8ae1d74c87f43402a3938adf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1f38a30d86cf5b28eea6b9891687c4dbca4b78fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059590"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879821"
 ---
 # <a name="directoryobject-validateproperties"></a>DirectoryObject: ValidateProperties
 
@@ -41,9 +42,9 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|entityType|String| `Group`ist der einzige unterstützte Entitätstyp an. |
-|displayName|String| Der Anzeigename der Gruppe zu überprüfen. Die Eigenschaft ist nicht einzeln erforderlich. Mindestens eine Eigenschaft (DisplayName oder MailNickname) ist jedoch erforderlich. |
-|mailNickname|String| Die e-Mail-Spitzname der Gruppe zu überprüfen. Die Eigenschaft ist nicht einzeln erforderlich. Mindestens eine Eigenschaft (DisplayName oder MailNickname) ist jedoch erforderlich. |
+|entityType|Zeichenfolge| `Group`ist der einzige unterstützte Entitätstyp an. |
+|displayName|Zeichenfolge| Der Anzeigename der Gruppe zu überprüfen. Die Eigenschaft ist nicht einzeln erforderlich. Mindestens eine Eigenschaft (DisplayName oder MailNickname) ist jedoch erforderlich. |
+|mailNickname|Zeichenfolge| Die e-Mail-Spitzname der Gruppe zu überprüfen. Die Eigenschaft ist nicht einzeln erforderlich. Mindestens eine Eigenschaft (DisplayName oder MailNickname) ist jedoch erforderlich. |
 |onBehalfOfUserId|Guid| Die Objekt-ID des Benutzers zum imitieren beim Aufrufen der API. Die Überprüfungsergebnisse werden für die OnBehalfOfUserId Attribute und Rollen. |
 
 ## <a name="response"></a>Antwort

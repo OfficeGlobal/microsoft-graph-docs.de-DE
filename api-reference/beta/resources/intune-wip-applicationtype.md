@@ -2,12 +2,13 @@
 title: ApplicationType Enum-Typ
 description: Möglichen Typen der Anwendung
 author: tfitzmac
-ms.openlocfilehash: 33b895d251f366af0051081f17662d8e7f34aecf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9e18b32fe446768d965181a5e0684f6d615e2fc6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316632"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879625"
 ---
 # <a name="applicationtype-enum-type"></a>ApplicationType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27316632"
 
 Möglichen Typen der Anwendung
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |universelle|1|Die universellen Windows-Anwendung|
 |Desktop|2|Die Windows-desktop-Anwendung|

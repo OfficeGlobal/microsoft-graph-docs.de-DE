@@ -2,12 +2,13 @@
 title: Ressourcentyp officeClientConfiguration
 description: Office-Client-Konfiguration.
 author: tfitzmac
-ms.openlocfilehash: 67a7845a2e0327e2e5de37d424274f6e2ee35604
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 297383f8b7450e6d0df268afc4c009b3110205ee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303836"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879632"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>Ressourcentyp officeClientConfiguration
 
@@ -22,7 +23,7 @@ Office-Client-Konfiguration.
 |[Liste officeClientConfigurations](../api/intune-cirrus-officeclientconfiguration-list.md)|[OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) -Auflistung|Listeneigenschaften und Beziehungen der [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) -Objekte.|
 |[Abrufen von officeClientConfiguration](../api/intune-cirrus-officeclientconfiguration-get.md)|[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|Lesen Sie Eigenschaften und Beziehungen des [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) -Objekts.|
 |[assign-Aktion](../api/intune-cirrus-officeclientconfiguration-assign.md)|[OfficeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) -Auflistung|Ersetzen Sie alle Gruppen für eine Richtlinie.|
-|[UpdatePriorities Aktion](../api/intune-cirrus-officeclientconfiguration-updatepriorities.md)|Keines|Aktualisieren Sie die Richtlinie Prioritäten.|
+|[UpdatePriorities Aktion](../api/intune-cirrus-officeclientconfiguration-updatepriorities.md)|Keine|Aktualisieren Sie die Richtlinie Prioritäten.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|

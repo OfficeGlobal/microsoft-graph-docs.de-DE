@@ -2,12 +2,13 @@
 title: Ressourcentyp educationSubmissionResource
 description: 'Ein Wrapper für eine Ressource für die Verwendung einer Übermittlung. Der Wrapper wird die Zuordnung Ressource einen Zeiger hinzugefügt, sofern dies in der Zuweisung kopiert wurde.  '
 author: dipakboyed
-ms.openlocfilehash: bfbf2f522106f5a1e2033898cbb2702223d3e241
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8703072fccb77a2577db6ce0717647e79a47fdc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361558"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875985"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>Ressourcentyp educationSubmissionResource
 

@@ -2,12 +2,13 @@
 title: managedAppPolicyDeploymentSummary-Ressourcentyp
 description: ManagedAppEntity ist der Basisentitätstyp für alle anderen Entitätstypen im App-Verwaltungsworkflow.
 author: tfitzmac
-ms.openlocfilehash: 872a5685cce5d7c422035670eb10d72185fd344f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: edc039f5f5da1b0cf0798fcd7055d5239926acf1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305789"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878078"
 ---
 # <a name="managedapppolicydeploymentsummary-resource-type"></a>managedAppPolicyDeploymentSummary-Ressourcentyp
 
@@ -25,12 +26,12 @@ ManagedAppEntity ist der Basisentitätstyp für alle anderen Entitätstypen im A
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|String|Noch nicht dokumentiert|
+|displayName|Zeichenfolge|Noch nicht dokumentiert|
 |configurationDeployedUserCount|Int32|Noch nicht dokumentiert|
 |lastRefreshTime|DateTimeOffset|Noch nicht dokumentiert|
 |configurationDeploymentSummaryPerApp|Collection von Objekten des Typs [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md)|Noch nicht dokumentiert|
-|id|String|Schlüssel der Entität|
-|Version|String|Version der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Version|Zeichenfolge|Version der Entität|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

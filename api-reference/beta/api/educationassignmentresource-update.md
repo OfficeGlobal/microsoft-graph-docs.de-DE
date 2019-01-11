@@ -2,12 +2,13 @@
 title: EducationAssignmentResource aktualisieren
 description: 'Aktualisieren Sie die Eigenschaften der Ressource einer Zuordnung zugeordnet. Zuordnungsfeld Resource-Objekten können nur Lehrer in einer Klasse geändert werden.  '
 author: dipakboyed
-ms.openlocfilehash: 68c8f471462c489e9e655a1642731be3a8700ba4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 91321cc124baa87a82f2f1f5fecc65365cafc18d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343218"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879310"
 ---
 # <a name="update-educationassignmentresource"></a>EducationAssignmentResource aktualisieren
 
@@ -40,7 +41,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolesch| Gibt an, ob diese Ressource in jeder Student Resource-Objekt kopiert werden soll, wenn die Zuordnung veröffentlicht wird.|
+|distributeForStudentWork|Boolescher Wert| Gibt an, ob diese Ressource in jeder Student Resource-Objekt kopiert werden soll, wenn die Zuordnung veröffentlicht wird.|
 |resource|educationResource| Resource-Objekt. |
 
 ## <a name="response"></a>Antwort

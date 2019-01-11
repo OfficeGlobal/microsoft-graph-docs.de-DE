@@ -2,12 +2,13 @@
 title: Abrufen von androidWorkProfileTrustedRootCertificate
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidWorkProfileTrustedRootCertificate-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 473568f12b90af2af6e085202243dff1257059b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e0cead3035cb2614d0158b3dfa269abdc206ad82
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360081"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878386"
 ---
 # <a name="get-androidworkprofiletrustedrootcertificate"></a>Abrufen von androidWorkProfileTrustedRootCertificate
 
@@ -41,8 +42,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

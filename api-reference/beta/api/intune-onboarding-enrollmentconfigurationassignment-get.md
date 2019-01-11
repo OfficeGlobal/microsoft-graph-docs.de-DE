@@ -2,12 +2,13 @@
 title: Abrufen von „enrollmentConfigurationAssignment“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs enrollmentConfigurationAssignment.
 author: tfitzmac
-ms.openlocfilehash: 9e42fa6976d08a56668d2f6dfb871d689f0b893e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3417c175f2b47e6549363b61724f2d39595bfd0f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333779"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872744"
 ---
 # <a name="get-enrollmentconfigurationassignment"></a>Abrufen von „enrollmentConfigurationAssignment“
 
@@ -39,8 +40,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

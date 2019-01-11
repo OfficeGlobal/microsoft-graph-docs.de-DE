@@ -2,12 +2,13 @@
 title: Ressourcentyp teamMessagingSettings
 description: So konfigurieren Sie die messaging-Einstellungen und erwähnungen im Team.
 author: nkramer
-ms.openlocfilehash: 387c2e3ccedc6f11f17d4868b1b0d3eaf67624fa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: df80fbb828a400e736b2e8c3b73f949fe6bfd1ca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304550"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878379"
 ---
 # <a name="teammessagingsettings-resource-type"></a>Ressourcentyp teamMessagingSettings
 
@@ -18,11 +19,11 @@ So konfigurieren Sie die messaging-Einstellungen und erwähnungen im [Team](team
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|allowUserEditMessages|Boolesch|Wenn es sich bei Festlegung auf true können Benutzer ihre Nachrichten bearbeiten kann.|
-|allowUserDeleteMessages|Boolesch|Bei Festlegung auf true können Benutzer ihre Nachrichten löschen kann.|
-|allowOwnerDeleteMessages|Boolesch|Bei Festlegung auf "true" Websitebesitzer eine beliebige Nachricht löschen kann.|
-|allowTeamMentions|Boolesch|Wenn Festlegung auf "true", "@team erwähnungen sind zulässig.|
-|allowChannelMentions|Boolesch|Wenn Festlegung auf "true", "@channel erwähnungen sind zulässig.|
+|allowUserEditMessages|Boolescher Wert|Wenn es sich bei Festlegung auf true können Benutzer ihre Nachrichten bearbeiten kann.|
+|allowUserDeleteMessages|Boolescher Wert|Bei Festlegung auf true können Benutzer ihre Nachrichten löschen kann.|
+|allowOwnerDeleteMessages|Boolescher Wert|Bei Festlegung auf "true" Websitebesitzer eine beliebige Nachricht löschen kann.|
+|allowTeamMentions|Boolescher Wert|Wenn Festlegung auf "true", "@team erwähnungen sind zulässig.|
+|allowChannelMentions|Boolescher Wert|Wenn Festlegung auf "true", "@channel erwähnungen sind zulässig.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

@@ -1,12 +1,13 @@
 ---
 title: Mitgliedsobjekte abrufen
 description: " Gibt alle Gruppen, administrative Einheiten und Directory Rollen, denen ein Benutzer, Gruppe, Dienstprinzipale oder Directory-Objekt ein Mitglied ist. Diese Funktion ist transitiv. "
-ms.openlocfilehash: f1bf68276fc4ed7d4694fadc73a08ae328047222
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f63c077414f656df168db5c5af498cec0f79e703
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058326"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874802"
 ---
 # <a name="get-member-objects"></a>Mitgliedsobjekte abrufen
 

@@ -2,12 +2,13 @@
 title: Gelöschte Elemente auflisten
 description: Abrufen einer Liste kürzlich gelöschter Elemente aus den gelöschten Elementen.
 author: lleonard-msft
-ms.openlocfilehash: 205052402f4402b9895cca6cc46b6ab656a51ed8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ef23704c01a7d1b6cd3a85ffcab1dc34ded0936d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358723"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879436"
 ---
 # <a name="list-deleted-items"></a>Gelöschte Elemente auflisten
 

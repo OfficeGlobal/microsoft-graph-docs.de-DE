@@ -2,12 +2,13 @@
 title: Ressourcentyp audioSourceLevel
 description: Konfiguration für andere Datenquellen.
 author: VinodRavichandran
-ms.openlocfilehash: 5d5abe7eba03891427b30ba1c8f63b15b3707e46
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: adf3c4805271d0a8d02d25fc8e7ecb547db10215
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380240"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880640"
 ---
 # <a name="audiosourcelevel-resource-type"></a>Ressourcentyp audioSourceLevel
 
@@ -19,9 +20,9 @@ Konfiguration für andere Datenquellen.
 
 | Eigenschaft               | Typ    | Beschreibung                                                                                         |
 | :--------------------- | :------ | :---------------------------------------------------------------------------------------------------|
-| duckOthers             | Boolescher Wert | Dieser Quelle zu anderen Quellen, während es aktiv Wildenten ermöglicht. Wenn auf true festgelegt ist, vermeiden Ebene festgelegt ist festgelegt werden soll.|
+| duckOthers             | Boolean | Dieser Quelle zu anderen Quellen, während es aktiv Wildenten ermöglicht. Wenn auf true festgelegt ist, vermeiden Ebene festgelegt ist festgelegt werden soll.|
 | Ebene                  | Int64   | Ebene der Quelle vermeiden, wenn `duckOthers` auf festgelegt ist `true`.                                     |
-| Teilnehmer            | Zeichenfolge  | Die Teilnehmer Audiostream von Quelle.                                                                |
+| Teilnehmer            | String  | Die Teilnehmer Audiostream von Quelle.                                                                |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

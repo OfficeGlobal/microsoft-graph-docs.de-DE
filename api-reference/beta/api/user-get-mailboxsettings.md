@@ -1,12 +1,13 @@
 ---
 title: Postfacheinstellungen des Benutzers abrufen
 description: 'Abrufen des Benutzers MailboxSettings. Einschließlich der Einstellungen für automatische Antworten (Personen automatisch beim Benachrichtigen '
-ms.openlocfilehash: fae1bb16ec533abf7f29d0aadc0f66ba33f5ec25
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2d1e2ce16d82e89e701bbe90386c28b76d1607c0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064616"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880178"
 ---
 # <a name="get-user-mailbox-settings"></a>Postfacheinstellungen des Benutzers abrufen
 

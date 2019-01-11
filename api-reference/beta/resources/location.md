@@ -1,12 +1,13 @@
 ---
 title: Location-Ressourcentyp
 description: Stellt Standortinformationen eines Ereignisses dar.
-ms.openlocfilehash: fec075d37bfb2d7eca80f5007db53801dda96ed8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 650876596e2cf9336054957cfd4c95bf4dad16b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058236"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879401"
 ---
 # <a name="location-resource-type"></a>Location-Ressourcentyp
 
@@ -31,12 +32,12 @@ Je nachdem, wie ein Ereignis erstellt wurde, wird die schreibgeschützte **locat
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |Die Adresse des Orts. |
 | Koordinaten | [outlookGeoCoordinates](outlookgeocoordinates.md) | Die geografischen Koordinaten und die Erhebung des Orts. |
-| displayName  | String | Der Name, der mit dem Ort verknüpft ist                       |
+| displayName  | Zeichenfolge | Der Name, der mit dem Ort verknüpft ist                       |
 | locationEmailAddress | String | Optionale E-Mail-Adresse des Orts. |
-| locationUri | String | Optionaler URI, der den Ort darstellt. |
-| locationType | String | Der Typ des Orts. Mögliche Werte sind: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Schreibgeschützt.|
-| uniqueId | String | Nur für internen Gebrauch.|
-| uniqueIdType | String | Nur für internen Gebrauch. |
+| locationUri | Zeichenfolge | Optionaler URI, der den Ort darstellt. |
+| locationType | Zeichenfolge | Der Typ des Orts. Mögliche Werte sind: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Schreibgeschützt.|
+| uniqueId | Zeichenfolge | Nur für internen Gebrauch.|
+| uniqueIdType | Zeichenfolge | Nur für internen Gebrauch. |
 
 
 ## <a name="json-representation"></a>JSON-Darstellung

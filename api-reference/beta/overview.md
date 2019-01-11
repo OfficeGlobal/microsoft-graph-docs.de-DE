@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph Beta Endpunkt (engl.)
 description: 'Der Verweis Inhalt in diesem Abschnitt dokumentiert Microsoft Graph Beta Endpunkts. Der Beta-Endpunkt enthält APIs, die derzeit in der Vorschau und sind noch nicht in der Regel verfügbar. Wir möchten Sie einladen, versuchen, diesen APIs, und geben Sie Ihr Feedback über die folgenden Kanäle:'
-ms.openlocfilehash: 9ed6362405a6ff542b707ac546383a9820a8228d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 9f9223c36679865b40303dc3530dee9c2c93950d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065025"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874305"
 ---
 # <a name="microsoft-graph-beta-endpoint-reference"></a>Microsoft Graph Beta Endpunkt (engl.)
 
@@ -27,7 +28,7 @@ Microsoft Graph-API-Anforderungen an den Endpunkt Beta verwenden Sie Folgendes M
 
 Weitere Informationen hierzu finden Sie unter [Verwendung der Microsoft Graph-API](/graph/use-the-api).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Übersicht über Microsoft Graph](/graph/overview)
 - [Microsoft Graph-Tester](https://developer.microsoft.com/graph/graph-explorer)

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp directoryDefinition
 description: Enthält die Synchronisierung Engine ein Verzeichnis und ihre Objekte Informationen. Diese Ressource weist dem Synchronisierungsmodul beispielsweise, dass das Verzeichnis enthält Objekte, die mit der **Benutzer** und **Gruppen**, welche Attribute für diese Objekte und die Typen für diese Attribute unterstützt werden. In der Reihenfolge für das Objekt und das Attribut an Synchronisierungsregeln und Objekt Zuordnungen teilzunehmen müssen sie als Teil der Definition der Directory definiert werden.
-ms.openlocfilehash: ddc32237efc18d43da23d815aea00ee01b2650be
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e6b2b55fb9e9e7963b01403c6aed2f0997e2318b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065679"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874522"
 ---
 # <a name="directorydefinition-resource-type"></a>Ressourcentyp directoryDefinition
 
@@ -22,9 +23,9 @@ Verzeichnis Definitionen werden als Teil der [Synchronisierungsschema](synchroni
 
 | Eigenschaft      | Typ      | Beschreibung    |
 |:--------------|:----------|:---------------|
-|id           |String     |Directory-Bezeichner. Lässt keine Nullwerte zu.|
+|id           |Zeichenfolge     |Directory-Bezeichner. Lässt keine Nullwerte zu.|
 |Metadaten       |MetadataEntry-Auflistung    |Zusätzliche Erweiterungseigenschaften. Es sei denn, Sie explizit erwähnt, sollte Metadatenwerte nicht geändert werden.|
-|name           |String     |Der Name des Verzeichnisses. Muss innerhalb der [Synchronisierungsschema](synchronization-synchronizationschema.md)eindeutig sein. Lässt keine Nullwerte zu.|
+|name           |Zeichenfolge     |Der Name des Verzeichnisses. Muss innerhalb der [Synchronisierungsschema](synchronization-synchronizationschema.md)eindeutig sein. Lässt keine Nullwerte zu.|
 |Objekte        |[sind](synchronization-objectdefinition.md) -Auflistung    |Auflistung von Objekten, die durch das Verzeichnis unterstützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung

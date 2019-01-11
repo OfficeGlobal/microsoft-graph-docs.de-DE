@@ -1,12 +1,13 @@
 ---
 title: Einen Vorgesetzten zuweisen
 description: Verwenden Sie diese API, um den Vorgesetzten eines Benutzers zuzuweisen.
-ms.openlocfilehash: ab48d0546b533fcc137d31cdc889072abf48fcfe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ddbb73b5306188f2126f7817ddde6d02bde6f850
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018088"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877497"
 ---
 # <a name="assign-a-manager"></a>Einen Vorgesetzten zuweisen
 

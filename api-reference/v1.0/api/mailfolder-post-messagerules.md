@@ -2,12 +2,13 @@
 title: Regel erstellen
 description: 'Erstellen Sie ein  messageRule-Objekt, indem Sie eine Gruppe von Bedingungen und Aktionen angeben. '
 author: angelgolfer-ms
-ms.openlocfilehash: 72c4991e077364514104d5bbc8e24625526bce51
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4adea9e35a3dcd5278c96f5689167554b1700d94
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361355"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880150"
 ---
 # <a name="create-rule"></a>Regel erstellen
 

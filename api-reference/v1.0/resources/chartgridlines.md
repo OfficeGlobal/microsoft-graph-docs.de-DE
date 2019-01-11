@@ -2,12 +2,13 @@
 title: ChartGridlines-Ressourcentyp
 description: Stellt Haupt-Gitternetzlinien oder Hilfs-Gitternetzlinien auf einer Diagrammachse dar.
 author: lumine2008
-ms.openlocfilehash: 2aaf044b09d061af4853e76e0f2ba118bd1b2321
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b95bc8c23ea71abb0d2c3f54e218d425e3d188ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353032"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880346"
 ---
 # <a name="chartgridlines-resource-type"></a>ChartGridlines-Ressourcentyp
 
@@ -29,7 +30,7 @@ Stellt Haupt-Gitternetzlinien oder Hilfs-Gitternetzlinien auf einer Diagrammachs
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Format|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|Stellt die Formatierung der Diagrammgitternetzlinien dar. Schreibgeschützt.|
+|format|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|Stellt die Formatierung der Diagrammgitternetzlinien dar. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

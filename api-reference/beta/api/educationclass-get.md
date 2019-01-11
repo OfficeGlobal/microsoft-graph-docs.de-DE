@@ -1,12 +1,13 @@
 ---
 title: EducationClass abrufen
 description: "  Gruppe Administratoren stellen die Lehrer in der Klasse dar. Wenn Sie das delegierte Token verwenden, werden dem Benutzer nur Klassen angezeigt, in denen er Mitglied ist."
-ms.openlocfilehash: 931c47a0885d8b82411410721fb0729aa250a422
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9d4a48a12d05bd7ef6bd1c6204ce23755b26019e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063069"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874928"
 ---
 # <a name="get-educationclass"></a>EducationClass abrufen
 
@@ -32,7 +33,7 @@ GET /education/classes/{id}
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

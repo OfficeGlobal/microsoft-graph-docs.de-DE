@@ -2,12 +2,13 @@
 title: Abrufen von enterpriseCodeSigningCertificate
 description: Lesen Sie Eigenschaften und Beziehungen des EnterpriseCodeSigningCertificate-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 2e6cd58c6cae8921d8fa117388ac774f006a8ae8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c1d280b44e583d9218be1128c1683c1db0c91680
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321868"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874809"
 ---
 # <a name="get-enterprisecodesigningcertificate"></a>Abrufen von enterpriseCodeSigningCertificate
 
@@ -39,8 +40,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

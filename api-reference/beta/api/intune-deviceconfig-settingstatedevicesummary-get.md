@@ -2,12 +2,13 @@
 title: Abrufen von „settingStateDeviceSummary“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs settingStateDeviceSummary.
 author: tfitzmac
-ms.openlocfilehash: 3308a4fff48b6433d7c35303566ddc73f03c23e6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc8ab9e2dbc9e12fec1b0d8e4a3bf14fe92c69e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333509"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878407"
 ---
 # <a name="get-settingstatedevicesummary"></a>Abrufen von „settingStateDeviceSummary“
 
@@ -48,8 +49,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

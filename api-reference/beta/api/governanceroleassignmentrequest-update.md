@@ -1,12 +1,13 @@
 ---
 title: GovernanceRoleAssignmentRequests aktualisieren
 description: So aktualisieren Sie ihre Entscheidungen Administratoren können (`AdminApproved` oder `AdminDenied`) auf GovernanceRoleAssignmentRequests, die in den Status der sind `PendingAdminDecision`.
-ms.openlocfilehash: bd924acd8ddd3a79ad1fb97ac5f9bdc9baba17dd
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 3d68e06688922177e2a1a183a9fe4bfc6be6a91d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191151"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874935"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>GovernanceRoleAssignmentRequests aktualisieren
 
@@ -41,10 +42,10 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 |Parameter      |Typ                   |Erforderlich |Beschreibung|
 |:-------------|:----------------------|:--------|:----------|
-|Grund        |String                 |✓        |Der Grund für seine Entscheidung vom Administrator bereitgestellten.|
-|Entscheidung        |String                 |✓        |Die Entscheidung Administrator der Rolle Zuordnung Anforderung. Der Wert aktualisiert werden sollen, als `AdminApproved` oder `AdminDenied`.|
+|Grund        |Zeichenfolge                 |✓        |Der Grund für seine Entscheidung vom Administrator bereitgestellten.|
+|Entscheidung        |Zeichenfolge                 |✓        |Die Entscheidung Administrator der Rolle Zuordnung Anforderung. Der Wert aktualisiert werden sollen, als `AdminApproved` oder `AdminDenied`.|
 |Zeitplan      |[governanceSchedule](../resources/governanceschedule.md)|        | Den Zeitplan der Rolle Zuordnung Anforderung. Status der `AdminApproved`, es ist erforderlich.|
-|assignmentState      |String|         | Der Status der Aufgabe und die Werte sind möglich `Eligible` oder `Active`. Für die Entscheidung der `AdminApproved`, es ist erforderlich. |
+|assignmentState      |Zeichenfolge|         | Der Status der Aufgabe und die Werte sind möglich `Eligible` oder `Active`. Für die Entscheidung der `AdminApproved`, es ist erforderlich. |
 ### <a name="response"></a>Antwort
 Diese Methode kann nur angewendet werden, auf Anfragen, die in den Status der sind `PendingAdminDecision`.
 

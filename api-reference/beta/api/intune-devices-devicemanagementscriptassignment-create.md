@@ -2,12 +2,13 @@
 title: Erstellen von deviceManagementScriptAssignment
 description: Erstellen eines neuen DeviceManagementScriptAssignment-Objekts.
 author: tfitzmac
-ms.openlocfilehash: c0ef551c7f049e05dc13fd0371734206514fc534
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3584460da7865d4f9aa7b9c57df050f5b992de16
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363760"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878617"
 ---
 # <a name="create-devicemanagementscriptassignment"></a>Erstellen von deviceManagementScriptAssignment
 
@@ -37,8 +38,8 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assign
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt DeviceManagementScriptAssignment eine JSON-Darstellung.
@@ -47,7 +48,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Taste der Gerät Management Skript Gruppe Zuordnung Entität.|
+|id|Zeichenfolge|Taste der Gerät Management Skript Gruppe Zuordnung Entität.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Die Id des Azure Active Directory-Gruppe verwenden wir das Skript Inhaltsadressierung für.|
 
 

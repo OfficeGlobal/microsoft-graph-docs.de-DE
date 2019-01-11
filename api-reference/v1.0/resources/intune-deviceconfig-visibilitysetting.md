@@ -2,12 +2,13 @@
 title: VisibilitySetting Enum-Typ
 description: Generische Sichtbarkeitszustand.
 author: tfitzmac
-ms.openlocfilehash: 23ba9f0495e60e0cbe7ff3a1f26e4b0cfa0d5129
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 32949fa460e04e0ddc4d27862ab7e2967450e50e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301946"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880374"
 ---
 # <a name="visibilitysetting-enum-type"></a>VisibilitySetting Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27301946"
 
 Generische Sichtbarkeitszustand.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Nicht konfiguriert.|
 |Ausblenden|1|Ausblenden|

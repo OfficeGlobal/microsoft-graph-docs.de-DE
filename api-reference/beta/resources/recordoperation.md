@@ -2,12 +2,13 @@
 title: Ressourcentyp recordOperation
 description: Der RecordOperation-Typ
 author: VinodRavichandran
-ms.openlocfilehash: 54b39f30df1dd53a95260b549ae9fab2eedddfd8
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: be6a124fcd7175489679a8c2392218530d510e9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880017"
 ---
 # <a name="recordoperation-resource-type"></a>Ressourcentyp recordOperation
 
@@ -19,13 +20,13 @@ Der RecordOperation-Typ
 
 | Eigenschaft                       | Typ                        | Beschreibung                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientContext                  | Zeichenfolge                      | Der Clientkontext.                                                                                                                               |
-| completionReason               | Zeichenfolge                      | Mögliche Werte: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError`, `none`. |
+| clientContext                  | String                      | Der Clientkontext.                                                                                                                               |
+| completionReason               | String                      | Mögliche Werte: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError`, `none`. |
 | createdDateTime                | DateTimeOffset              | Die Uhrzeit der Erstellung die Aufzeichnung.                                                                                                          |
-| id                             | Zeichenfolge                      | Die Id des Server-Vorgang. Schreibgeschützt. Server generiert wurde.                                                                                             |
+| id                             | String                      | Die Id des Server-Vorgang. Schreibgeschützt. Server generiert wurde.                                                                                             |
 | lastActionDateTime             | DateTimeOffset              | Der Zeitpunkt der letzten Aktion des Vorgangs.                                                                                                     |
-| recordResourceAccessToken      | Zeichenfolge                      | Das Zugriffstoken zum Abrufen der aufzeichnungs erforderlich sind.                                                                                              |
-| recordResourceLocation         | Zeichenfolge                      | Der Speicherort, in dem die Aufzeichnung gespeichert ist.                                                                                                      |
+| recordResourceAccessToken      | String                      | Das Zugriffstoken zum Abrufen der aufzeichnungs erforderlich sind.                                                                                              |
+| recordResourceLocation         | String                      | Der Speicherort, in dem die Aufzeichnung gespeichert ist.                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | Informationen zu den Ergebnissen.  Schreibgeschützt. Server generiert wurde.                                                                                             |
 | status                         | String                      | Mögliche Werte: `notStarted`, `running`, `completed`, `failed`. Schreibgeschützt. Server generiert wurde.                                                 |
 

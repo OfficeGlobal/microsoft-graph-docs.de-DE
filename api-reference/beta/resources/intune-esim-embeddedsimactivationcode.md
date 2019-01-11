@@ -2,12 +2,13 @@
 title: Ressourcentyp embeddedSIMActivationCode
 description: Der eingebettete SIM Aktivierungscode bereitgestellt vom Mobilfunkbetreiber.
 author: tfitzmac
-ms.openlocfilehash: 4e768a4047b8ddc785b545d3b850128a8e44f256
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 41976b92cfe6b6f695631dbd6c0d928c6ae99271
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311788"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878064"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>Ressourcentyp embeddedSIMActivationCode
 
@@ -19,11 +20,11 @@ Der eingebettete SIM Aktivierungscode bereitgestellt vom Mobilfunkbetreiber.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|integratedCircuitCardIdentifier|String|Chip Karte Bezeichner (ICCID) für diesen eingebettet SIM Aktivierungscode vom Mobilfunkbetreiber bereitgestellt.
+|integratedCircuitCardIdentifier|Zeichenfolge|Chip Karte Bezeichner (ICCID) für diesen eingebettet SIM Aktivierungscode vom Mobilfunkbetreiber bereitgestellt.
 Die Eingabe muss den folgenden regulären Ausdruck übereinstimmen: ' ^\[0-9\]{19}\[0-9\]?$ '.|
-|matchingIdentifier|String|Die MatchingIdentifier (MatchingID) gemäß den GSMA Zuordnung SGP.22 RSP technischen Spezifikationen Abschnitt 4.1.
+|matchingIdentifier|Zeichenfolge|Die MatchingIdentifier (MatchingID) gemäß den GSMA Zuordnung SGP.22 RSP technischen Spezifikationen Abschnitt 4.1.
 Die Eingabe muss den folgenden regulären Ausdruck übereinstimmen: ' ^\[a-zA-Z0-9\-\]* $'.|
-|smdpPlusServerAddress|String|Der vollqualifizierte Domänenname des des SM-DP + Server wie in der technischen g/m2 Zuordnung SPG.22 RSP-Spezifikation angegeben.
+|smdpPlusServerAddress|Zeichenfolge|Der vollqualifizierte Domänenname des des SM-DP + Server wie in der technischen g/m2 Zuordnung SPG.22 RSP-Spezifikation angegeben.
 Die Eingabe muss den folgenden regulären Ausdruck übereinstimmen: ' ^ (\[a-zA-Z0-9\]+(-\[a-zA-Z0-9\]+) *\.) +\[a-zA-Z\]{2,}$'.|
 
 ## <a name="relationships"></a>Beziehungen

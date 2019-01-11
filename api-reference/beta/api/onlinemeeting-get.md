@@ -2,12 +2,13 @@
 title: Get-Onlinebesprechung
 description: Rufen Sie die Eigenschaften und die Beziehungen eines **OnlineMeeting** -Objekts ab.
 author: VinodRavichandran
-ms.openlocfilehash: bfae4273aba0583e6c10a7e10f9c67865326bacf
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 75f4b4372e8e2bf12deee4d77f8f271696c715d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380380"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880633"
 ---
 # <a name="get-online-meeting"></a>Get-Onlinebesprechung
 
@@ -26,7 +27,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:---------------------------------------|:------------------------------------------------------|
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt.                                        |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt.                                        |
-| Application                            | OnlineMeetings.Read.All OnlineMeetings.ReadWrite.All |
+| Anwendung                            | OnlineMeetings.Read.All OnlineMeetings.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

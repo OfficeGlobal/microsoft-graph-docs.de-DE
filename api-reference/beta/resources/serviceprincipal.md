@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp servicePrincipal
 description: Stellt eine Instanz einer Anwendung in einem Verzeichnis. Erbt von directoryObject.
-ms.openlocfilehash: c3a08efb1dea1109bd32d59a479260e14089783d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 2df27225f62e7c2b7b026bb3d829abf546241267
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063511"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880206"
 ---
 # <a name="serviceprincipal-resource-type"></a>Ressourcentyp servicePrincipal
 
@@ -65,22 +66,22 @@ Es folgt eine JSON-Darstellung der Ressource.
 | Eigenschaft     | Typ |Beschreibung|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolescher Wert| **true,** Wenn das Dienstkonto für den Prinzipal aktiviert ist. anderenfalls **false**.            |
-|appDisplayName|String|Der Anzeigename, der von der zugeordneten Anwendung verfügbar gemacht werden.|
+|appDisplayName|Zeichenfolge|Der Anzeigename, der von der zugeordneten Anwendung verfügbar gemacht werden.|
 |appId|Zeichenfolge|Der eindeutige Bezeichner für die zugewiesene Anwendung (dessen **AppId** -Eigenschaft).|
-|appRoleAssignmentRequired|Boolesch|Gibt an, ob ein **AppRoleAssignment** für einen Benutzer oder Gruppe erforderlich ist, bevor Azure AD einen Benutzer oder eine Zugriffstoken an die Anwendung ausstellt. Lässt keine Nullwerte zu. |
+|appRoleAssignmentRequired|Boolescher Wert|Gibt an, ob ein **AppRoleAssignment** für einen Benutzer oder Gruppe erforderlich ist, bevor Azure AD einen Benutzer oder eine Zugriffstoken an die Anwendung ausstellt. Lässt keine Nullwerte zu. |
 |appRoles|[AppRole](approle.md) -Auflistung|Die Rollen der Anwendung von der zugeordneten Anwendung verfügbar gemacht werden. Weitere Informationen finden Sie in der Definition der **AppRoles** -Eigenschaft in der [Anwendung](application.md) Entität. Lässt keine Nullwerte zu. |
-|displayName|String|Der Anzeigename für den Dienstprinzipal.|
-|errorUrl|String|            |
-|Homepage|String|Die URL zur Homepage der zugehörigen Anwendung.|
+|displayName|Zeichenfolge|Der Anzeigename für den Dienstprinzipal.|
+|errorUrl|Zeichenfolge|            |
+|Homepage|Zeichenfolge|Die URL zur Homepage der zugehörigen Anwendung.|
 |keyCredentials|[KeyCredential](keycredential.md) -Auflistung|Die Auflistung von wichtigen Anmeldeinformationen, die dem Prinzipal Dienst zugeordnet sind. Lässt keine Nullwerte zu.            |
-|logoutUrl|String| Gibt die URL, die von Microsoft Autorisierungsdienst Abmelden ein Benutzer mit der [Vorderseite-Kanal](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [Back-Kanal](https://openid.net/specs/openid-connect-backchannel-1_0.html) oder SAML Abmeldung Protokolle verwendet werden soll.  |
+|logoutUrl|Zeichenfolge| Gibt die URL, die von Microsoft Autorisierungsdienst Abmelden ein Benutzer mit der [Vorderseite-Kanal](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [Back-Kanal](https://openid.net/specs/openid-connect-backchannel-1_0.html) oder SAML Abmeldung Protokolle verwendet werden soll.  |
 |oauth2Permissions|[oAuth2Permission](oauth2permission.md) -Auflistung|Die OAuth 2.0-Berechtigungen von der zugeordneten Anwendung verfügbar gemacht werden. Weitere Informationen finden Sie in der Definition der **oauth2Permissions** -Eigenschaft in der [Anwendung](application.md) Entität. Lässt keine Nullwerte zu.            |
-|id|String|Der eindeutige Bezeichner für den Dienstprinzipal. Geerbt von [directoryObject](directoryobject.md). Schlüssel. Lässt keine Nullwerte zu. Schreibgeschützt.|
+|id|Zeichenfolge|Der eindeutige Bezeichner für den Dienstprinzipal. Geerbt von [directoryObject](directoryobject.md). Schlüssel. Lässt keine Nullwerte zu. Schreibgeschützt.|
 |passwordCredentials|[PasswordCredential](passwordcredential.md) -Auflistung|Die Auflistung von Anmeldeinformationen den Dienstprinzipal zugeordnet. Lässt keine Nullwerte zu. |
-|preferredTokenSigningKeyThumbprint|String|Nur für interne Zwecke vorbehalten. Schreiben oder verlassen sich andernfalls auf diese Eigenschaft nicht. Kann in zukünftigen Versionen entfernt werden. |
-|publisherName|String|Der Anzeigename des Mandanten in dem verbundenen Anwendung angegeben wird.|
+|preferredTokenSigningKeyThumbprint|Zeichenfolge|Nur für interne Zwecke vorbehalten. Schreiben oder verlassen sich andernfalls auf diese Eigenschaft nicht. Kann in zukünftigen Versionen entfernt werden. |
+|publisherName|Zeichenfolge|Der Anzeigename des Mandanten in dem verbundenen Anwendung angegeben wird.|
 |replyUrls|Collection von Objekten des Typs „String“|Die URLs, dass Benutzertoken, um für die Anmeldung mit der zugeordneten Anwendung oder die Umleitung URIs, dass OAuth 2.0 Autorisierungscodes gesendet werden und Zugriffstoken werden für die zugewiesene Anwendung an. Lässt keine Nullwerte zu. |
-|samlMetadataUrl|String| |
+|samlMetadataUrl|Zeichenfolge| |
 |servicePrincipalNames|Collection von Objekten des Typs „String“|Die URIs, mit denen die zugewiesene Anwendung identifiziert. Weitere Informationen finden Sie unter [Application Objects und Service Principal-Objekte](https://msdn.microsoft.com/library/azure/dn132633.aspx). Der **any** -Operator ist für Filterausdrücke auf mehrwertige Eigenschaften erforderlich.  Lässt keine Nullwerte zu. |
 |-Tags hinzugefügtes Markup|Zeichenfolgenauflistung| Lässt keine Nullwerte zu. |
 

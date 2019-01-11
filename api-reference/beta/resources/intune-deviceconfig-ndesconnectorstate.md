@@ -2,12 +2,13 @@
 title: NdesConnectorState Enum-Typ
 description: Der aktuelle Status der Verbindung Ndes.
 author: tfitzmac
-ms.openlocfilehash: e52f1651ab5e829e1ebe3dca77fc5056d17bf13f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d253e251b6511dee958b7b89c6542b432c120220
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347474"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874571"
 ---
 # <a name="ndesconnectorstate-enum-type"></a>NdesConnectorState Enum-Typ
 
@@ -17,9 +18,9 @@ ms.locfileid: "27347474"
 
 Der aktuelle Status der Verbindung Ndes.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Keine|0|Status für diesen Connector noch nicht verfügbar.|
+|n/v|0|Status für diesen Connector noch nicht verfügbar.|
 |aktive|1|NDES Connector wurde vor kurzem verbunden.|
 |inaktiv|2|Keine letzte Aktivität für den Connector Ndes|
 

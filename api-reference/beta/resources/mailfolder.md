@@ -1,12 +1,13 @@
 ---
 title: mailFolder-Ressoucentyp
 description: Ein mailFolder-Element im Postfach eines Benutzers, wie z. B. Posteingang und Entwürfe. Mailordner können Nachrichten, andere Outlook-Elemente und untergeordnete E-Mail-Ordner enthalten.
-ms.openlocfilehash: 49fd4571e3ebe35e04e4da4276c1816829ebc599
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a44819f0248e8d6e410e2c6bd57e727ae719b1d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060817"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881620"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder-Ressoucentyp
 
@@ -54,7 +55,7 @@ Bekannte Namen arbeiten unabhängig von dem Gebietsschema des Postfach des Benut
 |[Get mailFolder](../api/mailfolder-get.md) | [mailFolder](mailfolder.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des mailFolder-Objekts.|
 |[Create MailFolder](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md)| Dient zum Erstellen eines neuen mailFolder-Elements unter dem aktuellen durch die Veröffentlichung der childFolders-Sammlung.|
 |[List childFolders](../api/mailfolder-list-childfolders.md) |[mailFolder](mailfolder.md)-Sammlung| Dient zum Abrufen der Ordnersammlung unter dem angegebenen Ordner. Sie können die `.../me/MailFolders`Verknüpfung zum Abrufen der Ordnersammlung auf oberster Ebene und zum Navigieren zu einem anderen Ordner verwenden.|
-|[Create Message](../api/mailfolder-post-messages.md) |[Nachricht](message.md)| Dient zum Erstellen einer neuen Nachricht in dem aktuellen mailFolder-Element durch die Veröffentlichung in der Nachrichtensammlung.|
+|[Create Message](../api/mailfolder-post-messages.md) |[message](message.md)| Dient zum Erstellen einer neuen Nachricht in dem aktuellen mailFolder-Element durch die Veröffentlichung in der Nachrichtensammlung.|
 |[List messages](../api/mailfolder-list-messages.md) |Sammlung von [Nachrichten](message.md)| Dient zum Abrufen aller Nachrichten im Postfach des angemeldeten Benutzers oder Nachrichten in einen bestimmten Ordner im Postfach.|
 |[Update](../api/mailfolder-update.md) | [mailFolder](mailfolder.md)|Dient zum Aktualisieren des angegebenen mailFolder-Objekts. |
 |[Delete](../api/mailfolder-delete.md) | Keine |Dient zum Löschen des angegebenen mailFolder-Objekts. |
@@ -72,12 +73,12 @@ Bekannte Namen arbeiten unabhängig von dem Gebietsschema des Postfach des Benut
 | Eigenschaft | Typ | Beschreibung |
 |:---------|:-----|:------------|
 |childFolderCount|Int32|Die Anzahl der unmittelbar untergeordneten mailFolders-Elemente in dem aktuellen mailFolder-Element.|
-|displayName|String|Der Anzeigename des mailFolder-Elements.|
-|id|String|Eindeutiger Bezeichner der MailFolder.|
-|parentFolderId|String|Die eindeutige ID für das übergeordnete mailFolder-Element des mailFolder-Elements.|
+|displayName|Zeichenfolge|Der Anzeigename des mailFolder-Elements.|
+|id|Zeichenfolge|Eindeutiger Bezeichner der MailFolder.|
+|parentFolderId|Zeichenfolge|Die eindeutige ID für das übergeordnete mailFolder-Element des mailFolder-Elements.|
 |totalItemCount|Int32|Anzahl der Elemente im mailFolder-Element.|
 |unreadItemCount|Int32|Die Anzahl der Elemente im mailFolder-Element, die als „Ungelesen“ markiert sind.|
-|wellKnownName|String|Der Ordnername der bekannten für den Ordner. Die möglichen Werte sind oben aufgeführt. Diese Eigenschaft ist nur für Outlook erstellten Standardordner festgelegt. Für andere Ordner ist diese Eigenschaft **null**.|
+|wellKnownName|Zeichenfolge|Der Ordnername der bekannten für den Ordner. Die möglichen Werte sind oben aufgeführt. Diese Eigenschaft ist nur für Outlook erstellten Standardordner festgelegt. Für andere Ordner ist diese Eigenschaft **null**.|
 
 **Effizientes Ermitteln der Anzahl von Elementen**
 

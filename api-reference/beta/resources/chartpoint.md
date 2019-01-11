@@ -2,12 +2,13 @@
 title: ChartPoint-Ressourcentyp
 description: Stellt einen Punkt einer Datenreihe in einem Diagramm dar.
 author: lumine2008
-ms.openlocfilehash: f27017d5e6cc111fa759fc6c9728ed182e7fa624
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f9bf959407a93c6d58d088833e5e3e437ef41125
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358407"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876251"
 ---
 # <a name="chartpoint-resource-type"></a>ChartPoint-Ressourcentyp
 
@@ -32,7 +33,7 @@ Stellt einen Punkt einer Datenreihe in einem Diagramm dar.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Format|[ChartPointFormat](chartpointformat.md)|Kapselt die Formateigenschaften eines Diagrammpunkts. Schreibgeschützt.|
+|format|[ChartPointFormat](chartpointformat.md)|Kapselt die Formateigenschaften eines Diagrammpunkts. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

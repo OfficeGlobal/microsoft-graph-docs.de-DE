@@ -2,12 +2,13 @@
 title: Ressourcentyp vpnOnDemandRule
 description: VPN-On-Demand Regeldefinition.
 author: tfitzmac
-ms.openlocfilehash: 72b85971dc9c613026bb9e720ca55165845e0c9e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bd6e494975c8626a25380b3f037d702fb81e082b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352192"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875635"
 ---
 # <a name="vpnondemandrule-resource-type"></a>Ressourcentyp vpnOnDemandRule
 
@@ -21,11 +22,11 @@ VPN-On-Demand Regeldefinition.
 |:---|:---|:---|
 |SSIDs|Collection von Objekten des Typs „String“|Netzwerkdienst festgelegt (SSIDs Identifiers).|
 |dnsSearchDomains|Collection von Objekten des Typs „String“|DNS-Suche Domänen.|
-|probeUrl|String|Eine URL zu belegen. Wenn diese URL erfolgreich ist ohne Umleitung abgerufen (einen 200 HTTP-Statuscode zurückgibt), die dieser Regel entspricht.|
+|probeUrl|Zeichenfolge|Eine URL zu belegen. Wenn diese URL erfolgreich ist ohne Umleitung abgerufen (einen 200 HTTP-Statuscode zurückgibt), die dieser Regel entspricht.|
 |Aktion|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Aktion. Mögliche Werte: sind `connect`, `evaluateConnection`, `ignore` und `disconnect`.|
 |domainAction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Domäne-Aktion (gilt nur bei der Aktion Verbindung bewerten ist). Mögliche Werte sind: `connectIfNeeded` und `neverConnect`.|
 |Domänen|Collection von Objekten des Typs „String“|Domänen (gilt nur bei der Aktion Verbindung bewerten ist).|
-|probeRequiredUrl|String|Prüfpunkt erforderliche Url (gilt nur bei der Aktion wird Verbindung bewerten und DomainAction ist eine Verbindung herstellen, falls erforderlich).|
+|probeRequiredUrl|Zeichenfolge|Prüfpunkt erforderliche Url (gilt nur bei der Aktion wird Verbindung bewerten und DomainAction ist eine Verbindung herstellen, falls erforderlich).|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

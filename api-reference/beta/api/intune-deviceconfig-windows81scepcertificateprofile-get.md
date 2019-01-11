@@ -2,12 +2,13 @@
 title: Abrufen von windows81SCEPCertificateProfile
 description: Lesen Sie Eigenschaften und Beziehungen des windows81SCEPCertificateProfile-Objekts.
 author: tfitzmac
-ms.openlocfilehash: bb2f627738b3ab0e86826979f75f0863855e2142
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 36437eb6d2ce813a972d4df7a4c76e70daee28ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316282"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878764"
 ---
 # <a name="get-windows81scepcertificateprofile"></a>Abrufen von windows81SCEPCertificateProfile
 
@@ -41,8 +42,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

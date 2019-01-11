@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp synchronizationSchedule
 description: Definiert den Zeitplan zum Ausführen einer SynchronizationJob verwendet.
-ms.openlocfilehash: c0435b3957f138751f34a1e0e522683b352294da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b59c36a36d837c21c147033dff8de66b85c863a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061900"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877868"
 ---
 # <a name="synchronizationschedule-resource-type"></a>Ressourcentyp synchronizationSchedule
 

@@ -1,12 +1,13 @@
 ---
 title: Transitive Gerätegruppen Liste
 description: Abrufen von Gruppen, bei denen das Gerät ein Mitglied ist. Diese API-Anforderung ist transitiv und alle Gruppen, die, denen das Gerät geschachtelte Mitglied ist, wird ebenfalls zurückgegeben.
-ms.openlocfilehash: 39589ec7c1858d773ed0907950142ec3b1f4cdef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c15080fa3af336ec0a2bd14f0dd7812719bff52a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058599"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874970"
 ---
 # <a name="list-device-transitive-groups"></a>Transitive Gerätegruppen Liste
 
@@ -41,7 +42,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 | Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
-| Accept  | application/json|
+| Annehmen  | application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 

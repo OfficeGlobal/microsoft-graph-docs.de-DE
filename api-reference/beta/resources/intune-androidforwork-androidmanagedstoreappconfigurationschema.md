@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp androidManagedStoreAppConfigurationSchema
 description: Schema beschreibt eine Android Anwendung benutzerdefinierten Konfigurationen.
-ms.openlocfilehash: e3fe6a44da3b84eebadd45e4719e982fabb5a43a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9203d72739da7fa3c4acda0388676ed1c86f924e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062418"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880234"
 ---
 # <a name="androidmanagedstoreappconfigurationschema-resource-type"></a>Ressourcentyp androidManagedStoreAppConfigurationSchema
 
@@ -21,13 +22,13 @@ Schema beschreibt eine Android Anwendung benutzerdefinierten Konfigurationen.
 |[Liste androidManagedStoreAppConfigurationSchemas](../api/intune-androidforwork-androidmanagedstoreappconfigurationschema-list.md)|[AndroidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) -Auflistung|Listeneigenschaften und Beziehungen der [AndroidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) -Objekte.|
 |[Abrufen von androidManagedStoreAppConfigurationSchema](../api/intune-androidforwork-androidmanagedstoreappconfigurationschema-get.md)|[androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)|Lesen Sie Eigenschaften und Beziehungen des [AndroidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) -Objekts.|
 |[Erstellen von androidManagedStoreAppConfigurationSchema](../api/intune-androidforwork-androidmanagedstoreappconfigurationschema-create.md)|[androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)|Erstellen eines neuen [AndroidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) -Objekts.|
-|[AndroidManagedStoreAppConfigurationSchema löschen](../api/intune-androidforwork-androidmanagedstoreappconfigurationschema-delete.md)|Keines|Löscht eine [AndroidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md).|
+|[AndroidManagedStoreAppConfigurationSchema löschen](../api/intune-androidforwork-androidmanagedstoreappconfigurationschema-delete.md)|Keine|Löscht eine [AndroidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md).|
 |[AndroidManagedStoreAppConfigurationSchema aktualisieren](../api/intune-androidforwork-androidmanagedstoreappconfigurationschema-update.md)|[androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)|Aktualisieren Sie die Eigenschaften eines [AndroidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität (Name des Android-Pakets der Anwendung), der das Schema entspricht|
+|id|Zeichenfolge|Schlüssel der Entität (Name des Android-Pakets der Anwendung), der das Schema entspricht|
 |exampleJson|Binär|UTF8-codiertes Bytearray mit der diesem Schema entsprechenden JSON-Beispielzeichenfolge, das veranschaulicht, wie die Konfiguration für diese App festgelegt werden soll|
 |schemaItems|[AndroidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) -Auflistung|Sammlung von Elementen, von denen jedes eine benannte Konfigurationsoption im Schema darstellt.|
 

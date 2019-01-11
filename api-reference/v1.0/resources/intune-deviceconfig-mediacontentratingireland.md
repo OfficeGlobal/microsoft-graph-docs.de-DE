@@ -2,12 +2,13 @@
 title: mediaContentRatingIreland-Ressourcentyp
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 68d5e0e9454fadde550988f46c1104733a9de013
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9c1733ca3c541709d77dae0b1d6193a7b706c0cc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359472"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879562"
 ---
 # <a name="mediacontentratingireland-resource-type"></a>mediaContentRatingIreland-Ressourcentyp
 

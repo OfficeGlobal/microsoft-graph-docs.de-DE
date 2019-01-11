@@ -2,12 +2,13 @@
 title: iosMobileAppConfigurations auflisten
 description: Auflisten von Eigenschaften und Beziehungen der iosMobileAppConfiguration-Objekte.
 author: tfitzmac
-ms.openlocfilehash: 3d56946ec2183cd486e9b1ffcebb2979590dfe82
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1f161d86bf7065e3ad04a8dff057e4d44cfc3955
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313986"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875096"
 ---
 # <a name="list-iosmobileappconfigurations"></a>iosMobileAppConfigurations auflisten
 
@@ -37,8 +38,8 @@ GET /deviceAppManagement/mobileAppConfigurations
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

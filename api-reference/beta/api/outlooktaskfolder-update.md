@@ -2,12 +2,13 @@
 title: Outlooktaskfolder aktualisieren
 description: Aktualisieren Sie die schreibbaren Eigenschaften des Ordners eine Outlook-Aufgabe.
 author: angelgolfer-ms
-ms.openlocfilehash: 83b78a7d3ff625a6eaaacd3ac54612e487350cde
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 06dd21cf9da2fab8c0472ac29f477b6a40d2df5c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313972"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874354"
 ---
 # <a name="update-outlooktaskfolder"></a>Outlooktaskfolder aktualisieren
 
@@ -41,7 +42,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|name|String|Der Name des Aufgabenordners.|
+|name|Zeichenfolge|Der Name des Aufgabenordners.|
 
 ## <a name="response"></a>Antwort
 

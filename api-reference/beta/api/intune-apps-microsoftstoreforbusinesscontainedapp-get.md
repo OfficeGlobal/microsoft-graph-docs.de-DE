@@ -2,12 +2,13 @@
 title: Abrufen von microsoftStoreForBusinessContainedApp
 description: Lesen Sie Eigenschaften und Beziehungen des MicrosoftStoreForBusinessContainedApp-Objekts.
 author: tfitzmac
-ms.openlocfilehash: ee55e0b9ebad6dc42cda2cb2aa996379a6a637c1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fd0c9206d3b3291ce8ef6866c50a6c084201d011
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352241"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875159"
 ---
 # <a name="get-microsoftstoreforbusinesscontainedapp"></a>Abrufen von microsoftStoreForBusinessContainedApp
 
@@ -41,8 +42,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

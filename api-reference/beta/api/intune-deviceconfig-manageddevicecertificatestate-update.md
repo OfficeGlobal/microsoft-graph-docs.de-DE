@@ -2,12 +2,13 @@
 title: ManagedDeviceCertificateState aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines ManagedDeviceCertificateState-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 14c73bf219d8a568f8df0c4c55e3a1e3d0516abd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 73f3424c416b36695dfae18dc4db6dbf085db685
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350169"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878176"
 ---
 # <a name="update-manageddevicecertificatestate"></a>ManagedDeviceCertificateState aktualisieren
 
@@ -53,8 +54,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [ManagedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) eine JSON-Darstellung.
@@ -63,7 +64,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Geräteplattform. Mögliche Werte sind: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater` und `androidWorkProfile`.|
 |certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|Enhanced Key Usage. Mögliche Werte sind: `keyEncipherment` und `digitalSignature`.|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Gültigkeit Period Einheiten. Mögliche Werte sind: `days`, `months` und `years`.|
@@ -72,21 +73,21 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Format des Antragstellernamen. Mögliche Werte: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Subject alternative Name-Format. Mögliche Werte sind: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute` und `domainNameService`.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|REVOKE-Status. Mögliche Werte sind: `none`, `pending`, `issued`, `failed` und `revoked`.|
-|certificateProfileDisplayName|String|Profil der Anzeigename des Zertifikats|
-|deviceDisplayName|String|Anzeigename des Geräts|
-|userDisplayName|String|Anzeigename des Benutzers.
+|certificateProfileDisplayName|Zeichenfolge|Profil der Anzeigename des Zertifikats|
+|deviceDisplayName|Zeichenfolge|Anzeigename des Geräts|
+|userDisplayName|Zeichenfolge|Anzeigename des Benutzers.
 |
 |certificateExpirationDateTime|DateTimeOffset|Ablaufdatum des Zertifikats|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Änderung des letzten Zertifikat Veröffentlichungslizenzen|
 |lastCertificateStateChangeDateTime|DateTimeOffset|Änderung des letzten Zertifikat Veröffentlichungslizenzen|
-|certificateIssuer|String|Aussteller|
-|certificateThumbprint|String|Fingerabdruck|
-|Zertifikatsseriennummer|String|Seriennummer|
+|certificateIssuer|Zeichenfolge|Aussteller|
+|certificateThumbprint|Zeichenfolge|Fingerabdruck|
+|Zertifikatsseriennummer|Zeichenfolge|Seriennummer|
 |certificateKeyLength|Int32|Schlüssellänge|
-|certificateEnhancedKeyUsage|String|Erweiterte Schlüsselverwendung|
+|certificateEnhancedKeyUsage|Zeichenfolge|Erweiterte Schlüsselverwendung|
 |certificateValidityPeriod|Int32|Gültigkeitsdauer|
-|certificateSubjectNameFormatString|String|Subject Name Formatzeichenfolge für benutzerdefinierte Subject Namensformate|
-|certificateSubjectAlternativeNameFormatString|String|Subject alternative Name Formatzeichenfolge für benutzerdefinierte Formate|
+|certificateSubjectNameFormatString|Zeichenfolge|Subject Name Formatzeichenfolge für benutzerdefinierte Subject Namensformate|
+|certificateSubjectAlternativeNameFormatString|Zeichenfolge|Subject alternative Name Formatzeichenfolge für benutzerdefinierte Formate|
 |certificateIssuanceDateTime|DateTimeOffset|Veröffentlichungslizenzen Datum|
 |certificateErrorCode|Int32|Fehlercode|
 

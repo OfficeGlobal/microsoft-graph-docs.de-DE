@@ -2,12 +2,13 @@
 title: AutoRestartNotificationDismissalMethod Enum-Typ
 description: Automatische Neustart erforderlich Kündigung Benachrichtigungsmethode
 author: tfitzmac
-ms.openlocfilehash: 8340177ce1b4e71c57f33809e5f11576e7c2f481
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3f83ea8af67e879bea348179e7a4b784b4a8014f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334951"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876706"
 ---
 # <a name="autorestartnotificationdismissalmethod-enum-type"></a>AutoRestartNotificationDismissalMethod Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27334951"
 
 Automatische Neustart erforderlich Kündigung Benachrichtigungsmethode
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Nicht konfiguriert|
 |Automatisch|1|Automatische Kündigung|

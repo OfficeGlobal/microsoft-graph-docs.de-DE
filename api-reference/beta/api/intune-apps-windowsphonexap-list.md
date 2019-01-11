@@ -2,12 +2,13 @@
 title: Liste windowsPhoneXAPs
 description: Listeneigenschaften und Beziehungen der WindowsPhoneXAP-Objekte.
 author: tfitzmac
-ms.openlocfilehash: d341b3391da819a1da69cc4cf3fd09ce53333a91
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f2e683ea10bbea78f5364b21168b8e99cee9a4ab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356469"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875110"
 ---
 # <a name="list-windowsphonexaps"></a>Liste windowsPhoneXAPs
 
@@ -37,8 +38,8 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

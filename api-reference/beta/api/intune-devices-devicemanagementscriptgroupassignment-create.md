@@ -2,12 +2,13 @@
 title: Erstellen von deviceManagementScriptGroupAssignment
 description: Erstellen eines neuen DeviceManagementScriptGroupAssignment-Objekts.
 author: tfitzmac
-ms.openlocfilehash: f084fb933d4694d9c1dfa43f018fb3ce2d8dd95b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 080db816339d544681a8cb6de87ebcc9b7e60b71
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324780"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881536"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>Erstellen von deviceManagementScriptGroupAssignment
 
@@ -37,8 +38,8 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupA
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt DeviceManagementScriptGroupAssignment eine JSON-Darstellung.
@@ -47,8 +48,8 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Taste der Gerät Management Skript Gruppe Zuordnung Entität.|
-|targetGroupId|String|Die Id des Azure Active Directory-Gruppe verwenden wir das Skript Inhaltsadressierung für.|
+|id|Zeichenfolge|Taste der Gerät Management Skript Gruppe Zuordnung Entität.|
+|targetGroupId|Zeichenfolge|Die Id des Azure Active Directory-Gruppe verwenden wir das Skript Inhaltsadressierung für.|
 
 
 

@@ -2,12 +2,13 @@
 title: Arbeiten mit den Anrufe und dazu dient, onlinebesprechungen-API in Microsoft Graph
 description: Ruft das Microsoft Graph und dazu dient, onlinebesprechungen API Fügt eine neue Dimension, wie Ihre apps und Diensten mit Benutzern interagieren können von Sprach- und Videofunktionen aktivieren. Die API ermöglicht Ihnen das Erstellen von Anrufen und Entgegennehmen von Anrufen von Benutzern und Anwendungen in Microsoft-Teams. Diese APIs können Sie eine dienstanwendung (Robot) erstellen, die als Teilnehmer in einem Anruf oder Besprechung fungieren kann.
 author: VinodRavichandran
-ms.openlocfilehash: 1b7efc774dfee0e0617d5c4f99ba08351c9f2a1f
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Priority
+ms.openlocfilehash: d7912f587dcc0181a2edd4072f0e07aa643d66be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380562"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876531"
 ---
 # <a name="working-with-the-calls-and-online-meetings-api-in-microsoft-graph"></a>Arbeiten mit den Anrufe und dazu dient, onlinebesprechungen-API in Microsoft Graph
 
@@ -94,7 +95,7 @@ Media-SDK ermöglicht den Robot senden und Empfangen von Audio-, Video- und vide
 
 > **Hinweis:** Sie können die Microsoft.Graph.Calls.Media-API nicht zum Aufzeichnen oder anderweitig beibehalten Media-Inhalten von Anrufen oder Besprechungen, die Ihre Bot greift auf.
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Anrufe und onlinebesprechung API-Beispiele](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
 

@@ -2,12 +2,13 @@
 title: termsAndConditionsAcceptanceStatus-Ressourcentyp
 description: C) Richtlinie von einem bestimmten Benutzer. Benutzer müssen die neueste Version der Geschäftsbedingungen akzeptieren, um weiterhin Zugriff auf das Unternehmensportal zu haben.
 author: tfitzmac
-ms.openlocfilehash: 8e504796be7dbec303bab8691ed171abc80b9a45
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 704f1ae0f149bf91b1036713ed47279bb665d2e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314637"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880731"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>termsAndConditionsAcceptanceStatus-Ressourcentyp
 

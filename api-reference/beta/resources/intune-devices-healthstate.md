@@ -2,12 +2,13 @@
 title: HealthState Enum-Typ
 description: Gibt Integritätsstatus der Windows Management-app an.
 author: tfitzmac
-ms.openlocfilehash: 831caf85b5beb4c90721aea44054b85d64817c84
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b50023a71aaf33e2febf43e3ce96a1223eaa2ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308722"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878778"
 ---
 # <a name="healthstate-enum-type"></a>HealthState Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27308722"
 
 Gibt Integritätsstatus der Windows Management-app an.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Status ist unbekannt.|
 |fehlerfrei|1|Einem fehlerfreien Zustand.|

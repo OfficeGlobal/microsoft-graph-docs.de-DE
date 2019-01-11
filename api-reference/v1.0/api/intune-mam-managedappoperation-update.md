@@ -2,12 +2,13 @@
 title: Aktualisieren von „managedAppOperation“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs managedAppOperation.
 author: tfitzmac
-ms.openlocfilehash: 2bd0d326a4300bdae29484b547bbd5aa429728ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d4ddc127c6d35a44f10e6ad9ff6f1fef82462392
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311977"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875579"
 ---
 # <a name="update-managedappoperation"></a>Aktualisieren von „managedAppOperation“
 
@@ -35,8 +36,8 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [managedAppOperation](../resources/intune-mam-managedappoperation.md) an.
@@ -48,8 +49,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |displayName|String|Name des Vorgangs|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des App-Vorgangs|
 |state|String|Aktueller Status des Vorgangs|
-|id|String|Schlüssel der Entität|
-|Version|String|Version der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Version|Zeichenfolge|Version der Entität|
 
 
 

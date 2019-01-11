@@ -1,12 +1,13 @@
 ---
 title: inferenceClassificationOverride-Ressourcentyp
 description: Stellt sollte Außerkraftsetzung für eingehende von einem bestimmten Absender wie Nachrichten des Benutzers immer als klassifiziert werden
-ms.openlocfilehash: 63c753b7af21907717d7d9706d0606726d5670f2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9124f773a26c9edf1238276c3d0017dcc46e7ad8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059189"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876269"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>inferenceClassificationOverride-Ressourcentyp
 

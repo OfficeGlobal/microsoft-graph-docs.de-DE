@@ -2,12 +2,13 @@
 title: Team Ressourcentyp
 description: 'Ein Team in Microsoft-Teams ist eine Auflistung der Kanäle. '
 author: nkramer
-ms.openlocfilehash: 3bb6fde320dbab2c19f151015d7121c3fc840c97
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 85694e18771ac17873f97cedf68d074ee550f787
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323870"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878547"
 ---
 # <a name="team-resource-type"></a>Team Ressourcentyp
 
@@ -26,7 +27,7 @@ Weitere Informationen über das Arbeiten mit Gruppen und Membern im Teams finden
 |[Erstellen von Teams](../api/team-put-teams.md) | [Team](team.md) | Erstellen Sie ein neues Team oder fügen Sie ein Team an eine vorhandene Gruppe hinzu.|
 |[Get-team](../api/team-get.md) | [Team](team.md) | Abrufen der Eigenschaften und Beziehungen zwischen dem angegebenen Team.|
 |[Update-team](../api/team-update.md) | [Team](team.md) |Aktualisieren Sie die Eigenschaften des angegebenen Teams. |
-|[Team löschen](/graph/api/group-delete?view=graph-rest-1.0) | Keines |Das Team und der zugeordneten Gruppe zu löschen. |
+|[Team löschen](/graph/api/group-delete?view=graph-rest-1.0) | Keine |Das Team und der zugeordneten Gruppe zu löschen. |
 |[Wenn Sie den Klon-team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Kopieren Sie das Team und dessen zugehörige Gruppe. |
 |[Archiv-team](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Platzieren Sie das Team in einem schreibgeschützten Zustand. |
 |[Entpackt team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Wiederherstellen Sie das Team eine Lese-/ Schreibzugriff Zustand. |
@@ -42,7 +43,7 @@ Weitere Informationen über das Arbeiten mit Gruppen und Membern im Teams finden
 |:---------------|:--------|:----------|
 |funSettings|[teamFunSettings](teamfunsettings.md) |So konfigurieren Sie Einstellungen Verwenden von Giphy, Memes und Aufkleber im Team.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Einstellungen konfigurieren können, ob Gäste erstellen, aktualisieren oder Löschen von Kanälen im Team können.|
-|isArchived|Boolesch|Gibt an, ob dieses Team im schreibgeschützten Modus ist. |
+|isArchived|Boolescher Wert|Gibt an, ob dieses Team im schreibgeschützten Modus ist. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Einstellungen konfigurieren können, ob Mitglieder bestimmter Aktionen ausführen können beispielsweise Kanäle erstellen und Hinzufügen von Programmen, im Team.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |So konfigurieren Sie die messaging-Einstellungen und erwähnungen im Team.|
 |webUrl|Zeichenfolge (schreibgeschützt) | Ein Hyperlink, der an das Team in der Microsoft-Teams, Client gesendet wird. Dies ist die URL, die Sie erhalten, wenn Sie mit der rechten ein Team in der Microsoft-Teams, Client Maustaste und wählen Sie **Link an das Team abrufen**. Diese URL sollte als nicht transparentes Blob behandelt und nicht analysiert werden. |

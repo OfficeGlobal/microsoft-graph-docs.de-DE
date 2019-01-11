@@ -2,12 +2,13 @@
 title: deviceOperatingSystemSummary-Ressourcentyp
 description: Betriebssystemzusammenfassung für das Gerät
 author: tfitzmac
-ms.openlocfilehash: 8dd3bf85a75d5acf6ae4bb0cecb8fd360c4e0459
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0b69e8fa922df976a75a3750523da982582e073e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341860"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879506"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>deviceOperatingSystemSummary-Ressourcentyp
 
