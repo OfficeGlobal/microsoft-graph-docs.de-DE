@@ -2,49 +2,50 @@
 title: Löschen der Outlook-Kategorie
 description: Löscht das angegebene outlookCategory-Objekt.
 author: angelgolfer-ms
-ms.openlocfilehash: b82125c33c7b11274bfee80d9d1949ea776745c4
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: c54c35347f26a957e2779aa90f7f6a951ef48ada
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748493"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839697"
 ---
-# <a name="delete-outlook-category"></a><span data-ttu-id="66cf5-103">Löschen der Outlook-Kategorie</span><span class="sxs-lookup"><span data-stu-id="66cf5-103">Delete Outlook category</span></span>
+# <a name="delete-outlook-category"></a><span data-ttu-id="006f4-103">Löschen der Outlook-Kategorie</span><span class="sxs-lookup"><span data-stu-id="006f4-103">Delete Outlook category</span></span>
 
 
-<span data-ttu-id="66cf5-104">Löscht das angegebene [outlookCategory](../resources/outlookcategory.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="66cf5-104">Delete the specified [outlookCategory](../resources/outlookcategory.md) object.</span></span>
+<span data-ttu-id="006f4-104">Löscht das angegebene [outlookCategory](../resources/outlookcategory.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="006f4-104">Delete the specified [outlookCategory](../resources/outlookcategory.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="66cf5-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="66cf5-105">Permissions</span></span>
-<span data-ttu-id="66cf5-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="66cf5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="006f4-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="006f4-105">Permissions</span></span>
+<span data-ttu-id="006f4-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="006f4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="66cf5-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="66cf5-108">Permission type</span></span>      | <span data-ttu-id="66cf5-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="66cf5-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="006f4-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="006f4-108">Permission type</span></span>      | <span data-ttu-id="006f4-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="006f4-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="66cf5-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="66cf5-110">Delegated (work or school account)</span></span> | <span data-ttu-id="66cf5-111">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="66cf5-111">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="66cf5-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="66cf5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="66cf5-113">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="66cf5-113">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="66cf5-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="66cf5-114">Application</span></span> | <span data-ttu-id="66cf5-115">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="66cf5-115">MailboxSettings.ReadWrite</span></span> |
+|<span data-ttu-id="006f4-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="006f4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="006f4-111">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="006f4-111">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="006f4-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="006f4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="006f4-113">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="006f4-113">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="006f4-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="006f4-114">Application</span></span> | <span data-ttu-id="006f4-115">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="006f4-115">MailboxSettings.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="66cf5-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="66cf5-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="006f4-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="006f4-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/outlook/masterCategories/{id}
 DELETE /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="66cf5-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="66cf5-117">Request headers</span></span>
-| <span data-ttu-id="66cf5-118">Name</span><span class="sxs-lookup"><span data-stu-id="66cf5-118">Name</span></span>      |<span data-ttu-id="66cf5-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="66cf5-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="006f4-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="006f4-117">Request headers</span></span>
+| <span data-ttu-id="006f4-118">Name</span><span class="sxs-lookup"><span data-stu-id="006f4-118">Name</span></span>      |<span data-ttu-id="006f4-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="006f4-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="66cf5-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="66cf5-120">Authorization</span></span>  | <span data-ttu-id="66cf5-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="66cf5-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="006f4-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="006f4-120">Authorization</span></span>  | <span data-ttu-id="006f4-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="006f4-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="66cf5-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="66cf5-123">Request body</span></span>
-<span data-ttu-id="66cf5-124">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="66cf5-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="006f4-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="006f4-123">Request body</span></span>
+<span data-ttu-id="006f4-124">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="006f4-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="66cf5-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="66cf5-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="006f4-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="006f4-125">Response</span></span>
 
-<span data-ttu-id="66cf5-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="66cf5-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="006f4-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="006f4-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="66cf5-128">Beispiel</span><span class="sxs-lookup"><span data-stu-id="66cf5-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="66cf5-129">Anforderung</span><span class="sxs-lookup"><span data-stu-id="66cf5-129">Request</span></span>
-<span data-ttu-id="66cf5-130">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="66cf5-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="006f4-128">Beispiel</span><span class="sxs-lookup"><span data-stu-id="006f4-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="006f4-129">Anforderung</span><span class="sxs-lookup"><span data-stu-id="006f4-129">Request</span></span>
+<span data-ttu-id="006f4-130">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="006f4-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["4b1c2495-54c9-4a5e-90a2-0ab0b31987d8"],
@@ -53,8 +54,8 @@ DELETE /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/outlook/masterCategories/4b1c2495-54c9-4a5e-90a2-0ab0b31987d8
 ```
-##### <a name="response"></a><span data-ttu-id="66cf5-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="66cf5-131">Response</span></span>
-<span data-ttu-id="66cf5-132">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="66cf5-132">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="006f4-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="006f4-131">Response</span></span>
+<span data-ttu-id="006f4-132">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="006f4-132">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "name": "delete_outlookcategory",

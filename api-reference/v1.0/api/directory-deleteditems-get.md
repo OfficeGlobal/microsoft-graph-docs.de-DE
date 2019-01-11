@@ -2,61 +2,62 @@
 title: Gelöschtes Element abrufen
 description: Abrufen der Eigenschaften eines kürzlich gelöschten Elements aus den gelöschten Elementen.
 author: lleonard-msft
-ms.openlocfilehash: e3a42fffba9a447661010ac9f6f5cff19df880c1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 928ec2c303567afc7edc8e50b52f3a9ac327af80
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353711"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831339"
 ---
-# <a name="get-deleted-item"></a><span data-ttu-id="14d7d-103">Gelöschtes Element abrufen</span><span class="sxs-lookup"><span data-stu-id="14d7d-103">Get deleted item</span></span>
+# <a name="get-deleted-item"></a><span data-ttu-id="70c92-103">Gelöschtes Element abrufen</span><span class="sxs-lookup"><span data-stu-id="70c92-103">Get deleted item</span></span>
 
-<span data-ttu-id="14d7d-104">Abrufen der Eigenschaften eines kürzlich gelöschten Elements aus den [gelöschten Elementen](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="14d7d-104">Retrieve the properties of a recently deleted item in [deleted items](../resources/directory.md).</span></span>
+<span data-ttu-id="70c92-104">Abrufen der Eigenschaften eines kürzlich gelöschten Elements aus den [gelöschten Elementen](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="70c92-104">Retrieve the properties of a recently deleted item in [deleted items](../resources/directory.md).</span></span>
 
-<span data-ttu-id="14d7d-105">Die Funktion für gelöschte Elemente wird derzeit nur für die Ressourcen [group](../resources/group.md) und [user](../resources/user.md) unterstützt.</span><span class="sxs-lookup"><span data-stu-id="14d7d-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span>
+<span data-ttu-id="70c92-105">Die Funktion für gelöschte Elemente wird derzeit nur für die Ressourcen [group](../resources/group.md) und [user](../resources/user.md) unterstützt.</span><span class="sxs-lookup"><span data-stu-id="70c92-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="14d7d-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="14d7d-106">Permissions</span></span>
-<span data-ttu-id="14d7d-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="14d7d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="70c92-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="70c92-106">Permissions</span></span>
+<span data-ttu-id="70c92-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="70c92-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-### <a name="for-users"></a><span data-ttu-id="14d7d-109">Für Benutzer:</span><span class="sxs-lookup"><span data-stu-id="14d7d-109">For users:</span></span>
+### <a name="for-users"></a><span data-ttu-id="70c92-109">Für Benutzer:</span><span class="sxs-lookup"><span data-stu-id="70c92-109">For users:</span></span>
 
-|<span data-ttu-id="14d7d-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="14d7d-110">Permission type</span></span>      | <span data-ttu-id="14d7d-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="14d7d-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="70c92-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="70c92-110">Permission type</span></span>      | <span data-ttu-id="70c92-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="70c92-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="14d7d-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="14d7d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="14d7d-113">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="14d7d-113">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory AccessAsUser.All</span></span> |
-|<span data-ttu-id="14d7d-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="14d7d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="14d7d-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="14d7d-115">Not supported.</span></span> |
-|<span data-ttu-id="14d7d-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="14d7d-116">Application</span></span> | <span data-ttu-id="14d7d-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="14d7d-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="70c92-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="70c92-112">Delegated (work or school account)</span></span> | <span data-ttu-id="70c92-113">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="70c92-113">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory AccessAsUser.All</span></span> |
+|<span data-ttu-id="70c92-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="70c92-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="70c92-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="70c92-115">Not supported.</span></span> |
+|<span data-ttu-id="70c92-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="70c92-116">Application</span></span> | <span data-ttu-id="70c92-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="70c92-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-### <a name="for-groups"></a><span data-ttu-id="14d7d-118">Für Gruppen:</span><span class="sxs-lookup"><span data-stu-id="14d7d-118">For groups:</span></span>
+### <a name="for-groups"></a><span data-ttu-id="70c92-118">Für Gruppen:</span><span class="sxs-lookup"><span data-stu-id="70c92-118">For groups:</span></span>
 
-|<span data-ttu-id="14d7d-119">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="14d7d-119">Permission type</span></span>      | <span data-ttu-id="14d7d-120">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="14d7d-120">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="70c92-119">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="70c92-119">Permission type</span></span>      | <span data-ttu-id="70c92-120">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="70c92-120">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="14d7d-121">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="14d7d-121">Delegated (work or school account)</span></span> | <span data-ttu-id="14d7d-122">Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="14d7d-122">Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="14d7d-123">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="14d7d-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="14d7d-124">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="14d7d-124">Not supported.</span></span>    |
-|<span data-ttu-id="14d7d-125">Anwendung</span><span class="sxs-lookup"><span data-stu-id="14d7d-125">Application</span></span> | <span data-ttu-id="14d7d-126">Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="14d7d-126">Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="70c92-121">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="70c92-121">Delegated (work or school account)</span></span> | <span data-ttu-id="70c92-122">Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="70c92-122">Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="70c92-123">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="70c92-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="70c92-124">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="70c92-124">Not supported.</span></span>    |
+|<span data-ttu-id="70c92-125">Anwendung</span><span class="sxs-lookup"><span data-stu-id="70c92-125">Application</span></span> | <span data-ttu-id="70c92-126">Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="70c92-126">Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="14d7d-127">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="14d7d-127">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="70c92-127">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="70c92-127">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directory/deletedItems/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="14d7d-128">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="14d7d-128">Optional query parameters</span></span>
-<span data-ttu-id="14d7d-129">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="14d7d-129">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="70c92-128">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="70c92-128">Optional query parameters</span></span>
+<span data-ttu-id="70c92-129">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="70c92-129">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="14d7d-130">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="14d7d-130">Request headers</span></span>
-| <span data-ttu-id="14d7d-131">Name</span><span class="sxs-lookup"><span data-stu-id="14d7d-131">Name</span></span>      |<span data-ttu-id="14d7d-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="14d7d-132">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="70c92-130">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="70c92-130">Request headers</span></span>
+| <span data-ttu-id="70c92-131">Name</span><span class="sxs-lookup"><span data-stu-id="70c92-131">Name</span></span>      |<span data-ttu-id="70c92-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="70c92-132">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="14d7d-133">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="14d7d-133">Authorization</span></span>  | <span data-ttu-id="14d7d-134">Bearer&lt;code&gt; *erforderlich*</span><span class="sxs-lookup"><span data-stu-id="14d7d-134">Bearer &lt;code&gt; *Required*</span></span>|
-| <span data-ttu-id="14d7d-135">Annehmen</span><span class="sxs-lookup"><span data-stu-id="14d7d-135">Accept</span></span>  | <span data-ttu-id="14d7d-136">application/json</span><span class="sxs-lookup"><span data-stu-id="14d7d-136">application/json</span></span> |
+| <span data-ttu-id="70c92-133">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="70c92-133">Authorization</span></span>  | <span data-ttu-id="70c92-134">Bearer&lt;code&gt; *erforderlich*</span><span class="sxs-lookup"><span data-stu-id="70c92-134">Bearer &lt;code&gt; *Required*</span></span>|
+| <span data-ttu-id="70c92-135">Annehmen</span><span class="sxs-lookup"><span data-stu-id="70c92-135">Accept</span></span>  | <span data-ttu-id="70c92-136">application/json</span><span class="sxs-lookup"><span data-stu-id="70c92-136">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="14d7d-137">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="14d7d-137">Request body</span></span>
-<span data-ttu-id="14d7d-138">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="14d7d-138">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="70c92-137">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="70c92-137">Request body</span></span>
+<span data-ttu-id="70c92-138">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="70c92-138">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="14d7d-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="14d7d-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="70c92-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="70c92-139">Response</span></span>
 
-<span data-ttu-id="14d7d-140">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [directoryObject](../resources/directoryobject.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="14d7d-140">If successful, this method returns a `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="14d7d-141">Beispiel</span><span class="sxs-lookup"><span data-stu-id="14d7d-141">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="14d7d-142">Anforderung</span><span class="sxs-lookup"><span data-stu-id="14d7d-142">Request</span></span>
+<span data-ttu-id="70c92-140">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [directoryObject](../resources/directoryobject.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="70c92-140">If successful, this method returns a `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="70c92-141">Beispiel</span><span class="sxs-lookup"><span data-stu-id="70c92-141">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="70c92-142">Anforderung</span><span class="sxs-lookup"><span data-stu-id="70c92-142">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -65,8 +66,8 @@ GET /directory/deletedItems/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```
-##### <a name="response"></a><span data-ttu-id="14d7d-143">Antwort</span><span class="sxs-lookup"><span data-stu-id="14d7d-143">Response</span></span>
-<span data-ttu-id="14d7d-p102">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="14d7d-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="70c92-143">Antwort</span><span class="sxs-lookup"><span data-stu-id="70c92-143">Response</span></span>
+<span data-ttu-id="70c92-p102">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="70c92-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,30 +1,31 @@
 ---
-title: Liste secureScores
+title: List secureScores
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: f5466e24d6b523809a72f712666063808987e530
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6bf0a1e1964c93043bad4a81ab812786627ea737
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059737"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831815"
 ---
-# <a name="list-securescores"></a><span data-ttu-id="3ba30-104">Liste secureScores</span><span class="sxs-lookup"><span data-stu-id="3ba30-104">List secureScores</span></span>
+# <a name="list-securescores"></a><span data-ttu-id="44a81-104">List secureScores</span><span class="sxs-lookup"><span data-stu-id="44a81-104">List secureScores</span></span>
 
- > <span data-ttu-id="3ba30-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="3ba30-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="3ba30-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="3ba30-106">Use of these APIs in production applications is not supported.</span></span>
+ > <span data-ttu-id="44a81-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="44a81-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="44a81-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="44a81-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="3ba30-107">Rufen Sie die Eigenschaften und die Beziehungen eines [SecureScores](../resources/securescores.md) -Objekts ab.</span><span class="sxs-lookup"><span data-stu-id="3ba30-107">Retrieve the properties and relationships of a [secureScores](../resources/securescores.md) object.</span></span>
+<span data-ttu-id="44a81-107">Rufen Sie die Eigenschaften und die Beziehungen eines [SecureScores](../resources/securescores.md) -Objekts ab.</span><span class="sxs-lookup"><span data-stu-id="44a81-107">Retrieve the properties and relationships of a [secureScores](../resources/securescores.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3ba30-108">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="3ba30-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="44a81-108">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="44a81-108">Permissions</span></span>
 
-<span data-ttu-id="3ba30-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3ba30-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="44a81-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="44a81-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3ba30-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="3ba30-111">Permission type</span></span>      | <span data-ttu-id="3ba30-112">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="3ba30-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="44a81-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="44a81-111">Permission type</span></span>      | <span data-ttu-id="44a81-112">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="44a81-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3ba30-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="3ba30-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="3ba30-114">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span><span class="sxs-lookup"><span data-stu-id="3ba30-114">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span>   |
-|<span data-ttu-id="3ba30-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="3ba30-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="3ba30-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="3ba30-116">Not supported.</span></span>  |
-|<span data-ttu-id="3ba30-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="3ba30-117">Application</span></span> | <span data-ttu-id="3ba30-118">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span><span class="sxs-lookup"><span data-stu-id="3ba30-118">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span> |
+|<span data-ttu-id="44a81-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="44a81-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="44a81-114">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span><span class="sxs-lookup"><span data-stu-id="44a81-114">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span>   |
+|<span data-ttu-id="44a81-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="44a81-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="44a81-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="44a81-116">Not supported.</span></span>  |
+|<span data-ttu-id="44a81-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="44a81-117">Application</span></span> | <span data-ttu-id="44a81-118">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span><span class="sxs-lookup"><span data-stu-id="44a81-118">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3ba30-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="3ba30-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="44a81-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="44a81-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -32,25 +33,25 @@ ms.locfileid: "27059737"
 GET /security/secureScores
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3ba30-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="3ba30-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="44a81-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="44a81-120">Request headers</span></span>
 
-| <span data-ttu-id="3ba30-121">Name</span><span class="sxs-lookup"><span data-stu-id="3ba30-121">Name</span></span>      |<span data-ttu-id="3ba30-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3ba30-122">Description</span></span>|
+| <span data-ttu-id="44a81-121">Name</span><span class="sxs-lookup"><span data-stu-id="44a81-121">Name</span></span>      |<span data-ttu-id="44a81-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="44a81-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="3ba30-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="3ba30-123">Authorization</span></span>  | <span data-ttu-id="3ba30-p104">Bearer {code}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="3ba30-p104">Bearer {code}. Required.</span></span>|
+| <span data-ttu-id="44a81-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="44a81-123">Authorization</span></span>  | <span data-ttu-id="44a81-p104">Bearer {code}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="44a81-p104">Bearer {code}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3ba30-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="3ba30-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="44a81-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="44a81-126">Request body</span></span>
 
-<span data-ttu-id="3ba30-127">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="3ba30-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="44a81-127">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="44a81-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3ba30-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="3ba30-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="44a81-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="44a81-128">Response</span></span>
 
-<span data-ttu-id="3ba30-129">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eines **SecureScores** -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="3ba30-129">If successful, this method returns a `200 OK` response code and a **secureScores** object in the response body.</span></span>
+<span data-ttu-id="44a81-129">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eines **SecureScores** -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="44a81-129">If successful, this method returns a `200 OK` response code and a **secureScores** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3ba30-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="3ba30-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="44a81-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="44a81-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="3ba30-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="3ba30-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="44a81-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="44a81-131">Request</span></span>
 
-<span data-ttu-id="3ba30-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="3ba30-132">The following is an example of the request.</span></span>
+<span data-ttu-id="44a81-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="44a81-132">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "securescores_list"
@@ -60,9 +61,9 @@ GET /security/secureScores
 GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 ```
 
-### <a name="response"></a><span data-ttu-id="3ba30-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="3ba30-133">Response</span></span>
+### <a name="response"></a><span data-ttu-id="44a81-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="44a81-133">Response</span></span>
 
-<span data-ttu-id="3ba30-134">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="3ba30-134">The following is an example of the response.</span></span>
+<span data-ttu-id="44a81-134">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="44a81-134">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

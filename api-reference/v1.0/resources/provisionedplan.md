@@ -1,28 +1,29 @@
 ---
 title: provisionedPlan-Ressourcentyp
 description: Die **ProvisionedPlans**-Eigenschaft der user-Entität und der oganization-Entität ist eine Sammlung von **provisionedPlan**.
-ms.openlocfilehash: 7808e3a17e471123f702381fb52535e53682e276
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dd8d4f5b406a2291a829d7c11d4948bd9a08d453
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018643"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831486"
 ---
-# <a name="provisionedplan-resource-type"></a><span data-ttu-id="9e4a4-103">provisionedPlan-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="9e4a4-103">provisionedPlan resource type</span></span>
+# <a name="provisionedplan-resource-type"></a><span data-ttu-id="1597c-103">provisionedPlan-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="1597c-103">provisionedPlan resource type</span></span>
 
-<span data-ttu-id="9e4a4-104">Die **ProvisionedPlans**-Eigenschaft der [user](user.md)-Entität und der [oganization](organization.md)-Entität ist eine Sammlung von **provisionedPlan**.</span><span class="sxs-lookup"><span data-stu-id="9e4a4-104">The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.</span></span>
+<span data-ttu-id="1597c-104">Die **ProvisionedPlans**-Eigenschaft der [user](user.md)-Entität und der [oganization](organization.md)-Entität ist eine Sammlung von **provisionedPlan**.</span><span class="sxs-lookup"><span data-stu-id="1597c-104">The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="9e4a4-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="9e4a4-105">Properties</span></span>
-| <span data-ttu-id="9e4a4-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="9e4a4-106">Property</span></span>     | <span data-ttu-id="9e4a4-107">Typ</span><span class="sxs-lookup"><span data-stu-id="9e4a4-107">Type</span></span>   |<span data-ttu-id="9e4a4-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="9e4a4-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="1597c-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="1597c-105">Properties</span></span>
+| <span data-ttu-id="1597c-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="1597c-106">Property</span></span>     | <span data-ttu-id="1597c-107">Typ</span><span class="sxs-lookup"><span data-stu-id="1597c-107">Type</span></span>   |<span data-ttu-id="1597c-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1597c-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9e4a4-109">capabilityStatus</span><span class="sxs-lookup"><span data-stu-id="9e4a4-109">capabilityStatus</span></span>|<span data-ttu-id="9e4a4-110">String</span><span class="sxs-lookup"><span data-stu-id="9e4a4-110">String</span></span>|<span data-ttu-id="9e4a4-111">Z. B. „Aktiviert“.</span><span class="sxs-lookup"><span data-stu-id="9e4a4-111">For example, “Enabled”.</span></span>|
-|<span data-ttu-id="9e4a4-112">provisioningStatus</span><span class="sxs-lookup"><span data-stu-id="9e4a4-112">provisioningStatus</span></span>|<span data-ttu-id="9e4a4-113">String</span><span class="sxs-lookup"><span data-stu-id="9e4a4-113">String</span></span>|<span data-ttu-id="9e4a4-114">Z. B. „Erfolgreich“.</span><span class="sxs-lookup"><span data-stu-id="9e4a4-114">For example, “Success”.</span></span>|
-|<span data-ttu-id="9e4a4-115">service</span><span class="sxs-lookup"><span data-stu-id="9e4a4-115">service</span></span>|<span data-ttu-id="9e4a4-116">String</span><span class="sxs-lookup"><span data-stu-id="9e4a4-116">String</span></span>|<span data-ttu-id="9e4a4-117">Der Name des Diensts. z. B. „AccessControlS2S“</span><span class="sxs-lookup"><span data-stu-id="9e4a4-117">The name of the service; for example, “AccessControlS2S”</span></span>|
+|<span data-ttu-id="1597c-109">capabilityStatus</span><span class="sxs-lookup"><span data-stu-id="1597c-109">capabilityStatus</span></span>|<span data-ttu-id="1597c-110">String</span><span class="sxs-lookup"><span data-stu-id="1597c-110">String</span></span>|<span data-ttu-id="1597c-111">Z. B. „Aktiviert“.</span><span class="sxs-lookup"><span data-stu-id="1597c-111">For example, “Enabled”.</span></span>|
+|<span data-ttu-id="1597c-112">provisioningStatus</span><span class="sxs-lookup"><span data-stu-id="1597c-112">provisioningStatus</span></span>|<span data-ttu-id="1597c-113">String</span><span class="sxs-lookup"><span data-stu-id="1597c-113">String</span></span>|<span data-ttu-id="1597c-114">Z. B. „Erfolgreich“.</span><span class="sxs-lookup"><span data-stu-id="1597c-114">For example, “Success”.</span></span>|
+|<span data-ttu-id="1597c-115">service</span><span class="sxs-lookup"><span data-stu-id="1597c-115">service</span></span>|<span data-ttu-id="1597c-116">String</span><span class="sxs-lookup"><span data-stu-id="1597c-116">String</span></span>|<span data-ttu-id="1597c-117">Der Name des Diensts. z. B. „AccessControlS2S“</span><span class="sxs-lookup"><span data-stu-id="1597c-117">The name of the service; for example, “AccessControlS2S”</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="9e4a4-118">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="9e4a4-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1597c-118">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="1597c-118">JSON representation</span></span>
 
-<span data-ttu-id="9e4a4-119">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="9e4a4-119">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="1597c-119">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="1597c-119">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,27 +1,28 @@
 ---
 title: settingValue-Ressourcentyp
 description: Eine Einstellung, die durch ein Name/Wertpaar dargestellt wird.
-ms.openlocfilehash: b47c5c746117390cfd59db71d832928e482403b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3edf5bdc1fae77702206eae78d53fcf0fdc5b644
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020091"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834034"
 ---
-# <a name="settingvalue-resource-type"></a><span data-ttu-id="01a4d-103">settingValue-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="01a4d-103">settingValue resource type</span></span>
+# <a name="settingvalue-resource-type"></a><span data-ttu-id="19990-103">settingValue-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="19990-103">settingValue resource type</span></span>
 
-<span data-ttu-id="01a4d-104">Eine Einstellung, die durch ein Name/Wertpaar dargestellt wird.</span><span class="sxs-lookup"><span data-stu-id="01a4d-104">A setting represented by a name/value pair.</span></span>
+<span data-ttu-id="19990-104">Eine Einstellung, die durch ein Name/Wertpaar dargestellt wird.</span><span class="sxs-lookup"><span data-stu-id="19990-104">A setting represented by a name/value pair.</span></span>
 
-### <a name="properties"></a><span data-ttu-id="01a4d-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="01a4d-105">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="19990-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="19990-105">Properties</span></span>
 
-| <span data-ttu-id="01a4d-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="01a4d-106">Property</span></span> | <span data-ttu-id="01a4d-107">Typ</span><span class="sxs-lookup"><span data-stu-id="01a4d-107">Type</span></span> | <span data-ttu-id="01a4d-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="01a4d-108">Description</span></span> |
+| <span data-ttu-id="19990-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="19990-106">Property</span></span> | <span data-ttu-id="19990-107">Typ</span><span class="sxs-lookup"><span data-stu-id="19990-107">Type</span></span> | <span data-ttu-id="19990-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="19990-108">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="01a4d-109">name</span><span class="sxs-lookup"><span data-stu-id="01a4d-109">name</span></span>|<span data-ttu-id="01a4d-110">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="01a4d-110">String</span></span>| <span data-ttu-id="01a4d-111">Name der Einstellung (entsprechend der [groupSettingTemplate](groupsettingtemplate.md)-Definition).</span><span class="sxs-lookup"><span data-stu-id="01a4d-111">Name of the setting (as defined by the [groupSettingTemplate](groupsettingtemplate.md)).</span></span> |
-|<span data-ttu-id="01a4d-112">Wert</span><span class="sxs-lookup"><span data-stu-id="01a4d-112">value</span></span>|<span data-ttu-id="01a4d-113">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="01a4d-113">String</span></span>| <span data-ttu-id="01a4d-114">Wert der Einstellung.</span><span class="sxs-lookup"><span data-stu-id="01a4d-114">Value of the setting.</span></span> |
+|<span data-ttu-id="19990-109">name</span><span class="sxs-lookup"><span data-stu-id="19990-109">name</span></span>|<span data-ttu-id="19990-110">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="19990-110">String</span></span>| <span data-ttu-id="19990-111">Name der Einstellung (entsprechend der [groupSettingTemplate](groupsettingtemplate.md)-Definition).</span><span class="sxs-lookup"><span data-stu-id="19990-111">Name of the setting (as defined by the [groupSettingTemplate](groupsettingtemplate.md)).</span></span> |
+|<span data-ttu-id="19990-112">Wert</span><span class="sxs-lookup"><span data-stu-id="19990-112">value</span></span>|<span data-ttu-id="19990-113">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="19990-113">String</span></span>| <span data-ttu-id="19990-114">Wert der Einstellung.</span><span class="sxs-lookup"><span data-stu-id="19990-114">Value of the setting.</span></span> |
 
-### <a name="json-representation"></a><span data-ttu-id="01a4d-115">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="01a4d-115">JSON representation</span></span>
+### <a name="json-representation"></a><span data-ttu-id="19990-115">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="19990-115">JSON representation</span></span>
 
-<span data-ttu-id="01a4d-116">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="01a4d-116">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="19990-116">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="19990-116">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

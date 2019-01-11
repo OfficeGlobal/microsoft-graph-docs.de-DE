@@ -1,49 +1,50 @@
 ---
 title: Liste governanceResources
 description: Abrufen einer Auflistung von GovernanceResource, die der Requestor auf zugreifen.
-ms.openlocfilehash: a8f0fc03dbd880c82bca7c9d8f6e84a2940511d9
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 4527c7a5f59832fe69181a815af40a0e0e073c90
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191088"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838297"
 ---
-# <a name="list-governanceresources"></a><span data-ttu-id="7dda9-103">Liste governanceResources</span><span class="sxs-lookup"><span data-stu-id="7dda9-103">List governanceResources</span></span>
+# <a name="list-governanceresources"></a><span data-ttu-id="4f30f-103">Liste governanceResources</span><span class="sxs-lookup"><span data-stu-id="4f30f-103">List governanceResources</span></span>
 
-> <span data-ttu-id="7dda9-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="7dda9-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="7dda9-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="7dda9-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="4f30f-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="4f30f-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4f30f-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="4f30f-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="7dda9-106">Abrufen einer Auflistung von [GovernanceResource](../resources/governanceresource.md) , die der Requestor auf zugreifen.</span><span class="sxs-lookup"><span data-stu-id="7dda9-106">Retrieve a collection of [governanceResource](../resources/governanceresource.md) that the requestor has access to.</span></span>
+<span data-ttu-id="4f30f-106">Abrufen einer Auflistung von [GovernanceResource](../resources/governanceresource.md) , die der Requestor auf zugreifen.</span><span class="sxs-lookup"><span data-stu-id="4f30f-106">Retrieve a collection of [governanceResource](../resources/governanceresource.md) that the requestor has access to.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7dda9-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="7dda9-107">Permissions</span></span>
-<span data-ttu-id="7dda9-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7dda9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4f30f-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="4f30f-107">Permissions</span></span>
+<span data-ttu-id="4f30f-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4f30f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7dda9-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="7dda9-110">Permission type</span></span>      | <span data-ttu-id="7dda9-111">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="7dda9-111">Permissions</span></span>              |
+|<span data-ttu-id="4f30f-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="4f30f-110">Permission type</span></span>      | <span data-ttu-id="4f30f-111">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="4f30f-111">Permissions</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7dda9-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="7dda9-112">Delegated (work or school account)</span></span> | <span data-ttu-id="7dda9-113">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="7dda9-113">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
-|<span data-ttu-id="7dda9-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="7dda9-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7dda9-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="7dda9-115">Not supported.</span></span>    |
-|<span data-ttu-id="7dda9-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="7dda9-116">Application</span></span> | <span data-ttu-id="7dda9-117">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="7dda9-117">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
+|<span data-ttu-id="4f30f-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="4f30f-112">Delegated (work or school account)</span></span> | <span data-ttu-id="4f30f-113">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="4f30f-113">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
+|<span data-ttu-id="4f30f-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="4f30f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4f30f-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="4f30f-115">Not supported.</span></span>    |
+|<span data-ttu-id="4f30f-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="4f30f-116">Application</span></span> | <span data-ttu-id="4f30f-117">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="4f30f-117">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7dda9-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="7dda9-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4f30f-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="4f30f-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedAccess/azureResources/resources
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="7dda9-119">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="7dda9-119">Optional query parameters</span></span>
-<span data-ttu-id="7dda9-120">Diese Methode unterstützt die [OData-Abfrage-Parameter](/graph/query-parameters) , mit denen die Antwort anpassen.</span><span class="sxs-lookup"><span data-stu-id="7dda9-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="4f30f-119">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="4f30f-119">Optional query parameters</span></span>
+<span data-ttu-id="4f30f-120">Diese Methode unterstützt die [OData-Abfrage-Parameter](/graph/query-parameters) , mit denen die Antwort anpassen.</span><span class="sxs-lookup"><span data-stu-id="4f30f-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="7dda9-121">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="7dda9-121">Request headers</span></span>
-| <span data-ttu-id="7dda9-122">Name</span><span class="sxs-lookup"><span data-stu-id="7dda9-122">Name</span></span>      |<span data-ttu-id="7dda9-123">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7dda9-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4f30f-121">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="4f30f-121">Request headers</span></span>
+| <span data-ttu-id="4f30f-122">Name</span><span class="sxs-lookup"><span data-stu-id="4f30f-122">Name</span></span>      |<span data-ttu-id="4f30f-123">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="4f30f-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="7dda9-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="7dda9-124">Authorization</span></span>  | <span data-ttu-id="7dda9-125">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="7dda9-125">Bearer {code}</span></span>|
+| <span data-ttu-id="4f30f-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="4f30f-124">Authorization</span></span>  | <span data-ttu-id="4f30f-125">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="4f30f-125">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7dda9-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="7dda9-126">Request body</span></span>
-<span data-ttu-id="7dda9-127">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="7dda9-127">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="7dda9-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="7dda9-128">Response</span></span>
-<span data-ttu-id="7dda9-129">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und Auflistung von Objekten im Antworttext [GovernanceResource](../resources/governanceresource.md) .</span><span class="sxs-lookup"><span data-stu-id="7dda9-129">If successful, this method returns a `200 OK` response code and collection of [governanceResource](../resources/governanceresource.md) objects in the response body.</span></span>
-## <a name="examples"></a><span data-ttu-id="7dda9-130">Beispiele</span><span class="sxs-lookup"><span data-stu-id="7dda9-130">Examples</span></span>
+## <a name="request-body"></a><span data-ttu-id="4f30f-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="4f30f-126">Request body</span></span>
+<span data-ttu-id="4f30f-127">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="4f30f-127">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="4f30f-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="4f30f-128">Response</span></span>
+<span data-ttu-id="4f30f-129">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und Auflistung von Objekten im Antworttext [GovernanceResource](../resources/governanceresource.md) .</span><span class="sxs-lookup"><span data-stu-id="4f30f-129">If successful, this method returns a `200 OK` response code and collection of [governanceResource](../resources/governanceresource.md) objects in the response body.</span></span>
+## <a name="examples"></a><span data-ttu-id="4f30f-130">Beispiele</span><span class="sxs-lookup"><span data-stu-id="4f30f-130">Examples</span></span>
 
-<span data-ttu-id="7dda9-131">In diesem Beispiel werden alle Ressourcen, die ich derzeit zugreifen können.</span><span class="sxs-lookup"><span data-stu-id="7dda9-131">This example lists all resources I can currently access.</span></span>
-##### <a name="request"></a><span data-ttu-id="7dda9-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="7dda9-132">Request</span></span>
+<span data-ttu-id="4f30f-131">In diesem Beispiel werden alle Ressourcen, die ich derzeit zugreifen können.</span><span class="sxs-lookup"><span data-stu-id="4f30f-131">This example lists all resources I can currently access.</span></span>
+##### <a name="request"></a><span data-ttu-id="4f30f-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="4f30f-132">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_governanceresources"
@@ -51,10 +52,10 @@ GET /privilegedAccess/azureResources/resources
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 ```
-##### <a name="response"></a><span data-ttu-id="7dda9-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="7dda9-133">Response</span></span>
-<span data-ttu-id="7dda9-134">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="7dda9-134">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="4f30f-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="4f30f-133">Response</span></span>
+<span data-ttu-id="4f30f-134">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="4f30f-134">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="7dda9-p103">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="7dda9-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="4f30f-p103">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="4f30f-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

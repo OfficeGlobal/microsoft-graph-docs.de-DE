@@ -1,49 +1,50 @@
 ---
 title: Filter deaktivieren
 description: Deaktiviert den Filter für die angegebene Spalte.
-ms.openlocfilehash: ae71723ed3ca9074bb7a71ea131fd7103f3714af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9dd13991572d28e61dafce3049698117729161fb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059914"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838185"
 ---
-# <a name="filter-clear"></a><span data-ttu-id="095e2-103">Filter deaktivieren</span><span class="sxs-lookup"><span data-stu-id="095e2-103">Filter: clear</span></span>
+# <a name="filter-clear"></a><span data-ttu-id="05cb9-103">Filter deaktivieren</span><span class="sxs-lookup"><span data-stu-id="05cb9-103">Filter: clear</span></span>
 
-> <span data-ttu-id="095e2-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="095e2-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="095e2-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="095e2-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="05cb9-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="05cb9-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="05cb9-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="05cb9-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="095e2-106">Deaktiviert den Filter für die angegebene Spalte.</span><span class="sxs-lookup"><span data-stu-id="095e2-106">Clear the filter on the given column.</span></span>
-## <a name="permissions"></a><span data-ttu-id="095e2-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="095e2-107">Permissions</span></span>
-<span data-ttu-id="095e2-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="095e2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="05cb9-106">Deaktiviert den Filter für die angegebene Spalte.</span><span class="sxs-lookup"><span data-stu-id="05cb9-106">Clear the filter on the given column.</span></span>
+## <a name="permissions"></a><span data-ttu-id="05cb9-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="05cb9-107">Permissions</span></span>
+<span data-ttu-id="05cb9-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="05cb9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="095e2-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="095e2-110">Permission type</span></span>      | <span data-ttu-id="095e2-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="095e2-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="05cb9-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="05cb9-110">Permission type</span></span>      | <span data-ttu-id="05cb9-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="05cb9-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="095e2-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="095e2-112">Delegated (work or school account)</span></span> | <span data-ttu-id="095e2-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="095e2-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="095e2-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="095e2-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="095e2-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="095e2-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="095e2-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="095e2-116">Application</span></span> | <span data-ttu-id="095e2-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="095e2-117">Not supported.</span></span> |
+|<span data-ttu-id="05cb9-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="05cb9-112">Delegated (work or school account)</span></span> | <span data-ttu-id="05cb9-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="05cb9-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="05cb9-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="05cb9-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="05cb9-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="05cb9-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="05cb9-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="05cb9-116">Application</span></span> | <span data-ttu-id="05cb9-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="05cb9-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="095e2-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="095e2-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="05cb9-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="05cb9-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/columns/{id|name}/filter/clear
 POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/clear
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="095e2-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="095e2-119">Request headers</span></span>
-| <span data-ttu-id="095e2-120">Name</span><span class="sxs-lookup"><span data-stu-id="095e2-120">Name</span></span>       | <span data-ttu-id="095e2-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="095e2-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="05cb9-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="05cb9-119">Request headers</span></span>
+| <span data-ttu-id="05cb9-120">Name</span><span class="sxs-lookup"><span data-stu-id="05cb9-120">Name</span></span>       | <span data-ttu-id="05cb9-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="05cb9-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="095e2-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="095e2-122">Authorization</span></span>  | <span data-ttu-id="095e2-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="095e2-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="05cb9-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="05cb9-122">Authorization</span></span>  | <span data-ttu-id="05cb9-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="05cb9-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="095e2-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="095e2-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="05cb9-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="05cb9-125">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="095e2-126">Antwort</span><span class="sxs-lookup"><span data-stu-id="095e2-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="05cb9-126">Antwort</span><span class="sxs-lookup"><span data-stu-id="05cb9-126">Response</span></span>
 
-<span data-ttu-id="095e2-p104">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200 OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="095e2-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="05cb9-p104">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200 OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="05cb9-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="095e2-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="095e2-129">Example</span></span>
-<span data-ttu-id="095e2-130">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="095e2-130">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="095e2-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="095e2-131">Request</span></span>
-<span data-ttu-id="095e2-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="095e2-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="05cb9-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="05cb9-129">Example</span></span>
+<span data-ttu-id="05cb9-130">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="05cb9-130">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="05cb9-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="05cb9-131">Request</span></span>
+<span data-ttu-id="05cb9-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="05cb9-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "filter_clear"
@@ -52,8 +53,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/cl
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/filter/clear
 ```
 
-##### <a name="response"></a><span data-ttu-id="095e2-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="095e2-133">Response</span></span>
-<span data-ttu-id="095e2-134">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="095e2-134">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="05cb9-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="05cb9-133">Response</span></span>
+<span data-ttu-id="05cb9-134">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="05cb9-134">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
