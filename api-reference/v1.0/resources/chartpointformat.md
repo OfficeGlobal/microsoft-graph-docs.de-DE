@@ -2,33 +2,34 @@
 title: ChartPointFormat-Ressourcentyp
 description: Stellt das Formatierungsobjekt für Diagrammpunkte dar.
 author: lumine2008
-ms.openlocfilehash: 94ba58eb60f80cf704de3d8a44e6e96f010429a7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5923252a9fce47eedc58751def301b6515560ddd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311312"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883342"
 ---
-# <a name="chartpointformat-resource-type"></a><span data-ttu-id="a922d-103">ChartPointFormat-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="a922d-103">ChartPointFormat resource type</span></span>
+# <a name="chartpointformat-resource-type"></a><span data-ttu-id="7a5bc-103">ChartPointFormat-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="7a5bc-103">ChartPointFormat resource type</span></span>
 
-<span data-ttu-id="a922d-104">Stellt das Formatierungsobjekt für Diagrammpunkte dar.</span><span class="sxs-lookup"><span data-stu-id="a922d-104">Represents formatting object for chart points.</span></span>
+<span data-ttu-id="7a5bc-104">Stellt das Formatierungsobjekt für Diagrammpunkte dar.</span><span class="sxs-lookup"><span data-stu-id="7a5bc-104">Represents formatting object for chart points.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="a922d-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="a922d-105">Methods</span></span>
-<span data-ttu-id="a922d-106">Keine</span><span class="sxs-lookup"><span data-stu-id="a922d-106">None</span></span>
+## <a name="methods"></a><span data-ttu-id="7a5bc-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="7a5bc-105">Methods</span></span>
+<span data-ttu-id="7a5bc-106">Keine</span><span class="sxs-lookup"><span data-stu-id="7a5bc-106">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a922d-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="a922d-107">Properties</span></span>
-<span data-ttu-id="a922d-108">Keine</span><span class="sxs-lookup"><span data-stu-id="a922d-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="7a5bc-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="7a5bc-107">Properties</span></span>
+<span data-ttu-id="7a5bc-108">Keine</span><span class="sxs-lookup"><span data-stu-id="7a5bc-108">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="a922d-109">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="a922d-109">Relationships</span></span>
-| <span data-ttu-id="a922d-110">Beziehung</span><span class="sxs-lookup"><span data-stu-id="a922d-110">Relationship</span></span> | <span data-ttu-id="a922d-111">Typ</span><span class="sxs-lookup"><span data-stu-id="a922d-111">Type</span></span>   |<span data-ttu-id="a922d-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a922d-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="7a5bc-109">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="7a5bc-109">Relationships</span></span>
+| <span data-ttu-id="7a5bc-110">Beziehung</span><span class="sxs-lookup"><span data-stu-id="7a5bc-110">Relationship</span></span> | <span data-ttu-id="7a5bc-111">Typ</span><span class="sxs-lookup"><span data-stu-id="7a5bc-111">Type</span></span>   |<span data-ttu-id="7a5bc-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7a5bc-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a922d-113">fill</span><span class="sxs-lookup"><span data-stu-id="a922d-113">fill</span></span>|[<span data-ttu-id="a922d-114">WorkbookChartFill</span><span class="sxs-lookup"><span data-stu-id="a922d-114">WorkbookChartFill</span></span>](chartfill.md)|<span data-ttu-id="a922d-p101">Stellt die Füllung eines Diagramms dar, einschließlich Informationen zur Hintergrundformatierung. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="a922d-p101">Represents the fill format of a chart, which includes background formating information. Read-only.</span></span>|
+|<span data-ttu-id="7a5bc-113">fill</span><span class="sxs-lookup"><span data-stu-id="7a5bc-113">fill</span></span>|[<span data-ttu-id="7a5bc-114">WorkbookChartFill</span><span class="sxs-lookup"><span data-stu-id="7a5bc-114">WorkbookChartFill</span></span>](chartfill.md)|<span data-ttu-id="7a5bc-p101">Stellt die Füllung eines Diagramms dar, einschließlich Informationen zur Hintergrundformatierung. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="7a5bc-p101">Represents the fill format of a chart, which includes background formating information. Read-only.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="a922d-117">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="a922d-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7a5bc-117">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="7a5bc-117">JSON representation</span></span>
 
-<span data-ttu-id="a922d-118">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="a922d-118">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="7a5bc-118">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="7a5bc-118">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",

@@ -1,26 +1,27 @@
 ---
 title: plannerExternalReferences-Ressourcentyp
 description: Die **plannerExternalReferences**-Ressource stellt die Sammlung der Verweise für eine Aufgabe dar. Es handelt sich um einen offenen Typ. Sie ist Bestandteil des taskDetails-Objekts. Der Wert im Eigenschaft-Wert-Paar ist das externalReference-Objekt.
-ms.openlocfilehash: cfd50c11956e421bd54bf29ad68a9c258f69cf20
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7f32c0d7acc54f4bd96fd3b34478f80c882d55da
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061427"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888788"
 ---
-# <a name="plannerexternalreferences-resource-type"></a><span data-ttu-id="91790-106">plannerExternalReferences-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="91790-106">plannerExternalReferences resource type</span></span>
+# <a name="plannerexternalreferences-resource-type"></a><span data-ttu-id="2cceb-106">plannerExternalReferences-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="2cceb-106">plannerExternalReferences resource type</span></span>
 
-> <span data-ttu-id="91790-107">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="91790-107">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="91790-108">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="91790-108">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="2cceb-107">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="2cceb-107">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2cceb-108">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="2cceb-108">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="91790-p103">Die **plannerExternalReferences**-Ressource stellt die Sammlung der Verweise für eine Aufgabe dar. Es handelt sich um einen offenen Typ. Sie ist Bestandteil des [taskDetails](plannertaskdetails.md)-Objekts. Der Wert im Eigenschaft-Wert-Paar ist das [externalReference](plannerexternalreference.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="91790-p103">The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [externalReference](plannerexternalreference.md) object.</span></span>
+<span data-ttu-id="2cceb-p103">Die **plannerExternalReferences**-Ressource stellt die Sammlung der Verweise für eine Aufgabe dar. Es handelt sich um einen offenen Typ. Sie ist Bestandteil des [taskDetails](plannertaskdetails.md)-Objekts. Der Wert im Eigenschaft-Wert-Paar ist das [externalReference](plannerexternalreference.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="2cceb-p103">The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [externalReference](plannerexternalreference.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="91790-113">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="91790-113">Properties</span></span>
-<span data-ttu-id="91790-p104">Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall muss der Client **gültige URLs** auf Basis der Protokolle **HTTP/HTTPS** als Eigenschaften angeben, und ihre Werte müssen die [externalReference](plannerexternalreference.md)-Objekte sein. Basierend auf OData dürfen Eigenschaftennamen in offenen Typen die folgenden Zeichen nicht enthalten: `.`, `:`, `%`; daher müssen sie codiert werden. Nachfolgend ein Beispiel. Um einen Verweis zu entfernen, legen Sie den Wert der Eigenschaft auf `null` fest.</span><span class="sxs-lookup"><span data-stu-id="91790-p104">Properties of an Open Type can be defined by the client. In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects. Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`  so they need to be encoded. Example is shown below. To remove a reference, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="2cceb-113">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="2cceb-113">Properties</span></span>
+<span data-ttu-id="2cceb-p104">Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall muss der Client **gültige URLs** auf Basis der Protokolle **HTTP/HTTPS** als Eigenschaften angeben, und ihre Werte müssen die [externalReference](plannerexternalreference.md)-Objekte sein. Basierend auf OData dürfen Eigenschaftennamen in offenen Typen die folgenden Zeichen nicht enthalten: `.`, `:`, `%`; daher müssen sie codiert werden. Nachfolgend ein Beispiel. Um einen Verweis zu entfernen, legen Sie den Wert der Eigenschaft auf `null` fest.</span><span class="sxs-lookup"><span data-stu-id="2cceb-p104">Properties of an Open Type can be defined by the client. In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects. Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`  so they need to be encoded. Example is shown below. To remove a reference, set the value of the property to `null`.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="91790-119">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="91790-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2cceb-119">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="2cceb-119">JSON representation</span></span>
 
-<span data-ttu-id="91790-120">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="91790-120">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="2cceb-120">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="2cceb-120">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -44,7 +45,7 @@ ms.locfileid: "27061427"
 }
 ```
 
-<span data-ttu-id="91790-121">// Beispiel</span><span class="sxs-lookup"><span data-stu-id="91790-121">// Example</span></span>
+<span data-ttu-id="2cceb-121">// Beispiel</span><span class="sxs-lookup"><span data-stu-id="2cceb-121">// Example</span></span>
 
 ```json
 {

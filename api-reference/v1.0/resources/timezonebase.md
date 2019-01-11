@@ -1,27 +1,28 @@
 ---
 title: timeZoneBase-Ressourcentyp
 description: Die grundlegende Darstellung einer Zeitzone.
-ms.openlocfilehash: 18df657ab561163b64bcf224f8902f2ba7e0039c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4c112a3118bf3f4d00be790d7923bc0fe82dc72f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018109"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860634"
 ---
-# <a name="timezonebase-resource-type"></a><span data-ttu-id="26d28-103">timeZoneBase-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="26d28-103">timeZoneBase resource type</span></span>
+# <a name="timezonebase-resource-type"></a><span data-ttu-id="8f7f3-103">timeZoneBase-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="8f7f3-103">timeZoneBase resource type</span></span>
 
-<span data-ttu-id="26d28-104">Die grundlegende Darstellung einer Zeitzone.</span><span class="sxs-lookup"><span data-stu-id="26d28-104">The basic representation of a time zone.</span></span>
+<span data-ttu-id="8f7f3-104">Die grundlegende Darstellung einer Zeitzone.</span><span class="sxs-lookup"><span data-stu-id="8f7f3-104">The basic representation of a time zone.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="26d28-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="26d28-105">Properties</span></span>
-| <span data-ttu-id="26d28-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="26d28-106">Property</span></span>     | <span data-ttu-id="26d28-107">Typ</span><span class="sxs-lookup"><span data-stu-id="26d28-107">Type</span></span>   |<span data-ttu-id="26d28-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="26d28-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="8f7f3-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="8f7f3-105">Properties</span></span>
+| <span data-ttu-id="8f7f3-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="8f7f3-106">Property</span></span>     | <span data-ttu-id="8f7f3-107">Typ</span><span class="sxs-lookup"><span data-stu-id="8f7f3-107">Type</span></span>   |<span data-ttu-id="8f7f3-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8f7f3-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="26d28-109">name</span><span class="sxs-lookup"><span data-stu-id="26d28-109">name</span></span> | <span data-ttu-id="26d28-110">string</span><span class="sxs-lookup"><span data-stu-id="26d28-110">string</span></span> | <span data-ttu-id="26d28-111">Der Name einer Zeitzone.</span><span class="sxs-lookup"><span data-stu-id="26d28-111">The name of a time zone.</span></span> <span data-ttu-id="26d28-112">Dies kann ein standardmäßiger Name für eine Zeitzone sein, z. B. „Hawaii-Aleutian Normalzeit“ oder „Benutzerdefinierte Zeitzone“ für eine benutzerdefinierte Zeitzone.</span><span class="sxs-lookup"><span data-stu-id="26d28-112">It can be a standard time zone name such as "Hawaii-Aleutian Standard Time", or "Customized Time Zone" for a custom time zone.</span></span> |
+| <span data-ttu-id="8f7f3-109">name</span><span class="sxs-lookup"><span data-stu-id="8f7f3-109">name</span></span> | <span data-ttu-id="8f7f3-110">string</span><span class="sxs-lookup"><span data-stu-id="8f7f3-110">string</span></span> | <span data-ttu-id="8f7f3-111">Der Name einer Zeitzone.</span><span class="sxs-lookup"><span data-stu-id="8f7f3-111">The name of a time zone.</span></span> <span data-ttu-id="8f7f3-112">Dies kann ein standardmäßiger Name für eine Zeitzone sein, z. B. „Hawaii-Aleutian Normalzeit“ oder „Benutzerdefinierte Zeitzone“ für eine benutzerdefinierte Zeitzone.</span><span class="sxs-lookup"><span data-stu-id="8f7f3-112">It can be a standard time zone name such as "Hawaii-Aleutian Standard Time", or "Customized Time Zone" for a custom time zone.</span></span> |
 
 
-## <a name="json-representation"></a><span data-ttu-id="26d28-113">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="26d28-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8f7f3-113">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="8f7f3-113">JSON representation</span></span>
 
-<span data-ttu-id="26d28-114">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="26d28-114">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="8f7f3-114">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="8f7f3-114">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -2,51 +2,52 @@
 title: ChartLineFormat aktualisieren
 description: Dient zum Aktualisieren der Eigenschaften des ChartLineFormat-Objekts.
 author: lumine2008
-ms.openlocfilehash: 2023f18c500fbd9c1672e2f3f37f73a23e1879fe
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 55a95e9accee468eb944ff46994c73ca2653ed30
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351324"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860991"
 ---
-# <a name="update-chartlineformat"></a><span data-ttu-id="d0d1a-103">ChartLineFormat aktualisieren</span><span class="sxs-lookup"><span data-stu-id="d0d1a-103">Update chartlineformat</span></span>
+# <a name="update-chartlineformat"></a><span data-ttu-id="ac6aa-103">ChartLineFormat aktualisieren</span><span class="sxs-lookup"><span data-stu-id="ac6aa-103">Update chartlineformat</span></span>
 
-<span data-ttu-id="d0d1a-104">Dient zum Aktualisieren der Eigenschaften des ChartLineFormat-Objekts.</span><span class="sxs-lookup"><span data-stu-id="d0d1a-104">Update the properties of chartlineformat object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="d0d1a-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="d0d1a-105">Permissions</span></span>
-<span data-ttu-id="d0d1a-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d0d1a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ac6aa-104">Dient zum Aktualisieren der Eigenschaften des ChartLineFormat-Objekts.</span><span class="sxs-lookup"><span data-stu-id="ac6aa-104">Update the properties of chartlineformat object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="ac6aa-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="ac6aa-105">Permissions</span></span>
+<span data-ttu-id="ac6aa-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ac6aa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d0d1a-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="d0d1a-108">Permission type</span></span>      | <span data-ttu-id="d0d1a-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="d0d1a-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ac6aa-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="ac6aa-108">Permission type</span></span>      | <span data-ttu-id="ac6aa-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="ac6aa-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d0d1a-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="d0d1a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d0d1a-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d0d1a-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="d0d1a-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="d0d1a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d0d1a-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="d0d1a-113">Not supported.</span></span>    |
-|<span data-ttu-id="d0d1a-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="d0d1a-114">Application</span></span> | <span data-ttu-id="d0d1a-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="d0d1a-115">Not supported.</span></span> |
+|<span data-ttu-id="ac6aa-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="ac6aa-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ac6aa-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ac6aa-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="ac6aa-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="ac6aa-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ac6aa-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ac6aa-113">Not supported.</span></span>    |
+|<span data-ttu-id="ac6aa-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="ac6aa-114">Application</span></span> | <span data-ttu-id="ac6aa-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ac6aa-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d0d1a-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="d0d1a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ac6aa-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="ac6aa-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/line
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorgridlines/format/line
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="d0d1a-117">Optionale Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="d0d1a-117">Optional request headers</span></span>
-| <span data-ttu-id="d0d1a-118">Name</span><span class="sxs-lookup"><span data-stu-id="d0d1a-118">Name</span></span>       | <span data-ttu-id="d0d1a-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d0d1a-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="ac6aa-117">Optionale Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="ac6aa-117">Optional request headers</span></span>
+| <span data-ttu-id="ac6aa-118">Name</span><span class="sxs-lookup"><span data-stu-id="ac6aa-118">Name</span></span>       | <span data-ttu-id="ac6aa-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ac6aa-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="d0d1a-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="d0d1a-120">Authorization</span></span>  | <span data-ttu-id="d0d1a-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="d0d1a-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="d0d1a-123">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="d0d1a-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="d0d1a-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="d0d1a-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="ac6aa-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="ac6aa-120">Authorization</span></span>  | <span data-ttu-id="ac6aa-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="ac6aa-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ac6aa-123">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="ac6aa-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="ac6aa-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="ac6aa-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d0d1a-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="d0d1a-126">Request body</span></span>
-<span data-ttu-id="d0d1a-p104">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.</span><span class="sxs-lookup"><span data-stu-id="d0d1a-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ac6aa-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="ac6aa-126">Request body</span></span>
+<span data-ttu-id="ac6aa-p104">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.</span><span class="sxs-lookup"><span data-stu-id="ac6aa-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="d0d1a-130">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="d0d1a-130">Property</span></span>     | <span data-ttu-id="d0d1a-131">Typ</span><span class="sxs-lookup"><span data-stu-id="d0d1a-131">Type</span></span>   |<span data-ttu-id="d0d1a-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d0d1a-132">Description</span></span>|
+| <span data-ttu-id="ac6aa-130">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="ac6aa-130">Property</span></span>     | <span data-ttu-id="ac6aa-131">Typ</span><span class="sxs-lookup"><span data-stu-id="ac6aa-131">Type</span></span>   |<span data-ttu-id="ac6aa-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ac6aa-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d0d1a-133">color</span><span class="sxs-lookup"><span data-stu-id="d0d1a-133">color</span></span>|<span data-ttu-id="d0d1a-134">string</span><span class="sxs-lookup"><span data-stu-id="d0d1a-134">string</span></span>|<span data-ttu-id="d0d1a-135">HTML-Farbcode, der die Farbe der Linien im Diagramm darstellt.</span><span class="sxs-lookup"><span data-stu-id="d0d1a-135">HTML color code representing the color of lines in the chart.</span></span>|
+|<span data-ttu-id="ac6aa-133">color</span><span class="sxs-lookup"><span data-stu-id="ac6aa-133">color</span></span>|<span data-ttu-id="ac6aa-134">string</span><span class="sxs-lookup"><span data-stu-id="ac6aa-134">string</span></span>|<span data-ttu-id="ac6aa-135">HTML-Farbcode, der die Farbe der Linien im Diagramm darstellt.</span><span class="sxs-lookup"><span data-stu-id="ac6aa-135">HTML color code representing the color of lines in the chart.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="d0d1a-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="d0d1a-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ac6aa-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="ac6aa-136">Response</span></span>
 
-<span data-ttu-id="d0d1a-137">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und aktualisierte [WorkbookChartLineFormat](../resources/chartlineformat.md) -Objekt aus der Antwort.</span><span class="sxs-lookup"><span data-stu-id="d0d1a-137">If successful, this method returns a `200 OK` response code and updated [WorkbookChartLineFormat](../resources/chartlineformat.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="d0d1a-138">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d0d1a-138">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d0d1a-139">Anforderung</span><span class="sxs-lookup"><span data-stu-id="d0d1a-139">Request</span></span>
-<span data-ttu-id="d0d1a-140">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="d0d1a-140">Here is an example of the request.</span></span>
+<span data-ttu-id="ac6aa-137">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und aktualisierte [WorkbookChartLineFormat](../resources/chartlineformat.md) -Objekt aus der Antwort.</span><span class="sxs-lookup"><span data-stu-id="ac6aa-137">If successful, this method returns a `200 OK` response code and updated [WorkbookChartLineFormat](../resources/chartlineformat.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="ac6aa-138">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ac6aa-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ac6aa-139">Anforderung</span><span class="sxs-lookup"><span data-stu-id="ac6aa-139">Request</span></span>
+<span data-ttu-id="ac6aa-140">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="ac6aa-140">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_chartlineformat"
@@ -60,8 +61,8 @@ Content-length: 28
   "color": "color-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="d0d1a-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="d0d1a-141">Response</span></span>
-<span data-ttu-id="d0d1a-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="d0d1a-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ac6aa-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="ac6aa-141">Response</span></span>
+<span data-ttu-id="ac6aa-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="ac6aa-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

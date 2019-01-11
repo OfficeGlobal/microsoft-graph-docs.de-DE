@@ -2,55 +2,56 @@
 title: Anlagen auflisten
 description: Mit dieser API können Sie eine Liste aller Objekte des Typs attachment abrufen, die einem Beitrag angefügt sind.
 author: dkershaw10
-ms.openlocfilehash: f03cf2b9039c88690ddd4078ebe7c843b2e1766a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 50d41b94300eaf93c6d0cd595e64facc982cb461
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321609"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872107"
 ---
-# <a name="list-attachments"></a><span data-ttu-id="1db72-103">Anlagen auflisten</span><span class="sxs-lookup"><span data-stu-id="1db72-103">List attachments</span></span>
+# <a name="list-attachments"></a><span data-ttu-id="1d9eb-103">Anlagen auflisten</span><span class="sxs-lookup"><span data-stu-id="1d9eb-103">List attachments</span></span>
 
-> <span data-ttu-id="1db72-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="1db72-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1db72-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="1db72-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="1d9eb-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="1d9eb-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1d9eb-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="1d9eb-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="1db72-106">Mit dieser API können Sie eine Liste aller Objekte des Typs [attachment](../resources/attachment.md) abrufen, die einem Beitrag angefügt sind.</span><span class="sxs-lookup"><span data-stu-id="1db72-106">Retrieve a list of [attachment](../resources/attachment.md) objects attached to a post.</span></span>
-## <a name="permissions"></a><span data-ttu-id="1db72-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="1db72-107">Permissions</span></span>
-<span data-ttu-id="1db72-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1db72-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1d9eb-106">Mit dieser API können Sie eine Liste aller Objekte des Typs [attachment](../resources/attachment.md) abrufen, die einem Beitrag angefügt sind.</span><span class="sxs-lookup"><span data-stu-id="1d9eb-106">Retrieve a list of [attachment](../resources/attachment.md) objects attached to a post.</span></span>
+## <a name="permissions"></a><span data-ttu-id="1d9eb-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="1d9eb-107">Permissions</span></span>
+<span data-ttu-id="1d9eb-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1d9eb-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1db72-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="1db72-110">Permission type</span></span>      | <span data-ttu-id="1db72-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="1db72-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1d9eb-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="1d9eb-110">Permission type</span></span>      | <span data-ttu-id="1d9eb-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="1d9eb-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1db72-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="1db72-112">Delegated (work or school account)</span></span> | <span data-ttu-id="1db72-113">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1db72-113">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1db72-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="1db72-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1db72-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="1db72-115">Not supported.</span></span>    |
-|<span data-ttu-id="1db72-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="1db72-116">Application</span></span> | <span data-ttu-id="1db72-117">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1db72-117">Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="1d9eb-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="1d9eb-112">Delegated (work or school account)</span></span> | <span data-ttu-id="1d9eb-113">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1d9eb-113">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="1d9eb-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="1d9eb-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1d9eb-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="1d9eb-115">Not supported.</span></span>    |
+|<span data-ttu-id="1d9eb-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="1d9eb-116">Application</span></span> | <span data-ttu-id="1d9eb-117">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1d9eb-117">Group.Read.All, Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1db72-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="1db72-118">HTTP request</span></span>
-<span data-ttu-id="1db72-119"><!-- { "blockType": "ignored" } -->Anlagen für einen [Posten](../resources/post.md) in einem [Thread](../resources/conversationthread.md) , die zu einer [Unterhaltung](../resources/conversation.md) einer Gruppe gehören.</span><span class="sxs-lookup"><span data-stu-id="1db72-119"><!-- { "blockType": "ignored" } --> Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.</span></span>
+## <a name="http-request"></a><span data-ttu-id="1d9eb-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="1d9eb-118">HTTP request</span></span>
+<span data-ttu-id="1d9eb-119"><!-- { "blockType": "ignored" } -->Anlagen für einen [Posten](../resources/post.md) in einem [Thread](../resources/conversationthread.md) , die zu einer [Unterhaltung](../resources/conversation.md) einer Gruppe gehören.</span><span class="sxs-lookup"><span data-stu-id="1d9eb-119"><!-- { "blockType": "ignored" } --> Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.</span></span>
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="1db72-120">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="1db72-120">Optional query parameters</span></span>
-<span data-ttu-id="1db72-121">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="1db72-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="1d9eb-120">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="1d9eb-120">Optional query parameters</span></span>
+<span data-ttu-id="1d9eb-121">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="1d9eb-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="1db72-122">Insbesondere können Sie die $ Abfragezeichenfolgen-Parameter, um alle der Post Anlagen Inline mit dem Rest der Post-Eigenschaften zu erweitern.</span><span class="sxs-lookup"><span data-stu-id="1db72-122">In particular, you can use the $expand query parameter to include all of the post attachments inline with the rest of the post properties.</span></span> <span data-ttu-id="1db72-123">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="1db72-123">For example:</span></span>
+<span data-ttu-id="1d9eb-122">Insbesondere können Sie die $ Abfragezeichenfolgen-Parameter, um alle der Post Anlagen Inline mit dem Rest der Post-Eigenschaften zu erweitern.</span><span class="sxs-lookup"><span data-stu-id="1d9eb-122">In particular, you can use the $expand query parameter to include all of the post attachments inline with the rest of the post properties.</span></span> <span data-ttu-id="1d9eb-123">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="1d9eb-123">For example:</span></span>
 
 ```
 GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}?$expand=attachments
 ```
-## <a name="request-headers"></a><span data-ttu-id="1db72-124">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="1db72-124">Request headers</span></span>
-| <span data-ttu-id="1db72-125">Header</span><span class="sxs-lookup"><span data-stu-id="1db72-125">Header</span></span>       | <span data-ttu-id="1db72-126">Wert</span><span class="sxs-lookup"><span data-stu-id="1db72-126">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="1d9eb-124">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="1d9eb-124">Request headers</span></span>
+| <span data-ttu-id="1d9eb-125">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="1d9eb-125">Header</span></span>       | <span data-ttu-id="1d9eb-126">Wert</span><span class="sxs-lookup"><span data-stu-id="1d9eb-126">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="1db72-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="1db72-127">Authorization</span></span>  | <span data-ttu-id="1db72-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="1db72-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="1d9eb-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="1d9eb-127">Authorization</span></span>  | <span data-ttu-id="1d9eb-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="1d9eb-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="1db72-130">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="1db72-130">Request body</span></span>
-<span data-ttu-id="1db72-131">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="1db72-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1d9eb-130">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="1d9eb-130">Request body</span></span>
+<span data-ttu-id="1d9eb-131">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="1d9eb-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1db72-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="1db72-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1d9eb-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="1d9eb-132">Response</span></span>
 
-<span data-ttu-id="1db72-133">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [Attachment](../resources/attachment.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1db72-133">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1db72-134">Beispiel</span><span class="sxs-lookup"><span data-stu-id="1db72-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1db72-135">Anforderung</span><span class="sxs-lookup"><span data-stu-id="1db72-135">Request</span></span>
-<span data-ttu-id="1db72-136">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="1db72-136">Here is an example of the request.</span></span>
+<span data-ttu-id="1d9eb-133">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [Attachment](../resources/attachment.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1d9eb-133">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="1d9eb-134">Beispiel</span><span class="sxs-lookup"><span data-stu-id="1d9eb-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1d9eb-135">Anforderung</span><span class="sxs-lookup"><span data-stu-id="1d9eb-135">Request</span></span>
+<span data-ttu-id="1d9eb-136">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="1d9eb-136">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_attachments"
@@ -58,8 +59,8 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}?$expand
 ```http
 GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/attachments
 ```
-##### <a name="response"></a><span data-ttu-id="1db72-137">Antwort</span><span class="sxs-lookup"><span data-stu-id="1db72-137">Response</span></span>
-<span data-ttu-id="1db72-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1db72-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="1d9eb-137">Antwort</span><span class="sxs-lookup"><span data-stu-id="1d9eb-137">Response</span></span>
+<span data-ttu-id="1d9eb-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1d9eb-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
