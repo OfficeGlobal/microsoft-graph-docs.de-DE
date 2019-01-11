@@ -2,12 +2,13 @@
 title: Ressourcentyp educationSynchronizationProfile
 description: Stellt eine Reihe von Konfigurationen, die zum Synchronisieren von Education Entitäten und der Teilnehmerliste einer Informationen aus einem Quellverzeichnis in Azure Active Directory (AD Azure) verwendet. Diese Ressource enthält eine programmgesteuerte Darstellung in Schule Daten Sync verwendet.
 author: mmast-msft
-ms.openlocfilehash: 43cf3ebd882c1e2dd86ada5621abbcd28b0e84c9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7ed8cf39ff8ccd2b8cb4c5b5e31350fec6202d01
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363739"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882922"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>Ressourcentyp educationSynchronizationProfile
 
@@ -21,11 +22,11 @@ Stellt eine Reihe von Konfigurationen, die zum Synchronisieren von Education Ent
 |:-|:-|:-|
 | [Liste Synchronisierungsprofile](../api/educationsynchronizationprofile-list.md) | **EducationSynchronizationProfile** -Auflistung | Abrufen von Listen aller Profile für die Synchronisierung im Mandanten. |
 | [Synchronisierung Profil abrufen](../api/educationsynchronizationprofile-get.md) | **educationSynchronizationProfile** | Abrufen von einem bestimmten Profil, wenn der Bezeichner Profil. |
-| [Erstellen Sie Synchronisierung Profil](../api/educationsynchronizationprofile-post.md) | Keines | Erstellen Sie ein neues Profil Synchronisierung. |
+| [Erstellen Sie Synchronisierung Profil](../api/educationsynchronizationprofile-post.md) | Keine | Erstellen Sie ein neues Profil Synchronisierung. |
 | [Synchronisierung Profil löschen](../api/educationsynchronizationprofile-delete.md) | **educationSynchronizationProfile** | Löschen von einem bestimmten Profil, wenn der Bezeichner Profil. |
-| [Eine laufende Synchronisierung anhalten](../api/educationsynchronizationprofile-pause.md) | Keines | Halten Sie eine laufende Synchronisation. |
-| [Fortsetzen einer angehaltenen sync](../api/educationsynchronizationprofile-resume.md) | Keines | Fortzusetzen Sie eine angehaltene Synchronisierung. |
-| [Zurücksetzen einer Synchronisierung](../api/educationsynchronizationprofile-reset.md) | Keines | Zurücksetzen Sie den Zustand des Profils und starten Sie Synchronisierung. |
+| [Eine laufende Synchronisierung anhalten](../api/educationsynchronizationprofile-pause.md) | Keine | Halten Sie eine laufende Synchronisation. |
+| [Fortsetzen einer angehaltenen sync](../api/educationsynchronizationprofile-resume.md) | Keine | Fortzusetzen Sie eine angehaltene Synchronisierung. |
+| [Zurücksetzen einer Synchronisierung](../api/educationsynchronizationprofile-reset.md) | Keine | Zurücksetzen Sie den Zustand des Profils und starten Sie Synchronisierung. |
 | [Synchronisierung für Uploaddateien starten](../api/educationsynchronizationprofile-start.md) | [EducationFileSynchronizationVerificationMessage](educationfilesynchronizationverificationmessage.md) -Auflistung| Überprüfen der hochgeladenen Dateien, und starten Sie die Synchronisierung. Gilt nur, wenn der Datenanbieter [EducationCsvDataProvider](educationcsvdataprovider.md)ist. |
 | [Abrufen einer Upload-URL](../api/educationsynchronizationprofile-uploadurl.md) | string | Zurückgeben der kurzlebigen URL zum Hochladen der CSV-Datendateien. Gilt nur, wenn der Datenanbieter [EducationCsvDataProvider](educationcsvdataprovider.md)ist. |
 | [Abrufen des Status der Synchronisierung](../api/educationsynchronizationprofilestatus-get.md) | [status](educationsynchronizationprofilestatus.md) | Der Status eines bestimmten Synchronisierungsprofils zurückgegeben. |

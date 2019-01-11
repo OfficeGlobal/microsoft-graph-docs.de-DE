@@ -2,12 +2,13 @@
 title: Erstellen von „mobileAppCategory“
 description: Diese Methode erstellt ein neues Objekt des Typs mobileAppCategory.
 author: tfitzmac
-ms.openlocfilehash: 7fa2b8220069dd98ec35124f589a3e38a2a33317
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a84d141a15a55d95d5429511a8db208f24ed984c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330947"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887283"
 ---
 # <a name="create-mobileappcategory"></a>Erstellen von „mobileAppCategory“
 
@@ -38,8 +39,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „mobileAppCategory“ an.

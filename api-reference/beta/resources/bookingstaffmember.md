@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp bookingStaffMember
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: ad8af6ead37bff4b60c5c4d5ef39ae7628cf100e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 382da1b0710b691a6563a40c03ed62397262911d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058170"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884455"
 ---
 # <a name="bookingstaffmember-resource-type"></a>Ressourcentyp bookingStaffMember
 
@@ -35,13 +36,13 @@ Beim Buchen von Terminen berücksichtigt die Buchungen API die folgenden Einstel
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Boolesch|"True" bedeutet, dass, wenn der Mitarbeiter Office 365-Benutzer ist, der API Buchungen Verfügbarkeit der Mitarbeiter in ihre persönlichen Kalender auf Office 365, vergewissern Sie sich würde vor der Durchführung einer buchen. |
+|availabilityIsAffectedByPersonalCalendar|Boolescher Wert|"True" bedeutet, dass, wenn der Mitarbeiter Office 365-Benutzer ist, der API Buchungen Verfügbarkeit der Mitarbeiter in ihre persönlichen Kalender auf Office 365, vergewissern Sie sich würde vor der Durchführung einer buchen. |
 |colorIndex|Int32|Identifiziert eine Farbe, um die Mitarbeiter darstellen. Die Farbe entspricht der Farbpalette in der Detailseite für **Mitarbeiter** in der app Buchungen.|
-|displayName|String|Der Name des Mitarbeiters, wie Kunden angezeigt. Erforderlich.|
-|emailAddress|String|Die e-Mail-Adresse des Mitarbeiters. Dies kann in der gleichen Office 365-Mandanten als das Unternehmen oder in eine andere e-Mail-Domäne sein. Diese e-Mail-Adresse kann verwendet werden, wenn die **SendConfirmationsToOwner** -Eigenschaft festgelegt ist, auf "true" in der scheduling Richtlinie des Unternehmens. Erforderlich.|
-|id|String| Die ID des Members Mitarbeiter in einer GUID-Format. Schreibgeschützt.|
+|displayName|Zeichenfolge|Der Name des Mitarbeiters, wie Kunden angezeigt. Erforderlich.|
+|emailAddress|Zeichenfolge|Die e-Mail-Adresse des Mitarbeiters. Dies kann in der gleichen Office 365-Mandanten als das Unternehmen oder in eine andere e-Mail-Domäne sein. Diese e-Mail-Adresse kann verwendet werden, wenn die **SendConfirmationsToOwner** -Eigenschaft festgelegt ist, auf "true" in der scheduling Richtlinie des Unternehmens. Erforderlich.|
+|id|Zeichenfolge| Die ID des Members Mitarbeiter in einer GUID-Format. Schreibgeschützt.|
 |role|string| Die Rolle des Mitarbeiters im Unternehmen. Mögliche Werte: sind `guest`, `administrator`, `viewer` und `externalGuest`. Erforderlich.|
-|useBusinessHours|Boolesch|"True" bedeutet, dass die Mitarbeiter die Verfügbarkeit als ist in der **BusinessHours** -Eigenschaft des Unternehmens angegeben. False bedeutet, dass die Verfügbarkeit durch die Einstellung für die Mitarbeiter **WorkingHours** -Eigenschaft bestimmt wird.|
+|useBusinessHours|Boolescher Wert|"True" bedeutet, dass die Mitarbeiter die Verfügbarkeit als ist in der **BusinessHours** -Eigenschaft des Unternehmens angegeben. False bedeutet, dass die Verfügbarkeit durch die Einstellung für die Mitarbeiter **WorkingHours** -Eigenschaft bestimmt wird.|
 |workingHours|[BookingWorkHours](bookingworkhours.md) -Auflistung|Der Bereich der Stunden jeden Tag der Woche, die der Mitarbeiter für buchen verfügbar ist. Standardmäßig werden sie initialisiert, um die **BusinessHours** -Eigenschaft des Unternehmens identisch sein.|
 
 ## <a name="relationships"></a>Beziehungen

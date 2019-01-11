@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp synchronizationJob
 description: Führt eine Synchronisierung von in regelmäßigen Abständen im Hintergrund ausgeführt, abrufen, damit die Änderungen in ein Verzeichnis und pushen von in ein anderes Verzeichnis. Der Synchronisierungsauftrag ist immer spezifisch für eine bestimmte Instanz einer Anwendung in Ihrem Mandanten. Im Rahmen der Synchronisierung Einrichtung müssen Sie die Autorisierung zum Lesen und Schreiben von Objekten in Ihrem Zielverzeichnis übergeben, und passen den Auftrag Synchronisierungsschema.
-ms.openlocfilehash: 0e6428f2a088e5326f4412e743489c4d94b10296
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4d65f39cd63357c8fc7c1e22d3d3871eb1646d53
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065577"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892148"
 ---
 # <a name="synchronizationjob-resource-type"></a>Ressourcentyp synchronizationJob
 
@@ -21,19 +22,19 @@ Führt eine Synchronisierung von in regelmäßigen Abständen im Hintergrund aus
 |[List](../api/synchronization-synchronizationjob-list.md)             |[SynchronizationJob](synchronization-synchronizationjob.md) -Auflistung  |Vorhandene Aufträge für eine Instanz einer Anwendung (Service Principal) auflisten.|
 |[Abrufen von synchronizationJob](../api/synchronization-synchronizationjob-get.md) | [synchronizationJob](synchronization-synchronizationjob.md) |Lesen Sie Eigenschaften und die Beziehungen eines SynchronizationJob-Objekts.|
 |[Create](../api/synchronization-synchronizationjob-post.md)         |[synchronizationJob](synchronization-synchronizationjob.md)   |Erstellen Sie neuen Auftrag für eine bestimmte Anwendung.|
-|[Start](../api/synchronization-synchronizationjob-start.md)          |Keines   |Starten Sie die Synchronisierung. Wenn der Auftrag angehalten ist, der weiterhin an der Stelle, an dem der Auftrag angehalten wurde. Wenn der Auftrag in Quarantäne befindet, wird der Quarantänestatus gelöscht.|
-|[Restart](../api/synchronization-synchronizationjob-restart.md)      |Keines   |Erzwingen, dass des Auftrags beginnen soll, und alle Objekte im Verzeichnis erneut verarbeitet.|
-|[Pause](../api/synchronization-synchronizationjob-pause.md)          |Keines   |Synchronisierung vorübergehend anhalten. Der Fortschritt Auftragsstatus, einschließlich wird beibehalten, und der Auftrag wird weiterhin aus, wo es beim [Starten](../api/synchronization-synchronizationjob-start.md) aufgerufen wird unterbrochen.|
+|[Start](../api/synchronization-synchronizationjob-start.md)          |Keine   |Starten Sie die Synchronisierung. Wenn der Auftrag angehalten ist, der weiterhin an der Stelle, an dem der Auftrag angehalten wurde. Wenn der Auftrag in Quarantäne befindet, wird der Quarantänestatus gelöscht.|
+|[Restart](../api/synchronization-synchronizationjob-restart.md)      |Keine   |Erzwingen, dass des Auftrags beginnen soll, und alle Objekte im Verzeichnis erneut verarbeitet.|
+|[Pause](../api/synchronization-synchronizationjob-pause.md)          |Keine   |Synchronisierung vorübergehend anhalten. Der Fortschritt Auftragsstatus, einschließlich wird beibehalten, und der Auftrag wird weiterhin aus, wo es beim [Starten](../api/synchronization-synchronizationjob-start.md) aufgerufen wird unterbrochen.|
 |[Delete](../api/synchronization-synchronizationjob-delete.md)        |Keine   |Anhalten Sie Synchronisierung, und löschen Sie alle den Status des Auftrags zugeordnet.|
 |[Abrufen von synchrnoizationSchema](../api/synchronization-synchronizationschema-get.md)    |[synchronizationSchema](synchronization-synchronizationschema.md)   |Rufen Sie den Auftrag effektive Synchronisierungsschema ab.|
-|[SynchroizationSchema aktualisieren](../api/synchronization-synchronizationschema-update.md)    |Keines   |Aktualisieren des Schemas für den Auftrag-Synchronisierung. |
-|[Überprüfen von Anmeldeinformationen](../api/synchronization-synchronizationjob-validatecredentials.md)|Keines|Testen Sie die angegebene Anmeldeinformationen gegen Zielverzeichnis.|
+|[SynchroizationSchema aktualisieren](../api/synchronization-synchronizationschema-update.md)    |Keine   |Aktualisieren des Schemas für den Auftrag-Synchronisierung. |
+|[Überprüfen von Anmeldeinformationen](../api/synchronization-synchronizationjob-validatecredentials.md)|Keine|Testen Sie die angegebene Anmeldeinformationen gegen Zielverzeichnis.|
 
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft      | Typ      | Beschreibung    |
 |:--------------|:----------|:---------------|
-|id             |String                     |Auftrags-ID eindeutig Synchronisierung. Schreibgeschützt.|
+|id             |Zeichenfolge                     |Auftrags-ID eindeutig Synchronisierung. Schreibgeschützt.|
 |Zeitplan       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|Zeitplan zum Ausführen des Auftrags verwendet. Schreibgeschützt.|
 |status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |Status des Auftrags, die bei der letzten des Auftrags Ausführung enthält, aktuellen Auftragsstatus und Fehler.|
 |templateId     |Zeichenfolge    |Bezeichner der [Synchronisierung Vorlage](synchronization-synchronizationtemplate.md) basiert auf diesen Auftrag.|

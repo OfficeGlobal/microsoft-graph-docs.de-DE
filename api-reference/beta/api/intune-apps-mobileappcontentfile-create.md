@@ -2,12 +2,13 @@
 title: Erstellen von „mobileAppContentFile“
 description: Diese Methode erstellt ein neues Objekt des Typs mobileAppContentFile.
 author: tfitzmac
-ms.openlocfilehash: 456ac0f136c8d118dcc0b3fcbe165170da918aa6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f6b8098a4311c723627d671980bfb006d4cab036
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356630"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883244"
 ---
 # <a name="create-mobileappcontentfile"></a>Erstellen von „mobileAppContentFile“
 
@@ -37,8 +38,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „mobileAppContentFile“ an.
@@ -57,8 +58,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |azureStorageUriExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs des Azure Storage-URI|
 |manifest|Binär|Manifestinformationen|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|Status der aktuellen Uploadanforderung. Mögliche Werte sind: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed` und `commitFileTimedOut`.|
-|isFrameworkFile|Boolesch|Ein Wert, der angibt, ob die Datei Framework handelt.|
-|isDependency|Boolesch|Gibt an, ob die Datei eine Abhängigkeit für die wichtigsten Inhaltsdatei ist.|
+|isFrameworkFile|Boolescher Wert|Ein Wert, der angibt, ob die Datei Framework handelt.|
+|isDependency|Boolescher Wert|Gibt an, ob die Datei eine Abhängigkeit für die wichtigsten Inhaltsdatei ist.|
 
 
 

@@ -2,12 +2,13 @@
 title: mailfolder aktualisieren
 description: Mit dieser API können Sie Eigenschaften eines Objekts des Typs „mailfolder“ aktualisieren.
 author: angelgolfer-ms
-ms.openlocfilehash: 2c740d72557204d01abea4e2582467c740295197
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e2ce809c75a911b7d68ed80692a14a537c659d37
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315050"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871631"
 ---
 # <a name="update-mailfolder"></a>mailfolder aktualisieren
 
@@ -38,7 +39,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|displayName|String|Der Anzeigename des mailFolder-Elements.|
+|displayName|Zeichenfolge|Der Anzeigename des mailFolder-Elements.|
 
 ## <a name="response"></a>Antwort
 

@@ -2,12 +2,13 @@
 title: managedAppStatus-Ressourcentyp
 description: Stellt den App-Schutz und den Konfigurationsstatus für die Organisation dar.
 author: tfitzmac
-ms.openlocfilehash: e23b20b53d7ad89a4bbd0df8510a66e0f7da581d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 13bf28c0244a3288b949ebf718e3d5ce97ceb60c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331591"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890384"
 ---
 # <a name="managedappstatus-resource-type"></a>managedAppStatus-Ressourcentyp
 
@@ -23,9 +24,9 @@ Stellt den App-Schutz und den Konfigurationsstatus für die Organisation dar.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|String|Anzeigename des Statusberichts|
-|id|String|Schlüssel der Entität|
-|Version|String|Version der Entität|
+|displayName|Zeichenfolge|Anzeigename des Statusberichts|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Version|Zeichenfolge|Version der Entität|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

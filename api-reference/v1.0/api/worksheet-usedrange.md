@@ -1,12 +1,13 @@
 ---
 title: 'Arbeitsblatt: UsedRange'
 description: Der verwendete Bereich ist der kleinste Bereich, der mindestens eine der Zellen umfasst, die einen Wert enthalten oder denen eine Formatierung zugewiesen wurde. Wenn das Arbeitsblatt leer ist, gibt diese Funktion die oberste linke Zelle zurück.
-ms.openlocfilehash: 6da0ad6ab5fe71491d30eac1e95255d39ba37a18
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: edbe1a45f22ec07b0225be70549a2a7d59faf7eb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016474"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894362"
 ---
 # <a name="worksheet-usedrange"></a>Arbeitsblatt: UsedRange
 
@@ -32,7 +33,7 @@ In der Anforderungs-URL können Sie optionale Parameter angeben.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|valuesOnly|Boolesch|Optional. Betrachtet nur Zellen mit Werten als verwendet (ignoriert die Formatierung).|
+|valuesOnly|Boolescher Wert|Optional. Betrachtet nur Zellen mit Werten als verwendet (ignoriert die Formatierung).|
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|

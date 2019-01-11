@@ -2,12 +2,13 @@
 title: Aktion „assign“
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 36adb4ea6cfbaf562513e17131b8b833a59c9df3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d0ea93657f7f97604cd91b0eac46f200880745d6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311361"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887857"
 ---
 # <a name="assign-action"></a>Aktion „assign“
 
@@ -37,8 +38,8 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.

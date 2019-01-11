@@ -1,12 +1,13 @@
 ---
 title: privacyProfile-Ressourcentyp
 description: Stellt das Datenschutzprofil eines Unternehmens dar, das eine URL zu einer Datenschutzerklärung sowie eine Kontaktperson für Fragen im Zusammenhang mit der Datenschutzerklärung umfasst.
-ms.openlocfilehash: 5d1a8e48a2d8310f45c71fbc73485e8ec4fe8697
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 29c4a01cde0e05c42ce74576e769ca005840e854
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019499"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884980"
 ---
 # <a name="privacyprofile-resource-type"></a>privacyProfile-Ressourcentyp
 

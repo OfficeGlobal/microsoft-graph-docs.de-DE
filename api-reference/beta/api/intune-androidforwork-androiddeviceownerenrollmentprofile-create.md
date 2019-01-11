@@ -2,12 +2,13 @@
 title: Erstellen von androidDeviceOwnerEnrollmentProfile
 description: Erstellen eines neuen AndroidDeviceOwnerEnrollmentProfile-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 6b1e287183265745fc19cab7817667290715d704
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 17bec37639c51bf4d22624f8d55a3d758f0c683b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319117"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883118"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>Erstellen von androidDeviceOwnerEnrollmentProfile
 
@@ -37,8 +38,8 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt AndroidDeviceOwnerEnrollmentProfile eine JSON-Darstellung.
@@ -47,17 +48,17 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|accountId|String|Mandanten-GUID, zu der das Registrierungsprofil gehört|
-|id|String|Eindeutige GUID des Registrierungsprofils|
-|displayName|String|Anzeigename des Registrierungsprofils|
-|description|String|Beschreibung des Registrierungsprofils|
+|accountId|Zeichenfolge|Mandanten-GUID, zu der das Registrierungsprofil gehört|
+|id|Zeichenfolge|Eindeutige GUID des Registrierungsprofils|
+|displayName|Zeichenfolge|Anzeigename des Registrierungsprofils|
+|description|Zeichenfolge|Beschreibung des Registrierungsprofils|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Registrierungsprofils|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Registrierungsprofils|
-|tokenValue|String|Wert des zuletzt für das Registrierungsprofil erstellten Tokens|
+|tokenValue|Zeichenfolge|Wert des zuletzt für das Registrierungsprofil erstellten Tokens|
 |tokenCreationDateTime|DateTimeOffset|Datum-Uhrzeit das zuletzt erstellte Token erstellt wurde.|
 |tokenExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs des zuletzt erstellten Tokens|
 |enrolledDeviceCount|Int32|Gesamtzahl der mit dem Registrierungsprofil registrierten Android-Geräte|
-|qrCodeContent|String|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird|
+|qrCodeContent|Zeichenfolge|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird|
 
 

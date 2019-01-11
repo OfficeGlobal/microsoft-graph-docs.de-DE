@@ -2,12 +2,13 @@
 title: Ressourcentyp userAppInstallStatus
 description: Enthält Eigenschaften für den Installationsstatus für einen Benutzer.
 author: tfitzmac
-ms.openlocfilehash: 024fff32aac2a268a2e0bbec81a6d46b31012a11
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f4d848a4fe4cd742df8a83184d539d7ff27290b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302758"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885204"
 ---
 # <a name="userappinstallstatus-resource-type"></a>Ressourcentyp userAppInstallStatus
 
@@ -22,15 +23,15 @@ Enthält Eigenschaften für den Installationsstatus für einen Benutzer.
 |[Liste userAppInstallStatuses](../api/intune-apps-userappinstallstatus-list.md)|[UserAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) -Auflistung|Listeneigenschaften und Beziehungen der [UserAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) -Objekte.|
 |[Abrufen von userAppInstallStatus](../api/intune-apps-userappinstallstatus-get.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|Lesen Sie Eigenschaften und Beziehungen des [UserAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) -Objekts.|
 |[Erstellen von userAppInstallStatus](../api/intune-apps-userappinstallstatus-create.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|Erstellen eines neuen [UserAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) -Objekts.|
-|[UserAppInstallStatus löschen](../api/intune-apps-userappinstallstatus-delete.md)|Keines|Löscht eine [UserAppInstallStatus](../resources/intune-apps-userappinstallstatus.md).|
+|[UserAppInstallStatus löschen](../api/intune-apps-userappinstallstatus-delete.md)|Keine|Löscht eine [UserAppInstallStatus](../resources/intune-apps-userappinstallstatus.md).|
 |[UserAppInstallStatus aktualisieren](../api/intune-apps-userappinstallstatus-update.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|Aktualisieren Sie die Eigenschaften eines [UserAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |userName|String|Name des Benutzers|
-|userPrincipalName|String|Benutzerprinzipalname.|
+|userPrincipalName|Zeichenfolge|Benutzerprinzipalname.|
 |installedDeviceCount|Int32|Anzahl der installierten Geräte|
 |failedDeviceCount|Int32|Anzahl der fehlgeschlagenen Geräte|
 |notInstalledDeviceCount|Int32|Anzahl der nicht installierten Geräte|

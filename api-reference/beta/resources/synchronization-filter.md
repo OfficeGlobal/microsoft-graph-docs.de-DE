@@ -1,12 +1,13 @@
 ---
 title: Filtertyp-Ressource
 description: Bestimmt, welche Objekte für die Anwendung bereitgestellt werden soll. Angenommen, möchten Sie nur für Benutzer bereitgestellt werden soll, die sich in den USA befinden. Wenn ein Filter Gültigkeitsbereichs vorhanden ist, werden Objekte, die nicht den Filter erfüllen während der Synchronisierung übersprungen.
-ms.openlocfilehash: 72885cfbd49083ce80b96cd389286d5c50937ffb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 754271e9d33159a14d1abf356280dd619643002f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061508"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894411"
 ---
 # <a name="filter-resource-type"></a>Filtertyp-Ressource
 

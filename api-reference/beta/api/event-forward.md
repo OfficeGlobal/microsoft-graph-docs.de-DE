@@ -2,12 +2,13 @@
 title: 'Ereignis: weiterleiten'
 description: 'Mit dieser Aktion kann der Organisator oder Teilnehmer einer Besprechung-Ereignisses zum Weiterleiten der '
 author: angelgolfer-ms
-ms.openlocfilehash: 77f2c99b1adc7fcece353120e4692b37fd65a78f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6567c8c030fa838e83a7428399151b41e6747625
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355993"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887829"
 ---
 # <a name="event-forward"></a>Ereignis: weiterleiten
 
@@ -50,7 +51,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -58,7 +59,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Kommentar|String|Ein Kommentar, der eingefügt werden kann. Kann eine leere Zeichenfolge sein.|
+|Kommentar|Zeichenfolge|Ein Kommentar, der eingefügt werden kann. Kann eine leere Zeichenfolge sein.|
 |ToRecipients|[recipient](../resources/recipient.md)-Sammlung|Die Liste der Empfänger des Ereignisses zum Weiterleiten.|
 
 ## <a name="response"></a>Antwort

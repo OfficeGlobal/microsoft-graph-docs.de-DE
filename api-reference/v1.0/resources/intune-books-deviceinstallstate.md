@@ -2,12 +2,13 @@
 title: deviceInstallState-Ressourcentyp
 description: Enthält Eigenschaften für den Installationsstatus für ein Gerät.
 author: tfitzmac
-ms.openlocfilehash: 660ecb3dfae66e2f442027f61b82da69c2cee286
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 94cd0f2181b23a37518a28cac3854f46dd4a2004
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354593"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894439"
 ---
 # <a name="deviceinstallstate-resource-type"></a>deviceInstallState-Ressourcentyp
 
@@ -26,13 +27,13 @@ Enthält Eigenschaften für den Installationsstatus für ein Gerät.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |deviceName|String|Name des Geräts|
 |deviceId|String|ID des Geräts|
 |lastSyncDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Synchronisierung|
 |installState|[installState](../resources/intune-books-installstate.md)|Installationsstatus des E-Books. Mögliche Werte sind: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed` und `unknown`.|
 |errorCode|String|Fehlercode von Installationsfehlern|
-|osVersion|String|Betriebssystemversion|
+|osVersion|Zeichenfolge|Betriebssystemversion|
 |osDescription|String|Beschreibung des Betriebssystems|
 |userName|String|Benutzername des Geräts|
 

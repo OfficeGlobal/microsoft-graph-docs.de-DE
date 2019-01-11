@@ -2,12 +2,13 @@
 title: deviceManagementPartner-Ressourcentyp
 description: Entität, die eine Verbindung mit dem Geräteverwaltungspartner darstellt.
 author: tfitzmac
-ms.openlocfilehash: 2174f81f7b9c5e73c3bc42a54cb030cf50c216d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 08d604fc5f56e9d6ded439bd398cda9b95e2c8a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354040"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875530"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>deviceManagementPartner-Ressourcentyp
 
@@ -28,7 +29,7 @@ Entität, die eine Verbindung mit dem Geräteverwaltungspartner darstellt.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Noch nicht dokumentiert|
+|id|Zeichenfolge|Noch nicht dokumentiert|
 |lastHeartbeatDateTime|DateTimeOffset|Zeitstempel des letzten Heartbeats nach Aktivierung der Option „Connect to Device management Partner“ durch den Administrator|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Partner-Status, der diesen Mandanten. Mögliche Werte sind: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected` und `unresponsive`.|
 |partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Partner-App-Typ. Mögliche Werte sind: `unknown`, `singleTenantApp` und `multiTenantApp`.|

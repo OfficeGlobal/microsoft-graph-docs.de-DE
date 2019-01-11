@@ -2,12 +2,13 @@
 title: ManagedDeviceEnrollmentTopFailures-Funktion
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 7804118a6e612916d68897ef0f880ee8a0f9b38d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4e9ff98c2ddc55110026153c854d91901ffd2335
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339368"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882971"
 ---
 # <a name="manageddeviceenrollmenttopfailures-function"></a>ManagedDeviceEnrollmentTopFailures-Funktion
 
@@ -36,8 +37,8 @@ GET /reports/managedDeviceEnrollmentTopFailures
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie in der Anforderungs-URL die folgenden Abfrageparameter mit Werten an.
@@ -45,7 +46,7 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|Zeitraum|String|Noch nicht dokumentiert|
+|Zeitraum|Zeichenfolge|Noch nicht dokumentiert|
 
 
 

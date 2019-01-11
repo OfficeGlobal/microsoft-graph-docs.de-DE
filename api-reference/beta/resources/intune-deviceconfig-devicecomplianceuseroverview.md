@@ -2,12 +2,13 @@
 title: deviceComplianceUserOverview-Ressourcentyp
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 6505cf0d563f129d4a683026f5dc828310c32792
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0b8fc094ca9e18e7aa5370f27f2514faa38ca362
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359388"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879233"
 ---
 # <a name="devicecomplianceuseroverview-resource-type"></a>deviceComplianceUserOverview-Ressourcentyp
 
@@ -25,7 +26,7 @@ Noch nicht dokumentiert.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |pendingCount|Int32|Anzahl der ausstehenden Benutzer|
 |notApplicableCount|Int32|Anzahl der Benutzer nicht zutreffend|
 |successCount|Int32|Anzahl der erfolgreichen Benutzer|

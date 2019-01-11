@@ -2,12 +2,13 @@
 title: Abschnitt erstellen
 description: Erstellt eine neue OnenoteSection im angegebenen Notizbuch.
 author: Jewan-microsoft
-ms.openlocfilehash: 764102e845329f8ce4f6eb8cfe8732e6d5e54c9a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b39ae58dd67e7eaa666845b108632eea4aa3ac57
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336974"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882285"
 ---
 # <a name="create-section"></a>Abschnitt erstellen
 
@@ -32,7 +33,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sections
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext

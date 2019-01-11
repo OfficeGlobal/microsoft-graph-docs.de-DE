@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp dateTimeTimeZone
 description: Beschreibt das Datum, die Uhrzeit und Zeitzone eines Zeitpunkts.
-ms.openlocfilehash: a95ebf35d6a47b8b39c34cab8d6d35b92eaae2c3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5090edce8d86ff12470cc1bb39f92ef13b42ba15
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060668"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876069"
 ---
 # <a name="datetimetimezone-resource-type"></a>Ressourcentyp dateTimeTimeZone
 
@@ -18,7 +19,7 @@ Beschreibt das Datum, die Uhrzeit und Zeitzone eines Zeitpunkts.
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |DateTime|String|Ein bestimmter Zeitpunkt in einer kombinierten Datums- und Uhrzeitsdarstellung (`<date>T<time>`).|
-|TimeZone|String|Einer der folgenden Zeitzonennamen.|
+|TimeZone|Zeichenfolge|Einer der folgenden Zeitzonennamen.|
 
 Die Eigenschaft _TimeZone_ kann auf eine beliebige, von Windows unterstützte Zeitzone und auf einen der folgenden Zeitzonennamen eingestellt werden .
 

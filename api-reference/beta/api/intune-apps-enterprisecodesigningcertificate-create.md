@@ -2,12 +2,13 @@
 title: Erstellen von enterpriseCodeSigningCertificate
 description: Erstellen eines neuen EnterpriseCodeSigningCertificate-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 337513242ae653a1d18f3ed9460cf26210534ab8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ec84f55fc94d1cdbf29e0cc65d6da029a3435315
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341097"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883363"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>Erstellen von enterpriseCodeSigningCertificate
 
@@ -37,8 +38,8 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt EnterpriseCodeSigningCertificate eine JSON-Darstellung.
@@ -51,9 +52,9 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |content|Binär|Die Enterprise-Code für Windows-Signaturzertifikat im Format Rohdaten.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Status der bereitgestellt oder nicht bereitgestellt. Mögliche Werte sind: `notProvisioned` und `provisioned`.|
 |subjectName|Zeichenfolge|Der Antragstellername für das Zertifikat.|
-|Betreff|String|Der Wert der Betreff für das Zertifikat.|
-|issuerName|String|Der Name der Aussteller für das Zertifikat.|
-|Aussteller|String|Der Wert der Aussteller für das Zertifikat.|
+|Betreff|Zeichenfolge|Der Wert der Betreff für das Zertifikat.|
+|issuerName|Zeichenfolge|Der Name der Aussteller für das Zertifikat.|
+|Aussteller|Zeichenfolge|Der Wert der Aussteller für das Zertifikat.|
 |expirationDateTime|DateTimeOffset|Das Ablaufdatum des Zertifikats.|
 |uploadDateTime|DateTimeOffset|Das Datum-Uhrzeit des Zertifikats CodeSigning, wenn diese hochgeladen wird.|
 

@@ -2,12 +2,13 @@
 title: Erstellen von mobileAppIntentAndState
 description: Erstellen eines neuen MobileAppIntentAndState-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 590cbb01e8b1f41ce1a1c43be7c3a97872ea737a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bbd6e6053054045e2a95aebfc92acfd8a5d25052
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308701"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886457"
 ---
 # <a name="create-mobileappintentandstate"></a>Erstellen von mobileAppIntentAndState
 
@@ -37,8 +38,8 @@ POST /users/{usersId}/mobileAppIntentAndStates
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt MobileAppIntentAndState eine JSON-Darstellung.
@@ -48,8 +49,8 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|UUID für das Objekt|
-|managedDeviceIdentifier|String|Von Intune erstellter oder erfasster Gerätebezeichner|
-|userId|String|Bezeichner für den Benutzer, der versucht hat, das Gerät zu registrieren.|
+|managedDeviceIdentifier|Zeichenfolge|Von Intune erstellter oder erfasster Gerätebezeichner|
+|userId|Zeichenfolge|Bezeichner für den Benutzer, der versucht hat, das Gerät zu registrieren.|
 |mobileAppList|[MobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md) -Auflistung|Die Liste der Nutzlast Intents und Status für den Mandanten.|
 
 

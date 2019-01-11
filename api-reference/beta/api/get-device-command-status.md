@@ -1,12 +1,13 @@
 ---
 title: Befehl Gerätestatus anfordern.
 description: Rufen Sie den Status eines Befehls auf einem Gerät. Die vollständige Liste der Statuscodes finden Sie unter Liste der ActionStatus.
-ms.openlocfilehash: 1e51d3b4366e87d9802518a50fe348d3ba0f250d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9dca743a50f248abee76fb4d54352df3d400ada1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058021"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883132"
 ---
 # <a name="get-device-command-status"></a>Befehl Gerätestatus anfordern.
 
@@ -34,10 +35,10 @@ GET me/devices/{id}/commands/{id}
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile |Wert
+| Header |Wert
 |:----|:------|
 |Authorization| Bearer {token}. Erforderlich. |
-|Accept | application/json |
+|Annehmen | application/json |
 
 ## <a name="response"></a>Antwort
 <!-- { "blockType": "ignored" } -->
@@ -151,10 +152,10 @@ GET me/devices/{id}/command/{id}/responsePayload
 
 ### <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile |Wert
+| Header |Wert
 |:----|:------|
 |Authorization| Bearer {token}. Erforderlich. |
-|Accept | application/json |
+|Annehmen | application/json |
 
 ### <a name="response"></a>Antwort
 <!-- { "blockType": "ignored" } -->

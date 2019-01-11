@@ -1,12 +1,13 @@
 ---
 title: 'post: forward'
 description: 'Dient zum Weiterleiten eines Beitrags an einen Empfänger. Sie können die übergeordnete Unterhaltung und die Thread in der Anforderung angeben, '
-ms.openlocfilehash: 736b23aaf90cb7e4af243129e52a014ae623b8f4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 64b7d87745cf897ea827d37a9cd4f4c60d197068
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061251"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889439"
 ---
 # <a name="post-forward"></a>post: forward
 
@@ -31,7 +32,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 
@@ -40,7 +41,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|comment|String|Optionaler Kommentar, der zusammen mit dem Beitrag weitergeleitet wird.|
+|comment|Zeichenfolge|Optionaler Kommentar, der zusammen mit dem Beitrag weitergeleitet wird.|
 |toRecipients|[recipient](../resources/recipient.md) collection|Die Empfänger, an die der Thread weitergeleitet wird.|
 
 ## <a name="response"></a>Antwort

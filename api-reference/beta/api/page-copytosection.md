@@ -1,12 +1,13 @@
 ---
 title: 'page: copyToSection'
 description: Kopiert eine Seite in einen bestimmten Abschnitt.
-ms.openlocfilehash: d725c72eb78613845e808a3ec3694513730bb01f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 10d0eecd2f84a33e66209f8297b72b8a4630b100
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063696"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892505"
 ---
 # <a name="page-copytosection"></a>page: copyToSection
 
@@ -44,9 +45,9 @@ Geben Sie im Anforderungstext ein JSON-Objekt an, das die vom Vorgang benötigte
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|siteSammlungId|String|Die Id der SharePoint-Website zu kopieren. Verwenden Sie nur, wenn für ein Office 365-Teamwebsite zu kopieren.|
-|siteId|String|Die Id der SharePoint-Website zu kopieren. Verwenden Sie nur, wenn für ein Office 365-Teamwebsite zu kopieren.|
-|groupId|String|Die ID der Gruppe, in die kopiert werden soll. Verwenden Sie diesen Parameter nur beim Kopieren in eine Office 365-Gruppe.|
+|siteSammlungId|Zeichenfolge|Die Id der SharePoint-Website zu kopieren. Verwenden Sie nur, wenn für ein Office 365-Teamwebsite zu kopieren.|
+|siteId|Zeichenfolge|Die Id der SharePoint-Website zu kopieren. Verwenden Sie nur, wenn für ein Office 365-Teamwebsite zu kopieren.|
+|groupId|Zeichenfolge|Die ID der Gruppe, in die kopiert werden soll. Verwenden Sie diesen Parameter nur beim Kopieren in eine Office 365-Gruppe.|
 |id|String|Erforderlich. Die ID des Zielabschnitts.|
 
 ## <a name="response"></a>Antwort

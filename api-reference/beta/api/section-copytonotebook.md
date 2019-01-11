@@ -1,12 +1,13 @@
 ---
 title: 'section: copyToNotebook'
 description: Kopiert einen Abschnitt in ein bestimmtes Notizbuch.
-ms.openlocfilehash: 393618ddae4fa20b47bdb77aa650185f3b2ed518
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7213220711051f0d4edd926305bcdc983cfa259a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27057938"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878036"
 ---
 # <a name="section-copytonotebook"></a>section: copyToNotebook
 
@@ -43,11 +44,11 @@ Geben Sie im Anforderungstext ein JSON-Objekt an, das die vom Vorgang benötigte
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|siteSammlungId|String|Die Id der SharePoint-Website zu kopieren. Verwenden Sie nur, wenn für ein Office 365-Teamwebsite zu kopieren.|
-|siteId|String|Die Id der SharePoint-Website zu kopieren. Verwenden Sie nur, wenn für ein Office 365-Teamwebsite zu kopieren.|
-|groupId|String|Die ID der Gruppe, in die kopiert werden soll. Verwenden Sie diesen Parameter nur beim Kopieren in eine Office 365-Gruppe.|
+|siteSammlungId|Zeichenfolge|Die Id der SharePoint-Website zu kopieren. Verwenden Sie nur, wenn für ein Office 365-Teamwebsite zu kopieren.|
+|siteId|Zeichenfolge|Die Id der SharePoint-Website zu kopieren. Verwenden Sie nur, wenn für ein Office 365-Teamwebsite zu kopieren.|
+|groupId|Zeichenfolge|Die ID der Gruppe, in die kopiert werden soll. Verwenden Sie diesen Parameter nur beim Kopieren in eine Office 365-Gruppe.|
 |id|String|Erforderlich. Die ID des Zielnotizbuchs. |
-|renameAs|String|Der Name der Kopie. Standardmäßig der Name des vorhandenen Elements. |
+|renameAs|Zeichenfolge|Der Name der Kopie. Standardmäßig der Name des vorhandenen Elements. |
 
 ## <a name="response"></a>Antwort
 

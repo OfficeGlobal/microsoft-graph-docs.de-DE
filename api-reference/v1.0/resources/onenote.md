@@ -2,12 +2,13 @@
 title: onenote-Ressourcentyp
 description: Der Einstiegspunkt für OneNote-Ressourcen.
 author: Jewan-microsoft
-ms.openlocfilehash: 9570b99aad96196af6d21f41352dada9f4b869b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 5488d24139eb87bf90f51045e4ddf60395f8ebaa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343652"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894418"
 ---
 # <a name="onenote-resource-type"></a>onenote-Ressourcentyp
 

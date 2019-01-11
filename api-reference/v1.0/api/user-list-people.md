@@ -2,12 +2,13 @@
 title: Personen auflisten
 description: Dient zum Abrufen einer Sammlung von person-Objekten, die nach ihrer Relevanz für den Benutzer sortiert sind, die von den Mustern bei Kommunikation, Zusammenarbeit und den Geschäftsbeziehungen des Benutzers abhängt.
 author: simonhult
-ms.openlocfilehash: 52f3dade14af76732381bf71f0d8556f543287fb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: c1152990e23a931f246c5319e795ef7568aadd76
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350113"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881599"
 ---
 # <a name="list-people"></a>Personen auflisten
 
@@ -52,7 +53,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters)
 | Name      |Beschreibung|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Erforderlich. |
-| Accept | application/json |
+| Annehmen | application/json |
 
 ## <a name="request-body"></a>Anforderungstext
 

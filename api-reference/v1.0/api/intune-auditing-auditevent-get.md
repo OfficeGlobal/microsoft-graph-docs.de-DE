@@ -2,12 +2,13 @@
 title: Abrufen von „auditEvent“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs auditEvent.
 author: tfitzmac
-ms.openlocfilehash: e4bcc13b5cce4e90e2a1b0ce31311723252d07c4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bd437a6b0f50821d88da9686ec72b56a3ef0bf99
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339256"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884805"
 ---
 # <a name="get-auditevent"></a>Abrufen von „auditEvent“
 
@@ -37,8 +38,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

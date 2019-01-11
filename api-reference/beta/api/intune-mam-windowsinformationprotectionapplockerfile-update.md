@@ -2,12 +2,13 @@
 title: windowsInformationProtectionAppLockerFile aktualisieren
 description: Aktualisieren der Eigenschaften eines windowsInformationProtectionAppLockerFile-Objekts.
 author: tfitzmac
-ms.openlocfilehash: ff0f0ae2d546c67c08a1d4928f8301aff476c776
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a81a42b1245a8723935ac8497e69539b1e5c1df8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332256"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885674"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>windowsInformationProtectionAppLockerFile aktualisieren
 
@@ -40,8 +41,8 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung für das [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md)-Objekt ein.
@@ -50,11 +51,11 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|String|Der Anzeigename|
-|fileHash|String|SHA256-Hash der Datei|
+|displayName|Zeichenfolge|Der Anzeigename|
+|fileHash|Zeichenfolge|SHA256-Hash der Datei|
 |file|Binär|Datei als Bytearray|
-|id|String|Schlüssel der Entität|
-|Version|String|Version der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Version|Zeichenfolge|Version der Entität|
 
 
 

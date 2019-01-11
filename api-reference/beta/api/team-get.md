@@ -2,12 +2,13 @@
 title: Get-team
 description: Abrufen der Eigenschaften und Beziehungen zwischen dem angegebenen Team.
 author: nkramer
-ms.openlocfilehash: dfa59948a9bffce77c98a3462f919e75fe18042e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 24db268910aa672e2fd095a44271b4908465f666
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329232"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889635"
 ---
 # <a name="get-team"></a>Get-team
 

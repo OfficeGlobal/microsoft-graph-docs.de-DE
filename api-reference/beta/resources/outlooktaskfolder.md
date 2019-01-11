@@ -2,12 +2,13 @@
 title: Ressourcentyp outlookTaskFolder
 description: 'Ein Ordner mit Outlook-Aufgaben (Auflistung von OutlookTask-Objekten). '
 author: angelgolfer-ms
-ms.openlocfilehash: 505b6bf0fe172d701d85230b907727663595d9d3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b4c4bade46022b30c6e4e1f50aae58d32656f0b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306209"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882929"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>Ressourcentyp outlookTaskFolder
 
@@ -36,10 +37,10 @@ In Outlook, der Standardgruppe Aufgabe `My Tasks`, enthält einen Standardordner
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|changeKey|String|Die Version des den Aufgabenordner.|
-|id|String|Der Bezeichner des den Aufgabenordner, die im Postfach des Benutzers eindeutig. Schreibgeschützt.|
-|isDefaultFolder|Boolesch|True, wenn der Ordner der Standardordner für die Aufgabe ist.|
-|name|String|Der Name des Aufgabenordners.|
+|changeKey|Zeichenfolge|Die Version des den Aufgabenordner.|
+|id|Zeichenfolge|Der Bezeichner des den Aufgabenordner, die im Postfach des Benutzers eindeutig. Schreibgeschützt.|
+|isDefaultFolder|Boolescher Wert|True, wenn der Ordner der Standardordner für die Aufgabe ist.|
+|name|Zeichenfolge|Der Name des Aufgabenordners.|
 |parentGroupKey|Guid|Der eindeutige GUID-Bezeichner für die übergeordnete Gruppe des vorgangsordners.|
 
 ## <a name="relationships"></a>Beziehungen

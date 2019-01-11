@@ -2,12 +2,13 @@
 title: Aktualisieren von „mobileAppCategory“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs mobileAppCategory.
 author: tfitzmac
-ms.openlocfilehash: c7c53344d28dc60dc5c0dc306615a3d700cdcf82
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bb21e4e3b564f50538f7399f8715c7f55a56b58b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325816"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869776"
 ---
 # <a name="update-mobileappcategory"></a>Aktualisieren von „mobileAppCategory“
 
@@ -38,8 +39,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategor
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekt des Typs [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) an.
