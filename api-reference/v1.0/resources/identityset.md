@@ -3,20 +3,21 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: IdentitySet
-ms.openlocfilehash: ea49f904197b2f4a661b781576f06240e41cf808
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b0ee801945a4b1d202b55d997d8cfc87a8dadff5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019570"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829155"
 ---
-# <a name="identityset-resource-type"></a><span data-ttu-id="6cf0a-102">IdentitySet-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="6cf0a-102">IdentitySet resource type</span></span>
+# <a name="identityset-resource-type"></a><span data-ttu-id="d1b2d-102">IdentitySet-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="d1b2d-102">IdentitySet resource type</span></span>
 
-<span data-ttu-id="6cf0a-p101">Die **IdentitySet**-Ressource ist eine verschlüsselte Sammlung von [identity](identity.md)-Ressourcen. Sie wird verwendet, um eine Reihe von Identitäten darzustellen, die verschiedenen Ereignissen für ein Element zugewiesen sind, z. B. _erstellt von_ oder _zuletzt geändert von_.</span><span class="sxs-lookup"><span data-stu-id="6cf0a-p101">The **IdentitySet** resource is a keyed collection of [identity](identity.md) resources. It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.</span></span>
+<span data-ttu-id="d1b2d-p101">Die **IdentitySet**-Ressource ist eine verschlüsselte Sammlung von [identity](identity.md)-Ressourcen. Sie wird verwendet, um eine Reihe von Identitäten darzustellen, die verschiedenen Ereignissen für ein Element zugewiesen sind, z. B. _erstellt von_ oder _zuletzt geändert von_.</span><span class="sxs-lookup"><span data-stu-id="d1b2d-p101">The **IdentitySet** resource is a keyed collection of [identity](identity.md) resources. It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="6cf0a-105">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="6cf0a-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d1b2d-105">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="d1b2d-105">JSON representation</span></span>
 
-<span data-ttu-id="6cf0a-106">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="6cf0a-106">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d1b2d-106">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="d1b2d-106">Here is a JSON representation of the resource.</span></span>
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identitySet",
        "optionalProperties": ["user", "application", "device"],
@@ -29,17 +30,17 @@ ms.locfileid: "27019570"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="6cf0a-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6cf0a-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d1b2d-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="d1b2d-107">Properties</span></span>
 
-| <span data-ttu-id="6cf0a-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="6cf0a-108">Property</span></span>    | <span data-ttu-id="6cf0a-109">Typ</span><span class="sxs-lookup"><span data-stu-id="6cf0a-109">Type</span></span>                    | <span data-ttu-id="6cf0a-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6cf0a-110">Description</span></span>                                            |
+| <span data-ttu-id="d1b2d-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="d1b2d-108">Property</span></span>    | <span data-ttu-id="d1b2d-109">Typ</span><span class="sxs-lookup"><span data-stu-id="d1b2d-109">Type</span></span>                    | <span data-ttu-id="d1b2d-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d1b2d-110">Description</span></span>                                            |
 |:------------|:------------------------|:-------------------------------------------------------|
-| <span data-ttu-id="6cf0a-111">Anwendung</span><span class="sxs-lookup"><span data-stu-id="6cf0a-111">application</span></span> | [<span data-ttu-id="6cf0a-112">Identity</span><span class="sxs-lookup"><span data-stu-id="6cf0a-112">Identity</span></span>](identity.md) | <span data-ttu-id="6cf0a-p102">Optional. Die mit dieser Aktion verknüpfte Anwendung.</span><span class="sxs-lookup"><span data-stu-id="6cf0a-p102">Optional. The application associated with this action.</span></span> |
-| <span data-ttu-id="6cf0a-115">Gerät</span><span class="sxs-lookup"><span data-stu-id="6cf0a-115">device</span></span>      | [<span data-ttu-id="6cf0a-116">Identity</span><span class="sxs-lookup"><span data-stu-id="6cf0a-116">Identity</span></span>](identity.md) | <span data-ttu-id="6cf0a-p103">Optional. Das mit dieser Konfiguration verknüpfte Gerät.</span><span class="sxs-lookup"><span data-stu-id="6cf0a-p103">Optional. The device associated with this action.</span></span>      |
-| <span data-ttu-id="6cf0a-119">Benutzer</span><span class="sxs-lookup"><span data-stu-id="6cf0a-119">user</span></span>        | [<span data-ttu-id="6cf0a-120">Identity</span><span class="sxs-lookup"><span data-stu-id="6cf0a-120">Identity</span></span>](identity.md) | <span data-ttu-id="6cf0a-p104">Optional. Der mit dieser Aktion verknüpfte Benutzer.</span><span class="sxs-lookup"><span data-stu-id="6cf0a-p104">Optional. The user associated with this action.</span></span>        |
+| <span data-ttu-id="d1b2d-111">Anwendung</span><span class="sxs-lookup"><span data-stu-id="d1b2d-111">application</span></span> | [<span data-ttu-id="d1b2d-112">Identity</span><span class="sxs-lookup"><span data-stu-id="d1b2d-112">Identity</span></span>](identity.md) | <span data-ttu-id="d1b2d-p102">Optional. Die mit dieser Aktion verknüpfte Anwendung.</span><span class="sxs-lookup"><span data-stu-id="d1b2d-p102">Optional. The application associated with this action.</span></span> |
+| <span data-ttu-id="d1b2d-115">Gerät</span><span class="sxs-lookup"><span data-stu-id="d1b2d-115">device</span></span>      | [<span data-ttu-id="d1b2d-116">Identity</span><span class="sxs-lookup"><span data-stu-id="d1b2d-116">Identity</span></span>](identity.md) | <span data-ttu-id="d1b2d-p103">Optional. Das mit dieser Konfiguration verknüpfte Gerät.</span><span class="sxs-lookup"><span data-stu-id="d1b2d-p103">Optional. The device associated with this action.</span></span>      |
+| <span data-ttu-id="d1b2d-119">Benutzer</span><span class="sxs-lookup"><span data-stu-id="d1b2d-119">user</span></span>        | [<span data-ttu-id="d1b2d-120">Identity</span><span class="sxs-lookup"><span data-stu-id="d1b2d-120">Identity</span></span>](identity.md) | <span data-ttu-id="d1b2d-p104">Optional. Der mit dieser Aktion verknüpfte Benutzer.</span><span class="sxs-lookup"><span data-stu-id="d1b2d-p104">Optional. The user associated with this action.</span></span>        |
 
-## <a name="remarks"></a><span data-ttu-id="6cf0a-123">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="6cf0a-123">Remarks</span></span> 
+## <a name="remarks"></a><span data-ttu-id="d1b2d-123">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="d1b2d-123">Remarks</span></span> 
 
-<span data-ttu-id="6cf0a-124">Informationen zur Verwendung von [IdentitySet](driveitem.md)-Ressourcen finden Sie unter **DriveItem**.</span><span class="sxs-lookup"><span data-stu-id="6cf0a-124">See [DriveItem](driveitem.md) for usage of **IdentitySet** resources.</span></span>
+<span data-ttu-id="d1b2d-124">Informationen zur Verwendung von [IdentitySet](driveitem.md)-Ressourcen finden Sie unter **DriveItem**.</span><span class="sxs-lookup"><span data-stu-id="d1b2d-124">See [DriveItem](driveitem.md) for usage of **IdentitySet** resources.</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,28 +1,29 @@
 ---
 title: Foto löschen
 description: Mit dieser API können Sie Fotos löschen.
-ms.openlocfilehash: 3a227ceb503caf947786adfb35265755e6059b0a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 117f4acbf5a45d9db64ccc5d3fc0ccc4d1c64896
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063156"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829260"
 ---
-# <a name="delete-photo"></a><span data-ttu-id="49914-103">Foto löschen</span><span class="sxs-lookup"><span data-stu-id="49914-103">Delete photo</span></span>
+# <a name="delete-photo"></a><span data-ttu-id="8f5ca-103">Foto löschen</span><span class="sxs-lookup"><span data-stu-id="8f5ca-103">Delete photo</span></span>
 
-> <span data-ttu-id="49914-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="49914-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="49914-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="49914-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="8f5ca-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="8f5ca-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8f5ca-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="8f5ca-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="49914-106">Mit dieser API können Sie Fotos löschen.</span><span class="sxs-lookup"><span data-stu-id="49914-106">Delete a photo.</span></span>
-## <a name="permissions"></a><span data-ttu-id="49914-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="49914-107">Permissions</span></span>
-<span data-ttu-id="49914-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="49914-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8f5ca-106">Mit dieser API können Sie Fotos löschen.</span><span class="sxs-lookup"><span data-stu-id="8f5ca-106">Delete a photo.</span></span>
+## <a name="permissions"></a><span data-ttu-id="8f5ca-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="8f5ca-107">Permissions</span></span>
+<span data-ttu-id="8f5ca-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8f5ca-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="49914-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="49914-110">Permission type</span></span>      | <span data-ttu-id="49914-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="49914-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8f5ca-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="8f5ca-110">Permission type</span></span>      | <span data-ttu-id="8f5ca-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="8f5ca-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="49914-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="49914-112">Delegated (work or school account)</span></span> | <span data-ttu-id="49914-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="49914-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="49914-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="49914-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="49914-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="49914-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="49914-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="49914-116">Application</span></span> | <span data-ttu-id="49914-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="49914-117">Not supported.</span></span> |
+|<span data-ttu-id="8f5ca-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="8f5ca-112">Delegated (work or school account)</span></span> | <span data-ttu-id="8f5ca-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8f5ca-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="8f5ca-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="8f5ca-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8f5ca-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8f5ca-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="8f5ca-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="8f5ca-116">Application</span></span> | <span data-ttu-id="8f5ca-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="8f5ca-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="49914-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="49914-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8f5ca-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="8f5ca-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id | userPrincipalName}/photo
@@ -30,22 +31,22 @@ DELETE /groups/{id}/photo
 DELETE /drive/root/createdByUser/photo
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="49914-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="49914-119">Request headers</span></span>
-| <span data-ttu-id="49914-120">Name</span><span class="sxs-lookup"><span data-stu-id="49914-120">Name</span></span>       | <span data-ttu-id="49914-121">Typ</span><span class="sxs-lookup"><span data-stu-id="49914-121">Type</span></span> | <span data-ttu-id="49914-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="49914-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8f5ca-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="8f5ca-119">Request headers</span></span>
+| <span data-ttu-id="8f5ca-120">Name</span><span class="sxs-lookup"><span data-stu-id="8f5ca-120">Name</span></span>       | <span data-ttu-id="8f5ca-121">Typ</span><span class="sxs-lookup"><span data-stu-id="8f5ca-121">Type</span></span> | <span data-ttu-id="8f5ca-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8f5ca-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="49914-123">if-match</span><span class="sxs-lookup"><span data-stu-id="49914-123">if-match</span></span>  | <span data-ttu-id="49914-124">string</span><span class="sxs-lookup"><span data-stu-id="49914-124">string</span></span>  | <span data-ttu-id="49914-125">Wenn dieser Anforderungsheader enthalten ist und das angegebene Etag (oder CTag) nicht mit dem aktuellen Etag des Elements übereinstimmt, wird die Antwort `412 Precondition Failed` zurückgegeben, und das Element wird nicht gelöscht.</span><span class="sxs-lookup"><span data-stu-id="49914-125">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span>|
-| <span data-ttu-id="49914-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="49914-126">Authorization</span></span>  | <span data-ttu-id="49914-127">string</span><span class="sxs-lookup"><span data-stu-id="49914-127">string</span></span>  | <span data-ttu-id="49914-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="49914-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8f5ca-123">if-match</span><span class="sxs-lookup"><span data-stu-id="8f5ca-123">if-match</span></span>  | <span data-ttu-id="8f5ca-124">string</span><span class="sxs-lookup"><span data-stu-id="8f5ca-124">string</span></span>  | <span data-ttu-id="8f5ca-125">Wenn dieser Anforderungsheader enthalten ist und das angegebene Etag (oder CTag) nicht mit dem aktuellen Etag des Elements übereinstimmt, wird die Antwort `412 Precondition Failed` zurückgegeben, und das Element wird nicht gelöscht.</span><span class="sxs-lookup"><span data-stu-id="8f5ca-125">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span>|
+| <span data-ttu-id="8f5ca-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="8f5ca-126">Authorization</span></span>  | <span data-ttu-id="8f5ca-127">string</span><span class="sxs-lookup"><span data-stu-id="8f5ca-127">string</span></span>  | <span data-ttu-id="8f5ca-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="8f5ca-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="49914-130">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="49914-130">Request body</span></span>
-<span data-ttu-id="49914-131">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="49914-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8f5ca-130">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="8f5ca-130">Request body</span></span>
+<span data-ttu-id="8f5ca-131">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="8f5ca-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="49914-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="49914-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8f5ca-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="8f5ca-132">Response</span></span>
 
-<span data-ttu-id="49914-p104">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="49914-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="8f5ca-p104">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="8f5ca-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="49914-135">Beispiel</span><span class="sxs-lookup"><span data-stu-id="49914-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="49914-136">Anforderung</span><span class="sxs-lookup"><span data-stu-id="49914-136">Request</span></span>
-<span data-ttu-id="49914-137">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="49914-137">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8f5ca-135">Beispiel</span><span class="sxs-lookup"><span data-stu-id="8f5ca-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8f5ca-136">Anforderung</span><span class="sxs-lookup"><span data-stu-id="8f5ca-136">Request</span></span>
+<span data-ttu-id="8f5ca-137">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="8f5ca-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_photo"
@@ -53,8 +54,8 @@ DELETE /drive/root/createdByUser/photo
 ```http
 DELETE https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
 ```
-##### <a name="response"></a><span data-ttu-id="49914-138">Antwort</span><span class="sxs-lookup"><span data-stu-id="49914-138">Response</span></span>
-<span data-ttu-id="49914-139">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="49914-139">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="8f5ca-138">Antwort</span><span class="sxs-lookup"><span data-stu-id="8f5ca-138">Response</span></span>
+<span data-ttu-id="8f5ca-139">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="8f5ca-139">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false

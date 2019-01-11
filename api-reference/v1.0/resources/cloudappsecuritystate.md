@@ -1,28 +1,29 @@
 ---
 title: Ressourcentyp cloudAppSecurityState
 description: Statusinformationen über die Cloudanwendung (DestinationServiceName, DestinationServiceIp) enthält.
-ms.openlocfilehash: 915044c3084e3d9a9435d602ecc7ec809d2168f2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ff76adf1d3879c3dac3f19ae122d82c9523d5193
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019783"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876804"
 ---
-# <a name="cloudappsecuritystate-resource-type"></a><span data-ttu-id="81ec4-103">Ressourcentyp cloudAppSecurityState</span><span class="sxs-lookup"><span data-stu-id="81ec4-103">cloudAppSecurityState resource type</span></span>
+# <a name="cloudappsecuritystate-resource-type"></a><span data-ttu-id="529a1-103">Ressourcentyp cloudAppSecurityState</span><span class="sxs-lookup"><span data-stu-id="529a1-103">cloudAppSecurityState resource type</span></span>
 
-<span data-ttu-id="81ec4-104">Statusinformationen über die Cloudanwendung (DestinationServiceName, DestinationServiceIp) enthält.</span><span class="sxs-lookup"><span data-stu-id="81ec4-104">Contains stateful information about the cloud application (destinationServiceName, destinationServiceIp).</span></span>
+<span data-ttu-id="529a1-104">Statusinformationen über die Cloudanwendung (DestinationServiceName, DestinationServiceIp) enthält.</span><span class="sxs-lookup"><span data-stu-id="529a1-104">Contains stateful information about the cloud application (destinationServiceName, destinationServiceIp).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="81ec4-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="81ec4-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="529a1-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="529a1-105">Properties</span></span>
 
-| <span data-ttu-id="81ec4-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="81ec4-106">Property</span></span>     | <span data-ttu-id="81ec4-107">Typ</span><span class="sxs-lookup"><span data-stu-id="81ec4-107">Type</span></span>        | <span data-ttu-id="81ec4-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="81ec4-108">Description</span></span> |
+| <span data-ttu-id="529a1-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="529a1-106">Property</span></span>     | <span data-ttu-id="529a1-107">Typ</span><span class="sxs-lookup"><span data-stu-id="529a1-107">Type</span></span>        | <span data-ttu-id="529a1-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="529a1-108">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="81ec4-109">destinationServiceIp</span><span class="sxs-lookup"><span data-stu-id="81ec4-109">destinationServiceIp</span></span>|<span data-ttu-id="81ec4-110">String</span><span class="sxs-lookup"><span data-stu-id="81ec4-110">String</span></span>|<span data-ttu-id="81ec4-111">Ziel-IP-Adresse der Verbindung mit der Cloud Anwendungsdienst.</span><span class="sxs-lookup"><span data-stu-id="81ec4-111">Destination IP Address of the connection to the cloud application/service.</span></span>|
-|<span data-ttu-id="81ec4-112">destinationServiceName</span><span class="sxs-lookup"><span data-stu-id="81ec4-112">destinationServiceName</span></span>|<span data-ttu-id="81ec4-113">String</span><span class="sxs-lookup"><span data-stu-id="81ec4-113">String</span></span>|<span data-ttu-id="81ec4-114">Cloud-Anwendungsdienst/Name (zum Beispiel "Vertrieb", "Ablage" usw.).</span><span class="sxs-lookup"><span data-stu-id="81ec4-114">Cloud application/service name (for example "Salesforce", "DropBox", etc.).</span></span>|
-|<span data-ttu-id="81ec4-115">riskScore</span><span class="sxs-lookup"><span data-stu-id="81ec4-115">riskScore</span></span>|<span data-ttu-id="81ec4-116">String</span><span class="sxs-lookup"><span data-stu-id="81ec4-116">String</span></span>|<span data-ttu-id="81ec4-117">Provider-generiert/berechnet Risiko Score von der Anwendung/Clouddienst.</span><span class="sxs-lookup"><span data-stu-id="81ec4-117">Provider-generated/calculated risk score of the Cloud Application/Service.</span></span> <span data-ttu-id="81ec4-118">Empfohlene Wertebereich von 0 bis 1, die den Prozentsatz entspricht.</span><span class="sxs-lookup"><span data-stu-id="81ec4-118">Recommended value range of 0-1, which equates to a percentage.</span></span>|
+|<span data-ttu-id="529a1-109">destinationServiceIp</span><span class="sxs-lookup"><span data-stu-id="529a1-109">destinationServiceIp</span></span>|<span data-ttu-id="529a1-110">String</span><span class="sxs-lookup"><span data-stu-id="529a1-110">String</span></span>|<span data-ttu-id="529a1-111">Ziel-IP-Adresse der Verbindung mit der Cloud Anwendungsdienst.</span><span class="sxs-lookup"><span data-stu-id="529a1-111">Destination IP Address of the connection to the cloud application/service.</span></span>|
+|<span data-ttu-id="529a1-112">destinationServiceName</span><span class="sxs-lookup"><span data-stu-id="529a1-112">destinationServiceName</span></span>|<span data-ttu-id="529a1-113">String</span><span class="sxs-lookup"><span data-stu-id="529a1-113">String</span></span>|<span data-ttu-id="529a1-114">Cloud-Anwendungsdienst/Name (zum Beispiel "Vertrieb", "Ablage" usw.).</span><span class="sxs-lookup"><span data-stu-id="529a1-114">Cloud application/service name (for example "Salesforce", "DropBox", etc.).</span></span>|
+|<span data-ttu-id="529a1-115">riskScore</span><span class="sxs-lookup"><span data-stu-id="529a1-115">riskScore</span></span>|<span data-ttu-id="529a1-116">String</span><span class="sxs-lookup"><span data-stu-id="529a1-116">String</span></span>|<span data-ttu-id="529a1-117">Provider-generiert/berechnet Risiko Score von der Anwendung/Clouddienst.</span><span class="sxs-lookup"><span data-stu-id="529a1-117">Provider-generated/calculated risk score of the Cloud Application/Service.</span></span> <span data-ttu-id="529a1-118">Empfohlene Wertebereich von 0 bis 1, die den Prozentsatz entspricht.</span><span class="sxs-lookup"><span data-stu-id="529a1-118">Recommended value range of 0-1, which equates to a percentage.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="81ec4-119">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="81ec4-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="529a1-119">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="529a1-119">JSON representation</span></span>
 
-<span data-ttu-id="81ec4-120">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="81ec4-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="529a1-120">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="529a1-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

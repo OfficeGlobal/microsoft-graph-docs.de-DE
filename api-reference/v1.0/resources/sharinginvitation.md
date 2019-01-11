@@ -3,20 +3,21 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SharingInvitation
-ms.openlocfilehash: 187a7bd8fe51be57b663c215436272ee711512e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f51f08ad174c661df14b688dc111d9447708523c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017895"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846697"
 ---
-# <a name="sharinginvitation-resource-type"></a><span data-ttu-id="6fe6c-102">SharingInvitation-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="6fe6c-102">SharingInvitation resource type</span></span>
+# <a name="sharinginvitation-resource-type"></a><span data-ttu-id="4f408-102">SharingInvitation-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="4f408-102">SharingInvitation resource type</span></span>
 
-<span data-ttu-id="6fe6c-103">Die Ressource **SharingInvitation** gruppiert Einladung-bezogene Datenelemente in eine einzelne Struktur.</span><span class="sxs-lookup"><span data-stu-id="6fe6c-103">The **SharingInvitation** resource groups invitation-related data items into a single structure.</span></span>
+<span data-ttu-id="4f408-103">Die Ressource **SharingInvitation** gruppiert Einladung-bezogene Datenelemente in eine einzelne Struktur.</span><span class="sxs-lookup"><span data-stu-id="4f408-103">The **SharingInvitation** resource groups invitation-related data items into a single structure.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="6fe6c-104">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="6fe6c-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4f408-104">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="4f408-104">JSON representation</span></span>
 
-<span data-ttu-id="6fe6c-105">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="6fe6c-105">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4f408-105">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="4f408-105">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -34,17 +35,17 @@ ms.locfileid: "27017895"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="6fe6c-106">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6fe6c-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="4f408-106">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="4f408-106">Properties</span></span>
 
-| <span data-ttu-id="6fe6c-107">Eigenschaftenname</span><span class="sxs-lookup"><span data-stu-id="6fe6c-107">Property Name</span></span>  | <span data-ttu-id="6fe6c-108">Typ</span><span class="sxs-lookup"><span data-stu-id="6fe6c-108">Type</span></span>            | <span data-ttu-id="6fe6c-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6fe6c-109">Description</span></span>
+| <span data-ttu-id="4f408-107">Eigenschaftenname</span><span class="sxs-lookup"><span data-stu-id="4f408-107">Property Name</span></span>  | <span data-ttu-id="4f408-108">Typ</span><span class="sxs-lookup"><span data-stu-id="4f408-108">Type</span></span>            | <span data-ttu-id="4f408-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="4f408-109">Description</span></span>
 |:---------------|:----------------|:------------------------------------------
-| <span data-ttu-id="6fe6c-110">E-Mail</span><span class="sxs-lookup"><span data-stu-id="6fe6c-110">email</span></span>          | <span data-ttu-id="6fe6c-111">String</span><span class="sxs-lookup"><span data-stu-id="6fe6c-111">String</span></span>          | <span data-ttu-id="6fe6c-p101">Die für den Empfänger der Freigabeeinladung angegebene E-Mail-Adresse. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="6fe6c-p101">The email address provided for the recipient of the sharing invitation. Read-only.</span></span>
-| <span data-ttu-id="6fe6c-114">invitedBy</span><span class="sxs-lookup"><span data-stu-id="6fe6c-114">invitedBy</span></span>      | <span data-ttu-id="6fe6c-115">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="6fe6c-115">[identitySet][]</span></span> | <span data-ttu-id="6fe6c-p102">Stellt Informationen zum Absender der Einladung bereit, der diese Berechtigung erstellt hat, wenn diese Informationen verfügbar sind. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="6fe6c-p102">Provides information about who sent the invitation that created this permission, if that information is available. Read-only.</span></span>
-| <span data-ttu-id="6fe6c-118">signInRequired</span><span class="sxs-lookup"><span data-stu-id="6fe6c-118">signInRequired</span></span> | <span data-ttu-id="6fe6c-119">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="6fe6c-119">Boolean</span></span>         | <span data-ttu-id="6fe6c-p103">Bei `true` muss sich der Empfänger der Einladung anmelden, um auf das freigegebene Element zugreifen zu können. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="6fe6c-p103">If `true` the recipient of the invitation needs to sign in in order to access the shared item. Read-only.</span></span>
+| <span data-ttu-id="4f408-110">E-Mail</span><span class="sxs-lookup"><span data-stu-id="4f408-110">email</span></span>          | <span data-ttu-id="4f408-111">String</span><span class="sxs-lookup"><span data-stu-id="4f408-111">String</span></span>          | <span data-ttu-id="4f408-p101">Die für den Empfänger der Freigabeeinladung angegebene E-Mail-Adresse. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="4f408-p101">The email address provided for the recipient of the sharing invitation. Read-only.</span></span>
+| <span data-ttu-id="4f408-114">invitedBy</span><span class="sxs-lookup"><span data-stu-id="4f408-114">invitedBy</span></span>      | <span data-ttu-id="4f408-115">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="4f408-115">[identitySet][]</span></span> | <span data-ttu-id="4f408-p102">Stellt Informationen zum Absender der Einladung bereit, der diese Berechtigung erstellt hat, wenn diese Informationen verfügbar sind. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="4f408-p102">Provides information about who sent the invitation that created this permission, if that information is available. Read-only.</span></span>
+| <span data-ttu-id="4f408-118">signInRequired</span><span class="sxs-lookup"><span data-stu-id="4f408-118">signInRequired</span></span> | <span data-ttu-id="4f408-119">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="4f408-119">Boolean</span></span>         | <span data-ttu-id="4f408-p103">Bei `true` muss sich der Empfänger der Einladung anmelden, um auf das freigegebene Element zugreifen zu können. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="4f408-p103">If `true` the recipient of the invitation needs to sign in in order to access the shared item. Read-only.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="6fe6c-122">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="6fe6c-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="4f408-122">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="4f408-122">Remarks</span></span>
 
-<span data-ttu-id="6fe6c-123">Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="6fe6c-123">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="4f408-123">Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="4f408-123">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
 [DriveItem]: driveitem.md
 [IdentitySet]: identityset.md
