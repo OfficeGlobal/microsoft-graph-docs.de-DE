@@ -2,51 +2,52 @@
 title: ChartGridlines aktualisieren
 description: Dient zum Aktualisieren der Eigenschaften des ChartGridlines-Objekts.
 author: lumine2008
-ms.openlocfilehash: db55f639cbe95f80929467b0feefd260a64fc596
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6bba20f1bcf8a4cdccf56e7d390b5cf7c319fe97
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346459"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826061"
 ---
-# <a name="update-chartgridlines"></a><span data-ttu-id="fbeb5-103">ChartGridlines aktualisieren</span><span class="sxs-lookup"><span data-stu-id="fbeb5-103">Update chartgridlines</span></span>
+# <a name="update-chartgridlines"></a><span data-ttu-id="3390f-103">ChartGridlines aktualisieren</span><span class="sxs-lookup"><span data-stu-id="3390f-103">Update chartgridlines</span></span>
 
-<span data-ttu-id="fbeb5-104">Dient zum Aktualisieren der Eigenschaften des ChartGridlines-Objekts.</span><span class="sxs-lookup"><span data-stu-id="fbeb5-104">Update the properties of chartgridlines object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="fbeb5-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="fbeb5-105">Permissions</span></span>
-<span data-ttu-id="fbeb5-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fbeb5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3390f-104">Dient zum Aktualisieren der Eigenschaften des ChartGridlines-Objekts.</span><span class="sxs-lookup"><span data-stu-id="3390f-104">Update the properties of chartgridlines object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="3390f-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="3390f-105">Permissions</span></span>
+<span data-ttu-id="3390f-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3390f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fbeb5-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="fbeb5-108">Permission type</span></span>      | <span data-ttu-id="fbeb5-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="fbeb5-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3390f-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="3390f-108">Permission type</span></span>      | <span data-ttu-id="3390f-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="3390f-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fbeb5-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="fbeb5-110">Delegated (work or school account)</span></span> | <span data-ttu-id="fbeb5-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fbeb5-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="fbeb5-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="fbeb5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fbeb5-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="fbeb5-113">Not supported.</span></span>    |
-|<span data-ttu-id="fbeb5-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="fbeb5-114">Application</span></span> | <span data-ttu-id="fbeb5-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="fbeb5-115">Not supported.</span></span> |
+|<span data-ttu-id="3390f-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="3390f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="3390f-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3390f-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="3390f-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="3390f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3390f-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="3390f-113">Not supported.</span></span>    |
+|<span data-ttu-id="3390f-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="3390f-114">Application</span></span> | <span data-ttu-id="3390f-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="3390f-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fbeb5-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="fbeb5-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3390f-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="3390f-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/minorGridlines
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/majorGridlines
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorGridlines
 ```
-## <a name="request-headers"></a><span data-ttu-id="fbeb5-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="fbeb5-117">Request headers</span></span>
-| <span data-ttu-id="fbeb5-118">Name</span><span class="sxs-lookup"><span data-stu-id="fbeb5-118">Name</span></span>       | <span data-ttu-id="fbeb5-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="fbeb5-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3390f-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="3390f-117">Request headers</span></span>
+| <span data-ttu-id="3390f-118">Name</span><span class="sxs-lookup"><span data-stu-id="3390f-118">Name</span></span>       | <span data-ttu-id="3390f-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3390f-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="fbeb5-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="fbeb5-120">Authorization</span></span>  | <span data-ttu-id="fbeb5-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="fbeb5-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="fbeb5-123">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="fbeb5-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="fbeb5-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="fbeb5-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="3390f-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="3390f-120">Authorization</span></span>  | <span data-ttu-id="3390f-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="3390f-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3390f-123">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="3390f-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="3390f-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="3390f-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="fbeb5-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="fbeb5-126">Request body</span></span>
-<span data-ttu-id="fbeb5-p104">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.</span><span class="sxs-lookup"><span data-stu-id="fbeb5-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3390f-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="3390f-126">Request body</span></span>
+<span data-ttu-id="3390f-p104">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.</span><span class="sxs-lookup"><span data-stu-id="3390f-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="fbeb5-130">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="fbeb5-130">Property</span></span>     | <span data-ttu-id="fbeb5-131">Typ</span><span class="sxs-lookup"><span data-stu-id="fbeb5-131">Type</span></span>   |<span data-ttu-id="fbeb5-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="fbeb5-132">Description</span></span>|
+| <span data-ttu-id="3390f-130">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="3390f-130">Property</span></span>     | <span data-ttu-id="3390f-131">Typ</span><span class="sxs-lookup"><span data-stu-id="3390f-131">Type</span></span>   |<span data-ttu-id="3390f-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3390f-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="fbeb5-133">visible</span><span class="sxs-lookup"><span data-stu-id="fbeb5-133">visible</span></span>|<span data-ttu-id="fbeb5-134">boolean</span><span class="sxs-lookup"><span data-stu-id="fbeb5-134">boolean</span></span>|<span data-ttu-id="fbeb5-135">Boolescher Wert, der angibt, ob die Achsengitternetzlinien angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="fbeb5-135">Boolean value representing if the axis gridlines are visible or not.</span></span>|
+|<span data-ttu-id="3390f-133">visible</span><span class="sxs-lookup"><span data-stu-id="3390f-133">visible</span></span>|<span data-ttu-id="3390f-134">boolean</span><span class="sxs-lookup"><span data-stu-id="3390f-134">boolean</span></span>|<span data-ttu-id="3390f-135">Boolescher Wert, der angibt, ob die Achsengitternetzlinien angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="3390f-135">Boolean value representing if the axis gridlines are visible or not.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="fbeb5-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="fbeb5-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3390f-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="3390f-136">Response</span></span>
 
-<span data-ttu-id="fbeb5-137">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und aktualisierte [WorkbookChartGridlines](../resources/chartgridlines.md) -Objekt aus der Antwort.</span><span class="sxs-lookup"><span data-stu-id="fbeb5-137">If successful, this method returns a `200 OK` response code and updated [WorkbookChartGridlines](../resources/chartgridlines.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="fbeb5-138">Beispiel</span><span class="sxs-lookup"><span data-stu-id="fbeb5-138">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="fbeb5-139">Anforderung</span><span class="sxs-lookup"><span data-stu-id="fbeb5-139">Request</span></span>
-<span data-ttu-id="fbeb5-140">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="fbeb5-140">Here is an example of the request.</span></span>
+<span data-ttu-id="3390f-137">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und aktualisierte [WorkbookChartGridlines](../resources/chartgridlines.md) -Objekt aus der Antwort.</span><span class="sxs-lookup"><span data-stu-id="3390f-137">If successful, this method returns a `200 OK` response code and updated [WorkbookChartGridlines](../resources/chartgridlines.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="3390f-138">Beispiel</span><span class="sxs-lookup"><span data-stu-id="3390f-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3390f-139">Anforderung</span><span class="sxs-lookup"><span data-stu-id="3390f-139">Request</span></span>
+<span data-ttu-id="3390f-140">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="3390f-140">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_chartgridlines"
@@ -60,8 +61,8 @@ Content-length: 21
   "visible": true
 }
 ```
-##### <a name="response"></a><span data-ttu-id="fbeb5-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="fbeb5-141">Response</span></span>
-<span data-ttu-id="fbeb5-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="fbeb5-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="3390f-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="3390f-141">Response</span></span>
+<span data-ttu-id="3390f-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="3390f-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

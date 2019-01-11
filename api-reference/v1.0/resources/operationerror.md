@@ -1,28 +1,29 @@
 ---
 title: Ressourcentyp operationError
 description: Fehler in TeamsAsyncOperation beschreibt.
-ms.openlocfilehash: bcd8c989c4c69336165ef1ca29e1d114d524aa9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 22590d7d955cf01385292d2796ad960b1c0ced41
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018995"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824584"
 ---
-# <a name="operationerror-resource-type"></a><span data-ttu-id="cd2ea-103">Ressourcentyp operationError</span><span class="sxs-lookup"><span data-stu-id="cd2ea-103">operationError resource type</span></span>
+# <a name="operationerror-resource-type"></a><span data-ttu-id="53850-103">Ressourcentyp operationError</span><span class="sxs-lookup"><span data-stu-id="53850-103">operationError resource type</span></span>
 
 
 
-<span data-ttu-id="cd2ea-104">Fehler in [TeamsAsyncOperation](teamsasyncoperation.md)beschreibt.</span><span class="sxs-lookup"><span data-stu-id="cd2ea-104">Describes errors in [teamsAsyncOperation](teamsasyncoperation.md).</span></span>
+<span data-ttu-id="53850-104">Fehler in [TeamsAsyncOperation](teamsasyncoperation.md)beschreibt.</span><span class="sxs-lookup"><span data-stu-id="53850-104">Describes errors in [teamsAsyncOperation](teamsasyncoperation.md).</span></span>
 
-## <a name="operationerror-properties"></a><span data-ttu-id="cd2ea-105">OperationError Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="cd2ea-105">operationError Properties</span></span>
-| <span data-ttu-id="cd2ea-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="cd2ea-106">Property</span></span>     | <span data-ttu-id="cd2ea-107">Typ</span><span class="sxs-lookup"><span data-stu-id="cd2ea-107">Type</span></span>   |<span data-ttu-id="cd2ea-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="cd2ea-108">Description</span></span>|
+## <a name="operationerror-properties"></a><span data-ttu-id="53850-105">OperationError Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="53850-105">operationError Properties</span></span>
+| <span data-ttu-id="53850-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="53850-106">Property</span></span>     | <span data-ttu-id="53850-107">Typ</span><span class="sxs-lookup"><span data-stu-id="53850-107">Type</span></span>   |<span data-ttu-id="53850-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="53850-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="cd2ea-109">code</span><span class="sxs-lookup"><span data-stu-id="cd2ea-109">code</span></span>|<span data-ttu-id="cd2ea-110">Zeichenfolge (schreibgeschützt)</span><span class="sxs-lookup"><span data-stu-id="cd2ea-110">string (readonly)</span></span>|<span data-ttu-id="cd2ea-111">Fehlercode Vorgang.</span><span class="sxs-lookup"><span data-stu-id="cd2ea-111">Operation error code.</span></span>|
-|<span data-ttu-id="cd2ea-112">message</span><span class="sxs-lookup"><span data-stu-id="cd2ea-112">message</span></span>|<span data-ttu-id="cd2ea-113">Zeichenfolge (schreibgeschützt)</span><span class="sxs-lookup"><span data-stu-id="cd2ea-113">string (readonly)</span></span>|<span data-ttu-id="cd2ea-114">Vorgang Fehlermeldung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="cd2ea-114">Operation error message.</span></span>|
+|<span data-ttu-id="53850-109">code</span><span class="sxs-lookup"><span data-stu-id="53850-109">code</span></span>|<span data-ttu-id="53850-110">Zeichenfolge (schreibgeschützt)</span><span class="sxs-lookup"><span data-stu-id="53850-110">string (readonly)</span></span>|<span data-ttu-id="53850-111">Fehlercode Vorgang.</span><span class="sxs-lookup"><span data-stu-id="53850-111">Operation error code.</span></span>|
+|<span data-ttu-id="53850-112">message</span><span class="sxs-lookup"><span data-stu-id="53850-112">message</span></span>|<span data-ttu-id="53850-113">Zeichenfolge (schreibgeschützt)</span><span class="sxs-lookup"><span data-stu-id="53850-113">string (readonly)</span></span>|<span data-ttu-id="53850-114">Vorgang Fehlermeldung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="53850-114">Operation error message.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="cd2ea-115">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="cd2ea-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="53850-115">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="53850-115">JSON representation</span></span>
 
-<span data-ttu-id="cd2ea-116">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="cd2ea-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="53850-116">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="53850-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

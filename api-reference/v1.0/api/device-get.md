@@ -2,50 +2,51 @@
 title: Gerät abrufen
 description: Mit dieser API können Sie die Eigenschaften und Beziehungen eines Geräteobjekts abrufen.
 author: tfitzmac
-ms.openlocfilehash: 57032f29ace00a441aff7f68e9b61bd52e88e79b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1402b74f9af411a6d41ac9b37c5c54b4736de499
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310668"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811228"
 ---
-# <a name="get-device"></a><span data-ttu-id="719aa-103">Gerät abrufen</span><span class="sxs-lookup"><span data-stu-id="719aa-103">Get device</span></span>
+# <a name="get-device"></a><span data-ttu-id="a4471-103">Gerät abrufen</span><span class="sxs-lookup"><span data-stu-id="a4471-103">Get device</span></span>
 
-<span data-ttu-id="719aa-104">Mit dieser API können Sie die Eigenschaften und Beziehungen eines Geräteobjekts abrufen.</span><span class="sxs-lookup"><span data-stu-id="719aa-104">Get the properties and relationships of a device object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="719aa-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="719aa-105">Permissions</span></span>
-<span data-ttu-id="719aa-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="719aa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a4471-104">Mit dieser API können Sie die Eigenschaften und Beziehungen eines Geräteobjekts abrufen.</span><span class="sxs-lookup"><span data-stu-id="a4471-104">Get the properties and relationships of a device object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="a4471-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="a4471-105">Permissions</span></span>
+<span data-ttu-id="a4471-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a4471-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="719aa-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="719aa-108">Permission type</span></span>      | <span data-ttu-id="719aa-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="719aa-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a4471-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="a4471-108">Permission type</span></span>      | <span data-ttu-id="a4471-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="a4471-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="719aa-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="719aa-110">Delegated (work or school account)</span></span> | <span data-ttu-id="719aa-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="719aa-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="719aa-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="719aa-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="719aa-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="719aa-113">Not supported.</span></span>    |
-|<span data-ttu-id="719aa-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="719aa-114">Application</span></span> | <span data-ttu-id="719aa-115">Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="719aa-115">Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="a4471-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="a4471-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a4471-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="a4471-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="a4471-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="a4471-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a4471-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="a4471-113">Not supported.</span></span>    |
+|<span data-ttu-id="a4471-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="a4471-114">Application</span></span> | <span data-ttu-id="a4471-115">Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a4471-115">Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="719aa-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="719aa-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a4471-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="a4471-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}
 ```
-> <span data-ttu-id="719aa-117">Hinweis: Die „id“ in der Anforderung entspricht der „id“-Eigenschaft des Geräts, nicht der „deviceId“-Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="719aa-117">Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.</span></span>
+> <span data-ttu-id="a4471-117">Hinweis: Die „id“ in der Anforderung entspricht der „id“-Eigenschaft des Geräts, nicht der „deviceId“-Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="a4471-117">Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="719aa-118">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="719aa-118">Optional query parameters</span></span>
-<span data-ttu-id="719aa-119">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="719aa-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="a4471-118">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="a4471-118">Optional query parameters</span></span>
+<span data-ttu-id="a4471-119">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="a4471-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="719aa-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="719aa-120">Request headers</span></span>
-| <span data-ttu-id="719aa-121">Name</span><span class="sxs-lookup"><span data-stu-id="719aa-121">Name</span></span>       | <span data-ttu-id="719aa-122">Typ</span><span class="sxs-lookup"><span data-stu-id="719aa-122">Type</span></span> | <span data-ttu-id="719aa-123">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="719aa-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a4471-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="a4471-120">Request headers</span></span>
+| <span data-ttu-id="a4471-121">Name</span><span class="sxs-lookup"><span data-stu-id="a4471-121">Name</span></span>       | <span data-ttu-id="a4471-122">Typ</span><span class="sxs-lookup"><span data-stu-id="a4471-122">Type</span></span> | <span data-ttu-id="a4471-123">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a4471-123">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="719aa-124">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="719aa-124">Authorization</span></span>  | <span data-ttu-id="719aa-125">string</span><span class="sxs-lookup"><span data-stu-id="719aa-125">string</span></span>  | <span data-ttu-id="719aa-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="719aa-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a4471-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="a4471-124">Authorization</span></span>  | <span data-ttu-id="a4471-125">string</span><span class="sxs-lookup"><span data-stu-id="a4471-125">string</span></span>  | <span data-ttu-id="a4471-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="a4471-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="719aa-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="719aa-128">Request body</span></span>
-<span data-ttu-id="719aa-129">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="719aa-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a4471-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="a4471-128">Request body</span></span>
+<span data-ttu-id="a4471-129">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="a4471-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="719aa-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="719aa-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a4471-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="a4471-130">Response</span></span>
 
-<span data-ttu-id="719aa-131">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [device](../resources/device.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="719aa-131">If successful, this method returns a `200 OK` response code and [device](../resources/device.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="719aa-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="719aa-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="719aa-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="719aa-133">Request</span></span>
-<span data-ttu-id="719aa-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="719aa-134">Here is an example of the request.</span></span>
+<span data-ttu-id="a4471-131">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [device](../resources/device.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="a4471-131">If successful, this method returns a `200 OK` response code and [device](../resources/device.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="a4471-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="a4471-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a4471-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="a4471-133">Request</span></span>
+<span data-ttu-id="a4471-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="a4471-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_device"
@@ -53,8 +54,8 @@ GET /devices/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/devices/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="719aa-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="719aa-135">Response</span></span>
-<span data-ttu-id="719aa-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="719aa-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="a4471-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="a4471-135">Response</span></span>
+<span data-ttu-id="a4471-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="a4471-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
