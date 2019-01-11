@@ -1,30 +1,31 @@
 ---
 title: FilterDatetime-Ressourcentyp
 description: Stellt dar, wie ein Datum beim Filtern nach Werten gefiltert wird.
-ms.openlocfilehash: 8156b9f5779dd8d70ff3a839d8a6ef4f5753bacd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 26d42b45a2e9b9cdd279f33330a877a64ea1c8d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016155"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840362"
 ---
-# <a name="filterdatetime-resource-type"></a><span data-ttu-id="08507-103">FilterDatetime-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="08507-103">FilterDatetime resource type</span></span>
+# <a name="filterdatetime-resource-type"></a><span data-ttu-id="f0000-103">FilterDatetime-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="f0000-103">FilterDatetime resource type</span></span>
 
-<span data-ttu-id="08507-104">Stellt dar, wie ein Datum beim Filtern nach Werten gefiltert wird.</span><span class="sxs-lookup"><span data-stu-id="08507-104">Represents how to filter a date when filtering on values.</span></span>
+<span data-ttu-id="f0000-104">Stellt dar, wie ein Datum beim Filtern nach Werten gefiltert wird.</span><span class="sxs-lookup"><span data-stu-id="f0000-104">Represents how to filter a date when filtering on values.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="08507-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="08507-105">Properties</span></span>
-| <span data-ttu-id="08507-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="08507-106">Property</span></span>     | <span data-ttu-id="08507-107">Typ</span><span class="sxs-lookup"><span data-stu-id="08507-107">Type</span></span>   |<span data-ttu-id="08507-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="08507-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f0000-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f0000-105">Properties</span></span>
+| <span data-ttu-id="f0000-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="f0000-106">Property</span></span>     | <span data-ttu-id="f0000-107">Typ</span><span class="sxs-lookup"><span data-stu-id="f0000-107">Type</span></span>   |<span data-ttu-id="f0000-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f0000-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="08507-109">date</span><span class="sxs-lookup"><span data-stu-id="08507-109">date</span></span>|<span data-ttu-id="08507-110">string</span><span class="sxs-lookup"><span data-stu-id="08507-110">string</span></span>|<span data-ttu-id="08507-111">Das Datum im ISO8601-Format zum Filtern von Daten.</span><span class="sxs-lookup"><span data-stu-id="08507-111">The date in ISO8601 format used to filter data.</span></span>|
-|<span data-ttu-id="08507-112">specificity</span><span class="sxs-lookup"><span data-stu-id="08507-112">specificity</span></span>|<span data-ttu-id="08507-113">string</span><span class="sxs-lookup"><span data-stu-id="08507-113">string</span></span>|<span data-ttu-id="08507-114">Wie bestimmte das Datum verwendet werden soll, Daten zu halten.</span><span class="sxs-lookup"><span data-stu-id="08507-114">How specific the date should be used to keep data.</span></span> <span data-ttu-id="08507-115">Angenommen, wenn das Datum 2005-04-02 ist und die Spezifität auf "Month" festgelegt wird, bleiben Filteroperation alle Zeilen mit einem Datum im Monat April 2009.</span><span class="sxs-lookup"><span data-stu-id="08507-115">For example, if the date is 2005-04-02 and the specifity is set to "month", the filter operation will keep all rows with a date in the month of april 2009.</span></span> <span data-ttu-id="08507-116">Die möglichen Werte sind: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.</span><span class="sxs-lookup"><span data-stu-id="08507-116">The possible values are: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.</span></span>|
+|<span data-ttu-id="f0000-109">date</span><span class="sxs-lookup"><span data-stu-id="f0000-109">date</span></span>|<span data-ttu-id="f0000-110">string</span><span class="sxs-lookup"><span data-stu-id="f0000-110">string</span></span>|<span data-ttu-id="f0000-111">Das Datum im ISO8601-Format zum Filtern von Daten.</span><span class="sxs-lookup"><span data-stu-id="f0000-111">The date in ISO8601 format used to filter data.</span></span>|
+|<span data-ttu-id="f0000-112">specificity</span><span class="sxs-lookup"><span data-stu-id="f0000-112">specificity</span></span>|<span data-ttu-id="f0000-113">string</span><span class="sxs-lookup"><span data-stu-id="f0000-113">string</span></span>|<span data-ttu-id="f0000-114">Wie bestimmte das Datum verwendet werden soll, Daten zu halten.</span><span class="sxs-lookup"><span data-stu-id="f0000-114">How specific the date should be used to keep data.</span></span> <span data-ttu-id="f0000-115">Angenommen, wenn das Datum 2005-04-02 ist und die Spezifität auf "Month" festgelegt wird, bleiben Filteroperation alle Zeilen mit einem Datum im Monat April 2009.</span><span class="sxs-lookup"><span data-stu-id="f0000-115">For example, if the date is 2005-04-02 and the specifity is set to "month", the filter operation will keep all rows with a date in the month of april 2009.</span></span> <span data-ttu-id="f0000-116">Die möglichen Werte sind: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.</span><span class="sxs-lookup"><span data-stu-id="f0000-116">The possible values are: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="08507-117">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="08507-117">Relationships</span></span>
-<span data-ttu-id="08507-118">Keine</span><span class="sxs-lookup"><span data-stu-id="08507-118">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="f0000-117">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="f0000-117">Relationships</span></span>
+<span data-ttu-id="f0000-118">Keine</span><span class="sxs-lookup"><span data-stu-id="f0000-118">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="08507-119">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="08507-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f0000-119">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="f0000-119">JSON representation</span></span>
 
-<span data-ttu-id="08507-120">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="08507-120">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f0000-120">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="f0000-120">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

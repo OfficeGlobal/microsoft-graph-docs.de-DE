@@ -1,30 +1,31 @@
 ---
 title: 'reportRoot: getOffice365GroupsActivityGroupCounts'
 description: Erhalten Sie die Gesamtzahl der Gruppen pro Tag und erfahren Sie, wie viele dieser Gruppen durch E-Mail-Unterhaltungen, Yammer-Beiträge und SharePoint-Dateiaktivitäten aktiv waren.
-ms.openlocfilehash: d7008e2906807be726272435c42ecb2c32905b2f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 58d6bf33e5ab90693bb469da2fedce05b723f4f7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019622"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842868"
 ---
-# <a name="reportroot-getoffice365groupsactivitygroupcounts"></a><span data-ttu-id="fbf9f-103">reportRoot: getOffice365GroupsActivityGroupCounts</span><span class="sxs-lookup"><span data-stu-id="fbf9f-103">reportRoot: getOffice365GroupsActivityGroupCounts</span></span>
+# <a name="reportroot-getoffice365groupsactivitygroupcounts"></a><span data-ttu-id="12107-103">reportRoot: getOffice365GroupsActivityGroupCounts</span><span class="sxs-lookup"><span data-stu-id="12107-103">reportRoot: getOffice365GroupsActivityGroupCounts</span></span>
 
-<span data-ttu-id="fbf9f-104">Erhalten Sie die Gesamtzahl der Gruppen pro Tag und erfahren Sie, wie viele dieser Gruppen durch E-Mail-Unterhaltungen, Yammer-Beiträge und SharePoint-Dateiaktivitäten aktiv waren.</span><span class="sxs-lookup"><span data-stu-id="fbf9f-104">Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities.</span></span>
+<span data-ttu-id="12107-104">Erhalten Sie die Gesamtzahl der Gruppen pro Tag und erfahren Sie, wie viele dieser Gruppen durch E-Mail-Unterhaltungen, Yammer-Beiträge und SharePoint-Dateiaktivitäten aktiv waren.</span><span class="sxs-lookup"><span data-stu-id="12107-104">Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities.</span></span>
 
-> <span data-ttu-id="fbf9f-105">**Hinweis:** Ausführliche Informationen zu anderen Berichtsansichten und -namen finden Sie unter [Office 365-Berichte – Office 365-Gruppen](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).</span><span class="sxs-lookup"><span data-stu-id="fbf9f-105">**Note:** For details about different report views and names, see [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).</span></span>
+> <span data-ttu-id="12107-105">**Hinweis:** Ausführliche Informationen zu anderen Berichtsansichten und -namen finden Sie unter [Office 365-Berichte – Office 365-Gruppen](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).</span><span class="sxs-lookup"><span data-stu-id="12107-105">**Note:** For details about different report views and names, see [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fbf9f-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="fbf9f-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="12107-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="12107-106">Permissions</span></span>
 
-<span data-ttu-id="fbf9f-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fbf9f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="12107-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="12107-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="fbf9f-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="fbf9f-109">Permission type</span></span>                        | <span data-ttu-id="fbf9f-110">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="fbf9f-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="12107-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="12107-109">Permission type</span></span>                        | <span data-ttu-id="12107-110">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="12107-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="fbf9f-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="fbf9f-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="fbf9f-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="fbf9f-112">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="fbf9f-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="fbf9f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fbf9f-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="fbf9f-114">Not supported.</span></span>                           |
-| <span data-ttu-id="fbf9f-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="fbf9f-115">Application</span></span>                            | <span data-ttu-id="fbf9f-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="fbf9f-116">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="12107-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="12107-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="12107-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="12107-112">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="12107-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="12107-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="12107-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="12107-114">Not supported.</span></span>                           |
+| <span data-ttu-id="12107-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="12107-115">Application</span></span>                            | <span data-ttu-id="12107-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="12107-116">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="fbf9f-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="fbf9f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="12107-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="12107-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -32,40 +33,40 @@ ms.locfileid: "27019622"
 GET /reports/getOffice365GroupsActivityGroupCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="fbf9f-118">Funktionsparameter</span><span class="sxs-lookup"><span data-stu-id="fbf9f-118">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="12107-118">Funktionsparameter</span><span class="sxs-lookup"><span data-stu-id="12107-118">Function parameters</span></span>
 
-<span data-ttu-id="fbf9f-119">Geben Sie in der Anforderungs-URL den folgenden Parameter mit einem gültigen Wert an.</span><span class="sxs-lookup"><span data-stu-id="fbf9f-119">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="12107-119">Geben Sie in der Anforderungs-URL den folgenden Parameter mit einem gültigen Wert an.</span><span class="sxs-lookup"><span data-stu-id="12107-119">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="fbf9f-120">Parameter</span><span class="sxs-lookup"><span data-stu-id="fbf9f-120">Parameter</span></span> | <span data-ttu-id="fbf9f-121">Typ</span><span class="sxs-lookup"><span data-stu-id="fbf9f-121">Type</span></span>   | <span data-ttu-id="fbf9f-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="fbf9f-122">Description</span></span>                              |
+| <span data-ttu-id="12107-120">Parameter</span><span class="sxs-lookup"><span data-stu-id="12107-120">Parameter</span></span> | <span data-ttu-id="12107-121">Typ</span><span class="sxs-lookup"><span data-stu-id="12107-121">Type</span></span>   | <span data-ttu-id="12107-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="12107-122">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="fbf9f-123">Zeitraum</span><span class="sxs-lookup"><span data-stu-id="fbf9f-123">period</span></span>    | <span data-ttu-id="fbf9f-124">string</span><span class="sxs-lookup"><span data-stu-id="fbf9f-124">string</span></span> | <span data-ttu-id="fbf9f-125">Gibt die Zeitspanne an, für die der Bericht aggregiert wird.</span><span class="sxs-lookup"><span data-stu-id="fbf9f-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="fbf9f-126">Die unterstützten Werte für {period_value} sind: D7, D30, D90 und D180.</span><span class="sxs-lookup"><span data-stu-id="fbf9f-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="fbf9f-127">Diese Werte folgen dem Format D*n*, wobei *n* die Anzahl der Tage angibt, für die der Bericht aggregiert wird.</span><span class="sxs-lookup"><span data-stu-id="fbf9f-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="fbf9f-128">Erforderlich. </span><span class="sxs-lookup"><span data-stu-id="fbf9f-128">Required.</span></span> |
+| <span data-ttu-id="12107-123">Zeitraum</span><span class="sxs-lookup"><span data-stu-id="12107-123">period</span></span>    | <span data-ttu-id="12107-124">string</span><span class="sxs-lookup"><span data-stu-id="12107-124">string</span></span> | <span data-ttu-id="12107-125">Gibt die Zeitspanne an, für die der Bericht aggregiert wird.</span><span class="sxs-lookup"><span data-stu-id="12107-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="12107-126">Die unterstützten Werte für {period_value} sind: D7, D30, D90 und D180.</span><span class="sxs-lookup"><span data-stu-id="12107-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="12107-127">Diese Werte folgen dem Format D*n*, wobei *n* die Anzahl der Tage angibt, für die der Bericht aggregiert wird.</span><span class="sxs-lookup"><span data-stu-id="12107-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="12107-128">Erforderlich. </span><span class="sxs-lookup"><span data-stu-id="12107-128">Required.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="fbf9f-129">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="fbf9f-129">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="12107-129">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="12107-129">Request headers</span></span>
 
-| <span data-ttu-id="fbf9f-130">Name</span><span class="sxs-lookup"><span data-stu-id="fbf9f-130">Name</span></span>          | <span data-ttu-id="fbf9f-131">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="fbf9f-131">Description</span></span>                              |
+| <span data-ttu-id="12107-130">Name</span><span class="sxs-lookup"><span data-stu-id="12107-130">Name</span></span>          | <span data-ttu-id="12107-131">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="12107-131">Description</span></span>                              |
 | :------------ | :--------------------------------------- |
-| <span data-ttu-id="fbf9f-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="fbf9f-132">Authorization</span></span> | <span data-ttu-id="fbf9f-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="fbf9f-p103">Bearer {token}. Required.</span></span>                |
-| <span data-ttu-id="fbf9f-135">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="fbf9f-135">If-None-Match</span></span> | <span data-ttu-id="fbf9f-136">Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag mit dem aktuellen Tag in der Datei übereinstimmt, wird ein `304 Not Modified`-Antwortcode zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="fbf9f-136">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="fbf9f-137">Optional.</span><span class="sxs-lookup"><span data-stu-id="fbf9f-137">Optional.</span></span> |
+| <span data-ttu-id="12107-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="12107-132">Authorization</span></span> | <span data-ttu-id="12107-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="12107-p103">Bearer {token}. Required.</span></span>                |
+| <span data-ttu-id="12107-135">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="12107-135">If-None-Match</span></span> | <span data-ttu-id="12107-136">Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag mit dem aktuellen Tag in der Datei übereinstimmt, wird ein `304 Not Modified`-Antwortcode zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="12107-136">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="12107-137">Optional.</span><span class="sxs-lookup"><span data-stu-id="12107-137">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="fbf9f-138">Antwort</span><span class="sxs-lookup"><span data-stu-id="fbf9f-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="12107-138">Antwort</span><span class="sxs-lookup"><span data-stu-id="12107-138">Response</span></span>
 
-<span data-ttu-id="fbf9f-139">Wenn diese Methode erfolgreich ist, wird eine `302 Found`-Antwort zurückgegeben, die zu einer vorauthentifizierten Download-URL für den Bericht umleitet.</span><span class="sxs-lookup"><span data-stu-id="fbf9f-139">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="fbf9f-140">Die URL finden Sie in der `Location`-Kopfzeile der Antwort.</span><span class="sxs-lookup"><span data-stu-id="fbf9f-140">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="12107-139">Wenn diese Methode erfolgreich ist, wird eine `302 Found`-Antwort zurückgegeben, die zu einer vorauthentifizierten Download-URL für den Bericht umleitet.</span><span class="sxs-lookup"><span data-stu-id="12107-139">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="12107-140">Die URL finden Sie in der `Location`-Kopfzeile der Antwort.</span><span class="sxs-lookup"><span data-stu-id="12107-140">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="fbf9f-141">Zuvor authentifizierte Download-URLs sind nur für einen kurzen Zeitraum (einige Minuten) gültig und erfordern keinen `Authorization`-Header.</span><span class="sxs-lookup"><span data-stu-id="fbf9f-141">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="12107-141">Zuvor authentifizierte Download-URLs sind nur für einen kurzen Zeitraum (einige Minuten) gültig und erfordern keinen `Authorization`-Header.</span><span class="sxs-lookup"><span data-stu-id="12107-141">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="fbf9f-142">Die CSV-Datei verfügt über die folgenden Kopfzeilen für Spalten.</span><span class="sxs-lookup"><span data-stu-id="fbf9f-142">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="12107-142">Die CSV-Datei verfügt über die folgenden Kopfzeilen für Spalten.</span><span class="sxs-lookup"><span data-stu-id="12107-142">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="fbf9f-143">Berichtsaktualisierungsdatum</span><span class="sxs-lookup"><span data-stu-id="fbf9f-143">Report Refresh Date</span></span>
-- <span data-ttu-id="fbf9f-144">Gesamt</span><span class="sxs-lookup"><span data-stu-id="fbf9f-144">Total</span></span>
-- <span data-ttu-id="fbf9f-145">Aktiv</span><span class="sxs-lookup"><span data-stu-id="fbf9f-145">Active</span></span>
-- <span data-ttu-id="fbf9f-146">Berichtsdatum</span><span class="sxs-lookup"><span data-stu-id="fbf9f-146">Report Date</span></span>
-- <span data-ttu-id="fbf9f-147">Berichtszeitraum</span><span class="sxs-lookup"><span data-stu-id="fbf9f-147">Report Period</span></span>
+- <span data-ttu-id="12107-143">Berichtsaktualisierungsdatum</span><span class="sxs-lookup"><span data-stu-id="12107-143">Report Refresh Date</span></span>
+- <span data-ttu-id="12107-144">Gesamt</span><span class="sxs-lookup"><span data-stu-id="12107-144">Total</span></span>
+- <span data-ttu-id="12107-145">Aktiv</span><span class="sxs-lookup"><span data-stu-id="12107-145">Active</span></span>
+- <span data-ttu-id="12107-146">Berichtsdatum</span><span class="sxs-lookup"><span data-stu-id="12107-146">Report Date</span></span>
+- <span data-ttu-id="12107-147">Berichtszeitraum</span><span class="sxs-lookup"><span data-stu-id="12107-147">Report Period</span></span>
 
-## <a name="example"></a><span data-ttu-id="fbf9f-148">Beispiel</span><span class="sxs-lookup"><span data-stu-id="fbf9f-148">Example</span></span>
+## <a name="example"></a><span data-ttu-id="12107-148">Beispiel</span><span class="sxs-lookup"><span data-stu-id="12107-148">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="fbf9f-149">Anforderung</span><span class="sxs-lookup"><span data-stu-id="fbf9f-149">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="12107-149">Anforderung</span><span class="sxs-lookup"><span data-stu-id="12107-149">Request</span></span>
 
-<span data-ttu-id="fbf9f-150">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="fbf9f-150">The following is an example of the request.</span></span>
+<span data-ttu-id="12107-150">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="12107-150">The following is an example of the request.</span></span>
 
 <!--{
   "blockType": "request",
@@ -77,9 +78,9 @@ GET /reports/getOffice365GroupsActivityGroupCounts(period='{period_value}')
 GET https://graph.microsoft.com/v1.0/reports/getOffice365GroupsActivityGroupCounts(period='D7')
 ```
 
-#### <a name="response"></a><span data-ttu-id="fbf9f-151">Antwort</span><span class="sxs-lookup"><span data-stu-id="fbf9f-151">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="12107-151">Antwort</span><span class="sxs-lookup"><span data-stu-id="12107-151">Response</span></span>
 
-<span data-ttu-id="fbf9f-152">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="fbf9f-152">The following is an example of the response.</span></span>
+<span data-ttu-id="12107-152">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="12107-152">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -93,7 +94,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="fbf9f-153">Führen Sie die Umleitung 302 aus, und die heruntergeladene CSV-Datei besitzt das folgende Format.</span><span class="sxs-lookup"><span data-stu-id="fbf9f-153">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="12107-153">Führen Sie die Umleitung 302 aus, und die heruntergeladene CSV-Datei besitzt das folgende Format.</span><span class="sxs-lookup"><span data-stu-id="12107-153">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 

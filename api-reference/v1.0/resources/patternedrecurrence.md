@@ -1,26 +1,27 @@
 ---
 title: patternedRecurrence-Ressourcentyp
 description: Serienmuster und -bereich.
-ms.openlocfilehash: 10a90db032cd7461e28bc096fd6213df44f3ea45
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8a9581150e3b7790f32268eb34f35b22abcb3642
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017020"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840796"
 ---
-# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="3f21b-103">patternedRecurrence-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="3f21b-103">patternedRecurrence resource type</span></span>
+# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="766bb-103">patternedRecurrence-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="766bb-103">patternedRecurrence resource type</span></span>
 
-<span data-ttu-id="3f21b-104">Serienmuster und -bereich.</span><span class="sxs-lookup"><span data-stu-id="3f21b-104">The recurrence pattern and range.</span></span>
+<span data-ttu-id="766bb-104">Serienmuster und -bereich.</span><span class="sxs-lookup"><span data-stu-id="766bb-104">The recurrence pattern and range.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="3f21b-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="3f21b-105">Properties</span></span>
-| <span data-ttu-id="3f21b-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="3f21b-106">Property</span></span>     | <span data-ttu-id="3f21b-107">Typ</span><span class="sxs-lookup"><span data-stu-id="3f21b-107">Type</span></span>   |<span data-ttu-id="3f21b-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3f21b-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="766bb-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="766bb-105">Properties</span></span>
+| <span data-ttu-id="766bb-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="766bb-106">Property</span></span>     | <span data-ttu-id="766bb-107">Typ</span><span class="sxs-lookup"><span data-stu-id="766bb-107">Type</span></span>   |<span data-ttu-id="766bb-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="766bb-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3f21b-109">Muster</span><span class="sxs-lookup"><span data-stu-id="3f21b-109">pattern</span></span>|[<span data-ttu-id="3f21b-110">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="3f21b-110">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="3f21b-111">Die Häufigkeit eines Ereignisses.</span><span class="sxs-lookup"><span data-stu-id="3f21b-111">The frequency of an event.</span></span>|
-|<span data-ttu-id="3f21b-112">Bereich</span><span class="sxs-lookup"><span data-stu-id="3f21b-112">range</span></span>|[<span data-ttu-id="3f21b-113">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="3f21b-113">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="3f21b-114">Die Dauer eines Ereignisses.</span><span class="sxs-lookup"><span data-stu-id="3f21b-114">The duration of an event.</span></span>|
+|<span data-ttu-id="766bb-109">Muster</span><span class="sxs-lookup"><span data-stu-id="766bb-109">pattern</span></span>|[<span data-ttu-id="766bb-110">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="766bb-110">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="766bb-111">Die Häufigkeit eines Ereignisses.</span><span class="sxs-lookup"><span data-stu-id="766bb-111">The frequency of an event.</span></span>|
+|<span data-ttu-id="766bb-112">Bereich</span><span class="sxs-lookup"><span data-stu-id="766bb-112">range</span></span>|[<span data-ttu-id="766bb-113">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="766bb-113">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="766bb-114">Die Dauer eines Ereignisses.</span><span class="sxs-lookup"><span data-stu-id="766bb-114">The duration of an event.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="3f21b-115">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="3f21b-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="766bb-115">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="766bb-115">JSON representation</span></span>
 
-<span data-ttu-id="3f21b-116">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="3f21b-116">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="766bb-116">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="766bb-116">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

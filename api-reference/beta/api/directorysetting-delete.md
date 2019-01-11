@@ -2,52 +2,53 @@
 title: Löschen Sie eine Einstellung für die directory
 description: Eine Einstellung für die Verzeichnis zu löschen.
 author: lleonard-msft
-ms.openlocfilehash: 94359db03bfd58af659b4891295063477fc658e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 35954404b21eea883c9240bb1647feb85f490b16
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353039"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843827"
 ---
-# <a name="delete-a-directory-setting"></a><span data-ttu-id="4efec-103">Löschen Sie eine Einstellung für die directory</span><span class="sxs-lookup"><span data-stu-id="4efec-103">Delete a directory setting</span></span>
+# <a name="delete-a-directory-setting"></a><span data-ttu-id="bd865-103">Löschen Sie eine Einstellung für die directory</span><span class="sxs-lookup"><span data-stu-id="bd865-103">Delete a directory setting</span></span>
 
-> <span data-ttu-id="4efec-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="4efec-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4efec-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="4efec-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="bd865-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="bd865-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="bd865-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="bd865-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="4efec-106">Eine Einstellung für die Verzeichnis zu löschen.</span><span class="sxs-lookup"><span data-stu-id="4efec-106">Delete a directory setting.</span></span>
+<span data-ttu-id="bd865-106">Eine Einstellung für die Verzeichnis zu löschen.</span><span class="sxs-lookup"><span data-stu-id="bd865-106">Delete a directory setting.</span></span>
 
-> <span data-ttu-id="4efec-107">**Hinweis**: die Version /beta diese API ist nur auf Gruppen angewendet wird.</span><span class="sxs-lookup"><span data-stu-id="4efec-107">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="4efec-108">Die Version /v1.0 dieser API wurde zu *löschenden GroupSettings*umbenannt.</span><span class="sxs-lookup"><span data-stu-id="4efec-108">The /v1.0 version of this API has been renamed to *Delete groupSettings*.</span></span>
+> <span data-ttu-id="bd865-107">**Hinweis**: die Version /beta diese API ist nur auf Gruppen angewendet wird.</span><span class="sxs-lookup"><span data-stu-id="bd865-107">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="bd865-108">Die Version /v1.0 dieser API wurde zu *löschenden GroupSettings*umbenannt.</span><span class="sxs-lookup"><span data-stu-id="bd865-108">The /v1.0 version of this API has been renamed to *Delete groupSettings*.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4efec-109">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="4efec-109">Permissions</span></span>
-<span data-ttu-id="4efec-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4efec-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="bd865-109">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="bd865-109">Permissions</span></span>
+<span data-ttu-id="bd865-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bd865-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4efec-112">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="4efec-112">Permission type</span></span>      | <span data-ttu-id="4efec-113">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="4efec-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bd865-112">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="bd865-112">Permission type</span></span>      | <span data-ttu-id="bd865-113">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="bd865-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4efec-114">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="4efec-114">Delegated (work or school account)</span></span> | <span data-ttu-id="4efec-115">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="4efec-115">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="4efec-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="4efec-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4efec-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="4efec-117">Not supported.</span></span>    |
-|<span data-ttu-id="4efec-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="4efec-118">Application</span></span> | <span data-ttu-id="4efec-119">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4efec-119">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="bd865-114">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="bd865-114">Delegated (work or school account)</span></span> | <span data-ttu-id="bd865-115">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="bd865-115">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="bd865-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="bd865-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bd865-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="bd865-117">Not supported.</span></span>    |
+|<span data-ttu-id="bd865-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="bd865-118">Application</span></span> | <span data-ttu-id="bd865-119">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bd865-119">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4efec-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="4efec-120">HTTP request</span></span>
-<span data-ttu-id="4efec-121"><!-- { "blockType": "ignored" } -->Löschen einer bestimmten Mandanten geltende oder gruppeneinstellung</span><span class="sxs-lookup"><span data-stu-id="4efec-121"><!-- { "blockType": "ignored" } --> Delete a specific tenant-wide or group setting</span></span>
+## <a name="http-request"></a><span data-ttu-id="bd865-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="bd865-120">HTTP request</span></span>
+<span data-ttu-id="bd865-121"><!-- { "blockType": "ignored" } -->Löschen einer bestimmten Mandanten geltende oder gruppeneinstellung</span><span class="sxs-lookup"><span data-stu-id="bd865-121"><!-- { "blockType": "ignored" } --> Delete a specific tenant-wide or group setting</span></span>
 ```http
 DELETE /settings/{id}
 DELETE /groups/{id}/settings/{id}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="4efec-122">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="4efec-122">Request headers</span></span>
-| <span data-ttu-id="4efec-123">Name</span><span class="sxs-lookup"><span data-stu-id="4efec-123">Name</span></span>       | <span data-ttu-id="4efec-124">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="4efec-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="bd865-122">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="bd865-122">Request headers</span></span>
+| <span data-ttu-id="bd865-123">Name</span><span class="sxs-lookup"><span data-stu-id="bd865-123">Name</span></span>       | <span data-ttu-id="bd865-124">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="bd865-124">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="4efec-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="4efec-125">Authorization</span></span>  | <span data-ttu-id="4efec-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="4efec-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="bd865-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="bd865-125">Authorization</span></span>  | <span data-ttu-id="bd865-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="bd865-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4efec-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="4efec-128">Request body</span></span>
-<span data-ttu-id="4efec-129">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="4efec-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bd865-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="bd865-128">Request body</span></span>
+<span data-ttu-id="bd865-129">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="bd865-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4efec-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="4efec-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bd865-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="bd865-130">Response</span></span>
 
-<span data-ttu-id="4efec-p105">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="4efec-p105">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="bd865-p105">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="bd865-p105">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4efec-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="4efec-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4efec-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="4efec-134">Request</span></span>
-<span data-ttu-id="4efec-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="4efec-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="bd865-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="bd865-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="bd865-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="bd865-134">Request</span></span>
+<span data-ttu-id="bd865-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="bd865-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_directorysetting"
@@ -55,7 +56,7 @@ DELETE /groups/{id}/settings/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/settings/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="4efec-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="4efec-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="bd865-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="bd865-136">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
