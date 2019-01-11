@@ -2,12 +2,13 @@
 title: deviceEnrollmentConfiguration-Ressourcentyp
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 6d3c8b1114a19429f89d5f5b6b466a1dec12eb26
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ee0afc4cb8f8f2d1f645fcd9826cafc771824a07
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326579"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865555"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>deviceEnrollmentConfiguration-Ressourcentyp
 
@@ -25,9 +26,9 @@ Noch nicht dokumentiert.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Noch nicht dokumentiert|
-|displayName|String|Noch nicht dokumentiert.|
-|description|String|Noch nicht dokumentiert.|
+|id|Zeichenfolge|Noch nicht dokumentiert|
+|displayName|Zeichenfolge|Noch nicht dokumentiert.|
+|description|Zeichenfolge|Noch nicht dokumentiert.|
 |priority|Int32|Noch nicht dokumentiert.|
 |createdDateTime|DateTimeOffset|Noch nicht dokumentiert.|
 |lastModifiedDateTime|DateTimeOffset|Noch nicht dokumentiert.|

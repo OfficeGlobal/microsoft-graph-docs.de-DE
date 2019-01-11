@@ -2,12 +2,13 @@
 title: deviceComplianceSettingState aktualisieren
 description: Aktualisieren der Eigenschaften eines deviceComplianceSettingState-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 699ddfebe1e333c97d6fc186e4d65e40c4f367aa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0f607b699f4a89d925f099724851d92800ed9ddc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348209"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807135"
 ---
 # <a name="update-devicecompliancesettingstate"></a>deviceComplianceSettingState aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) an.
@@ -49,15 +50,15 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |:---|:---|:---|
 |id|String|Schlüssel der Entität|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|Gerätetyp-Plattform. Mögliche Werte sind: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise` , `blackberry`, `palm`, `unknown`.|
-|setting|String|Klassenname und Eigenschaftenname der Einstellung|
+|setting|Zeichenfolge|Klassenname und Eigenschaftenname der Einstellung|
 |settingName|String|Gemeldeter Einstellungsname|
 |deviceId|String|Gemeldete Geräte-ID|
 |deviceName|String|Gemeldeter Gerätename|
 |userId|String|Gemeldete Benutzer-ID|
 |userEmail|String|Gemeldete Benutzer-E-Mail-Adresse|
-|userName|String|Gemeldeter Benutzername|
+|userName|Zeichenfolge|Gemeldeter Benutzername|
 |userPrincipalName|String|Gemeldeter Benutzerprinzipalname|
-|deviceModel|String|Gemeldetes Gerätemodell|
+|deviceModel|Zeichenfolge|Gemeldetes Gerätemodell|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Toleranzperiode für die Gerätekonformität|
 

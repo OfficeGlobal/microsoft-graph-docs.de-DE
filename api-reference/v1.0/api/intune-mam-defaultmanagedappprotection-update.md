@@ -2,12 +2,13 @@
 title: Aktualisieren von „defaultManagedAppProtection“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs defaultManagedAppProtection.
 author: tfitzmac
-ms.openlocfilehash: 05ef6bbfa2fac0dc01d86b2ea3cd8dbf7a51781b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: df4d6efc83c5975589707b519cdf208ceec1e8d7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344373"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864092"
 ---
 # <a name="update-defaultmanagedappprotection"></a>Aktualisieren von „defaultManagedAppProtection“
 
@@ -35,8 +36,8 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) an.

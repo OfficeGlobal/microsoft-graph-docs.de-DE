@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp mailTipsError
 description: Ein Fehler, der während einer Aktion auftritt.
-ms.openlocfilehash: 94ab795d5cb12c2ff8490806326968d363e1a761
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7df13bb45471d89fdf25b4a251e441bbf2dfad9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064685"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865624"
 ---
 # <a name="mailtipserror-resource-type"></a>Ressourcentyp mailTipsError
 
@@ -17,8 +18,8 @@ Ein Fehler, der während einer Aktion auftritt.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:-----|:-----|:-----|
-| message | String | Die Fehlermeldung. |
-| code | String | Der Fehlercode. |
+| message | Zeichenfolge | Die Fehlermeldung. |
+| code | Zeichenfolge | Der Fehlercode. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

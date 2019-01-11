@@ -2,12 +2,13 @@
 title: DomainNameSource Enum-Typ
 description: DomainName-Quelle.
 author: tfitzmac
-ms.openlocfilehash: b44c5a65df83539bfea66a13dbbbe1195ccd8e6a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 22235051f5cd721cd7bbf0097bae5809e1868c0d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327993"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862181"
 ---
 # <a name="domainnamesource-enum-type"></a>DomainNameSource Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27327993"
 
 DomainName-Quelle.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |fullDomainName|0|Vollständigen Domänennamen.|
 |netBiosDomainName|1|NetBIOS-Domänennamen.|

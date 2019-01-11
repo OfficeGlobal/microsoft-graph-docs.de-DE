@@ -2,12 +2,13 @@
 title: locateDeviceActionResult-Ressourcentyp
 description: Gerät suchen – Aktionsergebnis
 author: tfitzmac
-ms.openlocfilehash: 82f8b5ba1bd1f1ce1584af50a4a2b3037e588adc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4675da8cff8ae8091d9aa61350d0fc329e7eddee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345451"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837541"
 ---
 # <a name="locatedeviceactionresult-resource-type"></a>locateDeviceActionResult-Ressourcentyp
 
@@ -22,7 +23,7 @@ Erbt von [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|actionName|String|Aktionsname, geerbt von [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
+|actionName|Zeichenfolge|Aktionsname, geerbt von [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Status der Aktion Inherited aus [DeviceActionResult](../resources/intune-devices-deviceactionresult.md). Mögliche Werte sind: `none`, `pending`, `canceled`, `active`, `done`, `failed` und `notSupported`.|
 |startDateTime|DateTimeOffset|Zeit, zu der die Aktion initiiert wurde. Geerbt von [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Zeit, zu der der Aktionszustand zuletzt aktualisiert wurde. Geerbt von [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|

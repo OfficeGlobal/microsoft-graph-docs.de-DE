@@ -2,12 +2,13 @@
 title: Ressourcentyp macOSMinimumOperatingSystem
 description: Das Betriebssystem (mindestens) für eine Mac OS-app erforderlich.
 author: tfitzmac
-ms.openlocfilehash: ff9d4e3fc375f17d7b3c3efdd4af16cd7e87ceb6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 21f557ebd3fbc1ae5e86a1991eb1a0207a902ce2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354775"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862090"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>Ressourcentyp macOSMinimumOperatingSystem
 
@@ -19,13 +20,13 @@ Das Betriebssystem (mindestens) für eine Mac OS-app erforderlich.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|v10_7|Boolesch|Mac OS 10,7 oder höher.|
-|v10_8|Boolesch|Mac OS 10,8 oder höher.|
-|v10_9|Boolesch|Mac OS 10.9 oder höher.|
-|v10_10|Boolesch|Mac OS 10.10 oder höher.|
-|v10_11|Boolesch|Mac OS 10.11 oder höher.|
-|v10_12|Boolesch|Mac OS 10.12 oder höher.|
-|v10_13|Boolesch|Mac OS 10.13 oder höher.|
+|v10_7|Boolescher Wert|Mac OS 10,7 oder höher.|
+|v10_8|Boolescher Wert|Mac OS 10,8 oder höher.|
+|v10_9|Boolescher Wert|Mac OS 10.9 oder höher.|
+|v10_10|Boolescher Wert|Mac OS 10.10 oder höher.|
+|v10_11|Boolescher Wert|Mac OS 10.11 oder höher.|
+|v10_12|Boolescher Wert|Mac OS 10.12 oder höher.|
+|v10_13|Boolescher Wert|Mac OS 10.13 oder höher.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

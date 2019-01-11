@@ -2,12 +2,13 @@
 title: Ressourcentyp invitationParticipantInfo
 description: Die **InvitationParticipant** wird verwendet, um die Darstellung eines Satzes von Identitäten zugeordnet einer unterhaltungseinladung zu einer und bietet zusätzliche Einladung-Parameter.
 author: VinodRavichandran
-ms.openlocfilehash: f833fcd0c555dfcc88da4027313ed7f40da81428
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 7a6fb418b7076b0f0a42dc05b6afe71dcda6a71e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380485"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865002"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>Ressourcentyp invitationParticipantInfo
 

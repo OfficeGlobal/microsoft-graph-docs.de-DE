@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp Abonnement
 description: 'Ein Abonnement ermöglicht eine Client-app zum Empfangen von Benachrichtigungen zu Änderungen an Daten in Microsoft Graph. Abonnements werden derzeit für die folgenden Ressourcen aktiviert:'
-ms.openlocfilehash: 5ece39954d661c6b7ef948d0ed7d514782fbceae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b70daca8eb0f7c303173945b3cacf2cf53af56ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019839"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867011"
 ---
 # <a name="subscription-resource-type"></a>Ressourcentyp Abonnement
 

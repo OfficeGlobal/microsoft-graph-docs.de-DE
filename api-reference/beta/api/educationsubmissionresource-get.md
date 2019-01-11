@@ -2,12 +2,13 @@
 title: Abrufen von educationSubmissionResource
 description: Ruft die Eigenschaften einer bestimmten Ressource der Übermittlung zugeordnet. Diese Ressource ist in der Liste 'Arbeit' Ressource und sollte in Bearbeitung durch einen Schüler berücksichtigt werden. Diese Ressource mit einem möglichen Zeiger an die Zuordnung Ressource umbrochen werden, wenn es die Zuordnung kopiert wurde.
 author: dipakboyed
-ms.openlocfilehash: d7c1e6fcbe97a9a0a4c1735e37798097f2605b30
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 95a44b2a2e354060a718827ba1c13b9c60391d58
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361915"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866073"
 ---
 # <a name="get-educationsubmissionresource"></a>Abrufen von educationSubmissionResource
 
@@ -33,7 +34,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/resources/{id}
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

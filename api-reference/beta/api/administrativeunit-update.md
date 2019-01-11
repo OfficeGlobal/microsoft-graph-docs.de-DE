@@ -2,12 +2,13 @@
 title: Administrativeunit aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AdministrativeUnit-Objekts.
 author: lleonard-msft
-ms.openlocfilehash: 99ec27bc9a60e25d28202d2ebd82155089963c21
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b3a7de71e43b81927540c2eb8f85a45ce573e4b1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362167"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865674"
 ---
 # <a name="update-administrativeunit"></a>Administrativeunit aktualisieren
 

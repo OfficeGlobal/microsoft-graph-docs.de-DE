@@ -1,12 +1,13 @@
 ---
 title: Frühere Version eines SharePoint-Listenelements wiederherstellen
 description: Stellen Sie eine frühere Version eines Listenelements als aktuelle Version wieder her. Dadurch wird eine neue Version mit dem Inhalt der vorherigen Version erstellt, aber alle vorhandenen Versionen des Elements bleiben erhalten.
-ms.openlocfilehash: f8dc4196c40c51287e93aaa667c325e8d4f6dcfb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6fb315986a8dc22363e22235f8cf65e0cbc21fed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017796"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866962"
 ---
 # <a name="restore-a-previous-version-of-a-listitem"></a>Frühere Version eines SharePoint-Listenelements wiederherstellen
 

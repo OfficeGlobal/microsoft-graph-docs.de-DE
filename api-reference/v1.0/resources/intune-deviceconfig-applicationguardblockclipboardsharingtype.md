@@ -2,12 +2,13 @@
 title: ApplicationGuardBlockClipboardSharingType Enum-Typ
 description: Mögliche Werte für applicationGuardBlockClipboardSharingType
 author: tfitzmac
-ms.openlocfilehash: af1843a8d7515e5ca14997256968942f485eab64
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6fe418aa1f91c0e65770b797781dda9e29803d86
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304081"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865975"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>ApplicationGuardBlockClipboardSharingType Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27304081"
 
 Mögliche Werte für applicationGuardBlockClipboardSharingType
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Nicht konfiguriert|
 |blockBoth|1|Zwischenablage zum Freigeben von Daten aus Host Container und aus dem Container zum Hosten von blockieren|

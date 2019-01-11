@@ -2,12 +2,13 @@
 title: RevokeDeviceLicense Aktion
 description: REVOKE zugewiesen iOS VPP Gerätenlizenz für app zu reparieren.
 author: tfitzmac
-ms.openlocfilehash: 17ae2ed812d5c5b5a35926934d748fb730aafacf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5a8dca4ea62e08e9d34727dd2142a156ba2d8dee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353130"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864974"
 ---
 # <a name="revokedevicelicense-action"></a>RevokeDeviceLicense Aktion
 
@@ -39,8 +40,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.
@@ -49,8 +50,8 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|managedDeviceId|String|Geräte-ID für die zugewiesenen app-Lizenz ist gesperrt werden|
-|notifyManagedDevices|Boolesch|Boolescher Wert, der angibt, ob Revoke-Benachrichtigung an Gerät gesendet werden sollen|
+|managedDeviceId|Zeichenfolge|Geräte-ID für die zugewiesenen app-Lizenz ist gesperrt werden|
+|notifyManagedDevices|Boolescher Wert|Boolescher Wert, der angibt, ob Revoke-Benachrichtigung an Gerät gesendet werden sollen|
 
 
 

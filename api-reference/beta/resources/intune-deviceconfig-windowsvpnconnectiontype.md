@@ -2,12 +2,13 @@
 title: WindowsVpnConnectionType Enum-Typ
 description: Typ des Windows-VPN-Verbindung.
 author: tfitzmac
-ms.openlocfilehash: d26b55b2d1b8fb38336c2dffcab4f002b03b1e82
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3319fc96dfee6b41c6950c4184223808b6560f2f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306363"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867333"
 ---
 # <a name="windowsvpnconnectiontype-enum-type"></a>WindowsVpnConnectionType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27306363"
 
 Typ des Windows-VPN-Verbindung.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |pulseSecure|0|Pulse sichern.|
 |f5EdgeClient|1|F5-Edge-Client.|

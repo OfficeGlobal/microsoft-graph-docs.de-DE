@@ -2,12 +2,13 @@
 title: user-Ressourcentyp
 description: Stellt ein Azure AD-Benutzerkonto dar. Erbt von directoryObject.
 author: dkershaw10
-ms.openlocfilehash: 65d113ef86159ebc45160f2caa31fa51c9aa7571
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: d9f15cd6f0b3169370257578f841a1821593f351
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312481"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862496"
 ---
 # <a name="user-resource-type"></a>user-Ressourcentyp
 
@@ -118,7 +119,7 @@ Diese Ressource unterstützt Folgendes:
 |skills|Zeichenfolgenauflistung|Eine Liste zur Aufzählung der Qualifikationen eines Benutzers.|
 |state|String|Bundesland oder Kanton in der Adresse des Benutzers. Unterstützt $filter.|
 |streetAddress|String|Die Straße der Firma des Benutzers.|
-|surname|String|Der Nachname des Benutzers. Unterstützt $filter.|
+|surname|Zeichenfolge|Der Nachname des Benutzers. Unterstützt $filter.|
 |usageLocation|String|Ein aus zwei Buchstaben bestehender Ländercode (ISO-Standard 3166). Erforderlich für Benutzer, denen Lizenzen zugewiesen werden, aufgrund der gesetzlichen Vorschrift, dass die Verfügbarkeit von Diensten in einzelnen Ländern geprüft werden muss.  Beispiele sind: „US“, „JP“ und „GB“. Lässt keine NULL-Werte zu. Unterstützt $filter.|
 |userPrincipalName|String|Der User Principal Name (UPN) des Benutzers. Der UPN ist ein Anmeldename des Benutzers im Internetformat, der auf dem Internetstandard RFC 822 basiert. Gemäß der Konvention sollte er dem E-Mail-Namen des Benutzers zugeordnet sein. Das allgemeine Format lautet „alias@domäne“, wobei „domäne“ in der Sammlung der verifizierten Domänen des Mandanten vorhanden sein muss. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Auf die verifizierten Domänen für den Mandanten kann über die **verifiedDomains** -Eigenschaft von [organization](organization.md) zugegriffen werden. Unterstützt $Filter und $orderby.
 |userType|String|Ein Zeichenfolgenwert kann zum Klassifizieren der Benutzertypen in Ihrem Verzeichnis verwendet werden, z. B. „Member“ und „Guest“. Unterstützt $filter.          |

@@ -2,12 +2,13 @@
 title: Erstellen von dataSharingConsent
 description: Erstellen eines neuen DataSharingConsent-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 07d76bbd92d2741571683bb7614b3336c10d9058
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cf45db12a9876d9be89d20fa3328e89eeea82013
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349672"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862286"
 ---
 # <a name="create-datasharingconsent"></a>Erstellen von dataSharingConsent
 
@@ -35,10 +36,10 @@ POST /deviceManagement/dataSharingConsents
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt DataSharingConsent eine JSON-Darstellung.
@@ -50,7 +51,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |id|String|Die Daten sharing Zustimmung Id|
 |von Ihnen eingegebene Dienstanzeigename|String|Der Anzeigename der Dienst Workflow|
 |termsUrl|String|Die TermsUrl für die Datenfreigabe Zustimmung|
-|erteilt|Boolesch|Den gewährten Status für die Datenfreigabe Zustimmung|
+|erteilt|Boolean|Den gewährten Status für die Datenfreigabe Zustimmung|
 |grantDateTime|DateTimeOffset|Die Zeit Zustimmung wurde für dieses Konto erteilt.|
 |grantedByUpn|String|Den Upn des Benutzers, der für dieses Konto Zustimmung eingeholt|
 |grantedByUserId|String|Die Benutzer-ID des Benutzers, der für dieses Konto Zustimmung eingeholt|

@@ -2,12 +2,13 @@
 title: 'ChartFill: setSolidColor'
 description: Legt die Füllung eines Diagrammelements auf einfarbige Füllung fest.
 author: lumine2008
-ms.openlocfilehash: 566b6081c0beb41269c7e60e61cd44a5d76ed6f7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fceb4fcbc66282e9a53a48feeb43d8196a07f2c2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322883"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868005"
 ---
 # <a name="chartfill-setsolidcolor"></a>ChartFill: setSolidColor
 

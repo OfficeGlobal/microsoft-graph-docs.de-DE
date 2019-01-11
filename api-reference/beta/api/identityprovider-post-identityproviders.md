@@ -1,12 +1,13 @@
 ---
 title: Erstellen von identityProvider
 description: Erstellen einer neuen IdentityProvider durch Angeben von Anzeigename, IdentityProvider Typ, Client-ID und clientgeheimnis.
-ms.openlocfilehash: 8786cbf6676567a0c6aaef5bf497f50cff1ce9a4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 50ead5acbbda7725e44de55865d6fe2184c89647
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062691"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866234"
 ---
 # <a name="create-identityprovider"></a>Erstellen von identityProvider
 
@@ -49,7 +50,7 @@ Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [IdentityProvider
 |clientId|String|Die Client-ID für die Anwendung. Dies ist die Client-ID abgerufen wird, wenn die Anwendung mit dem Identitätsanbieter registrieren.|
 |clientSecret|String|Der geheime Clientschlüssel für die Anwendung. Dies ist der geheime Clientschlüssel erhalten Sie, wenn die Anwendung mit dem Identitätsanbieter registrieren.|
 |name|String|Der Anzeigename des Identitätsanbieters.|
-|Typ|String|Der Typ der Identität Anbieter. Es muss eine der folgenden Werte sein: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
+|type|String|Der Typ der Identität Anbieter. Es muss eine der folgenden Werte sein: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
 
 ## <a name="response"></a>Antwort
 

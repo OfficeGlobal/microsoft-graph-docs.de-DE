@@ -1,12 +1,13 @@
 ---
 title: plannerOrderHintsByAssignee-Ressourcentyp
 description: Die **PlannerOrderHintsByAssignee** ist eine Ressource, die Sortierung Hinweise für "assignees" in einer Ressource PlannerTask an, dass die Reihenfolge des Vorgangs in der Ansicht zugewiesen an der Aufgabe-Karte enthält.
-ms.openlocfilehash: a15a1f81b348958e5c38189db10743b83d72050f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cdc254eab43972d321e01e646880b3087f3af6f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059868"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863945"
 ---
 # <a name="plannerorderhintsbyassignee-resource-type"></a>plannerOrderHintsByAssignee-Ressourcentyp
 

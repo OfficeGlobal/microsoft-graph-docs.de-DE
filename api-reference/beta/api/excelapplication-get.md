@@ -1,12 +1,13 @@
 ---
 title: Abrufen der Anwendung
 description: Rufen Sie die Eigenschaften und Beziehungen des Application-Objekts ab.
-ms.openlocfilehash: 0ba50fa0a3fec2c1f9a6adce828e845f0c4d3b2d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9226e697f3e8439740003887d8560ffaac9df2fa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060921"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864491"
 ---
 # <a name="get-application"></a>Abrufen der Anwendung
 

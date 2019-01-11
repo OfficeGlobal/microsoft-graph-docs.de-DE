@@ -1,12 +1,13 @@
 ---
 title: groupLifecyclePolicy-Ressourcentyp
 description: Steht für eine Lebenszyklusrichtlinie für eine Office 365-Gruppe. Eine Lebenszyklusrichtlinie für eine Gruppe ermöglicht Administratoren das Festlegen eines Ablaufzeitraums für Gruppen. Zum Beispiel nach 180 Tagen läuft eine Gruppe ab. Wenn eine Gruppe den Ablaufzeitpunkt erreicht, müssen Besitzer der Gruppe die Gruppe in einem vom Administrator definierten Zeitintervall verlängern. Sobald die Gruppe verlängert wurde, wird der Ablaufzeitraum für die Gruppe um die Anzahl der Tage verlängert, die in der Richtlinie definiert sind. Der neue Ablaufzeitraum für die Gruppe lautet dann beispielsweise 180 Tage ab Verlängerung. Wenn die Gruppe nicht verlängert wird, läuft sie ab und wird gelöscht. Die Gruppe kann innerhalb von 30 Tagen nach Löschung wiederhergestellt werden.
-ms.openlocfilehash: 3d0ed05aa77a763d1cfdeb7c27cc37ee8e45a8c5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cbc499bdf31a50873a2c2e1131630da4472b970d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017190"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865170"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>groupLifecyclePolicy-Ressourcentyp
 

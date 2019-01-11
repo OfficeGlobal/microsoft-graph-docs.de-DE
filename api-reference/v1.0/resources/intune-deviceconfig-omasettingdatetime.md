@@ -2,12 +2,13 @@
 title: omaSettingDateTime-Ressourcentyp
 description: DateTime-Definition der OMA-Einstellungen.
 author: tfitzmac
-ms.openlocfilehash: 9a525d031c9f24cf18495d83e22467e103bca6d9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: afd66ce8838abc3ade8857ec5a4bda74144d6792
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363690"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865183"
 ---
 # <a name="omasettingdatetime-resource-type"></a>omaSettingDateTime-Ressourcentyp
 
@@ -21,7 +22,7 @@ Erbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md).
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |displayName|Zeichenfolge|Anzeigename Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|String|Beschreibung. Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|Zeichenfolge|Beschreibung. Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|Zeichenfolge|OMA Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |Wert|DateTimeOffset|Wert.|
 

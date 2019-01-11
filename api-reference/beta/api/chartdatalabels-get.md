@@ -2,12 +2,13 @@
 title: ChartDataLabels abrufen
 description: Dient zum Abrufen der Eigenschaften und der Beziehungen des ChartDataLabels-Objekts.
 author: lumine2008
-ms.openlocfilehash: d28a7950a24877f0b54a82a04a6262f386cc268b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b06442a74c98bbd500a263e0db9c4b7c3f26f8e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348510"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865317"
 ---
 # <a name="get-chartdatalabels"></a>ChartDataLabels abrufen
 

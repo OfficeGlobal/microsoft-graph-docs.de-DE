@@ -2,12 +2,13 @@
 title: Ressourcentyp win32LobAppRegistryDetection
 description: Enthält Registrierungseigenschaften zum Erkennen von einer App Win32
 author: tfitzmac
-ms.openlocfilehash: 5adeca1b569531d15657acc2a8960bab60580dc6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: faccc030a9f15b511af4123c94687c904e60ff10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347740"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867137"
 ---
 # <a name="win32lobappregistrydetection-resource-type"></a>Ressourcentyp win32LobAppRegistryDetection
 
@@ -22,12 +23,12 @@ Erbt vom [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|check32BitOn64System|Boolesch|Ein Wert, der angibt, ob in diesem Registrierungspfad ist für die Überprüfung auf 32-Bit-app auf 64-Bit-system|
-|keyPath|String|Registrierungsschlüsselpfad zum Erkennen von Win32 Line of Business (LoB)-app|
-|Wertname|String|Der Name des Registrierungsschlüssels|
+|check32BitOn64System|Boolescher Wert|Ein Wert, der angibt, ob in diesem Registrierungspfad ist für die Überprüfung auf 32-Bit-app auf 64-Bit-system|
+|keyPath|Zeichenfolge|Registrierungsschlüsselpfad zum Erkennen von Win32 Line of Business (LoB)-app|
+|Wertname|Zeichenfolge|Der Name des Registrierungsschlüssels|
 |detectionType|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|Der Erkennung Datentyp. Mögliche Werte sind: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer` und `version`.|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Der Operator für die Registrierung Daten Erkennung. Mögliche Werte sind: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan` und `lessThanOrEqual`.|
-|detectionValue|String|Den Registrierungswert Erkennung|
+|detectionValue|Zeichenfolge|Den Registrierungswert Erkennung|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

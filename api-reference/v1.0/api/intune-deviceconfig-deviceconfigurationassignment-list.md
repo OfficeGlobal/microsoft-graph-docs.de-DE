@@ -2,12 +2,13 @@
 title: Auflisten von „deviceConfigurationAssignment“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs deviceConfigurationAssignment auf.
 author: tfitzmac
-ms.openlocfilehash: 531e9bbdbae61b7ef86dad8c558cee9e20a015e3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 88ae5ad2e007096eb8853d522f780d272d71a3a9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343946"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867403"
 ---
 # <a name="list-deviceconfigurationassignments"></a>Auflisten von „deviceConfigurationAssignment“
 
@@ -35,8 +36,8 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

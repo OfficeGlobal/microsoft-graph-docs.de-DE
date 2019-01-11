@@ -2,12 +2,13 @@
 title: managedAndroidStoreApp abrufen
 description: Lesen von Eigenschaften und Beziehungen des managedAndroidStoreApp-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 914102e24b2c594bcd1302cbcf7579470c28ae16
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 05afb4260af2a5b2799d036962329995e7a3e9d7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347670"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827363"
 ---
 # <a name="get-managedandroidstoreapp"></a>managedAndroidStoreApp abrufen
 
@@ -37,8 +38,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

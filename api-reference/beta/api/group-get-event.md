@@ -2,12 +2,13 @@
 title: Ereignis abrufen
 description: Abrufen eines event-Objekts.
 author: dkershaw10
-ms.openlocfilehash: 88a19af3e9f57e4b4c5856b56387136ccdd876de
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 724f5467c5d86dc571370f1db422019478b1c78e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362412"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864449"
 ---
 # <a name="get-event"></a>Ereignis abrufen
 
@@ -37,7 +38,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters)
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung |
 |:---------------|:--------|:--------|
-| Autorisierung  | string | Bearer {token}. Erforderlich.  |
+| Authorization  | string | Bearer {token}. Erforderlich.  |
 | Prefer: outlook.timezone  | string | Verwenden Sie dies, um die Zeitzone für die Anfangs- und Endzeiten in der Antwort anzugeben. Wenn nicht angegeben, werden diese Zeitwerte in UTC zurückgegeben. Optional. |
 | Besser: outlook.body-content-type | string | Das Format, in der die **body**-Eigenschaft zurückgegeben werden soll. Werte können „Text“ oder „html“ sein. Als Bestätigung wird eine `Preference-Applied`-Kopfzeile zurückgegeben, wenn diese `Prefer`-Kopfzeile angegeben ist. Wenn die Kopfzeile nicht angegeben ist, wird die **body**-Eigenschaft im HTML-Format zurückgegeben. Optional. |
 

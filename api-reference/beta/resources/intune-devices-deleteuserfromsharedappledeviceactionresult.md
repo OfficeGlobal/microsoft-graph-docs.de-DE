@@ -2,12 +2,13 @@
 title: deleteUserFromSharedAppleDeviceActionResult-Ressourcentyp
 description: Benutzer von freigegebenem Apple-Gerät löschen – Aktionsergebnis
 author: tfitzmac
-ms.openlocfilehash: 928d20603bc06d15e2e58c03d6ef611a9d57b42f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ed004ad8c02d18c19df7be0f819658603fb4fc0d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319789"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861908"
 ---
 # <a name="deleteuserfromsharedappledeviceactionresult-resource-type"></a>deleteUserFromSharedAppleDeviceActionResult-Ressourcentyp
 
@@ -22,7 +23,7 @@ Erbt von [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|actionName|String|Aktionsname, geerbt von [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
+|actionName|Zeichenfolge|Aktionsname, geerbt von [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Status der Aktion Inherited aus [DeviceActionResult](../resources/intune-devices-deviceactionresult.md). Mögliche Werte sind: `none`, `pending`, `canceled`, `active`, `done`, `failed` und `notSupported`.|
 |startDateTime|DateTimeOffset|Zeit, zu der die Aktion initiiert wurde. Geerbt von [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Zeit, zu der der Aktionszustand zuletzt aktualisiert wurde. Geerbt von [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|

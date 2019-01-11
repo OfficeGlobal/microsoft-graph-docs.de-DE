@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp office365GroupsActivityStorage
 description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: 23ff4d112373f52c4c19d6631ac89bac22399b29
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9824d3d172a8578f8a25a049c2d0d3b407bbc47e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064924"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862251"
 ---
 # <a name="office365groupsactivitystorage-resource-type"></a>Ressourcentyp office365GroupsActivityStorage
 

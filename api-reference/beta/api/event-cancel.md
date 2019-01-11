@@ -2,12 +2,13 @@
 title: 'Ereignis: Abbrechen'
 description: 'Dieser Aktion kann den Organisator einer Besprechung senden eine Absage und das Ereignis abzubrechen. '
 author: angelgolfer-ms
-ms.openlocfilehash: 5e32219be129d1b16e05badd1fb778f86d95849b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 482804d58078f148ed321a0c3489954fc9144f8e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350309"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864624"
 ---
 # <a name="event-cancel"></a>Ereignis: Abbrechen
 
@@ -53,7 +54,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext

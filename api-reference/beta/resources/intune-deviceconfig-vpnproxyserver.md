@@ -2,12 +2,13 @@
 title: Ressourcentyp vpnProxyServer
 description: VPN-Proxy-Server.
 author: tfitzmac
-ms.openlocfilehash: f622d476e041fd89a639c14113e273a16aca992f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b4842444bc248e51e1967fcbef4a863ed50498c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333474"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867676"
 ---
 # <a name="vpnproxyserver-resource-type"></a>Ressourcentyp vpnProxyServer
 
@@ -19,8 +20,8 @@ VPN-Proxy-Server.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|automaticConfigurationScriptUrl|String|Automatische Konfiguration Skript-Url des Proxys.|
-|address|String|Adresse.|
+|automaticConfigurationScriptUrl|Zeichenfolge|Automatische Konfiguration Skript-Url des Proxys.|
+|address|Zeichenfolge|Adresse.|
 |port|Int32|Port. Gültige Werte zwischen 0 und 65535|
 
 ## <a name="relationships"></a>Beziehungen

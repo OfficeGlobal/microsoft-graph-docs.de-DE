@@ -2,12 +2,13 @@
 title: Aktualisieren von „mobileAppAssignment“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs mobileAppAssignment.
 author: tfitzmac
-ms.openlocfilehash: ee6a6de3d20257121721ccb94f316230db8112d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fe3d54c7919df77a8d862590c18d41a86cf7279a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361117"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865352"
 ---
 # <a name="update-mobileappassignment"></a>Aktualisieren von „mobileAppAssignment“
 
@@ -37,8 +38,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssign
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) an.

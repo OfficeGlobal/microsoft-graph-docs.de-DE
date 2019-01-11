@@ -1,12 +1,13 @@
 ---
 title: sectionGroup-Ressourcentyp
 description: Eine Abschnittsgruppe in einem OneNote-Notizbuch. Abschnittsgruppen können Abschnitte und Abschnittsgruppen enthalten.
-ms.openlocfilehash: 4714d0d163e9ddd01373f50bf38fa0971da0609b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f204c5422eb5f0f2580bfbed82ed28306dd0618f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018468"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806307"
 ---
 # <a name="sectiongroup-resource-type"></a>sectionGroup-Ressourcentyp
 
@@ -47,13 +48,13 @@ Es folgt eine JSON-Darstellung der Ressource.
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.|
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit der Erstellung der Abschnittsgruppe. Der Zeitstempel stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
-|id|String|Der eindeutige Bezeichner der Abschnittsgruppe. Schreibgeschützt.|
+|id|Zeichenfolge|Der eindeutige Bezeichner der Abschnittsgruppe. Schreibgeschützt.|
 |lastModifiedBy|[identitySet](identityset.md)|Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.|
 |lastModifiedDateTime|DateTimeOffset|Das Datum und die Uhrzeit der letzten Änderung der Abschnittsgruppe. Der Zeitstempel stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
 |displayName|String|Der Name der Abschnittsgruppe.|
 |sectionGroupsUrl|String|Die URL für die Navigationseigenschaft `sectionGroups`, die alle Abschnittsgruppen in der Abschnittsgruppe zurückgibt. Schreibgeschützt.|
 |sectionsUrl|String|Die URL für die Navigationseigenschaft `sections`, die alle Abschnitte in der Abschnittsgruppe zurückgibt. Schreibgeschützt.|
-|self|String|Der Endpunkt, an dem Sie Details zur Abschnittsgruppe abrufen können. Schreibgeschützt.|
+|self|Zeichenfolge|Der Endpunkt, an dem Sie Details zur Abschnittsgruppe abrufen können. Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|

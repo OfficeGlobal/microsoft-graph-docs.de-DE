@@ -2,12 +2,13 @@
 title: mobileAppContentFile aktualisieren
 description: Aktualisieren der Eigenschaften eines MobileAppContentFile-Objekts.
 author: tfitzmac
-ms.openlocfilehash: ae091b562180c73c71ad9a58522face2c4457d53
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b404be8c376bfaff89540eb22ce2cde5ddca2b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337933"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865478"
 ---
 # <a name="update-mobileappcontentfile"></a>mobileAppContentFile aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) an.
@@ -57,8 +58,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |azureStorageUriExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs des Azure Storage-URI|
 |manifest|Binär|Manifestinformationen|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|Status der aktuellen Uploadanforderung. Mögliche Werte sind: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed` und `commitFileTimedOut`.|
-|isFrameworkFile|Boolesch|Ein Wert, der angibt, ob die Datei Framework handelt.|
-|isDependency|Boolesch|Gibt an, ob die Datei eine Abhängigkeit für die wichtigsten Inhaltsdatei ist.|
+|isFrameworkFile|Boolescher Wert|Ein Wert, der angibt, ob die Datei Framework handelt.|
+|isDependency|Boolescher Wert|Gibt an, ob die Datei eine Abhängigkeit für die wichtigsten Inhaltsdatei ist.|
 
 
 

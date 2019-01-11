@@ -2,12 +2,13 @@
 title: GetManagementConditionsForPlatform-Funktion
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: d0d36750f568102a69309615285c7460aa31aec3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 13871db2f5dd99de80caf1004baa96aaf6dcf146
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320034"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864925"
 ---
 # <a name="getmanagementconditionsforplatform-function"></a>GetManagementConditionsForPlatform-Funktion
 
@@ -38,8 +39,8 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie in der Anforderungs-URL die folgenden Abfrageparameter mit Werten an.

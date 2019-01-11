@@ -2,12 +2,13 @@
 title: Erstellen von „userInstallStateSummary“
 description: Diese Methode erstellt ein neues Objekt des Typs userInstallStateSummary.
 author: tfitzmac
-ms.openlocfilehash: 1f90c76382379f1e448c02d5b83a415c9a97fc82
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8346d64a550d1e13edb939fb8d79e4e60272cbd9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350288"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864708"
 ---
 # <a name="create-userinstallstatesummary"></a>Erstellen von „userInstallStateSummary“
 
@@ -35,10 +36,10 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „userInstallStateSummary“ an.
@@ -47,7 +48,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |userName|String|Name des Benutzers|
 |installedDeviceCount|Int32|Anzahl der installierten Geräte|
 |failedDeviceCount|Int32|Anzahl der fehlgeschlagenen Geräte|

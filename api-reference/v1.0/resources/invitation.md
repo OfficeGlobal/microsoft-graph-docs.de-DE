@@ -1,12 +1,13 @@
 ---
 title: Einladungs-Manager
 description: 'Verwenden Sie den Einladungs-Manager, um eine Einladung zum Hinzufügen eines externen Benutzers zu der Organisation zu erstellen. '
-ms.openlocfilehash: c8b8bacaf85c36f24ec89b05594ff0880fa8c14e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 4e47131fd7e3128366d482c314c059d833c8e101
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016280"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867438"
 ---
 # <a name="invitation-manager"></a>Einladungs-Manager
 
@@ -30,14 +31,14 @@ Durch Erstellen einer Einladung wird eine URL für die Einlösung in der Antwort
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|invitedUserDisplayName|String|Der Anzeigename des eingeladenen Benutzers.|
-|invitedUserEmailAddress|String|Die E-Mail-Adresse des eingeladenen Benutzers. Erforderlich. |
+|invitedUserDisplayName|Zeichenfolge|Der Anzeigename des eingeladenen Benutzers.|
+|invitedUserEmailAddress|Zeichenfolge|Die E-Mail-Adresse des eingeladenen Benutzers. Erforderlich. |
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Zusätzliche Konfiguration für die an den eingeladenen Benutzer gesendete Nachricht, einschließlich des Anpassens des Nachrichtentexts, der Sprache und der Empfängerliste in CC.|
-|sendInvitationMessage|Boolesch|Gibt an, ob eine E-Mail-Nachricht an den eingeladenen Benutzer gesendet werden soll oder nicht. Der Standardwert ist „false“.|
-|inviteRedirectUrl|String|Die URL, an die der eingeladene Benutzer umgeleitet werden sollte, nachdem die Einladung eingelöst wurde. Erforderlich. |
-|inviteRedeemUrl|String|Die URL, die der Benutzer zum Einlösen seiner Einladung verwenden kann. Schreibgeschützt|
+|sendInvitationMessage|Boolescher Wert|Gibt an, ob eine E-Mail-Nachricht an den eingeladenen Benutzer gesendet werden soll oder nicht. Der Standardwert ist „false“.|
+|inviteRedirectUrl|Zeichenfolge|Die URL, an die der eingeladene Benutzer umgeleitet werden sollte, nachdem die Einladung eingelöst wurde. Erforderlich. |
+|inviteRedeemUrl|Zeichenfolge|Die URL, die der Benutzer zum Einlösen seiner Einladung verwenden kann. Schreibgeschützt|
 |invitedUserType|Zeichenfolge|Der userType des eingeladenen Benutzers. Standardmäßig ist dieser Wert auf „Gast“ festgelegt. Wenn Sie der Unternehmensadministrator sind, können Sie ihn als „Mitglied“ einladen. |
-|status|String|Der Status der Einladung. Mögliche Werte: PendingAcceptance, Completed, InProgress und Error|
+|status|Zeichenfolge|Der Status der Einladung. Mögliche Werte: PendingAcceptance, Completed, InProgress und Error|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|

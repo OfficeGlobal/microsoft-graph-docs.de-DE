@@ -1,12 +1,13 @@
 ---
 title: Get multiValueLegacyExtendedProperty
 description: Erweitern Sie ".
-ms.openlocfilehash: c56afa8492954bcb68c5f36df00abdfce51cc2b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c1d95e319637df17f04e706055245d5e19762a87
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019521"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866325"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>Get multiValueLegacyExtendedProperty
 
@@ -21,7 +22,7 @@ Die folgenden Benutzerressourcen werden unterstützt:
 - [contactFolder](../resources/contactfolder.md) 
 - [Ereignis](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [Nachricht](../resources/message.md) 
+- [message](../resources/message.md) 
 
 Darüber hinaus werden die folgenden Gruppenressourcen unterstützt:
 
@@ -44,7 +45,7 @@ Je nach der Ressource kommen die erweiterte Eigenschaft aus und geben Sie die Be
 | [event](../resources/event.md)-Ressourcen für Gruppen | Group.Read.All | Nicht unterstützt | Nicht unterstützt |
 | [post](../resources/post.md)-Ressourcen für Gruppen | Group.Read.All | Nicht unterstützt | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
-| [Nachricht](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
  
 ## <a name="http-request"></a>HTTP-Anforderung
 

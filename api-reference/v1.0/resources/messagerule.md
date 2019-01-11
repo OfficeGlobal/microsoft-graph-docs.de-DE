@@ -2,12 +2,13 @@
 title: messageRule-Ressourcentyp
 description: Eine Regel, die auf Nachrichten im Posteingang eines Benutzers angewendet wird.
 author: angelgolfer-ms
-ms.openlocfilehash: 1a8e0bb0c8540848c9a57bd59b7536688afd6926
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9336f2e35d6c68d86c3e92b5f94c024eff1e49a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347327"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862125"
 ---
 # <a name="messagerule-resource-type"></a>messageRule-Ressourcentyp
 

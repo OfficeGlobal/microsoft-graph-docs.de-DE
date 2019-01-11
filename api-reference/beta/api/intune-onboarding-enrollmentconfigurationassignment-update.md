@@ -2,12 +2,13 @@
 title: enrollmentConfigurationAssignment aktualisieren
 description: Aktualisieren der Eigenschaften eines enrollmentConfigurationAssignment-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 4da6f09574f1f8e9c3812f3cf2540790ae73ca8c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8f4aba8c5e1cd6a392661e84d60cf11496ec39f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362293"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868103"
 ---
 # <a name="update-enrollmentconfigurationassignment"></a>enrollmentConfigurationAssignment aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) an.
@@ -47,7 +48,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Noch nicht dokumentiert.|
+|id|Zeichenfolge|Noch nicht dokumentiert.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Noch nicht dokumentiert.|
 
 

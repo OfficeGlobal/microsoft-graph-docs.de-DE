@@ -2,12 +2,13 @@
 title: Aktion „commit“
 description: Diese Aktion führt einen Commit für eine Datei einer App aus.
 author: tfitzmac
-ms.openlocfilehash: c3993104334284c789db51c4306d562a4b89eacd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 396c308a906698eb79657db95f2a3d32f7686a56
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310703"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864561"
 ---
 # <a name="commit-action"></a>Aktion „commit“
 
@@ -37,8 +38,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.

@@ -2,12 +2,13 @@
 title: ManagedDeviceMobileAppConfigurationDeviceStatus löschen
 description: Löscht eine ManagedDeviceMobileAppConfigurationDeviceStatus.
 author: tfitzmac
-ms.openlocfilehash: 72b23666d80c77ae85a8dbdb39e16508323d6b9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9053b3f86b8809f4920b7d10c157e40fe58ba4f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319523"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867319"
 ---
 # <a name="delete-manageddevicemobileappconfigurationdevicestatus"></a>ManagedDeviceMobileAppConfigurationDeviceStatus löschen
 
@@ -33,10 +34,10 @@ DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfi
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

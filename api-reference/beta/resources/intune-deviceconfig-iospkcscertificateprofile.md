@@ -2,12 +2,13 @@
 title: Ressourcentyp iosPkcsCertificateProfile
 description: iOS PKCS Zertifikatsprofil.
 author: tfitzmac
-ms.openlocfilehash: c2ccef7f519b7302c93e04480f0310da432b36c4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c5398e0bacc082da4f47d5ff265902cd83c5a8e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328147"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865814"
 ---
 # <a name="iospkcscertificateprofile-resource-type"></a>Ressourcentyp iosPkcsCertificateProfile
 
@@ -25,29 +26,29 @@ Erbt vom [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertifi
 |[Liste iosPkcsCertificateProfiles](../api/intune-deviceconfig-iospkcscertificateprofile-list.md)|[IosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md) -Auflistung|Listeneigenschaften und Beziehungen der [IosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md) -Objekte.|
 |[Abrufen von iosPkcsCertificateProfile](../api/intune-deviceconfig-iospkcscertificateprofile-get.md)|[iosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md)|Lesen Sie Eigenschaften und Beziehungen des [IosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md) -Objekts.|
 |[Erstellen von iosPkcsCertificateProfile](../api/intune-deviceconfig-iospkcscertificateprofile-create.md)|[iosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md)|Erstellen eines neuen [IosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md) -Objekts.|
-|[IosPkcsCertificateProfile löschen](../api/intune-deviceconfig-iospkcscertificateprofile-delete.md)|Keines|Löscht eine [IosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md).|
+|[IosPkcsCertificateProfile löschen](../api/intune-deviceconfig-iospkcscertificateprofile-delete.md)|Keine|Löscht eine [IosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md).|
 |[IosPkcsCertificateProfile aktualisieren](../api/intune-deviceconfig-iospkcscertificateprofile-update.md)|[iosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md)|Aktualisieren Sie die Eigenschaften eines [IosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolesch|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolescher Wert|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |renewalThresholdPercentage|Int32|Zertifikat Erneuerung Schwellenwertprozentsatz. Gültige Werte 1 bis 99 Inherited aus [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)|
 |subjectNameFormat|[appleSubjectNameFormat](../resources/intune-deviceconfig-applesubjectnameformat.md)|Format des Antragstellernamen Zertifikat. Geerbt von [IosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md). Mögliche Werte sind: `commonName`, `commonNameAsEmail`, `custom`, `commonNameIncludingEmail`, `commonNameAsIMEI` und `commonNameAsSerialNumber`.|
 |subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Alternativer Antragstellername Zertifikattyp. Geerbt von [IosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md). Mögliche Werte sind: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute` und `domainNameService`.|
 |certificateValidityPeriodValue|Int32|Wert für die Gültigkeitsdauer des Zertifikats. Geerbt von [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Skalierung für die Gültigkeitsdauer des Zertifikats. Geerbt von [IosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md). Mögliche Werte sind: `days`, `months` und `years`.|
-|certificationAuthority|String|PKCS Zertifizierungsstelle.|
-|certificationAuthorityName|String|Name der Zertifizierungsstelle PKCS.|
-|certificateTemplateName|String|Name der PKCS Zertifikatsvorlage.|
-|subjectAlternativeNameFormatString|String|Benutzerdefinierte Zeichenfolge, die die AAD-Attribut definiert.|
+|certificationAuthority|Zeichenfolge|PKCS Zertifizierungsstelle.|
+|certificationAuthorityName|Zeichenfolge|Name der Zertifizierungsstelle PKCS.|
+|certificateTemplateName|Zeichenfolge|Name der PKCS Zertifikatsvorlage.|
+|subjectAlternativeNameFormatString|Zeichenfolge|Benutzerdefinierte Zeichenfolge, die die AAD-Attribut definiert.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

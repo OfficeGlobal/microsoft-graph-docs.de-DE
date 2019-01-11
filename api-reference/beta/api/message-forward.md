@@ -1,12 +1,13 @@
 ---
 title: 'message: forward'
 description: 'Weiterleiten einer Nachricht, einen Kommentar hinzufügen oder Ändern von aktualisierbaren Eigenschaften  '
-ms.openlocfilehash: 3edb96a90c99f1bc9eb2d8499e9cda83774a7ab3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b601ea1152e9f5b0c5796779967393b956fd2da0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065750"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864680"
 ---
 # <a name="message-forward"></a>message: forward
 
@@ -50,9 +51,9 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|comment|String|Ein Kommentar, der eingefügt werden kann. Kann eine leere Zeichenfolge sein.|
+|comment|Zeichenfolge|Ein Kommentar, der eingefügt werden kann. Kann eine leere Zeichenfolge sein.|
 |toRecipients|[recipient](../resources/recipient.md)-Sammlung|Die Liste der Empfänger.|
-|message|[Nachricht](../resources/message.md)|Alle schreibbaren Eigenschaften, die in der Antwortnachricht aktualisiert.|
+|message|[message](../resources/message.md)|Alle schreibbaren Eigenschaften, die in der Antwortnachricht aktualisiert.|
 
 ## <a name="response"></a>Antwort
 

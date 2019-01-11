@@ -1,12 +1,13 @@
 ---
 title: Warnung aktualisieren
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: 9f8040220c64310a04293d43c0c31704c3f49261
-ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
+localization_priority: Normal
+ms.openlocfilehash: efb9911eaeb9d980084c26ef329c7c837c9d04f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27066226"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815078"
 ---
 # <a name="update-alert"></a>Warnung aktualisieren
 
@@ -46,7 +47,7 @@ Geben Sie im Textkörper Anforderung eine JSON-Darstellung der Werte für die en
 
 | Eigenschaft   | Typ |Beschreibung|
 |:---------------|:--------|:----------|
-|assignedTo|String|Name des der Analyst die Benachrichtigung wird für die Ursachenanalyse, Untersuchung oder Remediation zugewiesen.|
+|assignedTo|Zeichenfolge|Name des der Analyst die Benachrichtigung wird für die Ursachenanalyse, Untersuchung oder Remediation zugewiesen.|
 |closedDateTime|DateTimeOffset|Zeitpunkt, an dem die Benachrichtigung geschlossen wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
 |comments|Collection von Objekten des Typs „String“|Analystenkommentare auf die Benachrichtigung (für Kunden alert Management).|
 |Feedback|AlertFeedback-Enumeration|Analyst Feedback auf die Benachrichtigung. Mögliche Werte: sind `unknown`, `truePositive`, `falsePositive` und `benignPositive`.|

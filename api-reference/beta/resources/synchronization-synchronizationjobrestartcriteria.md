@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp synchronizationJobRestartCriteria
 description: 'Definiert den Bereich, der die [SynchronizationJob: Neustart](../api/synchronization_synchronizationjob_restart.md) Aktion.'
-ms.openlocfilehash: edf5cf258750df72dda2c9754d3543e07fc32e39
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e26bae2e418da22a2b56e3acb973e4111066df23
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058549"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867879"
 ---
 # <a name="synchronizationjobrestartcriteria-resource-type"></a>Ressourcentyp synchronizationJobRestartCriteria
 
@@ -17,7 +18,7 @@ Definiert den Bereich, der die [SynchronizationJob: Neustart](../api/synchroniza
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|resetScope|String| Durch Trennzeichen getrennte Kombination der folgenden Werte: `Full`, `QuarantineState`, `Watermark`, `Escrows`, `ConnectorDataStore`. Verwendung `Full` Wenn Sie alle Optionen möchten.|
+|resetScope|Zeichenfolge| Durch Trennzeichen getrennte Kombination der folgenden Werte: `Full`, `QuarantineState`, `Watermark`, `Escrows`, `ConnectorDataStore`. Verwendung `Full` Wenn Sie alle Optionen möchten.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

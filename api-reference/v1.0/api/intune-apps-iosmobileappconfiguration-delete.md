@@ -2,12 +2,13 @@
 title: iosMobileAppConfiguration löschen
 description: Löscht eine iosMobileAppConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 32d0ca60e4ff226b333b8b60c5510dfe0a7a2b23
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 68adc2e68c396d7a09f273717934e67676c6a742
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339263"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865164"
 ---
 # <a name="delete-iosmobileappconfiguration"></a>iosMobileAppConfiguration löschen
 
@@ -33,10 +34,10 @@ DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfi
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: Auflisten von „mobileAppContentFile“
 description: Diese Methode listet die Eigenschaften von Objekten des Typs mobileAppContentFile auf.
 author: tfitzmac
-ms.openlocfilehash: bfbb4fd6371808dd3245dcc9132553057889c2d7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e4107a0f2f9fc90724df6b2871cbc9b45ec4812e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330128"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867508"
 ---
 # <a name="list-mobileappcontentfiles"></a>Auflisten von „mobileAppContentFile“
 
@@ -35,8 +36,8 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCont
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

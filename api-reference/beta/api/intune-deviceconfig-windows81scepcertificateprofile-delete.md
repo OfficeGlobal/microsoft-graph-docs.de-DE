@@ -2,12 +2,13 @@
 title: Windows81SCEPCertificateProfile löschen
 description: Löscht eine windows81SCEPCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: 618367db9f9a152662ac501cec8ff4b72487bb8d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5e07aad92bd0099f2244bfecf65d3e562c351aaa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333054"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864001"
 ---
 # <a name="delete-windows81scepcertificateprofile"></a>Windows81SCEPCertificateProfile löschen
 
@@ -39,8 +40,8 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

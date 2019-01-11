@@ -1,12 +1,13 @@
 ---
 title: Seite erstellen
 description: Mit dieser API können Sie eine neue Ressource des Typs page in dem jeweils angegebenen Abschnitt erstellen.
-ms.openlocfilehash: ec4373af59ef8a324e8da8f685fc2ff01bde4a2f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c4166d86f8547cbd008eab0796876b3639e4bc5c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019348"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867830"
 ---
 # <a name="create-page"></a>Seite erstellen
 

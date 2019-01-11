@@ -1,12 +1,13 @@
 ---
 title: Gruppen auflisten
 description: Dient zum Auflisten aller in einer Organisation verfügbaren Gruppen, einschließlich, aber nicht beschränkt auf Office 365-Gruppen.
-ms.openlocfilehash: 15d39db7c3b5c322b90a7d7bbfc29ac4d2e81794
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 1122685cfbd4f1a1f2ff0ca3367e913c983866a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018167"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867718"
 ---
 # <a name="list-groups"></a>Gruppen auflisten
 Dient zum Auflisten aller in einer Organisation verfügbaren Gruppen, einschließlich, aber nicht beschränkt auf Office 365-Gruppen. Die [Standardeigenschaften](../api/group-get.md#default-properties) jeder einzelnen Gruppe werden zurückgegeben.

@@ -2,12 +2,13 @@
 title: Erstellen von intuneBrandingProfile
 description: Erstellen eines neuen IntuneBrandingProfile-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 4058e30fe858c261a59b105652d198946b630222
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5e8ec4990b333d18dd761772627665c5ecb04179
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314875"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862020"
 ---
 # <a name="create-intunebrandingprofile"></a>Erstellen von intuneBrandingProfile
 
@@ -37,8 +38,8 @@ POST /deviceManagement/intuneBrandingProfiles
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt IntuneBrandingProfile eine JSON-Darstellung.
@@ -50,7 +51,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |id|String|Profil-Taste|
 |Profilname|String|Name des Profils|
 |profileDescription|String|Beschreibung des Profils|
-|isDefaultProfile|Boolesch|Zeigt an, wenn das Profil für standardmäßig verwendet wird.|
+|isDefaultProfile|Boolescher Wert|Zeigt an, wenn das Profil für standardmäßig verwendet wird.|
 |createdDateTime|DateTimeOffset|Wenn die BrandingProfile erstellt wurde.|
 |lastModifiedDateTime|DateTimeOffset|Wann die BrandingProfile zuletzt geändert wurde.|
 |displayName|String|Unternehmensname/Organisationsname, der Endbenutzern angezeigt wird|

@@ -2,12 +2,13 @@
 title: Benutzer aktualisieren
 description: Mit dieser API können Sie die Eigenschaften eines Benutzerobjekts aktualisieren.
 author: tfitzmac
-ms.openlocfilehash: c4fb2bde10d913b6bd9c30a34b6e1b9e8169a9e6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f52e49c86e0e333fbf4f8c52b71c2850c73bc533
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317388"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861943"
 ---
 # <a name="update-user"></a>Benutzer aktualisieren
 
@@ -45,8 +46,8 @@ PATCH /users/{usersId}
 
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -56,7 +57,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner des Benutzers|
+|id|Zeichenfolge|Eindeutiger Bezeichner des Benutzers|
 |**Onboarding**|
 |deviceEnrollmentLimit|Int32|Der Grenzwert für die maximale Anzahl von Geräten, die der Benutzer registrieren kann. Zulässige Werte sind 5 oder 1000.|
 

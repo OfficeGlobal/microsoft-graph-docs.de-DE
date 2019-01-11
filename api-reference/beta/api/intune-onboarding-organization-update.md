@@ -2,12 +2,13 @@
 title: Organisation aktualisieren
 description: Aktualisieren der Eigenschaften eines organization-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 5037fa0fb14ec327fd24dc3fa12575037487468d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 67ce9fd0181c3f60f3615a29313e2da642e697ab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313132"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862146"
 ---
 # <a name="update-organization"></a>Organisation aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /organization/{organizationId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [organization](../resources/intune-onboarding-organization.md)-Objekts an.

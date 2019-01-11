@@ -2,12 +2,13 @@
 title: Erstellen von roleScopeTag
 description: Erstellen eines neuen RoleScopeTag-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 2aaede673afa4346a1defbc9449a4e08d9d1c614
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 205269e93ba0f24afc37ef64d4c2ed0da1036ca1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315148"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827440"
 ---
 # <a name="create-rolescopetag"></a>Erstellen von roleScopeTag
 
@@ -38,8 +39,8 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt RoleScopeTag eine JSON-Darstellung.
@@ -48,9 +49,9 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert.|
-|displayName|String|Das Display oder den Anzeigenamen des Tags Bereich Rolle.|
-|description|String|Beschreibung des Tags Bereich Rolle.|
+|id|Zeichenfolge|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert.|
+|displayName|Zeichenfolge|Das Display oder den Anzeigenamen des Tags Bereich Rolle.|
+|description|Zeichenfolge|Beschreibung des Tags Bereich Rolle.|
 
 
 
