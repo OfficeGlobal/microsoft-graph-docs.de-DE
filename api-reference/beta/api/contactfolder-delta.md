@@ -1,12 +1,13 @@
 ---
 title: 'contactFolder: delta'
 description: Dient zum Abrufen eines Satzes von Kontaktordnern, die dem Postfach des Benutzers hinzugefügt bzw. daraus gelöscht oder entfernt wurden.
-ms.openlocfilehash: 3ba1d09fb280389f3b6dd1ea3af4aa8601d4ca37
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 671ce371a65757f6f2561644c19164d523dfcc31
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060990"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809310"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 

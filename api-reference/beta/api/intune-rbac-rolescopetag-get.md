@@ -2,12 +2,13 @@
 title: Abrufen von roleScopeTag
 description: Lesen Sie Eigenschaften und Beziehungen des RoleScopeTag-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 788cfcce79bd451822c1c6a4c85d156a2cae9f1f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9cbffe3199dd9d694e0f3174e2d27131f28d802e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321049"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822435"
 ---
 # <a name="get-rolescopetag"></a>Abrufen von roleScopeTag
 
@@ -40,8 +41,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: Ressourcentyp windowsManagementApp
 description: Windows Management-app-Entität.
 author: tfitzmac
-ms.openlocfilehash: 641538644dc313234e27b0f518a26d8a38c612b7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 47262f93e619690352cac9ae3f9a500d0dc77c20
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346424"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833410"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>Ressourcentyp windowsManagementApp
 
@@ -25,8 +26,8 @@ Windows Management-app-Entität.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für die Windows Management-app|
-|availableVersion|String|Windows Management app verfügbare Version.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für die Windows Management-app|
+|availableVersion|Zeichenfolge|Windows Management app verfügbare Version.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

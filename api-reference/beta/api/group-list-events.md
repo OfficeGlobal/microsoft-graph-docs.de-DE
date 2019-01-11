@@ -2,12 +2,13 @@
 title: Ereignisse auflisten
 description: Dient zum Abrufen einer Liste von Ereignisobjekten.
 author: dkershaw10
-ms.openlocfilehash: fdb996f9be5193c5f18e6adb7de0b16938221e58
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 32051d6192d9de8e692c063011933a951d4fe4bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355545"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809303"
 ---
 # <a name="list-events"></a>Ereignisse auflisten
 
@@ -37,7 +38,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters)
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung |
 |:---------------|:--------|:--------|
-| Autorisierung  | string | Bearer {token}. Erforderlich.  |
+| Authorization  | string | Bearer {token}. Erforderlich.  |
 | Prefer: outlook.timezone  | string | Verwenden Sie dies, um die Zeitzone für die Anfangs- und Endzeiten in der Antwort anzugeben. Wenn nicht angegeben, werden diese Zeitwerte in UTC zurückgegeben. Optional. |
 | Besser: outlook.body-content-type | string | Das Format, in der die **body**-Eigenschaft zurückgegeben werden soll. Werte können „Text“ oder „html“ sein. Als Bestätigung wird eine `Preference-Applied`-Kopfzeile zurückgegeben, wenn diese `Prefer`-Kopfzeile angegeben ist. Wenn die Kopfzeile nicht angegeben ist, wird die **body**-Eigenschaft im HTML-Format zurückgegeben. Optional. |
 

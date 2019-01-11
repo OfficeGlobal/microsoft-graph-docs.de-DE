@@ -2,12 +2,13 @@
 title: localizedNotificationMessage-Ressourcentyp
 description: Der Textinhalt einer Benachrichtigungsvorlage für das angegebene Gebietsschema.
 author: tfitzmac
-ms.openlocfilehash: e04d1d6d98cbbdbbb2b28250305e3b42a20af688
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53a33c5d83821ff5131b601bd5687e7d98634c00
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327090"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825788"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>localizedNotificationMessage-Ressourcentyp
 
@@ -28,11 +29,11 @@ Der Textinhalt einer Benachrichtigungsvorlage für das angegebene Gebietsschema.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
-|Gebietsschema|String|Das Gebietsschema für das diese Nachricht bestimmt ist.|
-|Betreff|String|Die Vorlage für den Betreff der Nachricht.|
-|messageTemplate|String|Die Vorlage für den Inhalt der Nachricht.|
+|Gebietsschema|Zeichenfolge|Das Gebietsschema für das diese Nachricht bestimmt ist.|
+|Betreff|Zeichenfolge|Die Vorlage für den Betreff der Nachricht.|
+|messageTemplate|Zeichenfolge|Die Vorlage für den Inhalt der Nachricht.|
 |isDefault|Boolescher Wert|Die Kennzeichnung gibt an, ob dies das Standard-Gebietsschema für die Fallbacksprache ist. Dieser Kennzeichnung kann nur festgelegt werden. Um die Festlegung aufzuheben, setzen Sie diese Eigenschaft bei einer anderen lokalisierten Benachrichtigung auf „true“.|
 
 ## <a name="relationships"></a>Beziehungen

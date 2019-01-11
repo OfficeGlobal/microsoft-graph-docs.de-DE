@@ -2,12 +2,13 @@
 title: roleDefinition abrufen
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs roleDefinition.
 author: tfitzmac
-ms.openlocfilehash: 60d7ea55079969bc07f17af305cc38a2f4711777
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4a29afcb3575f52682f3c94c1cf948e0f5cbf8b1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337835"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822470"
 ---
 # <a name="get-roledefinition"></a>roleDefinition abrufen
 
@@ -40,8 +41,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

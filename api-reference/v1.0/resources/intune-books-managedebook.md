@@ -2,12 +2,13 @@
 title: managedEBook-Ressourcentyp
 description: Eine abstrakte Klasse, die die grundlegenden Eigenschaften des verwalteten eBooks enthält
 author: tfitzmac
-ms.openlocfilehash: 584464b95eaa242ddae6653af65f16d9d2eeab3b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 61a4098850f9b3b4a6b82f2fcee5d1ce89b0696d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336764"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830254"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook-Ressourcentyp
 
@@ -24,16 +25,16 @@ Eine abstrakte Klasse, die die grundlegenden Eigenschaften des verwalteten eBook
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|displayName|String|Name des E-Books|
-|description|String|Beschreibung|
-|publisher|String|Herausgeber|
+|id|Zeichenfolge|Schlüssel der Entität|
+|displayName|Zeichenfolge|Name des E-Books|
+|description|Zeichenfolge|Beschreibung|
+|publisher|Zeichenfolge|Herausgeber|
 |publishedDateTime|DateTimeOffset|Datum und Uhrzeit der Veröffentlichung des E-Books.|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Umschlagbild des Buchs|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der E-Book-Datei.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des E-Books.|
-|informationUrl|String|URL zur Seite mit weiteren Informationen.|
-|privacyInformationUrl|String|URL zur Datenschutzerklärung|
+|informationUrl|Zeichenfolge|URL zur Seite mit weiteren Informationen.|
+|privacyInformationUrl|Zeichenfolge|URL zur Datenschutzerklärung|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

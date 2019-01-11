@@ -2,12 +2,13 @@
 title: ManagedDeviceEnrollmentFailureDetails-Funktion
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: f9dc6f0a1a0a211de1cbfb1443dc4393796bd2d4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6902a10d7558426d1547bfb590922c225414ad54
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337583"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827335"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>ManagedDeviceEnrollmentFailureDetails-Funktion
 
@@ -38,16 +39,16 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion verwendet werden können.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|Filter|String|Noch nicht dokumentiert|
-|skipToken|String|Noch nicht dokumentiert|
+|Filter|Zeichenfolge|Noch nicht dokumentiert|
+|skipToken|Zeichenfolge|Noch nicht dokumentiert|
 |skip|Int32|Noch nicht dokumentiert|
 |Nach oben|Int32|Noch nicht dokumentiert|
 

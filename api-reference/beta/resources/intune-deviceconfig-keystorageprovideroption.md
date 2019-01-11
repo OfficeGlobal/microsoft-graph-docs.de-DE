@@ -2,12 +2,13 @@
 title: KeyStorageProviderOption Enum-Typ
 description: Importoptionen für wichtige Speicher-Anbieter (KSP).
 author: tfitzmac
-ms.openlocfilehash: 7923dd5c4b8a09d834d29b65928430828f3dafac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4609092c3022b62331bbb6226a5b91e4b287ff79
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342217"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826467"
 ---
 # <a name="keystorageprovideroption-enum-type"></a>KeyStorageProviderOption Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27342217"
 
 Importoptionen für wichtige Speicher-Anbieter (KSP).
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |useTpmKspOtherwiseUseSoftwareKsp|0|Importieren Sie um Modul TPM (Trusted Platform) KSP, falls vorhanden, andernfalls in Software KSP importieren.|
 |useTpmKspOtherwiseFail|1|Import auf Modul TPM (Trusted Platform) KSP, falls vorhanden, andernfalls ein Fehler auftritt.|

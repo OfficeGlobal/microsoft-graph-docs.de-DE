@@ -2,12 +2,13 @@
 title: Abrufen von „deviceManagementExchangeConnector“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs deviceManagementExchangeConnector.
 author: tfitzmac
-ms.openlocfilehash: 98507354a3f0501d22d24e28177c9769f744153b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ea85262c7f32deec653c9118cc2986c9f5ca024b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351828"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832599"
 ---
 # <a name="get-devicemanagementexchangeconnector"></a>Abrufen von „deviceManagementExchangeConnector“
 
@@ -39,8 +40,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: subscribedSkus auflisten
 description: Mit dieser API können Sie eine Liste aller kommerziellen Abonnements abrufen, die eine Organisation erworben hat.
-ms.openlocfilehash: c20e72344c56765dd24c89d6d6c1d0aa24244f2e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6439fde92c4f8f520d172969fd1c7b2fa2c09282
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061670"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830185"
 ---
 # <a name="list-subscribedskus"></a>subscribedSkus auflisten
 

@@ -1,12 +1,13 @@
 ---
 title: telecomExpenseManagementPartner-Ressourcentyp
 description: TelecomExpenseManagementPartner-Ressourcen stellen die Metadaten und den Status eines bestimmten TEM-Diensts dar. Nach dem Ihre Organisation das Onboarding mit einem Partner abgeschlossen hat, kann für diesen das Ein-/Ausschalten der TEM-Funktionalität aktiviert oder deaktiviert werden.
-ms.openlocfilehash: 1418f40b5de113e3d46a20e6bf2bb190709def89
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5fdc80b67c92fb7e47a38fd57d3a52db3459763a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063858"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825298"
 ---
 # <a name="telecomexpensemanagementpartner-resource-type"></a>telecomExpenseManagementPartner-Ressourcentyp
 
@@ -28,7 +29,7 @@ TelecomExpenseManagementPartner-Ressourcen stellen die Metadaten und den Status 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|Eindeutiger Bezeichner des TEM-Partners|
-|displayName|String|Anzeigename des TEM-Partners|
+|displayName|Zeichenfolge|Anzeigename des TEM-Partners|
 |url|String|Die URL für die Verwaltungssteuerung des TEM-Partners, mit der ein Administrator den TEM-Dienst konfigurieren kann.|
 |appAuthorized|Boolescher Wert|Gibt an, ob die AAD-App des Partners für den Zugriff auf Intune autorisiert wurde.|
 |enabled|Boolescher Wert|Gibt an, ob die Intune-Verbindung mit dem TEM-Dienst derzeit aktiviert oder deaktiviert ist.|

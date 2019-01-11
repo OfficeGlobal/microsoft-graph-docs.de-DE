@@ -2,12 +2,13 @@
 title: ManagedDeviceRemoteAction Enum-Typ
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 1a9db8f1c4f826d3645caf05c8ca42214930dd52
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fc75efe53e561f90669c0619078c1b218531a6be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330499"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827377"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>ManagedDeviceRemoteAction Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27330499"
 
 Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |Zurückziehen|0|Noch nicht dokumentiert|
 |Löschen|1|Noch nicht dokumentiert|

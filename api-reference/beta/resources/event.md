@@ -2,12 +2,13 @@
 title: Ressourcentyp „event“
 description: Ein Ereignis in einem Kalender
 author: angelgolfer-ms
-ms.openlocfilehash: e60b070ab6b02ca0373d4aebcef4202f42a4f1a5
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: b1986a6d463e1750fea05144e5a8520c62e5a94a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748486"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826761"
 ---
 # <a name="event-resource-type"></a>Ressourcentyp „event“
 
@@ -97,7 +98,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |body|[ItemBody](itembody.md)|Der Text der Nachricht, die dem Ereignis zugeordnet ist. Er kann im HTML- oder Textformat vorliegen.|
 |bodyPreview|String|Die Vorschau der Nachricht, die dem Ereignis zugeordnet ist. Liegt im Textformat vor.|
 |categories|String collection|Die Kategorien, die dem Ereignis zugeordnet sind Jeder Kategorie entspricht die **DisplayName** -Eigenschaft des ein [OutlookCategory](outlookcategory.md) für den Benutzer definiert.|
-|changeKey|String|Gibt die Version des Ereignisobjekts an. Jedes Mal, wenn das Ereignis geändert wird, wird auch die Eigenschaft „changeKey“ geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
+|changeKey|Zeichenfolge|Gibt die Version des Ereignisobjekts an. Jedes Mal, wenn das Ereignis geändert wird, wird auch die Eigenschaft „changeKey“ geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
 |createdDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|Datum und Uhrzeit für das Ende des Ereignisses.|
 |hasAttachments|Boolean|„true“, wenn das Ereignis Anlagen hat|
@@ -123,7 +124,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |seriesMasterId|String|Die ID für die Datenreihe master Terminserie, wenn dieses Ereignis Teil einer Serie ist.|
 |showAs|Zeichenfolge|Der anzuzeigende Status. Mögliche Werte sind: `free`, `tentative`, `busy`, `oof`, `workingElsewhere` und `unknown`.|
 |start|[DateTimeTimeZone](datetimetimezone.md)|Die Startzeit des Ereignisses.|
-|Betreff|String|Der Text der Betreffzeile des Ereignisses|
+|Betreff|Zeichenfolge|Der Text der Betreffzeile des Ereignisses|
 |type|Zeichenfolge|Der Ereignistyp. Mögliche Werte: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Schreibgeschützt.|
 |UID|String|Ein eindeutiger Bezeichner, der für alle Instanzen eines Ereignisses in unterschiedlichen Kalendern verwendet wird **Hinweis:** Eigenschaft dient den gleichen Zweck wie die `iCalUid` -Eigenschaft für das [Ereignis Ressource](/graph/api/resources/event?view=graph-rest-1.0) für den Endpunkt v1. 0, aber nicht unbedingt den gleichen Wert aufweisen.|
 |webLink|String|Die URL zum Öffnen des Ereignisses in Outlook Web App:<br/><br/>Das Ereignis wird im Browser geöffnet, wenn Sie über Outlook Web App bei Ihrem Postfach angemeldet sind. Sie werden aufgefordert, sich anzumelden, wenn Sie noch nicht beim Browser angemeldet sind.<br/><br/>Auf diese URL kann von einem iFrame aus zugegriffen werden.|

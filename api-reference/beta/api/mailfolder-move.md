@@ -2,12 +2,13 @@
 title: 'mailFolder: move'
 description: Mit dieser API können Sie ein Objekt des Typs „mailfolder“ samt seinen Inhalten in ein anderes Objekt des Typs „mailfolder“ verschieben.
 author: angelgolfer-ms
-ms.openlocfilehash: 50c982a9c2277530c884ee2807543f858fd3b696
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8d96e01c54c91b3de38b0594c29e38ccf8691603
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348755"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831115"
 ---
 # <a name="mailfolder-move"></a>mailFolder: move
 
@@ -38,7 +39,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 
 | Header | Wert |
 |:-------|:------|
-| Autorisierung | `Bearer {token}`. Erforderlich. |
+| Authorization | `Bearer {token}`. Erforderlich. |
 | Content-Type | `application/json`. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -47,7 +48,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter | Typ | Beschreibung |
 |:----------|:-----|:------------|
-|destinationId|String|Die Ordner-ID oder den Ordnernamen einer bekannten. Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).|
+|destinationId|Zeichenfolge|Die Ordner-ID oder den Ordnernamen einer bekannten. Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).|
 
 ## <a name="response"></a>Antwort
 

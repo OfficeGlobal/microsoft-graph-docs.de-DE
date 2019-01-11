@@ -2,12 +2,13 @@
 title: 'groupLifecyclePolicy: removeGroup'
 description: Entfernt eine Gruppe aus einer Lebenszyklusrichtlinie.
 author: dkershaw10
-ms.openlocfilehash: a22dae0a8065653972667c7de410330d6c91a454
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6b17403babef2295ce8d9c8d18b21e16c63889e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321728"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805537"
 ---
 # <a name="grouplifecyclepolicy-removegroup"></a>groupLifecyclePolicy: removeGroup
 

@@ -2,12 +2,13 @@
 title: iosVppEBook löschen
 description: Löscht Objekte des Typs iosVppEBook.
 author: tfitzmac
-ms.openlocfilehash: 33fd091df734ae6c6d176a4df8413efba859e795
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3e7f03469a11da9253901c7283118068e14c4acb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311354"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817024"
 ---
 # <a name="delete-iosvppebook"></a>iosVppEBook löschen
 
@@ -35,8 +36,8 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

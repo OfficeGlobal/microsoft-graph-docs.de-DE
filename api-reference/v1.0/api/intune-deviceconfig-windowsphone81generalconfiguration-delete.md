@@ -2,12 +2,13 @@
 title: windowsPhone81GeneralConfiguration löschen
 description: Löscht ein windowsPhone81GeneralConfiguration-Objekt.
 author: tfitzmac
-ms.openlocfilehash: 36453afe9963f92627c6c115492f520ea23e9ec9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2aa4f2f7586099d2c37bd3a3e43cfda25a89d071
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362538"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826208"
 ---
 # <a name="delete-windowsphone81generalconfiguration"></a>windowsPhone81GeneralConfiguration löschen
 
@@ -35,8 +36,8 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

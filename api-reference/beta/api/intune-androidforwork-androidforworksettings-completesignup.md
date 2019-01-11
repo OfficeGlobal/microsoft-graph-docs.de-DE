@@ -2,12 +2,13 @@
 title: Aktion „completeSignup“
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 8a5d0635f575e6ab7b577b4cd0d20fd441cc5e4a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b2467bb2cbc07cc8f0c2344333ec42f3f7660b7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350302"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824255"
 ---
 # <a name="completesignup-action"></a>Aktion „completeSignup“
 
@@ -35,10 +36,10 @@ POST /deviceManagement/androidForWorkSettings/completeSignup
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.

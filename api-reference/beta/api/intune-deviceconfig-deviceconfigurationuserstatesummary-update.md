@@ -2,12 +2,13 @@
 title: DeviceConfigurationUserStateSummary aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines DeviceConfigurationUserStateSummary-Objekts.
 author: tfitzmac
-ms.openlocfilehash: a11c4447fee84116b68416ba78f610e8067a6104
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 36d9065e906a7a4da9f61b30cc4588e494389401
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301568"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812754"
 ---
 # <a name="update-deviceconfigurationuserstatesummary"></a>DeviceConfigurationUserStateSummary aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceManagement/deviceConfigurationUserStateSummaries
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [DeviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) eine JSON-Darstellung.
@@ -47,7 +48,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |unknownUserCount|Int32|Unbekannte Benutzeranzahl|
 |notApplicableUserCount|Int32|Anzahl der Benutzer nicht zutreffend|
 |compliantUserCount|Int32|Kompatible Benutzeranzahl|

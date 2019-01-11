@@ -1,12 +1,13 @@
 ---
 title: responseStatus-Ressourcentyp
 description: Der Antwortstatus einer Besprechungsanfrage.
-ms.openlocfilehash: 95f525bae387520888f006d6496a56dab9148145
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 110b0eb158043b9573deb3e3ced792119bfa91a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016921"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830779"
 ---
 # <a name="responsestatus-resource-type"></a>responseStatus-Ressourcentyp
 

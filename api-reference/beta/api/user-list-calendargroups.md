@@ -1,12 +1,13 @@
 ---
 title: calendarGroups auflisten
 description: Dient zum Abrufen der Kalendergruppen des Benutzers.
-ms.openlocfilehash: 560dd09d42b59e68b6282d7dec4305f7b10ea9f2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 75b3465bb2aac69ee6a8f38678734f6c6dd3473b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066043"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825799"
 ---
 # <a name="list-calendargroups"></a>calendarGroups auflisten
 
@@ -30,7 +31,7 @@ GET /users/{id | userPrincipalName}/calendarGroups
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

@@ -1,12 +1,13 @@
 ---
 title: Liste directorySettingTemplates
 description: Festlegen von Vorlagen Directory stellt einen Satz von Vorlagen für Directory-Einstellungen aus dem, die Verzeichnis Einstellungen erstellt und innerhalb einer mandantenstruktur verwendet werden können.  Dieser Vorgang wird die Liste der verfügbaren DirectorySettingTemplates Objekte abgerufen.
-ms.openlocfilehash: 964e2cfc9e06b6a996f63c92cae830e03c953cd8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 288a914da11c09cd39767a48d527510998c9be1d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062708"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833327"
 ---
 # <a name="list-directorysettingtemplates"></a>Liste directorySettingTemplates
 

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp office365ServicesUserCounts
 description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: 975a70b040ac5886ea36219a5407f580a42aeadc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 18282aaa8dcd176a6eaa3a8176154670bfd6da9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059073"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808015"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>Ressourcentyp office365ServicesUserCounts
 
@@ -27,7 +28,7 @@ ms.locfileid: "27059073"
 | yammerInactive           | Int64  | Die Anzahl der inaktive Benutzer auf Yammer.  |
 | teamsActive              | Int64  | Die Anzahl von aktiven Benutzern auf Teams. Jeder Benutzer, die Nachrichten im Team Kanäle gebucht, gesendete Nachrichten in privaten chatten oder Besprechungen oder Anrufe beteiligt ist einen aktiven Benutzer betrachtet. |
 | teamsInactive            | Int64  | Die Anzahl von aktiven Benutzern auf Teams.     |
-| reportPeriod             | String | Die Anzahl der Tage, die der Bericht wird behandelt.    |
+| reportPeriod             | Zeichenfolge | Die Anzahl der Tage, die der Bericht wird behandelt.    |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

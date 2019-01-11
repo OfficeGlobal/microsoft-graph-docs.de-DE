@@ -2,12 +2,13 @@
 title: roleAssignment-Ressourcentyp
 description: Die Rollenzuweisungsressource. Rollenzuweisungen verknüpfen eine Rollendefinition mit Membern und Bereichen. Es kann eine oder mehrere Rollenzuweisungen pro Rolle geben. Dies gilt für benutzerdefinierte und integrierte Rollen.
 author: tfitzmac
-ms.openlocfilehash: 5c4b09151a7957f52dbaa525f696b89479a898ef
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7cb3b07abc47224b2f96a35f4099d3a691b6c901
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302100"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825494"
 ---
 # <a name="roleassignment-resource-type"></a>roleAssignment-Ressourcentyp
 
@@ -28,7 +29,7 @@ Die Rollenzuweisungsressource. Rollenzuweisungen verknüpfen eine Rollendefiniti
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert.|
+|id|Zeichenfolge|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert.|
 |displayName|String|Der Anzeigename der Rollenzuweisung.|
 |description|String|Beschreibung der Rollenzuweisung.|
 |scopeMembers|String collection|Liste der IDs der Rollenbereichsmitglieder-Sicherheitsgruppen.  Dies sind IDs aus Azure Active Directory.|

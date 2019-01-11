@@ -2,12 +2,13 @@
 title: 'Rufen Sie: SubscribeToTone'
 description: Abonnieren Sie DTMF (Dual-Tone Multi-Frequency Signaldaten). Dadurch können Sie benachrichtigt werden, wenn der Benutzer auf einem Telefon mit 'Tonwahl' drückt.
 author: VinodRavichandran
-ms.openlocfilehash: 82f7632736dc187fae1313224a6cb6f4807e0dd1
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 226edd59e7d826dd7304ae45ec58c360e8ef3191
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380436"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833432"
 ---
 # <a name="call-subscribetotone"></a>Rufen Sie: SubscribeToTone
 
@@ -22,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | :-------------- | :------------------------------------------ |
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt        |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt        |
-| Application     | Calls.AccessMedia.All                       |
+| Anwendung     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

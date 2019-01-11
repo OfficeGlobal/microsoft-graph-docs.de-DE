@@ -2,12 +2,13 @@
 title: Funktion „getManagedAppPolicies“
 description: Diese Funktion ruft die App-Einschränkungen für einen bestimmten Benutzer ab.
 author: tfitzmac
-ms.openlocfilehash: 3b06ca0e3aca10fb88c1cdc4bb42199b41719870
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3ab17c5e0101eb9842e55b5c7442cc51786cf7a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323569"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828819"
 ---
 # <a name="getmanagedapppolicies-function"></a>Funktion „getManagedAppPolicies“
 
@@ -36,8 +37,8 @@ GET /users/{usersId}/getManagedAppPolicies
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

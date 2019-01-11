@@ -2,12 +2,13 @@
 title: deviceConfigurationDeviceOverview abrufen
 description: Lesen von Eigenschaften und Beziehungen des deviceConfigurationDeviceOverview-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 2087a92100e69992b3028b7ede45e1c5a64cef82
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 33a27f8c135649c547efc48349bdd70b626df1c3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312607"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827482"
 ---
 # <a name="get-deviceconfigurationdeviceoverview"></a>deviceConfigurationDeviceOverview abrufen
 
@@ -47,8 +48,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: Abrufen von managedDeviceCertificateState
 description: Lesen Sie Eigenschaften und Beziehungen des ManagedDeviceCertificateState-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 54f276e1639dd5514e7a5ee919a4235d344c6dc4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0ae84915623f17d5b79e933028e57459e5e5addf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315911"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822687"
 ---
 # <a name="get-manageddevicecertificatestate"></a>Abrufen von managedDeviceCertificateState
 
@@ -55,8 +56,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: 'SynchronizationSchema: ParseExpression'
 description: '(.. / resources/synchronization_attributemappingsource.md) Objekt. '
-ms.openlocfilehash: d6cc929681458ff00a806150aa8db9daf115548a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dbde03b9ae85377801ad894c8b8ca22c6baebc85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061672"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811025"
 ---
 # <a name="synchronizationschema-parseexpression"></a>SynchronizationSchema: ParseExpression
 
@@ -42,7 +43,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Ausdruck               |String               |Ausdruck zu analysieren.|
+|Ausdruck               |Zeichenfolge               |Ausdruck zu analysieren.|
 |testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Testen Sie Datenobjekt für gegen Ausdruck ausgewertet werden soll. Optional.|
 |targetAttributeDefinition|[Attributdefinition](../resources/synchronization-attributedefinition.md) |Definition des Attributs, das dieser Ausdruck zugeordnet werden. Optional.|
 

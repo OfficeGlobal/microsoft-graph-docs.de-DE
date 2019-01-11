@@ -2,12 +2,13 @@
 title: Ressourcentyp pivotTable
 description: Stellt eine Excel-PivotTable dar.
 author: lumine2008
-ms.openlocfilehash: ac148cf84961aa0b745931351218289c985aceb0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aead84b21117b896f620a0722cf42c2e6c5d1293
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328966"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831542"
 ---
 # <a name="pivottable-resource-type"></a>Ressourcentyp pivotTable
 
@@ -26,8 +27,8 @@ Stellt eine Excel-PivotTable dar.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|String| Die ID der PivotTable.   Schreibgeschützt.|
-|name|String|Der Name der PivotTable.    |
+|id|Zeichenfolge| Die ID der PivotTable.   Schreibgeschützt.|
+|name|Zeichenfolge|Der Name der PivotTable.    |
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|

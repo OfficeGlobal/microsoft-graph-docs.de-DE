@@ -2,12 +2,13 @@
 title: ConfigurationManagerClientState Enum-Typ
 description: Konfigurations-Manager-Clientzustand
 author: tfitzmac
-ms.openlocfilehash: dc67a5fb1c517e65da937996ed65adaa621fa3c5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 36abbe4451a6e053387b27fce3e9a4e25dcc1a95
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354047"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806251"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>ConfigurationManagerClientState Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27354047"
 
 Konfigurations-Manager-Clientzustand
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Konfigurations-Manager-Agent ist älter als 1806 oder nicht installiert oder dieses Gerät mehr als 30 Tage lang nicht in Intune eingecheckt wurde.|
 |installiert|1|Der Konfigurations-Manager-Agent ist installiert, aber möglicherweise nicht angezeigt werden Sie in der Configuration Manager-Konsole noch. Warten Sie einige Stunden für die Aktualisierung.|

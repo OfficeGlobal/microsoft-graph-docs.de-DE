@@ -2,12 +2,13 @@
 title: AndroidForWorkTrustedRootCertificate löschen
 description: Löscht eine AndroidForWorkTrustedRootCertificate.
 author: tfitzmac
-ms.openlocfilehash: 2571e3fd270ef56e8b93ea44efc826cf89a8613f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ab73a40b7e50bde91d352f65fa8295894c9e5927
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318035"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812740"
 ---
 # <a name="delete-androidforworktrustedrootcertificate"></a>AndroidForWorkTrustedRootCertificate löschen
 
@@ -38,8 +39,8 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

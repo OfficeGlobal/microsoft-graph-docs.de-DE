@@ -2,12 +2,13 @@
 title: calendarGroup-Ressourcentyp
 description: Eine Gruppe der Benutzerkalender.
 author: angelgolfer-ms
-ms.openlocfilehash: 5de023a887622ed0dcc759da7ada6b1e4990b6d5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1acc95f95c550c2bd48f8c6d3a117666b666b20f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316905"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818578"
 ---
 # <a name="calendargroup-resource-type"></a>calendarGroup-Ressourcentyp
 
@@ -29,10 +30,10 @@ Eine Gruppe der Benutzerkalender.
 
 | Eigenschaft  | Typ   | Beschreibung                                                                                                                                                                                               |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name      | String | Der Gruppenname.                                                                                                                                                                                           |
-| changeKey | String | Gibt die Version der Kalendergruppe an. Jedes Mal, wenn die Kalendergruppe geändert wird, wird auch ChangeKey geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen. Schreibgeschützt. |
+| name      | Zeichenfolge | Der Gruppenname.                                                                                                                                                                                           |
+| changeKey | Zeichenfolge | Gibt die Version der Kalendergruppe an. Jedes Mal, wenn die Kalendergruppe geändert wird, wird auch ChangeKey geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen. Schreibgeschützt. |
 | classId   | Guid   | Die Klassen-ID. Schreibgeschützt.                                                                                                                                                                          |
-| id        | String | Eindeutiger Bezeichner für die Gruppe. Schreibgeschützt.                                                                                                                                                                 |
+| id        | Zeichenfolge | Eindeutiger Bezeichner für die Gruppe. Schreibgeschützt.                                                                                                                                                                 |
 
 ## <a name="relationships"></a>Beziehungen
 

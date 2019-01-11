@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp conversation
 description: Eine Unterhaltung ist eine Sammlung von Threads, und ein Thread enthält Beiträge zu diesem Thread. Alle Threads und Beiträge in einer Unterhaltung haben denselben Betreff.
-ms.openlocfilehash: 8a4a83fdc109eb047a22afbd3b15ad2d575f0795
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 69ae0a8ca7d5040ae1701a52cec007e3ad55449e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058445"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815001"
 ---
 # <a name="conversation-resource-type"></a>Ressourcentyp conversation
 
@@ -31,10 +32,10 @@ Diese Ressource unterstützt Abonnieren von [Benachrichtigungen ändern](/graph/
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |hasAttachments|Boolean|Gibt an, ob einer der Beiträge innerhalb dieser Unterhaltung über mindestens eine Anlage verfügt.|
-|id|String|Die eindeutigen Bezeichner der Unterhaltungen. Schreibgeschützt.|
+|id|Zeichenfolge|Die eindeutigen Bezeichner der Unterhaltungen. Schreibgeschützt.|
 |lastDeliveredDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|Vorschau|String|Eine kurze Zusammenfassung aus dem Text des neuesten Beitrags in dieser Unterhaltung.|
-|Thema|String|Das Thema der Unterhaltung. Diese Eigenschaft kann festgelegt werden, wenn die Unterhaltung erstellt wird, sie kann jedoch nicht aktualisiert werden.|
+|Vorschau|Zeichenfolge|Eine kurze Zusammenfassung aus dem Text des neuesten Beitrags in dieser Unterhaltung.|
+|Thema|Zeichenfolge|Das Thema der Unterhaltung. Diese Eigenschaft kann festgelegt werden, wenn die Unterhaltung erstellt wird, sie kann jedoch nicht aktualisiert werden.|
 |uniqueSenders|Zeichenfolgenauflistung|Alle Benutzer, die eine Nachricht an diese Unterhaltung gesendet haben.|
 
 ## <a name="relationships"></a>Beziehungen

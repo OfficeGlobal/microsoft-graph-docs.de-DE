@@ -1,12 +1,13 @@
 ---
 title: Gruppen-Ressourcentyp
 description: Stellt eine Gruppe Azure Active Directory (AD Azure), die eine Gruppe von Office 365, eine dynamische Gruppe oder eine Sicherheitsgruppe sein kann.
-ms.openlocfilehash: e9e6d652bba485a28a36a5efa8d670d9f4a6053f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: f4d4de207cdc8e3f9fbd312ad08639b85cbc87a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017634"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828014"
 ---
 # <a name="group-resource-type"></a>Gruppen-Ressourcentyp
 
@@ -27,7 +28,7 @@ Diese Ressource unterstützt Folgendes:
 |[Gruppe erstellen](../api/group-post-groups.md) | [Gruppe](group.md) |Erstellt eine neue Gruppe. Dabei kann es sich um eine Office 365-Gruppe, eine dynamische Gruppe oder eine Sicherheitsgruppe handeln.|
 |[Gruppe abrufen](../api/group-get.md) | [Gruppe](group.md) |Liest die Eigenschaften eines Gruppenobjekts.|
 |[Gruppen auflisten](../api/group-list.md) |[Gruppensammlung](group.md) |Listet Gruppenobjekte und deren Eigenschaften auf.|
-|[Gruppe aktualisieren](../api/group-update.md) | Keiner |Aktualisiert die Eigenschaften eines Gruppenobjekts. |
+|[Gruppe aktualisieren](../api/group-update.md) | Keine |Aktualisiert die Eigenschaften eines Gruppenobjekts. |
 |[Gruppe löschen](../api/group-delete.md) | Keiner |Löscht das Gruppenobjekt. |
 |[delta](../api/group-delta.md)|group-Sammlung| Dient zum Abrufen inkrementeller Änderungen für Gruppen. |
 |[List groupLifecyclePolicies](../api/group-list-grouplifecyclepolicies.md) |[groupLifecyclePolicy](grouplifecyclepolicy.md)-Sammlung| Dient zum Auflisten der Gruppenlebenszyklusrichtlinien. |
@@ -96,24 +97,24 @@ Diese Ressource unterstützt Folgendes:
 |autoSubscribeNewMembers|Boolean|Der Standardwert ist **false**. Gibt an, ob neu zur Gruppe hinzugefügte Mitglieder automatisch E-Mail-Benachrichtigungen erhalten. Sie können diese Eigenschaft in einer PATCH-Anforderung für die Gruppe festlegen; legen Sie sie nicht in der anfänglichen POST-Anforderung fest, mit der die Gruppe erstellt wird.|
 |Klassifikation|Zeichenfolge|Beschreibt eine Klassifizierung für die Gruppe (z. B. niedrige, mittlere oder hohe geschäftliche Auswirkungen). Gültige Werte für diese Eigenschaft werden durch die Erstellung eines ClassificationList-[setting](groupsetting.md)-Werts basierend auf der [Vorlagendefinition](groupsettingtemplate.md) erstellt.|
 |createdDateTime|DateTimeOffset| Zeitstempel der Gruppenerstellung. Der Wert kann nicht geändert werden und wird automatisch ausgefüllt, wenn die Gruppe erstellt wird. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. |
-|description|String|Eine optionale Beschreibung für die Gruppe. |
-|displayName|String|Der Anzeigename der Gruppe. Diese Eigenschaft ist beim Erstellen einer Gruppe erforderlich und kann bei Updates nicht deaktiviert werden. Unterstützt $Filter und $orderby.|
+|description|Zeichenfolge|Eine optionale Beschreibung für die Gruppe. |
+|displayName|Zeichenfolge|Der Anzeigename der Gruppe. Diese Eigenschaft ist beim Erstellen einer Gruppe erforderlich und kann bei Updates nicht deaktiviert werden. Unterstützt $Filter und $orderby.|
 |groupTypes|Zeichenfolgenauflistung| Gibt den Typ der Gruppe zu erstellen. Mögliche Werte sind `Unified` zum Erstellen einer Gruppe Office 365 oder `DynamicMembership` für dynamische Gruppen.  Für alle anderen Gruppe Typen, wie Sicherheit-aktivierten Gruppen und e-Mail-aktivierte Sicherheitsgruppen diese Eigenschaft nicht festlegen. Unterstützt $filter.|
-|id|String|Eindeutiger Bezeichner für die Gruppe. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für die Gruppe. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
 |isSubscribedByMail|Boolean|Der Standardwert ist **true**. Gibt an, ob der aktuelle Benutzer den Erhalt von E-Mail-Unterhaltungen abonniert hat.|
-|Mail|String|Die SMTP-Adresse für die Gruppe ein, z. B. „serviceadmins@contoso.onmicrosoft.com“. Schreibgeschützt. Unterstützt $filter.|
+|Mail|Zeichenfolge|Die SMTP-Adresse für die Gruppe ein, z. B. „serviceadmins@contoso.onmicrosoft.com“. Schreibgeschützt. Unterstützt $filter.|
 |mailEnabled|Boolean|Gibt an, ob es sich bei der Gruppe um eine E-Mail-fähige Gruppe handelt. Wenn die **securityEnabled**-Eigenschaft auch auf **true** festgelegt ist, handelt es sich bei der Gruppe um eine E-Mail-fähige Sicherheitsgruppe; andernfalls handelt es sich bei der Gruppe um eine Microsoft Exchange-Verteilergruppe.|
 |mailNickname|String|Der E-Mail-Alias für die Gruppe (eindeutig in der Organisation). Diese Eigenschaft muss beim Erstellen einer Gruppe angegeben werden. Unterstützt $filter.|
 |onPremisesLastSyncDateTime|DateTimeOffset|Gibt den Zeitpunkt der letzten Synchronisierung des Objekts mit dem lokalen Verzeichnis an. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. Unterstützt $filter.|
 |onPremisesProvisioningErrors|[OnPremisesProvisioningError](onpremisesprovisioningerror.md) -Auflistung| Fehler beim Microsoft Synchronisierung während der Bereitstellung verwenden. |
-|onPremisesSecurityIdentifier|String|Enthält die lokale Sicherheits-ID (SID) für die Gruppe, die von der lokalen Bereitstellung in der Cloud synchronisiert wurde. Schreibgeschützt. |
+|onPremisesSecurityIdentifier|Zeichenfolge|Enthält die lokale Sicherheits-ID (SID) für die Gruppe, die von der lokalen Bereitstellung in der Cloud synchronisiert wurde. Schreibgeschützt. |
 |onPremisesSyncEnabled|Boolean|**true**, wenn diese Gruppe aus einem lokalen Verzeichnis synchronisiert wird; **false**, wenn die Gruppe ursprünglich aus einem lokalen Verzeichnis synchronisiert wurde, aber nicht mehr synchronisiert wird; **NULL**, wenn dieses Objekt nie aus einem lokalen Verzeichnis synchronisiert wurde (Standard). Schreibgeschützt. Unterstützt $filter.|
-|preferredDataLocation|String|Die bevorzugte Datenspeicherort für die Gruppe. Weitere Informationen finden Sie unter [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
+|preferredDataLocation|Zeichenfolge|Die bevorzugte Datenspeicherort für die Gruppe. Weitere Informationen finden Sie unter [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |proxyAddresses|Zeichenfolgenauflistung| Der **any**-Operator ist für Filterausdrücke für mehrwertige Eigenschaften erforderlich. Schreibgeschützt. Lässt keine NULL-Werte zu. Unterstützt $filter. |
 |renewedDateTime|DateTimeOffset| Zeitstempel der letzten Verlängerung der Gruppe. Dies kann nicht direkt geändert werden und wird nur über die [Aktion zum Verlängern des Diensts](../api/group-renew.md) aktualisiert. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
 |securityEnabled|Boolean|Gibt an, ob es sich bei der Gruppe um eine Sicherheitsgruppe handelt. Wenn die **mailEnabled**-Eigenschaft auch auf „true“ festgelegt ist, handelt es sich bei der Gruppe um eine E-Mail-fähige Sicherheitsgruppe; andernfalls ist die Gruppe eine Sicherheitsgruppe. Muss für Office 365-Gruppen auf **false** festgelegt sein. Unterstützt $filter.|
 |unseenCount|Int32|Anzahl der Unterhaltungen, die seit dem letzten Besuch des angemeldeten Benutzers, der Gruppe einen oder mehrere neue Beiträge bereitgestellt wurden.|
-|visibility|String| Gibt die Sichtbarkeit einer Office 365-Gruppe. Mögliche Werte sind: `private`, `public`, oder `hiddenmembership`; leere Werte werden als öffentliche behandelt.  Finden Sie unter [Sichtbarkeitsoptionen Gruppe](#group-visibility-options) , um mehr zu erfahren.<br>Sichtbarkeit kann festgelegt werden, nur, wenn eine Gruppe erstellt wird. Es kann nicht bearbeitet werden.<br>Sichtbarkeit wird nur für unified Gruppen unterstützt. Es ist nicht für Sicherheitsgruppen unterstützt.|
+|visibility|Zeichenfolge| Gibt die Sichtbarkeit einer Office 365-Gruppe. Mögliche Werte sind: `private`, `public`, oder `hiddenmembership`; leere Werte werden als öffentliche behandelt.  Finden Sie unter [Sichtbarkeitsoptionen Gruppe](#group-visibility-options) , um mehr zu erfahren.<br>Sichtbarkeit kann festgelegt werden, nur, wenn eine Gruppe erstellt wird. Es kann nicht bearbeitet werden.<br>Sichtbarkeit wird nur für unified Gruppen unterstützt. Es ist nicht für Sicherheitsgruppen unterstützt.|
 
 ### <a name="group-visibility-options"></a>Gruppe Sichtbarkeitsoptionen
 
@@ -316,7 +317,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](/graph/extensibility-open-users)

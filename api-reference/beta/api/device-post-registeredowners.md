@@ -2,12 +2,13 @@
 title: registeredOwner erstellen
 description: Mit dieser API können Sie einen Benutzer als registrierten Besitzer eines Geräts hinzufügen.
 author: tfitzmac
-ms.openlocfilehash: 39cbd53b634b3f1388a27acf81e80ca2a7953693
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e1c8151f43ea7c4eb8e1235727a6b9f40f193853
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342560"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824262"
 ---
 # <a name="create-registeredowner"></a>registeredOwner erstellen
 
@@ -33,7 +34,7 @@ POST /devices/{id}/registeredOwners/$ref
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [directoryObject](../resources/directoryobject.md)-Objekts an.

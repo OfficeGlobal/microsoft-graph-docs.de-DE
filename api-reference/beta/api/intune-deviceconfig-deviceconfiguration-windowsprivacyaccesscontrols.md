@@ -2,12 +2,13 @@
 title: WindowsPrivacyAccessControls Aktion
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 301091be00f31ee0b4d86f6ec78f32c0adf34016
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8a9f91a84809b7b1f853360728704905cdde6457
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321042"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817115"
 ---
 # <a name="windowsprivacyaccesscontrols-action"></a>WindowsPrivacyAccessControls Aktion
 
@@ -39,8 +40,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.

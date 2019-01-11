@@ -2,12 +2,13 @@
 title: ownedObjects auflisten
 description: Mit dieser API können Sie eine Liste aller Verzeichnisobjekte abrufen, denen ein Benutzer als Besitzer zugewiesen ist.
 author: dkershaw10
-ms.openlocfilehash: 1d6b3ba9ef27b11dc9be6b42de19e4ed09880d0d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d9c7b94cbc70eb416785803cdb45b8cdeb2e8443
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307245"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825798"
 ---
 # <a name="list-ownedobjects"></a>ownedObjects auflisten
 
@@ -34,7 +35,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 | Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
-| Accept  | application/json|
+| Annehmen  | application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

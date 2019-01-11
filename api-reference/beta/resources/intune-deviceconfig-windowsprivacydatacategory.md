@@ -2,12 +2,13 @@
 title: WindowsPrivacyDataCategory Enum-Typ
 description: Windows private Daten Kategorie Bezeichner für den Datenschutz Datenzugriff.
 author: tfitzmac
-ms.openlocfilehash: f5a9f0fc23e7fa5f3036b8653609db694f6932dd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f9b533b9ecbf08f09760b57bb0d2bac7080746e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304949"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826752"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>WindowsPrivacyDataCategory Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27304949"
 
 Windows private Daten Kategorie Bezeichner für den Datenschutz Datenzugriff.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Keine Zugriffsebene angegeben, keine Intents. Gerät kann entweder wie in UserInControl oder ForceAllow Verhalten. Es kann die private Daten abhängen wurde Zugriff auf Windows-Versionen und anderen Faktoren.|
 |Kontostatus|1|Lassen Sie apps Zugriff Benutzernamen ein, Bild und andere Kontoinformationen in Microsoft-Konto erstellt. Dies wurde in Windows 10, Version 1607, hinzugefügt.|

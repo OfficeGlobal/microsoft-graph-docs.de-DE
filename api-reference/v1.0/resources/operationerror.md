@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp operationError
 description: Fehler in TeamsAsyncOperation beschreibt.
-ms.openlocfilehash: bcd8c989c4c69336165ef1ca29e1d114d524aa9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 22590d7d955cf01385292d2796ad960b1c0ced41
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018995"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824584"
 ---
 # <a name="operationerror-resource-type"></a>Ressourcentyp operationError
 

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp secureScores
 description: 'Top n =, wobei n = Anzahl der Tage, die Daten, die Sie abrufen möchten. '
-ms.openlocfilehash: 96d5c487bb854559b0128d93ea8e0783fcc61f0c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 332a9656d8237bb07d5c7739b666e09539cf984f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058982"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828735"
 ---
 # <a name="securescores-resource-type"></a>Ressourcentyp secureScores
 
@@ -19,7 +20,7 @@ Stellt einen Mandanten sichere Faktor pro Tag der Daten, auf der Ebene Mandanten
 
 | Methode   | Rückgabetyp|Beschreibung|
 |:---------------|:--------|:----------|
-|[Liste secureScores](../api/securescores-list.md) | [secureScores](securescores.md) |Lesen Sie Eigenschaften und Metadaten eines SecureScores-Objekts.|
+|[List secureScores](../api/securescores-list.md) | [secureScores](securescores.md) |Lesen Sie Eigenschaften und Metadaten eines SecureScores-Objekts.|
 
 
 ## <a name="properties"></a>Eigenschaften
@@ -27,9 +28,9 @@ Typ mit Eigenschaften der Mandant Sicherheit Entität Punktzahl (tägliche Momen
 
 |Eigenschaft |Typ |Beschreibung |
 |:--|:--|:--|
-|   azureTenantId   |   String  |   GUID-Zeichenfolge für Mandanten-ID ein.  |
+|   azureTenantId   |   Zeichenfolge  |   GUID-Zeichenfolge für Mandanten-ID ein.  |
 |   createdDateTime |   DateTimeOffset  |   Das Datum, wenn die Entität erstellt wird.  |
-|   id  |   String  |   Kombination von AzureTenantId_createdDateTime.   |
+|   id  |   Zeichenfolge  |   Kombination von AzureTenantId_createdDateTime.   |
 |   licensedUserCount   |   Int32   |   Die Anzahl der Benutzer des angegebenen Mandanten lizenziert.    |
 |   activeUserCount |   Int32   |   Aktive Benutzeranzahl des angegebenen Mandanten.  |
 |   currentScore    |   Gleitkommawert mit doppelter Genauigkeit  |   Mandanten aktuellen erreicht Score am angegebenen Datum.    |

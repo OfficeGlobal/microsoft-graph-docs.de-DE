@@ -2,12 +2,13 @@
 title: IosLobAppProvisioningConfigurationAssignment löschen
 description: Löscht eine IosLobAppProvisioningConfigurationAssignment.
 author: tfitzmac
-ms.openlocfilehash: 17e5f12682c6907b4c33b050745f0648539fb809
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: af38c172150224df8738a716537ac2bdda9126eb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319782"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828777"
 ---
 # <a name="delete-ioslobappprovisioningconfigurationassignment"></a>IosLobAppProvisioningConfigurationAssignment löschen
 
@@ -37,8 +38,8 @@ DELETE /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvis
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

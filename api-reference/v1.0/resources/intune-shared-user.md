@@ -2,12 +2,13 @@
 title: user-Ressourcentyp
 description: Stellt ein user-Objekt von Azure Active Directory dar.
 author: tfitzmac
-ms.openlocfilehash: f8e5ac52fc5322e7fb7a0fce9335f1dea864fff7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8a2cf2ee8798a02eeea7be3b1c7493c6b1b1ddb6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354201"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827468"
 ---
 # <a name="user-resource-type"></a>user-Ressourcentyp
 
@@ -33,7 +34,7 @@ Stellt ein user-Objekt von Azure Active Directory dar.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner des Benutzers|
+|id|Zeichenfolge|Eindeutiger Bezeichner des Benutzers|
 |**Onboarding**|
 |deviceEnrollmentLimit|Int32|Der Grenzwert für die maximale Anzahl von Geräten, die der Benutzer registrieren kann. Zulässige Werte sind 5 oder 1000.|
 

@@ -2,12 +2,13 @@
 title: eBookInstallSummary-Ressourcentyp
 description: Enthält Eigenschaften für die Installationszusammenfassung eines Buchs für ein Gerät.
 author: tfitzmac
-ms.openlocfilehash: 4f94c82a0d7cd234206586829981c62ba7d0a959
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b33f319106c39e11931726fcebcc8d5aa8d6ba46
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344275"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825781"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>eBookInstallSummary-Ressourcentyp
 
@@ -23,7 +24,7 @@ Enthält Eigenschaften für die Installationszusammenfassung eines Buchs für ei
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |installedDeviceCount|Int32|Die Anzahl der Geräte, auf denen das Buch erfolgreich installiert wurde.|
 |failedDeviceCount|Int32|Die Anzahl der Geräte, auf denen die Installation des Buchs fehlgeschlagen ist.|
 |notInstalledDeviceCount|Int32|Die Anzahl von Geräten, auf denen das Buch nicht installiert ist.|

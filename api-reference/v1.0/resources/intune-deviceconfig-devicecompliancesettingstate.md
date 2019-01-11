@@ -2,12 +2,13 @@
 title: deviceComplianceSettingState-Ressourcentyp
 description: Zustand der Gerätekompatibilitätseinstellung für ein bestimmtes Gerät.
 author: tfitzmac
-ms.openlocfilehash: e4edce4b22b70c6018703e086d606b84781b6b91
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bf9c4ae52b4bf3ff98599cdf8d71efcd0c229b14
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326173"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811053"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>deviceComplianceSettingState-Ressourcentyp
 
@@ -27,15 +28,15 @@ Zustand der Gerätekompatibilitätseinstellung für ein bestimmtes Gerät.
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|Schlüssel der Entität|
-|setting|String|Klassenname und Eigenschaftenname der Einstellung|
+|setting|Zeichenfolge|Klassenname und Eigenschaftenname der Einstellung|
 |settingName|String|Gemeldeter Einstellungsname|
 |deviceId|String|Gemeldete Geräte-ID|
 |deviceName|String|Gemeldeter Gerätename|
 |userId|String|Gemeldete Benutzer-ID|
 |userEmail|String|Gemeldete Benutzer-E-Mail-Adresse|
-|userName|String|Gemeldeter Benutzername|
+|userName|Zeichenfolge|Gemeldeter Benutzername|
 |userPrincipalName|String|Gemeldeter Benutzerprinzipalname|
-|deviceModel|String|Gemeldetes Gerätemodell|
+|deviceModel|Zeichenfolge|Gemeldetes Gerätemodell|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Karenzzeit für die Gerätekonformität|
 

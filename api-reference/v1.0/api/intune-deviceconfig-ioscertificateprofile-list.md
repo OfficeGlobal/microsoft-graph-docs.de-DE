@@ -2,12 +2,13 @@
 title: Auflisten von „iosCertificateProfile“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs iosCertificateProfile auf.
 author: tfitzmac
-ms.openlocfilehash: cbf64ec3cccc2e972931c4c2598d02acbd4d57a6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 46f4d8a37ef1efea7958656e3ed41085c4a98a16
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348398"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825508"
 ---
 # <a name="list-ioscertificateprofiles"></a>Auflisten von „iosCertificateProfile“
 
@@ -35,8 +36,8 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

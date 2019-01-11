@@ -2,12 +2,13 @@
 title: Abrufen von educationSubmittedSubmissionResource
 description: Gibt eine gesendete Ressource. Dadurch wird eine Lehrer verfügbar sein, nachdem eine Student übermittelt wurde, und wird den Teilnehmern werden, nachdem der Lehrer die Übermittlung freigegeben hat.  Beachten Sie, dass Lehrer Notizen in einige Ressourcen lassen können.
 author: dipakboyed
-ms.openlocfilehash: a956f7b18125f01798f804ab577450030a626b3a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 74458ca4ce8d462b3e59cab2bf531937cf4f973e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336533"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808673"
 ---
 # <a name="get-educationsubmittedsubmissionresource"></a>Abrufen von educationSubmittedSubmissionResource
 

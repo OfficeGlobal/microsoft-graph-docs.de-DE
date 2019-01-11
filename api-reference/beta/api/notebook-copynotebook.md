@@ -1,12 +1,13 @@
 ---
 title: 'notebook: copyNotebook'
 description: Kopiert ein Notizbuch in den Ordner „Notizbücher“ in der Dokumentzielbibliothek. Der Ordner wird erstellt, falls er nicht vorhanden ist.
-ms.openlocfilehash: 4d22c6904f14d0ccc5d4f3de35cdf46fbd3afd6a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ba9ed886ab0102a3ed66c31efbc420832e67d316
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062002"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833054"
 ---
 # <a name="notebook-copynotebook"></a>notebook: copyNotebook
 
@@ -44,10 +45,10 @@ Geben Sie im Anforderungstext ein JSON-Objekt an, das die vom Vorgang benötigte
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|siteSammlungId|String|Die Id der SharePoint-Website zu kopieren. Verwenden Sie nur, wenn für ein Office 365-Teamwebsite zu kopieren.|
-|siteId|String|Die Id der SharePoint-Website zu kopieren. Verwenden Sie nur, wenn für ein Office 365-Teamwebsite zu kopieren.|
-|groupId|String|Die ID der Gruppe, in die kopiert werden soll. Verwenden Sie diesen Parameter nur beim Kopieren in eine Office 365-Gruppe.|
-|renameAs|String|Der Name der Kopie. Standardmäßig der Name des vorhandenen Elements. |
+|siteSammlungId|Zeichenfolge|Die Id der SharePoint-Website zu kopieren. Verwenden Sie nur, wenn für ein Office 365-Teamwebsite zu kopieren.|
+|siteId|Zeichenfolge|Die Id der SharePoint-Website zu kopieren. Verwenden Sie nur, wenn für ein Office 365-Teamwebsite zu kopieren.|
+|groupId|Zeichenfolge|Die ID der Gruppe, in die kopiert werden soll. Verwenden Sie diesen Parameter nur beim Kopieren in eine Office 365-Gruppe.|
+|renameAs|Zeichenfolge|Der Name der Kopie. Standardmäßig der Name des vorhandenen Elements. |
 
 ## <a name="response"></a>Antwort
 

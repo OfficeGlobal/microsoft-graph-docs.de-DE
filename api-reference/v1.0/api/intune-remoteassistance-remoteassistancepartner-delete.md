@@ -2,12 +2,13 @@
 title: remoteAssistancePartner löschen
 description: Löscht ein remoteAssistancePartner-Objekt.
 author: tfitzmac
-ms.openlocfilehash: 1839288c8634730a782db960d573b354e60756b0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d62f7bc9ba8da090fa62d93b78424c647d5e7f2b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331353"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828665"
 ---
 # <a name="delete-remoteassistancepartner"></a>remoteAssistancePartner löschen
 
@@ -35,8 +36,8 @@ DELETE /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

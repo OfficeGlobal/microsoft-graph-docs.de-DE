@@ -2,12 +2,13 @@
 title: DDE-Kanal Ressourcentyp
 description: 'Ein Kanal ist eine Auflistung von Nachrichten in einem Team. '
 author: nkramer
-ms.openlocfilehash: f9ab71213180732a0c8c626d5b32b9074bd135d9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 9a7b12646f36152bef17cec2d206e8e84abdcbbe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337086"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826565"
 ---
 # <a name="channel-resource-type"></a>DDE-Kanal Ressourcentyp
 
@@ -24,7 +25,7 @@ Ein Kanal ist eine Auflistung von Nachrichten in einem [Team](../resources/team.
 |[Erstellen von DDE-Kanal](../api/channel-post.md) | [DDE-Kanal](channel.md) | Erstellen Sie einen neuen Kanal durch das Einbeziehen von den Anzeigenamen und die Beschreibung ein.|
 |[Abrufen von DDE-Kanal](../api/channel-get.md) | [DDE-Kanal](channel.md) | Lesen Sie Eigenschaften und Beziehungen des Kanals.|
 |[Aktualisieren der DDE-Kanal](../api/channel-patch.md) | [DDE-Kanal](channel.md) | Aktualisieren Sie die Eigenschaften des Kanals.|
-|[DDE-Kanal löschen](../api/channel-delete.md) | Keines | Löschen Sie einen Kanal.|
+|[DDE-Kanal löschen](../api/channel-delete.md) | Keine | Löschen Sie einen Kanal.|
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|

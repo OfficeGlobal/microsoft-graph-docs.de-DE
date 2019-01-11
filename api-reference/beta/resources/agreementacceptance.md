@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp agreementAcceptance
 description: Den aktuellen Status der ein Benutzer innerhalb eines Unternehmens anpassbare rechtliche Hinweise von Azure Active Directory (AD Azure) basiertes Bereichs darstellt.
-ms.openlocfilehash: 23221fe88a65b003c8d26aca99eaf1f03d935722
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b1c8a5e40fe6a12daf23566ae902ddf61f3ee4df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058145"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828282"
 ---
 # <a name="agreementacceptance-resource-type"></a>Ressourcentyp agreementAcceptance
 
@@ -27,15 +28,15 @@ Den aktuellen Status der ein Benutzer innerhalb eines Unternehmens anpassbare re
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
-|agreementFileId|String|Die ID der Vereinbarung-Datei, die vom Benutzer angenommen.|
-|agreementId|String|ID des zu.|
-|id|String| Schreibgeschützt.|
+|agreementFileId|Zeichenfolge|Die ID der Vereinbarung-Datei, die vom Benutzer angenommen.|
+|agreementId|Zeichenfolge|ID des zu.|
+|id|Zeichenfolge| Schreibgeschützt.|
 |recordedDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |state|string| Mögliche Werte sind: `accepted` und `declined`.|
 |userDisplayName|String|Der Anzeigename des Benutzers, wenn die Annahme aufgezeichnet wurde.|
-|userEmail|String|E-Mail des Benutzers, wenn die Annahme aufgezeichnet wurde.|
+|userEmail|Zeichenfolge|E-Mail des Benutzers, wenn die Annahme aufgezeichnet wurde.|
 |userId|String|ID des Benutzers, der den Lizenzvertrag akzeptiert.|
-|userPrincipalName|String|UPN des Benutzers, wenn die Annahme aufgezeichnet wurde.|
+|userPrincipalName|Zeichenfolge|UPN des Benutzers, wenn die Annahme aufgezeichnet wurde.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

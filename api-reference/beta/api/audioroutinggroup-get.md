@@ -2,12 +2,13 @@
 title: Abrufen von audio Routinggruppe
 description: Rufen Sie die Eigenschaften und die Beziehungen eines AudioRoutingGroup-Objekts ab.
 author: VinodRavichandran
-ms.openlocfilehash: 5f9a7771f31350dc30ed96e9eb81b40cc855b380
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: ebb0887f071fe24056903af9eae1e3f55ab6ede3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380429"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814182"
 ---
 # <a name="get-audio-routing-group"></a>Abrufen von audio Routinggruppe
 
@@ -22,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:---------------------------------------|:--------------------------------------------|
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt                               |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                               |
-| Application                            | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Anwendung                            | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

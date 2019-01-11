@@ -2,12 +2,13 @@
 title: Ressourcentyp officeClientCheckinStatus
 description: Entität, die Mandanten Einchecken Stats beschreibt.
 author: tfitzmac
-ms.openlocfilehash: 0c6359d3cb6c776d0f26fdaf88ce7f2f03e5f8c7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ff75c5d73db35c5c2ff70ad3a3dc3e4509745188
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331717"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825233"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>Ressourcentyp officeClientCheckinStatus
 
@@ -19,14 +20,14 @@ Entität, die Mandanten Einchecken Stats beschreibt.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|userPrincipalName|String|Benutzerprinzipalname des Geräts.|
-|deviceName|String|Name des Aufnahmegeräts einchecken möchten.|
-|devicePlatform|String|Geräteplattform einchecken möchten.|
-|devicePlatformVersion|String|Gerät Plattformversion einchecken möchten.|
-|wasSuccessful|Boolesch|Wenn das letzte Einchecken erfolgreich war.|
-|userId|String|Benutzer-ID des Geräts.|
+|userPrincipalName|Zeichenfolge|Benutzerprinzipalname des Geräts.|
+|deviceName|Zeichenfolge|Name des Aufnahmegeräts einchecken möchten.|
+|devicePlatform|Zeichenfolge|Geräteplattform einchecken möchten.|
+|devicePlatformVersion|Zeichenfolge|Gerät Plattformversion einchecken möchten.|
+|wasSuccessful|Boolescher Wert|Wenn das letzte Einchecken erfolgreich war.|
+|userId|Zeichenfolge|Benutzer-ID des Geräts.|
 |checkinDateTime|DateTimeOffset|Letzte Gerät Einchecken Zeitpunkt in UTC.|
-|errorMessage|String|Fehlermeldung, wenn alle zugeordneten für das letzte einchecken.|
+|errorMessage|Zeichenfolge|Fehlermeldung, wenn alle zugeordneten für das letzte einchecken.|
 |appliedPolicies|Collection von Objekten des Typs „String“|Liste der Richtlinien an das Gerät als letzten Checkin übermittelt wurden.|
 
 ## <a name="relationships"></a>Beziehungen

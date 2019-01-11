@@ -1,12 +1,13 @@
 ---
 title: Mitglieder auflisten
 description: Rufen Sie eine Liste der direkte Mitglieder der Gruppe. Eine Gruppe kann Benutzer, Kontakte und andere Gruppen als Mitglieder haben.
-ms.openlocfilehash: d9e756ecdbedbd17a446b27d33d3fafc23822636
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: d7dfaede0e9deae6806499b504c6a58da2381ef5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017442"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833285"
 ---
 # <a name="list-members"></a>Mitglieder auflisten
 Dient zum Abrufen einer Liste der direkten Mitglieder einer Gruppe. Eine Gruppe kann Benutzer, Kontakten und andere Gruppen als Mitglieder haben. Dieser Vorgang ist nicht transitiv.

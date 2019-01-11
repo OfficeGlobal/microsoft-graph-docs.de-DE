@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp chatMessageAttachment
 description: Stellt eine Anlage zu einer Chat Nachrichtenentität dar.
-ms.openlocfilehash: 65390caa417b6130a84fada2a089b31125da288a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 83574a7dbbb35f9c8b95474fac1154154f413470
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059482"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805558"
 ---
 # <a name="chatmessageattachment-resource-type"></a>Ressourcentyp chatMessageAttachment
 

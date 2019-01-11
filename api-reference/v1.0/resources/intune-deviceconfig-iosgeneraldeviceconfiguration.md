@@ -1,12 +1,13 @@
 ---
 title: iosGeneralDeviceConfiguration-Ressourcentyp
 description: In diesem Artikel werden die deklarierten Methoden, Eigenschaften und Beziehungen beschrieben, die von der Ressource „ iosGeneralDeviceConfiguration“ verfügbar gemacht werden.
-ms.openlocfilehash: 0ec7c8b5b242aa9a43ddbb0bdd7a305c75f6d9dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 258aa02ab4e59c8de677088b9b68e78b555e9109
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017701"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833299"
 ---
 # <a name="iosgeneraldeviceconfiguration-resource-type"></a>iosGeneralDeviceConfiguration-Ressourcentyp
 
@@ -28,11 +29,11 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |accountBlockModification|Boolescher Wert|Gibt an, ob die Kontoänderung zugelassen wird, wenn sich das Gerät im überwachten Modus befindet.|
 |activationLockAllowWhenSupervised|Boolescher Wert|Gibt an, ob die Aktivierungssperre zugelassen wird, wenn sich das Gerät im überwachten Modus befindet.|
@@ -109,14 +110,14 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |kioskModeAllowVoiceOverSettings|Boolescher Wert|Gibt ab, ob der Zugriff auf die Einstellungen für Hintergrundkommentare im Kiosk-Modus erlaubt werden soll.|
 |kioskModeAllowVolumeButtons|Boolescher Wert|Gibt ab, ob die Verwendung der Lautstärketasten im Kiosk-Modus erlaubt werden soll.|
 |kioskModeAllowZoomSettings|Boolescher Wert|Gibt ab, ob der Zugriff auf die Zoomeinstellungen im Kiosk-Modus erlaubt werden soll.|
-|kioskModeAppStoreUrl|String|URL im App Store zu der App, die für den Kiosk-Modus verwendet werden soll. Verwenden Sie diese, wenn „KioskModeManagedAppId“ nicht bekannt ist.|
-|kioskModeBuiltInAppId|String|ID für integrierte apps im Kioskmodus verwenden. Verwendet, wenn KioskModeManagedAppId und KioskModeAppStoreUrl nicht festgelegt werden.|
+|kioskModeAppStoreUrl|Zeichenfolge|URL im App Store zu der App, die für den Kiosk-Modus verwendet werden soll. Verwenden Sie diese, wenn „KioskModeManagedAppId“ nicht bekannt ist.|
+|kioskModeBuiltInAppId|Zeichenfolge|ID für integrierte apps im Kioskmodus verwenden. Verwendet, wenn KioskModeManagedAppId und KioskModeAppStoreUrl nicht festgelegt werden.|
 |kioskModeRequireAssistiveTouch|Boolescher Wert|Gibt an, ob Touch-Unterstützung im Kiosk-Modus erforderlich ist.|
 |kioskModeRequireColorInversion|Boolescher Wert|Gibt ab, ob die Farbinversion im Kiosk-Modus erforderlich ist.|
 |kioskModeRequireMonoAudio|Boolescher Wert|Gibt ab, ob Mono-Audio im Kiosk-Modus erforderlich ist.|
 |kioskModeRequireVoiceOver|Boolescher Wert|Gibt ab, ob Hintergrundkommentare im Kiosk-Modus erforderlich sind.|
 |kioskModeRequireZoom|Boolescher Wert|Gibt ab, ob Zoom im Kiosk-Modus erforderlich ist.|
-|kioskModeManagedAppId|String|Verwaltete App-ID der App, die für den Kiosk-Modus verwendet werden soll. Wenn „KioskModeManagedAppId“ angegeben ist, wird „KioskModeAppStoreUrl“ ignoriert.|
+|kioskModeManagedAppId|Zeichenfolge|Verwaltete App-ID der App, die für den Kiosk-Modus verwendet werden soll. Wenn „KioskModeManagedAppId“ angegeben ist, wird „KioskModeAppStoreUrl“ ignoriert.|
 |lockScreenBlockControlCenter|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer das Kontrollzentrum für den Sperrbildschirm verwendet.|
 |lockScreenBlockNotificationView|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer die Benachrichtigungsansicht auf dem Sperrbildschirm verwendet.|
 |lockScreenBlockPassbook|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Passbook verwendet, wenn das Gerät gesperrt ist.|

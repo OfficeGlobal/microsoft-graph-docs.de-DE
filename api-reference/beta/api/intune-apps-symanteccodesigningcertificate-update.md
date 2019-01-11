@@ -2,12 +2,13 @@
 title: SymantecCodeSigningCertificate aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines SymantecCodeSigningCertificate-Objekts.
 author: tfitzmac
-ms.openlocfilehash: fe3580f0160c50c2580580ff3515a7842ccf610d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7d95627e9a2c678097be0c3cb818a03906e8a06f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318060"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824738"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>SymantecCodeSigningCertificate aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [SymantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) eine JSON-Darstellung.
@@ -50,11 +51,11 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |id|String|Schlüssel der Entität|
 |content|Binär|Das Windows Symantec Codesignierung-Zertifikat im Format Rohdaten.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Der Status Cert bereitgestellt oder nicht bereitgestellt. Mögliche Werte sind: `notProvisioned` und `provisioned`.|
-|password|String|Das Kennwort für die PFX-Datei.|
+|password|Zeichenfolge|Das Kennwort für die PFX-Datei.|
 |subjectName|Zeichenfolge|Der Antragstellername für das Zertifikat.|
-|Betreff|String|Der Wert der Betreff für das Zertifikat.|
-|issuerName|String|Der Name der Aussteller für das Zertifikat.|
-|Aussteller|String|Der Wert der Aussteller für das Zertifikat.|
+|Betreff|Zeichenfolge|Der Wert der Betreff für das Zertifikat.|
+|issuerName|Zeichenfolge|Der Name der Aussteller für das Zertifikat.|
+|Aussteller|Zeichenfolge|Der Wert der Aussteller für das Zertifikat.|
 |expirationDateTime|DateTimeOffset|Das Ablaufdatum des Zertifikats.|
 |uploadDateTime|DateTimeOffset|Der Typ des der Cert CodeSigning als Symantec Cert.|
 

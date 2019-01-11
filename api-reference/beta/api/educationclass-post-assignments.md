@@ -1,12 +1,13 @@
 ---
 title: Erstellen von educationAssignment
 description: 'Erstellt eine neue Zuordnung. Nur Lehrer in einer Klasse können eine Zuordnung erstellen. Zuordnungen starten Sie den Status Entwurf, was bedeutet, dass die Zuordnung von Studenten nicht angezeigt werden, bis veröffentlichen aufgerufen wird.  '
-ms.openlocfilehash: 9a6af2a0c0689ca2118ce4d06a55d7b27a70a4ff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6bcc1f44be9d811335d24cea7502c0752052c5ab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060317"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824185"
 ---
 # <a name="create-educationassignment"></a>Erstellen von educationAssignment
 
@@ -30,7 +31,7 @@ POST /education/classes/{id}/assignments
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

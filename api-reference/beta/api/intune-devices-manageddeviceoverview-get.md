@@ -2,12 +2,13 @@
 title: Abrufen von „managedDeviceOverview“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs managedDeviceOverview.
 author: tfitzmac
-ms.openlocfilehash: c3d76e1b07e46245a3e4d391d5f44d04a84399a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 94c6b1fc51a3bf2d518c50f7ef16def8234c2b12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359787"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827489"
 ---
 # <a name="get-manageddeviceoverview"></a>Abrufen von „managedDeviceOverview“
 
@@ -39,8 +40,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

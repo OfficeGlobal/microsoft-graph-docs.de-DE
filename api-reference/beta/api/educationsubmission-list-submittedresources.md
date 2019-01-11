@@ -2,12 +2,13 @@
 title: Liste submittedResources
 description: Listen Sie die Ressourcen, die zum Sortieren der offiziell gesendet wurden. Der Besitzer die Übermittlung Student kann nicht die übermittelte Liste ändern, ohne die erneute Übermittlung der Zuordnung. Dies ist ein Wrapper für die Ressource real und kann einen Zeiger an die aktuelle Zuordnung Ressource enthalten, wenn diese Ressource aus die Zuordnung kopiert wurde.
 author: dipakboyed
-ms.openlocfilehash: 9689d9687127006f38884107d0b015e571fd6ab0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da036713e6683aaef6576145dfe32b3b6eeaf11e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356140"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824143"
 ---
 # <a name="list-submittedresources"></a>Liste submittedResources
 

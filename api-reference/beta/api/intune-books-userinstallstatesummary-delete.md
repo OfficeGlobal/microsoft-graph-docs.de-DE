@@ -2,12 +2,13 @@
 title: userInstallStateSummary löschen
 description: Löscht ein userInstallStateSummary-Objekt.
 author: tfitzmac
-ms.openlocfilehash: 854be19ec7c1def053992b3b690bdc8acd15cd94
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6706513076e45eb021eb972196afc2c9afea7078
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327251"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832704"
 ---
 # <a name="delete-userinstallstatesummary"></a>userInstallStateSummary löschen
 
@@ -35,10 +36,10 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{use
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

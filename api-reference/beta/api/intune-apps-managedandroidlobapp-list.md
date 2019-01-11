@@ -2,12 +2,13 @@
 title: Auflisten von „managedAndroidLobApp“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs managedAndroidLobApp auf.
 author: tfitzmac
-ms.openlocfilehash: 9bffa4c979569e58ea26824073a06a02c2c2d608
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 63b401e7559df91b41292e54d8ca20c4eb9ba7e1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322862"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808414"
 ---
 # <a name="list-managedandroidlobapps"></a>Auflisten von „managedAndroidLobApp“
 
@@ -37,8 +38,8 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

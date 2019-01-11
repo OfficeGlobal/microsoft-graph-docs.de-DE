@@ -1,12 +1,13 @@
 ---
 title: 'message: send'
 description: Senden Sie eine Nachricht im Ordner "Entwürfe". Die Entwurf einer Nachricht kann eine neue Nachricht Entwurf, Antwort Entwurf, allen Antworten-Entwurfsdatenbank, oder
-ms.openlocfilehash: b295cd5b234bf9dafe1fbba44a03cdc6e9c1842e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6ccef4d1a58faea7678acefee5d175403a8827b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063949"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806643"
 ---
 # <a name="message-send"></a>message: send
 

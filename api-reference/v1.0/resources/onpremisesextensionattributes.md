@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp onPremisesExtensionAttributes
 description: Die **OnPremisesExtensionAttributes** -Eigenschaft der Benutzerentität enthält fünfzehn Eigenschaften der benutzerdefinierten Erweiterung-Attribut. Diese Gruppe von Eigenschaften ist für einen Benutzer **OnPremisesSyncEnabled** im lokalen Active Directory gesteuert und Azure AD synchronisiert und ist schreibgeschützt. Für einen nur-Cloud-Benutzer (wobei **OnPremisesSyncEnabled** ist false), können diese Eigenschaften festgelegt werden, während der Erstellung oder zu aktualisieren.
-ms.openlocfilehash: e5a56b5a846cf48cfc819b6d884689be10d6992e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c0cb765efe9e94c8254e45eaa9d55bc16382f6d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018252"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824745"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>Ressourcentyp onPremisesExtensionAttributes
 
@@ -16,21 +17,21 @@ Die **OnPremisesExtensionAttributes** -Eigenschaft der [Benutzer](user.md) Entit
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|extensionAttribute1|String| Erste anpassbare Extension-Attribut. |
-|extensionAttribute2|String| Zweite anpassbare Extension-Attribut. |
-|extensionAttribute3|String| Dritte anpassbare Extension-Attribut. |
-|extensionAttribute4|String| Vierte anpassbare Extension-Attribut. |
-|extensionAttribute5|String| Fünfte anpassbare Extension-Attribut. |
-|extensionAttribute6|String| Sechste anpassbare Extension-Attribut. |
-|extensionAttribute7|String| Siebte anpassbare Extension-Attribut. |
-|extensionAttribute8|String| Achte anpassbare Extension-Attribut. |
-|extensionAttribute9|String| Neunte anpassbare Extension-Attribut. |
-|extensionAttribute10|String| Zehnte anpassbare Extension-Attribut. |
-|extensionAttribute11|String| Elfte anpassbare Extension-Attribut. |
-|extensionAttribute12|String| Zwölfte anpassbarer Extension-Attribut. |
-|extensionAttribute13|String| Dreizehnte anpassbare Extension-Attribut. |
-|extensionAttribute14|String| Vierzehnte anpassbare Extension-Attribut. |
-|extensionAttribute15|String| Fünfzehnte anpassbare Extension-Attribut. |
+|extensionAttribute1|Zeichenfolge| Erste anpassbare Extension-Attribut. |
+|extensionAttribute2|Zeichenfolge| Zweite anpassbare Extension-Attribut. |
+|extensionAttribute3|Zeichenfolge| Dritte anpassbare Extension-Attribut. |
+|extensionAttribute4|Zeichenfolge| Vierte anpassbare Extension-Attribut. |
+|extensionAttribute5|Zeichenfolge| Fünfte anpassbare Extension-Attribut. |
+|extensionAttribute6|Zeichenfolge| Sechste anpassbare Extension-Attribut. |
+|extensionAttribute7|Zeichenfolge| Siebte anpassbare Extension-Attribut. |
+|extensionAttribute8|Zeichenfolge| Achte anpassbare Extension-Attribut. |
+|extensionAttribute9|Zeichenfolge| Neunte anpassbare Extension-Attribut. |
+|extensionAttribute10|Zeichenfolge| Zehnte anpassbare Extension-Attribut. |
+|extensionAttribute11|Zeichenfolge| Elfte anpassbare Extension-Attribut. |
+|extensionAttribute12|Zeichenfolge| Zwölfte anpassbarer Extension-Attribut. |
+|extensionAttribute13|Zeichenfolge| Dreizehnte anpassbare Extension-Attribut. |
+|extensionAttribute14|Zeichenfolge| Vierzehnte anpassbare Extension-Attribut. |
+|extensionAttribute15|Zeichenfolge| Fünfzehnte anpassbare Extension-Attribut. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
