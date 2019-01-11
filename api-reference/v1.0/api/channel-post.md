@@ -1,54 +1,55 @@
 ---
 title: Erstellen von DDE-Kanal
 description: Erstellen Sie einen neuen Kanal in einem Microsoft-Team, wie im Textkörper Anforderung angegeben.
-ms.openlocfilehash: 9fb327e947585732e9a17151d4cc06e8d50c4bf1
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+localization_priority: Priority
+ms.openlocfilehash: d80659a3ecb69a33a9ea3a23a9ce94f13d6b95a4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222583"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847593"
 ---
-# <a name="create-channel"></a><span data-ttu-id="eb136-103">Erstellen von DDE-Kanal</span><span class="sxs-lookup"><span data-stu-id="eb136-103">Create Channel</span></span>
+# <a name="create-channel"></a><span data-ttu-id="6fa3b-103">Erstellen von DDE-Kanal</span><span class="sxs-lookup"><span data-stu-id="6fa3b-103">Create Channel</span></span>
 
 
 
-<span data-ttu-id="eb136-104">Erstellen Sie einen neuen [Channel](../resources/channel.md) in einem Microsoft-Team, wie im Textkörper Anforderung angegeben.</span><span class="sxs-lookup"><span data-stu-id="eb136-104">Create a new [channel](../resources/channel.md) in a Microsoft Team, as specified in the request body.</span></span>
+<span data-ttu-id="6fa3b-104">Erstellen Sie einen neuen [Channel](../resources/channel.md) in einem Microsoft-Team, wie im Textkörper Anforderung angegeben.</span><span class="sxs-lookup"><span data-stu-id="6fa3b-104">Create a new [channel](../resources/channel.md) in a Microsoft Team, as specified in the request body.</span></span>
 
-> <span data-ttu-id="eb136-105">**Hinweis**: Es ist ein bekanntes Problem mit Berechtigungen und diese API.</span><span class="sxs-lookup"><span data-stu-id="eb136-105">**Note**: There is a known issue with application permissions and this API.</span></span> <span data-ttu-id="eb136-106">Weitere Informationen hierzu finden Sie unter der [Problemliste bezeichnet](/graph/known-issues#application-permissions).</span><span class="sxs-lookup"><span data-stu-id="eb136-106">For details, see the [known issues list](/graph/known-issues#application-permissions).</span></span>
+> <span data-ttu-id="6fa3b-105">**Hinweis**: Es ist ein bekanntes Problem mit Berechtigungen und diese API.</span><span class="sxs-lookup"><span data-stu-id="6fa3b-105">**Note**: There is a known issue with application permissions and this API.</span></span> <span data-ttu-id="6fa3b-106">Weitere Informationen hierzu finden Sie unter der [Problemliste bezeichnet](/graph/known-issues#application-permissions).</span><span class="sxs-lookup"><span data-stu-id="6fa3b-106">For details, see the [known issues list](/graph/known-issues#application-permissions).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="eb136-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="eb136-107">Permissions</span></span>
-<span data-ttu-id="eb136-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="eb136-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6fa3b-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="6fa3b-107">Permissions</span></span>
+<span data-ttu-id="6fa3b-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6fa3b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="eb136-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="eb136-110">Permission type</span></span>      | <span data-ttu-id="eb136-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="eb136-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6fa3b-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="6fa3b-110">Permission type</span></span>      | <span data-ttu-id="6fa3b-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="6fa3b-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="eb136-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="eb136-112">Delegated (work or school account)</span></span> | <span data-ttu-id="eb136-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="eb136-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="eb136-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="eb136-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="eb136-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="eb136-115">Not supported.</span></span>    |
-|<span data-ttu-id="eb136-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="eb136-116">Application</span></span> | <span data-ttu-id="eb136-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="eb136-117">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="6fa3b-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="6fa3b-112">Delegated (work or school account)</span></span> | <span data-ttu-id="6fa3b-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6fa3b-113">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="6fa3b-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="6fa3b-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6fa3b-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="6fa3b-115">Not supported.</span></span>    |
+|<span data-ttu-id="6fa3b-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="6fa3b-116">Application</span></span> | <span data-ttu-id="6fa3b-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6fa3b-117">Group.ReadWrite.All</span></span>    |
 
-> <span data-ttu-id="eb136-118">**Hinweis**: Diese API unterstützt Administratorberechtigungen.</span><span class="sxs-lookup"><span data-stu-id="eb136-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="eb136-119">Globale Administratoren und Microsoft-Teams Dienstadministratoren können Teams zugreifen, denen sie nicht Mitglied sind.</span><span class="sxs-lookup"><span data-stu-id="eb136-119">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="6fa3b-118">**Hinweis**: Diese API unterstützt Administratorberechtigungen.</span><span class="sxs-lookup"><span data-stu-id="6fa3b-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="6fa3b-119">Globale Administratoren und Microsoft-Teams Dienstadministratoren können Teams zugreifen, denen sie nicht Mitglied sind.</span><span class="sxs-lookup"><span data-stu-id="6fa3b-119">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="eb136-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="eb136-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6fa3b-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="6fa3b-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{id}/channels
 ```
-## <a name="request-headers"></a><span data-ttu-id="eb136-121">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="eb136-121">Request headers</span></span>
-| <span data-ttu-id="eb136-122">Header</span><span class="sxs-lookup"><span data-stu-id="eb136-122">Header</span></span>       | <span data-ttu-id="eb136-123">Wert</span><span class="sxs-lookup"><span data-stu-id="eb136-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="6fa3b-121">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="6fa3b-121">Request headers</span></span>
+| <span data-ttu-id="6fa3b-122">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="6fa3b-122">Header</span></span>       | <span data-ttu-id="6fa3b-123">Wert</span><span class="sxs-lookup"><span data-stu-id="6fa3b-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="eb136-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="eb136-124">Authorization</span></span>  | <span data-ttu-id="eb136-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="eb136-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="eb136-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="eb136-127">Content-Type</span></span>  | <span data-ttu-id="eb136-128">application/json</span><span class="sxs-lookup"><span data-stu-id="eb136-128">application/json</span></span>  |
+| <span data-ttu-id="6fa3b-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="6fa3b-124">Authorization</span></span>  | <span data-ttu-id="6fa3b-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="6fa3b-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="6fa3b-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6fa3b-127">Content-Type</span></span>  | <span data-ttu-id="6fa3b-128">application/json</span><span class="sxs-lookup"><span data-stu-id="6fa3b-128">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="eb136-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="eb136-129">Request body</span></span>
-<span data-ttu-id="eb136-130">Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [Channel](../resources/channel.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="eb136-130">In the request body, supply a JSON representation of [channel](../resources/channel.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6fa3b-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="6fa3b-129">Request body</span></span>
+<span data-ttu-id="6fa3b-130">Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [Channel](../resources/channel.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="6fa3b-130">In the request body, supply a JSON representation of [channel](../resources/channel.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="eb136-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="eb136-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6fa3b-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="6fa3b-131">Response</span></span>
 
-<span data-ttu-id="eb136-132">Wenn der Vorgang erfolgreich war, gibt diese Methode `201 Created` Code und [Channel](../resources/channel.md) -Antwortobjekt im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="eb136-132">If successful, this method returns `201 Created` response code and [channel](../resources/channel.md) object in the response body.</span></span>
+<span data-ttu-id="6fa3b-132">Wenn der Vorgang erfolgreich war, gibt diese Methode `201 Created` Code und [Channel](../resources/channel.md) -Antwortobjekt im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="6fa3b-132">If successful, this method returns `201 Created` response code and [channel](../resources/channel.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="eb136-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="eb136-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="eb136-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="eb136-134">Request</span></span>
-<span data-ttu-id="eb136-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="eb136-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6fa3b-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6fa3b-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6fa3b-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="6fa3b-134">Request</span></span>
+<span data-ttu-id="6fa3b-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="6fa3b-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_group"
@@ -62,8 +63,8 @@ Content-type: application/json
   "description": "This channel is where we debate all future architecture plans"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="eb136-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="eb136-136">Response</span></span>
-<span data-ttu-id="eb136-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="eb136-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="6fa3b-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="6fa3b-136">Response</span></span>
+<span data-ttu-id="6fa3b-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="6fa3b-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

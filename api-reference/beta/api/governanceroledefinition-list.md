@@ -1,58 +1,59 @@
 ---
 title: Liste governanceRoleDefinitions
 description: Rufen Sie eine Auflistung von GovernanceRoleDefinitions für eine Ressource.
-ms.openlocfilehash: ed1d4e7b51d20ed6687c52364399385054db9912
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6586a1fec0be4610aa18d204cb8049a012aa7a04
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062779"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854747"
 ---
-# <a name="list-governanceroledefinitions"></a><span data-ttu-id="f20db-103">Liste governanceRoleDefinitions</span><span class="sxs-lookup"><span data-stu-id="f20db-103">List governanceRoleDefinitions</span></span>
-> <span data-ttu-id="f20db-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="f20db-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f20db-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="f20db-105">Use of these APIs in production applications is not supported.</span></span>
+# <a name="list-governanceroledefinitions"></a><span data-ttu-id="1cc82-103">Liste governanceRoleDefinitions</span><span class="sxs-lookup"><span data-stu-id="1cc82-103">List governanceRoleDefinitions</span></span>
+> <span data-ttu-id="1cc82-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="1cc82-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1cc82-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="1cc82-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="f20db-106">Rufen Sie eine Auflistung von [GovernanceRoleDefinitions](../resources/governanceroledefinition.md) für eine Ressource.</span><span class="sxs-lookup"><span data-stu-id="f20db-106">Get a collection of [governanceRoleDefinitions](../resources/governanceroledefinition.md) on a resource.</span></span>
+<span data-ttu-id="1cc82-106">Rufen Sie eine Auflistung von [GovernanceRoleDefinitions](../resources/governanceroledefinition.md) für eine Ressource.</span><span class="sxs-lookup"><span data-stu-id="1cc82-106">Get a collection of [governanceRoleDefinitions](../resources/governanceroledefinition.md) on a resource.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f20db-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="f20db-107">Permissions</span></span>
-<span data-ttu-id="f20db-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f20db-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="1cc82-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="1cc82-107">Permissions</span></span>
+<span data-ttu-id="1cc82-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1cc82-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f20db-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="f20db-110">Permission type</span></span>      | <span data-ttu-id="f20db-111">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="f20db-111">Permissions</span></span>              |
+|<span data-ttu-id="1cc82-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="1cc82-110">Permission type</span></span>      | <span data-ttu-id="1cc82-111">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="1cc82-111">Permissions</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f20db-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="f20db-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f20db-113">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="f20db-113">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
-|<span data-ttu-id="f20db-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="f20db-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f20db-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="f20db-115">Not supported.</span></span>    |
-|<span data-ttu-id="f20db-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="f20db-116">Application</span></span> | <span data-ttu-id="f20db-117">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="f20db-117">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
+|<span data-ttu-id="1cc82-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="1cc82-112">Delegated (work or school account)</span></span> | <span data-ttu-id="1cc82-113">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="1cc82-113">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
+|<span data-ttu-id="1cc82-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="1cc82-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1cc82-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="1cc82-115">Not supported.</span></span>    |
+|<span data-ttu-id="1cc82-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="1cc82-116">Application</span></span> | <span data-ttu-id="1cc82-117">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="1cc82-117">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
 
-<span data-ttu-id="f20db-118">Neben den Berechtigungsbereich benötigt diese API den Requestor, mindestens eine rollenzuweisung auf die Ressource verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="f20db-118">Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource.</span></span>
+<span data-ttu-id="1cc82-118">Neben den Berechtigungsbereich benötigt diese API den Requestor, mindestens eine rollenzuweisung auf die Ressource verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="1cc82-118">Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="f20db-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="f20db-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1cc82-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="1cc82-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions
 GET /privilegedAccess/azureResources/roleDefinitions?$filter=resourceId+eq+'{resourceId}'
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="f20db-120">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="f20db-120">Optional query parameters</span></span>
-<span data-ttu-id="f20db-121">Diese Methode unterstützt die [OData-Abfrage-Parameter](/graph/query-parameters) , mit denen die Antwort anpassen.</span><span class="sxs-lookup"><span data-stu-id="f20db-121">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="1cc82-120">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="1cc82-120">Optional query parameters</span></span>
+<span data-ttu-id="1cc82-121">Diese Methode unterstützt die [OData-Abfrage-Parameter](/graph/query-parameters) , mit denen die Antwort anpassen.</span><span class="sxs-lookup"><span data-stu-id="1cc82-121">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f20db-122">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="f20db-122">Request headers</span></span>
-| <span data-ttu-id="f20db-123">Name</span><span class="sxs-lookup"><span data-stu-id="f20db-123">Name</span></span>      |<span data-ttu-id="f20db-124">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f20db-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1cc82-122">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="1cc82-122">Request headers</span></span>
+| <span data-ttu-id="1cc82-123">Name</span><span class="sxs-lookup"><span data-stu-id="1cc82-123">Name</span></span>      |<span data-ttu-id="1cc82-124">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1cc82-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="f20db-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="f20db-125">Authorization</span></span>  | <span data-ttu-id="f20db-126">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="f20db-126">Bearer {code}</span></span>|
+| <span data-ttu-id="1cc82-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="1cc82-125">Authorization</span></span>  | <span data-ttu-id="1cc82-126">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="1cc82-126">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f20db-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="f20db-127">Request body</span></span>
-<span data-ttu-id="f20db-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="f20db-128">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="f20db-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="f20db-129">Response</span></span>
-<span data-ttu-id="f20db-130">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und Auflistung von Objekten im Antworttext [GovernanceRoleDefinition](../resources/governanceroledefinition.md) .</span><span class="sxs-lookup"><span data-stu-id="f20db-130">If successful, this method returns a `200 OK` response code and collection of [governanceRoleDefinition](../resources/governanceroledefinition.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="f20db-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f20db-131">Example</span></span>
+## <a name="request-body"></a><span data-ttu-id="1cc82-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="1cc82-127">Request body</span></span>
+<span data-ttu-id="1cc82-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="1cc82-128">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="1cc82-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="1cc82-129">Response</span></span>
+<span data-ttu-id="1cc82-130">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und Auflistung von Objekten im Antworttext [GovernanceRoleDefinition](../resources/governanceroledefinition.md) .</span><span class="sxs-lookup"><span data-stu-id="1cc82-130">If successful, this method returns a `200 OK` response code and collection of [governanceRoleDefinition](../resources/governanceroledefinition.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="1cc82-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="1cc82-131">Example</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_governanceroledefinitions"
 }-->
-<span data-ttu-id="f20db-132">In diesem Beispiel wird gezeigt, wie alle Rollendefinitionen des Abonnements Wingtip Toys - "Bemerkungen" abgerufen.</span><span class="sxs-lookup"><span data-stu-id="f20db-132">This example shows how to get all role definitions of the subscription Wingtip Toys - Prod.</span></span>
-##### <a name="request"></a><span data-ttu-id="f20db-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="f20db-133">Request</span></span>
+<span data-ttu-id="1cc82-132">In diesem Beispiel wird gezeigt, wie alle Rollendefinitionen des Abonnements Wingtip Toys - "Bemerkungen" abgerufen.</span><span class="sxs-lookup"><span data-stu-id="1cc82-132">This example shows how to get all role definitions of the subscription Wingtip Toys - Prod.</span></span>
+##### <a name="request"></a><span data-ttu-id="1cc82-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="1cc82-133">Request</span></span>
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleDefinitions  
 ```
-##### <a name="response"></a><span data-ttu-id="f20db-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="f20db-134">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="1cc82-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="1cc82-134">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
