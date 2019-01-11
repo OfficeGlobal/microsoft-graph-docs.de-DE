@@ -1,12 +1,13 @@
 ---
 title: SharePoint-Aktivitätsberichte
 description: Verwenden Sie die SharePoint-Aktivitätsberichte, um mehr über die Aktivität der für SharePoint lizenzierten Benutzer zu erfahren, indem Sie sich deren Interaktion mit Dateien ansehen. Sie können sich auch den Umfang der Zusammenarbeit basierend auf der Anzahl der freigegebenen Dateien ansehen.
-ms.openlocfilehash: b180a098cdec6ef432ec2837c576192e7aa80b1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 00cc158fee8b5ec108af99c57c089c2259106a73
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016743"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869041"
 ---
 # <a name="sharepoint-activity-reports"></a>SharePoint-Aktivitätsberichte
 

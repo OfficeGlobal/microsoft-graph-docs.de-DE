@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp emailAppUsageUserDetail
 description: Es folgt eine JSON-Darstellung der Ressource.
-ms.openlocfilehash: 951d53f7491ff7f2b7721b14ed354d770cfd1730
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9f1748d6ae3b313fd9f3a87cc211858b5b876b9a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058756"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858947"
 ---
 # <a name="emailappusageuserdetail-resource-type"></a>Ressourcentyp emailAppUsageUserDetail
 
@@ -17,7 +18,7 @@ ms.locfileid: "27058756"
 | reportRefreshDate | Datum              |
 | userPrincipalName | String            |
 | displayName       | String            |
-| isDeleted         | Boolesch           |
+| isDeleted         | Boolean           |
 | deletedDate       | Datum              |
 | lastActivityDate  | Datum              |
 | mailForMac        | Collection von Objekten des Typs „String“ |

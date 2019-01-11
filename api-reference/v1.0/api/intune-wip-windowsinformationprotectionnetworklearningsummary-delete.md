@@ -2,12 +2,13 @@
 title: windowsInformationProtectionNetworkLearningSummary löschen
 description: Löscht ein windowsInformationProtectionNetworkLearningSummary-Objekt.
 author: tfitzmac
-ms.openlocfilehash: 6f9749a77a85db40741fdcbb8d8065e622ef0e6d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e63ef824a12db4a857030ee10d0970050216df07
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320440"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856217"
 ---
 # <a name="delete-windowsinformationprotectionnetworklearningsummary"></a>windowsInformationProtectionNetworkLearningSummary löschen
 
@@ -33,10 +34,10 @@ DELETE /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{w
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

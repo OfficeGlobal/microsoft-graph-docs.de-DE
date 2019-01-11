@@ -1,12 +1,13 @@
 ---
 title: PlannerUser aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines PlannerUser-Objekts. Verwenden Sie diese Operation zum Hinzufügen oder Entfernen von Plänen aus der Liste eines Benutzers bevorzugten Pläne und um anzugeben, die den Benutzer plant wurde kürzlich angezeigt.
-ms.openlocfilehash: 872bdaed0aff174abe01d350fa4d5304d4bcc620
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ae09deff65c5de08d80e34140abacd43d43a94b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059447"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889054"
 ---
 # <a name="update-planneruser"></a>PlannerUser aktualisieren
 

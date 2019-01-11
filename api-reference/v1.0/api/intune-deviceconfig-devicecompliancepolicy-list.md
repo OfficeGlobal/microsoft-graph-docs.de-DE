@@ -2,12 +2,13 @@
 title: Auflisten von „deviceCompliancePolicy“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs deviceCompliancePolicy auf.
 author: tfitzmac
-ms.openlocfilehash: cef180e6e84a3974353bef2e358380fca13bb503
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2a83d9f7bbdc3a5e0e3b3b5fff9ca6ebf4700263
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357729"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863014"
 ---
 # <a name="list-devicecompliancepolicies"></a>Auflisten von „deviceCompliancePolicy“
 
@@ -33,10 +34,10 @@ GET /deviceManagement/deviceCompliancePolicies
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

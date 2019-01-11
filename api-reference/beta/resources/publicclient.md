@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp publicClient
 description: Gibt die Einstellungen für nicht Web App oder Web-Api. (Mobile oder anderen öffentlichen Client wie eine installierte Anwendung, die auf einem Desktopgerät ausgeführt)
-ms.openlocfilehash: ba921fecb554a8749a9020508c538c68a7ff342e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c466c91f90ac8adc2bf3806fa212e0b01e6d2507
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058782"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864197"
 ---
 # <a name="publicclient-resource-type"></a>Ressourcentyp publicClient
 

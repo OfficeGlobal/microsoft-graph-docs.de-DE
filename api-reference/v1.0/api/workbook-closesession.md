@@ -2,12 +2,13 @@
 title: Sitzung schließen
 description: 'Verwenden Sie diese API, um eine vorhandene Arbeitsmappensitzung zu schließen. '
 author: lumine2008
-ms.openlocfilehash: c48e6e8b075f1cad0629dae0325f7de44d9cfc11
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0e4d00b1ebf9ba90f6085f8dc7fc1005375efc0d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335602"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818634"
 ---
 # <a name="close-session"></a>Sitzung schließen
 

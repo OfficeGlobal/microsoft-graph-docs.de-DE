@@ -2,12 +2,13 @@
 title: targetedManagedAppConfiguration abrufen
 description: Lesen von Eigenschaften und Beziehungen des targetedManagedAppConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 2bc977dc2f586e7b727a6ab4885bb62eaec36fdb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ffdd605fe531982756541e9cf8d7b0f1ef1cde2e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358632"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862629"
 ---
 # <a name="get-targetedmanagedappconfiguration"></a>targetedManagedAppConfiguration abrufen
 
@@ -37,10 +38,10 @@ GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCon
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

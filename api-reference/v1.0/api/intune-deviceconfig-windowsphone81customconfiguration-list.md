@@ -2,12 +2,13 @@
 title: Auflisten von „windowsPhone81CustomConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs windowsPhone81CustomConfiguration auf.
 author: tfitzmac
-ms.openlocfilehash: 0c12126afc281ee3f0fb3dec6047d5350ee66f00
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8293bd245e50e3589ec744ff1fc9928e4649d1f1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315589"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872065"
 ---
 # <a name="list-windowsphone81customconfigurations"></a>Auflisten von „windowsPhone81CustomConfiguration“
 
@@ -33,10 +34,10 @@ GET /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

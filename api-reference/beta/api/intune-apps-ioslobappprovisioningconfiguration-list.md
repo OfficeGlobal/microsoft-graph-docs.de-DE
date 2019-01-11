@@ -2,12 +2,13 @@
 title: Liste iosLobAppProvisioningConfigurations
 description: Listeneigenschaften und Beziehungen der IosLobAppProvisioningConfiguration-Objekte.
 author: tfitzmac
-ms.openlocfilehash: f3535b412cb0eaac732b2237cc96adec88d19a35
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8c61c5eba8b9bdb9654d573fbdf90e20bd8ff7cf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348475"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892456"
 ---
 # <a name="list-ioslobappprovisioningconfigurations"></a>Liste iosLobAppProvisioningConfigurations
 
@@ -35,10 +36,10 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

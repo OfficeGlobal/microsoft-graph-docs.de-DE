@@ -2,12 +2,13 @@
 title: Ressourcentyp teamsDeviceUsageUserCounts
 description: Es folgt eine JSON-Darstellung der Ressource.
 author: nkramer
-ms.openlocfilehash: 1255a8e1e92bb461d5c100c72e9030f57db5f8fa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 07a43b024d133e5ac1d8eb8a2665fd3027001edb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306510"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857351"
 ---
 # <a name="teamsdeviceusageusercounts-resource-type"></a>Ressourcentyp teamsDeviceUsageUserCounts
 
@@ -23,7 +24,7 @@ ms.locfileid: "27306510"
 | mac               | Int64  |
 | Windows           | Int64  |
 | reportDate        | Datum   |
-| reportPeriod      | String |
+| reportPeriod      | Zeichenfolge |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

@@ -2,12 +2,13 @@
 title: Anlagen auflisten
 description: Mit dieser API können Sie eine Liste aller Objekte des Typs attachment abrufen, die einem Beitrag angefügt sind.
 author: dkershaw10
-ms.openlocfilehash: f03cf2b9039c88690ddd4078ebe7c843b2e1766a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 50d41b94300eaf93c6d0cd595e64facc982cb461
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321609"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872107"
 ---
 # <a name="list-attachments"></a>Anlagen auflisten
 
@@ -38,7 +39,7 @@ Insbesondere können Sie die $ Abfragezeichenfolgen-Parameter, um alle der Post 
 GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}?$expand=attachments
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

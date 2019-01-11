@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp imageInfo
 description: Einen komplexen Typ für die **Zuweisung** -Eigenschaft im VisualInfo Teil des Aktivität-Objekts darstellt.
-ms.openlocfilehash: 051338230850da7e754c5e8ad4f7d9c52fe17b32
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2bac97ff945c0e0975ffa19636a954308b895e88
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018946"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856462"
 ---
 # <a name="imageinfo-resource-type"></a>Ressourcentyp imageInfo
 
@@ -18,7 +19,7 @@ Einen komplexen Typ für die **Zuweisung** -Eigenschaft im [VisualInfo](../resou
 |:----|:-----|:-----------|
 |iconUrl | String | Optional; URI, der auf ein Symbol, die die Anwendung verwendet verweist, um die Aktivität generieren darstellt.|
 |alternateText | String | Optional; ALT-Text zugegriffen werden Inhalte für das Bild|
-|addImageQuery | Boolesch | Optional; Parameter verwendet, um den Server anzugeben kann dynamisch als Reaktion auf Parametrisierung Bild zu rendern. Beispiel – ein hoher Kontrast-Bild|
+|addImageQuery | Boolean | Optional; Parameter verwendet, um den Server anzugeben kann dynamisch als Reaktion auf Parametrisierung Bild zu rendern. Beispiel – ein hoher Kontrast-Bild|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

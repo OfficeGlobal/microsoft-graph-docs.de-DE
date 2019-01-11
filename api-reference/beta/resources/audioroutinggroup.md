@@ -2,12 +2,13 @@
 title: Ressourcentyp audioRoutingGroup
 description: Die audio Routinggruppe speichert eine private audio Route zwischen Teilnehmer an einer Unterhaltung mit mehreren Teilnehmern. Quelle der Teilnehmer selbst und die Empfänger sind eine Teilmenge der andere Teilnehmer an der Unterhaltung mit mehreren Teilnehmern.
 author: VinodRavichandran
-ms.openlocfilehash: 0e1db47963576e728a07a6b99ecff09a0f4640d0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb1b8b67404ef6a3c8f397a6b5debe9acc252b5f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344471"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860648"
 ---
 # <a name="audioroutinggroup-resource-type"></a>Ressourcentyp audioRoutingGroup
 

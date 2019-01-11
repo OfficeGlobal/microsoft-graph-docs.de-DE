@@ -2,12 +2,13 @@
 title: targetedManagedAppPolicyAssignment löschen
 description: Löscht ein targetedManagedAppPolicyAssignment-Objekt.
 author: tfitzmac
-ms.openlocfilehash: e620fe0954c5a173bcea492aff8737f5467149a7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3373c22bc160127ef0f2b5b1f552bc76621eba71
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344254"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877406"
 ---
 # <a name="delete-targetedmanagedapppolicyassignment"></a>targetedManagedAppPolicyAssignment löschen
 
@@ -39,10 +40,10 @@ DELETE /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsI
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

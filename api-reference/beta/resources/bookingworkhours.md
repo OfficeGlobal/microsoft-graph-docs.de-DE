@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp bookingWorkHours
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: 3346ee8eb20e381e1412dcfb16624954658c44fd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 94920287cd7358c68686da2d0969c676e3c481ee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061669"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888956"
 ---
 # <a name="bookingworkhours-resource-type"></a>Ressourcentyp bookingWorkHours
 
@@ -17,7 +18,7 @@ Repräsentiert den Satz der Arbeitsstunden an einem Tag der Woche, für eine [Bo
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Tag|String| Von dieser Instanz dargestellten Wochentag. Mögliche Werte sind: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday` und `saturday`.|
+|Tag|Zeichenfolge| Von dieser Instanz dargestellten Wochentag. Mögliche Werte sind: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday` und `saturday`.|
 |Zeitabschnitte an|[BookingWorkTimeSlot](bookingworktimeslot.md) -Auflistung|Eine Liste der Anfangs-/Zeiten während eines Tages.|
 
 ## <a name="json-representation"></a>JSON-Darstellung

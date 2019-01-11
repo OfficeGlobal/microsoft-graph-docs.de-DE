@@ -1,12 +1,13 @@
 ---
 title: Anmeldung Ressourcentyp
 description: 'Diese Ressource werden Benutzer oder eine Anwendung Anmeldung Aktivitäten in Ihrem Verzeichnis. '
-ms.openlocfilehash: e1975b7f690e340931cb2a4f00c29cc95b805a2e
-ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
+localization_priority: Priority
+ms.openlocfilehash: a2ccb84daee642d207919217aa2857745846c769
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27241076"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889068"
 ---
 # <a name="signin-resource-type"></a>Anmeldung Ressourcentyp
 Diese Ressource werden Benutzer oder eine Anwendung Anmeldung Aktivitäten in Ihrem Verzeichnis. 
@@ -27,7 +28,7 @@ Diese Ressource werden Benutzer oder eine Anwendung Anmeldung Aktivitäten in Ih
 |appliedConditionalAccessPolicy|[ConditionalAccessPolicy](conditionalaccesspolicy.md) -Auflistung|Enthält eine Liste der bedingten Zugriffsrichtlinien, die von der entsprechenden Anmeldung Aktivität ausgelöst werden.|
 |conditionalAccessStatus|string| Enthält den Status der bedingten Richtlinie ausgelöst. Mögliche Werte: sind `success`, `failure`, `notApplied` und `unknownFutureValue`.|
 |originalRequestId|String|Die Anforderung-Id der ersten Anforderung in der Reihenfolge für die Authentifizierung.|
-|isInteractive|Boolesch|Gibt an, ob eine Anmeldung interaktiv ist.|
+|isInteractive|Boolean|Gibt an, ob eine Anmeldung interaktiv ist.|
 |tokenIssuerName|String|Name der Identität Provider (z. B. sts.microsoft.com)|
 |tokenIssuerType|String|Stellt den Typ des IdentityProvider bereit. Mögliche Werte sind `AzureAD`, `ADFederationServices`, `UnknownFutureValue`.|
 |correlationId|String|Bezieht sich auf die ID, die vom Client gesendet wird, wenn der Anmeldung gestartet wird. Hiermit wird die entsprechende Aktivität-Anmeldung beim Aufrufen von Helpdesk oder Unterstützung bei der Problembehandlung.|

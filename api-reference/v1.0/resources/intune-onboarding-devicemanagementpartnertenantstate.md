@@ -2,12 +2,13 @@
 title: DeviceManagementPartnerTenantState Enum-Typ
 description: Partner-Status, der diesen Mandanten.
 author: tfitzmac
-ms.openlocfilehash: a597e038fc73ccaa730511ab3f27b0351600f6f3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7fd2529c2afd3589feab9a8cd4a796e78203858a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340033"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857334"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>DeviceManagementPartnerTenantState Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27340033"
 
 Partner-Status, der diesen Mandanten.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Partner-Status ist unbekannt.|
 |nicht verfügbar|1|Partner ist nicht verfügbar.|

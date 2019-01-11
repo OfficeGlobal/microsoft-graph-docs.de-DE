@@ -1,12 +1,13 @@
 ---
 title: e-Mail-Infos Ressourcentyp
 description: 'Informative Nachrichten über einen Empfänger, die beim Verfassen einer Nachricht angezeigt werden. Beispielsweise eine Out-of-Office-Nachricht '
-ms.openlocfilehash: a8686f256301317af5b02388052c6ccb02e81f69
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 62955594412b2d42a4d05b4b13858c4e511605df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064696"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860641"
 ---
 # <a name="mailtips-resource-type"></a>e-Mail-Infos Ressourcentyp
 
@@ -20,12 +21,12 @@ Informative Nachrichten über einen Empfänger, die beim Verfassen einer Nachric
 |:---------------|:--------|:----------|
 | automaticReplies | [automaticRepliesMailTips](../resources/automaticrepliesmailtips.md) | Mail-Tipps für die automatische Antwort, wenn es vom Empfänger eingerichtet wurde. |
 | customMailTip | String | Eine benutzerdefinierte e-Mail-Info, die für das Postfach des Empfängers festgelegt werden kann. |
-| deliveryRestricted| Boolesch | Gibt an, ob das Postfach des Empfängers beschränkt, beispielsweise ist akzeptieren von Nachrichten aus einer vordefinierten Liste Absender, ablehnen von Nachrichten aus einer vordefinierten Liste der Absender oder Nachrichten von nur von authentifizierten Absendern akzeptieren. |
+| deliveryRestricted| Boolean | Gibt an, ob das Postfach des Empfängers beschränkt, beispielsweise ist akzeptieren von Nachrichten aus einer vordefinierten Liste Absender, ablehnen von Nachrichten aus einer vordefinierten Liste der Absender oder Nachrichten von nur von authentifizierten Absendern akzeptieren. |
 | emailAddress | [emailAddress](../resources/emailaddress.md) | Die e-Mail-Adresse des Empfängers zum Abrufen von e-Mail-Infos für. |
 | error | [mailTipsError](../resources/mailtipserror.md) | Fehler, die während der Aktion [GetMailTips](../api/user-getmailtips.md) auftreten. |
 | externalMemberCount | Int32 | Die Anzahl der externen Elemente, wenn beim Empfänger um eine Verteilerliste handelt. |
-| isModerated |Boolesch  | Gibt an, ob das Senden von Nachrichten an den Empfänger genehmigt werden muss. Angenommen, wurde Wenn der Empfänger eine große Verteilerliste ist und eine Moderator festgelegt bis zu an diese Verteilerliste gesendete Nachrichten genehmigen oder wenn Senden von Nachrichten an ein Empfänger Genehmigung des Managers des Empfängers erforderlich. |
-| mailboxFull | Boolesch | Der vollständige Postfachstatus des Empfängers. |
+| isModerated |Boolean  | Gibt an, ob das Senden von Nachrichten an den Empfänger genehmigt werden muss. Angenommen, wurde Wenn der Empfänger eine große Verteilerliste ist und eine Moderator festgelegt bis zu an diese Verteilerliste gesendete Nachrichten genehmigen oder wenn Senden von Nachrichten an ein Empfänger Genehmigung des Managers des Empfängers erforderlich. |
+| mailboxFull | Boolean | Der vollständige Postfachstatus des Empfängers. |
 | maxMessageSize | Int32 | Die maximale Nachrichtengröße für die Organisation oder das Postfach des Empfängers konfiguriert wurde. |
 | recipientScope | String | Der Bereich des Empfängers. Mögliche Werte sind: `none`, `internal`, `external`, `externalPartner` und `externalNonParther`. Beispielsweise kann ein Administrator einer anderen Organisation zu seinem "Partner" festgelegt. Der Bereich ist nützlich, wenn ein Administrator möchte, dass bestimmte e-Mail-Infos für bestimmte Bereiche zugänglich sein. Es ist außerdem hilfreich, Absender zu informieren, dass ihre Nachricht die Organisation, deren Unterstützung bei der richtigen Entscheidungen zu Wortlaut, Ton und Inhalte lassen kann.|
 | recipientSuggestions | [recipient](../resources/recipient.md)-Sammlung | Empfänger vorgeschlagene basierend auf vorherigen Kontext, in dem sie in der gleichen Nachricht angezeigt werden. |

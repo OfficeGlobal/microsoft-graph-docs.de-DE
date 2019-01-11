@@ -2,12 +2,13 @@
 title: sectionGroup erstellen
 description: Mit dieser API können Sie eine neue Abschnittsgruppe in dem jeweils angegebenen Notizbuch erstellen.
 author: Jewan-microsoft
-ms.openlocfilehash: 72d092d3862d86f9ca79d43f26a9f1c2422e63d6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cf494e76ce222269c8e52dd840f9cfd4ee380316
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327496"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854992"
 ---
 # <a name="create-sectiongroup"></a>sectionGroup erstellen
 
@@ -32,7 +33,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext

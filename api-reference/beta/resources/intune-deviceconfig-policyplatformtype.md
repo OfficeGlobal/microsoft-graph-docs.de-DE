@@ -2,12 +2,13 @@
 title: PolicyPlatformType Enum-Typ
 description: Suppoorted Plattformtypen für Richtlinien.
 author: tfitzmac
-ms.openlocfilehash: c36551393be37f2087c64d03a323ff82a5e6e037
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6ac41cfe96a452dab4164c73327494684f15debf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323947"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862041"
 ---
 # <a name="policyplatformtype-enum-type"></a>PolicyPlatformType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27323947"
 
 Suppoorted Plattformtypen für Richtlinien.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |Android (engl.)|0|Android.|
 |androidForWork|1|AndroidForWork.|

@@ -2,12 +2,13 @@
 title: RunAsAccountType Enum-Typ
 description: Ausführungskontext des ein Gerät Management-Skript oder einer Anwendung angibt.
 author: tfitzmac
-ms.openlocfilehash: 118e7ca2e4e9e7e9cdccab9adff8745e7e8bcee8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1f0fbd29b0f50320da4979f4274e0dd58a79b84b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308498"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874095"
 ---
 # <a name="runasaccounttype-enum-type"></a>RunAsAccountType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27308498"
 
 Ausführungskontext des ein Gerät Management-Skript oder einer Anwendung angibt.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |System-|0|System-Kontext|
 |user|1|Benutzerkontext|

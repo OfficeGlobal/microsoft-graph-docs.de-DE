@@ -1,12 +1,13 @@
 ---
 title: Prüft Azure AD-Zugriff
 description: Sie können die Azure AD Bewertungen zum Konfigurieren der einmaligen oder wiederkehrenden Access Bewertungen für Konformitätsbescheinigungssysteme Zugriffsrechte des Benutzers zuzugreifen.
-ms.openlocfilehash: 33722c68429729e3996ad289d07146c95ee219ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 259a88bf95bfe0796e0ee46dd2d0a64c68831a64
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062663"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860788"
 ---
 # <a name="azure-ad-access-reviews"></a>Prüft Azure AD-Zugriff
 

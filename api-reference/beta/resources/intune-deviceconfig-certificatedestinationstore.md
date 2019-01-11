@@ -2,12 +2,13 @@
 title: CertificateDestinationStore Enum-Typ
 description: Mögliche Werte für die Ziel-Zertifikatspeicher.
 author: tfitzmac
-ms.openlocfilehash: 1e7bfd7f5e6c6b6e2e4e44d461cfccdc09877f47
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 64b57a24749b4f7f64dd1ce0cb852dd23f799f92
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347558"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873962"
 ---
 # <a name="certificatedestinationstore-enum-type"></a>CertificateDestinationStore Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27347558"
 
 Mögliche Werte für die Ziel-Zertifikatspeicher.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |computerCertStoreRoot|0|Zertifikatspeicher - Stamm.|
 |computerCertStoreIntermediate|1|Zertifikatspeicher - fortgeschrittene.|

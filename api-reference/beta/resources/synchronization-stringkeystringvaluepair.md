@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp stringKeyStringValuePair
 description: Ein Schlüssel-Wert-Paar, in denen der Schlüssel ist eine Zeichenfolge und der Wert ist eine Zeichenfolge, dargestellt.
-ms.openlocfilehash: 012625d78c8e07b3d38acba063acb57c751ced32
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8f9c0f5c87dfd2080d24d31d304cfce4197c34de
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065194"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855951"
 ---
 # <a name="stringkeystringvaluepair-resource-type"></a>Ressourcentyp stringKeyStringValuePair
 

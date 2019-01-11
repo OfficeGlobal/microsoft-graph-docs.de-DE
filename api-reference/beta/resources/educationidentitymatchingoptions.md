@@ -2,12 +2,13 @@
 title: Ressourcentyp educationIdentityMatchingOptions
 description: Stellt eine Zuordnung zwischen einem Source-Eigenschaft und einer Target-Eigenschaft für den Abgleich von Benutzerkonten bereit. Die Source-Eigenschaft sollte in den Quelldaten vorhanden sein. Target-Eigenschaft muss eine gültige Eigenschaft in Azure Active Directory (AD Azure) sein.
 author: mmast-msft
-ms.openlocfilehash: bc2b99654d8e27d52ed92d9b55a32fdff8e730f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 80e9222f8f0c03294a947f403b33cc4f2cd2ef0f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325431"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876279"
 ---
 # <a name="educationidentitymatchingoptions-resource-type"></a>Ressourcentyp educationIdentityMatchingOptions
 

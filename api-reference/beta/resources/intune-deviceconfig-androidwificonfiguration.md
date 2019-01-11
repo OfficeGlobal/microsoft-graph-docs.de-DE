@@ -2,12 +2,13 @@
 title: Ressourcentyp androidWiFiConfiguration
 description: Durch die Konfigurationen in dieses Profil bereitstellen können Sie das Verbindung zum gewünschten Wi-Fi-Endpunkt Android-Gerät anweisen. Durch Angeben von erwartet, dass die Authentifizierungstypen-Methode und der Sicherheit durch Wi-Fi-Endpunkt, dass Sie die Wi-Fi-Verbindung nahtlos für Endbenutzer vornehmen können. Dieses Profil bietet eingeschränkten und einfacher Sicherheitstypen als Enterprise Wi-Fi-Profil.
 author: tfitzmac
-ms.openlocfilehash: a243bbd6e8fe132291b514c77ff85d820b824b92
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bc8fc066a726b31e2c53e20e098b6abff8b8b025
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350407"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808624"
 ---
 # <a name="androidwificonfiguration-resource-type"></a>Ressourcentyp androidWiFiConfiguration
 
@@ -25,24 +26,24 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |[Liste androidWiFiConfigurations](../api/intune-deviceconfig-androidwificonfiguration-list.md)|[AndroidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md) -Auflistung|Listeneigenschaften und Beziehungen der [AndroidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md) -Objekte.|
 |[Abrufen von androidWiFiConfiguration](../api/intune-deviceconfig-androidwificonfiguration-get.md)|[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)|Lesen Sie Eigenschaften und Beziehungen des [AndroidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md) -Objekts.|
 |[Erstellen von androidWiFiConfiguration](../api/intune-deviceconfig-androidwificonfiguration-create.md)|[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)|Erstellen eines neuen [AndroidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md) -Objekts.|
-|[AndroidWiFiConfiguration löschen](../api/intune-deviceconfig-androidwificonfiguration-delete.md)|Keines|Löscht eine [AndroidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md).|
+|[AndroidWiFiConfiguration löschen](../api/intune-deviceconfig-androidwificonfiguration-delete.md)|Keine|Löscht eine [AndroidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md).|
 |[AndroidWiFiConfiguration aktualisieren](../api/intune-deviceconfig-androidwificonfiguration-update.md)|[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)|Aktualisieren Sie die Eigenschaften eines [AndroidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolesch|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolescher Wert|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Netzwerkname|String|Netzwerkname|
-|SSID|String|Dies ist der Name des Netzwerks Wi-Fi, die an alle Geräte gesendet wird.|
-|connectAutomatically|Boolesch|Verbinden Sie automatisch, wenn dieses Netzwerk im Bereich befindet. Eine Einstellung auf "true" überspringt die Aufforderung der Benutzer und automatisch mit Wi-Fi-Netzwerk verbinden.|
-|connectWhenNetworkNameIsHidden|Boolesch|Bei Festlegung auf true festgelegt ist, dieses Profil erzwingt, dass das Gerät für die Verbindung mit einem Netzwerk SSID nicht, die an alle Geräte seine.|
+|Netzwerkname|Zeichenfolge|Netzwerkname|
+|SSID|Zeichenfolge|Dies ist der Name des Netzwerks Wi-Fi, die an alle Geräte gesendet wird.|
+|connectAutomatically|Boolescher Wert|Verbinden Sie automatisch, wenn dieses Netzwerk im Bereich befindet. Eine Einstellung auf "true" überspringt die Aufforderung der Benutzer und automatisch mit Wi-Fi-Netzwerk verbinden.|
+|connectWhenNetworkNameIsHidden|Boolescher Wert|Bei Festlegung auf true festgelegt ist, dieses Profil erzwingt, dass das Gerät für die Verbindung mit einem Netzwerk SSID nicht, die an alle Geräte seine.|
 |wiFiSecurityType|[androidWiFiSecurityType](../resources/intune-deviceconfig-androidwifisecuritytype.md)|Gibt an, ob Wi-Fi-Endpunkt einen EAP-basierte Sicherheitstyp verwendet wird. Mögliche Werte: `open`, `wpaEnterprise`.|
 
 ## <a name="relationships"></a>Beziehungen

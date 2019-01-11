@@ -2,12 +2,13 @@
 title: windowsPhone81CustomConfiguration abrufen
 description: Lesen von Eigenschaften und Beziehungen des windowsPhone81CustomConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 04f34ab88a9f0b64e4d8a170ad5660ff5f7bd370
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8397e32307a64aa5a403fc3c4871aaa3afca5dea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301015"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862783"
 ---
 # <a name="get-windowsphone81customconfiguration"></a>windowsPhone81CustomConfiguration abrufen
 
@@ -39,10 +40,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

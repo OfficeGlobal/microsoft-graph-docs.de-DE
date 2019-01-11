@@ -2,12 +2,13 @@
 title: RatingAppsType Enum-Typ
 description: Bewertung wie Media-Inhalten in Apps
 author: tfitzmac
-ms.openlocfilehash: fa9a70128347201657dfa0d5de6044142b37525d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4c3399b7d1a9c7eb18467e2df0db217a96602493
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345528"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861013"
 ---
 # <a name="ratingappstype-enum-type"></a>RatingAppsType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27345528"
 
 Bewertung wie Media-Inhalten in Apps
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |allAllowed|0|Standardwert, alle apps Inhalte zulassen|
 |allBlocked|1|Alle Inhalte apps nicht zulassen|

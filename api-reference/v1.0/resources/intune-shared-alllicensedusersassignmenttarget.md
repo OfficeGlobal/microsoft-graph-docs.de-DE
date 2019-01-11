@@ -2,12 +2,13 @@
 title: allLicensedUsersAssignmentTarget-Ressourcentyp
 description: Stellt eine Zuweisung zu allen lizenzierten Benutzern im Mandanten dar.
 author: tfitzmac
-ms.openlocfilehash: c7dafcdfc41c7929406be03d27765fab85719163
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 22831ffc9b61a8801437554c15940163ddf67041
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329547"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857333"
 ---
 # <a name="alllicensedusersassignmenttarget-resource-type"></a>allLicensedUsersAssignmentTarget-Ressourcentyp
 

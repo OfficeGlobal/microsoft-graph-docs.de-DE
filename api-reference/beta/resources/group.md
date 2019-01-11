@@ -1,12 +1,13 @@
 ---
 title: Gruppen-Ressourcentyp
 description: Stellt eine Gruppe Azure Active Directory (AD Azure), die eine Office 365-Gruppe, ein Team in Microsoft-Teams, eine dynamische Gruppe oder eine Sicherheitsgruppe sein kann.
-ms.openlocfilehash: d48448991b75946f9ac60a037fee3b083601954a
-ms.sourcegitcommit: 5747eb595bf0c7c391b2a5219c3ae9b6a48df26b
+localization_priority: Priority
+ms.openlocfilehash: 928eb9887665b117535bcf4fa13cf6a95b8ff283
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "27265234"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866892"
 ---
 # <a name="group-resource-type"></a>Gruppen-Ressourcentyp
 
@@ -100,33 +101,33 @@ Diese Ressource unterstützt Folgendes:
 |allowExternalSenders|Boolescher Wert|Der Standardwert ist **false**. Gibt an, ob Personen außerhalb der Organisation Nachrichten an die Gruppe senden können.|
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|Die Lizenzen, die der Gruppe zugewiesen sind. Schreibgeschützt.|
 |autoSubscribeNewMembers|Boolean|Der Standardwert ist **false**. Gibt an, ob neu zur Gruppe hinzugefügte Mitglieder automatisch E-Mail-Benachrichtigungen erhalten. Sie können diese Eigenschaft in einer PATCH-Anforderung für die Gruppe festlegen; legen Sie sie nicht in der anfänglichen POST-Anforderung fest, mit der die Gruppe erstellt wird.|
-|Klassifikation|String|Beschreibt eine Klassifizierung für die Gruppe (z. B. niedrige, mittlere oder hohe geschäftliche Auswirkungen). Gültige Werte für diese Eigenschaft werden durch die Erstellung eines ClassificationList-[setting](directorysetting.md)-Werts basierend auf der [Vorlagendefinition](directorysettingtemplate.md) erstellt.|
+|Klassifikation|Zeichenfolge|Beschreibt eine Klassifizierung für die Gruppe (z. B. niedrige, mittlere oder hohe geschäftliche Auswirkungen). Gültige Werte für diese Eigenschaft werden durch die Erstellung eines ClassificationList-[setting](directorysetting.md)-Werts basierend auf der [Vorlagendefinition](directorysettingtemplate.md) erstellt.|
 |createdDateTime|DateTimeOffset| Zeitstempel der Gruppenerstellung. Der Wert kann nicht geändert werden und wird automatisch ausgefüllt, wenn die Gruppe erstellt wird. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. |
-|description|String|Eine optionale Beschreibung für die Gruppe.|
-|displayName|String|Der Anzeigename der Gruppe. Diese Eigenschaft ist beim Erstellen einer Gruppe erforderlich und kann bei Updates nicht deaktiviert werden. Unterstützt $Filter und $orderby.|
+|description|Zeichenfolge|Eine optionale Beschreibung für die Gruppe.|
+|displayName|Zeichenfolge|Der Anzeigename der Gruppe. Diese Eigenschaft ist beim Erstellen einer Gruppe erforderlich und kann bei Updates nicht deaktiviert werden. Unterstützt $Filter und $orderby.|
 |groupTypes|Zeichenfolgenauflistung| Gibt den Typ der Gruppe zu erstellen. Mögliche Werte sind `Unified` zum Erstellen einer Gruppe Office 365 oder `DynamicMembership` für dynamische Gruppen.  Für alle anderen Gruppe Typen, wie Sicherheit-aktivierten Gruppen und e-Mail-aktivierte Sicherheitsgruppen diese Eigenschaft nicht festlegen.|
-|id|String|Eindeutiger Bezeichner für die Gruppe. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für die Gruppe. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
 |isSubscribedByMail|Boolean|Der Standardwert ist **true**. Gibt an, ob der aktuelle Benutzer den Erhalt von E-Mail-Unterhaltungen abonniert hat.|
-|licenseProcessingState|String|Status der Gruppe Lizenz Zuordnung an alle Mitglieder der Gruppe angibt. Schreibgeschützt. Mögliche Werte: `QueuedForProcessing`, `ProcessingInProgress`, und `ProcessingComplete`.|
-|mail|String|Die SMTP-Adresse für die Gruppe ein, z. B. „serviceadmins@contoso.onmicrosoft.com“. Schreibgeschützt. Unterstützt $filter.|
+|licenseProcessingState|Zeichenfolge|Status der Gruppe Lizenz Zuordnung an alle Mitglieder der Gruppe angibt. Schreibgeschützt. Mögliche Werte: `QueuedForProcessing`, `ProcessingInProgress`, und `ProcessingComplete`.|
+|mail|Zeichenfolge|Die SMTP-Adresse für die Gruppe ein, z. B. „serviceadmins@contoso.onmicrosoft.com“. Schreibgeschützt. Unterstützt $filter.|
 |mailEnabled|Boolean|Gibt an, ob es sich bei der Gruppe um eine E-Mail-fähige Gruppe handelt. Wenn die **securityEnabled**-Eigenschaft auch auf **true** festgelegt ist, handelt es sich bei der Gruppe um eine E-Mail-fähige Sicherheitsgruppe; andernfalls handelt es sich bei der Gruppe um eine Microsoft Exchange-Verteilergruppe.|
 |mailNickname|String|Der E-Mail-Alias für die Gruppe (eindeutig in der Organisation). Diese Eigenschaft muss beim Erstellen einer Gruppe angegeben werden. Unterstützt $filter.|
-|membershipRule|String|Die Regel, die Mitglieder dieser Gruppe bestimmt, ob die Gruppe eine dynamische Gruppe ist (GroupTypes enthält `DynamicMembership`). Weitere Informationen zur Syntax der Mitgliedschaftsregel finden Sie unter [Regeln für die Mitgliedschaft syntax](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)|
-|membershipRuleProcessingState|String|Gibt an, ob die Verarbeitung der dynamischen Mitgliedschaft ist fehlerhaft oder angehalten. Mögliche Werte sind "Auf" oder "Angehalten"|
+|membershipRule|Zeichenfolge|Die Regel, die Mitglieder dieser Gruppe bestimmt, ob die Gruppe eine dynamische Gruppe ist (GroupTypes enthält `DynamicMembership`). Weitere Informationen zur Syntax der Mitgliedschaftsregel finden Sie unter [Regeln für die Mitgliedschaft syntax](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)|
+|membershipRuleProcessingState|Zeichenfolge|Gibt an, ob die Verarbeitung der dynamischen Mitgliedschaft ist fehlerhaft oder angehalten. Mögliche Werte sind "Auf" oder "Angehalten"|
 |onPremisesLastSyncDateTime|DateTimeOffset|Gibt das letzte Mal an dem das Objekt mit dem lokalen Verzeichnis synchronisiert wurde. Der Zeitstempeltyp stellt Informationen zum Datum und Uhrzeit mit ISO 8601-Format dar und ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. Unterstützt $filter.|
 |onPremisesProvisioningErrors|[OnPremisesProvisioningError](onpremisesprovisioningerror.md) -Auflistung| Fehler beim Microsoft Synchronisierung während der Bereitstellung verwenden. |
-|onPremisesSecurityIdentifier|String|Enthält die lokale Sicherheits-ID (SID) für die Gruppe, die von der lokalen Bereitstellung in der Cloud synchronisiert wurde. Schreibgeschützt. |
+|onPremisesSecurityIdentifier|Zeichenfolge|Enthält die lokale Sicherheits-ID (SID) für die Gruppe, die von der lokalen Bereitstellung in der Cloud synchronisiert wurde. Schreibgeschützt. |
 |onPremisesSyncEnabled|Boolean|**true**, wenn das Objekt aus einem lokalen Verzeichnis synchronisiert wird; **false**, wenn das Objekt ursprünglich aus einem lokalen Verzeichnis synchronisiert wurde, aber nicht mehr synchronisiert wird; **NULL**, wenn dieses Objekt nie aus einem lokalen Verzeichnis synchronisiert wurde (Standard). Schreibgeschützt. Unterstützt $filter.|
-|preferredDataLocation|String|Die bevorzugte Datenspeicherort für die Gruppe. Weitere Informationen finden Sie unter [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
-|preferredLanguage|String|Die bevorzugte Sprache für ein Office 365-Gruppe. Führen Sie die ISO 639-1-Code sollte; beispielsweise "En-US".|
+|preferredDataLocation|Zeichenfolge|Die bevorzugte Datenspeicherort für die Gruppe. Weitere Informationen finden Sie unter [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
+|preferredLanguage|Zeichenfolge|Die bevorzugte Sprache für ein Office 365-Gruppe. Führen Sie die ISO 639-1-Code sollte; beispielsweise "En-US".|
 |proxyAddresses|Zeichenfolgenauflistung| Beispiel: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` **any** -Operator ist für Filterausdrücke auf mehrwertige Eigenschaften erforderlich. Schreibgeschützt. Lässt keine Nullwerte zu. Unterstützt $filter. |
 |renewedDateTime|DateTimeOffset| Zeitstempel der letzten Verlängerung der Gruppe. Dies kann nicht direkt geändert werden und wird nur über die [Aktion zum Verlängern des Diensts](../api/grouplifecyclepolicy-renewgroup.md) aktualisiert. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
 |securityEnabled|Boolean|Gibt an, ob es sich bei der Gruppe um eine Sicherheitsgruppe handelt. Wenn die **mailEnabled**-Eigenschaft auch auf „true“ festgelegt ist, handelt es sich bei der Gruppe um eine E-Mail-fähige Sicherheitsgruppe; andernfalls ist die Gruppe eine Sicherheitsgruppe. Muss für Office 365-Gruppen auf **false** festgelegt sein. Unterstützt $filter.|
-|Design|String|Gibt eine Office 365-Gruppe Farbdesign an. Mögliche Werte sind `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` oder `Red`.|
+|Design|Zeichenfolge|Gibt eine Office 365-Gruppe Farbdesign an. Mögliche Werte sind `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` oder `Red`.|
 |unseenConversationsCount|Int32|Anzahl der Unterhaltungen, die seit dem letzten Besuch des angemeldeten Benutzers, der Gruppe einen oder mehrere neue Beiträge bereitgestellt wurden. Diese Eigenschaft entspricht dem **UnseenCount**.|
 |unseenCount|Int32|Anzahl der Unterhaltungen, die seit dem letzten Besuch des angemeldeten Benutzers, der Gruppe einen oder mehrere neue Beiträge bereitgestellt wurden. Diese Eigenschaft entspricht dem **UnseenConversationsCount**.|
 |unseenMessagesCount|Int32|Anzahl der neuen Beiträge, die seit dem letzten Besuch des angemeldeten Benutzers, der Gruppe der Gruppe Unterhaltungen bereitgestellt wurden.|
-|visibility|String| Gibt die Sichtbarkeit einer Office 365-Gruppe. Mögliche Werte sind: `private`, `public`, oder `hiddenmembership`; leere Werte werden als öffentliche behandelt.  Finden Sie unter [Sichtbarkeitsoptionen Gruppe](#group-visibility-options) , um mehr zu erfahren.<br>Sichtbarkeit kann festgelegt werden, nur, wenn eine Gruppe erstellt wird. Es kann nicht bearbeitet werden.<br>Sichtbarkeit wird nur für unified Gruppen unterstützt. Es ist nicht für Sicherheitsgruppen unterstützt.|
+|visibility|Zeichenfolge| Gibt die Sichtbarkeit einer Office 365-Gruppe. Mögliche Werte sind: `private`, `public`, oder `hiddenmembership`; leere Werte werden als öffentliche behandelt.  Finden Sie unter [Sichtbarkeitsoptionen Gruppe](#group-visibility-options) , um mehr zu erfahren.<br>Sichtbarkeit kann festgelegt werden, nur, wenn eine Gruppe erstellt wird. Es kann nicht bearbeitet werden.<br>Sichtbarkeit wird nur für unified Gruppen unterstützt. Es ist nicht für Sicherheitsgruppen unterstützt.|
 
 ### <a name="group-visibility-options"></a>Gruppe Sichtbarkeitsoptionen
 

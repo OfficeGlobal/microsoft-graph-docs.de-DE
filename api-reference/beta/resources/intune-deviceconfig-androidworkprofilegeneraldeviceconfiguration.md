@@ -2,12 +2,13 @@
 title: Ressourcentyp androidWorkProfileGeneralDeviceConfiguration
 description: Android Arbeit Profil allgemeine Gerätekonfiguration.
 author: tfitzmac
-ms.openlocfilehash: 4b784d2bbcafc01caf7d4fb6129f590641c32d32
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f640f5a6967a45c6ea83666f94cb239978dbdbe1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357911"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892477"
 ---
 # <a name="androidworkprofilegeneraldeviceconfiguration-resource-type"></a>Ressourcentyp androidWorkProfileGeneralDeviceConfiguration
 
@@ -25,19 +26,19 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |[Liste androidWorkProfileGeneralDeviceConfigurations](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-list.md)|[AndroidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) -Auflistung|Listeneigenschaften und Beziehungen der [AndroidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) -Objekte.|
 |[Abrufen von androidWorkProfileGeneralDeviceConfiguration](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-get.md)|[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)|Lesen Sie Eigenschaften und Beziehungen des [AndroidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) -Objekts.|
 |[Erstellen von androidWorkProfileGeneralDeviceConfiguration](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-create.md)|[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)|Erstellen eines neuen [AndroidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) -Objekts.|
-|[AndroidWorkProfileGeneralDeviceConfiguration löschen](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-delete.md)|Keines|Löscht eine [AndroidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md).|
+|[AndroidWorkProfileGeneralDeviceConfiguration löschen](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-delete.md)|Keine|Löscht eine [AndroidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md).|
 |[AndroidWorkProfileGeneralDeviceConfiguration aktualisieren](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-update.md)|[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)|Aktualisieren Sie die Eigenschaften eines [AndroidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolesch|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolescher Wert|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |passwordBlockFingerprintUnlock|Boolescher Wert|Gibt an, ob die Entsperrung durch Fingerabdruck blockiert werden soll.|
 |passwordBlockTrustAgents|Boolescher Wert|Gibt an, ob Smart Lock oder andere Vertrauensstellungs-Agents blockiert werden sollen.|
@@ -48,17 +49,17 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Legt fest, nach wie vielen fehlgeschlagenen Anmeldeversuchen eine Zurücksetzung auf die Werkseinstellungen durchgeführt wird. Gültige Werte: 4 bis 11.|
 |passwordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Geforderter Kennworttyp. Mögliche Werte sind: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric` und `alphanumericWithSymbols`.|
 |workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|Typ der Daten, die Freigabe ist zulässig. Mögliche Werte: sind `deviceDefault`, `preventAny`, `allowPersonalToWork` und `noRestrictions`.|
-|workProfileBlockNotificationsWhileDeviceLocked|Boolesch|Gibt an, ob beim Gerät gesperrt Benachrichtigungen zu blockieren.|
-|workProfileBlockAddingAccounts|Boolesch|Blockieren Sie den Benutzer hinzufügen/entfernen von Konten im Profil Arbeit.|
-|workProfileBluetoothEnableContactSharing|Boolesch|Können Sie Bluetooth-Geräte können Kontakte im Unternehmen zugreifen.|
-|workProfileBlockScreenCapture|Boolesch|Blockiert die Bildschirmaufnahme im Profil Arbeit.|
-|workProfileBlockCrossProfileCallerId|Boolesch|Block Anzeige Arbeit Profil Anrufer-ID im persönlichen Profil.|
-|workProfileBlockCamera|Boolesch|Blockieren der Profil Kamera.|
-|workProfileBlockCrossProfileContactsSearch|Boolesch|Verfügbarkeit der Block Arbeit Profil Kontakte im persönlichen Profil.|
-|workProfileBlockCrossProfileCopyPaste|Boolesch|Boolescher Wert, der angibt, wenn die Einstellung firewallübergreifenden disallow Profil kopieren und einfügen aktiviert ist.|
+|workProfileBlockNotificationsWhileDeviceLocked|Boolescher Wert|Gibt an, ob beim Gerät gesperrt Benachrichtigungen zu blockieren.|
+|workProfileBlockAddingAccounts|Boolescher Wert|Blockieren Sie den Benutzer hinzufügen/entfernen von Konten im Profil Arbeit.|
+|workProfileBluetoothEnableContactSharing|Boolescher Wert|Können Sie Bluetooth-Geräte können Kontakte im Unternehmen zugreifen.|
+|workProfileBlockScreenCapture|Boolescher Wert|Blockiert die Bildschirmaufnahme im Profil Arbeit.|
+|workProfileBlockCrossProfileCallerId|Boolescher Wert|Block Anzeige Arbeit Profil Anrufer-ID im persönlichen Profil.|
+|workProfileBlockCamera|Boolescher Wert|Blockieren der Profil Kamera.|
+|workProfileBlockCrossProfileContactsSearch|Boolescher Wert|Verfügbarkeit der Block Arbeit Profil Kontakte im persönlichen Profil.|
+|workProfileBlockCrossProfileCopyPaste|Boolescher Wert|Boolescher Wert, der angibt, wenn die Einstellung firewallübergreifenden disallow Profil kopieren und einfügen aktiviert ist.|
 |workProfileDefaultAppPermissionPolicy|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md)|Geforderter Kennworttyp. Mögliche Werte: sind `deviceDefault`, `prompt`, `autoGrant` und `autoDeny`.|
-|workProfilePasswordBlockFingerprintUnlock|Boolesch|Gibt an, ob blockieren Fingerabdruck Entsperren für Arbeit Profil.|
-|workProfilePasswordBlockTrustAgents|Boolesch|Gibt an, ob intelligente sperren und andere Trust-Agenten für Arbeit Profil zu blockieren.|
+|workProfilePasswordBlockFingerprintUnlock|Boolescher Wert|Gibt an, ob blockieren Fingerabdruck Entsperren für Arbeit Profil.|
+|workProfilePasswordBlockTrustAgents|Boolescher Wert|Gibt an, ob intelligente sperren und andere Trust-Agenten für Arbeit Profil zu blockieren.|
 |workProfilePasswordExpirationDays|Int32|Anzahl von Tagen vor der Arbeit Profilkennwort läuft ab. Gültige Werte: 1 bis 365.|
 |workProfilePasswordMinimumLength|Int32|Minimale Länge der Arbeit Profilkennwort. Gültige Werte: 4 bis 16.|
 |workProfilePasswordMinNumericCharacters|Int32|Minimale Anzahl der numerische Zeichen in Arbeit Profilkennwort erforderlich. Gültige Werte 1 bis 10|
@@ -71,10 +72,10 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |workProfilePasswordPreviousPasswordBlockCount|Int32|Anzahl der vorherigen Arbeit Profil Kennwörter zu blockieren. Gültige Werte: 0 bis 24.|
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Anzahl der Anmeldung Fehler zulässig sind, bevor Arbeit Profil entfernt wird und alle Daten gelöscht. Gültige Werte: 4 bis 11.|
 |workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Typ der Arbeit Profilkennwort, das erforderlich ist. Mögliche Werte sind: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric` und `alphanumericWithSymbols`.|
-|workProfileRequirePassword|Boolesch|Kennwort erforderlich ist oder nicht für Arbeit Profil|
+|workProfileRequirePassword|Boolescher Wert|Kennwort erforderlich ist oder nicht für Arbeit Profil|
 |securityRequireVerifyApps|Boolescher Wert|Legt fest, dass die Android-Funktion „Verify Apps“ aktiviert sein muss.|
-|vpnAlwaysOnPackageIdentifier|String|Aktivieren Sie Sperrmodus für immer auf VPN.|
-|vpnEnableAlwaysOnLockdownMode|Boolesch|Aktivieren Sie Sperrmodus für immer auf VPN.|
+|vpnAlwaysOnPackageIdentifier|Zeichenfolge|Aktivieren Sie Sperrmodus für immer auf VPN.|
+|vpnEnableAlwaysOnLockdownMode|Boolescher Wert|Aktivieren Sie Sperrmodus für immer auf VPN.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

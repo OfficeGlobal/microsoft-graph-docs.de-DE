@@ -1,12 +1,13 @@
 ---
 title: Abrufen von privilegedRoleAssignment
 description: Rufen Sie die Eigenschaften und Beziehungen des PrivilegedRoleAssignment-Objekts ab.
-ms.openlocfilehash: ad8815842698be0ef6a3eef37dc3e26f7dc11dbd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 12dd2587dc024deff48f678d44df4e2c876f02ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060369"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861376"
 ---
 # <a name="get-privilegedroleassignment"></a>Abrufen von privilegedRoleAssignment
 

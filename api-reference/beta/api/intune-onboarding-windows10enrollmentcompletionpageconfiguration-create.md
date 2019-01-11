@@ -2,12 +2,13 @@
 title: Erstellen von windows10EnrollmentCompletionPageConfiguration
 description: Erstellen eines neuen windows10EnrollmentCompletionPageConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: f9e9fa454f7a48c31b8568bba8d7e63a80e99f81
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aa459255e48323c5f4e614dc9d12f8ae89d2f4e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321525"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862727"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>Erstellen von windows10EnrollmentCompletionPageConfiguration
 
@@ -35,10 +36,10 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt windows10EnrollmentCompletionPageConfiguration eine JSON-Darstellung.
@@ -54,13 +55,13 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |createdDateTime|DateTimeOffset|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |Version|Int32|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|Boolesch|Zeigen Sie an oder blenden Sie des installationsfortschritts für Benutzer aus|
-|blockDeviceSetupRetryByUser|Boolesch|Ermöglicht es dem Benutzer, das von Setup auf Installationsfehler wiederholen|
-|allowDeviceResetOnInstallFailure|Boolesch|Zulassen Sie oder blockieren Sie Gerät zurücksetzen auf Installationsfehler|
-|allowLogCollectionOnInstallFailure|Boolesch|Zulassen Sie oder blockieren Sie Log-Auflistung auf Installationsfehler|
+|showInstallationProgress|Boolean|Zeigen Sie an oder blenden Sie des installationsfortschritts für Benutzer aus|
+|blockDeviceSetupRetryByUser|Boolean|Ermöglicht es dem Benutzer, das von Setup auf Installationsfehler wiederholen|
+|allowDeviceResetOnInstallFailure|Boolean|Zulassen Sie oder blockieren Sie Gerät zurücksetzen auf Installationsfehler|
+|allowLogCollectionOnInstallFailure|Boolean|Zulassen Sie oder blockieren Sie Log-Auflistung auf Installationsfehler|
 |customErrorMessage|String|Legen Sie benutzerdefinierte Fehlermeldung nach einem Installationsfehler anzeigen|
 |installProgressTimeoutInMinutes|Int32|Legen Sie die Installation des Fortschritts Timeout in Minuten|
-|allowDeviceUseOnInstallFailure|Boolesch|Ermöglicht es dem Benutzer weiterhin verwenden das Gerät auf Installationsfehler|
+|allowDeviceUseOnInstallFailure|Boolean|Ermöglicht es dem Benutzer weiterhin verwenden das Gerät auf Installationsfehler|
 |selectedMobileAppIds|Collection von Objekten des Typs „String“|Ausgewählte Anwendungen zum Nachverfolgen des Installationsstatus|
 
 

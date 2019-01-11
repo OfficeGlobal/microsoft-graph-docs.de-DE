@@ -2,12 +2,13 @@
 title: Ressourcentyp variableManagementConditionExpression
 description: Ergibt die Bedingung Verwaltungsstatus als boolescher Ausdruck.
 author: tfitzmac
-ms.openlocfilehash: 8a6ee46bd42139d519e845c7fe53ab3ae964833f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5d0805f7c698f90cbcb10bfffdce9c95ce6705b2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305922"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890153"
 ---
 # <a name="variablemanagementconditionexpression-resource-type"></a>Ressourcentyp variableManagementConditionExpression
 

@@ -2,12 +2,13 @@
 title: WindowsInformationProtectionPinCharacterRequirements Enum-Typ
 description: Anforderungen an die PIN-Zeichen
 author: tfitzmac
-ms.openlocfilehash: 7a89916f53d252ee72fab52d52c1c40f295f7b6f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f233e9cb96e37680c00e296aa8a323a878804b65
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303675"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881333"
 ---
 # <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>WindowsInformationProtectionPinCharacterRequirements Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27303675"
 
 Anforderungen an die PIN-Zeichen
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |notAllow|0|Nicht zulassen|
 |requireAtLeastOne|1|Benötigen Sie mindestens eine|

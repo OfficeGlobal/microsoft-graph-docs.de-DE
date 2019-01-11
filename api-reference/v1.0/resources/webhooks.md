@@ -1,12 +1,13 @@
 ---
 title: Verwenden der Microsoft Graph-API zum Abrufen Benachrichtigungen ändern
 description: Die Microsoft Graph-REST-API verwendet einen Webhook Mechanismus zum Übermitteln von Benachrichtigungen an Clients. Ein Client ist ein Webdienst, der den eigenen URL Erhalt von Benachrichtigungen konfiguriert. Client-apps verwenden Benachrichtigungen, um deren Status nach Änderungen zu aktualisieren. Weitere Einzelheiten, einschließlich das Abonnieren und behandeln eingehende Benachrichtigungen Set finden Sie unter Einrichten von Benachrichtigungen, damit die Änderungen in Benutzerdaten.
-ms.openlocfilehash: c7d468b7c5064911d27d3a93bc3160d03c2a4dc3
-ms.sourcegitcommit: 02ead22efd4f10cd50f89c9f5aa3b6dfda96aeec
+localization_priority: Priority
+ms.openlocfilehash: e846e31870e2d14a1e7822cbb9f42682c8b2ac1c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123945"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860865"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Verwenden der Microsoft Graph-API zum Abrufen Benachrichtigungen ändern
 

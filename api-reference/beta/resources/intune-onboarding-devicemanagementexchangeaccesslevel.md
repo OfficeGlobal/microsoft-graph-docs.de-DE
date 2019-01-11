@@ -2,12 +2,13 @@
 title: DeviceManagementExchangeAccessLevel Enum-Typ
 description: Zugriffsebene in Exchange.
 author: tfitzmac
-ms.openlocfilehash: 8f163c5186c1fc8dac13a22d730870c52df66a06
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 03588e51a301bfcc4aac5eb3f9c0bfe0fbba9ea9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320797"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889551"
 ---
 # <a name="devicemanagementexchangeaccesslevel-enum-type"></a>DeviceManagementExchangeAccessLevel Enum-Typ
 
@@ -17,9 +18,9 @@ ms.locfileid: "27320797"
 
 Zugriffsebene in Exchange.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Keine|0|Keine gerätezugriffsregel wurde in Exchange konfiguriert.|
+|n/v|0|Keine gerätezugriffsregel wurde in Exchange konfiguriert.|
 |zulassen|1|Ermöglichen des Gerätezugriffs auf Exchange das an.|
 |Blockieren|2|Blockieren Sie das Gerät den Zugriff auf Exchange.|
 |Quarantäne|3|Isolieren Sie das Gerät im Exchange.|

@@ -1,12 +1,13 @@
 ---
 title: SynchronizationSchema löschen
 description: Löscht das angepasste Schema und setzt das Schema auf die Standardkonfiguration zurück. Wenn das Schema im Kontext der Vorlage gelöscht wird, wird das Schema auf den Standardwert eine der Vorlage zugeordnet zurückgesetzt `factoryTag`.
-ms.openlocfilehash: 81c1a918b10e8f4553b3e99312f20bb538bfbe4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 281911d34355f598f4a3fe57b20c701dde36d4b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064153"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855888"
 ---
 # <a name="delete-synchronizationschema"></a>SynchronizationSchema löschen
 

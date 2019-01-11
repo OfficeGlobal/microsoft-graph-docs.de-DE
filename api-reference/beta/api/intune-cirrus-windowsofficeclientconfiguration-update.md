@@ -2,12 +2,13 @@
 title: WindowsOfficeClientConfiguration aktualisieren
 description: Eine bestimmte nicht sicherheitsrelevante Richtlinie Nutzlast Patch.
 author: tfitzmac
-ms.openlocfilehash: 728fe7b6ffdb4b964488317551fdbaef139d2803
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e13228c6fc467fa49b740c02b4b7068efb1ec42e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310752"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863875"
 ---
 # <a name="update-windowsofficeclientconfiguration"></a>WindowsOfficeClientConfiguration aktualisieren
 
@@ -35,10 +36,10 @@ PATCH /officeConfiguration/clientConfigurations/{key}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [WindowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md) eine JSON-Darstellung.

@@ -2,12 +2,13 @@
 title: Liste apps im team
 description: Abrufen der Liste apps im angegebenen Team installiert.
 author: nkramer
-ms.openlocfilehash: c1fabf1418bc704788e96cc762a251186077f52c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fbc603475cf1bdfcbdb50cff26d5fbfd7c2d34f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353739"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864246"
 ---
 # <a name="list-apps-in-team"></a>Liste apps im team
 
@@ -39,7 +40,7 @@ Diese Methode unterstützt die $filter $select, und $erweitern [OData-Abfragepar
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

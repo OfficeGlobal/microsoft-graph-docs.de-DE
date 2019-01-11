@@ -1,12 +1,13 @@
 ---
 title: singleValueLegacyExtendedProperty abrufen
 description: Sie können eine einzelne Ressourceninstanz erweitert mit einer bestimmten erweiterten Eigenschaft oder eine Auflistung von Resource-Instanzen abzurufen.
-ms.openlocfilehash: 72ae071d2c5c92af02d26af2474c776a5dc1c83c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ee9d51f945650c8051badd27f1b934d03f47cc7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064612"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873185"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>singleValueLegacyExtendedProperty abrufen
 
@@ -27,7 +28,7 @@ Die folgenden Benutzerressourcen werden unterstützt:
 - [contactFolder](../resources/contactfolder.md) 
 - [Ereignis](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [Nachricht](../resources/message.md) 
+- [message](../resources/message.md) 
 - [Outlook-Aufgabe](../resources/outlooktask.md)
 - [Outlook-Ordner "Aufgaben"](../resources/outlooktaskfolder.md)
 
@@ -52,7 +53,7 @@ Je nach der Ressource kommen die erweiterte Eigenschaft aus und geben Sie die Be
 | [event](../resources/event.md)-Ressourcen für Gruppen | Group.Read.All | Nicht unterstützt | Nicht unterstützt |
 | [post](../resources/post.md)-Ressourcen für Gruppen | Group.Read.All | Nicht unterstützt | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
-| [Nachricht](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 | [Outlook-Aufgabe](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Nicht unterstützt |
 | [Outlook-Ordner "Aufgaben"](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | Nicht unterstützt |
 

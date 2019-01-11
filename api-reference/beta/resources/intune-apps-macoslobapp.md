@@ -2,12 +2,13 @@
 title: Ressourcentyp macOSLobApp
 description: Enthält Eigenschaften und geerbten Eigenschaften für die Mac OS LOB-App.
 author: tfitzmac
-ms.openlocfilehash: 0494c46f770d1e46821ce23a7cedff22e0c087a1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 25306bb02ad9bdb52b2df92af84b2e5a644efba6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309562"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866143"
 ---
 # <a name="macoslobapp-resource-type"></a>Ressourcentyp macOSLobApp
 
@@ -25,7 +26,7 @@ Erbt von [mobileLobApp](../resources/intune-apps-mobilelobapp.md).
 |[Liste macOSLobApps](../api/intune-apps-macoslobapp-list.md)|[MacOSLobApp](../resources/intune-apps-macoslobapp.md) -Auflistung|Listeneigenschaften und Beziehungen der [MacOSLobApp](../resources/intune-apps-macoslobapp.md) -Objekte.|
 |[Abrufen von macOSLobApp](../api/intune-apps-macoslobapp-get.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|Lesen Sie Eigenschaften und Beziehungen des [MacOSLobApp](../resources/intune-apps-macoslobapp.md) -Objekts.|
 |[Erstellen von macOSLobApp](../api/intune-apps-macoslobapp-create.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|Erstellen eines neuen [MacOSLobApp](../resources/intune-apps-macoslobapp.md) -Objekts.|
-|[MacOSLobApp löschen](../api/intune-apps-macoslobapp-delete.md)|Keines|Löscht eine [MacOSLobApp](../resources/intune-apps-macoslobapp.md).|
+|[MacOSLobApp löschen](../api/intune-apps-macoslobapp-delete.md)|Keine|Löscht eine [MacOSLobApp](../resources/intune-apps-macoslobapp.md).|
 |[MacOSLobApp aktualisieren](../api/intune-apps-macoslobapp-update.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|Aktualisieren Sie die Eigenschaften eines [MacOSLobApp](../resources/intune-apps-macoslobapp.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
@@ -38,7 +39,7 @@ Erbt von [mobileLobApp](../resources/intune-apps-mobilelobapp.md).
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Das große Symbol, das in den App-Details angezeigt und für den Upload des Symbols verwendet werden soll. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|isFeatured|Boolescher Wert|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|isFeatured|Boolean|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |privacyInformationUrl|String|URL zur Datenschutzerklärung. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |informationUrl|String|URL zur Seite mit weiteren Informationen. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|String|Der Besitzer der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -57,7 +58,7 @@ Erbt von [mobileLobApp](../resources/intune-apps-mobilelobapp.md).
 |identityVersion|String|Die Version der Identität|
 |md5HashChunkSize|Int32|Die Chunk-Size für MD5-hash|
 |md5Hash|Collection von Objekten des Typs „String“|Die MD5-Hash-codes|
-|ignoreVersionDetection|Boolescher Wert|Boolescher Wert, der steuert, ob nach der Installation der App auf einem Gerät die App-Version zur Erkennung der App verwendet werden soll. Legen Sie dies für Mac OS Line of Business (LoB) apps "true", die ein Updatefeature Self zu verwenden.|
+|ignoreVersionDetection|Boolean|Boolescher Wert, der steuert, ob nach der Installation der App auf einem Gerät die App-Version zur Erkennung der App verwendet werden soll. Legen Sie dies für Mac OS Line of Business (LoB) apps "true", die ein Updatefeature Self zu verwenden.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

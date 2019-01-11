@@ -2,12 +2,13 @@
 title: windowsInformationProtectionDesktopApp-Ressourcentyp
 description: Desktop-App für Windows-Informationsschutz
 author: tfitzmac
-ms.openlocfilehash: 9f0d86bac5ff5ec2caee4e6d44990043606a8da6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2cfcca1f4ce8338c2fd7f894e6b0b7a23fbe66e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349140"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855265"
 ---
 # <a name="windowsinformationprotectiondesktopapp-resource-type"></a>windowsInformationProtectionDesktopApp-Ressourcentyp
 
@@ -26,7 +27,7 @@ Erbt von [windowsInformationProtectionApp](../resources/intune-mam-windowsinform
 |description|String|Die Beschreibung der App. Geerbt von [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
 |publisherName|String|Der Name des Herausgebers, geerbt von [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
 |productName|String|Der Produktname. Geerbt von [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
-|denied|Boolescher Wert|Bei „true“ wird der App der Schutz oder eine Ausnahme verweigert. Geerbt von [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
+|denied|Boolean|Bei „true“ wird der App der Schutz oder eine Ausnahme verweigert. Geerbt von [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
 |binaryName|String|Der binäre Name|
 |binaryVersionLow|String|Die niedrigere Binärversion.|
 |binaryVersionHigh|String|Die größte Binärversion.|

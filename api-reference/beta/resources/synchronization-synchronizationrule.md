@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp synchronizationRule
 description: Definiert, wie die Synchronisierung für das Synchronisierungsmodul, einschließlich der zu synchronisierender Objekte und in welche Richtung ausgeführt werden sollen, wie Objekte in das Zielverzeichnis Objekte aus dem Quellverzeichnis zugeordnet werden soll und wie Attribute sollte transformiert werden, wenn sie von der Quelle in das Zielverzeichnis synchronisiert sind.
-ms.openlocfilehash: c860228637a6cc3ad9137851408379bd7f779c75
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a739db59a68ece026f9f13dfd22bafce8112f6b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060078"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856154"
 ---
 # <a name="synchronizationrule-resource-type"></a>Ressourcentyp synchronizationRule
 
@@ -22,7 +23,7 @@ Synchronisierungsregeln werden als Teil der [Synchronisierungsschema](synchroniz
 
 | Eigenschaft      | Typ      | Beschreibung    |
 |:--------------|:----------|:---------------|
-|bearbeitet werden       |Boolesch    |`true`Wenn die Synchronisierung Regel angepasst werden kann. `false` Wenn diese Regel schreibgeschützt ist und nicht geändert werden sollte.|
+|bearbeitet werden       |Boolean    |`true`Wenn die Synchronisierung Regel angepasst werden kann. `false` Wenn diese Regel schreibgeschützt ist und nicht geändert werden sollte.|
 |id             |String     |Kennung für die Synchronisierung Regel. Einen der Bezeichner vom Synchronisierungsmodul erkannt muss werden. Unterstützt die Regel, die in der Synchronisierung-Vorlage, die von der API zurückgegebenen IDs gefunden werden können.|
 |Metadaten       |[StringKeyStringValuePair](synchronization-stringkeystringvaluepair.md) -Auflistung |Zusätzliche Erweiterungseigenschaften. Wenn vom Supportteam explizit angewiesen, sollte Metadatenwerte nicht geändert werden.|
 |name           |String     |Lesbare Name der Regel Synchronisierung. Lässt keine Nullwerte zu.|

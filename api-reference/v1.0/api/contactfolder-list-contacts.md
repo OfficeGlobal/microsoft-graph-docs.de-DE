@@ -1,12 +1,13 @@
 ---
 title: Kontakte auflisten
 description: Dient zum Abrufen einer Kontaktsammlung aus dem Standardkontaktordner des angemeldeten Benutzers (`.../me/contacts`) oder aus dem angegebenen Kontaktordner.
-ms.openlocfilehash: f70ea5000a5d0228f49b8bfa6179a97cb5899c3c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a617cae074ee467d0c47ffcc86351a5e4d65e45a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017689"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855468"
 ---
 # <a name="list-contacts"></a>Kontakte auflisten
 

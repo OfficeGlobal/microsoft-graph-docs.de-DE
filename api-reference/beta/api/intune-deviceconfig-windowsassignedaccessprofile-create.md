@@ -2,12 +2,13 @@
 title: Erstellen von windowsAssignedAccessProfile
 description: Erstellen eines neuen WindowsAssignedAccessProfile-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 626b0815234153f585d74edcdad65f7ad2dfd3a4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4db64578ec2d03f81d10110951a4caf93dc564c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304543"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827356"
 ---
 # <a name="create-windowsassignedaccessprofile"></a>Erstellen von windowsAssignedAccessProfile
 
@@ -35,10 +36,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt WindowsAssignedAccessProfile eine JSON-Darstellung.
@@ -49,7 +50,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |:---|:---|:---|
 |id|String|Schlüssel der Entität|
 |Profilname|String|Dies ist ein Anzeigename zur Identifizierung einer Gruppe von Anwendungen, das Layout von diese apps auf das Startmenü und die Benutzer, die diese Konfiguration Kiosk zugewiesen ist.|
-|showTaskBar|Boolesch|Mit dieser Einstellung kann den Administrator an, ob der Taskleiste oder nicht angezeigt wird.|
+|showTaskBar|Boolean|Mit dieser Einstellung kann den Administrator an, ob der Taskleiste oder nicht angezeigt wird.|
 |appUserModelIds|Collection von Objekten des Typs „String“|Dies sind die einzige Windows Store-Apps, die über das Startmenü gestartet werden.|
 |desktopAppPaths|Collection von Objekten des Typs „String“|Dies sind die Pfade der Desktop-Apps, die auf das Startmenü zur Verfügung stehen, und die einzige apps des Benutzers kann zu starten.|
 |userAccounts|Collection von Objekten des Typs „String“|Die Benutzerkonten, die mit dieser Konfiguration Kiosk gesperrt werden.|

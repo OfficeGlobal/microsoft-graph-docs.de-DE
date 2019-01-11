@@ -1,12 +1,13 @@
 ---
 title: educationClass-Ressourcentyp
 description: 'Stellt eine Klasse in einer Schule dar. Die **educationClass**-Ressource entspricht der Office 365-Gruppe und hat die gleiche ID. Kursteilnehmer sind reguläre Mitglieder der Klasse, Lehrer sind Besitzer und verfügen über entsprechende Rechte. Damit Office-Benutzeroberflächen ordnungsgemäß funktionieren, müssen Lehrer Mitglieder der Sammlungen der Lehrkräfte wie auch der Mitglieder sein.  '
-ms.openlocfilehash: 49b307cb59b6e1a3002f70f9a1b367251040250b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1c657a1eba131a9bcfa8dd4f84e2ba2141a4750a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058171"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866787"
 ---
 # <a name="educationclass-resource-type"></a>educationClass-Ressourcentyp
 

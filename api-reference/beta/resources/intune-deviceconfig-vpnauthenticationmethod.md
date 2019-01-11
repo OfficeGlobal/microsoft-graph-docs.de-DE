@@ -2,12 +2,13 @@
 title: VpnAuthenticationMethod Enum-Typ
 description: VPN-Authentifizierungsmethode.
 author: tfitzmac
-ms.openlocfilehash: 975649ec9b8fc3d6ce6d69dbc5a5a59baba44aef
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c6954360a273a30457819dd865b34d771d1344b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351604"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888725"
 ---
 # <a name="vpnauthenticationmethod-enum-type"></a>VpnAuthenticationMethod Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27351604"
 
 VPN-Authentifizierungsmethode.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |certificate|0|Die Authentifizierung mit einem Zertifikat.|
 |usernameAndPassword|1|Verwenden Sie Benutzername und Kennwort für die Authentifizierung.|

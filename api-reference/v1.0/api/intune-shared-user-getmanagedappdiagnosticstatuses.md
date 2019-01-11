@@ -2,12 +2,13 @@
 title: Funktion „getManagedAppDiagnosticStatuses“
 description: Diese Funktion ruft den Diagnosevalidierungsstatus des jeweils angegebenen Benutzers ab.
 author: tfitzmac
-ms.openlocfilehash: 7318556fd6a87f9f71e5f0a68490a0293182c60d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: af90cc194dc1e9c1a954a090c748ef679248d9d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314182"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888585"
 ---
 # <a name="getmanagedappdiagnosticstatuses-function"></a>Funktion „getManagedAppDiagnosticStatuses“
 
@@ -34,10 +35,10 @@ GET /users/{usersId}/getManagedAppDiagnosticStatuses
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

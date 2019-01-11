@@ -2,12 +2,13 @@
 title: Auflisten von „iosManagedAppProtection“
 description: Listet die Eigenschaften und Beziehungen von Objekten des Typs iosManagedAppProtection auf.
 author: tfitzmac
-ms.openlocfilehash: 8a44dd40d15deb99febe4d13ca1badad128106ef
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5625cca8c03cbf8ea7c9c9963b186bffc70357c2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329757"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887662"
 ---
 # <a name="list-iosmanagedappprotections"></a>Auflisten von „iosManagedAppProtection“
 
@@ -35,10 +36,10 @@ GET /deviceAppManagement/iosManagedAppProtections
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: Ressourcentyp usageDetails
 description: Komplexer Typ, die Eigenschaften des verwendeten Elemente enthält. Wenn die Ressource des letzten Zugriffs auf Informationen (Ansicht) und (bearbeitet) vom Benutzer geändert.
 author: simonhult
-ms.openlocfilehash: ef5efcfce439e9d08784637cb02657d7cd37adf7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8729973c2393a918d26314ec3b27a2c68079dbfd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349350"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858954"
 ---
 # <a name="usagedetails-resource-type"></a>Ressourcentyp usageDetails
 

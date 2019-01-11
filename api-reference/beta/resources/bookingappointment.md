@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp bookingAppointment
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: d7ae5aa0a8a228bc4453742147ca9c858e093a8a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: aed5f26d69835c69021e8c3c8c5e27f5180d6c69
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058536"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856112"
 ---
 # <a name="bookingappointment-resource-type"></a>Ressourcentyp bookingAppointment
 
@@ -24,7 +25,7 @@ Stellt einen Termin Kunden für eine [BookingService](bookingservice.md), durch 
 |[Abrufen von bookingAppointment](../api/bookingappointment-get.md) | [bookingAppointment](bookingappointment.md) |Lesen Sie die Eigenschaften und Beziehungen des **BookingAppointment** -Objekts.|
 |[Update](../api/bookingappointment-update.md) | [bookingAppointment](bookingappointment.md)    |Aktualisieren eines **BookingAppointment** -Objekts. |
 |[Delete](../api/bookingappointment-delete.md) | Keine |Löscht ein Objekt **BookingAppointment** . |
-|[Cancel](../api/bookingappointment-cancel.md)|Keines| Abbrechen eines **BookingAppointment** -Objekts.|
+|[Abbrechen](../api/bookingappointment-cancel.md)|Keine| Abbrechen eines **BookingAppointment** -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
@@ -43,7 +44,7 @@ Stellt einen Termin Kunden für eine [BookingService](bookingservice.md), durch 
 |invoiceId|String|Die ID der Rechnung.|
 |invoiceStatus|string| Der Status der Rechnung. Mögliche Werte sind: `draft`, `reviewing`, `open`, `canceled`, `paid` und `corrective`.|
 |invoiceUrl|String|Die URL der Rechnung in Microsoft Bookings.|
-|optOutOfCustomerEmail|Boolesch|True gibt an, dass die [BookingCustomer](bookingcustomer.md) für diesen Termin nicht möchte einer Bestätigung für diesen Termin.|
+|optOutOfCustomerEmail|Boolean|True gibt an, dass die [BookingCustomer](bookingcustomer.md) für diesen Termin nicht möchte einer Bestätigung für diesen Termin.|
 |postBuffer|Duration|Der Zeitraum, nach den Termin enden, für die Bereinigung als Beispiel zu reservieren. Der Wert wird im Format [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) ausgedrückt. |
 |preBuffer|Duration|Die Zeitspanne, vor dem Beginn des Termins für die Vorbereitung, als Beispiel zu reservieren. Der Wert wird im Format [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) ausgedrückt.|
 |Preis|Gleitkommawert mit doppelter Genauigkeit|Die regulären Preis für einen Termin für die angegebene [BookingService](bookingservice.md).|

@@ -2,12 +2,13 @@
 title: Ressourcentyp androidWorkProfileCustomConfiguration
 description: Android Arbeit Profil benutzerdefinierte Konfiguration
 author: tfitzmac
-ms.openlocfilehash: 8ef43145c8fe259e60cb897786bd9805c6de8b8a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2a34ad2755d22d41b57f297a5a19a24fab1bd64e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310997"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860620"
 ---
 # <a name="androidworkprofilecustomconfiguration-resource-type"></a>Ressourcentyp androidWorkProfileCustomConfiguration
 
@@ -23,7 +24,7 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |[Liste androidWorkProfileCustomConfigurations](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-list.md)|[AndroidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) -Auflistung|Listeneigenschaften und Beziehungen der [AndroidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) -Objekte.|
 |[Abrufen von androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-get.md)|[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Lesen Sie Eigenschaften und Beziehungen des [AndroidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) -Objekts.|
 |[Erstellen von androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-create.md)|[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Erstellen eines neuen [AndroidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) -Objekts.|
-|[AndroidWorkProfileCustomConfiguration löschen](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-delete.md)|Keines|Löscht eine [AndroidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md).|
+|[AndroidWorkProfileCustomConfiguration löschen](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-delete.md)|Keine|Löscht eine [AndroidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md).|
 |[AndroidWorkProfileCustomConfiguration aktualisieren](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-update.md)|[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Aktualisieren Sie die Eigenschaften eines [AndroidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

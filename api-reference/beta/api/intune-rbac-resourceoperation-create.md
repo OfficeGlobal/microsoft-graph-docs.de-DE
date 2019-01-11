@@ -2,12 +2,13 @@
 title: resourceOperation erstellen
 description: Erstellt neue Objekte des Typs resourceOperation.
 author: tfitzmac
-ms.openlocfilehash: bc3b0c8193d77177b83f139827fad1a3a9686fb4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ea0a77b56cbbfd68a7886e220b29222b794cf932
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317836"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862601"
 ---
 # <a name="create-resourceoperation"></a>resourceOperation erstellen
 
@@ -35,10 +36,10 @@ POST /deviceManagement/resourceOperations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des resourceOperation-Objekts an.
@@ -52,7 +53,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |resourceName|String|Name der Ressource, auf die die Operation angewendet wird|
 |actionName|String|Typ von Aktion, den die Operation ausführen wird. Der Wert für „actionName“ sollte prägnant sein und aus möglichst wenigen Wörtern bestehen.|
 |description|String|Beschreibung der Ressourcenoperation. Diese Beschreibung wird angezeigt, wenn der Benutzer im Azure-Portal den Mauszeiger auf der Operation platziert.|
-|enabledForScopeValidation|Boolesch|Bestimmt, ob die Berechtigung für pro Rollenzuweisung definierten Bereiche nicht überprüft wird.|
+|enabledForScopeValidation|Boolean|Bestimmt, ob die Berechtigung für pro Rollenzuweisung definierten Bereiche nicht überprüft wird.|
 
 
 

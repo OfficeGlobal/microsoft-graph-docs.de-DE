@@ -2,12 +2,13 @@
 title: Abrufen von „managedAppStatus“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs managedAppStatus.
 author: tfitzmac
-ms.openlocfilehash: 77d3b46ffc9ba657269770e17aefb6fa6f4d821d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8397b041996403791da584812a9a598af8519278
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336953"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863378"
 ---
 # <a name="get-managedappstatus"></a>Abrufen von „managedAppStatus“
 
@@ -35,10 +36,10 @@ GET /deviceAppManagement/managedAppStatuses/{managedAppStatusId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

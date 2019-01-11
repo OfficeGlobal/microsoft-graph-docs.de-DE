@@ -2,12 +2,13 @@
 title: deviceCompliancePolicySettingStateSummary löschen
 description: Löscht ein deviceCompliancePolicySettingStateSummary-Objekt.
 author: tfitzmac
-ms.openlocfilehash: 7f56c2fd222f50cb57b9f86a4c7cc9f49c709f06
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8e4b4e732af98c802f7c61a69d1e6c703003d5f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332921"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869125"
 ---
 # <a name="delete-devicecompliancepolicysettingstatesummary"></a>deviceCompliancePolicySettingStateSummary löschen
 
@@ -35,10 +36,10 @@ DELETE /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceComp
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

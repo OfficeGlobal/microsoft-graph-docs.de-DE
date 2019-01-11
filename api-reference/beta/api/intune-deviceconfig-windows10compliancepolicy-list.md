@@ -2,12 +2,13 @@
 title: Auflisten von „windows10CompliancePolicy“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs windows10CompliancePolicy auf.
 author: tfitzmac
-ms.openlocfilehash: e4c385464c758aed782b7dd1ea8f5d6d51f92c1b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c1aedec43721f6ec4c5649df2f8073c0ca7ea53f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308099"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863665"
 ---
 # <a name="list-windows10compliancepolicies"></a>Auflisten von „windows10CompliancePolicy“
 
@@ -35,10 +36,10 @@ GET /deviceManagement/deviceCompliancePolicies
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

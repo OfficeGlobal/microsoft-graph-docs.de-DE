@@ -1,12 +1,13 @@
 ---
 title: Mehrwertige erweiterte Eigenschaft erstellen
 description: 'In diesem Artikel erläutern wir Ihnen,wie Sie eine oder mehrere mehrwertige erweiterte Eigenschaften in einer neuen oder vorhandenen Instanz einer Ressource erstellen können. '
-ms.openlocfilehash: 17f1bf0a4dd03de3704349fcfd496b768f60d56f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 54be6f428ac5d7b604093fdad3a03b48b89243a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062394"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863049"
 ---
 # <a name="create-multi-value-extended-property"></a>Mehrwertige erweiterte Eigenschaft erstellen
 
@@ -21,7 +22,7 @@ Die folgenden Benutzerressourcen werden unterstützt:
 - [contactFolder](../resources/contactfolder.md) 
 - [Ereignis](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [Nachricht](../resources/message.md)
+- [message](../resources/message.md)
 - [Outlook-Aufgabe](../resources/outlooktask.md)
 - [Outlook-Ordner "Aufgaben"](../resources/outlooktaskfolder.md)
 

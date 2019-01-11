@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp licenseAssignmentState
 description: 'Die **LicenseAssignmentStates** -Eigenschaft der Benutzerentität ist eine Auflistung von **LicenseAssignmentState**. Es enthält Details zur Lizenz Zuordnungen für einen Benutzer. Die Details enthält Informationen wie folgt:  '
-ms.openlocfilehash: 4e7101acc756a845913a081368b79242834ef3bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 51ff878f356902362487eda36d17c1894c33e5f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063893"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855629"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>Ressourcentyp licenseAssignmentState
 

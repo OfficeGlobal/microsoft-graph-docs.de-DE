@@ -2,12 +2,13 @@
 title: DeviceRegistrationState Enum-Typ
 description: Registrierung Gerätestatus.
 author: tfitzmac
-ms.openlocfilehash: 9fdd5cd3a63472e841f0d97f8cbee3a0f548380d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e2b755d213d39beb228afe603b2066b55416f14c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320090"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857323"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>DeviceRegistrationState Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27320090"
 
 Registrierung Gerätestatus.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht registriert|0|Das Gerät ist nicht registriert.|
 |registriert|2|Das Gerät registriert ist.|

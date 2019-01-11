@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp bookingBusiness
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: 0ea11dcd16a129e6d6648be4b09435c5c052de9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fb8b79b4c728236ebc8231bae5da74e65466c20c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061754"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861635"
 ---
 # <a name="bookingbusiness-resource-type"></a>Ressourcentyp bookingBusiness
 
@@ -32,8 +33,8 @@ Stellt ein Unternehmen in Microsoft Bookings dar. Dies ist das Objekt der oberst
 |[Erstellen von bookingStaffMember](../api/bookingbusiness-post-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| Erstellen Sie eine neue BookingStaffMember, durch die Veröffentlichung auf der StaffMembers-Auflistung.|
 |[Liste staffMembers](../api/bookingbusiness-list-staffmembers.md) |[BookingStaffMember](bookingstaffmember.md) -Auflistung| Rufen Sie eine Auflistung der BookingStaffMember-Objekts.|
 |[calendarView auflisten](../api/bookingbusiness-list-calendarview.md)|[BookingAppointment](bookingappointment.md) -Auflistung|Rufen Sie die Auflistung von **BookingAppointment** -Objekten, die in der angegebene Datumsbereich auftritt.|
-|[Veröffentlichen](../api/bookingbusiness-publish.md)|Keines|Stellen Sie die Terminplan Seite dieses Unternehmens externen Kunden zur Verfügung. **IsPublished** -Eigenschaft auf True festgelegt, und **PublicUrl** -Eigenschaft, um die URL der Seite planen.|
-|[Aufheben der Veröffentlichung](../api/bookingbusiness-unpublish.md)|Keines| Stellen Sie die Terminplan Seite dieses Unternehmens externen Kunden nicht zur Verfügung. **IsPublished** -Eigenschaft auf False und **PublicUrl** -Eigenschaft auf null festgelegt.|
+|[Veröffentlichen](../api/bookingbusiness-publish.md)|Keine|Stellen Sie die Terminplan Seite dieses Unternehmens externen Kunden zur Verfügung. **IsPublished** -Eigenschaft auf True festgelegt, und **PublicUrl** -Eigenschaft, um die URL der Seite planen.|
+|[Aufheben der Veröffentlichung](../api/bookingbusiness-unpublish.md)|Keine| Stellen Sie die Terminplan Seite dieses Unternehmens externen Kunden nicht zur Verfügung. **IsPublished** -Eigenschaft auf False und **PublicUrl** -Eigenschaft auf null festgelegt.|
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
@@ -45,7 +46,7 @@ Stellt ein Unternehmen in Microsoft Bookings dar. Dies ist das Objekt der oberst
 |displayName|String|Der Name des Unternehmens, welche mit Kunden Schnittstellen. Dieser Name wird im oberen Bereich des Unternehmens planen Seite angezeigt.|
 |E-Mail|String|Die e-Mail-Adresse für das Unternehmen.|
 |id|String|Ein eindeutiger programmgesteuerten Bezeichner für das Unternehmen. Schreibgeschützt.|
-|isPublished|Boolesch|Die Seite scheduling wurde an externen Kunden zur Verfügung gestellt. Verwenden Sie die Aktionen **Veröffentlichen** und **Aufheben der Veröffentlichung** , um diese Eigenschaft festzulegen. Schreibgeschützt.|
+|isPublished|Boolean|Die Seite scheduling wurde an externen Kunden zur Verfügung gestellt. Verwenden Sie die Aktionen **Veröffentlichen** und **Aufheben der Veröffentlichung** , um diese Eigenschaft festzulegen. Schreibgeschützt.|
 |phone|String|Die Telefonnummer für das Unternehmen. Die **Telefon** -Eigenschaft zusammen mit der **Adresse** und **WebSiteUrl**, in der Fußzeile eines Unternehmens planen Seite angezeigt werden.|
 |publicUrl|String|Die URL für die Planung Seite, die nach dem Sie [Veröffentlichen](../api/bookingbusiness-publish.md) oder [Aufheben der Veröffentlichung](../api/bookingbusiness-unpublish.md) die Seite festgelegt ist. Schreibgeschützt.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Gibt an, wie die Buchungen für dieses Unternehmen erstellt werden können.|

@@ -1,12 +1,13 @@
 ---
 title: Auflisten von Websites
 description: Liste der verfügbaren [Standorte] [] in einer Organisation, die bereitgestellten Filterkriterien entsprechen und Abfragen Optionen.
-ms.openlocfilehash: 4e7d9d12f7b18df84a8b23cc3272084b310edb3a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 87ce5b68ccadffa6e0422c413ab79ee784f361c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27062827"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855818"
 ---
 # <a name="enumerate-sites"></a>Auflisten von Websites
 

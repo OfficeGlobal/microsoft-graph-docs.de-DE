@@ -2,12 +2,13 @@
 title: Liste managedDeviceMobileAppConfigurationDeviceStatuses
 description: Listeneigenschaften und Beziehungen der ManagedDeviceMobileAppConfigurationDeviceStatus-Objekte.
 author: tfitzmac
-ms.openlocfilehash: 3f68bccfa51a6783d845b33ffbbb1ca41822aadd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 810be50eb9532b0de226cb5b8264b464fc9c420b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334532"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873213"
 ---
 # <a name="list-manageddevicemobileappconfigurationdevicestatuses"></a>Liste managedDeviceMobileAppConfigurationDeviceStatuses
 
@@ -33,10 +34,10 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

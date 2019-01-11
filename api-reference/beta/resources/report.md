@@ -1,12 +1,13 @@
 ---
 title: Arbeiten mit Office 365-Verwendungsberichten in Microsoft Graph
 description: Mit Microsoft Graph können Sie auf Office 365-Verwendungsberichtsquellen zugreifen, um Informationen darüber zu erhalten, wie Mitarbeiter in Ihrem Unternehmen Office 365-Diensten nutzen. Sie können zum Beispiel identifizieren, wer einen Dienst häufig verwendet und Kontingente erreicht oder wer vielleicht gar keine Office 365-Lizenz benötigt.
-ms.openlocfilehash: 81e0bc649c8475ac6b83a74f3552e83ce0c3ddb2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 1fcefc9c5fb5ba57551b75b74081ea60a1bcf1b3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059009"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861334"
 ---
 # <a name="working-with-office-365-usage-reports-in-microsoft-graph"></a>Arbeiten mit Office 365-Verwendungsberichten in Microsoft Graph
 

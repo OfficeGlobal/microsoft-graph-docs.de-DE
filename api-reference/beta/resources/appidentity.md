@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp appIdentity
 description: Gibt die Identität der Anwendung, die die Aktion ausgeführt oder wurde geändert. Enthält Anwendungs-Id, Name, Dienstprinzipalnamen-ID und Name. Diese Ressource wird von der DirectoryAudit API aufgerufen.
-ms.openlocfilehash: 6fcbe8dbb1e17139111c5f1fa9e8681cd1b996a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ec61782fca0ab4004fab5a55bd4774c0d64afb3a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061962"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855783"
 ---
 # <a name="appidentity-resource-type"></a>Ressourcentyp appIdentity
 Gibt die Identität der Anwendung, die die Aktion ausgeführt oder wurde geändert. Enthält Anwendungs-Id, Name, Dienstprinzipalnamen-ID und Name. Diese Ressource wird von der [DirectoryAudit](../api/directoryaudit-get.md) API aufgerufen.

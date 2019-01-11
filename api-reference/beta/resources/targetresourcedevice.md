@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp targetResourceDevice
 description: Gibt das Geräteobjekt, das hinzugefügt wurde, aktualisiert oder gelöscht von Administratoren als Teil des Audit-Aktivität. Die Ressource TargetResource abgeleitet.
-ms.openlocfilehash: df9c7bfef17139fed5fa53d6642fe40b2d0f9bd6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f1aae6f019dd352a0493893cba43ae972929bb33
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061680"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863161"
 ---
 # <a name="targetresourcedevice-resource-type"></a>Ressourcentyp targetResourceDevice
 Gibt das Geräteobjekt, das hinzugefügt wurde, aktualisiert oder gelöscht von Administratoren als Teil des Audit-Aktivität. Die Ressource [TargetResource](targetresource.md) abgeleitet.

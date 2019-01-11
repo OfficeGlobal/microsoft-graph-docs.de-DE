@@ -2,12 +2,13 @@
 title: ImportedDeviceIdentityType Enum-Typ
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 46c4e7d8ce2c06a4e806329753920892c0cc46ac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ead5ad597752b018dcf9d484e79c2fa08b937847
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328651"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863371"
 ---
 # <a name="importeddeviceidentitytype-enum-type"></a>ImportedDeviceIdentityType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27328651"
 
 Noch nicht dokumentiert
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannten Wert von ImportedDeviceIdentityType.|
 |imei|1|Identität des Geräts ist vom Typ Imei.|

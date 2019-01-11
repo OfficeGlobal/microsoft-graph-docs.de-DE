@@ -1,12 +1,13 @@
 ---
 title: Konfigurieren der Synchronisierung mit Verzeichnis Extension-Attribute
 description: 'Sie können das Synchronisierungsschema zum Einschließen von Azure Active Directory (AD Azure) Erweiterung Verzeichnisattributen anpassen. In diesem Artikel wird beschrieben, wie mithilfe einer Directory Extension-Attribut (**extension_9d98asdfl15980a_Nickname**) den Wert des User.CommunityNickname in Vertriebs aufgefüllt wird. In diesem Szenario müssen Sie Azure AD-Connect richten Sie eine Reihe von Attributen Erweiterung Directory von Windows Server Active Directory lokalen Azure AD bereit. '
-ms.openlocfilehash: fa29e405b235107cd6773444085e7b409441c90e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 093d78b1e47e412a97ac8a4306c432465e24b5e1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064786"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850099"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>Konfigurieren der Synchronisierung mit Verzeichnis Extension-Attribute
 

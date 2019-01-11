@@ -2,12 +2,13 @@
 title: deviceComplianceActionItem aktualisieren
 description: Aktualisieren der Eigenschaften eines deviceComplianceActionItem-Objekts.
 author: tfitzmac
-ms.openlocfilehash: c3d3124b01bd6c15ff0519baac0920d7e59cc9bd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c5a80c04ced36a87519217d135257cad640fc29b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361831"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861194"
 ---
 # <a name="update-devicecomplianceactionitem"></a>deviceComplianceActionItem aktualisieren
 
@@ -33,10 +34,10 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sche
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekt des Typs [deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) an.

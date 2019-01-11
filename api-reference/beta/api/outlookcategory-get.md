@@ -2,12 +2,13 @@
 title: Abrufen der Outlook-Kategorie
 description: Dient zum Abrufen der Eigenschaften und Beziehungen des angegebenen outlookCategory-Objekts.
 author: angelgolfer-ms
-ms.openlocfilehash: c3d60ced7213176936d79574445b62eb525304ad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 45327a6143104b4507a8e573b5cba01b605abd00
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345682"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863007"
 ---
 # <a name="get-outlook-category"></a>Abrufen der Outlook-Kategorie
 

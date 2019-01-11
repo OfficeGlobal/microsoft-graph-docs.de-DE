@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp synchronizationQuarantine
 description: Enthält Informationen zu den Quarantäne Status einer SynchronizationJob.
-ms.openlocfilehash: b29da9644968ffe17abb02010f8aa5c304ca7905
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fba0077d48e69ed4c2c190d0b50a6fcfc1749626
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058940"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849728"
 ---
 # <a name="synchronizationquarantine-resource-type"></a>Ressourcentyp synchronizationQuarantine
 

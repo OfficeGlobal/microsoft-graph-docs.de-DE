@@ -2,12 +2,13 @@
 title: Abrufen von DDE-Kanal
 description: Rufen Sie die Eigenschaften und die Beziehungen eines Kanals ab.
 author: nkramer
-ms.openlocfilehash: 38081fbc23e0f77dc69d1dbb6beba64b8f6d0a82
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: b942f2a3cfdca2b33b282fc5720a9d467c2eb0ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324773"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856077"
 ---
 # <a name="get-channel"></a>Abrufen von DDE-Kanal
 
@@ -38,7 +39,7 @@ GET /teams/{id}/channels/{id}
 Diese Methode unterstützt die $filter $select, und $erweitern [OData-Abfrageparameter](/graph/query-parameters) helfen, die Antwort anzupassen.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

@@ -2,12 +2,13 @@
 title: Erstellen von depOnboardingSetting
 description: Erstellen eines neuen DepOnboardingSetting-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 11f2e5217e4040a7d4345c9271b459e608075498
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 89e46c715b5f888ae3c9f1fb02a0566da8485944
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330660"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854901"
 ---
 # <a name="create-deponboardingsetting"></a>Erstellen von depOnboardingSetting
 
@@ -35,10 +36,10 @@ POST /deviceManagement/depOnboardingSettings
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt DepOnboardingSetting eine JSON-Darstellung.
@@ -53,13 +54,13 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |lastModifiedDateTime|DateTimeOffset|Wenn der Dienst Onboarded wurde.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Wenn der Dienst letzten Syned mit Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Wenn Intune zuletzt eine Synchronisierung angefordert wird.|
-|shareTokenWithSchoolDataSyncService|Boolesch|Unabhängig davon, ob die Datenausführungsverhinderung token Freigabe mit dem Schule Daten Sync-Dienst aktiviert ist.|
+|shareTokenWithSchoolDataSyncService|Boolean|Unabhängig davon, ob die Datenausführungsverhinderung token Freigabe mit dem Schule Daten Sync-Dienst aktiviert ist.|
 |lastSyncErrorCode|Int32|Fehlercode von Apple während der letzten Synchronisierung der Datenausführungsverhinderung gemeldet.|
 |"TokenType"|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Ruft ab oder legt ihn fest die Datenausführungsverhinderung Token. Mögliche Werte sind: `none`, `dep` und `appleSchoolManager`.|
 |tokenName|String|Anzeigename für die Datenausführungsverhinderung Token|
 |syncedDeviceCount|Int32|Ruft synchronisierter Anzahl der Geräte|
 |defaultProfileDisplayName|String|Ruft synchronisierter Anzahl der Geräte|
-|dataSharingConsentGranted|Boolesch|Stimmen Sie gewährte Zugriffsberechtigungen für die Datenfreigabe mit Apple Dep-Dienst|
+|dataSharingConsentGranted|Boolean|Stimmen Sie gewährte Zugriffsberechtigungen für die Datenfreigabe mit Apple Dep-Dienst|
 
 
 

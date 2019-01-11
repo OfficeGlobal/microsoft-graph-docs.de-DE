@@ -2,12 +2,13 @@
 title: WelcomeScreenMeetingInformation Enum-Typ
 description: Mögliche Werte für die Willkommensseite Besprechungsinformationen.
 author: tfitzmac
-ms.openlocfilehash: f69f8d7497f5498f1d4a090b18c90a8a6edabeab
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 28ec39638c3048a6fda0c5a0cdeca3cd848ad578
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315323"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861278"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>WelcomeScreenMeetingInformation Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27315323"
 
 Mögliche Werte für die Willkommensseite Besprechungsinformationen.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
 |showOrganizerAndTimeOnly|1|Organisator und Uhrzeit nur anzeigen.|

@@ -2,12 +2,13 @@
 title: EasAuthenticationMethod Enum-Typ
 description: Exchange Active Sync-Authentifizierungsmethode.
 author: tfitzmac
-ms.openlocfilehash: b0479b807a0b5f19df65626dcb9371407e784042
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7d9f11080b236e1321fa7b7f529fd7021ca002f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329372"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875075"
 ---
 # <a name="easauthenticationmethod-enum-type"></a>EasAuthenticationMethod Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27329372"
 
 Exchange Active Sync-Authentifizierungsmethode.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |usernameAndPassword|0|Die Authentifizierung mit einem Benutzernamen und Kennwort.|
 |certificate|1|Die Authentifizierung mit einem Zertifikat.|

@@ -1,12 +1,13 @@
 ---
 title: mailFolder-Ressoucentyp
 description: Ein mailFolder-Element im Postfach eines Benutzers, wie z. B. Posteingang und Entwürfe. Mailordner können Nachrichten, andere Outlook-Elemente und untergeordnete E-Mail-Ordner enthalten.
-ms.openlocfilehash: 96e2b6cf2af9ffbe6a6c66d41efe174d1706074d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 32af125f57e02394c4d01913aaf783df11809242
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017388"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888158"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder-Ressoucentyp
 

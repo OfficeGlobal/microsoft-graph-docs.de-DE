@@ -2,12 +2,13 @@
 title: Ressourcentyp androidPermissionAction
 description: Zuordnung zwischen einer Android-app-Berechtigung und die Aktion Android sollte verwenden, wenn diese Berechtigung angefordert wird.
 author: tfitzmac
-ms.openlocfilehash: 90117b30dae765151e79d8ad1c2ae1afaa5a42ff
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: daf72bbc5f8d1e32480adeda72c3f759255f54db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331136"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860536"
 ---
 # <a name="androidpermissionaction-resource-type"></a>Ressourcentyp androidPermissionAction
 

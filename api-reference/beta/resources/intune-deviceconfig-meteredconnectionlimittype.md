@@ -2,12 +2,13 @@
 title: MeteredConnectionLimitType Enum-Typ
 description: Gemessene Verbindungseinstellungen Grenzwert.
 author: tfitzmac
-ms.openlocfilehash: 5507585c9301135022aa0bccd370db2c35699607
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0bed25406ddc61cb67331092d06e0e2881c7014c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355839"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875712"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>MeteredConnectionLimitType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27355839"
 
 Gemessene Verbindungseinstellungen Grenzwert.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unrestricted|0|Nicht eingeschränkt|
 |feste|1|Fest|

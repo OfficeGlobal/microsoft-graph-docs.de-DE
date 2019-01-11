@@ -2,12 +2,13 @@
 title: Ressourcentyp windowsManagementAppHealthState
 description: Windows Management app Health Zustand Entität.
 author: tfitzmac
-ms.openlocfilehash: 5ff77ce54a99ed71a8f4b3498a469342b2e46367
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 23381aed47ade8f42937f6bc48cfff33b36d1fa7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359703"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875299"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>Ressourcentyp windowsManagementAppHealthState
 
@@ -22,7 +23,7 @@ Windows Management app Health Zustand Entität.
 |[Liste windowsManagementAppHealthStates](../api/intune-devices-windowsmanagementapphealthstate-list.md)|[WindowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) -Auflistung|Listeneigenschaften und Beziehungen der [WindowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) -Objekte.|
 |[Abrufen von windowsManagementAppHealthState](../api/intune-devices-windowsmanagementapphealthstate-get.md)|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)|Lesen Sie Eigenschaften und Beziehungen des [WindowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) -Objekts.|
 |[Erstellen von windowsManagementAppHealthState](../api/intune-devices-windowsmanagementapphealthstate-create.md)|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)|Erstellen eines neuen [WindowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) -Objekts.|
-|[WindowsManagementAppHealthState löschen](../api/intune-devices-windowsmanagementapphealthstate-delete.md)|Keines|Löscht eine [WindowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md).|
+|[WindowsManagementAppHealthState löschen](../api/intune-devices-windowsmanagementapphealthstate-delete.md)|Keine|Löscht eine [WindowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md).|
 |[WindowsManagementAppHealthState aktualisieren](../api/intune-devices-windowsmanagementapphealthstate-update.md)|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)|Aktualisieren Sie die Eigenschaften eines [WindowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

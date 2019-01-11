@@ -2,12 +2,13 @@
 title: MailFolder erstellen
 description: Mit dieser API können Sie neue untergeordnete Objekte des Typs „mailfolder“ erstellen.
 author: angelgolfer-ms
-ms.openlocfilehash: 717baa63f3bb15355eaf59387b8fc701ab1288b7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 44a61fda9120faaac0d8d69590c677896796765e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331521"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860032"
 ---
 # <a name="create-mailfolder"></a>MailFolder erstellen
 
@@ -36,9 +37,9 @@ Geben Sie in der Abfrage-URL als eine Ordner-ID oder den Ordnernamen einer bekan
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Header | Wert |
+| Kopfzeile | Wert |
 |:-------|:------|
-| Autorisierung | `Bearer {token}`. Erforderlich. |
+| Authorization | `Bearer {token}`. Erforderlich. |
 | Content-Type | `application/json`. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext

@@ -2,12 +2,13 @@
 title: Ressourcentyp windowsKioskAzureADGroup
 description: Die Klasse verwendet, um eine Gruppe AzureAD für die Konfiguration Kiosk identifizieren
 author: tfitzmac
-ms.openlocfilehash: 3c4cdd8388c71b5f051ea8338e82123c241ec429
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 16c2b17220a92f9f230b786238b1195e2af48d6b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339522"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849868"
 ---
 # <a name="windowskioskazureadgroup-resource-type"></a>Ressourcentyp windowsKioskAzureADGroup
 
@@ -22,8 +23,8 @@ Erbt vom [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|String|Der Anzeigename der Gruppe der AzureAD, die mit dieser Konfiguration Kiosk gesperrt wird|
-|groupId|String|Die ID der AzureAD Gruppe, die mit dieser Konfiguration Kiosk gesperrt wird|
+|displayName|Zeichenfolge|Der Anzeigename der Gruppe der AzureAD, die mit dieser Konfiguration Kiosk gesperrt wird|
+|groupId|Zeichenfolge|Die ID der AzureAD Gruppe, die mit dieser Konfiguration Kiosk gesperrt wird|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

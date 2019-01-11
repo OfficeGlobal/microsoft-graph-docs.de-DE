@@ -2,12 +2,13 @@
 title: WindowsUpdateForBusinessUpdateWeeks Enum-Typ
 description: Die Installation des Updates auf den Wochen des Monats geplant
 author: tfitzmac
-ms.openlocfilehash: 2d42e9e4951cdcbec1acc89f9478421b1aef0a36
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 563c1cf2a756fb77560b11a6ec42d8b698879374
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328811"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877035"
 ---
 # <a name="windowsupdateforbusinessupdateweeks-enum-type"></a>WindowsUpdateForBusinessUpdateWeeks Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27328811"
 
 Die Installation des Updates auf den Wochen des Monats geplant
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |vom Typ userDefined|0|Ermöglicht es dem Benutzer festgelegt.|
 |ErsteWoche|1|Die Installation des Updates in der ersten Woche des Monats geplant|

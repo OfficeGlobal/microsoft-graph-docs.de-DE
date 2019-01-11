@@ -2,12 +2,13 @@
 title: deviceManagementTroubleshootingEvent-Ressourcentyp
 description: Ereignis, das einen allgemeinen Fehler darstellt
 author: tfitzmac
-ms.openlocfilehash: 9ce9a1e13b21750d279fefb7cd8f7cae9608ac6a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 629483de20b903d2c7f361552cfd998af9858101
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303416"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861264"
 ---
 # <a name="devicemanagementtroubleshootingevent-resource-type"></a>deviceManagementTroubleshootingEvent-Ressourcentyp
 

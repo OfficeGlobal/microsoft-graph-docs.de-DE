@@ -2,12 +2,13 @@
 title: VppToken aktualisieren
 description: Aktualisieren der Eigenschaften eines vppToken-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 420efbc72ae8ef19bde91ca4b7a2ec5592f4e87a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 521d62ab5e4b66bda5307fbb52da842e54301bc5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338752"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855069"
 ---
 # <a name="update-vpptoken"></a>VppToken aktualisieren
 
@@ -35,10 +36,10 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [vppToken](../resources/intune-onboarding-vpptoken.md) an.
@@ -60,10 +61,10 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Aktueller Synchronisierungsstatus seit der letzten Synchronisierung der Anwendung, die mit dem Apple Volume Purchase Program-Token durchgeführt wurde. Mögliche Werte sind: `none`, `inProgress`, `completed`, `failed`. Mögliche Werte sind: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Angabe, ob Anwendungen für das VPP-Token automatisch aktualisiert werden.|
 |countryOrRegion|String|Angabe, ob Anwendungen für das VPP-Token automatisch aktualisiert werden.|
-|dataSharingConsentGranted|Boolesch|Stimmen Sie für Datenfreigaben über die Apple Volume Purchase Program gewährt.|
+|dataSharingConsentGranted|Boolean|Stimmen Sie für Datenfreigaben über die Apple Volume Purchase Program gewährt.|
 |displayName|String|Ein Administrator angegebene token Anzeigenamen.|
 |locationName|String|Token Speicherort von Apple VPP zurückgegeben.|
-|claimTokenManagementFromExternalMdm|Boolesch|Admin stimmen ausgibt token Management von externen MDM zulassen|
+|claimTokenManagementFromExternalMdm|Boolean|Admin stimmen ausgibt token Management von externen MDM zulassen|
 
 
 

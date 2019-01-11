@@ -2,12 +2,13 @@
 title: DataSharingConsent löschen
 description: Löscht eine DataSharingConsent.
 author: tfitzmac
-ms.openlocfilehash: aef28ba2eaeccfe31404ee7bda166a2aa299abfd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9b221893fdbecf878c3d5c80020f39ff5283cc19
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355097"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861488"
 ---
 # <a name="delete-datasharingconsent"></a>DataSharingConsent löschen
 
@@ -35,10 +36,10 @@ DELETE /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

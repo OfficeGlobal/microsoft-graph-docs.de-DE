@@ -2,12 +2,13 @@
 title: Erstellen der Anwendung
 description: Verwenden Sie diese API, um eine neue Anwendung erstellen.
 author: lleonard-msft
-ms.openlocfilehash: 9530c94598eeb2413af67782b50bbf70f415e2a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 9a4ca06bfd19dbe6319bb276cd5c33fc13f6d81d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361530"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855006"
 ---
 # <a name="create-application"></a>Erstellen der Anwendung
 
@@ -34,7 +35,7 @@ POST /applications
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [Application](../resources/application.md) -Objekts.

@@ -1,12 +1,13 @@
 ---
 title: 'OrgContact: GetMemberObjects'
 description: Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema Berechtigungen.
-ms.openlocfilehash: d68bd0d4d1ace57fa91b5874bf376fa0a3c4fef4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ac6c8fddf4cedae156ec25933ea8d9f95bf8020a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064365"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856574"
 ---
 # <a name="orgcontact-getmemberobjects"></a>OrgContact: GetMemberObjects
 
@@ -37,7 +38,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolescher Wert||
+|securityEnabledOnly|Boolean||
 
 ## <a name="response"></a>Antwort
 

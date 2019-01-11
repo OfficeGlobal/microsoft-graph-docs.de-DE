@@ -2,12 +2,13 @@
 title: 'Benutzer: GetMailTips'
 description: Rufen Sie die e-Mail-Infos für einen oder mehrere Empfänger als verfügbar für dem angemeldeten Benutzer.
 author: dkershaw10
-ms.openlocfilehash: 039d86c728c2394153ebe1a5aebba1243d40d726
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2577b37f6cbfa3bd6dc5eff712c07562ecdadbf2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304046"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855965"
 ---
 # <a name="user-getmailtips"></a>Benutzer: GetMailTips
 
@@ -35,7 +36,7 @@ POST /users/{id|userPrincipalName}/getMailTips
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert|
+| Kopfzeile       | Wert|
 |:-----------  |:------|
 | Authorization | Bearer {token}. Erforderlich. |
 | Content-Type  | application/json  |

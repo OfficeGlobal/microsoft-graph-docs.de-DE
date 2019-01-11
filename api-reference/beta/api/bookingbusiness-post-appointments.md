@@ -1,12 +1,13 @@
 ---
 title: Erstellen von bookingAppointment
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: 436e0121a36fbc0dd0bf0d7cd3302d7999776d9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: df8d1ab3d4eeb93de37e51085935b121609dd023
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060344"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855076"
 ---
 # <a name="create-bookingappointment"></a>Erstellen von bookingAppointment
 

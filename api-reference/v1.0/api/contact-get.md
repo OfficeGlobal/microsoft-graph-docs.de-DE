@@ -2,12 +2,13 @@
 title: Kontakt abrufen
 description: Mit dieser API können Sie die Eigenschaften und Beziehungen eines Kontaktobjekts abrufen.
 author: angelgolfer-ms
-ms.openlocfilehash: 20677bd9cf10f1098ff233a8f60d69e7728aab85
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 057a97ba25d12f7baaa951ba7750cdd4ab9dd435
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331486"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860907"
 ---
 # <a name="get-contact"></a>Kontakt abrufen
 
@@ -51,7 +52,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 |$select|string|Durch Trennzeichen getrennte Liste der Eigenschaften, die in der Antwort aufgenommen werden.|
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

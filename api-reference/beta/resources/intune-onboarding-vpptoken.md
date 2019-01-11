@@ -2,12 +2,13 @@
 title: vppToken-Ressourcentyp
 description: Sie erwerben mehrere Lizenzen für iOS-Apps über das Apple Volume Purchase Program for Business oder Education. Dies umfasst das Einrichten eines Apple VPP-Kontos auf der Apple-Website und das Hochladen des Apple VPP Business- oder Education-Tokens in Intune. Dann können Sie Ihre Volumenlizenzierungsinformationen mit Intune synchronisieren und die volumenlizenzierte App-Nutzung nachverfolgen. Sie können mehrere Apple VPP Business- oder Education-Token hochladen.
 author: tfitzmac
-ms.openlocfilehash: fd4fdcda2af6964b7ad506d8f1b08b23586b4af9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3c3394ea1872ed91e8c2b8e95db498cd47da05a9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306839"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885225"
 ---
 # <a name="vpptoken-resource-type"></a>vppToken-Ressourcentyp
 
@@ -25,7 +26,7 @@ Sie erwerben mehrere Lizenzen für iOS-Apps über das Apple Volume Purchase Prog
 |[VppToken löschen](../api/intune-onboarding-vpptoken-delete.md)|Keine|Löscht ein [vppToken](../resources/intune-onboarding-vpptoken.md).|
 |[VppToken aktualisieren](../api/intune-onboarding-vpptoken-update.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|Aktualisieren der Eigenschaften eines [vppToken](../resources/intune-onboarding-vpptoken.md)-Objekts.|
 |[syncLicenses-Aktion](../api/intune-onboarding-vpptoken-synclicenses.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|Synchronisiert Lizenzen, die einem bestimmten appleVolumePurchaseProgramToken zugeordnet sind|
-|[RevokeLicenses Aktion](../api/intune-onboarding-vpptoken-revokelicenses.md)|Keines|REVOKE-Lizenzen, die mit einer bestimmten AppleVolumePurchaseProgramToken verknüpft ist|
+|[RevokeLicenses Aktion](../api/intune-onboarding-vpptoken-revokelicenses.md)|Keine|REVOKE-Lizenzen, die mit einer bestimmten AppleVolumePurchaseProgramToken verknüpft ist|
 |[GetLicensesForApp-Funktion](../api/intune-onboarding-vpptoken-getlicensesforapp.md)|[VppTokenLicenseSummary](../resources/intune-onboarding-vpptokenlicensesummary.md) -Auflistung|Noch nicht dokumentiert|
 
 ## <a name="properties"></a>Eigenschaften
@@ -44,10 +45,10 @@ Sie erwerben mehrere Lizenzen für iOS-Apps über das Apple Volume Purchase Prog
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Aktueller Synchronisierungsstatus seit der letzten Synchronisierung der Anwendung, die mit dem Apple Volume Purchase Program-Token durchgeführt wurde. Mögliche Werte sind: `none`, `inProgress`, `completed`, `failed`. Mögliche Werte sind: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Angabe, ob Anwendungen für das VPP-Token automatisch aktualisiert werden.|
 |countryOrRegion|String|Angabe, ob Anwendungen für das VPP-Token automatisch aktualisiert werden.|
-|dataSharingConsentGranted|Boolesch|Stimmen Sie für Datenfreigaben über die Apple Volume Purchase Program gewährt.|
-|displayName|String|Ein Administrator angegebene token Anzeigenamen.|
-|locationName|String|Token Speicherort von Apple VPP zurückgegeben.|
-|claimTokenManagementFromExternalMdm|Boolesch|Admin stimmen ausgibt token Management von externen MDM zulassen|
+|dataSharingConsentGranted|Boolean|Stimmen Sie für Datenfreigaben über die Apple Volume Purchase Program gewährt.|
+|displayName|Zeichenfolge|Ein Administrator angegebene token Anzeigenamen.|
+|locationName|Zeichenfolge|Token Speicherort von Apple VPP zurückgegeben.|
+|claimTokenManagementFromExternalMdm|Boolean|Admin stimmen ausgibt token Management von externen MDM zulassen|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

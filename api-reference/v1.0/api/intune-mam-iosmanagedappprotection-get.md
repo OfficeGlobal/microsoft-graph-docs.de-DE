@@ -2,12 +2,13 @@
 title: Abrufen von „iosManagedAppProtection“
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs iosManagedAppProtection.
 author: tfitzmac
-ms.openlocfilehash: fd4f6eeac74952f34a737cfef80c4af115caa6ee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a7aa184c28c3ca8b02fd5c8d090334cb01f1c479
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359437"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881144"
 ---
 # <a name="get-iosmanagedappprotection"></a>Abrufen von „iosManagedAppProtection“
 
@@ -35,10 +36,10 @@ GET /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

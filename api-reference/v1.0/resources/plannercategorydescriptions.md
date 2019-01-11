@@ -1,12 +1,13 @@
 ---
 title: plannerCategoryDescriptions-Ressourcentyp
 description: 'Die **plannerCategoryDescriptions**-Ressource stellt die beschreibenden Bezeichnungen für die Kategorien dar, die für einen Plan definiert wurden. Sie gehört zum planDetails-Objekt. Es können bis zu 6 Kategorien definiert werden. '
-ms.openlocfilehash: e71cbd1f41d23747691b3738b5a46ff302a72168
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e8efd456602dd6805e5e9e9744db9c3d73f3dcbe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017025"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875768"
 ---
 # <a name="plannercategorydescriptions-resource-type"></a>plannerCategoryDescriptions-Ressourcentyp
 

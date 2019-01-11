@@ -2,12 +2,13 @@
 title: windowsDeviceAzureADAccount-Ressourcentyp
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 33d638c4b1ae11401a7f86095084f345e8c0e4b4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 48b05636a1f5f9c3b0212e0d250bfbfef71413f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328714"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855272"
 ---
 # <a name="windowsdeviceazureadaccount-resource-type"></a>windowsDeviceAzureADAccount-Ressourcentyp
 

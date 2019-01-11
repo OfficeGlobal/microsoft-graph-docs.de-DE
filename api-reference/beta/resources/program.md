@@ -1,12 +1,13 @@
 ---
 title: Programm Ressourcentyp
 description: 'In Azure AD Access Feature überprüft, ein Programm ist ein Container, Programm Steuerelemente halten. Ein Mandant kann eine oder mehrere Programme verfügen.  Jedes Steuerelement verknüpft eine Überprüfung Zugriff auf ein Programm, um zugehörige Access findet erleichtern überprüft.  '
-ms.openlocfilehash: cb08d0edb7487be95e159ed5e2a2546a92e7bce7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a342fd159bba3f7e31c55ffab9a64a72353bc7ac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065331"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863903"
 ---
 # <a name="program-resource-type"></a>Programm Ressourcentyp
 

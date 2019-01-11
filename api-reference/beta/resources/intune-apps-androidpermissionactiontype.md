@@ -2,12 +2,13 @@
 title: AndroidPermissionActionType Enum-Typ
 description: Android Aktion bei eine app eine riskante Berechtigung anfordert.
 author: tfitzmac
-ms.openlocfilehash: 2a8dcb29907e58d7dd421f170a6f054328774260
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b61b284c30b35e47e741731878af78ca50121102
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305593"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869055"
 ---
 # <a name="androidpermissionactiontype-enum-type"></a>AndroidPermissionActionType Enum-Typ
 
@@ -17,9 +18,9 @@ ms.locfileid: "27305593"
 
 Android Aktion bei eine app eine riskante Berechtigung anfordert.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|prompt|0|Noch nicht dokumentiert|
+|Aufforderung|0|Noch nicht dokumentiert|
 |autoGrant|1|Noch nicht dokumentiert|
 |autoDeny|2|Noch nicht dokumentiert|
 

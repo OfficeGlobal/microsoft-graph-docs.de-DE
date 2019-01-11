@@ -2,12 +2,13 @@
 title: deviceEnrollmentWindowsHelloForBusinessConfiguration-Ressourcentyp
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: 268d05b8bf20fddc28e331d5bde73286bb13fc6a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 553e4b5a5537076e5177c8ad73bab0a534a68628
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356875"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855944"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration-Ressourcentyp
 
@@ -44,9 +45,9 @@ Erbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceen
 |pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Noch nicht dokumentiert. Mögliche Werte sind: `allowed`, `required` und `disallowed`.|
 |pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Noch nicht dokumentiert. Mögliche Werte sind: `allowed`, `required` und `disallowed`.|
 |state|[Aktivierung von Steuerelementen](../resources/intune-shared-enablement.md)|Noch nicht dokumentiert. Mögliche Werte sind: `notConfigured`, `enabled` und `disabled`.|
-|securityDeviceRequired|Boolescher Wert|Noch nicht dokumentiert.|
-|unlockWithBiometricsEnabled|Boolescher Wert|Noch nicht dokumentiert.|
-|remotePassportEnabled|Boolescher Wert|Noch nicht dokumentiert.|
+|securityDeviceRequired|Boolean|Noch nicht dokumentiert.|
+|unlockWithBiometricsEnabled|Boolean|Noch nicht dokumentiert.|
+|remotePassportEnabled|Boolean|Noch nicht dokumentiert.|
 |pinPreviousBlockCount|Int32|Noch nicht dokumentiert.|
 |pinExpirationInDays|Int32|Noch nicht dokumentiert.|
 |enhancedBiometricsState|[Aktivierung von Steuerelementen](../resources/intune-shared-enablement.md)|Noch nicht dokumentiert. Mögliche Werte sind: `notConfigured`, `enabled` und `disabled`.|

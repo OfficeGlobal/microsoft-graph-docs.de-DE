@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp securityVendorInformation
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: 4016e274a82ad6a28101dbf5b053124b439a3cbf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 34e565a69f716f0d167240ab753e5d192758508a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063900"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884385"
 ---
 # <a name="securityvendorinformation-resource-type"></a>Ressourcentyp securityVendorInformation
 
@@ -18,10 +19,10 @@ Enthält Details über die Produkt-Dienst Sicherheitsanbieter, Anbieter und Subp
 
 | Eigenschaft   | Typ|Beschreibung|
 |:---------------|:--------|:----------|
-|Anbieter |String|Bestimmte Anbieter (Product/Service - nicht Hersteller Unternehmen); beispielsweise WindowsDefenderATP.|
-|providerVersion|String|Version des Anbieters oder Subprovider, falls vorhanden, die Warnung ausgelöst wurde. *Required*|
-|subProvider|String|Bestimmte Subprovider (unter aggregieren Anbieter); beispielsweise WindowsDefenderATP.SmartScreen.|
-|Hersteller |String|Name des Herstellers alert (beispielsweise Microsoft, Dell, FireEye). *Required*|
+|Anbieter |Zeichenfolge|Bestimmte Anbieter (Product/Service - nicht Hersteller Unternehmen); beispielsweise WindowsDefenderATP.|
+|providerVersion|Zeichenfolge|Version des Anbieters oder Subprovider, falls vorhanden, die Warnung ausgelöst wurde. *Erforderlich*|
+|subProvider|Zeichenfolge|Bestimmte Subprovider (unter aggregieren Anbieter); beispielsweise WindowsDefenderATP.SmartScreen.|
+|Hersteller |Zeichenfolge|Name des Herstellers alert (beispielsweise Microsoft, Dell, FireEye). *Erforderlich*|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

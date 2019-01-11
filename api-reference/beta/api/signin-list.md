@@ -1,12 +1,13 @@
 ---
 title: Liste signIns
 description: Ruft die Azure AD Benutzer Anmeldungen für Ihre Mandanten. In den Protokollen-Anmeldung sind derzeit interaktiv in Art sind (wobei ein Benutzername und Kennwort als Teil des Autorisierungstoken übergeben wird) und erfolgreicher federated Anmeldungen Anmeldevorgängen enthalten.  Die neuesten SignIns werden zuerst zurückgegeben.
-ms.openlocfilehash: 3abca59187dcc9667789e33bcefc1bcc51d5ab10
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 8596bd168a3e10cbea9e15e2f61d6bd668fd27b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059756"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861789"
 ---
 # <a name="list-signins"></a>Liste signIns
 

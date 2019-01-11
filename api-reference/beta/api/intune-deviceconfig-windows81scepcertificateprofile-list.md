@@ -2,12 +2,13 @@
 title: Liste windows81SCEPCertificateProfiles
 description: Listeneigenschaften und Beziehungen der windows81SCEPCertificateProfile-Objekte.
 author: tfitzmac
-ms.openlocfilehash: b9f05ef49cb6e5cc5f347c419595276ce8164cdf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4e63efa3730f75a7c7d48fc2d7a2855e6078d2fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304501"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863231"
 ---
 # <a name="list-windows81scepcertificateprofiles"></a>Liste windows81SCEPCertificateProfiles
 
@@ -36,10 +37,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

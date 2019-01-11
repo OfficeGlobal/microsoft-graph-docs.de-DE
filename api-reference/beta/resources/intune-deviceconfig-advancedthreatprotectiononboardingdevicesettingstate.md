@@ -2,12 +2,13 @@
 title: Ressourcentyp advancedThreatProtectionOnboardingDeviceSettingState
 description: ATP Onboarding Zustand für ein bestimmtes Gerät.
 author: tfitzmac
-ms.openlocfilehash: eecdcc1cbaf9c783da6dcf902281aa6394a842a2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3a83581faa921fc4216cd81f1fbabb026210db34
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310871"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863847"
 ---
 # <a name="advancedthreatprotectiononboardingdevicesettingstate-resource-type"></a>Ressourcentyp advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -22,7 +23,7 @@ ATP Onboarding Zustand für ein bestimmtes Gerät.
 |[Liste advancedThreatProtectionOnboardingDeviceSettingStates](../api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-list.md)|[AdvancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) -Auflistung|Listeneigenschaften und Beziehungen der [AdvancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) -Objekte.|
 |[Abrufen von advancedThreatProtectionOnboardingDeviceSettingState](../api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-get.md)|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)|Lesen Sie Eigenschaften und Beziehungen des [AdvancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) -Objekts.|
 |[Erstellen von advancedThreatProtectionOnboardingDeviceSettingState](../api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-create.md)|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)|Erstellen eines neuen [AdvancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) -Objekts.|
-|[AdvancedThreatProtectionOnboardingDeviceSettingState löschen](../api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-delete.md)|Keines|Löscht eine [AdvancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md).|
+|[AdvancedThreatProtectionOnboardingDeviceSettingState löschen](../api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-delete.md)|Keine|Löscht eine [AdvancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md).|
 |[AdvancedThreatProtectionOnboardingDeviceSettingState aktualisieren](../api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-update.md)|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)|Aktualisieren Sie die Eigenschaften eines [AdvancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

@@ -2,12 +2,13 @@
 title: DeviceManagementScriptDeviceState aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines DeviceManagementScriptDeviceState-Objekts.
 author: tfitzmac
-ms.openlocfilehash: a5dee56ac260642d1a0c105d62ee26499d7276df
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 15c9a951d63f99f02af5fc676176237323cc4864
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305313"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827342"
 ---
 # <a name="update-devicemanagementscriptdevicestate"></a>DeviceManagementScriptDeviceState aktualisieren
 
@@ -36,10 +37,10 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [DeviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) eine JSON-Darstellung.

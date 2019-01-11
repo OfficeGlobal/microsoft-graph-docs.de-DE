@@ -2,12 +2,13 @@
 title: rangeView-Zeilen auflisten
 description: Abrufen einer Liste von rangeView-Objekten.
 author: lumine2008
-ms.openlocfilehash: eabcc8742785264a26f1a1922fea7741a5fc99a0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9116c20c3c248c1d689e71a7d08bf0c3188a95ac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330513"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861299"
 ---
 # <a name="list-rangeview-rows"></a>rangeView-Zeilen auflisten
 

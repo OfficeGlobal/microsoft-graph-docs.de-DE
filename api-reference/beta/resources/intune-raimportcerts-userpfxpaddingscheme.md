@@ -2,12 +2,13 @@
 title: UserPfxPaddingScheme Enum-Typ
 description: Unterstützte Werte für das Padding-Schema von Verschlüsselungsanbieters verwendet.
 author: tfitzmac
-ms.openlocfilehash: aa2c2e67419b92c17a6fdb62df108847964f49a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2c588b31e4bfe6f78dbc09c199b56cabdef72198
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337163"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889656"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>UserPfxPaddingScheme Enum-Typ
 
@@ -17,9 +18,9 @@ ms.locfileid: "27337163"
 
 Unterstützte Werte für das Padding-Schema von Verschlüsselungsanbieters verwendet.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Keine|0|Noch nicht dokumentiert|
+|n/v|0|Noch nicht dokumentiert|
 |PKCS1|1|Noch nicht dokumentiert|
 |oaepSha1|2|Noch nicht dokumentiert|
 |oaepSha256|3|Noch nicht dokumentiert|

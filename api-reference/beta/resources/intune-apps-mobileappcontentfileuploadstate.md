@@ -2,12 +2,13 @@
 title: MobileAppContentFileUploadState Enum-Typ
 description: Enthält Eigenschaften für die Anforderung Zustände hochladen.
 author: tfitzmac
-ms.openlocfilehash: 0ed4f238c907a9eec3a11643b1e05a40cffd804a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 26c69a42c76920bc0e45fb4363c94958ccd9859c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337009"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873696"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>MobileAppContentFileUploadState Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27337009"
 
 Enthält Eigenschaften für die Anforderung Zustände hochladen.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |Erfolgreich|0|Noch nicht dokumentiert|
 |transientError|1|Noch nicht dokumentiert|

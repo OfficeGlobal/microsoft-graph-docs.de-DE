@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp requiredResourceAccess
 description: Gibt den Satz von OAuth 2.0 berechtigungsbereiche und app-Rollen unter der angegebenen Ressource, der eine Anwendung Zugriff auf erforderlich ist. Die angegebene OAuth 2.0 berechtigungsbereiche möglicherweise beim von Clientanwendungen (über die **RequiredResourceAccess** -Auflistung) angefordert werden eine Anwendung Resource aufrufen. Die **RequiredResourceAccess** -Eigenschaft der Anwendung Entität ist eine Auflistung von **ReqiredResourceAccess**.
-ms.openlocfilehash: 937557f2f078ade1b336cfd00cd128d428d59cbb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 473126365a7f0b3ba3ab0371322ff90bd36318e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27064189"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856168"
 ---
 # <a name="requiredresourceaccess-resource-type"></a>Ressourcentyp requiredResourceAccess
 

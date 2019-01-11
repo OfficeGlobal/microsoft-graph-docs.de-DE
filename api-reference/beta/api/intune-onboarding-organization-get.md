@@ -2,12 +2,13 @@
 title: Organisation abrufen
 description: Dient zum Lesen der Eigenschaften und Beziehungen des organization-Objekts.
 author: tfitzmac
-ms.openlocfilehash: f6f644df6c24da3d5eeec5ab799c3aeba755ab8a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 113bc22399772b33067268704d00b53d71fd0981
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361187"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854855"
 ---
 # <a name="get-organization"></a>Organisation abrufen
 
@@ -37,10 +38,10 @@ GET /organization/{organizationId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: Liste androidEasEmailProfileConfigurations
 description: Listeneigenschaften und Beziehungen der AndroidEasEmailProfileConfiguration-Objekte.
 author: tfitzmac
-ms.openlocfilehash: b90bd63e06d73f935677a4294768ad7ff6d9205a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3306c052f05eb05f84d0c250495a8af0e71a79bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326950"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863623"
 ---
 # <a name="list-androideasemailprofileconfigurations"></a>Liste androidEasEmailProfileConfigurations
 
@@ -36,10 +37,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: Erstellen von „windowsUpdateForBusinessConfiguration“
 description: Diese Methode erstellt ein neues Objekt des Typs windowsUpdateForBusinessConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 4fa7cc29e439d4c160d752869ef2a877ef0a0e4a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5166e54fbe7066644b751985b101d1876529ded8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315666"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872765"
 ---
 # <a name="create-windowsupdateforbusinessconfiguration"></a>Erstellen von „windowsUpdateForBusinessConfiguration“
 
@@ -33,10 +34,10 @@ POST /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „windowsUpdateForBusinessConfiguration“ an.

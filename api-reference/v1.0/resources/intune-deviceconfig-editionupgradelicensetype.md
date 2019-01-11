@@ -2,12 +2,13 @@
 title: EditionUpgradeLicenseType Enum-Typ
 description: Edition Upgrade Lizenztyp
 author: tfitzmac
-ms.openlocfilehash: caa00a8ab144e6524eb327fa6b7fab3134a9915f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a4fa0e515528f9e29e77f213d1636c3027585555
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352458"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856273"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>EditionUpgradeLicenseType Enum-Typ
 
@@ -15,7 +16,7 @@ ms.locfileid: "27352458"
 
 Edition Upgrade Lizenztyp
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |productKey|0|Product Key-Typ|
 |licenseFile|1|Lizenz-Dateityp|
