@@ -1,45 +1,46 @@
 ---
 title: Besitzer entfernen
 description: Verwenden Sie diese API, um einen Besitzer aus einer Office 365-Gruppe, einer Sicherheitsgruppe oder einer E-Mail-aktivierten Sicherheitsgruppe durch die owners-Navigationseigenschaft zu entfernen.
-ms.openlocfilehash: 08136afce038e4287a29a31408bf7a5e1ae14d91
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7fe13b00d2e14bf69c1e3903f09d641d81f2dc0f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016196"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821651"
 ---
-# <a name="remove-owner"></a><span data-ttu-id="79973-103">Besitzer entfernen</span><span class="sxs-lookup"><span data-stu-id="79973-103">Remove owner</span></span>
-<span data-ttu-id="79973-104">Verwenden Sie diese API, um einen Besitzer aus einer Office 365-Gruppe, einer Sicherheitsgruppe oder einer E-Mail-aktivierten Sicherheitsgruppe durch die owners-Navigationseigenschaft zu entfernen.</span><span class="sxs-lookup"><span data-stu-id="79973-104">Use this API to remove an owner from an Office 365 group, a security group, or a mail-enabled security group through the owners navigation property.</span></span>
+# <a name="remove-owner"></a><span data-ttu-id="dd3ac-103">Besitzer entfernen</span><span class="sxs-lookup"><span data-stu-id="dd3ac-103">Remove owner</span></span>
+<span data-ttu-id="dd3ac-104">Verwenden Sie diese API, um einen Besitzer aus einer Office 365-Gruppe, einer Sicherheitsgruppe oder einer E-Mail-aktivierten Sicherheitsgruppe durch die owners-Navigationseigenschaft zu entfernen.</span><span class="sxs-lookup"><span data-stu-id="dd3ac-104">Use this API to remove an owner from an Office 365 group, a security group, or a mail-enabled security group through the owners navigation property.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="79973-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="79973-105">Permissions</span></span>
-<span data-ttu-id="79973-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="79973-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="dd3ac-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="dd3ac-105">Permissions</span></span>
+<span data-ttu-id="dd3ac-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dd3ac-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="79973-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="79973-108">Permission type</span></span>      | <span data-ttu-id="79973-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="79973-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dd3ac-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="dd3ac-108">Permission type</span></span>      | <span data-ttu-id="dd3ac-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="dd3ac-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="79973-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="79973-110">Delegated (work or school account)</span></span> | <span data-ttu-id="79973-111">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="79973-111">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="79973-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="79973-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="79973-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="79973-113">Not supported.</span></span>    |
-|<span data-ttu-id="79973-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="79973-114">Application</span></span> | <span data-ttu-id="79973-115">Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="79973-115">Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="dd3ac-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="dd3ac-110">Delegated (work or school account)</span></span> | <span data-ttu-id="dd3ac-111">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="dd3ac-111">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="dd3ac-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="dd3ac-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dd3ac-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="dd3ac-113">Not supported.</span></span>    |
+|<span data-ttu-id="dd3ac-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="dd3ac-114">Application</span></span> | <span data-ttu-id="dd3ac-115">Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dd3ac-115">Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="79973-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="79973-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dd3ac-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="dd3ac-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}/owners/{id}/$ref
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="79973-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="79973-117">Request headers</span></span>
-| <span data-ttu-id="79973-118">Name</span><span class="sxs-lookup"><span data-stu-id="79973-118">Name</span></span>       | <span data-ttu-id="79973-119">Typ</span><span class="sxs-lookup"><span data-stu-id="79973-119">Type</span></span> | <span data-ttu-id="79973-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="79973-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="dd3ac-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="dd3ac-117">Request headers</span></span>
+| <span data-ttu-id="dd3ac-118">Name</span><span class="sxs-lookup"><span data-stu-id="dd3ac-118">Name</span></span>       | <span data-ttu-id="dd3ac-119">Typ</span><span class="sxs-lookup"><span data-stu-id="dd3ac-119">Type</span></span> | <span data-ttu-id="dd3ac-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="dd3ac-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="79973-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="79973-121">Authorization</span></span>  | <span data-ttu-id="79973-122">string</span><span class="sxs-lookup"><span data-stu-id="79973-122">string</span></span>  | <span data-ttu-id="79973-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="79973-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="dd3ac-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="dd3ac-121">Authorization</span></span>  | <span data-ttu-id="dd3ac-122">string</span><span class="sxs-lookup"><span data-stu-id="dd3ac-122">string</span></span>  | <span data-ttu-id="dd3ac-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="dd3ac-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="79973-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="79973-125">Request body</span></span>
-<span data-ttu-id="79973-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="79973-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dd3ac-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="dd3ac-125">Request body</span></span>
+<span data-ttu-id="dd3ac-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="dd3ac-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="79973-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="79973-127">Response</span></span>
-<span data-ttu-id="79973-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="79973-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="dd3ac-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="dd3ac-127">Response</span></span>
+<span data-ttu-id="dd3ac-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="dd3ac-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="79973-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="79973-130">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="79973-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="79973-131">Request</span></span>
-<span data-ttu-id="79973-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="79973-132">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="dd3ac-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="dd3ac-130">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="dd3ac-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="dd3ac-131">Request</span></span>
+<span data-ttu-id="dd3ac-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="dd3ac-132">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_owner_from_group"
@@ -47,11 +48,11 @@ DELETE /groups/{id}/owners/{id}/$ref
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 ```
-<span data-ttu-id="79973-133">Geben Sie in der Anforderung das `id` des Verzeichnisobjekts, das Sie entfernen möchten, nach dem $ref-Segment an.</span><span class="sxs-lookup"><span data-stu-id="79973-133">In the request, specify the `id` of the directory object you want to remove after the $ref segment.</span></span>
+<span data-ttu-id="dd3ac-133">Geben Sie in der Anforderung das `id` des Verzeichnisobjekts, das Sie entfernen möchten, nach dem $ref-Segment an.</span><span class="sxs-lookup"><span data-stu-id="dd3ac-133">In the request, specify the `id` of the directory object you want to remove after the $ref segment.</span></span>
 
-#### <a name="response"></a><span data-ttu-id="79973-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="79973-134">Response</span></span>
-<span data-ttu-id="79973-135">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="79973-135">The following is an example of the response.</span></span>
-><span data-ttu-id="79973-136">**Hinweis:** im Response-Objekt dargestellten möglicherweise zur besseren Lesbarkeit gekürzt werden.</span><span class="sxs-lookup"><span data-stu-id="79973-136">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="79973-137">Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="79973-137">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="dd3ac-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="dd3ac-134">Response</span></span>
+<span data-ttu-id="dd3ac-135">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="dd3ac-135">The following is an example of the response.</span></span>
+><span data-ttu-id="dd3ac-136">**Hinweis:** im Response-Objekt dargestellten möglicherweise zur besseren Lesbarkeit gekürzt werden.</span><span class="sxs-lookup"><span data-stu-id="dd3ac-136">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="dd3ac-137">Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="dd3ac-137">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

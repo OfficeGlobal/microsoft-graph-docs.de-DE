@@ -2,59 +2,60 @@
 title: Abrufen von Einstellungen
 description: Lesen Sie Benutzer- und Settings-Objekts.
 author: dkershaw10
-ms.openlocfilehash: 817cfff56b028e242f0cfb65b966ac6b3173059e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: ace7c43b27860832968572628838484bc8c91c84
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346837"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815491"
 ---
-# <a name="get-settings"></a><span data-ttu-id="2a4cb-103">Abrufen von Einstellungen</span><span class="sxs-lookup"><span data-stu-id="2a4cb-103">Get settings</span></span>
+# <a name="get-settings"></a><span data-ttu-id="7d351-103">Abrufen von Einstellungen</span><span class="sxs-lookup"><span data-stu-id="7d351-103">Get settings</span></span>
 
-<span data-ttu-id="2a4cb-104">Lesen Sie Benutzer- und [Settings](../resources/user-settings.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="2a4cb-104">Read the user and organization [settings](../resources/user-settings.md) object.</span></span>
-<span data-ttu-id="2a4cb-105">Weitere Informationen zum Aktualisieren der Eigenschaften des [Settings](../resources/user-settings.md) -Objekts finden Sie unter [Aktualisieren von benutzereinstellungen](user-update-settings.md).</span><span class="sxs-lookup"><span data-stu-id="2a4cb-105">To learn how to update the properties of the [settings](../resources/user-settings.md) object, see [update user settings](user-update-settings.md).</span></span>
+<span data-ttu-id="7d351-104">Lesen Sie Benutzer- und [Settings](../resources/user-settings.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="7d351-104">Read the user and organization [settings](../resources/user-settings.md) object.</span></span>
+<span data-ttu-id="7d351-105">Weitere Informationen zum Aktualisieren der Eigenschaften des [Settings](../resources/user-settings.md) -Objekts finden Sie unter [Aktualisieren von benutzereinstellungen](user-update-settings.md).</span><span class="sxs-lookup"><span data-stu-id="7d351-105">To learn how to update the properties of the [settings](../resources/user-settings.md) object, see [update user settings](user-update-settings.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2a4cb-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="2a4cb-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7d351-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="7d351-106">Permissions</span></span>
 
-<span data-ttu-id="2a4cb-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2a4cb-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7d351-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7d351-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2a4cb-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="2a4cb-109">Permission type</span></span>      | <span data-ttu-id="2a4cb-110">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="2a4cb-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7d351-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="7d351-109">Permission type</span></span>      | <span data-ttu-id="7d351-110">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="7d351-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2a4cb-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="2a4cb-111">Delegated (work or school account)</span></span> | <span data-ttu-id="2a4cb-112">User.Read.All, User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2a4cb-112">User.Read.All, User.ReadWrite.All</span></span>    |
-|<span data-ttu-id="2a4cb-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="2a4cb-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2a4cb-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="2a4cb-114">Not supported.</span></span>    |
-|<span data-ttu-id="2a4cb-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="2a4cb-115">Application</span></span> | <span data-ttu-id="2a4cb-116">User.Read.All,User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2a4cb-116">User.Read.All,User.ReadWrite.All</span></span> |
+|<span data-ttu-id="7d351-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="7d351-111">Delegated (work or school account)</span></span> | <span data-ttu-id="7d351-112">User.Read.All, User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d351-112">User.Read.All, User.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7d351-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="7d351-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7d351-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="7d351-114">Not supported.</span></span>    |
+|<span data-ttu-id="7d351-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="7d351-115">Application</span></span> | <span data-ttu-id="7d351-116">User.Read.All,User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d351-116">User.Read.All,User.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2a4cb-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="2a4cb-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7d351-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="7d351-117">HTTP request</span></span>
 
 ```http
 GET /me/settings/
 ```
 
-<span data-ttu-id="2a4cb-118">Fordern Sie mit einer 'Benutzer-Id"oder"UserPrincipalName"ist nur verfügbar, durch den Benutzer oder von einem Benutzer mit den Berechtigungen User.ReadWrite.All.</span><span class="sxs-lookup"><span data-stu-id="2a4cb-118">Request with a 'user id' or 'userPrincipalName' is only accessible by the user or by a user with the User.ReadWrite.All permissions.</span></span> <span data-ttu-id="2a4cb-119">Weitere Informationen finden Sie unter [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2a4cb-119">To learn more, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7d351-118">Fordern Sie mit einer 'Benutzer-Id"oder"UserPrincipalName"ist nur verfügbar, durch den Benutzer oder von einem Benutzer mit den Berechtigungen User.ReadWrite.All.</span><span class="sxs-lookup"><span data-stu-id="7d351-118">Request with a 'user id' or 'userPrincipalName' is only accessible by the user or by a user with the User.ReadWrite.All permissions.</span></span> <span data-ttu-id="7d351-119">Weitere Informationen finden Sie unter [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7d351-119">To learn more, see [Permissions](/graph/permissions-reference).</span></span>
 
 ```http
 GET /users/{id | userPrincipalName}/settings/
 ```
 
-## <a name="request-body"></a><span data-ttu-id="2a4cb-120">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="2a4cb-120">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7d351-120">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="7d351-120">Request body</span></span>
 
-<span data-ttu-id="2a4cb-121">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="2a4cb-121">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="7d351-121">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="7d351-121">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2a4cb-122">Antwort</span><span class="sxs-lookup"><span data-stu-id="2a4cb-122">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7d351-122">Antwort</span><span class="sxs-lookup"><span data-stu-id="7d351-122">Response</span></span>
 
-<span data-ttu-id="2a4cb-123">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [Einstellungen](../resources/user-settings.md) im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="2a4cb-123">If successful, this method returns a `200 OK` response code and [user settings](../resources/user-settings.md) object in the response body.</span></span>
+<span data-ttu-id="7d351-123">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [Einstellungen](../resources/user-settings.md) im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="7d351-123">If successful, this method returns a `200 OK` response code and [user settings](../resources/user-settings.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2a4cb-124">Beispiel</span><span class="sxs-lookup"><span data-stu-id="2a4cb-124">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7d351-124">Beispiel</span><span class="sxs-lookup"><span data-stu-id="7d351-124">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="2a4cb-125">Anforderung</span><span class="sxs-lookup"><span data-stu-id="2a4cb-125">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="7d351-125">Anforderung</span><span class="sxs-lookup"><span data-stu-id="7d351-125">Request</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/settings
 ```
 
-##### <a name="response"></a><span data-ttu-id="2a4cb-126">Antwort</span><span class="sxs-lookup"><span data-stu-id="2a4cb-126">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="7d351-126">Antwort</span><span class="sxs-lookup"><span data-stu-id="7d351-126">Response</span></span>
 
-<span data-ttu-id="2a4cb-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2a4cb-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="7d351-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="7d351-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 200 OK
