@@ -1,48 +1,49 @@
 ---
 title: plannerTaskDetails abrufen
 description: Dient zum Abrufen der Eigenschaften und Beziehungen des **plannertaskdetails**-Objekts.
-ms.openlocfilehash: f0d0ad060d8cc43f72aaa6373429edf2f95bb1b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1ff08ac00125b1a1bb71ccaa95ef7385eb5b5ee7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017108"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804662"
 ---
-# <a name="get-plannertaskdetails"></a><span data-ttu-id="25023-103">plannerTaskDetails abrufen</span><span class="sxs-lookup"><span data-stu-id="25023-103">Get plannerTaskDetails</span></span>
+# <a name="get-plannertaskdetails"></a><span data-ttu-id="c09ee-103">plannerTaskDetails abrufen</span><span class="sxs-lookup"><span data-stu-id="c09ee-103">Get plannerTaskDetails</span></span>
 
-<span data-ttu-id="25023-104">Dient zum Abrufen der Eigenschaften und Beziehungen des **plannertaskdetails**-Objekts.</span><span class="sxs-lookup"><span data-stu-id="25023-104">Retrieve the properties and relationships of **plannertaskdetails** object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="25023-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="25023-105">Permissions</span></span>
-<span data-ttu-id="25023-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="25023-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c09ee-104">Dient zum Abrufen der Eigenschaften und Beziehungen des **plannertaskdetails**-Objekts.</span><span class="sxs-lookup"><span data-stu-id="c09ee-104">Retrieve the properties and relationships of **plannertaskdetails** object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c09ee-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="c09ee-105">Permissions</span></span>
+<span data-ttu-id="c09ee-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c09ee-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="25023-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="25023-108">Permission type</span></span>      | <span data-ttu-id="25023-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="25023-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c09ee-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c09ee-108">Permission type</span></span>      | <span data-ttu-id="c09ee-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c09ee-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="25023-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="25023-110">Delegated (work or school account)</span></span> | <span data-ttu-id="25023-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="25023-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="25023-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="25023-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="25023-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="25023-113">Not supported.</span></span>    |
-|<span data-ttu-id="25023-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="25023-114">Application</span></span> | <span data-ttu-id="25023-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="25023-115">Not supported.</span></span> |
+|<span data-ttu-id="c09ee-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c09ee-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c09ee-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c09ee-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c09ee-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c09ee-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c09ee-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c09ee-113">Not supported.</span></span>    |
+|<span data-ttu-id="c09ee-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c09ee-114">Application</span></span> | <span data-ttu-id="c09ee-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c09ee-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="25023-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="25023-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c09ee-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c09ee-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /planner/tasks/{id}/details
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="25023-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="25023-117">Request headers</span></span>
-| <span data-ttu-id="25023-118">Name</span><span class="sxs-lookup"><span data-stu-id="25023-118">Name</span></span>      |<span data-ttu-id="25023-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="25023-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c09ee-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="c09ee-117">Request headers</span></span>
+| <span data-ttu-id="c09ee-118">Name</span><span class="sxs-lookup"><span data-stu-id="c09ee-118">Name</span></span>      |<span data-ttu-id="c09ee-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c09ee-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="25023-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="25023-120">Authorization</span></span>  | <span data-ttu-id="25023-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="25023-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c09ee-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c09ee-120">Authorization</span></span>  | <span data-ttu-id="c09ee-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c09ee-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="25023-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="25023-123">Request body</span></span>
-<span data-ttu-id="25023-124">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="25023-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c09ee-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c09ee-123">Request body</span></span>
+<span data-ttu-id="c09ee-124">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="c09ee-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="25023-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="25023-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c09ee-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="c09ee-125">Response</span></span>
 
-<span data-ttu-id="25023-126">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [plannerTaskDetails](../resources/plannertaskdetails.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="25023-126">If successful, this method returns a `200 OK` response code and [plannerTaskDetails](../resources/plannertaskdetails.md) object in the response body.</span></span>
+<span data-ttu-id="c09ee-126">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [plannerTaskDetails](../resources/plannertaskdetails.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c09ee-126">If successful, this method returns a `200 OK` response code and [plannerTaskDetails](../resources/plannertaskdetails.md) object in the response body.</span></span>
 
-<span data-ttu-id="25023-p103">Diese Methode kann einen beliebigen [HTTP-Statuscode](/graph/errors) zurückgeben. Die häufigsten Fehler, die Apps für diese Methode behandeln sollten, sind die Antworten 403 und 404. Weitere Informationen zu diesen Fehlern finden Sie unter [Häufige Planner-Fehlerbedingungen](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="25023-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="c09ee-p103">Diese Methode kann einen beliebigen [HTTP-Statuscode](/graph/errors) zurückgeben. Die häufigsten Fehler, die Apps für diese Methode behandeln sollten, sind die Antworten 403 und 404. Weitere Informationen zu diesen Fehlern finden Sie unter [Häufige Planner-Fehlerbedingungen](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="c09ee-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="25023-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="25023-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="25023-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="25023-131">Request</span></span>
-<span data-ttu-id="25023-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="25023-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c09ee-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c09ee-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c09ee-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c09ee-131">Request</span></span>
+<span data-ttu-id="c09ee-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="c09ee-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_plannertaskdetails"
@@ -50,8 +51,8 @@ GET /planner/tasks/{id}/details
 ```http
 GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/details
 ```
-##### <a name="response"></a><span data-ttu-id="25023-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="25023-133">Response</span></span>
-<span data-ttu-id="25023-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="25023-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c09ee-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="c09ee-133">Response</span></span>
+<span data-ttu-id="c09ee-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c09ee-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

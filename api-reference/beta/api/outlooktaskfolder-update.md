@@ -2,53 +2,54 @@
 title: Outlooktaskfolder aktualisieren
 description: Aktualisieren Sie die schreibbaren Eigenschaften des Ordners eine Outlook-Aufgabe.
 author: angelgolfer-ms
-ms.openlocfilehash: 83b78a7d3ff625a6eaaacd3ac54612e487350cde
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 06dd21cf9da2fab8c0472ac29f477b6a40d2df5c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313972"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874354"
 ---
-# <a name="update-outlooktaskfolder"></a><span data-ttu-id="556b2-103">Outlooktaskfolder aktualisieren</span><span class="sxs-lookup"><span data-stu-id="556b2-103">Update outlooktaskfolder</span></span>
+# <a name="update-outlooktaskfolder"></a><span data-ttu-id="8e15e-103">Outlooktaskfolder aktualisieren</span><span class="sxs-lookup"><span data-stu-id="8e15e-103">Update outlooktaskfolder</span></span>
 
-> <span data-ttu-id="556b2-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="556b2-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="556b2-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="556b2-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="8e15e-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="8e15e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8e15e-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="8e15e-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="556b2-106">Aktualisieren Sie die schreibbaren Eigenschaften des Ordners eine Outlook-Aufgabe.</span><span class="sxs-lookup"><span data-stu-id="556b2-106">Update the writable properties of an Outlook task folder.</span></span>
+<span data-ttu-id="8e15e-106">Aktualisieren Sie die schreibbaren Eigenschaften des Ordners eine Outlook-Aufgabe.</span><span class="sxs-lookup"><span data-stu-id="8e15e-106">Update the writable properties of an Outlook task folder.</span></span>
 
-<span data-ttu-id="556b2-107">Sie können den **Name** -Eigenschaftswert der Aufgabe Standardordner "Aufgaben" nicht ändern.</span><span class="sxs-lookup"><span data-stu-id="556b2-107">You cannot change the **name** property value of the default task folder, "Tasks".</span></span>
-## <a name="permissions"></a><span data-ttu-id="556b2-108">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="556b2-108">Permissions</span></span>
-<span data-ttu-id="556b2-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="556b2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8e15e-107">Sie können den **Name** -Eigenschaftswert der Aufgabe Standardordner "Aufgaben" nicht ändern.</span><span class="sxs-lookup"><span data-stu-id="8e15e-107">You cannot change the **name** property value of the default task folder, "Tasks".</span></span>
+## <a name="permissions"></a><span data-ttu-id="8e15e-108">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="8e15e-108">Permissions</span></span>
+<span data-ttu-id="8e15e-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8e15e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="556b2-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="556b2-111">Permission type</span></span>      | <span data-ttu-id="556b2-112">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="556b2-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8e15e-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="8e15e-111">Permission type</span></span>      | <span data-ttu-id="8e15e-112">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="8e15e-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="556b2-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="556b2-113">Delegated (work or school account)</span></span> | <span data-ttu-id="556b2-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="556b2-114">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="556b2-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="556b2-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="556b2-116">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="556b2-116">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="556b2-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="556b2-117">Application</span></span> | <span data-ttu-id="556b2-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="556b2-118">Not supported.</span></span> |
+|<span data-ttu-id="8e15e-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="8e15e-113">Delegated (work or school account)</span></span> | <span data-ttu-id="8e15e-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8e15e-114">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="8e15e-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="8e15e-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8e15e-116">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8e15e-116">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="8e15e-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="8e15e-117">Application</span></span> | <span data-ttu-id="8e15e-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="8e15e-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="556b2-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="556b2-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8e15e-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="8e15e-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="556b2-120">Optionale Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="556b2-120">Optional request headers</span></span>
-| <span data-ttu-id="556b2-121">Name</span><span class="sxs-lookup"><span data-stu-id="556b2-121">Name</span></span>       | <span data-ttu-id="556b2-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="556b2-122">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="8e15e-120">Optionale Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="8e15e-120">Optional request headers</span></span>
+| <span data-ttu-id="8e15e-121">Name</span><span class="sxs-lookup"><span data-stu-id="8e15e-121">Name</span></span>       | <span data-ttu-id="8e15e-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8e15e-122">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="556b2-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="556b2-123">Authorization</span></span>  | <span data-ttu-id="556b2-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="556b2-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8e15e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="8e15e-123">Authorization</span></span>  | <span data-ttu-id="8e15e-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="8e15e-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="556b2-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="556b2-126">Request body</span></span>
-<span data-ttu-id="556b2-p104">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.</span><span class="sxs-lookup"><span data-stu-id="556b2-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8e15e-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="8e15e-126">Request body</span></span>
+<span data-ttu-id="8e15e-p104">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.</span><span class="sxs-lookup"><span data-stu-id="8e15e-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="556b2-130">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="556b2-130">Property</span></span>     | <span data-ttu-id="556b2-131">Typ</span><span class="sxs-lookup"><span data-stu-id="556b2-131">Type</span></span>   |<span data-ttu-id="556b2-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="556b2-132">Description</span></span>|
+| <span data-ttu-id="8e15e-130">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="8e15e-130">Property</span></span>     | <span data-ttu-id="8e15e-131">Typ</span><span class="sxs-lookup"><span data-stu-id="8e15e-131">Type</span></span>   |<span data-ttu-id="8e15e-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8e15e-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="556b2-133">name</span><span class="sxs-lookup"><span data-stu-id="556b2-133">name</span></span>|<span data-ttu-id="556b2-134">String</span><span class="sxs-lookup"><span data-stu-id="556b2-134">String</span></span>|<span data-ttu-id="556b2-135">Der Name des Aufgabenordners.</span><span class="sxs-lookup"><span data-stu-id="556b2-135">The name of the task folder.</span></span>|
+|<span data-ttu-id="8e15e-133">name</span><span class="sxs-lookup"><span data-stu-id="8e15e-133">name</span></span>|<span data-ttu-id="8e15e-134">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="8e15e-134">String</span></span>|<span data-ttu-id="8e15e-135">Der Name des Aufgabenordners.</span><span class="sxs-lookup"><span data-stu-id="8e15e-135">The name of the task folder.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="556b2-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="556b2-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8e15e-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="8e15e-136">Response</span></span>
 
-<span data-ttu-id="556b2-137">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und aktualisierte [OutlookTaskFolder](../resources/outlooktaskfolder.md) -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="556b2-137">If successful, this method returns a `200 OK` response code and updated [outlookTaskFolder](../resources/outlooktaskfolder.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="556b2-138">Beispiel</span><span class="sxs-lookup"><span data-stu-id="556b2-138">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="556b2-139">Anforderung</span><span class="sxs-lookup"><span data-stu-id="556b2-139">Request</span></span>
-<span data-ttu-id="556b2-140">Das folgende Beispiel ändert den Namen des angegebenen Ordner zu `Charity work`.</span><span class="sxs-lookup"><span data-stu-id="556b2-140">The following example changes the name of the specified task folder to `Charity work`.</span></span>
+<span data-ttu-id="8e15e-137">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und aktualisierte [OutlookTaskFolder](../resources/outlooktaskfolder.md) -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="8e15e-137">If successful, this method returns a `200 OK` response code and updated [outlookTaskFolder](../resources/outlooktaskfolder.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="8e15e-138">Beispiel</span><span class="sxs-lookup"><span data-stu-id="8e15e-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8e15e-139">Anforderung</span><span class="sxs-lookup"><span data-stu-id="8e15e-139">Request</span></span>
+<span data-ttu-id="8e15e-140">Das folgende Beispiel ändert den Namen des angegebenen Ordner zu `Charity work`.</span><span class="sxs-lookup"><span data-stu-id="8e15e-140">The following example changes the name of the specified task folder to `Charity work`.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_outlooktaskfolder"
@@ -62,8 +63,8 @@ Content-length: 31
   "name": "Charity work"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="556b2-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="556b2-141">Response</span></span>
-<span data-ttu-id="556b2-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="556b2-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="8e15e-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="8e15e-141">Response</span></span>
+<span data-ttu-id="8e15e-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="8e15e-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
