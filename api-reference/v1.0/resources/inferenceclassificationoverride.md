@@ -1,39 +1,40 @@
 ---
 title: inferenceClassificationOverride-Ressourcentyp
 description: Stellt die Außerkraftsetzung eines Benutzers dafür dar, wie eingehende Nachrichten von einem bestimmten Absender immer klassifiziert werden sollen.
-ms.openlocfilehash: 3f3f07e870a4ba549062197a380633ab591c54fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8df0f1e5fa34c630c51de7c73234e6092448f867
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017827"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885064"
 ---
-# <a name="inferenceclassificationoverride-resource-type"></a><span data-ttu-id="d528c-103">inferenceClassificationOverride-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="d528c-103">inferenceClassificationOverride resource type</span></span>
+# <a name="inferenceclassificationoverride-resource-type"></a><span data-ttu-id="deecc-103">inferenceClassificationOverride-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="deecc-103">inferenceClassificationOverride resource type</span></span>
 
-<span data-ttu-id="d528c-104">Stellt die Außerkraftsetzung eines Benutzers dafür dar, wie eingehende Nachrichten von einem bestimmten Absender immer klassifiziert werden sollen.</span><span class="sxs-lookup"><span data-stu-id="d528c-104">Represents a user's override for how incoming messages from a specific sender should always be classified as.</span></span>
+<span data-ttu-id="deecc-104">Stellt die Außerkraftsetzung eines Benutzers dafür dar, wie eingehende Nachrichten von einem bestimmten Absender immer klassifiziert werden sollen.</span><span class="sxs-lookup"><span data-stu-id="deecc-104">Represents a user's override for how incoming messages from a specific sender should always be classified as.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="d528c-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="d528c-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="deecc-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="deecc-105">Methods</span></span>
 
-| <span data-ttu-id="d528c-106">Methode</span><span class="sxs-lookup"><span data-stu-id="d528c-106">Method</span></span>           | <span data-ttu-id="d528c-107">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="d528c-107">Return Type</span></span>    |<span data-ttu-id="d528c-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d528c-108">Description</span></span>|
+| <span data-ttu-id="deecc-106">Methode</span><span class="sxs-lookup"><span data-stu-id="deecc-106">Method</span></span>           | <span data-ttu-id="deecc-107">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="deecc-107">Return Type</span></span>    |<span data-ttu-id="deecc-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="deecc-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="d528c-109">Update</span><span class="sxs-lookup"><span data-stu-id="d528c-109">Update</span></span>](../api/inferenceclassificationoverride-update.md) | [<span data-ttu-id="d528c-110">inferenceClassificationOverride</span><span class="sxs-lookup"><span data-stu-id="d528c-110">inferenceClassificationOverride</span></span>](inferenceclassificationoverride.md) |<span data-ttu-id="d528c-111">Ändern Sie das **ClassifyAs** -Feld einer Außerkraftsetzung wie angegeben.</span><span class="sxs-lookup"><span data-stu-id="d528c-111">Change the **ClassifyAs** field of an override as specified.</span></span> |
-|[<span data-ttu-id="d528c-112">Delete</span><span class="sxs-lookup"><span data-stu-id="d528c-112">Delete</span></span>](../api/inferenceclassificationoverride-delete.md) | <span data-ttu-id="d528c-113">Keine</span><span class="sxs-lookup"><span data-stu-id="d528c-113">None</span></span> |<span data-ttu-id="d528c-114">Löscht eine Außerkraftsetzung, die durch ihre ID angegeben ist.</span><span class="sxs-lookup"><span data-stu-id="d528c-114">Delete an override specified by its ID.</span></span> |
+|[<span data-ttu-id="deecc-109">Update</span><span class="sxs-lookup"><span data-stu-id="deecc-109">Update</span></span>](../api/inferenceclassificationoverride-update.md) | [<span data-ttu-id="deecc-110">inferenceClassificationOverride</span><span class="sxs-lookup"><span data-stu-id="deecc-110">inferenceClassificationOverride</span></span>](inferenceclassificationoverride.md) |<span data-ttu-id="deecc-111">Ändern Sie das **ClassifyAs** -Feld einer Außerkraftsetzung wie angegeben.</span><span class="sxs-lookup"><span data-stu-id="deecc-111">Change the **ClassifyAs** field of an override as specified.</span></span> |
+|[<span data-ttu-id="deecc-112">Delete</span><span class="sxs-lookup"><span data-stu-id="deecc-112">Delete</span></span>](../api/inferenceclassificationoverride-delete.md) | <span data-ttu-id="deecc-113">Keine</span><span class="sxs-lookup"><span data-stu-id="deecc-113">None</span></span> |<span data-ttu-id="deecc-114">Löscht eine Außerkraftsetzung, die durch ihre ID angegeben ist.</span><span class="sxs-lookup"><span data-stu-id="deecc-114">Delete an override specified by its ID.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="d528c-115">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="d528c-115">Properties</span></span>
-| <span data-ttu-id="d528c-116">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="d528c-116">Property</span></span>     | <span data-ttu-id="d528c-117">Typ</span><span class="sxs-lookup"><span data-stu-id="d528c-117">Type</span></span>   |<span data-ttu-id="d528c-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d528c-118">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="deecc-115">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="deecc-115">Properties</span></span>
+| <span data-ttu-id="deecc-116">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="deecc-116">Property</span></span>     | <span data-ttu-id="deecc-117">Typ</span><span class="sxs-lookup"><span data-stu-id="deecc-117">Type</span></span>   |<span data-ttu-id="deecc-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="deecc-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d528c-119">classifyAs</span><span class="sxs-lookup"><span data-stu-id="d528c-119">classifyAs</span></span>|<span data-ttu-id="d528c-120">inferenceClassificationType</span><span class="sxs-lookup"><span data-stu-id="d528c-120">inferenceClassificationType</span></span>| <span data-ttu-id="d528c-121">Gibt an, wie eingehende-Nachrichten von einer bestimmten Absender sollte stets als klassifiziert werden.</span><span class="sxs-lookup"><span data-stu-id="d528c-121">Specifies how incoming messages from a specific sender should always be classified as.</span></span> <span data-ttu-id="d528c-122">Die möglichen Werte sind: `focused`, `other`.</span><span class="sxs-lookup"><span data-stu-id="d528c-122">The possible values are: `focused`, `other`.</span></span>|
-|<span data-ttu-id="d528c-123">id</span><span class="sxs-lookup"><span data-stu-id="d528c-123">id</span></span>|<span data-ttu-id="d528c-124">string</span><span class="sxs-lookup"><span data-stu-id="d528c-124">string</span></span>| <span data-ttu-id="d528c-p102">Der eindeutige Bezeichner der Außerkraftsetzung. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="d528c-p102">The unique identifier of the override. Read-only.</span></span>|
-|<span data-ttu-id="d528c-127">senderEmailAddress</span><span class="sxs-lookup"><span data-stu-id="d528c-127">senderEmailAddress</span></span>|[<span data-ttu-id="d528c-128">emailAddress</span><span class="sxs-lookup"><span data-stu-id="d528c-128">emailAddress</span></span>](emailaddress.md)|<span data-ttu-id="d528c-129">Die E-Mail-Adressinformationen des Absenders, für den die Außerkraftsetzung erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="d528c-129">The email address information of the sender for whom the override is created.</span></span>|
+|<span data-ttu-id="deecc-119">classifyAs</span><span class="sxs-lookup"><span data-stu-id="deecc-119">classifyAs</span></span>|<span data-ttu-id="deecc-120">inferenceClassificationType</span><span class="sxs-lookup"><span data-stu-id="deecc-120">inferenceClassificationType</span></span>| <span data-ttu-id="deecc-121">Gibt an, wie eingehende-Nachrichten von einer bestimmten Absender sollte stets als klassifiziert werden.</span><span class="sxs-lookup"><span data-stu-id="deecc-121">Specifies how incoming messages from a specific sender should always be classified as.</span></span> <span data-ttu-id="deecc-122">Die möglichen Werte sind: `focused`, `other`.</span><span class="sxs-lookup"><span data-stu-id="deecc-122">The possible values are: `focused`, `other`.</span></span>|
+|<span data-ttu-id="deecc-123">id</span><span class="sxs-lookup"><span data-stu-id="deecc-123">id</span></span>|<span data-ttu-id="deecc-124">string</span><span class="sxs-lookup"><span data-stu-id="deecc-124">string</span></span>| <span data-ttu-id="deecc-p102">Der eindeutige Bezeichner der Außerkraftsetzung. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="deecc-p102">The unique identifier of the override. Read-only.</span></span>|
+|<span data-ttu-id="deecc-127">senderEmailAddress</span><span class="sxs-lookup"><span data-stu-id="deecc-127">senderEmailAddress</span></span>|[<span data-ttu-id="deecc-128">emailAddress</span><span class="sxs-lookup"><span data-stu-id="deecc-128">emailAddress</span></span>](emailaddress.md)|<span data-ttu-id="deecc-129">Die E-Mail-Adressinformationen des Absenders, für den die Außerkraftsetzung erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="deecc-129">The email address information of the sender for whom the override is created.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="d528c-130">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="d528c-130">Relationships</span></span>
-<span data-ttu-id="d528c-131">Keine</span><span class="sxs-lookup"><span data-stu-id="d528c-131">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="deecc-130">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="deecc-130">Relationships</span></span>
+<span data-ttu-id="deecc-131">Keine</span><span class="sxs-lookup"><span data-stu-id="deecc-131">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="d528c-132">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="d528c-132">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="deecc-132">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="deecc-132">JSON representation</span></span>
 
-<span data-ttu-id="d528c-133">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="d528c-133">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="deecc-133">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="deecc-133">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
