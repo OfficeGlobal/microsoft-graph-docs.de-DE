@@ -2,55 +2,56 @@
 title: 'workbookRange: columnsAfter'
 description: Ruft eine bestimmte Anzahl von Spalten rechts vom gegebenen Bereich ab.
 author: lumine2008
-ms.openlocfilehash: b80657c6afb7709049a1e0ccaa3c3b232f5501c7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 49d2f19622d55297abe9748dff4b91a7a219fda8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304235"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886170"
 ---
-# <a name="workbookrange-columnsafter"></a><span data-ttu-id="1d888-103">workbookRange: columnsAfter</span><span class="sxs-lookup"><span data-stu-id="1d888-103">workbookRange: columnsAfter</span></span>
+# <a name="workbookrange-columnsafter"></a><span data-ttu-id="3d8aa-103">workbookRange: columnsAfter</span><span class="sxs-lookup"><span data-stu-id="3d8aa-103">workbookRange: columnsAfter</span></span>
 
-<span data-ttu-id="1d888-104">Ruft eine bestimmte Anzahl von Spalten rechts vom gegebenen Bereich ab.</span><span class="sxs-lookup"><span data-stu-id="1d888-104">Gets a certain number of columns to the right of the given range.</span></span>
+<span data-ttu-id="3d8aa-104">Ruft eine bestimmte Anzahl von Spalten rechts vom gegebenen Bereich ab.</span><span class="sxs-lookup"><span data-stu-id="3d8aa-104">Gets a certain number of columns to the right of the given range.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1d888-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="1d888-105">Permissions</span></span>
-<span data-ttu-id="1d888-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1d888-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3d8aa-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="3d8aa-105">Permissions</span></span>
+<span data-ttu-id="3d8aa-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3d8aa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1d888-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="1d888-108">Permission type</span></span>      | <span data-ttu-id="1d888-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="1d888-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3d8aa-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="3d8aa-108">Permission type</span></span>      | <span data-ttu-id="3d8aa-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="3d8aa-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1d888-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="1d888-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1d888-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1d888-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="1d888-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="1d888-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1d888-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="1d888-113">Not supported.</span></span>    |
-|<span data-ttu-id="1d888-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="1d888-114">Application</span></span> | <span data-ttu-id="1d888-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="1d888-115">Not supported.</span></span> |
+|<span data-ttu-id="3d8aa-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="3d8aa-110">Delegated (work or school account)</span></span> | <span data-ttu-id="3d8aa-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3d8aa-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="3d8aa-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="3d8aa-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3d8aa-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="3d8aa-113">Not supported.</span></span>    |
+|<span data-ttu-id="3d8aa-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="3d8aa-114">Application</span></span> | <span data-ttu-id="3d8aa-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="3d8aa-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1d888-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="1d888-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3d8aa-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="3d8aa-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="1d888-117">Funktionsparameter</span><span class="sxs-lookup"><span data-stu-id="1d888-117">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="3d8aa-117">Funktionsparameter</span><span class="sxs-lookup"><span data-stu-id="3d8aa-117">Function parameters</span></span>
 
-| <span data-ttu-id="1d888-118">Parameter</span><span class="sxs-lookup"><span data-stu-id="1d888-118">Parameter</span></span>    | <span data-ttu-id="1d888-119">Typ</span><span class="sxs-lookup"><span data-stu-id="1d888-119">Type</span></span>   |<span data-ttu-id="1d888-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1d888-120">Description</span></span>|
+| <span data-ttu-id="3d8aa-118">Parameter</span><span class="sxs-lookup"><span data-stu-id="3d8aa-118">Parameter</span></span>    | <span data-ttu-id="3d8aa-119">Typ</span><span class="sxs-lookup"><span data-stu-id="3d8aa-119">Type</span></span>   |<span data-ttu-id="3d8aa-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3d8aa-120">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1d888-121">count</span><span class="sxs-lookup"><span data-stu-id="1d888-121">count</span></span>|<span data-ttu-id="1d888-122">Int32</span><span class="sxs-lookup"><span data-stu-id="1d888-122">Int32</span></span>|<span data-ttu-id="1d888-123">Optional.</span><span class="sxs-lookup"><span data-stu-id="1d888-123">Optional.</span></span> <span data-ttu-id="1d888-124">Die Anzahl der Spalten im resultierenden Bereich eingeschlossen werden.</span><span class="sxs-lookup"><span data-stu-id="1d888-124">The number of columns to include in the resulting range.</span></span> <span data-ttu-id="1d888-125">Verwenden Sie im Allgemeinen eine positive Zahl, um einen Bereich außerhalb des aktuellen Bereichs erstellen.</span><span class="sxs-lookup"><span data-stu-id="1d888-125">In general, use a positive number to create a range outside the current range.</span></span> <span data-ttu-id="1d888-126">Sie können auch eine negative Zahl verwenden, einen Bereich im aktuellen Bereich erstellt.</span><span class="sxs-lookup"><span data-stu-id="1d888-126">You can also use a negative number to create a range within the current range.</span></span> <span data-ttu-id="1d888-127">Der Standardwert ist 1</span><span class="sxs-lookup"><span data-stu-id="1d888-127">The default value is 1</span></span>|
+|<span data-ttu-id="3d8aa-121">count</span><span class="sxs-lookup"><span data-stu-id="3d8aa-121">count</span></span>|<span data-ttu-id="3d8aa-122">Int32</span><span class="sxs-lookup"><span data-stu-id="3d8aa-122">Int32</span></span>|<span data-ttu-id="3d8aa-123">Optional.</span><span class="sxs-lookup"><span data-stu-id="3d8aa-123">Optional.</span></span> <span data-ttu-id="3d8aa-124">Die Anzahl der Spalten im resultierenden Bereich eingeschlossen werden.</span><span class="sxs-lookup"><span data-stu-id="3d8aa-124">The number of columns to include in the resulting range.</span></span> <span data-ttu-id="3d8aa-125">Verwenden Sie im Allgemeinen eine positive Zahl, um einen Bereich außerhalb des aktuellen Bereichs erstellen.</span><span class="sxs-lookup"><span data-stu-id="3d8aa-125">In general, use a positive number to create a range outside the current range.</span></span> <span data-ttu-id="3d8aa-126">Sie können auch eine negative Zahl verwenden, einen Bereich im aktuellen Bereich erstellt.</span><span class="sxs-lookup"><span data-stu-id="3d8aa-126">You can also use a negative number to create a range within the current range.</span></span> <span data-ttu-id="3d8aa-127">Der Standardwert ist 1</span><span class="sxs-lookup"><span data-stu-id="3d8aa-127">The default value is 1</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="1d888-128">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="1d888-128">Request headers</span></span>
-| <span data-ttu-id="1d888-129">Name</span><span class="sxs-lookup"><span data-stu-id="1d888-129">Name</span></span>       | <span data-ttu-id="1d888-130">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1d888-130">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3d8aa-128">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="3d8aa-128">Request headers</span></span>
+| <span data-ttu-id="3d8aa-129">Name</span><span class="sxs-lookup"><span data-stu-id="3d8aa-129">Name</span></span>       | <span data-ttu-id="3d8aa-130">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3d8aa-130">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="1d888-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="1d888-131">Authorization</span></span>  | <span data-ttu-id="1d888-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="1d888-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="1d888-134">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="1d888-134">Workbook-Session-Id</span></span>  | <span data-ttu-id="1d888-p104">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="1d888-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="3d8aa-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="3d8aa-131">Authorization</span></span>  | <span data-ttu-id="3d8aa-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="3d8aa-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3d8aa-134">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="3d8aa-134">Workbook-Session-Id</span></span>  | <span data-ttu-id="3d8aa-p104">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="3d8aa-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1d888-137">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="1d888-137">Request body</span></span>
-<span data-ttu-id="1d888-138">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="1d888-138">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3d8aa-137">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="3d8aa-137">Request body</span></span>
+<span data-ttu-id="3d8aa-138">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="3d8aa-138">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1d888-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="1d888-139">Response</span></span>
-<span data-ttu-id="1d888-140">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [workbookRange](../resources/range.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1d888-140">If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="3d8aa-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="3d8aa-139">Response</span></span>
+<span data-ttu-id="3d8aa-140">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [workbookRange](../resources/range.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="3d8aa-140">If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1d888-141">Beispiel</span><span class="sxs-lookup"><span data-stu-id="1d888-141">Example</span></span>
-<span data-ttu-id="1d888-142">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="1d888-142">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="1d888-143">Anforderung</span><span class="sxs-lookup"><span data-stu-id="1d888-143">Request</span></span>
-<span data-ttu-id="1d888-144">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="1d888-144">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="3d8aa-141">Beispiel</span><span class="sxs-lookup"><span data-stu-id="3d8aa-141">Example</span></span>
+<span data-ttu-id="3d8aa-142">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="3d8aa-142">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="3d8aa-143">Anforderung</span><span class="sxs-lookup"><span data-stu-id="3d8aa-143">Request</span></span>
+<span data-ttu-id="3d8aa-144">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="3d8aa-144">Here is an example of the request.</span></span>
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -61,8 +62,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=2)
 ```
 
-##### <a name="response"></a><span data-ttu-id="1d888-145">Antwort</span><span class="sxs-lookup"><span data-stu-id="1d888-145">Response</span></span>
-<span data-ttu-id="1d888-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1d888-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="3d8aa-145">Antwort</span><span class="sxs-lookup"><span data-stu-id="3d8aa-145">Response</span></span>
+<span data-ttu-id="3d8aa-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="3d8aa-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

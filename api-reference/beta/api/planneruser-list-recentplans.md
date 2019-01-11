@@ -2,46 +2,47 @@
 title: Liste recentPlans
 description: Abrufen einer Liste der PlannerPlans kürzlich von einem Benutzer angezeigt. Aktualisieren Sie zuletzt angezeigte Pläne, indem die Ressource PlannerUser aktualisieren.
 author: TarkanSevilmis
-ms.openlocfilehash: 68ed0cf626207e0cf02b6d32187598c3cf68d9d1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bfc2ffff15db55c289a95223ced6cb15af0535cc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322506"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884490"
 ---
-# <a name="list-recentplans"></a><span data-ttu-id="67495-104">Liste recentPlans</span><span class="sxs-lookup"><span data-stu-id="67495-104">List recentPlans</span></span>
+# <a name="list-recentplans"></a><span data-ttu-id="928e7-104">Liste recentPlans</span><span class="sxs-lookup"><span data-stu-id="928e7-104">List recentPlans</span></span>
 
-> <span data-ttu-id="67495-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="67495-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="67495-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="67495-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="928e7-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="928e7-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="928e7-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="928e7-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="67495-107">Abrufen einer Liste der [PlannerPlans](../resources/plannerplan.md) kürzlich von einem Benutzer angezeigt.</span><span class="sxs-lookup"><span data-stu-id="67495-107">Retrieve a list of [plannerPlans](../resources/plannerplan.md) recently viewed by a user.</span></span> <span data-ttu-id="67495-108">Sie können die zuletzt angezeigte Pläne durch [Aktualisieren der Ressource PlannerUser](planneruser-update.md)aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="67495-108">You can update recently viewed plans by [updating the plannerUser resource](planneruser-update.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="67495-109">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="67495-109">Permissions</span></span>
-<span data-ttu-id="67495-p104">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="67495-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="928e7-107">Abrufen einer Liste der [PlannerPlans](../resources/plannerplan.md) kürzlich von einem Benutzer angezeigt.</span><span class="sxs-lookup"><span data-stu-id="928e7-107">Retrieve a list of [plannerPlans](../resources/plannerplan.md) recently viewed by a user.</span></span> <span data-ttu-id="928e7-108">Sie können die zuletzt angezeigte Pläne durch [Aktualisieren der Ressource PlannerUser](planneruser-update.md)aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="928e7-108">You can update recently viewed plans by [updating the plannerUser resource](planneruser-update.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="928e7-109">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="928e7-109">Permissions</span></span>
+<span data-ttu-id="928e7-p104">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="928e7-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="67495-112">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="67495-112">Permission type</span></span>      | <span data-ttu-id="67495-113">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="67495-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="928e7-112">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="928e7-112">Permission type</span></span>      | <span data-ttu-id="928e7-113">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="928e7-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="67495-114">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="67495-114">Delegated (work or school account)</span></span> | <span data-ttu-id="67495-115">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="67495-115">Group.Read.All</span></span>    |
-|<span data-ttu-id="67495-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="67495-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="67495-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="67495-117">Not supported.</span></span>    |
-|<span data-ttu-id="67495-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="67495-118">Application</span></span> | <span data-ttu-id="67495-119">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="67495-119">Not supported.</span></span> |
+|<span data-ttu-id="928e7-114">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="928e7-114">Delegated (work or school account)</span></span> | <span data-ttu-id="928e7-115">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="928e7-115">Group.Read.All</span></span>    |
+|<span data-ttu-id="928e7-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="928e7-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="928e7-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="928e7-117">Not supported.</span></span>    |
+|<span data-ttu-id="928e7-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="928e7-118">Application</span></span> | <span data-ttu-id="928e7-119">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="928e7-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="67495-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="67495-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="928e7-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="928e7-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/recentPlans
 GET /users/<id>/planner/recentPlans
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="67495-121">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="67495-121">Request headers</span></span>
-| <span data-ttu-id="67495-122">Name</span><span class="sxs-lookup"><span data-stu-id="67495-122">Name</span></span>      |<span data-ttu-id="67495-123">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="67495-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="928e7-121">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="928e7-121">Request headers</span></span>
+| <span data-ttu-id="928e7-122">Name</span><span class="sxs-lookup"><span data-stu-id="928e7-122">Name</span></span>      |<span data-ttu-id="928e7-123">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="928e7-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="67495-124">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="67495-124">Authorization</span></span>  | <span data-ttu-id="67495-p105">Bearer {code}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="67495-p105">Bearer {code}. Required.</span></span>|
+| <span data-ttu-id="928e7-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="928e7-124">Authorization</span></span>  | <span data-ttu-id="928e7-p105">Bearer {code}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="928e7-p105">Bearer {code}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="67495-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="67495-127">Request body</span></span>
-<span data-ttu-id="67495-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="67495-128">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="67495-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="67495-129">Response</span></span>
-<span data-ttu-id="67495-130">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [PlannerPlan](../resources/plannerplan.md) .</span><span class="sxs-lookup"><span data-stu-id="67495-130">If successful, this method returns a `200 OK` response code and a collection of [plannerPlan](../resources/plannerplan.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="67495-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="67495-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="67495-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="67495-132">Request</span></span>
-<span data-ttu-id="67495-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="67495-133">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="928e7-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="928e7-127">Request body</span></span>
+<span data-ttu-id="928e7-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="928e7-128">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="928e7-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="928e7-129">Response</span></span>
+<span data-ttu-id="928e7-130">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [PlannerPlan](../resources/plannerplan.md) .</span><span class="sxs-lookup"><span data-stu-id="928e7-130">If successful, this method returns a `200 OK` response code and a collection of [plannerPlan](../resources/plannerplan.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="928e7-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="928e7-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="928e7-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="928e7-132">Request</span></span>
+<span data-ttu-id="928e7-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="928e7-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_recentplans"
@@ -49,10 +50,10 @@ GET /users/<id>/planner/recentPlans
 ```http
 GET https://graph.microsoft.com/beta/me/planner/recentPlans
 ```
-##### <a name="response"></a><span data-ttu-id="67495-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="67495-134">Response</span></span>
-<span data-ttu-id="67495-135">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="67495-135">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="928e7-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="928e7-134">Response</span></span>
+<span data-ttu-id="928e7-135">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="928e7-135">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="67495-p106">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="67495-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="928e7-p106">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="928e7-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

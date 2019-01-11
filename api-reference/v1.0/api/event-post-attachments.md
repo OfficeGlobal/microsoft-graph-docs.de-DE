@@ -2,27 +2,28 @@
 title: Anlage hinzufügen
 description: Verwenden Sie diese API, um eine Anlage auf ein Ereignis hinzuzufügen. Seit dort
 author: angelgolfer-ms
-ms.openlocfilehash: 010e0d4501d9a9e520e977af28f9ff453f9c4c6b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 14ee980056c8a18183f81fad01cfc09e92ac35c2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359941"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886611"
 ---
-# <a name="add-attachment"></a><span data-ttu-id="af433-104">Anlage hinzufügen</span><span class="sxs-lookup"><span data-stu-id="af433-104">Add attachment</span></span>
+# <a name="add-attachment"></a><span data-ttu-id="e6ab4-104">Anlage hinzufügen</span><span class="sxs-lookup"><span data-stu-id="e6ab4-104">Add attachment</span></span>
 
-<span data-ttu-id="af433-p102">Verwenden Sie diese API zum Hinzufügen einer [Anlage](../resources/attachment.md) zu einem Ereignis. Da es derzeit eine Beschränkung von 4 MB für die Gesamtgröße jeder REST-Anforderung gibt, wird hierdurch die Größe der Anlage, die Sie hinzufügen können, auf unter 4 MB beschränkt.</span><span class="sxs-lookup"><span data-stu-id="af433-p102">Use this API to add an [attachment](../resources/attachment.md) to an event. Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.</span></span>
-## <a name="permissions"></a><span data-ttu-id="af433-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="af433-107">Permissions</span></span>
-<span data-ttu-id="af433-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="af433-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e6ab4-p102">Verwenden Sie diese API zum Hinzufügen einer [Anlage](../resources/attachment.md) zu einem Ereignis. Da es derzeit eine Beschränkung von 4 MB für die Gesamtgröße jeder REST-Anforderung gibt, wird hierdurch die Größe der Anlage, die Sie hinzufügen können, auf unter 4 MB beschränkt.</span><span class="sxs-lookup"><span data-stu-id="e6ab4-p102">Use this API to add an [attachment](../resources/attachment.md) to an event. Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e6ab4-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="e6ab4-107">Permissions</span></span>
+<span data-ttu-id="e6ab4-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e6ab4-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="af433-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="af433-110">Permission type</span></span>      | <span data-ttu-id="af433-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="af433-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e6ab4-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="e6ab4-110">Permission type</span></span>      | <span data-ttu-id="e6ab4-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="e6ab4-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="af433-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="af433-112">Delegated (work or school account)</span></span> | <span data-ttu-id="af433-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="af433-113">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="af433-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="af433-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="af433-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="af433-115">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="af433-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="af433-116">Application</span></span> | <span data-ttu-id="af433-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="af433-117">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="e6ab4-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="e6ab4-112">Delegated (work or school account)</span></span> | <span data-ttu-id="e6ab4-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e6ab4-113">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="e6ab4-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="e6ab4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e6ab4-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e6ab4-115">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="e6ab4-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="e6ab4-116">Application</span></span> | <span data-ttu-id="e6ab4-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e6ab4-117">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="af433-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="af433-118">HTTP request</span></span>
-<span data-ttu-id="af433-119">Anlagen für ein [Ereignis](../resources/event.md) in der Benutzer als [Kalender](../resources/calendar.md).</span><span class="sxs-lookup"><span data-stu-id="af433-119">Attachments for an [event](../resources/event.md) in the user's default [calendar](../resources/calendar.md).</span></span>
+## <a name="http-request"></a><span data-ttu-id="e6ab4-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="e6ab4-118">HTTP request</span></span>
+<span data-ttu-id="e6ab4-119">Anlagen für ein [Ereignis](../resources/event.md) in der Benutzer als [Kalender](../resources/calendar.md).</span><span class="sxs-lookup"><span data-stu-id="e6ab4-119">Attachments for an [event](../resources/event.md) in the user's default [calendar](../resources/calendar.md).</span></span>
 
 <!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
@@ -41,7 +42,7 @@ POST /groups/{id}/events/{id}/attachments
 POST /groups/{id}/calendar/events/{id}/attachments
 -->
 
-<span data-ttu-id="af433-120">Anlagen für ein [Ereignis](../resources/event.md) in einem [Kalender](../resources/calendar.md) aus der standardmäßigen [calendarGroup](../resources/calendargroup.md) des Benutzers.</span><span class="sxs-lookup"><span data-stu-id="af433-120">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="e6ab4-120">Anlagen für ein [Ereignis](../resources/event.md) in einem [Kalender](../resources/calendar.md) aus der standardmäßigen [calendarGroup](../resources/calendargroup.md) des Benutzers.</span><span class="sxs-lookup"><span data-stu-id="e6ab4-120">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/calendars/{id}/events/{id}/attachments
@@ -50,29 +51,29 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
 POST /me/calendargroup/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
 ```
-<span data-ttu-id="af433-121">Anlagen für ein [Ereignis](../resources/event.md) in einem [Kalender](../resources/calendar.md) aus der [calendarGroup](../resources/calendargroup.md) eines Benutzers.</span><span class="sxs-lookup"><span data-stu-id="af433-121">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="e6ab4-121">Anlagen für ein [Ereignis](../resources/event.md) in einem [Kalender](../resources/calendar.md) aus der [calendarGroup](../resources/calendargroup.md) eines Benutzers.</span><span class="sxs-lookup"><span data-stu-id="e6ab4-121">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 ```
-## <a name="request-headers"></a><span data-ttu-id="af433-122">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="af433-122">Request headers</span></span>
-| <span data-ttu-id="af433-123">Name</span><span class="sxs-lookup"><span data-stu-id="af433-123">Name</span></span>       | <span data-ttu-id="af433-124">Typ</span><span class="sxs-lookup"><span data-stu-id="af433-124">Type</span></span> | <span data-ttu-id="af433-125">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="af433-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e6ab4-122">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="e6ab4-122">Request headers</span></span>
+| <span data-ttu-id="e6ab4-123">Name</span><span class="sxs-lookup"><span data-stu-id="e6ab4-123">Name</span></span>       | <span data-ttu-id="e6ab4-124">Typ</span><span class="sxs-lookup"><span data-stu-id="e6ab4-124">Type</span></span> | <span data-ttu-id="e6ab4-125">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e6ab4-125">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="af433-126">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="af433-126">Authorization</span></span>  | <span data-ttu-id="af433-127">string</span><span class="sxs-lookup"><span data-stu-id="af433-127">string</span></span>  | <span data-ttu-id="af433-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="af433-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="af433-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="af433-130">Content-Type</span></span> | <span data-ttu-id="af433-131">string</span><span class="sxs-lookup"><span data-stu-id="af433-131">string</span></span>  | <span data-ttu-id="af433-p105">Die Art der Daten im Textkörper einer Entität. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="af433-p105">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="e6ab4-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="e6ab4-126">Authorization</span></span>  | <span data-ttu-id="e6ab4-127">string</span><span class="sxs-lookup"><span data-stu-id="e6ab4-127">string</span></span>  | <span data-ttu-id="e6ab4-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="e6ab4-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e6ab4-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e6ab4-130">Content-Type</span></span> | <span data-ttu-id="e6ab4-131">string</span><span class="sxs-lookup"><span data-stu-id="e6ab4-131">string</span></span>  | <span data-ttu-id="e6ab4-p105">Die Art der Daten im Textkörper einer Entität. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="e6ab4-p105">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="af433-134">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="af433-134">Request body</span></span>
-<span data-ttu-id="af433-135">Geben Sie im Anforderungstext eine JSON-Darstellung des [attachment](../resources/attachment.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="af433-135">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e6ab4-134">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="e6ab4-134">Request body</span></span>
+<span data-ttu-id="e6ab4-135">Geben Sie im Anforderungstext eine JSON-Darstellung des [attachment](../resources/attachment.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="e6ab4-135">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="af433-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="af433-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e6ab4-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="e6ab4-136">Response</span></span>
 
-<span data-ttu-id="af433-137">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und ein [attachment](../resources/attachment.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="af433-137">If successful, this method returns `201 Created` response code and [attachment](../resources/attachment.md) object in the response body.</span></span>
+<span data-ttu-id="e6ab4-137">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und ein [attachment](../resources/attachment.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="e6ab4-137">If successful, this method returns `201 Created` response code and [attachment](../resources/attachment.md) object in the response body.</span></span>
 
-## <a name="example-file-attachment"></a><span data-ttu-id="af433-138">Beispiel (Dateianlage)</span><span class="sxs-lookup"><span data-stu-id="af433-138">Example (file attachment)</span></span>
+## <a name="example-file-attachment"></a><span data-ttu-id="e6ab4-138">Beispiel (Dateianlage)</span><span class="sxs-lookup"><span data-stu-id="e6ab4-138">Example (file attachment)</span></span>
 
-##### <a name="request"></a><span data-ttu-id="af433-139">Anforderung</span><span class="sxs-lookup"><span data-stu-id="af433-139">Request</span></span>
-<span data-ttu-id="af433-140">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="af433-140">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="e6ab4-139">Anforderung</span><span class="sxs-lookup"><span data-stu-id="e6ab4-139">Request</span></span>
+<span data-ttu-id="e6ab4-140">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="e6ab4-140">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="],
@@ -90,10 +91,10 @@ Content-length: 151
 }
 ```
 
-<span data-ttu-id="af433-141">Geben Sie im Anforderungstext eine JSON-Darstellung des [attachment](../resources/attachment.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="af433-141">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
+<span data-ttu-id="e6ab4-141">Geben Sie im Anforderungstext eine JSON-Darstellung des [attachment](../resources/attachment.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="e6ab4-141">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="af433-142">Antwort</span><span class="sxs-lookup"><span data-stu-id="af433-142">Response</span></span>
-<span data-ttu-id="af433-143">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="af433-143">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="e6ab4-142">Antwort</span><span class="sxs-lookup"><span data-stu-id="e6ab4-142">Response</span></span>
+<span data-ttu-id="e6ab4-143">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="e6ab4-143">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -118,11 +119,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-item-attachment"></a><span data-ttu-id="af433-144">Beispiel (Elementanlage)</span><span class="sxs-lookup"><span data-stu-id="af433-144">Example (item attachment)</span></span>
+## <a name="example-item-attachment"></a><span data-ttu-id="e6ab4-144">Beispiel (Elementanlage)</span><span class="sxs-lookup"><span data-stu-id="e6ab4-144">Example (item attachment)</span></span>
 
-##### <a name="request"></a><span data-ttu-id="af433-145">Anforderung</span><span class="sxs-lookup"><span data-stu-id="af433-145">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="e6ab4-145">Anforderung</span><span class="sxs-lookup"><span data-stu-id="e6ab4-145">Request</span></span>
 
-<span data-ttu-id="af433-146">Nachfolgend finden Sie ein Beispiel, in dem ein Ereignis als Elementanlage an ein anderes Element angefügt wird.</span><span class="sxs-lookup"><span data-stu-id="af433-146">Here is an example which attaches an event with another event as an item attachment.</span></span>
+<span data-ttu-id="e6ab4-146">Nachfolgend finden Sie ein Beispiel, in dem ein Ereignis als Elementanlage an ein anderes Element angefügt wird.</span><span class="sxs-lookup"><span data-stu-id="e6ab4-146">Here is an example which attaches an event with another event as an item attachment.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -156,8 +157,8 @@ Content-length: 600
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="af433-147">Antwort</span><span class="sxs-lookup"><span data-stu-id="af433-147">Response</span></span>
-<span data-ttu-id="af433-148">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="af433-148">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="e6ab4-147">Antwort</span><span class="sxs-lookup"><span data-stu-id="e6ab4-147">Response</span></span>
+<span data-ttu-id="e6ab4-148">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="e6ab4-148">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
