@@ -1,12 +1,13 @@
 ---
 title: Kalender aktualisieren
 description: 'Aktualisieren Sie die Eigenschaften eines calendar-Objekts. Der Kalender möglich für einen Benutzer, '
-ms.openlocfilehash: 112d5c5104c5871e7f9e59cbd98c6d46e3a12bbd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f56ce185718c2a639f32606b9db79f0154a824e7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017693"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857113"
 ---
 # <a name="update-calendar"></a>Kalender aktualisieren
 
@@ -41,7 +42,7 @@ PATCH /me/calendarGroups/{id}/calendars/{id}
 PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json. Erforderlich.   |

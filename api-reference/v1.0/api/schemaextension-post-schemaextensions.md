@@ -1,12 +1,13 @@
 ---
 title: schemaExtension erstellen
 description: Erstellen Sie eine neue schemaExtension-Definition, um einen unterstützenden Ressourcentyp zu erweitern.
-ms.openlocfilehash: b66cdc9d589520bbdf3557c4d1ea791f75def984
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 100602336f32ce7d13318650a7e473b7635f768c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017435"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857428"
 ---
 # <a name="create-schemaextension"></a>schemaExtension erstellen
 
@@ -205,7 +206,7 @@ Content-length: 420
 ```
 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview)
 - [Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen](/graph/extensibility-schema-groups)

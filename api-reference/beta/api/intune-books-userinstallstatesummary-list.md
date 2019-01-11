@@ -2,12 +2,13 @@
 title: Auflisten von „userInstallStateSummary“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs userInstallStateSummary auf.
 author: tfitzmac
-ms.openlocfilehash: fe0c423ef85f2b9492ffd22fae1340773ccaf627
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4e1e189e51872cbb72b2b270ed72075aeb41cfa3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362678"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858724"
 ---
 # <a name="list-userinstallstatesummaries"></a>Auflisten von „userInstallStateSummary“
 
@@ -37,8 +38,8 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

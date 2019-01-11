@@ -1,12 +1,13 @@
 ---
 title: Update-Richtlinie
 description: Aktualisieren von Eigenschaften in einer vorhandenen Richtlinie.
-ms.openlocfilehash: 426476b5545e511fe2da111acb1f47f38f32c96f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2992f2f76c0e8b213ad8aabca1bfd0fe59883989
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065280"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857155"
 ---
 # <a name="update-policy"></a>Update-Richtlinie
 
@@ -41,8 +42,8 @@ Geben Sie im Textkörper Anforderung ein JSON-Objekt mit den Parametern, die akt
 |:---------------|:--------|:----------|
 |definition|String|Die stringified Version des [Richtlinienobjekts](../resources/policy.md) .|
 |displayName|String|Ein benutzerdefinierter Name für die Richtlinie ein.|
-|isOrganizationDefault|Boolesch|Gibt an, ob diese Richtlinie standardmäßig angewendet wird.|
-|Typ|String|Gibt den Typ der Richtlinie an. Derzeit muss "TokenLifetimePolicy"|
+|isOrganizationDefault|Boolescher Wert|Gibt an, ob diese Richtlinie standardmäßig angewendet wird.|
+|type|String|Gibt den Typ der Richtlinie an. Derzeit muss "TokenLifetimePolicy"|
 
 ## <a name="response"></a>Antwort
 

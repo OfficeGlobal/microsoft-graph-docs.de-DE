@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp objectMapping
 description: Definiert, wie ein bestimmtes Objekt aus dem Quellverzeichnis zum Zielverzeichnis synchronisiert werden sollen. Insbesondere wird definiert, wie-Objekts in Quellverzeichnis ein Objekt im Zielverzeichnis, zugeordnet werden soll was (falls vorhanden) festlegen des Gültigkeitsbereichs Filter sollte verwendet werden, zu entscheiden, ob wir ein bestimmtes Objekt bereitstellen möchten, und Wechsel zu von transformiert wie Objektattribute werden sollten Quell-und Zielverzeichnis.
-ms.openlocfilehash: 5ecf406c3dab2f8d6fdcecadda4d5ff7bbb4f4d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 21e996b72be7df93c86f9e5f78a0033c9203cd2c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060079"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851751"
 ---
 # <a name="objectmapping-resource-type"></a>Ressourcentyp objectMapping
 
@@ -24,10 +25,10 @@ Objekt Zuordnungen der Hauptteil der [Synchronisierung Regel](synchronization-sy
 |enabled        |Boolescher Wert    |Wenn `true`, diese objektzuordnung während der Synchronisation verarbeitet werden. Wenn `false`, diese objektzuordnung übersprungen.|
 |flowTypes      |objectFlowType    |Welche Ablauf für diese objektzuordnung aktiviert sind. `Add`erstellt neue Objekte in das Zielverzeichnis `Update` ändert vorhandene Objekte und `Delete` Verwaltungsagents vorhandener Benutzer. Der Standardwert ist `Add, Update, Delete`. |
 |Metadaten       |MetadataEntry-Auflistung    |Zusätzliche Erweiterungseigenschaften. Es sei denn, Sie explizit erwähnt, sollte Metadatenwerte nicht geändert werden.|
-|name           |String     |Human-Anzeigenamen des Objekt-Zuordnung.|
-|Bereich          |[filter](synchronization-filter.md)     |Definiert einen Filter verwendet werden, bei der Entscheidung, ob ein bestimmtes Objekt bereitgestellt werden soll. Angenommen, möchten Sie nur für Benutzer bereitgestellt werden soll, die sich in den USA befinden.|
-|Objektname (Herkunft)           |String     |Name des Objekts in das Quellverzeichnis. Muss die zu verwendenden Objektnamen aus der Quelle [Directory Definition](synchronization-directorydefinition.md)übereinstimmen.|
-|targetObjectName           |String     |Name des Objekts in das Zielverzeichnis. Muss die zu verwendenden Objektnamen aus der Ziel- [Verzeichnis Definition](synchronization-directorydefinition.md)übereinstimmen.|
+|name           |Zeichenfolge     |Human-Anzeigenamen des Objekt-Zuordnung.|
+|scope          |[filter](synchronization-filter.md)     |Definiert einen Filter verwendet werden, bei der Entscheidung, ob ein bestimmtes Objekt bereitgestellt werden soll. Angenommen, möchten Sie nur für Benutzer bereitgestellt werden soll, die sich in den USA befinden.|
+|Objektname (Herkunft)           |Zeichenfolge     |Name des Objekts in das Quellverzeichnis. Muss die zu verwendenden Objektnamen aus der Quelle [Directory Definition](synchronization-directorydefinition.md)übereinstimmen.|
+|targetObjectName           |Zeichenfolge     |Name des Objekts in das Zielverzeichnis. Muss die zu verwendenden Objektnamen aus der Ziel- [Verzeichnis Definition](synchronization-directorydefinition.md)übereinstimmen.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

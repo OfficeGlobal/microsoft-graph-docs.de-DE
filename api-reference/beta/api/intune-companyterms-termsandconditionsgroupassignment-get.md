@@ -2,12 +2,13 @@
 title: Abrufen von termsAndConditionsGroupAssignment
 description: Lesen Sie Eigenschaften und Beziehungen des TermsAndConditionsGroupAssignment-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 92b9f6c0d48fe09149efd98015d64e96e2575852
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b1a762bf9161585f6ec29331ebebd490c8cccd44
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345031"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859801"
 ---
 # <a name="get-termsandconditionsgroupassignment"></a>Abrufen von termsAndConditionsGroupAssignment
 
@@ -37,10 +38,10 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignments
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

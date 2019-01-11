@@ -2,12 +2,13 @@
 title: telecomExpenseManagementPartner erstellen
 description: Erstellen eines neuen telecomExpenseManagementPartner-Objekts.
 author: tfitzmac
-ms.openlocfilehash: e3b099bf71b586313a5cf67012c7f24ebc7e858c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1524b8aaedfad646cfee1371a3e8529f9e60c855
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322407"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856994"
 ---
 # <a name="create-telecomexpensemanagementpartner"></a>telecomExpenseManagementPartner erstellen
 
@@ -37,8 +38,8 @@ POST /deviceManagement/telecomExpenseManagementPartners
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des telecomExpenseManagementPartner-Objekts an.
@@ -47,9 +48,9 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner des TEM-Partners|
-|displayName|String|Anzeigename des TEM-Partners|
-|url|String|Die URL für die Verwaltungssteuerung des TEM-Partners, mit der ein Administrator den TEM-Dienst konfigurieren kann.|
+|id|Zeichenfolge|Eindeutiger Bezeichner des TEM-Partners|
+|displayName|Zeichenfolge|Anzeigename des TEM-Partners|
+|url|Zeichenfolge|Die URL für die Verwaltungssteuerung des TEM-Partners, mit der ein Administrator den TEM-Dienst konfigurieren kann.|
 |appAuthorized|Boolescher Wert|Gibt an, ob die AAD-App des Partners für den Zugriff auf Intune autorisiert wurde.|
 |enabled|Boolescher Wert|Gibt an, ob die Intune-Verbindung mit dem TEM-Dienst derzeit aktiviert oder deaktiviert ist.|
 |lastConnectionDateTime|DateTimeOffset|Zeitstempel der letzten vom TEM-Partner an Intune gesendeten Anforderung|

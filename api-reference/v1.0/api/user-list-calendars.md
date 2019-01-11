@@ -1,12 +1,13 @@
 ---
 title: Kalender auflisten
 description: 'Mit dieser API können Sie alle Kalender eines Benutzers (Navigationseigenschaft `/calendars`), alle Kalender aus der Standardkalendergruppe oder alle Kalender aus einer bestimmten Kalendergruppe abrufen. '
-ms.openlocfilehash: ca0a494510e8236f21b0700092af3dac926df558
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 3750f034d501ab06ee0b10e1b567f14f03cc4043
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018089"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857029"
 ---
 # <a name="list-calendars"></a>Kalender auflisten
 
@@ -44,7 +45,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{calendar_group_id}/calendars
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type   | application/json |

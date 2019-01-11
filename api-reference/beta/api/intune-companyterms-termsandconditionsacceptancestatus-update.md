@@ -2,12 +2,13 @@
 title: Aktualisieren von „termsAndConditionsAcceptanceStatus“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs termsAndConditionsAcceptanceStatus.
 author: tfitzmac
-ms.openlocfilehash: 8c28732beeebd78be6bd5b461b87bbf14550db8e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 886910cfe2ac0b1bcf6ad1fcbd0a76a79c515aba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355062"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858436"
 ---
 # <a name="update-termsandconditionsacceptancestatus"></a>Aktualisieren von „termsAndConditionsAcceptanceStatus“
 
@@ -37,8 +38,8 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) an.

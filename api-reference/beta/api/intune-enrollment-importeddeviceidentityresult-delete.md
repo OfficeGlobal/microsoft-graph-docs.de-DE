@@ -2,12 +2,13 @@
 title: ImportedDeviceIdentityResult löschen
 description: Löscht eine ImportedDeviceIdentityResult.
 author: tfitzmac
-ms.openlocfilehash: 9fd04bdd1c57a5dae19024bbc3d44f9a05a850be
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 72f733249f64f18ea3998fca0dfd2baafdd1dd58
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340523"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858184"
 ---
 # <a name="delete-importeddeviceidentityresult"></a>ImportedDeviceIdentityResult löschen
 
@@ -35,10 +36,10 @@ DELETE /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

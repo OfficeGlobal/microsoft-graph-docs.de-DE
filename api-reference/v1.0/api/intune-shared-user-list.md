@@ -2,12 +2,13 @@
 title: Benutzer auflisten
 description: Auflisten von Eigenschaften und Beziehungen der user-Objekte.
 author: tfitzmac
-ms.openlocfilehash: 9d68b6855a80262daf359950967517a4ec8faa8c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f286cd3bdb49f99fcc8db52b1fee8c204ccdee7c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357141"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856787"
 ---
 # <a name="list-users"></a>Benutzer auflisten
 
@@ -39,8 +40,8 @@ GET /users
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

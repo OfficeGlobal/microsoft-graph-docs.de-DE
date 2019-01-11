@@ -2,12 +2,13 @@
 title: AndroidForWorkDefaultAppPermissionPolicyType Enum-Typ
 description: Android Arbeit für app-Berechtigung Richtlinie Standardtyp.
 author: tfitzmac
-ms.openlocfilehash: 75e04b762a1c573bf47a14ed5b850fe909818bfa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5d449e170378357d5e82abf9771eedcd6f46ca27
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328910"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859199"
 ---
 # <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>AndroidForWorkDefaultAppPermissionPolicyType Enum-Typ
 
@@ -17,10 +18,10 @@ ms.locfileid: "27328910"
 
 Android Arbeit für app-Berechtigung Richtlinie Standardtyp.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |deviceDefault|0|Gerät Standardwert, keine beabsichtigt.|
-|prompt|1|Auffordern.|
+|Aufforderung|1|Auffordern.|
 |autoGrant|2|Automatische erteilen.|
 |autoDeny|3|Automatische verweigern.|
 

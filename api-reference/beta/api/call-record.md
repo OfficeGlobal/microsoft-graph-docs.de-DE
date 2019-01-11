@@ -2,12 +2,13 @@
 title: 'Rufen Sie: Datensatz'
 description: Notieren Sie den Anruf.
 author: VinodRavichandran
-ms.openlocfilehash: 44b204a1185881cc9e1c96867e906c658c0d5ed9
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: afb74bb656eb6fcc09fdab71477843748bc5616d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380520"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859577"
 ---
 # <a name="call-record"></a>Rufen Sie: Datensatz
 
@@ -22,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | :-------------- | :------------------------------------------ |
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Nicht unterstützt        |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt        |
-| Application     | Calls.AccessMedia.All                       |
+| Anwendung     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

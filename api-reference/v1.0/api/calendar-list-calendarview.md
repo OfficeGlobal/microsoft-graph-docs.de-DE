@@ -1,12 +1,13 @@
 ---
 title: calendarView auflisten
 description: Möchten Sie die vorkommen, Ausnahmen und einzelne Instanzen von Ereignissen in einer Kalenderansicht von einem Zeitbereich definierten erhalten,
-ms.openlocfilehash: 37f4b1e72f15e455ab611d9d9b85b18ca7bba68d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 48ec49eb5038e7a4c977af0248443e1ca7241cb6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017287"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857701"
 ---
 # <a name="list-calendarview"></a>calendarView auflisten
 
@@ -52,8 +53,8 @@ Stellen Sie in der URL der Anforderung die folgenden Funktionsparameter mit Wert
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|startDateTime|String|Startdatum und -uhrzeit des Zeitraums, dargestellt im ISO 8601-Format. Beispielsweise „2015-11-08T19:00:00.0000000“.|
-|endDateTime|String|Enddatum und -uhrzeit des Zeitraums, dargestellt im ISO 8601-Format. Z. B. „2015-11-08T20:00:00.0000000“.|
+|startDateTime|Zeichenfolge|Startdatum und -uhrzeit des Zeitraums, dargestellt im ISO 8601-Format. Beispielsweise „2015-11-08T19:00:00.0000000“.|
+|endDateTime|Zeichenfolge|Enddatum und -uhrzeit des Zeitraums, dargestellt im ISO 8601-Format. Z. B. „2015-11-08T20:00:00.0000000“.|
 
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader

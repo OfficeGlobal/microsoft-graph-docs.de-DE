@@ -2,12 +2,13 @@
 title: 'Chart: setData'
 description: Setzt die Quelldaten für das Diagramm zurück.
 author: lumine2008
-ms.openlocfilehash: e20d7c8f66d89ba07e5c0c04d7ca927bad9470eb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b295b38df2cf7be1c568588d58bfb2cf529f4dc4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324696"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858149"
 ---
 # <a name="chart-setdata"></a>Chart: setData
 

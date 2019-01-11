@@ -2,12 +2,13 @@
 title: windowsInformationProtectionNetworkLearningSummary abrufen
 description: Lesen von Eigenschaften und Beziehungen des windowsInformationProtectionNetworkLearningSummary-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 46c255b5e59ab4245b1945d588bc15b36b55aec8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 27b25a6a2ed39e5f18acf66df7142b2c6ad3fd96
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332130"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858639"
 ---
 # <a name="get-windowsinformationprotectionnetworklearningsummary"></a>windowsInformationProtectionNetworkLearningSummary abrufen
 
@@ -37,8 +38,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

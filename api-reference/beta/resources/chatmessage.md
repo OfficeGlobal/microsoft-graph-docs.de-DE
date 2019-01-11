@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp chatMessage
 description: Stellt eine einzelne Chatnachricht innerhalb einer Entität Kanal oder Chat. Die Nachricht kann ein Stamm-Nachricht oder einen Teil davon ein Thread, der von der **ReplyToId** -Eigenschaft in der Nachricht definiert ist.
-ms.openlocfilehash: 1fba27567d5a1c80a36a5758925ec427735504cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: ad381102f7e93a4dcccd7b68435d0687ed6b4837
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058270"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855993"
 ---
 # <a name="chatmessage-resource-type"></a>Ressourcentyp chatMessage
 
@@ -26,11 +27,11 @@ Stellt eine einzelne Chatnachricht innerhalb einer Entität [Kanal](channel.md) 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|String| Schreibgeschützt. Eindeutige ID der Nachricht.|
+|id|Zeichenfolge| Schreibgeschützt. Eindeutige ID der Nachricht.|
 |replyToId| string | ID der übergeordneten Nachricht/Root Nachricht des Threads |
 |Von|[identitySet](identityset.md)| Details des Absenders der Nachricht|
 |etag| string | Versionsnummer der Nachricht |
-|messageType|String|Der Typ der aktuellen Nachricht unterstützt Werte sind: Meldung, ChatEvent, Eingabe|
+|messageType|Zeichenfolge|Der Typ der aktuellen Nachricht unterstützt Werte sind: Meldung, ChatEvent, Eingabe|
 |createdDateTime|dateTimeOffset|Schreibgeschützt. Zeitstempel der Erstellung der Nachricht|
 |lastModifiedDateTime|dateTimeOffset|Schreibgeschützt. Wenn die Nachricht bearbeitet/aktualisiert wurde Zeitstempel|
 |isDeleted|Boolean|Darstellt, wenn eine Nachricht weiche gelöscht wurde|

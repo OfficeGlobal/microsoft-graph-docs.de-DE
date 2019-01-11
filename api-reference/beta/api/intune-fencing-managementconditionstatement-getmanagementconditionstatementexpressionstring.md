@@ -2,12 +2,13 @@
 title: GetManagementConditionStatementExpressionString-Funktion
 description: Noch nicht dokumentiert
 author: tfitzmac
-ms.openlocfilehash: cde3e5b3c4867d2b3b0156fce550896b0748c8e1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 052db6185c59d25ed9a223e5ae8dbb95e81e4e1f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354547"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851604"
 ---
 # <a name="getmanagementconditionstatementexpressionstring-function"></a>GetManagementConditionStatementExpressionString-Funktion
 
@@ -38,8 +39,8 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

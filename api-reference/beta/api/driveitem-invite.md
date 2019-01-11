@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Versenden einer Einladung für den Zugriff auf ein Element
-ms.openlocfilehash: 3dc4d4a9c06b5e969476da2aa842db51f61346b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 93fa30cc3e7999ba00bbcf591876c90253b77a7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060318"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823933"
 ---
 # <a name="send-a-sharing-invitation"></a>Freigabeeinladung senden
 
@@ -60,7 +61,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Parameter        | Typ                                            | Beschreibung                                                                                                |
 |:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 | recipients       | Collection([DriveRecipient](../resources/driverecipient.md)) | Eine Sammlung der Empfänger, die Zugriff und die Freigabeeinladung erhalten.                                            |
-| message          | String                                          | Eine formatierte Nur-Text-Nachricht, die in der Freigabeeinladung enthalten ist. Die maximale Länge beträgt 2000 Zeichen. |
+| message          | Zeichenfolge                                          | Eine formatierte Nur-Text-Nachricht, die in der Freigabeeinladung enthalten ist. Die maximale Länge beträgt 2000 Zeichen. |
 | requireSignIn    | Boolean                                         | Gibt an, ob der Empfänger der Einladung sich anmelden muss, um auf das freigegebene Element zuzugreifen.            |
 | sendInvitation   | Boolean                                         | Gibt an, ob eine E-Mail oder ein Beitrag generiert (falsch) oder ob nur die Berechtigung erstellt (true) wurde.            |
 | roles            | Collection(String)                              | Gibt die Rollen an, die den Empfängern der Freigabeeinladung erteilt werden.                         |

@@ -2,12 +2,13 @@
 title: EnrollmentProfile löschen
 description: Löscht eine EnrollmentProfile.
 author: tfitzmac
-ms.openlocfilehash: b1560c2972193934484cae3e1a81f977418d3d22
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: af058a998d20248ab226e08a281566e2e4a116ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351884"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852304"
 ---
 # <a name="delete-enrollmentprofile"></a>EnrollmentProfile löschen
 
@@ -37,8 +38,8 @@ DELETE /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollme
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

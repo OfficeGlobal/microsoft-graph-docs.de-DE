@@ -2,12 +2,13 @@
 title: Aktualisieren von „androidForWorkEnrollmentProfile“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs androidForWorkEnrollmentProfile.
 author: tfitzmac
-ms.openlocfilehash: 5ffbcfa51d94816b9a65a90e59cfc4c3a654006d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a9f7f98e8fc1192ce80ce054f6699690189905b1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356014"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824045"
 ---
 # <a name="update-androidforworkenrollmentprofile"></a>Aktualisieren von „androidForWorkEnrollmentProfile“
 
@@ -37,8 +38,8 @@ PATCH /deviceManagement/androidForWorkEnrollmentProfiles/{androidForWorkEnrollme
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) an.
@@ -47,16 +48,16 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|accountId|String|Mandanten-GUID, zu der das Registrierungsprofil gehört|
-|id|String|Eindeutige GUID des Registrierungsprofils|
-|displayName|String|Anzeigename des Registrierungsprofils|
-|description|String|Beschreibung des Registrierungsprofils|
+|accountId|Zeichenfolge|Mandanten-GUID, zu der das Registrierungsprofil gehört|
+|id|Zeichenfolge|Eindeutige GUID des Registrierungsprofils|
+|displayName|Zeichenfolge|Anzeigename des Registrierungsprofils|
+|description|Zeichenfolge|Beschreibung des Registrierungsprofils|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Registrierungsprofils|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Registrierungsprofils|
-|tokenValue|String|Wert des zuletzt für das Registrierungsprofil erstellten Tokens|
+|tokenValue|Zeichenfolge|Wert des zuletzt für das Registrierungsprofil erstellten Tokens|
 |tokenExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs des zuletzt erstellten Tokens|
 |enrolledDeviceCount|Int32|Gesamtzahl der mit dem Registrierungsprofil registrierten Android-Geräte|
-|qrCodeContent|String|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird|
+|qrCodeContent|Zeichenfolge|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird|
 
 

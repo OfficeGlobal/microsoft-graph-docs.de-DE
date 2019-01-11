@@ -2,12 +2,13 @@
 title: Abrufen von remoteActionAudit
 description: Lesen Sie Eigenschaften und Beziehungen des RemoteActionAudit-Objekts.
 author: tfitzmac
-ms.openlocfilehash: d5400eefe34419a725681d8870bfae513d192237
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 43a35a52ef379960652326279fa7c90b95ac8900
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349539"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859780"
 ---
 # <a name="get-remoteactionaudit"></a>Abrufen von remoteActionAudit
 
@@ -39,8 +40,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

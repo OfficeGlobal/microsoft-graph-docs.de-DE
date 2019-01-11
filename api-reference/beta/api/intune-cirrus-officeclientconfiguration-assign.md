@@ -2,12 +2,13 @@
 title: Aktion „assign“
 description: Ersetzen Sie alle Gruppen für eine Richtlinie.
 author: tfitzmac
-ms.openlocfilehash: 00ecb5d5e34fb067bbca36eee5ff190344319d7b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b41ce4ec1c6e304168aebb4c53b4512b0a11f4b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307826"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858667"
 ---
 # <a name="assign-action"></a>Aktion „assign“
 
@@ -37,8 +38,8 @@ POST /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/ass
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.

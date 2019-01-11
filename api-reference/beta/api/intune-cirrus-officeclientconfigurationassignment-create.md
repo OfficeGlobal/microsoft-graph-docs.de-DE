@@ -2,12 +2,13 @@
 title: Erstellen von officeClientConfigurationAssignment
 description: Hinzufügen einer Zielgruppe zu einer vorhandenen Richtlinie.
 author: tfitzmac
-ms.openlocfilehash: 850f82f005f46e15a598dd0e08043cca66ffe6bf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 24eee1797c00fd6ef6e380e2fdde20c5147567af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324836"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858695"
 ---
 # <a name="create-officeclientconfigurationassignment"></a>Erstellen von officeClientConfigurationAssignment
 
@@ -35,10 +36,10 @@ POST /officeConfiguration/clientConfigurations/{key}/assignments
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt OfficeClientConfigurationAssignment eine JSON-Darstellung.
@@ -47,7 +48,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|ID des der OfficeConfigurationAssignment.|
+|id|Zeichenfolge|ID des der OfficeConfigurationAssignment.|
 |target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Die Ziel-Zuordnung, die durch den Administrator definiert|
 
 

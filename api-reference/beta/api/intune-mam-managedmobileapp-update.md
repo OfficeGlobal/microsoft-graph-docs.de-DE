@@ -2,12 +2,13 @@
 title: Aktualisieren von „managedMobileApp“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs managedMobileApp.
 author: tfitzmac
-ms.openlocfilehash: 22c4a19100303095681c18d5acf6692b0b706f53
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cf1a5d756f46e3986b8131b7726860edb6931ed1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338703"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859514"
 ---
 # <a name="update-managedmobileapp"></a>Aktualisieren von „managedMobileApp“
 
@@ -40,8 +41,8 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [managedMobileApp](../resources/intune-mam-managedmobileapp.md) an.
@@ -51,8 +52,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Bezeichner der App mit dem zugehörigen Betriebssystemtyp|
-|id|String|Schlüssel der Entität|
-|Version|String|Version der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Version|Zeichenfolge|Version der Entität|
 
 
 

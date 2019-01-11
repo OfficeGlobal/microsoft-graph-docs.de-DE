@@ -2,12 +2,13 @@
 title: sharedPCConfiguration aktualisieren
 description: Aktualisiert die Eigenschaften von Objekten des Typs sharedPCConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 72bf330dd6292d6f11fc648a32350d818ad8b114
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e129a455fad0ec3089b7f72224e73716751c7193
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362818"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860375"
 ---
 # <a name="update-sharedpcconfiguration"></a>sharedPCConfiguration aktualisieren
 
@@ -33,10 +34,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des [sharedPCConfiguration](../resources/intune-deviceconfig-sharedpcconfiguration.md)-Objekts an.

@@ -2,12 +2,13 @@
 title: Ressourcentyp windowsAutopilotDeviceIdentity
 description: Die Ressource WindowsAutopilotDeviceIdentity stellt ein Windows-Autopilot-Gerät.
 author: tfitzmac
-ms.openlocfilehash: 79c685258417ab0cd7a1531b1661f03cf5be1bea
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9fd7ac1f6cc97c16fc5ab393cc9b893386eb9e65
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306503"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851153"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>Ressourcentyp windowsAutopilotDeviceIdentity
 
@@ -22,10 +23,10 @@ Die Ressource WindowsAutopilotDeviceIdentity stellt ein Windows-Autopilot-Gerät
 |[Liste windowsAutopilotDeviceIdentities](../api/intune-enrollment-windowsautopilotdeviceidentity-list.md)|[WindowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) -Auflistung|Listeneigenschaften und Beziehungen der [WindowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) -Objekte.|
 |[Abrufen von windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-get.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Lesen Sie Eigenschaften und Beziehungen des [WindowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) -Objekts.|
 |[Erstellen von windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-create.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Erstellen eines neuen [WindowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) -Objekts.|
-|[WindowsAutopilotDeviceIdentity löschen](../api/intune-enrollment-windowsautopilotdeviceidentity-delete.md)|Keines|Löscht eine [WindowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md).|
+|[WindowsAutopilotDeviceIdentity löschen](../api/intune-enrollment-windowsautopilotdeviceidentity-delete.md)|Keine|Löscht eine [WindowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md).|
 |[WindowsAutopilotDeviceIdentity aktualisieren](../api/intune-enrollment-windowsautopilotdeviceidentity-update.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Aktualisieren Sie die Eigenschaften eines [WindowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) -Objekts.|
-|[AssignUserToDevice Aktion](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|Keines|Autopilot Geräte Benutzer zugewiesen.|
-|[UnassignUserFromDevice Aktion](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|Keines|Die Benutzer von einem Gerät Autopilot unassigns.|
+|[AssignUserToDevice Aktion](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|Keine|Autopilot Geräte Benutzer zugewiesen.|
+|[UnassignUserFromDevice Aktion](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|Keine|Die Benutzer von einem Gerät Autopilot unassigns.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
@@ -35,15 +36,15 @@ Die Ressource WindowsAutopilotDeviceIdentity stellt ein Windows-Autopilot-Gerät
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Profil Zuordnung detaillierter Status des Geräts Autopilot Windows. Mögliche Werte sind: `none` und `hardwareRequirementsNotMet`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Profil festlegen Uhrzeit des Geräts Autopilot Windows.|
 |orderIdentifier|String|Die Kennung des Geräts Autopilot Windows.|
-|purchaseOrderIdentifier|String|Kennung des Geräts Autopilot Windows Bestellung.|
+|purchaseOrderIdentifier|Zeichenfolge|Kennung des Geräts Autopilot Windows Bestellung.|
 |serialNumber|String|Seriennummer des Windows AutoPilot-Geräts|
 |productKey|String|Product Key des Windows AutoPilot-Geräts|
-|manufacturer|String|OEM-Hersteller des Geräts Autopilot Windows.|
-|model|String|Modellname des Geräts Autopilot Windows.|
+|manufacturer|Zeichenfolge|OEM-Hersteller des Geräts Autopilot Windows.|
+|model|Zeichenfolge|Modellname des Geräts Autopilot Windows.|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Registrierung-Zustand des Geräts Autopilot Windows Intune. Mögliche Werte sind: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted` und `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Intune kontaktiert Datum Uhrzeit der letzten des Geräts Autopilot Windows.|
-|addressableUserName|String|Adressierbaren Benutzername.|
-|userPrincipalName|String|Benutzerprinzipalname.|
+|addressableUserName|Zeichenfolge|Adressierbaren Benutzername.|
+|userPrincipalName|Zeichenfolge|Benutzerprinzipalname.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

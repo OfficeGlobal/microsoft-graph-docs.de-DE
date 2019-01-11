@@ -2,12 +2,13 @@
 title: EducationOneRosterApiDataProvider-Ressource
 description: Verwendet die Synchronisierung Schule Datenprofil einrichten, wenn die OneRoster-API als Eingabe Quelle verwendet wird.
 author: mmast-msft
-ms.openlocfilehash: 66c79c5e5d5ced4efcd635d2976e83887e545a9f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a99343ed8026eda9ecf56925986f4a0bfe10b3ef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309569"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858156"
 ---
 # <a name="educationonerosterapidataprovider-resource"></a>EducationOneRosterApiDataProvider-Ressource
 
@@ -21,9 +22,9 @@ Verwendet die Synchronisierung Schule Datenprofil einrichten, wenn die [OneRoste
 
 | Eigenschaft | Typ | Beschreibung |
 |:-|:-|:-|
-| **connectionUrl** | String | Die Verbindungs-URL für die OneRoster-Instanz. |
+| **connectionUrl** | Zeichenfolge | Die Verbindungs-URL für die OneRoster-Instanz. |
 | **schoolsIds** | Collection von Objekten des Typs „String“ |  Die Liste der Schule SourcedIds synchronisieren. |
-| **providerName** | String | Der Dienstanbieter OneRoster Name gemäß der [Spezifikation OneRoster](https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA). |
+| **providerName** | Zeichenfolge | Der Dienstanbieter OneRoster Name gemäß der [Spezifikation OneRoster](https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA). |
 | **connectionSettings** | [educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md) | Verbindungseinstellungen für die OneRoster-Instanz. Muss vom Typ [educationSynchronizationOAuth1ConnectionSettings](educationsynchronizationoauth1connectionsettings.md) oder [educationSynchronizationOAuth2ClientCredentialsConnectionSettings](educationsynchronizationoauth2clientcredentialsconnectionsettings.md)sein. |
 | **Anpassungen** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Optional Anpassung der Synchronisierung Profil angewendet werden soll.|
 

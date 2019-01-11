@@ -2,12 +2,13 @@
 title: DeviceManagementExchangeConnectorSyncType Enum-Typ
 description: Der Typ des Exchange-Connectors Synchronisierung angefordert.
 author: tfitzmac
-ms.openlocfilehash: dcad9b1455d488c9243b57f607281b39857cbf25
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bc62e03f61a5170b5495300b0c7f5182262ddafb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316849"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851772"
 ---
 # <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>DeviceManagementExchangeConnectorSyncType Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27316849"
 
 Der Typ des Exchange-Connectors Synchronisierung angefordert.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |fullSync|0|Entdecken Sie das Gerät im Exchange.|
 |deltaSync|1|Entdecken Sie nur das Gerät in Exchange die während des Delta Sync-Fensters aktualisiert haben.|

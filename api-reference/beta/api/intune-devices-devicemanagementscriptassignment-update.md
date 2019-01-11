@@ -2,12 +2,13 @@
 title: DeviceManagementScriptAssignment aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines DeviceManagementScriptAssignment-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 6afe48222bf3d74a88fb683222edebd5af025f12
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0689530f717b3ee8ecbd4ce6b967768912bdd41a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318347"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859017"
 ---
 # <a name="update-devicemanagementscriptassignment"></a>DeviceManagementScriptAssignment aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assig
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [DeviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) eine JSON-Darstellung.

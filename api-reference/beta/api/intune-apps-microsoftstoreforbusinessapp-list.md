@@ -2,12 +2,13 @@
 title: Auflisten von „microsoftStoreForBusinessApp“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs microsoftStoreForBusinessApp auf.
 author: tfitzmac
-ms.openlocfilehash: 01d038502874c7468e07e6380994ff1e875014a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 036e57ec7d8d6c1fd53b449ab46449d50ac4c493
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307665"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859276"
 ---
 # <a name="list-microsoftstoreforbusinessapps"></a>Auflisten von „microsoftStoreForBusinessApp“
 
@@ -37,8 +38,8 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

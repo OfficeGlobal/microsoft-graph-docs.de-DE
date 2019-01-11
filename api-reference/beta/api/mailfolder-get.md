@@ -2,12 +2,13 @@
 title: mailFolder abrufen
 description: Mit dieser Methode können Sie die Eigenschaften und Beziehungen eines Nachrichtenordnerobjekts abrufen.
 author: angelgolfer-ms
-ms.openlocfilehash: e1394c6bf97a3c5d65bda0ee7b8f29d8a29643bb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8301f5ff1cef7602b3e9d488c67daec8ac277cce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357813"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856649"
 ---
 # <a name="get-mailfolder"></a>mailFolder abrufen
 
@@ -43,7 +44,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

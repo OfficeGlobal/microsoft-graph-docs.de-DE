@@ -2,12 +2,13 @@
 title: Ressourcentyp windowsAutopilotDeploymentProfileAssignment
 description: Eine Zuordnung eines Windows Autopilot Bereitstellung Profils an eine Gruppe AAD.
 author: tfitzmac
-ms.openlocfilehash: b9141d9a3126d25dd6de5e342ebb463304e1ae02
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7fad8f082396598584af0cbb5fe1daee06bfd09e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337121"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851219"
 ---
 # <a name="windowsautopilotdeploymentprofileassignment-resource-type"></a>Ressourcentyp windowsAutopilotDeploymentProfileAssignment
 
@@ -22,7 +23,7 @@ Eine Zuordnung eines Windows Autopilot Bereitstellung Profils an eine Gruppe AAD
 |[Liste windowsAutopilotDeploymentProfileAssignments](../api/intune-enrollment-windowsautopilotdeploymentprofileassignment-list.md)|[WindowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) -Auflistung|Listeneigenschaften und Beziehungen der [WindowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) -Objekte.|
 |[Abrufen von windowsAutopilotDeploymentProfileAssignment](../api/intune-enrollment-windowsautopilotdeploymentprofileassignment-get.md)|[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)|Lesen Sie Eigenschaften und Beziehungen des [WindowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) -Objekts.|
 |[Erstellen von windowsAutopilotDeploymentProfileAssignment](../api/intune-enrollment-windowsautopilotdeploymentprofileassignment-create.md)|[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)|Erstellen eines neuen [WindowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) -Objekts.|
-|[WindowsAutopilotDeploymentProfileAssignment löschen](../api/intune-enrollment-windowsautopilotdeploymentprofileassignment-delete.md)|Keines|Löscht eine [WindowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md).|
+|[WindowsAutopilotDeploymentProfileAssignment löschen](../api/intune-enrollment-windowsautopilotdeploymentprofileassignment-delete.md)|Keine|Löscht eine [WindowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md).|
 |[WindowsAutopilotDeploymentProfileAssignment aktualisieren](../api/intune-enrollment-windowsautopilotdeploymentprofileassignment-update.md)|[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)|Aktualisieren Sie die Eigenschaften eines [WindowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

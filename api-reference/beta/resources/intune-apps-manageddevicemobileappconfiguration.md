@@ -2,12 +2,13 @@
 title: managedDeviceMobileAppConfiguration-Ressourcentyp
 description: Eine abstrakte Klasse zur Konfiguration mobiler Apps für registrierte Geräte.
 author: tfitzmac
-ms.openlocfilehash: a533d5d7c15a32d811a7fd23f9ab39b89db9b7da
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 66c0a3da5c52b58c98e42a58133d7aeb8c186656
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352038"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831479"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>managedDeviceMobileAppConfiguration-Ressourcentyp
 
@@ -26,13 +27,13 @@ Eine abstrakte Klasse zur Konfiguration mobiler Apps für registrierte Geräte.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität.|
+|id|Zeichenfolge|Schlüssel der Entität.|
 |targetedMobileApps|String-Sammlung|Die zugeordnete App.|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese App Konfigurationsentität.|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts|
-|description|String|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration|
+|description|Zeichenfolge|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
-|displayName|String|Vom Administrator bereitgestellter Name der Gerätekonfiguration|
+|displayName|Zeichenfolge|Vom Administrator bereitgestellter Name der Gerätekonfiguration|
 |version|Int32|Version der Gerätekonfiguration.|
 
 ## <a name="relationships"></a>Beziehungen

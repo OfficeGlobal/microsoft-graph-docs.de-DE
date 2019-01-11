@@ -2,12 +2,13 @@
 title: Auflisten von „mobileApp“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs mobileApp auf.
 author: tfitzmac
-ms.openlocfilehash: aafc9bfa6f602dd462bc8cfb95c83bce9324e655
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 339f07cd94f7663fa8756b8f147b8277c7b28925
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349119"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860291"
 ---
 # <a name="list-mobileapps"></a>Auflisten von „mobileApp“
 
@@ -35,8 +36,8 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

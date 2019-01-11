@@ -2,12 +2,13 @@
 title: Erstellen von „termsAndConditionsAcceptanceStatus“
 description: Diese Methode erstellt ein neues Objekt des Typs termsAndConditionsAcceptanceStatus.
 author: tfitzmac
-ms.openlocfilehash: 857e927d970f91070032dae95e699247aa7b11b3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6f217076b50699c5a7162d025fecb69cad69e9b1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340593"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859846"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>Erstellen von „termsAndConditionsAcceptanceStatus“
 
@@ -35,10 +36,10 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatu
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „termsAndConditionsAcceptanceStatus“ an.

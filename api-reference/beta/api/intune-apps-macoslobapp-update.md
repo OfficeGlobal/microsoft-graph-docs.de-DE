@@ -2,12 +2,13 @@
 title: MacOSLobApp aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines MacOSLobApp-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 0e465f84c930362f1607f434388e0c5c108c177f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 35889053c1bdebcddea9ffd5f69a754530d7ebc5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303640"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859416"
 ---
 # <a name="update-macoslobapp"></a>MacOSLobApp aktualisieren
 
@@ -37,10 +38,10 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [MacOSLobApp](../resources/intune-apps-macoslobapp.md) eine JSON-Darstellung.
@@ -56,7 +57,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Das große Symbol, das in den App-Details angezeigt und für den Upload des Symbols verwendet werden soll. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|isFeatured|Boolescher Wert|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|isFeatured|Boolean|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |privacyInformationUrl|String|URL zur Datenschutzerklärung. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |informationUrl|String|URL zur Seite mit weiteren Informationen. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|String|Der Besitzer der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -67,15 +68,15 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |committedContentVersion|String|Die interne zugesicherte Inhaltsversion. Geerbt von [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Name der Hauptdatei der Branchenanwendung. Geerbt von [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Gesamtgröße einschließlich aller hochgeladenen Dateien. Geerbt von [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
-|bundleId|String|Die Paket-Id.|
+|bundleId|Zeichenfolge|Die Paket-Id.|
 |minimumSupportedOperatingSystem|[macOSMinimumOperatingSystem](../resources/intune-apps-macosminimumoperatingsystem.md)|Wert, der angibt, welche Betriebssystemversion mindestens erforderlich ist|
-|buildNumber|String|Die Buildnummer der Mac OS-Zeile des Business (LoB) app.|
-|versionNumber|String|Die Versionsnummer der Mac OS-Zeile des Business (LoB) app.|
+|buildNumber|Zeichenfolge|Die Buildnummer der Mac OS-Zeile des Business (LoB) app.|
+|versionNumber|Zeichenfolge|Die Versionsnummer der Mac OS-Zeile des Business (LoB) app.|
 |childApps|[MacOSLobChildApp](../resources/intune-apps-macoslobchildapp.md) -Auflistung|Die Liste der von Apps in diesem Paket bundle|
 |identityVersion|String|Die Version der Identität|
 |md5HashChunkSize|Int32|Die Chunk-Size für MD5-hash|
 |md5Hash|Collection von Objekten des Typs „String“|Die MD5-Hash-codes|
-|ignoreVersionDetection|Boolescher Wert|Boolescher Wert, der steuert, ob nach der Installation der App auf einem Gerät die App-Version zur Erkennung der App verwendet werden soll. Legen Sie dies für Mac OS Line of Business (LoB) apps "true", die ein Updatefeature Self zu verwenden.|
+|ignoreVersionDetection|Boolean|Boolescher Wert, der steuert, ob nach der Installation der App auf einem Gerät die App-Version zur Erkennung der App verwendet werden soll. Legen Sie dies für Mac OS Line of Business (LoB) apps "true", die ein Updatefeature Self zu verwenden.|
 
 
 

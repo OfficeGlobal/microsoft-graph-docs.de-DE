@@ -1,12 +1,13 @@
 ---
 title: Orgcontact aktualisieren
 description: Aktualisieren Sie die Eigenschaften des Orgcontact-Objekts.
-ms.openlocfilehash: 04bc5bef07fb49c2c4fe730e89517de2f364628a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f48795bef6ea1a4833379f54747cbf2c291b2454
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060368"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859066"
 ---
 # <a name="update-orgcontact"></a>Orgcontact aktualisieren
 
@@ -37,24 +38,24 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|city|String||
-|Land|String||
-|department|String||
+|city|Zeichenfolge||
+|Land|Zeichenfolge||
+|department|Zeichenfolge||
 |onPremisesSyncEnabled|Boolescher Wert||
-|displayName|String||
-|givenName|String||
-|jobTitle|String||
+|displayName|Zeichenfolge||
+|givenName|Zeichenfolge||
+|jobTitle|Zeichenfolge||
 |onPremisesLastSyncDateTime|DateTimeOffset||
-|Mail|String||
-|mailNickname|String||
-|mobilePhone|String||
-|officeLocation|String||
-|postalCode|String||
-|proxyAddresses|String||
-|state|String||
-|streetAddress|String||
-|surname|String||
-|businessPhones|String||
+|mail|Zeichenfolge||
+|mailNickname|Zeichenfolge||
+|mobilePhone|Zeichenfolge||
+|officeLocation|Zeichenfolge||
+|postalCode|Zeichenfolge||
+|proxyAddresses|Zeichenfolge||
+|state|Zeichenfolge||
+|streetAddress|Zeichenfolge||
+|surname|Zeichenfolge||
+|businessPhones|Zeichenfolge||
 
 ## <a name="response"></a>Antwort
 

@@ -2,12 +2,13 @@
 title: Abrufen von windowsKioskConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des WindowsKioskConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 4596eeaba219227048a81a9f4ecc6693a7c20204
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4860924b415ef71913792a2f96c7a4ac934c25cd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339137"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851723"
 ---
 # <a name="get-windowskioskconfiguration"></a>Abrufen von windowsKioskConfiguration
 
@@ -41,8 +42,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

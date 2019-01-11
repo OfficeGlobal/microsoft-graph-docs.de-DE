@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp targetResourceGroup
 description: 'Gibt den Typ der Gruppe, die aufgrund der Audit-Aktivität betroffen war. Enthält die Werte wie unified Gruppen im Vergleich zu Azure AD '
-ms.openlocfilehash: 3427f2401a0e93767f0c563842be323f66d9f21b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2cc7e0adb1a93394b64375d05dfb6a6e349bac55
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27061422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851184"
 ---
 # <a name="targetresourcegroup-resource-type"></a>Ressourcentyp targetResourceGroup
 Gibt den Typ der Gruppe, die aufgrund der Audit-Aktivität betroffen war. Enthält die Werte wie unified Gruppen im Vergleich zu Azure AD 
@@ -16,7 +17,7 @@ Gibt den Typ der Gruppe, die aufgrund der Audit-Aktivität betroffen war. Enthä
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|groupType|String| Mögliche Werte sind: `unifiedGroups`, `azureAD` und `unknownFutureValue`.|
+|groupType|Zeichenfolge| Mögliche Werte sind: `unifiedGroups`, `azureAD` und `unknownFutureValue`.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

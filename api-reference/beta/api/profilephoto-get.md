@@ -1,12 +1,13 @@
 ---
 title: Foto abrufen
 description: Rufen Sie die angegebenen ProfilePhoto oder der Metadaten (**ProfilePhoto** Eigenschaften).
-ms.openlocfilehash: 6374680e37d409a89b61d3e2244b45ccb29869e7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: be20e243a89d258c8db2105efe0c53cbea0abebf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066116"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851737"
 ---
 # <a name="get-photo"></a>Foto abrufen
 
@@ -75,7 +76,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 
 |**Parameter**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|size  |String  | Eine Fotogröße. Die unterstützten Größen der HD-Fotos in Office 365 sind wie folgt: „48x48“, „64x64“, „96x96“, „120x120“, „240x240“, „360x360“,“432x432“, „504x504“ und „648x648“. Fotos können eine beliebige Größe aufweisen, wenn sie in Azure Active Directory gespeichert sind. |
+|size  |Zeichenfolge  | Eine Fotogröße. Die unterstützten Größen der HD-Fotos in Office 365 sind wie folgt: „48x48“, „64x64“, „96x96“, „120x120“, „240x240“, „360x360“,“432x432“, „504x504“ und „648x648“. Fotos können eine beliebige Größe aufweisen, wenn sie in Azure Active Directory gespeichert sind. |
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.

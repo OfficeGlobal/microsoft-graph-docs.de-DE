@@ -1,12 +1,13 @@
 ---
 title: Bookingservice aktualisieren
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
-ms.openlocfilehash: e39ad73b7f9acf2337db517e67895bc4601598a1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6eee5949d5d8cee23821d726563b4687febd77a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060350"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838920"
 ---
 # <a name="update-bookingservice"></a>Bookingservice aktualisieren
 
@@ -50,12 +51,12 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |defaultPrice|Gleitkommawert mit doppelter Genauigkeit|Der Standardwert monetäre Preis für den Dienst.|
 |defaultPriceType|string|Die Standardmethode der Dienst aufgeladen wird. Mögliche Werte sind: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs` und `notSet`.|
 |defaultReminders|[BookingReminder](../resources/bookingreminder.md) -Auflistung|Die Standardeinstellung Festlegen von Erinnerungen für einen Termin dieses Diensts. Der Wert dieser Eigenschaft ist nur bei dieser **BookingService** anhand seiner ID Lesen verfügbar|
-|description|String|Eine Beschreibung für den Dienst.|
-|displayName|String|Ein Dienstname.|
-|emailAddress|String|Eine e-Mail-Adresse|
-|id|String| Schreibgeschützt.|
-|isHiddenFromCustomers|Boolesch|"True" bedeutet, dass dieser Dienst nicht verfügbar für Kunden für buchen ist.|
-|notes|String|Weitere Informationen zu diesem Dienst.|
+|description|Zeichenfolge|Eine Beschreibung für den Dienst.|
+|displayName|Zeichenfolge|Ein Dienstname.|
+|emailAddress|Zeichenfolge|Eine e-Mail-Adresse|
+|id|Zeichenfolge| Schreibgeschützt.|
+|isHiddenFromCustomers|Boolescher Wert|"True" bedeutet, dass dieser Dienst nicht verfügbar für Kunden für buchen ist.|
+|notes|Zeichenfolge|Weitere Informationen zu diesem Dienst.|
 |postBuffer|Duration|Die Zeit bis zur Puffer nach eines Termins für diesen Dienst beendet, und vor dem nächsten Kunden Termin gebucht werden kann.|
 |preBuffer|Duration|Die Zeit zum Zwischenspeichern, bevor Sie ein Termin für diesen Dienst starten kann.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Der Satz von Richtlinien, die bestimmen, wie Termine für diesen Dienst erstellt und verwaltet werden soll.|

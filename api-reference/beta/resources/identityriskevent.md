@@ -2,12 +2,13 @@
 title: Ressourcentyp identityRiskEvent
 description: 'Ein Risikoereignis von Azure Active Directory-Identität Protection erkannt. Es ist den Basistyp für jede bestimmte Risiko Ereignistyp:'
 author: cloudhandler
-ms.openlocfilehash: 4abe473b47d3ce52fd5b75b6adfd08dbc4af54fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0735599c260fac178b54ee4ba54a17f5ea027e23
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351738"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858996"
 ---
 # <a name="identityriskevent-resource-type"></a>Ressourcentyp identityRiskEvent
 

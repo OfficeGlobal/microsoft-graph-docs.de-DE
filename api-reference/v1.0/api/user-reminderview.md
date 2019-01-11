@@ -2,12 +2,13 @@
 title: 'user: reminderView'
 description: 'Diese API gibt eine Liste von Kalendererinnerungen zurück, die im Zeitraum zwischen dem angegebenen Startdatum und dem angegebenen Enddatum liegen. '
 author: dkershaw10
-ms.openlocfilehash: 4437e3972c56f8b85f8fe38d3c23a2e3461106f9
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 08f1e8414b727b5625b271d8a84c10a7fa3e980d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748325"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851730"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 Eine Liste der Erinnerungen Ereignis in einem Benutzerkalender innerhalb der angegebenen Start- und Endzeiten zurückzugeben. 
@@ -32,11 +33,11 @@ Stellen Sie in der URL der Anforderung die folgenden Funktionsparameter mit Wert
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|startDateTime|String|Das Startdatum und die Uhrzeit des Ereignisses, für das die Erinnerung eingerichtet ist. Der Wert wird im ISO 8601-Format dargestellt, z. B. „2015-11-08T19:00:00.0000000“.|
-|endDateTime|String|Das Enddatum und die Uhrzeit des Ereignisses, für das die Erinnerung eingerichtet ist. Der Wert wird im ISO 8601-Format dargestellt, z. B. „2015-11-08T20:00:00.0000000“.|
+|startDateTime|Zeichenfolge|Das Startdatum und die Uhrzeit des Ereignisses, für das die Erinnerung eingerichtet ist. Der Wert wird im ISO 8601-Format dargestellt, z. B. „2015-11-08T19:00:00.0000000“.|
+|endDateTime|Zeichenfolge|Das Enddatum und die Uhrzeit des Ereignisses, für das die Erinnerung eingerichtet ist. Der Wert wird im ISO 8601-Format dargestellt, z. B. „2015-11-08T20:00:00.0000000“.|
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert|
+| Header       | Wert|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type   | application/json |

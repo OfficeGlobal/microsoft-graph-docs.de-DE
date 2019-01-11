@@ -2,12 +2,13 @@
 title: 'event: tentativelyAccept'
 description: Mit Vorbehalt annehmen Sie das angegebene Ereignis in einem Benutzerkalender ein.
 author: angelgolfer-ms
-ms.openlocfilehash: be22b88c444b3720eaf204bda3246d4b99b90623
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9aa718385ecd41726e8e421e946a97e1ad9183c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335791"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856637"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
@@ -43,7 +44,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -51,7 +52,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|comment|String|In der Antwort enthaltener Text. Optional.|
+|comment|Zeichenfolge|In der Antwort enthaltener Text. Optional.|
 |sendResponse|Boolescher Wert|`true`,wenn eine Antwort an den Organisator gesendet werden soll; andernfalls `false`. Optional. Der Standardwert lautet `true`.|
 
 ## <a name="response"></a>Antwort

@@ -2,12 +2,13 @@
 title: Abrufen von androidForWorkMobileAppConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidForWorkMobileAppConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: cad80705b5ba68970acd4ad71e3f0d5558a072f7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6a5893b0e1b7ba2767721ca5bdb7051d3069e17d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325690"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859864"
 ---
 # <a name="get-androidforworkmobileappconfiguration"></a>Abrufen von androidForWorkMobileAppConfiguration
 
@@ -39,8 +40,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp identityProvider
 description: Stellt einen Identitätsanbieter Azure Active Directory (AD Azure). Der Identitätsanbieter kann Microsoft, Google, Facebook, LinkedIn oder Amazon sein.
-ms.openlocfilehash: 672e2e6225374451a475b69e2ce4ce6adfe65ef0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0a465b1c7b4ad7f74e6357e77da3692d64294e7e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060179"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858541"
 ---
 # <a name="identityprovider-resource-type"></a>Ressourcentyp identityProvider
 
@@ -27,8 +28,8 @@ Konfigurieren einen Identitätsanbieter in Ihrem Azure AD-Mandanten ermöglicht 
 |:---------------|:--------|:----------|
 |[Abrufen von identityProvider](../api/identityprovider-get.md) |identityProvider|Lesen Sie die Eigenschaften einer vorhandenen IdentityProvider.|
 |[Erstellen von identityProvider](../api/identityprovider-post-identityproviders.md)|identityProvider|Erstellen Sie eine neue IdentityProvider.|
-|[IdentityProvider aktualisieren](../api/identityprovider-update.md)|Keines|Aktualisieren einer vorhandenen IdentityProvider.|
-|[IdentityProvider löschen](../api/identityprovider-delete.md)|Keines|Löschen einer vorhandenen IdentityProvider.|
+|[IdentityProvider aktualisieren](../api/identityprovider-update.md)|Keine|Aktualisieren einer vorhandenen IdentityProvider.|
+|[IdentityProvider löschen](../api/identityprovider-delete.md)|Keine|Löschen einer vorhandenen IdentityProvider.|
 |[Liste identityProviders](../api/identityprovider-list.md)|IdentityProvider-Auflistung|Listen Sie alle IdentityProviders in einem Mandanten konfiguriert.|
 
 ## <a name="properties"></a>Eigenschaften
@@ -39,7 +40,7 @@ Konfigurieren einen Identitätsanbieter in Ihrem Azure AD-Mandanten ermöglicht 
 |clientSecret|String|Ja|Nein|Der geheime Clientschlüssel für die Anwendung. Dies ist der geheime Clientschlüssel erhalten Sie, wenn die Anwendung mit dem Identitätsanbieter registrieren. Dies ist lesegeschützt. Ein Lesevorgang zurückgegebenen "\*\*\*\*".|
 |id|String|Nein|Nein|Die ID des Identitätsanbieters.|
 |name|String|Nein|Nein|Der Anzeigename des Identitätsanbieters.|
-|Typ|String|Ja|Nein|Der Typ der Identität Anbieter. Es muss eine der folgenden Werte sein: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
+|type|String|Ja|Nein|Der Typ der Identität Anbieter. Es muss eine der folgenden Werte sein: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>Wo Sie die Client-ID und geheimen Schlüssel erhalten
 

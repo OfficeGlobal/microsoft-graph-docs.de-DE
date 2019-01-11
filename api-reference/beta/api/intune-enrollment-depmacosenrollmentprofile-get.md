@@ -2,12 +2,13 @@
 title: Abrufen von depMacOSEnrollmentProfile
 description: Lesen Sie Eigenschaften und Beziehungen des DepMacOSEnrollmentProfile-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 7d1474e8291eb7d7859750c06bc76964bcdee7a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8d36d225125036606db8d148280b0a5e7ef56019
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338409"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858121"
 ---
 # <a name="get-depmacosenrollmentprofile"></a>Abrufen von depMacOSEnrollmentProfile
 
@@ -39,8 +40,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

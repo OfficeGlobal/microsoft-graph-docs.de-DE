@@ -2,12 +2,13 @@
 title: Ressourcentyp windowsKioskMultipleApps
 description: Die Klasse verwendet, um die Konfiguration der Multi-Mode app für die Kiosk-Konfiguration identifizieren
 author: tfitzmac
-ms.openlocfilehash: 30591e15d29b06ffb807c8b435d0e3c8a6a1b0fa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 01758c66a466b66fcba6b443f80d0350d308756d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330142"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851205"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>Ressourcentyp windowsKioskMultipleApps
 
@@ -23,8 +24,8 @@ Erbt vom [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windows
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |Apps|[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md) -Auflistung|Dies sind die einzige Windows Store-Apps, die über das Startmenü gestartet werden.|
-|showTaskBar|Boolesch|Mit dieser Einstellung kann den Administrator an, ob der Taskleiste oder nicht angezeigt wird.|
-|disallowDesktopApps|Boolesch|Diese Einstellung gibt an, dass desktop-apps zulässig sind. Standardmäßig auf "true".|
+|showTaskBar|Boolescher Wert|Mit dieser Einstellung kann den Administrator an, ob der Taskleiste oder nicht angezeigt wird.|
+|disallowDesktopApps|Boolescher Wert|Diese Einstellung gibt an, dass desktop-apps zulässig sind. Standardmäßig auf "true".|
 |startMenuLayoutXml|Binär|Ermöglicht Administratoren das Standardlayout Start außer Kraft gesetzt, und verhindert, dass den Benutzer geändert wird.Das Layout wird durch Angabe einer XML-Datei geändert, die auf einem Layoutänderungsschema basiert. XML muss im Binärformat sein.|
 
 ## <a name="relationships"></a>Beziehungen

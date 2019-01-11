@@ -2,12 +2,13 @@
 title: iosCompliancePolicy abrufen
 description: Lesen von Eigenschaften und Beziehungen des iosCompliancePolicy-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 89e0c7c6d121fbc6ef73b84ba644748e79bf46ee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cfd7ea092053f6dd728b8a984a0a64292400bd8b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304109"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855552"
 ---
 # <a name="get-ioscompliancepolicy"></a>iosCompliancePolicy abrufen
 
@@ -37,8 +38,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

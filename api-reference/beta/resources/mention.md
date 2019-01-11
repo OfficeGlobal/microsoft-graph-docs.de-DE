@@ -2,12 +2,13 @@
 title: Erwähnen Ressourcentyp
 description: Stellt eine Benachrichtigung an eine Person basierend auf e-Mail-Adresse der Person.
 author: simonhult
-ms.openlocfilehash: a9c00daed067ecd41f0f687687ac9bf7f86d6f2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4ab60fafe00f14f69d79e482d0616576c73d1092
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334230"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858429"
 ---
 # <a name="mention-resource-type"></a>Erwähnen Ressourcentyp
 
@@ -53,12 +54,12 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Anwendung | String | Der Name der Anwendung, in dem die Erwähnung erstellt wird. Optional. Wird nicht verwendet und nicht mehr als Null für **Nachricht**übernommen. |
-|clientReference | String | Ein eindeutiger Bezeichner, der ein übergeordnetes Element der Ressourceninstanz darstellt. Optional. Wird nicht verwendet und nicht mehr als Null für **Nachricht**übernommen. |
+|Anwendung | Zeichenfolge | Der Name der Anwendung, in dem die Erwähnung erstellt wird. Optional. Wird nicht verwendet und nicht mehr als Null für **Nachricht**übernommen. |
+|clientReference | Zeichenfolge | Ein eindeutiger Bezeichner, der ein übergeordnetes Element der Ressourceninstanz darstellt. Optional. Wird nicht verwendet und nicht mehr als Null für **Nachricht**übernommen. |
 |createdBy  | [emailAddress](../resources/emailaddress.md) | Die e-Mail-Informationen des Benutzers, der die Erwähnung vorgenommen. |
 |createdDateTime  |DateTimeOffset |Das Datum und die Uhrzeit, die auf dem Client die Erwähnung erstellt wird. |
-|deepLink | String | Tiefe Weblink zu den Kontext des Hinweises auf die Instanz der Ressource. Optional. Wird nicht verwendet und nicht mehr als Null für **Nachricht**übernommen. |
-|id | String| Der eindeutige Bezeichner des Vermerk in einer Ressourceninstanz einer.|
+|deepLink | Zeichenfolge | Tiefe Weblink zu den Kontext des Hinweises auf die Instanz der Ressource. Optional. Wird nicht verwendet und nicht mehr als Null für **Nachricht**übernommen. |
+|id | Zeichenfolge| Der eindeutige Bezeichner des Vermerk in einer Ressourceninstanz einer.|
 |erwähnten | [emailAddress](../resources/emailaddress.md) | Die e-Mail-Informationen der weiter oben erwähnt Person. Erforderlich. |
 |mentionText | Zeichenfolge | Optional. Wird nicht verwendet und nicht mehr als Null für **Nachricht**übernommen. Wenn die erwähnungen in einer Nachricht erhalten möchten, finden Sie stattdessen die **BodyPreview** -Eigenschaft der Nachricht. |
 |serverCreatedDateTime | DateTimeOffset | Das Datum und die Uhrzeit, die die Erwähnung auf dem Server erstellt wird. Optional. Wird nicht verwendet und nicht mehr als Null für **Nachricht**übernommen. |
@@ -71,11 +72,11 @@ Keine
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[POST-Anforderung](../api/user-sendmail.md#request-2) und senden | Keines | Erstellen und Senden von erwähnungen im Rahmen einer neuen Nachricht.|
+|[POST-Anforderung](../api/user-sendmail.md#request-2) und senden | Keine | Erstellen und Senden von erwähnungen im Rahmen einer neuen Nachricht.|
 |[POST-Anforderung](../api/user-post-messages.md#request-2) an einen neuen Entwurf | [Nachricht](../resources/message.md) , die ein oder mehrere **erwähnen** Objekte enthält. | Erstellen ein Entwurfs oder eine neue Nachricht und fügen Sie ein oder mehrere **erwähnen** Objekte.|
 |[Abrufen](../api/user-list-messages.md#request-2) von Nachrichten Erwähnung me | [message](../resources/message.md)-Sammlung | Rufen Sie alle Nachrichten im Postfach des angemeldeten Benutzers, die ein **erwähnen** dieses Benutzers enthalten.|
 |Eine Meldung [erhalten](../api/message-get.md#request-2) und seine erwähnungen | [message](../resources/message.md)-Sammlung | Möchten Sie eine Meldung erhalten, und erweitern Sie die Details der einzelnen **erwähnen** in der Nachricht.|
-|[Löschen](../api/message-delete.md#request-2) der Vermerk | Keines |Löscht die angegebene Erwähnung in der angegebenen Nachricht im Postfach des angemeldeten Benutzers. |
+|[Löschen](../api/message-delete.md#request-2) der Vermerk | Keine |Löscht die angegebene Erwähnung in der angegebenen Nachricht im Postfach des angemeldeten Benutzers. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

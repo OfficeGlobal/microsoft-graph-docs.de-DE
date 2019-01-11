@@ -2,12 +2,13 @@
 title: Ressourcentyp TeamsTabConfiguration (Open Type)
 description: Die Einstellungen, die den Inhalt einer Registerkarte bestimmen.
 author: nkramer
-ms.openlocfilehash: 281d27dfec1efa83859fad262e1b25fd06b5f4cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c33ab6d5102498ab26fcc609328c2562707883d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344961"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858471"
 ---
 # <a name="teamstabconfiguration-resource-type-open-type"></a>Ressourcentyp TeamsTabConfiguration (Open Type)
 

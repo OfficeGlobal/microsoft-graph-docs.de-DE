@@ -1,12 +1,13 @@
 ---
 title: directoryObject-Ressourcentyp
 description: Stellt ein Azure Active Directory-Objekt dar. Der **directoryObject**-Typ ist der Basistyp für die meisten anderen Directory-Entitätstypen.
-ms.openlocfilehash: 0981584bb86b71d06e29de4efc379c84bacac51d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 0da74c8f034de37bf442fba6d1609623e81da372
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019722"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851701"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject-Ressourcentyp
 
@@ -27,7 +28,7 @@ Stellt ein Azure Active Directory-Objekt dar. Der **directoryObject**-Typ ist de
 
 | Eigenschaft   | Typ |Beschreibung|
 |:---------------|:--------|:----------|
-|id|String|Eine GUID, die der eindeutige Bezeichner für das Objekt ist, z. B. 12345678-9abc-def0-1234-56789abcde. Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
+|id|Zeichenfolge|Eine GUID, die der eindeutige Bezeichner für das Objekt ist, z. B. 12345678-9abc-def0-1234-56789abcde. Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen
 

@@ -2,12 +2,13 @@
 title: notificationMessageTemplate aktualisieren
 description: Aktualisiert die Eigenschaften von Objekten des Typs notificationMessageTemplate.
 author: tfitzmac
-ms.openlocfilehash: 02c431370560dc9785e682bc7307ee530ae1d4fd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 36611f8bb99546c8d4d30ce16497955b99902d1e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357358"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857393"
 ---
 # <a name="update-notificationmessagetemplate"></a>notificationMessageTemplate aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON Darstellung für das [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md)-Objekt an.

@@ -2,12 +2,13 @@
 title: settingStateDeviceSummary-Ressourcentyp
 description: Zusammenfassung des Zustands der Gerätekonformitätsrichtlinien und -konfigurations-Einstellung
 author: tfitzmac
-ms.openlocfilehash: 0394de24fb0dee6ba0df1434ea199b131cf05df8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09eb9059255d6236db6347961ad456f3ec3fd93a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322498"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860333"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>settingStateDeviceSummary-Ressourcentyp
 
@@ -26,9 +27,9 @@ Zusammenfassung des Zustands der Gerätekonformitätsrichtlinien und -konfigurat
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|settingName|String|Name der Einstellung|
-|instancePath|String|Name des zur Einstellung gehörenden Objekts des Typs „InstancePath“|
+|id|Zeichenfolge|Schlüssel der Entität|
+|settingName|Zeichenfolge|Name der Einstellung|
+|instancePath|Zeichenfolge|Name des zur Einstellung gehörenden Objekts des Typs „InstancePath“|
 |unknownDeviceCount|Int32|Anzahl der Geräte mit Meldung „Unknown“ für die Einstellung|
 |notApplicableDeviceCount|Int32|Anzahl der Geräte mit Meldung „Not Applicable“ für die Einstellung|
 |compliantDeviceCount|Int32|Anzahl der Geräte mit Meldung „Compliant“ für die Einstellung|

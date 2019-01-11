@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getYammerActivityCounts'
 description: Gewinnen Sie einen Eindruck der Yammer-Aktivitäten in Ihrer Organisation, indem Sie erfahren, wie viele Nachrichten gepostet, gelesen und gelikt wurden.
-ms.openlocfilehash: 17813cd7365afce535c38f993d548a66fda77cc6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fb1e0a9dab16fffb3c1b6c8c0e2577942fa881c3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016754"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858884"
 ---
 # <a name="reportroot-getyammeractivitycounts"></a>reportRoot: getYammerActivityCounts
 

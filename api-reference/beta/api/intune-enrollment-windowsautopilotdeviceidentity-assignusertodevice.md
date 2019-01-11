@@ -2,12 +2,13 @@
 title: AssignUserToDevice Aktion
 description: Autopilot Geräte Benutzer zugewiesen.
 author: tfitzmac
-ms.openlocfilehash: 8446aa7e49905875b629287fd4847f761fec25c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 33145d5852d80eef529cc58e34524c170bba62cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329764"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859458"
 ---
 # <a name="assignusertodevice-action"></a>AssignUserToDevice Aktion
 
@@ -38,8 +39,8 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung der Parameter an.
@@ -48,8 +49,8 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|userPrincipalName|String|Noch nicht dokumentiert|
-|addressableUserName|String|Noch nicht dokumentiert|
+|userPrincipalName|Zeichenfolge|Noch nicht dokumentiert|
+|addressableUserName|Zeichenfolge|Noch nicht dokumentiert|
 
 
 

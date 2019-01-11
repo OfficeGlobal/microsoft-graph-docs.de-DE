@@ -2,12 +2,13 @@
 title: Liste iosEasEmailProfileConfigurations
 description: Listeneigenschaften und Beziehungen der IosEasEmailProfileConfiguration-Objekte.
 author: tfitzmac
-ms.openlocfilehash: 9b390bf59a378ef6516e59b1b2aef37352b942e8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6accbe9aff792f287318749e6d62cf6f8b67831f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335546"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858142"
 ---
 # <a name="list-ioseasemailprofileconfigurations"></a>Liste iosEasEmailProfileConfigurations
 
@@ -36,10 +37,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

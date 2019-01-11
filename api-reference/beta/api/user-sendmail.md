@@ -2,12 +2,13 @@
 title: Nachrichten senden
 description: Sendet die im Anforderungstext angegebene Nachricht. Die Nachricht wird dann automatisch im Ordner „Gesendete Elemente“ gespeichert.
 author: dkershaw10
-ms.openlocfilehash: bceafc0a5142a85acfca59872a9ee897ac839f19
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b0ac9b478bccf5080b2e8971bdb1ada881f5b28
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351765"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851058"
 ---
 # <a name="send-mail"></a>Nachrichten senden
 

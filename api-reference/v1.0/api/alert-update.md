@@ -1,12 +1,13 @@
 ---
 title: Warnung aktualisieren
 description: Aktualisieren einer bearbeitbaren **Benachrichtigung** -Eigenschaft in eine integrierte Lösung alert Status und Aufgaben in Lösungen synchron. Dieser Methode wird jede Lösung, die eine Aufzeichnung die Warnung ID wurde aktualisiert.
-ms.openlocfilehash: 6516d00bc7a542c3aa00244664e08194d96a9640
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dc5c1197e344aa181d827acc654e24bd5a048a06
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27019972"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858093"
 ---
 # <a name="update-alert"></a>Warnung aktualisieren
 
@@ -44,7 +45,7 @@ Geben Sie im Textkörper Anforderung eine JSON-Darstellung der Werte für die en
 
 | Eigenschaft   | Typ |Beschreibung|
 |:---------------|:--------|:----------|
-|assignedTo|String|Name des der Analyst die Benachrichtigung wird für die Ursachenanalyse, Untersuchung oder Remediation zugewiesen.|
+|assignedTo|Zeichenfolge|Name des der Analyst die Benachrichtigung wird für die Ursachenanalyse, Untersuchung oder Remediation zugewiesen.|
 |closedDateTime|DateTimeOffset|Zeitpunkt, an dem die Benachrichtigung geschlossen wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
 |comments|Collection von Objekten des Typs „String“|Analystenkommentare auf die Benachrichtigung (für Kunden alert Management).|
 |Feedback|alertFeedback|Analyst Feedback auf die Benachrichtigung. Mögliche Werte: sind `unknown`, `truePositive`, `falsePositive` und `benignPositive`.|

@@ -2,12 +2,13 @@
 title: Ressourcentyp educationExcelResource
 description: 'Eine Unterklasse der EducationResource. Dieser Ressourcentyp stellt ein Excel-Dokument dar.  '
 author: mmast-msft
-ms.openlocfilehash: 427de6fac1f5f4ad63de8286e2714dd8fad472f9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f772f7911667c76e64c31a856f3a9f8b6f3e6ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315939"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858100"
 ---
 # <a name="educationexcelresource-resource-type"></a>Ressourcentyp educationExcelResource
 

@@ -2,12 +2,13 @@
 title: Abrufen von ndesConnector
 description: Lesen Sie Eigenschaften und Beziehungen des NdesConnector-Objekts.
 author: tfitzmac
-ms.openlocfilehash: ccff6dd13e37ccee19b9f86b91adcf2f6bbc9960
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8a43ddacaf1aa385ba53ef33f5a38f8772a9e8d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352794"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858660"
 ---
 # <a name="get-ndesconnector"></a>Abrufen von ndesConnector
 
@@ -39,8 +40,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: Aktualisieren von „managedDevice“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs managedDevice.
 author: tfitzmac
-ms.openlocfilehash: 9f608f13f7580e76d1e1934d5aea788a2ce6738f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 31c1b1a497dcd5cabf4b7b97b56811dbbedb2a5a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357827"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858611"
 ---
 # <a name="update-manageddevice"></a>Aktualisieren von „managedDevice“
 
@@ -38,10 +39,10 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [managedDevice](../resources/intune-devices-manageddevice.md) an.
@@ -74,13 +75,13 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Verwaltungskanal des Geräts. Intune, EAS usw. Mögliche Werte sind: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`.|
 |osVersion|String|Auf dem Gerät installierte Betriebssystemversion.
 |
-|easActivated|Boolescher Wert|Gibt an, ob für das Gerät Exchange ActiveSync aktiviert ist.|
+|easActivated|Boolean|Gibt an, ob für das Gerät Exchange ActiveSync aktiviert ist.|
 |easDeviceId|String|Exchange ActiveSync-ID des Geräts.
 |
 |easActivationDateTime|DateTimeOffset|Datum und Uhrzeit der Exchange ActiveSync-Aktivierung für das Gerät.
 |
-|aadRegistered|Boolescher Wert|Gibt an, ob das Gerät in Azure Active Directory registriert ist.|
-|azureADRegistered|Boolescher Wert|Gibt an, ob das Gerät in Azure Active Directory registriert ist.|
+|aadRegistered|Boolean|Gibt an, ob das Gerät in Azure Active Directory registriert ist.|
+|azureADRegistered|Boolean|Gibt an, ob das Gerät in Azure Active Directory registriert ist.|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Registrierungstyp des Geräts. Mögliche Werte: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|Gibt an, ob verloren-Modus aktiviert oder deaktiviert ist. Mögliche Werte sind: `disabled` und `enabled`.|
 |activationLockBypassCode|String|Code, der die Umgehung der Aktivierungssperre des Geräts ermöglicht|
@@ -91,7 +92,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Registrierungsstatus des Geräts. Mögliche Werte sind: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset` und `notRegisteredPendingEnrollment`, `unknown`.|
 |deviceCategoryDisplayName|String|Anzeigename der Gerätekategorie.
 |
-|isSupervised|Boolescher Wert|Überwachungsstatus des Geräts.
+|isSupervised|Boolean|Überwachungsstatus des Geräts.
 |
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Verbindung des Geräts mit Exchange|
 |exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Zugriffsstatus des Geräts in Exchange. Mögliche Werte sind: `none`, `unknown`, `allowed`, `blocked` und `quarantined`.|
@@ -100,7 +101,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |
 |remoteAssistanceSessionErrorDetails|String|Fehlerzeichenfolge zur Beschreibung von Fehlern beim Erstellen von Objekten für Remoteunterstützungssitzungen.
 |
-|isEncrypted|Boolescher Wert|Verschlüsselungsstatus des Geräts.
+|isEncrypted|Boolean|Verschlüsselungsstatus des Geräts.
 |
 |userPrincipalName|String|Benutzerprinzipalname für das Gerät.
 |
@@ -135,11 +136,11 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Gibt den Bedrohungsstatus eines Geräts an, wenn das Konto und das Gerät einen Mobile Threat Defense-Partner nutzen. Schreibgeschützt. Mögliche Werte: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 |usersLoggedOn|[LoggedOnUser](../resources/intune-devices-loggedonuser.md) -Auflistung|Gibt das letzte angemeldete Benutzer eines Geräts|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Meldet den DateTime-Wert die Einstellung PreferMdmOverGroupPolicy festgelegt wurde.  Wenn festgelegt ist, werden die Intune MDM Einstellungen Group Policy Settings außer Kraft setzen, wenn ein Konflikt vorliegt. Schreibgeschützt.|
-|autopilotEnrolled|Boolesch|Gibt an, ob das verwaltete Geräte über den Auto-Pilot registriert ist.|
-|requireUserEnrollmentApproval|Boolesch|Gibt an, ob das Gerät verwalteten iOS Benutzer Genehmigung Registrierung wird.|
+|autopilotEnrolled|Boolean|Gibt an, ob das verwaltete Geräte über den Auto-Pilot registriert ist.|
+|requireUserEnrollmentApproval|Boolean|Gibt an, ob das Gerät verwalteten iOS Benutzer Genehmigung Registrierung wird.|
 |managementCertificateExpirationDate|DateTimeOffset|Ablaufdatum des Zertifikats Berichte Gerät management|
 |iccid|String|Chip Karte Bezeichner, ist es eine SIM-Karte eindeutige ID-Nummer.|
-|UDID|String|Eindeutige Geräte-ID für iOS und Mac OS-Geräte.|
+|UDID|Zeichenfolge|Eindeutige Geräte-ID für iOS und Mac OS-Geräte.|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereichs-Tag-IDs für diese Instanz des Geräts.|
 |windowsActiveMalwareCount|Int32|Anzahl von aktiven Malware für dieses Windows-Gerät|
 |windowsRemediatedMalwareCount|Int32|Anzahl der für gewartete Malware für dieses Windows-Gerät|

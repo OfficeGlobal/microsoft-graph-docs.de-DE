@@ -1,12 +1,13 @@
 ---
 title: DefenderPotentiallyUnwantedAppAction Enum-Typ
 description: Defender Aktion, die auf erkannt potenziell unerwünschte Anwendung (PUA).
-ms.openlocfilehash: c786906046d6a35c026da95246016537e4325aab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9b04cd6daeae303910519d0735165171575d8c44
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060201"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858646"
 ---
 # <a name="defenderpotentiallyunwantedappaction-enum-type"></a>DefenderPotentiallyUnwantedAppAction Enum-Typ
 

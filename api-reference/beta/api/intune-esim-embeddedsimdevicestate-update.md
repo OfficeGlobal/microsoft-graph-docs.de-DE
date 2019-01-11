@@ -2,12 +2,13 @@
 title: EmbeddedSIMDeviceState aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines EmbeddedSIMDeviceState-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 7c377199caae31bb45d65f0ad557cb27fb3916b8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cad82e5e211120d79e011647063762ae6a69ec60
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318522"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858653"
 ---
 # <a name="update-embeddedsimdevicestate"></a>EmbeddedSIMDeviceState aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [EmbeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) eine JSON-Darstellung.
@@ -47,15 +48,15 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für die eingebettete SIM Gerätestatus. System generierten Wert, die beim Erstellen zugewiesen.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für die eingebettete SIM Gerätestatus. System generierten Wert, die beim Erstellen zugewiesen.|
 |createdDateTime|DateTimeOffset|Der Zeitpunkt der eingebetteten SIM Gerätestatus erstellt wurde. Generierte Service-Seite.|
 |modifiedDateTime|DateTimeOffset|Der Zeitpunkt der letzten Änderung der eingebetteten SIM Gerätestatus. Aktualisierte Service-Seite.|
 |lastSyncDateTime|DateTimeOffset|Zeitpunkt, zu das eingebettete SIM Gerät zuletzt eingecheckt. Aktualisierte Service-Seite.|
-|universalIntegratedCircuitCardIdentifier|String|Der universelle Chip Karte Bezeichner (UICCID), identifiziert der Hardware, auf der ein Profil ist bereitgestellt werden.|
-|deviceName|String|Name des Aufnahmegeräts, dem das Abonnement wurde, bereitgestellt, z. B. DESKTOP JOE|
-|userName|String|Benutzernamen, der das Abonnement, z. B. joe@contoso.com bereitgestellt wurde|
+|universalIntegratedCircuitCardIdentifier|Zeichenfolge|Der universelle Chip Karte Bezeichner (UICCID), identifiziert der Hardware, auf der ein Profil ist bereitgestellt werden.|
+|deviceName|Zeichenfolge|Name des Aufnahmegeräts, dem das Abonnement wurde, bereitgestellt, z. B. DESKTOP JOE|
+|userName|Zeichenfolge|Benutzernamen, der das Abonnement, z. B. joe@contoso.com bereitgestellt wurde|
 |state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|Der Status des Vorgangs Profil angewendet auf das Gerät. Mögliche Werte sind: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted` und `removedByUser`.|
-|stateDetails|String|Beschreibung des provisioning Status eine Zeichenfolge.|
+|stateDetails|Zeichenfolge|Beschreibung des provisioning Status eine Zeichenfolge.|
 
 
 

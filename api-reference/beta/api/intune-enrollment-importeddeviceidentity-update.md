@@ -2,12 +2,13 @@
 title: ImportedDeviceIdentity aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines ImportedDeviceIdentity-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 6910eedf448c85d919da74f5d4e04d11213cf6d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9072c0b5e8a01c72352b9250b4167cdb5ec190fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347712"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838430"
 ---
 # <a name="update-importeddeviceidentity"></a>ImportedDeviceIdentity aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) eine JSON-Darstellung.
@@ -47,13 +48,13 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|ID der Identität des importierten Geräts|
-|importedDeviceIdentifier|String|Importierte Geräte-ID|
+|id|Zeichenfolge|ID der Identität des importierten Geräts|
+|importedDeviceIdentifier|Zeichenfolge|Importierte Geräte-ID|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Art der importierten Gerät Identität. Mögliche Werte sind: `unknown`, `imei` und `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Letzte Änderung DateTime der Beschreibung|
 |createdDateTime|DateTimeOffset|Erstellte Datum-Uhrzeit des Geräts|
 |lastContactedDateTime|DateTimeOffset|Letzte kontaktiert Datum-Uhrzeit des Geräts|
-|description|String|Die Beschreibung des Geräts|
+|description|Zeichenfolge|Die Beschreibung des Geräts|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Der Zustand des Geräts in Intune. Mögliche Werte sind: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted` und `blocked`.|
 |Plattform|[Plattform](../resources/intune-enrollment-platform.md)|Die Plattform des Geräts. Mögliche Werte sind: `unknown`, `ios`, `android`, `windows`, `windowsMobile` und `macOS`.|
 

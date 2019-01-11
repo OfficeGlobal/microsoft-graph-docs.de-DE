@@ -2,12 +2,13 @@
 title: deviceConfigurationDeviceStatus abrufen
 description: Lesen von Eigenschaften und Beziehungen des deviceConfigurationDeviceStatus-Objekts.
 author: tfitzmac
-ms.openlocfilehash: aec946d5d0daf05989aaf970019563708df10bf6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 63110ec5c71e773e66a15318f16a97c73b13581f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357659"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852297"
 ---
 # <a name="get-deviceconfigurationdevicestatus"></a>deviceConfigurationDeviceStatus abrufen
 
@@ -47,8 +48,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
