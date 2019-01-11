@@ -3,43 +3,44 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: Abrufen einer SharePoint-Liste
-ms.openlocfilehash: 40bca9b529ed533ad2823a1f827f989dc0e9f341
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 0485a8bf3c37af3c659e7a630b65a5fd8f1849f7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016535"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809884"
 ---
-# <a name="get-metadata-for-a-list"></a><span data-ttu-id="17597-102">Metadaten für eine Liste abrufen</span><span class="sxs-lookup"><span data-stu-id="17597-102">Get metadata for a list</span></span>
+# <a name="get-metadata-for-a-list"></a><span data-ttu-id="46fec-102">Metadaten für eine Liste abrufen</span><span class="sxs-lookup"><span data-stu-id="46fec-102">Get metadata for a list</span></span>
 
-<span data-ttu-id="17597-103">Gibt die Metadaten für ein eine [Liste][] zurück.</span><span class="sxs-lookup"><span data-stu-id="17597-103">Returns the metadata for a [list][].</span></span>
+<span data-ttu-id="46fec-103">Gibt die Metadaten für ein eine [Liste][] zurück.</span><span class="sxs-lookup"><span data-stu-id="46fec-103">Returns the metadata for a [list][].</span></span>
 
 [list]: ../resources/list.md
 
-## <a name="permissions"></a><span data-ttu-id="17597-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="17597-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="46fec-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="46fec-105">Permissions</span></span>
 
-<span data-ttu-id="17597-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="17597-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="46fec-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="46fec-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="17597-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="17597-108">Permission type</span></span>      | <span data-ttu-id="17597-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="17597-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="46fec-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="46fec-108">Permission type</span></span>      | <span data-ttu-id="46fec-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="46fec-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="17597-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="17597-110">Delegated (work or school account)</span></span> | <span data-ttu-id="17597-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="17597-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="17597-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="17597-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="17597-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="17597-113">Not supported.</span></span>    |
-|<span data-ttu-id="17597-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="17597-114">Application</span></span> | <span data-ttu-id="17597-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="17597-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="46fec-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="46fec-110">Delegated (work or school account)</span></span> | <span data-ttu-id="46fec-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="46fec-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="46fec-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="46fec-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="46fec-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="46fec-113">Not supported.</span></span>    |
+|<span data-ttu-id="46fec-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="46fec-114">Application</span></span> | <span data-ttu-id="46fec-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="46fec-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="17597-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="17597-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="46fec-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="46fec-116">HTTP request</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
-## <a name="request-body"></a><span data-ttu-id="17597-117">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="17597-117">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="46fec-117">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="46fec-117">Request body</span></span>
 
-<span data-ttu-id="17597-118">Bei dieser Methode wird kein Anforderungstext angegeben.</span><span class="sxs-lookup"><span data-stu-id="17597-118">Do not supply a request body with this method.</span></span>
+<span data-ttu-id="46fec-118">Bei dieser Methode wird kein Anforderungstext angegeben.</span><span class="sxs-lookup"><span data-stu-id="46fec-118">Do not supply a request body with this method.</span></span>
 
-## <a name="example"></a><span data-ttu-id="17597-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="17597-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="46fec-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="46fec-119">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="17597-120">Anforderung</span><span class="sxs-lookup"><span data-stu-id="17597-120">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="46fec-120">Anforderung</span><span class="sxs-lookup"><span data-stu-id="46fec-120">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
 
@@ -47,7 +48,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=colu
 GET /sites/{site-id}/lists/{list-id}
 ```
 
-#### <a name="response"></a><span data-ttu-id="17597-121">Antwort</span><span class="sxs-lookup"><span data-stu-id="17597-121">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="46fec-121">Antwort</span><span class="sxs-lookup"><span data-stu-id="46fec-121">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
@@ -67,9 +68,9 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="17597-122">Mit `select`- und `expand`-Anweisungen können Sie Listen-Metadaten, Spaltendefinitionen und Listenelemente in einer einzigen Anforderung abrufen.</span><span class="sxs-lookup"><span data-stu-id="17597-122">With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.</span></span>
+<span data-ttu-id="46fec-122">Mit `select`- und `expand`-Anweisungen können Sie Listen-Metadaten, Spaltendefinitionen und Listenelemente in einer einzigen Anforderung abrufen.</span><span class="sxs-lookup"><span data-stu-id="46fec-122">With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="17597-123">Anforderung</span><span class="sxs-lookup"><span data-stu-id="17597-123">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="46fec-123">Anforderung</span><span class="sxs-lookup"><span data-stu-id="46fec-123">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-list-multi-expand", "scopes": "sites.read.all" } -->
 
@@ -77,7 +78,7 @@ Content-type: application/json
 GET /sites/{site-id}/lists/{list-id}?select=id,name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
 
-#### <a name="response"></a><span data-ttu-id="17597-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="17597-124">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="46fec-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="46fec-124">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 

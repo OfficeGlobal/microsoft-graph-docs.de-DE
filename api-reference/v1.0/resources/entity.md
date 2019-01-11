@@ -1,26 +1,27 @@
 ---
 title: entity-Ressourcentyp
-description: Keines
-ms.openlocfilehash: 381e1df86d96f416a36eca58c1b3f6a7f3e58f01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Keine
+localization_priority: Normal
+ms.openlocfilehash: e0903ef3b90a0c176881bbee2aa5aafca4032ccc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27017654"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810955"
 ---
-# <a name="entity-resource-type"></a><span data-ttu-id="eba1c-103">entity-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="eba1c-103">entity resource type</span></span>
+# <a name="entity-resource-type"></a><span data-ttu-id="8899a-103">entity-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="8899a-103">entity resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="eba1c-104">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="eba1c-104">Properties</span></span>
-| <span data-ttu-id="eba1c-105">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="eba1c-105">Property</span></span>     | <span data-ttu-id="eba1c-106">Typ</span><span class="sxs-lookup"><span data-stu-id="eba1c-106">Type</span></span>   |<span data-ttu-id="eba1c-107">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="eba1c-107">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="8899a-104">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="8899a-104">Properties</span></span>
+| <span data-ttu-id="8899a-105">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="8899a-105">Property</span></span>     | <span data-ttu-id="8899a-106">Typ</span><span class="sxs-lookup"><span data-stu-id="8899a-106">Type</span></span>   |<span data-ttu-id="8899a-107">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8899a-107">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="eba1c-108">id</span><span class="sxs-lookup"><span data-stu-id="eba1c-108">id</span></span>|<span data-ttu-id="eba1c-109">String</span><span class="sxs-lookup"><span data-stu-id="eba1c-109">String</span></span>| <span data-ttu-id="eba1c-110">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="eba1c-110">Read-only.</span></span>|
+|<span data-ttu-id="8899a-108">id</span><span class="sxs-lookup"><span data-stu-id="8899a-108">id</span></span>|<span data-ttu-id="8899a-109">String</span><span class="sxs-lookup"><span data-stu-id="8899a-109">String</span></span>| <span data-ttu-id="8899a-110">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="8899a-110">Read-only.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="eba1c-111">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="eba1c-111">Relationships</span></span>
-<span data-ttu-id="eba1c-112">Keine</span><span class="sxs-lookup"><span data-stu-id="eba1c-112">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="8899a-111">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="8899a-111">Relationships</span></span>
+<span data-ttu-id="8899a-112">Keine</span><span class="sxs-lookup"><span data-stu-id="8899a-112">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="eba1c-113">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="eba1c-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8899a-113">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="8899a-113">JSON representation</span></span>
 
-<span data-ttu-id="eba1c-114">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="eba1c-114">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="8899a-114">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="8899a-114">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
