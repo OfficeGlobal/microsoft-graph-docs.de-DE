@@ -2,12 +2,13 @@
 title: Aktualisieren von „managedAppPolicyDeploymentSummary“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs managedAppPolicyDeploymentSummary.
 author: tfitzmac
-ms.openlocfilehash: e123c07722e9bd4baf2cab7bfd5f53516b37a949
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e1d0c06a3a7bcb2e909cc3a0f0195342a5038d42
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342959"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825291"
 ---
 # <a name="update-managedapppolicydeploymentsummary"></a>Aktualisieren von „managedAppPolicyDeploymentSummary“
 
@@ -38,8 +39,8 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) an.
@@ -48,12 +49,12 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|String|Noch nicht dokumentiert|
+|displayName|Zeichenfolge|Noch nicht dokumentiert|
 |configurationDeployedUserCount|Int32|Noch nicht dokumentiert|
 |lastRefreshTime|DateTimeOffset|Noch nicht dokumentiert|
 |configurationDeploymentSummaryPerApp|Collection von Objekten des Typs [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md)|Noch nicht dokumentiert|
-|id|String|Schlüssel der Entität|
-|Version|String|Version der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Version|Zeichenfolge|Version der Entität|
 
 
 

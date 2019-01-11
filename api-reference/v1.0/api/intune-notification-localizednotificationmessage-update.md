@@ -2,12 +2,13 @@
 title: localizedNotificationMessage aktualisieren
 description: Aktualisieren der Eigenschaften eines LocalizedNotificationMessage-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 117f648b2e8d8172338f00878cc715beac938525
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c3bdab6064601bdd860949be484764ee5ede2356
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348825"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806160"
 ---
 # <a name="update-localizednotificationmessage"></a>localizedNotificationMessage aktualisieren
 
@@ -35,8 +36,8 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON Darstellung für das [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md)-Objekt an.
@@ -45,11 +46,11 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
-|Gebietsschema|String|Das Gebietsschema für das diese Nachricht bestimmt ist.|
-|Betreff|String|Die Vorlage für den Betreff der Nachricht.|
-|messageTemplate|String|Die Vorlage für den Inhalt der Nachricht.|
+|Gebietsschema|Zeichenfolge|Das Gebietsschema für das diese Nachricht bestimmt ist.|
+|Betreff|Zeichenfolge|Die Vorlage für den Betreff der Nachricht.|
+|messageTemplate|Zeichenfolge|Die Vorlage für den Inhalt der Nachricht.|
 |isDefault|Boolescher Wert|Die Kennzeichnung gibt an, ob dies das Standard-Gebietsschema für die Fallbacksprache ist. Dieser Kennzeichnung kann nur festgelegt werden. Um die Festlegung aufzuheben, setzen Sie diese Eigenschaft bei einer anderen lokalisierten Benachrichtigung auf „true“.|
 
 

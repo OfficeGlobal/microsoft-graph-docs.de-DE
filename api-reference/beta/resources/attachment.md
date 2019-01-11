@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp attachment
 description: Sie können ein Ereignis verwandten Inhalten hinzugefügt
-ms.openlocfilehash: f0bb9ec37d2fe3d034dce9532ad316d371c4937e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5648194b0f636c8757d1b20c492abc099dce377d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065477"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842791"
 ---
 # <a name="attachment-resource-type"></a>Ressourcentyp attachment
 
@@ -43,11 +44,11 @@ Nachfolgend finden Sie die grundlegenden Eigenschaften von attachment-Ressourcen
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|contentType|String|Der MIME-Typ.|
-|id|String| Schreibgeschützt.|
+|contentType|Zeichenfolge|Der MIME-Typ.|
+|id|Zeichenfolge| Schreibgeschützt.|
 |isInline|Boolean|`true`, wenn die Anlage eine Inlineanlage ist, andernfalls `false`.|
 |lastModifiedDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|name|String|Der Anzeigename der Anlage. Dies muss nicht der tatsächliche Dateiname sein.|
+|name|Zeichenfolge|Der Anzeigename der Anlage. Dies muss nicht der tatsächliche Dateiname sein.|
 |size|Int32|Die Länge der Anlage in Byte.|
 
 ## <a name="relationships"></a>Beziehungen

@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp synchronizationStatus
 description: Stellt den aktuellen Status der SynchronizationJob.
-ms.openlocfilehash: cf1b1e79e5ad784f1f43a2e5bf082c68b41e96ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 01f30338d7f6d4388554df08bf91655136c24a12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066083"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817031"
 ---
 # <a name="synchronizationstatus-resource-type"></a>Ressourcentyp synchronizationStatus
 
@@ -18,18 +19,18 @@ Stellt den aktuellen Status der [SynchronizationJob](synchronization-synchroniza
 
 | Eigenschaft                              | Typ      | Beschreibung    |
 |:--------------------------------------|:----------|:---------------|
-|code|String|Allgemeine Statuscode des Synchronisierungsauftrags. Mögliche Werte sind: `NotConfigured`, `NotRun`, `Active`, `Paused` und `Quarantine`.|
+|code|Zeichenfolge|Allgemeine Statuscode des Synchronisierungsauftrags. Mögliche Werte sind: `NotConfigured`, `NotRun`, `Active`, `Paused` und `Quarantine`.|
 |countSuccessiveCompleteFailures|Int64|Häufigkeit der aufeinander folgenden diesen Auftrag ist fehlgeschlagen.|
-|escrowsPruned|Boolesch|`true`Wenn der Auftrag Artikel mit Treuhandservice (Fehler auf Objektebene) während der ersten Synchronisierung gelöscht wurden. Artikel mit Treuhandservice können gelöscht werden, wenn während der ersten Synchronisierung des Schwellenwerts für Fehler erreichen, die normalerweise den Auftrag in Quarantäne eingetragen wird. Statt in Quarantäne Synchronisierungsvorgangs löscht den Auftrag Fehler und wird fortgesetzt, bis die anfängliche Synchronisierung abgeschlossen ist. Wenn die anfängliche Synchronisierung abgeschlossen ist, wird der Auftrag anhalten und warten, bis der Kunde, um den Fehler zu bereinigen.|
+|escrowsPruned|Boolescher Wert|`true`Wenn der Auftrag Artikel mit Treuhandservice (Fehler auf Objektebene) während der ersten Synchronisierung gelöscht wurden. Artikel mit Treuhandservice können gelöscht werden, wenn während der ersten Synchronisierung des Schwellenwerts für Fehler erreichen, die normalerweise den Auftrag in Quarantäne eingetragen wird. Statt in Quarantäne Synchronisierungsvorgangs löscht den Auftrag Fehler und wird fortgesetzt, bis die anfängliche Synchronisierung abgeschlossen ist. Wenn die anfängliche Synchronisierung abgeschlossen ist, wird der Auftrag anhalten und warten, bis der Kunde, um den Fehler zu bereinigen.|
 |lastExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|Details der letzten Ausführung des Auftrags.|
 |lastSuccessfulExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|Details der letzten Ausführung dieser Auftrag, die Fehler aufweisen, nicht.|
 |lastSuccessfulExecutionWithExports|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|Details der letzten Ausführung des Auftrags, der exportierte Objekte in das Zielverzeichnis.|
-|Fortschritt|[SynchronizationProgress](synchronization-synchronizationprogress.md) -Auflistung|Details zu den Fortschritt eines Auftrags an.|
+|progress|[SynchronizationProgress](synchronization-synchronizationprogress.md) -Auflistung|Details zu den Fortschritt eines Auftrags an.|
 |Quarantäne|[synchronizationQuarantine](synchronization-quarantine.md)|Wenn der Auftrag in Quarantäne ist, Quarantänedetails.|
 |steadyStateFirstAchievedTime|DateTimeOffset|Der Zeitpunkt, wann stabilen Zustand (keine weitere Änderungen an den Prozess) zuerst erreicht wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
 |steadyStateLastAchievedTime|DateTimeOffset|Die Uhrzeit, wann zuletzt stabilen Zustand (keine weitere Änderungen an den Prozess) erreicht wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
 |synchronizedEntryCountByType|[StringKeyLongValuePair](synchronization-stringkeylongvaluepair.md) -Auflistung|Anzahl der synchronisierten Objekte nach Objekttyp aufgeführt.|
-|troubleshootingUrl|String|Im Fall eines Fehlers, die URL durch die Schritte zur Problembehandlung für das Problem.|
+|troubleshootingUrl|Zeichenfolge|Im Fall eines Fehlers, die URL durch die Schritte zur Problembehandlung für das Problem.|
 
 ### <a name="synchronization-status-code-details"></a>Synchronisierung Status Code details
 

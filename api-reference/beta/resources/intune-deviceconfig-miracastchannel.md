@@ -2,12 +2,13 @@
 title: MiracastChannel Enum-Typ
 description: Mögliche Werte für Miracast DDE-Kanal.
 author: tfitzmac
-ms.openlocfilehash: f874cfaee0a20b4aaa82af0605df864179d8635e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 35b5b77115b3084ac1e1f253b2de70a677566a8e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317381"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866983"
 ---
 # <a name="miracastchannel-enum-type"></a>MiracastChannel Enum-Typ
 
@@ -17,7 +18,7 @@ ms.locfileid: "27317381"
 
 Mögliche Werte für Miracast DDE-Kanal.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
 |one|1|Eine.|

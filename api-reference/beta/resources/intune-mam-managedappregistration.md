@@ -2,12 +2,13 @@
 title: Ressourcentyp „managedAppRegistration“
 description: ManagedAppEntity ist der Basisentitätstyp für alle anderen Entitätstypen im App-Verwaltungsworkflow.
 author: tfitzmac
-ms.openlocfilehash: 8a0663ab291dc77568ae91e5a65fab31e809d1a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 959bd294ab1752617cea6a6ea5bbe8f0a3802f0e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339858"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869720"
 ---
 # <a name="managedappregistration-resource-type"></a>Ressourcentyp „managedAppRegistration“
 
@@ -33,17 +34,17 @@ Die Ressource „managedAppRegistration“ repräsentiert die Details einer verw
 |managementSdkVersion|String|Version des App-Verwaltungs-SDK|
 |platformVersion|String|Version des Betriebssystems|
 |deviceType|String|Gerätetyp des Hostgeräts|
-|deviceTag|String|Vom App-Verwaltungs-SDK generiertes Tag, das bei der Zuordnung von Apps hilft, die auf demselben Gerät gehostet werden. Es ist nicht garantiert, dass die App-Zuordnung unter allen Bedingungen funktioniert.|
+|deviceTag|Zeichenfolge|Vom App-Verwaltungs-SDK generiertes Tag, das bei der Zuordnung von Apps hilft, die auf demselben Gerät gehostet werden. Es ist nicht garantiert, dass die App-Zuordnung unter allen Bedingungen funktioniert.|
 |deviceName|String|Gerätename des Hostgeräts|
-|managedDeviceId|String|Die verwaltete Geräte-ID des Hostgeräts werden soll. Wert kann leer sein, selbst wenn das Host-Gerät verwaltet wird.|
-|azureADDeviceId|String|Der Azure Active Directory-Gerät Bezeichner des Hostgeräts. Wert kann leer sein, auch wenn das Host-Gerät Azure Active Directory registriert ist.|
-|deviceModel|String|Das Gerätemodell für die aktuelle app-Registrierung |
-|Einträge deviceManufacturer|String|Hersteller des Geräts für die aktuelle app-Registrierung |
+|managedDeviceId|Zeichenfolge|Die verwaltete Geräte-ID des Hostgeräts werden soll. Wert kann leer sein, selbst wenn das Host-Gerät verwaltet wird.|
+|azureADDeviceId|Zeichenfolge|Der Azure Active Directory-Gerät Bezeichner des Hostgeräts. Wert kann leer sein, auch wenn das Host-Gerät Azure Active Directory registriert ist.|
+|deviceModel|Zeichenfolge|Das Gerätemodell für die aktuelle app-Registrierung |
+|Einträge deviceManufacturer|Zeichenfolge|Hersteller des Geräts für die aktuelle app-Registrierung |
 |flaggedReasons|[ManagedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md) -Auflistung|Gründe (0 oder mehr), aus denen eine App-Registrierung gekennzeichnet wurde. Beispiel: Die App wird auf einem gerooteten Gerät ausgeführt.|
-|userId|String|Benutzer-ID, zu der die App-Registrierung gehört|
+|userId|Zeichenfolge|Benutzer-ID, zu der die App-Registrierung gehört|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Bezeichner des App-Pakets|
-|id|String|Schlüssel der Entität|
-|Version|String|Version der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Version|Zeichenfolge|Version der Entität|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

@@ -2,12 +2,13 @@
 title: Liste androidForWorkCustomConfigurations
 description: Listeneigenschaften und Beziehungen der AndroidForWorkCustomConfiguration-Objekte.
 author: tfitzmac
-ms.openlocfilehash: 95ace512553d17e4c9d40bcfecbfd432fc2c3b93
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b36a2d84bc68c5298d76fa05742e52c823aa689
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359794"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836967"
 ---
 # <a name="list-androidforworkcustomconfigurations"></a>Liste androidForWorkCustomConfigurations
 
@@ -38,8 +39,8 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

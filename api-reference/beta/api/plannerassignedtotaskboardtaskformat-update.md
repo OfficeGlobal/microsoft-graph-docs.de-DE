@@ -1,12 +1,13 @@
 ---
 title: 'plannerAssignedToTaskBoardTaskFormat aktualisieren '
 description: Dient zum Aktualisieren der Eigenschaften eines **plannerAssignedToTaskBoardTaskFormat**-Objekts.
-ms.openlocfilehash: 7bf559b5962c895c1ce7b5d3192ab743bca3acb2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2586e0d413ce6debcc90b720c2ec45773518507e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060670"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856805"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>plannerAssignedToTaskBoardTaskFormat aktualisieren 
 
@@ -39,7 +40,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|Wörterbuch verwendet, um die Reihenfolge Aufgaben in der Ansicht AssignedTo, der die Aufgabe Pinnwand hinweisen. Der Schlüssel für jeden Eintrag eines Benutzer an, die, denen die Aufgabe zugewiesen ist, und der Wert ist der Order-Hinweis. Das Format von jeder Wert wird definiert [mit Reihenfolge Hinweise in Planner (... / resources/planner_order_hint_format.md).|
-|unassignedOrderHint|String|Hinweiswert verwendet, um den Vorgang in der Ansicht AssignedTo der Aufgabe-Karte bestellen, wenn die Aufgabe nicht einem Benutzer zugewiesen wird, oder wenn das Wörterbuch OrderHintsByAssignee Order-Hinweis für den Benutzer die Aufgabe nicht bereitstellt zugewiesen ist. Das Format ist in [Using Reihenfolge Hinweise in Planner](../resources/planner-order-hint-format.md)definiert.|
+|unassignedOrderHint|Zeichenfolge|Hinweiswert verwendet, um den Vorgang in der Ansicht AssignedTo der Aufgabe-Karte bestellen, wenn die Aufgabe nicht einem Benutzer zugewiesen wird, oder wenn das Wörterbuch OrderHintsByAssignee Order-Hinweis für den Benutzer die Aufgabe nicht bereitstellt zugewiesen ist. Das Format ist in [Using Reihenfolge Hinweise in Planner](../resources/planner-order-hint-format.md)definiert.|
 
 ## <a name="response"></a>Antwort
 

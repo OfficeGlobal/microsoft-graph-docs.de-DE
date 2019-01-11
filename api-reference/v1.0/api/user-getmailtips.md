@@ -2,12 +2,13 @@
 title: 'Benutzer: GetMailTips'
 description: Rufen Sie die e-Mail-Infos für einen oder mehrere Empfänger als verfügbar für dem angemeldeten Benutzer.
 author: dkershaw10
-ms.openlocfilehash: 198e45647ce51997a8d92da63a5f63f03d05a675
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 49c1614a2e53563039d22b9c2823a7bb35379f3b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332683"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808652"
 ---
 # <a name="user-getmailtips"></a>Benutzer: GetMailTips
 
@@ -44,7 +45,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |EmailAddresses|Collection von Objekten des Typs „String“|Eine Auflistung von SMTP-Adressen der Empfänger für e-Mail-Infos zu erhalten.|
-|MailTipsOptions|String|Eine Flags-Enumeration, die die angeforderten e-Mail-Infos darstellt. Mögliche Werte sind: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, und `totalMemberCount`.|
+|MailTipsOptions|Zeichenfolge|Eine Flags-Enumeration, die die angeforderten e-Mail-Infos darstellt. Mögliche Werte sind: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, und `totalMemberCount`.|
 
 ## <a name="response"></a>Antwort
 

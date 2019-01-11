@@ -2,12 +2,13 @@
 title: managedAppStatusRaw-Ressourcentyp
 description: Stellt einen nicht typisierten Statusbericht über App-Schutz und -Konfiguration der Organisation dar.
 author: tfitzmac
-ms.openlocfilehash: b4cb19b3fd9568afa65b50fea4fb4b3f0c8f1cc4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 19c00f6d6bc1eb642320f77d9b5dfcc2fe842b1e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322694"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856854"
 ---
 # <a name="managedappstatusraw-resource-type"></a>managedAppStatusRaw-Ressourcentyp
 
@@ -26,9 +27,9 @@ Erbt von [managedAppStatus](../resources/intune-mam-managedappstatus.md)
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|String|Anzeigename des Statusberichts. Geerbt von [managedAppStatus](../resources/intune-mam-managedappstatus.md).|
-|id|String|Schlüssel der Entität. Geerbt von [managedAppStatus](../resources/intune-mam-managedappstatus.md).|
-|version|String|Version der Entität Geerbt von [managedAppStatus](../resources/intune-mam-managedappstatus.md).|
+|displayName|Zeichenfolge|Anzeigename des Statusberichts. Geerbt von [managedAppStatus](../resources/intune-mam-managedappstatus.md).|
+|id|Zeichenfolge|Schlüssel der Entität. Geerbt von [managedAppStatus](../resources/intune-mam-managedappstatus.md).|
+|version|Zeichenfolge|Version der Entität Geerbt von [managedAppStatus](../resources/intune-mam-managedappstatus.md).|
 |content|[Json](../resources/intune-mam-json.md)|Inhalt des Statusberichts.|
 
 ## <a name="relationships"></a>Beziehungen

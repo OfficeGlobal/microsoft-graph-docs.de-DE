@@ -2,12 +2,13 @@
 title: Ressourcentyp „managedAppRegistration“
 description: ManagedAppEntity ist der Basisentitätstyp für alle anderen Entitätstypen im App-Verwaltungsworkflow.
 author: tfitzmac
-ms.openlocfilehash: 218a36a283febe646afcc6f9c9bcbd0ed5abf46a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7543f7cf591e1e89c05359634b7c4ec55a327b33
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347789"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825767"
 ---
 # <a name="managedappregistration-resource-type"></a>Ressourcentyp „managedAppRegistration“
 
@@ -31,13 +32,13 @@ Die Ressource „managedAppRegistration“ repräsentiert die Details einer verw
 |managementSdkVersion|String|Version des App-Verwaltungs-SDK|
 |platformVersion|String|Version des Betriebssystems|
 |deviceType|String|Gerätetyp des Hostgeräts|
-|deviceTag|String|Vom App-Verwaltungs-SDK generiertes Tag, das bei der Zuordnung von Apps hilft, die auf demselben Gerät gehostet werden. Es ist nicht garantiert, dass die App-Zuordnung unter allen Bedingungen funktioniert.|
+|deviceTag|Zeichenfolge|Vom App-Verwaltungs-SDK generiertes Tag, das bei der Zuordnung von Apps hilft, die auf demselben Gerät gehostet werden. Es ist nicht garantiert, dass die App-Zuordnung unter allen Bedingungen funktioniert.|
 |deviceName|String|Gerätename des Hostgeräts|
 |flaggedReasons|[ManagedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md) -Auflistung|Gründe (0 oder mehr), aus denen eine App-Registrierung gekennzeichnet wurde. Beispiel: Die App wird auf einem gerooteten Gerät ausgeführt.|
-|userId|String|Benutzer-ID, zu der die App-Registrierung gehört|
+|userId|Zeichenfolge|Benutzer-ID, zu der die App-Registrierung gehört|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Bezeichner des App-Pakets|
-|id|String|Schlüssel der Entität|
-|Version|String|Version der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Version|Zeichenfolge|Version der Entität|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

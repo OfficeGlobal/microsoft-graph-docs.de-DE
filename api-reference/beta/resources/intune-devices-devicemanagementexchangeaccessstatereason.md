@@ -2,12 +2,13 @@
 title: DeviceManagementExchangeAccessStateReason Enum-Typ
 description: Grund der Gerätestatus Exchange-Zugriff.
 author: tfitzmac
-ms.openlocfilehash: 03e89b2405aac185f8b937828ade07479ced4cc3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c4e02f8536d7be21d850907c0239fec01e4d1920
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318354"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863784"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>DeviceManagementExchangeAccessStateReason Enum-Typ
 
@@ -17,9 +18,9 @@ ms.locfileid: "27318354"
 
 Grund der Gerätestatus Exchange-Zugriff.
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Keine|0|Kein Zugriff Zustand Grund ermittelt aus Exchange|
+|n/v|0|Kein Zugriff Zustand Grund ermittelt aus Exchange|
 |unknown|1|Unbekannte Access Zustand Grund|
 |exchangeGlobalRule|2|Access-Zustand durch Exchange globale Regel bestimmt|
 |exchangeIndividualRule|3|Access-Zustand durch Exchange einzelne Regel bestimmt|

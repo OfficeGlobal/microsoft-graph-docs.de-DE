@@ -1,12 +1,13 @@
 ---
 title: Ressourcentyp governanceResource
 description: Stellt die Ressourcen, die von privilegierten Identity Management (PIM) verwaltet werden konnte. Für Azure Ressourcen können sie ein Abonnement, eine Ressourcengruppe und eine Ressource, z. B. einen virtuellen Computer, eine SQL-Datenbank sein.
-ms.openlocfilehash: 6a048680c3b9bb614287e764d547a20bd09b5d25
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 263996049753256fd39906dba61138c3ab0f0248
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191130"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869391"
 ---
 # <a name="governanceresource-resource-type"></a>Ressourcentyp governanceResource
 
@@ -28,13 +29,13 @@ Nicht `POST`, `PUT`, `PATCH`, `DELETE` werden unterstützt, auf `roleDefinitions
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft          |Typ         |Beschreibung|
 |:------------------|:----------|:----------|
-|id                 |String     |Die Id der Ressource. Es ist im GUID-Format.|
+|id                 |Zeichenfolge     |Die Id der Ressource. Es ist im GUID-Format.|
 |externalId           |String   |Die externe Id der Ressource, die im externen System seine ursprüngliche Id darstellt. Beispielsweise kann ein Abonnement Ressource externe Id "/ Abonnements/c14ae696-5e0c-4e5d-88cc-bef6637737ac" sein. |
-|Typ               |Zeichenfolge     |Erforderlich. Der Ressourcentyp. Beispielsweise könnte der Typ für Azure Ressourcen sein "Abonnements", "ResourceGroup", "Microsoft.Sql/server".|
-|displayName        |String     |Der Anzeigename der Ressource.|
-|status             |String     |Der Status einer bestimmten Ressource. Beispielsweise könnte darstellen, ob die Ressource oder nicht gesperrt ist (Werte: `Active` / `Locked`). Hinweis: Diese Eigenschaft kann in der Zukunft verlängert werden, um weitere Szenarien unterstützen.|
+|type               |Zeichenfolge     |Erforderlich. Der Ressourcentyp. Beispielsweise könnte der Typ für Azure Ressourcen sein "Abonnements", "ResourceGroup", "Microsoft.Sql/server".|
+|displayName        |Zeichenfolge     |Der Anzeigename der Ressource.|
+|status             |Zeichenfolge     |Der Status einer bestimmten Ressource. Beispielsweise könnte darstellen, ob die Ressource oder nicht gesperrt ist (Werte: `Active` / `Locked`). Hinweis: Diese Eigenschaft kann in der Zukunft verlängert werden, um weitere Szenarien unterstützen.|
 |registeredDateTime|DateTimeOffset      |Stellt das Datum / Uhrzeit, wann die Ressource in PIM registriert ist.|
-|registeredRoot|String      |Die ExternalId Stamm Bereichs, der Ressource, die im PIM registriert ist. Der Stammgültigkeitsbereich kann die übergeordnete, Bandrotationsschema oder einer höheren Vorgänger Ressourcen sein.|
+|registeredRoot|Zeichenfolge      |Die ExternalId Stamm Bereichs, der Ressource, die im PIM registriert ist. Der Stammgültigkeitsbereich kann die übergeordnete, Bandrotationsschema oder einer höheren Vorgänger Ressourcen sein.|
 |roleAssignmentCount|Int32      |Optional. Die Anzahl der rollenzuweisungen für die angegebene Ressource. Wenn die Eigenschaft erhalten möchten, geben Sie explizit labeltags verwenden `$select=roleAssignmentCount` in der Abfrage.|
 |roleDefinitionCount|Int32      |Optional. Die Anzahl der Rollendefinitionen für die angegebene Ressource. Wenn die Eigenschaft erhalten möchten, geben Sie explizit labeltags verwenden `$select=roleDefinitionCount` in der Abfrage.|
 |permissions|[governancePermission](../resources/governancepermission.md)      |Optional. Es stellt den Status des Antragstellers Zugriff auf die Ressource. Wenn die Eigenschaft erhalten möchten, geben Sie explizit labeltags verwenden `$select=permissions` in der Abfrage.|

@@ -2,12 +2,13 @@
 title: deviceManagementTroubleshootingEvent erstellen
 description: Erstellen eines neuen deviceManagementTroubleshootingEvent-Objekts.
 author: tfitzmac
-ms.openlocfilehash: cef96acd7db28fd9b686c01e748532e775cf5f01
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 25253b9851c675417801b41692ffaa90a1fe1039
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356406"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851779"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>deviceManagementTroubleshootingEvent erstellen
 
@@ -37,8 +38,8 @@ POST /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Objekts des Typs deviceManagementTroubleshootingEvent an.
@@ -49,7 +50,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |:---|:---|:---|
 |id|String|UUID für das Objekt|
 |eventDateTime|DateTimeOffset|Uhrzeit, zu der das Ereignis aufgetreten ist.|
-|correlationId|String|ID, die für die Verfolgung des Fehlers in dem Dienst verwendet wurde.|
+|correlationId|Zeichenfolge|ID, die für die Verfolgung des Fehlers in dem Dienst verwendet wurde.|
 
 
 

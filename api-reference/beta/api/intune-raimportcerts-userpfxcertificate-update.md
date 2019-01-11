@@ -2,12 +2,13 @@
 title: UserPFXCertificate aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines UserPFXCertificate-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 48f60d9a11942fee657eebb5c8bbf33e50d24fe9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e806450e5314cec7679a9d634edaff3cc501d911
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347607"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862209"
 ---
 # <a name="update-userpfxcertificate"></a>UserPFXCertificate aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) eine JSON-Darstellung.
@@ -47,17 +48,17 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für das PFX-Zertifikat.|
-|Fingerabdruck|String|SHA-1-Fingerabdruck des Zertifikats PFX.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für das PFX-Zertifikat.|
+|Fingerabdruck|Zeichenfolge|SHA-1-Fingerabdruck des Zertifikats PFX.|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Des Zertifikats beabsichtigten Zweck aus der Punkt der Ansicht der Bereitstellung. Mögliche Werte sind: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn` und `wifi`.|
-|userPrincipalName|String|Benutzerprinzipalname des PFX-Zertifikats.|
+|userPrincipalName|Zeichenfolge|Benutzerprinzipalname des PFX-Zertifikats.|
 |startDateTime|DateTimeOffset|Gültigkeitsdauer der starten Datum/Uhrzeit.|
 |expirationDateTime|DateTimeOffset|Des Zertifikats Gültigkeit Ablauf Datum/Uhrzeit.|
-|providerName|String|Kryptografieanbieter zum Verschlüsseln von diesem Blob verwendet.|
-|Schlüsselname|String|Name des Schlüssels (innerhalb der Anbieter) verwendet, um den Blob zu verschlüsseln.|
+|providerName|Zeichenfolge|Kryptografieanbieter zum Verschlüsseln von diesem Blob verwendet.|
+|Schlüsselname|Zeichenfolge|Name des Schlüssels (innerhalb der Anbieter) verwendet, um den Blob zu verschlüsseln.|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Abstand bei der Verschlüsselung/Entschlüsselung der vom Anbieter verwendete Schema. Mögliche Werte sind: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384` und `oaepSha512`.|
 |encryptedPfxBlob|Binär|Blob für verschlüsselte PFX.|
-|encryptedPfxPassword|String|Verschlüsselte PFX-Kennwort ein.|
+|encryptedPfxPassword|Zeichenfolge|Verschlüsselte PFX-Kennwort ein.|
 |createdDateTime|DateTimeOffset|Datum/Uhrzeit, wenn dieses PFX-Zertifikat importiert wurde.|
 |lastModifiedDateTime|DateTimeOffset|Datum/Uhrzeit der letzten dieses PFX-Zertifikat Änderung.|
 

@@ -2,12 +2,13 @@
 title: eventMessage aktualisieren
 description: Dient zum Aktualisieren der Eigenschaften des eventMessage-Objekts.
 author: angelgolfer-ms
-ms.openlocfilehash: 20c910ae2d6562a4bb9a593a0fac32269dbd413f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 128849b2b0a1a156ef68498b345ca30833922d82
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320424"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867697"
 ---
 # <a name="update-eventmessage"></a>eventMessage aktualisieren
 
@@ -33,15 +34,15 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string  | Die Art der Daten im Textkörper einer Entität. Erforderlich. |
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben. Schreibbare/Aktualisierbare Eigenschaften:
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|categories|String|Die Kategorien, die mit der Nachricht verknüpft sind.|
-|importance|String|Die Wichtigkeit der Nachricht. Die möglichen Werte sind: `Low`, `Normal`, `High`.|
+|categories|Zeichenfolge|Die Kategorien, die mit der Nachricht verknüpft sind.|
+|importance|Zeichenfolge|Die Wichtigkeit der Nachricht. Die möglichen Werte sind: `Low`, `Normal`, `High`.|
 |isDeliveryReceiptRequested|Boolescher Wert|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
 |isRead|Boolescher Wert|Gibt an, ob die Nachricht gelesen wurde.|
 |isReadReceiptRequested|Boolescher Wert|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|

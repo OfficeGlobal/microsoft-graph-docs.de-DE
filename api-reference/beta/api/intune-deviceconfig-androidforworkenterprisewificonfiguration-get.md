@@ -2,12 +2,13 @@
 title: Abrufen von androidForWorkEnterpriseWiFiConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidForWorkEnterpriseWiFiConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 68862f02843a50e3673d0fbbb3d293664c1c3d7d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 298ba87abbf6e88557bac5feed6b54c8846009a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319894"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863743"
 ---
 # <a name="get-androidforworkenterprisewificonfiguration"></a>Abrufen von androidForWorkEnterpriseWiFiConfiguration
 
@@ -41,8 +42,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

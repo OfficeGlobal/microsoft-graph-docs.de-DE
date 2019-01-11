@@ -2,12 +2,13 @@
 title: mobileAppAssignment-Ressourcentyp
 description: Eine Klasse, die die Eigenschaften für die Gruppenzuordnung einer mobilen App enthält.
 author: tfitzmac
-ms.openlocfilehash: fadc1cace3acd07ee5d42d77296a34cc34eb3027
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f621eeabbd806610461db69da344b0c31176ed01
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327748"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862300"
 ---
 # <a name="mobileappassignment-resource-type"></a>mobileAppAssignment-Ressourcentyp
 
@@ -26,7 +27,7 @@ Eine Klasse, die die Eigenschaften für die Gruppenzuordnung einer mobilen App e
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|Die vom Administrator definierte Installationspriorität. Mögliche Werte sind: `available`, `required`, `uninstall` und `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Die vom Administrator definierte Zielgruppenzuordnung|
 |settings|[mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)|Die vom Administrator definierten Einstellungen für die Zielgruppenzuordnung.|

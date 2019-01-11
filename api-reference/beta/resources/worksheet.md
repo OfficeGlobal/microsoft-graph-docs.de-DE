@@ -1,12 +1,13 @@
 ---
 title: Worksheet-Ressourcentyp
 description: Ein Excel-Arbeitsblatt ist ein Raster von Zellen. Es kann Daten, Tabellen, Diagramme usw. enthalten.
-ms.openlocfilehash: 513a1fceb8e0b7e2c7667d5fac2e4a5978ed7c04
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 690596bfe6df5f6bfd98f7f5bd37021e47132152
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27059137"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807798"
 ---
 # <a name="worksheet-resource-type"></a>Worksheet-Ressourcentyp
 

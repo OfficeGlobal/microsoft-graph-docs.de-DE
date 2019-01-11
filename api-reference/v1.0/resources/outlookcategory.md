@@ -1,12 +1,13 @@
 ---
 title: outlookCategory-Ressourcentyp
 description: Stellt eine Kategorie dar, anhand der ein Benutzer Outlook-Elemente, z. B. Nachrichten und Ereignisse, gruppieren kann. Der Benutzer Kategorien in einer Masterliste definiert und kann eine oder mehrere der folgenden benutzerdefinierten anwenden
-ms.openlocfilehash: b466b3964a5f817bfafd3a8a79d40c58a4d7b17b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 08188480bc2b95ded0d1cb9ac033939a17fc92b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016809"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832767"
 ---
 # <a name="outlookcategory-resource-type"></a>outlookCategory-Ressourcentyp
 

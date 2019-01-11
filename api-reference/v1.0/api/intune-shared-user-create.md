@@ -2,12 +2,13 @@
 title: Benutzer erstellen
 description: Dient zum Erstellen eines neuen Benutzerobjekts.
 author: tfitzmac
-ms.openlocfilehash: 9d71aeca95c1a8b3efa676cca80652fb7fd124fa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3d654f287478b140f64f14a4814850a4c9d19ff7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331640"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866668"
 ---
 # <a name="create-user"></a>Benutzer erstellen
 
@@ -39,8 +40,8 @@ POST /users
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext eine JSON-Darstellung des Benutzerobjekts an.
@@ -49,7 +50,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner des Benutzers|
+|id|Zeichenfolge|Eindeutiger Bezeichner des Benutzers|
 |**Onboarding**|
 |deviceEnrollmentLimit|Int32|Der Grenzwert für die maximale Anzahl von Geräten, die der Benutzer registrieren kann. Zulässige Werte sind 5 oder 1000.|
 

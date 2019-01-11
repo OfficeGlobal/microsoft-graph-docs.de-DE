@@ -2,12 +2,13 @@
 title: deviceAndAppManagementRoleDefinitions auflisten
 description: Auflisten von Eigenschaften und Beziehungen der deviceAndAppManagementRoleDefinition-Objekte.
 author: tfitzmac
-ms.openlocfilehash: f975d906ed649636aaceed767f81c2753f783007
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 97919fd8a4fc61da2c54cdd53ebbdd19e20eafc3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309534"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806230"
 ---
 # <a name="list-deviceandappmanagementroledefinitions"></a>deviceAndAppManagementRoleDefinitions auflisten
 
@@ -35,8 +36,8 @@ GET /deviceManagement/roleDefinitions
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

@@ -2,12 +2,13 @@
 title: IosLobAppProvisioningConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines IosLobAppProvisioningConfiguration-Objekts.
 author: tfitzmac
-ms.openlocfilehash: df3cc8d27bb242998d513e98b8ce9b7ebfb24fd1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 637c1052f4097c3a33ff4c8fc4949ef48773ce68
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313321"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859318"
 ---
 # <a name="update-ioslobappprovisioningconfiguration"></a>IosLobAppProvisioningConfiguration aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [IosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) eine JSON-Darstellung.
@@ -47,14 +48,14 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |expirationDateTime|DateTimeOffset|Optionales Profil Ablaufdatum und-Zeit.|
-|payloadFileName|String|Der Dateiname (*.mobileprovision Nutzlast | *.xml)|
+|payloadFileName|Zeichenfolge|Der Dateiname (*.mobileprovision Nutzlast | *.xml)|
 |payload|Binär|Nutzlast (UTF8-codiertes Bytearray)|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts|
-|description|String|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration|
+|description|Zeichenfolge|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
-|displayName|String|Vom Administrator bereitgestellter Name der Gerätekonfiguration|
+|displayName|Zeichenfolge|Vom Administrator bereitgestellter Name der Gerätekonfiguration|
 |version|Int32|Version der Gerätekonfiguration.|
 
 

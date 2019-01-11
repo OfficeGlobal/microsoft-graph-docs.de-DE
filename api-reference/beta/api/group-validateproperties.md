@@ -1,12 +1,13 @@
 ---
 title: 'Gruppe: ValidateProperties'
 description: Überprüfen Sie, ob eine Office 365-Gruppe Display Name oder die e-Mail-Spitzname naming Richtlinien entspricht. Clients können mithilfe der API bestimmen, ob ein Anzeigename oder e-Mail-Spitzname ist gültig, bevor Sie versuchen, eine Office 365-Gruppe zu **Aktualisieren** . Verwenden Sie zum Überprüfen von Eigenschaften vor dem Erstellen einer Gruppe, die ValidateProperties-Funktion für Directory-Objekte.
-ms.openlocfilehash: d7f2767908e6cbf9116bec769a1abc32731e4758
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0ffdf44f687ad047d952e00c268239432244006d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27058945"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833901"
 ---
 # <a name="group-validateproperties"></a>Gruppe: ValidateProperties
 
@@ -47,8 +48,8 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|displayName|String| Der Anzeigename der Gruppe zu überprüfen. Die Eigenschaft ist nicht einzeln erforderlich. Mindestens eine Eigenschaft (DisplayName oder MailNickname) ist jedoch erforderlich. |
-|mailNickname|String| Die e-Mail-Spitzname der Gruppe zu überprüfen. Die Eigenschaft ist nicht einzeln erforderlich. Mindestens eine Eigenschaft (DisplayName oder MailNickname) ist jedoch erforderlich. |
+|displayName|Zeichenfolge| Der Anzeigename der Gruppe zu überprüfen. Die Eigenschaft ist nicht einzeln erforderlich. Mindestens eine Eigenschaft (DisplayName oder MailNickname) ist jedoch erforderlich. |
+|mailNickname|Zeichenfolge| Die e-Mail-Spitzname der Gruppe zu überprüfen. Die Eigenschaft ist nicht einzeln erforderlich. Mindestens eine Eigenschaft (DisplayName oder MailNickname) ist jedoch erforderlich. |
 |onBehalfOfUserId|Guid| Die Objekt-ID des Benutzers zum imitieren beim Aufrufen der API. Die Überprüfungsergebnisse werden für die OnBehalfOfUserId Attribute und Rollen. |
 
 ## <a name="response"></a>Antwort

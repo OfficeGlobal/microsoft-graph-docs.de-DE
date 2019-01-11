@@ -2,12 +2,13 @@
 title: Erstellen von „auditEvent“
 description: Diese Methode erstellt ein neues Objekt des Typs auditEvent.
 author: tfitzmac
-ms.openlocfilehash: 436a66b9652477b00ab40e4a874c9a385c9d1f7d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dcc7a84e22b86e4ec0f9e5d17eb05f75cbe83c6a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313615"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837884"
 ---
 # <a name="create-auditevent"></a>Erstellen von „auditEvent“
 
@@ -37,8 +38,8 @@ POST /deviceManagement/auditEvents
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs „auditEvent“ an.
@@ -47,7 +48,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |displayName|String|Anzeigename des Ereignisses|
 |componentName|String|Name der Komponente|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|AAD-Benutzer und -Anwendung, die dem Überwachungsereignis zugeordnet sind|

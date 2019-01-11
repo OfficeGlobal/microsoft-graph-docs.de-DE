@@ -1,12 +1,13 @@
 ---
 title: plannerPlanDetails-Ressourcentyp
 description: Die **plannerPlanDetails**-Ressource stellt die zusätzlichen Informationen zu einem Plan dar. Jedes plan-Objekt hat ein Detailobjekt.
-ms.openlocfilehash: eac0082c72e46101d8d02367f8c13aef5e921d17
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 59064093b485b6c82bd5b2e0b59ca1868e8517e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016588"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867739"
 ---
 # <a name="plannerplandetails-resource-type"></a>plannerPlanDetails-Ressourcentyp
 
@@ -25,7 +26,7 @@ Die **plannerPlanDetails**-Ressource stellt die zusätzlichen Informationen zu e
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|Ein Objekt, das die Beschreibungen der sechs Kategorien angibt, die den Aufgaben im Plan zugeordnet werden können.|
-|id|String| Schreibgeschützt. ID des die Details des Plans. Es ist eine 28 Zeichen lang und Groß-/Kleinschreibung beachtet. [Format Validierung](planner-identifiers-disclaimer.md) erfolgt für den Dienst.|
+|id|Zeichenfolge| Schreibgeschützt. ID des die Details des Plans. Es ist eine 28 Zeichen lang und Groß-/Kleinschreibung beachtet. [Format Validierung](planner-identifiers-disclaimer.md) erfolgt für den Dienst.|
 |sharedWith|[plannerUserIds](planneruserids.md)|Der Satz von Benutzer-IDs, für die dieser Plan freigegeben ist. Wenn Sie Office 365 Gruppen nutzen, verwenden Sie die Gruppen-API zum Verwalten von Gruppenmitgliedschaften, um den Plan der [Gruppe](group.md) freizugeben. Sie können auch vorhandene Mitglieder der Gruppe zu dieser Sammlung hinzufügen, dies ist jedoch nicht erforderlich, damit sie auf den im Besitz der Gruppe befindlichen Plan zugreifen können. |
 
 ## <a name="relationships"></a>Beziehungen

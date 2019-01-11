@@ -1,12 +1,13 @@
 ---
 title: Ereignis erstellen
 description: Erstellen eines Ereignisses im Standardkalender des Benutzers oder in einem angegebenen Kalender.
-ms.openlocfilehash: a6c95c540529bcf315f80531619a94d72df564f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 75173203380f133050be70ef8a1a74bd47483164
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27063227"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866535"
 ---
 # <a name="create-event"></a>Ereignis erstellen
 
@@ -59,7 +60,7 @@ POST /me/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendars/{id}/events
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:-----------|:------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json. Erforderlich.   |
@@ -582,7 +583,7 @@ Content-type: application/json
 
 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](/graph/extensibility-open-users)

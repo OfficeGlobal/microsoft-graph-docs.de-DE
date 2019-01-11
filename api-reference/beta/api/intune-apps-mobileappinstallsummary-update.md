@@ -2,12 +2,13 @@
 title: MobileAppInstallSummary aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines MobileAppInstallSummary-Objekts.
 author: tfitzmac
-ms.openlocfilehash: 94dc7fa5023d26de91b4d64efda27332dd51de63
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 19bd1e61359c5d2bdaff6ee87e807bae7dba0f05
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315638"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864799"
 ---
 # <a name="update-mobileappinstallsummary"></a>MobileAppInstallSummary aktualisieren
 
@@ -37,8 +38,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung für das Objekt [MobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) eine JSON-Darstellung.
@@ -47,7 +48,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |installedDeviceCount|Int32|Anzahl der Geräte, die diese app erfolgreich installiert haben.|
 |failedDeviceCount|Int32|Anzahl der Geräte, die fehlgeschlagen sind, um diese app zu installieren.|
 |notApplicableDeviceCount|Int32|Anzahl der Geräte, die für diese app nicht zutreffen.|

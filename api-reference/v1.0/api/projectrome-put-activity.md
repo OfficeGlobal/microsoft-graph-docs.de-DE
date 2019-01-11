@@ -1,12 +1,13 @@
 ---
 title: Aktivität erstellen oder ersetzen
 description: Erstellen Sie ein neues, oder Ersetzen Sie eine vorhandene Benutzeraktivität für Ihre app. Wenn Sie eine Benutzeraktivität und die zugehörigen **HistoryItems** in einer Anforderung erstellen möchten, können Sie die Tiefe einfügen.
-ms.openlocfilehash: fb1efa1cb9484b5f4229883ebe2daf271598b8a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: faaebd5e3e88cca7c442be46505aac434111f148
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27018638"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812082"
 ---
 # <a name="create-or-replace-an-activity"></a>Aktivität erstellen oder ersetzen
 
