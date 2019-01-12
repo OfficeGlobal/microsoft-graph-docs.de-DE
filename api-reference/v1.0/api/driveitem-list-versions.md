@@ -2,32 +2,33 @@
 title: Auflisten von Versionen einer DriveItem
 description: OneDrive und SharePoint können auch so konfiguriert werden, dass für Dateien ein Verlauf beibehalten wird.
 localization_priority: Normal
-ms.openlocfilehash: 6093371e6ef461b82fd2b5c92b22da7333f7e342
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: fa25734967aca0ad5c7022f147ca243530f1ac3f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855489"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932063"
 ---
-# <a name="listing-versions-of-a-driveitem"></a><span data-ttu-id="29712-103">Auflisten von Versionen einer DriveItem</span><span class="sxs-lookup"><span data-stu-id="29712-103">Listing versions of a DriveItem</span></span>
+# <a name="listing-versions-of-a-driveitem"></a><span data-ttu-id="c1e86-103">Auflisten von Versionen einer DriveItem</span><span class="sxs-lookup"><span data-stu-id="c1e86-103">Listing versions of a DriveItem</span></span>
 
-<span data-ttu-id="29712-104">OneDrive und SharePoint können auch so konfiguriert werden, dass für Dateien ein Verlauf beibehalten wird.</span><span class="sxs-lookup"><span data-stu-id="29712-104">OneDrive and SharePoint can be configured to retain the history for files.</span></span>
-<span data-ttu-id="29712-105">Je nach Dienst und Konfiguration kann für jede Änderung beim Speichern der Datei eine neue Version erstellt werden, manuell oder nie.</span><span class="sxs-lookup"><span data-stu-id="29712-105">Depending on the service and configuration, a new version can be created for each edit, each time the file is saved, manually, or never.</span></span>
+<span data-ttu-id="c1e86-104">OneDrive und SharePoint können auch so konfiguriert werden, dass für Dateien ein Verlauf beibehalten wird.</span><span class="sxs-lookup"><span data-stu-id="c1e86-104">OneDrive and SharePoint can be configured to retain the history for files.</span></span>
+<span data-ttu-id="c1e86-105">Je nach Dienst und Konfiguration kann für jede Änderung beim Speichern der Datei eine neue Version erstellt werden, manuell oder nie.</span><span class="sxs-lookup"><span data-stu-id="c1e86-105">Depending on the service and configuration, a new version can be created for each edit, each time the file is saved, manually, or never.</span></span>
 
-<span data-ttu-id="29712-106">Vorherige Versionen eines Dokuments können je nach Administratoreinstellungen für einen begrenzten Zeitraum beibehalten werden, diese können pro Benutzer oder Speicherort eindeutig sein.</span><span class="sxs-lookup"><span data-stu-id="29712-106">Previous versions of a document may be retained for a finite period of time depending on admin settings which may be unique per user or location.</span></span>
+<span data-ttu-id="c1e86-106">Vorherige Versionen eines Dokuments können je nach Administratoreinstellungen für einen begrenzten Zeitraum beibehalten werden, diese können pro Benutzer oder Speicherort eindeutig sein.</span><span class="sxs-lookup"><span data-stu-id="c1e86-106">Previous versions of a document may be retained for a finite period of time depending on admin settings which may be unique per user or location.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="29712-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="29712-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c1e86-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="c1e86-107">Permissions</span></span>
 
-<span data-ttu-id="29712-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="29712-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c1e86-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c1e86-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="29712-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="29712-110">Permission type</span></span>      | <span data-ttu-id="29712-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="29712-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c1e86-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c1e86-110">Permission type</span></span>      | <span data-ttu-id="c1e86-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c1e86-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="29712-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="29712-112">Delegated (work or school account)</span></span> | <span data-ttu-id="29712-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29712-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="29712-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="29712-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="29712-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29712-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="29712-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="29712-116">Application</span></span> | <span data-ttu-id="29712-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29712-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="c1e86-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c1e86-112">Delegated (work or school account)</span></span> | <span data-ttu-id="c1e86-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c1e86-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c1e86-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c1e86-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c1e86-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c1e86-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c1e86-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c1e86-116">Application</span></span> | <span data-ttu-id="c1e86-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c1e86-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="29712-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="29712-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c1e86-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c1e86-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored"} -->
 
@@ -39,16 +40,16 @@ GET /sites/{site-id}/drive/items/{item-id}/versions
 GET /users/{user-id}/drive/items/{item-id}/versions
 ```
 
-## <a name="response"></a><span data-ttu-id="29712-119">Antwort</span><span class="sxs-lookup"><span data-stu-id="29712-119">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c1e86-119">Antwort</span><span class="sxs-lookup"><span data-stu-id="c1e86-119">Response</span></span>
 
-<span data-ttu-id="29712-120">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [DriveItemVersion](../resources/driveitemversion.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="29712-120">If successful, this method returns a `200 OK` response code and collection of [DriveItemVersion](../resources/driveitemversion.md) objects in the response body.</span></span>
+<span data-ttu-id="c1e86-120">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [DriveItemVersion](../resources/driveitemversion.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c1e86-120">If successful, this method returns a `200 OK` response code and collection of [DriveItemVersion](../resources/driveitemversion.md) objects in the response body.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="29712-121">Beispiel</span><span class="sxs-lookup"><span data-stu-id="29712-121">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c1e86-121">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c1e86-121">Example</span></span>
 
-<span data-ttu-id="29712-122">In diesem Beispiel werden die Versionen einer Datei auf dem Laufwerk des aktuellen Benutzers abgerufen.</span><span class="sxs-lookup"><span data-stu-id="29712-122">This example retrieves the versions of a file in the current user's drive.</span></span>
+<span data-ttu-id="c1e86-122">In diesem Beispiel werden die Versionen einer Datei auf dem Laufwerk des aktuellen Benutzers abgerufen.</span><span class="sxs-lookup"><span data-stu-id="c1e86-122">This example retrieves the versions of a file in the current user's drive.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="29712-123">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="29712-123">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="c1e86-123">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c1e86-123">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read", "tags": "service.graph" } -->
 
@@ -56,9 +57,9 @@ GET /users/{user-id}/drive/items/{item-id}/versions
 GET /me/drive/items/{item-id}/versions
 ```
 
-### <a name="response"></a><span data-ttu-id="29712-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="29712-124">Response</span></span>
+### <a name="response"></a><span data-ttu-id="c1e86-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="c1e86-124">Response</span></span>
 
-<span data-ttu-id="29712-125">Dadurch wird eine Sammlung von Versionen zurückgegeben:</span><span class="sxs-lookup"><span data-stu-id="29712-125">This returns a collection of versions:</span></span>
+<span data-ttu-id="c1e86-125">Dadurch wird eine Sammlung von Versionen zurückgegeben:</span><span class="sxs-lookup"><span data-stu-id="c1e86-125">This returns a collection of versions:</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItemVersion)", "truncated": true } -->
 
@@ -106,11 +107,11 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="29712-126">Hinweise</span><span class="sxs-lookup"><span data-stu-id="29712-126">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c1e86-126">Hinweise</span><span class="sxs-lookup"><span data-stu-id="c1e86-126">Remarks</span></span>
 
-<span data-ttu-id="29712-127">OneDrive behält nicht die kompletten Metadaten für vorherige Versionen einer Datei bei.</span><span class="sxs-lookup"><span data-stu-id="29712-127">OneDrive does not preserve the complete metadata for previous versions of a file.</span></span>
+<span data-ttu-id="c1e86-127">OneDrive behält nicht die kompletten Metadaten für vorherige Versionen einer Datei bei.</span><span class="sxs-lookup"><span data-stu-id="c1e86-127">OneDrive does not preserve the complete metadata for previous versions of a file.</span></span>
 
-<span data-ttu-id="29712-128">Wenn Ihre App die Liste verfügbarer Versionen für eine Datei abruft, wird eine [DriveItemVersion](../resources/driveitemversion.md)-Ressource zurückgegeben, welche die verfügbaren Informationen zu der jeweiligen Version bereitstellt.</span><span class="sxs-lookup"><span data-stu-id="29712-128">When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.</span></span>
+<span data-ttu-id="c1e86-128">Wenn Ihre App die Liste verfügbarer Versionen für eine Datei abruft, wird eine [DriveItemVersion](../resources/driveitemversion.md)-Ressource zurückgegeben, welche die verfügbaren Informationen zu der jeweiligen Version bereitstellt.</span><span class="sxs-lookup"><span data-stu-id="c1e86-128">When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.</span></span>
 
 
 <!-- {

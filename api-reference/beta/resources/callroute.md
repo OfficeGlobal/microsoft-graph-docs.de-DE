@@ -3,30 +3,31 @@ title: Ressourcentyp callRoute
 description: Der Typ des CallRoute.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: e417a7e814b5a2a80da1fa9cd7a551f82e0c37db
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: fd131afcdb5581a719107d9fd3a9a597979d6f21
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815085"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933071"
 ---
-# <a name="callroute-resource-type"></a><span data-ttu-id="981e1-103">Ressourcentyp callRoute</span><span class="sxs-lookup"><span data-stu-id="981e1-103">callRoute resource type</span></span>
+# <a name="callroute-resource-type"></a><span data-ttu-id="f193e-103">Ressourcentyp callRoute</span><span class="sxs-lookup"><span data-stu-id="f193e-103">callRoute resource type</span></span>
 
-> <span data-ttu-id="981e1-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="981e1-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="981e1-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="981e1-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f193e-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="f193e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f193e-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="f193e-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="981e1-106">Der Typ des CallRoute.</span><span class="sxs-lookup"><span data-stu-id="981e1-106">The callRoute type.</span></span>
+<span data-ttu-id="f193e-106">Der Typ des CallRoute.</span><span class="sxs-lookup"><span data-stu-id="f193e-106">The callRoute type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="981e1-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="981e1-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f193e-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f193e-107">Properties</span></span>
 
-| <span data-ttu-id="981e1-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="981e1-108">Property</span></span>            | <span data-ttu-id="981e1-109">Typ</span><span class="sxs-lookup"><span data-stu-id="981e1-109">Type</span></span>                          | <span data-ttu-id="981e1-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="981e1-110">Description</span></span>                                                  |
+| <span data-ttu-id="f193e-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="f193e-108">Property</span></span>            | <span data-ttu-id="f193e-109">Typ</span><span class="sxs-lookup"><span data-stu-id="f193e-109">Type</span></span>                          | <span data-ttu-id="f193e-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f193e-110">Description</span></span>                                                  |
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
-| <span data-ttu-id="981e1-111">endgültige</span><span class="sxs-lookup"><span data-stu-id="981e1-111">final</span></span>               | [<span data-ttu-id="981e1-112">identitySet</span><span class="sxs-lookup"><span data-stu-id="981e1-112">identitySet</span></span>](identityset.md) | <span data-ttu-id="981e1-113">Die Identität, die in die Unterhaltung aufgelöst wurde.</span><span class="sxs-lookup"><span data-stu-id="981e1-113">The identity that was resolved to in the call.</span></span>               |
-| <span data-ttu-id="981e1-114">Original</span><span class="sxs-lookup"><span data-stu-id="981e1-114">original</span></span>            | [<span data-ttu-id="981e1-115">identitySet</span><span class="sxs-lookup"><span data-stu-id="981e1-115">identitySet</span></span>](identityset.md) | <span data-ttu-id="981e1-116">Die Identität, die ursprünglich in den Anruf verwendet wurde.</span><span class="sxs-lookup"><span data-stu-id="981e1-116">The identity that was originally used in the call.</span></span>           |
-| <span data-ttu-id="981e1-117">routingType</span><span class="sxs-lookup"><span data-stu-id="981e1-117">routingType</span></span>         | <span data-ttu-id="981e1-118">String</span><span class="sxs-lookup"><span data-stu-id="981e1-118">String</span></span>                        | <span data-ttu-id="981e1-119">Mögliche Werte sind: `forwarded`, `lookup` und `selfFork`.</span><span class="sxs-lookup"><span data-stu-id="981e1-119">Possible values are: `forwarded`, `lookup`, `selfFork`.</span></span>  |
+| <span data-ttu-id="f193e-111">endgültige</span><span class="sxs-lookup"><span data-stu-id="f193e-111">final</span></span>               | [<span data-ttu-id="f193e-112">identitySet</span><span class="sxs-lookup"><span data-stu-id="f193e-112">identitySet</span></span>](identityset.md) | <span data-ttu-id="f193e-113">Die Identität, die in die Unterhaltung aufgelöst wurde.</span><span class="sxs-lookup"><span data-stu-id="f193e-113">The identity that was resolved to in the call.</span></span>               |
+| <span data-ttu-id="f193e-114">Original</span><span class="sxs-lookup"><span data-stu-id="f193e-114">original</span></span>            | [<span data-ttu-id="f193e-115">identitySet</span><span class="sxs-lookup"><span data-stu-id="f193e-115">identitySet</span></span>](identityset.md) | <span data-ttu-id="f193e-116">Die Identität, die ursprünglich in den Anruf verwendet wurde.</span><span class="sxs-lookup"><span data-stu-id="f193e-116">The identity that was originally used in the call.</span></span>           |
+| <span data-ttu-id="f193e-117">routingType</span><span class="sxs-lookup"><span data-stu-id="f193e-117">routingType</span></span>         | <span data-ttu-id="f193e-118">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="f193e-118">String</span></span>                        | <span data-ttu-id="f193e-119">Mögliche Werte sind: `forwarded`, `lookup` und `selfFork`.</span><span class="sxs-lookup"><span data-stu-id="f193e-119">Possible values are: `forwarded`, `lookup`, `selfFork`.</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="981e1-120">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="981e1-120">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f193e-120">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="f193e-120">JSON representation</span></span>
 
-<span data-ttu-id="981e1-121">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="981e1-121">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f193e-121">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="f193e-121">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

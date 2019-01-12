@@ -3,28 +3,29 @@ title: Auflisten von „organization“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs organization auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6fb4fe8c27695e037320ef92f69c4a0b3809f512
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7cf3777c5d072e9f6410208090361aff30bb3ce4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870931"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931237"
 ---
-# <a name="list-organizations"></a><span data-ttu-id="cdb01-103">Auflisten von „organization“</span><span class="sxs-lookup"><span data-stu-id="cdb01-103">List organizations</span></span>
+# <a name="list-organizations"></a><span data-ttu-id="c5c88-103">Auflisten von „organization“</span><span class="sxs-lookup"><span data-stu-id="c5c88-103">List organizations</span></span>
 
-> <span data-ttu-id="cdb01-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="cdb01-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="c5c88-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="c5c88-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="cdb01-105">Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [organization](../resources/intune-onboarding-organization.md) auf.</span><span class="sxs-lookup"><span data-stu-id="cdb01-105">List properties and relationships of the [organization](../resources/intune-onboarding-organization.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="cdb01-106">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="cdb01-106">Prerequisites</span></span>
-<span data-ttu-id="cdb01-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cdb01-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c5c88-105">Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [organization](../resources/intune-onboarding-organization.md) auf.</span><span class="sxs-lookup"><span data-stu-id="c5c88-105">List properties and relationships of the [organization](../resources/intune-onboarding-organization.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="c5c88-106">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="c5c88-106">Prerequisites</span></span>
+<span data-ttu-id="c5c88-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c5c88-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cdb01-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="cdb01-109">Permission type</span></span>|<span data-ttu-id="cdb01-110">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="cdb01-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="c5c88-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c5c88-109">Permission type</span></span>|<span data-ttu-id="c5c88-110">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c5c88-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="cdb01-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="cdb01-111">Delegated (work or school account)</span></span>|<span data-ttu-id="cdb01-112">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="cdb01-112">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
-|<span data-ttu-id="cdb01-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="cdb01-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cdb01-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="cdb01-114">Not supported.</span></span>|
-|<span data-ttu-id="cdb01-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="cdb01-115">Application</span></span>|<span data-ttu-id="cdb01-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="cdb01-116">Not supported.</span></span>|
+|<span data-ttu-id="c5c88-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c5c88-111">Delegated (work or school account)</span></span>|<span data-ttu-id="c5c88-112">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="c5c88-112">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="c5c88-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c5c88-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c5c88-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c5c88-114">Not supported.</span></span>|
+|<span data-ttu-id="c5c88-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c5c88-115">Application</span></span>|<span data-ttu-id="c5c88-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c5c88-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="cdb01-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="cdb01-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c5c88-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c5c88-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -33,27 +34,27 @@ ms.locfileid: "27870931"
 GET /organization
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="cdb01-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="cdb01-118">Request headers</span></span>
-|<span data-ttu-id="cdb01-119">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="cdb01-119">Header</span></span>|<span data-ttu-id="cdb01-120">Wert</span><span class="sxs-lookup"><span data-stu-id="cdb01-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c5c88-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="c5c88-118">Request headers</span></span>
+|<span data-ttu-id="c5c88-119">Header</span><span class="sxs-lookup"><span data-stu-id="c5c88-119">Header</span></span>|<span data-ttu-id="c5c88-120">Wert</span><span class="sxs-lookup"><span data-stu-id="c5c88-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="cdb01-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="cdb01-121">Authorization</span></span>|<span data-ttu-id="cdb01-122">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="cdb01-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="cdb01-123">Annehmen</span><span class="sxs-lookup"><span data-stu-id="cdb01-123">Accept</span></span>|<span data-ttu-id="cdb01-124">application/json</span><span class="sxs-lookup"><span data-stu-id="cdb01-124">application/json</span></span>|
+|<span data-ttu-id="c5c88-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="c5c88-121">Authorization</span></span>|<span data-ttu-id="c5c88-122">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="c5c88-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="c5c88-123">Annehmen</span><span class="sxs-lookup"><span data-stu-id="c5c88-123">Accept</span></span>|<span data-ttu-id="c5c88-124">application/json</span><span class="sxs-lookup"><span data-stu-id="c5c88-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="cdb01-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="cdb01-125">Request body</span></span>
-<span data-ttu-id="cdb01-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="cdb01-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c5c88-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c5c88-125">Request body</span></span>
+<span data-ttu-id="c5c88-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="c5c88-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cdb01-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="cdb01-127">Response</span></span>
-<span data-ttu-id="cdb01-128">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und eine Collection von Objekten des Typs [organization](../resources/intune-onboarding-organization.md) im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="cdb01-128">If successful, this method returns a `200 OK` response code and a collection of [organization](../resources/intune-onboarding-organization.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c5c88-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="c5c88-127">Response</span></span>
+<span data-ttu-id="c5c88-128">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und eine Collection von Objekten des Typs [organization](../resources/intune-onboarding-organization.md) im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="c5c88-128">If successful, this method returns a `200 OK` response code and a collection of [organization](../resources/intune-onboarding-organization.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cdb01-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="cdb01-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="cdb01-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="cdb01-130">Request</span></span>
-<span data-ttu-id="cdb01-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="cdb01-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c5c88-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c5c88-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="c5c88-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c5c88-130">Request</span></span>
+<span data-ttu-id="c5c88-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="c5c88-131">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/organization
 ```
 
-### <a name="response"></a><span data-ttu-id="cdb01-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="cdb01-132">Response</span></span>
-<span data-ttu-id="cdb01-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="cdb01-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="c5c88-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="c5c88-132">Response</span></span>
+<span data-ttu-id="c5c88-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c5c88-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
