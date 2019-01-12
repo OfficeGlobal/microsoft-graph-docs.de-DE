@@ -3,30 +3,31 @@ title: GetLicensesForApp-Funktion
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a568350cacac5ca640857aeaa8fb6f6d91e5b3fc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b5d12b905e698e511a6dc05bf35fcc898d0a51bb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831472"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978403"
 ---
-# <a name="getlicensesforapp-function"></a><span data-ttu-id="9c5d1-103">GetLicensesForApp-Funktion</span><span class="sxs-lookup"><span data-stu-id="9c5d1-103">getLicensesForApp function</span></span>
+# <a name="getlicensesforapp-function"></a><span data-ttu-id="012b2-103">GetLicensesForApp-Funktion</span><span class="sxs-lookup"><span data-stu-id="012b2-103">getLicensesForApp function</span></span>
 
-> <span data-ttu-id="9c5d1-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="9c5d1-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9c5d1-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="9c5d1-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="012b2-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="012b2-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="012b2-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="012b2-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="9c5d1-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="9c5d1-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="012b2-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="012b2-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="9c5d1-107">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="9c5d1-107">Not yet documented</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="9c5d1-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="9c5d1-108">Prerequisites</span></span>
-<span data-ttu-id="9c5d1-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9c5d1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="012b2-107">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="012b2-107">Not yet documented</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="012b2-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="012b2-108">Prerequisites</span></span>
+<span data-ttu-id="012b2-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="012b2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9c5d1-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="9c5d1-111">Permission type</span></span>|<span data-ttu-id="9c5d1-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="9c5d1-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="012b2-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="012b2-111">Permission type</span></span>|<span data-ttu-id="012b2-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="012b2-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9c5d1-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="9c5d1-113">Delegated (work or school account)</span></span>|<span data-ttu-id="9c5d1-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="9c5d1-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
-|<span data-ttu-id="9c5d1-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="9c5d1-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9c5d1-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="9c5d1-116">Not supported.</span></span>|
-|<span data-ttu-id="9c5d1-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="9c5d1-117">Application</span></span>|<span data-ttu-id="9c5d1-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="9c5d1-118">Not supported.</span></span>|
+|<span data-ttu-id="012b2-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="012b2-113">Delegated (work or school account)</span></span>|<span data-ttu-id="012b2-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="012b2-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="012b2-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="012b2-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="012b2-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="012b2-116">Not supported.</span></span>|
+|<span data-ttu-id="012b2-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="012b2-117">Application</span></span>|<span data-ttu-id="012b2-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="012b2-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9c5d1-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="9c5d1-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="012b2-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="012b2-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,34 +36,34 @@ ms.locfileid: "27831472"
 GET /deviceAppManagement/vppTokens/getLicensesForApp
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9c5d1-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="9c5d1-120">Request headers</span></span>
-|<span data-ttu-id="9c5d1-121">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="9c5d1-121">Header</span></span>|<span data-ttu-id="9c5d1-122">Wert</span><span class="sxs-lookup"><span data-stu-id="9c5d1-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="012b2-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="012b2-120">Request headers</span></span>
+|<span data-ttu-id="012b2-121">Header</span><span class="sxs-lookup"><span data-stu-id="012b2-121">Header</span></span>|<span data-ttu-id="012b2-122">Wert</span><span class="sxs-lookup"><span data-stu-id="012b2-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9c5d1-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="9c5d1-123">Authorization</span></span>|<span data-ttu-id="9c5d1-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="9c5d1-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9c5d1-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="9c5d1-125">Accept</span></span>|<span data-ttu-id="9c5d1-126">application/json</span><span class="sxs-lookup"><span data-stu-id="9c5d1-126">application/json</span></span>|
+|<span data-ttu-id="012b2-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="012b2-123">Authorization</span></span>|<span data-ttu-id="012b2-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="012b2-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="012b2-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="012b2-125">Accept</span></span>|<span data-ttu-id="012b2-126">application/json</span><span class="sxs-lookup"><span data-stu-id="012b2-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9c5d1-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="9c5d1-127">Request body</span></span>
-<span data-ttu-id="9c5d1-128">Geben Sie in der Anforderungs-URL die folgenden Abfrageparameter mit Werten an.</span><span class="sxs-lookup"><span data-stu-id="9c5d1-128">In the request URL, provide the following query parameters with values.</span></span>
-<span data-ttu-id="9c5d1-129">In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="9c5d1-129">The following table shows the parameters that can be used with this function.</span></span>
+## <a name="request-body"></a><span data-ttu-id="012b2-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="012b2-127">Request body</span></span>
+<span data-ttu-id="012b2-128">Geben Sie in der Anforderungs-URL die folgenden Abfrageparameter mit Werten an.</span><span class="sxs-lookup"><span data-stu-id="012b2-128">In the request URL, provide the following query parameters with values.</span></span>
+<span data-ttu-id="012b2-129">In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="012b2-129">The following table shows the parameters that can be used with this function.</span></span>
 
-|<span data-ttu-id="9c5d1-130">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="9c5d1-130">Property</span></span>|<span data-ttu-id="9c5d1-131">Typ</span><span class="sxs-lookup"><span data-stu-id="9c5d1-131">Type</span></span>|<span data-ttu-id="9c5d1-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="9c5d1-132">Description</span></span>|
+|<span data-ttu-id="012b2-130">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="012b2-130">Property</span></span>|<span data-ttu-id="012b2-131">Typ</span><span class="sxs-lookup"><span data-stu-id="012b2-131">Type</span></span>|<span data-ttu-id="012b2-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="012b2-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9c5d1-133">bundleId</span><span class="sxs-lookup"><span data-stu-id="9c5d1-133">bundleId</span></span>|<span data-ttu-id="9c5d1-134">String</span><span class="sxs-lookup"><span data-stu-id="9c5d1-134">String</span></span>|<span data-ttu-id="9c5d1-135">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="9c5d1-135">Not yet documented</span></span>|
+|<span data-ttu-id="012b2-133">bundleId</span><span class="sxs-lookup"><span data-stu-id="012b2-133">bundleId</span></span>|<span data-ttu-id="012b2-134">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="012b2-134">String</span></span>|<span data-ttu-id="012b2-135">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="012b2-135">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="9c5d1-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="9c5d1-136">Response</span></span>
-<span data-ttu-id="9c5d1-137">Wenn erfolgreich, diese Funktion gibt eine `200 OK` Antwortcode und eine [VppTokenLicenseSummary](../resources/intune-onboarding-vpptokenlicensesummary.md) -Auflistung im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="9c5d1-137">If successful, this function returns a `200 OK` response code and a [vppTokenLicenseSummary](../resources/intune-onboarding-vpptokenlicensesummary.md) collection in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="012b2-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="012b2-136">Response</span></span>
+<span data-ttu-id="012b2-137">Wenn erfolgreich, diese Funktion gibt eine `200 OK` Antwortcode und eine [VppTokenLicenseSummary](../resources/intune-onboarding-vpptokenlicensesummary.md) -Auflistung im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="012b2-137">If successful, this function returns a `200 OK` response code and a [vppTokenLicenseSummary](../resources/intune-onboarding-vpptokenlicensesummary.md) collection in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9c5d1-138">Beispiel</span><span class="sxs-lookup"><span data-stu-id="9c5d1-138">Example</span></span>
-### <a name="request"></a><span data-ttu-id="9c5d1-139">Anforderung</span><span class="sxs-lookup"><span data-stu-id="9c5d1-139">Request</span></span>
-<span data-ttu-id="9c5d1-140">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="9c5d1-140">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="012b2-138">Beispiel</span><span class="sxs-lookup"><span data-stu-id="012b2-138">Example</span></span>
+### <a name="request"></a><span data-ttu-id="012b2-139">Anforderung</span><span class="sxs-lookup"><span data-stu-id="012b2-139">Request</span></span>
+<span data-ttu-id="012b2-140">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="012b2-140">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/vppTokens/getLicensesForApp(bundleId='parameterValue')
 ```
 
-### <a name="response"></a><span data-ttu-id="9c5d1-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="9c5d1-141">Response</span></span>
-<span data-ttu-id="9c5d1-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="9c5d1-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="012b2-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="012b2-141">Response</span></span>
+<span data-ttu-id="012b2-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="012b2-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

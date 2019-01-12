@@ -3,53 +3,54 @@ title: ChartTitle aktualisieren
 description: Dient zum Aktualisieren der Eigenschaften des ChartTitle-Objekts.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: dbd940a51f8987f6a2d3b7a45b163aca23051386
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 4d0beb65acb208d6f04d495a98b3c48a046b29ba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813608"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980804"
 ---
-# <a name="update-charttitle"></a><span data-ttu-id="7481b-103">ChartTitle aktualisieren</span><span class="sxs-lookup"><span data-stu-id="7481b-103">Update charttitle</span></span>
+# <a name="update-charttitle"></a><span data-ttu-id="69e97-103">ChartTitle aktualisieren</span><span class="sxs-lookup"><span data-stu-id="69e97-103">Update charttitle</span></span>
 
-> <span data-ttu-id="7481b-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="7481b-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="7481b-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="7481b-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="69e97-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="69e97-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="69e97-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="69e97-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="7481b-106">Dient zum Aktualisieren der Eigenschaften des ChartTitle-Objekts.</span><span class="sxs-lookup"><span data-stu-id="7481b-106">Update the properties of charttitle object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="7481b-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="7481b-107">Permissions</span></span>
-<span data-ttu-id="7481b-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7481b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="69e97-106">Dient zum Aktualisieren der Eigenschaften des ChartTitle-Objekts.</span><span class="sxs-lookup"><span data-stu-id="69e97-106">Update the properties of charttitle object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="69e97-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="69e97-107">Permissions</span></span>
+<span data-ttu-id="69e97-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="69e97-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7481b-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="7481b-110">Permission type</span></span>      | <span data-ttu-id="7481b-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="7481b-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="69e97-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="69e97-110">Permission type</span></span>      | <span data-ttu-id="69e97-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="69e97-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7481b-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="7481b-112">Delegated (work or school account)</span></span> | <span data-ttu-id="7481b-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7481b-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="7481b-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="7481b-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7481b-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7481b-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="7481b-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="7481b-116">Application</span></span> | <span data-ttu-id="7481b-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="7481b-117">Not supported.</span></span> |
+|<span data-ttu-id="69e97-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="69e97-112">Delegated (work or school account)</span></span> | <span data-ttu-id="69e97-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="69e97-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="69e97-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="69e97-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="69e97-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="69e97-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="69e97-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="69e97-116">Application</span></span> | <span data-ttu-id="69e97-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="69e97-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7481b-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="7481b-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="69e97-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="69e97-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets/{id|name}/charts(<name>)/title
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="7481b-119">Optionale Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="7481b-119">Optional request headers</span></span>
-| <span data-ttu-id="7481b-120">Name</span><span class="sxs-lookup"><span data-stu-id="7481b-120">Name</span></span>       | <span data-ttu-id="7481b-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7481b-121">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="69e97-119">Optionale Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="69e97-119">Optional request headers</span></span>
+| <span data-ttu-id="69e97-120">Name</span><span class="sxs-lookup"><span data-stu-id="69e97-120">Name</span></span>       | <span data-ttu-id="69e97-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="69e97-121">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="7481b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="7481b-122">Authorization</span></span>  | <span data-ttu-id="7481b-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="7481b-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7481b-125">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="7481b-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="7481b-p104">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="7481b-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="69e97-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="69e97-122">Authorization</span></span>  | <span data-ttu-id="69e97-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="69e97-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="69e97-125">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="69e97-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="69e97-p104">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="69e97-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7481b-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="7481b-128">Request body</span></span>
-<span data-ttu-id="7481b-p105">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.</span><span class="sxs-lookup"><span data-stu-id="7481b-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="69e97-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="69e97-128">Request body</span></span>
+<span data-ttu-id="69e97-p105">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.</span><span class="sxs-lookup"><span data-stu-id="69e97-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="7481b-132">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="7481b-132">Property</span></span>     | <span data-ttu-id="7481b-133">Typ</span><span class="sxs-lookup"><span data-stu-id="7481b-133">Type</span></span>   |<span data-ttu-id="7481b-134">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7481b-134">Description</span></span>|
+| <span data-ttu-id="69e97-132">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="69e97-132">Property</span></span>     | <span data-ttu-id="69e97-133">Typ</span><span class="sxs-lookup"><span data-stu-id="69e97-133">Type</span></span>   |<span data-ttu-id="69e97-134">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="69e97-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7481b-135">Overlay</span><span class="sxs-lookup"><span data-stu-id="7481b-135">overlay</span></span>|<span data-ttu-id="7481b-136">boolean</span><span class="sxs-lookup"><span data-stu-id="7481b-136">boolean</span></span>|<span data-ttu-id="7481b-137">Boolescher Wert, der angibt, ob der Diagrammtitel das Diagramm überlagert.</span><span class="sxs-lookup"><span data-stu-id="7481b-137">Boolean value representing if the chart title will overlay the chart or not.</span></span>|
-|<span data-ttu-id="7481b-138">text</span><span class="sxs-lookup"><span data-stu-id="7481b-138">text</span></span>|<span data-ttu-id="7481b-139">string</span><span class="sxs-lookup"><span data-stu-id="7481b-139">string</span></span>|<span data-ttu-id="7481b-140">Stellt den Titeltext eines Diagramms dar.</span><span class="sxs-lookup"><span data-stu-id="7481b-140">Represents the title text of a chart.</span></span>|
-|<span data-ttu-id="7481b-141">visible</span><span class="sxs-lookup"><span data-stu-id="7481b-141">visible</span></span>|<span data-ttu-id="7481b-142">boolean</span><span class="sxs-lookup"><span data-stu-id="7481b-142">boolean</span></span>|<span data-ttu-id="7481b-143">Ein boolescher Wert, der die Sichtbarkeit eines Diagrammtitelobjekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="7481b-143">A boolean value the represents the visibility of a chart title object.</span></span>|
+|<span data-ttu-id="69e97-135">Overlay</span><span class="sxs-lookup"><span data-stu-id="69e97-135">overlay</span></span>|<span data-ttu-id="69e97-136">boolean</span><span class="sxs-lookup"><span data-stu-id="69e97-136">boolean</span></span>|<span data-ttu-id="69e97-137">Boolescher Wert, der angibt, ob der Diagrammtitel das Diagramm überlagert.</span><span class="sxs-lookup"><span data-stu-id="69e97-137">Boolean value representing if the chart title will overlay the chart or not.</span></span>|
+|<span data-ttu-id="69e97-138">text</span><span class="sxs-lookup"><span data-stu-id="69e97-138">text</span></span>|<span data-ttu-id="69e97-139">string</span><span class="sxs-lookup"><span data-stu-id="69e97-139">string</span></span>|<span data-ttu-id="69e97-140">Stellt den Titeltext eines Diagramms dar.</span><span class="sxs-lookup"><span data-stu-id="69e97-140">Represents the title text of a chart.</span></span>|
+|<span data-ttu-id="69e97-141">visible</span><span class="sxs-lookup"><span data-stu-id="69e97-141">visible</span></span>|<span data-ttu-id="69e97-142">boolean</span><span class="sxs-lookup"><span data-stu-id="69e97-142">boolean</span></span>|<span data-ttu-id="69e97-143">Ein boolescher Wert, der die Sichtbarkeit eines Diagrammtitelobjekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="69e97-143">A boolean value the represents the visibility of a chart title object.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="7481b-144">Antwort</span><span class="sxs-lookup"><span data-stu-id="7481b-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="69e97-144">Antwort</span><span class="sxs-lookup"><span data-stu-id="69e97-144">Response</span></span>
 
-<span data-ttu-id="7481b-145">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [ChartTitle](../resources/charttitle.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="7481b-145">If successful, this method returns a `200 OK` response code and updated [ChartTitle](../resources/charttitle.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="7481b-146">Beispiel</span><span class="sxs-lookup"><span data-stu-id="7481b-146">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7481b-147">Anforderung</span><span class="sxs-lookup"><span data-stu-id="7481b-147">Request</span></span>
-<span data-ttu-id="7481b-148">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="7481b-148">Here is an example of the request.</span></span>
+<span data-ttu-id="69e97-145">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [ChartTitle](../resources/charttitle.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="69e97-145">If successful, this method returns a `200 OK` response code and updated [ChartTitle](../resources/charttitle.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="69e97-146">Beispiel</span><span class="sxs-lookup"><span data-stu-id="69e97-146">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="69e97-147">Anforderung</span><span class="sxs-lookup"><span data-stu-id="69e97-147">Request</span></span>
+<span data-ttu-id="69e97-148">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="69e97-148">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_charttitle"
@@ -65,8 +66,8 @@ Content-length: 64
   "visible": true
 }
 ```
-##### <a name="response"></a><span data-ttu-id="7481b-149">Antwort</span><span class="sxs-lookup"><span data-stu-id="7481b-149">Response</span></span>
-<span data-ttu-id="7481b-p106">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="7481b-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="69e97-149">Antwort</span><span class="sxs-lookup"><span data-stu-id="69e97-149">Response</span></span>
+<span data-ttu-id="69e97-p106">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="69e97-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

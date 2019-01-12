@@ -2,24 +2,26 @@
 title: plannerChecklistItems-Ressourcentyp
 description: Die **plannerChecklistItemCollection**-Ressource stellt die Sammlung der Checklistenelemente für einen Vorgang dar. Es handelt sich um einen offenen Typ. Sie ist Bestandteil des taskDetails-Objekts. Der Wert im Eigenschaft-Wert-Paar ist das checklistItem-Objekt.
 localization_priority: Normal
-ms.openlocfilehash: 9ccc5e8526afb8e09c757f2a3524a667bbdce8b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 17c1d8c0529e0d85ebc784d25c2dc284f1775c0f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831738"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982701"
 ---
-# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="44fdf-106">plannerChecklistItems-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="44fdf-106">plannerChecklistItems resource type</span></span>
+# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="88559-106">plannerChecklistItems-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="88559-106">plannerChecklistItems resource type</span></span>
 
-<span data-ttu-id="44fdf-p102">Die **plannerChecklistItemCollection**-Ressource stellt die Sammlung der Checklistenelemente für einen Vorgang dar. Es handelt sich um einen offenen Typ. Sie ist Bestandteil des [taskDetails](plannertaskdetails.md)-Objekts. Der Wert im Eigenschaft-Wert-Paar ist das [checklistItem](plannerchecklistitem.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="44fdf-p102">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
+<span data-ttu-id="88559-p102">Die **plannerChecklistItemCollection**-Ressource stellt die Sammlung der Checklistenelemente für einen Vorgang dar. Es handelt sich um einen offenen Typ. Sie ist Bestandteil des [taskDetails](plannertaskdetails.md)-Objekts. Der Wert im Eigenschaft-Wert-Paar ist das [checklistItem](plannerchecklistitem.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="88559-p102">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="44fdf-111">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="44fdf-111">Properties</span></span>
-<span data-ttu-id="44fdf-p103">Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall sollte der Client **GUIDs** als Eigenschaften bereitstellen, und ihre Werte müssen [checklistItem](plannerchecklistitem.md)-Objekte sein. Nachfolgend ein Beispiel. Um ein Element in der Checkliste zu entfernen, legen Sie den Wert der Eigenschaft auf `null` fest.</span><span class="sxs-lookup"><span data-stu-id="44fdf-p103">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="88559-111">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="88559-111">Properties</span></span>
+<span data-ttu-id="88559-p103">Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall sollte der Client **GUIDs** als Eigenschaften bereitstellen, und ihre Werte müssen [checklistItem](plannerchecklistitem.md)-Objekte sein. Nachfolgend ein Beispiel. Um ein Element in der Checkliste zu entfernen, legen Sie den Wert der Eigenschaft auf `null` fest.</span><span class="sxs-lookup"><span data-stu-id="88559-p103">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="44fdf-116">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="44fdf-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="88559-116">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="88559-116">JSON representation</span></span>
 
-<span data-ttu-id="44fdf-117">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="44fdf-117">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="88559-117">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="88559-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -40,7 +42,7 @@ ms.locfileid: "27831738"
   }
 }
 ```
-<span data-ttu-id="44fdf-118">// Beispiel</span><span class="sxs-lookup"><span data-stu-id="44fdf-118">// Example</span></span>
+<span data-ttu-id="88559-118">// Beispiel</span><span class="sxs-lookup"><span data-stu-id="88559-118">// Example</span></span>
 
 ```json
 {

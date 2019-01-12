@@ -3,29 +3,30 @@ title: Ressourcentyp recordingInfo
 description: Aufzeichnung von Informationen für einen Teilnehmer.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 85c2710452905f97235928bae71ff60c2d22983f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 08ecaa450fb1c937666068bad656b40497092363
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891938"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990138"
 ---
-# <a name="recordinginfo-resource-type"></a><span data-ttu-id="19b81-103">Ressourcentyp recordingInfo</span><span class="sxs-lookup"><span data-stu-id="19b81-103">recordingInfo resource type</span></span>
+# <a name="recordinginfo-resource-type"></a><span data-ttu-id="f73e0-103">Ressourcentyp recordingInfo</span><span class="sxs-lookup"><span data-stu-id="f73e0-103">recordingInfo resource type</span></span>
 
-> <span data-ttu-id="19b81-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="19b81-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="19b81-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="19b81-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f73e0-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="f73e0-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f73e0-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="f73e0-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="19b81-106">Aufzeichnung von Informationen für einen Teilnehmer.</span><span class="sxs-lookup"><span data-stu-id="19b81-106">Recording information for a participant.</span></span>
+<span data-ttu-id="f73e0-106">Aufzeichnung von Informationen für einen Teilnehmer.</span><span class="sxs-lookup"><span data-stu-id="f73e0-106">Recording information for a participant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="19b81-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="19b81-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f73e0-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f73e0-107">Properties</span></span>
 
-| <span data-ttu-id="19b81-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="19b81-108">Property</span></span>       | <span data-ttu-id="19b81-109">Typ</span><span class="sxs-lookup"><span data-stu-id="19b81-109">Type</span></span>    | <span data-ttu-id="19b81-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="19b81-110">Description</span></span>|
+| <span data-ttu-id="f73e0-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="f73e0-108">Property</span></span>       | <span data-ttu-id="f73e0-109">Typ</span><span class="sxs-lookup"><span data-stu-id="f73e0-109">Type</span></span>    | <span data-ttu-id="f73e0-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f73e0-110">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="19b81-111">initiatedBy</span><span class="sxs-lookup"><span data-stu-id="19b81-111">initiatedBy</span></span> | [<span data-ttu-id="19b81-112">participantInfo</span><span class="sxs-lookup"><span data-stu-id="19b81-112">participantInfo</span></span>](participantinfo.md) | <span data-ttu-id="19b81-113">Der Teilnehmer, der die Aufzeichnung initiiert hat.</span><span class="sxs-lookup"><span data-stu-id="19b81-113">The participant who initiated the recording.</span></span> |
-| <span data-ttu-id="19b81-114">status</span><span class="sxs-lookup"><span data-stu-id="19b81-114">status</span></span> | <span data-ttu-id="19b81-115">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="19b81-115">String</span></span> | <span data-ttu-id="19b81-116">Mögliche Werte sind: `recordingCapable`, `notRecording` und `startedRecording`.</span><span class="sxs-lookup"><span data-stu-id="19b81-116">Possible values are: `recordingCapable`, `notRecording`, `startedRecording`.</span></span> |
+| <span data-ttu-id="f73e0-111">initiatedBy</span><span class="sxs-lookup"><span data-stu-id="f73e0-111">initiatedBy</span></span> | [<span data-ttu-id="f73e0-112">participantInfo</span><span class="sxs-lookup"><span data-stu-id="f73e0-112">participantInfo</span></span>](participantinfo.md) | <span data-ttu-id="f73e0-113">Der Teilnehmer, der die Aufzeichnung initiiert hat.</span><span class="sxs-lookup"><span data-stu-id="f73e0-113">The participant who initiated the recording.</span></span> |
+| <span data-ttu-id="f73e0-114">status</span><span class="sxs-lookup"><span data-stu-id="f73e0-114">status</span></span> | <span data-ttu-id="f73e0-115">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="f73e0-115">String</span></span> | <span data-ttu-id="f73e0-116">Mögliche Werte sind: `recordingCapable`, `notRecording` und `startedRecording`.</span><span class="sxs-lookup"><span data-stu-id="f73e0-116">Possible values are: `recordingCapable`, `notRecording`, `startedRecording`.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="19b81-117">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="19b81-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f73e0-117">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="f73e0-117">JSON representation</span></span>
 
-<span data-ttu-id="19b81-118">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="19b81-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f73e0-118">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="f73e0-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
