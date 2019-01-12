@@ -3,12 +3,13 @@ title: UserPFXCertificate aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines UserPFXCertificate-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e806450e5314cec7679a9d634edaff3cc501d911
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 47d0ad37abed0a6cca231890be06c7b5666b3371
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862209"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913247"
 ---
 # <a name="update-userpfxcertificate"></a>UserPFXCertificate aktualisieren
 

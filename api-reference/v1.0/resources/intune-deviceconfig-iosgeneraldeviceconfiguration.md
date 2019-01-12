@@ -2,12 +2,14 @@
 title: iosGeneralDeviceConfiguration-Ressourcentyp
 description: In diesem Artikel werden die deklarierten Methoden, Eigenschaften und Beziehungen beschrieben, die von der Ressource „ iosGeneralDeviceConfiguration“ verfügbar gemacht werden.
 localization_priority: Normal
-ms.openlocfilehash: 258aa02ab4e59c8de677088b9b68e78b555e9109
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: d7b793557114fa53be36671f42a3364e1b545902
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833299"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913506"
 ---
 # <a name="iosgeneraldeviceconfiguration-resource-type"></a>iosGeneralDeviceConfiguration-Ressourcentyp
 

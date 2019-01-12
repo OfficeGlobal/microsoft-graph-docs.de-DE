@@ -2,12 +2,14 @@
 title: Ressourcentyp „workbook“
 description: Die Arbeitsmappe ist das Objekt auf oberster Ebene , das dazugehörige Arbeitsmappenobjekte wie z. B. Arbeitsblätter, Tabellen, Bereiche usw. enthält.
 localization_priority: Priority
-ms.openlocfilehash: 25b74bcc0ce0b54aace11ed9f829435a510f9c9a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: b4f0a439db5cc430e558f2d43215cb1c5c0f7779
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835420"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913121"
 ---
 # <a name="workbook-resource-type"></a>Ressourcentyp „workbook“
 

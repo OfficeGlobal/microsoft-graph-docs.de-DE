@@ -3,12 +3,13 @@ title: Liste networkIPv6ConfigurationManagementConditions
 description: Listeneigenschaften und Beziehungen der networkIPv6ConfigurationManagementCondition-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 27c0c751639d607d2d849f041db382311e26fc19
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 392ae5bbe7386a09e58754e024aa4621b11089e7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890146"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913044"
 ---
 # <a name="list-networkipv6configurationmanagementconditions"></a>Liste networkIPv6ConfigurationManagementConditions
 
@@ -37,7 +38,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

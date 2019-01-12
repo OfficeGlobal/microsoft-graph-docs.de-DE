@@ -2,12 +2,14 @@
 title: Aktualisieren der Outlook-Kategorie
 description: 'Aktualisieren Sie die schreibbare Eigenschaft, **color**, des angegebenen outlookCategory-Objekts. Die **DisplayName** -Eigenschaft kann nicht geändert werden. '
 localization_priority: Normal
-ms.openlocfilehash: 93e89b616863e6a09717540ef169e0188700b1cc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 65763a0bffa6536cffe755b6f0435a1d8d666937
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861006"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912092"
 ---
 # <a name="update-outlook-category"></a>Aktualisieren der Outlook-Kategorie
 

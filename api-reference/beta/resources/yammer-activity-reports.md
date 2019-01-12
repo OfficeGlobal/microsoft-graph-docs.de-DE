@@ -2,12 +2,13 @@
 title: Yammer-Aktivitätsberichte
 description: Wie viel Aktivität, über die Organisation und die Anzahl der eindeutigen Benutzer, die buchen generiert wird, like und Lesen von Nachrichten auf Yammer, können Sie die Ebene des Engagements mit Yammer Ihrer Organisation vertraut sein.
 localization_priority: Normal
-ms.openlocfilehash: 9895e37812b037b33f13682c3c56dacba5928d5c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 69c155df86cfe772e0c065bec0297a83fb7f3a8b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823709"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912036"
 ---
 # <a name="yammer-activity-reports"></a>Yammer-Aktivitätsberichte
 
