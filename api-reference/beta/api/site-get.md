@@ -4,45 +4,46 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: SharePoint-Website abrufen
 localization_priority: Normal
-ms.openlocfilehash: 72a99b1768486da792a401cea4b8dfde5a25a153
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 7ef1a6a3a0bdbcf84cb0e0696e280842a63f4812
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872856"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942367"
 ---
-# <a name="get-a-site-resource"></a><span data-ttu-id="03d87-102">Site-Ressource abrufen</span><span class="sxs-lookup"><span data-stu-id="03d87-102">Get a site resource</span></span>
+# <a name="get-a-site-resource"></a><span data-ttu-id="c5bba-102">Site-Ressource abrufen</span><span class="sxs-lookup"><span data-stu-id="c5bba-102">Get a site resource</span></span>
 
-> <span data-ttu-id="03d87-103">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="03d87-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="03d87-104">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="03d87-104">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="c5bba-103">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="c5bba-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c5bba-104">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="c5bba-104">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="03d87-p102">Dient zum Abrufen der Eigenschaften und Beziehungen einer [site][]-Ressource. Eine **site**-Ressource stellt eine Teamwebsite in SharePoint dar.</span><span class="sxs-lookup"><span data-stu-id="03d87-p102">Retrieve properties and relationships for a [site][] resource. A **site** resource represents a team site in SharePoint.</span></span>
+<span data-ttu-id="c5bba-p102">Dient zum Abrufen der Eigenschaften und Beziehungen einer [site][]-Ressource. Eine **site**-Ressource stellt eine Teamwebsite in SharePoint dar.</span><span class="sxs-lookup"><span data-stu-id="c5bba-p102">Retrieve properties and relationships for a [site][] resource. A **site** resource represents a team site in SharePoint.</span></span>
 
 [site]: ../resources/site.md
 
-<span data-ttu-id="03d87-108">Eine **site**-Ressource wird durch einen eindeutigen Bezeichner adressiert; dies ist eine aus den folgenden Werten zusammengesetzte ID:</span><span class="sxs-lookup"><span data-stu-id="03d87-108">A **site** is addressed be a unique identifier which is a composite ID of the following values:</span></span>
+<span data-ttu-id="c5bba-108">Eine **site**-Ressource wird durch einen eindeutigen Bezeichner adressiert; dies ist eine aus den folgenden Werten zusammengesetzte ID:</span><span class="sxs-lookup"><span data-stu-id="c5bba-108">A **site** is addressed be a unique identifier which is a composite ID of the following values:</span></span>
 
-* <span data-ttu-id="03d87-109">Hostname der Websitesammlung (contoso.SharePoint.com)</span><span class="sxs-lookup"><span data-stu-id="03d87-109">Site collection hostname (contoso.sharepoint.com)</span></span>
-* <span data-ttu-id="03d87-110">Eindeutige ID der Websitesammlung (GUID)</span><span class="sxs-lookup"><span data-stu-id="03d87-110">Site collection unique ID (GUID)</span></span>
-* <span data-ttu-id="03d87-111">Eindeutige ID der Website (GUID)</span><span class="sxs-lookup"><span data-stu-id="03d87-111">Site unique ID (GUID)</span></span>
+* <span data-ttu-id="c5bba-109">Hostname der Websitesammlung (contoso.SharePoint.com)</span><span class="sxs-lookup"><span data-stu-id="c5bba-109">Site collection hostname (contoso.sharepoint.com)</span></span>
+* <span data-ttu-id="c5bba-110">Eindeutige ID der Websitesammlung (GUID)</span><span class="sxs-lookup"><span data-stu-id="c5bba-110">Site collection unique ID (GUID)</span></span>
+* <span data-ttu-id="c5bba-111">Eindeutige ID der Website (GUID)</span><span class="sxs-lookup"><span data-stu-id="c5bba-111">Site unique ID (GUID)</span></span>
 
-<span data-ttu-id="03d87-112">Es gibt auch einen reservierten Websitebezeichner, `root`, der immer auf die Stammwebsite für ein angegebenes Ziel verweist, wie folgt:</span><span class="sxs-lookup"><span data-stu-id="03d87-112">There is also a reserved site identifier, `root`, which always references the root site for a given target, as follows:</span></span>
+<span data-ttu-id="c5bba-112">Es gibt auch einen reservierten Websitebezeichner, `root`, der immer auf die Stammwebsite für ein angegebenes Ziel verweist, wie folgt:</span><span class="sxs-lookup"><span data-stu-id="c5bba-112">There is also a reserved site identifier, `root`, which always references the root site for a given target, as follows:</span></span>
 
-* <span data-ttu-id="03d87-113">`/sites/root`: Der Stammwebsite des Mandanten.</span><span class="sxs-lookup"><span data-stu-id="03d87-113">`/sites/root`: The tenant root site.</span></span>
-* <span data-ttu-id="03d87-114">`/groups/{group-id}/sites/root`: Die Teamwebsite der Gruppe.</span><span class="sxs-lookup"><span data-stu-id="03d87-114">`/groups/{group-id}/sites/root`: The group's team site.</span></span>
+* <span data-ttu-id="c5bba-113">`/sites/root`: Der Stammwebsite des Mandanten.</span><span class="sxs-lookup"><span data-stu-id="c5bba-113">`/sites/root`: The tenant root site.</span></span>
+* <span data-ttu-id="c5bba-114">`/groups/{group-id}/sites/root`: Die Teamwebsite der Gruppe.</span><span class="sxs-lookup"><span data-stu-id="c5bba-114">`/groups/{group-id}/sites/root`: The group's team site.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="03d87-115">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="03d87-115">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c5bba-115">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="c5bba-115">Permissions</span></span>
 
-<span data-ttu-id="03d87-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="03d87-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c5bba-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c5bba-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="03d87-118">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="03d87-118">Permission type</span></span>      | <span data-ttu-id="03d87-119">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="03d87-119">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c5bba-118">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c5bba-118">Permission type</span></span>      | <span data-ttu-id="c5bba-119">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c5bba-119">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="03d87-120">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="03d87-120">Delegated (work or school account)</span></span> | <span data-ttu-id="03d87-121">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="03d87-121">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="03d87-122">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="03d87-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="03d87-123">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="03d87-123">Not supported.</span></span>    |
-|<span data-ttu-id="03d87-124">Anwendung</span><span class="sxs-lookup"><span data-stu-id="03d87-124">Application</span></span> | <span data-ttu-id="03d87-125">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="03d87-125">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="c5bba-120">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c5bba-120">Delegated (work or school account)</span></span> | <span data-ttu-id="c5bba-121">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c5bba-121">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c5bba-122">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c5bba-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c5bba-123">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c5bba-123">Not supported.</span></span>    |
+|<span data-ttu-id="c5bba-124">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c5bba-124">Application</span></span> | <span data-ttu-id="c5bba-125">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c5bba-125">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="get-the-tenants-root-site"></a><span data-ttu-id="03d87-126">Abrufen der Stammwebsite eines Mandanten</span><span class="sxs-lookup"><span data-stu-id="03d87-126">Get the tenant's root site</span></span>
+## <a name="get-the-tenants-root-site"></a><span data-ttu-id="c5bba-126">Abrufen der Stammwebsite eines Mandanten</span><span class="sxs-lookup"><span data-stu-id="c5bba-126">Get the tenant's root site</span></span>
 
-<span data-ttu-id="03d87-127">So greifen Sie innerhalb eines Mandanten auf die SharePoint-Stammwebsite zu:</span><span class="sxs-lookup"><span data-stu-id="03d87-127">To access the root SharePoint site within a tenant:</span></span>
+<span data-ttu-id="c5bba-127">So greifen Sie innerhalb eines Mandanten auf die SharePoint-Stammwebsite zu:</span><span class="sxs-lookup"><span data-stu-id="c5bba-127">To access the root SharePoint site within a tenant:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -51,25 +52,25 @@ GET /sites/root
 GET /sites/contoso.sharepoint.com
 ```
 
-## <a name="access-a-site-by-server-relative-url"></a><span data-ttu-id="03d87-128">Über eine serverrelative URL auf eine Website zugreifen</span><span class="sxs-lookup"><span data-stu-id="03d87-128">Access a site by server-relative URL</span></span>
+## <a name="access-a-site-by-server-relative-url"></a><span data-ttu-id="c5bba-128">Über eine serverrelative URL auf eine Website zugreifen</span><span class="sxs-lookup"><span data-stu-id="c5bba-128">Access a site by server-relative URL</span></span>
 
-<span data-ttu-id="03d87-129">Wenn Sie über die serverrelative URL für eine **site**-Ressource verfügen, können Sie eine Anforderung wie folgt erstellen:</span><span class="sxs-lookup"><span data-stu-id="03d87-129">If you have the server-relative URL for a **site** resource, you can construct a request as follows:</span></span>
+<span data-ttu-id="c5bba-129">Wenn Sie über die serverrelative URL für eine **site**-Ressource verfügen, können Sie eine Anforderung wie folgt erstellen:</span><span class="sxs-lookup"><span data-stu-id="c5bba-129">If you have the server-relative URL for a **site** resource, you can construct a request as follows:</span></span>
 
 ```http
 GET /sites/{hostname}:/{server-relative-path}
 ```
 
-## <a name="access-a-group-team-site"></a><span data-ttu-id="03d87-130">Auf die Teamwebsite einer Gruppe zugreifen</span><span class="sxs-lookup"><span data-stu-id="03d87-130">Access a group team site</span></span>
+## <a name="access-a-group-team-site"></a><span data-ttu-id="c5bba-130">Auf die Teamwebsite einer Gruppe zugreifen</span><span class="sxs-lookup"><span data-stu-id="c5bba-130">Access a group team site</span></span>
 
-<span data-ttu-id="03d87-131">So greifen Sie auf die Teamwebsite für eine  Gruppe zu:</span><span class="sxs-lookup"><span data-stu-id="03d87-131">To access the team site for a group:</span></span>
+<span data-ttu-id="c5bba-131">So greifen Sie auf die Teamwebsite für eine  Gruppe zu:</span><span class="sxs-lookup"><span data-stu-id="c5bba-131">To access the team site for a group:</span></span>
 
 ```http
 GET /groups/{group-id}/sites/root
 ```
 
-## <a name="example"></a><span data-ttu-id="03d87-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="03d87-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c5bba-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c5bba-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="03d87-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="03d87-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="c5bba-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c5bba-133">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-site" } -->
 
@@ -77,7 +78,7 @@ GET /groups/{group-id}/sites/root
 GET /sites/{site-id}
 ```
 
-### <a name="response"></a><span data-ttu-id="03d87-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="03d87-134">Response</span></span>
+### <a name="response"></a><span data-ttu-id="c5bba-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="c5bba-134">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 
