@@ -1,13 +1,15 @@
 ---
 title: Fehlercodes für OneNote-APIs in Microsoft Graph
 description: Dieser Artikel beschreibt Fehlercodes, die von der OneNote-API zurückgegeben werden, wenn eine von der API gesendete Anfrage fehlschlägt.
-author: Jewan-microsoft
-ms.openlocfilehash: 9c715b25e9b3114d6db21a3b935a266123ca0601
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: jewan-microsoft
+localization_priority: Normal
+ms.prod: onenote
+ms.openlocfilehash: f74f9be52756e068aa3e197f2de526b38c187266
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352465"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987853"
 ---
 # <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Fehlercodes für OneNote-APIs in Microsoft Graph
 

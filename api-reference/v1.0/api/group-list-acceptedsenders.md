@@ -3,12 +3,13 @@ title: acceptedSenders auflisten
 description: Ruft eine Liste von Benutzern oder Gruppen ab, die sich in der Liste der acceptedSenders für diese Gruppe befinden.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 3ce0adaf53c0f9940e582da88932f5e8d04aafc0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 4299b83e5cb11f4c6eea460621198b43ab3c0890
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892281"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985760"
 ---
 # <a name="list-acceptedsenders"></a>acceptedSenders auflisten
 Ruft eine Liste von Benutzern oder Gruppen ab, die sich in der Liste der acceptedSenders für diese Gruppe befinden.
@@ -33,7 +34,7 @@ GET /groups/{id}/acceptedSenders
 Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

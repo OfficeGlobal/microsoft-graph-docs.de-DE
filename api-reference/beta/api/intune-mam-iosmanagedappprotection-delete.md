@@ -3,12 +3,13 @@ title: iosManagedAppProtection löschen
 description: Löscht Objekte des Typs iosManagedAppProtection.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1d64d022518843ca814a41e369bdb9146fc8eee9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f935971ce0cbe403664a146c84bf32e0a4083800
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813692"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991341"
 ---
 # <a name="delete-iosmanagedappprotection"></a>iosManagedAppProtection löschen
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

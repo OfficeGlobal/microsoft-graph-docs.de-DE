@@ -2,12 +2,13 @@
 title: Ressourcentyp Aktivität
 description: Stellt eine einzelne Aktivität in einer app - beispielsweise ein TV-Programm, ein Dokument oder eine aktuelle Kampagne in einem Video Spiel. Wenn ein Benutzer Aktivität einbezieht, wird das Engagement als Element Verlauf erfasst, das die Start- und Endzeit für diese Aktivität angibt. Wie der Benutzer Aktivität über einen Zeitraum erneut einbezieht, werden mehrere Verlaufselemente für eine einzelne Benutzeraktivität aufgezeichnet.
 localization_priority: Normal
-ms.openlocfilehash: 79ed44ef0f6a38fbef8ead233debce3fc9e66b42
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: eade448e9585ac3678c81548c242bd467e71df40
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877070"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991076"
 ---
 # <a name="activity-resource-type"></a>Ressourcentyp Aktivität
 
@@ -35,7 +36,7 @@ Ihre Benutzeraktivitäten werden in Cortana und Windows-Zeitachsen Benutzererleb
 |userTimezone | Zeichenfolge | Optional. Die Zeitzone, in der das Gerät des Benutzers verwendet, um die Aktivität generieren zum Zeitpunkt der Erstellung Aktivität gefunden wurde; Werte, die zur Unterstützung der plattformübergreifende Darstellung als Olson-IDs angegeben.|
 |createdDateTime | DateTimeOffset | Vom Server festgelegt. DateTime in UTC, wenn das Objekt auf dem Server erstellt wurde. |
 |lastModifiedDateTime | DateTimeOffset | Vom Server festgelegt. DateTime in UTC, wenn das Objekt auf dem Server geändert wurde. |
-|id | String | Server generierte ID für die URL-Adressen verwendet.|
+|id | Zeichenfolge | Server generierte ID für die URL-Adressen verwendet.|
 |appActivityId | Zeichenfolge | Erforderlich. Die eindeutige Aktivitäts-ID im Kontext der app - vom Anrufer und unveränderlich danach bereitgestellt.|
 |activitySourceHost | Zeichenfolge | Erforderlich. URL für die Domäne, die die Zuordnung plattformübergreifende Identität für die app darstellt. Zuordnung ist gespeicherte entweder als JSON-Datei für die Domäne gehostet oder über Windows-Entwicklungscenter konfigurierbar. Die Datei JSON heißt Cross-Plattform-app-IDs und befindet sich am Stamm der Domäne HTTPS, entweder auf die Domäne der obersten Ebene oder enthalten eine Sub-Domäne. Zum Beispiel: https://contoso.com oder https://myapp.contoso.com, jedoch NICHT https://myapp.contoso.com/somepath. Sie müssen einen eindeutigen Dateinamen und Domäne (oder Sub Domäne) pro plattformübergreifende app-Identität verfügen. Beispielsweise ist eine separate Datei und eine Domäne für Word und PowerPoint erforderlich.|
 |appDisplayName | Zeichenfolge | Optional. Kurze Beschreibung der app verwendet, um die Aktivität für die Verwendung in Fällen generiert werden, wenn die app nicht auf das lokale Gerät des Benutzers installiert ist.|

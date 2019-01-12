@@ -2,12 +2,14 @@
 title: Verwenden Sie die Microsoft Graph-API für die Erkennung Sicherheit und Schutz (Preview)
 description: Die Qualität von Sicherheitsrisiken weiterhin ausweiten, die globale Wirtschaft beeinträchtigen. Häufig Schaden lange vor Organisationen auch ermitteln. Sie können zum Erstellen oder erweitern sicherheitslösungen, die konsolidieren und korrelieren Sicherheitshinweise aus mehreren Quellen, erkennen Bedrohungen, die versuchen, gefährden Benutzeridentität "und" unlock Kontextdaten zur Untersuchungen zu informieren und Automatisierung von Microsoft Graph verwenden Sicherheitsoperationen für größere Effizienz.
 localization_priority: Normal
-ms.openlocfilehash: f728ddbee32a25742b5e0062ff442c552121c353
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: 42891aa53da23cc27b046f6d282fd2add3015739
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804452"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980286"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>Verwenden Sie die Microsoft Graph-API für die Erkennung Sicherheit und Schutz (Preview)
 

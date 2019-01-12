@@ -3,12 +3,13 @@ title: Team app hinzufügen
 description: Installiert das angegebene Team eine app.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: d3f67b8ea49f9940b60bcf0aec7eea15a59388b7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 3f52d54850d1046d837821de1501968965678e8b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855860"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990271"
 ---
 # <a name="add-app-to-team"></a>Team app hinzufügen
 
@@ -32,7 +33,7 @@ POST /teams/{id}/installedApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 
@@ -40,7 +41,7 @@ POST /teams/{id}/installedApps
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|teamsApp|String|Die Id der app hinzufügen.|
+|teamsApp|Zeichenfolge|Die Id der app hinzufügen.|
 
 
 ## <a name="response"></a>Antwort

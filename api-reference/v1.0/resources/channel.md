@@ -3,12 +3,13 @@ title: DDE-Kanal Ressourcentyp
 description: 'Ein Kanal ist eine Auflistung von Nachrichten in einem Team. '
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 9a7b12646f36152bef17cec2d206e8e84abdcbbe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: f513a0c8de51cdfb8ca692098cab403dd74d747a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826565"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986348"
 ---
 # <a name="channel-resource-type"></a>DDE-Kanal Ressourcentyp
 
@@ -30,9 +31,9 @@ Ein Kanal ist eine Auflistung von Nachrichten in einem [Team](../resources/team.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|description|String|Optionale Beschreibung für den Kanal.|
-|displayName|String|Channel-Namen, die dem Benutzer in Microsoft-Teams, erscheint.|
-|id|String|Eindeutiger Bezeichner der Kanäle. Schreibgeschützt.|
+|description|Zeichenfolge|Optionale Beschreibung für den Kanal.|
+|displayName|Zeichenfolge|Channel-Namen, die dem Benutzer in Microsoft-Teams, erscheint.|
+|id|Zeichenfolge|Eindeutiger Bezeichner der Kanäle. Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|

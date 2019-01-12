@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Abrufen von Miniaturansichten für eine Datei oder einen Ordner
 localization_priority: Normal
-ms.openlocfilehash: 40bc5e364202720b33fce9fe345bf1b752c8b796
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 7543a8177c146779c645d848292b1600a80c3398
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881907"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990593"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Miniaturansichten für ein DriveItem auflisten
 

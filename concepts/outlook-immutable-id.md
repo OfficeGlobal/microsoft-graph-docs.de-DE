@@ -2,12 +2,14 @@
 title: Abrufen von unveränderlichen Bezeichnern für Outlook-Ressourcen
 description: 'Outlook-Elemente (Nachrichten, Ereignisse, Kontakte, Aufgaben) haben ein interessantes Verhalten, das Sie vermutlich entweder noch nie bemerkt haben oder das bei Ihnen erhebliche Frustration ausgelöst hat: ihre IDs ändern sich. Das geschieht nicht oft, nur wenn das Element verschoben wird, es kann aber für Apps, die IDs zwecks späterer Verwendung offline speichern, zu echten Problemen führen. Unveränderliche Bezeichner ermöglichen Ihrer Anwendung das Abrufen einer ID, die sich über die gesamte Lebensdauer des Elements nicht ändert.'
 author: angelgolfer-ms
-ms.openlocfilehash: 34d88ed2cbc39902f1240757367beb112cc007b4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: e88f4d457f76990dc3e6145ebf2730087ad2a74e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315197"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961715"
 ---
 # <a name="get-immutable-identifiers-for-outlook-resources"></a>Abrufen von unveränderlichen Bezeichnern für Outlook-Ressourcen
 

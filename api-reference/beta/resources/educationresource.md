@@ -2,12 +2,14 @@
 title: Ressourcentyp educationResource
 description: Eine übergeordnete Klasse für alle Resource-Objekten im System. Eine Ressource ist eine **Zuordnung** und/oder **Übermittlung**, das das Learning-Objekt darstellt, das wird zugeordnet
 localization_priority: Normal
-ms.openlocfilehash: 0608f3c0fb84f05404032bed611f0af887e7bb67
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 9ac84fd9d661f31186ea65e95c680456cdabe221
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827559"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982120"
 ---
 # <a name="educationresource-resource-type"></a>Ressourcentyp educationResource
 
@@ -23,7 +25,7 @@ Diese Ressource werden die allgemeinen Eigenschaften für alle Arten von Ressour
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Die die Ressource erstellt.|
 |createdDateTime|-Zeitpunkt der Erstellung die Ressource.  DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|displayName|String|Der Anzeigename der Ressource.|
+|displayName|Zeichenfolge|Der Anzeigename der Ressource.|
 |lastModifiedBy|[identitySet](identityset.md)|Wer war der letzte Benutzer, die Ressource zu ändern.|
 |lastModifiedDateTime|DateTimeOffset|Zeitpunkt der Uhrzeit der letzten die Ressource Änderung.  Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 

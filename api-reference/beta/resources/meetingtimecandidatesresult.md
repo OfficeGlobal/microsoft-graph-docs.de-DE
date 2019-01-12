@@ -2,12 +2,14 @@
 title: Ressourcentyp meetingTimeCandidatesResult
 description: Dieser Ressourcentyp listet eine Sammlung von Besprechungsvorschlägen auf, sofern Vorschläge zurückgegeben werden, oder den Grund, aus dem keine Vorschläge zurückgegeben werden.
 localization_priority: Normal
-ms.openlocfilehash: 5b261295de43dcb0bfb94f85c833559430365002
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: VinodRavichandran
+ms.prod: microsoft-teams
+ms.openlocfilehash: ffa8ec3c423da5d94daff4b95cdac52cd511da9c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810654"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985088"
 ---
 # <a name="meetingtimecandidatesresult-resource-type"></a>Ressourcentyp meetingTimeCandidatesResult
 
@@ -47,7 +49,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|emptySuggestionsHint|String|Ein Grund, aus dem keine Besprechungsvorschläge zurückgegeben wurden. Mögliche Werte sind: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable` und `unknown`.|
+|emptySuggestionsHint|Zeichenfolge|Ein Grund, aus dem keine Besprechungsvorschläge zurückgegeben wurden. Mögliche Werte sind: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable` und `unknown`.|
 |meetingTimeSlots|[MeetingTimeCandidate](meetingtimecandidate.md) -Auflistung|Ein Array von Besprechungsvorschlägen|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

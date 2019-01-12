@@ -3,12 +3,13 @@ title: WindowsManagedDevice löschen
 description: Löscht eine WindowsManagedDevice.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2ab5a03d2355196d40224cd7a5b1a374a0dceb41
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9b82c3f7d139c611078101107dfb7d3a5ec23b8f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847677"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990579"
 ---
 # <a name="delete-windowsmanageddevice"></a>WindowsManagedDevice löschen
 
@@ -39,7 +40,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devi
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

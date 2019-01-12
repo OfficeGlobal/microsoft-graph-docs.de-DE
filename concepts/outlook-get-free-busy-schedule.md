@@ -2,12 +2,14 @@
 title: Abrufen des Frei/Gebucht-Zeitplans für Benutzer und Ressourcen (Vorschau)
 description: Ein häufiges Szenario in einer Arbeits- oder Schulumgebung besteht darin, anzuzeigen, wann ein Benutzer für eine Besprechung verfügbar ist, oder die Verfügbarkeit eines Teams, Raums oder Geräts für einen Zeitraum zu durchsuchen.
 author: angelgolfer-ms
-ms.openlocfilehash: 2f201ed552200f7c8dd55b368a504b4eca1e3ba5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: 18497a7178086fea25fb581fb2ba7c5c82fbe204
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317759"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981266"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources-preview"></a>Abrufen des Frei/Gebucht-Zeitplans für Benutzer und Ressourcen (Vorschau)
 

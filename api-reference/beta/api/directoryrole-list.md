@@ -3,12 +3,13 @@ title: directoryRoles auflisten
 description: Mit dieser API können Sie alle Verzeichnisrollen abrufen, die in einem Mandanten aktiviert sind.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 03f81de99fadc8beb96f7f07361b6152689b680a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b50af15f6bce8bb6d6fdb4072df71edbf19a9cf7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838122"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956157"
 ---
 # <a name="list-directoryroles"></a>directoryRoles auflisten
 

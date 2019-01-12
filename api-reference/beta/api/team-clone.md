@@ -3,12 +3,13 @@ title: Klonen Sie ein team
 description: Erstellen Sie eine Kopie eines Teams. Dieser Vorgang wird außerdem eine Kopie der entsprechenden Gruppe erstellt.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 262cbe4bd17cc1ab3abded49b65868d0b8039e70
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 4fb3769db0df6d2fc30d995098daee19b49e83b7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854593"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958341"
 ---
 # <a name="clone-a-team"></a>Klonen Sie ein team
 
@@ -45,7 +46,7 @@ POST /teams/{id}/clone
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |
@@ -56,8 +57,8 @@ POST /teams/{id}/clone
 |:---------------|:--------|:----------|
 |Klassifikation|Zeichenfolge (optional)|Beschreibt eine Klassifizierung für die Gruppe (z. B. niedrig, Mittel oder hoch geschäftliche Relevanz). Gültige Werte für diese Eigenschaft werden durch Erstellen [eines Einstellungswerts ClassificationList, basierend auf der [Vorlagendefinition](../resources/directorysettingtemplate.md)](../resources/directorysetting.md) definiert. Wenn Klassifizierung nicht angegeben ist, wird die Klassifizierung aus der ursprünglichen Team-Gruppe kopiert werden.|
 |description|Zeichenfolge (optional)|Eine optionale Beschreibung für die Gruppe. Wenn diese Eigenschaft nicht angegeben ist, wird es leer sein.|
-|displayName|String|Der Anzeigename der Gruppe. Diese Eigenschaft ist beim Erstellen einer Gruppe erforderlich und kann bei Updates nicht deaktiviert werden. Unterstützt $Filter und $orderby.|
-|mailNickname|String|Der e-Mail-Alias für die Gruppe, die in der Organisation eindeutig. Diese Eigenschaft muss angegeben werden, wenn eine Gruppe erstellt wird. Unterstützt $filter. Wenn diese Eigenschaft nicht angegeben ist, wird er von der DisplayName berechnet. Bekanntes Problem: Diese Eigenschaft wird zurzeit ignoriert.|
+|displayName|Zeichenfolge|Der Anzeigename der Gruppe. Diese Eigenschaft ist beim Erstellen einer Gruppe erforderlich und kann bei Updates nicht deaktiviert werden. Unterstützt $Filter und $orderby.|
+|mailNickname|Zeichenfolge|Der e-Mail-Alias für die Gruppe, die in der Organisation eindeutig. Diese Eigenschaft muss angegeben werden, wenn eine Gruppe erstellt wird. Unterstützt $filter. Wenn diese Eigenschaft nicht angegeben ist, wird er von der DisplayName berechnet. Bekanntes Problem: Diese Eigenschaft wird zurzeit ignoriert.|
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |Eine durch Trennzeichen getrennte Liste der Teile zum Klonen. Rechtliche Webparts sind "apps, Registerkarten, Einstellungen, Kanäle, Mitglieder".|
 |visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (optional)| Gibt die Sichtbarkeit der Gruppe. Mögliche Werte sind: **Private**, **Public**. Wenn die Sichtbarkeit nicht angegeben wird, werden die Sichtbarkeit aus der ursprünglichen Team-Gruppe kopiert. Wenn das Team geklont wird ist ein **EducationClass** Team der Sichtbarkeit-Parameter wird ignoriert und Sichtbarkeit für die neue Gruppe wird auf HiddenMembership festgelegt werden.|
 

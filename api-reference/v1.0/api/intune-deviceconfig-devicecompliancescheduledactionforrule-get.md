@@ -2,12 +2,14 @@
 title: Abrufen von „deviceComplianceScheduledActionForRule“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs deviceComplianceScheduledActionForRule.
 author: tfitzmac
-ms.openlocfilehash: d8a48426401bff258e285cec51f3d533a6890f2f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 2485d68200d1d9e08681a62cc0b366a19df11954
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315477"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983919"
 ---
 # <a name="get-devicecompliancescheduledactionforrule"></a>Abrufen von „deviceComplianceScheduledActionForRule“
 
@@ -37,8 +39,8 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

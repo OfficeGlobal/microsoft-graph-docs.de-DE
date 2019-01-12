@@ -3,12 +3,13 @@ title: resourceOperation löschen
 description: Löscht Objekte des Typs resourceOperation.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: df59eec4c1e12c2d02cbb5d4caeed59617f0a09b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 626ae6aa4ed42382ac501c1b95e9d0d422c41ca4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829981"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982995"
 ---
 # <a name="delete-resourceoperation"></a>resourceOperation löschen
 
@@ -34,7 +35,7 @@ DELETE /deviceManagement/resourceOperations/{resourceOperationId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

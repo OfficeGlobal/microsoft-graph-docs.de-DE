@@ -3,12 +3,13 @@ title: 'user: reminderView'
 description: 'Diese API gibt eine Liste von Kalendererinnerungen zurück, die im Zeitraum zwischen dem angegebenen Startdatum und dem angegebenen Enddatum liegen. '
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 08f1e8414b727b5625b271d8a84c10a7fa3e980d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 7cfabb0595ed0787e3e7a96cc589526fddc8314f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851730"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983779"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 Eine Liste der Erinnerungen Ereignis in einem Benutzerkalender innerhalb der angegebenen Start- und Endzeiten zurückzugeben. 

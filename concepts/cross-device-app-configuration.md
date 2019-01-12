@@ -1,12 +1,14 @@
 ---
 title: 'Erstellen geräteübergreifender Apps mit Project Rome '
 description: 'Sie können Project Rome verwenden, um Benutzeroberflächen geräte- und plattformübergreifend zu erstellen und dabei Reibungspunkte für Benutzer zu reduzieren und App-Bindung zu fördern. Für Anwendungen, die Daten geräte- und plattformübergreifend mithilfe von Project Rome freigeben, müssen Sie eine geräteübergreifende App konfigurieren, die Informationen über Ihre plattformspezifischen Apps enthält. '
-ms.openlocfilehash: b555356fd523605837cd339630f64757fa8106bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.prod: project-rome
+ms.openlocfilehash: f54f38c5d047d2b5d790e5bea48fdb27f54b4004
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092275"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987083"
 ---
 # <a name="build-cross-device-apps-powered-by-project-rome"></a>Erstellen geräteübergreifender Apps mit Project Rome 
 

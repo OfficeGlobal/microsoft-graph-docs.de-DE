@@ -3,12 +3,13 @@ title: Aktualisieren von „deviceCategory“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceCategory.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 38377c7b92983f10ad42284b7790782cde2264fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b055f8865592e935aaa32e8a3a541151886d36de
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832977"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986859"
 ---
 # <a name="update-devicecategory"></a>Aktualisieren von „deviceCategory“
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,7 +49,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für die Gerätekategorie. Schreibgeschützt.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für die Gerätekategorie. Schreibgeschützt.|
 |**Onboarding**|
 |displayName|String|Der Anzeigename für die Gerätekategorie.|
 |description|String|Optionale Beschreibung für die Gerätekategorie.|

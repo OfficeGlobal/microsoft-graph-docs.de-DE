@@ -2,12 +2,14 @@
 title: Ressourcentyp managementCondition
 description: Management Bedingungen sind Ereignisse, die dynamisch wie Geo-Klammern, ausgelöst werden, können Zeit Klammern und Netzwerk Klammern.
 localization_priority: Normal
-ms.openlocfilehash: a836aeaa660de8f02c4e441e9eb390e1513c917c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: e0aeb73a93cd4c61b6d4680f73c2a9b8cee830c6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834111"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986741"
 ---
 # <a name="managementcondition-resource-type"></a>Ressourcentyp managementCondition
 
@@ -26,13 +28,13 @@ Management Bedingungen sind Ereignisse, die dynamisch wie Geo-Klammern, ausgelö
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für die Bedingung Management. System generierten Wert, die beim Erstellen zugewiesen.|
-|uniqueName|String|Eindeutiger Name für die Bedingung Management. In Management Bedingung Ausdrücken verwendet.|
-|displayName|String|Der Administrator definierter Name der Bedingung Management.|
-|description|String|Der Administrator definiert die Beschreibung der Bedingung Management.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für die Bedingung Management. System generierten Wert, die beim Erstellen zugewiesen.|
+|uniqueName|Zeichenfolge|Eindeutiger Name für die Bedingung Management. In Management Bedingung Ausdrücken verwendet.|
+|displayName|Zeichenfolge|Der Administrator definierter Name der Bedingung Management.|
+|description|Zeichenfolge|Der Administrator definiert die Beschreibung der Bedingung Management.|
 |createdDateTime|DateTimeOffset|Der Zeitpunkt, an die Bedingung Management erstellt wurde. Generierte Service-Seite.|
 |modifiedDateTime|DateTimeOffset|Die Zeit, die die Bedingung Management zuletzt geändert wurde. Aktualisierte Service-Seite.|
-|eTag|String|ETag der Bedingung Management. Aktualisierte Service-Seite.|
+|eTag|Zeichenfolge|ETag der Bedingung Management. Aktualisierte Service-Seite.|
 |applicablePlatforms|[DevicePlatformType](../resources/intune-shared-deviceplatformtype.md) -Auflistung|Die entsprechenden Plattformen für diese Bedingung Management.|
 
 ## <a name="relationships"></a>Beziehungen

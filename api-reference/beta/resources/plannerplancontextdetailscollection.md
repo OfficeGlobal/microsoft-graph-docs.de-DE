@@ -3,12 +3,13 @@ title: Ressourcentyp plannerPlanContextDetailsCollection
 description: " der Wert ist das PlannerPlanContextDetails-Objekt."
 author: TarkanSevilmis
 localization_priority: Normal
-ms.openlocfilehash: 0020ff8e8fd0d2e8dfd783e282e2bd648c16ec6a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: planner
+ms.openlocfilehash: 017734f3d5f5fb1a0ed56f390a7c945e43b707a9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828238"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981476"
 ---
 # <a name="plannerplancontextdetailscollection-resource-type"></a>Ressourcentyp plannerPlanContextDetailsCollection
 

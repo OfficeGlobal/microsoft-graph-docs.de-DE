@@ -3,12 +3,13 @@ title: Ressourcentyp windowsKioskAzureADUser
 description: Die Klasse verwendet, um ein Benutzerkonto AzureAD für die Konfiguration Kiosk identifizieren
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 57b48bcdbac3f95da37704222cded29ba61cd32d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4497c6d42db45f518e3ef93e78e50d25f473ac00
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845885"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984143"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>Ressourcentyp windowsKioskAzureADUser
 
@@ -23,8 +24,8 @@ Erbt vom [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|userId|String|Die ID des Benutzers, die mit dieser Konfiguration Kiosk gesperrt werden AzureAD|
-|userPrincipalName|String|Die Benutzerkonten, die mit dieser Konfiguration Kiosk gesperrt wird|
+|userId|Zeichenfolge|Die ID des Benutzers, die mit dieser Konfiguration Kiosk gesperrt werden AzureAD|
+|userPrincipalName|Zeichenfolge|Die Benutzerkonten, die mit dieser Konfiguration Kiosk gesperrt wird|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

@@ -3,12 +3,13 @@ title: Abrufen von „managedAppRegistration“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs managedAppRegistration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bdb92c9d70ab69508126630fd6430319f4027a27
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b044a9d2a491763d8a25f3c80538dde873094e53
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877581"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983072"
 ---
 # <a name="get-managedappregistration"></a>Abrufen von „managedAppRegistration“
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

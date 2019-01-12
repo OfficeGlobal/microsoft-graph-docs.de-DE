@@ -3,12 +3,13 @@ title: deviceCompliancePolicyAssignment-Ressourcentyp
 description: Zuweisung der Gerätekonformitätsrichtlinie.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0f49aaf815730ea2c12ced1a811335c3b2779fb5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 881153242e2af2aeafa39f30b6d303313083cbcf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822841"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980069"
 ---
 # <a name="devicecompliancepolicyassignment-resource-type"></a>deviceCompliancePolicyAssignment-Ressourcentyp
 

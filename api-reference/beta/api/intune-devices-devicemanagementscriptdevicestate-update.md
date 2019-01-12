@@ -3,12 +3,13 @@ title: DeviceManagementScriptDeviceState aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines DeviceManagementScriptDeviceState-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 15c9a951d63f99f02af5fc676176237323cc4864
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 857c1cca958088c1c884cb06b7f6e8416b3d8f1e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827342"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983765"
 ---
 # <a name="update-devicemanagementscriptdevicestate"></a>DeviceManagementScriptDeviceState aktualisieren
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -49,12 +50,12 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Taste der Gerät Management Skript Gerät Zustand Entität.|
+|id|Zeichenfolge|Taste der Gerät Management Skript Gerät Zustand Entität.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Status der letzten Ausführung des Skripts Management Gerät. Mögliche Werte sind: `unknown`, `success` und `fail`.|
-|resultMessage|String|Details der Ausgabe.|
+|resultMessage|Zeichenfolge|Details der Ausgabe.|
 |lastStateUpdateDateTime|DateTimeOffset|Zeitpunkt führt das Gerät Management-Skript aus.|
 |errorCode|Int32|Fehlercode, fehlerhafte Ausführung des Skripts Management Gerät entspricht.|
-|errorDescription|String|Fehlerhafte Ausführung des Skripts Management Gerät entsprechend der Beschreibung des Fehlers.|
+|errorDescription|Zeichenfolge|Fehlerhafte Ausführung des Skripts Management Gerät entsprechend der Beschreibung des Fehlers.|
 
 
 

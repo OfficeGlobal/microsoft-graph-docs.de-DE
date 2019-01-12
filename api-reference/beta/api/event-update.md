@@ -3,12 +3,13 @@ title: Ereignis aktualisieren
 description: Aktualisieren Sie die Eigenschaften des Event-Objekts.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 09ebb87d33a7fe3d32281e6b83fde3bd7b3efefc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 50711c6e2533f7a99e742542b1376faf78fff8e9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883062"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956577"
 ---
 # <a name="update-event"></a>Ereignis aktualisieren
 
@@ -56,7 +57,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |:---------------|:--------|:------------|
 | attendees|Teilnehmer|Die Sammlung der Teilnehmer des Ereignisses|
 | body|ItemBody|Der Text der Nachricht, die mit diesem Ereignis verknüpft ist.|
-| categories|String|Die Kategorien, die mit dem Ereignis verknüpft sind.|
+| categories|Zeichenfolge|Die Kategorien, die mit dem Ereignis verknüpft sind.|
 | end|DateTimeTimeZone|Datum und Uhrzeit für das Ende des Ereignisses.<br/><br/>Standardmäßig ist die Endzeit in UTC angegeben. Sie können eine optionale Zeitzone in EndTimeZone angeben, die Endzeit in dieser Zeitzone angeben und einen Zeitunterschied zur UTC-Zeitzone angeben. Beachten Sie, dass bei Verwendung von EndTimeZone auch ein Wert für StartTimeZone angegeben werden muss.<br/><br/>In diesem Beispiel wird der 25. Februar 2015 21:34 in PST angegeben: „2015-02-25T21:34:00-08:00“. |
 | Wichtigkeit|String|Die Wichtigkeit des Ereignisses. Mögliche Werte sind: `low`, `normal` und `high`.|
 | isAllDay|Boolean|True, wenn das Ereignis den ganzen Tag andauert.|

@@ -2,12 +2,14 @@
 title: Range-Ressourcentyp
 description: Ein Bereich stellt einen Satz von einer oder mehrerer zusammenhängender Zellen wie z. B. eine Zelle, eine Zeile oder eine Spalte, ein Block von Zellen usw. dar.
 localization_priority: Priority
-ms.openlocfilehash: 65cbea6b0e025d5d4d574ebf1db3b924e042f497
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: a97747f1dc8cfce10f5f219f1970c07b1f982a52
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806538"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991601"
 ---
 # <a name="range-resource-type"></a>Range-Ressourcentyp
 

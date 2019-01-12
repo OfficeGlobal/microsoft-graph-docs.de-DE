@@ -3,12 +3,13 @@ title: Gruppe erstellen
 description: 'Verwenden Sie diese API zum Erstellen einer neuen Gruppe gemäß der Angabe im Anforderungstext. Sie können drei Typen von Gruppen erstellen:'
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 5876c1c327cd1095124675046089a0f8a71a7ca0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: d1ce182a0122f621ccd1ea464df7a734bb89f24c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887640"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991160"
 ---
 # <a name="create-group"></a>Gruppe erstellen
 
@@ -47,10 +48,10 @@ Die folgende Tabelle zeigt die Eigenschaften des [Group](../resources/group.md) 
 
 | Eigenschaft | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| displayName | string | Der Name der Gruppe, der im Adressbuch angezeigt wird. Erforderlich. |
-| mailEnabled | boolean | **true** für E-Mail-aktivierte Gruppen. Legen Sie dies auf **true** fest, wenn eine Office 365-Gruppe zu erstellen. Festlegen Sie diese Eigenschaft auf **"false"** Wenn dynamische Erstellen oder Sicherheitsgruppe. Erforderlich. |
-| mailNickname | string | Der E-Mail-Alias für die Gruppe. Erforderlich. |
-| securityEnabled | boolean | Festgelegt auf **true** für Sicherheit-aktivierte Gruppen. Legen Sie dies auf **true** fest, wenn eine dynamische oder eine Sicherheitsgruppe an erstellen. Legen Sie dies auf **false fest** , wenn eine Office 365-Gruppe zu erstellen. Erforderlich. |
+| displayName | string | Der Name der Gruppe, der im Adressbuch angezeigt wird. Erforderlich.  |
+| mailEnabled | boolean | **true** für E-Mail-aktivierte Gruppen. Legen Sie dies auf **true** fest, wenn eine Office 365-Gruppe zu erstellen. Festlegen Sie diese Eigenschaft auf **"false"** Wenn dynamische Erstellen oder Sicherheitsgruppe. Erforderlich.  |
+| mailNickname | string | Der E-Mail-Alias für die Gruppe. Erforderlich.  |
+| securityEnabled | boolean | Festgelegt auf **true** für Sicherheit-aktivierte Gruppen. Legen Sie dies auf **true** fest, wenn eine dynamische oder eine Sicherheitsgruppe an erstellen. Legen Sie dies auf **false fest** , wenn eine Office 365-Gruppe zu erstellen. Erforderlich.  |
 | owners | string collection | Diese Eigenschaft stellt den Besitzer für die Gruppe zum Zeitpunkt der Erstellung. Optional. |
 | Elemente | string collection | Diese Eigenschaft stellt die Mitglieder der Gruppe zum Zeitpunkt der Erstellung. Optional. |
 

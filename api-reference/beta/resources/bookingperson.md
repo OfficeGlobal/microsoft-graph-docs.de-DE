@@ -2,12 +2,14 @@
 title: Ressourcentyp bookingPerson
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
 localization_priority: Normal
-ms.openlocfilehash: 606e0e0d1d851fac16b25310b278ca524124eb00
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: e39fbbf12909e7a4d29c95e22896df081522a7d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845577"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990110"
 ---
 # <a name="bookingperson-resource-type"></a>Ressourcentyp bookingPerson
 
