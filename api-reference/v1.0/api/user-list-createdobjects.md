@@ -3,47 +3,48 @@ title: createdObjects auflisten
 description: Mit dieser API können Sie eine Liste aller vom betreffenden Benutzer erstellten Verzeichnisobjekte abrufen.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: b999f4f9c5de484bd23e42497cc40ef0d3547b0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 33b3f7ded23a7bd72274dff159a824acb03e6bb5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876944"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925756"
 ---
-# <a name="list-createdobjects"></a><span data-ttu-id="1fd42-103">createdObjects auflisten</span><span class="sxs-lookup"><span data-stu-id="1fd42-103">List createdObjects</span></span>
+# <a name="list-createdobjects"></a><span data-ttu-id="2fea3-103">createdObjects auflisten</span><span class="sxs-lookup"><span data-stu-id="2fea3-103">List createdObjects</span></span>
 
-<span data-ttu-id="1fd42-104">Mit dieser API können Sie eine Liste aller vom betreffenden Benutzer erstellten Verzeichnisobjekte abrufen.</span><span class="sxs-lookup"><span data-stu-id="1fd42-104">Get a list of directory objects that were created by the user.</span></span>
-## <a name="permissions"></a><span data-ttu-id="1fd42-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="1fd42-105">Permissions</span></span>
-<span data-ttu-id="1fd42-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1fd42-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2fea3-104">Mit dieser API können Sie eine Liste aller vom betreffenden Benutzer erstellten Verzeichnisobjekte abrufen.</span><span class="sxs-lookup"><span data-stu-id="2fea3-104">Get a list of directory objects that were created by the user.</span></span>
+## <a name="permissions"></a><span data-ttu-id="2fea3-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="2fea3-105">Permissions</span></span>
+<span data-ttu-id="2fea3-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2fea3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1fd42-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="1fd42-108">Permission type</span></span>      | <span data-ttu-id="1fd42-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="1fd42-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2fea3-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="2fea3-108">Permission type</span></span>      | <span data-ttu-id="2fea3-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="2fea3-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1fd42-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="1fd42-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1fd42-111">User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="1fd42-111">User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="1fd42-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="1fd42-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1fd42-113">User.Read, User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1fd42-113">User.Read, User.ReadWrite</span></span>    |
-|<span data-ttu-id="1fd42-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="1fd42-114">Application</span></span> | <span data-ttu-id="1fd42-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1fd42-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="2fea3-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="2fea3-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2fea3-111">User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="2fea3-111">User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="2fea3-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="2fea3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2fea3-113">User.Read, User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2fea3-113">User.Read, User.ReadWrite</span></span>    |
+|<span data-ttu-id="2fea3-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="2fea3-114">Application</span></span> | <span data-ttu-id="2fea3-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2fea3-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1fd42-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="1fd42-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2fea3-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="2fea3-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/createdObjects
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="1fd42-117">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="1fd42-117">Optional query parameters</span></span>
-<span data-ttu-id="1fd42-118">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="1fd42-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="1fd42-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="1fd42-119">Request headers</span></span>
-| <span data-ttu-id="1fd42-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="1fd42-120">Header</span></span>       | <span data-ttu-id="1fd42-121">Wert</span><span class="sxs-lookup"><span data-stu-id="1fd42-121">Value</span></span> |
+## <a name="optional-query-parameters"></a><span data-ttu-id="2fea3-117">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="2fea3-117">Optional query parameters</span></span>
+<span data-ttu-id="2fea3-118">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="2fea3-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="2fea3-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="2fea3-119">Request headers</span></span>
+| <span data-ttu-id="2fea3-120">Header</span><span class="sxs-lookup"><span data-stu-id="2fea3-120">Header</span></span>       | <span data-ttu-id="2fea3-121">Wert</span><span class="sxs-lookup"><span data-stu-id="2fea3-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="1fd42-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="1fd42-122">Authorization</span></span>  | <span data-ttu-id="1fd42-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="1fd42-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="1fd42-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1fd42-125">Content-Type</span></span>  | <span data-ttu-id="1fd42-126">application/json</span><span class="sxs-lookup"><span data-stu-id="1fd42-126">application/json</span></span>  |
+| <span data-ttu-id="2fea3-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2fea3-122">Authorization</span></span>  | <span data-ttu-id="2fea3-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="2fea3-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="2fea3-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2fea3-125">Content-Type</span></span>  | <span data-ttu-id="2fea3-126">application/json</span><span class="sxs-lookup"><span data-stu-id="2fea3-126">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="1fd42-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="1fd42-127">Request body</span></span>
-<span data-ttu-id="1fd42-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="1fd42-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2fea3-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="2fea3-127">Request body</span></span>
+<span data-ttu-id="2fea3-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="2fea3-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1fd42-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="1fd42-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2fea3-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="2fea3-129">Response</span></span>
 
-<span data-ttu-id="1fd42-130">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [directoryObject](../resources/directoryobject.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1fd42-130">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1fd42-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="1fd42-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1fd42-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="1fd42-132">Request</span></span>
-<span data-ttu-id="1fd42-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="1fd42-133">Here is an example of the request.</span></span>
+<span data-ttu-id="2fea3-130">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [directoryObject](../resources/directoryobject.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2fea3-130">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="2fea3-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="2fea3-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2fea3-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="2fea3-132">Request</span></span>
+<span data-ttu-id="2fea3-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="2fea3-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_createdobjects"
@@ -51,8 +52,8 @@ GET /users/{id | userPrincipalName}/createdObjects
 ```http
 GET https://graph.microsoft.com/v1.0/me/createdObjects
 ```
-##### <a name="response"></a><span data-ttu-id="1fd42-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="1fd42-134">Response</span></span>
-<span data-ttu-id="1fd42-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1fd42-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="2fea3-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="2fea3-134">Response</span></span>
+<span data-ttu-id="2fea3-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2fea3-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

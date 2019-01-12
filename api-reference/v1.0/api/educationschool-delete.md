@@ -3,46 +3,47 @@ title: EducationSchool löschen
 description: Löschen einer Schule.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 50d9d39da05fc85447b7a7e8ab47a14093b292b8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: bb865ef12d0ad8eb0f18b5f9c7c9631346921e17
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861845"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923845"
 ---
-# <a name="delete-educationschool"></a><span data-ttu-id="05c23-103">EducationSchool löschen</span><span class="sxs-lookup"><span data-stu-id="05c23-103">Delete educationSchool</span></span>
+# <a name="delete-educationschool"></a><span data-ttu-id="c6728-103">EducationSchool löschen</span><span class="sxs-lookup"><span data-stu-id="c6728-103">Delete educationSchool</span></span>
 
-<span data-ttu-id="05c23-104">Löschen einer Schule.</span><span class="sxs-lookup"><span data-stu-id="05c23-104">Delete a school.</span></span>
+<span data-ttu-id="c6728-104">Löschen einer Schule.</span><span class="sxs-lookup"><span data-stu-id="c6728-104">Delete a school.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="05c23-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="05c23-105">Permissions</span></span>
-<span data-ttu-id="05c23-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="05c23-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c6728-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="c6728-105">Permissions</span></span>
+<span data-ttu-id="c6728-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c6728-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="05c23-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="05c23-108">Permission type</span></span>      | <span data-ttu-id="05c23-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="05c23-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c6728-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c6728-108">Permission type</span></span>      | <span data-ttu-id="c6728-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c6728-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="05c23-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="05c23-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="05c23-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="05c23-111">Not supported.</span></span>  |
-|<span data-ttu-id="05c23-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="05c23-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="05c23-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="05c23-113">Not supported.</span></span>  |
-|<span data-ttu-id="05c23-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="05c23-114">Application</span></span> | <span data-ttu-id="05c23-115">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="05c23-115">EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="c6728-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c6728-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="c6728-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c6728-111">Not supported.</span></span>  |
+|<span data-ttu-id="c6728-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c6728-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="c6728-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c6728-113">Not supported.</span></span>  |
+|<span data-ttu-id="c6728-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c6728-114">Application</span></span> | <span data-ttu-id="c6728-115">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c6728-115">EduRoster.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="05c23-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="05c23-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c6728-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c6728-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /education/schools/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="05c23-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="05c23-117">Request headers</span></span>
-| <span data-ttu-id="05c23-118">Header</span><span class="sxs-lookup"><span data-stu-id="05c23-118">Header</span></span>       | <span data-ttu-id="05c23-119">Wert</span><span class="sxs-lookup"><span data-stu-id="05c23-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="c6728-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="c6728-117">Request headers</span></span>
+| <span data-ttu-id="c6728-118">Header</span><span class="sxs-lookup"><span data-stu-id="c6728-118">Header</span></span>       | <span data-ttu-id="c6728-119">Wert</span><span class="sxs-lookup"><span data-stu-id="c6728-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="05c23-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="05c23-120">Authorization</span></span>  | <span data-ttu-id="05c23-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="05c23-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c6728-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c6728-120">Authorization</span></span>  | <span data-ttu-id="c6728-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c6728-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="05c23-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="05c23-123">Request body</span></span>
-<span data-ttu-id="05c23-124">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="05c23-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c6728-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c6728-123">Request body</span></span>
+<span data-ttu-id="c6728-124">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="c6728-124">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="05c23-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="05c23-125">Response</span></span>
-<span data-ttu-id="05c23-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="05c23-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c6728-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="c6728-125">Response</span></span>
+<span data-ttu-id="c6728-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c6728-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="05c23-128">Beispiel</span><span class="sxs-lookup"><span data-stu-id="05c23-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="05c23-129">Anforderung</span><span class="sxs-lookup"><span data-stu-id="05c23-129">Request</span></span>
-<span data-ttu-id="05c23-130">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="05c23-130">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c6728-128">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c6728-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c6728-129">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c6728-129">Request</span></span>
+<span data-ttu-id="c6728-130">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="c6728-130">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_educationschool"
@@ -50,8 +51,8 @@ DELETE /education/schools/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}
 ```
-##### <a name="response"></a><span data-ttu-id="05c23-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="05c23-131">Response</span></span>
-<span data-ttu-id="05c23-132">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="05c23-132">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="c6728-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="c6728-131">Response</span></span>
+<span data-ttu-id="c6728-132">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c6728-132">The following is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",

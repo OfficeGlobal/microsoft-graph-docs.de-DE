@@ -2,43 +2,45 @@
 title: eventMessage abrufen
 description: Erweitern Sie ' Parameter für das **Ereignis**
 localization_priority: Normal
-ms.openlocfilehash: 7b5caffedf798d9934403eead13147116f578d77
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 96df7d14adf4b5d2d46c559d31dcd935db29a070
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814306"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922307"
 ---
-# <a name="get-eventmessage"></a><span data-ttu-id="07458-103">eventMessage abrufen</span><span class="sxs-lookup"><span data-stu-id="07458-103">Get eventMessage</span></span>
+# <a name="get-eventmessage"></a><span data-ttu-id="5d46f-103">eventMessage abrufen</span><span class="sxs-lookup"><span data-stu-id="5d46f-103">Get eventMessage</span></span>
 
-> <span data-ttu-id="07458-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="07458-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="07458-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="07458-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="5d46f-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="5d46f-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="5d46f-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="5d46f-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="07458-106">Dient zum Abrufen der Eigenschaften und des [eventMessage](../resources/eventmessage.md)-Objekts.</span><span class="sxs-lookup"><span data-stu-id="07458-106">Get the properties and relationships of the [eventMessage](../resources/eventmessage.md) object.</span></span> <span data-ttu-id="07458-107">Anwenden der `$expand` Parameter für die Navigation **Event** -Eigenschaft das zugeordnete [Ereignis](../resources/event.md) im Kalender des Teilnehmers abgerufen.</span><span class="sxs-lookup"><span data-stu-id="07458-107">Apply the `$expand` parameter on the **event** navigation property to get the associated [event](../resources/event.md) in an attendee's calendar.</span></span>
+<span data-ttu-id="5d46f-106">Dient zum Abrufen der Eigenschaften und des [eventMessage](../resources/eventmessage.md)-Objekts.</span><span class="sxs-lookup"><span data-stu-id="5d46f-106">Get the properties and relationships of the [eventMessage](../resources/eventmessage.md) object.</span></span> <span data-ttu-id="5d46f-107">Anwenden der `$expand` Parameter für die Navigation **Event** -Eigenschaft das zugeordnete [Ereignis](../resources/event.md) im Kalender des Teilnehmers abgerufen.</span><span class="sxs-lookup"><span data-stu-id="5d46f-107">Apply the `$expand` parameter on the **event** navigation property to get the associated [event](../resources/event.md) in an attendee's calendar.</span></span>
 
-### <a name="get-the-event-message-body-in-html-or-text-format"></a><span data-ttu-id="07458-108">Abrufen des Ereignisses Nachrichtentext HTML- oder Textformat</span><span class="sxs-lookup"><span data-stu-id="07458-108">Get the event message body in HTML or text format</span></span>
+### <a name="get-the-event-message-body-in-html-or-text-format"></a><span data-ttu-id="5d46f-108">Abrufen des Ereignisses Nachrichtentext HTML- oder Textformat</span><span class="sxs-lookup"><span data-stu-id="5d46f-108">Get the event message body in HTML or text format</span></span>
 
-<span data-ttu-id="07458-109">Ereignis Nachrichtentexte können im HTML- oder Textformat sein.</span><span class="sxs-lookup"><span data-stu-id="07458-109">Event message bodies can be in HTML or text format.</span></span>
+<span data-ttu-id="5d46f-109">Ereignis Nachrichtentexte können im HTML- oder Textformat sein.</span><span class="sxs-lookup"><span data-stu-id="5d46f-109">Event message bodies can be in HTML or text format.</span></span>
 
-<span data-ttu-id="07458-110">Können die `Prefer: outlook.body-content-type` Header an das gewünschte Format zurückgegeben wird, in den Eigenschaften **Text** und **UniqueBody** in einer `GET` Anforderung:</span><span class="sxs-lookup"><span data-stu-id="07458-110">You can use the `Prefer: outlook.body-content-type` header to specify the desired format returned in the **body** and **uniqueBody** properties in a `GET` request:</span></span>
+<span data-ttu-id="5d46f-110">Können die `Prefer: outlook.body-content-type` Header an das gewünschte Format zurückgegeben wird, in den Eigenschaften **Text** und **UniqueBody** in einer `GET` Anforderung:</span><span class="sxs-lookup"><span data-stu-id="5d46f-110">You can use the `Prefer: outlook.body-content-type` header to specify the desired format returned in the **body** and **uniqueBody** properties in a `GET` request:</span></span>
 
-- <span data-ttu-id="07458-111">Geben Sie `Prefer: outlook.body-content-type="text"` abzurufenden einen Ereignis Nachrichtentext im Text-Format zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="07458-111">Specify `Prefer: outlook.body-content-type="text"` to get a event message body returned in text format.</span></span>
-- <span data-ttu-id="07458-112">Geben Sie `Prefer: outlook.body-content-type="html"`, oder einfach überspringen die Kopfzeile, um das Ereignis Nachrichtentext im HTML-Format zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="07458-112">Specify `Prefer: outlook.body-content-type="html"`, or just skip the header, to return the event message body in HTML format.</span></span>
+- <span data-ttu-id="5d46f-111">Geben Sie `Prefer: outlook.body-content-type="text"` abzurufenden einen Ereignis Nachrichtentext im Text-Format zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5d46f-111">Specify `Prefer: outlook.body-content-type="text"` to get a event message body returned in text format.</span></span>
+- <span data-ttu-id="5d46f-112">Geben Sie `Prefer: outlook.body-content-type="html"`, oder einfach überspringen die Kopfzeile, um das Ereignis Nachrichtentext im HTML-Format zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="5d46f-112">Specify `Prefer: outlook.body-content-type="html"`, or just skip the header, to return the event message body in HTML format.</span></span>
 
-<span data-ttu-id="07458-113">Wenn Sie entweder Header angeben, die Antwort enthält das entsprechende `Preference-Applied` Header als Bestätigung:</span><span class="sxs-lookup"><span data-stu-id="07458-113">If you specify either header, the response will include the corresponding `Preference-Applied` header as confirmation:</span></span>
+<span data-ttu-id="5d46f-113">Wenn Sie entweder Header angeben, die Antwort enthält das entsprechende `Preference-Applied` Header als Bestätigung:</span><span class="sxs-lookup"><span data-stu-id="5d46f-113">If you specify either header, the response will include the corresponding `Preference-Applied` header as confirmation:</span></span>
 
-- <span data-ttu-id="07458-114">Für Textformatanforderungen: `Preference-Applied: outlook.body-content-type="text"`</span><span class="sxs-lookup"><span data-stu-id="07458-114">For text format requests: `Preference-Applied: outlook.body-content-type="text"`</span></span>
-- <span data-ttu-id="07458-115">Für HTML-Formatanforderungen: `Preference-Applied: outlook.body-content-type="html"`</span><span class="sxs-lookup"><span data-stu-id="07458-115">For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`</span></span>
+- <span data-ttu-id="5d46f-114">Für Textformatanforderungen: `Preference-Applied: outlook.body-content-type="text"`</span><span class="sxs-lookup"><span data-stu-id="5d46f-114">For text format requests: `Preference-Applied: outlook.body-content-type="text"`</span></span>
+- <span data-ttu-id="5d46f-115">Für HTML-Formatanforderungen: `Preference-Applied: outlook.body-content-type="html"`</span><span class="sxs-lookup"><span data-stu-id="5d46f-115">For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="07458-116">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="07458-116">Permissions</span></span>
-<span data-ttu-id="07458-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="07458-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5d46f-116">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="5d46f-116">Permissions</span></span>
+<span data-ttu-id="5d46f-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5d46f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="07458-119">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="07458-119">Permission type</span></span>      | <span data-ttu-id="07458-120">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="07458-120">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5d46f-119">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="5d46f-119">Permission type</span></span>      | <span data-ttu-id="5d46f-120">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="5d46f-120">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="07458-121">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="07458-121">Delegated (work or school account)</span></span> | <span data-ttu-id="07458-122">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="07458-122">Mail.Read</span></span>    |
-|<span data-ttu-id="07458-123">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="07458-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="07458-124">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="07458-124">Mail.Read</span></span>    |
-|<span data-ttu-id="07458-125">Anwendung</span><span class="sxs-lookup"><span data-stu-id="07458-125">Application</span></span> | <span data-ttu-id="07458-126">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="07458-126">Mail.Read</span></span> |
+|<span data-ttu-id="5d46f-121">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="5d46f-121">Delegated (work or school account)</span></span> | <span data-ttu-id="5d46f-122">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="5d46f-122">Mail.Read</span></span>    |
+|<span data-ttu-id="5d46f-123">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="5d46f-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5d46f-124">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="5d46f-124">Mail.Read</span></span>    |
+|<span data-ttu-id="5d46f-125">Anwendung</span><span class="sxs-lookup"><span data-stu-id="5d46f-125">Application</span></span> | <span data-ttu-id="5d46f-126">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="5d46f-126">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="07458-127">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="07458-127">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5d46f-127">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="5d46f-127">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}
@@ -47,22 +49,22 @@ GET /users/{id | userPrincipalName}/messages/{id}
 GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="07458-128">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="07458-128">Optional query parameters</span></span>
-<span data-ttu-id="07458-129">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="07458-129">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="07458-130">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="07458-130">Request headers</span></span>
-| <span data-ttu-id="07458-131">Name</span><span class="sxs-lookup"><span data-stu-id="07458-131">Name</span></span>       | <span data-ttu-id="07458-132">Typ</span><span class="sxs-lookup"><span data-stu-id="07458-132">Type</span></span> | <span data-ttu-id="07458-133">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="07458-133">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="5d46f-128">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="5d46f-128">Optional query parameters</span></span>
+<span data-ttu-id="5d46f-129">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="5d46f-129">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5d46f-130">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="5d46f-130">Request headers</span></span>
+| <span data-ttu-id="5d46f-131">Name</span><span class="sxs-lookup"><span data-stu-id="5d46f-131">Name</span></span>       | <span data-ttu-id="5d46f-132">Typ</span><span class="sxs-lookup"><span data-stu-id="5d46f-132">Type</span></span> | <span data-ttu-id="5d46f-133">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="5d46f-133">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="07458-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="07458-134">Authorization</span></span>  | <span data-ttu-id="07458-135">string</span><span class="sxs-lookup"><span data-stu-id="07458-135">string</span></span>  | <span data-ttu-id="07458-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="07458-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5d46f-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="5d46f-134">Authorization</span></span>  | <span data-ttu-id="5d46f-135">string</span><span class="sxs-lookup"><span data-stu-id="5d46f-135">string</span></span>  | <span data-ttu-id="5d46f-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="5d46f-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="07458-138">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="07458-138">Request body</span></span>
-<span data-ttu-id="07458-139">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="07458-139">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5d46f-138">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="5d46f-138">Request body</span></span>
+<span data-ttu-id="5d46f-139">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="5d46f-139">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="07458-140">Antwort</span><span class="sxs-lookup"><span data-stu-id="07458-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5d46f-140">Antwort</span><span class="sxs-lookup"><span data-stu-id="5d46f-140">Response</span></span>
 
-<span data-ttu-id="07458-141">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [eventMessage](../resources/eventmessage.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="07458-141">If successful, this method returns a `200 OK` response code and [eventMessage](../resources/eventmessage.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="07458-142">Beispiel</span><span class="sxs-lookup"><span data-stu-id="07458-142">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="07458-143">Anforderung 1</span><span class="sxs-lookup"><span data-stu-id="07458-143">Request 1</span></span>
-<span data-ttu-id="07458-144">Das erste Beispiel zeigt, wie Sie die Eigenschaften einer Ereignisnachricht basierend auf der Ereignisnachrichten-ID abrufen.</span><span class="sxs-lookup"><span data-stu-id="07458-144">The first example shows how to get the properties of an event message based on the event message ID.</span></span>
+<span data-ttu-id="5d46f-141">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [eventMessage](../resources/eventmessage.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5d46f-141">If successful, this method returns a `200 OK` response code and [eventMessage](../resources/eventmessage.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="5d46f-142">Beispiel</span><span class="sxs-lookup"><span data-stu-id="5d46f-142">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="5d46f-143">Anforderung 1</span><span class="sxs-lookup"><span data-stu-id="5d46f-143">Request 1</span></span>
+<span data-ttu-id="5d46f-144">Das erste Beispiel zeigt, wie Sie die Eigenschaften einer Ereignisnachricht basierend auf der Ereignisnachrichten-ID abrufen.</span><span class="sxs-lookup"><span data-stu-id="5d46f-144">The first example shows how to get the properties of an event message based on the event message ID.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_eventmessage"
@@ -70,8 +72,8 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```http
 GET https://graph.microsoft.com/beta/me/messages('AAMkADYAAAImV_lAAA=')
 ```
-##### <a name="response-1"></a><span data-ttu-id="07458-145">Antwort 1</span><span class="sxs-lookup"><span data-stu-id="07458-145">Response 1</span></span>
-<span data-ttu-id="07458-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="07458-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="5d46f-145">Antwort 1</span><span class="sxs-lookup"><span data-stu-id="5d46f-145">Response 1</span></span>
+<span data-ttu-id="5d46f-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5d46f-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
@@ -177,8 +179,8 @@ Content-type: application/json
 ```
 
 
-##### <a name="request-2"></a><span data-ttu-id="07458-149">Anforderung 2</span><span class="sxs-lookup"><span data-stu-id="07458-149">Request 2</span></span>
-<span data-ttu-id="07458-150">Das zweite Beispiel zeigt, wie das mit einer Ereignisnachricht verknüpfte Ereignis abgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="07458-150">The second example shows how to get the event associated with an event message.</span></span> <span data-ttu-id="07458-151">Es verwendet die Ereignisnachrichten-ID zum Abrufen der Ereignisnachricht, bietet explizit eine Umwandlung der Ereignisnachricht für den Zugriff auf die **event**-Navigationseigenschaft und wendet einen $expand-Parameter zum Abrufen der Ereigniseigenschaften an.</span><span class="sxs-lookup"><span data-stu-id="07458-151">It uses the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, and apply an $expand parameter to get the properties of the event.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="5d46f-149">Anforderung 2</span><span class="sxs-lookup"><span data-stu-id="5d46f-149">Request 2</span></span>
+<span data-ttu-id="5d46f-150">Das zweite Beispiel zeigt, wie das mit einer Ereignisnachricht verknüpfte Ereignis abgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="5d46f-150">The second example shows how to get the event associated with an event message.</span></span> <span data-ttu-id="5d46f-151">Es verwendet die Ereignisnachrichten-ID zum Abrufen der Ereignisnachricht, bietet explizit eine Umwandlung der Ereignisnachricht für den Zugriff auf die **event**-Navigationseigenschaft und wendet einen $expand-Parameter zum Abrufen der Ereigniseigenschaften an.</span><span class="sxs-lookup"><span data-stu-id="5d46f-151">It uses the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, and apply an $expand parameter to get the properties of the event.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_event_based_on_eventmessage"
@@ -186,9 +188,9 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/beta/me/messages('AAMkADYAAAImV_jAAA=')?$expand=microsoft.graph.eventMessage/event
 ```
-##### <a name="response-2"></a><span data-ttu-id="07458-152">Antwort 2</span><span class="sxs-lookup"><span data-stu-id="07458-152">Response 2</span></span>
-<span data-ttu-id="07458-153">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="07458-153">Here is an example of the response.</span></span> <span data-ttu-id="07458-154">Die Eigenschaften des zugeordneten Ereignisses werden in der Antwort zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="07458-154">The properties of the associated event are returned in the response.</span></span>
-<span data-ttu-id="07458-155">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten.</span><span class="sxs-lookup"><span data-stu-id="07458-155">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="07458-156">Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="07458-156">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="5d46f-152">Antwort 2</span><span class="sxs-lookup"><span data-stu-id="5d46f-152">Response 2</span></span>
+<span data-ttu-id="5d46f-153">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="5d46f-153">Here is an example of the response.</span></span> <span data-ttu-id="5d46f-154">Die Eigenschaften des zugeordneten Ereignisses werden in der Antwort zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5d46f-154">The properties of the associated event are returned in the response.</span></span>
+<span data-ttu-id="5d46f-155">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten.</span><span class="sxs-lookup"><span data-stu-id="5d46f-155">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="5d46f-156">Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5d46f-156">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",
