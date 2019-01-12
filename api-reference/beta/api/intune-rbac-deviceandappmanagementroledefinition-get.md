@@ -3,30 +3,31 @@ title: deviceAndAppManagementRoleDefinition abrufen
 description: Lesen von Eigenschaften und Beziehungen des deviceAndAppManagementRoleDefinition-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: adcd7032b557ddbe4c73f093ee28ea36ca06355c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 090fb1b3d6a041f6aee903462dd85cb1861ab564
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832539"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930179"
 ---
-# <a name="get-deviceandappmanagementroledefinition"></a><span data-ttu-id="f0eb2-103">deviceAndAppManagementRoleDefinition abrufen</span><span class="sxs-lookup"><span data-stu-id="f0eb2-103">Get deviceAndAppManagementRoleDefinition</span></span>
+# <a name="get-deviceandappmanagementroledefinition"></a><span data-ttu-id="43982-103">deviceAndAppManagementRoleDefinition abrufen</span><span class="sxs-lookup"><span data-stu-id="43982-103">Get deviceAndAppManagementRoleDefinition</span></span>
 
-> <span data-ttu-id="f0eb2-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="f0eb2-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f0eb2-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="f0eb2-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="43982-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="43982-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="43982-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="43982-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="f0eb2-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="f0eb2-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="43982-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="43982-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="f0eb2-107">Lesen von Eigenschaften und Beziehungen des [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md)-Objekts.</span><span class="sxs-lookup"><span data-stu-id="f0eb2-107">Read properties and relationships of the [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="f0eb2-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="f0eb2-108">Prerequisites</span></span>
-<span data-ttu-id="f0eb2-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f0eb2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="43982-107">Lesen von Eigenschaften und Beziehungen des [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md)-Objekts.</span><span class="sxs-lookup"><span data-stu-id="43982-107">Read properties and relationships of the [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="43982-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="43982-108">Prerequisites</span></span>
+<span data-ttu-id="43982-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="43982-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f0eb2-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="f0eb2-111">Permission type</span></span>|<span data-ttu-id="f0eb2-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="f0eb2-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="43982-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="43982-111">Permission type</span></span>|<span data-ttu-id="43982-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="43982-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="f0eb2-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="f0eb2-113">Delegated (work or school account)</span></span>|<span data-ttu-id="f0eb2-114">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="f0eb2-114">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
-|<span data-ttu-id="f0eb2-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="f0eb2-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f0eb2-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="f0eb2-116">Not supported.</span></span>|
-|<span data-ttu-id="f0eb2-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="f0eb2-117">Application</span></span>|<span data-ttu-id="f0eb2-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="f0eb2-118">Not supported.</span></span>|
+|<span data-ttu-id="43982-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="43982-113">Delegated (work or school account)</span></span>|<span data-ttu-id="43982-114">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="43982-114">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
+|<span data-ttu-id="43982-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="43982-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="43982-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="43982-116">Not supported.</span></span>|
+|<span data-ttu-id="43982-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="43982-117">Application</span></span>|<span data-ttu-id="43982-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="43982-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="f0eb2-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="f0eb2-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="43982-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="43982-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,29 +37,29 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}
 GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/roleDefinition
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="f0eb2-120">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="f0eb2-120">Optional query parameters</span></span>
-<span data-ttu-id="f0eb2-121">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="f0eb2-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="f0eb2-122">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="f0eb2-122">Request headers</span></span>
-|<span data-ttu-id="f0eb2-123">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="f0eb2-123">Header</span></span>|<span data-ttu-id="f0eb2-124">Wert</span><span class="sxs-lookup"><span data-stu-id="f0eb2-124">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="43982-120">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="43982-120">Optional query parameters</span></span>
+<span data-ttu-id="43982-121">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="43982-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="43982-122">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="43982-122">Request headers</span></span>
+|<span data-ttu-id="43982-123">Header</span><span class="sxs-lookup"><span data-stu-id="43982-123">Header</span></span>|<span data-ttu-id="43982-124">Wert</span><span class="sxs-lookup"><span data-stu-id="43982-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="f0eb2-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="f0eb2-125">Authorization</span></span>|<span data-ttu-id="f0eb2-126">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="f0eb2-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="f0eb2-127">Annehmen</span><span class="sxs-lookup"><span data-stu-id="f0eb2-127">Accept</span></span>|<span data-ttu-id="f0eb2-128">application/json</span><span class="sxs-lookup"><span data-stu-id="f0eb2-128">application/json</span></span>|
+|<span data-ttu-id="43982-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="43982-125">Authorization</span></span>|<span data-ttu-id="43982-126">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="43982-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="43982-127">Annehmen</span><span class="sxs-lookup"><span data-stu-id="43982-127">Accept</span></span>|<span data-ttu-id="43982-128">application/json</span><span class="sxs-lookup"><span data-stu-id="43982-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f0eb2-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="f0eb2-129">Request body</span></span>
-<span data-ttu-id="f0eb2-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="f0eb2-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="43982-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="43982-129">Request body</span></span>
+<span data-ttu-id="43982-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="43982-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f0eb2-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="f0eb2-131">Response</span></span>
-<span data-ttu-id="f0eb2-132">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="f0eb2-132">If successful, this method returns a `200 OK` response code and [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="43982-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="43982-131">Response</span></span>
+<span data-ttu-id="43982-132">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="43982-132">If successful, this method returns a `200 OK` response code and [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f0eb2-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f0eb2-133">Example</span></span>
-### <a name="request"></a><span data-ttu-id="f0eb2-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="f0eb2-134">Request</span></span>
-<span data-ttu-id="f0eb2-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="f0eb2-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="43982-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="43982-133">Example</span></span>
+### <a name="request"></a><span data-ttu-id="43982-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="43982-134">Request</span></span>
+<span data-ttu-id="43982-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="43982-135">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefinitionId}
 ```
 
-### <a name="response"></a><span data-ttu-id="f0eb2-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="f0eb2-136">Response</span></span>
-<span data-ttu-id="f0eb2-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="f0eb2-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="43982-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="43982-136">Response</span></span>
+<span data-ttu-id="43982-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="43982-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
