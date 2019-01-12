@@ -2,12 +2,14 @@
 title: Registrieren Ihrer App beim Azure AD v2.0-Endpunkt
 description: 'Ihre App muss bei Azure AD registriert werden. Durch Registrieren Ihrer App werden eine eindeutige Anwendungs-ID und andere Werte erstellt, die die App zum Authentifizieren bei Azure AD und zum Abrufen von Tokens verwendet. Für den Azure AD v2.0-Endpunkt registrieren Sie Ihre App mit dem Microsoft App-Registrierungsportal. Sie können entweder ein Microsoft-Konto oder ein Geschäfts-, Schul- oder Unikonto zum Registrieren Ihrer App verwenden. Abhängig vom Typ der von Ihnen entwickelten App müssen Sie während der Registrierung eine oder mehrere Eigenschaften kopieren, die beim Konfigurieren von Authentifizierung und Autorisierung für die App verwendet werden sollen. '
 author: jackson-woods
-ms.openlocfilehash: 10f955e63cbf6fd53dc357fd8772ac3364b8c84a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 87bff46dcb18585ba0814a5848f3cd67deb855d1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348832"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930558"
 ---
 # <a name="register-your-app-with-the-azure-ad-v20-endpoint"></a>Registrieren Ihrer App beim Azure AD v2.0-Endpunkt
 

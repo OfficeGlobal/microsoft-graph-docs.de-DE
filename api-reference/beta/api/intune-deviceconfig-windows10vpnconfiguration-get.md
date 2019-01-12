@@ -3,12 +3,13 @@ title: Abrufen von windows10VpnConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des windows10VpnConfiguration-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9e8d3dd31801ad7786add430d4dba2edf26335eb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e74239e1608149f6ad9f33225ca714670a4953af
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833677"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930929"
 ---
 # <a name="get-windows10vpnconfiguration"></a>Abrufen von windows10VpnConfiguration
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

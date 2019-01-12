@@ -3,12 +3,13 @@ title: targetedManagedAppPolicyAssignment aktualisieren
 description: Aktualisieren der Eigenschaften eines targetedManagedAppPolicyAssignment-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ba9b7d362360cf12b7af4627721892ef68143efa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5d20413017c9a1063204273574bb9b24e8ba31b4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829946"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927765"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>targetedManagedAppPolicyAssignment aktualisieren
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -50,7 +51,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Id|
+|id|Zeichenfolge|Id|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Bezeichner für die Bereitstellung einer Gruppe oder App|
 
 

@@ -1,12 +1,15 @@
 ---
 title: Verwenden von Arbeitsmappenfunktionen in Excel mit Microsoft Graph
 description: Mithilfe der Syntax `POST /workbook/functions/{function-name}` können Sie jede beliebige Arbeitsmappenfunktion aufrufen. Die Funktionsargumente werden in Form eines JSON-Objekts im Text angegeben. Der Ergebniswert `value` der Funktion sowie alle Zeichenfolgen des Typs `error` werden im Funktionsergebnisobjekt zurückgegeben. Wird für den Wert `error` `null` zurückgegeben, bedeutet das, dass die Funktion erfolgreich ausgeführt wurde.
-ms.openlocfilehash: 36b07277123ccb04de5607a513cee6f576be5550
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 868695eb6f3ab4ddd7354512477d4abcf0708d8d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092336"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929977"
 ---
 # <a name="use-workbook-functions-in-excel-with-microsoft-graph"></a>Verwenden von Arbeitsmappenfunktionen in Excel mit Microsoft Graph
 
