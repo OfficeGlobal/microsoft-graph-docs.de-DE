@@ -3,29 +3,30 @@ title: appConfigurationSettingItem-Ressourcentyp
 description: Enthält die Eigenschaften für ein App-Konfigurationseinstellungselement.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 900a16544b0166263b7d40c428c2c4cbaf5a0bb6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ddb7b503ff14e6499342fafc2d0cf5ab8e670138
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830422"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960336"
 ---
-# <a name="appconfigurationsettingitem-resource-type"></a><span data-ttu-id="b7770-103">appConfigurationSettingItem-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="b7770-103">appConfigurationSettingItem resource type</span></span>
+# <a name="appconfigurationsettingitem-resource-type"></a><span data-ttu-id="58a0f-103">appConfigurationSettingItem-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="58a0f-103">appConfigurationSettingItem resource type</span></span>
 
-> <span data-ttu-id="b7770-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="b7770-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="58a0f-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="58a0f-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="b7770-105">Enthält die Eigenschaften für ein App-Konfigurationseinstellungselement.</span><span class="sxs-lookup"><span data-stu-id="b7770-105">Contains properties for App configuration setting item.</span></span>
-## <a name="properties"></a><span data-ttu-id="b7770-106">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="b7770-106">Properties</span></span>
-|<span data-ttu-id="b7770-107">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="b7770-107">Property</span></span>|<span data-ttu-id="b7770-108">Typ</span><span class="sxs-lookup"><span data-stu-id="b7770-108">Type</span></span>|<span data-ttu-id="b7770-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b7770-109">Description</span></span>|
+<span data-ttu-id="58a0f-105">Enthält die Eigenschaften für ein App-Konfigurationseinstellungselement.</span><span class="sxs-lookup"><span data-stu-id="58a0f-105">Contains properties for App configuration setting item.</span></span>
+## <a name="properties"></a><span data-ttu-id="58a0f-106">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="58a0f-106">Properties</span></span>
+|<span data-ttu-id="58a0f-107">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="58a0f-107">Property</span></span>|<span data-ttu-id="58a0f-108">Typ</span><span class="sxs-lookup"><span data-stu-id="58a0f-108">Type</span></span>|<span data-ttu-id="58a0f-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="58a0f-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b7770-110">appConfigKey</span><span class="sxs-lookup"><span data-stu-id="b7770-110">appConfigKey</span></span>|<span data-ttu-id="b7770-111">String</span><span class="sxs-lookup"><span data-stu-id="b7770-111">String</span></span>|<span data-ttu-id="b7770-112">App-Konfigurationsschlüssel</span><span class="sxs-lookup"><span data-stu-id="b7770-112">app configuration key.</span></span>|
-|<span data-ttu-id="b7770-113">appConfigKeyType</span><span class="sxs-lookup"><span data-stu-id="b7770-113">appConfigKeyType</span></span>|[<span data-ttu-id="b7770-114">mdmAppConfigKeyType</span><span class="sxs-lookup"><span data-stu-id="b7770-114">mdmAppConfigKeyType</span></span>](../resources/intune-apps-mdmappconfigkeytype.md)|<span data-ttu-id="b7770-115">Typs des App-Konfigurationsschlüssels.</span><span class="sxs-lookup"><span data-stu-id="b7770-115">app configuration key type.</span></span> <span data-ttu-id="b7770-116">Mögliche Werte: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.</span><span class="sxs-lookup"><span data-stu-id="b7770-116">Possible values are: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.</span></span>|
-|<span data-ttu-id="b7770-117">appConfigKeyValue</span><span class="sxs-lookup"><span data-stu-id="b7770-117">appConfigKeyValue</span></span>|<span data-ttu-id="b7770-118">String</span><span class="sxs-lookup"><span data-stu-id="b7770-118">String</span></span>|<span data-ttu-id="b7770-119">Wert des App-Konfigurationsschlüssels</span><span class="sxs-lookup"><span data-stu-id="b7770-119">app configuration key value.</span></span>|
+|<span data-ttu-id="58a0f-110">appConfigKey</span><span class="sxs-lookup"><span data-stu-id="58a0f-110">appConfigKey</span></span>|<span data-ttu-id="58a0f-111">String</span><span class="sxs-lookup"><span data-stu-id="58a0f-111">String</span></span>|<span data-ttu-id="58a0f-112">App-Konfigurationsschlüssel</span><span class="sxs-lookup"><span data-stu-id="58a0f-112">app configuration key.</span></span>|
+|<span data-ttu-id="58a0f-113">appConfigKeyType</span><span class="sxs-lookup"><span data-stu-id="58a0f-113">appConfigKeyType</span></span>|[<span data-ttu-id="58a0f-114">mdmAppConfigKeyType</span><span class="sxs-lookup"><span data-stu-id="58a0f-114">mdmAppConfigKeyType</span></span>](../resources/intune-apps-mdmappconfigkeytype.md)|<span data-ttu-id="58a0f-115">Typs des App-Konfigurationsschlüssels.</span><span class="sxs-lookup"><span data-stu-id="58a0f-115">app configuration key type.</span></span> <span data-ttu-id="58a0f-116">Mögliche Werte: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.</span><span class="sxs-lookup"><span data-stu-id="58a0f-116">Possible values are: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.</span></span>|
+|<span data-ttu-id="58a0f-117">appConfigKeyValue</span><span class="sxs-lookup"><span data-stu-id="58a0f-117">appConfigKeyValue</span></span>|<span data-ttu-id="58a0f-118">String</span><span class="sxs-lookup"><span data-stu-id="58a0f-118">String</span></span>|<span data-ttu-id="58a0f-119">Wert des App-Konfigurationsschlüssels</span><span class="sxs-lookup"><span data-stu-id="58a0f-119">app configuration key value.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="b7770-120">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="b7770-120">Relationships</span></span>
-<span data-ttu-id="b7770-121">Keine</span><span class="sxs-lookup"><span data-stu-id="b7770-121">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="b7770-122">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="b7770-122">JSON Representation</span></span>
-<span data-ttu-id="b7770-123">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="b7770-123">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="58a0f-120">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="58a0f-120">Relationships</span></span>
+<span data-ttu-id="58a0f-121">Keine</span><span class="sxs-lookup"><span data-stu-id="58a0f-121">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="58a0f-122">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="58a0f-122">JSON Representation</span></span>
+<span data-ttu-id="58a0f-123">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="58a0f-123">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appConfigurationSettingItem"
