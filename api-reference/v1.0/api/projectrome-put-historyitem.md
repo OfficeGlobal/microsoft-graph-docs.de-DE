@@ -2,29 +2,30 @@
 title: Erstellen oder Ersetzen einer historyItem
 description: Erstellen Sie ein neues oder Ersetzen Sie vorhandenes Verlaufselement für einen vorhandenen Benutzeraktivität.
 localization_priority: Normal
-ms.openlocfilehash: b3462edef2c210399e4dd653e9b3c7d91bb67875
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 21c4420ff64d105a5512df1f9a57a5e8309413f9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856294"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913002"
 ---
-# <a name="create-or-replace-a-historyitem"></a><span data-ttu-id="2261c-103">Erstellen oder Ersetzen einer historyItem</span><span class="sxs-lookup"><span data-stu-id="2261c-103">Create or replace a historyItem</span></span>
+# <a name="create-or-replace-a-historyitem"></a><span data-ttu-id="da027-103">Erstellen oder Ersetzen einer historyItem</span><span class="sxs-lookup"><span data-stu-id="da027-103">Create or replace a historyItem</span></span>
 
-<span data-ttu-id="2261c-104">Erstellen Sie ein neues oder Ersetzen Sie vorhandenes Verlaufselement für einen vorhandenen Benutzeraktivität.</span><span class="sxs-lookup"><span data-stu-id="2261c-104">Create a new or replace an existing history item for an existing user activity.</span></span>
+<span data-ttu-id="da027-104">Erstellen Sie ein neues oder Ersetzen Sie vorhandenes Verlaufselement für einen vorhandenen Benutzeraktivität.</span><span class="sxs-lookup"><span data-stu-id="da027-104">Create a new or replace an existing history item for an existing user activity.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2261c-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="2261c-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="da027-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="da027-105">Permissions</span></span>
 
-<span data-ttu-id="2261c-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2261c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="da027-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="da027-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="2261c-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="2261c-108">Permission type</span></span>      | <span data-ttu-id="2261c-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="2261c-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="da027-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="da027-108">Permission type</span></span>      | <span data-ttu-id="da027-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="da027-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2261c-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="2261c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2261c-111">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="2261c-111">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="2261c-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="2261c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2261c-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="2261c-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="2261c-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="2261c-114">Application</span></span> | <span data-ttu-id="2261c-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="2261c-115">Not supported.</span></span> |
+|<span data-ttu-id="da027-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="da027-110">Delegated (work or school account)</span></span> | <span data-ttu-id="da027-111">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="da027-111">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="da027-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="da027-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="da027-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="da027-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="da027-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="da027-114">Application</span></span> | <span data-ttu-id="da027-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="da027-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2261c-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="2261c-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="da027-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="da027-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -32,27 +33,27 @@ ms.locfileid: "27856294"
 PUT /me/activities/{id}/historyItems/{id}
 ```
 
-<span data-ttu-id="2261c-117">ID muss eine GUID sein.</span><span class="sxs-lookup"><span data-stu-id="2261c-117">Id needs to be a GUID.</span></span>
+<span data-ttu-id="da027-117">ID muss eine GUID sein.</span><span class="sxs-lookup"><span data-stu-id="da027-117">Id needs to be a GUID.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="2261c-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="2261c-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="da027-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="da027-118">Request headers</span></span>
 
-|<span data-ttu-id="2261c-119">Name</span><span class="sxs-lookup"><span data-stu-id="2261c-119">Name</span></span> | <span data-ttu-id="2261c-120">Typ</span><span class="sxs-lookup"><span data-stu-id="2261c-120">Type</span></span> | <span data-ttu-id="2261c-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2261c-121">Description</span></span>|
+|<span data-ttu-id="da027-119">Name</span><span class="sxs-lookup"><span data-stu-id="da027-119">Name</span></span> | <span data-ttu-id="da027-120">Typ</span><span class="sxs-lookup"><span data-stu-id="da027-120">Type</span></span> | <span data-ttu-id="da027-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="da027-121">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="2261c-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2261c-122">Authorization</span></span> | <span data-ttu-id="2261c-123">string</span><span class="sxs-lookup"><span data-stu-id="2261c-123">string</span></span> | <span data-ttu-id="2261c-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="2261c-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="da027-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="da027-122">Authorization</span></span> | <span data-ttu-id="da027-123">string</span><span class="sxs-lookup"><span data-stu-id="da027-123">string</span></span> | <span data-ttu-id="da027-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="da027-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2261c-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="2261c-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="da027-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="da027-126">Request body</span></span>
 
-<span data-ttu-id="2261c-127">Geben Sie im Textkörper Anforderung eine JSON-Darstellung eines [HistoryItem](../resources/projectrome-historyitem.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="2261c-127">In the request body, supply a JSON representation of a [historyItem](../resources/projectrome-historyitem.md) object.</span></span>
+<span data-ttu-id="da027-127">Geben Sie im Textkörper Anforderung eine JSON-Darstellung eines [HistoryItem](../resources/projectrome-historyitem.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="da027-127">In the request body, supply a JSON representation of a [historyItem](../resources/projectrome-historyitem.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2261c-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="2261c-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="da027-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="da027-128">Response</span></span>
 
-<span data-ttu-id="2261c-129">Wenn der Vorgang erfolgreich war, gibt diese Methode die `201 Created` Antwortcode, wenn die HistoryItem erstellt wurde oder `200 OK` , wenn die HistoryItem ersetzt wurde.</span><span class="sxs-lookup"><span data-stu-id="2261c-129">If successful, this method returns the `201 Created` response code if the historyItem was created or `200 OK` if the historyItem was replaced.</span></span>
+<span data-ttu-id="da027-129">Wenn der Vorgang erfolgreich war, gibt diese Methode die `201 Created` Antwortcode, wenn die HistoryItem erstellt wurde oder `200 OK` , wenn die HistoryItem ersetzt wurde.</span><span class="sxs-lookup"><span data-stu-id="da027-129">If successful, this method returns the `201 Created` response code if the historyItem was created or `200 OK` if the historyItem was replaced.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2261c-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="2261c-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="da027-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="da027-130">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2261c-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="2261c-131">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="da027-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="da027-131">Request</span></span>
 
-<span data-ttu-id="2261c-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="2261c-132">Here is an example of the request.</span></span>
+<span data-ttu-id="da027-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="da027-132">Here is an example of the request.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -71,9 +72,9 @@ Content-length: 364
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="2261c-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="2261c-133">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="da027-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="da027-133">Response</span></span>
 
-<span data-ttu-id="2261c-134">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="2261c-134">Here is an example of the response.</span></span>
+<span data-ttu-id="da027-134">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="da027-134">Here is an example of the response.</span></span>
 
 <!-- {
     "blockType": "ignored",
