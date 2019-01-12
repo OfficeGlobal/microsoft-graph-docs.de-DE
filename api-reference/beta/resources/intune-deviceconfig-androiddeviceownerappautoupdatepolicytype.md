@@ -2,12 +2,14 @@
 title: AndroidDeviceOwnerAppAutoUpdatePolicyType Enum-Typ
 description: Android-Gerät Besitzer mögliche Werte für Status des Geräts app Auto Richtlinie aktualisiert werden.
 localization_priority: Normal
-ms.openlocfilehash: 721d08220553bf6acfaac0f84bf0d71725c39ba6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: f784e951df2a9d1ee56825649da3899b0792c3a6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834118"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973608"
 ---
 # <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a>AndroidDeviceOwnerAppAutoUpdatePolicyType Enum-Typ
 

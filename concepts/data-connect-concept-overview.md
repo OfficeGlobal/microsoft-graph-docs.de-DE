@@ -2,12 +2,14 @@
 title: Übersicht über Microsoft Graph Data Connect (Vorschau)
 description: Microsoft Graph enthält umfassende Informationen zu Mitarbeitern und ihrem Arbeitsplatz, einschließlich Informationen dazu, wie Mitarbeiter arbeiten und sie kommunizieren, zusammenarbeiten und ihre Zeit verwalten. Microsoft Graph Data Connect liefert diese Daten an Microsoft Azure, sodass Sie Zugriff auf die besten Entwicklungs- und Hostingtools erhalten, um mit diesen Daten zu arbeiten. Dadurch können Kunden von innovativen oder branchenspezifischen Anwendungen profitieren, die ihre Produktivität verbessern, während sie gleichzeitig die vollständige Kontrolle über ihre Microsoft Graph-Kundendaten behalten. Microsoft bietet die sichere Kontrolle, die Kunden erwarten.
 author: ajacks-msft
-ms.openlocfilehash: 4f621dc40f99ec7b827ecb5cec61d6c2916b7ada
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: data-connect
+ms.openlocfilehash: 8d12b35dfaa8b5a787d373c55ffbaafe2f69ac1f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323373"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969079"
 ---
 # <a name="overview-of-microsoft-graph-data-connect-preview"></a>Übersicht über Microsoft Graph Data Connect (Vorschau)
 Microsoft Graph enthält umfassende Informationen zu Mitarbeitern und ihrem Arbeitsplatz, einschließlich Informationen dazu, wie Mitarbeiter arbeiten und sie kommunizieren, zusammenarbeiten und ihre Zeit verwalten. Microsoft Graph Data Connect liefert diese Daten an Microsoft Azure, sodass Sie Zugriff auf die besten Entwicklungs- und Hostingtools erhalten, um mit diesen Daten zu arbeiten. Dadurch können Kunden von innovativen oder branchenspezifischen Anwendungen profitieren, die ihre Produktivität verbessern, während sie gleichzeitig die vollständige Kontrolle über ihre Microsoft Graph-Kundendaten behalten. Microsoft bietet die sichere Kontrolle, die Kunden erwarten.

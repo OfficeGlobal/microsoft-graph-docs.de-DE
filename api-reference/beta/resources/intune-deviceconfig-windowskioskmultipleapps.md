@@ -3,12 +3,13 @@ title: Ressourcentyp windowsKioskMultipleApps
 description: Die Klasse verwendet, um die Konfiguration der Multi-Mode app für die Kiosk-Konfiguration identifizieren
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 01758c66a466b66fcba6b443f80d0350d308756d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3770f8c63be230dff97e43d3706ed35d79826751
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851205"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977129"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>Ressourcentyp windowsKioskMultipleApps
 

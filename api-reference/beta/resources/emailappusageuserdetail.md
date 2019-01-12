@@ -2,12 +2,14 @@
 title: Ressourcentyp emailAppUsageUserDetail
 description: Es folgt eine JSON-Darstellung der Ressource.
 localization_priority: Normal
-ms.openlocfilehash: 9f1748d6ae3b313fd9f3a87cc211858b5b876b9a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 1ebc99f25bf0b16343f48686496c1dbd7d329e65
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858947"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977654"
 ---
 # <a name="emailappusageuserdetail-resource-type"></a>Ressourcentyp emailAppUsageUserDetail
 
@@ -16,9 +18,9 @@ ms.locfileid: "27858947"
 | Eigenschaft          | Typ              |
 | :---------------- | :---------------- |
 | reportRefreshDate | Datum              |
-| userPrincipalName | String            |
-| displayName       | String            |
-| isDeleted         | Boolean           |
+| userPrincipalName | Zeichenfolge            |
+| displayName       | Zeichenfolge            |
+| isDeleted         | Boolescher Wert           |
 | deletedDate       | Datum              |
 | lastActivityDate  | Datum              |
 | mailForMac        | Collection von Objekten des Typs „String“ |
@@ -30,7 +32,7 @@ ms.locfileid: "27858947"
 | pop3App           | Collection von Objekten des Typs „String“ |
 | imap4App          | Collection von Objekten des Typs „String“ |
 | smtpApp           | Collection von Objekten des Typs „String“ |
-| reportPeriod      | String            |
+| reportPeriod      | Zeichenfolge            |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

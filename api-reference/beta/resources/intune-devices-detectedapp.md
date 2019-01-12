@@ -3,12 +3,13 @@ title: detectedApp-Ressourcentyp
 description: Eine verwaltete oder nicht verwaltete App, die auf einem verwalteten Gerät installiert ist. Nicht verwaltete Apps werden nur für als unternehmenseigen gekennzeichnete Geräte angezeigt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f62e41b51d2b22d9524a0e86775e5f1cf9526618
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ddc854a825241b2a7b87d18faaaa7e8399c2fb1c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890076"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968890"
 ---
 # <a name="detectedapp-resource-type"></a>detectedApp-Ressourcentyp
 

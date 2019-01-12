@@ -3,12 +3,13 @@ title: ownedDevices auflisten
 description: Mit dieser API können Sie eine Liste aller Geräte abrufen, denen der betreffende Benutzer als Besitzer zugewiesen ist.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: e3d74044c7dccbe85965bef052804d51ee3688ef
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 77a253906626c7655a85769a08fee12b8c38b6a1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816730"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968568"
 ---
 # <a name="list-owneddevices"></a>ownedDevices auflisten
 
@@ -32,7 +33,7 @@ GET /users/{id | userPrincipalName}/ownedDevices
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Annehmen  | application/json|

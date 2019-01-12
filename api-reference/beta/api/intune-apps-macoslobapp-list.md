@@ -3,12 +3,13 @@ title: Liste macOSLobApps
 description: Listeneigenschaften und Beziehungen der MacOSLobApp-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 80367f7fe096f0b23edb6f6c12ee2360fbfbfdd5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0425a1444deac68baf69d698b622133dec5d0205
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859591"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969359"
 ---
 # <a name="list-macoslobapps"></a>Liste macOSLobApps
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

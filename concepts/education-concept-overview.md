@@ -2,12 +2,14 @@
 title: Übersicht über die Bildungs-API
 description: Mit Bildungs-APIs in Microsoft Graph werden Office 365-Ressourcen mithilfe von Informationen optimiert, die für Bildungsszenarien, u. a. Schulen, Kurse, Benutzer (Schüler/Studenten und Lehrer), Aufgaben und Übermittlungen relevant sind. Dies erleichtert das Erstellen von Lösungen, die in Bildungsressourcen für verschiedene Schul- und Kursraumszenarien integriert werden.
 author: mmast-msft
-ms.openlocfilehash: 2085c9be619e3de5eb4df457579461445423113a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: education
+ms.openlocfilehash: 0d3f5360d0ef40283021a1e037c40df66d90dd92
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344989"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985487"
 ---
 # <a name="education-api-overview"></a>Übersicht über die Bildungs-API
 

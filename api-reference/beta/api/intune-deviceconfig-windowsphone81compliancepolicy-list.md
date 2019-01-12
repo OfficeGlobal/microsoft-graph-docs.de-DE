@@ -3,12 +3,13 @@ title: Auflisten von „windowsPhone81CompliancePolicy“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs windowsPhone81CompliancePolicy auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6f5dc8242d3f76cf9c96e9d7232542f147a94a8c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dcb72e1da83abe568d46b7a3d6578434a1b31876
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890405"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969156"
 ---
 # <a name="list-windowsphone81compliancepolicies"></a>Auflisten von „windowsPhone81CompliancePolicy“
 

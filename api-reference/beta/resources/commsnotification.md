@@ -3,12 +3,13 @@ title: Ressourcentyp commsNotification
 description: Communications Benachrichtigung Basistyp, der von Änderungen benachrichtigen Communications-Server veröffentlicht wird.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 526ed88f4b1c5983a06b1830f5c0b0bb97cc874e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: e5b929997cf17d13043264d42421418321aae84e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837149"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977696"
 ---
 # <a name="commsnotification-resource-type"></a>Ressourcentyp commsNotification
 
@@ -19,8 +20,8 @@ Communications Benachrichtigung Basistyp, der von Änderungen benachrichtigen Co
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft       | Typ    | Beschreibung                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
-| changeType     | String  | Mögliche Werte sind: `created`, `updated` und `deleted`.      |
-| resource       | String  | Der URI der Ressource, die geändert wurde.                      |
+| changeType     | Zeichenfolge  | Mögliche Werte sind: `created`, `updated` und `deleted`.      |
+| resource       | Zeichenfolge  | Der URI der Ressource, die geändert wurde.                      |
 
 > **Hinweis:** `resourceData` als zusätzliche Daten verfügbar ist. Es ist eine Entität oder Collection(entity) abhängig von der Anzahl der Änderungen in der Benachrichtigung gepackt.
 
