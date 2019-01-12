@@ -3,55 +3,56 @@ title: Abrufen von DDE-Kanal
 description: Rufen Sie die Eigenschaften und die Beziehungen eines Kanals ab.
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: b942f2a3cfdca2b33b282fc5720a9d467c2eb0ad
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 9782bf401f92f6e4654d6d7ab261ad93b753e047
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856077"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966041"
 ---
-# <a name="get-channel"></a><span data-ttu-id="b556c-103">Abrufen von DDE-Kanal</span><span class="sxs-lookup"><span data-stu-id="b556c-103">Get channel</span></span>
+# <a name="get-channel"></a><span data-ttu-id="6d3d1-103">Abrufen von DDE-Kanal</span><span class="sxs-lookup"><span data-stu-id="6d3d1-103">Get channel</span></span>
 
 
 
-<span data-ttu-id="b556c-104">Abrufen der Eigenschaften und die Beziehungen eines [DDE-Kanal](../resources/channel.md).</span><span class="sxs-lookup"><span data-stu-id="b556c-104">Retrieve the properties and relationships of a [channel](../resources/channel.md).</span></span>
+<span data-ttu-id="6d3d1-104">Abrufen der Eigenschaften und die Beziehungen eines [DDE-Kanal](../resources/channel.md).</span><span class="sxs-lookup"><span data-stu-id="6d3d1-104">Retrieve the properties and relationships of a [channel](../resources/channel.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b556c-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="b556c-105">Permissions</span></span>
-<span data-ttu-id="b556c-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b556c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6d3d1-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="6d3d1-105">Permissions</span></span>
+<span data-ttu-id="6d3d1-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6d3d1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b556c-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="b556c-108">Permission type</span></span>      | <span data-ttu-id="b556c-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="b556c-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6d3d1-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="6d3d1-108">Permission type</span></span>      | <span data-ttu-id="6d3d1-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="6d3d1-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b556c-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="b556c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b556c-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b556c-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="b556c-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="b556c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b556c-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="b556c-113">Not supported.</span></span>    |
-|<span data-ttu-id="b556c-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="b556c-114">Application</span></span> | <span data-ttu-id="b556c-115">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b556c-115">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="6d3d1-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="6d3d1-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6d3d1-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6d3d1-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="6d3d1-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="6d3d1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6d3d1-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="6d3d1-113">Not supported.</span></span>    |
+|<span data-ttu-id="6d3d1-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="6d3d1-114">Application</span></span> | <span data-ttu-id="6d3d1-115">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6d3d1-115">Group.Read.All, Group.ReadWrite.All</span></span>    |
 
-> <span data-ttu-id="b556c-116">**Hinweis**: Diese API unterstützt Administratorberechtigungen.</span><span class="sxs-lookup"><span data-stu-id="b556c-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="b556c-117">Globale Administratoren und Microsoft-Teams Dienstadministratoren können Teams zugreifen, denen sie nicht Mitglied sind.</span><span class="sxs-lookup"><span data-stu-id="b556c-117">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="6d3d1-116">**Hinweis**: Diese API unterstützt Administratorberechtigungen.</span><span class="sxs-lookup"><span data-stu-id="6d3d1-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="6d3d1-117">Globale Administratoren und Microsoft-Teams Dienstadministratoren können Teams zugreifen, denen sie nicht Mitglied sind.</span><span class="sxs-lookup"><span data-stu-id="6d3d1-117">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="b556c-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="b556c-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6d3d1-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="6d3d1-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}
 
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="b556c-119">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="b556c-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="6d3d1-119">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="6d3d1-119">Optional query parameters</span></span>
 
-<span data-ttu-id="b556c-120">Diese Methode unterstützt die $filter $select, und $erweitern [OData-Abfrageparameter](/graph/query-parameters) helfen, die Antwort anzupassen.</span><span class="sxs-lookup"><span data-stu-id="b556c-120">This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="6d3d1-120">Diese Methode unterstützt die $filter $select, und $erweitern [OData-Abfrageparameter](/graph/query-parameters) helfen, die Antwort anzupassen.</span><span class="sxs-lookup"><span data-stu-id="6d3d1-120">This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b556c-121">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="b556c-121">Request headers</span></span>
-| <span data-ttu-id="b556c-122">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="b556c-122">Header</span></span>       | <span data-ttu-id="b556c-123">Wert</span><span class="sxs-lookup"><span data-stu-id="b556c-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="6d3d1-121">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="6d3d1-121">Request headers</span></span>
+| <span data-ttu-id="6d3d1-122">Header</span><span class="sxs-lookup"><span data-stu-id="6d3d1-122">Header</span></span>       | <span data-ttu-id="6d3d1-123">Wert</span><span class="sxs-lookup"><span data-stu-id="6d3d1-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="b556c-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="b556c-124">Authorization</span></span>  | <span data-ttu-id="b556c-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="b556c-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="6d3d1-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="6d3d1-124">Authorization</span></span>  | <span data-ttu-id="6d3d1-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="6d3d1-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="b556c-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="b556c-127">Request body</span></span>
-<span data-ttu-id="b556c-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="b556c-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6d3d1-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="6d3d1-127">Request body</span></span>
+<span data-ttu-id="6d3d1-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="6d3d1-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b556c-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="b556c-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6d3d1-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="6d3d1-129">Response</span></span>
 
-<span data-ttu-id="b556c-130">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und ein [Channel](../resources/channel.md) -Objekt aus der Antwort.</span><span class="sxs-lookup"><span data-stu-id="b556c-130">If successful, this method returns a `200 OK` response code and a [channel](../resources/channel.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="b556c-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b556c-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b556c-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="b556c-132">Request</span></span>
-<span data-ttu-id="b556c-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="b556c-133">Here is an example of the request.</span></span>
+<span data-ttu-id="6d3d1-130">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und ein [Channel](../resources/channel.md) -Objekt aus der Antwort.</span><span class="sxs-lookup"><span data-stu-id="6d3d1-130">If successful, this method returns a `200 OK` response code and a [channel](../resources/channel.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="6d3d1-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6d3d1-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6d3d1-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="6d3d1-132">Request</span></span>
+<span data-ttu-id="6d3d1-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="6d3d1-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_channel"
@@ -59,10 +60,10 @@ GET /teams/{id}/channels/{id}
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="b556c-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="b556c-134">Response</span></span>
-<span data-ttu-id="b556c-135">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="b556c-135">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="6d3d1-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="6d3d1-134">Response</span></span>
+<span data-ttu-id="6d3d1-135">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="6d3d1-135">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="b556c-p104">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="b556c-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="6d3d1-p104">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="6d3d1-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
