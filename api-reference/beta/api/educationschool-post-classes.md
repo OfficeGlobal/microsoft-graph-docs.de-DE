@@ -3,49 +3,50 @@ title: EducationClass zu educationSchool hinzufügen
 description: Hinzufügen einer Klasse zu einer Schule.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 3e09bd141c0b474d44ce9d691cff29b5164f8f34
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 0ee3d1ba1a0b0da143ab3dbab5624d0ebb3de4ac
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848580"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926211"
 ---
-# <a name="add-educationclass-to-educationschool"></a><span data-ttu-id="27cba-103">EducationClass zu educationSchool hinzufügen</span><span class="sxs-lookup"><span data-stu-id="27cba-103">Add educationClass to educationSchool</span></span>
+# <a name="add-educationclass-to-educationschool"></a><span data-ttu-id="c67ec-103">EducationClass zu educationSchool hinzufügen</span><span class="sxs-lookup"><span data-stu-id="c67ec-103">Add educationClass to educationSchool</span></span>
 
-> <span data-ttu-id="27cba-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="27cba-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="27cba-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="27cba-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="c67ec-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="c67ec-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c67ec-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="c67ec-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="27cba-106">Hinzufügen einer Klasse zu einer Schule.</span><span class="sxs-lookup"><span data-stu-id="27cba-106">Add a class to a school.</span></span>
+<span data-ttu-id="c67ec-106">Hinzufügen einer Klasse zu einer Schule.</span><span class="sxs-lookup"><span data-stu-id="c67ec-106">Add a class to a school.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="27cba-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="27cba-107">Permissions</span></span>
-<span data-ttu-id="27cba-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="27cba-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c67ec-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="c67ec-107">Permissions</span></span>
+<span data-ttu-id="c67ec-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c67ec-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="27cba-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="27cba-110">Permission type</span></span>      | <span data-ttu-id="27cba-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="27cba-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c67ec-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c67ec-110">Permission type</span></span>      | <span data-ttu-id="c67ec-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c67ec-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="27cba-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="27cba-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="27cba-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="27cba-113">Not supported.</span></span>  |
-|<span data-ttu-id="27cba-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="27cba-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="27cba-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="27cba-115">Not supported.</span></span>  |
-|<span data-ttu-id="27cba-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="27cba-116">Application</span></span> | <span data-ttu-id="27cba-117">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="27cba-117">EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="c67ec-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c67ec-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="c67ec-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c67ec-113">Not supported.</span></span>  |
+|<span data-ttu-id="c67ec-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c67ec-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="c67ec-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c67ec-115">Not supported.</span></span>  |
+|<span data-ttu-id="c67ec-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c67ec-116">Application</span></span> | <span data-ttu-id="c67ec-117">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c67ec-117">EduRoster.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="27cba-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="27cba-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c67ec-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c67ec-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/schools/{id}/classes/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="27cba-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="27cba-119">Request headers</span></span>
-| <span data-ttu-id="27cba-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="27cba-120">Header</span></span>       | <span data-ttu-id="27cba-121">Wert</span><span class="sxs-lookup"><span data-stu-id="27cba-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="c67ec-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="c67ec-119">Request headers</span></span>
+| <span data-ttu-id="c67ec-120">Header</span><span class="sxs-lookup"><span data-stu-id="c67ec-120">Header</span></span>       | <span data-ttu-id="c67ec-121">Wert</span><span class="sxs-lookup"><span data-stu-id="c67ec-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="27cba-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="27cba-122">Authorization</span></span>  | <span data-ttu-id="27cba-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="27cba-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="27cba-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="27cba-125">Content-Type</span></span>  | <span data-ttu-id="27cba-126">application/json</span><span class="sxs-lookup"><span data-stu-id="27cba-126">application/json</span></span>  |
+| <span data-ttu-id="c67ec-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c67ec-122">Authorization</span></span>  | <span data-ttu-id="c67ec-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c67ec-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c67ec-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c67ec-125">Content-Type</span></span>  | <span data-ttu-id="c67ec-126">application/json</span><span class="sxs-lookup"><span data-stu-id="c67ec-126">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="27cba-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="27cba-127">Request body</span></span>
-<span data-ttu-id="27cba-128">Geben Sie im Anforderungstext eine JSON-Darstellung eines [educationClass](../resources/educationclass.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="27cba-128">In the request body, supply a JSON representation of an [educationClass](../resources/educationclass.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c67ec-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c67ec-127">Request body</span></span>
+<span data-ttu-id="c67ec-128">Geben Sie im Anforderungstext eine JSON-Darstellung eines [educationClass](../resources/educationclass.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="c67ec-128">In the request body, supply a JSON representation of an [educationClass](../resources/educationclass.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="27cba-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="27cba-129">Response</span></span>
-<span data-ttu-id="27cba-130">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `204 No Content` und ein [educationClass](../resources/educationclass.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="27cba-130">If successful, this method returns a `204 No Content` response code and an [educationClass](../resources/educationclass.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c67ec-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="c67ec-129">Response</span></span>
+<span data-ttu-id="c67ec-130">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `204 No Content` und ein [educationClass](../resources/educationclass.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c67ec-130">If successful, this method returns a `204 No Content` response code and an [educationClass](../resources/educationclass.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="27cba-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="27cba-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="27cba-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="27cba-132">Request</span></span>
-<span data-ttu-id="27cba-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="27cba-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c67ec-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c67ec-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c67ec-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c67ec-132">Request</span></span>
+<span data-ttu-id="c67ec-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="c67ec-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_educationclass_from_educationschool"
@@ -60,8 +61,8 @@ Content-length: 224
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="27cba-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="27cba-134">Response</span></span> 
-<span data-ttu-id="27cba-135">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="27cba-135">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="c67ec-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="c67ec-134">Response</span></span> 
+<span data-ttu-id="c67ec-135">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c67ec-135">The following is an example of the response.</span></span> 
 
 <!-- Add the educationClass resource to the response. -->
 

@@ -3,30 +3,31 @@ title: Liste windowsPhone81AppXs
 description: Listeneigenschaften und Beziehungen der windowsPhone81AppX-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b799dfcf8daf0b07bdc0f4a7ef9ffc5dc7509466
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 470a9c7feaeb133cdb02b452fb587f9e40c2eb36
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864554"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939672"
 ---
-# <a name="list-windowsphone81appxs"></a><span data-ttu-id="fc254-103">Liste windowsPhone81AppXs</span><span class="sxs-lookup"><span data-stu-id="fc254-103">List windowsPhone81AppXs</span></span>
+# <a name="list-windowsphone81appxs"></a><span data-ttu-id="32440-103">Liste windowsPhone81AppXs</span><span class="sxs-lookup"><span data-stu-id="32440-103">List windowsPhone81AppXs</span></span>
 
-> <span data-ttu-id="fc254-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="fc254-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="fc254-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="fc254-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="32440-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="32440-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="32440-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="32440-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="fc254-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="fc254-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="32440-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="32440-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="fc254-107">Listeneigenschaften und Beziehungen der [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) -Objekte.</span><span class="sxs-lookup"><span data-stu-id="fc254-107">List properties and relationships of the [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="fc254-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="fc254-108">Prerequisites</span></span>
-<span data-ttu-id="fc254-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fc254-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="32440-107">Listeneigenschaften und Beziehungen der [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) -Objekte.</span><span class="sxs-lookup"><span data-stu-id="32440-107">List properties and relationships of the [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="32440-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="32440-108">Prerequisites</span></span>
+<span data-ttu-id="32440-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="32440-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fc254-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="fc254-111">Permission type</span></span>|<span data-ttu-id="fc254-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="fc254-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="32440-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="32440-111">Permission type</span></span>|<span data-ttu-id="32440-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="32440-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="fc254-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="fc254-113">Delegated (work or school account)</span></span>|<span data-ttu-id="fc254-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="fc254-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="fc254-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="fc254-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="fc254-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="fc254-116">Not supported.</span></span>|
-|<span data-ttu-id="fc254-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="fc254-117">Application</span></span>|<span data-ttu-id="fc254-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="fc254-118">Not supported.</span></span>|
+|<span data-ttu-id="32440-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="32440-113">Delegated (work or school account)</span></span>|<span data-ttu-id="32440-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="32440-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="32440-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="32440-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="32440-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="32440-116">Not supported.</span></span>|
+|<span data-ttu-id="32440-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="32440-117">Application</span></span>|<span data-ttu-id="32440-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="32440-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="fc254-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="fc254-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="32440-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="32440-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,27 +36,27 @@ ms.locfileid: "27864554"
 GET /deviceAppManagement/mobileApps
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fc254-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="fc254-120">Request headers</span></span>
-|<span data-ttu-id="fc254-121">Header</span><span class="sxs-lookup"><span data-stu-id="fc254-121">Header</span></span>|<span data-ttu-id="fc254-122">Wert</span><span class="sxs-lookup"><span data-stu-id="fc254-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="32440-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="32440-120">Request headers</span></span>
+|<span data-ttu-id="32440-121">Header</span><span class="sxs-lookup"><span data-stu-id="32440-121">Header</span></span>|<span data-ttu-id="32440-122">Wert</span><span class="sxs-lookup"><span data-stu-id="32440-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="fc254-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="fc254-123">Authorization</span></span>|<span data-ttu-id="fc254-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="fc254-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="fc254-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="fc254-125">Accept</span></span>|<span data-ttu-id="fc254-126">application/json</span><span class="sxs-lookup"><span data-stu-id="fc254-126">application/json</span></span>|
+|<span data-ttu-id="32440-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="32440-123">Authorization</span></span>|<span data-ttu-id="32440-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="32440-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="32440-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="32440-125">Accept</span></span>|<span data-ttu-id="32440-126">application/json</span><span class="sxs-lookup"><span data-stu-id="32440-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="fc254-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="fc254-127">Request body</span></span>
-<span data-ttu-id="fc254-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="fc254-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="32440-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="32440-127">Request body</span></span>
+<span data-ttu-id="32440-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="32440-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fc254-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="fc254-129">Response</span></span>
-<span data-ttu-id="fc254-130">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) .</span><span class="sxs-lookup"><span data-stu-id="fc254-130">If successful, this method returns a `200 OK` response code and a collection of [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="32440-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="32440-129">Response</span></span>
+<span data-ttu-id="32440-130">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) .</span><span class="sxs-lookup"><span data-stu-id="32440-130">If successful, this method returns a `200 OK` response code and a collection of [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fc254-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="fc254-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="fc254-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="fc254-132">Request</span></span>
-<span data-ttu-id="fc254-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="fc254-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="32440-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="32440-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="32440-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="32440-132">Request</span></span>
+<span data-ttu-id="32440-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="32440-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ```
 
-### <a name="response"></a><span data-ttu-id="fc254-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="fc254-134">Response</span></span>
-<span data-ttu-id="fc254-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="fc254-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="32440-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="32440-134">Response</span></span>
+<span data-ttu-id="32440-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="32440-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

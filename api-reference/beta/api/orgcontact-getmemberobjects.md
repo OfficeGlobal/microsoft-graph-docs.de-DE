@@ -2,52 +2,54 @@
 title: 'OrgContact: GetMemberObjects'
 description: Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema Berechtigungen.
 localization_priority: Normal
-ms.openlocfilehash: ac6c8fddf4cedae156ec25933ea8d9f95bf8020a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 597dfeaa1870aab74d8bc813b50aebc2891dc430
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856574"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938853"
 ---
-# <a name="orgcontact-getmemberobjects"></a><span data-ttu-id="1beb1-104">OrgContact: GetMemberObjects</span><span class="sxs-lookup"><span data-stu-id="1beb1-104">orgContact: getMemberObjects</span></span>
+# <a name="orgcontact-getmemberobjects"></a><span data-ttu-id="10482-104">OrgContact: GetMemberObjects</span><span class="sxs-lookup"><span data-stu-id="10482-104">orgContact: getMemberObjects</span></span>
 
-> <span data-ttu-id="1beb1-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="1beb1-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1beb1-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="1beb1-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="10482-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="10482-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="10482-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="10482-106">Use of these APIs in production applications is not supported.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1beb1-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="1beb1-107">Permissions</span></span>
-<span data-ttu-id="1beb1-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1beb1-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="10482-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="10482-107">Permissions</span></span>
+<span data-ttu-id="10482-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="10482-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1beb1-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="1beb1-110">Permission type</span></span>      | <span data-ttu-id="1beb1-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="1beb1-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="10482-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="10482-110">Permission type</span></span>      | <span data-ttu-id="10482-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="10482-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1beb1-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="1beb1-112">Delegated (work or school account)</span></span> | <span data-ttu-id="1beb1-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="1beb1-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="1beb1-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="1beb1-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1beb1-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="1beb1-115">Not supported.</span></span>    |
-|<span data-ttu-id="1beb1-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="1beb1-116">Application</span></span> | <span data-ttu-id="1beb1-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1beb1-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="10482-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="10482-112">Delegated (work or school account)</span></span> | <span data-ttu-id="10482-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="10482-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="10482-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="10482-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="10482-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="10482-115">Not supported.</span></span>    |
+|<span data-ttu-id="10482-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="10482-116">Application</span></span> | <span data-ttu-id="10482-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="10482-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1beb1-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="1beb1-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="10482-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="10482-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /contacts/{id}/getMemberObjects
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="1beb1-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="1beb1-119">Request headers</span></span>
-| <span data-ttu-id="1beb1-120">Name</span><span class="sxs-lookup"><span data-stu-id="1beb1-120">Name</span></span>       | <span data-ttu-id="1beb1-121">Typ</span><span class="sxs-lookup"><span data-stu-id="1beb1-121">Type</span></span> | <span data-ttu-id="1beb1-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1beb1-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="10482-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="10482-119">Request headers</span></span>
+| <span data-ttu-id="10482-120">Name</span><span class="sxs-lookup"><span data-stu-id="10482-120">Name</span></span>       | <span data-ttu-id="10482-121">Typ</span><span class="sxs-lookup"><span data-stu-id="10482-121">Type</span></span> | <span data-ttu-id="10482-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="10482-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="1beb1-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="1beb1-123">Authorization</span></span>  | <span data-ttu-id="1beb1-124">string</span><span class="sxs-lookup"><span data-stu-id="1beb1-124">string</span></span>  | <span data-ttu-id="1beb1-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="1beb1-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="10482-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="10482-123">Authorization</span></span>  | <span data-ttu-id="10482-124">string</span><span class="sxs-lookup"><span data-stu-id="10482-124">string</span></span>  | <span data-ttu-id="10482-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="10482-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1beb1-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="1beb1-127">Request body</span></span>
-<span data-ttu-id="1beb1-128">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="1beb1-128">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="10482-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="10482-127">Request body</span></span>
+<span data-ttu-id="10482-128">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="10482-128">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="1beb1-129">Parameter</span><span class="sxs-lookup"><span data-stu-id="1beb1-129">Parameter</span></span>    | <span data-ttu-id="1beb1-130">Typ</span><span class="sxs-lookup"><span data-stu-id="1beb1-130">Type</span></span>   |<span data-ttu-id="1beb1-131">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1beb1-131">Description</span></span>|
+| <span data-ttu-id="10482-129">Parameter</span><span class="sxs-lookup"><span data-stu-id="10482-129">Parameter</span></span>    | <span data-ttu-id="10482-130">Typ</span><span class="sxs-lookup"><span data-stu-id="10482-130">Type</span></span>   |<span data-ttu-id="10482-131">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="10482-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1beb1-132">securityEnabledOnly</span><span class="sxs-lookup"><span data-stu-id="1beb1-132">securityEnabledOnly</span></span>|<span data-ttu-id="1beb1-133">Boolean</span><span class="sxs-lookup"><span data-stu-id="1beb1-133">Boolean</span></span>||
+|<span data-ttu-id="10482-132">securityEnabledOnly</span><span class="sxs-lookup"><span data-stu-id="10482-132">securityEnabledOnly</span></span>|<span data-ttu-id="10482-133">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="10482-133">Boolean</span></span>||
 
-## <a name="response"></a><span data-ttu-id="1beb1-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="1beb1-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="10482-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="10482-134">Response</span></span>
 
-<span data-ttu-id="1beb1-135">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das String-Sammlungsobjekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1beb1-135">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
+<span data-ttu-id="10482-135">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das String-Sammlungsobjekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="10482-135">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1beb1-136">Beispiel</span><span class="sxs-lookup"><span data-stu-id="1beb1-136">Example</span></span>
-<span data-ttu-id="1beb1-137">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="1beb1-137">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="1beb1-138">Anforderung</span><span class="sxs-lookup"><span data-stu-id="1beb1-138">Request</span></span>
-<span data-ttu-id="1beb1-139">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="1beb1-139">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="10482-136">Beispiel</span><span class="sxs-lookup"><span data-stu-id="10482-136">Example</span></span>
+<span data-ttu-id="10482-137">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="10482-137">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="10482-138">Anforderung</span><span class="sxs-lookup"><span data-stu-id="10482-138">Request</span></span>
+<span data-ttu-id="10482-139">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="10482-139">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "orgcontact_getmemberobjects"
@@ -62,8 +64,8 @@ Content-length: 33
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="1beb1-140">Antwort</span><span class="sxs-lookup"><span data-stu-id="1beb1-140">Response</span></span>
-<span data-ttu-id="1beb1-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1beb1-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="10482-140">Antwort</span><span class="sxs-lookup"><span data-stu-id="10482-140">Response</span></span>
+<span data-ttu-id="10482-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="10482-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
