@@ -1,30 +1,31 @@
 ---
 title: sectionGroups auflisten
 description: Mit dieser API können Sie eine Liste von Abschnittsgruppen aus dem angegebenen Notizbuch abrufen.
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: 2a3161f3a3d7a24c3dbe00492515cd570c62ed13
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: bd5a9e8f8d3ce9300411fd5f186fcdd61f4344dc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824619"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950109"
 ---
-# <a name="list-sectiongroups"></a><span data-ttu-id="10f59-103">sectionGroups auflisten</span><span class="sxs-lookup"><span data-stu-id="10f59-103">List sectionGroups</span></span>
+# <a name="list-sectiongroups"></a><span data-ttu-id="fa8fe-103">sectionGroups auflisten</span><span class="sxs-lookup"><span data-stu-id="fa8fe-103">List sectionGroups</span></span>
 
-> <span data-ttu-id="10f59-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="10f59-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="10f59-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="10f59-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="fa8fe-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="fa8fe-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="fa8fe-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="fa8fe-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="10f59-106">Mit dieser API können Sie eine Liste von [Abschnittsgruppen](../resources/sectiongroup.md) aus dem angegebenen Notizbuch abrufen.</span><span class="sxs-lookup"><span data-stu-id="10f59-106">Retrieve a list of [section groups](../resources/sectiongroup.md) from the specified notebook.</span></span>
-## <a name="permissions"></a><span data-ttu-id="10f59-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="10f59-107">Permissions</span></span>
-<span data-ttu-id="10f59-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="10f59-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fa8fe-106">Mit dieser API können Sie eine Liste von [Abschnittsgruppen](../resources/sectiongroup.md) aus dem angegebenen Notizbuch abrufen.</span><span class="sxs-lookup"><span data-stu-id="fa8fe-106">Retrieve a list of [section groups](../resources/sectiongroup.md) from the specified notebook.</span></span>
+## <a name="permissions"></a><span data-ttu-id="fa8fe-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="fa8fe-107">Permissions</span></span>
+<span data-ttu-id="fa8fe-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fa8fe-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="10f59-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="10f59-110">Permission type</span></span>      | <span data-ttu-id="10f59-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="10f59-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fa8fe-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="fa8fe-110">Permission type</span></span>      | <span data-ttu-id="fa8fe-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="fa8fe-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="10f59-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="10f59-112">Delegated (work or school account)</span></span> | <span data-ttu-id="10f59-113">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="10f59-113">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="10f59-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="10f59-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="10f59-115">Notes.Create, Notes.Read, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="10f59-115">Notes.Create, Notes.Read, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="10f59-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="10f59-116">Application</span></span> | <span data-ttu-id="10f59-117">Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="10f59-117">Notes.Read.All, Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="fa8fe-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="fa8fe-112">Delegated (work or school account)</span></span> | <span data-ttu-id="fa8fe-113">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fa8fe-113">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="fa8fe-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="fa8fe-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fa8fe-115">Notes.Create, Notes.Read, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fa8fe-115">Notes.Create, Notes.Read, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="fa8fe-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="fa8fe-116">Application</span></span> | <span data-ttu-id="fa8fe-117">Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fa8fe-117">Notes.Read.All, Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="10f59-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="10f59-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fa8fe-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="fa8fe-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onenote/notebooks/{id}/sectionGroups
@@ -32,28 +33,28 @@ GET /users/{id | userPrincipalName}/onenote/notebooks/{id}/sectionGroups
 GET /groups/{id}/onenote/notebooks/{id}/sectionGroups
 GET /sites/{id}/onenote/notebooks/{id}/sectionGroups
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="10f59-119">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="10f59-119">Optional query parameters</span></span>
-<span data-ttu-id="10f59-120">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="10f59-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="fa8fe-119">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="fa8fe-119">Optional query parameters</span></span>
+<span data-ttu-id="fa8fe-120">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="fa8fe-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="10f59-121">Die Standardsortierreihenfolge ist `name asc`.</span><span class="sxs-lookup"><span data-stu-id="10f59-121">The default sort order is `name asc`.</span></span>
+<span data-ttu-id="fa8fe-121">Die Standardsortierreihenfolge ist `name asc`.</span><span class="sxs-lookup"><span data-stu-id="fa8fe-121">The default sort order is `name asc`.</span></span>
 
-<span data-ttu-id="10f59-p103">Die Standardabfrage erweitert `parentNotebook` und wählt die zugehörigen Eigenschaften `id`, `displayName` und `self` aus. Gültige `expand`-Werte für Abschnittsgruppen sind `sections`, `sectionGroups`, `parentNotebook` und `parentSectionGroup`.</span><span class="sxs-lookup"><span data-stu-id="10f59-p103">The default query expands `parentNotebook` and selects its `id`, `displayName`, and `self` properties. Valid `expand` values for section groups are `sections`, `sectionGroups`, `parentNotebook`, and `parentSectionGroup`.</span></span>
+<span data-ttu-id="fa8fe-p103">Die Standardabfrage erweitert `parentNotebook` und wählt die zugehörigen Eigenschaften `id`, `displayName` und `self` aus. Gültige `expand`-Werte für Abschnittsgruppen sind `sections`, `sectionGroups`, `parentNotebook` und `parentSectionGroup`.</span><span class="sxs-lookup"><span data-stu-id="fa8fe-p103">The default query expands `parentNotebook` and selects its `id`, `displayName`, and `self` properties. Valid `expand` values for section groups are `sections`, `sectionGroups`, `parentNotebook`, and `parentSectionGroup`.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="10f59-124">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="10f59-124">Request headers</span></span>
-| <span data-ttu-id="10f59-125">Name</span><span class="sxs-lookup"><span data-stu-id="10f59-125">Name</span></span>       | <span data-ttu-id="10f59-126">Typ</span><span class="sxs-lookup"><span data-stu-id="10f59-126">Type</span></span> | <span data-ttu-id="10f59-127">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="10f59-127">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fa8fe-124">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="fa8fe-124">Request headers</span></span>
+| <span data-ttu-id="fa8fe-125">Name</span><span class="sxs-lookup"><span data-stu-id="fa8fe-125">Name</span></span>       | <span data-ttu-id="fa8fe-126">Typ</span><span class="sxs-lookup"><span data-stu-id="fa8fe-126">Type</span></span> | <span data-ttu-id="fa8fe-127">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="fa8fe-127">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="10f59-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="10f59-128">Authorization</span></span>  | <span data-ttu-id="10f59-129">string</span><span class="sxs-lookup"><span data-stu-id="10f59-129">string</span></span>  | <span data-ttu-id="10f59-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="10f59-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="10f59-132">Annehmen</span><span class="sxs-lookup"><span data-stu-id="10f59-132">Accept</span></span> | <span data-ttu-id="10f59-133">string</span><span class="sxs-lookup"><span data-stu-id="10f59-133">string</span></span> | `application/json` |
+| <span data-ttu-id="fa8fe-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="fa8fe-128">Authorization</span></span>  | <span data-ttu-id="fa8fe-129">string</span><span class="sxs-lookup"><span data-stu-id="fa8fe-129">string</span></span>  | <span data-ttu-id="fa8fe-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="fa8fe-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fa8fe-132">Annehmen</span><span class="sxs-lookup"><span data-stu-id="fa8fe-132">Accept</span></span> | <span data-ttu-id="fa8fe-133">string</span><span class="sxs-lookup"><span data-stu-id="fa8fe-133">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="10f59-134">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="10f59-134">Request body</span></span>
-<span data-ttu-id="10f59-135">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="10f59-135">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fa8fe-134">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="fa8fe-134">Request body</span></span>
+<span data-ttu-id="fa8fe-135">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="fa8fe-135">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="10f59-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="10f59-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fa8fe-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="fa8fe-136">Response</span></span>
 
-<span data-ttu-id="10f59-137">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [sectionGroup](../resources/sectiongroup.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="10f59-137">If successful, this method returns a `200 OK` response code and collection of [sectionGroup](../resources/sectiongroup.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="10f59-138">Beispiel</span><span class="sxs-lookup"><span data-stu-id="10f59-138">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="10f59-139">Anforderung</span><span class="sxs-lookup"><span data-stu-id="10f59-139">Request</span></span>
-<span data-ttu-id="10f59-140">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="10f59-140">Here is an example of the request.</span></span>
+<span data-ttu-id="fa8fe-137">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [sectionGroup](../resources/sectiongroup.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="fa8fe-137">If successful, this method returns a `200 OK` response code and collection of [sectionGroup](../resources/sectiongroup.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="fa8fe-138">Beispiel</span><span class="sxs-lookup"><span data-stu-id="fa8fe-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="fa8fe-139">Anforderung</span><span class="sxs-lookup"><span data-stu-id="fa8fe-139">Request</span></span>
+<span data-ttu-id="fa8fe-140">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="fa8fe-140">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_sectiongroups"
@@ -61,8 +62,8 @@ GET /sites/{id}/onenote/notebooks/{id}/sectionGroups
 ```http
 GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sectionGroups
 ```
-##### <a name="response"></a><span data-ttu-id="10f59-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="10f59-141">Response</span></span>
-<span data-ttu-id="10f59-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="10f59-p105">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="fa8fe-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="fa8fe-141">Response</span></span>
+<span data-ttu-id="fa8fe-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="fa8fe-p105">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

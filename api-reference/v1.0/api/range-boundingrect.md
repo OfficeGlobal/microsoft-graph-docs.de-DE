@@ -3,26 +3,27 @@ title: 'Range: BoundingRect'
 description: .
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 9c19bf1c77e2173fa0568b3944506c43c87ecaac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 9e8f5ef8a4c7c55ead433b0aa0557ce5fca74ecc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826124"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953050"
 ---
-# <a name="range-boundingrect"></a><span data-ttu-id="ee5ca-103">Range: BoundingRect</span><span class="sxs-lookup"><span data-stu-id="ee5ca-103">Range: BoundingRect</span></span>
+# <a name="range-boundingrect"></a><span data-ttu-id="b22b6-103">Range: BoundingRect</span><span class="sxs-lookup"><span data-stu-id="b22b6-103">Range: BoundingRect</span></span>
 
-<span data-ttu-id="ee5ca-p101">Ruft das kleinste Bereichsobjekt ab, das die angegebenen Bereiche umfasst. Beispielsweise das GetBoundingRect von "B2:C5" und "D10:E15" lautet "B2:E16".</span><span class="sxs-lookup"><span data-stu-id="ee5ca-p101">Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".</span></span>
-## <a name="permissions"></a><span data-ttu-id="ee5ca-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="ee5ca-106">Permissions</span></span>
-<span data-ttu-id="ee5ca-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ee5ca-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b22b6-p101">Ruft das kleinste Bereichsobjekt ab, das die angegebenen Bereiche umfasst. Beispielsweise das GetBoundingRect von "B2:C5" und "D10:E15" lautet "B2:E16".</span><span class="sxs-lookup"><span data-stu-id="b22b6-p101">Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".</span></span>
+## <a name="permissions"></a><span data-ttu-id="b22b6-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="b22b6-106">Permissions</span></span>
+<span data-ttu-id="b22b6-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b22b6-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ee5ca-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="ee5ca-109">Permission type</span></span>      | <span data-ttu-id="ee5ca-110">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="ee5ca-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b22b6-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="b22b6-109">Permission type</span></span>      | <span data-ttu-id="b22b6-110">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="b22b6-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ee5ca-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="ee5ca-111">Delegated (work or school account)</span></span> | <span data-ttu-id="ee5ca-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ee5ca-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="ee5ca-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="ee5ca-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ee5ca-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ee5ca-114">Not supported.</span></span>    |
-|<span data-ttu-id="ee5ca-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="ee5ca-115">Application</span></span> | <span data-ttu-id="ee5ca-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ee5ca-116">Not supported.</span></span> |
+|<span data-ttu-id="b22b6-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="b22b6-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b22b6-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b22b6-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="b22b6-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="b22b6-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b22b6-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="b22b6-114">Not supported.</span></span>    |
+|<span data-ttu-id="b22b6-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="b22b6-115">Application</span></span> | <span data-ttu-id="b22b6-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="b22b6-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ee5ca-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="ee5ca-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b22b6-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="b22b6-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names/{name}/range/boundingRect
@@ -30,27 +31,27 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/boundingRect
 GET /workbook/tables/{id|name}/columns/{id|name}/range/boundingRect
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="ee5ca-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="ee5ca-118">Request headers</span></span>
-| <span data-ttu-id="ee5ca-119">Name</span><span class="sxs-lookup"><span data-stu-id="ee5ca-119">Name</span></span>       | <span data-ttu-id="ee5ca-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ee5ca-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b22b6-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="b22b6-118">Request headers</span></span>
+| <span data-ttu-id="b22b6-119">Name</span><span class="sxs-lookup"><span data-stu-id="b22b6-119">Name</span></span>       | <span data-ttu-id="b22b6-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b22b6-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="ee5ca-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="ee5ca-121">Authorization</span></span>  | <span data-ttu-id="ee5ca-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="ee5ca-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="ee5ca-124">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="ee5ca-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="ee5ca-p104">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="ee5ca-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="b22b6-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="b22b6-121">Authorization</span></span>  | <span data-ttu-id="b22b6-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="b22b6-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b22b6-124">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="b22b6-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="b22b6-p104">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="b22b6-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ee5ca-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="ee5ca-127">Request body</span></span>
-<span data-ttu-id="ee5ca-128">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="ee5ca-128">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b22b6-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="b22b6-127">Request body</span></span>
+<span data-ttu-id="b22b6-128">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="b22b6-128">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="ee5ca-129">Parameter</span><span class="sxs-lookup"><span data-stu-id="ee5ca-129">Parameter</span></span>    | <span data-ttu-id="ee5ca-130">Typ</span><span class="sxs-lookup"><span data-stu-id="ee5ca-130">Type</span></span>   |<span data-ttu-id="ee5ca-131">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ee5ca-131">Description</span></span>|
+| <span data-ttu-id="b22b6-129">Parameter</span><span class="sxs-lookup"><span data-stu-id="b22b6-129">Parameter</span></span>    | <span data-ttu-id="b22b6-130">Typ</span><span class="sxs-lookup"><span data-stu-id="b22b6-130">Type</span></span>   |<span data-ttu-id="b22b6-131">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b22b6-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ee5ca-132">anotherRange</span><span class="sxs-lookup"><span data-stu-id="ee5ca-132">anotherRange</span></span>|<span data-ttu-id="ee5ca-133">string</span><span class="sxs-lookup"><span data-stu-id="ee5ca-133">string</span></span>|<span data-ttu-id="ee5ca-134">Das Bereichsobjekt oder die Adresse oder der Bereichsname.</span><span class="sxs-lookup"><span data-stu-id="ee5ca-134">The range object or address or range name.</span></span>|
+|<span data-ttu-id="b22b6-132">anotherRange</span><span class="sxs-lookup"><span data-stu-id="b22b6-132">anotherRange</span></span>|<span data-ttu-id="b22b6-133">string</span><span class="sxs-lookup"><span data-stu-id="b22b6-133">string</span></span>|<span data-ttu-id="b22b6-134">Das Bereichsobjekt oder die Adresse oder der Bereichsname.</span><span class="sxs-lookup"><span data-stu-id="b22b6-134">The range object or address or range name.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="ee5ca-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="ee5ca-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b22b6-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="b22b6-135">Response</span></span>
 
-<span data-ttu-id="ee5ca-136">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [Range](../resources/range.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="ee5ca-136">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="b22b6-136">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [Range](../resources/range.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="b22b6-136">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ee5ca-137">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ee5ca-137">Example</span></span>
-<span data-ttu-id="ee5ca-138">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="ee5ca-138">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="ee5ca-139">Anforderung</span><span class="sxs-lookup"><span data-stu-id="ee5ca-139">Request</span></span>
-<span data-ttu-id="ee5ca-140">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="ee5ca-140">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b22b6-137">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b22b6-137">Example</span></span>
+<span data-ttu-id="b22b6-138">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="b22b6-138">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="b22b6-139">Anforderung</span><span class="sxs-lookup"><span data-stu-id="b22b6-139">Request</span></span>
+<span data-ttu-id="b22b6-140">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="b22b6-140">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "isComposable": true,
@@ -66,8 +67,8 @@ Content-length: 42
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="ee5ca-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="ee5ca-141">Response</span></span>
-<span data-ttu-id="ee5ca-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="ee5ca-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="b22b6-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="b22b6-141">Response</span></span>
+<span data-ttu-id="b22b6-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="b22b6-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

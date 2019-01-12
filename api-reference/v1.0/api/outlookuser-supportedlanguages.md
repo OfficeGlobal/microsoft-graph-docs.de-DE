@@ -2,51 +2,53 @@
 title: 'outlookUser: supportedLanguages'
 description: Abrufen der Liste von Gebietsschemas und Sprachen, die für den Benutzer unterstützt werden, wie auf dem Postfachserver des Benutzers konfiguriert.
 localization_priority: Normal
-ms.openlocfilehash: 78093c61e73dd4248e881596bf8a18004acc48ca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 78d459ed423a1942d438c6efdedf2eec7a8ff28c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839832"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962226"
 ---
-# <a name="outlookuser-supportedlanguages"></a><span data-ttu-id="52577-103">outlookUser: supportedLanguages</span><span class="sxs-lookup"><span data-stu-id="52577-103">outlookUser: supportedLanguages</span></span>
+# <a name="outlookuser-supportedlanguages"></a><span data-ttu-id="97925-103">outlookUser: supportedLanguages</span><span class="sxs-lookup"><span data-stu-id="97925-103">outlookUser: supportedLanguages</span></span>
 
-<span data-ttu-id="52577-104">Abrufen der Liste von Gebietsschemas und Sprachen, die für den Benutzer unterstützt werden, wie auf dem Postfachserver des Benutzers konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="52577-104">Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.</span></span>
+<span data-ttu-id="97925-104">Abrufen der Liste von Gebietsschemas und Sprachen, die für den Benutzer unterstützt werden, wie auf dem Postfachserver des Benutzers konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="97925-104">Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.</span></span>
 
-<span data-ttu-id="52577-105">Beim Einrichten eines Outlook-Clients wählt der Benutzer die bevorzugte Sprache aus dieser unterstützten Liste aus.</span><span class="sxs-lookup"><span data-stu-id="52577-105">When setting up an Outlook client, the user selects the preferred language from this supported list.</span></span> <span data-ttu-id="52577-106">Sie können anschließend die bevorzugte Sprache abrufen, indem Sie [die Postfacheinstellungen des Benutzers abrufen](user-get-mailboxsettings.md).</span><span class="sxs-lookup"><span data-stu-id="52577-106">You can subsequently get the preferred language by [getting the user's mailbox settings](user-get-mailboxsettings.md).</span></span>
+<span data-ttu-id="97925-105">Beim Einrichten eines Outlook-Clients wählt der Benutzer die bevorzugte Sprache aus dieser unterstützten Liste aus.</span><span class="sxs-lookup"><span data-stu-id="97925-105">When setting up an Outlook client, the user selects the preferred language from this supported list.</span></span> <span data-ttu-id="97925-106">Sie können anschließend die bevorzugte Sprache abrufen, indem Sie [die Postfacheinstellungen des Benutzers abrufen](user-get-mailboxsettings.md).</span><span class="sxs-lookup"><span data-stu-id="97925-106">You can subsequently get the preferred language by [getting the user's mailbox settings](user-get-mailboxsettings.md).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="52577-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="52577-107">Permissions</span></span>
-<span data-ttu-id="52577-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="52577-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="97925-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="97925-107">Permissions</span></span>
+<span data-ttu-id="97925-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="97925-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="52577-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="52577-110">Permission type</span></span>      | <span data-ttu-id="52577-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="52577-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="97925-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="97925-110">Permission type</span></span>      | <span data-ttu-id="97925-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="97925-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="52577-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="52577-112">Delegated (work or school account)</span></span> | <span data-ttu-id="52577-113">User.Read, User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="52577-113">User.Read, User.ReadBasic.All</span></span>    |
-|<span data-ttu-id="52577-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="52577-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="52577-115">User.Read</span><span class="sxs-lookup"><span data-stu-id="52577-115">User.Read</span></span>    |
-|<span data-ttu-id="52577-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="52577-116">Application</span></span> | <span data-ttu-id="52577-117">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="52577-117">User.Read.All</span></span> |
+|<span data-ttu-id="97925-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="97925-112">Delegated (work or school account)</span></span> | <span data-ttu-id="97925-113">User.Read, User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="97925-113">User.Read, User.ReadBasic.All</span></span>    |
+|<span data-ttu-id="97925-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="97925-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="97925-115">User.Read</span><span class="sxs-lookup"><span data-stu-id="97925-115">User.Read</span></span>    |
+|<span data-ttu-id="97925-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="97925-116">Application</span></span> | <span data-ttu-id="97925-117">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="97925-117">User.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="52577-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="52577-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="97925-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="97925-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/supportedLanguages
 GET /users/{id|userPrincipalName}/outlook/supportedLanguages
 ```
-## <a name="request-headers"></a><span data-ttu-id="52577-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="52577-119">Request headers</span></span>
-| <span data-ttu-id="52577-120">Name</span><span class="sxs-lookup"><span data-stu-id="52577-120">Name</span></span>       | <span data-ttu-id="52577-121">Typ</span><span class="sxs-lookup"><span data-stu-id="52577-121">Type</span></span> | <span data-ttu-id="52577-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="52577-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="97925-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="97925-119">Request headers</span></span>
+| <span data-ttu-id="97925-120">Name</span><span class="sxs-lookup"><span data-stu-id="97925-120">Name</span></span>       | <span data-ttu-id="97925-121">Typ</span><span class="sxs-lookup"><span data-stu-id="97925-121">Type</span></span> | <span data-ttu-id="97925-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="97925-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="52577-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="52577-123">Authorization</span></span>  | <span data-ttu-id="52577-124">string</span><span class="sxs-lookup"><span data-stu-id="52577-124">string</span></span>  | <span data-ttu-id="52577-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="52577-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="97925-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="97925-123">Authorization</span></span>  | <span data-ttu-id="97925-124">string</span><span class="sxs-lookup"><span data-stu-id="97925-124">string</span></span>  | <span data-ttu-id="97925-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="97925-p103">Bearer {token}. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="52577-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="52577-127">Request body</span></span>
-<span data-ttu-id="52577-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="52577-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="97925-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="97925-127">Request body</span></span>
+<span data-ttu-id="97925-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="97925-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="52577-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="52577-129">Response</span></span>
-<span data-ttu-id="52577-130">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und eine Sammlung von [localeInfo](../resources/localeinfo.md)-Objekten im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="52577-130">If successful, this method returns `200 OK` response code and a collection of [localeInfo](../resources/localeinfo.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="97925-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="97925-129">Response</span></span>
+<span data-ttu-id="97925-130">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und eine Sammlung von [localeInfo](../resources/localeinfo.md)-Objekten im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="97925-130">If successful, this method returns `200 OK` response code and a collection of [localeInfo](../resources/localeinfo.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="52577-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="52577-131">Example</span></span>
-<span data-ttu-id="52577-132">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="52577-132">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="52577-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="52577-133">Request</span></span>
-<span data-ttu-id="52577-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="52577-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="97925-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="97925-131">Example</span></span>
+<span data-ttu-id="97925-132">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="97925-132">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="97925-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="97925-133">Request</span></span>
+<span data-ttu-id="97925-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="97925-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "user_supportedlanguages"
@@ -55,8 +57,8 @@ GET /users/{id|userPrincipalName}/outlook/supportedLanguages
 GET https://graph.microsoft.com/v1.0/me/outlook/supportedLanguages
 ```
 
-##### <a name="response"></a><span data-ttu-id="52577-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="52577-135">Response</span></span>
-<span data-ttu-id="52577-136">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="52577-136">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="97925-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="97925-135">Response</span></span>
+<span data-ttu-id="97925-136">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="97925-136">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
