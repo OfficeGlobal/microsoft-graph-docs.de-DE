@@ -1,72 +1,74 @@
 ---
 title: Verwenden von Notiztags auf OneNote-Seiten
 description: " Enterprise-Notizbücher in Office 365"
-author: Jewan-microsoft
-ms.openlocfilehash: acef890384ffc5474ec4fdbef27d77905347c7d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: jewan-microsoft
+localization_priority: Normal
+ms.prod: onenote
+ms.openlocfilehash: fb1067b2b564e8431aaa8a4bf8ca094a2b5d127d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334622"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981280"
 ---
-# <a name="use-note-tags-in-onenote-pages"></a><span data-ttu-id="abea5-103">Verwenden von Notiztags auf OneNote-Seiten</span><span class="sxs-lookup"><span data-stu-id="abea5-103">Use note tags in OneNote pages</span></span>
+# <a name="use-note-tags-in-onenote-pages"></a><span data-ttu-id="55fe4-103">Verwenden von Notiztags auf OneNote-Seiten</span><span class="sxs-lookup"><span data-stu-id="55fe4-103">Use note tags in OneNote pages</span></span>
 
-<span data-ttu-id="abea5-104">**Gilt für** Heimanwender-Notizbücher in OneDrive | Unternehmensnotizbücher in Office 365</span><span class="sxs-lookup"><span data-stu-id="abea5-104">**Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365</span></span>
+<span data-ttu-id="55fe4-104">**Gilt für** Heimanwender-Notizbücher in OneDrive | Unternehmensnotizbücher in Office 365</span><span class="sxs-lookup"><span data-stu-id="55fe4-104">**Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365</span></span>
 
-<span data-ttu-id="abea5-105">Verwenden Sie das `data-tag`-Attribut zum Hinzufügen und Aktualisieren von Kontrollkästchen, Sternen und anderen integrierten Notiztags auf einer OneNote-Seite, wie in der folgenden Abbildung gezeigt.</span><span class="sxs-lookup"><span data-stu-id="abea5-105">Use the `data-tag` attribute to add and update check boxes, stars, and other built-in note tags on a OneNote page, as shown in the following image.</span></span>
+<span data-ttu-id="55fe4-105">Verwenden Sie das `data-tag`-Attribut zum Hinzufügen und Aktualisieren von Kontrollkästchen, Sternen und anderen integrierten Notiztags auf einer OneNote-Seite, wie in der folgenden Abbildung gezeigt.</span><span class="sxs-lookup"><span data-stu-id="55fe4-105">Use the `data-tag` attribute to add and update check boxes, stars, and other built-in note tags on a OneNote page, as shown in the following image.</span></span>
 
 ![Drei Notiztags auf einer OneNote-Seite.](images/note-tags-example.png)
 
 
 <a name="attributes"></a>
 
-## <a name="note-tag-attributes"></a><span data-ttu-id="abea5-107">Notiztag-Attribute</span><span class="sxs-lookup"><span data-stu-id="abea5-107">Note tag attributes</span></span>
+## <a name="note-tag-attributes"></a><span data-ttu-id="55fe4-107">Notiztag-Attribute</span><span class="sxs-lookup"><span data-stu-id="55fe4-107">Note tag attributes</span></span>
 
-<span data-ttu-id="abea5-108">Ein Notiztag wird im HTML-Code einer OneNote-Seite durch das `data-tag`-Attribut dargestellt.</span><span class="sxs-lookup"><span data-stu-id="abea5-108">In the HTML of a OneNote page, a note tag is represented by the `data-tag` attribute.</span></span> <span data-ttu-id="abea5-109">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="abea5-109">For example:</span></span>
+<span data-ttu-id="55fe4-108">Ein Notiztag wird im HTML-Code einer OneNote-Seite durch das `data-tag`-Attribut dargestellt.</span><span class="sxs-lookup"><span data-stu-id="55fe4-108">In the HTML of a OneNote page, a note tag is represented by the `data-tag` attribute.</span></span> <span data-ttu-id="55fe4-109">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="55fe4-109">For example:</span></span>
 
-- <span data-ttu-id="abea5-110">Ein deaktiviertes Aufgabenfeld:  `<p data-tag="to-do">`</span><span class="sxs-lookup"><span data-stu-id="abea5-110">An unchecked to-do box:  `<p data-tag="to-do">`</span></span> 
+- <span data-ttu-id="55fe4-110">Ein deaktiviertes Aufgabenfeld:  `<p data-tag="to-do">`</span><span class="sxs-lookup"><span data-stu-id="55fe4-110">An unchecked to-do box:  `<p data-tag="to-do">`</span></span> 
 
-- <span data-ttu-id="abea5-111">Ein aktiviertes Aufgabenfeld:  `<p data-tag="to-do:completed">`</span><span class="sxs-lookup"><span data-stu-id="abea5-111">A checked to-do box:  `<p data-tag="to-do:completed">`</span></span> 
+- <span data-ttu-id="55fe4-111">Ein aktiviertes Aufgabenfeld:  `<p data-tag="to-do:completed">`</span><span class="sxs-lookup"><span data-stu-id="55fe4-111">A checked to-do box:  `<p data-tag="to-do:completed">`</span></span> 
 
-- <span data-ttu-id="abea5-112">Ein Stern:  `<h2 data-tag="important">`</span><span class="sxs-lookup"><span data-stu-id="abea5-112">A star:  `<h2 data-tag="important">`</span></span> 
+- <span data-ttu-id="55fe4-112">Ein Stern:  `<h2 data-tag="important">`</span><span class="sxs-lookup"><span data-stu-id="55fe4-112">A star:  `<h2 data-tag="important">`</span></span> 
 
-<span data-ttu-id="abea5-113">Ein `data-tag`-Wert besteht aus einem Shape und manchmal einem Status (siehe [unterstützte Werte](#built-in-note-tags-for-onenote).)</span><span class="sxs-lookup"><span data-stu-id="abea5-113">A `data-tag` value is composed of a shape, and sometimes a status (see all [supported values](#built-in-note-tags-for-onenote)).</span></span>
+<span data-ttu-id="55fe4-113">Ein `data-tag`-Wert besteht aus einem Shape und manchmal einem Status (siehe [unterstützte Werte](#built-in-note-tags-for-onenote).)</span><span class="sxs-lookup"><span data-stu-id="55fe4-113">A `data-tag` value is composed of a shape, and sometimes a status (see all [supported values](#built-in-note-tags-for-onenote)).</span></span>
 
-| <span data-ttu-id="abea5-114">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="abea5-114">Property</span></span> | <span data-ttu-id="abea5-115">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="abea5-115">Description</span></span> |  
+| <span data-ttu-id="55fe4-114">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="55fe4-114">Property</span></span> | <span data-ttu-id="55fe4-115">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="55fe4-115">Description</span></span> |  
 |:------|:------|  
-| <span data-ttu-id="abea5-116">shape</span><span class="sxs-lookup"><span data-stu-id="abea5-116">shape</span></span> | <span data-ttu-id="abea5-117">Der Bezeichner für das Notiztag (Beispiel: `to-do` oder `important`).</span><span class="sxs-lookup"><span data-stu-id="abea5-117">The identifier of the note tag (example: `to-do` or `important`).</span></span> |  
-| <span data-ttu-id="abea5-118">status</span><span class="sxs-lookup"><span data-stu-id="abea5-118">status</span></span> | <span data-ttu-id="abea5-119">Der Status der Kontrollkästchen von Notiztags.</span><span class="sxs-lookup"><span data-stu-id="abea5-119">The status of check box note tags.</span></span> <span data-ttu-id="abea5-120">Dies wird nur dazu verwendet, die Kontrollkästchen als abgeschlossen zu kennzeichnen.</span><span class="sxs-lookup"><span data-stu-id="abea5-120">This is used only to set check boxes as completed.</span></span> |  
+| <span data-ttu-id="55fe4-116">shape</span><span class="sxs-lookup"><span data-stu-id="55fe4-116">shape</span></span> | <span data-ttu-id="55fe4-117">Der Bezeichner für das Notiztag (Beispiel: `to-do` oder `important`).</span><span class="sxs-lookup"><span data-stu-id="55fe4-117">The identifier of the note tag (example: `to-do` or `important`).</span></span> |  
+| <span data-ttu-id="55fe4-118">status</span><span class="sxs-lookup"><span data-stu-id="55fe4-118">status</span></span> | <span data-ttu-id="55fe4-119">Der Status der Kontrollkästchen von Notiztags.</span><span class="sxs-lookup"><span data-stu-id="55fe4-119">The status of check box note tags.</span></span> <span data-ttu-id="55fe4-120">Dies wird nur dazu verwendet, die Kontrollkästchen als abgeschlossen zu kennzeichnen.</span><span class="sxs-lookup"><span data-stu-id="55fe4-120">This is used only to set check boxes as completed.</span></span> |  
  
 
 <a name="note-tags"></a>
 
-## <a name="add-or-update-note-tags"></a><span data-ttu-id="abea5-121">Hinzufügen oder Aktualisieren von Notiztags</span><span class="sxs-lookup"><span data-stu-id="abea5-121">Add or update note tags</span></span>
+## <a name="add-or-update-note-tags"></a><span data-ttu-id="55fe4-121">Hinzufügen oder Aktualisieren von Notiztags</span><span class="sxs-lookup"><span data-stu-id="55fe4-121">Add or update note tags</span></span>
 
-<span data-ttu-id="abea5-122">Verwenden Sie zum Hinzufügen oder Aktualisieren eines integrierten Notiztags das `data-tag`-Attribut für ein unterstütztes Element.</span><span class="sxs-lookup"><span data-stu-id="abea5-122">To add or update a built-in note tag, just use the `data-tag` attribute on a supported element.</span></span> <span data-ttu-id="abea5-123">Im Folgenden ist z. B. ein Absatz als wichtig gekennzeichnet:</span><span class="sxs-lookup"><span data-stu-id="abea5-123">For example, here's a paragraph marked as important:</span></span>
+<span data-ttu-id="55fe4-122">Verwenden Sie zum Hinzufügen oder Aktualisieren eines integrierten Notiztags das `data-tag`-Attribut für ein unterstütztes Element.</span><span class="sxs-lookup"><span data-stu-id="55fe4-122">To add or update a built-in note tag, just use the `data-tag` attribute on a supported element.</span></span> <span data-ttu-id="55fe4-123">Im Folgenden ist z. B. ein Absatz als wichtig gekennzeichnet:</span><span class="sxs-lookup"><span data-stu-id="55fe4-123">For example, here's a paragraph marked as important:</span></span>
 
 ```html
 <p data-tag="important">...</p>
 ```
 
-<span data-ttu-id="abea5-124">Trennen Sie mehrere Notiztags durch Kommas:</span><span class="sxs-lookup"><span data-stu-id="abea5-124">Separate multiple note tags with commas:</span></span>
+<span data-ttu-id="55fe4-124">Trennen Sie mehrere Notiztags durch Kommas:</span><span class="sxs-lookup"><span data-stu-id="55fe4-124">Separate multiple note tags with commas:</span></span>
 
 ```html
 <p data-tag="important, critical">...</p>
 ```
 
-<span data-ttu-id="abea5-125">Sie können ein `data-tag` für die folgenden Elemente definieren:</span><span class="sxs-lookup"><span data-stu-id="abea5-125">You can define a `data-tag` on the following elements:</span></span>
+<span data-ttu-id="55fe4-125">Sie können ein `data-tag` für die folgenden Elemente definieren:</span><span class="sxs-lookup"><span data-stu-id="55fe4-125">You can define a `data-tag` on the following elements:</span></span>
 
-- <span data-ttu-id="abea5-126">p</span><span class="sxs-lookup"><span data-stu-id="abea5-126">p</span></span> 
-- <span data-ttu-id="abea5-127">ul, ol, li (weitere Informationen zu [Notiztags in Listen](#note-tags-on-lists))</span><span class="sxs-lookup"><span data-stu-id="abea5-127">ul, ol, li (see more about [note tags on lists](#note-tags-on-lists))</span></span>
-- <span data-ttu-id="abea5-128">img</span><span class="sxs-lookup"><span data-stu-id="abea5-128">img</span></span> 
-- <span data-ttu-id="abea5-129">h1 – h6</span><span class="sxs-lookup"><span data-stu-id="abea5-129">h1 - h6</span></span> 
-- <span data-ttu-id="abea5-130">title</span><span class="sxs-lookup"><span data-stu-id="abea5-130">title</span></span> 
+- <span data-ttu-id="55fe4-126">p</span><span class="sxs-lookup"><span data-stu-id="55fe4-126">p</span></span> 
+- <span data-ttu-id="55fe4-127">ul, ol, li (weitere Informationen zu [Notiztags in Listen](#note-tags-on-lists))</span><span class="sxs-lookup"><span data-stu-id="55fe4-127">ul, ol, li (see more about [note tags on lists](#note-tags-on-lists))</span></span>
+- <span data-ttu-id="55fe4-128">img</span><span class="sxs-lookup"><span data-stu-id="55fe4-128">img</span></span> 
+- <span data-ttu-id="55fe4-129">h1 – h6</span><span class="sxs-lookup"><span data-stu-id="55fe4-129">h1 - h6</span></span> 
+- <span data-ttu-id="55fe4-130">title</span><span class="sxs-lookup"><span data-stu-id="55fe4-130">title</span></span> 
 
-<span data-ttu-id="abea5-131">Eine Liste der Notiztags, die Sie mit Microsoft Graph verwenden können, finden Sie unter [Integrierte Notiztags](#built-in-note-tags-for-onenote).</span><span class="sxs-lookup"><span data-stu-id="abea5-131">See [Built-in note tags](#built-in-note-tags-for-onenote) for a list of note tags that you can use with Microsoft Graph.</span></span> <span data-ttu-id="abea5-132">Das Hinzufügen oder Aktualisieren von benutzerdefinierten Tags mit Microsoft Graph wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="abea5-132">Adding or updating custom tags using Microsoft Graph is not supported.</span></span>
+<span data-ttu-id="55fe4-131">Eine Liste der Notiztags, die Sie mit Microsoft Graph verwenden können, finden Sie unter [Integrierte Notiztags](#built-in-note-tags-for-onenote).</span><span class="sxs-lookup"><span data-stu-id="55fe4-131">See [Built-in note tags](#built-in-note-tags-for-onenote) for a list of note tags that you can use with Microsoft Graph.</span></span> <span data-ttu-id="55fe4-132">Das Hinzufügen oder Aktualisieren von benutzerdefinierten Tags mit Microsoft Graph wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="55fe4-132">Adding or updating custom tags using Microsoft Graph is not supported.</span></span>
  
-### <a name="examples"></a><span data-ttu-id="abea5-133">Beispiele</span><span class="sxs-lookup"><span data-stu-id="abea5-133">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="55fe4-133">Beispiele</span><span class="sxs-lookup"><span data-stu-id="55fe4-133">Examples</span></span>
 
-<span data-ttu-id="abea5-134">Im Folgenden finden Sie eine einfache Aufgabenliste, in der das erste Element abgeschlossen ist.</span><span class="sxs-lookup"><span data-stu-id="abea5-134">Here's a simple to-do list with the first item completed.</span></span>
+<span data-ttu-id="55fe4-134">Im Folgenden finden Sie eine einfache Aufgabenliste, in der das erste Element abgeschlossen ist.</span><span class="sxs-lookup"><span data-stu-id="55fe4-134">Here's a simple to-do list with the first item completed.</span></span>
 
 ```html 
 <p data-tag="to-do:completed" data-id="prep">Till garden bed</p> 
@@ -74,8 +76,8 @@ ms.locfileid: "27334622"
 <p data-tag="to-do" data-id="summer">Plant tomatoes and peppers</p>
 ```
 
-<span data-ttu-id="abea5-135">Beachten Sie, dass die oben aufgeführten `<p>`-Tags jeweils ein `data-id`-Attribut enthalten.</span><span class="sxs-lookup"><span data-stu-id="abea5-135">Note that the `<p>` tags above each include a `data-id` attribute.</span></span> <span data-ttu-id="abea5-136">Dies erleichtert das Aktualisieren der Kontrollkästchen-Notiztags.</span><span class="sxs-lookup"><span data-stu-id="abea5-136">This makes it easier to update the check box note tags.</span></span> <span data-ttu-id="abea5-137">Mit der folgenden Anforderung wird z. B. die Aufgabe Frühjahrsbepflanzung als abgeschlossen gekennzeichnet.
-</span><span class="sxs-lookup"><span data-stu-id="abea5-137">For example, the following request marks the spring planting to-do item as completed.</span></span>
+<span data-ttu-id="55fe4-135">Beachten Sie, dass die oben aufgeführten `<p>`-Tags jeweils ein `data-id`-Attribut enthalten.</span><span class="sxs-lookup"><span data-stu-id="55fe4-135">Note that the `<p>` tags above each include a `data-id` attribute.</span></span> <span data-ttu-id="55fe4-136">Dies erleichtert das Aktualisieren der Kontrollkästchen-Notiztags.</span><span class="sxs-lookup"><span data-stu-id="55fe4-136">This makes it easier to update the check box note tags.</span></span> <span data-ttu-id="55fe4-137">Mit der folgenden Anforderung wird z. B. die Aufgabe Frühjahrsbepflanzung als abgeschlossen gekennzeichnet.
+</span><span class="sxs-lookup"><span data-stu-id="55fe4-137">For example, the following request marks the spring planting to-do item as completed.</span></span>
 
 ```json
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
@@ -92,7 +94,7 @@ Authorization: Bearer {token}
 ]
 ```
 
-<span data-ttu-id="abea5-138">Die folgende Anforderung erstellt eine Seite, die alle [integrierten Notiztags](#built-in-note-tags-for-onenote) enthält.</span><span class="sxs-lookup"><span data-stu-id="abea5-138">The following request creates a page that contains all [built-in note tags](#built-in-note-tags-for-onenote).</span></span>
+<span data-ttu-id="55fe4-138">Die folgende Anforderung erstellt eine Seite, die alle [integrierten Notiztags](#built-in-note-tags-for-onenote) enthält.</span><span class="sxs-lookup"><span data-stu-id="55fe4-138">The following request creates a page that contains all [built-in note tags](#built-in-note-tags-for-onenote).</span></span>
 
 ```html 
 POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages
@@ -163,43 +165,43 @@ Authorization: Bearer {token}
 </html>
 ``` 
 
-<span data-ttu-id="abea5-139">Weitere Informationen zum Erstellen von Seiten finden Sie unter [Erstellen von OneNote-Seiten](onenote-create-page.md).</span><span class="sxs-lookup"><span data-stu-id="abea5-139">For more information about creating pages, see [Create OneNote pages](onenote-create-page.md).</span></span> <span data-ttu-id="abea5-140">Weitere Informationen zum Aktualisieren von Seiten finden Sie unter [Aktualisieren von OneNote-Seiten](onenote-update-page.md).</span><span class="sxs-lookup"><span data-stu-id="abea5-140">For more about updating pages, see [Update OneNote pages](onenote-update-page.md).</span></span>
+<span data-ttu-id="55fe4-139">Weitere Informationen zum Erstellen von Seiten finden Sie unter [Erstellen von OneNote-Seiten](onenote-create-page.md).</span><span class="sxs-lookup"><span data-stu-id="55fe4-139">For more information about creating pages, see [Create OneNote pages](onenote-create-page.md).</span></span> <span data-ttu-id="55fe4-140">Weitere Informationen zum Aktualisieren von Seiten finden Sie unter [Aktualisieren von OneNote-Seiten](onenote-update-page.md).</span><span class="sxs-lookup"><span data-stu-id="55fe4-140">For more about updating pages, see [Update OneNote pages](onenote-update-page.md).</span></span>
 
 
 <a name="note-tags-lists"></a>
 
-## <a name="note-tags-on-lists"></a><span data-ttu-id="abea5-141">Notiztags in Listen</span><span class="sxs-lookup"><span data-stu-id="abea5-141">Note tags on lists</span></span>
+## <a name="note-tags-on-lists"></a><span data-ttu-id="55fe4-141">Notiztags in Listen</span><span class="sxs-lookup"><span data-stu-id="55fe4-141">Note tags on lists</span></span>
 
-<span data-ttu-id="abea5-142">Hier sind einige Richtlinien für das Arbeiten mit Notiztags in Listen:</span><span class="sxs-lookup"><span data-stu-id="abea5-142">Here are some guidelines for working with note tags on lists:</span></span>
+<span data-ttu-id="55fe4-142">Hier sind einige Richtlinien für das Arbeiten mit Notiztags in Listen:</span><span class="sxs-lookup"><span data-stu-id="55fe4-142">Here are some guidelines for working with note tags on lists:</span></span>
 
-- <span data-ttu-id="abea5-143">Verwenden Sie `p`-Elemente für Aufgabenlisten.</span><span class="sxs-lookup"><span data-stu-id="abea5-143">Use `p` elements for to-do lists.</span></span> <span data-ttu-id="abea5-144">Sie zeigen keine Aufzählungen oder Nummern an und können einfacher aktualisiert werden.</span><span class="sxs-lookup"><span data-stu-id="abea5-144">They don't display a bullet or number, and they're easier to update.</span></span>
+- <span data-ttu-id="55fe4-143">Verwenden Sie `p`-Elemente für Aufgabenlisten.</span><span class="sxs-lookup"><span data-stu-id="55fe4-143">Use `p` elements for to-do lists.</span></span> <span data-ttu-id="55fe4-144">Sie zeigen keine Aufzählungen oder Nummern an und können einfacher aktualisiert werden.</span><span class="sxs-lookup"><span data-stu-id="55fe4-144">They don't display a bullet or number, and they're easier to update.</span></span>
 
-- <span data-ttu-id="abea5-145">Zum Erstellen oder Aktualisieren von Listen, die **dasselbe** Notiztag für alle Listenelemente anzeigen, definieren Sie `data-tag` in `ul` oder `ol`.</span><span class="sxs-lookup"><span data-stu-id="abea5-145">To create or update lists that display the **same** note tag for all list items, define `data-tag` on the `ul` or `ol`.</span></span> <span data-ttu-id="abea5-146">Um die gesamte Liste zu aktualisieren, müssen Sie `data-tag` für `ul` oder `ol` neu definieren.</span><span class="sxs-lookup"><span data-stu-id="abea5-146">To update the entire list, you'll need to redefine `data-tag` on the `ul` or `ol`.</span></span>
+- <span data-ttu-id="55fe4-145">Zum Erstellen oder Aktualisieren von Listen, die **dasselbe** Notiztag für alle Listenelemente anzeigen, definieren Sie `data-tag` in `ul` oder `ol`.</span><span class="sxs-lookup"><span data-stu-id="55fe4-145">To create or update lists that display the **same** note tag for all list items, define `data-tag` on the `ul` or `ol`.</span></span> <span data-ttu-id="55fe4-146">Um die gesamte Liste zu aktualisieren, müssen Sie `data-tag` für `ul` oder `ol` neu definieren.</span><span class="sxs-lookup"><span data-stu-id="55fe4-146">To update the entire list, you'll need to redefine `data-tag` on the `ul` or `ol`.</span></span>
 
-- <span data-ttu-id="abea5-147">Zum Erstellen oder Aktualisieren von Listen, die ein **eindeutiges** Notiztag für einige oder alle Listenelemente anzeigen, definieren Sie `data-tag` für `li`-Elemente, und schachteln Sie die `li`-Elemente nicht in `ul` oder `ol`.</span><span class="sxs-lookup"><span data-stu-id="abea5-147">To create or update lists that display a **unique** note tag for some or all list items, define `data-tag` on `li` elements, and don't nest the `li` elements in a `ul` or `ol`.</span></span> <span data-ttu-id="abea5-148">Um die gesamte Liste zu aktualisieren, müssen Sie das `ul`-Element, das in der HTML-Ausgabe zurückgegeben wird, entfernen und nur die ungeschachtelten `li`-Elemente zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="abea5-148">To update the entire list, you'll need to remove the `ul` that's returned in the output HTML and provide only the unnested `li` elements.</span></span>
+- <span data-ttu-id="55fe4-147">Zum Erstellen oder Aktualisieren von Listen, die ein **eindeutiges** Notiztag für einige oder alle Listenelemente anzeigen, definieren Sie `data-tag` für `li`-Elemente, und schachteln Sie die `li`-Elemente nicht in `ul` oder `ol`.</span><span class="sxs-lookup"><span data-stu-id="55fe4-147">To create or update lists that display a **unique** note tag for some or all list items, define `data-tag` on `li` elements, and don't nest the `li` elements in a `ul` or `ol`.</span></span> <span data-ttu-id="55fe4-148">Um die gesamte Liste zu aktualisieren, müssen Sie das `ul`-Element, das in der HTML-Ausgabe zurückgegeben wird, entfernen und nur die ungeschachtelten `li`-Elemente zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="55fe4-148">To update the entire list, you'll need to remove the `ul` that's returned in the output HTML and provide only the unnested `li` elements.</span></span>
 
-- <span data-ttu-id="abea5-149">Um bestimmte `li`-Elemente zu aktualisieren, setzen Sie die `li`-Elemente einzeln als Ziel ein und definieren Sie `data-tag` des `li`-Elements.</span><span class="sxs-lookup"><span data-stu-id="abea5-149">To update specific `li` elements, target the `li` elements individually and define the `data-tag` on the `li` element.</span></span> <span data-ttu-id="abea5-150">Ein einzeln adressiertes `li`-Element kann so aktualisiert werden, dass es ein eindeutiges Notiztag anzeigt, unabhängig davon, wie die Liste ursprünglich definiert wurde.</span><span class="sxs-lookup"><span data-stu-id="abea5-150">Any individually addressed `li` element can be updated to display a unique note tag, no matter how the list was originally defined.</span></span>
+- <span data-ttu-id="55fe4-149">Um bestimmte `li`-Elemente zu aktualisieren, setzen Sie die `li`-Elemente einzeln als Ziel ein und definieren Sie `data-tag` des `li`-Elements.</span><span class="sxs-lookup"><span data-stu-id="55fe4-149">To update specific `li` elements, target the `li` elements individually and define the `data-tag` on the `li` element.</span></span> <span data-ttu-id="55fe4-150">Ein einzeln adressiertes `li`-Element kann so aktualisiert werden, dass es ein eindeutiges Notiztag anzeigt, unabhängig davon, wie die Liste ursprünglich definiert wurde.</span><span class="sxs-lookup"><span data-stu-id="55fe4-150">Any individually addressed `li` element can be updated to display a unique note tag, no matter how the list was originally defined.</span></span>
 
-  <span data-ttu-id="abea5-151">Die Richtlinien basieren auf den folgenden Regeln, die von Microsoft Graph angewendet werden:</span><span class="sxs-lookup"><span data-stu-id="abea5-151">The guidelines are based on the following rules that are applied by Microsoft Graph:</span></span>
+  <span data-ttu-id="55fe4-151">Die Richtlinien basieren auf den folgenden Regeln, die von Microsoft Graph angewendet werden:</span><span class="sxs-lookup"><span data-stu-id="55fe4-151">The guidelines are based on the following rules that are applied by Microsoft Graph:</span></span>
 
-  - <span data-ttu-id="abea5-152">Die `data-tag`-Einstellung für ein `ul`- oder `ol`-Element überschreibt alle Einstellungen in untergeordneten `li`-Elementen.</span><span class="sxs-lookup"><span data-stu-id="abea5-152">The `data-tag` setting for a `ul` or `ol` overrides all settings on child `li` elements.</span></span> <span data-ttu-id="abea5-153">Dies gilt auch dann, wenn das `ul`- oder `ol`-Element kein `data-tag` angibt, aber seine untergeordneten `li`-Elemente dies tun.</span><span class="sxs-lookup"><span data-stu-id="abea5-153">This applies even when the `ul` or `ol` doesn't specify a `data-tag` but its child `li` elements do.</span></span>
+  - <span data-ttu-id="55fe4-152">Die `data-tag`-Einstellung für ein `ul`- oder `ol`-Element überschreibt alle Einstellungen in untergeordneten `li`-Elementen.</span><span class="sxs-lookup"><span data-stu-id="55fe4-152">The `data-tag` setting for a `ul` or `ol` overrides all settings on child `li` elements.</span></span> <span data-ttu-id="55fe4-153">Dies gilt auch dann, wenn das `ul`- oder `ol`-Element kein `data-tag` angibt, aber seine untergeordneten `li`-Elemente dies tun.</span><span class="sxs-lookup"><span data-stu-id="55fe4-153">This applies even when the `ul` or `ol` doesn't specify a `data-tag` but its child `li` elements do.</span></span>
 
-    <span data-ttu-id="abea5-154">Wenn Sie beispielsweise ein `ul`- oder `ol`-Element erstellen, das `data-tag="project-a"` definiert, zeigen alle Listenelemente das Notiztag *Project A* an.</span><span class="sxs-lookup"><span data-stu-id="abea5-154">For example, if you create a `ul` or `ol` that defines `data-tag="project-a"`, all its list items will display the *Project A* note tag.</span></span> <span data-ttu-id="abea5-155">Wenn dagegen das `ul`- oder `ol`-Element kein `data-tag` definiert, zeigt keines seiner Elemente ein Notiztag an.</span><span class="sxs-lookup"><span data-stu-id="abea5-155">Or if the `ul` or `ol` doesn't define a `data-tag`, none of its items will display a note tag.</span></span> <span data-ttu-id="abea5-156">Diese Außerkraftsetzung geschieht unabhängig von expliziten Einstellungen in untergeordneten `li`-Elementen.</span><span class="sxs-lookup"><span data-stu-id="abea5-156">This override happens regardless of any explicit settings on child `li` elements.</span></span>
+    <span data-ttu-id="55fe4-154">Wenn Sie beispielsweise ein `ul`- oder `ol`-Element erstellen, das `data-tag="project-a"` definiert, zeigen alle Listenelemente das Notiztag *Project A* an.</span><span class="sxs-lookup"><span data-stu-id="55fe4-154">For example, if you create a `ul` or `ol` that defines `data-tag="project-a"`, all its list items will display the *Project A* note tag.</span></span> <span data-ttu-id="55fe4-155">Wenn dagegen das `ul`- oder `ol`-Element kein `data-tag` definiert, zeigt keines seiner Elemente ein Notiztag an.</span><span class="sxs-lookup"><span data-stu-id="55fe4-155">Or if the `ul` or `ol` doesn't define a `data-tag`, none of its items will display a note tag.</span></span> <span data-ttu-id="55fe4-156">Diese Außerkraftsetzung geschieht unabhängig von expliziten Einstellungen in untergeordneten `li`-Elementen.</span><span class="sxs-lookup"><span data-stu-id="55fe4-156">This override happens regardless of any explicit settings on child `li` elements.</span></span>
 
-- <span data-ttu-id="abea5-157">Eindeutige `data-tag`-Einstellungen werden für Listenelemente unter den folgenden Bedingungen berücksichtigt:</span><span class="sxs-lookup"><span data-stu-id="abea5-157">Unique `data-tag` settings are honored for list items under the following conditions:</span></span>
+- <span data-ttu-id="55fe4-157">Eindeutige `data-tag`-Einstellungen werden für Listenelemente unter den folgenden Bedingungen berücksichtigt:</span><span class="sxs-lookup"><span data-stu-id="55fe4-157">Unique `data-tag` settings are honored for list items under the following conditions:</span></span>
 
-  - <span data-ttu-id="abea5-158">Die `li`-Elemente sind nicht in einem `ul` oder `ol` in einer Erstellungs- oder Aktualisierungsanforderung geschachtelt.</span><span class="sxs-lookup"><span data-stu-id="abea5-158">The `li` elements are not nested in a `ul` or `ol` in a create or update request.</span></span>
+  - <span data-ttu-id="55fe4-158">Die `li`-Elemente sind nicht in einem `ul` oder `ol` in einer Erstellungs- oder Aktualisierungsanforderung geschachtelt.</span><span class="sxs-lookup"><span data-stu-id="55fe4-158">The `li` elements are not nested in a `ul` or `ol` in a create or update request.</span></span>
 
-  - <span data-ttu-id="abea5-159">Ein `li`-Element wird einzeln in einer Aktualisierungsanforderung adressiert.</span><span class="sxs-lookup"><span data-stu-id="abea5-159">An `li` element is individually addressed in an update request.</span></span>
+  - <span data-ttu-id="55fe4-159">Ein `li`-Element wird einzeln in einer Aktualisierungsanforderung adressiert.</span><span class="sxs-lookup"><span data-stu-id="55fe4-159">An `li` element is individually addressed in an update request.</span></span>
 
-- <span data-ttu-id="abea5-160">Ungeschachtelte `li`-Elemente, die im Eingabe-HTML-Code gesendet wurden, werden in einem `ul` im Ausgabe-HTML-Code zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="abea5-160">Unnested `li` elements sent in input HTML are returned in a `ul` in the output HTML.</span></span>
+- <span data-ttu-id="55fe4-160">Ungeschachtelte `li`-Elemente, die im Eingabe-HTML-Code gesendet wurden, werden in einem `ul` im Ausgabe-HTML-Code zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="55fe4-160">Unnested `li` elements sent in input HTML are returned in a `ul` in the output HTML.</span></span>
 
-- <span data-ttu-id="abea5-161">Im Ausgabe-HTML-Code werden alle `data-tag`-Listeneinstellungen in `span`-Elementen für die Listenelemente definiert.</span><span class="sxs-lookup"><span data-stu-id="abea5-161">In output HTML, all `data-tag` list settings are defined on `span` elements on the list items.</span></span>
+- <span data-ttu-id="55fe4-161">Im Ausgabe-HTML-Code werden alle `data-tag`-Listeneinstellungen in `span`-Elementen für die Listenelemente definiert.</span><span class="sxs-lookup"><span data-stu-id="55fe4-161">In output HTML, all `data-tag` list settings are defined on `span` elements on the list items.</span></span>
 
 
-<span data-ttu-id="abea5-162">Der folgende Code zeigt, wie einige dieser Regeln angewendet werden.</span><span class="sxs-lookup"><span data-stu-id="abea5-162">The following code shows how some of these rules are applied.</span></span> <span data-ttu-id="abea5-163">Der Eingabe-HTML-Code erstellt zwei Listen mit Notiztags.</span><span class="sxs-lookup"><span data-stu-id="abea5-163">The input HTML creates two lists with note tags.</span></span> <span data-ttu-id="abea5-164">Der Ausgabe-HTML-Code wird für die Listen zurückgegeben, wenn Sie den Inhalt der Seite abrufen.</span><span class="sxs-lookup"><span data-stu-id="abea5-164">The output HTML is what's returned for the lists when you retrieve page content.</span></span>
+<span data-ttu-id="55fe4-162">Der folgende Code zeigt, wie einige dieser Regeln angewendet werden.</span><span class="sxs-lookup"><span data-stu-id="55fe4-162">The following code shows how some of these rules are applied.</span></span> <span data-ttu-id="55fe4-163">Der Eingabe-HTML-Code erstellt zwei Listen mit Notiztags.</span><span class="sxs-lookup"><span data-stu-id="55fe4-163">The input HTML creates two lists with note tags.</span></span> <span data-ttu-id="55fe4-164">Der Ausgabe-HTML-Code wird für die Listen zurückgegeben, wenn Sie den Inhalt der Seite abrufen.</span><span class="sxs-lookup"><span data-stu-id="55fe4-164">The output HTML is what's returned for the lists when you retrieve page content.</span></span>
 
-#### <a name="input-html"></a><span data-ttu-id="abea5-165">Eingabe-HTML</span><span class="sxs-lookup"><span data-stu-id="abea5-165">Input HTML</span></span>
+#### <a name="input-html"></a><span data-ttu-id="55fe4-165">Eingabe-HTML</span><span class="sxs-lookup"><span data-stu-id="55fe4-165">Input HTML</span></span>
 
 ```html 
 <!--To display the same note tag on all list items, define note tags on the ul or ol.--> 
@@ -213,7 +215,7 @@ Authorization: Bearer {token}
 <li data-tag="question" data-id="my-question">An item with a Question note tag</li>
 ```
  
-#### <a name="output-html"></a><span data-ttu-id="abea5-166">Ausgabe-HTML</span><span class="sxs-lookup"><span data-stu-id="abea5-166">Output HTML</span></span>
+#### <a name="output-html"></a><span data-ttu-id="55fe4-166">Ausgabe-HTML</span><span class="sxs-lookup"><span data-stu-id="55fe4-166">Output HTML</span></span>
 
 ```html 
 <ul>
@@ -229,15 +231,15 @@ Authorization: Bearer {token}
 
 <a name="output-html"></a>
 
-## <a name="retrieve-note-tags"></a><span data-ttu-id="abea5-167">Abrufen von Notiztags</span><span class="sxs-lookup"><span data-stu-id="abea5-167">Retrieve note tags</span></span>
+## <a name="retrieve-note-tags"></a><span data-ttu-id="55fe4-167">Abrufen von Notiztags</span><span class="sxs-lookup"><span data-stu-id="55fe4-167">Retrieve note tags</span></span>
 
-<span data-ttu-id="abea5-168">Integrierte Notiztags sind im Ausgabe-HTML-Code enthalten, wenn Sie Seiteninhalte abrufen:</span><span class="sxs-lookup"><span data-stu-id="abea5-168">Built-in note tags are included in the output HTML when you get page content:</span></span>
+<span data-ttu-id="55fe4-168">Integrierte Notiztags sind im Ausgabe-HTML-Code enthalten, wenn Sie Seiteninhalte abrufen:</span><span class="sxs-lookup"><span data-stu-id="55fe4-168">Built-in note tags are included in the output HTML when you get page content:</span></span>
 
 `GET ../api/v1.0/pages/{page-id}/content` 
 
-<span data-ttu-id="abea5-169">Ein `data-tag`-Attribut in der HTML-Ausgabe enthält immer einen Shape-Wert. Zusätzlich ist ein Status enthalten, wenn es sich um ein Kontrollkästchen-Notiztag handelt, das auf „completed“ festgelegt wurde.</span><span class="sxs-lookup"><span data-stu-id="abea5-169">A `data-tag` attribute in the output HTML always includes a shape value, and it only includes a status if it represents a check box note tag that's set to completed.</span></span> <span data-ttu-id="abea5-170">Das folgende Beispiel zeigt den Eingabe-HTML-Code, der zum Erstellen einiger Notiztags verwendet wurde, und den zurückgegebenen Ausgabe-HTML-Code.</span><span class="sxs-lookup"><span data-stu-id="abea5-170">The following examples show the input HTML used to create some note tags and the output HTML that's returned.</span></span>
+<span data-ttu-id="55fe4-169">Ein `data-tag`-Attribut in der HTML-Ausgabe enthält immer einen Shape-Wert. Zusätzlich ist ein Status enthalten, wenn es sich um ein Kontrollkästchen-Notiztag handelt, das auf „completed“ festgelegt wurde.</span><span class="sxs-lookup"><span data-stu-id="55fe4-169">A `data-tag` attribute in the output HTML always includes a shape value, and it only includes a status if it represents a check box note tag that's set to completed.</span></span> <span data-ttu-id="55fe4-170">Das folgende Beispiel zeigt den Eingabe-HTML-Code, der zum Erstellen einiger Notiztags verwendet wurde, und den zurückgegebenen Ausgabe-HTML-Code.</span><span class="sxs-lookup"><span data-stu-id="55fe4-170">The following examples show the input HTML used to create some note tags and the output HTML that's returned.</span></span>
 
-#### <a name="input-html"></a><span data-ttu-id="abea5-171">Eingabe-HTML</span><span class="sxs-lookup"><span data-stu-id="abea5-171">Input HTML</span></span>
+#### <a name="input-html"></a><span data-ttu-id="55fe4-171">Eingabe-HTML</span><span class="sxs-lookup"><span data-stu-id="55fe4-171">Input HTML</span></span>
 
 ```html 
 <h1>Status meeting</h1>
@@ -251,7 +253,7 @@ Authorization: Bearer {token}
 </ul>
 ```
 
-#### <a name="output-html"></a><span data-ttu-id="abea5-172">Ausgabe-HTML</span><span class="sxs-lookup"><span data-stu-id="abea5-172">Output HTML</span></span>
+#### <a name="output-html"></a><span data-ttu-id="55fe4-172">Ausgabe-HTML</span><span class="sxs-lookup"><span data-stu-id="55fe4-172">Output HTML</span></span>
 
 ```html 
 <h1 style="...">Status meeting</h1>
@@ -265,24 +267,24 @@ Authorization: Bearer {token}
 </ul>
 ```
 
-<span data-ttu-id="abea5-173">Beachten Sie, dass das auf Listenebene definierte `data-tag`-Attribut auf dessen Listenelemente übertragen wird.</span><span class="sxs-lookup"><span data-stu-id="abea5-173">Note that the `data-tag` attribute defined at the list level is pushed to its list items.</span></span> <span data-ttu-id="abea5-174">Weitere Informationen zur Verwendung von Notiztags mit Listen finden Sie unter [Notiztags in Listen](#note-tags-on-lists).</span><span class="sxs-lookup"><span data-stu-id="abea5-174">For more information about using note tags with lists, see [Note tags on lists](#note-tags-on-lists).</span></span>
+<span data-ttu-id="55fe4-173">Beachten Sie, dass das auf Listenebene definierte `data-tag`-Attribut auf dessen Listenelemente übertragen wird.</span><span class="sxs-lookup"><span data-stu-id="55fe4-173">Note that the `data-tag` attribute defined at the list level is pushed to its list items.</span></span> <span data-ttu-id="55fe4-174">Weitere Informationen zur Verwendung von Notiztags mit Listen finden Sie unter [Notiztags in Listen](#note-tags-on-lists).</span><span class="sxs-lookup"><span data-stu-id="55fe4-174">For more information about using note tags with lists, see [Note tags on lists](#note-tags-on-lists).</span></span>
 
-> <span data-ttu-id="abea5-175">**Hinweis:** Im HTML-Ausgabe-Code werden die Notiztags für Definition und Speicherung als `data-tag="remember-for-later"` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="abea5-175">**Note:** In the output HTML, the definition and remember-for-later note tags are both returned as `data-tag="remember-for-later"`.</span></span> <span data-ttu-id="abea5-176">Das `title`-Element gibt keine Notiztaginformationen zurück.</span><span class="sxs-lookup"><span data-stu-id="abea5-176">The `title` element doesn't return any note tag information.</span></span>
+> <span data-ttu-id="55fe4-175">**Hinweis:** Im HTML-Ausgabe-Code werden die Notiztags für Definition und Speicherung als `data-tag="remember-for-later"` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="55fe4-175">**Note:** In the output HTML, the definition and remember-for-later note tags are both returned as `data-tag="remember-for-later"`.</span></span> <span data-ttu-id="55fe4-176">Das `title`-Element gibt keine Notiztaginformationen zurück.</span><span class="sxs-lookup"><span data-stu-id="55fe4-176">The `title` element doesn't return any note tag information.</span></span>
 
 
 
 
 <a name="built-in-tags"></a>
 
-## <a name="built-in-note-tags-for-onenote"></a><span data-ttu-id="abea5-177">Integrierte Notiztags für OneNote</span><span class="sxs-lookup"><span data-stu-id="abea5-177">Built-in note tags for OneNote</span></span>
+## <a name="built-in-note-tags-for-onenote"></a><span data-ttu-id="55fe4-177">Integrierte Notiztags für OneNote</span><span class="sxs-lookup"><span data-stu-id="55fe4-177">Built-in note tags for OneNote</span></span>
 
-<span data-ttu-id="abea5-178">OneNote umfasst die folgenden integrierten Notiztags:</span><span class="sxs-lookup"><span data-stu-id="abea5-178">OneNote includes the following built-in note tags:</span></span>
+<span data-ttu-id="55fe4-178">OneNote umfasst die folgenden integrierten Notiztags:</span><span class="sxs-lookup"><span data-stu-id="55fe4-178">OneNote includes the following built-in note tags:</span></span>
 
 ![Alle integrierten Notiztags.](images/note-tags-all.png)
 
-<span data-ttu-id="abea5-180">Die Werte, die Sie dem `data-tag`-Attribut zuweisen können, werden in der folgenden Tabelle aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="abea5-180">The values you can assign to the `data-tag` attribute are shown in the following table.</span></span> <span data-ttu-id="abea5-181">Benutzerdefinierte Tags werden nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="abea5-181">Custom tags are not supported.</span></span>
+<span data-ttu-id="55fe4-180">Die Werte, die Sie dem `data-tag`-Attribut zuweisen können, werden in der folgenden Tabelle aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="55fe4-180">The values you can assign to the `data-tag` attribute are shown in the following table.</span></span> <span data-ttu-id="55fe4-181">Benutzerdefinierte Tags werden nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="55fe4-181">Custom tags are not supported.</span></span>
 
-||<span data-ttu-id="abea5-182">Tags</span><span class="sxs-lookup"><span data-stu-id="abea5-182">Tags</span></span>||
+||<span data-ttu-id="55fe4-182">Tags</span><span class="sxs-lookup"><span data-stu-id="55fe4-182">Tags</span></span>||
 |:---|:---|:-----|
 |`shape[:status]` |`to-do`<br/><br/>`to-do:completed`|`important`|
 |`question`|`definition`|`highlight`|
@@ -298,46 +300,46 @@ Authorization: Bearer {token}
 
 <a name="request-response-info"></a>
 
-## <a name="response-information"></a><span data-ttu-id="abea5-183">Antwortinformationen</span><span class="sxs-lookup"><span data-stu-id="abea5-183">Response information</span></span>
+## <a name="response-information"></a><span data-ttu-id="55fe4-183">Antwortinformationen</span><span class="sxs-lookup"><span data-stu-id="55fe4-183">Response information</span></span>
 
-<span data-ttu-id="abea5-184">Microsoft Graph gibt die folgenden Informationen in der Antwort zurück.</span><span class="sxs-lookup"><span data-stu-id="abea5-184">Microsoft Graph returns the following information in the response.</span></span>
+<span data-ttu-id="55fe4-184">Microsoft Graph gibt die folgenden Informationen in der Antwort zurück.</span><span class="sxs-lookup"><span data-stu-id="55fe4-184">Microsoft Graph returns the following information in the response.</span></span>
 
-| <span data-ttu-id="abea5-185">Antwortdaten</span><span class="sxs-lookup"><span data-stu-id="abea5-185">Response data</span></span> | <span data-ttu-id="abea5-186">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="abea5-186">Description</span></span> |  
+| <span data-ttu-id="55fe4-185">Antwortdaten</span><span class="sxs-lookup"><span data-stu-id="55fe4-185">Response data</span></span> | <span data-ttu-id="55fe4-186">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="55fe4-186">Description</span></span> |  
 |------|------|  
-| <span data-ttu-id="abea5-187">Erfolgscode</span><span class="sxs-lookup"><span data-stu-id="abea5-187">Success code</span></span> | <span data-ttu-id="abea5-188">HTTP-Statuscode 201 bei erfolgreich ausgeführter POST-Anforderung, HTTP-Statuscode 204 bei erfolgreich ausgeführter PATCH-Anforderung</span><span class="sxs-lookup"><span data-stu-id="abea5-188">A 201 HTTP status code for a successful POST request, and a 204 HTTP status code for a successful PATCH request.</span></span> |  
-| <span data-ttu-id="abea5-189">Fehler</span><span class="sxs-lookup"><span data-stu-id="abea5-189">Errors</span></span> | <span data-ttu-id="abea5-190">Informationen zu OneNote-Fehlern, die Microsoft Graph zurückgeben kann, finden Sie unter [Fehlercodes für OneNote-APIs in Microsoft Graph](onenote-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="abea5-190">Read [Error codes for OneNote APIs in Microsoft Graph](onenote-error-codes.md) to learn about OneNote errors that Microsoft Graph can return.</span></span> |  
+| <span data-ttu-id="55fe4-187">Erfolgscode</span><span class="sxs-lookup"><span data-stu-id="55fe4-187">Success code</span></span> | <span data-ttu-id="55fe4-188">HTTP-Statuscode 201 bei erfolgreich ausgeführter POST-Anforderung, HTTP-Statuscode 204 bei erfolgreich ausgeführter PATCH-Anforderung</span><span class="sxs-lookup"><span data-stu-id="55fe4-188">A 201 HTTP status code for a successful POST request, and a 204 HTTP status code for a successful PATCH request.</span></span> |  
+| <span data-ttu-id="55fe4-189">Fehler</span><span class="sxs-lookup"><span data-stu-id="55fe4-189">Errors</span></span> | <span data-ttu-id="55fe4-190">Informationen zu OneNote-Fehlern, die Microsoft Graph zurückgeben kann, finden Sie unter [Fehlercodes für OneNote-APIs in Microsoft Graph](onenote-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="55fe4-190">Read [Error codes for OneNote APIs in Microsoft Graph](onenote-error-codes.md) to learn about OneNote errors that Microsoft Graph can return.</span></span> |  
 
 
 <a name="permissions"></a>
 
-## <a name="permissions"></a><span data-ttu-id="abea5-191">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="abea5-191">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="55fe4-191">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="55fe4-191">Permissions</span></span>
 
-<span data-ttu-id="abea5-192">Zum Erstellen oder Aktualisieren von OneNote-Seiten müssen Sie die entsprechenden Berechtigungen anfordern.</span><span class="sxs-lookup"><span data-stu-id="abea5-192">To create or update OneNote pages, you'll need to request appropriate permissions.</span></span> <span data-ttu-id="abea5-193">Wählen Sie die niedrigste Berechtigungsstufe, die Ihre App zur Erledigung ihrer Aufgaben benötigt.</span><span class="sxs-lookup"><span data-stu-id="abea5-193">Choose the lowest level of permissions that your app needs to do its work.</span></span>
+<span data-ttu-id="55fe4-192">Zum Erstellen oder Aktualisieren von OneNote-Seiten müssen Sie die entsprechenden Berechtigungen anfordern.</span><span class="sxs-lookup"><span data-stu-id="55fe4-192">To create or update OneNote pages, you'll need to request appropriate permissions.</span></span> <span data-ttu-id="55fe4-193">Wählen Sie die niedrigste Berechtigungsstufe, die Ihre App zur Erledigung ihrer Aufgaben benötigt.</span><span class="sxs-lookup"><span data-stu-id="55fe4-193">Choose the lowest level of permissions that your app needs to do its work.</span></span>
 
-#### <a name="permissions-for-post-pages"></a><span data-ttu-id="abea5-194">Berechtigungen für BEITRAG-Seiten</span><span class="sxs-lookup"><span data-stu-id="abea5-194">Permissions for POST pages</span></span>
+#### <a name="permissions-for-post-pages"></a><span data-ttu-id="55fe4-194">Berechtigungen für BEITRAG-Seiten</span><span class="sxs-lookup"><span data-stu-id="55fe4-194">Permissions for POST pages</span></span>
 
-- <span data-ttu-id="abea5-195">Notes.Create</span><span class="sxs-lookup"><span data-stu-id="abea5-195">Notes.Create</span></span>
-- <span data-ttu-id="abea5-196">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="abea5-196">Notes.ReadWrite</span></span>
-- <span data-ttu-id="abea5-197">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="abea5-197">Notes.ReadWrite.All</span></span>  
+- <span data-ttu-id="55fe4-195">Notes.Create</span><span class="sxs-lookup"><span data-stu-id="55fe4-195">Notes.Create</span></span>
+- <span data-ttu-id="55fe4-196">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="55fe4-196">Notes.ReadWrite</span></span>
+- <span data-ttu-id="55fe4-197">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="55fe4-197">Notes.ReadWrite.All</span></span>  
 
-#### <a name="permissions-for-patch-pages"></a><span data-ttu-id="abea5-198">Berechtigungen für PATCH-Seiten</span><span class="sxs-lookup"><span data-stu-id="abea5-198">Permissions for PATCH pages</span></span>
+#### <a name="permissions-for-patch-pages"></a><span data-ttu-id="55fe4-198">Berechtigungen für PATCH-Seiten</span><span class="sxs-lookup"><span data-stu-id="55fe4-198">Permissions for PATCH pages</span></span>
 
-- <span data-ttu-id="abea5-199">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="abea5-199">Notes.ReadWrite</span></span>
-- <span data-ttu-id="abea5-200">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="abea5-200">Notes.ReadWrite.All</span></span>  
+- <span data-ttu-id="55fe4-199">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="55fe4-199">Notes.ReadWrite</span></span>
+- <span data-ttu-id="55fe4-200">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="55fe4-200">Notes.ReadWrite.All</span></span>  
 
-<span data-ttu-id="abea5-201">Weitere Informationen zu Berechtigungsbereichen und deren Funktionsweise finden Sie unter [OneNote-Berechtigungsbereiche](permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="abea5-201">For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md).</span></span>
+<span data-ttu-id="55fe4-201">Weitere Informationen zu Berechtigungsbereichen und deren Funktionsweise finden Sie unter [OneNote-Berechtigungsbereiche](permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="55fe4-201">For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md).</span></span>
 
 
 <a name="see-also"></a>
 
-## <a name="see-also"></a><span data-ttu-id="abea5-202">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="abea5-202">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="55fe4-202">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="55fe4-202">See also</span></span>
 
-- [<span data-ttu-id="abea5-203">Erstellen von OneNote-Seiten</span><span class="sxs-lookup"><span data-stu-id="abea5-203">Create OneNote pages</span></span>](onenote-create-page.md)
-- [<span data-ttu-id="abea5-204">Aktualisieren der Inhalte von OneNote-Seiten</span><span class="sxs-lookup"><span data-stu-id="abea5-204">Update OneNote page content</span></span>](onenote-update-page.md)
-- [<span data-ttu-id="abea5-205">Integrieren mit OneNote</span><span class="sxs-lookup"><span data-stu-id="abea5-205">Integrate with OneNote</span></span>](integrate-with-onenote.md)
-- [<span data-ttu-id="abea5-206">OneNote-Entwicklerblog</span><span class="sxs-lookup"><span data-stu-id="abea5-206">OneNote Developer Blog</span></span>](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [<span data-ttu-id="abea5-207">Fragen zur OneNote-Entwicklung auf Stack Overflow</span><span class="sxs-lookup"><span data-stu-id="abea5-207">OneNote development questions on Stack Overflow</span></span>](https://go.microsoft.com/fwlink/?LinkID=390182)
-- [<span data-ttu-id="abea5-208">OneNote GitHub-Repos</span><span class="sxs-lookup"><span data-stu-id="abea5-208">OneNote GitHub repos</span></span>](https://go.microsoft.com/fwlink/?LinkID=390178)  
+- [<span data-ttu-id="55fe4-203">Erstellen von OneNote-Seiten</span><span class="sxs-lookup"><span data-stu-id="55fe4-203">Create OneNote pages</span></span>](onenote-create-page.md)
+- [<span data-ttu-id="55fe4-204">Aktualisieren der Inhalte von OneNote-Seiten</span><span class="sxs-lookup"><span data-stu-id="55fe4-204">Update OneNote page content</span></span>](onenote-update-page.md)
+- [<span data-ttu-id="55fe4-205">Integrieren mit OneNote</span><span class="sxs-lookup"><span data-stu-id="55fe4-205">Integrate with OneNote</span></span>](integrate-with-onenote.md)
+- [<span data-ttu-id="55fe4-206">OneNote-Entwicklerblog</span><span class="sxs-lookup"><span data-stu-id="55fe4-206">OneNote Developer Blog</span></span>](https://go.microsoft.com/fwlink/?LinkID=390183)
+- [<span data-ttu-id="55fe4-207">Fragen zur OneNote-Entwicklung auf Stack Overflow</span><span class="sxs-lookup"><span data-stu-id="55fe4-207">OneNote development questions on Stack Overflow</span></span>](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [<span data-ttu-id="55fe4-208">OneNote GitHub-Repos</span><span class="sxs-lookup"><span data-stu-id="55fe4-208">OneNote GitHub repos</span></span>](https://go.microsoft.com/fwlink/?LinkID=390178)  
  
 
 

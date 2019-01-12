@@ -3,28 +3,29 @@ title: mimeContent-Ressourcentyp
 description: Enthält die Eigenschaften für generischen MIME-Inhalt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a0b63289b3d7666eb27de7e6dc4e643dd9fa4772
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8a486753c95afce9dff6ceec5846ff618b9103b3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857043"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971900"
 ---
-# <a name="mimecontent-resource-type"></a><span data-ttu-id="e0386-103">mimeContent-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="e0386-103">mimeContent resource type</span></span>
+# <a name="mimecontent-resource-type"></a><span data-ttu-id="704ba-103">mimeContent-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="704ba-103">mimeContent resource type</span></span>
 
-> <span data-ttu-id="e0386-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="e0386-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="704ba-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="704ba-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="e0386-105">Enthält die Eigenschaften für generischen MIME-Inhalt.</span><span class="sxs-lookup"><span data-stu-id="e0386-105">Contains properties for a generic mime content.</span></span>
-## <a name="properties"></a><span data-ttu-id="e0386-106">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="e0386-106">Properties</span></span>
-|<span data-ttu-id="e0386-107">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="e0386-107">Property</span></span>|<span data-ttu-id="e0386-108">Typ</span><span class="sxs-lookup"><span data-stu-id="e0386-108">Type</span></span>|<span data-ttu-id="e0386-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e0386-109">Description</span></span>|
+<span data-ttu-id="704ba-105">Enthält die Eigenschaften für generischen MIME-Inhalt.</span><span class="sxs-lookup"><span data-stu-id="704ba-105">Contains properties for a generic mime content.</span></span>
+## <a name="properties"></a><span data-ttu-id="704ba-106">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="704ba-106">Properties</span></span>
+|<span data-ttu-id="704ba-107">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="704ba-107">Property</span></span>|<span data-ttu-id="704ba-108">Typ</span><span class="sxs-lookup"><span data-stu-id="704ba-108">Type</span></span>|<span data-ttu-id="704ba-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="704ba-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e0386-110">type</span><span class="sxs-lookup"><span data-stu-id="e0386-110">type</span></span>|<span data-ttu-id="e0386-111">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="e0386-111">String</span></span>|<span data-ttu-id="e0386-112">Gibt den MIME-Typ des Inhalts an.</span><span class="sxs-lookup"><span data-stu-id="e0386-112">Indicates the content mime type.</span></span>|
-|<span data-ttu-id="e0386-113">Wert</span><span class="sxs-lookup"><span data-stu-id="e0386-113">value</span></span>|<span data-ttu-id="e0386-114">Binär</span><span class="sxs-lookup"><span data-stu-id="e0386-114">Binary</span></span>|<span data-ttu-id="e0386-115">Das Bytearray, das den tatsächlichen Inhalt enthält.</span><span class="sxs-lookup"><span data-stu-id="e0386-115">The byte array that contains the actual content.</span></span>|
+|<span data-ttu-id="704ba-110">type</span><span class="sxs-lookup"><span data-stu-id="704ba-110">type</span></span>|<span data-ttu-id="704ba-111">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="704ba-111">String</span></span>|<span data-ttu-id="704ba-112">Gibt den MIME-Typ des Inhalts an.</span><span class="sxs-lookup"><span data-stu-id="704ba-112">Indicates the content mime type.</span></span>|
+|<span data-ttu-id="704ba-113">Wert</span><span class="sxs-lookup"><span data-stu-id="704ba-113">value</span></span>|<span data-ttu-id="704ba-114">Binär</span><span class="sxs-lookup"><span data-stu-id="704ba-114">Binary</span></span>|<span data-ttu-id="704ba-115">Das Bytearray, das den tatsächlichen Inhalt enthält.</span><span class="sxs-lookup"><span data-stu-id="704ba-115">The byte array that contains the actual content.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="e0386-116">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="e0386-116">Relationships</span></span>
-<span data-ttu-id="e0386-117">Keine</span><span class="sxs-lookup"><span data-stu-id="e0386-117">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="e0386-118">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="e0386-118">JSON Representation</span></span>
-<span data-ttu-id="e0386-119">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="e0386-119">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="704ba-116">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="704ba-116">Relationships</span></span>
+<span data-ttu-id="704ba-117">Keine</span><span class="sxs-lookup"><span data-stu-id="704ba-117">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="704ba-118">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="704ba-118">JSON Representation</span></span>
+<span data-ttu-id="704ba-119">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="704ba-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mimeContent"

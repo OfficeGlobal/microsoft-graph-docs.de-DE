@@ -3,31 +3,32 @@ title: Ressourcentyp educationOrganization
 description: Abstrakte Entität verwendet, um die Kompatibilität zwischen verschiedenen Organisationstypen innerhalb der Education Sektor modellieren.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: b0b65978b3b415af407c886095c4b31c7aaffab9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 99f3294f76a246e4e78f0f61b0fc1f62532c3a03
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831934"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977423"
 ---
-# <a name="educationorganization-resource-type"></a><span data-ttu-id="3c8a4-103">Ressourcentyp educationOrganization</span><span class="sxs-lookup"><span data-stu-id="3c8a4-103">educationOrganization resource type</span></span>
+# <a name="educationorganization-resource-type"></a><span data-ttu-id="38a15-103">Ressourcentyp educationOrganization</span><span class="sxs-lookup"><span data-stu-id="38a15-103">educationOrganization resource type</span></span>
 
-<span data-ttu-id="3c8a4-104">Abstrakte Entität verwendet, um die Kompatibilität zwischen verschiedenen Organisationstypen innerhalb der Education Sektor modellieren.</span><span class="sxs-lookup"><span data-stu-id="3c8a4-104">Abstract entity used to model the commonality between different organization types within the education sector.</span></span>
+<span data-ttu-id="38a15-104">Abstrakte Entität verwendet, um die Kompatibilität zwischen verschiedenen Organisationstypen innerhalb der Education Sektor modellieren.</span><span class="sxs-lookup"><span data-stu-id="38a15-104">Abstract entity used to model the commonality between different organization types within the education sector.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="3c8a4-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="3c8a4-105">Properties</span></span>
-| <span data-ttu-id="3c8a4-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="3c8a4-106">Property</span></span>     | <span data-ttu-id="3c8a4-107">Typ</span><span class="sxs-lookup"><span data-stu-id="3c8a4-107">Type</span></span>   |<span data-ttu-id="3c8a4-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3c8a4-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="38a15-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="38a15-105">Properties</span></span>
+| <span data-ttu-id="38a15-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="38a15-106">Property</span></span>     | <span data-ttu-id="38a15-107">Typ</span><span class="sxs-lookup"><span data-stu-id="38a15-107">Type</span></span>   |<span data-ttu-id="38a15-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="38a15-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3c8a4-109">description</span><span class="sxs-lookup"><span data-stu-id="3c8a4-109">description</span></span>|<span data-ttu-id="3c8a4-110">String</span><span class="sxs-lookup"><span data-stu-id="3c8a4-110">String</span></span>| <span data-ttu-id="3c8a4-111">Beschreibung der Organisation.</span><span class="sxs-lookup"><span data-stu-id="3c8a4-111">Organization description.</span></span>|
-|<span data-ttu-id="3c8a4-112">displayName</span><span class="sxs-lookup"><span data-stu-id="3c8a4-112">displayName</span></span>|<span data-ttu-id="3c8a4-113">String</span><span class="sxs-lookup"><span data-stu-id="3c8a4-113">String</span></span>| <span data-ttu-id="3c8a4-114">Anzeigename der Organisation.</span><span class="sxs-lookup"><span data-stu-id="3c8a4-114">Organization display name.</span></span>|
-|<span data-ttu-id="3c8a4-115">externalSource</span><span class="sxs-lookup"><span data-stu-id="3c8a4-115">externalSource</span></span>|<span data-ttu-id="3c8a4-116">educationExternalSource</span><span class="sxs-lookup"><span data-stu-id="3c8a4-116">educationExternalSource</span></span>| <span data-ttu-id="3c8a4-117">Quelle, wo diese Organisation erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="3c8a4-117">Source where this organization was created from.</span></span> <span data-ttu-id="3c8a4-118">Die möglichen Werte sind: `sis`, `manual`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="3c8a4-118">The possible values are: `sis`, `manual`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="38a15-109">description</span><span class="sxs-lookup"><span data-stu-id="38a15-109">description</span></span>|<span data-ttu-id="38a15-110">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="38a15-110">String</span></span>| <span data-ttu-id="38a15-111">Beschreibung der Organisation.</span><span class="sxs-lookup"><span data-stu-id="38a15-111">Organization description.</span></span>|
+|<span data-ttu-id="38a15-112">displayName</span><span class="sxs-lookup"><span data-stu-id="38a15-112">displayName</span></span>|<span data-ttu-id="38a15-113">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="38a15-113">String</span></span>| <span data-ttu-id="38a15-114">Anzeigename der Organisation.</span><span class="sxs-lookup"><span data-stu-id="38a15-114">Organization display name.</span></span>|
+|<span data-ttu-id="38a15-115">externalSource</span><span class="sxs-lookup"><span data-stu-id="38a15-115">externalSource</span></span>|<span data-ttu-id="38a15-116">educationExternalSource</span><span class="sxs-lookup"><span data-stu-id="38a15-116">educationExternalSource</span></span>| <span data-ttu-id="38a15-117">Quelle, wo diese Organisation erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="38a15-117">Source where this organization was created from.</span></span> <span data-ttu-id="38a15-118">Die möglichen Werte sind: `sis`, `manual`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="38a15-118">The possible values are: `sis`, `manual`, `unknownFutureValue`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="3c8a4-119">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="3c8a4-119">Relationships</span></span>
-<span data-ttu-id="3c8a4-120">Keine.</span><span class="sxs-lookup"><span data-stu-id="3c8a4-120">None.</span></span>
+## <a name="relationships"></a><span data-ttu-id="38a15-119">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="38a15-119">Relationships</span></span>
+<span data-ttu-id="38a15-120">Keine.</span><span class="sxs-lookup"><span data-stu-id="38a15-120">None.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="3c8a4-121">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="3c8a4-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="38a15-121">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="38a15-121">JSON representation</span></span>
 
-<span data-ttu-id="3c8a4-122">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="3c8a4-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="38a15-122">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="38a15-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

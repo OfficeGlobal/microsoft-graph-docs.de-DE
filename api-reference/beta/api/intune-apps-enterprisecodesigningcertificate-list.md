@@ -3,30 +3,31 @@ title: Liste enterpriseCodeSigningCertificates
 description: Listeneigenschaften und Beziehungen der EnterpriseCodeSigningCertificate-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 648b58e12ebd314366ff171ee5a4304b8aac59bc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f9541b2bf2bca503f41d6be0dd66a186d2a60e6d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824432"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974742"
 ---
-# <a name="list-enterprisecodesigningcertificates"></a><span data-ttu-id="101de-103">Liste enterpriseCodeSigningCertificates</span><span class="sxs-lookup"><span data-stu-id="101de-103">List enterpriseCodeSigningCertificates</span></span>
+# <a name="list-enterprisecodesigningcertificates"></a><span data-ttu-id="11960-103">Liste enterpriseCodeSigningCertificates</span><span class="sxs-lookup"><span data-stu-id="11960-103">List enterpriseCodeSigningCertificates</span></span>
 
-> <span data-ttu-id="101de-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="101de-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="101de-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="101de-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="11960-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="11960-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="11960-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="11960-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="101de-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="101de-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="11960-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="11960-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="101de-107">Listeneigenschaften und Beziehungen der [EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Objekte.</span><span class="sxs-lookup"><span data-stu-id="101de-107">List properties and relationships of the [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="101de-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="101de-108">Prerequisites</span></span>
-<span data-ttu-id="101de-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="101de-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="11960-107">Listeneigenschaften und Beziehungen der [EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Objekte.</span><span class="sxs-lookup"><span data-stu-id="11960-107">List properties and relationships of the [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="11960-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="11960-108">Prerequisites</span></span>
+<span data-ttu-id="11960-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="11960-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="101de-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="101de-111">Permission type</span></span>|<span data-ttu-id="101de-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="101de-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="11960-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="11960-111">Permission type</span></span>|<span data-ttu-id="11960-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="11960-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="101de-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="101de-113">Delegated (work or school account)</span></span>|<span data-ttu-id="101de-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="101de-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="101de-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="101de-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="101de-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="101de-116">Not supported.</span></span>|
-|<span data-ttu-id="101de-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="101de-117">Application</span></span>|<span data-ttu-id="101de-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="101de-118">Not supported.</span></span>|
+|<span data-ttu-id="11960-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="11960-113">Delegated (work or school account)</span></span>|<span data-ttu-id="11960-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="11960-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="11960-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="11960-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="11960-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="11960-116">Not supported.</span></span>|
+|<span data-ttu-id="11960-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="11960-117">Application</span></span>|<span data-ttu-id="11960-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="11960-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="101de-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="101de-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="11960-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="11960-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,27 +36,27 @@ ms.locfileid: "27824432"
 GET /deviceAppManagement/enterpriseCodeSigningCertificates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="101de-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="101de-120">Request headers</span></span>
-|<span data-ttu-id="101de-121">Header</span><span class="sxs-lookup"><span data-stu-id="101de-121">Header</span></span>|<span data-ttu-id="101de-122">Wert</span><span class="sxs-lookup"><span data-stu-id="101de-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="11960-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="11960-120">Request headers</span></span>
+|<span data-ttu-id="11960-121">Header</span><span class="sxs-lookup"><span data-stu-id="11960-121">Header</span></span>|<span data-ttu-id="11960-122">Wert</span><span class="sxs-lookup"><span data-stu-id="11960-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="101de-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="101de-123">Authorization</span></span>|<span data-ttu-id="101de-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="101de-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="101de-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="101de-125">Accept</span></span>|<span data-ttu-id="101de-126">application/json</span><span class="sxs-lookup"><span data-stu-id="101de-126">application/json</span></span>|
+|<span data-ttu-id="11960-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="11960-123">Authorization</span></span>|<span data-ttu-id="11960-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="11960-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="11960-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="11960-125">Accept</span></span>|<span data-ttu-id="11960-126">application/json</span><span class="sxs-lookup"><span data-stu-id="11960-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="101de-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="101de-127">Request body</span></span>
-<span data-ttu-id="101de-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="101de-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="11960-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="11960-127">Request body</span></span>
+<span data-ttu-id="11960-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="11960-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="101de-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="101de-129">Response</span></span>
-<span data-ttu-id="101de-130">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) .</span><span class="sxs-lookup"><span data-stu-id="101de-130">If successful, this method returns a `200 OK` response code and a collection of [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="11960-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="11960-129">Response</span></span>
+<span data-ttu-id="11960-130">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) .</span><span class="sxs-lookup"><span data-stu-id="11960-130">If successful, this method returns a `200 OK` response code and a collection of [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="101de-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="101de-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="101de-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="101de-132">Request</span></span>
-<span data-ttu-id="101de-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="101de-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="11960-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="11960-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="11960-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="11960-132">Request</span></span>
+<span data-ttu-id="11960-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="11960-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSigningCertificates
 ```
 
-### <a name="response"></a><span data-ttu-id="101de-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="101de-134">Response</span></span>
-<span data-ttu-id="101de-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="101de-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="11960-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="11960-134">Response</span></span>
+<span data-ttu-id="11960-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="11960-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -3,29 +3,30 @@ title: Ressourcentyp organizerMeetingInfo
 description: Besprechungsinformationen, die den Organisator der Besprechung enthält.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: fd096a55762892ca9b2fd72c883a544e503c5f90
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 66a08b30741d488edf2d514568a17f292e588c23
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870731"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957704"
 ---
-# <a name="organizermeetinginfo-resource-type"></a><span data-ttu-id="47908-103">Ressourcentyp organizerMeetingInfo</span><span class="sxs-lookup"><span data-stu-id="47908-103">organizerMeetingInfo resource type</span></span>
+# <a name="organizermeetinginfo-resource-type"></a><span data-ttu-id="d9f45-103">Ressourcentyp organizerMeetingInfo</span><span class="sxs-lookup"><span data-stu-id="d9f45-103">organizerMeetingInfo resource type</span></span>
 
-> <span data-ttu-id="47908-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="47908-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="47908-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="47908-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="d9f45-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="d9f45-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d9f45-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="d9f45-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="47908-106">Besprechungsinformationen, die den Organisator der Besprechung enthält.</span><span class="sxs-lookup"><span data-stu-id="47908-106">Meeting information containing the organizer of the meeting.</span></span>
+<span data-ttu-id="d9f45-106">Besprechungsinformationen, die den Organisator der Besprechung enthält.</span><span class="sxs-lookup"><span data-stu-id="d9f45-106">Meeting information containing the organizer of the meeting.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="47908-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="47908-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d9f45-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="d9f45-107">Properties</span></span>
 
-| <span data-ttu-id="47908-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="47908-108">Property</span></span>                     | <span data-ttu-id="47908-109">Typ</span><span class="sxs-lookup"><span data-stu-id="47908-109">Type</span></span>                          | <span data-ttu-id="47908-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="47908-110">Description</span></span>                                     |
+| <span data-ttu-id="d9f45-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="d9f45-108">Property</span></span>                     | <span data-ttu-id="d9f45-109">Typ</span><span class="sxs-lookup"><span data-stu-id="d9f45-109">Type</span></span>                          | <span data-ttu-id="d9f45-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d9f45-110">Description</span></span>                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| <span data-ttu-id="47908-111">allowConversationWithoutHost</span><span class="sxs-lookup"><span data-stu-id="47908-111">allowConversationWithoutHost</span></span> | <span data-ttu-id="47908-112">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="47908-112">Boolean</span></span>                       | <span data-ttu-id="47908-113">Gibt an, ob eine Unterhaltung fortgesetzt werden kann, sobald der Host der Unterhaltung verlässt.</span><span class="sxs-lookup"><span data-stu-id="47908-113">Indicates if a conversation can continue once the host of the conversation leaves.</span></span> |
-| <span data-ttu-id="47908-114">organizer</span><span class="sxs-lookup"><span data-stu-id="47908-114">organizer</span></span>                    | [<span data-ttu-id="47908-115">identitySet</span><span class="sxs-lookup"><span data-stu-id="47908-115">identitySet</span></span>](identityset.md) | <span data-ttu-id="47908-116">Der Organisator Azure Active Directory-Identität.</span><span class="sxs-lookup"><span data-stu-id="47908-116">The organizer Azure Active Directory identity.</span></span>  |
+| <span data-ttu-id="d9f45-111">allowConversationWithoutHost</span><span class="sxs-lookup"><span data-stu-id="d9f45-111">allowConversationWithoutHost</span></span> | <span data-ttu-id="d9f45-112">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="d9f45-112">Boolean</span></span>                       | <span data-ttu-id="d9f45-113">Gibt an, ob eine Unterhaltung fortgesetzt werden kann, sobald der Host der Unterhaltung verlässt.</span><span class="sxs-lookup"><span data-stu-id="d9f45-113">Indicates if a conversation can continue once the host of the conversation leaves.</span></span> |
+| <span data-ttu-id="d9f45-114">organizer</span><span class="sxs-lookup"><span data-stu-id="d9f45-114">organizer</span></span>                    | [<span data-ttu-id="d9f45-115">identitySet</span><span class="sxs-lookup"><span data-stu-id="d9f45-115">identitySet</span></span>](identityset.md) | <span data-ttu-id="d9f45-116">Der Organisator Azure Active Directory-Identität.</span><span class="sxs-lookup"><span data-stu-id="d9f45-116">The organizer Azure Active Directory identity.</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="47908-117">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="47908-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d9f45-117">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="d9f45-117">JSON representation</span></span>
 
-<span data-ttu-id="47908-118">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="47908-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d9f45-118">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="d9f45-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -41,7 +42,7 @@ ms.locfileid: "27870731"
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="47908-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="47908-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d9f45-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d9f45-119">Example</span></span>
 
 <!-- {
   "blockType": "example",
