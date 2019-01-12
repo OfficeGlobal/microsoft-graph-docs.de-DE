@@ -3,34 +3,35 @@ title: ChartSeriesFormat-Ressourcentyp
 description: Kapselt die Formateigenschaften für den Diagrammdatenreihe.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: f8a4e5fab61da3dba1c02488ff6e3a8bfd0e8fa8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: fd342e55524d51b6a0382df8ca9310ea162308d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815855"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961435"
 ---
-# <a name="chartseriesformat-resource-type"></a><span data-ttu-id="dfbce-103">ChartSeriesFormat-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="dfbce-103">ChartSeriesFormat resource type</span></span>
+# <a name="chartseriesformat-resource-type"></a><span data-ttu-id="379c1-103">ChartSeriesFormat-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="379c1-103">ChartSeriesFormat resource type</span></span>
 
-<span data-ttu-id="dfbce-104">Kapselt die Formateigenschaften für den Diagrammdatenreihe.</span><span class="sxs-lookup"><span data-stu-id="dfbce-104">encapsulates the format properties for the chart series</span></span>
+<span data-ttu-id="379c1-104">Kapselt die Formateigenschaften für den Diagrammdatenreihe.</span><span class="sxs-lookup"><span data-stu-id="379c1-104">encapsulates the format properties for the chart series</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="dfbce-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="dfbce-105">Methods</span></span>
-<span data-ttu-id="dfbce-106">Keine</span><span class="sxs-lookup"><span data-stu-id="dfbce-106">None</span></span>
+## <a name="methods"></a><span data-ttu-id="379c1-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="379c1-105">Methods</span></span>
+<span data-ttu-id="379c1-106">Keine</span><span class="sxs-lookup"><span data-stu-id="379c1-106">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="dfbce-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="dfbce-107">Properties</span></span>
-<span data-ttu-id="dfbce-108">Keine</span><span class="sxs-lookup"><span data-stu-id="dfbce-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="379c1-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="379c1-107">Properties</span></span>
+<span data-ttu-id="379c1-108">Keine</span><span class="sxs-lookup"><span data-stu-id="379c1-108">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="dfbce-109">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="dfbce-109">Relationships</span></span>
-| <span data-ttu-id="dfbce-110">Beziehung</span><span class="sxs-lookup"><span data-stu-id="dfbce-110">Relationship</span></span> | <span data-ttu-id="dfbce-111">Typ</span><span class="sxs-lookup"><span data-stu-id="dfbce-111">Type</span></span>   |<span data-ttu-id="dfbce-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="dfbce-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="379c1-109">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="379c1-109">Relationships</span></span>
+| <span data-ttu-id="379c1-110">Beziehung</span><span class="sxs-lookup"><span data-stu-id="379c1-110">Relationship</span></span> | <span data-ttu-id="379c1-111">Typ</span><span class="sxs-lookup"><span data-stu-id="379c1-111">Type</span></span>   |<span data-ttu-id="379c1-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="379c1-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="dfbce-113">fill</span><span class="sxs-lookup"><span data-stu-id="dfbce-113">fill</span></span>|[<span data-ttu-id="dfbce-114">WorkbookChartFill</span><span class="sxs-lookup"><span data-stu-id="dfbce-114">WorkbookChartFill</span></span>](chartfill.md)|<span data-ttu-id="dfbce-p101">Stellt die Füllung einer Diagrammdatenreihe dar, einschließlich Informationen zur Hintergrundformatierung. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="dfbce-p101">Represents the fill format of a chart series, which includes background formating information. Read-only.</span></span>|
-|<span data-ttu-id="dfbce-117">line</span><span class="sxs-lookup"><span data-stu-id="dfbce-117">line</span></span>|[<span data-ttu-id="dfbce-118">WorkbookChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="dfbce-118">WorkbookChartLineFormat</span></span>](chartlineformat.md)|<span data-ttu-id="dfbce-p102">Die Zeilenformatierung. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="dfbce-p102">Represents line formatting. Read-only.</span></span>|
+|<span data-ttu-id="379c1-113">fill</span><span class="sxs-lookup"><span data-stu-id="379c1-113">fill</span></span>|[<span data-ttu-id="379c1-114">WorkbookChartFill</span><span class="sxs-lookup"><span data-stu-id="379c1-114">WorkbookChartFill</span></span>](chartfill.md)|<span data-ttu-id="379c1-p101">Stellt die Füllung einer Diagrammdatenreihe dar, einschließlich Informationen zur Hintergrundformatierung. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="379c1-p101">Represents the fill format of a chart series, which includes background formating information. Read-only.</span></span>|
+|<span data-ttu-id="379c1-117">line</span><span class="sxs-lookup"><span data-stu-id="379c1-117">line</span></span>|[<span data-ttu-id="379c1-118">WorkbookChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="379c1-118">WorkbookChartLineFormat</span></span>](chartlineformat.md)|<span data-ttu-id="379c1-p102">Die Zeilenformatierung. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="379c1-p102">Represents line formatting. Read-only.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="dfbce-121">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="dfbce-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="379c1-121">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="379c1-121">JSON representation</span></span>
 
-<span data-ttu-id="dfbce-122">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="dfbce-122">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="379c1-122">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="379c1-122">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",
