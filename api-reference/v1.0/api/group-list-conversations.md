@@ -3,48 +3,49 @@ title: Unterhaltungen auflisten
 description: Mit dieser API können Sie eine Liste aller Unterhaltungen in einer Gruppe abrufen.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 6bd3e82f4da42a0d975366e9c1540d4ac78e38ad
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 3baae994c3cebdbb7cd1e8049c8c0d1aeefefc8a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829799"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967327"
 ---
-# <a name="list-conversations"></a><span data-ttu-id="9f1b1-103">Unterhaltungen auflisten</span><span class="sxs-lookup"><span data-stu-id="9f1b1-103">List conversations</span></span>
-<span data-ttu-id="9f1b1-104">Mit dieser API können Sie eine Liste aller [Unterhaltungen](../resources/conversation.md) in einer Gruppe abrufen.</span><span class="sxs-lookup"><span data-stu-id="9f1b1-104">Retrieve the list of [conversations](../resources/conversation.md) in this group.</span></span>
+# <a name="list-conversations"></a><span data-ttu-id="9d5fe-103">Unterhaltungen auflisten</span><span class="sxs-lookup"><span data-stu-id="9d5fe-103">List conversations</span></span>
+<span data-ttu-id="9d5fe-104">Mit dieser API können Sie eine Liste aller [Unterhaltungen](../resources/conversation.md) in einer Gruppe abrufen.</span><span class="sxs-lookup"><span data-stu-id="9d5fe-104">Retrieve the list of [conversations](../resources/conversation.md) in this group.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9f1b1-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="9f1b1-105">Permissions</span></span>
-<span data-ttu-id="9f1b1-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9f1b1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9d5fe-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="9d5fe-105">Permissions</span></span>
+<span data-ttu-id="9d5fe-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9d5fe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9f1b1-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="9f1b1-108">Permission type</span></span>      | <span data-ttu-id="9f1b1-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="9f1b1-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9d5fe-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="9d5fe-108">Permission type</span></span>      | <span data-ttu-id="9d5fe-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="9d5fe-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9f1b1-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="9f1b1-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9f1b1-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9f1b1-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9f1b1-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="9f1b1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9f1b1-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="9f1b1-113">Not supported.</span></span>    |
-|<span data-ttu-id="9f1b1-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="9f1b1-114">Application</span></span> | <span data-ttu-id="9f1b1-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="9f1b1-115">Not supported.</span></span> |
+|<span data-ttu-id="9d5fe-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="9d5fe-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9d5fe-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9d5fe-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="9d5fe-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="9d5fe-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9d5fe-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="9d5fe-113">Not supported.</span></span>    |
+|<span data-ttu-id="9d5fe-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="9d5fe-114">Application</span></span> | <span data-ttu-id="9d5fe-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="9d5fe-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9f1b1-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="9f1b1-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9d5fe-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="9d5fe-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/conversations
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="9f1b1-117">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="9f1b1-117">Optional query parameters</span></span>
-<span data-ttu-id="9f1b1-118">Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="9f1b1-118">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="9d5fe-117">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="9d5fe-117">Optional query parameters</span></span>
+<span data-ttu-id="9d5fe-118">Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="9d5fe-118">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="9f1b1-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="9f1b1-119">Request headers</span></span>
-| <span data-ttu-id="9f1b1-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="9f1b1-120">Header</span></span>       | <span data-ttu-id="9f1b1-121">Wert</span><span class="sxs-lookup"><span data-stu-id="9f1b1-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="9d5fe-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="9d5fe-119">Request headers</span></span>
+| <span data-ttu-id="9d5fe-120">Header</span><span class="sxs-lookup"><span data-stu-id="9d5fe-120">Header</span></span>       | <span data-ttu-id="9d5fe-121">Wert</span><span class="sxs-lookup"><span data-stu-id="9d5fe-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="9f1b1-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="9f1b1-122">Authorization</span></span>  | <span data-ttu-id="9f1b1-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="9f1b1-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="9d5fe-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="9d5fe-122">Authorization</span></span>  | <span data-ttu-id="9d5fe-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="9d5fe-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="9f1b1-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="9f1b1-125">Request body</span></span>
-<span data-ttu-id="9f1b1-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="9f1b1-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9d5fe-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="9d5fe-125">Request body</span></span>
+<span data-ttu-id="9d5fe-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="9d5fe-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9f1b1-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="9f1b1-127">Response</span></span>
-<span data-ttu-id="9f1b1-128">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [conversation](../resources/conversation.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="9f1b1-128">If successful, this method returns a `200 OK` response code and collection of [conversation](../resources/conversation.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="9d5fe-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="9d5fe-127">Response</span></span>
+<span data-ttu-id="9d5fe-128">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [conversation](../resources/conversation.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="9d5fe-128">If successful, this method returns a `200 OK` response code and collection of [conversation](../resources/conversation.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9f1b1-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="9f1b1-129">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="9f1b1-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="9f1b1-130">Request</span></span>
-<span data-ttu-id="9f1b1-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="9f1b1-131">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9d5fe-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="9d5fe-129">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="9d5fe-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="9d5fe-130">Request</span></span>
+<span data-ttu-id="9d5fe-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="9d5fe-131">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_conversations"
@@ -52,9 +53,9 @@ GET /groups/{id}/conversations
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/conversations
 ```
-#### <a name="response"></a><span data-ttu-id="9f1b1-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="9f1b1-132">Response</span></span>
-<span data-ttu-id="9f1b1-133">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="9f1b1-133">The following is an example of the response.</span></span>
-><span data-ttu-id="9f1b1-p103">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="9f1b1-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="9d5fe-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="9d5fe-132">Response</span></span>
+<span data-ttu-id="9d5fe-133">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="9d5fe-133">The following is an example of the response.</span></span>
+><span data-ttu-id="9d5fe-p103">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="9d5fe-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

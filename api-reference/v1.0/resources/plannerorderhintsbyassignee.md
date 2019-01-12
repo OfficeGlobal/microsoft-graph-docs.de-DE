@@ -2,21 +2,23 @@
 title: plannerOrderHintsByAssignee-Ressourcentyp
 description: Die **PlannerOrderHintsByAssignee** ist eine Ressource, die Sortierung Hinweise für "assignees" in einer Ressource PlannerTask an, dass die Reihenfolge des Vorgangs in der Ansicht zugewiesen an der Aufgabe-Karte enthält.
 localization_priority: Normal
-ms.openlocfilehash: 2de8b7d7fac6b524cccbed8ed2117754060c0d4c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: b285c4a04d045c8a4e70a574c88772a0981c95e4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816534"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967749"
 ---
-# <a name="plannerorderhintsbyassignee-resource-type"></a><span data-ttu-id="8d7d6-103">plannerOrderHintsByAssignee-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="8d7d6-103">plannerOrderHintsByAssignee resource type</span></span>
+# <a name="plannerorderhintsbyassignee-resource-type"></a><span data-ttu-id="4fd5d-103">plannerOrderHintsByAssignee-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="4fd5d-103">plannerOrderHintsByAssignee resource type</span></span>
 
-<span data-ttu-id="8d7d6-p101">Die **plannerOrderHintsByAssignee**-Ressource enthält [Anordnungshinweise](planner-order-hint-format.md) für zugewiesene Personen in einer [plannerTask](plannertask.md)-Ressource, um die Anordnung der Aufgabe in der Ansicht „ZugewiesenAn“ des Task Board anzugeben. Es handelt sich um einen offenen Typ. Die Eigenschaften sind die IDs der Benutzer, die der Aufgabe zugewiesen sind, und die Werte sind Anordnungshinweise.</span><span class="sxs-lookup"><span data-stu-id="8d7d6-p101">The **plannerOrderHintsByAssignee** is a resource that contains [ordering hints](planner-order-hint-format.md) for assignees in a [plannerTask](plannertask.md) resource, to indicate the order of the task in Assigned To view of the Task Board. This type is an open type. The properties are the ids of users assigned to the task, and the values are order hints.</span></span>
+<span data-ttu-id="4fd5d-p101">Die **plannerOrderHintsByAssignee**-Ressource enthält [Anordnungshinweise](planner-order-hint-format.md) für zugewiesene Personen in einer [plannerTask](plannertask.md)-Ressource, um die Anordnung der Aufgabe in der Ansicht „ZugewiesenAn“ des Task Board anzugeben. Es handelt sich um einen offenen Typ. Die Eigenschaften sind die IDs der Benutzer, die der Aufgabe zugewiesen sind, und die Werte sind Anordnungshinweise.</span><span class="sxs-lookup"><span data-stu-id="4fd5d-p101">The **plannerOrderHintsByAssignee** is a resource that contains [ordering hints](planner-order-hint-format.md) for assignees in a [plannerTask](plannertask.md) resource, to indicate the order of the task in Assigned To view of the Task Board. This type is an open type. The properties are the ids of users assigned to the task, and the values are order hints.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8d7d6-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="8d7d6-107">Properties</span></span>
-<span data-ttu-id="8d7d6-p102">Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall muss der Client IDs von Benutzern, die der Aufgabe zugewiesen sind, als Eigenschaftennamen und einen gültigen [Anordnungshinweis](planner-order-hint-format.md) als Wert angeben. Von diesem Typ können keine Eigenschaften entfernt werden. Der Dienst entfernt automatisch Werte, wenn die Zuweisungen in der enthaltenden [plannerTask](plannertask.md)-Ressource aktualisiert werden.</span><span class="sxs-lookup"><span data-stu-id="8d7d6-p102">Properties of an Open Type can be defined by the client. In this case, the client must provide ids of users assigned to the task as property names, and a valid [order hint](planner-order-hint-format.md) as the value. Properties cannot be removed from this type. The service will automatically remove values as the assignments on the containing [plannerTask](plannertask.md) are updated.</span></span>
+## <a name="properties"></a><span data-ttu-id="4fd5d-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="4fd5d-107">Properties</span></span>
+<span data-ttu-id="4fd5d-p102">Eigenschaften mit offenem Typ können vom Client definiert werden. In diesem Fall muss der Client IDs von Benutzern, die der Aufgabe zugewiesen sind, als Eigenschaftennamen und einen gültigen [Anordnungshinweis](planner-order-hint-format.md) als Wert angeben. Von diesem Typ können keine Eigenschaften entfernt werden. Der Dienst entfernt automatisch Werte, wenn die Zuweisungen in der enthaltenden [plannerTask](plannertask.md)-Ressource aktualisiert werden.</span><span class="sxs-lookup"><span data-stu-id="4fd5d-p102">Properties of an Open Type can be defined by the client. In this case, the client must provide ids of users assigned to the task as property names, and a valid [order hint](planner-order-hint-format.md) as the value. Properties cannot be removed from this type. The service will automatically remove values as the assignments on the containing [plannerTask](plannertask.md) are updated.</span></span>
 
-<span data-ttu-id="8d7d6-112">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="8d7d6-112">Example:</span></span>
+<span data-ttu-id="4fd5d-112">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="4fd5d-112">Example:</span></span>
 
 <!-- {
   "blockType": "resource",
