@@ -3,12 +3,13 @@ title: Liste mobileAppTroubleshootingEvents
 description: Listeneigenschaften und Beziehungen der MobileAppTroubleshootingEvent-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a4185a9ae976bf944c90bb8687d8b8d56c085d9b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3a96905059aa4d5dfdb30feff7cdf8202643d92b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851884"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978172"
 ---
 # <a name="list-mobileapptroubleshootingevents"></a>Liste mobileAppTroubleshootingEvents
 
@@ -36,7 +37,7 @@ GET /users/{usersId}/mobileAppTroubleshootingEvents
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

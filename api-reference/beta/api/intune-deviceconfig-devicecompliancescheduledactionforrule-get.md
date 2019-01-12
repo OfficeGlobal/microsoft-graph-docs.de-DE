@@ -3,12 +3,13 @@ title: Abrufen von „deviceComplianceScheduledActionForRule“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs deviceComplianceScheduledActionForRule.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 151648d33c77a5d60183d4da7b92c7e81ae93e09
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7e9c152a39f5fcf4908fb44e9e294209b1aa082d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812460"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979026"
 ---
 # <a name="get-devicecompliancescheduledactionforrule"></a>Abrufen von „deviceComplianceScheduledActionForRule“
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/schedu
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
