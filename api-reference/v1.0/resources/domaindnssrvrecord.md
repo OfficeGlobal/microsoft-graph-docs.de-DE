@@ -3,12 +3,13 @@ title: domainDnsSrvRecord-Ressourcentyp
 description: Stellt einen SRV-Eintrag dar, der der DNS-Zonendatei einer bestimmten Domäne im Mandanten hinzugefügt wird. Geerbt von der Entität DomainDnsRecord.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 655dc6fcbccdcb6e1794c94d97dd8e7fc4837f04
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 28c590ff210952fc5d54ace61c08348383ce393a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835791"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938265"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>domainDnsSrvRecord-Ressourcentyp
 
@@ -20,7 +21,7 @@ Direkte Abfragen dieser Ressource werden nicht unterstützt. Informationen zum A
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|String| Eindeutiger Bezeichner, der dieser Entität zugewiesen ist. Lässt keine Nullwerte zu, schreibgeschützt.|
+|id|Zeichenfolge| Eindeutiger Bezeichner, der dieser Entität zugewiesen ist. Lässt keine Nullwerte zu, schreibgeschützt.|
 |isOptional|Boolean| Wenn „false“, muss der SRV-Eintrag vom Kunden auf dem DNS-Host konfiguriert werden, damit Microsoft-Onlinedienste ordnungsgemäß mit der Domäne funktionieren. |
 |label|String| Wert, der beim Konfigurieren der *name*-Eigenschaft des SRV-Eintrags auf dem DNS-Host verwendet wird. |
 |nameTarget|String| Wert, der beim Konfigurieren der *target*-Eigenschaft des SRV-Eintrags auf dem DNS-Host verwendet werden soll. |

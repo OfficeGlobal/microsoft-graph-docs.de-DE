@@ -2,12 +2,14 @@
 title: subscribedSku-Ressourcentyp
 description: Enthält Informationen zu einer Dienst-SKU, die ein Unternehmen abonniert hat.
 localization_priority: Normal
-ms.openlocfilehash: 17290890ff27fded1aaf5d7fdb2c0cdacee09b0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e9e61fba199d6d3e509700fe61e75bde240c7f16
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873717"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937439"
 ---
 # <a name="subscribedsku-resource-type"></a>subscribedSku-Ressourcentyp
 
@@ -31,7 +33,7 @@ Für abonnierte SKUs wird nur der Lesevorgang unterstützt. Erstellen, Aktualisi
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Informationen über die Anzahl und den Status der Prepaidlizenzen. |
 |servicePlans|[servicePlanInfo](serviceplaninfo.md)-Sammlung| Informationen über die Servicepläne, die mit der SKU verfügbar sind. Lässt keine Nullwerte zu. |
 |skuId|Guid| Der eindeutige Bezeichner (GUID) für die Dienst-SKU. |
-|skuPartNumber|String| Die SKU-Teilenummer, z. B.: „AAD_PREMIUM“ oder „RMSBASIC“. |
+|skuPartNumber|Zeichenfolge| Die SKU-Teilenummer, z. B.: „AAD_PREMIUM“ oder „RMSBASIC“. |
 
 ## <a name="relationships"></a>Beziehungen
 Keine

@@ -3,12 +3,13 @@ title: Aktualisieren von „managedDeviceMobileAppConfigurationDeviceSummary“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs managedDeviceMobileAppConfigurationDeviceSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ad4845445e59105c1f304e8e90d67d97f153ed5e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: acdbe717ae96e179432ee49c9eb5fba2f5fde596
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818242"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934387"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicesummary"></a>Aktualisieren von „managedDeviceMobileAppConfigurationDeviceSummary“
 
@@ -34,7 +35,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -46,7 +47,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |pendingCount|Int32|Anzahl der ausstehenden Geräte|
 |notApplicableCount|Int32|Anzahl der ausgenommenen Geräte|
 |successCount|Int32|Anzahl der erfolgreichen Geräte|

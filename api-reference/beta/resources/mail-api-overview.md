@@ -2,12 +2,14 @@
 title: Verwenden Sie die Outlook-Mail-REST-API
 description: Microsoft Graph können Ihre app autorisierten Zugriff auf Outlook-Mail-Daten des Benutzers in einem persönlichen oder Organisation Konto zu erhalten.
 localization_priority: Priority
-ms.openlocfilehash: 3e81e83389dec5177cc135188889014581504223
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 96d2924846adebaae0ed435aed7dcf65934db81a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827118"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933015"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Verwenden Sie die Outlook-Mail-REST-API
 

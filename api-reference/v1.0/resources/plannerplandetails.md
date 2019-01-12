@@ -2,12 +2,14 @@
 title: plannerPlanDetails-Ressourcentyp
 description: Die **plannerPlanDetails**-Ressource stellt die zusätzlichen Informationen zu einem Plan dar. Jedes plan-Objekt hat ein Detailobjekt.
 localization_priority: Normal
-ms.openlocfilehash: 59064093b485b6c82bd5b2e0b59ca1868e8517e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 5661477ff59036e633eb82c23e9c50d7c2c8b4a9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867739"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934674"
 ---
 # <a name="plannerplandetails-resource-type"></a>plannerPlanDetails-Ressourcentyp
 

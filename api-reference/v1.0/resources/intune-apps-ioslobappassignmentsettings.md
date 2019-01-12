@@ -3,12 +3,13 @@ title: iosLobAppAssignmentSettings-Ressourcentyp
 description: Enthält Eigenschaften zum Zuweisen einer mobilen iOS-Branchen-App zu einer Gruppe.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b28211457cd2295fd8f81c3a4725afb8da933b60
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 39f007a88fc05504fc83b624a886c719ffe08ba3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884497"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962272"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>iosLobAppAssignmentSettings-Ressourcentyp
 

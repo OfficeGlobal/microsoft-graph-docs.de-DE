@@ -3,12 +3,13 @@ title: Abrufen von „windowsUniversalAppX“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs windowsUniversalAppX.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a31c9e6303c26fe9bcc19629b740edcafea271e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7b4518f773edba7fbbd59cda326a9054352d3383
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863777"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926064"
 ---
 # <a name="get-windowsuniversalappx"></a>Abrufen von „windowsUniversalAppX“
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

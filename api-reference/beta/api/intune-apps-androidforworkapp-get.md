@@ -3,12 +3,13 @@ title: Abrufen von androidForWorkApp
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidForWorkApp-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 496251dbdf0b303dc5597d14572e91b44a3c8918
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9bcc812619843edff4cece1b6dabe30c8ccf49d5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829001"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935871"
 ---
 # <a name="get-androidforworkapp"></a>Abrufen von androidForWorkApp
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

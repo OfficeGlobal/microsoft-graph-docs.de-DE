@@ -3,12 +3,13 @@ title: Registerkarte "Aktualisieren"
 description: Aktualisieren Sie die Eigenschaften der angegebenen Registerkarte.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: c17381432465ae318d86a818922d161ab46e762f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: e959f809eaa2044693b6c8d5d997866dde5385b5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815064"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926092"
 ---
 # <a name="update-tab"></a>Registerkarte "Aktualisieren"
 
@@ -34,7 +35,7 @@ PATCH /teams/{id}/channels/{id}/tabs/{id}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |
