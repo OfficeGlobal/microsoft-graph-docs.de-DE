@@ -3,12 +3,13 @@ title: Erstellen von „termsAndConditionsAcceptanceStatus“
 description: Diese Methode erstellt ein neues Objekt des Typs termsAndConditionsAcceptanceStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6f217076b50699c5a7162d025fecb69cad69e9b1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f97aca6b10d092301873536e436c825f3483d4a8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859846"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990971"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>Erstellen von „termsAndConditionsAcceptanceStatus“
 
@@ -36,7 +37,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatu
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

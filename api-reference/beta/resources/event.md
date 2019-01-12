@@ -3,12 +3,13 @@ title: Ressourcentyp „event“
 description: Ein Ereignis in einem Kalender
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: b1986a6d463e1750fea05144e5a8520c62e5a94a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 3a42bd4c87b6c4d8cb26160ae3c36bc7d6380b79
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826761"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981147"
 ---
 # <a name="event-resource-type"></a>Ressourcentyp „event“
 
@@ -96,13 +97,13 @@ Es folgt eine JSON-Darstellung der Ressource.
 |:---------------|:--------|:----------|
 |attendees|[ATTENDEE](attendee.md) -Auflistung|Die Sammlung der Teilnehmer des Ereignisses|
 |body|[ItemBody](itembody.md)|Der Text der Nachricht, die dem Ereignis zugeordnet ist. Er kann im HTML- oder Textformat vorliegen.|
-|bodyPreview|String|Die Vorschau der Nachricht, die dem Ereignis zugeordnet ist. Liegt im Textformat vor.|
+|bodyPreview|Zeichenfolge|Die Vorschau der Nachricht, die dem Ereignis zugeordnet ist. Liegt im Textformat vor.|
 |categories|String collection|Die Kategorien, die dem Ereignis zugeordnet sind Jeder Kategorie entspricht die **DisplayName** -Eigenschaft des ein [OutlookCategory](outlookcategory.md) für den Benutzer definiert.|
 |changeKey|Zeichenfolge|Gibt die Version des Ereignisobjekts an. Jedes Mal, wenn das Ereignis geändert wird, wird auch die Eigenschaft „changeKey“ geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
 |createdDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|Datum und Uhrzeit für das Ende des Ereignisses.|
 |hasAttachments|Boolean|„true“, wenn das Ereignis Anlagen hat|
-|id|String| Schreibgeschützt|
+|id|Zeichenfolge| Schreibgeschützt|
 |importance|String|Die Wichtigkeit des Ereignisses. Mögliche Werte sind: `low`, `normal` und `high`.|
 |isAllDay|Boolean|„true“, wenn das Ereignis ein ganztägiges Ereignis ist|
 |isCancelled|Boolean|„true“, wenn das Ereignis abgesagt wurde|
@@ -111,7 +112,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |lastModifiedDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |location|[Ort](location.md)|Der Ort des Ereignisses.|
 |locations|[Standort](location.md) -Auflistung|Die Orte, an denen die Veranstaltung stattfindet. Die Eigenschaften **location** und **locations** entsprechen sich immer gegenseitig. Wenn Sie die **location**-Eigenschaft aktualisieren, werden alle früheren Orte in der **locations**-Sammlung entfernt und durch den neuen **location**-Wert ersetzt. |
-|onlineMeetingUrl|String|Eine URL für eine Onlinebesprechung Die Eigenschaft wird nur beim Organisator ein Ereignisses, wie eine onlinebesprechung wie Skype angibt festgelegt. Schreibgeschützt.|
+|onlineMeetingUrl|Zeichenfolge|Eine URL für eine Onlinebesprechung Die Eigenschaft wird nur beim Organisator ein Ereignisses, wie eine onlinebesprechung wie Skype angibt festgelegt. Schreibgeschützt.|
 |organizer|[Empfänger](recipient.md)|Der Organisator des Ereignisses|
 |originalEndTimeZone|String|Die Zeitzone, die bei der Erstellung des Ereignisses für das Ereignisende festgelegt wurde. Der Wert `tzone://Microsoft/Custom` gibt an, dass eine ältere benutzerdefinierte Zeitzone in Outlook Desktop festgelegt wurde.|
 |originalStart|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|

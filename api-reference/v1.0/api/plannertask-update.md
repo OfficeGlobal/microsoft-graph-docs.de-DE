@@ -2,12 +2,14 @@
 title: plannerTask aktualisieren
 description: Dient zum Aktualisieren der Eigenschaften des **plannertask**-Objekts.
 localization_priority: Normal
-ms.openlocfilehash: 4315d1d069e19f3ae499403410ed9af10d98fdd0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 8a07039166ad5ce983635980a9b901474fb4bdaf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864533"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986733"
 ---
 # <a name="update-plannertask"></a>plannerTask aktualisieren
 
@@ -38,12 +40,12 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|Die Kategorien, auf die die Aufgabe angewendet wurde. Mögliche Werte finden Sie unter [angewendete Kategorien](../resources/plannerappliedcategories.md).|
-|assigneePriority|String|Hinweis, der zum Anordnen von Elementen dieses Typs in einer Listenansicht verwendet wird. Das Format ist unter [Verwenden von Anordnungshinweisen in Planner](../resources/planner-order-hint-format.md) definiert.|
+|assigneePriority|Zeichenfolge|Hinweis, der zum Anordnen von Elementen dieses Typs in einer Listenansicht verwendet wird. Das Format ist unter [Verwenden von Anordnungshinweisen in Planner](../resources/planner-order-hint-format.md) definiert.|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|Der Satz von Benutzern, denen die Aufgabe zugewiesen wurde.|
-|bucketId|String|Bucket-Id, zu der die Aufgabe gehört. Der Bucket muss im Plan sein, die die Aufgabe ist. Es ist eine 28 Zeichen lang und Groß-/Kleinschreibung beachtet. [Format Validierung](../resources/planner-identifiers-disclaimer.md) erfolgt für den Dienst. |
-|conversationThreadId|String|Thread-ID der Unterhaltung zur Aufgabe. Dies ist die ID des Unterhaltungsthreadobjekts, das in der Gruppe erstellt wurde.|
+|bucketId|Zeichenfolge|Bucket-Id, zu der die Aufgabe gehört. Der Bucket muss im Plan sein, die die Aufgabe ist. Es ist eine 28 Zeichen lang und Groß-/Kleinschreibung beachtet. [Format Validierung](../resources/planner-identifiers-disclaimer.md) erfolgt für den Dienst. |
+|conversationThreadId|Zeichenfolge|Thread-ID der Unterhaltung zur Aufgabe. Dies ist die ID des Unterhaltungsthreadobjekts, das in der Gruppe erstellt wurde.|
 |dueDateTime|DateTimeOffset|Datum und Uhrzeit der Fälligkeit der Aufgabe. Der Zeitstempeltyp stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|orderHint|String|Hinweis, der zum Anordnen von Elementen dieses Typs in einer Listenansicht verwendet wird. Das Format ist unter [Verwenden von Anordnungshinweisen in Planner](../resources/planner-order-hint-format.md) definiert.|
+|orderHint|Zeichenfolge|Hinweis, der zum Anordnen von Elementen dieses Typs in einer Listenansicht verwendet wird. Das Format ist unter [Verwenden von Anordnungshinweisen in Planner](../resources/planner-order-hint-format.md) definiert.|
 |percentComplete|Int32|Abgeschlossener Prozentsatz der Aufgabe. Bei Festlegung auf `100` wird die Aufgabe als abgeschlossen betrachtet. |
 |planId|String|Plan-ID, zu der die Aufgabe gehört.|
 |startDateTime|DateTimeOffset|Datum und Uhrzeit des Aufgabenbeginns. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|

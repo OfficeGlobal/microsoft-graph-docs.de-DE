@@ -3,12 +3,13 @@ title: Ressourcentyp audioRoutingGroup
 description: Die audio Routinggruppe speichert eine private audio Route zwischen Teilnehmer an einer Unterhaltung mit mehreren Teilnehmern. Quelle der Teilnehmer selbst und die Empfänger sind eine Teilmenge der andere Teilnehmer an der Unterhaltung mit mehreren Teilnehmern.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: cb1b8b67404ef6a3c8f397a6b5debe9acc252b5f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 0e18a9beb660b9bae0c1bbe1034ec64790d369fa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860648"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980188"
 ---
 # <a name="audioroutinggroup-resource-type"></a>Ressourcentyp audioRoutingGroup
 
@@ -30,9 +31,9 @@ Die audio Routinggruppe speichert eine private audio Route zwischen Teilnehmer a
 
 | Eigenschaft      | Typ              | Beschreibung                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | String            | Schreibgeschützt. Server generiert wurde.                                         |
+| id            | Zeichenfolge            | Schreibgeschützt. Server generiert wurde.                                         |
 | Ereignisempfänger     | Zeichenfolgenauflistung | Liste der Teilnehmer Ids empfangen.                                   |
-| routingMode   | String            | Routing Group-Modus.  Mögliche Werte sind: `oneToOne` und `multicast`.   |
+| routingMode   | Zeichenfolge            | Routing Group-Modus.  Mögliche Werte sind: `oneToOne` und `multicast`.   |
 | sources       | Zeichenfolgenauflistung | Liste der Teilnehmer Source-Ids.                                      |
 
 > **Hinweis:** Routing Modus bestimmt die Einschränkungen auf die Quellen und Ereignisempfänger. Die folgenden Routinggruppen werden unterstützt.

@@ -3,12 +3,13 @@ title: Diagramm aktualisieren
 description: Dient zum Aktualisieren der Eigenschaften des Diagrammobjekts.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 7d4189ac4f009059ae83ba50fc0ad8f0236786a5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 03a375e874a06914f5da9039dad58079df1199a8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858051"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986320"
 ---
 # <a name="update-chart"></a>Diagramm aktualisieren
 

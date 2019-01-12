@@ -3,12 +3,13 @@ title: deviceEnrollmentLimitConfiguration löschen
 description: Löscht ein deviceEnrollmentLimitConfiguration-Objekt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1e2edcf9f296631cf11767f64082894e58109379
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ae34fbf7eda17f34846ed6b1124ebc01dc3efb78
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832130"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978480"
 ---
 # <a name="delete-deviceenrollmentlimitconfiguration"></a>deviceEnrollmentLimitConfiguration löschen
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigu
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

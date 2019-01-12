@@ -2,12 +2,14 @@
 title: Liste Benutzer Geräte
 description: Rufen Sie eine Liste der Geräte für Benutzer, die Project-ROM-Funktionen zu unterstützen. Dazu gehören die Möglichkeit zum Starten einer Anwendung oder Nachricht oder Senden von Daten an eine Anwendung. Führen Sie nach der in mich einen Anruf GET / Geräten, übergeben Sie die ID des Geräts, einen Befehl auf Ihrem Gerät zu senden.
 localization_priority: Normal
-ms.openlocfilehash: 455a134b2edcf64255a2818887c6ff68959a1202
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 04b67b770eec38d9e70a2263cd54212077335c85
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855923"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983541"
 ---
 # <a name="list-user-devices"></a>Liste Benutzer Geräte
 
@@ -36,7 +38,7 @@ GET me/devices
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile |Wert
+| Header |Wert
 |:----|:------|
 |Authorization| Bearer {token}. Erforderlich. |
 |Annehmen | application/json |

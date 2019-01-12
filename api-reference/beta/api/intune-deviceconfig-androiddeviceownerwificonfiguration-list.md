@@ -3,12 +3,13 @@ title: Liste androidDeviceOwnerWiFiConfigurations
 description: Listeneigenschaften und Beziehungen der AndroidDeviceOwnerWiFiConfiguration-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ed61bcd56c7a6c5307bd398385c7e53ce77cb4c6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9be6c53a6d95945d30f41a356648bc494feac63a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809450"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980797"
 ---
 # <a name="list-androiddeviceownerwificonfigurations"></a>Liste androidDeviceOwnerWiFiConfigurations
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

@@ -3,12 +3,13 @@ title: managedMobileApp löschen
 description: Löscht ein managedMobileApp-Objekt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b678efab2333a759edaf620fe19193f589ca7e10
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e8b22f0fa21b9d5777e0b93a5c04be679fe3a079
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890440"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979551"
 ---
 # <a name="delete-managedmobileapp"></a>managedMobileApp löschen
 

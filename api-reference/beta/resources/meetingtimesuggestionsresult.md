@@ -2,12 +2,14 @@
 title: Ressourcentyp „meetingTimeSuggestionsResult“
 description: Dieser Ressourcentyp listet eine Sammlung von Besprechungsvorschlägen auf, sofern Vorschläge zurückgegeben werden, oder den Grund, aus dem keine Vorschläge zurückgegeben werden.
 localization_priority: Normal
-ms.openlocfilehash: aff5abd69297cd466027c1a614b2609697c00ce6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: VinodRavichandran
+ms.prod: microsoft-teams
+ms.openlocfilehash: 3593abdeed0d4c2e5ff1031e559f1f5ce4a66814
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806839"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983856"
 ---
 # <a name="meetingtimesuggestionsresult-resource-type"></a>Ressourcentyp „meetingTimeSuggestionsResult“
 

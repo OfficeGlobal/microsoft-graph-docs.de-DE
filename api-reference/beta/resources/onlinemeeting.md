@@ -3,12 +3,13 @@ title: Ressourcentyp onlineMeeting
 description: Erfasst Informationen zu der Besprechung, einschließlich der Join-URL, die Teilnehmerliste und die Beschreibung an.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: b1a0b09c0e7c792b0a9662c08daecd212c027c89
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 6bae6cf22e8790050f0b77ab903c5702354ea1f5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805159"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980398"
 ---
 # <a name="onlinemeeting-resource-type"></a>Ressourcentyp onlineMeeting
 
@@ -26,21 +27,21 @@ Erfasst Informationen zu der Besprechung, einschließlich der Join-URL, die Teil
 
 | Eigenschaft                  | Typ                                                   | Beschreibung                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| accessLevel               | String                                                 | Die Zugriffsebene, die Zulassung der online-Besprechung steuert. Mögliche Werte sind: `everyone`, `invited`, `locked`, `sameEnterprise` und `unknown`. |
+| accessLevel               | Zeichenfolge                                                 | Die Zugriffsebene, die Zulassung der online-Besprechung steuert. Mögliche Werte sind: `everyone`, `invited`, `locked`, `sameEnterprise` und `unknown`. |
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | Stellt Access Telefoninformationen für einen OnlineMeeting. |
 | canceledDateTime          | DateTime                                               | Der Zeitpunkt, wann die Besprechung abgebrochen wurde. |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | Die Chat diese Besprechung zugeordnet. |
 | creationDateTime          | DateTime                                               | Die Uhrzeit der Erstellung die Besprechung. ReadOnly.
 | endDateTime               | DateTime                                               | Die Endzeit der Besprechung. |
-| entryExitAnnouncement     | Boolean                                                | Der Anwesenheitsstatus des Ankündigungen für die onlinebesprechung. Wenn die Anwesenheit Ankündigungen aktiviert sind, wird die online-Besprechung den Namen der Verknüpfung Participantswho die Besprechung per Audio-ankündigen. |
+| entryExitAnnouncement     | Boolescher Wert                                                | Der Anwesenheitsstatus des Ankündigungen für die onlinebesprechung. Wenn die Anwesenheit Ankündigungen aktiviert sind, wird die online-Besprechung den Namen der Verknüpfung Participantswho die Besprechung per Audio-ankündigen. |
 | expirationDateTime        | DateTime                                               | Absolute (Coordinated Universal Time, UTC) Datum und Uhrzeit nach dem kann die onlinebesprechung gelöscht werden. Datum und Uhrzeit müssen zwischen ein Jahr vor und zehn Jahren nach dem das aktuelle Datum und die Uhrzeit auf dem Server sein. |
-| id                        | String                                                 | Die ID der online-Besprechung zugeordnet. In einer HTTP GET-Anforderung verwendet wird, als ID zu. Schreibgeschützt. Server generiert wurde. |
+| id                        | Zeichenfolge                                                 | Die ID der online-Besprechung zugeordnet. In einer HTTP GET-Anforderung verwendet wird, als ID zu. Schreibgeschützt. Server generiert wurde. |
 | isCancelled               | Boolean                                                | Gibt an, ob die Besprechung abgebrochen wurde. |
-| joinUrl                   | String                                                 | Die URL, die verwendet wird, wenn die onlinebesprechung aus dem Internet verbunden ist. |
-| meetingType               | String                                                 | Mögliche Werte sind: `meetNow`, `scheduled`, `recurring`,`broadcast` |
+| joinUrl                   | Zeichenfolge                                                 | Die URL, die verwendet wird, wenn die onlinebesprechung aus dem Internet verbunden ist. |
+| meetingType               | Zeichenfolge                                                 | Mögliche Werte sind: `meetNow`, `scheduled`, `recurring`,`broadcast` |
 | participants              | [meetingParticipants](meetingparticipants.md)          | Die Teilnehmer der Besprechung online zugeordnet.  Dazu gehören der Organisator und die Teilnehmer. |
 | startDateTime             | DateTime                                               | Startzeit der Besprechung. |
-| Betreff                   | String                                                 | Der Betreff der onlinebesprechung. |
+| Betreff                   | Zeichenfolge                                                 | Der Betreff der onlinebesprechung. |
 
 ## <a name="relationships"></a>Beziehungen
 Keine

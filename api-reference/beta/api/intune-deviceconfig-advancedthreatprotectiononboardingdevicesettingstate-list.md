@@ -3,12 +3,13 @@ title: Liste advancedThreatProtectionOnboardingDeviceSettingStates
 description: Listeneigenschaften und Beziehungen der AdvancedThreatProtectionOnboardingDeviceSettingState-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d238b10cc9b40a6ae590617213521f067c3acc4b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 018ab29513b9a44d4068cc63b67b6432cc03656d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854614"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983534"
 ---
 # <a name="list-advancedthreatprotectiononboardingdevicesettingstates"></a>Liste advancedThreatProtectionOnboardingDeviceSettingStates
 
@@ -36,7 +37,7 @@ GET /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedThr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

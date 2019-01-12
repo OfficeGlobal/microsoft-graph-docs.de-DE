@@ -2,12 +2,14 @@
 title: calendarView auflisten
 description: Möchten Sie die vorkommen, Ausnahmen und einzelne Instanzen von Ereignissen in einer Kalenderansicht von einem Zeitbereich definierten erhalten,
 localization_priority: Priority
-ms.openlocfilehash: 48ec49eb5038e7a4c977af0248443e1ca7241cb6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: dfc0d378a48716f70753b38d1970f0d4017a13a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857701"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986334"
 ---
 # <a name="list-calendarview"></a>calendarView auflisten
 

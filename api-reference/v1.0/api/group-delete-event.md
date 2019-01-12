@@ -3,12 +3,13 @@ title: Ereignis löschen
 description: Löschen eines event-Objekts.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 6aeb0259760f75fe28d1453d7b6a690a847792c0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 21f8d0579d9e78f180711998e455d360fd68dcaa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886660"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987391"
 ---
 # <a name="delete-event"></a>Ereignis löschen
 Löschen eines [event](../resources/event.md)-Objekts.

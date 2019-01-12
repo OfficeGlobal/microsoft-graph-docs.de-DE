@@ -3,12 +3,13 @@ title: Erstellen von „deviceInstallState“
 description: Diese Methode erstellt ein neues Objekt des Typs deviceInstallState.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 244a03aa7c1f42c6e71591a3358ab7fca67a9b48
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dfc1adae0175dcdf2c19d90d54bf597316919994
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853886"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990903"
 ---
 # <a name="create-deviceinstallstate"></a>Erstellen von „deviceInstallState“
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -49,13 +50,13 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |deviceName|String|Name des Geräts|
 |deviceId|String|ID des Geräts|
 |lastSyncDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Synchronisierung|
 |installState|[installState](../resources/intune-books-installstate.md)|Installationsstatus des E-Books. Mögliche Werte sind: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed` und `unknown`.|
 |errorCode|String|Fehlercode von Installationsfehlern|
-|osVersion|String|Betriebssystemversion|
+|osVersion|Zeichenfolge|Betriebssystemversion|
 |osDescription|String|Beschreibung des Betriebssystems|
 |userName|String|Name des Gerätebenutzers|
 

@@ -3,12 +3,13 @@ title: macOSCustomConfiguration löschen
 description: Löscht ein macOSCustomConfiguration-Objekt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d45377a6512d1c755bac98b676aebe9bcfe4f37a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e1d052ce2791fc77adb82142723b5d2ce808d2e3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817815"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990610"
 ---
 # <a name="delete-macoscustomconfiguration"></a>macOSCustomConfiguration löschen
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

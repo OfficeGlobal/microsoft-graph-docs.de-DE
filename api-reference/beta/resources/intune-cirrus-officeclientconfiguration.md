@@ -3,12 +3,13 @@ title: Ressourcentyp officeClientConfiguration
 description: Office-Client-Konfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 297383f8b7450e6d0df268afc4c009b3110205ee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3ddc1846afe96c99b616f28d6c831adca3eae960
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879632"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984059"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>Ressourcentyp officeClientConfiguration
 
@@ -28,11 +29,11 @@ Office-Client-Konfiguration.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|ID des die Richtlinie Office-Client-Konfiguration.|
+|id|Zeichenfolge|ID des die Richtlinie Office-Client-Konfiguration.|
 |userPreferencePayload|Stream|Vorgaben JSON-Zeichenfolge im Binärformat, können diese Werte vom Benutzer außer Kraft gesetzt werden.|
 |policyPayload|Stream|Richtlinieneinstellungen für JSON-Zeichenfolge im Binärformat, diese Werte können nicht vom Benutzer geändert werden.|
-|description|String|Noch nicht dokumentiert|
-|displayName|String|Admin bereitgestellte Beschreibung für den Office-Client Konfigurationsrichtlinie.|
+|description|Zeichenfolge|Noch nicht dokumentiert|
+|displayName|Zeichenfolge|Admin bereitgestellte Beschreibung für den Office-Client Konfigurationsrichtlinie.|
 |lastModifiedDateTime|DateTime|Zuletzt geänderte Datetime-Stempel der Richtlinie.|
 |Priorität|Int32|Prioritätswert sollte eindeutigen Wert für jede Richtlinie unter einem Mandanten sein und für konfliktlösung verwendet werden, niedrigere Werte bedeuten, dass Priorität hoch ist.|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Benutzer Einchecken Zusammenfassung für die Richtlinie ein.|

@@ -3,12 +3,13 @@ title: AndroidTrustedRootCertificate löschen
 description: Löscht eine AndroidTrustedRootCertificate.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a5c25963aaf1774545b54cf13acce1a5b54036c8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e6102f12fd48db8790dcce533dcafa3300997b65
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848237"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983961"
 ---
 # <a name="delete-androidtrustedrootcertificate"></a>AndroidTrustedRootCertificate löschen
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

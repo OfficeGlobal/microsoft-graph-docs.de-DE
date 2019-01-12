@@ -2,12 +2,13 @@
 title: schemaExtension abrufen
 description: Mit dieser API können Sie die Eigenschaften der angegebenen Definition des Typs schemaExtension abrufen.
 localization_priority: Normal
-ms.openlocfilehash: 090fb2131aa5cbbea845c3b9bfed2f807b4c8659
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.openlocfilehash: 84c65e3a1b97046980150aa9ae254168da30b442
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852780"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982435"
 ---
 # <a name="get-schemaextension"></a>schemaExtension abrufen
 

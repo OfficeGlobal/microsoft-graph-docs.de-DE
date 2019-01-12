@@ -3,12 +3,13 @@ title: remoteAssistancePartner-Ressourcentyp
 description: Die Ressource remoteAssistPartner repräsentiert die Metadaten und den Status eines bestimmten Partnerdienstes für die Remoteunterstützung.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 52badd2ad146f23fba70ab545a459b124e7fae2c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: baff71575a29a8287b7bb65070611a1dd513e2a4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821714"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990698"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>remoteAssistancePartner-Ressourcentyp
 
@@ -31,9 +32,9 @@ Die Ressource remoteAssistPartner repräsentiert die Metadaten und den Status ei
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Der eindeutige Bezeichner des Partners.|
-|displayName|String|Der Anzeigename des Partners.|
-|onboardingUrl|String|Die URL des Onboarding-Portals des Partners, in dem ein Administrator den Remoteunterstützungsdienst konfigurieren kann.|
+|id|Zeichenfolge|Der eindeutige Bezeichner des Partners.|
+|displayName|Zeichenfolge|Der Anzeigename des Partners.|
+|onboardingUrl|Zeichenfolge|Die URL des Onboarding-Portals des Partners, in dem ein Administrator den Remoteunterstützungsdienst konfigurieren kann.|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|TBD. Mögliche Werte sind: `notOnboarded`, `onboarding` und `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Zeitstempel der letzten vom TEM-Partner an Intune gesendeten Anforderung|
 

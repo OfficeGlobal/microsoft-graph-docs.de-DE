@@ -3,12 +3,13 @@ title: WindowsOfficeClientConfiguration aktualisieren
 description: Eine bestimmte nicht sicherheitsrelevante Richtlinie Nutzlast Patch.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e13228c6fc467fa49b740c02b4b7068efb1ec42e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 76179dadc4620617487c66b719626778fa4e4f26
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863875"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983506"
 ---
 # <a name="update-windowsofficeclientconfiguration"></a>WindowsOfficeClientConfiguration aktualisieren
 
@@ -36,7 +37,7 @@ PATCH /officeConfiguration/clientConfigurations/{key}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,11 +49,11 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Noch nicht dokumentiert Inherited aus [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|id|Zeichenfolge|Noch nicht dokumentiert Inherited aus [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |userPreferencePayload|Stream|Noch nicht dokumentiert Inherited aus [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |policyPayload|Stream|Noch nicht dokumentiert Inherited aus [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|description|String|Noch nicht dokumentiert Inherited aus [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|displayName|String|Noch nicht dokumentiert Inherited aus [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|description|Zeichenfolge|Noch nicht dokumentiert Inherited aus [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|displayName|Zeichenfolge|Noch nicht dokumentiert Inherited aus [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |Priorität|Int32|Noch nicht dokumentiert Inherited aus [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Noch nicht dokumentiert Inherited aus [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |checkinStatuses|[OfficeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) -Auflistung|Noch nicht dokumentiert Inherited aus [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|

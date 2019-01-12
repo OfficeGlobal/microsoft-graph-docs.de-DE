@@ -3,12 +3,13 @@ title: EnrollmentTroubleshootingEvent erstellen
 description: Erstellen eines neuen enrollmentTroubleshootingEvent-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 633e16f1d21808e55dd3b5d8fe677a8b6bec37d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0a95de5d54c6cfbc84f322a3614dcbbcc033ae76
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869496"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983151"
 ---
 # <a name="create-enrollmenttroubleshootingevent"></a>EnrollmentTroubleshootingEvent erstellen
 
@@ -48,15 +49,15 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |:---|:---|:---|
 |id|Zeichenfolge|UUID für das Objekt. Geerbt von [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |eventDateTime|DateTimeOffset|Uhrzeit, zu der das Ereignis aufgetreten ist. Gerbt von [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
-|correlationId|String|ID, die für die Verfolgung des Fehlers in dem Dienst verwendet wurde. Gerbt von [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
-|managedDeviceIdentifier|String|Von Intune erstellter oder erfasster Gerätebezeichner|
-|operatingSystem|String|Betriebssystem|
-|osVersion|String|Betriebssystemversion|
-|userId|String|Bezeichner für den Benutzer, der versucht hat, das Gerät zu registrieren.|
-|deviceId|String|Azure AD-Gerätebezeichner|
+|correlationId|Zeichenfolge|ID, die für die Verfolgung des Fehlers in dem Dienst verwendet wurde. Gerbt von [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|managedDeviceIdentifier|Zeichenfolge|Von Intune erstellter oder erfasster Gerätebezeichner|
+|operatingSystem|Zeichenfolge|Betriebssystem|
+|osVersion|Zeichenfolge|Betriebssystemversion|
+|userId|Zeichenfolge|Bezeichner für den Benutzer, der versucht hat, das Gerät zu registrieren.|
+|deviceId|Zeichenfolge|Azure AD-Gerätebezeichner|
 |enrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Typ der Registrierung. Mögliche Werte: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |failureCategory|[deviceEnrollmentFailureReason](../resources/intune-troubleshooting-deviceenrollmentfailurereason.md)|Allgemeine Fehlerkategorie. Mögliche Werte sind: `unknown`, `authentication`, `authorization`, `accountValidation`, `userValidation`, `deviceNotSupported`, `inMaintenance`, `badRequest`, `featureNotSupported`, `enrollmentRestrictionsEnforced`, `clientDisconnected` und `userAbandonment`.|
-|failureReason|String|Detaillierte Fehlerursache|
+|failureReason|Zeichenfolge|Detaillierte Fehlerursache|
 
 
 

@@ -3,12 +3,13 @@ title: DefaultDeviceCompliancePolicy löschen
 description: Löscht eine DefaultDeviceCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 39d2ba382e22aeca0705c8c0eec0f09ec332eb0e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: edd9f4d2413957c537000d7995a36130133898a6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841944"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982967"
 ---
 # <a name="delete-defaultdevicecompliancepolicy"></a>DefaultDeviceCompliancePolicy löschen
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

@@ -1,14 +1,15 @@
 ---
 title: Geräte auflisten
 description: 'Dient zum Abrufen einer Liste von Geräten, die in dem Verzeichnis registriert sind. '
-author: tfitzmac
+author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: c4cbe2ad3f43cfda274901fb6cdc7322d1c1e523
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6dab0621ec9fae8b090f74a2938f71fcdb62d5cd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824577"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985354"
 ---
 # <a name="list-devices"></a>Geräte auflisten
 

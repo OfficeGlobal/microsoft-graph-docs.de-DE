@@ -3,12 +3,13 @@ title: Nachricht abrufen
 description: Rufen Sie die Eigenschaften und Beziehungen des Message-Objekts ab.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 5c83d0e9a59a69ebf0e20cfa0f883301b827c84f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 0ed3eaf35b2d7ce01c98d8c21fde72aaf2e44ad1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852388"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979453"
 ---
 # <a name="get-message"></a>Nachricht abrufen
 

@@ -3,12 +3,13 @@ title: androidGeneralDeviceConfiguration löschen
 description: Löscht ein androidGeneralDeviceConfiguration-Objekt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1ca8530e2ed3b803a3bf5e5f743ac8480ea115e2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5ad9b4ad5f6d776605eb7fdef5f7330afc7f96c8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856846"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986425"
 ---
 # <a name="delete-androidgeneraldeviceconfiguration"></a>androidGeneralDeviceConfiguration löschen
 

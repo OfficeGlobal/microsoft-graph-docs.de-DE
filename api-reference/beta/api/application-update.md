@@ -3,12 +3,13 @@ title: Aktualisieren der Anwendung
 description: Aktualisieren Sie die Eigenschaften des Application-Objekts.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: fafc1a339b96bfffdfbce24566b69bbd776825db
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ecdf1d7f4f291b415e83b3926f8f82ea81f73390
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819005"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990705"
 ---
 # <a name="update-application"></a>Aktualisieren der Anwendung
 
@@ -40,14 +41,14 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|allowPublicClient|Boolean| Gibt an, ob die Anwendung als öffentliche Client fungieren kann. Beispielsweise eine installierte Anwendung, die auf einem mobilen Gerät ausgeführt. Der Standardwert lautet *False*. |
+|allowPublicClient|Boolescher Wert| Gibt an, ob die Anwendung als öffentliche Client fungieren kann. Beispielsweise eine installierte Anwendung, die auf einem mobilen Gerät ausgeführt. Der Standardwert lautet *False*. |
 |API|[API](../resources/api.md)| Gibt die Einstellungen für eine API-Anwendung. |
 |appRoles|[AppRole](../resources/approle.md) -Auflistung|Die Auflistung der Anwendungsrollen, die eine Anwendung deklarieren kann. Diese Funktionen können Benutzer, Gruppen oder Dienstprinzipale zugewiesen werden. Lässt keine Nullwerte zu.|
 |applicationAliases|Collection von Objekten des Typs „String“| Die URIs, die die Anwendung zu bestimmen. Weitere Informationen finden Sie unter [Application Objects und Service Principal-Objekte](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). Der *any* -Operator ist für Filterausdrücke auf mehrwertige Eigenschaften erforderlich. Lässt keine Nullwerte zu. |
 |createdDateTime|DateTimeOffset| Das Datum und die Zeit, die die Anwendung registriert wurde. |
 |deletedDateTime|DateTimeOffset| Das Datum und die Zeit, die die Anwendung gelöscht wurde. |
-|displayName|String|Der Anzeigename für die Anwendung. |
-|id|String|Der eindeutige Bezeichner für die Anwendung. Geerbt von [directoryObject](../resources/directoryobject.md). Schlüssel. Lässt keine Nullwerte zu. Schreibgeschützt. |
+|displayName|Zeichenfolge|Der Anzeigename für die Anwendung. |
+|id|Zeichenfolge|Der eindeutige Bezeichner für die Anwendung. Geerbt von [directoryObject](../resources/directoryobject.md). Schlüssel. Lässt keine Nullwerte zu. Schreibgeschützt. |
 |Info|[informationalUrl](../resources/informationalurl.md)| Grundlegende Profilinformationen der Anwendung. | Gibt die Einstellungen für installierte Clients wie desktop oder mobilen Geräten. |
 |keyCredentials|[KeyCredential](../resources/keycredential.md) -Auflistung|Die Auflistung der wichtigsten Anmeldeinformationen der Anwendung nicht zugeordnete NULL-Werte zulässt. |
 |logo|Stream|Das Hauptfenster Logo für die Anwendung. Lässt keine Nullwerte zu. |

@@ -3,12 +3,13 @@ title: organization-Ressourcentyp
 description: Die organization-Ressource stellt eine Instanz der globalen Einstellungen und Ressourcen dar, die auf Mandantenebene ausgeführt und bereitgestellt werden.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7c6f99c378bc7fd53f473419a5ca4f4350f7c57b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8bc7a0fba8c5ecdc2b2a88062855e8b279721c45
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812047"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990768"
 ---
 # <a name="organization-resource-type"></a>organization-Ressourcentyp
 
@@ -28,7 +29,7 @@ Die organization-Ressource stellt eine Instanz der globalen Einstellungen und Re
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Die GUID für das Objekt.|
+|id|Zeichenfolge|Die GUID für das Objekt.|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Autorität für die Verwaltung mobiler Geräte. Mögliche Werte: `unknown`, `intune`, `sccm`, `office365`.|
 |certificateConnectorSetting|[certificateConnectorSetting](../resources/intune-onboarding-certificateconnectorsetting.md)|Connector-Einstellung Zertifikat.|
 

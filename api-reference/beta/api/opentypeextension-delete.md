@@ -2,12 +2,13 @@
 title: Offene Erweiterung löschen
 description: 'Mit dieser API können Sie offene Erweiterungen (Objekte des Typs openTypeExtension aus der jeweils angegebenen Ressourceninstanz löschen. '
 localization_priority: Normal
-ms.openlocfilehash: 57b496692a976610b458f1452a179dbdb26467ba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.openlocfilehash: 617971d4e31e65a662415c75f4a6cdac330ebcb0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826950"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983177"
 ---
 # <a name="delete-open-extension"></a>Offene Erweiterung löschen
 

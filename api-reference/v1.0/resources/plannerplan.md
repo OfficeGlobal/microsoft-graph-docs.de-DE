@@ -2,12 +2,14 @@
 title: plannerPlan-Ressourcentyp
 description: Die Ressource **PlannerPlan** stellt einen Plan in Office 365. Ein Plan kann eine Gruppe Besitz und enthält eine Auflistung von PlannerTasks. Sie können auch eine Auflistung von PlannerBuckets verfügen. Jedes Plan-Objekt ist ein Details-Objekt, das Informationen über den Plan enthalten kann. Weitere Informationen zu den Beziehungen zwischen Gruppen, Pläne und Aufgaben finden Sie unter Planner.
 localization_priority: Priority
-ms.openlocfilehash: cfcc94fab067cc76bb530edbdb8477183ebf3531
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 9e77f2c0163f9093d931c46098498caa8c43f42c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873010"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987895"
 ---
 # <a name="plannerplan-resource-type"></a>plannerPlan-Ressourcentyp
 

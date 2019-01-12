@@ -3,12 +3,13 @@ title: EducationUser zu einer educationSchool hinzufügen
 description: Hinzufügen eines Benutzers zu einer Schule.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 85e7f102d16c2cc04f0f55541ecb75ace2896b49
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 13c7eda5546f460da73d4359b064868ac41eb267
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864519"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979992"
 ---
 # <a name="add-educationuser-to-an-educationschool"></a>EducationUser zu einer educationSchool hinzufügen
 

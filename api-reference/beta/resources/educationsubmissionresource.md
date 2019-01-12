@@ -3,12 +3,13 @@ title: Ressourcentyp educationSubmissionResource
 description: 'Ein Wrapper für eine Ressource für die Verwendung einer Übermittlung. Der Wrapper wird die Zuordnung Ressource einen Zeiger hinzugefügt, sofern dies in der Zuweisung kopiert wurde.  '
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 8703072fccb77a2577db6ce0717647e79a47fdc8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: f242e4206c174634a3a8c3248942284798bb1550
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875985"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979180"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>Ressourcentyp educationSubmissionResource
 
@@ -27,8 +28,8 @@ Ein Wrapper für eine Ressource für die Verwendung einer Übermittlung. Der Wra
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|assignmentResourceUrl|String|Zeiger auf die Zuordnung aus der diese Ressource kopiert wurden. Wenn dies null ist, hochgeladen Student die Ressource.|
-|id|String| Schreibgeschützt.|
+|assignmentResourceUrl|Zeichenfolge|Zeiger auf die Zuordnung aus der diese Ressource kopiert wurden. Wenn dies null ist, hochgeladen Student die Ressource.|
+|id|Zeichenfolge| Schreibgeschützt.|
 |resource|[educationResource](educationresource.md)|Resource-Objekt.|
 
 ## <a name="relationships"></a>Beziehungen

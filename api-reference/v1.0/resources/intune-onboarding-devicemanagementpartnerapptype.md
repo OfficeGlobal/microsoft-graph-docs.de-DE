@@ -3,12 +3,13 @@ title: DeviceManagementPartnerAppType Enum-Typ
 description: Partner-App-Typ.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 240e069e77acd2e00d410239a43842d1b6214684
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 683846129f63a2185772bb3b400fc4abd3d7b1cb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833670"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990173"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>DeviceManagementPartnerAppType Enum-Typ
 

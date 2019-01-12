@@ -2,12 +2,14 @@
 title: 'section: copyToSectionGroup'
 description: Kopiert einen Abschnitt in eine bestimmte Abschnittsgruppe.
 localization_priority: Normal
-ms.openlocfilehash: 671cd28db66517b0b04d8b9d99cc1dccba17206e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 18afd7d0ac94b9964a049b1ad0c2c120f0d2627b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846571"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980258"
 ---
 # <a name="section-copytosectiongroup"></a>section: copyToSectionGroup
 Kopiert einen Abschnitt in eine bestimmte Abschnittsgruppe.
@@ -41,9 +43,9 @@ Geben Sie im Anforderungstext ein JSON-Objekt an, das die vom Vorgang benötigte
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|groupId|String|Die ID der Gruppe, in die kopiert werden soll. Verwenden Sie diesen Parameter nur beim Kopieren in eine Office 365-Gruppe.|
+|groupId|Zeichenfolge|Die ID der Gruppe, in die kopiert werden soll. Verwenden Sie diesen Parameter nur beim Kopieren in eine Office 365-Gruppe.|
 |id|String|Erforderlich. Die ID der Zielabschnittsgruppe. |
-|renameAs|String|Der Name der Kopie. Standardmäßig der Name des vorhandenen Elements. |
+|renameAs|Zeichenfolge|Der Name der Kopie. Standardmäßig der Name des vorhandenen Elements. |
 
 <!--groupId missing-->
 <!--|siteCollectionId|String||

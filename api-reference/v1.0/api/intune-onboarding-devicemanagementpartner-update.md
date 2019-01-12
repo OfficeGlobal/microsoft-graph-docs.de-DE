@@ -3,12 +3,13 @@ title: deviceManagementPartner aktualisieren
 description: Aktualisieren der Eigenschaften eines deviceManagementPartner-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c8e9425968d00805eb8640ff3a7e19380a92c6dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 068a0ffb3c0411a238a803f3876874f8902e3b35
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838780"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981861"
 ---
 # <a name="update-devicemanagementpartner"></a>deviceManagementPartner aktualisieren
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -46,13 +47,13 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Noch nicht dokumentiert|
+|id|Zeichenfolge|Noch nicht dokumentiert|
 |lastHeartbeatDateTime|DateTimeOffset|Zeitstempel des letzten Heartbeats nach Aktivierung der Option „Connect to Device management Partner“ durch den Administrator|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Partner-Status, der diesen Mandanten. Mögliche Werte sind: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected` und `unresponsive`.|
 |partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Partner-App-Typ. Mögliche Werte sind: `unknown`, `singleTenantApp` und `multiTenantApp`.|
 |singleTenantAppId|String|ID der Partner-App mit einem einzelnen Mandanten|
 |displayName|String|Anzeigename für Partner|
-|isConfigured|Boolean|Gibt an, ob Geräteverwaltungspartner konfiguriert ist.|
+|isConfigured|Boolescher Wert|Gibt an, ob Geräteverwaltungspartner konfiguriert ist.|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|DateTime in UTC, zu der PartnerDevices entfernt werden|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|DateTime in UTC, zu der PartnerDevices als nicht kompatibel gekennzeichnet werden|
 

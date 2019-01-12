@@ -2,12 +2,14 @@
 title: Kalender auflisten
 description: 'Mit dieser API können Sie alle Kalender eines Benutzers (Navigationseigenschaft `/calendars`), alle Kalender aus der Standardkalendergruppe oder alle Kalender aus einer bestimmten Kalendergruppe abrufen. '
 localization_priority: Normal
-ms.openlocfilehash: c59ee99c900aa39221530473c9323dfcaab721b5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e34c6acbcab5e5da4852d547038be6891806b4d4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886514"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983520"
 ---
 # <a name="list-calendars"></a>Kalender auflisten
 

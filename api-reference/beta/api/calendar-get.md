@@ -2,12 +2,14 @@
 title: Kalender abrufen
 description: 'Dient zum Abrufen der Eigenschaften und der Beziehungen eines calendar-Objekts. Der Kalender möglich für einen Benutzer, '
 localization_priority: Normal
-ms.openlocfilehash: 6c6deaaeb0cef1ae33c70a1140f835024dc093fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: d54d408966e359a99c16c91113ea5ba7eebb3d1d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829526"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990629"
 ---
 # <a name="get-calendar"></a>Kalender abrufen
 

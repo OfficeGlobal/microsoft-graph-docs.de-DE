@@ -3,12 +3,13 @@ title: termsAndConditionsAssignment-Ressourcentyp
 description: C) Richtlinie zu einer bestimmten Gruppe. Benutzer in der Gruppe müssen die Nutzungsbedingungen annehmen, um Geräte in Intune registrieren zu lassen.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ba87e7b5f3b39f20befb1536f3a87583437eeee3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a7fca6763ec7214b2dfd111996e965f9e9c995ec
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889369"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979481"
 ---
 # <a name="termsandconditionsassignment-resource-type"></a>termsAndConditionsAssignment-Ressourcentyp
 

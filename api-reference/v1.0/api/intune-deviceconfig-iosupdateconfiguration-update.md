@@ -3,12 +3,13 @@ title: Aktualisieren von „iosUpdateConfiguration“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs iosUpdateConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f9ecd2a3ac0cee1d7287308f20c88f495391ede7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dfc9be70f26b9d4ed58dfca1274a828237ebb473
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849007"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982225"
 ---
 # <a name="update-iosupdateconfiguration"></a>Aktualisieren von „iosUpdateConfiguration“
 

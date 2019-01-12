@@ -3,12 +3,13 @@ title: RevokeAllLicenses Aktion
 description: REVOKE alle zugewiesenen iOS lizenziert VPP für die angegebene app.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cd79d1b7f5d963b0015a63f820092def886f2119
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 07a370c768591c66776f5034f1bd3874f4f5ade9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879807"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991027"
 ---
 # <a name="revokealllicenses-action"></a>RevokeAllLicenses Aktion
 

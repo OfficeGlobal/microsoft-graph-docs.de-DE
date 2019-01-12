@@ -3,12 +3,13 @@ title: GetLicensesForApp-Funktion
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a568350cacac5ca640857aeaa8fb6f6d91e5b3fc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b5d12b905e698e511a6dc05bf35fcc898d0a51bb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831472"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978403"
 ---
 # <a name="getlicensesforapp-function"></a>GetLicensesForApp-Funktion
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/vppTokens/getLicensesForApp
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -47,7 +48,7 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|bundleId|String|Noch nicht dokumentiert|
+|bundleId|Zeichenfolge|Noch nicht dokumentiert|
 
 
 

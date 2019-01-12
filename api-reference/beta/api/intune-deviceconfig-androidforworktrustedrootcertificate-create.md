@@ -3,12 +3,13 @@ title: Erstellen von androidForWorkTrustedRootCertificate
 description: Erstellen eines neuen AndroidForWorkTrustedRootCertificate-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9becf2b7f9781977f29d5950d05ab64e6c58376e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ae2ddac6af45fe1a0fb21d3058ac96b860d10847
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869286"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990922"
 ---
 # <a name="create-androidforworktrustedrootcertificate"></a>Erstellen von androidForWorkTrustedRootCertificate
 

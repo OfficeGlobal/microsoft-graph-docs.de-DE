@@ -2,12 +2,13 @@
 title: 'DriveItem: Vorschau'
 description: Diese Aktion können Sie kurzlebige eingebettet werden URLs für ein Element abrufen, um eine temporäre Vorschau zu rendern.
 localization_priority: Normal
-ms.openlocfilehash: 4487e18ed1921f4164c335ba477e0ae5b74e456a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: be96a0cd451bb3f1c75c32f235d7669ce0bd7509
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833173"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980874"
 ---
 # <a name="driveitem-preview"></a>DriveItem: Vorschau
 

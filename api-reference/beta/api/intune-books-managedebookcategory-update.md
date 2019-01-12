@@ -3,12 +3,13 @@ title: ManagedEBookCategory aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines ManagedEBookCategory-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ef8970fb32b94b17b9277c3d30fc72bbc582ea87
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 236159e64bccd0eb5ce03de0c04d8b5fdf99b47d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853193"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990907"
 ---
 # <a name="update-managedebookcategory"></a>ManagedEBookCategory aktualisieren
 
@@ -37,7 +38,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/categories/{managedEBo
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -50,7 +51,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|Schlüssel der Entität|
-|displayName|String|Der Name der Kategorie eBook.|
+|displayName|Zeichenfolge|Der Name der Kategorie eBook.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der ManagedEBookCategory.|
 
 

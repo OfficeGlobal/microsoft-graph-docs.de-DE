@@ -3,12 +3,13 @@ title: Ressourcentyp windows81SCEPCertificateProfile
 description: " SCEP Zertifikatsprofil"
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 99c33d679d1c227414e6c6562d4ddbfc63d56f97
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 04fe22f8aa8897343d51ab0a16f2aa836e0d93a5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874725"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990733"
 ---
 # <a name="windows81scepcertificateprofile-resource-type"></a>Ressourcentyp windows81SCEPCertificateProfile
 

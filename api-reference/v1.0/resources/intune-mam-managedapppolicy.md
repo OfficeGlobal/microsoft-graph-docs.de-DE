@@ -3,12 +3,13 @@ title: managedAppPolicy-Ressourcentyp
 description: Die ManagedAppPolicy-Ressource stellt einen Basistyp für plattformspezifische Richtlinien dar.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5766e3a467a157bac0d876fd0178dc3ba1cb94e2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5054566f0ee80940165ba19f8f0da197b5e4f3c0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888081"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981105"
 ---
 # <a name="managedapppolicy-resource-type"></a>managedAppPolicy-Ressourcentyp
 
@@ -25,12 +26,12 @@ Die ManagedAppPolicy-Ressource stellt einen Basistyp für plattformspezifische R
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|String|Anzeigename der Richtlinie|
-|description|String|Beschreibung der Richtlinie|
+|displayName|Zeichenfolge|Anzeigename der Richtlinie|
+|description|Zeichenfolge|Beschreibung der Richtlinie|
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit der Erstellung der Richtlinie.|
 |lastModifiedDateTime|DateTimeOffset|Das Datum und die Uhrzeit der letzten Änderung der Richtlinie.|
-|id|String|Schlüssel der Entität|
-|Version|String|Version der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Version|Zeichenfolge|Version der Entität|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

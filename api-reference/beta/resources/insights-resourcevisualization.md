@@ -3,12 +3,13 @@ title: Ressourcentyp resourceVisualization
 description: Komplexer Typ mit Eigenschaften des Insights.
 author: simonhult
 localization_priority: Normal
-ms.openlocfilehash: 7600c843e36e3bce6c8a4182e0bfda14ad21d7b7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: f8426d13968e5bea929c8e26f71346fa554a5242
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844975"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990656"
 ---
 # <a name="resourcevisualization-resource-type"></a>Ressourcentyp resourceVisualization
 
@@ -37,14 +38,14 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 | Eigenschaft              | Typ          | Beschreibung  |
 | -------------         |---------------| -------------|
-| title                 | String        | Text für das Element.               |
-| type              | String        | Medientyp für das Element. Kann zum Filtern von für eine bestimmte Datei auf Grundlage eines bestimmten Typs verwendet werden. Unterstützte Typen finden Sie weiter unten. |
-| mediaType             | String        | Medientyp für das Element. Kann für verwendet werden, für die Filterung für einen bestimmten Typ der Datei basierend auf unterstützten IANA Media MIME-Typen. Beachten Sie, dass nicht alle Medien MIME-Typen unterstützt werden. |
-| Vorschaubild-URL       | String        | Eine URL für das Element des Vorschaubilds führende. |
-| previewText           | String        | Eine Vorschautext für das Element. |
-| containerWebUrl       | String        | Ein Pfad zu dem Ordner, in dem das Element gespeichert ist. |
-| containerDisplayName  | String        | Eine Zeichenfolge, die beschreibt, in dem das Element gespeichert ist. Beispielsweise der Name einer SharePoint-Website oder den Benutzernamen ein, die den Besitzer der OneDrive, speichern das Element identifiziert.  |
-| containerType         | String | Kann verwendet werden, zum Filtern nach der Typ des Containers, in dem die Datei gespeichert ist. Wie Website oder OneDriveBusiness.       |
+| title                 | Zeichenfolge        | Text für das Element.               |
+| type              | Zeichenfolge        | Medientyp für das Element. Kann zum Filtern von für eine bestimmte Datei auf Grundlage eines bestimmten Typs verwendet werden. Unterstützte Typen finden Sie weiter unten. |
+| mediaType             | Zeichenfolge        | Medientyp für das Element. Kann für verwendet werden, für die Filterung für einen bestimmten Typ der Datei basierend auf unterstützten IANA Media MIME-Typen. Beachten Sie, dass nicht alle Medien MIME-Typen unterstützt werden. |
+| Vorschaubild-URL       | Zeichenfolge        | Eine URL für das Element des Vorschaubilds führende. |
+| previewText           | Zeichenfolge        | Eine Vorschautext für das Element. |
+| containerWebUrl       | Zeichenfolge        | Ein Pfad zu dem Ordner, in dem das Element gespeichert ist. |
+| containerDisplayName  | Zeichenfolge        | Eine Zeichenfolge, die beschreibt, in dem das Element gespeichert ist. Beispielsweise der Name einer SharePoint-Website oder den Benutzernamen ein, die den Besitzer der OneDrive, speichern das Element identifiziert.  |
+| containerType         | Zeichenfolge | Kann verwendet werden, zum Filtern nach der Typ des Containers, in dem die Datei gespeichert ist. Wie Website oder OneDriveBusiness.       |
 
 ## <a name="type-property-values"></a>Type-Eigenschaftenwerte
 -   PowerPoint

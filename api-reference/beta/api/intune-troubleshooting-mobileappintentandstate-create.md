@@ -3,12 +3,13 @@ title: Erstellen von mobileAppIntentAndState
 description: Erstellen eines neuen MobileAppIntentAndState-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bbd6e6053054045e2a95aebfc92acfd8a5d25052
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 513c7ad7b6c3defdea325a1cb80161d5d554fb12
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886457"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983989"
 ---
 # <a name="create-mobileappintentandstate"></a>Erstellen von mobileAppIntentAndState
 
