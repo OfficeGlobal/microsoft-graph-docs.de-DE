@@ -3,12 +3,13 @@ title: 'Rufen Sie: ablehnen'
 description: Ablehnen eines eingehenden Anrufs an.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 06037d86be99e162a57b54f77d7b4363062f5858
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: d0d8e14b7c4f3c459432e1cf63efd86421cd9877
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849476"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971865"
 ---
 # <a name="call-reject"></a>Rufen Sie: ablehnen
 
@@ -42,7 +43,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
-|Grund|String|Der Ablehnungsgrund für die.|
+|Grund|Zeichenfolge|Der Ablehnungsgrund für die.|
 
 ## <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200 OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.

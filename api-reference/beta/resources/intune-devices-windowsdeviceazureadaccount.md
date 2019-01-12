@@ -3,12 +3,13 @@ title: windowsDeviceAzureADAccount-Ressourcentyp
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 48b05636a1f5f9c3b0212e0d250bfbfef71413f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 03199726bdc8793516fe84d2c667b5ac89ee67f0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855272"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979313"
 ---
 # <a name="windowsdeviceazureadaccount-resource-type"></a>windowsDeviceAzureADAccount-Ressourcentyp
 
@@ -24,7 +25,7 @@ Erbt von [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |password|Zeichenfolge|Noch nicht dokumentiert. Vererbt von [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
-|userPrincipalName|String|Noch nicht dokumentiert.|
+|userPrincipalName|Zeichenfolge|Noch nicht dokumentiert.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

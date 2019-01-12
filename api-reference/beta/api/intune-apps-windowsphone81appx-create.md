@@ -3,12 +3,13 @@ title: Erstellen von windowsPhone81AppX
 description: Erstellen eines neuen windowsPhone81AppX-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6ad7aa7f33fca7222e9cafbe431c3773ffadfdb5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6975fe9e029b876c46523b3e6a46ce285a34380b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808582"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974049"
 ---
 # <a name="create-windowsphone81appx"></a>Erstellen von windowsPhone81AppX
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

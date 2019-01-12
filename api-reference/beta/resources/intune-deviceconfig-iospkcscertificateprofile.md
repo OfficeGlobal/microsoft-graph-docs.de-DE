@@ -3,12 +3,13 @@ title: Ressourcentyp iosPkcsCertificateProfile
 description: iOS PKCS Zertifikatsprofil.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c5398e0bacc082da4f47d5ff265902cd83c5a8e2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2944721d22834899de96668fcd37914c68c802e1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865814"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991909"
 ---
 # <a name="iospkcscertificateprofile-resource-type"></a>Ressourcentyp iosPkcsCertificateProfile
 
@@ -26,7 +27,7 @@ Erbt vom [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertifi
 |[Liste iosPkcsCertificateProfiles](../api/intune-deviceconfig-iospkcscertificateprofile-list.md)|[IosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md) -Auflistung|Listeneigenschaften und Beziehungen der [IosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md) -Objekte.|
 |[Abrufen von iosPkcsCertificateProfile](../api/intune-deviceconfig-iospkcscertificateprofile-get.md)|[iosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md)|Lesen Sie Eigenschaften und Beziehungen des [IosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md) -Objekts.|
 |[Erstellen von iosPkcsCertificateProfile](../api/intune-deviceconfig-iospkcscertificateprofile-create.md)|[iosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md)|Erstellen eines neuen [IosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md) -Objekts.|
-|[IosPkcsCertificateProfile löschen](../api/intune-deviceconfig-iospkcscertificateprofile-delete.md)|Keine|Löscht eine [IosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md).|
+|[IosPkcsCertificateProfile löschen](../api/intune-deviceconfig-iospkcscertificateprofile-delete.md)|Keines|Löscht eine [IosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md).|
 |[IosPkcsCertificateProfile aktualisieren](../api/intune-deviceconfig-iospkcscertificateprofile-update.md)|[iosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md)|Aktualisieren Sie die Eigenschaften eines [IosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

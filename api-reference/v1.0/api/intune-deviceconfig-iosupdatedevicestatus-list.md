@@ -3,12 +3,13 @@ title: Auflisten von „iosUpdateDeviceStatus“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs iosUpdateDeviceStatus auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cbaaa3832ed62e7694f512bcbb040dde46eaa916
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d691d3ea20d3069364d849a3dbabf6f2aea92333
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861222"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990383"
 ---
 # <a name="list-iosupdatedevicestatuses"></a>Auflisten von „iosUpdateDeviceStatus“
 
@@ -34,7 +35,7 @@ GET /deviceManagement/iosUpdateStatuses
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

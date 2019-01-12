@@ -3,12 +3,13 @@ title: Liste applications
 description: Abrufen der Liste der Programme in dieser Organisation.
 author: lleonard-msft
 localization_priority: Priority
-ms.openlocfilehash: 5443010f613f1978c3b88a9cc57237ca7b844805
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 455a0ecd4d0a5f5c94c1edb083e0aa80c816b043
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854978"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971697"
 ---
 # <a name="list-applications"></a>Liste applications
 

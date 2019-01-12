@@ -3,12 +3,13 @@ title: AssignUserToDevice Aktion
 description: Autopilot Geräte Benutzer zugewiesen.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 33145d5852d80eef529cc58e34524c170bba62cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3c91107ade1ce04a1aef9bac0876335ca2093555
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859458"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979530"
 ---
 # <a name="assignusertodevice-action"></a>AssignUserToDevice Aktion
 

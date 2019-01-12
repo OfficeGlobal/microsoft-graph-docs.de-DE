@@ -2,12 +2,13 @@
 title: Ressourcentyp imageInfo
 description: Einen komplexen Typ für die **Zuweisung** -Eigenschaft im VisualInfo Teil des Aktivität-Objekts darstellt.
 localization_priority: Normal
-ms.openlocfilehash: 9df93e24c2019f246fc9da269b40ab690ae81aa4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 347e07b70e8bad6dce8571dd1fbac5cd00d9abdd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828567"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978690"
 ---
 # <a name="imageinfo-resource-type"></a>Ressourcentyp imageInfo
 
@@ -19,8 +20,8 @@ Einen komplexen Typ für die **Zuweisung** -Eigenschaft im [VisualInfo](../resou
 
 |Name | Typ | Beschreibung|
 |:----|:-----|:-----------|
-|iconUrl | String | Optional; URI, der auf ein Symbol, die die Anwendung verwendet verweist, um die Aktivität generieren darstellt.|
-|alternateText | String | Optional; ALT-Text zugegriffen werden Inhalte für das Bild|
+|iconUrl | Zeichenfolge | Optional; URI, der auf ein Symbol, die die Anwendung verwendet verweist, um die Aktivität generieren darstellt.|
+|alternateText | Zeichenfolge | Optional; ALT-Text zugegriffen werden Inhalte für das Bild|
 |addImageQuery | Boolescher Wert | Optional; Parameter verwendet, um den Server anzugeben kann dynamisch als Reaktion auf Parametrisierung Bild zu rendern. Beispiel – ein hoher Kontrast-Bild|
 
 ## <a name="json-representation"></a>JSON-Darstellung

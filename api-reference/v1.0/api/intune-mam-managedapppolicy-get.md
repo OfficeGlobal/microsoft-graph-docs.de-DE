@@ -3,12 +3,13 @@ title: Abrufen von „managedAppPolicy“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs managedAppPolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: de7f194aa6d8d47fe9944a08689d2b5bb9e83cf8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 439a301b1693f49c82c17654c98489fbaa243f48
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886450"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960329"
 ---
 # <a name="get-managedapppolicy"></a>Abrufen von „managedAppPolicy“
 

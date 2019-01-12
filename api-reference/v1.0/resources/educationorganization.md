@@ -3,12 +3,13 @@ title: Ressourcentyp educationOrganization
 description: Abstrakte Entität verwendet, um die Kompatibilität zwischen verschiedenen Organisationstypen innerhalb der Education Sektor modellieren.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: b0b65978b3b415af407c886095c4b31c7aaffab9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 99f3294f76a246e4e78f0f61b0fc1f62532c3a03
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831934"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977423"
 ---
 # <a name="educationorganization-resource-type"></a>Ressourcentyp educationOrganization
 
@@ -17,8 +18,8 @@ Abstrakte Entität verwendet, um die Kompatibilität zwischen verschiedenen Orga
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|description|String| Beschreibung der Organisation.|
-|displayName|String| Anzeigename der Organisation.|
+|description|Zeichenfolge| Beschreibung der Organisation.|
+|displayName|Zeichenfolge| Anzeigename der Organisation.|
 |externalSource|educationExternalSource| Quelle, wo diese Organisation erstellt wurde. Die möglichen Werte sind: `sis`, `manual`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Beziehungen

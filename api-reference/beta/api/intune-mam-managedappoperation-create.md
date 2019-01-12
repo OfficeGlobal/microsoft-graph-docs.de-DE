@@ -3,12 +3,13 @@ title: Erstellen von „managedAppOperation“
 description: Diese Methode erstellt ein neues Objekt des Typs managedAppOperation.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: eac205f4e8bd443ed90784e85e623869b440b204
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9a8be6117a14a2ce87d06928ec8f45fde87c52d8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877245"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979866"
 ---
 # <a name="create-managedappoperation"></a>Erstellen von „managedAppOperation“
 
@@ -51,8 +52,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |displayName|String|Name des Vorgangs|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des App-Vorgangs|
 |state|String|Aktueller Status des Vorgangs|
-|id|String|Schlüssel der Entität|
-|Version|String|Version der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Version|Zeichenfolge|Version der Entität|
 
 
 

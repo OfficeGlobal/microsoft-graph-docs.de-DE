@@ -2,12 +2,14 @@
 title: Liste macOSVpnConfigurations
 description: Listeneigenschaften und Beziehungen der MacOSVpnConfiguration-Objekte.
 author: tfitzmac
-ms.openlocfilehash: 47ee056e83c90bec089a7d0e332a29cd74e0357e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 9e4be49cbe091976f40f660eff138406506d4e28
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360088"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979068"
 ---
 # <a name="list-macosvpnconfigurations"></a>Liste macOSVpnConfigurations
 
@@ -38,8 +40,8 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

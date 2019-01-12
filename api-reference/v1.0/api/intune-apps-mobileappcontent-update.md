@@ -3,12 +3,13 @@ title: Aktualisieren von „mobileAppContent“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs mobileAppContent.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fa5f9295d70124633728e5816c2d506d6f5aeff0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b1148c4f9c1ea6bf35f59456ac4a2ab703eb3852
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831178"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973937"
 ---
 # <a name="update-mobileappcontent"></a>Aktualisieren von „mobileAppContent“
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobil
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

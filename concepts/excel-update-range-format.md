@@ -1,12 +1,15 @@
 ---
 title: Aktualisieren eines Bereichsformats in Excel mit Microsoft Graph
 description: In den folgenden Beispielen wird veranschaulicht, wie die Eigenschaften der RangeFormat-, RangeFill- und RangeFont-Eigenschaften eines bestimmten Bereichs aktualisiert werden können.
-ms.openlocfilehash: 17c8a8cc8e20887329ff79b4983f69e25d1e2dee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: ad1aae186fb7803ff38c321f87bd786096d257a1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092180"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971641"
 ---
 # <a name="update-a-range-format-in-excel-with-microsoft-graph"></a>Aktualisieren eines Bereichsformats in Excel mit Microsoft Graph
 

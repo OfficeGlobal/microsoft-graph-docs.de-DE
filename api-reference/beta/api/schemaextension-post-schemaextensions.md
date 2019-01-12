@@ -2,12 +2,13 @@
 title: schemaExtension erstellen
 description: Erstellen Sie eine neue schemaExtension-Definition, um einen unterstützenden Ressourcentyp zu erweitern.
 localization_priority: Normal
-ms.openlocfilehash: 4d351565d697e1e9c399dcabd0d03a701cac2e81
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.openlocfilehash: c12a47880147d973583fe4104fcb3535674f512a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826390"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975778"
 ---
 # <a name="create-schemaextension"></a>schemaExtension erstellen
 

@@ -1,12 +1,14 @@
 ---
 title: Aufrufen von Office 365-Diensten in Visual Studio 2017 mit der Microsoft Graph-API
 description: Sie können Connected Services in Visual Studio verwenden, um Ihre App für den Aufruf der Microsoft Graph-API zu konfigurieren. In diesem Artikel wird beschrieben, wie Sie das Profilfoto eines angemeldeten Benutzers abrufen, in OneDrive hochladen und eine E-Mail mit einem Freigabelink zum Foto senden.
-ms.openlocfilehash: 33469dec7014d81ed55c2efceb96a26c2651d239
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.prod: reports
+ms.openlocfilehash: 0a084fd7c4fa946854e3f932586f52cdcce370fd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092233"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979236"
 ---
 # <a name="call-office-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>Aufrufen von Office 365-Diensten in Visual Studio 2017 mit der Microsoft Graph-API
 

@@ -2,12 +2,14 @@
 title: Konfigurieren der integrierten Registerkartentypen in Microsoft Teams
 description: So erstellen oder konfigurieren Sie eine Microsoft Teams-Registerkarte mithilfe von Microsoft Graph-APIs
 author: nkramer
-ms.openlocfilehash: 05a7f719cdedad8ea9040721d9411e45529d3c09
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: microsoft-teams
+ms.openlocfilehash: 34db44b1048431f8d1bf0be715e35bcdab6ae80b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316387"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970752"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Konfigurieren der integrierten Registerkartentypen in Microsoft Teams
 

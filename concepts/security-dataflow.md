@@ -1,13 +1,15 @@
 ---
 title: Datenfluss in der Microsoft Graph Security-API
 description: Die Microsoft Graph Security-API leitet Anforderungen im Verbund an alle Anbieter im Microsoft Graph Security-Ökosystem weiter. Dies basiert auf der Zustimmung des von der Anwendung bereitgestellten Sicherheitsanbieters, wie im folgenden Diagramm dargestellt. Der Ablauf der Zustimmung betrifft nur nicht von Microsoft stammende Anbieter.
-author: Preetikr
-ms.openlocfilehash: 5e70414409a35cc7fdef6fb85e6454e26a79bd38
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: preetikr
+localization_priority: Priority
+ms.prod: security
+ms.openlocfilehash: 47731520b9ae959212750aea4f9668d58ac85a08
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354740"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987811"
 ---
 # <a name="microsoft-graph-security-api-data-flow"></a>Datenfluss in der Microsoft Graph Security-API
 

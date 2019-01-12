@@ -3,12 +3,13 @@ title: Ressourcentyp windowsPhoneXAP
 description: Enthält Eigenschaften und geerbten Eigenschaften für Windows Phone XAP-Line Of Business apps.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 29d728198a7da0cba0733eb2ad48a6951ddf4ae6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8940b84dd5b82529aa86c870f3d5638d046a9939
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890279"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975407"
 ---
 # <a name="windowsphonexap-resource-type"></a>Ressourcentyp windowsPhoneXAP
 

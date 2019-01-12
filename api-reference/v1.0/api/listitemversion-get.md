@@ -2,12 +2,13 @@
 title: Abrufen einer Ressource ListItemVersion
 description: Rufen Sie die Metadaten für eine bestimmte Version eines ListItem ab.
 localization_priority: Normal
-ms.openlocfilehash: 54fb491a13e90e1133127531d32c29e1ec2fa040
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 3e45cf260a9f526a7309c63791ed2cb6b8196e45
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888228"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972537"
 ---
 # <a name="get-a-listitemversion-resource"></a>Abrufen einer Ressource ListItemVersion
 

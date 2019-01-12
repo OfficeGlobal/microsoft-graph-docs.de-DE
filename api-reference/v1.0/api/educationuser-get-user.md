@@ -2,12 +2,14 @@
 title: Benutzer abrufen
 description: Abrufen des einfachen Verzeichnis-**Benutzers**, der diesem **educationUser** entspricht.
 localization_priority: Normal
-ms.openlocfilehash: ae2cdfa5aed7dadf7e61c275e65c646196f4667d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 063b1297c2243f11b6eb1020703b7332390a4aa2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836855"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991923"
 ---
 # <a name="get-user"></a>Benutzer abrufen
 
@@ -31,7 +33,7 @@ GET /education/me/user
 GET /education/users/{id}/user
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

@@ -3,12 +3,13 @@ title: DeviceManagementScriptUserState löschen
 description: Löscht eine DeviceManagementScriptUserState.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d026e0277b06d50c0848f594a713f026dc864401
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 95fa5cad563423010e3c472bb44a4f7157af3122
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848797"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973167"
 ---
 # <a name="delete-devicemanagementscriptuserstate"></a>DeviceManagementScriptUserState löschen
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/user
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

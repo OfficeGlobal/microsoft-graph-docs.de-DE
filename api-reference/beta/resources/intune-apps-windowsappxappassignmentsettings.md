@@ -3,12 +3,13 @@ title: Ressourcentyp windowsAppXAppAssignmentSettings
 description: Enthält Eigenschaften verwendet, wenn eine AppX Windows mobile app zu einer Gruppe zuweisen.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2ee4079bcaf25802fe2e1ceac5bbba5eb47c8da4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 011bef0bc4ce19028329aff7a4406aea8f918658
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854264"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975628"
 ---
 # <a name="windowsappxappassignmentsettings-resource-type"></a>Ressourcentyp windowsAppXAppAssignmentSettings
 

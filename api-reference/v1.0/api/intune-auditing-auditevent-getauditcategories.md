@@ -3,12 +3,13 @@ title: getAuditCategories-Funktion
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a80439fd9e2f9be2e18af9ffeb669d4bd7ae2d54
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 513df3b403bcde9839ff2a1e9a7e8568c5720d67
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815470"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959300"
 ---
 # <a name="getauditcategories-function"></a>getAuditCategories-Funktion
 
@@ -34,7 +35,7 @@ GET /deviceManagement/auditEvents/getAuditCategories
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

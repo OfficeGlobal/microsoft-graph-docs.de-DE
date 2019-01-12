@@ -2,12 +2,14 @@
 title: Bookingbusiness aktualisieren
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
 localization_priority: Normal
-ms.openlocfilehash: 53115469821bc39c05c4e7a262e5f9fc15b376ce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 3f20d466614e35cce701999fabfb631e081a02ca
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824997"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991336"
 ---
 # <a name="update-bookingbusiness"></a>Bookingbusiness aktualisieren
 
@@ -40,13 +42,13 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |:---------------|:--------|:----------|
 |address|[physicalAddress](../resources/physicaladdress.md)|Die Straße des Unternehmens.|
 |businessHours|[BookingWorkHours](../resources/bookingworkhours.md) -Auflistung|Die Betriebszeiten für das Unternehmen.|
-|businessType|String|Der Typ des Unternehmens.|
-|defaultCurrencyIso|String|Der Code für die Währung, die das Unternehmen in für Microsoft Bookings ausgeführt wird.|
-|displayName|String|Ein Name für das Unternehmen, das mit Kunden-Schnittstellen.|
-|E-Mail|String|Die e-Mail-Adresse für das Unternehmen.|
+|businessType|Zeichenfolge|Der Typ des Unternehmens.|
+|defaultCurrencyIso|Zeichenfolge|Der Code für die Währung, die das Unternehmen in für Microsoft Bookings ausgeführt wird.|
+|displayName|Zeichenfolge|Ein Name für das Unternehmen, das mit Kunden-Schnittstellen.|
+|E-Mail|Zeichenfolge|Die e-Mail-Adresse für das Unternehmen.|
 |phone|String|Die Telefonnummer für das Unternehmen.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Gibt an, wie die Buchungen für dieses Unternehmen erstellt werden können.|
-|webSiteUrl|String|Die URL der Website für die Business.|
+|webSiteUrl|Zeichenfolge|Die URL der Website für die Business.|
 
 ## <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204, No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.

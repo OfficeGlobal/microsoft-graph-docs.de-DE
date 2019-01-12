@@ -3,12 +3,13 @@ title: windows10AppType Enum-Typ
 description: Typ des Windows-10-Anwendung.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2f971d88b1ebcec7a40c0f44b203c683bfee27f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 738ffae6b3750619c5c66ca69420de1ced0eaa9b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856546"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975491"
 ---
 # <a name="windows10apptype-enum-type"></a>windows10AppType Enum-Typ
 

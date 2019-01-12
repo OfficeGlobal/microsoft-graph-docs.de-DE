@@ -3,12 +3,13 @@ title: AndroidManagedStoreAppConfigurationSchema aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidManagedStoreAppConfigurationSchema-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0d91fbb1d03afd8ff9a6029da5e7d1ec20ad4eee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f45a7d831c9db3b94a2cc8812e900ac20faf8887
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854530"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956654"
 ---
 # <a name="update-androidmanagedstoreappconfigurationschema"></a>AndroidManagedStoreAppConfigurationSchema aktualisieren
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidManag
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,7 +49,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität (Name des Android-Pakets der Anwendung), der das Schema entspricht|
+|id|Zeichenfolge|Schlüssel der Entität (Name des Android-Pakets der Anwendung), der das Schema entspricht|
 |exampleJson|Binär|UTF8-codiertes Bytearray mit der diesem Schema entsprechenden JSON-Beispielzeichenfolge, das veranschaulicht, wie die Konfiguration für diese App festgelegt werden soll|
 |schemaItems|[AndroidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) -Auflistung|Collection von Elementen, die jeweils eine benannte Konfigurationsoption im Schema darstellen|
 

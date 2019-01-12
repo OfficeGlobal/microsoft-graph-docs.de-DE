@@ -3,12 +3,13 @@ title: Team Ressourcentyp
 description: 'Ein Team in Microsoft-Teams ist eine Auflistung der Kanäle. '
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: bf76f7b4b6cd06afb80b17e82fb8d10675b744a2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 921b1367afe8e12d10d69cb16577ce73ba70c9f2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862263"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972509"
 ---
 # <a name="team-resource-type"></a>Team Ressourcentyp
 
@@ -50,7 +51,7 @@ Weitere Informationen über das Arbeiten mit Gruppen und Membern im Teams finden
 |visibility|[teamVisibilityType](teamvisibilitytype.md)| Der Sichtbarkeit von einer Gruppe und Team. Der Standardwert ist öffentlich. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |So konfigurieren Sie Einstellungen Verwenden von Giphy, Memes und Aufkleber im Team.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Einstellungen konfigurieren können, ob Gäste erstellen, aktualisieren oder Löschen von Kanälen im Team können.|
-|isArchived|Boolean|Gibt an, ob dieses Team im schreibgeschützten Modus ist. |
+|isArchived|Boolescher Wert|Gibt an, ob dieses Team im schreibgeschützten Modus ist. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Einstellungen konfigurieren können, ob Mitglieder bestimmter Aktionen ausführen können beispielsweise Kanäle erstellen und Hinzufügen von Programmen, im Team.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |So konfigurieren Sie die messaging-Einstellungen und erwähnungen im Team.|
 |webUrl|Zeichenfolge (schreibgeschützt) | Ein Hyperlink, der an das Team in der Microsoft-Teams, Client gesendet wird. Dies ist die URL, die Sie erhalten, wenn Sie mit der rechten ein Team in der Microsoft-Teams, Client Maustaste und wählen Sie **Link an das Team abrufen**. Diese URL sollte als nicht transparentes Blob behandelt und nicht analysiert werden. |

@@ -1,14 +1,15 @@
 ---
 title: onenoteOperationError-Ressourcentyp
 description: Ein Fehler einem OneNote-Vorgang, der nicht ausgeführt werden konnte.
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: cfe859bea40f15311a631e8b1d2b3c3a3c179d0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: 42f9f4777a98081a3fa18c010c301ba19a34b750
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891532"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975505"
 ---
 # <a name="onenoteoperationerror-resource-type"></a>onenoteOperationError-Ressourcentyp
 

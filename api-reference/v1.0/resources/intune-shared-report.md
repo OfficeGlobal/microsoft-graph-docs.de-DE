@@ -2,12 +2,14 @@
 title: report-Ressourcentyp
 description: Ein Bericht, der gemäß den Workflow gewähren, entweder Gerät Konfiguration Profil Auftragsverlaufs oder Registrierung Fehler variiert.
 localization_priority: Normal
-ms.openlocfilehash: 8854bb0f32c1360a4c529137a3f587f7a3cba5f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 5945343684aa20dc8af403eb094bb29648ff4f8f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862160"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970234"
 ---
 # <a name="report-resource-type"></a>report-Ressourcentyp
 

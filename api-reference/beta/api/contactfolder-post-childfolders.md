@@ -3,12 +3,13 @@ title: contactFolder erstellen
 description: 'Dient zum Erstellen eines neuen contactFolder als untergeordnetes Element eines bestimmten Ordners. '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: c636bd3f5edaf2447194d5dc058b761e8ec61674
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 66061d86b3c3894c165788cd408b22b8824b34f9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829008"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991769"
 ---
 # <a name="create-contactfolder"></a>contactFolder erstellen
 
@@ -33,7 +34,7 @@ POST /me/contactFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json. Erforderlich.   |

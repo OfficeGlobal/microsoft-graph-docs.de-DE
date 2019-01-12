@@ -3,12 +3,13 @@ title: androidMobileAppIdentifier-Ressourcentyp
 description: Der Bezeichner für eine Android-App.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 59c947192cf00e1f6852c51513692123595c975b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 26c258dbf0091b44d2f7eea8fdf4066a5c8e6729
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837591"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969772"
 ---
 # <a name="androidmobileappidentifier-resource-type"></a>androidMobileAppIdentifier-Ressourcentyp
 

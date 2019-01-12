@@ -3,12 +3,13 @@ title: Erstellen von „iosManagedAppProtection“
 description: Erstellt neue Objekte des Typs iosManagedAppProtection.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6781f4e5b8d50c923685798a80ac2c309ef56ed1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0867b1a0127be46d68fb3d67171e71fd288a741b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851212"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974714"
 ---
 # <a name="create-iosmanagedappprotection"></a>Erstellen von „iosManagedAppProtection“
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/iosManagedAppProtections
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

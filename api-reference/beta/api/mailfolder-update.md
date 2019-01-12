@@ -3,12 +3,13 @@ title: MailFolder aktualisieren
 description: Aktualisieren Sie die Eigenschaften des MailFolder-Objekts.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: f9b0af67b4fdedbf6ecbbcfe591057a4aeb86351
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 33e900933bc643f36e8f8a7783ea2083b3c03887
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873899"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976583"
 ---
 # <a name="update-mailfolder"></a>MailFolder aktualisieren
 
@@ -33,7 +34,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json. Erforderlich.   |
@@ -43,7 +44,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|displayName|String|Der Anzeigename des mailFolder-Elements.|
+|displayName|Zeichenfolge|Der Anzeigename des mailFolder-Elements.|
 
 ## <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [mailFolder](../resources/mailfolder.md)-Objekt im Antworttext zurückgegeben.

@@ -3,12 +3,13 @@ title: MacOSScepCertificateProfile löschen
 description: Löscht eine MacOSScepCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2215636ac0ff6df0e66baed05d438a8b8faecb6e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: daa86fe02045664a680c44e8c1dbdfb72016670d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832522"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958110"
 ---
 # <a name="delete-macosscepcertificateprofile"></a>MacOSScepCertificateProfile löschen
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

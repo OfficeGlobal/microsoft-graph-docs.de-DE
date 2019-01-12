@@ -2,12 +2,14 @@
 title: Buckets auflisten
 description: Dient zum Abrufen einer Liste von **plannerbucket**-Objekten, die in einem plannerPlan-Objekt enthalten sind.
 localization_priority: Normal
-ms.openlocfilehash: c6b33f74bd21dde1aec6f04870b4fa6348fb2ffb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: b47f456fdc66c29a5176b6476943c801cd14e3dd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837289"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976485"
 ---
 # <a name="list-buckets"></a>Buckets auflisten
 

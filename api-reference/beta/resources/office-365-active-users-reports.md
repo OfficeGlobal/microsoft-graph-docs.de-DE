@@ -2,12 +2,13 @@
 title: Berichte über aktive Office 365-Benutzer
 description: Sie können den Office 365 aktive Benutzer Bericht verwenden, um zu ermitteln, wie viele Lizenzen von Personen in Ihrer Organisation verwendet werden und Ausführen eines Drilldowns Informationen darüber, welche Benutzer welche Produkte verwenden. In diesem Bericht hilft Administratoren nicht ausgelastete Produkte oder Benutzer, die möglicherweise zusätzliche Schulungen oder Informationen zu identifizieren.
 localization_priority: Normal
-ms.openlocfilehash: d52588630dcb18a146f34ad66c154e3a64752266
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 958cf769a2b54f1d22cdc315ee250cb1e677c301
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837156"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970507"
 ---
 # <a name="office-365-active-users-reports"></a>Berichte über aktive Office 365-Benutzer
 

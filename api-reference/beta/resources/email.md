@@ -2,12 +2,14 @@
 title: e-Mail-Ressourcentyp
 description: Es folgt eine JSON-Darstellung der Ressource.
 localization_priority: Normal
-ms.openlocfilehash: 02eb37c065cc8d664caf97f1f86da0efeaac09e2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 177505f2e76b7a0044a0647300d05af332c80781
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830058"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972901"
 ---
 # <a name="email-resource-type"></a>e-Mail-Ressourcentyp
 
@@ -34,7 +36,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|address|String||
+|address|Zeichenfolge||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -2,12 +2,14 @@
 title: plannerExternalReferences-Ressourcentyp
 description: Die **plannerExternalReferences**-Ressource stellt die Sammlung der Verweise für eine Aufgabe dar. Es handelt sich um einen offenen Typ. Sie ist Bestandteil des taskDetails-Objekts. Der Wert im Eigenschaft-Wert-Paar ist das externalReference-Objekt.
 localization_priority: Normal
-ms.openlocfilehash: aedfd0321843c4a906defe22f184bac7d293a6e7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 8048a8a412935cc69e805a1d7c77ff8b1fbf5f7c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862076"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974658"
 ---
 # <a name="plannerexternalreferences-resource-type"></a>plannerExternalReferences-Ressourcentyp
 
