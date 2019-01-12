@@ -3,12 +3,13 @@ title: Ressourcentyp symantecCodeSigningCertificate
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a2e4f53e0ca7329f163b507677e2b91a4c02fe12
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9c195a31dae12c1a67d8226a219fe57a68bf905d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845010"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965936"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>Ressourcentyp symantecCodeSigningCertificate
 
@@ -29,11 +30,11 @@ Noch nicht dokumentiert.
 |id|String|Schlüssel der Entität|
 |content|Binär|Das Windows Symantec Codesignierung-Zertifikat im Format Rohdaten.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Der Status Cert bereitgestellt oder nicht bereitgestellt. Mögliche Werte sind: `notProvisioned` und `provisioned`.|
-|password|String|Das Kennwort für die PFX-Datei.|
+|password|Zeichenfolge|Das Kennwort für die PFX-Datei.|
 |subjectName|Zeichenfolge|Der Antragstellername für das Zertifikat.|
-|Betreff|String|Der Wert der Betreff für das Zertifikat.|
-|issuerName|String|Der Name der Aussteller für das Zertifikat.|
-|Aussteller|String|Der Wert der Aussteller für das Zertifikat.|
+|Betreff|Zeichenfolge|Der Wert der Betreff für das Zertifikat.|
+|issuerName|Zeichenfolge|Der Name der Aussteller für das Zertifikat.|
+|Aussteller|Zeichenfolge|Der Wert der Aussteller für das Zertifikat.|
 |expirationDateTime|DateTimeOffset|Das Ablaufdatum des Zertifikats.|
 |uploadDateTime|DateTimeOffset|Der Typ des der Cert CodeSigning als Symantec Cert.|
 

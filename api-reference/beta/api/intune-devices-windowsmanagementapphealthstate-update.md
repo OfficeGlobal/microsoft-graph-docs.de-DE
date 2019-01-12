@@ -3,12 +3,13 @@ title: WindowsManagementAppHealthState aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines WindowsManagementAppHealthState-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4af20e28e47fa65c0e57ae5030c84bd23e74e3e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b52762bf13a7ff534c3c76b8b0c94561744b15fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838633"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924230"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>WindowsManagementAppHealthState aktualisieren
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,12 +49,12 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für den Zustand des Windows Management-app|
+|id|Zeichenfolge|Eindeutiger Bezeichner für den Zustand des Windows Management-app|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows Management app Zustand. Mögliche Werte sind: `unknown`, `healthy` und `unhealthy`.|
-|installedVersion|String|Windows Management-app-Version installiert.|
+|installedVersion|Zeichenfolge|Windows Management-app-Version installiert.|
 |lastCheckInDateTime|DateTimeOffset|Windows Management app Einchecken zuletzt.|
-|deviceName|String|Name des Geräts, auf dem Windows Management-app installiert ist.|
-|deviceOSVersion|String|Windows 10 Betriebssystemversion des Geräts, auf dem Windows Management-app installiert ist.|
+|deviceName|Zeichenfolge|Name des Geräts, auf dem Windows Management-app installiert ist.|
+|deviceOSVersion|Zeichenfolge|Windows 10 Betriebssystemversion des Geräts, auf dem Windows Management-app installiert ist.|
 
 
 

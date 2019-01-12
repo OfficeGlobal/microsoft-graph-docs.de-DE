@@ -1,14 +1,15 @@
 ---
 title: Warnungen auflisten
 description: Abrufen einer Liste der alert-Objekten.
-author: Preetikr
+author: preetikr
 localization_priority: Priority
-ms.openlocfilehash: eac124cfd49f333c2c44053f21894f90f6d47582
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: security
+ms.openlocfilehash: d18f49c5e1a0dcc8d079816ff7ad17c6e21df2ee
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859052"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955030"
 ---
 # <a name="list-alerts"></a>Warnungen auflisten
 

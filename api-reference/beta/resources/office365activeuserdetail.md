@@ -2,12 +2,13 @@
 title: Ressourcentyp office365ActiveUserDetail
 description: Es folgt eine JSON-Darstellung der Ressource.
 localization_priority: Normal
-ms.openlocfilehash: 462858f42b48560db4cd2f311ffdffd911504afe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 14c785069868783b1e248b41a5b339c9adb4710a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833957"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929284"
 ---
 # <a name="office365activeuserdetail-resource-type"></a>Ressourcentyp office365ActiveUserDetail
 

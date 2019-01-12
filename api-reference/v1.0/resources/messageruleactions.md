@@ -3,12 +3,13 @@ title: messageRuleActions-Ressourcentyp
 description: Stellt die Reihe von Aktionen dar, die für eine Regel verfügbar sind.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: f92c253b400a5164c1def570daef6307c0f4a8bf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 33f1167d7317f941ebfa79b372e9cf575c14989b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876545"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914157"
 ---
 # <a name="messageruleactions-resource-type"></a>messageRuleActions-Ressourcentyp
 
