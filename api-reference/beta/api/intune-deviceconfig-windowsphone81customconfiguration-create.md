@@ -3,12 +3,13 @@ title: Erstellen von „windowsPhone81CustomConfiguration“
 description: Diese Methode erstellt ein neues Objekt des Typs windowsPhone81CustomConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e2a1e9172365dd05692d71ee69b798e120eaafdd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fe02cc2ab54753c9825bb007f480529c17cf8210
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806832"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991993"
 ---
 # <a name="create-windowsphone81customconfiguration"></a>Erstellen von „windowsPhone81CustomConfiguration“
 

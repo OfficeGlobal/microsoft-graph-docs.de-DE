@@ -3,12 +3,13 @@ title: Nachrichten senden
 description: Sendet die im Anforderungstext angegebene Nachricht. Die Nachricht wird dann automatisch im Ordner „Gesendete Elemente“ gespeichert.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 2b0ac9b478bccf5080b2e8971bdb1ada881f5b28
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 48e6087cb8393bb4f679cabfe73d5cb280a71907
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851058"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991426"
 ---
 # <a name="send-mail"></a>Nachrichten senden
 

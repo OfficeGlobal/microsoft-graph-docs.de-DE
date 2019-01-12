@@ -3,12 +3,13 @@ title: Erstellen von „androidForWorkEnrollmentProfile“
 description: Erstellen eines neuen androidForWorkEnrollmentProfile-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2890bba72a16933e0a45009a573044b65c099e9a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cc51a0a5eede602e0757571b186a7995d8f4867b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854201"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27992042"
 ---
 # <a name="create-androidforworkenrollmentprofile"></a>Erstellen von „androidForWorkEnrollmentProfile“
 
@@ -36,7 +37,7 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,16 +49,16 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|accountId|String|Mandanten-GUID, zu der das Registrierungsprofil gehört|
-|id|String|Eindeutige GUID des Registrierungsprofils|
-|displayName|String|Anzeigename des Registrierungsprofils|
-|description|String|Beschreibung des Registrierungsprofils|
+|accountId|Zeichenfolge|Mandanten-GUID, zu der das Registrierungsprofil gehört|
+|id|Zeichenfolge|Eindeutige GUID des Registrierungsprofils|
+|displayName|Zeichenfolge|Anzeigename des Registrierungsprofils|
+|description|Zeichenfolge|Beschreibung des Registrierungsprofils|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Registrierungsprofils|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Registrierungsprofils|
-|tokenValue|String|Wert des zuletzt für das Registrierungsprofil erstellten Tokens|
+|tokenValue|Zeichenfolge|Wert des zuletzt für das Registrierungsprofil erstellten Tokens|
 |tokenExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs des zuletzt erstellten Tokens|
 |enrolledDeviceCount|Int32|Gesamtzahl der mit dem Registrierungsprofil registrierten Android-Geräte|
-|qrCodeContent|String|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird|
+|qrCodeContent|Zeichenfolge|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird|
 
 

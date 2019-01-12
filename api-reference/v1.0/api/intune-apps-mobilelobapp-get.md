@@ -3,12 +3,13 @@ title: mobileLobApp abrufen
 description: Liest die Eigenschaften und Beziehungen von Objekten des mobileLobApp-Objekts auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 54a7337fc83ed4d9cb715def2e5404c7208ac27b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d0001b928e77cd350ffeb62c3f01c2087c0b3e1b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855496"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991447"
 ---
 # <a name="get-mobilelobapp"></a>mobileLobApp abrufen
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
