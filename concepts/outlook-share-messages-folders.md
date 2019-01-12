@@ -2,12 +2,14 @@
 title: Abrufen von Outlook-Nachrichten in einem freigegebenen oder delegierten Ordner
 description: In Outlook können Kunden E-Mail-Ordner für andere freigeben und „Lesen“-, „Erstellen“- oder „Ändern“-Zugriff auf einzelne Ordner gewähren. In Outlook kann ein Kunde auch einen anderen Benutzer delegieren, um im Auftrag des Kunden zu handeln.
 author: angelgolfer-ms
-ms.openlocfilehash: cdb2228c64647497674402825577942323c3d2ff
-ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: 76f54b5cc2db5395b9ca5e50611c4cea4f18b770
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2018
-ms.locfileid: "27413176"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917391"
 ---
 # <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>Abrufen von Outlook-Nachrichten in einem freigegebenen oder delegierten Ordner
 

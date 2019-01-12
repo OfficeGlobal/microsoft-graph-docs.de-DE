@@ -2,12 +2,14 @@
 title: Ressourcentyp bookingService
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
 localization_priority: Normal
-ms.openlocfilehash: 63eae84249501426c43ad73326cbf005009753be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 790adf49cfda1f787665a48e1b06bd77da27e1f0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815442"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925161"
 ---
 # <a name="bookingservice-resource-type"></a>Ressourcentyp bookingService
 
@@ -33,12 +35,12 @@ Stellt Informationen zu einem bestimmten Dienst stammt von einer [BookingBusines
 |defaultPrice|Gleitkommawert mit doppelter Genauigkeit|Der Standardwert monetäre Preis für den Dienst.|
 |defaultPriceType|string|Die Standardmethode der Dienst aufgeladen wird. Mögliche Werte sind: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs` und `notSet`.|
 |defaultReminders|[BookingReminder](bookingreminder.md) -Auflistung|Die Standardeinstellung Festlegen von Erinnerungen für einen Termin dieses Diensts. Der Wert dieser Eigenschaft ist nur bei dieser **BookingService** anhand seiner ID Lesen verfügbar|
-|description|String|Eine Beschreibung für den Dienst.|
-|displayName|String|Ein Dienstname.|
-|emailAddress|String|Eine e-Mail-Adresse|
-|id|String|Die ID des Diensts aus, in einen GUID-Format. Schreibgeschützt.|
-|isHiddenFromCustomers|Boolean|"True" bedeutet, dass dieser Dienst nicht verfügbar für Kunden für buchen ist.|
-|notes|String|Weitere Informationen zu diesem Dienst.|
+|description|Zeichenfolge|Eine Beschreibung für den Dienst.|
+|displayName|Zeichenfolge|Ein Dienstname.|
+|emailAddress|Zeichenfolge|Eine e-Mail-Adresse|
+|id|Zeichenfolge|Die ID des Diensts aus, in einen GUID-Format. Schreibgeschützt.|
+|isHiddenFromCustomers|Boolescher Wert|"True" bedeutet, dass dieser Dienst nicht verfügbar für Kunden für buchen ist.|
+|notes|Zeichenfolge|Weitere Informationen zu diesem Dienst.|
 |postBuffer|Duration|Die Zeit bis zur Puffer nach eines Termins für diesen Dienst beendet, und vor dem nächsten Kunden Termin gebucht werden kann.|
 |preBuffer|Duration|Die Zeit zum Zwischenspeichern, bevor Sie ein Termin für diesen Dienst starten kann.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Der Satz von Richtlinien, die bestimmen, wie Termine für diesen Dienst erstellt und verwaltet werden soll.|

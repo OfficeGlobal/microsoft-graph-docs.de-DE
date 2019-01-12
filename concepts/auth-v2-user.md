@@ -2,12 +2,14 @@
 title: Im Namen eines Benutzers zugreifen
 description: 'Um Microsoft Graph zum Lesen und Schreiben von Ressourcen im Namen eines Benutzers zu verwenden, muss Ihre App ein Zugriffstoken von Azure AD abrufen und das Token an Anforderungen anfügen, die die API an Microsoft Graph sendet. Welchen Authentifizierungsfluss genau Sie zum Abrufen von Zugriffstoken verwenden, ist davon abhängig, welche Art von App Sie entwickeln und ob Sie OpenID Connect zum Anmelden des Benutzers bei Ihrer App verwenden möchten. Ein Fluss, der häufig von systemeigenen und mobilen Apps und auch von einigen Web-Apps verwendet wird, ist der Fluss zur Erteilung von OAuth 2.0-Autorisierungscodes. In diesem Thema werden anhand eines Beispiels die einzelnen Schritte dieses Flusses erläutert. '
 author: jackson-woods
-ms.openlocfilehash: 80c421898014be09d3ffbd2213bee9e4ec20cfb9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6756657d2181f83f58db00f4b15b220a44492879
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317318"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914269"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>Im Namen eines Benutzers zugreifen
 Um Microsoft Graph zum Lesen und Schreiben von Ressourcen im Namen eines Benutzers zu verwenden, muss Ihre App ein Zugriffstoken von Azure AD abrufen und das Token an Anforderungen anfügen, die die API an Microsoft Graph sendet. Welchen Authentifizierungsfluss genau Sie zum Abrufen von Zugriffstoken verwenden, ist davon abhängig, welche Art von App Sie entwickeln und ob Sie OpenID Connect zum Anmelden des Benutzers bei Ihrer App verwenden möchten. Ein Fluss, der häufig von systemeigenen und mobilen Apps und auch von einigen Web-Apps verwendet wird, ist der Fluss zur Erteilung von OAuth 2.0-Autorisierungscodes. In diesem Thema werden anhand eines Beispiels die einzelnen Schritte dieses Flusses erläutert. 

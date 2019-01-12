@@ -2,12 +2,13 @@
 title: Einrichten von Benachrichtigungen für Änderungen der Benutzerdaten
 description: Die Microsoft Graph-API verwendet einen Webhook-Mechanismus zum Übermitteln von Benachrichtigungen an Clients. Ein Client ist ein Webdienst, der eine eigene URL zum Empfangen von Benachrichtigungen konfiguriert. Client-Apps verwenden Benachrichtigungen, um bei Änderungen ihren Status zu aktualisieren.
 author: piotrci
-ms.openlocfilehash: 6af6f3c54a7956d6a505c88bfc82fc8233dccdad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: e6cd96f155ad88fa858c9c494538af8c31afa919
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337044"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818508"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Einrichten von Benachrichtigungen für Änderungen der Benutzerdaten
 

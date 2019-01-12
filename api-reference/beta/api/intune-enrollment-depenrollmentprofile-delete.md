@@ -3,12 +3,13 @@ title: DepEnrollmentProfile löschen
 description: Löscht eine DepEnrollmentProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 43e98cad5e73c01b3d062dfebb869261bc1c9afa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3aae21118a39ea5e3f36ec775ac27cef42d7d9d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868481"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913513"
 ---
 # <a name="delete-depenrollmentprofile"></a>DepEnrollmentProfile löschen
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollme
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

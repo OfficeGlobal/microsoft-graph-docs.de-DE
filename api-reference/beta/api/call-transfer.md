@@ -3,12 +3,13 @@ title: 'Rufen Sie: Übertragung'
 description: Weiterleiten eines aktiven Anrufs.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 5e1a26a1b3da1af8666d8fc5bcbba619c9fad97b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 34ddf14ae7a49aa8a0aeae1c1bc98b8a79c16384
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824899"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921612"
 ---
 # <a name="call-transfer"></a>Rufen Sie: Übertragung
 
@@ -43,7 +44,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Der Teilnehmer, der das Ziel der Übertragung ist.|
-|clientContext|String|Der Clientkontext.|
+|clientContext|Zeichenfolge|Der Clientkontext.|
 
 ## <a name="response"></a>Antwort
 Gibt `202 Accepted` Antwortcode.

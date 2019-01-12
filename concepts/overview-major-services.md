@@ -2,12 +2,13 @@
 title: Wesentliche Dienste und Features in Microsoft Graph
 description: 'Mit Microsoft Graph können Sie mithilfe von REST-APIs und Clientbibliotheken die besten Funktionen aus Office 365, Windows 10 und Enterprise Mobility and Security Services in Microsoft 365 integrieren. Darüber hinaus bietet es Sicherheitsinformationen und Informationen aus sozialen Netzwerken, mit denen Sie die Produktivität der Benutzer, die Kreativität und die Zusammenarbeit im Team steigern und Unternehmensressourcen sowie Benutzerdaten schützen können. '
 author: jthake-msft
-ms.openlocfilehash: 6f4403db3179afadb39dfb20613f284381650112
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 0d164dc95b4ae5de683180de1b6f186dcd98f5f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353550"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820685"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Wesentliche Dienste und Features in Microsoft Graph
 

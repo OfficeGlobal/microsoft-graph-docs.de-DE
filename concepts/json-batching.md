@@ -2,12 +2,13 @@
 title: Kombinieren von mehreren Anforderungen in einem HTTP-Aufruf unter Verwendung der JSON-Batchverarbeitung
 description: 'Die JSON-Batchverarbeitung ermöglicht es Ihnen, Ihre Anwendung durch Kombinieren von mehreren Anforderungen in einem einzigen JSON-Objekt zu optimieren. Ein Client möchte z. B. eine Ansicht aus nicht verbundenen Daten wie den folgenden zusammenstellen:'
 author: piotrci
-ms.openlocfilehash: d41fb252b9c5c1c1b8f6260b5b45244fc0b32b8b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: f36cc1c8e8ccc016078eab52c4c7f3874892d000
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323226"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885183"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Kombinieren von mehreren Anforderungen in einem HTTP-Aufruf unter Verwendung der JSON-Batchverarbeitung
 

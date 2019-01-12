@@ -2,12 +2,14 @@
 title: Microsoft Graph Data Connect (Vorschau)
 description: 'Microsoft Graph Data Connect gibt Ihnen Office 365-Daten und Microsoft Azure-Ressourcen mithilfe einer Kerndatenpipeline an die Hand. Mit Microsoft Graph Data Connect können Sie intelligente Anwendungen erstellen, die unter Nutzung der besten Entwicklungstools von Microsoft auf wertvolle Daten zugreifen, und all das in der sicheren Microsoft-Cloud. Alle Unternehmen sind daran interessiert, ihre Produktivität zu steigern. Daher bietet die Entwicklung von Produkten, die Wissensarbeiter produktiver machen, enorme Möglichkeiten. '
 author: ajacks-msft
-ms.openlocfilehash: 283ad9044eb5ae5bc53bb4b72e4d6d1f2434cfee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: data-connect
+ms.openlocfilehash: 412cfa0fd5a4638d3831c3f23a4e6d943549cb9e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315267"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914290"
 ---
 # <a name="microsoft-graph-data-connect-preview"></a>Microsoft Graph Data Connect (Vorschau)
 

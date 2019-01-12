@@ -1,12 +1,13 @@
 ---
 title: 'Versionsverwaltung, Support und Richtlinien für wesentliche Änderungen für Microsoft Graph '
 description: In diesem Artikel werden der Support und die Richtlinien für wesentliche Änderungen für Microsoft Graph sowie die Versionen der Microsoft Graph-API beschrieben, die derzeit verfügbar sind.
-ms.openlocfilehash: 2a2c7f338e4bc26dc61d9cf88855b9760ff22d6f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 273772aaf72031ca27801e54ede744960c601fd4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092331"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812838"
 ---
 # <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Versionsverwaltung, Support und Richtlinien für wesentliche Änderungen für Microsoft Graph 
 

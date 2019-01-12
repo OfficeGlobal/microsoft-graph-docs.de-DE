@@ -2,12 +2,14 @@
 title: 'Range: Cell'
 description: Ruft das Bereichsobjekt ab, das die einzelne Zelle basierend auf Zeilen- und Spaltenanzahl enthält. Die Zelle kann sich außerhalb seines übergeordneten Bereichs befinden, solange es im Arbeitsblatt-Raster bleibt. Die zurückgegebene Zelle befindet sich relativ zur obersten linken Zelle des Bereichs.
 localization_priority: Normal
-ms.openlocfilehash: 2806fdcdc6072067a4fb4012fb9dc908aa3c15f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: ef9888c934a0d85f66c49e062074c2c328cafa13
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877014"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915655"
 ---
 # <a name="range-cell"></a>Range: Cell
 

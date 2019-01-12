@@ -2,12 +2,14 @@
 title: educationSchool-Ressourcentyp
 description: 'Eine Ressource, eine Schule darstellt und zum Verwalten der Klassen, Lehrkräfte und Schüler der repräsentierten Schule verwendet wird.  '
 localization_priority: Normal
-ms.openlocfilehash: b957355bc132fd0b90c4bf623e68619d7ebcd0ec
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 2549d8babd000a36f0ff3ccd38541ef3c1b2e466
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877021"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925819"
 ---
 # <a name="educationschool-resource-type"></a>educationSchool-Ressourcentyp
 

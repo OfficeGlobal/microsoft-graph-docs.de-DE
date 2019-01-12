@@ -3,12 +3,13 @@ title: DeviceManagementScriptAssignment aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines DeviceManagementScriptAssignment-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0689530f717b3ee8ecbd4ce6b967768912bdd41a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 552dffca7adf6825a77e4edb65cf0ceef8fcaa83
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859017"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921584"
 ---
 # <a name="update-devicemanagementscriptassignment"></a>DeviceManagementScriptAssignment aktualisieren
 
@@ -48,7 +49,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Taste der Gerät Management Skript Gruppe Zuordnung Entität.|
+|id|Zeichenfolge|Taste der Gerät Management Skript Gruppe Zuordnung Entität.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Die Id des Azure Active Directory-Gruppe verwenden wir das Skript Inhaltsadressierung für.|
 
 

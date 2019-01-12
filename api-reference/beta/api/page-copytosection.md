@@ -2,12 +2,14 @@
 title: 'page: copyToSection'
 description: Kopiert eine Seite in einen bestimmten Abschnitt.
 localization_priority: Normal
-ms.openlocfilehash: 10d0eecd2f84a33e66209f8297b72b8a4630b100
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 733f03bd04df31b79e84a7f8bbf5162ec1b023ce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892505"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915200"
 ---
 # <a name="page-copytosection"></a>page: copyToSection
 

@@ -3,12 +3,13 @@ title: Auflisten von „deviceInstallState“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs deviceInstallState auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9d85c822bfb4dbd7ee355ace90150a1ab418e242
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b1d7a2a4e4356de6f680e46563d84197f84ca38d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839823"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923558"
 ---
 # <a name="list-deviceinstallstates"></a>Auflisten von „deviceInstallState“
 
@@ -35,7 +36,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userIn
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

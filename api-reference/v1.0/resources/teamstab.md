@@ -2,12 +2,14 @@
 title: Ressourcentyp teamsTab
 description: 'Eine TeamsTab ist eine Registerkarte, hat fixiert an einen Kanal innerhalb eines Teams (angeschlossen). '
 localization_priority: Normal
-ms.openlocfilehash: a1c3302251ac9b68be1cd8d6a011b7e0a7d216b1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: 305b8d530eb0b10a658a1b5e5051f7854e3919ee
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860844"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917776"
 ---
 # <a name="teamstab-resource-type"></a>Ressourcentyp teamsTab
 

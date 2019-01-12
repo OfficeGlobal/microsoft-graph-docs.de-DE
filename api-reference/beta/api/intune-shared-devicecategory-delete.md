@@ -3,12 +3,13 @@ title: deviceCategory löschen
 description: Löscht ein deviceCategory-Objekt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b9630b5f3b86ec22a4a1be735fde91d14550fc1e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 382dc87a566f836c3e3832f9e05021bb05248f37
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853396"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913695"
 ---
 # <a name="delete-devicecategory"></a>deviceCategory löschen
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/deviceCategories/{deviceCategoryId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

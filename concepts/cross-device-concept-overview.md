@@ -1,12 +1,14 @@
 ---
 title: Geräteübergreifende Oberflächen in Microsoft Graph
 description: 'Die Gerätevielfalt ist heute nahezu unüberschaubar. Heimanwender nutzen Geräte in den verschiedensten Formfaktoren und mit den unterschiedlichsten Plattformen: Morgens lesen sie die neuesten Nachrichten auf ihrem Tablet, auf dem Weg zur Arbeit checken sie ihre E-Mails auf dem Smartphone und im Büro erledigen sie ihre Aufgaben am Desktop-PC. Abends schauen sie sich vielleicht einen Film auf ihrer Heimkonsole an und hören über intelligente Lautsprecher die Nachrichten des Tages. Der durchschnittliche Kunde nutzt im Laufe des Tages mehrere verschiedene Geräte und Plattformen. '
-ms.openlocfilehash: 83557d59f964631fe12a8a5cb7f00121955432d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.prod: project-rome
+ms.openlocfilehash: 85d48d07f06d189f30c8eba9f7f0876353b3ff25
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092178"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920682"
 ---
 # <a name="cross-device-experiences-in-microsoft-graph"></a>Geräteübergreifende Oberflächen in Microsoft Graph
 

@@ -3,12 +3,13 @@ title: Liste androidWorkProfileNineWorkEasConfigurations
 description: Listeneigenschaften und Beziehungen der AndroidWorkProfileNineWorkEasConfiguration-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5654cc7125337d356c0395273a54e7b451bca92e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c57b7ad595acfee5c75158e64d5bc697e24ea355
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891910"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922060"
 ---
 # <a name="list-androidworkprofilenineworkeasconfigurations"></a>Liste androidWorkProfileNineWorkEasConfigurations
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

@@ -2,12 +2,14 @@
 title: ContactFolder erstellen
 description: Erstellt einen neuen contactFolder unter dem Standardkontaktordner des Benutzers.
 localization_priority: Normal
-ms.openlocfilehash: fe17eb6c94c113a733ac2b9024ed28f910d43e71
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2e76da12d152a28f5f8579d41f1cf3e159b0e078
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862755"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921675"
 ---
 # <a name="create-contactfolder"></a>ContactFolder erstellen
 
@@ -29,7 +31,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /users/{id | userPrincipalName}/contactFolders
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

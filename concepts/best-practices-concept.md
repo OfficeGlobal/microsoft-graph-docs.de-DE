@@ -1,12 +1,13 @@
 ---
 title: Optimale Methoden für das Arbeiten mit Microsoft Graph
 description: In diesem Artikel werden bewährte Methoden beschrieben, die Sie anwenden können, damit Ihre Anwendungen Microsoft Graph optimal nutzen, ganz gleich, ob es dabei um mehr Informationen zu Microsoft Graph, das Verbessern der App-Leistung oder darum geht, die Anwendung für Endbenutzer zuverlässiger zu gestalten.
-ms.openlocfilehash: 0693999712c33e74bb3ad4d691cd835d239254be
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 11db24ee87485987f1bf23e750d4af59206885a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092174"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826551"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>Optimale Methoden für das Arbeiten mit Microsoft Graph
 

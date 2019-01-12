@@ -3,12 +3,13 @@ title: Aktualisieren von „deviceAppManagement“
 description: Aktualisiert die Eigenschaften von Objekten des Typs deviceAppManagement.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cb9e1864c48cf652f2a59dd3146c0f28eb05312c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0a70c1544ac862b5bbe11f0883d9d2c274a1ad27
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868145"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920310"
 ---
 # <a name="update-deviceappmanagement"></a>Aktualisieren von „deviceAppManagement“
 

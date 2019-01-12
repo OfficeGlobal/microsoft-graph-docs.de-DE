@@ -2,12 +2,14 @@
 title: Ressourcentyp iosVppAppAssignedUserLicense
 description: iOS-Lizenz von Benutzerrechten Volume Purchase Program. Diese Klasse unterstützt keine Methoden zum Erstellen, Aktualisieren oder Löschen.
 localization_priority: Normal
-ms.openlocfilehash: 3217fc338b2f0bb072de19cf0807a718a4998efa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 9adfe00c4f679bd68e175cb7e4a76c2e605a0f68
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806895"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926288"
 ---
 # <a name="iosvppappassigneduserlicense-resource-type"></a>Ressourcentyp iosVppAppAssignedUserLicense
 

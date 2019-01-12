@@ -2,12 +2,13 @@
 title: Abrufen inkrementeller Änderungen für Gruppen
 description: Mit der Delta-Abfrage können Sie Ergänzungen, Löschungen oder Aktualisierungen an Gruppen anhand einer Serie von Delta-Funktionsaufrufen abfragen. Mit Delta-Abfragen können Sie Änderungen an Gruppen ermitteln.
 author: piotrci
-ms.openlocfilehash: c5c9e712ecbe5e4f82fb56cbcb2795d1cfffb354
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 358af439fb69525b75dc2810f890a91dc54f2789
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302037"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891280"
 ---
 # <a name="get-incremental-changes-for-groups"></a>Abrufen inkrementeller Änderungen für Gruppen
 

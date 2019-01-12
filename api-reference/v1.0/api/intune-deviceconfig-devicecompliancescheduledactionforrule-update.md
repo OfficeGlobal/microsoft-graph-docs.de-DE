@@ -3,12 +3,13 @@ title: Aktualisieren von „deviceComplianceScheduledActionForRule“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceComplianceScheduledActionForRule.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e12282024216582941ac4ed63108194a863cdc03
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ad688779451f0320f7296ff91946ee1a7bcecb61
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818305"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916418"
 ---
 # <a name="update-devicecompliancescheduledactionforrule"></a>Aktualisieren von „deviceComplianceScheduledActionForRule“
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sche
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -46,7 +47,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |ruleName|String|Name der Regel, auf die die geplante Aktion angewendet wird|
 
 

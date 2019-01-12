@@ -1,14 +1,15 @@
 ---
 title: Abschnitt erstellen
 description: Mit dieser API können Sie eine neue Ressource des Typs section in dem angegebenen Notizbuch erstellen.
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: c6c091d399ae2b9fc69d249a3e2a34f3051c1611
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: 48525fb76c4367a9d9a9d069250ae9ff6f47149d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892463"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918784"
 ---
 # <a name="create-section"></a>Abschnitt erstellen
 

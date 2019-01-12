@@ -3,12 +3,13 @@ title: Ressourcentyp officeConfiguration
 description: Singleton-Entität, die als Container für alle Geräteverwaltungsfunktionen dient.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 096a54db296181e58020bb9bc694056c0b9e949a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 767782e26dd203e2ab5488b30520d8cbcf44d1e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817258"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921360"
 ---
 # <a name="officeconfiguration-resource-type"></a>Ressourcentyp officeConfiguration
 
@@ -26,7 +27,7 @@ Singleton-Entität, die als Container für alle Geräteverwaltungsfunktionen die
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|ID des Office-Konfiguration.|
+|id|Zeichenfolge|ID des Office-Konfiguration.|
 |tenantCheckinStatuses|[OfficeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) -Auflistung|Liste der Office-Client Einchecken Status.|
 |tenantUserCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Entität, die Mandanten Einchecken Statuen beschreibt.|
 

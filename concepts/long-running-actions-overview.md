@@ -1,12 +1,13 @@
 ---
 title: Arbeiten mit langen Aktionen (Beta)
 description: In diesem Artikel wird das Arbeiten mit lange ausgeführten Aktionen beschrieben.
-ms.openlocfilehash: 73e00efd88b2656cc842c3c46f8a2241315ba184
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7ee9631e9e18ae1972e2b156366c66d3d3dd455
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354528"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868054"
 ---
 # <a name="working-with-long-running-actions-beta"></a>Arbeiten mit langen Aktionen (Beta)
 

@@ -2,12 +2,14 @@
 title: Verwenden der Microsoft Graph-API zum Arbeiten mit Microsoft Teams
 description: Microsoft-Teams, ist ein Chat-basierten Arbeitsbereich in Office 365, das integrierte Zugriff auf Team-spezifischen Kalender, Dateien, OneNote-Notizen, Planner Pläne und bietet.
 localization_priority: Priority
-ms.openlocfilehash: 1e46bb3c31b30ec8ef776c4377bd391355abd50d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: 8b14d975c1d1f58fd9c4724428b4800c567a5606
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868677"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924524"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Verwenden der Microsoft Graph-API zum Arbeiten mit Microsoft Teams
 
@@ -80,6 +82,6 @@ Auf ähnliche Weise, wenn die `userId` in die URL oder Nutzlast ausgedrückt als
 Wenn Sie der Pfad langsamere ausgeführt wird, wenn ein Teammitglied aktuelle oder Besitzer auf der Microsoft-Teams Anwendung/Website angemeldet ist, wird die Änderung innerhalb einer Stunde übernommen.
 Wenn keine dieser Benutzer auf die Microsoft-Teams Anwendung/Website angemeldet sind, wird die Änderung nicht übernommen werden, bis eine Stunde nach einer von ihnen anmeldet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Übersicht über Microsoft Teams-APIs](/graph/teams-concept-overview)

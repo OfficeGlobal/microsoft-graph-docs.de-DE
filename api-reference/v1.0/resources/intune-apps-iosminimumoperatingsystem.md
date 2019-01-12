@@ -3,12 +3,13 @@ title: iosMinimumOperatingSystem-Ressourcentyp
 description: Enthält die Eigenschaften des für eine mobile iOS-App mindestens erforderlichen Betriebssystems.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7243b337a53cca31054f99ae807e5c17cdd3e372
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a80de09abe7e5fb513c95006f6b2c2fe719a4f39
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876268"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925938"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>iosMinimumOperatingSystem-Ressourcentyp
 
@@ -22,7 +23,7 @@ Enthält die Eigenschaften des für eine mobile iOS-App mindestens erforderliche
 |v9_0|Boolescher Wert|Version 9.0 oder höher|
 |v10_0|Boolescher Wert|Version 10.0 oder höher|
 |v11_0|Boolescher Wert|Version 11.0 oder höher|
-|v12_0|Boolean|Version 12.0 oder höher.|
+|v12_0|Boolescher Wert|Version 12.0 oder höher.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

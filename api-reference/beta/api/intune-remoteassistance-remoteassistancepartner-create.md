@@ -3,12 +3,13 @@ title: remoteAssistancePartner erstellen
 description: Erstellen eines neuen RemoteAssistancePartner-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2b8d1de08fd8da0be55515fd69717d703fc96e42
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f05a2d2ea4d1710935de3b9f8347b12314838a5a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827475"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920296"
 ---
 # <a name="create-remoteassistancepartner"></a>remoteAssistancePartner erstellen
 
@@ -36,7 +37,7 @@ POST /deviceManagement/remoteAssistancePartners
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,9 +49,9 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Der eindeutige Bezeichner des Partners.|
-|displayName|String|Der Anzeigename des Partners.|
-|onboardingUrl|String|Die URL des Onboarding-Portals des Partners, in dem ein Administrator den Remoteunterstützungsdienst konfigurieren kann.|
+|id|Zeichenfolge|Der eindeutige Bezeichner des Partners.|
+|displayName|Zeichenfolge|Der Anzeigename des Partners.|
+|onboardingUrl|Zeichenfolge|Die URL des Onboarding-Portals des Partners, in dem ein Administrator den Remoteunterstützungsdienst konfigurieren kann.|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|TBD. Mögliche Werte sind: `notOnboarded`, `onboarding` und `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Zeitstempel der letzten vom TEM-Partner an Intune gesendeten Anforderung|
 

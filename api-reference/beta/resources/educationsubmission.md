@@ -3,12 +3,13 @@ title: Ressourcentyp educationSubmission
 description: Übermittlungen gehören eine Zuordnung. Eine Übermittlung stellt die Ressourcen, die eine einzelne (oder Gruppe) aktivieren im für eine Zuordnung und Note/Feedback zurückgegeben wird.
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 92d0799b0052383d1ec12511ce98b3263245da9e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 9cbfaa46d979e3796ae9128e212bfaa1f6bf8453
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847817"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920877"
 ---
 # <a name="educationsubmission-resource-type"></a>Ressourcentyp educationSubmission
 
@@ -36,13 +37,13 @@ ms.locfileid: "27847817"
 |:---------------|:--------|:----------|
 |Feedback|[educationFeedback](educationfeedback.md)|Enthält die Feedback-Eigenschaft, die des Lehrers Hinweise wieder für Studenten gespeichert.|
 |grade|[educationAssignmentGrade](educationassignmentgrade.md)|Enthält die Klasse Informationen, die diese Übermittlung Lehrer zuweist.|
-|id|String| Schreibgeschützt.|
+|id|Zeichenfolge| Schreibgeschützt.|
 |Empfänger|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Die diese Übermittlung zugewiesen ist.|
 |releasedBy|[identitySet](identityset.md)|Benutzer, der den Status dieser Übermittlung freigegeben verschoben.|
 |releasedDateTime|DateTimeOffset|Bei die Übermittlung veröffentlicht wurde Zeitpunkt. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |returnedBy|[identitySet](identityset.md)|Benutzer, der den Status dieser Übermittlung zurückgegeben verschoben.|
 |returnedDateTime|DateTimeOffset|Bei die Übermittlung zurückgegeben wurde Zeitpunkt. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|resourcesFolderUrl|String|Ordner, in denen alle Ressourcen für die Versendung gespeichert werden müssen.|
+|resourcesFolderUrl|Zeichenfolge|Ordner, in denen alle Ressourcen für die Versendung gespeichert werden müssen.|
 |status|string| Schreibgeschützt. Mögliche Werte: `working`, `submitted`, `released`, `returned`.|
 |submittedBy|[identitySet](identityset.md)|Benutzer, die die Ressource in den gesendeten Zustand verschoben.|
 |submittedDateTime|DateTimeOffset|Bei die Übermittlung in den gesendeten Zustand verschoben wurde Zeitpunkt. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|

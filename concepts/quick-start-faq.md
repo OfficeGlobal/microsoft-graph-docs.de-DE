@@ -4,12 +4,13 @@ description: In den häufig gestellten Fragen werden Fragen im Zusammenhang mit 
 author: jasonjoh
 ms.author: jasonjoh
 ms.date: 12/13/2018
-ms.openlocfilehash: 55630e8fbdbccd8355d2b23e4c839d2ccec2b7d3
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: 457b82813420b8771a5e59e9723f11885388c7b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283640"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834944"
 ---
 # <a name="microsoft-graph-quick-start-faq"></a>Microsoft Graph-Schnellstart – Häufig gestellte Fragen
 
@@ -59,7 +60,7 @@ In der folgenden Tabelle ist das entsprechende Lernprogramm und GitHub-Repositor
 | Python | [Lernprogramm](/graph/tutorials/python) | [GitHub](https://github.com/microsoftgraph/msgraph-training-pythondjangoapp) |
 | Ruby | [Lernprogramm](/graph/tutorials/ruby) | [GitHub](https://github.com/microsoftgraph/msgraph-training-rubyrailsapp) |
 | UWP | [Lernprogramm](/graph/tutorials/uwp) | [GitHub](https://github.com/microsoftgraph/msgraph-training-uwp) |
-| Xamarin | Keines | [GitHub](https://github.com/microsoftgraph/uwp-csharp-connect-sample) |
+| Xamarin | Keines | [GitHub](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) |
 
 ### <a name="why-dont-any-of-the-quick-start-samples-show-advanced-authentication-use-cases"></a>Warum sind in den Schnellstart-Beispielen keine Anwendungsfälle für die erweiterte Authentifizierung enthalten?
 

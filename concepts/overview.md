@@ -2,12 +2,13 @@
 title: Übersicht über Microsoft Graph
 description: Microsoft Graph ist das Gateway zu Daten und Intelligence in Microsoft 365. Microsoft Graph bietet ein einheitliches Programmiermodell, das Sie verwenden können, um die enorme Menge von Daten in Office 365, Enterprise Mobility + Security und Windows 10 zu nutzen.
 author: jthake-msft
-ms.openlocfilehash: 754580e0f5a6af628a2bf18c11a0a20d3c2d1329
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: d4cb238090abd5b8b78f5589b36db75ef090506f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349042"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879912"
 ---
 # <a name="overview-of-microsoft-graph"></a>Übersicht über Microsoft Graph
 
@@ -46,8 +47,7 @@ Sie können Microsoft Graph verwenden, um Benutzer zielgerichtet mit für sie re
 
 Mit der Microsoft Graph-API können Sie all dies und mehr erledigen.
 
->
-  **Hinweis:** Wenn Sie die Microsoft Graph-API verwenden, stimmen Sie den [Microsoft Graph-Nutzungsbedingungen](https://developer.microsoft.com/graph/docs/misc/terms-of-use) und den [Microsoft-Datenschutzbestimmungen](https://go.microsoft.com/fwlink/?LinkId=521839) zu.
+>**Hinweis:** Wenn Sie die Microsoft Graph-API verwenden, stimmen Sie den [Microsoft Graph-Nutzungsbedingungen](https://developer.microsoft.com/graph/docs/misc/terms-of-use) und den [Microsoft-Datenschutzbestimmungen](https://go.microsoft.com/fwlink/?LinkId=521839) zu.
 
 ### <a name="popular-requests"></a>Beliebte Anforderungen
 

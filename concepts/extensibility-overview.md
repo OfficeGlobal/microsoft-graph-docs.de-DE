@@ -2,12 +2,13 @@
 title: Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen
 description: Microsoft Graph stellt einen zentralen API-Endpunkt bereit, der Ihnen über verschiedene Ressourcen wie user und message Zugriff auf umfassende personenzentrierte Daten und Erkenntnisse ermöglicht. Sie können auch Microsoft Graph um eigene Anwendungsdaten erweitern. Sie können Microsoft Graph-Ressourcen benutzerdefinierte Eigenschaften hinzufügen, ohne dass dafür ein externer Datenspeicher nötig wäre.
 author: dkershaw10
-ms.openlocfilehash: ccbd86fda648bf30d46c9ad3c92afa92bed1f6a4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 7b1789fb12a971dab3b5ad591bc65fc49b85c76e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334958"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865093"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen
 

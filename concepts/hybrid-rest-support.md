@@ -1,12 +1,13 @@
 ---
 title: Verwenden von REST-APIs für den Zugriff auf Postfächer in Exchange-Hybridbereitstellungen (Vorschau)
 description: Microsoft Graph unterstützte stets den Zugriff auf Postfächer von Kunden in der Cloud in Exchange Online als Teil von Office 365.
-ms.openlocfilehash: 78b324765c580e76f080e2e8023e52617b3851f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 5dab9fea5a9d9c9177befc90ccb64b3bb03b6b33
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092168"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864351"
 ---
 # <a name="use-rest-apis-to-access-mailboxes-in-exchange-hybrid-deployments-preview"></a>Verwenden von REST-APIs für den Zugriff auf Postfächer in Exchange-Hybridbereitstellungen (Vorschau)
 

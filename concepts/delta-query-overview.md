@@ -2,12 +2,13 @@
 title: Verwenden einer Delta-Abfrage zum Nachverfolgen von Änderungen in Microsoft Graph-Daten
 description: Mit der Delta-Abfrage können Anwendungen neu erstellte, aktualisierte oder gelöschte Entitäten ermitteln, ohne die Zielressource bei jeder Anforderung vollständig lesen zu müssen. Mit der Delta-Abfrage können Microsoft Graph-Anwendungen Änderungen effizient mit einem lokalen Datenspeicher synchronisieren.
 author: piotrci
-ms.openlocfilehash: d01a40ee0abf9bde10334debe2692f165307b345
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 77f5a4eae74e40655d858fb839697aca80851afb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334769"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823865"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Verwenden einer Delta-Abfrage zum Nachverfolgen von Änderungen in Microsoft Graph-Daten
 

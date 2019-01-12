@@ -1,12 +1,13 @@
 ---
 title: Suchen nach möglichen Besprechungszeiten im Outlook-Kalender
 description: 'In einem Unternehmen oder einer Schule oder Universität ist die Suche nach einer gemeinsamen Zeit und einem Ort für eine Besprechung häufig mit Mehraufwand verbunden. Microsoft Graph-Anwendungen können '
-ms.openlocfilehash: 92390509f68d469cf9912e9e903a2576b8fa7506
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 94e9cd7455d08741851662cc071e690b3ad0a558
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092341"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819859"
 ---
 # <a name="find-possible-meeting-times-on-the-outlook-calendar"></a>Suchen nach möglichen Besprechungszeiten im Outlook-Kalender
 

@@ -3,12 +3,13 @@ title: DeviceManagementExchangeConnectorStatus Enum-Typ
 description: Der aktuelle Status des Exchange Connectors.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c113a4d6af6493405a943384c2552f88a179ae5a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 42a7d99a4b19505e999f8a3aeea48829ee4aa987
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840250"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917664"
 ---
 # <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>DeviceManagementExchangeConnectorStatus Enum-Typ
 
